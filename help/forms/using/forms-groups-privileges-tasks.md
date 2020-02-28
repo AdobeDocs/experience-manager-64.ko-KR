@@ -1,0 +1,121 @@
+---
+title: OSGi 그룹 및 권한에 대한 AEM Forms
+seo-title: OSGi 그룹 및 권한에 대한 AEM Forms
+description: 그룹에 사용자를 할당하여 OSGi에서 AEM Forms 관리
+seo-description: 그룹에 사용자를 할당하여 OSGi에서 AEM Forms 관리
+uuid: 9ebb3a4e-4c0e-4105-921f-58077fc45281
+contentOwner: anujkapo
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
+content-type: reference
+topic-tags: Configuration
+discoiquuid: 71412f5d-ff34-415f-baf8-d300756b93a9
+translation-type: tm+mt
+source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+
+---
+
+
+# OSGi 그룹 및 권한에 대한 AEM Forms {#aem-forms-on-osgi-groups-and-privileges}
+
+그룹에 사용자를 할당하여 OSGi에서 AEM Forms 관리
+
+그룹을 [만들고](/help/sites-administering/user-group-ac-admin.md#group-administration) AEM의 그룹에 정책 및 [사용자를](/help/sites-administering/user-group-ac-admin.md#user-administration) 할당할 수 있습니다. 이러한 정책은 그룹의 일부인 사용자의 권한을 제어합니다.
+
+AEM [Forms Add-on 패키지를](/help/forms/using/installing-configuring-aem-forms-osgi.md)설치하면 양식 사용자 및 양식 파워 유저 등 이 문서에 언급된 그룹을 자동으로 할당할 수 있습니다. 다음 표에는 그룹 할당을 기반으로 OSGi에서 사용자가 AEM Forms에 대해 수행할 수 있는 작업이 나와 있습니다.
+
+<table> 
+ <tbody>
+  <tr>
+   <td>그룹</td> 
+   <td>작업</td> 
+  </tr>
+  <tr>
+   <td>양식 사용자 <sup><a href="#main-pars-text">[1]</a></sup></td> 
+   <td>
+    <ul> 
+     <li>적응형 양식 작성, 미리 보기, 게시 및 제출</li> 
+     <li>인터랙티브한 커뮤니케이션 및 문서 조각 제작, 미리 보기 및 게시</li> 
+     <li>AEM 인스턴스에 자산 업로드</li> 
+     <li>테마 만들기</li> 
+    </ul> </td> 
+  </tr>
+  <tr>
+   <td>양식 파워 유저</td> 
+   <td>
+    <ul> 
+     <li>적응형 양식 작성, 미리 보기, 게시 및 제출</li> 
+     <li>인터랙티브한 커뮤니케이션 및 문서 조각 제작, 미리 보기 및 게시</li> 
+     <li>코드 편집기를 사용하여 적응형 양식에 대한 스크립트 작성</li> 
+     <li>스크립트를 포함한 자산 업로드</li> 
+     <li>테마 만들기</li> 
+     <li>XDP가 포함된 패키지 가져오기</li> 
+    </ul> </td> 
+  </tr>
+  <tr>
+   <td>양식 제출 검토자</td> 
+   <td>
+    <ul> 
+     <li>제출 검토</li> 
+     <li>제출 승인 또는 거부</li> 
+    </ul> </td> 
+  </tr>
+  <tr>
+   <td>템플릿 작성자 <sup><a href="#main-pars-text">[2]</a></sup></td> 
+   <td>
+    <ul> 
+     <li>적응형 양식 또는 인터랙티브한 커뮤니케이션 템플릿 제작 및 미리 보기</li> 
+    </ul> </td> 
+  </tr>
+  <tr>
+   <td>template-power-user</td> 
+   <td>
+    <ul> 
+     <li>적응형 양식 또는 인터랙티브한 커뮤니케이션 템플릿 제작 및 미리 보기</li> 
+     <li>코드 편집기를 사용하여 적응형 양식 또는 인터랙티브한 커뮤니케이션 템플릿을 위한 스크립트 작성</li> 
+    </ul> </td> 
+  </tr>
+  <tr>
+   <td><p>fdm-authors</p> </td> 
+   <td>
+    <ul> 
+     <li>양식 데이터 모델 만들기 및 수정</li> 
+    </ul> </td> 
+  </tr>
+  <tr>
+   <td>cm-user-agent</td> 
+   <td>
+    <ul> 
+     <li>에이전트 UI를 사용한 통신 관리 서신 또는 인터랙티브한 커뮤니케이션 액세스</li> 
+    </ul> </td> 
+  </tr>
+  <tr>
+   <td><p>workflow-editors</p> </td> 
+   <td>
+    <ul> 
+     <li>받은 편지함 응용 프로그램 만들기</li> 
+     <li>워크플로우 모델 만들기</li> 
+    </ul> </td> 
+  </tr>
+  <tr>
+   <td>workflow-user</td> 
+   <td>
+    <ul> 
+     <li>AEM 받은 편지함 애플리케이션 사용</li> 
+     <li>워크플로우 인스턴스 관리</li> 
+    </ul> </td> 
+  </tr>
+  <tr>
+   <td>fd-administrators</td> 
+   <td>
+    <ul> 
+     <li>PDF 생성기 구성</li> 
+     <li>감시 폴더 구성</li> 
+     <li>워크플로우 애플리케이션 관리</li> 
+    </ul> </td> 
+  </tr>
+ </tbody>
+</table>
+
+1. 양식 사용자 그룹 권한이 있는 사용자는 적응형 양식에 대한 스크립트를 작성할 수 없습니다.
+1. 템플릿 작성자 그룹 권한이 있는 사용자는 템플릿에 대한 스크립트를 작성할 수 없습니다.
+
