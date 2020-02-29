@@ -3,7 +3,7 @@ title: 계단식 메타데이터
 description: 이 문서에서는 자산의 CSS 메타데이터를 정의하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
 
 ---
 
@@ -106,9 +106,8 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
 
    ![비디오 자산에 대한 CSS 메타데이터](assets/video_asset.png)
 
-   **** 그림:비디오 *자산에 대한 CSS 메타데이터*
+   *그림:비디오 자산에 대한 CSS 메타데이터*
 
    ![문서 자산에 대한 CSS 메타데이터](assets/doc_type_fields.png)
 
-   **** 그림:문서 *자산에 대한 CSS 메타데이터*
-
+   *그림:문서 자산에 대한 CSS 메타데이터*
