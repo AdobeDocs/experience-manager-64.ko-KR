@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: c703f4af30c2093d9600d0771dc1034cd6465c8c
+source-git-commit: 1d02401f6b1946062eb238baa2fb70bbd47881a6
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: c703f4af30c2093d9600d0771dc1034cd6465c8c
 | 버전 | 6.4.7.0 |
 | 유형 | 서비스 팩 릴리스 |
 | 날짜 | 2019년 12월 12일 |
-| 다운로드 URL | PackageShare, Software Distribution [의 AEM](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.7.0)6.4.7. [0](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aem.html#package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.7.zip) |
+| 다운로드 URL | AEM 6.4.7.0 on [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.7.0) |
 
 ## AEM 6.4.7.0에 포함된 기능 {#what-s-included-in-aem}
 
@@ -2138,7 +2138,7 @@ AEM 6.4.7.0에 포함된 컨텐츠 패키지 목록
 * [AEM 제품 페이지](https://www.adobe.com/solutions/web-experience-management.html)
 * [AEM 개발자 지원](https://docs.adobe.com/content/ddc/en.html)
 * [AEM 6.4 설명서](https://helpx.adobe.com/support/experience-manager/6-4.html)
-* Subscribe to [Adobe Priority Product Updates](https://www.adobe.com/subscription/priority-product-update.html)
+* Subscribe to [Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)
 
 ### 제한된 사이트 {#restricted-sites-new}
 
