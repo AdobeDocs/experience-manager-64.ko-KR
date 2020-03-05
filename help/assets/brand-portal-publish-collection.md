@@ -3,14 +3,14 @@ title: 브랜드 포털에 컬렉션 게시
 description: Brand Portal에 컬렉션을 게시하고 게시 취소하는 방법을 알아봅니다.
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 33210032c45e38963aed429e70eec4095c5d75f1
 
 ---
 
 
 # Publish collections to Brand Portal {#publish-collections-to-brand-portal}
 
-AEM(Adobe Experience Manager) 자산 관리자는 컬렉션을 조직의 AEM Assets 브랜드 포털 인스턴스에 게시할 수 있습니다. 그러나 먼저 AEM 자산을 브랜드 포털과 통합해야 합니다. 자세한 내용은 브랜드 포털과 [AEM 자산 통합 구성을 참조하십시오](brand-portal-configuring-integration.md).
+AEM(Adobe Experience Manager) 자산 관리자는 컬렉션을 조직의 AEM Assets 브랜드 포털 인스턴스에 게시할 수 있습니다. 그러나 먼저 AEM 자산을 브랜드 포털과 통합해야 합니다. 자세한 내용은 브랜드 포털에서 [AEM 자산 구성을 참조하십시오](configure-aem-assets-with-brand-portal.md).
 
 AEM Assets에서 원본 컬렉션을 이후에 수정하는 경우, 컬렉션을 다시 게시하기 전까지 변경 내용이 브랜드 포털에 반영되지 않습니다. 이러한 특성을 통해 브랜드 포털에서 진행 중인 변경 사항을 사용할 수 없습니다. 관리자가 게시한 승인된 변경 사항만 브랜드 포털에서 사용할 수 있습니다.
 
