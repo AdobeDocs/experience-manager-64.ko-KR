@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 1d02401f6b1946062eb238baa2fb70bbd47881a6
+source-git-commit: 3037d1e5c9f97778c55ee2734ded3c9ef668df4d
 
 ---
 
@@ -20,12 +20,149 @@ source-git-commit: 1d02401f6b1946062eb238baa2fb70bbd47881a6
 
 | 제품 | **AEM(Adobe Experience Manager) 6.4** |
 |---|---|
-| 버전 | 6.4.7.0 |
+| 버전 | 6.4.8.0 |
 | 유형 | 서비스 팩 릴리스 |
-| 날짜 | 2019년 12월 12일 |
-| 다운로드 URL | AEM 6.4.7.0 on [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.7.0) |
+| 날짜 | 2020년 3월 05일 |
+| 다운로드 URL | AEM 6.4.8.0 on [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0) |
 
-## AEM 6.4.7.0에 포함된 기능 {#what-s-included-in-aem}
+## AEM 6.4.8.0에 포함된 기능 {#what-s-included-in-aem}
+
+AEM 6.4.8.0은 2018년 4월 AEM 6.4의 공식 출시 이후 릴리스된 새로운 기능, 주요 고객 요청 개선 사항 및 성능, 안정성, 보안 개선 사항이 포함된 중요한 **업데이트입니다.**
+
+또한 누적되므로 6.4.8.0에는 그 전에 릴리스된 모든 AEM 6.4 서비스 팩이 포함됩니다.
+
+이 서비스 팩 릴리스의 몇 가지 주요 사항은 다음과 같습니다.
+
+* 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.8.20로 업데이트되었습니다.
+
+* WCM-RTE의 일본어 웹 사이트에서 워드 랩 기능이 지원됩니다.
+
+* 일본어 웹 사이트에서 단어 분리 및 줄 바꿈 처리가 지원됩니다.
+
+* BUNSETSU 방법을 사용하여 적절한 위치에서 일본어 문장과 행을 끊도록 지원이 추가되었습니다.
+
+* 통신 관리를 위한 CCR 파섹 UI는 이제 독일어 로케일에 대한 십진수 값을 지원합니다.
+
+* 이제 SOAP 웹 서비스를 사용한 양식 데이터 모델 통합은 요소에 대한 선택 그룹 또는 특성을 지원합니다.
+
+* 이제 AEM Assets는 Adobe I/O를 통해 브랜드 포털로 구성됩니다.
+
+## 변경 사항 목록 {#list-of-changes}
+
+### 사이트 {#sites}
+
+* 블루프린트가 생성되면 레코드 수가 80개를 초과하는 경우 처음 80개의 레코드만 표시됩니다. 블루프린트는 나머지 레코드(NPR-32058)에 대한 빈 라인을 표시합니다.
+* 사용자는 필수 필드에 정보를 제공하지 않고 컨텐츠 조각을 저장할 수 있습니다(NPR-31988).
+* 코어 경험 조각 구성 요소에 구성된 경로에 대해 자동 탐색이 작동하지 않습니다(NPR-31921).
+* RTE(Rich Text Editor)에서 표 셀의 유형을 변경하면 아래 오류가 발생합니다.
+   `Error: No common ancestor found, cannot continue` (NPR-31916).
+* 동일한 폴더 내에서 컨텐츠를 이동하면 페이지 이동 옵션이 비활성화됩니다(NPR-31841).
+* BUNSETSU 방법을 사용하여 일본어 문구 분할과 적절한 위치에서 줄바꿈(NPR-31836)을 사용하는 방법에 대한 지원을 추가했습니다.
+* 로 종료되거나 액세스되는 URL이 `/_jcr_content/.html` `/jcr:content/.html` 있으면 CPU 스파이크 및 AEM이 응답을 중지합니다(NPR-31755).
+* RTE(Rich Text Editor)에서 하이퍼링크를 편집하면 새로 선택한 경로가 저장되지 않습니다(NPR-31659).
+* 다중 필드 구성 요소를 삭제하고 삭제를 취소하면 구성 요소가 복원되지만 데이터가 복원되지 않습니다(NPR-31617).
+
+### 자산 {#assets}
+
+* Dynamic Media Scene7 구성(NPR-32440)을 사용하여 Experience Manager에서 자산을 한 폴더에서 다른 폴더로 이동하는 동안 이름이 없는 폴더가 SPS(Scene7 Publishing System)에 생성됩니다.
+
+* PDF 파일의 자산 세부 사항 페이지에는 Dynamic Media Scene7 모드에서 실행되는 Experience Manager에 작업 단추가 표시되지 않습니다(NPR-32316).
+
+* 자산 및 비디오 표현물은 삭제할 수 없습니다(NPR-32213).
+
+* 예약된 활성화의 달력 아이콘이 상태 열(DAM 자산 목록의 클래식 UI에 있음)에 표시되어 있지 않습니다. NPR-32198)
+
+* 에셋이 기타(NPR-32196)를 사용하여 두 개 이상의 에셋과 관련되어 있는 경우 에셋 관계를 덮어씁니다.
+
+* 사용자가 다이내믹 미디어 클라이언트의 설정 편집기에서 변경하지 않은 경우 [저장] 단추가 [원격 세트]를 가져오지 않습니다(NPR-32178).
+
+* PSD 자산 문제로 인해 CPU 스파이크가 발생하고 Experience Manager 작성자 인스턴스가 응답하지 않습니다(NPR-32165).
+
+* 큰 ZIP 파일이 Experience Manager DAM에 업로드될 때 관찰된 메모리 부족 예외(NPR-32155).
+
+* 버전 내역 URL은 자산 속성 페이지의 참조자 필드(NPR 파섹-31889) 아래에 표시됩니다.
+
+* 게시된 폴더의 하위 폴더에 대해서는 브랜드 포털에서 게시 취소, 게시 관리 페이지에서 게시 취소 실패(NPR-31835).
+
+* Scene7 클라우드 구성이 `/conf` 아닌 비공개 폴더에 배치되면 다이내믹 미디어 비디오 인코딩이 업로드되지 `/conf/global` 않습니다(NPR-31779).
+
+* Dynamic Media Scene7 실행 모드에서 실행 중인 Experience Manager에서 주석이 추가된 후 타임라인에 이미지가 표시되지 않습니다(NPR-31754).
+
+* DAM에서 다운로드한 ZIP 파일은 WinZip을 사용하여 열 수 없습니다(NPR-31745).
+
+### 통합 {#integrations-6480}
+
+* Adobe **Experience Manager** **클라우드 서비스에서 Adobe Analytics를** 구성하는 동안 보고 소스를 **** 선택하면 회사 및 Reporting Suite 드롭다운 메뉴가 숨겨집니다(NPR-31729).
+
+* Adobe Campaign에 연결된 뉴스레터의 언어 사본이 만들어지면 Adobe Campaign 속성이 정리되지 않지만, Adobe Campaign에 연결된 뉴스레터가 복사되거나 붙여넣을 때 정리됩니다(NPR-32540).
+
+### Sling {#sling-6480}
+
+* 리소스 관찰의 비결정적 셰이프가 작동하지 않습니다(CQ 파섹-4286466).
+
+### 프로젝트 {#projects-6480}
+
+* 사용자가 하위 폴더에서 프로젝트를 만들 권한이 있어도 [만들기] 단추는 사용자에게 표시되지 않습니다(NPR-31831).
+
+* 프로젝트에서 달력 보기를 선택한 후 카드 보기, 목록 보기 및 달력 보기 간을 전환하는 기능이 작동하지 않습니다(NPR-31829).
+
+### 번역 {#translation-6480}
+
+* 여러 언어에 대한 번역 프로젝트를 만들면 일부 언어에 대해서만 프로젝트가 생성되며 오류(리소스 확인자가 이미 닫혀 있음)가 로그에서 관찰됩니다(NPR-32212).
+
+### WCM-템플릿 편집기 {#wcm-template-editor-6480}
+
+* URL이 다음으로 `/_jcr_content/.html` 끝나거나 액세스될 때 CPU 스파이크 및 Experience Manager `/jcr:content/.html` 가 응답하지 않습니다(CQ-4280770).
+
+### WCM-MSM {#wcm-msm-6480}
+
+* 권한 문제로 인해 블루프린트 내에서 페이지를 이동하는 동안 오류가 표시됩니다(NPR-32610).
+
+### WCM-페이지 편집기 {#wcm-page-editor-6480}
+
+* 특정 URL 형식의 페이지에 구성 요소를 추가하려는 동안 브라우저가 응답을 중지합니다(NPR-32368, NPR-31917).
+
+### WCM-관리 UI {#wcm-admin-ui-6480}
+
+* 게시 관리에는 활성화 요청 워크플로우에 참조된 자산이 포함되지 않습니다(NPR-32304).
+
+### 커뮤니티 {#communities}
+
+* 그룹의 그룹 축소판 이미지를 업데이트할 수 없습니다(NPR-32603).
+
+### 브랜드 포털 {#brand-portal}
+
+* AEM 자산에서 메타데이터 스키마 게시를 취소하면 백엔드에서 스키마가 제거되지만 오류 메시지가 표시됩니다(CQ-4286871).
+
+### 기본 UI {#foundations-ui-6480}
+
+* 단추 구성 요소에 추가된 URL에 잘못된 문자가 표시됩니다(NPR-32684).
+
+### 양식 {#forms}
+
+>[!NOTE]
+>
+>AEM 서비스 팩에는 AEM Forms에 대한 수정 사항이 포함되어 있지 않습니다. 이러한 수정 사항은 별도의 Forms 추가 기능 패키지를 사용하여 전달됩니다. 또한, JEE의 AEM Forms에 대한 수정 사항이 포함된 누적 설치 프로그램이 릴리스됩니다. For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
+
+* 디자이너:태그 지정 옵션을 활성화하면 생성된 PDF 출력(NPR-32546, NPR-32322)에서 하위 양식 테두리가 사라집니다.
+
+* 디자이너:표에 병합된 셀이 있는 경우 출력 서비스를 사용하여 XDP 양식에서 변환된 출력 PDF 파일에 대해 액세서빌러티 테스트가 실패합니다(NPR-32079).
+
+* Document Security:DisableGlobalOfflineSynchronizationData 옵션이 True(NPR-32080)로 설정되어 보호된 PDF 파일을 오프라인으로 열 수 없습니다.
+
+* Document Security:ES4에서 AEM 6.3으로 업그레이드한 후 보호된 PDF 파일을 여는 동안 문제가 발생했습니다(NPR-32170).
+
+* 문서 서비스:toPDFA 변환 방법(NPR-32663)을 사용하여 PDF 파일을 PDF/A 문서로 변환하는 동안 오류 메시지가 표시됩니다.
+
+* 문서 서비스:PDF 파일에 Reader Extensions 서비스를 적용하는 동안 예외가 표시됩니다(NPR-32639).
+
+* 문서 서비스:XDP 파일을 PDF 파일로 취합하고 변환하는 동안 오류 메시지가 표시됩니다(NPR-31821).
+
+* Analytics는 사이트 페이지에서 양식을 제출하거나 버릴 때 적절한 결과를 표시하지 않습니다(NPR-31359).
+
+### 이전 서비스 팩에 포함된 핫픽스 및 기능 팩 {#hotfixes-and-feature-packs-included-in-previous-service-packs}
+
+#### AEM 6.4.7.0 {#experience-manager-6470}
 
 AEM 6.4.7.0 is an important update that includes performance, stability, security and key customer fixes and enhancements released since the general availability of AEM 6.4 in **April 2018.**
 
@@ -40,9 +177,7 @@ AEM 6.4.7.0의 주요 하이라이트는 다음과 같습니다.
 * 이제 Dynamic Media의 UI에서 재처리 및 일괄 업로드를 위한 일괄 처리 크기 및 워크플로우 단계 시간 초과를 구성할 수 있습니다.
 * Scene 7 클라우드 구성에서 `pdfBrochure` 이 false로 설정되어 IPS에 메모리를 저장했습니다.
 
-## 변경 사항 목록 {#list-of-changes}
-
-### 자산 {#assets}
+##### 자산 {#assets-6470}
 
 **향상된 제품**
 
@@ -107,9 +242,7 @@ AEM 6.4.7.0의 주요 하이라이트는 다음과 같습니다.
 
 * PDF 파일은 색인이 되어 있지 않고 내용 내부는 검색 가능하지 않습니다(CQ-4278916).
 
-* DAM 파섹
-
-### 사이트 {#sites}
+##### 사이트 {#sites-6470}
 
 * 론치가 수정된 페이지만 홍보를 통해 홍보되고 수정된 페이지로 홍보 론치가 완료되면 수정된 페이지만 홍보됩니다. 또한 홍보할 목록이 올바르면 수정되지 않은 페이지가 여전히 목록의 하단에 표시됩니다(NPR-31314).
 
@@ -131,21 +264,17 @@ AEM 6.4.7.0의 주요 하이라이트는 다음과 같습니다.
 
 * 컨텐츠 조각 모델을 저장할 때 날짜 및 시간 필드의 시간은 00:00(NPR-30540)으로 설정됩니다.
 
-* 사용자 데이터가 있는 JavaScript 파일은 서버측에서 생성됩니다(NPR-30822).
-
-* AEM 제작 UI를 사용하면 외부 콘텐츠를 사용하여 피싱을 할 수 있습니다(NPR-29745).
-
-### 통합 {#integrations}
+##### 통합 {#integrations-6470}
 
 * Adobe Launch를 구성할 때 라이브러리 URL(NPR-30700)에 슬래시(/)가 추가됩니다.
 
 * 게시 후 ContextHub 성능이 저하됩니다(NPR-30884).
 
-### Sling {#sling-6470}
+##### Sling {#sling-6470}
 
 * webconsole 보안 공급자 번들 버전을 1.2.4로 업데이트하여 webconsole에서 launchpad 시작 API의 종속성을 제거합니다(NPR-30885).
 
-### 플랫폼 {#platform}
+##### 플랫폼 {#platform-6470}
 
 * Jetty 기반 HTTP 서비스에 대한 버퍼 크기 구성의 업데이트가 저장되지 않습니다(NPR-30925).
 
@@ -153,25 +282,25 @@ AEM 6.4.7.0의 주요 하이라이트는 다음과 같습니다.
 
 * 분산 이벤트 관리자를 클러스터 환경의 로그 품질을 향상시키는 버전 1.1.4로 업데이트했습니다(NPR-29256).
 
-### 기본 UI {#ui-foundation}
+##### 기본 UI {#foundation-6470}
 
 * 검색 결과가 많은 결과 페이지의 끝까지 스크롤하면 브라우저가 충돌합니다(NPR-31332).
 
 * 검색 결과 페이지의 [카드] 보기에서 목록 보기로 전환하는 경우 페이지를 스크롤하기 전에 지연이 있습니다(NPR-31280).
 
-### Oak {#oak}
+##### Oak {#oak-6470}
 
-* JPEG 이미지가 들어 있는 .docx 및 .xlsx 파일 확장자가 있는 MS Office 파일이 Tika 파서(NPR-31693)를 사용하여 구문 분석하지 못합니다.
+* JPEG 이미지가 포함된 .docx 및 .xlsx 파일 확장자를 사용하는 MS Office 파일이 Tika 파서(NPR-31693)를 사용하여 구문 분석하지 못합니다.
 
-### Livefyre
+##### Livefyre {#livefyre-6470}
 
-* AEM 6.4 업그레이드와 Livefyre 통합으로 인해 DITA 플러그인을 사용하여 합성 리소스를 통합하는 경우 Null 포인트 예외가 발생합니다. 그러나 구성 요소가 수동으로 추가되면 통합이 작동합니다(FYR 파섹-11066).
+* AEM 6.4 업그레이드와 Livefyre 통합으로 인해 DITA 플러그인을 사용하여 합성 리소스를 통합하는 경우 Null Point 예외가 발생합니다. 그러나 구성 요소가 수동으로 추가되면 통합이 작동합니다(FYR 파섹-11066).
 
-### 번역 {#translation}
+##### 번역 {#translation-6470}
 
 * 시작 페이지를 홍보할 때 대상 경험 조각의 경로가 업데이트되지 않습니다(NPR-30830).
 
-### 커뮤니티 {#communities}
+##### 커뮤니티 {#communities-6470}
 
 * 이메일 기능이 알림 설정에서 이메일 메시지를 활성화해도 제대로 작동하지 않는 경우가 있으며 시스템에서 NotificationsActivityStreamProvider(NPR-31521)에 예외를 발생시킵니다.
 * 새 멤버를 만들 수 없습니다. AEM 작성자 인스턴스의 [멤버 만들기] 화면에 빈 화면이 나타납니다(NPR-30951).
@@ -179,25 +308,25 @@ AEM 6.4.7.0의 주요 하이라이트는 다음과 같습니다.
 * 제한된 그룹의 관리자가 그룹 카드를 볼 수 없으므로 AEM 작성자 인스턴스(NPR-30810)에서 빠른 링크 작업(그룹 편집/게시/삭제)을 수행할 수 없습니다.
 * AEM 작성자 인스턴스에서 새 사이트를 만들 때 멤버 그룹/그룹 정보가 표시되지 않습니다(NPR-28840).
 
-### 양식 {#forms}
+##### 양식 {#forms-6470}
 
 >[!NOTE]
 >
 >AEM 서비스 팩에는 AEM Forms에 대한 수정 사항이 포함되어 있지 않습니다. 이러한 수정 사항은 별도의 Forms 추가 기능 패키지를 사용하여 전달됩니다. 또한, JEE의 AEM Forms에 대한 수정 사항이 포함된 누적 설치 프로그램이 릴리스됩니다. For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
 
-### Forms 추가 기능 패키지 {#forms-add-on-package}
+**Forms 추가 기능 패키지**
 
-#### 적응형 양식 {#adaptive-forms}
+**적응형 양식**
 
 * 적응형 양식을 현지화하는 동안 문자열에 사전 키가 포함됩니다(NPR-31109).
 
 * 양식 실패 액세서빌러티 확인(NPR-31282)의 확인란 및 드롭다운 목록입니다.
 
-#### HTML5 양식 {#html5-forms}
+**HTML5 양식**
 
 * XDP 양식의 HTML5 미리 보기를 생성하면 하위 양식의 인스턴스를 추가하는 동안 깜박임이 표시됩니다(NPR-30907).
 
-#### OSGi용 문서 서비스 {#document-services-osgi}
+**OSGi용 문서 서비스**
 
 * com.adobe.fd.assemblr.service.AssemblerService.invoke() 메서드를 사용하여 양식을 취합하기 위해 여러 동시 스레드를 실행하면 오류 메시지가 표시됩니다(NPR-31164).
 
@@ -205,23 +334,21 @@ AEM 6.4.7.0의 주요 하이라이트는 다음과 같습니다.
 
 * ReaderExtension Rights를 PDF에 적용하면 오류 메시지가 나타납니다(NPR-30930).
 
-#### 워크플로우 {#forms-workflow}
+**워크플로우**
 
 * 100% CPU 사용률(NPR-31234)으로 인해 OSGi 워크플로우가 실패합니다.
 
-### Forms JEE 설치 프로그램 {#forms-jee-installer}
+**Forms JEE 설치 프로그램**
 
-#### 문서 서비스 {#document-services}
+**문서 서비스**
 
 * PDF 변환 서비스가 PDF 문서를 PostScript로 변환하지 못하고 오류 메시지가 표시됩니다(NPR-31267).
 
 * 패치를 적용하여 PDF에 HTML 오류를 수정한 후 SOAP 끝점 구성이 재설정됩니다(NPR-31309).
 
-#### PDFG 서비스 {#pdfg-service}
+**PDFG 서비스**
 
 * 관리자 UI를 사용하여 다운로드한 Adobe PDF 설정 파일을 업로드할 수 없습니다(NPR-31273).
-
-### 이전 서비스 팩에 포함된 핫픽스 및 기능 팩 {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
 #### AEM 6.4.6.0 {#experience-manager-6460}
 
@@ -640,7 +767,7 @@ AEM 6.4.4.0의 주요 주요 하이라이트는 다음과 같습니다.
 * 자산 이동 마법사에 게시된 페이지에 대한 참조 페이지 수가 잘못 표시됩니다. NPR-27833: CQ-4258014용 핫픽스
 * AssetPicker는 태그로 필터링할 때 첫 번째 태그만 검색합니다. NPR-27778: CQ-4257705용 핫픽스
 * AEM OOTB PDF 처리기가 외부 문자가 있는 PDF 처리 시 꼼짝없이 멈춰 있습니다. NPR-28778: CQ-4254234용 핫픽스
-* CSV 파일에 단일 열에 쉼표로 구분된 값이 있으면 AEM CSV 편집기가 쉼표를 escape하지 않고 별도의 열로 취급합니다. NPR-28801: CQ-4261694용 핫픽스
+* CSV 파일에 단일 열에 쉼표로 구분된 값이 있으면 AEM CSV 편집기는 쉼표를 escape하지 않고 별도의 열로 취급합니다. NPR-28801: CQ-4261694용 핫픽스
 * 경로 브라우저를 사용하여 데이터를 선택하는 동안 메타데이터 스키마 편집기 문제 NPR-28674: CQ-4263005용 핫픽스
 * 너무 많은 에셋이 Smart Content Service로 처리되어 주기적인 태그 지정 프로세스를 완료하는 데 상당한 시간이 소요됩니다. NPR-28640: CQ-4262661, CQ-4262644, CQ-4263234용 핫픽스
 * 데스크탑 작업은 `aem/start.html` 페이지의 Omnisearch 결과에 대해 작동하지 않습니다. NPR-27242: CQ-4248176용 핫픽스
@@ -751,7 +878,7 @@ AEM 6.4.4.0의 주요 주요 하이라이트는 다음과 같습니다.
 
 **번역**
 
-* Microsoft Translator Text API v3에 대한 지원을 제공합니다. NPR-28366: CQ-4249755용 핫픽스
+* Microsoft Translator 텍스트 API v3에 대한 지원을 제공합니다. NPR-28366: CQ-4249755용 핫픽스
 * jcr:language &amp; cq:language는 번역된 언어로 자동으로 업데이트되지 않습니다. NPR-28338: CQ-4256046용 핫픽스
 * 언어 복사본을 만들 때 순환 참조로 인해 StackOverflowError가 발생합니다. NPR-27596: CQ-4255621용 핫픽스
 * 다중 언어 번역 프로젝트에서 저장 및 닫기를 클릭하면 후속 페이지가 프로젝트에 추가되어 기존 프로젝트에 새 번역 작업이 생성되는 대신 새 프로젝트가 생성됩니다. NPR-28219, NPR-28236: CQ-4261276, CQ-4260731용 핫픽스
@@ -789,7 +916,7 @@ AEM 6.4.4.0의 주요 주요 하이라이트는 다음과 같습니다.
 
 * 다중 언어 번역 프로젝트는 관리자 그룹에 속하지 않은 사용자에 대해 여러 언어 작업을 만들지 않습니다. NPR-28508: CQ-4262023용 핫픽스
 * 서비스를 시작하는 동안 getTaskRenderers가 호출될 때마다 ProjectTaskListServlet이 ResourceResolver를 누수합니다. NPR-27590: CQ-4258011용 핫픽스
-* 디렉토리에 페이지 크기보다 더 많은 하위 디렉토리가 있고 순서를 날짜 또는 크기로만 지정한 경우 오류가 발생하면 첫 번째 페이지 밖으로 이동할 수 없습니다. NPR-28867: CQ-4265039용 핫픽스
+* 디렉토리에 페이지 크기보다 더 많은 하위 디렉토리가 있고 순서를 날짜 또는 크기별로 지정한 경우 오류가 발생하면 첫 번째 페이지 밖으로 이동할 수 없습니다. NPR-28867: CQ-4265039용 핫픽스
 * DAM 뷰어의 XSS(교차 사이트 스크립팅) 수정 지원 NPR-28106: CQ-4253215용 핫픽스
 * 번역 프로젝트에 새 페이지를 추가하기 위한 링크가 표시되지 않아 프로젝트 관리자가 번역 프로젝트에 페이지를 추가할 수 없습니다. CQ-4266334용 핫픽스
 
@@ -1040,7 +1167,7 @@ AEM 6.4.3.0의 주요 하이라이트 중 일부는 다음과 같습니다.
 
 * AEM 6.4로 업그레이드한 후 구성을 다운로드하려고 하면 NullPointerException이 반환됩니다.NPR-27310:Granite-23573용 핫픽스
 * granite.platform.login 수정 사항에 대한 사전 예방적 백포트. NPR-26941
-* 사전 예방적 백포트를 참조하십시오. NPR-26294
+* 사전 예방적 지원 - granite.ui.co컨텐츠 수정 NPR-26294
 * 숫자 필드 구성 요소는 Internet Explorer 11에서 음수를 확인하지 않습니다. NPR-26701
 * granite.ui.coralui3 수정 사항을 위한 사전 예방적 백포트. NPR-26662
 * Proactive Backport - granite.ui.coralui3-eon 수정. NPR-26666
@@ -1448,7 +1575,7 @@ AEM 6.4.2.0 Forms의 주요 기능은 다음과 같습니다.
 
 **양식 - 인터랙티브한 커뮤니케이션 및 커뮤니케이션 관리**
 
-* 기본 템플릿 및 참조 IC 인쇄 템플릿과 IC에서 동기화가 실패합니다. NPR-24912
+* 기본 템플릿 및 참조 IC 인쇄 템플릿과 IC에서 동기화에 실패합니다. NPR-24912
 * (CCR 파섹) 유효성 검사기가 필드/변수에 대해 작동하지 않습니다. CQ-4245047용 핫픽스
 * 간헐적으로 텍스트 편집 도구 모음에서 데이터 모델 개체 아이콘이 사라집니다. CQ-4245122용 핫픽스
 * 원본 IC가 삭제된 경우 복사된 IC에 예외 로그가 나타납니다. CQ-4249378용 핫픽스
@@ -1503,7 +1630,7 @@ AEM 6.4.2.0 Forms의 주요 기능은 다음과 같습니다.
 **PDFG 서비스**
 
 * 보안 설정의 만들기/수정 기능이 작동하지 않습니다. NPR-24769: CQ-4246927용 핫픽스
-* 단일 API 호출을 통해 선택적으로 글꼴을 포함 취소하여 PDF를 최적화할 수 있습니다. NPR-23287
+* 단일 API 호출을 통해 선택적으로 글꼴을 언임베드하여 PDF를 최적화할 수 있습니다. NPR-23287
 
 **문서 서비스**
 
@@ -1516,7 +1643,7 @@ AEM 6.4.2.0 Forms의 주요 기능은 다음과 같습니다.
 **양식 - 기초 JEE**
 
 * 간헐적으로 시스템 컨텍스트 계정으로 실행되는 프로세스 NPR-25289, NPR-25313: CQ-4249331용 핫픽스
-* AEM Forms JEE가 Apache Struts 및 Jackson 데이터 바인딩 보안 경고의 영향을 받습니다. NPR-25628: CQ-4242891용 핫픽스
+* AEM Forms JEE는 Apache Struts 및 Jackson 데이터 바인딩 보안 경고의 영향을 받습니다. NPR-25628: CQ-4242891용 핫픽스
 * 이메일 시작 지점 프로세스가 작동하지 않습니다. NPR-25253: CQ-4248518용 핫픽스
 
 **기능 팩이 포함됨**
@@ -1631,7 +1758,7 @@ AEM 6.4.1.0은 AEM 6.4 GA에 설치할 수 있습니다. 서비스 팩의 주요
 **플랫폼**
 
 * (클래식 UI)(터치 UI) 태그 선택기가 표시되지 않고 자산 검색 스키마의 태그 조건자를 통해 태그를 검색하려고 할 때 예외가 발생합니다. NPR-23049: CQ-4239371용 핫픽스
-* (클래식 UI) xtype=tags를 사용하는 구성 요소는 null을 반환하고 태그 목록에서 선택할 수 없습니다. NPR-23050: CQ-4239937용 핫픽스
+* (클래식 UI) xtype=tags를 사용하는 구성 요소는 null을 반환하고 나머지 태그 목록에서 선택할 수 없습니다. NPR-23050: CQ-4239937용 핫픽스
 * (브랜딩) 옵트인 대화 상자에 Adobe Experience Cloud 대신 Adobe Marketing Cloud가 언급됩니다. NPR-23210: CQ-4237799용 핫픽스
 * 필터 옵션을 사용하면 6.3에서 6.4로 업그레이드한 후 AEM이 느려집니다.NPR-23260:CQ-4239847에 대한 핫픽스(확인)
 * granite.omnisearch.core 수정 사항을 위한 사전 예방적 백포트. NPR-23536
@@ -1951,7 +2078,7 @@ AEM 6.4.1.0에 포함된 컨텐츠 패키지 목록
 
 [파일 가져오기](assets/6_4_1_0_content-package-list.txt)
 
-### Install 6.4.7.0 {#install}
+### Install 6.4.8.0 {#install}
 
 #### 설치 요구 사항 {#setup-requirements}
 
@@ -1969,34 +2096,34 @@ AEM 6.4.1.0에 포함된 컨텐츠 패키지 목록
 >
 >AEM 6.4에 기능 팩을 설치한 고객의 경우Adobe에서 제공하는 선택적 기능 팩은 릴리스 버전 및 서비스 팩에 종속되어 있습니다. Feature Pack이 설치되어 있는 경우 AEM 고객 지원 센터에 문의하여 AEM 6.4용 이 서비스 팩과 해당 기능 팩의 호환성을 확인하십시오.
 
-* AEM 6.4.7.0 requires AEM 6.4. Please visit [upgrade documentation](../sites-deploying/upgrade.md) for detailed instructions.
+* AEM 6.4.8.0 requires AEM 6.4. Please visit [upgrade documentation](../sites-deploying/upgrade.md) for detailed instructions.
 * 서비스 팩은 Adobe Package Share에서 다운로드할 수 있고, Adobe Package Share는 AEM 6.4 인스턴스에서 직접 액세스할 수 있습니다.
-* MongoDB 및 여러 인스턴스가 포함된 배포에서 패키지 관리자를 사용하여 작성자 인스턴스 중 하나에 AEM 6.4.7.0을 설치합니다.
+* MongoDB 및 여러 인스턴스가 포함된 배포에서 패키지 관리자를 사용하여 작성자 인스턴스 중 하나에 AEM 6.4.8.0을 설치합니다.
 * 서비스 팩을 설치하기 전에 AEM 인스턴스의 스냅샷 또는 새 백업이 있는지 확인하십시오.
 * 설치하기 전에 인스턴스를 다시 시작합니다. 인스턴스가 업데이트 모드에 있는 경우에만 필요하지만(그리고 이 경우 이전 버전에서 인스턴스가 방금 업데이트된 경우), 인스턴스가 더 오랜 기간 동안 실행 중이면 권장됩니다.
 
 >[!NOTE]
 >
->AEM 6.4.7.0 패키지를 삭제하거나 제거하지 않는 것이 좋습니다.
+>AEM 6.4.8.0 패키지를 삭제하거나 제거하지 않는 것이 좋습니다.
 
 ### 패키지 공유를 통해 서비스 팩 설치 {#install-the-service-pack-via-package-share}
 
 기존 AEM 6.4 인스턴스에 서비스 팩을 설치하려면 다음 단계를 수행하십시오.
 
-1. AEM 내에서 또는 브라우저에서 직접 또는 브라우저에서 직접 패키지 공유에 로그인하여 AEM 6.4.7.0 패키지를 다운로드합니다.
+1. AEM 내에서 또는 브라우저에서 직접 또는 브라우저에서 직접 패키지 공유에 로그인하여 AEM 6.4.8.0 패키지를 다운로드합니다.
 
-   (&quot;AEM-6.4.7.0&quot;를 검색하여 찾기).
+   (&quot;AEM-6.4.8.0&quot;를 검색하여 찾기).
 1. 패키지 관리자를 사용하여 다운로드한 패키지를 설치합니다.
 
 >[!NOTE]
 >
->**패키지 관리자 UI의 대화 상자가 6.4.7.0 설치 중에 종료되는 경우가 있습니다.**
+>**패키지 관리자 UI의 대화 상자가 6.4.8.0 설치 중에 종료되는 경우가 있습니다.**
 >
 >따라서 인스턴스에 액세스하기 전에 오류 로그가 안정화될 때까지 기다리는 것이 좋습니다. 사용자는 Updater 번들 제거와 관련된 특정 로그가 생성된 후에 설치가 성공적으로 수행되었는지 확인해야 합니다. 일반적으로 Safari에서 발생하지만, 브라우저에서는 간헐적으로 발생할 수 있습니다.
 
 ### 자동 설치 {#auto-installation}
 
-실행 중인 인스턴스에 AEM 6.4.7.0을 자동으로 설치하는 두 가지 방법이 있습니다.
+실행 중인 인스턴스에 AEM 6.4.8.0을 자동으로 설치하는 두 가지 방법이 있습니다.
 
 A. 서버가 실행되는 동안 패키지를 ..*/crx-quickstart/install* 폴더에 배치합니다. 패키지가 자동으로 설치됩니다.
 
@@ -2004,11 +2131,11 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/e
 
 >[!NOTE]
 >
->AEM 6.4.7.0은 부트스트랩 설치를 지원하지 않습니다.
+>AEM 6.4.8.0은 부트스트랩 설치를 지원하지 않습니다.
 
 ### 설치 확인 {#validate-install}
 
-1. 제품 정보 페이지(*/system/console/ productinfo *)에 설치된 제품 아래에 업데이트된 버전 문자열 &quot;Adobe Experience Manager, 버전 6.4.7.0&quot;이 표시됩니다.
+1. 제품 정보 페이지(*/system/console/ productinfo *)에 설치된 제품 아래에 업데이트된 버전 문자열 &quot;Adobe Experience Manager, 버전 6.4.8.0&quot;이 표시됩니다.
 1. 모든 OSGI 번들은 OSGi 콘솔에서 ACTIVE이거나 FRAGMENT입니다(웹 콘솔 사용: /system/console/bundles).
 1. OSGI 번들 org.apache.jackrabbit.oak-core는 버전 1.8.17 이상(웹 콘솔 사용:/system/console/bundles).
 
@@ -2019,7 +2146,7 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/e
 
 ### 다이내믹 미디어 뷰어 업데이트(5.10.1) {#update-dynamic-media-viewers}
 
-<p id="Dynamic">AEM 6.4.7.0에는 이미지 사전 설정 페이지에서 중복된 이름을 확인할 수 있는 새로운 버전의 Dynamic Media 뷰어(5.10.1)가 포함되어 있습니다. Dynamic Media 고객은 박스 뷰어 사전 설정을 최신 상태로 전환하려면 다음 명령을 실행하는 것이 좋습니다.
+<p id="Dynamic">AEM 6.4.8.0에는 이미지 사전 설정 페이지에서 중복된 이름을 확인할 수 있는 새로운 버전의 Dynamic Media 뷰어(5.10.1)가 포함되어 있습니다. Dynamic Media 고객은 박스 뷰어 사전 설정을 최신 상태로 전환하려면 다음 명령을 실행하는 것이 좋습니다.
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
@@ -2035,7 +2162,7 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/e
 
 >[!NOTE]
 >
->AEM 6.4.7.0에는 [AEM Forms 호환성 패키지](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/AEM-FORMS-6.4.7.0-COMPAT)의 새 버전이 포함되어 있습니다. 이전 버전의 AEM Forms 호환성 패키지를 사용하고 AEM 6.4.7.0으로 업데이트하는 경우 최신 버전의 AEM Forms 호환성 패키지 설치 후 양식 추가 기능 패키지를 설치합니다.
+>AEM 6.4.8.0에는 [AEM Forms 호환성 패키지](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/AEM-FORMS-6.4.7.0-COMPAT)의 새 버전이 포함되어 있습니다. 이전 버전의 AEM Forms 호환성 패키지를 사용하고 AEM 6.4.8.0으로 업데이트하는 경우 최신 버전의 AEM Forms 호환성 패키지 설치 후 양식 추가 기능 패키지를 설치합니다.
 
 1. AEM 서비스 팩을 설치했는지 확인합니다.
 1. Download the corresponding forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for your operating system.
@@ -2047,7 +2174,7 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/e
 >
 >JEE에서 AEM Forms를 사용하지 않는 경우 건너뜁니다. 별도의 설치 프로그램을 통해 AEM Forms JEE의 수정 사항이 전달됩니다.
 
-For information about installing the cumulative installer for AEM Forms JEE and post-deployment configuration, see [AEM Forms JEE Patch Installer 0013](https://helpx.adobe.com/aem-forms/quick-fixes/6-4/jee-patch-0013.html).
+For information about installing the cumulative installer for AEM Forms JEE and post-deployment configuration, see [AEM Forms JEE Patch Installer 0015](https://helpx.adobe.com/aem-forms/quick-fixes/6-4/jee-patch-0015.html).
 
 #### NPR-21268에 필요한 구성 설정 {#configuration-settings-required-for-npr}
 
@@ -2073,7 +2200,7 @@ For information about installing the cumulative installer for AEM Forms JEE and 
 
 ### Uber Jar {#uber-jar}
 
-The Uber Jar for AEM 6.4.7.0 is available in the [Adobe Public Maven repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.4.7/).
+The Uber Jar for AEM 6.4.8.0 is available in the [Adobe Public Maven repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.4.8/).
 
 To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](../sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
@@ -2081,7 +2208,7 @@ To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](
 <dependency>
       <code>com.adobe.aem</groupId>
       <artifactId>uber-jar</artifactId>
-      <version>6.4.6</version>
+      <version>6.4.8.0</version>
       <classifier>apis</classifier>
       <scope>provided</scope>
 </dependency>
@@ -2122,21 +2249,20 @@ To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](
 
 ### OSGi 번들 및 컨텐츠 패키지가 설치됨 {#osgi-bundles-and-content-packages-included}
 
-다음 텍스트 문서에는 AEM 6.4.7.0에 포함된 OSGi 번들 및 컨텐츠 패키지가 나열됩니다.
+다음 텍스트 문서에는 AEM 6.4.8.0에 포함된 OSGi 번들 및 컨텐츠 패키지가 나열됩니다.
 
-AEM 6.4.7.0에 포함된 OSGi 번들 목록
+AEM 6.4.8.0에 포함된 OSGi 번들 목록
 
-[파일 가져오기](assets/6.4.7.0_osgi_bundles.txt)
+[파일 가져오기](assets/6.4.8.0_osgi_bundles.txt)
 
-AEM 6.4.7.0에 포함된 컨텐츠 패키지 목록
+AEM 6.4.8.0에 포함된 컨텐츠 패키지 목록
 
-[파일 가져오기](assets/sp_6.4.7.0_content_packages.txt)
+[파일 가져오기](assets/6.4.8.0_content_packages.txt)
 
 ### 유용한 리소스 {#helpful-resources}
 
 * [AEM 6.4 릴리스 노트](../release-notes/release-notes.md)
 * [AEM 제품 페이지](https://www.adobe.com/solutions/web-experience-management.html)
-* [AEM 개발자 지원](https://docs.adobe.com/content/ddc/en.html)
 * [AEM 6.4 설명서](https://helpx.adobe.com/support/experience-manager/6-4.html)
 * Subscribe to [Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)
 
