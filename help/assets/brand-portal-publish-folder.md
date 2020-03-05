@@ -3,14 +3,14 @@ title: 브랜드 포털에 폴더 게시
 description: Brand Portal에 폴더를 게시 및 게시 취소하는 방법을 알아봅니다.
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 33210032c45e38963aed429e70eec4095c5d75f1
 
 ---
 
 
 # Publish folders to Brand Portal {#publish-folders-to-brand-portal}
 
-AEM(Adobe Experience Manager) 자산 관리자는 자산 및 폴더를 조직의 AEM Assets 브랜드 포털 인스턴스에 게시(또는 게시 워크플로우를 최신 날짜/시간으로 예약)할 수 있습니다. 그러나 먼저 AEM 자산을 브랜드 포털과 통합해야 합니다. 자세한 내용은 브랜드 포털과 [AEM 자산 통합 구성을 참조하십시오](brand-portal-configuring-integration.md).
+AEM(Adobe Experience Manager) 자산 관리자는 자산 및 폴더를 AEM Assets 브랜드 포털 인스턴스에 게시하거나 게시 워크플로우를 나중 날짜/시간으로 예약할 수 있습니다. 그러나 먼저 AEM 자산을 브랜드 포털과 통합해야 합니다. 자세한 내용은 브랜드 포털에서 [AEM 자산 구성을 참조하십시오](configure-aem-assets-with-brand-portal.md).
 
 자산 또는 폴더를 게시한 후 브랜드 포털에서 사용자가 사용할 수 있습니다.
 
