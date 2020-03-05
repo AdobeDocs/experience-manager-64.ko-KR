@@ -10,7 +10,7 @@ topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.4/SCREENS
 discoiquuid: 920e9702-82f7-4495-a84e-22a1c8b0d559
 translation-type: tm+mt
-source-git-commit: 5f613cbae9dccbc277287e5e58c8f0648c4f3bed
+source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
 
 ---
 
@@ -43,11 +43,7 @@ Screens를 사용하여 애플리케이션을 만들고 관리하는 것은 간�
 
 ## 새 AEM Screens 프로젝트 시작 {#starting-a-new-aem-screens-project}
 
-새로운 디지털 사이니지 경험을 시작하려면 먼저 역할을 결합해야 사용이 가능합니다. 다음 역할은 새 스크린 프로젝트를 만들기 위한 시작점을 제공합니다.
-
-* [작성](authoring-screens.md)
-* [개발자](developing-screens.md)
-* [시스템 관리자/기술자](administering-screens.md)
+새로운 디지털 사이니지 경험을 시작하려면 먼저 역할을 결합해야 사용이 가능합니다.
 
 다음 그림은 AEM Screens의 개인 및 역할을 정의합니다.
 
@@ -55,7 +51,7 @@ Screens를 사용하여 애플리케이션을 만들고 관리하는 것은 간�
 
 >[!NOTE]
 >
->*또한 역할에 따라 다른 책임을 보려면 위에 언급된 개인 을 클릭합니다.*
+>*또한 역할에 따라 다른 책임을 보려면 위에 언급된 개인 정보를 클릭합니다.*
 
 ## 필수 지식 {#prerequisite-knowledge}
 
