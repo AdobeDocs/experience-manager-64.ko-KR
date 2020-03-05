@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 616d42c8-2316-4c56-b89f-660903270620
 translation-type: tm+mt
-source-git-commit: d2b4e6599a7b1c01dc220a03b2be9aa55e5d7458
+source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
 
 ---
 
@@ -112,10 +112,6 @@ You can close the global navigation panel by clicking or tapping **Close** to re
   <tr>
    <td>프로젝트</td> 
    <td><a href="/help/sites-authoring/touch-ui-managing-projects.md">프로젝트 콘솔에서는 프로젝트에 직접 액세스할 수 있습니다</a>. 프로젝트는 가상 대시보드입니다. 팀을 만든 다음 이 팀이 리소스, 워크플로우 및 작업에 액세스하도록 할 수 있기 때문에 공통의 목표에 대한 작업을 수행할 수 있도록 해줍니다. <br /> </td> 
-  </tr>
-  <tr>
-   <td>스크린</td> 
-   <td><a href="/help/screens/authoring-screens.md">스크린</a>을 사용하여 크기와 위치에 상관없이 고객이 보는 모든 화면을 관리할 수 있습니다.</td> 
   </tr>
   <tr>
    <td>사이트</td> 
@@ -321,13 +317,13 @@ You can close the global navigation panel by clicking or tapping **Close** to re
    <td>카드 보기<br /> </td> 
    <td>
     <ul> 
-     <li><br /> 데스크탑:마우스오버한 다음 확인 표시 빠른 작업을 사용합니다.</li> 
+     <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li> 
      <li>모바일 장치: <br /> 카드를 길게 탭하기</li> 
     </ul> </td> 
    <td>
     <ul> 
-     <li><br /> 데스크탑:카드를 클릭합니다.</li> 
-     <li><br /> 모바일 장치:카드를 누릅니다</li> 
+     <li>Desktop:<br /> Click the card</li> 
+     <li>Mobile device:<br /> Tap the card</li> 
     </ul> </td> 
   </tr>
   <tr>
