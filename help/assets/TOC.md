@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4 Assets User Guide
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
 
 ---
 
@@ -119,7 +119,8 @@ source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
    + [폴더 메타데이터 스키마](folder-metadata-schema.md)
    + [스마트 태그 관리](managing-smart-tags.md)
 + 브랜드 포털 {#brandportal}
-   + [브랜드 포털과 AEM 자산 통합 구성](brand-portal-configuring-integration.md)
+   + [브랜드 포털에서 AEM 자산 구성](configure-aem-assets-with-brand-portal.md)
+   + [브랜드 포털에 자산 게시](brand-portal-publish-assets.md)
    + [브랜드 포털에 컬렉션 게시](brand-portal-publish-collection.md)
    + [브랜드 포털에 폴더 게시](brand-portal-publish-folder.md)
 + 컨텐츠 조각 {#fragments}
