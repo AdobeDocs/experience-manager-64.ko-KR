@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 translation-type: tm+mt
-source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
 
 ---
 
@@ -132,7 +132,7 @@ MySQL 커넥터를 별도로 구하고 설치해야 합니다.
 
 1. 모든 작성자 및 게시 인스턴스에 대해 3단계와 4단계를 반복합니다.
 
-번들 설치에 대한 자세한 내용은 웹 콘솔 [페이지에서 확인할 수](../../help/sites-deploying/configuring-web-console.md#bundles) 있습니다.
+번들 설치에 대한 자세한 내용은 웹 콘솔 [페이지에서 확인할 수](/help/sites-deploying/web-console.md#bundles) 있습니다.
 
 #### 예:설치된 MySQL Connector 번들 {#example-installed-mysql-connector-bundle}
 
@@ -171,7 +171,7 @@ SCORM 엔진을 새로 설치하려면 SCORM [2017.1](https://rusticisoftware.co
 1. ScormEngineDB 스키마를 백업합니다.
 1. cq-social- **[scorm-package, 버전 2.2.2를 설치합니다](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg).**
 1. 에서 패키지를 `/libs/social/config/scorm/ScormEngine.zip` 다운로드하고 동일한 패키지를 추출합니다.
-1. 압축을 **푼** 디렉토리의 Installer 폴더로 이동합니다.
+1. 압축을 푼 **디렉토리의** Installer 폴더로 이동합니다.
 1. EngineInstall.xml `SystemDatabaseConnectionString` 파일에서 `scorm db connection url` 로 업데이트합니다 ****.
 1. 다음 명령을 사용하여 설치 관리자 폴더에서 mysql 스키마 업그레이드 도구를 실행합니다.
 
