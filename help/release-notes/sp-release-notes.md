@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 3037d1e5c9f97778c55ee2734ded3c9ef668df4d
+source-git-commit: 9f6da11b6fd5630dd2a81d1745f7f157ffb2bf34
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 3037d1e5c9f97778c55ee2734ded3c9ef668df4d
 | 버전 | 6.4.8.0 |
 | 유형 | 서비스 팩 릴리스 |
 | 날짜 | 2020년 3월 05일 |
-| 다운로드 URL | AEM 6.4.8.0 on [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0) |
+| 다운로드 URL | PackageShare, Software Distribution( [Beta)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0)의 AEM 6.4.8.0 [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## AEM 6.4.8.0에 포함된 기능 {#what-s-included-in-aem}
 
@@ -51,6 +51,9 @@ AEM 6.4.8.0은 2018년 4월 AEM 6.4의 공식 출시 이후 릴리스된 새로�
 
 ### 사이트 {#sites}
 
+* AEM Sites 페이지의 URL에 콜론 또는 백분율 기호가 포함되어 있으면 기본 브라우저가 응답을 중단하고 CPU 주기에 스파이크가 표시됩니다(NPR-32368, NPR-31917).
+* AEM Sites 페이지를 열어 편집하고 구성 요소를 복사하면 일부 자리 표시자에 대해 붙여넣기 작업을 사용할 수 없습니다(NPR-32328).
+* 활성화 요청 워크플로우에 참조된 에셋이 포함되지 않습니다(NPR-32304).
 * 블루프린트가 생성되면 레코드 수가 80개를 초과하는 경우 처음 80개의 레코드만 표시됩니다. 블루프린트는 나머지 레코드(NPR-32058)에 대한 빈 라인을 표시합니다.
 * 사용자는 필수 필드에 정보를 제공하지 않고 컨텐츠 조각을 저장할 수 있습니다(NPR-31988).
 * 코어 경험 조각 구성 요소에 구성된 경로에 대해 자동 탐색이 작동하지 않습니다(NPR-31921).
@@ -58,7 +61,6 @@ AEM 6.4.8.0은 2018년 4월 AEM 6.4의 공식 출시 이후 릴리스된 새로�
    `Error: No common ancestor found, cannot continue` (NPR-31916).
 * 동일한 폴더 내에서 컨텐츠를 이동하면 페이지 이동 옵션이 비활성화됩니다(NPR-31841).
 * BUNSETSU 방법을 사용하여 일본어 문구 분할과 적절한 위치에서 줄바꿈(NPR-31836)을 사용하는 방법에 대한 지원을 추가했습니다.
-* 로 종료되거나 액세스되는 URL이 `/_jcr_content/.html` `/jcr:content/.html` 있으면 CPU 스파이크 및 AEM이 응답을 중지합니다(NPR-31755).
 * RTE(Rich Text Editor)에서 하이퍼링크를 편집하면 새로 선택한 경로가 저장되지 않습니다(NPR-31659).
 * 다중 필드 구성 요소를 삭제하고 삭제를 취소하면 구성 요소가 복원되지만 데이터가 복원되지 않습니다(NPR-31617).
 
@@ -109,10 +111,6 @@ AEM 6.4.8.0은 2018년 4월 AEM 6.4의 공식 출시 이후 릴리스된 새로�
 ### 번역 {#translation-6480}
 
 * 여러 언어에 대한 번역 프로젝트를 만들면 일부 언어에 대해서만 프로젝트가 생성되며 오류(리소스 확인자가 이미 닫혀 있음)가 로그에서 관찰됩니다(NPR-32212).
-
-### WCM-템플릿 편집기 {#wcm-template-editor-6480}
-
-* URL이 다음으로 `/_jcr_content/.html` 끝나거나 액세스될 때 CPU 스파이크 및 Experience Manager `/jcr:content/.html` 가 응답하지 않습니다(CQ-4280770).
 
 ### WCM-MSM {#wcm-msm-6480}
 
@@ -1167,7 +1165,7 @@ AEM 6.4.3.0의 주요 하이라이트 중 일부는 다음과 같습니다.
 
 * AEM 6.4로 업그레이드한 후 구성을 다운로드하려고 하면 NullPointerException이 반환됩니다.NPR-27310:Granite-23573용 핫픽스
 * granite.platform.login 수정 사항에 대한 사전 예방적 백포트. NPR-26941
-* 사전 예방적 지원 - granite.ui.co컨텐츠 수정 NPR-26294
+* 사전 예방적 백포트를 참조하십시오. NPR-26294
 * 숫자 필드 구성 요소는 Internet Explorer 11에서 음수를 확인하지 않습니다. NPR-26701
 * granite.ui.coralui3 수정 사항을 위한 사전 예방적 백포트. NPR-26662
 * Proactive Backport - granite.ui.coralui3-eon 수정. NPR-26666
