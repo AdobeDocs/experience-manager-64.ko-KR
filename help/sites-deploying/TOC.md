@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4 Deploying Guide
 translation-type: tm+mt
-source-git-commit: 24aa210f1c7079c3e25fc5ccf346336b2121c142
+source-git-commit: d9a2b00fa0ed9b9660aaf5b17d1790747f339e91
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: 24aa210f1c7079c3e25fc5ccf346336b2121c142
    + [개정 정리](revision-cleanup.md)
    + [TarMK Cold Standby를 사용하여 AEM을 실행하는 방법](tarmk-cold-standby.md)
    + [AEM 6.4의 RDBMS 지원](rdbms-support-in-aem.md)
-   + [Oak 쿼리 및 색인](queries-and-indexing.md)
+   + [Oak 쿼리 및 인덱싱](queries-and-indexing.md)
    + [Oak-run Jar를 통한 인덱싱](indexing-via-the-oak-run-jar.md)
    + [Oak-run.jar 인덱싱 사용 사례](oak-run-indexing-usecases.md)
    + [Oak 인덱스 문제 해결](troubleshooting-oak-indexes.md)
@@ -57,6 +57,7 @@ source-git-commit: 24aa210f1c7079c3e25fc5ccf346336b2121c142
    + [자산 성과 가이드](assets-performance-sizing.md)
    + [구성 방법 문서](ht-deploy.md)
    + [Geometrixx 사이트 제거](removing-the-geometrixx-sites.md)
+   + [웹 콘솔 구성](configuring-web-console.md)
 + AEM 6.4로 업그레이드 {#upgrading}
    + [AEM 6.4로 업그레이드](upgrade.md)
    + [업그레이드 계획](upgrade-planning.md)
