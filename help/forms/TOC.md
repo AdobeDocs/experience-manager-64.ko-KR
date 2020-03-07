@@ -5,7 +5,7 @@ sub-product: forms
 audience: end-user
 user-guide-title: AEM 6.4 Forms User Guide
 translation-type: tm+mt
-source-git-commit: 6546a047d3013740be93b739ccd880c685250200
+source-git-commit: 7aa8c789830ca6544c72f0086b186cffd939faec
 
 ---
 
@@ -612,6 +612,7 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
       + API를 사용하여 JEE에서 AEM Forms 호출 {#invoking-aem-forms-jee-apis}
          + [REST 요청을 사용하여 AEM 양식 호출](developing/invoking-aem-forms-using-rest.md)
          + [Remoting을 사용하여 AEM Forms 호출](developing/invoking-aem-forms-using-remoting.md)
+         + [웹 서비스를 사용하여 AEM Forms 호출](developing/invoking-aem-forms-using-web.md)
          + [웹 서비스를 사용하여 AEM Forms 호출](developing/invoking-human-centric-long-lived.md)
          + [JavaAPI를 사용하여 AEM Forms 호출](developing/invoking-aem-forms-using-java.md)
          + [HTTP 토큰을 사용하여 SSO 인증을 수행하는 Flash Builder 애플리케이션 만들기](developing/creating-flash-builder-applications-perform.md)
