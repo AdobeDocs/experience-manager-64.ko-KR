@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: c5a78d6c2b8a55cad6266e86e9b990cafc038431
 
 ---
 
@@ -178,7 +178,7 @@ AEM Forms에서는 적응형 양식 구성 요소에 동적 동작을 추가하�
 
 사용자 지정 데이터를 처리하려면 적응형 양식의 제출 작업이 필요합니다. 제출 작업은 적응형 양식을 사용하여 제출하는 데이터에 대해 수행되는 작업을 결정합니다.
 
-* 적응형 양식에는 즉시 사용할 수 있는 몇 가지 제출 작업이 있습니다. 자세한 내용은 제출 [작업](/help/forms/using/configuring-submit-actions.md)구성을 참조하십시오.
+* 적응형 양식에는 즉시 사용할 수 있는 몇 가지 전송 작업이 있습니다. 자세한 내용은 제출 [작업](/help/forms/using/configuring-submit-actions.md)구성을 참조하십시오.
 * 기본 제출 작업이 사용 사례를 이행하지 않는 경우 사용자 지정 제출 작업을 작성할 수 있습니다. 자세한 내용은 적응형 양식에 [대한 사용자 정의 제출 작업](/help/forms/using/custom-submit-action-form.md)쓰기를 참조하십시오.
 * 서버측 유효성 검사를 포함시켜 잘못된 데이터 제출을 방지할 수 있습니다.
 
@@ -245,7 +245,7 @@ AEM에서는 적응형 양식을 현지화하는 데 사용할 수 있는 번역
 
    `https://[*server*]:[*port*]/<*contextPath*>/<*formFolder*>/<*formName*>.html?wcmmode=disabled&afAcceptLang=ja`
 
-* AEM Forms는 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어(브라질)(pt-br), 중국어(zh-tn), 중국어(zh-대만) 및 한국어(ko-kr)로 적응형 양식 컨텐츠의 현지화를 지원합니다. 그러나 런타임 시 적응형 양식에 대한 새로운 로케일 지원을 추가할 수 있습니다. 자세한 내용은 적응형 [양식 현지화를](/help/forms/using/supporting-new-language-localization.md)위한 새로운 로케일 지원을 참조하십시오.
+* AEM Forms는 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어(브라질)(pt-BR), 중국어(zh-CN), 중국어-대만(zh-TW) 및 한국어(ko-KR) 로케일 현지화를 지원합니다. . 그러나 런타임 시 적응형 양식에 대한 새로운 로케일 지원을 추가할 수 있습니다. 자세한 내용은 적응형 [양식 현지화를](/help/forms/using/supporting-new-language-localization.md)위한 새로운 로케일 지원을 참조하십시오.
 
 ## 제작을 위한 양식 프로젝트 준비 {#prepare-forms-project-for-production}
 
