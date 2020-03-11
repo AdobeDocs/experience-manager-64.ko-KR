@@ -3,7 +3,7 @@ title: AEM에서 자산 검색
 description: 필터 패널을 사용하여 AEM에서 필요한 자산을 찾는 방법과 검색에 표시되는 자산을 사용하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 57952323a3ae0990232506d551b91b724f830f20
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -26,6 +26,8 @@ source-git-commit: 57952323a3ae0990232506d551b91b724f830f20
 * 방향
 * 스타일
 * 인사이트
+
+<!-- TBD keystroke 65 article and port applicable changes here. This content goes. -->
 
 필터 패널을 사용자 정의하고 [검색 패싯을](search-facets.md)사용하여 검색 조건자를 추가/제거할 수 있습니다. 필터 패널을 표시하려면 다음 단계를 수행하십시오.
 
