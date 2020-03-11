@@ -1,16 +1,9 @@
 ---
 title: 리치 텍스트 편집기 구성
-seo-title: 리치 텍스트 편집기 구성
 description: AEM 리치 텍스트 편집기를 구성하는 방법에 대해 학습합니다.
-seo-description: AEM 리치 텍스트 편집기를 구성하는 방법에 대해 학습합니다.
-uuid: 82d2fe41-676a-4a49-939f-13374b9d869f
-contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/SITES
-topic-tags: operations
-content-type: reference
-discoiquuid: 9248d09c-b749-4aca-9167-1707c1dd8a53
+contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 01a748a6f6f92c752fc6a14005f236fee304c2eb
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -25,7 +18,7 @@ RTE(Rich Text Editor)는 작성자가 텍스트 컨텐츠를 편집할 수 있�
 
 ![리치 텍스트 편집기를 구성하는 일반적인 워크플로우](assets/rte_workflow_v1.png)
 
-**** 그림:리치 텍스트 편집기를 구성하는 *일반적인 워크플로우*
+*그림:리치 텍스트 편집기를 구성하는 일반적인 워크플로우*
 
 ## 터치 지원 UI 및 클래식 UI 이해 {#understand-touch-enabled-ui-and-classic-ui}
 
@@ -33,18 +26,19 @@ RTE(Rich Text Editor)는 작성자가 텍스트 컨텐츠를 편집할 수 있�
 
 ![터치 지원 UI의 리치 텍스트 편집기 도구 모음](assets/chlimage_1-404.png)
 
-**** 그림:터치 *지원 UI의 리치 텍스트 편집기 도구 모음*
+*그림:터치 지원 UI의 리치 텍스트 편집기 도구 모음*
 
 ![클래식 UI의 리치 텍스트 편집기 도구 모음](assets/rtedefault.png)
 
-**** 그림:클래식 *UI의 리치 텍스트 편집기 도구 모음*
+*그림:클래식 UI의 리치 텍스트 편집기 도구 모음*
 
-**참고 항목**:
+>[!MORELIKETHIS]
+>
+>* [UI 추천](/help/sites-deploying/ui-recommendations.md)
+>* 클래식 UI 사용 중단에 대한 자세한 내용은 [AEM 6.4 릴리스 노트를 참조하십시오.](/help/release-notes/deprecated-removed-features.md)
+>* UI의 차이는 Touch UI와 [클래식 UI를 참조하십시오](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
+>* 터치 지원 UI에 대한 자세한 내용은 AEM [Touch UI 개념을 참조하십시오.](/help/sites-developing/touch-ui-concepts.md)
 
-* [UI 추천](/help/sites-deploying/ui-recommendations.md)
-* 클래식 UI 사용 중단에 대한 자세한 내용은 [AEM 6.4 릴리스 노트를 참조하십시오.](/help/release-notes/deprecated-removed-features.md)
-* UI의 차이는 Touch UI와 [클래식 UI를 참조하십시오](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
-* 터치 지원 UI에 대한 자세한 내용은 AEM [Touch UI 개념을 참조하십시오.](/help/sites-developing/touch-ui-concepts.md)
 
 ## 다양한 편집 모드 {#editingmodes}
 
@@ -100,11 +94,11 @@ RTE(Rich Text Editor)는 작성자가 텍스트 컨텐츠를 편집할 수 있�
 
 ![터치 지원 UI의 기본 툴바를 사용한 인라인 편집](assets/chlimage_1-405.png)
 
-**** 그림:터치 *지원 UI의 기본 툴바를 사용한 인라인 편집*
+*그림:터치 지원 UI의 기본 툴바를 사용한 인라인 편집*
 
 클래식 UI에서 구성 요소를 느리게 두 번 클릭하면 인라인 편집이 가능하며 주황색 윤곽선이 내용을 강조 표시합니다. Content Finder가 열려 있으면 창 맨 위에 사용 가능한 RTE 서식 지정 옵션이 있는 도구 모음이 표시됩니다. Content Finder가 열려 있지 않으면 서식 옵션이 표시되지 않고 기본 텍스트 편집만 할 수 있습니다.
 
-### 전체 화면 편집 {#full-screen-editing}
+### Full screen editing {#full-screen-editing}
 
 AEM 구성 요소는 페이지 컨텐츠를 숨기고 사용 가능한 화면을 차지하는 전체 화면 보기에서 열 수 있습니다. 대부분의 편집 옵션을 제공하므로 전체 화면 편집이 인라인 편집의 자세한 버전을 고려하십시오. 인라인 편집 모드를 사용할 때 작은 ![도구 모음에서 rte_fullscreen](assets/rte_fullscreen.png)을 클릭하여 열 수 있습니다.
 
@@ -112,19 +106,19 @@ AEM 구성 요소는 페이지 컨텐츠를 숨기고 사용 가능한 화면을
 
 ![터치 지원 UI의 전체 화면 모드에서 편집할 때 자세한 RTE 도구 모음](assets/chlimage_1-406.png)
 
-**** 그림:터치 *지원 UI의 전체 화면 모드에서 편집할 때 자세한 RTE 도구 모음*
+*그림:터치 지원 UI의 전체 화면 모드에서 편집할 때 자세한 RTE 도구 모음*
 
 ### 대화 상자 편집 {#dialog-editing}
 
-클래식 UI에서 구성 요소를 두 번 클릭하면 컨텐츠를 편집할 수 있는 대화 상자가 열립니다. 대화 상자가 기존 페이지 상단에 열립니다. 일부 특정 시나리오에서는 대화 상자가 팝업 창으로 열립니다. 예를 들어 텍스트 구성 요소가 여러 열로 구성된 페이지 레이아웃의 열에 포함되어 있고 대화 상자에 사용할 수 있는 영역은 더 적습니다.
+클래식 UI에서 구성 요소를 두 번 클릭하면 컨텐츠를 편집할 수 있는 대화 상자가 열립니다. 대화 상자가 기존 페이지 상단에 열립니다. 일부 특정 시나리오에서는 대화 상자가 팝업 창으로 열립니다. 예를 들어, 텍스트 구성 요소가 다중 열 페이지 레이아웃의 열에 포함되어 있고 대화 상자에 사용할 수 있는 영역이 적을 경우
 
 ![터치 지원 UI의 대화 상자 편집 모드](assets/dialog_editing_modetouchui.png)
 
-**** 그림:터치 *지원 UI의 대화 상자 편집 모드*
+*그림:터치 지원 UI의 대화 상자 편집 모드*
 
 ![편집용 세부 도구 모음이 포함된 클래식 UI의 대화 상자](assets/chlimage_1-407.png)
 
-**** 그림:편집에 *대한 세부 도구 모음이 포함된 클래식 UI의 대화 상자*
+*그림:편집용 세부 도구 모음이 포함된 클래식 UI의 대화 상자*
 
 ## RTE 플러그인 및 관련 기능 정보 {#aboutplugins}
 
