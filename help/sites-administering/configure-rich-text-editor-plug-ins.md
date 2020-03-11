@@ -1,17 +1,9 @@
 ---
 title: 리치 텍스트 편집기 플러그인 구성
-seo-title: 리치 텍스트 편집기 플러그인 구성
 description: 개별 기능을 사용하도록 AEM 리치 텍스트 편집기 플러그인을 구성하는 방법을 알아봅니다.
-seo-description: 개별 기능을 사용하도록 AEM 리치 텍스트 편집기 플러그인을 구성하는 방법을 알아봅니다.
-uuid: d6a029fb-e431-4f12-9002-7d794e4beb0d
-contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/SITES
-topic-tags: operations
-content-type: reference
-discoiquuid: e0328f9c-26c6-4c40-8594-3190c38cebd8
-noindex: true
+contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 89f920203342a55280eaee4a89bbdb8497344b49
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -413,7 +405,7 @@ RTE의 단락 형식을 구성할 때 단락 태그 &lt;p>를 서식 옵션으�
    각 필수 형식에 대해 단계를 반복합니다.
 
 >[!CAUTION]
-사용자 정의 형식을 정의하면 기본 형식(`<p>`, `<h1>``<h2>`및 `<h3>`형식)이 제거됩니다. 기본 포맷으로 포맷을 다시 만들 수 `<p>` 있습니다.
+사용자 정의 형식을 정의하면 기본 형식(`<p>`, `<h1>``<h2>`및 `<h3>`HTML)이 제거됩니다. 기본 포맷으로 포맷을 다시 만들 수 `<p>` 있습니다.
 
 ## 특수 문자 구성 {#spchar}
 
@@ -480,7 +472,7 @@ CRXDE 파섹
 
    * **이름** `rangeEnd`
       **유형** `Long`
-      **범위에서** 마지막 [](https://unicode.org/) 문자의 유니코드 표현(십진수) 값
+      **범위** 내 [마지막](https://unicode.org/) 문자의 유니코드 표현(십진수) 값
 
 1. 변경 사항을 저장합니다.
 
@@ -737,7 +729,7 @@ AEM에서 링크를 추가할 때 다음을 정의할 수 있습니다.
 
          * **이름** `targetInternal`
          * **유형** `String`
-         * **내부 링크에 대한 타겟의 값** (&quot;모드가 &quot;인 경우에만 사용 `auto`)
+         * **내부 링크에 대한 타겟의 값** (&quot;모드가 `auto`&quot;인 경우에만 사용)
       * 외부 링크의 대상:
 
          * **이름** `targetExternal`
