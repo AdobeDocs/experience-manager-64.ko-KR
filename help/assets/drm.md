@@ -3,7 +3,7 @@ title: 디지털 자산 권한 관리
 description: AEM 파섹
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -11,6 +11,8 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
 # Digital Rights Management in Assets {#digital-rights-management-in-assets}
 
 디지털 자산은 종종 사용약관과 사용 기간을 지정하는 라이선스와 연결됩니다. AEM(Adobe Experience Manager) 자산은 AEM 플랫폼과 완전히 통합되므로 자산 만료 정보 및 자산 상태를 효율적으로 관리할 수 있습니다. 라이선스 정보를 에셋과 연결할 수도 있습니다.
+
+<!-- TBD see if adding more UICONTROL tags is needed -->
 
 ## 자산 만료 {#asset-expiration}
 
@@ -95,7 +97,7 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
 
    >[!NOTE]
    >
-   >자산 생성자(특정 자산을 AEM 자산에 업로드하는 사람)만 자산이 만료되면 이메일을 받습니다. 전체 [AEM](/help/sites-administering/notification.md) 수준에서 이메일 알림 구성에 대한 자세한 내용은 이메일 알림 구성을 참조하십시오.
+   >자산 생성자(AEM 자산에 특정 자산을 업로드하는 사람)만 자산이 만료되면 이메일을 받습니다. 전체 [AEM](/help/sites-administering/notification.md) 수준에서 이메일 알림 구성에 대한 자세한 내용은 이메일 알림 구성을 참조하십시오.
 
 1. 이전 **[!UICONTROL 알림(초]** 단위) 필드에서 만료 관련 알림을 받을 때 자산이 만료되기 전 시간(초)을 지정합니다. 관리자 또는 자산 작성자는 자산이 만료되기 전에 지정된 시간 후에 만료될 것임을 알려주는 메시지를 받게 됩니다.
 
