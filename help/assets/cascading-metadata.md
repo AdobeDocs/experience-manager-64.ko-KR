@@ -3,7 +3,7 @@ title: 계단식 메타데이터
 description: 이 문서에서는 자산의 CSS 메타데이터를 정의하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -30,7 +30,7 @@ source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
 선택한 자산 유형에 따라 CSS 메타데이터를 표시하려는 시나리오를 고려해 보십시오. 몇 가지 예
 
 * 비디오의 경우 형식, 코덱이나 지속 시간 등과 같은 해당 필드를 표시합니다.
-* Word 또는 PDF 문서의 경우 페이지 수, 작성자 등의 필드를 표시할 수 있습니다.
+* Word 또는 PDF 문서의 경우 페이지 수, 작성자 등의 필드를 표시합니다.
 
 선택한 자산 유형에 관계없이 저작권 정보를 필수 필드로 표시합니다.
 
