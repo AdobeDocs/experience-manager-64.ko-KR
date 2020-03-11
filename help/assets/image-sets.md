@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: e269c0cf002f4b2db5454c315d35f4101b652540
 
 ---
 
@@ -39,7 +39,9 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 1. [마스터 이미지를 업로드하여 여러 뷰를 볼 수 있습니다.](#uploading-assets-in-image-sets)
 
-   먼저 이미지 세트에 대한 이미지를 업로드합니다. 사용자는 이미지 세트 뷰어에서 이미지를 확대할 수 있으므로 이미지를 선택할 때 확대/축소를 고려합니다. 이미지의 크기가 가장 큰 경우 2000픽셀 이상이어야 합니다. AEM Assets는 많은 이미지 파일 형식을 지원하지만 손실 없는 TIFF, PNG 및 EPS 이미지가 권장됩니다.
+   먼저 이미지 세트에 대한 이미지를 업로드합니다. 사용자는 이미지 세트 뷰어에서 이미지를 확대할 수 있으므로 이미지를 선택할 때 확대/축소를 고려합니다. 최적의 확대/축소 세부 사항을 위해 이미지가 가장 큰 차원에서 2000픽셀 이상인지 확인합니다. Dynamic Media는 각 이미지를 최대 25메가픽셀의 이미지로 렌더링할 수 있습니다. 예를 들어 5000 x 5000메가픽셀 이미지 또는 최대 25메가픽셀 크기의 기타 모든 크기 조합을 사용할 수 있습니다.
+
+   AEM Assets는 많은 이미지 파일 형식을 지원하지만 손실 없는 TIFF, PNG 및 EPS 이미지가 권장됩니다.
 
 1. [이미지 세트 만들기를 참조하십시오.](#creating-image-sets)
 
@@ -49,7 +51,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
    또한 [일괄 처리 집합 사전 설정을](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)통해 자동으로 이미지 집합을 만들 수 있습니다.
 
-   **중요** —배치 세트는 IPS(이미지 프로덕션 시스템)에서 자산 수집의 일부로 생성되며 다이내믹 미디어 - Scene7 모드에서만 사용할 수 있습니다.
+   **중요** — 배치 세트는 IPS(이미지 프로덕션 시스템)에서 자산 수집의 일부로 생성되며 다이내믹 미디어 - Scene7 모드에서만 사용할 수 있습니다.
 
    업로드할 [이미지 세트 자산 준비 및 파일](#uploading-assets-in-image-sets)업로드를 참조하십시오.
 
@@ -70,13 +72,13 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
    이미지 세트 게시를 사용하면 URL 및 포함 문자열이 활성화됩니다. 또한 만든 사용자 정의 뷰어 사전 설정을 [게시해야](managing-viewer-presets.md) 합니다. 즉시 사용 가능한 뷰어 사전 설정이 이미 게시되었습니다.
 
-1. [웹 응용 프로그램에 URL을 연결하거나 비디오 또는 이미지](linking-urls-to-yourwebapplication.md) 뷰어를 [포함합니다](embed-code.md).
+1. [웹 응용 프로그램에 URL을 연결하거나 비디오](linking-urls-to-yourwebapplication.md) 또는 [이미지 뷰어를 포함합니다](embed-code.md).
 
    AEM Assets는 이미지 세트에 대한 URL 호출을 만들고 이미지 세트를 게시한 후 활성화합니다. 자산을 미리 볼 때 이러한 URL을 복사할 수 있습니다. 또는 웹 사이트에 포함할 수 있습니다.
 
    이미지 세트를 선택한 다음 왼쪽 레일 드롭다운 메뉴에서 뷰어를 **[!UICONTROL 선택합니다]**.
 
-   이미지 [집합을 웹 페이지에](linking-urls-to-yourwebapplication.md) 연결 및 비디오 또는 이미지 [뷰어 포함을 참조하십시오](embed-code.md).
+   이미지 [세트를 웹 페이지에](linking-urls-to-yourwebapplication.md) 연결 및 비디오 또는 이미지 [뷰어 포함을 참조하십시오](embed-code.md).
 
 이미지 세트를 편집하려면 이미지 세트 [편집을 참조하십시오.](#editing-image-sets) 또한 이미지 세트 속성을 보고 편집할 [수](managing-assets-touch-ui.md#editing-properties)있습니다.
 
@@ -116,7 +118,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 >
 >또한 [일괄 처리 집합 사전 설정을](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)통해 자동으로 이미지 집합을 만들 수 있습니다.
 
-**** 중요:배치 세트는 IPS(이미지 프로덕션 시스템)에서 자산 수집의 일부로 생성되며 다이내믹 미디어 - Scene7 모드에서만 사용할 수 있습니다.
+**중요:** 배치 세트는 IPS(이미지 프로덕션 시스템)에서 자산 수집의 일부로 생성되며 다이내믹 미디어 - Scene7 모드에서만 사용할 수 있습니다.
 
 세트에 자산을 추가하면 자동으로 영숫자 순서로 추가됩니다. 자산을 추가한 후 수동으로 다시 정렬하거나 정렬할 수 있습니다.
 
@@ -169,7 +171,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 사용자 인터페이스에서 또는 [일괄 세트 사전 설정을](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)사용하여 자동으로 이미지 세트를 만들 수 있습니다.
 
-**중요** —배치 세트는 IPS 이미지 [프로덕션 시스템에서] 자산 수집의 일부로 생성되며 다이내믹 미디어 - Scene7 모드에서만 사용할 수 있습니다.)
+**중요** — 배치 세트는 IPS 이미지 [프로덕션 시스템에서] 자산 수집의 일부로 생성되며 다이내믹 미디어 - Scene7 모드에서만 사용할 수 있습니다.)
 
 하지만 배치 집합 사전 설정을 사용하여 만든 세트는 사용자 인터페이스에 *나타나지 않습니다* . 이러한 세트는 세 가지 방법으로 볼 수 있습니다. (사용자 인터페이스에서 이미지 세트를 만든 경우에도 이러한 방법을 사용할 수 있습니다.)
 
@@ -179,7 +181,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 * 세트의 멤버 이미지에서 [ **[!UICONTROL 세트]** ] 메뉴를 선택하여 자산이 속하는 세트를 표시합니다.
 
-   ![chlimage_1-340](assets/chlimage_1-344.png)
+   ![chlimage_1-344](assets/chlimage_1-344.png)
 
 * 검색에서 필터를 선택한 다음 **[!UICONTROL 다이내믹 미디어를]**&#x200B;확장하고 **[!UICONTROL 세트를]** 선택할 수 **[!UICONTROL 있습니다]**.
 
@@ -223,7 +225,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
    * 전체 이미지 세트를 삭제하려면 이미지 세트로 이동하여 선택한 다음 삭제를 **[!UICONTROL 누릅니다]**.
    >[!NOTE]
    >
-   >세트로 이동하여 이미지 세트에서 이미지를 편집하고 왼쪽 레일에서 **[!UICONTROL 멤버]** 설정을 누른 다음 개별 **[!UICONTROL 자산에서 연필]** 아이콘을 눌러 편집 창을 열 수 있습니다.
+   >세트로 이동하여 이미지 세트에서 이미지를 편집하고, 왼쪽 레일에서 **[!UICONTROL 멤버]** 설정을 누른 다음, 개별 **[!UICONTROL 자산에서 연필]** 아이콘을 눌러편집 창을 열 수 있습니다.
 
 1. 편집을 **[!UICONTROL 마치면]** 저장을 누릅니다.
 
