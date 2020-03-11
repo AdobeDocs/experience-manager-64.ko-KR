@@ -3,7 +3,7 @@ title: 폴더 자산 및 컬렉션 검토
 description: 폴더 또는 컬렉션 내의 에셋에 대한 검토 워크플로우를 설정하고 검토자 또는 크리에이티브 파트너와 공유하여 피드백을 얻을 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -108,4 +108,3 @@ AEM(Adobe Experience Manager) 자산을 사용하면 폴더 또는 컬렉션 내
    **목록 보기**
 
    ![collection_reviewstatuslistview](assets/collection_reviewstatuslistview.png)
-
