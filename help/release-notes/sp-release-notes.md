@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 9f6da11b6fd5630dd2a81d1745f7f157ffb2bf34
+source-git-commit: 6684e78caf43b49660de3c1a90e2cccd9a204420
 
 ---
 
@@ -787,7 +787,7 @@ AEM 6.4.4.0의 주요 주요 하이라이트는 다음과 같습니다.
 * SyntheticResource를 참조로 사용하면 Null 포인터 예외가 발생하고 페이지 이동을 차단합니다.  NPR-27576: CQ-4258262용 핫픽스
 * PushOnModify는 6.1-6.4 업그레이드된 인스턴스에서 삭제에서 작동하지 않습니다. NPR-28108: CQ-4259833용 핫픽스
 * (클래식 UI) 상속 취소 단추가 누락되었으며 구성 요소는 Live Copy 페이지에서 편집할 수 있습니다. NPR-28256: CQ-4260161용 핫픽스
-* OakState0001:롤아웃 시 해결된 충돌. NPR-27982: CQ-4259548용 핫픽스
+* OakState0001:롤아웃 시 해결되지 않은 충돌. NPR-27982: CQ-4259548용 핫픽스
 * SyntheticResource 참조가 들어 있는 구조를 복사/붙여넣을 때 프로세스는 500 오류로 끝납니다. NPR-27709: CQ-4259179용 핫픽스
 * 페이로드가 활성화되면 실행 중인 워크플로우를 종료할 수 없습니다. NPR-27672: CQ-4258520용 핫픽스
 * 롤아웃은 6.1에서 6.4로 업그레이드 후 중복 롤아웃 경로를 표시합니다.NPR-27845:CQ-4259487에 대한 핫픽스
@@ -1756,7 +1756,7 @@ AEM 6.4.1.0은 AEM 6.4 GA에 설치할 수 있습니다. 서비스 팩의 주요
 **플랫폼**
 
 * (클래식 UI)(터치 UI) 태그 선택기가 표시되지 않고 자산 검색 스키마의 태그 조건자를 통해 태그를 검색하려고 할 때 예외가 발생합니다. NPR-23049: CQ-4239371용 핫픽스
-* (클래식 UI) xtype=tags를 사용하는 구성 요소는 null을 반환하고 나머지 태그 목록에서 선택할 수 없습니다. NPR-23050: CQ-4239937용 핫픽스
+* (클래식 UI) xtype=tags를 사용하는 구성 요소는 null을 반환하고 태그 목록에서 선택할 수 없습니다. NPR-23050: CQ-4239937용 핫픽스
 * (브랜딩) 옵트인 대화 상자에 Adobe Experience Cloud 대신 Adobe Marketing Cloud가 언급됩니다. NPR-23210: CQ-4237799용 핫픽스
 * 필터 옵션을 사용하면 6.3에서 6.4로 업그레이드한 후 AEM이 느려집니다.NPR-23260:CQ-4239847에 대한 핫픽스(확인)
 * granite.omnisearch.core 수정 사항을 위한 사전 예방적 백포트. NPR-23536
@@ -2206,7 +2206,7 @@ To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](
 <dependency>
       <code>com.adobe.aem</groupId>
       <artifactId>uber-jar</artifactId>
-      <version>6.4.8.0</version>
+      <version>6.4.8</version>
       <classifier>apis</classifier>
       <scope>provided</scope>
 </dependency>
