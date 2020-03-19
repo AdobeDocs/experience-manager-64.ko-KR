@@ -3,7 +3,7 @@ title: 브랜드 포털에서 AEM 자산 구성
 description: '브랜드 포털에 자산 및 컬렉션을 게시하기 위해 브랜드 포털에서 AEM 자산을 구성하는 방법을 알아봅니다. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: c269402e253ae71f51de5bf7c05970abb51ef192
+source-git-commit: bd6ae2ddf49091c3b25bac97761a593cdd0a56cc
 
 ---
 
@@ -96,7 +96,7 @@ IMS 구성에는 다음 두 단계가 포함됩니다.
 
    **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
-   Adobe IMS 기술 계정 **[!UICONTROL 구성 페이지로 이동합니다]** .
+   그러면 Adobe IMS 기술 **[!UICONTROL 계정 구성 페이지로 이동합니다]** .
 
 1. 기본적으로 인증서 **탭이** 열립니다.
 
@@ -193,9 +193,8 @@ Adobe I/O 통합은 IMS 계정 구성을 설정하는 데 필요한 API 키, 클
 >
 >하나의 유효한 IMS 구성만 만듭니다. 여러 IMS 구성을 만들지 마십시오.
 >
->구성이 정상인지 확인합니다. 구성이 비정상인 경우 삭제하고 새 정상 구성을 만듭니다.
+>구성이 올바른지 확인하십시오. 구성이 비정상인 경우 삭제하고 새 정상 구성을 만듭니다.
 
-<br/> <br/>
 
 ### 클라우드 서비스 구성 {#configure-the-cloud-service}
 
