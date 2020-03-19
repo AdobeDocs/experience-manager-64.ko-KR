@@ -10,7 +10,7 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 translation-type: tm+mt
-source-git-commit: c255e32f1a90df0b97a89b49f74468d4f7c0be34
+source-git-commit: 100afffb65bd2c3453deb59708f7496e0eef3785
 
 ---
 
@@ -35,7 +35,7 @@ OSGi *는 &quot;애플리케이션이 작고 재사용 가능한 공동 작업 �
 
 >[!NOTE]
 >
->AEM [OSGi 구성](https://www.aemstuff.com/osgi.html) 세부 사항 도구를 사용하여 기본 OSGi 구성을 나열할 수 있습니다.
+>AEM 도구의 일부인 OSGi 구성 [비교](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html)도구를 사용하여 기본 OSGi 구성을 나열할 수 있습니다.
 
 >[!NOTE]
 >
@@ -76,8 +76,7 @@ OSGi *는 &quot;애플리케이션이 작고 재사용 가능한 공동 작업 �
 
 **Apache Sling 사용자 정의 가능한 요청 데이터 로거** 구성:
 
-* **로거 이름** 및 **로그** 형식을 사용하여 요청 및 액세스 로깅의 위치 및 형식을 구성합니다(기본값:
-     `request.log`). 이 로그 파일은 웹 체인과 관련된 성능 또는 디버깅 기능을 분석할 때 반드시 필요합니다.
+* **로거 이름** 및 **로그** 형식을 사용하여 요청 및 액세스 로깅의 위치 및 형식을 구성합니다(기본값: `request.log`). 이 로그 파일은 웹 체인과 관련된 성능 또는 디버깅 기능을 분석할 때 반드시 필요합니다.
 
    Apache Sling 요청 로거와 쌍을 이루었습니다.
 
@@ -366,7 +365,7 @@ AEM 루트 매핑을 사용하여 인스턴스에 대한 기본값으로 사용�
    * `Basic` 사용자 ID 파섹
    * `AsIs` 사용자 ID가 일반 텍스트로 제공되거나 정규 표현식이 적용된 값으로 사용되거나 정규 표현식으로 사용되어야 하는 경우
 
-**일 CQ WCM 디버그 필터** 페이지에 액세스할 때 ?debug=layout과 같은 접미어를 사용할 수 있으므로 개발할 때 유용합니다. 예를 들어 http://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout에서는 개발자에게 관심을 가질 수 있는 레이아웃 정보를 제공합니다.
+**일 CQ WCM 디버그** 필터 페이지에 액세스할 때 ?debug=layout과 같은 접미어를 사용할 수 있으므로 개발할 때 유용합니다. 예를 들어 http://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout에서는 개발자에게 관심을 가질 수 있는 레이아웃 정보를 제공합니다.
 
 * 프로덕션 인스턴스에서 이 기능을 비활성화하여 성능과 보안을 보장합니다.
 
@@ -465,7 +464,7 @@ CQ 리기록기의 HTML 구문 분석기를 제어합니다.
 
 **Adobe CQ Media DPS 세션 서비스** 발행물에서 사용할 DPS 세션을 관리합니다.
 
-특히 `dps.session.service.url.name`다음을 정의할 수 있습니다.기본값은 https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions로 [설정되어 있습니다.](https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions)
+특히 `dps.session.service.url.name`다음을 정의할 수 있습니다.기본값은 https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions으로 [설정되어 있습니다.](https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions)
 
 **AEM과** CDN 간의 CDN 리작성기 통신은 자산/바이너리가 안전하게 최종 사용자에게 전달되도록 보장되어야 합니다. 여기에는 두 가지 작업이 포함됩니다.
 
