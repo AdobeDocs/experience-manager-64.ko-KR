@@ -10,7 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 793305a07cc23e5e551871362e8898ee7bafc0c2
 
 ---
 
@@ -51,7 +51,7 @@ AEM 6.1부터 사용자 동기화가 활성화되면 사용자 데이터는 팜�
 >
 >따라서 배포가 게시 팜인 경우 사용자가 ***관리자** *그룹에 추가되거나 제거되면 각 게시 인스턴스에서 수동으로 수정해야 합니다.
 
-## 사용자 동기화 사용 {#enable-user-sync}
+## 사용자 동기화 활성화 {#enable-user-sync}
 
 >[!NOTE]
 >
@@ -323,7 +323,7 @@ AEM 6.1부터 사용자 동기화가 활성화되면 사용자 데이터는 팜�
 
 * **Ignorable Nodes**
 
-   동기화 중에 완전히 무시되는 하위 경로. 이러한 하위 경로 아래의 어떤 부분도 동기화되지 않습니다.
+   동기화 중에 완전히 무시되는 하위 경로입니다. 이러한 하위 경로 아래의 어떤 부분도 동기화되지 않습니다.
 
    무시할 기본 노드:
 
@@ -350,7 +350,7 @@ AEM 6.1부터 사용자 동기화가 활성화되면 사용자 데이터는 팜�
 
 모든 Sling ID 값이 다른지 확인하려면 각 게시 인스턴스에서 다음을 수행합니다.
 
-1. https:// [*호스트:port*/system/console/status-slingsettings로 이동합니다.](http://localhost:4503/system/console/status-slingsettings)
+1. 찾아보기 `http://<host>:<port>/system/console/status-slingsettings`
 1. sling ID 값을 **확인합니다.**
 
 ![chlimage_1-395](assets/chlimage_1-395.png)
