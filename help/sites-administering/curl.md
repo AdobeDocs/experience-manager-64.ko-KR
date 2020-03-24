@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 7b420c11603bee05ef3793fe3603c20a8e77bc56
 
 ---
 
@@ -355,7 +355,7 @@ curl -u admin:admin -F cmd=copyPage -F destParentPath=/path/to/destination/paren
 
 ### Sling Content {#sling-content}
 
-#### 폴더 만들기 {#create-a-folder}
+#### Create a Folder {#create-a-folder}
 
 ```shell
 curl -u admin:admin -F jcr:primaryType=sling:Folder http://localhost:4502/etc/test
@@ -370,13 +370,13 @@ curl -u admin:admin -F :operation=delete http://localhost:4502/etc/test/test.pro
 #### 노드 이동 {#move-a-node}
 
 ```shell
-curl -u admin:admin -F":operation=move" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://lcoalhost:4502/content
+curl -u admin:admin -F":operation=move" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://localhost:4502/content
 ```
 
 #### 노드 복사 {#copy-a-node}
 
 ```shell
-curl -u admin:admin -F":operation=copy" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://lcoalhost:4502/content
+curl -u admin:admin -F":operation=copy" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://localhost:4502/content
 ```
 
 #### Sling PostServlet을 사용하여 파일 업로드 {#upload-files-using-sling-postservlet}
