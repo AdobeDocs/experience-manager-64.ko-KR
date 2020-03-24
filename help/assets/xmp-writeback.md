@@ -3,7 +3,7 @@ title: 표현물로 XMP 원본에 쓰기
 description: XMP 원본에 쓰기 기능을 사용하여 자산의 메타데이터 변경 내용을 자산의 모든 표현물 또는 특정 표현물에 전파하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 5ef4c4e42165819191c6e3810c36183110f3f34a
 
 ---
 
@@ -16,7 +16,7 @@ AEM Assets 내에서 또는 자산을 업로드하는 동안 자산의 메타데
 
 XMP 원본에 쓰기 기능은 메타데이터 변경 내용을 자산의 모든 또는 특정 표현물에 전파합니다.
 
-&quot;클래식 가죽&quot;이라는 제목의 자산의 제목 속성을 &quot;**나일론**&quot;으로 수정하는 시나리오를&#x200B;**생각해 보십시오**.
+제목이 [!UICONTROL 있는 자산의 제목] 속성을 수정하는 시나리오를 `Classic Leather` 고려하십시오 `Nylon`.
 
 ![메타데이터](assets/metadata.png)
 
@@ -32,7 +32,7 @@ XMP 원본에 쓰기 기능을 사용하면 메타데이터 변경 내용을 자
 
 업로드 시 메타데이터 변경 사항이 자산의 변환에 전파되도록 하려면 Configuration Manager에서 **Adobe CQ DAM Rendition Maker** 구성을 수정합니다.
 
-1. 에서 구성 관리자를 엽니다 `https://[AEM_server]:[port]/system/console/configMgr`.
+1. 에서 구성 관리자를 엽니다 `https://[aem_server]:[port]/system/console/configMgr`.
 1. Adobe CQ **[!UICONTROL DAM Rendition Maker 구성을]** 엽니다.
 1. [XMP **[!UICONTROL 전파]** ] 옵션을 선택한 다음 변경 내용을 저장합니다.
 
@@ -44,21 +44,18 @@ XMP 원본에 쓰기 기능을 사용하여 메타데이터 변경 내용을 일
 
 XMP 원본에 쓰기 기능을 사용하여 변환 축소판 140.100.png 및 319.319.png에 메타데이터를 전파하려면 다음 단계를 수행하십시오.
 
-1. AEM 로고를 탭/클릭한 다음 도구 > 워크플로우 **[!UICONTROL > 모델로 이동합니다]**.
-1. 모델(Models) 페이지에서 DAM 메타데이터 **원본에** 쓰기 워크플로우 모델을 엽니다.
+1. Experience Manager에서 도구 > 워크플로우 **[!UICONTROL > 모델로 이동합니다]**.
+1. 모델 [!UICONTROL 페이지에서] DAM 메타데이터 **[!UICONTROL 쓰기]** 워크플로우 모델을 엽니다.
 1. DAM 메타데이터 **[!UICONTROL 원본에]** 쓰기 **[!UICONTROL 속성 페이지에서 XMP]** 쓰기 프로세스 단계를엽니다.
-1. 단계 속성 대화 상자에서 프로세스 **[!UICONTROL 탭을 탭/클릭합니다]** .
-1. 인수 **[!UICONTROL 상자에서]** 추가한 `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`다음 확인을 탭/ **[!UICONTROL 클릭합니다]**.
+1. 단계 **[!UICONTROL 속성]** 대화 상자에서 프로세스 **[!UICONTROL 탭을 탭/클릭합니다]** .
+1. 인수 **[!UICONTROL 상자에서]** 을 추가합니다 `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`. Tap/click **[!UICONTROL OK]**.
 
    ![step_properties](assets/step_properties.png)
 
-1. 변경 사항을 저장합니다.
-1. 새로운 특성을 사용하여 다이내믹 미디어 이미지에 대한 피라미드 TIF 변환을 다시 생성하려면 다이내믹 미디어 프로세스 이미지 **[!UICONTROL 자산]** 단계를 DAM 메타데이터 쓰기 작업 과정에 추가합니다.
-PTIFF 변환은 Dynamic Media Hybrid 구현에서만 로컬에 만들어지고 저장됩니다.
+1. 새로운 특성을 사용하여 다이내믹 미디어 이미지에 대한 피라미드 TIFF 변환을 다시 생성하려면 다이내믹 미디어 프로세스 이미지 **[!UICONTROL 자산]** 단계를 DAM 메타데이터 쓰기 작업 과정에 추가합니다.
+PTIFF 변환은 Dynamic Media Hybrid 모드에서만 만들고 로컬에 저장됩니다. 워크플로우를 저장합니다.
 
-1. 워크플로우를 저장합니다.
-
-메타데이터 변경 사항이 변환 변환 축소판으로 전파됩니다.140.100.png 및 thumbnail.319.319.png로 전달되며 다른 항목은 전파되지 않습니다.
+메타데이터 변경 사항은 다른 내용이 아니라 `thumbnail.140.100.png` 자산의 표현물과 `thumbnail.319.319.png` 자산에 전파됩니다.
 
 >[!NOTE]
 >
@@ -78,17 +75,14 @@ XMP 메타데이터를 화이트 리스트 필터링하면 가져올 XMP 속성�
 >
 >필터링은 자산 바이너리의 XMP 소스에서 파생된 속성에만 작동합니다. EXIF 및 IPTC 포맷과 같이 XMP 소스가 아닌 소스에서 파생된 속성의 경우 필터링이 작동하지 않습니다. 예를 들어 에셋 작성 날짜는 EXIF TIFF `CreateDate` 에서 명명된 속성에 저장됩니다. AEM에서는 이 값이 이름이 `exif:DateTimeOriginal`지정된 메타데이터 필드에 있습니다. 소스가 XMP 소스가 아니므로 이 속성에서는 필터링이 작동하지 않습니다.
 
-1. 에서 구성 관리자를 엽니다 `https://[AEM_server]:[port]/system/console/configMgr`.
+1. 에서 구성 관리자를 엽니다 `https://[aem_server]:[port]/system/console/configMgr`.
 1. Adobe CQ **[!UICONTROL DAM XmpFilter 구성을]** 엽니다.
 1. 화이트 리스트 필터링을 적용하려면 [XMP **[!UICONTROL 속성에 화이트리스트 적용]**]을 선택하고 [XMP 필터링을 **[!UICONTROL 위한 화이트리스트 XML]** 이름] 상자에서 가져올 속성을 지정합니다.
 
    ![chlimage_1-347](assets/chlimage_1-347.png)
 
-1. 화이트리스트 필터링을 적용한 후 블랙리스트에 추가된 XMP 속성을 필터링하려면 XMP 필터링을 **** 위해 블랙리스트에 추가된 XML 이름 상자에서 지정합니다.
+1. 화이트리스트 필터링을 적용한 후 블랙리스트에 추가된 XMP 속성을 필터링하려면 XMP 필터링을 **** 위해 블랙리스트에 추가된 XML 이름 상자에서 지정합니다. 변경 사항을 저장합니다.
 
    >[!NOTE]
    >
-   >[ **[!UICONTROL XMP 속성에 블랙 리스트 적용]** ] 옵션은 기본적으로 선택되어 있습니다. 다시 말해 블랙 리스트 필터링은 기본적으로 활성화되어 있습니다. 블랙 리스트 필터링을 비활성화하려면 [XMP 속성에 **[!UICONTROL 블랙 리스트 적용] 옵션을 선택]** 취소합니다.
-
-1. 변경 사항을 저장합니다.
-
+   >[ **[!UICONTROL XMP 속성에 블랙 리스트 적용]** ] 옵션은 기본적으로 선택되어 있습니다. 다시 말해 블랙 리스트 필터링은 기본적으로 활성화되어 있습니다. 블랙 리스트 필터링을 비활성화하려면 XMP 속성에 **[!UICONTROL 블랙 리스트 적용을 선택 취소합니다]**.
