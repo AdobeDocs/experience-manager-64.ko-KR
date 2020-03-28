@@ -3,7 +3,7 @@ title: 자산 성능 조정 가이드
 description: AEM 구성, 하드웨어, 소프트웨어 및 네트워크 구성 요소에 대한 변경 사항 등 주요 초점 영역을 사용하여 병목 현상을 제거하고 AEM 자산의 성능을 최적화할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 82b3998d5c1add6a759812e45ecd08b421d3b0df
 
 ---
 
@@ -110,7 +110,7 @@ HTTP 트래픽을 탐지하는 방화벽이 있는 많은 회사에는 업로드
 
 * 인스턴스 유형(작은, 보통, 큰)에 따라 AEM 인스턴스에 충분한 네트워크 대역폭이 있는지 확인합니다. AEM이 AWS에서 호스팅되는 경우 적절한 대역폭 할당이 특히 중요합니다.
 * AEM 인스턴스가 AWS에서 호스팅되는 경우 다양한 크기 조정 정책을 통해 혜택을 받을 수 있습니다. 사용자가 높은 로드를 예상하는 경우 인스턴스 크기를 조정합니다. 보통/낮은 부하를 위해 다운로드합니다.
-* HTTPS:대부분의 사용자는 HTTP 트래픽을 탐지하는 방화벽이 있으므로 업로드 작업 중에 파일을 업로드하거나 파일을 손상시킬 수 있습니다.
+* HTTPS:대부분의 사용자에게는 HTTP 트래픽을 탐지하는 방화벽이 있으므로 업로드 작업 중에 파일을 업로드하거나 파일이 손상될 수 있습니다.
 * 대용량 파일 업로드:사용자가 네트워크에 유선 연결을 사용하고 있는지 확인합니다(WiFi 연결 채도가 빠르게 증가).
 
 ## 워크플로우 {#workflows}
@@ -242,31 +242,33 @@ To disable Page Extraction:
 1. Click **[!UICONTROL OK]**
 1. Repeat steps 3-6 for other launcher items that use **DAM Parse Word Documents **workflow model 
 
---># Sub-asset generation and page extraction {#sub-asset-generation-and-page-extraction}
+-->
 
-자산 업로드 동안 AEM의 워크플로우는 PDF 및 Office 문서의 각 페이지에 대해 별도의 자산을 만듭니다. 이러한 각 페이지는 자체 자산이므로 추가 디스크 공간을 사용하고 버전 관리 및 추가 워크플로우 처리가 필요합니다. 별도의 페이지가 필요하지 않은 경우 하위 자산 생성 및 페이지 추출을 비활성화합니다.
+<!--
+# Sub-asset generation and page extraction {#sub-asset-generation-and-page-extraction}
 
-하위 자산 생성을 비활성화하려면 다음을 수행합니다.
+During asset uploads, AEM's workflow creates a separate asset for each page in PDF and Office documents. Each of these pages is an asset by itself, which consumes additional disk space, requires versioning and additional workflow processing. If you do not require separate pages, disable Sub Asset Generation and Page Extraction.
 
-1. /libs/cq/workflow/content/console.html **[!UICONTROL 으로 이동하여]** Workflow Console을 *엽니다*
+To disable Sub Asset generation, do the following:
+
+1. Open the **[!UICONTROL Workflow Console]** tool by going to */libs/cq/workflow/content/console.html*
 
 1. Select the **[!UICONTROL Models]** tab
-1. DAM 자산 **[!UICONTROL 업데이트 워크플로우 모델을 두 번]** 클릭합니다
-1. DAM **[!UICONTROL 자산]** 업데이트 워크플로우 모델에서 **[!UICONTROL 프로세스 하위]** 자산 삭제
+1. Double click the **[!UICONTROL DAM Update Asset]** workflow model
+1. Delete **[!UICONTROL Process Sub Asset]** step from **[!UICONTROL DAM Update Asset]** workflow model.
 
-1. 저장을 **[!UICONTROL 클릭합니다]**
+1. Click on **[!UICONTROL Save]**
 
-페이지 추출을 비활성화하려면
+To disable Page Extraction:
 
-1. /libs/cq/workflow/content/console.html **[!UICONTROL 으로 이동하여]** Workflow Console을 *엽니다*
+1. Open the **[!UICONTROL Workflow Console]** tool by going to */libs/cq/workflow/content/console.html*
 
 1. Select the **[!UICONTROL Launchers]** tab
-1. DAM Parse Word 문서 **[!UICONTROL 워크플로우 모델을 실행하는 런처를]** 선택합니다
-1. **[!UICONTROL 편집]**&#x200B;을 클릭합니다
-1. 비활성화 **[!UICONTROL 선택]**
-1. **[!UICONTROL 확인]**&#x200B;을 클릭합니다
-1. **DAM Parse Word Documents **워크플로우 모델을 사용하는 기타 실행 항목 3-6에 대해 단계 반복
-
+1. Select a launcher that launches **[!UICONTROL DAM Parse Word Documents]** workflow model.
+1. Click **[!UICONTROL Edit]**
+1. Select **[!UICONTROL Disable]**
+1. Click **[!UICONTROL OK]**
+1. Repeat steps 3-6 for other launcher items that use **DAM Parse Word Documents** workflow model.
 -->
 
 ### XMP writeback {#xmp-writeback}
@@ -312,7 +314,7 @@ LuceneIndexProvider 구성을 업데이트합니다.
 
 색인 구성을 업데이트하여 다시 색인화 시간을 향상시킵니다.
 
-1. CRXDe /crx/de/index.jsp를 열고 관리 사용자로 로그인
+1. CRXDe /crx/de/index.jsp을 열고 관리 사용자로 로그인
 1. /oak:index/lucene로 이동합니다.
 1. &quot;/var[] &quot;, &quot;/etc/workflow/instances&quot; 및 &quot; **[!UICONTROL etc/replication&quot;]** 값으로 excludedPaths라는 String 속성을 추가합니다.
 1. /oak:index/damAssetLucene로 이동합니다.
@@ -345,7 +347,7 @@ LuceneIndexProvider 구성을 업데이트합니다.
 
    type=&quot;String&quot;
 
-1. /oak:index/ntBaseLucene 노드에서 속성 *reindex=true를 설정합니다.*
+1. /oak:index/ntBaseLucene 노드에서 속성을 설정합니다 `reindex=true`
 1. 모두 **[!UICONTROL 저장을 클릭합니다.]**
 1. error.log를 모니터링하여 색인이 완료된 시점을 확인합니다.
 
@@ -378,7 +380,7 @@ Lucene 텍스트 추출 비활성화:
 
 AEM에서 대용량 파일과 관련하여 알려진 두 가지 주요 문제가 있습니다. 파일의 크기가 2GB보다 크면 콜드 대기 동기화가 메모리 부족 상태로 실행될 수 있습니다. 대기 동기화가 실행되지 않는 경우가 있습니다. 다른 경우, 기본 인스턴스가 충돌합니다. 이 시나리오는 컨텐츠 패키지를 포함하여 2GB보다 큰 AEM의 모든 파일에 적용됩니다.
 
-마찬가지로, 공유 S3 데이터 저장소를 사용하는 동안 파일의 크기가 2GB에 도달하면 파일이 캐시에서 파일 시스템으로 완전히 지속되는 데 시간이 걸릴 수 있습니다. 따라서 바이너리 없는 복제를 사용할 때 복제가 완료되기 전에 바이너리 데이터가 지속되지 않았을 수 있습니다. 이러한 상황은 특히 오프로딩 시나리오와 같이 데이터 가용성이 중요한 경우에 발생할 수 있습니다.
+마찬가지로, 공유 S3 데이터 저장소를 사용하는 동안 파일의 크기가 2GB에 도달하면 파일이 캐시에서 파일 시스템으로 완전히 지속되는 데 시간이 걸릴 수 있습니다. 따라서 바이너리 없는 복제를 사용할 경우 복제가 완료되기 전에 바이너리 데이터가 지속되지 않았을 수 있습니다. 이러한 상황은 특히 오프로딩 시나리오와 같이 데이터 가용성이 중요한 경우에 발생할 수 있습니다.
 
 ## 성능 테스트 {#performance-testing}
 
@@ -403,17 +405,17 @@ AEM에서 대용량 파일과 관련하여 알려진 두 가지 주요 문제가
 
 ## AEM Assets 성능 검사 목록 {#aem-assets-performance-checklist}
 
-* HTTPS를 사용하여 모든 기업 HTTP 트래픽 스나이퍼 활용
-* 대용량 에셋 업로드를 위해 유선 연결 사용
-* Java 8에 배포합니다.
-* 최적의 JVM 매개 변수 설정
-* 파일 시스템 DataStore 또는 S3 DataStore 구성
+* HTTPS를 사용하여 모든 기업 HTTP 트래픽 스니퍼를 검색할 수 있습니다.
+* 대용량 에셋을 업로드하려면 유선 연결을 사용합니다.
+* 최적의 JVM 매개 변수를 설정합니다.
+* Filesystem DataStore 또는 S3 DataStore를 구성합니다.
+* 하위 자산 생성을 비활성화합니다. 활성화되면 AEM의 워크플로우는 다중 페이지 자산의 각 페이지에 대해 별도의 자산을 만듭니다. 이러한 각 페이지는 추가 디스크 공간을 사용하고 버전 관리가 필요하며 추가 워크플로우 처리가 필요한 개별 자산입니다. 별도의 페이지가 필요하지 않은 경우 하위 자산 생성 및 페이지 추출 활동을 비활성화합니다.
 * 일시적인 워크플로우 활성화
-* [MOCK] Tune the Granite workflow queue to limit concurrent jobs
-* 리소스 사용을 제한하도록 ImageMagick 구성
-* DAM 자산 업데이트 워크플로우에서 불필요한 단계 제거
-* 워크플로우 및 버전 제거 구성
-* 6.2 이전 버전에서 Lucene 인덱스 구성 최적화
+* 동시 작업을 제한하려면 [화강암] 워크플로우 큐를 조정합니다.
+* 리소스 사용을 제한하도록 ImageMagick을 구성합니다.
+* DAM 자산 업데이트 워크플로우에서 불필요한 단계를 제거합니다.
+* 워크플로우 및 버전 제거를 구성합니다.
+* Lucene 인덱스 구성을 최적화합니다.
 * 최신 서비스 팩 및 핫픽스를 사용하여 색인을 최적화할 수 있습니다. 사용 가능한 추가적인 색인 최적화에 대해서는 Adobe 지원에 문의하십시오.
 * 쿼리 성능을 최적화하는 `guessTotal` 데 사용합니다.
-* AEM이 파일 컨텐츠에서 파일 유형을 검색하도록 구성하는 경우(AEM 웹 콘솔에서 [!UICONTROL CQ DAM MIME] 유형 서비스 구성 [!UICONTROL ) 작업이]리소스를 많이 소모하므로 사용량이 적은 시간 동안 많은 파일을 벌크로 업로드합니다.
+* AEM이 파일 컨텐츠에서 파일 유형을 검색하도록 구성하는 경우(AEM 웹 콘솔에서 [!UICONTROL CQ DAM Mime] 유형 서비스 구성 [!UICONTROL ) 작업이]리소스를 많이 소모하므로 사용량이 적은 시간 동안 많은 파일을 벌크로 업로드합니다.
