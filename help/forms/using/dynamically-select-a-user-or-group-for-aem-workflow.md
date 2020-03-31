@@ -8,7 +8,7 @@ content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 translation-type: tm+mt
-source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+source-git-commit: 68ab70332a16a9a043f0db0ede75049b85188750
 
 ---
 
@@ -155,8 +155,8 @@ RecipientInfoSpecifier [Java](https://helpx.adobe.com/experience-manager/6-3/for
        <dependencies>
            <dependency>
                <groupId>com.adobe.aemfd</groupId>
-               <artifactId>aemfd-client-sdk-test</artifactId>
-               <version>4.0.70</version>
+               <artifactId>aemfd-client-sdk</artifactId>
+               <version>5.1.100</version>
            </dependency>
            <dependency>
                <groupId>com.adobe.granite</groupId>
