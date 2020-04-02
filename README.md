@@ -1,9 +1,9 @@
 ---
-source-git-commit: 56f859e9e6a31d81364b327e744749f8d5ff4da6
+source-git-commit: 56d3b9ccfa274ffb6305317bfe262060555b46a0
 translation-type: tm+mt
 
 ---
-# AEM 6.4 설명서
+# Adobe Experience Manager 6.4 설명서
 
 Adobe Experience Manager 6.4 설명서의 보관소입니다. 이 설명서는 설치, 관리, 작성 사용 및 AEM을 사용자 지정하는 방법에 대해 설명합니다.
 
