@@ -6,7 +6,7 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
 translation-type: tm+mt
-source-git-commit: 8e9f7aa39832351084bc335580b2d40ed432cd84
+source-git-commit: 6aec5927c00f70ce2c044ffd56cabbf68a81071a
 
 ---
 
@@ -40,7 +40,7 @@ AEM(Adobe Experience Manager) 자산 구현의 환경 크기를 조정할 때 �
 1-9 단계를 수행하면 다음을 결정하는 데 도움이 됩니다.
 
 * 로드할 자산의 원시 크기
-* 로드할 자산의 수
+* 로드할 자산 수
 * 변환 증가 계수
 * 월별 자산 수정 수
 * 자산 버전을 유지 관리할 개월 수
@@ -96,7 +96,7 @@ NodeStore 또는 DocumentStore에 대한 정확한 크기 수치는 다음과 �
 
 바이너리는 데이터 저장소에 저장되므로 각 바이너리는 일부 공간을 차지합니다. 대부분의 저장소의 크기는 100GB 미만입니다. 그러나 용량이 최대 1TB까지 클 수 있습니다. 또한 오프라인 구성 작업을 수행하려면 미리 구성된 버전과 함께 압축된 저장소를 다시 작성하기 위해 볼륨에 충분한 여유 공간이 필요합니다. 디스크 크기를 저장소에 필요한 크기의 1.5배로 늘리는 것이 좋습니다.
 
-저장소의 경우 IOPS 수준이 3킬로바이트보다 큰 SSD 또는 디스크를 사용하십시오. IOPS가 성능 병목 현상을 유발할 가능성을 제거하려면 CPU IO 대기 수준을 모니터링하여 문제의 조기 징후를 파악하십시오.
+저장소의 경우 IOPS 수준이 3000을 초과하는 SSD 또는 디스크를 사용하십시오. IOPS가 성능 병목 현상을 유발할 가능성을 제거하려면 CPU IO 대기 수준을 모니터링하여 문제의 조기 징후를 파악하십시오.
 
 [파일 가져오기](assets/aem_environment_sizingtool.xlsx)
 
