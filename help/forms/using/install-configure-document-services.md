@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: b9d2a5b65f7ae48a9bde5580b5ddd3e55fc68d61
+source-git-commit: db1adfa79456ab856ec8bfe5d64ae6a128cb7360
 
 ---
 
@@ -178,14 +178,14 @@ UNIX 기반 운영 체제를 사용하는 경우 해당 운영 체제의 설치 
    * libfontconfig.so.1
    * libfreetype.so.6
    * libdl.so.2
-   * library.so.1
+   * librt.so.1
    * libpthread.so.0
    * libstdc++.so.6
    * libm.so.6
    * libgcc_s.so.1
    * libc.so.6
    * ld-linux.so.2
-   * libexat.so.1
+   * libexpat.so.1
 
 ### Adobe Acrobat 및 타사 애플리케이션 설치 {#install-adobe-acrobat-and-third-party-applications}
 
@@ -309,7 +309,7 @@ PDF Generator 서비스가 이전 버전의 Microsoft Office로 만든 파일을
 
 응용 프로그램 서버를 시작하는 데 사용되는 사용자 계정에는 프로세스 수준 토큰 **바꾸기 권한이** 필요합니다. 로컬 시스템 계정에는 기본적으로 **프로세스 수준 토큰** 바꾸기 권한이 있습니다. 로컬 관리자 그룹 사용자와 함께 실행되는 서버의 경우 권한이 명시적으로 부여되어야 합니다. 다음 단계를 수행하여 권한을 부여합니다.
 
-1. Microsoft Windows용 그룹 정책 편집기를 엽니다. 그룹 정책 편집기를 열려면 시작을 클릭하고 **[!UICONTROL 검색]**&#x200B;시작 **상자에** gpedit.msc **[!UICONTROL 를 입력한 다음 그룹 정책]**&#x200B;편집기를 클릭합니다.
+1. Microsoft Windows용 그룹 정책 편집기를 엽니다. 그룹 정책 편집기를 열려면 시작을 클릭하고 **[!UICONTROL 검색]**&#x200B;시작 **상자에 gpedit.msc** 를 **[!UICONTROL 입력한 다음 그룹 정책]**&#x200B;편집기를 클릭합니다.
 1. 로컬 컴퓨터 **[!UICONTROL 정책 > 컴퓨터 구성 > Windows 설정 > 보안 설정 > 로컬 정책 > 사용자 권한]** 할당으로 이동하여 **[!UICONTROL 프로세스 수준 토큰]** 정책 바꾸기를 편집하고 관리자 그룹을 포함합니다.
 1. 프로세스 수준 토큰 바꾸기 항목에 사용자를 추가합니다.
 
@@ -378,7 +378,7 @@ UNIX 기반 플랫폼에서 PDF Generator 서비스는 WebKit 및 PhantomJS 경�
 
 ## Install AEM Forms add-on package {#install-aem-forms-add-on-package}
 
-AEM Forms Add-on 패키지는 AEM에 배포된 애플리케이션입니다. 패키지에는 AEM Forms 문서 서비스 및 기타 AEM Forms 기능이 포함되어 있습니다. 패키지를 설치하려면 다음 단계를 수행하십시오.
+AEM Forms Add-on 패키지는 AEM에 배포된 애플리케이션입니다. 이 패키지에는 AEM Forms 문서 서비스 및 기타 AEM Forms 기능이 포함되어 있습니다. 패키지를 설치하려면 다음 단계를 수행하십시오.
 
 1. AEM 서버에 [](http://localhost:4502) 관리자로 로그인하고 [패키지 공유를](http://localhost:4502/crx/packageshare)엽니다. 패키지 공유에 로그인하려면 Adobe ID가 필요합니다.
 
@@ -412,6 +412,7 @@ AEM Forms Add-on 패키지는 AEM에 배포된 애플리케이션입니다. 패�
    ```
    sling.bootdelegation.xerces=org.apache.xerces.*
    ```
+
 1. 파일을 저장하고 닫습니다.
 
 ### 글꼴 관리자 서비스 구성 {#configuring-the-font-manager-service}
@@ -435,7 +436,7 @@ PDF Generator 서비스를 실행하려면 로컬 사용자 계정이 필요합�
 
 ### 시간 초과 설정 구성 {#configure-the-time-out-settings}
 
-1. AEM [구성 관리자에서](http://localhost:4502/system/console/configMgr)Jacorb ORB **[!UICONTROL 공급자 서비스를 찾아 엽니다]** .
+1. AEM [구성](http://localhost:4502/system/console/configMgr)관리자에서 Jacorb ORB **[!UICONTROL 공급자 서비스를 찾아 엽니다]** .
 
    사용자 지정 속성. **[!UICONTROL name]** 필드에 다음을 추가하고 저장을 **[!UICONTROL 클릭합니다]**. 보류 중인 응답 시간 초과(CORBA 클라이언트 시간 초과라고도 함)를 600초로 설정합니다.
 
@@ -552,7 +553,7 @@ PDF 파일에 대해 AES 256 암호화를 사용하려면 JCE(Java Cryptography 
 
 어셈블러 서비스는 Reader 확장 서비스, 서명 서비스, 양식 서비스 및 출력 서비스에 따라 달라집니다. 다음 단계를 수행하여 필요한 서비스가 실행 중인지 확인합니다.
 
-1. URL에 관리자로 `https://[server]:[port]/system/console/bundles` 로그인합니다.
+1. 관리자로 URL에 `https://[server]:[port]/system/console/bundles` 로그인합니다.
 1. 다음 서비스를 검색하여 서비스가 실행되고 있는지 확인합니다.
 
 <table> 
@@ -571,11 +572,11 @@ PDF 파일에 대해 AES 256 암호화를 사용하려면 JCE(Java Cryptography 
   </tr> 
   <tr> 
    <td>Forms 서비스</td> 
-   <td>com.adobe.livecycle.adobe-lc-forms-based-connector<br /> </td> 
+   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector<br /> </td> 
   </tr> 
   <tr> 
    <td>출력 서비스</td> 
-   <td>com.adobe.livecycle.adobe-lc-forms-based-connector</td> 
+   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector</td> 
   </tr> 
  </tbody> 
 </table>
