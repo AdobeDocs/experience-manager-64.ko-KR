@@ -3,7 +3,7 @@ title: 메타데이터 스키마
 description: '메타데이터 스키마는 속성 페이지의 레이아웃과 자산에 대해 표시되는 메타데이터 속성을 정의합니다. 사용자 정의 메타데이터 스키마를 만들고 메타데이터 스키마를 편집하며 메타데이터 스키마를 자산에 적용하는 방법을 알아봅니다.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 57952323a3ae0990232506d551b91b724f830f20
+source-git-commit: 9674b07fa8ddaee1d77f5a171ca00745e7545d0b
 
 ---
 
@@ -30,31 +30,24 @@ Adobe Experience Manager(AEM) 자산에서 메타데이터 스키마는 속성 �
 
 1. 양식/템플릿 목록을 보려면 AEM 로고를 클릭한 다음 도구 > 자산 > 메타데이터 **[!UICONTROL 스키마로 이동합니다]**.
 
-   ![chlimage_1-173](assets/chlimage_1-173.png)
+   ![chlimage_1-37](assets/chlimage_1-173.png)
 
    AEM에서는 즉시 다음과 같은 템플릿을 제공합니다.
-
    * **기본값**:자산에 대한 기본 메타데이터 스키마 양식입니다.
-   다음 하위 양식은 기본 양식의 속성을 상속합니다.
 
-   i. **이미지**:MIME 유형( `image`예: `image/jpeg`등)을 가진 자산에 대한 스키마 `image/png`양식입니다.
+      다음 하위 양식은 기본 양식의 속성을 상속합니다.
 
-   &quot;이미지&quot; 양식에는 다음과 같은 하위 양식 템플릿이 있습니다.
+      1. **이미지**:MIME 유형이 &quot;image&quot;인 에셋에 대한 스키마 양식입니다(예: `image/jpeg``image/png`등).
 
-   a. **jpeg**:하위 유형 jpeg의 자산에 대한 스키마 양식입니다.
-
-   b. **tiff**:하위 유형 TIFF가 있는 자산에 대한 스키마 양식입니다.
-
-   ii. **애플리케이션**:MIME 유형 응용 프로그램 등의 `application/pdf`에셋에 대한 스키마 `application/zip`양식입니다.
-
-   a. **pdf**:하위 유형 PDF가 있는 자산에 대한 스키마 양식입니다.
-
-   iii. **비디오**:MIME 형식 비디오와 같은 `video/avi`에셋에 대한 스키마 `video/mp4` 양식입니다.
-
-   * **컬렉션**:컬렉션에 대한 스키마 양식
-   * **** contentfragment:컨텐츠 조각에 대한 스키마 양식
-   * **양식**:이 스키마 양식은 Adobe [Experience Manager Forms와 관련이 있습니다.](/help/forms/home.md)
-
+         &quot;이미지&quot; 양식에는 다음과 같은 하위 양식 템플릿이 있습니다.
+         * **jpeg**:하위 유형이 있는 자산에 대한 스키마 양식입니다 `jpeg`.
+         * **tiff**:하위 유형이 있는 자산에 대한 스키마 양식입니다 `tiff`.
+      1. **애플리케이션**:MIME 유형이 `application`있는 에셋에 대한 스키마 양식(예: `application/pdf``application/zip`등)
+         * **pdf**:하위 유형이 있는 자산에 대한 스키마 양식입니다 `pdf`.
+      1. **비디오**:MIME 형식이 `video`있는 자산( `video/avi`예: `video/mp4`등)에 대한 스키마 양식입니다.
+   * **컬렉션**:컬렉션에 대한 스키마 양식입니다.
+   * **contentfragment:** 컨텐츠 조각에 대한 스키마 양식입니다.
+   * **양식**:이 스키마 양식은 Adobe Experience [Manager Forms와 관련이 있습니다](/help/forms/home.md).
 
 >[!NOTE]
 >
@@ -77,7 +70,7 @@ Adobe Experience Manager(AEM) 자산에서 메타데이터 스키마는 속성 �
 새로 추가되거나 기존 메타데이터 스키마 양식을 편집할 수 있습니다. 메타데이터 스키마 양식에는 다음이 포함됩니다.
 
 * 탭
-* 탭 내의 양식 항목.
+* 탭 내의 양식 항목
 
 이러한 양식 항목을 CRX 저장소의 메타데이터 노드 내의 필드에 매핑/구성할 수 있습니다.
 
