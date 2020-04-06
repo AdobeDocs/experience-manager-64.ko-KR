@@ -10,7 +10,7 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: d045065f530a643268a84276b067830b0547cbf9
 
 ---
 
@@ -61,10 +61,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >* [MSM에 대한 우수 사례](/help/sites-administering/msm-best-practices.md);특히
    >
-   >  
-* [사이트 만들기](/help/sites-administering/msm-best-practices.md#create-site)
->  * [MSM 및 다국어 웹 사이트](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
-   >
-   >
-* [번역 모범 사례](/help/sites-administering/tc-bp.md)
+   >   
+   * [사이트 만들기](/help/sites-administering/msm-best-practices.md#create-site)
+   >   * [MSM 및 다국어 웹 사이트](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+>
+>* [번역 모범 사례](/help/sites-administering/tc-bp.md)
 
