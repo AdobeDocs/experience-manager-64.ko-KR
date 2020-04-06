@@ -10,7 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
-source-git-commit: 793305a07cc23e5e551871362e8898ee7bafc0c2
+source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
 
 ---
 
@@ -73,7 +73,7 @@ AEM 6.1부터 사용자 동기화가 활성화되면 사용자 데이터는 팜�
 
 1. 최신 코드가 설치되었는지 확인합니다.
 
-* [AEM 플랫폼 업데이트](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
+* [AEM 플랫폼 업데이트](https://helpx.adobe.com/kr/experience-manager/kb/aem62-available-hotfixes.html)
 * [AEM Communities 업데이트](/help/communities/deploy-communities.md#latest-releases)
 
 ### 1.Apache Sling Distribution Agent - Sync Agents Factory {#apache-sling-distribution-agent-sync-agents-factory}
@@ -514,7 +514,7 @@ AEM 6.1부터 사용자 동기화가 활성화되면 사용자 데이터는 팜�
 
 `java.lang.IllegalStateException: This tree does not exist`
 
-그런 다음 섹션 [2를 확인합니다. 인증된 사용자 만들기](/content/docs/en/aem/6-1/administer/security/security/sync.md#2). 승인된 사용자 만들기)가 제대로 수행되었습니다.
+그런 다음 섹션 [2를 확인합니다. 승인된 사용자](#createauthuser) 만들기가 제대로 수행되었습니다.
 
 이 섹션에서는 모든 게시 인스턴스에 존재하는 인증된 사용자를 만들고 작성자의 &#39;비밀 공급자&#39; OSGi 구성에서 이들을 식별하는 방법에 대해 설명합니다. 기본적으로 사용자는 `admin`입니다.
 
