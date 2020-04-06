@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: bd2eb8787a98fa9910cc540ba329466a0e72e0db
 
 ---
 
@@ -38,9 +38,9 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 >* 노드 이름에는 공백이 포함될 수 있지만 URI에서 사용할 경우 공백을 &#39;%20&#39; 또는 &#39;+&#39; 중 하나로 인코딩해야 합니다.
 >* 노드 이름에는 하이픈 및 밑줄이 포함될 수 있지만 Java 파일 내에서 패키지 이름으로 참조할 때는 인코딩해야 합니다. 하이픈과 밑줄 모두 밑줄로 이스케이프되고 유니코드 값이 이어집니다.
    >
-   >  
-* hyphen은 &#39;_002d&#39;가 됩니다.
->  * 밑줄이 &#39;_005f&#39;가 됩니다.
+   >   
+   * hyphen은 &#39;_002d&#39;가 됩니다.
+   >   * 밑줄이 &#39;_005f&#39;가 됩니다.
 
 
 ## 응용 프로그램 디렉토리(/apps) 설정 {#setup-the-application-directory-apps}
@@ -54,8 +54,8 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
    탐색기 **[!UICONTROL 창에서]** CRXDE Lite 사용
 
    1. 폴더 `/apps` 선택
-   1. **[!UICONTROL 만들기...]**&#x200B;를 마우스 오른쪽 단추로&#x200B;**[!UICONTROL 클릭합니다.또는 만들기...]**&#x200B;를 아래로 끌어 옵니다.메뉴
-   1. **[!UICONTROL 폴더]**&#x200B;만들기...를 선택합니다..
+   1. 만들기... **[!UICONTROL 를 마우스 오른쪽 단추로]**&#x200B;클릭합니다.또는 만들기... **[!UICONTROL 를 아래로 끌어 옵니다.]** 메뉴
+   1. 폴더 **[!UICONTROL 만들기...를 선택합니다.]** .
    1. 폴더 **[!UICONTROL 만들기]** 대화 상자에서 `an-scf-sandbox`
    1. **[!UICONTROL 확인]**&#x200B;을 클릭합니다
 
