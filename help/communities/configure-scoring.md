@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ddb86546-d04b-4967-937b-50a19b0237a0
 translation-type: tm+mt
-source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+source-git-commit: d653a5db1b12ae2d650db2894dfa602326f7a295
 
 ---
 
@@ -149,8 +149,10 @@ JSRP에 대한 UGC의 기본 위치는 `/content/usergenerated/asi/jcr/`입니�
       * `/content/sites/engage/en/forum/jcr:content`
    * 점수 및 배지 속성 추가
 
-      * scoringRules = [/etc/community/scoring/rules/comments-scoring,/etc/community/scoring/rules/forums-scoring]
-      * 배지 규칙 =[/etc/community/badging/rules/comments-scoring,/etc/community/badging/rules/forums-scoring]
+      * `scoringRules = [/etc/community/scoring/rules/comments-scoring,
+/etc/community/scoring/rules/forums-scoring]`
+      * `badgingRules =[/etc/community/badging/rules/comments-scoring,
+/etc/community/badging/rules/forums-scoring]`
    * 포럼 구성 요소 노드 찾기
 
       * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
