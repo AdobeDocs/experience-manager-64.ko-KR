@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 translation-type: tm+mt
-source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+source-git-commit: 5a185a50dc9e413953be91444d5c8e76bdae0a69
 
 ---
 
@@ -100,7 +100,7 @@ map.pdf 파일과 directions.pdf 파일을 모두 컬렉션 개체에 배치해�
 
 >[!NOTE]
 >
->컬렉션 개체를 포함하는 `*AssemblerResult*` 개체는 `*invokeDDX*` 작업을 호출하는 경우 반환됩니다. 이 작업은 두 개 이상의 입력 PDF 문서를 어셈블러 서비스로 전달할 때 사용됩니다. 그러나 입력 PDF를 어셈블러 서비스로 한 개만 전달하면 반환 문서가 한 개만 예상되면 `*invokeOneDocument*` 작업을 불러옵니다. 이 작업을 호출하면 단일 문서가 반환됩니다. 이 작업 사용에 대한 자세한 내용은 [암호화된 PDF 문서]취합(/help/forms/developing/encrypted-pdf-documents-assising-enching-encrypted-pdf-documents-assicking.md#assising-enched-pdf-documents)을 참조하십시오.
+>컬렉션 개체를 포함하는 `*AssemblerResult*` 개체는 `*invokeDDX*` 작업을 호출하는 경우 반환됩니다. 이 작업은 두 개 이상의 입력 PDF 문서를 어셈블러 서비스로 전달할 때 사용됩니다. 그러나 입력 PDF를 어셈블러 서비스로 한 개만 전달하면 반환 문서가 한 개만 예상되면 `*invokeOneDocument*` 작업을 불러옵니다. 이 작업을 호출하면 단일 문서가 반환됩니다. 이 작업 사용에 대한 자세한 내용은 암호화된 PDF [문서 합성을 참조하십시오](/help/forms/developing/assembling-encrypted-pdf-documents.md#assembling-encrypted-pdf-documents).
 
 **런타임 옵션 설정**
 
@@ -281,7 +281,7 @@ Assembler Service API(웹 서비스)를 사용하여 PDF 문서 조합:
    * PDF 문서의 `BLOB` 개체 `MTOM` 속성에 액세스하여 이진 데이터를 추출합니다. PDF 파일에 쓸 수 있는 바이트 배열을 반환합니다.
    >[!NOTE]
    >
-   >로그를 생성하도록 `LOG_LEVEL` 설정된 경우 `AssemblerResult` 객체의 `jobLog` 데이터 멤버 값을 가져와 로그를 추출할 수 있습니다.
+   >로그를 생성하도록 `LOG_LEVEL` 설정된 경우, `AssemblerResult` 객체의 `jobLog` 데이터 멤버 값을 가져와 로그를 추출할 수 있습니다.
 
 **참고 항목**
 
