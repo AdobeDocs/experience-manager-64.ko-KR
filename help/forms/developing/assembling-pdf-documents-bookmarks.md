@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bc7fa8bd0464b9ae8c93349efb7e392de757c6a3
 
 ---
 
@@ -80,7 +80,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->이 섹션을 읽기 전에 Assembler 서비스를 사용하여 PDF 문서를 조합하는 것에 익숙해지는 것이 좋습니다. 이 섹션에서는 입력 문서를 포함하는 컬렉션 개체를 만들거나 반환된 컬렉션 개체에서 결과를 추출하는 방법을 배우는 등의 개념에 대해서는 설명하지 않습니다. ( [프로그래밍 방식으로 PDF 문서]취합(/help/forms/developing/프로그래밍 방식으로-assising-pdf-documents-programally-assising-pdf-documents-programally.md#programming-assementing-pdf-documents)을 참조하십시오.)
+>이 섹션을 읽기 전에 Assembler 서비스를 사용하여 PDF 문서를 조합하는 것에 익숙해지는 것이 좋습니다. 이 섹션에서는 입력 문서를 포함하는 컬렉션 개체를 만들거나 반환된 컬렉션 개체에서 결과를 추출하는 방법을 배우는 등의 개념에 대해서는 설명하지 않습니다. 자세한 내용은 [프로그래밍 방식으로 PDF 문서 작성을 참조하십시오](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents).
 
 >[!NOTE]
 >
