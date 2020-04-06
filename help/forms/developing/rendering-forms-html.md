@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 translation-type: tm+mt
-source-git-commit: fd7c589eed2977f3d06f07086008450e2e85a940
+source-git-commit: 340c267fc4e142a67ae5be3f1ab11f063417962e
 
 ---
 
@@ -272,14 +272,14 @@ Forms 서비스가 HTML 양식을 렌더링하면 클라이언트 웹 브라우�
    * HTML 양식의 로케일 값을 설정하려면 `HTMLRenderSpec` 개체의 `setLocale` 메서드를 호출하고 로케일 값을 지정하는 문자열 값을 전달합니다. (선택적 설정입니다.)
    * 전체 HTML 태그 내에서 HTML 양식을 렌더링하려면 `HTMLRenderSpec` 개체의 `setOutputType` 메서드를 호출하고 전달합니다 `OutputType.FullHTMLTags`. (선택적 설정입니다.)
    >[!NOTE]
-   이 `StandAlone` 옵션이 `true` 있고 AEM Forms를 호스팅하는 J2EE 응용 프로그램 서버 이외의 서버를 `ApplicationWebRoot` 참조하는 경우 양식이 HTML로 렌더링되지 않습니다(이 `ApplicationWebRoot` 값은 `URLSpec` 개체의 `FormsServiceClient` `(Deprecated) renderHTMLForm` 메서드에 전달된 개체를 사용하여 지정됩니다). AEM Forms를 호스팅하는 서버의 `ApplicationWebRoot`*가 다른 경우 관리 콘솔에서 웹 루트 URI의 값을 양식의 웹 응용 프로그램 URI 값으로 설정해야 합니다. 이 작업은 관리 콘솔에 로그인하고 서비스 > 양식을 클릭한 다음 웹 루트 URI를 https://server-name:port/FormServer로 설정하여 수행할 수 있습니다. 설정을 저장합니다.*
+   이 `StandAlone` 옵션이 `true` 있고 AEM Forms를 호스팅하는 J2EE 응용 프로그램 서버 이외의 서버를 `ApplicationWebRoot` 참조하는 경우 양식이 HTML로 렌더링되지 않습니다(이 `ApplicationWebRoot` 값은 `URLSpec` 개체의 `FormsServiceClient` `(Deprecated) renderHTMLForm` 메서드에 전달된 개체를 사용하여 지정됩니다). AEM Forms를 호스팅하는 서버의 `ApplicationWebRoot`*가 다른 경우 관리 콘솔에서 웹 루트 URI의 값을 양식의 웹 응용 프로그램 URI 값으로 설정해야 합니다. 이 작업은 관리 콘솔에 로그인하고 서비스 > 양식을 클릭한 다음 웹 루트 URI를 https://server-name:port/FormServer으로 설정하여 수행할 수 있습니다. 설정을 저장합니다.*
 
 1. HTML 양식 렌더링
 
    객체의 `FormsServiceClient` `(Deprecated) renderHTMLForm` 메서드를 호출하고 다음 값을 전달합니다.
 
    * 파일 이름 확장자를 포함하여 양식 디자인 이름을 지정하는 문자열 값입니다. Forms 응용 프로그램에 포함된 양식 디자인을 참조하는 경우 전체 경로(예: `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`예:
-   * HTML 기본 설정 유형을 지정하는 `TransformTo` 열거형 값. 예를 들어 Internet Explorer 5.0 이상 버전용 동적 HTML과 호환되는 HTML 양식을 렌더링하려면 `TransformTo.MSDHTML`을 지정합니다.
+   * HTML 기본 설정 유형을 지정하는 `TransformTo` 열거형 값. 예를 들어 Internet Explorer 5.0 이상 버전용 동적 HTML과 호환되는 HTML 양식을 렌더링하려면 을 `TransformTo.MSDHTML`지정합니다.
    * 양식과 병합할 데이터가 들어 있는 `com.adobe.idp.Document` 개체입니다. 데이터를 병합하지 않으려면 빈 `com.adobe.idp.Document` 개체를 전달합니다.
    * HTML 런타임 옵션을 저장하는 `HTMLRenderSpec` 개체입니다.
    * 헤더 값을 지정하는 `HTTP_USER_AGENT` 문자열 값;예를 들면 다음과 같습니다 `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
@@ -324,18 +324,18 @@ Forms API(웹 서비스)를 사용하여 HTML 양식을 렌더링합니다.
 
    * 생성자를 사용하여 `HTMLRenderSpec` 객체를 만듭니다.
    * 도구 모음을 사용하여 HTML 양식을 렌더링하려면 `HTMLRenderSpec` 개체의 `setHTMLToolbar` 메서드를 호출하고 `HTMLToolbar` 열거형 값을 전달합니다. 예를 들어 세로 HTML 도구 모음을 표시하려면 `HTMLToolbar.Vertical`전달합니다.
-   * HTML 양식의 로케일 값을 설정하려면 `HTMLRenderSpec` 개체의 `setLocale` 메서드를 호출하고 로케일 값을 지정하는 문자열 값을 전달합니다. 자세한 내용은 AEM Forms [API 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * HTML 양식의 로케일 값을 설정하려면 `HTMLRenderSpec` 개체의 `setLocale` 메서드를 호출하고 로케일 값을 지정하는 문자열 값을 전달합니다. 자세한 내용은 AEM Forms API [참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * 전체 HTML 태그 내에서 HTML 양식을 렌더링하려면 `HTMLRenderSpec` 개체의 `setOutputType` 메서드를 호출하고 전달합니다 `OutputType.FullHTMLTags`.
    >[!NOTE]
-   이 `StandAlone` 옵션이 `true` 있고 AEM Forms를 호스팅하는 J2EE 응용 프로그램 서버 이외의 서버를 `ApplicationWebRoot` 참조하는 경우 양식이 HTML로 렌더링되지 않습니다(이 `ApplicationWebRoot` 값은 `URLSpec` 개체의 `FormsServiceClient` `(Deprecated) renderHTMLForm` 메서드에 전달된 개체를 사용하여 지정됩니다). AEM Forms를 호스팅하는 서버의 `ApplicationWebRoot`*가 다른 경우 관리 콘솔에서 웹 루트 URI의 값을 양식의 웹 응용 프로그램 URI 값으로 설정해야 합니다. 이 작업은 관리 콘솔에 로그인하고 서비스 > 양식을 클릭한 다음 웹 루트 URI를 https://server-name:port/FormServer로 설정하여 수행할 수 있습니다. 그런 다음 설정을 저장합니다.*
+   이 `StandAlone` 옵션이 `true` 있고 AEM Forms를 호스팅하는 J2EE 응용 프로그램 서버 이외의 서버를 `ApplicationWebRoot` 참조하는 경우 양식이 HTML로 렌더링되지 않습니다(이 `ApplicationWebRoot` 값은 `URLSpec` 개체의 `FormsServiceClient` `(Deprecated) renderHTMLForm` 메서드에 전달된 개체를 사용하여 지정됩니다). AEM Forms를 호스팅하는 서버의 `ApplicationWebRoot`*가 다른 경우 관리 콘솔에서 웹 루트 URI의 값을 양식의 웹 응용 프로그램 URI 값으로 설정해야 합니다. 이 작업은 관리 콘솔에 로그인하고 서비스 > 양식을 클릭한 다음 웹 루트 URI를 https://server-name:port/FormServer으로 설정하여 수행할 수 있습니다. 그런 다음 설정을 저장합니다.*
 
 1. HTML 양식 렌더링
 
    객체의 `FormsService` `(Deprecated) renderHTMLForm` 메서드를 호출하고 다음 값을 전달합니다.
 
    * 파일 이름 확장자를 포함하여 양식 디자인 이름을 지정하는 문자열 값입니다. Forms 응용 프로그램에 포함된 양식 디자인을 참조하는 경우 전체 경로(예: `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`예:
-   * HTML 기본 설정 유형을 지정하는 `TransformTo` 열거형 값. 예를 들어 Internet Explorer 5.0 이상 버전용 동적 HTML과 호환되는 HTML 양식을 렌더링하려면 `TransformTo.MSDHTML`을 지정합니다.
-   * 양식과 병합할 데이터가 들어 있는 `BLOB` 개체입니다. 데이터를 병합하지 않으려면 전달하십시오 `null`. ( [양식 작성 가능한 레이아웃으로 양식]사전 채우기(/help/forms/developing/rendering-forms-rendering-forms-prefluding-forms-flowable-layouts-prefying.md#prefying-foilling-forms-with-flowable-layouts)를 참조하십시오.)
+   * HTML 기본 설정 유형을 지정하는 `TransformTo` 열거형 값. 예를 들어 Internet Explorer 5.0 이상 버전용 동적 HTML과 호환되는 HTML 양식을 렌더링하려면 을 `TransformTo.MSDHTML`지정합니다.
+   * 양식과 병합할 데이터가 들어 있는 `BLOB` 개체입니다. 데이터를 병합하지 않으려면 전달하십시오 `null`. 자세한 내용은 [플로우 가능한 레이아웃으로 양식 미리 채우기를 참조하십시오](/help/forms/developing/prepopulating-forms-flowable-layouts.md#prepopulating-forms-with-flowable-layouts).
    * HTML 런타임 옵션을 저장하는 `HTMLRenderSpec` 개체입니다.
    * 헤더 값을 지정하는 `HTTP_USER_AGENT` 문자열 값;예를 들면 다음과 같습니다 `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. 이 값을 설정하지 않으려면 빈 문자열을 전달할 수 있습니다.
    * HTML 양식을 렌더링하는 데 필요한 URI 값을 저장하는 `URLSpec` 개체입니다. 자세한 내용은 [URI 값](/help/forms/developing/rendering-interactive-pdf-forms.md)지정을 참조하십시오.
