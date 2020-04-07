@@ -31,13 +31,19 @@ comment.hbs 스크립트에서는 각 댓글에 대한 전체 HTML을 만듭니�
 1. 오버레이된 항목 열기 `comment.hbs`
    * Double-click on node `comment.hbs`in `/apps/social/commons/components/hbs/comments/comment folder`
 1. 다음 줄을 찾아 삭제하거나 주석을 답니다.
-   `xml <aside class="scf-comment-author">
-<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>`
+
+```xml
+<aside class="scf-comment-author">
+        <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+```
 
 행을 삭제하거나 &#39;&lt;!—&#39; 및 &#39;—>&#39;를 사용하여 주석을 달 수 있습니다. 또한 &#39;xxx&#39; 문자는 아바타가 있었던 위치를 보여주는 시각적 표시기로 추가됩니다.
-`xml <!-- do not display avatar with comment
-<aside class="scf-comment-author">
-<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>`
+
+```xml
+<!-- do not display avatar with comment
+    <aside class="scf-comment-author">
+        <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+```
 
 ## 오버레이 복제 {#replicate-the-overlay}
 
