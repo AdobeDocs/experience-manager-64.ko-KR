@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 9b372645792d3e9181c3c1c1e03f0b9cbb7ef14a
+source-git-commit: 730a08c0c02b5d44b5483c733252e0e76236061a
 
 ---
 
@@ -290,7 +290,7 @@ AEM 6.4.7.0의 주요 하이라이트는 다음과 같습니다.
 
 ##### Oak {#oak-6470}
 
-* JPEG 이미지가 들어 있는 .docx 및 .xlsx 파일 확장자가 있는 MS Office 파일이 Tika 파서(NPR-31693)를 사용하여 구문 분석하지 못합니다.
+* JPEG 이미지가 포함된 .docx 및 .xlsx 파일 확장자를 사용하는 MS Office 파일이 Tika 파서(NPR-31693)를 사용하여 구문 분석하지 못합니다.
 
 ##### Livefyre {#livefyre-6470}
 
@@ -916,7 +916,7 @@ AEM 6.4.4.0의 주요 주요 하이라이트는 다음과 같습니다.
 
 * 다중 언어 번역 프로젝트는 관리자 그룹에 속하지 않은 사용자에 대해 여러 언어 작업을 만들지 않습니다. NPR-28508: CQ-4262023용 핫픽스
 * 서비스를 시작하는 동안 getTaskRenderers가 호출될 때마다 ProjectTaskListServlet이 ResourceResolver를 누수합니다. NPR-27590: CQ-4258011용 핫픽스
-* 디렉토리에 페이지 크기보다 더 많은 하위 디렉토리가 있고 순서를 날짜 또는 크기별로 지정한 경우 오류가 발생하면 첫 번째 페이지 밖으로 이동할 수 없습니다. NPR-28867: CQ-4265039용 핫픽스
+* 디렉토리에 페이지 크기보다 더 많은 하위 디렉토리가 있고 순서를 날짜 또는 크기로만 지정한 경우 오류가 발생하면 첫 번째 페이지 밖으로 이동할 수 없습니다. NPR-28867: CQ-4265039용 핫픽스
 * DAM 뷰어의 XSS(교차 사이트 스크립팅) 수정 지원 NPR-28106: CQ-4253215용 핫픽스
 * 번역 프로젝트에 새 페이지를 추가하기 위한 링크가 표시되지 않아 프로젝트 관리자가 번역 프로젝트에 페이지를 추가할 수 없습니다. CQ-4266334용 핫픽스
 
@@ -1694,7 +1694,7 @@ AEM 6.4.1.0은 AEM 6.4 GA에 설치할 수 있습니다. 서비스 팩의 주요
 * 인쇄 및 인쇄 대화 상자에 ARIA 지원이 추가되었습니다.
 * 이메일 유효성 검사 ARIA 지원이 추가되었습니다.
 * platform.clientlibs 픽스에 대한 사전 예방적 백포트.
-* 명시적 dataType에 대한 입력이 없을 때 스크립트의 자동 실행 방지
+* 명시적 dataType에 대한 입력이 없을 때 스크립트 자동 실행 방지(CVE-2015-9251 해결).
 
 **자산**
 
@@ -2166,7 +2166,7 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/e
 >AEM 6.4.8.0에는 [AEM Forms 호환성 패키지](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/AEM-FORMS-6.4.7.0-COMPAT)의 새 버전이 포함되어 있습니다. 이전 버전의 AEM Forms 호환성 패키지를 사용하고 AEM 6.4.8.0으로 업데이트하는 경우 최신 버전의 AEM Forms 호환성 패키지 설치 후 양식 추가 기능 패키지를 설치합니다.
 
 1. AEM 서비스 팩을 설치했는지 확인합니다.
-1. Download the corresponding forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for your operating system.
+1. Download the corresponding forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) for your operating system.
 1. Install the forms add-on package as described in [Installing AEM forms add-on packages](https://helpx.adobe.com/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html#InstallAEMFormsaddonpackage).
 
 ### Install AEM Forms JEE installer {#install-aem-forms-jee-installer}
@@ -2175,7 +2175,7 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/e
 >
 >JEE에서 AEM Forms를 사용하지 않는 경우 건너뜁니다. 별도의 설치 프로그램을 통해 AEM Forms JEE의 수정 사항이 전달됩니다.
 
-For information about installing the cumulative installer for AEM Forms JEE and post-deployment configuration, see [AEM Forms JEE Patch Installer 0015](https://helpx.adobe.com/aem-forms/quick-fixes/6-4/jee-patch-0015.html).
+For information about installing the cumulative installer for AEM Forms JEE and post-deployment configuration, see [AEM Forms JEE Patch Installer 0015](https://helpx.adobe.com/kr/aem-forms/quick-fixes/6-4/jee-patch-0015.html).
 
 #### NPR-21268에 필요한 구성 설정 {#configuration-settings-required-for-npr}
 
@@ -2264,7 +2264,7 @@ AEM 6.4.8.0에 포함된 콘텐츠 패키지 목록
 
 * [AEM 6.4 릴리스 노트](../release-notes/release-notes.md)
 * [AEM 제품 페이지](https://www.adobe.com/solutions/web-experience-management.html)
-* [AEM 6.4 설명서](https://helpx.adobe.com/support/experience-manager/6-4.html)
+* [AEM 6.4 설명서](https://helpx.adobe.com/kr/support/experience-manager/6-4.html)
 * Subscribe to [Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)
 
 ### 제한된 사이트 {#restricted-sites-new}
