@@ -66,8 +66,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 1. **AEM에서 웹 사이트 또는 웹 사이트에 대화형 이미지 추가**
 
    * AEM Sites, AEM eCommerce 또는 둘 다를 사용하는 경우 대화형 미디어 구성 요소를 페이지로 드래그하여 AEM의 웹 페이지에 직접 대화형 이미지를 추가할 수 있습니다. See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages.md)
-   * 
-AEM 자산 및 Dynamic Media 독립 실행형 제품을 사용하는 경우 웹 사이트에서 포함 코드를 복사한 다음 기존 Quickview와 통합해야 합니다. 웹 [사이트와](#integrating-an-interactive-image-with-your-website)인터랙티브한 이미지 통합을 참조하십시오.
+   * AEM 자산 및 Dynamic Media 독립 실행형 제품을 사용하는 경우 웹 사이트에서 포함 코드를 복사한 다음 기존 Quickview와 통합해야 합니다. 웹 [사이트와](#integrating-an-interactive-image-with-your-website)인터랙티브한 이미지 통합을 참조하십시오.
    * 타사 WCM(Web Content Manager)을 사용하는 경우 새 대화형 비디오를 웹 사이트에서 사용되는 기존 Quickview 구현과 통합해야 합니다. 대화형 [이미지를 기존 Quickview와 통합을 참조하십시오](#integrating-an-interactive-image-with-an-existing-quickview).
 
 ## (선택 사항) 핫스팟 변수 확인 {#optional-identifying-hotspot-variables}
