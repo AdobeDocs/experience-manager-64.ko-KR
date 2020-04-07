@@ -10,7 +10,7 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 translation-type: tm+mt
-source-git-commit: 70039d5f7d6f773e64402c3a3e88198bb52fb11f
+source-git-commit: 64d4362c933ed30c2b9474cafbcd9c318d9c52bd
 
 ---
 
@@ -77,7 +77,7 @@ AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭�
 **참고:** AEM의 컨텐츠 번역 기능에 대한 개요는 다국어 [사이트에 대한 컨텐츠 번역을 참조하십시오](/help/sites-administering/translation.md).
 
 프레임워크의 단일 구성은 페이지 컨텐츠, 커뮤니티 컨텐츠 및 자산을 변환하는 방법을 제어합니다.
-![chlimage_1-386](assets/chlimage_1-386.png)
+![chlimage_1-386](assets/translation-config-64.jpg)
 
 ### 사이트 구성 속성 {#sites-configuration-properties}
 
