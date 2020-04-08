@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: d79b5f7204cb7a00cef6d31a1fdd2cbe93a6cfbe
+source-git-commit: 3316dbc8ef268be2b305d22da9003ae40414b4e1
 
 ---
 
@@ -96,7 +96,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
   </tr>
   <tr>
    <td>포털 디렉터</td> 
-   <td><p>포털 디렉터는 타사 서버에서 포틀릿을 통해 AEM 컨텐츠를 호스팅할 수 있는 기능 세트입니다.</p> <p>Adobe는 아래 나열된 위치에 있는 포털 관리자 기능을 추가로 개선할 계획이 없습니다. AEM 6.4에는 포털 디렉터가 포함되어 있으며 이전 릴리스에서 업그레이드하는 고객은 이를 그대로 사용할 수 있습니다. Portal Direct는 더 이상 사용하지 않는 동안 완전히 지원되는 상태로 유지됩니다.</p> 
+   <td><p>포털 디렉터는 타사 서버에서 포틀릿을 통해 AEM 컨텐츠를 호스팅할 수 있는 기능 세트입니다.</p> <p>Adobe는 아래 나열된 위치에 있는 포털 디렉터 기능을 추가로 개선할 계획이 없습니다. AEM 6.4에는 포털 디렉터가 포함되어 있으며 이전 릴리스에서 업그레이드하는 고객은 이를 그대로 사용할 수 있습니다. Portal Direct는 더 이상 사용하지 않는 동안 완전히 지원되는 상태로 유지됩니다.</p> 
     <ul> 
      <li>/libs/portal/director</li> 
     </ul> </td> 
@@ -110,7 +110,14 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
   <tr>
    <td>양식</td> 
    <td><p>Adobe Central 제품이 더 이상 지원되지 않으므로 Adobe Central Migration Bridge 서비스에 대한 지원이 더 이상 필요하지 않습니다.</p> </td> 
-   <td> </td> 
+   <td>교체 없음 </td> 
+  </tr>
+    <tr>
+   <td>양식</td> 
+   <td><p>쿼리 및 작업 옵션에서 JSONObject를 사용하지 않습니다. 다음 API는 더 이상 사용되지 않습니다.
+   <ul><li>setArguments(JSONObject 인수)</li><li>JSONObject getArguments()</li><li>OperationOptions(String operationId, JSONObject 인수)</li><li>JSONObject getArguments()</li><li>void setArguments(JSONObject 인수)</li></ul>
+   </p> </td> 
+   <td>IValueMap API 사용 </td> 
   </tr>
   <tr>
    <td>자산</td> 
@@ -134,7 +141,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
   <tr>
    <td>Analytics Activity Map</td> 
    <td>AEM 내에 포함된 Activity Map 버전.</td> 
-   <td>Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다.<br><br>이제 <a href="https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">Adobe Analytics에서 제공하는 ActivityMap</a> 플러그인을 사용해야 합니다.</td> 
+   <td>Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다.<br><br>이제 <a href="https://docs.adobe.com/content/help/ko-KR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">Adobe Analytics에서 제공하는 ActivityMap</a> 플러그인을 사용해야 합니다.</td> 
   </tr>
   <tr>
    <td>구성 요소</td> 
@@ -209,12 +216,17 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
   <tr>
    <td>양식</td> 
    <td> 응용 문서 기능 제거</td> 
-   <td> 대화형 통신 기능을 사용하여 인쇄 및 웹 기반 통신을 만들 수 있습니다. <br/> </td> 
+   <td> 대화형 통신 기능을 사용하여 인쇄 및 웹 기반 통신을 만들 수 있습니다. 응용 문서를 사용하는 경우 호환성 패키지를 설치하여 기존 응용 문서를 계속 사용합니다.<br/> </td> 
   </tr>
     <tr>
     <td>양식</td> 
     <td>JEE 특정 랜딩 페이지에서 AEM Forms를 제거했습니다.</td> 
     <td>JEE의 AEM Forms 랜딩 페이지가 AEM 랜딩 페이지(/aem/start.html)으로 대체되었습니다. </td>  
+  </tr>
+   <tr>
+   <td>양식</td> 
+   <td>기본 Captcha 지원을 제거했습니다.</td> 
+   <td>Google의 reCAPTCHA 서비스 사용</td> 
   </tr>
    <tr>
    <td>양식</td> 
