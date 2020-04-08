@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: 43a28b0d9552cfde74850dfd1a1d63d04f7e4540
 
 ---
 
@@ -29,7 +29,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
 ## 인터랙티브한 이미지 배너가 어떻게 생성되는지 보기 {#watch-how-interactive-image-banners-are-created}
 
-인터랙티브한 이미지 배너가 만들어지는 [방법에 대한 10분 33초의 연습을](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner)시청하십시오. 또한 인터랙티브한 이미지 배너를 미리 보고 편집 및 전달하는 방법을 살펴볼 수 있습니다.
+인터랙티브한 이미지 배너가 만들어지는 [방법에 대한 10분 33초의 연습을](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)시청하십시오. 또한 인터랙티브한 이미지 배너를 미리 보고 편집 및 전달하는 방법을 살펴볼 수 있습니다.
 
 ## 빠른 시작:인터랙티브한 이미지 {#quick-start-interactive-images}
 
@@ -65,7 +65,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
 1. **AEM에서 웹 사이트 또는 웹 사이트에 대화형 이미지 추가**
 
-   * AEM Sites, AEM eCommerce 또는 둘 다를 사용하는 경우 대화형 미디어 구성 요소를 페이지로 드래그하여 AEM의 웹 페이지에 직접 대화형 이미지를 추가할 수 있습니다. See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages.md)
+   * AEM Sites, AEM eCommerce 또는 둘 다를 사용하는 경우 대화형 미디어 구성 요소를 페이지로 드래그하여 AEM의 웹 페이지에 직접 대화형 이미지를 추가할 수 있습니다. See [Adding Dynamic Media Assets to Pages](adding-dynamic-media-assets-to-pages.md).
    * AEM 자산 및 Dynamic Media 독립 실행형 제품을 사용하는 경우 웹 사이트에서 포함 코드를 복사한 다음 기존 Quickview와 통합해야 합니다. 웹 [사이트와](#integrating-an-interactive-image-with-your-website)인터랙티브한 이미지 통합을 참조하십시오.
    * 타사 WCM(Web Content Manager)을 사용하는 경우 새 대화형 비디오를 웹 사이트에서 사용되는 기존 Quickview 구현과 통합해야 합니다. 대화형 [이미지를 기존 Quickview와 통합을 참조하십시오](#integrating-an-interactive-image-with-an-existing-quickview).
 
@@ -167,7 +167,7 @@ Quickview URL 및 결과 핫스팟 변수의 다음 예를 고려하십시오.
 
 이러한 서버 호출을 보면 제품 특정 정보가 요청 경로에만 있음을 알 수 있습니다. 또한 쿼리 문자열이 전혀 사용되지 않으며 두 가지 유형의 데이터가 포함되어 있습니다.
 
-* 첫 번째 유형은 남녀 입니다. 이 이름을 &quot;제품 카테고리&quot;라고 부를 수 있습니다.
+* 첫 번째 유형은 남녀 입니다. 이를 &quot;제품 카테고리&quot;라고 할 수 있습니다.
 * 두 번째 유형은 CamoPullover와 같은 제품 이름입니다. 제품 SKU라고 가정할 수 있습니다.
 
 이 정보가 제공되면 전체 Quickview URL에는 다음 패턴이 있습니다.
@@ -385,7 +385,7 @@ ZoomView [.iscommand](https://marketing.adobe.com/resources/help/en_US/s7/viewer
 기존 Quickview 구현은 일반적으로 웹 페이지에서 다음 순서로 발생하는 관련 간 작업 체인을 나타냅니다.
 
 1. 사용자는 웹 사이트의 사용자 인터페이스에서 요소를 트리거합니다.
-1. 프런트 엔드 코드는 1단계에서 트리거된 사용자 인터페이스 요소를 기반으로 Quickview URL을 가져옵니다.
+1. 프런트 엔드 코드는 1단계에서 트리거된 사용자 인터페이스 요소를 기반으로 빠른 보기 URL을 가져옵니다.
 1. 프런트 엔드 코드는 2단계에서 얻은 URL을 사용하여 Ajax 요청을 전송합니다.
 1. 백엔드 로직은 해당 Quickview 데이터 또는 컨텐츠를 프런트 엔드 코드로 다시 반환합니다.
 1. 프런트 엔드 코드는 Quickview 데이터 또는 컨텐츠를 로드합니다.
