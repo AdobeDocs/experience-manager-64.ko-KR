@@ -10,7 +10,7 @@ topic-tags: integration
 content-type: reference
 discoiquuid: f25d901a-c62c-46b4-aab7-3ca3da1cea5b
 translation-type: tm+mt
-source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
 
 ---
 
@@ -103,37 +103,37 @@ AEM 컨텐츠 포틀릿을 사용하면 포털에서 AEM 컨텐츠를 표시할 
 
 포틀릿은 다음 기본 설정으로 구성할 수 있습니다.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>startPath</td> 
-   <td><p>포틀릿의 시작 경로입니다.처음 표시되는 컨텐츠를 정의합니다.</p> <p><strong>중요</strong>:포틀릿이 /<strong> 와 다른 컨텍스트 경로에서 실행 중인 AEM 작성자 및 게시 인스턴스에 연결하도록 구성된 경우, 이러한 AEM</strong>인스턴스의 Html 라이브러리 관리자 구성(예: Felix Webconsole을 <strong>통해)에서 강제 CQUrlInfo를</strong> 활성화하거나 편집이 작동하지 않으며 환경 설정 대화 상자가 나타나지 않습니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>htmlSelector</td> 
-   <td>각 URL에 추가되는 선택기입니다. 기본적으로 <strong>포틀릿이므로</strong>html 페이지에 대한 모든 요청은 <strong>.portlet.html로 끝나는 URL을 사용합니다.</strong> 그러면 포틀릿 렌더링에 AEM 내에서 사용자 지정 스크립트를 사용할 수 있습니다.</td> 
-  </tr> 
-  <tr> 
-   <td>addCssToPortalHeader</td> 
-   <td><p>기본적으로 AEM의 HTML 페이지에 포함된 css 파일이 포틀릿에 포함됩니다. 이 옵션을 비활성화하면 기본 css 파일이 제외됩니다.</p> <p>이 옵션을 활성화하면 CSS 파일이 html 페이지의 헤드에 추가되거나 포털의 동작에 따라 html 페이지에 삽입됩니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>includeToolbar</td> 
-   <td>기본적으로 도구 모음은 관리 기능을 위해 컨텐츠 포틀릿 내에서 렌더링됩니다. 이 옵션을 비활성화하면 도구 모음이 렌더링되지 않습니다.</td> 
-  </tr> 
-  <tr> 
-   <td>urlParameterNames</td> 
-   <td><p>포틀릿에 표시할 새 컨텐츠 URL이 포함될 수 있는 대체 URL 매개 변수 이름 목록입니다. 목록이 맨 위에서 아래로 처리되고 값이 들어 있는 첫 번째 매개 변수가 사용됩니다. URL을 찾을 수 없으면 기본 URL 매개 변수가 사용됩니다. 제공된 URL 파섹</p> <p>이 설정은 배포된 포틀릿에 따라 설정됩니다. "Day Portal Director 포틀릿 Bridge"에 대한 OSGi 구성의 일부 URL 매개 변수를 전체적으로 구성하는 것입니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>preferenceDialog</td> 
-   <td>AEM의 환경 설정 대화 상자의 경로 - 비워 두면 내장된 환경 설정 대화 상자가 사용됩니다. 기본값은 /libs/portal/content/prefs.html입니다.</td> 
-  </tr> 
-  <tr> 
-   <td>initialRedirect</td> 
-   <td>기본적으로 포틀릿은 첫 번째 호출에서 전체 포털 페이지의 javascript 리디렉션을 수행합니다. 이는 최신 포털 서버의 드래그 앤 드롭 시나리오를 지원하기 위한 것입니다. 제작 시 이 리디렉션은 거의 필요하지 않으므로 <em>false로</em>설정된 이 환경 설정을 사용하여 끌 수 있습니다.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>startPath</td>
+   <td><p>포틀릿의 시작 경로입니다.처음 표시되는 컨텐츠를 정의합니다.</p> <p><strong>중요</strong>:포틀릿이 /<strong> 와 다른 컨텍스트 경로에서 실행 중인 AEM 작성자 및 게시 인스턴스에 연결하도록 구성된 경우, 이러한 AEM</strong>인스턴스의 Html 라이브러리 관리자 구성(예: Felix Webconsole을 <strong>통해)에서 강제 CQUrlInfo를</strong> 활성화하거나 편집이 작동하지 않으며 환경 설정 대화 상자가 나타나지 않습니다.</p> </td>
+  </tr>
+  <tr>
+   <td>htmlSelector</td>
+   <td>각 URL에 추가되는 선택기입니다. 기본적으로 <strong>포틀릿이므로</strong>html 페이지에 대한 모든 요청은 <strong>.portlet.html로 끝나는 URL을 사용합니다.</strong> 그러면 포틀릿 렌더링에 AEM 내에서 사용자 지정 스크립트를 사용할 수 있습니다.</td>
+  </tr>
+  <tr>
+   <td>addCssToPortalHeader</td>
+   <td><p>기본적으로 AEM의 HTML 페이지에 포함된 css 파일이 포틀릿에 포함됩니다. 이 옵션을 비활성화하면 기본 css 파일이 제외됩니다.</p> <p>이 옵션을 활성화하면 CSS 파일이 html 페이지의 헤드에 추가되거나 포털의 동작에 따라 html 페이지에 삽입됩니다.</p> </td>
+  </tr>
+  <tr>
+   <td>includeToolbar</td>
+   <td>기본적으로 도구 모음은 관리 기능을 위해 컨텐츠 포틀릿 내에서 렌더링됩니다. 이 옵션을 비활성화하면 도구 모음이 렌더링되지 않습니다.</td>
+  </tr>
+  <tr>
+   <td>urlParameterNames</td>
+   <td><p>포틀릿에 표시할 새 컨텐츠 URL이 포함될 수 있는 대체 URL 매개 변수 이름 목록입니다. 목록이 맨 위에서 아래로 처리되고 값이 들어 있는 첫 번째 매개 변수가 사용됩니다. URL을 찾을 수 없으면 기본 URL 매개 변수가 사용됩니다. 제공된 URL 파섹</p> <p>이 설정은 배포된 포틀릿에 따라 설정됩니다. "Day Portal Director 포틀릿 Bridge"에 대한 OSGi 구성의 일부 URL 매개 변수를 전체적으로 구성하는 것입니다.</p> </td>
+  </tr>
+  <tr>
+   <td>preferenceDialog</td>
+   <td>AEM의 환경 설정 대화 상자의 경로 - 비워 두면 내장된 환경 설정 대화 상자가 사용됩니다. 기본값은 /libs/portal/content/prefs.html입니다.</td>
+  </tr>
+  <tr>
+   <td>initialRedirect</td>
+   <td>기본적으로 포틀릿은 첫 번째 호출에서 전체 포털 페이지의 javascript 리디렉션을 수행합니다. 이는 최신 포털 서버의 드래그 앤 드롭 시나리오를 지원하기 위한 것입니다. 제작 시 이 리디렉션은 거의 필요하지 않으므로 <em>false로</em>설정된 이 환경 설정을 사용하여 끌 수 있습니다.</td>
+  </tr>
+ </tbody>
 </table>
 
 ### OSGi 웹 콘솔 {#osgi-web-console}
@@ -171,7 +171,7 @@ AEM 컨텐츠 포틀릿을 사용하면 포털에서 AEM 컨텐츠를 표시할 
 1. 포털 서버를 대상으로 하는 작성자의 복제 에이전트를 구성합니다.
 1. 포털 서버가 호스트 **localhost**, **port 8080 **에서 실행되고 AEM 포틀릿 웹 애플리케이션이 컨텍스트 **cqportlet**&#x200B;에 마운트되었다고 가정할 경우 `http://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`캐시를 플러시할 URL이됩니다. GET을 메서드로 사용합니다.
 
-   **** 참고:요청 매개 변수를 사용하는 대신 Path라는 http 헤더를 보낼 수 **있습니다**.
+   **참고:** 요청 매개 변수를 사용하는 대신 Path라는 http 헤더를 보낼 수 **있습니다**.
 
 #### 복제 에이전트를 통해 캐시 플러싱 {#flushing-the-cache-via-replication-agent}
 
@@ -183,7 +183,7 @@ AEM 포틀릿을 실행하는 여러 포털 노드를 운영하는 경우 이 �
 
 1. 작성자 인스턴스에 로그인합니다.
 1. 웹 사이트 탭에서 도구 *탭을* 클릭합니다.
-1. **** 새 **페이지...를 클릭합니다.복제 에이전트 새로**&#x200B;만들기...메뉴.
+1. 새 **페이지...를 클릭합니다.** 복제 에이전트 새로 **만들기...** 메뉴.
 
    ![screen_shot_2012-02-15at40647pm](assets/screen_shot_2012-02-15at40647pm.png)
 
@@ -282,7 +282,7 @@ AEM 포틀릿을 실행하는 여러 포털 노드를 운영하는 경우 이 �
 
 #### SSO {#sso}
 
-포틀릿은 AEM이 없는 SSO를 지원합니다. 인증자 서비스는 SSO를 사용하고 형식 Basic의 현재 포털 사용자를 **AEM에** 명명된 쿠키로 전송하도록 구성할 `cqpsso` 수 있습니다. 경로 / 에 SSO 인증 핸들러를 사용하도록 AEM을 구성해야 합니다. 여기에 쿠키 이름도 구성해야 합니다.
+포틀릿은 AEM을 즉시 사용하는 SSO를 지원합니다. 인증자 서비스는 SSO를 사용하고 형식 Basic의 현재 포털 사용자를 **AEM에** 명명된 쿠키로 전송하도록 구성할 `cqpsso` 수 있습니다. 경로 / 에 SSO 인증 핸들러를 사용하도록 AEM을 구성해야 합니다. 여기에 쿠키 이름도 구성해야 합니다.
 
 AEM `crx-quickstart/repository/repository.xml` 저장소에 대해 다음과 같이 구성해야 합니다.
 
@@ -516,7 +516,7 @@ button.html 파일의 예:
 
  <a href="#" onclick="{onclick}">
 
- <img src="/wps/PA_CQ5_Portlet/cqbridge/static/{id}.gif" alt="{text}" 
+ <img src="/wps/PA_CQ5_Portlet/cqbridge/static/{id}.gif" alt="{text}"
 title="{text}"/>
 
  </a>
@@ -556,53 +556,53 @@ AEM 컨텐츠 포틀릿에는 AEM의 컨텐츠가 올바른 언어로 되어 있
 
 선택적 OSGi 서비스를 구현하여 포틀릿의 다양한 부분을 사용자 정의할 수 있습니다. 각 서비스는 Java 인터페이스에 해당합니다. 이 인터페이스는 번들을 통해 포틀릿으로 구현되고 배포할 수 있습니다.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>RequestTracker</td> 
-   <td>요청 추적기는 포틀릿에서 컨텐츠가 표시될 때마다 알림을 받습니다. 따라서 포틀릿의 호출을 추적할 수 있습니다.</td> 
-  </tr> 
-  <tr> 
-   <td>InvocationContextListener</td> 
-   <td>포틀릿에 대한 각 요청의 시작과 끝에 호출되는 수신기입니다. 리스너를 사용하여 현재 요청에 대한 정보를 변경하거나 추가할 수 있습니다.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>ErrorHandler</td> 
-   <td>렌더링 단계 중 오류에 대한 사용자 지정 오류 핸들러.</td> 
-  </tr> 
-  <tr> 
-   <td>HttpProcessor</td> 
-   <td>이 서비스를 사용하여 AEM에 각 http 호출에 정보를 추가할 수 있습니다.</td> 
-  </tr> 
-  <tr> 
-   <td>포틀릿작업</td> 
-   <td>포틀릿에 고유한 작업을 추가합니다. 이 작업은 포틀릿 작업 링크를 통해 호출할 수 있습니다.</td> 
-  </tr> 
-  <tr> 
-   <td>PortletDecoratorService</td> 
-   <td>이 서비스는 포틀릿의 컨텐츠를 장식하는 데 사용할 수 있습니다.</td> 
-  </tr> 
-  <tr> 
-   <td>ResourceProvider</td> 
-   <td>자체 리소스 공급자를 추가하여 포틀릿 리소스 링크를 통해 클라이언트에 리소스를 제공합니다.</td> 
-  </tr> 
-  <tr> 
-   <td>TextMapper</td> 
-   <td>HTML, CSS 및 Javascript 파일을 게시할 수 있습니다.</td> 
-  </tr> 
-  <tr> 
-   <td>ToolbarButton</td> 
-   <td>도구 모음에 단추를 추가합니다.</td> 
-  </tr> 
-  <tr> 
-   <td>UrlMapper</td> 
-   <td>서비스를 추가하여 사용자 지정 URL 매핑 또는 다시 작성을 적용합니다.</td> 
-  </tr> 
-  <tr> 
-   <td>UserInfoProvider</td> 
-   <td>사용자에 대한 고유한 정보를 추가합니다. 이 서비스는 포털에서 포틀릿으로 정보를 가져오는 데 사용할 수 있습니다.</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>RequestTracker</td>
+   <td>요청 추적기는 포틀릿에서 컨텐츠가 표시될 때마다 알림을 받습니다. 따라서 포틀릿의 호출을 추적할 수 있습니다.</td>
+  </tr>
+  <tr>
+   <td>InvocationContextListener</td>
+   <td>포틀릿에 대한 각 요청의 시작과 끝에 호출되는 수신기입니다. 리스너를 사용하여 현재 요청에 대한 정보를 변경하거나 추가할 수 있습니다.<br /> </td>
+  </tr>
+  <tr>
+   <td>ErrorHandler</td>
+   <td>렌더링 단계 중 오류에 대한 사용자 지정 오류 핸들러.</td>
+  </tr>
+  <tr>
+   <td>HttpProcessor</td>
+   <td>이 서비스를 사용하여 AEM에 각 http 호출에 정보를 추가할 수 있습니다.</td>
+  </tr>
+  <tr>
+   <td>포틀릿작업</td>
+   <td>포틀릿에 고유한 작업을 추가합니다. 이 작업은 포틀릿 작업 링크를 통해 호출할 수 있습니다.</td>
+  </tr>
+  <tr>
+   <td>PortletDecoratorService</td>
+   <td>이 서비스는 포틀릿의 컨텐츠를 장식하는 데 사용할 수 있습니다.</td>
+  </tr>
+  <tr>
+   <td>ResourceProvider</td>
+   <td>자체 리소스 공급자를 추가하여 포틀릿 리소스 링크를 통해 클라이언트에 리소스를 제공합니다.</td>
+  </tr>
+  <tr>
+   <td>TextMapper</td>
+   <td>HTML, CSS 및 Javascript 파일을 게시할 수 있습니다.</td>
+  </tr>
+  <tr>
+   <td>ToolbarButton</td>
+   <td>도구 모음에 단추를 추가합니다.</td>
+  </tr>
+  <tr>
+   <td>UrlMapper</td>
+   <td>서비스를 추가하여 사용자 지정 URL 매핑 또는 다시 작성을 적용합니다.</td>
+  </tr>
+  <tr>
+   <td>UserInfoProvider</td>
+   <td>사용자에 대한 고유한 정보를 추가합니다. 이 서비스는 포털에서 포틀릿으로 정보를 가져오는 데 사용할 수 있습니다.</td>
+  </tr>
+ </tbody>
 </table>
 
 #### 기본 서비스 교체 {#replacing-default-services}
@@ -627,7 +627,7 @@ AEM 컨텐츠 포틀릿에는 AEM의 컨텐츠가 올바른 언어로 되어 있
 
 특정 이벤트를 처리하려면 배포 설명자에서 수신 이벤트로 선언하거나(또는 포털 서버를 통해 구성) EventHandler 인터페이스를 선언하는 OSGi 서비스를 구현합니다(OSGi EventAdmin 사양 참조).
 
-포틀릿 이벤트가 발생할 때마다 특정 OSGi 이벤트가 사용자 핸들러를 호출하도록 전송됩니다. 처리기는 모든 컨텍스트 정보를 얻고 그에 따라 포틀릿 상태를 업데이트하거나 새 이벤트를 보낼 수 있습니다. 기본적으로 핸들 메서드 내에서 포틀릿 이벤트 단계의 모든 기능을 사용할 수 있습니다.
+포틀릿 이벤트가 발생할 때마다 특정 OSGi 이벤트가 사용자 핸들러를 호출하는 상태로 전송됩니다. 처리기는 모든 컨텍스트 정보를 얻고 그에 따라 포틀릿 상태를 업데이트하거나 새 이벤트를 보낼 수 있습니다. 기본적으로 핸들 메서드 내에서 포틀릿 이벤트 단계의 모든 기능을 사용할 수 있습니다.
 
 ## 포털로 AEM 사용 {#using-aem-as-a-portal}
 
@@ -642,7 +642,7 @@ AEM을 포털로 사용하려면 다음 작업을 수행하십시오.
 
 >[!NOTE]
 >
->AEM이 웹 애플리케이션으로 배포된 경우에만 포틀릿 구성 요소를 사용할 수 있습니다. ([Application Server와 AEM]설치(/content/docs/en/aem/6-3/deploy/installing.md#Installing Adobe experience Manager with an application Server)를 참조하십시오.)
+>AEM이 웹 애플리케이션으로 배포된 경우에만 포틀릿 구성 요소를 사용할 수 있습니다. ([애플리케이션 서버와 함께 AEM 설치를](/help/sites-deploying/application-server-install.md)참조하십시오.)
 
 ### 포틀릿 구성 요소 설치 {#installing-the-portlet-component}
 
@@ -679,7 +679,7 @@ AEM Quickstart JAR 파일에는 포틀릿 구성 요소 파일이 포함되어 �
 
 1. 포틀릿 애플리케이션 WAR 파일의 컨텐츠를 추출합니다.
 
-   **** 팁:jar xf *nameofapp*.war 명령은 파일을 추출합니다.
+   **팁:** jar xf *nameofapp*.war 명령은 파일을 추출합니다.
 
 1. 텍스트 편집기에서 web.xml 파일을 엽니다.
 1. 웹 앱 요소 내에 다음 서블릿 구성을 추가합니다.
@@ -698,7 +698,7 @@ AEM Quickstart JAR 파일에는 포틀릿 구성 요소 파일이 포함되어 �
 
 1. web.xml 파일을 저장하고 WAR 파일을 다시 패키지합니다.
 
-   **** 팁:이 `jar cvf nameofapp.war *` 명령은 현재 디렉토리의 컨텐츠를 nameofapp.war 파일에 추가합니다.
+   **팁:** 이 `jar cvf nameofapp.war *` 명령은 현재 디렉토리의 컨텐츠를 nameofapp.war 파일에 추가합니다.
 
 1. 포틀릿 애플리케이션을 애플리케이션 서버에 배포합니다. 자세한 내용은 응용 프로그램 서버의 설명서를 참조하십시오.
 
@@ -751,7 +751,7 @@ AEM WCM에서 제공하는 콘텐츠에 액세스하려면 포털 서버에 AEM 
 
    다른 필수 포틀릿 정보의 경우 기본값을 허용하거나 값을 변경할 수 있습니다. 기본값을 그대로 사용하면 포틀릿은 https://&lt;wps-host>:&lt;port>/wps/PA_CQ5_Portlet에서 사용할 수 있습니다. 포틀릿에서 제공하는 OSGi 관리 콘솔은 https://&lt;wps-host>:&lt;port>/wps/ PA_CQ5_Portlet/cqbridge/system/console(기본 사용자 이름/암호는 admin/admin)에서 사용할 수 있습니다.
 
-1. 해당 옵션 또는 확인란을 선택하여 포틀릿 애플리케이션이 자동으로 시작되도록 하고 변경 사항을 저장합니다. 설치를 성공적으로 완료했다는 메시지가 표시됩니다.
+1. 해당 옵션 또는 확인란을 선택하여 포틀릿 애플리케이션이 자동으로 시작되도록 하고 변경 사항을 저장합니다. 설치가 성공적으로 완료되었다는 메시지가 표시됩니다.
 
 ### 포틀릿 구성 {#configuring-the-portlet}
 
