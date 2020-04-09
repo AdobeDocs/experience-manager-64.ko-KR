@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: c74b951194fd2fd723056679784ac2186f37a3e2
+source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
 
 ---
 
@@ -64,7 +64,9 @@ Java API를 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호
 * 호출할 AEM Forms 서비스. 클라이언트 응용 프로그램은 하나 이상의 서비스를 호출할 수 있습니다.
 * AEM Forms 서비스를 호출할 모드. EJB 또는 SOAP 모드를 사용할 수 있습니다. 연결 [속성](invoking-aem-forms-using-java.md#setting-connection-properties)설정을 참조하십시오.
 
->[!NOTE] (턴키만 해당) EJB용 서버 IP를 지정하는 명령으로 AEM Forms 서버를 `standalone.bat -b <Server IP> -c lc_turnkey.xml` 시작합니다.
+>[!NOTE]
+>
+>(턴키만 해당) EJB용 서버 IP를 `standalone.bat -b <Server IP> -c lc_turnkey.xml` 지정하는 명령으로 AEM Forms 서버를 시작합니다.
 
 * AEM Forms가 배포된 J2EE 응용 프로그램 서버.
 
@@ -72,329 +74,329 @@ Java API를 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호
 
 다음 표에는 AEM Forms 서비스를 호출하는 데 필요한 JAR 파일이 나열되어 있습니다.
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>파일</p></th> 
-   <th><p>설명</p></th> 
-   <th><p>위치</p></th> 
-  </tr> 
- </thead> 
+<table>
+ <thead>
+  <tr>
+   <th><p>파일</p></th>
+   <th><p>설명</p></th>
+   <th><p>위치</p></th>
+  </tr>
+ </thead>
  <tbody>
-  <tr> 
-   <td><p>adobe-livecycle-client.jar</p></td> 
-   <td><p>Java 클라이언트 응용 프로그램의 클래스 경로에 항상 포함되어야 합니다.</p></td> 
-   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-usermanager-client.jar</p></td> 
-   <td><p>Java 클라이언트 응용 프로그램의 클래스 경로에 항상 포함되어야 합니다.</p></td> 
-   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-utilities.jar</p></td> 
-   <td><p>Java 클라이언트 응용 프로그램의 클래스 경로에 항상 포함되어야 합니다.</p></td> 
-   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk//client-libs/&lt;앱 서버&gt;</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-applicationmanager-client-sdk.jar</p></td> 
-   <td><p>Application Manager 서비스를 호출하는 데 필요합니다.</p></td> 
-   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-assembler-client.jar</p></td> 
-   <td><p>어셈블러 서비스를 호출하는 데 필요합니다. </p></td> 
-   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-backup-restore-client-sdk.jar</p></td> 
-   <td><p>백업 및 복원 서비스 API를 호출하는 데 필요합니다.</p></td> 
-   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-barcodedforms-client.jar</p></td> 
-   <td><p>바코드 양식 서비스를 호출하는 데 필요합니다. </p></td> 
-   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-convertpdf-client.jar</p></td> 
-   <td><p>PDF 변환 서비스를 호출하는 데 필요합니다. </p></td> 
-   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-distiller-client.jar</p></td> 
-   <td><p>Distiller 서비스를 호출하는 데 필요합니다.</p></td> 
-   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-docconverter-client.jar</p></td> 
-   <td><p>DocConverter 서비스를 호출하는 데 필요합니다.</p></td> 
-   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-contentservices-client.jar</p></td> 
-   <td><p>Document Management 서비스를 호출하는 데 필요합니다.</p></td> 
-   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-encryption-client.jar</p></td> 
-   <td><p>암호화 서비스를 호출하는 데 필요합니다.</p></td> 
-   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-forms-client.jar</p></td> 
-   <td><p>Forms 서비스를 호출하는 데 필요합니다.</p></td> 
-   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-formdataintegration-client.jar</p></td> 
-   <td><p>양식 데이터 통합 서비스를 호출하는 데 필요합니다.</p></td> 
-   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-generatepdf-client.jar</p></td> 
-   <td><p>PDF 생성 서비스를 호출하는 데 필요합니다.</p></td> 
-   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-generate3dpdf-client.jar</p></td> 
-   <td><p>3D PDF 생성 서비스를 호출하는 데 필요합니다.</p></td> 
-   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-jobmanager-client-sdk.jar</p></td> 
-   <td><p>작업 관리자 서비스를 호출하는 데 필요합니다. </p></td> 
-   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-output-client.jar</p></td> 
-   <td><p>출력 서비스를 호출하는 데 필요합니다.</p></td> 
-   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-pdfuility-client.jar</p></td> 
-   <td><p>PDF 유틸리티 또는 XMP 유틸리티 서비스를 호출하는 데 필요합니다.</p></td> 
-   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-reader-extensions-client.jar</p></td> 
-   <td><p>Acrobat Reader DC 확장 서비스를 호출하는 데 필요합니다.</p></td> 
-   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-repository-client.jar</p><p>commons-codec-1.3.jar</p></td> 
-   <td><p>저장소 서비스를 호출하는 데 필요합니다.</p></td> 
-   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs\thirdparty</p></td> 
-  </tr> 
-  <tr> 
-   <td> 
-    <ul> 
-     <li><p>adobe-rights-management-client.jar</p></li> 
-     <li><p>namespace.jar</p></li> 
-     <li><p>jaxb-api.jar</p></li> 
-     <li><p>jaxb-impl.jar</p></li> 
-     <li><p>jaxb-libs.jar</p></li> 
-     <li><p>jaxb-xjc.jar</p></li> 
-     <li><p>relaxngDatatype.jar</p></li> 
-     <li><p>xsdlib.jar</p></li> 
-    </ul></td> 
-   <td><p>Rights Management 서비스를 호출하는 데 필요합니다.</p><p>AEM Forms가 JBoss에 배포된 경우 이러한 파일을 모두 포함합니다. </p></td> 
-   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p><p>JBoss-specific lib 디렉토리</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-signatures-client.jar</p></td> 
-   <td><p>서명 서비스를 호출하는 데 필요합니다.</p></td> 
-   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-taskmanager-client-sdk.jar</p></td> 
-   <td><p>작업 관리자 서비스를 호출하는 데 필요합니다. </p></td> 
-   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-truststore-client.jar</p></td> 
-   <td><p>Trust Store 서비스를 호출하는 데 필요합니다. </p></td> 
-   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><p>adobe-livecycle-client.jar</p></td>
+   <td><p>Java 클라이언트 응용 프로그램의 클래스 경로에 항상 포함되어야 합니다.</p></td>
+   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-usermanager-client.jar</p></td>
+   <td><p>Java 클라이언트 응용 프로그램의 클래스 경로에 항상 포함되어야 합니다.</p></td>
+   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-utilities.jar</p></td>
+   <td><p>Java 클라이언트 응용 프로그램의 클래스 경로에 항상 포함되어야 합니다.</p></td>
+   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk//client-libs/&lt;앱 서버&gt;</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-applicationmanager-client-sdk.jar</p></td>
+   <td><p>Application Manager 서비스를 호출하는 데 필요합니다.</p></td>
+   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-assembler-client.jar</p></td>
+   <td><p>어셈블러 서비스를 호출하는 데 필요합니다. </p></td>
+   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-backup-restore-client-sdk.jar</p></td>
+   <td><p>백업 및 복원 서비스 API를 호출하는 데 필요합니다.</p></td>
+   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-barcodedforms-client.jar</p></td>
+   <td><p>바코드 양식 서비스를 호출하는 데 필요합니다. </p></td>
+   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-convertpdf-client.jar</p></td>
+   <td><p>PDF 변환 서비스를 호출하는 데 필요합니다. </p></td>
+   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-distiller-client.jar</p></td>
+   <td><p>Distiller 서비스를 호출하는 데 필요합니다.</p></td>
+   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-docconverter-client.jar</p></td>
+   <td><p>DocConverter 서비스를 호출하는 데 필요합니다.</p></td>
+   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-contentservices-client.jar</p></td>
+   <td><p>Document Management 서비스를 호출하는 데 필요합니다.</p></td>
+   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-encryption-client.jar</p></td>
+   <td><p>암호화 서비스를 호출하는 데 필요합니다.</p></td>
+   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-forms-client.jar</p></td>
+   <td><p>Forms 서비스를 호출하는 데 필요합니다.</p></td>
+   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-formdataintegration-client.jar</p></td>
+   <td><p>양식 데이터 통합 서비스를 호출하는 데 필요합니다.</p></td>
+   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-generatepdf-client.jar</p></td>
+   <td><p>PDF 생성 서비스를 호출하는 데 필요합니다.</p></td>
+   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-generate3dpdf-client.jar</p></td>
+   <td><p>3D PDF 생성 서비스를 호출하는 데 필요합니다.</p></td>
+   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-jobmanager-client-sdk.jar</p></td>
+   <td><p>작업 관리자 서비스를 호출하는 데 필요합니다. </p></td>
+   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-output-client.jar</p></td>
+   <td><p>출력 서비스를 호출하는 데 필요합니다.</p></td>
+   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-pdfutility-client.jar</p></td>
+   <td><p>PDF 유틸리티 또는 XMP 유틸리티 서비스를 호출하는 데 필요합니다.</p></td>
+   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-reader-extensions-client.jar</p></td>
+   <td><p>Acrobat Reader DC 확장 서비스를 호출하는 데 필요합니다.</p></td>
+   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-repository-client.jar</p><p>commons-codec-1.3.jar</p></td>
+   <td><p>저장소 서비스를 호출하는 데 필요합니다.</p></td>
+   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs\thirdparty</p></td>
+  </tr>
+  <tr>
+   <td>
+    <ul>
+     <li><p>adobe-rightsmanagement-client.jar</p></li>
+     <li><p>namespace.jar</p></li>
+     <li><p>jaxb-api.jar</p></li>
+     <li><p>jaxb-impl.jar</p></li>
+     <li><p>jaxb-libs.jar</p></li>
+     <li><p>jaxb-xjc.jar</p></li>
+     <li><p>relaxngDatatype.jar</p></li>
+     <li><p>xsdlib.jar</p></li>
+    </ul></td>
+   <td><p>Rights Management 서비스를 호출하는 데 필요합니다.</p><p>AEM Forms가 JBoss에 배포된 경우 이러한 파일을 모두 포함합니다. </p></td>
+   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p><p>JBoss-specific lib 디렉토리</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-signatures-client.jar</p></td>
+   <td><p>서명 서비스를 호출하는 데 필요합니다.</p></td>
+   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-taskmanager-client-sdk.jar</p></td>
+   <td><p>작업 관리자 서비스를 호출하는 데 필요합니다. </p></td>
+   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-truststore-client.jar</p></td>
+   <td><p>Trust Store 서비스를 호출하는 데 필요합니다. </p></td>
+   <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+ </tbody>
 </table>
 
 ### 연결 모드 및 J2EE 응용 프로그램 JAR 파일 {#connection-mode-and-j2ee-application-jar-files}
 
 다음 표에는 연결 모드에 따라 달라지는 JAR 파일과 AEM Forms가 배포된 J2EE 응용 프로그램 서버가 나열됩니다.
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>파일</p> </th> 
-   <th><p>설명</p> </th> 
-   <th><p>위치</p> </th> 
-  </tr> 
- &lt;/heads align="left"&gt; 
- <tbody> 
-  <tr> 
-   <td> 
-    <ul> 
-     <li><p>activation.jar</p> </li> 
-     <li><p>axis.jar</p> </li> 
-     <li><p>commons-codec-1.3.jar</p> </li> 
-     <li><p>commons-collections-3.1.jar</p> </li> 
-     <li><p>commons-discovery.jar</p> </li> 
-     <li><p>commons-logging.jar</p> </li> 
-     <li><p>dom3-xml-apis-2.5.0.jar</p> </li> 
-     <li><p>jaxen-1.1-beta-9.jar</p> </li> 
-     <li><p>jaxrpc.jar</p> </li> 
-     <li><p>log4j.jar</p> </li> 
-     <li><p>mail.jar</p> </li> 
-     <li><p>saj.jar</p> </li> 
-     <li><p>wsdl4j.jar</p> </li> 
-     <li><p>xalan.jar</p> </li> 
-     <li><p>xbean.jar</p> </li> 
-    </ul> 
-    <ul> 
-     <li>xercesImpl.jar<br /> </li> 
-     <li>commons-httpclient-3.1.jar</li> 
-    </ul> <p> </p> </td> 
-   <td><p>SOAP 모드를 사용하여 AEM Forms를 호출하는 경우 이러한 JAR 파일을 포함합니다.</p> </td> 
-   <td><p>&lt;<em>설치 디렉토리</em>&gt;/sdk/client-libs/thirdparty</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p> jboss-client.jar</p> </td> 
-   <td><p>aem Forms가 JBoss Application Server에 배포된 경우 이 JAR 파일을 포함합니다.</p> <p>jboss-client.jar 및 참조된 jar가 함께 있지 않으면 classloader에서 필수 클래스를 찾을 수 없습니다.</p> </td> 
-   <td><p>JBoss 클라이언트 lib 디렉토리</p> <p>클라이언트 응용 프로그램을 동일한 J2EE 응용 프로그램 서버에 배포하는 경우 이 파일을 포함할 필요가 없습니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>wlclient.jar</p> </td> 
-   <td><p>aem Forms가 BEA WebLogic Server®에 배포된 경우 이 JAR 파일을 포함합니다.</p> </td> 
-   <td><p>WebLogic-specific lib 디렉토리</p> <p>클라이언트 응용 프로그램을 동일한 J2EE 응용 프로그램 서버에 배포하는 경우 이 파일을 포함할 필요가 없습니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> 
-    <ul> 
-     <li><p>com.ibm.ws.admin.client_6.1.0.jar</p> </li> 
-     <li><p>com.ibm.ws.webservices.thinclient_6.1.0.jar</p> </li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li><p>aem Forms가 WebSphere Application Server에 배포된 경우 이러한 JAR 파일을 포함합니다.</p> </li> 
-     <li><p>(웹 서비스 호출에는 com.ibm.ws.webservices.thinclient_6.1.0.jar가 필요합니다.)</p> </li> 
-    </ul> </td> 
-   <td><p>WebSphere-specific lib 디렉토리(<em>[WAS_HOME]</em>/runtimes)</p> <p>클라이언트 응용 프로그램을 동일한 J2EE 응용 프로그램 서버에 배포하는 경우 이러한 파일을 포함할 필요가 없습니다.</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <thead>
+  <tr>
+   <th><p>파일</p> </th>
+   <th><p>설명</p> </th>
+   <th><p>위치</p> </th>
+  </tr>
+ &lt;/heads align="left"&gt;
+ <tbody>
+  <tr>
+   <td>
+    <ul>
+     <li><p>activation.jar</p> </li>
+     <li><p>axis.jar</p> </li>
+     <li><p>commons-codec-1.3.jar</p> </li>
+     <li><p>commons-collections-3.1.jar</p> </li>
+     <li><p>commons-discovery.jar</p> </li>
+     <li><p>commons-logging.jar</p> </li>
+     <li><p>dom3-xml-apis-2.5.0.jar</p> </li>
+     <li><p>jaxen-1.1-beta-9.jar</p> </li>
+     <li><p>jaxrpc.jar</p> </li>
+     <li><p>log4j.jar</p> </li>
+     <li><p>mail.jar</p> </li>
+     <li><p>saaj.jar</p> </li>
+     <li><p>wsdl4j.jar</p> </li>
+     <li><p>xalan.jar</p> </li>
+     <li><p>xbean.jar</p> </li>
+    </ul>
+    <ul>
+     <li>xercesImpl.jar<br /> </li>
+     <li>commons-httpclient-3.1.jar</li>
+    </ul> <p> </p> </td>
+   <td><p>SOAP 모드를 사용하여 AEM Forms를 호출하는 경우 이러한 JAR 파일을 포함합니다.</p> </td>
+   <td><p>&lt;<em>설치 디렉토리</em>&gt;/sdk/client-libs/thirdparty</p> </td>
+  </tr>
+  <tr>
+   <td><p> jboss-client.jar</p> </td>
+   <td><p>aem Forms가 JBoss Application Server에 배포된 경우 이 JAR 파일을 포함합니다.</p> <p>jboss-client.jar 및 참조된 jar가 함께 있지 않으면 classloader에서 필수 클래스를 찾을 수 없습니다.</p> </td>
+   <td><p>JBoss 클라이언트 lib 디렉토리</p> <p>클라이언트 응용 프로그램을 동일한 J2EE 응용 프로그램 서버에 배포하는 경우 이 파일을 포함할 필요가 없습니다.</p> </td>
+  </tr>
+  <tr>
+   <td><p>wlclient.jar</p> </td>
+   <td><p>aem Forms가 BEA WebLogic Server®에 배포된 경우 이 JAR 파일을 포함합니다.</p> </td>
+   <td><p>WebLogic-specific lib 디렉토리</p> <p>클라이언트 응용 프로그램을 동일한 J2EE 응용 프로그램 서버에 배포하는 경우 이 파일을 포함할 필요가 없습니다.</p> </td>
+  </tr>
+  <tr>
+   <td>
+    <ul>
+     <li><p>com.ibm.ws.admin.client_6.1.0.jar</p> </li>
+     <li><p>com.ibm.ws.webservices.thinclient_6.1.0.jar</p> </li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li><p>aem Forms가 WebSphere Application Server에 배포된 경우 이러한 JAR 파일을 포함합니다.</p> </li>
+     <li><p>(웹 서비스 호출에는 com.ibm.ws.webservices.thinclient_6.1.0.jar가 필요합니다.)</p> </li>
+    </ul> </td>
+   <td><p>WebSphere-specific lib 디렉토리(<em>[WAS_HOME]</em>/runtimes)</p> <p>클라이언트 응용 프로그램을 동일한 J2EE 응용 프로그램 서버에 배포하는 경우 이러한 파일을 포함할 필요가 없습니다.</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### 시나리오 호출 {#invoking-scenarios}
 
 다음 표에서는 호출 시나리오를 지정하고 AEM Forms를 성공적으로 호출하는 데 필요한 JAR 파일을 나열합니다.
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>서비스</p> </th> 
-   <th><p>호출 모드</p> </th> 
-   <th><p>J2EE 애플리케이션 서버</p> </th> 
-   <th><p>필수 JAR 파일</p> </th> 
-  </tr> 
- &lt;/heads align="left"&gt; 
- <tbody> 
-  <tr> 
-   <td><p>양식 서비스</p> </td> 
-   <td><p>EJB</p> </td> 
-   <td><p>JBoss</p> </td> 
-   <td> 
-    <ul> 
-     <li><p>adobe-livecycle-client.jar</p> </li> 
-     <li><p>adobe-usermanager-client.jar</p> </li> 
-    </ul> 
-    <ul> 
-     <li>jboss-client.jar</li> 
-    </ul> 
-    <ul> 
-     <li>adobe-forms-client.jar<br /> </li> 
-     <li>commons-httpclient-3.1.jar</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><p>양식 서비스</p> <p>Acrobat Reader DC 확장 서비스</p> <p>서명 서비스</p> </td> 
-   <td><p>EJB</p> </td> 
-   <td><p>JBoss</p> </td> 
-   <td> 
-    <ul> 
-     <li><p>adobe-livecycle-client.jar</p> </li> 
-     <li><p>adobe-usermanager-client.jar</p> </li> 
-    </ul> 
-    <ul> 
-     <li>jboss-client.jar<br /> </li> 
-     <li>commons-httpclient-3.1.jar</li> 
-    </ul> 
-    <ul> 
-     <li><p>adobe-forms-client.jar</p> </li> 
-     <li><p>adobe-reader-extensions-client.jar</p> </li> 
-     <li><p>adobe-signatures-client.jar</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><p>양식 서비스</p> </td> 
-   <td><p>SOAP</p> </td> 
-   <td><p>WebLogic</p> </td> 
-   <td> 
-    <ul> 
-     <li><p>adobe-livecycle-client.jar</p> </li> 
-     <li><p>adobe-usermanager-client.jar</p> </li> 
-     <li><p>wlclient.jar</p> </li> 
-     <li><p>activation.jar</p> </li> 
-     <li><p>axis.jar</p> </li> 
-     <li><p>commons-codec-1.3.jar</p> </li> 
-     <li><p>commons-collections-3.1.jar</p> </li> 
-     <li><p>commons-discovery.jar</p> </li> 
-     <li><p>commons-logging.jar</p> </li> 
-     <li><p>dom3-xml-apis-2.5.0.jar</p> </li> 
-     <li><p>jai_imageio.jar</p> </li> 
-     <li><p>jaxen-1.1-beta-9.jar</p> </li> 
-     <li><p>jaxrpc.jar</p> </li> 
-     <li><p>log4j.jar</p> </li> 
-     <li><p>mail.jar</p> </li> 
-     <li><p>saj.jar</p> </li> 
-     <li><p>wsdl4j.jar</p> </li> 
-     <li><p>xalan.jar</p> </li> 
-     <li><p>xbean.jar</p> </li> 
-     <li><p>xercesImpl.jar</p> </li> 
-     <li><p>adobe-forms-client.jar</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><p>양식 서비스</p> <p>Acrobat Reader DC 확장 서비스</p> <p>서명 서비스</p> </td> 
-   <td><p>SOAP</p> </td> 
-   <td><p>WebLogic</p> </td> 
-   <td> 
-    <ul> 
-     <li><p>adobe-livecycle-client.jar</p> </li> 
-     <li><p>adobe-usermanager-client.jar</p> </li> 
-     <li><p>wlclient.jar</p> </li> 
-     <li><p>activation.jar</p> </li> 
-     <li><p>axis.jar</p> </li> 
-     <li><p>commons-codec-1.3.jar</p> </li> 
-     <li><p>commons-collections-3.1.jar</p> </li> 
-     <li><p>commons-discovery.jar</p> </li> 
-     <li><p>commons-logging.jar</p> </li> 
-     <li><p>dom3-xml-apis-2.5.0.jar</p> </li> 
-     <li><p>jai_imageio.jar</p> </li> 
-     <li><p>jaxen-1.1-beta-9.jar</p> </li> 
-     <li><p>jaxrpc.jar</p> </li> 
-     <li><p>log4j.jar</p> </li> 
-     <li><p>mail.jar</p> </li> 
-     <li><p>saj.jar</p> </li> 
-     <li><p>wsdl4j.jar</p> </li> 
-     <li><p>xalan.jar</p> </li> 
-     <li><p>xbean.jar</p> </li> 
-     <li><p>xercesImpl.jar</p> </li> 
-     <li><p>adobe-forms-client.jar</p> </li> 
-     <li><p>adobe-reader-extensions-client.jar</p> </li> 
-     <li><p>adobe-signatures-client.jar</p> </li> 
-    </ul> </td> 
+<table>
+ <thead>
+  <tr>
+   <th><p>서비스</p> </th>
+   <th><p>호출 모드</p> </th>
+   <th><p>J2EE 애플리케이션 서버</p> </th>
+   <th><p>필수 JAR 파일</p> </th>
+  </tr>
+ &lt;/heads align="left"&gt;
+ <tbody>
+  <tr>
+   <td><p>양식 서비스</p> </td>
+   <td><p>EJB</p> </td>
+   <td><p>JBoss</p> </td>
+   <td>
+    <ul>
+     <li><p>adobe-livecycle-client.jar</p> </li>
+     <li><p>adobe-usermanager-client.jar</p> </li>
+    </ul>
+    <ul>
+     <li>jboss-client.jar</li>
+    </ul>
+    <ul>
+     <li>adobe-forms-client.jar<br /> </li>
+     <li>commons-httpclient-3.1.jar</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p>양식 서비스</p> <p>Acrobat Reader DC 확장 서비스</p> <p>서명 서비스</p> </td>
+   <td><p>EJB</p> </td>
+   <td><p>JBoss</p> </td>
+   <td>
+    <ul>
+     <li><p>adobe-livecycle-client.jar</p> </li>
+     <li><p>adobe-usermanager-client.jar</p> </li>
+    </ul>
+    <ul>
+     <li>jboss-client.jar<br /> </li>
+     <li>commons-httpclient-3.1.jar</li>
+    </ul>
+    <ul>
+     <li><p>adobe-forms-client.jar</p> </li>
+     <li><p>adobe-reader-extensions-client.jar</p> </li>
+     <li><p>adobe-signatures-client.jar</p> </li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p>양식 서비스</p> </td>
+   <td><p>SOAP</p> </td>
+   <td><p>WebLogic</p> </td>
+   <td>
+    <ul>
+     <li><p>adobe-livecycle-client.jar</p> </li>
+     <li><p>adobe-usermanager-client.jar</p> </li>
+     <li><p>wlclient.jar</p> </li>
+     <li><p>activation.jar</p> </li>
+     <li><p>axis.jar</p> </li>
+     <li><p>commons-codec-1.3.jar</p> </li>
+     <li><p>commons-collections-3.1.jar</p> </li>
+     <li><p>commons-discovery.jar</p> </li>
+     <li><p>commons-logging.jar</p> </li>
+     <li><p>dom3-xml-apis-2.5.0.jar</p> </li>
+     <li><p>jai_imageio.jar</p> </li>
+     <li><p>jaxen-1.1-beta-9.jar</p> </li>
+     <li><p>jaxrpc.jar</p> </li>
+     <li><p>log4j.jar</p> </li>
+     <li><p>mail.jar</p> </li>
+     <li><p>saaj.jar</p> </li>
+     <li><p>wsdl4j.jar</p> </li>
+     <li><p>xalan.jar</p> </li>
+     <li><p>xbean.jar</p> </li>
+     <li><p>xercesImpl.jar</p> </li>
+     <li><p>adobe-forms-client.jar</p> </li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p>양식 서비스</p> <p>Acrobat Reader DC 확장 서비스</p> <p>서명 서비스</p> </td>
+   <td><p>SOAP</p> </td>
+   <td><p>WebLogic</p> </td>
+   <td>
+    <ul>
+     <li><p>adobe-livecycle-client.jar</p> </li>
+     <li><p>adobe-usermanager-client.jar</p> </li>
+     <li><p>wlclient.jar</p> </li>
+     <li><p>activation.jar</p> </li>
+     <li><p>axis.jar</p> </li>
+     <li><p>commons-codec-1.3.jar</p> </li>
+     <li><p>commons-collections-3.1.jar</p> </li>
+     <li><p>commons-discovery.jar</p> </li>
+     <li><p>commons-logging.jar</p> </li>
+     <li><p>dom3-xml-apis-2.5.0.jar</p> </li>
+     <li><p>jai_imageio.jar</p> </li>
+     <li><p>jaxen-1.1-beta-9.jar</p> </li>
+     <li><p>jaxrpc.jar</p> </li>
+     <li><p>log4j.jar</p> </li>
+     <li><p>mail.jar</p> </li>
+     <li><p>saaj.jar</p> </li>
+     <li><p>wsdl4j.jar</p> </li>
+     <li><p>xalan.jar</p> </li>
+     <li><p>xbean.jar</p> </li>
+     <li><p>xercesImpl.jar</p> </li>
+     <li><p>adobe-forms-client.jar</p> </li>
+     <li><p>adobe-reader-extensions-client.jar</p> </li>
+     <li><p>adobe-signatures-client.jar</p> </li>
+    </ul> </td>
   </tr> xmp-uti
- </tbody> 
+ </tbody>
 </table>
 
 ### JAR 파일 업그레이드 {#upgrading-jar-files}
@@ -403,7 +405,7 @@ LiveCycle에서 AEM Forms로 업그레이드하는 경우 Java 프로젝트의 �
 
 AEM Forms로 업그레이드하는 경우 Rights Management 서비스를 호출하는 Java 응용 프로그램을 사용하려면 다음 JAR 파일의 AEM Forms 버전을 포함합니다.
 
-* adobe-rights-management-client.jar
+* adobe-rightsmanagement-client.jar
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 
@@ -489,11 +491,11 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
 다음 Java 코드 예제에서는 연결 속성을 설정하여 JBoss에 배포된 AEM Forms를 호출하고 EJB 연결 모드를 사용합니다.
 
 ```java
- Properties ConnectionProps = new Properties(); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "https://<hostname>:8080"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);           
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator"); 
+ Properties ConnectionProps = new Properties();
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "https://<hostname>:8080");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD, "password");
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DOCUMENT_HTTP_ENDPOINT,"https://<hostname>:8080");
 ```
@@ -503,11 +505,11 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
 다음 Java 코드 예제에서는 연결 속성을 설정하여 WebLogic에 배포되고 EJB 연결 모드를 사용하는 AEM Forms를 호출합니다.
 
 ```as3
- Properties ConnectionProps = new Properties(); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "t3://localhost:7001"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);           
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "WebLogic"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator"); 
+ Properties ConnectionProps = new Properties();
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "t3://localhost:7001");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "WebLogic");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD, "password");
 ```
 
@@ -516,11 +518,11 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
 다음 Java 코드 예제에서는 연결 속성을 설정하여 WebSphere에 배포되고 EJB 연결 모드를 사용하는 AEM Forms를 호출합니다.
 
 ```as3
- Properties ConnectionProps = new Properties(); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "iiop://localhost:2809"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);           
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "WebSphere"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator"); 
+ Properties ConnectionProps = new Properties();
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "iiop://localhost:2809");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "WebSphere");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD, "password");
 ```
 
@@ -529,11 +531,11 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
 다음 Java 코드 예제에서는 SOAP 모드에서 연결 속성을 설정하여 JBoss에 배포된 AEM Forms를 호출합니다.
 
 ```as3
- Properties ConnectionProps = new Properties(); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "http://localhost:8080"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);           
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator"); 
+ Properties ConnectionProps = new Properties();
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "http://localhost:8080");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD, "password");
 ```
 
@@ -546,9 +548,9 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
 다음 Java 코드 예제에서는 JBoss Application Server에 배포된 AEM Forms를 호출하는 데 필요한 연결 속성을 설정하고 서비스 보안이 비활성화된 경우를 설정합니다.
 
 ```as3
- Properties ConnectionProps = new Properties(); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "jnp://localhost:1099"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);           
+ Properties ConnectionProps = new Properties();
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "jnp://localhost:1099");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
 ```
 
@@ -559,12 +561,12 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
 **사용자 지정 요청 제한 시간 제한이 있는 SOAP 연결 모드 설정**
 
 ```as3
- Properties ConnectionProps = new Properties(); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "http://localhost:8080"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);           
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD, "password"); 
+ Properties ConnectionProps = new Properties();
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "http://localhost:8080");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD, "password");
 ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, "1800000"); // Request timeout limit 30 Minutes
 ```
 
@@ -575,7 +577,7 @@ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, 
 이 `authenticate` `AuthResult` 메서드는 인증 결과를 포함하는 개체를 반환합니다. 생성자를 호출하여 `com.adobe.idp.Context` 객체를 만들 수 있습니다. 그런 다음 `com.adobe.idp.Context` 개체의 `initPrincipal` 메서드를 호출하고 다음 코드와 같이 `AuthResult` 개체를 전달합니다.
 
 ```as3
- Context myCtx = new Context();  
+ Context myCtx = new Context();
  myCtx.initPrincipal(authResult);
 ```
 
@@ -584,30 +586,30 @@ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, 
 다음 코드 예제에서는 `com.adobe.idp.Context` `EncryptionServiceClient` 개체를 만드는 데 사용되는 연결 설정 내에서 개체를 사용하는 방법을 보여 줍니다.
 
 ```as3
- //Authenticate a user and use the Context object within connection settings 
- // Authenticate the user 
- String username = "wblue"; 
- String password = "password"; 
- AuthResult authResult = authClient.authenticate(username, password.getBytes()); 
-  
- //Set a Content object that represents the authenticated user 
- //Use the Context object to invoke the Encryption service 
- Context myCtx = new Context();  
- myCtx.initPrincipal(authResult); 
-  
- //Set connection settings 
- Properties connectionProps = new Properties(); 
- connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "jnp://<server>:1099"); 
- connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL, ServiceClientFactoryProperties.DSC_EJB_PROTOCOL); 
- connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE); 
+ //Authenticate a user and use the Context object within connection settings
+ // Authenticate the user
+ String username = "wblue";
+ String password = "password";
+ AuthResult authResult = authClient.authenticate(username, password.getBytes());
+ 
+ //Set a Content object that represents the authenticated user
+ //Use the Context object to invoke the Encryption service
+ Context myCtx = new Context();
+ myCtx.initPrincipal(authResult);
+ 
+ //Set connection settings
+ Properties connectionProps = new Properties();
+ connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "jnp://<server>:1099");
+ connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL, ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);
+ connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE);
  connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DOCUMENT_HTTP_ENDPOINT,"jnp://<server>:1099");
 
-                          
- //Create a ServiceClientFactory object 
- ServiceClientFactory myFactory = ServiceClientFactory.createInstance(connectionProps); 
- myFactory.setContext(myCtx); 
-                          
- //Create an EncryptionServiceClient object 
+ 
+ //Create a ServiceClientFactory object
+ ServiceClientFactory myFactory = ServiceClientFactory.createInstance(connectionProps);
+ myFactory.setContext(myCtx);
+ 
+ //Create an EncryptionServiceClient object
  EncryptionServiceClient encryptClient  = new EncryptionServiceClient(myFactory);
 ```
 
@@ -647,8 +649,8 @@ SOAP 연결 모드를 사용하는 클라이언트 응용 프로그램은 클러
 다음 예는 WebSphere에 배포된 AEM Forms에 연결하는 데 사용되는 jndi.properties 파일의 컨텐츠를 보여줍니다.
 
 ```as3
- java.naming.factory.initial=com.ibm.websphere.naming. 
- WsnInitialContextFactory 
+ java.naming.factory.initial=com.ibm.websphere.naming.
+ WsnInitialContextFactory
  java.naming.provider.url=corbaloc::appserver1:9810,:appserver2:9810
 ```
 
@@ -657,7 +659,7 @@ SOAP 연결 모드를 사용하는 클라이언트 응용 프로그램은 클러
 다음 예는 WebLogic에 배포된 AEM Forms에 연결하는 데 사용되는 jndi.properties 파일의 컨텐츠를 보여줍니다.
 
 ```as3
- java.naming.factory.initial=weblogic.jndi.WLInitialContextFactory 
+ java.naming.factory.initial=weblogic.jndi.WLInitialContextFactory
  java.naming.provider.url=t3://appserver1:8001, appserver2:8001
 ```
 
@@ -666,8 +668,8 @@ SOAP 연결 모드를 사용하는 클라이언트 응용 프로그램은 클러
 다음 예는 JBoss에 배포된 AEM Forms에 연결하는 데 사용되는 jndi.properties 파일의 컨텐츠를 보여줍니다.
 
 ```as3
- java.naming.factory.initial= org.jnp.interfaces.NamingContextFactory 
- java.naming.provider.url= jnp://appserver1:1099, appserver2:1099, 
+ java.naming.factory.initial= org.jnp.interfaces.NamingContextFactory
+ java.naming.provider.url= jnp://appserver1:1099, appserver2:1099,
  appserver3:1099
 ```
 
@@ -706,39 +708,39 @@ AEM Forms 서비스에서는 PDF 문서를 `java.io.InputStream` 개체나 바�
 >개체를 사용하는 동안 WebLogic에서 메모리 누수를 방지하려면 문서 정보를 2048바이트 이하의 청크로 읽으십시오. `com.adobe.idp.Document` 예를 들어 다음 코드는 2048바이트 단위로 문서 정보를 읽습니다.
 
 ```as3
-        // Set up the chunk size to prevent a potential memory leak 
-        int buffSize = 2048; 
-  
-        // Determine the total number of bytes to read 
-        int docLength = (int) inDoc.length(); 
-        byte [] byteDoc = new byte[docLength]; 
-  
-        // Set up the reading position 
-        int pos = 0; 
-  
-        // Loop through the document information, 2048 bytes at a time 
-        while (docLength > 0) { 
-      // Read the next chunk of information 
-            int toRead = Math.min(buffSize, docLength); 
-            int bytesRead = inDoc.read(pos, byteDoc, pos, toRead); 
-  
-            // Handle the exception in case data retrieval failed 
-            if (bytesRead == -1) { 
-  
-                inDoc.doneReading(); 
-                inDoc.dispose(); 
-                throw new RuntimeException("Data retrieval failed!"); 
-  
-            } 
-  
-             // Update the reading position and number of bytes remaining 
-             pos += bytesRead; 
-             docLength -= bytesRead; 
-  
-        } 
-  
-        // The document information has been successfully read 
-        inDoc.doneReading(); 
+        // Set up the chunk size to prevent a potential memory leak
+        int buffSize = 2048;
+ 
+        // Determine the total number of bytes to read
+        int docLength = (int) inDoc.length();
+        byte [] byteDoc = new byte[docLength];
+ 
+        // Set up the reading position
+        int pos = 0;
+ 
+        // Loop through the document information, 2048 bytes at a time
+        while (docLength > 0) {
+      // Read the next chunk of information
+            int toRead = Math.min(buffSize, docLength);
+            int bytesRead = inDoc.read(pos, byteDoc, pos, toRead);
+ 
+            // Handle the exception in case data retrieval failed
+            if (bytesRead == -1) {
+ 
+                inDoc.doneReading();
+                inDoc.dispose();
+                throw new RuntimeException("Data retrieval failed!");
+ 
+            }
+ 
+             // Update the reading position and number of bytes remaining
+             pos += bytesRead;
+             docLength -= bytesRead;
+ 
+        }
+ 
+        // The document information has been successfully read
+        inDoc.doneReading();
         inDoc.dispose();
 ```
 
@@ -775,17 +777,17 @@ PDF 문서(또는 기타 문서 유형)를 입력 값으로 필요로 하는 서
 **다른 문서를 기반으로 하는 문서 객체 만들기**
 
 ```as3
- //Create a Document object based on a byte array 
- InputStream is = new FileInputStream("C:\\Map.pdf"); 
- int len = is.available(); 
- byte [] myByteArray = new byte[len]; 
- int i = 0; 
- while (i < len) { 
-       i += is.read(myByteArray, i, len); 
- } 
- Document myPDFDocument = new Document(myByteArray); 
-  
- //Create another Document object 
+ //Create a Document object based on a byte array
+ InputStream is = new FileInputStream("C:\\Map.pdf");
+ int len = is.available();
+ byte [] myByteArray = new byte[len];
+ int i = 0;
+ while (i < len) {
+       i += is.read(myByteArray, i, len);
+ }
+ Document myPDFDocument = new Document(myByteArray);
+ 
+ //Create another Document object
  Document anotherDocument = new Document(myPDFDocument);
 ```
 
@@ -800,8 +802,8 @@ PDF 문서(또는 기타 문서 유형)를 입력 값으로 필요로 하는 서
 **PDF 파일을 기반으로 하는 문서 개체 만들기**
 
 ```as3
- //Create a Document object based on the map.pdf source file 
- File mySourceMap = new File("C:\\map.pdf"); 
+ //Create a Document object based on the map.pdf source file
+ File mySourceMap = new File("C:\\map.pdf");
  Document myPDFDocument = new Document(mySourceMap,true);
 ```
 
@@ -812,8 +814,8 @@ PDF 문서(또는 기타 문서 유형)를 입력 값으로 필요로 하는 서
 **InputStream 객체를 기반으로 문서 만들기**
 
 ```as3
- //Create a Document object based on an InputStream object 
- InputStream is = new FileInputStream("C:\\Map.pdf"); 
+ //Create a Document object based on an InputStream object
+ InputStream is = new FileInputStream("C:\\Map.pdf");
  Document myPDFDocument = new Document(is);
 ```
 
@@ -832,10 +834,10 @@ c:/temp/input.pdf 파일은 서버 컴퓨터가 아닌 클라이언트 컴퓨터
 **URL 파섹**
 
 ```as3
- //Create a Document object based on a java.net.URL object 
- URL myURL = new URL("http", "localhost", 8080,"/WebApp/map.pdf");  
-          
- //Create another Document object 
+ //Create a Document object based on a java.net.URL object
+ URL myURL = new URL("http", "localhost", 8080,"/WebApp/map.pdf");
+ 
+ //Create another Document object
  Document myPDFDocument = new Document(myURL);
 ```
 
@@ -869,7 +871,7 @@ PDF 문서(또는 XML 데이터와 같은 기타 데이터 유형)를 출력 값
 **문서 개체의 내용을 파일에 복사**
 
 ```as3
- File outFile = new File("C:\\AnotherMap.pdf"); 
+ File outFile = new File("C:\\AnotherMap.pdf");
  myDocument.copyToFile (outFile);
 ```
 
@@ -883,47 +885,47 @@ PDF 문서(또는 XML 데이터와 같은 기타 데이터 유형)를 출력 값
 
 개체의 `com.adobe.idp.Document` `com.adobe.idp.Document` `getContentType` 메서드를 호출하여 개체의 MIME 형식을 결정합니다. 이 메서드는 `com.adobe.idp.Document` 객체의 컨텐츠 유형을 지정하는 문자열 값을 반환합니다. 다음 표에서는 AEM Forms가 반환하는 다양한 컨텐츠 유형에 대해 설명합니다.
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>MIME 유형</p></th> 
-   <th><p>설명</p></th> 
-  </tr> 
- </thead> 
+<table>
+ <thead>
+  <tr>
+   <th><p>MIME 유형</p></th>
+   <th><p>설명</p></th>
+  </tr>
+ </thead>
  <tbody>
-  <tr> 
-   <td><p><code>application/pdf</code></p></td> 
-   <td><p>PDF 문서</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>application/vnd.adobe.xdp+xml</code></p></td> 
-   <td><p>XDP(XML Data Packaging) - XFA(XML Forms Architecture) 양식을 내보내는 데 사용됩니다.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>text/xml</code></p></td> 
-   <td><p>책갈피, 첨부 파일 또는 기타 XML 문서</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>application/vnd.fdf</code></p></td> 
-   <td><p>Acrobat 양식을 내보내는 데 사용되는 FDF(Forms Data Format)</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>application/vnd.adobe.xfdf</code></p></td> 
-   <td><p>Acrobat 양식을 내보내는 데 사용되는 XFDF(XML Forms Data Format)</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>application/rdf+xml</code></p></td> 
-   <td><p>풍부한 데이터 포맷 및 XML</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>application/octet-stream</code></p></td> 
-   <td><p>일반 데이터 형식</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>NULL</code></p></td> 
-   <td><p>지정되지 않은 MIME 유형</p></td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><p><code>application/pdf</code></p></td>
+   <td><p>PDF 문서</p></td>
+  </tr>
+  <tr>
+   <td><p><code>application/vnd.adobe.xdp+xml</code></p></td>
+   <td><p>XDP(XML Data Packaging) - XFA(XML Forms Architecture) 양식을 내보내는 데 사용됩니다.</p></td>
+  </tr>
+  <tr>
+   <td><p><code>text/xml</code></p></td>
+   <td><p>책갈피, 첨부 파일 또는 기타 XML 문서</p></td>
+  </tr>
+  <tr>
+   <td><p><code>application/vnd.fdf</code></p></td>
+   <td><p>Acrobat 양식을 내보내는 데 사용되는 FDF(Forms Data Format)</p></td>
+  </tr>
+  <tr>
+   <td><p><code>application/vnd.adobe.xfdf</code></p></td>
+   <td><p>Acrobat 양식을 내보내는 데 사용되는 XFDF(XML Forms Data Format)</p></td>
+  </tr>
+  <tr>
+   <td><p><code>application/rdf+xml</code></p></td>
+   <td><p>풍부한 데이터 포맷 및 XML</p></td>
+  </tr>
+  <tr>
+   <td><p><code>application/octet-stream</code></p></td>
+   <td><p>일반 데이터 형식</p></td>
+  </tr>
+  <tr>
+   <td><p><code>NULL</code></p></td>
+   <td><p>지정되지 않은 MIME 유형</p></td>
+  </tr>
+ </tbody>
 </table>
 
 다음 코드 예제에서는 `com.adobe.idp.Document` 객체의 컨텐츠 유형을 결정합니다.
@@ -931,8 +933,8 @@ PDF 문서(또는 XML 데이터와 같은 기타 데이터 유형)를 출력 값
 **문서 객체의 컨텐츠 유형 결정**
 
 ```as3
- //Determine the content type of the Document object 
- String ct = myDocument.getContentType(); 
+ //Determine the content type of the Document object
+ String ct = myDocument.getContentType();
  System.out.println("The content type of the Document object is " +ct);
 ```
 
@@ -988,7 +990,7 @@ Java 클라이언트 라이브러리를 사용하고 다음 단계를 수행하�
 1. 저장소에 추가할 XDP 파일을 저장하는 `com.adobe.idp.Document` `java.io.FileInputStream` 객체를 전달하여 객체를 만듭니다. 자세한 내용은 [InputStream 객체를](invoking-aem-forms-using-java.md#creating-a-document-based-on-an-inputstream-object)기반으로 문서 만들기를 참조하십시오.
 1. 객체의 `com.adobe.idp.Document` 메서드를 호출하여 객체의 컨텐츠를 `ResourceContent` `ResourceContent` `setDataDocument` 객체에 추가합니다. 객체를 `com.adobe.idp.Document` 전달합니다.
 1. 객체의 `ResourceContent` 메서드를 호출하고 전달하여 리포지토리에 추가할 XDP 파일의 MIME 유형을 `setMimeType` `application/vnd.adobe.xdp+xml`설정합니다.
-1. 개체 &#39;s 메서드를 호출하고 `ResourceContent` 개체를 전달하여 개체의 내용을 `Resource` 개체에 `Resource` 추가합니다 `setContent` `ResourceContent` .
+1. 개체 &#39;s `ResourceContent` 메서드를 호출하고 `Resource` 개체를 전달하여 개체의 내용을 개체에 `Resource` 추가합니다 `setContent` `ResourceContent` .
 1. 객체의 &#39;s `Resource` `setDescription` 메서드를 호출하고 리소스의 설명을 나타내는 문자열 값을 전달하여 리소스에 대한 설명을 추가합니다.
 1. 객체의 `ResourceRepositoryClient` `writeResource` 메서드를 호출하고 다음 값을 전달하여 양식 디자인을 저장소에 추가합니다.
 
@@ -1030,13 +1032,13 @@ Java 호출 API 파섹 `MyApplication/EncryptDocument`
 1. 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다. 연결 [속성](invoking-aem-forms-using-java.md#setting-connection-properties)설정을 참조하십시오.
 1. 생성자를 사용하여 객체를 전달하여 `ServiceClient` 객체를 만듭니다 `ServiceClientFactory` . 객체를 `ServiceClient` 사용하면 서비스 작업을 호출할 수 있습니다. 호출 요청 찾기, 전달 및 라우팅과 같은 작업을 처리합니다.
 1. 생성자를 사용하여 `java.util.HashMap` 객체를 만듭니다.
-1. 각 입력 매개 변수에 대해 `java.util.HashMap` 개체의 `put` 메서드를 호출하여 긴 기간 프로세스를 전달합니다. 단기 프로세스에 유형 입력 매개 변수가 하나만 필요하므로 다음 예와 같이 `MyApplication/EncryptDocument` `Document``put` 메서드를 한 번만 호출하면 됩니다.
+1. 각 입력 매개 변수에 대한 `java.util.HashMap` 개체의 `put` 메서드를 호출하여 긴 기간 프로세스를 전달합니다. 단기 프로세스에 유형 입력 매개 변수가 하나만 필요하므로 다음 예와 같이 `MyApplication/EncryptDocument` `Document``put` 메서드를 한 번만 호출하면 됩니다.
 
    ```as3
-    //Create a Map object to store the parameter value for inDoc 
-    Map params = new HashMap(); 
-    InputStream inFile = new FileInputStream("C:\\Adobe\Loan.pdf"); 
-    Document inDoc = new Document(inFile); 
+    //Create a Map object to store the parameter value for inDoc
+    Map params = new HashMap();
+    InputStream inFile = new FileInputStream("C:\\Adobe\Loan.pdf");
+    Document inDoc = new Document(inFile);
     params.put("inDoc", inDoc);
    ```
 
@@ -1056,7 +1058,7 @@ Java 호출 API 파섹 `MyApplication/EncryptDocument`
 1. 객체의 `InvocationReponse` `getOutputParameter` 메서드를 호출하고 출력 매개 변수의 이름을 지정하는 문자열 값을 전달하여 프로세스의 반환 값을 검색합니다. 이 경우 `outDoc` ( `outDoc` 는 `MyApplication/EncryptDocument` 프로세스에 대한 출력 매개 변수의 이름)을 지정합니다. 다음 예와 같이 반환 값을 로 `Document`캐스팅합니다.
 
    ```as3
-    InvocationResponse response = myServiceClient.invoke(request); 
+    InvocationResponse response = myServiceClient.invoke(request);
     Document encryptDoc = (Document) response.getOutputParameter("outDoc");
    ```
 
