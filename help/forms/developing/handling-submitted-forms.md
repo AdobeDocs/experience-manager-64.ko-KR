@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 translation-type: tm+mt
-source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
 
 ---
 
@@ -28,27 +28,27 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 다음 표에서는 다이어그램의 단계에 대해 설명합니다.
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>단계</p></th> 
-   <th><p>설명</p></th> 
+<table>
+ <thead>
+  <tr>
+   <th><p>단계</p></th>
+   <th><p>설명</p></th>
   </tr>
- </thead> 
+ </thead>
  <tbody>
-  <tr> 
-   <td><p>1</p></td> 
-   <td><p>사용자가 대화형 양식을 채우고 양식의 제출 단추를 클릭합니다.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>2</p></td> 
-   <td><p>데이터는 Java 서블릿에 XML <code>HandleData</code> 데이터로 제출됩니다.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>3</p></td> 
-   <td><p>Java <code>HandleData</code> 서블릿에는 데이터를 검색할 애플리케이션 로직이 포함되어 있습니다.</p></td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><p>1</p></td>
+   <td><p>사용자가 대화형 양식을 채우고 양식의 제출 단추를 클릭합니다.</p></td>
+  </tr>
+  <tr>
+   <td><p>2</p></td>
+   <td><p>데이터는 Java 서블릿에 XML <code>HandleData</code> 데이터로 제출됩니다.</p></td>
+  </tr>
+  <tr>
+   <td><p>3</p></td>
+   <td><p>Java <code>HandleData</code> 서블릿에는 데이터를 검색할 애플리케이션 로직이 포함되어 있습니다.</p></td>
+  </tr>
+ </tbody>
 </table>
 
 ## 제출된 XML 데이터 처리 {#handling-submitted-xml-data}
@@ -75,31 +75,31 @@ Forms 서비스를 호출하는 웹 애플리케이션을 고려하십시오. Fo
 
 다음 표에서는 이 다이어그램의 단계에 대해 설명합니다.
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>단계</p></th> 
-   <th><p>설명</p></th> 
-  </tr> 
- </thead> 
+<table>
+ <thead>
+  <tr>
+   <th><p>단계</p></th>
+   <th><p>설명</p></th>
+  </tr>
+ </thead>
  <tbody>
-  <tr> 
-   <td><p>1</p></td> 
-   <td><p>웹 페이지에는 Forms 서비스를 호출하는 Java 서블릿에 액세스하는 링크가 들어 있습니다.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>2</p></td> 
-   <td><p>Forms 서비스는 대화형 PDF 양식을 클라이언트 웹 브라우저에 렌더링합니다.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>3</p></td> 
-   <td><p>사용자가 대화형 양식을 채우고 제출 단추를 클릭합니다. 양식은 Forms 서비스로 다시 PDF 데이터로 전송됩니다. 이 옵션은 Designer에서 설정합니다.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>4</p></td> 
-   <td><p>Forms 서비스는 PDF 데이터를 PDF 파일로 저장합니다. </p></td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><p>1</p></td>
+   <td><p>웹 페이지에는 Forms 서비스를 호출하는 Java 서블릿에 액세스하는 링크가 들어 있습니다.</p></td>
+  </tr>
+  <tr>
+   <td><p>2</p></td>
+   <td><p>Forms 서비스는 대화형 PDF 양식을 클라이언트 웹 브라우저에 렌더링합니다.</p></td>
+  </tr>
+  <tr>
+   <td><p>3</p></td>
+   <td><p>사용자가 대화형 양식을 채우고 제출 단추를 클릭합니다. 양식은 Forms 서비스로 다시 PDF 데이터로 전송됩니다. 이 옵션은 Designer에서 설정합니다.</p></td>
+  </tr>
+  <tr>
+   <td><p>4</p></td>
+   <td><p>Forms 서비스는 PDF 데이터를 PDF 파일로 저장합니다. </p></td>
+  </tr>
+ </tbody>
 </table>
 
 ## 제출된 URL UTF-16 데이터 처리 {#handling-submitted-url-utf-16-data}
@@ -152,15 +152,15 @@ Forms 서비스 클라이언트 API 작업을 프로그래밍 방식으로 수�
 
 Forms 서비스는 다음 값을 반환하여 데이터 처리가 완료되었는지 여부를 나타냅니다.
 
-* **** 0(제출):제출된 데이터를 처리할 준비가 되었습니다.
-* **** 1(계산):양식 서비스는 데이터에 대해 계산 작업을 수행했으며 결과를 사용자에게 다시 렌더링해야 합니다.
-* **** 2(유효성 확인):양식 서비스는 양식 데이터의 유효성을 검사했으며 결과를 사용자에게 다시 렌더링해야 합니다.
-* **** 3(다음):클라이언트 응용 프로그램에 작성해야 하는 결과로 현재 페이지가 변경되었습니다.
+* **0(제출):** 제출된 데이터를 처리할 준비가 되었습니다.
+* **1(계산):** 양식 서비스는 데이터에 대해 계산 작업을 수행했으며 결과를 사용자에게 다시 렌더링해야 합니다.
+* **2(유효성 확인):** 양식 서비스는 양식 데이터의 유효성을 검사했으며 결과를 사용자에게 다시 렌더링해야 합니다.
+* **3(다음):** 클라이언트 응용 프로그램에 작성해야 하는 결과로 현재 페이지가 변경되었습니다.
 * **4(이전**):클라이언트 응용 프로그램에 작성해야 하는 결과로 현재 페이지가 변경되었습니다.
 
 >[!NOTE]
 >
->계산 및 유효성 검사는 사용자에게 다시 렌더링해야 합니다. ( [양식 데이터]계산(/help/forms/developing/rendering-forms-rendering-forms-calculating-form-data-calculating-form-data-calculating-form-form.md#calculating-form-data)*참조)*
+>계산 및 유효성 검사는 사용자에게 다시 렌더링해야 합니다. (양식 [데이터 계산을 참조하십시오](/help/forms/developing/calculating-form-data.md#calculating-form-data).)
 
 **양식 제출 시 첨부 파일이 포함되어 있는지 확인**
 
