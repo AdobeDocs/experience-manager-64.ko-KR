@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 730a08c0c02b5d44b5483c733252e0e76236061a
+source-git-commit: b46378657b8a173986a669beaa56468886b23266
 
 ---
 
@@ -99,6 +99,8 @@ AEM 6.4.8.0은 2018년 4월 AEM 6.4의 공식 출시 이후 릴리스된 새로�
 * Adobe **Experience Manager** **클라우드 서비스에서 Adobe Analytics를** 구성하는 동안 보고 소스를 **** 선택하면 회사 및 Reporting Suite 드롭다운 메뉴가 숨겨집니다(NPR-31729).
 
 * Adobe Campaign에 연결된 뉴스레터의 언어 사본이 만들어지면 Adobe Campaign 속성이 정리되지 않지만, Adobe Campaign에 연결된 뉴스레터가 복사되거나 붙여넣을 때 정리됩니다(NPR-32540).
+
+* ReportSuitesServlet은 SSRF에 취약합니다(NPR-32161).
 
 ### 슬링 {#sling-6480}
 
