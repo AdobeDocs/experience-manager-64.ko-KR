@@ -2,9 +2,9 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Assets User Guide
+user-guide-title: AEM 6.4 자산 사용 안내서
 translation-type: tm+mt
-source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
+source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
    + [AEM 자산에서 Adobe Stock 에셋 사용](aem-assets-adobe-stock.md)
    + [폴더 자산 및 컬렉션 검토](bulk-approval.md)
    + [타임라인의 활동 스트림](activity-stream.md)
-   + [워크플로우를 자산에 적용](assets-workflow.md)
+   + [자산 처리](assets-workflow.md)
    + [이미지 맵 추가](image-maps.md)
    + [MSM을 사용하여 에셋 재사용](reuse-assets-using-msm.md)
 + Dynamic Media{#dynamic}
@@ -64,7 +64,7 @@ source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
    + [URL을 웹 애플리케이션에 연결](linking-urls-to-yourwebapplication.md)
    + [규칙 세트를 사용하여 URL 변환](using-rulesets-to-transform-urls.md)
    + [Dynamic Media 자산 게시](publishing-dynamicmedia-assets.md)
-   + [CDN 캐시 컨텐츠 무효화](invalidate-cdn-cached-content.md)
+   + [CDN 캐시 콘텐츠 무효화](invalidate-cdn-cached-content.md)
    + [벌크 에셋 마이그레이션을 위한 Feature Pack 18912 설치](bulk-ingest-migrate.md)
    + [선택기를 사용한 작업](working-with-selectors.md)
 + 자산 확장 {#extending}
@@ -123,14 +123,14 @@ source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
    + [브랜드 포털에 자산 게시](brand-portal-publish-assets.md)
    + [브랜드 포털에 컬렉션 게시](brand-portal-publish-collection.md)
    + [브랜드 포털에 폴더 게시](brand-portal-publish-folder.md)
-+ 컨텐츠 조각 {#fragments}
-   + [컨텐츠 조각을 사용한 작업](content-fragments.md)
-   + [컨텐츠 조각 관리](content-fragments-managing.md)
-   + [컨텐츠 조각 모델](content-fragments-models.md)
-   + [변형 - 조각 컨텐츠 작성](content-fragments-variations.md)
-   + [컨텐츠 조각 관련 컨텐츠](content-fragments-assoc-content.md)
++ 콘텐츠 조각 {#fragments}
+   + [콘텐츠 조각을 사용한 작업](content-fragments.md)
+   + [콘텐츠 조각 관리](content-fragments-managing.md)
+   + [콘텐츠 조각 모델](content-fragments-models.md)
+   + [변형 - 조각 콘텐츠 작성](content-fragments-variations.md)
+   + [콘텐츠 조각 관련 콘텐츠](content-fragments-assoc-content.md)
    + [메타데이터 - 조각 속성](content-fragments-metadata.md)
-   + [컨텐츠 조각 - 삭제 고려 사항](content-fragments-delete.md)
+   + [콘텐츠 조각 - 삭제 고려 사항](content-fragments-delete.md)
    + [컨텐츠 조각 - 마크다운](content-fragments-markdown.md)
    + [컨텐츠 조각에 대한 번역 프로젝트 만들기](creating-translation-projects-for-content-fragments.md)
 + Manage Assets {#managing}
