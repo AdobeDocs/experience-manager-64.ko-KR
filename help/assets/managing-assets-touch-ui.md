@@ -4,7 +4,7 @@ description: AEM 자산의 터치에 적합한 사용자 인터페이스를 사�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 174c100a55bd8b2f4d33b07683e359d77f13983d
+source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
 
 ---
 
@@ -877,25 +877,23 @@ TXT 파일을 편집하려면 Configuration Manager **[!UICONTROL 에서 Day CQ 
 
 **자산 버전**&#x200B;관리를 만들려면
 
-1. 버전을 만들 자산의 위치로 이동한 후 자산을 눌러 자산 페이지를 엽니다.
+1. 버전을 만들 자산의 위치로 이동한 다음 클릭하여 자산 페이지를 엽니다.
 
-1. 전역 탐색 **[!UICONTROL 아이콘을]** 누르고 메뉴에서 **[!UICONTROL 타임라인을]** 선택합니다.
+1. 전역 **[!UICONTROL 탐색]** 아이콘을 클릭하고 메뉴에서 **[!UICONTROL 타임라인을]** 선택합니다.
 
    ![타임라인-1](assets/timeline-1.png)
 
-1. 하단에 **[!UICONTROL 있는 작업]** (화살표) 아이콘을 눌러 자산에서 수행할 수 있는 사용 가능한 작업을 봅니다.
+1. 맨 **[!UICONTROL 아래에]** 있는 작업을 클릭하여 자산에서 수행할 수 있는 사용 가능한 작업을 봅니다.
 
-   ![chlimage_1-45](assets/chlimage_1-45.png)
-
-1. 다른 **[!UICONTROL 버전으로 저장을]** 눌러 자산의 버전을 만듭니다.
+1. 버전으로 **[!UICONTROL 저장을]** 클릭하여 자산의 버전을 만듭니다.
 
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
-1. 레이블과 주석을 추가한 다음 만들기를 **[!UICONTROL 눌러]** 버전을 만듭니다. 또는 취소를 **[!UICONTROL 눌러]** 작업을 종료합니다.
+1. 레이블과 주석을 추가한 다음 만들기를 클릭하여 **[!UICONTROL 버전을]** 만듭니다. 또는 취소를 **[!UICONTROL 눌러]** 작업을 종료합니다.
 
    ![chlimage_1-47](assets/chlimage_1-47.png)
 
-1. 새 버전을 보려면 자산 세부 사항 **[!UICONTROL 페이지]** 또는 자산 UI에서 타임라인에서 모두 표시 목록을 열고 버전을 **[!UICONTROL 선택합니다]**.
+1. 새 버전을 보려면, 자산 **[!UICONTROL 세부 사항]** 페이지 또는 [!DNL Assets] 인터페이스에서 타임라인에서 모두 표시 목록을 열고 버전을 **[!UICONTROL 선택합니다]**.
 
    ![versions_option](assets/versions_option.png)
 
@@ -911,9 +909,9 @@ TXT 파일을 편집하려면 Configuration Manager **[!UICONTROL 에서 Day CQ 
 
    ![save_version](assets/save_version.png)
 
-1. 버전에 대한 미리 보기를 생성하려면 버전 미리 보기를 **[!UICONTROL 누릅니다]**.
+1. 버전에 대한 미리 보기를 생성하려면 버전 미리 보기를 **[!UICONTROL 클릭합니다]**.
 1. 자산 UI에서 이 버전을 표시하려면 이 버전으로 **[!UICONTROL 되돌리기를 선택합니다]**.
-1. 두 버전 간에 비교하려면 자산의 자산 페이지로 이동하여 현재 버전과 비교할 버전을 누릅니다.
+1. 두 버전 간에 비교하려면 자산의 자산 페이지로 이동하여 현재 버전과 비교할 버전을 클릭합니다.
 
    ![현재 버전과 비교할 자산의 이전 버전 선택](assets/select_version_tocompare.png)
 
@@ -923,30 +921,7 @@ TXT 파일을 편집하려면 Configuration Manager **[!UICONTROL 에서 Day CQ 
 
 ### 자산에서 워크플로우 시작 {#starting-a-workflow-on-an-asset}
 
-1. 워크플로우를 시작할 자산의 위치로 이동하고 자산을 눌러 자산 페이지를 엽니다.
-1. 전역 **[!UICONTROL 탐색]** 아이콘을 누르고 메뉴에서 **[!UICONTROL 타임라인을]** 선택하여 타임라인을 표시합니다.
-
-   ![타임라인-2](assets/timeline-2.png)
-
-1. 하단에 **[!UICONTROL 있는 작업]** (화살표) 아이콘을 눌러 자산에 사용할 수 있는 작업 목록을 엽니다.
-
-   ![chlimage_1-48](assets/chlimage_1-48.png)
-
-1. 목록에서 **[!UICONTROL 워크플로우]** 시작을 누릅니다.
-
-   ![chlimage_1-49](assets/chlimage_1-49.png)
-
-1. 워크플로우 **[!UICONTROL 시작]** 대화 상자의 목록에서 워크플로우 모델을 선택합니다.
-
-   ![chlimage_1-50](assets/chlimage_1-50.png)
-
-1. (선택 사항) 워크플로우 인스턴스를 참조하는 데 사용할 수 있는 워크플로우의 제목을 지정합니다.
-
-   ![chlimage_1-51](assets/chlimage_1-51.png)
-
-1. 시작을 **[!UICONTROL 누른]**&#x200B;다음 **[!UICONTROL 대화]** 상자에서 진행을 눌러 확인합니다. 각 워크플로우 단계는 타임라인에 이벤트로 표시됩니다.
-
-   ![chlimage_1-52](assets/chlimage_1-52.png)
+AEM 자산에 [워크플로우](/help/assets/assets-workflow.md#apply-a-workflow-to-an-aem-asset)적용을 참조하십시오.
 
 ## 컬렉션 정보 {#collections}
 
