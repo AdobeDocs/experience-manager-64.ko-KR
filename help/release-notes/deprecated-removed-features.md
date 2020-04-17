@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: 3316dbc8ef268be2b305d22da9003ae40414b4e1
+source-git-commit: 08cf51186b7e9ad62b92a266e95022d7d7a34a9b
 
 ---
 
@@ -144,7 +144,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
    <td>Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다.<br><br>이제 <a href="https://docs.adobe.com/content/help/ko-KR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">Adobe Analytics에서 제공하는 ActivityMap</a> 플러그인을 사용해야 합니다.</td> 
   </tr>
   <tr>
-   <td>구성 요소</td> 
+   <td>구성 요소-양식</td> 
    <td>양식 Captcha<br /> (foundation/components/form/captcha)</td> 
    <td>Google별 ReCaptcha 구성 요소 대신 사용</td> 
   </tr>
@@ -185,11 +185,6 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
   </tr>
   <tr>
    <td>양식</td> 
-   <td>적응형 양식의 기본 AEM Captcha 서비스에 대한 지원이 제거되었습니다. </td> 
-   <td>Google에서 ReCaptcha를 대신 사용하십시오.</td> 
-  </tr>
-  <tr>
-   <td>양식</td> 
    <td>문서 조각 내의 이미지에 대한 지원이 제거되었습니다. </td> 
    <td>인터랙티브한 커뮤니케이션은 인쇄 및 웹 채널에서 직접 이미지를 사용할 수 있는 기능을 제공합니다.<br /> </td> 
   </tr>
@@ -222,11 +217,6 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
     <td>양식</td> 
     <td>JEE 특정 랜딩 페이지에서 AEM Forms를 제거했습니다.</td> 
     <td>JEE의 AEM Forms 랜딩 페이지가 AEM 랜딩 페이지(/aem/start.html)으로 대체되었습니다. </td>  
-  </tr>
-   <tr>
-   <td>양식</td> 
-   <td>기본 Captcha 지원을 제거했습니다.</td> 
-   <td>Google의 reCAPTCHA 서비스 사용</td> 
   </tr>
    <tr>
    <td>양식</td> 
