@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: abdcde27b33f290a4288b09c39bffb0d4f1918a1
 
 ---
 
@@ -30,7 +30,7 @@ Adobe Sign을 AEM Forms와 통합하려면 다음이 필요합니다.
 
 * 유효한 [Adobe Sign 개발자 계정](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html).
 * SSL [이 활성화된](/help/sites-administering/ssl-by-default.md) AEM Forms 서버
-* Adobe [Sign API 애플리케이션](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobeio/adobeio-documentation/master/sign/gstarted/create_app.md).
+* Adobe [Sign API 애플리케이션](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 * Adobe Sign API 응용 프로그램의 자격 증명(클라이언트 ID 및 클라이언트 암호)
 
 ## AEM Forms로 Adobe Sign 구성 {#configure-adobe-sign-with-aem-forms}
@@ -84,7 +84,7 @@ Adobe Sign을 AEM Forms와 통합하려면 다음이 필요합니다.
 
 1. AEM 웹 콘솔을 엽니다. URL은 `https://[server]:[port]/system/console/configMgr`
 1. Forms **[!UICONTROL Common Configuration Service를 엽니다]**.
-1. 허용 **[!UICONTROL 필드에서]** 모든 사용자 **[!UICONTROL - 익명 사용자 또는 로그인한 모든 사용자가]** 첨부 파일을 미리 보고 양식을 확인 및 서명할 수 있으며 저장을 **[!UICONTROL 클릭합니다]**.  작성자 인스턴스가 Adobe Sign을 사용하도록 구성되어 있습니다.
+1. 허용 **[!UICONTROL 필드에서]** 모든 사용자 **[!UICONTROL - 익명 사용자 또는 로그인한 모든 사용자가]** 첨부 파일을 미리 보고 양식을 확인 및 서명할 수 있으며 저장을 **[!UICONTROL 클릭합니다]**. 작성자 인스턴스가 Adobe Sign을 사용하도록 구성되어 있습니다.
 1. 게시 [인스턴스에서](/help/sites-deploying/deploy.md) 로그인하고 다음 URL을 엽니다.
 
    `https://<server-name>:<port>/libs/granite/configurations/content/view.html/conf`
