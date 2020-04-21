@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: 26e860cd513d70d748f872e2ce445a042d075bc6
+source-git-commit: ef00b3d307e01807f90bad8c8fde278204470bc3
 
 ---
 
@@ -38,7 +38,7 @@ Dynamic Media 또는 대화형 미디어 구성 요소를 페이지에 추가하
 1. AEM에서 다이내믹 미디어 또는 대화형 미디어 구성 요소를 추가할 페이지를 엽니다.
 1. 왼쪽 창에서 구성 요소 **[!UICONTROL 아이콘]** 및 Dynamic Media용 필터를 **[!UICONTROL 클릭합니다]**. 사용할 수 있는 Dynamic Media 구성 요소가 없는 경우 Dynamic Media 구성 요소를 활성화해야 합니다. 자세한 [내용은 페이지 템플릿](/help/sites-authoring/templates.md#editing-templates-template-authors) 편집을 참조하십시오.
 
-   ![chlimage_1-538](assets/chlimage_1-537.png)
+   ![chlimage_1-537](assets/chlimage_1-537.png)
 
 1. Dynamic **[!UICONTROL Media]** 또는 **[!UICONTROL 대화형 미디어]** 구성 요소를 원하는 위치의 페이지로 드래그합니다.
 1. 구성 요소 주위의 파란색 상자를 클릭한 다음 구성( **[!UICONTROL 스패너]** ) 아이콘을 누릅니다.
@@ -60,7 +60,7 @@ Dynamic Media 또는 대화형 미디어 구성 요소를 페이지에 추가하
 
 ## Dynamic Media components {#dynamic-media-components}
 
-Dynamic Media 및 대화형 미디어는 구성 요소의 [!UICONTROL Dynamic Media] 탭에서 사용할 수 [!UICONTROL 있습니다]. 대화형 비디오, 대화형 이미지 또는 회전 메뉴 세트와 같은 대화형 자산에 대화형 미디어] 구성 요소를 사용합니다. 기타 모든 다이내믹 미디어 구성 요소의 경우에는 Dynamic Media 구성 요소를 사용하십시오.
+Dynamic Media 및 대화형 미디어는 구성 요소의 [!UICONTROL Dynamic Media] 탭에서 사용할 수 [!UICONTROL 있습니다]. 대화형 비디오, 대화형 이미지 또는 회전 메뉴 세트와 같은 모든 대화형 에셋에 대화형 미디어] 구성 요소를 사용합니다. 기타 모든 다이내믹 미디어 구성 요소의 경우에는 Dynamic Media 구성 요소를 사용하십시오.
 
 >[!NOTE]
 >
@@ -94,7 +94,7 @@ Dynamic Media 구성 요소를 사용하면 이미지 세트, 스핀 세트 및 
 
 구성 요소에서 바로 뷰어 사전 설정, 이미지 사전 설정 또는 이미지 형식을 구성할 수도 있습니다. 이미지가 응답하도록 하기 위해 중단점을 설정하거나 응답형 이미지 사전 설정을 적용할 수 있습니다.
 
-You can edit the following Dynamic Media Settings by clicking the **[!UICONTROL Edit]** icon in the component and then **[!UICONTROL Dynamic Media Settings]**.
+You must edit the following Dynamic Media Settings by clicking the **[!UICONTROL Edit]** icon in the component and then **[!UICONTROL Dynamic Media Settings]**.
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
@@ -133,7 +133,7 @@ You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** i
 
 ![chlimage_1-540](assets/chlimage_1-540.png)
 
-You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit]** in the component.
+You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit]** in the component.
 
 >[!NOTE]
 >
@@ -203,8 +203,7 @@ You can edit the following **[!UICONTROL Advanced]** settings by clicking **[!UI
 
 * **[!UICONTROL 제목비디오]**&#x200B;제목을 변경합니다.
 
-* **[!UICONTROL Width]** and **[!UICONTROL Height]**
-Enter value in pixels if you want the video to be a fixed size. 이 값을 공백으로 두면 적응형으로 설정됩니다.
+* **[!UICONTROL 폭]** 및 **[!UICONTROL 높이]**&#x200B;비디오의 크기를 고정하려면 값을 픽셀 단위로 입력합니다. 이 값을 공백으로 두면 적응형으로 설정됩니다.
 
 구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 클릭하여 다음 **[!UICONTROL 장바구니에 추가]** 설정을 편집할 수 있습니다.
 
