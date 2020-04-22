@@ -3,7 +3,7 @@ title: 리치 텍스트 편집기 구성
 description: AEM 리치 텍스트 편집기를 구성하는 방법에 대해 학습합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
 
 ---
 
@@ -12,9 +12,7 @@ source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 RTE(Rich Text Editor)는 작성자가 텍스트 컨텐츠를 편집할 수 있는 다양한 기능을 제공합니다. 아이콘, 선택 상자, 도구 모음 및 메뉴는 WYSIWYG 텍스트 편집 환경을 위해 제공됩니다.
 
-작성 구성 요소에서 사용 가능한 기능을 활성화, 비활성화 및 확장하도록 RTE를 구성할 수 있습니다. 작성을 위해 RTE 기능을 사용하는 방법에 대한 자세한 내용은 [작성을](/help/sites-authoring/rich-text-editor.md)위해 리치 텍스트 편집기 사용을 참조하십시오.
-
-다음 워크플로우에서는 RTE 구성 작업을 완료하는 권장 순서를 보여줍니다.
+작성을 위해 RTE 기능을 사용하는 방법에 대한 자세한 내용은 [작성을](/help/sites-authoring/rich-text-editor.md)위해 리치 텍스트 편집기 사용을 참조하십시오. 작성 구성 요소에서 사용 가능한 기능을 활성화, 비활성화 및 확장하도록 RTE를 구성할 수 있습니다. 다음 워크플로우에서는 Experience Manager에서 RTE 구성 작업을 완료해야 하는 권장 순서를 보여줍니다.
 
 ![리치 텍스트 편집기를 구성하는 일반적인 워크플로우](assets/rte_workflow_v1.png)
 
@@ -44,45 +42,12 @@ RTE(Rich Text Editor)는 작성자가 텍스트 컨텐츠를 편집할 수 있�
 
 작성자는 다양한 구성 요소 모드를 사용하여 AEM에서 텍스트 컨텐츠를 만들고 편집할 수 있습니다. 컨텐츠 작성 및 서식 지정을 위한 툴바 옵션과 다양한 편집 모드에서 RTE 지원 구성 요소의 사용자 환경은 RTE 구성에 따라 다릅니다.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>편집 모드</th> 
-   <th>편집 영역</th> 
-   <th>권장 기능 활성화<br /> </th> 
-   <th>터치 UI</th> 
-   <th>클래식 UI</th> 
-  </tr> 
-  <tr> 
-   <td>인라인</td> 
-   <td>간단한 편집을 위한 즉석 편집대화 상자를 열지 않고 서식 지정</td> 
-   <td>최소 RTE 기능</td> 
-   <td>Y</td> 
-   <td>Y</td> 
-  </tr> 
-  <tr> 
-   <td>RTE 전체 화면</td> 
-   <td>전체 페이지<br /> </td> 
-   <td>모든 필수 RTE 기능<br /> </td> 
-   <td>Y</td> 
-   <td>N<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>대화 상자</td> 
-   <td>대화 상자는 페이지 컨텐츠 맨 위에 있지만 전체 페이지를 포함하지 않습니다.</td> 
-   <td>클래식 UI의 모든 필수 RTE 기능;터치 UI의 기능을 동적으로 사용<br /> </td> 
-   <td>Y</td> 
-   <td>Y</td> 
-  </tr> 
-  <tr> 
-   <td>대화 상자 전체 화면<br /> </td> 
-   <td>전체 화면 모드와 동일;RTE와 함께 대화 상자의 필드를 포함합니다.<br /> </td> 
-   <td>모든 필수 RTE 기능</td> 
-   <td>Y</td> 
-   <td>N</td> 
-  </tr> 
- </tbody> 
-</table>
+| 편집 모드 | 편집 영역 | 권장 기능 활성화 | 터치 UI | 클래식 UI |
+|--- |--- |--- |--- |--- |
+| 인라인 | 간단한 편집을 위한 즉석 편집대화 상자를 열지 않고 서식 지정 | 최소 RTE 기능 | Y | Y |
+| RTE 전체 화면 | 전체 페이지 | 모든 필수 RTE 기능 | Y | N |
+| 대화 상자 | 대화 상자는 페이지 컨텐츠 맨 위에 있지만 전체 페이지를 포함하지 않습니다. | 클래식 UI의 모든 필수 RTE 기능;터치 UI의 기능을 동적으로 사용 | Y | Y |
+| 대화 상자 전체 화면 | 전체 화면 모드와 동일;RTE와 함께 대화 상자의 필드를 포함합니다. | 모든 필수 RTE 기능 | Y | N |
 
 >[!NOTE]
 >
@@ -139,90 +104,23 @@ AEM 구성 요소는 페이지 컨텐츠를 숨기고 사용 가능한 화면을
 * 속성에 허용된 `features` 값.
 * 플러그인에서 제공하는 기능에 대한 설명입니다.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><p>플러그인 ID<br /><br /> </p> </td> 
-   <td><p>features<br /> <br /> </p> </td> 
-   <td><p>설명<br /> <br /> </p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>편집</p> </td> 
-   <td><p>cut<br /> copy<br /> paste-default<br /> paste-plaintext<br /> paste-wordhtml</p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles" target="_blank">잘라내기, 복사 및 3가지 붙여넣기 모드</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin">핀드플레이스</a></p> </td> 
-   <td><p>find<br /> replace</p> </td> 
-   <td><p>찾기 및 바꾸기</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin">format</a></p> </td> 
-   <td><p>굵은<br /> 기울임꼴<br /> 밑줄</p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles" target="_blank">기본 텍스트 서식</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin">이미지</a></p> </td> 
-   <td><p>이미지</p> </td> 
-   <td><p>정렬 및 대체 텍스트와 같은 일부 이미지 속성을 설정합니다. Content Finder에서 이미지를 드래그 앤 드롭하기 위한 기본 지원은 이 플러그인을 사용하지 않아도 작동합니다.</p> <p><em>참고</em>:작성 동작은 브라우저에 따라 다를 수 있습니다. 예를 들어 Mozilla Firefox는 크기 조정 기능을 제공하지만 Google Chrome은 크기 조정 기능을 제공하지 않습니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin">keys</a></p> </td> 
-   <td><p> </p> </td> 
-   <td><p>이 값을 정의하려면 <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize" target="_blank">탭 크기를</a>참조하십시오.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin">justify</a></p> </td> 
-   <td><p>justfyleft<br /> justfycenter<br /> justyfyright</p> </td> 
-   <td><p>단락 정렬을 참조하십시오.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin">링크</a></p> </td> 
-   <td><p>modifylink<br /> 연결 해제<br /> 앵커</p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles" target="_blank">하이퍼링크 및 앵커</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin">lists</a></p> </td> 
-   <td><p>순서<br /> 없는<br /> 들여쓰기 내어쓰기<br /> 내어쓰기</p> </td> 
-   <td><p>이 플러그인은 <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin" target="_blank">들여쓰기 및 목록을</a>모두 제어합니다.중첩된 목록 포함</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin">misctools</a></p> </td> 
-   <td><p>specialchars<br /> sourceedit</p> </td> 
-   <td>기타 도구를 사용하여 작성자는 <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar" target="_blank">특수 문자를</a> 입력하거나 HTML 소스를 편집할 수 있습니다. 또한 목록을 정의하려는 경우 전체 <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar" target="_blank">범위의 특수 문자를</a> 추가할 수 있습니다.</td> 
-  </tr> 
-  <tr> 
-   <td><p>Paraformat</p> </td> 
-   <td><p>paraformat</p> </td> 
-   <td>기본 단락 형식은 단락, 머리글 1, 머리글 2 및 머리글 3(&lt;p&gt;, &lt;h1&gt;, &lt;h2&gt; 및 &lt;h3&gt;)입니다. 단락 형식을 <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats" target="_blank">추가하거나</a> 목록을 확장할 수 있습니다.</td> 
-  </tr> 
-  <tr> 
-   <td><p>spellcheck</p> </td> 
-   <td><p>checktext</p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict" target="_blank">언어 인식 맞춤법 검사기</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>styles</p> </td> 
-   <td><p>styles</p> </td> 
-   <td>CSS 클래스를 사용한 스타일 지정 지원 <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles" target="-blank">텍스트에 사용할 스타일 범위를 추가하거나 확장하려는 경우 새로운 텍스트 스타일을</a> 추가합니다.</td> 
-  </tr> 
-  <tr> 
-   <td><p>subsuperscript</p> </td> 
-   <td><p>아래 첨자<br /></p> </td> 
-   <td><p>기본 포맷의 익스텐션, 하위 및 수퍼 스크립트 추가</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>표</p> </td> 
-   <td><p>표<br /> 제거<br /> remodeletrow<br /> removerow<br /> resertcolumn<br /> vecolumn<br /> vecolumecolumn<br /> mergecelgecelleclipgecells<br /><br /><br /> 분할된 셀 props셀trolectrow선택표</p> </td> 
-   <td>표 스타일 <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles" target="_blank"></a>구성을 참조하십시오.</td> 
-  </tr> 
-  <tr> 
-   <td><p>실행 취소</p> </td> 
-   <td><p>undo<br /> redo</p> </td> 
-   <td>실행 <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#undohistory" target="_blank">취소 및 재실행</a> 작업의 기록 크기입니다.</td> 
-  </tr> 
- </tbody> 
-</table>
+| 플러그인 ID | features | 설명 |
+|--- |--- |--- |
+| 편집 | cut copy paste-default paste-plaintext paste-wordhtml | [잘라내기, 복사 및 3가지 붙여넣기 모드](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
+| [핀드플레이스](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | 찾기 바꾸기 | 찾기 및 바꾸기 |
+| [format](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | 굵은 기울임꼴 밑줄 | [기본 텍스트 서식](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
+| [이미지](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | 이미지 | 기본 이미지 지원(컨텐츠 또는 컨텐츠 파인더에서 드래그). 브라우저에 따라 작성자에 대한 지원에는 다른 동작이 있습니다 |
+| [keys](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | 이 값을 정의하려면 [탭 크기를](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize)참조하십시오. |
+| [justify](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | justfyleft justfycenter justifyright | 단락 정렬을 참조하십시오. |
+| [링크](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | modifylink 연결 해제 앵커 | [하이퍼링크 및 앵커](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
+| [lists](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | 순서가 없는 들여쓰기 내어쓰기 | 이 플러그인은 [들여쓰기 및 목록을](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin)모두 제어합니다.중첩된 목록 포함 |
+| [misctools](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | specialchars sourceedit | 기타 도구를 사용하여 작성자는 [특수 문자를](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) 입력하거나 HTML 소스를 편집할 수 있습니다. 또한 목록을 정의하려는 경우 전체 [범위의 특수 문자를](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) 추가할 수 있습니다. |
+| Paraformat | paraformat | 기본 단락 형식은 단락, 머리글 1, 머리글 2 및 머리글 3(`<p>`, `<h1>`, `<h2>`및 `<h3>`)입니다. 단락 형식을 [추가하거나](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats) 목록을 확장할 수 있습니다. |
+| spellcheck | checktext | [언어 인식 맞춤법 검사기](/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict). |
+| styles | styles | CSS 클래스를 사용한 스타일 지정 지원 [텍스트에 사용할 스타일 범위를 추가하거나 확장하려는 경우 새로운 텍스트 스타일을](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles) 추가합니다. |
+| subsuperscript | subscript superscript | 기본 포맷의 익스텐션, 하위 및 수퍼 스크립트 추가 |
+| 표 | 표 제거 가능한 삽입표 제거 제거삽입열 제거열 삭제volumn 셀prop분할셀 선택열 | 표 스타일 [](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles)구성을 참조하십시오. |
+| 실행 취소 | 다시 실행 취소 | 실행 [취소 및 재실행](/help/sites-administering/configure-rich-text-editor-plug-ins.md#undohistory) 작업의 기록 크기입니다. |
 
 >[!NOTE]
 >
@@ -244,12 +142,8 @@ RTE 플러그인을 [활성화할 때 작성자에게 제공하는 RTE 편집 �
 >다음으로 노드 이름을 지정하지 `cq:inplaceEditing` 마십시오 `config`. 노드에서 다음 속성을 `cq:inplaceEditing` 정의합니다.
 >
 >* **이름**: `configPath`
-   >
-   >
-* **유형**: `String`
-   >
-   >
-* **값**:실제 구성을 포함하는 노드의 경로
+>* **유형**: `String`
+>* **값**:실제 구성을 포함하는 노드의 경로
 >
 >
 RTE 구성 노드의 이름을 `config`다음으로 지정하지 마십시오. 그렇지 않으면 RTE 구성은 관리자만 적용되고 그룹의 사용자에 대해서는 적용되지 않습니다 `content-author`.
@@ -273,7 +167,6 @@ Touch UI의 대화 상자 편집 모드에 적용되는 다음 속성을 구성�
 RTE 기능은 여러 플러그인을 통해 제공되며 각 플러그인은 기능 속성을 갖습니다. 각 플러그인의 다양한 기능을 활성화하거나 비활성화하도록 기능 속성을 구성할 수 있습니다.
 
 RTE 플러그인의 세부 구성에 대해서는 RTE 플러그인을 활성화하고 구성하는 [방법을 참조하십시오](/help/sites-administering/configure-rich-text-editor-plug-ins.md).
-
 
 이 샘플 구성을 다운로드하여 RTE를 구성하는 방법을 이해합니다. 이 패키지에서 모든 기능이 활성화됩니다.
 
@@ -434,9 +327,9 @@ RTE 구성에 대한 자세한 내용은 AEM Widget API [참조를 참조하십�
 
 AEM RTE 기능에는 다음과 같은 제한 사항이 있습니다.
 
-* RTE 기능은 AEM 구성 요소 대화 상자에서만 지원됩니다. RTE는 마법사 또는 터치가 활성화된 UI의 페이지 [속성](../sites-developing/page-properties-views.md) 및 [스캐폴딩과 같은](../sites-authoring/scaffolding.md) 기본 양식에서는 지원되지 않습니다.
+* RTE 기능은 AEM 구성 요소 대화 상자에서만 지원됩니다. RTE는 마법사 또는 터치가 활성화된 UI의 페이지 [속성](/help/sites-developing/page-properties-views.md) 및 [스캐폴딩과 같은](/help/sites-authoring/scaffolding.md) 기본 양식에서는 지원되지 않습니다.
 
-* AEM은 하이브리드 장치에서 [작동하지](../release-notes/known-issues.md)않습니다.
+* AEM은 하이브리드 장치에서 [작동하지](/help/release-notes/known-issues.md)않습니다.
 
 * RTE 구성 노드의 이름을 지정하지 마십시오 `config`. 그렇지 않으면 RTE 구성은 관리자에게만 적용되고 그룹의 사용자에 대해서는 적용되지 않습니다 `content-author`.
 
