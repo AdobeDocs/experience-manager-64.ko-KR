@@ -3,7 +3,7 @@ title: 리치 텍스트 편집기 플러그인 구성
 description: 개별 기능을 사용하도록 AEM 리치 텍스트 편집기 플러그인을 구성하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f1a1dc18f768d814c63082ed40687862235a76cf
+source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
 
 ---
 
@@ -572,20 +572,18 @@ RTE 구성 요소에서 또는 RTE 구성 요소에서 표를 복사하고 붙�
 맞춤법 검사 플러그인이 활성화되면 RTE는 각 해당 언어에 대한 사전을 사용합니다. 그런 다음 하위 트리의 언어 속성을 가져오거나 URL에서 언어를 추출하여 웹 사이트의 언어에 따라 선택됩니다.예를 들면 다음과 같습니다. 분기는 `/en/` 영어로 확인되고 `/de/` 분기는 독일어로 확인됩니다.
 
 >[!NOTE]
-&quot;맞춤법 검사에 실패했습니다.&quot; 메시지 가 설치되어 있지 않은 언어에 대해 검사를 시도하면 표시됩니다.
+설치되지 않은 언어에 대한 검사가 시도될 경우 메시지가 `Spell checking failed` 표시됩니다. 표준 사전은 해당 Readme 파일과 `/libs/cq/spellchecker/dictionaries`함께 에 있습니다. 파일을 수정하지 마십시오.
 
-표준 AEM 설치에는 다음과 같은 사전이 포함되어 있습니다.
+표준 AEM 설치에는 영어(`en_us`) 및 영어(`en_gb`)용 사전이 포함되어 있습니다. 사전을 더 추가하려면 다음 단계를 따르십시오.
 
-* 영어(en_us)
-* 영어(en_gb)
+1. https://extensions.openoffice.org/페이지로 [이동합니다](https://extensions.openoffice.org/).
 
->[!NOTE]
-표준 사전은 해당 Readme 파일과 `/libs/cq/spellchecker/dictionaries`함께 에 있습니다. 파일을 수정하지 마십시오.
+1. 다음 중 하나를 수행하여 원하는 언어 사전을 찾습니다.
 
-필요한 경우 사전을 더 추가하려면 다음 단계를 따르십시오.
+   * 원하는 언어 사전을 검색합니다. 사전 페이지에서 원본 소스 또는 작성자의 웹 페이지에 대한 링크를 찾습니다. 이러한 페이지에서 v2.x용 사전 파일을 찾습니다.
+   * https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries에서 v2.x 사전 파일을 [검색합니다](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries).
 
-1. http://download.services.openoffice.org/contrib/dictionaries/페이지로 [이동합니다](http://download.services.openoffice.org/contrib/dictionaries/).
-1. 필요한 언어를 선택하고 맞춤법 정의가 있는 ZIP 파일을 다운로드합니다. 파일 시스템에서 아카이브 컨텐츠를 추출합니다.
+1. 철자 정의가 있는 아카이브를 다운로드합니다. 파일 시스템에서 아카이브 컨텐츠를 추출합니다.
 
    >[!CAUTION]
    OpenOffice.org v2.0.1 또는 이전 버전의 `MySpell` 형식으로 된 사전만 지원됩니다. 사전이 이제 파일을 보관하므로 다운로드 후 아카이브를 확인하는 것이 좋습니다.
@@ -594,9 +592,8 @@ RTE 구성 요소에서 또는 RTE 구성 요소에서 표를 복사하고 붙�
 1. 의 저장소에서 .aff 및 .dic 파일을 `/apps/cq/spellchecker/dictionaries`로드합니다.
 
 >[!NOTE]
-RTE 맞춤법 검사기는 On-Demand로 사용할 수 있습니다. 텍스트를 입력하기 시작하면 자동으로 실행되지 않습니다.
-맞춤법 검사를 실행하려면 도구 모음에서 맞춤법 검사기 단추를 탭/클릭합니다. RTE 파섹
-맞춤법 검사기에서 제안하는 변경 사항을 통합하면 텍스트 상태가 변경되고 맞춤법이 틀린 단어가 더 이상 강조 표시되지 않습니다. 맞춤법 검사기를 실행하려면 맞춤법 검사기 단추를 다시 탭/클릭합니다.
+RTE 맞춤법 검사기는 On-Demand로 사용할 수 있습니다. 텍스트를 입력하기 시작하면 자동으로 실행되지 않습니다. 맞춤법 검사기를 실행하려면 도구 [!UICONTROL 모음에서 맞춤법 검사기를] 클릭합니다. RTE 파섹
+맞춤법 검사기에서 제안하는 변경 내용을 포함할 경우 텍스트 상태가 변경되고 철자가 틀린 단어가 더 이상 강조 표시되지 않습니다. 맞춤법 검사기를 실행하려면 맞춤법 검사기 단추를 다시 탭/클릭합니다.
 
 ## 실행 취소 및 다시 실행 작업의 작업 내역 크기 구성 {#undohistory}
 
