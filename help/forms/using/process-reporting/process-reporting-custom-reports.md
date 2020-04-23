@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: process-reporting
 discoiquuid: c668bd53-f2d8-4f8c-83f2-be0afd65392a
 translation-type: tm+mt
-source-git-commit: 9ce0d4c714d8ff55c64a884d90462bcd75629ae0
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
 # 프로세스 내 사용자 지정 보고서 {#custom-reports-in-process-reporting}
 
-QueryBuilder의 REST 인터페이스를 사용하거나 QueryBuilder API 파섹
+QueryBuilder의 REST 인터페이스를 사용하거나 QueryBuilder API를 사용하여 OSGi 서비스를 만들어 사용자 지정 보고서를 만들 수 있습니다.
 
 ## 사용자 지정 보고서를 작성하는 일반 단계 {#generic-steps-to-build-a-custom-report}
 
@@ -63,7 +63,7 @@ QueryBuilder API를 사용하여 서비스를 만들기 위한 사전 요구 사
     predicateGroup.setAllRequired(true);
    ```
 
-1. 새로 만든 술어 그룹에 조건자를 추가합니다. 유용한 구문 몇 가지는 [JcrBoolPropertyPredicateJcr](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrBoolPropertyPredicateEvaluator.html), JcrPropertyPredicateRange [Property](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrPropertyPredicateEvaluator.html)PropertyPropertyPropertyPropertyDate [](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RangePropertyPredicateEvaluator.html)[](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RelativeDateRangePredicateEvaluator.html)[](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/TypePredicateEvaluator.html), DateRangeEapper Decher, Dec Type PredictorEerApper입니다.
+1. 새로 만든 술어 그룹에 조건자를 추가합니다. 유용한 구문 몇 가지는 [JcrBoolPropertyPredicateJcr](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrBoolPropertyPredicateEvaluator.html), JcrPropertyPredicateRange [Property](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrPropertyPredicateEvaluator.html)PropertyPropertyPropertyPropertyDate [, DateRangeEapper Decher, Dec Type PredictorEerApper입니다](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RangePropertyPredicateEvaluator.html)[](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RelativeDateRangePredicateEvaluator.html)[](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/TypePredicateEvaluator.html).
 
    정적 보고서의 경우 조건자를 하드코딩하고, 동적 보고서의 경우 요청에서 예측자를 가져옵니다.
 
@@ -660,4 +660,3 @@ response.setCharacterEncoding("utf-8");
 
 [파일 가져오기](assets/sample-report-pkg-1.zip)
 
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
