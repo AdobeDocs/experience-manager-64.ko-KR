@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 7efc8ad6-2bb1-41a6-ac0b-7f8ddddbf2a6
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -30,4 +30,3 @@ AEM Forms 작업 영역은 더 많은 장치 및 폼 팩터와 호환됩니다. 
 * AEM Forms 작업 영역 앱을 사용하여 온라인 및 오프라인 모바일 작업자로 비즈니스 프로세스를 확장할 수 있습니다.
 * 백로그, 작업 대기열 및 주요 성능 지표(KPI)를 모니터링할 보고서를 볼 수 있습니다. API를 사용하여 타사 보고 도구를 사용하여 추가 분석을 위해 데이터를 추출할 수 있습니다.
 
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
