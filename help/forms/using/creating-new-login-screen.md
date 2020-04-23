@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: cfaa6b49-3fd0-4c08-84a2-e86c7e7e3532
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -288,5 +288,3 @@ AEM Forms 로그인 화면을 사용하는 모든 AEM Forms 모듈의 로그인 
    
    <div class="newLginContainerBkg">
    ```
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
