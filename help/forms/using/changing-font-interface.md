@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 487e3966-443a-408e-b5af-899fcba6fca6
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -74,8 +74,6 @@ AEM [Forms 작업 영역 사용자 지정을](/help/forms/using/generic-steps-ht
 
 1. 작업 영역을 다시 실행하고 변경 사항이 표시되도록 브라우저 캐시를 지웁니다.
 
-![](assets/change_font_before.png) change_font_before ****&#x200B;그림:글꼴 *사용자 정의 전 위쪽 내비게이션 막대*
+![change_font_before](assets/change_font_before.png)**그림:** 글꼴 *사용자 정의 전 위쪽 내비게이션 막대*
 
-![](assets/change_font_after.png) change_font_after ****&#x200B;그림:첫 *번째 탭의 글꼴 사용자 정의 후 위쪽 내비게이션 막대*
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
+![change_font_after](assets/change_font_after.png)**그림:** 첫 *번째 탭의 글꼴 사용자 정의 후 위쪽 내비게이션 막대*
