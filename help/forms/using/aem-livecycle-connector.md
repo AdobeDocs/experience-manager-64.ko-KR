@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: 0ce79686522da4fb3d017068b623c76f81c6b23a
 
 ---
 
@@ -345,7 +345,7 @@ InvocationResponse response = serviceClientFactory.getServiceClient().invoke(ir)
 
 다음 서비스를 사용할 수 있습니다.
 
-* com.adobe.livecycle.formatdataintegration.client.FormDataIntegrationClient
+* com.adobe.livecycle.formdataintegration.client.FormDataIntegrationClient
 
 #### Maven 종속성 {#maven-dependencies-7}
 
@@ -407,7 +407,7 @@ InvocationResponse response = serviceClientFactory.getServiceClient().invoke(ir)
 
 ### Adobe LiveCycle Rights Manager 클라이언트 번들 {#adobe-livecycle-rights-manager-client-bundle}
 
-The following services are available:
+다음 서비스를 사용할 수 있습니다.
 
 * com.adobe.livecycle.rightsmanagement.client.DocumentManager
 * com.adobe.livecycle.rightsmanagement.client.EventManager
@@ -445,7 +445,7 @@ The following services are available:
 
 ### Adobe LiveCycle Truststore 클라이언트 번들 {#adobe-livecycle-truststore-client-bundle}
 
-The following services are available:
+다음 서비스를 사용할 수 있습니다.
 
 * com.adobe.truststore.dsc.TrustConfigurationService
 * com.adobe.truststore.dsc.CRLService
@@ -464,7 +464,7 @@ The following services are available:
 
 ### Adobe LiveCycle Repository Client 번들 {#adobe-livecycle-repository-client-bundle}
 
-The following services are available:
+다음 서비스를 사용할 수 있습니다.
 
 * com.adobe.repository.bindings.ResourceRepository
 * com.adobe.repository.bindings.ResourceSynchronizer
@@ -478,5 +478,3 @@ The following services are available:
   <version>11.0.0</version>
 </dependency>
 ```
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
