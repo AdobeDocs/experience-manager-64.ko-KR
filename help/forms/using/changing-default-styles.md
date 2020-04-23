@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a9ab5a78-2add-46e1-a8f2-444d0f25f43a
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -51,4 +51,3 @@ HTML5 양식은 HTML5 기능을 사용하여 렌더링되며 렌더링된 양식
 
    1. 파일을 저장합니다.
 
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
