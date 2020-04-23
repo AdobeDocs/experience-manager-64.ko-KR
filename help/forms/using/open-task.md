@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: cdce7a6a-2bbf-492f-bf91-5b8f07d02207
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -45,5 +45,3 @@ AEM Forms 앱이 AEM Forms 서버와 동기화되면 자신에게 할당된 작�
 1. 작업을 눌러 엽니다.
 
    요약 보기를 **눌러** 애플리케이션에 대해 지정된 추가 지침을 볼 수 있습니다.
-
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
