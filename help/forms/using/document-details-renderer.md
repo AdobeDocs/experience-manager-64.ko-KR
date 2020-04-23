@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: b6e88080-6ffc-4796-98c7-d7462bca454e
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -65,7 +65,7 @@ XDP 양식이 CRX에 배포된 모바일 양식 패키지를 사용하여 HTML �
 
 ## Flex 양식 및 가이드 {#flex-forms-and-guides}
 
-Flex Forms는 SwfTaskForm으로 렌더링되며 안내선은 HtmlTaskForm Views로 각각 렌더링됩니다.
+Flex Forms는 SwfTaskForm으로 렌더링되고 안내선은 HtmlTaskForm 보기에서 각각 렌더링됩니다.
 
 AEM Forms 작업 영역에서 이러한 보기는 다음 위치에 있는 중간 SWF를 사용하여 flex 양식/안내서를 구성하는 실제 SWF와 통신합니다. `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
 
@@ -85,7 +85,7 @@ AEM Forms 작업 영역에서 이러한 보기는 다음 위치에 있는 중간
 
 AEM Forms 작업 영역은 `window.global.postMessage([Message],[Payload])`
 
-[]`SubmitMessage``CancelMessage`메시지는`ErrorMessage` ||| `actionEnabledMessage`in the `runtimeMap`. 타사 애플리케이션은 이 인터페이스를 사용하여 필요에 따라 AEM Forms 작업 영역을 알려야 합니다. 작업 창을 정리할 수 있도록 AEM Forms 작업 영역에서 작업이 제출되는 시기를 알아야 하므로 이 인터페이스를 사용하는 것은 필수입니다.
+[메시지는]`SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`in the `runtimeMap`. 타사 애플리케이션은 이 인터페이스를 사용하여 필요에 따라 AEM Forms 작업 영역을 알려야 합니다. 작업 창을 정리할 수 있도록 AEM Forms 작업 영역에서 작업이 제출되는 시기를 알아야 하므로 이 인터페이스를 사용하는 것은 필수입니다.
 
 **타사 애플리케이션 커뮤니케이션에 대한 AEM Forms 작업 영역**
 
@@ -95,5 +95,3 @@ AEM Forms 작업 영역의 직접 작업 단추가 표시되면 `window.[Externa
 
 AEM Forms 작업 영역의 [](/help/forms/using/integrating-correspondence-management-html-workspace.md)통신 관리 통합에서 서드 파티 애플리케이션 통합에 대한 자세한 내용을 살펴볼 수 있습니다.
 
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
