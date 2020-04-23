@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 265eee8a-364e-4edf-b2a0-f42617169944
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -46,5 +46,3 @@ AEM Forms 앱에서 프로세스를 시작하려면 프로세스에 작업 영�
 앱이 온라인 상태인 경우 작업은 AEM Forms 서버와 동기화되고 프로세스에 지정된 사용자에게 할당됩니다.
 
 작업 목록에서 작업을 사용하려면 작업 [열기를 참조하십시오](/help/forms/using/open-task.md).
-
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
