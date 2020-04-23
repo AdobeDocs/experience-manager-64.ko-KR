@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c7cf28bf-2806-47bc-a803-8bc0e803fc4d
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
 **거부** 다른 사용자가 직접 보고서로 전달된 작업을 거부합니다. 이 옵션은 다른 사용자가 직접 보고서로 전달하는 작업에 사용할 수 있습니다.
 
-AEM Forms는 사용자가 ACL(액세스 제어)을 가진 작업에 대해서만 사용자의 액세스를 제한합니다. 이러한 검사를 통해 사용자는 액세스 권한이 있는 작업만 가져올 수 있습니다. 서드파티 웹 서비스 및 구현을 사용하여 계층 구조를 정의하면 조직은 관리자의 정의를 사용자 정의하고 요구에 맞게 직접 보고서를 작성할 수 있습니다.
+AEM Forms는 사용자가 ACL(액세스 제어)을 가진 작업에 대해서만 사용자의 액세스를 제한합니다. 이러한 검사를 통해 사용자는 액세스 권한이 있는 작업만 가져올 수 있습니다. 서드파티 웹 서비스와 구현을 사용하여 계층 구조를 정의하면 조직은 관리자의 정의를 사용자 정의하고 요구에 맞게 직접 보고서를 작성할 수 있습니다.
 
 1. DSC를 만듭니다. 자세한 내용은 AEM Forms를 사용한 프로그래밍 [안내서의 &#39;AEM Forms용 구성 요소 개발&#39; 항목을](https://www.adobe.com/go/learn_aemforms_programming_63) 참조하십시오.
 1. DSC 파섹 다음은 샘플 Java™ 코드 조각입니다.
@@ -118,4 +118,3 @@ AEM Forms는 사용자가 ACL(액세스 제어)을 가진 작업에 대해서만
 
 직접 보고서의 작업에 액세스하여 작업 수행
 
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
