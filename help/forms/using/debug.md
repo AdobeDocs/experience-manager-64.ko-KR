@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
 # HTML5 양식 디버깅 {#debugging-html-forms}
 
-이 문서에는 몇 가지 문제 해결 시나리오가 포함되어 있습니다. 각 시나리오에 대해 문제 해결을 위한 일부 단계가 제공됩니다. 다음 단계에 따라 문제가 지속되면 로거 로그를 가져와 오류/경고를 검토하도록 구성합니다. HTML5 양식 로깅에 대한 자세한 내용은 HTML5 [양식에](/help/forms/using/enable-logs.md)대한 로그 생성을 참조하십시오.
+이 문서에는 몇 가지 문제 해결 시나리오가 포함되어 있습니다. 각 시나리오에 대해 문제 해결을 위한 일부 단계가 제공됩니다. 다음 단계에 따라 문제가 지속되면 로거가 로그를 가져와 오류/경고를 검토하도록 구성합니다. HTML5 양식 로깅에 대한 자세한 내용은 HTML5 [양식에](/help/forms/using/enable-logs.md)대한 로그 생성을 참조하십시오.
 
 ## 문제:양식을 렌더링할 때 org.apache.sling.api.SlingException 예외 페이지가 표시됩니다. {#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page}
 
@@ -178,5 +178,3 @@ source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
 1. 데스크탑 브라우저에서 개발자 도구 -> 리소스로 이동합니다.
 
    이미지가 표시되는 경우 [프레임]의 왼쪽에서 선택합니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
