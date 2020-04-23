@@ -8,7 +8,7 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
 
 ---
 
@@ -83,7 +83,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
    * BillDetails
    * 고객 세부 사항
    * BillSummary
-   * 요약 - 하위 **폼** 탭을 선택하고 **이 하위** 폼의 **콘텐츠** 드롭다운 목록에서위치를 선택합니다. 요약 하위 양식에 다음 하위 **양식을** 삽입합니다.
+   * 요약 - 하위 **폼** 탭을 선택하고 **이** 하위 **폼의** 콘텐츠 드롭다운 목록에서위치를 선택합니다. 요약 하위 양식에 다음 하위 **양식을** 삽입합니다.
 
       * 요금
       * 차트
@@ -109,7 +109,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
 양식 디자이너를 사용하여 XDP 템플릿을 만든 후에는 AEM Forms 서버에 업로드하여 대화형 통신을 만드는 동안 템플릿을 사용할 수 있도록 해야 합니다.
 
-1. [ **양식** ] > [ **양식 및 문서]를 선택합니다**.
+1. [ **[!UICONTROL 양식]** ] > [ **[!UICONTROL 양식 및 문서]를 선택합니다]**.
 1. 만들기 **> 파일** 업로드를 **누릅니다**.
 
    XDP( **create_first_ic_print_template** 템플릿)를 탐색하여 선택하고 **열기를** 눌러 XDP 템플릿을 AEM Forms 서버로 가져옵니다.
@@ -198,7 +198,7 @@ Interactive Communication의 인쇄 채널에 대한 레이아웃 조각을 만�
 
 1. 도구 > 템플릿 > **Create** _First_IC_ **templates** 폴더를 선택하여 해당 템플릿 **폴더로 이동합니다** .
 1. 만들기를 **누릅니다**.
-1. 템플릿 **유형 선택** 구성 마법사에서 대화형 통신 - 웹 **채널을** 선택하고 다음을 **탭합니다**.
+1. 템플릿 **유형 선택** 구성 마법사에서 대화형 통신 - 웹 **채널을 선택하고** 다음을 **탭합니다**.
 1. 템플릿 세부 **사항** 구성 마법사에서 **Create_First_IC_Web_Template** 을 템플릿 제목으로 지정합니다. 선택적 설명을 지정하고 만들기를 **누릅니다**.
 
    Create_First_IC_ **Web_Template이** 표시된다는 확인 메시지가 표시됩니다.
