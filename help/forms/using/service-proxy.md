@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 2791c9a1-38a2-4154-8bea-2f7c564b46c8
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -133,4 +133,3 @@ HTML5 양식은 AEM 서버에 연결하여 서버측 스크립트, 웹 서비스
 
 * 데이터(POST 요청)를 서버로 보내기 전에 HTML5 양식이 서버의 연결성 및 가용성을 확인합니다. 연결 및 가용성을 확인하기 위해 HTML 양식은 빈 헤드 요청을 서버에 보냅니다. 서버를 사용할 수 있는 경우 HTML5 양식이 데이터(POST 요청)를 서버로 전송합니다. 서버를 사용할 수 없는 경우 서버에 연결할 *수 없다는 오류 메시지가* 표시됩니다. 고급 탐지는 사용자가 양식을 리플로우하는 번거로움을 방지합니다. 프록시 서블릿은 헤드 요청을 처리하며 예외를 발생시키지 않습니다.
 
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
