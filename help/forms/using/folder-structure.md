@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 7427858d-8eec-423d-a0a9-444140420620
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -37,4 +37,3 @@ AEM Forms 작업 영역 구성 요소는 백본을 사용하는 MVC 아키텍처
 
 **util** 여러 구성 요소에서 사용할 수 있는 일반 유틸리티를 포함합니다.
 
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
