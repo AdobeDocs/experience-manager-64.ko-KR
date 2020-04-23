@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: fbe70162-ced6-4989-9322-e12772edbcbc
 translation-type: tm+mt
-source-git-commit: b9d2a5b65f7ae48a9bde5580b5ddd3e55fc68d61
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
 # HTML5 양식에 대한 FAQ(FAQ) {#frequently-asked-questions-faq-for-html-forms}
 
-레이아웃, 스크립팅 지원 및 HTML5 양식의 범위에 대한 FAQ가 있습니다.
+레이아웃, 스크립팅 지원 및 HTML5 양식의 범위에 대한 몇 가지 FAQ가 있습니다.
 
 ## 레이아웃 {#layout}
 
@@ -204,4 +204,3 @@ source-git-commit: b9d2a5b65f7ae48a9bde5580b5ddd3e55fc68d61
 
    답변:모든 HTML5 양식 API는 예약된 키워드입니다. 사용자 정의 API/함수의 경우 HTML5 양식 API와 동일하지 않은 [이름을 사용하십시오](/help/forms/using/scripting-support.md). 예약된 키워드 외에도 밑줄(_)로 시작하는 개체 이름을 사용하는 경우 밑줄 뒤에 고유한 접두사를 추가하는 것이 좋습니다. 접두사를 추가하면 HTML5 양식 내부 API와 충돌할 가능성이 없습니다. 예, `_fpField1`
 
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
