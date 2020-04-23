@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c3a312fb-f684-477d-916d-2d3c99aa7607
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -34,5 +34,3 @@ AEM Forms 작업 공간에 대해 제공된 패키지:
 
 * `adobe-lc-workspace-pkg-<version>.zip`:CRX 패키지입니다. 즉, 패키지 관리자를 사용하여 CRX에 배포할 수 있습니다.
 * `adobe-lc-workspace-<version>-src.zip`:배포 패키지(배송, 디버그 및 개발 패키지)를 만드는 데 필요한 AEM Forms 작업 영역과 스크립트의 전체 코드가 들어 있는 보관 파일입니다.
-
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
