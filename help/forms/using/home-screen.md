@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: e4636b25-20a4-4326-82fb-f22f735e43c0
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -40,4 +40,3 @@ AEM Forms 앱에 로그인하면 홈 화면으로 리디렉션됩니다.
 
 그러나 HTML 작업 영역에서 변경한 내용은 AEM Forms 앱 사용자가 AEM Forms 서버에 로그온한 모든 AEM Forms 앱에 적용됩니다.
 
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
