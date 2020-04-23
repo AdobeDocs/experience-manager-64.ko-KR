@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 9950288c-b5a2-4945-afad-be9ce2abc8e9
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -35,7 +35,7 @@ source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
 
 작업에서 만든 초안을 삭제하는 옵션은 사용할 수 없습니다. 작업에서 만든 초안을 삭제하면 작업이 중단됩니다.
 
-오프라인 모드와 온라인 모드 모두에서 초안을 취소할 수 있습니다. 오프라인 모드에서 초안을 폐기하면 서버와의 연결이 복원될 때에만 초안이 서버에서 삭제됩니다.
+오프라인 모드와 온라인 모드 모두에서 초안을 취소할 수 있습니다. 오프라인 모드에서 초안을 삭제하면 서버와의 연결이 복원될 때에만 초안이 서버에서 삭제됩니다.
 
 초안을 삭제하려면 다음 단계를 수행하십시오.
 
@@ -44,4 +44,3 @@ source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
 1. 편집 아이콘 ![edit-draft-app](assets/edit-draft-app.png) 이 있는 양식은 초안을 나타냅니다. 초안 옆에 있는 가로 줄임표를 누릅니다.
 1. 가로 줄임표를 누를 때 나타나는 옵션에서 초안 **삭제를 누릅니다**.
 
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
