@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: d363eec3-172b-413e-9743-ed51804ea1e9
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -57,4 +57,3 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 1. 다른 보기에서는 작업 세부 사항 보기가 작업 모델에서 이 이벤트를 수신합니다.
 1. 그런 다음 작업 세부 사항 보기를 통해 작업 세부 사항 템플릿을 변경하여 렌더링된 작업(양식, 세부 사항, 첨부 파일, 노트 등)을 사용자에게 표시합니다.
 
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
