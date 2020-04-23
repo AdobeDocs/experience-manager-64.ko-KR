@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: d3facd17-ceb0-4799-8cd9-ff9e81e09793
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -287,7 +287,7 @@ AEM Forms 작업 영역은 CRX™의 특정 [폴더 구조로](/help/forms/using
    <td><p>JS 종속성</p> </td> 
    <td> 
     <ul> 
-     <li><p>processancehistory.html</p> </li> 
+     <li><p>processinstancehistory.html</p> </li> 
      <li><p>양식 렌더링 유틸리티</p> </li> 
      <li><p>메모 유틸리티</p> </li> 
      <li><p>첨부 유틸리티</p> </li> 
@@ -630,7 +630,7 @@ AEM Forms 작업 영역은 CRX™의 특정 [폴더 구조로](/help/forms/using
   </tr> 
   <tr> 
    <td><p>보기</p></td> 
-   <td><p>processancelist.js</p></td> 
+   <td><p>processinstancelist.js</p></td> 
   </tr> 
   <tr> 
    <td><p>템플릿</p></td> 
@@ -700,11 +700,11 @@ AEM Forms 작업 영역은 CRX™의 특정 [폴더 구조로](/help/forms/using
   </tr> 
   <tr> 
    <td><p>보기</p></td> 
-   <td><p>processancehistory.js</p></td> 
+   <td><p>processinstancehistory.js</p></td> 
   </tr> 
   <tr> 
    <td><p>템플릿</p></td> 
-   <td><p>processancehistory.html</p></td> 
+   <td><p>processinstancehistory.html</p></td> 
   </tr> 
   <tr> 
    <td><p>구성 요소 필요</p></td> 
@@ -740,15 +740,15 @@ AEM Forms 작업 영역은 CRX™의 특정 [폴더 구조로](/help/forms/using
  <tbody> 
   <tr> 
    <td><p>모델</p> </td> 
-   <td><p>otofoffice.js</p> </td> 
+   <td><p>outofoffice.js</p> </td> 
   </tr> 
   <tr> 
    <td><p>보기</p> </td> 
-   <td><p>otofoffice.js</p> </td> 
+   <td><p>outofoffice.js</p> </td> 
   </tr> 
   <tr> 
    <td><p>템플릿</p> </td> 
-   <td><p>otofoffice.html</p> </td> 
+   <td><p>outofoffice.html</p> </td> 
   </tr> 
   <tr> 
    <td><p>구성 요소 필요</p> </td> 
@@ -781,15 +781,15 @@ AEM Forms 작업 영역은 CRX™의 특정 [폴더 구조로](/help/forms/using
  <tbody> 
   <tr> 
    <td><p>모델</p> </td> 
-   <td><p>sharqueue.js</p> </td> 
+   <td><p>sharequeue.js</p> </td> 
   </tr> 
   <tr> 
    <td><p>보기</p> </td> 
-   <td><p>sharqueue.js</p> </td> 
+   <td><p>sharequeue.js</p> </td> 
   </tr> 
   <tr> 
    <td><p>템플릿</p> </td> 
-   <td><p>sharqueue.html</p> </td> 
+   <td><p>sharequeue.html</p> </td> 
   </tr> 
   <tr> 
    <td><p>구성 요소 필요</p> </td> 
@@ -1091,5 +1091,3 @@ AEM Forms 작업 영역은 CRX™의 특정 [폴더 구조로](/help/forms/using
   </tr> 
  </tbody> 
 </table>
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
