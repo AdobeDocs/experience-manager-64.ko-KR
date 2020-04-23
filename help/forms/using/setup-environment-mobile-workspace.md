@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 72c3a451-fa57-4b12-8d25-fc2e6fa98adb
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -43,5 +43,3 @@ AEM Forms 앱을 빌드하고 배포하려면 다음 하드웨어, 소프트웨�
 >[!NOTE]
 >
 >adobe-lc-mobileworkspace-src.zip에는 PhoneGap SDK 5.0이 포함되어 있습니다.PhoneGap SDK 파섹
-
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
