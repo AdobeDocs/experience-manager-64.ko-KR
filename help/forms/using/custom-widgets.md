@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5d860f05-3257-4cf7-93dd-77d226d59b39
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 사용자 정의 위젯을 모바일 양식에 연결할 수 있습니다. 기존 jQuery 위젯을 확장하거나 모양 프레임워크를 사용하여 사용자 정의 위젯을 개발할 수 있습니다. XFA 엔진은 다양한 위젯을 사용합니다. 자세한 내용은 [적응형 및 HTML5 양식에](/help/forms/using/introduction-widgets.md) 대한 모양 프레임워크를 참조하십시오.
 
-![](assets/custom-widgets.jpg) 기본 및 사용자 정의 위젯의 예&#x200B;****:기본 *및 사용자 정의 위젯의 예*
+![기본 및 사용자 정의 위젯의 예](assets/custom-widgets.jpg)**:** 기본 *및 사용자 정의 위젯의 예*
 
 ## HTML5 양식과 사용자 정의 위젯 통합 {#integrating-custom-widgets-with-html-forms}
 
@@ -100,5 +100,3 @@ window.formBridge.registerConfig("widgetConfig",
 | 이름 fieldname이 있는 특정 필드 | 식별자:&quot;div.fieldname&quot; | 이름이 &#39;fieldname&#39;인 모든 필드는 위젯을 사용하여 렌더링됩니다. |
 | &#39;type&#39; 유형의 모든 필드(여기서 type은 NumericField, DateField 등)입니다.: | 식별자:&quot;div.type&quot; | Timefield 및 DateTimeField의 경우 이러한 필드는 지원되지 않으므로 type은 textfield입니다. |
 | 모든 필드 | 식별자:&quot;div.field&quot; |  |
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
