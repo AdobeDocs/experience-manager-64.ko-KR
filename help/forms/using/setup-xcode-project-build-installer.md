@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 2dec23f7-6cca-4cc9-a78a-acd23ae7da5f
 translation-type: tm+mt
-source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -154,12 +154,10 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 1. 앱의 이름을 입력하고 Enterprise Distribution **용으로 저장을 선택합니다**.
 1. 앱용 **애플리케이션** URL을 제공합니다. 예를 들어 CRX 서버에서 앱을 호스팅하려면 URL을 제공합니다 `https://[*LC_host*]:[*port*]/lc/content/distribution/mobileworkspace/APP_NAME.ipa`.
 1. 제목 **필드에서** AEM Forms를 지정합니다.
-1. 저장을 **클릭하고** Xcode를 닫습니다.
+1. Click **Save** and close Xcode.
 
    설치 관리자 파일 `AEM Forms.ipa`및 속성 목록 파일이 `AEM Forms-info.plist`지정된 위치에 생성됩니다.
 
 1. 편집기에서 파일을 엽니다 `AEM Forms-info.plist` .
 1. .ipa 파일의 URL에 있는 모든 공백을 %20으로 바꿉니다.
 1. 파일을 저장하고 `AEM Forms-info.plist` 닫습니다.
-
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
