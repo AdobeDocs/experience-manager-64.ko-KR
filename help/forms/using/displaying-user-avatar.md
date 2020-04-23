@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: aec03ea5-17a6-4775-92cb-2ad361895fdf
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -83,5 +83,3 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 
 1. 워크벤치를 통해 DSC를 배포합니다. 서비스를 다시 `ProcessManagementClientSessionService` 시작합니다.
 1. 브라우저를 새로 고치거나 로그아웃/사용자와 다시 로그인해야 할 수 있습니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
