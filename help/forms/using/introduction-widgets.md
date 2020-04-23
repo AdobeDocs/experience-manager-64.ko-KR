@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -186,7 +186,7 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
   </tr>
   <tr>
    <td>항목<br /> </td> 
-   <td>옵션으로 표시할 개체의 배열입니다. <br /> 각 객체에는 다음과 같은 두 가지 속성이 포함되어 있습니다<br /> .저장할 값, 표시 값:값을 표시합니다. <br /> </td> 
+   <td>옵션으로 표시할 개체의 배열입니다. 각 객체에는 다음과 같은 두 가지 속성이 포함되어 있습니다<br /> .저장할 값, 표시 값:값을 표시합니다.<br /> <br /> </td> 
   </tr>
   <tr>
    <td><p>편집</p> <p><strong>참고</strong>:HTML5 양식에만 해당됩니다.<br /> </p> </td> 
@@ -212,7 +212,7 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
    <th>설명</th> 
   </tr>
   <tr>
-   <td><p><em> addItem:function(itemValues)<br /> itemValues:표시 및 저장 값 <br /> {sDisplayVal을 포함하는 개체:&lt;displayValue&gt;, sSaveVal:&lt;저장 값&gt;}</em></p> </td> 
+   <td><p>addItem:<em> function(itemValues)<br /> itemValues:표시 및 저장 값 <br /> {sDisplayVal을 포함하는 개체:&lt;displayValue&gt;, sSaveVal:&lt;저장 값&gt;}</em></p> </td> 
    <td>목록에 항목을 추가합니다.</td> 
   </tr>
   <tr>
@@ -268,4 +268,3 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
 | zero | 숫자 0에 대한 현지화된 텍스트입니다. |
 | clearText | 지우기 단추에 사용할 현지화된 텍스트입니다. |
 
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
