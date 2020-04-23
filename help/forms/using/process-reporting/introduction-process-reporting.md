@@ -9,7 +9,7 @@ topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0cfe62b8-839e-414b-95e5-1bfce6a9d16a
 translation-type: tm+mt
-source-git-commit: 9ce0d4c714d8ff55c64a884d90462bcd75629ae0
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -68,4 +68,4 @@ AEM Forms 서버는 수많은 프로세스를 동시에 실행합니다. 이러�
 
 즉, 보고 권한이 있는 사용자만 프로세스 보고 사용자 인터페이스에 액세스할 수 있습니다.
 
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
+
