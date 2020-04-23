@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: dae1ce32-702e-4cf0-b3c6-976551208d09
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -46,4 +46,3 @@ AEM Forms 서버를 사용하여 온라인 상태에서는 기본적으로 앱�
 * syncSubmittedTask() 및 syncSavedTask() 함수는 개별 작업에 대해 작업을 수행합니다.
 * 사용자가 오프라인 상태를 서버에 동기화하도록 선택하거나 백그라운드 스레드로 자동 동기화를 선택하면 processOfflineSubmittedSavedTasks() 함수에 대한 호출이 작업 목록 구성 요소에서 시작됩니다.
 
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
