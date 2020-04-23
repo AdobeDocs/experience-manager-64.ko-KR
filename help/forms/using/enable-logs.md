@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 23bc7cd2-7d06-4ef8-977a-778e290daef9
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
 서버측 로그를 구성하려면 다음 단계를 수행하십시오.
 
-1. 이동 `https://[server]:[port]/system/console/configMgr`. Apace Sling 로깅 *로거 구성* 옵션을 찾아 엽니다. 대화 상자가 나타납니다.
+1. 이동 `https://[server]:[port]/system/console/configMgr`. Apace Sling 로깅 *로거 구성* 옵션을 찾아 엽니다. 대화 상자가 나타납니다:
 
    ![ Apace Sling 로깅 로거 구성 옵션 대화 상자](assets/logconfig.png)
 
@@ -206,4 +206,3 @@ Configuration Manager를 사용하여 로깅을 활성화하면 로깅이 다시
 
 1. Logger를 **HTMLFormsPerfLogger** 로 **변경하고** 저장을 **클릭합니다**.
 
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
