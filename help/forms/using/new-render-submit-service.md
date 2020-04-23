@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 58f95138-5439-4540-a8dc-193b4cb42203
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -56,7 +56,7 @@ public Map<String, Object> renderHTMLForm (TaskContext taskContext, String profi
 
 ## 새로운 HTML 양식 렌더링 및 제출 프로세스 {#new-html-form-render-amp-submit-processes}
 
-모든 &#39;AssignTask&#39; 작업에 대해 양식과 함께 Render 및 Submit 프로세스를 지정합니다. 이러한 프로세스는 TaskManager `renderForm`및 API에서 `submitForm`사용자 정의 처리를 위해 호출됩니다. 새 HTML 양식에 대한 다음 프로세스의 의미 체계:
+모든 &#39;AssignTask&#39; 작업에 대해 양식과 함께 Render 및 Submit 프로세스를 지정합니다. 이러한 프로세스는 TaskManager `renderForm`및 API에서 `submitForm`사용자 정의 처리를 허용하도록 호출합니다. 새 HTML 양식에 대한 다음 프로세스의 의미 체계:
 
 ### 새 HTML 양식 렌더링 {#render-a-new-html-form}
 
@@ -160,5 +160,3 @@ XDP 양식의 경우:
 
 양식을 장치의 HTML과 데스크탑의 PDF로 렌더링하려면 프로세스 디자이너가 수행해야 하는 작업은 무엇입니까?\
 양식을 장치의 HTML과 데스크탑의 PDF로 렌더링하려면 프로세스 디자이너가 수행해야 하는 작업은 무엇입니까?
-
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
