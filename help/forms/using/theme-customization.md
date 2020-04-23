@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -35,7 +35,7 @@ HTML 코드 및 CSS 파일을 사용자 지정하여 AEM Forms 앱에 고유한 
 
    * Xcode에서 Capture > **www > Mobile > js > 런타임 > templates** 폴더로 이동합니다.
    * Eclipse에서 **자산 > www > 모바일 > js > 런타임 > 템플릿** 폴더로 이동합니다.
-   * Visual Studio에서 MWSWindows > **www > mobile > js > 런타임 > 템플릿** 폴더로 이동합니다.
+   * Visual Studio에서 MWSWindows > **www > mobile > js > 런타임 > templates** 폴더로 이동합니다.
 
 1. Open the `template.html` file for editing.
 1. 다음 문자열을 찾습니다.
@@ -83,4 +83,3 @@ HTML 코드 및 CSS 파일을 사용자 지정하여 AEM Forms 앱에 고유한 
 
    이제 AEM Forms 앱에 설명 대신 지침이 표시됩니다.
 
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
