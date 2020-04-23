@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: e135fa01-fede-4285-b4dd-2d23acbb4d26
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -33,5 +33,3 @@ HTML5 양식은 PDF 양식의 비헤이비어와 상당히 비슷하지만 두 �
 HTML5 양식의 주요 목표는 터치 디바이스입니다. 따라서 AEM Forms Designer에 새로운 낙서 서명 컨트롤이 추가됩니다. 양식 서식 파일에서 자유 서명 컨트롤을 클릭하거나 드래그하여 놓고 구성할 수 있습니다. HTML5 변환에서 자유 필드로 렌더링되며 터치 장치에서 서명을 자유롭게 쓰는 데 사용할 수 있습니다. 데스크톱 컴퓨터에서는 마우스 컨트롤을 사용하여 자유 필드로 사용할 수 있습니다. 이 기능을 사용하는 방법에 대한 자세한 내용은 XFA 스크리블 [필드를 참조하십시오](/help/forms/using/scribble-signature.md).
 
 ![4](assets/4.png)
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
