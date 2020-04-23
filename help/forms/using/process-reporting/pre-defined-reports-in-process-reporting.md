@@ -9,7 +9,7 @@ topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6320c632-c7ec-4e56-9d12-cd27e3e9306e
 translation-type: tm+mt
-source-git-commit: ec74a1c3b1d3686a1f5216e06dfc33dc1dccfb2f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -63,7 +63,7 @@ AEM Forms 프로세스 보고는 다음과 같은 *특별* 보고서와 함께 �
 
 ### 프로세스 기간 보고서를 실행하려면 {#to-execute-a-process-duration-report-br}
 
-1. 프로세스 보고에서 사전 정의된 보고서를 보려면 프로세스 보고 **트리** 보기에서 보고서 **노드를** 클릭합니다.
+1. 프로세스 보고에서 사전 정의된 보고서를 보려면 프로세스 보고 **트리** 보기에서 보고서 **노드를 클릭합니다** .
 1. 프로세스 **기간** 보고서 노드를 클릭합니다.
 
    ![process_duration_node](assets/process_duration_node.png)
@@ -94,7 +94,7 @@ AEM Forms 프로세스 보고는 다음과 같은 *특별* 보고서와 함께 �
 
 ### 워크플로우 볼륨 보고서를 실행하려면 {#to-execute-a-workflow-volume-report-br}
 
-1. 프로세스 보고에서 사전 정의된 보고서를 보려면 프로세스 보고 **트리** 보기에서 보고서 **노드를** 클릭합니다.
+1. 프로세스 보고에서 사전 정의된 보고서를 보려면 프로세스 보고 **트리** 보기에서 보고서 **노드를 클릭합니다** .
 1. 워크플로우 **볼륨** 보고서 노드를 클릭합니다.
 
    ![workflow_volume_node](assets/workflow_volume_node.png)
@@ -121,4 +121,3 @@ AEM Forms 프로세스 보고는 다음과 같은 *특별* 보고서와 함께 �
    * **범례 색상**&#x200B;변경:보고서 범례 색상 선택 및 변경
    * **CSV로 내보내기**:보고서의 데이터를 쉼표로 구분된 파일로 내보내기 및 다운로드
 
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
