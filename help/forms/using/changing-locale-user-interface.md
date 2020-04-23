@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: e4ca8188-fb9a-44bf-8437-a98abaa7521a
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: a5cac0d369bb40659cfde011e5d6ef9a68dc4012
 
 ---
 
@@ -110,7 +110,7 @@ AEM Forms 작업 영역에서는 이미지를 사용하여 카테고리, 큐 및
 
 *datepicker *API를 현지화하려면 개발 패키지가 필요합니다. 개발 패키지 만들기에 대한 자세한 내용은 AEM [Forms 작업 영역 코드](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)작성을 참조하십시오.
 
-1. jQuery UI [패키지를](https://jqueryui.com/download/all/)다운로드하고 추출하면 *&lt;extraced jquery UI package>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n로 이동합니다.
+1. jQuery UI [패키지를](https://jqueryui.com/download/all/)다운로드하고 추출하면 *&lt;extraced jquery UI package>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n으로 이동합니다.
 1. 이제 로케일 코드의 jquery.ui.datepicker-nw.js 파일을 apps/ws/js/libs/jqueryi에 복사하고 로케일별 파일 변경을 수행합니다.
 1. 편집할 파일을 `apps/ws/js` 찾아 엽니다 `jquery.ui.datepicker-nw.js` .
 1. main.js 파일에서 파일에 대한 별칭을 `jquery.ui.datepicker-nw.js.` 만드는 코드는 `jquery.ui.datepicker-nw.js` 다음과 같습니다.
@@ -178,18 +178,18 @@ AEM Forms 작업 영역에서는 이미지를 사용하여 카테고리, 큐 및
    }
    ```
 
-   ```
-   if (locale === 'ja-JP') {
-       $.datepicker.setDefaults($.datepicker.regional.ja);
-   } else if (locale === 'de-DE') {
-       $.datepicker.setDefaults($.datepicker.regional.de);
-   } else if (locale === 'fr-FR') {
-       $.datepicker.setDefaults($.datepicker.regional.fr);
-   } else if (locale === 'nw') {
-       $.datepicker.setDefaults($.datepicker.regional.nw);
-   } else {
-       $.datepicker.setDefaults($.datepicker.regional['']);
-   }
-   ```
+끝
 
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
+```
+if (locale === 'ja-JP') {
+    $.datepicker.setDefaults($.datepicker.regional.ja);
+} else if (locale === 'de-DE') {
+    $.datepicker.setDefaults($.datepicker.regional.de);
+} else if (locale === 'fr-FR') {
+    $.datepicker.setDefaults($.datepicker.regional.fr);
+} else if (locale === 'nw') {
+    $.datepicker.setDefaults($.datepicker.regional.nw);
+} else {
+    $.datepicker.setDefaults($.datepicker.regional['']);
+}
+```
