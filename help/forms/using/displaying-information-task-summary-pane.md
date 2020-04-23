@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 90d0f584-b598-4b21-85d7-31da5f13d404
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -50,6 +50,3 @@ AEM Forms 작업 영역을 사용하면 작업 요약 창에서 원하는 웹 �
 
    * 작업 할당 단계에서 작업 요약 URL의 값을 `/lc/content/SampleSummary.html` 설정합니다.
    * 이 작업 할당 단계와 연관된 작업이 AEM Forms 작업 영역에서 열리면 `html.esp` 의 `/apps/SampleSummary` 작업 요약 창이 표시됩니다.
-
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
