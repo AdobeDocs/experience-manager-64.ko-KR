@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 599f1925-a17e-4bae-93d9-b54edcee92b0
 translation-type: tm+mt
-source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -42,7 +42,7 @@ HTML5 양식은 첫 번째 요청에서 양식을 처리(변환 또는 제출)�
 
 모바일 양식은 PreRender 캐시와 렌더링 캐시를 두 가지 서로 다른 수준으로 유지합니다. preRender 캐시에는 해결된 템플릿의 모든 조각과 이미지가 포함되며 렌더링 캐시에는 HTML과 같은 렌더링된 컨텐츠가 포함됩니다.
 
-![](assets/cacheworkflow.png) HTML5 양식 워크플로우&#x200B;**그림**:HTML5 *양식 워크플로우*
+![HTML5 양식 워크플로우](assets/cacheworkflow.png)그림&#x200B;**:** HTML5 *양식 워크플로우*
 
 HTML5 양식은 조각과 이미지에 대한 참조가 누락된 템플릿을 캐시하지 않습니다. HTML5 양식에 걸리는 시간이 정상 시간 이상인 경우 서버 로그에서 누락된 참조 및 경고를 확인하십시오. 또한 개체의 최대 크기에 도달하지 않았는지 확인합니다.
 
@@ -108,7 +108,7 @@ HTML5 양식은 LRU 전략을 사용하여 메모리 내 캐싱을 수행합니�
 
 구성 서비스를 사용하면 HTML5 양식에 대한 구성 매개 변수와 캐시 설정을 조정할 수 있습니다.
 
-이러한 설정을 업데이트하려면 CQ Felix Admin Console(에 있음)로 이동하여 모바일 양식 구성을 `https://[server]:[port]/system/console/configMgr`검색하고 선택합니다.
+이러한 설정을 업데이트하려면 CQ Felix Admin Console(에 있음)으로 이동하여 모바일 양식 구성을 `https://[server]:[port]/system/console/configMgr`검색하고 선택합니다.
 
 구성 서비스를 사용하여 캐시 크기를 구성하거나 캐시를 비활성화할 수 있습니다. 디버그 옵션 매개 변수를 사용하여 디버깅을 활성화할 수도 있습니다. 양식 디버깅에 대한 자세한 내용은 HTML5 [양식](/help/forms/using/debug.md)디버깅을 참조하십시오.
 
@@ -171,7 +171,7 @@ Sling 패키지에는 프로필 및 프로필 렌더러와 관련된 컨텐츠�
 
 #### 프로필 렌더러 {#profile-renderers}
 
-프로필 노드에는 값 xfaforms/ **profile** 의 sling:resourceSuperType 속성이 **있습니다**. 이 속성은 내부적으로 /libs/xfaforms/profile **** 폴더에 있는 프로필 노드의 sling 스크립트에 요청을 전송합니다. 이러한 스크립트는 HTML 양식과 필수 JS/CSS 객체를 모두 취합하기 위한 컨테이너인 JSP 페이지입니다. 페이지에는 다음에 대한 참조가 포함되어 있습니다.
+프로필 노드에는 값 xfaforms/profile **의** sling:resourceSuperType 속성이 **있습니다**. 이 속성은 내부적으로 /libs/xfaforms/profile **** 폴더에 있는 프로필 노드의 sling 스크립트에 요청을 전송합니다. 이러한 스크립트는 HTML 양식과 필수 JS/CSS 객체를 모두 취합하기 위한 컨테이너인 JSP 페이지입니다. 페이지에는 다음에 대한 참조가 포함되어 있습니다.
 
 * **xfaforms.I18N.&lt;locale>**:이 라이브러리에는 지역화된 데이터가 포함되어 있습니다.
 * **xfaforms.profile**:이 라이브러리에는 XFA 스크립팅 및 레이아웃 엔진에 대한 구현이 포함되어 있습니다.
@@ -182,5 +182,5 @@ CQ Client Libs에 대한 자세한 내용은 CQ Clientlib [설명서를 참조�
 위에 설명된 대로 프로필 렌더러 JSP는 Sling을 통해 Forms Service를 호출합니다. 또한 이 JSP는 관리 구성 또는 요청 매개 변수를 기반으로 다양한 디버그 옵션을 설정합니다.
 
 개발자는 HTML5 양식을 사용하여 프로필 및 프로필 렌더러를 만들어 양식의 모양을 사용자 정의할 수 있습니다. 예를 들어 HTML 양식을 사용하면 개발자는 기존 HTML 포털의 패널 또는 &lt;div> 섹션에 양식을 통합할 수 있습니다.\
-사용자 정의 프로필 만들기에 대한 자세한 내용은 사용자 정의 프로필 [만들기를 참조하십시오](/help/forms/using/custom-profile.md).\
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
+사용자 정의 프로필 만들기에 대한 자세한 내용은 사용자 정의 프로필 [만들기를 참조하십시오](/help/forms/using/custom-profile.md).
+
