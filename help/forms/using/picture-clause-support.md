@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -61,7 +61,7 @@ Date Picture 절에 대해 지원되는 표현식:
   </tr>
   <tr>
    <td>MM</td> 
-   <td>연중 무휴로 두 자리(01-12) 달<br /> </td> 
+   <td>연중 무휴로 2자리(01-12) 달<br /> </td> 
   </tr>
   <tr>
    <td>MMM</td> 
@@ -109,7 +109,7 @@ HTML Forms에서 숫자 그림 절에 대해 지원되는 **표현식은** 다�
 * num.integer{}
 * num.decimal{}
 * num.currency{}
-* num.%{}
+* num.percent{}
 * num{Numeric Picture Clause Symbols}
 
 <table> 
@@ -211,4 +211,3 @@ HTML5 양식은 다음 텍스트 그림 절 표현식을 지원합니다.
 | 0(영) | 단일 영숫자. |
 | 9 | 한 자리. |
 
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
