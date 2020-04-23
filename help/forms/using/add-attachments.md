@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 184b5c7f-a704-4b8c-b1ec-f4d6616a1afc
 translation-type: tm+mt
-source-git-commit: 07192aee6699fa113db7b7983c548bcd0d291ebb
+source-git-commit: 0ce79686522da4fb3d017068b623c76f81c6b23a
 
 ---
 
@@ -68,7 +68,7 @@ AEM Forms 앱을 사용하면 AEM Forms JEE 서버와 동기화된 양식에 이
 1. 시작한 Notes 사용자 인터페이스에서 자유롭게 자유롭게 자유롭게 자유롭게 그리기를 캡처합니다.
 
    ![자유 인터페이스](assets/scribble-ui.png)
-   **** 그림:자유롭게 *그리기*
+   **그림:** 자유롭게 *그리기*
 
    자유 인터페이스에서 다음 옵션을 사용할 수 있습니다.
 
@@ -85,5 +85,3 @@ AEM Forms OSGi 서버와 동기화된 모바일 양식의 첨부 파일은 AEM F
 AEM Forms OSGi 서버에서 앱에 로드된 적응형 양식에는 양식 수준 첨부가 지원되지 않습니다. 이미지 또는 텍스트 노트를 첨부하려면 작성 시 양식의 필드 수준 첨부 파일을 활성화합니다. 필드의 구성 요소 브라우저에서 첨부 파일 구성 요소를 드래그하여 놓습니다.
 
 적응형 양식의 경우 첨부 파일을 기록 문서(DoR)로 볼 수 있습니다. XFA가 [아닌 적응형 양식에](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)대해서는 기록 문서 생성을 참조하십시오.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
