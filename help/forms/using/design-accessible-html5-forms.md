@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: ccc59dd5-c0cf-415a-b71a-5bc0cf452ede
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -30,5 +30,3 @@ AEM Forms Designer에는 화면 판독기로 전달할 수 있는 여러 가지 
 ![접근성](assets/accessibility.png)
 
 도구 설명, 화면 판독기 텍스트 및 캡션과 같은 여러 옵션을 양식 컨트롤에서 사용할 수 있는 경우 화면 판독기는 이러한 속성 중 하나만 사용합니다. 기본 순서는 사용자 정의 화면 판독기 텍스트, 도구 설명, 캡션 및 이름입니다. [액세서빌러티] 팔레트에서 화면 판독기 우선 순위 **옵션을 사용하여** 기본 순서를 재정의할 수 있습니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
