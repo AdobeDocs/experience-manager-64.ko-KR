@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: process-reporting
 discoiquuid: a1af9920-5d2a-462f-bdee-ccec4c047c5b
 translation-type: tm+mt
-source-git-commit: 9ce0d4c714d8ff55c64a884d90462bcd75629ae0
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -74,4 +74,3 @@ QueryDataServlet 서비스는 프로세스 보고 사용자 인터페이스에�
 
 사용자 지정 보고서를 만드는 단계는 처리 중인 사용자 지정 보고서에서 사용자 지정 보고서 [만들기를 참조하십시오](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
 
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
