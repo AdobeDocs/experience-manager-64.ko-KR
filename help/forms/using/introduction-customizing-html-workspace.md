@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 80a70f5c-dcc4-425f-9971-9e0feec094d6
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -143,7 +143,7 @@ AEM Forms 작업 영역에서 이미지 사용자 지정을 시작하려면 AEM 
 
 HTML 템플릿을 사용하면 작업 영역 사용자 인터페이스의 모양과 레이아웃을 정의할 수 있습니다. 기본 HTML 템플릿을 업데이트하여 레이아웃 기본 사용자 인터페이스를 사용자 정의할 수 있습니다.
 
-HTML 템플릿에 대한 사용자 지정을 위한 최상위 단계는 다음과 같습니다.
+HTML 템플릿 사용자 지정을 위한 최상위 단계는 다음과 같습니다.
 
 * 사용자가 만든 폴더에서 필요한 기본 파일을 복사합니다.
 * 사용자 정의 폴더에 새 템플릿을 추가합니다.
@@ -255,7 +255,7 @@ CRX 패키지는 CRX™ 저장소에 배포할 수 있습니다. 이 제품은 �
    * libs:
 
       * require - require.js 포함
-      * jqueryi - jquery.ui.datepicker.ja.js가 포함되어 있습니다.
+      * jqueryi - jquery.ui.datepicker.ja.js이 포함되어 있습니다.
    * 런타임:
 
       * 템플릿 - AEM Forms 작업 영역에 있는 모든 구성 요소의 HTML 파일 등 모든 템플릿이 포함되어 있습니다.
@@ -300,7 +300,7 @@ CRX 패키지는 CRX™ 저장소에 배포할 수 있습니다. 이 제품은 �
    * libs:
 
       * require - require.js 포함
-      * jqueryi - jquery.ui.datepicker.ja.js가 포함되어 있습니다.
+      * jqueryi - jquery.ui.datepicker.ja.js이 포함되어 있습니다.
    * 런타임:
 
       * 템플릿 - AEM Forms 작업 영역에 있는 모든 구성 요소의 HTML 파일 등 모든 템플릿이 포함되어 있습니다.
@@ -378,4 +378,3 @@ mvn clean -P Dev가 client-pkg에 설치됨
 * content.xml
 * _rep_policy.xml
 
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
