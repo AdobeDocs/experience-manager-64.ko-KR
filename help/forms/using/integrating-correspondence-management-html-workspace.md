@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: f2bde2e8-da95-48ac-a652-85ead87f2cd3
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -114,4 +114,3 @@ AEM 작업 공간에서 편지를 렌더링하고 제출하는 작업을 만들�
    >
    >서신의 모든 필수 변수가 채워질 때까지 제출 단추가 활성화되지 않습니다.
 
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
