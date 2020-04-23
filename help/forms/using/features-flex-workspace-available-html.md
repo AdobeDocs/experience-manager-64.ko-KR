@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ef5c957a-9d5a-42be-ad85-bdca876f56bc
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -27,4 +27,3 @@ AEM Forms 작업 영역은 완전히 새로운 작업 공간입니다. 다음은
 * 사용자 작업에 대한 승인 컨테이너 또는 사용자 지정 컨테이너를 AEM Forms 작업 영역에서 설정할 수 없습니다.
 * 템플릿 검색 옵션은 추적 탭에서 사용할 수 있지만 ToDo 탭에서는 사용할 수 없습니다.
 
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
