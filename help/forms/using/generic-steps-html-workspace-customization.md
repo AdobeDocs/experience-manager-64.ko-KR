@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 54326a05-3fb0-4111-a6ec-230b6473052e
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -90,4 +90,3 @@ source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
 
    URL에 액세스하고 관리자/암호 자격 증명으로 `https://[server]:[port]/lc/ws` 로그인합니다. 브라우저가 로 리디렉션됩니다 `https://[server]:[port]/lc/apps/ws/index.html`.
 
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
