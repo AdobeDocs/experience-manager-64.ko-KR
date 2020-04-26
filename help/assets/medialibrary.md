@@ -3,7 +3,7 @@ title: AEM 자산 및 AEM 미디어 라이브러리에서 사용할 수 있는 �
 description: AEM Assets 및 AEM Media Library에 대한 차이점 등 FAQ입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c5862cce4a061f076486a00685c37326bb4b21d9
+source-git-commit: 48426d3e2bd204b3cfcae217591016c14afafbda
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: c5862cce4a061f076486a00685c37326bb4b21d9
 
 AEM(Adobe Experience Manager) 자산은 AEM 플랫폼의 필수 요소입니다. 이러한 매끄러운 통합은 AEM의 주요 장점으로 보이며 컨텐츠 작성자의 일관성 및 높은 생산성을 보장합니다.
 
-## Frequently asked questions {#frequently-asked-questions}
+## FAQ {#frequently-asked-questions}
 
 ### AEM Assets 소개 {#what-is-aem-assets}
 
@@ -41,10 +41,6 @@ AEM Assets 고객만 사용할 수 있는 고유 기능은 다음과 같습니�
 
 제목, 설명 및 태그 이외의 메타데이터를 편집하려면 AEM 자산에 라이선스를 부여해야 합니다.
 
-#### 내 웹사이트에서 카테고리 조건부를 사용하고 싶다. AEM 자산이 필요합니까? {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
-
-예. Geometrixx Press Center에서 사용되는 다른 모든 구성 요소와 함께 카테고리 조건자는 AEM Assets의 일부이며 AEM Assets 라이선스가 필요합니다.
-
 #### 가져올 때 이미지 크기를 자동으로 조정하려고 합니다. AEM 자산이 필요합니까? {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
 
 아니오. 정적 이미지의 크기 조정 및 자동 워크플로우 기반 변환과 변환 관리 기능은 AEM Media Library에 포함되어 있습니다. 이러한 기능은 AEM Assets 라이선스가 필요하지 않습니다.
@@ -64,3 +60,4 @@ AEM에서 모든 AEM 자산별 워크플로우, 구성 요소, 분류, 옵션 �
 >[!MORELIKETHIS]
 >
 >* [기능 차이점 상세 목록](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/medialibrary.html#listoffeatures)
+
