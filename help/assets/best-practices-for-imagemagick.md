@@ -1,14 +1,14 @@
 ---
-title: AEM 자산에서 작동하도록 ImageMagick 설치 및 구성
+title: AEM Assets에서 작동하도록 ImageMagick 설치 및 구성
 description: ImageMagick 소프트웨어에 대한 자세한 내용, 설치 방법, 명령줄 프로세스 단계 설정, 이미지 축소판 편집, 작성 및 생성 방법 등을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
 
 ---
 
 
-# AEM 자산에서 작동하도록 ImageMagick 설치 및 구성 {#install-and-configure-imagemagick-to-work-with-aem-assets}
+# AEM Assets에서 작동하도록 ImageMagick 설치 및 구성 {#install-and-configure-imagemagick-to-work-with-aem-assets}
 
 ImageMagick은 비트맵 이미지를 생성, 편집, 구성 또는 변환할 수 있는 소프트웨어 플러그인입니다. PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF 및 SVG를 비롯한 다양한 형식(200개 이상)으로 이미지를 읽고 쓸 수 있습니다. ImageMagick을 사용하여 이미지 크기 조정, 대칭 이동, 회전, 왜곡, 기울이기 및 변형 또한 ImageMagick을 사용하여 이미지 색상을 조정하거나 다양한 특수 효과를 적용하거나 텍스트, 선, 다각형, 타원 및 곡선을 그릴 수 있습니다.
 
@@ -18,7 +18,7 @@ ImageMagick을 사용하여 대용량 파일을 처리하려면 일반적인 메
 
 >[!NOTE]
 >
->AMS(Adobe Managed Services)에서 AEM을 사용하는 경우 대규모 PSD 또는 PSB 파일을 처리할 계획인 경우 Adobe 지원 센터에 문의하십시오.
+>AMS(Adobe Managed Services)에서 AEM을 사용하는 경우 대규모 PSD 또는 PSB 파일을 처리할 계획인 경우 Adobe 고객 지원 센터에 문의하십시오. Adobe Experience Manager는 3000 x 23000픽셀이 넘는 매우 고해상도 PSB 파일을 처리하지 못할 수 있습니다.
 
 ## ImageMagick 설치 {#installing-imagemagick}
 
