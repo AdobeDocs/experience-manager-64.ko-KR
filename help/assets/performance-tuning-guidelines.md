@@ -3,7 +3,7 @@ title: 자산 성능 조정 가이드
 description: AEM 구성, 하드웨어, 소프트웨어 및 네트워크 구성 요소에 대한 변경 사항 등 주요 초점 영역을 사용하여 병목 현상을 제거하고 AEM 자산의 성능을 최적화할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82b3998d5c1add6a759812e45ecd08b421d3b0df
+source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
 
 ---
 
@@ -209,11 +209,9 @@ ImageMagick을 사용하여 표현물을 생성하기 위해 DAM 자산 업데�
 
 >[!NOTE]
 >
->ImageMagick policy.xml 및 configure.xml 파일은 /etc/ImageMagick/ 대신 /usr/lib64/ImageMagick-&amp;ast;/config/에서 찾을 수 있습니다. 구성 파일 [위치에 대한 자세한 내용은 ImageMagick 설명서를](https://www.imagemagick.org/script/resources.php) 참조하십시오.
+>ImageMagick `policy.xml` 및 `configure.xml` 파일은 `/usr/lib64/ImageMagick-*/config/` 대신 아래에서 찾을 수 있습니다 `/etc/ImageMagick/`. 구성 [파일 위치에 대한 자세한 내용은 ImageMagick 설명서를](https://www.imagemagick.org/script/resources.php) 참조하십시오.
 
->[!NOTE]
->
->AMS(Adobe Managed Services)에서 AEM을 사용하는 경우 대규모 PSD 또는 PSB 파일을 처리할 계획인 경우 Adobe 지원 센터에 문의하십시오.
+AMS(Adobe Managed Services)에서 AEM을 사용하는 경우 대규모 PSD 또는 PSB 파일을 처리할 계획인 경우 Adobe 고객 지원 센터에 문의하십시오. Adobe Experience Manager는 3000 x 23000픽셀이 넘는 매우 고해상도 PSB 파일을 처리하지 못할 수 있습니다.
 
 <!-- 
 
