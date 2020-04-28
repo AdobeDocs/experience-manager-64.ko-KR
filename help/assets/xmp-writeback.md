@@ -3,7 +3,7 @@ title: 표현물로 XMP 원본에 쓰기
 description: XMP 원본에 쓰기 기능을 사용하여 자산의 메타데이터 변경 내용을 자산의 모든 표현물 또는 특정 표현물에 전파하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5ef4c4e42165819191c6e3810c36183110f3f34a
+source-git-commit: eb135e5898fe521498eecae7109b39f54d274cce
 
 ---
 
@@ -46,7 +46,7 @@ XMP 원본에 쓰기 기능을 사용하여 변환 축소판 140.100.png 및 319
 
 1. Experience Manager에서 도구 > 워크플로우 **[!UICONTROL > 모델로 이동합니다]**.
 1. 모델 [!UICONTROL 페이지에서] DAM 메타데이터 **[!UICONTROL 쓰기]** 워크플로우 모델을 엽니다.
-1. DAM 메타데이터 **[!UICONTROL 원본에]** 쓰기 **[!UICONTROL 속성 페이지에서 XMP]** 쓰기 프로세스 단계를엽니다.
+1. DAM 메타데이터 **[!UICONTROL 쓰기]** 저장(Writeback) 속성 페이지에서 XMP **[!UICONTROL 작성 프로세스]** 단계를 엽니다.
 1. 단계 **[!UICONTROL 속성]** 대화 상자에서 프로세스 **[!UICONTROL 탭을 탭/클릭합니다]** .
 1. 인수 **[!UICONTROL 상자에서]** 을 추가합니다 `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`. Tap/click **[!UICONTROL OK]**.
 
@@ -73,7 +73,7 @@ XMP 메타데이터를 화이트 리스트 필터링하면 가져올 XMP 속성�
 
 >[!NOTE]
 >
->필터링은 자산 바이너리의 XMP 소스에서 파생된 속성에만 작동합니다. EXIF 및 IPTC 포맷과 같이 XMP 소스가 아닌 소스에서 파생된 속성의 경우 필터링이 작동하지 않습니다. 예를 들어 에셋 작성 날짜는 EXIF TIFF `CreateDate` 에서 명명된 속성에 저장됩니다. AEM에서는 이 값이 이름이 `exif:DateTimeOriginal`지정된 메타데이터 필드에 있습니다. 소스가 XMP 소스가 아니므로 이 속성에서는 필터링이 작동하지 않습니다.
+>필터링은 자산 바이너리의 XMP 소스에서 파생된 속성에만 작동합니다. EXIF 및 IPTC 포맷과 같이 XMP 소스가 아닌 소스에서 파생된 속성의 경우 필터링이 작동하지 않습니다. 예를 들어 에셋 작성 날짜는 EXIF TIFF `CreateDate` 에서 명명된 속성에 저장됩니다. AEM에서는 이 값을 이름이 `exif:DateTimeOriginal`있는 메타데이터 필드에 저장합니다. 소스가 XMP 소스가 아니므로 이 속성에서는 필터링이 작동하지 않습니다.
 
 1. 에서 구성 관리자를 엽니다 `https://[aem_server]:[port]/system/console/configMgr`.
 1. Adobe CQ **[!UICONTROL DAM XmpFilter 구성을]** 엽니다.
