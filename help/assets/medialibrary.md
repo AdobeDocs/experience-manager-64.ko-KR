@@ -3,7 +3,7 @@ title: AEM 자산 및 AEM 미디어 라이브러리에서 사용할 수 있는 �
 description: AEM Assets 및 AEM Media Library에 대한 차이점 등 FAQ입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 48426d3e2bd204b3cfcae217591016c14afafbda
+source-git-commit: 6a1013715c538c39eaf40a22dbffc7f2df36f968
 
 ---
 
@@ -51,7 +51,7 @@ AEM Assets 고객만 사용할 수 있는 고유 기능은 다음과 같습니�
 
 ### AEM 자산에 라이선스를 부여하지 않은 경우 사용자가 AEM 자산을 사용하지 못하도록 하려면 어떻게 해야 합니까? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
 
-AEM에서 모든 AEM 자산별 워크플로우, 구성 요소, 분류, 옵션 및 AEM 자산 관리자를 제거할 수 있습니다. 이렇게 하면 사용자가 라이선스가 부여되지 않은 AEM 자산 기능을 실수로 사용할 수 없습니다.
+AEM에서 모든 AEM 자산별 워크플로우, 구성 요소, 분류, 옵션 및 AEM 자산 관리자를 제거할 수 있습니다. 이렇게 하면 사용자가 라이선스를 부여하지 않은 AEM 자산 기능을 실수로 사용하지 못하도록 할 수 있습니다.
 
 ### 페이지에 이미지를 추가하고 이미지를 자르고 크기를 조정하려고 합니다. AEM 자산이 필요합니까? {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
 
