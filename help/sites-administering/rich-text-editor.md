@@ -3,7 +3,7 @@ title: 리치 텍스트 편집기 구성
 description: AEM 리치 텍스트 편집기를 구성하는 방법에 대해 학습합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
+source-git-commit: 7849a3e2d9d8241382652fb1c8e6e302ffd853e0
 
 ---
 
@@ -161,6 +161,15 @@ Touch UI의 대화 상자 편집 모드에 적용되는 다음 속성을 구성�
 * `rte-start`:RTE 편집을 시작할 `contenteditable-div` 때 RTE에서 이 이벤트를 트리거합니다. 이 작업은 true로 설정된 경우에만 `customStart` 작동합니다.
 
 터치 활성화 대화 상자에서 RTE를 사용하는 경우 문제를 방지하려면 속성을 true `useFixedInlineToolbar` 로 설정해야 합니다.
+
+## 즉석 편집 사용자 정의 {#customizing-in-place-editing}
+
+다음 속성을 구성하여 텍스트 편집기에서 시작하는 HTML 선택기를 정의할 수 있습니다.
+
+* **`editElementQuery`** - 에 정의된 `cq:InplaceEditingConfig`이 속성은 텍스트 구성 요소에 대한 인라인 편집을 시작할 HTML 요소의 선택기를 지정하는 데 사용됩니다. 지정하지 않으면 인라인 편집이 텍스트 구성 요소 HTML에서 직접 시작됩니다.
+* **`textPropertyName`** - 에 정의된 `cq:InplaceEditingConfig`이 속성은 텍스트 구성 요소의 HTML 값이 인라인 편집 후에 유지될 컨텐츠 노드에 저장되는 속성의 이름을 지정하는 데 사용됩니다.
+
+대화 상자의 해당 속성은 입니다 `name`.
 
 ## 플러그인을 활성화하여 RTE 기능 활성화 {#enable-rte-functionalities-by-activating-plug-ins}
 
