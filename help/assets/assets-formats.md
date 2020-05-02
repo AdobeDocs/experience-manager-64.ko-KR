@@ -3,7 +3,7 @@ title: AEM 자산에서 지원되는 파일 포맷
 description: AEM Assets에서 지원하는 파일 형식 및 MIME 유형 및 각 형식에 대해 지원되는 기능의 목록입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b54b51f03f8d5f8b9fd5888f4b59510bfd7847a8
+source-git-commit: d4539e538c299f3b2a076ef4fa60f7013621394e
 
 ---
 
@@ -74,7 +74,7 @@ AEM Assets를 다른 표준을 준수하는 DAM(Digital Asset Management) 솔루
 
 * EPS 파일의 경우 PS-Adobe(PostScript Document Structuring Convention) 버전 3.0 이상에서 메타데이터 원본에 대한 지원이 지원됩니다.
 
-## Dynamic Media에서 지원되지 않는 래스터 이미지 형식(#unsupported-image-formats-dynamic-media)
+## Dynamic Media에서 지원되지 않는 래스터 이미지 형식 {#unsupported-image-formats-dynamic-media}
 
 다음 목록은 Dynamic Media에서 지원되지 *않는* 래스터 이미지 파일 포맷의 하위 유형에 대해 설명합니다.
 
