@@ -3,7 +3,10 @@ title: AEM 자산에서 지원되는 파일 포맷
 description: AEM Assets에서 지원하는 파일 형식 및 MIME 유형 및 각 형식에 대해 지원되는 기능의 목록입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d4539e538c299f3b2a076ef4fa60f7013621394e
+source-git-commit: 1f93b2b0c8b1a4e55a67c11937b9c5ce4076ee2a
+workflow-type: tm+mt
+source-wordcount: '1878'
+ht-degree: 8%
 
 ---
 
@@ -77,6 +80,8 @@ AEM Assets를 다른 표준을 준수하는 DAM(Digital Asset Management) 솔루
 ## Dynamic Media에서 지원되지 않는 래스터 이미지 형식 {#unsupported-image-formats-dynamic-media}
 
 다음 목록은 Dynamic Media에서 지원되지 *않는* 래스터 이미지 파일 포맷의 하위 유형에 대해 설명합니다.
+
+Dynamic [Media에서 지원되지 않는 파일 형식 감지를 참조하십시오](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
 
 * IDAT 청크 크기가 100MB보다 큰 PNG 파일
 * PSB 파일.
