@@ -3,9 +3,9 @@ title: 메타데이터 스키마
 description: '메타데이터 스키마는 속성 페이지의 레이아웃과 자산에 대해 표시되는 메타데이터 속성을 정의합니다. 사용자 정의 메타데이터 스키마를 만들고 메타데이터 스키마를 편집하며 자산에 메타데이터 스키마를 적용하는 방법을 알아봅니다.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1a6c2e9603ae8cb5017abd9bec9fe0c3fdf62dea
+source-git-commit: c5317d96ed5fccbc1bf03176f75dbaec6d8cb0b4
 workflow-type: tm+mt
-source-wordcount: '2527'
+source-wordcount: '2528'
 ht-degree: 4%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 4%
 
 # 메타데이터 스키마 {#metadata-schemas}
 
-메타데이터 스키마 [!DNL Experience Manager Assets]는 속성 페이지의 레이아웃과 특정 스키마를 사용하는 자산에 대해 표시되는 메타데이터 속성을 정의합니다. 메타데이터 속성에는 제목, 설명, MIME 유형, 태그 등이 포함됩니다.
+메타데이터 스키마 [!DNL Experience Manager Assets]는 속성 페이지의 레이아웃과 특정 스키마를 사용하는 자산에 대해 표시되는 메타데이터 속성을 정의합니다. 메타데이터 속성에는 제목, 설명, MIME 유형, 태그 등이 포함됩니다. 메타데이터 스키마 양식 편집기를 사용하여 기존 스키마를 수정하거나 사용자 정의 메타데이터 스키마를 추가할 수 있습니다.
 
-메타데이터 스키마 양식 편집기를 사용하여 기존 스키마를 수정하거나 사용자 정의 메타데이터 스키마를 추가할 수 있습니다. 자산에 대한 속성 페이지를 보고 편집하려면 다음 단계를 따르십시오.
+자산에 대한 속성 페이지를 보고 편집하려면 다음 단계를 따르십시오.
 
 1. 카드 보기의 자산 타일에 **[!UICONTROL 있는]** 빠른 작업에서 속성 보기를 클릭하거나 탭합니다.
 
@@ -25,7 +25,7 @@ ht-degree: 4%
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
-1. 사용 가능한 탭에서 편집 가능한 메타데이터 속성을 편집할 수 있습니다. 하지만 속성 페이지의 [!UICONTROL 기본] 탭에서 자산 유형 [!UICONTROL 을] 수정할 수는 없습니다.
+1. 사용 가능한 탭에서 다양한 편집 가능한 메타데이터 속성을 편집할 수 있습니다. 하지만 속성 페이지의 [!UICONTROL 기본] 탭에서 자산 유형 [!UICONTROL 을] 수정할 수는 없습니다.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
