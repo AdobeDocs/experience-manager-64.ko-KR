@@ -3,18 +3,21 @@ title: 웹 페이지에서 페이지 추적기 및 포함 코드 사용
 description: Adobe Analytics에서 자산 관련 사용 데이터를 캡처할 수 있도록 페이지 추적기를 포함하고 웹 사이트 코드에 JavaScript 코드를 포함하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '181'
+ht-degree: 0%
 
 ---
 
 
-# 웹 페이지에서 페이지 추적기 및 포함 코드 사용 {#using-page-tracker-and-embed-code-in-web-pages}
+# Using Page Tracker and Embed code in web pages {#using-page-tracker-and-embed-code-in-web-pages}
 
-페이지 추적기는 Adobe Analytics가 이러한 웹 사이트의 AEM(Adobe Experience Manager) 자산과 관련된 사용 데이터를 캡처할 수 있도록 타사 웹 사이트의 코드에 포함하는 JavaScript 코드입니다.
+페이지 추적기는 Adobe Analytics가 이러한 웹 사이트의 AEM(Adobe Experience Manager) 자산에 대한 사용 데이터를 캡처할 수 있도록 타사 웹 사이트의 코드에 포함되는 JavaScript 코드 일부입니다.
 
-클릭 등과 같은 자산 관련 이벤트를 캡처하려면 타사 웹 사이트의 코드에 포함 코드를 포함시킵니다.
+클릭 등과 같은 자산을 위한 이벤트를 캡처하려면 타사 웹 사이트의 코드에 포함 코드를 포함시켜야 합니다.
 
-다음 샘플 코드는 페이지 추적기 코드와 포함 코드를 모두 포함하는 웹 페이지의 모양을 표시합니다.
+다음 샘플 코드는 페이지 추적기 코드와 포함 코드가 모두 포함된 웹 페이지의 모양을 보여줍니다.
 
 ```
 <!DOCTYPE html>
