@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: 58482f492b7a44685af2c69b2df9aec47812d989
+source-git-commit: fbf38e7e41ef33bca5867c7b6eb1f6806ca70a08
 workflow-type: tm+mt
 source-wordcount: '2865'
 ht-degree: 31%
@@ -47,7 +47,6 @@ AEM을 WCM으로 사용하는 경우 다이내믹 미디어 자산을 페이지�
 1. 사용할 Dynamic Media 구성 요소를 원하는 위치의 페이지로 드래그합니다.
 1. 마우스 포인터를 구성 요소에 바로 놓습니다. 구성 요소 주위에 파란색 상자가 표시되면 한 번 눌러 구성 요소의 도구 모음을 표시합니다. 구성( **[!UICONTROL 렌치]** ) 아이콘을 누릅니다.
 1. [필요에 따라 구성 요소를](#dynamic-media-components) 편집하고 체크 표시를 클릭하여 변경 사항을 저장합니다.
-1. 
 
 ### Dynamic Media 구성 요소 활성화 {#enabling-dynamic-media-components}
 
