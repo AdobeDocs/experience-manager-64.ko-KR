@@ -3,9 +3,9 @@ title: 자산 성능 조정 가이드
 description: 병목 현상을 제거하고 AEM 자산의 성능을 최적화하기 위해 AEM 구성, 하드웨어, 소프트웨어 및 네트워크 구성 요소에 대한 주요 초점 영역
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
 workflow-type: tm+mt
-source-wordcount: '3201'
+source-wordcount: '3202'
 ht-degree: 0%
 
 ---
@@ -417,6 +417,6 @@ AEM의 대용량 파일과 관련하여 알려진 두 가지 주요 문제가 �
 * DAM 자산 업데이트 워크플로우에서 불필요한 단계를 제거합니다.
 * 워크플로우 및 버전 제거를 구성합니다.
 * Lucene 인덱스 구성을 최적화합니다.
-* 최신 서비스 팩 및 핫픽스를 사용하여 색인을 최적화할 수 있습니다. Adobe 지원 센터에서 추가 색인 최적화를 확인하십시오.
+* 최신 서비스 팩 및 핫픽스를 사용하여 색인을 최적화할 수 있습니다. 사용 가능한 추가적인 색인 최적화는 Adobe 고객 지원 센터에 문의하십시오.
 * 쿼리 성능 `guessTotal` 을 최적화하는 데 사용합니다.
 * AEM을 구성하여 파일 컨텐츠에서 파일 유형을 검색하도록 구성하는 경우( [!UICONTROL AEM 웹 콘솔에서] CQ DAM Mime 유형 서비스 [!UICONTROL 구성), 사용량이 적은 시간 동안 많은 파일]을 일괄 업로드하면 작업이 리소스를 많이 소모하기 때문입니다.
