@@ -4,9 +4,9 @@ description: AEM 자산의 터치에 적합한 사용자 인터페이스를 사�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c564271c88de0183df81557f1e3ab00eafb44b34
+source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
 workflow-type: tm+mt
-source-wordcount: '9812'
+source-wordcount: '9813'
 ht-degree: 1%
 
 ---
@@ -142,7 +142,7 @@ Dynamic Media를 사용하면 FTP 서버를 통해 자산을 일괄 업로드할
 
 >[!NOTE]
 >
->다이내믹 미디어의 FTP를 통해 자산을 업로드하려면 - AEM 작성자의 Scene7 모드 설치 기능 팩(FP) 18912입니다. FP-18912에 액세스하고 FTP 계정 설정을 완료하려면 Adobe 지원에 문의하십시오. See [Installing feature pack 18912 for bulk asset migration](/help/assets/bulk-ingest-migrate.md).
+>다이내믹 미디어의 FTP를 통해 자산을 업로드하려면 - AEM 작성자의 Scene7 모드 설치 기능 팩(FP) 18912입니다. FP-18912에 액세스하고 FTP 계정 설정을 완료하려면 Adobe 고객 지원 센터에 문의하십시오. See [Installing feature pack 18912 for bulk asset migration](/help/assets/bulk-ingest-migrate.md).
 자산 업로드에 FTP를 사용하는 경우 AEM에 지정된 업로드 설정이 무시됩니다. 대신 Dynamic Media Classic에 정의된 파일 처리 규칙이 사용됩니다.
 
 **FTP를 사용하여 자산을 업로드하려면**
