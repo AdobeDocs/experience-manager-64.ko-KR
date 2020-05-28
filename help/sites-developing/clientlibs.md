@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 619de2e4-d7bd-4ca6-9763-1efa8b2dec05
 translation-type: tm+mt
-source-git-commit: 263e66f6a24a68e1fd64e1b35bf4830f4cba3a44
+source-git-commit: 50d57997496e6809361277f7025f3858857e14af
 workflow-type: tm+mt
 source-wordcount: '2889'
 ht-degree: 0%
@@ -134,7 +134,7 @@ JavaScript 및 CSS(Cascading Style Sheet) 라이브러리를 정의하고 HTML �
 
 >[!NOTE]
 >
->클라이언트 라이브러리 폴더 아래의 정적 리소스는 리소스라는 폴더에 있어야 *합니다*. 이미지 등의 정적 리소스를 폴더 리소스 아래에 *있는*&#x200B;경우 게시 인스턴스에서 참조할 수 없습니다. 다음은 한 예입니다. http://localhost:4503/etc.clientlibs/geometrixx/components/clinetlibs/resources/example.gif
+>클라이언트 라이브러리 폴더 아래의 정적 리소스는 리소스라는 폴더에 있어야 *합니다*. 이미지 등의 정적 리소스를 폴더 리소스 아래에 *있는*&#x200B;경우 게시 인스턴스에서 참조할 수 없습니다. 다음은 한 예입니다. http://localhost:4503/etc.clientlibs/geometrixx/components/clientlibs/resources/example.gif
 
 >[!NOTE]
 >
