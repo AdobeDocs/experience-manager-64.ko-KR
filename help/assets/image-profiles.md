@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: 036bb0f6fc00a089e282145cbfde2d48a098ede9
+source-git-commit: 3a9b145395b5a251071129b0cee5ad57ca32fff6
 workflow-type: tm+mt
-source-wordcount: '2626'
+source-wordcount: '2627'
 ht-degree: 2%
 
 ---
@@ -28,11 +28,11 @@ ht-degree: 2%
 
 ## Crop options {#crop-options}
 
-선택할 수 있는 두 가지 이미지 자르기 옵션과 색상 및 이미지 견본 생성을 자동화하는 옵션이 있습니다.
+<!-- CQDOC-16069 -->Smart Crop coordinates are aspect ratio dependent. That is, for the various smart crop settings in an image profile, if the aspect ratio is the same for the added dimensions that are in the image profile, then the same aspect ratio is sent to Dynamic media. Because of this, Adobe recommends that you use the same crop area. Doing so will ensure that there is no impact to different dimensions used in the image profile.
 
->[!IMPORTANT]
->
->만드는 각 스마트 자르기 생성에는 추가 처리가 필요합니다. 예를 들어 5개 이상의 스마트 자르기 종횡비를 추가하면 자산 처리 속도가 느려질 수 있습니다. 또한 시스템에서 로드가 증가할 수 있습니다. 폴더 수준에서 스마트 자르기를 적용할 수 있으므로 필요한 폴더에서만 ** 사용하는 것이 좋습니다.
+만드는 각 스마트 자르기 생성에는 추가 처리가 필요합니다. 예를 들어 5개 이상의 스마트 자르기 종횡비를 추가하면 자산 처리 속도가 느려질 수 있습니다. 또한 시스템에서 로드가 증가할 수 있습니다. 폴더 수준에서 스마트 자르기를 적용할 수 있으므로 필요한 폴더에서만 ** 사용하는 것이 좋습니다.
+
+선택할 수 있는 이미지 자르기 옵션이 두 개 있습니다. 또한 색상 및 이미지 견본 생성을 자동화하는 옵션도 있습니다.
 
 <table> 
  <tbody> 
@@ -51,7 +51,7 @@ ht-degree: 2%
      <li>자르기 시작 지점: 왼쪽은 X, 상쪽은 Y</li> 
      <li>수평 계산: 원본 이미지의 가로 픽셀 치수에서 [왼쪽]을 뺀 다음 [오른쪽]을 뺀 값.</li> 
      <li>세로 계산: 세로 픽셀 높이를 위쪽에서 뺀 다음 아래쪽을 뺀 것입니다.</li> 
-    </ul> <p>예를 들어 4000 x 3000픽셀 이미지를 가지고 있다고 가정합니다. 값을 사용합니다. Top=250; 아래쪽=500; 왼쪽=300; 오른쪽=700.</p> <p>(4000-300-700, 3000-250-500 또는 3000,2250)의 칠 공간을 사용하여 왼쪽 상단에서 자르십시오.</p> </td> 
+    </ul> <p>예를 들어 4000 x 3000픽셀 이미지를 가지고 있다고 가정합니다. 값을 사용합니다. 위쪽=250, 아래쪽=500, 왼쪽=300, 오른쪽=700.</p> <p>(4000-300-700, 3000-250-500 또는 3000,2250)의 칠 공간을 사용하여 왼쪽 상단에서 자르십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>스마트 자르기</td> 
@@ -74,7 +74,7 @@ Unsharp **Mask** 를 사용하면 최종 다운샘플링된 이미지에 선명 
 
 >[!NOTE]
 >
->Unsharp mask는 50% 이상 다운샘플링된 PTIFF(피라미드형 tiff) 내의 축소된 변환에만 적용됩니다. 즉, 축소판과 같은 작은 크기의 표현물은 변경되지만 tiff 내의 가장 큰 크기의 변환은 언샵 마스크의 영향을 받지 않습니다(그리고 언샵 마스크 표시).
+>Unsharp mask는 50% 이상 다운샘플링된 PTIFF(피라미드형 tiff) 내의 축소된 변환에만 적용됩니다. 즉, PTIFF 내의 가장 큰 크기의 변환은 언샵 마스크의 영향을 받지 않으며, 축소판과 같은 작은 크기의 변환이 변경됩니다(그리고 언샵 마스크 표시).
 
 언샵 마스크 **에**&#x200B;다음과 같은 필터링 옵션이 있습니다.
 
@@ -248,7 +248,7 @@ Sharpening is described in [Sharpening Images](/help/assets/assets/s7_sharpening
    * 스마트 자르기 상자를 이동합니다. 다음 중 하나를 수행합니다.
 
       * 이미지에 스마트 자르기 또는 스마트 색상 견본만 있으면 자르기 상자를 새 위치로 드래그합니다.
-      * 이미지에 스마트 자르기 및 스마트 색상 견본이 모두 있는 경우 스마트 자르기 상자를 새 위치로 드래그합니다. 또는 이미지 아래의 스마트 견본을 누르거나 클릭한 다음(색상 견본은 정적입니다) 스마트 견본 자르기 상자를 새로운 위치로 드래그합니다.
+      * 이미지에 스마트 자르기 및 스마트 색상 견본이 모두 있는 경우 스마트 자르기 상자를 새 위치로 드래그합니다. 또는 이미지 아래에 있는 스마트 색상 견본을 누른 다음(색상 견본은 정적) 스마트 견본 자르기 상자를 새로운 위치로 드래그합니다.
       ![edit_smart_crops-move](assets/edit_smart_crops-move.png)
 
    * 모든 편집 내용을 실행 취소하고 원본 스마트 자르기 또는 스마트 견본을 복원합니다(현재 편집 세션에만 적용).
@@ -280,6 +280,6 @@ Sharpening is described in [Sharpening Images](/help/assets/assets/s7_sharpening
 1. AEM 로고를 누르고 **[!UICONTROL 자산]** 으로 이동한 다음 이미지 프로필을 제거할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 눌러 선택한 다음 속성을 **[!UICONTROL 누릅니다]**.
 1. 이미지 프로필 **[!UICONTROL 탭을]** 선택합니다.
-1. 프로필 **[!UICONTROL 이름]** 드롭다운 메뉴에서 없음 **[!UICONTROL 을]**&#x200B;선택한 다음 **[!UICONTROL 저장 및]**&#x200B;닫기를 누릅니다.
+1. 프로필 **[!UICONTROL 이름]** 드롭다운 목록에서 없음 **[!UICONTROL 을]**&#x200B;선택한 다음 **[!UICONTROL 저장 및]**&#x200B;닫기를 누릅니다.
 
    프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
