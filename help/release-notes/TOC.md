@@ -2,9 +2,12 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Release Notes
+user-guide-title: AEM 6.4 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
+source-git-commit: 04002fdd004e11ec7a4a950dac6565fec109e55d
+workflow-type: tm+mt
+source-wordcount: '68'
+ht-degree: 41%
 
 ---
 
@@ -14,6 +17,7 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
 + [AEM 6.4 개요](home.md)
 + [일반 릴리스 노트](release-notes.md)
 + [서비스 팩 릴리스 노트](sp-release-notes.md)
++ [누적 수정 팩 릴리스 정보](cfp-release-notes.md)
 + [AEM Sites 릴리스 노트](sites.md)
 + [AEM Assets 릴리스 노트](assets.md)
 + [AEM Forms 릴리스 노트](forms.md)
