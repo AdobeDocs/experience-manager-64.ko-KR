@@ -3,14 +3,17 @@ title: Camera Raw 지원
 description: Adobe Experience Manager Assets에서 Camera Raw 지원을 활성화하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 2%
 
 ---
 
 
 # Camera Raw를 사용하여 이미지 처리 지원 {#camera-raw-support}
 
-Camera Raw 지원을 통해 CR2, NEF 및 RAF와 같은 Raw 파일 포맷을 처리하고 이미지를 JPEG 포맷으로 렌더링할 수 있습니다. 이 기능은 Adobe Experience Manager Assets에서 패키지 공유를 통해 [사용할 수 있는 Camera Raw 패키지를](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) 사용하여 지원됩니다.
+Camera Raw 지원을 통해 CR2, NEF 및 RAF와 같은 Raw 파일 포맷을 처리하고 이미지를 JPEG 포맷으로 렌더링할 수 있습니다. 이 기능은 패키지 공유 또는 소프트웨어 배포를 통해 사용할 수 있는 [Camera Raw 패키지를](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) 사용하여 Adobe Experience Manager Assets에서 [지원됩니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg).
 
 >[!NOTE]
 >
@@ -18,57 +21,59 @@ Camera Raw 지원을 통해 CR2, NEF 및 RAF와 같은 Raw 파일 포맷을 처�
 
 Adobe Experience Manager Assets에서 Camera Raw 지원을 활성화하려면 다음 단계를 수행하십시오.
 
-1. 패키지 [공유에서 Camera Raw 패키지를](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) 다운로드합니다.
+1. 패키지 공유 또는 소프트웨어 배포 [에서](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw 패키지를 [다운로드합니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg).
 
 1. 액세스 `https://[aem_server]:[port]/workflow`. DAM 자산 **[!UICONTROL 업데이트 워크플로우를]** 엽니다.
 
-1. [프로세스 **[!UICONTROL 축소판] 단계를]** 엽니다.
+1. [축소판 **[!UICONTROL 처리] 단계를]** 엽니다.
 
-1. [축소판] 탭에서 다음 구성을 **[!UICONTROL 제공합니다]** .
+1. [축소판] **[!UICONTROL 탭에서 다음 구성을]** 제공합니다.
 
    * **[!UICONTROL 축소판]**: `140:100:false, 48:48:false, 319:319:false`
    * **[!UICONTROL MIME 유형 건너뛰기]**: `skip:image/dng, skip:image/x-raw-(.*)`
-   ![변기](assets/chlimage_1-334.png)
 
-1. 웹 **[!UICONTROL 사용 이미지]** 탭의 목록 **[!UICONTROL 건너뛰기]** 필드에서 `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`을지정합니다.
+   ![천하](assets/chlimage_1-334.png)
 
-   ![변기](assets/chlimage_1-335.png)
+1. [ **[!UICONTROL 웹 사용 이미지]** ] 탭의 [ **[!UICONTROL 건너뛰기 목록]** ] 필드에서 `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`을 지정합니다.
 
-1. 사이드 패널에서 축소판 **[!UICONTROL 작성]** 단계 아래에 Camera Raw/DNG 핸들러 **[!UICONTROL 단계를]** 추가합니다.
+   ![천하](assets/chlimage_1-335.png)
 
-1. Camera **[!UICONTROL Raw/DNG 핸들러]** 단계에서 [인수] **[!UICONTROL 탭에 다음 구성을 추가합니다]** .
+1. 사이드 패널에서 축소판 만들기 **[!UICONTROL 단계 아래에]** Camera Raw/DNG 핸들러 **[!UICONTROL 단계를]** 추가합니다.
 
-   * **[!UICONTROL MIME 유형]**: `image/dng` 및 `image/x-raw-(.*)`
+1. Camera **[!UICONTROL Raw/DNG 처리기]** 단계의 [인수] **[!UICONTROL 탭에서 다음 구성을]** 추가합니다.
+
+   * **[!UICONTROL MIME 형식]**: `image/dng` and `image/x-raw-(.*)`
    * **[!UICONTROL Command]**:
 
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.web.1280.1280.jpeg 1280 1280`
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.319.319.jpeg 319 319`
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.140.100.jpeg 140 100`
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.48.48.jpeg 48 48`
+
    ![chlimage_1-336](assets/chlimage_1-336.png)
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 >[!NOTE]
 >
->위의 구성이 Camera RAW 및 DNG 처리 단계 **[!UICONTROL 구성을 사용하여 샘플 DAM 업데이트 자산과 동일한지 확인합니다]** .
+>위의 구성이 Camera RAW 및 DNG 처리 단계 **** 구성으로 DAM 자산 업데이트 샘플과 동일한지 확인합니다.
 
-이제 Camera Raw 파일을 AEM Assets로 가져올 수 있습니다. Camera RAW 패키지를 설치하고 필요한 작업 과정을 구성하면 **[!UICONTROL [이미지 조정]** ] 옵션이 사이드 창 목록에 나타납니다.
+이제 AEM Assets로 Camera Raw 파일을 가져올 수 있습니다. Camera RAW 패키지를 설치하고 필요한 워크플로우를 구성한 후 **[!UICONTROL 사이드 창]** 목록에 이미지 조정 옵션이 나타납니다.
 
-![chlimage_1-338](assets/chlimage_1-337.png)
+![chlimage_1-337](assets/chlimage_1-337.png)
 
-*그림:사이드 창의 옵션*
+*그림: 사이드 창의 옵션*
 
 ![chlimage_1-338](assets/chlimage_1-338.png)
 
-*그림:옵션을 사용하여 이미지를 간단하게 편집*
+*그림: 옵션을 사용하여 이미지를 간단하게 편집*
 
-편집 내용을 Camera Raw 이미지에 저장하면 이미지에 대한 새 변환이 `AdjustedPreview.jpg` 생성됩니다. Camera Raw를 제외한 다른 이미지 유형의 경우 변경 사항이 모든 변환에 반영됩니다.
+편집 내용을 Camera Raw 이미지에 저장한 후 이미지에 대한 새 변환 `AdjustedPreview.jpg` 이 생성됩니다. Camera Raw를 제외한 다른 이미지 유형의 경우 변경 사항이 모든 변환에 반영됩니다.
 
 ## 모범 사례, 알려진 문제 및 제한 사항 {#best-practices}
 
 기능에는 다음과 같은 제한 사항이 있습니다.
 
 * 이 기능은 JPEG 변환만 지원합니다. Windows 64비트, Mac OS 및 RHEL 7.x에서 지원됩니다.
-* RAW 및 DNG 포맷에는 메타데이터 원본에 대한 지원이 지원되지 않습니다.
-* Camera Raw 라이브러리에는 한 번에 처리할 수 있는 전체 픽셀에 대한 제한이 있습니다. 현재, 파일의 긴 쪽에서 최대 65,000픽셀이나 어떤 기준이든 먼저 발견된 512MP를 처리할 수 있습니다.
+* 메타데이터 원본에 대해서는 RAW 및 DNG 포맷이 지원되지 않습니다.
+* Camera Raw 라이브러리에는 한 번에 처리할 수 있는 총 픽셀 수가 제한되어 있습니다. 현재 파일 긴 면에서 최대 65000픽셀이나 어떤 기준이든 먼저 발견된 512MP를 처리할 수 있습니다.
