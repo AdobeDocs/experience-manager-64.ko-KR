@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: Configuration
 discoiquuid: 71412f5d-ff34-415f-baf8-d300756b93a9
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 17f5041c16996ec3f230650451a816c08170837c
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 1%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 
 그룹에 사용자를 할당하여 OSGi에서 AEM Forms 관리
 
-그룹을 [만들고](/help/sites-administering/user-group-ac-admin.md#group-administration) AEM의 그룹에 정책 및 [사용자를](/help/sites-administering/user-group-ac-admin.md#user-administration) 할당할 수 있습니다. 이러한 정책은 그룹의 일부인 사용자의 권한을 제어합니다.
+그룹을 [만들고](/help/sites-administering/user-group-ac-admin.md#group-administration) 정책 및 [사용자를](/help/sites-administering/user-group-ac-admin.md#user-administration) AEM의 그룹에 할당할 수 있습니다. 이러한 정책은 그룹의 일부인 사용자의 권한을 제어합니다.
 
-AEM [Forms Add-on 패키지를](/help/forms/using/installing-configuring-aem-forms-osgi.md)설치하면 양식 사용자 및 양식 파워 유저 등 이 문서에 언급된 그룹을 자동으로 할당할 수 있습니다. 다음 표에는 그룹 할당을 기반으로 OSGi에서 사용자가 AEM Forms에 대해 수행할 수 있는 작업이 나와 있습니다.
+AEM [Forms Add-on 패키지를](/help/forms/using/installing-configuring-aem-forms-osgi.md)설치하면 양식 사용자 및 양식 파워 유저 등 이 아티클에 언급된 그룹을 자동으로 할당할 수 있습니다. 다음 표에는 그룹 할당을 기반으로 OSGi에서 사용자가 AEM Forms에 대해 수행할 수 있는 작업이 나열되어 있습니다.
 
 <table> 
  <tbody>
@@ -30,7 +33,7 @@ AEM [Forms Add-on 패키지를](/help/forms/using/installing-configuring-aem-for
    <td>작업</td> 
   </tr>
   <tr>
-   <td>양식 사용자 <sup><a href="#main-pars-text">[1]</a></sup></td> 
+   <td>forms-user <sup><a href="#main-pars-text">[1]</a></sup></td> 
    <td>
     <ul> 
      <li>적응형 양식 작성, 미리 보기, 게시 및 제출</li> 
@@ -60,18 +63,10 @@ AEM [Forms Add-on 패키지를](/help/forms/using/installing-configuring-aem-for
     </ul> </td> 
   </tr>
   <tr>
-   <td>템플릿 작성자 <sup><a href="#main-pars-text">[2]</a></sup></td> 
+   <td>template-authors <sup><a href="#main-pars-text">[2]</a></sup></td> 
    <td>
     <ul> 
-     <li>적응형 양식 또는 인터랙티브한 커뮤니케이션 템플릿 제작 및 미리 보기</li> 
-    </ul> </td> 
-  </tr>
-  <tr>
-   <td>template-power-user</td> 
-   <td>
-    <ul> 
-     <li>적응형 양식 또는 인터랙티브한 커뮤니케이션 템플릿 제작 및 미리 보기</li> 
-     <li>코드 편집기를 사용하여 적응형 양식 또는 인터랙티브한 커뮤니케이션 템플릿을 위한 스크립트 작성</li> 
+     <li>적응형 양식 또는 인터랙티브한 커뮤니케이션 템플릿 작성 및 미리 보기</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -116,6 +111,6 @@ AEM [Forms Add-on 패키지를](/help/forms/using/installing-configuring-aem-for
  </tbody>
 </table>
 
-1. 양식 사용자 그룹 권한이 있는 사용자는 적응형 양식에 대한 스크립트를 작성할 수 없습니다.
+1. 양식 사용자 그룹 권한이 있는 사용자는 응용 양식에 대한 스크립트를 작성할 수 없습니다.
 1. 템플릿 작성자 그룹 권한이 있는 사용자는 템플릿에 대한 스크립트를 작성할 수 없습니다.
 
