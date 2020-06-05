@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.4 누적 수정 팩 관련 릴리스 노
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2aa3037b63f745d158eb87c5156808237277990d
+source-git-commit: b1deed95174e271bbd91814ef4aa6d4fa578cc45
 workflow-type: tm+mt
-source-wordcount: '2142'
+source-wordcount: '2152'
 ht-degree: 23%
 
 ---
@@ -237,7 +237,7 @@ To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](
 
 ## 알려진 문제 {#known-issues}
 
-* 버전 83의 업데이트로 인해 패키지 빌드에 문제가 발생했습니다. [!DNL chrome] 사용 가능한 기타 브라우저(예: [!DNL Internet Explorer] 및 기타 AEM [!DNL Firefox]표준 패키지 설치 옵션)를 사용하여 문제를 해결하십시오.
+* AEM 6.4.8.1을 설치하는 동안 [!DNL Chrome] 버전 83의 업데이트로 패키지 빌드에 문제가 발생했습니다. 사용 가능한 기타 브라우저(예: [!DNL Internet Explorer] 및 기타 AEM [!DNL Firefox]표준 패키지 설치 옵션)를 사용하여 문제를 해결하십시오. AEM 6.4.8.1을 설치한 후 문제가 해결됩니다.
 
 * TLS v1.2를 사용하는 통신만 허용하므로 AEM 기본 메일 보낸 사람을 사용하여 원격 SMTP 서버로 이메일을 보낼 수 없습니다. 번들을 제거하고 번들을 새로 고쳐 문제를 해결하십시오. `javax.mail:mail:1.5.0-b01` `system/console`
 
