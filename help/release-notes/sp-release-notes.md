@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: cad8b5cb9a0e2c602d12e5d529b037b3ebcbcfbe
+source-git-commit: 774f0e8b631f6f8328e7bd9d4172498df58459bc
 workflow-type: tm+mt
-source-wordcount: '21556'
+source-wordcount: '21555'
 ht-degree: 26%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 26%
 | 버전 | 6.4.8.0 |
 | 유형 | 서비스 팩 릴리스 |
 | 날짜 | 2020년 3월 5일 |
-| 다운로드 URL | 패키지 공유, [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0)[소프트웨어 배포(베타)의 AEM 6.4.8.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
+| 다운로드 URL | 패키지 공유, 소프트웨어 배포 [의 AEM 6.4.8.0](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0)[에 대한 자세한 내용](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## AEM 6.4.8.0에 포함된 기능 {#what-s-included-in-aem}
 
@@ -211,7 +211,7 @@ AEM 6.4.7.0의 주요 하이라이트는 다음과 같습니다.
 
 * 필터를 사용하여 세트를 검색하는 동안 AEM에서 동적 미디어 - Scene 7 실행 모드(NPR-31388)에서 내부 서버 오류가 관찰됩니다.
 
-* 원격 이미지 집합을 편집하는 동안 Scene 7 회사 이름과 같은 폴더에 있는 이미지에 대한 오류가 발견되었습니다(NPR-31347).
+* 원격 이미지 집합을 편집하는 동안 Scene7 회사 이름과 같은 폴더에 있는 이미지에 대한 오류가 발견되었습니다(NPR-31347).
 
 * 참조가 들어 있는 자산이 게시되지 않습니다(DM)(NPR-31179).
 
@@ -1820,7 +1820,7 @@ AEM 6.4.1.0은 AEM 6.4 GA에 설치할 수 있습니다. 서비스 팩의 주요
 * (MSM) 롤아웃 성능 개선. CQ-4231488용 핫픽스
 * (MSM) 실제로 발생하는 이벤트와 이벤트 처리 사이의 이벤트 의견 수렴의 시간 간격. CQ-4227766용 핫픽스
 
-**화면**
+**스크린**
 
 * screens-core-pkg:1.4.42에 대한 종속성이 누락되어 화면 페이지에 오류가 발생했습니다. CQ-4245918에 대한 핫픽스
 
