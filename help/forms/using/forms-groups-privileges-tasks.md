@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: Configuration
 discoiquuid: 71412f5d-ff34-415f-baf8-d300756b93a9
 translation-type: tm+mt
-source-git-commit: 17f5041c16996ec3f230650451a816c08170837c
+source-git-commit: f87d70515a385fb23b36797e468325fa1a5e9ff4
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 1%
@@ -33,7 +33,7 @@ AEM [Forms Add-on 패키지를](/help/forms/using/installing-configuring-aem-for
    <td>작업</td> 
   </tr>
   <tr>
-   <td>forms-user <sup><a href="#main-pars-text">[1]</a></sup></td> 
+   <td>forms-user <sup>[1]</sup></td> 
    <td>
     <ul> 
      <li>적응형 양식 작성, 미리 보기, 게시 및 제출</li> 
@@ -63,7 +63,7 @@ AEM [Forms Add-on 패키지를](/help/forms/using/installing-configuring-aem-for
     </ul> </td> 
   </tr>
   <tr>
-   <td>template-authors <sup><a href="#main-pars-text">[2]</a></sup></td> 
+   <td>template-authors <sup>[2]</sup></td> 
    <td>
     <ul> 
      <li>적응형 양식 또는 인터랙티브한 커뮤니케이션 템플릿 작성 및 미리 보기</li> 
