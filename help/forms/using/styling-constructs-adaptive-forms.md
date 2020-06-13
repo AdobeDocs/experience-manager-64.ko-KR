@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: d28997b4-49d2-46da-bfa1-ed6876a65639
 translation-type: tm+mt
-source-git-commit: 12905ca1540e5b280975724a7fb3635dc4afffca
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '2184'
+ht-degree: 3%
 
 ---
 
@@ -21,11 +24,11 @@ CSS 및 LESS 프레임워크에 대한 지식
 
 ## 사용자 정의 가능한 항목 {#what-can-be-customized}
 
-이 문서에서는 응용 양식의 공개적으로 사용 가능한 css 클래스를 나열합니다. 이러한 클래스를 활용하여 적응형 양식의 다양한 구성 요소에 스타일을 지정할 수 있습니다. 경고를 표시하는 대화 상자 및 상태 막대와 같은 작성 구성 요소의 스타일은 이 문서의 범위를 벗어납니다. 이러한 스타일 구문을 사용하여 [테마 편집기를](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html)사용하여 구성 요소의 스타일을 지정할 수 없는 경우에만 스타일(CSS 또는 Less 사용)을 만들 수 있습니다.
+이 문서에서는 응용 양식의 공개적으로 사용 가능한 css 클래스를 나열합니다. 이러한 클래스를 활용하여 적응형 양식의 다양한 구성 요소의 스타일을 지정할 수 있습니다. 경고를 표시하는 대화 상자 및 상태 막대와 같은 작성 구성 요소의 스타일이 이 문서의 범위를 벗어났습니다. 테마 편집기를 사용하여 구성 요소의 스타일을 지정할 수 없는 경우에만 이러한 스타일 구문을 사용하여 스타일(CSS 또는 Less 사용)을 만들 수 [있습니다](themes.md).
 
 ## 적응형 양식의 스타일 사용자 정의 {#customizing-styles-in-adaptive-forms}
 
-LESS 프레임워크를 사용하면 적응형 양식의 스타일을 사용자 정의할 수 있습니다. 이 프레임워크를 사용하면 변수 및 함수 집합(mixins)을 사용하여 스타일을 정의할 수 있습니다. LESS 프레임워크는 번들로 제공되는 코드의 크기를 줄이고 재사용성을 높이는 데 도움이 됩니다.
+LESS 프레임워크를 사용하면 사용 사례를 간소화하여 적응형 양식의 스타일을 사용자 정의할 수 있습니다. 프레임워크를 사용하면 변수 및 함수(mixins)의 집합을 사용하여 스타일을 정의할 수 있습니다. LESS 프레임워크는 번들로 제공되는 코드의 크기를 줄이고 재사용성을 높이는 데 도움이 됩니다.
 
 다음과 같은 방법으로 응용 양식 스타일을 사용자 정의할 수 있습니다.
 
@@ -34,11 +37,11 @@ LESS 프레임워크를 사용하면 적응형 양식의 스타일을 사용자 
 
 ## 테마 변경 {#changing-theme}
 
-적응형 양식의 테마를 변경하여 적응형 양식이 포함된 웹 페이지와 모양이 일치하는지 확인할 수 있습니다.
+응용 양식의 테마를 변경하여 응용 양식이 포함된 웹 페이지와 모양이 일치하는지 확인할 수 있습니다.
 
-CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으로 테마 변경의 일부입니다. 레이아웃 변경 및 구성 요소 배치 변경과 같이, 로우 &quot;확인 및 적응형 양식의 주요 변경 사항은 테마 변경 사항으로 간주되지 않습니다.
+CSS 속성을 사용하는 응용 양식의 전체 모양 변경 사항은 일반적으로 테마 변경의 일부입니다. 레이아웃 변경 및 구성 요소 배치 변경과 같은 &quot;적응형 양식의 주요 변경 사항&quot;은 테마 변경 사항으로 간주되지 않습니다.
 
-부트스트랩을 기반으로 하는 다음 CSS 속성 세트는 웹 페이지의 테마를 정의합니다.
+부트스트랩에 따라 다음 CSS 속성 세트가 웹 페이지의 테마를 정의합니다.
 
 * 배경색
 * 테두리(문자, 색상, 두께)
@@ -52,13 +55,13 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
 
 ## 구성 요소 스타일 변경 {#changing-component-style}
 
-요소의 모양, 레이아웃, 배치 및 가시성을 변경할 수 있습니다. 이 작업을 수행하려면 이 문서에 나열된 스타일 구문을 포함하도록 사용자 지정 .css 파일을 만들거나 업데이트합니다.
+요소의 모양, 레이아웃, 배치 및 가시성을 변경할 수 있습니다. 이 작업을 수행하려면 이 문서에 나열된 스타일 구절을 포함하도록 사용자 지정 .css 파일을 만들거나 업데이트하십시오.
 
-적응형 양식에 스타일을 적용하려면 응용 양식을 열어 편집하고 적응형 양식 컨테이너의 속성을 열고 기본 탭에서 사용자 지정 CSS 파일의 경로를 지정합니다. 적응형 양식의 스타일 지정 구문을 정의하고 사용자 지정 .css 파일에 나열된 구문으로 재정의합니다.
+적응형 양식에 스타일을 적용하려면 응용 양식을 열고 편집을 수행하고 적응형 양식 컨테이너의 속성을 열고 기본 탭에서 사용자 지정 CSS 파일의 경로를 지정합니다. 응용 양식의 스타일 지정 구문을 정의하고 사용자 지정 .css 파일에 나열된 구문으로 재정의됩니다.
 
 ## 구성 요소 {#components}
 
-이 문서에서 설명하는 구성 요소에는 사전 정의된 CSS 클래스가 있습니다. 변수를 편집하여 CSS 클래스의 스타일을 수정할 수 있습니다. 또는 전체 클래스를 다시 작성할 수 있습니다. 이 섹션에서는 변수를 사용하여 수정할 수 있는 구성 요소 및 스타일 내의 클래스에 대해 설명합니다.
+이 문서에서 설명한 구성 요소에는 사전 정의된 CSS 클래스가 있습니다. 변수를 편집하여 CSS 클래스의 스타일을 수정할 수 있습니다. 또는 전체 클래스를 다시 작성할 수도 있습니다. 이 섹션에서는 변수를 사용하여 수정할 수 있는 구성 요소 및 스타일 내의 클래스에 대해 설명합니다.
 
 ## 컨테이너 스타일 {#container-styling}
 
@@ -93,16 +96,16 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
   </tr> 
   <tr> 
    <td><p><code>container-fontColor</code></p> </td> 
-   <td><p>컨테이너의 글꼴 색상</p> </td> 
+   <td><p>컨테이너용 글꼴 색상</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 필드 스타일 {#field-styling}
 
-적응형 양식에는 다양한 유형의 필드가 포함됩니다. 각 필드에는 고유한 클래스 이름이 있습니다. 이 이름은 필드의 이름입니다. 필드에 공통 클래스 이름도 `guideFieldNode`있습니다.
+적응형 양식에는 다양한 유형의 필드가 포함됩니다. 각 필드에는 고유한 클래스 이름이 있으며, 이것은 필드 이름입니다. 이 필드에는 공통 클래스 이름도 있습니다 `guideFieldNode`.
 
-필드에는 레이블, 위젯, 도움말 설명(자세한 설명 및 짧은 설명) 및 필드 도움말 아이콘(물음표)이 있습니다.
+필드에는 레이블, 위젯, 도움말 설명(긴 및 짧은 설명 모두) 및 필드 도움말 아이콘(질문 표시)이 있습니다.
 
 <table> 
  <tbody> 
@@ -136,7 +139,7 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
 
 ## 레이블 스타일 {#label-styling}
 
-필드에 사용되는 HTML 요소 **레이블에는** 레이블이 **맨 위** 또는 왼쪽에 있는지에 따라 **왼쪽** 또는위쪽클래스가 포함됩니다.
+필드에 사용되는 HTML 요소 **레이블** 에는 레이블이 **맨 위** 또는 왼쪽에 있는지 **** 여부에 따라 왼쪽또는위쪽클래스가 포함됩니다.
 
 <table> 
  <tbody> 
@@ -155,7 +158,7 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
   </tr> 
   <tr> 
    <td><p><code>label-font-color</code></p> </td> 
-   <td><p>필드 레이블의 글꼴 색상</p> </td> 
+   <td><p>필드 레이블용 글꼴 색상</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>label-font-size</code></p> </td> 
@@ -163,7 +166,7 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
   </tr> 
   <tr> 
    <td><p><code>label-line-height</code></p> </td> 
-   <td>필드 레이블에 대한 CSS 행 높이 속성 </td> 
+   <td>필드 레이블에 대한 CSS 라인 높이 속성 </td> 
   </tr> 
   <tr> 
    <td><p><code>label-font-weight</code></p> </td> 
@@ -176,11 +179,11 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
  </tbody> 
 </table>
 
-레이블에 대한 CSS 규칙은 guideFieldLabel **레이블을 사용하여** 적용됩니다. 작성자인 경우 이 규칙을 무시하여 사용자 지정 변경 내용을 표시합니다.
+레이블에 대한 CSS 규칙은 **guideFieldLabel 레이블을 사용하여** 적용됩니다. 작성자인 경우 이 규칙을 무시하여 사용자 지정 변경 사항을 표시합니다.
 
 ## 위젯 스타일 {#widgets-styling}
 
-위젯은 유형에 따라 클래스도 포함합니다. 일반적으로 위젯에는 `guideFieldWidget` 클래스가 포함되어 있습니다. HTML과 함께 제공되는 위젯은 일반적으로 표준 HTML 요소 입력을 사용하고 선택합니다. 그에 따라 스타일이 수행됩니다. 변수를 변경하여 사용자 정의 위젯의 스타일을 지정할 수 없습니다.
+위젯은 유형에 따라 클래스도 포함합니다. 일반적으로 위젯에는 `guideFieldWidget` 클래스가 포함되어 있습니다. 일반적으로 HTML과 함께 제공되는 위젯은 표준 HTML 요소 입력을 사용하고 선택합니다. 스타일이 그에 따라 수행됩니다. 변수를 변경하여 사용자 지정 위젯의 스타일을 지정할 수 없습니다.
 
 <table> 
  <tbody> 
@@ -199,7 +202,7 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
   </tr> 
   <tr> 
    <td><p><code>widgets-bg-color</code></p> </td> 
-   <td>위젯의 배경색(확인란 및 라디오 단추에는 작동하지 않음)</td> 
+   <td>위젯의 배경색(확인란 및 라디오 단추 사용 안 함)</td> 
   </tr> 
   <tr> 
    <td><p><code>widgets-border-color</code></p> </td> 
@@ -243,7 +246,7 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
   </tr> 
   <tr> 
    <td><p><code>widgets-focus-border-color</code></p> </td> 
-   <td><p>위젯이 포커스를 있을 때 테두리 색상</p> </td> 
+   <td><p>위젯이 포커스될 때의 테두리 색상</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>widgets-mandatory-border-color</code></p> </td> 
@@ -267,7 +270,7 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
   </tr> 
   <tr> 
    <td><p><code>widget-height</code></p> </td> 
-   <td>위젯의 높이(확인란 및 라디오 단추에 대해 작동하지 않음)</td> 
+   <td>위젯의 높이(확인란 및 라디오 단추 사용 안 함)</td> 
   </tr> 
   <tr> 
    <td><p><code>checkbutton-height</code></p> </td> 
@@ -282,11 +285,11 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
 
 ### 위젯 스타일 제한 {#limitations-in-widget-styling}
 
-중점, 필수 및 비활성화된 필드의 스타일은 변수를 사용하여 제한됩니다. 그러나 스타일을 무시하여 변경할 수 있습니다. 변수의 사용 제한은 주로 변수의 수를 확인하기 위해 제공됩니다. 필드의 모양이 이전에 논의된 모든 주에 있기 때문에 크게 변경되면 제한이 완화될 수 있습니다.
+중점, 필수 및 비활성화된 필드의 스타일링은 변수를 사용하여 제한됩니다. 하지만 스타일을 무시하여 변경할 수 있습니다. 변수의 사용 제한은 주로 변수의 수를 확인하기 위해 제공됩니다. 이전에 논의된 모든 주에 있기 때문에 필드의 모양이 급격히 변하면 제한이 완화될 수 있습니다.
 
 ## 도움말 설명 {#help-description}
 
-작성자는 짧은 설명 및 긴 설명 구성 요소를 사용하여 필드에 도움말 컨텐츠를 지정할 수 있습니다. 두 구성 요소 모두 설명 유형에 따라 공통 `.guideHelpDescription` 클래스와 다른 클래스 `.long`/ `.short`클래스를 갖습니다. 도움말 컨텐츠는 설명 스타일을 재정의하기 위해 단락 요소에 포함되어 있습니다. 도움말 설명(장단어와 단문 모두)은 다음 표에 설명된 대로 widgetshelp로 시작하는 변수를 사용하여 수정됩니다.
+작성자는 짧은 및 긴 설명 구성 요소를 사용하여 필드에 도움말 컨텐츠를 지정할 수 있습니다. 두 구성 요소 모두 설명 유형에 따라 공통 클래스 `.guideHelpDescription` 와 다른 클래스 `.long`/ `.short`를 가집니다. 도움말 컨텐츠는 설명 스타일을 재정의하기 위해 단락 요소에 포함되어 있습니다. 도움말 설명(긴 및 짧은)은 다음 표에 언급된 대로 widgetshelp로 시작하는 변수를 사용하여 수정됩니다.
 
 <table> 
  <tbody> 
@@ -296,7 +299,7 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
   </tr> 
   <tr> 
    <td><p><code>widgets-help-long-bg-color</code></p> </td> 
-   <td><p>위젯 긴 도움말의 배경색</p> </td> 
+   <td><p>위젯의 배경색(긴 도움말)</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>widgets-help-long-border-color</code></p> </td> 
@@ -308,11 +311,11 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
   </tr> 
   <tr> 
    <td><p><code>widgets-help-short-bg-color</code></p> </td> 
-   <td><p>위젯의 배경색 짧은 도움말</p> </td> 
+   <td><p>위젯의 배경색(짧은 도움말)</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>widgets-help-short-color</code></p> </td> 
-   <td><p>위젯의 글꼴 색상 짧은 도움말</p> </td> 
+   <td><p>위젯 짧은 도움말 글꼴 색상</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>widgets-help-short-tooltip-bg-color</code></p> </td> 
@@ -320,14 +323,14 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
   </tr> 
   <tr> 
    <td><p><code>widgets-help-short-tooltip-color</code></p> </td> 
-   <td><p>위젯의 짧은 도구 설명 글꼴 색상 도움말</p> </td> 
+   <td><p>위젯의 글꼴 색상 짧은 툴팁 도움말</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 사용 약관 {#terms-and-conditions}
 
-약관(TnC) `` ``위젯을 사용하면 약관을 지정할 수 있습니다. 다음 표에 설명된 변수를 사용하여 위젯을 사용자 정의할 수 있습니다.
+용어 및 조건(TnC) 위젯을 사용하면 조건 `` ``을 지정할 수 있습니다. 다음 표에 설명된 변수를 사용하여 위젯을 사용자 정의할 수 있습니다.
 
 <table> 
  <tbody> 
@@ -337,7 +340,7 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
   </tr> 
   <tr> 
    <td><code>tnc-unvisited</code></td> 
-   <td>방문되지 않은 tnc 링크의 글꼴 색입니다.</td> 
+   <td>방문되지 않은 tnc 링크의 글꼴 색상.</td> 
   </tr> 
   <tr> 
    <td><code>tnc-visited</code></td> 
@@ -348,11 +351,11 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
 
 ## 단추 {#button}
 
-버튼도 위젯입니다. 그러나 위젯과 스타일이 약간 다릅니다. 적응형 양식에서는 다음 중 하나가 단추로 구성됩니다.
+버튼도 위젯입니다. 그러나 위젯과 스타일이 약간 다릅니다. 응용 양식에서는 다음 중 하나가 단추로 구성됩니다.
 
-* [입력 유형 = 텍스트]
+* [입력 유형 = text]
 * 단추
-* element with class .button
+* class.button이 있는 요소
 
 단추용 HTML 코드:
 
@@ -421,7 +424,7 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
   </tr> 
   <tr> 
    <td><p><code>button-large-padding</code></p> </td> 
-   <td><p>큰 단추에 대한 패딩(클래스 .buttonlarge가 있는 단추)</p> </td> 
+   <td><p>큰 단추에 패딩(클래스 .buttonlarge가 있는 단추)</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>button-large-font-size</code></p> </td> 
@@ -429,15 +432,15 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
   </tr> 
   <tr> 
    <td><p><code>button-small-padding</code></p> </td> 
-   <td><p>작은 단추에 대한 패딩(클래스 .buttonsmall 포함 단추)</p> </td> 
+   <td><p>작은 단추에 패딩(클래스 .buttonsmall 포함 단추)</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>button-small-font-size</code></p> </td> 
-   <td><p>작은 단추의 글꼴 크기</p> </td> 
+   <td><p>작은 단추용 글꼴 크기</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>button-info-background-color</code></p> </td> 
-   <td><p>유용한 정보를 제공하는 단추를 위한 배경색(클래스 .buttoninvent가 포함된 단추)</p> </td> 
+   <td><p>유용한 정보 단추(클래스 .buttoninvent가 포함된 단추)를 위한 배경색</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>button-info-font-color</code></p> </td> 
@@ -445,15 +448,15 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
   </tr> 
   <tr> 
    <td><p><code>button-info-border-color</code></p> </td> 
-   <td><p>테두리 색상을 사용하여 유용한 정보 버튼 만들기</p> </td> 
+   <td><p>테두리 색상 - 정보 버튼</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>button-warning-background-color</code></p> </td> 
-   <td><p>경고 스타일 단추에 대한 배경색(클래스 .buttonwarning이 있는 단추)</p> </td> 
+   <td><p>경고 스타일이 적용된 단추에 대한 배경색(클래스 .buttonwarning이 있는 단추)</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>button-warning-font-color</code></p> </td> 
-   <td><p>경고 스타일 단추를 위한 글꼴 색상</p> </td> 
+   <td><p>경고 스타일 버튼을 위한 글꼴 색상</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>button-warning-border-color</code></p> </td> 
@@ -469,14 +472,14 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
   </tr> 
   <tr> 
    <td><p><code>button-alert-border-color</code></p> </td> 
-   <td><p>경고 단추에 대한 테두리 색상</p> </td> 
+   <td><p>경고 단추용 테두리 색상</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Question mark {#question-mark}
 
-위젯의 경우, 작성자가 도움말 컨텐츠에 긴 설명을 추가하면 questionMark가 표시됩니다. 부트스트랩에 제공된 기본 아이콘이 사용됩니다. 사용자 정의 아이콘을 사용하려면 부트스트랩 아이콘을 사용자 정의할 수 있습니다.
+위젯의 경우 작성자가 도움말 컨텐츠에 긴 설명을 추가할 때 questionMark가 표시됩니다. 부트스트랩에 제공된 기본 아이콘이 사용됩니다. 사용자 정의 아이콘을 사용하려면 부트스트랩 아이콘을 사용자 정의할 수 있습니다.
 
 <table> 
  <tbody> 
@@ -499,7 +502,7 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
   </tr> 
   <tr> 
    <td><p><code>questionmark-hover-font-color</code></p> </td> 
-   <td><p>마우스가 마우스로 가리키면 아이콘의 색상</p> </td> 
+   <td><p>마우스가 마우스로 가리킬 때의 아이콘 색상</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -516,7 +519,7 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
   </tr> 
   <tr> 
    <td><p><code>table-header-bg-color</code></p> </td> 
-   <td><p>머리글 행의 배경색입니다. The default value is <code>#333</code>.<br /> </p> </td> 
+   <td><p>헤더 행의 배경색입니다. The default value is <code>#333</code>.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p><code>table-odd-row-bg-color</code></p> </td> 
@@ -531,7 +534,7 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
 
 ## 첨부 파일 {#file-attachment}
 
-응용 양식의 첨부 파일 위젯을 사용하면 파일을 업로드할 수 있습니다. 변수를 사용하여 위젯을 사용자 정의할 수도 있습니다.
+응용 양식의 파일 첨부 위젯을 사용하면 파일을 업로드할 수 있습니다. 변수를 사용하여 위젯을 사용자 정의할 수도 있습니다.
 
 <table> 
  <tbody> 
@@ -561,14 +564,14 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
   </tr> 
   <tr> 
    <td><p><code>fileItemCommentHeight</code></p> </td> 
-   <td><p>파일 항목의 주석 높이</p> </td> 
+   <td><p>파일 항목에 대한 주석 높이</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 네비게이터 스타일 {#navigator-styles}
 
-4가지 유형의 네비게이터 탭이 있습니다. 여기에는 마법사 및 아코디언의 왼쪽, 위쪽, 탭 등이 포함됩니다. 각 네비게이터에는 다른 분류가 있습니다.
+4가지 유형의 네비게이터 탭이 있습니다. 여기에는 마법사 및 아코디언 중 왼쪽, 상단, 상단에 탭이 포함됩니다. 각 네비게이터에는 다른 분류가 있습니다.
 
 <table> 
  <tbody> 
@@ -582,7 +585,7 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
   </tr> 
   <tr> 
    <td><p><code>tabs on the left</code></p> </td> 
-   <td><p>.tab-navigators-vertical</p> </td> 
+   <td><p>.tab-navigator-vertical</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>tabs on the top</code></p> </td> 
@@ -595,7 +598,7 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
  </tbody> 
 </table>
 
-다음은 탭 탐색기 요소의 HTML 코드입니다(부트스트랩 탭과 유사).
+탭 탐색기 요소의 HTML 코드는 다음과 같습니다(부트스트랩 탭과 유사).
 
 `<li>`
 
@@ -637,7 +640,7 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
 
 `</div>`
 
-하위 **** 선택기를 사용하여 요소를 선택하는 CSS 규칙을 사용하여 네비게이터의 스타일을 변경할 수 있습니다. 예를 들어 앵커 태그에 텍스트 장식 스타일을 추가하려면 다음을 수행하십시오.
+하위 선택기를 사용하여 요소를 선택하는 CSS 규칙을 사용하여 **네비게이터의 스타일을 변경할** 수 있습니다. 예를 들어 앵커 태그에 텍스트 장식 스타일을 추가하려면:
 
 상단에 있는 탭 탐색기:
 
@@ -685,7 +688,7 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
 
 `}`
 
-또한 중첩된/자식/하위 탐색기가 있는지 여부를 기반으로 탭 탐색기의 스타일을 지정하는 클래스도 있습니다(왼쪽 및 상단 모두).
+또한 중첩된/자식/하위 탐색기를 사용하는지 여부를 기준으로 탭 탐색기의 스타일을 지정하는 클래스도 있습니다(왼쪽 및 상단 모두).
 
 <table> 
  <tbody> 
@@ -704,7 +707,7 @@ CSS 속성을 사용하는 응용 양식의 전체 모양 변경은 일반적으
  </tbody> 
 </table>
 
-guideNavIcon 클래스는 탭 탐색기(왼쪽 및 상단 모두)와 마법사 탐색기에 대한 기본 아이콘을 제공합니다.
+guideNavIcon 클래스는 탭 내비게이터(왼쪽 및 상단 모두)와 마법사 탐색기에 기본 아이콘을 제공합니다.
 
 <table> 
  <tbody> 
@@ -717,7 +720,7 @@ guideNavIcon 클래스는 탭 탐색기(왼쪽 및 상단 모두)와 마법사 �
 
 >[!NOTE]
 >
->작성의 패널에 CSS 클래스를 제공하여 특정 탐색기의 아이콘을 변경할 수 있습니다(예: &lt;CLASS_NAME>). 탐색기의 아이콘에 **&lt;CLASS_NAME>_nav** 를 추가합니다.
+>작성의 패널에서 CSS 클래스를 제공하여 특정 탐색기의 아이콘을 변경할 수 있습니다(예: &lt;CLASS_NAME>). 탐색기의 아이콘 **&lt;CLASS_NAME>_nav를** 추가합니다.
 
 <table> 
  <tbody> 
@@ -743,23 +746,23 @@ guideNavIcon 클래스는 탭 탐색기(왼쪽 및 상단 모두)와 마법사 �
   </tr> 
   <tr> 
    <td><p><code>tabs-hover-bg-color</code></p> </td> 
-   <td><p>마우스로 가리키면 탭의 배경색</p> </td> 
+   <td><p>마우스로 가리키는 탭의 배경색</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>tabs-hover-font-color</code></p> </td> 
-   <td><p>마우스로 가리키면 탭의 글꼴 색상</p> </td> 
+   <td><p>마우스로 가리키는 탭의 글꼴 색상</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>tabs-active-bg-color</code></p> </td> 
-   <td><p>패널에 초점이 있을 때 배경색(활성)</p> </td> 
+   <td><p>초점이 맞춰진 패널(활성) 배경색</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>tabs-active-font-color</code></p> </td> 
-   <td><p>패널에 초점이 있을 때 글꼴 색상</p> </td> 
+   <td><p>패널에 초점이 맞춰진 글꼴 색상</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>tabs-completed-bg-color</code></p> </td> 
-   <td><p>패널의 완성 표현식이 true를 반환하는 경우의 배경색</p> </td> 
+   <td><p>패널의 완성 표현식이 true를 반환하는 경우 배경색</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>tabs-completed-font-color</code></p> </td> 
@@ -767,11 +770,11 @@ guideNavIcon 클래스는 탭 탐색기(왼쪽 및 상단 모두)와 마법사 �
   </tr> 
   <tr> 
    <td><p><code>tabs-stepped-bg-color</code></p> </td> 
-   <td>패널에 한 번 포커스가 있어도 완료 표현식에서 false를 반환하는 배경색 </td> 
+   <td>패널에 한 번 초점이 맞춰졌다가 완성 표현식이 false를 반환하는 경우 배경색 </td> 
   </tr> 
   <tr> 
    <td><p><code>tabs-stepped-font-color</code></p> </td> 
-   <td>패널에 한 번 포커스가 있어도 완성 표현식이 false를 반환하는 경우 글꼴 색상 </td> 
+   <td>패널에 한 번 초점이 맞춰졌다가 완성 표현식이 false를 반환하는 경우 글꼴 색상 </td> 
   </tr> 
   <tr> 
    <td><p><code>tabs-border-color</code></p> </td> 
@@ -823,15 +826,15 @@ guideNavIcon 클래스는 탭 탐색기(왼쪽 및 상단 모두)와 마법사 �
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-active-bg-color</code></p> </td> 
-   <td><p>패널에 초점이 있을 때 배경색(활성)</p> </td> 
+   <td><p>초점이 맞춰진 패널(활성) 배경색</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-active-font-color</code></p> </td> 
-   <td><p>패널에 초점이 있을 때 글꼴 색상(초점이 맞춰짐)</p> </td> 
+   <td><p>패널에 초점이 맞춰진 경우 글꼴 색상</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-completed-bg-color</code></p> </td> 
-   <td><p>패널의 완성 표현식이 true를 반환하는 경우의 배경색</p> </td> 
+   <td><p>패널의 완성 표현식이 true를 반환하는 경우 배경색</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-completed-font-color</code></p> </td> 
@@ -839,7 +842,7 @@ guideNavIcon 클래스는 탭 탐색기(왼쪽 및 상단 모두)와 마법사 �
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-stepped-bg-color</code></p> </td> 
-   <td>패널에 한 번 초점이 맞춰졌다가 완성 표현식이 false를 반환하는 경우의 배경색</td> 
+   <td>패널에 한 번 초점이 맞춰졌다가 완료 식이 false를 반환하는 경우 배경색</td> 
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-stepped-font-color</code></p> </td> 
@@ -855,7 +858,7 @@ guideNavIcon 클래스는 탭 탐색기(왼쪽 및 상단 모두)와 마법사 �
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-padding</code></p> </td> 
-   <td><p>마법사의 패딩</p> </td> 
+   <td><p>마법사 패딩</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-border-thickness</code></p> </td> 
@@ -863,7 +866,7 @@ guideNavIcon 클래스는 탭 탐색기(왼쪽 및 상단 모두)와 마법사 �
   </tr> 
   <tr> 
    <td><p><code>wizard-nav-bullet-border</code></p> </td> 
-   <td><p>마법사 탐색기 글머리 기호(캡션/레이블 사전 수정)의 테두리 색상</p> </td> 
+   <td><p>마법사 탐색기 글머리 기호(캡션/레이블 미리 고정)의 테두리 색상</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>wizard-progress-bg-color</code></p> </td> 
@@ -871,7 +874,7 @@ guideNavIcon 클래스는 탭 탐색기(왼쪽 및 상단 모두)와 마법사 �
   </tr> 
   <tr> 
    <td><p><code>wizard-progress-color</code></p> </td> 
-   <td><p>진행률 표시줄의 채우기 색상</p> </td> 
+   <td><p>진행률 표시줄용 채우기 색상</p> </td> 
   </tr> 
   <tr> 
    <td><p><strong>아코디언 내비게이터</strong></p> </td> 
@@ -886,7 +889,7 @@ guideNavIcon 클래스는 탭 탐색기(왼쪽 및 상단 모두)와 마법사 �
 
 ## 패널 스타일 {#panel-styling}
 
-패널에는 선택적 도구 모음 및 해당 컨텐츠가 포함되어 있습니다.
+패널에는 선택 사항 도구 모음 및 해당 컨텐츠가 포함되어 있습니다.
 
 <table> 
  <tbody> 
@@ -938,7 +941,7 @@ guideNavIcon 클래스는 탭 탐색기(왼쪽 및 상단 모두)와 마법사 �
  </tbody> 
 </table>
 
-패널 노드는 탐색자와 컨텐츠로 분할됩니다. 컨텐츠에 대한 별도의 스타일 구성 요소가 `` `` 없습니다. 설명된 변수는 컨텐츠뿐만 아니라 네비게이터에 적용됩니다.
+패널 노드는 탐색자와 컨텐츠로 구분됩니다. 컨텐츠에 대한 별도의 스타일 구성 요소 `` `` 는 없습니다. 설명된 변수는 컨텐츠와 네비게이터에 적용됩니다.
 
 &amp;ast;맨 위 패널(RootPanel)에 이 클래스가 없습니다.
 
@@ -946,7 +949,7 @@ guideNavIcon 클래스는 탭 탐색기(왼쪽 및 상단 모두)와 마법사 �
 
 ## Header bar {#header-bar}
 
-이러한 변수는 모바일 장치 또는 패널 제목과 다음 및 뒤로 탐색기가 포함된 작은 화면 장치에 표시되는 헤더 막대에 영향을 줍니다.
+이러한 변수는 모바일 장치 또는 패널 제목과 다음 및 뒤 탐색기가 포함된 작은 화면 장치에 표시되는 헤더 막대에 영향을 줍니다.
 
 <table> 
  <tbody> 
@@ -973,14 +976,14 @@ guideNavIcon 클래스는 탭 탐색기(왼쪽 및 상단 모두)와 마법사 �
   </tr> 
   <tr> 
    <td><p><code>headerbar-padding</code></p> </td> 
-   <td><p>머리글 막대의 패딩</p> </td> 
+   <td><p>헤더 막대의 패딩</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 스크롤 표시기 {#scroll-indicator}
 
-이러한 변수는 스크롤 표시기에 영향을 줍니다. 스크롤 표시기는 모바일 장치 또는 작은 화면 장치에 표시되는 주황색 화살표입니다. 스크롤 표시기는 화면의 표시 영역 밖에 내용이 있음을 나타냅니다. 아래로 스크롤하여 볼 수 있습니다. 컨텐츠의 끝을 누르면 화살표가 사라집니다.
+이러한 변수는 스크롤 표시기에 영향을 줍니다. 스크롤 표시기는 모바일 장치 또는 작은 화면 장치에 표시되는 주황색 화살표입니다. 스크롤 표시기는 화면에서 볼 수 있는 부분 이상의 컨텐츠가 있음을 나타냅니다. 아래로 스크롤해 보시면 됩니다 컨텐츠 끝을 누르면 화살표가 사라집니다.
 
 <table> 
  <tbody> 
@@ -999,19 +1002,19 @@ guideNavIcon 클래스는 탭 탐색기(왼쪽 및 상단 모두)와 마법사 �
   </tr> 
   <tr> 
    <td><p><code>scrollIndicatorBottom</code></p> </td> 
-   <td><p>아래쪽에서 스크롤리디케이터의 위치가 수정되었습니다.</p> </td> 
+   <td><p>아래쪽에서 스크롤라인판독기의 위치가 수정되었습니다.</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>scrollIndicatorRight</code></p> </td> 
-   <td><p>오른쪽에서 스크롤리디케이터의 위치가 수정되었습니다.</p> </td> 
+   <td><p>오른쪽에서 스크롤리디커의 고정 위치</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>scrollIndicatorWidth</code></p> </td> 
-   <td><p>스크롤 막대 너비</p> </td> 
+   <td><p>스크롤라인디레이터 너비</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>scrollIndicatorHeight</code></p> </td> 
-   <td><p>스크롤리디케이터의 높이</p> </td> 
+   <td><p>스크롤링 표시기 높이</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1037,7 +1040,7 @@ guideNavIcon 클래스는 탭 탐색기(왼쪽 및 상단 모두)와 마법사 �
   </tr> 
   <tr> 
    <td><p><code>mobileToolbarBottom</code></p> </td> 
-   <td><p>도구 모음, 모바일 장치, 하단에서 고정 위치</p> </td> 
+   <td><p>도구 모음, 모바일 장치, 아래쪽에서 고정 위치</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>mobileToolbarTop</code></p> </td> 
@@ -1049,11 +1052,11 @@ guideNavIcon 클래스는 탭 탐색기(왼쪽 및 상단 모두)와 마법사 �
   </tr> 
   <tr> 
    <td><p><code>mobileToolbarRight</code></p> </td> 
-   <td><p>도구 모음, 모바일 장치, 오른쪽에서 고정 위치</p> </td> 
+   <td><p>모바일 장치에서 오른쪽의 도구 모음 위치를 수정했습니다.</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>mobileButtonIconTopMargin</code></p> </td> 
-   <td><p>도구 모음 단추 아이콘의 맨 위에서 위치를 수정했습니다.</p> </td> 
+   <td><p>도구 모음 단추 아이콘의 맨 위에서 위치가 수정되었습니다.</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>mobileButtonIconWidth</code></p> </td> 
@@ -1061,7 +1064,7 @@ guideNavIcon 클래스는 탭 탐색기(왼쪽 및 상단 모두)와 마법사 �
   </tr> 
   <tr> 
    <td><p><code>mobileButtonIconHeight</code></p> </td> 
-   <td><p>모바일 장치의 도구 모음 단추 아이콘 높이</p> </td> 
+   <td><p>모바일 장치에서 도구 모음 단추 아이콘 높이</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>mobilefixedtoolbarbgcolor</code></p> </td> 
