@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 442cd4bb-21b8-4d9d-89a4-402ee22c79a7
 translation-type: tm+mt
-source-git-commit: 9d13589ea95329dc6a9d3dbf3a5a9930998597f5
+source-git-commit: 3cc4e08b3a69851e5d4e79eb8159ee00e8f333a0
 workflow-type: tm+mt
-source-wordcount: '7663'
+source-wordcount: '7662'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # AEM Forms의 감시 폴더 {#watched-folder-in-aem-forms}
 
-관리자는 사용자가 미리 구성된 워크플로우, 서비스 또는 스크립트 작업을 시작하여 감시 폴더에 파일(예: PDF 파일)을 배치할 때 추가된 파일을 처리하도록 감시된 폴더라는 네트워크 폴더를 구성할 수 있습니다. 서비스가 지정된 작업을 수행하면 결과 파일이 지정된 출력 폴더에 저장됩니다. 워크플로우, 서비스 및 스크립트에 대한 자세한 내용은 [다양한 파일 처리 방법을 참조하십시오](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-4).
+관리자는 사용자가 미리 구성된 워크플로우, 서비스 또는 스크립트 작업을 시작하여 감시 폴더에 파일(예: PDF 파일)을 배치할 때 추가된 파일을 처리하도록 감시된 폴더라는 네트워크 폴더를 구성할 수 있습니다. 서비스가 지정된 작업을 수행하면 결과 파일이 지정된 출력 폴더에 저장됩니다. 워크플로우, 서비스 및 스크립트에 대한 자세한 내용은 [다양한 파일 처리 방법을 참조하십시오](#variousmethodsforprocessingfiles).
 
 ## 감시 폴더 만들기 {#create-a-watched-folder}
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
    폴더가 `MyWatchedFolder`없으므로 AEM Forms에서 지정된 경로에 폴더를 만듭니다.
 
-* 감시 폴더 끝점을 구성하기 전에 파일 시스템에 폴더를 만든 다음 folderPath 속성에 전체 경로를 제공합니다. folderPath 속성에 대한 자세한 내용은 [감시 폴더 속성을 참조하십시오](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).
+* 감시 폴더 끝점을 구성하기 전에 파일 시스템에 폴더를 만든 다음 folderPath 속성에 전체 경로를 제공합니다. folderPath 속성에 대한 자세한 내용은 [감시 폴더 속성을 참조하십시오](#watchedfolderproperties).
 
 >[!NOTE]
 >
@@ -53,7 +53,8 @@ ht-degree: 0%
    * `inputProcessorType`
    * `inputProcessorId`
    * `outputFilePattern`
-   지원되는 속성의 전체 목록은 [감시 폴더 속성을 참조하십시오](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).
+
+   지원되는 속성의 전체 목록은 [감시 폴더 속성을 참조하십시오](#watchedfolderproperties).
 
 1. 모두 **저장을 클릭합니다**. 노드가 만들어지고 속성이 저장되면 속성 `input`, `result`, `failure``preserve`및 `stage`폴더는 속성에 지정된 경로에 `folderPath` 만들어집니다.
 
@@ -80,8 +81,9 @@ ht-degree: 0%
    * 작성자,게시
 
    * 게시, 작성자
-
-**참고**: *감시 폴더를 호스팅하는 서버에 지정된 실행 모드가 없는 경우, 감시 폴더는 서버의 실행 모드에 관계없이 항상 활성화됩니다.*
+   >[!NOTE]
+   >
+   >감시 폴더를 호스팅하는 서버에 지정된 실행 모드가 없는 경우, 감시 폴더는 서버의 실행 모드에 관계없이 항상 활성화됩니다.
 
 * **outputFilePattern(문자열)**: 출력 파일의 패턴입니다. 폴더 또는 파일 패턴을 지정할 수 있습니다. 폴더 패턴을 지정하면 출력 파일의 이름이 워크플로우에 설명된 대로 지정됩니다. 파일 패턴을 지정하면 출력 파일의 이름이 파일 패턴에 설명된 대로 지정됩니다. [파일 및 폴더 패턴은](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) 출력 파일의 디렉토리 구조를 지정할 수도 있습니다. 필수 속성입니다.
 
@@ -139,6 +141,7 @@ ht-degree: 0%
    * %l = 밀리초
    * %R = 무작위 숫자(0과 9 사이)
    * %P = 프로세스 또는 작업 ID
+
    예를 들어 2009년 7월 17일 오후 8시이고 C:/Test/WF0/failure/%Y/%M/%D/%H/ 결과 폴더는 C:/Test/WF0/failure/2009/07/17/20입니다.
 
    경로가 절대 경로가 아니라 상대 경로인 경우 해당 폴더가 감시 폴더 내에 생성됩니다. 기본값은 감시 폴더 내의 결과 폴더인 result/%Y/%M/%D/입니다. 파일 패턴에 대한 자세한 내용은 파일 패턴 [정보를 참조하십시오](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
@@ -534,6 +537,7 @@ log.info("Exiting workflow script!")
 
    * 감시 폴더의 includeFilePattern 속성을 새 입력 파일(예: NOMATCH 입력)과 일치하지 않는 값으로 변경합니다.
    * 새 입력 파일을 만드는 프로세스를 일시 중단합니다.
+
    AEM Forms가 모든 파일을 복구하여 처리할 때까지 기다립니다. 대부분의 파일은 복구되고 새로운 입력 파일은 올바르게 처리됩니다. 감시 폴더를 통해 파일을 복구하고 처리하는 데 기다리는 시간은 호출할 작업의 길이와 복구할 파일의 수에 따라 다릅니다.
 
 1. 처리할 수 없는 파일을 확인합니다. 적절한 시간을 기다린 후 이전 단계를 완료했지만 아직 처리되지 않은 파일이 단계 폴더에 남아 있으면 다음 단계로 이동합니다.
@@ -669,7 +673,7 @@ ECMAScript는 PDF Generator의 createPDF API를 사용하여 Microsoft Word(.doc
    * inputProcessorId(문자열): inputProcessorId 속성의 동작은 inputProcessorType 속성에 지정된 값을 기반으로 합니다. 이 예에서 inputProcessorType 속성 값은 workflow입니다. 따라서 inputProcessorId 속성에 대해 PDFG 워크플로우의 다음 경로를 지정합니다. /etc/workflow/models/pdfg/jcr:content/model
 
    * outputFilePattern(문자열): 출력 파일의 패턴입니다. 폴더 또는 파일 패턴을 지정할 수 있습니다. 폴더 패턴을 지정하면 출력 파일의 이름이 워크플로우에 설명된 대로 지정됩니다. 파일 패턴을 지정하면 출력 파일의 이름이 파일 패턴에 설명된 대로 지정됩니다.
-   위에 언급된 필수 속성 외에도, 감시 폴더는 몇 가지 선택적 속성을 지원합니다. 선택적 속성에 대한 전체 목록과 설명은 [감시 폴더 속성을 참조하십시오](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).
+   위에 언급된 필수 속성 외에도, 감시 폴더는 몇 가지 선택적 속성을 지원합니다. 선택적 속성에 대한 전체 목록과 설명은 [감시 폴더 속성을 참조하십시오](#watchedfolderproperties).
 
 ## 중앙 마이그레이션 브리지 사용(더 이상 사용되지 않음)(감시 폴더 사용) {#using-central-migration-bridge-deprecated-with-a-watched-folder}
 
@@ -750,4 +754,4 @@ ECMAScript는 PDF Generator의 createPDF API를 사용하여 Microsoft Word(.doc
 
    * **outputFilePattern(문자열)**: 출력 파일의 패턴입니다. 폴더 또는 파일 패턴을 지정할 수 있습니다. 폴더 패턴을 지정하면 출력 파일의 이름이 워크플로우에 설명된 대로 지정됩니다. 파일 패턴을 지정하면 출력 파일의 이름이 파일 패턴에 설명된 대로 지정됩니다.
 
-위에 언급된 필수 속성 외에도, 감시 폴더는 몇 가지 선택적 속성을 지원합니다. 선택적 속성의 전체 목록 및 설명은 [감시 폴더 속성을 참조하십시오](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).
+위에 언급된 필수 속성 외에도, 감시 폴더는 몇 가지 선택적 속성을 지원합니다. 선택적 속성의 전체 목록 및 설명은 [감시 폴더 속성을 참조하십시오](#watchedfolderproperties).
