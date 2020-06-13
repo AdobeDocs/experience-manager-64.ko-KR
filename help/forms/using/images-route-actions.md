@@ -9,22 +9,25 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 0%
 
 ---
 
 
 # 경로 작업에 사용되는 이미지 사용자 정의 {#customize-images-used-in-route-actions}
 
-경로 작업에 사용되는 이미지를 사용자 정의하려면 사용자 [정의](/help/forms/using/generic-steps-html-workspace-customization.md) 일반 단계에 설명된 단계에 따라 이 문서에 설명된 단계를 수행합니다.
+경로 작업에 사용되는 이미지를 사용자 정의하려면 사용자 정의 [의 일반 단계에 설명된 단계에](/help/forms/using/generic-steps-html-workspace-customization.md) 따라 이 문서에 설명된 단계를 수행하십시오.
 
-## 경로 지정을 위한 이미지 {#images-for-route-actions}
+## 경로 작업을 위한 이미지 {#images-for-route-actions}
 
-1. CSS에서 이미지를 정의하는 스타일을 새 경로 작업에 대해 다음 위치에 추가합니다.
+1. 새로운 경로 작업에 대해 다음 위치에 CSS에서 이미지를 정의하는 스타일을 추가합니다.
 
    `/apps/ws/css/newStyle.css`
 
-   예:아래와 `myStyle1`같이 새 스타일을 추가하고 WebDAV 클라이언트를 사용하여 이미지 파일을 `myStyleIcon1.png` `/apps/ws/image`s 폴더에 업로드합니다.
+   예: 아래와 `myStyle1`같이 새 스타일을 추가하고 WebDAV 클라이언트를 사용하여 이미지 파일 `myStyleIcon1.png` 을 `/apps/ws/image`s 폴더에 업로드합니다.
 
    >[!NOTE]
    >
@@ -32,7 +35,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
    >[!NOTE]
    >
-   >경로 작업 이름과 같도록 스타일 이름을 사용합니다.
+   >경로 작업 이름과 같도록 스타일 이름을 사용하는 것이 좋습니다.
 
    ```css
    .myStyle1{
@@ -44,11 +47,11 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ## 작업 목록 작업 팝업 {#task-list-task-action-popup}
 
-1. 작업 목록 작업 팝업을 만듭니다. AEM [Forms 작업 영역 코드](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)작성을 참조하십시오. 개발 패키지를 사용해야 합니다.
+1. 작업 목록 작업 팝업을 만듭니다. AEM Forms 작업 [공간 코드 작성을 참조하십시오](introduction-customizing-html-workspace.md#building-html-workspace-code). 개발 패키지를 사용해야 합니다.
 
-1. 복사 `/libs/ws/js/runtime/templates/task.html` 대상 `/apps/ws/js/runtime/templates/task.html`.
+1. 복사 `/libs/ws/js/runtime/templates/task.html` 를 `/apps/ws/js/runtime/templates/task.html`참조하십시오.
 
-1. CSS 스타일의 이름이 서버에서 오는 경로 작업 이름과 같은 경우 다음 코드를 수정합니다. `/apps/ws/js/runtime/templates/task.html`:
+1. CSS 스타일의 이름이 서버에서 오는 경로 작업 이름과 같은 경우 다음 코드를 수정합니다 `/apps/ws/js/runtime/templates/task.html`.
 
    ```
    <%if(routeList == null){%>
@@ -78,7 +81,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
                <%}%>
    ```
 
-1. CSS 스타일의 이름이 서버에서 오는 경로 작업 이름과 다른 경우 에서 다음 코드를 수정합니다 `/apps/ws/js/runtime/templates/task.html`. 그러면 `if-else` 서블릿 조건 스택을 추가하여 스타일을 경로 작업 이름과 매핑합니다.
+1. CSS 스타일의 이름이 서버에서 오는 경로 작업 이름과 다른 경우 다음 코드를 수정하십시오 `/apps/ws/js/runtime/templates/task.html`. 그러면 서블릿 조건 스택을 추가하여 스타일을 경로 작업 이름과 매핑합니다. `if-else`
 
 ```
 <%if(routeList == null){%>
@@ -116,9 +119,9 @@ To
 
 ## 작업 세부 정보 작업 팝업 {#task-details-task-action-popup}
 
-1. 복사 `/libs/ws/js/runtime/templates/taskdetails.html` 대상 `/apps/ws/js/runtime/templates/taskdetails.html`.
+1. 복사 `/libs/ws/js/runtime/templates/taskdetails.html` 를 `/apps/ws/js/runtime/templates/taskdetails.html`참조하십시오.
 
-1. CSS 스타일의 이름이 서버에서 오는 경로 작업 이름과 같은 경우 다음 코드를 수정합니다. `/apps/ws/js/runtime/templates/taskdetails.html`:
+1. CSS 스타일의 이름이 서버에서 오는 경로 작업 이름과 같은 경우 다음 코드를 수정합니다 `/apps/ws/js/runtime/templates/taskdetails.html`.
 
    ```
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -138,7 +141,7 @@ To
                        <%}%>
    ```
 
-1. CSS 스타일의 이름이 서버에서 오는 경로 작업 이름과 다른 경우 에서 다음 코드를 수정합니다 `/apps/ws/js/runtime/templates/taskdetails.html`. 그러면 `if-else` 서블릿 조건 스택을 추가하여 스타일을 경로 작업 이름과 매핑합니다.
+1. CSS 스타일의 이름이 서버에서 오는 경로 작업 이름과 다른 경우 다음 코드를 수정하십시오 `/apps/ws/js/runtime/templates/taskdetails.html`. 그러면 루트 작업 이름과 스타일을 매핑하기 위해 `if-else` 서블릿 조건 스택이 추가됩니다.
 
    ```
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -166,7 +169,7 @@ To
                <%}%>
    ```
 
-1. 편집을 `/apps/ws/js/registry.js` 위해 열고 다음 텍스트를 찾습니다.\
+1. 편집을 위해 열고 다음 텍스트를 찾습니다. `/apps/ws/js/registry.js`\
    `"text!/lc/libs/ws/js/runtime/templates/taskdetails.html"`
 
 1. 텍스트를 다음으로 바꿉니다.\
