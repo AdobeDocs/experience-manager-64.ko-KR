@@ -10,9 +10,9 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 897ff73f-15a5-484f-a3a2-616de8ac59dc
 translation-type: tm+mt
-source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+source-git-commit: c842bd832a63ed9e96801c56ff35489ee6df630b
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1703'
 ht-degree: 0%
 
 ---
@@ -104,6 +104,7 @@ SPA 편집기의 주요 요소를 염두에 두고, AEM 내의 SPA를 편집하�
 >* SPA는 항상 그 디스플레이를 담당한다.
 >* SPA 편집기는 SPA 자체와 분리되어 있습니다.
 >* 프로덕션(게시)에서는 SPA 편집기가 로드되지 않습니다.
+
 >
 
 
@@ -194,8 +195,8 @@ SPA를 편집할 때 클라이언트-서버 상호 작용에 대한 자세한 �
 
 SPA Editor SDK는 다음과 같은 최소 버전을 지원합니다.
 
-* 반응 16.3
-* Angular 6.x
+* 16.x 이상 반응
+* 각 6.x 이상
 
 이러한 프레임워크의 이전 버전은 AEM SPA Editor SDK에서 사용할 수 있지만 지원되지 않습니다.
 
