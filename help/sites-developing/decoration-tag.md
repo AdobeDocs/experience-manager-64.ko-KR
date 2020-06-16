@@ -2,7 +2,7 @@
 title: 데코레이션 태그
 description: 웹 페이지의 구성 요소가 렌더링되면 렌더링된 구성 요소를 자체 내에 래핑하여 HTML 요소를 생성할 수 있습니다. 개발자의 경우 AEM은 포함된 구성 요소를 래핑하는 데코레이션 태그를 제어하는 명확하고 간단한 로직을 제공합니다.
 translation-type: tm+mt
-source-git-commit: 440a514fa1b0b5d685fe7717caf40400e5288e02
+source-git-commit: 7b5cae8aea49b3fd4200bd902d07e1c0fe1090ce
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# 데코레이션 태그{#decoration-tag}
+# 데코레이션 태그 {#decoration-tag}
 
 웹 페이지의 구성 요소가 렌더링되면 렌더링된 구성 요소를 자체 내에 래핑하여 HTML 요소를 생성할 수 있습니다. 이 기능은 주로 두 가지 목적으로 사용됩니다.
 
@@ -38,9 +38,7 @@ ht-degree: 0%
 다음 속성과 노드를 구성 요소에 적용하여 데코레이션 태그의 동작을 제어할 수 있습니다.
 
 * **`cq:noDecoration {boolean}`:**이 속성을 구성 요소에 추가할 수 있고 true 값을 사용하면 AEM이 구성 요소 위에 래퍼 요소를 생성하지 않습니다.
-
 * **`cq:htmlTag`node :**이 노드는 구성 요소 아래에 추가할 수 있으며 다음 속성을 가질 수 있습니다.
-
    * **`cq:tagName {String}`:**기본 DIV 요소 대신 구성 요소를 래핑하는 데 사용할 사용자 지정 HTML 태그를 지정하는 데 사용할 수 있습니다.
    * **`class {String}`:**이를 사용하여 래퍼에 추가할 css 클래스 이름을 지정할 수 있습니다.
    * 다른 속성 이름은 제공된 것과 동일한 문자열 값을 갖는 HTML 속성으로 추가됩니다.
