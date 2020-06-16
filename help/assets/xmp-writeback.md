@@ -3,7 +3,7 @@ title: 표현물로 XMP 원본에 쓰기
 description: XMP 원본에 쓰기 기능을 사용하여 자산의 메타데이터 변경 내용을 자산의 모든 표현물 또는 특정 표현물에 전달하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: b7180dcc7b50dca1c101a3fd28e031ef8e08f37f
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 1%
@@ -13,9 +13,9 @@ ht-degree: 1%
 
 # 표현물로 XMP 원본에 쓰기 {#xmp-writeback-to-renditions}
 
-AEM(Adobe Experience Manager)의 이 XMP 원본에 쓰기 기능은 자산 변환에 대한 자산 메타데이터 변경 사항을 복제합니다.
+AEM(Adobe Experience Manager)의 이 XMP 원본에 쓰기 기능은 자산 메타데이터 변경 사항을 자산의 변환에 복제합니다.
 
-AEM Assets 내에서 또는 자산을 업로드하는 동안 자산의 메타데이터를 변경하면 변경 내용이 처음에 Crx-De의 자산 노드 내에 저장됩니다.
+AEM Assets 내에서 또는 자산을 업로드하는 동안 자산의 메타데이터를 변경하면 변경 내용은 처음에 Crx-De의 자산 노드 내에 저장됩니다.
 
 XMP 원본에 쓰기 기능은 메타데이터 변경 내용을 자산의 모든 표현물 또는 특정 표현물에 전파합니다.
 
@@ -23,11 +23,11 @@ XMP 원본에 쓰기 기능은 메타데이터 변경 내용을 자산의 모든
 
 ![메타데이터](assets/metadata.png)
 
-이 경우 AEM Assets는 자산 계층에 저장된 자산 메타데이터에 대한 매개 변수 **[!UICONTROL 에 제목]** `dc:title` 속성 변경 사항을 저장합니다.
+이 경우 AEM Assets은 자산 계층 구조에 저장된 자산 메타데이터의 매개 변수 **[!UICONTROL 에 제목]** `dc:title` 속성 변경 사항을 저장합니다.
 
 ![metadata_stored](assets/metadata_stored.png)
 
-그러나 AEM 자산에서는 자산의 변환에 대한 메타데이터 변경 사항을 자동으로 전파하지 않습니다.
+그러나 AEM Assets은 자산의 표현물에 메타데이터 변경 사항을 자동으로 전파하지 않습니다.
 
 XMP 원본에 쓰기 기능을 사용하면 자산의 모든 표현물 또는 특정 표현물에 메타데이터 변경 내용을 전파할 수 있습니다. 하지만 변경 사항은 자산 계층의 메타데이터 노드 아래에 저장되지 않습니다. 대신 이 기능에는 변환에 대한 바이너리 파일의 변경 사항이 포함됩니다.
 
@@ -55,8 +55,8 @@ XMP 원본에 대한 기능이 변환 축소판 140.100.png 및 319.319.png에 �
 
    ![step_properties](assets/step_properties.png)
 
-1. 새로운 속성을 사용하여 다이내믹 미디어 이미지에 대한 피라미드형 TIFF 변환을 다시 생성하려면 **[!UICONTROL 다이내믹 미디어 프로세스 이미지 자산]** 단계를 DAM 메타데이터 원본에 작업 과정에 추가하십시오.
-PTIFF 변환은 다이내믹 미디어 하이브리드 모드에서만 로컬에 만들어지고 저장됩니다. 워크플로우를 저장합니다.
+1. 새로운 속성을 사용하여 Dynamic Media 이미지에 대한 피라미드형 TIFF 표현물을 다시 생성하려면 DAM 메타데이터 작성 **** 워크플로우에 Dynamic Media 처리 이미지 자산 단계를 추가하십시오.
+PTIFF 변환은 Dynamic Media 하이브리드 모드에서만 로컬에 만들어지고 저장됩니다. 워크플로우를 저장합니다.
 
 메타데이터 변경 사항은 다른 내용이 아니라 자산 `thumbnail.140.100.png` 의 표현물 및 `thumbnail.319.319.png` 에 전파됩니다.
 
@@ -90,12 +90,12 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 1. 구성 관리자를 엽니다 `https://[aem_server]:[port]/system/console/configMgr`.
 1. Adobe **[!UICONTROL CQ DAM XmpFilter 구성을]** 엽니다.
-1. 허용된 목록을 통해 필터링을 적용하려면 **[!UICONTROL XMP 속성에 허용 목록]**&#x200B;적용을 선택하고 XMP 필터링을 위한 **[!UICONTROL 허용 목록 XML 이름 상자에 가져올 속성을]** 지정합니다.
+1. 허용된 목록을 통해 필터링을 적용하려면 [XMP 속성에 **[!UICONTROL 허용 목록 적용]**]을 선택하고 [XMP 필터링에 대해 **[!UICONTROL 허용되는 XML 이름]** ] 상자에서 가져올 속성을 지정합니다.
 
    ![chlimage_1-347](assets/chlimage_1-347.png)
 
-1. 허용되는 목록을 통해 필터링을 적용한 후 차단된 XMP 속성을 필터링하려면 XMP 필터링을 위해 블랙리스트에 추가된 **[!UICONTROL XML 이름 상자에 해당 속성을]** 지정합니다. 변경 사항을 저장합니다.
+1. 허용된 목록을 통한 필터링을 적용한 후 차단된 XMP 속성을 필터링하려면 [XMP 필터링을 위한 **[!UICONTROL 차단된 XML 이름] 상자에 해당 속성을]** 지정합니다. 변경 사항을 저장합니다.
 
    >[!NOTE]
    >
-   >[ **[!UICONTROL XMP 속성에 블랙 리스트 적용]** ] 옵션이 기본적으로 선택되어 있습니다. 즉, 차단된 목록을 사용한 필터링은 기본적으로 활성화됩니다. 이러한 필터링을 비활성화하려면 [XMP 속성에 **[!UICONTROL 블랙 리스트 적용] 옵션을 선택]** 취소합니다.
+   >기본적으로 **[!UICONTROL XMP 속성에 블록 목록]** 적용 옵션이 선택되어 있습니다. 즉, 차단된 목록을 사용한 필터링은 기본적으로 활성화됩니다. 이러한 필터링을 비활성화하려면 [XMP 속성에 **[!UICONTROL 블록 목록 적용] 옵션을 선택]** 취소합니다.
