@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c142d7b3-301b-447c-a715-452c905565d1
 translation-type: tm+mt
-source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+source-git-commit: 801941c060e1a912f3969bca1e89962241e7fbe0
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # XDP 양식의 HTML5 미리 보기 생성 {#generate-html-preview-of-an-xdp-form}
 
-양식의 PDF 변환을 미리 보는 것 외에도 AEM Forms Designer에서 양식을 디자인하는 동안 양식의 HTML5 변환을 미리 볼 수도 있습니다. HTML **미리 보기** 탭을 사용하여 브라우저에 표시되는 것처럼 양식을 미리 볼 수 있습니다.
+AEM Forms Designer에서 양식을 디자인하는 동안 양식의 PDF 변환을 미리 볼 수 있을 뿐만 아니라 양식의 HTML5 변환을 미리 볼 수도 있습니다. HTML **미리 보기** 탭을 사용하여 브라우저에 표시되는 것처럼 양식을 미리 볼 수 있습니다.
 
 ## Designer에서 XDP 양식에 대한 HTML 미리 보기 활성화 {#html-preview-of-forms-in-forms-designer}
 
@@ -26,23 +26,23 @@ ht-degree: 0%
 
 * Apache Sling 인증 서비스 구성
 * 보호 모드 비활성화
-* AEM Forms 서버에 대한 세부 정보 제공
+* AEM Forms 서버 세부 정보 제공
 
 ### Apache Sling 인증 서비스 구성 {#configure-apache-sling-authentication-service}
 
-1. OSGi에서 실행되는 AEM Forms의 https://[*server*]:[*port*]/system/console/configMgr로 이동합니다.
+1. OSGi에서 실행되는 AEM Forms `https://[server]:[port]/system/console/configMgr` 로 이동 또는
 
-   https://[*server*]:[*port*]/lc/system/console/configMgr(JEE에서 실행 중인 AEM Forms)
+   `https://[server]:[port]/lc/system/console/configMgr` JEE에서 실행되는 AEM Forms.
 
 1. Apache Sling **Authentication Service** 구성을 찾아 클릭하여 편집 모드에서 엽니다.
 
-1. OSGi 또는 JEE에서 AEM Forms를 실행하는지 여부에 따라 인증 요구 사항 **필드에 다음을 추가합니다** .
+1. OSGi 또는 JEE에서 AEM Forms을 실행하는지 여부에 따라 **인증 요구 사항** 필드에 다음을 추가합니다.
 
    * JEE의 AEM Forms
 
       * -/content/xfforms
       * -/etc/clientlibs
-   * OSGi에서 AEM Forms
+   * OSGi의 AEM Forms
 
       * -/content/xfforms
       * -/etc/clientlibs/fd/xfaforms
@@ -60,13 +60,13 @@ ht-degree: 0%
 
 1. AEM 웹 콘솔에 관리자로 로그인합니다.
 
-   * OSGi에서 AEM Forms에 대한 URL은 https://[server]:[port]/system/console/configMgr입니다.
-   * JEE에서 AEM Forms에 대한 URL은 https://[*server*]:[*port*]/lc/system/console/configMgr입니다.
+   * OSGi의 AEM Forms에 대한 URL `https://[server]:[port]/system/console/configMgr`
+   * JEE의 AEM Forms에 대한 URL은 `https://[server]:[port]/lc/system/console/configMgr`
 
 1. 모바일 **[!UICONTROL 양식 구성을]** 열어 편집할 수 있습니다.
 1. 보호 **[!UICONTROL 모드]** 옵션을 선택 취소하고 저장을 **[!UICONTROL 클릭합니다]**.
 
-### AEM Forms 서버에 대한 세부 정보 제공 {#provide-details-of-aem-forms-server}
+### AEM Forms 서버 세부 정보 제공 {#provide-details-of-aem-forms-server}
 
 1. 디자이너에서 도구 **> 옵션으로** 이동합니다 ****.
 1. [옵션] 창에서 **서버 옵션** 페이지를 선택하고 다음 세부 정보를 제공한 후 **확인을 클릭합니다**.
@@ -75,14 +75,14 @@ ht-degree: 0%
    * **HTTP 포트 번호**: AEM 서버 포트. 기본값은 4502입니다.
    * **HTML 미리 보기 컨텍스트:** XFA 양식을 렌더링하기 위한 프로필의 경로입니다. Designer에서 양식을 미리 보는 데 사용되는 기본 프로필은 다음과 같습니다. 하지만 사용자 지정 프로필의 경로를 지정할 수도 있습니다.
 
-      * `/content/xfaforms/profiles/default.html` (OSGi에서 AEM Forms)
+      * `/content/xfaforms/profiles/default.html` (OSGi의 AEM Forms)
       * `/lc/content/xfaforms/profiles/default.html` (JEE의 AEM Forms)
    * **Forms Manager 컨텍스트:** Forms Manager UI가 배포되는 컨텍스트 경로입니다. 기본값은 다음과 같습니다.
 
-      * `/aem/forms` (OSGi에서 AEM Forms)
+      * `/aem/forms` (OSGi의 AEM Forms)
       * `/lc/forms` (JEE의 AEM Forms)
 
-   **참고:** *AEM Forms 서버가 실행 중인지 확인합니다. HTML 미리 보기는 CRX 서버에 연결하여 미리 보기를*&#x200B;생성합니다&#x200B;*.*
+   **참고:** *AEM Forms 서버가 작동 중이고 실행 중인지 확인합니다. HTML 미리 보기는 CRX 서버에 연결하여 미리 보기를*&#x200B;생성합니다&#x200B;*.*
 
    ![AEM Forms 디자이너 옵션 ](assets/server_options.png)
 
