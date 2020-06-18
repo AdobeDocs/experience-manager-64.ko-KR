@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6696c325-d188-41c8-a39f-c8ae7f339fe8
 translation-type: tm+mt
-source-git-commit: 4d5cc3a785be782e79a53d18cb9bb5beba60f61d
+source-git-commit: b7be355f788f07eea2d1333abb4220dd645ef53f
 workflow-type: tm+mt
-source-wordcount: '1827'
-ht-degree: 6%
+source-wordcount: '1843'
+ht-degree: 7%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 6%
 * [성능 지침](/help/sites-deploying/performance-guidelines.md)
 * [AEM Mobile 시작하기](/help/mobile/getting-started-aem-mobile.md)
 * [릴리즈 차량 정의 갱신](/help/sites-deploying/update-release-vehicle-definitions.md)
-* [AEM Screens 소개](/help/screens/aem-screens-introduction.md)
+* [AEM Screens 소개](https://docs.adobe.com/content/help/ko-KR/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## 기본 개념 {#basic-concepts}
 
@@ -96,7 +96,7 @@ AEM 용어에서 &quot;인스턴스&quot;는 서버에서 실행 중인 AEM의 �
 
 이러한 인스턴스는 설치된 소프트웨어와 동일합니다. 구성 하나만으로 구분됩니다. 또한 대부분의 설치에서 발송자를 사용합니다.
 
-* **발송자**: 정적 웹 서버(Apache httpd, Microsoft IIS 등) 증강(AEM 디스패처 모듈 포함). 게시 인스턴스에서 생성한 웹 페이지를 캐시하여 성능을 향상시킵니다.
+* **Dispatcher**: 정적 웹 서버(Apache httpd, Microsoft IIS 등) 증강(AEM 디스패처 모듈 포함). 게시 인스턴스에서 생성한 웹 페이지를 캐시하여 성능을 향상시킵니다.
 
 이 설정에는 많은 고급 옵션과 설명이 있지만 작성, 게시 및 발송자의 기본 패턴은 대부분의 배포의 핵심입니다. 우리는 비교적 간단한 설정에 초점을 맞추면서 시작할 것입니다. 고급 배포 옵션에 대한 논의는 다음에 나옵니다.
 
@@ -118,15 +118,15 @@ AEM Managed Services는 디지털 경험 관리를 위한 완벽한 솔루션입
 
 AEM Managed Services 고객은 다음 이점을 실현할 수 있습니다.
 
-**출시 시간 단축:** 기업은 Adobe Managed Services의 유연한 클라우드 인프라를 사용하여 성공적인 디지털 경험을 신속하게 계획, 실행 및 최적화할 수 있습니다. Adobe는 추가 자본, 하드웨어 또는 소프트웨어 없이도 클라우드 아키텍처를 관리하고, Adobe의 고객 성공 엔지니어는 백엔드 앱 및 go-live 우수 사례에 연결하기 위한 AEM 아키텍처, 프로비저닝, 맞춤화 작업을 지원합니다.
+**출시 시간 단축:** 기업은 유연한 Adobe Managed Services 클라우드 인프라를 통해 성공적인 디지털 경험을 신속하게 계획, 실행 및 최적화할 수 있습니다. Adobe는 추가 자본, 하드웨어 또는 소프트웨어 없이도 클라우드 아키텍처를 관리하고, Adobe의 고객 성공 엔지니어는 백엔드 앱 및 go-live 우수 사례에 연결하기 위한 AEM 아키텍처, 프로비저닝, 맞춤화 작업을 지원합니다.
 
 **향상된 성능:** 99.5%, 99.9%, 99.95%, 99.99% 및 99.99%의 서비스 가용성 옵션을 통해 비즈니스를 위한 안정적인 디지털 경험을 제공합니다. 또한 자동 백업 및 다중 모드 재해 복구 모델을 통해 안정성과 비상시 관리를 보장할 수 있습니다.
 
-**최적화된 IT 비용:** 선제적인 지침 및 전문성을 통해 조직은 최신 버전의 AEM을 최신 상태로 유지할 수 있습니다. Adobe Platinum 유지 관리 및 지원은 AMS Enterprise/Basic의 새로운 배포에 자동으로 포함되며 조직은 중요한 애플리케이션을 유지 관리할 수 있도록 기술적 전문 지식과 운영 경험을 제공합니다. 무료 기본 Analytics 또는 Target 기능은 특히 분석 및 개인화에 대한 요구 사항이 제한된 중간 규모 조직의 경우 추가적인 가치를 제공합니다.
+**최적화된 IT 비용:** 선제적인 지침 및 전문성을 통해 조직은 최신 버전의 AEM을 최신 상태로 유지할 수 있습니다. Adobe Platinum 유지 관리 및 지원은 AMS Enterprise/Basic의 새로운 배포에 자동으로 포함되며 조직은 중요한 애플리케이션을 유지 관리할 수 있도록 기술적 전문 지식과 운영 경험을 제공합니다. 무료 기본 Analytics 또는 Target 기능은 특히 분석 및 개인화에 대한 요구 사항이 제한적인 중간 규모 조직의 경우 추가적인 가치를 제공합니다.
 
 **최고 보안:** 고객 애플리케이션을 방화벽 시스템 내부 또는 가상 비공개 클라우드 내에 제한된 액세스 시설에 호스팅하여 엔터프라이즈급 물리적, 네트워크 및 데이터 보안을 보장합니다. 강력한 데이터 스토리지 암호화, 안티바이러스 및 데이터 격리 기능을 갖춘 싱글 테넌트 방식의 가상 시스템이 포함되어 있습니다.
 
-**클라우드 관리자**: Adobe Experience Manager Managed Services 솔루션의 일부인 Cloud Manager는 조직에서 Adobe Experience Manager를 클라우드에서 직접 관리할 수 있는 셀프 서비스 포털입니다. IT 팀 및 구현 파트너가 성능이나 보안을 훼손하지 않고도 사용자 정의 또는 업데이트 전달 시간을 단축할 수 있는 최첨단 지속적인 통합 및 CI/CD(연속 전달) 파이프라인이 포함되어 있습니다. Cloud Manager는 Adobe Managed Service 고객에게만 제공됩니다.
+**클라우드 관리자**: Adobe Experience Manager Managed Services 솔루션의 일부인 Cloud Manager는 조직에서 클라우드에서 Adobe Experience Manager을 자체 관리할 수 있는 셀프 서비스 포털입니다. IT 팀 및 구현 파트너가 성능이나 보안을 훼손하지 않고도 사용자 정의 또는 업데이트 전달 시간을 단축할 수 있는 최첨단 지속적인 통합 및 CI/CD(연속 전달) 파이프라인이 포함되어 있습니다. Cloud Manager는 Adobe Managed Service 고객에게만 제공됩니다.
 
 Cloud Manager 및 해당 리소스에 대한 자세한 내용은 [**Cloud Manager 사용 안내서를 참조하십시오&#x200B;**](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html).
 
@@ -134,11 +134,11 @@ Cloud Manager 및 해당 리소스에 대한 자세한 내용은 [**Cloud Manage
 
 ### 전제 조건 {#prerequisites}
 
-프로덕션 인스턴스는 일반적으로 공식적으로 지원되는 OS를 실행하는 전용 시스템에서 실행되지만( [기술 요구](/help/sites-deploying/technical-requirements.md)사항 참조), Experience Manager 서버는 [**Java Standard Edition 8을&#x200B;**](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)지원하는 모든 시스템에서 실제로 실행됩니다.
+프로덕션 인스턴스는 일반적으로 공식적으로 지원되는 OS를 실행하는 전용 시스템에서 실행되지만( [기술 요구](/help/sites-deploying/technical-requirements.md)사항 참조) Experience Manager 서버는 [**Java Standard Edition 8을&#x200B;**](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)지원하는 모든 시스템에서 실제로 실행됩니다.
 
 친숙한 방법과 AEM에서 개발하는 경우 Apple OS X 또는 Microsoft Windows 또는 Linux의 데스크탑 버전을 실행하는 로컬 시스템에 설치된 인스턴스를 사용하는 것이 일반적입니다.
 
-클라이언트 측에서 AEM은 데스크탑 및 태블릿 운영 체제 모두에서 모든 최신 브라우저(**Microsoft Edge**, **Explorer** 11, **Firefox** 51 **+, Firefox** **** 47+, SafariChrome+)와 함께 작동합니다. 자세한 내용은 [지원되는 클라이언트 플랫폼을](/help/sites-deploying/technical-requirements.md#supported-client-platforms) 참조하십시오.
+클라이언트 측에서 AEM은 데스크탑 및 태블릿 운영 체제 모두에서 모든 최신 브라우저(**Microsoft Edge**, **Explorer** 11, **Firefox** 51 **+, Firefox** **** 47+, SafariChrome+)와 함께 작동합니다. 자세한 내용은 [지원되는 클라이언트 Platform](/help/sites-deploying/technical-requirements.md#supported-client-platforms) 를 참조하십시오.
 
 ### 소프트웨어 다운로드 {#getting-the-software}
 
@@ -321,5 +321,5 @@ AEM이 시작되고 웹 브라우저를 적절한 페이지(일반적으로 로�
 * [성능 지침](/help/sites-deploying/performance-guidelines.md)
 * [AEM Mobile 시작하기](/help/mobile/getting-started-aem-mobile.md)
 * [릴리즈 차량 정의 갱신](/help/sites-deploying/update-release-vehicle-definitions.md)
-* [AEM Screens 소개](/help/screens/aem-screens-introduction.md)
+* [AEM Screens 소개](https://docs.adobe.com/content/help/ko-KR/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
