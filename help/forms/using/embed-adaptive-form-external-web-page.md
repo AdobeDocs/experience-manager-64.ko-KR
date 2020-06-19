@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 discoiquuid: b99c7b93-ba05-42ee-9ca8-0079e15d8602
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -20,16 +20,16 @@ ht-degree: 0%
 
 외부 웹 페이지에 적응형 양식을 포함하는 방법 학습
 
-AEM [Sites 페이지 또는 AEM 외부에 호스팅된 웹 페이지에 적응형 양식을](/help/forms/using/embed-adaptive-form-aem-sites.md) 포함할 수 있습니다. 포함된 응용 양식이 완전히 기능하므로 사용자는 페이지를 나가지 않고도 양식을 채우고 제출할 수 있습니다. 사용자가 웹 페이지에서 다른 요소의 상황에 그대로 있고 양식과 동시에 상호 작용할 수 있도록 해줍니다.
+AEM Sites [페이지](/help/forms/using/embed-adaptive-form-aem-sites.md) 또는 AEM 외부에 호스팅된 웹 페이지에 적응형 양식을 포함할 수 있습니다. 포함된 응용 양식이 완전히 기능하므로 사용자는 페이지를 나가지 않고도 양식을 채우고 제출할 수 있습니다. 사용자가 웹 페이지에서 다른 요소의 상황에 그대로 있고 양식과 동시에 상호 작용할 수 있도록 해줍니다.
 
 ## 전제 조건 {#prerequisites}
 
 응용 양식을 외부 웹 사이트에 내장하기 전에 다음 단계를 수행하십시오.
 
-* AEM 게시 인스턴스에 적응형 양식을 게시합니다.
+* AEM Publish 인스턴스에 적응형 양식을 게시합니다.
 * 웹 사이트에서 적응형 양식을 호스팅할 웹 페이지를 만들거나 식별합니다. 웹 페이지에서 CDN에서 jQuery 파일을 [읽을 수](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) 있거나 jQuery의 로컬 사본이 임베드되어 있는지 확인하십시오. 적응형 양식을 렌더링하려면 jQuery가 필요합니다.
-* AEM 서버 및 웹 페이지가 서로 다른 도메인에 있는 경우 섹션에 나열된 단계를 수행하고 AEM Forms가 크로스 도메인 사이트에 적응형 양식을 제공하도록 [활성화합니다](#cross-domain-sites).
-* [외부 페이지와 AEM](#reveseproxy) Forms 서버 간의 통신을 활성화하려면 역방향 프록시를 설정합니다.
+* AEM 서버 및 웹 페이지가 서로 다른 도메인에 있는 경우 섹션에 나열된 단계를 수행하고 AEM Forms이 크로스 도메인 사이트에 적응형 양식을 제공할 수 있도록 [활성화합니다](#cross-domain-sites).
+* [외부 페이지와](#reveseproxy) AEM Forms 서버 간의 통신을 활성화하려면 역방향 프록시를 설정합니다.
 
 ## 적응형 양식 포함 {#embed-adaptive-form}
 
@@ -114,7 +114,7 @@ AEM [Sites 페이지 또는 AEM 외부에 호스팅된 웹 페이지에 적응�
 * 원본 응용 양식에 구성된 제출 작업은 포함된 양식으로 유지됩니다.
 * 적응형 양식 규칙은 그대로 유지되고 포함된 양식에서 완전히 작동합니다.
 * 원래 응용 양식에 구성된 경험 타깃팅 및 A/B 테스트는 포함된 양식에서 작동하지 않습니다.
-* Adobe Analytics가 원래 양식에서 구성된 경우 분석 데이터가 Adobe Analytics 서버에서 캡처됩니다. 하지만 양식 분석 보고서에서는 사용할 수 없습니다.
+* Adobe Analytics이 원본 양식에 구성된 경우 분석 데이터가 Adobe Analytics 서버에서 캡처됩니다. 하지만 양식 분석 보고서에서는 사용할 수 없습니다.
 
 ## 역방향 프록시 설정  {#reveseproxy}
 
@@ -155,19 +155,19 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 >[!NOTE]
 >
->다른 토폴로지를 설정하는 경우 디스패처 레이어에서 제출, 자동 채우기 및 기타 URL을 허용 목록에 포함해야 합니다.
+>다른 토폴로지를 설정하는 경우 디스패처 레이어의 허용 목록에 제출, 자동 채우기 및 기타 URL을 추가해야 합니다.
 
 ## Best practices {#best-practices}
 
 웹 페이지에 응용 양식을 포함할 때는 다음 우수 사례를 고려하십시오.
 
-* 웹 페이지 CSS에 정의된 스타일 규칙이 양식 개체 CSS와 충돌하지 않도록 합니다. 충돌을 방지하려면 AEM 클라이언트 라이브러리를 사용하여 적응형 양식 테마의 웹 페이지 CSS를 재사용할 수 있습니다. 적응형 양식 테마에서 클라이언트 라이브러리를 사용하는 방법에 대한 자세한 내용은 AEM Forms [의 테마를 참조하십시오](/help/forms/using/themes.md).
+* 웹 페이지 CSS에 정의된 스타일 규칙이 양식 개체 CSS와 충돌하지 않도록 합니다. 충돌을 방지하려면 AEM 클라이언트 라이브러리를 사용하여 적응형 양식 테마의 웹 페이지 CSS를 재사용할 수 있습니다. 적응형 양식 테마에서 클라이언트 라이브러리를 사용하는 방법에 대한 자세한 내용은 AEM Forms의 [테마를 참조하십시오](/help/forms/using/themes.md).
 * 웹 페이지의 양식 컨테이너에서 전체 창 너비를 사용하도록 설정합니다. 이렇게 하면 모바일 장치용으로 구성된 CSS 규칙이 아무런 변경 없이 작동합니다. 양식 컨테이너가 전체 창 너비를 차지하지 않는 경우 사용자 정의 CSS를 작성하여 양식이 다양한 모바일 장치에 맞게 조정해야 합니다.
 * getData [API를](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/GuideBridge.html) 사용하여 클라이언트에서 양식 데이터의 XML 또는 JSON 표현을 가져옵니다.
 * unloadAdaptiveForm [](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/GuideBridge.html) API를 사용하여 HTML DOM에서 응용 양식을 언로드합니다.
 * AEM 서버에서 응답을 보낼 때 액세스 제어 원본 헤더를 설정합니다.
 
-## AEM Forms에서 도메인 간 사이트에 적응형 양식을 제공할 수 있도록 설정  {#cross-domain-sites}
+## AEM Forms이 도메인 간 사이트에 적응형 양식을 제공할 수 있도록 설정  {#cross-domain-sites}
 
 1. AEM 작성자 인스턴스의 AEM 웹 콘솔 구성 관리자로 이동합니다 `http://[server]:[port]/system/console/configMgr`.
 1. Apache Sling Referrer **필터 구성을 찾아** 엽니다.
