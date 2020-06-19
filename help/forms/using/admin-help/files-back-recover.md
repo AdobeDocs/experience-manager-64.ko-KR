@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
 workflow-type: tm+mt
 source-wordcount: '2206'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 백업 및 복구와 관련하여 다음 사항을 고려합니다.
 
 * 데이터베이스는 GDS 및 AEM 리포지토리 전에 백업해야 합니다.
-* 백업을 위해 클러스터된 환경에서 노드를 종료해야 하는 경우 슬레이브 노드가 마스터 노드 앞에 종료되었는지 확인합니다. 그렇지 않으면 클러스터 또는 서버에서 불일치가 발생할 수 있습니다. 또한 마스터 노드는 슬레이브 노드 앞에 라이브로 만들어야 합니다.
+* 백업을 위해 클러스터된 환경에서 노드를 종료해야 하는 경우 보조 노드가 주 노드 앞에 종료되었는지 확인하십시오. 그렇지 않으면 클러스터 또는 서버에서 불일치가 발생할 수 있습니다. 또한 보조 노드 이전에 기본 노드를 라이브로 설정해야 합니다.
 * 클러스터의 복원 작업을 수행하려면 클러스터의 각 노드에 대해 응용 프로그램 서버를 중지해야 합니다.
 
 ## 전역 문서 저장소 디렉터리 {#global-document-storage-directory}
@@ -61,7 +61,7 @@ GDS 위치를 기본값이 아닌 위치로 변경한 경우 다음과 같이 �
 
 ## AEM 리포지토리 {#aem-repository}
 
-AEM Forms를 설치하는 동안 crx-repository가 구성된 경우 AEM 리포지토리(crx-repository)가 생성됩니다. crx-repository 디렉토리의 위치는 AEM Forms 설치 프로세스 중에 결정됩니다. AEM Forms 데이터의 일관성을 유지하려면 데이터베이스 및 GDS와 함께 AEM 리포지토리 백업 및 복원이 필요합니다. AEM 저장소에는 Correspondence Management Solution, Forms 관리자 및 AEM Forms Workspace에 대한 데이터가 포함됩니다.
+AEM Forms를 설치하는 동안 crx-repository가 구성된 경우 AEM 리포지토리(crx-repository)가 생성됩니다. crx-repository 디렉토리의 위치는 AEM Forms 설치 프로세스 중에 결정됩니다. AEM Forms 데이터의 일관성을 유지하려면 데이터베이스 및 GDS와 함께 AEM 리포지토리 백업 및 복원이 필요합니다. AEM 저장소에는 통신 관리 솔루션, 양식 관리자 및 AEM Forms 작업 공간에 대한 데이터가 포함됩니다.
 
 ### 통신 관리 솔루션 {#correspondence-management-solution}
 
@@ -73,15 +73,15 @@ Correspondence Management Solution은 안전하고 개인화된 인터랙티브�
 
 양식 관리자는 양식을 업데이트, 관리 및 삭제하는 과정을 간소화합니다.
 
-### AEM Forms 작업 영역 {#html-workspace}
+### AEM Forms 작업 공간 {#html-workspace}
 
-AEM Forms Workspace는 (JEE에서 AEM 양식에 대해 더 이상 사용되지 않음) Flex Workspace의 기능과 일치시키고 새로운 기능을 추가하여 작업 영역을 확장 및 통합하며 보다 사용자에게 친숙한 컨텐츠를 제작할 수 있습니다.
+AEM Forms 작업 공간은 (JEE에서 AEM 양식에 대해 더 이상 사용되지 않음) Flex 작업 영역의 기능과 일치하고 작업 영역을 확장 및 통합하고 사용자에게 보다 친숙한 새 기능을 추가합니다.
 
 >[!NOTE]
 >
 >Flex 작업 영역은 AEM 양식 릴리스에서 더 이상 사용되지 않습니다.
 
-Flash Player 및 Adobe Reader가 없는 클라이언트에서 작업을 관리할 수 있습니다. PDF 양식 및 Flex 양식 외에도 HTML 양식을 손쉽게 변환할 수 있습니다.
+Flash Player 및 Adobe Reader가 없는 클라이언트에서 작업을 관리할 수 있습니다. PDF forms 및 Flex 양식 외에도 HTML Forms를 손쉽게 변환할 수 있습니다.
 
 ## AEM Forms 데이터베이스 {#aem-forms-database}
 
@@ -202,4 +202,4 @@ AEM 양식 환경에 추가 글꼴을 설치한 경우 별도로 글꼴을 백�
 >
 >기본적으로 AEM 양식과 함께 설치되는 Adobe 글꼴은 [aem-forms 루트]/fonts 디렉토리에 있습니다.
 
-호스트 컴퓨터의 운영 체제를 다시 초기화하고 이전 운영 체제의 글꼴을 사용하려면 시스템 글꼴 디렉토리의 컨텐츠도 백업해야 합니다. (자세한 내용은 운영 체제 설명서를 참조하십시오.)
+호스트 컴퓨터에서 운영 체제를 다시 초기화하고 이전 운영 체제의 글꼴을 사용하려면 시스템 글꼴 디렉토리의 컨텐츠도 백업해야 합니다. (자세한 내용은 운영 체제 설명서를 참조하십시오.)
