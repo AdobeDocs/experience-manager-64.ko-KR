@@ -1,9 +1,9 @@
 ---
-title: AEM Assets를 Adobe InDesign Server와 통합
-description: AEM 자산을 InDesign Server와 통합하는 방법을 알아봅니다.
+title: Adobe InDesign Server와 AEM Assets 통합
+description: InDesign Server와 AEM Assets을 통합하는 방법을 살펴보십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
 workflow-type: tm+mt
 source-wordcount: '1685'
 ht-degree: 1%
@@ -11,16 +11,16 @@ ht-degree: 1%
 ---
 
 
-# AEM Assets를 Adobe InDesign Server와 통합 {#integrating-aem-assets-with-indesign-server}
+# Adobe InDesign Server와 AEM Assets 통합 {#integrating-aem-assets-with-indesign-server}
 
-AEM(Adobe Experience Manager) 자산에서는 다음을 사용합니다.
+Adobe Experience Manager(AEM) 자산에서 사용하는 항목:
 
 * 특정 처리 작업의 로드를 배포하는 프록시입니다. 프록시는 특정 작업을 수행하기 위해 프록시 작업자와 통신하는 AEM 인스턴스와 결과를 전달하는 기타 AEM 인스턴스입니다.
 * 특정 작업을 정의 및 관리하는 프록시 작업자입니다.
 
 여기에는 다양한 작업이 포함될 수 있습니다. 예를 들어 Adobe InDesign Server를 사용하여 파일을 처리할 수 있습니다.
 
-Adobe InDesign으로 만든 파일을 AEM 자산에 완전히 업로드하려면 프록시가 사용됩니다. 이렇게 하면 프록시 작업자가 Adobe InDesign Server와 통신하며, 여기에서 [스크립트를](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) 실행하여 메타데이터를 추출하고 AEM 자산에 대한 다양한 변환을 생성합니다. 프록시 작업자는 클라우드 구성에서 InDesign Server와 AEM 인스턴스 간의 양방향 통신을 활성화합니다.
+Adobe InDesign으로 만든 AEM Assets에 파일을 완전히 업로드하려면 프록시가 사용됩니다. 이 기능은 프록시 작업자를 사용하여 Adobe InDesign Server와 통신합니다. Adobe InDesign Server에서는 [스크립트를 실행하여 메타데이터를 추출하고 AEM Assets에 대한 다양한 변환을 생성합니다](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) . 프록시 작업자는 클라우드 구성에서 InDesign Server와 AEM 인스턴스 간의 양방향 통신을 활성화합니다.
 
 >[!NOTE]
 >
@@ -40,13 +40,13 @@ Adobe InDesign으로 만든 파일을 AEM 자산에 완전히 업로드하려면
 
 ## 추출 작동 방식 {#how-the-extraction-works}
 
-InDesign Server를 AEM Assets와 통합할 수 있으므로 InDesign()으로 만든 파일을 업로드하고, 표현물을 생성하며, `.indd`모든 ** 미디어(예: 비디오)를 추출하여 자산으로 저장할 수 있습니다.
+InDesign Server를 AEM Assets과 통합하여 InDesign()으로 만든 파일을 업로드하고, 변환한 다음, 추출된 `.indd`모든 ** 미디어(예: 비디오)를 추출하여 에셋으로 저장할 수 있습니다.
 
 >[!NOTE]
 >
 >이전 버전의 AEM에서 XMP 및 축소판을 추출할 수 있었지만 이제 모든 미디어를 추출할 수 있습니다.
 
-1. AEM 자산에 `.indd` 파일을 업로드합니다.
+1. AEM Assets에 `.indd` 파일을 업로드합니다.
 1. 프레임워크는 SOAP(Simple Object Access Protocol)를 통해 명령 스크립트를 InDesign Server로 전송합니다.
 
    이 명령 스크립트는 다음을 수행합니다.
@@ -57,7 +57,7 @@ InDesign Server를 AEM Assets와 통합할 수 있으므로 InDesign()으로 만
       * 구조, 텍스트 및 모든 미디어 파일이 추출됩니다.
       * PDF 및 JPG 변환이 생성됩니다.
       * HTML 및 IDML 변환이 생성됩니다.
-   * 결과 파일을 다시 AEM 자산에 게시합니다.
+   * 결과 파일을 AEM Assets에 다시 게시합니다.
 
    >[!NOTE]
    >
@@ -72,15 +72,15 @@ InDesign Server를 AEM Assets와 통합할 수 있으므로 InDesign()으로 만
 1. 추출 및 변환 생성 후:
 
    * 구조가 `cq:Page` (변환 유형)에 복제됩니다.
-   * 추출한 텍스트 및 파일은 AEM 자산에 저장됩니다.
-   * 모든 변환은 자산 자체의 AEM 자산에 저장됩니다.
+   * 추출된 텍스트와 파일은 AEM Assets에 저장됩니다.
+   * 모든 변환은 자산 자체의 AEM Assets에 저장됩니다.
 
 ## AEM과 InDesign Server 통합 {#integrating-the-indesign-server-with-aem}
 
-AEM 자산과 함께 사용할 수 있도록 InDesign Server를 통합하고 프록시를 구성한 후 다음을 수행해야 합니다.
+AEM Assets과 함께 사용할 수 있도록 그리고 프록시를 구성한 후 InDesign Server를 통합하려면 다음을 수행해야 합니다.
 
 1. [InDesign Server를 설치합니다](#installing-the-indesign-server).
-1. 필요한 경우 [AEM 자산 워크플로우를 구성합니다](#configuring-the-aem-assets-workflow).
+1. 필요한 경우 AEM Assets [워크플로우를 구성합니다](#configuring-the-aem-assets-workflow).
 
    기본값이 인스턴스에 적합하지 않은 경우에만 필요합니다.
 
@@ -110,16 +110,16 @@ AEM에서 사용할 InDesign Server를 설치하고 시작하려면 다음을 �
    >
    >`<ids-installation-dir>/InDesignServer.com -port 8080 > ~/temp/INDD-logfile.txt 2>&1`
 
-### AEM 자산 워크플로우 구성 {#configuring-the-aem-assets-workflow}
+### AEM Assets 워크플로우 구성 {#configuring-the-aem-assets-workflow}
 
-AEM Assets에는 사전 구성된 워크플로우 **DAM Update Asset**&#x200B;이 있으며, 여기에는 InDesign에 대한 몇 가지 프로세스 단계가 있습니다.
+AEM Assets에는 InDesign을 위한 몇 가지 프로세스 단계가 **있는 미리 구성된 워크플로우 DAM Update Asset**&#x200B;이 있습니다.
 
 * [미디어 추출](#media-extraction)
 * [페이지 추출](#page-extraction)
 
 이 워크플로우는 다양한 작성 인스턴스에서 설정에 맞게 조정할 수 있는 기본값이 있는 설정으로 설정됩니다(표준 워크플로우이므로 워크플로우 [편집에서 추가 정보를 사용할 수 있습니다](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). 기본값(SOAP 포트 포함)을 사용하는 경우 구성이 필요하지 않습니다.
 
-설정 후 AEM 자산에 InDesign 파일을 업로드하면(일반적인 방법 중 하나에서) 자산을 처리하고 다양한 변환을 준비하는 데 필요한 워크플로우가 트리거됩니다. AEM 자산에 `.indd` 파일을 업로드하여 구성을 테스트하여 `<*your_asset*>.indd/Renditions`
+설정 후 InDesign 파일을 AEM Assets(일반적인 방법 중 하나)로 업로드하면 에셋을 처리하고 다양한 변환을 준비하는 데 필요한 워크플로우가 트리거됩니다. AEM Assets에 파일을 업로드하여 구성을 테스트하여 IDS에서 만든 다른 변환이 `.indd` `<*your_asset*>.indd/Renditions`
 
 #### 미디어 추출 {#media-extraction}
 
@@ -143,7 +143,7 @@ AEM Assets에는 사전 구성된 워크플로우 **DAM Update Asset**&#x200B;�
 
 미디어 추출 워크플로우 단계에서 실행되는 `ThumbnailExport.jsx` 스크립트는 .jpg 형식으로 축소판 변환을 생성합니다. 이 변환은 AEM에 필요한 정적 변환을 생성하는 [축소판 처리] 워크플로우 단계에서 사용됩니다.
 
-[축소판 처리] 워크플로우 단계를 구성하여 서로 다른 크기로 정적 변환을 생성할 수 있습니다. AEM Assets UI에 필수 사항이므로 기본값을 제거하지 않아야 합니다. 마지막으로, 이미지 미리 보기 변환 삭제 워크플로우 단계에서는 .jpg 축소판 변환이 더 이상 필요하지 않으므로 제거합니다.
+[축소판 처리] 워크플로우 단계를 구성하여 서로 다른 크기로 정적 변환을 생성할 수 있습니다. AEM Assets UI에 필요하므로 기본값을 제거하지 않아야 합니다. 마지막으로, 이미지 미리 보기 변환 삭제 워크플로우 단계에서는 .jpg 축소판 변환이 더 이상 필요하지 않으므로 제거합니다.
 
 #### 페이지 추출 {#page-extraction}
 
@@ -171,7 +171,7 @@ AEM Assets에는 사전 구성된 워크플로우 **DAM Update Asset**&#x200B;�
 >
 >작업자는 프록시 인스턴스에 상주합니다.
 
-1. 도구 콘솔의 왼쪽 창에서 **[!UICONTROL 클라우드 서비스]** 구성을 확장합니다. 그런 다음 **[!UICONTROL 클라우드 프록시 구성을 확장합니다]**.
+1. 도구 콘솔의 왼쪽 창에서 **[!UICONTROL Cloud Service 구성을]** 확장합니다. 그런 다음 **[!UICONTROL 클라우드 프록시 구성을 확장합니다]**.
 
 1. IDS **[!UICONTROL 작업자]** 를 두 번 클릭하여 구성을 엽니다.
 
@@ -233,7 +233,7 @@ InDesign 서버와 AEM이 다른 호스트에서 실행되거나 두 가지 응�
    >
    >기본적으로 구성 가능한(`retry.interval.to.whitelist.name`) 시간(분) 후 IDS 워터의 유효성을 다시 검사해야 합니다. 작업자가 온라인에서 검색되면 차단된 목록에서 제거됩니다.
 
-<!-- TBD: Make updates to configurations for allow and block list after product updates are done.
+<!-- TBD: Make updates to configurations for allow and block list after product updates are done. See CQ-4298427.
 -->
 
 ## Adobe InDesign Server 10.0 이상 지원 활성화 {#enabling-support-for-indesign-server-or-higher}
