@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f192a8a3-1116-4d32-9b57-b53d532c0dbf
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
 workflow-type: tm+mt
 source-wordcount: '1520'
 ht-degree: 0%
@@ -28,7 +28,7 @@ AEM 양식 사용 방법을 식별한 후 백업해야 하는 파일, 백업 빈
 >
 >AEM 양식 구현의 다른 측면과 마찬가지로, 전체 솔루션이 데이터 손실 없이 예상대로 작동할 수 있도록 하기 위해 프로덕션에서 사용하기 전에 개발 또는 스테이징 환경에서 백업 및 복구 전략을 개발하고 테스트해야 합니다.
 
-AEM(Adobe Experience Manager)은 AEM 양식의 필수 요소입니다. 따라서 AEM을 백업하고 AEM 양식 백업과 AEM 양식 관리 솔루션과 동기화해야 하며, 양식 관리자와 같은 서비스는 AEM 양식의 AEM 부분에 저장된 데이터를 기반으로 합니다.데이터 손실을 방지하기 위해 AEM 양식 특정 데이터를 GDS 및 AEM(저장소)과 데이터베이스 참조와 상호 작용하도록 백업해야 합니다.데이터베이스, GDS, AEM 및 컨텐츠 저장소 루트 디렉터리는 원본과 동일한 DNS 이름을 가진 컴퓨터로 복원되어야 합니다.
+Adobe Experience Manager(AEM)는 AEM 양식의 필수 요소입니다. 따라서 AEM을 백업하고 AEM 양식 백업과 AEM 양식 관리 솔루션과 동기화해야 하며, 양식 관리자와 같은 서비스는 AEM 양식의 AEM 부분에 저장된 데이터를 기반으로 합니다.데이터 손실을 방지하기 위해 AEM 양식 특정 데이터를 GDS 및 AEM(저장소)과 데이터베이스 참조와 상호 작용하도록 백업해야 합니다.데이터베이스, GDS, AEM 및 컨텐츠 저장소 루트 디렉터리는 원본과 동일한 DNS 이름을 가진 컴퓨터로 복원되어야 합니다.
 
 ## 백업 유형 {#types-of-backups}
 
@@ -88,7 +88,7 @@ AEM 양식 백업 전략에는 두 가지 유형의 백업이 포함됩니다.
    1. 관리 **옵션을 클릭합니다**.
    1. 시작 **을** 클릭하여 저장소의 자산을 동기화합니다.
 
-1. 클러스터된 환경에서 마스터 노드(AEM과 관련)는 슬레이브 노드 앞에 와야 합니다.
+1. 클러스터된 환경에서 기본 노드(AEM과 관련)는 보조 노드 앞에 와야 합니다.
 1. 웹, SOAP 또는 EJB 프로세스 이니시에이터와 같은 내부 또는 외부 소스에서 시스템을 시작하지 않아도 정상적인 시스템 작업이 검증됩니다.
 
 기본 AEM 양식 데이터베이스가 이동 또는 변경된 경우, AEM Forms 데이터 소스 IDP_DS 및 EDC_DS에 대한 데이터베이스 연결 정보를 업데이트하는 방법에 대한 자세한 내용은 애플리케이션 서버와 관련된 설치 가이드를 검토하십시오.
