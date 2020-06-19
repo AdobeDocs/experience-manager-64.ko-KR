@@ -3,7 +3,7 @@ title: 자산 오프로드 우수 사례
 description: AEM Assets에서 자산 수집 및 복제 워크플로우를 오프로드하기 위한 권장 사용 사례 및 모범 사례
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
 workflow-type: tm+mt
 source-wordcount: '1818'
 ht-degree: 0%
@@ -17,15 +17,15 @@ ht-degree: 0%
 >
 >이 기능은 AEM 6.4부터 더 이상 사용되지 않으며, AEM 6.5에서 제거됩니다. 그에 따라 계획하십시오.
 
-Adobe Experience Manager(AEM) 자산에서 대용량 파일 처리 및 실행 워크플로우를 수행할 때 상당한 CPU, 메모리 및 I/O 리소스를 사용할 수 있습니다. 특히 자산 크기, 워크플로우, 사용자 수 및 자산 수집의 빈도는 전체 시스템 성능에 영향을 줄 수 있습니다. 리소스를 많이 사용하는 작업에는 AEM 자산 수집 및 복제 워크플로우가 포함됩니다. 단일 AEM 작성 인스턴스에서 이러한 워크플로우를 집중적으로 사용하면 제작 효율성이 저하될 수 있습니다.
+AEM(Adobe Experience Manager)에서 대용량 파일 처리 및 실행 워크플로우를 수행할 때 자산은 상당한 CPU, 메모리 및 I/O 리소스를 사용할 수 있습니다. 특히 자산 크기, 워크플로우, 사용자 수 및 자산 수집의 빈도는 전체 시스템 성능에 영향을 줄 수 있습니다. 리소스를 많이 사용하는 작업에는 AEM 자산 수집 및 복제 워크플로우가 포함됩니다. 단일 AEM 작성 인스턴스에서 이러한 워크플로우를 집중적으로 사용하면 제작 효율성이 저하될 수 있습니다.
 
 이러한 작업을 전용 작업자 인스턴스에 오프로드하면 CPU, 메모리 및 IO 오버헤드가 줄어듭니다. 일반적으로, 오프로딩 작업의 이면에는 집약적인 CPU/메모리/IO 리소스를 전용 작업자 인스턴스에 배포하는 작업이 있습니다. 다음 섹션에는 자산 오프로드에 대한 권장 사용 사례가 포함됩니다.
 
 ## AEM Assets 오프로드 {#aem-assets-offloading}
 
-AEM Assets는 오프로드를 위한 기본 자산별 워크플로우 확장을 구현합니다. 오프로드 프레임워크에서 제공하는 일반 워크플로우 익스텐션을 기반으로 구축되지만 구현에 추가적인 자산별 기능이 포함됩니다. 자산 오프로딩의 목표는 업로드된 자산에서 DAM 자산 업데이트 워크플로우를 효율적으로 실행하는 것입니다. 자산 오프로드를 통해 통합 워크플로우를 보다 효과적으로 제어할 수 있습니다.
+AEM Assets은 오프로드를 위한 기본 자산별 워크플로우 확장을 구현합니다. 오프로드 프레임워크에서 제공하는 일반 워크플로우 익스텐션을 기반으로 구축되지만 구현에 추가적인 자산별 기능이 포함됩니다. 자산 오프로딩의 목표는 업로드된 자산에서 DAM 자산 업데이트 워크플로우를 효율적으로 실행하는 것입니다. 자산 오프로드를 통해 통합 워크플로우를 보다 효과적으로 제어할 수 있습니다.
 
-## AEM Assets 구성 요소 오프로드 {#aem-assets-offloading-components}
+## 구성 요소 오프로드 AEM Assets {#aem-assets-offloading-components}
 
 다음 다이어그램은 자산 오프로드 프로세스의 기본 구성 요소를 보여 줍니다.
 
@@ -112,6 +112,7 @@ AEM 및 Oak에서는 몇 가지 배포 시나리오가 가능합니다. 자산 �
 1. 속성 값 `default.transport.agent-to-master.prefix` 을 (으)로 `offloading_reverse` 변경합니다 `offloading`.
 
 <!-- TBD: Make updates to the configuration for allow and block list after product updates are done.
+TBD: Update the property in the last step when GRANITE-30586 is fixed.
 -->
 
 ### 작성자 및 작업자 간의 공유 데이터 저장소 및 바이너리 없는 복제 사용  {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
