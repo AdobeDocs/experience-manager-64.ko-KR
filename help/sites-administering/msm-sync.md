@@ -10,7 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c491f0f3-375d-4203-bdf3-234987bbf685
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 8cf319b54e1a2afa1385f9bea1e946eaad0e60f7
+workflow-type: tm+mt
+source-wordcount: '2682'
+ht-degree: 79%
 
 ---
 
@@ -145,7 +148,7 @@ Live Copy가 소스 컨텐츠와 동기화되는 방법 및 시기를 제어하�
   </tr> 
   <tr> 
    <td>editProperties</td> 
-   <td><p>Live Copy의 속성을 편집합니다. editMap 속성은 편집되는 속성 및 해당 값을 결정합니다. editMap 속성의 값은 다음 형식을 사용해야 합니다.</p> <p><code>[property_name_1]#[current_value]#</code>[new_value],<br /> <code>[property_name_2]#[current_value]#</code>[new_value],<br /> ...,<br /> <code>[property_name_n]#[current_value]#</code>[new_value]</p> <p>The <code>current_value</code> and <code>new_value</code> items are regular expressions. <br /> </p> <p>예를 들면, editMap에 대해 다음 값을 고려합니다.</p> <p><code>sling:resourceType#/</code>(contentpage|homepage)#/<br /> mobilecontentpage,<br /> cq:template#/contentpage#/mobilecontentpage</p> <p>이 값은 Live Copy 노드의 속성을 다음과 같이 편집합니다.</p> 
+   <td><p>Live Copy의 속성을 편집합니다. editMap 속성은 편집되는 속성 및 해당 값을 결정합니다. editMap 속성의 값은 다음 형식을 사용해야 합니다.</p> <p><code>[property_name_1]#[current_value]#</code>[new_value],<br /> <code>[property_name_2]#[current_value]#</code>[new_value],<br /> ..,<br /> <code>[property_name_n]#[current_value]#</code>[new_value]</p> <p>The <code>current_value</code> and <code>new_value</code> items are regular expressions. <br /> </p> <p>예를 들면, editMap에 대해 다음 값을 고려합니다.</p> <p><code>sling:resourceType#/</code>(contentpage|homepage)#/<br /> mobilecontentpage,<br /> cq:template#/contentpage#/mobilecontentpage</p> <p>이 값은 Live Copy 노드의 속성을 다음과 같이 편집합니다.</p> 
     <ul> 
      <li>The <code>sling:resourceType</code> properties that are either set to <code>contentpage</code> or to <code>homepage</code> are set to <code>mobilecontentpage.</code></li> 
      <li>The <code>cq:template</code> properties that are set to <code>contentpage</code> are set to <code>mobilecontentpage.</code></li> 
@@ -267,7 +270,7 @@ When working with AEM there are several methods of managing the configuration se
 
 | 동기화 작업 | 웹 콘솔의 서비스 이름 | 서비스 PID |
 |---|---|---|
-| contentCopy | CQ MSM 컨텐츠 복사 작업 | com.day.cq.wcm.msm.impl.actions.ContentCopyActionFactory |
+| contentCopy | CQ MSM 내용 복사 작업 | com.day.cq.wcm.msm.impl.actions.ContentCopyActionFactory |
 | contentDelete | CQ MSM 컨텐츠 삭제 작업 | com.day.cq.wcm.msm.impl.actions.ContentDeleteActionFactory |
 | contentUpdate | CQ MSM 컨텐츠 업데이트 작업 | com.day.cq.wcm.msm.impl.actions.ContentUpdateActionFactory |
 | PageMoveAction | CQ MSM 페이지 이동 작업 | com.day.cq.wcm.msm.impl.actions.PageMoveActionFactory |
@@ -282,7 +285,7 @@ When working with AEM there are several methods of managing the configuration se
    <th>설명</th> 
   </tr> 
   <tr> 
-   <td><p>제외된 노드</p> <p>cq.wcm.msm.action.excednodetetypes</p> </td> 
+   <td><p>제외된 노드</p> <p>cq.wcm.msm.action.excludednodetypes</p> </td> 
    <td>동기화 작업에서 제외할 노드 형식과 일치하는 정규 표현식.</td> 
   </tr> 
   <tr> 
@@ -290,12 +293,12 @@ When working with AEM there are several methods of managing the configuration se
    <td>동기화 작업에서 제외할 단락 항목과 일치하는 정규 표현식.</td> 
   </tr> 
   <tr> 
-   <td><p>제외된 페이지 속성</p> <p>cq.wcm.msm.action.excedprops</p> </td> 
+   <td><p>제외된 페이지 속성</p> <p>cq.wcm.msm.action.excludedprops</p> </td> 
    <td>동기화 작업에서 제외할 페이지 속성과 일치하는 정규 표현식.</td> 
   </tr> 
   <tr> 
-   <td><p>무시된 NodeTypes 혼합</p> <p>cq.wcm.msm.action.ignoredMixin</p> </td> 
-   <td>CQ MSM 컨텐츠 업데이트 작업에 대해서만 사용할 수 있습니다. 동기화 작업에서 제외할 mixin 노드 유형의 이름과 일치하는 정규식입니다.</td> 
+   <td><p>무시된 Mix NodeTypes</p> <p>cq.wcm.msm.action.ignoredMixin</p> </td> 
+   <td>CQ MSM 컨텐츠 업데이트 작업에만 사용할 수 있습니다. 동기화 작업에서 제외할 mixin 노드 유형의 이름과 일치하는 정규식입니다.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -322,12 +325,6 @@ When working with AEM there are several methods of managing the configuration se
 
 `jcr:(?!(title)$).*`
 
->[!CAUTION]
->
->5.5 SP2 이전에는 제외된 페이지 속성이 **Day CQ WCM Rollout Manager** 아래에 있는 시스템 콘솔에 구성되었습니다. 5.5 SP2 이상 버전에서는 해당 패널 내에서 제외된 페이지 속성 설정이 무시됩니다. Property exclusion on rollout is configured as described above, in **CQ MSM Content Update Action**.
->
->따라서 5.5 SP2 이전 버전 설치에서 이 설정을 수동으로 조정하고 5.5 SP2 이상 버전으로 업그레이드하는 경우, *이전 구성 패널에서 새 구성 패널로 이러한 설정을 수동으로 전송*&#x200B;해야 합니다.
-
 ### 참조를 업데이트하도록 동기화 구성 {#configuring-synchronization-for-updating-references}
 
 참조 업데이트와 관련된 해당 동기화 작업을 지원하는 여러 OSGi 서비스를 구성할 수 있습니다.
@@ -343,11 +340,11 @@ When working with AEM there are several methods of managing the configuration se
    <th>설명</th> 
   </tr> 
   <tr> 
-   <td><p>중첩된 LiveCopy 간에 참조 업데이트</p> <p>cq.wcm.msm.impl.action.referencesupdate.prop_update중첩</p> </td> 
-   <td>CQ MSM 참조 업데이트 작업에 대해서만 사용할 수 있습니다. 이 옵션(웹 콘솔)을 선택하거나 이 부울 속성을 true(저장소 구성)로 설정하여 최상위 LiveCopy 분기 내에 있는 리소스를 대상으로 하는 참조를 바꿉니다.</td> 
+   <td><p>중첩된 LiveCopy 간에 참조 업데이트</p> <p>cq.wcm.msm.impl.action.referencesupdate.prop_updateNested</p> </td> 
+   <td>CQ MSM 참조 업데이트 작업에만 사용할 수 있습니다. 이 옵션(웹 콘솔)을 선택하거나 이 부울 속성을 true(저장소 구성)로 설정하여 최상위 LiveCopy 분기 내에 있는 리소스를 대상으로 하는 참조를 바꿉니다.</td> 
   </tr> 
   <tr> 
-   <td><p>참조하는 페이지 업데이트</p> <p>cq.wcm.msm.impl.actions.pagemove.prop_reference업데이트</p> </td> 
+   <td><p>참조하는 페이지 업데이트</p> <p>cq.wcm.msm.impl.actions.pagemove.prop_referenceUpdate</p> </td> 
    <td>CQ MSM 페이지 이동 작업에만 사용할 수 있습니다. Select this option (Web Console) or set this boolean property to <code>true</code> (repository configuration) to update any references to use the original page to instead reference the LiveCopy page.</td> 
   </tr> 
  </tbody> 
@@ -361,14 +358,14 @@ MSM을 사용하면 일반적으로 사용되는 롤아웃 구성 집합을 지�
 
 * **[Live Copy 페이지 속성](/help/sites-administering/msm-sync.md#setting-the-rollout-configurations-for-a-live-copy-page):**Live Copy 페이지가 하나 이상의 롤아웃 구성을 사용하도록 구성된 경우 MSM에서 그러한 롤아웃 구성을 사용합니다.
 * **[블루프린트 페이지 속성](/help/sites-administering/msm-sync.md#setting-the-rollout-configuration-for-a-blueprint-page):**Live Copy가 블루프린트를 기반으로 하고 Live Copy 페이지가 롤아웃 구성으로 구성되지 않은 경우 블루프린트 소스 페이지와 연관된 롤아웃 구성이 사용됩니다.
-* **** Live copy 상위 페이지 속성:Live Copy 페이지나 블루프린트 소스 페이지가 롤아웃 구성으로 구성되지 않으면 Live Copy 페이지의 상위 페이지에 적용되는 롤아웃 구성이 사용됩니다.
-* **[](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration)시스템 기본값&#x200B;**:Live Copy 상위 페이지의 롤아웃 구성을 결정할 수 없을 때 시스템 기본 롤아웃 구성이 사용됩니다.
+* **Live Copy 상위 페이지 속성:** Live Copy 페이지나 블루프린트 소스 페이지가 롤아웃 구성으로 구성되지 않으면 Live Copy 페이지의 상위 페이지에 적용되는 롤아웃 구성이 사용됩니다.
+* **[시스템 기본값](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration):**Live Copy의 상위 페이지의 롤아웃 구성을 결정할 수 없을 때 시스템 기본 롤아웃 구성이 사용됩니다.
 
 예를 들어, 블루프린트는 We.Retail 참조 사이트를 소스 컨텐츠로 사용합니다. 블루프린트에서 사이트가 생성됩니다. 다음 목록의 각 항목은 롤아웃 구성 사용과 관련된 여러 시나리오를 설명합니다.
 
 * 블루프린트 페이지 또는 Live Copy 페이지가 롤아웃 구성을 사용하도록 구성되지 않았습니다. MSM은 모든 Live Copy 페이지에 시스템 기본 롤아웃 구성을 사용합니다.
 * We.Retail 참조 사이트의 루트 페이지는 여러 롤아웃 구성으로 구성되어 있습니다. MSM은 모든 Live Copy 페이지에 대해 이러한 롤아웃 구성을 사용합니다.
-* We.Retail 참조 사이트의 루트 페이지는 여러 롤아웃 구성으로 구성되며 Live Copy 사이트의 루트 페이지는 다른 롤아웃 구성으로 구성됩니다. MSM은 Live Copy 사이트의 루트 페이지에 구성된 롤아웃 구성을 사용합니다.
+* We.Retail 참조 사이트의 루트 페이지는 여러 롤아웃 구성으로 구성되며, Live Copy 사이트의 루트 페이지는 다른 롤아웃 구성 세트로 구성됩니다. MSM은 Live Copy 사이트의 루트 페이지에 구성된 롤아웃 구성을 사용합니다.
 
 ### Live Copy 페이지에 대한 롤아웃 구성 설정 {#setting-the-rollout-configurations-for-a-live-copy-page}
 
@@ -411,11 +408,11 @@ MSM을 사용하면 일반적으로 사용되는 롤아웃 구성 집합을 지�
 
 시스템 기본값으로 사용할 롤아웃 구성을 지정합니다. 기본값을 지정하려면 OSGi 서비스를 구성합니다.
 
-* **Day CQ WCM Live Relationship Manager**  서비스 PID는 `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`입니다.
+* **Day CQ WCM Live Relationship Manager**  서비스 PID는 입니다. `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
-Configure the service using either the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or a [repository node](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
+`com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)[](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)
 
-* 웹 콘솔에서 구성할 속성의 이름은 기본 롤아웃 구성입니다.
-* Using a repository node, the name of the property to configure is `liverelationshipmgr.relationsconfig.default`.
+* Configure the service using either the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or a [repository node](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
+* 웹 콘솔에서 구성할 속성의 이름은 기본 롤아웃 구성입니다.`liverelationshipmgr.relationsconfig.default`
 
-시스템 기본값으로 사용할 롤아웃 구성 경로로 이 속성 값을 설정합니다. The default value is `/etc/msm/rolloutconfigs/default`, which is the **Standard Rollout Config**.
+Using a repository node, the name of the property to configure is `liverelationshipmgr.relationsconfig.default`.****
