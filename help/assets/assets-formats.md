@@ -1,21 +1,21 @@
 ---
-title: AEM 자산에서 지원되는 파일 포맷
-description: AEM Assets에서 지원하는 파일 형식 및 MIME 유형 및 각 형식에 대해 지원되는 기능의 목록입니다.
+title: AEM Assets에서 지원되는 파일 포맷
+description: AEM Assets에서 지원하는 파일 형식 및 MIME 형식의 목록 및 각 형식에 대해 지원되는 기능입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1f93b2b0c8b1a4e55a67c11937b9c5ce4076ee2a
+source-git-commit: 2baa172088f646752e85168d432d46942ac8244e
 workflow-type: tm+mt
-source-wordcount: '1878'
-ht-degree: 8%
+source-wordcount: '1706'
+ht-degree: 9%
 
 ---
 
 
-# AEM 자산에서 지원되는 파일 포맷 {#assets-supported-formats}
+# AEM Assets에서 지원되는 파일 포맷 {#assets-supported-formats}
 
-AEM Assets는 다양한 파일 형식을 지원하며 각 기능은 다양한 MIME 유형을 지원합니다.
+AEM Assets은 다양한 파일 포맷을 지원하며 각 기능은 서로 다른 MIME 유형을 지원합니다.
 
-AEM Assets를 다른 표준을 준수하는 DAM(Digital Asset Management) 솔루션 및 데스크탑 소프트웨어와 통합하려면 Adobe의 XMP(Extensible Metadata Platform)를 사용하십시오.
+다른 표준을 준수하는 DAM(Digital Asset Management) 솔루션 및 데스크탑 소프트웨어와 AEM Assets을 통합하려면 Adobe의 XMP(Extensible Metadata Platform)을 사용하십시오.
 
 지원 수준을 이해하려면 범례를 사용합니다.
 
@@ -47,7 +47,7 @@ AEM Assets를 다른 표준을 준수하는 DAM(Digital Asset Management) 솔루
 
 **병합된 이미지‡이 PSD 파일에서 추출됩니다.** 이 이미지는 Adobe Photoshop에서 생성되며 PSD 파일에 포함되어 있습니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
 
-다이내믹 미디어 기능에 지원되는 래스터 이미지 포맷은 다음과 같습니다.
+Dynamic Media 기능에 지원되는 래스터 이미지 포맷은 다음과 같습니다.
 
 | 형식 | 업로드<br> (입력 형식) | 이미지<br> 사전 설정<br> 만들기<br> (출력 형식) | 동적<br> 변환 미리<br> 보기 | 동적<br> 표현물<br> 전달 | 동적<br> 변환<br> 다운로드 |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -73,15 +73,15 @@ AEM Assets를 다른 표준을 준수하는 DAM(Digital Asset Management) 솔루
 
 * PSB 파일 형식이 핸들러에 추가될 때 메타데이터 원본에 대해 `NComm` 작동합니다.
 
-* Dynamic Media를 사용하여 EPS 파일에 대한 동적 변환을 미리 보고 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Dynamic Media을 사용하여 EPS 파일에 대한 동적 변환을 미리 보고 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * EPS 파일의 경우 PS-Adobe(PostScript Document Structuring Convention) 버전 3.0 이상에서 메타데이터 원본에 대한 지원이 지원됩니다.
 
 ## Dynamic Media에서 지원되지 않는 래스터 이미지 형식 {#unsupported-image-formats-dynamic-media}
 
-다음 목록은 Dynamic Media에서 지원되지 *않는* 래스터 이미지 파일 포맷의 하위 유형에 대해 설명합니다.
+다음 목록은 Dynamic Media에서 지원되지 *않는* 래스터 이미지 파일 형식의 하위 유형에 대해 설명합니다.
 
-Dynamic [Media에서 지원되지 않는 파일 형식 감지를 참조하십시오](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
+Dynamic Media에 대해 지원되지 [않는 파일 형식 감지를 참조하십시오](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
 
 * IDAT 청크 크기가 100MB보다 큰 PNG 파일
 * PSB 파일.
@@ -137,7 +137,7 @@ Adobe Camera Raw 라이브러리를 사용하면 AEM Assets에서 Raw 이미지�
 | QXP | ✓ | ✓ |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |
 
-다이내믹 미디어 기능에 지원되는 문서 형식은 다음과 같습니다.
+Dynamic Media 기능에 지원되는 문서 형식은 다음과 같습니다.
 
 | 형식 | 업로드<br> (입력 형식) | 이미지<br> 사전 설정<br> 만들기<br> (출력 형식) | 동적<br> 변환 미리<br> 보기 | 동적<br> 표현물<br> 전달 | 동적<br> 변환<br> 다운로드 |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -162,11 +162,11 @@ Adobe Camera Raw 라이브러리를 사용하면 AEM Assets에서 Raw 이미지�
 
 위의 기능 외에 다음을 고려하십시오.
 
-* Dynamic Media를 사용하여 PDF 파일에 대한 동적 변환을 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Dynamic Media을 사용하여 PDF 파일에 대한 동적 변환을 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Dynamic Media를 사용하여 AI 파일에 대한 동적 변환을 미리 보고 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Dynamic Media을 사용하여 AI 파일에 대한 동적 변환을 미리 보고 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Dynamic Media를 사용하여 INDD 파일에 대한 동적 변환을 생성하려면 [InDesign(INDD) 파일 형식을 참조하십시오](../assets/managing-image-presets.md#indesign-indd-file-format).
+* Dynamic Media을 사용하여 INDD 파일에 대한 동적 변환을 생성하려면 [InDesign(INDD) 파일 형식을 참조하십시오](../assets/managing-image-presets.md#indesign-indd-file-format).
 
 ## 멀티미디어 포맷 {#supported-multimedia-formats}
 
@@ -191,7 +191,7 @@ Adobe Camera Raw 라이브러리를 사용하면 AEM Assets에서 Raw 이미지�
 | WMV | ✓ | ✓ |  | * | * |
 | SWF | ✓ | ✓ |  |  |  |
 
-## 다이내믹 미디어 트랜스코딩에 사용할 비디오 포맷 입력 {#supported-input-video-formats-for-dynamic-media-transcoding}
+## Dynamic Media 트랜스코딩용 비디오 포맷 입력 {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | 비디오 파일 확장자 | 컨테이너 | 권장 비디오 코덱스 | 지원되지 않는 비디오 코덱입니다. |
 |---|---|---|---|
@@ -216,7 +216,7 @@ Adobe Camera Raw 라이브러리를 사용하면 AEM Assets에서 Raw 이미지�
 
 지원되는 아카이브 포맷 및 일반 DAM 워크플로우의 적용 가능성.
 
-| 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | 다이내믹 미디어 전달 |
+| 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | Dynamic Media 배달 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
@@ -230,7 +230,7 @@ Adobe Camera Raw 라이브러리를 사용하면 AEM Assets에서 Raw 이미지�
 
 기타 몇 가지 파일 포맷에 대한 일반적인 DAM 워크플로우의 적용 방법은 아래 표에 설명되어 있습니다.
 
-| 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | 다이내믹 미디어 전달 |
+| 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | Dynamic Media 배달 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | **#** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
@@ -249,21 +249,21 @@ Adobe Camera Raw 라이브러리를 사용하면 AEM Assets에서 Raw 이미지�
 
 | 파일 확장자 | MIME 유형/인터넷 미디어 유형 | 기본 jobParam 값 | 허용되는 jobParam 값 |
 |---|---|---|---|
-| 이미지 | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | 기본 jobParam은 모든 이미지 MIME 유형 자산에 적용됩니다.<ul><li>[knockoutBackgroundOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_knockout_background_options.html)</li><li>manualCropOptions</li><li>[autoColorCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_auto_color_crop_options)</li><li>[autoTransparentCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_auto_transparent_crop_options)</li><li>[colorManagementOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_color_management_options.html)</li><li>[autoSetCreationOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_auto_set_creation_options.html)</li><li>[emailSetting](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/string_constants/index.html?f=r_email_settings)</li><li>[xmpKeywords](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_xmp_keywords)</li><li>[unsharpMaskOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_unsharp_mask_options.html)</li></ul> |
-| 3G2 | video/3gpp2 |  | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html) |
-| 3GP | video/3gpp |  | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_exclude_master_video_from_avs) |
+| 이미지 | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | 기본 jobParam은 모든 이미지 MIME 유형 자산에 적용됩니다.<ul><li>[knockoutBackgroundOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-knockout-background-options.html)</li><li>[manualCropOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-manual-crop-options.html)</li><li>[autoColorCropOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-auto-color-crop-options.html)</li><li>[autoTransparentCropOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-auto-transparent-crop-options.html)</li><li>[colorManagementOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-color-management-options.html)</li><li>[autoSetCreationOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-auto-set-creation-options.html)</li><li>[emailSetting](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/sting-constants/r-email-settings.html)</li><li>[xmpKeywords](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-xmp-keywords.html)</li><li>[unsharpMaskOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-unsharp-mask-options.html)</li></ul> |
+| 3G2 | video/3gpp2 |  | [ExcludeMasterVideoFromAVS](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
+| 3GP | video/3gpp |  | [ExcludeMasterVideoFromAVS](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | AAC | audio/x-aac |  |  |
 | AFM | application/x-font-type1 |  |  |
-| AI | application/postscript | `aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_post_script_options.html)</li><li> [illustratorOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_illustrator_options.html)</li></ul> |
+| AI | application/postscript | `aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html)</li><li> [illustratorOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html)</li></ul> |
 | AIFF | 오디오/x-aiff |  |  |
-| AVI | video/x-msvideo |  | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html) |
+| AVI | video/x-msvideo |  | [ExcludeMasterVideoFromAVS](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | BMP | image/bmp |  |  |
 | CSS | 텍스트/css |  |  |
 | DOC | application/msword |  |  |
 | EPS | <ul><li>application/postscript</li><li>애플리케이션/eps</li><li>application/x-eps</li><li>이미지/eps</li><li>image/x-eps</li> |  |  |
 | F4V | video/x-f4v |  | ExcludeMasterVideoFromAVS |
 | FLA | application/x-shockwave-flash |  |  |
-| FLV | video/x-flv |  | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html) |
+| FLV | video/x-flv |  | [ExcludeMasterVideoFromAVS](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | FPX | image/vnd.fpx |  |  |
 | GIF | image/gif |  |  |
 | ICC | application/vnd.iccprofile |  |  |
@@ -271,24 +271,24 @@ Adobe Camera Raw 라이브러리를 사용하면 AEM Assets에서 Raw 이미지�
 | INDD | application/x-indesign |  |  |
 | JPEG | image/jpeg |  |  |
 | JPG | image/jpeg |  |  |
-| M2V | video/mpeg |  | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html) |
-| M4V | video/x-m4v |  | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html) |
-| MOV | video/quicktime |  | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html) |
+| M2V | video/mpeg |  | [ExcludeMasterVideoFromAVS](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
+| M4V | video/x-m4v |  | [ExcludeMasterVideoFromAVS](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
+| MOV | video/quicktime |  | [ExcludeMasterVideoFromAVS](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | MP3 | audio/mpeg |  |  |
-| MP4 | video/mp4 |  | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html) |
-| MPEG | video/mpeg |  | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html) |
-| MPG | video/mpeg |  | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html) |
+| MP4 | video/mp4 |  | [ExcludeMasterVideoFromAVS](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
+| MPEG | video/mpeg |  | [ExcludeMasterVideoFromAVS](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
+| MPG | video/mpeg |  | [ExcludeMasterVideoFromAVS](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | MTS | model/vnd.mts |  |  |
-| OGV | video/ogg |  | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html) |
+| OGV | video/ogg |  | [ExcludeMasterVideoFromAVS](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | OTF | application/x-font-otf |  |  |
-| PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_pdf_options) |
+| PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options.html) |
 | PFB | application/x-font-type1 |  |  |
 | PFM | application/x-font-type1 |  |  |
 | PICT | image/x-pict |  |  |
 | PNG | image/png |  |  |
 | PPT | application/vnd.ms-powerpoint |  |  |
-| PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_post_script_options)</li><li>[illustratorOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_illustrator_options)</li></ul> |
-| PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[photoshopOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_photoshop_options)</li><li>[photoshopLayerOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_photoshop_layer_options.html)</li></ul> |
+| PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html)</li><li>[illustratorOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html)</li></ul> |
+| PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[photoshopOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options.html)</li><li>[photoshopLayerOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-layer-options.html)</li></ul> |
 | RTF | application/rtf |  |  |
 | SVG | image/svg+xml |  |  |
 | SWF | application/x-shockwave-flash |  |  |
@@ -296,12 +296,12 @@ Adobe Camera Raw 라이브러리를 사용하면 AEM Assets에서 Raw 이미지�
 | TIF/TIFF | image/tiff |  |  |
 | TTC | application/x-font-ttf |  |  |
 | TTF | application/x-font-ttf |  |  |
-| VOB | 비디오/dvd |  | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html) |
+| VOB | 비디오/dvd |  | [ExcludeMasterVideoFromAVS](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | VTT | 텍스트/vtt |  |  |
 | WAV | audio/x-wav |  |  |
-| WEBM | video/webm |  | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html) |
+| WEBM | video/webm |  | [ExcludeMasterVideoFromAVS](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | WMA | audio/x-ms-wma |  |  |
-| WMV | video/x-ms-wmv |  | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html) |
+| WMV | video/x-ms-wmv |  | [ExcludeMasterVideoFromAVS](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | XLS | application/vnd.ms-excel |  |  |
 | ZIP | application/zip |  |  |
 
