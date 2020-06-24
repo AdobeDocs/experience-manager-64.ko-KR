@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
-source-wordcount: '2792'
+source-wordcount: '2787'
 ht-degree: 4%
 
 ---
@@ -88,16 +88,16 @@ Adobe Analytics은 회원이 지원되는 커뮤니티 기능과 상호 작용�
 
 ## 비디오 보고를 위한 Adobe Analytics 보고서 세트 {#adobe-analytics-report-suite-for-video-reporting}
 
-Adobe Marketing Cloud의 [보고서 세트 관리자를](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html)사용하면 커뮤니티 사이트가 커뮤니티 기능에 대한 보고서를 제공하도록 활성화될 수 있도록 Analytics 보고서 세트를 구성할 수 있습니다.
+Adobe Marketing Cloud의 [보고서 세트 관리자를](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html)사용하면 커뮤니티 사이트가 커뮤니티 기능에 대한 보고서를 제공하도록 활성화될 수 있도록 Analytics 보고서 세트를 구성할 수 있습니다.
 
-회사 이름 및 사용자 이름으로 [Adobe Marketing Cloud](https://marketing.adobe.com/resources/help/en_US/analytics/getting-started/analytics-navigation.html) 에 [로그인하여](analytics.md#prerequisites)새 보고서 세트 또는 기존 보고서 세트를 구성하여 다음을 수행할 수 있습니다.
+회사 이름 및 사용자 이름으로 [Adobe Marketing Cloud](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html) 에 [로그인하여](analytics.md#prerequisites)새 보고서 세트 또는 기존 보고서 세트를 구성하여 다음을 수행할 수 있습니다.
 
-* [11 전환 변수](https://marketing.adobe.com/resources/help/en_US/reference/conversion_var_admin.html) (evar)
+* [11 전환 변수](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/conversion-variables/conversion-var-admin.html) (evar)
 
    * **`evar1`** 를 통해 사용 **`evar11`**
    * 기존 evar를 재사용하거나(이름 변경) 새 evar를 만들어 커뮤니티 기능에 사용할 수 있음
 
-* [7 성공 이벤트](https://marketing.adobe.com/resources/help/en_US/reference/success_event.html) (이벤트)
+* [7 성공 이벤트](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/success-events/success-event.html) (이벤트)
 
    * **`event1`** 를 통해 사용 **`event7`**
    * 유형 **`Counter`**
@@ -106,7 +106,7 @@ Adobe Marketing Cloud의 [보고서 세트 관리자를](https://marketing.adobe
    * 기존 이벤트를 재사용하거나(이름 변경) 새 이벤트를 만들어 커뮤니티 기능에 사용할 수 있습니다.
 
 
-* [비디오 관리](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_analytics_config.html)
+* [비디오 관리](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
 
    * 비디오 보고 콘솔
 
@@ -547,11 +547,11 @@ Analytics이 활성화된 커뮤니티 사이트가 게시되면, 기본 게시�
 
 ## Analytics의 사용자 데이터 관리 {#manage-user-data-in-analytics}
 
-Adobe Analytics은 사용자 데이터에 액세스, 내보내기 및 삭제할 수 있는 API를 제공합니다. 자세한 내용은 액세스 [제출 및 요청 삭제를 참조하십시오](https://marketing.adobe.com/resources/help/en_US/analytics/gdpr/gdpr_submit_access_delete.html).
+Adobe Analytics은 사용자 데이터에 액세스, 내보내기 및 삭제할 수 있는 API를 제공합니다. 자세한 내용은 액세스 [제출 및 요청 삭제를 참조하십시오](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
 ## 리소스 {#resources}
 
-* Adobe Marketing Cloud: [Analytics 도움말 및 참조](https://marketing.adobe.com/resources/help/en_US/reference/)
+* Adobe Marketing Cloud: [Analytics 도움말 및 참조](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
 * AEM: [Integrating with Adobe Analytics](../../help/sites-administering/adobeanalytics.md)
 * AEM: [외부 공급자와 Analytics](../../help/sites-administering/external-providers.md)
 
