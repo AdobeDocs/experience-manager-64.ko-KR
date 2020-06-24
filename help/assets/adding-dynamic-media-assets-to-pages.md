@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: ec4fe78ff6101bc427570c48f80c1bd4f173e6e2
 workflow-type: tm+mt
 source-wordcount: '2830'
 ht-degree: 33%
@@ -177,8 +177,8 @@ You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edi
 
    예를 들어 뷰어 한정자를 사용하여 다음을 수행할 수 있습니다.
 
-   * 캡션 파일을 비디오 [캡션과 연결](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * 탐색 파일을 비디오 [탐색과 연결](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * 캡션 파일을 비디오 [캡션과 연결합니다.](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * 탐색 파일을 비디오 [탐색과 연결합니다.](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
 You can edit the following [!UICONTROL Advanced Settings] by clicking **[!UICONTROL Edit]** in the component.
 
