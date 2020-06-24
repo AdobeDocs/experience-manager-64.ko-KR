@@ -6,10 +6,10 @@ seo-description: AEM 6.4의 필수 기능에 대한 개요
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 translation-type: tm+mt
-source-git-commit: 8aab981849152e6826dd4d0d68867790a85f373a
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '153'
-ht-degree: 28%
+ht-degree: 23%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 28%
 
 ## AEM Livefyre {#aem-livefyre}
 
-[AEM Livefyre와 사용자 생성 콘텐츠를 공유합니다.](https://marketing.adobe.com/resources/help/ko_KR/livefyre/home.html)
+[AEM Livefyre와 사용자 생성 콘텐츠를 공유합니다.](https://docs.adobe.com/content/help/en/livefyre/using/home.html)
 
 ## AEM Mobile {#aem-mobile}
 
