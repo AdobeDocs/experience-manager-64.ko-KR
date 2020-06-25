@@ -10,7 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 163a4887-7c33-4305-8c48-882630f2caa1
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: a87e078e1a8f49dc899ce9b160d789cb254338e2
+workflow-type: tm+mt
+source-wordcount: '1555'
+ht-degree: 99%
 
 ---
 
@@ -41,7 +44,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 * 폴더의 페이지 순서 조정
 
-   * This can be done in [List View](/help/sites-authoring/basic-handling.md#list-view). The changes will be applied and be visible in other views.
+   * 이 작업은 [목록 보기](/help/sites-authoring/basic-handling.md#list-view)에서 수행할 수 있습니다. 변경 사항이 적용되고 다른 보기에서 볼 수 있습니다.
 
 * UI 변경
 
@@ -64,8 +67,6 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 >
 >* [페이지 편집 시 키보드 단축키](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
 >* [콘솔용 키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md)
->
-
 
 
 ## 페이지 찾기 {#finding-your-page}
@@ -76,13 +77,13 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
-1. Navigate up the tree using [the breadcrumb in the header](/help/sites-authoring/basic-handling.md#the-header), which allows you to return to the selected location:
+1. [헤더에서 탐색 표시](/help/sites-authoring/basic-handling.md#the-header)를 사용하여 트리 위로 탐색합니다. 그러면 선택한 위치로 돌아갈 수 있습니다.
 
    ![chlimage_1-95](assets/chlimage_1-95.png)
 
 ### 새 페이지 만들기 {#creating-a-new-page}
 
-1. 새 페이지를 만들 [위치로 이동](#finding-your-page)합니다.
+1. [새 페이지를 만들 위치로 이동합니다.](#finding-your-page)
 1. **만들기** 아이콘을 사용한 다음 목록에서 **페이지**&#x200B;를 선택합니다.
 
    ![screen_shot_2018-03-21at160324](assets/screen_shot_2018-03-21at160324.png)
@@ -101,9 +102,10 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
       * 모바일 장치: 길게 탭하기
       * 데스크톱: [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions) - 확인 표시 아이콘:
-   ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
 
-   * 카드 위에 확인 표시가 나타나 페이지가 선택되었음을 나타냅니다.
+         ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
+
+      * 카드 위에 확인 표시가 나타나 페이지가 선택되었음을 나타냅니다.
    >[!NOTE]
    >
    >선택 모드에서 있으면 **선택** 아이콘(확인 표시)이 **선택 취소** 아이콘(십자 모양)으로 바뀝니다.
@@ -142,15 +144,18 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
       * 사이드 패널 열기
       * 구성 요소 탭( [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser)) 선택
       * 필요한 구성 요소를 페이지로 끌기
+
       다음 아이콘을 사용하여 사이드 패널을 열고 닫을 수 있습니다.
-   ![](do-not-localize/screen_shot_2018-03-21at160738.png)
+
+      ![](do-not-localize/screen_shot_2018-03-21at160738.png)
 
    * [페이지의](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) 기존 구성 요소 컨텐츠를 편집합니다.
 
       * 탭하거나 클릭하여 구성 요소 도구 모음을 엽니다. **편집**(연필) 아이콘을 사용하여 대화 상자를 엽니다.
       * 탭한 상태를 유지하거나 느리게 두 번 클릭하여 구성 요소에 대한 즉석 편집기를 엽니다. 사용 가능한 작업이 표시됩니다(일부 구성 요소의 경우 선택이 제한됨).
       * 사용 가능한 모든 작업을 보려면 다음 아이콘을 사용하여 전체 화면 모드로 들어갑니다.
-   ![](do-not-localize/screen_shot_2018-03-21at160706.png)
+
+      ![](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [기존 구성 요소의 속성 구성](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
@@ -158,26 +163,28 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
    * 다음 방법 중 하나로 [구성 요소를 이동](/help/sites-authoring/editing-content.md#moving-a-component)합니다.
 
       * 필요한 구성 요소를 새 위치로 끕니다.
-      * Open the component toolbar with either tap or click. Use the **Cut** then **Paste** icons where required.
+      * 탭하거나 클릭하여 구성 요소 도구 모음을 엽니다. 필요한 경우 **잘라내기** 및 **붙여넣기** 아이콘을 사용합니다.
    * 구성 요소 [복사(및 붙여넣기):](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)
 
-      * Open the component toolbar with either tap or click. Use the **Copy** then **Paste** icons as required.
-   >[!NOTE]
-   >
-   >같은 페이지나 다른 페이지에 구성 요소를 **붙여넣을** 수 있습니다. 잘라내기/복사 작업 전에 이미 열려 있었던 다른 페이지에 붙여넣은 경우 해당 페이지를 새로 고쳐야 합니다.
+      * 탭하거나 클릭하여 구성 요소 도구 모음을 엽니다. 필요에 따라 **복사** 및 **붙여넣기** 아이콘을 사용합니다.
+      >[!NOTE]
+      >
+      >같은 페이지나 다른 페이지에 구성 요소를 **붙여넣을** 수 있습니다. 잘라내기/복사 작업 전에 이미 열려 있었던 다른 페이지에 붙여넣은 경우 해당 페이지를 새로 고쳐야 합니다.
 
    * 구성 요소 [삭제:](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)
 
-      * Open the component toolbar with either tap or click, then use the **Delete** icon.
+      * 탭하거나 클릭하여 구성 요소 도구 모음을 열고 **삭제** 아이콘을 사용합니다.
    * 페이지에 [주석 추가](/help/sites-authoring/annotations.md#annotations):
 
       * **주석** 모드(말풍선 아이콘)를 선택합니다. **주석 추가**(더하기) 아이콘을 사용하여 주석을 추가합니다. 오른쪽 상단의 X를 사용하여 주석 모드를 끝냅니다.
-   ![](do-not-localize/screen_shot_2018-03-21at160813.png)
 
-   * [페이지 미리 보기](/help/sites-authoring/editing-content.md#preview-mode) (게시 환경에 표시될 모양 보기)
+      ![](do-not-localize/screen_shot_2018-03-21at160813.png)
+
+   * [페이지 미리 보기](/help/sites-authoring/editing-content.md#preview-mode)(게시 환경에 표시될 모양 보기)
 
       * 도구 모음에서 **미리 보기**&#x200B;를 선택합니다.
    * **편집** 드롭다운 선택기를 사용하여 편집 모드로 돌아가거나 다른 모드를 선택합니다.
+
    >[!NOTE]
    >
    >컨텐츠에서 링크를 사용하여 탐색하려면 [미리 보기 모드](/help/sites-authoring/editing-content.md#preview-mode)를 사용해야 합니다.
@@ -193,6 +200,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
       * 해당 리소스에 대한 [빠른 작업(카드 보기/데스크톱 전용)](#quick-actions-card-view-desktop-only)
       * [페이지를 선택했을 때](#selecting-your-page-for-further-action)의 도구 모음
+
    ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
 
 * 페이지 속성이 표시됩니다. 필요에 따라 업데이트한 다음 [저장]을 사용하여 이러한 내용을 유지할 수 있습니다.
@@ -211,16 +219,18 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 * **사이트** 콘솔에서:
 
    1. 게시할 [페이지로 이동](#finding-your-page)합니다.
-   1. Select the **Quick Publish** icon from either:
+   1. 다음 중 하나에서 **빠른 게시** 아이콘을 선택합니다.
 
       * 해당 리소스에 대한 [빠른 작업(카드 보기/데스크톱 전용)](#quick-actions-card-view-desktop-only)
       * [페이지를 선택했을 때](#selecting-your-page-for-further-action)(또는 [나중에 게시](/help/sites-authoring/publishing-pages.md#manage-publication)에 액세스할 때)의 도구 모음
+
    ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
 
 * [페이지를 편집할 때](#editing-your-page-content):
 
    1. **페이지 정보** 메뉴를 엽니다.
    1. **페이지 게시**&#x200B;를 선택합니다.
+
    ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
 
 * 콘솔에서 페이지를 게시 취소하는 것은 **게시 관리** 옵션을 통해서만 수행할 수 있으며 빠른 작업이 아니라 도구 모음에서만 사용 가능합니다.
@@ -234,7 +244,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 ## 페이지 이동, 복사 및 붙여넣기 또는 삭제 {#move-copy-and-paste-or-delete-your-page}
 
 1. 이동, 복사 및 붙여넣기 또는 삭제할 [페이지로 이동](#finding-your-page)하십시오.
-1. 다음 중 하나를 사용하여 필요에 따라 [복사](및 [붙여넣기]), [이동] 또는 [삭제] 아이콘을 선택합니다.
+1. 다음 중 하나를 사용하여 필요에 따라 [복사] (및 [붙여넣기]), [이동] 또는 [삭제] 아이콘을 선택합니다.
 
    * 필요한 리소스에 대한 [빠른 작업(카드 보기/데스크톱 전용)](#quick-actions-card-view-desktop-only)
    * [페이지를 선택했을 때](#selecting-your-page-for-further-action)의 도구 모음
@@ -254,7 +264,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 ## 페이지 잠금(및 잠금 해제) {#locking-your-page-then-unlocking}
 
-[페이지를 잠그면](/help/sites-authoring/editing-content.md#locking-a-page) 사용자가 작업하는 동안 다른 작성자가 해당 페이지에서 작업할 수 없습니다. [잠금](및 [잠금 해제]) 아이콘/단추는 다음에서 찾을 수 있습니다.
+[페이지를 잠그면](/help/sites-authoring/editing-content.md#locking-a-page) 사용자가 작업하는 동안 다른 작성자가 해당 페이지에서 작업할 수 없습니다. [잠금] (및 [잠금 해제]) 아이콘/단추는 다음에서 찾을 수 있습니다.
 
 * [페이지를 선택했을 때](#selecting-your-page-for-further-action)의 도구 모음
 * 페이지를 편집할 때 [[페이지 정보] 드롭다운 메뉴](#editing-the-page-properties)
