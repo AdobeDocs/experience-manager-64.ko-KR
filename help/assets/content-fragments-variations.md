@@ -10,10 +10,10 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
 translation-type: tm+mt
-source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
 workflow-type: tm+mt
-source-wordcount: '1845'
-ht-degree: 5%
+source-wordcount: '1762'
+ht-degree: 2%
 
 ---
 
@@ -193,13 +193,12 @@ ht-degree: 5%
 >
 >영어로 즉시 이용 가능합니다.
 >
->기타 언어는 패키지 공유 또는 소프트웨어 배포의 언어 모델 패키지로 사용할 수 있습니다.
+>기타 언어는 소프트웨어 배포의 언어 모델 패키지로 사용할 수 있습니다.
 >
->* [소프트웨어 배포의 프랑스어(fr) 패키지 공유](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr) 또는 [프랑스어(fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [소프트웨어 배포의 패키지 공유](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de) 또는 [독일어(de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [패키지 공유](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it) 또는 소프트웨어 배포의 [이탈리아어(it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [소프트웨어 배포의 패키지 공유](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es) 또는 [스페인어(es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
-
+>* [소프트웨어 배포의 프랑스어(fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [소프트웨어 배포를 통한 독일어(de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [소프트웨어 배포의 이탈리아어(it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [소프트웨어 배포의 스페인어(es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 
@@ -217,7 +216,6 @@ ht-degree: 5%
    * 제거할 문장은 빨간색으로 강조 표시되고, 취소선이 그어져 있습니다.
    * 강조 표시된 문장을 클릭하면 요약된 컨텐츠에 표시됩니다.
    * 강조 표시되지 않은 문장을 클릭하면 제거됩니다.
-
    ![cfm-6420-23](assets/cfm-6420-23.png)
 
 1. 요약을 **[!UICONTROL 선택하여]** 변경 사항을 확인합니다.
@@ -279,7 +277,6 @@ ht-degree: 5%
 
    * DAM에서 필요한 자산으로 이동
    * DAM에서 자산 검색
-
    일단 찾으면 축소판을 클릭하여 필요한 자산을 선택합니다.
 
 1. 선택 **[!UICONTROL 을]** 사용하여 자산을 현재 위치에서 컨텐츠 조각의 단락 시스템에 추가합니다.
@@ -375,7 +372,6 @@ ht-degree: 5%
 
    * green은 추가된 컨텐츠(변형)를 나타냅니다.
    * red는 제거된 컨텐츠(변수에서)를 나타냅니다.
-
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
 4. 동기화 **[!UICONTROL 를]**&#x200B;선택하면 변형이 업데이트되고 표시됩니다.
