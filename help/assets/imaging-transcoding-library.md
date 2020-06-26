@@ -3,9 +3,9 @@ title: 이미징 코드 변환 라이브러리
 description: 인코딩, 트랜스코딩, 이미지 리샘플링, 이미지 크기 조정 등 핵심 이미지 처리 기능을 수행할 수 있는 이미지 처리 솔루션인 Adobe의 이미징 트랜스코딩 라이브러리를 구성 및 사용하는 방법에 대해 알아보십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '960'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ ITL 처리를 구성하려면 구성 파일을 만들고 워크플로를 업데�
 
 라이브러리를 구성하려면 다음 단계를 사용하여 라이브러리를 나타내는 .conf 파일을 만듭니다. 관리자 또는 루트 권한이 필요합니다.
 
-1. 패키지 공유 또는 소프트웨어 배포 [에서](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) 이미징 트랜스코딩 라이브러리 패키지 [를 다운로드하고](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) 패키지 관리자를 사용하여 설치합니다. 패키지는 AEM 6.5와 호환됩니다.
+1. Software Distribution에서 Imaging Transcoding [Library](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) 패키지를 다운로드하고 Package Manager를 사용하여 설치합니다. 패키지는 AEM 6.5와 호환됩니다.
 
 1. 의 번들 ID에 대해 알아보려면 웹 콘솔 `com.day.cq.dam.cq-dam-switchengine`에 로그인하고 **[!UICONTROL OSGi > 번들을 누릅니다]**. 또는 번들 콘솔을 열려면 `https://[aem_server:[port]/system/console/bundles/` URL에 액세스하십시오. 번들 `com.day.cq.dam.cq-dam-switchengine` 및 해당 ID를 찾습니다.
 
