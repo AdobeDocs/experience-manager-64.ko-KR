@@ -3,9 +3,9 @@ title: PDF 래스터라이저 사용
 description: Adobe PDF 래스터라이저 라이브러리를 사용하여 고품질 축소판과 변환을 생성할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '745'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # PDF 래스터라이저 프로그램 사용 {#using-pdf-rasterizer}
 
-경우에 따라 콘텐트가 많이 사용되는 대용량 PDF 또는 AI 파일을 AEM(Adobe Experience Manager) Assets로 업로드하면 기본 라이브러리에서 정확한 출력을 생성하지 못할 수 있습니다. 이러한 경우 Adobe의 PDF 래스터라이저 라이브러리를 사용하면 기본 라이브러리의 출력 결과와 비교하여 더 안정적이고 정확한 출력물을 생성할 수 있습니다.
+경우에 따라 AEM(Adobe Experience Manager) 자산에 대규모 컨텐츠 중심 PDF 또는 AI 파일을 업로드할 때 기본 라이브러리에서 정확한 출력을 생성하지 못할 수 있습니다. 이러한 경우 Adobe의 PDF 래스터라이저 라이브러리를 사용하면 기본 라이브러리의 출력 결과와 비교하여 더 안정적이고 정확한 출력물을 생성할 수 있습니다.
 
 PDF 래스터라이저 라이브러리를 사용하는 것이 좋습니다.
 
@@ -23,13 +23,13 @@ PDF 래스터라이저 라이브러리를 사용하는 것이 좋습니다.
 
 PDF 래스터라이저를 사용하여 생성된 축소판 및 미리 보기는 기본 출력 품질과 비교하여 더 우수하므로 여러 디바이스에서 일관된 보기 경험을 제공할 수 있습니다. Adobe PDF 래스터라이저 라이브러리는 색상 공간 변환을 지원하지 않습니다. 소스 파일의 색상 공간에 관계없이 항상 RGB로 출력합니다.
 
-1. 패키지 공유 또는 소프트웨어 배포를 통해 AEM 인스턴스에 PDF [래스터라이저](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg) 패키지를 [설치합니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
+1. 소프트웨어 배포를 통해 AEM 인스턴스에 PDF 래스터라이저 패키지를 [설치합니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
 
    >[!NOTE]
    >
    >PDF 래스터라이저 라이브러리는 Windows 및 Linux에서만 사용할 수 있습니다.
 
-1. 다음에서 AEM 자산 워크플로우 콘솔에 액세스합니다 `https://[AEM_server]:[port]/workflow`.
+1. 에서 AEM Assets 워크플로우 콘솔에 액세스합니다 `https://[AEM_server]:[port]/workflow`.
 1. DAM 자산 **[!UICONTROL 업데이트 워크플로우]** 페이지를 엽니다.
 1. PDF 및 AI 파일에 대한 기본 축소판 및 웹 변환 생성을 건너뛰려면 다음을 구성합니다.
 
@@ -108,4 +108,4 @@ PDF 래스터라이저를 사용하여 생성된 축소판 및 미리 보기는 
    ![web_enabled_image-1](assets/web_enabled_image-1.png)
 
 1. 워크플로우를 저장합니다.
-1. PDF 파일 또는 AI 파일을 AEM 자산에 업로드합니다. PDF 래스터라이저는 파일의 축소판과 웹 변환을 생성합니다.
+1. PDF 파일 또는 AI 파일을 AEM Assets에 업로드합니다. PDF 래스터라이저는 파일의 축소판과 웹 변환을 생성합니다.
