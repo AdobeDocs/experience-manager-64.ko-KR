@@ -1,25 +1,25 @@
 ---
 title: Camera Raw 지원
-description: Adobe Experience Manager Assets에서 Camera Raw 지원을 활성화하는 방법을 알아봅니다.
+description: Adobe Experience Manager 에셋에서 Camera Raw 지원을 활성화하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+source-git-commit: 53db84e56fa972824b90719c3c2b45b20109d45e
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '443'
 ht-degree: 2%
 
 ---
 
 
-# Camera Raw를 사용하여 이미지 처리 지원 {#camera-raw-support}
+# Camera Raw를 사용하여 이미지 처리 {#camera-raw-support}
 
-Camera Raw 지원을 통해 CR2, NEF 및 RAF와 같은 Raw 파일 포맷을 처리하고 이미지를 JPEG 포맷으로 렌더링할 수 있습니다. 이 기능은 패키지 공유 또는 소프트웨어 배포를 통해 사용할 수 있는 [Camera Raw 패키지를](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) 사용하여 Adobe Experience Manager Assets에서 [지원됩니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg).
+Camera Raw 지원을 통해 CR2, NEF 및 RAF와 같은 Raw 파일 포맷을 처리하고 이미지를 JPEG 포맷으로 렌더링할 수 있습니다. 이 기능은 패키지 공유 또는 소프트웨어 배포를 통해 사용할 수 있는 [Camera Raw 패키지를](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) 사용하는 Adobe Experience Manager [자산에서 지원됩니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg).
 
 >[!NOTE]
 >
 >이 기능은 JPEG 변환만 지원합니다. Windows 64비트, Mac OS 및 RHEL 7.x에서 지원됩니다.
 
-Adobe Experience Manager Assets에서 Camera Raw 지원을 활성화하려면 다음 단계를 수행하십시오.
+Adobe Experience Manager 에셋에서 Camera Raw 지원을 활성화하려면 다음 단계를 수행합니다.
 
 1. 패키지 공유 또는 소프트웨어 배포 [에서](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw 패키지를 [다운로드합니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg).
 
@@ -58,7 +58,7 @@ Adobe Experience Manager Assets에서 Camera Raw 지원을 활성화하려면 �
 >
 >위의 구성이 Camera RAW 및 DNG 처리 단계 **** 구성으로 DAM 자산 업데이트 샘플과 동일한지 확인합니다.
 
-이제 AEM Assets로 Camera Raw 파일을 가져올 수 있습니다. Camera RAW 패키지를 설치하고 필요한 워크플로우를 구성한 후 **[!UICONTROL 사이드 창]** 목록에 이미지 조정 옵션이 나타납니다.
+이제 Camera Raw 파일을 AEM Assets으로 가져올 수 있습니다. Camera RAW 패키지를 설치하고 필요한 워크플로우를 구성한 후 **[!UICONTROL 사이드 창]** 목록에 이미지 조정 옵션이 나타납니다.
 
 ![chlimage_1-337](assets/chlimage_1-337.png)
 
