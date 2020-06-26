@@ -8,9 +8,9 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 translation-type: tm+mt
-source-git-commit: 2baa172088f646752e85168d432d46942ac8244e
+source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
 workflow-type: tm+mt
-source-wordcount: '7873'
+source-wordcount: '7833'
 ht-degree: 1%
 
 ---
@@ -218,7 +218,7 @@ AEM [Quickstart 독립](/help/sites-deploying/deploy.md)실행형 배포에서�
 
 AEM Dynamic Media을 6.3에서 6.4로 업그레이드하는 경우, 다운타임을 제로(&quot;옵트인&quot;이라고도 함) 배포에 대한 기능이 포함되어 있습니다. CRXDE Lite에서 모든 사전 설정 및 구성을 마이그레이션하려면 다음 curl 명령을 실행해야 `/etc` `/conf` 합니다.
 
-**참고**: 호환성 모드에서 AEM 인스턴스를 실행하는 경우, 패키지 호환성이 설치되어 있으므로 이러한 명령을 실행할 필요가 없습니다.
+**참고**: 호환성 모드에서 AEM 인스턴스를 실행하는 경우, 패키지가 설치된 호환성이 있습니다. 이러한 명령을 실행할 필요가 없습니다.
 
 사용자 정의 사전 설정 및 구성을 다음 `/etc` 으로 마이그레이션하려면 다음 Linux curl 명령을 `/conf`실행하십시오.
 
@@ -277,7 +277,6 @@ Dynamic Media 이미지 배달 서비스에 이미지를 복제하려면 작성�
    * KeyStore **[!UICONTROL 파일 암호]** 필드에 KeyStore 파일 암호를 입력합니다. 5단계에서 만든 KeyStore 비밀번호는 _아니지만_ Adobe가 제공하는 KeyStore 파일 암호입니다. KeyStore 파일 암호를 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
    * 개인 **[!UICONTROL 키 암호]** 필드에 개인 키 암호를 입력합니다(이전 단계에서 제공한 개인 키 암호와 동일할 수 있음). Adobe는 제공하는 동안 사용자에게 보낸 환영 이메일에 개인 키 암호를 제공합니다. 개인 키 암호를 받지 않은 경우 Adobe 고객 지원 센터에 문의하십시오.
    * 개인 **[!UICONTROL 키 별칭]** 필드에 개인 키 별칭을 입력합니다. 예, `companyname-alias`. Adobe는 제공하는 동안 귀하에게 보낸 환영 이메일에 개인 키 별칭을 제공합니다. 개인 키 별칭을 받지 않은 경우 Adobe 고객 지원 센터에 문의하십시오.
-
    ![edit_settings_fordynamic-media-replication2](assets/edit_settings_fordynamic-media-replication2.png)
 
 1. 저장 **[!UICONTROL 및 닫기를]** 눌러 변경 사항을 이 사용자에게 저장합니다.
@@ -296,7 +295,6 @@ Dynamic Media 이미지 배달 서비스에 이미지를 복제하려면 작성�
    * **[!UICONTROL 테넌트 ID]** - 이 값은 Replication Service에 게시되는 회사/테넌트의 이름입니다. 이 값은 프로비전 중에 Adobe가 사용자에게 보낸 환영 이메일에서 제공하는 테넌트 ID입니다. 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
    * **[!UICONTROL 키 저장소 별칭]** - 이 값은 인증 설정에서 키를 생성할 때 설정된** 새 별칭** 값 [과 같습니다](#setting-up-authentication). 예를 들면 다음과 같습니다 `replication`. (인증 [설정의 7단계를 참조하십시오](#setting-up-authentication).)
    * **[!UICONTROL 키 저장소 암호]** - 키 저장소 만들기를 탭했을 때 만들어진 키 **[!UICONTROL 스토어 암호입니다]**. Adobe는 이 암호를 제공하지 않습니다. 인증 [설정의 5단계를 참조하십시오](#setting-up-authentication).
-
    다음 이미지는 샘플 데이터가 있는 복제 에이전트를 보여줍니다.
 
    ![chlimage_1-509](assets/chlimage_1-509.png)
@@ -963,7 +961,7 @@ CMYK, RGB 또는 회색 출력을 사용하여 다이내믹 미디어 색상 관
 * **[!UICONTROL iccEmbed]** - [색상 프로필 포함](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
 
 >[!NOTE]
-Adobe 표준 색상 프로파일은 소프트웨어 배포의 패키지 공유 [또는](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) 기능 팩 12445의 기능 팩 1245 [가 설치되어 있는 경우에만 사용할 수](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) 있습니다. 모든 기능 팩과 서비스 팩은 [패키지 공유](https://www.adobeaemcloud.com/content/packageshare.html) 및 [소프트웨어 배포를 통해 사용할 수 있습니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Feature Pack 12445는 Adobe 색상 프로필을 제공합니다.
+Adobe의 표준 색상 프로파일은 소프트웨어 배포의 [기능 팩 12445를 설치한 경우에만 사용할 수](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) 있습니다. 모든 기능 팩과 서비스 팩은 [소프트웨어 배포에서 사용할 수 있습니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Feature Pack 12445는 Adobe 색상 프로필을 제공합니다.
 
 ### 기능 팩 12445 설치 {#installing-feature-pack}
 
@@ -971,9 +969,9 @@ Adobe 표준 색상 프로파일은 소프트웨어 배포의 패키지 공유 [
 
 **기능 팩 12445를 설치하려면**:
 
-1. 패키지 공유 [또는 소프트웨어 배포](https://www.adobeaemcloud.com/content/packageshare.html) 로 [이동하여](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 다운로드하십시오 `cq-6.3.0-featurepack-12445`.
+1. 소프트웨어 [배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 및 다운로드로 이동합니다 `cq-6.3.0-featurepack-12445`.
 
-   AEM [에서 패키지 공유 및 패키지 사용에 대한 자세한 내용은 패키지](/help/sites-administering/package-manager.md) 사용 방법을 참조하십시오.
+   패키지 [사용에 대한 자세한 내용은 패키지](/help/sites-administering/package-manager.md) 사용 방법을 참조하십시오 [!DNL Adobe Experience Manager].
 
 1. 기능 팩을 설치합니다.
 
