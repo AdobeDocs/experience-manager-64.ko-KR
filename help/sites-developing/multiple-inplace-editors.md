@@ -3,9 +3,9 @@ title: 여러 즉석 편집기에 대한 RTE를 구성합니다.
 description: 리치 텍스트 편집기를 구성하여 Adobe Experience Manager에서 여러 개의 즉석 편집기를 만들 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a7d9ea37d26c2eb51d136de630e737616e7cf5b
+source-git-commit: 44e7afdd5a5738dde73ab1d05a1c83a4bb24df92
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '445'
 ht-degree: 2%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 2%
 
 # 여러 즉석 편집기 구성 {#configure-multiple-in-place-editors}
 
-여러 개의 즉석 편집기가 있도록 Adobe Experience Manager에서 리치 텍스트 편집기를 구성할 수 있습니다. 구성 시 적절한 컨텐츠를 선택하고 적절한 편집기를 열 수 있습니다. 예:
+여러 개의 즉석 편집기가 있도록 Adobe Experience Manager에서 리치 텍스트 편집기를 구성할 수 있습니다. 구성 시 적절한 컨텐츠를 선택하고 적절한 편집기를 열 수 있습니다.
 
-![chlimage_1-8](assets/chlimage_1-8.png)
+![특정 즉석 편집기](assets/rte-inplace-editor.png)
 
 ## 여러 편집기 구성 {#configure-multiple-editors}
 
@@ -42,7 +42,7 @@ ht-degree: 2%
 
     /**
       * Configures one child editor for a sub-component. The name of the this node is
-      * be used as DD ID.
+      * used as DD ID.
       *
       * @prop type type of the inline editor. For example, ["image"].
       * @prop title Title of the inline editor.
@@ -71,7 +71,6 @@ ht-degree: 2%
 
    * 이름: 각 노드의 이름은 드롭 대상의 경우와 마찬가지로 나타내는 속성의 이름입니다. 예를 들어, `image` 및 `text`.
    * 유형: `cq:ChildEditorConfig`
-
    >[!NOTE]
    >
    >정의된 드롭 대상과 하위 편집기 간에는 상관 관계가 있습니다. 노드의 이름은 `cq:ChildEditorConfig` 드롭 대상 ID로 간주되어 선택한 하위 편집기의 매개 변수로 사용됩니다. 편집 가능한 하위 영역에 드롭 대상이 없는 경우(예: 텍스트 구성 요소에서) 하위 편집기의 이름은 해당 편집 가능 영역을 식별하기 위한 ID로 계속 간주됩니다.
