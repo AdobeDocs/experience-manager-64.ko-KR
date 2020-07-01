@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: f614e0e47d12f6155364e498cf5fd04c777a25c4
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ![](do-not-localize/data-integeration.png)
 
-AEM Forms 데이터 통합을 통해 서로 다른 데이터 소스를 구성하고 연결할 수 있습니다. 기본적으로 지원되는 유형은 다음과 같습니다. 그러나 사용자 정의가 거의 이루어지지 않는 경우 다른 데이터 소스도 통합할 수 있습니다.
+AEM Forms 데이터 통합을 사용하면 서로 다른 데이터 소스를 구성하고 연결할 수 있습니다. 기본적으로 지원되는 유형은 다음과 같습니다. 그러나 사용자 정의가 거의 이루어지지 않는 경우 다른 데이터 소스도 통합할 수 있습니다.
 
 * 관계형 데이터베이스 - MySQL, Microsoft SQL Server, IBM DB2 및 Oracle RDBMS
 * AEM 사용자 프로필
@@ -30,7 +30,7 @@ AEM Forms 데이터 통합을 통해 서로 다른 데이터 소스를 구성하
 * SOAP 기반의 웹 서비스
 * OData 서비스
 
-데이터 통합은 즉시 사용 가능한 OAuth2.0, 기본 인증 및 API 키 인증 유형을 지원하며, 웹 서비스에 액세스하기 위한 사용자 정의 인증을 구현할 수 있습니다. RESTful, SOAP 기반 및 OData 서비스는 AEM Cloud Services에서 구성되지만 관계형 데이터베이스에 대한 JDBC 및 AEM 사용자 프로필에 대한 커넥터는 AEM 웹 콘솔에서 구성됩니다.
+데이터 통합은 즉시 사용 가능한 OAuth2.0, 기본 인증 및 API 키 인증 유형을 지원하며, 웹 서비스에 액세스하기 위한 사용자 정의 인증을 구현할 수 있습니다. AEM cloud services에서 RESTful, SOAP 기반 및 OData 서비스가 구성되지만 관계형 데이터베이스에 대한 JDBC 및 AEM 사용자 프로필에 대한 커넥터는 AEM 웹 콘솔에서 구성됩니다.
 
 ## 관계형 데이터베이스 구성 {#configure-relational-database}
 
@@ -69,7 +69,7 @@ AEM 웹 콘솔 구성을 사용하여 관계형 데이터베이스를 구성할 
 AEM 웹 콘솔의 사용자 프로필 커넥터 구성을 사용하여 AEM 사용자 프로필을 구성할 수 있습니다. 다음을 수행합니다.
 
 1. 의 AEM 웹 콘솔로 이동합니다 `https://[server]:[host]/system/console/configMgr`.
-1. AEM **[!UICONTROL Forms 데이터 통합 - 사용자 프로필 커넥터 구성을]** 찾고 탭하여 편집 모드에서 구성을 엽니다.
+1. AEM Forms 데이터 통합 - 사용자 프로필 커넥터 구성을 **** 찾아 탭하여 편집 모드에서 구성을 엽니다.
 1. 사용자 프로필 커넥터 구성 대화 상자에서 사용자 프로필 속성을 추가, 제거 또는 업데이트할 수 있습니다. 지정한 속성은 양식 데이터 모델에서 사용할 수 있습니다. 다음 형식을 사용하여 사용자 프로필 속성을 지정합니다.
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
@@ -108,11 +108,11 @@ AEM의 모든 클라우드 서비스 구성은 AEM 저장소의 `/conf` 폴더�
 
 ## RESTful 웹 서비스 구성 {#configure-restful-web-services}
 
-RESTful 웹 서비스는 JSON 또는 YAML 포맷의 [Swagger 사양을](https://swagger.io/specification/) 사용하여 Swagger 정의 파일에 설명할 수 있습니다. AEM Cloud 서비스에서 RESTful 웹 서비스를 구성하려면 파일 시스템에 Swagger 파일 또는 파일이 호스팅된 URL이 있는지 확인하십시오.
+RESTful 웹 서비스는 JSON 또는 YAML 포맷의 [Swagger 사양을](https://swagger.io/specification/) 사용하여 Swagger 정의 파일에 설명할 수 있습니다. AEM cloud services에서 RESTful 웹 서비스를 구성하려면 파일 시스템에 Swagger 파일 또는 파일이 호스팅된 URL이 있는지 확인하십시오.
 
 RESTful 서비스를 구성하려면 다음을 수행합니다.
 
-1. 도구 **[!UICONTROL > 클라우드 서비스 > 데이터 소스로 이동합니다]**. 클라우드 구성을 만들 폴더를 눌러 선택합니다.
+1. 도구 > **[!UICONTROL Cloud Service > 데이터 소스로 이동합니다]**. 클라우드 구성을 만들 폴더를 눌러 선택합니다.
 
    클라우드 [서비스 구성을 위한 폴더 만들기 및 구성에 대한 자세한 내용은 클라우드 서비스](/help/forms/using/configure-data-sources.md#cloud-folder) 구성을 위한 폴더 구성을 참조하십시오.
 
@@ -126,9 +126,9 @@ RESTful 서비스를 구성하려면 다음을 수행합니다.
 
 ## SOAP 웹 서비스 구성 {#configure-soap-web-services}
 
-SOAP 기반 웹 서비스는 WSDL( [Web Services Description Language) 사양을 사용하여 설명합니다](https://www.w3.org/TR/wsdl). AEM Cloud 서비스에서 SOAP 기반 웹 서비스를 구성하려면 웹 서비스에 대한 WSDL URL이 있는지 확인하고 다음을 수행하십시오.
+SOAP 기반 웹 서비스는 WSDL( [Web Services Description Language) 사양을 사용하여 설명합니다](https://www.w3.org/TR/wsdl). AEM cloud services에서 SOAP 기반 웹 서비스를 구성하려면 웹 서비스에 대한 WSDL URL이 있는지 확인하고 다음을 수행합니다.
 
-1. 도구 **[!UICONTROL > 클라우드 서비스 > 데이터 소스로 이동합니다]**. 클라우드 구성을 만들 폴더를 눌러 선택합니다.
+1. 도구 > **[!UICONTROL Cloud Service > 데이터 소스로 이동합니다]**. 클라우드 구성을 만들 폴더를 눌러 선택합니다.
 
    클라우드 [서비스 구성을 위한 폴더 만들기 및 구성에 대한 자세한 내용은 클라우드 서비스](/help/forms/using/configure-data-sources.md#cloud-folder) 구성을 위한 폴더 구성을 참조하십시오.
 
@@ -136,19 +136,23 @@ SOAP 기반 웹 서비스는 WSDL( [Web Services Description Language) 사양을
 1. SOAP 웹 서비스에 대해 다음을 지정합니다.
 
    * 웹 서비스용 WSDL URL.
-   * SOAP 서비스에 액세스하려면 인증 유형(없음, OAuth 2.0, 기본 인증 또는 사용자 정의 인증)을 선택하고 그에 따라 인증에 대한 세부 정보를 제공합니다.
+   * 서비스 엔드포인트. WSDL에 언급된 서비스 끝점을 재정의하려면 이 필드에 값을 지정합니다.
+   * SOAP 서비스에 액세스하려면 인증 유형(없음, OAuth 2.0, 기본 인증, 사용자 정의 인증 또는 X509 토큰)을 선택하고 그에 따라 인증에 대한 세부 정보를 제공합니다.
+
+      인증 유형으로 X509 토큰을 선택한 경우 X509 인증서를 구성합니다. 자세한 내용은 인증서 [설정을 참조하십시오](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
+키 별칭 **** 필드에서 X509 인증서에 대한 키 저장소 별칭을 지정합니다. 인증 요청이 유효한 상태로 유지될 때까지 [ **[!UICONTROL 라이브할 시간] 필드에 시간(초)을]** 지정합니다. 메시지 본문이나 타임스탬프 헤더 또는 둘 다에 서명하도록 선택합니다(선택 사항).
 
 1. 만들기 **[!UICONTROL 를]** 눌러 SOAP 웹 서비스에 대한 클라우드 구성을 만듭니다.
 
 ## OData 서비스 구성 {#config-odata}
 
-OData 서비스는 서비스 루트 URL로 식별됩니다. AEM 클라우드 서비스에서 OData 서비스를 구성하려면 서비스에 대한 서비스 루트 URL이 있는지 확인하고 다음을 수행하십시오.
+OData 서비스는 서비스 루트 URL로 식별됩니다. AEM cloud services에서 OData 서비스를 구성하려면 서비스에 대한 서비스 루트 URL이 있는지 확인하고 다음을 수행합니다.
 
 >[!NOTE]
 >
 >Microsoft Dynamics 365, 온라인 또는 온-프레미스를 구성하는 단계별 지침은 [Microsoft Dynamics OData 구성을 참조하십시오](/help/forms/using/ms-dynamics-odata-configuration.md).
 
-1. 도구 **[!UICONTROL > 클라우드 서비스 > 데이터 소스로 이동합니다]**. 클라우드 구성을 만들 폴더를 눌러 선택합니다.
+1. 도구 > **[!UICONTROL Cloud Service > 데이터 소스로 이동합니다]**. 클라우드 구성을 만들 폴더를 눌러 선택합니다.
 
    클라우드 [서비스 구성을 위한 폴더 만들기 및 구성에 대한 자세한 내용은 클라우드 서비스](/help/forms/using/configure-data-sources.md#cloud-folder) 구성을 위한 폴더 구성을 참조하십시오.
 
