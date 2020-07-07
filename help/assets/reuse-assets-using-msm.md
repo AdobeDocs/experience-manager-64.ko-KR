@@ -5,7 +5,7 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '3158'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 자산에 대한 MSM을 사용하여 에셋 재사용 {#reuse-assets-using-msm-for-assets}
 
-AEM(Adobe Experience Manager)의 MSM(Multi Site Manager) 기능을 사용하면 사용자가 한 번 작성되고 여러 웹 위치에서 다시 사용되는 컨텐츠를 재사용할 수 있습니다. MSM for Assets 기능과 동일한 기능을 디지털 자산에 사용할 수 있습니다. 자산에 대해 MSM을 사용하면 다음을 수행할 수 있습니다.
+AEM(Adobe Experience Manager)의 MSM(Multi Site Manager) 기능을 사용하면 한 번 작성되고 여러 웹 위치에서 다시 사용되는 컨텐츠를 재사용할 수 있습니다. MSM for Assets 기능과 동일한 기능을 디지털 자산에 사용할 수 있습니다. 자산에 대해 MSM을 사용하면 다음을 수행할 수 있습니다.
 
 * 자산을 한 번 만든 다음 이러한 자산의 사본을 만들어 사이트의 다른 영역에서 재사용할 수 있습니다.
 * 동기화에 여러 사본을 유지하고 원본 기본 사본을 한 번 업데이트하여 변경 사항을 하위 복사본으로 푸시합니다.
@@ -79,7 +79,7 @@ MSM은 소스 자산과 Live Copy 간에 라이브 관계를 유지하여 다음
 1. 제목과 이름을 입력합니다. 자산에 자식이 없습니다. 폴더의 Live Copy를 만들 때 하위 항목을 포함하거나 제외하도록 선택할 수 있습니다.
 1. 롤아웃 구성을 선택합니다. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
-두 번째 방법을 사용하여 Live Copy를 만들려면 다음 단계를 수행합니다.
+두 번째 방법을 사용하여 Live Copy를 만들려면 다음 단계를 수행하십시오.
 
 1. AEM 인터페이스의 오른쪽 위 모서리에서 **[!UICONTROL 만들기 > Live Copy를 클릭합니다]**.
    ![AEM 인터페이스에서 Live Copy 만들기](assets/lc_create2.png)
@@ -253,9 +253,9 @@ AEM에서는 MSM Java API를 사용하여 기능을 확장할 수 있습니다. 
 
 >[!NOTE]
 >
-> * MSM for Site의 Blueprint를 MSM의 Live Copy 소스라고 합니다.
-> * 사이트 만들기 마법사에서 장 단계를 제거하는 것은 자산에 대한 MSM에서 지원되지 않습니다.
-> * 페이지 속성에서 MSM 잠금 구성(터치 활성화 UI)은 자산에 대한 MSM에서 지원되지 않습니다.
+>* MSM for Site의 Blueprint를 MSM의 Live Copy 소스라고 합니다.
+>* 사이트 만들기 마법사에서 장 단계를 제거하는 것은 자산에 대한 MSM에서 지원되지 않습니다.
+>* 페이지 속성에서 MSM 잠금 구성(터치 활성화 UI)은 자산에 대한 MSM에서 지원되지 않습니다.
 
 
 ## 자산 관리 작업이 Live Copy에 미치는 영향 {#impact-of-asset-management-tasks-on-live-copies}
