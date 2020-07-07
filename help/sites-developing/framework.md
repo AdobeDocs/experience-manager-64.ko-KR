@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 4b680d17-383b-4173-a444-0b7bdb24e6c8
 translation-type: tm+mt
-source-git-commit: eebb765465c90c0ede5957c8bf79a028e1b4f6ce
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 0%
@@ -260,14 +260,17 @@ AEM에 포함된 노드 유형에 대한 기본 정의는 다음과 같습니다
 
 ## 태그 마이그레이션 {#tags-migration}
 
-Adobe Experience Manager 6.4 이상 버전 태그는 이전 버전 `/content/cq:tags`에 저장되어 `/etc/tags`있습니다. 하지만 Adobe Experience Manager가 이전 버전에서 업그레이드된 시나리오에서 태그는 여전히 이전 위치 아래에 있습니다 `/etc/tags`. 업그레이드된 시스템 태그는 아래에서 마이그레이션해야 합니다 `/content/cq:tags`.
+Experience Manager 6.4부터 태그는 이전 버전 `/content/cq:tags`에 저장된 다음 아래에 저장됩니다 `/etc/tags`. 하지만 Adobe Experience Manager이 이전 버전에서 업그레이드된 시나리오에서 태그는 여전히 이전 위치 아래에 있습니다 `/etc/tags`. 업그레이드된 시스템 태그는 아래에서 마이그레이션해야 합니다 `/content/cq:tags`.
 
-> [!NOTE]
-> 태그 페이지의 페이지 속성에서, 태그 기준 경로(예: )를 하드 코딩하는 대신 태그 ID(예: `geometrixx-outdoors:activity/biking`)를 사용하는 것이 `/etc/tags/geometrixx-outdoors/activity/biking`좋습니다.
-> 태그를 나열하려면, 사용할 `com.day.cq.tagging.servlets.TagListServlet` 수 있습니다.
+>[!NOTE]
+>
+>태그 페이지의 페이지 속성에서, 태그 기준 경로(예: )를 하드 코딩하는 대신 태그 ID(예: `geometrixx-outdoors:activity/biking`)를 사용하는 것이 `/etc/tags/geometrixx-outdoors/activity/biking`좋습니다.
+>
+>태그를 나열하려면, 사용할 `com.day.cq.tagging.servlets.TagListServlet` 수 있습니다.
 
-> [!NOTE]
-> 태그 관리자 API를 리소스로 사용하는 것이 좋습니다.
+>[!NOTE]
+>
+>태그 관리자 API를 리소스로 사용하는 것이 좋습니다.
 
 **업그레이드된 AEM 인스턴스가 TagManager API를 지원하는 경우**
 
@@ -333,9 +336,9 @@ println "---------------------------------Success-------------------------------
 
 **업그레이드된 AEM 인스턴스가 클래식 UI에서 실행되는 경우**
 
-> [!NOTE]
-> 클래식 UI는 다운타임을 제로 준수하지 않으며 새 태그 기본 경로를 지원하지 않습니다. 클래식 UI를 사용하려면 구성 요소 `/etc/tags` 를 만든 후 다시 시작해야 `cq-tagging` 합니다.
-
+>[!NOTE]
+>
+>클래식 UI는 다운타임을 제로 준수하지 않으며 새 태그 기본 경로를 지원하지 않습니다. 클래식 UI를 사용하려면 구성 요소 `/etc/tags` 를 만든 후 다시 시작해야 `cq-tagging` 합니다.
 
 TagManager API에서 지원하고 클래식 UI에서 실행되는 업그레이드된 AEM 인스턴스의 경우:
 
