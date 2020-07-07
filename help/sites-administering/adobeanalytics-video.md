@@ -10,7 +10,7 @@ topic-tags: integration
 content-type: reference
 discoiquuid: e7672b23-a4af-49bb-bba7-0565d3bda802
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '1776'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 >[!NOTE]
 >
 >계속하기 전에 AEM 내에 **재생 가능한 비디오가** 업로드되었는지 확인하십시오.
-> 
+>
 >페이지에서 비디오가 재생되도록 하려면 **[이 자습서를](/help/sites-authoring/default-components-foundation.md#video)**참조하여 AEM에서 비디오 파일을 트랜스코딩하는 방법에 대해 알아보십시오.
 
 다음 절차를 사용하여 각 방법을 사용하여 비디오 추적에 대한 프레임워크를 설정합니다.
