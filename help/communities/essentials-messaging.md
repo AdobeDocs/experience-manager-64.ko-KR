@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: eb8fd2b3-0a31-425e-b0f1-38f09e1106df
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '392'
+ht-degree: 2%
 
 ---
 
@@ -74,7 +77,7 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
   </tr> 
   <tr> 
    <td><strong>속성</strong></td> 
-   <td>메시징 <a href="configure-messaging.md">구성 참조</a></td> 
+   <td>메시징 <a href="configure-messaging.md">구성을 참조하십시오.</a></td> 
   </tr> 
   <tr> 
    <td><strong>관리 구성</strong></td> 
@@ -91,7 +94,7 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 
 * [SCF 구성 요소용](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) 메시징 클라이언트 API
 
-* [서비스를](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) 위한 메시지 API
+* [서비스에 대한](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) 메시지 API
 
 * [메시지 끝점](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 
@@ -103,36 +106,35 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
+
 >
 >
 예:
 >
 >
-```>
+```
 >valid: mb.setInboxPath( "/mail/inbox" );
 > not valid: mb.setInboxPath( "/mail/inbox/" );
->```>
-
-
+>```
 
 ### 커뮤니티 사이트 {#community-site}
 
-마법사를 사용하여 만든 커뮤니티 사이트 구조에는 선택 시 메시지 기능이 포함됩니다. 커뮤니티 사이트 `User Management` 콘솔의 [설정을 참조하십시오](sites-console.md#user-management).
+마법사를 사용하여 만든 커뮤니티 사이트 구조에는 선택 시 메시징 기능이 포함됩니다. 커뮤니티 사이트 콘솔 `User Management` 의 [설정을 참조하십시오](sites-console.md#user-management).
 
-### 샘플 코드:메시지 수신 알림 {#sample-code-message-received-notification}
+### 샘플 코드: 메시지 수신 알림 {#sample-code-message-received-notification}
 
-소셜 메시징 기능은 작업(예: `send``marking read`, `marking delete`예: 이러한 이벤트를 포착하고 이벤트에 포함된 데이터에 대해 수행된 작업을 수행할 수 있습니다.
+소셜 메시징 기능은 작업(예: `send`, `marking read`예: `marking delete`)에 대해 이벤트를 throw합니다. 이러한 이벤트를 캡처하고 이벤트에 포함된 데이터에 대해 수행된 작업을 수행할 수 있습니다.
 
-다음 예제는 이벤트를 수신하고 `message sent` 이벤트를 사용하여 모든 메시지 수신자에게 이메일을 보내는 이벤트 핸들러의 `Day CQ Mail Service`예입니다.
+다음 예제는 이벤트를 수신하고 해당 이벤트를 사용하여 모든 메시지 수신자에게 이메일을 전송하는 이벤트 핸들러의 `message sent` `Day CQ Mail Service`예입니다.
 
 서버측 샘플 스크립트를 사용하려면 개발 환경과 OSGi 번들을 빌드하는 기능이 필요합니다.
 
 1. Login as an administrator to ` [CRXDE|Lite](http://localhost:4502/crx/de)`
-1. 임의 `bundle node`이름으로 `/apps/engage/install` (예:
+1. 임의 이름 `bundle node`으로 `/apps/engage/install` In을 만듭니다(예:
 
-   * **[!UICONTROL 기호 이름]**:com.engage.media.social.messaging.MessagingNotification
-   * **[!UICONTROL 이름]**:시작하기 자습서 메시지 알림
-   * **[!UICONTROL 설명]**:사용자에게 메시지를 받을 때 이메일 알림을 전송하는 샘플 서비스
+   * **[!UICONTROL 기호 이름]**: com.engage.media.social.messaging.MessagingNotification
+   * **[!UICONTROL 이름]**: 시작하기 자습서 메시지 알림
+   * **[!UICONTROL 설명]**: 사용자에게 메시지를 수신할 때 이메일 알림을 전송하는 샘플 서비스
    * **[!UICONTROL 패키지]**: `com.engage.media.social.messaging.notification`
 
 1. 다음으로 이동 `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`
@@ -142,11 +144,11 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
    1. 아래 코드를 `MessageEventHandler.java`
 
 1. 모두 **[!UICONTROL 저장을 클릭합니다.]**
-1. 코드에 기록된 대로 모든 가져오기 문으로 `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` 이동하여 `MessageEventHandler.java` 추가합니다.
+1. 코드에 기록된 대로 모든 가져오기 문 `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` 으로 이동하여 `MessageEventHandler.java` 추가합니다.
 1. 번들 빌드
-1. OSGi `Day CQ Mail Service`서비스가 구성되어 있는지 확인
+1. OSGi `Day CQ Mail Service`서비스가 구성되었는지 확인
 1. 한 데모 사용자로 로그인하고 다른 데모 사용자에게 이메일 보내기
-1. 받는 사람이 새 메시지와 관련하여 이메일을 받아야 합니다.
+1. 받는 사람이 새 메시지에 대한 이메일을 수신해야 합니다.
 
 #### MessageEventHandler.java {#messageeventhandler-java}
 
