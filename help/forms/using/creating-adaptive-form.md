@@ -1,17 +1,17 @@
 ---
 title: 응용 양식 만들기
 seo-title: 응용 양식 만들기
-description: AEM Forms를 사용하여 적응형 양식을 만드는 방법입니다. 적응형 양식은 정보 수집 및 처리를 간소화하는 반응형 HTML5 양식입니다.
-seo-description: AEM Forms를 사용하여 적응형 양식을 만드는 방법입니다. 적응형 양식은 정보 수집 및 처리를 간소화하는 반응형 HTML5 양식입니다.
+description: AEM Forms을 사용하여 적응형 양식을 만드는 방법 적응형 양식은 정보 수집 및 처리를 간소화하는 반응형 HTML5 양식입니다.
+seo-description: AEM Forms을 사용하여 적응형 양식을 만드는 방법 적응형 양식은 정보 수집 및 처리를 간소화하는 반응형 HTML5 양식입니다.
 uuid: 444f461a-9e88-4385-b5ee-e985067ab7bc
 content-type: reference
 topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2042'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 적응형 양식을 만들려면 다음 단계를 수행합니다.
 
-1. AEM Forms 작성자 인스턴스에 액세스하려면 `https://[server]:[port]/<custom-context-if-any>.`
+1. 액세스 AEM Forms 작성자 인스턴스 `https://[server]:[port]/<custom-context-if-any>.`
 
    ```
    
@@ -67,13 +67,13 @@ ht-degree: 0%
 
    적응형 양식 작성 인터페이스 및 사용 가능한 구성 요소에 대한 자세한 내용은 적응형 양식 작성 [소개를 참조하십시오](/help/forms/using/introduction-forms-authoring.md).
 
-   >[!NOTE] {grayBox=&quot;true&quot;}
+   >[!NOTE]
    >
    >브라우저의 팝업 창에서 새로 만든 양식을 새 탭에서 열 수 있습니다.
 
 ## 양식 데이터 모델을 기반으로 적응형 양식 만들기 {#fdm}
 
-[AEM Forms 데이터 통합](/help/forms/using/data-integration.md) 기능을 사용하면 여러 데이터 소스를 통합하고 해당 개체 및 서비스를 함께 가져와 양식 데이터 모델을 만들 수 있습니다. JSON 스키마 확장입니다. 양식 데이터 모델을 사용하여 적응형 양식을 만들 수 있습니다. 양식 데이터 모델에 구성된 개체나 데이터 모델 개체는 양식 작성을 위한 데이터 모델 개체로 사용할 수 있습니다. 각 데이터 소스에 바인딩되어 양식을 미리 작성하고 제출된 데이터를 해당 데이터 소스에 다시 쓰는 데 사용됩니다. 적응형 양식 규칙을 사용하여 양식 데이터 모델에서 구성된 서비스를 호출할 수도 있습니다.
+[AEM Forms 데이터 통합](/help/forms/using/data-integration.md) 기능을 사용하면 여러 데이터 소스를 통합하고 해당 개체 및 서비스를 결합하여 양식 데이터 모델을 만들 수 있습니다. JSON 스키마 확장입니다. 양식 데이터 모델을 사용하여 적응형 양식을 만들 수 있습니다. 양식 데이터 모델에 구성된 개체나 데이터 모델 개체는 양식 작성을 위한 데이터 모델 개체로 사용할 수 있습니다. 각 데이터 소스에 바인딩되어 양식을 미리 작성하고 제출된 데이터를 해당 데이터 소스에 다시 쓰는 데 사용됩니다. 적응형 양식 규칙을 사용하여 양식 데이터 모델에서 구성된 서비스를 호출할 수도 있습니다.
 
 적응형 양식을 만들기 위해 양식 데이터 모델을 사용하려면:
 
@@ -97,12 +97,12 @@ XFA 양식 템플릿을 재사용하여 적응형 양식을 만들 수 있습니
 
 >[!NOTE]
 >
->[양식 템플릿을](/help/forms/using/get-xdp-pdf-documents-aem.md) 기반으로 적응형 양식을 만들기 전에 AEM Forms 템플릿을 업로드합니다.
+>[양식 템플릿을](/help/forms/using/get-xdp-pdf-documents-aem.md) 기반으로 적응형 양식을 만들기 전에 XFA 양식 템플릿을 AEM Forms에 업로드합니다.
 
 적응형 양식의 양식 모델로 XFA 양식 템플릿을 사용하려면 다음을 수행합니다.
 
 1. 속성 **[!UICONTROL 추가]** 페이지에서 **[!UICONTROL 양식 모델]** 탭을 엽니다.
-1. 양식 모델 탭의 드롭다운 목록에서 양식 템플릿 **[!UICONTROL 을 선택합니다]**. AEM Forms UI를 통해 보관소에 업로드된 모든 양식 템플릿을 선택할 수 있습니다. 목록에서 템플릿을 선택합니다.
+1. 양식 모델 탭의 드롭다운 목록에서 양식 템플릿 **[!UICONTROL 을 선택합니다]**. AEM Forms UI를 통해 저장소에 업로드되는 모든 양식 템플릿이 선택을 위해 나열됩니다. 목록에서 템플릿을 선택합니다.
 
    ![XFA 양식 템플릿을 적응형 양식과 연결](assets/form_model_xfa_associate.png)
    **그림:** *양식 템플릿 선택*
@@ -130,7 +130,7 @@ XML 및 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생�
    * **[!UICONTROL 디스크에서]** 업로드 - 이 옵션을 선택하고 스키마 정의 업로드를 눌러 파일 시스템에서 XML 스키마 또는 JSON 스키마를 찾아 업로드합니다. 업로드된 스키마 파일은 양식과 함께 있으며 다른 응용 양식에서 액세스할 수 없습니다.
    * **[!UICONTROL 저장소에서]** 검색 - 저장소에서 사용 가능한 스키마 정의 파일 목록에서 선택하려면 이 옵션을 선택합니다. XML 또는 JSON 스키마 파일을 양식 모델로 선택합니다. 선택한 스키마는 참조별로 양식과 연결되며 다른 적응형 양식에 사용할 수 있습니다.
 
-   >[!CAUTION] {grayBox=&quot;true&quot;}
+   >[!CAUTION]
    >
    >JSON 스키마 파일 이름이 **.schema.json으로 끝나야 합니다**. 예: mySchema.schema.json
 
@@ -148,7 +148,7 @@ XML 및 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생�
 
 ## 적응형 양식 템플릿 {#adaptive-form-templates}
 
-템플릿은 기본 구조를 제공하고 응용 양식의 모양(레이아웃 및 스타일)을 정의합니다. 특정 속성과 컨텐츠 구조를 포함하는 미리 서식이 지정된 구성 요소가 있습니다. 기본적으로 AEM Forms에서는 일부 적응형 양식 템플릿을 제공합니다. 고급 템플릿을 포함한 전체 템플릿 패키지를 얻으려면 AEM Forms 추가 기능 패키지를 설치해야 합니다. 자세한 내용은 AEM [Forms Add-on 패키지 설치를 참조하십시오](/help/forms/using/installing-configuring-aem-forms-osgi.md).
+템플릿은 기본 구조를 제공하고 응용 양식의 모양(레이아웃 및 스타일)을 정의합니다. 특정 속성과 컨텐츠 구조를 포함하는 미리 서식이 지정된 구성 요소가 있습니다. AEM Forms은 몇 가지 적응형 양식 템플릿을 제공합니다. 고급 템플릿을 포함한 전체 템플릿 패키지를 얻으려면 AEM Forms 추가 기능 패키지를 설치해야 합니다. 자세한 내용은 AEM Forms 추가 [기능 패키지 설치를 참조하십시오](/help/forms/using/installing-configuring-aem-forms-osgi.md).
 
 또한 템플릿 편집기를 사용하여 자신만의 템플릿을 만들 수 있습니다. 템플릿 작업에 대한 자세한 내용은 [적응형 양식 템플릿을 참조하십시오](/help/forms/using/template-editor.md).
 
