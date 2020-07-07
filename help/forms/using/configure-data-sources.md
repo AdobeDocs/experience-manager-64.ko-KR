@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
 translation-type: tm+mt
-source-git-commit: f614e0e47d12f6155364e498cf5fd04c777a25c4
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ AEM 웹 콘솔 구성을 사용하여 관계형 데이터베이스를 구성할 
    * JDBC 연결 URI
    * JDBC 드라이버와의 연결을 설정하는 사용자 이름 및 암호
 
-   >[!NOTE] {grayBox=&quot;true&quot;}
+   >[!NOTE]
    >
    >데이터 소스를 구성하기 전에 암호와 같은 중요한 정보를 암호화해야 합니다. 암호화하려면:
    >
@@ -79,7 +79,7 @@ AEM 웹 콘솔의 사용자 프로필 커넥터 구성을 사용하여 AEM 사�
    * `name=profile/phoneNumber,type=string`
    * `name=profile/empLocation/*/city,type=string`
 
-   >[!NOTE] {grayBox=&quot;true&quot;}
+   >[!NOTE]
    >
    >마지막(&amp;M); **** 위의 예에서 CRXDE 구조의 AEM 사용자 프로필의 노드 아래 `profile/empLocation/` 의 모든 노드를 나타냅니다. 즉, 양식 데이터 모델은 노드 아래의 임의 노드에 `city` 있는 유형 `string` 의 속성에 액세스할 수 `profile/empLocation/` 있습니다. 그러나 지정된 속성을 포함하는 노드는 일관된 구조를 따라야 합니다.
 
