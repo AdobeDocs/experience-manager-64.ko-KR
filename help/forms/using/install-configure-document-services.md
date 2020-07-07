@@ -1,13 +1,13 @@
 ---
 title: 문서 서비스 설치 및 구성
 seo-title: 문서 서비스 설치 및 구성
-description: AEM Forms 문서 서비스를 설치하여 PDF 문서를 작성, 조합, 배포, 보관, 문서에 대한 액세스 권한을 제한하는 디지털 서명, 바코드 양식을 디코딩할 수 있습니다.
-seo-description: AEM Forms 문서 서비스를 설치하여 PDF 문서를 작성, 조합, 배포, 보관, 문서에 대한 액세스 권한을 제한하는 디지털 서명, 바코드 양식을 디코딩할 수 있습니다.
+description: AEM Forms 문서 서비스를 설치하여 PDF 문서를 작성, 조합, 배포, 보관, 문서에 대한 액세스를 제한하는 디지털 서명 추가, 바코드 양식 디코딩을 수행할 수 있습니다.
+seo-description: AEM Forms 문서 서비스를 설치하여 PDF 문서를 작성, 조합, 배포, 보관, 문서에 대한 액세스를 제한하는 디지털 서명 추가, 바코드 양식 디코딩을 수행할 수 있습니다.
 uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: 4c99cf4852ea21a85013d8745ade48500110e58a
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '4353'
 ht-degree: 1%
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 # 문서 서비스 설치 및 구성 {#installing-and-configuring-document-services}
 
-AEM Forms는 다양한 문서 수준 작업을 수행하는 OSGi 서비스 세트를 제공합니다. 예를 들어, PDF 문서를 작성, 조합, 배포 및 보관하는 서비스, 문서에 대한 액세스를 제한하는 디지털 서명 추가, 바코드 양식 디코딩이 가능합니다. 이러한 서비스는 AEM Forms Add-on 패키지에 포함되어 있습니다. 이러한 서비스를 통칭하여 문서 서비스라고 합니다. 사용 가능한 문서 서비스 및 주요 기능 목록은 다음과 같습니다.
+AEM Forms은 PDF 문서를 작성, 조합, 배포 및 보관하는 서비스, 문서에 대한 액세스를 제한하는 디지털 서명 추가, 바코드 양식 디코딩과 같은 다양한 문서 수준 작업을 수행하는 OSGi 서비스 세트를 제공합니다. 이러한 서비스는 AEM Forms 추가 기능 패키지에 포함되어 있습니다. 이러한 서비스를 통칭하여 문서 서비스라고 합니다. 사용 가능한 문서 서비스 및 주요 기능 목록은 다음과 같습니다.
 
-* **어셈블러 서비스:** PDF 및 XDP 문서를 결합, 재정렬 및 보강하고 PDF 문서에 대한 정보를 얻을 수 있습니다. 또한 PDF 문서를 PDF/A 표준으로 변환 및 확인하고 PDF 양식, XML 양식 및 PDF 양식을 PDF/A-1b, PDF/A-2b 및 PDFA/A-3b로 변환하는 작업도 지원합니다. 자세한 내용은 어셈블러 [서비스를 참조하십시오](/help/forms/using/assembler-service.md).
+* **어셈블러 서비스:** PDF 및 XDP 문서를 결합, 재정렬 및 보강하고 PDF 문서에 대한 정보를 얻을 수 있습니다. 또한 PDF 문서를 PDF/A 표준으로 변환 및 확인하고, PDF forms, XML 양식 및 PDF forms을 PDF/A-1b, PDF/A-2b 및 PDFA/A-3b로 변환하는 작업도 지원합니다. 자세한 내용은 어셈블러 [서비스를 참조하십시오](/help/forms/using/assembler-service.md).
 
 * **ConvertPDF 서비스:** PDF 문서를 PostScript 또는 이미지 파일(JPEG, JPEG 2000, PNG 및 TIFF)로 변환할 수 있습니다. 자세한 내용은 [ConvertPDF 서비스를 참조하십시오](/help/forms/using/using-convertpdf-service.md).
 
@@ -45,17 +45,17 @@ AEM Forms는 다양한 문서 수준 작업을 수행하는 OSGi 서비스 세�
 
    서명 서비스는 신뢰 저장소에 저장된 인증서 및 자격 증명에 액세스합니다. 자세한 내용은 [서명 서비스를 참조하십시오](/help/forms/using/aem-document-services-programmatically.md).
 
-AEM Forms는 강력한 엔터프라이즈급 플랫폼이며 문서 서비스는 AEM Forms 기능 중 하나에 불과합니다. 전체 기능 목록은 AEM Forms [소개를 참조하십시오](/help/forms/using/introduction-aem-forms.md).
+AEM Forms은 강력한 엔터프라이즈급 플랫폼이며 문서 서비스는 AEM Forms의 기능 중 하나에 불과합니다. 전체 기능 목록은 AEM Forms [소개를 참조하십시오](/help/forms/using/introduction-aem-forms.md).
 
 ## 배포 토폴로지 {#deployment-topology}
 
-AEM Forms Add-on 패키지는 AEM에 배포된 애플리케이션입니다. 일반적으로 AEM Forms 문서 서비스를 실행하려면 하나의 AEM 인스턴스(작성자 또는 게시)만 필요합니다. AEM Forms 문서 서비스를 실행하려면 다음 토폴로지가 권장됩니다. 토폴로지에 대한 자세한 내용은 AEM Forms용 [아키텍처 및 배포 토폴로지를 참조하십시오](/help/forms/using/aem-forms-architecture-deployment.md).
+AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니다. 일반적으로 AEM Forms 문서 서비스를 실행하려면 하나의 AEM 인스턴스(작성자 또는 게시)만 필요합니다. AEM Forms 문서 서비스를 실행하려면 다음 토폴로지가 권장됩니다. 토폴로지에 대한 자세한 내용은 AEM Forms용 [아키텍처 및 배포 토폴로지를 참조하십시오](/help/forms/using/aem-forms-architecture-deployment.md).
 
-![AEM Forms용 아키텍처 및 배포 토폴로지](do-not-localize/document-services.png)
+![AEM Forms을 위한 아키텍처 및 배포 토폴로지](do-not-localize/document-services.png)
 
 >[!NOTE]
 >
->AEM Forms를 사용하면 단일 서버에서 모든 기능을 설정하고 실행할 수 있지만, 프로덕션 환경에서 특정 기능을 위한 전용 서버를 설정하고, 부하 균형을 맞추고, 전용 서버를 설정해야 합니다. 예를 들어 PDF Generator 서비스를 사용하여 하루에 수천 개의 페이지를 변환하고 여러 적응형 양식을 변환하여 데이터를 캡처하는 환경의 경우, PDF Generator 서비스 및 적응형 양식 기능에 대해 별도의 AEM Forms 서버를 설정하십시오. 최적의 성능을 제공하고 서로 독립적으로 서버를 확장할 수 있습니다.
+>AEM Forms을 통해 단일 서버에서 모든 기능을 설정하고 실행할 수 있지만, 프로덕션 환경에서 특정 기능을 위한 전용 서버를 설정하고, 부하 균형을 맞추고, 전용 서버를 설정해야 합니다. 예를 들어 PDF Generator 서비스를 사용하는 환경에서 하루에 수천 개의 페이지와 여러 적응형 양식을 변환하여 데이터를 캡처하는 경우 PDF Generator 서비스 및 적응형 양식 기능을 위한 별도의 AEM Forms 서버를 설정할 수 있습니다. 최적의 성능을 제공하고 서로 독립적으로 서버를 확장할 수 있습니다.
 
 ## 시스템 요구 사항 {#system-requirements}
 
@@ -69,7 +69,7 @@ AEM Forms 문서 서비스 설치 및 구성을 시작하기 전에 다음을 �
    * **작성자**: 컨텐츠를 생성, 업로드 및 편집하고 웹 사이트를 관리하는 데 사용되는 AEM 인스턴스입니다. 컨텐츠가 라이브될 준비가 되면 게시 인스턴스에 복제됩니다.
    * **게시**: 인터넷 또는 내부 네트워크를 통해 게시된 컨텐츠를 제공하는 AEM 인스턴스입니다.
 
-* 메모리 요구 사항이 충족되었습니다. AEM Forms Add-on 패키지에 필요한 항목:
+* 메모리 요구 사항이 충족되었습니다. AEM Forms 추가 패키지 필요:
 
    * Microsoft Windows 기반 설치를 위한 15GB의 임시 공간.
    * UNIX 기반 설치를 위한 6GB의 임시 공간.
@@ -209,7 +209,7 @@ PDF Generator 서비스를 사용하여 Microsoft Word, Microsoft Excel, Microso
 
 
 
-Acrobat을 설치한 후 Microsoft Word를 엽니다. [ **Acrobat]**&#x200B;탭에서 [PDF 작성]을&#x200B;**클릭하고** 컴퓨터에서 사용 가능한 .doc 또는 .docx 파일을 PDF 문서로 변환합니다. 변환이 성공하면 AEM Forms에서 PDF Generator 서비스와 함께 Acrobat을 사용할 수 있습니다.
+Acrobat을 설치한 후 Microsoft Word를 엽니다. [ **Acrobat]**&#x200B;탭에서 [PDF 작성]을&#x200B;**클릭하고** 컴퓨터에서 사용 가능한 .doc 또는 .docx 파일을 PDF 문서로 변환합니다. 변환에 성공하면 AEM Forms에서 PDF Generator 서비스를 사용하여 Acrobat을 사용할 수 있습니다.
 
 ### 설정 환경 변수 {#setup-environment-variables}
 
@@ -257,11 +257,11 @@ Acrobat을 설치한 후 Microsoft Word를 엽니다. [ **Acrobat]**&#x200B;탭�
 >* 환경 변수 OpenOffice_PATH는 실행 파일의 경로 대신 설치 폴더로 설정됩니다.
 >* Word, PowerPoint, Excel 및 Project와 같은 Microsoft Office 애플리케이션이나 AutoCAD용 환경 변수를 설정하지 마십시오. 이러한 응용 프로그램이 서버에 설치되어 있는 경우 PDF 생성 서비스는 이러한 응용 프로그램을 자동으로 시작합니다.
 >* UNIX 기반 플랫폼에서 OpenOffice를 /root로 설치합니다. OpenOffice가 루트로 설치되지 않은 경우 PDF Generator 서비스가 OpenOffice 문서를 PDF 문서로 변환하지 못합니다. 루트가 아닌 사용자로 OpenOffice를 설치하고 실행해야 하는 경우 루트가 아닌 사용자에게 해당 권한을 제공합니다.
->* UNIX 기반 플랫폼에서 OpenOffice를 사용하는 경우 다음 명령을 실행하여 path 변수를 설정합니다.\
-   >  `export OpenOffice_PATH=/opt/openoffice.org4`
+>* UNIX 기반 플랫폼에서 OpenOffice를 사용하는 경우 다음 명령을 실행하여 path 변수를 설정합니다.
 
 >
-
+>  
+`export OpenOffice_PATH=/opt/openoffice.org4`
 
 
 ### (IBM WebSphere에만 해당) IBM SSL 소켓 공급자 구성 {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
@@ -293,7 +293,7 @@ IBM SSL 소켓 공급자를 구성하려면 다음 단계를 수행하십시오.
    #ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
    ```
 
-1. AEM Forms 서버가 AEM Forms 서버를 시작하는 동안 업데이트된 java.security 파일을 사용하도록 설정하려면 다음 java 인수를 추가하십시오.
+1. AEM Forms 서버를 시작하는 동안 AEM Forms 서버가 업데이트된 java.security 파일을 사용하도록 설정하려면 다음 java 인수를 추가하십시오.
 
    `-Djava.security.properties= [path of newly created Java.security file].`
 
@@ -357,8 +357,7 @@ PDF Generator 서비스는 HTML 파일을 PDF 문서로 변환하는 WebKit, Web
 
 >[!NOTE]
 >
-> 글꼴 폴더에 새 글꼴을 설치할 때마다 AEM Forms 인스턴스를 다시 시작합니다.
-
+>글꼴 폴더에 새 글꼴을 설치할 때마다 AEM Forms 인스턴스를 다시 시작합니다.
 
 ### (UNIX 기반 플랫폼에만 해당) HTML을 PDF로 변환하기 위한 추가 구성  {#extra-configurations-for-html-to-pdf-conversion}
 
@@ -391,17 +390,17 @@ UNIX 기반 플랫폼에서 PDF Generator 서비스는 WebKit 및 PhantomJS 경�
 
 ## AEM Forms 추가 기능 패키지 설치 {#install-aem-forms-add-on-package}
 
-AEM Forms Add-on 패키지는 AEM에 배포된 애플리케이션입니다. 이 패키지에는 AEM Forms 문서 서비스 및 기타 AEM Forms 기능이 포함되어 있습니다. 패키지를 설치하려면 다음 단계를 수행하십시오.
+AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니다. 이 패키지에는 AEM Forms 문서 서비스 및 기타 AEM Forms 기능이 포함되어 있습니다. 패키지를 설치하려면 다음 단계를 수행하십시오.
 
-1. 관리자로 [AEM 서버에](http://localhost:4502) 로그인하고 [패키지 공유를 엽니다](http://localhost:4502/crx/packageshare). 패키지 공유에 로그인하려면 Adobe ID가 필요합니다.
+1. 관리자로 [AEM 서버에](http://localhost:4502) 로그인하고 [패키지 공유를 엽니다](http://localhost:4502/crx/packageshare). 패키지 공유에 로그인하려면 Adobe ID이 필요합니다.
 
 1. AEM [패키지 공유](http://localhost:4502/crx/packageshare/login.html)에서 **[!UICONTROL AEM 6.4 Forms Add-on 패키지를]**&#x200B;검색하고 운영 체제에 해당하는 패키지를 클릭한 다음 **[!UICONTROL 다운로드를 클릭합니다]**. 사용권 계약을 읽고 동의한 다음 **[!UICONTROL 확인을 클릭합니다]**. 다운로드가 시작됩니다. 다운로드되면 패키지 옆에 **[!UICONTROL 다운로드됨]** 단어가 나타납니다.
 
-   버전 번호를 사용하여 추가 기능 패키지를 검색할 수도 있습니다. 최신 패키지의 버전 번호는 [AEM Forms 릴리스](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 문서를 참조하십시오.
+   버전 번호를 사용하여 추가 기능 패키지를 검색할 수도 있습니다. 최신 패키지의 버전 번호는 [AEM Forms 릴리스 문서를](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 참조하십시오.
 
 1. 다운로드가 완료되면 **[!UICONTROL 다운로드를 클릭합니다]**. 패키지 관리자로 리디렉션됩니다. 패키지 관리자에서 다운로드한 패키지를 검색하고 [설치]를 **[!UICONTROL 클릭합니다]**.
 
-   AEM Forms 릴리스 [문서에 나열된 직접 링크를 통해 패키지를 수동으로 다운로드하는 경우 패키지](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 관리자에 로그인하고 패키지 **[!UICONTROL 업로드를]**&#x200B;클릭한 다음 다운로드한 패키지를 선택한 다음 업로드를 클릭합니다. 패키지가 업로드된 후 패키지 이름을 클릭하고 **[!UICONTROL 설치를 클릭합니다]**.
+   AEM Forms 릴리스 [문서에 나열된 직접 링크를 통해 패키지를 수동으로 다운로드하는 경우 패키지 관리자에 로그인하여 패키지](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 업로드 ****&#x200B;를 클릭하고 다운로드한 패키지를 선택한 다음 업로드를 클릭합니다. 패키지가 업로드된 후 패키지 이름을 클릭하고 **[!UICONTROL 설치를 클릭합니다]**.
 
 1. 패키지가 설치되면 AEM 인스턴스를 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 중지하지 마십시오.** AEM Forms 서버를 중지하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log 파일에 나타나지 않고 로그가 안정될 때까지 기다립니다.
 
@@ -442,7 +441,7 @@ AEM Forms Add-on 패키지는 AEM에 배포된 애플리케이션입니다. 이 
 
 PDF Generator 서비스를 실행하려면 로컬 사용자 계정이 필요합니다. 로컬 사용자를 만드는 단계는 Windows [에서 사용자 계정 만들기](https://support.microsoft.com/en-us/help/13951/windows-create-user-account) 또는 UNIX 기반 플랫폼에서 사용자 계정 [만들기를 참조하십시오](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/Step_by_Step_Guide/s1-starting-create-account.html).
 
-1. AEM [Forms PDF Generator 구성](http://localhost:4502/libs/fd/pdfg/config/ui.html) 페이지를 엽니다.
+1. AEM Forms PDF [생성기 구성](http://localhost:4502/libs/fd/pdfg/config/ui.html) 페이지를 엽니다.
 
 1. [ **[!UICONTROL 사용자 계정]** ] 탭에서 로컬 사용자 계정의 자격 증명을 제공하고 [제출]을 **[!UICONTROL 클릭합니다]**. Microsoft Windows에서 메시지가 표시되면 사용자에 대한 액세스를 허용합니다. 성공적으로 추가되면 구성된 사용자가 사용자 계정 **[!UICONTROL 탭의 사용자 계정]** 섹션 아래에 **[!UICONTROL 표시됩니다]** .
 
@@ -454,7 +453,7 @@ PDF Generator 서비스를 실행하려면 로컬 사용자 계정이 필요합�
 
    `jacorb.connection.client.pending_reply_timeout=600000`
 
-1. AEM 작성자 인스턴스에 로그인하고 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 도구]** > **[!UICONTROL 양식]** > **[!UICONTROL PDF Generator]**&#x200B;로 이동합니다. 기본 URL은 http://localhost:4502/libs/fd/pdfg/config/ui.html입니다.
+1. AEM 작성자 인스턴스에 로그인하고 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 도구]** > **[!UICONTROL 양식]** > **[!UICONTROL PDF]**&#x200B;생성기구성을 탐색합니다. 기본 URL은 http://localhost:4502/libs/fd/pdfg/config/ui.html입니다.
 
    일반 구성 **[!UICONTROL 탭을]** 열고 환경에 대해 다음 필드의 값을 수정합니다.
 
@@ -546,8 +545,8 @@ DocAssurance 서비스는 PDF 문서에 사용 권한을 적용할 수 있습니
 
 인증서를 구성하려면 다음 단계를 수행하십시오.
 
-1. AEM 작성자 인스턴스에 관리자로 로그인합니다. 도구 **[!UICONTROL > 보안]** **** > **[!UICONTROL 사용자로]**&#x200B;이동합니다.
-1. 사용자 계정의 **[!UICONTROL 이름]** 필드를 클릭합니다. 사용자 **[!UICONTROL 설정 편집]** 페이지가 열립니다. AEM 작성자 인스턴스에서 인증서는 KeyStore에 상주합니다. 이전에 KeyStore를 만들지 않은 경우 KeyStore **[!UICONTROL 만들기를]** 클릭하고 KeyStore에 대한 새 암호를 설정합니다. 서버에 이미 KeyStore가 있는 경우 이 단계를 건너뜁니다.  Adobe의 Reader Extensions 인증서를 사용하는 경우, Keystore 파일 암호는 항상 개인 키 암호와 동일합니다.
+1. 관리자로 AEM Author 인스턴스에 로그인합니다. 도구 **[!UICONTROL > 보안]** **** > **[!UICONTROL 사용자로]**&#x200B;이동합니다.
+1. 사용자 계정의 **[!UICONTROL 이름]** 필드를 클릭합니다. 사용자 **[!UICONTROL 설정 편집]** 페이지가 열립니다. AEM Author 인스턴스에서 인증서는 KeyStore에 있습니다. 이전에 KeyStore를 만들지 않은 경우 KeyStore **[!UICONTROL 만들기를]** 클릭하고 KeyStore에 대한 새 암호를 설정합니다. 서버에 이미 KeyStore가 있는 경우 이 단계를 건너뜁니다.  Adobe의 Reader Extensions 인증서를 사용하는 경우, Keystore 파일 암호는 항상 개인 키 암호와 동일합니다.
 1. [사용자 **[!UICONTROL 설정]** 편집] 페이지에서 **[!UICONTROL 키 저장소]** 탭을 선택합니다. 키 저장소 파일 **[!UICONTROL 에서 개인 키 추가]** 옵션을 확장하고 별칭을 제공합니다. 별칭은 Reader 확장 작업을 수행하는 데 사용됩니다.
 1. 인증서 파일을 업로드하려면 **[!UICONTROL 키 저장소 파일]** 선택을 클릭하고 &lt;filename>.pfx 파일을 업로드합니다.
 
@@ -614,7 +613,7 @@ PDF 파일에 대해 AES 256 암호화를 사용하려면 JCE(Java Cryptography 
 
 ## 다음 단계 {#next-steps}
 
-AEM Forms 문서 서비스 환경이 작동 중입니다. 다음 방법을 통해 문서 서비스를 사용할 수 있습니다.
+작업 중인 AEM Forms 문서 서비스 환경이 있습니다. 다음 방법을 통해 문서 서비스를 사용할 수 있습니다.
 
 * [OSGi 기반의 양식 중심 워크플로우](/help/forms/using/aem-forms-workflow.md)
 * [감시 폴더](/help/forms/using/watched-folder-in-aem-forms.md)
