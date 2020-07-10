@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: fb4e6aef84d733c578e0f2ee7407016715e77cf5
 workflow-type: tm+mt
 source-wordcount: '4247'
 ht-degree: 2%
@@ -102,7 +102,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
 
 다음 표에서는 Dynamic Media과 함께 제공되는 미리 정의된 즉시 사용 가능한 모든 뷰어 사전 설정을 식별합니다.
 
-참고 항목 <!-- [SAVE THIS REFERENCE Viewers Reference Library Examples](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html) and --> [라이브 데모](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
+라이브 [데모도 참조하십시오](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
 
 뷰어용 지원되는 웹 브라우저 및 운영 체제 버전에 대한 자세한 내용은 뷰어 릴리스 정보를 검토할 수 있습니다.
 
@@ -179,7 +179,7 @@ AEM은 [세부 사항 보기] > [뷰어]에서 자산을 볼 때 **[!UICONTROL �
 
 ## 새 Dynamic Media 뷰어 사전 설정 만들기 {#creating-a-new-viewer-preset}
 
-뷰어 사전 설정을 만들면 다양한 설정을 적용하여 자산을 보고 상호 작용할 수 있습니다. 그러나 새 뷰어 사전 설정을 만들 필요는 없습니다. 원하는 경우 이미 AEM Assets과 함께 제공되는 기본 기본 기본 기본 기본 기본 뷰어 사전 설정을 사용할 수 있습니다.
+뷰어 사전 설정을 만들면 다양한 설정을 적용하여 자산을 보고 상호 작용할 수 있습니다. 그러나 새 뷰어 사전 설정을 만들 필요는 없습니다. 원하는 경우 AEM Assets과 함께 제공되는 기본 기본 기본 기본 기본 기본 기본 뷰어 사전 설정을 사용할 수 있습니다.
 
 새 뷰어 사전 설정을 만들기로 선택한 경우, 저장한 후 **뷰어 사전 설정**&#x200B;페이지에서 뷰어 상태가 자동으로 활성화(설정)됩니다 **** . 이 상태는 **[!UICONTROL Dynamic Media]** 구성 요소 및 **[!UICONTROL 대화형 미디어]** 구성 요소에서 그리고 이미지나 비디오를 미리 볼 때마다 표시되도록 합니다.
 
