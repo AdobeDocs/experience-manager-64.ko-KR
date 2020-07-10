@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 88dbfd34-1f8d-47a2-893d-20faf1a80f95
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: fb4e6aef84d733c578e0f2ee7407016715e77cf5
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1556'
 ht-degree: 7%
 
 ---
@@ -44,11 +44,11 @@ Adobe Analytics 계정은 다음 작업을 수행해야 합니다.
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 
-계속하기 전에 자격 증명을 통해 Adobe Analytics에 로그인할 수 있는지 확인하십시오. 다음 중 하나를 통해:
+계속하기 전에 다음 방법 중 하나를 사용하여 자격 증명을 통해 Adobe Analytics에 로그인할 수 있도록 하십시오.
 
-* [https://marketing.adobe.com](https://marketing.adobe.com)
+* [Adobe Experience Cloud 로그인](https://login.experiencecloud.adobe.com/exc-content/login.html)
 
-* [https://sc.omniture.com/login/](https://sc.omniture.com/login/)
+* [Adobe Analytics 로그인](https://sc.omniture.com/login/)
 
 ### Adobe Analytics 데이터 센터를 사용하도록 AEM 구성 {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
@@ -120,6 +120,7 @@ AEM에서는 기본적으로 산호세(https://api.omniture.com/admin/1.4/rest/)
    * 제목을 **지정합니다**.
    * 원할 경우, 저장소에 프레임워크 세부 **정보를 저장하는 노드에**&#x200B;대해 이름을 지정할 수 있습니다.
    * Adobe **Analytics 프레임워크 선택**
+
    만들기를 **클릭합니다**.
 
    편집을 위해 프레임워크가 열립니다.
