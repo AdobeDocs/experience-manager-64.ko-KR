@@ -1,17 +1,17 @@
 ---
 title: AEM Forms 참조 사이트 설정 및 구성
 seo-title: AEM Forms 참조 사이트 설정 및 구성
-description: AEM Forms 참조 사이트는 조직에서 AEM Forms를 사용하여 엔드 투 엔드 워크플로우를 구현하는 방법을 보여줍니다.
-seo-description: AEM Forms 참조 사이트는 조직에서 AEM Forms를 사용하여 엔드 투 엔드 워크플로우를 구현하는 방법을 보여줍니다.
+description: AEM Forms 참조 사이트는 AEM Forms을 사용하여 조직에서 엔드 투 엔드 워크플로우를 구현하는 방법을 보여줍니다.
+seo-description: AEM Forms 참조 사이트는 AEM Forms을 사용하여 조직에서 엔드 투 엔드 워크플로우를 구현하는 방법을 보여줍니다.
 uuid: 087d58a1-d84e-49ac-a82d-4e7fc708f00f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 2feb4a9c-57ad-4c6b-a572-0047bc409bbb
 translation-type: tm+mt
-source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
 workflow-type: tm+mt
-source-wordcount: '2925'
+source-wordcount: '2922'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # AEM Forms 참조 사이트 설정 및 구성 {#set-up-and-configure-aem-forms-reference-sites}
 
-AEM Forms는 AEM Forms가 금융 서비스 업계 및 공공 기관에서 복잡한 거래를 언제 어디에서나 매력적인 디지털 경험으로 간단하게 변경하는 데 어떻게 AEM Forms를 지원하는지 보여주는 참조 사이트 구현을 제공합니다.
+AEM Forms은 AEM Forms이 금융 서비스 산업 및 공공 기관에서 언제 어디에서나 모든 디바이스에서 복잡한 거래를 간단하고 매력적인 디지털 경험으로 전환하는 데 어떻게 도움이 되는지 보여주는 참조 사이트 구현을 제공합니다.
 
 Adobe.Finance 및 We.Gov 참조 사이트는 실시간 활용 사례를 활용하여 기존 고객과 잠재 고객의 참여를 유도하고, 첫 번째 접점에서부터 개인화되고 비용 효과적인 방식으로 고객의 상거래까지 관리합니다.
 
-참조 사이트를 통해 AEM Forms의 다음 주요 기능을 살펴보고 표시할 수 있습니다.
+참조 사이트를 통해 다음과 같은 AEM Forms의 주요 기능을 살펴보고 선보일 수 있습니다.
 
 * 매력적이고 응답성이 높은 적응형 양식 및 인터랙티브한 커뮤니케이션의 저작 경험을 간소화할 수 있습니다.
 * 인터랙티브한 커뮤니케이션을 통해 디바이스 설정 및 레이아웃에 맞는 인터랙티브하고 개인화된 반응형 고객 커뮤니케이션을 제작할 수 있습니다.
@@ -32,7 +32,7 @@ Adobe.Finance 및 We.Gov 참조 사이트는 실시간 활용 사례를 활용�
 * 고급 사용자 데이터 관리 및 처리 기능
 * Adobe Sign과 통합하여 적응형 양식에 안전하게 서명하고 제출할 수 있습니다.
 * Adobe Target과 통합하여 타깃팅된 추천을 제공하고 A/B 테스트를 실시하여 양식에서 ROI를 극대화할 수 있습니다.
-* Adobe Analytics와 통합하여 양식 또는 캠페인의 성과를 측정하고 현명한 의사 결정을 내릴 수 있습니다.
+* Adobe Analytics과 통합하여 양식과 캠페인의 성과를 측정하고 현명한 의사 결정을 내릴 수 있습니다.
 * 향상된 양식 채우기 경험
 
 참조 사이트에서는 재사용 가능한 자산을 제공하여 사용자 고유의 자산을 만드는 템플릿으로 사용할 수 있습니다.
@@ -47,7 +47,7 @@ Adobe.Finance 및 We.Gov 참조 사이트는 실시간 활용 사례를 활용�
 
 * **AEM Essentials**
 
-   AEM QuickStart, AEM Forms Add-on 패키지 및 참조 사이트 패키지. Add- [on 및 참조 사이트 패키지 세부 사항은](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) AEM Forms 릴리스를 참조하십시오.
+   AEM QuickStart, AEM Forms 추가 기능 패키지 및 참조 사이트 패키지. Add-on 및 참조 사이트 패키지 세부 정보는 [AEM Forms 릴리스를](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 참조하십시오.
 
 * **SMTP 서비스** SMTP 서비스를 사용할 수 있습니다.
 
@@ -55,7 +55,7 @@ Adobe.Finance 및 We.Gov 참조 사이트는 실시간 활용 사례를 활용�
 
    디지털 서명 기능을 사용하려면 Adobe Sign 개발자 계정이 필요합니다. Adobe [Sign을 참조하십시오](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html).
 
-* AEM Forms와 통합되는 Microsoft Dynamics 365의 실행 인스턴스입니다. 참조 사이트를 실행하려면 샘플 데이터를 Microsoft Dynamics 인스턴스로 가져와서 참조 사이트에 사용되는 대화형 통신을 미리 채웁니다.
+* AEM Forms과 통합되는 Microsoft Dynamics 365의 실행 인스턴스입니다. 참조 사이트를 실행하려면 샘플 데이터를 Microsoft Dynamics 인스턴스로 가져와서 참조 사이트에 사용되는 대화형 통신을 미리 채웁니다.
 * Forms Add-on 패키지가 있는 AEM 6.4 실행 인스턴스. 자세한 내용은 AEM Forms [설치 및 구성을 참조하십시오](installing-configuring-aem-forms-osgi.md).
 
 권장 시퀀스에서 다음 단계를 수행하여 참조 사이트를 설정하고 구성합니다.
@@ -74,12 +74,12 @@ Adobe.Finance 및 We.Gov 참조 사이트는 실시간 활용 사례를 활용�
   </tr> 
   <tr> 
    <td><a href="#ssl">SSL 구성</a></td> 
-   <td>작성 및 게시<br /> </td> 
+   <td>Author and Publish<br /> </td> 
    <td>Adobe Sign을 사용하여 안전한 커뮤니케이션을 위해 SSL을 통해 HTTP를 활성화합니다.</td> 
   </tr> 
   <tr> 
    <td><p><a href="#externalizer">일 CQ 링크 외부라이저 구성 구성</a></p> </td> 
-   <td>작성 및 게시<br /> </td> 
+   <td>Author and Publish<br /> </td> 
    <td><p>참조 사이트 사용 사례에서는 다른 거래에 대한 이메일을 전달합니다. 이 설정은 이메일을 통한 뉴스레터 전달에 필요합니다. URL과 이미지가 게시 인스턴스를 가리키는지 확인합니다. </p> </td> 
   </tr> 
   <tr> 
@@ -110,16 +110,16 @@ Adobe.Finance 및 We.Gov 참조 사이트는 실시간 활용 사례를 활용�
   <tr> 
    <td><a href="/help/forms/using/setup-reference-sites.md#configure-oauth-cloud-service-for-microsoft-dynamics">Microsoft Dynamics용 OAuth 클라우드 서비스 구성</a></td> 
    <td>작성 및 게시</td> 
-   <td>AEM Forms와 Microsoft Dynamics 간의 통신을 활성화하도록 AEM Forms에서 OAuth 클라우드 서비스를 구성합니다. </td> 
+   <td>AEM Forms과 Microsoft Dynamics 간의 통신을 사용하도록 AEM Forms에서 OAuth 클라우드 서비스를 구성합니다. </td> 
   </tr> 
   <tr> 
    <td><a href="#scheduler">Adobe Sign 스케줄러 구성</a></td> 
-   <td>작성 및 게시<br /> </td> 
+   <td>Author and Publish<br /> </td> 
    <td>2분마다 상태를 확인하도록 스케줄러의 구성을 변경합니다.</td> 
   </tr> 
   <tr> 
-   <td><a href="#sign-service">참조 사이트 구성 Adobe Sign 클라우드 서비스</a></td> 
-   <td>작성 및 게시<br /> </td> 
+   <td><a href="#sign-service">참조 사이트 구성 Adobe Sign Cloud Service</a></td> 
+   <td>Author and Publish<br /> </td> 
    <td>참조 사이트 패키지와 함께 제공되는 구성이며 유효한 자격 증명으로 재구성해야 합니다.</td> 
   </tr> 
   <tr> 
@@ -129,7 +129,7 @@ Adobe.Finance 및 We.Gov 참조 사이트는 실시간 활용 사례를 활용�
   </tr> 
   <tr> 
    <td><a href="#fdm">양식 데이터 모델에 대한 Rest 서비스 Swagger 파일 수정</a></td> 
-   <td>작성 및 게시<br /> </td> 
+   <td>Author and Publish<br /> </td> 
    <td>환경에 맞는 서비스를 수정합니다.</td> 
   </tr> 
  </tbody> 
@@ -137,7 +137,7 @@ Adobe.Finance 및 We.Gov 참조 사이트는 실시간 활용 사례를 활용�
 
 ## AEM Forms 설치 및 구성 {#install-and-configure-aem-forms}
 
-OSGi에서 AEM Forms [설치 및 구성에 설명된 대로 AEM Forms를 설치하고 배포합니다](/help/forms/using/installing-configuring-aem-forms-osgi.md).
+OSGi에 AEM Forms 설치 및 구성에 설명된 [대로 AEM Forms을 설치하고 배포합니다](/help/forms/using/installing-configuring-aem-forms-osgi.md).
 
 >[!NOTE]
 >
@@ -215,16 +215,16 @@ AEM Forms 참조 사이트의 경우 AEM DS 설정 서비스에서 처리 서버
 
 >[!CAUTION]
 >
->AEM Forms OSGi `/lc` 에 대해 구성하는 경우 처리 서버 URL에 넣지 마십시오.
+>AEM Forms OSGi `/lc` 에 대해 처리 서버 URL을 구성하는 경우에는 처리 서버 URL에 넣지 마십시오.
 
 ## 참조 사이트 패키지 배포 {#refsite}
 
-패키지 공유를 사용하여 다음 참조 사이트 패키지를 설치합니다.
+소프트웨어 배포를 사용하여 다음 참조 사이트 패키지를 설치합니다.
 
 * [AEM-FORMS-6.4-FSI-REF-SITE](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-FSI-REF-SITE)
 * [AEM-FORMS-6.4-GOV-REF-SITE](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-GOV-REF-SITE)
 
-패키지 및 패키지 공유 사용 방법에 대한 자세한 내용은 패키지 [를 사용한 작업 방법을 참조하십시오](/help/sites-administering/package-manager.md).
+패키지 사용 방법에 대한 자세한 내용은 패키지 [를 사용한 작업 방법을 참조하십시오](/help/sites-administering/package-manager.md).
 
 패키지를 설치하고 작성자 및 게시 인스턴스를 시작한 후 브라우저에서 다음 URL을 참조하십시오.
 
@@ -240,13 +240,13 @@ Microsoft Dynamics의 레코드를 사용하도록 가정용 대출 응용 프�
 자동 보험 적용을 위한 사용자 지정 엔티티를 가져오려면 다음을 수행하십시오.
 
 1. AEM 작성자 **인스턴스의 WeFinanceAutoInsurance_1_0.zip** 솔루션 패키지 `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip` 를 다운로드합니다.
-1. Microsoft Dynamics 인스턴스의 [ **[!UICONTROL 설정]** ] 메뉴에서 **[!UICONTROL 솔루션]** 으로 이동하고 [가져오기]를 **[!UICONTROL 클릭합니다]**. 패키지를 선택하고 가져옵니다.
+1. Microsoft Dynamics 인스턴스의 [ **[!UICONTROL 설정]** ] 메뉴에서 **[!UICONTROL 솔루션]** 으로 이동하여 가져오기를 **[!UICONTROL 클릭합니다]**. 패키지를 선택하고 가져옵니다.
 
 자동 보험 적용을 위한 사용자 지정 엔티티를 가져오려면 다음을 수행하십시오.
 
 1. https:// **author** :[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip에서 AEMFormsFSIResite_1_0.zip[패키지를]다운로드합니다. 패키지를 선택하고 가져옵니다.
 
-1. Microsoft Dynamics 인스턴스의 [ **[!UICONTROL 설정]** ] 메뉴에서 **[!UICONTROL 솔루션]** 으로 이동하고 [가져오기]를 **[!UICONTROL 클릭합니다]**. 패키지를 선택하고 가져옵니다.
+1. Microsoft Dynamics 인스턴스의 [ **[!UICONTROL 설정]** ] 메뉴에서 **[!UICONTROL 솔루션]** 으로 이동하여 가져오기를 **[!UICONTROL 클릭합니다]**. 패키지를 선택하고 가져옵니다.
 
 고객 및 보험 정책 레코드를 가져오려면
 
@@ -264,9 +264,9 @@ Microsoft Dynamics의 레코드를 사용하도록 가정용 대출 응용 프�
 
 ## Microsoft Dynamics용 OAuth 클라우드 서비스 구성 {#configure-oauth-cloud-service-for-microsoft-dynamics}
 
-AEM Forms와 Microsoft Dynamics 간의 통신을 활성화하도록 AEM Forms에서 OAuth 클라우드 서비스를 구성합니다. AEM 작성자 및 게시 인스턴스에 대해 OAuth 클라우드 서비스를 구성하려면 다음 단계를 수행하십시오.
+AEM Forms과 Microsoft Dynamics 간의 통신을 사용하도록 AEM Forms에서 OAuth 클라우드 서비스를 구성합니다. AEM 작성자 및 게시 인스턴스에 대해 OAuth Cloud Service을 구성하려면 다음 단계를 수행하십시오.
 
-1. AEM 작성 인스턴스에서 **[!UICONTROL 도구 > 클라우드 서비스 > 데이터 소스 > 글로벌]**&#x200B;사이트로 이동합니다. Refsite **[!UICONTROL Dynamics 통합]** 아이콘을 누르고 속성을 **[!UICONTROL 누릅니다]**.
+1. AEM 작성자 인스턴스의 경우 **[!UICONTROL 도구 > Cloud Service > 데이터 소스 > 글로벌]**&#x200B;으로 이동합니다. Refsite **[!UICONTROL Dynamics 통합]** 아이콘을 누르고 속성을 **[!UICONTROL 누릅니다]**.
 1. Microsoft Azure Active Directory 계정으로 이동합니다. 등록된 응용 프로그램에 대한 회신 URL **[!UICONTROL 설정에]** 복사된 클라우드 서비스 구성 URL을 추가합니다. 구성을 저장합니다.
 1. [인증 설정] 탭에서 **[!UICONTROL 서비스 루트]**, **[!UICONTROL 클라이언트 ID]**, **[!UICONTROL 클라이언트 암호]**&#x200B;및 **[!UICONTROL Microsoft Dynamics 인스턴스의 리소스 URL을 지정합니다]** . Microsoft Dynamics **[!UICONTROL 로그인]** 페이지로 리디렉션하는 OAuth에 연결을 클릭합니다.
 1. 로그인 자격 증명을 제공합니다. 로그인하면 AEM Forms 클라우드 서비스 구성 페이지로 리디렉션됩니다. Click **[!UICONTROL Save &amp; Close]**. 클라우드 서비스 구성이 저장됩니다.
@@ -293,7 +293,7 @@ AEM Forms와 Microsoft Dynamics 간의 통신을 활성화하도록 AEM Forms에
 
 작성자 및 게시 인스턴스 모두에서 다음을 수행합니다.
 
-1. 도구 > **[!UICONTROL 클라우드 서비스 > Adobe Sign > 글로벌]**&#x200B;웹 사이트로 이동합니다. AEM **[!UICONTROL Forms 참조 사이트 서명을]** 선택하고 속성을 **[!UICONTROL 탭합니다]**.
+1. 도구 > **[!UICONTROL Cloud Service > Adobe Sign > 글로벌로 이동합니다]**. [ **[!UICONTROL AEM Forms 참조 사이트 서명]** ]을 선택하고 **[!UICONTROL 속성을 누릅니다]**.
 
    >[!CAUTION]
    >
@@ -320,41 +320,41 @@ AEM Forms와 Microsoft Dynamics 간의 통신을 활성화하도록 AEM Forms에
 1. /conf/global/settings/cloudconfigs/fdm/roi-rest/jcr:content/swaggerFile **으로 이동하여** Swagger 파일을 엽니다.
 1. 환경에 따라 호스트 및 포트 설정을 업데이트합니다.
 1. 설정을 저장합니다.
-1. (**작성자 인스턴스만**&#x200B;해당 **** ) 도구 **[!UICONTROL >]** 클라우드 서비스 **[!UICONTROL > 데이터 소스]** >전역 ****&#x200B;으로 이동합니다. roi-rest **[!UICONTROL 를]** 선택하고 **[!UICONTROL 속성을 누릅니다]**. [ **[!UICONTROL 인증 설정]** ]을 누르고 **[!UICONTROL 인증 유형]** 을 **[!UICONTROL 기본 인증으로 설정합니다]**. 서비스 `admin`에 `admin`액세스하려면 /를 사용자 이름/암호로 지정합니다. 저장 **[!UICONTROL 및 닫기를 누릅니다]**.
+1. (**작성자 인스턴스만**&#x200B;해당 **[!UICONTROL ) 도구]** > **[!UICONTROL Cloud Service]****[!UICONTROL > 데이터 소스]** >전역 ****&#x200B;으로 이동합니다. roi-rest **[!UICONTROL 를]** 선택하고 **[!UICONTROL 속성을 누릅니다]**. [ **[!UICONTROL 인증 설정]** ]을 누르고 **[!UICONTROL 인증 유형]** 을 **[!UICONTROL 기본 인증으로 설정합니다]**. 서비스 `admin`에 `admin`액세스하려면 /를 사용자 이름/암호로 지정합니다. 저장 **[!UICONTROL 및 닫기를 누릅니다]**.
 
 ## Marketing Cloud와 통합 {#integrate-with-marketing-cloud}
 
-AEM Forms를 Adobe Analytics 및 Adobe Target과 통합할 수 있습니다. Adobe Analytics를 사용하면 보고서를 생성하고 적응형 양식의 성능을 분석할 수 있지만 Adobe Target을 사용하면 개인화된 경험을 전달하고 적응형 양식에 대한 A/B 테스트를 수행할 수 있습니다.
+AEM Forms을 Adobe Analytics 및 Adobe Target과 통합할 수 있습니다. Adobe Analytics을 사용하면 보고서를 생성하고 적응형 양식의 성능을 분석할 수 있지만 Adobe Target을 사용하면 개인화된 경험을 전달하고 적응형 양식에 대한 A/B 테스트를 수행할 수 있습니다.
 
-AEM Forms에서 Adobe Analytics 및 Adobe Target을 구성하려면 다음을 수행하십시오.
+AEM Forms에서 Adobe Analytics 및 Adobe Target을 구성하려면 다음을 수행합니다.
 
 ### Adobe Analytics 구성 {#configure-adobe-analytics}
 
-AEM Forms와 Adobe Analytics를 통합하여 고객이 양식이나 문서를 어떻게 이용하고 있는지 모니터링하고 분석할 수 있습니다. 문제 영역을 식별하고 수정하고 전환율을 높이는 데 도움이 됩니다.
+Adobe Analytics과 AEM Forms의 통합을 통해 고객이 양식이나 문서를 어떻게 이용하고 있는지 모니터링하고 분석할 수 있습니다. 문제 영역을 식별하고 수정하고 전환율을 높이는 데 도움이 됩니다.
 
 참조 사이트에서 이 기능을 경험하려면 분석 및 보고서 구성에 설명된 대로 Analytics 계정 [을 구성하십시오](/help/forms/using/configure-analytics-forms-documents.md).
 
 보고서를 생성하기 위해 시드 데이터는 참조 사이트와 번들로 제공됩니다. 시드 데이터를 사용하기 전에 다음을 수행합니다.
 
-1. AEM Cloud 서비스에서 We.Finance 및 We.Gov 분석 구성을 사용할 수 있는지 확인합니다. 다음 방법 중 하나를 사용하여 클라우드 서비스를 찾을 수 있습니다.
+1. AEM cloud services에서 We.Finance 및 We.Gov 분석 구성을 사용할 수 있는지 확인합니다. 다음 방법 중 하나를 사용하여 클라우드 서비스를 찾을 수 있습니다.
 
-   * Tools> **[!UICONTROL Cloud Services>기존 클라우드 서비스로]** 이동하거나 https://&lt;host>:&lt;port>/libs/cq/core/content/tools/cloudservices.html으로 이동합니다.
-   * 클라우드 **[!UICONTROL 서비스]** 페이지의 **[!UICONTROL Adobe Analytics]** 섹션에서 를 `Show Configurations`클릭합니다. 사용 가능한 We.Finance 및 We.Gov 구성이 표시됩니다. 구성을 열려면 을 클릭합니다. 구성 페이지에서 편집을 **[!UICONTROL 클릭합니다]**. 유효한 회사, 사용자 이름, 공유 암호(암호) 및 데이터 센터를 입력하고 **[!UICONTROL Connect를 클릭하여 Analytics를 클릭합니다]**. 연결 성공 대화 상자가 표시되면 구성 대화 상자에서 **[!UICONTROL 확인]** 을 클릭합니다. 분석 및 보고서 구성에 설명된 대로 Analytics 구성 아래에 [프레임워크를 구성합니다](/help/forms/using/configure-analytics-forms-documents.md).
+   * 도구> **[!UICONTROL Cloud Service>레거시 Cloud Service]** 로 이동하거나 https://&lt;host>:&lt;port>/libs/cq/core/content/tools/cloudservices.html으로 이동합니다.
+   * Cloud Service **[!UICONTROL 페이지의]** Adobe Analytics **[!UICONTROL 섹션에서 를]** 클릭합니다 `Show Configurations`. 사용 가능한 We.Finance 및 We.Gov 구성이 표시됩니다. 구성을 열려면 을 클릭합니다. 구성 페이지에서 편집을 **[!UICONTROL 클릭합니다]**. 유효한 회사, 사용자 이름, 공유 암호(암호) 및 데이터 센터를 입력하고 Analytics에 **[!UICONTROL 연결을 클릭합니다]**. 연결 성공 대화 상자가 표시되면 구성 대화 상자에서 **[!UICONTROL 확인]** 을 클릭합니다. Analytics 및 보고서 구성에 설명된 대로 Analytics 구성 [아래에 프레임워크를 구성합니다](/help/forms/using/configure-analytics-forms-documents.md).
 
 1. https://&lt;*host*>:&lt;*port*>/system/console/configMgr로 이동하여 다음을 수행합니다.
 
-   * 웹 **[!UICONTROL 콘솔 구성]** 페이지에서 AEM Forms **[!UICONTROL 분석 구성을 찾아 클릭합니다]**.
-   * AEM Forms **[!UICONTROL Analytics 구성 대화 상자의 SiteCatalyst Framework]** 필드에서 we-finance(we-finance) 또는 we-gov(we-gov)를 선택합니다.
+   * [ **[!UICONTROL 웹 콘솔 구성]** ] 페이지에서 **[!UICONTROL AEM Forms Analytics 구성을 찾아 클릭합니다]**.
+   * AEM Forms Analytics 구성 대화 상자의 **[!UICONTROL SiteCatalyst 프레임워크]** 필드에서 we-finance(we-finance) 또는 we-gov(we-gov)를 선택합니다.
    * 저장을 **[!UICONTROL 클릭하고]** 페이지를 새로 고칩니다.
 
 1. https://&lt;host>:&lt;port>/aem/forms에서 양식 관리자로 이동하고 다음을 수행합니다.
 
    * We.Finance 또는 We.Gov 폴더를 열고 보고서를 볼 양식을 선택합니다.
-   * 작업 도구 모음에서 분석 활성화를 클릭합니다. 양식에 대한 분석을 활성화한 후 분석 보고서를 클릭합니다. 빈 보고서가 생성될 수 있습니다. 빈 보고서가 생성된 후 데모를 위해 분석 보고서를 생성하려면 참조 사이트 패키지와 함께 제공된 시드 데이터를 제공해야 합니다.
+   * 작업 도구 모음에서 Analytics 활성화를 클릭합니다. 양식에 대한 분석을 활성화한 후 Analytics 보고서를 클릭합니다. 빈 보고서가 생성될 수 있습니다. 빈 보고서가 생성된 후 데모를 위해 분석 보고서를 생성하려면 참조 사이트 패키지와 함께 제공된 시드 데이터를 제공해야 합니다.
 
    참조 사이트에서는 신용 카드, 집 대출 및 자녀 지원 사례에 대한 시드 데이터를 사용하여 분석 보고를 제공합니다. 시드 데이터의 구성에 대해서는 [We.Finance 참조 사이트 연습](/help/forms/using/finance-reference-site-walkthrough.md) 및 [We.Gov 참조 사이트 연습을 참조하십시오](/help/forms/using/gov-reference-site-walkthrough.md).
 
-### 타겟 구성 {#configure-target}
+### Target 구성 {#configure-target}
 
 참조 사이트에서는 적응형 문서에 타깃팅되고 개인화된 컨텐츠를 포함할 수 있는 Adobe Target과 AEM Forms의 통합을 보여줍니다. 적응형 양식에 대한 A/B 테스트를 만들 수도 있습니다.
 
@@ -368,16 +368,16 @@ AEM Forms와 Adobe Analytics를 통합하여 고객이 양식이나 문서를 �
 
 1. https://&lt;*hostname*>:&lt;*port*>/libs/cq/core/content/tools/cloudservices.html에 액세스합니다.
 
-1. Adobe **[!UICONTROL Target]** 섹션에서 구성 **[!UICONTROL 표시를 클릭합니다]**. 사용 가능한 We.Finance Target 구성을 볼 수 있습니다. 구성을 열려면 을 클릭합니다. 구성 페이지에서 편집을 **[!UICONTROL 클릭합니다]**. 구성에 **[!UICONTROL 대한 구성 요소]** 편집 대화 상자가 열립니다.
+1. Adobe Target **** 섹션에서 구성 **[!UICONTROL 표시를 클릭합니다]**. 사용 가능한 We.Finance Target 구성을 볼 수 있습니다. 구성을 열려면 을 클릭합니다. 구성 페이지에서 편집을 **[!UICONTROL 클릭합니다]**. 구성에 **[!UICONTROL 대한 구성 요소]** 편집 대화 상자가 열립니다.
 
 1. Target 계정과 관련된 클라이언트 코드, 이메일 및 암호를 지정합니다. API 유형을 REST로 **[!UICONTROL 선택합니다]**.
-1. Click **[!UICONTROL Connect to Adobe target]**. Target 계정이 성공적으로 구성되면 **[!UICONTROL 확인을 클릭합니다]**. 패키지된 구성에 Target Framework가 있음을 확인할 수 있습니다.
+1. Click **[!UICONTROL Connect to Adobe target]**. Target 계정이 성공적으로 구성되면 **[!UICONTROL 확인을 클릭합니다]**. 패키지된 구성에 Target 프레임워크이 있음을 확인할 수 있습니다.
 
 1. https://&lt;*hostname*>:&lt;*port*>/system/console/configMgr로 이동합니다.
 
-1. AEM **[!UICONTROL Forms 타겟 구성을 클릭합니다]**.
-1. Target 프레임워크를 선택합니다.
-1. [ **[!UICONTROL 대상 URL]** ] 필드에서 AEM Forms에 대한 URL을 지정합니다. 예: https://&lt;*hostname*>:&lt;*port*>.
+1. AEM Forms Target **[!UICONTROL 구성을 클릭합니다]**.
+1. Target 프레임워크을 선택합니다.
+1. Target **[!UICONTROL URL]** 필드에서 AEM Forms에 대한 URL을 지정합니다. 예: https://&lt;*hostname*>:&lt;*port*>
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
