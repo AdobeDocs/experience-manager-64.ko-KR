@@ -10,9 +10,9 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 translation-type: tm+mt
-source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
 workflow-type: tm+mt
-source-wordcount: '2746'
+source-wordcount: '2745'
 ht-degree: 29%
 
 ---
@@ -226,7 +226,7 @@ AEM 6.3 릴리스 이후 향상된 기능에는 백그라운드에서 계층 폴
 
 **메타데이터**
 
-다양한 향상된 기능에는 [계단식 메타데이터와 같은 많은 자산과 고급 메타데이터 구문에 대한 메타데이터를 동시에 가져오고 내보내는 기능이 포함되어 있습니다](/help/assets/cascading-metadata.md).
+다양한 향상된 기능에는 많은 양의 자산과 [계단식 메타데이터와 같은 고급 메타데이터 구문에 대한 메타데이터를 동시에 가져오고 내보내는 기능이 포함되어 있습니다](/help/assets/cascading-metadata.md).
 
 **보고서**
 
@@ -290,7 +290,7 @@ AEM Forms [릴리스 정보](forms.md) 페이지에 대한 자세한 내용 Also
 
 Livefyre를 AEM 6.4 인스턴스와 통합할 수 있습니다. AEM과 Livefyre를 통합하는 방법에 대한 정보는 다음과 같습니다.
 
-* [Livefyre 통합](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)
+* [Livefyre 통합](https://helpx.adobe.com/kr/experience-manager/6-4/sites/administering/using/livefyre.html)
 
 ### 고객 중심 개발 활용 {#leverage-customer-focused-development}
 
