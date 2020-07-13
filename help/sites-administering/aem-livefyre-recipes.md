@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fdea5ede-d44f-463e-af8a-111ee7469ede
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
 workflow-type: tm+mt
-source-wordcount: '1573'
-ht-degree: 0%
+source-wordcount: '1559'
+ht-degree: 2%
 
 ---
 
@@ -30,9 +30,9 @@ AEM Livefyre 패키지는 기본적으로 구현되는 반면, 기존 통합은 
 
 ### AEM 통합 {#aem-integration}
 
-Livefyre Adobe Experience Manager 패키지는 AEM 6.1, 6.2SP1, 6.3, , 6.4 및 6.4 SP1에서 사용할 수 있습니다. AEM 5.x 및 6.0은 지원되지 않습니다. 자세한 내용은 Livefyre와 [통합을 참조하십시오](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html).
+Livefyre Adobe Experience Manager 패키지는 AEM 6.1, 6.2SP1, 6.3, , 6.4 및 6.4 SP1에서 사용할 수 있습니다. AEM 5.x 및 6.0은 지원되지 않습니다. 자세한 내용은 Livefyre와 [통합을 참조하십시오](https://helpx.adobe.com/kr/experience-manager/6-4/sites/administering/using/livefyre.html).
 
-지원되는 Livefyre 앱을 확인하려면 Livefyre 앱용 [AEM Support Matrix를 참조하십시오](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps).
+지원되는 Livefyre 앱을 확인하려면 Livefyre 앱용 [AEM Support Matrix를 참조하십시오](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps).
 
 ### 일반 구현(사용자 지정된 AEM 구성 요소의 경우) {#traditional-implementation-for-customized-aem-components}
 
@@ -65,7 +65,7 @@ UGC용 UI를 작성할 때 [Twitter](https://developer.twitter.com/en/developer-
 
 인증이 필요한 미디어 벽 통합은 다음을 참조하십시오.
 
-* [AEM Identity Management에 대한 단일 사인온](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) 통합 사용자 정의
+* [AEM Identity Management에 대한 단일 사인온](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) 통합 사용자 정의
 * [타사 인증 플랫폼을 위한 ID 통합](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html)
 
 ### 사용 사례 개요 {#use-case-overview}
@@ -74,9 +74,9 @@ AEM 고객인 경우 특별 Livefyre AEM 구성 요소를 사용하여 UGC를 �
 
 구현 단계:
 
-1. [시작하기](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html)
-1. [Livefyre를 사용하도록 AEM 구성](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html)
-1. [AEM Media Wall 구성 요소를 페이지에 드래그하여 놓기](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMSites)
+1. [시작하기](https://helpx.adobe.com/kr/experience-manager/6-3/sites/administering/using/livefyre.html)
+1. [Livefyre를 사용하도록 AEM 구성](https://helpx.adobe.com/kr/experience-manager/6-3/sites/administering/using/livefyre.html)
+1. [AEM Media Wall 구성 요소를 페이지에 드래그하여 놓기](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMSites)
 1. [스트림 구성 및 규칙을 추가하여 UGC를 조정하고 Media Wall 구성 요소에 표시](https://docs.adobe.com/content/help/en/livefyre/using/streams/c-streams.html)
 
 스트리밍 UGC에 대한 교육 비디오를 보려면 Adobe Experience Manager Livefyre에서 [자동 콘텐츠 스트림 만들기 및 소셜 콘텐츠 검색을 참조하십시오](https://helpx.adobe.com/experience-manager/tutorials.html).
@@ -97,7 +97,7 @@ AEM 고객인 경우 특별 Livefyre AEM 구성 요소를 사용하여 UGC를 �
 
 ### AEM 통합 {#aem-integration-1}
 
-Livefyre Adobe Experience Manager 패키지는 AEM 6.1, 6.2SP1, 6.3, , 6.4 및 6.4 SP1에서 사용할 수 있습니다. AEM 5.x 및 6.0은 지원되지 않습니다. 자세한 내용은 Livefyre와 [통합을 참조하십시오](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html).
+Livefyre Adobe Experience Manager 패키지는 AEM 6.1, 6.2SP1, 6.3, , 6.4 및 6.4 SP1에서 사용할 수 있습니다. AEM 5.x 및 6.0은 지원되지 않습니다. 자세한 내용은 Livefyre와 [통합을 참조하십시오](https://helpx.adobe.com/kr/experience-manager/6-4/sites/administering/using/livefyre.html).
 
 ### 일반 구현(사용자 지정된 AEM 구성 요소의 경우) {#traditional-implementation-for-customized-aem-components-1}
 
@@ -129,7 +129,7 @@ SDK를 사용한 고급 사용자 정의에 대해서는 [StreamHub SDK를 참�
 
 ### 댓글 앱 인증 통합 {#comments-app-authentication-integration}
 
-* [AEM Identity Management에 대한 단일 사인온](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) 통합 사용자 정의
+* [AEM Identity Management에 대한 단일 사인온](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) 통합 사용자 정의
 * [타사 인증 플랫폼을 위한 ID 통합](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html)
 
 ### 고객 사례 {#customer-examples-1}
@@ -138,7 +138,7 @@ SDK를 사용한 고급 사용자 정의에 대해서는 [StreamHub SDK를 참�
 
 ## Livefyre AEM Assets 통합을 사용하여 AEM Assets에서 UGC 가져오기 {#use-livefyre-aem-assets-integration-to-import-ugc-in-aem-assets}
 
-**Livefyre 설정(UGC 큐레이션 및 Rights Management):**
+**Livefyre 설정(UGC 교육 및 권한 관리용):**
 
 1. [Livefyre 자산 라이브러리 폴더에 UGC를 조정하기 위한 스트림 구성 및 규칙 추가](https://docs.adobe.com/content/help/en/livefyre/using/streams/c-streams.html).
 
@@ -152,9 +152,9 @@ SDK를 사용한 고급 사용자 정의에 대해서는 [StreamHub SDK를 참�
 
 **AEM 설정(AEM Assets으로 UGC를 가져오는 경우):**
 
-1. [시작하기](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#GettingStarted)
-1. [Livefyre를 사용하도록 AEM 구성](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#ConfigureAEMtouseLivefyre)
-1. [Livefyre에서 선별한 UGC를 AEM Assets으로 가져오기](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMAssets)
+1. [시작하기](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#GettingStarted)
+1. [Livefyre를 사용하도록 AEM 구성](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#ConfigureAEMtouseLivefyre)
+1. [Livefyre에서 선별한 UGC를 AEM Assets으로 가져오기](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMAssets)
 
 * [Tourism Australia](https://www.australia.com/en-us)
 
@@ -162,9 +162,9 @@ SDK를 사용한 고급 사용자 정의에 대해서는 [StreamHub SDK를 참�
 
 ### AEM 통합 {#aem-integration-2}
 
-Livefyre Adobe Experience Manager 패키지는 AEM 6.1, 6.2SP1, 6.3, , 6.4 및 6.4 SP1에서 사용할 수 있습니다. AEM 5.x 및 6.0은 지원되지 않습니다. 자세한 내용은 Livefyre와 [통합을 참조하십시오](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html).
+Livefyre Adobe Experience Manager 패키지는 AEM 6.1, 6.2SP1, 6.3, , 6.4 및 6.4 SP1에서 사용할 수 있습니다. AEM 5.x 및 6.0은 지원되지 않습니다. 자세한 내용은 Livefyre와 [통합을 참조하십시오](https://helpx.adobe.com/kr/experience-manager/6-4/sites/administering/using/livefyre.html).
 
-검토 구성 요소는 AEM 6.1에서 지원되지 않습니다. 모든 Livefyre 앱에 [대한 AEM 지원 매트릭스를 확인하십시오](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps).
+검토 구성 요소는 AEM 6.1에서 지원되지 않습니다. 모든 Livefyre 앱에 [대한 AEM 지원 매트릭스를 확인하십시오](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps).
 
 ### 일반 구현(사용자 지정된 AEM 구성 요소의 경우) {#traditional-implementation-for-customized-aem-components-2}
 
@@ -191,7 +191,7 @@ SDK를 사용한 고급 사용자 정의에 대해서는 [StreamHub SDK를 참�
 
 ### 댓글 앱 인증 통합 {#comments-app-authentication-integration-1}
 
-* [AEM Identity Management에 대한 단일 사인온](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) 통합 사용자 정의
+* [AEM Identity Management에 대한 단일 사인온](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) 통합 사용자 정의
 * [타사 인증 플랫폼을 위한 ID 통합](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html)
 
 ### 고객 사례 {#customer-examples-2}
