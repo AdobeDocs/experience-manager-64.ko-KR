@@ -10,10 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 translation-type: tm+mt
-source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
+source-git-commit: 5cf67e97775b39d6ec78ea0db46b5bc4a4476b78
 workflow-type: tm+mt
-source-wordcount: '2745'
-ht-degree: 29%
+source-wordcount: '2780'
+ht-degree: 27%
 
 ---
 
@@ -110,7 +110,7 @@ UI의 생산성과 사용 편의성을 향상시키기 위해 UI에 다양한 �
 
 #### 모니터링 {#monitoring}
 
-* 새로운 [시스템 개요](/help/sites-administering/operations-dashboard.md#system-overview) 는 모든 성능 관련 시스템 상태 및 활동에 대한 스냅샷 보기를 제공합니다
+* 새 [시스템 개요에서는](/help/sites-administering/operations-dashboard.md#system-overview) 모든 성능 관련 시스템 상태 및 활동에 대한 스냅샷 보기를 제공합니다
 * 색인, 쿼리 및 유지 관리에 [대한](/help/sites-administering/operations-dashboard.md#health-checks) 새로운 상태 검사 집합
 
 #### 프로젝트 및 워크플로우 {#projects-and-workflows}
@@ -226,7 +226,7 @@ AEM 6.3 릴리스 이후 향상된 기능에는 백그라운드에서 계층 폴
 
 **메타데이터**
 
-다양한 향상된 기능에는 많은 양의 자산과 [계단식 메타데이터와 같은 고급 메타데이터 구문에 대한 메타데이터를 동시에 가져오고 내보내는 기능이 포함되어 있습니다](/help/assets/cascading-metadata.md).
+다양한 향상된 기능에는 [계단식 메타데이터와 같은 많은 자산과 고급 메타데이터 구문에 대한 메타데이터를 동시에 가져오고 내보내는 기능이 포함되어 있습니다](/help/assets/cascading-metadata.md).
 
 **보고서**
 
@@ -320,10 +320,10 @@ Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 
 * 다양한 대상 플랫폼에 대한 AEM Screens Players([다운로드](https://download.macromedia.com/screens/))
 * 스마트 컨텐츠 언어 모델입니다. 영어는 사전 설치되어 있으며 더 많은 언어를 다운로드할 수 있습니다.
 
-   * [독일어](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
-   * [스페인어](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
-   * [이탈리아어](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
-   * [프랑스어](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
+   * [독일어](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+   * [스페인어](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+   * [이탈리아어](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+   * [프랑스어](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 
 * [클래식 UI 구성 요소를 Coral](/help/sites-developing/dialog-conversion.md) 3으로 마이그레이션하기 위한 대화 상자 변환 도구
 
@@ -331,7 +331,7 @@ Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 
 
 * Adobe Experience Manager 데스크탑 앱([자세한](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html) 내용 및 [다운로드](https://helpx.adobe.com/experience-manager/kb/download-companion-app.html))
 
-* Package to add enhanced PDF Rasterizer ([read more](/help/assets/aem-pdf-rasterizer.md) and [download](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/assets/aem-assets-pdf-rasterizer-pkg))
+* Package to add enhanced PDF Rasterizer ([read more](/help/assets/aem-pdf-rasterizer.md) and [download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
 
 * 확장된 RAW 이미지 지원 추가 패키지([자세히 보기](/help/assets/camera-raw.md))
 
