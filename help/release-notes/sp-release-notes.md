@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 98d52be43b1668b0f16ae18fc82402acc1058a38
+source-git-commit: ba2dec27319c1c7094db9f08130a50164c8e9713
 workflow-type: tm+mt
-source-wordcount: '21555'
+source-wordcount: '21534'
 ht-degree: 26%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 26%
 | 버전 | 6.4.8.0 |
 | 유형 | 서비스 팩 릴리스 |
 | 날짜 | 2020년 3월 5일 |
-| 다운로드 URL | 패키지 공유, 소프트웨어 배포 [의 AEM 6.4.8.0](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0)[에 대한 자세한 내용](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
+| 다운로드 URL | 소프트웨어 배포용 AEM 6.4.8.0 [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## AEM 6.4.8.0에 포함된 기능 {#what-s-included-in-aem}
 
@@ -1951,7 +1951,7 @@ AEM Forms의 주요 사항은 다음과 같습니다.
 * 작성자 및 게시 인스턴스의 마이그레이션 로그에 오류가 있습니다. CQ-4239635용 핫픽스
 * 응용 양식의 게시 제출에서 오류 로그에 있는 &quot;sun.util.calendar.ZoneInfo&quot; 클래스에 대해 deserialization 허용되지 않음&quot;과 같은 역직렬화 오류가 발생했습니다. CQ-4240419용 핫픽스
 * 상태 필드가 모바일 양식 변환에서 채워지지 않습니다. CQ-4240597용 핫픽스
-* 패턴 방지 목록에서 템플릿의 구성 요소에 대한 참조 사용을 제거합니다. CQ-4239217용 핫픽스
+* 패턴 방지 목록에서 템플릿에 있는 구성 요소의 참조 사용을 제거합니다. CQ-4239217용 핫픽스
 * 부동 또는 소수점으로 설정된 HTML5 숫자 상자는 다양한 브라우저에서 다른 유효성 검사 결과를 제공합니다. NPR-23528: CQ-4244097용 핫픽스
 * (이미지 업로드) DOR 미리 보기에 이미지가 표시되지 않습니다. CQ-4243178용 핫픽스
 * JEE 서버에서 &#39;이메일 PDF&#39; 및 &#39;첨부 파일 포함&#39;으로 응용 양식을 제출하려고 하면 오류가 발생합니다. CQ-4239894용 핫픽스
@@ -2106,8 +2106,8 @@ AEM 6.4.1.0에 포함된 콘텐츠 패키지 목록
 >
 >AEM 6.4에 기능 팩을 설치한 고객의 경우. Adobe에서 제공하는 선택적 기능 팩은 릴리스 버전 및 서비스 팩에 종속되어 있습니다. Feature Pack이 설치되어 있는 경우 AEM 고객 지원 센터에 문의하여 AEM 6.4용 이 서비스 팩과 해당 기능 팩의 호환성을 확인하십시오.
 
-* AEM 6.4.8.0 requires AEM 6.4. Please visit [upgrade documentation](../sites-deploying/upgrade.md) for detailed instructions.
-* 서비스 팩은 Adobe Package Share에서 다운로드할 수 있고, Adobe Package Share는 AEM 6.4 인스턴스에서 직접 액세스할 수 있습니다.
+* AEM 6.4.8.0을 사용하려면 AEM 6.4가 필요합니다. 자세한 내용은 [업그레이드 설명서를 참조하십시오](../sites-deploying/upgrade.md).
+* 서비스 팩 다운로드는 [소프트웨어 배포 포털에서](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 다운로드할 수 있습니다.
 * MongoDB 및 여러 인스턴스가 포함된 배포에서 패키지 관리자를 사용하여 작성자 인스턴스 중 하나에 AEM 6.4.8.0을 설치합니다.
 * 서비스 팩을 설치하기 전에 AEM 인스턴스의 스냅샷 또는 새 백업이 있는지 확인하십시오.
 * 설치하기 전에 인스턴스를 다시 시작합니다. 인스턴스가 업데이트 모드에 있는 경우에만 필요하지만(이전 버전에서 인스턴스가 방금 업데이트되었을 때의 경우임), 인스턴스가 더 긴 시간 동안 실행 중이면 권장됩니다.
@@ -2116,14 +2116,13 @@ AEM 6.4.1.0에 포함된 콘텐츠 패키지 목록
 >
 >AEM 6.4.8.0 패키지를 삭제하거나 제거하지 않는 것이 좋습니다.
 
-### 패키지 공유를 통해 서비스 팩 설치 {#install-the-service-pack-via-package-share}
+### Install the Service Pack via Package Manager {#install-the-service-pack-via-package-share}
 
 기존 AEM 6.4 인스턴스에 서비스 팩을 설치하려면 다음 단계를 수행하십시오.
 
-1. AEM 내에서 또는 브라우저에서 직접 또는 브라우저에서 직접 패키지 공유에 로그인하여 AEM 6.4.8.0 패키지를 다운로드합니다.
+1. 소프트웨어 배포에서 패키지를 다운로드합니다.
 
-   (&quot;AEM-6.4.8.0&quot;를 검색하여 찾기).
-1. 패키지 관리자를 사용하여 다운로드한 패키지를 설치합니다.
+1. AEM에서 패키지 관리자에 로그인하고 다운로드한 AEM 6.4.8.0 패키지를 추가합니다. Select the uploaded package and click **[!UICONTROL Install]**.
 
 >[!NOTE]
 >
