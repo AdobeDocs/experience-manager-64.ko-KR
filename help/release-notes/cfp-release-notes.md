@@ -4,10 +4,10 @@ description: Adobe Experience Manager 6.4 누적 수정 팩 관련 릴리스 노
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1deed95174e271bbd91814ef4aa6d4fa578cc45
+source-git-commit: 1b6254e98b65b64071ab4634706bd1ad3d2fd8df
 workflow-type: tm+mt
-source-wordcount: '2152'
-ht-degree: 23%
+source-wordcount: '2119'
+ht-degree: 41%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 23%
 | 유형 | 누적 수정 팩 |
 | 날짜 | 2020년 6월 4일 |
 | 전제 조건 | [AEM 6.4 서비스 팩 8(6.4.8.0)](sp-release-notes.md) |
-| 다운로드 URL | 패키지 공유, 소프트웨어 배포 [에 대한 AEM 6.4.8.1](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/cumulativefixpack/AEM-CFP-6.4.8.1)[](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fcumulativefixpack%2Faem-6.4.8-cfp-1.0.zip) |
+| 다운로드 URL | 소프트웨어 배포용 AEM 6.4.8.1 [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fcumulativefixpack%2Faem-6.4.8-cfp-1.0.zip) |
 
 ## AEM 6.4.8.1에 포함된 기능 {#what-s-included-in-aem}
 
@@ -32,7 +32,7 @@ AEM Cumulative Fix Pack 6.4.8.1은 AEM 6.4 서비스 팩 8에 따라 다릅니�
 
 AEM 6.4.8.1의 주요 하이라이트는 다음과 같습니다.
 
-* Adobe Experience Manager와 패키지 공유 통합 제거
+* Adobe Experience Manager와 패키지 공유 통합이 제거되었습니다.
 * 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.8.21으로 업데이트되었습니다.
 
 For information on CFP and other types of releases, see [AEM Update Release Vehicle Definitions](../sites-deploying/update-release-vehicle-definitions.md)
@@ -47,14 +47,14 @@ Adobe Experience Manager 6.4.8.1에서는 다음 문제에 대한 수정 사항�
 * 원래 요청에 추가된 매개 변수는 리디렉션 URL에 포함되지 않습니다(NPR-33174).
 * Coral.Select 옵션이 emptyOption=true를 설정하거나 값이 &quot;&quot;인 기본 항목을 포함할 경우 dropdownshowide.js 파일에 오류가 발생합니다. 처리할 수 없는 유형 오류: component.getValue가 함수가 아닙니다(NPR-33163).
 * 구성 요소에 다른 구성 요소가 데이터-슬라이리소스로서 포함되어 있으면 상위 컨테이너 구성 요소 자리 표시자는 내부 구성 요소 자리 표시자(NPR-33119)로 대체됩니다.
-* 스키마에 컨텐츠 조각을 기반으로 하고 필수 텍스트 영역 또는 경로 필드를 포함하는 경우 컨텐츠 조각을 저장할 수 없습니다(NPR-33007).
-* 즉시 사용 가능한 경험 조각 구성 요소를 사용하여 사용자 지정 구성 요소를 만들고 AEM Sites 페이지에서 사용하는 경우, AEM은 사용자 지정 구성 요소의 참조(사용)를 표시하지 않습니다(NPR-32852).
-* AEM Sites 페이지가 여러 Live-Copy가 있는 큰 컨텐츠 세트의 일부인 경우 페이지 버전 내역 미리 보기가 로드되지 않습니다(NPR-32772).
+* 스키마에 컨텐츠 조각을 기반으로 하고 필수 텍스트 영역 또는 경로 필드를 포함하는 경우 컨텐츠 조각이 저장되지 않습니다(NPR-33007)
+* 기본 경험 조각 구성 요소를 사용하여 사용자 지정 구성 요소를 만들고 AEM Sites 페이지에서 사용하면 AEM에 사용자 지정 구성 요소에 대한 참조(사용량)를 표시하지 않습니다(NPR-32852).
+* AEM Sites 페이지가 여러 Live Copy가 있는 큰 컨텐츠 세트의 일부인 경우 페이지 버전 기록 미리 보기가 로드되지 않습니다(NPR-32772).
 * 론치를 승격하면 론치에 추가된 모든 구성 요소에 &quot;cq:LiveRelationship&quot; 믹스가 추가됩니다. 소스 페이지 라이브 데이터 상속 — 옵션(NPR-32664)을 선택하지 않고 론치가 작성되었는지 여부에 관계없이 모든 론치에 영향을 줍니다.
-* 페이지 지정이 시작되면 경험 조각 선택기가 일부 항목을 로드하지 않습니다(NPR-32605).
+* 페이지 매김이 시작되면 경험 조각 선택기가 일부 항목을 로드하지 않습니다(NPR-32605).
 * AEM Sites 페이지에 대한 론치를 만들 수 없습니다. 론치를 만들면 오류가 발생합니다(NPR-32544).
 * 게시 관리에는 활성화 요청 워크플로에 참조된 자산이 포함되지 않습니다(NPR-32463).
-* 발송자 상태 확인은 로그 파일에 `Invalid cookie header` 경고 메시지를 표시합니다(NPR-33630).
+* Dispatcher 상태 확인은 로그 파일에 `Invalid cookie header` 경고 메시지를 표시합니다(NPR-33630).
 
 ### 자산 {#assets-6481}
 
@@ -66,7 +66,7 @@ Adobe Experience Manager 6.4.8.1에서는 다음 문제에 대한 수정 사항�
 
 * 폴더 및 자산 이름에 발생하는 GB18030자가 다운로드된 zip 파일에서 공백으로 변경됩니다(NPR-33150).
 
-* 상위 폴더 안에 있는 이름의 점 `.` 문자가 포함된 자산을 스마트 자르기에 추가 폴더가 만들어집니다(NPR-32755).
+* Extra folder is created on smart-cropping an asset that is inside a parent folder with dot `.` character in its name (NPR-32755).
 
 * 알림 받은 편지함에서 작업을 검토하도록 선택하면 레이지 로딩이 트리거되지 않고 100개 이하의 자산이 표시됩니다(NPR-32749).
 
@@ -76,10 +76,10 @@ Adobe Experience Manager 6.4.8.1에서는 다음 문제에 대한 수정 사항�
 
 ### 플랫폼 {#platform-6481}
 
-* 맵 항목 [!DNL Sling] 이 (NPR-33308)에서 만들어진 경우 `sling:match` 필터가 호출되지 않습니다 `/etc/maps` .
+* `sling:match` 맵 항목이 `/etc/maps`에 작성되지 않으면 [!DNL Sling] 필터가 호출되지 않습니다(NPR-33308).
 * 모든 플러쉬 에이전트는 페이지 비활성화 시 트리거됩니다(NPR-32941).
 * API를 사용하여 `ScriptProcessor` JavaScript 라이브러리를 축소하면 로그 파일에 JavaScript 코드가 엄격한 모드를 준수하지 않음을 나타내는 오류 메시지가 표시됩니다. API는 엄격 모드를 활성화하거나 비활성화할 수 있는 옵션을 제공하지 않습니다. (NPR-32746).
-* 예를 들어 7시간 동안 SQL 쿼리가 더 오래 실행되면 AEM이 응답을 중지합니다(NPR-33043).
+* SQL 쿼리가 더 오래 실행되면(예: 7시간) AEM이 응답하지 않습니다(NPR-33043).
 
 ### 사용자 인터페이스 {#ui-6481}
 
@@ -87,14 +87,14 @@ Adobe Experience Manager 6.4.8.1에서는 다음 문제에 대한 수정 사항�
 
 ### 번역 프로젝트 {#tranlation-6481}
 
-* 번역 작업 실행 시 로그에 오류가 `NullPointerException` 표시됩니다(NPR-32220).
+* 번역 작업 실행 시 로그에 `NullPointerException` 오류가 표시됩니다(NPR-32220).
 
 ### 커뮤니티 {#communities-6481}
 
-* 작성자는 새 그룹을 만든 후 [!UICONTROL 11일(NPR-33202)에 있는] 커뮤니티 그룹 [!DNL Internet Explorer] 섹션으로 리디렉션되지 않습니다.
-* 활동 스트림 [!UICONTROL 페이지] 액세스 시 오류가 발생합니다(NPR-33152).
-* 그룹을 편집하고 축소판 이미지를 변경해도 그룹 축소판 이미지가 업데이트되지 않습니다(NPR-32603). [!DNL Communities]
-* UGC(사용자 생성 콘텐츠)의 알림 및 구독 버전을 만드는 동안 소스 페이지의 잘못된 ID가 저장됩니다(CQ-4289703).
+* 작성자는 새 그룹을 만든 후 [!DNL Internet Explorer] 11의 [!UICONTROL 커뮤니티 그룹] 섹션으로 리디렉션되지 않습니다(NPR-33202).
+* [!UICONTROL 활동 스트림] 페이지 액세스 시 오류가 발생합니다(NPR-33152).
+* [!DNL Communities] 그룹을 편집하고 썸네일 이미지를 변경해도 그룹 썸네일 이미지가 업데이트되지 않습니다(NPR-32603). 
+* UGC(사용자 생성 컨텐츠)의 알림 및 구독 버전을 만드는 동안 소스 페이지의 잘못된 ID가 저장됩니다(, CQ-4289703).
 
 ### 워크플로우 {#workflow-6481}
 
@@ -106,15 +106,15 @@ Adobe Experience Manager 6.4.8.1에서는 다음 문제에 대한 수정 사항�
 
 >[!NOTE]
 >
->AEM Cumulative Fix Pack에는 AEM Forms에 대한 픽스가 포함되어 있지 않습니다. 이러한 수정 사항은 별도의 Forms 추가 기능 패키지를 사용하여 전달됩니다. 또한, JEE의 AEM Forms에 대한 수정 사항이 포함된 누적 설치 프로그램이 릴리스됩니다. For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
+>AEM 누적 수정 팩에는 AEM Forms에 대한 수정 사항이 포함되어 있지 않습니다. 이러한 수정 사항은 별도의 Forms 추가 기능 패키지를 사용하여 전달됩니다. 또한, JEE의 AEM Forms에 대한 수정 사항이 포함된 누적 설치 프로그램이 릴리스됩니다. For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
 
 * 통신 관리: 사용자가 [!DNL Word] 문서의 컨텐츠를 붙여넣을 때 텍스트 문서 조각은 서식을 유지하지 않습니다(NPR-33213).
 * 적응형 양식: 적응형 양식 사전의 문자열에 새 줄이 있으면 사전에 `&#xa;` 문자가 추가됩니다(NPR-33265).
-* 적응형 양식: 사용자가 둘 이상의 첨부 파일로 응용 양식을 저장할 수 없습니다(NPR-33214).
+* 적응형 양식: 사용자가 둘 이상의 첨부 파일이 있는 적응형 양식을 저장할 수 없습니다(NPR-33214).
 * 적응형 양식: `AddInstance` 및 인스턴스 관리자 클래스의 `RemoveInstance` 메서드는 레이지 로드 조각에 대한 동적 인스턴스 수를 추가하지 않습니다( [!DNL Internet Explorer 11] NPR-33201).
-* 적응형 양식: 페이지에 포함된 응용 양식에 활성화된 분석은 제출 및 포기 이벤트에 대한 데이터를 기록하지 않습니다(NPR-31359). [!DNL Sites]
+* 적응형 양식: 페이지에 포함된 응용 양식에 활성화된 Analytics은 [!DNL Sites] 제출 및 포기 이벤트에 대한 데이터를 기록하지 않습니다(NPR-31359).
 * 적응형 양식: 사용자가 문서의 컨텐츠를 응용 양식 [!DNL Word] 에 붙여넣고 제출하면 제출된 응용 양식에 유니코드 문자가 포함됩니다. 또한 유니코드 문자로 인해 PDF를 PDF/A로 변환할 수 없습니다(NPR-3348).
-* 백엔드 통합: 잘못된 비활성 상태(NPR-33168)로 인해 새로 고침 토큰이 만료되면 양식 데이터 모델 요청이 실패합니다.
+* 백엔드 통합: 잘못된 비활성 상태로 인해 새로 고침 토큰이 만료되므로 양식 데이터 모델 요청이 실패합니다(NPR-33168).
 * 문서 서비스: 서버에 대한 깁슨 병들이 누락되어 PDF 문서를 PostScript로 변환하지 못하는 경우(NPR-33515, CQ-4292239). [!DNL WebLogic] [!DNL Linux]
 * 문서 서비스: 사용자가 텍스트 파일을 PDF로 변환하면 일본어 문자가 올바르게 렌더링되지 않습니다(NPR-33239).
 
@@ -149,11 +149,11 @@ Adobe Experience Manager 6.4.8.1에서는 다음 문제에 대한 수정 사항�
 
 기존 AEM 6.4.8.0 인스턴스에 누적 수정 팩을 설치하려면 다음 단계를 수행하십시오.
 
-1. 패키지 [공유](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/cumulativefixpack/AEM-CFP-6.4.8.1) 또는 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-1.0.zip) 링크를 클릭하여 패키지를 다운로드합니다.
+1. Software [Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-1.0.zip) 링크를 클릭하여 패키지를 다운로드합니다.
 
-1. 패키지 [관리자를](http://localhost:4502/crx/packmgr/index.jsp) 열고 **패키지** 업로드를 클릭하여 패키지를 업로드합니다.
+1. [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
 
-1. 패키지 이름을 선택하고 [설치]를 **클릭합니다**.
+1. 패키지 이름을 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ Adobe Experience Manager 6.4.8.1에서는 다음 문제에 대한 수정 사항�
 
 A. 서버가 실행되는 동안 패키지를 ..*/crx-quickstart/install* 폴더에 배치합니다. 패키지가 자동으로 설치됩니다.
 
-B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/ko-KR/crx/2-3/how_to/package_manager.html) - make sure you use `cmd=install&recursive=true` - so the nested package are installed.
+B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/package_manager.html) - make sure you use `cmd=install&recursive=true` - so the nested package are installed.
 
 >[!NOTE]
 >
@@ -175,18 +175,18 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/k
 
 ### 설치 확인 {#validate-install}
 
-1. 제품 정보 페이지(*/system/console/ productinfo *)에 설치된 제품 아래에 업데이트된 버전 문자열 &quot;Adobe Experience Manager, 버전 6.4.8.1&quot;이 표시됩니다.
+1. 제품 정보 페이지(*/system/console/ productinfo *)에 설치된 제품 아래에 업데이트된 버전 문자열 &quot;Adobe Experience Manager, 버전 6.4.8.1&quot;이 표시되어야 합니다.
 1. 모든 OSGI 번들은 OSGi 콘솔에서 ACTIVE이거나 FRAGMENT입니다(웹 콘솔 사용: /system/console/bundles).
 1. OSGI 번들 org.apache.jackrabbit.oak-core는 버전 1.8.17 이상에 있습니다(웹 콘솔 사용: /system/console/bundles).
 
-이 AEM Sites 및 Assets 릴리스와 함께 실행할 수 있는 인증된 플랫폼을 결정하려면 [기술 요구 사항을 참조하십시오](../sites-deploying/technical-requirements.md).
+이번 AEM Sites 및 자산 릴리스에서 실행할 수 있는 인증된 플랫폼을 결정하려면 [기술 요구 사항을 참조하십시오](../sites-deploying/technical-requirements.md).
 
 >[!Note]
 >On successful installation of the package, an >informational message appears indicating that the content >package has installed successfully,  such as **&quot;Content Package AEM-6.4-Service-Pack-7 installed successfully.&quot;**
 
-### 다이내믹 미디어 뷰어 업데이트(5.10.1) {#update-dynamic-media-viewers}
+### Dynamic Media 뷰어 업데이트(5.10.1) {#update-dynamic-media-viewers}
 
-<p id="Dynamic">AEM 6.4.8.1에는 이미지 사전 설정 페이지에서 중복된 이름을 확인할 수 있는 새로운 버전의 다이내믹 미디어 뷰어(5.10.1)가 포함되어 있습니다. Dynamic Media 고객은 박스 뷰어 사전 설정에서 최신 상태로 전환하려면 다음 명령을 실행해야 합니다.
+<p id="Dynamic">AEM 6.4.8.1에는 이미지 사전 설정 페이지에서 중복된 이름을 확인할 수 있는 새 버전의 Dynamic Media 뷰어(5.10.1)가 포함되어 있습니다. Dynamic Media 고객은 박스 뷰어 사전 설정에서 최신 상태로 전환하려면 다음 명령을 실행하는 것이 좋습니다.
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
@@ -237,9 +237,9 @@ To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](
 
 ## 알려진 문제 {#known-issues}
 
-* AEM 6.4.8.1을 설치하는 동안 [!DNL Chrome] 버전 83의 업데이트로 패키지 빌드에 문제가 발생했습니다. 사용 가능한 기타 브라우저(예: [!DNL Internet Explorer] 및 기타 AEM [!DNL Firefox]표준 패키지 설치 옵션)를 사용하여 문제를 해결하십시오. AEM 6.4.8.1을 설치한 후 문제가 해결됩니다.
+* AEM 6.4.8.1을 설치하는 동안 [!DNL Chrome] 버전 83의 업데이트로 패키지 빌드에 문제가 발생합니다. 사용 가능한 다른 브라우저(예: [!DNL Internet Explorer] 및 [!DNL Firefox]) 또는 기타 AEM 표준 패키지 설치 옵션을 사용하여 문제를 해결하십시오. AEM 6.4.8.1을 설치한 후 문제가 해결되었습니다.
 
-* TLS v1.2를 사용하는 통신만 허용하므로 AEM 기본 메일 보낸 사람을 사용하여 원격 SMTP 서버로 이메일을 보낼 수 없습니다. 번들을 제거하고 번들을 새로 고쳐 문제를 해결하십시오. `javax.mail:mail:1.5.0-b01` `system/console`
+* TLS v1.2를 사용하는 통신만 허용하므로 AEM 기본 메일 보낸 사람이 원격 SMTP 서버로 이메일을 보낼 수 없습니다. `javax.mail:mail:1.5.0-b01` 번들을 `system/console`에서 제거하고 번들을 새로 고쳐 문제를 해결하십시오.
 
 AEM 6.4.8.0 서비스 팩 알려진 문제에 대한 자세한 내용은 [AEM 6.4.8.0 서비스 팩 릴리스 노트를 참조하십시오](sp-release-notes.md).
 
@@ -267,4 +267,4 @@ AEM 6.4.8.1에 포함된 콘텐츠 패키지 목록
 다음 사이트는 고객만 사용할 수 있습니다. 액세스가 필요한 고객의 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-* [고객 지원 팀에 문의](https://docs.adobe.com/content/help/en/customer-one/using/home.html)
+* [고객 지원 팀에 문의](https://docs.adobe.com/content/help/ko-KR/customer-one/using/home.html)
