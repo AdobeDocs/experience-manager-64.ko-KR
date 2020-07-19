@@ -3,9 +3,9 @@ title: 메타데이터 스키마
 description: '메타데이터 스키마는 속성 페이지의 레이아웃과 자산에 대해 표시되는 메타데이터 속성을 정의합니다. 사용자 정의 메타데이터 스키마를 만들고 메타데이터 스키마를 편집하며 자산에 메타데이터 스키마를 적용하는 방법을 알아봅니다.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c5317d96ed5fccbc1bf03176f75dbaec6d8cb0b4
+source-git-commit: ed87c419557f65667bde46a9f4b32a484e3300f5
 workflow-type: tm+mt
-source-wordcount: '2528'
+source-wordcount: '2536'
 ht-degree: 4%
 
 ---
@@ -41,12 +41,13 @@ ht-degree: 4%
 |---|---|---|
 | [!UICONTROL 기본값] |  | 자산에 대한 기본 메타데이터 스키마 양식입니다. |
 |  | 다음 하위 양식은 [!UICONTROL 기본] 양식의 속성을 상속합니다. |  |
+|  | [!UICONTROL dm_video] | Dynamic Media 비디오에 대한 스키마 양식입니다. |
 |  | <ul><li> [!UICONTROL 이미지]</li></ul> | MIME 유형이 &quot;image&quot;인 에셋에 대한 스키마 양식(예: image/jpeg, image/png 등) <br> 이미지 [!UICONTROL 양식에는 다음과 같은 하위] 양식 템플릿이 있습니다. <ul><li> [!UICONTROL jpeg]: 하위 유형 jpeg가 있는 자산에 대한 스키마 [!UICONTROL 양식입니다].</li> <li>[!UICONTROL tiff]: 하위 유형 tiff가 있는 자산의 [!UICONTROL 스키마 양식입니다].</li></ul> |
 |  | <ul><li> [!UICONTROL 응용 프로그램]</li></ul> | MIME 유형이 &quot;application&quot;인 에셋에 대한 스키마 양식(예: application/ pdf, application/ zip 등) <br>[!UICONTROL pdf]: 하위 유형 pdf가 있는 자산에 대한 스키마 양식입니다. |
 |  | <ul><li>[!UICONTROL 비디오]</li></ul> | 비디오/avi, 비디오/mp4 등과 같이 MIME 유형이 &quot;비디오&quot;인 에셋에 대한 스키마 양식입니다. |
 | [!UICONTROL 컬렉션] |  | 컬렉션에 대한 스키마 양식입니다. |
 | [!UICONTROL contentfragment] |  | 콘텐츠 조각에 대한 스키마 양식입니다. |
-| [!UICONTROL 양식] |  | 이 스키마 양식은 [Adobe Experience Manager Forms와 관련이 있습니다](/help/forms/home.md). |
+| [!UICONTROL 양식] |  | 이 스키마 양식은 [Adobe Experience Manager 양식과 관련되어 있습니다](/help/forms/home.md). |
 
 >[!NOTE]
 >
@@ -182,11 +183,11 @@ AEM에서는 사용자 정의 스키마 양식만 삭제할 수 있습니다. �
 
 >[!NOTE]
 >
->AEM Assets에서 즉시 메타데이터 스키마 양식을 삭제할 수 없습니다.
+>AEM Assets에서 기본 메타데이터 스키마 양식을 삭제할 수 없습니다.
 
 ## MIME 형식의 스키마 양식 {#schema-forms-for-mime-types}
 
-AEM Assets는 즉시 다양한 MIME 유형에 대한 기본 양식을 제공합니다. 그러나 다양한 MIME 형식의 자산에 대해 사용자 지정 양식을 추가할 수 있습니다.
+AEM Assets은 즉시 사용 가능한 다양한 MIME 유형에 대한 기본 양식을 제공합니다. 그러나 다양한 MIME 형식의 자산에 대해 사용자 지정 양식을 추가할 수 있습니다.
 
 ### MIME 유형에 새 양식 추가 {#adding-new-forms-for-mime-types}
 
@@ -203,7 +204,7 @@ AEM Assets는 즉시 다양한 MIME 유형에 대한 기본 양식을 제공합�
 | `exposedmimetype` | 매핑할 기존 양식의 이름 | `String` | `image/jpeg` |
 | `mimetypes` | 특성에 정의된 양식을 사용하는 MIME 형식 `exposedmimetype` 목록 | `String` | `image/png` |
 
-AEM Assets는 다음과 같은 MIME 형식과 스키마 양식을 매핑합니다.
+AEM Assets은 다음 MIME 형식과 스키마 양식을 매핑합니다.
 
 | 스키마 양식 | MIME 형식 |
 |---|---|
@@ -225,7 +226,7 @@ AEM Assets는 다음과 같은 MIME 형식과 스키마 양식을 매핑합니�
 
 ## 폴더별 메타데이터 적용 {#applying-folder-specific-metadata}
 
-AEM Assets에서는 메타데이터 스키마의 변형을 정의하고 특정 폴더에 적용할 수 있습니다.
+AEM Assets을 사용하면 메타데이터 스키마의 변형을 정의하고 특정 폴더에 적용할 수 있습니다.
 
 예를 들어 기본 메타데이터 스키마의 변형을 정의하고 폴더에 적용할 수 있습니다. 수정된 스키마를 적용하면 폴더 내의 자산에 적용되는 원본 기본 메타데이터 스키마를 무시합니다.
 
