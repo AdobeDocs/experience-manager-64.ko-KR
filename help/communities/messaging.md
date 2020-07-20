@@ -48,7 +48,7 @@ AEM Communities 메시징 작업 서비스는 메시징 관련 요청을 처리�
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-* **[!UICONTROL 메시지 필드 허용 목록]**&#x200B;메시지 작성 구성 요소를 사용자가 편집하고 유지할 수 있는 속성을 지정합니다. 새로운 양식 요소가 추가된 경우 SRP에 저장하려면 요소 ID를 추가해야 합니다. 기본값은 두 개의 항목입니다. 
+* **[!UICONTROL 메시지 허용 목록에 추가하다 필드]**&#x200B;메시지 작성 구성 요소를 사용자가 편집하고 유지할 수 있는 속성을 지정합니다. 새로운 양식 요소가 추가된 경우 SRP에 저장하려면 요소 ID를 추가해야 합니다. 기본값은 두 개의 항목입니다. 
 *제목* 및 *컨텐츠*.
 
 * **[!UICONTROL 메시지 상자 크기 제한]**&#x200B;각 사용자의 메시지 상자에 있는 최대 바이트 수입니다. 기본값은 
@@ -69,7 +69,7 @@ AEM Communities 메시징 작업 서비스는 메시징 관련 요청을 처리�
 * **[!UICONTROL maxRetries.name]**&#x200B;배달되지 못한 메시지를 다시 보내는 데 필요한 횟수입니다. 기본값은 
 *3*.
 
-* **[!UICONTROL minWaitBetweenRetries.name]**&#x200B;메시지 전송 실패 시 메시지를 다시 보내는 시도 간 대기할 시간(초)입니다. 기본값은 *100 *(초)입니다.
+* **[!UICONTROL minWaitBetweenRetries.name]**&#x200B;메시지 전송 실패 시 메시지를 재전송하려는 시도 간 대기하는 시간(초)입니다. 기본값은 *100 *(초)입니다.
 
 * **[!UICONTROL 카운트 업데이트 풀 크기]**&#x200B;카운트 업데이트에 사용되는 동시 스레드 수입니다. 기본값은 
 *10*.
@@ -89,23 +89,23 @@ AEM Communities 메시징 작업 서비스는 메시징 관련 요청을 처리�
 * **[!UICONTROL maxTotalAttachmentSize.name]** supportAttachments가 선택된 경우 이 값은 모든 첨부 파일의 허용되는 최대 총 크기(바이트)를 지정합니다. 기본값은 
 *104857600* (100MB).
 
-* **[!UICONTROL attachmentTypeBlocklist.name]**&#x200B;파일 확장자 차단 목록(&#39;
-**.**&#39;, 시스템에 의해 거부됩니다. 차단되지 않으면 확장이 허용됩니다. &#39;**+**&#39; 및 &#39;**-**&#39; 아이콘을 사용하여 익스텐션을 추가하거나 제거할 수있습니다. 기본값은 *DEFAULT입니다*.
+* **[!UICONTROL attachmentTypeBlocklist.name]**&#x200B;파일 확장자차단 목록에 추가하다의(&#39;
+**.**&#39;, 시스템에 의해 거부됩니다. 차단 목록에 추가된이 없으면 확장이 허용됩니다. &#39;**+**&#39; 및 &#39;**-**&#39; 아이콘을 사용하여 익스텐션을 추가하거나 제거할 수있습니다. 기본값은 *DEFAULT입니다*.
 
 * **[!UICONTROL allowedAttachmentTypes.name]**
 
-   **(*작업 필요*)** 블록 목록의 반대쪽에 있는 파일 확장자의 허용 목록입니다. 나열된 파일 확장자를 제외한 모든 파일 확장자를 허용하려면 &#39;**-**&#39; 아이콘을 사용하여 빈 항목 하나를 제거합니다.
+   **(*작업 필요*** )파일 확장자의 허용 목록에 추가하다차단 목록에 추가하다입니다. 이러한 차단 목록에 추가된을 제외한 모든 파일 확장자를 허용하려면 &#39;**-**&#39; 아이콘을 사용하여 빈 항목 하나를 제거합니다.
 
 * **[!UICONTROL serviceSelector.name]**(*필수*) 서비스가 호출되는 절대 경로(끝점)입니다(가상 리소스). 선택한 경로의 루트는 OSGi 구성의 *실행 경로* 구성 설정 [ 에 포함되어야 `Apache Sling Servlet/Script Resolver and Error Handler`](http://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver)합니다(예: `/bin/`, `/apps/`및 `/services/`). 사이트의 메시징 기능에 대해 이 구성을 선택하려면 이 끝점이 해당 **`Service selector`** 의 값으로 `Message List and Compose Message components` 제공됩니다( [메시지 기능](configure-messaging.md)참조). 기본값은 */bin/messaging입니다* .
 
 * **[!UICONTROL fieldAllowlist.name]**&#x200B;사용 
-**메시지 필드 허용 목록을 참조하십시오**.
+**메시지 필드 허용 목록에 추가하다**.
 
 >[!CAUTION]
 >
 >편집을 위해 `Messaging Operations Service` `allowedAttachmentTypes.name` 구성을 열 때마다, 제거된 경우 빈 항목이 다시 추가되어 속성을 구성할 수 있습니다. 비어 있는 단일 항목은 파일 첨부 파일을 효과적으로 비활성화합니다.
 >
->나열된 파일 확장자를 제외한 모든 파일 확장자를 허용하려면 &#39;**-**&#39; 아이콘을 사용하여 [저장]을 클릭하기 전에 하나 **[!UICONTROL 의 비어 있는 항목을]**&#x200B;제거합니다.
+>이러한 차단 목록에 추가된을 제외한 모든 파일 확장자를 허용하려면 &#39;**-**&#39; 아이콘을 사용하여 빈 항목 하나를 제거한 다음 **[!UICONTROL 저장을 클릭합니다]**.
 
 ## 문제 해결 {#troubleshooting}
 
