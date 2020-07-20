@@ -337,7 +337,7 @@ Analytics 클라우드 서비스를 [기존 커뮤니티 사이트에 추가하�
 
 ### 사용자 지정된 사이트에 대해 활성화 {#enable-for-customized-sites}
 
-Analytics 추적 및 가져오기가 커뮤니티 사이트에 대해 제대로 작동하려면 클래스 및 href 특성이 있는 페이지 요소가 `scf-js-site-title` 있어야 합니다. 이러한 요소는 커뮤니티 사이트에 대한 수정되지 않은 `sitepage.hbs` 스크립트에서와 같이 페이지에 하나만 있어야 합니다. 의 값 `siteUrl` 이 추출되어 *사이트 경로로 Adobe Analytics으로 전송됩니다*.
+Analytics 추적 및 가져오기가 커뮤니티 사이트에 대해 제대로 작동하려면 클래스 및 href 특성이 있는 페이지 요소가 `scf-js-site-title` 있어야 합니다. 이러한 요소는 커뮤니티 사이트에 대한 수정되지 않은 스크립트에서와 같이 페이지에 하나만 있어야 `sitepage.hbs` 합니다. 의 값 `siteUrl` 이 추출되어 *사이트 경로로 Adobe Analytics으로 전송됩니다*.
 
 ```xml
 # present in default sitepage.hbs
