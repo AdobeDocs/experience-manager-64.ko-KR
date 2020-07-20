@@ -3,7 +3,7 @@ title: 메타데이터 스키마
 description: '메타데이터 스키마는 속성 페이지의 레이아웃과 자산에 대해 표시되는 메타데이터 속성을 정의합니다. 사용자 정의 메타데이터 스키마를 만들고 메타데이터 스키마를 편집하며 자산에 메타데이터 스키마를 적용하는 방법을 알아봅니다.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ed87c419557f65667bde46a9f4b32a484e3300f5
+source-git-commit: 33541e9d1fa8bc24ae637141c0260f5595f38a4f
 workflow-type: tm+mt
 source-wordcount: '2536'
 ht-degree: 4%
@@ -41,7 +41,7 @@ ht-degree: 4%
 |---|---|---|
 | [!UICONTROL 기본값] |  | 자산에 대한 기본 메타데이터 스키마 양식입니다. |
 |  | 다음 하위 양식은 [!UICONTROL 기본] 양식의 속성을 상속합니다. |  |
-|  | [!UICONTROL dm_video] | Dynamic Media 비디오에 대한 스키마 양식입니다. |
+|  | <ul><li> [!UICONTROL dm_video]</li></ul> | Dynamic Media 비디오에 대한 스키마 양식입니다. |
 |  | <ul><li> [!UICONTROL 이미지]</li></ul> | MIME 유형이 &quot;image&quot;인 에셋에 대한 스키마 양식(예: image/jpeg, image/png 등) <br> 이미지 [!UICONTROL 양식에는 다음과 같은 하위] 양식 템플릿이 있습니다. <ul><li> [!UICONTROL jpeg]: 하위 유형 jpeg가 있는 자산에 대한 스키마 [!UICONTROL 양식입니다].</li> <li>[!UICONTROL tiff]: 하위 유형 tiff가 있는 자산의 [!UICONTROL 스키마 양식입니다].</li></ul> |
 |  | <ul><li> [!UICONTROL 응용 프로그램]</li></ul> | MIME 유형이 &quot;application&quot;인 에셋에 대한 스키마 양식(예: application/ pdf, application/ zip 등) <br>[!UICONTROL pdf]: 하위 유형 pdf가 있는 자산에 대한 스키마 양식입니다. |
 |  | <ul><li>[!UICONTROL 비디오]</li></ul> | 비디오/avi, 비디오/mp4 등과 같이 MIME 유형이 &quot;비디오&quot;인 에셋에 대한 스키마 양식입니다. |
