@@ -10,17 +10,17 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 249f2dd2553bc436a432ef68eae5cf846794ff81
 workflow-type: tm+mt
 source-wordcount: '2894'
-ht-degree: 26%
+ht-degree: 36%
 
 ---
 
 
 # 페이지에 Dynamic Media 클래식 기능 추가 {#adding-scene-features-to-your-page}
 
-[Adobe Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) 은 리치 미디어 에셋을 관리, 향상, 게시 및 웹, 모바일, 이메일 및 인터넷에 연결된 디스플레이와 인쇄물로 전달하는 호스팅 솔루션입니다.
+[Adobe Dynamic Media Classic](https://help.adobe.com/ko_KR/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) 은 리치 미디어 에셋을 관리, 향상, 게시 및 웹, 모바일, 이메일 및 인터넷에 연결된 디스플레이와 인쇄물로 전달하는 호스팅 솔루션입니다.
 
 다양한 뷰어에서 Dynamic Media Classic에 게시된 AEM 자산을 볼 수 있습니다.
 
@@ -55,7 +55,7 @@ For more information on using video components with AEM, see [Video](video.md).
 >AEM은 비동기적으로 Dynamic Media Classic에 게시합니다. After you click **[!UICONTROL Publish]**, it may take several seconds for your asset to publish to Dynamic Media Classic.
 
 
-## Dynamic Media 클래식 구성 요소 {#scene-components}
+## Dynamic Media Classic components {#scene-components}
 
 다음 Dynamic Media Classic 구성 요소를 AEM에서 사용할 수 있습니다.
 
@@ -73,7 +73,7 @@ After they are made available in **[!UICONTROL Design]** mode, you can add the c
 
 >[!NOTE]
 >
->If you are creating and developing custom viewers and using the Content Finder, you need to explicity add the **[!UICONTROL allowfullscreen]** parameter.
+>사용자 지정 뷰어를 만들고 개발하려고 하며 컨텐츠 파인더를 사용하는 경우 **[!UICONTROL allowfullscreen]** 매개 변수를 명시적으로 추가해야 합니다.
 
 ### Flash 뷰어 지원 중단 알림 {#flash-viewers-end-of-life-notice}
 
@@ -156,7 +156,7 @@ In the HTML5 **[!UICONTROL Flyout]** component, the asset is shown as split scre
 >
 >If your **[!UICONTROL Flyout]** component uses a custom size, then that custom size is used and responsive setup of the component is disabled.
 >
->If your **[!UICONTROL Flyout]** component uses the default size, as set in the **[!UICONTROL Design View]**, then the default size is used and the component stretches to accomodate the page layout size with responsive setup of the component enabled. 그러나 구성 요소의 응답형 설정에 대한 제한은 있습니다. When the you use the **[!UICONTROL Flyout]** component with responsive setup, you should not use it with full page stretch. Otherwise, the **[!UICONTROL Flyout]** may extend beyond the page&#39;s right border.
+>If your **[!UICONTROL Flyout]** component uses the default size, as set in the **[!UICONTROL Design View]**, then the default size is used and the component stretches to accomodate the page layout size with responsive setup of the component enabled. 그러나 구성 요소의 응답형 설정에는 제한이 있습니다. When the you use the **[!UICONTROL Flyout]** component with responsive setup, you should not use it with full page stretch. Otherwise, the **[!UICONTROL Flyout]** may extend beyond the page&#39;s right border.
 
 ![chlimage_1-228](assets/chlimage_1-228.png)
 
@@ -166,29 +166,29 @@ Dynamic Media Classic **[!UICONTROL 이미지]** 구성 요소를 사용하면 D
 
 ![chlimage_1-229](assets/chlimage_1-229.png)
 
-* **[!UICONTROL 제목, 대체 텍스트]****[!UICONTROL 고급]** 탭에서 이미지에 제목을 추가하고 그래픽을 해제한 사용자를 위한 대체 텍스트를 추가합니다.
+* **[!UICONTROL 제목, 대체 텍스트]****[!UICONTROL 고급 탭에서 이미지에 제목을 추가하고, 그래픽을 해제한 사용자를 위한 대체 텍스트를 추가합니다.]**
 
-* **[!UICONTROL URL, 열기]**&#x200B;에서 자산을 설정하여 링크를 열 수 있습니다. **[!UICONTROL URL]**&#x200B;을 설정하고 **[!UICONTROL 여는 위치]**&#x200B;에 같은 창에서 열지 또는 새 창에서 열지를 지정합니다.
+* **[!UICONTROL URL, 여는 위치]** 링크를 열 자산을 설정할 수 있습니다. **[!UICONTROL URL]**&#x200B;을 설정하고 **[!UICONTROL 여는 위치]**&#x200B;에 같은 창에서 열지 또는 새 창에서 열지를 지정합니다.
 
 ![chlimage_1-230](assets/chlimage_1-230.png)
 
-* **[!UICONTROL 뷰어 사전 설정]**&#x200B;드롭다운 메뉴에서 기존 뷰어 사전 설정을 선택합니다. 보려는 뷰어 사전 설정이 표시되지 않을 경우 표시되도록 설정해야 할 수 있습니다. [뷰어 사전 설정 관리](/help/assets/managing-viewer-presets.md)를 참조하십시오. 이미지 사전 설정을 사용 중일 때는 뷰어 사전 설정을 선택할 수 없고 그 반대의 경우도 마찬가지입니다.
+* **[!UICONTROL 뷰어 사전 설정]** 드롭다운 메뉴에서 기존 뷰어 사전 설정을 선택합니다. 보려는 뷰어 사전 설정이 표시되지 않을 경우 표시되도록 설정해야 할 수 있습니다. [뷰어 사전 설정 관리](/help/assets/managing-viewer-presets.md)를 참조하십시오. 이미지 사전 설정을 사용 중일 때는 뷰어 사전 설정을 선택할 수 없고 그 반대의 경우도 마찬가지입니다.
 
 * **[!UICONTROL Dynamic Media 클래식 구성]** SPS에서 활성 이미지 사전 설정을 가져오는 데 사용할 Dynamic Media 클래식 구성을 선택합니다.
 
-* **[!UICONTROL 이미지 사전 설정]**&#x200B;드롭다운 메뉴에서 기존 이미지 사전 설정을 선택합니다. 보려는 이미지 사전 설정이 표시되지 않을 경우 표시되도록 설정해야 할 수 있습니다. [이미지 사전 설정 관리](/help/assets/managing-image-presets.md)를 참조하십시오. 이미지 사전 설정을 사용 중일 때는 뷰어 사전 설정을 선택할 수 없고 그 반대의 경우도 마찬가지입니다.
+* **[!UICONTROL 이미지 사전 설정]** 드롭다운 메뉴에서 기존 이미지 사전 설정을 선택합니다. 보려는 이미지 사전 설정이 표시되지 않을 경우 표시되도록 설정해야 할 수 있습니다. [이미지 사전 설정 관리](/help/assets/managing-image-presets.md)를 참조하십시오. 이미지 사전 설정을 사용 중일 때는 뷰어 사전 설정을 선택할 수 없고 그 반대의 경우도 마찬가지입니다.
 
-* **[!UICONTROL 출력 형식]**&#x200B;이미지의 출력 형식(예: jpeg)을 선택합니다. 선택한 출력 형식에 따라 추가 구성 옵션이 있을 수 있습니다. [이미지 사전 설정 우수 사례](/help/assets/managing-image-presets.md#image-preset-options)를 참조하십시오.
+* **[!UICONTROL 출력 형식]** 이미지의 출력 형식(예: jpeg)을 선택하십시오. 선택한 출력 형식에 따라 추가 구성 옵션이 있을 수 있습니다. [이미지 사전 설정 우수 사례](/help/assets/managing-image-presets.md#image-preset-options)를 참조하십시오.
 
-* **[!UICONTROL Sharpening]**&#x200B;이미지를 선명하게 할 방법을 선택합니다. 선명하게 하기는 [이미지 사전 설정 우수 사례](/help/assets/managing-image-presets.md#image-preset-options) 및 [선명하게 하기 우수 사례](/help/assets/assets/s7_sharpening_images.pdf)에 자세히 설명되어 있습니다.
+* **[!UICONTROL 선명도]** 이미지를 선명하게 하려는 방법을 선택하십시오. 선명하게 하기는 [이미지 사전 설정 우수 사례](/help/assets/managing-image-presets.md#image-preset-options) 및 [선명하게 하기 우수 사례](/help/assets/assets/s7_sharpening_images.pdf)에 자세히 설명되어 있습니다.
 
-* **[!UICONTROL URL 수정자]**&#x200B;추가 Dynamic Media Classic 이미지 명령을 제공하여 이미지 효과를 변경할 수 있습니다. 이러한 내용은 [이미지 사전 설정](/help/assets/managing-image-presets.md) 및 [명령 참조](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)에 설명되어 있습니다.
+* **[!UICONTROL URL 수정자]**&#x200B;추가 Dynamic Media Classic 이미지 명령을 제공하여 이미지 효과를 변경할 수 있습니다. 이러한 내용은 [이미지 사전 설정](/help/assets/managing-image-presets.md) 및 [명령 참조](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)에 설명되어 있습니다.
 
-* **[!UICONTROL 중단점]**&#x200B;웹 사이트가 응답형인 경우 중단점을 조정하려고 합니다. 중단점은 쉼표(,)로 구분해야 합니다.
+* **[!UICONTROL 중단점]** 웹 사이트가 응답형인 경우 중단점을 조정할 수 있습니다. 중단점은 쉼표(,)로 구분해야 합니다.
 
 ### 이미지 템플릿 {#image-template}
 
-[Dynamic Media Classic Image Templates](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) 는 Dynamic Media Classic으로 가져온 레이어로 구성된 Photoshop 컨텐츠로, 여기서 컨텐츠와 속성은 가변성을 위해 매개 변수화되었습니다. **[!UICONTROL 이미지 템플릿]** 구성 요소를 사용하여 이미지를 가져오고 AEM에서 텍스트를 동적으로 변경할 수 있습니다. 또한 클라이언트 컨텍스트의 값을 사용하도록 **[!UICONTROL 이미지 템플릿]** 구성 요소를 구성할 수 있으므로 각 사용자는 개인화된 방식으로 이미지를 경험하게 됩니다.
+[Dynamic Media Classic Image Templates](https://help.adobe.com/ko_KR/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) 는 Dynamic Media Classic으로 가져온 레이어로 구성된 Photoshop 컨텐츠로, 여기서 컨텐츠와 속성은 가변성을 위해 매개 변수화되었습니다. **[!UICONTROL 이미지 템플릿]** 구성 요소를 사용하여 이미지를 가져오고 AEM에서 텍스트를 동적으로 변경할 수 있습니다. 또한 클라이언트 컨텍스트의 값을 사용하도록 **[!UICONTROL 이미지 템플릿]** 구성 요소를 구성할 수 있으므로 각 사용자는 개인화된 방식으로 이미지를 경험하게 됩니다.
 
 Tap **[!UICONTROL Edit]** to configure the component. You can configure [settings common to all Dynamic Media Classic components](#settings-common-to-all-scene-components) as well as other settings described in this section.
 
@@ -202,11 +202,11 @@ Tap **[!UICONTROL Edit]** to configure the component. You can configure [setting
 
 * **[!UICONTROL 제목, 대체 텍스트]** Dynamic Media 클래식 이미지 템플릿 탭에서 이미지에 제목을 추가하고 그래픽을 해제한 사용자를 위한 대체 텍스트를 추가합니다.
 
-* **[!UICONTROL URL, 열기]**&#x200B;에서 자산을 설정하여 링크를 열 수 있습니다. URL을 설정하고 여는 위치에 같은 창에서 열지 또는 새 창에서 열지를 지정합니다.
+* **[!UICONTROL URL, 여는 위치]** 링크를 열 자산을 설정할 수 있습니다. URL을 설정하고 여는 위치에 같은 창에서 열지 또는 새 창에서 열지를 지정합니다.
 
 ![chlimage_1-232](assets/chlimage_1-232.png)
 
-* **[!UICONTROL 매개 변수 패널]**&#x200B;이미지를 가져올 때 매개 변수는 이미지의 정보로 미리 채워집니다. 동적으로 변경할 수 있는 컨텐츠가 없는 경우 이 창은 비어 있습니다.
+* **[!UICONTROL 매개 변수 패널]** 이미지를 가져올 때 매개 변수는 이미지의 정보로 미리 채워집니다. 동적으로 변경할 수 있는 컨텐츠가 없는 경우 이 창은 비어 있습니다.
 
 ![chlimage_1-233](assets/chlimage_1-233.png)
 
@@ -233,7 +233,7 @@ To link a field to a client context value, tap **[!UICONTROL Select]** to open t
 #### Dynamic Media 클래식 이미지 템플릿을 링크로 만들기 {#making-the-scene-image-template-a-link}
 
 1. Dynamic Media의 클래식 **[!UICONTROL 이미지 템플릿]** 구성 요소가 있는 페이지에서 편집을 **[!UICONTROL 누릅니다]**.
-1. In the **[!UICONTROL URL]** field, enter the URL that users go to when the image is tapped. In the **[!UICONTROL Open in]** field, select whether you want the target to open (a new window or same window).
+1. In the **[!UICONTROL URL]** field, enter the URL that users go to when the image is tapped. **[!UICONTROL 여는 위치]** 필드에서 대상을 새 창 또는 동일한 창 중 어떤 창에서 열지를 선택합니다.
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
@@ -270,12 +270,9 @@ Dynamic Media Classic 컨텐츠 브라우저를 사용하면 AEM에서 직접 Dy
 >* [ [보안 미리 보기]가 활성화되면](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene)Dynamic Media Classic의 게시된 자산과 게시 취소된 자산이 모두 Dynamic Media Classic 콘텐츠 브라우저에 표시됩니다.
 >* If you do not see **[!UICONTROL Dynamic Media Classic]** or the **[!UICONTROL S7]** icon as an option in the content browser, you need to [configure Dynamic Media Classic to work with AEM](/help/sites-administering/scene7.md).
 >* 비디오의 경우 Classic 컨텐츠 브라우저가 지원하는 Dynamic Media:
-
-   >
-   >  
-* 응용 비디오 세트: 여러 화면 간에 원활하게 재생되는 데 필요한 모든 비디오 표현물의 컨테이너
->  * 단일 MP4 비디오
->  * 단일 F4V 비디오
+   >   * 응용 비디오 세트: 여러 화면 간에 원활하게 재생되는 데 필요한 모든 비디오 표현물의 컨테이너
+   >   * 단일 MP4 비디오
+   >   * 단일 F4V 동영상
 
 
 ### Browsing content in the touch-optimized UI {#browsing-content-in-the-touch-optimized-ui}
@@ -312,11 +309,11 @@ Dynamic Media Classic 자산 검색은 AEM으로 직접 가져오는 대신 Dyna
 
 UI에서 검색할 때 다음 기준(터치에 적합한 UI에서 여기에 표시됨)에 따라 필터링할 수 있습니다.
 
-* **[!UICONTROL 키워드 입력]**&#x200B;자산을 이름별로 검색할 수 있습니다. 키워드를 검색할 때 파일 이름의 시작 문자를 입력합니다. 예를 들어, &quot;swimming&quot;이라는 단어를 입력하면 해당 문자가 해당 순서로 시작되는 모든 자산 파일 이름이 검색됩니다. 자산을 찾으려면 용어를 입력한 후 Enter 키를 누르십시오.
+* **[!UICONTROL 키워드 입력]** 이름별로 자산을 검색할 수 있습니다. 키워드를 검색할 때 파일 이름의 시작 문자를 입력합니다. 예를 들어, &quot;swimming&quot;이라는 단어를 입력하면 해당 문자가 해당 순서로 시작되는 모든 자산 파일 이름이 검색됩니다. 자산을 찾으려면 용어를 입력한 후 Enter 키를 누르십시오.
 
 ![chlimage_1-242](assets/chlimage_1-242.png)
 
-* **[!UICONTROL 폴더/경로]**&#x200B;표시되는 폴더의 이름은 선택한 구성을 기반으로 합니다. 폴더 아이콘을 탭하고 하위 폴더를 선택한 다음 확인 표시를 눌러 하위 레벨로 드릴다운할 수 있습니다.
+* **[!UICONTROL 폴더/경로]** 표시되는 폴더의 이름은 선택한 구성에 따라 다릅니다. 폴더 아이콘을 탭하고 하위 폴더를 선택한 다음 확인 표시를 눌러 하위 레벨로 드릴다운할 수 있습니다.
 
 키워드를 입력하고 폴더를 선택하는 경우, AEM은 해당 폴더 및 하위 폴더를 검색합니다. 그러나 검색 시 키워드를 입력하지 않을 경우 폴더를 선택하면 해당 폴더의 자산만 표시되고 하위 폴더는 포함되지 않습니다.
 
