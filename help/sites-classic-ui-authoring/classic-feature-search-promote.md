@@ -1,8 +1,8 @@
 ---
 title: 페이지에 Search&amp;Promote 기능 추가
 seo-title: 페이지에 Search&amp;Promote 기능 추가
-description: Search&amp;웹 사이트에서 Promote 기능을 통합하면 Search&amp;Promote 구성 요소를 사용하여 키워드 검색, 검색 결과 페이지 검색 개선 및 배너와 같은 기능을 페이지에 추가할 수 있습니다.
-seo-description: Search&amp;웹 사이트에서 Promote 기능을 통합하면 Search&amp;Promote 구성 요소를 사용하여 키워드 검색, 검색 결과 페이지 검색 개선 및 배너와 같은 기능을 페이지에 추가할 수 있습니다.
+description: Search&amp;Promote 기능을 웹 사이트에 통합하여 Search&amp;Promote 구성 요소를 사용하여 키워드 검색, 검색 결과 페이지 검색 개선 및 배너와 같은 기능을 페이지에 추가할 수 있습니다.
+seo-description: Search&amp;Promote 기능을 웹 사이트에 통합하여 Search&amp;Promote 구성 요소를 사용하여 키워드 검색, 검색 결과 페이지 검색 개선 및 배너와 같은 기능을 페이지에 추가할 수 있습니다.
 uuid: 8831aa56-9d7f-44ca-9d32-5901bf762154
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 277d7e67-5778-48cb-89bb-29bcc734a485
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 263a1e514fa48f7aa7b696c801718ceff1e43ed7
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 57%
 
 ---
 
@@ -44,7 +47,7 @@ AEM 관리자가 활성화한 경우에만 Search&amp;Promote 기능을 사용�
   </tr> 
   <tr> 
    <td>확인란 목록-패싯</td> 
-   <td>검색 결과 필터링을 위한 패싯을 선택하기 위한 확인란 목록입니다.</td> 
+   <td>검색 결과 필터링을 위한 패싯을 선택하는 확인란 목록입니다.</td> 
   </tr> 
   <tr> 
    <td>드롭다운 패싯</td> 
@@ -83,18 +86,18 @@ WCM 웹 사이트 콘솔을 사용하여 검색 결과를 표시할 페이지를
 
 You can configure the following component properties in [!UICONTROL Edit] mode to control runtime behavior:
 
-* **[!UICONTROL 단일 결과 페이지]** 숨기기 - 검색에서 단일 결과 페이지를 반환할 때 페이지 탐색 컨트롤을 숨기려면 이 옵션을 선택합니다.
-* **[!UICONTROL 첫 번째/마지막]** 숨기기 - 사용자가 결과의 첫 번째 또는 마지막 페이지로 이동하지 못하도록 하려면 이 옵션을 선택합니다.
-* **[!UICONTROL 이전/다음]** 숨기기 - 사용자가 현재 페이지를 기준으로 결과 페이지를 탐색할 수 있는지 여부를 결정합니다.
+* **[!UICONTROL 단일 결과 페이지]** 숨기기 - 검색이 단일 결과 페이지를 반환할 때 페이지 탐색 컨트롤을 숨기려면 이 옵션을 선택합니다.
+* **[!UICONTROL 첫 번째/마지막]** 숨기기 - 사용자가 결과의 첫 번째 또는 마지막 페이지로 이동할 수 없도록 하려면 이 옵션을 선택합니다.
+* **[!UICONTROL 이전/다음 숨기기]** - 사용자가 현재 페이지를 기준으로 결과 페이지를 탐색할 수 있는지 여부를 결정합니다.
 * **[!UICONTROL 모두]** 보기 숨기기 - 사용자가 단일 페이지에서 모든 검색 결과를 통합할 수 있는지 여부를 결정합니다. 일반적으로 페이지를 사용하는 데이터를 제공하면 서버 리소스를 더 효율적으로 사용할 수 있습니다. 큰 데이터 세트가 하나의 응답 메시지로 전송되지 않도록 하려면 이 선택 사항을 선택하십시오.
 
 ## 패싯을 사용한 결과 필터링 활성화 {#enabling-the-filtering-of-results-by-facets}
 
 사용자가 패싯으로 검색 결과를 필터링하는 것이 가능하도록 할 수 있습니다. The **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components enable users to select one or more facets for filtering. 이러한 구성 요소를 사용할 경우에는 **[!UICONTROL 탐색 표시]** 구성 요소도 포함해야 합니다. 탐색 표시는 사용되는 현재 필터를 표시합니다.
 
-The **[!UICONTROL Checkbox List Facet**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components each have the following properties that you configure in **[!UICONTROL Edit]** mode:
+The **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components each have the following properties that you configure in **[!UICONTROL Edit]** mode:
 
-* **[!UICONTROL 패싯]** 이름 - 필터에 사용되는 패싯의 이름입니다.
+* **[!UICONTROL 패싯 이름]** - 필터에 사용되는 패싯의 이름입니다.
 
 **[!UICONTROL 확인란 목록 패싯]** 구성 요소에는 확인란이 함께 표시되는 패싯 목록이 표시됩니다. **[!UICONTROL 확인란 목록 패싯]**&#x200B;을 사용하여 사용자가 여러 패싯의 항목들을 포함하는 일부 결과를 볼 수 있도록 하십시오. 예를 들어, 여러 브랜드에서는 동일한 유형의 제품을 제공하므로 브랜드 패싯이 적절합니다.
 
@@ -106,24 +109,24 @@ The **[!UICONTROL Checkbox List Facet**, **[!UICONTROL Dropdown Facet]**, and **
 
 드롭다운 목록은 모든 검색 결과와 연결된 패싯으로 채워집니다. 드롭다운 목록에서 항목을 선택하면 업데이트된 결과 세트가 있는 페이지가 다시 로드됩니다. 드롭다운 목록의 항목은 고객이 언제든지 패싯에서 패싯으로 전환할 수 있도록 변경되지 않습니다.
 
-![sandpdropdowndepartment](assets/sandpdropdowndepartment.png)
+![sandpdroddowndepartment](assets/sandpdropdowndepartment.png)
 
 **[!UICONTROL 링크 목록 패싯]** 구성 요소를 사용하면 고객이 여러 패싯 구성원 또는 패싯 아래에 분류된 항목에 대한 포커스를 점진적으로 좁힐 수 있습니다.
 
 패싯 구성원은 링크 목록으로 나타납니다. 각 링크의 텍스트는 현재 검색 결과와 연결된 패싯 구성원의 이름입니다. 고객이 패싯 링크를 클릭하면 페이지가 다시 로드되고 일부 검색 결과가 나타납니다. 링크 목록이 업데이트되므로 그에 따라 더 좁은 포커스를 사용할 수 있습니다.
 
-![sandplinklistcomp](assets/sandplinklistcomp.png)
+![샌드플라inklistcomp](assets/sandplinklistcomp.png)
 
 The links in the list also changes when a filter is applied from a different type of [!UICONTROL Search&amp;Promote] component. 여러 유형의 필터 구성 요소를 사용하면 효과적인 필터 조합을 제공할 수 있습니다.
 
 **[!UICONTROL 탐색 표시]** 구성 요소를 사용하면 고객이 현재 검색 결과에 적용된 필터를 적용된 순서대로 볼 수 있습니다. 고객은 탐색 표시의 항목을 클릭하여 해당 필터 조합으로 되돌릴 수 있습니다.
 
-![sandbreadcrumcomp](assets/sandpbreadcrumbcomp.png)
+![샌드프브레드크럼컴포지션](assets/sandpbreadcrumbcomp.png)
 
 편집 모드에서 탐색 표시에 대해 다음 속성을 구성하여 구성 요소의 모습을 사용자 지정할 수 있습니다.
 
-* **[!UICONTROL 구분 기호]** - 각 탐색 표시 사이의 구분 기호로 사용할 문자 또는 문자열을 정의합니다. 구분 기호 필드는 문자열을 입력으로 허용합니다. 기본 설정은 &quot;>&quot;(따옴표 제외)입니다.
-* **[!UICONTROL 후행 구분]** 기호 - 탐색 표시의 끝에 표시할 문자 또는 문자열을 정의합니다. 후행 구분 기호 필드는 문자열을 입력으로 허용합니다. 이 항목의 기본 설정은 &quot;비어 있음&quot;입니다(즉, 탐색 표시 줄의 끝에 아무 것도 표시되지 않음).
+* **[!UICONTROL 구분 기호]** - 각 탐색 표시 사이의 구분 기호로 작동할 문자 또는 문자열을 정의합니다. 구분 기호 필드는 문자열을 입력으로 허용합니다. 기본 설정은 &quot;>&quot;(따옴표 제외)입니다.
+* **[!UICONTROL 후행 구분 기호]** - 탐색 표시의 끝에 표시할 문자 또는 문자열을 정의합니다. 후행 구분 기호 필드는 문자열을 입력으로 허용합니다. 이 항목의 기본 설정은 &quot;비어 있음&quot;입니다(즉, 탐색 표시 라인 끝에 아무 것도 표시되지 않음).
 
 ## 검색 상자 추가 {#adding-search-boxes}
 
@@ -131,7 +134,7 @@ The **[!UICONTROL Search]** component enables customers to perform keyword searc
 
 Configure the following properties in **[!UICONTROL Edit]** mode to control runtime behavior:
 
-* **[!UICONTROL 결과 페이지]** 경로 - 검색 결과를 표시하는 페이지의 경로입니다.
+* **[!UICONTROL 결과 페이지 경로]** - 검색 결과를 표시하는 페이지의 경로입니다.
 * **[!UICONTROL 자동 완성]** 활성화 - 고객이 검색 상자에 입력을 시작할 때 제안된 검색 키워드가 표시되도록 하려면 선택합니다.
 
 ![sandpsearchcomp](assets/sandpsearchcomp.png)
@@ -146,5 +149,5 @@ The **[!UICONTROL Banners]** component provides one configurable property named 
 
 이 다이어그램은 아래의 완전히 작동하는 Search&amp;Promote 검색 결과 페이지를 만들기 위해 페이지에 추가되는 구성 요소를 보여줍니다.
 
-![1328213789109](assets/1328213789109.png) 샌드페이지 ![예제](assets/sandppageexample.png)
+![1328213789109](assets/1328213789109.png)![샌드페이지 예제](assets/sandppageexample.png)
 
