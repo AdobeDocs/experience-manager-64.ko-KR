@@ -1,6 +1,6 @@
 ---
-title: Apache Maven을 사용하여 AEM 프로젝트를 빌드하는 방법
-seo-title: Apache Maven을 사용하여 AEM 프로젝트를 빌드하는 방법
+title: Apache Maven을 사용하여 AEM 프로젝트를 작성하는 방법
+seo-title: Apache Maven을 사용하여 AEM 프로젝트를 작성하는 방법
 description: 이 문서에서는 Apache Maven을 기반으로 AEM 프로젝트를 설정하는 방법에 대해 설명합니다
 seo-description: 이 문서에서는 Apache Maven을 기반으로 AEM 프로젝트를 설정하는 방법에 대해 설명합니다
 uuid: 675932d3-dabb-4066-a743-75bdf4f049d7
@@ -10,15 +10,15 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aee5f5a7-8462-4d42-8d96-8a7eb317770e
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: 52cefb850f413570d375b1b19f983339d743b486
 workflow-type: tm+mt
 source-wordcount: '2247'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Apache Maven을 사용하여 AEM 프로젝트를 빌드하는 방법{#how-to-build-aem-projects-using-apache-maven}
+# Apache Maven을 사용하여 AEM 프로젝트를 작성하는 방법{#how-to-build-aem-projects-using-apache-maven}
 
 ## 개요 {#overview}
 
@@ -42,7 +42,7 @@ Maven을 기반으로 AEM 프로젝트를 빌드하면 다음과 같은 몇 가�
 
 ### Adobe에서 UberJar를 만든 이유는 무엇입니까? {#why-did-adobe-create-the-uberjar}
 
-이전에는 개발자는 서로 다른 AEM 라이브러리에 대한 상대적으로 많은 수의 개별 종속성을 관리해야 했고, 각 새로운 API를 사용할 때 하나 이상의 개별 종속성을 프로젝트에 추가해야 했습니다. 한 프로젝트에서 UberJar 도입으로 인해 프로젝트에서 30개의 개별 종속성이 제거됩니다.
+이전에는 개발자는 서로 다른 AEM 라이브러리에 대한 상대적으로 많은 수의 개별 종속성을 관리해야 했으며, 각 새로운 API를 사용하는 경우 하나 이상의 개별 종속성을 프로젝트에 추가해야 했습니다. 한 프로젝트에서 UberJar 도입으로 인해 프로젝트에서 30개의 개별 종속성이 제거됩니다.
 
 ### 우버항아리는 어떻게 사용합니까? {#how-do-i-use-the-uberjar}
 
@@ -360,10 +360,6 @@ SCR 생성과 마찬가지로, 코드가 AEM API에서 기본 클래스(추상 �
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
     <filter root="/apps/myproject"/>
-    <filter root="/etc/msm/rolloutconfigs/myrolloutconfig"/>
-    <filter root="/etc/blueprints/mysite/globalsite"/>
-    <filter root="/etc/workflow/models/myproject"/>
-    <filter root="/etc/designs/myproject"/>
     <filter root="/content/myproject/sample-content"/>
 </workspaceFilter>
 ```
