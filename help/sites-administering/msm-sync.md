@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c491f0f3-375d-4203-bdf3-234987bbf685
 translation-type: tm+mt
-source-git-commit: 8cf319b54e1a2afa1385f9bea1e946eaad0e60f7
+source-git-commit: 52cefb850f413570d375b1b19f983339d743b486
 workflow-type: tm+mt
-source-wordcount: '2682'
+source-wordcount: '2671'
 ht-degree: 79%
 
 ---
@@ -187,7 +187,7 @@ Live Copy가 소스 컨텐츠와 동기화되는 방법 및 시기를 제어하�
   </tr> 
   <tr> 
    <td>workflow</td> 
-   <td><p>대상 속성(페이지에 대해서만)에 정의된 워크플로우를 시작하고 Live Copy를 페이로드로 가져옵니다.</p> <p>대상 경로는 모델 노드의 경로입니다(예: /etc/workflow/models/request_for_activation/jcr:content/model)입니다.</p> </td> 
+   <td><p>대상 속성(페이지에 대해서만)에 정의된 워크플로우를 시작하고 Live Copy를 페이로드로 가져옵니다.</p> <p>대상 경로는 모델 노드의 경로입니다.</p> </td> 
    <td>대상: (문자열) 워크플로우 모델에 대한 경로입니다.<br /> </td> 
   </tr> 
   <tr> 
@@ -408,11 +408,12 @@ MSM을 사용하면 일반적으로 사용되는 롤아웃 구성 집합을 지�
 
 시스템 기본값으로 사용할 롤아웃 구성을 지정합니다. 기본값을 지정하려면 OSGi 서비스를 구성합니다.
 
-* **Day CQ WCM Live Relationship Manager**  서비스 PID는 입니다. `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
+* **Day CQ WCM Live Relationship Manager**  서비스 PID는 입니다. 
+`com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
-`com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)[](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)
+Configure the service using either the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or a [repository node](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 
-* Configure the service using either the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or a [repository node](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
-* 웹 콘솔에서 구성할 속성의 이름은 기본 롤아웃 구성입니다.`liverelationshipmgr.relationsconfig.default`
+* 웹 콘솔에서 구성할 속성의 이름은 기본 롤아웃 구성입니다.
+* Using a repository node, the name of the property to configure is `liverelationshipmgr.relationsconfig.default`.
 
-Using a repository node, the name of the property to configure is `liverelationshipmgr.relationsconfig.default`.****
+시스템 기본값으로 사용할 롤아웃 구성 경로로 이 속성 값을 설정합니다. The default value is `/libs/msm/wcm/rolloutconfigs/default`, which is the **Standard Rollout Config**.
