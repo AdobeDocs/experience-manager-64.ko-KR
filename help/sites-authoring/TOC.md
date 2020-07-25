@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Authoring User Guide
+user-guide-title: AEM 6.4 작성 사용 안내서
+user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 98%
 
 ---
 
@@ -27,7 +31,7 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
    + [페이지 편집 시 주석](annotations.md)
    + [페이지 생성 및 구성](managing-pages.md)
    + [페이지 컨텐츠 편집](editing-content.md)
-   + [리치 텍스트 편집기를 사용하여 컨텐츠 작성](rich-text-editor.md)
+   + [리치 텍스트 편집기를 사용한 컨텐츠 작성](rich-text-editor.md)
    + [페이지 속성 편집](editing-page-properties.md)
    + [페이지 게시](publishing-pages.md)
    + [컨텐츠 조각으로 페이지 작성](content-fragments.md)
