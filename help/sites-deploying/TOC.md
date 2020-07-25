@@ -3,11 +3,12 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4 배포 안내서
+user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.4, including our Adobe Managed Services cloud deployment.
 translation-type: tm+mt
-source-git-commit: b7be355f788f07eea2d1333abb4220dd645ef53f
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
 workflow-type: tm+mt
 source-wordcount: '323'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -61,7 +62,7 @@ ht-degree: 12%
    + [구성 방법 문서](ht-deploy.md)
    + [Geometrixx 사이트 제거](removing-the-geometrixx-sites.md)
    + [웹 콘솔 구성](configuring-web-console.md)
-+ AEM 6.4로 업그레이드 {#upgrading}
++ Upgrading to AEM 6.4 {#upgrading}
    + [AEM 6.4로 업그레이드](upgrade.md)
    + [업그레이드 계획](upgrade-planning.md)
    + [Pattern Detector를 사용한 업그레이드 복잡성 평가](pattern-detector.md)
