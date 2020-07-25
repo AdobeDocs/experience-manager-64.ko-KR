@@ -4,8 +4,9 @@ product: adobe experience manager
 sub-product: '양식 '
 audience: end-user
 user-guide-title: AEM 6.4 양식 사용 안내서
+user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 4f6b0555b681d257c6d92490daa85a3ae2439a96
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
 workflow-type: tm+mt
 source-wordcount: '3702'
 ht-degree: 1%
@@ -50,7 +51,7 @@ ht-degree: 1%
       + [참조 문자 템플릿](using/reference-cm-layout-templates.md)
       + [We.Finance 참조 사이트의 홈 모기지 워크플로에 대해 Microsoft Dynamics 365 구성](using/ms-dynamics-configuration-home-mortgage.md)
 + AEM Forms 설치 및 구성 {#install-aem-forms}
-   + [AEM Forms용 아키텍처 및 배포 토폴로지](using/aem-forms-architecture-deployment.md)
+   + [AEM Forms을 위한 아키텍처 및 배포 토폴로지](using/aem-forms-architecture-deployment.md)
    + [AEM Forms 설치에 대한 지속성 유형 선택](using/choosing-persistence-type-for-aem-forms.md)
    + Install AEM Forms on OSGi {#osgi-installation}
       + [OSGi에서 AEM 양식에 대해 지원되는 플랫폼](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/technical-requirements.html)
@@ -62,43 +63,43 @@ ht-degree: 1%
       + [JEE에서 AEM 양식에 대해 지원되는 플랫폼](using/aem-forms-jee-supported-platforms.md)
       + [JBoss 턴키를 사용하여 JEE에 AEM Forms 설치 및 배포](http://www.adobe.com/go/learn_aemforms_installTurnkey_64)
       + [문서 보안 서버 설치 및 구성](using/installing-and-configuring-the-document-security-server.md)
-      + [AEM Forms 단일 서버 설치 준비](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64)
+      + [단일 서버 AEM Forms 설치 준비](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64)
       + [JBoss용 JEE에 AEM Forms 설치 및 배포](http://www.adobe.com/go/learn_aemforms_installJBoss_64)
-      + [JEE for WebLogic에 AEM Forms 설치 및 배포](http://www.adobe.com/go/learn_aemforms_installWebLogic_64)
+      + [WebLogic용 JEE에 AEM Forms 설치 및 배포](http://www.adobe.com/go/learn_aemforms_installWebLogic_64)
       + [WebSphere용 JEE에 AEM Forms 설치 및 배포](http://www.adobe.com/go/learn_aemforms_installWebSphere_64)
-      + [AEM Forms Workbench 설치](http://help.adobe.com/en_US/AEMForms/6.1/InstallWorkbench/index.html)
+      + [AEM Forms 워크벤치 설치](http://help.adobe.com/en_US/AEMForms/6.1/InstallWorkbench/index.html)
       + [디자이너 설치 및 구성](using/installing-configuring-designer.md)
       + [AEM Forms 서버 클러스터 설치 준비](http://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64)
       + [JBoss 클러스터의 JEE에서 AEM Forms 구성](http://www.adobe.com/go/learn_aemforms_clusterJBoss_64)
       + [WebLogic 클러스터의 JEE에서 AEM Forms 구성](http://www.adobe.com/go/learn_aemforms_clusterWebLogic_64)
       + [WebSphere 클러스터의 JEE에서 AEM Forms 구성](http://www.adobe.com/go/learn_aemforms_clusterWebSphere_64)
    + AEM Forms 구성 {#configure-aem-forms}
-      + [AEM Forms 서버의 성능 조정](using/performance-tuning-aem-forms.md)
+      + [AEM Forms 서버 성능 조정](using/performance-tuning-aem-forms.md)
       + [적응형 양식 캐시 구성](using/configure-adaptive-forms-cache.md)
       + [AEM DS 설정 구성](using/configuring-the-processing-server-url-.md)
       + [동기화 스케줄러 구성](using/configure-synchronization-scheduler.md)
       + [Microsoft SharePoint용 커넥터 구성](http://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
-      + [AEM Forms와 Adobe LiveCycle 연결](using/aem-livecycle-connector.md)
+      + [Adobe LiveCycle과 AEM Forms 연결](using/aem-livecycle-connector.md)
       + [JEE 프로세스의 AEM Forms에 양식 데이터를 제출하도록 AEM Forms 구성](using/submit-form-data-livecycle-process.md)
       + [AEM Forms용 AEM 데스크탑 앱](/help/forms/using/aem-desktop-app-for-aem-forms.md)
-+ AEM Forms 업그레이드 {#upgrade-aem-forms}
++ 업그레이드 AEM Forms {#upgrade-aem-forms}
    + [사용 가능한 업그레이드 경로](using/upgrade.md)
    + OSGi에서 AEM Forms 업그레이드 {#aem-forms-osgi-upgrade}
       + [OSGi에서 AEM 6.4 양식으로 업그레이드](using/upgrade-forms-osgi.md)
       + [호환성 패키지 설치](using/compatibility-package.md)
-      + [AEM Forms 자산 및 문서 마이그레이션](using/migration-utility.md)
-   + Upgrade AEM Forms on JEE {#aem-forms-jee-upgrade}
+      + [AEM Forms 에셋 및 문서 마이그레이션](using/migration-utility.md)
+   + JEE에서 AEM Forms 업그레이드 {#aem-forms-jee-upgrade}
       + [AEM Forms 업그레이드 준비](http://www.adobe.com/go/learn_aemforms_prepareupgrade_64)
       + [업그레이드 확인 목록 및 계획](http://www.adobe.com/go/learn_aemforms_upgrade_checklist_64)
       + [JEE에서 AEM 6.4 양식으로 업그레이드](using/upgrade-forms-jee.md)
-      + [JBoss용 JEE의 AEM Forms 릴리스에서 AEM 6.4 Forms로 업그레이드](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_64)
+      + [AEM Forms 릴리스에서 JBoss용 JEE의 AEM 6.4 Forms로 업그레이드](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_64)
       + [JBoss용 JEE의 LiveCycle ES4 SP1에서 Adobe Experience Manager Forms로 업그레이드](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-jboss-livecycle.pdf)
-      + [JBoss 턴키용 JEE의 AEM Forms 릴리스에서 AEM 6.4 Forms로 업그레이드](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_64)
-      + [JBoss 턴키용 JEE의 AEM Forms로 LiveCycle ES4 SP1에서 업그레이드](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-turnkey-livecycle.pdf)
+      + [AEM Forms 릴리스에서 JBoss 턴키용 JEE의 AEM 6.4 Forms로 업그레이드](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_64)
+      + [JBoss 턴키용 JEE의 AEM Forms으로 LiveCycle ES4 SP1에서 업그레이드](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-turnkey-livecycle.pdf)
       + [AEM Forms 릴리스에서 WebLogic용 JEE의 AEM 6.4 Forms로 업그레이드](http://www.adobe.com/go/learn_aemforms_upgradeWebLogic_64)
-      + [WebLogic용 JEE에서 LiveCycle ES4 SP1에서 AEM Forms로 업그레이드](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-weblogic-livecycle.pdf)
+      + [LiveCycle ES4 SP1에서 WebLogic용 JEE의 AEM Forms으로 업그레이드](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-weblogic-livecycle.pdf)
       + [AEM Forms 릴리스에서 WebSphere용 JEE의 AEM 6.4 Forms로 업그레이드](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_64)
-      + [LiveCycle ES4 SP1에서 WebSphere용 JEE의 AEM Forms로 업그레이드](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-websphere-livecycle.pdf)
+      + [LiveCycle ES4 SP1에서 WebSphere용 JEE의 AEM Forms으로 업그레이드](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-websphere-livecycle.pdf)
 + AEM Forms 관리 {#manage-administer-aem-forms}
    + [OSGi 그룹 및 권한에 대한 AEM Forms](using/forms-groups-privileges-tasks.md)
    + [양식을 분류할 새 폴더 만들기](using/creating-new-folders-categorize-forms.md)
@@ -107,7 +108,7 @@ ht-degree: 1%
    + [XFA 또는 PDF 양식 템플릿 다운로드](using/download-xfa-or-pdf-form.md)
    + [양식 및 관련 리소스 삭제](using/deleting-forms-related-resources.md)
    + [AEM Forms에서 XDP 및 PDF 문서 가져오기](using/get-xdp-pdf-documents-aem.md)
-   + [AEM Forms로 자산 가져오기 및 내보내기](using/import-export-forms-templates.md)
+   + [AEM Forms으로 자산 가져오기 및 내보내기](using/import-export-forms-templates.md)
    + [적응형 양식 로컬라이제이션을 위한 새로운 로케일 지원](using/supporting-new-language-localization.md)
    + 사용자 데이터 처리 {#handling-user-data}
       + [OSGi 기반의 양식 중심의 워크플로우](using/forms-workflow-osgi-handling-user-data.md)
@@ -119,9 +120,9 @@ ht-degree: 1%
       + [문서 보안](/help/forms/using/document-security-handling-user-data.md)
    + AEM Forms 환경 강화 {#hardening-aem-forms-environment}
       + [OSGi 환경에서 AEM 양식 강화 및 보안](using/hardening-securing-aem-forms-environment.md)
-      + [JEE에서 AEM Forms에 대한 일반 보안 고려 사항](using/general-security-considerations.md)
-      + [JEE 환경에서 AEM 양식 강화](using/hardening-aem-forms-jee-environment.md)
-      + [JEE에서 AEM Forms에 대한 보안 관리 설정 구성](using/configuring-secure-administration-settings-aem.md)
+      + [JEE AEM Forms에 대한 일반적인 보안 고려 사항](using/general-security-considerations.md)
+      + [JEE 환경 AEM Forms 강화](using/hardening-aem-forms-jee-environment.md)
+      + [JEE의 AEM Forms에 대한 보안 관리 설정 구성](using/configuring-secure-administration-settings-aem.md)
 + 양식 데이터 모델 {#form-data-model}
    + [AEM Forms 데이터 통합 소개](using/data-integration.md)
    + [데이터 소스 구성](using/configure-data-sources.md)
@@ -177,7 +178,7 @@ ht-degree: 1%
    + [적응형 양식 테스트 자동화](using/calvin.md)
    + [적응형 양식의 스타일 지정 구문](using/styling-constructs-adaptive-forms.md)
    + [적응형 양식을 XFA 양식 템플릿과 동기화](using/synchronizing-adaptive-forms-xfa.md)
-   + [AEM Forms와 Adobe Sign 통합](using/adobe-sign-integration-adaptive-forms.md)
+   + [AEM Forms과 Adobe Sign 통합](using/adobe-sign-integration-adaptive-forms.md)
    + [양식의 자산에 대한 검토 만들기 및 관리](using/create-reviews-forms.md)
    + [적응형 양식의 표준 유효성 검사 오류 메시지](using/standard-validation-error-messages-adaptive-forms.md)
 + 대화형 통신 {#interactive-communications}
@@ -192,26 +193,26 @@ ht-degree: 1%
 + 워크플로우 {#workflows}
    + [OSGi 기반의 양식 중심의 워크플로우](using/aem-forms-workflow.md)
    + [OSGi 기반의 양식 중심의 워크플로우 - 단계 참조](using/aem-forms-workflow-step-reference.md)
-   + [AEM 양식 중심의 워크플로우 단계를 위해 사용자 또는 그룹을 동적으로 선택](using/dynamically-select-a-user-or-group-for-aem-workflow.md)
+   + [AEM Forms 중심 워크플로우 단계를 위해 사용자 또는 그룹을 동적으로 선택](using/dynamically-select-a-user-or-group-for-aem-workflow.md)
    + [OSGi 및 AEM Forms JEE 워크플로우에서 양식 중심의 AEM 워크플로우의 작업 및 기능](using/capabilities-osgi-jee-workflows.md)
    + [AEM Workflow에서 문서 서비스 API 시작](using/initiating-document-services-apis-aem.md)
-+ AEM Forms 작업 영역 {#use-aem-forms-workspace}
++ AEM Forms 작업 공간 {#use-aem-forms-workspace}
    + [AEM Forms 작업 영역 소개](using/introduction-html-workspace.md)
-   + [AEM Forms 작업 영역 작업](using/html-workspace-overview.md)
-   + [AEM Forms Workspace 아키텍처](using/html-workspace-architecture.md)
-   + [Flex 작업 영역에서 사용할 수 없는 AEM Forms 작업 영역 기능](using/features-html-workspace-available-flex.md)
-   + [AEM Forms 작업 영역에서 Flex 작업 영역 기능을 사용할 수 없음](using/features-flex-workspace-available-html.md)
+   + [AEM Forms 작업 영역 사용](using/html-workspace-overview.md)
+   + [AEM Forms 작업 공간 아키텍처](using/html-workspace-architecture.md)
+   + [Flex 작업 공간에서 사용할 수 없는 AEM Forms 작업 영역 기능](using/features-html-workspace-available-flex.md)
+   + [AEM Forms 작업 영역에서 Flex 작업 영역 기능 사용 불가](using/features-flex-workspace-available-html.md)
    + [백본 상호 작용](using/backbone-interaction.md)
    + [재사용 가능한 구성 요소에 대한 설명](using/description-reusable-components.md)
    + [렌더러를 위한 문서 세부 사항](using/document-details-renderer.md)
    + [웹 애플리케이션에서 AEM Forms 작업 영역 구성 요소 통합](using/integrating-html-ws-components-web.md)
    + [새로운 렌더링 및 전송 서비스](using/new-render-submit-service.md)
    + [폴더 구조 이해](using/folder-structure.md)
-   + [AEM Forms 작업 영역에서 타사 애플리케이션 통합](using/integrating-correspondence-management-html-workspace.md)
+   + [AEM Forms 작업 공간에서 타사 애플리케이션 통합](using/integrating-correspondence-management-html-workspace.md)
    + [AEM Forms 작업 공간 JSON 개체 설명](using/html-workspace-json-object-description.md)
    + [AEM 양식 작업 영역 사용자 지정 소개](using/introduction-customizing-html-workspace.md)
    + [AEM Forms 작업 영역 사용자 지정을 위한 일반 단계](using/generic-steps-html-workspace-customization.md)
-   + [AEM Forms 작업 영역 사용자 인터페이스의 로케일 변경](using/changing-locale-user-interface.md)
+   + [AEM Forms 작업 공간 사용자 인터페이스의 로케일 변경](using/changing-locale-user-interface.md)
    + [새 로그인 화면 만들기](using/creating-new-login-screen.md)
    + [오류 대화 상자 사용자 정의](using/customizing-error-dialogs.md)
    + [작업의 탭 사용자 정의](using/customizing-tabs-task.md)
@@ -224,9 +225,9 @@ ht-degree: 1%
    + [JavaScript 파일 축소](using/minification-javascript-files.md)
    + [추적 표 사용자 정의](using/sorting-tracking-tables-add-columns.md)
    + [설명서에 대한 링크 업데이트](using/updating-link-help-documentation.md)
-   + [AEM Forms 작업 영역에서 양식 설정 작업](using/form-sets-html-workspace.md)
-   + [AEM Forms 작업 영역에 사용되는 API](using/apis-used-html-workspace.md)
-   + [AEM Forms 작업 영역의 기존 프로세스 데이터로 새 프로세스 시작](using/initiating-new-process-existing-process.md)
+   + [AEM Forms 작업 공간에서 양식 작업](using/form-sets-html-workspace.md)
+   + [AEM Forms 작업 공간에 사용되는 API](using/apis-used-html-workspace.md)
+   + [AEM Forms 작업 공간의 기존 프로세스 데이터로 새 프로세스 시작](using/initiating-new-process-existing-process.md)
    + [하나의 서버에서 두 개의 AEM Forms 작업 영역 인스턴스 호스팅](using/two-html-workspace-instances-one.md)
    + [인터페이스의 색상 구성표 변경](using/changing-color-scheme-interface.md)
    + [인터페이스의 글꼴 변경](using/changing-font-interface.md)
@@ -241,10 +242,10 @@ ht-degree: 1%
    + [HTML 작업 영역에서 적응형 양식 사용](using/using-adaptive-form-html-workspace.md)
    + [AEM 양식 작업 영역을 Microsoft Office SharePoint Server와 통합](using/integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server.md)
    + [할 일 목록 작업](using/todo-lists.md)
-   + [AEM Forms 작업 영역에 대한 문제 해결 지침](using/troubleshooting-guidelines-html-workspace.md)
+   + [AEM Forms 작업 공간에 대한 문제 해결 지침](using/troubleshooting-guidelines-html-workspace.md)
 + AEM Forms app {#aem-forms-app}
    + [AEM Forms 앱 소개](using/aem-forms-app.md)
-   + [AEM Forms 앱용 환경 설정](using/setup-environment-mobile-workspace.md)
+   + [AEM Forms 앱에 대한 환경 설정](using/setup-environment-mobile-workspace.md)
    + [Xcode 프로젝트 설정 및 iOS 앱 빌드](using/setup-xcode-project-build-installer.md)
    + [iOS용 보안 AEM Forms 앱 빌드](using/building-secure-mobile-workspace-app.md)
    + [Visual Studio 프로젝트 설정 및 Windows 앱 빌드](using/setup-visual-studio-project-build-installer.md)
@@ -271,7 +272,7 @@ ht-degree: 1%
    + [HTML5 양식 소개](using/introduction.md)
    + [HTML5 양식 시작하기](using/get-started.md)
    + [HTML5 양식의 아키텍처](using/html5-forms-architecture.md)
-   + [HTML5 양식과 PDF 양식 간의 차별화된 기능](using/feature-differentiation-html5-forms-pdf-forms.md)
+   + [HTML5 양식과 PDF forms 간의 차별화된 기능](using/feature-differentiation-html5-forms-pdf-forms.md)
    + [HTML5 양식에 대한 FAQ(FAQ)](using/faq.md)
    + [HTML5 양식의 양식 템플릿 디자인](using/designing-form-template.md)
    + [HTML5 양식에 대한 우수 사례](using/best-practices-for-html5-forms.md)
@@ -320,7 +321,7 @@ ht-degree: 1%
    + [인터랙티브 커뮤니케이션 및 문자에서 인라인 조건 및 반복](using/cm-inline-condition.md)
    + [문서 단편](using/lists.md)
    + [통신 관리 구성 속성](using/cm-configuration-properties.md)
-+ AEM Forms와 Experience Cloud 솔루션 통합 {#integrate-aem-forms-with-experience-cloud-solutions}
++ Experience Cloud 솔루션과 AEM Forms 통합 {#integrate-aem-forms-with-experience-cloud-solutions}
    + [AEM Forms에서 타깃팅된 경험 만들기](/help/forms/using/experience-targeting-forms.md)
    + [양식의 효과 측정 및 전환 향상](using/measure-improve-performance-forms-documents.md)
    + [분석 및 보고서 구성](using/configure-analytics-forms-documents.md)
@@ -371,7 +372,7 @@ ht-degree: 1%
    + [디자이너 스크립팅 참조](http://www.adobe.com/go/learn_aemforms_scriptingReference_64)
    + [디자이너 양식계산 참조](http://www.adobe.com/go/learn_aemforms_formCalc_64)
    + [HTML5 양식에 문지르기 서명 사용](using/scribble-signature.md)
-+ AEM Forms 사용자 지정 {#customize-aem-forms}
++ AEM Forms 사용자 정의 {#customize-aem-forms}
    + [적응형 및 HTML5 양식을 위한 모양 프레임워크](using/introduction-widgets.md)
    + [사용자 지정 응용 양식 템플릿 만들기](using/custom-adaptive-forms-templates.md)
    + [적응형 양식의 사용자 정의 레이아웃 구성 요소 만들기](using/custom-layout-components-forms.md)
@@ -391,7 +392,7 @@ ht-degree: 1%
    + [트랜잭션 보고서 보기 및 이해](using/viewing-and-understanding-transaction-reports.md)
    + [거래 보고서 청구 가능한 API](using/transaction-reports-billable-apis.md)
    + [사용자 지정 구현에 대한 거래 기록](using/record-transaction-custom-implementation.md)
-+ JEE에서 AEM Forms에 대한 관리자 도움말 {#administrator-help}
++ JEE의 AEM Forms에 대한 관리자 도움말 {#administrator-help}
    + 시작하기 {#get-started}
       + [일반 AEM Forms 설정](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
       + [배포용 라이선스 유형 업데이트](/help/forms/using/admin-help/update-license-type-deployment.md)
@@ -574,12 +575,12 @@ ht-degree: 1%
    + [HTML Template Language](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html)
    + [적응형 양식을 디버깅하는 AEM 플러그인](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [AEM Forms Java API 참조](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html)
-   + [JEE Java API 참조 기반 AEM Forms](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)
+   + [JEE Java API 참조 AEM Forms](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)
    + [HTML5 양식용 Form Bridge API](using/form-bridge-apis.md)
    + [어셈블러 서비스 및 DDC 참조](http://www.adobe.com/go/learn_aemforms_ddxRef_64)
    + [워크벤치 도움말](http://www.adobe.com/go/learn_aemforms_workbench_64)
-   + JEE에서 AEM Forms를 사용한 프로그래밍 {#programming-aem-forms-jee}
-      + JEE에서 AEM Forms를 사용한 프로그래밍 소개 {#introduction-programming-aem-forms-jee}
+   + JEE에서 AEM Forms을 사용한 프로그래밍 {#programming-aem-forms-jee}
+      + JEE AEM Forms을 사용한 프로그래밍 소개 {#introduction-programming-aem-forms-jee}
          + [Java API QuickStart 소개](developing/introducing-java-api-soap-quick.md)
          + [API를 사용하여 AEM Forms 호출](developing/invoking-aem-forms-using-apis.md)
          + [AEM Forms 프로세스 이해](developing/aem-forms-processes.md)
@@ -613,7 +614,7 @@ ht-degree: 1%
          + [사용자 관리자 Java API 빠른 시작(SOAP)](developing/user-manager-java-api-quick.md)
          + [XMP 유틸리티 서비스 Java APIQ빠른 시작(SOAP)](developing/xmp-utilities-service-java-api.md)
       + API를 사용하여 JEE에서 AEM Forms 호출 {#invoking-aem-forms-jee-apis}
-         + [REST 요청을 사용하여 AEM 양식 호출](developing/invoking-aem-forms-using-rest.md)
+         + [REST 요청을 사용하여 AEM Forms 호출](developing/invoking-aem-forms-using-rest.md)
          + [Remoting을 사용하여 AEM Forms 호출](developing/invoking-aem-forms-using-remoting.md)
          + [웹 서비스를 사용하여 AEM Forms 호출](developing/invoking-aem-forms-using-web.md)
          + [웹 서비스를 사용하여 AEM Forms 호출](developing/invoking-human-centric-long-lived.md)
@@ -649,7 +650,7 @@ ht-degree: 1%
          + [클라이언트에서 양식 렌더링](developing/rendering-forms-client.md)
          + [사용자 지정 CSS 파일을 사용하여 HTML 양식 렌더링](developing/rendering-html-forms-using-custom.md)
          + [CustomToolbar를 사용하여 HTML 양식 렌더링](developing/rendering-html-forms-custom-toolbars.md)
-         + [인터랙티브한 PDF 양식 렌더링](developing/rendering-interactive-pdf-forms.md)
+         + [대화형 PDF forms 렌더링](developing/rendering-interactive-pdf-forms.md)
          + [권한 사용 양식 렌더링](developing/rendering-rights-enabled-forms.md)
          + [DCX 문서 유효성 확인](developing/validating-ddx-documents.md)
          + [PDF를 Postscript 및 이미지 파일로 변환](developing/converting-pdf-postscript-image-files.md)
@@ -659,13 +660,13 @@ ht-degree: 1%
          + [PDF 문서 암호화 및 해독](developing/encrypting-decrypting-pdf-documents.md)
          + [데이터 가져오기 및 내보내기](developing/importing-exporting-data.md)
          + [사용자 관리](developing/users.md)
-         + [AEM Forms 리포지토리 작업](developing/aem-forms-repository.md)
+         + [AEM Forms 저장소 작업](developing/aem-forms-repository.md)
          + [바코드 양식 작업](developing/barcoded-forms.md)
          + [자격 증명 사용](developing/credentials.md)
          + [PDF/A 문서 작업](developing/pdf-a-documents.md)
          + [PDF 유틸리티 작업](developing/pdf-utilities.md)
          + [XMP 유틸리티 작업](developing/xmp-utilities.md)
-         + [백업용 AEM 양식 준비](developing/preparing-aem-forms-backup.md)
+         + [백업 AEM Forms 준비](developing/preparing-aem-forms-backup.md)
          + [프로그래밍 방식으로 끝점 관리](developing/programmatically-endpoints.md)
          + [환경 설정 노드 프로그래밍 방식 관리](developing/programmatically-preferences-nodes.md)
          + [정책으로 문서 보호](developing/protecting-documents-policies.md)
