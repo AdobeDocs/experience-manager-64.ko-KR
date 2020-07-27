@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: AEM 6.4 작성 사용 안내서
 user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: e0b25517821971098978db078b2f205a8a380459
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 98%
+source-wordcount: '267'
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ ht-degree: 98%
    + [대상자 관리](managing-audiences.md)
    + [오퍼 생성 및 관리](offerlib.md)
    + [세그멘테이션 이해](segmentation-overview.md)
-+ AEM 및 Adobe Campaign {aem-adobe-campaign}
++ AEM 및 Adobe Campaign {#aem-adobe-campaign}
    + [Adobe Campaign을 사용한 작업](adobe-campaign.md)
    + [Adobe Campaign Classic 및 Adobe Campaign Standard 작업](campaign.md)
    + [Adobe Campaign 타깃팅](target-adobe-campaign.md)
