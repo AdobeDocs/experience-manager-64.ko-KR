@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fd393bb9-f77e-4fe0-a7a9-97181ca58136
 translation-type: tm+mt
-source-git-commit: 3309352520878fd5b2bff91ce4d18d5b1a90b97d
+source-git-commit: 6d0bd714548e62dcb63298e3d26c84c1a3d37bc9
 workflow-type: tm+mt
-source-wordcount: '2598'
+source-wordcount: '2597'
 ht-degree: 2%
 
 ---
@@ -85,7 +85,7 @@ Live Copy `Blueprint` 가 컨텐츠를 상속할 수 있는 페이지를 [블루
 
    * Live Copy를 처음으로 설정하면 RolloutConfig(LiveActions를 트리거함)도 사용됩니다.
 
-### 새 동기화 작업 만들기 {#creating-a-new-synchronization-action}
+## 새 동기화 작업 만들기 {#creating-a-new-synchronization-action}
 
 롤아웃 구성에 사용할 사용자 정의 동기화 작업을 만듭니다. 설치된 작업이 [특정 응용 프로그램 요구 사항을](/help/sites-administering/msm-sync.md#installed-synchronization-actions) 충족하지 않을 때 동기화 작업을 만듭니다. 이렇게 하려면 두 개의 클래스를 만듭니다.
 
@@ -105,7 +105,7 @@ The `LiveActionFactory` creates instances of the `LiveAction` class for a given 
    * `createAction`: 의 인스턴스를 만듭니다 `LiveAction`. 선택적 매개 `Resource` 변수를 사용하여 구성 정보를 제공할 수 있습니다.
    * `createsAction`: 연결된 이름을 반환합니다 `LiveAction`.
 
-#### LiveAction 구성 노드 액세스 {#accessing-the-liveaction-configuration-node}
+### LiveAction 구성 노드 액세스 {#accessing-the-liveaction-configuration-node}
 
 저장소의 `LiveAction` 구성 노드를 사용하여 인스턴스의 런타임 동작에 영향을 주는 정보를 `LiveAction` 저장합니다. 구성을 저장하는 저장소의 노드는 런타임 시 개체에 `LiveAction` 사용할 수 `LiveActionFactory` 있습니다. 따라서 구성 노드에 속성을 추가하여 필요에 따라 구현에서 사용할 수 `LiveActionFactory` 있습니다.
 
@@ -125,7 +125,7 @@ public LiveAction createAction(Resource resource) throws WCMException {
 }
 ```
 
-#### Target 노드, 소스 노드 및 LiveRelationship 액세스 {#accessing-target-nodes-source-nodes-and-the-liverelationship}
+### Target 노드, 소스 노드 및 LiveRelationship 액세스 {#accessing-target-nodes-source-nodes-and-the-liverelationship}
 
 다음 개체는 개체의 `execute` 메서드 매개 변수로 `LiveAction` 제공됩니다.
 
@@ -150,7 +150,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 >
 >인수 `Resource` 는 개체 `null` 와 같은 개체 `Resources` 에 적응하지 않는 개체일 수 `Node` [`NonExistingResource`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html) 있습니다.
 
-### Creating a New Rollout Configuration {#creating-a-new-rollout-configuration}
+## Creating a New Rollout Configuration {#creating-a-new-rollout-configuration}
 
 설치된 롤아웃 구성이 응용 프로그램 요구 사항을 충족하지 않을 때 롤아웃 구성을 만듭니다.
 
@@ -163,7 +163,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 >
 >롤아웃을 사용자 지정하기 위한 [우수 사례를 참조하십시오](/help/sites-administering/msm-best-practices.md#customizing-rollouts).
 
-#### Create the Rollout Configuration {#create-the-rollout-configuration}
+### Create the Rollout Configuration {#create-the-rollout-configuration}
 
 새 롤아웃 구성을 만들려면:
 
@@ -212,7 +212,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 1. 모두 **저장을 클릭합니다**.
 
-#### Add Synchronization Actions to the Rollout Configuration {#add-synchronization-actions-to-the-rollout-configuration}
+### Add Synchronization Actions to the Rollout Configuration {#add-synchronization-actions-to-the-rollout-configuration}
 
 롤아웃 구성은 노드 아래에 만든 [롤아웃 구성 노드](#create-the-rollout-configuration) 아래에 `/apps/msm/<your-project>/rolloutconfigs` 저장됩니다.
 
@@ -233,7 +233,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 1. 모두 **저장을 클릭합니다**.
 
-### 간단한 LiveActionFactory 클래스 만들기 및 사용 {#creating-and-using-a-simple-liveactionfactory-class}
+## 간단한 LiveActionFactory 클래스 만들기 및 사용 {#creating-and-using-a-simple-liveactionfactory-class}
 
 이 섹션의 절차를 따라 개발 `LiveActionFactory` 을 수행하고 롤아웃 구성에 사용합니다. 이 절차에서는 Maven과 Eclipse를 사용하여 다음을 개발하고 배포합니다 `LiveActionFactory`.
 
@@ -252,7 +252,7 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 * [GitHub에서 Experiencemanager-java-msmrollout 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout)
 * 프로젝트를 ZIP 파일 [로 다운로드](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout/archive/master.zip)
 
-#### 마스터 프로젝트 만들기 {#create-the-maven-project}
+### 마스터 프로젝트 만들기 {#create-the-maven-project}
 
 다음 절차를 수행하려면 Maven 설정 파일에 adobe-public 프로필을 추가해야 합니다.
 
@@ -278,7 +278,7 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 
 1. Eclipse를 시작하고 [Maven 프로젝트를 가져옵니다](/help/sites-developing/howto-projects-eclipse.md#import-the-maven-project-into-eclipse).
 
-#### POM 파일에 종속성 추가 {#add-dependencies-to-the-pom-file}
+### POM 파일에 종속성 추가 {#add-dependencies-to-the-pom-file}
 
 Eclipse 컴파일러가 코드에서 사용되는 클래스를 참조할 수 있도록 종속성을 `LiveActionFactory` 추가합니다.
 
@@ -368,7 +368,7 @@ Eclipse 컴파일러가 코드에서 사용되는 클래스를 참조할 수 있
     </dependency>
    ```
 
-#### LiveActionFactory 구현 {#implement-liveactionfactory}
+### LiveActionFactory 구현 {#implement-liveactionfactory}
 
 다음 `LiveActionFactory` 클래스는 소스 및 대상 페이지에 대한 메시지를 기록하고 소스 노드에서 대상 노드로 `LiveAction` `cq:lastModifiedBy` 속성을 복사하는 것을 구현합니다. 라이브 작업의 이름입니다 `exampleLiveAction`.
 
@@ -534,7 +534,7 @@ Eclipse 컴파일러가 코드에서 사용되는 클래스를 참조할 수 있
    13.08.2013 14:34:55.454 *INFO* [OsgiInstallerImpl] org.apache.sling.audit.osgi.installer Started bundle com.adobe.example.msm.MyLiveActionFactory-bundle [316]
    ```
 
-#### Create the Example Rollout Configuration {#create-the-example-rollout-configuration}
+### Create the Example Rollout Configuration {#create-the-example-rollout-configuration}
 
 사용자가 만든 MSM 롤아웃 구성을 `LiveActionFactory` 만듭니다.
 
@@ -544,7 +544,7 @@ Eclipse 컴파일러가 코드에서 사용되는 클래스를 참조할 수 있
    * **이름**: expleroloutconfig
    * **cq:trigger**: `publish`
 
-#### 예제 롤아웃 구성에 라이브 작업 추가 {#add-the-live-action-to-the-example-rollout-configuration}
+### 예제 롤아웃 구성에 라이브 작업 추가 {#add-the-live-action-to-the-example-rollout-configuration}
 
 이전 프로시저에서 만든 롤아웃 구성을 구성하여 클래스를 사용하도록 `ExampleLiveActionFactory` 합니다.
 
@@ -565,7 +565,7 @@ Eclipse 컴파일러가 코드에서 사용되는 클래스를 참조할 수 있
 
 1. 모두 **저장을 클릭합니다**.
 
-#### Live Copy 만들기 {#create-the-live-copy}
+### Live Copy 만들기 {#create-the-live-copy}
 
 [롤아웃](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) 구성을 사용하여 We.Retail 참조 사이트의 영어/제품 분기의 Live Copy를 만듭니다.
 
@@ -581,7 +581,7 @@ Eclipse 컴파일러가 코드에서 사용되는 클래스를 참조할 수 있
 ```
 
 <!--
-### Removing the Chapters Step in the Create Site Wizard {#removing-the-chapters-step-in-the-create-site-wizard}
+## Removing the Chapters Step in the Create Site Wizard {#removing-the-chapters-step-in-the-create-site-wizard}
 
 In some cases, the **Chapters** selection is not required in the create site wizard (only the **Languages** selection is required). To remove this step in the default We.Retail English blueprint:
 
@@ -600,7 +600,7 @@ In some cases, the **Chapters** selection is not required in the create site wiz
     1. **Name** = `xtype`; **Type** = `String`; **Value** = `hidden`
 -->
 
-### 언어 이름 및 기본 국가 변경 {#changing-language-names-and-default-countries}
+## 언어 이름 및 기본 국가 변경 {#changing-language-names-and-default-countries}
 
 AEM에서는 기본 언어 및 국가 코드를 사용합니다.
 
@@ -630,9 +630,7 @@ MSM은 언어 및 국가 코드의 저장된 목록을 사용하여 페이지의
 
    새 폴더 이름을 지정합니다 `wcm`.
 
-1. 이전 단계를 반복하여 `/apps/wcm/core` 폴더 트리를 만듭니다. Create a node of type `sling:Folder` in core called `resources`.
-
-   ![chlimage_1-39](assets/chlimage_1-39.png)
+1. 이전 단계를 반복하여 `/apps/wcm/core` 폴더 트리를 만듭니다. Create a node of type `sling:Folder` in core called `resources`. <!-- ![chlimage_1-39](assets/chlimage_1-39.png) -->
 
 1. 노드를 마우스 오른쪽 단추로 `/libs/wcm/core/resources/languages` 클릭하고 **복사를 클릭합니다**.
 1. 폴더를 마우스 오른쪽 단추로 `/apps/wcm/core/resources` 클릭하고 **붙여넣기를 클릭합니다**. 필요에 따라 하위 노드를 수정합니다.
@@ -642,7 +640,7 @@ MSM은 언어 및 국가 코드의 저장된 목록을 사용하여 페이지의
 
    ![chlimage_1-40](assets/chlimage_1-40.png)
 
-### 페이지 속성에서 MSM 잠금 구성(터치 지원 UI) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
+## 페이지 속성에서 MSM 잠금 구성(터치 지원 UI) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
 
 사용자 지정 페이지 속성을 만들 때 새 속성이 Live Copy로 롤아웃할 수 있는지 여부를 고려해야 할 수 있습니다.
 
