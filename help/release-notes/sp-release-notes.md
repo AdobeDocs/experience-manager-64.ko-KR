@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: ba2dec27319c1c7094db9f08130a50164c8e9713
+source-git-commit: 42238ab0c76fbe114ae1646c9f69311df45d8722
 workflow-type: tm+mt
-source-wordcount: '21534'
+source-wordcount: '21532'
 ht-degree: 26%
 
 ---
@@ -99,7 +99,7 @@ AEM 6.4.8.0 is an important update that includes new features, key customer requ
 
 ### 통합 {#integrations-6480}
 
-* Experience Manager 클라우드 서비스에서 **Adobe Analytics을 구성하는 동안 보고 소스** 를 선택하면 **회사****및** 보고세트 드롭다운 메뉴가 숨겨집니다(NPR-31729).
+* Experience Manager 클라우드 서비스에서 **Adobe Analytics를 구성하는 동안 보고 소스** 를 선택하면 **회사****및** 보고세트 드롭다운 메뉴가 숨겨집니다(NPR-31729).
 
 * Adobe Campaign에 연결된 뉴스레터의 언어 사본이 만들어지면 Adobe Campaign 속성이 정리되지 않지만, Adobe Campaign에 연결된 뉴스레터가 복사되거나 붙여넣을 때 정리됩니다(NPR-32540).
 
@@ -995,10 +995,6 @@ Forms Manager의 시작 검토 마법사 및 자산 이동 마법사에 핸들�
 
 * XDP 템플릿의 일부 JPEG 이미지가 제대로 렌더링되지 않습니다.  NPR-26702: LC-3917457용 핫픽스
 
-**양식 - 사용되지 않음**
-
-* TIFF 파일을 처리하는 동안 종이 캡처 서비스가 충돌합니다. NPR-28079: CQ-4240649용 핫픽스
-
 **양식 - 워크플로우**
 
 * JBoss 7에서는 기본 제출 프로세스를 사용하는 HTML5 양식을 사용할 수 없습니다. NPR-28675: CQ-4243928용 핫픽스
@@ -1254,7 +1250,8 @@ AEM 6.4.3.0 Forms의 주요 기능은 다음과 같습니다.
 **PDF Generator 서비스**
 
 * PDF Generator에 대한 표준 보고 및 규격 설정을 표시할 수 없습니다. NPR-26715: CQ-4253384용 핫픽스
-* convertpdf 바이너리 파일이 AIX Forms Add-on 패키지에 없습니다. PDFA 서비스를 호출하는 동안 오류가 발생합니다. CQ-4257873용 핫픽스
+* convertpdf 바이너리 파일이 AIX Forms Add-on 패키지에 없습니다. 이 경우 PDFA 서비스를 호출하는 동안 오류가 발생합니다. CQ-4257873용 핫픽스
+* TIFF 파일을 처리하는 동안 종이 캡처 서비스가 충돌합니다. NPR-28079: CQ-4240649용 핫픽스
 
 **문서 서비스**
 
@@ -1951,7 +1948,7 @@ AEM Forms의 주요 사항은 다음과 같습니다.
 * 작성자 및 게시 인스턴스의 마이그레이션 로그에 오류가 있습니다. CQ-4239635용 핫픽스
 * 응용 양식의 게시 제출에서 오류 로그에 있는 &quot;sun.util.calendar.ZoneInfo&quot; 클래스에 대해 deserialization 허용되지 않음&quot;과 같은 역직렬화 오류가 발생했습니다. CQ-4240419용 핫픽스
 * 상태 필드가 모바일 양식 변환에서 채워지지 않습니다. CQ-4240597용 핫픽스
-* 패턴 방지 목록에서 템플릿에 있는 구성 요소의 참조 사용을 제거합니다. CQ-4239217용 핫픽스
+* 패턴 방지 목록에서 템플릿의 구성 요소에 대한 참조 사용을 제거합니다. CQ-4239217용 핫픽스
 * 부동 또는 소수점으로 설정된 HTML5 숫자 상자는 다양한 브라우저에서 다른 유효성 검사 결과를 제공합니다. NPR-23528: CQ-4244097용 핫픽스
 * (이미지 업로드) DOR 미리 보기에 이미지가 표시되지 않습니다. CQ-4243178용 핫픽스
 * JEE 서버에서 &#39;이메일 PDF&#39; 및 &#39;첨부 파일 포함&#39;으로 응용 양식을 제출하려고 하면 오류가 발생합니다. CQ-4239894용 핫픽스
@@ -1981,7 +1978,7 @@ AEM Forms의 주요 사항은 다음과 같습니다.
 * 데이터베이스를 쿼리하여 검색된 초안 수가 포털에 있는 초안 수보다 많습니다. CQ-4241489용 핫픽스
 * 업그레이드 전 서버에서 제출된 양식이 업그레이드된 서버에 없습니다. CQ-4241490용 핫픽스
 * 제출 탭의 UI에 표시되는 양식은 전송 메시지가 성공했음에도 불구하고 제출되지 않음 상태입니다. CQ-4241487용 핫픽스
-* guideContext는 그 자체가 개체인 customPropertyMap이 포함되어 있는 guideContext의 필드를 깊이 복사하여 만들어야 합니다. CQ-4240126용 핫픽스
+* guideContext는 자체를 개체인 customPropertyMap이 포함되어 있는 guideContext의 필드를 깊이 복사하여 만들어야 합니다. CQ-4240126용 핫픽스
 * 양식을 저장하는 동안 오류가 발생했습니다. CQ-4240763용 핫픽스
 * 양식 포털 초안 및 제출 구성에 DB 구성이 제공되었음에도 불구하고 저장된 양식 및 제출된 양식에 대한 항목이 crx/de로 채워집니다. CQ-4240726용 핫픽스
 * (검색 및 라이브러리) 고급 검색 제목 고정 값은 동일하지 않고 포함이어야 합니다. CQ-4245499용 핫픽스
