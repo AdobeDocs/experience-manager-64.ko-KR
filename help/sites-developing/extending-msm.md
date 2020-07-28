@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fd393bb9-f77e-4fe0-a7a9-97181ca58136
 translation-type: tm+mt
-source-git-commit: 6d0bd714548e62dcb63298e3d26c84c1a3d37bc9
+source-git-commit: 0cb1a323ac56b5b8ecd07f84c4840f1b466d5796
 workflow-type: tm+mt
-source-wordcount: '2597'
+source-wordcount: '2588'
 ht-degree: 2%
 
 ---
@@ -24,8 +24,9 @@ ht-degree: 2%
 
 * MSM Java API의 주요 구성원에 대해 알아봅니다.
 * 롤아웃 구성에 사용할 수 있는 새 동기화 작업을 만듭니다.
-* 사이트 만들기 마법사에서 &quot;장&quot; 단계를 제거합니다.
 * 기본 언어 및 국가 코드를 수정합니다.
+
+<!-- * Remove the "Chapters" step in the Create Site wizard. -->
 
 >[!NOTE]
 >
