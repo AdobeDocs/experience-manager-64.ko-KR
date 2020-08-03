@@ -10,10 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 translation-type: tm+mt
-source-git-commit: 5cf67e97775b39d6ec78ea0db46b5bc4a4476b78
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
-source-wordcount: '2780'
-ht-degree: 27%
+source-wordcount: '2844'
+ht-degree: 29%
 
 ---
 
@@ -22,30 +22,12 @@ ht-degree: 27%
 
 ## 릴리스 정보 {#release-information}
 
-<table> 
- <tbody>
-  <tr>
-   <th>제품</th> 
-   <td>Adobe Experience Manager<br /> </td> 
-  </tr>
-  <tr>
-   <th>버전</th> 
-   <td>6.4</td> 
-  </tr>
-  <tr>
-   <th>유형</th> 
-   <td>주요 릴리스</td> 
-  </tr>
-  <tr>
-   <th>일반 공급 일자</th> 
-   <td>April 4, 2018<br /> </td> 
-  </tr>
-  <tr>
-   <th>권장 업데이트</th> 
-   <td>See <a href="https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html">AEM releases and updates</a></td> 
-  </tr>
- </tbody>
-</table>
+| 제품 | Adobe Experience Manager |
+|---|---|
+| 버전 | 6.4 |
+| 유형 | 주요 릴리스 |
+| 일반 공급 일자 | 2018년 4월 4일 |
+| 권장 업데이트 | See [AEM releases and updates](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html) |
 
 ### 일반 {#trivia}
 
@@ -55,7 +37,7 @@ Adobe Experience Manager 6.4는 일반적으로 2018년 4월 4일 이후에 사�
 
 >[!NOTE]
 >
->모든 새로운 기능 팩은 [서비스 팩을 통해서만 제공되므로 최신 서비스 팩을 설치하는 것이 좋습니다](https://helpx.adobe.com/kr/experience-manager/maintenance-releases-roadmap.html).
+>모든 새로운 기능 팩은 [서비스 팩을 통해서만 제공되므로 Adobe은 최신 서비스 팩을 설치하는 것이 좋습니다](https://helpx.adobe.com/kr/experience-manager/maintenance-releases-roadmap.html).
 
 ## 새로운 기능 {#what-s-new}
 
@@ -90,7 +72,7 @@ UI의 생산성과 사용 편의성을 향상시키기 위해 UI에 다양한 �
 
 #### 컨텐츠 리포지토리 {#content-repository}
 
-* 온라인 개정 정리 기능을 통해 보다 빠르고 효율적인 구성 내부 테스트에 따르면 새 테일 구성 요소는 최대 10배 더 빨라졌으며 AEM 6.3에 비해 IOPS가 더 낮은 디스크 공간을 재확보할 수 있습니다. 이로 인해 온라인 개정 정리 실행 중에도 성능이 저하됩니다. 자세한 내용은 설명서 페이지 [를 참조하십시오](/help/sites-deploying/revision-cleanup.md#full-and-tail-compaction-modes).
+* 온라인 개정 정리 기능을 통해 보다 빠르고 효율적인 구성 내부 테스트 결과, 새 테일 구성 요소는 최대 10배 더 빨라졌으며 AEM 6.3과 비교하여 IOPS가 더 적은 디스크 공간을 재확보할 수 있습니다. 이로 인해 온라인 개정 정리 실행 중에 성능이 더 낮아집니다. 자세한 내용은 설명서 페이지 [를 참조하십시오](/help/sites-deploying/revision-cleanup.md#full-and-tail-compaction-modes).
 
 * MongoMK에 대한 연속 개정 정리 예약 정리 유지 관리 대체
 * 문서 노드 수정 시 효율성 향상
@@ -101,7 +83,7 @@ UI의 생산성과 사용 편의성을 향상시키기 위해 UI에 다양한 �
 
    * 색인 일관성 검사
    * 인덱싱 통계
-   * 색인 구성 Im/내보내기
+   * 색인 구성 가져오기 또는 내보내기
    * 다시 인덱싱
 
 * Lucene과 관련된 저장소 증가 감소 - 전반적인 시스템 성능 향상
@@ -110,7 +92,7 @@ UI의 생산성과 사용 편의성을 향상시키기 위해 UI에 다양한 �
 
 #### 모니터링 {#monitoring}
 
-* 새 [시스템 개요에서는](/help/sites-administering/operations-dashboard.md#system-overview) 모든 성능 관련 시스템 상태 및 활동에 대한 스냅샷 보기를 제공합니다
+* 새 [시스템 개요에서는](/help/sites-administering/operations-dashboard.md#system-overview) 모든 성능 관련 시스템 상태 및 활동에 대한 스냅샷 보기를 제공합니다.
 * 색인, 쿼리 및 유지 관리에 [대한](/help/sites-administering/operations-dashboard.md#health-checks) 새로운 상태 검사 집합
 
 #### 프로젝트 및 워크플로우 {#projects-and-workflows}
@@ -136,7 +118,7 @@ Full list of changes in [AEM Sites and Add-ons](sites.md).
 
 **[컨텐츠 조각](/help/assets/content-fragments.md)**
 
-6.4의 새로운 기능은 시각적 [컨텐츠 모델](/help/assets/content-fragments-models.md) 편집기입니다. 또한 컨텐츠 서비스에 포함할 유연한 HTML 출력 및 JSON을 제공하기 위해 [구성 가능한 새로운 구성](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) 요소입니다.
+6.4의 새로운 기능은 시각적 [컨텐츠 모델](/help/assets/content-fragments-models.md) 편집기입니다. 또한 컨텐츠 서비스에 포함할 유연한 HTML 출력 및 JSON을 제공하기 위해 [구성 가능한 새로운 구성](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/content-fragment-component.html) 요소입니다.
 
 **경험 조각**
 
@@ -148,9 +130,9 @@ Full list of changes in [AEM Sites and Add-ons](sites.md).
 
 #### 신속한 사이트 구축 {#gettings-sites-built-quicker}
 
-AEM 6.4는 차세대 구성 요소 모델로 변환을 완료합니다. AEM 6.3에 도입된 핵심 구성 요소 개념은 이제 스타일 시스템과 연계되어 새 사이트를 만들고 기존 사이트를 확장하는 효율적인 방법을 제공합니다.
+AEM 6.4는 차세대 구성 요소 모델로 변환을 완료합니다. AEM 6.3에 도입된 핵심 구성 요소 개념(Core Components 개념)은 이제 스타일 시스템과 연계되어 새로운 사이트를 구축하고 기존 사이트를 확장하는 효율적인 방법을 제공합니다.
 
-새로운 구성 요소 모델을 가장 잘 활용하는 방법을 살펴보려면 권장 자습서입니다. [AEM Sites 시작하기 - WKND 자습서](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+새로운 구성 요소 모델을 가장 잘 활용하는 방법을 살펴보려면 권장 자습서입니다. [AEM Sites 시작하기 - WKND 자습서](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 #### 화면 추가 기능 {#screens-add-on}
 
@@ -160,7 +142,7 @@ AEM 6.4는 차세대 구성 요소 모델로 변환을 완료합니다. AEM 6.3�
 
 ### Experience Manager Communities {#experience-manager-communities}
 
-AEM 6.4에는 커뮤니티에 많은 새로운 기능과 개선 사항이 추가되었습니다. 전체 변경 사항 목록은 [AEM Communities에서 사용할 수 있습니다](communities-release-notes.md). 이 릴리스의 주요 기능은 다음과 같습니다.
+AEM 6.4에는 커뮤니티에 많은 새로운 기능과 향상된 기능이 추가되었습니다. 전체 변경 사항 목록은 [AEM Communities에서 사용할 수 있습니다](communities-release-notes.md). 이 릴리스의 주요 기능은 다음과 같습니다.
 
 #### 중재 개선 사항 {#enhancements-to-moderation}
 
@@ -180,7 +162,7 @@ AEM 6.4에는 커뮤니티에 많은 새로운 기능과 개선 사항이 추가
 
 #### UGC 및 사용자 프로필 삭제 {#delete-ugc-and-user-profiles}
 
-AEM 6.4 Communities [는 최종 사용자가 데이터를 제어할 수 있도록 기본 API](/help/communities/user-ugc-management-service.md) 및 샘플 [서블릿을](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet) 노출합니다. 또한 이러한 API를 통해 데이터 처리 및 데이터 관리 조직이 EU GDPR 준수 요청을 처리할 수 있습니다.
+AEM 6.4 Communities [는 최종 사용자가 데이터를 제어할 수 있도록 기본 API](/help/communities/user-ugc-management-service.md) 및 샘플 [서블릿을](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet) 제공합니다. 또한 이러한 API를 통해 데이터 처리 및 데이터 관리 조직이 EU GDPR 준수 요청을 처리할 수 있습니다.
 
 #### 사이트 및 그룹 관리에 대한 개선 사항 {#enhancements-to-site-and-group-management}
 
@@ -202,21 +184,21 @@ AEM 6.4 Communities [는 최종 사용자가 데이터를 제어할 수 있도�
 
 ### Experience Manager 자산 {#experience-manager-assets}
 
-AEM 6.4에는 새롭게 향상된 CreativeCloud 통합, 주요 인공 지능(AI) 혁신, 향상된 메타데이터 관리, 향상된 보고 기능, 향상된 전반적인 사용자 경험 등 자산에 대한 몇 가지 새로운 기능과 향상된 기능이 포함되어 있습니다. AEM Assets에서 사용할 수 있는 변경 사항의 전체 [목록입니다](assets.md). 릴리스의 주요 내용은 다음과 같습니다.
+AEM 6.4에는 새롭게 향상된 CreativeCloud 통합, 주요 인공 지능(AI) 혁신, 향상된 메타데이터 관리, 향상된 보고 기능, 향상된 전반적인 사용자 경험 등 에셋에 대한 몇 가지 새로운 기능과 향상된 기능이 포함되어 있습니다. AEM Assets에서 사용할 수 있는 변경 사항의 전체 [목록입니다](assets.md). 릴리스의 주요 내용은 다음과 같습니다.
 
 **Adobe Asset Link**
 
-Creative Cloud for enterprise의 Adobe Asset Link를 사용하면 콘텐츠 제작 과정에서 크리에이티브 팀과 마케터 간의 공동 작업을 간소화할 수 있습니다. 크리에이티브 전문가는 Creative Cloud for enterprise의 새로운 기본 기능을 사용하여 원하는 툴을 그대로 유지하면서 Photoshop CC, Illustrator CC 및 InDesign CC와 AEM을 연결할 수 있습니다.
+기업을 위한 Creative Cloud의 Adobe 에셋 링크(Asset Link)를 사용하면 컨텐츠 제작 과정에서 크리에이티브 담당자와 마케터 간의 공동 작업을 간소화할 수 있습니다. 크리에이티브 전문가가 원하는 툴을 그대로 유지하면서 Photoshop CC, Illustrator CC 및 InDesign CC를 AEM과 연결하는 기업을 위한 새로운 기본 기능입니다.
 
-이 기능, 사전 요구 사항 및 이 기능에 액세스하는 방법에 대한 자세한 내용은 [Adobe Asset Link를 참조하십시오](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html).
+이 기능, 사전 요구 사항 및 이 기능에 액세스하는 방법에 대한 자세한 내용은 [Adobe 자산 링크를 참조하십시오](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html).
 
 ![adobe_asset_link](assets/adobe_asset_link.png)
 
 **AEM Desktop App**
 
-AEM 데스크톱 앱이 AEM 6.4와 호환되는 버전 1.8로 업데이트되었습니다. AEM 데스크톱 앱에 대한 전체 변경 사항 목록은 전용 [AEM 데스크톱 앱 릴리스 노트](https://helpx.adobe.com/experience-manager/desktop-app/release-notes.html) 문서에서 제공됩니다.
+AEM 데스크탑 앱이 AEM 6.4와 호환되는 버전 1.8로 업데이트되었습니다. AEM 데스크탑 앱에 대한 전체 변경 사항은 전용 [AEM 데스크탑 앱 릴리스 노트](https://docs.adobe.com/content/help/ko-KR/experience-manager-desktop-app/using/release-notes.html) 문서에 있습니다.
 
-AEM 6.3 릴리스 이후 향상된 기능에는 백그라운드에서 계층 폴더를 업로드하는 기능, 새로운 UI를 통해 자산 백그라운드 작업 모니터링, 향상된 캐싱, 네트워킹 및 로그인, 전반적인 안정성 개선 등이 포함되어 있습니다. 설명서에는 [모범 사례 안내서도 포함되어 있습니다](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
+AEM 6.3 릴리스 이후 향상된 기능에는 백그라운드에서 계층 폴더를 업로드하는 기능, 새로운 UI를 통해 자산 백그라운드 작업 모니터링, 향상된 캐싱, 네트워킹 및 로그인, 전반적인 안정성 개선 등이 포함되어 있습니다. 설명서에는 [모범 사례 안내서도 포함되어 있습니다](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html).
 
 **Adobe Sensei 서비스**
 
@@ -226,11 +208,11 @@ AEM 6.3 릴리스 이후 향상된 기능에는 백그라운드에서 계층 폴
 
 **메타데이터**
 
-다양한 향상된 기능에는 [계단식 메타데이터와 같은 많은 자산과 고급 메타데이터 구문에 대한 메타데이터를 동시에 가져오고 내보내는 기능이 포함되어 있습니다](/help/assets/cascading-metadata.md).
+다양한 향상된 기능에는 많은 양의 자산과 [계단식 메타데이터와 같은 고급 메타데이터 구문에 대한 메타데이터를 동시에 가져오고 내보내는 기능이 포함되어 있습니다](/help/assets/cascading-metadata.md).
 
 **보고서**
 
-자산 보고는 신규 보고 프레임워크, 사용자 경험 및 고객 사용을 위한 더 많은 OOTB 보고서로 AEM 6.4에서 대폭적으로 조정되었습니다. 다양한 보고서를 생성하는 방법에 대해 알아보려면 자산 [보고서를 참조하십시오](/help/assets/asset-reports.md).
+자산 보고는 새로운 보고 프레임워크, 사용자 경험 및 고객 활용 사례를 위한 더 많은 OOTB 보고서로 AEM 6.4에서 대폭적으로 향상되었습니다. 다양한 보고서를 생성하는 방법에 대해 알아보려면 자산 [보고서를 참조하십시오](/help/assets/asset-reports.md).
 
 **사용자 경험**
 
@@ -238,15 +220,15 @@ AEM 6.3 릴리스 이후 향상된 기능에는 백그라운드에서 계층 폴
 
 **Brand Portal**
 
-메타데이터, 보고, 디지털 권한, 로그인 환경 및 자산 배포를 위한 게시 성능 등의 다양한 향상된 기능을 제공합니다. 새로운 개선 사항 및 기능에 대한 자세한 내용은 AEM Assets 브랜드 포털 [의 새로운 기능을 참조하십시오](https://helpx.adobe.com/kr/experience-manager/brand-portal/using/whats-new.html).
+메타데이터, 보고, 디지털 권한, 로그인 환경 및 자산 배포를 위한 게시 성능 등의 다양한 향상된 기능을 제공합니다. 새로운 개선 사항 및 기능에 대한 자세한 내용은 AEM Assets 브랜드 포털 [의 새로운 기능을 참조하십시오](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/introduction/whats-new.html).
 
 #### Dynamic Media Add-on {#dynamic-media-add-on}
 
-AEM 6.4에는 Dynamic Media에 대한 많은 새로운 기능과 개선 사항이 포함되어 있습니다. 전체 목록은 [AEM Assets에서 사용할 수 있습니다](assets.md). 주요 하이라이트는 다음과 같습니다.
+AEM 6.4에는 Dynamic Media에 대한 많은 새로운 기능과 향상된 기능이 포함되어 있습니다. 전체 목록은 [AEM Assets에서 사용할 수 있습니다](assets.md). 주요 하이라이트는 다음과 같습니다.
 
 **스마트 자르기**
 
-Adobe Sensei 기반의 스마트 자르기는 원본을 훼손하지 않는 이미지 자르기를 자동으로 제공하므로 반응형 디자인을 위한 관심 영역을 그대로 유지할 수 있습니다. 필요에 따라 잘린 이미지 제안을 미리 보고 수동으로 조정할 수 있습니다. 또한 이 기능을 사용하면 제품 이미지에 대한 자동 견본 생성을 할 수 있습니다.
+Adobe Sensei에서 제공하는 스마트 자르기는 원본을 훼손하지 않는 이미지 자르기를 자동으로 제공하므로 반응형 디자인을 위한 관심 영역을 그대로 유지할 수 있습니다. 필요에 따라 잘린 이미지 제안을 미리 보고 수동으로 조정할 수 있습니다. 또한 이 기능을 사용하면 제품 이미지에 대한 자동 견본 생성을 할 수 있습니다.
 
 스마트 자르기 사용에 대한 자세한 내용은 [이미지 프로필](/help/assets/image-profiles.md) 설명서를 참조하십시오.
 
@@ -268,7 +250,7 @@ Dynamic Media [구성 요소에서 스마트 자르기 작업에 대한 자세�
 
 **3D 자산**
 
-3D 경험 저작을 위한 [Creative Cloud 애플리케이션인 Adobe Dimension CC와](https://www.adobe.com/products/dimension.html)새로운 통합
+3D 경험 제작을 위한 Creative Cloud 애플리케이션인 [Adobe Dimension CC](https://www.adobe.com/products/dimension.html)와의 새로운 통합
 
 자세한 [내용은 3D 자산](/help/assets/assets-3d.md) 사용 설명서를 참조하십시오.
 
@@ -290,13 +272,13 @@ AEM Forms [릴리스 정보](forms.md) 페이지에 대한 자세한 내용 Also
 
 Livefyre를 AEM 6.4 인스턴스와 통합할 수 있습니다. AEM과 Livefyre를 통합하는 방법에 대한 정보는 다음과 같습니다.
 
-* [Livefyre 통합](https://helpx.adobe.com/kr/experience-manager/6-4/sites/administering/using/livefyre.html)
+* [Livefyre 통합](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html)
 
 ### 고객 중심 개발 활용 {#leverage-customer-focused-development}
 
 Adobe는 고객 중심 개발 모델을 사용하여 고객이 사양, 개발 및 테스트 중에 개발 프로세스의 모든 단계에 기여할 수 있도록 합니다. 이 프로세스에 참여하신 모든 고객과 파트너에게 감사의 인사를 드립니다.
 
-Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 순위 지정 및 추적을 위한 절차와 프로세스를 마련했습니다. The [Adobe Marketing Cloud Support Portal](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html) is integrated with the Adobe Enhancement &amp; Defect Tracking System. 고객 문의는 가능한 경우 고객 지원 센터에서 식별 및 해결합니다. R&amp;D로 에스컬레이션하면 모든 고객 정보가 캡처되고 우선 순위 지정 및 보고용으로 사용됩니다. 개발 중에는 유료 지원 및 보증 문제, 유료 고객 개선 사항에 우선 순위가 부여됩니다.
+Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 순위 지정 및 추적을 위한 절차와 프로세스를 마련했습니다. The [Adobe Marketing Cloud Support Portal](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html) is integrated with the Adobe Enhancement &amp; Defect Tracking System. 고객 문의는 가능한 경우 고객 지원 센터에서 식별 및 해결합니다. R&amp;D로 에스컬레이션하면 모든 고객 정보가 캡처되고 우선 순위 지정 및 보고용으로 사용됩니다. 개발 중에는 유료 지원 및 보증 문제, 유료 고객 개선 사항에 우선 순위가 부여됩니다.
 
 이러한 우선 순위 지정 프로세스를 통해 500가지 이상의 고객 중심 변경 사항이 AEM 6.4에서 수정되었습니다.
 
@@ -306,11 +288,11 @@ Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 
 
 * 독립형 빠른 시작: cq-quickstart-6.4.0.jar
 * 응용 프로그램 서버 빠른 시작: cq-quickstart-6.4.0.war
-* Dispatcher 4.3.1 or newer for various web servers and platforms ([download link](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html))
-* Eclipse IDE용 플러그인([자세히 보기 및 다운로드](/help/sites-developing/aem-eclipse.md))
+* 다양한 웹 서버 및 플랫폼용 Dispatcher 4.3.1 이상 다운로드 [링크를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/release-notes.html).
+* Plug-in for Eclipse IDE. [Read more and download](/help/sites-developing/aem-eclipse.md).
 
-* 괄호 코드 편집기 확장([자세히 보기 및 다운로드](/help/sites-developing/aem-brackets.md))
-* Maven/Gradle 종속성([다운로드 링크](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/aem/uber-jar/6.1.0/))
+* Extension for Brackets Code Editor. [Read more and download](/help/sites-developing/aem-brackets.md).
+* Maven/Gradle 종속성. 다운로드 [링크를 참조하십시오](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/aem/uber-jar/6.1.0/).
 
 **사이트**
 
@@ -329,7 +311,7 @@ Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 
 
 **자산**
 
-* Adobe Experience Manager 데스크탑 앱([자세한](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html) 내용 및 [다운로드](https://helpx.adobe.com/experience-manager/kb/download-companion-app.html))
+* Adobe Experience Manager 데스크탑 앱([자세한](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) 내용 및 [다운로드](https://docs.adobe.com/content/help/ko-KR/experience-manager-desktop-app/using/release-notes.html))
 
 * Package to add enhanced PDF Rasterizer ([read more](/help/assets/aem-pdf-rasterizer.md) and [download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
 
@@ -370,7 +352,7 @@ Experience Manager 6.4에서는 중국어 인코딩 표준을 사용하도록 GB
 
 ## 지원되는 플랫폼 {#supported-platforms}
 
-지원되는 플랫폼이 포함된 전체 매트릭스를 찾으십시오. [AEM 6.4 기술 요구 사항](/help/sites-deploying/technical-requirements.md) 지원 수준
+지원되는 플랫폼이 포함된 전체 매트릭스를 찾으십시오. Support-Level on [AEM 6.4 Technical Requirements](/help/sites-deploying/technical-requirements.md).
 
 >[!NOTE]
 >
@@ -392,7 +374,7 @@ Adobe Experience Manager 6.4의 경우 [더 이상 사용되지 않는 및 제�
 
 [AEM Forms](forms.md)
 
-[AEM Foundation](wcm-platform.md)
+[AEM 기반 정보](wcm-platform.md)
 
 ## 알려진 문제 {#known-issues}
 
@@ -402,7 +384,6 @@ Adobe Experience Manager 6.4의 경우 [더 이상 사용되지 않는 및 제�
 
 다음 사이트는 고객만 사용할 수 있습니다. 액세스가 필요한 고객의 경우 Adobe 계정 관리자에게 문의하십시오.
 
-* [](https://daycare.day.com) [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-
-* [daycare.day.com에서 고객 지원](https://daycare.day.com)
-
+* [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/).
+* 소프트웨어 배포를 위한 추가 기능을 위한 제품 업데이트, 패치 및 [패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* [Admin Console을 통한 고객 지원](https://adminconsole.adobe.com/). 자세한 내용은 [새로운 Adobe 고객 지원 경험을 참조하십시오](https://docs.adobe.com/content/help/ko-KR/customer-one/using/home.html).
