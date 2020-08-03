@@ -1,18 +1,18 @@
 ---
-title: AEM 6.4 누적 수정 팩 릴리스 노트
+title: AEM 6.4 누적 수정 팩 릴리스 정보
 description: Adobe Experience Manager 6.4 누적 수정 팩 관련 릴리스 노트입니다.
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1b6254e98b65b64071ab4634706bd1ad3d2fd8df
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
-source-wordcount: '2119'
+source-wordcount: '2125'
 ht-degree: 41%
 
 ---
 
 
-# AEM 6.4 누적 수정 팩 릴리스 노트 {#aem-cumulative-fix-pack-release-notes}
+# AEM 6.4 누적 수정 팩 릴리스 정보 {#aem-cumulative-fix-pack-release-notes}
 
 ## 릴리스 정보 {#release-information}
 
@@ -22,15 +22,15 @@ ht-degree: 41%
 | 유형 | 누적 수정 팩 |
 | 날짜 | 2020년 6월 4일 |
 | 전제 조건 | [AEM 6.4 서비스 팩 8(6.4.8.0)](sp-release-notes.md) |
-| 다운로드 URL | 소프트웨어 배포용 AEM 6.4.8.1 [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fcumulativefixpack%2Faem-6.4.8-cfp-1.0.zip) |
+| 다운로드 URL | AEM 6.4.8.1 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fcumulativefixpack%2Faem-6.4.8-cfp-1.0.zip) |
 
 ## AEM 6.4.8.1에 포함된 기능 {#what-s-included-in-aem}
 
-AEM Cumulative Fix Pack 6.4.8.1은 2020년 3월 AEM 6.4 서비스 팩 8(6.4.8.0)의 일반 출시 이후 몇 가지 내부 및 고객 픽스를 포함하는 중요한 업데이트입니다.
+AEM Cumulative Fix Pack 6.4.8.1은 2020년 3월 AEM 6.4 서비스 팩 8(6.4.8.0)을 일반적으로 사용할 수 있었던 이후 여러 가지 내부 및 고객 픽스를 포함하는 중요한 업데이트입니다.
 
-AEM Cumulative Fix Pack 6.4.8.1은 AEM 6.4 서비스 팩 8에 따라 다릅니다. 따라서 AEM 6.4 서비스 팩 8을 설치한 후 AEM Cumulative Fix Pack 6.4.8.1 패키지를 설치해야 합니다.
+AEM 누적 수정 팩 6.4.8.1은 AEM 6.4 서비스 팩 8에 따라 다릅니다. 따라서 AEM 6.4 서비스 팩 8을 설치한 후 AEM Cumulative Fix Pack 6.4.8.1 패키지를 설치해야 합니다.
 
-AEM 6.4.8.1의 주요 하이라이트는 다음과 같습니다.
+AEM 6.4.8.1의 주요 특징 중 일부는 다음과 같습니다.
 
 * Adobe Experience Manager와 패키지 공유 통합이 제거되었습니다.
 * 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.8.21으로 업데이트되었습니다.
@@ -106,14 +106,14 @@ Adobe Experience Manager 6.4.8.1에서는 다음 문제에 대한 수정 사항�
 
 >[!NOTE]
 >
->AEM 누적 수정 팩에는 AEM Forms에 대한 수정 사항이 포함되어 있지 않습니다. 이러한 수정 사항은 별도의 Forms 추가 기능 패키지를 사용하여 전달됩니다. 또한, JEE의 AEM Forms에 대한 수정 사항이 포함된 누적 설치 프로그램이 릴리스됩니다. For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
+>AEM 누적 수정 팩에는 AEM Forms에 대한 픽스가 포함되어 있지 않습니다. 이러한 수정 사항은 별도의 Forms 추가 기능 패키지를 사용하여 전달됩니다. 또한, JEE의 AEM Forms에 대한 수정 사항이 포함된 누적 설치 프로그램이 릴리스됩니다. For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
 
 * 통신 관리: 사용자가 [!DNL Word] 문서의 컨텐츠를 붙여넣을 때 텍스트 문서 조각은 서식을 유지하지 않습니다(NPR-33213).
 * 적응형 양식: 적응형 양식 사전의 문자열에 새 줄이 있으면 사전에 `&#xa;` 문자가 추가됩니다(NPR-33265).
 * 적응형 양식: 사용자가 둘 이상의 첨부 파일이 있는 적응형 양식을 저장할 수 없습니다(NPR-33214).
-* 적응형 양식: `AddInstance` 및 인스턴스 관리자 클래스의 `RemoveInstance` 메서드는 레이지 로드 조각에 대한 동적 인스턴스 수를 추가하지 않습니다( [!DNL Internet Explorer 11] NPR-33201).
-* 적응형 양식: 페이지에 포함된 응용 양식에 활성화된 Analytics은 [!DNL Sites] 제출 및 포기 이벤트에 대한 데이터를 기록하지 않습니다(NPR-31359).
-* 적응형 양식: 사용자가 문서의 컨텐츠를 응용 양식 [!DNL Word] 에 붙여넣고 제출하면 제출된 응용 양식에 유니코드 문자가 포함됩니다. 또한 유니코드 문자로 인해 PDF를 PDF/A로 변환할 수 없습니다(NPR-3348).
+* 적응형 Forms: `AddInstance` 및 인스턴스 관리자 클래스의 `RemoveInstance` 메서드는 레이지 로드 조각에 대한 동적 인스턴스 수를 추가하지 않습니다( [!DNL Internet Explorer 11] NPR-33201).
+* 적응형 Forms: 페이지에 포함된 응용 양식에 활성화된 Analytics은 [!DNL Sites] 제출 및 포기 이벤트에 대한 데이터를 기록하지 않습니다(NPR-31359).
+* 적응형 Forms: 사용자가 문서의 컨텐츠를 응용 양식 [!DNL Word] 에 붙여넣고 제출하면 제출된 응용 양식에 유니코드 문자가 포함됩니다. 또한 유니코드 문자로 인해 PDF를 PDF/A로 변환할 수 없습니다(NPR-3348).
 * 백엔드 통합: 잘못된 비활성 상태로 인해 새로 고침 토큰이 만료되므로 양식 데이터 모델 요청이 실패합니다(NPR-33168).
 * 문서 서비스: 서버에 대한 깁슨 병들이 누락되어 PDF 문서를 PostScript로 변환하지 못하는 경우(NPR-33515, CQ-4292239). [!DNL WebLogic] [!DNL Linux]
 * 문서 서비스: 사용자가 텍스트 파일을 PDF로 변환하면 일본어 문자가 올바르게 렌더링되지 않습니다(NPR-33239).
@@ -134,11 +134,11 @@ Adobe Experience Manager 6.4.8.1에서는 다음 문제에 대한 수정 사항�
 
 >[!CAUTION]
 >
->AEM 6.4에 기능 팩을 설치한 고객의 경우. Adobe에서 제공하는 선택적 기능 팩은 릴리스 버전 및 서비스 팩에 종속되어 있습니다. Feature Pack이 설치되어 있는 경우 AEM 고객 지원 센터에 문의하여 AEM 6.4용 누적 수정 팩과 해당 기능 팩의 호환성을 확인하십시오.
+>AEM 6.4에 기능 팩을 설치한 고객의 경우. Adobe에서 제공하는 옵션 기능 팩은 릴리스 버전 및 서비스 팩에 종속됩니다. Feature Pack이 설치되어 있는 경우 AEM 고객 지원 센터에 문의하여 AEM 6.4용 누적 수정 팩과 해당 기능 팩의 호환성을 확인하십시오.
 
 * AEM 6.4.8.1 requires AEM 6.4.8.0. Please visit [upgrade documentation](../sites-deploying/upgrade.md) for detailed instructions.
 * MongoDB 및 여러 인스턴스가 포함된 배포에서 패키지 관리자를 사용하여 작성자 인스턴스 중 하나에 AEM 6.4.8.1을 설치합니다.
-* 누적 수정 팩을 설치하기 전에 AEM 인스턴스의 스냅샷 또는 신규 백업을 보유해야 합니다.
+* 누적 수정 팩을 설치하기 전에 AEM 인스턴스의 스냅샷 또는 새 백업을 보유해야 합니다.
 * 설치하기 전에 인스턴스를 다시 시작합니다. 인스턴스가 업데이트 모드에 있는 경우에만 필요하지만(이전 버전에서 인스턴스가 방금 업데이트되었을 때의 경우임), 인스턴스가 더 긴 시간 동안 실행 중이면 권장됩니다.
 
 >[!NOTE]
@@ -175,18 +175,18 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/e
 
 ### 설치 확인 {#validate-install}
 
-1. 제품 정보 페이지(*/system/console/ productinfo *)에 설치된 제품 아래에 업데이트된 버전 문자열 &quot;Adobe Experience Manager, 버전 6.4.8.1&quot;이 표시되어야 합니다.
+1. 이제 제품 정보 페이지(*/system/console/productinfo*)에 설치된 제품 아래에 업데이트된 버전 문자열 &quot;Adobe Experience Manager, 버전 6.4.8.1&quot;이 표시됩니다.
 1. 모든 OSGI 번들은 OSGi 콘솔에서 ACTIVE이거나 FRAGMENT입니다(웹 콘솔 사용: /system/console/bundles).
 1. OSGI 번들 org.apache.jackrabbit.oak-core는 버전 1.8.17 이상에 있습니다(웹 콘솔 사용: /system/console/bundles).
 
 이번 AEM Sites 및 자산 릴리스에서 실행할 수 있는 인증된 플랫폼을 결정하려면 [기술 요구 사항을 참조하십시오](../sites-deploying/technical-requirements.md).
 
 >[!Note]
->On successful installation of the package, an >informational message appears indicating that the content >package has installed successfully,  such as **&quot;Content Package AEM-6.4-Service-Pack-7 installed successfully.&quot;**
+>On successful installation of the package, an informational message appears indicating that the content package has installed successfully, such as **&quot;Content Package AEM-6.4-Service-Pack-7 installed successfully.&quot;**
 
 ### Dynamic Media 뷰어 업데이트(5.10.1) {#update-dynamic-media-viewers}
 
-<p id="Dynamic">AEM 6.4.8.1에는 이미지 사전 설정 페이지에서 중복된 이름을 확인할 수 있는 새 버전의 Dynamic Media 뷰어(5.10.1)가 포함되어 있습니다. Dynamic Media 고객은 박스 뷰어 사전 설정에서 최신 상태로 전환하려면 다음 명령을 실행하는 것이 좋습니다.
+AEM 6.4.8.1에는 이미지 사전 설정 페이지에서 중복 이름을 확인할 수 있는 새로운 버전의 Dynamic Media 뷰어(5.10.1)가 포함되어 있습니다. Dynamic Media 고객은 박스 뷰어 사전 설정에서 최신 상태로 전환하려면 다음 명령을 실행하는 것이 좋습니다.
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
@@ -200,7 +200,7 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/e
 
 1. AEM 누적 수정 팩을 설치했는지 확인합니다.
 1. Download the corresponding forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) for your operating system.
-1. Install the forms add-on package as described in [Installing AEM forms add-on packages](https://helpx.adobe.com/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html#InstallAEMFormsaddonpackage).
+1. Install the forms add-on package as described in [Installing AEM forms add-on packages](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
 
 ### Install AEM Forms JEE installer {#install-aem-forms-jee-installer}
 
@@ -233,7 +233,7 @@ To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](
 | 영역 | 기능 | 대체 | 버전 |
 |---|---|---|---|
 | 자산 | 하위 자산에 대한 태그 작업 관리 | 교체 없음 | AEM 6.4.2.0 |
-| Assets과 Adobe Creative Cloud 통합 | [AEM에서 Creative Cloud로의 폴더 공유](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/creative-cloud.html) 기능은 크리에이티브 사용자가 AEM의 자산에 액세스할 수 있도록 하는 방법으로 AEM 6.2에서 도입되었습니다. Creative Cloud 애플리케이션에서 새롭게 출시된 기능인 Adobe Asset Link는 Photoshop, InDesign 및 Illustrator에서 직접 AEM 자산에 액세스할 수 있는 강력한 권한과 함께 우수한 사용자 경험을 제공합니다. Adobe는 폴더 공유 기능에 대한 추가 개선을 하지 않습니다. 이 기능이 AEM에 포함되는 동안, 고객은 이 대체를 사용하는 것이 좋습니다. | Adobe Asset Link 또는 데스크탑 앱 자세한 내용은 [AEM Creative Cloud 통합](/help/assets/aem-cc-integration-best-practices.md) 문서를 참조하십시오. | AEM 6.4.4.0 |
+| Assets과 Adobe Creative Cloud 통합 | [AEM-Creative Cloud 폴더 공유](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) 기능은 크리에이티브 사용자가 AEM의 에셋에 액세스할 수 있도록 하는 방법으로 AEM 6.2에서 도입되었습니다. Creative Cloud 애플리케이션에서 새롭게 출시된 기능인 Adobe Asset Link는 Photoshop, InDesign 및 Illustrator에서 직접 AEM 자산에 액세스할 수 있는 강력한 권한과 함께 우수한 사용자 경험을 제공합니다. Adobe는 폴더 공유 기능에 대한 추가 개선을 하지 않습니다. 이 기능은 AEM에 포함되어 있지만, 고객은 이 교체 기능을 사용하는 것이 좋습니다. | Adobe 자산 링크 또는 데스크탑 앱. 자세한 내용은 [AEM Creative Cloud 통합](/help/assets/aem-cc-integration-best-practices.md) 문서를 참조하십시오. | AEM 6.4.4.0 |
 
 ## 알려진 문제 {#known-issues}
 
@@ -241,11 +241,11 @@ To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](
 
 * TLS v1.2를 사용하는 통신만 허용하므로 AEM 기본 메일 보낸 사람이 원격 SMTP 서버로 이메일을 보낼 수 없습니다. `javax.mail:mail:1.5.0-b01` 번들을 `system/console`에서 제거하고 번들을 새로 고쳐 문제를 해결하십시오.
 
-AEM 6.4.8.0 서비스 팩 알려진 문제에 대한 자세한 내용은 [AEM 6.4.8.0 서비스 팩 릴리스 노트를 참조하십시오](sp-release-notes.md).
+AEM 6.4.8.0 서비스 팩 알려진 문제에 대한 자세한 내용은 [AEM 6.4.8.0 서비스 팩 릴리스 정보를 참조하십시오](sp-release-notes.md).
 
 ## OSGi 번들 및 컨텐츠 패키지가 설치됨 {#osgi-bundles-and-content-packages-included}
 
-다음 텍스트 문서에는 AEM 6.4.8.1에 포함된 OSGi 번들 및 컨텐츠 패키지가 나열되어 있습니다.
+다음 텍스트 문서에는 AEM 6.4.8.1에 포함된 OSGi 번들 및 컨텐츠 패키지가 나와 있습니다.
 
 AEM 6.4.8.1에 포함된 OSGi 번들 목록
 
