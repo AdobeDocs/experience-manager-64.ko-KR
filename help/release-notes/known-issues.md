@@ -10,10 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 translation-type: tm+mt
-source-git-commit: 55b9105fab3947322649c7ed2b750497e486ec63
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
 source-wordcount: '1040'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -27,11 +27,13 @@ ht-degree: 4%
 하이브리드 장치는 지원되지 않습니다. 이러한 장치를 사용하는 경우 다양한 문제가 발생할 수 있습니다. 다음 제안된 절차는 많은 문제를 해결하는 데 도움이 됩니다.
 
 Google Chrome을 브라우저로 사용하는 경우:
+
 * 주소 표시줄 `chrome://flags/` 을 입력하고 Enter 키를 누릅니다.
 * 터치 이벤트 활성화 > 비활성화를 클릭합니다.
 * 브라우저를 다시 시작합니다(모든 탭 및 창).
 
 Mozilla Firefox를 브라우저로 사용하는 경우:
+
 * 주소 표시줄 `about:config` 을 입력하고 Enter 키를 누릅니다.
 * 설정을 필터링합니다 `dom.w3c`.
 * 설정이 `0` 및 `false`인지 확인합니다.
@@ -101,7 +103,7 @@ Microsoft Edge를 브라우저로 사용하는 경우:
 ### 설치 및 배포
 
 * (AEM Forms JEE만 해당) Configuration Manager를 실행하는 동안 JBoss 응용 프로그램 서버를 부트스트래핑하면 EJB 호출 및 부트스트랩 오류 오류가 반환됩니다. 하지만, 여러분은 그것들을 무시할 수 있습니다. (Ref# CQ-4229793)
-* AEM Forms이 시작되면 경고가 `SAX Security Manager could not be setup` 나타납니다. (CQ-4297403)
+* AEM Forms가 시작되면 `SAX Security Manager could not be setup`라는 경고가 나타납니다. (CQ-4297403)
 
 ### 대화형 통신
 
@@ -134,10 +136,10 @@ Microsoft Edge를 브라우저로 사용하는 경우:
 
 ### Adobe Sign 통합
 
-* Adobe Sign 스케줄러는 간헐적으로 작업을 중단하므로 양식 대기 중인 기호가 제출로 이동하지 않습니다. 이 문제를 해결하려면 https:// **server** :[*port*]/system/console/bundles의 AEM 웹 콘솔에서&#x200B;[*Apache Sling Scheduler Support*]&#x200B;번들을 다시시작하십시오.
+* Adobe Sign 스케줄러는 간헐적으로 작업을 중단하므로 양식 대기 중 표시는 제출로 이동하지 않습니다. 이 문제를 해결하려면 https:// **server** :[*port*]/system/console/bundles의 AEM 웹 콘솔에서&#x200B;[*Apache Sling Scheduler Support*]&#x200B;번들을 다시시작하십시오.
 
-### 적응형 양식 작성
+### 적응형 Forms 제작
 
 * 적응형 양식의 차트 구성 요소는 일반적으로 사용하는 것보다 더 많은 공간을 차지합니다.
-* 적응형 양식, 적응형 양식 조각 또는 Forms Manager UI에서 인터랙티브한 커뮤니케이션에 대한 속성을 저장할 때 예외가 반환됩니다.
+* 적응형 양식, 적응형 양식 조각 또는 Forms 관리자 UI에서 인터랙티브한 커뮤니케이션에 대한 속성을 저장할 때 예외가 반환됩니다.
 * 적응형 양식 텍스트 상자에 지정된 최대 문자 수가 Android 6.0 Samsung 장치에 적용되지 않습니다. (Ref# CQ-4235205)
