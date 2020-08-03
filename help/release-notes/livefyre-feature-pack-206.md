@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 contentOwner: alba
 discoiquuid: d445bcfb-7712-472f-bfb4-a8811c2bc4f1
 translation-type: tm+mt
-source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 4%
+source-wordcount: '657'
+ht-degree: 1%
 
 ---
 
@@ -20,42 +20,18 @@ ht-degree: 4%
 
 ## 릴리스 정보 {#release-information}
 
-<table> 
- <tbody>
-  <tr>
-   <td>제품</td> 
-   <td>Livefyre 기능 팩 2.0.6</td> 
-  </tr>
-  <tr>
-   <td>버전</td> 
-   <td>2.0.6</td> 
-  </tr>
-  <tr>
-   <td>유형</td> 
-   <td>기능 릴리스</td> 
-  </tr>
-  <tr>
-   <td>날짜</td> 
-   <td>2018년 8월 31일</td> 
-  </tr>
-  <tr>
-   <td>다운로드 URL<br /> </td> 
-   <td>관리자에게 문의</td> 
-  </tr>
-  <tr>
-   <td>호환성 (*)</td> 
-   <td>AEM 6.4 SP1, 6.4, 6.3 GA 및 6.2 SP1</td> 
-  </tr>
-  <tr>
-   <td>설명</td> 
-   <td>이 패키지를 사용하면 Livefyre의 업계 선도적인 큐레이션 기능을 AEM 인스턴스와 통합할 수 있으므로 소셜 네트워크에서 사이트로 중요한 UGC(사용자 생성 콘텐츠)를 신속하게 게시할 수 있습니다.</td> 
-  </tr>
- </tbody>
-</table>
+| 제품 | Livefyre 기능 팩 2.0.6 |
+|--- |--- |
+| 버전 | 2.0.6 |
+| 유형 | 기능 릴리스 |
+| 날짜 | 2018년 8월 31일 |
+| 다운로드 URL | 관리자에게 문의 |
+| 호환성 (*) | AEM 6.4 SP1, 6.4, 6.3 GA 및 6.2 SP1 |
+| 설명 | 이 패키지를 사용하면 Livefyre의 업계 선도적인 큐레이션 기능을 AEM 인스턴스와 통합할 수 있으므로 소셜 네트워크에서 사이트에 중요한 UGC(사용자 생성 콘텐츠)를 신속하게 게시할 수 있습니다. |
 
 ## Livefyre 기능 팩 2.0.6에 포함된 제품 {#what-is-included-in-livefyre-feature-pack}
 
-이 패키지는 Livefyre의 업계 선도적인 큐레이션 기능과 AEM 인스턴스를 통합하여 소셜 네트워크에서 사이트로 중요한 UGC(사용자 생성 콘텐츠)를 신속하게 게시할 수 있습니다. 이 패키지에는 다음 세 가지 구성 요소가 있습니다.
+이 패키지는 Livefyre의 업계 선도적인 큐레이션 기능과 AEM 인스턴스를 통합하여 소셜 네트워크에서 사이트에 중요한 UGC(사용자 생성 콘텐츠)를 신속하게 게시할 수 있습니다. 이 패키지에는 다음 세 가지 구성 요소가 있습니다.
 
 **UGC 컨텐츠를 AEM Assets으로 가져오기**
 
@@ -74,7 +50,7 @@ ht-degree: 4%
 * 기존 제품 카탈로그를 Livefyre에 완벽하게 통합하여 사용자 참여도와 사이트 전환율을 높이고 쇼퍼블 UGC 경험을 제공할 수 있습니다.
 * AEM Commerce 제품 카탈로그의 항목을 편집하거나 삭제하고 Livefyre에서 변경 사항을 자동으로 업데이트합니다.
 
-설치에 대한 도움말은 Livefyre와 [통합을 참조하십시오](https://helpx.adobe.com/kr/experience-manager/6-4/sites/administering/using/livefyre.html).
+설치에 대한 도움말은 Livefyre와 [통합을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html).
 
 ### 추가 릴리스 정보 {#additional-release-information}
 
@@ -82,17 +58,17 @@ Instagram 비비즈니스 사용자 계정의 컨텐츠 집계에 영향을 주�
 
 >[!NOTE]
 >
->Livefyre 기능 팩 2.0.6은 AEM Classic UI를 지원하지 않습니다.
+>Livefyre Feature Pack 2.0.6은 AEM Classic UI를 지원하지 않습니다.
 
 #### 새로운 기능 또는 개선 사항 {#new-feature-or-improvement}
 
 * Livefyre에서 권한을 설정하기 전에 UGC를 검색하는 기능이 추가되었습니다. 권한을 요청하려면 소셜 계정을 설정하거나, 콘텐트를 소유한 경우 권한 요청을 무시해야 합니다.
-* Instagram 및 Twitter [UGC 권한 요청 워크플로우가](https://helpx.adobe.com/kr/experience-manager/6-4/sites/administering/using/livefyre.html) 최신 API를 준수하도록 업데이트되었습니다.
+* Instagram 및 Twitter [UGC 권한 요청 워크플로우가](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html) 최신 API를 준수하도록 업데이트되었습니다.
 * 권한 상태 및 적절한 작업이 이제 권한 요청 화면에 표시됩니다.
 
 #### 버그 수정 {#bug-fixes}
 
-* 권한 요청에 사용된 Livefyre 스튜디오에서 소셜 계정을 삭제하여 AEM에서 UGC 라이브러리를 로드할 때 오류가 발생하는 문제를 해결했습니다.
+* 권한 요청에 사용된 Livefyre 스튜디오에서 소셜 계정을 삭제하면 AEM에서 UGC 라이브러리를 로드할 때 오류가 발생하는 문제가 해결되었습니다.
 * Livefyre 스튜디오의 자산 개수가 AEM UGC 라이브러리의 자산 개수와 일치하지 않는 문제가 해결되었습니다.
 * 필터 옵션이 재설정된 후 필터링된 결과가 표시되는 UGC 라이브러리의 문제를 수정했습니다.
 * 클릭유도문안 단추가 사용자를 잘못된 URL로 리디렉션하는 AEM Commerce 문제를 해결했습니다.
@@ -108,4 +84,3 @@ Instagram 비비즈니스 사용자 계정의 컨텐츠 집계에 영향을 주�
 * 터치 UI 기능 및 인라인 편집 문제를 수정했습니다.
 * 특정 Instagram 이미지 자산을 가져올 때 오류가 발생하는 문제를 수정했습니다.
 * AEM의 Livefyre HTTP 클라이언트가 프록시 구성을 지원하지 않는 문제가 해결되었습니다.
-
