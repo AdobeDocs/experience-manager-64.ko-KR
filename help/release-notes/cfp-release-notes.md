@@ -4,10 +4,10 @@ description: Adobe Experience Manager 6.4 누적 수정 팩 관련 릴리스 노
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: 87843465e8e0b372dc457630b84bcb5e50628dea
 workflow-type: tm+mt
-source-wordcount: '2125'
-ht-degree: 41%
+source-wordcount: '2159'
+ht-degree: 40%
 
 ---
 
@@ -55,6 +55,8 @@ Adobe Experience Manager 6.4.8.1에서는 다음 문제에 대한 수정 사항�
 * AEM Sites 페이지에 대한 론치를 만들 수 없습니다. 론치를 만들면 오류가 발생합니다(NPR-32544).
 * 게시 관리에는 활성화 요청 워크플로에 참조된 자산이 포함되지 않습니다(NPR-32463).
 * Dispatcher 상태 확인은 로그 파일에 `Invalid cookie header` 경고 메시지를 표시합니다(NPR-33630).
+* Salesforce 통합은 SSRF에 취약합니다(NPR-32671).
+* PreferencesServlet에 반영된 XSS(NPR-33439).
 
 ### 자산 {#assets-6481}
 
@@ -74,6 +76,8 @@ Adobe Experience Manager 6.4.8.1에서는 다음 문제에 대한 수정 사항�
 
 * 벌크 업로드가 중단되는 동안 자산 처리가 중단되었습니다(CQ-4293916).
 
+* Experience Manager의 SSRF 취약성(NPR-33437).
+
 ### 플랫폼 {#platform-6481}
 
 * `sling:match` 맵 항목이 `/etc/maps`에 작성되지 않으면 [!DNL Sling] 필터가 호출되지 않습니다(NPR-33308).
@@ -89,12 +93,17 @@ Adobe Experience Manager 6.4.8.1에서는 다음 문제에 대한 수정 사항�
 
 * 번역 작업 실행 시 로그에 `NullPointerException` 오류가 표시됩니다(NPR-32220).
 
+### 통합 {#integrations-6481}
+
+* JSON용 크로스 사이트 스크립팅(NPR-32745).
+
 ### 커뮤니티 {#communities-6481}
 
 * 작성자는 새 그룹을 만든 후 [!DNL Internet Explorer] 11의 [!UICONTROL 커뮤니티 그룹] 섹션으로 리디렉션되지 않습니다(NPR-33202).
 * [!UICONTROL 활동 스트림] 페이지 액세스 시 오류가 발생합니다(NPR-33152).
 * [!DNL Communities] 그룹을 편집하고 썸네일 이미지를 변경해도 그룹 썸네일 이미지가 업데이트되지 않습니다(NPR-32603). 
 * UGC(사용자 생성 컨텐츠)의 알림 및 구독 버전을 만드는 동안 소스 페이지의 잘못된 ID가 저장됩니다(, CQ-4289703).
+* 사이트 간 스크립팅 문제(NPR-33212).
 
 ### 워크플로우 {#workflow-6481}
 
@@ -117,6 +126,8 @@ Adobe Experience Manager 6.4.8.1에서는 다음 문제에 대한 수정 사항�
 * 백엔드 통합: 잘못된 비활성 상태로 인해 새로 고침 토큰이 만료되므로 양식 데이터 모델 요청이 실패합니다(NPR-33168).
 * 문서 서비스: 서버에 대한 깁슨 병들이 누락되어 PDF 문서를 PostScript로 변환하지 못하는 경우(NPR-33515, CQ-4292239). [!DNL WebLogic] [!DNL Linux]
 * 문서 서비스: 사용자가 텍스트 파일을 PDF로 변환하면 일본어 문자가 올바르게 렌더링되지 않습니다(NPR-33239).
+* GuideSOMProviderServlet과 함께 XSS를 저장함(NPR-32701).
+
 
 ## 6.4.8.1 설치 {#install}
 
