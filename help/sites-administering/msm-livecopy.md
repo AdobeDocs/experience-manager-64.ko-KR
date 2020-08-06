@@ -96,7 +96,7 @@ ht-degree: 2%
 
 * 블루프린트 구성에 의해 참조되는 [페이지입니다](#creating-a-blueprint-configuration).
 * 구성에 연결되지 않은 페이지입니다.
-* 또한 AEM에서는 다른 Live Copy 페이지 내에서 Live Copy를 만들 수도 있습니다.
+* 또한 AEM에서는 다른 live copy 페이지 내에서 live copy를 만들 수도 있습니다.
 
 유일한 차이점은 소스/블루프린트 페이지에서 **롤아웃** 명령의 가용성은 소스 파일이 블루프린트 구성으로 참조되는지 여부에 따라 달라진다는 것입니다.
 
@@ -618,7 +618,7 @@ Live Copy를 분리하려면
 
 ### Live Copy 개요에서 Live Copy 페이지 분리 {#detach-a-live-copy-page-from-the-live-copy-overview}
 
-Live Copy 페이지 [를 선택하면 Live Copy 개요](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)에서 분리 작업을 사용할 수도 있습니다.
+Live Copy 페이지 [를 선택하면 Live Copy 개요에서도 분리 작업을 사용할](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)수 있습니다.
 
 1. Live Copy [개요를](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) 열고 Live Copy 페이지를 선택합니다.
 1. Select **Detach** from the toolbar.
