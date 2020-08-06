@@ -35,7 +35,7 @@ ht-degree: 2%
 
 이 워크플로우에서:
 
-1. 양식 디자이너는 Adobe Forms Designer를 사용하여 레이아웃 및 조각 레이아웃을 만들고 CRX 저장소에 업로드합니다. 레이아웃에는 일반적인 양식 필드, 머리글 및 바닥글과 같은 레이아웃 기능, 컨텐츠 배치를 위한 빈 &quot;대상 영역&quot;이 포함됩니다. 나중에 애플리케이션 전문가가 이러한 대상 영역에 필요한 컨텐츠를 매핑합니다. 레이아웃 [디자인에 대한 자세한 내용](/help/forms/using/layout-design-details.md).
+1. 양식 디자이너는 Adobe Forms 디자이너를 사용하여 레이아웃 및 조각 레이아웃을 만들고 CRX 저장소에 업로드합니다. 레이아웃에는 일반적인 양식 필드, 머리글 및 바닥글과 같은 레이아웃 기능, 컨텐츠 배치를 위한 빈 &quot;대상 영역&quot;이 포함됩니다. 나중에 애플리케이션 전문가가 이러한 대상 영역에 필요한 컨텐츠를 매핑합니다. 레이아웃 [디자인에 대한 자세한 내용](/help/forms/using/layout-design-details.md).
 1. 법적, 재무 또는 마케팅 부서의 주제 전문가는 다양한 서신 템플릿에서 재사용 가능한 텍스트 조항, 약관 및 로고와 같은 이미지를 만들고 업로드합니다.
 1. 애플리케이션 전문가가 서신 템플릿을 만듭니다. 애플리케이션 전문가
 
@@ -69,7 +69,7 @@ List는 텍스트, 목록(&quot;동일한 목록 자체에 추가할 수 없음)
 
 #### Layout fragment {#layout-fragment}
 
-레이아웃 조각은 하나 이상의 문자 내에서 사용할 수 있는 레이아웃입니다. 레이아웃 조각은 반복 가능한 패턴, 특히 동적 테이블을 만드는 데 사용됩니다. 레이아웃에는 &quot;주소&quot; 및 &quot;참조 번호&quot;와 같은 일반적인 양식 필드가 포함될 수 있습니다. 대상 영역을 나타내는 빈 하위 양식도 포함되어 있습니다. XDP(레이아웃)는 Designer에서 만든 다음 양식 및 문서에 [업로드됩니다](/help/forms/using/get-xdp-pdf-documents-aem.md).
+레이아웃 조각은 하나 이상의 문자 내에서 사용할 수 있는 레이아웃입니다. 레이아웃 조각은 반복 가능한 패턴, 특히 동적 테이블을 만드는 데 사용됩니다. 레이아웃에는 &quot;주소&quot; 및 &quot;참조 번호&quot;와 같은 일반적인 양식 필드가 포함될 수 있습니다. 대상 영역을 나타내는 빈 하위 양식도 포함되어 있습니다. XDP(레이아웃)는 Designer에서 만든 다음 Forms 및 문서에 [업로드됩니다](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
 ### 편지 작성 {#letter-creation}
 
@@ -95,7 +95,7 @@ List는 텍스트, 목록(&quot;동일한 목록 자체에 추가할 수 없음)
 1. 검토 및 승인을 위해 제출되었습니다.
 1. 디지털 서명, 인증, 암호화 또는 권한 관리를 적용하여 안전하게 보호할 수 있습니다.
 1. 보관 및 감사를 위해 필요한 모든 메타데이터를 포함하는 검색 가능한 PDF 문서로 변환되었습니다.
-1. 마케팅 자료와 같은 더 많은 문서가 포함된 PDF 포트폴리오에 포함되어 있습니다. PDF 포트폴리오를 최종 서신으로 보낼 수 있습니다.
+1. 마케팅 자료와 같은 더 많은 문서가 포함된 PDF Portfolio에 포함되어 있습니다. PDF Portfolio을 최종 서신으로 보낼 수 있습니다.
 
 ### 통신 관리 솔루션 아키텍처 {#correspondence-management-solution-architecture}
 
@@ -139,7 +139,7 @@ List는 텍스트, 목록(&quot;동일한 목록 자체에 추가할 수 없음)
   <tr> 
    <td>중앙 저장소에서 저장된<br /> 이미지</td> 
    <td>로고 및 서명 이미지와 같은 이미지 회사 로고와 같은 이미지는 대부분의 또는 모든 통신문에 나타납니다. 서명 이미지는 서신 및 서신이 발송되는 사람에 따라 다릅니다.</td> 
-   <td><p>AEM 자산(DAM)에 저장된 이미지<br /> </p> <p> </p> </td> 
+   <td><p>AEM 에셋(DAM)에 저장된 이미지<br /> </p> <p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -228,7 +228,7 @@ List는 텍스트, 목록(&quot;동일한 목록 자체에 추가할 수 없음)
 
 편지를 작성하려면 먼저 다음 사항을 적소에 제공해야 합니다.
 
-* [호환성 패키지](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html). [양식] 페이지에서 **문자** 옵션을 보려면 호환성 패키지를 **** 설치합니다.
+* [호환성 패키지](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html). 호환성 패키지를 설치하여 **Forms** 페이지에서 **문자** 옵션을 볼 수 있습니다.
 
 * XDP([레이아웃](/help/forms/using/document-fragments.md))
 * 서신의 일부분을 형성하는 기타 XDP([레이아웃 조각](/help/forms/using/document-fragments.md)) XDP\Layouts는 [Designer에서 만듭니다](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/).
@@ -241,9 +241,9 @@ List는 텍스트, 목록(&quot;동일한 목록 자체에 추가할 수 없음)
 
 ### 레이아웃을 선택하고 문자 속성을 입력합니다 {#select-a-layout-and-enter-the-letter-properties}
 
-1. [ **양식** ] > [ **문자]를 선택합니다**.
+1. [ **Forms** ] > [ **문자]를 선택합니다**.
 
-1. 만들기 **> 문자를 선택합니다**. 통신 관리에는 사용 가능한 레이아웃(XDP)이 표시됩니다. 이러한 레이아웃은 Designer에서 제공됩니다. 또한 Correspondence Management에서 제공하는 문자 템플릿도 포함되어 있습니다. 통신 관리 템플릿에 대한 자세한 내용은 [참조 문자 템플릿을 참조하십시오](/help/forms/using/reference-cm-layout-templates.md). 레이아웃을 추가하려면 Designer에서 XDP(레이아웃) 파일을 만든 다음 AEM Forms에 [업로드합니다](/help/forms/using/get-xdp-pdf-documents-aem.md).
+1. 만들기 **> 문자를 선택합니다**. 통신 관리에는 사용 가능한 레이아웃(XDP)이 표시됩니다. 이러한 레이아웃은 Designer에서 제공됩니다. 또한 Correspondence Management에서 제공하는 문자 템플릿도 포함되어 있습니다. 통신 관리 템플릿에 대한 자세한 내용은 [참조 문자 템플릿을 참조하십시오](/help/forms/using/reference-cm-layout-templates.md). 레이아웃을 추가하려면 Designer에서 XDP(레이아웃) 파일을 만든 다음 AEM Forms에 [업로드하십시오](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
    ![create-letter](assets/create-letter.png)
 
@@ -258,7 +258,7 @@ List는 텍스트, 목록(&quot;동일한 목록 자체에 추가할 수 없음)
    * **설명(선택 사항):** 참고할 편지를 설명하라.
    * **데이터 사전(선택 사항)**: 데이터 사전은 통신과 연관될 수 있다. 나중에 이 통신문에 삽입하는 자산은 여기에서 편지 발송을 위해 선택한 것과 동일한 데이터 사전을 가지거나 데이터 사전이 없어야 합니다.
    * **태그(선택 사항):** 서신에 적용할 태그를 선택합니다. 새/사용자 지정 태그 이름을 입력하고 Enter 키를 눌러 작성할 수도 있습니다.
-   * **게시 프로세스(선택 사항):** 편지 템플릿에 적용할 게시 프로세스를 선택합니다. 즉시 사용 가능한 게시물 프로세스와 AEM을 사용하여 만든 이메일 및 인쇄 프로세스가 있습니다.
+   * **게시 프로세스(선택 사항):** 편지 템플릿에 적용할 게시 프로세스를 선택합니다. 즉시 사용 가능한 게시물 프로세스와 AEM(예: 이메일 및 인쇄)를 사용하여 만든 게시물이 있습니다.
 
    ![통신 속성](assets/createcorrespondenceproperties.png)
 
@@ -290,7 +290,7 @@ List는 텍스트, 목록(&quot;동일한 목록 자체에 추가할 수 없음)
    1. **편집 가능**: 이 옵션을 선택하면 통신 사용자 인터페이스 만들기에서 컨텐츠를 편집할 수 있습니다. 비즈니스 사용자(예: 클레임 조정)가 컨텐츠를 수정해야 하는 경우에만 내용을 편집 가능한 것으로 표시합니다.
    1. **필수**: 이 옵션을 선택하면 통신 사용자 인터페이스 만들기에 컨텐츠가 필요합니다.
    1. **선택됨**: 이 옵션을 선택하면 통신 사용자 인터페이스에서 기본적으로 컨텐츠가 선택됩니다.
-   1. **들여쓰기**: 문자에서 모듈/컨텐츠의 들여쓰기를 늘리거나 줄입니다. 들여쓰기는 0부터 시작하여 수준 용어로 지정됩니다. 각 레벨은 36pts를 나타냅니다. 양식 사용자 지정에 대한 자세한 내용은 **[!UICONTROL 양식 워크플로우의 통신]** 관리 구성 [을 참조하십시오](/help/forms/using/submit-letter-topostprocess.md#formsworkflow).
+   1. **들여쓰기**: 문자에서 모듈/컨텐츠의 들여쓰기를 늘리거나 줄입니다. 들여쓰기는 0부터 시작하여 수준 용어로 지정됩니다. 각 레벨은 36pts를 나타냅니다. 양식 사용자 지정에 대한 자세한 내용은 **[!UICONTROL Forms 워크플로우의]** 통신 [관리 구성을 참조하십시오](/help/forms/using/submit-letter-topostprocess.md#formsworkflow).
    1. **페이지 나누기**&#x200B;전: 페이지 나누기 설정을 다음으로 설정하면 THIS 모듈의 내용이 항상 새 페이지에 표시됩니다.
    1. **다음 이후**&#x200B;페이지 나누기: 특정 모듈에 대해 Page Break After를 켜도록 설정하면 NEXT 모듈의 내용이 항상 새 페이지에 표시됩니다.
 
