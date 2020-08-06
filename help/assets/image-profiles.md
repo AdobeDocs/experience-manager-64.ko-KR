@@ -1,6 +1,6 @@
 ---
-title: Dynamic Media 이미지 프로필
-seo-title: Dynamic Media 이미지 프로필
+title: 다이내믹 미디어 이미지 프로필
+seo-title: 다이내믹 미디어 이미지 프로필
 description: 언샵 마스크, 스마트 자르기, 스마트 견본 또는 둘 다에 대한 설정이 포함된 이미지 프로필을 만든 다음 이미지 에셋 폴더에 프로필을 적용합니다.
 seo-description: 언샵 마스크, 스마트 자르기, 스마트 견본 또는 둘 다에 대한 설정이 포함된 이미지 프로필을 만든 다음 이미지 에셋 폴더에 프로필을 적용합니다.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->스마트 자르기는 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
+>스마트 자르기는 다이내믹 미디어 - Scene7 모드에서만 사용할 수 있습니다.
 
 >[!IMPORTANT]
 >
@@ -36,7 +36,7 @@ ht-degree: 2%
 
 스마트 자르기 좌표는 종횡비에 따라 다릅니다. 즉, 이미지 프로필의 다양한 스마트 자르기 설정의 경우 종횡비가 이미지 프로필의 추가된 크기에 대해 동일하면 동일한 종횡비가 Dynamic Media로 전송됩니다. 이로 인해 동일한 자르기 영역을 사용하는 것이 좋습니다. 이렇게 하면 이미지 프로필에 사용되는 다른 차원에 영향을 주지 않습니다.
 
-만드는 각 스마트 자르기 생성에는 추가 처리가 필요합니다. 예를 들어 5개 이상의 스마트 자르기 종횡비를 추가하면 자산 처리 속도가 느려질 수 있습니다. 또한 시스템에서 로드가 증가할 수 있습니다. 폴더 수준에서 스마트 자르기를 적용할 수 있으므로 필요한 폴더에서만 ** 사용하는 것이 좋습니다.
+만드는 각 스마트 자르기 생성에는 추가 처리가 필요합니다. 예를 들어 5개 이상의 스마트 자르기 종횡비를 추가하면 자산 처리 속도가 느려질 수 있습니다. 또한 시스템에서 로드가 증가할 수 있습니다. 폴더 수준에서 스마트 자르기를 적용할 수 있으므로 Adobe은 스마트 자르기가 필요한 폴더에서만 ** 사용할 것을 권장합니다.
 
 선택할 수 있는 이미지 자르기 옵션이 두 개 있습니다. 또한 색상 및 이미지 견본 생성을 자동화하는 옵션도 있습니다.
 
@@ -62,12 +62,12 @@ ht-degree: 2%
   <tr> 
    <td>스마트 자르기</td> 
    <td>시각적 초점에 따라 이미지를 대량으로 자릅니다.</td> 
-   <td><p>Smart Crop은 Adobe Sensei의 강력한 인공 지능(AI)을 사용하여 신속하게 이미지 자르기를 자동화합니다. 스마트 자르기는 모든 이미지의 초점까지 자동으로 감지하여 자르므로 화면 크기와 상관없이 원하는 관심 영역을 캡처할 수 있습니다.</p> <p>스마트 자르기 기능을 사용하려면 자르기 옵션 드롭다운 목록에서 <strong>스마트 자르기</strong> 를 선택한 다음 응답형 이미지 자르기 오른쪽에 있는 기능을 활성화(켜기)합니다.</p> <p>[큰], [보통] 및 [작은]의 기본 중단점 크기는 일반적으로 대부분의 이미지가 모바일 및 태블릿 장치, 데스크톱, 배너에서 사용되는 전체 크기의 범위에 포함됩니다. 원하는 경우 큰, 보통 및 작은 크기의 기본 이름을 편집할 수 있습니다.</p> <p>중단점을 더 추가하려면 자르기 <strong>추가를 클릭합니다</strong>. 자르기를 삭제하려면 [휴지통] 아이콘을 클릭합니다.</p> </td> 
+   <td><p>스마트 자르기 기능은 Adobe Sensei의 강력한 인공 지능을 사용하여 이미지의 대량 자르기를 신속하게 자동화합니다. 스마트 자르기는 모든 이미지의 초점까지 자동으로 감지하여 자르므로 화면 크기와 상관없이 원하는 관심 영역을 캡처할 수 있습니다.</p> <p>스마트 자르기 기능을 사용하려면 자르기 옵션 드롭다운 목록에서 <strong>스마트 자르기</strong> 를 선택한 다음 응답형 이미지 자르기 오른쪽에 있는 기능을 활성화(켜기)합니다.</p> <p>[큰], [보통] 및 [작은]의 기본 중단점 크기는 일반적으로 대부분의 이미지가 모바일 및 태블릿 장치, 데스크톱, 배너에서 사용되는 전체 크기의 범위에 포함됩니다. 원하는 경우 큰, 보통 및 작은 크기의 기본 이름을 편집할 수 있습니다.</p> <p>중단점을 더 추가하려면 자르기 <strong>추가를 클릭합니다</strong>. 자르기를 삭제하려면 [휴지통] 아이콘을 클릭합니다.</p> </td> 
   </tr> 
   <tr> 
    <td>색상 및 이미지 견본</td> 
    <td>각 이미지에 대한 이미지 견본을 벌크 생성합니다.</td> 
-   <td><p><strong>참고</strong>: 스마트 견본은 Dynamic Media Classic에서 지원되지 않습니다.</p> <p>제품 이미지에서 색상 또는 텍스처를 보여주는 고품질의 색상 견본을 자동으로 찾아 생성할 수 있습니다.</p> <p>색상 및 이미지 견본을 사용하려면 자르기 옵션 드롭다운 목록에서 <strong>스마트 자르기</strong> 를 선택한 다음 색상 및 이미지 견본 오른쪽에 있는 기능을 활성화(켜기)합니다. [너비] 및 [높이] 텍스트 상자에 픽셀 값을 입력합니다.</p> <p>모든 이미지 자르기는 [변환] 레일에서 사용할 수 있지만 견본은 URL 복사 기능을 통해서만 사용됩니다. 사이트의 견본을 렌더링하려면 고유한 보기 구성 요소를 사용해야 합니다. 회전판 배너만 예외입니다. Dynamic Media은 캐러셀 배너에 사용되는 견본에 대한 보기 구성 요소를 제공합니다.)</p> <p><strong>이미지 견본 사용</strong></p> <p>이미지 견본용 URL은 간단합니다. 이것은 다음과 같습니다.</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>여기서 <code>:Swatch</code> 는 자산 요청에 추가됩니다.</p> <p><strong>색상 견본 사용</strong></p> <p>색상 견본을 사용하려면 다음을 사용하여 <code>req=userdata</code> 요청하십시오.</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>예를 들어, 다음은 Dynamic Media Classic(Scene7)의 견본 자산입니다.</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>다음은 견본 자산의 해당 <code>req=userdata</code> URL입니다.</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>응답은 <code>req=userdata</code> 다음과 같습니다.</p> <p><code class="code">SmartCropDef=Swatch
+   <td><p><strong>참고</strong>: 스마트 견본은 Dynamic Media Classic에서 지원되지 않습니다.</p> <p>제품 이미지에서 색상 또는 텍스처를 보여주는 고품질의 색상 견본을 자동으로 찾아 생성할 수 있습니다.</p> <p>색상 및 이미지 견본을 사용하려면 자르기 옵션 드롭다운 목록에서 <strong>스마트 자르기</strong> 를 선택한 다음 색상 및 이미지 견본 오른쪽에 있는 기능을 활성화(켜기)합니다. [너비] 및 [높이] 텍스트 상자에 픽셀 값을 입력합니다.</p> <p>모든 이미지 자르기는 [변환] 레일에서 사용할 수 있지만 견본은 URL 복사 기능을 통해서만 사용됩니다. 사이트의 견본을 렌더링하려면 고유한 보기 구성 요소를 사용해야 합니다. 회전판 배너만 예외입니다. Dynamic Media는 캐러셀 배너에 사용되는 견본에 대한 보기 구성 요소를 제공합니다.)</p> <p><strong>이미지 견본 사용</strong></p> <p>이미지 견본용 URL은 간단합니다. 이것은 다음과 같습니다.</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>여기서 <code>:Swatch</code> 는 자산 요청에 추가됩니다.</p> <p><strong>색상 견본 사용</strong></p> <p>색상 견본을 사용하려면 다음을 사용하여 <code>req=userdata</code> 요청하십시오.</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>예를 들어 다음은 Dynamic Media Classic(Scene7)의 견본 자산입니다.</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>다음은 견본 자산의 해당 <code>req=userdata</code> URL입니다.</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>응답은 <code>req=userdata</code> 다음과 같습니다.</p> <p><code class="code">SmartCropDef=Swatch
        SmartCropHeight=200.0
        SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
        SmartCropType=Swatch
@@ -111,7 +111,7 @@ Sharpening is described in [Sharpening Images](/help/assets/assets/s7_sharpening
 
 다른 자산 유형에 대한 고급 처리 매개 변수를 정의하려면 자산 처리 [구성을 참조하십시오](config-dms7.md#configuring-asset-processing).
 
-**Dynamic Media 이미지 프로필을 만들려면 다음을 수행하십시오**.
+**다이내믹 미디어 이미지 프로필을 만들려면 다음을 수행하십시오**.
 
 1. AEM 로고를 누르고 도구 > **[!UICONTROL 자산 > 이미지 프로필로 이동합니다]**.
 1. 만들기를 **[!UICONTROL 눌러]** 새 이미지 프로필을 추가합니다.
@@ -134,7 +134,7 @@ Sharpening is described in [Sharpening Images](/help/assets/assets/s7_sharpening
 
 1. 편집하는 경우 변경 내용을 저장합니다. 삭제하는 경우 프로필을 제거할 것인지 확인합니다.
 
-## 폴더에 Dynamic Media 이미지 프로필 적용 {#applying-an-image-profile-to-folders}
+## 폴더에 다이내믹 미디어 이미지 프로필 적용 {#applying-an-image-profile-to-folders}
 
 이미지 프로필을 폴더에 할당하면 모든 하위 폴더는 해당 상위 폴더에서 자동으로 프로필을 상속받습니다. 즉, 하나의 이미지 프로필만 폴더에 할당할 수 있습니다. 따라서 에셋을 업로드, 저장, 사용 및 보관하는 폴더 구조를 주의 깊게 고려합니다.
 
@@ -146,13 +146,13 @@ Sharpening is described in [Sharpening Images](/help/assets/assets/s7_sharpening
 
 특정 폴더 또는 모든 자산에 전체적으로 이미지 프로필을 적용할 수 있습니다.
 
-### 특정 폴더에 Dynamic Media 이미지 프로필 적용 {#applying-image-profiles-to-specific-folders}
+### 특정 폴더에 다이내믹 미디어 이미지 프로필 적용 {#applying-image-profiles-to-specific-folders}
 
 도구 메뉴 내에서 또는 폴더에 있는 경우 **[!UICONTROL 속성]** 에서 폴더에 이미지 프로필을 적용할 수 **[!UICONTROL 있습니다]**. 이 섹션에서는 두 가지 방법으로 폴더에 이미지 프로필을 적용하는 방법을 설명합니다.
 
 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
-#### 프로필 사용자 인터페이스의 폴더에 Dynamic Media 이미지 프로필 적용 {#applying-image-profiles-to-folders-from-profiles-user-interface}
+#### 프로필 사용자 인터페이스의 폴더에 다이내믹 미디어 이미지 프로필 적용 {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
 1. AEM 로고를 누르고 도구 > **[!UICONTROL 자산 > 이미지 프로필로 이동합니다]**.
 1. 폴더 또는 여러 폴더에 적용할 이미지 프로필을 선택합니다.
@@ -161,17 +161,17 @@ Sharpening is described in [Sharpening Images](/help/assets/assets/s7_sharpening
 
 1. 폴더에 **[!UICONTROL 처리 프로필 적용을]** 누르고 새로 업로드된 자산을 받기 위해 사용할 폴더 또는 여러 폴더를 선택하고 적용을 탭/ **[!UICONTROL 클릭합니다]**. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
-#### 속성의 폴더에 Dynamic Media 이미지 프로필 적용 {#applying-image-profiles-to-folders-from-properties}
+#### 속성의 폴더에 다이내믹 미디어 이미지 프로필 적용 {#applying-image-profiles-to-folders-from-properties}
 
-1. AEM 로고를 누르고 **[!UICONTROL 자산으로]** 이동한 다음 이미지 프로필을 적용할 폴더로 이동합니다.
+1. AEM 로고를 누르고 **[!UICONTROL 에셋으로]** 이동한 다음 이미지 프로필을 적용할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 눌러 선택한 다음 **[!UICONTROL 속성을 누릅니다]**.
 1. 이미지 프로필 **[!UICONTROL 탭을]** 누릅니다. 프로필 **[!UICONTROL 이름]** 드롭다운 목록에서 프로필을 선택한 다음 **[!UICONTROL 저장 및 닫기를 누릅니다]**. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-### Dynamic Media 이미지 프로필을 전체적으로 적용 {#applying-an-image-profile-globally}
+### 전역 동적 미디어 이미지 프로필 적용 {#applying-an-image-profile-globally}
 
-폴더에 프로필을 적용하는 것 외에도 AEM 자산에 업로드된 모든 콘텐츠가 선택한 프로필이 적용되도록 전체적으로 적용할 수도 있습니다.
+폴더에 프로필을 적용하는 것 외에도, 모든 폴더의 AEM 자산에 업로드된 콘텐트에 선택한 프로필이 적용되도록 전체적으로 적용할 수도 있습니다.
 
 **Dynamic Media 이미지 프로필을 전체적으로 적용하려면 다음을 수행하십시오**.
 
@@ -181,7 +181,7 @@ Sharpening is described in [Sharpening Images](/help/assets/assets/s7_sharpening
 
       ![chlimage_1-257](assets/chlimage_1-257.png)
 
-   * 다음 노드로 CRXDE Lite로 이동합니다. `/content/dam/jcr:content`.
+   * 다음 노드로 CRXDE Lite으로 이동합니다. `/content/dam/jcr:content`.
 
       속성을 추가하고 `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` 모두 **[!UICONTROL 저장을 누릅니다]**.
 
@@ -191,7 +191,7 @@ Sharpening is described in [Sharpening Images](/help/assets/assets/s7_sharpening
 
 >[!NOTE]
 >
->스마트 자르기는 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
+>스마트 자르기는 다이내믹 미디어 - Scene7 모드에서만 사용할 수 있습니다.
 
 이미지의 스마트 자르기 창의 크기를 수동으로 다시 정렬하거나 크기를 조정하여 초점을 더 세밀하게 조정할 수 있습니다.
 
@@ -203,7 +203,7 @@ Sharpening is described in [Sharpening Images](/help/assets/assets/s7_sharpening
 
 **단일 이미지의 스마트 자르기 또는 스마트 견본을 편집하려면 다음을 수행하십시오**.
 
-1. AEM 로고를 누르고 **[!UICONTROL 자산으로 이동한]**&#x200B;다음 스마트 자르기 또는 스마트 견본 이미지 프로필이 적용된 폴더로 이동합니다.
+1. AEM 로고를 누르고 **[!UICONTROL 에셋으로]**&#x200B;이동한 다음 스마트 자르기 또는 스마트 견본 이미지 프로필이 적용된 폴더로 이동합니다.
 
 1. 폴더를 눌러 내용을 엽니다.
 1. 조정할 스마트 자르기 또는 스마트 견본을 사용하는 이미지를 누릅니다.
@@ -228,7 +228,7 @@ Sharpening is described in [Sharpening Images](/help/assets/assets/s7_sharpening
 
 **여러 이미지의 스마트 자르기 또는 스마트 견본을 편집하려면 다음을 수행하십시오**.
 
-1. AEM 로고를 누르고 **[!UICONTROL 자산으로 이동한]**&#x200B;다음 스마트 자르기 또는 스마트 견본 이미지 프로필이 적용된 폴더로 이동합니다.
+1. AEM 로고를 누르고 **[!UICONTROL 에셋으로]**&#x200B;이동한 다음 스마트 자르기 또는 스마트 견본 이미지 프로필이 적용된 폴더로 이동합니다.
 1. 폴더에서 **[!UICONTROL 추가 작업]** (..) 아이콘을 누른 다음 **[!UICONTROL 스마트 자르기를 누릅니다]**.
 
 1. 스마트 자르기 **[!UICONTROL 편집]** 페이지에서 다음 중 하나를 수행합니다.
@@ -275,7 +275,7 @@ Sharpening is described in [Sharpening Images](/help/assets/assets/s7_sharpening
 
 도구 메뉴 내의 폴더에서 또는 **[!UICONTROL 폴더에 있는 경우]** 속성 **[!UICONTROL 에서 이미지 프로필을 제거할 수]**&#x200B;있습니다. 이 섹션에서는 두 가지 방법으로 폴더에서 이미지 프로필을 제거하는 방법을 설명합니다.
 
-### 프로필 사용자 인터페이스를 통해 폴더에서 Dynamic Media 이미지 프로필 제거 {#removing-image-profiles-from-folders-via-profiles-user-interface}
+### 프로필 사용자 인터페이스를 통해 폴더에서 다이내믹 미디어 이미지 프로필 제거 {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
 1. AEM 로고를 누르고 도구 > **[!UICONTROL 자산 > 이미지 프로필로 이동합니다]**.
 1. 폴더 또는 여러 폴더에서 제거할 이미지 프로필을 선택합니다.
@@ -283,9 +283,9 @@ Sharpening is described in [Sharpening Images](/help/assets/assets/s7_sharpening
 
    이름이 더 이상 폴더 이름 아래에 나타나지 않으므로 이미지 프로필이 더 이상 폴더에 적용되지 않도록 확인할 수 있습니다.
 
-### 속성을 통해 폴더에서 Dynamic Media 이미지 프로필 제거 {#removing-image-profiles-from-folders-via-properties}
+### 속성을 통해 폴더에서 다이내믹 미디어 이미지 프로필 제거 {#removing-image-profiles-from-folders-via-properties}
 
-1. AEM 로고를 누르고 **[!UICONTROL 자산]** 으로 이동한 다음 이미지 프로필을 제거할 폴더로 이동합니다.
+1. AEM 로고를 누르고 **[!UICONTROL 자산]** 을 탐색한 다음 이미지 프로필을 제거할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 눌러 선택한 다음 속성을 **[!UICONTROL 누릅니다]**.
 1. 이미지 프로필 **[!UICONTROL 탭을]** 선택합니다.
 1. 프로필 **[!UICONTROL 이름]** 드롭다운 목록에서 없음 **[!UICONTROL 을]**&#x200B;선택한 다음 **[!UICONTROL 저장 및]**&#x200B;닫기를 누릅니다.
