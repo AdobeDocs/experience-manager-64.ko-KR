@@ -9,13 +9,16 @@ topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '223'
+ht-degree: 4%
 
 ---
 
 
 # 적응형 양식 키워드 {#adaptive-forms-keywords}
 
-적응형 양식 키워드는 적응형 양식에 특별한 의미를 갖는 사전 정의된 예약 식별자입니다. 이러한 키워드는 적응형 양식에서 식별자로 사용할 수 없습니다. 다음 표에는 적응형 양식의 예약된 식별자인 모든 키워드가 나와 있습니다.
+적응형 양식 키워드는 적응형 양식에 특별한 의미를 갖는 사전 정의된 예약 식별자입니다. 이러한 키워드는 응용 양식에 식별자로 사용할 수 없습니다. 다음 표에는 적응형 양식의 예약된 식별자인 모든 키워드가 나와 있습니다.
 
 <table> 
  <tbody>
@@ -157,7 +160,7 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
   <tr>
    <td><p>showLink</p> </td> 
    <td><p>insertInstance</p> </td> 
-   <td><p>fracDigits</p> </td> 
+   <td><p>frcDigits</p> </td> 
   </tr>
   <tr>
    <td><p>clickStatus</p> </td> 
@@ -220,7 +223,7 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
    <td><p>sectionFields</p> </td> 
   </tr>
   <tr>
-   <td><p>bracedFromService</p> </td> 
+   <td><p>brainedFromService</p> </td> 
    <td><p>repeablePanelId</p> </td> 
    <td><p>getSelectedIndex</p> </td> 
   </tr>
@@ -237,4 +240,4 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
  </tbody>
 </table>
 
-위에 나열된 키워드 외에도 [적응형 양식 JavaScript API와 유사한 이름을 사용하지 마십시오](https://adobe.com/go/learn_aemforms_javascript_api_63).
+위에 나열된 키워드 이외에 [적응형 양식 JavaScript API와 유사한 이름을 사용하지 마십시오](https://adobe.com/go/learn_aemforms_javascript_api_63).
