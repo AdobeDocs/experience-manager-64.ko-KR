@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 translation-type: tm+mt
 source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
 
 ## 페이지 속성 {#page-properties}
 
-속성은 여러 탭에 분산되어 있습니다.
+속성은 여러 탭에 분산되어 있습니다:
 
 ### 기본 {#basic}
 
@@ -33,7 +36,7 @@ source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
 
 * **태그**
 
-   선택 상자의 목록을 업데이트하여 페이지에서 태그를 추가하거나 제거할 수 있습니다.
+   선택 상자의 목록을 업데이트하여 페이지에서 태그를 추가하거나 제거할 수 있습니다:
 
    * 태그를 선택하면 선택 상자 아래에 나열됩니다. 이 목록에서 x를 사용하여 태그를 제거할 수 있습니다.
    * 빈 선택 상자에 이름을 입력하여 완전히 새로운 태그를 입력할 수 있습니다.
@@ -79,7 +82,7 @@ source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
 
    이 페이지의 별칭 URL을 입력할 수 있습니다. 이를 통해 더 간단하고 기억에 남는 URL을 만들 수 있습니다.
 
-   예를 들어, 별칭 URL이 경로/웹 사이트에 `elcome`대해 식별된 `v1.0/startpage`페이지에 w로 설정된 경우, h는 h의 별칭 URL `ttp://example.com,` 이 `ttp://example.com/welcome`됩니다. `ttp://example.com/content/v1.0/startpage`
+   For example, if the Vanity URL is set to w `elcome`to the page identified by the path / `v1.0/startpage`for the website h `ttp://example.com,` then h `ttp://example.com/welcome`would be the vanity URL of h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -131,7 +134,7 @@ source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
 
    내보내기 구성을 지정합니다.
 
-### 축소판 {#thumbnail}
+### 썸네일 {#thumbnail}
 
 * **페이지 썸네일**
 
@@ -155,7 +158,7 @@ source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
 
 * **개인화**
 
-   [타깃팅할 범위를 지정하려면 [브랜드]](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)를 선택합니다.
+   [타깃팅할 범위를 지정하려면 브랜드](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)를 선택합니다.
 
 ### 권한 {#permissions}
 
