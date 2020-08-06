@@ -1,8 +1,8 @@
 ---
 title: 클래식 UI 태깅 콘솔
 seo-title: 클래식 UI 태깅 콘솔
-description: 클래식 UI 태깅 콘솔에 대해 알아보십시오.
-seo-description: 클래식 UI 태깅 콘솔에 대해 알아보십시오.
+description: 클래식 UI 태깅 콘솔에 대해 알아봅니다.
+seo-description: 클래식 UI 태깅 콘솔에 대해 알아봅니다.
 uuid: c3080c82-0b34-4922-a263-1674a9522649
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: a7f31bc8-c583-439f-b2af-1dcc58f9c481
 translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+workflow-type: tm+mt
+source-wordcount: '890'
+ht-degree: 38%
 
 ---
 
 
 # 클래식 UI 태깅 콘솔{#classic-ui-tagging-console}
 
-이 섹션은 클래식 UI 태깅 콘솔에 사용됩니다.
+이 섹션은 클래식 UI 태깅 콘솔용입니다.
 
-터치에 적합한 UI 태그 지정 콘솔이 [여기에 있습니다](/help/sites-administering/tags.md#tagging-console).
+터치에 적합한 UI 태깅 콘솔이 [여기에 있습니다](/help/sites-administering/tags.md#tagging-console).
 
 클래식 UI 태깅 콘솔에 액세스하려면:
 
@@ -29,7 +32,7 @@ source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
 
    예: [http://localhost:4502/tagging](http://localhost:4502/tagging)
 
-![managing_tags_usingthentagationconsole-1](assets/managing_tags_usingthetagasministrationconsole-1.png)
+![managing_tags_usingthentagminationconsole-1](assets/managing_tags_usingthetagasministrationconsole-1.png)
 
 ## 태그 및 네임스페이스 만들기 {#creating-tags-and-namespaces}
 
@@ -37,20 +40,23 @@ source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
 
    **태그**&#x200B;를 선택하는 경우 네임스페이스를 만들 수 있습니다.
 
-   ![creating_tags_and namespaces-1](assets/creating_tags_andnamespaces-1.png)
+   ![creating_tags_and namespace-1](assets/creating_tags_andnamespaces-1.png)
 
    네임스페이스(예: **데모**)를 선택하는 경우 해당 네임스페이스 안에 태그를 만들 수 있습니다.
 
-   ![creating_tags_andnamespacesinnewnamespace](assets/creating_tags_andnamespacesinnewnamespace.png)
+   ![creating_tags_andnamesinnewnamespace](assets/creating_tags_andnamespacesinnewnamespace.png)
 
 1. 두 경우 모두
 
-   * **제목**(*필수*)태그의 표시 제목입니다. 문자를 입력할 수 있지만
+   * **제목**
+(
+*필수*) 태그의 표시 제목입니다. 문자를 입력할 수 있지만
 
       다음과 같은 특수 문자를 사용하지 않는 것이 좋습니다.
 
       * `colon (:)` - 네임스페이스 구분 기호
       * `forward slash (/)` - 하위 태그 구분 기호
+
       이러한 문자를 입력하면 표시되지 않습니다.
 
    * **이름**
@@ -77,22 +83,22 @@ source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
 1. **삭제**&#x200B;를 클릭합니다. 
 1. Click **Yes** to close the dialog.
 
-   태그는 더 이상 나열되지 않아야 합니다.
+   태그는 더 이상 나열되지 않습니다.
 
 ## 태그 활성화 및 비활성화 {#activating-and-deactivating-tags}
 
-1. 오른쪽 창에서 활성화(게시) 또는 비활성화(게시 취소)할 네임스페이스 또는 태그를 선택합니다.
+1. 오른쪽 창에서 활성화(게시)하거나 비활성화(게시 취소)할 네임스페이스 또는 태그를 선택합니다.
 1. 필요에 따라 **활성화** 또는 **비활성화**&#x200B;를 클릭합니다.
 
 ## 목록 - 태그 참조 위치 표시 {#list-showing-where-tags-are-referenced}
 
 **목록**&#x200B;을 클릭하면 강조된 태그를 사용하는 모든 페이지의 경로를 보여 주는 새 창이 열립니다.
 
-![list_showing_wheretagresorted](assets/list_showing_wheretagsarereferenced.png)
+![list_showing_whretagresorted](assets/list_showing_wheretagsarereferenced.png)
 
 ## 태그 이동 {#moving-tags}
 
-태그 관리자 및 개발자가 택소노미를 정리하거나 태그 ID의 이름을 변경할 수 있도록 태그를 새 위치로 이동할 수 있습니다.
+태그 관리자 및 개발자가 택소노미를 정리하거나 태그 ID의 이름을 바꿀 수 있도록 태그를 새 위치로 이동할 수 있습니다.
 
 1. **Tagging** 콘솔을 엽니다.
 1. 태그를 선택하고 상단 도구 모음이나 컨텍스트 메뉴에서 **이동...**&#x200B;을 클릭합니다.
@@ -127,7 +133,7 @@ source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
 
 The **Merge Tag** dialog looks as follows:
 
-![머게태그](assets/mergetag.png)
+![mergetag](assets/mergetag.png)
 
 ## 태그 사용 횟수 {#counting-usage-of-tags}
 
@@ -158,7 +164,7 @@ The following procedure shows how to translate the `title`of the tag **Animals**
 
 ![edit_tag](assets/edit_tag.png)
 
-Tagging 콘솔은 사용자 언어 설정을 사용하므로 사용자 속성에서 언어를 프랑스어로 설정하는 사용자에 대해 Animal 태그의 경우 &#39;Animaux&#39;가 표시됩니다.
+Tagging 콘솔은 사용자 언어 설정을 사용하므로 Animal 태그의 경우 사용자 속성에서 언어를 프랑스어로 설정하는 사용자에 대해 &#39;Animaux&#39;가 표시됩니다.
 
 To add a new language to the dialog, please refer to the section [Adding a New Language to the Edit Tag Dialog](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog) in the **Tagging for Developers** section.
 
@@ -168,16 +174,16 @@ By default the tag `titles`in the page properties are displayed in the page lang
 
 1. Refer to the previous section to add the French translation to the **Animals** below **Tags** > **Stock Photography**.
 1. **Geometrixx** 사이트의 English 분기에서 **Products** 페이지의 페이지 속성을 엽니다.
-1. 태그/ **키워드** 표시 영역의 오른쪽에 있는 풀다운 메뉴를 선택하여 태그/키워드 대화 상자를 열고 오른쪽 하단에 **있는 풀다운 메뉴에서** 프랑스어 언어를 선택합니다.
-1. Stock Photography 탭을 선택할 때까지 왼쪽 오른쪽 화살표를 사용하여 **스크롤합니다** .
+1. 태그/ **키워드** 표시 영역의 오른쪽에 있는 풀다운 메뉴를 선택하여 [태그/키워드] 대화 상자를 열고 오른쪽 하단 모서리의 풀다운 메뉴에서 **프랑스어** 언어를 선택합니다.
+1. 오른쪽 화살표를 사용하여 스크롤하여 **스톡 사진** 탭을 선택할 수 있습니다
 
-   Animals **** (Animaux ****) 태그를 선택하고 대화 상자 외부를 선택하여 닫고 태그를 페이지 속성에 추가합니다.
+   Animals **** (**Animaux**) 태그를 선택하고 대화 상자 외부를 선택하여 닫고 태그를 페이지 속성에 추가합니다.
 
    ![french_tag](assets/french_tag.png)
 
 By default, the Page Properties dialog displays the tag `titles`according to the page language.
 
-일반적으로 페이지 언어를 사용할 수 있는 경우 페이지 언어에서 태그 언어를 가져옵니다. 그렇지 않고 양식 또는 대화 상자 등에서 [](/help/sites-developing/building.md#tagging-on-the-client-side)태그 위젯이 사용된 경우의 태그 언어는 컨텍스트에 따라 다릅니다.
+일반적으로 페이지 언어가 사용 가능한 경우 페이지 언어에서 태그 언어를 가져옵니다. 그렇지 않고 양식 또는 대화 상자 등에서 [](/help/sites-developing/building.md#tagging-on-the-client-side)태그 위젯이 사용된 경우의 태그 언어는 컨텍스트에 따라 다릅니다.
 
 >[!NOTE]
 >
