@@ -1,6 +1,6 @@
 ---
 title: AEM Assets에서 지원되는 파일 포맷
-description: AEM Assets에서 지원하는 파일 형식 및 MIME 형식의 목록 및 각 형식에 대해 지원되는 기능입니다.
+description: AEM Assets에서 지원하는 파일 형식 및 MIME 형식 목록과 각 형식에 지원되는 기능
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 2baa172088f646752e85168d432d46942ac8244e
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 AEM Assets은 다양한 파일 포맷을 지원하며 각 기능은 서로 다른 MIME 유형을 지원합니다.
 
-다른 표준을 준수하는 DAM(Digital Asset Management) 솔루션 및 데스크탑 소프트웨어와 AEM Assets을 통합하려면 Adobe의 XMP(Extensible Metadata Platform)을 사용하십시오.
+다른 표준을 준수하는 DAM(Digital Asset Management) 솔루션 및 데스크탑 소프트웨어와 AEM Assets을 통합하려면, Adobe의 확장 가능한 메타데이터 플랫폼(XMP)을 사용하십시오.
 
 지원 수준을 이해하려면 범례를 사용합니다.
 
@@ -45,9 +45,9 @@ AEM Assets은 다양한 파일 포맷을 지원하며 각 기능은 서로 다�
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
 
-**병합된 이미지‡이 PSD 파일에서 추출됩니다.** 이 이미지는 Adobe Photoshop에서 생성되며 PSD 파일에 포함되어 있습니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
+**병합된 이미지‡이 PSD 파일에서 추출됩니다.** 이 이미지는 Adobe Photoshop에서 생성되며 PSD 파일에 포함됩니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
 
-Dynamic Media 기능에 지원되는 래스터 이미지 포맷은 다음과 같습니다.
+다이내믹 미디어 기능에 지원되는 래스터 이미지 포맷은 다음과 같습니다.
 
 | 형식 | 업로드<br> (입력 형식) | 이미지<br> 사전 설정<br> 만들기<br> (출력 형식) | 동적<br> 변환 미리<br> 보기 | 동적<br> 표현물<br> 전달 | 동적<br> 변환<br> 다운로드 |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -65,7 +65,7 @@ Dynamic Media 기능에 지원되는 래스터 이미지 포맷은 다음과 같
 | PICT | ✓ |  |  |  |  |
 | PSB |  |  |  |  |  |
 
-**병합된 이미지‡이 PSD 파일에서 추출됩니다.** 이 이미지는 Adobe Photoshop에서 생성되며 PSD 파일에 포함되어 있습니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
+**병합된 이미지‡이 PSD 파일에서 추출됩니다.** 이 이미지는 Adobe Photoshop에서 생성되며 PSD 파일에 포함됩니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
 
 위의 정보 이외에 다음을 고려하십시오.
 
@@ -73,15 +73,15 @@ Dynamic Media 기능에 지원되는 래스터 이미지 포맷은 다음과 같
 
 * PSB 파일 형식이 핸들러에 추가될 때 메타데이터 원본에 대해 `NComm` 작동합니다.
 
-* Dynamic Media을 사용하여 EPS 파일에 대한 동적 변환을 미리 보고 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Dynamic Media를 사용하여 EPS 파일에 대한 동적 변환을 미리 보고 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * EPS 파일의 경우 PS-Adobe(PostScript Document Structuring Convention) 버전 3.0 이상에서 메타데이터 원본에 대한 지원이 지원됩니다.
 
 ## Dynamic Media에서 지원되지 않는 래스터 이미지 형식 {#unsupported-image-formats-dynamic-media}
 
-다음 목록은 Dynamic Media에서 지원되지 *않는* 래스터 이미지 파일 형식의 하위 유형에 대해 설명합니다.
+다음 목록은 Dynamic Media에서 지원되지 *않는* 래스터 이미지 파일 포맷의 하위 유형에 대해 설명합니다.
 
-Dynamic Media에 대해 지원되지 [않는 파일 형식 감지를 참조하십시오](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
+Dynamic [Media에서 지원되지 않는 파일 형식 감지를 참조하십시오](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
 
 * IDAT 청크 크기가 100MB보다 큰 PNG 파일
 * PSB 파일.
@@ -92,7 +92,7 @@ Dynamic Media에 대해 지원되지 [않는 파일 형식 감지를 참조하�
 
 ## PDF 래스터라이저 라이브러리 {#supported-pdf-rasterizer-library}
 
-Adobe PDF 래스터라이저 라이브러리는 컨텐츠 집약적이고 규모가 큰 Adobe Illustrator 및 PDF 파일에 대한 고품질 축소판과 미리 보기를 생성합니다. PDF 래스터라이저 라이브러리를 사용하는 것이 좋습니다.
+Adobe PDF 래스터라이저 라이브러리는 컨텐츠를 많이 사용하는 대형 Adobe Illustrator 및 PDF 파일을 위한 고품질 축소판과 미리 보기를 생성합니다. Adobe은 다음과 같은 경우 PDF 래스터라이저 라이브러리를 사용하는 것이 좋습니다.
 
 * 처리해야 하는 리소스가 많은 AI/PDF 파일
 * 축소판이 기본적으로 생성되지 않는 AI/PDF 파일
@@ -102,7 +102,7 @@ See [Using PDF Rasterizer](aem-pdf-rasterizer.md).
 
 ## 이미지 트랜스코딩 라이브러리 {#supported-image-transcoding-library}
 
-Adobe Imaging Transcoding Library는 인코딩, 트랜스코딩, 리샘플링, 크기 조정 등의 핵심 이미지 처리 기능을 수행하는 이미지 처리 솔루션입니다.
+Adobe 이미징 트랜스코딩 라이브러리는 인코딩, 트랜스코딩, 리샘플링 및 크기 조정과 같은 핵심 이미지 처리 기능을 수행하는 이미지 처리 솔루션입니다.
 
 이미징 트랜스코딩 라이브러리는 JPG/JPEG, PNG(8비트 및 16비트), GIF, BMP, TIFF/Compressed TIFF(32비트 TIFF 파일 및 PTIFF 파일 제외), ICO 및 ICN MIME 유형을 지원합니다.
 
@@ -110,7 +110,7 @@ See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 ## Camera Raw {#supported-camera-raw}
 
-Adobe Camera Raw 라이브러리를 사용하면 AEM Assets에서 Raw 이미지를 인제스트할 수 있습니다. See [Camera Raw Support](camera-raw.md).
+AEM Assets은 Adobe Camera Raw 라이브러리를 통해 Raw 이미지를 인제스트할 수 있습니다. See [Camera Raw Support](camera-raw.md).
 
 ## 문서 포맷 {#supported-document-formats}
 
@@ -137,7 +137,7 @@ Adobe Camera Raw 라이브러리를 사용하면 AEM Assets에서 Raw 이미지�
 | QXP | ✓ | ✓ |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |
 
-Dynamic Media 기능에 지원되는 문서 형식은 다음과 같습니다.
+다이내믹 미디어 기능에 지원되는 문서 형식은 다음과 같습니다.
 
 | 형식 | 업로드<br> (입력 형식) | 이미지<br> 사전 설정<br> 만들기<br> (출력 형식) | 동적<br> 변환 미리<br> 보기 | 동적<br> 표현물<br> 전달 | 동적<br> 변환<br> 다운로드 |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -162,11 +162,11 @@ Dynamic Media 기능에 지원되는 문서 형식은 다음과 같습니다.
 
 위의 기능 외에 다음을 고려하십시오.
 
-* Dynamic Media을 사용하여 PDF 파일에 대한 동적 변환을 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Dynamic Media를 사용하여 PDF 파일에 대한 동적 변환을 생성하려면 [Adobe Illustrator(AI), EPS(Postscript) 및 PDF 파일 형식을 참조하십시오.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Dynamic Media을 사용하여 AI 파일에 대한 동적 변환을 미리 보고 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Dynamic Media를 사용하여 AI 파일에 대한 동적 변환을 미리 보고 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Dynamic Media을 사용하여 INDD 파일에 대한 동적 변환을 생성하려면 [InDesign(INDD) 파일 형식을 참조하십시오](../assets/managing-image-presets.md#indesign-indd-file-format).
+* Dynamic Media를 사용하여 INDD 파일에 대한 동적 변환을 생성하려면 [InDesign(INDD) 파일 형식을 참조하십시오](../assets/managing-image-presets.md#indesign-indd-file-format).
 
 ## 멀티미디어 포맷 {#supported-multimedia-formats}
 
@@ -191,7 +191,7 @@ Dynamic Media 기능에 지원되는 문서 형식은 다음과 같습니다.
 | WMV | ✓ | ✓ |  | * | * |
 | SWF | ✓ | ✓ |  |  |  |
 
-## Dynamic Media 트랜스코딩용 비디오 포맷 입력 {#supported-input-video-formats-for-dynamic-media-transcoding}
+## 다이내믹 미디어 트랜스코딩에 사용할 비디오 포맷 입력 {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | 비디오 파일 확장자 | 컨테이너 | 권장 비디오 코덱스 | 지원되지 않는 비디오 코덱입니다. |
 |---|---|---|---|
@@ -216,7 +216,7 @@ Dynamic Media 기능에 지원되는 문서 형식은 다음과 같습니다.
 
 지원되는 아카이브 포맷 및 일반 DAM 워크플로우의 적용 가능성.
 
-| 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | Dynamic Media 배달 |
+| 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | 다이내믹 미디어 전달 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
@@ -224,13 +224,13 @@ Dynamic Media 기능에 지원되는 문서 형식은 다음과 같습니다.
 | TAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | ZIP **†** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-**?** 병합된 이미지는 PSD 파일에서 추출됩니다. 이 이미지는 Adobe Photoshop에서 생성되며 PSD 파일에 포함되어 있습니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다. 알고리즘을 사용하여 만든 ZIP 아카이브는 AEM에서 제한된 `Deflate64` 지원을 가집니다. 보관 및 보관 해제 작업은 지원되지 않습니다. 하지만 업로드, 탐색 및 다운로드와 같은 작업이 지원됩니다.
+**?** 병합된 이미지는 PSD 파일에서 추출됩니다. 이 이미지는 Adobe Photoshop에서 생성되며 PSD 파일에 포함됩니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다. 알고리즘을 사용하여 만든 ZIP 보관 파일의 경우 AEM에서 지원이 `Deflate64` 제한됩니다. 보관 및 보관 해제 작업은 지원되지 않습니다. 하지만 업로드, 탐색 및 다운로드와 같은 작업이 지원됩니다.
 
 ## 기타 지원되는 포맷 {#other-supported-formats}
 
 기타 몇 가지 파일 포맷에 대한 일반적인 DAM 워크플로우의 적용 방법은 아래 표에 설명되어 있습니다.
 
-| 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | Dynamic Media 배달 |
+| 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | 다이내믹 미디어 전달 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | **#** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
@@ -243,9 +243,9 @@ Dynamic Media 기능에 지원되는 문서 형식은 다음과 같습니다.
 
 ## Supported MIME types {#supported-mime-types}
 
-기본적으로 AEM은 파일 확장명을 사용하여 파일 유형을 감지합니다. AEM은 파일의 내용에서 검색할 수 있습니다. 후자의 경우, AEM 웹 콘솔 [!UICONTROL 의] 일 CQ DAM MIME 유형 서비스에서  컨텐트에서 MIME 감지 옵션을 선택합니다.
+기본적으로 AEM은 파일 확장자를 사용하여 파일 유형을 감지합니다. AEM은 파일의 내용에서 검색할 수 있습니다. 후자의 경우 AEM 웹 콘솔 [!UICONTROL 의] 일 CQ DAM MIME 유형 서비스에서  컨텐트에서 MIME 감지 옵션을 선택합니다.
 
-지원되는 MIME 유형 목록은 에서 CRXDE Lite를 참조하십시오 `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
+지원되는 MIME 형식 목록은 의 CRXDE Lite에서 사용할 수 있습니다 `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
 | 파일 확장자 | MIME 유형/인터넷 미디어 유형 | 기본 jobParam 값 | 허용되는 jobParam 값 |
 |---|---|---|---|
