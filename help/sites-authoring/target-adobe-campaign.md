@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: f1cb5e98-ccd1-4b2c-acca-2b3cc1b7ac5f
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '827'
+ht-degree: 75%
 
 ---
 
@@ -33,7 +36,7 @@ Adobe Campaign 뉴스레터를 타깃팅하려면 먼저 클래식 UI(Client Con
 
 세그먼트를 만들려면 다음을 수행하십시오.
 
-1. Open the [segmentation console](http://localhost:4502/miscadmin#/etc/segmentation) at **&lt;host>:&lt;port>/miscadmin#/etc/segmentation**.
+1. [&lt;host>:&lt;port>/miscadmin#/etc/segmentation에서](http://localhost:4502/miscadmin#/etc/segmentation) 세그멘테이션 콘솔을 **엽니다**.
 1. Create a new page and enter a title - for example, **AC Segments**- and select the **Segment (Adobe Campaign)** template.
 1. 만들어진 페이지를 왼쪽에 있는 트리 보기에서 선택합니다.
 1. &#39;남성&#39;이라는 이름으로 만든 세그먼트 아래에 새 페이지를 만들어 세그먼트를 만들고(예: 남성 사용자 타깃팅) **세그먼트(Adobe Campaign)** 템플릿을 선택합니다.
