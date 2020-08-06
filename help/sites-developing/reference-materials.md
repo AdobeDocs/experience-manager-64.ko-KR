@@ -1,8 +1,8 @@
 ---
 title: API 가이드
 seo-title: API 가이드
-description: AEM에서 애플리케이션 개발에 제공하는 API에 대한 설명서
-seo-description: AEM에서 애플리케이션 개발에 제공하는 API에 대한 설명서
+description: AEM에서 애플리케이션 개발을 위해 제공하는 API에 대한 설명서
+seo-description: AEM에서 애플리케이션 개발을 위해 제공하는 API에 대한 설명서
 uuid: 4ace24c8-8bdf-4c68-b21d-ad2c03cf7362
 contentOwner: Guillaume Carlino
 topic-tags: introduction
@@ -12,19 +12,22 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 39d1cb2e-18f5-4d08-b983-a06b1f470c51
 translation-type: tm+mt
 source-git-commit: 507559ee6cc6b201a11bbf84da515b675534f675
+workflow-type: tm+mt
+source-wordcount: '274'
+ht-degree: 6%
 
 ---
 
 
 # API 가이드{#api-guides}
 
-AEM 파섹 다음 목록은 AEM에서 지원하는 API에 대한 설명서를 제공합니다.
+AEM은 애플리케이션 개발을 위한 여러 API를 제공합니다. 다음 목록은 AEM에서 지원하는 API에 대한 설명서를 제공합니다.
 
 * [Adobe AEM 6.4.0 API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html)
 
 * [API 차이점](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/diff-previous/changes.html)
 
-* [Granite UI(Touch-Enabled) API 설명서](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
+* [[MOCK] Granite UI (Touch-Enabled) API Documentation](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
 
 * [Coral UI 안내서](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
@@ -41,13 +44,13 @@ AEM SPA(단일 페이지 애플리케이션) 편집기 SDK 프레임워크 JavaS
 * [편집 가능한 구성 요소 반응](https://www.npmjs.com/package/@adobe/cq-react-editable-components)
 * [각 편집 가능한 구성 요소](https://www.npmjs.com/package/@adobe/cq-angular-editable-components)
 
-AEM Delivery 및 Content Management API:
+AEM 전달 및 컨텐츠 관리 API:
 
 * 핵심 구성 요소(JSON)
 
    * [JSON 내보내기](/help/sites-developing/json-exporter.md)
    * [구성 요소에 대해 JSON 내보내기 활성화](/help/sites-developing/json-exporter-components.md)
-   * 자세한 [내용은 사용자 안내서의 구성 요소](https://helpx.adobe.com/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js) 섹션을 참조하십시오
+   * 자세한 내용은 [개발 사용자 안내서의 구성 요소 섹션을](https://helpx.adobe.com/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js) 참조하십시오.
 
 * [AEM Assets HTTP API](/help/assets/mac-api-assets.md)
 
