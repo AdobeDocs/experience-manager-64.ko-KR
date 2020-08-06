@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 884b3e75-78b5-421a-938e-97fe6d77c8c2
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1507'
+ht-degree: 77%
 
 ---
 
@@ -34,11 +37,11 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 * 아래에서 **geometrixx**&#x200B;를 클릭합니다.
 * **geometrixx** 아래에 **뉴스**&#x200B;라는 *스캐폴드 페이지*&#x200B;가 있습니다. 이 페이지를 두 번 클릭하여 엽니다.
 
-![hostescaffold_work](assets/howscaffolds_work.png)
+![scaffold_work](assets/howscaffolds_work.png)
 
 The scaffold consists of a form with a field for each piece of content that will make up the page to be created and four important parameters which are accessed through the **Page Properties** of the scaffold page.
 
-![pageprops](assets/pageprops.png)
+![pagprops](assets/pageprops.png)
 
 스캐폴딩 페이지 속성은 다음과 같습니다.
 
@@ -52,12 +55,12 @@ The scaffold consists of a form with a field for each piece of content that will
 
 * **제목**: 만들 페이지의 이름입니다. 이 필드는 모든 스캐폴드에 항상 있습니다.
 * **텍스트**: 이 필드는 결과 페이지의 텍스트 구성 요소에 해당합니다.
-* **이미지**:이 필드는 결과 페이지의 이미지 구성 요소에 해당합니다.
+* **이미지**: 이 필드는 결과 페이지의 이미지 구성 요소에 해당합니다.
 * **이미지/고급**: **제목**: 이미지의 제목입니다.
 
 * **이미지/고급**: **대체 텍스트**: 이미지의 대체 텍스트입니다.
 
-* **이미지/고급**:설명 ****:이미지의 설명입니다.
+* **이미지/고급**: **설명**: 이미지의 설명입니다.
 
 * **이미지/고급**: **크기**: 이미지의 크기입니다.
 
@@ -67,9 +70,9 @@ The scaffold consists of a form with a field for each piece of content that will
 
 To create a new scaffold go to the **Tools** console, then **Default Page Scaffolding** and create a new page. A single page template type will be available, the *Scaffolding Template.*
 
-*새 페이지의 페이지 속성으로 이동한 다음&#x200B;**위에 설명된 대로***&#x200B;제목 텍스트&#x200B;*, 설명*,*제목*&#x200B;템플릿 및&#x200B;***대상 대상 경로를 설정합니다.*
+*새 페이지의&#x200B;**페이지 속성**으로 이동하여 위에 설명된 대로 텍스트*,*설명*,*제목 설명*, Target *및**Target Pathnective를 설정합니다.*
 
-*다음으로는 이 Scaffold가 만드는 페이지의 구조를 정의해야 합니다. 이렇게 하려면 Scaffold 페이지에서 디자인 모드로 이동합니다. **대화 상자 편집기**&#x200B;에서 Scaffold를 편집할 수 있는 링크가 나타납니다.
+*다음으로는 이 Scaffold가 만드는 페이지의 구조를 정의해야 합니다. 이렇게 하려면 Scaffold 페이지의 디자인 모드로 이동합니다. **대화 상자 편집기**&#x200B;에서 Scaffold를 편집할 수 있는 링크가 나타납니다.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 
@@ -87,7 +90,7 @@ Now, click on the dialog field **Dialog > Tab Panel > Text > Text**, like this:
 
 ![textedit](assets/textedit.png)
 
-이 필드의 속성 목록은 다음과 같이 대화 상자 편집기 오른쪽에 나타납니다.
+이 필드의 속성 목록이 다음과 같이 대화 상자 편집기 오른쪽에 나타납니다.
 
 ![list_of_properties](assets/list_of_properties.png)
 
