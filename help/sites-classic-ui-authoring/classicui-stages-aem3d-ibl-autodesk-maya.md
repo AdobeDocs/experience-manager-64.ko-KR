@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 00f7ed25-276b-42c2-ae4c-11de357a9ec6
 translation-type: tm+mt
 source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 85%
 
 ---
 
@@ -56,7 +59,7 @@ source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
    * **[!UICONTROL Quality(품질) 탭]**
 
       * **[!UICONTROL Overall quality]**(전체 품질) - `0.5` 이하
-      * **[!UICONTROL GI(간접 확산) 모드]** - `Final Gather`
+      * **[!UICONTROL 간접 확산(GI) 모드]** - `Final Gather`
       * **[!UICONTROL 필터 크기]** - `2.0`, `2.0`
    * 사용할 장면을 일반 이미지 크기로 렌더링합니다. 필요할 경우 광원, Render(렌더링) 설정 또는 두 가지 모두를 미세 조정하여 원하는 결과를 얻도록 합니다.
 
