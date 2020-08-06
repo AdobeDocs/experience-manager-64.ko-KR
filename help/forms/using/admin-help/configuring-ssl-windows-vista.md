@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 667645a0-53d0-4f9b-a0ba-cc7e366a23a1
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '172'
+ht-degree: 0%
 
 ---
 
@@ -23,17 +26,17 @@ Windows Vista™에서 SSL을 구성하려면 인증에 RSA 키가 있는 SSL �
 >
 >Windows Vista는 DSA 키와 함께 작동하지 않습니다.
 
-인증서 및 키 저장소를 만드는 데 필요한 모든 정보가 포함된 단일 명령을 사용하여 키 도구를 실행할 수 있습니다.
+인증서와 키 저장소를 만드는 데 필요한 모든 정보가 포함된 단일 명령을 사용하여 키 도구를 실행할 수 있습니다.
 
 **SSL 인증서 만들기**
 
-1. 명령 프롬프트에서 JAVA HOME/ *[bin으로]*&#x200B;이동하고 다음 명령을 입력하여 인증서 및 키 저장소를 만듭니다.
+1. 명령 프롬프트에서 *[JAVA HOME]*/bin으로 이동하고 다음 명령을 입력하여 인증서와 키 저장소를 만듭니다.
 
-   `keytool -genkey -keyalg RSA -dname "CN=`*호스트 그룹 이름&#x200B;*이름`, OU=`** 회사 이름 `, O=`*회사 이름&#x200B;*회사 이름**`,L=`*이름**** 이름CodeCode CodeCityCodeLCcertCityFusion&quot;LC_LC&quot;VERTISING* PasswordStorekeyname*`, S=`**`, C=`** `" -alias`**`-keypass``*key*`**`-keystore`** 호스트 이름 `.keystore`
+   `keytool -genkey -keyalg RSA -dname "CN=`*호스트 이름&#x200B;*`, OU=`*그룹 이름* 회사 이름 `, O=`**회사 이름`,L=`**&#x200B;회사 이름 `, S=`*City *`, C=`** `" -alias`**`-keypass``*key*`**`-keystore`***Name**Name** NameStateStateCodeCodeCodeCumuly&quot;LC Cert&quot;NVertiserKeyname* `.keystore`
 
    >[!NOTE]
    >
-   >JAVA *[_HOME을]JDK가 설치된 디렉토리로 바꾸고 기울임꼴로 된 텍스트를 환경에 해당하는 값으로 바꿉니다.*
+   >JAVA_ *[HOME을]JDK가 설치된 디렉토리로 바꾸고 기울임꼴로 된 텍스트를 사용자 환경에 해당하는 값으로 바꿉니다.*
 
-1. 암호를 `changeit` 입력합니다. 이 비밀번호는 Java 설치의 기본값이며 시스템 관리자가 암호를 변경했을 수 있습니다.
+1. 암호 `changeit` 로 입력합니다. 이 비밀번호는 Java 설치에 대한 기본 암호이며 시스템 관리자가 암호를 변경했을 수 있습니다.
 
