@@ -1,6 +1,6 @@
 ---
 title: 자산 검색 확장
-description: AEM Assets의 검색 기능을 기본 검색 기능에서 문자열별로 자산을 검색합니다.
+description: AEM Assets의 검색 기능을 기본 검색 기능에서 문자열별로 자산을 검색할 수 있도록 확장할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
@@ -13,11 +13,11 @@ ht-degree: 8%
 
 # 자산 검색 확장 {#extending-assets-search}
 
-AEM(Adobe Experience Manager) 자산 검색 기능을 확장할 수 있습니다. 기본적으로 AEM Assets는 문자열별로 자산을 검색합니다.
+Adobe Experience Manager(AEM) 자산 검색 기능을 확장할 수 있습니다. 기본적으로 AEM Assets은 문자열별로 자산을 검색합니다.
 
 검색은 QueryBuilder 인터페이스를 통해 수행되므로 여러 예측자로 검색을 사용자 정의할 수 있습니다. 다음 디렉토리에 기본 예측 세트를 오버레이할 수 있습니다. `/apps/dam/content/search/searchpanel/facets`.
 
-AEM 자산 관리 패널에 탭을 더 추가할 수도 있습니다.
+또한 AEM Assets 관리 패널에 탭을 추가할 수도 있습니다.
 
 >[!CAUTION]
 >
@@ -36,7 +36,7 @@ AEM 자산 관리 패널에 탭을 더 추가할 수도 있습니다.
 
 ## 탭 추가 {#adding-tabs}
 
-AEM 자산 관리에서 탭을 구성하여 추가 검색 탭을 추가할 수 있습니다. 추가 탭을 만들려면
+AEM Assets 관리에서 검색 탭을 구성하여 추가 검색 탭을 추가할 수 있습니다. 추가 탭을 만들려면
 
 1. 폴더 구조가 없는 `/apps/wcm/core/content/damadmin/tabs,`경우 폴더 구조를 만들고, `tabs` 노드를 복사한 후 붙여넣습니다 `/libs/wcm/core/content/damadmin` .
 1. 원하는 대로 두 번째 탭을 만들고 구성합니다.
@@ -49,7 +49,7 @@ AEM 자산 관리에서 탭을 구성하여 추가 검색 탭을 추가할 수 �
 
 AEM Assets에는 자산 공유 페이지를 사용자 지정하는 데 사용할 수 있는 사전 정의된 예측 세트가 포함되어 있습니다. 이렇게 자산 공유 사용자 지정은 자산 공유 페이지 [만들기 및 구성에서 다룹니다](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-AEM 개발자는 기존 예측자를 사용하는 것 외에도 [쿼리 빌더 API를 사용하여 자체 설명을 만들 수 있습니다](/help/sites-developing/querybuilder-api.md).
+AEM 개발자는 기존의 예측 기능을 사용하는 것 외에도 [쿼리 빌더 API를 사용하여 자신만의 설명을 만들 수 있습니다](/help/sites-developing/querybuilder-api.md).
 
 사용자 정의 설명을 만들려면 [Widgets 프레임워크에 대한 기본적인 지식이 필요합니다](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html).
 
@@ -142,7 +142,7 @@ AEM 개발자는 기존 예측자를 사용하는 것 외에도 [쿼리 빌더 A
    </script>
    ```
 
-1. 구성 요소를 사용할 수 있게 하려면 구성 요소를 편집할 수 있어야 합니다. 구성 요소를 편집 가능하도록 하려면 CRXDE에서 기본 유형의 노드 `cq:editConfig` 를 추가합니다 `cq:EditConfig`. 단락을 제거할 수 있도록 단일 값 DELETE 값으로 다중 값 속성 `cq:actions` 을 **추가합니다**.
+1. 구성 요소를 사용할 수 있게 하려면 구성 요소를 편집할 수 있어야 합니다. 구성 요소를 편집 가능하도록 하려면 CRXDE에서 기본 유형의 노드 `cq:editConfig` 를 추가합니다 `cq:EditConfig`. 단락을 제거하고 단일 값 `cq:actions` 의 **DELETE으로 다중 값 속성을 추가할 수 있습니다**.
 1. 브라우저로 이동하고 샘플 페이지(예:)에서 디자인 모드로 전환하고 설명 단락 시스템(예: `press.html`왼쪽 ****)에 대한 새 구성 요소를 활성화합니다.
 
 1. 이제 **편집** 모드에서 새 구성 요소를 사이드 킥에서 사용할 수 있습니다( **검색** 그룹에 있음). 설명 열에 구성 요소 **를** 삽입하고 검색 단어(예: **다이아몬드** )를 입력하고 확대경을 클릭하여 검색을 시작합니다.
@@ -303,6 +303,6 @@ AEM 개발자는 기존 예측자를 사용하는 것 외에도 [쿼리 빌더 A
 
 ## 검색 결과 사용자 지정 {#customizing-search-results}
 
-자산 공유 페이지의 검색 결과 프레젠테이션은 선택한 렌즈에 의해 제어됩니다. AEM 자산에는 자산 공유 페이지를 사용자 지정하는 데 사용할 수 있는 사전 정의된 렌즈 세트가 포함되어 있습니다. 이렇게 자산 공유 사용자 지정은 자산 공유 페이지 [만들기 및 구성에서 다룹니다](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+자산 공유 페이지의 검색 결과 프레젠테이션은 선택한 렌즈에 의해 제어됩니다. AEM Assets에는 자산 공유 페이지를 사용자 지정하는 데 사용할 수 있는 미리 정의된 렌즈 세트가 포함되어 있습니다. 이렇게 자산 공유 사용자 지정은 자산 공유 페이지 [만들기 및 구성에서 다룹니다](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-AEM 개발자는 기존 렌즈를 사용하는 것 외에도 자체 렌즈를 만들 수 있습니다.
+AEM 개발자들은 기존의 렌즈를 사용하는 것 외에도 자신만의 렌즈를 만들 수 있다.
