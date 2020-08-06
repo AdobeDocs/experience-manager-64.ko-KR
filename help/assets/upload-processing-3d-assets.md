@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: a0319701-21eb-4b7f-8b2e-ac81a7a75875
 translation-type: tm+mt
 source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+workflow-type: tm+mt
+source-wordcount: '821'
+ht-degree: 71%
 
 ---
 
@@ -52,11 +55,11 @@ source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
 
 서버가 너무 많이 느려지는 방지하기 위해 전환, 처리 및 렌더링 작업은 필요에 따라 큐에 오르게 됩니다. The message &quot;Waiting for processing...&quot; is sometimes shown in the **[!UICONTROL Card View]** at the time you uploaded assets. 이 상태는 현재 자산이 처리되기 전에 다른 처리 또는 렌더링 작업이 완료되어야 함을 나타냅니다.
 
-통합 처리 및 렌더링에 CPU 사용을 제한하는 메커니즘이 있습니다. CPU [제한을 구성하는 방법에 대한 자세한 내용은 고급 구성 설정을](advanced-config-3d.md) 참조하십시오.
+처리 및 렌더링에 CPU 사용을 제한하는 메커니즘이 있습니다. CPU [제한](advanced-config-3d.md) 구성 방법에 대한 자세한 내용은 고급 구성 설정을 참조하십시오.
 
 ## 업로드된 3D 파일의 처리 상태 모니터링 {#monitoring-the-processing-status-of-your-uploaded-d-files}
 
-In **[!UICONTROL Card View]** only, the processing status and progression is displayed as a progress banner on the asset&#39;s card. 업로드된 각 3D 모델은 일반적으로 다음의 4-6개의 순서가 지정된 처리 단계를 수행합니다.
+In **[!UICONTROL Card View]** only, the processing status and progression is displayed as a progress banner on the asset&#39;s card. 업로드된 각 3D 모델은 일반적으로 다음 4-6개의 순서로 처리 단계를 수행합니다.
 
 <table> 
  <tbody> 
@@ -68,7 +71,7 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   <tr> 
    <td>1</td> 
    <td>처리 중</td> 
-   <td>기본 초기 처리 및 메타데이터 추출</td> 
+   <td>기본적인 초기 처리 및 메타데이터 추출</td> 
   </tr> 
   <tr> 
    <td>2</td> 
@@ -78,22 +81,22 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   <tr> 
    <td>3</td> 
    <td>미리 보기 만들기</td> 
-   <td>FBX 또는 OBJ 파일이 인제스트되고 처리됩니다. 파일 종속성을 평가하고 가능한 경우 자산 참조로 확인합니다.</td> 
+   <td>FBX 또는 OBJ 파일을 인제스트하고 처리합니다. 파일 종속성을 평가하고 가능한 경우 자산 참조로 확인합니다.</td> 
   </tr> 
   <tr> 
    <td>4</td> 
    <td>지면 그림자 만들기</td> 
-   <td>선택 사항입니다. 3D 개체 아래의 지표 평면에 주변 교합 그림자 효과를 생성할 수 있습니다. 이 <a href="/help/assets/advanced-config-3d.md">처리를 활성화하거나 비활성화하려면 고급 구성 설정을</a> 참조하십시오.</td> 
+   <td>선택 사항입니다. 3D 개체 아래의 지표 평면에 배경 교합 그림자 효과를 생성할 수 있습니다. 이 처리 <a href="/help/assets/advanced-config-3d.md">를</a> 활성화하거나 비활성화하려면 고급 구성 설정을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td>5<br /> </td> 
    <td>라이트맵 만들기</td> 
-   <td>선택 사항입니다. 대화형 미리 보기의 품질을 높이고 기본 렌더러의 렌더링을 신속하게 처리할 수 있도록 해줍니다. 이 <a href="/help/assets/advanced-config-3d.md">처리를 활성화하거나 비활성화하려면 고급 구성 설정을</a> 참조하십시오.</td> 
+   <td>선택 사항입니다. 대화형 미리 보기의 품질을 높이고 기본 렌더러의 렌더링을 신속하게 처리할 수 있도록 해줍니다. 이 처리 <a href="/help/assets/advanced-config-3d.md">를</a> 활성화하거나 비활성화하려면 고급 구성 설정을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td>6<br /> </td> 
    <td>애니메이션 만들기</td> 
-   <td>선택 사항입니다. 카드 보기에서 시각적 썸네일로 사용되는 간단한 애니메이션을 렌더링할 수 있도록 해줍니다. 이 <a href="/help/assets/advanced-config-3d.md">처리를 활성화하거나 비활성화하려면 고급 구성 설정을</a> 참조하십시오.</td> 
+   <td>선택 사항입니다. 카드 보기에서 시각적 썸네일로 사용되는 간단한 애니메이션을 렌더링할 수 있도록 해줍니다. 이 처리 <a href="/help/assets/advanced-config-3d.md">를</a> 활성화하거나 비활성화하려면 고급 구성 설정을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td>7<br /> </td> 
