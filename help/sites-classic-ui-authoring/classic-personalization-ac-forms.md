@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3086a8a1-8d2e-455a-a055-91b07d31ea65
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1264'
+ht-degree: 62%
 
 ---
 
@@ -56,7 +59,7 @@ To do this, see the [Templates documentation](/help/sites-developing/page-templa
 
 1. siteadmin을 시작합니다.
 1. 트리 구조를 스크롤하여 선택한 웹 사이트에서 양식을 작성하려는 위치로 이동합니다.
-1. **새로**&#x200B;만들기&#x200B;**>**&#x200B;새 페이지...를 선택합니다..
+1. Select **New** > **New page...**.
 1. Select either **Adobe Campaign Profile (AC 6.1)** or **Adobe Campaign Profile (ACS)** template and enter the page properties.
 
    >[!NOTE]
@@ -80,7 +83,7 @@ Adobe Campaign 전용 양식에는 특정 구성 요소가 있습니다. 이러�
 이 섹션에서는 Adobe Campaign을 연결하는 특정 링크에 대해서만 자세히 설명합니다. For more information on a more general overview of how to use forms in Adobe Experience Manager, see [Editmode components](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md).
 
 1. 편집할 양식으로 이동합니다.
-1. **도구 상자에서 페이지 >**&#x200B;페이지&#x200B;**속성**..을선택합니다.그런 다음 **팝업** 창의 클라우드 서비스 탭으로 이동합니다.
+1. In the toolbox, select **Page** > **Page Properties...** then go to the **Cloud Services** tab of the pop-up window.
 1. Add the Adobe Campaign service by clicking **Add service**, and then selecting the configuration that corresponds to your Adobe Campaign instance in the service&#39;s drop down list. 이 구성은 인스턴스 간 연결을 설정할 때 수행됩니다. For more information, see [Connecting AEM to Adobe Campaign](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
 
    >[!NOTE]
@@ -94,6 +97,7 @@ Adobe Campaign 전용 양식에는 특정 구성 요소가 있습니다. 이러�
    * **Adobe Campaign: 프로필 저장**: Adobe Campaign(기본값)에서 수신자를 생성하거나 업데이트할 수 있습니다.
    * **Adobe Campaign: 서비스에 가입**: Adobe Campaign에서 수신자의 가입을 관리할 수 있습니다.
    * **Adobe Campaign: 서비스 가입 해지**: Adobe Campaign에서 수신자의 가입을 취소할 수 있습니다.
+
    The **Action Configuration** field lets you specify whether or not you would like to create the recipient profile in the Adobe Campaign database if it does not yet exist. To do this, check the **Create user if not existing** option.
 
 1. 도구 상자의 구성 요소를 양식에 드래그하여 놓아 선택한 구성 요소를 추가합니다. 사용 가능한 Adobe Campaign용 구성 요소에 대한 자세한 내용은 [Adobe 양식 구성 요소](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)를 참조하십시오.
