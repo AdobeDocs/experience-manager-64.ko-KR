@@ -26,7 +26,7 @@ ht-degree: 1%
 >
 >계속하기 전에 AEM 내에 **재생 가능한 비디오가** 업로드되었는지 확인하십시오.
 >
->페이지에서 비디오가 재생되도록 하려면 **[이 자습서를](/help/sites-authoring/default-components-foundation.md#video)**참조하여 AEM에서 비디오 파일을 트랜스코딩하는 방법에 대해 알아보십시오.
+>비디오가 페이지에서 재생되도록 하려면 AEM에서 비디오 파일을 트랜스코딩하는 방법에 대한 자세한 내용은 **[이 자습서를](/help/sites-authoring/default-components-foundation.md#video)**참조하십시오.
 
 다음 절차를 사용하여 각 방법을 사용하여 비디오 추적에 대한 프레임워크를 설정합니다.
 
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 1. 사이드 킥에서 **비디오 구성 요소** 를 드래그하고 재생 가능한 **비디오를 구성 요소의 에셋으로** 추가하여 웹 페이지를 설정합니다
 
-1. [Adobe Analytics 구성 및 프레임워크를 만듭니다](/help/sites-administering/adobeanalytics.md).
+1. [Adobe Analytics 구성 및 프레임워크](/help/sites-administering/adobeanalytics.md)만들기
 
    * 다음 섹션의 예에서는 프레임워크에 대한 구성 및 **비디오에 my-sc-configuration** 이름을 **사용합니다** .
 
@@ -51,13 +51,13 @@ ht-degree: 1%
    * [이전 이정표](/help/sites-administering/adobeanalytics.md)
    * [이전 초](/help/sites-administering/adobeanalytics.md)
 
-1. 추적 방법을 선택하면 CQ 변수 목록이 그에 따라 변경됩니다. 다음에 나오는 섹션을 사용하여 구성 요소를 추가로 구성하고 CQ 변수를 Adobe Analytics 속성에 매핑하는 방법에 대한 자세한 내용을 살펴보십시오.
+1. 추적 방법을 선택하면 CQ 변수 목록이 그에 따라 변경됩니다. 다음에 나오는 섹션을 사용하여 구성 요소를 추가로 구성하고 CQ 변수를 Adobe Analytics 속성과 매핑하는 방법에 대해 알아보십시오.
 
 ## Milestones {#milestones}
 
 마일스톤(Milestones) 메서드는 비디오에 대한 가장 많은 정보를 추적하고, 사용자 지정이 가능하며 구성하기가 쉽습니다.
 
-마일스톤 메서드를 사용하려면 시간 기반 트랙 오프셋을 지정하여 마일스톤을 정의합니다. 비디오 재생이 이정표를 통과하면 페이지에서 Adobe Analytics을 호출하여 이벤트를 추적합니다. 정의한 각 이정표에 대해, 구성 요소는 Adobe Analytics 속성에 매핑할 수 있는 CQ 변수를 만듭니다. 이러한 CQ 변수의 이름은 다음 형식을 사용합니다.
+마일스톤 메서드를 사용하려면 시간 기반 트랙 오프셋을 지정하여 마일스톤을 정의합니다. 비디오 재생이 이정표를 통과하면 페이지에서 이벤트를 추적하기 위해 Adobe Analytics을 호출합니다. 정의한 각 이정표에 대해, 구성 요소는 Adobe Analytics 속성에 매핑할 수 있는 CQ 변수를 만듭니다. 이러한 CQ 변수의 이름은 다음 형식을 사용합니다.
 
 ```shell
 eventdata.events.milestoneXX
@@ -113,7 +113,7 @@ XX 접미사는 이정표를 정의하는 트랙 오프셋입니다. 예를 들�
   </tr> 
   <tr> 
    <td>eventdata.a.contentType </td> 
-   <td>모든 이정표에 전송; 는 Adobe Analytics 호출에서 pev3로 표시되며, 일반적으로 "비디오"로 전송됩니다.<br /> </td> 
+   <td>모든 이정표에 전송; 보통 "비디오"로 전송된 Adobe Analytics 호출에서 pev3로 표시됩니다.<br /> </td> 
   </tr> 
   <tr> 
    <td>eventdata.a.media.name </td> 
@@ -145,13 +145,13 @@ XX 접미사는 이정표를 정의하는 트랙 오프셋입니다. 예를 들�
 1. [페이지에 프레임워크를](/help/sites-administering/adobeanalytics.md) 추가합니다.
 1. 미리 보기 모드에서 설정을 **테스트하려면**&#x200B;비디오를 재생하여 Adobe Analytics 호출이 트리거되도록 합니다.
 
-4,8,16,20 및 24의 추적 옵셋을 사용하여 이정표 추적에 적용되는 Adobe Analytics 추적 데이터 예와 CQ 변수에 대한 다음 매핑을 사용합니다.
+4,8,16,20 및 24의 추적 오프셋을 사용하여 이정표 추적에 적용되는 Adobe Analytics 추적 데이터 예와 CQ 변수에 대한 다음 매핑을 사용합니다.
 
 <table> 
  <tbody> 
   <tr> 
    <th>CQ 변수</th> 
-   <th>Adobe Analytics 속성</th> 
+   <th>Adobe Analytics 재산</th> 
   </tr> 
   <tr> 
    <td>eventdata.videoName </td> 
@@ -228,15 +228,15 @@ XX 접미사는 이정표를 정의하는 트랙 오프셋입니다. 예를 들�
 
 ![chlimage_1-156](assets/chlimage_1-156.png)
 
-*다음 값이 들어 있는 Adobe Analytics에&#x200B;**처음**호출됩니다.*
+*다음 값이 들어 있는 Adobe Analytics에&#x200B;**처음**호출되는 값입니다.*
 
 * *eventdata.a.media.name,*
-* *prop2-4, contentType(비디오) 및 세그먼트(1:O:1-4)가 포함된 eVar2 및 eVar3과 함께 사용*
+* *prop2-4, contentType(비디오) 및 세그먼트(1:O:1-4)를 포함하는 eVar2 및 eVar3과 함께 사용*
 * *event3. events.a.media.view에 매핑되었습니다.*
 
 ![chlimage_1-157](assets/chlimage_1-157.png)
 
-*Adobe Analytics에 대한&#x200B;**세 번째 전화**통화 내용입니다.*
+*Adobe Analytics에&#x200B;**세 번째**전화입니다.*
 
 * *prop1 및 eVar1에`a.media.name;`*
 * *event1, 세그먼트 보기*
@@ -248,8 +248,8 @@ XX 접미사는 이정표를 정의하는 트랙 오프셋입니다. 예를 들�
 
 비레거시 마일스톤 메서드는 마일스톤이 트랙 길이의 백분율을 사용하여 정의된다는 점을 제외하고 마일스톤 메서드와 비슷합니다. 일반적인 것은 다음과 같습니다.
 
-* 비디오 재생이 이정표를 통과하면 페이지에서 Adobe Analytics을 호출하여 이벤트를 추적합니다.
-* Adobe Analytics 속성을 사용하여 매핑하기 위해 정의된 [CQ 변수의](#milestones) 정적 세트입니다.
+* 비디오 재생이 이정표를 통과하면 페이지에서 이벤트를 추적하기 위해 Adobe Analytics을 호출합니다.
+* Adobe Analytics 속성을 사용한 매핑을 위해 정의된 CQ 변수의 [정적](#milestones) 세트입니다.
 * 정의한 각 이정표에 대해, 구성 요소는 Adobe Analytics 속성에 매핑할 수 있는 CQ 변수를 만듭니다.
 
 이러한 CQ 변수의 이름은 다음 형식을 사용합니다.
@@ -343,7 +343,7 @@ eventdata.events.milestoneXX
    >
    >추적 오프셋 필드는 0보다 큰 정수만 허용합니다.
 
-   Adobe Analytics으로 전송된 정보는 사용자 지정이 덜 가능합니다. 매핑에 사용할 수 있는 변수는 3개뿐입니다.
+   Adobe Analytics으로 보낸 정보는 사용자 지정이 덜 가능합니다. 매핑에 사용할 수 있는 변수는 3개뿐입니다.
 
 <table> 
  <tbody> 
