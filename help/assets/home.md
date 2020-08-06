@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '338'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 93%
 | [개발 사용 안내서](/help/sites-developing/home.md) | AEM 인스턴스를 빌드하는 방법을 알아봅니다. |
 | [관리 사용 안내서](/help/managing/home.md) | 이 안내서에서는 AEM 프로젝트를 성공적으로 관리하는 방법을 설명합니다. |
 | [모바일 사용 안내서](/help/mobile/home.md) | 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다. |
-| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | 이 안내서에서는 사용자가 생성한 콘텐츠를 Livefyre와 공유하는 방법을 보여줍니다. |
+| [AEM Livefyre](https://docs.adobe.com/content/help/ko-KR/livefyre/using/home.html) | 이 안내서에서는 사용자가 생성한 컨텐츠를 Livefyre와 공유하는 방법을 보여 줍니다. |
 
 ## 주요 AEM 리소스
 
