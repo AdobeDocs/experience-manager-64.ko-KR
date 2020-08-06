@@ -20,12 +20,12 @@ ht-degree: 9%
 
 # 사용자 지정 노드 유형{#custom-node-types}
 
-AEM은 Sling을 기반으로 하고 JCR 리포지토리를 사용하기 때문에 두 가지 모두에서 제공되는 노드 유형을 사용할 수 있습니다.
+AEM은 Sling을 기반으로 하며 JCR 저장소를 사용하기 때문에 두 가지 모두에서 제공되는 노드 유형을 사용할 수 있습니다.
 
 * [JCR 노드 유형](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/3_Repository_Model.html#3.1.7%20Node%20Types)
 * [Sling 노드 유형](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-여기에 더해서 AEM에서는 다양한 사용자 지정 노드 유형을 제공합니다.
+여기에 더해서 AEM은 사용자 지정 노드 유형 범위를 제공합니다.
 
 ## 감사 {#audit}
 
@@ -468,7 +468,7 @@ DAM 자산을 나타내는 축소판입니다.
 
 **설명**
 
-노드 유형은 ContentBus 컨텐츠 페이지에 대한 속성 및 하위 노드 정의를 `cq:contentPage` 포함합니다. 이 혼합 유형이 유형 노드에 추가되는 경우에만 노드가 ContentBus 컨텐츠 페이지 `cq:page`가 됩니다.
+노드 유형은 ContentBus 컨텐츠 페이지에 대한 속성 및 하위 노드 정의를 `cq:contentPage` 포함합니다. 이 혼합 유형이 유형 노드에 추가되는 경우에만 노드 `cq:page`는 ContentBus 컨텐츠 페이지가 됩니다.
 
 a의 항목은 다음과 `cq:Cq4ContentPage` 같습니다.
 
@@ -655,7 +655,7 @@ AEM 5.4의 경우 목록 끝에 추가합니다.
 
 * `@prop cq:lastPublished`- 페이지가 마지막으로 게시된 날짜(더 이상 사용되지 않음)
 * `@prop cq:lastPublishedBy`- 페이지를 마지막으로 게시한 사용자(더 이상 사용되지 않음)
-* `@prop cq:lastReplicated` - 페이지를 마지막으로 복제한 날짜입니다.
+* `@prop cq:lastReplicated` - 페이지가 마지막으로 복제된 날짜입니다.
 * `@prop cq:lastReplicatedBy` - 페이지를 마지막으로 복제한 사용자입니다.
 * `@prop cq:lastReplicationAction` - 복제 작업: 활성화 또는 비활성화
 * `@prop cq:lastReplicationStatus` - 복제 상태(더 이상 사용되지 않음).
