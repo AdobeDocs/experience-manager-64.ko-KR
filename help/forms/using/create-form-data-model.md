@@ -52,13 +52,13 @@ AEM Forms 데이터 통합 모듈을 사용하면 AEM 사용자 프로필, RESTf
 
 ## 1단계: MySQL 데이터베이스를 데이터 소스로 구성 {#config-database}
 
-양식 데이터 모델을 만들도록 여러 유형의 데이터 소스를 구성할 수 있습니다. 이 자습서의 경우 샘플 데이터로 구성되고 채워진 MySQL 데이터베이스를 구성합니다. 지원되는 다른 데이터 소스 및 데이터 소스 구성 방법에 대한 자세한 내용은 [AEM Forms 데이터 통합을 참조하십시오](/help/forms/using/data-integration.md).
+양식 데이터 모델을 만들도록 여러 유형의 데이터 소스를 구성할 수 있습니다. 이 자습서의 경우 샘플 데이터로 구성되고 채워진 MySQL 데이터베이스를 구성합니다. 지원되는 다른 데이터 소스 및 구성 방법에 대한 자세한 내용은 [AEM Forms 데이터 통합을 참조하십시오](/help/forms/using/data-integration.md).
 
 MySQL 데이터베이스를 구성하려면 다음을 수행합니다.
 
 1. OSGi 번들로 MySQL 데이터베이스의 JDBC 드라이버를 설치합니다.
 
-   1. AEM Forms 작성자 인스턴스에 관리자로 로그인하고 AEM 웹 콘솔 번들로 이동합니다. 기본 URL은 http://localhost:4502/system/console/bundles [입니다](http://localhost:4502/system/console/bundles).
+   1. 관리자로 AEM Forms 작성자 인스턴스에 로그인하고 AEM 웹 콘솔 번들로 이동합니다. 기본 URL은 http://localhost:4502/system/console/bundles [입니다](http://localhost:4502/system/console/bundles).
 
    1. 설치/ **업데이트를 누릅니다**. [ **업로드/설치 번들** ] 대화 상자가 나타납니다.
 
@@ -66,7 +66,7 @@ MySQL 데이터베이스를 구성하려면 다음을 수행합니다.
 
 1. MySQL 데이터베이스를 데이터 소스로 구성:
 
-   1. http://localhost:4502/system/console/configMgr의 AEM 웹 콘솔로 [이동합니다](http://localhost:4502/system/console/configMgr).
+   1. AEM 웹 콘솔(http://localhost:4502/system/console/configMgr)으로 [이동합니다](http://localhost:4502/system/console/configMgr).
    1. Apache **Sling 연결 풀링된 DataSource 구성을** 찾습니다. 을 눌러 편집 모드에서 구성을 엽니다.
    1. 구성 대화 상자에서 다음 세부 정보를 지정합니다.
 
@@ -88,11 +88,11 @@ MySQL 데이터베이스를 구성하려면 다음을 수행합니다.
 
 ## Step 2: Create form data model {#create-fdm}
 
-AEM Forms는 구성된 데이터 소스에서 양식 데이터 모델을 [만드는 직관적인 사용자 인터페이스를](data-integration.md) 제공합니다. 양식 데이터 모델에서 여러 데이터 소스를 사용할 수 있습니다. 사용 사례를 위해 구성된 MySQL 데이터 소스를 사용합니다.
+AEM Forms은 구성된 데이터 소스에서 양식 데이터 모델 [을](data-integration.md) 만들 수 있는 직관적인 사용자 인터페이스를 제공합니다. 양식 데이터 모델에서 여러 데이터 소스를 사용할 수 있습니다. 사용 사례를 위해 구성된 MySQL 데이터 소스를 사용합니다.
 
 양식 데이터 모델을 만들려면 다음을 수행합니다.
 
-1. AEM 작성 인스턴스에서 **양식** > **데이터**&#x200B;통합으로 이동합니다.
+1. AEM 작성 인스턴스에서 **Forms** > **데이터**&#x200B;통합으로 이동합니다.
 1. Tap **Create** >  **Form Data Model**.
 1. 양식 데이터 모델 만들기 대화 상자에서 양식 데이터 모델의 **이름을** 지정합니다. 예를 들어 **고객 배송 청구 세부 정보**. 다음을 **누릅니다**.
 1. 데이터 소스 선택 화면에는 구성된 모든 데이터 소스가 나열됩니다. WeRetail **MySQL** 데이터 소스를 선택하고 만들기를 **누릅니다**.
@@ -110,7 +110,7 @@ AEM Forms는 구성된 데이터 소스에서 양식 데이터 모델을 [만드
 
 양식 데이터 모델을 구성하려면 다음을 수행합니다.
 
-1. AEM 작성 인스턴스에서 **양식 > 데이터 통합으로 이동합니다**. 기본 URL은 http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm [입니다](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
+1. AEM 작성자 인스턴스의 경우 **Forms > 데이터 통합으로 이동합니다**. 기본 URL은 http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm [입니다](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
 1. 이전에 만든 **고객 발송 청구 세부 정보** 양식 데이터 모델은 여기에 나와 있습니다. 편집 모드에서 엽니다.
 
    선택한 데이터 원본 **WeRetailMySQL이** 양식 데이터 모델에서 구성됩니다.
