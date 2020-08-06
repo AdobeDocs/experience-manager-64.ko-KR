@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 05ecc940180ead13676cc5bb8e2e230b1d55162b
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 2%
 
 인증된 사용자가 서버와 네트워크를 과부할 수 있는 자산의 ZIP 파일을 만들기 위해 인증된 사용자가 임의로 크기가 큰 동시 다운로드 요청을 발행할 수 [!DNL Experience Manager] 있도록 합니다. 이 기능으로 인해 발생할 수 있는 DoS 위험을 줄이기 위해 게시 인스턴스에 대해 `AssetDownloadServlet` 기본적으로 OSGi 구성 요소가 비활성화됩니다.
 
-DAM에서 에셋을 다운로드할 수 있도록 하려면 에셋 공유 공유물 또는 기타 포털과 같은 구현을 사용할 때 OSGi 구성을 통해 서블릿을 수동으로 활성화합니다. Adobe에서는 일상적인 다운로드 요구 사항에 영향을 주지 않고 가능한 낮은 다운로드 크기를 설정할 것을 권장합니다. 높은 가치는 성능에 영향을 줄 수 있습니다.
+DAM에서 에셋을 다운로드할 수 있도록 하려면 에셋 공유 공유물 또는 기타 포털과 같은 구현을 사용할 때 OSGi 구성을 통해 서블릿을 수동으로 활성화합니다. Adobe은 일상적인 다운로드 요구 사항에 영향을 주지 않고 가능한 한 낮은 다운로드 크기를 설정할 것을 권장합니다. 높은 가치는 성능에 영향을 줄 수 있습니다.
 
 1. 게시 실행 모드(`config.publish`)를 대상으로 하는 이름 지정 규칙이 있는 폴더를 만듭니다. `/apps/<your-app-name>/config.publish`. 실행 모드에 대한 구성 속성을 정의하려면 [실행 모드를 참조하십시오](/help/sites-deploying/configure-runmodes.md#defining-configuration-properties-for-a-run-mode).
 1. 구성 폴더에서 `nt:file` 명명된 형식의 파일을 만듭니다 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
@@ -73,6 +73,6 @@ DAM에서 에셋을 다운로드할 수 있도록 하려면 에셋 공유 공유
 >[!MORELIKETHIS]
 >
 >* [DRM 보호 에셋을 다운로드합니다](drm.md).
->* [Win 또는 Mac 데스크탑에서 Experience Manager 데스크탑 앱을 사용하여 에셋을 다운로드할 수 있습니다](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
->* [지원되는 Adobe Creative Cloud 앱에서 Adobe Assets Link를 사용하여 에셋을 다운로드할 수 있습니다](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html).
+>* [Win 또는 Mac 데스크탑에서 Experience Manager 데스크탑 앱을 사용하여 에셋을 다운로드할 수 있습니다](https://helpx.adobe.com/kr/experience-manager/desktop-app/aem-desktop-app.html).
+>* [지원되는 Adobe Creative Cloud 앱](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html)내에서 Adobe 자산 링크를 사용하여 자산을 다운로드합니다.
 
