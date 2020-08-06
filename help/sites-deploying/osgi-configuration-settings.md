@@ -20,13 +20,13 @@ ht-degree: 0%
 
 # OSGi 구성 설정{#osgi-configuration-settings}
 
-[OSGi](https://www.osgi.org/) 는 AEM의 기술 스택에서 기본적인 요소입니다. AEM 및 해당 구성의 복합 번들을 제어하는 데 사용됩니다.
+[OSGi는](https://www.osgi.org/) AEM의 기술 스택에서 기본적인 요소이다. AEM의 합성 번들과 그 구성을 제어하는 데 사용됩니다.
 
 OSGi는 &quot;*애플리케이션이 작고 재사용 가능한 공동 작업 구성 요소로 구성되도록 하는 표준화된 프리미티브 방식을 제공합니다. 이러한 구성 요소는 애플리케이션으로 구성하고 배포할*&#x200B;수 있습니다.&quot;
 
 따라서 번들을 중지하거나 설치하고 개별적으로 시작할 수 있으므로 번들을 손쉽게 관리할 수 있습니다. 상호 종속성은 자동으로 처리됩니다. 각 OSGi 구성 요소( [OSGi 사양](https://www.osgi.org/Specifications/HomePage)참조)는 다양한 번들 중 하나에 포함됩니다. When working with AEM there are several methods of managing the configuration settings for such bundles; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
-다음 OSGi 구성 설정(번들에 따라 나열됨)은 프로젝트 구현과 관련이 있습니다. 나열된 모든 설정을 조정할 필요는 없습니다. AEM의 작동 방식을 이해하는 데 도움이 되는 몇 가지 설정이 언급되었습니다.
+다음 OSGi 구성 설정(번들에 따라 나열됨)은 프로젝트 구현과 관련이 있습니다. 나열된 모든 설정을 조정할 필요는 없으며 AEM 작동 방식을 이해하는 데 도움이 되는 경우도 있습니다.
 
 >[!CAUTION]
 >
@@ -38,13 +38,13 @@ OSGi는 &quot;*애플리케이션이 작고 재사용 가능한 공동 작업 �
 
 >[!NOTE]
 >
->AEM 도구 [의](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html)일부인 OSGi 구성 비교 도구를 사용하여 기본 OSGi 구성을 나열할 수 있습니다.
+>AEM [도구](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html)중 하나인 OSGi 구성 비교 도구를 사용하여 기본 OSGi 구성을 나열할 수 있습니다.
 
 >[!NOTE]
 >
 >AEM 내의 특정 기능 영역에 추가 번들이 필요할 수 있습니다. 이러한 경우 구성 세부 사항은 해당 기능과 관련된 페이지에서 확인할 수 있습니다.
 
-**AEM 복제 이벤트 리스너** 구성:
+**AEM 복제 이벤트 수신기** 구성:
 
 * 복제 이벤트가 **리스너에**&#x200B;배포되는 실행 모드. 예를 들어 작성자로 정의된 경우 복제를 &quot;시작&quot;하는 시스템입니다.
 
@@ -83,7 +83,7 @@ OSGi는 &quot;*애플리케이션이 작고 재사용 가능한 공동 작업 �
 
    Apache Sling Request Logger와 함께 사용됩니다.
 
-자세한 내용은 [AEM 로깅](/help/sites-deploying/configure-logging.md) 및 [슬링 로깅을 참조하십시오](https://sling.apache.org/site/logging.html).
+자세한 내용은 [AEM 로깅](/help/sites-deploying/configure-logging.md) 및 슬링 로깅 [을 참조하십시오](https://sling.apache.org/site/logging.html).
 
 **Apache Sling 이벤트 스레드 풀** 구성:
 
@@ -93,7 +93,7 @@ OSGi는 &quot;*애플리케이션이 작고 재사용 가능한 공동 작업 �
 
    큐가 제한 `-1` 으로 설정되면 권장 값이 사용됩니다. 한도를 설정하면 초과될 때 손실이 발생할 수 있습니다.
 
-* 이러한 설정을 변경하면 이벤트 수가 많은 시나리오의 성능에 도움이 될 수 있습니다. 예를 들어, AEM DAM 또는 Workflow 사용량이 많은 경우입니다.
+* 이러한 설정을 변경하면 이벤트 수가 많은 시나리오의 성능에 도움이 될 수 있습니다. 예를 들어 AEM DAM 또는 Workflow가 많이 사용되는 경우입니다.
 * 시나리오와 관련된 값은 테스트를 사용하여 설정해야 합니다.
 * 이러한 설정은 인스턴스의 성능에 영향을 줄 수 있으므로 이유나 고려 없이 변경하지 마십시오.
 
@@ -106,7 +106,7 @@ OSGi는 &quot;*애플리케이션이 작고 재사용 가능한 공동 작업 �
 
 >[!NOTE]
 >
->이 설정은 프로덕션 준비 모드에서 AEM을 실행하는 경우 프로덕션 인스턴스에 대해 [자동으로 구성됩니다](/help/sites-administering/production-ready.md).
+>프로덕션 준비 모드에서 AEM을 실행하는 경우 프로덕션 인스턴스에 대해 이 [설정이 자동으로 구성됩니다](/help/sites-administering/production-ready.md).
 
 **Apache Sling Java Script Handler** .java 파일을 스크립트(서블릿)로 컴파일하기 위한 설정을 구성합니다.
 
@@ -128,7 +128,7 @@ OSGi는 &quot;*애플리케이션이 작고 재사용 가능한 공동 작업 �
 
 * **재시도 간격**, **최대**&#x200B;재시도 **,**&#x200B;최대 병렬 작업 **,**&#x200B;대기 시간확인 등이 있습니다.
 
-* 이러한 설정을 변경하면 작업 수가 많은 시나리오의 성능이 향상될 수 있습니다. 예를 들어, AEM DAM 및 워크플로우의 사용량이 많은 경우입니다.
+* 이러한 설정을 변경하면 작업 수가 많은 시나리오의 성능이 향상될 수 있습니다. 예를 들어 AEM DAM 및 워크플로우의 경우
 * 시나리오와 관련된 값은 테스트를 사용하여 설정해야 합니다.
 * 이유 없이 이 설정을 변경하지 말고, 고려 후에 변경하십시오.
 
@@ -143,7 +143,7 @@ OSGi는 &quot;*애플리케이션이 작고 재사용 가능한 공동 작업 �
 
 >[!NOTE]
 >
->이 설정은 프로덕션 준비 모드에서 AEM을 실행하는 경우 프로덕션 인스턴스에 대해 [자동으로 구성됩니다](/help/sites-administering/production-ready.md).
+>프로덕션 준비 모드에서 AEM을 실행하는 경우 프로덕션 인스턴스에 대해 이 [설정이 자동으로 구성됩니다](/help/sites-administering/production-ready.md).
 
 **Apache Sling 로깅 구성** 구성:
 
@@ -153,7 +153,7 @@ OSGi는 &quot;*애플리케이션이 작고 재사용 가능한 공동 작업 �
 
 * **메시지 패턴** 로그 메시지의 형식을 정의합니다.
 
-자세한 내용은 [AEM 로깅](/help/sites-deploying/configure-logging.md#global-logging) 및 [슬링 로깅을 참조하십시오](https://sling.apache.org/site/logging.html).
+자세한 내용은 [AEM 로깅](/help/sites-deploying/configure-logging.md#global-logging) 및 슬링 로깅 [을 참조하십시오](https://sling.apache.org/site/logging.html).
 
 **Apache Sling Logging Logger 구성(출하 시 구성)** :
 
@@ -165,7 +165,7 @@ OSGi는 &quot;*애플리케이션이 작고 재사용 가능한 공동 작업 �
 * 이러한 구성은 개발 중에 유용합니다. 예를 들어 특정 서비스에 대한 TRACE 메시지를 특정 로그 파일에 기록할 수 있습니다.
 * 이러한 구성은 제작 환경에서 유용합니다. 예를 들어 보다 쉽게 모니터링하기 위해 개별 로그 파일에 특정 서비스에 대한 메시지를 기록하도록 합니다.
 
-자세한 내용은 [AEM 로깅](/help/sites-deploying/configure-logging.md) 및 [슬링 로깅을 참조하십시오](https://sling.apache.org/site/logging.html).
+자세한 내용은 [AEM 로깅](/help/sites-deploying/configure-logging.md) 및 슬링 로깅 [을 참조하십시오](https://sling.apache.org/site/logging.html).
 
 **Apache Sling Logging Writer 구성(출하 시 구성)** 구성:
 
@@ -177,7 +177,7 @@ OSGi는 &quot;*애플리케이션이 작고 재사용 가능한 공동 작업 �
 * 이러한 구성은 개발 중에 유용합니다. 예를 들어 특정 서비스에 대한 TRACE 메시지를 특정 로그 파일에 기록할 수 있습니다.
 * 이러한 구성은 제작 환경에서 유용합니다. 예를 들어 보다 쉽게 모니터링하기 위해 개별 로그 파일에 특정 서비스에 대한 메시지를 기록하도록 합니다.
 
-자세한 내용은 [AEM 로깅](/help/sites-deploying/configure-logging.md) 및 [슬링 로깅을 참조하십시오](https://sling.apache.org/site/logging.html).
+자세한 내용은 [AEM 로깅](/help/sites-deploying/configure-logging.md) 및 슬링 로깅 [을 참조하십시오](https://sling.apache.org/site/logging.html).
 
 **Apache Sling Main Servlet** 구성:
 
@@ -210,7 +210,7 @@ OSGi는 &quot;*애플리케이션이 작고 재사용 가능한 공동 작업 �
 
 Apache Sling Customizable Request Data Logger와 함께 사용됩니다.
 
-자세한 내용은 [AEM 로깅](/help/sites-deploying/configure-logging.md) 및 [슬링 로깅을 참조하십시오](https://sling.apache.org/site/logging.html).
+자세한 내용은 [AEM 로깅](/help/sites-deploying/configure-logging.md) 및 슬링 로깅 [을 참조하십시오](https://sling.apache.org/site/logging.html).
 
 **Apache Sling Resource Resolver Factory** Sling 리소스 해상도의 중앙 측면 구성:
 
@@ -292,7 +292,7 @@ Apache Sling Customizable Request Data Logger와 함께 사용됩니다.
 
 >[!NOTE]
 >
->이 설정은 프로덕션 준비 모드에서 AEM을 실행하는 경우 프로덕션 인스턴스에 대해 [자동으로 구성됩니다](/help/sites-administering/production-ready.md).
+>프로덕션 준비 모드에서 AEM을 실행하는 경우 프로덕션 인스턴스에 대해 이 [설정이 자동으로 구성됩니다](/help/sites-administering/production-ready.md).
 
 **일 CQ HTTP 헤더 인증 처리기** HTTP 요청의 기본 인증 방법에 대한 시스템 전체 설정입니다.
 
@@ -322,12 +322,12 @@ Apache Sling Customizable Request Data Logger와 함께 사용됩니다.
 
 * **Target** &quot;&quot;에 대한 요청이 리디렉션되는 위치를 `/`정의하는 경로입니다.
 
-AEM에는 두 [개의](/help/sites-authoring/select-ui.md) UI가 있습니다.
+AEM에서 사용할 수 있는 UI는 [두](/help/sites-authoring/select-ui.md) 가지입니다.
 
 * 터치에 적합한 UI가 도입되었습니다.
 * 그리고 클래식 UI는 여전히 완벽하게 작동합니다.
 
-AEM Root Mapping을 사용하여 인스턴스에 대한 기본값으로 사용할 UI를 구성할 수 있습니다.
+AEM 루트 매핑을 사용하면 인스턴스에 대해 기본값으로 보유할 UI를 구성할 수 있습니다.
 
 * 터치에 적합한 UI를 기본 UI로 만들려면 **Target 경로** :
 
@@ -345,7 +345,7 @@ AEM Root Mapping을 사용하여 인스턴스에 대한 기본값으로 사용�
 >
 >표준 설치 시 터치에 적합한 UI가 기본 UI입니다.
 
-**Adobe Granite SSO Authentication Handler** SSO(Single Sign On) 세부 사항 구성; 이러한 문제는 LDAP와 함께 기업 작성자 설정에서 자주 필요합니다.
+**Adobe Granite SSO 인증 처리기** SSO(Single Sign On) 구성 세부 사항; 이러한 문제는 LDAP와 함께 기업 작성자 설정에서 자주 필요합니다.
 
 다양한 구성 속성을 사용할 수 있습니다.
 
@@ -385,7 +385,7 @@ AEM Root Mapping을 사용하여 인스턴스에 대한 기본값으로 사용�
 
 >[!NOTE]
 >
->이 설정은 프로덕션 준비 모드에서 AEM을 실행하는 경우 프로덕션 인스턴스에 대해 [자동으로 구성됩니다](/help/sites-administering/production-ready.md).
+>프로덕션 준비 모드에서 AEM을 실행하는 경우 프로덕션 인스턴스에 대해 이 [설정이 자동으로 구성됩니다](/help/sites-administering/production-ready.md).
 
 **CQ WCM 링크 검사기 구성자 구성일** :
 
@@ -395,7 +395,7 @@ AEM Root Mapping을 사용하여 인스턴스에 대한 기본값으로 사용�
 
 * **경로**, 시스템이 페이지를 트리거하기 전에 페이지 수정을 수신하는 위치 `jcr:Event`목록입니다.
 
-**Adobe 페이지 노출 횟수 추적기** 작성자 인스턴스의 경우:
+**Adobe 페이지 노출 횟수 추적기** 작성자 인스턴스 구성의 경우:
 
 * **sling.auth.requirements**: 이 속성의 값을 `-/libs/wcm/stats/tracker`
 
@@ -460,43 +460,43 @@ SSL 관련 [옵션에 대한 자세한 내용 및 CQSE용 HTTPS를 사용하는 
 
 CQ 리저터에 대한 HTML 파서를 제어합니다.
 
-* **처리할 추가** 태그 - 파서에서 처리할 HTML 태그를 추가하거나 제거할 수 있습니다. 기본적으로 다음 태그가 처리됩니다. A,IMG,AREA,FORM,BASE,LINK,SCRIPT,BODY,HEAD.
+* **처리할 추가** 태그 - 파서에서 처리할 HTML 태그를 추가하거나 제거할 수 있습니다. 기본적으로 다음 태그가 처리됩니다. A,IMG,AREA,FORM,BASE,LINK,SCRIPT,BODY,HEAD
 * **카멜 대소문자** 유지 - 기본적으로 HTML 파서는 카멜 대소문자(예: eBay)의 속성을 소문자(예: ebay)로 변환합니다. 이 설정을 해제하면 낙타 케이스 특성을 유지할 수 있습니다. 이는 각도 2와 같은 프런트 엔드 프레임워크를 사용할 때 유용합니다.
 
 **일 공용 JDBC 연결 풀** 컨텐츠 소스로 사용되는 외부 데이터베이스에 대한 액세스를 구성합니다.
 
 이는 팩토리 구성이므로 여러 인스턴스를 구성할 수 있습니다.
 
-**Adobe CQ Media DPS 세션 서비스** 발행물에 사용할 DPS 세션을 관리합니다.
+**Adobe CQ 미디어 DPS 세션 서비스** 발행물에 사용할 DPS 세션을 관리합니다.
 
 특히 다음을 정의할 수 있습니다 `dps.session.service.url.name`. 기본값은 https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions으로 [설정됩니다.](https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions)
 
-**AEM과 CDN 간 CDN 리라이터** 통신은 안전하게 자산/바이너리가 최종 사용자에게 전달되도록 보장되어야 합니다. 여기에는 두 가지 작업이 포함됩니다.
+**AEM과 CDN 간 CDN 리라이터** 통신을 보증하여 자산/바이너리가 최종 사용자에게 안전하게 전달되도록 해야 합니다. 여기에는 두 가지 작업이 포함됩니다.
 
 * CDN을 통해 AEM에서 리소스에 액세스하는 최초(또는 캐시에서 만료된 후).
-* CDN에서 리소스가 캐시되면 AEM으로 요청이 이동하고 해당 리소스에 액세스할 수 있는 모든 사용자는 CDN에서 안전하게 캐시됩니다.
+* 리소스가 CDN에 캐시되면 AEM으로 전송되지 않고 해당 리소스에 액세스할 수 있는 모든 사용자는 CDN에서 안전하게 캐시됩니다.
 
 AEM에서는 내부 자산 URL을 외부 CDN URL로 다시 작성하기 위한 리필터를 제공합니다. JWS 서명 및 만료 시간을 포함하여 CDN에 전달할 링크를 다시 작성하여 자산에 안전하게 액세스할 수 있도록 합니다. 이 기능은 작성자 인스턴스에 사용됩니다.
 
 전체 흐름은 다음과 같습니다.
 
-1. 사용자가 AEM으로 인증하고 자산이 있는 페이지를 요청합니다.
+1. 사용자는 AEM으로 인증되고 자산이 있는 페이지를 요청합니다.
 1. 요청한 페이지에 `/content/dam/geometrixx-media/articles/paladin_trailer.jpg/jcr:content/renditions/cq5dam.thumbnail.319.319.png`
 1. 리라이터는 JWS 서명을 포함하는 CDN URL로 링크를 변환합니다.
 
    `CDN_domain/content/dam/geometrixx-media/articles/paladin_trailer.jpg/_jcr_content/renditions/cq5dam.thumbnail.319.319.png?cdn_sign=JWS_SIGNATURE`
 
 1. 그런 다음 사용자의 브라우저가 자산 요청을 CDN 서버로 전달합니다.
-1. CDN은 매개 변수와 함께 요청을 AEM에 전달하도록 `cdn_sign` 구성해야 합니다.
+1. 요청서를 `cdn_sign` 매개 변수와 함께 AEM에 전달하도록 CDN을 구성해야 합니다.
 1. 인증 핸들러는 매개 변수의 유효성을 `cdn_sign` 확인하고 자산을 사용자에게 전달된 CDN에 반환합니다
 
-사용자의 브라우저, CDN 및 AEM 간의 흐름은 다음과 같이 시각화할 수 있습니다.
+사용자의 브라우저, CDN 및 AEM 간의 흐름을 다음과 같이 시각화할 수 있습니다.
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
 >[!NOTE]
 >
->이 기능은 현재 AEM 작성자 인스턴스에만 활성화됩니다.
+>이 기능은 현재 AEM 작성자 인스턴스에서만 활성화됩니다.
 
 **CDNConfigServiceImpl** CDN 구성 제공
 
