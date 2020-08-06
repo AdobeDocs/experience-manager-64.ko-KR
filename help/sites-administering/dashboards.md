@@ -1,8 +1,8 @@
 ---
 title: 대시보드
 seo-title: 대시보드
-description: 새 AEM 대시보드를 만들고, 구성하고, 개발하는 방법에 대해 알아봅니다.
-seo-description: 새 AEM 대시보드를 만들고, 구성하고, 개발하는 방법에 대해 알아봅니다.
+description: 새로운 AEM 대시보드를 만들고, 구성하고, 개발하는 방법을 알아봅니다.
+seo-description: 새로운 AEM 대시보드를 만들고, 구성하고, 개발하는 방법을 알아봅니다.
 uuid: 3eadbba2-0ce1-41be-a9f8-e6cafa109893
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 59%
 
 ---
 
@@ -107,7 +110,7 @@ AEM ships with a set of components that render multiple metrics of your [SiteCat
 >
 >날짜 범위를 크게 설정하면 대시보드의 응답이 느려질 수 있습니다.
 
-**일자** : 부터 데이터가 반입되는 절대 또는 상대적 날짜입니다.
+**데이터 시작** 날짜데이터를 가져오는 절대 날짜 또는 상대 날짜입니다.
 
 **날짜** : 까지 데이터를 가져오는 절대 또는 상대 날짜입니다.
 
@@ -121,13 +124,13 @@ AEM ships with a set of components that render multiple metrics of your [SiteCat
 
 **지표** 표시할 이벤트 목록입니다.
 
-**요소그래프에서** 지표 데이터를 분류하는 요소 목록입니다.
+**요소** 그래프의 지표 데이터를 분류하는 요소 목록입니다.
 
 #### 등급 목록 보고서 {#ranked-list-report}
 
 ![chlimage_1-27](assets/chlimage_1-27.png)
 
-**요소그래프에서** 지표 데이터를 분류하는 요소입니다.
+**요소** 그래프의 지표 데이터를 분류하는 요소입니다.
 
 **지표** 표시할 이벤트입니다.
 
@@ -139,7 +142,7 @@ AEM ships with a set of components that render multiple metrics of your [SiteCat
 
 **지표** 표시할 이벤트입니다.
 
-**요소그래프에서** 지표 데이터를 분류하는 요소입니다.
+**요소** 그래프의 지표 데이터를 분류하는 요소입니다.
 
 #### 인기 사이트 섹션 보고서 {#top-site-section-report}
 
@@ -157,7 +160,7 @@ AEM ships with a set of components that render multiple metrics of your [SiteCat
 
 **지표** 표시할 이벤트입니다.
 
-**요소그래프에서** 지표 데이터를 분류하는 요소입니다.
+**요소** 그래프의 지표 데이터를 분류하는 요소입니다.
 
 ## 대시보드 확장 {#extending-dashboard}
 
@@ -171,7 +174,7 @@ There is a default component group `Dashboard` containing analytics reporting co
 
 템플릿은 새로운 대시보드의 기본 컨텐트를 정의합니다. 다양한 유형의 대시보드를 만드는 데 여러 개의 템플릿을 사용할 수 있습니다.
 
-Dashboard templates are created like other page templates, except that they are stored under `/libs/cq/dashboards/templates/`. 콘텐츠 페이지 [템플릿 만들기 섹션을](/help/sites-developing/website.md#creating-the-contentpage-template) 참조하십시오.
+Dashboard templates are created like other page templates, except that they are stored under `/libs/cq/dashboards/templates/`. 컨텐트 페이지 템플릿 [만들기 섹션을](/help/sites-developing/website.md#creating-the-contentpage-template) 참조하십시오.
 
 >[!NOTE]
 >
@@ -193,7 +196,7 @@ The top author components is stored in the repository at `/apps/geometrixx-outdo
 
 The following Javascript file is defined in the `geout.reporting.topauthors` [Client Library](/help/sites-developing/clientlibs.md) as a child of the component itself.
 
-QueryBuilder [는](/help/sites-developing/querybuilder-api.md) 저장소를 쿼리하여 `cq:AuditEvent` 노드를 읽는 데 사용됩니다. 쿼리 결과는 작성한 기고물이 추출되는 JSON 개체입니다.
+QueryBuilder [는](/help/sites-developing/querybuilder-api.md) 저장소를 쿼리하여 노드를 읽는 데 `cq:AuditEvent` 사용됩니다. 쿼리 결과는 작성한 기고물이 추출되는 JSON 개체입니다.
 
 #### top_authors.js {#top-authors-js}
 
@@ -240,7 +243,7 @@ $.ajax({
 });  
 ```
 
-여기에는 `JSP` 및 `global.jsp` 둘 다 포함됩니다 `clientlib`.
+여기에는 `JSP` 와 `global.jsp` 가 모두 포함됩니다 `clientlib`.
 
 #### top_authors.jsp {#top-authors-jsp}
 
