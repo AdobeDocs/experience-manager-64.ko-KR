@@ -141,12 +141,12 @@ JBoss 응용 프로그램 서버에서 SSL을 구성하려면 인증을 위한 S
 
    * 턴키 설치의 경우:
 
-      * Windows 제어판에서 관리 도구를 클릭한 다음 서비스를 클릭합니다.
-      * Adobe Experience Manager 양식에 대해 JBoss를 선택합니다.
+      * Windows Campaign 컨트롤 패널에서 관리 도구를 클릭한 다음 서비스를 클릭합니다.
+      * Adobe Experience Manager 양식의 JBoss를 선택합니다.
       * 작업 > 중지를 선택합니다.
       * 서비스의 상태가 중지된 것으로 나타날 때까지 기다립니다.
       * 작업 > 시작을 선택합니다.
-   * Adobe가 미리 구성하거나 수동으로 구성한 JBoss 설치의 경우:
+   * 미리 구성되거나 수동으로 구성된 Adobe의 경우:
 
       * 명령 프롬프트에서 *`[appserver root]`*/bin으로 이동합니다.
       * 다음 명령을 입력하여 서버를 중지합니다.
