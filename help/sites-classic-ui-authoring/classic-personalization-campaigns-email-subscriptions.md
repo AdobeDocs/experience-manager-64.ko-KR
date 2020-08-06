@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '977'
+ht-degree: 77%
 
 ---
 
@@ -19,8 +22,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe는 이 기능(리드 및 목록 관리)을 추가로 개선할 계획이 없습니다.\
->권장 사항은 Adobe Campaign 및 [해당 AEM 통합을](/help/sites-administering/campaign.md)활용하는 것입니다.
+>Adobe은 이 기능(리드 및 목록 관리)을 추가로 개선할 계획이 없습니다.\
+>이 권장 사항은 [Adobe Campaign과 AEM의 통합을 활용하는 것입니다](/help/sites-administering/campaign.md).
 
 Users can be asked to subscribe to **Email Service Provider&#39;s** mailing lists with the help of the **Form** component used on an AEM web page. 이메일 서비스 메일링 목록 가입용 등록 양식을 사용하여 AEM 페이지를 준비하려면, 잠재적인 가입자가 방문할 AEM 페이지에 해당 서비스 구성을 적용해야 합니다.
 
@@ -99,7 +102,7 @@ AEM 페이지를 구성하려면 다음을 수행하십시오.
 1. **양식** 구성 요소를 사이드 킥에서 드래그하여 페이지에 추가합니다. 구성 요소를 사용할 수 없으면 디자인 모드로 전환하고 **양식** 그룹을 활성화합니다.
 1. Click **Edit** in the **Start of Form** bar and navigate to the **Advanced** tab.
 1. In the **Form** drop-down menu, select **E-mail Service: Send auto responder email.**
-1. **이메일을** 선택합니다(자동 응답자 이메일로 전송되는 이메일).
+1. **이메일** 선택(자동 응답자 이메일로 전송되는 이메일).
 
 1. **분류** 선택(이메일을 전송하는 데 사용).
 1. Select the **Thank you** page (the page where users are directed to once they submit the form).
