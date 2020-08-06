@@ -1,8 +1,8 @@
 ---
 title: AEM 3D 설치 및 구성
 seo-title: AEM 3D 설치 및 구성
-description: AEM 3D 설치 및 구성 방법 학습
-seo-description: AEM 3D 설치 및 구성 방법 학습
+description: AEM 3D 설치 및 구성 방법 살펴보기
+seo-description: AEM 3D 설치 및 구성 방법 살펴보기
 uuid: a60732ff-fd66-4f29-b901-42a3cfd58b65
 contentOwner: Rick Brough
 topic-tags: 3D
@@ -24,22 +24,22 @@ AEM 3D(버전 3.0)의 설치 및 구성에는 다음이 포함됩니다.
 
 1. Autodesk® FBX® SDK 라이브러리 설치
 1. 기본 3D 코드 패키지 다운로드 및 설치
-1. 3D 자산 처리 작업 과정 구성 및 AEM을 다시 시작합니다.
+1. 3D 자산 처리 작업 과정을 구성하고 AEM을 다시 시작합니다.
 1. AEM 3D 설정의 유효성을 검사하는 중입니다.
 
 3D 자산 [작업을 참조하십시오](assets-3d.md).
 
-사전 [요구 사항, 지원되는 브라우저 및 기타 중요한 릴리스 정보에 대해서는 AEM 3D 자산 릴리스 노트를](/help/release-notes/aem3d-release-notes.md) 참조하십시오.
+사전 요구 사항, 지원되는 브라우저 및 기타 중요한 릴리스 정보에 대해서는 [AEM 3D 자산 릴리스 노트를](/help/release-notes/aem3d-release-notes.md) 참조하십시오.
 
 3D [사이트 구성 요소](using-the-3d-sites-component.md)작업을 참조하십시오.
 
 >[!NOTE]
 >
->3D 패키지를 다운로드하고 설치하기 전에 모든 필수 AEM 패키지를 성공적으로 설치했는지 확인하십시오. See the [AEM 3D Release Notes.](install-config-3d.md)
+>3D 패키지를 다운로드하여 설치하기 전에 모든 사전 요구 사항 AEM 패키지를 성공적으로 설치했는지 확인하십시오. See the [AEM 3D Release Notes.](install-config-3d.md)
 
 ## Autodesk FBX SDK 라이브러리 설치 {#installing-the-autodesk-fbx-sdk-library}
 
-기본 AEM 3D 코드에는 FBX 파일 형식을 지원하기 위해 Autodesk FBX 라이브러리가 필요합니다. (Adobe는 현재 이 라이브러리를 재배포할 수 없습니다.)
+기본 AEM 3D 코드에는 FBX 파일 형식을 지원하는 Autodesk FBX 라이브러리가 필요합니다. (Adobe은 현재 이 라이브러리를 재배포할 수 없습니다.)
 
 고급 [구성 설정을 참조하십시오](advanced-config-3d.md).
 
@@ -72,7 +72,7 @@ AEM 3D(버전 3.0)의 설치 및 구성에는 다음이 포함됩니다.
 
 >[!NOTE]
 >
->AEM 3D 설치 및 구성을 진행하기 전에 해당 서비스 팩 및 기타 관련 기능 팩을 배포하는 것이 좋습니다. See [AEM 3D Release Notes](/help/release-notes/aem3d-release-notes.md).
+>AEM 3D의 설치 및 구성을 진행하기 전에 해당 서비스 팩 및 기타 관련 기능 팩을 배포하는 것이 좋습니다. See [AEM 3D Release Notes](/help/release-notes/aem3d-release-notes.md).
 
 고급 [구성 설정을 참조하십시오](advanced-config-3d.md).
 
@@ -123,13 +123,13 @@ AEM 3D(버전 3.0)의 설치 및 구성에는 다음이 포함됩니다.
 1. [ **[!UICONTROL DAM 자산 업데이트]** ] 페이지의 오른쪽 위 모서리 근처에 있는 [ **[!UICONTROL 동기화]** ]를 클릭하여 편집한 워크플로우 모델을 저장합니다.
 1. AEM을 다시 시작합니다.
 
-   다시 시작한 후 3D 컨텐츠를 업로드할 준비가 되었으며 AEM에서 처리할 수 있습니다.
+   다시 시작한 후 3D 컨텐츠를 업로드하여 AEM에서 처리할 수 있습니다.
 
-   AEM 3D [의 설정 유효성을 계속 확인합니다](#validating-the-setup-of-aem-d).
+   AEM [3D 설정의 유효성을 계속 확인합니다](#validating-the-setup-of-aem-d).
 
 ## AEM 3D 설정 유효성 확인 {#validating-the-setup-of-aem-d}
 
-1. AEM에서 **[!UICONTROL 도구 > 자산]**&#x200B;을 클릭한 다음 `sample-3D-content.zip`다운로드한 파일을 다운로드하고 확장합니다. (이제 AEM에서 삭제할 수 `sample-3D-content.zip` 있습니다.)
+1. AEM에서 **[!UICONTROL 도구 > 자산]**&#x200B;을 클릭한 다음 `sample-3D-content.zip`다운로드한 파일을 다운로드하고 확장합니다. 이제 AEM `sample-3D-content.zip` 에서 삭제할 수 있습니다.
 
    나머지 단계에서 업로드 및 처리 피드백을 보려면 **[!UICONTROL 카드]** 보기에 있어야 합니다.
 
@@ -184,17 +184,17 @@ AEM 3D(버전 3.0)의 설치 및 구성에는 다음이 포함됩니다.
 >
 >이 구성 작업은 선택 사항입니다.
 
-AEM 3D에서 Adobe Dimension 자산에 대한 지원을 구성할 수도 있습니다.
+Adobe Dimension 자산에 대한 지원을 AEM 3D에서 선택적으로 구성할 수 있습니다.
 
-AEM에서 Adobe Dimension 3D 자산의 수집, 미리 보기 및 게시를 허용하려면 외부 전환 서비스를 구성해야 합니다. 이 서비스는 전용 Adobe Dimension(`.dn`) 포맷에서 변환으로 Dn 자산에 저장된 glTF(파일 형식 `.glb` )의 변형으로 변환합니다. 이 `.glb` 변환은 AEM Assets, 사이트 및 화면에서 3D 자산을 웹 기반으로 보는 데 사용되며 타사 애플리케이션에서 사용할 수도 있습니다.
+AEM에서 Adobe Dimension 3D 자산을 통합, 미리 보기 및 게시할 수 있도록 외부 전환 서비스를 구성해야 합니다. 이 서비스는 독점적 Adobe Dimension(`.dn`) 형식에서 Dn 자산에 변환으로 저장된 glTF(파일 형식 `.glb` )의 변형으로 변환합니다. 이 `.glb` 변환은 AEM Assets, 사이트 및 화면에서 3D 자산을 웹 기반으로 보는 데 사용되며 타사 애플리케이션에서 사용할 수도 있습니다.
 
 >[!NOTE]
 >
->전환 서비스는 Amazon AWS에서 Adobe에 의해 호스팅됩니다. 서비스를 제대로 구성한 후 AEM에 업로드된 `.dn` 파일은 Amazon S3의 임시 저장소를 통해 전환 서비스에 안전하게 복사됩니다. 전환 결과는 임시 S3 스토리지를 통해 AEM으로 다시 전송됩니다. 모든 전송 및 저장소는 안전하게 보호됩니다. 또한 컨텐츠는 S3 및 전환 서비스에서 간단하게 유지됩니다(일반적으로 몇 분 이내).
+>전환 서비스는 Amazon AWS의 Adobe에 의해 호스팅됩니다. 서비스를 제대로 구성한 후 AEM에 업로드된 `.dn` 파일은 Amazon S3의 임시 저장소를 통해 전환 서비스로 안전하게 복사됩니다. 전환 결과는 임시 S3 스토리지를 통해 AEM으로 다시 전송됩니다. 모든 전송 및 저장소는 안전하게 보호됩니다. 또한 컨텐츠는 S3 및 전환 서비스에서 간단하게 유지됩니다(일반적으로 몇 분 이내).
 
 **Adobe Dimension 자산에 대한 사용자 포트를 구성하려면 다음을 수행하십시오**.
 
-1. AEM3D 서비스에 대한 자격 증명을 요청하려면 Adobe AEM 계정 관리자, 프로비저닝 전문가 또는 지원 담당자에게 **문의하십시오**.
+1. AEM **3D 서비스에 대한 자격 증명을 요청하려면 Adobe AEM 계정 관리자, 프로비저닝 전문가 또는 지원 담당자에게 문의하십시오**.
 
    >[!NOTE]
    >
@@ -209,7 +209,7 @@ AEM에서 Adobe Dimension 3D 자산의 수집, 미리 보기 및 게시를 허�
    * userPoolId
    * clientId
 
-1. 관리자는 자격 증명을 설치할 AEM 작성자 인스턴스에 로그인한 다음 CRXDE **[!UICONTROL Lite를 엽니다]**.
+1. 관리자는 자격 증명을 설치할 AEM 작성자 인스턴스에 로그인한 다음 **[!UICONTROL CRXDE Lite을 엽니다]**.
 1. CRXDE Lite에서 다음을 수행하여 새 자격 증명 정보를 구성합니다.
 
    1. 새 값 `/libs/settings/dam/v3D/services/dncr` 으로 이동하여 `clientId` 속성을 설정합니다.
@@ -217,23 +217,23 @@ AEM에서 Adobe Dimension 3D 자산의 수집, 미리 보기 및 게시를 허�
    1. 새 암호 값을 속성에 `encryptedPassword` 로드합니다. 모두 저장을 탭하면 이 값 **[!UICONTROL 이 자동으로 암호화됩니다]**.
    1. 모두 **[!UICONTROL 저장을]**&#x200B;누르고 페이지를 다시 로드한 다음 `encryptedPassword` 속성에 중괄호로 둘러싸인 다른 문자열이 표시되는지 확인합니다. 이 모양은 암호가 올바르게 암호화되어 있고 안전함을 나타냅니다.
 
-1. CRXDE Lite에서 다음을 수행하여 `.glb` 변환 변환의 형식을 **[!UICONTROL 지정합니다]**.
+1. CRXDE Lite에서 다음을 수행하여 `.glb` 전환 변환의 형식을 **[!UICONTROL 지정합니다]**.
 
    1. CRXDE Lite `/libs/settings/dam/v3D/services/dncr` 에서 **[!UICONTROL 탐색합니다]**.
    1. 속성을 `outputFormat` 또는 `Dn` 으로 설정합니다 `generic`.
 
-      로 설정된 경우 변환 `Dn``.glb` 에 AEM에서 Dn 자산을 볼 때 최상의 품질을 얻기 위해 IBL 조명 등 Adobe별 확장이 포함되어 있습니다. 그러나 변환된 .glb 변환은 타사 응용 프로그램에서 제대로 렌더링되지 않을 수 있습니다.
+      로 설정된 경우 변환 `Dn``.glb` 은 AEM에서 Dn 자산을 볼 때 최상의 품질을 얻기 위해 IBL 조명 등의 Adobe 전용 익스텐션을 포함합니다. 그러나 변환된 .glb 변환은 타사 응용 프로그램에서 제대로 렌더링되지 않을 수 있습니다.
 
-      로 설정하면 `generic`Adobe `.glb` 별 확장 기능이 없는 일반 변환이 됩니다. 이 설정을 사용하면 타사 응용 프로그램에서 사용할 수 있지만 AEM 3D 뷰어로 보는 것은 시각적으로 최적의 상태가 아닙니다.
+      로 `generic`설정하면 Adobe `.glb` 별 확장 기능이 없는 변환이 일반적입니다. 이 설정을 사용하면 타사 응용 프로그램에서 사용할 수 있지만 AEM 3D 뷰어로 보는 것은 시각적으로 최적의 상태가 아닙니다.
 
-1. CRXDE **[!UICONTROL Lite에서 다음을 수행하여 Dn 파일 형식을 활성화합니다]**.
+1. CRXDE Lite에서 다음을 수행하여 Dn 파일 형식을 **[!UICONTROL 활성화합니다]**.
 
    1. 다음으로 이동 `/libs/settings/dam/v3D/assetTypes/Dn`.
    1. 속성을 true로 `Enabled` 설정합니다.
 
 1. 다음을 수행하여 구성을 확인합니다.
 
-   1. AEM Assets 열기
+   1. AEM Assets을 엽니다.
    1. 폴더 `logo_sphere.dn` 에 `test3d` 업로드합니다. 파일은 에 있습니다 `sample-3D-content/models`.
 
       기본 3D 기능의 유효성을 검사하기 위해 이전에 다운로드된 `sample-3D-content.zip` 것을 참고하십시오.
@@ -247,5 +247,5 @@ AEM에서 Adobe Dimension 3D 자산의 수집, 미리 보기 및 게시를 허�
    이러한 경우 다음을 수행하여 전환 문제를 해결할 수 있습니다.
 
    * 자산을 삭제한 다음 다시 업로드합니다.
-   * CRXDE Lite에서 모든 구성 매개 변수를 올바르게 **[!UICONTROL 설정했는지 확인하십시오]**.
+   * CRXDE Lite에서 모든 구성 매개 변수를 올바르게 설정했는지 **[!UICONTROL 확인하십시오]**.
    * 어떤 방화벽도 전환 서비스 및 AWS 끝점에 대한 액세스를 차단하고 있지 않은지 확인하십시오.
