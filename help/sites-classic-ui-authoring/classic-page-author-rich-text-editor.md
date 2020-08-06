@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: adc697e1-4a1c-4985-8690-79ed77736fec
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1814'
+ht-degree: 90%
 
 ---
 
@@ -77,7 +80,7 @@ The Rich Text Editor provides a range of featues, these [depend on the configura
 
 ### 사전 정의된 스타일 및 형식 {#predefined-styles-and-formats}
 
-![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
+![cq55_rte_stylespard](assets/cq55_rte_stylesparagraph.png)
 
 설치 환경에 사전 정의된 스타일과 형식이 포함될 수 있습니다. **스타일** 및 **서식** 드롭다운 상자의 스타일과 서식을 선택한 텍스트에 적용할 수 있습니다.
 
@@ -351,7 +354,7 @@ AEM에서는 **찾기** 및 **바꾸기**(찾기 및 바꾸기) 기능을 모두
 * **너비**
 * **높이**
 * **수평 정렬** - 왼쪽, 가운데 또는 오른쪽
-* **수직 정렬** - 위쪽, 중간, 아래쪽 또는 기준선
+* **세로 정렬** - 위쪽, 중간, 아래쪽 또는 기준선
 * **셀 유형** - 데이터 또는 헤더
 * **적용 대상:**
    * 단일 셀
@@ -382,7 +385,7 @@ AEM에서는 **찾기** 및 **바꾸기**(찾기 및 바꾸기) 기능을 모두
 
 #### 셀 병합 {#merge-cells}
 
-![cq55_rte_cellmerge](assets/cq55_rte_cellmerge.png) cq55_ ![rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
+![cq55_rte_cellmerge](assets/cq55_rte_cellmerge.png) ![cq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
 
 * 셀 그룹을 선택한 경우 여러 셀을 하나로 병합할 수 있습니다.
 * 셀을 하나만 선택한 경우 오른쪽이나 아래쪽에 있는 셀과 병합할 수 있습니다.
@@ -408,6 +411,7 @@ AEM에서는 **찾기** 및 **바꾸기**(찾기 및 바꾸기) 기능을 모두
 >
 >* Windows IE: Ctrl 키를 누른 채로 마우스 기본 단추(일반적으로 왼쪽)를 클릭하여 여러 셀을 선택합니다.
 >* Firefox: 마우스를 드래그하여 셀 범위를 선택합니다.
+
 >
 
 
