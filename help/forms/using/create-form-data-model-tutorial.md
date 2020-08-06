@@ -112,23 +112,23 @@ CREATE TABLE `calls` (
 
 호출 **표에는** 호출 날짜, 통화 시간, 통화 번호, 통화 기간, 통화 요금 등의 통화 세부 사항이 포함되어 있습니다. 고객 **** 테이블이 모바일 번호(mobilenum) 필드를 사용하여 호출 테이블에 연결됩니다. **고객** 테이블에 나열된 각 모바일 번호에 대해 **호출** 표에 여러 개의 레코드가 있습니다. 예를 들어 **호출** 테이블을 참조하여 **1457892541** 모바일 번호에 대한 호출 세부 사항을 검색할 수 있습니다.
 
-청구서 **** 테이블에는 청구 일자, 청구 기간, 월별 요금 및 콜과 같은 청구 상세내역이 포함됩니다. 고객 ******테이블은 청구 계획 필드를 사용하여** 청구테이블에 연결됩니다. 고객 테이블에 있는 각 고객과 관련된 계획이 **있습니다** . 청구서 **테이블에는** 모든 기존 플랜에 대한 가격 세부 정보가 포함되어 있습니다. 예를 들어 **고객** 테이블에서 **Sarah에** 대한 플랜 상세내역을 검색하고 이러한 세부 정보를 사용하여 **청구** 테이블에서 가격 세부 정보를 검색할 수 있습니다.
+청구서 **** 테이블에는 청구 일자, 청구 기간, 월별 요금 및 콜과 같은 청구 상세내역이 포함됩니다. 고객 ******테이블은 청구 계획 필드를 사용하여** 청구테이블에 연결됩니다. 고객 테이블에 있는 각 고객과 관련된 계획이 **있습니다** . 청구서 **테이블에는** 모든 기존 플랜에 대한 가격 세부 정보가 포함되어 있습니다. 예를 들어 **고객** 테이블에서 **Sarah** 에 대한 계획 상세내역을 검색하고 이러한 세부 정보를 사용하여 **청구** 테이블에서 가격 세부 정보를 검색할 수 있습니다.
 
 ## 2단계: MySQL 데이터베이스를 데이터 소스로 구성 {#step-configure-mysql-database-as-data-source}
 
-양식 데이터 모델을 만들도록 여러 유형의 데이터 소스를 구성할 수 있습니다. 이 자습서의 경우 샘플 데이터로 구성 및 채워진 MySQL 데이터베이스를 구성합니다. 지원되는 다른 데이터 소스 및 데이터 소스 구성 방법에 대한 자세한 내용은 [AEM Forms 데이터 통합을 참조하십시오](data-integration.md).
+양식 데이터 모델을 만들도록 여러 유형의 데이터 소스를 구성할 수 있습니다. 이 자습서의 경우 샘플 데이터로 구성 및 채워진 MySQL 데이터베이스를 구성합니다. 지원되는 다른 데이터 소스 및 구성 방법에 대한 자세한 내용은 [AEM Forms 데이터 통합을 참조하십시오](data-integration.md).
 
 MySQL 데이터베이스를 구성하려면 다음을 수행합니다.
 
 1. OSGi 번들로 MySQL 데이터베이스의 JDBC 드라이버를 설치합니다.
 
-   1. AEM Forms 작성자 인스턴스에 관리자로 로그인하고 AEM 웹 콘솔 번들로 이동합니다. 기본 URL은 http://localhost:4502/system/console/bundles [입니다](http://localhost:4502/system/console/bundles).
+   1. 관리자로 AEM Forms 작성자 인스턴스에 로그인하고 AEM 웹 콘솔 번들로 이동합니다. 기본 URL은 http://localhost:4502/system/console/bundles [입니다](http://localhost:4502/system/console/bundles).
    1. 설치/ **업데이트를 누릅니다**. [ **업로드/설치 번들** ] 대화 상자가 나타납니다.
    1. 파일 **선택을** 눌러 MySQL JDBC 드라이버 OSGi 번들을 찾고 선택합니다. 번들 **시작** 및 **패키지**&#x200B;새로 **고침을** 선택하고 **설치**&#x200B;또는 업데이트를누릅니다. Oracle Corporation의 MySQL용 JDBC 드라이버가 활성화되어 있는지 확인합니다. 드라이버가 설치되어 있습니다.
 
 1. MySQL 데이터베이스를 데이터 소스로 구성:
 
-   1. http://localhost:4502/system/console/configMgr의 AEM 웹 콘솔로 [이동합니다](http://localhost:4502/system/console/configMgr).
+   1. AEM 웹 콘솔(http://localhost:4502/system/console/configMgr)으로 [이동합니다](http://localhost:4502/system/console/configMgr).
    1. Apache **Sling 연결 풀링된 DataSource 구성을** 찾습니다. 을 눌러 편집 모드에서 구성을 엽니다.
    1. 구성 대화 상자에서 다음 세부 정보를 지정합니다.
 
@@ -151,11 +151,11 @@ MySQL 데이터베이스를 구성하려면 다음을 수행합니다.
 
 ## Step 3: Create form data model {#step-create-form-data-model}
 
-AEM Forms는 구성된 데이터 소스에서 양식 데이터 [모델을](data-integration.md)만드는 직관적인 사용자 인터페이스를 제공합니다. 양식 데이터 모델에서 여러 데이터 소스를 사용할 수 있습니다. 이 자습서의 사용 사례에서는 MySQL을 데이터 소스로 사용합니다.
+AEM Forms은 구성된 데이터 소스에서 양식 데이터 [모델을](data-integration.md)만들 수 있는 직관적인 유저 인터페이스를 제공합니다. 양식 데이터 모델에서 여러 데이터 소스를 사용할 수 있습니다. 이 자습서의 사용 사례에서는 MySQL을 데이터 소스로 사용합니다.
 
 양식 데이터 모델을 만들려면 다음을 수행합니다.
 
-1. AEM 작성 인스턴스에서 **양식** > **데이터 통합으로 이동합니다**.
+1. AEM 작성 인스턴스에서 **Forms** > **데이터 통합으로 이동합니다**.
 1. Tap **Create** >  **Form Data Model**.
 1. 양식 데이터 모델 만들기 마법사에서 양식 데이터 모델의 **이름을** 지정합니다. 예: **FDM_Create_First_IC**. 다음을 **누릅니다**.
 1. 데이터 소스 선택 화면에는 구성된 모든 데이터 소스가 나열됩니다. MySQL **데이터 소스** 를 선택하고 만들기를 **누릅니다**.
@@ -176,7 +176,7 @@ AEM Forms는 구성된 데이터 소스에서 양식 데이터 [모델을](data-
 
 ### 데이터 모델 개체 및 서비스 추가 {#add-data-model-objects-and-services}
 
-1. AEM 작성 인스턴스에서 **양식** > **데이터 통합으로 이동합니다**. 기본 URL은 http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm [입니다](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
+1. AEM 작성자 인스턴스의 경우 **Forms** > **데이터 통합으로 이동합니다**. 기본 URL은 http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm [입니다](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
 1. 이전에 **만든 FDM_Create_First_IC** 양식 데이터 모델이 여기에 표시됩니다. 선택하고 편집을 **누릅니다**.
 
    선택한 데이터 소스 **MySQL** 이 **데이터 소스** 창에 표시됩니다.
