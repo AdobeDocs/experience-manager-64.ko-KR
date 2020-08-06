@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
@@ -37,7 +37,7 @@ JSON 내보내기 기능은 Sling [Models](https://sling.apache.org/documentatio
 
 >[!NOTE]
 >
->Sling 모델 사용에 대한 예는 AEM에서 Sling 모델 [내보내기 개발 문서를 참조하십시오](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-model-exporter-tutorial-develop.html).
+>Sling Models를 사용하는 예를 보려면 AEM에서 Sling [Model Proporter 개발 문서를 참조하십시오](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-model-exporter-tutorial-develop.html).
 
 Sling Model 구현 클래스에 다음과 같은 주석을 추가해야 합니다.
 
@@ -98,6 +98,6 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 
 * [콘텐츠 조각 모델](/help/assets/content-fragments-models.md)
 * [컨텐츠 조각으로 작성](/help/sites-authoring/content-fragments.md)
-* [콘텐츠 서비스용 JSON 내보내기](/help/sites-developing/json-exporter.md)
+* [컨텐츠 서비스용 JSON 익스포터](/help/sites-developing/json-exporter.md)
 * [핵심 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) 및 [컨텐츠 조각 구성 요소](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
 
