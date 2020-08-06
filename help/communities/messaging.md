@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## 개요 {#overview}
 
-AEM Communities에 대한 메시징 기능은 로그인 사이트 방문자(구성원)가 사이트에 로그인할 때 액세스할 수 있는 서로 메시지를 보내는 기능을 제공합니다.
+AEM Communities의 메시징 기능은 로그인 사이트 방문자(구성원)가 사이트에 로그인할 때 액세스할 수 있는 다른 사람에게 메시지를 보내는 기능을 제공합니다.
 
 커뮤니티 사이트를 만드는 동안 상자를 선택하면 커뮤니티 사이트에 대한 [메시징이 활성화됩니다](sites-console.md).
 
@@ -32,7 +32,7 @@ AEM Communities에 대한 메시징 기능은 로그인 사이트 방문자(구�
 
 ## 메시징 작업 서비스 {#messaging-operations-service}
 
-AEM Communities 메시징 작업 서비스는 메시징 관련 요청을 처리하는 종단점, 서비스가 메시지를 저장하는 데 사용해야 하는 폴더, 메시지에 첨부 파일이 포함되어 있을 수 있는 경우 허용되는 파일 유형을 식별합니다 [](http://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) .
+The [AEM Communities Messaging Operations Service](http://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) is identify the endpoint that handles messaging related requests, the service should use for storing messages, and if 메시지에 첨부 파일이 포함되어 있을 수 있는 경우 허용되는 파일 형식을 식별합니다.
 
 커뮤니티 사이트 콘솔을 사용하여 만든 [커뮤니티 사이트의 경우](sites-console.md), 받은 편지함이 설정된 서비스 인스턴스가 이미 있습니다 `/mail/community/inbox`.
 
@@ -69,7 +69,7 @@ AEM Communities 메시징 작업 서비스는 메시징 관련 요청을 처리�
 * **[!UICONTROL maxRetries.name]**&#x200B;배달되지 못한 메시지를 다시 보내는 데 필요한 횟수입니다. 기본값은 
 *3*.
 
-* **[!UICONTROL minWaitBetweenRetries.name]**&#x200B;메시지 전송 실패 시 메시지를 재전송하려는 시도 간 대기하는 시간(초)입니다. 기본값은 *100 *(초)입니다.
+* **[!UICONTROL minWaitBetweenRetries.name]**&#x200B;메시지 전송 실패 시 메시지를 다시 보내는 시도 간 대기할 시간(초)입니다. 기본값은 *100 *(초)입니다.
 
 * **[!UICONTROL 카운트 업데이트 풀 크기]**&#x200B;카운트 업데이트에 사용되는 동시 스레드 수입니다. 기본값은 
 *10*.
@@ -90,11 +90,11 @@ AEM Communities 메시징 작업 서비스는 메시징 관련 요청을 처리�
 *104857600* (100MB).
 
 * **[!UICONTROL attachmentTypeBlocklist.name]**&#x200B;파일 확장자차단 목록에 추가하다의(&#39;
-**.**&#39;, 시스템에 의해 거부됩니다. 차단 목록에 추가된이 없으면 확장이 허용됩니다. &#39;**+**&#39; 및 &#39;**-**&#39; 아이콘을 사용하여 익스텐션을 추가하거나 제거할 수있습니다. 기본값은 *DEFAULT입니다*.
+**.**&#39;, 시스템에 의해 거부됩니다. 그렇지 차단 목록에 추가된 않으면 확장이 허용됩니다. &#39;**+**&#39; 및 &#39;**-**&#39; 아이콘을 사용하여 익스텐션을 추가하거나 제거할 수있습니다. 기본값은 *DEFAULT입니다*.
 
 * **[!UICONTROL allowedAttachmentTypes.name]**
 
-   **(*작업 필요*** )파일 확장자의 허용 목록에 추가하다차단 목록에 추가하다입니다. 이러한 차단 목록에 추가된을 제외한 모든 파일 확장자를 허용하려면 &#39;**-**&#39; 아이콘을 사용하여 빈 항목 하나를 제거합니다.
+   **(*작업 필요*** )파일 확장자의 허용 목록에 추가하다차단 목록에 추가하다입니다. 파일 확장자를 제외한 모든 파일 확장자를 허용하려면 &#39;**-**&#39; 아이콘을 사용하여 빈 항목 하나를 제거합니다.
 
 * **[!UICONTROL serviceSelector.name]**(*필수*) 서비스가 호출되는 절대 경로(끝점)입니다(가상 리소스). 선택한 경로의 루트는 OSGi 구성의 *실행 경로* 구성 설정 [ 에 포함되어야 `Apache Sling Servlet/Script Resolver and Error Handler`](http://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver)합니다(예: `/bin/`, `/apps/`및 `/services/`). 사이트의 메시징 기능에 대해 이 구성을 선택하려면 이 끝점이 해당 **`Service selector`** 의 값으로 `Message List and Compose Message components` 제공됩니다( [메시지 기능](configure-messaging.md)참조). 기본값은 */bin/messaging입니다* .
 
@@ -105,7 +105,7 @@ AEM Communities 메시징 작업 서비스는 메시징 관련 요청을 처리�
 >
 >편집을 위해 `Messaging Operations Service` `allowedAttachmentTypes.name` 구성을 열 때마다, 제거된 경우 빈 항목이 다시 추가되어 속성을 구성할 수 있습니다. 비어 있는 단일 항목은 파일 첨부 파일을 효과적으로 비활성화합니다.
 >
->이러한 차단 목록에 추가된을 제외한 모든 파일 확장자를 허용하려면 &#39;**-**&#39; 아이콘을 사용하여 빈 항목 하나를 제거한 다음 **[!UICONTROL 저장을 클릭합니다]**.
+>파일 확장자를 제외한 모든 파일 확장자를 허용하려면 &#39;**-**&#39; 아이콘을 사용하여 **[!UICONTROL 저장]**&#x200B;을 클릭하기 전에 비어 있는 항목 하나를 제거합니다.
 
 ## 문제 해결 {#troubleshooting}
 
