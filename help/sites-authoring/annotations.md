@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 translation-type: tm+mt
 source-git-commit: b3d81da17c2de68d6ba3306bb35543eb0788e308
+workflow-type: tm+mt
+source-wordcount: '651'
+ht-degree: 99%
 
 ---
 
@@ -35,7 +38,7 @@ source-git-commit: b3d81da17c2de68d6ba3306bb35543eb0788e308
 
 >[!NOTE]
 >
->요구 사항에 따라 주석이 추가, 업데이트 또는 삭제될 때 알림을 보내는 워크플로우를 개발할 수도 있습니다.
+>필요에 따라 주석이 추가, 업데이트 또는 삭제될 때 알림 메시지를 보내는 워크플로우를 개발할 수도 있습니다.
 
 ## 주석 {#annotations}
 
@@ -50,7 +53,8 @@ source-git-commit: b3d81da17c2de68d6ba3306bb35543eb0788e308
 >다양한 리소스에 주석을 달 수 있습니다.
 >
 >* [자산에 주석 추가](/help/assets/managing-assets-touch-ui.md#annotating)
->* [비디오 자산에 주석 추가](/help/assets/managing-video-assets.md#annotating-video-assets)
+>* [비디오 자산에 주석 달기](/help/assets/managing-video-assets.md#annotating-video-assets)
+
 >
 
 
@@ -89,9 +93,11 @@ source-git-commit: b3d81da17c2de68d6ba3306bb35543eb0788e308
    ![](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * 색상 선택/변경:
+
    ![](do-not-localize/chlimage_1-19.png)
 
    * 주석 삭제
+
    ![](do-not-localize/screen_shot_2018-03-22at110647.png)
 
 1. 대화 상자의 외부를 클릭/탭하여 주석 대화 상자를 닫을 수 있습니다. 스케치가 있는 잘린 주석 보기(첫 번째 단어)가 표시됩니다.
@@ -113,7 +119,7 @@ source-git-commit: b3d81da17c2de68d6ba3306bb35543eb0788e308
 1. 주석 모드를 끝내고 이전에 사용한 모드로 돌아가려면 상단 도구 모음 오른쪽에 있는 [주석] 아이콘(x 기호)을 탭하거나 클릭합니다.
 
 >[!NOTE]
->다른 사용자가 잠근 페이지에 주석을 추가할 수 없습니다.
+>다른 사용자가 잠근 페이지에는 주석을 추가할 수 없습니다.
 
 ### 주석 표시기 {#annotation-indicator}
 
