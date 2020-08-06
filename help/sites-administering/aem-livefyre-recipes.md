@@ -22,21 +22,21 @@ ht-degree: 2%
 
 Adobe Experience Manager Livefyre의 일반적인 사용 사례에 대한 단계별 지침
 
-## 즉시 사용 가능한 Livefyre AEM 구성 요소를 사용하여 UGC를 선별하고 Livefyre 미디어 장벽을 사용하여 표시 {#curate-ugc-using-the-out-of-the-box-livefyre-aem-components-and-display-using-livefyre-media-wall}
+## 즉시 사용 가능한 Livefyre AEM 구성 요소를 사용하여 UGC를 선별하고 Livefyre 미디어 장벽을 사용하여 디스플레이 {#curate-ugc-using-the-out-of-the-box-livefyre-aem-components-and-display-using-livefyre-media-wall}
 
-Media Wall은 소셜 및 기본 Livefyre 컨텐츠를 실시간 소셜 담벼락에 스트리밍합니다. 사용 사례와 요구 사항에 따라 AEM에서 미디어 장벽을 구현하는 방법에는 여러 가지가 있습니다.
+Media Wall은 소셜 및 기본 Livefyre 컨텐츠를 실시간 소셜 담벼락에 스트리밍합니다. 사용 사례와 요구 사항에 따라 AEM에서 Media Wall을 구현하는 방법에는 여러 가지가 있습니다.
 
 AEM Livefyre 패키지는 기본적으로 구현되는 반면, 기존 통합은 사용자 정의 Livefyre AEM 구성 요소를 만드는 기능을 제공합니다.
 
 ### AEM 통합 {#aem-integration}
 
-Livefyre Adobe Experience Manager 패키지는 AEM 6.1, 6.2SP1, 6.3, , 6.4 및 6.4 SP1에서 사용할 수 있습니다. AEM 5.x 및 6.0은 지원되지 않습니다. 자세한 내용은 Livefyre와 [통합을 참조하십시오](https://helpx.adobe.com/kr/experience-manager/6-4/sites/administering/using/livefyre.html).
+Livefyre Adobe Experience Manager 패키지는 AEM 6.1, 6.2SP1, 6.3, 8.6.4 및 6.4 SP1에서 사용할 수 있습니다. AEM 5.x 및 6.0은 지원되지 않습니다. 자세한 내용은 Livefyre와 [통합을 참조하십시오](https://helpx.adobe.com/kr/experience-manager/6-4/sites/administering/using/livefyre.html).
 
-지원되는 Livefyre 앱을 확인하려면 Livefyre 앱용 [AEM Support Matrix를 참조하십시오](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps).
+지원되는 Livefyre 앱을 확인하려면 [AEM Support Matrix for Livefyre 앱을 참조하십시오](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps).
 
-### 일반 구현(사용자 지정된 AEM 구성 요소의 경우) {#traditional-implementation-for-customized-aem-components}
+### 기존 구현(사용자 정의된 AEM 구성 요소용) {#traditional-implementation-for-customized-aem-components}
 
-사용자 지정 AEM 구성 요소나 WordPress, Sitecore 또는 DemandWare와 같은 기타 CMS에 Livefyre를 구현하는 방법에는 세 가지가 있습니다. 기존의 Livefyre 통합은 CMS에 관계없이 가능합니다.
+사용자 정의 AEM 구성 요소나 WordPress, Sitecore 또는 DemandWare와 같은 기타 CMS에 Livefyre를 구현하는 방법에는 세 가지가 있습니다. 기존의 Livefyre 통합은 CMS에 관계없이 가능합니다.
 
 **방법 1: 디자이너 앱 구현**
 
@@ -65,12 +65,12 @@ UGC용 UI를 작성할 때 [Twitter](https://developer.twitter.com/en/developer-
 
 인증이 필요한 미디어 벽 통합은 다음을 참조하십시오.
 
-* [AEM Identity Management에 대한 단일 사인온](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) 통합 사용자 정의
+* [AEM Identity Management용 Single Sign](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) on 통합 사용자 정의
 * [타사 인증 플랫폼을 위한 ID 통합](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html)
 
 ### 사용 사례 개요 {#use-case-overview}
 
-AEM 고객인 경우 특별 Livefyre AEM 구성 요소를 사용하여 UGC를 선별하고 Livefyre 미디어 장벽을 사용하여 표시하고자 합니다.
+AEM 고객으로서 즉시 사용 가능한 Livefyre AEM 구성 요소를 사용하여 UGC를 선별하고 Livefyre Media Wall을 사용하여 표시하고자 합니다.
 
 구현 단계:
 
@@ -93,15 +93,15 @@ AEM 고객인 경우 특별 Livefyre AEM 구성 요소를 사용하여 UGC를 �
 * [PGA Tour Media Wall](https://www.pgatour.com/social-hub.html)
 * [시간 초과](https://www.timeout.com/london/restaurants/forest-bar-kitchen#tab_panel_3)
 
-## AEM 구성 요소 또는 기존 Livefyre 통합을 사용하여 Livefyre 주석 통합 {#integrate-livefyre-comments-using-aem-components-or-traditional-livefyre-integration}
+## AEM 구성 요소 또는 기존의 Livefyre 통합을 사용하여 Livefyre 주석 통합 {#integrate-livefyre-comments-using-aem-components-or-traditional-livefyre-integration}
 
 ### AEM 통합 {#aem-integration-1}
 
-Livefyre Adobe Experience Manager 패키지는 AEM 6.1, 6.2SP1, 6.3, , 6.4 및 6.4 SP1에서 사용할 수 있습니다. AEM 5.x 및 6.0은 지원되지 않습니다. 자세한 내용은 Livefyre와 [통합을 참조하십시오](https://helpx.adobe.com/kr/experience-manager/6-4/sites/administering/using/livefyre.html).
+Livefyre Adobe Experience Manager 패키지는 AEM 6.1, 6.2SP1, 6.3, 8.6.4 및 6.4 SP1에서 사용할 수 있습니다. AEM 5.x 및 6.0은 지원되지 않습니다. 자세한 내용은 Livefyre와 [통합을 참조하십시오](https://helpx.adobe.com/kr/experience-manager/6-4/sites/administering/using/livefyre.html).
 
-### 일반 구현(사용자 지정된 AEM 구성 요소의 경우) {#traditional-implementation-for-customized-aem-components-1}
+### 기존 구현(사용자 정의된 AEM 구성 요소용) {#traditional-implementation-for-customized-aem-components-1}
 
-사용자 지정 AEM 구성 요소나 WordPress, Sitecore 또는 DemandWare와 같은 다른 CMS에 Livefyre 댓글 앱을 구현하는 방법에는 세 가지가 있습니다. 기존의 Livefyre 통합은 CMS에 관계없이 가능합니다.
+사용자 정의 AEM 구성 요소나 WordPress, Sitecore 또는 DemandWare와 같은 기타 CMS에 Livefyre 댓글 앱을 구현하는 방법에는 세 가지가 있습니다. 기존의 Livefyre 통합은 CMS에 관계없이 가능합니다.
 
 **방법 1: 디자이너 앱 구현**
 
@@ -129,7 +129,7 @@ SDK를 사용한 고급 사용자 정의에 대해서는 [StreamHub SDK를 참�
 
 ### 댓글 앱 인증 통합 {#comments-app-authentication-integration}
 
-* [AEM Identity Management에 대한 단일 사인온](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) 통합 사용자 정의
+* [AEM Identity Management용 Single Sign](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) on 통합 사용자 정의
 * [타사 인증 플랫폼을 위한 ID 통합](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html)
 
 ### 고객 사례 {#customer-examples-1}
@@ -138,7 +138,7 @@ SDK를 사용한 고급 사용자 정의에 대해서는 [StreamHub SDK를 참�
 
 ## Livefyre AEM Assets 통합을 사용하여 AEM Assets에서 UGC 가져오기 {#use-livefyre-aem-assets-integration-to-import-ugc-in-aem-assets}
 
-**Livefyre 설정(UGC 교육 및 권한 관리용):**
+**Livefyre 설정(UGC 큐레이션 및 Rights Management용):**
 
 1. [Livefyre 자산 라이브러리 폴더에 UGC를 조정하기 위한 스트림 구성 및 규칙 추가](https://docs.adobe.com/content/help/en/livefyre/using/streams/c-streams.html).
 
@@ -146,29 +146,29 @@ SDK를 사용한 고급 사용자 정의에 대해서는 [StreamHub SDK를 참�
 
 1. [Livefyre 에셋 라이브러리 폴더에 선별된 UGC를 수집, 구성 및 관리할 수 있습니다](https://docs.adobe.com/content/help/en/livefyre/using/library/assets/c-assets.html).
 
-   1. Livefyre 스튜디오 에셋 라이브러리의 폴더 만들기 및 관리에 대한 교육 비디오는 Adobe Experience Manager Livefyre에서 [에셋을 사용한 작업을 참조하십시오](https://helpx.adobe.com/experience-manager/tutorials.html).
+   1. Livefyre 스튜디오 에셋 라이브러리의 폴더 만들기 및 관리에 대한 교육 비디오를 보려면 Adobe Experience Manager Livefyre에서 [에셋을 사용한 작업을 참조하십시오](https://helpx.adobe.com/experience-manager/tutorials.html).
 
 1. [Livefyre Studio를 사용하여 선별된 UGC에 대한 권한 요청](https://docs.adobe.com/content/help/en/livefyre/using/rights-requests/c-how-requesting-rights-works.html).
 
-**AEM 설정(AEM Assets으로 UGC를 가져오는 경우):**
+**AEM 설정(UGC를 AEM Assets으로 가져오기):**
 
 1. [시작하기](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#GettingStarted)
 1. [Livefyre를 사용하도록 AEM 구성](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#ConfigureAEMtouseLivefyre)
-1. [Livefyre에서 선별한 UGC를 AEM Assets으로 가져오기](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMAssets)
+1. [Livefyre가 선별한 UGC를 AEM Assets으로 가져오기](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMAssets)
 
 * [Tourism Australia](https://www.australia.com/en-us)
 
-## AEM 구성 요소 또는 기존 Livefyre 통합을 사용하여 Livefyre 검토 통합 {#integrate-livefyre-reviews-using-aem-components-or-traditional-livefyre-integration}
+## AEM 구성 요소 또는 기존의 Livefyre 통합을 사용하여 Livefyre 검토 통합 {#integrate-livefyre-reviews-using-aem-components-or-traditional-livefyre-integration}
 
 ### AEM 통합 {#aem-integration-2}
 
-Livefyre Adobe Experience Manager 패키지는 AEM 6.1, 6.2SP1, 6.3, , 6.4 및 6.4 SP1에서 사용할 수 있습니다. AEM 5.x 및 6.0은 지원되지 않습니다. 자세한 내용은 Livefyre와 [통합을 참조하십시오](https://helpx.adobe.com/kr/experience-manager/6-4/sites/administering/using/livefyre.html).
+Livefyre Adobe Experience Manager 패키지는 AEM 6.1, 6.2SP1, 6.3, 8.6.4 및 6.4 SP1에서 사용할 수 있습니다. AEM 5.x 및 6.0은 지원되지 않습니다. 자세한 내용은 Livefyre와 [통합을 참조하십시오](https://helpx.adobe.com/kr/experience-manager/6-4/sites/administering/using/livefyre.html).
 
-검토 구성 요소는 AEM 6.1에서 지원되지 않습니다. 모든 Livefyre 앱에 [대한 AEM 지원 매트릭스를 확인하십시오](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps).
+검토 구성 요소는 AEM 6.1에서 지원되지 않습니다. 모든 Livefyre 앱에 대한 [AEM 지원 매트릭스를 확인하십시오](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps).
 
-### 일반 구현(사용자 지정된 AEM 구성 요소의 경우) {#traditional-implementation-for-customized-aem-components-2}
+### 기존 구현(사용자 정의된 AEM 구성 요소용) {#traditional-implementation-for-customized-aem-components-2}
 
-두 가지 방법으로 사용자 지정 AEM 구성 요소나 WordPress, Sitecore 또는 DemandWare와 같은 다른 CMS에 Livefyre 검토 앱을 구현할 수 있습니다. 기존의 Livefyre 통합은 CMS에 관계없이 가능합니다.
+Livefyre 리뷰 앱을 사용자 정의 AEM 구성 요소나 WordPress, Sitecore 또는 DemandWare와 같은 기타 CMS에 구현하는 방법에는 두 가지가 있습니다. 기존의 Livefyre 통합은 CMS에 관계없이 가능합니다.
 
 **방법 1: SDK 구현**
 
@@ -191,7 +191,7 @@ SDK를 사용한 고급 사용자 정의에 대해서는 [StreamHub SDK를 참�
 
 ### 댓글 앱 인증 통합 {#comments-app-authentication-integration-1}
 
-* [AEM Identity Management에 대한 단일 사인온](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) 통합 사용자 정의
+* [AEM Identity Management용 Single Sign](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) on 통합 사용자 정의
 * [타사 인증 플랫폼을 위한 ID 통합](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html)
 
 ### 고객 사례 {#customer-examples-2}
