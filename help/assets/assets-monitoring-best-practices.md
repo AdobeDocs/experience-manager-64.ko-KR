@@ -1,6 +1,6 @@
 ---
 title: 자산 모니터링 우수 사례
-description: AEM 인스턴스가 배포된 후 AEM 인스턴스의 환경 및 성능을 모니터링하기 위한 우수 사례입니다.
+description: AEM 인스턴스가 배포된 후 환경 및 성능을 모니터링하기 위한 모범 사례
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 자산 모니터링 우수 사례 {#assets-monitoring-best-practices}
 
-AEM(Adobe Experience Manager) 자산 관점에서 모니터링에는 다음 프로세스 및 기술에 대한 관찰과 보고가 포함되어야 합니다.
+Adobe Experience Manager(AEM) 자산 관점에서 모니터링에는 다음 프로세스 및 기술에 대한 관찰과 보고가 포함되어야 합니다.
 
 * 시스템 CPU
 * 시스템 메모리 사용
@@ -26,7 +26,7 @@ AEM(Adobe Experience Manager) 자산 관점에서 모니터링에는 다음 프�
 
 * OSGi 콘솔 상태 확인
 
-일반적으로 AEM 자산은 라이브 모니터링과 장기 모니터링이라는 두 가지 방법으로 모니터링할 수 있습니다.
+일반적으로, AEM Assets은 라이브 모니터링과 장기 모니터링이라는 두 가지 방법으로 감시할 수 있습니다.
 
 ## 실시간 모니터링 {#live-monitoring}
 
@@ -41,24 +41,24 @@ AEM(Adobe Experience Manager) 자산 관점에서 모니터링에는 다음 프�
 * [위쪽](http://www.ex-parrot.com/pdw/iftop/): 이 보고서는 이더넷/네트워크 사용에 대한 자세한 정보를 표시합니다. 이 경우 이더넷을 사용하는 엔터티의 통신 채널 통계당 및 이들이 사용하는 대역폭 수치를 표시합니다. 애플리케이션은 `yum install iftop` 또는 를 사용하여 대부분의 Linux 시스템에 설치할 수 `apt-get install iftop`있습니다.
 
 * JFR(Java Flight Recorder): 비프로덕션 환경에서 자유롭게 사용할 수 있는 Oracle의 상업용 도구입니다. 자세한 내용은 Java [플라이트 레코더를 사용하여 CQ 런타임 문제 진단을 참조하십시오](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
-* AEM error.log 파일: 시스템에 로그인한 오류에 대한 자세한 내용은 AEM error.log 파일을 조사할 수 있습니다. 조사할 오류 `tail -F quickstart/logs/error.log` 를 식별하는 명령을 사용합니다.
+* AEM error.log 파일: AEM error.log 파일에서 시스템에 기록된 오류에 대한 세부 정보를 확인할 수 있습니다. 조사할 오류 `tail -F quickstart/logs/error.log` 를 식별하는 명령을 사용합니다.
 * [워크플로우 콘솔](../sites-administering/workflows.md): 워크플로우 콘솔을 활용하여 지연 또는 중단되는 워크플로우를 모니터링할 수 있습니다.
 
-일반적으로 이러한 도구를 함께 사용하여 AEM 인스턴스의 성능에 대한 포괄적인 아이디어를 얻습니다.
+일반적으로 이러한 도구를 함께 사용하면 AEM 인스턴스의 성능에 대한 포괄적인 아이디어를 얻을 수 있습니다.
 
 >[!NOTE]
 >
->이러한 도구는 표준 도구이며 Adobe에서 직접 지원하지 않습니다. 추가 라이선스는 필요하지 않습니다.
+>이러한 도구는 표준 도구이며 Adobe에서 직접 지원되지 않습니다. 추가 라이선스는 필요하지 않습니다.
 
 ![chlimage_1-142](assets/chlimage_1-142.png) ![chlimage_1-143](assets/chlimage_1-143.png)
 
 ## 장기 모니터링 {#long-term-monitoring}
 
-AEM 인스턴스의 장기 모니터링은 라이브로 모니터링되는 것과 동일한 부분에 대해 더 오랜 기간 동안 모니터링합니다. 또한 환경에 맞는 경고를 정의합니다.
+AEM 인스턴스의 장기 모니터링은 라이브로 모니터링되는 것과 동일한 부분을 장기간 모니터링해야 합니다. 또한 환경에 맞는 경고를 정의합니다.
 
 ### 로그 집계 및 보고 {#log-aggregation-and-reporting}
 
-Splunk(TM) 및 Elastic Search/Logstash/Kabana(ELK)와 같이 로그를 집계하는 데 사용할 수 있는 몇 가지 도구가 있습니다. AEM 인스턴스의 가동 시간을 평가하려면 시스템의 로그 이벤트를 파악하고 이를 기반으로 경고를 생성하는 것이 중요합니다. 개발 및 작업 관행에 대한 충분한 지식이 있으면 로그 집계 프로세스를 조정하여 중요한 경고를 생성하는 방법을 더 잘 이해할 수 있습니다.
+Splunk(TM) 및 Elastic Search/Logstash/Kabana(ELK)와 같이 로그를 집계하는 데 사용할 수 있는 몇 가지 도구가 있습니다. AEM 인스턴스의 가동 시간을 평가하려면 시스템의 로그 이벤트를 파악하고 그에 따라 경고를 생성해야 합니다. 개발 및 작업 관행에 대한 충분한 지식이 있으면 로그 집계 프로세스를 조정하여 중요한 경고를 생성하는 방법을 더 잘 이해할 수 있습니다.
 
 ### 환경 모니터링 {#environment-monitoring}
 
@@ -71,7 +71,7 @@ Splunk(TM) 및 Elastic Search/Logstash/Kabana(ELK)와 같이 로그를 집계하
 * JMX MBeans
 * 외부 웹 사이트
 
-각 항목을 모니터링하려면 NewRelic(TM) 및 AppDynamics(TM)와 같은 외부 도구가 필요합니다. 이러한 도구를 사용하여 시스템 사용률, 워크플로우 백업, 상태 점검 실패 또는 웹 사이트에 대한 인증되지 않은 액세스 등과 같이 시스템별 경고를 정의할 수 있습니다. Adobe는 다른 툴보다 특정 툴을 권장하지 않습니다. 귀하에게 적합한 툴을 찾아 이를 활용하여 설명한 항목을 모니터링할 수 있습니다.
+각 항목을 모니터링하려면 NewRelic(TM) 및 AppDynamics(TM)와 같은 외부 도구가 필요합니다. 이러한 도구를 사용하여 시스템 사용률, 워크플로우 백업, 상태 점검 실패 또는 웹 사이트에 대한 인증되지 않은 액세스 등과 같이 시스템별 경고를 정의할 수 있습니다. Adobe은 다른 도구에 비해 특정 도구를 권장하지 않습니다. 귀하에게 적합한 툴을 찾아 이를 활용하여 설명한 항목을 모니터링할 수 있습니다.
 
 #### 내부 애플리케이션 모니터링 {#internal-application-monitoring}
 
@@ -83,7 +83,7 @@ JMX Mbeans에 대한 원격 액세스는 기본적으로 활성화되지 않습�
 
 **JVM 모니터링**
 
-Java 기반 애플리케이션 스택과 마찬가지로 AEM은 기본 Java 가상 시스템을 통해 제공된 리소스에 의존합니다. JVM에 의해 노출되는 플랫폼 MXBeans를 통해 이러한 리소스 중 많은 수의 상태를 모니터링할 수 있습니다. MXBeans에 대한 자세한 내용은 플랫폼 MBean 서버 [및 플랫폼 MXBeans 사용을 참조하십시오](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
+Java 기반 애플리케이션 스택과 마찬가지로 AEM은 기본 Java 가상 시스템을 통해 제공되는 리소스에 의존합니다. JVM에 의해 노출되는 플랫폼 MXBeans를 통해 이러한 리소스 중 많은 수의 상태를 모니터링할 수 있습니다. MXBeans에 대한 자세한 내용은 플랫폼 MBean 서버 [및 플랫폼 MXBeans 사용을 참조하십시오](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
 
 다음은 JVM용으로 모니터링할 수 있는 몇 가지 기준 매개변수입니다.
 
@@ -107,9 +107,9 @@ Java 기반 애플리케이션 스택과 마찬가지로 AEM은 기본 Java 가�
 
 **AEM 모니터링**
 
-또한 AEM은 JMX를 통해 통계 및 작업 세트를 표시합니다. 이러한 기능은 시스템 상태를 평가하고 사용자에게 영향을 주기 전에 잠재적인 문제를 식별하는 데 도움이 될 수 있습니다. 자세한 내용은 AEM JMX MBans [에 대한 설명서를](/help/sites-administering/jmx-console.md) 참조하십시오.
+AEM은 JMX를 통해 통계 및 작업 세트를 표시합니다. 이러한 기능은 시스템 상태를 평가하고 사용자에게 영향을 주기 전에 잠재적인 문제를 식별하는 데 도움이 될 수 있습니다. 자세한 내용은 AEM JMX MBans [의 설명서를](/help/sites-administering/jmx-console.md) 참조하십시오.
 
-다음은 AEM용으로 모니터링할 수 있는 몇 가지 기준 매개 변수입니다.
+다음은 AEM용으로 모니터링할 수 있는 몇 가지 기준선 매개 변수입니다.
 
 복제 에이전트
 
@@ -193,6 +193,6 @@ Java 기반 애플리케이션 스택과 마찬가지로 AEM은 기본 Java 가�
 * 인덱싱되지 않은 쿼리, 트리 탐색 또는 색인 탐색에 대한 참조가 있는지 로그를 확인합니다. 인덱싱되지 않은 쿼리 또는 인덱싱되지 않은 쿼리를 나타냅니다. 쿼리 및 색인 성능 최적화에 대한 우수 사례를 보려면 쿼리 및 색인 [에 대한 우수 사례를 참조하십시오](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * 워크플로우 콘솔을 사용하여 워크플로우가 예상대로 수행되는지 확인합니다. 가능한 경우 여러 워크플로우를 하나의 워크플로우로 통합합니다.
 * 실시간 모니터링을 다시 방문하여 특정 리소스에 대한 추가적인 병목 현상 또는 높은 소비자를 찾을 수 있습니다.
-* 클라이언트 네트워크에서 송신 지점을 조사하고 디스패처를 포함하여 AEM 인스턴스 네트워크의 수신 지점을 조사합니다. 주로 병목현상이 있는 영역입니다. 자세한 내용은 [자산 네트워크 고려 사항을 참조하십시오](assets-network-considerations.md).
-* AEM 서버를 업사이징합니다. AEM 인스턴스의 크기가 충분하지 않을 수 있습니다. Adobe 고객 지원 센터는 서버의 크기가 작은지 여부를 확인하는 데 도움이 됩니다.
+* 클라이언트 네트워크에서 송신 지점을 조사하고 디스패처를 포함하여 AEM 인스턴스 네트워크에 대한 수신 지점을 조사합니다. 주로 병목현상이 있는 영역입니다. 자세한 내용은 [자산 네트워크 고려 사항을 참조하십시오](assets-network-considerations.md).
+* AEM 서버 크기 업그레이드 AEM 인스턴스 크기가 맞지 않을 수 있습니다. Adobe 고객 지원 센터는 서버의 크기가 작은지 여부를 확인하는 데 도움이 됩니다.
 * 잘못된 시간 `access.log` 을 전후하여 파일과 파일을 `error.log` 검사합니다. 사용자 지정 코드 예외 항목을 나타낼 수 있는 패턴을 찾습니다. 모니터링한 이벤트 목록에 추가합니다.
