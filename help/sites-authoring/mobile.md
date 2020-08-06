@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 9554cdb3-b604-4d50-9760-89b9e7a7755f
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 89%
 
 ---
 
@@ -29,7 +32,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 다음 절차를 사용하여 모바일 페이지를 작성하십시오.
 
-1. From global navigation open the **Sites** console.
+1. 전역 탐색에서 **Sites** 콘솔을 엽니다.
 1. Open the page **We.Retail** -> **United States** -> **English**.
 
 1. Switch to **Preview** mode.
