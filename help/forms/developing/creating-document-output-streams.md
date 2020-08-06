@@ -31,7 +31,7 @@ ht-degree: 0%
 
 출력 서비스를 사용하면 XML 양식 데이터를 양식 디자인과 병합하고 문서를 네트워크 프린터 또는 파일로 출력할 수 있습니다.
 
-두 가지 방법으로 양식 디자인(XDP 파일)을 출력 서비스에 전달할 수 있습니다. 양식 디자인이 포함된 `com.adobe.idp.Document` 인스턴스를 출력 서비스로 전달할 수 있습니다. 또는 양식 디자인의 위치를 지정하는 URI 값을 전달할 수 있습니다. 두 방법 모두 AEM *양식과 프로그래밍*&#x200B;에서 설명합니다.
+두 가지 방법으로 양식 디자인(XDP 파일)을 출력 서비스에 전달할 수 있습니다. 양식 디자인이 포함된 `com.adobe.idp.Document` 인스턴스를 출력 서비스로 전달할 수 있습니다. 또는 양식 디자인의 위치를 지정하는 URI 값을 전달할 수 있습니다. 두 가지 방법 모두 AEM 양식을 사용한 *프로그래밍에 대해 설명합니다*.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ ht-degree: 0%
 * [Content Services에 있는 문서 전달(더 이상 사용되지 않음)](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)
 * [조각을 사용하여 PDF 문서 만들기](creating-document-output-streams.md#creating-pdf-documents-using-fragments)
 
-다른 AEM Forms 서비스에서 양식 디자인을 가져온 다음 인스턴스 내에 전달하면 사용할 기술을 결정할 때 고려해야 할 `com.adobe.idp.Document` 사항입니다. 문서를 출력 서비스에 *전달* 및 조각을 사용하여 PDF 문서 *만들기* 섹션은 모두 다른 AEM Forms 서비스에서 양식 디자인을 가져오는 방법을 보여줍니다. 첫 번째 섹션은 컨텐츠 서비스에서 양식 디자인을 검색합니다(더 이상 사용되지 않음). 두 번째 섹션은 어셈블러 서비스에서 양식 디자인을 검색합니다.
+어떤 기술을 사용할지 결정할 때 고려해야 할 점은 다른 AEM Forms 서비스에서 양식 디자인을 받은 다음 인스턴스 내에 전달하면 `com.adobe.idp.Document` 됩니다. 출력 서비스에 *문서 전달* 및 조각을 사용하여 PDF 문서 *만들기* 섹션은 모두 다른 AEM Forms 서비스에서 양식 디자인을 가져오는 방법을 보여줍니다. 첫 번째 섹션은 컨텐츠 서비스에서 양식 디자인을 검색합니다(더 이상 사용되지 않음). 두 번째 섹션은 어셈블러 서비스에서 양식 디자인을 검색합니다.
 
 파일 시스템과 같은 고정된 위치에서 양식 디자인을 가져오는 경우 두 가지 방법을 사용할 수 있습니다. 즉, XDP 파일에 URI 값을 지정하거나 인스턴스를 사용할 수 `com.adobe.idp.Document` 있습니다.
 
@@ -69,7 +69,7 @@ PDF 문서를 만들 때 양식 디자인의 위치를 지정하는 URI 값을 �
 
 >[!NOTE]
 >
->출력 서비스에 대한 자세한 내용은 AEM Forms [에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+>출력 서비스에 대한 자세한 내용은 AEM Forms에 대한 [서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## PDF 문서 작성 {#creating-pdf-documents}
 
@@ -77,11 +77,11 @@ PDF 문서를 만들 때 양식 디자인의 위치를 지정하는 URI 값을 �
 
 장기 보관을 위한 PDF 문서를 만들려면 PDF/A 문서를 만드는 것이 좋습니다. (PDF/ [A 문서 만들기를 참조하십시오](creating-document-output-streams.md#creating-pdf-a-documents).)
 
-사용자가 데이터를 입력할 수 있는 대화형 PDF 양식을 만들려면 Forms 서비스를 사용하십시오. (인터랙티브한 [PDF 양식 렌더링을 참조하십시오](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms).)
+사용자가 데이터를 입력할 수 있는 대화형 PDF 양식을 만들려면 Forms 서비스를 사용하십시오. (대화형 [PDF forms 렌더링을 참조하십시오](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms).)
 
 >[!NOTE]
 >
->출력 서비스에 대한 자세한 내용은 AEM Forms [에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+>출력 서비스에 대한 자세한 내용은 AEM Forms에 대한 [서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### 단계 요약 {#summary-of-steps}
 
@@ -104,10 +104,10 @@ PDF 문서를 만들려면 다음 단계를 수행하십시오.
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (AEM Forms가 JBoss에 배포된 경우 필수)
-* jbossall-client.jar(AEM Forms가 JBoss에 배포된 경우 필수)
+* adobe-utilities.jar (AEM Forms이 JBoss에 배포된 경우 필요)
+* jbossall-client.jar (AEM Forms이 JBoss에 배포된 경우 필수)
 
-AEM Forms가 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포된 경우, adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms가 배포된 J2EE 응용 프로그램 서버에 고유한 JAR 파일로 대체해야 합니다.
+AEM Forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포된 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에 고유한 JAR 파일로 대체해야 합니다.
 
 **출력 클라이언트 개체 만들기**
 
@@ -166,23 +166,23 @@ PDF 문서를 만들 때 파일 URI 옵션을 설정합니다. 이 옵션은 출
 
 PDF 문서를 만들 때 렌더링 런타임 옵션을 설정할 수 있습니다. 이러한 옵션은 필요하지 않지만(필요한 PDF 런타임 옵션과 달리) 출력 서비스의 성능을 향상시키는 등의 작업을 수행할 수 있습니다. 예를 들어 출력 서비스가 사용하는 양식 디자인을 캐시하여 성능을 향상시킬 수 있습니다.
 
-태그가 있는 Acrobat 양식을 입력으로 사용하는 경우 출력 서비스 Java 또는 웹 서비스 API를 사용하여 태그 지정된 설정을 끌 수 없습니다. 프로그래밍 방식으로 이 옵션을 로 설정하려고 하면 결과 PDF 문서 `false`에 태그가 지정됩니다.
+태그가 지정된 Acrobat 양식을 입력으로 사용하는 경우 출력 서비스 Java 또는 웹 서비스 API를 사용하여 태그 지정된 설정을 끌 수 없습니다. 프로그래밍 방식으로 이 옵션을 로 설정하려고 하면 결과 PDF 문서 `false`에 태그가 지정됩니다.
 
 >[!NOTE]
 >
->렌더링 런타임 옵션을 지정하지 않으면 기본값이 사용됩니다. 런타임 옵션 렌더링에 대한 자세한 내용은 `RenderOptionsSpec` 클래스 참조를 참조하십시오. (AEM [Forms API 참조 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)).
+>렌더링 런타임 옵션을 지정하지 않으면 기본값이 사용됩니다. 런타임 옵션 렌더링에 대한 자세한 내용은 `RenderOptionsSpec` 클래스 참조를 참조하십시오. ( [AEM Forms API 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)참조).
 
 **PDF 문서 생성**
 
 양식 데이터가 포함된 유효한 XML 데이터 소스를 참조하고 런타임 옵션을 설정한 후 출력 서비스를 호출하여 PDF 문서를 생성합니다.
 
-PDF 문서를 생성할 때 출력 서비스에서 PDF 문서를 만드는 데 필요한 URI 값을 지정합니다. 양식 디자인은 서버 파일 시스템과 같은 위치 또는 AEM Forms 애플리케이션의 일부로 저장할 수 있습니다. 양식 애플리케이션의 일부로 존재하는 양식 디자인(또는 이미지 파일과 같은 기타 리소스)은 컨텐츠 루트 URI 값을 사용하여 참조할 수 있습니다 `repository:///`. 예를 들어 Applications/FormsApplication이라는 Forms 응용 프로그램 내에 *있는 Loan.xdp* 라는 이름의 다음 양식 디자인을 *생각해 보십시오*.
+PDF 문서를 생성할 때 출력 서비스에서 PDF 문서를 만드는 데 필요한 URI 값을 지정합니다. 양식 디자인은 서버 파일 시스템과 같은 위치 또는 AEM Forms 애플리케이션의 일부로 저장할 수 있습니다. Forms 응용 프로그램의 일부로 존재하는 양식 디자인(또는 이미지 파일과 같은 기타 리소스)은 컨텐츠 루트 URI 값을 사용하여 참조할 수 있습니다 `repository:///`. 예를 들어 Applications/FormsApplication이라는 Forms 애플리케이션 내에 *있는 Loan.xdp* 라는 이름의 다음 양식 디자인을 *고려해 보십시오*.
 
 ![cp_formrepository](assets/cp_cp_formrepository.png)
 
 이전 그림에서 표시된 Loan.xdp 파일에 액세스하려면 개체 `repository:///Applications/FormsApplication/1.0/FormsFolder/` 의 메서드에 전달된 세 번째 매개 변수로 `OutputClient` 지정합니다 `generatePDFOutput` . 양식 이름(*Loan.xdp*)을 `OutputClient` 개체의 `generatePDFOutput` 메서드에 전달된 두 번째 매개 변수로 지정합니다.
 
-XDP 파일에 이미지(또는 조각 등 기타 리소스)가 포함되어 있는 경우 리소스를 XDP 파일과 동일한 애플리케이션 폴더에 넣습니다. AEM Forms에서는 컨텐츠 루트 URI를 기본 경로로 사용하여 이미지에 대한 참조를 확인합니다. 예를 들어 Loan.xdp 파일에 이미지가 포함되어 있는 경우 이미지를 원래 위치에 배치해야 합니다 `Applications/FormsApplication/1.0/FormsFolder/`.
+XDP 파일에 이미지(또는 조각 등 기타 리소스)가 포함되어 있는 경우 리소스를 XDP 파일과 동일한 애플리케이션 폴더에 넣습니다. AEM Forms은 컨텐츠 루트 URI를 기본 경로로 사용하여 이미지 참조를 확인합니다. 예를 들어 Loan.xdp 파일에 이미지가 포함되어 있는 경우 이미지를 원래 위치에 배치해야 합니다 `Applications/FormsApplication/1.0/FormsFolder/`.
 
 >[!NOTE]
 >
@@ -190,7 +190,7 @@ XDP 파일에 이미지(또는 조각 등 기타 리소스)가 포함되어 있�
 
 >[!NOTE]
 >
->양식 응용 프로그램에 있는 XDP를 참조하여 PDF 문서를 만드는 전체 빠른 시작을 보려면 [빠른 시작(EJB 모드)을 참조하십시오. Java API를 사용하여 응용 프로그램 XDP 파일을 기반으로 PDF 문서 만들기](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api)
+>Forms 응용 프로그램에 있는 XDP를 참조하여 PDF 문서를 만드는 전체 빠른 시작을 보려면 [빠른 시작(EJB 모드)을 참조하십시오. Java API를 사용하여 응용 프로그램 XDP 파일을 기반으로 PDF 문서 만들기](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api)
 
 **작업 결과 검색**
 
@@ -229,7 +229,7 @@ XDP 파일에 이미지(또는 조각 등 기타 리소스)가 포함되어 있�
 1. PDF 런타임 옵션을 설정합니다.
 
    * 생성자를 사용하여 `PDFOutputOptionsSpec` 개체를 만듭니다.
-   * 개체의 메서드를 호출하여 파일 URI 옵션 `PDFOutputOptionsSpec` 을 `setFileURI` 설정합니다. 출력 서비스가 생성하는 PDF 파일의 위치를 지정하는 문자열 값을 전달합니다. 파일 URI 옵션은 클라이언트 컴퓨터가 아닌 AEM Forms를 호스팅하는 J2EE 응용 프로그램 서버를 기준으로 합니다.
+   * 개체의 메서드를 호출하여 파일 URI 옵션 `PDFOutputOptionsSpec` 을 `setFileURI` 설정합니다. 출력 서비스가 생성하는 PDF 파일의 위치를 지정하는 문자열 값을 전달합니다. 파일 URI 옵션은 클라이언트 컴퓨터가 아닌 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버를 기준으로 합니다.
 
 1. 렌더링 런타임 옵션을 설정합니다.
 
@@ -238,7 +238,7 @@ XDP 파일에 이미지(또는 조각 등 기타 리소스)가 포함되어 있�
 
    >[!NOTE]
    >
-   >입력 문서가 Acrobat 양식(Acrobat에서 만든 양식) 또는 서명 또는 인증된 XFA 문서인 경우 `RenderOptionsSpec` 개체의 `setPdfVersion` 방법을 사용하여 PDF 문서 버전을 설정할 수 없습니다. 출력 PDF 문서는 원본 PDF 버전을 유지합니다. 마찬가지로 입력 문서가 Acrobat 양식 또는 서명된 XFA 문서인 경우 `RenderOptionsSpec` 개체의 `setTaggedPDF`* 메서드를 호출하여 태그 지정된 Adobe PDF 옵션을 설정할 수 없습니다. *
+   >입력 문서가 Acrobat 양식(Acrobat에서 만든 양식) 또는 서명되거나 인증된 XFA 문서인 경우 `RenderOptionsSpec` 개체의 `setPdfVersion` 방법을 사용하여 PDF 문서 버전을 설정할 수 없습니다. 출력 PDF 문서는 원본 PDF 버전을 유지합니다. 마찬가지로 입력 문서가 Acrobat 양식 또는 서명된 XFA 문서인 경우 `RenderOptionsSpec` 개체의 `setTaggedPDF`* 메서드를 호출하여 태그 지정된 Adobe PDF 옵션을 설정할 수 없습니다. *
 
    >[!NOTE]
    >
@@ -299,12 +299,12 @@ XDP 파일에 이미지(또는 조각 등 기타 리소스)가 포함되어 있�
 
    >[!NOTE]
    >
-   >AEM Forms를 호스팅하는 서버의 IP 주소 `localhost`*로 바꿉니다. *
+   >AEM Forms을 호스팅하는 서버의 IP 주소 `localhost`*로 바꿉니다. *
 
 1. 출력 클라이언트 개체를 만듭니다.
 
    * 기본 생성자를 사용하여 `OutputServiceClient` 개체를 만듭니다.
-   * 생성자를 사용하여 `OutputServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스(예: `http://localhost:8080/soap/services/OutputService?blob=mtom`.)로 전달합니다. 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다. 하지만 MTOM `?blob=mtom` 을 사용하도록 지정합니다.
+   * 생성자를 사용하여 `OutputServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/OutputService?blob=mtom`.) 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다. 하지만 MTOM `?blob=mtom` 을 사용하도록 지정합니다.
    * 필드의 값을 `System.ServiceModel.BasicHttpBinding` 가져와 개체를 `OutputServiceClient.Endpoint.Binding` 만듭니다. 반환 값을 다음으로 캐스팅합니다 `BasicHttpBinding`.
    * 개체 `System.ServiceModel.BasicHttpBinding` 필드를 (으)로 `MessageEncoding` 설정합니다 `WSMessageEncoding.Mtom`. 이 값을 사용하면 MTOM이 사용됩니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
@@ -325,7 +325,7 @@ XDP 파일에 이미지(또는 조각 등 기타 리소스)가 포함되어 있�
 1. PDF 런타임 옵션 설정
 
    * 생성자를 사용하여 `PDFOutputOptionsSpec` 개체를 만듭니다.
-   * 출력 서비스가 생성하는 PDF 파일의 위치를 개체의 데이터 멤버에 지정하는 문자열 값을 할당하여 파일 URI 옵션 `PDFOutputOptionsSpec` 을 `fileURI` 설정합니다. 파일 URI 옵션은 클라이언트 컴퓨터가 아닌 AEM Forms를 호스팅하는 J2EE 응용 프로그램 서버를 기준으로 합니다.
+   * 출력 서비스가 생성하는 PDF 파일의 위치를 개체의 데이터 멤버에 지정하는 문자열 값을 할당하여 파일 URI 옵션 `PDFOutputOptionsSpec` 을 `fileURI` 설정합니다. 파일 URI 옵션은 클라이언트 컴퓨터가 아닌 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버를 기준으로 합니다.
 
 1. 렌더링 런타임 옵션을 설정합니다.
 
@@ -334,7 +334,7 @@ XDP 파일에 이미지(또는 조각 등 기타 리소스)가 포함되어 있�
 
    >[!NOTE]
    >
-   >입력 문서가 Acrobat 양식(Acrobat에서 만든 양식) 또는 서명 또는 인증된 XFA 문서인 경우 `RenderOptionsSpec` 개체의 `setPdfVersion` 방법을 사용하여 PDF 문서 버전을 설정할 수 없습니다. 출력 PDF 문서는 원본 PDF 버전을 유지합니다. 마찬가지로 입력 문서가 Acrobat 양식 또는 서명된 XFA 문서 또는 인증된 XFA 문서인 경우 `RenderOptionsSpec` 개체의 `setTaggedPDF`* 방법을 호출하여 태그 지정된 Adobe PDF 옵션을 설정할 수 없습니다.*
+   >입력 문서가 Acrobat 양식(Acrobat에서 만든 양식) 또는 서명되거나 인증된 XFA 문서인 경우 `RenderOptionsSpec` 개체의 `setPdfVersion` 방법을 사용하여 PDF 문서 버전을 설정할 수 없습니다. 출력 PDF 문서는 원본 PDF 버전을 유지합니다. 마찬가지로 입력 문서가 Acrobat 양식 또는 서명되거나 인증된 XFA 문서인 경우 `RenderOptionsSpec` 개체의 `setTaggedPDF`* 메서드를 호출하여 태그 지정된 Adobe PDF 옵션을 설정할 수 없습니다.*
 
    >[!NOTE]
    >
@@ -393,7 +393,7 @@ PDF/A는 PDF 문서 보관을 위한 표준이지만 표준 PDF 문서가 회사
 
 PDF/A 문서는 양식 디자인에 지정된 글꼴을 사용해야 하며 글꼴을 대체할 수 없습니다. 따라서 PDF 문서 내에 있는 글꼴을 호스트 운영 체제(OS)에서 사용할 수 없는 경우 예외가 발생합니다.
 
-Acrobat에서 PDF/A 문서를 열면 다음 그림과 같이 문서가 PDF/A 문서임을 확인하는 메시지가 표시됩니다.
+PDF/A 문서가 Acrobat에서 열리면 다음 그림과 같이 문서가 PDF/A 문서임을 확인하는 메시지가 표시됩니다.
 
 ![cp_cp_pdfamessage](assets/cp_cp_pdfamessage.png)
 
@@ -403,7 +403,7 @@ Acrobat에서 PDF/A 문서를 열면 다음 그림과 같이 문서가 PDF/A 문
 
 >[!NOTE]
 >
->출력 서비스에 대한 자세한 내용은 AEM Forms [에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+>출력 서비스에 대한 자세한 내용은 AEM Forms에 대한 [서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### 단계 요약 {#summary_of_steps-1}
 
@@ -426,10 +426,10 @@ PDF/A 문서를 만들려면 다음 단계를 수행하십시오.
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (AEM Forms가 JBoss에 배포된 경우 필수)
-* jbossall-client.jar(AEM Forms가 JBoss에 배포된 경우 필수)
+* adobe-utilities.jar (AEM Forms이 JBoss에 배포된 경우 필요)
+* jbossall-client.jar (AEM Forms이 JBoss에 배포된 경우 필수)
 
-AEM Forms가 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포된 경우, adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms가 배포된 J2EE 응용 프로그램 서버에 고유한 JAR 파일로 대체해야 합니다.
+AEM Forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포된 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에 고유한 JAR 파일로 대체해야 합니다.
 
 **출력 클라이언트 개체 만들기**
 
@@ -441,7 +441,7 @@ AEM Forms가 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배
 
 **PDF/A 런타임 옵션 설정**
 
-PDF/A 문서를 만들 때 파일 URI 옵션을 설정할 수 있습니다. URI는 AEM Forms를 호스팅하는 J2EE 응용 프로그램 서버에 상대적입니다. 즉, C:\Adobe을 설정하면 파일이 클라이언트 컴퓨터가 아닌 서버의 폴더에 기록됩니다. URI는 출력 서비스가 생성하는 PDF/A 파일의 이름과 위치를 지정합니다.
+PDF/A 문서를 만들 때 파일 URI 옵션을 설정할 수 있습니다. URI는 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버에 상대적입니다. 즉, C:\Adobe을 설정하면 파일이 클라이언트 컴퓨터가 아닌 서버의 폴더에 기록됩니다. URI는 출력 서비스가 생성하는 PDF/A 파일의 이름과 위치를 지정합니다.
 
 **렌더링 런타임 옵션 설정**
 
@@ -451,7 +451,7 @@ PDF/A 문서를 만들 때 렌더링 런타임 옵션을 설정할 수 있습니
 
 >[!NOTE]
 >
->PDF/A 1A 문서를 만들 때는 태그가 지정된 Adobe PDF 옵션 `false` 을 설정할 수 없습니다. PDF/A 1A는 항상 태그가 지정된 PDF 문서입니다. 또한 PDF/A 1B 문서를 만들 때는 태그가 지정된 Adobe PDF 옵션 `true` 을 설정할 수 없습니다. PDF/A 1B는 항상 태그가 없는 PDF 문서입니다.
+>PDF/A 1A 문서를 만들 때는 태그가 지정된 Adobe PDF 옵션을 으로 설정할 수 `false` 없습니다. PDF/A 1A는 항상 태그가 지정된 PDF 문서입니다. 또한 PDF/A 1B 문서를 만들 때 태그가 지정된 Adobe PDF 옵션을 으로 설정할 수 `true` 없습니다. PDF/A 1B는 항상 태그가 없는 PDF 문서입니다.
 
 **PDF/A 문서 생성**
 
@@ -494,7 +494,7 @@ PDF/A 문서를 만들 때 렌더링 런타임 옵션을 설정할 수 있습니
 1. PDF/A 런타임 옵션을 설정합니다.
 
    * 생성자를 사용하여 `PDFOutputOptionsSpec` 개체를 만듭니다.
-   * 개체의 메서드를 호출하여 파일 URI 옵션 `PDFOutputOptionsSpec` 을 `setFileURI` 설정합니다. 출력 서비스가 생성하는 PDF 파일의 위치를 지정하는 문자열 값을 전달합니다. 파일 URI 옵션은 클라이언트 컴퓨터가 아닌 AEM Forms를 호스팅하는 J2EE 응용 프로그램 서버를 기준으로 합니다.
+   * 개체의 메서드를 호출하여 파일 URI 옵션 `PDFOutputOptionsSpec` 을 `setFileURI` 설정합니다. 출력 서비스가 생성하는 PDF 파일의 위치를 지정하는 문자열 값을 전달합니다. 파일 URI 옵션은 클라이언트 컴퓨터가 아닌 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버를 기준으로 합니다.
 
 1. 렌더링 런타임 옵션을 설정합니다.
 
@@ -557,12 +557,12 @@ PDF/A 문서를 만들 때 렌더링 런타임 옵션을 설정할 수 있습니
 
    >[!NOTE]
    >
-   >AEM Forms를 호스팅하는 서버의 IP 주소 `localhost`*로 바꿉니다. *
+   >AEM Forms을 호스팅하는 서버의 IP 주소 `localhost`*로 바꿉니다. *
 
 1. 출력 클라이언트 개체를 만듭니다.
 
    * 기본 생성자를 사용하여 `OutputServiceClient` 개체를 만듭니다.
-   * 생성자를 사용하여 `OutputServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스(예: `http://localhost:8080/soap/services/OutputService?blob=mtom`.)로 전달합니다. 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다. 하지만 MTOM `?blob=mtom` 을 사용하도록 지정합니다.
+   * 생성자를 사용하여 `OutputServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/OutputService?blob=mtom`.) 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다. 하지만 MTOM `?blob=mtom` 을 사용하도록 지정합니다.
    * 필드의 값을 `System.ServiceModel.BasicHttpBinding` 가져와 개체를 `OutputServiceClient.Endpoint.Binding` 만듭니다. 반환 값을 다음으로 캐스팅합니다 `BasicHttpBinding`.
    * 개체 `System.ServiceModel.BasicHttpBinding` 필드를 (으)로 `MessageEncoding` 설정합니다 `WSMessageEncoding.Mtom`. 이 값을 사용하면 MTOM이 사용됩니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
@@ -583,7 +583,7 @@ PDF/A 문서를 만들 때 렌더링 런타임 옵션을 설정할 수 있습니
 1. PDF/A 런타임 옵션을 설정합니다.
 
    * 생성자를 사용하여 `PDFOutputOptionsSpec` 개체를 만듭니다.
-   * 출력 서비스가 생성하는 PDF 파일의 위치를 개체의 데이터 멤버에 지정하는 문자열 값을 할당하여 파일 URI 옵션 `PDFOutputOptionsSpec` 을 `fileURI` 설정합니다. 파일 URI 옵션은 클라이언트 컴퓨터가 아닌 AEM Forms를 호스팅하는 J2EE 응용 프로그램 서버를 기준으로 합니다
+   * 출력 서비스가 생성하는 PDF 파일의 위치를 개체의 데이터 멤버에 지정하는 문자열 값을 할당하여 파일 URI 옵션 `PDFOutputOptionsSpec` 을 `fileURI` 설정합니다. 파일 URI 옵션은 클라이언트 컴퓨터가 아닌 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버를 기준으로 합니다
 
 1. 렌더링 런타임 옵션을 설정합니다.
 
@@ -638,7 +638,7 @@ Content Services에서 Loan.xdp를 프로그래밍 방식으로 검색하고(더
 
 >[!NOTE]
 >
->양식 서비스에 대한 자세한 내용은 AEM Forms [에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+>Forms 서비스에 대한 자세한 내용은 AEM Forms에 대한 [서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### 단계 요약 {#summary_of_steps-2}
 
@@ -757,7 +757,7 @@ Java 또는 웹 서비스 API를 사용하여 콘텐츠 서비스에서 XDP 파�
 
    >[!NOTE]
    >
-   >AEM Forms를 호스팅하는 서버의 IP 주소 `localhost`*로 바꿉니다. *
+   >AEM Forms을 호스팅하는 서버의 IP 주소 `localhost`*로 바꿉니다. *
 
 1. 출력 및 문서 관리 클라이언트 API 객체를 만듭니다.
 
@@ -820,7 +820,7 @@ Java 또는 웹 서비스 API를 사용하여 콘텐츠 서비스에서 XDP 파�
 
 출력 서비스는 일반적으로 XDP 파일로 저장되고 Designer에서 작성된 양식 디자인을 기반으로 하는 비대화형 PDF 양식을 렌더링합니다. 양식 디자인이 포함된 `com.adobe.idp.Document` 개체를 출력 서비스로 전달할 수 있습니다. 그런 다음 출력 서비스는 `com.adobe.idp.Document` 개체에 있는 양식 디자인을 렌더링합니다.
 
-다른 AEM Forms 서비스 작업에서 인스턴스 `com.adobe.idp.Document` 를 반환하면 개체를 출력 서비스에 전달할 수 있는 이점이 `com.adobe.idp.Document` 있습니다. 즉, 다른 서비스 작업에서 `com.adobe.idp.Document` 인스턴스를 가져와 렌더링할 수 있습니다. 예를 들어 다음 그림과 같이 XDP 파일이 AEM Forms 리포지토리에 저장되어 있다고 가정합니다.
+다른 AEM Forms 서비스 작업에서 인스턴스 `com.adobe.idp.Document` 를 반환하면 개체를 출력 서비스에 전달할 수 있는 이점이 `com.adobe.idp.Document` 있습니다. 즉, 다른 서비스 작업에서 `com.adobe.idp.Document` 인스턴스를 가져와 렌더링할 수 있습니다. 예를 들어 다음 그림과 같이 XDP 파일이 AEM Forms 저장소에 저장된다고 가정합니다.
 
 ![pd_pd_formrepository](assets/pd_pd_formrepository.png)
 
@@ -828,17 +828,17 @@ FormsFolder ** 폴더는 AEM Forms 저장소의 사용자 정의 위치입니다
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
-프로그래밍 방식으로 AEM Forms 리포지토리에서 Loan.xdp를 검색하고 객체 내의 출력 서비스에 전달할 수 `com.adobe.idp.Document` 있습니다.
+프로그래밍 방식으로 AEM Forms 저장소에서 Loan.xdp를 검색하고 객체 내의 출력 서비스에 전달할 수 `com.adobe.idp.Document` 있습니다.
 
 두 가지 방법 중 하나를 사용하여 저장소에 있는 XDP 파일을 기반으로 PDF를 만들 수 있습니다. XDP 위치를 참조로 전달하거나 저장소에서 XDP를 프로그래밍 방식으로 검색하여 XDP 파일 내의 출력 서비스로 전달할 수 있습니다.
 
 [빠른 시작(EJB 모드): Java API를 사용하여 응용 프로그램 XDP 파일을 기반으로 PDF](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api) 문서 만들기(XDP 파일의 위치를 참조로 전달하는 방법 표시)
 
-[빠른 시작(EJB 모드): AEM Forms 리포지토리에 있는 문서를 Java API를 사용하여 출력 서비스로](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) 전달(AEM Forms 저장소에서 XDP 파일을 프로그래밍 방식으로 검색하고 인스턴스 내에서 출력 서비스에 전달하는 방법 `com.adobe.idp.Document` )합니다. (이 섹션에서는 이 작업을 수행하는 방법에 대해 설명합니다.)
+[빠른 시작(EJB 모드): Java API를 사용하여 AEM Forms 저장소에 있는 문서를 출력 서비스로](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) 전달합니다(AEM Forms 저장소에서 XDP 파일을 프로그래밍 방식으로 검색하고 인스턴스 내에서 출력 서비스에 전달하는 방법 `com.adobe.idp.Document` 표시). (이 섹션에서는 이 작업을 수행하는 방법에 대해 설명합니다.)
 
 >[!NOTE]
 >
->양식 서비스에 대한 자세한 내용은 AEM Forms [에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+>Forms 서비스에 대한 자세한 내용은 AEM Forms에 대한 [서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### 단계 요약 {#summary_of_steps-3}
 
@@ -866,7 +866,7 @@ XDP 파일은 인스턴스(또는 웹 서비스를 사용하는 경우 `com.adob
 
 **비대화형 PDF 양식 렌더링**
 
-비대화형 양식을 렌더링하려면 AEM Forms 리포지토리 API를 사용하여 반환된 `com.adobe.idp.Document` 인스턴스를 전달합니다.
+비대화형 양식을 렌더링하려면 AEM Forms 저장소 API를 사용하여 반환된 `com.adobe.idp.Document` 인스턴스를 전달합니다.
 
 >[!NOTE]
 >
@@ -929,7 +929,7 @@ ResourceRepositoryClient
 
 [단계 요약](creating-document-output-streams.md#summary-of-steps)
 
-[빠른 시작(EJB 모드): AEM Forms 저장소에 있는 문서를 Java API를 사용하여 출력 서비스로 전달](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
+[빠른 시작(EJB 모드): Java API를 사용하여 AEM Forms 저장소에 있는 문서를 출력 서비스로 전달](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -947,11 +947,11 @@ ResourceRepositoryClient
 
 >[!NOTE]
 >
->또한 어셈블러 서비스에서 어셈블하는 양식 디자인을 출력 서비스 대신 양식 서비스로 전달할 수 있습니다. Output service와 Forms 서비스의 주요 차이점은 Forms 서비스가 대화형 PDF 문서를 생성하고 출력 서비스에서 비대화형 PDF 문서를 생성한다는 것입니다. 또한 양식 서비스는 ZPL과 같은 프린터 기반 출력 스트림을 생성할 수 없습니다.
+>또한 어셈블러 서비스에 의해 어셈블된 양식 디자인을 출력 서비스 대신 Forms 서비스로 전달할 수 있습니다. 출력 서비스와 Forms 서비스의 주요 차이점은 Forms 서비스가 대화형 PDF 문서를 생성하고 출력 서비스는 비대화형 PDF 문서를 생성한다는 것입니다. 또한 Forms 서비스는 ZPL과 같은 프린터 기반 출력 스트림을 생성할 수 없습니다.
 
 >[!NOTE]
 >
->출력 서비스에 대한 자세한 내용은 AEM Forms [에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+>출력 서비스에 대한 자세한 내용은 AEM Forms에 대한 [서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### 단계 요약 {#summary_of_steps-4}
 
@@ -1081,17 +1081,17 @@ ResourceRepositoryClient
 
    >[!NOTE]
    >
-   >AEM Forms를 호스팅하는 서버의 IP 주소 `localhost`*로 바꿉니다. *
+   >AEM Forms을 호스팅하는 서버의 IP 주소 `localhost`*로 바꿉니다. *
 
 1. 출력 및 어셈블러 클라이언트 개체를 만듭니다.
 
    * 기본 생성자를 사용하여 `OutputServiceClient` 개체를 만듭니다.
-   * 생성자를 사용하여 `OutputServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스(예: `http://localhost:8080/soap/services/OutputService?blob=mtom`.)로 전달합니다. 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다. 하지만 MTOM `?blob=mtom` 을 사용하도록 지정합니다.
+   * 생성자를 사용하여 `OutputServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/OutputService?blob=mtom`.) 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다. 하지만 MTOM `?blob=mtom` 을 사용하도록 지정합니다.
    * 필드의 값을 `System.ServiceModel.BasicHttpBinding` 가져와 개체를 `OutputServiceClient.Endpoint.Binding` 만듭니다. 반환 값을 다음으로 캐스팅합니다 `BasicHttpBinding`.
    * 개체 `System.ServiceModel.BasicHttpBinding` 필드를 (으)로 `MessageEncoding` 설정합니다 `WSMessageEncoding.Mtom`. 이 값을 사용하면 MTOM이 사용됩니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * AEM Forms 사용자 이름을 `OutputServiceClient.ClientCredentials.UserName.UserName`필드에 지정합니다.
+      * AEM 양식 사용자 이름을 `OutputServiceClient.ClientCredentials.UserName.UserName`필드에 지정합니다.
       * 해당 암호 값을 `OutputServiceClient.ClientCredentials.UserName.Password`필드에 지정합니다.
       * 상수 값 `HttpClientCredentialType.Basic` 을 `BasicHttpBindingSecurity.Transport.ClientCredentialType`필드에 지정합니다.
    * `BasicHttpSecurityMode.TransportCredentialOnly` 필드에 `BasicHttpBindingSecurity.Security.Mode`상수 값을 지정합니다.
@@ -1159,7 +1159,7 @@ ResourceRepositoryClient
 
 >[!NOTE]
 >
->출력 서비스에 대한 자세한 내용은 AEM Forms [에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+>출력 서비스에 대한 자세한 내용은 AEM Forms에 대한 [서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### 단계 요약 {#summary_of_steps-5}
 
@@ -1181,10 +1181,10 @@ ResourceRepositoryClient
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (AEM Forms가 JBoss에 배포된 경우 필요)
-* jbossall-client.jar(JBoss에 AEM Forms가 배포된 경우 필요)
+* adobe-utilities.jar (AEM Forms이 JBoss에 배포된 경우 필요)
+* jbossall-client.jar(AEM Forms이 JBoss에 배포된 경우 필요)
 
-AEM Forms가 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포된 경우, adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms가 배포된 J2EE 응용 프로그램 서버에 고유한 JAR 파일로 대체해야 합니다. (AEM [Forms Java 라이브러리 파일 포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).)
+AEM Forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포된 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에 고유한 JAR 파일로 대체해야 합니다. (AEM Forms [Java 라이브러리 파일 포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).)
 
 **출력 클라이언트 개체 만들기**
 
@@ -1200,7 +1200,7 @@ AEM Forms가 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배
 
 >[!NOTE]
 >
->정의할 수 있는 선택적 런타임 옵션이 있습니다. 설정할 수 있는 모든 옵션에 대한 자세한 내용은 AEM Forms API 참조 `PrintedOutputOptionsSpec` 의 [클래스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>정의할 수 있는 선택적 런타임 옵션이 있습니다. 설정할 수 있는 모든 옵션에 대한 자세한 내용은 `PrintedOutputOptionsSpec` AEM Forms API 참조에서 [클래스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **인쇄 스트림을 파일로 인쇄**
 
@@ -1289,12 +1289,12 @@ AEM Forms가 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배
 
    >[!NOTE]
    >
-   >AEM Forms를 호스팅하는 서버의 IP 주소 `localhost`*로 바꿉니다. *
+   >AEM Forms을 호스팅하는 서버의 IP 주소 `localhost`*로 바꿉니다. *
 
 1. 출력 클라이언트 개체를 만듭니다.
 
    * 기본 생성자를 사용하여 `OutputServiceClient` 개체를 만듭니다.
-   * 생성자를 사용하여 `OutputServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스(예: `http://localhost:8080/soap/services/OutputService?blob=mtom`.)로 전달합니다. 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다. 하지만 MTOM `?blob=mtom` 을 사용하도록 지정합니다.
+   * 생성자를 사용하여 `OutputServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/OutputService?blob=mtom`.) 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다. 하지만 MTOM `?blob=mtom` 을 사용하도록 지정합니다.
    * 필드의 값을 `System.ServiceModel.BasicHttpBinding` 가져와 개체를 `OutputServiceClient.Endpoint.Binding` 만듭니다. 반환 값을 다음으로 캐스팅합니다 `BasicHttpBinding`.
    * 개체 `System.ServiceModel.BasicHttpBinding` 필드를 (으)로 `MessageEncoding` 설정합니다 `WSMessageEncoding.Mtom`. 이 값을 사용하면 MTOM이 사용됩니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
@@ -1364,7 +1364,7 @@ AEM Forms가 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배
 
 >[!NOTE]
 >
->출력 서비스에 대한 자세한 내용은 AEM Forms [에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+>출력 서비스에 대한 자세한 내용은 AEM Forms에 대한 [서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### 단계 요약 {#summary_of_steps-6}
 
@@ -1386,10 +1386,10 @@ AEM Forms가 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (AEM Forms가 JBoss에 배포된 경우 필수)
-* jbossall-client.jar(AEM Forms가 JBoss에 배포된 경우 필수)
+* adobe-utilities.jar (AEM Forms이 JBoss에 배포된 경우 필요)
+* jbossall-client.jar (AEM Forms이 JBoss에 배포된 경우 필수)
 
-AEM Forms가 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포된 경우, adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms가 배포된 J2EE 응용 프로그램 서버에 고유한 JAR 파일로 대체해야 합니다.
+AEM Forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포된 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에 고유한 JAR 파일로 대체해야 합니다.
 
 **출력 클라이언트 개체 만들기**
 
@@ -1416,7 +1416,7 @@ AEM Forms가 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배
 
 인쇄 스트림을 검색하여 프린터로 보냅니다. 예를 들어 PostScript 파일을 검색하여 프린터로 전송할 수 있습니다.
 
-프린터가 PDF를 지원하는 경우 PDF 파일을 보내도록 선택할 수 있습니다. 그러나 PDF 문서를 프린터로 보내는 데 문제가 있는 경우 각 프린터 제조업체는 PDF 인터프리터를 다르게 구현했습니다. 즉, 일부 인쇄 제조업체는 Adobe PDF 해석을 사용하지만 프린터에 따라 다릅니다. 다른 프린터에는 자체 PDF 인터프리터가 있습니다. 따라서 인쇄 결과는 다를 수 있습니다.
+프린터가 PDF를 지원하는 경우 PDF 파일을 보내도록 선택할 수 있습니다. 그러나 PDF 문서를 프린터로 보내는 데 문제가 있는 경우 각 프린터 제조업체는 PDF 인터프리터를 다르게 구현했습니다. 즉, 일부 인쇄 제조업체들은 Adobe PDF 해석을 사용하지만 프린터에 따라 다릅니다. 다른 프린터에는 자체 PDF 인터프리터가 있습니다. 따라서 인쇄 결과는 다를 수 있습니다.
 
 PDF 문서를 프린터로 전송할 때의 또 다른 제한 사항은 인쇄용이라는 것입니다. 프린터의 설정을 제외한 이중, 용지 트레이 선택 및 스테이플에 액세스할 수 없습니다.
 
@@ -1564,7 +1564,7 @@ PDF 문서를 프린터로 전송할 때의 또 다른 제한 사항은 인쇄�
 
    >[!NOTE]
    >
-   >이 `sendToPrinter` 방법이 버전 8.2.1에서 AEM Forms API에 추가되었습니다.
+   >이 `sendToPrinter` 방법은 버전 8.2.1에서 AEM Forms API에 추가되었습니다.
 
 ### 웹 서비스 API를 사용하여 인쇄 스트림을 프린터로 보내기 {#send-a-print-stream-to-a-printer-using-the-web-service-api}
 
@@ -1576,12 +1576,12 @@ PDF 문서를 프린터로 전송할 때의 또 다른 제한 사항은 인쇄�
 
    >[!NOTE]
    >
-   >AEM Forms를 호스팅하는 서버의 IP 주소 `localhost`*로 바꿉니다. *
+   >AEM Forms을 호스팅하는 서버의 IP 주소 `localhost`*로 바꿉니다. *
 
 1. 출력 클라이언트 개체를 만듭니다.
 
    * 기본 생성자를 사용하여 `OutputServiceClient` 개체를 만듭니다.
-   * 생성자를 사용하여 `OutputServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스(예: `http://localhost:8080/soap/services/OutputService?blob=mtom`.)로 전달합니다. 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다. 하지만 MTOM `?blob=mtom` 을 사용하도록 지정합니다.
+   * 생성자를 사용하여 `OutputServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/OutputService?blob=mtom`.) 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다. 하지만 MTOM `?blob=mtom` 을 사용하도록 지정합니다.
    * 필드의 값을 `System.ServiceModel.BasicHttpBinding` 가져와 개체를 `OutputServiceClient.Endpoint.Binding` 만듭니다. 반환 값을 다음으로 캐스팅합니다 `BasicHttpBinding`.
    * 개체 `System.ServiceModel.BasicHttpBinding` 필드를 (으)로 `MessageEncoding` 설정합니다 `WSMessageEncoding.Mtom`. 이 값을 사용하면 MTOM이 사용됩니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
@@ -1635,7 +1635,7 @@ PDF 문서를 프린터로 전송할 때의 또 다른 제한 사항은 인쇄�
 
    >[!NOTE]
    >
-   >이 `sendToPrinter` 방법이 버전 8.2.1에서 AEM Forms API에 추가되었습니다.
+   >이 `sendToPrinter` 방법은 버전 8.2.1에서 AEM Forms API에 추가되었습니다.
 
 ## 여러 출력 파일 만들기 {#creating-multiple-output-files}
 
@@ -1704,7 +1704,7 @@ PDF 문서를 프린터로 전송할 때의 또 다른 제한 사항은 인쇄�
 
 >[!NOTE]
 >
->출력 서비스에 대한 자세한 내용은 AEM Forms [에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+>출력 서비스에 대한 자세한 내용은 AEM Forms에 대한 [서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### 단계 요약 {#summary_of_steps-7}
 
@@ -1727,10 +1727,10 @@ XML 데이터 소스를 기반으로 여러 PDF 파일을 만들려면 다음 �
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (AEM Forms가 JBoss에 배포된 경우 필요)
-* jbossall-client.jar(JBoss에 AEM Forms가 배포된 경우 필요)
+* adobe-utilities.jar (AEM Forms이 JBoss에 배포된 경우 필요)
+* jbossall-client.jar(AEM Forms이 JBoss에 배포된 경우 필요)
 
-AEM Forms가 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포된 경우, adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms가 배포된 J2EE 응용 프로그램 서버에 고유한 JAR 파일로 대체해야 합니다.
+AEM Forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포된 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에 고유한 JAR 파일로 대체해야 합니다.
 
 **출력 클라이언트 개체 만들기**
 
@@ -1825,7 +1825,7 @@ XML 데이터 소스를 기반으로 여러 파일을 성공적으로 만들려�
 
    * 생성자를 사용하여 `PDFOutputOptionsSpec` 개체를 만듭니다.
    * 개체의 메서드를 호출하여 [여러 파일] 옵션 `PDFOutputOptionsSpec` 을 `setGenerateManyFiles` 설정합니다. 예를 들어 값을 전달하여 출력 서비스 `true` 에서 XML 데이터 소스의 각 레코드에 대해 별도의 PDF 파일을 생성하도록 합니다. (전달하면 출력 서비스 `false`에서 모든 레코드가 포함된 단일 PDF 문서를 생성합니다.)
-   * 개체의 메서드를 호출하고 출력 서비스가 생성하는 파일의 위치를 지정하는 문자열 값을 전달하여 파일 URI 옵션 `PDFOutputOptionsSpec` `setFileUri` 을 설정합니다. 파일 URI 옵션은 클라이언트 컴퓨터가 아닌 AEM Forms를 호스팅하는 J2EE 응용 프로그램 서버를 기준으로 합니다.
+   * 개체의 메서드를 호출하고 출력 서비스가 생성하는 파일의 위치를 지정하는 문자열 값을 전달하여 파일 URI 옵션 `PDFOutputOptionsSpec` `setFileUri` 을 설정합니다. 파일 URI 옵션은 클라이언트 컴퓨터가 아닌 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버를 기준으로 합니다.
    * 개체의 메서드를 호출하고 데이터 레코드를 구분하는 데이터 소스에서 XML 요소 이름을 지정하는 문자열 값을 전달하여 [ `OutputOptionsSpec` `setRecordName` 레코드 이름] 옵션을 설정합니다. 예를 들어 이 섹션 앞에 나와 있는 XML 데이터 소스를 고려해 보십시오. 데이터 레코드를 구분하는 XML 요소의 이름은 LoanRecord)입니다.
 
 1. 렌더링 런타임 옵션 설정
@@ -1876,7 +1876,7 @@ XML 데이터 소스를 기반으로 여러 파일을 성공적으로 만들려�
 1. 출력 클라이언트 개체를 만듭니다.
 
    * 기본 생성자를 사용하여 `OutputServiceClient` 개체를 만듭니다.
-   * 생성자를 사용하여 `OutputServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스(예: `http://localhost:8080/soap/services/OutputService?blob=mtom`.)로 전달합니다. 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다. 하지만 MTOM `?blob=mtom` 을 사용하도록 지정합니다.
+   * 생성자를 사용하여 `OutputServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/OutputService?blob=mtom`.) 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다. 하지만 MTOM `?blob=mtom` 을 사용하도록 지정합니다.
    * 필드의 값을 `System.ServiceModel.BasicHttpBinding` 가져와 개체를 `OutputServiceClient.Endpoint.Binding` 만듭니다. 반환 값을 다음으로 캐스팅합니다 `BasicHttpBinding`.
    * 개체 `System.ServiceModel.BasicHttpBinding` 필드를 (으)로 `MessageEncoding` 설정합니다 `WSMessageEncoding.Mtom`. 이 값을 사용하면 MTOM이 사용됩니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
@@ -1898,7 +1898,7 @@ XML 데이터 소스를 기반으로 여러 파일을 성공적으로 만들려�
 
    * 생성자를 사용하여 `PDFOutputOptionsSpec` 개체를 만듭니다.
    * 개체의 데이터 멤버에 부울 값을 할당하여 [여러 파일] 옵션 `OutputOptionsSpec` 을 `generateManyFiles` 설정합니다. 예를 들어, 이 데이터 멤버 `true` 에 값을 할당하여 출력 서비스가 XML 데이터 소스의 각 레코드에 대해 별도의 PDF 파일을 만들도록 지시합니다. 이 데이터 멤버 `false` 에 할당하는 경우 출력 서비스는 모든 레코드가 포함된 단일 PDF를 생성합니다.
-   * 출력 서비스가 생성하는 파일의 위치를 `OutputOptionsSpec` 개체의 데이터 멤버에 지정하는 문자열 값을 할당하여 파일 URI 옵션을 `fileURI` 설정합니다. 파일 URI 옵션은 클라이언트 컴퓨터가 아닌 AEM Forms를 호스팅하는 J2EE 응용 프로그램 서버를 기준으로 합니다.
+   * 출력 서비스가 생성하는 파일의 위치를 `OutputOptionsSpec` 개체의 데이터 멤버에 지정하는 문자열 값을 할당하여 파일 URI 옵션을 `fileURI` 설정합니다. 파일 URI 옵션은 클라이언트 컴퓨터가 아닌 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버를 기준으로 합니다.
    * 데이터 레코드를 `OutputOptionsSpec` 개체의 데이터 `recordName` 멤버에 분리하는 데이터 소스에서 XML 요소 이름을 지정하는 문자열 값을 지정하여 레코드 이름 옵션을 설정합니다.
    * 출력 서비스가 객체의 데이터 멤버에 생성하는 복사본 수를 지정하는 정수 값을 할당하여 `OutputOptionsSpec` 복사 옵션을 `copies` 설정합니다.
 
@@ -1946,7 +1946,7 @@ XML 데이터 소스를 기반으로 여러 파일을 성공적으로 만들려�
 
 >[!NOTE]
 >
->출력 서비스에 대한 자세한 내용은 AEM Forms [에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+>출력 서비스에 대한 자세한 내용은 AEM Forms에 대한 [서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### 단계 요약 {#summary_of_steps-8}
 
@@ -1970,10 +1970,10 @@ XML 데이터 소스를 기반으로 여러 파일을 성공적으로 만들려�
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (AEM Forms가 JBoss에 배포된 경우 필수)
-* jbossall-client.jar(AEM Forms가 JBoss에 배포된 경우 필수)
+* adobe-utilities.jar (AEM Forms이 JBoss에 배포된 경우 필요)
+* jbossall-client.jar (AEM Forms이 JBoss에 배포된 경우 필수)
 
-AEM Forms가 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포된 경우, adobe-utilities.jar 및 jbossall-client.jar를 AEM Forms가 배포된 J2EE 응용 프로그램 서버에 고유한 JAR 파일로 대체해야 합니다.
+AEM Forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포된 경우 adobe-utilities.jar 및 jbossall-client.jar를 AEM Forms이 배포된 J2EE 응용 프로그램 서버에 고유한 JAR 파일로 대체해야 합니다.
 
 **출력 클라이언트 개체 만들기**
 
@@ -2054,7 +2054,7 @@ PDF 파일을 만드는 동안 렌더링 런타임 옵션을 설정할 수 있�
 1. PDF 런타임 옵션을 설정합니다.
 
    * 생성자를 사용하여 `PDFOutputOptionsSpec` 개체를 만듭니다.
-   * 출력 서비스가 객체의 메서드를 호출하여 생성하는 PDF 파일의 이름과 위치를 `PDFOutputOptionsSpec` `setFileURI` 지정합니다. PDF 파일의 위치를 지정하는 문자열 값을 전달합니다. 파일 URI 옵션은 클라이언트 컴퓨터가 아닌 AEM Forms를 호스팅하는 J2EE 응용 프로그램 서버를 기준으로 합니다.
+   * 출력 서비스가 객체의 메서드를 호출하여 생성하는 PDF 파일의 이름과 위치를 `PDFOutputOptionsSpec` `setFileURI` 지정합니다. PDF 파일의 위치를 지정하는 문자열 값을 전달합니다. 파일 URI 옵션은 클라이언트 컴퓨터가 아닌 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버를 기준으로 합니다.
    * 개체의 메서드를 호출하여 정의한 규칙을 `PDFOutputOptionsSpec` `setRules` 설정합니다. 개체가 `java.util.List` 포함된 개체를 `Rule` 전달합니다.
    * 개체의 메서드를 호출하여 정의된 텍스트 패턴을 검색할 바이트 수를 `PDFOutputOptionsSpec` `setLookAhead` 설정합니다. 바이트 수를 나타내는 정수 값을 전달합니다.
 
@@ -2109,7 +2109,7 @@ PDF 파일을 만드는 동안 렌더링 런타임 옵션을 설정할 수 있�
 1. 출력 클라이언트 개체를 만듭니다.
 
    * 기본 생성자를 사용하여 `OutputServiceClient` 개체를 만듭니다.
-   * 생성자를 사용하여 `OutputServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스(예: `http://localhost:8080/soap/services/OutputService?blob=mtom`.)로 전달합니다. 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다. 하지만 MTOM `?blob=mtom` 을 사용하도록 지정합니다.
+   * 생성자를 사용하여 `OutputServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/OutputService?blob=mtom`.) 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다. 하지만 MTOM `?blob=mtom` 을 사용하도록 지정합니다.
    * 필드의 값을 `System.ServiceModel.BasicHttpBinding` 가져와 개체를 `OutputServiceClient.Endpoint.Binding` 만듭니다. 반환 값을 다음으로 캐스팅합니다 `BasicHttpBinding`.
    * 개체 `System.ServiceModel.BasicHttpBinding` 필드를 (으)로 `MessageEncoding` 설정합니다 `WSMessageEncoding.Mtom`. 이 값을 사용하면 MTOM이 사용됩니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
@@ -2144,7 +2144,7 @@ PDF 파일을 만드는 동안 렌더링 런타임 옵션을 설정할 수 있�
 1. PDF 런타임 옵션 설정
 
    * 생성자를 사용하여 `PDFOutputOptionsSpec` 개체를 만듭니다.
-   * 출력 서비스가 생성하는 PDF 파일의 위치를 개체의 데이터 멤버에 지정하는 문자열 값을 지정하여 파일 URI 옵션을 `PDFOutputOptionsSpec` 설정합니다 `fileURI` . 파일 URI 옵션은 클라이언트 컴퓨터가 아닌 AEM Forms를 호스팅하는 J2EE 응용 프로그램 서버를 기준으로 합니다.
+   * 출력 서비스가 생성하는 PDF 파일의 위치를 개체의 데이터 멤버에 지정하는 문자열 값을 지정하여 파일 URI 옵션을 `PDFOutputOptionsSpec` 설정합니다 `fileURI` . 파일 URI 옵션은 클라이언트 컴퓨터가 아닌 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버를 기준으로 합니다.
    * 출력 서비스가 객체의 데이터 멤버에 생성하는 복사본 수를 지정하는 정수 값을 할당하여 `PDFOutputOptionsSpec` 복사 옵션을 `copies` 설정합니다.
    * 규칙을 저장하는 `MyArrayOf_xsd_anyType` 객체를 `PDFOutputOptionsSpec` 객체의 데이터 멤버에 할당하여 정의한 규칙을 `rules` 설정합니다.
    * 개체의 데이터 메서드에 검색할 바이트 수를 나타내는 정수 값을 할당하여 정의된 텍스트 패턴을 검색할 바이트 수를 `PDFOutputOptionsSpec` 설정합니다 `lookAhead` .
@@ -2156,7 +2156,7 @@ PDF 파일을 만드는 동안 렌더링 런타임 옵션을 설정할 수 있�
 
    >[!NOTE]
    >
-   >입력 문서가 Acrobat 양식인 경우 `RenderOptionsSpec` 개체의 `pdfVersion` 구성원을 사용하여 PDF 문서 버전을 설정할 수 없습니다. 출력 PDF 문서는 Acrobat 양식의 PDF 버전을 유지합니다. 마찬가지로 입력 문서가 Acrobat 양식인 경우 `RenderOptionsSpec` 개체의 `taggedPDF` 방법을 사용하여 태그 지정된 PDF 옵션을 설정할 수 없습니다.
+   >입력 문서가 Acrobat 양식인 경우 `RenderOptionsSpec` 개체의 `pdfVersion` 구성원을 사용하여 PDF 문서 버전을 설정할 수 없습니다. 출력 PDF 문서는 Acrobat 양식의 PDF 버전을 유지합니다. 마찬가지로, 입력 문서가 Acrobat 양식인 경우 `RenderOptionsSpec` 개체의 `taggedPDF` 방법을 사용하여 태그 지정된 PDF 옵션을 설정할 수 없습니다.
 
    >[!NOTE]
    >
@@ -2208,7 +2208,7 @@ PDF 파일을 만드는 동안 렌더링 런타임 옵션을 설정할 수 있�
 
 >[!NOTE]
 >
->출력 서비스에 대한 자세한 내용은 AEM Forms [에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+>출력 서비스에 대한 자세한 내용은 AEM Forms에 대한 [서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### 단계 요약 {#summary_of_steps-9}
 
@@ -2229,10 +2229,10 @@ PDF 파일을 만드는 동안 렌더링 런타임 옵션을 설정할 수 있�
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (AEM Forms가 JBoss에 배포된 경우 필요)
-* jbossall-client.jar(JBoss에 AEM Forms가 배포된 경우 필요)
+* adobe-utilities.jar (AEM Forms이 JBoss에 배포된 경우 필요)
+* jbossall-client.jar(AEM Forms이 JBoss에 배포된 경우 필요)
 
-AEM Forms가 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포된 경우, adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms가 배포된 J2EE 응용 프로그램 서버에 고유한 JAR 파일로 대체해야 합니다. 모든 AEM Forms JAR 파일의 위치에 대한 자세한 내용은 [AEM Forms Java 라이브러리 파일 포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+AEM Forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포된 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에 고유한 JAR 파일로 대체해야 합니다. 모든 AEM Forms JAR 파일의 위치에 대한 자세한 내용은 AEM Forms [Java 라이브러리 파일 포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **출력 클라이언트 개체 만들기**
 
@@ -2324,7 +2324,7 @@ Output API(웹 서비스)를 사용하여 대화형 PDF 문서를 비대화형 P
 1. 출력 클라이언트 개체를 만듭니다.
 
    * 기본 생성자를 사용하여 `OutputServiceClient` 개체를 만듭니다.
-   * 생성자를 사용하여 `OutputServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스(예: `http://localhost:8080/soap/services/OutputService?blob=mtom`.)로 전달합니다. 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다. 하지만 MTOM `?blob=mtom` 을 사용하도록 지정합니다.
+   * 생성자를 사용하여 `OutputServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/OutputService?blob=mtom`.) 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다. 하지만 MTOM `?blob=mtom` 을 사용하도록 지정합니다.
    * 필드의 값을 `System.ServiceModel.BasicHttpBinding` 가져와 개체를 `OutputServiceClient.Endpoint.Binding` 만듭니다. 반환 값을 다음으로 캐스팅합니다 `BasicHttpBinding`.
    * 개체 `System.ServiceModel.BasicHttpBinding` 필드를 (으)로 `MessageEncoding` 설정합니다 `WSMessageEncoding.Mtom`. 이 값을 사용하면 MTOM이 사용됩니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
