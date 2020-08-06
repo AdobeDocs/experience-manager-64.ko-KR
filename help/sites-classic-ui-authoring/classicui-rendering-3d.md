@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bf155d8c-c012-4cb4-89a6-ceead715630e
 translation-type: tm+mt
 source-git-commit: 284339ee1ce0ffae97f732b569f73c732f063273
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 73%
 
 ---
 
@@ -41,13 +44,13 @@ Rapid Refine 렌더러는 더 큰 이미지를 렌더링하는 데 일반적으�
 >
 >3D 자산은 AEM 3D 대화형 보기에 표시된 재료와 관계 없이 항상 원래 재료로 렌더링됩니다. 이 기능은 내장 Rapid Refine 렌더러와 모든 기본 렌더러 모두에 적용됩니다.
 
-**3D 자산을**&#x200B;렌더링하려면
+**3D 자산을 렌더링하려면**:
 
 1. 볼 3D 자산을 엽니다.
 
    [3D 자산 보기](/help/sites-classic-ui-authoring/classicui-view-3d-assets.md)를 참조하십시오.
 
-1. From **Adobe Experience Manager**, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets**.
+1. **Adobe Experience Manager**&#x200B;의 **[!UICONTROL 탐색]** 페이지에서 **[!UICONTROL 자산**]을 탭합니다.
 1. Near the upper-right corner of the page, from the **[!UICONTROL View** drop-down list, tap **[!UICONTROL Card View]**.
 1. 렌더링할 3D 개체로 이동합니다.
 
