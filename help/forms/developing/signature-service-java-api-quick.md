@@ -40,11 +40,11 @@ Java API 빠른 시작(SOAP)은 서명 서비스에 사용할 수 있습니다.
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 디지털 서명 제거](signature-service-java-api-quick.md#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api)
 
-AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM Forms를 사용한 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Forms과 함께 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서에 서명 필드 추가 {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
 
@@ -547,7 +547,7 @@ AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 XFA 기반 양식에 디지털 서명 {#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api}
 
-다음 Java 코드 예는 양식 서비스를 통해 렌더링되는 대화형 양식에 서명합니다. 양식 서비스에서 반환되는 `com.adobe.idp.Document` 인스턴스는 서명 서비스로 전달됩니다. 서명된 대화형 양식은 *RoanXFASigned.pdf라는 PDF 파일로 저장됩니다*.
+다음 Java 코드 예는 Forms 서비스가 제공하는 대화형 양식에 서명합니다. Forms 서비스에서 반환되는 `com.adobe.idp.Document` 인스턴스는 서명 서비스로 전달됩니다. 서명된 대화형 양식은 *RoanXFASigned.pdf라는 PDF 파일로 저장됩니다*.
 
 ```as3
  /* 
