@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 5a96c306-790a-4721-a146-86fbceb376db
 translation-type: tm+mt
 source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
+workflow-type: tm+mt
+source-wordcount: '4811'
+ht-degree: 97%
 
 ---
 
@@ -38,7 +41,7 @@ source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
 
 >[!NOTE]
 >
->SPA 편집기에서 편집 가능한 템플릿을 사용하려면 AEM 6.4.5.0 이상이 [필요합니다](/help/sites-developing/spa-overview.md).
+>AEM 6.4.5.0 이상 버전은 [SPA Editor에서 편집 가능한 템플릿을 사용해야 합니다](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
@@ -66,7 +69,7 @@ source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
 
 * **관리자**:
 
-   * Creates a new folder for templates requires `admin` rights.
+   * 템플릿에 대한 새 폴더를 만들려면 `admin` 권한이 필요합니다.
    * 종종 이러한 작업을 개발자가 수행할 수도 있습니다.
 
 * **개발자**:
@@ -77,7 +80,7 @@ source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
 
 * **템플릿 작성자**:
 
-   * This is a specific author who is member of the group `template-authors`
+   * `template-authors` 그룹의 멤버인 특정 작성자입니다.
 
       * 필요한 권한을 할당합니다.
    * 구성 요소의 사용 방식과 다음이 요구되는 기타 고급 세부 사항을 구성할 수 있습니다.
@@ -123,9 +126,9 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
 * **템플릿** 콘솔을 사용합니다. **도구** 콘솔의 **일반** 섹션에서 사용할 수 있습니다.
 
-   * 또는 다음에서 직접 사용할 수 있습니다. [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
+   * 또는 [에서 바로 사용할 수 있습니다.http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
-* Can [create a folder for the templates](#creating-a-template-folder-admin) if necessary
+* 필요한 경우 [템플릿용 폴더를 만들 수](#creating-a-template-folder-admin) 있습니다.
 * 처음에는 빈 상태인 [새 템플릿을 만듭니다](#creating-a-new-template-template-author).
 
 * 필요한 경우 템플릿에 대한 [추가 속성을 정의](#defining-template-properties-template-author)합니다.
@@ -133,7 +136,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
    * [구조](#editing-a-template-structure-template-author) - 템플릿으로 만든 페이지에서 변경할 수 없는 사전 정의된 컨텐츠입니다.
    * [초기 컨텐츠](#editing-a-template-initial-content-author) - 템플릿으로 만든 페이지에서 변경할 수 있는 사전 정의된 컨텐츠입니다.
-   * [레이아웃](#editing-a-template-layout-template-author) - 다양한 장치용.
+   * [레이아웃](#editing-a-template-layout-template-author) - 장치 범위에 해당합니다.
    * [스타일](/help/sites-authoring/style-system.md) - 템플릿 및 해당 구성 요소와 함께 사용할 스타일을 정의합니다.
 
 * 페이지를 만들 때 사용할 [템플릿을 활성화](#enabling-a-template-template-author)합니다.
@@ -158,7 +161,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
    >[!NOTE]
    >
-   >In a standard AEM instance the **global** folder already exists in the template console. 이 폴더는 기본 템플릿을 보유하며, 현재 폴더에 정책 및/또는 템플릿 유형을 찾을 수 없는 경우 폴백으로 작동합니다.
+   >표준 AEM 인스턴스에서는 **전역** 폴더가 템플릿 콘솔에 이미 있습니다. 이 폴더는 기본 템플릿을 보유하며, 현재 폴더에 정책 및/또는 템플릿 유형을 찾을 수 없는 경우 폴백으로 작동합니다.
    >
    >[프로젝트용으로 만든 템플릿 폴더](/help/sites-developing/page-templates-editable.md#template-folders)를 사용하는 것이 가장 좋습니다.
 
@@ -175,7 +178,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
    * **템플릿 이름**
    * **설명**
 
-1. **만들기**&#x200B;를 선택합니다. 확인이 표시되면, **열기**&#x200B;를 선택하여 [템플릿 편집](#editing-templates-template-authors)을 시작하거나, **완료**&#x200B;를 선택하여 템플릿 콘솔로 돌아갑니다.
+1. **만들기**&#x200B;를 선택합니다. 확인이 표시되면, **열기**[](#editing-templates-template-authors)를 선택하여 템플릿 편집을 시작하거나, **완료**&#x200B;를 선택하여 템플릿 콘솔로 돌아갑니다.
 
    >[!NOTE]
    >
@@ -202,7 +205,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
 속성을 보거나 편집하려면:
 
-1. In the **Templates Console**, select the template.
+1. **템플릿 콘솔**&#x200B;에서 템플릿을 선택합니다.
 1. 도구 모음 또는 빠른 옵션에서&#x200B;**속성 보기**&#x200B;를 선택하여 대화 상자를 엽니다.
 1. 이제 템플릿 속성을 보거나 편집할 수 있습니다.
 
@@ -230,8 +233,8 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
 페이지를 작성할 때 템플릿을 사용하려면 다음을 수행해야 합니다.
 
-* [페이지를 만들 때 사용할 수 있도록 템플릿을](#enabling-a-template-template-author) 활성화합니다.
-* [템플릿을](#allowing-a-template-author) 사용할 수 있는 컨텐츠 분기를 템플릿에 지정할 수 있도록 허용합니다.
+* [템플릿 활성화](#enabling-a-template-template-author): 페이지를 만들 때 사용할 수 있도록 합니다.
+* [템플릿 허용](#allowing-a-template-author): 템플릿을 사용할 수 있는 컨텐츠 분기를 지정합니다.
 
 #### 템플릿 활성화 - 템플릿 작성자 {#enabling-a-template-template-author}
 
@@ -241,8 +244,8 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 >
 >템플릿이 활성화된 상태에서 템플릿 작성자가 템플릿을 추가로 업데이트하기 시작하면 경고가 표시됩니다. 이 경고는 템플릿이 참조될 수 있으므로 변경을 수행할 경우 템플릿을 참조하는 페이지에 영향을 줄 수 있음을 나타냅니다.
 
-1. In the **Templates Console**, select the template.
-1. Select **Enable** or **Disable** from the toolbar, and again in the confirmation dialog.
+1. **템플릿 콘솔**&#x200B;에서 템플릿을 선택합니다.
+1. 도구 모음에서 **활성화** 또는 **비활성화**&#x200B;를 선택하고 다시 확인 대화 상자에서 선택한 옵션을 다시 선택합니다.
 1. 이제 요구 사항에 따라 [템플릿을 편집](/help/sites-authoring/managing-pages.md#creating-a-new-page)할 수 있지만, [새 페이지를 만들 때](#editing-templates-template-authors) 템플릿을 사용할 수 있습니다.
 
 >[!NOTE]
@@ -257,7 +260,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
 1. **고급** 탭을 엽니다.
 
-1. Under **Template Settings** use **Add field** to specify the path(s) to your template(s).
+1. **템플릿 설정**&#x200B;에서 **필드 추가**&#x200B;를 사용하여 템플릿에 대한 경로를 지정합니다.
 
    경로는 명시적일 수도 있고 패턴을 사용할 수도 있습니다. 예:
 
@@ -281,8 +284,8 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
 페이지가 렌더링될 때 템플릿이 참조되면 게시 환경에서 사용할 수 있도록 완전히 구성된 템플릿을 게시해야 합니다.
 
-1. In the **Templates Console**, select the template.
-1. Select **Publish** from the toolbar to open the wizard.
+1. **템플릿 콘솔**&#x200B;에서 템플릿을 선택합니다.
+1. 도구 모음에서 **게시**&#x200B;를 선택하여 마법사를 엽니다.
 1. 함께 게시할 **컨텐츠 정책**&#x200B;을 선택합니다.
 
 1. 도구 모음에서 **게시**&#x200B;를 선택하여 작업을 완료합니다.
@@ -362,14 +365,16 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
    * 사이드 패널의 **구성 요소**&#x200B;에서 브라우저에서
    * 템플릿에 이미 있는 구성 요소의 도구 모음에서 사용할 수 있는 **구성 요소 삽입** 옵션(**+** 아이콘) 또는 **구성 요소를 여기로 드래그하십시오.** 상자를 사용하여
    * 사이드 패널의 **자산** 브라우저에서 템플릿으로 직접 자산을 끌어와 제 위치에 해당 구성 요소를 생성하여
+
    일단 추가된 각 구성 요소는 다음으로 표시됩니다.
 
    * 테두리
    * 구성 요소 유형을 표시하는 마커
    * 구성 요소가 잠금 해제되었을 때 표시할 마커
+
    >[!NOTE]
    >
-   >When you add an out-of-the-box **Title** component to the template it will contain the default text **structure**.
+   >곧바로 사용 가능한 **제목** 구성 요소를 템플릿에 추가하면 기본 텍스트 **구조**&#x200B;가 포함됩니다.
    >
    >
    >이를 변경하고 사용자 고유의 텍스트를 추가하는 경우 템플릿에서 페이지를 만들 때 이 업데이트된 텍스트가 사용됩니다.
@@ -407,33 +412,34 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
    구성 요소에 대해 컨텐츠 정책을 만들거나 기존 컨텐츠 정책을 선택합니다. 이를 통해 디자인 세부 사항을 정의할 수 있습니다.
 
-   ![chlimage_1-365](assets/chlimage_1-365.png) chlimage_ ![1-366](assets/chlimage_1-366.png)
+   ![chlimage_1-365](assets/chlimage_1-365.png) ![chlimage_1-366](assets/chlimage_1-366.png)
 
-   구성 창은 두 개로 나뉘어집니다.
+   구성 창은 두 개로 나누어집니다.
 
-   * In the left side of the dialogue under **Policy**, you have the ability to select an existing policy or select an existing one.
-   * In the right side of the dialogue under **Properties**, you can set the properties specific to the component type.
+   * **정책** 아래의 대화 상자 왼쪽에서는 새 정책을 만들거나 기존 정책을 선택할 수 있습니다.
+   * **속성** 아래의 대화 상자 오른쪽에서는 구성 요소 유형과 관련된 속성을 설정할 수 있습니다.
+
    사용 가능한 속성은 선택한 구성 요소에 따라 다릅니다. 예를 들어 텍스트 구성 요소의 경우 속성은 여러 다른 옵션 중에서 복사 및 붙여넣기 옵션, 서식 옵션 및 단락 스타일을 정의합니다.
 
    ***정책***
 
    컨텐츠(또는 디자인) 정책은 구성 요소의 디자인 속성을 정의합니다. 예: 사용 가능한 구성 요소 또는 최소/최대 크기. 이러한 속성은 템플릿(및 템플릿으로 만든 페이지)에 적용될 수 있습니다.
 
-   Under **Policy** you can select an existing policy to apply to the component via the drop-down.
+   **정책** 아래에서 드롭다운을 통해 구성 요소에 적용할 기존 정책을 선택할 수 있습니다.
 
    ![chlimage_1-367](assets/chlimage_1-367.png)
 
-   **정책 선택** 드롭다운 옆에 있는 추가 단추를 선택하여 새 정책을 추가할 수 있습니다. A new title should then be given in the **Policy Title** field.
+   **정책 선택** 드롭다운 옆에 있는 추가 단추를 선택하여 새 정책을 추가할 수 있습니다. 그런 후 **정책 제목** 필드에 새 제목을 지정해야 합니다.
 
    ![chlimage_1-368](assets/chlimage_1-368.png)
 
-   **정책 선택** 드롭다운에서 선택한 기존 정책은 드롭다운 옆에 있는 복사 단추를 사용하여 새 정책으로서 복사할 수 있습니다. A new title should then be given in the **Policy Title** field. By default the copied policy will be titled **Copy of X**, where X is the title of the copied policy.
+   **정책 선택** 드롭다운에서 선택한 기존 정책은 드롭다운 옆에 있는 복사 단추를 사용하여 새 정책으로서 복사할 수 있습니다. 그런 후 **정책 제목** 필드에 새 제목을 지정해야 합니다. 기본적으로 복사된 정책 제목은 **X의 사본**&#x200B;으로 지정됩니다. 여기서 X는 복사된 정책의 제목입니다.
 
    ![chlimage_1-369](assets/chlimage_1-369.png)
 
    **정책 설명** 필드에서 정책에 대한 설명은 선택 사항입니다.
 
-   In the **Other templates also using the selected policy** section, you can easily see which other templates use the policy selected in the **Select policy** dropdown.
+   **선택한 정책을 사용하는 다른 템플릿** 섹션에서 **정책 선택** 드롭다운에서 선택한 정책을 사용하는 다른 템플릿을 쉽게 확인할 수 있습니다.
 
    ![chlimage_1-370](assets/chlimage_1-370.png)
 
@@ -447,6 +453,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
    * 기본
    * 기능
+
    *기본*
 
    **기본** 탭에서는 구성 요소의 가장 중요한 설정이 정의됩니다.
@@ -473,11 +480,11 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
    >[!CAUTION]
    >
-   >Note that in AEM crop ratios are defined as **height/width**. 이것은 종래의 폭/높이 정의와 다르며, 레거시 호환성을 위해 수행됩니다. **이름**&#x200B;을 명확히 정의한 경우 이 이름이 UI에 표시되므로 페이지 작성 사용자가 차이를 알지 못합니다.
+   >AEM에서 자르기 비율은 **높이/폭**&#x200B;으로 정의됩니다. 이것은 종래의 폭/높이 정의와 다르며, 레거시 호환성을 위해 수행됩니다. **이름**&#x200B;을 명확히 정의한 경우 이 이름이 UI에 표시되므로 페이지 작성 사용자가 차이를 알지 못합니다.
 
    >[!NOTE]
    >
-   >[리치 텍스트 편집기를 구현하는 구성 요소에 대한 컨텐츠 정책](/help/sites-administering/rich-text-editor.md)은 RTE가 해당 UI 설정을 통해 사용 가능한 옵션에 대해서만 정의할 수 있습니다.
+   >[](/help/sites-administering/rich-text-editor.md)리치 텍스트 편집기를 구현하는 구성 요소에 대한 컨텐츠 정책은 RTE가 해당 UI 설정을 통해 사용 가능한 옵션에 대해서만 정의할 수 있습니다.
 
 * **정책 및 속성(레이아웃 컨테이너)**
 
@@ -487,13 +494,13 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
    >
    >컨테이너 구성 요소의 경우 컨테이너에서 사용할 수 있는 구성 요소를 정의하는 데 필요하므로 정책을 반드시 구성해야 합니다.
 
-   이 구성 창은 창의 일반적인 사용 방식과 마찬가지로 두 개로 나뉘어집니다.
+   이 구성 창은 창의 일반적인 사용 방식과 마찬가지로 두 개로 나누어집니다.
 
    ***정책***
 
    컨텐츠(또는 디자인) 정책은 구성 요소의 디자인 속성을 정의합니다. 예: 사용 가능한 구성 요소 또는 최소/최대 크기. 이러한 속성은 템플릿(및 템플릿으로 만든 페이지)에 적용될 수 있습니다.
 
-   Under **Policy** you can select an existing policy to apply to the component via the drop-down. 이것은 창의 일반적인 사용 방식과 같습니다.
+   **정책** 아래에서 드롭다운을 통해 구성 요소에 적용할 기존 정책을 선택할 수 있습니다. 이것은 창의 일반적인 사용 방식과 같습니다.
 
    ***속성***
 
@@ -502,6 +509,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
    * 허용된 구성 요소
    * 기본 구성 요소
    * 응답형 설정
+
    *허용된 구성 요소*
 
    **허용된 구성 요소** 탭에서 레이아웃 컨테이너에 사용 가능한 구성 요소를 정의합니다.
@@ -511,6 +519,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
    * 빼기 기호는 그룹의 항목이 하나 이상 선택되어 있음을 나타냅니다.
    * 검색을 통해 구성 요소를 이름별로 필터링할 수 있습니다.
    * 구성 요소 그룹 이름의 오른쪽에 나열된 숫자는 필터와 관계없이 해당 그룹에서 선택한 구성 요소의 총 개수를 나타냅니다.
+
    ![chlimage_1-374](assets/chlimage_1-374.png)
 
    *기본 구성 요소*
@@ -519,7 +528,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
    완전히 새로운 구성 요소 및 MIME 유형 매핑을 추가하려면 **매핑 추가**&#x200B;를 클릭하거나 탭하십시오.
 
-   이미 매핑된 구성 요소에 추가 MIME 유형을 추가하려면 목록에서 구성 요소를 선택하고 **유형 추가**&#x200B;를 클릭하거나 탭하십시오. Click the **Delete** icon to remove a MIME type.
+   이미 매핑된 구성 요소에 추가 MIME 유형을 추가하려면 목록에서 구성 요소를 선택하고 **유형 추가**&#x200B;를 클릭하거나 탭하십시오. MIME 유형을 제거하려면 **삭제** 아이콘을 클릭하십시오.
 
    ![chlimage_1-375](assets/chlimage_1-375.png)
 
@@ -537,8 +546,9 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
    * 구성 요소 도구 모음이 그에 따라 조정됩니다.
    * 이미 입력한 컨텐츠는 **구조** 모드에 더 이상 표시되지 않습니다.
 
-      * Already entered content is considered initial content and is only visible in **Initial Content** mode.
+      * 이미 입력한 컨텐츠는 초기 컨텐츠로 간주되며 **초기 컨텐츠** 모드에서만 볼 수 있습니다.
    * 잠금 해제된 구성 요소의 상위 항목을 이동하거나, 잘라내거나, 삭제할 수 없습니다.
+
    ![chlimage_1-376](assets/chlimage_1-376.png)
 
    여기에는 **초기 컨텐츠** 모드 또는 결과 페이지에서 추가 구성 요소를 추가할 수 있도록 컨테이너 구성 요소의 잠금을 해제하는 작업도 포함됩니다. 구성 요소/컨텐츠를 잠금 해제하기 전에 이미 컨테이너에 추가한 경우 **구조** 모드에서는 더 이상 표시되지 않지만 **초기 컨텐츠** 모드에서는 표시됩니다. **구조 모드**&#x200B;에서는 컨테이너 구성 요소 자체만 **허용된 구성 요소** 목록과 함께 표시됩니다.
@@ -551,7 +561,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
    ![chlimage_1-378](assets/chlimage_1-378.png)
 
-* **기존 페이지에 대한 관계**
+* ****&#x200B;기존 페이지에 대한 관계
 
    템플릿을 기준으로 페이지를 작성한 후 구조가 업데이트된 경우 이러한 페이지는 템플릿의 변경 사항을 반영합니다. 확인 대화 상자와 함께 이 사실을 알려주는 경고가 도구 모음에 표시됩니다.
 
@@ -575,7 +585,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
    ![chlimage_1-381](assets/chlimage_1-381.png)
 
-* 컨테이너 구성 요소의 잠금이 해제된 경우(**구조** 모드에서) 새 구성 요소를 컨테이너에 추가할 수 있습니다(**초기 컨텐츠** 모드). Components added in **Initial Content** mode can be moved on or deleted from resulting pages.
+* 컨테이너 구성 요소의 잠금이 해제된 경우(**구조** 모드에서) 새 구성 요소를 컨테이너에 추가할 수 있습니다(**초기 컨텐츠** 모드). **초기 컨텐츠** 모드에서 추가한 구성 요소는 결과 페이지에서 이동하거나 삭제할 수 있습니다.
 
    해당 컨테이너의 도구 모음에서 **구성 요소를 여기로 드래그하십시오.** 영역 또는 **새 구성 요소 삽입** 옵션을 사용하여 구성 요소를 추가할 수 있습니다.
 
@@ -589,7 +599,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
 ### 템플릿 편집 - 레이아웃 - 템플릿 작성자 {#editing-a-template-layout-template-author}
 
-장치 범위에 대한 템플릿 레이아웃을 정의할 수 있습니다. [템플릿에 대한 반응형 레이아웃은](/help/sites-authoring/responsive-layout.md) 페이지 작성과 동일하게 작동합니다.
+장치 범위에 대한 템플릿 레이아웃을 정의할 수 있습니다. 템플릿에 대한 [응답형 레이아웃](/help/sites-authoring/responsive-layout.md)은 페이지 작성의 경우와 마찬가지로 작동합니다.
 
 >[!NOTE]
 >
@@ -608,6 +618,7 @@ The page design including required client-side libraries and page policies are m
 
    * 왼쪽 절반 섹션에서는 [페이지 정책](/help/sites-authoring/templates.md#page-policies)을 정의합니다.
    * 오른쪽 절반 섹션에서는 [페이지 속성](/help/sites-authoring/templates.md#page-properties)을 정의합니다.
+
    ![chlimage_1-385](assets/chlimage_1-385.png)
 
 #### 페이지 정책 {#page-policies}
@@ -620,11 +631,11 @@ The page design including required client-side libraries and page policies are m
 
    ![chlimage_1-387](assets/chlimage_1-387.png)
 
-   **정책 선택** 드롭다운 옆에 있는 추가 단추를 선택하여 새 정책을 추가할 수 있습니다. A new title should then be given in the **Policy Title** field.
+   **정책 선택** 드롭다운 옆에 있는 추가 단추를 선택하여 새 정책을 추가할 수 있습니다. 그런 후 **정책 제목** 필드에 새 제목을 지정해야 합니다.
 
    ![chlimage_1-388](assets/chlimage_1-388.png)
 
-   **정책 선택** 드롭다운에서 선택한 기존 정책은 드롭다운 옆에 있는 복사 단추를 사용하여 새 정책으로서 복사할 수 있습니다. A new title should then be given in the **Policy Title** field. By default the copied policy will be titled **Copy of X**, where X is the title of the copied policy.
+   **정책 선택** 드롭다운에서 선택한 기존 정책은 드롭다운 옆에 있는 복사 단추를 사용하여 새 정책으로서 복사할 수 있습니다. 그런 후 **정책 제목** 필드에 새 제목을 지정해야 합니다. 기본적으로 복사된 정책 제목은 **X의 사본**&#x200B;으로 지정됩니다. 여기서 X는 복사된 정책의 제목입니다.
 
    ![chlimage_1-389](assets/chlimage_1-389.png)
 
@@ -633,17 +644,17 @@ The page design including required client-side libraries and page policies are m
    ![chlimage_1-390](assets/chlimage_1-390.png)
 
 * **정책 설명** 필드에서 정책에 대한 설명은 선택 사항입니다.
-* In the **Other templates also using the selected policy** section, you can easily see which other templates use the policy selected in the **Select policy** dropdown.
+* **선택한 정책을 사용하는 다른 템플릿** 섹션에서 **정책 선택** 드롭다운에서 선택한 정책을 사용하는 다른 템플릿을 쉽게 확인할 수 있습니다.
 
    ![chlimage_1-391](assets/chlimage_1-391.png)
 
 #### 페이지 속성 {#page-properties}
 
-Using page properties, you can define the required client-side libraries by using the **Page Design** dialog. 이러한 클라이언트측 라이브러리에는 템플릿과 함께 로드될 스타일 시트 및 Javascript와, 해당 템플릿으로 작성된 페이지가 포함되어 있습니다.
+페이지 속성을 사용하면 **페이지 디자인** 대화 상자에서 필수 클라이언트 측 라이브러리를 정의할 수 있습니다. 이러한 클라이언트 측 라이브러리에는 템플릿과 함께 로드될 스타일 시트 및 Javascript와 해당 템플릿으로 작성된 페이지가 포함되어 있습니다.
 
 ![chlimage_1-392](assets/chlimage_1-392.png)
 
-* 이 템플릿으로 작성된 페이지에 적용할 클라이언트측 라이브러리를 지정합니다. **클라이언트측 라이브러리** 섹션의 텍스트 필드에 라이브러리 이름을 입력합니다.
+* 이 템플릿으로 작성된 페이지에 적용할 클라이언트 측 라이브러리를 지정합니다. **클라이언트 측 라이브러리** 섹션의 텍스트 필드에 라이브러리 이름을 입력합니다.
 
    ![chlimage_1-393](assets/chlimage_1-393.png)
 
@@ -651,7 +662,7 @@ Using page properties, you can define the required client-side libraries by usin
 
    ![chlimage_1-394](assets/chlimage_1-394.png)
 
-   클라이언트측 라이브러리에 필요한 수만큼 텍스트 필드를 추가합니다.
+   클라이언트 측 라이브러리에 필요한 수만큼 텍스트 필드를 추가합니다.
 
    ![chlimage_1-395](assets/chlimage_1-395.png)
 
@@ -661,7 +672,7 @@ Using page properties, you can define the required client-side libraries by usin
 
 >[!NOTE]
 >
->템플릿 작성자는 템플릿에 대한 페이지 정책을 지정할 수 있지만, 개발자로부터 해당 클라이언트측 라이브러리의 세부 정보를 가져와야 합니다.
+>템플릿 작성자는 템플릿에 대한 페이지 정책을 지정할 수 있지만, 개발자로부터 해당 클라이언트 측 라이브러리의 세부 정보를 가져와야 합니다.
 
 ### 템플릿 편집 - 초기 페이지 속성 - 작성자 {#editing-a-template-initial-page-properties-author}
 
@@ -698,6 +709,7 @@ Using page properties, you can define the required client-side libraries by usin
 
       * 구조만- 즉시 적용
       * 초기 컨텐츠 포함 - 변경 후에 생성된 페이지만
+
    다음 작업을 수행할 때는 특히 주의하십시오.
 
    * 활성화된 템플릿에서 구성 요소 잠금 또는 잠금 해제.
@@ -705,6 +717,7 @@ Using page properties, you can define the required client-side libraries by usin
 
       * 구성 요소(잠겨 있는)의 잠금을 해제하면 기존 페이지에서 누락됩니다.
       * 구성 요소(편집 가능)를 잠그면 해당 컨텐츠가 페이지에 표시되지 않고 숨겨집니다.
+
    >[!NOTE]
    >
    >AEM은 더 이상 초안이 아닌 템플릿에서 구성 요소의 잠금 상태를 변경할 때 명시적인 경고를 제공합니다.
