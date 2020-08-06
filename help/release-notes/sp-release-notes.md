@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 1a6431f19b7eae73150ea3b0bfa00a719e155c41
+source-git-commit: f318a14b3d0e4abf25a73c0f19afdef969658b9c
 workflow-type: tm+mt
 source-wordcount: '21624'
 ht-degree: 26%
@@ -409,7 +409,7 @@ AEM 6.4.6.0의 주요 특징 중 일부는 다음과 같습니다.
 * 달러($)와 여는 중괄호({)가 차례로 있는 컨텐츠 조각을 열 때 구문 분석 오류가 발생했습니다. CQ-4270266용 핫픽스
 * 타임라인에서 경험 조각의 버전을 표시하려고 할 때 VersionPreviewServlet이 NullPointerException에서 실패합니다. NPR-30074: CQ-4271881용 핫픽스
 * 체크 인 기능을 통해 콘텐츠 조각을 잠글 수 없습니다. NPR-29923: CQ-4258785용 핫픽스
-* SAML 인증 처리기의 서명 확인 실패 NPR-30379: GRANITE-26567에 대한 백포트 요청.
+* SAML 인증 처리기의 서명 확인 실패 NPR-30379: GRANITE-26567에 대한 백포트 요청
 
 **복제**
 
