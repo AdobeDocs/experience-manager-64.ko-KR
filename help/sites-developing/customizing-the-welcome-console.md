@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 2e408acb-3802-4837-8619-688cfc3abfa7
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '486'
+ht-degree: 13%
 
 ---
 
@@ -21,20 +24,20 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 >
 >이 페이지에서는 기존 UI에 대해 다룹니다.
 >
->표준 [터치](/help/sites-developing/customizing-consoles-touch.md) 지원 UI에 대한 자세한 내용은 콘솔 맞춤화를 참조하십시오.
+>표준 [터치 지원](/help/sites-developing/customizing-consoles-touch.md) UI에 대한 자세한 내용은 콘솔 사용자 지정을 참조하십시오.
 
 시작 콘솔은 AEM 내의 다양한 콘솔 및 기능에 대한 링크 목록을 제공합니다.
 
-![cq_welcomeesscreen](assets/cq_welcomescreen.png)
+![cq_welcomescreen](assets/cq_welcomescreen.png)
 
-표시되는 링크를 구성할 수 있습니다. 특정 사용자 및/또는 그룹에 대해 정의할 수 있습니다. 수행할 작업은 대상 유형에 따라 달라집니다(해당 작업이 속한 콘솔의 섹션과 관련됨).
+표시되는 링크를 구성할 수 있습니다. 특정 사용자 및/또는 그룹에 대해 정의할 수 있습니다. 수행할 작업은 대상 유형에 따라 달라집니다(대상 콘솔의 섹션과 관련됨).
 
 * [기본 콘솔](#links-in-main-console-left-pane) - 기본 콘솔의 링크(왼쪽 창)
-* [리소스, 설명서 및 참조, 기능](#links-in-sidebar-right-pane) - 세로 막대의 링크(오른쪽 창)
+* [리소스, 설명서 및 참조, 기능](#links-in-sidebar-right-pane) - 사이드바의 링크(오른쪽 창)
 
 ## 기본 콘솔의 링크(왼쪽 창) {#links-in-main-console-left-pane}
 
-AEM의 기본 콘솔이 나열됩니다.
+여기에는 AEM의 기본 콘솔이 나열됩니다.
 
 ![cq_welcomeescreenmainconsole](assets/cq_welcomescreenmainconsole.png)
 
@@ -46,7 +49,7 @@ AEM의 기본 콘솔이 나열됩니다.
 
 * **디지털 에셋:** `/libs/wcm/core/content/damadmin`
 
-* **** 커뮤니티: `/libs/collab/core/content/admin`
+* **커뮤니티:** `/libs/collab/core/content/admin`
 
 * **캠페인:** `/libs/mcm/content/admin`
 
@@ -60,13 +63,13 @@ AEM의 기본 콘솔이 나열됩니다.
 
 예:
 
-* 도구에 대한 액세스를 **제한하려면**
+* 도구에 대한 액세스 **를**&#x200B;제한하려면
 
    `/libs/wcm/core/content/misc`
 
-원하는 [권한을 설정하는 방법에 대한 자세한 내용은 보안 섹션을](/help/sites-administering/security.md) 참조하십시오.
+원하는 권한을 설정하는 방법에 대한 자세한 내용은 [보안 섹션을](/help/sites-administering/security.md) 참조하십시오.
 
-### 세로 막대의 링크(오른쪽 창) {#links-in-sidebar-right-pane}
+### 사이드바의 링크(오른쪽 창) {#links-in-sidebar-right-pane}
 
 ![cq_welcomeescreensidebar](assets/cq_welcomescreensidebar.png)
 
@@ -74,7 +77,7 @@ AEM의 기본 콘솔이 나열됩니다.
 
 `/libs/cq/core/content/welcome`
 
-기본적으로 제공되는 세 개의 섹션(약간 간격)이 있습니다.
+기본적으로 세 개의 섹션(약간 간격)이 제공됩니다.
 
 <table> 
  <tbody> 
@@ -175,19 +178,19 @@ AEM의 기본 콘솔이 나열됩니다.
 
 예:
 
-* 보고서에 대한 링크를 제거하려면 ****
+* 보고서에 대한 링크를 **제거하려면**
 
    `/libs/cq/core/content/welcome/resources/reports`
 
-* 패키지에 대한 링크를 제거하려면 **에서**&#x200B;읽기 권한을 제거합니다.
+* 패키지로 연결되는 링크를 **제거하려면**
 
    `/libs/cq/core/content/welcome/features/packages`
 
-원하는 [권한을 설정하는 방법에 대한 자세한 내용은 보안 섹션을](/help/sites-administering/security.md) 참조하십시오.
+원하는 권한을 설정하는 방법에 대한 자세한 내용은 [보안 섹션을](/help/sites-administering/security.md) 참조하십시오.
 
 ### 링크 선택 메커니즘 {#link-selection-mechanism}
 
-사용 `/libs/cq/core/components/welcome/welcome.jsp` 중인 ConsoleUtil은 [속성이 있는](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html)노드에서 쿼리를 실행합니다.
+사용 `/libs/cq/core/components/welcome/welcome.jsp` 중인 ConsoleUtil은 [속성이](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html)있는 노드에서 쿼리를 실행하는 데 사용됩니다.
 
 * `jcr:mixinTypes` 값 사용: `cq:Console`
 
@@ -196,17 +199,18 @@ AEM의 기본 콘솔이 나열됩니다.
 >다음 쿼리를 실행하여 기존 목록을 확인합니다.
 >
 >* `select * from cq:Console`
+
 >
 
 
 
-mixin이 있는 노드에 대해 사용자 또는 그룹에 읽기 권한이 없는 `cq:Console``ConsoleUtil` 경우 해당 노드는 검색으로 검색되지 않으므로 콘솔에 나열되지 않습니다.
+mixin이 있는 노드에 대한 읽기 권한이 없는 사용자 또는 그룹 `cq:Console``ConsoleUtil` 은 검색으로 해당 노드를 검색하지 않으므로 콘솔에 나열되지 않습니다.
 
 ### 사용자 지정 항목 추가 {#adding-a-custom-item}
 
 링크 [선택 메커니즘을](#link-selection-mechanism) 사용하여 사용자 지정 항목을 링크 목록에 추가할 수 있습니다.
 
-위젯 또는 리소스에 `cq:Console` 믹싱을 추가하여 사용자 정의 항목을 목록에 추가합니다. 이 작업은 속성을 정의하여 수행됩니다.
+위젯 또는 리소스에 혼합을 추가하여 사용자 지정 항목을 목록에 `cq:Console` 추가합니다. 이 작업은 속성을 정의하여 수행됩니다.
 
 * `jcr:mixinTypes` 값 사용: `cq:Console`
 
