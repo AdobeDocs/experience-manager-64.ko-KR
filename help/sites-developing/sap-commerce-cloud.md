@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '2331'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 통합 프레임워크에는 API와 통합 레이어가 포함되어 있습니다. 이를 통해 다음을 수행할 수 있습니다.
 
-* eCommerce 시스템을 통합하고 제품 데이터를 AEM에 가져오기
+* e커머스 시스템을 연결하고 AEM에 제품 데이터 가져오기
 * 특정 eCommerce 엔진과 독립적인 상거래 기능을 위한 AEM 구성 요소 구축
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
@@ -35,13 +35,13 @@ ht-degree: 0%
 >
 >[API 설명서도](/help/sites-developing/ecommerce.md#api-documentation) 사용할 수 있습니다.
 
-통합 레이어를 사용할 수 있도록 특별히 제공되는 다양한 AEM 구성 요소가 제공됩니다. 현재 다음과 같습니다.
+통합 레이어를 사용할 수 있는 다양한 기본 AEM 구성 요소가 제공됩니다. 현재 다음과 같습니다.
 
 * 제품 표시 구성 요소
 * 장바구니
 * 체크아웃
 
-AEM 검색, eCommerce 시스템 검색, 타사 검색(예: Search&amp;Promote) 또는 이들의 조합을 사용할 수 있도록 해주는 통합 후크가 제공됩니다.
+AEM 검색, 전자 상거래 시스템 검색, 타사 검색(Search &amp; Promote 등) 또는 이러한 조합을 사용할 수 있도록 해주는 통합 후크가 제공됩니다.
 
 ## 전자 상거래 엔진 선택 {#ecommerce-engine-selection}
 
@@ -51,7 +51,7 @@ eCommerce 프레임워크는 모든 eCommerce 솔루션에서 사용할 수 있�
 
    * 엔진은 `commerceProvider` 서비스 속성으로 식별할 수 있습니다.
 
-* AEM은 `Resource.adaptTo()` `CommerceService` 및 `Product`
+* AEM 지원 `Resource.adaptTo()` 은 `CommerceService` 및 `Product`
 
    * 구현은 리소스 계층 구조에서 `adaptTo` `cq:commerceProvider` 속성을 찾습니다.
 
@@ -96,7 +96,7 @@ eCommerce 프레임워크는 모든 eCommerce 솔루션에서 사용할 수 있�
 
 >[!NOTE]
 >
->CRXDE Lite를 사용하면 하이브리스 구현을 위한 제품 구성 요소에서 이 문제가 어떻게 처리되는지 확인할 수 있습니다.
+>CRXDE Lite을 사용하면 하이브리스 구현에 대한 제품 구성 요소에서 이 작업이 어떻게 처리되는지 확인할 수 있습니다.
 >
 >`/apps/geometrixx-outdoors/components/hybris/product/product.jsp`
 
@@ -153,23 +153,23 @@ hybris는 사용자 세션을 사용하여 고객의 장바구니와 같은 정�
 
 ### 제품 동기화 및 게시 {#product-synchronization-and-publishing}
 
-hybris에서 유지 관리되는 제품 데이터를 AEM에서 사용할 수 있어야 합니다. 다음 메커니즘이 구현되었습니다.
+하이브리스로 유지되는 제품 데이터를 AEM에서 사용할 수 있어야 합니다. 다음 메커니즘이 구현되었습니다.
 
 * ID의 초기 로드는 하이브리스에서 피드로 제공됩니다. 이 피드에 대한 업데이트가 있을 수 있습니다.
 * hybris는 피드(AEM 투표)를 통해 업데이트 정보를 제공합니다.
-* AEM이 제품 데이터를 사용하는 경우 현재 데이터에 대한 요청을 하이브리스로 다시 보냅니다(마지막 수정 날짜를 사용하여 조건부 요청 가져오기).
+* AEM에서 제품 데이터를 사용하는 경우 현재 데이터에 대한 요청을 hybris로 다시 보냅니다(마지막 수정 날짜를 사용한 조건부 가져오기 요청).
 * 하이브리스에서는 선언적 방식으로 피드 컨텐츠를 지정할 수 있습니다.
-* 피드 구조를 AEM 콘텐츠 모델에 매핑하는 작업은 AEM 측의 피드 어댑터에서 이루어집니다.
+* AEM 컨텐트 모델에 피드 구조를 매핑하는 작업은 AEM 측의 피드 어댑터에서 이루어집니다.
 
 ![chlimage_1-12](assets/chlimage_1-12.png)
 
 * 가져오기 도구(b)는 카탈로그의 AEM에서 페이지 트리 구조의 초기 설정에 사용됩니다.
-* 하이브리스의 카탈로그 변경 사항이 피드를 통해 AEM에 표시된 다음 AEM(b)에 전파됩니다.
+* 하이브리스의 카탈로그 변경 사항은 피드를 통해 AEM에 표시된 다음 AEM(b)에 전파됩니다.
 
    * 카탈로그 버전과 관련하여 추가/삭제/변경된 제품
    * 제품 승인됨.
 
-* hybris 확장 기능은 지정된 간격(예: 간격을 초 단위로 지정하는 24시간마다)에 변경 내용을 AEM으로 가져오도록 구성할 수 있는 폴링 가져오기(&quot;hybris&quot; scheme&quot;)를 제공합니다.
+* hybris 확장자는 지정된 간격(예: 간격을 초 단위로 지정하는 24시간마다)에 변경 내용을 AEM으로 가져오도록 구성할 수 있는 투표 가져오기(&quot;hybris&quot; scheme&quot;)를 제공합니다.
 
    * 
 
@@ -184,7 +184,7 @@ hybris에서 유지 관리되는 제품 데이터를 AEM에서 사용할 수 있
        }
       ```
 
-* AEM의 카탈로그 구성은 **준비 단계** 및 **온라인** 카탈로그 버전을 인식합니다.
+* AEM의 카탈로그 구성은 단계 **및** **온라인** 카탈로그 버전을 인식합니다.
 
 * 카탈로그 버전 간 제품을 동기화하려면 해당 AEM 페이지(a, c)의 (비)정품 인증이 필요합니다.
 
@@ -210,7 +210,7 @@ hybris에서 유지 관리되는 제품 데이터를 AEM에서 사용할 수 있
 
 각 제품 및/또는 변형은 리소스로 표현되므로 저장소 노드에 1:1을 매핑합니다. 특정 제품 및/또는 변형이 해당 경로로 고유하게 식별될 수 있다는 것은 필연입니다.
 
-제품/변형 리소스가 항상 실제 제품 데이터를 가지고 있는 것은 아니므로 다른 시스템(예: hybris)에 실제로 들어 있는 데이터를 나타내는 것일 수 있습니다. 예를 들어 제품 설명, 가격 등은 AEM에 저장되지 않고 전자 상거래 엔진에서 실시간으로 검색됩니다.
+제품/변형 리소스가 항상 실제 제품 데이터를 가지고 있는 것은 아니므로 다른 시스템(예: hybris)에 실제로 들어 있는 데이터를 나타내는 것일 수 있습니다. 예를 들어 제품 설명, 가격 등은 AEM에 저장되지는 않지만 eCommerce 엔진에서 실시간으로 검색됩니다.
 
 모든 제품 리소스는 한 가지 방법으로 나타낼 수 있습니다 `Product API`. 제품 API의 대부분의 호출은 변형이 고유하지만(변형이 조상에서 공유 값을 상속할 수 있음), 변형 집합(, `getVariantAxes()``getVariants()`등)을 나열하는 호출도 있습니다.
 
@@ -356,7 +356,7 @@ public class AxisFilter implements VariantFilter {
 * **AEM-일반 제품 구조**
 
    * 각 변형에는 자체 리프 노드가 있어야 합니다.
-   * 제품 인터페이스는 제품 및 변형을 모두 표시하지만 관련 저장소 노드는 그에 따라 다릅니다.
+   * 제품 인터페이스는 제품 및 변형을 모두 표시하지만 관련 저장소 노드는 해당 항목과 관련이 있습니다.
    * 제품 노드는 제품 속성과 변형 축에 대해 설명합니다.
 
 #### 예 {#example-1}
@@ -429,12 +429,12 @@ public class AxisFilter implements VariantFilter {
 * 저장 용량
 
    * 하이브리스의 경우, 하이브리스 서버가 장바구니를 소유한다.
-   * AEM 범용 케이스 카트는 ClientContext에 [저장됩니다](/help/sites-administering/client-context.md).
+   * AEM 일반 케이스 카트는 [ClientContext에 저장됩니다](/help/sites-administering/client-context.md).
 
 **개인화**
 
-* 개인화는 항상 [ClientContext를 통해 구현되어야 합니다](/help/sites-administering/client-context.md).
-* 장바구니 `/version/` 의 ClientContext는 모든 경우에 만들어집니다.
+* 개인화는 항상 [ClientContext을 통해 이루어져야 합니다](/help/sites-administering/client-context.md).
+* 모든 경우 장바구니 `/version/` 의 ClientContext이 만들어집니다.
 
    * 제품은 `CommerceSession.addCartEntry()` 방법을 사용하여 추가해야 합니다.
 
@@ -505,7 +505,7 @@ The `CommerceSession` owner the three elements:
    >
 * 메서드를 사용할 수 있는지 확인
 >* 가격 정보 추가
->* 고객이 관련 `CommerceSession` 정보를 노출하는 컨트롤을 가지고 있는 상태에서 AEM에서 주문 페이지를 업데이트하도록 하려면(상위 배송 방법 및 이에 대해 설명하는 텍스트 포함)
+>* 고객이 AEM(배송 방법의 상위 세트와 이에 대해 설명하는 텍스트 포함)에서 주문 페이지를 업데이트할 수 있도록 하는 동시에 관련 `CommerceSession` 정보를 노출할 수 있는 컨트롤을 제공합니다.
 
 
 **결제 처리**
@@ -552,7 +552,7 @@ eCommerce 프로젝트에는 다음과 같은 기본 검색 구성 요소가 포
 
 ### 사용자 통합 {#user-integration}
 
-AEM과 다양한 전자 상거래 시스템 간에 통합이 제공됩니다. 이를 위해서는 AEM별 코드가 AEM에 대해서만 알아야 하고, 그 반대로 하면 AEM별 코드에서만 이를 알 수 있도록 다양한 시스템 간에 구매자를 동기화하는 전략이 필요합니다.
+AEM 및 다양한 e커머스 시스템 간에 통합이 제공됩니다. 이를 위해서는 AEM 관련 코드만 AEM에 대해 알고 있을 수 있도록 다양한 시스템 간의 구매자를 동기화하는 전략을 수행해야 합니다.
 
 * 인증
 
@@ -560,15 +560,15 @@ AEM과 다양한 전자 상거래 시스템 간에 통합이 제공됩니다. �
 
 * 하이브리스의 고객
 
-   AEM은 각 구매자에 대한 하이브리스에 해당하는 (하위) 계정을 만듭니다. 이 계정의 사용자 이름은 AEM 사용자 이름과 동일합니다. 암호화 임의 암호는 AEM에서 자동으로 생성되고 저장(암호화)됩니다.
+   AEM은 각 구매자를 위한 하이브리스에 해당하는(하위) 계정을 만듭니다. 이 계정의 사용자 이름은 AEM 사용자 이름과 동일합니다. 암호화 임의 암호는 AEM에서 자동으로 생성되고 저장(암호화)됩니다.
 
 #### 기존 사용자 {#pre-existing-users}
 
-AEM 프런트 엔드는 기존 hybris 구현 앞에 배치할 수 있습니다. 또한 기존 AEM 설치에 hybris 엔진을 추가할 수 있습니다. 이렇게 하려면 시스템에서 두 시스템 중 하나의 시스템에서 기존 사용자를 정상적으로 처리할 수 있어야 합니다.
+AEM 프런트 엔드는 기존 hybris 구현 앞에 배치할 수 있습니다. 또한 기존 AEM 설치에 하이브리스 엔진을 추가할 수 있습니다. 이렇게 하려면 시스템에서 두 시스템 중 하나의 시스템에서 기존 사용자를 정상적으로 처리할 수 있어야 합니다.
 
 * AEM -> hybris
 
-   * 하이브리스에 로그인할 때, AEM 사용자가 아직 존재하지 않는 경우:
+   * 하이브리스에 로그인할 때 AEM 사용자가 아직 존재하지 않는 경우:
 
       * 암호화 임의의 암호로 새 hybris 사용자 생성
       * AEM 사용자의 사용자 디렉토리에 hybris 사용자 이름 저장
@@ -577,10 +577,10 @@ AEM 프런트 엔드는 기존 hybris 구현 앞에 배치할 수 있습니다. 
 
 * hybris -> AEM
 
-   * AEM에 로그인할 때, 시스템이 사용자를 인식하면 다음과 같이 됩니다.
+   * AEM에 로그인할 때 시스템이 사용자를 인식하면 다음과 같이 됩니다.
 
       * 제공한 사용자 이름/pwd로 하이브리스에 로그인하려고 함
-      * 성공하면 같은 암호로 AEM에서 새 사용자를 만듭니다(AEM 특정 소금은 AEM 특정 해시로 결과).
+      * 성공하면 같은 암호로 AEM에서 새 사용자를 만듭니다(AEM 특정 소금은 AEM 특정 해시로 이어질 수 있음).
    * 위의 알고리즘은 Sling에서 구현됩니다. `AuthenticationInfoPostProcessor`
 
       * See: `com.adobe.cq.commerce.hybris.impl.user.LazyUserImporter.java`
