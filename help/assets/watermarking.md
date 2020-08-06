@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 자산에 워터마크 지정 {#watermarking}
 
-Adobe Experience Manager(AEM) 자산에서는 사용자가 자산의 인증 및 저작권 소유권을 확인하는 데 도움이 되는 이미지에 디지털 워터마크를 추가할 수 있습니다. AEM Assets은 PNG 및 JPEG 파일에서 워터마크로 사용할 텍스트를 지원합니다.
+Adobe Experience Manager(AEM) 자산을 사용하면 사용자가 자산의 인증 및 저작권 소유권을 확인하는 데 도움이 되는 이미지에 디지털 워터마크를 추가할 수 있습니다. AEM Assets은 PNG 및 JPEG 파일에서 워터마크로 사용할 텍스트를 지원합니다.
 
 자산에 워터마크를 적용하려면 [!UICONTROL DAM 자산 업데이트 워크플로우에서 워터마크] 단계를 [!UICONTROL 추가하십시오] .
 
@@ -36,4 +36,4 @@ Adobe Experience Manager(AEM) 자산에서는 사용자가 자산의 인증 및 
 1. 워터마크 **[!UICONTROL 단계를 통해]** DAM 자산 [!UICONTROL 업데이트 워크플로우를] 저장합니다.
 1. AEM 사용자 인터페이스에서 샘플 자산을 업로드합니다. 워터마크는 위 단계에서 구성한 위치에 글꼴 크기, 색상 등과 함께 나타납니다.
 
-프로그래밍 방식으로 또는 동적 정보로 PDF 문서에 워터마크를 지정하려면 [AEM Document Services](/help/forms/using/overview-aem-document-services.md) 제공을 사용하는 것이 좋습니다.
+프로그래밍 방식으로 또는 동적 정보로 PDF 문서에 워터마크를 지정하려면 [AEM Document Services](/help/forms/using/overview-aem-document-services.md) 솔루션을 사용하는 것이 좋습니다.
