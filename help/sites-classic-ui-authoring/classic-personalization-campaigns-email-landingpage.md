@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dfe0ad66-9df5-4ea3-9e66-543b5ccd594a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '658'
+ht-degree: 93%
 
 ---
 
@@ -28,8 +31,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe는 이 기능(리드 및 목록 관리)을 추가로 개선할 계획이 없습니다.\
->권장 사항은 Adobe Campaign 및 [해당 AEM 통합을](/help/sites-administering/campaign.md)활용하는 것입니다.
+>Adobe은 이 기능(리드 및 목록 관리)을 추가로 개선할 계획이 없습니다.\
+>이 권장 사항은 [Adobe Campaign과 AEM의 통합을 활용하는 것입니다](/help/sites-administering/campaign.md).
 
 ## 뉴스레터 목록 만들기 {#creating-a-list-for-the-newsletter}
 
@@ -59,7 +62,7 @@ MCM에서 사람들이 가입할 수 있는 **Geometrixx 뉴스레터**&#x200B;�
 
 1. 양식 작업(양식을 전송할 때 발생하는 작업)을 설정하고 그룹을 구성하여 등록한 사용자를 앞에서 만든 목록(예: geometrixx-newsletter)에 지정합니다.
 
-   ![dc_formstart_thankyouadvanced](assets/dc_formstart_thankyouadvanced.png)
+   ![dc_formstart_thankyoadvanced](assets/dc_formstart_thankyouadvanced.png)
 
 ## 감사 인사 페이지 만들기 {#creating-a-thank-you-page}
 
@@ -67,7 +70,7 @@ MCM에서 사람들이 가입할 수 있는 **Geometrixx 뉴스레터**&#x200B;�
 
 요청을 전송하면 사용자에게 **감사 인사** 페이지가 표시된 후 이메일이 발송됩니다. 이 감사 인사 페이지가 만들어진 위치는 /content/geometrixx/kr/toolbar/newsletter/thank_you입니다.
 
-![mcm_newsletter_thankyoupage](assets/mcm_newsletter_thankyoupage.png)
+![mcm_newsletter_thanquoupage](assets/mcm_newsletter_thankyoupage.png)
 
 ## 티저 추가 {#adding-teasers}
 
