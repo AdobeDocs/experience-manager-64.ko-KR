@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a727c57c-87a9-46c2-8d9b-1348f1ed8ac4
 translation-type: tm+mt
 source-git-commit: 1bbcf870170a5bfae68861614fe1a0a83d86ff61
+workflow-type: tm+mt
+source-wordcount: '2307'
+ht-degree: 98%
 
 ---
 
@@ -40,13 +43,13 @@ source-git-commit: 1bbcf870170a5bfae68861614fe1a0a83d86ff61
 
 웹 사이트의 구조는 컨텐츠 페이지를 담는 트리 구조로 생각할 수 있습니다. 이 컨텐츠 페이지의 이름은 URL을 구성하는 데 사용됩니다. 반면에 제목은 페이지 컨텐츠가 표시될 때 표시됩니다.
 
-The following shows an example from the We.Retail site, where a hiking shorts page ( `desert-sky-shorts`) is accessed:
+다음은 하이킹 요약 페이지(`desert-sky-shorts`)가 액세스되는 We.Retail 사이트의 예제를 보여줍니다.
 
-* Author environment: `http://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
+* 작성자 환경: `http://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 * 게시 환경: `http://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-Depending on the configuration of your instance, use of `/content` might be optional on the publish environment.
+인스턴스의 구성에 따라서는 게시 환경에서 `/content`의 사용은 선택 사항일 수 있습니다.
 
 ```xml
  /content
@@ -131,7 +134,7 @@ When creating a new page, AEM will [validate the page name according to the conv
 | 제목 | 파생되는 이름 |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&amp;ast;00+ | sc---c-.html |
+| SC%&amp;&amp;ast;jcs+ | sc---c-.html |
 
 #### 이름 {#name}
 
@@ -168,7 +171,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
 
 ### 구성 요소 {#components}
 
-Components are the elements provided by AEM so that you can add specific types of content. AEM comes with a range of [out-of-the-box components](/help/sites-authoring/default-components-console.md) that provide comprehensive functionality. These include:
+구성 요소는 특정 유형의 컨텐츠를 추가할 수 있도록 AEM에서 제공하는 요소입니다. AEM에는 다음과 같이 광범위한 기능을 제공하는 다양하고 [특별한 구성 요소](/help/sites-authoring/default-components-console.md)가 포함되어 있습니다.
 
 * 텍스트
 * 이미지
@@ -198,12 +201,14 @@ Components are the elements provided by AEM so that you can add specific types o
 
    * 새 페이지를 만드는 데 사용할 템플릿을 선택한 후, **다음**&#x200B;을 클릭/탭하여 계속 진행합니다.
    * 프로세스를 중단하려면 **취소**&#x200B;를 클릭/탭합니다.
+
    ![chlimage_1-8](assets/chlimage_1-8.png)
 
 1. 마법사의 마지막 단계에서 다음 중 하나를 수행할 수 있습니다.
 
    * 세 탭을 사용하여 새 페이지에 지정할 [페이지 속성](/help/sites-authoring/editing-page-properties.md)을 입력한 다음, 실제로 페이지를 만들려면 **만들기**&#x200B;를 클릭/탭합니다.
    * 선택한 템플릿으로 돌아가려면 **뒤로**&#x200B;를 사용하십시오.
+
    주요 필드는 다음과 같습니다.
 
    * **제목**:
@@ -214,6 +219,7 @@ Components are the elements provided by AEM so that you can add specific types o
       * URI를 생성하는 데 사용됩니다. 지정하지 않을 경우 이름이 제목에서 파생됩니다.
       * 새 페이지를 만들 때 페이지 **이름**&#x200B;을 제공하면 AEM이 AEM 및 JCR에서 지정한 [규칙에 따라 이름을 확인](/help/sites-developing/naming-conventions.md)합니다.
       * **이름** 필드에 **잘못된 문자를 제출**&#x200B;할 수 없습니다. AEM에서 잘못된 문자를 감지하면 필드가 강조 표시되고 제거/교체가 필요한 문자를 나타내는 설명 메시지가 표시됩니다.
+
    >[!NOTE]
    >
    >[페이지 이름 지정 규칙](#page-naming-conventions)을 참조하십시오.
@@ -248,6 +254,7 @@ Components are the elements provided by AEM so that you can add specific types o
 
    * [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-authoring/basic-handling.md#product-navigation) 및 도구 모음
+
    그런 다음 **편집** 아이콘을 선택하십시오.
 
    ![screen_shot_2018-03-22at105355](assets/screen_shot_2018-03-22at105355.png)
@@ -267,6 +274,7 @@ Components are the elements provided by AEM so that you can add specific types o
 
    * [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-authoring/basic-handling.md#product-navigation) 및 도구 모음
+
    그런 다음 페이지 **복사** 아이콘을 선택합니다.
 
    ![screen_shot_2018-03-22at105425](assets/screen_shot_2018-03-22at105425.png)
@@ -294,7 +302,7 @@ Components are the elements provided by AEM so that you can add specific types o
 
 >[!NOTE]
 >
->페이지는 페이지가 기반으로 하는 템플릿이 허용되는 위치로만 이동할 수 있습니다. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
+>페이지는 페이지가 기반으로 하는 템플릿이 허용되는 위치로만 이동할 수 있습니다. 자세한 내용은 [템플릿 가용성](/help/sites-developing/templates.md#template-availability)을 참조하십시오.
 
 페이지를 이동하는 절차와 페이지 이름을 변경하는 절차는 기본적으로 동일하며 같은 마법사로 처리됩니다. 이 마법사를 사용하여 다음을 수행할 수 있습니다.
 
@@ -309,6 +317,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
    * [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-authoring/basic-handling.md#product-navigation) 및 도구 모음
+
    그런 다음 페이지 **이동** 아이콘을 선택합니다.
 
    ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
@@ -319,6 +328,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
    * 페이지가 이동되면 사용할 페이지의 이름을 지정한 후 **다음**&#x200B;을 클릭/탭하여 다음 단계로 진행합니다.
    * 프로세스를 중단하려면 **취소**&#x200B;를 클릭/탭합니다.
+
    ![chlimage_1-11](assets/chlimage_1-11.png)
 
    페이지를 이동하는 경우에만 페이지 이름이 동일하게 유지될 수 있습니다.
@@ -334,6 +344,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
       * 대상의 썸네일을 클릭하여 대상을 선택합니다.
       * 계속하려면 **다음**&#x200B;을 클릭하십시오.
    * **뒤로**&#x200B;를 사용하여 페이지 이름 지정으로 돌아갑니다.
+
    ![chlimage_1-12](assets/chlimage_1-12.png)
 
    >[!NOTE]
@@ -365,7 +376,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
    >
    >보안 규정에 따라, **삭제** 페이지 아이콘은 빠른 작업으로 사용할 수 없습니다.
 
-1. 확인을 요청하는 대화 상자가 나타납니다.
+1. 확인을 묻는 대화 상자가 나타납니다.
 
    * **삭제하기 전에 페이지를 보관하시겠습니까?** - 이 확인란을 선택하면 삭제하도록 선택한 페이지의 버전이 삭제 시 생성됩니다.
       * [버전은 나중에 복원할 수 있습니다.](/help/sites-authoring/working-with-page-versions.md)
@@ -400,6 +411,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 >* 폴더는 **사이트**&#x200B;나 다른 폴더 아래에서만 직접 만들 수 있습니다. 페이지 아래에서는 만들 수 없습니다.
 >* 표준 작업인 이동, 복사, 붙여넣기, 삭제, 게시, 게시 취소 및 보기/편집 속성은 폴더에서 수행할 수 있습니다.
 >* live copy 내에서는 폴더를 선택할 수 없습니다.
+
 >
 
 
