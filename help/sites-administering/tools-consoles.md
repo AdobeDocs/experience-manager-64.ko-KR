@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 2bf8496d-a485-4b39-a6c9-07222b66d0cd
 translation-type: tm+mt
 source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
+workflow-type: tm+mt
+source-wordcount: '883'
+ht-degree: 36%
 
 ---
 
 
 # 도구 콘솔{#tools-consoles}
 
-The **Tools** consoles provide access to a number of specialized tools that help you administer your websites, digital assets and other aspects of your content repository. 현재 사용 중인 UI에 **따라** 두 가지 버전의 도구 콘솔이 있습니다.
+**도구** 콘솔에서는 웹 사이트, 디지털 자산 및 콘텐츠 저장소의 다른 측면을 관리하는 데 도움이 되는 많은 전문 도구에 액세스할 수 있습니다. 현재 사용 중인 UI에 따라 **도구** 콘솔의 두 가지 버전이 있습니다.
 
 * [도구 - 클래식 UI](#tools-classic-ui)
 * [도구 - 터치에 적합한 UI](#tools-touch-optimized-ui)
@@ -34,17 +37,17 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td><a href="/help/sites-administering/msm.md">MSM 제어 센터</a></td> 
    <td> </td> 
-   <td>중앙에서 여러 사이트 관리</td> 
+   <td>여러 사이트를 중앙에서 관리</td> 
   </tr> 
   <tr> 
    <td>클라이언트 컨텍스트 구성<br /> </td> 
    <td> </td> 
-   <td>클라이언트 <a href="/help/sites-developing/client-context.md">컨텍스트는</a> 동적으로 어셈블된 사용자 데이터 컬렉션을 나타냅니다. 기본 및 Marketing Cloud 구성은 여기에 있습니다.<br /> </td> 
+   <td>클라이언트 <a href="/help/sites-developing/client-context.md">컨텍스트는</a> 사용자 데이터의 동적으로 어셈블된 컬렉션을 나타냅니다. 기본 및 Marketing Cloud 구성이 여기에 있습니다.<br /> </td> 
   </tr> 
   <tr> 
-   <td>클라우드 서비스 구성<br /> </td> 
+   <td>Cloud Services 구성<br /> </td> 
    <td> </td> 
-   <td>Adobe Marketing <a href="/help/sites-administering/marketing-cloud.md">Cloud와 통합과 관련된 구성을 보유합니다</a>.</td> 
+   <td>Adobe Marketing Cloud <a href="/help/sites-administering/marketing-cloud.md">와 통합과 관련된 구성을 보유합니다</a>.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/ecommerce.md">상거래</a></td> 
@@ -52,34 +55,34 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <td>가져오기 도구 및 다양한 제품 데이터에 액세스할 수 있습니다.</td> 
   </tr> 
   <tr> 
-   <td>DAM - 디지털 권한 관리<br /> </td> 
+   <td>DAM - Digital Rights Management<br /> </td> 
    <td> </td> 
    <td>디지털 권한 정보 및 라이선스에 대한 액세스 권한을 제공합니다.</td> 
   </tr> 
   <tr> 
    <td>DAM - Health Checker<br /> </td> 
    <td> </td> 
-   <td>비일관성 <code>/var/dam</code> 및 <code>/content/dam</code> 확인을<br /> 비교합니다. 나열된 모든 파일/폴더를 동기화하거나 삭제할 수 있습니다. 폴더 비교를 위한 노드 유형은 웹 콘솔에서 구성할 수 있습니다.</td> 
+   <td>비일관성 <code>/var/dam</code> 을 <code>/content/dam</code> 비교 및<br /> 검사합니다. 나열된 모든 파일/폴더를 동기화하거나 삭제할 수 있습니다. 폴더 비교를 위한 노드 유형은 웹 콘솔에서 구성할 수 있습니다.</td> 
   </tr> 
   <tr> 
    <td>DAM - Adobe Indesign<br /> </td> 
    <td> </td> 
-   <td>Adobe Indesign과 함께 사용할 수 있는 스크립트</td> 
+   <td>Adobe Indesign과 함께 사용할 스크립트입니다.</td> 
   </tr> 
   <tr> 
    <td>DAM - 비디오 프로필<br /> </td> 
    <td> </td> 
-   <td>ffmpeg 변환을 위한 구성 가능한 프로파일</td> 
+   <td>ffmpeg 변환을 위한 구성 가능한 프로필.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/dashboards.md">대시보드</a></td> 
    <td> </td> 
-   <td>보고 대시보드를 만들 수 있습니다.이러한 기능을 사용하면 통합 데이터를 표시하는 페이지를 정의할 수 있습니다.</td> 
+   <td>보고 대시보드를 만들 수 있습니다. 이러한 기능을 사용하면 통합 데이터를 표시하는 페이지를 정의하는 사용자 정의 가능한 방법을 제공합니다.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-developing/designer.md">디자인</a></td> 
    <td> </td> 
-   <td>사용할 그래픽 및 css 파일을 비롯하여 정의된 디자인 목록을 보유합니다.</td> 
+   <td>사용할 그래픽 및 css 파일을 포함하여 정의된 디자인 목록을 포함합니다.</td> 
   </tr> 
   <tr> 
    <td>사용자 지정 설명서</td> 
@@ -89,22 +92,22 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td>양식 제출</td> 
    <td> </td> 
-   <td>받은 양식 제출 목록을 보관합니다.</td> 
+   <td>수신한 양식 목록을 포함합니다.</td> 
   </tr> 
   <tr> 
    <td>가져오기 도구 - <a href="/help/sites-administering/bulk-editor.md">벌크 편집기</a></td> 
    <td> </td> 
-   <td>항목을 검색하고 일괄적으로 편집할 수 있습니다. 컨텐츠를 저장소에 일괄 내보내고 가져올 수도 있습니다.</td> 
+   <td>항목을 검색하고 일괄적으로 편집할 수 있습니다. 또한 컨텐츠를 저장소에 일괄적으로 내보내고 가져올 수도 있습니다.</td> 
   </tr>
   <tr> 
    <td>Importer - Feed Importer</td> 
    <td> </td> 
-   <td><p>Feed Importer는 외부 소스의 컨텐츠를 저장소로 반복적으로 가져오는 프레임워크입니다. Feed Importer는 원격 리소스를 지정된 간격으로 폴링하고, 구문 분석하고, 원격 리소스의 컨텐츠를 나타내는 노드를 컨텐츠 저장소에서 만드는 것을 목적으로 합니다.</p> </td> 
+   <td><p>Feed Importer는 외부 소스의 컨텐츠를 저장소로 반복적으로 가져오는 프레임워크입니다. Feed Importer의 아이디어는 원격 리소스를 지정된 간격으로 폴링하고, 구문 분석하고, 원격 리소스의 컨텐츠를 나타내는 노드를 컨텐츠 저장소에서 만드는 것입니다.</p> </td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/external-link-checker.md">외부 링크 확인</a></td> 
    <td> </td> 
-   <td>AEM 인스턴스 내의 모든 컨텐츠 페이지를 스캔하고 외부 링크를 확인합니다. 유효한 및 잘못된 링크 목록이 표시됩니다.</td> 
+   <td>AEM 인스턴스 내의 모든 컨텐츠 페이지를 스캔하고 모든 외부 링크를 확인합니다. 유효하고 잘못된 링크 목록이 표시됩니다.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-authoring/mobile.md">모바일</a></td> 
@@ -114,7 +117,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td><a href="/help/sites-administering/msm.md">MSM</a></td> 
    <td> </td> 
-   <td>다국어 및 다국적 컨텐츠를 처리하여 지역화된 컨텐츠와 중앙에서 브랜딩을 조정할 수 있습니다.</td> 
+   <td>다국어 및 다국적 콘텐츠를 처리하여 로컬라이즈된 콘텐츠와 중앙에서 브랜딩을 조정할 수 있습니다.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/notification.md">알림</a></td> 
@@ -124,7 +127,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td><a href="/help/sites-administering/package-manager.md">패키지</a></td> 
    <td> </td> 
-   <td>AEM WCM용으로 로드된 패키지를 표시하는 패키지 관리자에 대한 대체 링크입니다. CRX의 패키지 관리자에 표시된 정보와 유사합니다.</td> 
+   <td>AEM WCM용으로 로드된 패키지를 표시하는 패키지 관리자의 대체 링크입니다. CRX의 패키지 관리자에 표시된 정보와 유사합니다.</td> 
   </tr> 
   <tr> 
    <td>복제 - <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">복제 에이전트</a></td> 
@@ -139,7 +142,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td><a href="/help/sites-administering/reporting.md">보고서</a></td> 
    <td> </td> 
-   <td>AEM에서는 사용자 지정된 보고서 범위를 제공하며, 사용자 지정 보고서를 만들거나 직접 개발할 수 있습니다.</td> 
+   <td>AEM은 사용자 정의된 다양한 보고서를 제공하며, 사용자 지정 보고서를 만들거나 자신만의 보고서를 개발할 수 있습니다.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-authoring/scaffolding.md">기본 페이지 스캐폴딩</a></td> 
@@ -159,7 +162,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td><a href="/help/communities/working-with-srp.md">socialconfig</a></td> 
    <td> </td> 
-   <td>기본 SRP 구성. 스토리지 <a href="/help/communities/srp-config.md">구성</a> 콘솔을 참조하십시오.</td> 
+   <td>기본 SRP 구성. 스토리지 <a href="/help/communities/srp-config.md">구성 콘솔을</a> 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td>작업 관리</td> 
@@ -167,19 +170,19 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <td>이 항목과 관련된 활성 기능이 없습니다.</td> 
   </tr> 
   <tr> 
-   <td>테넌트</td> 
+   <td>세입자</td> 
    <td> </td> 
    <td>이 항목과 관련된 활성 기능이 없습니다.</td> 
   </tr> 
   <tr> 
    <td>버전 관리 - <a href="/help/sites-deploying/version-purging.md">삭제 버전</a></td> 
    <td> </td> 
-   <td>필요에 따라 페이지 버전을 제거할 수 있습니다.</td> 
+   <td>필요에 따라 페이지 버전을 삭제할 수 있습니다.</td> 
   </tr> 
   <tr> 
    <td>가상 저장소</td> 
    <td> </td> 
-   <td>작업 공간 마운트 기능을 사용하여 가상 저장소를 설정하여 JCR 지원 컨텐츠 애플리케이션에 CRX 및 JCR 커넥터를 기반으로 하는 JCR 컨텐츠 인프라에 대한 액세스를 간소화할 수 있습니다.</td> 
+   <td>작업 공간 마운트 기능을 사용하여 가상 저장소를 설정하여 JCR 지원 컨텐츠 애플리케이션에 CRX 및 JCR 커넥터를 기반으로 하는 JCR 컨텐츠 인프라에 대한 간단한 액세스를 제공할 수 있습니다.</td> 
   </tr> 
   <tr> 
    <td>시계</td> 
@@ -189,7 +192,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td><a href="/help/sites-administering/workflows.md">워크플로우</a></td> 
    <td> </td> 
-   <td>워크플로우는 편집 프로세스를 지원하는 페이지 또는 디지털 자산에 대한 일련의 작업을 제어합니다.</td> 
+   <td>워크플로우는 모든 편집 프로세스를 지원하는 페이지 또는 디지털 자산에 대한 일련의 작업을 제어합니다.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -256,7 +259,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td> </td> 
    <td><a href="/help/sites-deploying/replication.md">복제</a></td> 
-   <td>여러 웹 사이트를 만들고 관리합니다.</td> 
+   <td>여러 웹 사이트를 제작하고 관리할 수 있습니다.</td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -296,7 +299,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td> </td> 
    <td><a href="/help/sites-deploying/offloading.md">오프로드 브라우저</a></td> 
-   <td>오프로딩 관리</td> 
+   <td>오프로드를 관리합니다.</td> 
   </tr> 
   <tr> 
    <td> </td> 
