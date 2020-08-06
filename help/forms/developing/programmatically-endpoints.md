@@ -28,14 +28,14 @@ Endpoint Registry 서비스는 끝점을 프로그래밍 방식으로 관리하�
 * SOAP
 * 감시 폴더
 * 이메일
-* (AEM Forms에 대해 더 이상 사용되지 않음) Remoting
+* (AEM 양식에서 더 이상 사용되지 않음) Remoting
 * 작업 관리자
 
    >[!NOTE]
    >
-   >SOAP, EJB 및 (JEE의 AEM 양식에 대해 더 이상 사용되지 않음) 원격 끝점은 활성화된 각 서비스에 대해 자동으로 생성됩니다. SOAP 및 EJB 끝점은 모든 서비스 작업에 대해 SOAP 및 EJB를 활성화합니다.
+   >SOAP, EJB 및 (JEE의 AEM 양식에서 더 이상 사용되지 않음) 원격 끝점은 활성화된 각 서비스에 대해 자동으로 생성됩니다. SOAP 및 EJB 끝점은 모든 서비스 작업에 대해 SOAP 및 EJB를 활성화합니다.
 
-   원격 끝점을 사용하면 Flex 클라이언트가 끝점이 추가된 AEM Forms 서비스에서 작업을 호출할 수 있습니다. 끝점과 동일한 이름의 Flex 대상이 생성되며 Flex 클라이언트는 이 대상을 가리키는 RemoteObjects를 만들어 관련 서비스에서 작업을 호출할 수 있습니다.
+   원격 끝점을 사용하면 Flex 클라이언트가 끝점이 추가된 AEM Forms 서비스에서 작업을 호출할 수 있습니다. 끝점과 동일한 이름의 Flex 대상이 만들어지고 Flex 클라이언트는 이 대상을 가리키는 RemoteObjects를 만들어 관련 서비스에서 작업을 호출할 수 있습니다.
 
    이메일, 작업 관리자 및 감시 폴더 끝점은 서비스의 특정 작업만 노출합니다. 이러한 끝점을 추가하려면 호출할 메서드를 선택하고 구성 매개 변수를 설정하고 입력 및 출력 매개 변수 매핑을 지정하려면 두 번째 구성 단계가 필요합니다.
 
@@ -55,7 +55,7 @@ Endpoint Registry 서비스는 끝점을 프로그래밍 방식으로 관리하�
 
 ## EJB 끝점 추가 {#adding-ejb-endpoints}
 
-AEM Forms Java API를 사용하여 프로그래밍 방식으로 서비스에 EJB 끝점을 추가할 수 있습니다. 서비스에 EJB 끝점을 추가하면 클라이언트 응용 프로그램이 EJB 모드를 사용하여 서비스를 불러오도록 할 수 있습니다. 즉, AEM Forms를 호출하는 데 필요한 연결 속성을 설정할 때 EJB 모드를 선택할 수 있습니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+AEM Forms Java API를 사용하여 프로그래밍 방식으로 서비스에 EJB 끝점을 추가할 수 있습니다. 서비스에 EJB 끝점을 추가하면 클라이언트 응용 프로그램이 EJB 모드를 사용하여 서비스를 불러오도록 할 수 있습니다. 즉, AEM Forms을 호출하는 데 필요한 연결 속성을 설정할 때 EJB 모드를 선택할 수 있습니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
@@ -81,10 +81,10 @@ AEM Forms Java API를 사용하여 프로그래밍 방식으로 서비스에 EJB
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
-* jbossall-client.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
+* adobe-utilities.jar (AEM Forms이 JBoss Application Server에 배포된 경우 필요)
+* jbossall-client.jar (AEM Forms이 JBoss 응용 프로그램 서버에 배포된 경우 필요)
 
-이러한 JAR 파일의 위치에 대한 자세한 내용은 AEM [Forms Java 라이브러리 파일 포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+이러한 JAR 파일의 위치에 대한 자세한 내용은 AEM Forms [Java 라이브러리 파일 포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **EndpointRegistry 클라이언트 개체 만들기**
 
@@ -158,7 +158,7 @@ Java API를 사용하여 EJB 끝점을 추가합니다.
 
 ## SOAP 끝점 추가 {#adding-soap-endpoints}
 
-AEM Forms Java API를 사용하여 프로그래밍 방식으로 서비스에 SOAP 끝점을 추가할 수 있습니다. SOAP 끝점을 추가하면 클라이언트 응용 프로그램이 SOAP 모드를 사용하여 서비스를 호출할 수 있도록 합니다. 즉, AEM Forms를 호출하는 데 필요한 연결 속성을 설정할 때 SOAP 모드를 선택할 수 있습니다.
+AEM Forms Java API를 사용하여 프로그래밍 방식으로 서비스에 SOAP 끝점을 추가할 수 있습니다. SOAP 끝점을 추가하면 클라이언트 응용 프로그램이 SOAP 모드를 사용하여 서비스를 호출할 수 있도록 합니다. 즉, AEM Forms을 호출하는 데 필요한 연결 속성을 설정할 때 SOAP 모드를 선택할 수 있습니다.
 
 >[!NOTE]
 >
@@ -186,10 +186,10 @@ AEM Forms Java API를 사용하여 프로그래밍 방식으로 서비스에 SOA
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
-* jbossall-client.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
+* adobe-utilities.jar (AEM Forms이 JBoss Application Server에 배포된 경우 필요)
+* jbossall-client.jar (AEM Forms이 JBoss 응용 프로그램 서버에 배포된 경우 필요)
 
-SOAP 끝점을 만들려면 이 JAR 파일이 필요합니다. 그러나 SOAP 끝점을 사용하여 서비스를 호출하는 경우 추가 JAR 파일이 필요합니다. AEM Forms JAR 파일에 대한 자세한 내용은 [AEM Forms Java 라이브러리 파일 포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+SOAP 끝점을 만들려면 이 JAR 파일이 필요합니다. 그러나 SOAP 끝점을 사용하여 서비스를 호출하는 경우 추가 JAR 파일이 필요합니다. AEM Forms JAR 파일에 대한 자세한 내용은 AEM Forms [Java 라이브러리 파일 포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **EndpointRegistry 클라이언트 개체 만들기**
 
@@ -265,7 +265,7 @@ Java API를 사용하여 서비스에 SOAP 끝점을 추가합니다.
 
 AEM Forms Java API를 사용하여 프로그래밍 방식으로 감시 폴더 끝점을 서비스에 추가할 수 있습니다. 감시 폴더 끝점을 추가하면 사용자가 폴더에 파일(예: PDF 파일)을 배치할 수 있습니다. 파일을 폴더에 저장하면 구성된 서비스가 호출되어 파일을 조작합니다. 서비스가 지정된 작업을 수행하면 수정된 파일이 지정된 출력 폴더에 저장됩니다. 감시 폴더는 정해진 속도 간격으로 또는 매주 월요일, 수요일, 금요일 정오와 같은 이른 일정에 따라 스캔되도록 구성됩니다.
 
-시청 대상 폴더 끝점을 서비스에 프로그래밍 방식으로 추가할 목적으로 EncryptDocument라는 단기간 프로세스를 *고려합니다*. (AEM [양식 프로세스 이해를 참조하십시오](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).)
+시청 대상 폴더 끝점을 서비스에 프로그래밍 방식으로 추가할 목적으로 EncryptDocument라는 단기간 프로세스를 *고려합니다*. AEM Forms 프로세스 [이해를 참조하십시오](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).
 
 ![aw_aw_encryptdocumentprocess](assets/aw_aw_encryptdocumentprocess.png)
 
@@ -296,10 +296,10 @@ AEM Forms Java API를 사용하여 프로그래밍 방식으로 감시 폴더 �
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
-* jbossall-client.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
+* adobe-utilities.jar (AEM Forms이 JBoss Application Server에 배포된 경우 필요)
+* jbossall-client.jar (AEM Forms이 JBoss 응용 프로그램 서버에 배포된 경우 필요)
 
-이러한 JAR 파일의 위치에 대한 자세한 내용은 AEM [Forms Java 라이브러리 파일 포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+이러한 JAR 파일의 위치에 대한 자세한 내용은 AEM Forms [Java 라이브러리 파일 포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **EndpointRegistry 클라이언트 개체 만들기**
 
@@ -498,7 +498,7 @@ AEM Forms Java API를 사용하여 감시 폴더 끝점을 추가합니다.
 
 AEM Forms Java API를 사용하여 프로그래밍 방식으로 서비스에 이메일 끝점을 추가할 수 있습니다. 이메일 끝점을 추가하면 사용자가 하나 이상의 첨부 파일이 있는 이메일 메시지를 지정된 이메일 계정에 보낼 수 있습니다. 그런 다음 서비스 구성 작업이 호출되어 파일을 조작합니다. 서비스는 지정된 작업을 수행한 후 수정된 파일을 첨부 파일로 보낸 사람에게 이메일 메시지를 보냅니다.
 
-서비스에 이메일 끝점을 프로그래밍 방식으로 추가할 목적으로 MyApplication\EncryptDocument라는 짧은 기간 프로세스를 *고려해야 합니다*. 단기 프로세스에 대한 자세한 내용은 AEM [Forms 프로세스 이해를 참조하십시오](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).
+서비스에 이메일 끝점을 프로그래밍 방식으로 추가할 목적으로 MyApplication\EncryptDocument라는 짧은 기간 프로세스를 *고려해야 합니다*. 단기 프로세스에 대한 자세한 내용은 AEM Forms 프로세스 [이해를 참조하십시오](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).
 
 ![ae_ae_encryptdocumentprocess](assets/ae_ae_encryptdocumentprocess.png)
 
@@ -529,10 +529,10 @@ AEM Forms Java API를 사용하여 프로그래밍 방식으로 서비스에 이
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
-* jbossall-client.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
+* adobe-utilities.jar (AEM Forms이 JBoss Application Server에 배포된 경우 필요)
+* jbossall-client.jar (AEM Forms이 JBoss 응용 프로그램 서버에 배포된 경우 필요)
 
-이러한 JAR 파일의 위치에 대한 자세한 내용은 AEM [Forms Java 라이브러리 파일 포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+이러한 JAR 파일의 위치에 대한 자세한 내용은 AEM Forms [Java 라이브러리 파일 포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **EndpointRegistry 클라이언트 개체 만들기**
 
@@ -591,7 +591,7 @@ AEM Forms Java API를 사용하여 프로그래밍 방식으로 서비스에 이
 
 이메일 끝점에 필요한 입력 매개 변수 값을 정의하려면 다음 값을 지정합니다.
 
-**입력 매개 변수 이름**: 입력 매개 변수의 이름입니다. 프로세스에 대해 워크벤치에 입력 값의 이름이 지정됩니다. 입력 값이 서비스 작업(Workbench에서 생성된 프로세스가 아닌 Forms 서비스)에 속한 경우, component.xml 파일에 입력 이름이 지정됩니다. 예를 들어 이 섹션에 도입된 프로세스에 대한 입력 매개 변수의 이름은 입니다 `InDoc`.
+**입력 매개 변수 이름**: 입력 매개 변수의 이름입니다. 프로세스에 대해 워크벤치에 입력 값의 이름이 지정됩니다. 입력 값이 서비스 작업(Workbench에서 생성된 프로세스가 아닌 Forms 서비스)에 속한 경우, 입력 이름이 component.xml 파일에 지정됩니다. 예를 들어 이 섹션에 도입된 프로세스에 대한 입력 매개 변수의 이름은 입니다 `InDoc`.
 
 **매핑 유형**: 서비스 작업을 호출하는 데 필요한 입력 값을 구성하는 데 사용됩니다. 두 가지 유형의 매핑 유형은 다음과 같습니다.
 
@@ -750,9 +750,9 @@ Java API를 사용하여 이메일 끝점을 추가합니다.
 
 >[!NOTE]
 >
->JEE의 AEM 양식에 대해 사용되지 않는 LiveCycle Remoting API.
+>LiveCycle Remoting API는 JEE에서 AEM 양식에 대해 더 이상 사용되지 않습니다.
 
-AEM Forms Java API를 사용하여 프로그래밍 방식으로 원격 끝점을 서비스에 추가할 수 있습니다. Remoting 끝점을 추가하면 Flex 응용 프로그램이 Remoting을 사용하여 서비스를 호출할 수 있게 됩니다. (AEM Forms [Remoting을 사용하여 AEM Forms 호출(AEM Forms에 대해 더 이상 사용되지 않음) AEM Forms Remoting을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+AEM Forms Java API를 사용하여 프로그래밍 방식으로 서비스에 원격 끝점을 추가할 수 있습니다. 원격 끝점을 추가하면 Flex 응용 프로그램이 원격 사용을 통해 서비스를 호출하도록 활성화합니다. (AEM Forms [호출 사용(AEM 양식에서 더 이상 사용되지 않음) AEM Forms Remoting을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
 Remoting 끝점을 서비스에 프로그래밍 방식으로 추가할 목적으로 EncryptDocument라는 짧은 *프로세스를 고려하십시오*.
 
@@ -784,10 +784,10 @@ Remoting 끝점을 서비스에 프로그래밍 방식으로 추가할 목적으
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
-* jbossall-client.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
+* adobe-utilities.jar (AEM Forms이 JBoss Application Server에 배포된 경우 필요)
+* jbossall-client.jar (AEM Forms이 JBoss 응용 프로그램 서버에 배포된 경우 필요)
 
-이러한 JAR 파일의 위치에 대한 자세한 내용은 AEM [Forms Java 라이브러리 파일 포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+이러한 JAR 파일의 위치에 대한 자세한 내용은 AEM Forms [Java 라이브러리 파일 포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **EndpointRegistry 클라이언트 개체 만들기**
 
@@ -809,7 +809,7 @@ Remoting 끝점을 서비스에 프로그래밍 방식으로 추가할 목적으
 
 **끝점 사용**
 
-새 끝점을 만든 후 활성화해야 합니다. 원격 끝점이 활성화되면 Flex 클라이언트가 서비스를 호출할 수 있습니다.
+새 끝점을 만든 후 활성화해야 합니다. 원격 끝점이 활성화되면 Flex 클라이언트가 서비스를 호출할 수 있게 됩니다.
 
 **참고 항목**
 
@@ -861,7 +861,7 @@ Java API를 사용하여 원격 끝점을 추가합니다.
 
 ## TaskManager 끝점 추가 {#adding-taskmanager-endpoints}
 
-AEM Forms Java API를 사용하여 프로그래밍 방식으로 TaskManager 끝점을 서비스에 추가할 수 있습니다. 서비스에 TaskManager 끝점을 추가하면 Workspace 사용자가 서비스를 호출할 수 있습니다. 즉, Workspace에서 작업하는 사용자는 해당 TaskManager 종단점이 있는 프로세스를 호출할 수 있습니다.
+AEM Forms Java API를 사용하여 프로그래밍 방식으로 서비스에 TaskManager 끝점을 추가할 수 있습니다. 서비스에 TaskManager 끝점을 추가하면 Workspace 사용자가 서비스를 호출할 수 있습니다. 즉, Workspace에서 작업하는 사용자는 해당 TaskManager 종단점이 있는 프로세스를 호출할 수 있습니다.
 
 >[!NOTE]
 >
@@ -886,10 +886,10 @@ AEM Forms Java API를 사용하여 프로그래밍 방식으로 TaskManager 끝�
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
-* jbossall-client.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
+* adobe-utilities.jar (AEM Forms이 JBoss Application Server에 배포된 경우 필요)
+* jbossall-client.jar (AEM Forms이 JBoss 응용 프로그램 서버에 배포된 경우 필요)
 
-이러한 JAR 파일의 위치에 대한 자세한 내용은 AEM [Forms Java 라이브러리 파일 포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+이러한 JAR 파일의 위치에 대한 자세한 내용은 AEM Forms [Java 라이브러리 파일 포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **EndpointRegistry 클라이언트 개체 만들기**
 
@@ -1007,10 +1007,10 @@ AEM Forms Java API를 사용하여 기존 끝점을 프로그래밍 방식으로
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
-* jbossall-client.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
+* adobe-utilities.jar (AEM Forms이 JBoss Application Server에 배포된 경우 필요)
+* jbossall-client.jar (AEM Forms이 JBoss 응용 프로그램 서버에 배포된 경우 필요)
 
-이러한 JAR 파일의 위치에 대한 자세한 내용은 AEM [Forms Java 라이브러리 파일 포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+이러한 JAR 파일의 위치에 대한 자세한 내용은 AEM Forms [Java 라이브러리 파일 포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **EndpointRegistry 클라이언트 개체 만들기**
 
@@ -1057,7 +1057,7 @@ Java API를 사용하여 끝점을 수정합니다.
 
 1. 수정할 끝점을 검색합니다.
 
-   * 현재 사용자(연결 속성에 지정됨)가 개체의 메서드를 호출하고 필터 역할을 하는 `EndpointRegistryClient` `getEndpoints` `PagingFilter` 개체를 전달하여 액세스할 수 있는 모든 끝점의 목록을 검색합니다. 모든 끝점을 반환하는 `(PagingFilter)null` 값을 전달할 수 있습니다. 이 메서드는 각 요소가 개체인 `java.util.List` 개체를 `Endpoint` 반환합니다. 개체에 대한 자세한 내용은 `PagingFilter` AEM Forms API 참조 [](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * 현재 사용자(연결 속성에 지정됨)가 개체의 메서드를 호출하고 필터 역할을 하는 `EndpointRegistryClient` `getEndpoints` `PagingFilter` 개체를 전달하여 액세스할 수 있는 모든 끝점의 목록을 검색합니다. 모든 끝점을 반환하는 `(PagingFilter)null` 값을 전달할 수 있습니다. 이 메서드는 각 요소가 개체인 `java.util.List` 개체를 `Endpoint` 반환합니다. 개체에 대한 자세한 내용은 `PagingFilter` AEM Forms API 참조 [](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)자료를 참조하십시오.
    * 개체를 반복하여 끝점이 있는지 여부를 `java.util.List` 확인합니다. 끝점이 있으면 각 요소는 `EndPoint` 인스턴스입니다.
    * 개체의 메서드를 호출하여 종단점에 해당하는 서비스를 `EndPoint` `getServiceId` 결정합니다. 이 메서드는 서비스 이름을 지정하는 문자열 값을 반환합니다.
    * 개체의 메서드를 호출하여 종점의 유형을 `EndPoint` 결정합니다 `getConnectorId` . 이 메서드는 끝점의 유형을 지정하는 문자열 값을 반환합니다. 예를 들어 종점이 감시 폴더 종단점이면 이 메서드는 반환합니다 `WatchedFolder`.
@@ -1109,10 +1109,10 @@ AEM Forms Java API를 사용하여 서비스에서 끝점을 프로그래밍 방
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
-* jbossall-client.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
+* adobe-utilities.jar (AEM Forms이 JBoss Application Server에 배포된 경우 필요)
+* jbossall-client.jar (AEM Forms이 JBoss 응용 프로그램 서버에 배포된 경우 필요)
 
-이러한 JAR 파일의 위치에 대한 자세한 내용은 AEM [Forms Java 라이브러리 파일 포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+이러한 JAR 파일의 위치에 대한 자세한 내용은 AEM Forms [Java 라이브러리 파일 포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **EndpointRegistry 클라이언트 개체 만들기**
 
@@ -1182,7 +1182,7 @@ AEM Forms API를 사용하여 끝점 커넥터에 대한 정보를 프로그래�
 
 >[!NOTE]
 >
->이 항목에서는 `ConnectorRegistryClient` API를 사용하여 끝점 커넥터에 대한 정보를 검색합니다. (AEM [Forms API 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)참조)
+>이 항목에서는 `ConnectorRegistryClient` API를 사용하여 끝점 커넥터에 대한 정보를 검색합니다. ( [AEM Forms API 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)참조)
 
 ### 단계 요약 {#summary_of_steps-8}
 
@@ -1201,10 +1201,10 @@ AEM Forms API를 사용하여 끝점 커넥터에 대한 정보를 프로그래�
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
-* jbossall-client.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
+* adobe-utilities.jar (AEM Forms이 JBoss Application Server에 배포된 경우 필요)
+* jbossall-client.jar (AEM Forms이 JBoss 응용 프로그램 서버에 배포된 경우 필요)
 
-AEM Forms가 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포된 경우, adobe-utilities.jar 및 jbossall-client.jar를 AEM Forms가 배포된 J2EE 응용 프로그램 서버에 고유한 JAR 파일로 교체합니다. 모든 AEM Forms JAR 파일의 위치에 대한 자세한 내용은 [AEM Forms Java 라이브러리 파일 포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+AEM Forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포된 경우, adobe-utilities.jar 및 jbossall-client.jar를 AEM Forms이 배포된 J2EE 응용 프로그램 서버에 고유한 JAR 파일로 대체합니다. 모든 AEM Forms JAR 파일의 위치에 대한 자세한 내용은 AEM Forms [Java 라이브러리 파일 포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **ConnectorRegistry 클라이언트 개체 만들기**
 
@@ -1218,7 +1218,7 @@ AEM Forms가 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배
 * **SOAP**: 클라이언트 응용 프로그램이 SOAP 모드를 사용하여 서비스를 호출할 수 있도록 합니다.
 * **감시 폴더**: 감시 폴더를 사용하여 서비스를 호출할 수 있습니다.
 * **이메일**: 이메일 메시지를 사용하여 서비스를 호출할 수 있습니다.
-* **원격**: Flex 클라이언트 애플리케이션에서 서비스를 호출할 수 있습니다.
+* **원격**: Flex 클라이언트 응용 프로그램에서 서비스를 호출할 수 있습니다.
 * **TaskManagerConnector**: 작업 공간 사용자가 작업 공간 내에서 서비스를 호출할 수 있도록 합니다.
 
 **구성 값 검색**
