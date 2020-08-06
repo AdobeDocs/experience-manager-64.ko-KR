@@ -1,8 +1,8 @@
 ---
-title: AEM의 정리 문제 완화
-seo-title: AEM의 정리 문제 완화
-description: AEM에서 직렬화 문제를 해결하는 방법을 알아봅니다.
-seo-description: AEM에서 직렬화 문제를 해결하는 방법을 알아봅니다.
+title: AEM의 일련화 문제 완화
+seo-title: AEM의 일련화 문제 완화
+description: AEM에서 일련화 문제를 해결하는 방법을 알아봅니다.
+seo-description: AEM에서 일련화 문제를 해결하는 방법을 알아봅니다.
 uuid: c3989dc6-c728-40fd-bc47-f8427ed71a49
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -18,29 +18,29 @@ ht-degree: 0%
 ---
 
 
-# AEM의 정리 문제 완화{#mitigating-serialization-issues-in-aem}
+# AEM의 일련화 문제 완화{#mitigating-serialization-issues-in-aem}
 
 ## 개요 {#overview}
 
-Adobe의 AEM 팀은 [CVE-2015-7501에](https://github.com/kantega/notsoserial) 설명된 취약점 완화를 지원하기 위해 오픈 소스 프로젝트 NotSoSerial ****&#x200B;와 긴밀히 협력하고 있습니다. NotSoSerial는 [Apache 2 라이선스에](https://www.apache.org/licenses/LICENSE-2.0) 따라 라이선스가 부여되고 자체 BSD [유사 라이선스에 따라 라이선스가 부여된 ASM 코드를 포함합니다](https://asm.ow2.org/license.html).
+Adobe의 AEM 팀은 [CVE-2015-7501에](https://github.com/kantega/notsoserial) 설명된 취약점 완화를 지원하기 위해 오픈 소스 프로젝트 NotSoSerial ****&#x200B;와 긴밀하게 협력하고 있습니다. NotSoSerial는 [Apache 2 라이선스에](https://www.apache.org/licenses/LICENSE-2.0) 따라 라이선스가 부여되고 자체 BSD [유사 라이선스에 따라 라이선스가 부여된 ASM 코드를 포함합니다](https://asm.ow2.org/license.html).
 
-이 패키지에 포함된 에이전트 jar는 Adobe에서 수정한 NotSoSerial 배포입니다.
+이 패키지에 포함된 에이전트 jar가 Adobe에서 NotSoSerial를 수정한 배포입니다.
 
-NotSoSerial는 Java 수준 문제에 대한 Java 수준 솔루션이며 AEM에 고유하지 않습니다. 객체를 역직렬화하려는 시도에 프리플라이트 검사가 추가됩니다. 이 검사는 방화벽 스타일 허용 목록 및/또는 차단 목록에 대해 클래스 이름을 테스트합니다. 기본 블록 목록의 클래스 수가 제한되어 있으므로 시스템 또는 코드에 영향을 주지 않을 수 있습니다.
+NotSoSerial는 Java 레벨 문제에 대한 Java 수준 솔루션으로 AEM에 국한되지 않습니다. 객체를 역직렬화하려는 시도에 프리플라이트 검사가 추가됩니다. 이 확인은 방화벽 스타일 허용 목록 및/또는 차단 목록에 대해 클래스 이름을 테스트합니다. 기본 차단 목록의 클래스 수가 제한되어 있으므로 시스템 또는 코드에 영향을 주지 않을 수 있습니다.
 
-기본적으로 에이전트는 현재 알려진 취약점 클래스에 대해 블록 목록 검사를 수행합니다. 이 블록 목록은 이 유형의 취약점을 사용하는 현재 악용 목록으로부터 사용자를 보호하기 위한 것입니다.
+기본적으로 에이전트는 현재 알려진 취약점 클래스에 대해 차단 목록 검사를 수행합니다. 이 차단 목록은 이 유형의 취약점을 사용하는 현재 악용 목록으로부터 사용자를 보호하기 위한 것입니다.
 
-이 문서의 에이전트 구성 섹션에 있는 지침에 따라 블록 목록 및 [허용](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) 목록을 구성할 수 있습니다.
+차단 목록 및 허용 목록은 이 문서의 [에이전트 구성 섹션에 있는 지침에 따라 구성할](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) 수 있습니다.
 
 상담원은 최근에 알려진 취약한 계층들을 완화시키기 위해 노력하고 있다. 프로젝트에서 신뢰할 수 없는 데이터를 역직렬화하는 경우 서비스 거부(DoS) 공격, 메모리 부족 공격 및 알 수 없는 향후 역직렬화 악용에 취약할 수 있습니다.
 
-Adobe는 공식적으로 Java 6, 7 및 8을 지원하지만 NotSoSerial도 Java 5를 지원한다는 점을 이해합니다.
+Adobe은 공식적으로 Java 6, 7 및 8을 지원하지만 NotSoSerial도 Java 5를 지원한다는 점을 이해합니다.
 
 ## 에이전트 설치 {#installing-the-agent}
 
 >[!NOTE]
 >
->이전에 AEM 6.1용 직렬화 핫픽스를 설치한 경우 java 실행 라인에서 에이전트 시작 명령을 제거하십시오.
+>AEM 6.1용 직렬화 핫픽스를 이전에 설치한 경우 java 실행 라인에서 에이전트 시작 명령을 제거하십시오.
 
 1. com.adobe.cq.cq-serialization-tester **번들을** 설치합니다.
 
@@ -51,13 +51,13 @@ Adobe는 공식적으로 Java 6, 7 및 8을 지원하지만 NotSoSerial도 Java 
 
 NotSoSerial 에이전트는 응용 프로그램 서버용 AEM의 표준 배포에 포함되지 않습니다. 그러나 AEM jar 배포에서 추출하여 애플리케이션 서버 설정과 함께 사용할 수 있습니다.
 
-1. 먼저 AEM 빠른 시작 파일을 다운로드하고 추출합니다.
+1. 먼저 AEM 빠른 시작 파일을 다운로드하여 추출합니다.
 
    ```shell
    java -jar aem-quickstart-6.2.0.jar -unpack
    ```
 
-1. 새로 압축을 푼 AEM 빠른 시작 위치로 이동한 후 `crx-quickstart/opt/notsoserial/` 폴더를 AEM 애플리케이션 서버 설치 `crx-quickstart` 폴더에 복사합니다.
+1. 새로 압축을 푼 AEM quickstart의 위치로 이동한 다음 `crx-quickstart/opt/notsoserial/` 폴더를 AEM 응용 프로그램 서버 설치 `crx-quickstart` 폴더에 복사합니다.
 
 1. 서버를 실행 중인 사용자 `/opt` 로 소유권 변경:
 
@@ -69,7 +69,7 @@ NotSoSerial 에이전트는 응용 프로그램 서버용 AEM의 표준 배포�
 
 ## 에이전트 구성 {#configuring-the-agent}
 
-대부분의 설치에는 기본 구성이 적합합니다. 여기에는 알려진 원격 실행 취약점 클래스의 블록 목록과 신뢰할 수 있는 데이터의 역직렬화가 비교적 안전해야 하는 패키지의 허용 목록이 포함됩니다.
+대부분의 설치에는 기본 구성이 적합합니다. 여기에는 알려진 원격 실행 취약점의 차단 목록과 신뢰할 수 있는 데이터의 역직렬화를 비교적 안전하게 해제해야 하는 패키지의 허용 목록이 포함됩니다.
 
 방화벽 구성은 동적이며, 다음 방법으로 언제든지 변경할 수 있습니다.
 
@@ -87,11 +87,11 @@ NotSoSerial 에이전트는 응용 프로그램 서버용 AEM의 표준 배포�
 
 **목록 허용**
 
-In the allow listing section, these are classes or package prefix that will be allowed for deserialization. 자신의 클래스를 역직렬화하는 경우 클래스 또는 패키지를 이 허용 목록에 추가해야 합니다.
+In the allow listing section, these are classes or package prefix that will be allowed for deserialization. 자신의 클래스를 역직렬화하는 경우 클래스 또는 패키지를 이 허용 목록에 추가해야 한다는 것을 알아야 합니다.
 
 **블록 목록**
 
-블록 목록 섹션에는 역직렬화에 허용되지 않는 클래스가 있습니다. 이러한 클래스의 초기 집합은 원격 실행 공격에 취약하다고 발견된 클래스로 제한됩니다. 나열된 항목 허용 전에 블록 목록이 적용됩니다.
+블록 목록 섹션에는 역직렬화에 허용되지 않는 클래스가 있습니다. 이러한 클래스의 초기 집합은 원격 실행 공격에 취약하다고 발견된 클래스로 제한됩니다. 나열된 항목 허용 전에 차단 목록이 적용됩니다.
 
 **진단 로깅**
 
@@ -129,11 +129,11 @@ URL에 액세스하면 에이전트와 관련된 상태 확인 목록이 표시�
 
    >[!NOTE]
    >
-   >이 작업을 수행하려면 -nofork CQ/AEM 옵션뿐만 아니라 해당 JVM 메모리 설정과 함께 -nofork CQ/AEM 옵션도 사용해야 합니다. 이는 에이전트가 잘못된 JVM에서 활성화되지 않기 때문입니다.
+   >이 작업을 수행하려면 -nofork CQ/AEM 옵션뿐만 아니라 해당 JVM 메모리 설정과 함께 -nofork CQ/옵션도 사용해야 합니다. 이 옵션은 에이전트가 잘못된 JVM에서 활성화되지 않습니다.
 
    >[!NOTE]
    >
-   >NotSoSerial 에이전트 jar의 Adobe 배포는 AEM 설치 `crx-quickstart/opt/notsoserial/` 폴더에서 찾을 수 있습니다.
+   >NotSoSerial 에이전트 jar의 Adobe 배포은 AEM 설치 `crx-quickstart/opt/notsoserial/` 폴더에서 찾을 수 있습니다.
 
 1. JVM 중지 및 다시 시작
 
