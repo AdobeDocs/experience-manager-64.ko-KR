@@ -32,7 +32,7 @@ AEM 인스턴스가 배포된 후 작업, 성능 및 무결성을 모니터링�
 | 파일 시스템을 모니터링하고 있습니다. | 사용 가능한 디스크 공간이 부족한 경우 CRX 저장소가 &quot;동결됨&quot;입니다. 공간이 확보되면 다시 시작됩니다. | 여유 공간 `*ERROR* LowDiskSpaceBlocker`이 낮아지면 로그 파일에서 &quot;&quot; 메시지를 볼 수 있습니다. |
 | [로그 파일을](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) 모니터링하고 있습니다. |  |  |
 | 시스템 모니터링은 백그라운드에서 계속 실행됩니다. | CPU, 메모리, 디스크 및 네트워크 사용을 포함합니다. 예를 들어 iostat / vmstat / perfmon을 사용합니다. | 기록된 데이터는 시각화되며 성능 문제를 추적하는 데 사용할 수 있습니다. 원시 데이터도 액세스할 수 있습니다. |
-| [AEM 성능이 모니터링하고 있습니다](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | 트래픽 수준 [을](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) 모니터링하기 위한 요청 카운터 포함 | 장기적으로 실연되는 중대한 손실을 볼 경우 상세한 조사가 필요하다. |
+| [AEM 성능 모니터링](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance)중입니다. | 트래픽 수준 [을](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) 모니터링하기 위한 요청 카운터 포함 | 장기적으로 실연되는 중대한 손실을 볼 경우 상세한 조사가 필요하다. |
 | 복제 에이전트 [를 모니터링하고 있습니다](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). &quot; |  |  |
 | 정기적으로 워크플로우 인스턴스를 삭제합니다. | 저장소 크기 및 워크플로우 성능 | 워크플로우 인스턴스 [정기적인 제거를 참조하십시오](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances). |
 
@@ -75,7 +75,7 @@ AEM 인스턴스가 배포된 후 작업, 성능 및 무결성을 모니터링�
 
 >[!CAUTION]
 >
->타사 응용 프로그램 서버를 작동 중인 경우 다른 위치에 추가 폴더가 있을 수 있으며 백업도 필요할 수 있습니다. 애플리케이션 서버 설치 [에 대한 자세한 내용은 Application Server와](/help/sites-deploying/application-server-install.md) 함께 AEM을 설치하는 방법을 참조하십시오.
+>타사 응용 프로그램 서버를 작동 중인 경우 다른 위치에 추가 폴더가 있을 수 있으며 백업도 필요할 수 있습니다. 응용 프로그램 [서버 설치에 대한 자세한 내용은 응용 프로그램 서버와](/help/sites-deploying/application-server-install.md) 함께 AEM을 설치하는 방법을 참조하십시오.
 
 >[!CAUTION]
 >
@@ -162,7 +162,7 @@ CRX 설명서의 [백업 및 복원](/help/sites-administering/backup-and-restor
 
 ## 감사 레코드 및 로그 파일 작업 {#working-with-audit-records-and-log-files}
 
-AEM(Adobe Experience Manager)과 관련된 레코드 및 로그 파일은 다양한 위치에서 찾을 수 있습니다. 찾을 수 있는 영역에 대한 개요를 제공하기 위해 다음과 같은 사항이 제공됩니다.
+Adobe Experience Manager(AEM)과 관련된 기록 및 로그 파일은 다양한 위치에서 찾을 수 있습니다. 찾을 수 있는 영역에 대한 개요를 제공하기 위해 다음과 같은 사항이 제공됩니다.
 
 ### 로그 작업 {#working-with-logs}
 
@@ -173,18 +173,18 @@ AEM WCM은 자세한 로그를 기록합니다. 압축을 풀고 Quickstart를 �
 
 #### 로그 파일 순환 {#log-file-rotation}
 
-로그 파일 순환은 새 파일을 주기적으로 만들어 파일 증가를 제한하는 프로세스를 말합니다. AEM에서 호출된 로그 파일은 지정된 규칙에 따라 하루에 한 번 `error.log` 회전합니다.
+로그 파일 순환은 새 파일을 주기적으로 만들어 파일 증가를 제한하는 프로세스를 말합니다. AEM에서는 지정된 규칙에 따라 호출된 로그 파일이 하루에 한 번 `error.log` 회전합니다.
 
 * {original_filename} 패턴에 따라 파일 `error.log` 이름이 바뀝니다 `.yyyy-MM-dd`. 예를 들어 2010년 7월 11일에 현재 로그 파일의 이름이 변경된 `error.log-2010-07-10`후 새 `error.og` 가 만들어집니다.
 * 이전 로그 파일은 삭제되지 않으므로 디스크 사용을 제한하기 위해 정기적으로 이전 로그 파일을 정리해야 합니다.
 
 >[!NOTE]
 >
->AEM 설치를 업그레이드하는 경우, AEM에서 더 이상 사용되지 않는 기존 로그 파일은 디스크에 남아 있습니다. 위험 없이 제거할 수 있습니다. 새 로그 항목은 모두 새 로그 파일에 기록됩니다.
+>AEM 설치를 업그레이드하는 경우 AEM에서 더 이상 사용하지 않는 기존 로그 파일은 디스크에 남아 있습니다. 위험 없이 제거할 수 있습니다. 새 로그 항목은 모두 새 로그 파일에 기록됩니다.
 
 ### 로그 파일 찾기 {#finding-the-log-files}
 
-AEM을 설치한 파일 서버에 다양한 로그 파일이 보관됩니다.
+AEM을 설치한 파일 서버에서 다양한 로그 파일이 보관됩니다.
 
 * `<cq-installation-dir>/crx-quickstart/logs`
 
@@ -210,7 +210,7 @@ AEM을 설치한 파일 서버에 다양한 로그 파일이 보관됩니다.
 
    * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
 
-      이 로그는 다이내믹 미디어가 활성화된 경우에만 사용됩니다. s7access 로그는 및 을 통해 Dynamic Media에 수행된 각 요청을 `/is/image` 기록합니다 `/is/content`.
+      이 로그는 다이내믹 미디어가 활성화된 경우에만 사용됩니다. s7access 로그는 `/is/image` 및 를 통해 Dynamic Media에 수행된 각 요청을 기록합니다 `/is/content`.
 
    * `stderr.log`
 
@@ -232,7 +232,7 @@ AEM을 설치한 파일 서버에 다양한 로그 파일이 보관됩니다.
 
 >[!NOTE]
 >
->ImageServer 및 s7access 로그는 **system/console/status-Bundelist** 페이지에서 생성된 전체 **** 다운로드 패키지에 포함되지 않습니다. 지원을 위해 Dynamic Media 문제가 있는 경우 고객 지원에 문의할 때 ImageServer 및 s7access 로그를 추가하십시오.
+>ImageServer 및 s7access 로그는 **system/console/status-Bundelist** 페이지에서 생성된 전체 **** 다운로드 패키지에 포함되지 않습니다. 지원 목적으로 다이내믹 미디어 문제가 있는 경우 고객 지원에 문의할 때 ImageServer 및 s7access 로그를 추가하십시오.
 
 ### 디버그 로그 수준 활성화 {#activating-the-debug-log-level}
 
@@ -254,7 +254,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 | 0 | 치명적인 오류 | 작업이 실패했으며 설치 관리자를 계속할 수 없습니다. |
 |---|---|---|
-| 1 | 오류 | 작업이 실패했습니다. 설치가 진행되지만 AEM WCM의 일부가 올바르게 설치되지 않아 작동하지 않습니다. |
+| 1 | 오류 | 작업이 실패했습니다. 설치가 진행되지만 AEM WCM의 일부가 제대로 설치되지 않아 작동이 안 됩니다. |
 | 2 | 경고 | 작업에 성공했지만 문제가 발생했습니다. AEM WCM이 제대로 작동하지 않거나 작동하지 않을 수 있습니다. |
 | 3 | 정보 | 그 행동은 성공했다. |
 
@@ -436,9 +436,9 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ### 감사 레코드 찾기 {#finding-the-audit-records}
 
-감사 기록은 누가 언제 무엇을 했는지 기록하도록 되어 있다. AEM WCM 및 OSGi 이벤트 모두에 대해 서로 다른 감사 레코드가 생성됩니다.
+감사 기록은 누가 언제 무엇을 했는지 기록하도록 되어 있다. AEM WCM과 OSGi 이벤트 모두에 대해 서로 다른 감사 레코드가 생성됩니다.
 
-#### 페이지 작성 시 표시되는 AEM WCM 감사 레코드 {#aem-wcm-audit-records-shown-when-page-authoring}
+#### AEM WCM 페이지 작성 시 표시되는 감사 레코드 {#aem-wcm-audit-records-shown-when-page-authoring}
 
 1. 페이지를 엽니다.
 1. 사이드 킥에서 잠금 아이콘이 있는 탭을 선택한 다음, **감사 로그를 두 번 클릭합니다.**
@@ -472,7 +472,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 복제 에이전트를 모니터링하려면:
 
-1. AEM의 **도구** 탭에 액세스합니다.
+1. AEM에서 **도구** 탭에 액세스합니다.
 1. **복제**&#x200B;를 클릭합니다.
 1. 해당 환경(왼쪽 또는 오른쪽 창)에 대한 에이전트 링크를 두 번 클릭합니다. 예: 작성자 **의 에이전트**.
 
@@ -530,7 +530,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 | 애플리케이션 | 서버 CPU 사용량이 높습니다. | AEM 인스턴스를 클러스터링합니다. | CPU 및 메모리 돼지 검색 및 제거(코드 검토, 타이밍 출력 등 사용) |
 |  | 높은 메모리 사용. |  | 모든 수준의 캐싱 향상 |
 |  | 응답 시간이 적습니다. |  | 템플릿 및 구성 요소(예: 구조, 논리) 최적화 |
-| 보관소 |  |  |  |
+| 저장소 |  |  |  |
 | 캐시 |  |  |  |
 
 성능 문제는 연결 속도가 일시적으로 느려지는 문제, CPU 로드 등 웹 사이트와 아무런 관련이 없는 여러 가지 원인에서 발생할 수 있습니다.
@@ -648,7 +648,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ### request.log 해석 {#interpreting-the-request-log}
 
-이 파일은 AEM에 수행된 모든 요청에 대한 기본 정보를 등록합니다. 이 귀중한 결론으로부터 추출할 수 있다.
+이 파일은 AEM에 대한 모든 요청에 대한 기본 정보를 등록합니다. 이 귀중한 결론으로부터 추출할 수 있다.
 
 요청 `request.log` 시간을 확인할 수 있는 내장된 방법을 제공합니다. 개발 목적으로 응답 속도가 느린 경우 `tail -f` 를 `request.log` 보고 확인하는 것이 유용합니다. 더 큰 분석 `request.log` 을 위해서는 응답 시간을 위해 정렬 및 필터링할 수 있는 [사용 `rlog.jar` 을 권장합니다](#using-rlog-jar-to-find-requests-with-long-duration-times).
 
@@ -663,7 +663,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 09:43:41 [66] <- 200 text/html 797ms
 ```
 
-특정 기간(예: 다양한 24시간 이상) 내의 모든 GET 항목을 합산하여 웹 사이트의 평균 트래픽에 대해 설명할 수 있습니다.
+특정 기간(예: 다양한 24시간 동안)의 모든 GET 항목을 합산하여 웹 사이트의 평균 트래픽에 대해 설명할 수 있습니다.
 
 #### request.log를 사용하여 응답 시간 모니터링 {#monitoring-response-times-with-the-request-log}
 
@@ -736,7 +736,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ### rlog.jar를 사용하여 오랜 기간 동안 요청을 찾습니다. {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
-AEM에는 다음 위치에 있는 다양한 헬퍼 도구가 포함되어 있습니다.\
+AEM에는\
 `<cq-installation-dir>/crx-quickstart/opt/helpers`
 
 이러한 항목 중 하나 `rlog.jar`를 사용하여 요청이 길이에서 가장 짧은 시간에 걸쳐 표시되도록 빠르게 정렬할 `request.log` 수 있습니다.
@@ -927,7 +927,7 @@ JDK 1.6부터는 도구 명령을 사용할 수 `jvisualvm` 있습니다. JDK 1.
 * [이 시스템에서 현재 몇 페이지를 관리하고 있습니까?](#how-many-pages-do-you-currently-maintain-on-this-system)
 * [MSM을 사용하는 경우 월평균 롤아웃 수는 얼마입니까?](#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month)
 * [한 달에 평균 Live Copy 수는 얼마입니까?](#what-is-the-average-number-of-live-copies-per-month)
-* [AEM Assets을 사용하는 경우 현재 자산에 몇 개의 자산을 유지하고 있습니까?](#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets)
+* [AEM Assets을 사용하는 경우 현재 자산에서 몇 개의 자산을 관리하고 있습니까?](#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets)
 * [자산의 평균 크기는 얼마입니까?](#what-is-the-average-size-of-the-assets)
 * [현재 사용되는 템플릿은 몇 개입니까?](#how-many-templates-are-currently-used)
 * [현재 몇 개의 구성 요소가 사용됩니까?](#how-many-components-are-currently-used)
@@ -995,7 +995,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 설치 후 경과된 개월 수를 다시 사용하여 평균을 계산합니다.
 
-#### AEM Assets을 사용하는 경우 현재 자산에 몇 개의 자산을 유지하고 있습니까? {#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets}
+#### AEM Assets을 사용하는 경우 현재 자산에서 몇 개의 자산을 관리하고 있습니까? {#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets}
 
 현재 유지 관리하고 있는 DAM 자산 수를 보려면 저장소 쿼리를 사용하십시오. CRXDE 사용 - 도구 - 쿼리:
 
