@@ -1,8 +1,8 @@
 ---
-title: 프로그래밍 방식으로 AEM Document Services 사용
-seo-title: 프로그래밍 방식으로 AEM Document Services 사용
-description: Document Services API를 사용하여 PDF 문서를 디지털 서명, 암호화 및 생성하는 방법을 살펴볼 수 있습니다.
-seo-description: Document Services API를 사용하여 PDF 문서를 디지털 서명, 암호화 및 생성하는 방법을 살펴볼 수 있습니다.
+title: 프로그래밍 방식으로 AEM 문서 서비스 사용
+seo-title: 프로그래밍 방식으로 AEM 문서 서비스 사용
+description: Document Services API를 사용하여 PDF 문서를 디지털 서명, 암호화 및 생성하는 방법을 알아봅니다.
+seo-description: Document Services API를 사용하여 PDF 문서를 디지털 서명, 암호화 및 생성하는 방법을 알아봅니다.
 uuid: bf5ee197-4daf-4a64-8b6d-2c0d1f232b1c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -17,9 +17,9 @@ ht-degree: 1%
 ---
 
 
-# 프로그래밍 방식으로 AEM Document Services 사용 {#using-aem-document-services-programmatically}
+# 프로그래밍 방식으로 AEM 문서 서비스 사용 {#using-aem-document-services-programmatically}
 
-AEM Document Services를 사용하여 Maven 프로젝트를 빌드하는 데 필요한 클라이언트 클래스는 [AEM Forms Client SDK](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) jar에서 사용할 수 있습니다. 주요 프로젝트에 대한 자세한 내용은 Maven을 사용하여 AEM 프로젝트 [를 빌드하는 방법을 참조하십시오](/help/sites-developing/ht-projects-maven.md).
+AEM Document Services를 사용하여 Maven 프로젝트를 빌드하는 데 필요한 클라이언트 클래스는 [AEM Forms 클라이언트 SDK](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) jar에서 사용할 수 있습니다. 주요 프로젝트에 대한 자세한 내용은 Maven을 사용하여 AEM 프로젝트 [를 빌드하는 방법을 참조하십시오](/help/sites-developing/ht-projects-maven.md).
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ DocAssurance 서비스에는 다음 서비스가 포함되어 있습니다.
 
 * 서명 서비스
 * 암호화 서비스
-* Reader 확장 서비스
+* Reader 익스텐션 서비스
 
 DocAssurance 서비스를 사용하여 다음 작업을 수행할 수 있습니다.
 
@@ -1035,7 +1035,7 @@ public class ModifySignatureField {
 PDF 문서를 인증된 서명이라고 하는 특정 유형의 서명을 사용하여 인증하여 보호할 수 있습니다. 인증된 서명은 다음과 같은 방식으로 디지털 서명과 구별됩니다.
 
 * PDF 문서에 적용되는 첫 번째 서명이어야 합니다. 즉, 인증된 서명이 적용될 때 문서의 다른 서명 필드는 서명되지 않아야 합니다. PDF 문서에는 하나의 인증된 서명만 허용됩니다. PDF 문서에 서명하여 인증하려면 서명하기 전에 이를 인증하십시오. PDF 문서를 인증한 후 추가 서명 필드에 디지털 방식으로 서명할 수 있습니다.
-* 문서의 작성자 또는 작성자는 인증된 서명을 무효화하지 않고 특정 방식으로 문서를 수정할 수 있음을 지정할 수 있습니다. 예를 들어, 문서에서 양식 입력을 허용하거나 주석을 달 수 있습니다. 작성자가 특정 수정 사항이 허용되지 않도록 지정하는 경우 Acrobat에서는 사용자가 해당 방식으로 문서를 수정할 수 없도록 제한합니다. 이러한 수정이 이루어지면 인증된 서명은 유효하지 않습니다. 또한 사용자가 문서를 열면 Acrobat에서 경고가 표시됩니다. (인증되지 않은 서명을 사용하는 경우 수정 작업이 수행되지 않으며 일반적인 편집 작업으로 인해 원본 서명이 무효화되지는 않습니다.)
+* 문서의 작성자 또는 작성자는 인증된 서명을 무효화하지 않고 특정 방식으로 문서를 수정할 수 있음을 지정할 수 있습니다. 예를 들어, 문서에서 양식 입력을 허용하거나 주석을 달 수 있습니다. 작성자가 특정 수정 사항이 허용되지 않도록 지정하는 경우, Acrobat은 사용자가 해당 방식으로 문서를 수정할 수 없도록 제한합니다. 이러한 수정이 이루어지면 인증된 서명은 유효하지 않습니다. 또한 사용자가 문서를 열면 Acrobat에 경고가 표시됩니다. (인증되지 않은 서명을 사용하는 경우 수정 작업이 수행되지 않으며 일반적인 편집 작업으로 인해 원본 서명이 무효화되지는 않습니다.)
 * 서명 시 문서의 내용이 모호하거나 오해를 불러일으킬 수 있는 특정 유형의 컨텐츠에 대해 문서가 스캔됩니다. 예를 들어, 주석에서는 인증되는 내용을 이해하는 데 중요한 페이지의 일부 텍스트를 모호하게 할 수 있습니다. 이러한 컨텐츠에 대한 설명(법적 증명)을 제공할 수 있습니다.
 
 **구문**:
@@ -1067,7 +1067,7 @@ secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
   </tr> 
   <tr> 
    <td><code>readerExtensionOptions</code></td> 
-   <td>Reader PDF 문서 확장에 필요한 옵션 포함</td> 
+   <td>PDF 문서 확장에 필요한 옵션 포함</td> 
   </tr> 
   <tr> 
    <td><code>unlockOptions</code></td> 
@@ -1341,7 +1341,7 @@ secureDocument를 사용하면 PDF 문서를 개별적으로 또는 특정 순�
 
 **암호로 PDF 문서 암호화**
 
-암호를 사용하여 PDF 문서를 암호화할 때 사용자는 암호를 지정하여 Adobe Reader 또는 Acrobat에서 PDF 문서를 열어야 합니다. 또한 다른 AEM Forms 문서 서비스 작업에서 문서를 사용하기 전에 암호로 암호화된 PDF 문서의 잠금을 해제해야 합니다.
+암호로 PDF 문서를 암호화할 때 사용자는 암호를 지정하여 Adobe Reader 또는 Acrobat에서 PDF 문서를 열어야 합니다. 또한 다른 AEM Forms 다큐멘트 서비스 작업에서 이 문서를 사용하기 전에 암호로 암호화된 PDF 문서의 잠금을 해제해야 합니다.
 
 **인증서를 사용하여 PDF 문서 암호화**
 
@@ -1366,9 +1366,9 @@ secureDocument를 사용하면 PDF 문서를 개별적으로 또는 특정 순�
 
 **PDF 문서에 사용 권한 적용**
 
-Reader Extensions Java Client API 및 웹 서비스를 사용하여 PDF 문서에 사용 권한을 적용할 수 있습니다. 사용 권한은 Acrobat에서는 기본적으로 제공되지만 Adobe Reader에서는 사용할 수 없는 기능(예: 양식에 주석을 추가하거나 양식 필드를 채우고 양식을 저장하는 기능)과 관련이 있습니다. 사용 권한이 적용된 PDF 문서를 권한 사용 문서라고 합니다. Adobe Reader에서 권한이 활성화된 문서를 여는 사용자는 해당 특정 문서에 대해 활성화된 작업을 수행할 수 있습니다.
+Reader 확장 Java 클라이언트 API 및 웹 서비스를 사용하여 PDF 문서에 사용 권한을 적용할 수 있습니다. 사용 권한은 양식에 주석을 추가하거나 양식 필드를 채우고 양식을 저장하는 기능 등 Acrobat에서는 기본적으로 사용할 수 없지만 Adobe Reader에서는 사용할 수 없는 기능과 관련이 있습니다. 사용 권한이 적용된 PDF 문서를 권한 사용 문서라고 합니다. Adobe Reader에서 권한이 활성화된 문서를 여는 사용자는 해당 특정 문서에 대해 활성화된 작업을 수행할 수 있습니다.
 
-Reader 인증서를 사용하여 PDF 문서를 확장하려면 AEM Keystore에 인증서를 추가해야 합니다.
+인증서를 사용하여 PDF 문서를 Reader으로 확장하려면 먼저 AEM Keystore에 인증서를 추가해야 합니다.
 
 **PDF 문서에 디지털 서명**
 
@@ -1382,11 +1382,11 @@ PDF 문서는 공개 키 기술을 통해 서명됩니다. 서명자에게는 �
 
 >[!NOTE]
 >
->PDF 문서에 디지털 서명을 하려면 AEM Keystore에서 자격 증명을 추가해야 합니다. 자격 증명은 서명하는 데 사용되는 개인 키입니다.
+>PDF 문서에 디지털 서명을 하려면 먼저 AEM Keystore에서 자격 증명을 추가해야 합니다. 자격 증명은 서명하는 데 사용되는 개인 키입니다.
 
 >[!NOTE]
 >
->또한 AEM Forms는 PDF *[문서에 디지털 서명을 위한 CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*사양을 지원합니다.
+>또한 AEM Forms은 *[PDF 문서에 디지털 서명을 위한 CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*사양을 지원합니다.
 
 **PDF 문서 인증**
 
@@ -1402,7 +1402,7 @@ PDF 문서를 인증한 후 추가 서명 필드에 디지털 방식으로 서�
 
 예를 들어, 문서에 양식 입력 또는 주석 달기가 허용될 수 있습니다. 작성자가 특정 수정이 허용되지 않는다고 지정한 경우
 
-Acrobat에서는 사용자가 이러한 방식으로 문서를 수정할 수 없도록 제한합니다. 다른 응용 프로그램을 사용하는 등 이러한 수정이 이루어지면 인증된 서명이 유효하지 않으며 사용자가 문서를 열 때 Acrobat에서 경고 메시지가 표시됩니다. (인증되지 않은 서명을 사용하는 경우 수정 작업이 수행되지 않으며 일반적인 편집 작업으로 인해 원본 서명이 무효화되지는 않습니다.)
+Acrobat은 사용자가 해당 방식으로 문서를 수정할 수 없도록 제한합니다. 다른 응용 프로그램을 사용하는 등 이러한 수정이 이루어지면 인증된 서명은 유효하지 않으며 사용자가 문서를 열 때 Acrobat에 경고가 표시됩니다. (인증되지 않은 서명을 사용하는 경우 수정 작업이 수행되지 않으며 일반적인 편집 작업으로 인해 원본 서명이 무효화되지는 않습니다.)
 
 서명 시 문서의 내용이 모호하거나 오해를 불러일으킬 수 있는 특정 유형의 컨텐츠에 대해 문서가 스캔됩니다.
 
@@ -1410,7 +1410,7 @@ Acrobat에서는 사용자가 이러한 방식으로 문서를 수정할 수 없
 
 >[!NOTE]
 >
->PDF 문서에 디지털 서명을 하려면 AEM Keystore에서 자격 증명을 추가해야 합니다. 자격 증명은 서명하는 데 사용되는 개인 키입니다.
+>PDF 문서에 디지털 서명을 하려면 먼저 AEM Keystore에서 자격 증명을 추가해야 합니다. 자격 증명은 서명하는 데 사용되는 개인 키입니다.
 
 
 **구문**:
@@ -1445,7 +1445,7 @@ secureDocument(Document inDoc,
   </tr> 
   <tr> 
    <td><code>readerExtensionOptions</code></td> 
-   <td>Reader에서 PDF 문서를 확장하는 데 필요한 옵션 포함</td> 
+   <td>PDF 문서 확장에 필요한 Reader 옵션 포함</td> 
   </tr> 
   <tr> 
    <td><code>unlockOptions</code></td> 
@@ -1454,7 +1454,7 @@ secureDocument(Document inDoc,
  </tbody> 
 </table>
 
-**샘플 1**: 이 샘플은 암호 암호화, 서명 필드 인증 및 PDF 문서 확장에 사용됩니다.
+**샘플 1**: 이 샘플은 암호 암호화, 서명 필드 인증 및 PDF 문서 확장 Reader을 수행하는 데 사용됩니다.
 
 ```
 /*************************************************************************
@@ -1756,7 +1756,7 @@ public class PassEncryptCertifyExtend {
 }
 ```
 
-**샘플 2**: 이 샘플은 PKI 암호화, 서명 필드 서명 및 Reader Extending the PDF 문서를 수행하는 데 사용됩니다.
+**샘플 2**: 이 샘플은 PKI 암호화, 서명 필드 서명 및 Reader PDF 문서 확장에 사용됩니다.
 
 ```java
 /*************************************************************************
@@ -2735,7 +2735,7 @@ public class VerifyFieldEncryptedPDF {
 
 ### 여러 디지털 서명 확인 {#verifying-multiple-digital-signatures}
 
-AEM에서는 PDF 문서에서 디지털 서명을 확인할 수 있습니다. 여러 서명자의 서명이 필요한 비즈니스 프로세스를 거쳐야 하는 PDF 문서는 여러 개의 디지털 서명을 포함할 수 있습니다. 예를 들어, 금융 거래는 대출 담당자와 관리자 모두의 서명을 필요로 한다. 서명 서비스 API를 사용하여 PDF 문서 내의 모든 서명을 확인할 수 있습니다. 여러 디지털 서명을 확인하는 경우 각 서명의 상태 및 속성을 확인할 수 있습니다. 디지털 서명을 신뢰하기 전에 이를 확인하는 것이 좋습니다.
+AEM을 사용하면 PDF 문서에서 디지털 서명을 확인할 수 있습니다. 여러 서명자의 서명이 필요한 비즈니스 프로세스를 거쳐야 하는 PDF 문서는 여러 개의 디지털 서명을 포함할 수 있습니다. 예를 들어, 금융 거래는 대출 담당자와 관리자 모두의 서명을 필요로 한다. 서명 서비스 API를 사용하여 PDF 문서 내의 모든 서명을 확인할 수 있습니다. 여러 디지털 서명을 확인하는 경우 각 서명의 상태 및 속성을 확인할 수 있습니다. 디지털 서명을 신뢰하기 전에 이를 확인하는 것이 Adobe에 권장됩니다.
 
 **구문**: `verifyDocument(Document doc, RevocationCheckStyle revocationCheckStyle, VerificationTime verificationTime, ValidationPreferences prefStore, ResourceResolver resourceResolver)`
 
@@ -3488,7 +3488,7 @@ public class RemovePasswordEncryption {
 
 ### 인증서 암호화 제거 {#removing-certificate-encryption}
 
-PDF 문서에서 인증서 기반의 암호화를 제거하여 사용자가 Adobe Reader 또는 Acrobat에서 PDF 문서를 열 수 있도록 할 수 있습니다. 인증서로 암호화된 PDF 문서에서 암호화를 제거하려면 개인 키를 참조하십시오. PDF 문서에서 암호화를 제거한 후에는 더 이상 안전하지 않습니다.
+PDF 문서에서 인증서 기반의 암호화를 제거하여 사용자가 Adobe Reader 또는 Acrobat에서 PDF 문서를 열 수 있습니다. 인증서로 암호화된 PDF 문서에서 암호화를 제거하려면 개인 키를 참조하십시오. PDF 문서에서 암호화를 제거한 후에는 더 이상 안전하지 않습니다.
 
 **구문**: `removePDFCertificateSecurity(Document inDoc, String alias, ResourceResolver resourceResolver)`
 
@@ -4269,7 +4269,7 @@ String outputFolder="C:/Output";
 
 ## Forms 서비스 {#forms-service}
 
-양식 서비스는 대화형 PDF 양식으로 데이터를 가져오고 내보내는 API를 제공합니다. 인터랙티브한 PDF 양식이란 사용자의 정보를 표시하고 수집하는 데 사용되는 하나 이상의 필드가 포함된 PDF 문서입니다. 서비스는 다음 API를 지원합니다.
+Forms 서비스는 인터랙티브한 PDF 양식으로 데이터를 가져오거나 내보낼 수 있는 API를 제공합니다. 인터랙티브한 PDF 양식이란 사용자의 정보를 표시하고 수집하는 데 사용되는 하나 이상의 필드가 포함된 PDF 문서입니다. 서비스는 다음 API를 지원합니다.
 
 * **[exportData](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p):**PDF 양식의 데이터를 내보냅니다.
 * **[importData](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p):**데이터를 대화형 PDF 양식으로 가져옵니다.
@@ -4449,7 +4449,7 @@ GeneratePDFService는 API를 사용하여 .doc, .docx, .ppt, .pptx, .xls, .xlsx,
 
 >[!NOTE]
 >
->AIX 운영 체제에서 실행되는 AEM Forms 서버에서 HTMLtoPDF API는 더 이상 사용되지 않습니다.
+>AIX 운영 체제에서 실행되는 AEM Forms 서버에서는 HTMLtoPDF API가 사용되지 않습니다.
 
 #### Microsoft Windows 및 Linux에서 사용 가능한 PDF Generator API {#pdf-generator-api-available-on-microsoft-windows-and-linux}
 
@@ -4546,7 +4546,7 @@ createPDF 서비스는 다음과 같은 예외를 throw합니다.
      <li>보안 없음</li> 
      <li>암호 보안<br /> </li> 
      <li>인증서 보안<br /> </li> 
-     <li>Adobe Policy Server</li> 
+     <li>Adobe 정책 서버</li> 
     </ul> <p>선택적 매개 변수입니다.</p> </td> 
   </tr> 
   <tr> 
@@ -4959,7 +4959,7 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
      <li>보안 없음</li> 
      <li>암호 보안<br /> </li> 
      <li>인증서 보안<br /> </li> 
-     <li>Adobe Policy Server</li> 
+     <li>Adobe 정책 서버</li> 
     </ul> <p>선택적 매개 변수입니다.</p> </td> 
   </tr> 
   <tr> 
