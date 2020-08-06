@@ -34,15 +34,15 @@ ht-degree: 0%
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 응용 프로그램의 상태 가져오기](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 AEM Forms 및 이후 버전의 애플리케이션 아카이브 미리 보기](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 AEM Forms 및 이후 버전의 애플리케이션 아카이브 미리 보기](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
 
 [빠른 시작(SOAP 모드):Java API를 사용하여 AEM Forms 애플리케이션 아카이브 삭제](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
-AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM Forms를 사용한 프로그래밍에서 빠른 시작은 JBoss 및 Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 Unix와 같은 다른 운영 체제를 사용하는 경우 창 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Forms와의 프로그래밍에서 빠른 시작은 JBoss 및 Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 Unix와 같은 다른 운영 체제를 사용하는 경우 창 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 응용 프로그램 버전 만들기 {#quick-start-soap-mode-creating-application-version-using-the-java-api}
 
@@ -444,7 +444,7 @@ public class GetApplication_SOAP {
 
 다음 Java 코드 예는 Java API를 사용하는 응용 프로그램을 가져옵니다.
 
-***참고**: AEM Forms Application API를 가져오는 getApplications()는 배포된 애플리케이션만 반환합니다. *
+***참고**: AEM Forms 응용 프로그램 API, getApplications()를 가져오면 배포된 응용 프로그램만 반환됩니다. *
 
 ```as3
 /* 
