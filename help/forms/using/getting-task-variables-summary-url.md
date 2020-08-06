@@ -86,7 +86,7 @@ ht-degree: 0%
 
    XPath: `concat('https://[*server*]:[*port*]/lc',/process_data/@ptoSummaryNodePath,'.html')`.
 
-AEM Forms 작업 영역에서 작업을 열면 요약 Url이 CRX 노드에 액세스하고 HTML 렌더러가 요약을 표시합니다.
+AEM Forms 작업 공간에서 작업을 열면 요약 Url이 CRX 노드에 액세스하고 HTML 렌더러가 요약을 표시합니다.
 
 요약 레이아웃은 프로세스를 수정하지 않고 변경할 수 있습니다. HTML 렌더러는 요약을 적절히 표시합니다.
 
