@@ -24,13 +24,13 @@ ht-degree: 2%
 
 * [AEM 6.4 Platform](../../help/sites-deploying/deploy.md)
 
-* AEM Communities 라이센스
+* AEM Communities 라이선스
 
 * 라이선스 옵션:
 
    * [커뮤니티를 위한 Adobe Analytics 기능](analytics.md)
    * [MSRP용 MongoDB](msrp.md)
-   * [ASRP용 Adobe Cloud](asrp.md)
+   * [ASRP용 Adobe 클라우드](asrp.md)
 
 ## 설치 검사 목록 {#installation-checklist}
 
@@ -74,7 +74,7 @@ ht-degree: 2%
       * 공유 UGC 저장소가 아님:
 
          * UGC가 복제되지 않음
-         * UGC가 입력된 AEM 인스턴스 또는 클러스터에만 표시
+         * UGC가 입력되어 있는 AEM 인스턴스 또는 클러스터에만 표시
       * 기본값은 JSRP입니다.
 
    지원 **[기능](overview.md#enablement-community)**
@@ -91,17 +91,17 @@ ht-degree: 2%
 
 ## Latest Releases {#latest-releases}
 
-AEM 6.4 Communities GA는 Communities 패키지와 함께 제공됩니다. AEM 6.4 [Communities](/help/release-notes/release-notes.md#experience-manager-communities)업데이트에 대해 알아보려면 [AEM 6.4 릴리스 노트를 참조하십시오](/help/release-notes/release-notes.md#release-information).
+AEM 6.4 Communities GA는 Communities 패키지와 함께 제공됩니다. AEM 6.4 [Communities](/help/release-notes/release-notes.md#experience-manager-communities)업데이트에 대한 자세한 내용은 [AEM 6.4 릴리스 노트를 참조하십시오](/help/release-notes/release-notes.md#release-information).
 
 ### AEM 6.4 업데이트 {#aem-updates}
 
-AEM 6.3부터 AEM Cumulative Fix Pack 및 서비스 팩의 일부로 Communities 업데이트가 제공됩니다.
+AEM 6.3부터 커뮤니티에 대한 업데이트는 AEM의 누적 수정 팩 및 서비스 팩의 일부로 제공됩니다.
 
-AEM 6.4에 대한 최신 업데이트를 확인하려면 [Adobe Experience Manager 6.4 누적 수정 팩 및 서비스 팩을 확인하십시오](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html).
+AEM 6.4에 대한 최신 업데이트를 살펴보려면 [Adobe Experience Manager 6.4 누적 수정 팩 및 서비스 팩을 확인하십시오](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html).
 
 ### 버전 내역 {#version-history}
 
-AEM 6.4 이상에서 AEM Communities 기능 및 핫픽스는 AEM Communities 누적 수정 팩 및 서비스 팩의 일부입니다. 따라서 별도의 기능 팩은 없습니다.
+AEM 6.4 이상에서 AEM Communities 기능 및 핫픽스는 AEM Communities 누적 픽스 팩과 서비스 팩의 일부입니다. 따라서 별도의 기능 팩은 없습니다.
 
 ### MySQL용 JDBC 드라이버 {#jdbc-driver-for-mysql}
 
@@ -150,9 +150,9 @@ AEM Communities SCORM 엔진은 [활성화](overview.md#enablement-community) �
 
 * **[cq -social- scorm -package, 버전 1.2.11](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-pkg)**. 이 SCORM 패키지는 모든 AEM 6.4 Communities 버전에서 지원됩니다.
 
-* **[cq -social- scorm -package, 버전 2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)**.2에는[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)엔진이 포함되어 있습니다. 이 SCORM 패키지는 AEM 6.4.2.x Communities부터 지원됩니다.
+* **[cq -social- scorm -package, 버전 2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)**.2에는[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)엔진이 포함되어 있습니다. 이 SCORM 패키지는 AEM 6.4.2.x Communities 버전부터 지원됩니다.
 
-SCORM 엔진을 새로 설치하려면 [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) (cq -social-scorm -package, 버전 2.2 [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg).2)이 포함된 패키지를 사용해야 합니다. SCORM 2017에서 지원하는 학습 리소스를 재생할 수 있습니다.
+SCORM 엔진을 새로 설치하려면 [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) (cq -social-scorm -package, 버전 2.2.2 [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg))이 포함된 패키지를 사용해야 합니다. SCORM 2017에서 지원하는 학습 리소스를 재생할 수 있습니다.
 
 <!--This section used to be an accordion until converted to straight Markdown. When accordions are enabled, revert-->
 
@@ -191,7 +191,7 @@ SCORM 엔진을 새로 설치하려면 [SCORM 2017.1](https://rusticisoftware.co
 
 로그 작업에 대해서는 감사 레코드 및 로그 파일 [작업을 참조하십시오](../../help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
-### AEM Advanced MLS {#aem-advanced-mls}
+### AEM 고급 MLS {#aem-advanced-mls}
 
 SRP 컬렉션(MSRP 또는 DSRP)에서 고급 다국어 검색(MLS)을 지원하려면 사용자 정의 스키마 및 솔루션 구성 외에 새로운 솔루션 플러그인이 필요합니다. 모든 필수 항목은 다운로드 가능한 zip 파일로 패키지됩니다.
 
@@ -206,9 +206,9 @@ SRP 컬렉션(MSRP 또는 DSRP)에서 고급 다국어 검색(MLS)을 지원하�
 
 ### 패키지 공유 링크 정보 {#about-links-to-package-share}
 
-**Adobe AEM Cloud에 표시되는 패키지**
+**Adobe AEM 클라우드에 표시되는 패키지**
 
-이 페이지에서 패키지 공유에 대한 링크를 패키징할 때 AEM의 실행 인스턴스가 필요하지 않습니다 `adobeaemcloud.com`. 패키지를 볼 수 있지만 `Install`단추는 Adobe 호스팅 사이트에 패키지를 설치하는 것입니다. 로컬 AEM 인스턴스에 설치하려는 경우 을 선택하면 오류가 `Install`발생합니다.
+이 페이지에서 패키지 공유에 대한 링크에는 AEM의 실행 인스턴스가 필요하지 않습니다. 즉,의 패키지 공유가 필요합니다 `adobeaemcloud.com`. 패키지를 볼 수 있지만 Adobe 호스팅 사이트에 패키지를 설치하는 `Install`단추입니다. 로컬 AEM 인스턴스에 설치하려는 경우 선택하면 오류가 `Install`발생합니다.
 
 **로컬 AEM 인스턴스에 설치하는 방법**
 
@@ -217,35 +217,35 @@ SRP 컬렉션(MSRP 또는 DSRP)에서 고급 다국어 검색(MLS)을 지원하�
 * Select the **[!UICONTROL Assets]** tab
 * 디스크에 **[!UICONTROL 다운로드 선택]**
 
-로컬 AEM 인스턴스에서 패키지 관리자(예: [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/))를 사용하여 로컬 AEM의 패키지 리포지토리에 업로드합니다.
+로컬 AEM 인스턴스에서 패키지 관리자(예: [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/))를 사용하여 로컬 AEM 패키지 리포지토리에 업로드합니다.
 
 또는 로컬 AEM 인스턴스에서 패키지 공유를 사용하여 패키지에 액세스하면(예: [http://localhost:4502/crx/packageshare/](http://localhost:4502/crx/packageshare/)) `Download`버튼이 로컬 AEM 인스턴스의 패키지 저장소로 다운로드됩니다.
 
-로컬 AEM 인스턴스의 패키지 리포지토리에 있는 패키지 관리자를 사용하여 패키지를 설치합니다.
+로컬 AEM 인스턴스의 패키지 저장소에 있는 패키지 관리자를 사용하여 패키지를 설치합니다.
 
 자세한 내용은 패키지 [를 사용한 작업 방법을 참조하십시오](../../help/sites-administering/package-manager.md#package-share).
 
 ## 권장 배포 {#recommended-deployments}
 
-AEM Communities에서는 UGC(User Generated Content)를 저장하는 데 공용 저장소를 사용하고 종종 [SRP(Storage Resource Provider)라고 합니다](working-with-srp.md). 권장되는 배포 센터는 일반 스토어에 대해 SRP 옵션을 선택합니다.
+AEM Communities에서는 UGC(User Generated Content)를 저장하는 데 공용 스토어를 사용하며, 종종 [SRP(Storage Resource Provider)라고 합니다](working-with-srp.md). 권장되는 배포 센터는 일반 스토어에 대해 SRP 옵션을 선택합니다.
 
 공용 스토어는 게시 환경에서 UGC를 조정 및 분석하면서 UGC를 [복제할](sync.md) 필요가 없습니다.
 
-* [커뮤니티 콘텐츠 스토어](working-with-srp.md): AEM 커뮤니티의 SRP 저장소 옵션에 대해 설명합니다.
+* [커뮤니티 콘텐츠 스토어](working-with-srp.md): AEM 커뮤니티를 위한 SRP 스토리지 옵션에 대해 설명합니다.
 
 * [권장 토폴로지](topologies.md): 사용 사례 및 SRP 선택에 따라 사용할 토폴로지에 대해 설명합니다.
 
 ## 업그레이드 {#upgrading}
 
-이전 버전의 AEM에서 AEM 6.4 플랫폼으로 업그레이드할 때 AEM 6.4로 업그레이드를 읽어야 합니다.
+이전 버전의 AEM에서 AEM 6.4 플랫폼으로 업그레이드할 때는 AEM 6.4로 업그레이드를 읽어야 합니다.
 
-플랫폼 업그레이드 외에도 Upgrading to [AEM Communities 6.4](upgrade.md) 에서 Communities 변경에 대해 알아보십시오.
+플랫폼 업그레이드 외에도 Upgrading to [AEM Communities 6.4](upgrade.md) 에서 커뮤니티 변경 사항에 대해 알아보십시오.
 
 ## 구성 {#configurations}
 
 ### 기본 게시자 {#primary-publisher}
 
-선택한 배포가 [게시 팜인](topologies.md#tarmk-publish-farm)경우, 하나의 AEM 게시 인스턴스가 **`primary publisher`** 알림 **또는** Adobe Analytics과 같은 모든 인스턴스에서 발생해서는 안 되는 활동 **의 인스턴스로 식별되어야 합니다**.
+선택한 배포가 [게시 팜](topologies.md#tarmk-publish-farm)인 경우, 하나의 AEM 게시 인스턴스가 **`primary publisher`** 알림 **또는** Adobe Analytics **을 사용하는 기능과 같이 모든 인스턴스에서 발생해서는 안 되는 활동의**&#x200B;대상으로 식별되어야 합니다.
 
 기본적으로 `AEM Communities Publisher Configuration` OSGi 구성은 확인란을 선택한 **`Primary Publisher`** 상태로 구성되므로 게시 팜의 모든 게시 인스턴스가 기본으로 자체적으로 식별됩니다.
 
@@ -271,7 +271,7 @@ AEM Communities에서는 UGC(User Generated Content)를 저장하는 데 공용 
 
 주 게시자의 경우 [복제 에이전트 구성이](../../help/sites-deploying/replication.md) 게시 서버와 인증된 사용자를 올바르게 식별하는지 확인합니다. 기본 권한이 있는 사용자는 `admin,` 이미 적절한 권한(구성원)을 `Communities Administrators`갖습니다.
 
-일부 다른 사용자가 적절한 권한을 가지려면 해당 권한을 사용자 그룹( `administrators` 사용자 그룹에도 구성원)에 `Communities Administrators`추가해야 합니다.
+다른 사용자가 적절한 권한을 가지려면 해당 권한을 사용자 그룹( `administrators` 사용자 그룹에도 `Communities Administrators`멤버)에 구성원으로 추가해야 합니다.
 
 작성 환경에 전송 구성을 올바르게 구성해야 하는 복제 에이전트가 두 개 있습니다.
 
@@ -327,13 +327,13 @@ AEM Communities에서는 UGC(User Generated Content)를 저장하는 데 공용 
 
 ### 암호화 키 복제 {#replicate-the-crypto-key}
 
-모든 AEM 서버 인스턴스가 동일한 암호화 키를 사용해야 하는 AEM Communities의 기능은 두 가지가 있습니다. 이것들은 [Analytics](analytics.md) 와 [ASRP입니다](asrp.md).
+모든 AEM 서버 인스턴스가 동일한 암호화 키를 사용해야 하는 두 가지 AEM Communities 기능이 있습니다. Analytics [및](analytics.md) ASRP입니다 [](asrp.md).
 
-AEM 6.3부터는 주요 자료가 파일 시스템에 저장되고 더 이상 저장소에 저장되지 않습니다.
+AEM 6.3에서는 주요 자료가 파일 시스템에 저장되고 더 이상 저장소에 저장되지 않습니다.
 
 작성자에서 다른 모든 인스턴스로 주요 자료를 복사하려면 다음을 수행해야 합니다.
 
-* 복사할 주요 자료가 포함된 작성자 인스턴스인 AEM 인스턴스에 액세스합니다.
+* 복사할 주요 자료가 들어 있는 AEM 인스턴스(일반적으로 작성자 인스턴스)에 액세스
 
    * 로컬 파일 시스템에서 `com.adobe.granite.crypto.file` 번들을 찾습니다.
 
@@ -358,7 +358,7 @@ AEM 6.3부터는 주요 자료가 파일 시스템에 저장되고 더 이상 �
 
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
    * 이전에 복사한 2개 파일 붙여넣기
-   * 대상 AEM 인스턴스가 현재 실행 중인 경우 [ [화강암 crypto 번들](#refresh-the-granite-crypto-bundle) ]을 새로 고쳐야 합니다.
+   * 대상 AEM 인스턴스가 현재 실행 중인 경우 [ [Granite Crypto 번들](#refresh-the-granite-crypto-bundle) ]을 새로 고쳐야 합니다.
 
 
 >[!CAUTION]
@@ -367,7 +367,7 @@ AEM 6.3부터는 주요 자료가 파일 시스템에 저장되고 더 이상 �
 
 #### 저장소 복제 {#repository-replication}
 
-AEM 6.2 및 이전 버전의 경우와 마찬가지로 저장소에 주요 자료를 저장하게 하려면 각 AEM 인스턴스의 처음 시작 시 다음 시스템 속성을 지정하여(초기 저장소를 만드는 경우) 보존할 수 있습니다.
+AEM 6.2 및 이전 버전의 경우와 마찬가지로 저장소에 주요 자료를 저장하게 하면 각 AEM 인스턴스의 처음 시작 시 다음 시스템 속성을 지정하여 유지할 수 있습니다(초기 저장소를 만드는 경우).
 
 * `-Dcom.adobe.granite.crypto.file.disable=true`
 
@@ -377,7 +377,7 @@ AEM 6.2 및 이전 버전의 경우와 마찬가지로 저장소에 주요 자�
 
 저장소에 저장된 주요 자료를 통해 작성자로부터 다른 인스턴스로 암호화 키를 복제하는 방법은 다음과 같습니다.
 
-CRXDE [Lite 사용](../../help/sites-developing/developing-with-crxde-lite.md):
+CRXDE Lite [사용](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * https://&lt;server>:&lt;port>/ [crx/de로 찾아보기](http://localhost:4502/crx/de)
 * select `/etc/key`
@@ -428,11 +428,11 @@ Apache HTTP 서버를 사용하는 경우 관련 항목 모두에 올바른 서�
 
 ### Dispatcher {#dispatcher}
 
-Dispatcher을 사용하는 경우 다음을 참조하십시오.
+디스패처를 사용하는 경우 다음을 참조하십시오.
 
-* AEM의 [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) 설명서
+* AEM [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) 설명서
 * [Dispatcher 설치](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html)
-* [커뮤니티에 대한 Dispatcher 구성](dispatcher.md)
+* [커뮤니티용 Dispatcher 구성](dispatcher.md)
 * [알려진 문제](troubleshooting.md#dispatcher-refetch-fails)
 
 ## 관련 커뮤니티 설명서 {#related-communities-documentation}
