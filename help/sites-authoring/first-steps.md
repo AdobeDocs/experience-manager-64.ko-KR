@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9086b14c-cd75-4fc9-928e-81c8ad6b6292
 translation-type: tm+mt
 source-git-commit: b01e95110bffc1ee96e0814e782d716ed949c1b4
+workflow-type: tm+mt
+source-wordcount: '462'
+ht-degree: 93%
 
 ---
 
@@ -21,9 +24,9 @@ source-git-commit: b01e95110bffc1ee96e0814e782d716ed949c1b4
 
 다루는 내용:
 
-* [시작](#getting-started) - 첫 번째 페이지를 만들고 게시하는 데 필요한 기본 이벤트 순서에 대해 자세히 설명합니다.
+* [시작](#getting-started) - 첫 번째 페이지를 만들고 게시하는 데 필요한 기본 이벤트 순서에 대한 세부 설명
 
-* [추가](#further-actions) 작업 - 작성 시 사용할 수 있는 다른 많은 작업을 계속 수행합니다.
+* [추가 작업](#further-actions) - 작성 시 사용할 수 있는 다른 많은 작업을 계속 수행합니다.
 
 ## 개요 {#overview}
 
