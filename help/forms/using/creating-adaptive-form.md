@@ -23,7 +23,7 @@ ht-degree: 0%
 
 적응형 양식을 만들려면 다음 단계를 수행합니다.
 
-1. 액세스 AEM Forms 작성자 인스턴스 `https://[server]:[port]/<custom-context-if-any>.`
+1. AEM Forms 작성자 인스턴스 액세스 위치 `https://[server]:[port]/<custom-context-if-any>.`
 
    ```
    
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 1. AEM 로그인 페이지에 자격 증명을 입력합니다.
 
-   로그인한 후 왼쪽 상단 모서리에서 **[!UICONTROL Adobe Experience Manager > 양식 > 양식 및 문서를 누릅니다]**.
+   로그인한 후 왼쪽 상단 모서리에서 **[!UICONTROL Adobe Experience Manager > Forms > Forms 및 문서를 누릅니다]**.
 
    >[!NOTE]
    >
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 ## 양식 데이터 모델을 기반으로 적응형 양식 만들기 {#fdm}
 
-[AEM Forms 데이터 통합](/help/forms/using/data-integration.md) 기능을 사용하면 여러 데이터 소스를 통합하고 해당 개체 및 서비스를 결합하여 양식 데이터 모델을 만들 수 있습니다. JSON 스키마 확장입니다. 양식 데이터 모델을 사용하여 적응형 양식을 만들 수 있습니다. 양식 데이터 모델에 구성된 개체나 데이터 모델 개체는 양식 작성을 위한 데이터 모델 개체로 사용할 수 있습니다. 각 데이터 소스에 바인딩되어 양식을 미리 작성하고 제출된 데이터를 해당 데이터 소스에 다시 쓰는 데 사용됩니다. 적응형 양식 규칙을 사용하여 양식 데이터 모델에서 구성된 서비스를 호출할 수도 있습니다.
+[AEM Forms 데이터 통합](/help/forms/using/data-integration.md) 기능을 사용하면 여러 데이터 소스를 통합하고 해당 개체 및 서비스를 통합하여 양식 데이터 모델을 만들 수 있습니다. JSON 스키마 확장입니다. 양식 데이터 모델을 사용하여 적응형 양식을 만들 수 있습니다. 양식 데이터 모델에 구성된 개체나 데이터 모델 개체는 양식 작성을 위한 데이터 모델 개체로 사용할 수 있습니다. 각 데이터 소스에 바인딩되어 양식을 미리 작성하고 제출된 데이터를 해당 데이터 소스에 다시 쓰는 데 사용됩니다. 적응형 양식 규칙을 사용하여 양식 데이터 모델에서 구성된 서비스를 호출할 수도 있습니다.
 
 적응형 양식을 만들기 위해 양식 데이터 모델을 사용하려면:
 
@@ -102,7 +102,7 @@ XFA 양식 템플릿을 재사용하여 적응형 양식을 만들 수 있습니
 적응형 양식의 양식 모델로 XFA 양식 템플릿을 사용하려면 다음을 수행합니다.
 
 1. 속성 **[!UICONTROL 추가]** 페이지에서 **[!UICONTROL 양식 모델]** 탭을 엽니다.
-1. 양식 모델 탭의 드롭다운 목록에서 양식 템플릿 **[!UICONTROL 을 선택합니다]**. AEM Forms UI를 통해 저장소에 업로드되는 모든 양식 템플릿이 선택을 위해 나열됩니다. 목록에서 템플릿을 선택합니다.
+1. 양식 모델 탭의 드롭다운 목록에서 양식 템플릿 **[!UICONTROL 을 선택합니다]**. AEM Forms UI를 통해 보관소에 업로드되는 모든 양식 템플릿을 선택할 수 있습니다. 목록에서 템플릿을 선택합니다.
 
    ![XFA 양식 템플릿을 적응형 양식과 연결](assets/form_model_xfa_associate.png)
    **그림:** *양식 템플릿 선택*
@@ -148,13 +148,13 @@ XML 및 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생�
 
 ## 적응형 양식 템플릿 {#adaptive-form-templates}
 
-템플릿은 기본 구조를 제공하고 응용 양식의 모양(레이아웃 및 스타일)을 정의합니다. 특정 속성과 컨텐츠 구조를 포함하는 미리 서식이 지정된 구성 요소가 있습니다. AEM Forms은 몇 가지 적응형 양식 템플릿을 제공합니다. 고급 템플릿을 포함한 전체 템플릿 패키지를 얻으려면 AEM Forms 추가 기능 패키지를 설치해야 합니다. 자세한 내용은 AEM Forms 추가 [기능 패키지 설치를 참조하십시오](/help/forms/using/installing-configuring-aem-forms-osgi.md).
+템플릿은 기본 구조를 제공하고 응용 양식의 모양(레이아웃 및 스타일)을 정의합니다. 특정 속성과 컨텐츠 구조를 포함하는 미리 서식이 지정된 구성 요소가 있습니다. 즉시 사용 가능한 일부 양식 템플릿을 제공하는 AEM Forms 고급 템플릿을 포함한 전체 템플릿 패키지를 얻으려면 AEM Forms 추가 기능 패키지를 설치해야 합니다. 자세한 내용은 AEM Forms [Add-on 패키지 설치를 참조하십시오](/help/forms/using/installing-configuring-aem-forms-osgi.md).
 
 또한 템플릿 편집기를 사용하여 자신만의 템플릿을 만들 수 있습니다. 템플릿 작업에 대한 자세한 내용은 [적응형 양식 템플릿을 참조하십시오](/help/forms/using/template-editor.md).
 
 >[!NOTE]
 >
->편집을 위해 고급 템플릿을 사용하여 만든 응용 양식을 열면 오류 메시지가 나타납니다. 고급 템플릿에는 서명 단계 구성 요소가 있으며 기본적으로 Adobe Sign이 활성화되어 있습니다. Adobe [Sign 클라우드 구성을](/help/forms/using/adobe-sign-integration-adaptive-forms.md) 만들고 선택하고 서명자를 [구성하여 오류를 해결합니다](/help/forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform) .
+>편집을 위해 고급 템플릿을 사용하여 만든 응용 양식을 열면 오류 메시지가 나타납니다. 고급 템플릿에는 서명 단계 구성 요소가 있으며 기본적으로 Adobe Sign이 활성화되어 있습니다. [Adobe Sign 클라우드 구성을](/help/forms/using/adobe-sign-integration-adaptive-forms.md) 만들고 선택하고 서명자를 [구성하여 오류를 해결합니다](/help/forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform) .
 
 ## 적응형 양식의 양식 모델 속성 편집 {#edit-form-model}
 
@@ -208,6 +208,6 @@ XML 및 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생�
 
    >[!NOTE]
    >
-   >자동 저장 옵션을 통해 익명 사용자가 양식을 미리 보고, 확인하고, 서명할 수 있도록 Forms Common Configuration Service를 구성해야 합니다.
+   >자동 저장 옵션을 통해 익명 사용자를 위해 작동하도록 하려면 모든 사용자가 양식을 미리 보고, 확인하고, 서명할 수 있도록 Forms 일반 구성 서비스를 구성해야 합니다.
    >
-   >서비스를 구성하려면 의 AEM 웹 콘솔 구성으로 `https://[server]:[host]/system/console/configMgr` 이동한 후 **[!UICONTROL 양식 공용 구성 서비스]** 를 편집하여 허용 **[!UICONTROL 필드에서]** 모든 사용자 **[!UICONTROL 옵션]** 을 선택한 다음구성을저장합니다.
+   >서비스를 구성하려면 의 AEM 웹 콘솔 구성 `https://[server]:[host]/system/console/configMgr` 으로 이동하고 **[!UICONTROL Forms 공용 구성 서비스]** 를 편집하여 허용 **[!UICONTROL 필드에서]** 모든 사용자 **[!UICONTROL 옵션]** 을 선택하고 구성을저장합니다.
