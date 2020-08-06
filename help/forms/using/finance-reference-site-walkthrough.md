@@ -29,7 +29,7 @@ We.Finance는 금융 서비스 분야의 선도적인 조직으로 다양한 고
 
 고객이 원하는 디바이스에서 기존 고객이나 잠재 고객에게 다가가고, 서비스의 이점을 설명하고, 서비스 등록을 돕는 것이 목표입니다. 게다가, 그들은 고객들이 흥미로워할 수 있는 애드온 카드와 같은 더 많은 금융 상품을 기대하고 있다.
 
-We.Finance 사용 사례에 대한 자세한 설명은 다음을 참조하십시오. 그리고 금융 조직이 AEM Forms를 사용하여 자신의 목표를 달성하는 방법에 대해 알아보십시오. 다음 연습에 대해 설명합니다.
+We.Finance 사용 사례에 대한 자세한 설명은 Adobe를 참조하십시오. 또한 금융 조직이 어떻게 목표를 달성할 수 있는지 자세히 살펴볼 수 있습니다. 다음 연습에 대해 설명합니다.
 
 * [신용 카드 신청 연습](#credit-card-application-walkthrough)
 * [주택 담보 대출 신청 연습](#home-mortgage-application-walkthrough)
@@ -49,7 +49,7 @@ We.Finance 신용 카드 신청 시나리오는 다음과 같은 개인적 측�
 
 ![workflow_aem](assets/workflow_aem.png)
 
-참조 사이트 시나리오를 자세히 살펴보고 AEM Forms를 통해 We.Finance가 목표를 달성하는 방법을 알아봅니다.
+We.Finance가 We.Finance의 목표를 어떻게 달성하는데 AEM Forms이 도움이 되는지 자세히 알기 위해 참조 사이트 시나리오를 자세히 살펴보자.
 
 ### 새라는 We.Finance로부터 뉴스레터를 받고 신용카드를 신청한다 {#sarah-receives-a-newsletter-from-we-finance-and-applies-for-a-credit-card}
 
@@ -106,7 +106,7 @@ Sarah가 모바일 장치에서 신용카드 응용 프로그램에 액세스하
 * 다양한 적응형 양식 구성 요소를 사용하여 사용자 응답에 대한 입력 및 적응력을 캡처합니다. 또한 HTML5 입력 유형을 지원하는 이메일과 같은 구성 요소를 사용합니다.
 * 서명 단계 구성 요소를 사용하여 완성된 양식을 표시하고 양식에 전자 서명을 허용합니다.
 * [내 진행률 저장] 단추는 사용자에 대한 고유 ID를 생성하고 부분적으로 채워진 응용 프로그램을 AEM 저장소의 노드에 초안으로 저장합니다. 또한 초안 응용 프로그램이 포함된 노드에 대한 링크가 포함된 이메일을 보낼 수 있는 권한을 찾는 대화 상자가 표시됩니다. 확인 대화 상자의 [메일 보내기] 단추는 초안이 포함된 노드에 대한 링크가 포함된 이메일을 트리거합니다.
-* AEM 워크플로우 호출 제출 작업을 사용하여 신용 카드 승인 워크플로우를 트리거합니다. 이 양식에서 사용된 워크플로우를 `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-credit-card-workflow.html`
+* AEM 워크플로우 호출 실행 작업을 사용하여 신용 카드 승인 워크플로우를 트리거합니다. 이 양식에서 사용된 워크플로우를 `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-credit-card-workflow.html`
 
 스키마, 구성 요소, 규칙, 양식 데이터 모델, 양식 워크플로우 및 양식 작성에 사용되는 제출 작업을 이해하려면 양식을 검토하는 것이 좋습니다.
 
@@ -117,8 +117,8 @@ Sarah가 모바일 장치에서 신용카드 응용 프로그램에 액세스하
 * [규칙 편집기](/help/forms/using/rule-editor.md)
 * [테마](/help/forms/using/themes.md)
 * [데이터 통합](/help/forms/using/data-integration.md)
-* [적응형 양식에서 Adobe Sign 사용](/help/forms/using/working-with-adobe-sign.md)
-* [OSGi 기반의 양식 중심의 워크플로우](/help/forms/using/aem-forms-workflow.md)
+* [적응형 양식에 Adobe Sign 사용](/help/forms/using/working-with-adobe-sign.md)
+* [OSGi의 Forms 중심 워크플로우](/help/forms/using/aem-forms-workflow.md)
 
 ### 직접 보기 {#a-see-it-yourself}
 
@@ -138,7 +138,7 @@ Sarah Rose로 로그인하면, 신용카드 응용 프로그램에서 **[!UICONT
 
 ![resume-1](assets/resume-1.png)
 
-또는 We.Finance 홈 페이지의 **[!UICONTROL 내 양식]** 아래에 있는 초안 애플리케이션에 액세스할 수 있습니다.
+또는 We.Finance 홈 페이지의 **[!UICONTROL My]** Forms 아래에 있는 초안 애플리케이션에 액세스할 수 있습니다.
 
 ![portal-draft](assets/portal-drafts.png)
 
@@ -152,23 +152,23 @@ Sarah Rose로 로그인하면, 신용카드 응용 프로그램에서 **[!UICONT
 
 ### We.Finance receives and appropriate the application {#approving-the-application}
 
-We.Finance receives received the credit card application by Sarah. 일은 글로리아 리오스에 맡긴다. AEM 받은 편지함에서 작업을 검토하고 승인합니다.
+We.Finance receives received the credit card application by Sarah. 일은 글로리아 리오스에 맡긴다. 그녀는 자신의 AEM 받은 편지함에서 그 일을 검토하고 승인한다.
 
 ![받은 편지함](assets/inbox.png)
 
 #### 작동 방식 {#how-it-works-2}
 
-Sarah가 신용 카드 신청서를 채우고 제출하면, 양식 워크플로우가 트리거되고 작업이 Gloria의 AEM 받은 편지함에 생성됩니다.
+사라가 신용 카드 신청서를 작성하고 제출하면, 글로리아 AEM 받은 편지함에서 Forms Workflow이 트리거되고 작업이 만들어집니다.
 
-OSGi 기반의 AEM Forms에서는 적응형 양식 기반 워크플로우를 구축할 수 있는 양식 중심의 워크플로우를 제공합니다. 이러한 워크플로우를 검토 및 승인, 비즈니스 프로세스 흐름, 문서 서비스 시작, Adobe Sign 서명 워크플로우와 통합 등에 사용할 수 있습니다. 자세한 내용은 OSGi에서 [양식 중심의 워크플로우를 참조하십시오](/help/forms/using/aem-forms-workflow.md).
+OSGi 기반의 AEM Forms은 적응형 양식 기반 워크플로우를 구축할 수 있는 양식 중심의 워크플로우를 제공합니다. 이러한 워크플로우를 검토 및 승인, 업무 프로세스 흐름, 문서 서비스 시작, Adobe Sign 서명 워크플로우와 통합 등에 사용할 수 있습니다. 자세한 내용은 OSGi에서 [Forms 중심의 워크플로우를 참조하십시오](/help/forms/using/aem-forms-workflow.md).
 
-다음 이미지는 신용 카드 애플리케이션을 처리하고 애플리케이션의 PDF 출력을 생성하는 AEM 워크플로우를 설명합니다.
+다음 이미지는 신용카드 애플리케이션을 처리하고 애플리케이션의 PDF 출력을 생성하는 AEM 워크플로우를 설명합니다.
 
 ![workflow](assets/workflow.png)
 
 #### 직접 보기 {#see-it-yourself-2}
 
-https://&lt;*hostname*>:&lt;*PublishPort>/content/we-finance/global/en.html에서 we.finance 사이트에 대한 AEM 받은 편지함에 액세스할 수*&#x200B;있습니다. 페이지에서 **[!UICONTROL 로그인을 탭하고]**, **[!UICONTROL 대리인으로]** `grios/password` 로그인 확인란을선택하고, Gloria Rios의 사용자 이름/암호를 사용하여 AEM 받은 편지함에 로그인하고, 신용 카드 응용 프로그램을 승인합니다. 양식 중심의 워크플로우 작업에 AEM 받은 편지함 사용에 대한 자세한 내용은 AEM 받은 편지함의 [양식 애플리케이션 및 작업 관리를 참조하십시오](/help/forms/using/manage-applications-inbox.md).
+https://&lt;hostname *>:&lt;* PublishPort>/content/we-finance/global/en.html에서 we.finance 사이트에 대한 AEM *받은 편지함에 액세스할 수*&#x200B;있습니다. 페이지에서 **[!UICONTROL 로그인을]**&#x200B;누르고, **[!UICONTROL 대리인으로]** `grios/password` 로그인 확인란을선택하고, Gloria Rios의 사용자 이름/암호를 사용하여 AEM 받은 편지함에 로그인하고, 신용 카드 응용 프로그램을 승인합니다. 양식 중심의 워크플로우 작업에 AEM Inbox 사용에 대한 자세한 내용은 AEM 받은 편지함에서 [Forms 애플리케이션 및 작업 관리를 참조하십시오](/help/forms/using/manage-applications-inbox.md).
 
 ![inbox-1](assets/inbox-1.png)
 
@@ -210,7 +210,7 @@ https://&lt;*host*>:&lt;*port*>/content/aemforms-refsite/doclink.html?document=/
 
 ![statement-email](assets/statement-email.png)
 
-Sarah가 이메일에서 명세서 보기를 클릭하여 신용카드 명세서를 봅니다. 그 진술은 상호 작용 적인 의사소통이다. 웹 및 인쇄(PDF) 버전이 모두 포함되어 있습니다. 이 명령문은 Forms 데이터 모델과 통합하여 데이터베이스에서 고객별 데이터를 검색합니다. 대화형 문은 다음과 같은 다양한 요소를 구성합니다.
+Sarah가 이메일에서 명세서 보기를 클릭하여 신용카드 명세서를 봅니다. 그 진술은 상호 작용 적인 의사소통이다. 웹 및 인쇄(PDF) 버전이 모두 포함되어 있습니다. 이 명령문은 Forms 데이터 모델과 통합되므로 고객별 데이터를 데이터베이스에서 검색합니다. 대화형 문은 다음과 같은 다양한 요소를 구성합니다.
 
 * 명세서 요약
 * 자세한 비용 보고서
@@ -240,13 +240,13 @@ https://&lt;*hostname*>:&lt;*port*>/content/aemforms-refsite/doclink.html?docume
 
 작성자 및 게시 인스턴스에서 액세스할 수 있습니다.
 
-신용카드 명세서에는 진술의 마지막 부분에 대한 홍보 제안이 표시됩니다. Adobe Target을 AEM Forms Interactive Communication과 통합하여 특정 고객 세그먼트를 기반으로 타겟팅된 프로모션을 제공할 수 있습니다. 사용자 지정 및 타깃팅된 오퍼에 Adobe Target을 사용하도록 대화형 통신을 구성하려면 타깃팅된 경험 [만들기를 참조하십시오](/help/forms/using/experience-targeting-forms.md).
+신용카드 명세서에는 진술의 마지막 부분에 대한 홍보 제안이 표시됩니다. Adobe Target을 AEM Forms 인터랙티브 커뮤니케이션과 통합하여 특정 고객 세그먼트를 기반으로 프로모션을 타겟팅할 수 있습니다. 사용자 지정 및 타깃팅된 오퍼에 Adobe Target을 사용하도록 대화형 통신을 구성하려면 타깃팅된 경험 [만들기를 참조하십시오](/help/forms/using/experience-targeting-forms.md).
 
 ![](do-not-localize/offers.png)
 
 ### We.Finance analytics the performance of the credit card application {#we-finance-analyzes-the-performance-of-the-credit-card-application}
 
-We.Finance.Finance, 때때로 We.Finance, 고객의 모든 문제를 확인하기 위해 신용카드 신청서의 성과를 검토한다. 이들은 이 분석을 통해 사용자 경험을 향상시키고, 양식의 포기율을 줄이고, 전환율을 향상시키기 위해 신용카드 신청에서 요구되는 변경 사항에 대한 현명한 결정을 내릴 수 있습니다. AEM Forms와 Adobe Analytics의 통합을 활용하여 분석합니다. 다음 이미지는 분석 대시보드를 나타냅니다.
+We.Finance.Finance, 때때로 We.Finance, 고객의 모든 문제를 확인하기 위해 신용카드 신청서의 성과를 검토한다. 이들은 이 분석을 통해 사용자 경험을 향상시키고, 양식의 포기율을 줄이고, 전환율을 향상시키기 위해 신용카드 신청에서 요구되는 변경 사항에 대한 현명한 결정을 내릴 수 있습니다. 이들은 AEM Forms과 Adobe Analytics의 통합을 활용해 분석을 한다. 다음 이미지는 분석 대시보드를 나타냅니다.
 
 분석 대시보드를 해석하는 방법에 대한 자세한 내용은 AEM Forms 분석 보고서 [보기 및 이해를 참조하십시오](/help/forms/using/view-understand-aem-forms-analytics-reports.md).
 
@@ -254,13 +254,13 @@ We.Finance.Finance, 때때로 We.Finance, 고객의 모든 문제를 확인하�
 
 #### 작동 방식 {#how-it-works-5}
 
-신용 카드 신청 양식에 대한 성능 지표는 Adobe Analytics를 사용하여 추적됩니다. Adobe Analytics 구성 및 보고서 보기에 대한 자세한 내용은 [양식 및 문서에 대한 분석 구성을 참조하십시오](/help/forms/using/configure-analytics-forms-documents.md).
+신용 카드 신청 양식의 성과 지표는 Adobe Analytics을 사용하여 추적됩니다. Adobe Analytics 구성 및 보고서 보기에 대한 자세한 내용은 [양식 및 문서에 대한 분석 구성을 참조하십시오](/help/forms/using/configure-analytics-forms-documents.md).
 
 #### 직접 보기 {#see-it-yourself-br}
 
 분석 보고서를 보고 탐색하기 위해 참조 사이트에서 신용 카드 애플리케이션에 대한 시드 데이터를 제공합니다. 시드 데이터를 사용하기 전에 분석 [구성을 참조하십시오](/help/forms/using/setup-reference-sites.md#configureanalytics). 시드 데이터로 보고서를 보려면 작성 인스턴스에서 다음 단계를 수행합니다.
 
-1. https://&lt; **[!UICONTROL hostname]** >:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments의 Forms &amp; Documents *UI로 이동합니다*.
+1. https://&lt; **[!UICONTROL hostname]** >:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments의&#x200B;*Forms 및 문서* UI로 이동합니다.
 
 1. 을 클릭하여 **[!UICONTROL We.Finance 폴더를]** 엽니다.
 1. 신용 카드 **[!UICONTROL 응용]** 양식을 위한 응용 프로그램을 선택한 다음 도구 모음에서 분석 **[!UICONTROL 활성화를 클릭합니다]**.
@@ -280,9 +280,9 @@ We.Finance.Finance, 때때로 We.Finance, 고객의 모든 문제를 확인하�
 
 **신용 카드 신청서 A/B 테스트**
 
-Adobe.Finance는 신용 카드 응용 프로그램의 성능을 분석하고 지속적으로 개선하는 것 외에도 AEM Forms와 Target의 통합을 활용하여 A/B 테스트를 만듭니다. 따라서 양식 작성 및 제출 시 다양한 고객 경험을 제공하고 전환율을 높일 수 있는 경험을 식별할 수 있습니다.
+Adobe.Finance는 신용카드 응용 프로그램의 성능을 분석하고 지속적으로 개선하는 것 외에도, A/B 테스트를 만들기 위해 AEM Forms과 Target의 통합을 활용한다. 따라서 양식 작성 및 제출 시 다양한 고객 경험을 제공하고 전환율을 높일 수 있는 경험을 식별할 수 있습니다.
 
-AEM Forms 서버에서 Target을 구성하려면 [AEM Forms에서 Target 설정 및 통합을 참조하십시오](/help/forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms).
+AEM Forms 서버에서 Target을 구성하려면 AEM Forms [에서 Target 설정 및 통합을 참조하십시오](/help/forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms).
 
 다음 단계를 수행하여 We.Finance 신용 카드 응용 프로그램 양식에 대한 A/B 테스트를 만듭니다.
 
@@ -300,7 +300,7 @@ AEM Forms 서버에서 Target을 구성하려면 [AEM Forms에서 Target 설정 
 1. 신용 카드 **신청서** 양식을 선택하고 편집을 **클릭합니다**. 경험 중 하나를 여는 옵션이 제공됩니다. 경험 **B를 클릭합니다**. 양식이 편집 모드로 열립니다.
 
 1. 기본 경험 A와 다른 경험을 만들려면 원하는 대로 양식을 수정합니다.
-1. 양식 및 문서 UI로 이동하여 양식을 선택하고 **자세히**&#x200B;를 클릭한 다음 **A/B 테스트 시작을 선택합니다**.
+1. Forms 및 문서 UI로 이동하여 양식을 선택하고 **자세히**&#x200B;를 클릭한 다음 **A/B 테스트 시작을 선택합니다**.
 
 1. 이제 다음 url을 사용하여 크롬 브라우저에서 양식을 여러 번 엽니다.
 
@@ -309,7 +309,7 @@ AEM Forms 서버에서 Target을 구성하려면 [AEM Forms에서 Target 설정 
 
 1. 양식을 선택하고 **자세히**&#x200B;를 클릭한 다음 **A/B 테스트 보고서를 클릭합니다**. 테스트를 시작했기 때문에 보고서에서 많은 데이터를 찾을 수 없습니다. 이제 몇 가지 시드 데이터를 제공하여 A/B 테스트 보고서가 어떻게 표시되는지 보겠습니다.
 
-1. CRXDE Lite를 열고 다음 파일을 백업합니다. /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
+1. CRXDE Lite을 열고 다음 파일을 백업합니다. /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. 위에 언급된 파일 `onReportLoadSuccess` 의 함수 정의를 다음 파일의 함수 정의로 바꿉니다. /apps/we-finance/demo-artifacts/targetreport.js
 
    **참고:** 이러한 변경 사항은 데모 용도로만 적용됩니다. 이 절차를 완료한 후 파일 내용을 복원해야 합니다.
@@ -334,7 +334,7 @@ We.Finance 홈 모기지 시나리오는 다음과 같은 측면을 포함합니
 
 ![home_morgage_application_walkuses](assets/home_mortgage_application_walkthrough.png)
 
-이제 참조 사이트 시나리오의 단계를 자세히 살펴보고 AEM Forms를 통해 We.Finance에서 목표를 어떻게 달성하는지 확인해보십시오.
+이제 참조 사이트 시나리오의 단계를 자세히 살펴보고 We.Finance가 We.Finance의 목표를 어떻게 달성하는지 알아봅니다.
 
 ### Sarah는 We.Finance 웹 사이트를 방문하고 주택 융자를 신청한다 {#sarah-visits-we-finance-website-and-applies-for-home-mortgage}
 
@@ -346,7 +346,7 @@ We.Finance 홈 모기지 시나리오는 다음과 같은 측면을 포함합니
 
 #### 작동 방식 {#how-it-works-6}
 
-대출 페이지의 홈 모기지 계산기는 AEM Sites 페이지에 포함된 응용 양식입니다. 대출 페이지를 편집 모드로 검토할 수 있습니다 `https://[authorHost]:[authorPort]/editor.html/content/we-finance/global/en/loan-landing-page.html`.
+대출 페이지의 가정용 주택 담보 대출 계산기는 AEM Sites 페이지에 포함된 응용 양식입니다. 대출 페이지를 편집 모드로 검토할 수 있습니다 `https://[authorHost]:[authorPort]/editor.html/content/we-finance/global/en/loan-landing-page.html`.
 
 적응형 양식인 내장 모기지 계산기는 계산 필드에 제공된 대출 세부 사항을 기준으로 EMI 금액을 계산하는 규칙을 사용합니다. 응용 양식을 검토할 수 있습니다 `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/hm-calc.html`.
 
@@ -381,7 +381,7 @@ Sarah가 주택 담보 대출 계산기를 통해 수집한 정보를 바탕으�
 적응형 양식에서 검토할 수 있는 주요 기능 중 일부는 다음과 같습니다.
 
 * XSD 스키마를 기반으로 합니다 `homeMortgageApplication.xsd`.
-* We Finance 테마 B를 사용하여 스타일링 및 레이아웃용 We.Finance 템플릿을 사용하여 만들어집니다. 또한 모바일 탐색을 위해 양식 헤더 레이아웃에서 패널 제목이 없는 레이아웃을 사용합니다. 모바일 장치에서 열면 점진적 모바일 레이아웃이 표시됩니다. AEM 작성자 인스턴스의 다음 위치에서 적응형 양식에 사용된 템플릿 및 테마를 검토할 수 있습니다.
+* We Finance 테마 B를 사용하여 스타일링 및 레이아웃용 We.Finance 템플릿을 사용하여 만들어집니다. 또한 모바일 탐색을 위해 양식 헤더 레이아웃에서 패널 제목이 없는 레이아웃을 사용합니다. 모바일 장치에서 열면 점진적 모바일 레이아웃이 표시됩니다. AEM 작성자 인스턴스의 다음 위치에서 응용 양식에 사용된 템플릿과 테마를 검토할 수 있습니다.
 
    * `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance`
    * `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-b/jcr:content`
@@ -389,7 +389,7 @@ Sarah가 주택 담보 대출 계산기를 통해 수집한 정보를 바탕으�
 * 응용 프로그램의 첫 번째 탭인 시작점은 사용자 선택에 따라 옵션을 표시하는 다이내믹한 융자 계산기입니다. 예를 들어, 필드와 값은 구매 및 재재무 옵션에 따라 다릅니다. 이 기능은 표시 숨기기 규칙을 사용하여 수행됩니다. 또한 계속을 클릭하고 계획 탭이 초기화되면 양식 데이터 모델에 구성된 웹 서비스를 호출하여 담보 대출 계획을 가져오고 표시합니다. 양식 데이터 모델 및 구성된 서비스를 검토할 수 있습니다. `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`
 * 다양한 적응형 양식 구성 요소를 사용하여 사용자 응답에 대한 입력 및 적응력을 캡처합니다. 또한 HTML5 입력 유형을 지원하는 이메일과 같은 구성 요소를 사용합니다.
 * 서명 단계 구성 요소를 사용하여 완성된 양식을 표시하고 양식에 전자 서명을 허용합니다.
-* AEM 워크플로우 호출 제출 작업을 사용하여 We Finance 홈 모기지 AEM 워크플로우를 트리거합니다. 이 양식에서 사용된 워크플로우를 `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-home-mortgage-workflow.html`
+* Invoke AEM Workflow 제출 작업을 사용하여 We Finance Home Mortgage AEM 워크플로우를 트리거합니다. 이 양식에서 사용된 워크플로우를 `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-home-mortgage-workflow.html`
 
 스키마, 구성 요소, 규칙, 양식 데이터 모델, 양식 워크플로우 및 양식 작성에 사용되는 제출 작업을 이해하려면 양식을 검토하는 것이 좋습니다.
 
@@ -400,8 +400,8 @@ Sarah가 주택 담보 대출 계산기를 통해 수집한 정보를 바탕으�
 * [규칙 편집기](/help/forms/using/rule-editor.md)
 * [테마](/help/forms/using/themes.md)
 * [데이터 통합](/help/forms/using/data-integration.md)
-* [적응형 양식에서 Adobe Sign 사용](/help/forms/using/working-with-adobe-sign.md)
-* [OSGi 기반의 양식 중심의 워크플로우](/help/forms/using/aem-forms-workflow.md)
+* [적응형 양식에 Adobe Sign 사용](/help/forms/using/working-with-adobe-sign.md)
+* [OSGi의 Forms 중심 워크플로우](/help/forms/using/aem-forms-workflow.md)
 
 #### 직접 보기 {#see-it-yourself-6}
 
@@ -427,19 +427,19 @@ Gloria는 작업을 시작하고 Need More Info를 클릭하고 누락된 정부
 
 #### 작동 방식 {#how-it-works-8}
 
-Sarah가 홈 모기지 애플리케이션을 채우고 제출하면 양식 워크플로우가 트리거되고 Gloria의 AEM 받은 편지함에 작업이 생성됩니다. Gloria가 지원서를 검토하고 더 많은 정보를 요청함에 따라, 이 작업은 John Doe에게 지정됩니다. John Doe가 ID를 첨부하고 신청서를 제출하면 Gloria에게 할당됩니다. 이것은 모기지 응용 프로그램과 연관된 AEM Workflow에서 정의됩니다.
+사라가 집 담보 대출 신청서를 작성하고 제출하면, Forms Workflow이 트리거되고 글로리아의 AEM 받은 편지함에 작업이 만들어집니다. Gloria가 지원서를 검토하고 더 많은 정보를 요청함에 따라, 이 작업은 John Doe에게 지정됩니다. John Doe가 ID를 첨부하고 신청서를 제출하면 Gloria에게 할당됩니다. 이것은 담보 대출 응용 프로그램과 연관된 AEM 워크플로우에서 정의됩니다.
 
-OSGi 기반의 AEM Forms에서는 적응형 양식 기반 워크플로우를 구축할 수 있는 양식 중심의 워크플로우를 제공합니다. 이러한 워크플로우를 검토 및 승인, 비즈니스 프로세스 흐름, 문서 서비스 시작, Adobe Sign 서명 워크플로우와 통합 등에 사용할 수 있습니다. 자세한 내용은 OSGi에서 [양식 중심의 워크플로우를 참조하십시오](/help/forms/using/aem-forms-workflow.md).
+OSGi 기반의 AEM Forms은 적응형 양식 기반 워크플로우를 구축할 수 있는 양식 중심의 워크플로우를 제공합니다. 이러한 워크플로우를 검토 및 승인, 업무 프로세스 흐름, 문서 서비스 시작, Adobe Sign 서명 워크플로우와 통합 등에 사용할 수 있습니다. 자세한 내용은 OSGi에서 [Forms 중심의 워크플로우를 참조하십시오](/help/forms/using/aem-forms-workflow.md).
 
-다음 이미지는 모기지 응용 프로그램과 연관된 AEM 작업 과정을 설명합니다.
+다음 이미지는 모기지 응용 프로그램과 연관된 AEM 워크플로우를 설명합니다.
 
 ![모기지 워크플로우 모델](assets/mortgage-workflow-model.png)
 
 #### 직접 보기 {#see-it-yourself-7}
 
-https://&lt;hostname ***>:&lt;*** AuthorPort ******>/content/we-finance/global/en/login.html?resource=/aem/inbox.html에서 AEM 받은 편지함에 액세스할 수 있습니다. Gloria Rios 및 John Doe의 사용자 이름/암호 `grios/password` 를 사용하여 AEM 받은 편지함에 로그인하고 홈 모기지 애플리케이션 워크플로우 `jdoe/jdoe` 를 탐색합니다.
+https://&lt;hostname ***>:&lt;*** AuthorPort ******>/content/we-finance/global/en/login.html?resource=/aem/inbox.html에서 AEM 받은 편지함에 액세스할 수 있습니다. Gloria Rios와 John Doe의 사용자 이름/암호 `grios/password` `jdoe/jdoe` 를 사용하여 AEM 받은 편지함에 로그인하고 홈 모기지 애플리케이션 워크플로우를 살펴봅니다.
 
-양식 중심의 워크플로우 작업에 AEM 받은 편지함 사용에 대한 자세한 내용은 AEM 받은 편지함의 [양식 애플리케이션 및 작업 관리를 참조하십시오](/help/forms/using/manage-applications-inbox.md).
+양식 중심의 워크플로우 작업에 AEM Inbox 사용에 대한 자세한 내용은 AEM 받은 편지함에서 [Forms 애플리케이션 및 작업 관리를 참조하십시오](/help/forms/using/manage-applications-inbox.md).
 
 ### 새라는 환영 키트를 받았다 {#sarah-receives-the-welcome-kit}
 
@@ -451,7 +451,7 @@ https://&lt;hostname ***>:&lt;*** AuthorPort ******>/content/we-finance/global/e
 
 #### 작동 방식 {#how-it-works-9}
 
-시작 키트는 패키지에 포함된 인터랙티브한 `cq-we-finance-content-pkg.zip` 커뮤니케이션입니다. 시작 키트의 프로모션 오퍼는 Adobe Target 서버에서 제공됩니다. 오퍼는 사용자 지정되고 특정 고객 세그먼트에 타깃팅됩니다. 시작 키트는 여성 고객의 대상 세그먼트에 대해 사전 구성된 Adobe Target 서버에서 오퍼를 가져옵니다.
+시작 키트는 패키지에 포함된 인터랙티브한 `cq-we-finance-content-pkg.zip` 커뮤니케이션입니다. 환영 키트에 있는 프로모션 행사는 Adobe Target 서버에서 제공됩니다. 오퍼는 사용자 지정되고 특정 고객 세그먼트에 타깃팅됩니다. 시작 키트는 여성 고객의 대상 세그먼트에 대해 사전 구성된 Adobe Target 서버에서 오퍼를 가져옵니다.
 
 데스크톱 버전의 시작 키트의 대화형 카드에서는 문서 조각의 기본 카드 레이아웃을 사용하여 만든 사용자 정의 레이아웃을 사용합니다.
 
@@ -476,7 +476,7 @@ Sarah가 이메일에서 명세서 보기를 클릭하여 대출 계정 명세�
 
 다음 이미지는 데스크탑에서 계정 문의 다른 부분을 보여 줍니다.
 
-![대출 계정 명세서](assets/mortgage-statement.png)
+![대출 거래 명세서](assets/mortgage-statement.png)
 
 자세한 내용은 응답형 표에 나열되며 명세서 내에서 일부 또는 전체 기한을 지불하는 옵션을 제공합니다.
 
@@ -494,7 +494,7 @@ https://&lt;*hostname*>:&lt;*port*>/content/forms/af/we-finance/mortgage-account
 
 ### We.Finance analytics the performance of the baudition application {#we-finance-analyzes-the-performance-of-the-mortgage-application}
 
-We.Finance는 때때로 고객이 직면하고 있는 모든 문제를 확인하기 위해 모기지 애플리케이션의 성능을 검토합니다. 이러한 분석을 통해 사용자 경험을 향상시키고 양식의 포기율을 줄이며 전환율을 높이기 위해 모기지 애플리케이션에 필요한 변경 사항에 대한 현명한 의사 결정을 내릴 수 있습니다. AEM Forms와 Adobe Analytics의 통합을 활용하여 분석합니다. 다음 이미지는 분석 대시보드를 나타냅니다.
+We.Finance는 때때로 고객이 직면하고 있는 모든 문제를 확인하기 위해 모기지 애플리케이션의 성능을 검토합니다. 이러한 분석을 통해 사용자 경험을 향상시키고 양식의 포기율을 줄이며 전환율을 높이기 위해 모기지 애플리케이션에 필요한 변경 사항에 대한 현명한 의사 결정을 내릴 수 있습니다. 이들은 AEM Forms과 Adobe Analytics의 통합을 활용해 분석을 한다. 다음 이미지는 분석 대시보드를 나타냅니다.
 
 분석 대시보드를 해석하는 방법에 대한 자세한 내용은 AEM Forms 분석 보고서 [보기 및 이해를 참조하십시오](/help/forms/using/view-understand-aem-forms-analytics-reports.md).
 
@@ -502,13 +502,13 @@ We.Finance는 때때로 고객이 직면하고 있는 모든 문제를 확인하
 
 #### 작동 방식 {#how-it-works-11}
 
-모기지 애플리케이션 양식의 성능 지표는 Adobe Analytics를 사용하여 추적됩니다. Adobe Analytics 구성 및 보고서 보기에 대한 자세한 내용은 [양식 및 문서에 대한 분석 구성을 참조하십시오](/help/forms/using/configure-analytics-forms-documents.md).
+모기지 애플리케이션 양식의 성능 지표는 Adobe Analytics을 사용하여 추적됩니다. Adobe Analytics 구성 및 보고서 보기에 대한 자세한 내용은 [양식 및 문서에 대한 분석 구성을 참조하십시오](/help/forms/using/configure-analytics-forms-documents.md).
 
 #### 직접 보기 {#see-it-yourself-br-1}
 
 분석 보고서를 보고 탐색하기 위해 참조 사이트에서 모기지 애플리케이션에 대한 시드 데이터를 제공합니다. 시드 데이터를 사용하기 전에 분석 [구성을 참조하십시오](/help/forms/using/setup-reference-sites.md#configureanalytics). 시드 데이터로 보고서를 보려면 작성 인스턴스에서 다음 단계를 수행합니다.
 
-1. https://&lt; **hostname** >:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments의 Forms &amp; Documents *UI로 이동합니다*.
+1. https://&lt; **hostname** >:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments의&#x200B;*Forms 및 문서* UI로 이동합니다.
 
 1. 을 클릭하여 **we-finance** 폴더를 엽니다.
 1. 홈 **[!UICONTROL 모기지]** 응용 양식을 위한 응용 프로그램을 선택한 다음 도구 모음에서 분석 **[!UICONTROL 활성화를 클릭합니다]**.
@@ -527,9 +527,9 @@ We.Finance는 때때로 고객이 직면하고 있는 모든 문제를 확인하
 
 **모기지 애플리케이션의 A/B 테스트**
 
-Adobe.Finance는 모기지 애플리케이션의 성능을 분석하고 지속적으로 개선하는 것 외에도 AEM Forms와 Target의 통합을 활용하여 A/B 테스트를 만듭니다. 양식 작성 및 제출 측면에서 다양한 애플리케이션 양식 경험을 제공하고 전환율을 향상시킬 수 있는 경험을 식별할 수 있습니다.
+Adobe.Finance는 모기지 애플리케이션의 성능을 분석하고 지속적으로 개선하는 것 외에도 Target과 AEM Forms의 통합을 활용하여 A/B 테스트를 만듭니다. 양식 작성 및 제출 측면에서 다양한 애플리케이션 양식 경험을 제공하고 전환율을 향상시킬 수 있는 경험을 식별할 수 있습니다.
 
-AEM Forms 서버에서 Target을 구성하려면 [AEM Forms에서 Target 설정 및 통합을 참조하십시오](/help/forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms).
+AEM Forms 서버에서 Target을 구성하려면 AEM Forms [에서 Target 설정 및 통합을 참조하십시오](/help/forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms).
 
 작성 인스턴스에서 다음 단계를 수행하여 We.Finance 저당권 응용 프로그램 양식에 대한 A/B 테스트 생성을 경험하십시오.
 
@@ -547,7 +547,7 @@ AEM Forms 서버에서 Target을 구성하려면 [AEM Forms에서 Target 설정 
 1. 홈 **모기지** 적응형 양식을 선택하고 편집을 **클릭합니다**. 경험 중 하나를 여는 옵션이 제공됩니다. 경험 **B를 클릭합니다**. 양식이 편집 모드로 열립니다.
 
 1. 기본 경험 A와 다른 경험을 만들려면 원하는 대로 양식을 수정합니다.
-1. 양식 및 문서 UI로 이동하여 양식을 선택하고 **자세히**&#x200B;를 클릭한 다음 **A/B 테스트 시작을 선택합니다**.
+1. Forms 및 문서 UI로 이동하여 양식을 선택하고 **자세히**&#x200B;를 클릭한 다음 **A/B 테스트 시작을 선택합니다**.
 
 1. 이제 다음 url을 사용하여 크롬 브라우저에서 양식을 여러 번 엽니다.
 
@@ -556,7 +556,7 @@ AEM Forms 서버에서 Target을 구성하려면 [AEM Forms에서 Target 설정 
 
 1. 양식을 선택하고 **자세히**&#x200B;를 클릭한 다음 **A/B 테스트 보고서를 클릭합니다**. 테스트를 시작했기 때문에 보고서에서 많은 데이터를 찾을 수 없습니다. 이제 몇 가지 시드 데이터를 제공하여 A/B 테스트 보고서가 어떻게 표시되는지 보겠습니다.
 
-1. CRXDE Lite를 열고 다음 파일을 백업합니다. /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
+1. CRXDE Lite을 열고 다음 파일을 백업합니다. /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. 위에 언급된 파일의 `onReportLoadSuccess` 함수 정의를 다음 파일의 함수 정의로 바꿉니다. /apps/we-finance/demo-artifacts/targetreport.js
    >[!NOTE] 이러한 변경 사항은 데모 용도로만 적용됩니다. 이 절차를 완료한 후 파일 내용을 복원해야 합니다.
 
@@ -587,7 +587,7 @@ Microsoft Dynamics의 홈 저당 애플리케이션 연습에서는 We.Finance �
 
 #### 작동 방식 {#how-it-works-12}
 
-대출 페이지의 홈 모기지 계산기는 AEM Sites 페이지에 포함된 응용 양식입니다. 대출 페이지를 편집 모드로 검토할 수 있습니다 `https://[authorHost]:[authorPort]/editor.html/content/we-finance/global/en/loan-landing-page.html`.
+대출 페이지의 가정용 주택 담보 대출 계산기는 AEM Sites 페이지에 포함된 응용 양식입니다. 대출 페이지를 편집 모드로 검토할 수 있습니다 `https://[authorHost]:[authorPort]/editor.html/content/we-finance/global/en/loan-landing-page.html`.
 
 적응형 양식인 내장 모기지 계산기는 계산 필드에 제공된 대출 세부 사항을 기준으로 EMI 금액을 계산하는 규칙을 사용합니다. 응용 양식을 검토할 수 있습니다 `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/ms-dynamics/home-mortgage-calculator.html`.
 
@@ -622,7 +622,7 @@ Sarah가 주택 담보 대출 계산기를 통해 수집한 정보를 바탕으�
 적응형 양식에서 검토할 수 있는 주요 기능 중 일부는 다음과 같습니다.
 
 * XSD 스키마를 기반으로 합니다 `homeMortgageApplication.xsd`.
-* We Finance 테마 B를 사용하여 스타일링 및 레이아웃용 We.Finance 템플릿을 사용하여 만들어집니다. 또한 모바일 탐색을 위해 양식 헤더 레이아웃에서 패널 제목이 없는 레이아웃을 사용합니다. 모바일 장치에서 열면 점진적 모바일 레이아웃이 표시됩니다. AEM 작성자 인스턴스의 다음 위치에서 적응형 양식에 사용된 템플릿 및 테마를 검토할 수 있습니다.
+* We Finance 테마 B를 사용하여 스타일링 및 레이아웃용 We.Finance 템플릿을 사용하여 만들어집니다. 또한 모바일 탐색을 위해 양식 헤더 레이아웃에서 패널 제목이 없는 레이아웃을 사용합니다. 모바일 장치에서 열면 점진적 모바일 레이아웃이 표시됩니다. AEM 작성자 인스턴스의 다음 위치에서 응용 양식에 사용된 템플릿과 테마를 검토할 수 있습니다.
 
    * `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance`
    * `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-b/jcr:content`
@@ -651,7 +651,7 @@ We.Finance 홈 보험 시나리오는 다음과 같은 사람을 포함합니다
 
 ![workflow_insurance](assets/workflow_insurance.png)
 
-이제 참조 사이트 시나리오의 단계를 자세히 살펴보고 AEM Forms를 통해 We.Finance에서 목표를 어떻게 달성하는지 확인해보십시오.
+이제 참조 사이트 시나리오의 단계를 자세히 살펴보고 We.Finance가 We.Finance의 목표를 어떻게 달성하는지 알아봅니다.
 
 ### 새라는 We.Finance로부터 뉴스레터를 받고 가정보험에 가입한다 {#sarah-receives-a-newsletter-from-we-finance-and-applies-for-home-insurance}
 
@@ -695,7 +695,7 @@ Newsletter의 **지금** 적용 버튼을 누르면 Sarah가 We.Finance 포털�
 * 여기에는 로그인한 사용자의 사용자 세부 사항을 미리 채우기 위해 양식 데이터 모델 서비스를 호출하는 적응형 양식 규칙이 포함됩니다. 또한 양식을 통해 제공되는 소셜 보안 번호나 이메일 주소로 정보를 미리 입력할 수 있는 서비스도 제공합니다. 양식 데이터 모델 및 해당 서비스를 검토할 수 있습니다 `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
 * 다양한 적응형 양식 구성 요소를 사용하여 사용자 응답에 대한 입력 및 적응력을 캡처합니다. 또한 HTML5 입력 유형을 지원하는 이메일과 같은 구성 요소를 사용합니다.
 * [내 진행률 저장] 단추는 사용자에 대한 고유 ID를 생성하고 부분적으로 채워진 응용 프로그램을 AEM 저장소의 노드에 초안으로 저장합니다. 또한 초안 응용 프로그램이 포함된 노드에 대한 링크가 포함된 이메일을 보낼 수 있는 권한을 찾는 대화 상자가 표시됩니다. 확인 대화 상자의 [메일 보내기] 단추는 초안이 포함된 노드에 대한 링크가 포함된 이메일을 트리거합니다.
-* AEM 워크플로우 호출 제출 작업을 사용하여 홈 보험 승인 워크플로우를 트리거합니다. 이 양식에서 사용된 워크플로우를 `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-insurance-workflow.html`
+* AEM Workflow 호출 제출 작업을 사용하여 가정 보험 승인 워크플로우를 트리거합니다. 이 양식에서 사용된 워크플로우를 `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-insurance-workflow.html`
 
 스키마, 구성 요소, 규칙, 양식 데이터 모델, 양식 워크플로우 및 양식 작성에 사용되는 제출 작업을 이해하려면 양식을 검토하는 것이 좋습니다.
 
@@ -706,8 +706,8 @@ Newsletter의 **지금** 적용 버튼을 누르면 Sarah가 We.Finance 포털�
 * [규칙 편집기](/help/forms/using/rule-editor.md)
 * [테마](/help/forms/using/themes.md)
 * [데이터 통합](/help/forms/using/data-integration.md)
-* [적응형 양식에서 Adobe Sign 사용](/help/forms/using/working-with-adobe-sign.md)
-* [OSGi 기반의 양식 중심의 워크플로우](/help/forms/using/aem-forms-workflow.md)
+* [적응형 양식에 Adobe Sign 사용](/help/forms/using/working-with-adobe-sign.md)
+* [OSGi의 Forms 중심 워크플로우](/help/forms/using/aem-forms-workflow.md)
 
 #### 직접 보기 {#see-it-yourself-12}
 
@@ -717,11 +717,11 @@ Newsletter의 **지금** 적용 버튼을 누르면 Sarah가 We.Finance 포털�
 
 ### We.Finance appropriate the application and a contract is signed {#we-finance-approves-the-application-and-a-contract-is-signed}
 
-We.Finance receives received the home insurance application by Sarah. 일은 글로리아 리오스에 맡긴다. AEM 받은 편지함에서 애플리케이션을 검토하고 승인합니다.
+We.Finance receives received the home insurance application by Sarah. 일은 글로리아 리오스에 맡긴다. 그녀는 자신의 AEM 받은 편지함에서 그 지원서를 검토하고 승인한다.
 
 ![insurance-inbox-grios](assets/insurance-inbox-grios.png)
 
-Gloria가 Sarah의 집 보험 신청을 승인함에 따라, Frank De Costa의 AEM 받은 편지함에 작업이 생성됩니다. 프랭크는 그 일을 검토한다. 그는 사라를 위한 주택보험 계약을 준비하고, 그 계약을 그녀의 신청서에 첨부하고, 그것을 사라에게 계약 서명을 위해 보냈다. 아래에 에이전트 UI에 표시된 계약은 인터랙티브 커뮤니케이션의 인쇄 버전입니다.
+글로리아가 사라의 집 보험 신청을 승인함에 따라, 프랭크 드 코스타스의 AEM 받은 편지함에서 하나의 작업이 만들어집니다. 프랭크는 그 일을 검토한다. 그는 사라를 위한 주택보험 계약을 준비하고, 그 계약을 그녀의 신청서에 첨부하고, 그것을 사라에게 계약 서명을 위해 보냈다. 아래에 에이전트 UI에 표시된 계약은 인터랙티브 커뮤니케이션의 인쇄 버전입니다.
 
 ![보험 연락처](assets/insurance-contact-letter.png)
 
@@ -731,9 +731,9 @@ Gloria가 Sarah의 집 보험 신청을 승인함에 따라, Frank De Costa의 A
 
 #### 작동 방식 {#how-it-works-16}
 
-Sarah가 가정용 보험 신청서를 제출하면, 양식 워크플로우가 트리거되고 Gloria의 AEM 받은 편지함에 작업이 생성됩니다. 글로리아가 신청서를 검토하고 승인하면서, 그 작업은 프랭크 드 코스타에게 넘겨졌다. 한 개인에서 다른 사람으로 이어지는 작업 흐름은 보험 응용 프로그램과 연관된 AEM Workflow에서 정의됩니다. 워크플로우에 대한 자세한 내용은 OSGi에서 [양식 중심의 워크플로우를 참조하십시오](/help/forms/using/aem-forms-workflow.md).
+사라가 가정보험 신청서를 제출하면, Forms Workflow이 트리거되고 글로리아 AEM 받은 편지함에 작업이 만들어집니다. 글로리아가 신청서를 검토하고 승인하면서, 그 작업은 프랭크 드 코스타에게 넘겨졌다. 한 개인에서 다른 사람으로 이어지는 작업 흐름은 보험 응용 프로그램과 연관된 AEM 워크플로우에서 정의됩니다. 워크플로우에 대한 자세한 내용은 OSGi에서 [Forms 중심의 워크플로우를 참조하십시오](/help/forms/using/aem-forms-workflow.md).
 
-다음 이미지는 보험 응용 프로그램과 연관된 AEM 작업 과정을 설명합니다.
+다음 이미지는 보험 응용 프로그램과 연관된 AEM 워크플로우를 나타냅니다.
 
 ![we-finance-insurance-workflow-model](assets/we-finance-insurance-workflow-model.png)
 
@@ -743,12 +743,12 @@ Frank는 가정보험 계약을 준비하기 위해 통신관리 업무를 사�
 
 다음을 수행합니다.
 
-1. AEM Inbox로 이동하고 Gloria `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html`의 모습을 위해 사용자 이름 암호 `grios/grios` 로 로그인합니다. 사라의 가정보험 신청을 승인하라.
+1. AEM 받은 편지함으로 `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html`가서 글로리아 `grios/grios` 의 모습을 위한 사용자 이름으로 로그인합니다. 사라의 가정보험 신청을 승인하라.
 
-1. 그런 다음 Frank의 가상 사용자에 대한 사용자 이름 암호로 AEM Inbox `fdcosta/password` 에 로그인합니다. 작업을 봅니다.
+1. 그런 다음 Frank의 모습을 위해 사용자 이름 암호 `fdcosta/password` 로 AEM 받은 편지함에 로그인합니다. 작업을 봅니다.
 1. 이제 HomeInsuranceWelcomeKit `https://[authorHost]:[authorPort]/aem/forms.html/content/dam/formsanddocuments/we-finance/insurance` 의 서신 템플릿을 찾아 미리 볼 수 있습니다.
 1. 데이터 패널에서 정보를 지정합니다. 미리 **[!UICONTROL 보기를]** 클릭한 다음 로컬 파일 시스템에 PDF를 다운로드합니다. PDF 파일이 contract.pdf 파일 이름으로 저장되었는지 확인합니다.
-1. Frank의 AEM 받은 편지함으로 이동하여 작업을 열고, 다운로드한 계약 PDF를 첨부한 다음 계약 **[!UICONTROL 보내기를 클릭합니다]**.
+1. Frank의 AEM 받은 편지함으로 가서 작업을 열고 다운로드한 계약 PDF를 첨부한 다음 계약 **[!UICONTROL 보내기를 클릭합니다]**.
 1. 계약이 포함된 이메일을 열고 문서에 서명합니다.
 
 ### 새라는 환영 키트를 받았다 {#sarah-receives-a-welcome-kit}
@@ -797,7 +797,7 @@ https://[publishHost]:[publishPort]/wefinance의 We.Finance 포털로 이동하�
 
 ### 새라는 그 펀드에 대해 알아보기 위해 블루 칩 성장 기금 설명서를 뒤진다 {#sarah-explores-the-blue-chip-growth-fund-prospectus-to-learn-about-the-fund}
 
-사라가 현 및 내역 가격, 내역 가격, 내역 성장, S&amp;P 500 지수와 비교하기, 섹터별 분산, 자금 관리 및 펀드 관련 비용을 알아보기 위해 설명서의 개요, 가격 및 성과, 포트폴리오 관리, 비용 및 세금 및 지불 탭을 탐색합니다. 관련 정보는 서로 다른 탭으로 구분됩니다. 그 안내서는 상호 작용 방식의 의사소통이다. 인터랙티브한 커뮤니케이션은 반응형 디자인을 제공합니다. 모든 화면 크기의 디바이스에서 인터랙티브한 커뮤니케이션을 열 수 있고 인터랙티브한 커뮤니케이션은 기본 디바이스에 맞게 디자인을 리플로우합니다.
+사라가 현 및 역사적 가격, 역사적 성장, S&amp;P 500 지수와 비교하기, 섹터별 분산, 자금 관리 및 자금 관련 비용 등을 소개하는 설명서의 개요, 가격 및 성과, Portfolio 관리, 요금 및 최저가, 세금 및 지불 탭을 탐색합니다. 관련 정보는 서로 다른 탭으로 구분됩니다. 그 안내서는 상호 작용 방식의 의사소통이다. 인터랙티브한 커뮤니케이션은 반응형 디자인을 제공합니다. 모든 화면 크기의 디바이스에서 인터랙티브한 커뮤니케이션을 열 수 있고 인터랙티브한 커뮤니케이션은 기본 디바이스에 맞게 디자인을 리플로우합니다.
 
 ![slide1-1](assets/slide1-1.png)
 
@@ -805,7 +805,7 @@ https://[publishHost]:[publishPort]/wefinance의 We.Finance 포털로 이동하�
 
 Blue Chip Growth Fund 대화형 커뮤니케이션은 상위 및 하위 패널을 사용하여 관련 정보를 다른 섹션으로 구분합니다. 상위 패널은 모든 하위 패널을 탭으로 구성합니다.
 
-상위 탭의 레이아웃은 모든 하위 패널을 탭으로 변환하기 위해 맨 위의 탭으로 설정됩니다. https:// authorHost에서 편집 모드에서 대화형 통신 패널을 검토할 수[있습니다].[ authorPort /editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html]에서 확인하십시오.
+상위 탭의 레이아웃은 모든 하위 패널을 탭으로 변환하기 위해 맨 위의 탭으로 설정됩니다. https:// authorHost에서 편집 모드에서 대화형 통신 패널을 검토할 수[있습니다].[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html.
 
 #### 직접 보기  {#see-it-yourself-16}
 
@@ -819,7 +819,7 @@ Blue Chip Growth Fund의 인터랙티브한 커뮤니케이션으로 이동합�
 
 #### 작동 방식 {#how-it-works-19}
 
-블루칩 성장 기금 설립설명서는 상호 소통이다. 웹 및 PDF 채널을 통해 인터랙티브한 커뮤니케이션은 AEM Workflows와 통합되어 이메일을 통해 PDF 버전을 전송합니다. https:// authorHost에서 워크플로우 모델을[검토할 수 있습니다].[ authorPort]/editor.html/conf/global/settings/workflow/models/wealthmanagement.html.
+블루칩 성장 기금 설립설명서는 상호 소통이다. 웹 및 PDF 채널을 통해 인터랙티브한 커뮤니케이션은 AEM Workflows와 통합되어 이메일로 PDF 버전을 전송할 수 있습니다. https:// authorHost에서 워크플로우 모델을[검토할 수 있습니다].[ authorPort /editor.html/conf/global/settings/workflow/models/wealthmanagement.html]에서 확인하십시오.
 
 ![자산 관리](assets/wealth-management.png)
 
@@ -842,7 +842,7 @@ Sarah는 이메일에 제공된 지침을 따르고 그 과정을 성공적으�
 
 ### Conrad가 We.Finance로부터 보험 증권 갱신 통신을 보냅니다. {#conrad-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Conrad는 AEM 인스턴스에 로그인하고, 자동 보험 대시보드를 열고 Sarah의 **고객 ID를**&#x200B;지정하고, 정책 **갱신을 클릭합니다**. Agent **UI는** 이미 채워진 Sarah Rose의 정책 세부 정보를 제공합니다. Conrad가 Sarah의 이메일 주소를 지정하고 **제출을 클릭합니다**. Sarah는 Your Auto Insurance Renewal **이라는 제목으로 이메일을 받았다**.
+Conrad는 AEM 인스턴스에 로그인하고, 자동 보험 대시보드를 열고, Sarah의 **고객 ID를**&#x200B;지정하고, 정책 **갱신을 클릭합니다**. Agent **UI는** 이미 채워진 Sarah Rose의 정책 세부 정보를 제공합니다. Conrad가 Sarah의 이메일 주소를 지정하고 **제출을 클릭합니다**. Sarah는 Your Auto Insurance Renewal **이라는 제목으로 이메일을 받았다**.
 
 ![cc-dashboard](assets/cc-dashboard.png)
 
