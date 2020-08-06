@@ -40,7 +40,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >사용자에게 로그인 문제가 발생하면 OSGi 측의 [AEM Forms 사용자가 AEM Forms에서 로그인하지 못함을 참조하십시오](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html).
+   >사용자에게 로그인 문제가 발생하면 JEE 사용자의 [AEM Forms이 OSGi 측의 AEM Forms에서 로그인하지 못함을 참조하십시오](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html).
 
 ## 사용자 설정 {#user-settings}
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 
 **로케일:** 사용자의 ISO 로케일
 
-**비즈니스 달력 키:** 이 설정에 대한 값을 기준으로 비즈니스 달력을 사용자에게 매핑할 수 있습니다. 비즈니스 달력은 업무 및 비업무 일수를 정의합니다. AEM Forms는 미리 알림, 마감 시간 및 문제 제기와 같은 이벤트의 향후 날짜 및 시간을 계산할 때 비즈니스 달력을 사용할 수 있습니다. 비즈니스 달력 키를 사용자에게 할당하는 방법은 기업, 로컬 또는 하이브리드 도메인을 사용하는지에 따라 달라집니다. (도메인 [추가를 참조하십시오](/help/forms/using/admin-help/adding-domains.md#adding-domains).)
+**비즈니스 달력 키:** 이 설정에 대한 값을 기준으로 비즈니스 달력을 사용자에게 매핑할 수 있습니다. 비즈니스 달력은 업무 및 비업무 일수를 정의합니다. AEM 양식은 미리 알림, 마감 시간 및 문제 제기와 같은 이벤트의 향후 날짜와 시간을 계산할 때 비즈니스 일정을 사용할 수 있습니다. 비즈니스 달력 키를 사용자에게 할당하는 방법은 기업, 로컬 또는 하이브리드 도메인을 사용하는지에 따라 달라집니다. (도메인 [추가를 참조하십시오](/help/forms/using/admin-help/adding-domains.md#adding-domains).)
 
 로컬 또는 하이브리드 도메인을 사용하는 경우 사용자 정보는 사용자 관리 데이터베이스에만 저장됩니다. 이러한 사용자의 경우 비즈니스 달력 키를 문자열로 설정합니다. 그런 다음 양식 워크플로우에서 비즈니스 달력 키(문자열)를 비즈니스 달력에 매핑합니다.
 
@@ -88,7 +88,7 @@ ht-degree: 0%
 
 사용자 ID가 고유한지 확인합니다. 삭제된 사용자에게 할당된 항목을 사용하지 마십시오.
 
-AEM 양식은 동일한 사용자 ID와 암호가 있지만 다른 도메인에 속해 있는 사용자 계정을 구별할 수 없습니다. 이 문제를 방지하려면 여러 도메인에서 동일한 사용자 ID를 가진 계정을 만들지 마십시오.
+AEM 양식은 동일한 사용자 ID와 암호를 가지고 있지만 다른 도메인에 속해 있는 사용자 계정을 구별할 수 없습니다. 이 문제를 방지하려면 여러 도메인에서 동일한 사용자 ID를 가진 계정을 만들지 마십시오.
 
 SQL Server를 데이터베이스로 사용할 때는 255자를 초과하는 사용자 ID를 만들 수 없습니다.
 
@@ -131,6 +131,7 @@ MySQL을 사용하는 경우 사용자 ID에 확장 문자가 포함될 수 있�
 
    * 그룹 **[!UICONTROL 찾기를]** 클릭하고 검색 정보를 완료합니다.
    * 사용자를 새 그룹에 추가하려면 그룹의 확인란을 선택하고 **[!UICONTROL 확인을]**&#x200B;클릭한 다음 **[!UICONTROL 저장을 클릭합니다]**.
+
    >[!NOTE]
    >
    >로컬 사용자는 디렉토리 그룹에 추가할 수 없습니다. 그러나 디렉토리 사용자는 로컬 그룹에 추가할 수 있습니다.
@@ -158,14 +159,14 @@ MySQL을 사용하는 경우 사용자 ID에 확장 문자가 포함될 수 있�
 
 >[!NOTE]
 >
->JEE의 AEM Forms를 사용하면 OSGi에서 실행되는 AEM Forms Add-on 사용자가 AEM 사용자로 인식될 수 있습니다. JEE에서 AEM Forms와 AEM Forms Add-on이 OSGi에서 실행되는 단일 사인온이 필요한 경우(예: HTML 작업 공간) 시나리오가 필요합니다. 위에 언급된 삭제 작업은 JEE의 AEM Forms에서만 사용자를 제거합니다. 사용자는 OSGi 환경에서 실행되는 AEM Forms Add-on에서 삭제되지 않습니다. 그러나 사용자를 삭제한 후(OSGi 환경에서 AEM Forms Add-on JEE 서버 또는 AEM Forms Add-on에 대한 로그인 시도) 로그인이 거부됩니다.
+>JEE의 AEM Forms은 또한 OSGi에서 실행되는 AEM 양식 Add-on 사용자가 AEM 사용자로 인식될 수 있도록 합니다. JEE에서 실행되는 AEM Forms과 AEM Forms Add-On 간의 Single Sign-On(예: HTML 작업 공간) 간의 시나리오가 필요한 경우 필요합니다. 위에 언급된 삭제 작업은 JEE의 AEM Forms에서만 사용자를 제거합니다. 사용자는 OSGi 환경에서 실행되는 AEM Forms Add-on에서 삭제되지 않습니다. 그러나 사용자를 삭제한 후(OSGi 환경에서 AEM Forms Add-on JEE 서버 또는 AEM Forms Add-on을 로그인 시도)한 모든 로그인 시도는 거부됩니다.
 
 ## 사용자 정의 로그인 오류 처리기 만들기 {#create-custom-login-error-handler}
 
 필수 AEM 양식 및 CQ 권한이 없는 사용자가 CQ에 포함된 다음 애플리케이션에 로그인하려고 하면 사용자는 오류 추적을 포함하는 기본 CQ 404 페이지로 리디렉션됩니다.
 
 * 통신 관리 솔루션
-* AEM 양식 작업 공간
+* AEM forms Workspace
 
    ***참고&#x200B;**: Flex 작업 영역은 AEM 양식 릴리스에서 더 이상 사용되지 않습니다.*
 
@@ -174,4 +175,4 @@ MySQL을 사용하는 경우 사용자 ID에 확장 문자가 포함될 수 있�
 
 CQ에서는 기본 404 처리기 jsp를 무시하는 메커니즘을 제공합니다.
 
-오류 처리 페이지를 사용자 지정하는 방법에 대한 자세한 내용은 Adobe Experience Manager 설명서 [의 오류 처리기에 표시되는 페이지 사용자](https://docs.adobe.com/docs/en/cq/current/developing/customizing_error_handler_pages.html) 지정을 참조하십시오.
+오류 처리 페이지를 사용자 지정하는 방법에 대한 자세한 내용은 Adobe Experience Manager 문서의 오류 [처리기에 표시되는 페이지 사용자](https://docs.adobe.com/docs/en/cq/current/developing/customizing_error_handler_pages.html) 지정을 참조하십시오.
