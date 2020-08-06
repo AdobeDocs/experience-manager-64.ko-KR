@@ -1,6 +1,6 @@
 ---
-title: Acrobat Reader DC 익스텐션 서비스Java API 빠른 시작(SOAP)
-seo-title: Acrobat Reader DC 익스텐션 서비스Java API 빠른 시작(SOAP)
+title: Acrobat Reader DC 확장 서비스Java API 빠른 시작(SOAP)
+seo-title: Acrobat Reader DC 확장 서비스Java API 빠른 시작(SOAP)
 description: 'null'
 seo-description: 'null'
 uuid: 8e72ca94-a8c1-43aa-9845-a0da597051c5
@@ -17,9 +17,9 @@ ht-degree: 0%
 ---
 
 
-# Acrobat Reader DC 익스텐션 서비스Java API 빠른 시작(SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
+# Acrobat Reader DC 확장 서비스Java API 빠른 시작(SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
 
-다음 빠른 시작을 Acrobat Reader DC Extensions 서비스에 사용할 수 있습니다.
+다음 빠른 시작을 Acrobat Reader DC 확장 서비스에 사용할 수 있습니다.
 
 [빠른 시작(SOAP 모드):Java API를 사용하여 사용 권한 적용](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
@@ -27,11 +27,11 @@ ht-degree: 0%
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 자격 증명 정보 검색](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 
-AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM Forms를 사용한 프로그래밍에 있는 빠른 시작은 Forms 서버 운영 체제를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Forms과 함께 프로그래밍에 있는 빠른 시작은 Forms 서버 운영 체제를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## 빠른 시작(SOAP 모드):Java API를 사용하여 사용 권한 적용 {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
