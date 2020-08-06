@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
 translation-type: tm+mt
 source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+workflow-type: tm+mt
+source-wordcount: '455'
+ht-degree: 95%
 
 ---
 
@@ -42,7 +45,7 @@ source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
    * 다음과 같이 다양한 가능성이 있습니다.
    * 페이지가 올바로 복제되었는지 확인합니다. 페이지 상태를 확인하고, 필요할 경우 복제 큐의 상태도 확인합니다.
    * 로컬 브라우저의 캐시를 지우고 다시 페이지에 액세스합니다.
-   * Add `?` to the end of the page URL. For example:
+   * 페이지 URL의 끝에 `?`를 추가합니다. 예:
 
       `http://localhost:4502/sites.html/content?`
 
