@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 72ee013a-7a60-41ee-9421-2846e4c6bc68
 translation-type: tm+mt
 source-git-commit: 8b75cf8fd862302446fbb3d8823eec2bd708febe
+workflow-type: tm+mt
+source-wordcount: '566'
+ht-degree: 99%
 
 ---
 
@@ -35,11 +38,11 @@ AEM에서는 두 가지 환경을 제공합니다.
 
 >[!NOTE]
 >
->AEM 및 디스패처는 이 AEM 설명서를 게시하는 데 사용됩니다.
+>AEM 및 Dispatcher는 이 AEM 설명서를 게시하는 데 사용됩니다.
 
 ## 작성 환경 {#author-environment}
 
-The author works in what is known as the **[author environment](/help/sites-authoring/home.md)**. This provides an easy to use interface (graphical user interface (GUI or UI)) for creating the content. It is usually located behind a company&#39;s firewall that provides full protection and requires the author to login, using an account that has been assigned the appropriate access rights.
+작성자는 **[작성 환경](/help/sites-authoring/home.md)**에서 작업합니다. 이 환경은 컨텐츠 작성에 적합한 사용하기 쉬운 인터페이스(그래픽 사용자 인터페이스(GUI 또는 UI))를 제공합니다. 완전한 보호 기능을 제공하고 작성자가 적절한 액세스 권한이 지정된 계정을 사용하여 로그인해야 하는 회사 방화벽 뒤에 일반적으로 위치합니다.
 
 >[!NOTE]
 >
@@ -67,30 +70,30 @@ The author works in what is known as the **[author environment](/help/sites-auth
 
 ## 게시 환경 {#publish-environment}
 
-When ready, the AEM site&#39;s content is published to the **publish environment**. 이 환경에서는 의도했던 대상이 디자인된 인터페이스의 모양 및 느낌에 따라 웹 사이트의 페이지를 사용할 수 있게 되어 있습니다.
+준비가 완료된 AEM 사이트의 컨텐츠는 **게시 환경**&#x200B;에 게시됩니다. 이 환경에서는 의도했던 대상이 디자인된 인터페이스의 모양 및 느낌에 따라 웹 사이트의 페이지를 사용할 수 있게 되어 있습니다.
 
 일반적으로 게시 환경은 비무장 지대 안에 있습니다. 다시 말해 여기에서는 인터넷에 연결되지만 내부 네트워크의 보호 기능이 완벽하게 적용되지는 않습니다.
 
-AEM 사이트가 [커뮤니티 사이트](/help/communities/overview.md)이거나 [커뮤니티 구성 요소](/help/communities/author-communities.md)를 포함하면 로그인된 사이트 방문자(구성원)는 커뮤니티 기능과 상호 작용할 수도 있습니다. 예를 들어 포럼에 게시하거나 댓글을 게시하거나 다른 구성원을 팔로우할 수 있습니다. 구성원에게는 새 페이지(커뮤니티 그룹)를 작성하거나, 기사를 블로그에 기록하거나, 다른 구성원의 게시물을 조정하는 등, 일반적으로 작성 환경으로 제한되는 활동을 수행할 수 있는 권한이 부여될 수 있습니다.
+AEM 사이트가 [커뮤니티 사이트](/help/communities/overview.md)이거나 [커뮤니티 구성 요소](/help/communities/author-communities.md)를 포함하면 로그인된 사이트 방문자(구성원)는 커뮤니티 기능과 상호 작용할 수도 있습니다. 예를 들어 포럼에 게시하거나, 댓글을 달거나, 다른 회원을 팔로우할 수 있습니다. 구성원에게는 새 페이지(커뮤니티 그룹)를 작성하거나, 기사를 블로그에 기록하거나, 다른 구성원의 게시물을 조정하는 등, 일반적으로 작성 환경으로 제한되는 활동을 수행할 수 있는 권한이 부여될 수 있습니다.
 
 >[!NOTE]
 >
 >안타깝게도 사용된 용어에 겹치는 경우가 있습니다. 다음과 같은 경우입니다.
 >
 >* **게시/게시 취소**
-   >  게시 환경에서 컨텐츠를 공개적으로 사용할 수 있도록(또는 사용할 수 없도록) 하는 작업에 대한 기본 용어입니다.
+   >  이 용어는 컨텐츠를 게시 환경에서 공개적으로 사용할 수 있도록(또는 사용할 수 없도록) 하는 작업을 위한 기본 용어입니다.
    >
    >
 * **활성화/비활성화**
-   >  이러한 용어는 게시/게시 취소와 동의어입니다. 클래식 UI에서 더 일반적으로 사용됩니다.
+   >  게시/게시 취소와 동의어입니다. 클래식 UI에서 더 일반적으로 사용됩니다.
    >
    >
 * **복제**
-   >  이러한 용어는 한 환경에서 다른 환경으로의 데이터(예: 페이지 컨텐츠, 파일, 코드, 사용자 댓글) 이동을 나타내는 데 사용되는 기술 용어입니다.예를 들어 사용자 댓글을 게시하거나 역복제할 때
+   >  사용자 댓글을 게시하거나 역복제할 때와 같이 한 환경에서 다른 환경으로의 데이터(예: 페이지 컨텐츠, 파일, 코드, 사용자 댓글) 이동을 가리키는 데 사용되는 기술 용어입니다.
 >
 
 
 
 ## Dispatcher {#dispatcher}
 
-To optimize performance for visitors to your website, the **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)**implements load balancing and caching.
+웹 사이트 방문자가 체감하는 성능을 최적화하기 위해 **[디스패처](https://helpx.adobe.com/kr/experience-manager/dispatcher/user-guide.html)는 부하 분산 및 캐싱을 구현합니다.**
