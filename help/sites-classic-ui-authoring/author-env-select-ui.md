@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: dcac2a3a-3241-47de-96ce-982ab0bc05eb
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 59%
 
 ---
 
 
 # UI 선택{#selecting-your-ui}
 
-터치 지원 UI가 클래식 UI보다 우선하므로 AEM 인스턴스의 사용자 또는 관리자는 클래식 UI를 계속 사용하려면 적극적인 결정을 해야 합니다. 클래식 UI가 더 이상 유지 관리되지 않으므로 작성 사용자가 클래식 UI에서 터치 지원 UI에 상응하는 UI로 간단하게 전환할 수 있는 방법이 없습니다.
+터치 지원 UI가 클래식 UI보다 우선하므로 AEM 인스턴스의 사용자 또는 관리자는 클래식 UI를 계속 사용하려면 활성 결정을 해야 합니다. 클래식 UI가 더 이상 유지 관리되지 않으므로 작성 사용자가 클래식 UI에서 터치 지원 UI에 상응하는 UI로 간단하게 전환할 수 있는 방법이 없습니다.
 
 작성자는 편의를 위해 필요한 경우 터치 가능 UI를 클래식 UI로 전환할 수 있습니다. 자세한 내용은 표준 작성 문서의 [UI 선택](/help/sites-authoring/select-ui.md)을 참조하십시오.
 
