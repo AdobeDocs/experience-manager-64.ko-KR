@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5271feb9-70c6-4c82-8ac7-34a63d80e3aa
 translation-type: tm+mt
 source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 4%
 
 ---
 
@@ -21,10 +24,10 @@ source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
 
 Java 클래스의 위치를 만들 때는 패키지 이름이 경로에 하이픈이 있는 저장소 폴더 위치의 이름과 일치해야 합니다.
 
-저장소 항목 이름에 하이픈을 사용하는 것은 AEM 개발 시 권장되지만 Java 패키지 이름 내에서는 하이픈이 잘못되었습니다.
+저장소 항목 이름에 하이픈을 사용하는 것이 좋습니다. AEM 개발에서는 하이픈을 사용하는 것이 좋습니다. Java 패키지 이름 내에서는 하이픈이 잘못되었습니다.
 
-기본 CRX 플랫폼은 실제 밑줄 &#39;_&#39;과 하이픈 &#39;-&#39;를 구분할 수 있어야 합니다. 따라서 JCR에서 하이픈은 유니코드 값(u002d)으로 대체되어야 하며 밑줄 &#39;_&#39;로 이스케이프해야 합니다.
+기본 CRX 플랫폼은 실제 밑줄 &#39;_&#39;과 하이픈 &#39;-&#39;를 구분할 수 있어야 합니다. 따라서 JCR에서 하이픈은 유니코드 값(u002d)으로 대체되고 밑줄 &#39;_&#39;로 이스케이프해야 합니다.
 
-예를 들어 저장소 경로가 /apps/my-example/component/info/Info.java **인**&#x200B;경우 패키지 이름은 `java package apps.my_002dexample.component.info;`
+예를 들어 저장소 경로가 **/apps/my-example/component/info/Info.java인**&#x200B;경우 패키지 이름은 `java package apps.my_002dexample.component.info;`
 
-밑줄이 유사한 방식으로 이스케이프되어야 합니다. 이렇게 `_` 하면 `_005f`됩니다.
+마찬가지로 밑줄이 이스케이프되어야 합니다(예: `_` 이스케이프되어야 함) `_005f`.
