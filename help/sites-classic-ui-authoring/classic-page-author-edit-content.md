@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e75ce118-3850-4440-ad58-89569cb8c8eb
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1780'
+ht-degree: 99%
 
 ---
 
@@ -40,7 +43,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 * 워크플로우
 * 모드
 * 스캐폴딩
-* ClientContext
+* Client Context
 * 웹 사이트
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
@@ -74,6 +77,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * **여기로 구성 요소나 자산을 드래그하십시오.**&#x200B;가 표시된 영역을 두 번 클릭하여 **새 구성 요소 삽입** 도구 모음을 엽니다. 구성 요소를 선택하고 **확인**&#x200B;을 클릭합니다.
    * 이동 도구 모음(사이드킥)에서 구성 요소를 드래그하여 새 단락을 삽입합니다.
    * 기존 단락을 마우스 오른쪽 단추로 클릭하고 **새로 만들기...**&#x200B;를 클릭하여 새 구성 요소 삽입 도구 모음을 엽니다. 구성 요소를 선택하고 **확인**&#x200B;을 클릭합니다.
+
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
 1. 사이드 킥과 **새 구성 요소 삽입** 도구 모음에는 모두 사용 가능한 구성 요소(단락 유형)의 목록이 있습니다. 이 목록은 여러 부분으로 나뉘어 있으며(예: 일반, 열, 등) 필요에 따라 확장할 수 있습니다.
@@ -132,7 +136,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    ![screen_shot_2012-02-15at115855am](assets/screen_shot_2012-02-15at115855am.png)
 
 1. 단락을 새 위치에 드래그합니다. 단락을 이동할 수 있는 위치를 녹색 확인 표시로 나타냅니다. 단락을 원하는 위치에 놓습니다.
-1. 단락이 이동됩니다.
+1. 단락이 이동됩니다:
 
    ![screen_shot_2012-02-15at120030pm](assets/screen_shot_2012-02-15at120030pm.png)
 
@@ -182,9 +186,11 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    구성 요소가 live copy 또는 launch의 일부일 경우, 자물쇠 아이콘으로 표시됩니다. 자물쇠를 클릭하여 상속을 취소할 수 있습니다.
 
    * 구성 요소를 선택하면 자물쇠 아이콘이 표시됩니다. 예:
+
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
    * 이 자물쇠는 구성 요소들의 대화 상자에도 표시됩니다. 예:
+
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
 1. **상속된 단락 시스템**
@@ -279,6 +285,7 @@ AEM에는 사용자가 수행한 작업 내역이 순서대로 저장됩니다. 
 >* 실행 취소를 사용한 후 페이지를 편집하지 않은 경우 작업을 재실행합니다.
 >* 최대 20개의 편집 작업 실행을 취소합니다(기본 설정).
 >* 실행 취소 및 재실행용 [키보드 단축키](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)를 사용할 수도 있습니다.
+
 >
 
 
