@@ -1,8 +1,8 @@
 ---
 title: Adobe Analytics 속성을 사용하여 구성 요소 데이터 매핑
 seo-title: Adobe Analytics 속성을 사용하여 구성 요소 데이터 매핑
-description: SiteCatalyst 속성에 구성 요소 데이터를 매핑하는 방법을 알아봅니다.
-seo-description: SiteCatalyst 속성에 구성 요소 데이터를 매핑하는 방법을 알아봅니다.
+description: 구성 요소 데이터를 SiteCatalyst 속성에 매핑하는 방법을 알아봅니다.
+seo-description: 구성 요소 데이터를 SiteCatalyst 속성에 매핑하는 방법을 알아봅니다.
 uuid: accdb0e8-957c-4617-9a8d-eccc24ac436e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -37,15 +37,15 @@ AEM **보기가** 열리면 Analytics 변수가 컨텐츠 파인더에 나타납
 * 페이지가 프레임워크와 연결됩니다.
 * 이 페이지에서는 프레임워크에 추가된 구성 요소를 사용합니다.
 
-다음 절차를 사용하여 CQ 구성 요소 변수를 Adobe Analytics 보고서 속성에 매핑하십시오.
+다음 절차를 사용하여 CQ 구성 요소 변수를 Adobe Analytics 보고서 속성과 매핑하십시오.
 
 1. AEM **보기에서**&#x200B;사이드 킥의 추적 구성 요소를 프레임워크로 드래그합니다. 예를 들어, **페이지** 구성 요소 구성 요소를 **일반** 카테고리에서 드래그합니다.
 
    ![aa-13](assets/aa-13.png)
 
-   몇 가지 기본 구성 요소 그룹이 있습니다. **일반**&#x200B;커머스, **커뮤니티**, **Search&amp;Promote**, 그리고 기타 ********. AEM 인스턴스가 다른 그룹 및 구성 요소를 표시하도록 구성할 수 있습니다.
+   몇 가지 기본 구성 요소 그룹이 있습니다. **일반**&#x200B;커머스, **커뮤니티**, **Search &amp; Promote**, 그리고 기타 ********. AEM 인스턴스가 다른 그룹 및 구성 요소를 표시하도록 구성할 수 있습니다.
 
-1. Adobe Analytics 변수를 구성 요소에 정의된 변수와 매핑하려면 컨텐츠 파인더의 **Analytics 변수를 추적 구성 요소의 필드로** 드래그합니다. 예를 들어 드래그 `Page Name (pageName)` 를 클릭합니다 `pagedata.title`.
+1. Adobe Analytics 변수를 구성 요소에 정의된 변수와 매핑하려면 컨텐츠 파인더의 **Analytics 변수를** 추적 구성 요소의 필드로 드래그합니다. 예를 들어 드래그 `Page Name (pageName)` 를 클릭합니다 `pagedata.title`.
 
    ![aa-14](assets/aa-14.png)
 
@@ -71,7 +71,7 @@ AEM **보기가** 열리면 Analytics 변수가 컨텐츠 파인더에 나타납
 
 ## 제품 관련 변수 매핑 {#mapping-product-related-variables}
 
-AEM에서는 제품 관련 변수 및 Adobe Analytics 제품 관련 속성에 매핑되기 위한 이벤트의 이름 지정 규칙을 사용합니다.
+AEM에서는 제품 관련 변수 및 이벤트를 Adobe Analytics 제품 관련 속성에 매핑하기 위한 규칙을 사용합니다.
 
 | CQ 변수 | Analytics 변수 | 설명 |
 |---|---|---|
@@ -88,7 +88,7 @@ AEM에서는 제품 관련 변수 및 Adobe Analytics 제품 관련 속성에 �
 >
 >Adobe Analytics 제품 속성을 CQ 변수에 매핑하지 마십시오. 표에 설명된 대로 제품 관련 매핑을 구성하는 것은 제품 변수 매핑과 사실상 같습니다.
 
-## Adobe Analytics에 대한 보고서 확인 {#checking-reports-on-adobe-analytics}
+## Adobe Analytics 보고서 확인 {#checking-reports-on-adobe-analytics}
 
 1. AEM에 제공된 동일한 자격 증명을 사용하여 Adobe Analytics 웹 사이트에 로그인합니다.
 1. 선택한 RSID가 이전 단계에서 사용된 RSID인지 확인합니다.
@@ -98,18 +98,18 @@ AEM에서는 제품 관련 변수 및 Adobe Analytics 제품 관련 속성에 �
 
 ## Adobe Analytics 프레임워크에서 컨텐츠 파인더(cf#) 사용 {#using-the-content-finder-cf-with-adobe-analytics-frameworks}
 
-초기에는 Adobe Analytics 프레임워크을 열 때 컨텐츠 파인더에는 다음과 같이 사전 정의된 Analytics 변수가 포함됩니다.
+처음에 Adobe Analytics 프레임워크을 열 때 컨텐츠 파인더에는 다음과 같이 사전 정의된 Analytics 변수가 포함됩니다.
 
 * 트래픽
 
-* 변환
+* 전환
 
 * 이벤트
 
 RSID를 선택하면 해당 RSID에 속하는 모든 변수가 목록에 추가됩니다.\
-Analytics 변수 `cf#` 를 다른 추적 구성 요소에 있는 CQ 변수에 매핑하려면 이 매개 변수가 필요합니다. 기본 추적을 위한 프레임워크 설정을 참조하십시오.
+Analytics 변수 `cf#` 를 다른 추적 구성 요소에 있는 CQ 변수에 매핑하기 위해 필요합니다. 기본 추적을 위한 프레임워크 설정을 참조하십시오.
 
-프레임워크에 대해 선택한 보기에 따라, 컨텐츠 파인더는 Analytics 변수(AEM 보기)나 CQ 변수(Analytics 보기)로 채워집니다.
+프레임워크에 대해 선택한 보기에 따라 컨텐츠 파인더는 Analytics 변수(AEM 보기) 또는 CQ 변수(Analytics 보기)로 채워집니다.
 
 목록은 다음과 같은 방법으로 조작할 수 있습니다.
 
@@ -126,7 +126,7 @@ Analytics 변수 `cf#` 를 다른 추적 구성 요소에 있는 CQ 변수에 �
 
    >[!NOTE]
    >
-   >Search&amp;Promote 변수도 전환 섹션에 속합니다.
+   >Search &amp; Promote 변수도 전환 섹션에 속합니다.
 
    1. 검색 필드에는 검색 필드에 입력한 텍스트에 따라 요소를 필터링하는 검색 기능도 있습니다.
    1. 목록에서 요소를 검색하는 동안 필터 옵션이 활성화되면 표시되는 결과가 활성 단추에 따라 필터링됩니다.
@@ -134,9 +134,9 @@ Analytics 변수 `cf#` 를 다른 추적 구성 요소에 있는 CQ 변수에 �
    1. 프레임워크에서 여러 RSID를 선택한 경우 선택한 RSID 내에 사용된 모든 레이블을 사용하여 목록의 모든 변수가 표시됩니다.
 
 
-1. Adobe Analytics 보기에서 Content Finder는 CQ 보기에서 드래그한 추적 구성 요소에 속하는 모든 CQ 변수를 표시합니다.
+1. Adobe Analytics 보기에서 컨텐츠 파인더는 CQ 보기에서 드래그한 추적 구성 요소에 속하는 모든 CQ 변수를 표시합니다.
 
-   * 예: **다운로드 구성 요소 **는 CQ 보기에서 드래그한 *유일한* 변수(2개의 매핑 가능한 변수 *event data.downloadLink* 및 *eventdata.events.startDownload*)인 경우, Adobe Analytics 보기로 전환할 때 컨텐츠 파인더는 다음과 같이 표시됩니다.
+   * 예: **다운로드 구성 요소 **는 CQ 보기에서 드래그한 *유일한* 변수(2개의 매핑 가능한 변수 *events.downloadLink* 및 *eventdata.events.startDownload*)인 경우, Adobe Analytics 보기로 전환할 때 컨텐츠 파인더는 다음과 같이 표시됩니다.
 
    ![aa-22](assets/aa-22.png)
 
@@ -147,19 +147,19 @@ Analytics 변수 `cf#` 를 다른 추적 구성 요소에 있는 CQ 변수에 �
    >
    >한 번에 하나의 CQ 변수만 Adobe Analytics 변수에 매핑할 수 있습니다.
 
-## AEM 보기 및 Analytics 보기 사용 {#using-aem-view-and-analytics-view}
+## AEM 보기 및 분석 보기 사용 {#using-aem-view-and-analytics-view}
 
-주어진 시간에, 사용자는 프레임워크 페이지에서 Adobe Analytics 매핑을 볼 때 두 가지 방법 간에 전환할 수 있는 옵션이 있습니다. 2개의 보기는 2개의 서로 다른 관점에서 프레임워크 내의 매핑에 대한 더 나은 개요를 제공합니다.
+주어진 시간에 사용자는 프레임워크 페이지에서 Adobe Analytics 매핑을 보는 두 가지 방법 간에 전환할 수 있습니다. 2개의 보기는 2개의 서로 다른 관점에서 프레임워크 내의 매핑에 대한 더 나은 개요를 제공합니다.
 
 ### AEM 보기 {#aem-view}
 
 ![aa-23](assets/aa-23.png)
 
-위의 이미지를 예로 들어 보면 **AEM 보기에는** 다음과 같은 속성이 있습니다.
+위의 이미지를 예로 들어 보면 **AEM 보기에는 다음 속성이** 있습니다.
 
 1. 프레임워크가 열릴 때의 기본 보기입니다.
 1. 왼쪽: 컨텐츠 파인더(cf#)는 선택한 RSID를 기준으로 Adobe Analytics 변수로 채워집니다.
-1. 탭 헤더(**AEM 보기** 및 **Analytics 보기**): 두 뷰 간에 전환할 때 사용합니다.
+1. 탭 헤더(**AEM 보기** 및 **분석 보기**): 두 뷰 간에 전환할 때 사용합니다.
 
 1. **AEM 보기**:
 
@@ -176,21 +176,21 @@ Analytics 변수 `cf#` 를 다른 추적 구성 요소에 있는 CQ 변수에 �
       1. 구성 요소는 만들어진 프레임워크에서만 삭제할 수 있으며, 일반적인 의미에서 하위 프레임워크에서는 삭제할 수 없습니다(덮어쓸 수만 있음).
 
 
-### Analytics 보기 {#analytics-view}
+### 분석 보기 {#analytics-view}
 
 ![aa-24](assets/aa-24.png)
 
-1. 이 보기는 프레임워크의 **Analytics 보기** 탭으로 전환하여 액세스할 수 있습니다.
+1. 이 보기는 프레임워크의 **분석 보기** 탭으로 전환하여 액세스할 수 있습니다.
 1. 왼쪽: CQ 보기의 프레임워크로 드래그한 구성 요소를 기반으로 CQ 변수에 의해 채워진 컨텐츠 파인더(cf#)
-1. 탭 헤더(**AEM 보기** 및 **Analytics 보기**): 두 뷰 간에 전환할 때 사용합니다.
+1. 탭 헤더(**AEM 보기** 및 **분석 보기**): 두 뷰 간에 전환할 때 사용합니다.
 
-1. 세 테이블(트래픽, 전환, 이벤트)에는 사용 가능한 모든 Adobe Analytics 변수가 나열됩니다. 선택한 RSID에 속합니다. 여기에 표시된 매핑은 AEM 보기의 매핑과 같아야 합니다.
+1. 세 테이블(트래픽, 전환, 이벤트)에는 사용 가능한 모든 Adobe Analytics 변수가 나열됩니다. 선택한 RSID에 속합니다. 여기에 표시된 매핑은 AEM 보기에서와 동일해야 합니다.
 
    * **트래픽**:
 
       * CQ 변수()에 매핑된 트래픽 변수( `prop1`)() `eventdata.downloadLink`
       * 구성 요소 옆에 자물쇠가 있는 경우 이것은 상위 프레임워크에서 상속되므로 편집할 수 없음을 의미합니다
-   * **변환**:
+   * **전환**:
 
       * CQ 변수()에 매핑된 전환 변수( `eVar1`) `pagedata.title`
       * CQ 변수 필드를 두 번 클릭하고 코드를 수동으로 입력하여 인라인으로 추가된 javascript 식에 매핑된 전환 변수( `eVar3`)
@@ -206,10 +206,10 @@ Analytics 변수 `cf#` 를 다른 추적 구성 요소에 있는 CQ 변수에 �
 >
 >* 예: 다음을 추가할 수 `prop3` 있습니다.
 >* `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
-   >  사이트 섹션과 연결된 페이지의 *제목* 을 전송하려면 다음을 *사용합니다* . ** (콜론) 및 *Adobe* `prop3`
+   >  사이트 섹션과 연결된 페이지의 *제목* 을 전송하려면 다음을 *사용합니다* . ** (콜론) 및 *Adobe* 를 `prop3`
 
 
 >[!CAUTION]
 >
->지정된 시간에 하나의 CQ 변수만 Adobe Analytics 변수에 매핑할 수 있습니다.
+>주어진 시간에 하나의 CQ 변수만 Adobe Analytics 변수에 매핑할 수 있습니다.
 
