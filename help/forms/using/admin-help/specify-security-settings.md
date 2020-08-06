@@ -11,17 +11,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 3c017f9a-aa7f-4d12-ba8b-9fd92c029157
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '82'
+ht-degree: 2%
 
 ---
 
 
 # 보안 설정 지정 {#specify-security-settings}
 
-출력을 사용하면 XML 입력의 외부 엔티티가 해결되는지 여부를 제어할 수 있습니다. 기본적으로 이러한 문제가 해결되지만 AEM 양식 시스템의 보안을 강화하도록 이 동작을 변경할 수 있습니다.
+출력을 사용하면 XML 입력에 있는 외부 엔티티의 확인 여부를 제어할 수 있습니다. 기본적으로 문제가 해결되지만 AEM 양식 시스템의 보안을 강화하도록 이 동작을 변경할 수 있습니다.
 
-**외부 엔티티에 대한 참조가 들어 있는 XML 데이터 파일 처리 방지**
+**외부 개체에 대한 참조가 포함된 XML 데이터 파일 처리 방지**
 
 1. 관리 콘솔에서 서비스 > 출력을 클릭합니다.
 1. 외부 엔티티 해결 확인란을 선택 취소합니다.
-1. [저장]을 클릭합니다.
+1. 저장을 클릭합니다.
 
