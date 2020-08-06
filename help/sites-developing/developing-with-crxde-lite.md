@@ -1,8 +1,8 @@
 ---
 title: CRXDE Lite를 사용한 개발
 seo-title: CRXDE Lite를 사용한 개발
-description: CRXDE Lite가 AEM에 포함되어 있으므로 브라우저에서 표준 개발 작업을 수행할 수 있습니다
-seo-description: CRXDE Lite가 AEM에 포함되어 있으므로 브라우저에서 표준 개발 작업을 수행할 수 있습니다
+description: CRXDE Lite이 AEM에 내장되어 있으므로 브라우저에서 표준 개발 작업을 수행할 수 있습니다.
+seo-description: CRXDE Lite이 AEM에 내장되어 있으므로 브라우저에서 표준 개발 작업을 수행할 수 있습니다.
 uuid: a5eafc8c-f9fa-49ba-ad2f-0cccc427ca49
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -13,20 +13,20 @@ translation-type: tm+mt
 source-git-commit: f98eccdb0251ff0262017fa42529576ba5feac97
 workflow-type: tm+mt
 source-wordcount: '2152'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 
 # CRXDE Lite를 사용한 개발 {#developing-with-crxde-lite}
 
-이 섹션에서는 CRXDE Lite를 사용하여 AEM 애플리케이션을 개발하는 방법에 대해 설명합니다.
+이 섹션에서는 CRXDE Lite을 사용하여 AEM 애플리케이션을 개발하는 방법에 대해 설명합니다.
 
 사용 가능한 다양한 개발 환경에 대한 자세한 내용은 개요 설명서를 참조하십시오.
 
-CRXDE Lite가 AEM에 포함되어 있으므로 브라우저에서 표준 개발 작업을 수행할 수 있습니다. CRXDE Lite를 사용하면 프로젝트를 만들고 파일(예: .jsp 및 .java), 폴더, 템플릿, 구성 요소, 대화 상자, 노드, 속성 및 번들을 만들고 편집할 수 있습니다.
+CRXDE Lite은 AEM에 내장되어 있으므로 브라우저에서 표준 개발 작업을 수행할 수 있습니다. CRXDE Lite을 사용하여 프로젝트를 만들고 파일(예: .jsp 및 .java), 폴더, 템플릿, 구성 요소, 대화 상자, 노드, 속성 및 번들을 만들고 편집할 수 있습니다.
 
-CRXDE Lite는 AEM 서버에 직접 액세스할 수 없는 경우, 바로 사용 가능한 구성 요소와 Java 번들을 확장 또는 수정하여 애플리케이션을 개발하거나 전용 디버거, 코드 완성 및 구문 강조 표시가 필요하지 않은 경우에 권장됩니다.
+AEM 서버에 직접 액세스할 수 없는 경우, 기본 구성 요소 및 Java 번들을 확장 또는 수정하여 애플리케이션을 개발할 때 또는 전용 디버거, 코드 완성 및 구문 강조 표시가 필요하지 않은 경우 CRXDE Lite이 권장됩니다.
 
 >[!NOTE]
 >
@@ -35,13 +35,13 @@ CRXDE Lite는 AEM 서버에 직접 액세스할 수 없는 경우, 바로 사용
 
 >[!NOTE]
 >
->프로젝트 개발 중에 Eclipse용 [AEM 개발자 도구](/help/sites-developing/aem-eclipse.md) 및 [AEM HTL Brackets](/help/sites-developing/aem-brackets.md) 확장을 사용하는 것이 좋습니다.
+>프로젝트 개발 중에 [AEM Developer Tools for Eclipse](/help/sites-developing/aem-eclipse.md) 및 [AEM HTL Brackets](/help/sites-developing/aem-brackets.md) Extension을 사용하는 것이 좋습니다.
 
 ## CRXDE Lite 시작하기 {#getting-started-with-crxde-lite}
 
-CRXDE Lite를 시작하려면 다음을 수행합니다.
+CRXDE Lite을 시작하려면 다음을 수행합니다.
 
-1. AEM을 설치합니다.
+1. AEM 설치
 1. 브라우저에서 https://`<host>`:`<port>`/crx/de를 입력합니다. 기본적으로 `http://localhost:4502/crx/de`표시됩니다.
 1. 사용자 **이름** 및 **암호를 입력합니다**. 기본적으로 `admin` 및 `admin`입니다.
 
@@ -51,11 +51,11 @@ CRXDE Lite 사용자 인터페이스는 브라우저에서 다음과 같이 표�
 
 ![chlimage_1-238](assets/chlimage_1-238.png)
 
-이제 CRXDE Lite를 사용하여 애플리케이션을 개발할 수 있습니다.
+이제 CRXDE Lite을 사용하여 애플리케이션을 개발할 수 있습니다.
 
 ### 사용자 인터페이스 개요 {#overview-of-the-user-interface}
 
-CRXDE Lite는 다음과 같은 기능을 제공합니다.
+CRXDE Lite은 다음 기능을 제공합니다.
 
 <table> 
  <tbody> 
@@ -81,7 +81,7 @@ CRXDE Lite는 다음과 같은 기능을 제공합니다.
   </tr> 
   <tr> 
    <td>액세스 제어 탭</td> 
-   <td><p>현재 경로, 저장소 수준 또는 주체에 따라 권한을 표시합니다.</p> <p>권한은</p> <p>- <strong>해당 액세스 제어 정책</strong>: 현재 선택 항목에 적용할 수 있는 정책입니다.</p> <p>- <strong>로컬 액세스 제어 정책</strong>: 현재 선택한 항목에 로컬로 적용된 현재 정책</p> <p>- <strong>효과적인 액세스 제어 정책</strong>: 현재 선택 항목에 적용된 현재 정책은 로컬 또는 상위 노드에서 상속될 수 있습니다.</p> <p>메모. 액세스 제어 정보를 전혀 볼 수 있으려면 CRXDE Lite에 로그인한 사용자가 ACL 항목을 읽을 수 있는 권한이 있어야 합니다. 익명 사용자는 기본적으로 이 정보를 볼 수 없습니다. 정보를 보려면 관리자로 로그인하십시오.</p> </td> 
+   <td><p>현재 경로, 저장소 수준 또는 주체에 따라 권한을 표시합니다.</p> <p>권한은</p> <p>- <strong>해당 액세스 제어 정책</strong>: 현재 선택 항목에 적용할 수 있는 정책입니다.</p> <p>- <strong>로컬 액세스 제어 정책</strong>: 현재 선택한 항목에 로컬로 적용된 현재 정책</p> <p>- <strong>효과적인 액세스 제어 정책</strong>: 현재 선택 항목에 적용된 현재 정책은 로컬 또는 상위 노드에서 상속될 수 있습니다.</p> <p>메모. 액세스 제어 정보를 전혀 볼 수 있으려면 CRXDE Lite에 로그인한 사용자에게 ACL 항목을 읽을 수 있는 권한이 있어야 합니다. 익명 사용자는 기본적으로 이 정보를 볼 수 없습니다. 정보를 보려면 관리자로 로그인하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>복제 탭</td> 
@@ -133,7 +133,7 @@ CRXDE Lite는 다음과 같은 기능을 제공합니다.
   </tr> 
   <tr> 
    <td>도구<br /> </td> 
-   <td><p>다음 도구가 있는 드롭다운 메뉴:</p> <p>- <strong>서버 구성 ...</strong>: 를 클릭하여 Felix Console에 액세스합니다.</p> <p>- <strong>쿼리 ...</strong>: to query the repository.</p> <p>- <strong>권한 ...</strong>: 권한을 보고 추가할 수 있는 권한 관리를 엽니다.</p> <p>- <strong>액세스 제어 테스트 ...</strong>: 특정 경로 및/또는 주체에 대한 권한을 테스트할 수 있는 곳입니다.</p> <p>- <strong>내보내기 노드 유형</strong>: to export node types in the system as cnd 표기법.</p> <p>- <strong>노드 유형 가져오기 ...</strong>: to import node types using cnd 표기법을 사용합니다.</p>  <p>- <strong>SiteCatalyst Debugger 설치 ...</strong>: Analytics 디버거 설치 방법에 대한 지침</p> </td> 
+   <td><p>다음 도구가 있는 드롭다운 메뉴:</p> <p>- <strong>서버 구성 ...</strong>: 를 클릭하여 Felix Console에 액세스합니다.</p> <p>- <strong>쿼리 ...</strong>: to query the repository.</p> <p>- <strong>권한 ...</strong>: 권한을 보고 추가할 수 있는 권한 관리를 엽니다.</p> <p>- <strong>액세스 제어 테스트 ...</strong>: 특정 경로 및/또는 주체에 대한 권한을 테스트할 수 있는 곳입니다.</p> <p>- <strong>내보내기 노드 유형</strong>: to export node types in the system as cnd 표기법.</p> <p>- <strong>노드 유형 가져오기 ...</strong>: to import node types using cnd 표기법을 사용합니다.</p>  <p>- <strong>SiteCatalyst 디버거 설치 ...</strong>: Analytics Debugger 설치 방법에 대한 지침</p> </td> 
   </tr> 
   <tr> 
    <td>로그인 위젯<br /> </td> 
@@ -144,9 +144,9 @@ CRXDE Lite는 다음과 같은 기능을 제공합니다.
 
 ### Creating a Folder {#creating-a-folder}
 
-CRXDE Lite를 사용하여 폴더를 만들려면:
+CRXDE Lite이 있는 폴더를 만들려면:
 
-1. 브라우저에서 CRXDE Lite를 엽니다.
+1. 브라우저에서 CRXDE Lite을 엽니다.
 1. 탐색 창에서 새 폴더를 만들 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기 ...**, 폴더 **만들기 ...를 선택합니다.**.
 
 1. 폴더 이름을 **입력하고** 확인을 **클릭합니다**.
@@ -155,9 +155,9 @@ CRXDE Lite를 사용하여 폴더를 만들려면:
 
 ### Creating a Template {#creating-a-template}
 
-CRXDE Lite를 사용하여 템플릿을 만들려면
+CRXDE Lite이 있는 템플릿을 만들려면
 
-1. 브라우저에서 CRXDE Lite를 엽니다.
+1. 브라우저에서 CRXDE Lite을 엽니다.
 1. 탐색 창에서 템플릿을 만들 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기...를 선택한 다음 템플릿**&#x200B;만들기 ...를 선택합니다 **.**.
 
 1. 템플릿 **의**&#x200B;레이블 **,**&#x200B;제목 **,**&#x200B;설명 **, 리소스 유형,** **** 및Ranking 등급을 입력합니다. **다음**&#x200B;을 클릭합니다.
@@ -182,9 +182,9 @@ CRXDE Lite를 사용하여 템플릿을 만들려면
 
 여기에 설명된 기능은 저장소에서 노드 유형을 사용할 수 `cq:Component` 있는 경우에만 사용할 수 있습니다.
 
-CRXDE Lite를 사용하여 구성 요소를 만들려면:
+CRXDE Lite으로 구성 요소를 만들려면
 
-1. 브라우저에서 CRXDE Lite를 엽니다.
+1. 브라우저에서 CRXDE Lite을 엽니다.
 1. 탐색 창에서 구성 요소를 만들 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기 ...**, 구성 요소 **만들기 ...를 선택합니다.**.
 
 1. 레이블, **제목**, **설명**, **슈퍼 리소스 유형****** **** 과 구성 요소의Group을 입력합니다. **다음**&#x200B;을 클릭합니다.
@@ -205,9 +205,9 @@ CRXDE Lite를 사용하여 구성 요소를 만들려면:
 
 ### 대화 상자 만들기 {#creating-a-dialog}
 
-CRXDE Lite로 대화 상자를 만들려면
+CRXDE Lite이 있는 대화 상자를 만들려면
 
-1. 브라우저에서 CRXDE Lite를 엽니다.
+1. 브라우저에서 CRXDE Lite을 엽니다.
 1. 탐색 창에서 대화 상자를 만들 구성 요소를 마우스 오른쪽 단추로 클릭하고 **만들기...**, 대화 **상자 만들기..를 선택합니다.**.
 
 1. 레이블 **및** 제목을 **입력합니다**. **확인**&#x200B;을 클릭합니다.
@@ -224,9 +224,9 @@ CRXDE Lite로 대화 상자를 만들려면
 
 ### 노드 만들기 {#creating-a-node}
 
-CRXDE Lite가 있는 노드를 만들려면:
+CRXDE Lite이 있는 노드를 만들려면
 
-1. 브라우저에서 CRXDE Lite를 엽니다.
+1. 브라우저에서 CRXDE Lite을 엽니다.
 1. 탐색 창에서 새 노드를 만들 노드를 마우스 오른쪽 단추로 클릭하고 **만들기 ...**, 노드 **만들기 ...를 선택합니다.**.
 
 1. 이름 **및** 유형을 **입력합니다**. **확인**&#x200B;을 클릭합니다.
@@ -243,9 +243,9 @@ CRXDE Lite가 있는 노드를 만들려면:
 
 ### 속성 만들기 {#creating-a-property}
 
-CRXDE Lite를 사용하여 속성을 만들려면:
+CRXDE Lite을 사용하여 속성을 만들려면
 
-1. 브라우저에서 CRXDE Lite를 엽니다.
+1. 브라우저에서 CRXDE Lite을 엽니다.
 1. 탐색 창에서 새 속성을 추가할 노드를 선택합니다.
 1. 하단 창의 **속성** 탭에서 **이름**, **유형** 및 값 **을**&#x200B;입력합니다. **추가**&#x200B;를 클릭합니다.
 
@@ -255,7 +255,7 @@ CRXDE Lite를 사용하여 속성을 만들려면:
 
 새 스크립트를 만들려면
 
-1. 브라우저에서 CRXDE Lite를 엽니다.
+1. 브라우저에서 CRXDE Lite을 엽니다.
 1. 탐색 창에서 스크립트를 만들 구성 요소를 마우스 오른쪽 단추로 클릭하고 **만들기...**, 파일 **만들기..를 선택합니다.**.
 
 1. 확장자를 **포함하는 파일** 이름을 입력합니다. **확인**&#x200B;을 클릭합니다.
@@ -266,11 +266,11 @@ CRXDE Lite를 사용하여 속성을 만들려면:
 
 ### 노드 유형 내보내기 및 가져오기 {#exporting-and-importing-node-types}
 
-CRXDE Lite를 사용하면 CND(Compact Namespace 및 [Node Type Definition) 표기법으로 노드 유형 정의를 가져오거나 내보낼 수 있습니다](http://jackrabbit.apache.org/jcr/node-type-notation.html).
+CRXDE Lite을 사용하여 CND(Compact Namespace 및 Node Type Definition) 표기법으로 노드 유형 정의를 [가져오거나 내보낼 수 있습니다](http://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 노드 유형 정의를 내보내려면
 
-1. 브라우저에서 CRXDE Lite를 엽니다.
+1. 브라우저에서 CRXDE Lite을 엽니다.
 1. 필요한 노드를 선택합니다.
 1. 도구 **를** 선택하고 **노드 유형 내보내기를 선택합니다**.
 
@@ -278,7 +278,7 @@ CRXDE Lite를 사용하면 CND(Compact Namespace 및 [Node Type Definition) 표�
 
 노드 유형 정의를 가져오려면 다음을 수행하십시오.
 
-1. 브라우저에서 CRXDE Lite를 엽니다.
+1. 브라우저에서 CRXDE Lite을 엽니다.
 1. 도구 **를 선택한** 다음 **노드 유형 가져오기..**.
 
 1. 텍스트 상자에 정의에 대한 CND 표기법을 입력합니다.
@@ -287,9 +287,9 @@ CRXDE Lite를 사용하면 CND(Compact Namespace 및 [Node Type Definition) 표�
 
 ### 로깅 {#logging}
 
-CRXDE Lite를 사용하면 파일 시스템 `error.log` 에 있는 파일을 표시하고 적절한 로그 수준 `<crx-install-dir>/crx-quickstart/server/logs` 으로 필터링할 수 있습니다. 다음과 같이 진행합니다.
+CRXDE Lite을 사용하면 파일 시스템 `error.log` 에 있는 파일을 표시하고 적절한 로그 수준 `<crx-install-dir>/crx-quickstart/server/logs` 으로 필터링할 수 있습니다. 다음과 같이 진행합니다.
 
-1. 브라우저에서 CRXDE Lite를 엽니다.
+1. 브라우저에서 CRXDE Lite을 엽니다.
 1. 창 하단의 **콘솔** 탭에서 오른쪽의 드롭다운 메뉴에서 **서버 로그를 선택합니다**.
 
 1. 메시지를 표시하려면 **중지** 아이콘을 클릭합니다.
