@@ -1,8 +1,8 @@
 ---
 title: iOS용 보안 AEM Forms 앱 빌드
 seo-title: iOS용 보안 AEM Forms 앱 빌드
-description: 보안 AEM Forms 앱을 빌드하는 단계입니다.
-seo-description: 보안 AEM Forms 앱을 빌드하는 단계입니다.
+description: 안전한 AEM Forms 앱을 빌드하는 절차.
+seo-description: 안전한 AEM Forms 앱을 빌드하는 절차.
 uuid: 6c4b160f-4d0c-4976-9609-9196795b6c8e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # iOS용 보안 AEM Forms 앱 빌드 {#building-a-secure-aem-forms-app-for-ios}
 
-설치 프로그램(.ipa 파일) 및 속성 목록(.plist 파일) 파일을 빌드하려면 AEM Forms 앱용 Xcode 프로젝트를 보관해야 합니다. 속성 목록 파일에는 앱의 이름 및 호스팅 위치와 같은 호스팅된 사내 앱의 구성 정보가 포함되어 있습니다. 속성 목록 파일에 대한 자세한 내용은 정보 속성 목록 파일 [정보를 참조하십시오](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html).
+설치 프로그램(.ipa 파일)과 속성 목록(.plist 파일) 파일을 빌드하려면 AEM Forms 앱용 Xcode 프로젝트를 보관해야 합니다. 속성 목록 파일에는 앱의 이름 및 호스팅 위치와 같은 호스팅된 사내 앱의 구성 정보가 포함되어 있습니다. 속성 목록 파일에 대한 자세한 내용은 정보 속성 목록 파일 [정보를 참조하십시오](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html).
 
 1. 다음 웹 사이트에 로그인합니다.
 
@@ -35,10 +35,10 @@ ht-degree: 0%
 1. 프로비저닝 프로필을 다운로드하여 Xcode 및 iPad에 추가합니다.
 1. Xcode 및 iOS SDK가 설치 및 구성된 Mac 시스템에 로그인합니다.
 1. Xcode에서 `AEM Forms.xcodeproj` 프로젝트를 엽니다.
-1. AEM **[!UICONTROL Forms를]**&#x200B;클릭하고 **[!UICONTROL TARGETS]**&#x200B;아래에서 **[!UICONTROL AEM Forms를]**&#x200B;선택합니다. [ **[!UICONTROL 빌드 설정]** ] 탭을 선택하고 **[!UICONTROL 코드 서명 권한]** 부여 섹션을 찾은 다음 권한 드롭다운에서 **[!UICONTROL LC 엔터프라이즈]** 옵션을 선택합니다.
+1. AEM Forms **[!UICONTROL 를]**&#x200B;클릭하고 **[!UICONTROL TARGET]**&#x200B;아래에서 **[!UICONTROL AEM Forms을 선택합니다]**. [ **[!UICONTROL 빌드 설정]** ] 탭을 선택하고 **[!UICONTROL 코드 서명 권한]** 부여 섹션을 찾은 다음 권한 드롭다운에서 **[!UICONTROL LC 엔터프라이즈]** 옵션을 선택합니다.
 1. 편집할 Xcode에서 `LC Enterprise.entitlements` 파일을 찾아 엽니다. **XCode 권한 아래에서 **프로비저닝 프로필에 있는 것과 동일한 키-값 쌍을 추가합니다.
 1. [ **[!UICONTROL 빌드 설정]** ] 탭에서 **[!UICONTROL 모두]** 를 **[!UICONTROL 클릭한]**&#x200B;다음 [결합]을클릭합니다.
 1. 설정 **[!UICONTROL 목록에서 코드 서명]** 을 **[!UICONTROL 확장합니다]**.
 1. 코드 **[!UICONTROL 서명 ID의 경우]**&#x200B;적절한 서명을 선택합니다. 디버그, 릴리스 **[!UICONTROL 및]**&#x200B;모든 iOS SDK에 대해 동일한 서명 **[!UICONTROL 을]**&#x200B;선택해야 **[!UICONTROL 합니다]**.
-1. PROJECT **[!UICONTROL 에서]** AEM Forms **[!UICONTROL 를]** 선택하고 해당 서명이 **[!UICONTROL Code Code Code Identity]**, DebugRelease, Signing Signing Signing **[!UICONTROL IdentityAdobe, Flash Release 및 Any iOS SDK에 대해 선택되었는지 확인합니다]****** ****.
+1. PROJECT **[!UICONTROL 에서]****[!UICONTROL AEM Forms]** 를 선택하고 **[!UICONTROL Identity]**&#x200B;코드, DebugCode, ReleaseSigningAlingAdobe Sign에 적합한 서명을 선택했는지 **[!UICONTROL 확인합니다. Signing IdentityDebugCode,]****** **** ReleaseAndAny iOS SDK
 1. AEM Forms 앱 빌드 및 배포. AEM Forms 앱을 빌드하고 배포하는 방법에 대한 자세한 내용은 AEM Forms 앱용 [설치 프로그램 빌드를 참조하십시오](setup-xcode-project-build-installer.md#build-the-installer-for-the-mobile-workspace-app).
