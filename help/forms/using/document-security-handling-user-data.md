@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # Document Security | 사용자 데이터 처리 {#document-security-handling-user-data}
 
-AEM Forms 문서 보안을 사용하면 사전 정의된 보안 설정을 만들고 저장하고 문서에 적용할 수 있습니다. 따라서 권한이 있는 사용자만 문서를 사용할 수 있습니다. 정책을 사용하여 문서를 보호할 수 있습니다. 정책은 보안 설정과 권한이 있는 사용자 목록이 포함된 정보 모음입니다. 하나 이상의 문서에 정책을 적용하고 AEM Forms JEE 사용자 관리에 추가된 사용자에게 권한을 부여할 수 있습니다.
+AEM Forms 문서 보안을 사용하면 사전 정의된 보안 설정을 작성, 저장 및 문서에 적용할 수 있습니다. 따라서 권한이 있는 사용자만 문서를 사용할 수 있습니다. 정책을 사용하여 문서를 보호할 수 있습니다. 정책은 보안 설정과 권한이 있는 사용자 목록이 포함된 정보 모음입니다. 하나 이상의 문서에 정책을 적용하고 AEM Forms JEE 사용자 관리에 추가된 사용자에게 권한을 부여할 수 있습니다.
 
 <!-- Fix broken link For more information about how document security works, see AEM Forms JEE administration help. -->
 
 ## 사용자 데이터 및 데이터 저장소 {#user-data-and-data-stores}
 
-문서 보안은 My Sql, Oracle, MS SQL Server 및 IBM DB2와 같은 데이터베이스에 사용자 데이터를 포함하여 보호된 문서와 관련된 정책 및 데이터를 저장합니다. 또한 정책에 있는 권한이 있는 사용자에 대한 데이터는 사용자 관리에 저장됩니다. 사용자 관리에 저장된 데이터에 대한 자세한 내용은 [양식 사용자 관리를 참조하십시오. 사용자 데이터](/help/forms/using/user-management-handling-user-data.md)처리
+문서 보안은 My Sql, Oracle, MS SQL Server 및 IBM DB2와 같은 데이터베이스에 사용자 데이터를 포함하여 보호된 문서와 관련된 정책 및 데이터를 저장합니다. 또한 정책에 있는 권한이 있는 사용자에 대한 데이터는 사용자 관리에 저장됩니다. 사용자 관리에 저장된 데이터에 대한 자세한 내용은 [Forms 사용자 관리를 참조하십시오. 사용자 데이터](/help/forms/using/user-management-handling-user-data.md)처리
 
 다음 표에서는 문서 보안이 데이터베이스 테이블에 데이터를 구성하는 방법을 보여 줍니다.
 
@@ -129,7 +129,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 >
 >테이블에서 데이터를 내보내려면 `EdcAuditEntity` EventSearchFilter [를](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) 매개 변수로 [사용하는 EventManager.exportEvents](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) API를 사용하여 감사 데이터 `principalId`, `policyId`를 기준으로 감사 데이터 `licenseId`를 내보낼 수 있습니다.
 
-시스템의 사용자에 대한 전체 데이터를 얻으려면 사용자 관리 데이터베이스에서 데이터에 액세스하고 내보내야 합니다. 자세한 내용은 [양식 사용자 관리를 참조하십시오. 사용자 데이터](/help/forms/using/user-management-handling-user-data.md)처리
+시스템의 사용자에 대한 전체 데이터를 얻으려면 사용자 관리 데이터베이스에서 데이터에 액세스하고 내보내야 합니다. 자세한 내용은 [Forms 사용자 관리를 참조하십시오. 사용자 데이터](/help/forms/using/user-management-handling-user-data.md)처리
 
 ### 사용자 데이터 삭제 {#delete-user-data}
 
@@ -195,7 +195,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
    **관리 콘솔 사용**
 
-   1. 관리자는 https://의 Forms JEE 관리 콘솔에&#x200B;[*로그인합니다*].[*port*]/adminui.
+   1. 관리자는 https://[*server*]:[*port*]/adminui의 Forms JEE 관리 콘솔에로그인합니다.
    1. 서비스 > **[!UICONTROL Document Security > 정책 세트로 이동합니다]**.
    1. 정책 세트를 열고 정책에서 사용자를 삭제합니다.
 
@@ -211,6 +211,6 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
    >
    >관리자는 관리 콘솔을 사용하여 **[!UICONTROL 서비스 > Document Security > 내 정책에 있는 다른 사용자의 개인 정책에 있는 사용자 데이터를 검색, 액세스 및 삭제할]** 수 있습니다.
 
-1. 사용자 관리 데이터베이스에서 주체 ID에 대한 데이터를 삭제합니다. 자세한 내용은 [양식 사용자 관리를 참조하십시오. | 사용자 데이터](/help/forms/using/user-management-handling-user-data.md)처리
+1. 사용자 관리 데이터베이스에서 주체 ID에 대한 데이터를 삭제합니다. 자세한 내용은 [Forms 사용자 관리를 참조하십시오. | 사용자 데이터](/help/forms/using/user-management-handling-user-data.md)처리
 1. AEM Forms 서버를 시작합니다.
 
