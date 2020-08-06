@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
 source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
+workflow-type: tm+mt
+source-wordcount: '896'
+ht-degree: 100%
 
 ---
 
@@ -46,6 +49,7 @@ source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
 >* [프로젝트 - 작업 중](/help/sites-authoring/task-content.md)
 >* [워크플로우](/help/sites-authoring/workflows.md)
 >* [양식](/help/forms/home.md)
+
 >
 
 
@@ -75,8 +79,8 @@ AEM 알림 받은 편지함 열기
 
 1. 도구 모음에서 표시기를 클릭/탭합니다.
 
-1. **모두 보기**&#x200B;를 선택합니다. **AEM 받은 편지함**&#x200B;이 열립니다. 받은 편지함은 워크플로우, 프로젝트 및 작업의 항목을 보여줍니다.
-1. 기본 보기는 [목록 보기](#inbox-list-view)이지만 [달력 보기](#inbox-calendar-view)로 전환할 수도 있습니다. 이는 [보기 선택기](도구 모음, 오른쪽 상단)로 수행할 수 있습니다.
+1. **모두 보기**&#x200B;를 선택합니다. **AEM 받은 편지함**&#x200B;이 열립니다. 받은 편지함은 워크플로우, 프로젝트 및 작업의 항목을 표시합니다.
+1. 기본 보기는 [목록 보기](#inbox-list-view)이지만 [달력 보기](#inbox-calendar-view)로 전환할 수도 있습니다. 이는 [보기 선택기] (도구 모음, 오른쪽 상단)로 수행할 수 있습니다.
 
    두 보기 모두에 대해 [보기 설정](#inbox-view-settings)을 정의할 수 있습니다. 사용 가능한 옵션은 현재 보기에 따라 다릅니다.
 
@@ -84,7 +88,7 @@ AEM 알림 받은 편지함 열기
 
 >[!NOTE]
 >
->The Inbox operates as a console, so use [Global Navigation](/help/sites-authoring/basic-handling.md#global-navigation) or [Search](/help/sites-authoring/search.md) to navigate to another location when you are finished.
+>받은 편지함은 콘솔로 작동하므로 완료되면 [전역 탐색](/help/sites-authoring/basic-handling.md#global-navigation) 또는 [검색](/help/sites-authoring/search.md)을 사용하여 다른 위치를 탐색합니다.
 
 ### 받은 편지함 - 목록 보기 {#inbox-list-view}
 
@@ -120,6 +124,7 @@ AEM 알림 받은 편지함 열기
    * **그룹화 기준**
    * **예약** 또는 **없음**
    * **카드 크기**
+
    ![wf-92](assets/wf-92.png)
 
 * **목록 보기**
@@ -128,6 +133,7 @@ AEM 알림 받은 편지함 열기
 
    * **정렬 기준**
    * **정렬 순서**
+
    ![wf-83](assets/wf-83.png)
 
 ## 항목에 대한 작업 수행 {#taking-action-on-an-item}
@@ -138,7 +144,7 @@ AEM 알림 받은 편지함 열기
 
    항목에 해당하는 작업은 다음과 같습니다.
 
-   * **완전한 작업. 예를 들면 작업 또는 워크플로우 항목.**
+   * **완료** 작업; 예를 들면 작업 또는 워크플로우 항목.
    * 항목을 **재지정**/**위임**&#x200B;합니다.
    * 항목을 **엽니다**. 항목 유형에 따라 다음 작업을 수행할 수 있습니다.
 
@@ -148,11 +154,12 @@ AEM 알림 받은 편지함 열기
    * 이전 단계로 **돌아갑니다**.
    * 워크플로우에 대한 페이로드를 확인합니다.
    * 항목에서 프로젝트를 생성합니다.
+
    >[!NOTE]
    >
    >자세한 내용은 다음을 참조하십시오.
    >
-   >* 워크플로우 항목 - ](/help/sites-authoring/workflows-participating.md)워크플로우에 참여[
+   >* 워크플로우 항목 - [워크플로우에 참여](/help/sites-authoring/workflows-participating.md)
 
 
 1. 선택한 항목에 따라 작업이 시작됩니다. 예를 들면 다음과 같습니다.
@@ -160,6 +167,7 @@ AEM 알림 받은 편지함 열기
    * 작업에 해당하는 대화 상자가 열립니다.
    * 작업 마법사가 시작됩니다.
    * 문서 페이지가 열립니다.
+
    예를 들어 **재지정**&#x200B;은 다음과 같은 대화 상자가 열립니다.
 
    ![wf-85](assets/wf-85.png)
@@ -188,11 +196,13 @@ AEM 알림 받은 편지함 열기
       * **작업 우선순위**
       * **시작 날짜**
       * **기한**
+
    ![wf-86](assets/wf-86.png)
 
    * **고급**
 
       * **이름**: URL을 구성하는 데 사용됩니다. 공백이 있는 경우 **제목**&#x200B;을 기준으로 합니다.
+
    ![wf-87](assets/wf-87.png)
 
 1. **제출**&#x200B;을 선택합니다.
@@ -205,7 +215,7 @@ AEM 알림 받은 편지함 열기
 
    >[!NOTE]
    >
-   >Only tasks created using the **Create** option of the **Inbox** can be used to create a project.
+   >**받은 편지함**&#x200B;의 **만들기** 옵션을 사용하여 생성된 작업만 프로젝트를 만드는 데 사용할 수 있습니다.
    >
    >워크플로우의 작업 항목은 프로젝트를 만드는 데 사용할 수 없습니다.
 
