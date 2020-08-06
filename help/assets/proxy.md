@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Assets Proxy Development {#assets-proxy-development}
 
-AEM(Adobe Experience Manager) 자산은 프록시를 사용하여 특정 작업에 대한 처리를 배포합니다.
+Adobe Experience Manager(AEM) 자산은 프록시를 사용하여 특정 작업에 대한 처리를 배포합니다.
 
-프록시는 작업을 처리하고 결과를 만드는 처리자로 프록시 작업자를 사용하는 특정(또는 경우에 따라 분리) AEM 인스턴스입니다. 프록시 작업자는 다양한 작업에 사용할 수 있습니다. AEM Assets 프록시의 경우 AEM Assets 내에서 렌더링할 자산을 로드하는 데 사용할 수 있습니다. 예를 들어, [IDS 프록시](indesign.md) 작업자는 InDesign Server를 사용하여 AEM 자산에 사용할 파일을 처리합니다.
+프록시는 작업을 처리하고 결과를 만드는 처리자로 프록시 작업자를 사용하는 특정(또는 경우에 따라 분리) AEM 인스턴스입니다. 프록시 작업자는 다양한 작업에 사용할 수 있습니다. AEM Assets 프록시의 경우 AEM Assets 내에서 렌더링할 에셋을 로드하는 데 사용할 수 있습니다. 예를 들어 [IDS 프록시](indesign.md) 작업자는 InDesign Server을 사용하여 AEM Assets에서 사용할 파일을 처리합니다.
 
-프록시가 별도의 AEM 인스턴스인 경우 AEM 작성 인스턴스의 로드를 줄이는 데 도움이 됩니다. 기본적으로 AEM Assets는 동일한 JVM의 자산 처리 작업(프록시를 통해 외부화됨)을 실행하여 AEM 작성 인스턴스의 로드를 줄입니다.
+프록시가 별도의 AEM 인스턴스인 경우 AEM 제작 인스턴스의 로드를 줄이는 데 도움이 됩니다. 기본적으로 AEM Assets은 동일한 JVM에서 자산 처리 작업을 수행하여(프록시를 통해 외부화됨) AEM 작성 인스턴스의 로드를 줄입니다.
 
 ## 프록시(HTTP 액세스) {#proxy-http-access}
 
@@ -113,7 +113,7 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 
 >[!NOTE]
 >
->자세한 내용은 [Indesign Server 프록시 작업자 구성](indesign.md#configuring-the-proxy-worker-for-indesign-server) 및 [클라우드 서비스 구성을](../sites-developing/extending-cloud-config.md) 참조하십시오.
+>자세한 내용은 [Indesign Server 프록시 작업자 구성](indesign.md#configuring-the-proxy-worker-for-indesign-server) 및 [Cloud Services 구성을](../sites-developing/extending-cloud-config.md) 참조하십시오.
 
 다음은 API 사용의 예입니다.
 
@@ -132,9 +132,9 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 
 ### 사용자 지정된 프록시 작업자 개발 {#developing-a-customized-proxy-worker}
 
-IDS [프록시 작업자](indesign.md) 는 Indesign 자산의 처리를 아웃소싱하기 위해 이미 기본적으로 제공되는 AEM Assets 프록시 작업자 예입니다.
+IDS [프록시 작업자](indesign.md) 는 Indesign 자산의 처리를 아웃소싱하기 위해 이미 기본적으로 제공되는 AEM Assets 프록시 근로자의 예입니다.
 
-AEM Assets 프록시 작업자를 직접 개발하여 구성하여 특수 작업자를 만들어 AEM Assets 처리 작업을 전달하고 아웃소싱할 수도 있습니다.
+또한 자신이 직접 AEM Assets 프록시 작업자를 개발 및 구성하여 전문 작업자를 만들어 AEM Assets 처리 작업을 전달하고 아웃소싱할 수도 있습니다.
 
 자신만의 고유한 사용자 지정 프록시 레이어를 설정하려면 다음을 수행해야 합니다.
 
@@ -178,7 +178,7 @@ AEM Assets 프록시 작업자를 직접 개발하여 구성하여 특수 작업
 >
 >AEM Assets 프록시 프레임워크에서 제공하지 않는 것은 풀 메커니즘입니다.
 >
->InDesign 통합을 통해 IDSPool(indesign 서버 풀)에 액세스할 수 있습니다. 이 풀링은 AEM Assets 프록시 프레임워크의 일부가 아니라 Indesign 통합 전용입니다.
+>InDesign 통합을 통해 IDSPool(indesign 서버 풀)에 액세스할 수 있습니다. 이 풀링은 Indesign 통합 전용이며 AEM Assets 프록시 프레임워크의 일부가 아닙니다.
 
 >[!NOTE]
 >
