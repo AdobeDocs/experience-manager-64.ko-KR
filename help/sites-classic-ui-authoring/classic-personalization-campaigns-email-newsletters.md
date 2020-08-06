@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1128'
+ht-degree: 75%
 
 ---
 
@@ -35,14 +38,14 @@ ExactTarget 및 Silverpop Engage와 같은 이메일 서비스에 뉴스레터�
 
 ## 이메일 만들기 {#creating-an-email}
 
-An email or newsletter that you want to publish to an e-mail service can be created under a campaign using the **Geometrixx Newsletter** template. **Geometrixx Outdoors 이메일** 템플릿을 사용할 수도 있습니다. Geometrixx Outdoors 전자 메일 **템플릿을 기반으로 한** 샘플 이메일/뉴스레터는 에서 사용할 수 `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`있습니다.
+An email or newsletter that you want to publish to an e-mail service can be created under a campaign using the **Geometrixx Newsletter** template. **Geometrixx Outdoors 이메일** 템플릿을 사용할 수도 있습니다. Geometrixx Outdoors 이메일 **템플릿을 기반으로 하는 샘플 이메일/뉴스레터를 사용할 수 있습니다** `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
 
-구성된 전자 메일 서비스에 게시되는 새 전자 메일을 만들려면:
+구성된 이메일 서비스에 게시된 새 이메일을 만들려면:
 
 1. Go to **Websites** and then **Campaigns**. 캠페인 선택.
 1. **새로 만들기**&#x200B;를 클릭하여 **페이지 만들기** 창을 엽니다.
 1. 제목과 이름을 입력하고 사용 가능한 템플릿 목록에서 **Geometrixx 뉴스레터** 템플릿을 선택합니다.
-1. **만들기**&#x200B;를 클릭합니다. 
+1. **만들기**&#x200B;를 클릭합니다.
 1. 만든 이메일을 엽니다.
 1. 디자인 모드로 전환하여 사이드킥에 표시할 구성 요소를 선택합니다.
 1. 편집 모드로 전환한 후 컨텐츠(텍스트, 이미지, [이메일 도구](#adding-exacttarget-email-tools-to-your-email), [개인화 변수](#adding-text-and-personalization-tool-to-your-e-mail) 등)를 이메일에 추가하기 시작합니다.
@@ -86,7 +89,7 @@ ExactTarget에 대한 **이메일 도구** 구성 요소를 이용하여 이메�
   </tr> 
   <tr> 
    <td>가입 센터</td> 
-   <td>구독 센터는 구독자가 조직에서 받는 메시지를 제어할 수 있는 웹 페이지입니다.</td> 
+   <td>가입 센터는 조직에서 받는 메시지를 가입자가 제어할 수 있는 웹 페이지입니다.</td> 
   </tr> 
   <tr> 
    <td>이메일 열기 횟수 추적</td> 
@@ -109,6 +112,7 @@ ExactTarget에 대한 **이메일 도구** 구성 요소를 이용하여 이메�
    >
    >
 * 두 가지 이메일 도구, **실제 우편 주소(필수)**&#x200B;와 **프로필 센터(필수)**&#x200B;는 필수입니다. 이메일이 ExactTarget에 게시되면 이러한 두 개의 이메일 도구가 기본적으로 모든 메일 하단에 추가됩니다.
+
 >
 
 
