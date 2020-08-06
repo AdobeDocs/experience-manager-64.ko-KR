@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: a7ec190d-056e-4fc9-8f2d-f4164273674d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '840'
+ht-degree: 97%
 
 ---
 
@@ -82,12 +85,14 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    * 소스 페이지 변경 사항은 론치 카피(상속을 통해, 즉 Live Copy로 설정된 경우)에서 자동으로 구현됩니다.
    * 론치 카피에 대한 변경은 이 자동 업데이트 또는 소스 페이지를 중단하지 않고 수행할 수 있습니다.
+
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
 * [중첩 론치 만들기](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) - 론치 내 론치:
 
    * 소스는 기존 론치입니다.
    * 어떤 타겟으로든 [중첩 론치를 홍보](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch)할 수 있습니다. 이 타겟은 상위 론치나 최상위 수준 소스 페이지(프로덕션)일 수 있습니다.
+
    ![chlimage_1-235](assets/chlimage_1-235.png)
 
    >[!CAUTION]
