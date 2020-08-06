@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '761'
+ht-degree: 84%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe는 AEM SMTP 서비스가 연/바운스된 이메일에 대한 추적을 추가로 개선할 계획이 없습니다.
+>Adobe은 AEM SMTP 서비스를 통해 열리거나 바운스된 이메일의 추적을 추가로 개선할 계획이 없습니다.
 >
->권장 사항은 Adobe Campaign 및 AEM 통합을 [활용하는 것입니다](/help/sites-administering/campaign.md).
+>Adobe Campaign과 AEM의 통합을 [활용하는 것이 좋습니다](/help/sites-administering/campaign.md).
 
 많은 사용자에게 뉴스레터를 전송할 때 일반적으로 목록에 유효하지 않은 이메일 주소가 포함되어 있습니다. 해당 주소로 뉴스레터를 보내면 바운스되어 돌아옵니다. AEM에서는 이러한 바운스를 관리하고 구성된 바운스 카운터를 초과할 경우 해당 주소로의 뉴스레터 전송을 중지할 수 있습니다. 기본적으로 바운스 비율은 3으로 설정되지만 구성 가능합니다.
 
@@ -82,7 +85,7 @@ Feed Importer를 구성한 후에 보낸 사람 주소 및 바운스 카운터�
 
 뉴스레터 서비스를 구성하려면:
 
-1. 의 OSGi 콘솔에서 MCM Newsletter로 `<host>:<port>/system/console/configMgr` 이동합니다 ****.
+1. 의 OSGi 콘솔 `<host>:<port>/system/console/configMgr` 에서 **MCM 뉴스레터로 이동합니다**.
 
 1. 서비스를 구성을 마친 후 변경 사항을 저장합니다.
 
