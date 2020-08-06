@@ -1,6 +1,6 @@
 ---
-title: 페이지에 Dynamic Media 클래식 기능 추가
-seo-title: 페이지에 Dynamic Media 클래식 기능 추가
+title: 페이지에 Dynamic Media Classic 기능 추가
+seo-title: 페이지에 Dynamic Media Classic 기능 추가
 description: AEM 페이지에 Dynamic Media Classic 기능 및 구성 요소를 추가하는 방법을 알아봅니다.
 seo-description: AEM 페이지에 Dynamic Media Classic 기능 및 구성 요소를 추가하는 방법을 알아봅니다.
 uuid: aa5a4735-bfec-43b8-aec0-a0c32bff134f
@@ -18,9 +18,9 @@ ht-degree: 36%
 ---
 
 
-# 페이지에 Dynamic Media 클래식 기능 추가 {#adding-scene-features-to-your-page}
+# 페이지에 Dynamic Media Classic 기능 추가 {#adding-scene-features-to-your-page}
 
-[Adobe Dynamic Media Classic](https://help.adobe.com/ko_KR/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) 은 리치 미디어 에셋을 관리, 향상, 게시 및 웹, 모바일, 이메일 및 인터넷에 연결된 디스플레이와 인쇄물로 전달하는 호스팅 솔루션입니다.
+[Adobe Dynamic Media Classic](https://help.adobe.com/ko_KR/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) 은 리치 미디어 에셋을 관리, 향상, 게시 및 웹, 모바일, 이메일 및 인터넷에 연결된 디스플레이와 인쇄로 전달하기 위한 호스팅 솔루션입니다.
 
 다양한 뷰어에서 Dynamic Media Classic에 게시된 AEM 자산을 볼 수 있습니다.
 
@@ -30,9 +30,9 @@ ht-degree: 36%
 * 이미지 템플릿
 * 이미지
 
-AEM에서 Dynamic Media Classic으로 디지털 자산을 직접 게시할 수 있으며, Dynamic Media Classic에서 AEM으로 디지털 자산을 게시할 수 있습니다.
+AEM에서 Dynamic Media Classic으로 디지털 자산을 직접 게시할 수 있으며 Dynamic Media Classic에서 AEM으로 디지털 자산을 게시할 수 있습니다.
 
-이 문서에서는 AEM의 디지털 자산을 Dynamic Media Classic으로 또는 그 반대로 게시하는 방법에 대해 설명합니다. 뷰어도 자세히 설명되어 있습니다. Dynamic Media Classic용 AEM 구성에 대한 자세한 내용은 AEM과 [Dynamic Media Classic 통합을 참조하십시오](/help/sites-administering/scene7.md).
+이 문서에서는 AEM에서 Dynamic Media Classic으로 또는 그 반대로 디지털 자산을 게시하는 방법에 대해 설명합니다. 뷰어도 자세히 설명되어 있습니다. AEM for Dynamic Media Classic 구성에 대한 자세한 내용은 AEM [와 Dynamic Media Classic 통합을 참조하십시오](/help/sites-administering/scene7.md).
 
 [이미지 맵 추가](image-maps.md)도 참조하십시오.
 
@@ -44,7 +44,7 @@ For more information on using video components with AEM, see [Video](video.md).
 
 ## 자산에서 Dynamic Media Classic에 수동으로 게시 {#manually-publishing-to-scene-from-assets}
 
-다음과 같이 디지털 자산을 Dynamic Media Classic에 게시할 수 있습니다.
+다음과 같이 Dynamic Media Classic에 디지털 자산을 게시할 수 있습니다.
 
 * [자산 콘솔의 클래식 사용자 인터페이스](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md#publishing-from-the-assets-console)
 * [자산의 클래식 사용자 인터페이스](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md#publishing-from-an-asset)
@@ -69,7 +69,7 @@ For more information on using video components with AEM, see [Video](video.md).
 >
 >These components are not available by default and need to be selected in **[!UICONTROL Design]** mode before using.
 
-After they are made available in **[!UICONTROL Design]** mode, you can add the components to your page like any other AEM component. Dynamic Media Classic에 아직 게시되지 않은 자산은 동기화된 폴더 또는 페이지에 있거나 Dynamic Media Classic 클라우드 구성이 있는 경우 Dynamic Media Classic에 게시됩니다.
+After they are made available in **[!UICONTROL Design]** mode, you can add the components to your page like any other AEM component. Dynamic Media Classic에 아직 게시되지 않은 자산은 동기화된 폴더, 페이지 또는 Dynamic Media Classic 클라우드 구성으로 Dynamic Media Classic에 게시됩니다.
 
 >[!NOTE]
 >
@@ -77,30 +77,30 @@ After they are made available in **[!UICONTROL Design]** mode, you can add the c
 
 ### Flash 뷰어 지원 중단 알림 {#flash-viewers-end-of-life-notice}
 
-2017년 1월 31일부터 Adobe Dynamic Media Classic은 Flash 뷰어 플랫폼에 대한 지원을 중단했습니다.
+2017년 1월 31일부터 Flash 뷰어 플랫폼에 대한 Adobe Dynamic Media Classic 지원이 종료되었습니다.
 
 이 중요 변경 사항에 대한 자세한 내용은 [Flash 뷰어 지원 종료 FAQ](https://docs.adobe.com/content/docs/kr/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html)를 참조하십시오.
 
 ### Adding a Dynamic Media Classic component (Scene7) to a page {#adding-a-scene-component-to-a-page}
 
-Dynamic Media 클래식(Scene7) 구성 요소를 페이지에 추가하는 것은 페이지에 구성 요소를 추가하는 것과 같습니다. Dynamic Media 클래식 구성 요소는 다음 섹션에 자세히 설명되어 있습니다.
+페이지에 Dynamic Media Classic(Scene7) 구성 요소를 추가하는 것은 페이지에 구성 요소를 추가하는 것과 같습니다. Dynamic Media Classic 구성 요소는 다음 섹션에 자세히 설명되어 있습니다.
 
-**Dynamic Media Classic(Scene7) 구성 요소를 페이지에 추가하려면**:
+**Dynamic Media Classic(Scene7) 구성 요소를 페이지에 추가하려면 다음을 수행하십시오**.
 
 1. AEM에서 Dynamic Media Classic(Scene7) 구성 요소를 추가할 페이지를 엽니다.
 
-1. 사용 가능한 Dynamic Media Classic 구성 요소가 없으면 **[!UICONTROL 디자인]** 모드를 클릭하고 파란색 테두리가 있는 구성 요소를 탭하고 **[!UICONTROL 상위]** 아이콘을 누른 다음 **[!UICONTROL 구성]** 아이콘을누릅니다. Parsys( **[!UICONTROL Design)]**&#x200B;에서 모든 Dynamic Media Classic 구성 요소를 선택하여 사용 가능하게 만들고 확인을 **[!UICONTROL 클릭합니다]**.
+1. 사용 가능한 Dynamic Media Classic 구성 요소가 없는 경우 **[!UICONTROL 디자인]** 모드를 클릭하고 파란색 테두리가 있는 구성 요소를 탭하고 **[!UICONTROL 상위]** 아이콘을 누른 다음 **[!UICONTROL 구성]** 아이콘을누릅니다. Parsys( **[!UICONTROL Design)]**&#x200B;에서 모든 Dynamic Media Classic 구성 요소를 선택하여 사용 가능하게 만들고 확인을 **[!UICONTROL 클릭합니다]**.
 
    ![chlimage_1-224](assets/chlimage_1-224.png)
 
 1. 편집 **[!UICONTROL 을]** 클릭하여 **[!UICONTROL 편집]** 모드로 돌아갑니다.
 
-1. 사이드 킥의 Dynamic Media 클래식 그룹에서 원하는 위치의 페이지로 구성 요소를 드래그합니다.
+1. 사이드 킥의 Dynamic Media Classic 그룹에서 원하는 위치의 페이지로 구성 요소를 드래그합니다.
 
 1. Click the **[!UICONTROL Configuration]** icon to open the component.
 
 1. 필요에 따라 구성 요소를 편집하고 **[!UICONTROL 확인]**&#x200B;을 클릭하여 변경 내용을 저장합니다.
-1. 컨텐츠 브라우저의 이미지나 비디오를 페이지에 추가한 Dynamic Media Classic 구성 요소로 드래그합니다.
+1. 컨텐츠 브라우저에서 페이지에 추가한 Dynamic Media Classic 구성 요소로 이미지나 비디오를 드래그합니다.
 
    >[!NOTE]
    >
@@ -118,21 +118,21 @@ Dynamic Media 클래식(Scene7) 구성 요소를 페이지에 추가하는 것�
 
    >[!NOTE]
    >
-   >Dynamic Media Classic 구성 요소를 사용할 수 없는 경우 디자인 모드 [를 통해 활성화해야 합니다](/help/sites-authoring/default-components-designmode.md).
+   >Dynamic Media Classic 구성 요소를 사용할 수 없는 경우 디자인 모드 [로 활성화해야 합니다](/help/sites-authoring/default-components-designmode.md).
 
 1. In a website with the **[!UICONTROL Dynamic Media Classic]** components enabled, drag an **[!UICONTROL Image]** component to the page.
 1. 구성 요소를 선택하고 구성 아이콘을 누릅니다.
-1. Dynamic Media **[!UICONTROL 클래식 설정]** 탭에서 중단점을 조정합니다.
+1. Dynamic **[!UICONTROL Media Classic 설정]** 탭에서 중단점을 조정합니다.
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
 
 1. 뷰어가 그에 따라 크기가 조정되는지와 모든 상호 작용이 데스크톱, 태블릿 및 모바일에 최적화되어 있는지 확인합니다.
 
-### 모든 Dynamic Media Classic 구성 요소에 공통되는 설정 {#settings-common-to-all-scene-components}
+### 모든 Dynamic Media Classic 구성 요소에 공통인 설정 {#settings-common-to-all-scene-components}
 
 Although configuration options vary, the following are common to all [!UICONTROL Dynamic Media Classic] components:
 
-* **[!UICONTROL 파일 참조]**&#x200B;참조할 파일을 찾습니다. 파일 참조는 자산 URL을 보여주며 URL 명령 및 매개 변수를 포함하는 전체 Dynamic Media 클래식 URL일 필요는 없습니다. 이 필드에 Dynamic Media 클래식 URL 명령 및 매개 변수를 추가할 수 없습니다. 구성 요소의 해당 기능을 통해 추가해야 합니다.
+* **[!UICONTROL 파일 참조]**&#x200B;참조할 파일을 찾습니다. 파일 참조는 자산 URL을 보여주며 URL 명령 및 매개 변수를 포함하는 전체 Dynamic Media Classic URL이 아닐 수도 있습니다. 이 필드에 Dynamic Media Classic URL 명령 및 매개 변수를 추가할 수 없습니다. 구성 요소의 해당 기능을 통해 추가해야 합니다.
 * **[!UICONTROL 너비]**&#x200B;너비를 설정할 수 있습니다.
 * **[!UICONTROL 높이]**&#x200B;높이를 설정할 수 있습니다.
 
@@ -162,7 +162,7 @@ In the HTML5 **[!UICONTROL Flyout]** component, the asset is shown as split scre
 
 ### 이미지 {#image}
 
-Dynamic Media Classic **[!UICONTROL 이미지]** 구성 요소를 사용하면 Dynamic Media Classic 수정자, 이미지 또는 뷰어 사전 설정 및 선명하게 하기 등과 같은 Dynamic Media Classic 기능을 이미지에 추가할 수 있습니다. Dynamic Media Classic **[!UICONTROL 이미지]** 구성 요소는 특수 Dynamic Media Classic 기능이 있는 AEM의 다른 이미지 구성 요소와 유사합니다. In this example, the image has the Dynamic Media Classic URL modifier, **&amp;op_invert=1** applied.
+Dynamic Media Classic **[!UICONTROL 이미지]** 구성 요소를 사용하면 Dynamic Media Classic 수정자, 이미지 또는 뷰어 사전 설정 및 선명하게 하기 등과 같은 Dynamic Media Classic 기능을 이미지에 추가할 수 있습니다. Dynamic Media Classic **[!UICONTROL 이미지]** 구성 요소는 특수 Dynamic Media Classic 기능이 있는 AEM의 다른 이미지 구성 요소와 비슷합니다. In this example, the image has the Dynamic Media Classic URL modifier, **&amp;op_invert=1** applied.
 
 ![chlimage_1-229](assets/chlimage_1-229.png)
 
@@ -174,7 +174,7 @@ Dynamic Media Classic **[!UICONTROL 이미지]** 구성 요소를 사용하면 D
 
 * **[!UICONTROL 뷰어 사전 설정]** 드롭다운 메뉴에서 기존 뷰어 사전 설정을 선택합니다. 보려는 뷰어 사전 설정이 표시되지 않을 경우 표시되도록 설정해야 할 수 있습니다. [뷰어 사전 설정 관리](/help/assets/managing-viewer-presets.md)를 참조하십시오. 이미지 사전 설정을 사용 중일 때는 뷰어 사전 설정을 선택할 수 없고 그 반대의 경우도 마찬가지입니다.
 
-* **[!UICONTROL Dynamic Media 클래식 구성]** SPS에서 활성 이미지 사전 설정을 가져오는 데 사용할 Dynamic Media 클래식 구성을 선택합니다.
+* **[!UICONTROL Dynamic Media Classic 구성]** SPS에서 활성 이미지 사전 설정을 가져오는 데 사용할 Dynamic Media Classic 구성을 선택합니다.
 
 * **[!UICONTROL 이미지 사전 설정]** 드롭다운 메뉴에서 기존 이미지 사전 설정을 선택합니다. 보려는 이미지 사전 설정이 표시되지 않을 경우 표시되도록 설정해야 할 수 있습니다. [이미지 사전 설정 관리](/help/assets/managing-image-presets.md)를 참조하십시오. 이미지 사전 설정을 사용 중일 때는 뷰어 사전 설정을 선택할 수 없고 그 반대의 경우도 마찬가지입니다.
 
@@ -188,7 +188,7 @@ Dynamic Media Classic **[!UICONTROL 이미지]** 구성 요소를 사용하면 D
 
 ### 이미지 템플릿 {#image-template}
 
-[Dynamic Media Classic Image Templates](https://help.adobe.com/ko_KR/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) 는 Dynamic Media Classic으로 가져온 레이어로 구성된 Photoshop 컨텐츠로, 여기서 컨텐츠와 속성은 가변성을 위해 매개 변수화되었습니다. **[!UICONTROL 이미지 템플릿]** 구성 요소를 사용하여 이미지를 가져오고 AEM에서 텍스트를 동적으로 변경할 수 있습니다. 또한 클라이언트 컨텍스트의 값을 사용하도록 **[!UICONTROL 이미지 템플릿]** 구성 요소를 구성할 수 있으므로 각 사용자는 개인화된 방식으로 이미지를 경험하게 됩니다.
+[Dynamic Media Classic 이미지 템플릿은](https://help.adobe.com/ko_KR/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) Dynamic Media Classic으로 가져온 계층화된 Photoshop 컨텐츠으로, 컨텐츠와 속성이 가변성을 위해 매개 변수화되었습니다. **[!UICONTROL 이미지 템플릿]** 구성 요소를 사용하여 이미지를 가져오고 AEM에서 텍스트를 동적으로 변경할 수 있습니다. 또한 클라이언트 컨텍스트의 값을 사용하도록 **[!UICONTROL 이미지 템플릿]** 구성 요소를 구성할 수 있으므로 각 사용자는 개인화된 방식으로 이미지를 경험하게 됩니다.
 
 Tap **[!UICONTROL Edit]** to configure the component. You can configure [settings common to all Dynamic Media Classic components](#settings-common-to-all-scene-components) as well as other settings described in this section.
 
@@ -198,9 +198,9 @@ Tap **[!UICONTROL Edit]** to configure the component. You can configure [setting
 
    >[!NOTE]
    >
-   >Dynamic Media 클래식 URL 명령 및 매개 변수를 파일 참조 URL에 직접 추가할 수 없습니다. **[!UICONTROL 매개 변수]** 패널의 구성 요소 UI에서만 정의할 수 있습니다.
+   >Dynamic Media Classic URL 명령 및 매개 변수를 파일 참조 URL에 직접 추가할 수 없습니다. **[!UICONTROL 매개 변수]** 패널의 구성 요소 UI에서만 정의할 수 있습니다.
 
-* **[!UICONTROL 제목, 대체 텍스트]** Dynamic Media 클래식 이미지 템플릿 탭에서 이미지에 제목을 추가하고 그래픽을 해제한 사용자를 위한 대체 텍스트를 추가합니다.
+* **[!UICONTROL 제목, 대체 텍스트]** Dynamic Media Classic 이미지 템플릿 탭에서 이미지에 제목을 추가하고 그래픽을 해제한 사용자를 위한 대체 텍스트를 추가합니다.
 
 * **[!UICONTROL URL, 여는 위치]** 링크를 열 자산을 설정할 수 있습니다. URL을 설정하고 여는 위치에 같은 창에서 열지 또는 새 창에서 열지를 지정합니다.
 
@@ -230,9 +230,9 @@ To link a field to a client context value, tap **[!UICONTROL Select]** to open t
 
 ![chlimage_1-237](assets/chlimage_1-237.png)
 
-#### Dynamic Media 클래식 이미지 템플릿을 링크로 만들기 {#making-the-scene-image-template-a-link}
+#### Dynamic Media Classic 이미지 템플릿을 링크로 만들기 {#making-the-scene-image-template-a-link}
 
-1. Dynamic Media의 클래식 **[!UICONTROL 이미지 템플릿]** 구성 요소가 있는 페이지에서 편집을 **[!UICONTROL 누릅니다]**.
+1. Dynamic Media Classic **[!UICONTROL 이미지 템플릿]** 구성 요소가 있는 페이지에서 편집을 **[!UICONTROL 누릅니다]**.
 1. In the **[!UICONTROL URL]** field, enter the URL that users go to when the image is tapped. **[!UICONTROL 여는 위치]** 필드에서 대상을 새 창 또는 동일한 창 중 어떤 창에서 열지를 선택합니다.
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
@@ -245,7 +245,7 @@ The Dynamic Media Classic **[!UICONTROL Video]** component (available from the D
 
 응용 비디오 세트, 단일 MP4 비디오 또는 단일 F4V 비디오에 사용할 수 있습니다.
 
-See [Video](s7-video.md) for more information on how videos work with Dynamic Media Classic integration. 또한 Dynamic Media 클래식 비디오 구성 요소 [와 기본 비디오 구성 요소를 참조하십시오](s7-video.md).
+See [Video](s7-video.md) for more information on how videos work with Dynamic Media Classic integration. 또한 Dynamic Media Classic 비디오 구성 요소 [와 기본 비디오 구성 요소를 참조하십시오](s7-video.md).
 
 ![chlimage_1-239](assets/chlimage_1-239.png)
 
@@ -253,23 +253,23 @@ See [Video](s7-video.md) for more information on how videos work with Dynamic Me
 
 Adobe DAM 및 WCM은 마스터 비디오가 업로드되었는지를 표시합니다. 다음과 같은 프록시 자산은 표시되지 않습니다.
 
-* Dynamic Media 클래식 인코딩 변환
-* Dynamic Media 클래식 응용 비디오 세트
+* Dynamic Media Classic 인코딩 변환
+* Dynamic Media Classic 응용 비디오 세트
 
 Dynamic Media Classic 비디오 구성 요소와 함께 응용 비디오 세트를 사용하는 경우 비디오 크기에 맞게 구성 요소의 크기를 조정해야 합니다.
 
-## Dynamic Media 클래식 컨텐츠 브라우저 {#scene-content-browser}
+## Dynamic Media Classic 컨텐츠 브라우저 {#scene-content-browser}
 
-Dynamic Media Classic 컨텐츠 브라우저를 사용하면 AEM에서 직접 Dynamic Media Classic의 컨텐츠를 볼 수 있습니다. To access the content browser, in the **[!UICONTROL Content Finder]**, select **[!UICONTROL Dynamic Media Classic]** in the touch-optimized user interface or the **[!UICONTROL S7]** icon in the classic user interface. 기능은 두 사용자 인터페이스에서 동일합니다.
+Dynamic Media Classic 컨텐츠 브라우저를 사용하면 AEM에서 바로 Dynamic Media Classic의 컨텐츠를 볼 수 있습니다. To access the content browser, in the **[!UICONTROL Content Finder]**, select **[!UICONTROL Dynamic Media Classic]** in the touch-optimized user interface or the **[!UICONTROL S7]** icon in the classic user interface. 기능은 두 사용자 인터페이스에서 동일합니다.
 
-다중 구성이 있는 경우, 기본적으로 AEM은 [기본 구성](/help/sites-administering/scene7.md#configuring-a-default-configuration)을 표시합니다. 드롭다운 메뉴의 Dynamic Media Classic 컨텐츠 브라우저에서 직접 다른 구성을 선택할 수 있습니다.
+다중 구성이 있는 경우, 기본적으로 AEM은 [기본 구성](/help/sites-administering/scene7.md#configuring-a-default-configuration)을 표시합니다. 드롭다운 메뉴의 Dynamic Media Classic 컨텐츠 브라우저에서 바로 다른 구성을 선택할 수 있습니다.
 
 >[!NOTE]
 >
 >* 임시 폴더에 있는 자산은 Dynamic Media Classic 컨텐츠 브라우저에 나타나지 않습니다.
->* [ [보안 미리 보기]가 활성화되면](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene)Dynamic Media Classic의 게시된 자산과 게시 취소된 자산이 모두 Dynamic Media Classic 콘텐츠 브라우저에 표시됩니다.
+>* 보안 [미리 보기가 활성화되면](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene)Dynamic Media Classic의 게시된 자산과 게시 취소된 자산이 모두 Dynamic Media Classic 컨텐츠 브라우저에 표시됩니다.
 >* If you do not see **[!UICONTROL Dynamic Media Classic]** or the **[!UICONTROL S7]** icon as an option in the content browser, you need to [configure Dynamic Media Classic to work with AEM](/help/sites-administering/scene7.md).
->* 비디오의 경우 Classic 컨텐츠 브라우저가 지원하는 Dynamic Media:
+>* 비디오의 경우 Dynamic Media Classic 컨텐츠 브라우저는 다음을 지원합니다.
    >   * 응용 비디오 세트: 여러 화면 간에 원활하게 재생되는 데 필요한 모든 비디오 표현물의 컨테이너
    >   * 단일 MP4 비디오
    >   * 단일 F4V 동영상
@@ -279,13 +279,13 @@ Dynamic Media Classic 컨텐츠 브라우저를 사용하면 AEM에서 직접 Dy
 
 터치에 적합한 UI 또는 클래식 UI에서 컨텐츠 브라우저에 액세스할 수 있습니다. 현재 터치에 적합한 기능에는 다음과 같은 제한이 있습니다.
 
-* Dynamic Media Classic의 FXG 및 Flash 에셋은 지원되지 않습니다.
+* Dynamic Media Classic의 FXG 및 Flash 자산은 지원되지 않습니다.
 
-세 번째 드롭다운 메뉴에서 **[!UICONTROL Dynamic Media Classic]** 을 선택하여 Dynamic Media Classic 에셋을 찾아봅니다. Dynamic Media Classic/AEM 통합을 구성하지 않은 경우 Dynamic Media Classic이 목록에 표시되지 않습니다.
+세 번째 드롭다운 메뉴에서 **[!UICONTROL Dynamic Media Classic]** 을 선택하여 Dynamic Media Classic 자산을 찾아봅니다. Dynamic Media Classic/AEM 통합을 구성하지 않은 경우 Dynamic Media Classic이 목록에 표시되지 않습니다.
 
 >[!NOTE]
 >
->* Dynamic Media Classic 컨텐츠 브라우저는 약 100개의 에셋을 로드하고 이름별로 정렬합니다.
+>* Dynamic Media Classic 컨텐츠 브라우저는 약 100개의 자산을 로드하고 이름별로 정렬합니다.
 >* 보안 미리 보기 서버가 설정된 경우 브라우저에서 미리 보기 서버를 사용하여 축소판과 자산을 렌더링합니다.
 
 >
@@ -303,7 +303,7 @@ Dynamic Media Classic 컨텐츠 브라우저를 사용하면 AEM에서 직접 Dy
 
 ### 컨텐츠 브라우저를 사용하여 Dynamic Media Classic 자산 검색 {#searching-for-scene-assets-with-the-content-browser}
 
-Dynamic Media Classic 자산 검색은 AEM으로 직접 가져오는 대신 Dynamic Media Classic 시스템에서 자산의 원격 보기를 실제로 보고 있다는 점을 제외하고 AEM 자산 검색과 유사합니다.
+Dynamic Media Classic 자산 검색은 검색 시 AEM으로 직접 가져오는 대신 Dynamic Media Classic 시스템에서 자산의 원격 보기를 실제로 보고 있다는 점을 제외하고 AEM 자산 검색과 유사합니다.
 
 클래식 UI 또는 터치에 적합한 UI를 사용하여 자산을 보고 검색할 수 있습니다. 인터페이스에 따라, 검색 방식이 약간 다릅니다.
 
@@ -321,15 +321,15 @@ UI에서 검색할 때 다음 기준(터치에 적합한 UI에서 여기에 표�
 
 ![chlimage_1-243](assets/chlimage_1-243.png)
 
-* **[!UICONTROL 자산 유형]** Dynamic Media **[!UICONTROL Classic]** 내용을 찾아보려면 Dynamic Media 선택을 참조하십시오. 이 옵션은 Dynamic Media Classic이 구성된 경우에만 사용할 수 있습니다.
+* **[!UICONTROL 자산 유형]** Dynamic **[!UICONTROL Media Classic]** 내용을 찾아보려면 Dynamic Media Classic을 선택하십시오. 이 옵션은 Dynamic Media Classic이 구성된 경우에만 사용할 수 있습니다.
 
 ![chlimage_1-244](assets/chlimage_1-244.png)
 
-* **[!UICONTROL 구성]** Cloud Service에 두 개 이상의 Dynamic Media Classic 구성이 정의되어 있는 경우 [!UICONTROL 여기에서 선택할 수 있습니다]. 결과적으로 폴더는 선택한 구성에 따라 변경됩니다.
+* **[!UICONTROL 구성]** Cloud Services에 두 개 이상의 Dynamic Media Classic 구성이 정의된 [!UICONTROL 경우]여기에서 선택할 수 있습니다. 결과적으로 폴더는 선택한 구성에 따라 변경됩니다.
 
 ![chlimage_1-245](assets/chlimage_1-245.png)
 
-* **[!UICONTROL 자산 유형]** Dynamic Media Classic 브라우저 내에서 결과를 필터링하여 다음을 포함할 수 있습니다. 이미지, 템플릿, 비디오 및 적응형 비디오 세트 자산 유형을 선택하지 않으면 기본적으로 AEM은 모든 자산 유형을 검색합니다.
+* **[!UICONTROL 자산 유형]** Dynamic Media Classic 브라우저 내에서 다음을 포함하도록 결과를 필터링할 수 있습니다. 이미지, 템플릿, 비디오 및 적응형 비디오 세트 자산 유형을 선택하지 않으면 기본적으로 AEM은 모든 자산 유형을 검색합니다.
 
 ![chlimage_1-246](assets/chlimage_1-246.png)
 
