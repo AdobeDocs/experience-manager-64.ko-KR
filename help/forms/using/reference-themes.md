@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 참조 테마 {#reference-themes}
 
-[테마를](/help/forms/using/themes.md) 사용하면 CSS에 대한 깊은 지식 없이도 양식의 스타일을 지정할 수 있습니다. 기본 테마 외에도 AEM-FORMS- [6.3-REFERENCE-THEMES 패키지를 설치하여 다음 테마를 얻을 수](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) 있습니다.
+[테마를](/help/forms/using/themes.md) 사용하면 CSS에 대한 깊은 지식 없이도 양식의 스타일을 지정할 수 있습니다. 기본 테마 외에도 [AEM-FORMS.6.3-REFERENCE-THEMES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) 패키지를 설치하여 다음 테마를 얻을 수 있습니다.
 
 * 베릴
 * 경영진
