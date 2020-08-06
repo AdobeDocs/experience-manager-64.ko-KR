@@ -1,8 +1,8 @@
 ---
 title: 작업 세부 사항 페이지 사용자 정의
 seo-title: 작업 세부 사항 페이지 사용자 정의
-description: AEM Forms 작업 영역의 작업 세부 사항 페이지를 사용자 지정하여 작업에 대해 표시되는 기본 정보를 수정하는 방법입니다.
-seo-description: AEM Forms 작업 영역의 작업 세부 사항 페이지를 사용자 지정하여 작업에 대해 표시되는 기본 정보를 수정하는 방법입니다.
+description: AEM Forms 작업 공간의 작업 세부 정보 페이지를 사용자 지정하여 작업에 대해 표시되는 기본 정보를 수정하는 방법.
+seo-description: AEM Forms 작업 공간의 작업 세부 정보 페이지를 사용자 지정하여 작업에 대해 표시되는 기본 정보를 수정하는 방법.
 uuid: d85fae55-8e66-4595-8560-5485622b6841
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -23,12 +23,12 @@ ht-degree: 0%
 
 다음 정보를 작업 세부 사항 페이지에 추가할 수 있습니다.
 
-* 작업의 JSON 개체에 사용 가능한 정보(AEM Forms 작업 공간 JSON 개체 [설명의 작업 섹션](/help/forms/using/html-workspace-json-object-description.md))
-* 프로세스 인스턴스의 JSON 개체에 사용 가능한 정보(AEM Forms 작업 공간 JSON 개체 [설명의 프로세스 인스턴스 섹션](/help/forms/using/html-workspace-json-object-description.md))
+* 작업의 JSON 개체에서 사용 가능한 정보( [AEM Forms 작업 공간 JSON 개체 설명의 작업 섹션](/help/forms/using/html-workspace-json-object-description.md))
+* 프로세스 인스턴스의 JSON 개체에서 사용 가능한 정보( [AEM Forms 작업 공간 JSON 개체 설명의 프로세스 인스턴스 섹션](/help/forms/using/html-workspace-json-object-description.md))
 
 작업 세부 사항 페이지를 사용자 정의하려면
 
-1. AEM [Forms 작업 영역 사용자 지정에 대한 일반 단계를 따릅니다.](/help/forms/using/generic-steps-html-workspace-customization.md)
+1. AEM Forms [작업 영역 사용자 지정에 대한 일반 단계를 따릅니다.](/help/forms/using/generic-steps-html-workspace-customization.md)
 1. 추가 정보를 표시하려면 해당 키-값 쌍을 `translation.json` 블록 > `todo`블록 > `details`블록 > `app`[ 블록에서 파일에 추가합니다 `required`].
 
    블록 [ 은 작업 정보의 작업 블록, 프로세스 정보의 프로세스 블록, 보류 중인 작업 정보에 대한 현재 보류 중인 작업 블록 등의 사용 가능한 블록을 `required`] 참조합니다.
@@ -85,6 +85,6 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM Forms 작업 영역의 **시작 프로세스 **탭에서 만든 작업으로 작업 세부 사항 페이지를 사용자 정의하려면 새 정보를 추가합니다 `/apps/ws/js/runtime/templates/startprocess.html`.
+>AEM Forms 작업 영역의 **시작 프로세스 **탭에서 만든 작업으로 작업 세부 정보 페이지를 사용자 정의하려면 새 정보를 추가합니다 `/apps/ws/js/runtime/templates/startprocess.html`.
 >
 >세부 사항 페이지에 추가된 정보에 대한 새 스타일을 추가하려면 작업 공간 사용자 정의 *의 사용자 인터페이스 변경* 섹션을 사용하여 CSS 파일을 [수정합니다](/help/forms/using/changing-locale-user-interface.md).
