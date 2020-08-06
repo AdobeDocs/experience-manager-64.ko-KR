@@ -1,8 +1,8 @@
 ---
 title: 프로세스 보고의 사전 정의된 보고서
 seo-title: 프로세스 보고의 사전 정의된 보고서
-description: JEE에서 AEM Forms에 대한 쿼리는 긴 실행 프로세스, 프로세스 기간 및 워크플로우 볼륨에 대한 보고서를 만들기 위해 데이터를 처리합니다.
-seo-description: JEE에서 AEM Forms에 대한 쿼리는 긴 실행 프로세스, 프로세스 기간 및 워크플로우 볼륨에 대한 보고서를 만들기 위해 데이터를 처리합니다.
+description: JEE의 AEM Forms 프로세스 데이터를 쿼리하여 장기 실행 프로세스, 프로세스 기간 및 워크플로우 볼륨에 대한 보고서를 만듭니다.
+seo-description: JEE의 AEM Forms 프로세스 데이터를 쿼리하여 장기 실행 프로세스, 프로세스 기간 및 워크플로우 볼륨에 대한 보고서를 만듭니다.
 uuid: ba3a1809-270e-4c94-ade4-d2f6af86d860
 content-type: reference
 topic-tags: process-reporting
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 AEM Forms 프로세스 보고 기능은 다음과 같은 *특별* 보고서와 함께 제공됩니다.
 
-* **[긴 실행 프로세스](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-long-running-processes-p)**: 완료하는 데 지정된 시간 이상 걸린 모든 AEM Forms 프로세스에 대한 보고서
+* **[긴 실행 프로세스](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-long-running-processes-p)**: 지정된 시간 이상 경과된 모든 AEM Forms 프로세스에 대한 보고서
 
-* **[프로세스 기간 차트](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)**: 기간별 지정된 AEM Forms 프로세스의 보고서
+* **[프로세스 기간 차트](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)**: 기간별 지정된 AEM Forms 프로세스 보고서
 
 * **[워크플로우 볼륨](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-workflow-volume-report-p)**: 날짜별 지정된 프로세스의 실행 및 완료 인스턴스에 대한 보고서
 
@@ -62,7 +62,7 @@ AEM Forms 프로세스 보고 기능은 다음과 같은 *특별* 보고서와 �
 
 ## 프로세스 기간 보고서 {#process-duration-report-br}
 
-프로세스 기간 보고서에는 각 인스턴스가 실행된 일수로 양식 프로세스 인스턴스 수가 표시됩니다.
+프로세스 기간 보고서에는 각 인스턴스가 실행된 일수로 Forms 프로세스의 인스턴스 수가 표시됩니다.
 
 ### 프로세스 기간 보고서를 실행하려면 {#to-execute-a-process-duration-report-br}
 
@@ -93,7 +93,7 @@ AEM Forms 프로세스 보고 기능은 다음과 같은 *특별* 보고서와 �
 
 ## 워크플로우 볼륨 보고서 {#workflow-volume-report}
 
-워크플로우 볼륨 보고서는 AEM Forms 프로세스의 현재 실행 및 완료된 인스턴스 수를 날짜별로 표시합니다.
+워크플로우 볼륨 보고서는 일별 현재 실행 중인 AEM Forms 프로세스 및 완료된 인스턴스의 수를 표시합니다.
 
 ### 워크플로우 볼륨 보고서를 실행하려면 {#to-execute-a-workflow-volume-report-br}
 
