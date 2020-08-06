@@ -21,7 +21,7 @@ ht-degree: 7%
 
 트랜잭션으로 간주되는 모든 API 목록
 
-AEM Forms에서는 양식을 제출하고 문서를 처리하고 문서를 렌더링하기 위한 여러 API를 제공합니다. 일부 API는 트랜잭션으로 계산되며 다른 API는 무료로 사용할 수 있습니다. 이 문서에서는 트랜잭션 보고서에서 트랜잭션으로 간주되는 모든 API의 목록을 제공합니다. 다음은 청구 가능한 API가 사용되는 몇 가지 일반적인 시나리오입니다.
+AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링을 위한 여러 API를 제공합니다. 일부 API는 트랜잭션으로 계산되며 다른 API는 무료로 사용할 수 있습니다. 이 문서에서는 트랜잭션 보고서에서 트랜잭션으로 간주되는 모든 API의 목록을 제공합니다. 다음은 청구 가능한 API가 사용되는 몇 가지 일반적인 시나리오입니다.
 
 * 적응형 양식, HTML5 양식 및 양식 세트 제출
 * 인터랙티브한 커뮤니케이션의 인쇄 또는 웹 버전 렌더링
@@ -29,17 +29,17 @@ AEM Forms에서는 양식을 제출하고 문서를 처리하고 문서를 렌�
 * 동적 PDF 문서 병합
 * 기록 문서 생성
 * 인터랙티브한 PDF 문서를 다른 PDF 문서와 병합
-* AEM 워크플로우의 지정 작업 단계 및 문서 서비스 단계 사용
+* AEM 워크플로우의 작업 단계 및 문서 서비스 단계 지정 사용
 * 적응형 양식 내에서 적응형 양식 사용
 
-대금 청구 API는 렌더링된 문서의 페이지 수, 문서 또는 양식의 길이 또는 최종 형식을 설명하지 않습니다. 트랜잭션 보고서는 트랜잭션을 세 가지 범주로 나눕니다. 처리된 문서, 렌더링된 문서 및 제출된 양식
+대금 청구 API는 렌더링된 문서의 페이지 수, 문서 또는 양식의 길이 또는 최종 형식을 설명하지 않습니다. 트랜잭션 보고서는 트랜잭션을 세 가지 범주로 나눕니다. 처리된 문서, 렌더링된 문서 및 Forms 제출됨.
 
-* **제출된 양식:** AEM Forms로 만든 모든 유형의 양식에서 데이터를 제출하고 데이터가 데이터 저장소 또는 데이터베이스에 제출되면 양식 제출으로 간주됩니다. 예를 들어, 적응형 양식, HTML5 양식, PDF 양식 및 양식 세트를 제출하는 것은 양식을 제출한 것으로 간주합니다. 양식 세트의 각 양식은 제출로 간주됩니다. 예를 들어, 양식 세트에 5개의 양식이 있는 경우, 양식 세트가 제출되면 트랜잭션 보고 서비스는 양식을 5개의 제출물로 계산합니다.
+* **Forms 제출:** 데이터를 AEM Forms으로 만든 모든 유형의 양식에서 전송하고 데이터를 데이터 저장소 또는 데이터베이스에 제출하는 경우는 양식 제출으로 간주됩니다. 예를 들어, 적응형 양식 제출, HTML5 양식, PDF forms 및 양식 세트는 제출된 양식으로 간주됩니다. 양식 세트의 각 양식은 제출로 간주됩니다. 예를 들어, 양식 세트에 5개의 양식이 있는 경우, 양식 세트가 제출되면 트랜잭션 보고 서비스는 양식을 5개의 제출물로 계산합니다.
 * **렌더링된 문서:** 문서 서비스에 대해 청구 가능한 문서 서비스 API를 사용하거나 문서 간에 문서를 변환하여 템플릿과 데이터를 결합하고, 문서에 디지털 서명 또는 인증하는 방식으로 문서를 생성하거나, 문서를 문서 렌더링으로 처리합니다.
 
 >[!NOTE]
 >
->거래 보고서 UI에는 세 가지 카테고리가 표시됩니다. 양식 제출, 문서 렌더링 및 문서 처리. 렌더링된 문서와 처리된 문서 모두 렌더링된 문서로 간주됩니다.
+>거래 보고서 UI에는 세 가지 카테고리가 표시됩니다. Forms, 문서 렌더링 및 처리. 렌더링된 문서와 처리된 문서 모두 렌더링된 문서로 간주됩니다.
 
 ## 청구 가능한 Document Services API {#billable-document-services-apis}
 
@@ -55,31 +55,31 @@ AEM Forms에서는 양식을 제출하고 문서를 처리하고 문서를 렌�
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#createPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF</a></td> 
-   <td>지원되는 파일 형식에서 Adobe PDF를 만듭니다.</td> 
+   <td>지원되는 파일 형식에서 Adobe PDF을 만듭니다.</td> 
    <td>처리된 문서</td> 
    <td> </td> 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#createPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF2</a></td> 
-   <td>지원되는 파일 형식에서 Adobe PDF를 만듭니다.</td> 
+   <td>지원되는 파일 형식에서 Adobe PDF을 만듭니다.</td> 
    <td>처리된 문서</td> 
    <td> </td> 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF</a></td> 
-   <td>Adobe PDF를 지원되는 파일 유형으로 변환합니다. </td> 
+   <td>Adobe PDF을 지원되는 파일 유형으로 변환합니다. </td> 
    <td>처리된 문서<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF2</a></td> 
-   <td>Adobe PDF를 지원되는 파일 유형으로 변환합니다. </td> 
+   <td>Adobe PDF을 지원되는 파일 유형으로 변환합니다. </td> 
    <td>처리된 문서<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF3</a></td> 
-   <td>Adobe PDF를 지원되는 파일 유형으로 변환합니다. </td> 
+   <td>Adobe PDF을 지원되는 파일 유형으로 변환합니다. </td> 
    <td>처리된 문서<br /> </td> 
    <td> </td> 
   </tr>
@@ -110,7 +110,7 @@ AEM Forms에서는 양식을 제출하고 문서를 처리하고 문서를 렌�
  </tbody>
 </table>
 
-### Distiller Service {#distiller-service}
+### Distiller 서비스 {#distiller-service}
 
 <table> 
  <tbody>
@@ -122,13 +122,13 @@ AEM Forms에서는 양식을 제출하고 문서를 처리하고 문서를 렌�
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/DistillerService.html#createPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF</a><br /> </td> 
-   <td>지원되는 파일 형식에서 Adobe PDF를 만듭니다.</td> 
+   <td>지원되는 파일 형식에서 Adobe PDF을 만듭니다.</td> 
    <td>처리된 문서</td> 
    <td> </td> 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/DistillerService.html#createPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF2</a></td> 
-   <td>지원되는 파일 형식에서 Adobe PDF를 만듭니다.</td> 
+   <td>지원되는 파일 형식에서 Adobe PDF을 만듭니다.</td> 
    <td>처리된 문서</td> 
    <td> </td> 
   </tr>
@@ -247,7 +247,7 @@ AEM Forms에서는 양식을 제출하고 문서를 처리하고 문서를 렌�
  </tbody>
 </table>
 
-### Barcoded Forms Service {#barcoded-forms-service}
+### 바코드 Forms 서비스 {#barcoded-forms-service}
 
 <table> 
  <tbody>
@@ -290,7 +290,7 @@ AEM Forms에서는 양식을 제출하고 문서를 처리하고 문서를 렌�
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">호출</a></td> 
    <td>지정된 DDX 문서를 실행하고 결과 문서를 포함하는 <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html"> AssemblerResult</a> 개체를 반환합니다. </td> 
    <td>처리된 문서</td> 
-   <td>PDF Generator, Forms 및 Output Services에서 지원하는 모든 입력 파일 포맷인 Assembler 서비스는 이러한 모든 포맷을 출력 파일 포맷으로 지원합니다. </td> 
+   <td>PDF 생성기, Forms 및 출력 서비스가 지원하는 모든 입력 파일 포맷, 어셈블러 서비스는 이러한 모든 포맷을 출력 파일 포맷으로 지원합니다. </td> 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#toPDFA-com.adobe.aemfd.docmanager.Document-com.adobe.fd.assembler.client.PDFAConversionOptionSpec-" target="_blank">toPDFA</a></td> 
@@ -350,7 +350,7 @@ AEM Forms에서는 양식을 제출하고 문서를 처리하고 문서를 렌�
 
 ## 청구 가능한 데이터 캡처 API {#billable-data-capture-apis}
 
-적응형 양식, HTML5 양식 및 양식 세트의 모든 제출 이벤트는 트랜잭션으로 간주됩니다. 기본적으로 PDF 양식 제출은 거래로 간주되지 않습니다. 제공된 [거래 보고서 API를](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg) 사용하여 PDF 양식 제출을 거래로 기록합니다.
+적응형 양식, HTML5 Forms 및 양식 세트의 모든 제출 이벤트는 트랜잭션으로 간주됩니다. 기본적으로 PDF 양식 제출은 거래로 간주되지 않습니다. 제공된 [거래 보고서 API를](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg) 사용하여 PDF forms 제출 사항을 트랜잭션으로 기록하십시오.
 
 ### 적응형 양식 {#adaptive-forms}
 
@@ -411,7 +411,7 @@ AEM Forms에서는 양식을 제출하고 문서를 처리하고 문서를 렌�
    <td>
     <ul> 
      <li>적응형 양식(적응형 양식 양식 세트) 내에서 적응형 양식을 사용하는 경우 단일 거래만 가능합니다. 적응형 양식 내에 원하는 수의 적응형 양식을 가질 수 있습니다.</li> 
-     <li>HTML5 양식 양식의 모든 양식은 계정을 별도의 거래로 설정합니다. </li> 
+     <li>HTML5 Forms 양식의 모든 양식은 별도의 거래로 계정을 설정합니다. </li> 
     </ul> </td> 
   </tr>
  </tbody>
@@ -419,7 +419,7 @@ AEM Forms에서는 양식을 제출하고 문서를 처리하고 문서를 렌�
 
 ## OSGi API에 대한 청구 가능한 인터랙티브 커뮤니케이션 및 양식 중심의 AEM 워크플로우 {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
 
-OSGi에서 양식 중심의 AEM 워크플로우의 작업 및 문서 서비스 단계 및 인터랙티브한 커뮤니케이션의 모든 표현물을 할당하고 거래로 간주합니다. 작성자 인스턴스에서 대화형 통신을 미리 보고 에이전트 UI를 사용하여 게시 인스턴스에서 미리 보는 것은 트랜잭션으로 간주되지 않습니다. 워크플로우 단계가 트랜잭션을 처리하고 워크플로우가 완료되지 않으면 트랜잭션 수가 취소되지 않습니다.
+OSGi에서 양식 중심의 AEM 워크플로우의 작업 및 문서 서비스 단계를 지정하고 인터랙티브한 커뮤니케이션의 모든 변환을 지정하며 트랜잭션으로 간주합니다. 작성자 인스턴스에서 대화형 통신을 미리 보고 에이전트 UI를 사용하여 게시 인스턴스에서 미리 보는 것은 트랜잭션으로 간주되지 않습니다. 워크플로우 단계가 트랜잭션을 처리하고 워크플로우가 완료되지 않으면 트랜잭션 수가 취소되지 않습니다.
 
 ### 대화형 통신 - 웹 채널 {#interactive-communication-web-channel}
 
@@ -494,7 +494,7 @@ OSGi에서 양식 중심의 AEM 워크플로우의 작업 및 문서 서비스 �
 
 ## 사용자 지정 코드에 대한 트랜잭션으로 청구 가능한 API 기록 {#recording-billable-apis-as-transactions-for-custom-code}
 
-PDF 양식 제출, 에이전트 UI를 사용하여 인터랙티브한 커뮤니케이션 미리 보기, 비표준 양식 제출 사용 및 사용자 정의 구현과 같은 작업은 트랜잭션으로 간주되지 않습니다. AEM Forms는 거래와 같은 작업을 기록하는 API를 제공합니다. 사용자 지정 구현에서 API를 호출하여 트랜잭션을 [기록할 수 있습니다](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg).
+PDF 양식 제출, 에이전트 UI를 사용하여 인터랙티브한 커뮤니케이션 미리 보기, 비표준 양식 제출 사용 및 사용자 정의 구현과 같은 작업은 트랜잭션으로 간주되지 않습니다. AEM Forms은 거래와 같은 작업을 기록하는 API를 제공합니다. 사용자 지정 구현에서 API를 호출하여 트랜잭션을 [기록할 수 있습니다](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg).
 
 ## 관련 문서 {#related-articles}
 
