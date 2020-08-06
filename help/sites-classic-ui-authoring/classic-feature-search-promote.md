@@ -34,7 +34,7 @@ AEM 관리자가 활성화한 경우에만 Search&amp;Promote 기능을 사용�
 <table> 
  <tbody> 
   <tr> 
-   <th>Search&amp;Promote 구성 요소</th> 
+   <th>Search &amp; Promote 구성 요소</th> 
    <th>설명</th> 
   </tr> 
   <tr> 
