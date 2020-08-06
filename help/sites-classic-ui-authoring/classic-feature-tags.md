@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: c117b9d1-e4ae-403f-8619-6e48d424a761
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '758'
+ht-degree: 88%
 
 ---
 
@@ -19,8 +22,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 태그는 웹 사이트에 포함된 컨텐츠를 빠르고 손쉽게 분류할 수 있는 방법입니다. 태그는 검색을 통해 해당 컨텐츠 및 관련 컨텐츠를 찾을 수 있도록 하기 위해 페이지, 자산 또는 컨텐츠에 첨부할 수 있는 키워드 또는 레이블이라고 할 수 있습니다.
 
-* See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.
-* See [Tagging for Developers](/help/sites-developing/tags.md) for information about the tagging framework as well as including and extending tags in custom applications.
+* 태그 작성 및 관리 방법과 컨텐츠 태그가 적용되는 항목에 대한 내용은 [태그 관리](/help/sites-administering/tags.md)를 참조하십시오.
+* 사용자 지정 애플리케이션에서 태그를 포함 및 확장하는 방법과 태깅 프레임워크에 대한 내용은 [개발자를 위한 태깅](/help/sites-developing/tags.md)을 참조하십시오.
 
 ## 태깅을 사용해야 하는 10가지 이유 {#ten-reasons-to-use-tagging}
 
@@ -39,7 +42,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ## 태그 적용 {#applying-tags}
 
-In the author environment, authors may apply tags by accessing the page properties and entering one or more tags in the **Tags/Keywords** field.
+작성 환경에서 작성자는 페이지 속성에 액세스하고 **태그/키워드** 필드에 하나 이상의 태그를 입력하여 태그를 적용할 수 있습니다.
 
 To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the `Tags/Keywords` field pull-down to select from the list of tags permitted for the page. Tthe **Standard Tags** tab is the default namespace, which means there is no `namespace-string:` prefixed to the taxonomy.
 
@@ -57,7 +60,7 @@ To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Pr
 
 >[!NOTE]
 >
->페이지를 활성화하면 대화 상자가 자동으로 열리고 해당 페이지에 속하는 활성화되지 않은 태그를 활성화할 수 있습니다.
+>페이지를 활성화하면 페이지에 속하면서 활성화되지 않은 태그를 활성화할 수 있는 대화 상자가 자동으로 열립니다.
 
 **비활성화**
 
@@ -65,7 +68,7 @@ To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Pr
 
 ## 태그 클라우드 {#tag-clouds}
 
-태그 클라우드는 현재 페이지, 전체 웹 사이트 또는 가장 일반적으로 액세스하는 태그 클라우드를 표시합니다. 태그 클라우드는 사용자에게 관심이 있는 문제점을 강조 표시하는 수단입니다. 태그를 표시하는 데 사용되는 텍스트의 크기는 용도에 따라 다릅니다.
+태그 클라우드는 현재 페이지, 전체 웹 사이트 또는 가장 일반적으로 액세스하는 태그의 클라우드를 보여줍니다. 태그 클라우드는 사용자에게 관심이 있는 문제점을 강조 표시하는 수단입니다. 태그를 표시하는 데 사용되는 텍스트의 크기는 용도에 따라 다릅니다.
 
 [태그 클라우드](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#tag-cloud) 구성 요소(일반 구성 요소 그룹)는 태그 클라우드를 페이지에 추가하는 데 사용됩니다.
 
