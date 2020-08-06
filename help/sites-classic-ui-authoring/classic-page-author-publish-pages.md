@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 80c9f4b7-d59f-4ed1-a457-300756962708
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1071'
+ht-degree: 80%
 
 ---
 
@@ -28,11 +31,11 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >게시와 관련된 특정 용어는 헷갈릴 수 있습니다.
 >
 >* **게시/게시 취소**
-   >  게시 환경에서 컨텐츠를 공개적으로 사용할 수 있도록(또는 사용할 수 없도록) 하는 작업에 대한 기본 용어입니다.
+   >  이 용어는 컨텐츠를 게시 환경에서 공개적으로 사용할 수 있도록(또는 사용할 수 없도록) 하는 작업을 위한 기본 용어입니다.
    >
    >
 * **활성화/비활성화**
-   >  이러한 용어는 게시/게시 취소와 동의어입니다.
+   >  게시/게시 취소와 동의어입니다.
    >
    >
 * **복제**
@@ -47,6 +50,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >* 게시할 요청을 적절한 사람에게 알리도록 워크플로우가 트리거됩니다.
 >* 이를 알리는 메시지가 잠깐 동안 표시됩니다.
+
 >
 
 
@@ -128,7 +132,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ### 나중에 비활성화 {#deactivate-later}
 
-나중에 비활성화를 예약하려면
+나중에 비활성화하도록 예약하려면
 
 1. In the Website console, go to the **Deactivate** menu, and select **Deactivate later**.
 
