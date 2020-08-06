@@ -1,8 +1,8 @@
 ---
 title: IBM FileNet용 커넥터 구성
 seo-title: IBM FileNet용 커넥터 구성
-description: AEM Forms와 IBM FileNet 간의 통신을 사용하도록 IBM FileNet용 커넥터를 구성하는 방법에 대해 학습합니다.
-seo-description: AEM Forms와 IBM FileNet 간의 통신을 사용하도록 IBM FileNet용 커넥터를 구성하는 방법에 대해 학습합니다.
+description: AEM Forms와 IBM FileNet 간의 통신을 사용하도록 IBM FileNet용 커넥터를 구성하는 방법을 알아봅니다.
+seo-description: AEM Forms와 IBM FileNet 간의 통신을 사용하도록 IBM FileNet용 커넥터를 구성하는 방법을 알아봅니다.
 uuid: 29d4e221-97f7-4cfb-b7e4-75a8289d2604
 contentOwner: admin
 content-type: reference
@@ -20,11 +20,11 @@ ht-degree: 1%
 
 # IBM FileNet용 커넥터 구성 {#configuring-connector-for-ibm-filenet}
 
-IBM FileNet용 커넥터를 사용하면 AEM Forms와 IBM FileNet 간에 통신이 가능합니다. 자세한 배경 정보는 [서비스 참조에서 &quot;ECM용 커넥터&quot;를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+IBM FileNet용 커넥터를 사용하면 AEM 양식과 IBM FileNet 간의 통신이 가능합니다. 자세한 배경 정보는 [서비스 참조에서 &quot;ECM용 커넥터&quot;를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->이전 릴리스에서 자산은 ECM 저장소에 저장될 수 있습니다. 이 릴리스에서는 자산이 AEM Forms 기본 저장소에 저장되고 저장소 공급자 서비스는 더 이상 사용되지 않습니다. ECM 저장소에서 AEM 양식 저장소로 자산의 마이그레이션은 AEM 양식으로 업그레이드를 수행할 때 수행됩니다. 자세한 내용은 애플리케이션 서버에 대한 AEM forms 업그레이드 가이드를 참조하십시오.
+>이전 릴리스에서 자산은 ECM 저장소에 저장될 수 있습니다. 이번 릴리스에서 자산은 AEM forms 기본 저장소에 저장되고 저장소 공급자 서비스는 더 이상 사용되지 않습니다. ECM 저장소에서 AEM 양식 저장소로 에셋을 마이그레이션하는 작업은 AEM 양식으로 업그레이드를 수행할 때 수행됩니다. 자세한 내용은 응용 프로그램 서버에 대한 AEM forms 업그레이드 안내서를 참조하십시오.
 
 ## 컨텐츠 엔진으로의 연결 구성 {#configure-the-connection-to-the-content-engine}
 
