@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe는 2011년 8월 5일부터 Content Services ES 고객을 Adobe Digital Enterprise Platform Experience Services로 마이그레이션합니다. 컨텐츠 서비스를 사용하는 고객을 위한 제품 로드맵은 Adobe의 데이 소프트웨어 인수 과정에서 취득한 최신 모듈식 CRX 아키텍처를 기반으로 구축된 기본 컨텐츠 저장소를 포함하는 새로운 ADEP Experience Services - Core로 이동하는 것입니다.
+>2011년 8월 5일부터 Adobe은 Content Services ES 고객을 Adobe Digital Enterprise Platform Experience Services로 마이그레이션하고 있습니다. 컨텐츠 서비스를 사용하는 고객을 위한 제품 로드맵은 데이 소프트웨어를 Adobe으로 구입하는 동안 취득한 최신 모듈식 CRX 아키텍처를 기반으로 구축된 기본 컨텐츠 저장소를 포함하는 새로운 ADEP 경험 서비스 - 코어로 이동하는 것입니다.
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 컨텐츠 서비스 공간 만들기](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 콘텐츠 서비스 권한 설정](document-management-service-deprecated-java.md#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated)
 
-AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
@@ -246,7 +246,7 @@ AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 컨텐츠 서비스에 컨텐츠 추가(더 이상 사용되지 않음) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
 
-다음 Java 코드 예제는 /Company Home/Test Directory라는 폴더에 *ModitionForm.pdf* 라는 PDF 파일을 추가합니다. 작성자 및 설명 속성이 설정됩니다. 새 컨텐츠의 식별 값이 콘솔에 기록됩니다.
+다음 Java 코드 예제는 /Company Home/Test Directory라는 폴더에 *MortgageForm.pdf* 파일을 추가합니다. 작성자 및 설명 속성이 설정됩니다. 새 컨텐츠의 식별 값이 콘솔에 기록됩니다.
 
 ```as3
  /* 
