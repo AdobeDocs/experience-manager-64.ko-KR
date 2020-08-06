@@ -1,8 +1,8 @@
 ---
 title: 구성 요소
 seo-title: 구성 요소
-description: 기본적으로 AEM에는 웹 사이트 작성자에게 광범위한 기능을 제공하는 다양한 구성 요소가 포함되어 있습니다.
-seo-description: 기본적으로 AEM에는 웹 사이트 작성자에게 광범위한 기능을 제공하는 다양한 구성 요소가 포함되어 있습니다.
+description: 기본적으로 AEM에는 웹 사이트 작성자에게 광범위한 기능을 제공하는 다양한 구성 요소가 포함되어 있습니다
+seo-description: 기본적으로 AEM에는 웹 사이트 작성자에게 광범위한 기능을 제공하는 다양한 구성 요소가 포함되어 있습니다
 uuid: 55caeec3-add7-4d05-a620-07e33901adb7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 92%
 
 ---
 
@@ -55,16 +58,16 @@ source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 
 다음 페이지에서는 구성 요소에 대한 일부 추가 중요한 정보에 대한 링크를 제공합니다.
 
-* [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) - 페이지를 작성하는 데 필요한 코어 구성 요소는 컨텐츠 유형을 제공하는 유연하고 다양한 작성 기능을 제공합니다.
+* [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) - 페이지를 작성하는 데 필요한 코어 구성 요소는 컨텐츠 유형을 제공하는 유연하고 다양한 작성 기능을 제공합니다.
 
 * [커뮤니티](/help/communities/author-communities.md) - 구성 요소는 웹 사이트에 포럼 및 댓글과 같은 대화형 기능을 제공합니다. Many of these components are included when a [Community Site](/help/communities/overview.md) is created.
 
-* [eCommerce](/help/sites-administering/ecommerce.md) - AEM 내의 eCommerce 기능에도 다양한 구성 요소가 포함되어 있습니다.실제 사용은 사용되는 상거래 엔진에 따라 달라질 수 있습니다.
+* [eCommerce](/help/sites-administering/ecommerce.md) - AEM 내의 eCommerce 기능에도 다양한 구성 요소가 포함되어 있습니다. 실제 사용은 사용되는 상거래 엔진에 따라 달라질 수 있습니다.
 
 ### 구성 요소 구성 {#configuring-components}
 
 작성자가 표준 설치에서 액세스할 수 있는 구성 요소 외에도 다양한 기타 구성 요소를 사용할 수 있습니다.
 
-* If your page is based on the recommended, modern, editable template, you can [edit the template](/help/sites-authoring/templates.md) enable/disable these and edit parameters for specific components.
+* 페이지가 권장되는 편집 가능한 현대적 템플릿을 기반으로 하는 경우 [템플릿을 편집](/help/sites-authoring/templates.md)하여 특정 구성 요소에 대해 이러한 템플릿을 활성화/비활성화하고 매개 변수를 편집할 수 있습니다.
 * 페이지가 정적 템플릿을 기반으로 하는 경우 [디자인 모드](/help/sites-authoring/default-components-designmode.md#enable-disable-components)를 사용하여 특정 구성 요소에 대해 이러한 페이지를 활성화/비활성화하고 매개 변수를 편집할 수 있습니다.
 
