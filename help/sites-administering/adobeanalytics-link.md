@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## Adobe Analytics 프레임워크에 대한 링크 추적 구성 {#configuring-link-tracking-for-an-adobe-analytics-framework}
 
-1. 탐색 **을**&#x200B;사용하여 배포 **, Cloud Service**&#x200B;를 **거쳐** Adobe Analytics섹션으로 **** 이동합니다.
+1. [ **배포**], [ **Cloud Services**]를 통해 [ **Adobe Analytics** 섹션 **]** 으로 이동합니다.
 
 1. 구성 **표시를**&#x200B;사용하여 필요한 Adobe Analytics 프레임워크을 엽니다.
 1. 링크 **추적 구성** 섹션을 확장하고 필요에 따라 구성합니다(이 페이지에서는 자세한 내용을 제공합니다).
@@ -106,7 +106,7 @@ s.linkLeaveQueryString= false;
 
 ## 링크 클릭으로 변수 데이터 전송 {#sending-variable-data-with-link-clicks}
 
-사용자가 링크를 클릭할 때 이벤트 및 변수 데이터를 Adobe Analytics으로 보내도록 AEM을 구성할 수 있습니다. 링크 **추적 구성** 속성을 사용하면 링크 클릭 발생 시 추적할 Adobe Analytics 이벤트 및 변수를 지정할 수 있습니다.
+사용자가 링크를 클릭할 때 이벤트와 변수 데이터를 Adobe Analytics으로 보내도록 AEM을 구성할 수 있습니다. 링크 **추적 구성** 속성을 사용하면 링크 클릭 발생 시 추적할 Adobe Analytics 이벤트 및 변수를 지정할 수 있습니다.
 
 프레임워크 매핑은 이벤트 및 변수 값을 결정합니다. 링크를 클릭할 때 추적하려는 데이터를 저장하는 컨텐츠 구성 요소의 변수에 Adobe Analytics 변수를 매핑할 수 있습니다.
 
@@ -136,7 +136,7 @@ s.linkTrackVars= 'prop4';
 
 ## 링크 추적 구성 예 {#example-link-tracking-configuration}
 
-다음 절차를 수행하여 Adobe Analytics 통합의 링크 추적 동작을 탐색합니다. 이 절차에서는 [Adobe Experience Cloud Debugger의 결과를 보여 줍니다](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
+다음 절차를 수행하여 Adobe Analytics 통합의 링크 추적 동작을 탐색합니다. 이 절차에서는 [Adobe Experience Cloud 디버거의 결과를 보여 줍니다](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
 
 ### General configuration {#general-configuration}
 
@@ -162,7 +162,7 @@ s.linkTrackVars= 'prop4';
   </tr> 
   <tr> 
    <td>pagedata.title</td> 
-   <td>사용자 지정 eVar 1(eVar1)</td> 
+   <td>사용자 정의 eVar 1(eVar1)</td> 
    <td>eVar1</td> 
   </tr> 
   <tr> 
@@ -184,12 +184,12 @@ s.linkTrackVars= 'prop4';
   </tr> 
   <tr> 
    <td>eventdata.keyword</td> 
-   <td>사용자 지정 eVar 2(eVar2)</td> 
+   <td>사용자 정의 eVar 2(eVar2)</td> 
    <td>eVar2</td> 
   </tr> 
   <tr> 
    <td>eventdata.results</td> 
-   <td>사용자 지정 eVar 3(eVar3)</td> 
+   <td>사용자 정의 eVar 3(eVar3)</td> 
    <td>eVar3</td> 
   </tr> 
   <tr> 
@@ -229,7 +229,7 @@ s.linkTrackVars= 'prop4';
 
 1. 미리 **보기 모드로** 전환하고 링크를 클릭합니다.
 
-Adobe Marketing Cloud Debugger를 사용하여 볼 때 호출은 다음과 같이 표시됩니다.
+The call made will look like this when viewing with the Adobe Marketing Cloud Debugger:
 
 ![a-leavequerysearch-blank](assets/aa-leavequerysearch-blank.png)
 
@@ -260,14 +260,14 @@ Adobe Marketing Cloud 디버거에 나타나는 호출 세부 사항은 다음 �
 애드혹 링크 추적을 활성화하려면 다음을 수행해야 합니다.
 
 * [텍스트 구성 요소를 포함하는 페이지 **를** 프레임워크와 연결합니다](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework).
-* [애드혹 링크 추적을 사용하도록 Adobe Analytics 프레임워크을 구성합니다](#enabling-ad-hoc-link-tracking).
+* [임시 링크 추적을 사용하도록 Adobe Analytics 프레임워크을 구성합니다](#enabling-ad-hoc-link-tracking).
 * [텍스트 구성 요소에 대한 링크 추적 구성을 참조하십시오](#configuring-link-tracking-for-a-text-component).
 
 ### 애드혹 링크 추적 활성화 {#enabling-ad-hoc-link-tracking}
 
-애드혹 링크 추적을 사용하도록 Adobe Analytics 프레임워크을 구성합니다.
+임시 링크 추적을 사용하도록 Adobe Analytics 프레임워크을 구성합니다.
 
-1. Adobe Analytics 프레임워크을 열고 **링크 추적 구성** 섹션을 확장합니다.
+1. Adobe Analytics 프레임워크을 열고 **링크 추적 구성 섹션을** 확장합니다.
 
 1. 애드혹 **링크 추적을 활성화합니다**.
 
@@ -309,7 +309,7 @@ Adobe Marketing Cloud 디버거에 나타나는 호출 세부 사항은 다음 �
 
 텍스트 구성 요소 자체에 대한 **애드혹** 링크 추적을 구성하려면 먼저 다음 구성이 이미 구현되어 있어야 합니다.
 
-* Adobe [Analytics 프레임워크은 애드혹 링크 추적을 활성화하도록 구성되어 있습니다](#enabling-ad-hoc-link-tracking).
+* [Adobe Analytics 프레임워크은 애드혹 링크 추적을 사용하도록 구성되어 있습니다](#enabling-ad-hoc-link-tracking).
 * 텍스트 [구성 **요소를 포함하는** 페이지는 프레임워크와 연결됩니다](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework).
 
 텍스트 구성 요소에 대한 링크 추적을 구성하려면 다음 절차를 **** 사용하십시오.
@@ -332,7 +332,7 @@ Adobe Marketing Cloud 디버거에 나타나는 호출 세부 사항은 다음 �
 
 1. 사용자 **지정 링크 추적** 기능을 활성화하여 Adobe Analytics 프레임워크의 링크 추적 구성을 무시하고 현재 링크에 대한 링크 추적을 활성화합니다.
 
-1. (선택 사항) 링크를 클릭하여 이벤트를 추적하려면 Adobe Analytics 변수 **포함 필드에 Adobe Analytics 이벤트 이름을** 추가합니다. 여러 이벤트 이름을 쉼표로 구분합니다(예:
+1. (선택 사항) 링크를 클릭하여 이벤트를 추적하려면 [Adobe Analytics 변수 **포함] 필드에 Adobe Analytics 이벤트 이름을** 추가합니다. 여러 이벤트 이름을 쉼표로 구분합니다(예:
 
    `event1, event22`.
 
