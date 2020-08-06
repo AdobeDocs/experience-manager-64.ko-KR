@@ -12,6 +12,9 @@ discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1008'
+ht-degree: 87%
 
 ---
 
@@ -45,6 +48,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
       1. 도구 모음에서 **만들기**&#x200B;를 선택하여 선택 상자를 엽니다.
       1. 여기서 **론치 만들기**&#x200B;를 선택하여 마법사를 엽니다.
+
    >[!NOTE]
    >
    >**사이트** 콘솔에서 [선택 모드](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)를 사용하여 **만들기**&#x200B;를 선택하기 전에 페이지를 선택할 수도 있습니다.
@@ -55,6 +59,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    * 필요한 위치로 이동합니다.
    * 소스 페이지를 선택하고 확인(확인 표시)합니다.
+
    필요에 따라 반복하십시오.
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
@@ -70,6 +75,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * **하위 페이지 포함**:
 
       * 하위 페이지를 포함하여 론치를 만들지 아니면 하위 페이지를 포함하지 않고 론치를 만들지 지정합니다.  기본적으로 이 하위 페이지가 포함됩니다.
+
    **다음**&#x200B;을 선택하여 계속 진행합니다.
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
@@ -84,6 +90,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
       기본적으로 이 옵션은 선택되어 있습니다.
 
    * **론치 날짜**: 론치 카피가 활성화될 날짜 및 시간입니다(**프로덕션 준비** 플래그에 따라 다름) [론치 - 이벤트 순서](/help/sites-authoring/launches.md#launches-the-order-of-events)를 참조하십시오.
+
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
 1. **만들기**&#x200B;를 사용하여 프로세스를 완료하고 새 론치를 만듭니다. 확인 대화 상자를 통해 론치를 즉시 열지 여부를 묻게 됩니다.
