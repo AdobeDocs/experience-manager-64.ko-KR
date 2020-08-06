@@ -1,8 +1,8 @@
 ---
-title: AEM 애플리케이션에 태그 지정 작성
-seo-title: AEM 애플리케이션에 태그 지정 작성
-description: 사용자 지정 AEM 애플리케이션 내에서 태그를 사용하여 프로그래밍 방식으로 작업하거나 태그를 확장합니다.
-seo-description: 사용자 지정 AEM 애플리케이션 내에서 태그를 사용하여 프로그래밍 방식으로 작업하거나 태그를 확장합니다.
+title: AEM 애플리케이션에 태깅 작성
+seo-title: AEM 애플리케이션에 태깅 작성
+description: 사용자 정의 AEM 애플리케이션 내에서 태그를 사용하여 프로그래밍 방식으로 작업
+seo-description: 사용자 정의 AEM 애플리케이션 내에서 태그를 사용하여 프로그래밍 방식으로 작업
 uuid: 0549552e-0d51-4162-b418-babf4ceee046
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: 1428a23878750e561855487b03af2ef38b648bd3
 workflow-type: tm+mt
 source-wordcount: '893'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# AEM 애플리케이션에 태그 지정 작성{#building-tagging-into-an-aem-application}
+# AEM 애플리케이션에 태깅 작성{#building-tagging-into-an-aem-application}
 
-이 페이지에서는 사용자 지정 AEM 애플리케이션 내에서 태그를 사용하여 프로그래밍 방식으로 작업하거나 태그를 확장하기 위해
+이 페이지에서는 사용자 정의 AEM 응용 프로그램 내에서 태그를 사용하여 프로그래밍 방식으로 작업하거나 태그를 확장하기 위해
 
 * [태깅 API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/package-summary.html)
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ## Tagging API 개요 {#overview-of-the-tagging-api}
 
-AEM에서 [태그](/help/sites-developing/framework.md) 프레임워크를 구현하면 JCR API를 사용하여 태그 및 태그 컨텐츠를 관리할 수 있습니다. TagManager는 문자열 배열 속성에 값으로 입력한 태그가 중복되지 않도록 하고, 비기존 태그를 가리키는 TagID를 제거하고, 이동되거나 병합된 태그에 대해 TagID를 업데이트합니다. `cq:tags` TagManager는 잘못된 변경 사항을 되돌리는 JCR 관측 수신기를 사용합니다. 기본 클래스는 com.day.cq.ta [logging](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html) 패키지에 있습니다.
+AEM에서 [태깅 프레임워크를](/help/sites-developing/framework.md) 구현하면 JCR API를 사용하여 태그 및 태그 컨텐츠를 관리할 수 있습니다. TagManager는 문자열 배열 속성에 값으로 입력한 태그가 중복되지 않도록 하고, 비기존 태그를 가리키는 TagID를 제거하고, 이동되거나 병합된 태그에 대해 TagID를 업데이트합니다. `cq:tags` TagManager는 잘못된 변경 사항을 되돌리는 JCR 관측 수신기를 사용합니다. 기본 클래스는 com.day.cq.ta [logging](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html) 패키지에 있습니다.
 
 * JcrTagManagerFactory - a의 JCR 기반 구현을 반환합니다 `TagManager`. Tagging API의 참조 구현입니다.
 * `TagManager` - 경로 및 이름별로 태그를 확인하고 만들 수 있습니다.
@@ -198,5 +198,5 @@ AEM에서는 페이지 언어 또는 사용자 언어로 언어를 얻을 수 �
 
 >[!NOTE]
 >
->새 언어는 AEM에서 인식되는 언어 중 하나여야 합니다. 즉, 아래 노드로 사용할 수 있어야 합니다 `/libs/wcm/core/resources/languages`.
+>새로운 언어는 AEM에서 인식되는 언어 중 하나여야 합니다. 즉, 아래 노드로 사용할 수 있어야 합니다 `/libs/wcm/core/resources/languages`.
 
