@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 430a27b5-f344-404f-8bf8-0d91b49b605e
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '340'
+ht-degree: 84%
 
 ---
 
@@ -46,5 +49,5 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->모바일 장치에서 작성 인스턴스의 페이지를 요청하면 에뮬레이터가 비활성화됩니다. 그런 다음 터치 지원 UI를 사용하여 작성할 수 있습니다.
+>모바일 장치에서 작성 인스턴스의 페이지를 요청하면 에뮬레이터가 비활성화됩니다. 그런 다음 터치가 활성화된 UI를 사용하여 작성할 수 있습니다.
 
