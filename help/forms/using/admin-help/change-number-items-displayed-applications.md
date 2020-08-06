@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7d06f20d-0fbd-447c-8c78-bf6ce0ceed31
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '126'
+ht-degree: 0%
 
 ---
 
@@ -20,5 +23,5 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 환경 설정 페이지에서 각 응용 프로그램 및 서비스 웹 페이지에 표시되는 서비스, 끝점, 카테고리 및 보관 파일의 수를 제어할 수 있습니다.
 
 1. 관리 콘솔에서 서비스 > 애플리케이션 및 서비스 > 기본 설정을 **[!UICONTROL 클릭합니다]**.
-1. 환경 설정 페이지에서 각 페이지에 표시할 수 있는 서비스, 끝점, 카테고리 및 보관 파일의 수를 입력한 다음 저장을 **[!UICONTROL 클릭합니다]**.
+1. 환경 설정 페이지에서 각 페이지에 표시할 수 있는 서비스, 끝점, 카테고리 및 보관 파일의 수를 입력한 다음 **[!UICONTROL 저장을 클릭합니다]**.
 
