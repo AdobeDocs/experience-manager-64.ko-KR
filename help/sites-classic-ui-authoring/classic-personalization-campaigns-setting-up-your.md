@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e30e5a21-ac86-4653-bd1f-7351852db3f3
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2289'
+ht-degree: 97%
 
 ---
 
@@ -229,15 +232,15 @@ AEM MCM에서는 리드를 직접 입력하거나 메일링 목록과 같이 쉼
    >
    >CSV 목록의 첫 번째 행은 사전 정의된 레이블로 예제와 동일하게 작성되어야 합니다.
    >
-   >`email,givenName,familyName` - 예를 `givenname`들어, 으로 작성되면 시스템은 이를 인식하지 못합니다.
+   >`email,givenName,familyName` - 예를 `givenname`들어 이렇게 작성되면 시스템에서 인식하지 못합니다.
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 
-1. **다음**&#x200B;를 클릭합니다. 여기에서 리드를 미리 보고 정보가 정확한지 확인합니다.
+1. **다음**&#x200B;을 클릭합니다. 여기에서 리드를 미리 보고 정보가 정확한지 확인합니다.
 
    ![screen_shot_2012-02-21at123104pm](assets/screen_shot_2012-02-21at123104pm.png)
 
-1. **다음**&#x200B;를 클릭합니다. 리드가 속할 목록을 선택합니다. 목록에 속하게 하지 않으려면 해당 필드의 정보를 삭제합니다. 기본적으로 AEM은 날짜와 시간이 포함된 목록 이름을 만듭니다. **가져오기**&#x200B;를 클릭합니다. 
+1. **다음**&#x200B;을 클릭합니다. 리드가 속할 목록을 선택합니다. 목록에 속하게 하지 않으려면 해당 필드의 정보를 삭제합니다. 기본적으로 AEM은 날짜와 시간이 포함된 목록 이름을 만듭니다. **가져오기**&#x200B;를 클릭합니다. 
 
    ![screen_shot_2012-02-21at123123pm](assets/screen_shot_2012-02-21at123123pm.png)
 
