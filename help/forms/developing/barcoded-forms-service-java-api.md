@@ -1,6 +1,6 @@
 ---
-title: Barcoded Forms Service Java APIQ빠른 시작(SOAP)
-seo-title: Barcoded Forms Service Java APIQ빠른 시작(SOAP)
+title: 바코드 Forms 서비스 Java APIQ빠른 시작(SOAP)
+seo-title: 바코드 Forms 서비스 Java APIQ빠른 시작(SOAP)
 description: 'null'
 seo-description: 'null'
 uuid: a6739695-ee0b-4480-8cef-0f91a72deaad
@@ -18,17 +18,17 @@ ht-degree: 0%
 ---
 
 
-# 바코드 양식 서비스 Java API 빠른 시작(SOAP) {#barcoded-forms-service-java-apiquick-start-soap}
+# 바코드 Forms 서비스 Java API 빠른 시작(SOAP) {#barcoded-forms-service-java-apiquick-start-soap}
 
 Java API 빠른 시작(SOAP)은 Barcoded Forms 서비스에 대해 사용할 수 있습니다.
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 바코드 양식 데이터 디코딩](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
-AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM Forms를 사용한 프로그래밍에서 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms Server를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Forms과 함께 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 바코드 양식 데이터 디코딩 {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
 
