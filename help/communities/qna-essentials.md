@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: ceace3aa-78a5-485e-b519-630479e087d8
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '255'
+ht-degree: 1%
 
 ---
 
 
 # QnA Essentials {#qna-essentials}
 
-이 페이지에서는 질문 및 답변(QnA) 포럼 기능 작업에 필요한 정보를 제공합니다.
+이 페이지에서는 질문 및 답변(QnA) 포럼 기능을 사용하는 데 필요한 정보를 제공합니다.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -25,15 +28,15 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
  <tbody>
   <tr>
    <td> resourceType</td> 
-   <td>social/qna/components/hbs/qnforum</td> 
+   <td>social/qna/components/hbs/qnaforum</td> 
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component">includable</a></td> 
+   <td> <a href="scf.md#add-or-include-a-communities-component">포함 가능</a></td> 
    <td>아니오</td> 
   </tr>
   <tr>
    <td> <a href="clientlibs.md">clientlibs</a></td> 
-   <td>cq.ckeditor<br /> cq.social.hbs.vocting<br /> cq.social.hbs.qna</td> 
+   <td>cq.ckeditor<br /> cq.social.hbs.vocing<br /> cq.social.hbs.qna</td> 
   </tr>
   <tr>
    <td> 템플릿</td> 
@@ -50,7 +53,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
  </tbody>
 </table>
 
-* [클라이언트측 사용자 정의](client-customize.md)
+* [클라이언트측 사용자 지정](client-customize.md)
 
 ## Essentials for Server-Side {#essentials-for-server-side}
 
@@ -62,20 +65,20 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 ### QnA 기능 {#qna-function}
 
-QnA 함수를 [포함하는 커뮤니티 사이트 구조에는](functions.md#qna-function) `QnA` 구성 요소뿐만 아니라 중재 및 태그 지정에 영향을 주는 설정이 포함됩니다. QnA 함수는 [권한 있는 구성원 사용자 그룹](users.md#privileged-members-group)식별을 지원합니다.
+QnA 기능을 [포함하는 커뮤니티 사이트 구조에는 구성](functions.md#qna-function) `QnA` 구성 요소뿐만 아니라 중재 및 태그 지정에 영향을 주는 설정이 포함됩니다. QnA 함수는 [권한이 있는 구성원 사용자 그룹](users.md#privileged-members-group)식별을 지원합니다.
 
 ### UGC(포럼 게시물) 액세스 {#accessing-qna-forum-posts-ugc}
 
-UGC는 중재에 대한 표준 방법 중 하나를 사용하여 중재해야 합니다.\
+중재의 표준 방법 중 하나를 사용하여 UGC를 중재해야 합니다.\
 사용자 [생성 컨텐츠 중재를 참조하십시오](moderate-ugc.md).
 
-AEM 6.1 Communities의 경우, UGC용 [공용 스토어를](working-with-srp.md) 사용하면 선택한 스토리지 옵션(예: ASRP, MSRP 또는 JSRP)에 상관없이 프로그래머틱 방식으로 UGC에 액세스할 수 있습니다.
+AEM 6.1 Communities의 경우, UGC용 [공용 스토어](working-with-srp.md) 사용에는 선택한 스토리지 옵션(예: ASRP, MSRP 또는 JSRP)에 상관없이 UGC에 대한 프로그래밍 방식의 액세스가 포함됩니다.
 
-**저장소에서 UGC의 위치와 형식은 경고**&#x200B;없이 변경될 수 있습니다.
+**저장소의 UGC의 위치와 형식은 경고**&#x200B;없이 변경될 수 있습니다.
 
 다음을 참조하십시오.
 
-* [스토리지 자원 공급자 개요](srp.md) - 소개 및 저장소 사용 개요
+* [스토리지 리소스 공급자 개요](srp.md) - 소개 및 저장소 사용 개요
 * [SRP 및 UGC Essentials](srp-and-ugc.md) - SRP 유틸리티 방법 및 예제
 * [SRP를 사용하여 UGC](accessing-ugc-with-srp.md) 액세스 - 코딩 지침
 * [SocialUtils 리팩토링](socialutils.md) - 사용되지 않는 유틸리티 메서드를 현재 SRP 유틸리티 메서드에 매핑
