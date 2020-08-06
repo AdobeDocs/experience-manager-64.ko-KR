@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1672'
+ht-degree: 89%
 
 ---
 
@@ -33,7 +36,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 * **태그**
 
-   선택 상자의 목록을 업데이트하여 페이지에서 태그를 추가하거나 제거할 수 있습니다.
+   선택 상자의 목록을 업데이트하여 페이지에서 태그를 추가하거나 제거할 수 있습니다:
 
    * 태그를 선택하면 선택 상자 아래에 나열됩니다. 이 목록에서 x를 사용하여 태그를 제거할 수 있습니다.
    * 빈 선택 상자에 이름을 입력하여 완전히 새로운 태그를 입력할 수 있습니다.
@@ -42,7 +45,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
       * 그러면 새 태그가 표시되고 태그 오른쪽에는 새 태그임을 가리키는 작은 별이 표시됩니다.
    * 드롭다운 기능을 통해 기존 태그에서 선택할 수 있습니다.
    * 선택 상자에서 태그 항목을 마우스로 가리키면 x가 표시됩니다. 이를 통해 이 페이지에서 해당 태그를 제거할 수 있습니다.
-   태그에 대한 자세한 내용은 ](/help/sites-authoring/tags.md)태그 사용[을 참조하십시오.
+
+   태그에 대한 자세한 내용은 [태그 사용](/help/sites-authoring/tags.md)을 참조하십시오.
 
 * **탐색 시 숨김**
 
@@ -80,7 +84,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    이 페이지에 대한 별칭 URL을 입력할 수 있으므로 더 짧고 구체적인 URL을 사용할 수 있습니다.
 
-   예를 들어, 별칭 URL이 경로/웹 사이트에 `elcome`대해 식별된 `v1.0/startpage`페이지에 w로 설정된 경우, h는 h의 별칭 URL `ttp://example.com,` 이 `ttp://example.com/welcome`됩니다. `ttp://example.com/content/v1.0/startpage`
+   For example, if the Vanity URL is set to w `elcome`to the page identified by the path / `v1.0/startpage`for the website h `ttp://example.com,` then h `ttp://example.com/welcome`would be the vanity URL of h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -114,11 +118,11 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    >[!NOTE]
    >
-   > 별칭은 `sling:alias` 속성을 설정하여 리소스의 별칭 이름을 정의합니다. 이 이름은 경로가 아니라 리소스에만 영향을 줍니다.
+   > 별칭은 리소스의 별칭 이름을 정의하기 위해 `sling:alias` 속성을 설정합니다. 이 이름은 경로에는 영향을 주지 않고 리소스에만 영향을 줍니다.
    >
-   >예:노드 노드에 `latin-lang` 대한 별칭을 정의하는 경우, 이 `/content/we-retail/spanish` 페이지는 `/content/we-retail/latin-language`
+   >예를 들어 `/content/we-retail/spanish` 노드에 대해 `latin-lang`이라는 별칭을 정의하면, 이 페이지는 `/content/we-retail/latin-language`를 통해 액세스할 수 있습니다.
    >
-   >자세한 내용은 SEO [및 URL 관리 우수 사례 아래의 현지화된 페이지 이름을 참조하십시오.](/help/managing/seo-and-url-management.md#localized-page-names)
+   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names)
 
 * **허용된 템플릿**
 
@@ -145,7 +149,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    내보내기 구성을 지정합니다.
 
-### 축소판 {#thumbnail}
+### 썸네일 {#thumbnail}
 
 1. **페이지 썸네일**
 
@@ -167,7 +171,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    * **Facebook에 대한 사용자 공유 활성화**
    * **Pinterest에 대한 사용자 공유 활성화**
-   * **선호하는 XF 변형** 페이지에 대한 메타데이터를 생성하는 데 사용되는 경험 조각 변형을 정의
+   * **선호하는 XF 변형**
+페이지에 대한 메타데이터를 생성하는 데 사용되는 경험 조각 변형을 정의합니다.
 
 ### 클라우드 서비스 {#cloud-services}
 
@@ -179,7 +184,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 * **개인화**
 
-   [타깃팅할 범위를 지정하려면 [브랜드]](/help/sites-authoring/personalization.md)를 선택합니다.
+   [타깃팅할 범위를 지정하려면 브랜드](/help/sites-authoring/personalization.md)를 선택합니다.
 
 ### 권한 {#permissions}
 
@@ -190,6 +195,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * [권한 추가](/help/sites-administering/user-group-ac-admin.md)
    * [폐쇄된 사용자 그룹 편집](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
    * [유효 권한](/help/sites-administering/user-group-ac-admin.md) 보기
+
    >[!CAUTION]
    >
    >The **Permissions** tab allows editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. 더 이상 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성하는 경우 `cq:cugEnabled` 속성을 기반으로 경고 메시지가 표시되고 CGU 권한이나 [고급](/help/sites-authoring/editing-page-properties.md#advanced) 탭의 인증 요구 사항을 편집할 수 없습니다.
@@ -224,14 +230,14 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 * **사이트** 콘솔에서:
 
    * [새 페이지 만들기](/help/sites-authoring/managing-pages.md#creating-a-new-page)(속성 하위 집합)
-   * Clicking or tapping **Properties**
+   * **속성** 클릭 또는 탭
 
       * 단일 페이지의 경우
       * 여러 페이지의 경우(속성의 하위 집합만 편집 가능)
 
 * 페이지 편집기에서:
 
-   * Using **Page Information** (then **Open Properties**)
+   * **페이지 정보**&#x200B;를 사용하여 **속성 열기**
 
 ### 사이트 콘솔에서 - 단일 페이지 {#from-the-sites-console-single-page}
 
@@ -239,10 +245,11 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 1. **사이트** 콘솔에서 속성을 보고 편집할 페이지의 위치로 이동합니다.
 
-1. Select the **Properties** option for the required page using either:
+1. 다음 중 하나를 사용하여 필요한 페이지에 대한 **속성** 옵션을 선택합니다.
 
    * [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+
    페이지 속성이 해당 탭을 사용하여 표시됩니다.
 
 1. 필요에 따라 속성을 보거나 편집합니다.
@@ -312,8 +319,9 @@ After selecting the pages and then clicking or tapping the **Properties** option
       * 페이지 선택을 한 페이지로 제한하면 모든 속성이 보입니다.
    * 공통 값을 갖는 공통 속성
 
-      * 공통 값을 갖는 속성만 [보기] 모드에 표시됩니다.
+      * 공통 값을 갖는 속성만 보기 모드에 표시됩니다.
       * 필드가 다중 값이면(예: 태그) *모두* 공통된 경우에만 값이 표시됩니다. 일부만 공통된 경우에는 편집할 때만 표시됩니다.
+
    공통 값이 있는 속성이 없으면 메시지가 표시됩니다.
 
 * **편집**
@@ -324,7 +332,7 @@ After selecting the pages and then clicking or tapping the **Properties** option
 
       * **완료**&#x200B;를 선택하면 선택한 모든 페이지에 새 값이 적용됩니다.
       * 필드가 다중 값(예: 태그)이면 새 값을 추가하거나 공통 값을 제거할 수 있습니다.
-   * Fields that are common, but have different values across the various pages will be indicated with a special value such as the text `<Mixed Entries>`. 이러한 필드를 편집할 때는 데이터가 손실되지 않도록 주의해야 합니다.
+   * 공통되지만 여러 페이지에서 값이 다른 필드는 텍스트 `<Mixed Entries>`와 같은 특수한 값으로 표시됩니다. 이러한 필드를 편집할 때는 데이터가 손실되지 않도록 주의해야 합니다.
 
 
 >[!NOTE]
