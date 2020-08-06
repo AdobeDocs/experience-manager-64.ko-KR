@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b20e0f78-9ae4-47ba-8e9a-452a0a78b663
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 87%
 
 ---
 
@@ -29,7 +32,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
 
 ![chlimage_1-140](assets/chlimage_1-140.png)
 
-검색 패널을 사용하면 모든 웹 사이트 페이지를 검색할 수 있습니다.여기에는 다음에 대한 필드와 위젯이 포함되어 있습니다.
+검색 패널을 사용하면 모든 웹 사이트 페이지를 검색할 수 있습니다. 여기에는 다음에 대한 필드와 위젯이 포함되어 있습니다.
 
 * **전체 텍스트**: 지정된 텍스트 검색
 * **수정 이후/이전**: 특정 날짜 사이에 변경된 페이지만 검색
@@ -42,11 +45,13 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
 >
 >* [와일드카드](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches)
 >* [부울 연산자](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)
+
    >
    >
 * [정규 표현식](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
 >* [필드 그룹화](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping)
 >* [증폭](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
+
 >
 
 
@@ -75,6 +80,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
    * 바꿀 단어를 정의합니다.
    * 대/소문자를 구분하여 검색할지를 지정합니다.
    * 단어 단위로만 찾을지 아니면 부분 문자열도 찾을지를 지정합니다.
+
    Clicking **Preview** lists where the term has been found. You can select/clear specific instances to be replaced:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
