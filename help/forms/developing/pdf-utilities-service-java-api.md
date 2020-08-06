@@ -32,11 +32,11 @@ ht-degree: 0%
 
 [빠른 시작(SOAP 모드): PDF 문서 기밀 정보 가리기](pdf-utilities-service-java-api.md#quick-start-soap-mode-sanitizing-pdf-documents)
 
-AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM 양식을 사용한 프로그래밍에 있는 빠른 시작은 Forms Server 운영 체제를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM 양식을 사용한 프로그래밍에 있는 빠른 시작은 Forms 서버 운영 체제를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서를 XDP 문서로 변환 {#quick-start-soap-mode-converting-a-pdf-document-to-an-xdp-document-using-the-java-api}
 
@@ -241,7 +241,7 @@ AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 속성 검색 {#quick-start-soap-mode-retrieving-pdf-document-properties-using-the-java-api}
 
-다음 코드 예제에서는 문서가 PDF 문서인지 여부를 확인하고, PDF인 경우 문서를 읽을 수 있는 가장 빠른 Acrobat 버전입니다. (PDF [문서 속성 검색을 참조하십시오](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties).)
+다음 코드 예제에서는 문서가 PDF 문서인지 여부를 확인하고, 그렇다면 문서를 읽을 수 있는 가장 오래된 Acrobat 버전입니다. (PDF [문서 속성 검색을 참조하십시오](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties).)
 
 ```as3
  /* 
