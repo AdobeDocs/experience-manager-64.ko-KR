@@ -26,7 +26,7 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 1. 오픈 [소프트웨어 배포](https://experience.adobe.com/downloads). 소프트웨어 배포에 로그인하려면 Adobe ID이 필요합니다.
 1. 헤더 메뉴에서 **[!UICONTROL 사용 가능한 Adobe Experience Manager]** 를 누릅니다.
 1. 필터 **[!UICONTROL 섹션]** :
-   1. **[!UICONTROL 솔루션]** **** 드롭다운 목록에서 양식을선택합니다.
+   1. 솔루션 ******[!UICONTROL 드롭다운 목록에서]** Forms을선택합니다.
    2. 패키지의 버전과 유형을 선택합니다. 다운로드 **[!UICONTROL 검색]** 옵션을 사용하여 결과를 필터링할 수도 있습니다.
 1. 운영 체제에 해당하는 패키지 이름을 누르고 EULA 약관 **[!UICONTROL 승인을 선택한]**&#x200B;다음 **[!UICONTROL 다운로드를 누릅니다]**.
 1. [패키지 관리자](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
@@ -52,7 +52,7 @@ Windows 장치의 경우 다음을 수행해야 합니다.
 * Microsoft Visual Studio 2015
 * Microsoft Visual Studio Tools for Apache Cordova
 
-## AEM Forms 앱에 대한 Visual Studio 프로젝트 설정 {#setting-up-visual-studio-project-for-aem-forms-app}
+## AEM Forms 앱용 Visual Studio 프로젝트 설정 {#setting-up-visual-studio-project-for-aem-forms-app}
 
 Visual Studio에서 AEM Forms 앱 프로젝트를 설정하려면 다음 단계를 수행하십시오.
 
@@ -63,11 +63,11 @@ Visual Studio에서 AEM Forms 앱 프로젝트를 설정하려면 다음 단계�
 
 ## AEM Forms 앱 빌드 {#build-aem-forms-app}
 
-AEM Forms 앱을 빌드하고 배포하려면 다음 단계를 수행하십시오.
+다음 단계를 수행하여 AEM Forms 앱을 빌드하고 배포합니다.
 
 >[!NOTE]
 >
->AEM Forms 앱에 대해 Windows 파일 시스템에 저장된 데이터가 암호화되지 않습니다. Windows BitLocker 드라이브 암호화와 같은 타사 도구를 사용하여 디스크 데이터를 암호화하는 것이 좋습니다.
+>AEM Forms 앱용 Windows 파일 시스템에 저장된 데이터가 암호화되지 않습니다. Windows BitLocker 드라이브 암호화와 같은 타사 도구를 사용하여 디스크 데이터를 암호화하는 것이 좋습니다.
 
 1. Visual Studio 표준 도구 모음의 **빌드** 모드에 대한 드롭다운에서 릴리스를 선택합니다.
 
@@ -166,6 +166,6 @@ Visual Studio를 사용하여 Windows에 앱을 설치하려면:
 
    자세한 내용은 원격 컴퓨터에서 [Windows Store 앱 실행을 참조하십시오](https://docs.microsoft.com/en-us/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine).
 
-1. 앱이 Visual Studio에서 열려 있는 경우 솔루션 Platform 목록에서 Windows-x64, Windows-x86 또는 Windows-AnyCPU를 선택하고 **원격 컴퓨터를 선택합니다**.
+1. 앱이 Visual Studio에서 열려 있는 경우 솔루션 플랫폼 목록에서 Windows-x64, Windows-x86 또는 Windows-AnyCPU를 선택하고 **원격 컴퓨터를 선택합니다**.
 1. 앱이 원격 컴퓨터에 배포됩니다.
 
