@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1445437e-7f22-49ad-9bde-f3c0ff7d5142
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1218'
+ht-degree: 92%
 
 ---
 
@@ -46,7 +49,7 @@ MCM에서 다음에 액세스할 수 있습니다.
       특정 세그먼트를 선택하면 세그먼트 정의 페이지가 열립니다.
 
    * [보고서](/help/sites-administering/reporting.md)\
-      AEM 파섹 이 MCM 창에는 보고서가 표시됩니다.
+      AEM에서는 인스턴스의 상태를 분석하고 모니터링하는 데 도움이 되는 다양한 보고서를 제공합니다. 이 MCM 창에는 보고서가 표시됩니다.
 
       보고서를 선택하면 보고서 페이지가 열립니다.
 
@@ -183,7 +186,7 @@ AEM MCM에서는 리드를 수동으로 입력하거나 메일링 목록과 같�
 
    여기에서 다음 작업을 수행할 수 있습니다.
 
-   * **새로**&#x200B;만들기...경험예를 들어 Adobe Target에서 제공하는 서비스, 티저 및 뉴스레터를 사용할 수 있습니다.
+   * Create a **New...** experience; for example, Adobe Target offers, teasers and newsletters.
    * 특정 티저 페이지 또는 뉴스레터의 세부 정보를 **편집**&#x200B;합니다(두 번 클릭을 사용할 수도 있음).
    * 특정 티저 페이지 또는 뉴스레터에 대한 **속성...**&#x200B;을 정의합니다.
    * 경험(Teaser 페이지 또는 Newsletter)의 모양과 분위기를 **시뮬레이션**&#x200B;합니다.
@@ -207,5 +210,5 @@ MCM에서 **캠페인**&#x200B;을 클릭합니다. 목록 보기가 활성화�
 
 MCM에서 **캠페인**&#x200B;을 클릭합니다. 목록 보기가 활성화되었는지 확인하고 필요한 캠페인 경험을 선택한 후 **분석...**&#x200B;을 선택합니다. 시간에 따른 페이지 노출 차트가 표시됩니다.
 
-![mcm_campaignanalyze](assets/mcm_campaignanalyze.png)
+![mcm_campaign 분석](assets/mcm_campaignanalyze.png)
 
