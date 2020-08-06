@@ -1,8 +1,8 @@
 ---
 title: Autodesk Maya 및 Mental Ray로 IBL 스테이지 설정
 seo-title: Autodesk Maya 및 Mental Ray로 IBL 스테이지 설정
-description: Autodesk Maya 및 Mental Ray를 사용하여 IBL 스테이지를 설정하는 방법
-seo-description: Autodesk Maya 및 Mental Ray를 사용하여 IBL 스테이지를 설정하는 방법
+description: Autodesk Maya 및 Mental Ray로 IBL 스테이지를 설정하는 방법
+seo-description: Autodesk Maya 및 Mental Ray로 IBL 스테이지를 설정하는 방법
 uuid: 353ff561-0d30-4d62-8cad-68890c883c92
 contentOwner: Rick Brough
 topic-tags: 3D
@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 752e521f-198f-425a-abfa-051993f9c694
 translation-type: tm+mt
 source-git-commit: 4b05b24a91ba9c31a19a5a96fb481d2ffc4c9bfc
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 75%
 
 ---
 
@@ -55,7 +58,7 @@ source-git-commit: 4b05b24a91ba9c31a19a5a96fb481d2ffc4c9bfc
    * **[!UICONTROL Quality(품질) 탭]**
 
       * **Overall quality**(전체 품질) - `0.5` 이하
-      * **GI(간접 확산) 모드** - `Final Gather`
+      * **간접 확산(GI) 모드** - `Final Gather`
       * ``**Filter Size** - `2.0`, `2.0`
    * 사용할 장면을 일반 이미지 크기로 렌더링합니다. 필요할 경우 광원, Render(렌더링) 설정 또는 두 가지 모두를 미세 조정하여 원하는 결과를 얻도록 합니다.
 
@@ -76,7 +79,7 @@ source-git-commit: 4b05b24a91ba9c31a19a5a96fb481d2ffc4c9bfc
 
    AEM 3D가 스테이지에 구성된 IBL 이미지를 감지하지 못할 수 있습니다. 이러한 경우 감지하지 못한 종속성을 수동으로 해결해야 합니다. 감지하지 못한 각 종속성에 대해 이전에 업로드한 동일한 IBL PTIFF 이미지를 지정할 수 있습니다. 또는 다른 이미지를 지정하여 IBL 효과를 추가로 제어할 수 있습니다. 종속성을 해결한 후 반드시 **[!UICONTROL 저장]**&#x200B;을 탭하여 재처리를 시작해야 합니다.
 
-1. AEM에서 [자산 속성]을 엽니다. Set **[!UICONTROL Title]** to a suitable string that will appear in the **[!UICONTROL Stage Selector]** drop-down list. **[!UICONTROL 클래스]**&#x200B;가 **[!UICONTROL 3D 스테이지]**&#x200B;로 설정되어 있는지 확인합니다. 저장하고 종료하십시오.
+1. AEM에서 [자산 속성]을 엽니다. **[!UICONTROL 제목]** 을 **[!UICONTROL 스테이지 선택기]** 드롭다운 목록에 표시할 적절한 문자열로 설정합니다. **[!UICONTROL 클래스]**&#x200B;가 **[!UICONTROL 3D 스테이지]**&#x200B;로 설정되어 있는지 확인합니다. 저장하고 종료하십시오.
 
 1. 3D 자산을 열고 새 스테이지를 선택한 다음, 미리 보기에 예상대로 표시되고 렌더링되는지 확인합니다.
 
