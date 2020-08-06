@@ -1,8 +1,8 @@
 ---
 title: 경로 작업에 사용되는 이미지 사용자 정의
 seo-title: 경로 작업에 사용되는 이미지 사용자 정의
-description: LiveCycle AEM Forms 작업 영역의 라우트 작업에 사용되는 이미지를 사용자 지정하는 방법.
-seo-description: LiveCycle AEM Forms 작업 영역의 라우트 작업에 사용되는 이미지를 사용자 지정하는 방법.
+description: LiveCycle AEM Forms 작업 영역의 경로 작업에 사용되는 이미지를 사용자 지정하는 방법
+seo-description: LiveCycle AEM Forms 작업 영역의 경로 작업에 사용되는 이미지를 사용자 지정하는 방법
 uuid: 42608376-587e-4b57-a9d5-8f9ebd981426
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## 작업 목록 작업 팝업 {#task-list-task-action-popup}
 
-1. 작업 목록 작업 팝업을 만듭니다. AEM Forms 작업 [공간 코드 작성을 참조하십시오](introduction-customizing-html-workspace.md#building-html-workspace-code). 개발 패키지를 사용해야 합니다.
+1. 작업 목록 작업 팝업을 만듭니다. AEM Forms 작업 공간 코드 [작성을 참조하십시오](introduction-customizing-html-workspace.md#building-html-workspace-code). 개발 패키지를 사용해야 합니다.
 
 1. 복사 `/libs/ws/js/runtime/templates/task.html` 를 `/apps/ws/js/runtime/templates/task.html`참조하십시오.
 
