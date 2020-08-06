@@ -11,6 +11,9 @@ topic-tags: page-authoring
 discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
 translation-type: tm+mt
 source-git-commit: ee9b977515b6c1233ff87f011f7a8b4095450814
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 93%
 
 ---
 
@@ -21,9 +24,9 @@ source-git-commit: ee9b977515b6c1233ff87f011f7a8b4095450814
 
 다루는 내용:
 
-* [Getting Started](#getting-started): Detailing the basic sequence of events you need for creating and publishing your first page.
+* [시작하기](#getting-started): 첫 번째 페이지를 만들고 게시하는 데 필요한 기본 이벤트 순서에 대해 자세히 설명합니다.
 
-* [Further Actions](#further-actions): Following on with the many other actions you can use when authoring.
+* [추가 작업](#further-actions): 작성 시 사용할 수 있는 다른 많은 작업을 계속 수행합니다.
 
 ## 시작하기 {#getting-started}
 
