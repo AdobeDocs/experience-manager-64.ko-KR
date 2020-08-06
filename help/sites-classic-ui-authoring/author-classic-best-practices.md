@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
 translation-type: tm+mt
 source-git-commit: ef7e013fc36bc06025b0cdedf9038c33206e4a1a
+workflow-type: tm+mt
+source-wordcount: '309'
+ht-degree: 82%
 
 ---
 
@@ -66,10 +69,10 @@ Dynamic Media 기능 및 Scene 7 통합을 포함한 자산에 대한 우수 사
 
 웹 사이트 컨텐츠 관리 및 작성에는 다음과 같은 몇 가지 우수 사례가 요약되어 있습니다.
 
-작성:작성 [환경 및 도구](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - 페이지 작성 방법에 대한 개요를 제공합니다.
+작성: [작성 환경 및 도구](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - 페이지를 작성하는 방법에 대한 개요를 제공합니다.
 
 ## 양식 {#forms}
 
-적응형 양식:적응형 양식 [작업을 위한](/help/forms/using/adaptive-forms-best-practices.md) 우수 사례 - 적응형 양식 설정, 작성 및 사용자 지정에 대한 우수 사례를 설명합니다.
+적응형 양식: [적응형 양식](/help/forms/using/adaptive-forms-best-practices.md) 작업 우수 사례 - 적응형 양식을 설정, 작성 및 사용자 지정하기 위한 우수 사례를 설명합니다.
 
 HTML5 forms: [Best practices for designing HTML5 forms](/help/forms/using/best-practices-for-html5-forms.md) - Describes best practices for working on layout and design of HTML5 forms.
