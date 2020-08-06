@@ -26,7 +26,7 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 1. 오픈 [소프트웨어 배포](https://experience.adobe.com/downloads). 소프트웨어 배포에 로그인하려면 Adobe ID이 필요합니다.
 1. 헤더 메뉴에서 **[!UICONTROL 사용 가능한 Adobe Experience Manager]** 를 누릅니다.
 1. 필터 **[!UICONTROL 섹션]** :
-   1. **[!UICONTROL 솔루션]** **** 드롭다운 목록에서 양식을선택합니다.
+   1. 솔루션 ******[!UICONTROL 드롭다운 목록에서]** Forms을선택합니다.
    2. 패키지의 버전과 유형을 선택합니다. 다운로드 **[!UICONTROL 검색]** 옵션을 사용하여 결과를 필터링할 수도 있습니다.
 1. 운영 체제에 해당하는 패키지 이름을 누르고 EULA 약관 **[!UICONTROL 승인을 선택한]**&#x200B;다음 **[!UICONTROL 다운로드를 누릅니다]**.
 1. [패키지 관리자](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
@@ -79,10 +79,10 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 1. 디렉토리에서 보관 파일을 `[*User_Home*]/Projects/[your-project]`추출합니다.
 1. 프로젝트 ` [*User_Home*]/Projects/ `[디렉터리로]`/adobe-lc-mobileworkspace-src-[version]/ios` 이동합니다.
 1. Xcode에서 `AEM Forms.xcodeproj` 프로젝트를 엽니다.
-1. AEM Forms을 **클릭하고** TARGET **아래에서** AEM Forms을 선택합니다 ****. [ **빌드 설정** ] 탭을 선택하고 **코드 서명 권한 부여** 섹션을 찾은 다음 [디버그 및 릴리스] 필드에서 다음 중 하나를 수행합니다.
+1. AEM Forms **를**&#x200B;클릭하고 **TARGET**&#x200B;아래에서 **AEM Forms을 선택합니다**. [ **빌드 설정** ] 탭을 선택하고 **코드 서명 권한 부여** 섹션을 찾은 다음 [디버그 및 릴리스] 필드에서 다음 중 하나를 수행합니다.
 
    * 표준 모바일 작업 공간 앱을 빌드하려면 필드를 지정하지 않은 상태로 두십시오
-   * 보안 AEM Forms 앱을 빌드하기 [위해 iOS용 보안 AEM Forms 앱](/help/forms/using/building-secure-mobile-workspace-app.md) 빌드에 설명된 대로 필드를 지정합니다.
+   * 보안 AEM Forms 앱을 빌드하기 위해 iOS용 [보안 AEM Forms 앱](/help/forms/using/building-secure-mobile-workspace-app.md) 빌드에 설명된 대로 필드를 지정합니다.
 
 1. [ **빌드 설정** ] 탭에서 **모두** 를 **클릭한**&#x200B;다음 [결합]을클릭합니다.
 1. 설정 **목록에서 코드 서명** 을 **확장합니다**.
@@ -128,9 +128,9 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
    >
    >이 단계는 AEM Forms 앱이 앱 전송 보안 요구 사항을 따르지 않는 서버에 연결해야 하는 경우에만 필요합니다.
 
-1. PROJECT에서 **AEM Forms**&#x200B;을 **선택하고** Identity **Identity**, DebugCode, ******** **** ReleaseAndAny iOS SDKAny iOS SDKSigning에 적절한 서명이 선택되었는지 확인합니다.
+1. PROJECT **에서****AEM Forms** 를 선택하고 **Identity**&#x200B;코드, DebugCode, ReleaseSigningAlingAdobe Sign에 적합한 서명을 선택했는지 **확인합니다. Signing IdentityDebugCode,****** **** ReleaseAndAny iOS SDK
 1. 제공된 iPad를 Mac 컴퓨터에 연결합니다.
-1. AEM Forms 프로젝트에 대해 제공된 장치를 **선택합니다** .
+1. **AEM Forms 프로젝트에 대해 제공된 장치를** 선택합니다.
 
    ![ipad](assets/ipad.png)
 
@@ -139,12 +139,12 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 1. [ **제품** ] > [ **지우기]를 선택합니다**.
 1. 제품 **** > **빌드를 선택합니다**.
 
-## AEM Forms 앱용 설치 프로그램 빌드 {#build-the-installer-for-the-mobile-workspace-app}
+## AEM Forms 앱용 설치 프로그램 제작 {#build-the-installer-for-the-mobile-workspace-app}
 
 설치 프로그램(.ipa 파일)과 속성 목록(.plist 파일) 파일을 빌드하려면 Xcode 프로젝트를 보관해야 합니다. 속성 목록 파일에는 앱의 이름 및 호스팅 위치와 같은 호스팅된 사내 앱의 구성 정보가 포함되어 있습니다. 속성 목록 파일에 대한 자세한 내용은 정보 속성 목록 파일 [정보를 참조하십시오](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html).
 
 1. 제공된 iPad를 Mac 컴퓨터에 연결합니다. iPad 제공 방법에 대한 자세한 내용은 개발 프로비저닝 프로필 [만들기 및 다운로드를 참조하십시오](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html)
-1. AEM Forms 프로젝트에 대해 제공된 장치를 **선택합니다** .
+1. **AEM Forms 프로젝트에 대해 제공된 장치를** 선택합니다.
 
    ![ipad-1](assets/ipad-1.png)
 
