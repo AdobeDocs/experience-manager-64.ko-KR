@@ -26,7 +26,7 @@ ht-degree: 7%
 
 ## 자습서 정보  {#about-the-tutorial}
 
-테마를 사용하여 적응형 양식에 고유한 모양과 스타일을 제공할 수 있습니다. 적응형 양식 편집기와 함께 제공되는 테마를 즉시 적용하거나 자신만의 테마를 만들 수 있습니다. AEM Forms에서는 사용자 정의 테마를 만들 [테마 편집기를](themes.md) 제공합니다. 단일 테마는 모바일, 태블릿 또는 데스크탑에서 연 동일한 적응형 양식에 서로 다른 모양을 제공할 수 있습니다. CSS 또는 LESS에 대한 모든 사전 지식이 테마 편집기를 사용할 필요는 없지만 원하는 경우
+테마를 사용하여 적응형 양식에 고유한 모양과 스타일을 제공할 수 있습니다. 적응형 양식 편집기와 함께 제공되는 테마를 즉시 적용하거나 자신만의 테마를 만들 수 있습니다. AEM Forms은 사용자 정의 테마를 만드는 [테마 편집기를](themes.md) 제공합니다. 단일 테마는 모바일, 태블릿 또는 데스크탑에서 연 동일한 적응형 양식에 서로 다른 모양을 제공할 수 있습니다. CSS 또는 LESS에 대한 모든 사전 지식이 테마 편집기를 사용할 필요는 없지만 원하는 경우
 
 튜토리얼이 끝나면 다음 방법을 학습합니다.
 
@@ -79,6 +79,7 @@ ht-degree: 7%
    1. 헤더 구성 요소에서 로고 이미지를 누르고 ![cmppr 속성을](assets/cmppr.png) 누릅니다. 이미지 속성에서 X를 눌러 기존 로고 이미지를 제거합니다.
    1. 업로드를 누르고 logo.png를 선택한 다음 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 를 눌러 변경 사항을 저장합니다. 이미지가 시작하기 [전에](/help/forms/using/style-your-adaptive-form.md#before-you-start) 다운로드되었습니다.
    1. 머리글 텍스트를 누르고 `We.Retail`aem_6_3_edit ![을](assets/aem_6_3_edit.png) 누릅니다 ****. 머리글 텍스트를 (으)로 `we retail`변경합니다. 굵은체 서식 `we`을 내에만 적용합니다 `we retail`.
+
    ![we-retail-logo-text](assets/we-retail-logo-text.png)
 
 1. 제목 제거 및 자리 표시자 텍스트 추가:
@@ -87,6 +88,7 @@ ht-degree: 7%
    1. 제목 필드 **의** 내용을 자리 표시자 텍스트 **필드에** 복사합니다.
    1. 제목 **필드** 내용을 삭제하고 ![aem_6_3_forms_save를](assets/aem_6_3_forms_save.png)누릅니다.
    1. 양식의 모든 텍스트 상자, 숫자 상자 및 이메일 필드에 대해 이전 3단계를 반복합니다.
+
    ![updated-adaptive-form](assets/updated-adaptive-form.png)
 
 ## 3단계: 적응형 양식의 사용자 정의 테마 만들기 {#step-create-a-custom-theme-for-your-adaptive-form}
@@ -99,13 +101,13 @@ ht-degree: 7%
 
 ### 테마 만들기 {#create-a-theme}
 
-1. AEM 작성자 인스턴스에 로그인하고 **Adobe Experience Manager** > **양식** > 테마로 **이동합니다**. 기본 URL은 http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes [입니다](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
+1. AEM 작성자 인스턴스에 로그인하고 **Adobe Experience Manager** > **Forms** > 테마를 **탐색합니다**. 기본 URL은 http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes [입니다](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
 1. 만들기 **[!UICONTROL 를]** 누르고 **[!UICONTROL 테마를 선택합니다]**. 테마를 만드는 데 필요한 필드가 있는 테마 만들기 페이지가 나타납니다. 제목 및 이름 필드는 필수입니다.
 
    * **제목:** 테마 제목을 지정합니다. 예: **전역 테마.** 제목은 테마 목록에서 테마를 식별하는 데 도움이 됩니다.
    * **이름:** 테마 이름을 지정합니다. 예: **전역 테마.** 지정한 이름의 노드가 저장소에 생성됩니다. 제목을 입력하기 시작하면 이름 필드에 대한 값이 자동으로 생성됩니다. 제안된 값을 변경할 수 있습니다. 이름 필드에는 영숫자, 하이픈 및 밑줄만 포함할 수 있습니다. 잘못된 입력은 모두 하이픈으로 대체됩니다.
 
-1. 만들기를 **누릅니다**. 테마가 만들어지고 편집할 양식을 여는 대화 상자가 나타납니다. 열기 **를** 눌러 새로 만든 테마를 새 탭에서 엽니다. 테마가 테마 편집기에서 열립니다. 스타일링을 위해 테마 편집기는 AEM Forms와 함께 제공된 즉시 사용 가능한 적응형 양식을 사용합니다.
+1. 만들기를 **누릅니다**. 테마가 만들어지고 편집할 양식을 여는 대화 상자가 나타납니다. 열기 **를** 눌러 새로 만든 테마를 새 탭에서 엽니다. 테마가 테마 편집기에서 열립니다. 스타일링을 위해 테마 편집기는 AEM Forms과 함께 제공된 즉시 사용 가능한 적응형 양식을 사용합니다.
 
    테마 편집기 UI 사용에 대한 자세한 내용은 테마 편집기 [정보를 참조하십시오](/help/forms/using/themes.md#aboutthethemeeditor).
 
@@ -133,7 +135,7 @@ ht-degree: 7%
    | 글꼴 색상 | FFFFFF |
    | 글꼴 크기 | 54px |
 
-1. 헤더 위젯을 누르고 **헤더를 누릅니다**. 머리글 위젯의 스타일을 지정하는 옵션이 왼쪽에 표시됩니다. [ **차원 및 위치** ] 아코디언 **을 확장하고** [ `120px`높이 ![]를 설정한 다음](assets/aem_6_3_forms_save.png)aem_6_3_forms_save를 누릅니다.
+1. 헤더 위젯을 누르고 **헤더를 누릅니다**. 머리글 위젯의 스타일을 지정하는 옵션이 왼쪽에 표시됩니다. Dimension 및 **위치** 아코디언을 확장하고 **높이를** 다음으로 `120px`설정한 다음 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png)를 누릅니다.
 1. 헤더 위젯의 배경 아코디언을 확장하고 **배경색을** `F6921E.`
 
    이미지 **및 그라디언트** > **+ 추가**, **이미지**&#x200B;를 누릅니다. 다음 속성을 설정하고 ![aem_6_3_forms_save를 누릅니다](assets/aem_6_3_forms_save.png).
@@ -144,7 +146,7 @@ ht-degree: 7%
    | 위치 | 오른쪽 단추 |
    | 바둑판식으로 배열 | 반복 안 함 |
 
-1. 테마 편집기에서 헤더의 로고를 누르고 머리글 **로고를 누릅니다**. 차원 및 위치 아코디언을 확장하고 다음 속성을 설정한 다음 ![aem_6_3_forms_save를 누릅니다](assets/aem_6_3_forms_save.png).
+1. 테마 편집기에서 헤더의 로고를 누르고 머리글 **로고를 누릅니다**. Dimension 및 위치 아코디언을 확장하고 다음 속성을 설정한 다음 ![aem_6_3_forms_save를 누릅니다](assets/aem_6_3_forms_save.png).
 
 <table> 
  <tbody> 
@@ -215,12 +217,12 @@ ht-degree: 7%
    <td>18px</td> 
   </tr> 
   <tr> 
-   <td>차원 및 위치</td> 
+   <td>Dimension 및 위치</td> 
    <td>너비</td> 
    <td>60%</td> 
   </tr> 
   <tr> 
-   <td>차원 및 위치</td> 
+   <td>Dimension 및 위치</td> 
    <td>여백</td> 
    <td> 
     <ul> 
@@ -299,7 +301,7 @@ ht-degree: 7%
 
    ![style-option](assets/style-option.png)
 
-1. 첨부 **단추를** 누르고 ![aem_6_3_](assets/aem_6_3_edit.png)에디티콘을 누릅니다. [차원] 및 [위치] **아코디언에서 다음 속성을** 설정합니다.
+1. 첨부 **단추를** 누르고 ![aem_6_3_](assets/aem_6_3_edit.png)에디티콘을 누릅니다. Dimension 및 위치 **아코디언에서 다음 속성을** 설정합니다.
 
    | 속성 | 값 |
    |---|---|
@@ -405,12 +407,12 @@ ht-degree: 7%
    <td>값</td> 
   </tr> 
   <tr> 
-   <td>차원 및 위치</td> 
+   <td>Dimension 및 위치</td> 
    <td>부동</td> 
    <td>오른쪽</td> 
   </tr> 
   <tr> 
-   <td>차원 및 위치</td> 
+   <td>Dimension 및 위치</td> 
    <td>여백</td> 
    <td> 
     <ul> 
@@ -439,14 +441,14 @@ ht-degree: 7%
 
 다양한 글꼴을 사용하여 적응형 양식을 디자인할 수 있습니다. 응용 양식이 표시되는 모든 장치에는 응용 양식을 디자인하는 데 사용되는 글꼴이 없을 수 있습니다. 웹 글꼴 서비스를 사용하여 필요한 글꼴을 대상 장치에 제공할 수 있습니다.
 
-Adobe Typekit은 웹 글꼴 서비스입니다. 적응형 양식과 함께 서비스를 구성하고 사용할 수 있습니다. 적응형 양식으로 Adobe Typekit을 사용하려면:
+Adobe Typekit은 웹 글꼴 서비스입니다. 적응형 양식과 함께 서비스를 구성하고 사용할 수 있습니다. 적응형 양식으로 Adobe Typekit을 사용하려면
 
 >[!NOTE]
 >
->![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) Typekit는 이제 Adobe 글꼴이라고 불리며 Creative Cloud 및 기타 구독에 포함되어 있습니다. [추가 정보](https://fonts.adobe.com/).
+>![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) Typekit는 이제 Adobe Fonts라고 불리며 Creative Cloud 및 기타 구독에 포함되어 있습니다. [추가 정보](https://fonts.adobe.com/).
 
-1. Adobe [Typekit](https://typekit.com/) 계정을 만들고, 키트를 만들고, 키트에 글꼴 Myriad Pro를 추가하고, 키트를 게시하고 키트 ID를 얻습니다. 적응형 양식으로 Adobe Typekit 글꼴(웹 글꼴)을 사용해야 합니다.
-1. AEM Forms 서버에서 ![adobe Experience Manager](assets/adobeexperiencemanager.png) > **Adobe 도구** > **망치 도구** 를 ![탐색하고](assets/hammer.png) **** ****&#x200B;는 /DeploymentDeploymentFacebook > Cloud Services로 이동합니다. 클라우드 서비스 페이지에서 **타사 서비스** > **Typekit**&#x200B;으로 이동하고 Typekit **에서 지금** 구성을클릭합니다. 구성을 이미 사용할 수 있는 경우 + 단추를 클릭하여 새 인스턴스를 만듭니다.
+1. 키트에 글꼴 Myriad Pro를 추가하고 키트를 게시한 후 [Adobe Typekit](https://typekit.com/) 계정을 만들고 키트를 만듭니다. 적응형 양식으로 Adobe Typekit 글꼴(웹 글꼴)을 사용해야 합니다.
+1. AEM Forms 서버에서 ![adobeexperiencemanagerAdobe Experience Manager](assets/adobeexperiencemanager.png) > **도구** > **도구** 로 이동합니다. ![](assets/hammer.png) **** **** himmerhimager > DeploymentDeploymentCloud Services으로 이동합니다. Cloud Services 페이지에서 **타사 서비스** > **Typekit**&#x200B;으로 이동하고 Typekit **에서 지금** 구성을클릭합니다. 구성을 이미 사용할 수 있는 경우 + 단추를 클릭하여 새 인스턴스를 만듭니다.
 
    구성 만들기 대화 상자에서 구성에 **제목을** 지정하고 만들기를 **클릭합니다**. 구성 페이지로 리디렉션됩니다. 나타나는 구성 요소 편집 대화 상자에서 **키트 ID를** 제공하고 **확인을 클릭합니다**.
 
