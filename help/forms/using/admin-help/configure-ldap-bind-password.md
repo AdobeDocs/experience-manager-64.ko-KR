@@ -11,17 +11,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 165b3950-b03f-4848-8361-ffb0a26d2658
 translation-type: tm+mt
 source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 0%
 
 ---
 
 
 # LDAP 바인딩 암호 구성{#configure-the-ldap-bind-password}
 
-보안 위험을 방지하기 위해 내보낸 구성 파일(config.xml)의 바인딩 암호 필드가 구성되지 않았습니다. 구성 파일을 다른 시스템으로 가져오기 전에 이 암호를 구성해야 합니다. 이 비밀번호는 데이터베이스에 저장된 기존 비밀번호를 무시합니다. Null 암호는 null이 아닌 기존 암호 값을 무시하지 않습니다.
+보안 위험을 방지하기 위해 내보낸 구성 파일(config.xml)의 바인딩 암호 필드가 구성되지 않았습니다. 구성 파일을 다른 시스템으로 가져오기 전에 이 암호를 구성해야 합니다. 이 비밀번호는 데이터베이스에 저장된 기존 비밀번호를 무시합니다. null 암호는 null이 아닌 기존 암호 값을 덮어쓰지 않습니다.
 
 1. 관리 콘솔에서 설정 > 사용자 관리 > 구성 > 구성 파일 가져오기 및 내보내기를 클릭합니다.
 1. 현재 구성 설정을 파일로 내보내려면 내보내기를 클릭하고 구성 파일을 다른 위치에 저장합니다.
-1. 파일에서 `Domains` > 도메인 *[이름]* > `DirectoryConfigs` > `LDAPGroupConfig` 노드를 찾습니다. 다음은 예입니다.
+1. 파일에서 `Domains` > 도메인 이름 *[> >]* > `DirectoryConfigs` 노드를 `LDAPGroupConfig` 찾습니다. 다음은 한 예입니다.
 
    ```as3
     <node name="LDAPGroupConfig"> 
@@ -36,7 +39,7 @@ source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
 
    값을 `bindpassword` 입력하고 변경 내용을 저장합니다.
 
-1. 파일에서 `Domains` > 도메인 *[이름]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` 노드를 찾습니다. 다음은 예입니다.
+1. 파일에서 > `Domains` > *[도메인 이름]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` 노드를 찾습니다. 다음은 한 예입니다.
 
    ```as3
     <node name="LDAPUserConfig"> 
