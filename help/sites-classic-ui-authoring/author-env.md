@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8c747892-c5ba-4288-b5e7-75fd40d92f5c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 82%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 * [작성](/help/sites-authoring/author.md) ( [페이지 작성](/help/sites-authoring/qg-page-authoring.md) 및 자산 [관리 포함](/help/assets/assets.md))
 
-* [웹](/help/sites-administering/administer-best-practices.md) 사이트에서 컨텐츠를 생성하고 유지 관리할 때 필요한 작업 관리
+* [웹 사이트에서 컨텐츠를 생성하고 유지 관리할 때 필요한 작업 관리](/help/sites-administering/administer-best-practices.md)
 
 이를 달성하기 위해 두 가지 그래픽 사용자 인터페이스가 제공되며, 이 인터페이스는 최신 브라우저를 통해 액세스할 수 있습니다.
 
@@ -36,6 +39,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * 데스크톱 장치에서 사용하도록 설계되었습니다.
    * 더 이상 유지 관리되지 않습니다.
    * 다음 문서는 이 클래식 UI에 중점을 둡니다. 최근 터치 기반 UI에서 작성하는 방법에 대한 자세한 내용은 [표준 작성 설명서](/help/sites-authoring/author.md)를 참조하십시오.
+
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
 1. 터치 활성화 UI
@@ -46,8 +50,10 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * See the [standard Authoring documentation](/help/sites-authoring/author.md) for further details on how to author using the touch-based UI. 다음 문서는 클래식 UI에 중점을 둡니다.
 
    * 데스크톱:
+
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
    * 태블릿 장치(또는 폭이 1024픽셀 미만인 데스크톱):
+
    ![chlimage_1-7](assets/chlimage_1-7.jpeg)
 
