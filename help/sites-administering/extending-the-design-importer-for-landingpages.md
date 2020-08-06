@@ -1,8 +1,8 @@
 ---
 title: 랜딩 페이지용 디자인 가져오기 확장 및 구성
 seo-title: 랜딩 페이지용 디자인 가져오기 확장 및 구성
-description: 랜딩 페이지용 디자인 가져오기 도구를 구성하는 방법을 알아봅니다.
-seo-description: 랜딩 페이지용 디자인 가져오기 도구를 구성하는 방법을 알아봅니다.
+description: 랜딩 페이지용 디자인 가져오기를 구성하는 방법에 대해 알아봅니다.
+seo-description: 랜딩 페이지용 디자인 가져오기를 구성하는 방법에 대해 알아봅니다.
 uuid: b2bfe831-bfaf-43f3-babc-687bf229dd44
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f8991416-995b-4160-a705-d131e78089ee
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '3509'
+ht-degree: 62%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
 
 1. TagHandler 만들기
 
-   * 태그 처리기는 특정 종류의 HTML 태그를 처리하는 POJO입니다. TagHandler가 처리할 수 있는 HTML 태그의 “종류”는 TagHandlerFactory의 OSGi 속성 “tagpattern.name”을 통해 정의됩니다. 이 OSGi 속성은 근본적으로 처리할 입력 html 태그와 일치해야 하는 regex입니다. 중첩된 모든 태그가 처리를 위해 태그 처리기에 반환됩니다. 예를 들어 중첩된 &lt;p> 태그가 포함된 div에 등록하는 경우, &lt;p> 태그도 TagHandler에 반환되고 이 태그를 처리하는 방법은 사용자가 결정합니다.
+   * 태그 처리기는 특정 종류의 HTML 태그를 처리하는 POJO입니다. TagHandler가 처리할 수 있는 HTML 태그의 “종류”는 TagHandlerFactory의 OSGi 속성 “tagpattern.name”을 통해 정의됩니다. 이 OSGi 속성은 근본적으로 처리할 입력 html 태그와 일치해야 하는 regex입니다. 중첩된 모든 태그가 처리를 위해 태그 처리기에 반환됩니다. 예를 들어, 중첩된 &lt;p> 태그가 포함된 div에 등록하는 경우, &lt;p> 태그도 TagHandler에 반환되고 이 태그를 처리하는 방법은 사용자에게 달려 있습니다.
    * 태그 처리기 인터페이스는 SAX 컨텐트 처리기 인터페이스와 유사합니다. 이 인터페이스는 각 html 태그에 대해 SAX 이벤트를 받습니다. 태그 처리기 공급자의 경우, 디자인 가져오기 프레임워크에 의해 자동으로 호출되는 특정 라이프사이클 방식을 구현해야 합니다.
 
 1. 해당 TagHandlerFactory를 만듭니다.
@@ -35,7 +38,7 @@ source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
    * 입력 html 태그와 일치하는 태그 처리기가 여러 개 있는 경우 등급이 높은 처리기가 선택됩니다. The ranking itself is exposed as an OSGi property **service.ranking**.
    * TagHandlerFactory는 OSGi 구성 요소입니다. TagHandler에 제공할 모든 참조는 이 팩터리를 통해야 합니다.
 
-1. 기본값을 무시하려면 TagHandlerFactory의 등급이 높은지 확인하십시오.
+1. 기본값을 무시하려면 TagHandlerFactory의 등급이 더 높은지 확인하십시오.
 
 ## 가져오기용 HTML 준비 {#preparing-the-html-for-import}
 
@@ -64,7 +67,7 @@ zip의 샘플 레이아웃은 다음과 같습니다.
 
 >[!NOTE]
 >
->최소한 디자인 패키지는 루트 수준에서 **index.html** 파일을 포함해야 **합니다** . In case the landing page to be imported has a mobile version as well, then the zip must contain a **mobile.index.html** along with **index.html** at the root level.
+>최소한 디자인 패키지는 루트 수준에서 index.html **** 파일을 **포함해야** 합니다. In case the landing page to be imported has a mobile version as well, then the zip must contain a **mobile.index.html** along with **index.html** at the root level.
 
 ### 랜딩 페이지 HTML 준비 {#preparing-the-landing-page-html}
 
@@ -184,7 +187,7 @@ HTML에 위의 마크업을 포함하면 다음과 같이 됩니다.
 * 만들어진 제목 구성 요소의 `jcr:title`   속성을 div 내에 둘러싸여 있는 제목 태그 내의 텍스트로 설정합니다.
 * `type` 속성을 제목 태그로 설정합니다(이 경우, `h1`).
 
-제목 구성 요소는 7가지 유형 `h1, h2, h3, h4, h5, h6` 및 `default`을 지원합니다.
+제목 구성 요소는 7가지 유형 - `h1, h2, h3, h4, h5, h6` 및 `default`을 지원합니다.
 
 **축약형 구성 요소 태그 선언**:
 
@@ -231,7 +234,7 @@ If an `<img>` tag with an absolute url src is attempted for component conversion
 
 ### 클릭유도문안 구성 요소 {#call-to-action-components}
 
-랜딩 페이지의 일부를 &quot;편집 가능한 클릭유도문안 구성 요소&quot;로 가져올 수 있습니다. 이러한 가져온 클릭유도문안 구성 요소는 랜딩 페이지를 가져온 후 편집할 수 있습니다. AEM에는 다음의 CTA 구성 요소가 포함되어 있습니다.
+랜딩 페이지의 일부를 &quot;편집 가능한 클릭유도문안 구성 요소&quot;로 가져올 수 있습니다. 이렇게 가져온 클릭유도문안 구성 요소는 랜딩 페이지를 가져온 후 편집할 수 있습니다. AEM에는 다음의 CTA 구성 요소가 포함되어 있습니다.
 
 * 클릭스루 링크 - 클릭 시 방문자를 타겟 URL로 이동시키는 텍스트 링크를 추가할 수 있습니다.
 * 그래픽 링크 - 클릭 시 방문자를 타겟 URL로 이동시키는 이미지를 추가할 수 있습니다.
@@ -246,7 +249,7 @@ If an `<img>` tag with an absolute url src is attempted for component conversion
 * 타사 및 AEM URL을 지원하는 타겟 URL
 * 페이지 렌더링 옵션(동일한 창, 새 창, 등)
 
-가져온 zip에 클릭스루 구성 요소를 포함하는 HTML 태그입니다. 여기에서 href는 타겟 url로 매핑하며, &quot;제품 세부 사항 보기&quot;는 레이블 등으로 매핑됩니다.
+가져온 zip에 클릭스루 구성 요소를 포함하는 HTML 태그입니다. 여기 href는 대상 url로 매핑하고, &quot;제품 세부 사항 보기&quot;는 레이블 등으로 매핑합니다.
 
 ```xml
 <div id="cqcanvas">
@@ -279,7 +282,7 @@ If an `<img>` tag with an absolute url src is attempted for component conversion
 * 타사 및 AEM URL을 지원하는 타겟 URL
 * 페이지 렌더링 옵션(동일한 창, 새 창, 등)
 
-가져온 zip에 그래픽 링크 구성 요소를 포함하는 HTML 태그입니다. 여기 href는 대상 url에 매핑되며, img src는 렌더링 이미지이고, &quot;title&quot;은 마우스로 가리키는 텍스트로 가져갑니다.
+가져온 zip에 그래픽 링크 구성 요소를 포함하는 HTML 태그입니다. 여기 href는 대상 url에 매핑되며, img src는 렌더링 이미지이고, &quot;title&quot;은 텍스트 등을 마우스로 가리키면 이동됩니다.
 
 ```xml
 <div id="cqcanvas">
@@ -316,20 +319,20 @@ If an `<img>` tag with an absolute url src is attempted for component conversion
 
 **지원되는 기능**
 
-* 사전 정의된 리드 필드 - 이름, 성, 주소, dob, 성별, 정보, 사용자 ID, 이메일 ID, 제출 단추를 사이드킥에서 사용할 수 있습니다. 리드 양식에 필요한 구성 요소를 드래그/드롭하면 됩니다.
+* 사전 정의된 리드 필드 - 사이드킥에서 이름, 성, 주소, dob, 성별, 정보, userId, emailId, 제출 단추를 사용할 수 있습니다. 리드 양식에 필요한 구성 요소를 드래그/드롭하면 됩니다.
 * 이 구성 요소 작성자의 도움으로 독립형 리드 양식을 디자인할 수 있고, 이렇게 디자인된 필드는 리드 양식 필드에 해당합니다. 독립형 또는 가져온 zip 애플리케이션에서 사용자는 요구 사항에 따라 cq:form이나 cta 리드 양식 필드를 사용하여 필드를 더 만들고, 여기에 이름을 지정하고 디자인할 수 있습니다.
-* CTA 리드 양식의 사전 정의된 특정 이름을 사용하여 리드 양식 필드를 매핑할 수 있습니다. 예를 들어, 리드 양식의 첫 번째 이름에 대한 firstName을 매핑할 수 있습니다.
+* CTA 리드 양식의 사전 정의된 특정 이름(예: 리드 양식의 첫 번째 이름)을 사용하여 리드 양식 필드를 매핑할 수 있습니다.
 * 리드 양식에 매핑되지 않는 필드는 cq:form 구성 요소(텍스트, 라디오 단추, 확인란, 드롭다운, 숨김, 암호)에 매핑됩니다.
 * 사용자는 “label” 태그를 사용하여 제목을 제공하고, 스타일 특성 “class”(CTA 리드 양식 구성 요소에만 사용 가능)를 사용하여 스타일을 지정할 수 있습니다.
-* 감사 페이지 및 구독 목록은 양식의 숨겨진 매개 변수(index.htm에 있음)로 제공하거나 &quot;리드 양식 시작&quot;의 편집 막대에서 추가/편집할 수 있습니다.
+* 감사 페이지 및 구독 목록은 양식의 숨겨진 매개 변수(index.htm에 있음)로 제공하거나 &quot;리드 양식 시작&quot;의 편집 막대에서 추가/편집할 수 있습니다
 
    &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/en/user/register/thank_you&quot;/>
 
    &lt;input type=&quot;hidden&quot; name=&quot;groupName&quot; value=&quot;leadForm&quot;/>
 
-* 각 구성 요소의 편집 구성에서 필수 조건을 제공할 수 있습니다.
+* 필수 제한 사항은 각 구성 요소의 편집 구성에서 제공할 수 있습니다.
 
-가져온 zip에 그래픽 링크 구성 요소를 포함하는 HTML 태그입니다. 여기서 &quot;firstName&quot;은 확인란을 제외하고 리드 양식 firstName 등에 매핑됩니다. 이 두 확인란은 cq:form 드롭다운 구성 요소에 매핑됩니다.
+가져온 zip에 그래픽 링크 구성 요소를 포함하는 HTML 태그입니다. 여기서 &quot;firstName&quot;은 확인란을 제외한 리드 양식 firstName 등에 매핑됩니다. 이 두 확인란은 cq:form 드롭다운 구성 요소에 매핑됩니다.
 
 ```xml
 <div id="cqcanvas">
@@ -417,7 +420,7 @@ HTML에 위의 마크업을 포함하면 다음과 같이 됩니다.
 
 * &lt;meta name=&quot;description&quot; content=&quot;&quot;>
 
-HTML 태그에 설정된 Lang 속성은 디자인 가져오기가 추출하여 속성 &quot;jcr:language&quot;로 보존합니다.
+HTML 태그에 설정된 Lang 속성은 디자인 가져오기가 추출하여 속성 &quot;jcr:language&quot;로 보존합니다
 
 * &lt;html lang=&quot;en&quot;>
 
@@ -435,9 +438,9 @@ HTML 태그에 설정된 Lang 속성은 디자인 가져오기가 추출하여 �
 
 ### 템플릿 오버레이 {#overlaying-template}
 
-빈 랜딩 페이지 템플릿은 다음 위치에서 새 템플릿을 만들어 오버레이할 수 있습니다. `/apps/<appName>/designimporter/templates/<templateName>`
+빈 랜딩 페이지 템플릿은 `/apps/<appName>/designimporter/templates/<templateName>`
 
-AEM에서 새 템플릿을 만드는 단계는 [여기에서](/help/sites-developing/templates.md)설명합니다.
+AEM에서 새 템플릿을 만드는 단계는 [여기에서 설명합니다](/help/sites-developing/templates.md).
 
 ### 랜딩 페이지의 구성 요소 참조 {#referring-a-component-from-landing-page}
 
@@ -455,17 +458,17 @@ data-cq-component에 있는 경로는 구성 요소의 resourceType이어야 합
 |---|---|---|
 | E + F | F 요소가 E 요소 바로 뒤에 있습니다. | [인접 동기 콤비네이터](https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators) |
 | E ~ F | F 요소가 E 요소 뒤에 있습니다. | [일반 동기 콤비네이터](https://www.w3.org/TR/css3-selectors/#general-sibling-combinators) |
-| E:root | E 요소, 문서의 루트 | [구조적 의사 급](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:nth-child(n) | E 요소, 해당 상위의 n번째 하위 | [구조적 의사 급](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:nth-last-child(n) | E 요소, 그 상위의 n번째 하위, 마지막 항목부터 셈 | [구조적 의사 급](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:nth-of-type(n) | E 요소, 이 유형의 n번째 동기 | [구조적 의사 급](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:nth-last-of-type(n) | E 요소, 해당 유형의 n번째 동기, 마지막 항목부터 셈 | [구조적 의사 급](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:root | E 요소, 문서의 루트 | [구조적 유사 수업](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-child(n) | E 요소, 해당 상위의 n번째 하위 | [구조적 유사 수업](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-last-child(n) | E 요소, 그 상위의 n번째 하위, 마지막 항목부터 셈 | [구조적 유사 수업](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-of-type(n) | E 요소, 이 유형의 n번째 동기 | [구조적 유사 수업](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-last-of-type(n) | E 요소, 해당 유형의 n번째 동기, 마지막 항목부터 셈 | [구조적 유사 수업](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 
-이는 가져오기 후 생성된 Html에 &lt;div> 태그와 같은 추가 html 요소가 추가되었기 때문입니다.
+가져오기 후 생성된 Html에 &lt;div> 태그와 같은 추가 html 요소가 추가되었기 때문입니다.
 
 * 위와 유사한 구조에 의존하는 스크립트도 AEM 구성 요소로의 전환을 위해 표시된 요소를 사용할 경우에는 권장되지 않습니다.
-* &lt;div data-cq-component=&quot;&amp;ast;&quot;>와 같은 구성 요소 전환을 위해 마크업 태그에 스타일을 사용하지 않는 것이 좋습니다.
-* 디자인 레이아웃은 HTML5 표준 문안의 우수 사례를 따라야 합니다. 자세한 내용:https://html5boilerplate.com/ [](https://html5boilerplate.com/).
+* &lt;div data-cq-component=&quot;&amp;ast;&quot;>과 같은 구성 요소 전환을 위해 마크업 태그에 스타일을 사용하지 않는 것이 좋습니다.
+* 디자인 레이아웃은 HTML5 표준 문안의 우수 사례를 따라야 합니다. 자세한 내용: [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## OSGI 모듈 구성 {#configuring-osgi-modules}
 
@@ -493,12 +496,12 @@ OSGI 콘솔을 통해 구성할 수 있는 속성을 보여주는 구성 요소�
   <tr> 
    <td>랜딩 페이지 빌더</td> 
    <td>파일 패턴</td> 
-   <td>랜딩 페이지 빌더를 구성하여 파일 패턴으로 정의된 정규 표현식과 일치하는 HTML 파일을 처리할 수 있습니다.</td> 
+   <td>랜딩 페이지 빌더를 구성하여 파일 패턴으로 정의된 일반 표현식과 일치하는 HTML 파일을 처리할 수 있습니다.</td> 
   </tr> 
   <tr> 
    <td>모바일 랜딩 페이지 빌더</td> 
    <td>파일 패턴</td> 
-   <td>랜딩 페이지 빌더를 구성하여 파일 패턴으로 정의된 정규 표현식과 일치하는 HTML 파일을 처리할 수 있습니다.</td> 
+   <td>랜딩 페이지 빌더를 구성하여 파일 패턴으로 정의된 일반 표현식과 일치하는 HTML 파일을 처리할 수 있습니다.</td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -508,12 +511,12 @@ OSGI 콘솔을 통해 구성할 수 있는 속성을 보여주는 구성 요소�
   <tr> 
    <td>랜딩 페이지 입력 사전 처리기</td> 
    <td>검색 패턴 </td> 
-   <td>아카이브 항목 컨텐트에서 검색할 패턴입니다. 이 정규 표현식은 라인별로 시작 컨텐츠 라인과 일치합니다. 일치하는 텍스트는 지정된 대체 패턴으로 대체됩니다.<br /> <br /> 랜딩 페이지 항목 사전 처리기의 현재 제한 사항에 관해서는 아래 주를 참조하십시오.</td> 
+   <td>아카이브 항목 컨텐트에서 검색할 패턴입니다. 이 정규 표현식은 라인별로 항목 컨텐츠 라인과 일치합니다. 일치하는 텍스트는 지정된 대체 패턴으로 대체됩니다.<br /> <br /> 랜딩 페이지 항목 사전 처리기의 현재 제한 사항에 관해서는 아래 주를 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td> </td> 
    <td>대체 패턴</td> 
-   <td>찾은 일치 항목을 대체하는 패턴입니다. $1, $2와 같은 regex 그룹 참조를 사용할 수 있습니다. 또한 이 패턴은 가져오는 동안 실제 값으로 해결되는 {designPath}와 같은 키워드를 지원합니다.</td> 
+   <td>찾은 일치 항목을 대체하는 패턴입니다. $1, $2와 같은 regex 그룹 참조를 사용할 수 있습니다. 또한 이 패턴은 가져오는 동안 실제 값으로 해결되는 {designPath} 같은 키워드를 지원합니다.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -527,7 +530,7 @@ OSGI 콘솔을 통해 구성할 수 있는 속성을 보여주는 구성 요소�
 >
 >`/\&ast *CQ_DESIGN_PATH *\*/ *(['"])`
 >
->검색 패턴에서 `CQ_DESIGN_PATH` 로 `VIPURL` 대체해야 하는 경우 검색 패턴은 다음과 같아야 합니다.
+>검색 패턴에서 `CQ_DESIGN_PATH``VIPURL` 로 대체해야 하는 경우 검색 패턴은 다음과 같아야 합니다.
 >
 >`/\* *VIPURL *\*/ *(['"])`
 
@@ -541,22 +544,22 @@ OSGI 콘솔을 통해 구성할 수 있는 속성을 보여주는 구성 요소�
 
 ### 가져오기 중 표시된 오류 메시지 {#error-messages-displayed-during-import}
 
-오류가 발생하면(예: 가져온 패키지가 올바른 zip이 아님) 디자인 가져오기가 패키지를 가져오지 않고 드래그 앤 드롭 상자 바로 위의 페이지 맨 위에 오류 메시지를 표시합니다. 다음은 오류 시나리오의 예입니다. 오류를 수정하면, 업데이트된 zip을 동일한 빈 랜딩 페이지에 다시 가져올 수 있습니다. 오류가 발생하는 다양한 시나리오는 다음과 같습니다.
+오류가 발생하면(예: 가져온 패키지가 올바른 zip이 아님) 디자인 가져오기에서 패키지를 가져오지 않고 드래그 앤 드롭 상자 바로 위의 페이지 위에 오류 메시지를 표시합니다. 다음은 오류 시나리오의 예입니다. 오류를 수정하면, 업데이트된 zip을 동일한 빈 랜딩 페이지에 다시 가져올 수 있습니다. 오류가 발생하는 다양한 시나리오는 다음과 같습니다.
 
 * 가져온 디자인 패키지는 올바른 zip 아카이브가 아닙니다.
-* 가져온 디자인 패키지에 최상위 수준에 index.html이 없습니다.
+* 가져온 디자인 패키지에는 최상위 수준에 index.html이 없습니다.
 
 ### 가져오기 후 표시되는 경고 {#warnings-displayed-after-import}
 
-경고(예: HTML이 패키지 내에 없는 이미지를 참조함)가 발생하는 경우 디자인 가져오기는 zip을 가져오지만, 동시에 결과 창에 문제/경고 목록을 표시합니다. 문제 링크를 클릭하면 디자인 패키지 내의 문제를 가리키는 경고 목록이 표시됩니다. 디자인 가져오기에서 포착하고 표시하는 경고가 표시되는 다양한 시나리오는 다음과 같습니다.
+경고(예: HTML이 패키지 내에 없는 이미지를 참조함)가 발생하는 경우, 디자인 가져오기는 zip을 가져오지만, 동시에 결과 창에 문제/경고 목록을 표시합니다. 문제 링크를 클릭하면 디자인 패키지 내의 문제를 가리키는 경고 목록이 표시됩니다. 디자인 가져오기에서 포착하고 표시하는 경고가 표시되는 다양한 시나리오는 다음과 같습니다.
 
-* HTML 파섹
-* HTML은 패키지 내에 없는 스크립트를 참조합니다.
-* HTML은 패키지 내에 없는 스타일을 참조합니다.
+* HTML이 패키지 내에 없는 이미지를 참조합니다.
+* HTML이 패키지 내에 없는 스크립트를 참조합니다.
+* HTML이 패키지 내에 없는 스타일을 참조합니다.
 
 ### ZIP 파일의 파일은 AEM에서 어디에 저장됩니까? {#where-are-the-files-of-the-zip-file-being-stored-in-aem}
 
-랜딩 페이지를 가져온 후 디자인 패키지 내의 파일(이미지, css, js, 등)은 디자인 패키지 내에서 AEM의 다음 위치에 저장됩니다.
+랜딩 페이지를 가져온 후 디자인 패키지 내의 파일(이미지, css, js, 등)은 within design package are stored in the following location in AEM:
 
 `/etc/designs/default/canvas/content/campaigns/<name of brand>/<name of campaign>/<name of landing page>`
 
