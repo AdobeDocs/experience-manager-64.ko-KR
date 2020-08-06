@@ -1,8 +1,8 @@
 ---
 title: 프로젝트 관리
 seo-title: 프로젝트 관리
-description: 프로젝트를 사용하면 프로젝트 콘솔에서 액세스하고 관리할 수 있는 리소스들을 하나의 엔티티로 그룹화하여 프로젝트를 구성할 수 있습니다
-seo-description: 프로젝트를 사용하면 프로젝트 콘솔에서 액세스하고 관리할 수 있는 리소스들을 하나의 엔티티로 그룹화하여 프로젝트를 구성할 수 있습니다
+description: 프로젝트를 사용하면 리소스를 프로젝트 콘솔에서 액세스 및 관리할 수 있는 하나의 엔티티로 그룹화하여 프로젝트를 구성할 수 있습니다
+seo-description: 프로젝트를 사용하면 리소스를 프로젝트 콘솔에서 액세스 및 관리할 수 있는 하나의 엔티티로 그룹화하여 프로젝트를 구성할 수 있습니다
 uuid: ac937582-181f-429b-9404-3c71d1241495
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '1061'
+ht-degree: 78%
 
 ---
 
@@ -74,7 +77,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
    >
    >프로젝트와 연결할 수 있는 프로젝트 타일은 [프로젝트 타일](/help/sites-authoring/projects.md#project-tiles)에 자세히 설명되어 있습니다.
 
-1. **만들기**&#x200B;를 탭/클릭합니다. 리소스가 프로젝트에 연결되어 있으므로 지금부터 프로젝트에서 리소스에 액세스할 수 있습니다.
+1. **만들기**&#x200B;를 탭/클릭합니다. 리소스는 프로젝트에 연결되어 있으므로 이제부터 프로젝트에서 리소스에 액세스할 수 있습니다.
 
 ### 프로젝트 또는 리소스 링크 삭제 {#deleting-a-project-or-resource-link}
 
