@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b97abfc9-62e6-470c-bb86-086e662c8091
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '43'
+ht-degree: 0%
 
 ---
 
@@ -19,6 +22,6 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 
 **[Clientlibs ⇐ 추가](add-clientlibs.md)**
 
-이 시점에서 We-Retail 커뮤니티, 커뮤니티 구성 요소 안내서 [및](../../help/sites-developing/we-retail.md)필수 [](components-guide.md)[](essentials.md) 기능for reference를사용하여 샌드박스의 커뮤니티 기능을 살펴볼 수 있습니다.
+이 시점에서 We-Retail 커뮤니티 [,](../../help/sites-developing/we-retail.md)커뮤니티 구성 요소 가이드 [및](components-guide.md) 기능 필수 [를 사용하여 샌드박스의 커뮤니티 기능을 살펴볼 수](essentials.md) 있습니다.
 
 **[Clientlibs ⇐ 추가](add-clientlibs.md)**
