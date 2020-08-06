@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 translation-type: tm+mt
 source-git-commit: cd3ba0afcce0144abbc981ec1b23005ee2ec1502
+workflow-type: tm+mt
+source-wordcount: '336'
+ht-degree: 91%
 
 ---
 
@@ -29,6 +32,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 >
 >* Windows: Ctrl을 클릭한 채 필수 구성 요소를 클릭합니다.
 >* Mac: Cmd를 클릭한 채 필수 구성 요소를 클릭합니다.
+
 >
 
 
@@ -45,7 +49,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
   <tr> 
    <td>편집 모드</td> 
    <td><code>Ctrl-z</code></td> 
-   <td>마지막 변경 내용을 취소합니다.</td> 
+   <td>마지막 변경 내용을 실행 취소합니다.</td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -111,7 +115,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
   <tr> 
    <td> </td> 
    <td><strong><code>Ctrl-I</code></strong><br /> </td> 
-   <td>기울임꼴<br /> </td> 
+   <td>기울임체<br /> </td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -166,7 +170,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
   </tr> 
   <tr> 
    <td>편집 모드</td> 
-   <td><br /> URL에 다음 접미사를 설정합니다.그런 <code>?debugClientLibs=true</code><br /> 다음<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
+   <td>Set the following suffix in the URL:<br /> <code>?debugClientLibs=true</code><br /> Then use:<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
    <td>페이지 로드 시간 통계를 확인합니다.</td> 
   </tr> 
  </tbody> 
