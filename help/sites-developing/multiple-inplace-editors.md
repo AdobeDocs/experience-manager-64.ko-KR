@@ -1,6 +1,6 @@
 ---
 title: 여러 즉석 편집기에 대한 RTE를 구성합니다.
-description: 리치 텍스트 편집기를 구성하여 Adobe Experience Manager에서 여러 개의 즉석 편집기를 만들 수 있습니다.
+description: 리치 텍스트 편집기를 구성하여 Adobe Experience Manager에서 여러 즉석 편집기를 만들 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 44e7afdd5a5738dde73ab1d05a1c83a4bb24df92
@@ -71,6 +71,7 @@ ht-degree: 2%
 
    * 이름: 각 노드의 이름은 드롭 대상의 경우와 마찬가지로 나타내는 속성의 이름입니다. 예를 들어, `image` 및 `text`.
    * 유형: `cq:ChildEditorConfig`
+
    >[!NOTE]
    >
    >정의된 드롭 대상과 하위 편집기 간에는 상관 관계가 있습니다. 노드의 이름은 `cq:ChildEditorConfig` 드롭 대상 ID로 간주되어 선택한 하위 편집기의 매개 변수로 사용됩니다. 편집 가능한 하위 영역에 드롭 대상이 없는 경우(예: 텍스트 구성 요소에서) 하위 편집기의 이름은 해당 편집 가능 영역을 식별하기 위한 ID로 계속 간주됩니다.
@@ -85,7 +86,7 @@ ht-degree: 2%
 
 ### 리치 텍스트 편집기용 추가 구성 {#additional-configuration-for-rich-text-editors}
 
-각 개별 RTE 인스턴스를 개별적으로 구성할 수 있으므로 여러 리치 텍스트 편집기의 구성은 약간 다릅니다. 자세한 내용은 리치 텍스트 편집기 [구성을 참조하십시오](/help/sites-administering/rich-text-editor.md). 여러 RTE를 만들려면 각 즉석 RTE에 대한 구성을 만듭니다. 각 개별 RTE에 다른 구성이 있을 수 있으므로 Adobe는 새 구성 노드 `cq:InplaceEditingConfig` 를 만들 것을 권장합니다. 새 노드 아래에서 각 개별 RTE 구성을 만듭니다.
+각 개별 RTE 인스턴스를 개별적으로 구성할 수 있으므로 여러 리치 텍스트 편집기의 구성은 약간 다릅니다. 자세한 내용은 리치 텍스트 편집기 [구성을 참조하십시오](/help/sites-administering/rich-text-editor.md). 여러 RTE를 만들려면 각 즉석 RTE에 대한 구성을 만듭니다. 각 개별 RTE에 다른 구성이 있을 수 있으므로 Adobe에서 새 구성 노드 `cq:InplaceEditingConfig` 를 만드는 것이 좋습니다. 새 노드 아래에서 각 개별 RTE 구성을 만듭니다.
 
 ```xml
     texttext
