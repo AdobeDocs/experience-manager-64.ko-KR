@@ -27,7 +27,7 @@ ht-degree: 0%
 
 * 감시 폴더 구성 노드의 속성을 구성하는 동안 folderPath 속성에 상위 디렉토리의 전체 경로를 입력하고 다음 예제와 같이 생성할 감시 폴더의 이름을 추가합니다. `C:/MyPDFs/MyWatchedFolder`
 
-   폴더가 `MyWatchedFolder`없으므로 AEM Forms이 지정된 경로에 폴더를 만들려고 합니다.
+   폴더가 `MyWatchedFolder`없습니다. AEM Forms은 지정된 경로에 폴더를 만들려고 합니다.
 
 * 감시 폴더 끝점을 구성하기 전에 파일 시스템에 폴더를 만든 다음 folderPath 속성에 전체 경로를 제공합니다. folderPath 속성에 대한 자세한 내용은 [감시 폴더 속성을 참조하십시오](#watchedfolderproperties).
 
@@ -53,6 +53,7 @@ ht-degree: 0%
    * `inputProcessorType`
    * `inputProcessorId`
    * `outputFilePattern`
+
    지원되는 속성의 전체 목록은 [감시 폴더 속성을 참조하십시오](#watchedfolderproperties).
 
 1. 모두 **저장을 클릭합니다**. 노드가 만들어지고 속성이 저장되면 속성 `input`, `result`, `failure``preserve`및 `stage`폴더는 속성에 지정된 경로에 `folderPath` 만들어집니다.
@@ -140,6 +141,7 @@ ht-degree: 0%
    * %l = 밀리초
    * %R = 무작위 숫자(0과 9 사이)
    * %P = 프로세스 또는 작업 ID
+
    예를 들어 2009년 7월 17일 오후 8시이고 C:/Test/WF0/failure/%Y/%M/%D/%H/ 결과 폴더는 C:/Test/WF0/failure/2009/07/17/20입니다.
 
    경로가 절대 경로가 아니라 상대 경로인 경우 해당 폴더가 감시 폴더 내에 생성됩니다. 기본값은 감시 폴더 내의 결과 폴더인 result/%Y/%M/%D/입니다. 파일 패턴에 대한 자세한 내용은 파일 패턴 [정보를 참조하십시오](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
@@ -158,11 +160,11 @@ ht-degree: 0%
 
    파일을 감시 폴더에 드롭하면 입력에 있는 파일이 나열되므로 초당 스캔하는 경우 성능이 저하될 수 있습니다. 스캔 간격을 늘리면 성능이 향상될 수 있습니다. 삭제할 파일의 볼륨이 작은 경우 그에 따라 [일괄 처리 크기] 및 [투표 간격]을 조정합니다. 예를 들어 초당 10개의 파일이 삭제되는 경우 pollInterval을 1초로 설정하고 [일괄 처리 크기]를 10으로 설정해 보십시오
 
-* **throttleOn(부울)**: 이 옵션을 선택하면 AEM Forms이 지정된 시간에 처리하는 감시 폴더 작업 수가 제한됩니다. 최대 작업 수는 배치 크기 값으로 결정됩니다. 기본 값이 true입니다. 제한 [정보를 참조하십시오](/help/forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).
+* **throttleOn(부울)**: 이 옵션을 선택하면 지정된 시간에 AEM Forms이 처리하는 감시 폴더 작업 수를 제한합니다. 최대 작업 수는 배치 크기 값으로 결정됩니다. 기본 값이 true입니다. 제한 [정보를 참조하십시오](/help/forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).
 
 * **overwriteDuplicateFilename(부울)**: [true]로 설정하면 결과 폴더의 파일을 덮어쓰고 폴더를 유지합니다. False로 설정하면 이름에 숫자 색인 접미어가 있는 파일 및 폴더가 사용됩니다. 기본값은 False입니다.
 * **preserveOnFailure(부울)**: 서비스에서 작업을 실행하지 못하는 경우 입력 파일을 보존합니다. 기본값은 true입니다.
-* **inputFilePattern(문자열)**: 감시 폴더에 대한 입력 파일의 패턴을 지정합니다. 파일의 허용 목록을 만듭니다.
+* **inputFilePattern(문자열)**: 감시 폴더에 대한 입력 파일의 패턴을 지정합니다. 파일의허용 목록에 추가하다를 만듭니다.
 * **asynch(부울)**: 호출 유형을 비동기 또는 동기식으로 식별합니다. 기본값은 true(비동기)입니다. 파일 처리는 리소스를 많이 사용하는 작업이므로, 스캔 작업의 기본 스레드를 차단하도록 비동기 플래그의 값을 true로 유지합니다. 클러스터 환경에서는 사용 가능한 서버에서 처리되는 파일에 대해 로드 밸런싱을 활성화하려면 플래그를 true로 유지하는 것이 중요합니다. 플래그가 false인 경우 스캔 작업은 자체 스레드 내에서 각 최상위 파일/폴더에 대한 처리를 순차적으로 시도합니다. 단일 서버 설정에 대한 워크플로우 기반 처리 등 특정 이유 없이 플래그를 false로 설정하지 마십시오.
 
 >[!NOTE]
@@ -170,7 +172,7 @@ ht-degree: 0%
 >기본적으로 워크플로우는 비동기 상태입니다. 값을 false로 설정해도 비동기 모드에서 워크플로가 실행됩니다.
 
 * **enabled(부울)**: 감시 폴더에 대한 검색을 비활성화하고 활성화합니다. 감시 폴더 검색을 시작하려면 true로 설정합니다. 기본값은 true입니다.
-* **payloadMapperFilter**: 폴더를 감시 폴더로 구성하면 감시 폴더 내에 폴더 구조가 만들어집니다. 이 구조에는 입력, 출력(결과) 받기, 실패 시 데이터 저장, 긴 기간의 프로세스 데이터 보존, 다양한 단계의 데이터 저장 등의 작업이 필요한 폴더가 있습니다. 감시된 폴더의 폴더 구조는 양식 중심의 워크플로우의 페이로드 역할을 할 수 있습니다. 페이로드 매퍼를 사용하면 페이로드 구조를 정의할 수 있습니다. 페이로드 맵핑은 감시 폴더를 사용하여 입력, 출력 및 처리할 수 있습니다. 예를 들어 기본 매퍼를 사용하는 경우 페이로드 [\input 및]payload []\output 폴더를 사용하여 감시 폴더의 컨텐츠를 매핑합니다. 곧바로 사용할 수 있는 2개의 페이로드 매퍼 구현을 사용할 수 있습니다. 사용자 지정 구현 [이 없는](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter)경우 기본 구현 중 하나를 사용하십시오.
+* **payloadMapperFilter**: 폴더를 감시 폴더로 구성하면 감시 폴더 내에 폴더 구조가 만들어집니다. 이 구조에는 입력, 출력(결과) 받기, 실패 시 데이터 저장, 긴 기간의 프로세스 데이터 보존, 다양한 단계의 데이터 저장 등의 작업이 필요한 폴더가 있습니다. 감시 폴더의 폴더 구조는 Forms 중심 워크플로우의 페이로드 역할을 할 수 있습니다. 페이로드 매퍼를 사용하면 페이로드 구조를 정의할 수 있습니다. 페이로드 맵핑은 감시 폴더를 사용하여 입력, 출력 및 처리할 수 있습니다. 예를 들어 기본 매퍼를 사용하는 경우 페이로드 [\input 및]payload []\output 폴더를 사용하여 감시 폴더의 컨텐츠를 매핑합니다. 곧바로 사용할 수 있는 2개의 페이로드 매퍼 구현을 사용할 수 있습니다. 사용자 지정 구현 [이 없는](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter)경우 기본 구현 중 하나를 사용하십시오.
 
    * **기본 매퍼:** 기본 페이로드 맵퍼를 사용하여 감시 폴더의 입력 및 출력 내용을 페이로드의 개별 입력 및 출력 폴더에 보관합니다. 또한 워크플로우의 페이로드 경로에서는 [페이로드]/입력/및 [페이로드]/출력 경로를 사용하여 컨텐츠를 검색하고 저장합니다.
    * **단순 파일 기반 페이로드 매퍼:** 단순 파일 기반 페이로드 매퍼를 사용하여 입력 및 출력 내용을 페이로드 폴더에 직접 보관합니다. 기본 맵퍼와 같은 추가 계층 구조는 만들어지지 않습니다.
@@ -289,7 +291,7 @@ processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docm
 1. 프로그래밍 방식으로 또는 콘솔을 통해 시스템 사용자를 만듭니다 `https://[server]:[port]/crx/explorer`. 기존 시스템 사용자를 사용할 수도 있습니다. 일반 사용자 대신 여기에서 시스템 사용자와 작업하는 것이 중요합니다.
 1. 스크립트가 저장되는 사용자 정의 위치에서 새로 만든 시스템 사용자 또는 기존 시스템 사용자에게 읽기 권한을 제공합니다. 여러 사용자 지정 위치를 가질 수 있습니다. 모든 사용자 지정 위치에 최소 읽기 권한을 제공합니다.
 1. Felix 구성 콘솔(/system/console/configMgr)에서 감시 폴더의 서비스 사용자 매핑을 찾습니다. 이 매핑은 &#39;매핑: adobe-aemds-core-watch-folder=..&#39;.
-1. 매핑을 클릭합니다. &#39;adobe-aemds-core-watch-folder:scripts=fd-service&#39; 항목의 경우 fd-서비스를 사용자 지정 시스템 사용자의 ID로 변경합니다. [저장]을 클릭합니다.
+1. 매핑을 클릭합니다. &#39;adobe-aemds-core-watch-folder:scripts=fd-service&#39; 항목의 경우 fd-서비스를 사용자 지정 시스템 사용자의 ID로 변경합니다. 저장을 클릭합니다.
 
 이제 구성된 사용자 지정 위치를 사용하여 스크립트를 저장할 수 있습니다.
 
@@ -319,7 +321,7 @@ processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docm
    * workflowSession
    * 메타데이터
 
-Java 프로그래밍 언어를 사용하여 워크플로우를 구현하는 경우 AEM 워크플로우 엔진은 workItem, workflowSession 및 메타데이터 변수에 대한 값을 제공합니다. 이러한 변수는 사용자 지정 WorkflowProcess 구현의 execute() 메서드에 인수로 전달됩니다.
+Java 프로그래밍 언어를 사용하여 워크플로우를 구현하는 경우 AEM 워크플로우 엔진은 workItem, workflowSession 및 메타데이터 변수의 값을 제공합니다. 이러한 변수는 사용자 지정 WorkflowProcess 구현의 execute() 메서드에 인수로 전달됩니다.
 
 ECMAScript를 사용하여 워크플로우를 구현하는 경우 AEM 워크플로우 엔진은 graniteWorkItem, graniteWorkflowSession 및 메타데이터 변수에 대한 값을 제공합니다. 이러한 변수는 WorkflowContextService.execute() 메서드에 인수로 전달됩니다.
 
@@ -392,11 +394,11 @@ log.info("Exiting workflow script!")
 
 감시 폴더를 만들면 감시 중인 폴더 내에 폴더 구조가 만들어집니다. 폴더 구조에는 스테이지, 결과, 보존, 입력 및 실패 폴더가 있습니다. 폴더 구조는 워크플로우에 대한 입력 페이로드 역할을 하며 워크플로우의 출력을 수락할 수 있습니다. 또한 실패 지점이 있을 경우 이를 나열할 수도 있습니다.
 
-페이로드 구조가 감시된 폴더의 구조와 다른 경우 사용자 정의 스크립트를 작성하여 감시된 폴더의 구조를 페이로드에 매핑할 수 있습니다. 이러한 스크립트를 페이로드 매퍼 필터라고 합니다. AEM Forms은 페이로드 매퍼 필터를 제공하여 감시 폴더의 구조를 페이로드에 매핑합니다.
+페이로드 구조가 감시된 폴더의 구조와 다른 경우 사용자 정의 스크립트를 작성하여 감시된 폴더의 구조를 페이로드에 매핑할 수 있습니다. 이러한 스크립트를 페이로드 매퍼 필터라고 합니다. 기본적으로, AEM Forms은 페이로드 매퍼 필터를 제공하여 감시된 폴더의 구조를 페이로드에 매핑합니다.
 
 #### 사용자 지정 페이로드 매퍼 필터 만들기 {#creating-a-custom-payload-mapper-filter}
 
-1. Adobe [Client SDK를 다운로드합니다](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk/6.3.0/aemfd-client-sdk-6.3.0.jar).
+1. Adobe [클라이언트 SDK를 다운로드합니다](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk/6.3.0/aemfd-client-sdk-6.3.0.jar).
 1. 마스터 기반 프로젝트의 빌드 경로에 클라이언트 SDK를 설정합니다. 시작하려면 선택한 IDE에서 다음 마스터 기반 프로젝트를 다운로드하여 열 수 있습니다.
 1. 요구 사항에 맞게 샘플 번들에서 사용할 수 있는 페이로드 매퍼 필터 코드를 편집합니다.
 1. 사용자 지정 페이로드 매퍼 필터의 번들을 만들려면 마비스를 사용하십시오.
@@ -509,8 +511,8 @@ log.info("Exiting workflow script!")
 조절을 사용하면 이전 작업이 완료되지 않은 경우 감시 폴더가 새 작업을 호출할 수 없습니다. 감시 폴더는 진행 중인 작업을 감지하고 진행 중인 일괄 처리 크기와 작업을 제외한 새 작업을 처리합니다. 예를 들어 두 번째 호출에서 완료된 작업 수가 3개이고 작업이 아직 진행 중인 경우 감시 폴더는 3개의 작업만 호출합니다.
 
 * 감시 폴더는 진행 중인 작업 수를 확인하기 위해 단계 폴더에 있는 파일 수에 의존합니다. 스테이지 폴더에서 파일이 처리되지 않은 상태로 남아 있는 경우 감시 폴더는 더 이상 작업을 불러오지 않습니다. 예를 들어, 배치 크기가 4개, 작업 3개가 정체되어 있는 경우, 감시 폴더는 후속 조사에서 하나의 작업만 호출합니다. 스테이지 폴더에서 파일이 처리되지 않은 상태로 유지되는 여러 가지 시나리오가 있습니다. 작업이 지연되면 관리자는 [프로세스 관리] 페이지의 프로세스를 종료하여 감시 폴더가 스테이지 폴더 밖으로 파일을 이동할 수 있습니다.
-* AEM Forms 서버가 [감시 폴더]에서 작업을 불러오기 전에 다운되는 경우 관리자는 해당 파일을 스테이지 폴더에서 이동할 수 있습니다. 자세한 내용은 [실패 지점 및 복구를 참조하십시오](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
-* AEM Forms 서버가 실행 중이지만 Job Manager 서비스가 다시 호출될 때 감시 폴더가 실행되고 있지 않은 경우, 순서가 지정된 시퀀스에서 서비스가 시작되지 않을 때 관리자가 파일을 스테이지 폴더에서 이동할 수 있습니다. 자세한 내용은 [실패 지점 및 복구를 참조하십시오](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
+* 감시 폴더에서 작업을 불러오기 전에 AEM Forms 서버가 다운되는 경우 관리자는 파일을 스테이지 폴더에서 이동할 수 있습니다. 자세한 내용은 [실패 지점 및 복구를 참조하십시오](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
+* AEM Forms 서버가 실행 중이지만 작업 관리자 서비스가 다시 호출될 때 감시 폴더가 실행되고 있지 않으면, 이 작업은 순서가 지정된 시퀀스에서 서비스가 시작되지 않을 때 관리자가 파일을 스테이지 폴더에서 이동할 수 있습니다. 자세한 내용은 [실패 지점 및 복구를 참조하십시오](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
 
 ### 장애 지점 및 복구실패 지점 및 복구 {#failure-points-and-recoveryfailure-points-and-recovery}
 
@@ -535,6 +537,7 @@ log.info("Exiting workflow script!")
 
    * 감시 폴더의 includeFilePattern 속성을 새 입력 파일(예: NOMATCH 입력)과 일치하지 않는 값으로 변경합니다.
    * 새 입력 파일을 만드는 프로세스를 일시 중단합니다.
+
    AEM Forms이 모든 파일을 복구하여 처리할 때까지 기다립니다. 대부분의 파일은 복구되고 새로운 입력 파일은 올바르게 처리됩니다. 감시 폴더를 통해 파일을 복구하고 처리하는 데 기다리는 시간은 호출할 작업의 길이와 복구할 파일의 수에 따라 다릅니다.
 
 1. 처리할 수 없는 파일을 확인합니다. 적절한 시간을 기다린 후 이전 단계를 완료했지만 아직 처리되지 않은 파일이 단계 폴더에 남아 있으면 다음 단계로 이동합니다.
@@ -549,7 +552,7 @@ log.info("Exiting workflow script!")
 
 ### 감시 폴더 연결 {#chain-watched-folders-together}
 
-감시 폴더를 서로 연계하여 하나의 감시 폴더의 결과 문서가 다음 감시 폴더의 입력 문서인지 확인할 수 있습니다. 각 감시 폴더는 다른 서비스를 호출할 수 있습니다. 이렇게 감시 폴더를 구성하면 여러 서비스를 호출할 수 있습니다. 예를 들어, 감시 폴더 한 개가 PDF 파일을 Adobe PostScript®로 변환하고, 두 번째 감시 폴더에서 PostScript 파일을 PDF/A 형식으로 변환할 수 있습니다. 이렇게 하려면 첫 번째 종단점에 의해 정의된 감시 폴더의 결과 폴더를 설정하여 두 번째 종단점에 의해 정의된 감시 폴더의 입력 폴더를 가리키도록 하면 됩니다.
+감시 폴더를 서로 연계하여 하나의 감시 폴더의 결과 문서가 다음 감시 폴더의 입력 문서인지 확인할 수 있습니다. 각 감시 폴더는 다른 서비스를 호출할 수 있습니다. 이렇게 감시 폴더를 구성하면 여러 서비스를 호출할 수 있습니다. 예를 들어, 감시 폴더 한 개가 PDF 파일을 Adobe PostScript®으로 변환하고, 두 번째 감시 폴더는 PostScript 파일을 PDF/A 형식으로 변환할 수 있습니다. 이렇게 하려면 첫 번째 종단점에 의해 정의된 감시 폴더의 결과 폴더를 설정하여 두 번째 종단점에 의해 정의된 감시 폴더의 입력 폴더를 가리키도록 하면 됩니다.
 
 첫 번째 변환에서 출력하면 \path\result으로 이동합니다. 두 번째 변환에 대한 입력은 \path\result이고 두 번째 변환에서 출력하면 \path\result\result (또는 두 번째 변환에 대해 [결과 폴더] 상자에 정의하는 디렉토리)로 이동합니다.
 
