@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6afbc889-c613-40e6-8a25-1570dff32d60
 translation-type: tm+mt
 source-git-commit: cfa09d2f1a78eac609cb6df7817234559c8d26dc
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 96%
 
 ---
 
@@ -95,13 +98,14 @@ Using the [User](/help/sites-authoring/user-properties.md#user-settings) option 
 
    * [페이지 편집을 위한 키보드 단축키](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [콘솔용 키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md)
+
    키보드 단축키를 사용할 수 있도록 합니다. 기본적으로 사용할 수 있지만 사용자에게 특정 액세스 가능성 요구 사항이 있는 경우처럼 원하는 경우에는 사용하지 않도록 설정할 수 없습니다.
 
 * **클래식 제작 환경 사용**
 
    [클래식 UI](/help/sites-classic-ui-authoring/home.md) 기반 페이지 작성을 가능하게 합니다. 기본적으로 표준 UI가 사용됩니다.
 
-* **자산 홈 페이지 활성화**
+* **자산 홈페이지 활성화**
 
-   이 선택 사항은 시스템 관리자가 전체 조직에 대해 [자산 홈 페이지] 환경을 활성화한 경우에만 사용할 수 있습니다.
+   이 선택 사항은 시스템 관리자가 전체 조직에 대해 [자산 홈페이지] 환경을 활성화한 경우에만 사용할 수 있습니다.
 
