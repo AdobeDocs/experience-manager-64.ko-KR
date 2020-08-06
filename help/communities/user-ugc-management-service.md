@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '607'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
@@ -22,15 +22,15 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->GDPR은 아래 섹션에 나와 있지만, 자세히 설명된 내용은 모든 데이터 보호 및 개인 정보 보호 규정에 적용됩니다. GDPR, CPA 등
+>아래 섹션에서는 GDPR이 예로 사용되지만, 포함된 세부 사항은 GDPR, CCPA 등 모든 데이터 보호 및 개인 정보 보호 규정에 적용됩니다.
 
-AEM Communities은 사용자 프로필을 관리하고 UGC(사용자 생성 콘텐츠)를 일괄 관리하기 위해 API를 즉시 노출합니다. 활성화되면 권한 있는 사용자( **커뮤니티 관리자 및 중재자)는 UserUgcManagement** 서비스를 사용하여 사용자 프로필을 비활성화하고 특정 사용자에 대해 UGC를 벌크 삭제하거나 벌크 내보낼 수 있습니다. 또한 이러한 API를 통해 고객 데이터의 관리자 및 프로세서는 유럽 연합의 개인 정보 보호 규정(GDPR) 및 기타 GDPR의 개인 정보 보호 정책을 준수할 수 있습니다.
+AEM Communities은 사용자 프로필을 관리하고 UGC(사용자 생성 콘텐츠)를 대량으로 관리하기 위해 API를 기본 제공 활성화되면 권한 있는 사용자( **커뮤니티 관리자 및 중재자)는 UserUgcManagement** 서비스를 사용하여 사용자 프로필을 비활성화하고 특정 사용자에 대해 UGC를 벌크 삭제하거나 벌크 내보낼 수 있습니다. 또한 이러한 API를 통해 고객 데이터의 관리자 및 프로세서는 유럽 연합의 개인 정보 보호 규정(GDPR) 및 기타 GDPR의 개인 정보 보호 정책을 준수할 수 있습니다.
 
-자세한 내용은 Adobe 개인 정보 보호 센터 [의 GDPR 페이지를 참조하십시오](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+자세한 내용은 [Adobe 개인 정보 보호 센터의 GDPR 페이지](https://www.adobe.com/privacy/general-data-protection-regulation.html)를 참조하십시오.
 
 >[!NOTE]
 >
->AEM Communities [사이트에서](analytics.md) Adobe Analytics을 구성한 경우 캡처한 사용자 데이터가 Adobe Analytics 서버로 전송됩니다. Adobe Analytics은 사용자 데이터에 액세스, 내보내기 및 삭제하고 GDPR을 준수하는 API를 제공합니다. 자세한 내용은 액세스 [제출 및 요청 삭제를 참조하십시오](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html).
+>AEM Communities [사이트에서](analytics.md) Adobe Analytics을 구성한 경우 캡처한 사용자 데이터가 Adobe Analytics 서버로 전송됩니다. Adobe Analytics은 사용자 데이터를 액세스, 내보내기 및 삭제하고 GDPR을 준수하는 API를 제공합니다. 자세한 내용은 액세스 [제출 및 요청 삭제를 참조하십시오](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
 이러한 API를 사용하려면 UserUgcManagement 서비스를 활성화하여 종단점을 `/services/social/ugcmanagement` 활성화해야 합니다. 이 서비스를 활성화하려면 [GitHub.com에서 사용 가능한](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet) 샘플 [서블릿을](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet)설치하십시오. 그런 다음 다음과 유사한 http 요청을 사용하여 적절한 매개 변수를 사용하여 커뮤니티 사이트의 게시 인스턴스에 대한 끝점을 히트:
 
@@ -57,7 +57,7 @@ AEM Communities은 사용자 프로필을 관리하고 UGC(사용자 생성 콘�
 
 * **사용자**: 사용자 인증 가능 ID.
 
-예를 들어, http-POST 요청을 통해 권한 부여 ID가 weston.mccall@dodgit.com인 사용자의 UGC를 삭제하려면 다음 매개 변수를 사용하십시오.
+예를 들어 권한 부여 ID가 weston.mccall@dodgit.com인 사용자의 UGC를 http POST 요청을 통해 삭제하려면 다음 매개 변수를 사용하십시오.
 
 * user= weston.mccall@dodgit.com
 * operation= deleteUgc
@@ -68,7 +68,7 @@ Adobe Analytics에서 사용자 데이터를 삭제하려면 GDPR Analytics 워�
 
 AEM Communities에서 사용하는 Adobe Analytics 변수 매핑에 대해서는 다음 이미지를 참조하십시오.
 
-![Adobe Analytics에 대한 AEM Communities 변수 매핑](assets/Analytics-Communities-Mapping.png)
+![Adobe Analytics용 AEM communities 변수 매핑](assets/Analytics-Communities-Mapping.png)
 
 ## 사용자 계정 비활성화 {#disable-a-user-account}
 
@@ -87,4 +87,4 @@ AEM Communities에서 사용하는 Adobe Analytics 변수 매핑에 대해서는
 
 >[!NOTE]
 >
->deleteUserAccount() API는 시스템에서 사용자 프로필만 비활성화하고 UGC를 제거합니다. 그러나 시스템에서 사용자 프로필을 삭제하려면 CRXDE **Lite로 이동합니다**. [https://&lt;server>/crx/de](http://localhost:4502/crx/de), 사용자 노드를 찾아 삭제합니다.
+>deleteUserAccount() API는 시스템에서 사용자 프로필만 비활성화하고 UGC를 제거합니다. 하지만 시스템에서 사용자 프로필을 삭제하려면 **CRXDE Lite으로 이동합니다**. [https://&lt;server>/crx/de](http://localhost:4502/crx/de), 사용자 노드를 찾아 삭제합니다.
