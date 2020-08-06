@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 22712b73-90f2-4329-b32f-dbb7ce802d1d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 86%
 
 ---
 
@@ -53,7 +56,7 @@ The **Status** column in the **Websites** console indicates whether a workflow h
 1. 사이드 킥에서 [워크플로우] 탭을 선택합니다.
 1. Expand the **Workflow** dialog, allowing you to select the **Workflow** and optionally enter **Workflow Title** and **Comment**.
 
-   ![워크플로우시작사이드킥으로](assets/workflowstartsidekick.png)
+   ![workflowstartsidekick](assets/workflowstartsidekick.png)
 
 1. **워크플로우 시작**&#x200B;을 클릭하여 구성한 속성과 현재 페이지를 페이로드로 사용하여 새 워크플로우 인스턴스를 시작합니다. 이제 워크플로우가 실행 중입니다.
 
