@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8774c38a-abd2-4dc2-868e-d6760c96f3f6
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +28,7 @@ It can be accessed from **Tools** -> **General** -> **Components**. 콘솔에서
 
 >[!NOTE]
 >
->[구성 요소 콘솔]은 시스템의 모든 구성 요소를 표시합니다. The [Component Browser](/help/sites-authoring/author-environment-tools.md#components-browser) shows components that are available to authors and hides any component groups that begin with a period ( `.`).
+>[구성 요소 콘솔]은 시스템의 모든 구성 요소를 표시합니다. [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser)는 작성자가 사용할 수 있는 구성 요소를 표시하며 마침표(`.`)로 시작하는 모든 구성 요소 그룹을 숨깁니다.
 
 ## 검색 {#search-features}
 
@@ -52,7 +55,7 @@ It can be accessed from **Tools** -> **General** -> **Components**. 콘솔에서
       * [리소스 슈퍼 유형]을 클릭하면 해당 구성 요소로 이동합니다.
    >[!NOTE]
    >
-   >Because `/apps` is not editable at runtime, the Components Console is read-only.
+   >`/apps`는 런타임 시 편집할 수 없으므로 구성 요소 콘솔은 읽기 전용입니다.
 
 * **정책**
 
