@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9cadec1b-f435-4fd8-b4bc-1a23a0cf11f3
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 70%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 * [작성](/help/sites-authoring/author.md)([페이지 작성](/help/sites-authoring/author-environment-tools.md), [자산 관리](/help/assets/home.md), [커뮤니티](/help/communities/author-communities.md) 포함)
 
-* [웹](/help/sites-administering/home.md) 사이트에서 컨텐츠를 생성하고 유지 관리할 때 필요한 작업 관리
+* [웹 사이트에서 컨텐츠를 생성하고 유지 관리할 때 필요한 작업 관리](/help/sites-administering/home.md)
 
 이를 달성하기 위해 두 가지 그래픽 사용자 인터페이스가 제공되며, 이 인터페이스는 최신 브라우저를 통해 액세스할 수 있습니다.
 
@@ -34,9 +37,11 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
    * 터치 및 데스크톱 장치용으로 설계되었으며 [리소스를 보고 선택하는 방법](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)은 조금 다르지만(탭/클릭) 모양과 느낌은 모든 장치에서 동일합니다.
 
       * 데스크톱:
+
    ![screen_shot_2018-03-23at115248](assets/screen_shot_2018-03-23at115248.png)
 
    * 태블릿 장치(또는 폭이 1024픽셀 미만인 데스크톱):
+
    ![screen_shot_2018-03-23at115505](assets/screen_shot_2018-03-23at115505.png)
 
 1. 클래식 UI
@@ -45,6 +50,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
    * 주로 녹색입니다.
    * 데스크톱 장치에서 사용하도록 설계되었습니다.
    * 다음 문서는 현대 UI에 중점을 둡니다. 클래식 UI의 작성에 대한 자세한 내용은 ](/help/sites-classic-ui-authoring/classicui.md)클래식 UI의 작성 설명서[를 참조하십시오.
+
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
 ## UI 전환
@@ -57,11 +63,11 @@ Although the touch-enabled UI is now the standard UI and [feature parity](../rel
 
 어느 UI를 사용해야 하는지를 결정할 수 있는 다양한 위치가 있습니다.
 
-* [인스턴스에](#configuring-the-default-ui-for-your-instance) 대한 기본 UI 구성 - 사용자가 이 설정을 무시할 수 있고 계정 또는 현재 세션에 대해 다른 UI를 선택할 수 있지만 이 설정은 사용자 로그인 시 기본 UI가 표시되도록 설정합니다.
+* [인스턴스용](#configuring-the-default-ui-for-your-instance) 기본 UI 구성 - 사용자가 이 설정을 무시할 수 있고 계정 또는 현재 세션에 대해 다른 UI를 선택할 수 있지만 사용자 로그인 시 기본 UI가 표시되도록 설정됩니다.
 
-* [계정에](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account) 대한 클래식 UI 작성 설정 - 사용자가 이 설정을 무시하고 계정 또는 현재 세션에 대해 다른 UI를 선택할 수 있지만 페이지를 편집할 때 기본적으로 UI가 사용되도록 설정됩니다.
+* [계정에](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account) 대한 클래식 UI 작성 설정 - 이 설정을 사용하면 페이지 편집 시 UI가 기본적으로 사용되도록 설정됩니다. 사용자는 이 설정을 무시할 수 있으며 계정 또는 현재 세션에 대해 다른 UI를 선택할 수 있습니다.
 
-* [현재 세션에](#switching-to-classic-ui-for-the-current-session) 대한 클래식 UI로 전환 - 현재 세션에 대한 클래식 UI로 전환합니다.
+* [현재 세션에 대한 클래식 UI로 전환](#switching-to-classic-ui-for-the-current-session) - 현재 세션에 대한 클래식 UI로 전환합니다.
 
 * 페이지 작성의 경우 [UI와 관련하여 특정 항목이 무시됩니다.](#ui-overrides-for-the-editor).
 
@@ -167,6 +173,7 @@ Although the touch-enabled UI is now the standard UI and [feature parity](../rel
 >
 >* URL 수동 편집. 비표준 브라우저 URL은 알 수 없는 상황과 기능 부족을 초래할 수 있습니다.
 >* 두 편집기를 동시에 열기. 예를 들어 별도의 창으로 엽니다.
+
 >
 
 
