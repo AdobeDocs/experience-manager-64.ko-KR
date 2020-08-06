@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 278195a6-3452-4966-9d56-022815cf6fb4
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '933'
+ht-degree: 87%
 
 ---
 
 
 # 작성 - 환경 및 도구{#authoring-the-environment-and-tools}
 
-AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다.제공된 도구는 다양한 콘솔 및 페이지 편집기에서 액세스합니다.
+AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다. 제공된 도구는 다양한 콘솔 및 페이지 편집기에서 액세스됩니다.
 
 ## 사이트 관리 {#site-administration}
 
@@ -98,7 +101,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 
 ### 페이지 찾기 {#finding-pages}
 
-이 탭에는 모든 페이지가 표시됩니다.편집할 페이지를 두 번 클릭하여 엽니다.
+이 탭에는 모든 페이지가 표시됩니다. 편집할 페이지를 두 번 클릭하여 엽니다.
 
 ![chlimage_1-160](assets/chlimage_1-160.png)
 
@@ -154,7 +157,7 @@ AEM에서는 현재 작업 중엔 페이지에 링크된 페이지를 확인할 
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. **참조**&#x200B;표시...를 선택합니다.AEM이 참조 창을 열고 경로를 포함하여 선택한 페이지를 참조하는 페이지를 표시합니다.
+1. Select **Show References...** AEM opens the References window and displays which pages refer to the selected page, including their paths.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -163,7 +166,7 @@ AEM에서는 현재 작업 중엔 페이지에 링크된 페이지를 확인할 
 * [론치](/help/sites-classic-ui-authoring/classic-launches.md)
 * [Live Copy](/help/sites-administering/msm.md)
 
-* [Blueprint](/help/sites-administering/msm-best-practices.md)
+* [블루프린트](/help/sites-administering/msm-best-practices.md)
 
 또한 [웹 사이트 콘솔에서 다른 페이지 간 관계를 볼 수 있습니다](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console).
 
@@ -202,7 +205,7 @@ The Website console also [provides information about the current status of the p
 >다른 옵션도 사용할 수 있습니다.
 >
 >* [스캐폴딩](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
->* [ClientContext](/help/sites-administering/client-context.md)
+>* [Client Context](/help/sites-administering/client-context.md)
 >* 웹 사이트 - [웹 사이트] 콘솔을 엽니다.
 >* 다시 로드 - 페이지를 새로 고칩니다.
 
