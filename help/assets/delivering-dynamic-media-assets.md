@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: ec394bd3-2fa6-4f50-b974-bc10f643ecac
 translation-type: tm+mt
 source-git-commit: 15d933a2e71a44e84cdcc9ae28f60c67b43bd8f4
+workflow-type: tm+mt
+source-wordcount: '330'
+ht-degree: 33%
 
 ---
 
 
 # Dynamic Media 자산 제공 {#delivering-dynamic-media-assets}
 
-비디오와 이미지 모두 다이내믹 미디어 에셋을 제공하는 방법은 웹 사이트의 구현 방법에 따라 달라집니다.
+비디오와 이미지 모두 다이내믹 미디어 자산을 제공하는 방법은 웹 사이트 구현 방법에 따라 달라집니다.
 
 Dynamic Media에는 다음의 몇 가지 선택 사항이 있습니다.
 
@@ -26,11 +29,11 @@ Dynamic Media에는 다음의 몇 가지 선택 사항이 있습니다.
 
    * 웹 사이트에 비디오 또는 이미지 임베드
    * 웹 애플리케이션에 URL을 연결합니다. 비디오 플레이어를 팝업 또는 모달 창으로 제공하려는 경우 링크를 사용합니다.
-   * 사이트가 반응하는 경우 최적화된 이미지를 [제공할 수 있습니다.](responsive-site.md)
+   * 사이트가 응답성이 높은 경우 최적화된 이미지를 [제공할 수 있습니다.](responsive-site.md)
 
 >[!NOTE]
 >
->스마트 이미징은 기존 이미지 사전 설정과 연동되며 전달 마지막 순간에 지능적인 기능을 사용하여 브라우저 또는 네트워크 연결 속도에 따라 이미지 파일 크기를 더욱 줄일 수 있습니다. 자세한 [내용은 스마트](imaging-faq.md) 이미징을 참조하십시오.
+>스마트 이미징은 기존 이미지 사전 설정에서 작동하며 마지막 전달 순간에 인텔리전스를 사용하여 브라우저 또는 네트워크 연결 속도에 따라 이미지 파일 크기를 더 줄입니다. 자세한 [내용은 스마트](imaging-faq.md) 이미징을 참조하십시오.
 
 자세한 내용은 다음 항목을 참조하십시오.
 
@@ -41,11 +44,11 @@ Dynamic Media에는 다음의 몇 가지 선택 사항이 있습니다.
 * [URL을 웹 애플리케이션에 연결](linking-urls-to-yourwebapplication.md)
 * [응답형 사이트용으로 최적화된 이미지 제공](responsive-site.md)
 * [컨텐츠의 HTTP2 전달](http2.md)
-* [CDN 캐시 컨텐츠 무효화](invalidate-cdn-cached-content.md)
+* [CDN 캐시 콘텐츠 무효화](invalidate-cdn-cached-content.md)
 * [규칙 세트를 사용하여 URL 변환](using-rulesets-to-transform-urls.md)
 
 ## 다이내믹 미디어 자산의 HTTP/2 전달 {#http-delivery-of-dynamic-media-assets}
 
-이제 AEM은 HTTP/2를 통해 모든 다이내믹 미디어 컨텐츠(이미지 및 비디오)의 배달을 지원합니다. 즉, 이미지 또는 비디오에 대해 게시된 URL 또는 임베드 코드는 호스팅된 자산을 허용하는 모든 응용 프로그램과 통합할 수 있습니다. 그런 다음 HTTP/2 프로토콜을 통해 게시된 에셋을 전달합니다. 이 전달 방법은 브라우저와 서버의 통신 방식을 개선하여 모든 Dynamic Media 자산의 응답 및 로드 시간을 향상시킵니다.
+AEM은 이제 HTTP/2를 통해 모든 다이내믹 미디어 컨텐츠(이미지 및 비디오)의 배달을 지원합니다. 즉, 이미지나 비디오에 대해 게시된 URL 또는 포함 코드는 호스팅된 자산을 허용하는 모든 응용 프로그램과 통합할 수 있습니다. 그런 다음 게시된 자산은 HTTP/2 프로토콜을 통해 전달됩니다. 이 전달 방법은 브라우저와 서버의 통신 방식을 개선하여 모든 Dynamic Media 자산의 응답 및 로드 시간을 향상시킵니다.
 
-자세한 [내용은 HTTP/2 FAQ](/help/sites-administering/scene7-http2faq.md) 제공을 참조하십시오.
+자세한 내용은 [HTTP/2 FAQ](/help/sites-administering/scene7-http2faq.md) 제공을 참조하십시오.
