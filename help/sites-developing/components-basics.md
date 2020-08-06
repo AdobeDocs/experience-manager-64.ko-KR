@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '4726'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 새 구성 요소를 개발하려면 구조 및 구성의 기본 사항을 이해해야 합니다.
 
-이 프로세스에는 이론을 읽고 표준 AEM 인스턴스에서 다양한 구성 요소 구현을 살펴보는 작업이 포함됩니다. 이 후자 방법은 AEM이 새로운 표준, 최신 터치 지원 UI로 바뀌었지만 클래식 UI를 계속 지원한다는 사실에 따라 약간 복잡합니다.
+이 프로세스에는 이론을 읽고 표준 AEM 인스턴스에서 다양한 구성 요소 구현을 살펴보는 작업이 포함됩니다. AEM이 새로운 표준, 최신 터치 지원 UI로 바뀌었지만 클래식 UI를 계속 지원하고 있다는 사실에 따라 이 후자 방법은 약간 복잡합니다.
 
 ## 개요 {#overview}
 
@@ -61,11 +61,11 @@ ht-degree: 1%
 구성 요소 개발에 대한 진지한 토론이 시작되기 전에 작성자가 사용할 UI를 알아야 합니다.
 
 * **터치 활성화 UI**
-   [AEM 5.6.0에서 미리 보기로 소개되고 6.x에서 확장되는 표준 사용자 인터페이스](/help/sites-developing/touch-ui-concepts.md) . Coral UI 및 [ [Granite UI]의 기본 기술을 사용하여 Adobe Marketing Cloud에 대한 통합 사용자 경험을 기반으로](/help/sites-developing/touch-ui-concepts.md#coral-ui) 합니다 [](/help/sites-developing/touch-ui-concepts.md#granite-ui).
+   [AEM 5.6.0에서 미리 보기 및 6.x로 확장되었던 표준 사용자 인터페이스](/help/sites-developing/touch-ui-concepts.md) . Coral UI와 [Granite UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) 의 기본 기술을 사용하여 Adobe Marketing Cloud의 통합 사용자 경험을 기반으로 [합니다](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 
 * **CQ** 5.1에서 소개된 ExtJS 기술을 기반으로 하는 클래식 UI 사용자 인터페이스
 
-자세한 내용은 [고객을 위한](/help/sites-deploying/ui-recommendations.md) UI 인터페이스 권장 사항을 참조하십시오.
+자세한 내용은 [고객을 위한](/help/sites-deploying/ui-recommendations.md) UI 인터페이스 Recommendations을 참조하십시오.
 
 터치 지원 UI, 클래식 UI 또는 두 가지 모두를 지원하기 위해 구성 요소를 구현할 수 있습니다. 표준 인스턴스를 볼 때 원래 클래식 UI용으로 설계된 즉시 사용 가능한 구성 요소나 터치 지원 UI용으로 설계된 구성 요소도 표시됩니다.
 
@@ -73,7 +73,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe는 최신 기술을 활용하려면 터치 지원 UI를 활용하는 것이 좋습니다. [AEM Modernizion-tools&amp;(modernizion-tools.md)를 사용하면 마이그레이션을 더 쉽게 수행할 수 있습니다.
+>Adobe은 최신 기술을 활용하려면 터치 지원 UI를 활용하는 것이 좋습니다. [AEM Modernizion-tools&amp;(modernizion-tools.md)를 사용하면 마이그레이션을 더 쉽게 수행할 수 있습니다.
 
 ### 컨텐츠 논리 및 렌더링 마크업  {#content-logic-and-rendering-markup}
 
@@ -85,9 +85,9 @@ ht-degree: 1%
 
 HTL은 AEM 6.0에서 도입된 HTML 템플릿 언어입니다.
 
-자체 구성 요소를 개발할 때 [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) 또는 JSP(Java Server Pages)를 사용할지 여부에 대한 논의는 이제 AEM에 권장되는 스크립팅 언어이므로 간단해야 합니다.
+자체 구성 요소를 개발할 때 [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) 또는 JSP(Java Server Pages)를 사용할지 여부에 대한 논의는 이제 AEM에서 권장되는 스크립팅 언어이므로 간단해야 합니다.
 
-HTL과 JSP는 클래식 UI와 터치 지원 UI 모두에 대한 구성 요소를 개발하는 데 사용할 수 있습니다. HTL이 클래식 UI에 대해 터치 지원 UI 및 JSP에만 해당된다고 가정하는 경우가 있지만 이것은 잘못된 것이며 타이밍에 의한 것입니다. 터치 지원 UI 및 HTL이 거의 동일한 기간에 AEM에 통합되었습니다. HTL은 이제 권장 언어이므로, 새로운 구성 요소에 사용되고, 터치 가능 UI에 해당됩니다.
+HTL과 JSP는 클래식 UI와 터치 지원 UI 모두에 대한 구성 요소를 개발하는 데 사용할 수 있습니다. HTL이 클래식 UI에 대해 터치 지원 UI 및 JSP에만 해당된다고 가정하는 경우가 있지만 이것은 잘못된 것이며 타이밍에 의한 것입니다. 터치 지원 UI와 HTL은 거의 같은 기간에 AEM에 통합되었습니다. HTL은 이제 권장 언어이므로, 새로운 구성 요소에 사용되고, 터치 가능 UI에 해당됩니다.
 
 >[!NOTE]
 >
@@ -106,7 +106,7 @@ HTL과 JSP는 클래식 UI와 터치 지원 UI 모두에 대한 구성 요소를
 
 ### 게시 인스턴스로 구성 요소 이동 {#moving-components-to-the-publish-instance}
 
-컨텐츠를 렌더링하는 구성 요소는 컨텐츠와 동일한 AEM 인스턴스에 배포해야 합니다. 따라서 작성 인스턴스에서 페이지를 작성 및 렌더링하는 데 사용되는 모든 구성 요소를 게시 인스턴스에 배포해야 합니다. 배포 시 구성 요소를 사용하여 활성화된 페이지를 렌더링할 수 있습니다.
+컨텐츠를 렌더링하는 구성 요소는 컨텐트와 동일한 AEM 인스턴스에 배포해야 합니다. 따라서 작성 인스턴스에서 페이지를 작성 및 렌더링하는 데 사용되는 모든 구성 요소를 게시 인스턴스에 배포해야 합니다. 배포 시 구성 요소를 사용하여 활성화된 페이지를 렌더링할 수 있습니다.
 
 다음 도구를 사용하여 구성 요소를 게시 인스턴스로 이동합니다.
 
@@ -134,7 +134,7 @@ HTL과 JSP는 클래식 UI와 터치 지원 UI 모두에 대한 구성 요소를
 
 ## 구조 {#structure}
 
-AEM 구성 요소의 구조가 강력하며 유연하므로 주요 고려 사항은 다음과 같습니다.
+AEM 구성 요소의 구조는 강력하고 유연하며, 주요 고려 사항은 다음과 같습니다.
 
 * 리소스 유형
 * 구성 요소 정의
@@ -160,7 +160,7 @@ AEM 구성 요소의 구조가 강력하며 유연하므로 주요 고려 사항
 구성 요소의 정의는 다음과 같이 분류할 수 있습니다.
 
 * AEM 구성 요소는 Sling을 [기반으로 합니다](https://sling.apache.org/documentation.html).
-* AEM 구성 요소는 (일반적으로) 다음 위치에 있습니다.
+* AEM 구성 요소는(일반적으로) 다음 위치에 있습니다.
 
    * HTL: `/libs/wcm/foundation/components`
    * JSP: `/libs/foundation/components`
@@ -169,7 +169,7 @@ AEM 구성 요소의 구조가 강력하며 유연하므로 주요 고려 사항
 
    * `/apps/<myApp>/components`
 
-* AEM 표준 구성 요소는 로 정의되고 `cq:Component` 주요 요소가 있습니다.
+* AEM 표준 구성 요소는 로 정의되고 `cq:Component` 핵심 요소가 있습니다.
 
    * jcr 속성:
 
@@ -559,7 +559,7 @@ AEM 구성 요소의 구조가 강력하며 유연하므로 주요 고려 사항
 
 ## 구성 요소 계층 및 상속 {#component-hierarchy-and-inheritance}
 
-AEM 내의 구성 요소는 3개의 서로 다른 계층 구조를 따릅니다.
+AEM 내의 구성 요소는 다음과 같이 3개의 다른 계층을 따릅니다.
 
 * **리소스 유형 계층**
 
@@ -633,11 +633,11 @@ AEM 내의 구성 요소는 3개의 서로 다른 계층 구조를 따릅니다.
 
 저장소에 기존 구성이 많이 있습니다. 특정 속성이나 하위 노드를 쉽게 검색할 수 있습니다.
 
-* 노드의 속성을 `cq:editConfig` 찾으려면(예: `cq:actions`, CRXDE Lite에서 쿼리 도구 **를** 사용하고 다음 XPath 쿼리 문자열로 검색할 수 있습니다.
+* 노드의 속성을 `cq:editConfig` 찾으려면(예: `cq:actions`, you can use Query tool in **CRXDE Lite** and search with the following XPath query string:
 
    `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* 의 하위 노드를 찾기 위해 `cq:editConfig`예를 들어 유형 `cq:dropTargets`의 하위 노드를 검색할 수 `cq:DropTargetConfig`있습니다. *** CRXDE Lite**에서 쿼리 도구를 사용하고 다음 XPath 쿼리 문자열로 검색할 수 있습니다.
+* 의 하위 노드를 찾기 위해 `cq:editConfig`예를 들어 유형 `cq:dropTargets`의 하위 노드를 검색할 수 `cq:DropTargetConfig`있습니다. 다음 XPath 쿼리 문자열로** CRXDE Lite**에서 쿼리 도구를 사용할 수 있습니다.
 
    `//element(cq:dropTargets, cq:DropTargetConfig)`
 
