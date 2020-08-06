@@ -461,7 +461,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 구성 요소의 SocialEvent 인스턴스는 이벤트 `actions``topic`를 SocialEvent에는 동작과 `verb`연관된 항목을 반환하는 메서드가 포함되어 있습니다. *와* 사이에는 `actions`N1 `verbs`관계가 있다.
 
-제공된 커뮤니티 구성 요소의 경우 다음 표에서는 `verbs`점수 지정 하위 규칙에 사용할 `topic`수 있는 각 구성 요소에 대해 [설명합니다](#scoring-sub-rules).
+제공된 커뮤니티 구성 요소의 경우 다음 표에서는 `verbs`점수 지정 하위 규칙에 `topic`사용할 수 있는 각 구성 요소에 대해 [설명합니다](#scoring-sub-rules).
 
 >[!NOTE]
 >
