@@ -1,8 +1,8 @@
 ---
 title: SAML 2.0 인증 처리기
 seo-title: SAML 2.0 인증 처리기
-description: AEM의 SAML 2.0 인증 핸들러에 대해 알아봅니다.
-seo-description: AEM의 SAML 2.0 인증 핸들러에 대해 알아봅니다.
+description: AEM의 SAML 2.0 인증 처리기에 대해 알아봅니다.
+seo-description: AEM의 SAML 2.0 인증 처리기에 대해 알아봅니다.
 uuid: 51f97315-350a-42a4-af2c-2de87307c6ad
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -20,32 +20,32 @@ ht-degree: 0%
 
 # SAML 2.0 인증 처리기{#saml-authentication-handler}
 
-AEM은 [SAML](http://saml.xml.org/saml-specifications) 인증 핸들러와 함께 제공됩니다. 이 처리기는 바인딩을 사용하여 [SAML](http://saml.xml.org/saml-specifications) 2.0 인증 요청 프로토콜(Web-SSO 프로필)을 `HTTP POST` 지원합니다.
+AEM은 [SAML](http://saml.xml.org/saml-specifications) 인증 핸들러를 포함합니다. 이 처리기는 바인딩을 사용하여 [SAML](http://saml.xml.org/saml-specifications) 2.0 인증 요청 프로토콜(Web-SSO 프로필)을 `HTTP POST` 지원합니다.
 
 다음을 지원합니다.
 
 * 메시지 서명 및 암호화
 * 자동 사용자 생성
-* AEM의 기존 그룹에 그룹 동기화
+* AEM에서 기존 그룹에 그룹 동기화
 * 서비스 제공자 및 ID 공급자가 인증을 시작했습니다.
 
 이 처리기는 타사 서비스 제공자와의 통신을 용이하게 하기 위해 사용자 노드( `usernode/samlResponse`)에 암호화된 SAML 응답 메시지를 저장합니다.
 
 >[!NOTE]
 >
->AEM [및 SAML 통합에 대한 데모를 참조하십시오](https://helpx.adobe.com/experience-manager/kb/simple-saml-demo.html).
+>AEM [와 SAML 통합에 대한 데모를 참조하십시오](https://helpx.adobe.com/experience-manager/kb/simple-saml-demo.html).
 >
->엔드 투 엔드 커뮤니티 아티클을 읽으려면 다음을 클릭합니다. [Adobe Experience Manager와 SAML 통합](https://helpx.adobe.com/experience-manager/using/aem63_saml.html).
+>엔드 투 엔드 커뮤니티 아티클을 읽으려면 다음을 클릭합니다. [SAML과 Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/aem63_saml.html)통합
 
 ## SAML 2.0 인증 처리기 구성 {#configuring-the-saml-authentication-handler}
 
-웹 [콘솔에서는](/help/sites-deploying/configuring-osgi.md) [Adobe Granite SAML](http://saml.xml.org/saml-specifications) 2.0 Authentication Handler라는 **SAML** 2.0 인증 처리기 구성에 대한 액세스 권한을 제공합니다. 다음 속성을 설정할 수 있습니다.
+[웹 콘솔에서는](/help/sites-deploying/configuring-osgi.md) Adobe Granite SAML [2.0 Authentication Handler라는](http://saml.xml.org/saml-specifications) SAML **2.0 인증 처리기 구성에 대한 액세스 권한을 제공합니다**. 다음 속성을 설정할 수 있습니다.
 
 >[!NOTE]
 >
 >SAML 2.0 인증 핸들러는 기본적으로 비활성화되어 있습니다. 핸들러를 활성화하려면 다음 속성 중 적어도 하나를 설정해야 합니다.
 >
->* ID 공급자 게시물 URL.
+>* ID 공급자 POST URL.
 >* 서비스 공급자 엔티티 ID.
 
 >
