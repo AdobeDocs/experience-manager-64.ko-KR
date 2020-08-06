@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 translation-type: tm+mt
 source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+workflow-type: tm+mt
+source-wordcount: '234'
+ht-degree: 6%
 
 ---
 
 
 # 좋아요 사용 {#using-liking}
 
-이 `Liking`구성 요소는 사용자가 포럼 내의 주석과 같은 특정 컨텐츠에 대한 의견을 표현할 수 있도록 하는 유용한 도구입니다. 구성 `Liking`요소를 사용하여 멤버는 하트 아이콘을 선택하여 긍정적인 의견을 표시합니다.
+이 `Liking`구성 요소는 사용자가 포럼 내의 댓글과 같은 특정 컨텐트에 대한 의견을 표현할 수 있도록 하는 유용한 도구입니다. 구성 요소 `Liking`를 사용하여 멤버는 하트 아이콘을 선택하여 긍정적인 의견을 표시합니다.
 
 ## 페이지에 좋아요 추가 {#adding-liking-to-a-page}
 
@@ -25,11 +28,11 @@ source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
 
 * `Communities / Liking`
 
-사용자가 좋아하는 기능과 관련된 위치와 같이 페이지에 드래그합니다.
+사용자가 좋아할만한 기능을 기준으로 하는 위치와 같이 페이지에 드래그합니다.
 
-필요한 정보를 보려면 커뮤니티 구성 [요소 기본 사항을 참조하십시오](basics.md).
+필요한 정보를 보려면 커뮤니티 구성 요소 [기본 사항을 방문하십시오](basics.md).
 
-필요한 [클라이언트측 라이브러리가](essentials-liking.md#essentials-for-client-side) `Liking` 포함되어 있으면 구성 요소가 표시되는 방식입니다.
+[필요한 클라이언트측 라이브러리가](essentials-liking.md#essentials-for-client-side) 포함되어 있으면 구성 요소가 표시되는 `Liking` 방식입니다.
 
 ![chlimage_1-93](assets/chlimage_1-93.png)
 
@@ -39,26 +42,32 @@ source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
 
 ![chlimage_1-94](assets/chlimage_1-94.png)
 
-텍스트 **[!UICONTROL 및 레이블]** 탭에서 좋아요를 기록하는 데 사용되는 속성을 지정합니다.
+텍스트 및 **[!UICONTROL 레이블]** 탭 아래에서 좋아요를 기록하는 데 사용되는 속성을 지정합니다.
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
-* **[!UICONTROL 긍정적인 응답 레이블]**(*필수*)긍정적인 응답을 위한 속성 이름입니다.
+* **[!UICONTROL 긍정적인 응답 레이블]**
+(
+*필수*) 긍정적인 응답을 위한 속성 이름입니다.
 
-* **[!UICONTROL 네거티브 응답 레이블]**(*필수*) 네거티브 응답의 속성 이름입니다.
+* **[!UICONTROL 부정적인 응답 레이블]**
+(
+*필수*) 네거티브 응답의 속성 이름입니다.
 
-* **[!UICONTROL 총계]**&#x200B;이름(*필수*) 투표 구성 요소의 이 인스턴스에 대한 내부 식별 가능 속성 이름입니다.
+* **[!UICONTROL Tally 이름]**
+(
+*필수*) 투표 구성 요소의 이 인스턴스에 대한 내부 식별 가능한 속성 이름입니다.
 
 ## 사이트 방문자 경험 {#site-visitor-experience}
 
 ### 구성원 {#members}
 
-멤버는 언제든지 자신의 모습을 바꿀 수 있습니다.
+회원은 언제든지 자신의 모습을 바꿀 수 있습니다.
 
 ### 익명 {#anonymous}
 
-익명 좋아요 기능은 지원되지 않습니다. 사이트 방문자는 등록(회원이 되기)하고 로그인하여 좋아요를 표시해야 합니다.
+익명 좋아요 기능은 지원되지 않습니다. 사이트 방문자는 등록(회원이 되기)하고 로그인해야 좋아지는 상황에 참여할 수 있습니다.
 
 ## 추가 정보 {#additional-information}
 
-개발자를 위한 기본 사항 좋아하기 [페이지에서 자세한](essentials-liking.md) 내용을 참조할 수 있습니다.
+개발자를 위한 필수 [제품](essentials-liking.md) 좋아요 페이지에 대한 자세한 내용이 나와 있습니다.
