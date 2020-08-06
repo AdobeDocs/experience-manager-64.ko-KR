@@ -1,8 +1,8 @@
 ---
 title: XDP 양식의 HTML5 미리 보기 생성
 seo-title: XDP 양식의 HTML5 미리 보기 생성
-description: LiveCycle Designer의 HTML 미리 보기 탭을 사용하여 양식에 표시되는 내용을 미리 볼 수 있습니다.
-seo-description: LiveCycle Designer의 HTML 미리 보기 탭을 사용하여 양식에 표시되는 내용을 미리 볼 수 있습니다.
+description: LiveCycle 디자이너의 미리 보기 HTML 탭을 사용하여 브라우저에 표시되는 양식을 미리 볼 수 있습니다.
+seo-description: LiveCycle 디자이너의 미리 보기 HTML 탭을 사용하여 브라우저에 표시되는 양식을 미리 볼 수 있습니다.
 uuid: d004e75d-e569-4e85-8dfa-5c411bc959af
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # XDP 양식의 HTML5 미리 보기 생성 {#generate-html-preview-of-an-xdp-form}
 
-AEM Forms Designer에서 양식을 디자인하는 동안 양식의 PDF 변환을 미리 볼 수 있을 뿐만 아니라 양식의 HTML5 변환을 미리 볼 수도 있습니다. HTML **미리 보기** 탭을 사용하여 브라우저에 표시되는 것처럼 양식을 미리 볼 수 있습니다.
+양식의 PDF 변환을 미리 보는 것 외에 AEM Forms Designer에서 양식을 디자인하는 동안 양식의 HTML5 변환을 미리 볼 수도 있습니다. HTML **미리 보기** 탭을 사용하여 브라우저에 표시되는 것처럼 양식을 미리 볼 수 있습니다.
 
 ## Designer에서 XDP 양식에 대한 HTML 미리 보기 활성화 {#html-preview-of-forms-in-forms-designer}
 
@@ -32,17 +32,17 @@ AEM Forms Designer에서 양식을 디자인하는 동안 양식의 PDF 변환�
 
 1. OSGi에서 실행되는 AEM Forms `https://[server]:[port]/system/console/configMgr` 로 이동 또는
 
-   `https://[server]:[port]/lc/system/console/configMgr` JEE에서 실행되는 AEM Forms.
+   `https://[server]:[port]/lc/system/console/configMgr` JEE를 달리는 AEM Forms.
 
 1. Apache Sling **Authentication Service** 구성을 찾아 클릭하여 편집 모드에서 엽니다.
 
 1. OSGi 또는 JEE에서 AEM Forms을 실행하는지 여부에 따라 **인증 요구 사항** 필드에 다음을 추가합니다.
 
-   * JEE의 AEM Forms
+   * AEM Forms 온 JEE
 
       * -/content/xfforms
       * -/etc/clientlibs
-   * OSGi의 AEM Forms
+   * AEM Forms 온 OSGi
 
       * -/content/xfforms
       * -/etc/clientlibs/fd/xfaforms
@@ -56,14 +56,14 @@ AEM Forms Designer에서 양식을 디자인하는 동안 양식의 PDF 변환�
 
 ### 보호 모드 비활성화 {#disable-protected-mode}
 
-기본적으로 [보호 모드는](/help/forms/using/get-xdp-pdf-documents-aem.md) 켜집니다. 프로덕션 환경에서 이 기능을 사용하도록 설정합니다. 개발 환경에서 HTML5 Forms를 디자인에서 미리 볼 수 있도록 비활성화할 수 있습니다. 비활성화하려면 다음 단계를 수행하십시오.
+기본적으로 [보호 모드는](/help/forms/using/get-xdp-pdf-documents-aem.md) 켜집니다. 프로덕션 환경에서 이 기능을 사용하도록 설정합니다. 개발 환경에서 HTML5 Forms을 디자인에서 미리 보기 위해 비활성화할 수 있습니다. 비활성화하려면 다음 단계를 수행하십시오.
 
 1. AEM 웹 콘솔에 관리자로 로그인합니다.
 
    * OSGi의 AEM Forms에 대한 URL `https://[server]:[port]/system/console/configMgr`
-   * JEE의 AEM Forms에 대한 URL은 `https://[server]:[port]/lc/system/console/configMgr`
+   * JEE에서 AEM Forms의 URL `https://[server]:[port]/lc/system/console/configMgr`
 
-1. 모바일 **[!UICONTROL 양식 구성을]** 열어 편집할 수 있습니다.
+1. 편집을 위해 **[!UICONTROL 모바일 Forms]** 구성을 엽니다.
 1. 보호 **[!UICONTROL 모드]** 옵션을 선택 취소하고 저장을 **[!UICONTROL 클릭합니다]**.
 
 ### AEM Forms 서버 세부 정보 제공 {#provide-details-of-aem-forms-server}
@@ -77,12 +77,12 @@ AEM Forms Designer에서 양식을 디자인하는 동안 양식의 PDF 변환�
 
       * `/content/xfaforms/profiles/default.html` (OSGi의 AEM Forms)
       * `/lc/content/xfaforms/profiles/default.html` (JEE의 AEM Forms)
-   * **Forms Manager 컨텍스트:** Forms Manager UI가 배포되는 컨텍스트 경로입니다. 기본값은 다음과 같습니다.
+   * **Forms 관리자 컨텍스트:** Forms 관리자 UI가 배포된 컨텍스트 경로입니다. 기본값은 다음과 같습니다.
 
       * `/aem/forms` (OSGi의 AEM Forms)
       * `/lc/forms` (JEE의 AEM Forms)
 
-   **참고:** *AEM Forms 서버가 작동 중이고 실행 중인지 확인합니다. HTML 미리 보기는 CRX 서버에 연결하여 미리 보기를*&#x200B;생성합니다&#x200B;*.*
+   **참고:** *AEM Forms 서버가 실행 중인지 확인합니다. HTML 미리 보기는 CRX 서버에 연결하여 미리 보기를*&#x200B;생성합니다&#x200B;*.*
 
    ![AEM Forms 디자이너 옵션 ](assets/server_options.png)
 
@@ -114,6 +114,6 @@ Designer를 사용하면 샘플 XML 데이터를 사용하여 양식을 미리 �
 
 ## 보관소에 있는 양식 미리 보기 {#html-preview-of-forms-in-forms-manager}
 
-AEM Forms에서 저장소에서 양식과 문서를 미리 볼 수 있습니다. 미리 보기는 최종 사용자가 양식에 대해 어떻게 표시되고 어떻게 작동하는지 정확하게 파악하는 데 도움이 됩니다.
+AEM Forms에서는 저장소에서 양식과 문서를 미리 볼 수 있습니다. 미리 보기는 최종 사용자가 양식에 대해 어떻게 표시되고 어떻게 작동하는지 정확하게 파악하는 데 도움이 됩니다.
 
 [**지원 문의&#x200B;**](https://www.adobe.com/account/sign-in.supportportal.html)
