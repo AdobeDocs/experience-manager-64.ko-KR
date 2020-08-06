@@ -1,6 +1,6 @@
 ---
-title: 주석 사용
-seo-title: 주석 사용
+title: 댓글 사용
+seo-title: 댓글 사용
 description: 댓글 기능을 사용하면 로그인한 사이트 방문자가 자신의 의견과 지식을 공유할 수 있습니다
 seo-description: 댓글 기능을 사용하면 로그인한 사이트 방문자가 자신의 의견과 지식을 공유할 수 있습니다
 uuid: 30fc48ac-134c-4acb-a65c-398855c93829
@@ -11,24 +11,27 @@ content-type: reference
 discoiquuid: b074ebfa-2894-4a2d-aa8e-28168049971a
 translation-type: tm+mt
 source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+workflow-type: tm+mt
+source-wordcount: '1008'
+ht-degree: 5%
 
 ---
 
 
-# 주석 사용 {#using-comments}
+# 댓글 사용 {#using-comments}
 
 ## 소개 {#introduction}
 
-댓글 기능은 로그인한 사이트 방문자(구성원)가 사이트의 컨텐츠와 관련된 의견과 지식을 공유할 수 있도록 하는 데 사용됩니다. 이 기능은 다른 기능에도 이미 있지만 웹 사이트에 추가할 수 있습니다.
+댓글 기능은 로그인 사이트 방문자(구성원)가 사이트의 컨텐츠에 대한 자신의 의견과 지식을 공유할 수 있도록 하는 데 사용됩니다. 이 기능은 다른 기능에는 이미 있지만 웹 사이트에 추가할 수 있습니다.
 
 설명서의 이 섹션에서는
 
-* 페이지에 `Comments`추가
-* 구성 `Comments`요소에 대한 구성 설정
+* 페이지 `Comments`에 추가
+* 구성 `Comments`요소의 구성 설정
 
 >[!NOTE]
 >
->댓글 게시는 지원되지 않습니다. 사이트 방문자는 등록(회원이 되기)하고 로그인해야 참여합니다.
+>댓글의 익명 게시는 지원되지 않습니다. 사이트 방문자는 등록(회원이 되기)하고 로그인해야 참여합니다.
 
 ## 페이지에 주석 추가 {#adding-comments-to-a-page}
 
@@ -36,9 +39,9 @@ source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
 
 * `Communities / Comments`
 
-사용자가 주석을 달 수 있는 기능과 관련된 위치 또는 간단히 페이지 하단에 있는 위치와 같이 페이지에 드래그합니다.
+사용자가 주석을 달 수 있는 기능과 관련된 위치 또는 페이지 하단에 있는 위치와 같이 페이지에 드래그합니다.
 
-필요한 정보를 보려면 커뮤니티 구성 [요소 기본 사항을 참조하십시오](basics.md).
+필요한 정보를 보려면 커뮤니티 구성 요소 [기본 사항을 방문하십시오](basics.md).
 
 [필요한 클라이언트측 라이브러리가](essentials-comments.md#essentials-for-client-side) 포함되어 있으면 `Comments`구성 요소가 표시되는 방식입니다.
 
@@ -56,19 +59,19 @@ source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
 
 ### 댓글 탭 {#comments-tab}
 
-댓글 **[!UICONTROL 탭 아래에서]** 방문자가 댓글을 입력하는 방법을 지정합니다.
+댓글 **[!UICONTROL 탭]** 아래에서 방문자가 댓글을 입력하는 방법을 지정합니다.
 
 * **[!UICONTROL 답글 허용]**
 
-   이 확인란을 선택하면 구성원이 기존 댓글에 답글을 달 수 있습니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 구성원이 기존 주석에 응답할 수 있습니다. 기본값은 선택 취소입니다.
 
 * **[!UICONTROL 페이지당 댓글]**
 
-   페이지당 표시되는 댓글 수와 표시된 답글 수를 제한합니다. 기본값은 10입니다.
+   표시된 답글 수와 페이지당 표시되는 댓글 수를 제한합니다. 기본값은 10입니다.
 
 * **[!UICONTROL 파일 업로드 허용]**
 
-   이 확인란을 선택하면 파일 업로드 옵션이 텍스트 입력 상자가 표시됩니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 파일 업로드 옵션이 텍스트 입력 상자로 표시됩니다. 기본값은 선택 취소입니다.
 
 * **[!UICONTROL 최대 파일 크기]**
 
@@ -80,19 +83,19 @@ source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
 
 * **[!UICONTROL 허용되는 파일 유형]**
 
-   파일 업로드 허용이 선택된 경우에만 관련성이 있습니다. &quot;점&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예:.jpg, .jpeg, .png, .doc, .docx, .pdf. 지정된 파일 유형이 있으면 지정되지 않은 파일 유형이 허용되지 않습니다. 모든 파일 유형이 허용되도록 기본값이 지정되지 않았습니다.
+   파일 업로드 허용이 선택된 경우에만 관련성이 있습니다. &quot;점&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예: .jpg, .jpeg, .png, .doc, .docx, .pdf. 파일 형식을 지정한 경우 지정하지 않은 파일 유형은 허용되지 않습니다. 모든 파일 유형이 허용되도록 기본값이 지정되지 않았습니다.
 
 * **[!UICONTROL 리치 텍스트 편집기]**
 
-   이 확인란을 선택하면 마크업에 댓글이 입력될 수 있습니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 마크업에 주석을 입력할 수 있습니다. 기본값은 선택 취소입니다.
 
 * **[!UICONTROL 투표 허용]**
 
-   이 확인란을 선택하면 위 또는 아래 투표 옵션이 텍스트 입력 상자가 표시됩니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 위 또는 아래 투표 옵션에는 텍스트 입력 상자가 표시됩니다. 기본값은 선택 취소입니다.
 
 * **[!UICONTROL 다음 허용]**
 
-   이 확인란을 선택하면 구성원이 주석을 따르도록 허용합니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 구성원이 댓글을 달 수 있습니다. 기본값은 선택 취소입니다.
 
 * **[!UICONTROL 배지 표시]**
 
@@ -100,7 +103,7 @@ source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
 
 ### 사용자 중재 탭 {#user-moderation-tab}
 
-사용자 중재 **[!UICONTROL 탭에서]** 게시된 댓글이 관리되는 방식을 지정합니다. 자세한 내용은 사용자 생성 [컨텐츠 중재를 참조하십시오](moderate-ugc.md).
+사용자 중재 **[!UICONTROL 탭]** 아래에서 게시된 댓글이 관리되는 방식을 지정합니다. 자세한 내용은 사용자 생성 [컨텐츠 중재를 참조하십시오](moderate-ugc.md).
 
 * **[!UICONTROL 사전 관리]**
 
@@ -120,11 +123,11 @@ source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
 
 * **[!UICONTROL 댓글에 플래그 지정]**
 
-   이 확인란을 선택하면 구성원이 댓글에 부적절한 플래그를 지정할 수 있습니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 구성원이 댓글에 부적절한 표시를 할 수 있습니다. 기본값은 선택 취소입니다.
 
 * **[!UICONTROL 플래그 이유 목록]**
 
-   이 확인란을 선택하면 구성원이 드롭다운 목록에서 선택할 수 있도록 허용되므로 댓글에 플래그를 지정하는 것이 적절하지 않습니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 멤버가 드롭다운 목록에서 선택할 수 있습니다. 이는 댓글에 대한 플래그 지정이 부적절하다는 이유를 나타냅니다. 기본값은 선택 취소입니다.
 
 * **[!UICONTROL 사용자 지정 플래그 이유]**
 
@@ -132,37 +135,37 @@ source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
 
 * **[!UICONTROL 관리 임계값]**
 
-   중재자에게 알림을 보내기 전에 구성원에게 댓글을 플래그를 지정해야 하는 횟수를 입력합니다. 기본값은 1회입니다.
+   중재자에게 알리기 전에 구성원이 댓글에 플래그를 지정해야 하는 횟수를 입력합니다. 기본값은 한 번(1)입니다.
 
 * **[!UICONTROL 플래그 지정 제한]**
 
-   댓글이 공개 보기에서 숨겨지기 전에 플래그를 지정해야 하는 횟수를 입력합니다. 이 수는 중재 임계값보다 크거나 같아야 **[!UICONTROL 합니다]**. 기본값은 5입니다.
+   댓글이 공개 보기에서 숨겨지기 전에 플래그가 달린 횟수를 입력합니다. 이 숫자는 중재 임계값보다 **[!UICONTROL 크거나 같아야 합니다]**. 기본값은 5입니다.
 
 ### 정렬 설정 탭 {#sort-settings-tab}
 
-[ **[!UICONTROL 정렬 설정]** ] 탭 아래에서 게시 주석이 표시될 때 정렬되는 방식을 지정합니다.
+정렬 설정 **[!UICONTROL 탭]** 아래에서, 표시할 때 게시된 댓글이 정렬되는 방식을 지정합니다.
 
 * **[!UICONTROL 정렬 필드]**
 
-   또는 중 하나를 선택하려면 아래로 `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`당기십시오 `Most Liked`.
+   아래로 끌어 하나 `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`또는 `Most Liked`.
 
 * **[!UICONTROL 정렬 순서]**
 
-   또는 중 하나를 선택하려면 아래로 `Ascending` 당깁니다 `Descending`.
+   또는 중 하나를 선택하려면 아래로 `Ascending` 당기십시오 `Descending`.
 
-### 사용자 정의 주석 유형으로 변경 {#changing-to-a-custom-comment-type}
+### 사용자 지정 댓글 유형으로 변경 {#changing-to-a-custom-comment-type}
 
-주석 리소스 유형을 변경하면 댓글 시스템은 더 이상 기본값을 사용하는 대신 개발자가 사용자 정의(확장)한 주석 인스턴스를 생성하지 않습니다.
+주석 리소스 유형을 변경하면 댓글 시스템은 더 이상 기본값을 사용하는 댓글의 인스턴스를 생성하지 않고 개발자가 사용자 정의(확장)한 댓글의 인스턴스가 생성됩니다.
 
-사용자 지정 리소스 유형이 알려지면 디자인 [모드로](../../help/sites-authoring/default-components-designmode.md) 전환한 후 가져온 `Comments` 구성 요소를 두 번 클릭하여 추가 탭이 있는 대화 상자를 엽니다.
+사용자 지정 리소스 유형이 알려지면 [디자인 모드를](../../help/sites-authoring/default-components-designmode.md) `Comments` 입력하고 배치된 구성 요소를 두 번 클릭하여 추가 탭이 있는 대화 상자를 엽니다.
 
-리소스 **[!UICONTROL 유형]** 탭에서 `Comments or Voting`구성 요소의 새 인스턴스에 대한 사용자 지정 resourceType을 지정합니다.
+리소스 **[!UICONTROL 유형]** 탭 아래에서 `Comments or Voting`구성 요소의 새 인스턴스에 대한 사용자 지정 resourceType을 지정합니다.
 
 ![chlimage_1-429](assets/chlimage_1-429.png)
 
 * **[!UICONTROL 댓글 리소스 유형]**
 
-   /apps에서 확장 `comment`구성 요소(단일 주석)의 resourceType으로 이동합니다. 예, `/apps/social/commons/components/hbs/comments/comment`
+   /apps의 확장 `comment`구성 요소(단일 주석)의 resourceType으로 이동합니다. 예, `/apps/social/commons/components/hbs/comments/comment`
 
    이 리소스는 방문자가 댓글을 게시할 때 생성된 UGC의 resourceType을 식별합니다.
 
@@ -174,7 +177,7 @@ source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
 
 * **[!UICONTROL 주석 시스템 리소스 유형]**
 
-   /apps에서 확장 `comments`구성 요소(주석 시스템)의 resourceType으로 이동합니다. 페이지 템플릿에 리소스(주석 노드)로 페이지에 추가되지 않고 기본 스크립트에 주석 시스템이 [동적으로 포함되어](scf.md#add-or-include-a-communities-component) 있지 않으면 비워 둡니다. 자세한 내용은 [{{include}} 헬퍼에](handlebars-helpers.md#include)대한 내용을 참조하십시오.
+   /apps에서 확장 `comments`구성 요소(댓글 시스템)의 resourceType으로 이동합니다. 페이지 템플릿에 리소스(주석 노드)로 페이지에 추가되지 않고 기본 스크립트에 주석 시스템이 [동적으로](scf.md#add-or-include-a-communities-component) 포함되지 않는 한 비워 둡니다. 자세한 내용은 [{{include}} 헬퍼에 대한 정보를 참조하십시오](handlebars-helpers.md#include).
 
 ## 사이트 방문자 경험 {#site-visitor-experience}
 
@@ -184,21 +187,21 @@ source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
 
 ### 구성원 {#members}
 
-사이트 방문자가 로그인하면 구성에 따라 로그인할 수 있습니다.
+사이트 방문자가 로그인하면 구성에 따라 로그인할 수 있습니다
 
-* 새 주석 게시
+* 새 댓글 게시
 * 자신의 주석 편집
 * 자신의 주석 삭제
 * 다른 사람의 주석 플래그 지정
 
 ### 익명 {#anonymous}
 
-로그인하지 않은 사이트 방문자는 게시된 댓글만 읽고, 지원되는 경우 번역할 수 있지만 댓글을 추가하거나 다른 사람의 댓글에 플래그를 지정할 수는 없습니다.
+로그인하지 않은 사이트 방문자는 게시된 댓글만 읽을 수 있고, 지원되는 경우 번역할 수 있으며, 댓글을 추가하거나 다른 사람의 주석에 플래그를 지정할 수는 없습니다.
 
 ## 추가 정보 {#additional-information}
 
-자세한 내용은 개발자를 위한 주석 필수 [사항](essentials-comments.md) 페이지에서 확인할 수 있습니다.
+개발자를 위한 주석 필수 [사항](essentials-comments.md) 페이지에는 자세한 정보가 나와 있습니다.
 
-게시된 댓글의 중재를 보려면 사용자 생성 [컨텐츠 중재를 참조하십시오](moderate-ugc.md).
+게시된 댓글의 중재를 보려면 사용자 생성 [컨텐트 중재를 참조하십시오](moderate-ugc.md).
 
-게시된 댓글 번역은 사용자 생성 [컨텐츠 번역을 참조하십시오](translate-ugc.md).
+게시된 댓글의 번역에 대해서는 사용자 생성 컨텐츠 [번역을 참조하십시오](translate-ugc.md).
