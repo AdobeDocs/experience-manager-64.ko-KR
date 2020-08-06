@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 71f16254-336f-41bf-bf75-f69ba1051d59
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '611'
+ht-degree: 94%
 
 ---
 
@@ -42,6 +45,7 @@ AEM의 다양한 영역에서 알림을 받을 수 있습니다. 예를 들어 �
 
    * [알림에 가입](#subscribing-to-notifications)
    * [알림 처리](#processing-your-notifications)
+
    ![chlimage_1-8](assets/chlimage_1-8.jpeg)
 
 ## 알림에 가입 {#subscribing-to-notifications}
@@ -60,12 +64,13 @@ AEM의 다양한 영역에서 알림을 받을 수 있습니다. 예를 들어 �
 
 1. 왼쪽 위 모서리에서 **구성...**&#x200B;을 클릭하여 구성 대화 상자를 엽니다.
 
-   ![screen_shot_2012-02-08at111056am](assets/screen_shot_2012-02-08at111056am.png)
+   ![screen_shot_2012-02-08at11056am](assets/screen_shot_2012-02-08at111056am.png)
 
 1. 알림 채널을 선택합니다.
 
    * **받은 편지함**: AEM 받은 편지함에 알림이 표시됩니다.
    * **이메일**: 사용자 프로필에 정의된 이메일 주소로 알림이 발송됩니다.
+
    >[!NOTE]
    >
    >이메일을 통해 알림을 받으려면 몇 가지 설정을 구성해야 합니다. 이메일 템플릿을 사용자 지정하거나 새 언어의 이메일 템플릿을 추가할 수도 있습니다. AEM에서 이메일 알림을 구성하려면 [이메일 알림 구성](/help/sites-administering/notification.md#configuringemailnotification)을 참조하십시오.
@@ -92,6 +97,7 @@ AEM의 다양한 영역에서 알림을 받을 수 있습니다. 예를 들어 �
       경로에 정의된 페이지의 작업에 대해서만 알림을 받으려면 **정확히 일치합니까?**&#x200B;를 **예**&#x200B;로 설정합니다.
 
    * 규칙을 허용하려면 **규칙**&#x200B;을 **허용**&#x200B;으로 설정합니다. **거부**&#x200B;로 설정하면 규칙이 거부되지만 제거되지는 않으므로 나중에 허용할 수 있습니다.
+
    정의를 제거하려면 표 셀을 클릭하여 행을 선택하고 **삭제**&#x200B;를 클릭합니다.
 
 1. **확인**&#x200B;을 클릭하여 구성을 저장합니다.
