@@ -214,7 +214,7 @@ JMX 콘솔을 사용하여 서비스를 관리하는 MBeans를 만드는 방법�
    * StartComment
    * WorkflowTitle
 
-## 보관소 {#repository}
+## 저장소 {#repository}
 
 CRX 저장소에 대한 정보
 
