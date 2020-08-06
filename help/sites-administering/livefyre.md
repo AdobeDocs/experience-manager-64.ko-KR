@@ -1,7 +1,7 @@
 ---
 title: Livefyre와 통합
 seo-title: Livefyre와 통합
-description: Livefyre의 업계 선도적인 큐레이션 기능을 AEM 6.4 인스턴스와 통합하여 소셜 네트워크에서 사이트에 중요한 UGC(사용자 생성 콘텐츠)를 신속하게 게시하는 방법을 알아보십시오.
+description: Livefyre의 업계 선도적인 큐레이션 기능을 AEM 6.4 인스턴스와 통합하여 소셜 네트워크에서 사이트에 중요한 UGC(사용자 생성 콘텐츠)를 신속하게 게시하는 방법을 살펴볼 수 있습니다.
 seo-description: AEM 6.4와 Livefyre를 통합하고 사용하는 방법을 알아봅니다.
 uuid: c355705d-6e0f-4a33-aa1f-d2d1c818aac0
 contentOwner: ind14750
@@ -20,13 +20,13 @@ ht-degree: 1%
 
 # Livefyre와 통합{#integrating-with-livefyre}
 
-Livefyre의 업계 선도적인 큐레이션 기능을 AEM 6.4 인스턴스와 통합하여 소셜 네트워크에서 사이트에 중요한 UGC(사용자 생성 콘텐츠)를 신속하게 게시하는 방법을 알아보십시오.
+Livefyre의 업계 선도적인 큐레이션 기능을 AEM 6.4 인스턴스와 통합하여 소셜 네트워크에서 사이트에 중요한 UGC(사용자 생성 콘텐츠)를 신속하게 게시하는 방법을 살펴볼 수 있습니다.
 
 ## 시작하기 {#getting-started}
 
 ### AEM용 Livefyre 패키지 설치 {#install-livefyre-package-for-aem}
 
-AEM 6.4에는 미리 설치된 Livefyre 기능 패키지 1.2.6이 포함되어 있습니다. 이 패키지에는 AEM Sites과의 제한된 Livefyre 통합만 포함되며 업데이트된 패키지를 설치하기 전에 제거해야 합니다. 최신 패키지를 사용하면 사이트, 자산 및 상거래 등 AEM과 Livefyre의 완벽한 통합을 경험할 수 있습니다.
+AEM 6.4에는 미리 설치된 Livefyre 기능 패키지 1.2.6이 포함되어 있습니다. 이 패키지는 AEM Sites와의 제한된 Livefyre 통합만 포함되며 업데이트된 패키지를 설치하기 전에 제거해야 합니다. 최신 패키지를 사용하면 Sites, Assets 및 Commerce 등 AEM과 Livefyre가 완벽하게 통합됩니다.
 
 >[!NOTE]
 >
@@ -41,17 +41,17 @@ AEM 6.4에는 미리 설치된 Livefyre 기능 패키지 1.2.6이 포함되어 �
 
 1. 소프트웨어 배포에서 Livefyre [패키지를 다운로드합니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
-1. 패키지 관리자에서 다운로드한 패키지를 설치합니다. AEM에서 소프트웨어 배포 및 패키지 사용 방법은 패키지 [를 사용한 작업 방법을 참조하십시오](/help/sites-administering/package-manager.md).
+1. 패키지 관리자에서 다운로드한 패키지를 설치합니다. AEM에서 소프트웨어 배포 및 패키지를 사용하는 방법에 대한 자세한 내용은 패키지 [를 사용한 작업 방법을 참조하십시오](/help/sites-administering/package-manager.md).
 
    ![livefyre-aem4-6-4](assets/livefyre-aem4-6-4.png)
 
-   이제 Livefyre-AEM 패키지가 설치됩니다. 통합 기능 사용을 시작하려면 먼저 Livefyre를 사용하도록 AEM을 구성해야 합니다.
+   이제 Livefyre-AEM 패키지가 설치되어 있습니다. 통합 기능 사용을 시작하려면 먼저 AEM에서 Livefyre를 사용하도록 구성해야 합니다.
 
    기능 팩에 대한 자세한 내용 및 릴리스 정보는 [기능 팩을 참조하십시오](https://helpx.adobe.com/experience-manager/6-3/release-notes/feature-packs-release-notes.html).
 
-### Livefyre를 사용하도록 AEM을 구성합니다. 구성 폴더 만들기 {#configure-aem-to-use-livefyre-create-a-configuration-folder}
+### Livefyre를 사용하도록 AEM 구성: 구성 폴더 만들기 {#configure-aem-to-use-livefyre-create-a-configuration-folder}
 
-1. AEM 홈페이지에서 왼쪽 레일의 **도구** 아이콘을 클릭한 다음 **일반 > 구성 브라우저로 이동합니다**.
+1. AEM 홈 페이지에서 왼쪽 레일에 있는 **도구** 아이콘을 클릭한 다음 **일반 > 구성 브라우저로 이동합니다**.
 1. 만들기 **를** 클릭하여 구성 만들기 대화 상자를 엽니다.
 1. 구성에 이름을 지정하고 **클라우드 구성 확인란을** 선택합니다.
 
@@ -59,11 +59,11 @@ AEM 6.4에는 미리 설치된 Livefyre 기능 패키지 1.2.6이 포함되어 �
 
    ![livefyre-aem-create-config-folder](assets/livefyre-aem-create-config-folder.png)
 
-### Livefyre를 사용하도록 AEM을 구성합니다. Livefyre 구성 만들기 {#configure-aem-to-use-livefyre-create-a-livefyre-configuration}
+### Livefyre를 사용하도록 AEM 구성: Livefyre 구성 만들기 {#configure-aem-to-use-livefyre-create-a-livefyre-configuration}
 
-조직의 Livefyre 라이선스 자격 증명을 사용하도록 AEM을 구성하여 Livefyre와 AEM 간의 통신을 허용합니다.
+조직의 Livefyre 라이선스 자격 증명을 사용하도록 AEM을 구성하여 Livefyre와 AEM 간에 통신을 허용합니다.
 
-1. AEM 홈페이지에서 왼쪽 레일의 **도구** 아이콘을 클릭한 다음 **배포 > Livefyre 구성으로 이동합니다**.
+1. AEM 홈 페이지의 왼쪽 레일에 있는 **도구** 아이콘을 클릭한 다음 **배포 > Livefyre 구성으로 이동합니다**.
 1. 새 Livefyre 구성을 만들 구성 폴더를 선택한 다음 **만들기를 클릭합니다**.
 
    ![create-livefyre-configuration1](assets/create-livefyre-configuration1.png)
@@ -88,18 +88,18 @@ AEM 6.4에는 미리 설치된 Livefyre 기능 패키지 1.2.6이 포함되어 �
 
 ### Single Sign-On 통합 사용자 정의 {#customize-single-sign-on-integration}
 
-AEM용 Livefyre 패키지에는 AEM Communities 프로파일과 Livefyre의 SSO 서비스 간 즉시 통합이 포함되어 있습니다.
+AEM용 Livefyre 패키지에는 AEM Communities 프로파일과 Livefyre의 SSO 서비스가 통합되어 있습니다.
 
 사용자가 AEM 사이트에 로그인하면 Livefyre 소셜 구성 요소에도 로그인됩니다. 로그아웃한 사용자가 인증이 필요한 Livefyre 구성 요소 기능(예: 사진 업로드)을 사용하려고 하면 Livefyre 구성 요소는 사용자 인증을 시작합니다.
 
 기본 인증 통합은 모든 사이트에 적합하지 않을 수 있습니다. 사이트 템플릿에서 인증 흐름을 가장 잘 맞추기 위해 기본 Livefyre 인증 위임을 무시하여 사용자 요구 사항을 충족할 수 있습니다. 다음 단계를 사용하십시오.
 
-1. CRXDE Lite를 사용하여 /apps/libs/social/integrations/livefyre/components/authorizablecomponent/authclientlib *을* /apps/social/integration/livefyre/components/authorizableconent/authclientlib에 복사합니다 **.
+1. CRXDE Lite을 사용하여 복사/libs/social/integrations/livefyre/components/authorizablecomponent/authclientlib *을* /apps/social/integration/livefyre/components/authorizableconent/authclientlib **.
 1. /apps/social/integrations/livefyre/components/authorizablecomponent/authclientlib/auth.js *를* 편집하고 저장하여 필요에 따라 Livefyre 인증 위임을 구현합니다.
 
    인증 위임 사용자 지정에 대한 자세한 내용은 ID [통합을 참조하십시오](https://answers.livefyre.com/developers/identity-integration/).
 
-   AEM Clientlibs에 대한 자세한 내용은 [클라이언트측 라이브러리 사용을 참조하십시오](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/clientlibs.html).
+   AEM Clientlibs에 대한 자세한 내용은 클라이언트측 라이브러리 [사용을 참조하십시오](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/clientlibs.html).
 
 ## AEM Sites과 함께 Livefyre 사용 {#use-livefyre-with-aem-sites}
 
@@ -126,7 +126,7 @@ Livefyre 구성 요소를 사이트 내의 페이지에 추가하기 전에 상�
 
 ### AEM 페이지의 Livefyre 구성 요소를 편집합니다. {#edit-a-livefyre-component-for-an-aem-page}
 
-Livefyre 스튜디오에서 Livefyre 구성 요소만 구성하고 편집할 수 있습니다. AEM에서:
+Livefyre 스튜디오에서 Livefyre 구성 요소만 구성하고 편집할 수 있습니다. AEM:
 
 1. 구성할 Livefyre 구성 요소를 클릭합니다.
 1. 구성 **아이콘** (공구모양)을 클릭하여 구성 대화 상자를 엽니다.
@@ -196,16 +196,16 @@ UGC를 AEM Assets으로 가져오려면 다음을 수행하십시오.
 
    Instagram의 경우 컨텐츠 소유자의 응답을 추적하고 해당 컨텐츠에 대한 권한이 부여된 경우 수동으로 권한을 부여해야 합니다.
 
-## AEM Commerce에서 Livefyre 사용 {#use-livefyre-with-aem-commerce}
+## AEM Commerce와 Livefyre 사용 {#use-livefyre-with-aem-commerce}
 
 ### AEM Commerce를 사용하여 제품 카탈로그를 Livefyre로 가져오기 {#import-product-catalogs-into-livefyre-with-aem-commerce}
 
-AEM Commerce 사용자는 기존 제품 카탈로그를 Livefyre에 원활하게 통합하여 Livefyre의 시각화 앱에서 사용자 참여를 높일 수 있습니다.
+AEM Commerce 사용자는 기존 제품 카탈로그를 Livefyre에 완벽하게 통합하여 Livefyre의 시각화 앱에서 사용자 참여를 높일 수 있습니다.
 
-제품 카탈로그를 가져온 후 제품은 Livefyre 인스턴스에서 실시간으로 표시됩니다. AEM Commerce 제품 카탈로그의 항목을 편집하거나 삭제하는 경우 변경 내용이 Livefye에서 자동으로 업데이트됩니다.
+제품 카탈로그를 가져온 후 제품은 Livefyre 인스턴스에서 실시간으로 표시됩니다. AEM Commerce 제품 카탈로그의 항목을 편집하거나 삭제하면 변경 내용이 Livefye에서 자동으로 업데이트됩니다.
 
 1. AEM 인스턴스에 최신 AEM 용 Livefyre 패키지가 설치되어 있는지 확인합니다.
-1. AEM 홈 페이지에서 AEM **Commerce로 이동합니다**.
+1. AEM 홈 페이지에서 **AEM Commerce로 이동합니다**.
 1. 새 컬렉션을 만들거나 기존 컬렉션을 사용합니다.
 1. 컬렉션 위로 마우스를 가져간 다음 **컬렉션 속성** (연필 아이콘)을 클릭합니다.
 1. Livefyre **에 동기화를 선택합니다**.
@@ -213,7 +213,7 @@ AEM Commerce 사용자는 기존 제품 카탈로그를 Livefyre에 원활하게
 
    페이지 접두사는 제품 페이지 검색이 시작되는 환경에서 루트 경로를 정의합니다. Livefyre는 연결된 해당 제품이 있는 첫 번째 페이지를 선택합니다. 여러 제품에 대해 다른 페이지를 가져오려면 여러 개의 컬렉션이 필요합니다.
 
-## Livefyre 앱에 대한 AEM 지원 매트릭스 {#aem-support-matrix-for-livefyre-apps}
+## AEM Support Matrix for Livefyre 앱 {#aem-support-matrix-for-livefyre-apps}
 
 | Livefyre 앱 | AEM 6.1 | AEM 6.2 | AEM 6.3 | AEM 6.4 |
 |---|---|---|---|---|
