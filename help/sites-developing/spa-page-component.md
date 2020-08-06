@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5d607b9f-584b-4ffc-ab0b-d0318dc69dec
 translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+workflow-type: tm+mt
+source-wordcount: '783'
+ht-degree: 3%
 
 ---
 
@@ -31,7 +34,7 @@ SPA용 페이지 구성 요소는 JSP 또는 HTL 파일 및 리소스 객체를 
 
 ## 페이지 모델 관리 {#page-model-management}
 
-페이지 모델의 해상도 및 관리는 제공된 [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) 모듈로 위임됩니다. SPA는 초기화를 통해 초기 페이지 모델을 가져오고 모델 업데이트를 등록하도록 `PageModelManager` 모듈(작성자가 페이지 편집기를 통해 페이지를 편집할 때 주로 생성됨)과 상호 작용해야 합니다. SPA 프로젝트 `PageModelManager` 에서 npm 패키지로 이용할 수 있습니다. AEM과 SPA의 인터프리터가 되는 것 `PageModelManager` 은 SPA를 동반하기 위한 것입니다.
+페이지 모델의 해상도 및 관리는 제공된 [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) 모듈로 위임됩니다. SPA는 초기화를 통해 초기 페이지 모델을 가져오고 모델 업데이트를 등록하도록 `PageModelManager` 모듈(작성자가 페이지 편집기를 통해 페이지를 편집할 때 주로 생성됨)과 상호 작용해야 합니다. SPA 프로젝트 `PageModelManager` 에서 npm 패키지로 이용할 수 있습니다. AEM과 SPA의 통역 역할을 하는 SPA와 함께 `PageModelManager` 하는 것입니다.
 
 페이지를 작성할 수 있도록 하려면 SPA와 페이지 편집기 간의 통신 채널을 제공하기 위해 이름이 지정된 클라이언트 라이브러리를 추가해야 `cq.authoring.pagemodel.messaging` 합니다. SPA 페이지 구성 요소가 페이지 wcm/core 구성 요소에서 상속되는 경우 클라이언트 라이브러리 카테고리를 사용할 수 있도록 하는 다음과 같은 옵션이 `cq.authoring.pagemodel.messaging` 있습니다.
 
@@ -42,7 +45,7 @@ SPA용 페이지 구성 요소는 JSP 또는 HTL 파일 및 리소스 객체를 
 
 ## 통신 데이터 유형 {#communication-data-type}
 
-통신 데이터 유형은 속성을 사용하여 AEM 페이지 구성 요소 내의 HTML 요소를 `data-cq-datatype` 설정합니다. 통신 데이터 유형이 JSON으로 설정되면 GET 요청은 구성 요소의 Sling Model 끝점에 도달합니다. 페이지 편집기에서 업데이트가 발생하면 업데이트된 구성 요소의 JSON 표현이 페이지 모델 라이브러리로 전송됩니다. 그런 다음 페이지 모델 라이브러리가 업데이트 SPA에 경고를 표시합니다.
+통신 데이터 유형은 속성을 사용하여 AEM 페이지 구성 요소 내의 HTML 요소를 `data-cq-datatype` 설정합니다. 통신 데이터 유형이 JSON으로 설정되면 GET 요청이 구성 요소의 Sling Model 끝점에 도달합니다. 페이지 편집기에서 업데이트가 발생하면 업데이트된 구성 요소의 JSON 표현이 페이지 모델 라이브러리로 전송됩니다. 그런 다음 페이지 모델 라이브러리가 업데이트 SPA에 경고를 표시합니다.
 
 **SPA 페이지 구성 요소 -`body.html`**
 
@@ -92,7 +95,7 @@ SPA 컨텐츠를 설명하는 메타 리소스 속성:
 >
 >이 문서에서는 데모용으로만 We.Retail Journal 앱을 사용합니다. 어떤 프로젝트 작업에도 사용해서는 안 됩니다.
 >
->모든 AEM 프로젝트는 [React 또는 Angular를 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 AEM Project Tranype](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)을 활용해야 합니다. AEM의 모든 SPA 프로젝트는 SPA Starter Kit용 Maven 원형형을 기반으로 해야 합니다.
+>모든 AEM 프로젝트는 [](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)AEM Project Tranype을 활용해야 합니다. 이 프로젝트는 React 또는 Angular를 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용합니다. AEM의 모든 SPA 프로젝트는 SPA Starter Kit용 Maven 원형형을 기반으로 해야 합니다.
 
 ## 페이지 편집기 오버레이 동기화 {#page-editor-overlay-synchronization}
 
@@ -100,7 +103,7 @@ SPA 컨텐츠를 설명하는 메타 리소스 속성:
 
 ## Sling 모델 JSON 내보내기 구조 구성 {#sling-model-json-exported-structure-configuration}
 
-라우팅 기능이 활성화되면 AEM 탐색 구성 요소의 JSON 내보내기 덕분에 SPA의 JSON 내보내기에 애플리케이션의 다른 경로가 포함되어 있는 것으로 가정합니다. AEM 탐색 구성 요소의 JSON 출력은 다음 두 속성을 통해 SPA의 루트 페이지 컨텐츠 정책에 구성할 수 있습니다.
+라우팅 기능이 활성화되면 AEM 탐색 구성 요소의 JSON 내보내기 덕분에 SPA의 JSON 내보내기에 애플리케이션의 서로 다른 경로가 포함되어 있는 것으로 가정합니다. AEM 탐색 구성 요소의 JSON 출력은 다음 두 속성을 통해 SPA의 루트 페이지 컨텐츠 정책에 구성할 수 있습니다.
 
 * `structureDepth`: 내보낸 트리 깊이에 해당하는 숫자
 * `structurePatterns`: 내보낼 페이지에 해당하는 레익스의 배열을 재구성합니다.
