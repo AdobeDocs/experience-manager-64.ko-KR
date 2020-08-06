@@ -95,7 +95,7 @@ ht-degree: 2%
 
    ![링크 공유 보고서의 세부 사항 페이지](assets/link_share.png)
 
-1. 도구 모음 **[!UICONTROL 에서]** 다음을 클릭합니다.
+1. Click **[!UICONTROL Next]** from the toolbar.
 
 1. 열 **[!UICONTROL 구성]** 페이지에서 기본적으로 보고서에 일부 열이 표시되도록 선택됩니다. 열을 더 선택할 수 있습니다. 보고서에서 제외하려면 선택한 열을 선택 취소합니다.
 
@@ -105,7 +105,7 @@ ht-degree: 2%
 
    ![보고서 열 선택 또는 선택 취소](assets/custom_columns.png)
 
-1. 도구 **[!UICONTROL 모음에서]** 만들기를 클릭합니다. 보고서 생성이 시작되었음을 알리는 메시지가 표시됩니다.
+1. Click **[!UICONTROL Create]** from the toolbar. 보고서 생성이 시작되었음을 알리는 메시지가 표시됩니다.
 1. [ [!UICONTROL 자산 보고서] ] 페이지에서 보고서 생성 상태는 보고서 작업의 현재 상태(예: [!UICONTROL 성공], [!UICONTROL 실패], 큐에 [!UICONTROL 있는 작업, 또는 예약된Facebook]으로 예약된Facebook )를 기반으로 합니다. 동일한 상태가 알림 받은 편지함에 나타납니다.보고서 페이지를 보려면 보고서 링크를 클릭하십시오. 또는 보고서를 선택하고 도구 모음에서 **[!UICONTROL 보기를]** 클릭합니다.
 
    ![생성된 보고서](assets/report_page.png)
@@ -146,7 +146,7 @@ ht-degree: 2%
 
    사용자 지정 열을 더 추가하려면 **[!UICONTROL 추가를]** 클릭하고 5단계와 6단계를 반복합니다.
 
-1. 도구 **[!UICONTROL 모음에서]** 만들기를 클릭합니다. 보고서 생성이 시작되었음을 알리는 메시지가 표시됩니다.
+1. Click **[!UICONTROL Create]** from the toolbar. 보고서 생성이 시작되었음을 알리는 메시지가 표시됩니다.
 
 ## 제거 서비스 구성 {#configure-purging-service}
 
