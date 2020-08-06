@@ -22,7 +22,7 @@ ht-degree: 0%
 
 **암호화 서비스 정보**
 
-암호화 서비스를 사용하면 문서를 암호화하고 해독할 수 있습니다. 문서가 암호화되면 해당 내용이 읽을 수 없게 됩니다. 권한이 있는 사용자는 문서를 해독하여 콘텐트에 액세스할 수 있습니다. PDF 문서가 암호로 암호화되어 있는 경우 Adobe Reader 또는 Adobe Acrobat에서 문서를 보기 전에 사용자가 열기 암호를 지정해야 합니다. 마찬가지로 PDF 문서가 인증서로 암호화된 경우 사용자는 PDF 문서를 암호화하는 데 사용한 인증서(개인 키)에 해당하는 공개 키로 PDF 문서를 해독해야 합니다.
+암호화 서비스를 사용하면 문서를 암호화하고 해독할 수 있습니다. 문서가 암호화되면 해당 내용이 읽을 수 없게 됩니다. 권한이 있는 사용자는 문서를 해독하여 콘텐트에 액세스할 수 있습니다. PDF 문서가 암호로 암호화되어 있는 경우 사용자가 해당 문서를 Adobe Reader 또는 Adobe Acrobat에서 보기 전에 열린 암호를 지정해야 합니다. 마찬가지로 PDF 문서가 인증서로 암호화된 경우 사용자는 PDF 문서를 암호화하는 데 사용한 인증서(개인 키)에 해당하는 공개 키로 PDF 문서를 해독해야 합니다.
 
 암호화 서비스를 사용하여 이러한 작업을 수행할 수 있습니다.
 
@@ -39,11 +39,11 @@ ht-degree: 0%
 
 ## 암호로 PDF 문서 암호화 {#encrypting-pdf-documents-with-a-password}
 
-암호를 사용하여 PDF 문서를 암호화할 때 사용자는 암호를 지정하여 Adobe Reader 또는 Acrobat에서 PDF 문서를 열어야 합니다. 또한 PDF 문서에 디지털 서명을 하는 등 다른 AEM Forms 작업을 수행하려면 먼저 암호로 암호화된 PDF 문서의 잠금을 해제해야 합니다.
+암호로 PDF 문서를 암호화할 때 사용자는 암호를 지정하여 Adobe Reader 또는 Acrobat에서 PDF 문서를 열어야 합니다. 또한 PDF 문서에 디지털 서명을 하는 등 다른 AEM Forms 작업을 수행하기 전에 암호로 암호화된 PDF 문서의 잠금을 해제해야 합니다.
 
 >[!NOTE]
 >
->암호화된 PDF 문서를 AEM Forms 저장소로 업로드하면 PDF 문서의 암호를 해독하여 XDP 콘텐츠를 추출할 수 없습니다. 문서를 AEM Forms 저장소로 업로드하기 전에 암호화하지 않는 것이 좋습니다. (리소스 [쓰기를 참조하십시오](/help/forms/developing/aem-forms-repository.md#writing-resources).)
+>암호화된 PDF 문서를 AEM Forms 저장소에 업로드하면 PDF 문서의 암호를 해독하여 XDP 컨텐츠를 추출할 수 없습니다. AEM Forms 저장소에 업로드하기 전에 문서를 암호화하지 않는 것이 좋습니다. (리소스 [쓰기를 참조하십시오](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
 >[!NOTE]
 >
@@ -69,8 +69,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (AEM Forms가 JBoss에 배포된 경우 필요)
-* jbossall-client.jar(JBoss에 AEM Forms가 배포된 경우 필요)
+* adobe-utilities.jar (AEM Forms이 JBoss에 배포된 경우 필요)
+* jbossall-client.jar(AEM Forms이 JBoss에 배포된 경우 필요)
 
 **암호화 클라이언트 API 개체 만들기**
 
@@ -141,7 +141,7 @@ PDF 문서를 암호화할 때 보안 문서와 연관된 권한을 지정할 �
    * 개체의 메서드를 호출하고 암호화할 문서 리소스를 지정하는 `PasswordEncryptionOptionSpec` `setEncryptOption` `PasswordEncryptionOption` 열거형 값을 전달하여 암호화할 PDF 문서 리소스를 지정합니다. 예를 들어 메타데이터 및 첨부 파일을 포함하여 전체 PDF 문서를 암호화하려면 을 지정합니다 `PasswordEncryptionOption.ALL`.
    * 생성자를 사용하여 암호화 권한을 저장하는 `java.util.List` 객체를 `ArrayList` 만듭니다.
    * 개체 &#39;s 메서드 `java.util.List` `add` 를 호출하고 설정하려는 권한에 해당하는 열거형 값을 전달하여 권한을 지정합니다. 예를 들어 사용자가 PDF 문서에 있는 데이터를 복사할 수 있는 권한을 설정하려면 을 지정합니다 `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. 설정할 각 권한에 대해 이 단계를 반복합니다.
-   * 개체의 메서드를 호출하고 Acrobat 호환성 수준을 지정하는 열거형 값을 전달하여 `PasswordEncryptionOptionSpec` `setCompatability` Acrobat 호환성 옵션을 지정합니다. For example, you can specify `PasswordEncryptionCompatability.ACRO_7`.
+   * 개체의 메서드를 호출하고 Acrobat 호환성 수준을 지정하는 열거형 값을 전달하여 Acrobat 호환성 옵션을 지정합니다. `PasswordEncryptionOptionSpec` `setCompatability` For example, you can specify `PasswordEncryptionCompatability.ACRO_7`.
    * 사용자가 `PasswordEncryptionOptionSpec` 개체의 메서드를 호출하고 열린 암호를 나타내는 문자열 값을 전달하여 암호화된 PDF 문서를 열 수 있도록 하는 암호 값 `setDocumentOpenPassword` 을 지정합니다.
    * 개체의 메서드를 호출하고 마스터 암호를 나타내는 문자열 값을 전달하여 사용자가 PDF 문서에서 암호화 `PasswordEncryptionOptionSpec` `setPermissionPassword` 를 제거할 수 있도록 하는 마스터 암호 값을 지정합니다.
 
@@ -184,7 +184,7 @@ PDF 문서를 암호화할 때 보안 문서와 연관된 권한을 지정할 �
 1. 암호화 클라이언트 API 개체를 만듭니다.
 
    * 기본 생성자를 사용하여 `EncryptionServiceClient` 개체를 만듭니다.
-   * 생성자를 사용하여 `EncryptionServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스(예: `http://localhost:8080/soap/services/EncryptionService?WSDL`.)로 전달합니다. 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * 생성자를 사용하여 `EncryptionServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/EncryptionService?WSDL`.) 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
    * 필드의 값을 `System.ServiceModel.BasicHttpBinding` 가져와 개체를 `EncryptionServiceClient.Endpoint.Binding` 만듭니다. 반환 값을 다음으로 캐스팅합니다 `BasicHttpBinding`.
    * 개체 `System.ServiceModel.BasicHttpBinding` 필드를 (으)로 `MessageEncoding` 설정합니다 `WSMessageEncoding.Mtom`. 이 값을 사용하면 MTOM이 사용됩니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
@@ -206,7 +206,7 @@ PDF 문서를 암호화할 때 보안 문서와 연관된 권한을 지정할 �
 
    * 생성자를 사용하여 `PasswordEncryptionOptionSpec` 개체를 만듭니다.
    * 개체의 데이터 멤버에 열거형 값을 할당하여 암호화할 PDF 문서 리소스 `PasswordEncryptionOption` 를 `PasswordEncryptionOptionSpec` `encryptOption` 지정합니다. 메타데이터와 첨부 파일을 포함하여 전체 PDF를 암호화하려면 이 데이터 구성원 `PasswordEncryptionOption.ALL` 에게 할당합니다.
-   * 개체의 데이터 멤버에 열거형 값을 할당하여 Acrobat 호환성 옵션을 `PasswordEncryptionCompatability``PasswordEncryptionOptionSpec` `compatability` 지정합니다. 예를 들어 이 데이터 멤버 `PasswordEncryptionCompatability.ACRO_7` 에 할당합니다.
+   * 개체 `PasswordEncryptionCompatability` `PasswordEncryptionOptionSpec` `compatability` 데이터 멤버에 열거형 값을 할당하여 Acrobat 호환성 옵션을 지정합니다. 예를 들어 이 데이터 멤버 `PasswordEncryptionCompatability.ACRO_7` 에 할당합니다.
    * 사용자가 `PasswordEncryptionOptionSpec` 개체의 데이터 멤버에 열린 암호를 나타내는 문자열 값을 할당하여 암호화된 PDF 문서를 열 수 있도록 해주는 암호 값을 `documentOpenPassword` 지정합니다.
    * 개체의 데이터 멤버에 마스터 암호를 나타내는 문자열 값을 할당하여 사용자가 PDF 문서에서 암호화를 제거할 수 있도록 `PasswordEncryptionOptionSpec` 암호 값을 `permissionPassword` 지정합니다.
 
@@ -247,7 +247,7 @@ PDF 문서를 암호화할 때 보안 문서와 연관된 권한을 지정할 �
 
 >[!NOTE]
 >
->암호화된 PDF 문서를 AEM Forms 저장소로 업로드하면 PDF 문서의 암호를 해독하여 XDP 콘텐츠를 추출할 수 없습니다. 문서를 AEM Forms 저장소로 업로드하기 전에 암호화하지 않는 것이 좋습니다. (리소스 [쓰기를 참조하십시오](/help/forms/developing/aem-forms-repository.md#writing-resources).)
+>암호화된 PDF 문서를 AEM Forms 저장소에 업로드하면 PDF 문서의 암호를 해독하여 XDP 컨텐츠를 추출할 수 없습니다. AEM Forms 저장소에 업로드하기 전에 문서를 암호화하지 않는 것이 좋습니다. (리소스 [쓰기를 참조하십시오](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
 >[!NOTE]
 >
@@ -255,7 +255,7 @@ PDF 문서를 암호화할 때 보안 문서와 연관된 권한을 지정할 �
 
 >[!NOTE]
 >
->암호화 서비스에 대한 자세한 내용은 AEM Forms [에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+>암호화 서비스에 대한 자세한 내용은 AEM Forms [용 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### 단계 요약 {#summary_of_steps-1}
 
@@ -278,8 +278,8 @@ PDF 문서를 암호화할 때 보안 문서와 연관된 권한을 지정할 �
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
-* jbossall-client.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
+* adobe-utilities.jar (AEM Forms이 JBoss Application Server에 배포된 경우 필요)
+* jbossall-client.jar (AEM Forms이 JBoss 응용 프로그램 서버에 배포된 경우 필요)
 
 **암호화 클라이언트 API 개체 만들기**
 
@@ -399,7 +399,7 @@ PDF 문서를 암호화할 때 보안 문서와 연관된 권한을 지정할 �
 1. 암호화 클라이언트 API 개체를 만듭니다.
 
    * 기본 생성자를 사용하여 `EncryptionServiceClient` 개체를 만듭니다.
-   * 생성자를 사용하여 `EncryptionServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스(예: `http://localhost:8080/soap/services/EncryptionService?WSDL`.)로 전달합니다. 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * 생성자를 사용하여 `EncryptionServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/EncryptionService?WSDL`.) 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
    * 필드의 값을 `System.ServiceModel.BasicHttpBinding` 가져와 개체를 `EncryptionServiceClient.Endpoint.Binding` 만듭니다. 반환 값을 다음으로 캐스팅합니다 `BasicHttpBinding`.
    * 개체 `System.ServiceModel.BasicHttpBinding` 필드를 (으)로 `MessageEncoding` 설정합니다 `WSMessageEncoding.Mtom`. 이 값을 사용하면 MTOM이 사용됩니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
@@ -434,7 +434,7 @@ PDF 문서를 암호화할 때 보안 문서와 연관된 권한을 지정할 �
 
    * 생성자를 사용하여 `CertificateEncryptionOptionSpec` 개체를 만듭니다.
    * 개체의 데이터 멤버에 열거형 값을 할당하여 암호화할 PDF 문서 리소스 `CertificateEncryptionOption` 를 `CertificateEncryptionOptionSpec` `option` 지정합니다. 메타데이터와 첨부 파일을 포함하여 전체 PDF 문서를 암호화하려면 이 데이터 구성원 `CertificateEncryptionOption.ALL` 에 할당합니다.
-   * 개체의 데이터 멤버에 열거형 값을 할당하여 Acrobat 호환성 옵션을 `CertificateEncryptionCompatibility``CertificateEncryptionOptionSpec` `compat` 지정합니다. 예를 들어 이 데이터 멤버 `CertificateEncryptionCompatibility.ACRO_7` 에 할당합니다.
+   * 개체 `CertificateEncryptionCompatibility` `CertificateEncryptionOptionSpec` `compat` 데이터 멤버에 열거형 값을 할당하여 Acrobat 호환성 옵션을 지정합니다. 예를 들어 이 데이터 멤버 `CertificateEncryptionCompatibility.ACRO_7` 에 할당합니다.
 
 1. 인증서로 암호화된 PDF 문서를 만듭니다.
 
@@ -463,7 +463,7 @@ PDF 문서를 암호화할 때 보안 문서와 연관된 권한을 지정할 �
 
 ## 인증서 기반 암호화 제거 {#removing-certificate-based-encryption}
 
-PDF 문서에서 인증서 기반의 암호화를 제거하여 Adobe Reader 또는 Acrobat에서 PDF 문서를 열 수 있습니다. 인증서로 암호화된 PDF 문서에서 암호화를 제거하려면 공개 키를 참조해야 합니다. PDF 문서에서 암호화를 제거한 후에는 더 이상 안전하지 않습니다.
+PDF 문서에서 인증서 기반의 암호화를 제거함으로써 사용자는 Adobe Reader 또는 Acrobat에서 PDF 문서를 열 수 있습니다. 인증서로 암호화된 PDF 문서에서 암호화를 제거하려면 공개 키를 참조해야 합니다. PDF 문서에서 암호화를 제거한 후에는 더 이상 안전하지 않습니다.
 
 >[!NOTE]
 >
@@ -488,8 +488,8 @@ PDF 문서에서 인증서 기반 암호화를 제거하려면 다음 단계를 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
-* jbossall-client.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
+* adobe-utilities.jar (AEM Forms이 JBoss Application Server에 배포된 경우 필요)
+* jbossall-client.jar (AEM Forms이 JBoss 응용 프로그램 서버에 배포된 경우 필요)
 
 **암호화 서비스 클라이언트 만들기**
 
@@ -580,7 +580,7 @@ PDF 문서에서 인증서 기반 암호화를 제거하려면 다음 단계를 
 1. 암호화 서비스 클라이언트를 만듭니다.
 
    * 기본 생성자를 사용하여 `EncryptionServiceClient` 개체를 만듭니다.
-   * 생성자를 사용하여 `EncryptionServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스(예: `http://localhost:8080/soap/services/EncryptionService?WSDL`.)로 전달합니다. 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * 생성자를 사용하여 `EncryptionServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/EncryptionService?WSDL`.) 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
    * 필드의 값을 `System.ServiceModel.BasicHttpBinding` 가져와 개체를 `EncryptionServiceClient.Endpoint.Binding` 만듭니다. 반환 값을 다음으로 캐스팅합니다 `BasicHttpBinding`.
    * 개체 `System.ServiceModel.BasicHttpBinding` 필드를 (으)로 `MessageEncoding` 설정합니다 `WSMessageEncoding.Mtom`. 이 값을 사용하면 MTOM이 사용됩니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
@@ -624,11 +624,11 @@ PDF 문서에서 인증서 기반 암호화를 제거하려면 다음 단계를 
 
 ## 암호 암호화 제거 {#removing-password-encryption}
 
-암호 기반 암호화를 PDF 문서에서 제거하여 암호를 지정하지 않고도 Adobe Reader 또는 Acrobat에서 PDF 문서를 열 수 있습니다. PDF 문서에서 암호 기반 암호화를 제거한 후에는 문서가 더 이상 안전하지 않습니다.
+암호 기반 암호화를 PDF 문서에서 제거하여 사용자가 암호를 지정하지 않고도 Adobe Reader 또는 Acrobat에서 PDF 문서를 열 수 있습니다. PDF 문서에서 암호 기반 암호화를 제거한 후에는 문서가 더 이상 안전하지 않습니다.
 
 >[!NOTE]
 >
->암호화 서비스에 대한 자세한 내용은 AEM Forms [에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+>암호화 서비스에 대한 자세한 내용은 AEM Forms [용 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### 단계 요약 {#summary_of_steps-3}
 
@@ -649,8 +649,8 @@ PDF 문서에서 암호 기반 암호화를 제거하려면 다음 단계를 수
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (AEM Forms가 JBoss에 배포된 경우 필요)
-* jbossall-client.jar(JBoss에 AEM Forms가 배포된 경우 필요)
+* adobe-utilities.jar (AEM Forms이 JBoss에 배포된 경우 필요)
+* jbossall-client.jar(AEM Forms이 JBoss에 배포된 경우 필요)
 
 **암호화 서비스 클라이언트 만들기**
 
@@ -729,7 +729,7 @@ PDF 문서에서 암호 기반 암호화를 제거하려면 다음 단계를 수
 1. 암호화 서비스 클라이언트를 만듭니다.
 
    * 기본 생성자를 사용하여 `EncryptionServiceClient` 개체를 만듭니다.
-   * 생성자를 사용하여 `EncryptionServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스(예: `http://localhost:8080/soap/services/EncryptionService?WSDL`.)로 전달합니다. 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * 생성자를 사용하여 `EncryptionServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/EncryptionService?WSDL`.) 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
    * 필드의 값을 `System.ServiceModel.BasicHttpBinding` 가져와 개체를 `EncryptionServiceClient.Endpoint.Binding` 만듭니다. 반환 값을 다음으로 캐스팅합니다 `BasicHttpBinding`.
    * 개체 `System.ServiceModel.BasicHttpBinding` 필드를 (으)로 `MessageEncoding` 설정합니다 `WSMessageEncoding.Mtom`. 이 값을 사용하면 MTOM이 사용됩니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
@@ -771,7 +771,7 @@ PDF 문서에서 암호 기반 암호화를 제거하려면 다음 단계를 수
 
 ## 암호화된 PDF 문서 잠금 해제 {#unlocking-encrypted-pdf-documents}
 
-암호 암호화 또는 인증서 암호화 PDF 문서의 잠금을 해제해야 다른 AEM Forms 작업을 수행할 수 있습니다. 암호화된 PDF 문서에서 작업을 수행하려고 하면 예외가 생성됩니다. 암호화된 PDF 문서의 잠금을 해제하면 하나 이상의 작업을 수행할 수 있습니다. 이러한 작업은 Acrobat Reader DC 확장 서비스 등의 다른 서비스에 속할 수 있습니다.
+암호로 암호화되거나 인증서로 암호화된 PDF 문서의 잠금을 해제해야 다른 AEM Forms 작업을 수행할 수 있습니다. 암호화된 PDF 문서에서 작업을 수행하려고 하면 예외가 생성됩니다. 암호화된 PDF 문서의 잠금을 해제하면 하나 이상의 작업을 수행할 수 있습니다. 이러한 작업은 Acrobat Reader DC 익스텐션 서비스와 같은 다른 서비스에 속할 수 있습니다.
 
 >[!NOTE]
 >
@@ -796,8 +796,8 @@ PDF 문서에서 암호 기반 암호화를 제거하려면 다음 단계를 수
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
-* jbossall-client.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
+* adobe-utilities.jar (AEM Forms이 JBoss Application Server에 배포된 경우 필요)
+* jbossall-client.jar (AEM Forms이 JBoss 응용 프로그램 서버에 배포된 경우 필요)
 
 **암호화 서비스 클라이언트 만들기**
 
@@ -815,7 +815,7 @@ PDF 문서에서 암호 기반 암호화를 제거하려면 다음 단계를 수
 
 **AEM Forms 작업 수행**
 
-암호화된 PDF 문서의 잠금을 해제하면 해당 문서에 사용 권한을 적용하는 등의 다른 서비스 작업을 수행할 수 있습니다. 이 작업은 Acrobat Reader DC Extensions 서비스에 속합니다.
+암호화된 PDF 문서의 잠금을 해제하면 해당 문서에 사용 권한을 적용하는 등의 다른 서비스 작업을 수행할 수 있습니다. 이 작업은 Acrobat Reader DC 확장 서비스에 속합니다.
 
 **참고 항목**
 
@@ -861,11 +861,11 @@ PDF 문서에서 암호 기반 암호화를 제거하려면 다음 단계를 수
    * 인증서로 암호화된 PDF 문서를 포함하는 `com.adobe.idp.Document` 개체입니다.
    * PDF 문서를 암호화하는 데 사용되는 개인 키에 해당하는 공개 키의 별칭 이름을 지정하는 문자열 값.
 
-   및 메서드 `unlockPDFUsingPassword` 모두 작업을 수행하기 위해 다른 AEM Forms Java 메서드에 전달하는 `unlockPDFUsingCredential` `com.adobe.idp.Document` 개체를 반환합니다.
+   및 메서드 `unlockPDFUsingPassword` 는 작업을 수행하기 위해 다른 AEM Forms Java 메서드에 전달하는 `unlockPDFUsingCredential` `com.adobe.idp.Document` 개체를 반환합니다.
 
 1. AEM Forms 작업을 수행합니다.
 
-   잠금 해제된 PDF 문서에서 AEM Forms 작업을 수행하여 비즈니스 요구 사항을 충족합니다. 예를 들어, 잠금 해제된 PDF 문서에 사용 권한을 적용하려는 경우, `com.adobe.idp.Document` 반환되는 개체 `unlockPDFUsingPassword` 또는 `unlockPDFUsingCredential` 를 `ReaderExtensionsServiceClient` 개체의 `applyUsageRights` 메서드에 전달한다고 가정할 수있습니다.
+   잠금 해제된 PDF 문서에서 AEM Forms 작업을 수행하여 비즈니스 요구 사항을 충족할 수 있습니다. 예를 들어, 잠금 해제된 PDF 문서에 사용 권한을 적용하려는 경우, `com.adobe.idp.Document` 반환되는 개체 `unlockPDFUsingPassword` 또는 `unlockPDFUsingCredential` 를 `ReaderExtensionsServiceClient` 개체의 `applyUsageRights` 메서드에 전달한다고 가정할 수있습니다.
 
 **참고 항목**
 
@@ -894,7 +894,7 @@ PDF 문서에서 암호 기반 암호화를 제거하려면 다음 단계를 수
 1. 암호화 서비스 클라이언트를 만듭니다.
 
    * 기본 생성자를 사용하여 `EncryptionServiceClient` 개체를 만듭니다.
-   * 생성자를 사용하여 `EncryptionServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스(예: `http://localhost:8080/soap/services/EncryptionService?WSDL`.)로 전달합니다. 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * 생성자를 사용하여 `EncryptionServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/EncryptionService?WSDL`.) 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
    * 필드의 값을 `System.ServiceModel.BasicHttpBinding` 가져와 개체를 `EncryptionServiceClient.Endpoint.Binding` 만듭니다. 반환 값을 다음으로 캐스팅합니다 `BasicHttpBinding`.
    * 개체 `System.ServiceModel.BasicHttpBinding` 필드를 (으)로 `MessageEncoding` 설정합니다 `WSMessageEncoding.Mtom`. 이 값을 사용하면 MTOM이 사용됩니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
@@ -926,11 +926,11 @@ PDF 문서에서 암호 기반 암호화를 제거하려면 다음 단계를 수
    * 인증서로 암호화된 PDF 문서를 포함하는 `BLOB` 개체입니다.
    * PDFf 문서를 암호화하는 데 사용되는 개인 키에 해당하는 공개 키의 별칭 이름을 지정하는 문자열 값.
 
-   및 메서드 `unlockPDFUsingPassword` 모두 작업을 수행하기 위해 다른 AEM Forms 메서드에 전달하는 `unlockPDFUsingCredential` `com.adobe.idp.Document` 개체를 반환합니다.
+   및 메서드 `unlockPDFUsingPassword` 는 작업을 수행하기 위해 다른 AEM Forms 메서드로 전달하는 `unlockPDFUsingCredential` `com.adobe.idp.Document` 개체를 반환합니다.
 
 1. AEM Forms 작업을 수행합니다.
 
-   잠금 해제된 PDF 문서에서 AEM Forms 작업을 수행하여 비즈니스 요구 사항을 충족합니다. 예를 들어, 잠금 해제된 PDF 문서에 사용 권한을 적용하려는 경우, `BLOB` 반환되는 개체 `unlockPDFUsingPassword` 또는 `unlockPDFUsingCredential` 를 `ReaderExtensionsServiceClient` 개체의 `applyUsageRights` 메서드에 전달하십시오.
+   잠금 해제된 PDF 문서에서 AEM Forms 작업을 수행하여 비즈니스 요구 사항을 충족할 수 있습니다. 예를 들어, 잠금 해제된 PDF 문서에 사용 권한을 적용하려는 경우, `BLOB` 반환되는 개체 `unlockPDFUsingPassword` 또는 `unlockPDFUsingCredential` 를 `ReaderExtensionsServiceClient` 개체의 `applyUsageRights` 메서드에 전달하십시오.
 
 **참고 항목**
 
@@ -973,8 +973,8 @@ PDF 문서를 보호하는 암호화 유형을 결정하려면 다음 단계를 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
-* jbossall-client.jar (AEM Forms가 JBoss Application Server에 배포된 경우 필요)
+* adobe-utilities.jar (AEM Forms이 JBoss Application Server에 배포된 경우 필요)
+* jbossall-client.jar (AEM Forms이 JBoss 응용 프로그램 서버에 배포된 경우 필요)
 
 **서비스 클라이언트 만들기**
 
@@ -1050,7 +1050,7 @@ PDF 문서를 보호하는 암호화 유형을 결정할 수 있습니다. PDF �
 1. 서비스 클라이언트를 만듭니다.
 
    * 기본 생성자를 사용하여 `EncryptionServiceClient` 개체를 만듭니다.
-   * 생성자를 사용하여 `EncryptionServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스(예: `http://localhost:8080/soap/services/EncryptionService?WSDL`.)로 전달합니다. 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * 생성자를 사용하여 `EncryptionServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/EncryptionService?WSDL`.) 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
    * 필드의 값을 `System.ServiceModel.BasicHttpBinding` 가져와 개체를 `EncryptionServiceClient.Endpoint.Binding` 만듭니다. 반환 값을 다음으로 캐스팅합니다 `BasicHttpBinding`.
    * 개체 `System.ServiceModel.BasicHttpBinding` 필드를 (으)로 `MessageEncoding` 설정합니다 `WSMessageEncoding.Mtom`. 이 값을 사용하면 MTOM이 사용됩니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
