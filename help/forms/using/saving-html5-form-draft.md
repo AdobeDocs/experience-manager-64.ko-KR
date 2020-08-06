@@ -1,8 +1,8 @@
 ---
 title: HTML5 양식을 초안으로 저장
 seo-title: HTML5 양식을 초안으로 저장
-description: HTML5 양식을 초안으로 저장하고 이후 단계에서 양식 작성을 다시 시작합니다.
-seo-description: HTML5 양식을 초안으로 저장하고 이후 단계에서 양식 작성을 다시 시작합니다.
+description: HTML5 양식을 초안으로 저장하고 나중에 양식 작성을 다시 시작합니다.
+seo-description: HTML5 양식을 초안으로 저장하고 나중에 양식 작성을 다시 시작합니다.
 uuid: 70cd5f6f-f125-470c-8cee-ee14d2127713
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,19 +10,22 @@ topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '323'
+ht-degree: 4%
 
 ---
 
 
 # HTML5 양식을 초안으로 저장 {#saving-an-html-form-as-a-draft}
 
-HTML5 양식을 초안으로 저장하고 이후 단계에서 양식 작성을 다시 시작할 수 있습니다. Forms Portal을 사용하면 모든 사용자가 HTML5 양식을 저장하고 복원할 수 있습니다. 초안으로 저장 기능을 활성화하려면 프로필 노드에 다음 구성을 추가합니다.
+HTML5 양식을 초안으로 저장하고 이후 단계에서 양식 작성을 다시 시작할 수 있습니다. Forms 포털에서는 모든 사용자가 HTML5 양식을 저장하고 복원할 수 있습니다. 초안으로 저장 기능을 활성화하려면 프로필 노드에 다음 구성을 추가합니다.
 
-## 초안으로 저장 기능을 허용하는 사용자 정의 프로필 {#custom-profile-to-allow-save-as-draft-feature}
+## 초안으로 저장 기능을 허용하는 사용자 지정 프로필 {#custom-profile-to-allow-save-as-draft-feature}
 
-기본적으로 AEM Forms에서는 초안으로 **저장 프로필을** 제공합니다. 초안으로 저장 프로파일을 사용하여 양식을 렌더링하여 HTML5 양식에 초안 기능을 활성화할 수 있습니다. Forms Manager에서 양식의 HTML 렌더링 프로필을 지정할 수 [있습니다](/help/forms/using/introduction-managing-forms.md).
+즉시 사용 가능한 AEM Forms은 **다른 이름으로 저장 프로필을** 제공합니다. 초안으로 저장 프로필로 양식을 렌더링하여 HTML5 양식에 초안 기능을 활성화할 수 있습니다. 양식에 대한 HTML 렌더링 프로필을 [Forms 관리자에서 지정할 수 있습니다](/help/forms/using/introduction-managing-forms.md).
 
-기존 [사용자 지정 프로필에](/help/forms/using/custom-profile.md)대해 초안으로 저장 기능을 사용하려면 사용자 지정 프로필 노드에 다음 속성을 추가하십시오.
+기존 [사용자 지정 프로필에](/help/forms/using/custom-profile.md)대해 초안으로 저장 기능을 활성화하려면 사용자 지정 프로필 노드에 다음 속성을 추가합니다.
 
 <table> 
  <tbody> 
@@ -49,9 +52,9 @@ HTML5 양식을 초안으로 저장하고 이후 단계에서 양식 작성을 �
 
 ## 초안 저장 및 목록 {#drafts-storage-and-listing}
 
-양식에 대해 초안으로 저장 기능을 활성화한 후양식을 저장하면 초안 및 제출 [구성 요소에](/help/forms/using/draft-submission-component.md)나열됩니다. 초안 및 제출 구성 요소에서 저장된 양식을 검색하고 채울 수 있습니다.
+양식에 대해 초안으로 저장 기능을 활성화한 후 양식이 저장되면 초안 및 제출 [구성 요소에 나열됩니다](/help/forms/using/draft-submission-component.md). 초안 및 제출 구성 요소에서 저장된 양식을 검색하고 채울 수 있습니다.
 
-초안 및 제출 구성 요소에 대한 양식 목록을 활성화하려면 다음 속성을 프로필 노드에 추가합니다.
+초안 및 제출 구성 요소에 대한 양식 목록을 활성화하려면 프로필 노드에 다음 속성을 추가합니다.
 
 <table> 
  <tbody> 
@@ -65,9 +68,9 @@ HTML5 양식을 초안으로 저장하고 이후 단계에서 양식 작성을 �
    <td>fp.enablePortalSubmit</td> 
    <td>문자열</td> 
    <td>true</td> 
-   <td>제출 후 양식 포털 초안 및 제출 구성 요소에<br /> 초안 및 양식을 표시할 수 있도록 하려면</td> 
+   <td>제출 후 Forms 포털 초안 및 제출 구성 요소에<br /> 초안 및 양식이 표시되도록 하려면</td> 
   </tr> 
  </tbody> 
 </table>
 
-기본적으로 AEM Forms는 양식 초안 및 제출과 연관된 사용자 데이터를 게시 인스턴스의 /content/forms/fp 노드에 저장합니다. 사용자 지정 저장소 공급자를 추가할 수 있습니다. 자세한 내용은 초안 및 제출 [구성](/help/forms/using/adding-custom-storage-provider-forms.md)요소에 대한 사용자 지정 저장소를 참조하십시오.
+기본적으로 AEM Forms은 양식의 초안 및 제출과 연관된 사용자 데이터를 게시 인스턴스의 /content/forms/fp 노드에 저장합니다. 사용자 지정 저장소 공급자를 추가할 수 있습니다. 자세한 내용은 초안 및 제출 [에 대한 사용자 지정 저장소를 참조하십시오](/help/forms/using/adding-custom-storage-provider-forms.md).
