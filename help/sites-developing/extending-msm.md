@@ -168,7 +168,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 새 롤아웃 구성을 만들려면:
 
-1. Open CRXDE Lite; 예를 들면 다음과 같습니다.
+1. 개방형 CRXDE Lite; 예를 들면 다음과 같습니다.
    [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
 1. 다음으로 이동 :
@@ -523,7 +523,7 @@ Eclipse 컴파일러가 코드에서 사용되는 클래스를 참조할 수 있
    mvn -PautoInstallPackage clean install
    ```
 
-   AEM `error.log` 파일은 번들이 시작되었음을 나타내야 합니다.
+   AEM `error.log` 파일은 번들이 시작되었음을 나타냅니다.
 
    예: http://localhost:4502/system/console/status-slinglogs [](http://localhost:4502/system/console/status-slinglogs).
 
@@ -549,7 +549,7 @@ Eclipse 컴파일러가 코드에서 사용되는 클래스를 참조할 수 있
 
 이전 프로시저에서 만든 롤아웃 구성을 구성하여 클래스를 사용하도록 `ExampleLiveActionFactory` 합니다.
 
-1. Open CRXDE Lite; 예: http://localhost:4502/crx/de [](http://localhost:4502/crx/de).
+1. 개방형 CRXDE Lite; 예: http://localhost:4502/crx/de [](http://localhost:4502/crx/de).
 1. 다음 노드를 만듭니다 `/apps/msm/rolloutconfigs/examplerolloutconfig/jcr:content`.
 
    * **이름**: `exampleLiveAction`
@@ -626,7 +626,7 @@ MSM은 언어 및 국가 코드의 저장된 목록을 사용하여 페이지의
 
 언어를 수정하려면:
 
-1. 웹 브라우저에서 CRXDE Lite 열기; 예: [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
+1. 웹 브라우저에서 CRXDE Lite 열기 예: [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 1. 폴더를 `/apps` 선택하고 **만들기**, 폴더 **만들기를 클릭합니다.**
 
    새 폴더 이름을 지정합니다 `wcm`.
