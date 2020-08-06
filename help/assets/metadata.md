@@ -1,9 +1,12 @@
 ---
-title: '[!DNL Adobe Experience Manager]에서 디지털 자산의 메타데이터를 관리합니다.'
-description: 메타데이터의 유형과 [!DNL Adobe Experience Manager Assets]를 통해 자산을 손쉽게 분류하고 구성할 수 있도록 메타데이터를 관리하는 방법에 대해 알아보십시오. [!DNL Experience Manager]를 사용하면 메타데이터를 기반으로 자산을 자동으로 구성하고 처리할 수 있습니다.
+title: 디지털 자산의 메타데이터를 관리할 수 있습니다 [!DNL Adobe Experience Manager].
+description: 메타데이터의 유형과 메타데이터를 기반으로 에셋을 자동으로 구성하고 [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] 처리하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 7f8f35b9f62f61f5bb8c175062e76ba5f4966dbe
+workflow-type: tm+mt
+source-wordcount: '1395'
+ht-degree: 0%
 
 ---
 
@@ -55,7 +58,7 @@ source-git-commit: 7f8f35b9f62f61f5bb8c175062e76ba5f4966dbe
 기술 메타데이터는 디지털 자산을 처리하고 있지만 수동으로 유지 관리해서는 안 되는 소프트웨어 애플리케이션에 유용합니다. [!DNL Experience Manager Assets] 그리고 기타 소프트웨어는 기술 메타데이터를 자동으로 결정하며 에셋이 수정될 때 메타데이터가 변경될 수 있습니다. 자산의 사용 가능한 기술 메타데이터는 대개 자산의 파일 유형에 따라 달라집니다. 기술 메타데이터의 몇 가지 예는 다음과 같습니다.
 
 * 파일의 크기입니다.
-* 이미지의 크기(높이 및 너비).
+* 이미지의 Dimension(높이 및 너비).
 * 오디오 또는 비디오 파일의 비트 전송률입니다.
 * 이미지의 해상도(세부 수준).
 
@@ -74,7 +77,7 @@ source-git-commit: 7f8f35b9f62f61f5bb8c175062e76ba5f4966dbe
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP)는 모든 메타데이터 관리에 사용되는 개방형 표준 [!DNL Experience Manager Assets] 입니다. 표준은 모든 파일 포맷에 임베드할 수 있는 범용 메타데이터 인코딩을 제공합니다. Adobe와 다른 회사는 리치 컨텐츠 모델을 제공하므로 XMP 표준을 지원합니다. XMP 표준과 XMP 사용자 [!DNL Experience Manager Assets] 는 강력한 플랫폼을 갖추고 있으며 자세한 내용은 [XMP를 참조하십시오](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP)은 모든 메타데이터 관리에 사용되는 개방형 표준 [!DNL Experience Manager Assets] 입니다. 표준은 모든 파일 포맷에 임베드할 수 있는 범용 메타데이터 인코딩을 제공합니다. Adobe과 다른 회사는 리치 컨텐츠 모델을 제공하면서 XMP standard를 지원합니다. XMP 표준과 PC 사용자는 강력한 플랫폼을 [!DNL Experience Manager Assets] 갖추고 있으며 자세한 내용은 [XMP을 참조하십시오](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -94,7 +97,7 @@ Exif(Exchange) 는 디지털 사진 분야에서 가장 널리 사용되는 메�
 
 Exif의 주요 제한 사항은 BMP, GIF 또는 PNG와 같이 널리 사용되는 몇 가지 이미지 파일 형식이 지원되지 않는다는 것입니다.
 
-Exif에서 정의한 메타데이터 필드는 일반적으로 기술적 사항이며 수사적 메타데이터 관리를 위해 제한된 용도로 사용됩니다. 이러한 이유로, Exif 속성을 [!DNL Experience Manager Assets] 일반적인 메타데이터 스키마 [및](metadata-schemas.md) XMP에 매핑하는 기능을 [제공합니다](xmp-writeback.md).
+Exif에서 정의한 메타데이터 필드는 일반적으로 기술적 사항이며 수사적 메타데이터 관리를 위해 제한된 용도로 사용됩니다. 이러한 이유로 [!DNL Experience Manager Assets] Exif 속성의 매핑을 [공통 메타데이터 스키마](metadata-schemas.md) 및 [XMP에](xmp-writeback.md)제공합니다.
 
 ### 기타 메타데이터 {#other-metadata}
 
@@ -133,7 +136,7 @@ Exif에서 정의한 메타데이터 필드는 일반적으로 기술적 사항�
 * PDF 및 PDF/X.
 * Photoshop 및 psAux - [!DNL Adobe Photoshop].
 
-### 디지털 권한 관리 메타데이터 {#digital-rights-management-metadata}
+### Digital Rights Management 메타데이터 {#digital-rights-management-metadata}
 
 * 참조 - [!DNL Creative Commons].
 * [!DNL XMPRights].
@@ -155,7 +158,7 @@ Exif에서 정의한 메타데이터 필드는 일반적으로 기술적 사항�
 * PDF 및 PDF/X - Adobe PDF 및 타사 애플리케이션
 * PRISM - [업계 표준 메타데이터에 대한 게시 요구](https://www.prismstandard.org)사항.
 * XMP - [!DNL Extensible Metadata Platform].
-* `xmpPG` - 페이징된 텍스트에 대한 XMP 메타데이터
+* `xmpPG` - 페이지 텍스트를 위한 XMP 메타데이터
 
 ### 멀티미디어 관련 메타데이터 {#multimedia-specific-metadata}
 
