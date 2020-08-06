@@ -1,6 +1,6 @@
 ---
-title: ASRP - Adobe Storage Resource Provider
-seo-title: ASRP - Adobe Storage Resource Provider
+title: ASRP - Adobe 저장소 리소스 공급자
+seo-title: ASRP - Adobe 저장소 리소스 공급자
 description: 관계형 데이터베이스를 공용 스토어로 사용하도록 AEM Communities 설정
 seo-description: 관계형 데이터베이스를 공용 스토어로 사용하도록 AEM Communities 설정
 uuid: 29826b44-633d-4586-8553-cd87ebe269a2
@@ -18,11 +18,11 @@ ht-degree: 2%
 ---
 
 
-# ASRP - Adobe Storage Resource Provider {#asrp-adobe-storage-resource-provider}
+# ASRP - Adobe 저장소 리소스 공급자 {#asrp-adobe-storage-resource-provider}
 
 ## ASRP 정보 {#about-asrp}
 
-ASRP를 공용 스토어로 사용하도록 AEM Communities을 구성한 경우 동기화나 복제 없이도 모든 작성자 및 게시 인스턴스에서 UGC(사용자 생성 컨텐츠)에 액세스할 수 있습니다.
+AEM Communities이 ASRP를 공용 스토어로 사용하도록 구성된 경우 동기화나 복제 없이도 모든 작성자 및 게시 인스턴스에서 사용자 생성 컨텐츠(UGC)에 액세스할 수 있습니다.
 
 SRP 옵션 [및 권장 토폴로지](working-with-srp.md#characteristics-of-srp-options) 의 [특성을 참조하십시오](topologies.md).
 
@@ -122,7 +122,7 @@ ASRP 끝점의 인증이 성공하려면 호스팅된 AEM Communities을 실행�
 >
 >게시된 커뮤니티 사이트에서 ASRP를 활성화하면 온-프레미스 스토리지와 클라우드 스토리지 간에 데이터가 동기화되지 않으므로 [JCR에](jsrp.md) 이미 저장된 모든 UGC가 더 이상 표시되지 않습니다.
 
-**`AEM Communities Extension`** 이전에는 AEM 6.0 소셜 커뮤니티에서 클라우드 서비스로 도입되었습니다. AEM 6.1 Communities에서는 클라우드 구성이 필요하지 않으므로 [스토리지 구성 콘솔에서 ASRP를 선택하면 됩니다](srp-config.md).
+**`AEM Communities Extension`** 이전에는 AEM 6.0 소셜 커뮤니티에서 클라우드 서비스로 도입되었습니다. AEM 6.1 Communities의 경우 클라우드 구성이 필요하지 않으므로 [스토리지 구성 콘솔에서 ASRP를 선택하면 됩니다](srp-config.md).
 
 새로운 스토리지 구조로 인해 소셜 커뮤니티에서 Communities로 업그레이드할 때 [업그레이드](upgrade.md#adobe-cloud-storage) 지침을 따라야 합니다.
 
@@ -143,7 +143,7 @@ ASRP 끝점의 인증이 성공하려면 호스팅된 AEM Communities을 실행�
 
 데이터 센터 URL에 대해 인증 오류를 수신하는 경우 AEM error.log에 오래된 타임스탬프에 대한 메시지가 포함된 경우 시간 동기화가 발생하는지 확인합니다.
 
-모든 AEM 작성자 및 게시 서버를 동기화하려면 [NTP(Network Time Protocol)와](https://www.ntp.org/) 같은 도구를 사용하는 것이 좋습니다.
+모든 AEM 작성자 및 게시 서버를 동기화하려면 NTP( [Network Time Protocol)와](https://www.ntp.org/) 같은 도구를 사용하는 것이 좋습니다.
 
 ### 새 컨텐츠가 검색에 표시되지 않음 {#new-content-does-not-appear-in-searches}
 
@@ -155,7 +155,7 @@ Adobe 클라우드 스토리지 인프라는 *궁극적인 일관성을* 사용�
 
 저장소 옵션 구성을 선택하여 ASRP가 기본 공급자로 구성되었는지 확인하십시오. 기본적으로 저장소 리소스 공급자는 ASRP가 아니라 JSRP입니다.
 
-모든 작성 및 AEM 인스턴스에서 스토리지 구성 콘솔을 다시 방문하거나 AEM 저장소를 확인합니다.
+모든 작성 및 게시 AEM 인스턴스에서 스토리지 구성 콘솔을 다시 방문하거나 AEM 저장소를 확인합니다.
 
 * JCR에서 if/etc/socialconfig [로](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
