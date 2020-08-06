@@ -1,6 +1,6 @@
 ---
-title: 양식 JEE 워크플로우 | 사용자 데이터 처리
-seo-title: 양식 JEE 워크플로우 | 사용자 데이터 처리
+title: Forms JEE 워크플로우 | 사용자 데이터 처리
+seo-title: Forms JEE 워크플로우 | 사용자 데이터 처리
 description: 'null'
 seo-description: 'null'
 uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
@@ -16,9 +16,9 @@ ht-degree: 0%
 ---
 
 
-# 양식 JEE 워크플로우 | 사용자 데이터 처리 {#forms-jee-workflows-handling-user-data}
+# Forms JEE 워크플로우 | 사용자 데이터 처리 {#forms-jee-workflows-handling-user-data}
 
-AEM Forms JEE 워크플로우는 비즈니스 프로세스를 디자인, 제작 및 관리하는 도구를 제공합니다. 워크플로우 프로세스는 지정된 순서로 실행되는 일련의 단계로 구성됩니다. 각 단계에서는 사용자에게 작업을 할당하거나 이메일 메시지를 보내는 등 특정 작업을 수행합니다. 프로세스는 자산, 사용자 계정 및 서비스와 상호 작용하고 다음 방법 중 하나를 사용하여 트리거할 수 있습니다.
+AEM Forms JEE 워크플로우는 비즈니스 프로세스를 디자인, 제작 및 관리하는 툴을 제공합니다. 워크플로우 프로세스는 지정된 순서로 실행되는 일련의 단계로 구성됩니다. 각 단계에서는 사용자에게 작업을 할당하거나 이메일 메시지를 보내는 등 특정 작업을 수행합니다. 프로세스는 자산, 사용자 계정 및 서비스와 상호 작용할 수 있으며 다음 방법 중 하나를 사용하여 트리거할 수 있습니다.
 
 * AEM Forms 작업 공간에서 프로세스 시작
 * SOAP 또는 RESTful 서비스 사용
@@ -46,7 +46,7 @@ AEM Forms JEE 워크플로우 프로세스 만들기에 대한 자세한 내용�
 
 워크플로우 개시자 또는 참가자의 프로세스 인스턴스 ID를 식별하려면 다음 단계를 수행하십시오.
 
-1. AEM Forms 서버 데이터베이스에서 다음 명령을 실행하여 데이터베이스 테이블에서 워크플로우 개시자 또는 참가자에 대한 주체 ID를 `edcprincipalentity` 검색합니다.
+1. AEM Forms 서버 데이터베이스에서 다음 명령을 실행하여 워크플로우 개시자 또는 참가자의 주체 ID를 데이터베이스 테이블에서 `edcprincipalentity` 검색합니다.
 
    ```sql
    select id from edcprincipalentity where canonicalname='user_ID'
@@ -139,7 +139,7 @@ AEM Forms JEE 워크플로우 프로세스 만들기에 대한 자세한 내용�
 
    `ProcessManager.purgeProcessInstance(<long_lived_invocation_id>)`
 
-   구성된 경우 이 `purgeProcessInstance` 메서드는 AEM Forms 서버 데이터베이스 및 GDS에서 지정된 호출 ID에 대한 모든 데이터를 완전히 삭제합니다.
+   구성된 경우 이 `purgeProcessInstance` 메서드는 지정된 호출 ID에 대한 모든 데이터를 AEM Forms 서버 데이터베이스 및 GDS에서 완전히 삭제합니다.
 
 ### 고아 작업 {#orphan}
 
@@ -147,7 +147,7 @@ AEM Forms JEE 워크플로우 프로세스 만들기에 대한 자세한 내용�
 
 작업 ID가 있으면 다음을 수행하여 GDS 및 데이터베이스의 고아 작업이 있는 연관된 파일 및 데이터를 제거합니다.
 
-1. AEM Forms 서버 데이터베이스에서 다음 명령을 실행하여 식별된 작업 ID에 대한 ID를 검색합니다.
+1. 다음 명령을 AEM Forms 서버 데이터베이스에서 실행하여 식별된 작업 ID에 대한 ID를 검색합니다.
 
    ```sql
    select id from tb_form_data where task_id=<task_id>
@@ -187,7 +187,7 @@ AEM Forms JEE 워크플로우 프로세스 만들기에 대한 자세한 내용�
 
 
 
-1. 다음 명령을 실행하여 AEM Forms 서버 데이터베이스에서 작업 ID에 대한 데이터를 삭제합니다.
+1. 다음 명령을 실행하여 작업 ID에 대한 데이터를 AEM Forms 서버 데이터베이스에서 삭제합니다.
 
    ```sql
    delete from tb_task_acl where task_id=<task_id>
