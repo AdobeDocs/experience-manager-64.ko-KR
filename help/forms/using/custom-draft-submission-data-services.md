@@ -1,8 +1,8 @@
 ---
 title: 초안 및 제출 데이터 서비스 사용자 정의
 seo-title: 초안 및 제출 데이터 서비스 사용자 정의
-description: 기본적으로 AEM Forms는 초안 및 제출된 적응형 양식을 게시 인스턴스의 기본 노드에 저장합니다. 그러나 AEM Forms의 초안 및 제출 데이터 서비스를 구성하여 초안 및 제출된 적응형 양식의 저장소를 사용자 지정할 수 있습니다.
-seo-description: 기본적으로 AEM Forms는 초안 및 제출된 적응형 양식을 게시 인스턴스의 기본 노드에 저장합니다. 그러나 AEM Forms의 초안 및 제출 데이터 서비스를 구성하여 초안 및 제출된 적응형 양식의 저장소를 사용자 지정할 수 있습니다.
+description: 기본적으로 AEM Forms은 초안 및 제출된 적응형 양식을 게시 인스턴스의 기본 노드에 저장합니다. 하지만, AEM Forms의 초안 및 제출 데이터 서비스를 구성하여 초안과 제출된 적응형 양식의 저장 공간을 사용자 정의할 수 있습니다.
+seo-description: 기본적으로 AEM Forms은 초안 및 제출된 적응형 양식을 게시 인스턴스의 기본 노드에 저장합니다. 하지만, AEM Forms의 초안 및 제출 데이터 서비스를 구성하여 초안과 제출된 적응형 양식의 저장 공간을 사용자 정의할 수 있습니다.
 uuid: c3ec1708-3b11-4142-93f0-1cffb6643f34
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: 602fd6a9-9a65-411c-8475-a4082a3fdee0
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '323'
+ht-degree: 0%
 
 ---
 
@@ -18,26 +21,26 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 
 ## 개요 {#overview}
 
-AEM Forms를 사용하면 적응형 양식을 초안으로 저장할 수 있습니다. 초안 기능을 사용하면 진행 중인 양식을 유지 관리할 수 있습니다. 사용자는 언제든지 모든 장치에서 양식을 작성하여 제출할 수 있습니다.
+AEM Forms을 사용하면 적응형 양식을 초안으로 저장할 수 있습니다. 초안 기능은 사용자에게 진행 중인 양식을 유지 관리할 수 있는 옵션을 제공합니다. 사용자는 모든 장치에서 언제든지 양식을 작성하고 제출할 수 있습니다.
 
-기본적으로 AEM Forms는 `/content/forms/fp` 노드의 게시 인스턴스에 초안 및 제출과 연관된 사용자 데이터를 저장합니다.
+기본적으로 AEM Forms은 초안 및 제출과 연관된 사용자 데이터를 노드의 게시 인스턴스에 `/content/forms/fp` 저장합니다.
 
-그러나 AEM Forms 포털 구성 요소는 초안 및 제출용 사용자 데이터 저장 구현을 사용자 지정할 수 있도록 하는 데이터 서비스를 제공합니다. 예를 들어 현재 조직에 구현된 데이터 저장소에 데이터를 저장할 수 있습니다.
+그러나 AEM Forms 포털 구성 요소는 초안 및 제출용 사용자 데이터 저장 구현을 사용자 정의할 수 있도록 해주는 데이터 서비스를 제공합니다. 예를 들어 조직에서 현재 구현된 데이터 저장소에 데이터를 저장할 수 있습니다.
 
-사용자 데이터 저장소를 사용자 정의하려면 초안 데이터 및 제출 [데이터](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) 서비스를 구현해야 [합니다](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p) .
+사용자 데이터 저장소를 사용자 정의하려면 [초안 데이터](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) 및 [제출 데이터](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p) 서비스를 구현해야 합니다.
 
 ## 전제 조건 {#prerequisites}
 
 * Forms [포털 구성 요소 활성화](/help/forms/using/enabling-forms-portal-components.md)
 * [양식 포털 페이지 만들기](/help/forms/using/creating-form-portal-page.md)
-* 양식 포털에 [적응형 양식 사용](/help/forms/using/draft-submission-component.md)
-* 맞춤형 스토리지 [구축 세부 정보 살펴보기](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* 양식 [포털에 적응형 양식 사용](/help/forms/using/draft-submission-component.md)
+* 사용자 [정의 스토리지에 대한 구현 세부 정보 알아보기](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## 초안 데이터 서비스 {#draft-data-service}
 
-사용자 초안 데이터의 저장을 사용자 정의하려면 `DraftAFDataService` 인터페이스의 모든 방법에 대한 구현을 제공해야 합니다.
+사용자 초안 데이터의 저장을 사용자 정의하려면 인터페이스의 모든 방법에 대한 구현을 제공해야 `DraftAFDataService` 합니다.
 
-메서드 및 해당 인수에 대한 설명은 인터페이스의 다음 코드 샘플에 나와 있습니다.
+메서드 및 해당 인수에 대한 설명은 인터페이스의 다음 코드 샘플에서 제공됩니다.
 
 ```java
 public interface DraftAFDataService {
@@ -80,11 +83,11 @@ public interface DraftAFDataService {
 }
 ```
 
-## 제출 데이터 서비스 {#submission-data-service}
+## 데이터 서비스 제출 {#submission-data-service}
 
-사용자 제출 데이터의 저장소를 사용자 정의하려면 `SubmittedAFDataService` 인터페이스의 모든 방법에 대한 구현을 제공해야 합니다.
+사용자 제출 데이터 저장소를 사용자 정의하려면 `SubmittedAFDataService` 인터페이스의 모든 방법에 대한 구현을 제공해야 합니다.
 
-메서드 및 해당 인수에 대한 설명은 인터페이스의 다음 코드 샘플에 나와 있습니다.
+메서드 및 해당 인수에 대한 설명은 인터페이스의 다음 코드 샘플에서 제공됩니다.
 
 ```java
 public interface SubmittedAFDataService {
