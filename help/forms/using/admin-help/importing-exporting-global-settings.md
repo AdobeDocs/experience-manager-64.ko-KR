@@ -105,7 +105,7 @@ ht-degree: 0%
 
 **server_remoteevents_JGroupName:** 원격 이벤트 통신에 사용되는 JGroup의 이름입니다. 이 값은 임의로 생성되어 클러스터 충돌을 방지합니다. 이 값은 변경할 수 없습니다.
 
-그룹 및 작업 공간에 대한 자세한 내용은 JGroups 및 AEM [양식 작업 공간 - 설명됨을 참조하십시오](https://blogs.adobe.com/livecycle/2011/03/jgroups-and-livecycle-workspace-explained.html).
+JGroups 및 작업 공간에 대한 자세한 내용은 JGroups 및 AEM [양식 작업 공간 - 설명됨을 참조하십시오](https://blogs.adobe.com/livecycle/2011/03/jgroups-and-livecycle-workspace-explained.html).
 
 ### formView 설정 {#formview-settings}
 
@@ -125,9 +125,9 @@ ht-degree: 0%
 
 **server_debugLevel:** 이 설정을 변경하지 마십시오.
 
-**client_pollingInterval:** (JEE에서 AEM 양식에 대해 더 이상 사용되지 않음) Flex 작업 공간에 사용된 폴링 간격(초)을 설정하여 새로운 작업과 수정된 작업을 검색합니다. 기본값은 3초입니다. AEM Forms 작업 영역에서는 작동하지 않습니다.
+**client_pollingInterval:** (JEE에서 AEM 양식에 대해 더 이상 사용되지 않음) Flex 작업 공간에 사용된 폴링 간격(초)을 설정하여 새로운 작업과 수정된 작업을 검색합니다. 기본값은 3초입니다. AEM Forms 작업 공간에 사용할 수 없습니다.
 
-**client_systemContext_name:** AEM Forms Workspace에서 작업의 첨부 파일에 대해 추가된 사람 필드(예: 시민)에 표시할 사용자 지정 이름을 지정합니다.
+**client_systemContext_name:** AEM Forms 작업 공간에서 작업의 첨부 파일에 대해 추가된 사람 필드(첨부 파일 탭)에 표시할 사용자 지정 이름(예: 시민)을 지정합니다.
 
 사용자 지정 이름을 정의하려면
 
