@@ -1,6 +1,6 @@
 ---
-title: AEM Tagging Framework
-seo-title: AEM Tagging Framework
+title: AEM 태깅 프레임워크
+seo-title: AEM 태깅 프레임워크
 description: 컨텐츠에 태그를 지정하고 AEM Tagging 인프라 활용
 seo-description: 컨텐츠에 태그를 지정하고 AEM Tagging 인프라 활용
 uuid: 55ba5977-217b-4b0f-a794-ddb9216ee62b
@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
 workflow-type: tm+mt
 source-wordcount: '1908'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# AEM Tagging Framework{#aem-tagging-framework}
+# AEM 태깅 프레임워크{#aem-tagging-framework}
 
-컨텐츠에 태그를 지정하고 AEM Tagging 인프라를 활용하려면:
+컨텐츠에 태그를 지정하고 AEM Tagging 인프라를 활용하려면
 
 * 이 태그는 분류 루트 노드 [`cq:Tag`](#tags-cq-tag-node-type) 아래에 [유형 노드로 존재해야 합니다.](#taxonomy-root-node)
 
@@ -165,7 +165,7 @@ cq:Tag 노드를 가리키지 않는 기존 경로 또는 경로를 참조하는
 
 일반적인 방법은 다음과 같습니다.
 
-* 모든 네임스페이스에 `tag-administrators` 그룹/역할 쓰기 액세스 허용(아래에서 추가/수정 `/content/cq:tags`). 이 그룹은 기본적으로 AEM과 함께 제공됩니다.
+* 모든 네임스페이스에 `tag-administrators` 그룹/역할 쓰기 액세스 허용(아래에서 추가/수정 `/content/cq:tags`). 이 그룹에는 최신 AEM이 포함되어 있습니다.
 
 * 사용자/작성자가 읽을 수 있어야 하는 모든 네임스페이스에 대한 읽기 권한을 부여할 수 있습니다(대부분 모두).
 * 사용자/작성자가 사용자/작성자가 태그를 자유롭게 정의해야 하는 네임스페이스에 대한 쓰기 액세스 허용(add_node under `/content/cq:tags/some_namespace`)
@@ -216,7 +216,7 @@ AEM에 포함된 노드 유형에 대한 기본 정의는 다음과 같습니다
 
 >[!NOTE]
 >
->AEM 태그 지정 기능을 활용하려면, 사용자 지정 개발 응용 프로그램이 다른 태그 속성을 정의해서는 안 됩니다 `cq:tags`.
+>AEM Tagging 기능을 활용하려면 사용자 정의 개발 응용 프로그램이 태그 속성을 정의하지 않아야 `cq:tags`합니다.
 
 ## 태그 이동 및 병합 {#moving-and-merging-tags}
 
@@ -334,7 +334,7 @@ println "---------------------------------Success-------------------------------
 
 스크립트는 속성 값 `/etc/tags` 에 있는 모든 태그를 `cq:movedTo/cq:backLinks` 가져옵니다. 그런 다음 가져온 결과 세트를 반복하여 경로 `cq:movedTo` (값이 검색되는 경우)로 `cq:backlinks` 속성 값 `/content/cq:tags` `/etc/tags` 을 확인합니다.
 
-**업그레이드된 AEM 인스턴스가 클래식 UI에서 실행되는 경우**
+**업그레이드된 AEM 인스턴스가 Classic UI에서 실행되는 경우**
 
 >[!NOTE]
 >
