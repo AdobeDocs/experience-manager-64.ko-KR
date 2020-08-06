@@ -31,7 +31,7 @@ PDF Generator에서는 지원되는 파일 유형에 대한 애플리케이션 �
 
 >[!NOTE]
 >
->HTML을 PDF로 변환하는 Acrobat, Microsoft PowerPoint, Microsoft Word 및 Microsoft Excel용 등의 대체 변환기는 파일 형식 설정을 사용할 수 없습니다.
+>HTML을 PDF로 변환하는 경우 Acrobat, Microsoft PowerPoint, Microsoft Word 및 Microsoft Excel과 같은 대체 변환기에는 파일 형식 설정을 사용할 수 없습니다.
 
 ## 파일 유형 설정 만들기 또는 편집 {#create-or-edit-file-type-settings}
 
@@ -52,11 +52,11 @@ PDF Generator에서는 지원되는 파일 유형에 대한 애플리케이션 �
 
    [PDF Generator 구성 파일 가져오기 및 내보내기](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
 
-   [Adobe PDF 내보내기 설정(Windows 전용)](#adobe-pdf-export-settings-windows-only)
+   [Adobe PDF 내보내기 설정(Windows만 해당)](#adobe-pdf-export-settings-windows-only)
 
    [HTML에서 PDF로 설정](#html-to-pdf-settings)
 
-   [PDF로 Flash 비디오 설정](#flash-videos-to-pdf-settings)
+   [PDF 설정으로 비디오 Flash](#flash-videos-to-pdf-settings)
 
    [XPS를 PDF로 설정](#xps-to-pdf-settings)
 
@@ -84,14 +84,14 @@ PDF Generator에서는 지원되는 파일 유형에 대한 애플리케이션 �
 
 1. 모든 섹션을 완료한 후 **[!UICONTROL 저장]** 또는 다른 **[!UICONTROL 으로]** 저장을 클릭하고 설정 이름을 입력합니다.
 
-다양한 파일 유형에 대한 지원을 사용자 정의할 수 있습니다. (AEM [양식을 사용한 프로그래밍](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)에서 &quot;추가 기본 파일 형식 [에 대한 지원 추가&quot;를 참조하십시오](https://www.adobe.com/go/learn_lc_programming_11).)
+다양한 파일 유형에 대한 지원을 사용자 정의할 수 있습니다. AEM 양식을 사용한 [프로그래밍의 &quot;추가 기본 파일 형식](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)지원 [추가&quot;를 참조하십시오](https://www.adobe.com/go/learn_lc_programming_11).
 
 ## 기본 설정 변경 {#change-the-default-settings}
 
 새로 만든 소스에 적용되는 Adobe PDF 설정, 보안 설정 및 파일 유형 설정의 기본값을 변경할 수 있습니다. 기본값을 변경해도 기존 소스의 설정에 영향을 주지 않습니다.
 
 1. 관리 콘솔에서 **[!UICONTROL 서비스 > PDF 생성기를 클릭합니다]**.
-1. [ **[!UICONTROL Adobe PDF 설정]**], [ **[!UICONTROL 파일 유형 설정]**] 또는 [ **[!UICONTROL 보안 설정]** ] 페이지에서 [기본 설정 ****&#x200B;설정]을 클릭합니다.
+1. [ **[!UICONTROL Adobe PDF 설정]**], [ **[!UICONTROL 파일 유형 설정]**] 또는 [ **[!UICONTROL 보안 설정]** ] 페이지에서 [기본 설정 **[!UICONTROL 설정]을 클릭합니다]**.
 1. 기본 설정을 선택합니다. 다음 설정 중 하나 이상을 [기본 설정 설정] 페이지에서 사용할 수 있습니다.
 
    **[!UICONTROL Adobe PDF 설정]**: 원래 기본값은 표준(Acrobat 6)입니다.
@@ -138,7 +138,7 @@ PDF Generator에서는 지원되는 파일 유형에 대한 애플리케이션 �
 
 **이미지 다운로드:** OCR이 완료된 후 컬러, 회색 음영 및 단색 이미지의 픽셀 수를 줄입니다. 적용할 다운샘플링 수준을 선택합니다. 번호가 높은 옵션을 사용하면 다운샘플링을 줄일 수 있으므로 고해상도 PDF를 만들 수 있습니다.
 
-## Adobe PDF 내보내기 설정(Windows 전용) {#adobe-pdf-export-settings-windows-only}
+## Adobe PDF 내보내기 설정(Windows만 해당) {#adobe-pdf-export-settings-windows-only}
 
 Adobe PDF 내보내기 설정 섹션의 [파일 유형 내보내기] 설정은 PDF 파일을 다른 형식으로 변환하는 데 사용됩니다. 기본값은 CSS(Cascading Style Sheet) 1.0(*.htm, *.html)이 있는 HTML 4.01입니다.
 
@@ -216,15 +216,15 @@ Adobe PDF 내보내기 설정 섹션의 [파일 유형 내보내기] 설정은 P
 
 **창 컨트롤 숨기기:** PDF 문서에서 창 컨트롤을 숨깁니다.
 
-## PDF로 Flash 비디오 설정 {#flash-videos-to-pdf-settings}
+## PDF 설정으로 비디오 Flash {#flash-videos-to-pdf-settings}
 
-PDF Generator는 Adobe Flash(SWF 또는 FLV 파일)용 비디오를 제출하고 Adobe Flash용 비디오가 포함된 PDF 파일을 작성할 수 있는 기능을 지원합니다. 이러한 변환으로 인해 Adobe Flash Player가 양식 서버에 설치되지는 않습니다. 이 옵션에 액세스하는 방법에 대한 자세한 내용은 파일 [유형 설정 만들기 또는 편집을 참조하십시오](configuring-file-type-settings.md#create-or-edit-file-type-settings).
+PDF Generator는 Adobe Flash(SWF 또는 FLV 파일)용 비디오를 제출하고 Adobe Flash에 임베드된 비디오로 PDF 파일을 작성할 수 있는 기능을 지원합니다. 이 변환은 양식 서버에 Adobe Flash Player을 설치할 필요가 없습니다. 이 옵션에 액세스하는 방법에 대한 자세한 내용은 파일 [유형 설정 만들기 또는 편집을 참조하십시오](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
 **파일 이름 확장자:** 변환할 수 있는 파일 이름 확장명의 쉼표로 구분된 목록입니다.
 
 ## XPS를 PDF로 설정 {#xps-to-pdf-settings}
 
-XPS(XML Paper Specification)는 Windows Printing 시스템에서 사용됩니다. Microsoft 형식이며 모든 Microsoft Office 응용 프로그램에서 만들 수 있습니다. AEM 양식은 XPS 파일을 PDF로 변환하는 기능을 제공합니다.
+XPS(XML Paper Specification)는 Windows Printing 시스템에서 사용됩니다. Microsoft 형식이며 모든 Microsoft Office 응용 프로그램에서 만들 수 있습니다. AEM 양식은 XPS 파일 PDF를 변환하는 기능을 제공합니다.
 
 **파일 이름 확장자:** 변환할 수 있는 모든 XPS 파일 이름 확장명의 쉼표로 구분된 목록입니다. 현재 하나의 포맷이 있습니다. .xps.
 
@@ -238,7 +238,7 @@ PDF Generator를 사용하면 PDF 파일의 크기를 줄일 수 있습니다. �
 
 이 설정에 액세스하는 방법에 대한 지침은 파일 [유형 설정 만들기 또는 편집을 참조하십시오](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
-**대상 PDF 버전:** PDF와 호환되는 Acrobat 버전을 지정합니다.
+**Target PDF 버전:** PDF와 호환되는 Acrobat 버전을 지정합니다.
 
 ### 글꼴 {#fonts}
 
@@ -254,6 +254,7 @@ PDF Generator를 사용하면 PDF 파일의 크기를 줄일 수 있습니다. �
    * 필요한 경우 **글꼴 소스** 드롭다운 메뉴에서 다른 글꼴 디렉토리를 선택합니다. 이 드롭다운 메뉴에는 **홈 > 설정 > 핵심 시스템 > 핵심 구성에 지정된 글꼴 디렉토리가 나열됩니다**.
    * 사용 가능한 글꼴 목록에서 하나 이상의 **글꼴을** 선택하고 **추가를 클릭합니다**. 이러한 글꼴은 포함 취소 목록에 **추가됩니다** .
    * 양식 서버에 없는 일부 글꼴을 포함 취소하려면 포함 취소할 글꼴 **추가 상자에 해당 글꼴의 이름을 입력합니다** . **추가**&#x200B;를 클릭합니다.
+
    >[!NOTE]
    >
    >*문서에 하위 세트가 포함된 일부 글꼴을 포함 취소하려면 글꼴 이름에 + 기호를 접두사로 사용하십시오. 예: &quot;+Helvetica&quot;.*
@@ -274,7 +275,7 @@ PDF 문서에 투명도가 포함된 아트웍이 포함되어 있는 경우 PDF
 
 >[!NOTE]
 >
->Acrobat 4.0 이상이 Target PDF 버전으로 선택된 경우 투명한 모든 개체가 병합됩니다. 다른 Target PDF 버전의 경우 투명도가 지원되며 투명도 설정을 구성할 수 있습니다.
+>Acrobat 4.0 이상이 Target PDF 버전으로 선택된 경우 모든 투명 개체가 병합됩니다. 다른 Target PDF 버전의 경우 투명도가 지원되므로 투명도 설정을 구성할 수 있습니다.
 
 PDF **문서를** 최적화하는 동안 투명도 설정을 구성하려면 투명도를 선택합니다.
 
@@ -296,7 +297,7 @@ PDF **문서를** 최적화하는 동안 투명도 설정을 구성하려면 투
 >
 >그라디언트 및 메쉬 해상도는 일반적으로 150-300ppi로 설정해야 합니다. 그라디언트, 그림자 및 페더의 품질은 높은 해상도로 향상되지 않지만 인쇄 시간과 파일 크기는 증가합니다.
 
-**모든 텍스트를 윤곽선으로** 변환 모든 문자 오브젝트(포인트 문자, 영역 문자 및 패스 유형)를 윤곽선으로 변환하고 투명도가 포함된 페이지에서 모든 문자 글리프 정보를 삭제합니다. 이 옵션을 사용하면 병합하는 동안 텍스트 너비가 일관되게 유지됩니다. 이 옵션을 활성화하면 Acrobat에서 보거나 저해상도 데스크탑 프린터에서 인쇄할 때 작은 글꼴이 약간 더 두껍게 나타납니다. 고해상도 프린터나 이미지 세터에 인쇄되는 유형의 품질에는 영향을 주지 않습니다.
+**모든 텍스트를 윤곽선으로** 변환 모든 문자 오브젝트(포인트 문자, 영역 문자 및 패스 유형)를 윤곽선으로 변환하고 투명도가 포함된 페이지에서 모든 문자 글리프 정보를 삭제합니다. 이 옵션을 사용하면 병합하는 동안 텍스트 너비가 일관되게 유지됩니다. 이 옵션을 활성화하면 Acrobat에서 보거나 저해상도 데스크탑 프린터로 인쇄할 때 작은 글꼴이 약간 두껍게 나타납니다. 고해상도 프린터나 이미지 세터에 인쇄되는 유형의 품질에는 영향을 주지 않습니다.
 
 **모든 선을 윤곽선으로 변환** 투명도가 포함된 페이지에서 모든 선을 간단한 채워진 패스로 변환합니다. 이 옵션을 사용하면 병합하는 동안 획 너비가 일관되게 유지됩니다. 이 옵션을 활성화하면 가는 선이 약간 더 두껍게 나타나고 병합 성능이 저하될 수 있습니다.
 
@@ -365,7 +366,7 @@ PDF **문서를** 최적화하는 동안 투명도 설정을 구성하려면 투
 
 다른 **사용자와 배포 또는 공유하지 않으려는 개인 정보를 제거하려면 [사용자 데이터** 삭제]를 선택합니다.
 
-* **모든 주석, 양식 및 멀티미디어**&#x200B;취소: PDF에서 모든 주석, 양식, 양식 필드 및 멀티미디어를 제거합니다.
+* **모든 주석, Forms 및 멀티미디어**&#x200B;삭제: PDF에서 모든 주석, 양식, 양식 필드 및 멀티미디어를 제거합니다.
 * **모든 개체 데이터 삭제**: PDF에서 모든 개체를 제거합니다.
 * **외부 상호 참조 삭제**: 다른 문서에 대한 링크를 제거합니다. PDF 내의 다른 위치로 이동하는 링크는 제거되지 않습니다.
 * **숨겨진 레이어 컨텐츠 및 보이는 레이어 분리**: 파일 크기를 줄입니다. 최적화된 문서는 원본 PDF와 비슷하지만 레이어 정보는 포함되지 않습니다.
@@ -423,9 +424,9 @@ PDF **문서를** 최적화하는 동안 투명도 설정을 구성하려면 투
 
 **Adobe PDF에 링크 추가**: 소스 파일의 하이퍼링크를 PDF 문서의 하이퍼링크로 변환합니다.
 
-**Adobe PDF에 소스 파일 첨부**: 이 옵션을 선택하면 원본 Excel 스프레드시트가 생성된 PDF 문서 내에 첨부 파일로 삽입됩니다.
+**소스 파일을 Adobe PDF에 첨부**: 이 옵션을 선택하면 원본 Excel 스프레드시트가 생성된 PDF 문서 내에 첨부 파일로 삽입됩니다.
 
-**태그가 지정된 Adobe PDF를 사용하여 액세서빌러티 및 리플로우 사용**: PDF 문서에 태그를 삽입하여 액세서빌러티 및 리플로우를 활성화합니다.
+**태그 있는 Adobe PDF으로 액세서빌러티 및 Reflow 활성화**: PDF 문서에 태그를 삽입하여 액세서빌러티 및 리플로우를 활성화합니다.
 
 **로드할 Excel 주소 목록**: 기본적으로(보안상의 이유로) Excel 파일을 PDF로 변환할 때 Excel 추가 기능이 실행되지 않습니다. 전환 중에 특정 Excel 추가 기능을 실행할 수 있도록 하려면 Add-in의 이름에 대한 쉼표로 구분된 목록을 제공하십시오.
 
@@ -443,9 +444,9 @@ PDF **문서를** 최적화하는 동안 투명도 설정을 구성하려면 투
 
 **[!UICONTROL Adobe PDF에 책갈피 추가]**: PowerPoint 제목을 책갈피로 변환합니다. 이 옵션은 기본적으로 선택되어 있습니다.
 
-**[!UICONTROL Adobe PDF에 소스 파일 첨부]**: 소스 파일을 PDF 파일에 첨부 파일로 추가합니다. 이 옵션은 기본적으로 선택 해제되어 있습니다.
+**[!UICONTROL 소스 파일을 Adobe PDF에 첨부]**: 소스 파일을 PDF 파일에 첨부 파일로 추가합니다. 이 옵션은 기본적으로 선택 해제되어 있습니다.
 
-**[!UICONTROL 태그가 지정된 Adobe PDF를 사용하여 액세서빌러티 및 리플로우 사용]**: PDF 파일에 태그를 포함합니다. 이 옵션은 기본적으로 선택 해제되어 있습니다.
+**[!UICONTROL 태그 있는 Adobe PDF으로 액세서빌러티 및 Reflow 활성화]**: PDF 파일에 태그를 포함합니다. 이 옵션은 기본적으로 선택 해제되어 있습니다.
 
 **[!UICONTROL 멀티미디어를 PDF 멀티미디어로 변환]**: 가능하면 멀티미디어를 PDF 멀티미디어로 변환합니다. 이 옵션은 기본적으로 선택되어 있습니다.
 
@@ -457,13 +458,13 @@ PDF **문서를** 최적화하는 동안 투명도 설정을 구성하려면 투
 
 **[!UICONTROL Adobe PDF에 링크 추가]**: 파일을 변환할 때 기존 링크를 유지합니다. 링크의 모양은 일반적으로 변경되지 않습니다. [액세스 가능성 활성화] 옵션도 선택된 경우에만 링크를 만들 수 있습니다. 이 옵션은 기본적으로 선택 해제되어 있습니다.
 
-**[!UICONTROL Adobe PDF로 슬라이드 전환 저장]**: 슬라이드 전환을 변환합니다. 이 옵션은 기본적으로 선택되어 있습니다.
+**[!UICONTROL Adobe PDF에서 슬라이드 전환 저장]**: 슬라이드 전환을 변환합니다. 이 옵션은 기본적으로 선택되어 있습니다.
 
-**[!UICONTROL Adobe PDF로 애니메이션 저장]**: 변환된 애니메이션을 PDF 파일에 저장합니다.
+**[!UICONTROL Adobe PDF에서 애니메이션 저장]**: 변환된 애니메이션을 PDF 파일에 저장합니다.
 
 **[!UICONTROL 숨겨진 슬라이드를 PDF 페이지로 변환]**: 숨겨진 슬라이드를 변환합니다.
 
-**[!UICONTROL PDF/A-1a 호환 파일]**&#x200B;만들기: PDF/A-1b:2005 RGB Adobe PDF 설정을 강제로 사용합니다. PDF 파일을 만들 때 일부 PowerPoint 기능이 변환되지 않습니다. Acrobat에서 PowerPoint 전환 시 동일한 전환이 없는 경우 유사한 전환 대신 동일한 슬라이드에 여러 애니메이션 효과가 있는 경우 하나의 효과가 사용됩니다. 페이지 전환 및 글머리 기호가 전환됩니다.
+**[!UICONTROL PDF/A-1a 호환 파일]**&#x200B;만들기: PDF/A-1b:2005 RGB Adobe PDF 설정을 강제로 사용합니다. PDF 파일을 만들 때 일부 PowerPoint 기능이 변환되지 않습니다. Acrobat에서 PowerPoint 전환이 동등한 전환을 사용하지 않는 경우 유사한 전환 대신 동일한 슬라이드에 여러 애니메이션 효과가 있는 경우 하나의 효과가 사용됩니다. 페이지 전환 및 글머리 기호가 전환됩니다.
 
 ## Microsoft Project 설정(Windows만 해당) {#microsoft-project-settings-windows-only}
 
@@ -472,7 +473,7 @@ PDF **문서를** 최적화하는 동안 투명도 설정을 구성하려면 투
 1. **[!UICONTROL 파일 이름 확장자:]** 이 응용 프로그램에 허용되는 파일 형식의 파일 이름 확장자를 쉼표로 구분하여 지정합니다. The default is `mpp`. 확장 이전 또는 확장 사이의 공백을 포함하지 마십시오.
 
 1. **[!UICONTROL 문서 정보 변환]**: 제목, 제목, 제목, 작성자, 키워드, 관리자, 회사, 범주 및 주석을 비롯한 소스 파일의 속성 대화 상자에서 문서 정보를 추가합니다. 이 옵션은 기본적으로 선택되어 있습니다.
-1. **[!UICONTROL Adobe PDF에 소스 파일 첨부]**: 소스 파일을 PDF 파일에 첨부 파일로 추가합니다.
+1. **[!UICONTROL 소스 파일을 Adobe PDF에 첨부]**: 소스 파일을 PDF 파일에 첨부 파일로 추가합니다.
 1. **[!UICONTROL PDF/A-1a 호환 파일]**&#x200B;만들기: PDF/A-1b:2005 RGB Adobe PDF 설정을 강제로 사용합니다.
 1. **[!UICONTROL 자동으로 매크로 실행]**: 문서를 변환하기 전에 Microsoft Project 문서에서 매크로(예: 현재 시간을 삽입하는 매크로)를 실행합니다.
 
@@ -488,11 +489,11 @@ PDF **문서를** 최적화하는 동안 투명도 설정을 구성하려면 투
 
 **[!UICONTROL Adobe PDF에 책갈피 추가]**: 제목을 책갈피로 변환합니다. 이 옵션은 기본적으로 선택되어 있습니다.
 
-**[!UICONTROL Adobe PDF에 소스 파일 첨부]**: 소스 파일을 PDF 파일에 첨부 파일로 추가합니다.
+**[!UICONTROL 소스 파일을 Adobe PDF에 첨부]**: 소스 파일을 PDF 파일에 첨부 파일로 추가합니다.
 
 **[!UICONTROL 상호 참조 및 목차를 링크로 변환합니다]**. 모든 상호 참조 및 목차 항목을 링크로 변환합니다. 이 옵션은 기본적으로 선택되어 있습니다.
 
-**[!UICONTROL 태그가 지정된 Adobe PDF를 사용하여 액세서빌러티 및 리플로우 사용]**: PDF 파일에 태그를 포함합니다. 이 옵션은 기본적으로 선택되어 있습니다.
+**[!UICONTROL 태그 있는 Adobe PDF으로 액세서빌러티 및 Reflow 활성화]**: PDF 파일에 태그를 포함합니다. 이 옵션은 기본적으로 선택되어 있습니다.
 
 **[!UICONTROL PDF/A-1a 호환 파일]**&#x200B;만들기: 이 옵션을 선택하면 PDF/A-1b:2005 RGB Adobe PDF 설정이 강제로 사용됩니다.
 
@@ -504,7 +505,7 @@ PDF **문서를** 최적화하는 동안 투명도 설정을 구성하려면 투
 
 **[!UICONTROL 각주 및 미주 링크 변환]**: 각주 및 각주 인용문의 링크를 PDF 문서의 메모에 만듭니다.
 
-**[!UICONTROL 표시된 주석을 Adobe PDF에서 메모로 변환]**: Word 문서의 주석을 PDF 문서의 텍스트 메모로 변환합니다.
+**[!UICONTROL Adobe PDF에서 표시된 주석을 메모로 변환]**: Word 문서의 주석을 PDF 문서의 텍스트 메모로 변환합니다.
 
 **[!UICONTROL 고급 태그 지정 사용]**: 향상된 접근성을 위해 고급 태그를 추가합니다.
 
@@ -516,7 +517,7 @@ PDF **문서를** 최적화하는 동안 투명도 설정을 구성하려면 투
 
 Microsoft Word 스타일 이름에 쉼표(,) 또는 등호(=)가 있으면 특수 문자 앞에 이스케이프 문자(&quot;\_)를 입력합니다. 예를 들어 &quot;Heading, 1&quot;이라는 스타일을 Heading\, 1로 지정합니다.
 
-**Acrobat PDFMaker 인코딩:** Acrobat PDFMaker에 대한 입력 일반 텍스트 파일의 인코딩 유형을 지정합니다. 예를 들어 UTF-8 인코딩 파일을 사용하는 경우 최상의 결과를 얻으려면 UTF-8을 선택하십시오.
+**Acrobat PDFMaker 인코딩:** 입력 일반 텍스트 파일의 인코딩 유형을 Acrobat PDFMaker로 지정합니다. 예를 들어 UTF-8 인코딩 파일을 사용하는 경우 최상의 결과를 얻으려면 UTF-8을 선택하십시오.
 
 ## Microsoft Visio 설정(Windows만 해당) {#visio}
 
@@ -526,13 +527,13 @@ Microsoft Word 스타일 이름에 쉼표(,) 또는 등호(=)가 있으면 특�
 
 **Adobe PDF에 책갈피 추가**: 제목을 책갈피로 변환합니다. 이 옵션은 기본적으로 선택되어 있습니다.
 
-**Adobe PDF에 소스 파일 첨부**: 소스 파일을 PDF 파일에 첨부 파일로 추가합니다.
+**소스 파일을 Adobe PDF에 첨부**: 소스 파일을 PDF 파일에 첨부 파일로 추가합니다.
 
-**Adobe PDF에서 항상 레이어 분리**: 모든 Visio 레이어를 병합합니다.
+**Adobe PDF에서 항상 레이어 분리:**&#x200B;모든 Visio 레이어를 병합합니다.
 
 **모든 페이지 변환**: Visio 파일의 모든 페이지를 변환합니다.
 
-**Adobe Acrobat에서 볼 때 레이어 패널 열기**: Visio 레이어가 병합되지 않은 경우 Acrobat을 사용하여 열 때 PDF 파일에 보존된 레이어를 지정할 수 있는 창을 엽니다. 이 옵션은 기본적으로 선택되어 있습니다.
+**Adobe Acrobat에서 볼 때 레이어 패널 열기**: Visio 레이어를 병합하지 않은 경우 Acrobat을 사용하여 열 때 PDF 파일에 보존된 레이어를 지정할 수 있는 창을 엽니다. 이 옵션은 기본적으로 선택되어 있습니다.
 
 **PDF/A-1b 호환 파일**&#x200B;작성: Adobe PDF 설정 PDF/A-1b:2005(RGB)를 강제로 사용합니다.
 
@@ -554,7 +555,7 @@ Microsoft Word 스타일 이름에 쉼표(,) 또는 등호(=)가 있으면 특�
 
 **[!UICONTROL Adobe PDF에 책갈피 추가]**: 제목을 책갈피로 변환합니다.
 
-**[!UICONTROL Adobe PDF에서 항상 레이어 분리]**: 모든 AutoCAD 레이어를 병합합니다.
+**[!UICONTROL Adobe PDF에서 항상 레이어 분리:]**&#x200B;모든 AutoCAD 레이어를 병합합니다.
 
 **[!UICONTROL Adobe Acrobat에서 볼 때 레이어 창 열기]**: Acrobat에서 PDF를 열 때 레이어 구조를 표시합니다.
 
@@ -564,7 +565,7 @@ Microsoft Word 스타일 이름에 쉼표(,) 또는 등호(=)가 있으면 특�
 
 **[!UICONTROL Adobe PDF에 링크 추가]**: 선택하는 경우 모든 링크가 유지됩니다.
 
-**[!UICONTROL Adobe PDF에 소스 파일 첨부]**: 소스 파일을 PDF 파일에 첨부 파일로 추가합니다.
+**[!UICONTROL 소스 파일을 Adobe PDF에 첨부]**: 소스 파일을 PDF 파일에 첨부 파일로 추가합니다.
 
 **[!UICONTROL PDF/A-1b 호환 파일]**&#x200B;작성: PDF/A-1b Adobe PDF 설정을 강제로 사용합니다.
 
@@ -605,7 +606,7 @@ Microsoft Word 스타일 이름에 쉼표(,) 또는 등호(=)가 있으면 특�
 
 **전환 효과 사용**: OpenOffice 프레젠테이션의 슬라이드 전환 효과를 해당 PDF 전환 효과로 변환합니다.
 
-**양식 제출 형식**: PDF 문서 사용자가 작성하고 인쇄할 수 있는 PDF 양식을 만듭니다.
+**Forms 형식 제출**: PDF 문서 사용자가 작성하고 인쇄할 수 있는 PDF 양식을 만듭니다.
 
 **자동으로 삽입된 빈 페이지 내보내기**: 이 옵션을 선택하면 자동으로 삽입된 빈 페이지가 생성된 PDF 문서에 포함됩니다. PDF 문서를 양면 인쇄하는 경우 유용합니다. 예를 들어 장의 첫 번째 페이지가 항상 홀수 페이지에서 시작되도록 책을 구성할 수 있습니다. 이전 장이 홀수 페이지에서 종료되면 OpenOffice에서 빈 짝수 페이지를 설정합니다. 이 옵션은 생성된 PDF에 해당 짝수 페이지의 포함 여부를 제어합니다.
 
@@ -618,6 +619,6 @@ Microsoft Word 스타일 이름에 쉼표(,) 또는 등호(=)가 있으면 특�
 * Adobe FrameMaker: `fm`
 * Adobe Photoshop: `psd`
 
-이러한 파일 유형에 대한 지원을 사용자 정의해야 할 수 있습니다. 자세한 내용은 AEM 양식을 사용한 프로그래밍의 &quot;추가 기본 파일 형식 지원 추가&quot; [를 참조하십시오](https://www.adobe.com/go/learn_aemforms_programming_62).
+이러한 파일 유형에 대한 지원을 사용자 정의해야 할 수 있습니다. 자세한 내용은 AEM 양식을 사용한 [프로그래밍의 &quot;추가 기본 파일 형식 지원 추가&quot;를 참조하십시오](https://www.adobe.com/go/learn_aemforms_programming_62).
 
 PDFG 네트워크 프린터 구성에 대한 도움말은 PDFG 네트워크 프린터 [설정(Windows만 해당)을 참조하십시오](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md).
