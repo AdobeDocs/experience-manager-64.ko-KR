@@ -1,8 +1,8 @@
 ---
 title: 파일 종속성 해결
 seo-title: 파일 종속성 해결
-description: 자동 해결에 실패할 때 텍스처 맵 파일과 같은 3D 파일 종속성을 해결하는 방법입니다.
-seo-description: 자동 해결에 실패할 때 텍스처 맵 파일과 같은 3D 파일 종속성을 해결하는 방법입니다.
+description: 자동 해결에 실패할 때 텍스처 맵 파일과 같은 3D 파일 종속성을 해결하는 방법.
+seo-description: 자동 해결에 실패할 때 텍스처 맵 파일과 같은 3D 파일 종속성을 해결하는 방법.
 uuid: 49cefabf-147b-4a78-90f3-0f2d6a8e8cae
 contentOwner: Rick Brough
 topic-tags: 3D
@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 05b7410b-82a1-4267-ac07-2edbc29e9ee8
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '348'
+ht-degree: 39%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
-**파일 종속성을**&#x200B;해결하려면 다음을 수행하십시오.
+**파일 종속성을 해결하려면 다음을 수행하십시오**.
 
 1. In the **[!UICONTROL Card View]**, hover the pointer over the **[!UICONTROL Unresolved Dependencies]** banner message on the card, then tap the **[!UICONTROL Exclamation Point]** icon.
 
@@ -42,6 +45,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
       1. 누락된 경로 및 파일 이름을 확인합니다.
       1. 속성 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 닫기]**&#x200B;를 탭합니다.
+
    After the files are uploaded return to **[!UICONTROL View Properties > Dependencies]** page. 새로 업로드된 자산이 이제 참조된 자산으로 올바로 나열됩니다.
 
    * **종속성을 무시합니다**.
