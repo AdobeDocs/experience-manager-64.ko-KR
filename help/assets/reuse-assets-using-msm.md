@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 자산에 대한 MSM을 사용하여 에셋 재사용 {#reuse-assets-using-msm-for-assets}
 
-AEM(Adobe Experience Manager)의 MSM(Multi Site Manager) 기능을 사용하면 한 번 작성되고 여러 웹 위치에서 다시 사용되는 컨텐츠를 재사용할 수 있습니다. MSM for Assets 기능과 동일한 기능을 디지털 자산에 사용할 수 있습니다. 자산에 대해 MSM을 사용하면 다음을 수행할 수 있습니다.
+Adobe Experience Manager(AEM)의 MSM(Multi Site Manager) 기능을 사용하면 한 번 작성되고 여러 웹 위치에서 다시 사용되는 컨텐츠를 재사용할 수 있습니다. MSM for Assets 기능과 동일한 기능을 디지털 자산에 사용할 수 있습니다. 자산에 대해 MSM을 사용하면 다음을 수행할 수 있습니다.
 
 * 자산을 한 번 만든 다음 이러한 자산의 사본을 만들어 사이트의 다른 영역에서 재사용할 수 있습니다.
 * 동기화에 여러 사본을 유지하고 원본 기본 사본을 한 번 업데이트하여 변경 사항을 하위 복사본으로 푸시합니다.
@@ -30,7 +30,7 @@ AEM(Adobe Experience Manager)의 MSM(Multi Site Manager) 기능을 사용하면 
 
 ### 작동 방식과 이점 {#how-it-works-the-benefits}
 
-여러 웹 위치에서 동일한 컨텐츠(텍스트 및 자산)를 재사용하기 위한 사용 시나리오를 이해하려면 [가능한 MSM 시나리오를 참조하십시오](/help/sites-administering/msm.md#possible-scenarios). AEM은 원본 자산과 연결된 사본(LC)에 대한 링크를 유지합니다. 유지 관리 연결을 사용하면 중앙 집중식 변경 사항을 많은 Live Copy로 푸시할 수 있습니다. 이렇게 하면 중복 사본 관리의 제한 사항을 그대로 유지하면서 더욱 빠르게 업데이트할 수 있습니다. 변경 사항의 전달은 오류 없이 중앙 집중화됩니다. 이 기능을 사용하면 선택한 Live Copy로 제한된 업데이트를 사용할 수 있습니다. 사용자는 기본 복사본을 업데이트하고 변경 내용을 롤아웃할 때 덮어쓰지 않는 로컬 편집 작업을 중단하거나 상속을 해제할 수 있습니다. 일부 특정 메타데이터 필드 또는 전체 자산에 대해 분리할 수 있습니다. 기본 복사본에서 원래 상속된 자산을 로컬에서 업데이트할 수 있는 유연성을 제공합니다.
+여러 웹 위치에서 동일한 컨텐츠(텍스트 및 자산)를 재사용하기 위한 사용 시나리오를 이해하려면 [가능한 MSM 시나리오를 참조하십시오](/help/sites-administering/msm.md#possible-scenarios). AEM은 원본 자산과 LCs(live copy)라고 하는 링크 사본을 유지 관리합니다. 유지 관리 연결을 사용하면 중앙 집중식 변경 사항을 많은 Live Copy로 푸시할 수 있습니다. 이렇게 하면 중복 사본 관리의 제한 사항을 그대로 유지하면서 더욱 빠르게 업데이트할 수 있습니다. 변경 사항의 전달은 오류 없이 중앙 집중화됩니다. 이 기능을 사용하면 선택한 Live Copy로 제한된 업데이트를 사용할 수 있습니다. 사용자는 기본 복사본을 업데이트하고 변경 내용을 롤아웃할 때 덮어쓰지 않는 로컬 편집 작업을 중단하거나 상속을 해제할 수 있습니다. 일부 특정 메타데이터 필드 또는 전체 자산에 대해 분리할 수 있습니다. 기본 복사본에서 원래 상속된 자산을 로컬에서 업데이트할 수 있는 유연성을 제공합니다.
 
 MSM은 소스 자산과 Live Copy 간에 라이브 관계를 유지하여 다음과 같은 작업을 수행합니다.
 
@@ -65,7 +65,7 @@ MSM은 소스 자산과 Live Copy 간에 라이브 관계를 유지하여 다음
 하나 이상의 소스 자산 또는 폴더에서 Live Copy를 만들려면 다음 중 하나를 수행합니다.
 
 * **방법 1**: 소스 에셋을 선택하고 맨 위에 있는 **[!UICONTROL 도구 모음에서 만들기]** > Live Copy를 클릭합니다.
-* **방법 2**: AEM 사용자 인터페이스에서 **[!UICONTROL 만들기 > Live Copy]** 를 인터페이스 오른쪽 상단 모서리에서 클릭합니다.
+* **방법 2**: AEM 사용자 인터페이스에서 **[!UICONTROL 만들기 > Live Copy]** 를 인터페이스 오른쪽 상단에서 클릭합니다.
 
 자산 또는 폴더의 Live Copy를 한 번에 만들 수 있습니다. 자산이나 Live Copy 자체인 폴더에서 파생된 Live Copy를 만들 수 있습니다.
 
@@ -79,7 +79,7 @@ MSM은 소스 자산과 Live Copy 간에 라이브 관계를 유지하여 다음
 1. 제목과 이름을 입력합니다. 자산에 자식이 없습니다. 폴더의 Live Copy를 만들 때 하위 항목을 포함하거나 제외하도록 선택할 수 있습니다.
 1. 롤아웃 구성을 선택합니다. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
-두 번째 방법을 사용하여 Live Copy를 만들려면 다음 단계를 수행하십시오.
+두 번째 방법을 사용하여 Live Copy를 만들려면 다음 단계를 수행합니다.
 
 1. AEM 인터페이스의 오른쪽 위 모서리에서 **[!UICONTROL 만들기 > Live Copy를 클릭합니다]**.
    ![AEM 인터페이스에서 Live Copy 만들기](assets/lc_create2.png)
@@ -166,7 +166,7 @@ Live Copy 자산 또는 폴더를 선택하고 왼쪽 레일을 연 다음 **[!U
 소스 자산에서 롤아웃 작업을 시작하고 전체 또는 일부 선택한 Live Copy를 업데이트할 수 있습니다.
 
 1. Live Copy 자산 또는 폴더를 선택합니다. Click **[!UICONTROL Properties]** from the toolbar. 또는 키보드 단축키를 사용합니다 `p`.
-1. Live **[!UICONTROL Copy 소스를 클릭합니다]**. 도구 모음 **[!UICONTROL 에서 롤아웃을]** 클릭합니다.
+1. Live **[!UICONTROL Copy 소스를 클릭합니다]**. Click **[!UICONTROL Rollout]** from the toolbar.
 1. 업데이트할 Live Copy를 선택합니다. 롤아웃을 **[!UICONTROL 클릭합니다]**.
 1. 하위 자산에 대한 업데이트를 롤아웃하려면 **[!UICONTROL 롤아웃 소스 및 모든 하위 항목을 선택합니다]**.
    ![소스 수정 내용을 일부 또는 전체 Live Copy로 롤아웃합니다.](assets/lc_rollout_page.png)
@@ -260,7 +260,7 @@ AEM에서는 MSM Java API를 사용하여 기능을 확장할 수 있습니다. 
 
 ## 자산 관리 작업이 Live Copy에 미치는 영향 {#impact-of-asset-management-tasks-on-live-copies}
 
-Live Copy와 소스는 디지털 자산으로서 어느 정도 관리할 수 있는 자산 또는 폴더입니다. AEM의 일부 자산 관리 작업은 Live Copy에 특정 영향을 줍니다.
+Live Copy와 소스는 디지털 자산으로서 어느 정도 관리할 수 있는 자산 또는 폴더입니다. AEM의 일부 에셋 관리 작업은 Live Copy에 특정 영향을 줍니다.
 
 * Live Copy를 복사하면 첫 번째 Live Copy와 동일한 소스를 가진 Live Copy 에셋이 만들어집니다.
 * 소스 또는 Live Copy를 이동하면 라이브 관계가 유지됩니다.
