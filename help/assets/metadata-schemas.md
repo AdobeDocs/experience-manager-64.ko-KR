@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # 메타데이터 스키마 {#metadata-schemas}
 
-메타데이터 스키마 [!DNL Experience Manager Assets]는 속성 페이지의 레이아웃과 특정 스키마를 사용하는 자산에 대해 표시되는 메타데이터 속성을 정의합니다. 메타데이터 속성에는 제목, 설명, MIME 유형, 태그 등이 포함됩니다. 메타데이터 스키마 양식 편집기를 사용하여 기존 스키마를 수정하거나 사용자 정의 메타데이터 스키마를 추가할 수 있습니다.
+메타데이터 스키마 [!DNL Experience Manager Assets]는 속성 페이지의 레이아웃과 특정 스키마를 사용하는 자산에 대해 표시되는 메타데이터 속성을 정의합니다. 메타데이터 속성에는 제목, 설명, MIME 유형, 태그 등이 포함됩니다. 메타데이터 스키마 Forms 편집기를 사용하여 기존 스키마를 수정하거나 사용자 정의 메타데이터 스키마를 추가할 수 있습니다.
 
 자산에 대한 속성 페이지를 보고 편집하려면 다음 단계를 따르십시오.
 
@@ -29,7 +29,7 @@ ht-degree: 4%
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
-   자산에 대한 MIME 형식을 수정하려면 사용자 지정 메타데이터 스키마 양식을 사용하거나 기존 양식을 수정하십시오. 자세한 [내용은 메타데이터 스키마 양식](metadata-schemas.md#editing-metadata-schema-forms) 편집을 참조하십시오. 특정 MIME 유형의 메타데이터 스키마를 수정하는 경우 현재 MIME 형식과 모든 자산 하위 형식의 자산에 대한 속성 페이지 레이아웃이 수정됩니다. 예를 들어, 스키마를 `jpeg` 수정하면 `default/image` MIME 형식의 자산에 대한 메타데이터 레이아웃(자산 속성)만 수정됩니다 `IMAGE/JPEG`. 그러나 기본 스키마를 편집하는 경우 변경 사항은 모든 유형의 자산에 대한 메타데이터 레이아웃을 수정합니다.
+   자산에 대한 MIME 형식을 수정하려면 사용자 지정 메타데이터 스키마 양식을 사용하거나 기존 양식을 수정하십시오. 자세한 [내용은 메타데이터 스키마 Forms](metadata-schemas.md#editing-metadata-schema-forms) 편집을 참조하십시오. 특정 MIME 유형의 메타데이터 스키마를 수정하는 경우 현재 MIME 형식과 모든 자산 하위 형식의 자산에 대한 속성 페이지 레이아웃이 수정됩니다. 예를 들어, 스키마를 `jpeg` 수정하면 `default/image` MIME 형식의 자산에 대한 메타데이터 레이아웃(자산 속성)만 수정됩니다 `IMAGE/JPEG`. 그러나 기본 스키마를 편집하는 경우 변경 사항은 모든 유형의 자산에 대한 메타데이터 레이아웃을 수정합니다.
 
 ## 메타데이터 스키마 양식 {#default-metadata-schema-forms}
 
@@ -41,13 +41,13 @@ ht-degree: 4%
 |---|---|---|
 | [!UICONTROL 기본값] |  | 자산에 대한 기본 메타데이터 스키마 양식입니다. |
 |  | 다음 하위 양식은 [!UICONTROL 기본] 양식의 속성을 상속합니다. |  |
-|  | <ul><li> [!UICONTROL dm_video]</li></ul> | Dynamic Media 비디오에 대한 스키마 양식입니다. |
+|  | <ul><li> [!UICONTROL dm_video]</li></ul> | 다이내믹 미디어 비디오에 대한 스키마 양식입니다. |
 |  | <ul><li> [!UICONTROL 이미지]</li></ul> | MIME 유형이 &quot;image&quot;인 에셋에 대한 스키마 양식(예: image/jpeg, image/png 등) <br> 이미지 [!UICONTROL 양식에는 다음과 같은 하위] 양식 템플릿이 있습니다. <ul><li> [!UICONTROL jpeg]: 하위 유형 jpeg가 있는 자산에 대한 스키마 [!UICONTROL 양식입니다].</li> <li>[!UICONTROL tiff]: 하위 유형 tiff가 있는 자산의 [!UICONTROL 스키마 양식입니다].</li></ul> |
 |  | <ul><li> [!UICONTROL 응용 프로그램]</li></ul> | MIME 유형이 &quot;application&quot;인 에셋에 대한 스키마 양식(예: application/ pdf, application/ zip 등) <br>[!UICONTROL pdf]: 하위 유형 pdf가 있는 자산에 대한 스키마 양식입니다. |
 |  | <ul><li>[!UICONTROL 비디오]</li></ul> | 비디오/avi, 비디오/mp4 등과 같이 MIME 유형이 &quot;비디오&quot;인 에셋에 대한 스키마 양식입니다. |
 | [!UICONTROL 컬렉션] |  | 컬렉션에 대한 스키마 양식입니다. |
 | [!UICONTROL contentfragment] |  | 콘텐츠 조각에 대한 스키마 양식입니다. |
-| [!UICONTROL 양식] |  | 이 스키마 양식은 [Adobe Experience Manager 양식과 관련되어 있습니다](/help/forms/home.md). |
+| [!UICONTROL 양식] |  | 이 스키마 양식은 [Adobe Experience Manager Forms](/help/forms/home.md)와 관련이 있습니다. |
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ ht-degree: 4%
 
 메타데이터 스키마 양식에 새 탭 또는 양식 항목을 추가할 수 있습니다. 상위에서 파생된 탭 및 양식 항목은 잠긴 상태입니다. 하위 수준에서 변경할 수 없습니다.
 
-1. 스키마 **[!UICONTROL 양식]** 페이지에서 양식 앞의 확인란을 선택한 다음 도구 모음에서 **[!UICONTROL 편집을]** 클릭합니다.
+1. 스키마 **[!UICONTROL Forms]** 페이지에서 양식 앞에 있는 확인란을 선택한 다음 도구 모음에서 **[!UICONTROL 편집을]** 클릭합니다.
 
    ![chlimage_1-175](assets/chlimage_1-175.png)
 
@@ -100,7 +100,7 @@ ht-degree: 4%
 | [!UICONTROL 드롭다운] | 드롭다운 목록을 추가합니다. |
 | [!UICONTROL 표준 태그] | 태그 추가. |
 | [!UICONTROL 스마트 태그] | 메타데이터 태그를 자동으로 추가하여 검색 기능을 강화합니다. |
-| [!UICONTROL 숨김 필드] | 숨김 필드를 추가합니다. 자산이 저장되면 POST 매개 변수로 전송됩니다. |
+| [!UICONTROL 숨김 필드] | 숨김 필드를 추가합니다. 에셋을 저장할 때 POST 매개 변수로 전송됩니다. |
 | [!UICONTROL 자산 참조자] | 이 구성 요소를 추가하여 자산에서 참조하는 자산 목록을 봅니다. |
 | [!UICONTROL 자산 참조] | 자산을 참조하는 자산 목록을 표시하려면 추가합니다. |
 | [!UICONTROL 제품 참조] | 자산에 연결된 제품 목록을 표시하려면 추가합니다. |
@@ -187,7 +187,7 @@ AEM에서는 사용자 정의 스키마 양식만 삭제할 수 있습니다. �
 
 ## MIME 형식의 스키마 양식 {#schema-forms-for-mime-types}
 
-AEM Assets은 즉시 사용 가능한 다양한 MIME 유형에 대한 기본 양식을 제공합니다. 그러나 다양한 MIME 형식의 자산에 대해 사용자 지정 양식을 추가할 수 있습니다.
+AEM Assets은 즉시 사용 가능한 다양한 MIME 유형에 대해 기본 양식을 제공합니다. 그러나 다양한 MIME 형식의 자산에 대해 사용자 지정 양식을 추가할 수 있습니다.
 
 ### MIME 유형에 새 양식 추가 {#adding-new-forms-for-mime-types}
 
@@ -238,18 +238,18 @@ AEM Assets을 사용하면 메타데이터 스키마의 변형을 정의하고 �
 
 폴더에 하위 폴더가 있는 경우 하위 폴더 내의 에셋은 하위 폴더 수준에서 다른 스키마를 적용하는 경우 하위 폴더 수준에서 적용된 스키마의 메타데이터를 상속합니다. 하지만 하위 폴더 수준에서 스키마나 동일한 스키마가 적용되지 않으면 하위 폴더 에셋은 상위 폴더 수준에서 적용된 스키마의 메타데이터를 상속합니다.
 
-1. AEM 로고를 클릭한 다음 **[!UICONTROL 도구 > 자산 > 메타데이터 스키마로 이동합니다]**. 메타데이터 **[!UICONTROL 스키마 양식]** 페이지가 표시됩니다.
+1. AEM 로고를 클릭한 다음 도구 > **[!UICONTROL 자산 > 메타데이터 스키마로 이동합니다]**. 메타데이터 **[!UICONTROL 스키마 Forms]** 페이지가 표시됩니다.
 1. 양식 앞에 있는 확인란(예: 기본 메타데이터 양식)을 선택하고 **[!UICONTROL 복사]** 아이콘을 클릭하거나 탭하여 사용자 정의 양식으로 저장합니다. 예를 들어 양식의 사용자 지정 이름을 지정합니다 `my_default`. 또는 사용자 지정 양식을 만들 수 있습니다.
 
    ![chlimage_1-184](assets/chlimage_1-184.png)
 
-1. [ **[!UICONTROL 메타데이터 스키마 양식]** ] 페이지에서 `my_default` 양식을 선택한 다음 편집을 **[!UICONTROL 클릭합니다]**.
+1. 메타데이터 **[!UICONTROL 스키마 Forms]** 페이지에서 `my_default` 양식을 선택한 다음 **[!UICONTROL 편집을 클릭합니다]**.
 
 1. [ **[!UICONTROL 메타데이터 스키마 편집기]** ] 페이지에서 스키마 양식에 텍스트 필드를 추가합니다. 예를 들어 레이블이 카테고리로 필드를 **[!UICONTROL 추가합니다]**.
 
    ![chlimage_1-186](assets/chlimage_1-186.png)
 
-1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 수정된 양식이 [ **[!UICONTROL 메타데이터 스키마 양식] 페이지에]** 나열됩니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 수정된 양식이 [ **[!UICONTROL 메타데이터 스키마 Forms]** ] 페이지에 나열됩니다.
 1. 도구 모음 **[!UICONTROL 에서 폴더에]** 적용을 클릭/탭하여 사용자 지정 메타데이터를 폴더에 적용합니다.
 
    ![chlimage_1-187](assets/chlimage_1-187.png)
@@ -270,7 +270,7 @@ AEM Assets을 사용하면 메타데이터 스키마의 변형을 정의하고 �
 >
 >메타데이터 필드는 다른 필드의 값을 기준으로 필수로 정의할 수 있습니다. 카드 보기에서는 이러한 필수 메타데이터 필드에 대한 누락된 메타데이터에 대한 경고 메시지가 표시되지 않습니다.
 
-1. AEM 로고를 클릭한 다음 **[!UICONTROL 도구 > 자산 > 메타데이터 스키마로 이동합니다]**. 메타데이터 **[!UICONTROL 스키마 양식]** 페이지가 표시됩니다.
+1. AEM 로고를 클릭한 다음 도구 > **[!UICONTROL 자산 > 메타데이터 스키마로 이동합니다]**. 메타데이터 **[!UICONTROL 스키마 Forms]** 페이지가 표시됩니다.
 1. 기본 메타데이터 양식을 사용자 지정 양식으로 저장합니다. 예를 들어 다른 이름으로 저장합니다 `my_default`.
 
    ![chlimage_1-189](assets/chlimage_1-189.png)
@@ -279,14 +279,14 @@ AEM Assets을 사용하면 메타데이터 스키마의 변형을 정의하고 �
 
    ![chlimage_1-190](assets/chlimage_1-190.png)
 
-1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 수정된 양식이 [ **[!UICONTROL 메타데이터 스키마 양식] 페이지에]** 나열됩니다. 사용자 지정 메타데이터를 폴더에 적용하려면 양식을 선택하고 도구 모음에서 **[!UICONTROL 폴더에 적용]** 을 클릭/탭합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 수정된 양식이 [ **[!UICONTROL 메타데이터 스키마 Forms]** ] 페이지에 나열됩니다. 사용자 지정 메타데이터를 폴더에 적용하려면 양식을 선택하고 도구 모음에서 **[!UICONTROL 폴더에 적용]** 을 클릭/탭합니다.
 
 1. 사용자 지정 양식에 추가한 필수 필드에 대한 메타데이터가 없는 일부 자산을 폴더로 이동하고 업로드합니다. 자산에 대한 카드 보기에는 필수 필드에 대해 누락된 메타데이터에 대한 메시지가 표시됩니다.
 
    ![chlimage_1-192](assets/chlimage_1-192.png)
 
-1. (선택 사항) 액세스 `http://[server]:[port]/system/console/components/`. 기본적으로 비활성화된 구성 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 요소를 구성하고 활성화합니다. AEM이 자산에 대한 메타데이터의 유효성을 확인하는 빈도를 설정합니다.
-이 구성은 자산의 jcr:content `hasValidMetadata` 에 속성을 추가합니다. 이 속성을 사용하여 AEM에서 검색 결과를 필터링할 수 있습니다.
+1. (선택 사항) 액세스 `http://[server]:[port]/system/console/components/`. 기본적으로 비활성화된 구성 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 요소를 구성하고 활성화합니다. AEM에서 자산에 대한 메타데이터의 유효성을 확인하는 빈도를 설정합니다.
+이 구성은 자산의 jcr:content `hasValidMetadata` 에 속성을 추가합니다. AEM은 이 속성을 사용하여 검색 결과를 필터링할 수 있습니다.
 
 >[!NOTE]
 >
