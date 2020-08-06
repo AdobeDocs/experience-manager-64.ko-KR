@@ -1,6 +1,6 @@
 ---
-title: 페이지에 Search&Promote 기능 추가
-seo-title: 페이지에 Search&Promote 기능 추가
+title: 페이지에 Search & Promote 기능 추가
+seo-title: 페이지에 Search & Promote 기능 추가
 description: 웹 사이트에서 Search&Promote 기능을 통합하려면 Search&Promote 구성 요소를 사용하여 페이지에 키워드 검색, 검색 결과 페이지, 상세 검색 및 배너 기능을 추가하십시오.
 seo-description: 웹 사이트에서 Search&Promote 기능을 통합하려면 Search&Promote 구성 요소를 사용하여 페이지에 키워드 검색, 검색 결과 페이지, 상세 검색 및 배너 기능을 추가하십시오.
 uuid: 382cf784-4214-4bf3-ace6-6f66451195e2
@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 50ba6a09-d6cb-4ec0-8a0f-af0da8cc3d2d
 translation-type: tm+mt
 source-git-commit: b4a2dee750fd646ba54aed243c9fb90379565d5d
+workflow-type: tm+mt
+source-wordcount: '159'
+ht-degree: 79%
 
 ---
 
