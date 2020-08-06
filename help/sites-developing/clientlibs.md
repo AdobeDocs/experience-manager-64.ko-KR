@@ -1,8 +1,8 @@
 ---
 title: 클라이언트측 라이브러리 사용
 seo-title: 클라이언트측 라이브러리 사용
-description: AEM에서는 클라이언트측 라이브러리 폴더를 제공합니다. 이를 통해 클라이언트측 코드를 저장소에 저장하고, 카테고리로 구성하고, 각 코드 카테고리가 클라이언트에게 제공되는 시기와 방법을 정의할 수 있습니다
-seo-description: AEM에서는 클라이언트측 라이브러리 폴더를 제공합니다. 이를 통해 클라이언트측 코드를 저장소에 저장하고, 카테고리로 구성하고, 각 코드 카테고리가 클라이언트에게 제공되는 시기와 방법을 정의할 수 있습니다
+description: AEM은 클라이언트측 라이브러리 폴더를 제공합니다. 이 폴더를 통해 저장소에 클라이언트측 코드를 저장하고, 카테고리로 구성하고, 각 코드 카테고리가 클라이언트에게 제공되는 시기와 방법을 정의할 수 있습니다
+seo-description: AEM은 클라이언트측 라이브러리 폴더를 제공합니다. 이 폴더를 통해 저장소에 클라이언트측 코드를 저장하고, 카테고리로 구성하고, 각 코드 카테고리가 클라이언트에게 제공되는 시기와 방법을 정의할 수 있습니다
 uuid: c022992d-a6db-4abb-8c53-4c91d6eed225
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 최신 웹 사이트에서는 복잡한 JavaScript 및 CSS 코드를 기반으로 하는 클라이언트측 처리에 크게 의존합니다. 이 코드의 제공을 구성하고 최적화하는 것은 복잡한 문제가 될 수 있습니다.
 
-이 문제를 해결하는 데 도움이 되도록 AEM에서는 클라이언트측 코드를 저장소에 저장하고, 카테고리로 구성하고, 각 코드 카테고리가 클라이언트에 제공될 시기 및 방법을 정의할 수 있는 **클라이언트측 라이브러리 폴더를**&#x200B;제공합니다. 그러면 클라이언트측 라이브러리 시스템은 최종 웹 페이지에서 올바른 링크를 만들어 올바른 코드를 로드합니다.
+이 문제를 해결하기 위해 AEM에서는 클라이언트측 코드 **를 저장소에 저장하고, 카테고리로 구성하고, 각 코드 카테고리가 클라이언트에게 제공되는 시기와 방법을 정의할 수 있는 클라이언트측 라이브러리 폴더를**&#x200B;제공합니다. 그러면 클라이언트측 라이브러리 시스템은 최종 웹 페이지에서 올바른 링크를 만들어 올바른 코드를 로드합니다.
 
-## AEM에서 클라이언트측 라이브러리 작동 방식 {#how-client-side-libraries-work-in-aem}
+## AEM의 클라이언트측 라이브러리 작동 방식 {#how-client-side-libraries-work-in-aem}
 
 페이지의 HTML에 클라이언트측 라이브러리(즉, JS 또는 CSS 파일)를 포함하는 표준 방법은 해당 페이지의 JSP에 해당 파일에 대한 경로를 포함하는 `<script>` 또는 `<link>` 태그를 단순히 포함시키는 것입니다. 예,
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 ...
 ```
 
-이 방법은 AEM에서 작동하지만 페이지와 구성 요소가 복잡해질 때 문제를 초래할 수 있습니다. 이러한 경우 동일한 JS 라이브러리의 여러 사본이 최종 HTML 출력에 포함될 수 있습니다. 이를 방지하고 클라이언트측 라이브러리의 논리적 구성을 허용하려면 AEM에서 **클라이언트측 라이브러리 폴더를 사용합니다**.
+이 방법은 AEM에서 작동하지만 페이지와 구성 요소가 복잡해질 때 문제가 발생할 수 있습니다. 이러한 경우 동일한 JS 라이브러리의 여러 사본이 최종 HTML 출력에 포함될 수 있습니다. 이를 방지하고 클라이언트측 라이브러리 AEM의 논리 구성을 허용하려면 **클라이언트측 라이브러리 폴더를 사용합니다**.
 
 클라이언트측 라이브러리 폴더는 유형의 저장소 노드입니다 `cq:ClientLibraryFolder`. CND 표기법의 [정의입니다](https://jackrabbit.apache.org/node-type-notation.html) .
 
@@ -50,7 +50,7 @@ ht-degree: 0%
   - channels (string) multiple
 ```
 
-기본적으로, 노드 `cq:ClientLibraryFolder` 는 저장소의 `/apps`및 하위 트리 내 `/libs` 의 어느 곳에서나 삽입할 수 있으며, 이러한 기본값 및 기타 설정은 시스템 콘솔 `/etc` 의 **Adobe Granite HTML Library Manager** 패널을 통해 제어할 수 [](http://localhost:4502/system/console/configMgr)있습니다.
+기본적으로, 노드 `cq:ClientLibraryFolder` 는 저장소의 `/apps`및 하위 트리 내 `/libs` 의 어느 곳에서나, 그리고 다른 설정은 시스템 콘솔 `/etc` 의 [Adobe [Granite HTML Library Manager **] 패널을 통해 제어할 수** [](http://localhost:4502/system/console/configMgr)있습니다.
 
 각 `cq:ClientLibraryFolder` 은 몇 개의 지원 파일과 함께 JS 및/또는 CSS 파일 세트로 채워집니다(아래 참조). 의 속성은 다음과 같이 `cq:ClientLibraryFolder` 구성됩니다.
 
@@ -63,11 +63,11 @@ ht-degree: 0%
 
 ## 클라이언트측 라이브러리 참조 {#referencing-client-side-libraries}
 
-HTL이 AEM 사이트 개발을 위한 선호 기술이므로 AEM에 클라이언트측 라이브러리를 포함하는 데 HTL을 사용해야 합니다. 그러나 JSP를 사용하여 수행할 수도 있습니다.
+HTL은 AEM 사이트 개발을 위해 선호되는 기술이므로 AEM에 클라이언트측 라이브러리를 포함하는 데 HTL을 사용해야 합니다. 그러나 JSP를 사용하여 수행할 수도 있습니다.
 
 ### HTL 사용 {#using-htl}
 
-HTL에서 클라이언트 라이브러리는 AEM에서 제공하는 도우미 템플릿을 통해 로드되며, 이 템플릿은 AEM을 통해 액세스할 수 [ 있습니다 `data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). 이 파일에서 사용할 수 있는 세 가지 템플릿은 다음을 통해 호출할 수 [ 있습니다. `data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call)
+HTL에서 클라이언트 라이브러리는 AEM에서 제공하는 도우미 템플릿을 통해 로드되며, 이 템플릿은 이를 통해 액세스할 수 [ 있습니다 `data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). 이 파일에서 사용할 수 있는 세 가지 템플릿은 다음을 통해 호출할 수 [ 있습니다. `data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call)
 
 * **css** - 참조된 클라이언트 라이브러리의 CSS 파일만 로드합니다.
 * **js** - 참조된 클라이언트 라이브러리의 JavaScript 파일만 로드합니다.
@@ -102,7 +102,7 @@ JS, CSS 또는 테마 라이브러리 필터링을 위한 속성을 비롯한 �
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>`이전에는 클라이언트 라이브러리를 포함하는 데 일반적으로 사용되었던 AEM 5.6 이후 더 이상 사용되지 않습니다. 대신 위에 설명된 대로 사용해야 [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#amp-lt-ui-includeclientlib) 합니다.
+>`<cq:includeClientLib>`이전에는 클라이언트 라이브러리를 포함하는 데 일반적으로 사용되었던 이 값은 AEM 5.6부터 더 이상 사용되지 않습니다. [ 대신 위에 설명된 대로 사용해야 `<ui:includeClientLib>`](/help/sites-developing/taglib.md#amp-lt-ui-includeclientlib) 합니다.
 
 ## 클라이언트 라이브러리 폴더 만들기 {#creating-client-library-folders}
 
@@ -160,11 +160,11 @@ JavaScript 및 CSS(Cascading Style Sheet) 라이브러리를 정의하고 HTML �
 
 >[!CAUTION]
 >
->Adobe는 클라이언트 라이브러리를 아래에서 찾고 프록시 서블릿을 사용하여 사용할 수 있도록 `/apps` 하는 것이 좋습니다. 하지만 최상의 방법은 공개 사이트에 `/apps` 또는 경로를 통해 직접 제공되는 모든 것이 포함되지 않도록 하는 `/libs` 것입니다.
+>Adobe은 클라이언트 라이브러리를 아래에서 찾고 `/apps` 프록시 서블릿을 사용하여 사용할 수 있도록 하는 것이 좋습니다. 하지만 최상의 방법은 공개 사이트에 `/apps` 또는 경로를 통해 직접 제공되는 모든 것이 포함되지 않도록 하는 `/libs` 것입니다.
 
 ### 클라이언트 라이브러리 폴더 만들기 {#create-a-client-library-folder}
 
-1. 웹 브라우저에서 CRXDE Lite를 엽니다([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. 웹 브라우저에서 CRXDE Lite을[엽니다(http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. 클라이언트 라이브러리 폴더를 찾을 폴더를 선택하고 **만들기 > 노드 만들기를 클릭합니다**.
 1. 라이브러리 파일의 이름을 입력하고 유형 목록에서 선택합니다 `cq:ClientLibraryFolder`. 확인 **을** 클릭한 다음 **모두 저장을 클릭합니다**.
 1. 라이브러리가 속한 카테고리 또는 범주를 지정하려면 노드를 선택하고 다음 속성을 추가한 `cq:ClientLibraryFolder` 다음 [모두 **저장]을 클릭합니다**.
@@ -323,7 +323,7 @@ body {
 
 ## 프리프로세서 사용 {#using-preprocessors}
 
-AEM에서는 플러그형 프리프로세서를 지원하고 AEM의 기본 프리프로세서로 설정된 JavaScript용 [YUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) 및 [GCC(Google Closure Compiler)](https://developers.google.com/closure/compiler/) 지원을 제공합니다.
+AEM에서는 플러그형 프리프로세서를 지원하고 YUI가 AEM 기본 프리프로세서로 설정된 JavaScript용 [YUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) 및 [Google Closure Compiler(GCC)](https://developers.google.com/closure/compiler/) 지원을 제공합니다.
 
 플러그형 프리프로세서를 통해 다음을 비롯한 유연한 사용 가능
 
@@ -392,10 +392,10 @@ GCC 옵션에 대한 자세한 내용은 [GCC 설명서를 참조하십시오](h
 
 ### 시스템 기본 미니표시자 설정 {#set-system-default-minifier}
 
-AEM에서 UI가 기본 미니피자로 설정됩니다. GCC로 변경하려면 다음 단계를 따르십시오.
+AEM에서 YUI가 기본 미니피자로 설정됩니다. GCC로 변경하려면 다음 단계를 따르십시오.
 
 1. http://localhost:4502/system/console/configMgr의 Apache Felix Config Manager로 [이동합니다.](http://localhost:4502/system/console/configMgr)
-1. Adobe Granite **HTML Library Manager를 찾아 편집합니다**.
+1. [ **Adobe [화강암 HTML 라이브러리 관리자]를 찾아 편집합니다**.
 1. 축소 **옵션을** 활성화합니다(아직 활성화되지 않은 경우).
 1. 값 **JS 프로세서 기본 구성을** 로 `min:gcc`설정합니다.
 
@@ -405,7 +405,7 @@ AEM에서 UI가 기본 미니피자로 설정됩니다. GCC로 변경하려면 �
 
 ## 디버깅 도구 {#debugging-tools}
 
-AEM에서는 클라이언트 라이브러리 폴더를 디버깅하고 테스트하는 몇 가지 도구를 제공합니다.
+AEM은 클라이언트 라이브러리 폴더를 디버깅하고 테스트하는 몇 가지 도구를 제공합니다.
 
 ### 포함된 파일 참조 {#see-embedded-files}
 
@@ -447,6 +447,7 @@ AEM에서는 클라이언트 라이브러리 폴더를 디버깅하고 테스트
    * 웹 브라우저에서 다음 URL을 엽니다(필요에 따라 다른 호스트 및 포트 사용).
 
       * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
+
    기본 페이지에는 categories 속성에 대한 값이 없는 태그에 대한 출력이 표시됩니다.
 
 1. 카테고리에 대한 출력을 보려면 클라이언트 라이브러리 속성 값을 입력하고 쿼리 제출 `categories` 을 클릭합니다 ****.
