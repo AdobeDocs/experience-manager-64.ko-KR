@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: c601a44a-6604-4cc2-b35a-60d2c5a950e1
 translation-type: tm+mt
 source-git-commit: 7c850ed0d20dd2ba2626242c67ba190e371f049f
+workflow-type: tm+mt
+source-wordcount: '127'
+ht-degree: 88%
 
 ---
 
@@ -25,5 +28,5 @@ AEM 3D(Adobe Experience Manager 3D)를 사용하면 3D 컨텐츠를 업로드, �
 
 >[!NOTE]
 >
->AEM 3D는 클래식 UI가 아닌 AEM 터치 UI에서만 사용할 수 있습니다. 자세한 내용은 표준 작성 설명서의 [3D 자산 작업](/help/assets/assets-3d.md)을 참조하십시오.
+>AEM 3D는 클래식 UI가 아니라 AEM 터치 UI에서만 사용할 수 있습니다. 자세한 내용은 표준 작성 설명서의 [3D 자산 작업](/help/assets/assets-3d.md)을 참조하십시오.
 
