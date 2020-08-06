@@ -20,13 +20,13 @@ ht-degree: 1%
 
 # 번역 통합 프레임워크 구성{#configuring-the-translation-integration-framework}
 
-번역 통합 프레임워크는 타사 번역 서비스와 통합되므로 AEM 컨텐츠 번역을 조정할 수 있습니다.
+Translation Integration Framework는 서드파티 번역 서비스와 통합되어 AEM 컨텐츠 번역 기능을 제공합니다.
 
 * 번역 서비스 공급자에 연결합니다.
 * 번역 통합 프레임워크 구성을 만듭니다.
 * 클라우드 구성을 페이지와 연결합니다.
 
-AEM의 컨텐츠 번역 기능에 대한 개요는 다국어 [사이트에 대한 컨텐츠 번역을 참조하십시오](/help/sites-administering/translation.md).
+AEM의 컨텐츠 번역 기능에 대한 개요는 다국어 사이트용 컨텐츠 [번역을 참조하십시오](/help/sites-administering/translation.md).
 
 ## 번역 서비스 공급자에 연결 {#connecting-to-a-translation-service-provider}
 
@@ -44,7 +44,7 @@ AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭�
 * [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
 * [시스트란](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 * [알트랑](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
-* Microsoft(Microsoft Translator가 AEM에 사전 설치됨)
+* Microsoft(AEM에 Microsoft Translator 사전 설치)
 
 >[!NOTE]
 >
@@ -52,7 +52,8 @@ AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭�
 >
 >
 >* [AEM Human Translation](https://www.adobe.com/go/aem-human-translation-connectors)
->* [AEM 기계 번역](https://www.adobe.com/go/aem-machine-translation-connectors)
+>* [AEM Machine Translation](https://www.adobe.com/go/aem-machine-translation-connectors)
+
 >
 
 
@@ -77,7 +78,7 @@ AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭�
 
 번역 통합 프레임워크를 구성한 후 이를 사용하는 페이지에 [연결할 수](/help/sites-administering/tc-prep.md) 있습니다.
 
-**참고:** AEM의 컨텐츠 번역 기능에 대한 개요는 다국어 [사이트에 대한 컨텐츠 번역을 참조하십시오](/help/sites-administering/translation.md).
+**참고:** AEM의 컨텐츠 번역 기능에 대한 개요는 다국어 사이트용 컨텐츠 [번역을 참조하십시오](/help/sites-administering/translation.md).
 
 프레임워크의 단일 구성은 페이지 컨텐츠, 커뮤니티 컨텐츠 및 자산을 변환하는 방법을 제어합니다.
 ![chlimage_1-386](assets/translation-config-64.jpg)
@@ -185,7 +186,7 @@ AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭�
  </tbody> 
 </table>
 
-1. 사이드 바에서 도구 > 작업 > 클라우드 > Cloud Service을 클릭하거나 탭합니다.
+1. 사이드 바에서 도구 > 작업 > 클라우드 > Cloud Services을 클릭하거나 탭합니다.
 1. 번역 통합 영역에서 구성이 생성되었는지 여부에 따라 나타나는 링크가 결정됩니다.
 
    * 구성이 만들어지지 않은 경우 지금 구성을 클릭하거나 탭합니다.
@@ -214,7 +215,7 @@ AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭�
 페이지 및 하위 페이지를 번역하는 데 사용하는 번역 공급자와 페이지를 연결합니다.
 
 1. 사이트 콘솔에서 구성할 페이지를 선택하고 속성 보기를 클릭하거나 탭합니다.
-1. 편집을 클릭하거나 탭한 다음 Cloud Service 탭을 클릭하거나 탭합니다.
+1. 편집을 클릭하거나 탭한 다음 Cloud Services 탭을 클릭하거나 탭합니다.
 1. 구성 추가 > 번역 통합을 클릭하거나 탭합니다.
 1. 사용할 번역 공급자를 선택한 다음 완료를 클릭하거나 탭합니다.
 
@@ -223,7 +224,7 @@ AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭�
 페이지 및 하위 페이지의 번역 수행 방법을 정의하는 번역 통합 프레임워크와 페이지를 연결합니다.
 
 1. 사이트 콘솔에서 구성할 페이지를 선택하고 속성 보기를 클릭하거나 탭합니다.
-1. 편집을 클릭하거나 탭한 다음 Cloud Service 탭을 클릭하거나 탭합니다.
+1. 편집을 클릭하거나 탭한 다음 Cloud Services 탭을 클릭하거나 탭합니다.
 1. 구성 추가 > 번역 통합을 클릭하거나 탭합니다.
 1. 사용할 번역 통합 프레임워크를 선택한 다음 완료를 클릭하거나 탭합니다.
 
