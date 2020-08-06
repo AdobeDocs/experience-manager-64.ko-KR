@@ -34,7 +34,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->SPA 편집기에서 편집 가능한 템플릿을 사용하려면 AEM 6.4.5.0 이상이 [필요합니다](/help/sites-developing/spa-overview.md).
+>AEM 6.4.5.0 이상 버전은 [SPA Editor에서 편집 가능한 템플릿을 사용해야 합니다](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
@@ -54,13 +54,13 @@ ht-degree: 8%
 >[!NOTE]
 >
 >다음 자습서는 새 프로젝트에서 편집 가능한 페이지 템플릿을 설정하는 데에도 유용합니다.\
->[AEM Sites 시작하기 파트 2 - 기본 페이지 및 템플릿 만들기](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
+>[AEM Sites 파트 2 시작하기 - 기본 페이지 및 템플릿 만들기](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
 
 ## Creating a New Template {#creating-a-new-template}
 
 편집 가능한 템플릿 만들기는 기본적으로 템플릿 작성자가 [템플릿 콘솔 및 템플릿 편집기를](/help/sites-authoring/templates.md) 사용하여 수행됩니다. 이 섹션에서는 이 프로세스에 대한 개요를 설명하고 기술 수준에서 발생하는 사항에 대한 설명을 제공합니다.
 
-AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대한 자세한 내용은 [lazybones를 사용하여 AEM 프로젝트 만들기를 참조하십시오](https://helpx.adobe.com/experience-manager/using/aem_lazybones.html).
+AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대한 자세한 내용은 Lazybones를 [사용하여 AEM 프로젝트 만들기를 참조하십시오](https://helpx.adobe.com/experience-manager/using/aem_lazybones.html).
 
 편집 가능 템플릿을 새로 만들 때 다음을 수행합니다.
 
@@ -185,7 +185,7 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
 
 ### CRXDE Lite 사용 {#using-crxde-lite}
 
-1. 인스턴스에 대해 프로그래밍 방식으로 또는 CRXDE Lite를 사용하여 새 폴더(/conf 아래)를 만들 수 있습니다.
+1. 인스턴스에 대해 프로그래밍 방식으로 또는 CRXDE Lite을 사용하여 새 폴더(/conf 아래)를 만들 수 있습니다.
 
    다음 구조를 사용해야 합니다.
 
@@ -239,7 +239,7 @@ We.Retail 참조 구현의 [템플릿](/help/sites-developing/we-retail.md) 폴�
 
 #### 템플릿 작성자 그룹 {#the-template-authors-group}
 
-이 `template-authors` 그룹은 템플릿에 대한 액세스를 관리하는 데 사용되는 그룹이며 AEM과 표준으로 제공되지만 비어 있습니다. 프로젝트/사이트의 그룹에 사용자를 추가해야 합니다.
+이 `template-authors` 그룹은 템플릿에 대한 액세스를 관리하는 데 사용되고 AEM에서 표준으로 제공되지만 비어 있습니다. 프로젝트/사이트의 그룹에 사용자를 추가해야 합니다.
 
 >[!CAUTION]
 >
@@ -378,7 +378,7 @@ We.Retail 참조 구현의 [템플릿](/help/sites-developing/we-retail.md) 폴�
    * 템플릿 편집기에서 허용되는 구성 요소를 정의하는 루트 노드의 정책입니다.
    * 템플릿 유형에서 응답형 그리드에 대한 중단점을 정의하고 모바일 에뮬레이터를 설정하는 것이 좋습니다. 구성은 개별 템플릿에서도 정의할 수 있으므로 선택 사항입니다( [템플릿 유형 및 모바일 장치 그룹 참조](/help/sites-developing/page-templates-editable.md#template-type-and-mobile-device-groups)).
 
-* AEM에서는 HTML5 페이지 및 적응형 양식 페이지와 같은 간단한 유형의 기본 템플릿 유형을 제공합니다.
+* AEM에서는 HTML5 페이지 및 적응형 양식 페이지와 같은 간단한 템플릿 유형을 제공합니다.
 
    * 추가적인 예는 [We.Retail 샘플 컨텐츠의 일부로](/help/sites-developing/we-retail.md) 제공됩니다.
 
@@ -430,7 +430,7 @@ We.Retail 참조 구현의 [템플릿](/help/sites-developing/we-retail.md) 폴�
 다른 템플릿의 기초로 사용할 수 있는 템플릿을 만든 경우 이 템플릿을 템플릿 유형으로 복사할 수 있습니다.
 
 1. 여기에 [설명된 대로 편집 가능한 템플릿과 마찬가지로 템플릿](/help/sites-authoring/templates.md#creating-a-new-template-template-author)을 만듭니다. 이 템플릿은 템플릿 유형의 기초가 됩니다.
-1. CRXDE Lite를 사용하여 새로 만든 템플릿을 노드에서 `templates` 템플릿 폴더 아래의 `template-types` 노드로 [복사합니다](/help/sites-developing/page-templates-editable.md#template-folders).
+1. CRXDE Lite을 사용하여 새로 만든 템플릿을 노드에서 `templates` 템플릿 폴더 아래의 `template-types` 노드로 [복사합니다](/help/sites-developing/page-templates-editable.md#template-folders).
 1. 템플릿 폴더 아래의 `templates` 노드에서 [템플릿을 삭제합니다](/help/sites-developing/page-templates-editable.md#template-folders).
 1. 노드 아래에 있는 템플릿 복사본에서 모든 `template-types` 및 `cq:template` 속성을 `cq:templateType` `jcr:content` 삭제합니다.
 
