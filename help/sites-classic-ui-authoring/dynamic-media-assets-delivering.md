@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 79d426a6-bad5-4f6d-a027-ca935576bcb9
 translation-type: tm+mt
 source-git-commit: b4a2dee750fd646ba54aed243c9fb90379565d5d
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 84%
 
 ---
 
 
 # Dynamic Media 자산 제공{#delivering-dynamic-media-assets}
 
-How you can deliver your Dynamic Media assets – both video and images – depends on how your web site is implemented.
+비디오와 이미지 모두 Dynamic Media 자산을 제공하는 방법은 웹 사이트를 구현하는 방법에 따라 다릅니다.
 
 Dynamic Media에는 다음의 몇 가지 선택 사항이 있습니다.
 
