@@ -234,7 +234,7 @@ JSON 스키마 모델을 사용하는 필드의 경우 아래 샘플 JSON에 표
 >
 >자동 완성 서비스 구성은 적응형 양식, HTML5 양식 및 HTML5 양식 세트에 적용됩니다.
 
-1. URL을 사용하여 **[!UICONTROL Adobe Experience Manager 웹 콘솔]** 구성을 엽니다.\
+1. 다음 URL을 사용하여 **[!UICONTROL Adobe Experience Manager 웹 콘솔]** 구성을 엽니다.\
    https://&lt;server>:&lt;port>/system/console/configMgr
 1. 기본 자동 완성 **[!UICONTROL 서비스 구성을 검색하고 엽니다]**.
 
@@ -247,7 +247,7 @@ JSON 스키마 모델을 사용하는 필드의 경우 아래 샘플 JSON에 표
 
    >[!NOTE]
    >
-   >기본적으로 모든 유형의 응용 양식(XSD, XDP, JSON, FDM, FDM, Form Model 기반)에 대해 crx 파일을 통해 자동 채우기 기능을 사용할 수 있습니다. 프리필은 JSON 및 XML 파일만 사용할 수 있습니다.
+   >기본적으로 모든 유형의 응용 Forms(XSD, XDP, JSON, FDM, FDM, Form Model 기반)에 대한 crx 파일을 통해 자동 완성 기능을 사용할 수 있습니다. 프리필은 JSON 및 XML 파일만 사용할 수 있습니다.
 
 1. 이제 양식에 대해 자동 완성 서비스가 구성됩니다.
 
@@ -335,13 +335,13 @@ prefill page component.zip
 
 [페이지 구성 요소의 파일](assets/prefill-page-component.zip)Sample prefill.jsp 가져오기
 
-## AEM Forms 사용자 정의 자동 완성 서비스 {#aem-forms-custom-prefill-service}
+## AEM Forms 사용자 정의 자동 채우기 서비스 {#aem-forms-custom-prefill-service}
 
 사전 정의된 소스의 데이터를 항상 읽는 시나리오에 사용자 정의 자동 완성 서비스를 사용할 수 있습니다. 자동 완성 서비스는 정의된 데이터 소스의 데이터를 읽고 자동 완성 데이터 파일의 내용으로 응용 양식 필드를 미리 채웁니다. 또한 프리플라이트 데이터를 적응형 양식과 영구적으로 연결할 수 있습니다.
 
 ### 자동 완성 서비스 만들기 및 실행 {#create-and-run-a-prefill-service}
 
-프리플라이트 서비스는 OSGi 서비스이며 OSGi 번들을 통해 패키징됩니다. OSGi 번들을 만들고, 업로드하고, AEM Forms 번들에 설치합니다. 번들 제작을 시작하기 전:
+프리플라이트 서비스는 OSGi 서비스이며 OSGi 번들을 통해 패키징됩니다. OSGi 번들을 만들고 업로드하고 AEM Forms 번들에 설치합니다. 번들 제작을 시작하기 전:
 
 * [AEM Forms 클라이언트 SDK 다운로드](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)
 * [상용구 패키지 다운로드](assets/prefill-sumbit-xmlsandcontentpackage.zip)
@@ -364,9 +364,9 @@ prefill page component.zip
 
 #### 자동 완성 서비스 시작 및 사용 {#start-and-use-the-prefill-service}
 
-자동 완성 서비스를 시작하려면 JAR 파일을 AEM Forms 웹 콘솔에 업로드하고 서비스를 활성화합니다. 이제 적응형 양식 편집기에 서비스가 나타납니다. 자동 완성 서비스를 응용 양식에 연결하려면:
+자동 완성 서비스를 시작하려면 JAR 파일을 AEM Forms 웹 콘솔로 업로드하고 서비스를 활성화합니다. 이제 적응형 양식 편집기에 서비스가 나타납니다. 자동 완성 서비스를 응용 양식에 연결하려면:
 
-1. 양식 편집기에서 적응형 양식을 열고 양식 컨테이너에 대한 속성 패널을 엽니다.
-1. 속성 콘솔에서 **[!UICONTROL AEM Forms 컨테이너 > 기본 > 서비스]**&#x200B;자동 완성
+1. Forms 편집기에서 적응형 양식을 열고 양식 컨테이너에 대한 속성 패널을 엽니다.
+1. 속성 콘솔에서 **[!UICONTROL AEM Forms 컨테이너 > 기본 > 자동 완성 서비스로 이동합니다]**.
 1. 기본 자동 완성 서비스를 선택하고 저장을 **[!UICONTROL 클릭합니다]**. 서비스가 양식과 연결됩니다.
 
