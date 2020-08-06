@@ -1,6 +1,6 @@
 ---
-title: 타깃팅된 컨텐츠에 대한 개발
-seo-title: 타깃팅된 컨텐츠에 대한 개발
+title: 타깃팅된 컨텐츠를 위한 개발
+seo-title: 타깃팅된 컨텐츠를 위한 개발
 description: 컨텐츠 타깃팅에 사용할 구성 요소 개발에 대한 항목
 seo-description: 컨텐츠 타깃팅에 사용할 구성 요소 개발에 대한 항목
 uuid: 1abc9b1e-939f-447c-8628-ee35c4b33ec4
@@ -13,23 +13,23 @@ translation-type: tm+mt
 source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '1222'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# 타깃팅된 컨텐츠에 대한 개발{#developing-for-targeted-content}
+# 타깃팅된 컨텐츠를 위한 개발{#developing-for-targeted-content}
 
 이 섹션에서는 컨텐츠 타깃팅에 사용할 구성 요소를 개발하는 방법에 대해 설명합니다.
 
-* Adobe Target 연결에 대한 자세한 내용은 Adobe Target과 [통합을 참조하십시오](/help/sites-administering/target.md).
+* Adobe Target와의 연결에 대한 자세한 내용은 Adobe Target과 [통합을 참조하십시오](/help/sites-administering/target.md).
 * 타깃팅된 컨텐츠 작성에 대한 자세한 내용은 타깃팅 모드를 [사용하여 타깃팅된 컨텐츠 작성을 참조하십시오](/help/sites-authoring/content-targeting-touch.md).
 
 >[!NOTE]
 >
->AEM 작성자의 구성 요소를 타깃팅하면 구성 요소는 캠페인을 등록하고, 오퍼를 설정하고, Adobe Target 세그먼트를 가져오기 위해 Adobe Target에 일련의 서버측 호출을 만듭니다(구성된 경우). AEM 게시에서 Adobe Target으로 수행된 서버측 호출이 없습니다.
+>AEM 작성자의 구성 요소를 타깃팅하면 구성 요소는 캠페인을 등록하고, 오퍼를 설정하고, Adobe Target 세그먼트를 가져오기 위해 Adobe Target에 일련의 서버측 호출을 만듭니다(구성된 경우). AEM에서 Adobe Target으로 게시한 서버측 호출은 없습니다.
 
-## 페이지의 Adobe Target으로 타깃팅 활성화 {#enabling-targeting-with-adobe-target-on-your-pages}
+## 페이지에서 Adobe Target으로 타깃팅 활성화 {#enabling-targeting-with-adobe-target-on-your-pages}
 
 Adobe Target과 상호 작용하는 페이지에 타깃팅된 구성 요소를 사용하려면 요소에 특정 클라이언트측 코드를 `<head>` 포함시키십시오.
 
@@ -203,7 +203,7 @@ mbox를 만드는 데 사용되는 기본 mbox.js 파일은 에 있습니다 `/e
 >
 >사용자 지정 mbox가 Target 구성에 정의된 경우 모든 사람이 게시 서버의 **/etc/cloudservices** 에 대한 읽기 권한을 가져야 합니다. 이 액세스 권한이 없으면 게시 웹 사이트에서 mbox.js 파일을 로드하면 404 오류가 발생합니다.
 
-1. [CQ **도구** ] 페이지로 이동하여 **Cloud Service을 선택합니다**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. [CQ **도구** ] 페이지로 이동하여 **Cloud Services을 선택합니다**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 1. 트리에서 Adobe Target을 선택하고 구성 목록에서 Target 구성을 두 번 클릭합니다.
 1. 구성 페이지에서 편집을 클릭합니다.
 1. 사용자 지정 mbox.js 속성에 대해 찾아보기를 클릭하고 파일을 선택합니다.
@@ -233,7 +233,7 @@ Target 구성에는 사용자 지정 mbox.js 파일 [이 포함되어 있으며 
 >
 >DTM을 사용하지 않는 경우 주문 확인을 Adobe Target에 보냅니다.
 
-웹 사이트의 성능을 추적하려면 주문 확인 페이지에서 Adobe Target으로 구매 정보를 전송합니다. Adobe Target [설명서에서 orderConfirmPage mbox](https://docs.adobe.com/content/help/en/dtm/implementing/target/configure-target/mboxes/order-confirmation-mbox.html) 만들기를 참조하십시오. Adobe Target은 MBox 이름이 있을 때 mbox 데이터를 주문 확인 데이터로 인식하며 다음과 같은 특정 매개 변수 이름을 사용합니다. `orderConfirmPage`
+웹 사이트의 성능을 추적하려면 주문 확인 페이지에서 Adobe Target으로 구매 정보를 보내십시오. (Adobe Target [설명서에서 orderConfirmPage mbox](https://docs.adobe.com/content/help/en/dtm/implementing/target/configure-target/mboxes/order-confirmation-mbox.html) 만들기를 참조하십시오.) Adobe Target은 mbox 이름이 MBox 이름일 때 mbox 데이터를 주문 확인 데이터로 인식하며 다음과 같은 특정 매개 변수 이름을 사용합니다. `orderConfirmPage`
 
 * productPurchasedId: 구매한 제품을 식별하는 ID 목록입니다.
 * orderId: 주문의 ID.
@@ -332,7 +332,7 @@ target.jsp 스크립트는 페이지 속성에 액세스하여 구성 요소에 
 >
 >기본적으로 mbox는 숨겨지며 mboxDefault 클래스는 이 동작을 결정합니다. mbox를 숨기면 교환되기 전에 방문자에게 기본 컨텐츠가 표시되지 않습니다. 그러나 mbox를 숨기면 감지된 성능에 영향을 줍니다.
 
-Adobe Target이 컨텐츠 타깃팅을 주도하는 경우 engine_tnt.jsp 스크립트는 타깃팅된 경험의 컨텐츠를 포함하는 mbox를 생성합니다.
+Adobe Target이 컨텐츠 타깃팅을 실행하는 경우 engine_tnt.jsp 스크립트는 타깃팅된 경험의 컨텐츠를 포함하는 mbox를 생성합니다.
 
 * Adobe Target API에 필요한 클래스 `div` `mboxDefault`의 요소를 추가합니다.
 
