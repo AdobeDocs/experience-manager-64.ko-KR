@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f30c4039-3bbf-4d02-a9b5-bda6ccce16b9
 translation-type: tm+mt
 source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
+workflow-type: tm+mt
+source-wordcount: '433'
+ht-degree: 88%
 
 ---
 
@@ -25,6 +28,7 @@ source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
    * 방향 광원
    * 스폿 광원
    * 점 광원
+
    다른 광원 유형은 무시되거나 스테이지가 AEM 3D에 업로드될 때 위의 지원되는 유형 중 하나로 변환됩니다. 변환된 유형은 자산을 볼 때와 내장된 Rapid Refine 렌더러를 사용하여 렌더링할 때 사용됩니다. Maya로 렌더링할 때에는 원래 광원 유형이 사용됩니다.
 
 1. 필요한 경우 지표 평면을 만들고 적절한 재질을 적용합니다.
@@ -45,8 +49,8 @@ source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
 
    * **[!UICONTROL Quality(품질) 탭]**
 
-      * **[!UICONTROL 전체 품질]** `- 0.5` 이하
-      * **[!UICONTROL GI(간접 확산) 모드]** - `Final Gather`
+      * **[!UICONTROL 전체 품질]**`- 0.5` 이하
+      * **[!UICONTROL 간접 확산(GI) 모드]** - `Final Gather`
       * **[!UICONTROL 필터 크기]** - `2.0`, `2.0`
    * 사용할 장면을 일반 이미지 크기로 렌더링합니다. If necessary, refine the lights, or [!UICONTROL Render settings], or do both to achieve the results you want.
 
