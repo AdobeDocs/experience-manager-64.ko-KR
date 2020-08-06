@@ -1,8 +1,8 @@
 ---
 title: OWASP Top 10
 seo-title: OWASP Top 10
-description: AEM에서 상위 10개의 OWASP 보안 위험을 처리하는 방법을 알아봅니다.
-seo-description: AEM에서 상위 10개의 OWASP 보안 위험을 처리하는 방법을 알아봅니다.
+description: AEM에서 10대 OWASP의 보안 위험에 어떻게 대처하는지 살펴보십시오.
+seo-description: AEM에서 10대 OWASP의 보안 위험에 어떻게 대처하는지 살펴보십시오.
 uuid: a5a7e130-e15b-47ae-ba21-448f9ac76074
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -38,11 +38,11 @@ XSS는 테스트 및 개발 과정에서 최우선 순위이며 발견된 모든
 
 ## 3. 인증 및 세션 관리 {#broken-authentication-and-session-management}
 
-AEM은 [Apache Jackrabbit](https://jackrabbit.apache.org/) 및 [Apache Sling에 의존하는 사운드 및 입증된 인증 기술을 사용합니다](https://sling.apache.org/). 브라우저/HTTP 세션은 AEM에서 사용되지 않습니다.
+AEM은 [Apache Jackrabbit](https://jackrabbit.apache.org/) 및 [Apache Sling에 의존하여 사운드와 입증된 인증 기술을 사용합니다](https://sling.apache.org/). 브라우저/HTTP 세션은 AEM에서 사용되지 않습니다.
 
 ## 4. 안전하지 않은 직접 개체 참조 {#insecure-direct-object-references}
 
-데이터 객체에 대한 모든 액세스는 저장소에 의해 조정되므로 역할 기반 액세스 제어에 의해 제한됩니다.
+데이터 객체에 대한 모든 액세스는 저장소에 의해 조정되므로 역할 기반 액세스 제어로 제한됩니다.
 
 ## 5. CSRF(교차 사이트 요청 위조) {#cross-site-request-forgery-csrf}
 
@@ -52,7 +52,7 @@ AEM은 [Apache Jackrabbit](https://jackrabbit.apache.org/) 및 [Apache Sling에 
 
 ## 6. 보안 오구성 {#security-misconfiguration}
 
-모든 소프트웨어가 항상 올바르게 구성되어 있다고 보장하는 것은 불가능하다. 하지만, 우리는 가능한 한 많은 지침을 제공하고 가능한 한 간단하게 구성하도록 노력한다. 또한 AEM에는 보안 구성을 한 눈에 모니터링할 수 있는 [통합 보안](/help/sites-administering/operations-dashboard.md) 상태 검사가 포함되어 있습니다.
+모든 소프트웨어가 항상 올바르게 구성되어 있다고 보장하는 것은 불가능하다. 하지만, 우리는 가능한 한 많은 지침을 제공하고 가능한 한 간단하게 구성하도록 노력한다. 또한 AEM에는 보안 구성을 한 눈에 모니터링할 수 있는 [통합 보안](/help/sites-administering/operations-dashboard.md) 건강 검사가 포함되어 있습니다.
 
 단계별 [보안 검사 목록](/help/sites-administering/security-checklist.md) 내용을 설명하는 자세한 내용을 살펴보십시오.
 
