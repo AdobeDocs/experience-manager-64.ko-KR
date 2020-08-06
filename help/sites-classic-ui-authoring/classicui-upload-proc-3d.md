@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0be4a856-951b-4cb6-8103-8004052c63a0
 translation-type: tm+mt
 source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
+workflow-type: tm+mt
+source-wordcount: '810'
+ht-degree: 80%
 
 ---
 
@@ -54,7 +57,7 @@ source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
 
 ## 업로드된 3D 파일의 처리 상태 모니터링 {#monitoring-the-processing-status-of-your-uploaded-d-files}
 
-In **[!UICONTROL Card View]** only, the processing status and progression is displayed as a progress banner on the asset&#39;s card. 업로드된 각 3D 모델은 일반적으로 다음의 4-6개의 순서가 지정된 처리 단계를 수행합니다.
+In **[!UICONTROL Card View]** only, the processing status and progression is displayed as a progress banner on the asset&#39;s card. 업로드된 각 3D 모델은 일반적으로 다음 4-6개의 순서로 처리 단계를 수행합니다.
 
 <table> 
  <tbody> 
@@ -66,7 +69,7 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   <tr> 
    <td>1</td> 
    <td>처리 중</td> 
-   <td>기본 초기 처리 및 메타데이터 추출</td> 
+   <td>기본적인 초기 처리 및 메타데이터 추출</td> 
   </tr> 
   <tr> 
    <td>2</td> 
@@ -76,7 +79,7 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   <tr> 
    <td>3</td> 
    <td>미리 보기 만들기</td> 
-   <td>FBX 또는 OBJ 파일이 인제스트되고 처리됩니다. 파일 종속성을 평가하고 가능한 경우 자산 참조로 확인합니다.</td> 
+   <td>FBX 또는 OBJ 파일을 인제스트하고 처리합니다. 파일 종속성을 평가하고 가능한 경우 자산 참조로 확인합니다.</td> 
   </tr> 
   <tr> 
    <td>4</td> 
