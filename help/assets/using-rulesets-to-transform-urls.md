@@ -1,8 +1,8 @@
 ---
 title: 규칙 세트를 사용하여 URL 변환
 seo-title: 규칙 세트를 사용하여 URL 변환
-description: 'Dynamic Media에 규칙 세트를 배포하여 URL을 변형할 수 있습니다. 규칙 세트는 XML 데이터를 평가하고 특정 조건을 충족하는 경우 특정 작업을 수행하는 스크립팅 언어(예: JavaScript)로 작성된 지침 세트입니다. '
-seo-description: 'Dynamic Media에 규칙 세트를 배포하여 URL을 변형할 수 있습니다. 규칙 세트는 XML 데이터를 평가하고 특정 조건을 충족하는 경우 특정 작업을 수행하는 스크립팅 언어(예: JavaScript)로 작성된 지침 세트입니다. '
+description: 'Dynamic Media에서 규칙 세트를 배포하여 URL을 변형할 수 있습니다. 규칙 세트는 XML 데이터를 평가하고 특정 조건을 충족하는 경우 특정 작업을 수행하는 스크립팅 언어(예: JavaScript)로 작성된 지침 세트입니다. '
+seo-description: 'Dynamic Media에서 규칙 세트를 배포하여 URL을 변형할 수 있습니다. 규칙 세트는 XML 데이터를 평가하고 특정 조건을 충족하는 경우 특정 작업을 수행하는 스크립팅 언어(예: JavaScript)로 작성된 지침 세트입니다. '
 uuid: 9fed0c83-67b7-4483-a9b4-322e6a483449
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -20,16 +20,16 @@ ht-degree: 0%
 
 # 규칙 세트를 사용하여 URL 변환 {#using-rulesets-to-transform-urls}
 
-Dynamic Media에 규칙 세트를 배포하여 URL을 변형할 수 있습니다. 규칙 세트는 XML 데이터를 평가하고 특정 조건을 충족하는 경우 특정 작업을 수행하는 스크립팅 언어(예: JavaScript)로 작성된 지침 세트입니다. 각 규칙은 하나 이상의 조건과 하나 이상의 작업으로 구성됩니다. 규칙은 조건에 대해 XML 데이터를 평가하며 조건이 충족되면 적절한 작업을 수행합니다. 규칙 세트의 예는 다음과 같습니다.
+Dynamic Media에서 규칙 세트를 배포하여 URL을 변형할 수 있습니다. 규칙 세트는 XML 데이터를 평가하고 특정 조건을 충족하는 경우 특정 작업을 수행하는 스크립팅 언어(예: JavaScript)로 작성된 지침 세트입니다. 각 규칙은 하나 이상의 조건과 하나 이상의 작업으로 구성됩니다. 규칙은 조건에 대해 XML 데이터를 평가하며 조건이 충족되면 적절한 작업을 수행합니다. 규칙 세트의 예는 다음과 같습니다.
 
 * MIME 형식 접미사를 추가하는 중입니다. 많은 서비스 및 웹 사이트에는 URL에 추가하는 등 이미지 접미사 `.jpg` 가 필요합니다.
 * SEO용 URL의 폴더 경로 만들기(검색 엔진 최적화) 목적
 
-   Adobe [Scene7 Publishing System에서 SEO를 지원하는 방법을 참조하십시오](/help/assets/assets/s7_seo.pdf).
+   Adobe Scene7 [Publishing System에서 SEO를 지원하는 방법을 참조하십시오](/help/assets/assets/s7_seo.pdf).
 
 * SEO용 URL에 메타데이터 추가(검색 엔진 최적화) 목적
 
-   Adobe [Scene7 Publishing System에서 SEO를 지원하는 방법을 참조하십시오](/help/assets/assets/s7_seo.pdf).
+   Adobe Scene7 [Publishing System에서 SEO를 지원하는 방법을 참조하십시오](/help/assets/assets/s7_seo.pdf).
 
 * 다운로드를 트리거하는 컨텐츠 처리 설정
 * 개인화를 위한 이미지 서비스 템플릿 URL을 간소화할 수 있습니다. 예를 들어, RTF `rgb{XX,YY,ZZ}` 로 변환 `\redXX\greenYY\blueZZ`
@@ -38,7 +38,7 @@ Dynamic Media에 규칙 세트를 배포하여 URL을 변형할 수 있습니다
 
    URL [에서 특수 문자 제거를 참조하십시오](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
-Dynamic Media에서 XML 기반 시스템을 사용하여 자산 정보를 관리하는 웹 사이트에서는 XML 파일을 Dynamic Media에 업로드할 수 있습니다. 이러한 파일 중 하나를 Dynamic Media 에셋을 제공하는 사전 처리 규칙 세트 파일로 지정할 수 있습니다. 이 파일은 Dynamic Media과 통합된 시스템의 비즈니스 로직을 충족하기 위해 표준 URL 프로토콜 형식을 재구성합니다. 규칙 세트 정의 파일 경로로 사용할 XML 파일을 지정합니다.
+다이내믹 미디어 컨텍스트에서 자산 정보를 관리하기 위해 XML 기반 시스템을 사용하는 웹 사이트는 XML 파일을 다이내믹 미디어에 업로드할 수 있습니다. 이러한 파일 중 하나를 Dynamic Media 자산을 제공하기 위한 사전 처리 규칙 세트 파일로 지정할 수 있습니다. 이 파일은 Dynamic Media와 통합된 시스템의 비즈니스 로직을 충족하기 위해 표준 URL 프로토콜 포맷을 재구성합니다. 규칙 세트 정의 파일 경로로 사용할 XML 파일을 지정합니다.
 
 >[!CAUTION]
 >
@@ -50,28 +50,28 @@ Dynamic Media에서 XML 기반 시스템을 사용하여 자산 정보를 관리
 모든 규칙 세트 만들기와 마찬가지로 XML 파일을 업로드하기 전에 xmlvalid와 같은 XML 유효성 검사기 프로그램을 사용하여 XML 파일이 유효한지 확인하십시오.\
 규칙 세트 [문제 해결을 참조하십시오](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html).
 
-또한, 먼저 라이브 프로덕션 환경에 영향을 주지 않는 스테이징 환경에서 규칙 세트를 테스트해야 합니다.\
-프로덕션 환경과 스테이징 환경은 일반적으로 다른 로그인이 필요합니다.
+Also, make sure you first test your rule set in a staging environment that does not impact your live production environment.\
+Production environments and staging environments typically require different logins.
 
-* **스테이징 환경** 로그인 페이지: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
-* **EMEA 스테이징 환경** 로그인 페이지: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
-* **JAPAC 스테이징 환경** 로그인 페이지: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/)
+* **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
+* **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
+* **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/)
 
-규칙 [세트에서 &#39;is&#39; 이미지 대신 &#39;asset&#39; 사용을 참조하십시오](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html).
+See also [Using &#39;asset&#39; instead of &#39;is&#39; image in a rule set](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html).
 
-**XML 규칙 세트를 배포하려면**
+**To deploy XML rule sets:**
 
 1. Dynamic Media Classic 계정에 로그온합니다.
 
    [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
-   자격 증명 및 로그온은 프로비저닝 시점에 Adobe에서 제공되었습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
+   프로비전 시 Adobe에서 자격 증명 및 로그온을 제공했습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
 
-1. 다음을 수행하여 규칙 세트 파일을 업로드합니다.
+1. Upload your rule set file by doing the following:
 
    * 전역 탐색 막대에서 **[!UICONTROL 업로드를 클릭합니다]**.
-   * [ **[!UICONTROL 업로드]** ] 페이지의 왼쪽 위 모퉁이에서 [찾아보기]를 **[!UICONTROL 클릭합니다]**.
-   * 열기 **[!UICONTROL 대화]** 상자에서 규칙 세트 파일(XML)을 찾습니다.
+   * On the **[!UICONTROL Upload]** page, near the upper-left corner, click **[!UICONTROL Browse]**.
+   * In the **[!UICONTROL Open]** dialog box, browse to your rule set file (XML).
    * 파일을 선택한 다음 **[!UICONTROL 열기를 클릭합니다]**.
    * [ **[!UICONTROL 업로드]** ] 페이지의 오른쪽에서 규칙 세트 파일의 대상 폴더를 선택합니다.
    * 페이지 하단에서 [업로드 후 **[!UICONTROL 게시]가]** 선택되어 있는지 확인합니다.
@@ -84,7 +84,7 @@ Dynamic Media에서 XML 기반 시스템을 사용하여 자산 정보를 관리
 1. 설정 페이지의 오른쪽 아래에 있는 닫기를 **[!UICONTROL 클릭합니다]**.
 1. 이미지 서버 게시 작업을 실행합니다.
 
-   규칙 세트 조건은 라이브 Dynamic Media 이미지 서버에 대한 요청에 적용됩니다.
+   규칙 세트 조건은 실시간 다이내믹 미디어 이미지 서버에 대한 요청에 적용됩니다.
 
    규칙 세트 파일을 변경하면 업데이트된 규칙 세트 파일을 다시 업로드하고 다시 게시할 때 변경 내용이 즉시 적용됩니다.
 
