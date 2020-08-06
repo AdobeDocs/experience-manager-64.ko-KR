@@ -30,7 +30,7 @@ ht-degree: 0%
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 문서를 출력 서비스로 전달](output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
-[빠른 시작(SOAP 모드): AEM Forms 저장소에 있는 문서를 Java API를 사용하여 출력 서비스로 전달](output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 AEM Forms 저장소에 있는 문서를 출력 서비스로 전달](output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 조각을 기반으로 PDF 문서 만들기](#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
@@ -44,11 +44,11 @@ ht-degree: 0%
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 변환](output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
-AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM 양식을 사용한 프로그래밍에 있는 빠른 시작은 Forms Server 운영 체제를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오.](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+>AEM 양식을 사용한 프로그래밍에 있는 빠른 시작은 Forms 서버 운영 체제를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오.](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 만들기 {#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api}
@@ -171,7 +171,7 @@ AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 응용 프로그램 XDP 파일을 기반으로 PDF 문서 만들기 {#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api}
 
-다음 Java 코드 예제에서는 *Loan.pdf라는 PDF 문서를 만듭니다*. 이 PDF 문서는 Loan.xdp라는 양식 디자인 *과* *Loan.xml이라는 XML 데이터 파일을 기반으로*&#x200B;합니다. XDP 파일은 명명된 AEM Forms 애플리케이션의 일부로 배포됩니다 `Applications/FormsApplication`. URI 경로가 표시됩니다 `repository:///Applications/FormsApplication/1.0/FormsFolder/`. Loan.pdf *는* 클라이언트 컴퓨터가 아닌 C:\Adobe folder located on the J2EE application server hosting AEM Forms폴더에 기록됩니다. (PDF [문서 만들기를 참조하십시오](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents).)
+다음 Java 코드 예제에서는 *Loan.pdf라는 PDF 문서를 만듭니다*. 이 PDF 문서는 Loan.xdp라는 양식 디자인 *과* *Loan.xml이라는 XML 데이터 파일을 기반으로*&#x200B;합니다. XDP 파일은 이름이 지정된 AEM Forms 애플리케이션의 일부로 배포됩니다 `Applications/FormsApplication`. URI 경로가 표시됩니다 `repository:///Applications/FormsApplication/1.0/FormsFolder/`. Loan.pdf *는* 클라이언트 컴퓨터가 아닌 C:\Adobe folder located on the J2EE application server hosting AEM Forms폴더에 기록됩니다. (PDF [문서 만들기를 참조하십시오](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents).)
 
 >[!NOTE]
 >
@@ -294,7 +294,7 @@ AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 저장소에 있는 문서를 출력 서비스로 전달 {#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api}
 
-다음 Java 코드는 저장소에서 XDP 파일을 검색하여 인스턴스 내의 출력 서비스에 `com.adobe.idp.Document` 전달합니다. XDP 파일은 명명된 AEM Forms 애플리케이션의 일부로 배포됩니다 `Applications/FormsApplication`. URI 경로가 표시됩니다 `repository:///Applications/FormsApplication/1.0/FormsFolder/`.
+다음 Java 코드는 저장소에서 XDP 파일을 검색하여 인스턴스 내의 출력 서비스에 `com.adobe.idp.Document` 전달합니다. XDP 파일은 이름이 지정된 AEM Forms 애플리케이션의 일부로 배포됩니다 `Applications/FormsApplication`. URI 경로가 표시됩니다 `repository:///Applications/FormsApplication/1.0/FormsFolder/`.
 
 >[!NOTE]
 >
@@ -674,7 +674,7 @@ Loan.pdf *는* C:\Adobe folder located on the J2EE application server hosting AE
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 문서를 출력 서비스로 전달 {#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api}
 
-다음 Java 빠른 시작은 Content Services에서 *Loan.xdp* 파일을 검색합니다. 이 XDP 파일은 `space /Company Home/Form Designs` XDP 파일은 `com.adobe.idp.Document` 인스턴스에서 반환됩니다. 인스턴스가 출력 서비스로 `com.adobe.idp.Document` 전달됩니다. 비대화형 양식은 클라이언트 컴퓨터에 *Loan.pdf *라는 PDF 파일로 저장됩니다. 파일 URI 옵션이 설정되었으므로 PDF 파일 *Loan.pdf *는 AEM Forms를 호스팅하는 J2EE 응용 프로그램 서버에도 저장됩니다. (Content [Services ES2에 있는 문서를 출력 서비스로 전달하는 것을 참조하십시오](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
+다음 Java 빠른 시작은 Content Services에서 *Loan.xdp* 파일을 검색합니다. 이 XDP 파일은 `space /Company Home/Form Designs` XDP 파일은 `com.adobe.idp.Document` 인스턴스에서 반환됩니다. 인스턴스가 출력 서비스로 `com.adobe.idp.Document` 전달됩니다. 비대화형 양식은 클라이언트 컴퓨터에 *Loan.pdf *라는 PDF 파일로 저장됩니다. 파일 URI 옵션이 설정되었으므로 PDF 파일 *Loan.pdf *는 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버에도 저장됩니다. (Content [Services ES2에 있는 문서를 출력 서비스로 전달하는 것을 참조하십시오](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
 
 ```as3
  /* 
