@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
 translation-type: tm+mt
 source-git-commit: e99e29425578005ed9d215946d63f67e7229e8d6
+workflow-type: tm+mt
+source-wordcount: '457'
+ht-degree: 93%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: e99e29425578005ed9d215946d63f67e7229e8d6
 
 페이지 분석 데이터는 사이트 콘솔의 [목록 보기](/help/sites-authoring/basic-handling.md#list-view)에 표시됩니다. 페이지가 목록 형식으로 표시되면 기본적으로 다음 열을 사용할 수 있습니다.
 
-* 페이지 조회수
+* 페이지 보기 수
 * 고유 방문자 수
 * 페이지 시간
 
@@ -86,4 +89,4 @@ Open [Content Insight](/help/sites-authoring/content-insights.md) from the Sites
 >
 >Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다.
 >
->The [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.
+>The [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/ko-KR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.
