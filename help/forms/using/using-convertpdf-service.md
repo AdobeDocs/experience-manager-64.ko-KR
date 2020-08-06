@@ -1,8 +1,8 @@
 ---
 title: ConvertPDF Service
 seo-title: ConvertPDF Service
-description: 'AEM Forms ConvertPDF 서비스를 사용하여 PDF 문서를 PostScript 또는 이미지 파일로 변환합니다. '
-seo-description: 'AEM Forms ConvertPDF 서비스를 사용하여 PDF 문서를 PostScript 또는 이미지 파일로 변환합니다. '
+description: 'AEM Forms ConvertPDF 서비스를 사용하여 PDF 문서를 PostScript 또는 이미지 파일로 변환할 수 있습니다. '
+seo-description: 'AEM Forms ConvertPDF 서비스를 사용하여 PDF 문서를 PostScript 또는 이미지 파일로 변환할 수 있습니다. '
 uuid: 7fa94c8c-485b-4a77-bcd3-ed716e3cf316
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -30,7 +30,7 @@ PDF 변환 서비스를 사용하여 다음을 수행할 수 있습니다.
 
 ## 서비스의 속성 구성   {#properties}
 
-AEM 콘솔에서 **AEMFD ConvertPDF** 서비스를 사용하여 이 서비스에 대한 속성을 구성할 수 있습니다. AEM 콘솔의 기본 URL은 입니다 `https://[host]:[port]/system/console/configMgr`.
+AEM 콘솔에서 **AEMFD ConvertPDF 서비스** 를 사용하여 이 서비스에 대한 속성을 구성할 수 있습니다. AEM 콘솔의 기본 URL은 입니다 `https://[host]:[port]/system/console/configMgr`.
 
 ## 서비스 사용 {#using-the-service}
 
