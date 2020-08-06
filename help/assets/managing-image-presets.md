@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media 이미지 사전 설정 관리
-description: Dynamic Media 이미지 사전 설정을 파악하고 이미지 사전 설정을 생성, 수정 및 관리하는 방법을 알아봅니다.
+description: 다이내믹 미디어 이미지 사전 설정을 이해하고 이미지 사전 설정을 생성, 수정 및 관리하는 방법을 알아봅니다
 uuid: 087e6c32-82d5-4645-8dba-0a22c62f891f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 # Managing Dynamic Media image presets {#managing-image-presets}
 
-이미지 사전 설정을 사용하면 AEM Assets이 서로 다른 크기, 서로 다른 형식 또는 동적으로 생성되는 다른 이미지 속성과 함께 이미지를 동적으로 제공할 수 있습니다. 각 이미지 사전 설정은 이미지 표시를 위한 크기 및 형식 지정 명령의 사전 정의된 컬렉션을 나타냅니다. When you create an Image Preset, you choose a size for image delivery. 또한 이미지를 볼 수 있도록 전달할 때 이미지의 모양이 최적화되도록 서식 명령을 선택합니다.
+이미지 사전 설정을 사용하면 AEM Assets은 서로 다른 크기, 서로 다른 형식 또는 동적으로 생성된 기타 이미지 속성을 사용하여 이미지를 동적으로 전달할 수 있습니다. 각 이미지 사전 설정은 이미지 표시를 위한 크기 및 형식 지정 명령의 사전 정의된 컬렉션을 나타냅니다. When you create an Image Preset, you choose a size for image delivery. 또한 이미지를 볼 수 있도록 전달할 때 이미지의 모양이 최적화되도록 서식 명령을 선택합니다.
 
 관리자는 에셋 내보내기를 위한 사전 설정을 만들 수 있습니다. 사용자는 이미지를 내보낼 때 사전 설정을 선택할 수 있으며 관리자가 지정한 사양에 맞게 이미지를 다시 포맷할 수 있습니다.
 
@@ -35,7 +35,7 @@ ht-degree: 3%
 
 소프트웨어 매크리와 마찬가지로 이미지 사전 설정은 이름 아래에 저장된 크기 및 서식 지정 명령의 사전 정의된 모음입니다. 이미지 사전 설정이 작동하는 방식을 이해하려면 웹 사이트에서 각 제품 이미지가 서로 다른 크기, 서로 다른 형식 및 데스크탑 및 모바일 전달의 압축 속도로 나타나야 한다고 가정합니다.
 
-두 개의 이미지 사전 설정을 만들 수 있습니다. 하나는 데스크탑 버전의 경우 500 x 500픽셀이고 다른 하나는 모바일 버전의 경우 150 x 150픽셀입니다. 이미지를 500x500픽셀로 표시하는 확대라는 두 개의 이미지 사전 설정 *을* 만들고, 이미지를 150 x 150픽셀로 표시하는 *축소판이라는* 사전 설정을 만듭니다. 이미지를 확대 및 축소판 크기로 전달하려면 AEM에서 이미지 사전 설정 확대 및 축소판 이미지 사전 설정의 정의를 조회합니다. 그런 다음 AEM은 각 이미지 사전 설정의 크기와 서식 사양에 맞게 이미지를 동적으로 생성합니다.
+두 개의 이미지 사전 설정을 만들 수 있습니다. 하나는 데스크탑 버전의 경우 500 x 500픽셀이고 다른 하나는 모바일 버전의 경우 150 x 150픽셀입니다. 이미지를 500x500픽셀로 표시하는 확대라는 두 개의 이미지 사전 설정 *을* 만들고, 이미지를 150 x 150픽셀로 표시하는 *축소판이라는* 사전 설정을 만듭니다. AEM은 확대와 축소판 크기로 이미지를 전달하려면 이미지 사전 설정과 축소판 이미지 사전 설정의 정의를 조회합니다. 그런 다음 AEM은 각 이미지 사전 설정의 크기와 형식 사양에 맞게 이미지를 동적으로 생성합니다.
 
 이미지를 동적으로 전달할 때 크기가 축소되면 선명도와 세부 묘사가 손실될 수 있습니다. 이러한 이유로 각 이미지 사전 설정에는 특정 크기로 전달될 때 이미지를 최적화하기 위한 서식 지정 컨트롤이 포함되어 있습니다. 이러한 컨트롤을 사용하면 웹 사이트 또는 애플리케이션에 이미지를 전달할 때 선명하고 명확하게 이미지를 전달할 수 있습니다.
 
@@ -51,9 +51,9 @@ AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스한 다음 도구 아�
 >
 >에셋을 미리 보거나 전달할 때 만드는 모든 이미지 사전 설정을 동적 표현물로 사용할 수도 있습니다.
 >
->Dynamic Media - Scene7 모드 *에서는 이미지 사전 설정이 자동으로 게시되므로 이미지 사전 설정을 게시할*&#x200B;필요가 *없습니다* .
+>Dynamic *Media - Scene7 모드에서는*&#x200B;이미지 사전 설정이 자동으로 게시되므로 이미지 사전 설정을 게시할 *필요가 없습니다* .
 >
->Dynamic Media - *하이브리드 모드에서*&#x200B;이미지 사전 설정을 수동으로 게시해야 합니다.
+>다이내믹 *미디어 - 하이브리드 모드에서*&#x200B;이미지 사전 설정을 수동으로 게시해야 합니다.
 >
 >See [Publishing Image Presets.](#publishing-image-presets)
 
@@ -65,9 +65,9 @@ AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스한 다음 도구 아�
 
 AI, EPS 및 PDF 파일의 섭취를 지원하여 이러한 파일 포맷의 동적 변환을 생성하려는 경우, 이미지 사전 설정을 만들기 전에 다음 정보를 검토할 수 있습니다.
 
-Adobe Illustrator의 파일 포맷은 PDF의 변형입니다. AEM Assets 컨텍스트에서 주요 차이점은 다음과 같습니다.
+Adobe Illustrator의 파일 포맷은 PDF의 변형입니다. AEM Assets의 맥락에서 주요한 차이점은 다음과 같습니다.
 
-* Adobe Illustrator 문서는 여러 레이어가 있는 단일 페이지로 구성됩니다. 각 레이어는 기본 Illustrator 에셋 아래의 PNG 하위 에셋으로 추출됩니다.
+* Adobe Illustrator 문서는 여러 레이어가 있는 단일 페이지로 구성됩니다. 각 레이어는 기본 Illustrator 에셋 아래에 있는 PNG 하위 에셋으로 추출됩니다.
 * PDF 문서는 하나 이상의 페이지로 구성됩니다. 각 페이지는 주 다중 페이지 PDF 문서 아래에 단일 페이지 PDF 하위 자산으로 추출됩니다.
 
 하위 자산은 전체 워크플로우 내의 `Create Sub Asset process` 구성 요소에 의해 `DAM Update Asset` 만들어집니다. 워크플로우 내에서 이 프로세스 구성 요소를 보려면 **[!UICONTROL 도구 > 워크플로우 > 모델 > DAM 자산 업데이트 > 편집을 누릅니다]**.
@@ -76,11 +76,11 @@ Adobe Illustrator의 파일 포맷은 PDF의 변형입니다. AEM Assets 컨텍�
 
 자산을 열고 콘텐츠 메뉴를 누른 다음 **[!UICONTROL 하위 자산]** 또는 **[!UICONTROL 페이지를 선택하면 하위 자산이나 페이지를 볼 수 있습니다]**. 하위 자산은 실제 자산입니다. 즉, PDF 페이지는 워크플로우 구성 요소에 의해 `Create Sub Asset` 추출됩니다. 그런 다음 기본 자산 아래 `page1.pdf`에, `page2.pdf`등으로 저장됩니다. 저장된 후에는 **[!UICONTROL DAM 자산]** 업데이트 워크플로우가 처리합니다.
 
-Dynamic Media을 사용하여 AI, EPS 또는 PDF 파일에 대한 동적 변환을 미리 보고 생성하려면 다음 처리 단계가 필요합니다.
+Dynamic Media를 사용하여 AI, EPS 또는 PDF 파일에 대한 동적 변환을 미리 보고 생성하려면 다음 처리 단계가 필요합니다.
 
 1. DAM 자산 **[!UICONTROL 업데이트]** 작업 과정에서 **[!UICONTROL PDF/AI 이미지 미리 보기 변환]** 프로세스 구성 요소는 구성된 해상도를 `cqdam.preview.png` 변환으로 사용하여 원본 자산의 첫 페이지를 래스터화합니다.
 
-1. 그런 다음, `cqdam.preview.png` 변환은 워크플로우 내의 Dynamic Media 처리 이미지 자산 처리 **** 프로세스 구성 요소에 의해 PTIFF로 최적화됩니다.
+1. 그런 다음 `cqdam.preview.png` 변환은 워크플로우 내의 **[!UICONTROL Dynamic Media Process Image Assets]** 프로세스 구성 요소에 의해 PTIFF로 최적화됩니다.
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Dynamic Media을 사용하여 AI, EPS 또는 PDF 파일에 대한 동적 변환�
 
 DAM 자산 **[!UICONTROL 업데이트]** 워크플로우를 통해 PDF/AI 이미지 미리 보기 변환 **[!UICONTROL 프로세스 구성 요소 옵션을]** 래스터화할 수있습니다.
 
-왼쪽 상단에 있는 Adobe Experience Manager을 누르고 도구 > 워크플로우 > 모델 **[!UICONTROL 으로 이동합니다]**. 워크플로우 **[!UICONTROL 모델]** 페이지에서 **[!UICONTROL DAM 자산 업데이트]**&#x200B;를 선택한 다음 도구 모음에서 **[!UICONTROL 편집을]**&#x200B;누릅니다. DAM **[!UICONTROL 자산 업데이트 워크플로우]** 페이지에서 **[!UICONTROL PDF/AI 이미지 미리 보기 변환]** 프로세스 구성 요소를 두 번 눌러 **[!UICONTROL 단계 속성]** 대화 상자를 엽니다.
+왼쪽 상단에 있는 Adobe Experience Manager을 누르고 도구 > **[!UICONTROL 워크플로우 > 모델로 이동합니다]**. 워크플로우 **[!UICONTROL 모델]** 페이지에서 **[!UICONTROL DAM 자산 업데이트]**&#x200B;를 선택한 다음 도구 모음에서 **[!UICONTROL 편집을]**&#x200B;누릅니다. DAM **[!UICONTROL 자산 업데이트 워크플로우]** 페이지에서 **[!UICONTROL PDF/AI 이미지 미리 보기 변환]** 프로세스 구성 요소를 두 번 눌러 **[!UICONTROL 단계 속성]** 대화 상자를 엽니다.
 
 ### Rasterize PDF/AI image preview rendition options {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -143,7 +143,7 @@ PDF/ **[!UICONTROL AI 이미지 미리 보기 변환]** 래스터화 프로세�
 
 이 파일 포맷의 동적 변환을 생성할 수 있도록 INDD 파일 섭취를 지원하려는 경우 이미지 사전 설정을 만들기 전에 다음 정보를 검토할 수 있습니다.
 
-InDesign 파일의 경우, 하위 자산은 Adobe InDesign 서버가 AEM과 통합된 경우에만 추출됩니다. 참조된 자산은 메타데이터를 기반으로 연결됩니다. InDesign Server는 연결에 필요하지 않습니다. 그러나 InDesign 파일과 참조된 자산 사이에 링크를 만들기 위해 InDesign 파일을 처리하기 전에 참조된 자산이 AEM 내에 있어야 합니다.
+InDesign 파일의 경우, 하위 자산은 Adobe InDesign 서버가 AEM과 통합된 경우에만 추출됩니다. 참조된 자산은 메타데이터를 기반으로 연결됩니다. 연결에 InDesign Server이 필요하지 않습니다. 그러나 InDesign 파일과 참조된 자산 사이에 링크를 만들기 위해 InDesign 파일을 처리하기 전에 참조된 자산이 AEM 내에 있어야 합니다.
 
 See [Integrating AEM Assets with InDesign Server](indesign.md).
 
@@ -170,7 +170,7 @@ DAM 자산 **[!UICONTROL 업데이트]** 워크플로우에서 **[!UICONTROL 미
   <tr> 
    <td>JPEGPagesExport.jsx</td> 
    <td>예</td> 
-   <td>각 페이지에 대해 300ppi JPEG 하위 자산을 생성합니다. JPEG 하위 자산은 InDesign 에셋 아래에 저장된 실제 자산입니다. 또한 워크플로우에서 최적화된 PTIFF로 <code>DAM Update Asset</code> 전환됩니다.<br /> </td> 
+   <td>각 페이지에 대해 300ppi JPEG 하위 자산을 생성합니다. JPEG 하위 자산은 InDesign 자산 아래에 저장된 실제 자산입니다. 또한 워크플로우에서 최적화된 PTIFF로 <code>DAM Update Asset</code> 전환됩니다.<br /> </td> 
   </tr> 
   <tr> 
    <td>PDFPagesExport.jsx</td> 
@@ -182,9 +182,9 @@ DAM 자산 **[!UICONTROL 업데이트]** 워크플로우에서 **[!UICONTROL 미
 
 ## 이미지 축소판 크기 구성 {#configuring-image-thumbnail-size}
 
-DAM 자산 업데이트 워크플로우에서 이러한 설정을 구성하여 축소판의 크기를 **[!UICONTROL 구성할 수]** 있습니다. 워크플로우에서는 이미지 자산의 축소판 크기를 구성할 수 있는 두 가지 단계가 있습니다. 정적 축소판 생성을 위한 동적 이미지 에셋과&#x200B;**[!UICONTROL 다른(]**&#x200B;프로세스 축소판&#x200B;**[!UICONTROL )의 경우 또는 다른 모든 프로세스에서 축소판을 생성하지 못하는 경우]**&#x200B;둘 ** 모두 동일한 설정을 사용해야 합니다.
+DAM 자산 업데이트 워크플로우에서 이러한 설정을 구성하여 축소판의 크기를 **[!UICONTROL 구성할 수]** 있습니다. 워크플로우에서는 이미지 자산의 축소판 크기를 구성할 수 있는 두 가지 단계가 있습니다. 정적 축소판 생성을 위한 동적 이미지 에셋과&#x200B;**[!UICONTROL 다른(]**&#x200B;프로세스 축소판&#x200B;**[!UICONTROL )는 동적 미디어 프로세스 이미지 에셋]**&#x200B;에 사용되거나 다른 모든 프로세스에서 축소판을 생성하지 못할 경우 *둘* 모두에 동일한 설정이 있어야 합니다.
 
-[ **[!UICONTROL Dynamic Media 처리 이미지 자산]** ] 단계에서는 이미지 서버에서 축소판을 생성하며 이 구성은 [ **[!UICONTROL 프로세스 축소판]** ] 단계에 적용된 구성과 독립적입니다. 축소판 **[!UICONTROL 처리 단계를 통해]** 축소판을 생성하는 것은 축소판을 만드는 데 가장 느리지만 메모리를 많이 사용하는 방법입니다.
+[ **[!UICONTROL 다이내믹 미디어 프로세스 이미지 자산]** ] 단계에서는 이미지 서버에서 축소판을 생성하며 이 구성은 [ **[!UICONTROL 프로세스 축소판]** ] 단계에 적용된 구성과 독립적입니다. 축소판 **[!UICONTROL 처리 단계를 통해]** 축소판을 생성하는 것은 축소판을 만드는 데 가장 느리지만 메모리를 많이 사용하는 방법입니다.
 
 축소판 크기 조정은 다음 형식으로 정의됩니다. **width:height:center**(예: *80:80:false)입니다*. 너비와 높이는 축소판의 크기(픽셀 단위)를 결정합니다. center 값은 false 또는 true이고, true로 설정된 경우 축소판 이미지의 크기가 구성에 지정된 대로 정확하게 지정됩니다. 크기가 조정된 이미지가 더 작은 경우 축소판 내에서 가운데에 표시됩니다.
 
@@ -194,6 +194,7 @@ DAM 자산 업데이트 워크플로우에서 이러한 설정을 구성하여 �
    >
    >
 * 비디오의 축소판 크기는 [인수] 아래의 [ **[!UICONTROL 프로세스]** ] **[!UICONTROL 탭에서 []** mpeg 축소판 ** 단계에서]**&#x200B;구성합니다.
+
 >
 
 
@@ -201,7 +202,7 @@ DAM 자산 업데이트 워크플로우에서 이러한 설정을 구성하여 �
 **축소판 크기를 구성하려면 다음을 수행하십시오**.
 
 1. 도구 **[!UICONTROL > 워크플로우 > 모델 > DAM 자산 업데이트 > 편집을 누릅니다]**.
-1. Dynamic Media 처리 **[!UICONTROL 이미지 자산]** 단계를 누른 다음 축소판 **[!UICONTROL 탭을]** 누릅니다. 필요에 따라 축소판 크기를 변경한 다음 **[!UICONTROL 확인을 누릅니다]**.
+1. Dynamic **[!UICONTROL Media Process Image Assets]** 단계를 누른 다음 **[!UICONTROL 축소판]** 탭을 누릅니다. 필요에 따라 축소판 크기를 변경한 다음 **[!UICONTROL 확인을 누릅니다]**.
 
    ![step_properties_thumbnaiilarguments](assets/step_properties_thumbnailarguments.png)
 
@@ -209,17 +210,17 @@ DAM 자산 업데이트 워크플로우에서 이러한 설정을 구성하여 �
 
    >[!NOTE]
    >
-   >[ **[!UICONTROL 프로세스 축소판]** ] 단계의 thumbnails 인수에 있는 값은 [Dynamic Media 처리 이미지 자산] 단계의 [축소판] 인수와 일치해야 **[!UICONTROL 합니다]** .
+   >[ **[!UICONTROL 프로세스 축소판]** ] 단계의 thumbnails 인수 값은 [ **[!UICONTROL 다이내믹 미디어 프로세스 이미지 자산] 단계의 축소판]** 인수와 일치해야 합니다.
 
 1. 저장을 **[!UICONTROL 눌러]** 워크플로우에 변경 사항을 저장합니다.
 
-### 표시되는 Dynamic Media 이미지 사전 설정 수 증가 또는 감소 {#increasing-or-decreasing-the-number-of-image-presets-that-display}
+### 표시되는 다이내믹 미디어 이미지 사전 설정 수 증가 또는 감소 {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
-만든 이미지 사전 설정은 자산을 미리 볼 때 동적 표현물로 사용할 수 있습니다. AEM은 세부 사항 보기 > 표현물에서 자산을 볼 때 다양한 **[!UICONTROL 동적 표현물을 보여줍니다]**. 표시되는 표현물의 제한을 늘리거나 줄일 수 있습니다.
+만든 이미지 사전 설정은 자산을 미리 볼 때 동적 표현물로 사용할 수 있습니다. AEM에서는 세부 사항 보기 > 표현물에서 자산을 볼 때 다양한 **[!UICONTROL 동적 표현물을 보여줍니다]**. 표시되는 표현물의 제한을 늘리거나 줄일 수 있습니다.
 
-**표시되는 Dynamic Media 이미지 사전 설정 수를 늘리거나 줄이려면 다음을 수행하십시오**.
+**표시된**&#x200B;다이내믹 미디어 이미지 사전 설정 수를 늘리거나 줄이려면 다음을 수행하십시오.
 
-1. CRXDE **[!UICONTROL Lite]** (http://localhost:4502/crx/de)으로[이동합니다](http://localhost:4502/crx/de).
+1. CRXDE Lite **[!UICONTROL 로]** 이동합니다([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Navigate to the image preset listing node at `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
 
    ![increaseenumberofimagepresets표시](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
@@ -241,7 +242,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
 >Internet Explorer 9를 사용하는 경우 사전 설정을 만들면 저장 직후 사전 설정 목록에 사전 설정이 나타나지 않습니다. 이 문제를 해결하려면 IE9용 캐시를 비활성화하십시오.
 
 AI, PDF 및 EPS 파일의 통합 기능을 지원하기 위해 이러한 파일 포맷의 동적 변환을 생성하려는 경우, 이미지 사전 설정을 만들기 전에 다음 정보를 검토할 수 있습니다.\
-Adobe [Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
+자세한 내용은 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
 
 이 파일 포맷의 동적 변환을 생성할 수 있도록 INDD 파일 섭취를 지원하려는 경우 이미지 사전 설정을 만들기 전에 다음 정보를 검토할 수 있습니다.  INDD( [InDesign) 파일 형식을 참조하십시오](#indesign-indd-file-format).
 
@@ -249,7 +250,7 @@ Adobe [Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시
 >
 >Dynamic Media 이미지 사전 설정을 만들려면 AEM 관리자 또는 Admin Console 관리자로서 관리자 권한이 있어야 합니다.
 
-**Dynamic Media 이미지 사전 설정을 만들려면**:
+**Dynamic Media 이미지 사전 설정을 만들려면 다음을 수행하십시오**.
 
 1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스합니다.
 1. 도구 **[!UICONTROL 아이콘을]** 누른 다음 **[!UICONTROL 자산 > 이미지 사전 설정으로 이동합니다]**.
@@ -271,7 +272,7 @@ Adobe [Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시
 
 반응형 이미지 사전 설정을 만들려면 이미지 사전 설정 [만들기에서 단계를 수행합니다](#creating-image-presets). 이미지 사전 설정 **[!UICONTROL 편집]** 창에서 높이와 너비를 입력할 때 값을 지운 후 비워 둡니다.
 
-이 사전 설정을 공백으로 두면 AEM에서 이 이미지 사전 설정이 응답적이라고 알려줍니다. 다른 값을 적절히 조정할 수 있습니다.
+이 이미지 사전 설정이 응답적이라고 AEM에 알려줍니다. 다른 값을 적절히 조정할 수 있습니다.
 
 ![chlimage_1-498](assets/chlimage_1-498.png)
 
@@ -279,16 +280,16 @@ Adobe [Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시
 >
 >자산에 이미지 사전 설정을 적용할 때 **[!UICONTROL URL]** 및 **[!UICONTROL RESS]** 단추를 보려면 자산을 게시해야 합니다.
 >
->Dynamic Media - Scene7 모드에서는 이미지 사전 설정과 이미지 자산이 자동으로 게시됩니다.
+>다이내믹 미디어 - Scene7 모드에서는 이미지 사전 설정과 이미지 자산이 자동으로 게시됩니다.
 >
->Dynamic Media - 하이브리드 모드에서는 이미지 사전 설정과 이미지 자산을 수동으로 게시해야 합니다.
+>다이내믹 미디어 - 하이브리드 모드에서는 이미지 사전 설정과 이미지 자산을 수동으로 게시해야 합니다.
 
 ### 이미지 사전 설정 옵션 {#image-preset-options}
 
-이미지 사전 설정을 만들거나 편집할 때 이 섹션에 설명된 옵션이 있습니다. 또한 Adobe에서는 다음과 같은 세 가지 *우수 사례* 옵션을 선택하여 시작할 것을 권장합니다.
+이미지 사전 설정을 만들거나 편집할 때 이 섹션에 설명된 옵션이 있습니다. 또한 Adobe은 다음과 같은 세 가지 *우수 사례* 옵션 중 선택하여 시작할 것을 권장합니다.
 
-* **[!UICONTROL 형식]** (**[!UICONTROL 기본]** 탭) - **[!UICONTROL JPEG]** 또는 요구 사항을 충족하는 다른 형식을 선택합니다. 모든 웹 브라우저는 JPEG 이미지 형식을 지원합니다. 작은 파일 크기와 이미지 품질 간의 적절한 균형을 제공합니다. 그러나 JPEG 형식 이미지는 압축 설정이 너무 낮으면 원치 않는 이미지 가공물을 가져올 수 있는 손실 압축 체계를 사용합니다. 이러한 이유로 Adobe에서는 압축 품질을 75로 설정하는 것이 좋습니다. 이 설정은 이미지 품질과 작은 파일 크기 간의 적절한 균형을 제공합니다.
-* **[!UICONTROL 단순 선명]** 활성화 - [ **[!UICONTROL 간단한 선명하게 하기]** 설정]을 선택하지 마십시오(이 선명 효과 필터는 [언샵 마스크] 설정에 비해 덜 컨트롤 제공).
+* **[!UICONTROL 형식]** (**[!UICONTROL 기본]** 탭) - **[!UICONTROL JPEG]** 또는 요구 사항을 충족하는 다른 형식을 선택합니다. 모든 웹 브라우저는 JPEG 이미지 형식을 지원합니다. 작은 파일 크기와 이미지 품질 간의 적절한 균형을 제공합니다. 그러나 JPEG 형식 이미지는 압축 설정이 너무 낮으면 원치 않는 이미지 가공물을 가져올 수 있는 손실 압축 체계를 사용합니다. 이러한 이유로 Adobe은 압축 품질을 75로 설정하는 것이 좋습니다. 이 설정은 이미지 품질과 작은 파일 크기 간의 적절한 균형을 제공합니다.
+* **[!UICONTROL 단순 선명]** 활성화 - [ **[!UICONTROL 간단한 선명하게 하기]** 설정]을 선택하지 마십시오(이 선명 효과 필터는 [언샵 마스크] 설정에 비해 더 적은 컨트롤을 제공합니다).
 * **[!UICONTROL 선명하게 하기: 리샘플링 모드]** - **[!UICONTROL Bi-Cubic을 선택합니다]**.
 
 #### 기본 탭 옵션 {#basic-tab-options}
@@ -396,7 +397,7 @@ Adobe [Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시
      <li><strong>Bi-Linear</strong> - 가장 빠른 리샘플링 방법입니다. 일부 앨리어스 가공물은 눈에 띈다.</li> 
      <li><strong>Bi-Cubic</strong> - CPU 사용을 증가시키지만, 앨리어싱 가공물이 덜 나타나면서 더 선명한 이미지를 생성합니다.</li> 
      <li><strong>Sharp2</strong> - Bi-Cubic보다 약간 더 선명하게 결과물을 만들 수 있지만 CPU 비용이 훨씬 더 높습니다.</li> 
-     <li><strong>Bi-Sharp</strong> - Adobe Photoshop에서 쌍입방(더 선명하게)이라고 하는 이미지 크기를 줄이기 위한 Photoshop <strong>의 기본 리샘플러를</strong> 선택합니다.</li> 
+     <li><strong>Bi-Sharp</strong> - Adobe Photoshop에서 쌍입방(더 선명하게)이라고 하는 이미지 크기를 줄이기 위한 Photoshop 기본 <strong>리셀러를</strong> 선택합니다.</li> 
      <li><strong>각 색상</strong> 및 <strong>밝기</strong> - 각 방법은 색상 또는 밝기를 기반으로 할 수 있습니다. 기본적으로 <strong>각 색상이</strong> 선택되어 있습니다.</li> 
     </ul> </td> 
   </tr> 
@@ -406,7 +407,7 @@ Adobe [Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시
   </tr> 
   <tr> 
    <td><strong>이미지 수정자</strong></td> 
-   <td><p>Dynamic Media은 UI에서 사용할 수 있는 일반적인 이미지 설정 외에도 [ <strong>이미지 수정자] 필드에 지정할 수 있는 다양한 고급 이미지 수정을 지원합니다</strong> . 이러한 매개 변수는 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">이미지 서버 프로토콜 명령 참조에서 정의됩니다</a>.</p> <p>중요: API에 나열된 다음 기능은 지원되지 않습니다.</p> 
+   <td><p>UI에서 사용할 수 있는 일반적인 이미지 설정 외에도, Dynamic Media는 <strong>이미지 수정자</strong> 필드에서 지정할 수 있는 다양한 고급 이미지 수정을 지원합니다. 이러한 매개 변수는 <a href="https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">이미지 서버 프로토콜 명령 참조에서 정의됩니다</a>.</p> <p>중요: API에 나열된 다음 기능은 지원되지 않습니다.</p> 
     <ul> 
      <li>기본 템플릿 및 텍스트 렌더링 명령: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> and <code>textPs=</code></li> 
      <li>현지화 명령: <code>locale=</code> and <code>req=xlate</code></li> 
@@ -415,7 +416,7 @@ Adobe [Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시
      <li><code>req=saveToFile</code></li> 
      <li><code>req=targets</code></li> 
      <li><code>template=</code></li> 
-     <li>비코어 Dynamic Media 서비스: SVG, 이미지 렌더링 및 Web-to-Print</li> 
+     <li>비코어 다이내믹 미디어 서비스: SVG, 이미지 렌더링 및 Web-to-Print</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -485,11 +486,11 @@ Adobe [Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시
 
 ## Publishing Dynamic Media image presets {#publishing-image-presets}
 
-Dynamic Media - 하이브리드 모드를 실행 중인 경우 이미지 사전 설정을 수동으로 게시해야 합니다.
+다이내믹 미디어 - 하이브리드 모드를 실행 중인 경우 이미지 사전 설정을 수동으로 게시해야 합니다.
 
-Dynamic Media을 실행 중인 경우 - Scene7 모드에서는 이미지 사전 설정이 자동으로 게시됩니다. 이러한 단계를 완료할 필요가 없습니다.
+다이내믹 미디어 - Scene7 모드를 실행 중인 경우 이미지 사전 설정이 자동으로 게시됩니다. 이러한 단계를 완료할 필요가 없습니다.
 
-**Dynamic Media에서 이미지 사전 설정을 게시하려면 - 하이브리드 모드**:
+**다이내믹 미디어 - 하이브리드 모드에서 이미지 사전 설정을 게시하려면 다음을 수행하십시오**.
 
 1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스합니다.
 1. 도구 **[!UICONTROL 아이콘을]** 누른 다음 **[!UICONTROL 자산 > 이미지 사전 설정으로 이동합니다]**.
@@ -504,5 +505,5 @@ Dynamic Media을 실행 중인 경우 - Scene7 모드에서는 이미지 사전 
 
 1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스합니다.
 1. 도구 **[!UICONTROL 아이콘을]** 누른 다음 **[!UICONTROL 자산 > 이미지 사전 설정으로 이동합니다]**.
-1. 사전 설정을 선택한 다음 **[!UICONTROL 삭제를 누릅니다]**. Dynamic Media에서 삭제할 것임을 확인합니다. 삭제를 **[!UICONTROL 누릅니다]**.
+1. 사전 설정을 선택한 다음 **[!UICONTROL 삭제를 누릅니다]**. Dynamic Media에서 삭제를 확인합니다. 삭제를 **[!UICONTROL 누릅니다]**.
 
