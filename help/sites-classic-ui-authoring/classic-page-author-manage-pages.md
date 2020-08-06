@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1935'
+ht-degree: 91%
 
 ---
 
@@ -38,7 +41,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 예를 들어 다음은 `Triangle` 페이지를 액세스하게 되는 Geometrixx 사이트에서의 추출을 보여 줍니다.
 
-* 작성 환경
+* 작성자 환경
 
    `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
@@ -46,7 +49,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
-   Depending on the configuration of your instance, use of `/content` might be optional on the publish environment.
+   인스턴스의 구성에 따라서는 게시 환경에서 `/content`의 사용은 선택 사항일 수 있습니다.
 
 ```xml
   /content
@@ -88,28 +91,28 @@ This structure can be viewed from the Websites console, which you can use to [na
 
 When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.
 
-구현 및 허용되는 문자 목록은 UI에 따라 약간 다르지만(터치 지원 UI에 대해 더 광범위함) 허용되는 최소값은 다음과 같습니다.
+구현 및 허용되는 문자 목록은 UI에 따라 약간 다르지만(터치 지원 UI에 대해 더 광범위함) 허용되는 최소 문자는 다음과 같습니다.
 
 * &#39;a&#39; - &#39;z&#39;
 * &#39;A&#39; - &#39;Z&#39;
 * &#39;0&#39; - &#39;9&#39;
 * _(밑줄)
-* `-` (하이픈/빼기)
+* `-`(하이픈/빼기)
 
 이러한 문자가 확실히 허용/사용되도록 하려면 해당 문자만 사용합니다(허용되는 모든 문자에 대한 세부 사항이 필요한 경우 [이름 지정 규칙](/help/sites-developing/naming-conventions.md) 참조).
 
 #### 제목 {#title}
 
-새 페이지를 만들 때 페이지 **제목**&#x200B;만 제공하면 AEM은 이 문자열에서 페이지 **이름**&#x200B;을 파생하고 AEM 및 JCR에서 지정한 [규칙에 따라 이름을 확인](/help/sites-developing/naming-conventions.md)합니다. UI와 **제목** 필드에는 잘못된 문자가 포함될 수 있지만, 파생되는 이름에서는 잘못된 문자가 대체됩니다. 예:
+새 페이지를 만들 때 페이지 **제목**&#x200B;만 제공하면 AEM은 이 문자열에서 페이지 **이름**[을 파생하고 AEM 및 JCR에서 지정한 규칙에 따라 이름을 확인합니다. ](/help/sites-developing/naming-conventions.md) UI와 **제목** 필드에는 잘못된 문자가 포함될 수 있지만, 파생되는 이름에서는 잘못된 문자가 대체됩니다. 예:
 
 | 제목 | 파생되는 이름 |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&amp;ast;00+ | sc---c-.html |
+| SC%&amp;&amp;ast;jcs+ | sc---c-.html |
 
 #### 이름 {#name}
 
-새 페이지를 만들 때 페이지 **이름**&#x200B;을 제공하면 AEM이 AEM 및 JCR에서 지정한 [규칙에 따라 이름을 확인](/help/sites-developing/naming-conventions.md)합니다.
+새 페이지를 만들 때 페이지 **이름**[을 제공하면 AEM이 AEM 및 JCR에서 지정한 규칙에 따라 이름을 확인합니다.](/help/sites-developing/naming-conventions.md)
 
 In the Classic UI you **cannot enter invalid characters** in the **Name** field.
 
@@ -226,6 +229,7 @@ Once you have created and opened a page you can [add content using the component
 
    * **붙여넣기** - 페이지와 모든 하위 페이지를 붙여넣습니다.
    * **Shift + 붙여넣기** - 선택한 페이지만 붙여넣습니다.
+
    페이지가 새 위치로 붙여넣어집니다.
 
    >[!NOTE]
@@ -319,7 +323,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지에 대한 내부 링�
 
 ### 페이지 잠금 {#locking-a-page}
 
-콘솔에서, 또는 개별 페이지를 편집할 때 [페이지 잠금/잠금 해제](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)할 수 있습니다. 페이지가 잠겨 있는지 여부도 두 위치 모두에 표시됩니다.
+콘솔에서 또는 개별 페이지를 편집할 때 [페이지 잠금/잠금 해제](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)할 수 있습니다. 페이지가 잠겨 있는지 여부도 두 위치 모두에 표시됩니다.
 
 ### 새 폴더 만들기 {#creating-a-new-folder}
 
@@ -328,7 +332,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지에 대한 내부 링�
 >폴더도 새 폴더 이름을 지정할 때 [페이지 이름 지정 규칙](#page-naming-conventions)을 따릅니다.
 
 1. **웹 사이트** 콘솔을 열고 필요한 위치로 이동합니다.
-1. ****&#x200B;새로 **만들기...메뉴(새로 만들기... 옆의 화살표**&#x200B;클릭)**, 새**&#x200B;폴더...를 선택합니다..
+1. In the **New...** menu (click the arrow next to **New...**), select **New Folder...**.
 1. **폴더 만들기** 대화 상자가 열립니다. 여기에서 **이름** 및 **제목**&#x200B;을 입력할 수 있습니다.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
