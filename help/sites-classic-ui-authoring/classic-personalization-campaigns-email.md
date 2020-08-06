@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: eb72f934-4b0f-4a71-b2a2-3ddf78db8c3c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1771'
+ht-degree: 94%
 
 ---
 
@@ -19,8 +22,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe는 AEM SMTP 서비스에서 발송한 공개/바운스된 이메일의 추가로 개선할 계획이 없습니다.\
->권장 사항은 Adobe Campaign 및 AEM 통합을 [활용하는 것입니다](/help/sites-administering/campaign.md).
+>Adobe은 AEM SMTP 서비스에서 보낸 공개/바운스된 이메일의 추가로 개선할 계획이 없습니다.\
+>Adobe Campaign과 AEM의 통합을 [활용하는 것이 좋습니다](/help/sites-administering/campaign.md).
 
 뉴스레터와 같은 이메일 마케팅은 리드에게 컨텐츠를 보내는 데 사용할 수 있으므로 모든 마케팅 캠페인에서 중요한 부분을 차지합니다. AEM에서는 기존 AEM 컨텐츠로 뉴스레터를 만들거나 뉴스레터에 사용할 새 컨텐츠를 추가할 수 있습니다.
 
@@ -61,13 +64,13 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    ![mcm_createnewsletter](assets/mcm_createnewsletter.png)
 
-1. **만들기**&#x200B;를 클릭합니다. 
+1. **만들기**&#x200B;를 클릭합니다.
 
 1. 새 대화 상자가 즉시 열립니다. 여기에서 뉴스레터의 속성을 입력할 수 있습니다.
 
    **기본 수신자 목록**&#x200B;은 뉴스레터의 터치포인트를 구성하므로 필수 필드입니다(목록에 대한 자세한 내용은 [목록 작업](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) 참조).
 
-   ![mcm_newnewsletterdialog](assets/mcm_newnewsletterdialog.png)
+   ![mcm_newnewnewsletterdialog](assets/mcm_newnewsletterdialog.png)
 
    * **보낸 사람 이름**
 
@@ -193,6 +196,7 @@ Newsletter 설정을 사용자 지정하는 방법은 다음과 같습니다.
    1. 필요한 경우 이메일의 **제목**&#x200B;을 수정합니다.
    1. 드롭다운 목록에서 **기본 수신자 목록**&#x200B;을 선택합니다.
    1. **확인**&#x200B;을 클릭합니다.
+
    뉴스레터를 테스트하거나 보내면 지정된 이메일 주소와 제목으로 수신자에게 이메일이 발송됩니다.
 
 ## 뉴스레터 플라이트 테스트 {#flight-testing-newsletters}
