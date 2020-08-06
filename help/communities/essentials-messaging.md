@@ -134,7 +134,7 @@ ht-degree: 2%
 
    * **[!UICONTROL 기호 이름]**: com.engage.media.social.messaging.MessagingNotification
    * **[!UICONTROL 이름]**: 시작하기 자습서 메시지 알림
-   * **[!UICONTROL 설명]**: 사용자에게 메시지를 수신할 때 이메일 알림을 전송하는 샘플 서비스
+   * **[!UICONTROL 설명]**: 사용자에게 메시지를 받을 때 이메일 알림을 전송하는 샘플 서비스
    * **[!UICONTROL 패키지]**: `com.engage.media.social.messaging.notification`
 
 1. 다음으로 이동 `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`
