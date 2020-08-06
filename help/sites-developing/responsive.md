@@ -19,11 +19,11 @@ ht-degree: 1%
 ---
 
 
-# 웹 페이지를 위한 반응형 디자인{#responsive-design-for-web-pages}
+# 웹 페이지를 위한 응답형 디자인{#responsive-design-for-web-pages}
 
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: 반응)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 _좋습니다_. [추가 정보](/help/sites-developing/spa-overview.md).
+>단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: 반응)이 필요한 프로젝트에서는 SPA 편집기를 _사용하는 것이 좋습니다_. [추가 정보](/help/sites-developing/spa-overview.md).
 
 
 웹 페이지가 표시되는 클라이언트 뷰포트에 맞게 디자인할 수 있습니다. 반응형 디자인을 사용하면 두 방향 모두에서 여러 장치에서 동일한 페이지를 효과적으로 표시할 수 있습니다. 다음 이미지는 페이지가 뷰포트 크기 변화에 응답하는 몇 가지 방법을 보여 줍니다.
@@ -70,7 +70,7 @@ ht-degree: 1%
 
 ## 미디어 쿼리 사용 {#using-media-queries}
 
-미디어 쿼리를 사용하면 페이지 렌더링을 위해 CSS 스타일을 선택적으로 사용할 수 있습니다. AEM 개발 도구 및 기능을 사용하면 애플리케이션에서 미디어 쿼리를 효과적이고 효율적으로 구현할 수 있습니다.
+미디어 쿼리를 사용하면 페이지 렌더링을 위해 CSS 스타일을 선택적으로 사용할 수 있습니다. AEM 개발 툴과 기능을 사용하면 애플리케이션에서 미디어 쿼리를 효과적이고 효율적으로 구현할 수 있습니다.
 
 W3C 그룹은 이 CSS3 기능과 구문을 설명하는 [미디어 쿼리](https://www.w3.org/TR/css3-mediaqueries/) 권장 사항을 제공합니다.
 
@@ -286,11 +286,11 @@ W3C에서 제안한 [그림 요소는](https://picture.responsiveimages.org/) �
 </div>
 ```
 
-AEM 페이지에서 속성 `data-src` 값은 저장소의 리소스 경로입니다.
+AEM 페이지에서 속성 값은 저장소의 리소스 `data-src` 에 대한 경로입니다.
 
 ### AEM에서 응용 이미지 구현 {#implementing-adaptive-images-in-aem}
 
-AEM 애플리케이션에서 적응형 이미지를 구현하려면 필요한 javascript 라이브러리를 추가하고 페이지에 필요한 HTML 마크업을 포함해야 합니다.
+AEM 애플리케이션에서 응용 이미지를 구현하려면 필요한 javascript 라이브러리를 추가하고 페이지에 필요한 HTML 마크업을 포함해야 합니다.
 
 **라이브러리**
 
@@ -329,9 +329,9 @@ picturefill.js 코드에서 필요로 하는 div 요소를 생성하는 구성 �
 다음 섹션에서는 이 구성 요소에 대한 세부 사항을 제공합니다.
 
 
-### AEM에서의 이미지 렌더링 이해 {#understanding-image-rendering-in-aem}
+### AEM의 이미지 렌더링 이해 {#understanding-image-rendering-in-aem}
 
-이미지 렌더링을 사용자 정의하려면 기본 AEM 정적 이미지 렌더링 구현을 이해해야 합니다. AEM에서는 웹 페이지용 이미지를 렌더링하기 위해 함께 작동하는 이미지 구성 요소와 이미지 렌더링 서블릿을 제공합니다. 다음 이벤트 시퀀스는 이미지 구성 요소가 페이지의 단락 시스템에 포함될 때 발생합니다.
+이미지 렌더링을 사용자 정의하려면 기본 AEM 정적 이미지 렌더링 구현을 이해해야 합니다. AEM은 웹 페이지용 이미지를 렌더링하기 위해 함께 작동하는 이미지 구성 요소와 이미지 렌더링 서블릿을 제공합니다. 다음 이벤트 시퀀스는 이미지 구성 요소가 페이지의 단락 시스템에 포함될 때 발생합니다.
 
 1. 작성: 작성자는 이미지 구성 요소를 편집하여 HTML 페이지에 포함할 이미지 파일을 지정합니다. 파일 경로는 이미지 구성 요소 노드의 속성 값으로 저장됩니다.
 1. 페이지 요청: 페이지 구성 요소의 JSP는 HTML 코드를 생성합니다. 이미지 구성 요소의 JSP는 페이지에 img 요소를 생성하고 추가합니다.
@@ -353,7 +353,7 @@ picturefill.js 코드에서 필요로 하는 div 요소를 생성하는 구성 �
 
 노드 `image_0` 의 `jcr:resourceType` 값 `foundation/components/image`은 값 `sling:resourceSuperType` 이 `foundation/components/parbase`있습니다. parbase 구성 요소에는 선택기와 일치하는 img.GET.java 스크립트와 요청 URL의 파일 이름 확장자가 포함됩니다. CQ는 이 스크립트(servlet)를 사용하여 이미지를 렌더링합니다.
 
-스크립트의 소스 코드를 보려면 CRXDE Lite를 사용하여 `/libs/foundation/components/parbase/img.GET.java`\
+스크립트의 소스 코드를 보려면 CRXDE Lite을 사용하여 `/libs/foundation/components/parbase/img.GET.java`\
 file.
 
 ## 현재 뷰포트 크기에 대한 이미지 크기 조정 {#scaling-images-for-the-current-viewport-size}
@@ -377,7 +377,7 @@ file.
 
 **사용 가능한 솔루션**
 
-AEM에서는 사용하거나 확장할 수 있는 다음 구현을 설치합니다.
+AEM은 사용하거나 확장할 수 있는 다음 구현을 설치합니다.
 
 * 미디어 쿼리를 생성하는 응용 이미지 기반 구성 요소로서, 이미지를 확장하는 응용 이미지 구성 요소 서블릿에 대한 HTTP 요청을 제공합니다.
 * Geometrixx Commons 패키지는 이미지 해상도를 변경하는 이미지 참조 수정 서블릿 샘플 서버를 설치합니다.
@@ -552,7 +552,7 @@ AEM 서비스 구성 방법에 대한 자세한 내용은 OSGi [구성을 참조
 
 AdaptiveImageComponentServlet 클래스는 writeLayer 메서드도 무시합니다. 이 방법은 이미지에 JPEG 품질을 적용합니다.
 
-### 이미지 참조 수정 서블릿(Geometrixx Common) {#image-reference-modification-servlet-geometrixx-common}
+### 이미지 참조 수정 서블릿(Geometrixx 공통) {#image-reference-modification-servlet-geometrixx-common}
 
 샘플 이미지 참조 수정 서블릿은 웹 페이지에서 이미지의 크기를 조절하기 위해 img 요소에 대한 크기 속성을 생성합니다.
 
@@ -747,7 +747,7 @@ geometrixx-media 페이지 구성 요소(`/etc/designs/geometrixx-media`)와 연
 
 #### 페이지 구성 요소 그리드에서 컨텐츠 위치 변경 {#repositioning-content-in-the-page-component-grid}
 
-샘플 Geometrixx Media 응용 프로그램의 페이지는 컨텐츠 블록 행을 광범위한 뷰포트에 가로로 배포합니다. 작은 뷰포트에서는 동일한 블록이 세로로 배포됩니다. 다음 예제 CSS는 media-home 페이지 구성 요소가 생성하는 HTML 코드에 대해 이 동작을 구현하는 스타일을 보여줍니다.
+샘플 Geometrixx Media 애플리케이션의 페이지는 컨텐츠 블록 행을 광범위한 뷰포트에 가로로 배포합니다. 작은 뷰포트에서는 동일한 블록이 세로로 배포됩니다. 다음 예제 CSS는 media-home 페이지 구성 요소가 생성하는 HTML 코드에 대해 이 동작을 구현하는 스타일을 보여줍니다.
 
 * 미디어 시작 페이지의 기본 CSS는 클래스 내에 있는 클래스 `float:left` 에 대한 `span*` 스타일을 `row-fluid` 할당합니다.
 
