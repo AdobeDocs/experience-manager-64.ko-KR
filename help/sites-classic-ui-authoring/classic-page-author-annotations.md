@@ -12,6 +12,9 @@ content-type: reference
 discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
 translation-type: tm+mt
 source-git-commit: 363f084e086c2afd5585caa08d5b55c0e02bd4b2
+workflow-type: tm+mt
+source-wordcount: '821'
+ht-degree: 95%
 
 ---
 
@@ -36,7 +39,7 @@ source-git-commit: 363f084e086c2afd5585caa08d5b55c0e02bd4b2
 
 >[!NOTE]
 >
->요구 사항에 따라 주석이 추가, 업데이트 또는 삭제될 때 알림을 보내는 워크플로우를 개발할 수도 있습니다.
+>필요에 따라 주석이 추가, 업데이트 또는 삭제될 때 알림을 보내는 워크플로우를 개발할 수도 있습니다.
 
 ## 주석 {#annotations}
 
@@ -66,7 +69,7 @@ source-git-commit: 363f084e086c2afd5585caa08d5b55c0e02bd4b2
 
 >[!NOTE]
 >
->다른 사용자가 잠근 페이지에 주석을 추가할 수 없습니다.
+>다른 사용자가 잠근 페이지에는 주석을 추가할 수 없습니다.
 
 
 ## 주석 스케치 {#annotation-sketches}
@@ -77,6 +80,7 @@ source-git-commit: 363f084e086c2afd5585caa08d5b55c0e02bd4b2
 >
 >* 해당 아이콘이 표시되지 않습니다.
 >* 다른 브라우저에 만든 기존 스케치가 표시되지 않습니다.
+
 >
 
 
