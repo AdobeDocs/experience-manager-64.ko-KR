@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: bb200d5361b8927c37683ec1cc0534d1d99176c7
 workflow-type: tm+mt
 source-wordcount: '173'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 0%
 
 ## 튜토리얼 {#tutorials}
 
-애플리케이션 라우팅을 통해 프로젝트 설정에서 시작하는 AEM에서 편집할 수 있는 단일 페이지 애플리케이션을 구축하는 데 대한 엔드 투 엔드 예는 WKND SPA 자습서를 참조하십시오.
+응용 프로그램 라우팅을 통해 프로젝트 설정을 시작하는 AEM에서 편집할 수 있는 단일 페이지 응용 프로그램을 만드는 엔드 투 엔드 예제를 보려면 WKND SPA Tutorials을 참조하십시오.
 
-* [AEM SPA 편집기 및 각도 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+* [AEM SPA 편집기 및 Angular 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
 * [AEM SPA 편집기 시작 및 반응](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
 
-그러나 AEM에 대한 자체 SPA 프로젝트를 시작하기 전에 AEM에 대한 [SPA 개발 문서도](/help/sites-developing/spa-architecture.md) 검토하십시오.
+그러나 AEM용 SPA 프로젝트를 시작하기 전에 AEM용 [SPA 개발 문서를](/help/sites-developing/spa-architecture.md) 살펴보십시오.
