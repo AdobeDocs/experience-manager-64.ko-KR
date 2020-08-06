@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## MSRP 정보 {#about-msrp}
 
-MSRP를 공용 스토어로 사용하도록 AEM Communities이 구성된 경우 동기화나 복제 없이도 모든 작성자 및 게시 인스턴스에서 UGC(사용자 생성 콘텐츠)에 액세스할 수 있습니다.
+AEM Communities이 MSRP를 공용 스토어로 사용하도록 구성된 경우 동기화나 복제 없이도 모든 작성자 및 게시 인스턴스에서 사용자가 생성한 컨텐츠(UGC)에 액세스할 수 있습니다.
 
 SRP 옵션 [및 권장 토폴로지](working-with-srp.md#characteristics-of-srp-options) 의 [특성을 참조하십시오](topologies.md).
 
@@ -33,7 +33,7 @@ SRP 옵션 [및 권장 토폴로지](working-with-srp.md#characteristics-of-srp-
    * 버전 2.6 이상
    * No need to configure mongos or sharding
    * 반드시 [복제본 세트를 사용하는 것이 좋습니다.](#mongoreplicaset)
-   * AEM과 동일한 호스트에서 실행하거나 원격으로 실행할 수 있습니다.
+   * AEM과 동일한 호스트에서 실행하거나 원격으로 실행 가능
 
 * [Apache Solr](https://lucene.apache.org/solr/):
 
@@ -129,7 +129,7 @@ Oak 및 MSRP 컬렉션이 모두 집중적으로 사용되는 경우 성능상�
 
 MSRP로 구성된 이전 버전에서 업그레이드하는 경우
 
-1. AEM Communities으로 [업그레이드 수행](upgrade.md)
+1. AEM Communities으로 [업그레이드](upgrade.md)
 1. 새 Solr 구성 파일 설치
    * 표준 [MLS의 경우](solr.md#installing-standard-mls)
    * 고급 [MLS](solr.md#installing-advanced-mls)
@@ -217,7 +217,7 @@ curl -s -u admin:admin -d 'batchSize=10000&path=/content/usergenerated/asi/mongo
 
 저장소 옵션의 구성을 확인하여 MSRP가 기본 공급자로 구성되었는지 확인하십시오. 기본적으로 저장소 리소스 공급자는 JSRP입니다.
 
-모든 작성 및 AEM 인스턴스에서 [스토리지 구성 콘솔을](srp-config.md) 다시 방문하거나 AEM 저장소를 확인합니다.
+모든 작성 및 게시 AEM 인스턴스에서 [스토리지 구성 콘솔을](srp-config.md) 다시 방문하거나 AEM 저장소를 확인합니다.
 
 * JCR에서 if/etc/socialconfig [로](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
@@ -226,13 +226,13 @@ curl -s -u admin:admin -d 'batchSize=10000&path=/content/usergenerated/asi/mongo
 
 ### 업그레이드 후 UGC가 사라짐 {#ugc-disappears-after-upgrade}
 
-기존 AEM Communities 6.0 사이트에서 업그레이드하는 경우, AEM Communities 6.3으로 업그레이드한 후 기존 UGC를 [SRP](srp.md) API에 필요한 구조에 맞게 변환해야 합니다.
+기존 AEM Communities 6.0 사이트에서 업그레이드하는 경우, AEM Communities 6.3으로 업그레이드한 후 기존의 모든 UGC를 [SRP](srp.md) API에 필요한 구조에 맞게 변환해야 합니다.
 
 GitHub에서 사용할 수 있는 오픈 소스 도구는 다음과 같습니다.
 
 * [AEM Communities UGC 마이그레이션 도구](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-AEM Communities 6.1 이상으로 가져오기 위해 이전 버전의 AEM 소셜 커뮤니티에서 UGC를 내보내도록 마이그레이션 도구를 사용자 지정할 수 있습니다.
+이전 버전의 AEM 소셜 커뮤니티에서 UGC를 내보내어 AEM Communities 6.1 이상으로 가져올 수 있도록 마이그레이션 도구를 사용자 지정할 수 있습니다.
 
 ### 오류 - 정의되지 않은 필드 provider_id {#error-undefined-field-provider-id}
 
@@ -258,11 +258,11 @@ at com.adobe.cq.social.scf.core.BaseSocialComponent.toJSONString(BaseSocialCompo
 클래스 정의가 누락되어 MongoDB 서버에 대한 보안 연결을 만들지 못하는 경우 공용 maven 저장소에서 사용 가능한 MongoDB 드라이버 번들 `mongo-java-driver`을 업데이트해야 합니다.
 
 1. https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar에서 [드라이버](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar) 다운로드(버전 2.13.2 이상)
-1. AEM 인스턴스의 &quot;crx-quickstart/install&quot; 폴더에 번들을 복사합니다
+1. AEM 인스턴스의 &quot;crx-quickstart/install&quot; 폴더에 번들을 복사합니다.
 1. AEM 인스턴스 다시 시작
 
 ## 리소스 {#resources}
 
-* [MongoDB가 있는 AEM](../../help/sites-deploying/aem-with-mongodb.md)
+* [AEM with MongoDB](../../help/sites-deploying/aem-with-mongodb.md)
 * [MongoDB 설명서](https://docs.mongodb.org/)
 
