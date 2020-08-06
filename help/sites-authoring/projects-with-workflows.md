@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 84%
 
 ---
 
@@ -37,7 +40,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 | 론치 요청 | x |  |  |  |
 | 랜딩 페이지 요청 | x |  |  |  |
 | 이메일 요청 | x |  |  |  |
-| DAM 언어 복사 및 암호 만들기;ast; |  |  |  | x |
+| DAM 언어 사본 만들기;ast; |  |  |  | x |
 | DAM 언어 복사 및 번역;ast; |  |  |  | x |
 
 >[!NOTE]
@@ -93,9 +96,9 @@ AEM에서의 워크플로우 작업에 대한 자세한 정보는 다음을 참�
 1. 간단한 프로젝트에서 **워크플로우** 타일의 **+** 기호를 선택하고 **론치 요청 워크플로우**&#x200B;를 선택합니다.
 1. 론치의 제목을 입력하고 론치 소스 경로를 제공합니다. 해당하는 경우 설명과 활성 날짜를 추가할 수도 있습니다. 론치가 동작하는 방식에 따라 [소스 페이지의 라이브 데이터 가져오기]나 [하위 페이지 제외]를 선택하십시오.
 
-   ![chlimage_1-321](assets/chlimage_1-325.png)
+   ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. **만들기**&#x200B;를 클릭합니다. 워크플로우가 시작됩니다. **워크플로우가 워크플로우**&#x200B;목록에&#x200B;**나타납니다(줄임표 클릭**...을 **클릭하여** 이 목록에 액세스합니다.)
+1. **만들기**&#x200B;를 클릭합니다. 워크플로우가 시작됩니다. The workflow appears in the **Workflows** list (click ellipses **...** on the **Workflows** tile to access this list).
 
 ## 랜딩 페이지 요청 워크플로우 {#request-landing-page-workflow}
 
