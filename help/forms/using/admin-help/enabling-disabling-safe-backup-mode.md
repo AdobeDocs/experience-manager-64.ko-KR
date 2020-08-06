@@ -1,8 +1,8 @@
 ---
 title: 안전한 백업 모드 활성화 및 비활성화
 seo-title: 안전한 백업 모드 활성화 및 비활성화
-description: 백업 설정 페이지에서 AEM 양식을 안전한 백업 모드로 운영할 수 있으므로 데이터베이스와 GDS(Global Document Storage) 디렉토리를 안전하게 백업할 수 있습니다. 안전한 백업 모드를 활성화 및 비활성화하는 방법을 알아봅니다.
-seo-description: 백업 설정 페이지에서 AEM 양식을 안전한 백업 모드로 운영할 수 있으므로 데이터베이스와 GDS(Global Document Storage) 디렉토리를 안전하게 백업할 수 있습니다. 안전한 백업 모드를 활성화 및 비활성화하는 방법을 알아봅니다.
+description: 백업 설정 페이지에서 데이터베이스 및 GDS(Global Document Storage)(GDS) 디렉토리를 안전하게 백업할 수 있도록 AEM 양식을 안전한 백업 모드로 운영할 수 있습니다. 안전한 백업 모드를 활성화 및 비활성화하는 방법을 알아봅니다.
+seo-description: 백업 설정 페이지에서 데이터베이스 및 GDS(Global Document Storage)(GDS) 디렉토리를 안전하게 백업할 수 있도록 AEM 양식을 안전한 백업 모드로 운영할 수 있습니다. 안전한 백업 모드를 활성화 및 비활성화하는 방법을 알아봅니다.
 uuid: 2fdeaeaf-e969-40a4-8aee-1f2b627d3942
 contentOwner: admin
 content-type: reference
@@ -11,19 +11,22 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9fda71e4-78a1-4581-9d02-bf06a75c3bcb
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '241'
+ht-degree: 0%
 
 ---
 
 
 # 안전한 백업 모드 활성화 및 비활성화 {#enabling-and-disabling-safe-backup-mode}
 
-백업 설정 페이지에서 AEM 양식을 안전한 백업 모드로 운영할 수 있으므로 데이터베이스와 GDS(Global Document Storage) 디렉토리를 안전하게 백업할 수 있습니다.
+백업 설정 페이지에서 데이터베이스 및 GDS(Global Document Storage)(GDS) 디렉토리를 안전하게 백업할 수 있도록 AEM 양식을 안전한 백업 모드로 운영할 수 있습니다.
 
 AEM 양식은 안전한 백업 모드이지만 GDS 디렉토리에서 파일을 적극적으로 제거하지 않는다는 점을 제외하면 정상적으로 작동합니다.
 
 >[!NOTE]
 >
->이 옵션을 설정해도 시스템이 백업되지 않습니다.시스템을 백업하도록 준비합니다.
+>이 옵션을 설정해도 시스템이 백업되지 않습니다. 시스템 백업을 준비합니다.
 
 ## 안전한 백업 모드 사용 {#enable-safe-backup-mode}
 
@@ -32,7 +35,7 @@ AEM 양식은 안전한 백업 모드이지만 GDS 디렉토리에서 파일을 
 
 >[!NOTE]
 >
->시스템이 이미 안전 백업 모드로 실행 중인 경우 확인을 클릭할 때 새 예약이 생성되지 않습니다.
+>시스템이 이미 안전 백업 모드로 실행 중이면 확인을 클릭할 때 새 예약이 생성되지 않습니다.
 
 ## 안전한 백업 모드 비활성화 {#disable-safe-backup-mode}
 
