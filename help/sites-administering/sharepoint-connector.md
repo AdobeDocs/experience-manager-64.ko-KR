@@ -2,7 +2,7 @@
 title: SharePoint 커넥터
 seo-title: SharePoint 커넥터
 description: Day JCR Connector for Microsoft SharePoint 2010 and Microsoft SharePoint 2013, version 4.0.
-seo-description: AEM의 Sharepoint 커넥터에 대해 알아봅니다.
+seo-description: AEM의 Sharepoint Connector에 대해 자세히 알아보십시오.
 uuid: 2f3b90f9-ec6b-4808-bbd4-20e67b6a7573
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -56,7 +56,7 @@ SharePoint 커넥터는 다음과 같은 기본 기능을 지원합니다.
 ## SharePoint 커넥터 설치 {#installing-sharepoint-connector}
 
 커넥터는 설치가 간편한 컨텐츠 패키지입니다. 패키지 관리자를 사용하여 패키지를 설치한 다음 SharePoint 서버 URL을 설정합니다\
-및 기타 구성 옵션. SharePoint 컨텐츠는 AEM 저장소에서 사용할 수 있습니다.
+및 기타 구성 옵션. AEM 저장소에서 SharePoint 내용을 사용할 수 있습니다.
 
 ### 설치 요구 사항 {#installation-requirements}
 
@@ -83,7 +83,7 @@ SharePoint 커넥터를 패키지 [에서 다운로드할 수 있습니다](http
    * Microsoft Office SharePoint Server(MOSS) 2010
    * Microsoft Office SharePoint Server(MOSS) 2013
 
-* 커넥터(OEM, 특별 요구 사항, 사용자 정의 인증 방법)의 사용자 정의 배포에 대한 지원이 필요한 경우 해당 지역의 Adobe 사무실에 문의하십시오.
+* 커넥터(OEM, 특별 요구 사항, 사용자 정의 인증 방법)의 사용자 정의 배포에 대한 지원이 필요한 경우 해당 지역의 Adobe 사무소에 문의하십시오.
 
 >[!NOTE]
 >
@@ -100,7 +100,7 @@ AEM 시작 페이지에서 패키지 공유에 액세스하려면 **도구를 �
 커넥터 컨텐츠 패키지를 설치하려면
 
 1. Adobe 지원 티켓을 열어 커넥터 기능을 요청합니다.
-1. 패키지를 다운로드할 수 있을 때 다운로드한 다음 AEM 인스턴스의 패키지 관리자를 엽니다.
+1. 패키지를 다운로드할 수 있을 때 다운로드한 다음 AEM 인스턴스용 패키지 관리자를 엽니다.
 1. 패키지 설명 **페이지에서** 설치를 탭/클릭합니다.
 1. 패키지 **설치** 대화 상자에서 설치를 탭/ **클릭합니다**.
 
@@ -135,9 +135,9 @@ SharePoint 서버의 URL 및 고급 옵션을 설정하려면 다음 단계를 �
 `<name>` 는 JCR 작업 영역의 이름이며\
 `<url>` 는 해당 작업 영역에 대한 SharePoint 서버의 URL입니다.
 
-AEM에서 위 구성 단계 외에 한 단계 더 수행합니다. &#39;com.day.cq.da **m.cq-dam-jcr-connectors&#39; 번들 목록을**&#x200B;허용합니다.
+AEM에서 위 구성 단계와는 한 단계 더 떨어져 있습니다. &#39;com.day.cq.da **m.cq-dam-jcr-connectors&#39; 번들을 허용 목록**&#x200B;합니다.
 
-AEM에서 목록 번들을 허용하려면 다음 단계를 수행하십시오.
+AEM에서 번들을 허용 목록하려면 다음 단계를 수행하십시오.
 
 1. OSGi 관리 콘솔로 이동합니다. http://localhost:4502/system/console/configMgr.
 
@@ -147,7 +147,7 @@ AEM에서 목록 번들을 허용하려면 다음 단계를 수행하십시오.
 
 1. 화이트 리스트 번들&#x200B;**기본값에 &#39;com.day.cq.dam.cq-dam-jcr-connectors**&#39;를 추가합니다.
 
-1. [저장]을 클릭합니다.
+1. 저장을 클릭합니다.
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
@@ -173,7 +173,7 @@ SharePoint 자산을 AEM과 동기화하려면 다음 단계를 수행하십시�
 1. &quot;기본 DAMAssetSynchronization&quot; 서비스를 검색합니다.
 1. 구성 값을 편집합니다.
 1. SharePoint 사이트에서 액세스할 수 있는 사용자의 사용자 이름과 해당 암호를 설정합니다.
-1. [저장]을 클릭합니다.
+1. 저장을 클릭합니다.
 
 기본적으로 비활성화된 DAM 동기화 서비스를 활성화합니다.
 
@@ -187,28 +187,28 @@ SharePoint 자산을 AEM과 동기화하려면 다음 단계를 수행하십시�
 1. &quot;DAY CQ DAM JCR Connector Asset Synchronization Service&quot;를 검색합니다.
 1. 구성 값을 편집합니다.
 1. 동기화 기간(초)의 값을 설정합니다.
-1. [저장]을 클릭합니다.
+1. 저장을 클릭합니다.
 
 ### 인증 구성 {#configuring-authentication}
 
 Sharepoint에는 다음과 같은 인증 유형을 지원하는 클래식 및 클레임 기반 인증 방법이 포함되어 있습니다.
 
 * 기본
-* 양식 기반
+* Forms 기반
 
 특히 다음 유형의 인증을 사용할 수 있습니다.
 
 * Classic-Basic
-* 클래식 양식 기반
+* 클래식 Forms 기반
 * 클레임-기본
-* 청구 양식 기반
+* 클레임-Forms 기반
 
-AEM JCR Connector for Microsoft SharePoint 2010 및 Microsoft SharePoint 2013 버전 4.0.은 클레임 기반 인증(Microsoft에서 권장함)을 지원하며, 이 인증은 다음 모드에서 작동합니다.
+Microsoft SharePoint 2010 및 Microsoft SharePoint 2013 버전 4.0용 AEM JCR Connector는 클레임 기반 인증(Microsoft에서 권장함)을 지원하며, 이 인증은 다음 모드에서 작동합니다.
 
 * **기본/NTLM 인증**: 커넥터는 먼저 기본 인증을 사용하여 연결을 시도합니다. 사용할 수 없는 경우 NTLM 기반 인증으로 전환됩니다.
-* **양식 기반 인증**: Sharepoint는 사용자가 로그인 양식(일반적으로 웹 페이지)에 입력하는 자격 증명을 기반으로 사용자를 검증합니다. 시스템은 후속 요청에 대한 ID를 다시 설정하는 키를 포함하는 인증된 요청에 대한 토큰을 발행합니다.
+* **Forms 기반 인증**: Sharepoint는 사용자가 로그인 양식(일반적으로 웹 페이지)에 입력하는 자격 증명을 기반으로 사용자를 검증합니다. 시스템은 후속 요청에 대한 ID를 다시 설정하는 키를 포함하는 인증된 요청에 대한 토큰을 발행합니다.
 
-**양식 기반 인증 구성**
+**Forms 기반 인증 구성**
 
 이동: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 
@@ -230,9 +230,9 @@ AEM JCR Connector for Microsoft SharePoint 2010 및 Microsoft SharePoint 2013 �
 
 AEM 및 SharePoint 모두에서 인증된 사용자만 커넥터를 통해 SharePoint 컨텐츠에 액세스할 수 있습니다.
 
-인증에 커넥터 익스텐션을 사용하여 사용자 정의 인증 모듈을 만들 수도 있습니다. 이 모듈은 AEM 사용자의 액세스를 특정 SharePoint 사용자에게 매핑합니다. 커넥터 인스턴스에 매핑된 SharePoint 내용을 볼 수 있도록 SharePoint 사용자(사용자 이름과 암호가 일치해야 함)에 해당하는 AEM 사용자를 만듭니다.
+인증에 커넥터 확장을 사용하여 사용자 정의 인증 모듈을 만들 수도 있습니다. 이 모듈은 AEM 사용자의 액세스를 특정 SharePoint 사용자에게 매핑합니다. 커넥터 인스턴스에 매핑된 SharePoint 내용을 볼 수 있도록 SharePoint 사용자(사용자 이름과 암호가 일치해야 함)에 해당하는 AEM 사용자를 만듭니다.
 
-AEM에서 사용자를 만들려면:
+AEM에서 사용자를 만들려면
 
 1. http://localhost:9502/with관리자 사용자 로그인에 로그인합니다.
 1. 도구를 클릭합니다.
@@ -264,7 +264,7 @@ AEM에서 사용자를 만들려면:
 
 #### SharePoint 서버의 다른 인증 방법 지원 {#supporting-different-authentication-methods-of-the-sharepoint-server}
 
-표준 버전에서는 커넥터가 표준 IIS **Windows** 인증(기본) 및 Forms 기반 인증(토큰 기반)을 지원합니다. 확장 메커니즘을 통해 [다른 인증 방법을](https://technet.microsoft.com/en-us/library/cc262350.aspx#section2) 지원할 수 있습니다.
+표준 버전에서 커넥터는 표준 IIS **Windows** 인증(기본) 및 Forms 기반 인증(토큰 기반)을 지원합니다. 확장 메커니즘을 통해 [다른 인증 방법을](https://technet.microsoft.com/en-us/library/cc262350.aspx#section2) 지원할 수 있습니다.
 
 다음 단계에서는 표준 인증을 확장하여 SharePoint 서버의 다양한 인증 방법을 지원하는 지침을 제공합니다.
 
