@@ -28,7 +28,7 @@ ht-degree: 96%
 
 >[!CAUTION]
 >
->AEM 6.4.3 이전 버전을 실행하는 경우 해당 기능을 사용하려면 노드에 **수정/만들기/삭제** 권한이 있어야 `/content/versionhistory` 합니다.
+>AEM 6.4.3 이전 버전을 실행 중인 경우 해당 기능을 사용하려면 노드에서 **수정/만들기/삭제** 권한이 `/content/versionhistory` 있어야 합니다.
 >
 >이 기능에 대한 기술적인 세부 사항은 [개발 및 페이지 차이](/help/sites-developing/pagediff.md#operation-details)를 참조하십시오.
 
