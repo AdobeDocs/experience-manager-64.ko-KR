@@ -86,10 +86,10 @@ ht-degree: 1%
 
 또한, 오류나 오류로 인해 스케줄러가 현재 주기의 만료된 자산을 감지하지 못하는 경우 스케줄러는 다음 주기에 이러한 자산을 다시 검사하여 만료된 상태를 감지합니다.
 
-콘솔에서 [!DNL Assets] 만료된 하위 자산과 함께 참조하는 복합 에셋을 표시하려면 Configuration Manager에서 **[!UICONTROL Adobe CQ DAM 만료 알림]** 워크플로우를 [!DNL Experience Manager] 구성합니다.
+콘솔에서 [!DNL Assets] 만료된 하위 자산과 함께 참조하는 복합 자산을 표시하려면 Configuration Manager에서 **[!UICONTROL Adobe CQ DAM 만료 알림]** 워크플로우를 [!DNL Experience Manager] 구성합니다.
 
 1. 구성 [!DNL Experience Manager] 관리자를 엽니다.
-1. Adobe **[!UICONTROL CQ DAM 만료 알림을 선택합니다]**. 기본적으로 **[!UICONTROL 시간 기반 스케줄러가]** 선택되어 자산이 만료된 하위 자산이 있는지 여부를 특정 시간에 확인할 작업을 예약합니다. 작업이 완료되면, 하위 자산 및 참조된 자산이 만료된 것으로 검색 결과에 표시됩니다.
+1. Adobe CQ **[!UICONTROL DAM 만료 알림을 선택합니다]**. 기본적으로 **[!UICONTROL 시간 기반 스케줄러가]** 선택되어 자산이 만료된 하위 자산이 있는지 여부를 특정 시간에 확인할 작업을 예약합니다. 작업이 완료되면, 하위 자산 및 참조된 자산이 만료된 것으로 검색 결과에 표시됩니다.
 
    ![chlimage_1-154](assets/chlimage_1-154.png)
 
@@ -114,7 +114,7 @@ ht-degree: 1%
 
    ![chlimage_1-155](assets/chlimage_1-155.png)
 
-1. 도구 모음 **[!UICONTROL 에서 게시를]** 클릭합니다. 도구 모음에 **게시** 가 표시되지 **[!UICONTROL 않으면 도구 모음에서]** 자세히 **[!UICONTROL 를 클릭하고]** 게시옵션을찾습니다.
+1. Click **[!UICONTROL Publish]** from the toolbar. 도구 모음에 **게시** 가 표시되지 **[!UICONTROL 않으면 도구 모음에서]** 자세히 **[!UICONTROL 를 클릭하고]** 게시옵션을찾습니다.
 
    ![chlimage_1-156](assets/chlimage_1-156.png)
 
@@ -182,7 +182,7 @@ ht-degree: 1%
 >
 >이전 릴리스의 라이선스를 저장하는 데 `/etc/dam/drm/licenses` 사용되는 위치 [!DNL Experience Manager] 는 더 이상 사용되지 않습니다.
 >
->라이센스 페이지를 만들거나 수정하거나 이전 [!DNL Experience Manager] 릴리스에서 포팅하는 경우 `/apps/settings/dam/drm/licenses` 또는 `/conf/&ast;/settings/dam/drm/licenses`아래에 저장하는 것이 좋습니다.
+>라이센스 페이지를 만들거나 수정하거나 이전 [!DNL Experience Manager] 릴리스에서 포팅하는 경우, Adobe은 이러한 페이지를 `/apps/settings/dam/drm/licenses` 또는 `/conf/&ast;/settings/dam/drm/licenses`아래에 저장하는 것을 권장합니다.
 
 ### DRM으로 보호된 에셋 다운로드 {#downloading-drm-assets}
 
