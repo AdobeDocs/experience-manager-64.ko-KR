@@ -13,9 +13,9 @@ ht-degree: 1%
 
 # PDF 래스터라이저 프로그램 사용 {#using-pdf-rasterizer}
 
-경우에 따라 AEM(Adobe Experience Manager) 자산에 대규모 컨텐츠 중심 PDF 또는 AI 파일을 업로드할 때 기본 라이브러리에서 정확한 출력을 생성하지 못할 수 있습니다. 이러한 경우 Adobe의 PDF 래스터라이저 라이브러리를 사용하면 기본 라이브러리의 출력 결과와 비교하여 더 안정적이고 정확한 출력물을 생성할 수 있습니다.
+경우에 따라 컨텐츠 중심의 대용량 PDF 또는 AI 파일을 Adobe Experience Manager(AEM) 자산에 업로드할 때 기본 라이브러리는 정확한 출력을 생성하지 못할 수 있습니다. 이러한 경우 Adobe의 PDF 래스터라이저 라이브러리는 기본 라이브러리의 출력 결과와 비교하여 안정적이고 정확한 출력물을 생성할 수 있습니다.
 
-PDF 래스터라이저 라이브러리를 사용하는 것이 좋습니다.
+Adobe은 다음과 같은 경우 PDF 래스터라이저 라이브러리를 사용하는 것이 좋습니다.
 
 * 컨텐츠가 많은 AI 또는 PDF 파일
 * 축소판이 포함된 AI 또는 PDF 파일은 기본적으로 생성되지 않습니다.
@@ -23,7 +23,7 @@ PDF 래스터라이저 라이브러리를 사용하는 것이 좋습니다.
 
 PDF 래스터라이저를 사용하여 생성된 축소판 및 미리 보기는 기본 출력 품질과 비교하여 더 우수하므로 여러 디바이스에서 일관된 보기 경험을 제공할 수 있습니다. Adobe PDF 래스터라이저 라이브러리는 색상 공간 변환을 지원하지 않습니다. 소스 파일의 색상 공간에 관계없이 항상 RGB로 출력합니다.
 
-1. 소프트웨어 배포를 통해 AEM 인스턴스에 PDF 래스터라이저 패키지를 [설치합니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
+1. Software Distribution에서 AEM 인스턴스에 PDF 래스터라이저 패키지를 [설치합니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
 
    >[!NOTE]
    >
