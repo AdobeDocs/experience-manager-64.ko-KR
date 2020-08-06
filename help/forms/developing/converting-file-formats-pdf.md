@@ -40,14 +40,14 @@ PDF 생성 서비스는 기본 애플리케이션을 사용하여 다음 파일 
    >
    >PDF 생성 서비스는 64비트 버전의 OpenOffice를 지원하지 않습니다.
 
-* PSD로 변환할 수 있는 Adobe Photoshop® CS2(Windows 전용)
+* PSD로 변환할 Adobe Photoshop® CS2(Windows 전용)
 
    >[!NOTE]
    >
    >Photoshop CS3 및 CS4는 Windows Server 2003 또는 Windows Server 2008을 지원하지 않으므로 지원되지 않습니다.
 
 * FM 변환 Adobe FrameMaker® 7.2 및 8(Windows 전용)
-* PMD, PM6, P65 및 PM을 변환할 수 있는 Adobe PageMaker® 7.0(Windows만 해당)
+* PMD, PM6, P65 및 PM을 변환할 수 있는 Adobe PageMaker® 7.0(Windows 전용)
 * 타사 응용 프로그램에서 지원하는 기본 형식(응용 프로그램별 설정 파일 개발 필요)(Windows만 해당)
 
 PDF 생성 서비스는 다음과 같은 표준 기반 파일 포맷을 PDF로 변환합니다.
@@ -70,8 +70,8 @@ PDF 생성 서비스는 PDF를 다음 파일 형식으로 변환합니다(Window
 
 PDF 생성 서비스를 사용하려면 다음 관리 작업을 수행해야 합니다.
 
-* AEM Forms를 호스팅하는 컴퓨터에 필수 기본 응용 프로그램 설치
-* AEM Forms를 호스팅하는 컴퓨터에 Adobe Acrobat Professional 또는 Acrobat Pro Extended 9.2 설치
+* AEM Forms을 호스팅하는 컴퓨터에 필요한 기본 응용 프로그램 설치
+* AEM Forms을 호스팅하는 컴퓨터에 Adobe Acrobat Professional 또는 Acrobat Pro Extended 9.2 설치
 * 설치 후 설정 작업 수행
 
 이러한 작업은 JBoss 턴키를 사용하여 AEM 양식 설치 및 배포에 설명되어 있습니다.
@@ -210,7 +210,7 @@ PDF API(웹 서비스)를 사용하여 Microsoft Word 문서를 PDF 문서로 �
 1. PDF 클라이언트 생성
 
    * 기본 생성자를 사용하여 `GeneratePDFServiceClient` 개체를 만듭니다.
-   * 생성자를 사용하여 `GeneratePDFServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스(예: `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.)로 전달합니다. 속성을 사용할 필요는 `lc_version` 없습니다. 하지만 지정합니다 `?blob=mtom`.
+   * 생성자를 사용하여 `GeneratePDFServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) 속성을 사용할 필요는 `lc_version` 없습니다. 하지만 지정합니다 `?blob=mtom`.
    * 필드의 값을 `System.ServiceModel.BasicHttpBinding` 가져와 개체를 `GeneratePDFServiceClient.Endpoint.Binding` 만듭니다. 반환 값을 다음으로 캐스팅합니다 `BasicHttpBinding`.
    * 개체 `System.ServiceModel.BasicHttpBinding` 필드를 (으)로 `MessageEncoding` 설정합니다 `WSMessageEncoding.Mtom`. 이 값을 사용하면 MTOM이 사용됩니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
@@ -367,7 +367,7 @@ PDF API 생성(웹 서비스)을 사용하여 HTML 컨텐츠를 PDF 문서로 �
 1. PDF 클라이언트 생성
 
    * 기본 생성자를 사용하여 `GeneratePDFServiceClient` 개체를 만듭니다.
-   * 생성자를 사용하여 `GeneratePDFServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스(예: `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.)로 전달합니다. 속성을 사용할 필요는 `lc_version` 없습니다. 하지만 지정합니다 `?blob=mtom`.
+   * 생성자를 사용하여 `GeneratePDFServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) 속성을 사용할 필요는 `lc_version` 없습니다. 하지만 지정합니다 `?blob=mtom`.
    * 필드의 값을 `System.ServiceModel.BasicHttpBinding` 가져와 개체를 `GeneratePDFServiceClient.Endpoint.Binding` 만듭니다. 반환 값을 다음으로 캐스팅합니다 `BasicHttpBinding`.
    * 개체 `System.ServiceModel.BasicHttpBinding` 필드를 (으)로 `MessageEncoding` 설정합니다 `WSMessageEncoding.Mtom`. 이 값을 사용하면 MTOM이 사용됩니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
@@ -518,7 +518,7 @@ PDF API 생성(웹 서비스)을 사용하여 PDF 문서를 RTF 파일로 변환
 1. PDF 클라이언트 생성
 
    * 기본 생성자를 사용하여 `GeneratePDFServiceClient` 개체를 만듭니다.
-   * 생성자를 사용하여 `GeneratePDFServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스(예: `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.)로 전달합니다. 속성을 사용할 필요는 `lc_version` 없습니다. 하지만 지정합니다 `?blob=mtom`.
+   * 생성자를 사용하여 `GeneratePDFServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) 속성을 사용할 필요는 `lc_version` 없습니다. 하지만 지정합니다 `?blob=mtom`.
    * 필드의 값을 `System.ServiceModel.BasicHttpBinding` 가져와 개체를 `GeneratePDFServiceClient.Endpoint.Binding` 만듭니다. 반환 값을 다음으로 캐스팅합니다 `BasicHttpBinding`.
    * 개체 `System.ServiceModel.BasicHttpBinding` 필드를 (으)로 `MessageEncoding` 설정합니다 `WSMessageEncoding.Mtom`. 이 값을 사용하면 MTOM이 사용됩니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
@@ -543,7 +543,7 @@ PDF API 생성(웹 서비스)을 사용하여 PDF 문서를 RTF 파일로 변환
    * 변환할 PDF 파일을 나타내는 `BLOB` 개체입니다.
    * 변환할 파일의 경로 이름을 포함하는 문자열.
    * 파일 위치를 지정하는 `java.lang.String` 개체입니다.
-   * 변환의 대상 파일 유형을 지정하는 문자열 개체 지정합니다 `RTF`.
+   * 변환의 대상 파일 유형을 지정하는 문자열 개체 지정 `RTF`.
    * PDF 문서를 생성하는 동안 적용할 설정이 포함된 선택적 `BLOB` 오브젝트입니다.
    * 메서드로 채워지는 형식 `BLOB` 의 출력 `ExportPDF2` 매개 변수입니다. 이 `ExportPDF2` 개체는 변환된 문서로 채워집니다. 이 매개 변수 값은 웹 서비스 호출에만 필요합니다.
 
@@ -617,7 +617,7 @@ WinID가 텍스트, 하위 창, 창 클래스 ID 등과 같은 대화 내용을 
   </tr> 
   <tr> 
    <td><p>스크립트 </p></td> 
-   <td><p>PDF 생성 서비스와 기본 애플리케이션 간의 상호 작용을 지정합니다. 이러한 상호 작용은 일반적으로 응용 프로그램이 파일을 Adobe PDF 드라이버로 인쇄하도록 합니다. </p><p>스크립트에는 기본 응용 프로그램이 특정 대화 상자를 열도록 안내하고 해당 대화 상자의 필드 및 단추에 대한 특정 응답을 제공하는 지침이 들어 있습니다. </p></td> 
+   <td><p>PDF 생성 서비스와 기본 애플리케이션 간의 상호 작용을 지정합니다. 이러한 상호 작용은 일반적으로 애플리케이션이 파일을 Adobe PDF 드라이버으로 인쇄하도록 합니다. </p><p>스크립트에는 기본 응용 프로그램이 특정 대화 상자를 열도록 안내하고 해당 대화 상자의 필드 및 단추에 대한 특정 응답을 제공하는 지침이 들어 있습니다. </p></td> 
    <td><p>PDF 생성 서비스에는 지원되는 모든 기본 애플리케이션에 대한 스크립트 파일이 포함되어 있습니다. XML 편집 응용 프로그램을 사용하여 이러한 파일을 수정할 수 있습니다.</p><p>새 기본 애플리케이션에 대한 지원을 추가하려면 새 스크립트 파일을 만들어야 합니다. 기본 응용 <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">프로그램에 대한 추가 대화 상자 XML 파일 만들기 또는 수정을 참조하십시오</a>. </p></td> 
   </tr> 
   <tr> 
@@ -724,7 +724,7 @@ PDF 생성 서비스에서 이전에 나열된 파일에 설명된 대화 상자
 
 대화 상자와 스크립트 파일은 appmondata.jar 파일에 있습니다. 이러한 파일을 수정하거나 새 스크립트 또는 대화 상자 파일을 추가하려면 먼저 이 JAR 파일의 패키지를 해제해야 합니다. 예를 들어 EditPlus 응용 프로그램에 대한 지원을 추가한다고 가정합니다. appmon.editplus.script.en_US.xml 및 appmon.editplus.script.addition.en_US.xml이라는 두 개의 XML 파일을 만듭니다. 아래의 지정된 대로 두 위치에서 이러한 XML 스크립트를 adobe-appmondata.jar 파일에 추가해야 합니다.
 
-* adobe-livecycle-native-jboss-x86_win32.ear > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar\com\adobe\appmon adobe-livecycle-native-jboss-x86_win32.ear 파일은 *[AEM forms install directory]\*configurationManager의 내보내기 폴더에 있습니다. (AEM Forms가 다른 J2EE 응용 프로그램 서버에 배포된 경우 adobe-livecycle-native-jboss-x86_win32.ear 파일을 J2EE 응용 프로그램 서버에 해당하는 EAR 파일로 바꿉니다.)
+* adobe-livecycle-native-jboss-x86_win32.ear > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar\com\adobe\appmon adobe-livecycle-native-jboss-x86_win32.ear 파일은 *[AEM forms install directory]\*configurationManager의 내보내기 폴더에 있습니다. (AEM Forms이 다른 J2EE 응용 프로그램 서버에 배포된 경우 adobe-livecycle-native-jboss-x86_win32.ear 파일을 J2EE 응용 프로그램 서버에 해당하는 EAR 파일로 바꿉니다.)
 * adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon (adobe-appmondata.jar 파일은 adobe-generatepdf-dsc.jar 파일에 있습니다.) adobe-generatepdf-dsc.jar 파일은 *[AEM forms 설치 디렉토리]*\deploy 폴더에 있습니다.
 
 이러한 XML 파일을 adobe-appmondata.jar 파일에 추가한 후 GeneratePDF 구성 요소를 다시 배포해야 합니다. 대화 상자 및 스크립트 XML 파일을 adobe-appmondata.jar 파일에 추가하려면 다음 작업을 수행하십시오.
@@ -875,9 +875,9 @@ Microsoft Spy++를 사용하여 기본 응용 프로그램에서 창 요소 속�
 
 **PDF 서비스 구성 파일 업데이트**
 
-1. [ **홈** ] > [ **서비스** ] > [ **Adobe PDF Generator** ] > [구성 파일 **]******&#x200B;을 선택한 다음 [Export Configuration]을 선택합니다.
+1. 홈 **** > **서비스** > **Adobe PDF 생성기** 구성 파일 > ********&#x200B;파일 내보내기를 선택한 다음 Export Configuration을 선택합니다.
 1. 필요에 따라 native2pdfconfig.xml 파일의 `filetype-settings` 요소를 수정합니다.
-1. [ **홈** ] > [ **서비스** ] > [ **Adobe PDF Generator** ] > [구성 파일&#x200B;**]을 선택한 다음 [******&#x200B;파일 가져오기]를 선택한 다음 [구성]을 선택합니다. 구성 데이터를 PDF 생성 서비스로 가져와 이전 설정을 대체합니다.
+1. 홈 **** > **서비스** > **Adobe PDF 생성기** > 구성&#x200B;**파일 >******&#x200B;파일 가져오기를 선택한 다음 Facebook 구성을 선택합니다. 구성 데이터를 PDF 생성 서비스로 가져와 이전 설정을 대체합니다.
 
 >[!NOTE]
 >
@@ -916,7 +916,7 @@ Microsoft Spy++를 사용하여 기본 응용 프로그램에서 창 요소 속�
 
 **Windows XP 환경에서 시스템 변수 만들기**
 
-1. [ **제어판] > [시스템]을 선택합니다**.
+1. Campaign 컨트롤 패널 **> 시스템을 선택합니다**.
 1. 시스템 속성 대화 상자에서 **고급** 탭을 클릭한 다음 **환경 변수를 클릭합니다**.
 1. 환경 변수 대화 상자의 시스템 변수에서 새로 만들기를 **클릭합니다**.
 1. 새 시스템 변수 대화 상자의 **변수 이름** 상자에 *[applicationName]*_PATH 형식을 사용하는 이름을입력합니다.
@@ -937,7 +937,7 @@ Microsoft Spy++를 사용하여 기본 응용 프로그램에서 창 요소 속�
 
 #### XML 파일 {#xml-files}
 
-AEM Forms에는 파일 이름 확장명이 .txt인 모든 파일을 처리하기 위해 PDF 생성 서비스가 메모장을 사용하는 샘플 XML 파일이 포함되어 있습니다. 이 코드는 이 섹션에 포함되어 있습니다. 또한 이 섹션에 설명된 다른 수정 사항을 수행해야 합니다.
+AEM Forms에는 파일 확장명이 .txt인 파일을 처리하기 위해 메모장을 사용하는 PDF 생성 서비스가 사용되는 샘플 파일이 포함되어 있습니다. 이 코드는 이 섹션에 포함되어 있습니다. 또한 이 섹션에 설명된 다른 수정 사항을 수행해야 합니다.
 
 #### 추가 대화 상자 XML 파일 {#additional-dialog-xml-file}
 
