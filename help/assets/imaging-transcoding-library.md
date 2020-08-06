@@ -1,6 +1,6 @@
 ---
 title: 이미징 코드 변환 라이브러리
-description: 인코딩, 트랜스코딩, 이미지 리샘플링, 이미지 크기 조정 등 핵심 이미지 처리 기능을 수행할 수 있는 이미지 처리 솔루션인 Adobe의 이미징 트랜스코딩 라이브러리를 구성 및 사용하는 방법에 대해 알아보십시오.
+description: 인코딩, 트랜스코딩, 이미지 리샘플링, 이미지 크기 조정 등 핵심 이미지 처리 기능을 수행할 수 있는 이미지 처리 솔루션인 Adobe의 이미징 트랜스코딩 라이브러리를 구성 및 사용하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 65f45bdb34279f5834c0466457101ca2f309d5f1
@@ -77,7 +77,7 @@ ITL 처리를 구성하려면 구성 파일을 만들고 워크플로를 업데�
 
 라이브러리를 구성하려면 다음 단계를 사용하여 라이브러리를 나타내는 .conf 파일을 만듭니다. 관리자 또는 루트 권한이 필요합니다.
 
-1. 소프트웨어 배포에서 [이미징 트랜스코딩 라이브러리 패키지를 다운로드하고](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) 패키지 관리자를 사용하여 설치합니다. 패키지는 AEM 6.5와 호환됩니다.
+1. 소프트웨어 배포에서 [이미징 트랜스코딩 라이브러리 패키지를 다운로드하고](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) 패키지 관리자를 사용하여 설치합니다. 그 소포는 AEM 6.5와 호환된다.
 
 1. 의 번들 ID에 대해 알아보려면 웹 콘솔 `com.day.cq.dam.cq-dam-switchengine`에 로그인하고 **[!UICONTROL OSGi > 번들을 누릅니다]**. 또는 번들 콘솔을 열려면 `https://[aem_server:[port]/system/console/bundles/` URL에 액세스하십시오. 번들 `com.day.cq.dam.cq-dam-switchengine` 및 해당 ID를 찾습니다.
 
