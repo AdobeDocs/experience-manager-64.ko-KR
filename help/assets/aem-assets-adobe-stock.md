@@ -5,8 +5,8 @@ contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 798fe016f1a1e27cdbb9737709d1f5ea9ef722c9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1112'
+ht-degree: 3%
 
 ---
 
@@ -31,12 +31,12 @@ ht-degree: 0%
 
 ### Create an IMS configuration {#create-an-ims-configuration}
 
-1. 사용자 [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 도구]** > **[!UICONTROL 보안]** > **[!UICONTROL Adobe IMS 구성]**&#x200B;으로 이동합니다. 만들기 **[!UICONTROL 를]** 클릭하고 **[!UICONTROL 클라우드 솔루션]** > **[!UICONTROL Adobe Stock을 선택합니다]**.
+1. In [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. 만들기 **[!UICONTROL 를]** 클릭하고 **[!UICONTROL 클라우드 솔루션]** > **[!UICONTROL Adobe Stock을 선택합니다]**.
 1. 기존 인증서를 재사용하거나 새 인증서 **[!UICONTROL 만들기를 선택합니다]**.
 1. **[!UICONTROL 인증서 만들기]**&#x200B;를 클릭합니다. 생성된 공개 키를 다운로드합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
-1. 다운로드한 공개 키를 [!DNL Adobe Developer Console] 서비스 계정에 추가합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다. Adobe [!UICONTROL IMS 기술 계정 구성] 화면을 열어 값을 바로 제공할 수 있습니다.
-1. Adobe [Developer Console에 액세스합니다](https://console.adobe.io). 통합이 필요한 조직에 대한 관리자 권한이 계정에 있는지 확인합니다.
-1. 새 프로젝트 **[!UICONTROL 만들기를]** 클릭하고 **[!UICONTROL API 추가를 클릭합니다]**. 사용 가능한 API 목록에서 **[!UICONTROL Adobe]** Stock을 [!UICONTROL 선택합니다]. OAUTH [!UICONTROL 2.0 Web을 선택합니다]. 표시된 다양한 값을 구성하고 복사합니다.
+1. 다운로드한 공개 키를 [!DNL Adobe Developer Console] 서비스 계정에 추가합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다. IMS [!UICONTROL 기술 계정 구성] 화면을 열어 값을 바로 제공할 수 있습니다.
+1. Adobe 개발자 [콘솔에 액세스합니다](https://console.adobe.io). 통합이 필요한 조직에 대한 관리자 권한이 계정에 있는지 확인합니다.
+1. 새 프로젝트 **[!UICONTROL 만들기를]** 클릭하고 **[!UICONTROL API 추가를 클릭합니다]**. 사용 가능한 API 목록에서 **[!UICONTROL Adobe Stock]** 를 [!UICONTROL 선택합니다]. OAUTH [!UICONTROL 2.0 Web을 선택합니다]. 표시된 다양한 값을 구성하고 복사합니다.
 1. 제목, 권한 부여 서버 [!DNL Experience Manager] 라는 필드 **[!UICONTROL 에]** API 키 **[!UICONTROL ,]** API Client Secret **[!UICONTROL , 및 Facebook Payload라는 값을]**********&#x200B;입력합니다. 이러한 값에 대한 자세한 내용은 [JWT 인증 빠른 시작](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)을 참조하십시오.
 
 <!-- TBD: Update the URL when the new URL is available. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
@@ -44,15 +44,15 @@ ht-degree: 0%
 
 ### 구성 [!DNL Adobe Stock] 을 [!DNL Experience Manager] {#create-adobe-stock-configuration-in-aem}
 
-1. 사용자 [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 도구]** > Cloud Service **** > **[!UICONTROL Adobe Stock으로]**&#x200B;이동합니다.
+1. 사용자 [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 도구]** > Cloud Services **** > **[!UICONTROL Adobe Stock으로 이동합니다]**.
 1. 만들기 **[!UICONTROL 를]** 클릭하여 구성을 만들고 기존 IMS 구성에 연결합니다. 환경 매개 변수 `PROD` 로 선택합니다.
 1. 라이센스 **[!UICONTROL 자산 경로]** 필드에서 위치를 그대로 두십시오. 자산을 저장할 위치를 변경하지 [!DNL Adobe Stock] 마십시오.
-1. 필요한 모든 속성을 추가하여 작성을 완료합니다. Click **[!UICONTROL Save &amp; Close]**.
+1. 필요한 모든 속성을 추가하여 작성을 완료합니다. **[!UICONTROL 저장 후 닫기]**&#x200B;를 클릭합니다.
 1. 자산에 라이선스를 부여할 수 있는 사용자 또는 그룹을 추가합니다. [!DNL Experience Manager]
 
 >[!NOTE]
 >
->구성이 여러 개 [!DNL Adobe Stock] 있는 경우 사용자 환경 설정 패널에서 원하는 구성을 선택합니다(AEM ******[!UICONTROL > 사용자 아이콘]** > **[!UICONTROL 사용자 환경 설정]** > Stock ****&#x200B;구성).
+>구성이 여러 개 있는 경우 [사용자 환경 설정] 패널( [!DNL Adobe Stock] AEM **[!UICONTROL >]** 사용자 아이콘 **[!UICONTROL >]** 사용자 환경 설정 **[!UICONTROL > Stock 구성]** ****)에서 원하는 구성을 선택합니다.
 
 ## 자산 사용 및 [!DNL Adobe Stock] 관리 [!DNL Experience Manager] {#usemanage}
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 사용자 [!DNL Experience Manager] 는 및 모두에서 자산을 검색할 수 [!DNL Experience Manager] 있습니다 [!DNL Adobe Stock]. 검색 위치가 다음으로 제한되지 않으면 [!DNL Adobe Stock]검색 결과 [!DNL Experience Manager] 가 표시되고 [!DNL Adobe Stock] 표시됩니다.
 
-* 자산을 검색하려면 탐색 [!DNL Adobe Stock] > 자산 **[!UICONTROL >]** Adobe Stock **** 검색 **[!UICONTROL 을]**&#x200B;클릭합니다.
+* 자산을 검색하려면 [!DNL Adobe Stock] 탐색 **[!UICONTROL >]** 자산 **** > Adobe Stock ****&#x200B;검색을 클릭합니다.
 
 * 여러 [!DNL Adobe Stock] 가지 [!DNL Experience Manager Assets]에서 자산을 검색하려면 search_ ![icon을 클릭합니다](assets/search_icon.png).
 
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 사용자는 기업 계획의 할당량을 사용하여 [!DNL Adobe Stock] 자산에 대한 라이선스를 부여할 수 [!DNL Adobe Stock] 있습니다. 에셋에 라이선스를 부여하면 워터마크 없이 저장되며 에서 검색하고 사용할 수 있습니다 [!DNL Experience Manager Assets].
 
-![Experience Manager 에셋에 Adobe Stock 에셋의 라이선스를 부여하고 저장하는 대화 상자](assets/aem-stock_licenseandsave.jpg)
+![Experience Manager 자산에 Adobe Stock 에셋의 라이선스를 부여하고 저장하는 대화 상자](assets/aem-stock_licenseandsave.jpg)
 
 *그림: 에셋에 라이선스를 부여하고 저장할 수 있는 대화[!DNL Adobe Stock]상자[!DNL Experience Manager Assets].*
 
@@ -122,7 +122,7 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
->* [Experience Manager 에셋과 함께 Adobe Stock 에셋을 사용하는 방법에 대한 비디오 자습서](https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
+>* [Experience Manager 자산에 Adobe Stock 에셋을 사용하는 방법에 대한 비디오 자습서](https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
 >* [Adobe Stock 엔터프라이즈 플랜 도움말](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
 >* [Adobe Stock FAQ](https://helpx.adobe.com/stock/faq.html)
 
