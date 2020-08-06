@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: 13e1da76d72277687f35d783de6d887ab7c1b52d
 workflow-type: tm+mt
 source-wordcount: '441'
-ht-degree: 7%
+ht-degree: 13%
 
 ---
 
 
-# Configuring your Page for Bulk Editing of Page Properties {#configuring-your-page-for-bulk-editing-of-page-properties}
+# 페이지 속성의 벌크 편집을 위한 페이지 구성 {#configuring-your-page-for-bulk-editing-of-page-properties}
 
 [페이지 속성의](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) 벌크 편집을 사용하면 여러 페이지의 속성을 한 번에 편집할 수 있습니다.
 
@@ -36,6 +36,7 @@ ht-degree: 7%
 >* 클래식 UI에서는 사용할 수 없습니다.
 >* Live Copy의 페이지에는 사용할 수 없습니다.
 >* 동일한 리소스 유형의 페이지만 사용할 수 있습니다.
+
 >
 
 
@@ -56,13 +57,14 @@ ht-degree: 7%
 >* `/libs/granite/ui/components/foundation/form/datepicker`
 >* `/libs/granite/ui/components/foundation/form/pathbrowser`
 >* `/libs/granite/ui/components/foundation/form/checkbox`
+
 >
 
 
 
 필드는 페이지 구성 요소에서 사용할 수 있습니다(템플릿은&#x200B;*아님* ).
 
-1. CRXDE Lite(또는 상응하는 방법)를 사용하여 페이지 구성 요소를 엽니다.
+1. CRXDE Lite(또는 상응하는 방법)을 사용하여 페이지 구성 요소를 엽니다.
 
    예를 들어,`/apps/core/wcm/components/page/v1/page`
 
@@ -76,6 +78,7 @@ ht-degree: 7%
    * **이름**: `allowBulkEdit`
    * **유형**: `Boolean`
    * **값**: `true`
+
    예를 들어 표준 페이지 [기반 구성 요소의 경우](/help/sites-authoring/default-components-foundation.md):
 
    `/libs/foundation/components/page`
