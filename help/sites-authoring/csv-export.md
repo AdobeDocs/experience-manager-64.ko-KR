@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d4473758-674a-42d6-923a-b536f7f9c1f7
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 82%
 
 ---
 
@@ -37,7 +40,7 @@ CSV 내보내기 만들기 마법사를 사용하여 다음을 선택할 수 있
       * 게시됨
    * 분석
 
-      * 페이지 조회수
+      * 페이지 보기 수
       * 고유 방문자 수
       * 페이지 시간
 
