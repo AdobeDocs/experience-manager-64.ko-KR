@@ -1,8 +1,8 @@
 ---
-title: 콘텐츠 서비스용 JSON 내보내기
-seo-title: 콘텐츠 서비스용 JSON 내보내기
-description: 'AEM Content Services는 웹 페이지에 중점을 둔 수준에서 AEM 내/에서 컨텐츠 설명 및 전달을 일반화하기 위해 고안되었습니다. 모든 클라이언트가 사용할 수 있는 표준화된 방법을 사용하여 기존 AEM 웹 페이지가 아닌 채널에 컨텐츠를 배달합니다. '
-seo-description: 'AEM Content Services는 웹 페이지에 중점을 둔 수준에서 AEM 내/에서 컨텐츠 설명 및 전달을 일반화하기 위해 고안되었습니다. 모든 클라이언트가 사용할 수 있는 표준화된 방법을 사용하여 기존 AEM 웹 페이지가 아닌 채널에 컨텐츠를 배달합니다. '
+title: 컨텐츠 서비스용 JSON 익스포터
+seo-title: 컨텐츠 서비스용 JSON 익스포터
+description: 'AEM Content Services는 웹 페이지에 초점을 두지 않고 AEM에서 컨텐츠 설명 및 게재를 일반화하기 위해 디자인되었습니다. 모든 클라이언트가 사용할 수 있는 표준화된 방법을 사용하여 기존 AEM 웹 페이지가 아닌 채널에 컨텐츠를 게재할 수 있습니다. '
+seo-description: 'AEM Content Services는 웹 페이지에 초점을 두지 않고 AEM에서 컨텐츠 설명 및 게재를 일반화하기 위해 디자인되었습니다. 모든 클라이언트가 사용할 수 있는 표준화된 방법을 사용하여 기존 AEM 웹 페이지가 아닌 채널에 컨텐츠를 게재할 수 있습니다. '
 uuid: be6457b1-fa9c-4f3b-b219-01a4afc239e7
 contentOwner: User
 content-type: reference
@@ -13,22 +13,22 @@ translation-type: tm+mt
 source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
 workflow-type: tm+mt
 source-wordcount: '495'
-ht-degree: 4%
+ht-degree: 42%
 
 ---
 
 
-# 콘텐츠 서비스용 JSON 내보내기{#json-exporter-for-content-services}
+# 컨텐츠 서비스용 JSON 익스포터{#json-exporter-for-content-services}
 
-AEM Content Services는 웹 페이지에 중점을 둔 수준에서 AEM 내/에서 컨텐츠 설명 및 전달을 일반화하기 위해 고안되었습니다.
+AEM Content Services는 웹 페이지에 초점을 두지 않고 AEM에서 컨텐츠 설명 및 게재를 일반화하기 위해 디자인되었습니다.
 
-모든 클라이언트가 사용할 수 있는 표준화된 방법을 사용하여 기존 AEM 웹 페이지가 아닌 채널에 컨텐츠를 배달합니다. 이러한 채널에는 다음이 포함될 수 있습니다.
+모든 클라이언트가 사용할 수 있는 표준화된 방법을 사용하여 기존 AEM 웹 페이지가 아닌 채널에 컨텐츠를 게재할 수 있습니다. 이러한 채널에는 다음과 같은 것들이 포함될 수 있습니다.
 
-* [단일 페이지 애플리케이션](spa-walkthrough.md)
+* [SPA(Single Page Applications)](spa-walkthrough.md)
 * 기본 모바일 애플리케이션
-* AEM 외부에 있는 기타 채널 및 터치 포인트
+* AEM 외부에 있는 기타 채널 및 터치포인트
 
-구조화된 콘텐츠를 사용하는 콘텐츠 조각을 사용하면 JSON 내보내기 도구를 사용하여 (y) AEM 페이지의 콘텐츠를 JSON 데이터 모델 형식으로 전달하여 콘텐츠 서비스를 제공할 수 있습니다. 그런 다음 사용자 자신의 응용 프로그램에서 사용할 수 있습니다.
+구조화된 컨텐츠를 사용하는 컨텐츠 조각을 사용하면 JSON 내보내기 도구를 사용하여 (y) AEM 페이지의 컨텐츠를 JSON 데이터 모델 형식으로 전달하여 컨텐츠 서비스를 제공할 수 있습니다. 그런 다음 사용자 자신의 응용 프로그램에서 사용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ AEM 내에서 선택기 `model` 및 `.json` 확장을 사용하여 배달을 수
 
    * [Sling Models - 130부터 리소스 유형과 모델 클래스 연결](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 
-* JSON이 있는 AEM:
+* AEM(JSON 포함):
 
    * [JSON 형식으로 페이지 정보 얻기](/help/sites-developing/pageinfo.md)
 
