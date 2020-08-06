@@ -1,8 +1,8 @@
 ---
 title: 통신 만들기
 seo-title: 통신 만들기
-description: 편지 템플릿을 만든 후 데이터, 콘텐츠 및 첨부 파일을 관리하여 AEM Forms에서 편지를 만드는 데 사용할 수 있습니다.
-seo-description: 편지 템플릿을 만든 후 데이터, 콘텐츠 및 첨부 파일을 관리하여 AEM Forms에서 편지를 만드는 데 사용할 수 있습니다.
+description: 편지 템플릿을 만든 후 데이터, 콘텐트 및 첨부 파일을 관리하여 AEM Forms에서 편지를 보내는 데 사용할 수 있습니다.
+seo-description: 편지 템플릿을 만든 후 데이터, 콘텐트 및 첨부 파일을 관리하여 AEM Forms에서 편지를 보내는 데 사용할 수 있습니다.
 uuid: 72c06a81-65c8-4ddd-964d-91f0256a8f79
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
@@ -52,13 +52,13 @@ ht-degree: 0%
 
 1. 문자 HTML 미리 보기(모바일 양식 미리 보기)가 기본적으로 데이터 탭에 초점이 맞춰져 열립니다.
 
-   모바일 양식과 지원되는 기능에 대한 자세한 내용은 모바일 양식과 PDF 양식 [의 차별화된 기능을 참조하십시오](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html).
+   모바일 양식과 지원되는 기능에 대한 자세한 내용은 모바일 Forms과 PDF forms [의 차별화된 기능을 참조하십시오](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html).
 
    세 개의 탭이 있습니다. 데이터, 컨텐츠 및 첨부 파일. 데이터 요소(자리 표시자 변수 및 레이아웃 필드)가 없는 경우 문자가 컨텐츠 탭이 표시된 상태로 바로 열립니다. 첨부 파일 탭은 첨부 파일이 있거나 라이브러리 액세스 권한이 활성화된 경우에만 사용할 수 있습니다.
 
    >[!NOTE]
 
-   >문자 미리 보기의 HTML 또는 PDF 변환 모드 간 전환에 대한 자세한 내용은 문자 변환 모드 [변경을 참조하십시오](#changerenditionmode). 서신 관리 및 AEM의 PDF 지원에 대한 자세한 내용은 NPAPI 브라우저 플러그인 [중단과 그 영향](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) 및 [PDF 양식을 HTML5 양식에 대한 지원을 참조하십시오](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html).
+   >문자 미리 보기의 HTML 또는 PDF 변환 모드 간 전환에 대한 자세한 내용은 문자 변환 모드 [변경을 참조하십시오](#changerenditionmode). 통신 관리 및 AEM의 PDF 지원에 대한 자세한 내용은 NPAPI 브라우저 플러그인 [중단 및 HTML5 Forms에 대한 영향](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) 및 [PDF forms을 참조하십시오](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html).
 
 ### Enter data {#enterdata}
 
@@ -170,7 +170,7 @@ ht-degree: 0%
    * **텍스트채워지지** 않은 고유한 자리 표시자 변수와 텍스트 모듈에 포함된 데이터 사전 요소의 합을 표시합니다.
    * **조건** 조건에 포함된 채워지지 않은 고유한 조건 변수와 결과 모듈에 포함된 변수의 합계를 표시합니다.
    * **목록** 목록에 할당된 모듈에 포함된 모든 고유 채워지지 않은 변수의 합계를 표시합니다.
-   * **대상 영역** 대상 영역에 할당된 모듈에 포함된 채워지지 않은 모든 고유 변수의 합계를 표시합니다.
+   * **Target 영역** 대상 영역에 할당된 모듈에 포함된 모든 고유 채워지지 않은 변수의 합계를 표시합니다.
 
    기본값이 있는 변수와 관련하여 다음 사항을 참고하십시오.
 
@@ -259,7 +259,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >Mozilla Firefox 및 HTML 변환 유형을 사용하는 경우 편지를 분리된 PDF로 미리 보려면 Acrobat 플러그인이 아닌 기본 브라우저 플러그인을 사용해야 합니다. 기본 브라우저 플러그인을 선택하려면 Mozilla Firefox의 설정으로 이동하고 컨텐츠 유형 PDF의 경우 Firefox에서 미리 보기를 선택합니다.
+   >Mozilla Firefox 및 HTML 변환 유형을 사용하는 경우 편지를 병합된 PDF로 미리 보려면 기본 브라우저 플러그인을 사용해야 하며 Acrobat 플러그인은 사용하지 않아야 합니다. 기본 브라우저 플러그인을 선택하려면 Mozilla Firefox의 설정으로 이동하고 컨텐츠 유형 PDF의 경우 Firefox에서 미리 보기를 선택합니다.
 
 1. 병합된 PDF 미리 보기가 만족스러운 경우 **제출을** 눌러 편지를 제출합니다. 또는 문자를 변경하려면 미리 보기 **종료** 를 눌러 편지 작성의 UI 미리 보기로 돌아가 문자를 변경합니다. 제출을 누르면 Publish 인스턴스에서 Letter 인스턴스 관리 구성이 활성화되면 전송 편지 인스턴스가 생성됩니다.
 
@@ -269,7 +269,7 @@ ht-degree: 0%
 
    필요한 변경 사항을 적용한 후 HTML5 미리 보기에서 편지를 제출하거나 미리 보기를 다시 눌러 병합된 PDF 출력을 검토할 수 있습니다.
 
-   HTML5 양식과 PDF 양식 간의 차이점에 대한 자세한 내용은 HTML5 양식과 PDF 양식 [의 차이점을 참조하십시오](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md).
+   HTML5 양식과 PDF forms 간의 차이점에 대한 자세한 내용은 HTML5 양식과 PDF forms [의 차이점을 참조하십시오](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
 ## 초안 및 서신 인스턴스 저장 {#savingdrafts}
 
@@ -295,7 +295,7 @@ Letter 인스턴스는 게시 인스턴스에 저장되고 작성자 인스턴�
 
 ### 원격 저장 {#remote-save}
 
-이 옵션은 일반적으로 회사 방화벽 외부에 있는 게시 인스턴스의 사용자 데이터를 저장할 수 있다는 우려 사항이 있는 사람에게 적용됩니다. 원격 저장을 활성화하면 문자 인스턴스가 게시 인스턴스에 저장되지 않지만 LiveCycle Client SDK 구성을 통해 지정된 처리 작성자에 원격으로 저장됩니다.
+이 옵션은 일반적으로 회사 방화벽 외부에 있는 게시 인스턴스의 사용자 데이터를 저장할 수 있다는 우려 사항이 있는 사람에게 적용됩니다. 원격 저장을 활성화하면 편지 인스턴스가 게시 인스턴스에 저장되지 않지만 LiveCycle 클라이언트 SDK 구성을 통해 지정된 처리 작성자에 원격으로 저장됩니다.
 
 #### 원격 저장 사용 {#enable-remote-save}
 
@@ -309,11 +309,11 @@ Letter 인스턴스는 게시 인스턴스에 저장되고 작성자 인스턴�
 
    ![Adobe Experience Manager 웹 콘솔 구성](assets/2configmanager.png)
 
-1. 이 페이지에서 Adobe LiveCycle Client SDK 구성을 찾아 클릭하여 확장합니다.
+1. 이 페이지에서 Adobe LiveCycle 클라이언트 SDK 구성을 찾아 클릭하여 확장합니다.
 
 1. 처리 서버 URL에서 LiveCycle 서버 이름을 입력하고 로그인 정보를 제공한 다음 저장을 **클릭합니다**.
 
-   ![LiveCycle 서버의 이름 및 로그인 정보 입력](assets/3configmanager.png)
+   ![LiveCycle 서버의 이름 및 로그인 정보를 입력합니다.](assets/3configmanager.png)
 
 1. 필요한 경우 서버에 액세스할 사용자 이름과 암호를 설정합니다.
 
@@ -326,7 +326,7 @@ Letter 인스턴스는 게시 인스턴스에 저장되고 작성자 인스턴�
 
 ## 문자 미리 보기 변환 모드: 모바일 양식 미리 보기 및 PDF 미리 보기 {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
 
-AEM Forms Correspondence Management는 편지 작성 UI에 HTML로 표시합니다. 하지만 통신 관리에서는 HTML 미리 보기 대신 PDF 미리 보기로 되돌리기를 계속 지원합니다. 미리 보기의 HTML과 PDF 모드 간 전환에 대한 자세한 내용은 문자 [의 변환 모드 변경을 참조하십시오](#changerenditionmode).
+AEM Forms 통신 관리는 편지 작성 UI에 HTML로 편지를 표시합니다. 하지만 통신 관리에서는 HTML 미리 보기 대신 PDF 미리 보기로 되돌리기를 계속 지원합니다. 미리 보기의 HTML과 PDF 모드 간 전환에 대한 자세한 내용은 문자 [의 변환 모드 변경을 참조하십시오](#changerenditionmode).
 
 다음은 HTML 및 PDF 미리 보기에서 사용할 수 있는 이점과 기능입니다.
 
@@ -342,7 +342,7 @@ AEM Forms Correspondence Management는 편지 작성 UI에 HTML로 표시합니�
 * **페이지 나누기**: PDF 미리 보기에서는 문자에서 페이지 나누기가 출력물에 미치는 영향을 정확하게 확인할 수 있습니다.
 * **최종 미리 보기**: PDF 미리 보기에서는 문자가 출력물에 표시될 때 정확한 서식과 모양을 확인할 수 있습니다.
 
-PDF 양식의 스크립팅 지원에 대한 자세한 내용은 스크립팅 [지원을 참조하십시오](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html).
+PDF forms의 스크립팅 지원에 대한 자세한 내용은 스크립팅 [지원을 참조하십시오](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html).
 
 HTML5 양식의 스크립팅 지원에 대한 자세한 내용은 [HTML5 양식에 대한 스크립팅 지원을 참조하십시오](/help/forms/using/scripting-support.md).
 
