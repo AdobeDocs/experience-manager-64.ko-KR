@@ -1,8 +1,8 @@
 ---
 title: 완벽한 기능을 갖춘 웹 사이트(JSP) 만들기
 seo-title: 완벽한 기능을 갖춘 웹 사이트(JSP) 만들기
-description: 이 자습서에서는 AEM을 사용하여 완벽한 기능을 갖춘 웹 사이트를 만들 수 있습니다
-seo-description: 이 자습서에서는 AEM을 사용하여 완벽한 기능을 갖춘 웹 사이트를 만들 수 있습니다
+description: 이 자습서에서는 AEM에서 완벽한 기능을 갖춘 웹 사이트를 만들 수 있습니다
+seo-description: 이 자습서에서는 AEM에서 완벽한 기능을 갖춘 웹 사이트를 만들 수 있습니다
 uuid: bb8d4efd-7631-4cc5-8084-b03c6aabdef3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -22,14 +22,14 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->이 문서에서는 JSP를 사용하여 클래식 UI를 기반으로 웹 사이트를 만드는 방법에 대해 설명합니다. Adobe에서는 AEM Sites 개발 시작 문서에 자세히 설명된 대로 웹 사이트에 대한 최신 AEM 기술 [을 활용하는 것이 좋습니다](/help/sites-developing/getting-started.md).
+>이 문서에서는 JSP를 사용하여 클래식 UI를 기반으로 웹 사이트를 만드는 방법에 대해 설명합니다. Adobe은 AEM Sites 개발 시작 문서에 자세히 설명된 대로 웹 사이트에 대한 최신 AEM 기술 [을 활용할 것을 권장합니다](/help/sites-developing/getting-started.md).
 
-이 자습서에서는 Adobe Experience Manager(AEM)가 포함된 완벽한 기능을 갖춘 웹 사이트를 만들 수 있습니다. 웹 사이트는 일반 웹 사이트를 기반으로 하며 주로 웹 개발자를 대상으로 합니다. 모든 개발은 작성자 환경 내에서 수행됩니다.
+이 자습서에서는 Adobe Experience Manager(AEM)을 사용하여 모든 기능을 갖춘 웹 사이트를 만들 수 있습니다. 웹 사이트는 일반 웹 사이트를 기반으로 하며 주로 웹 개발자를 대상으로 합니다. 모든 개발은 작성자 환경 내에서 수행됩니다.
 
 이 자습서에서는 다음 방법을 설명합니다.
 
-1. AEM을 설치합니다.
-1. CRXDE Lite(개발 환경)에 액세스합니다.
+1. AEM 설치
+1. 액세스 CRXDE Lite(개발 환경).
 1. CRXDE Lite에서 프로젝트 구조를 설정합니다.
 1. 컨텐츠 페이지를 만드는 기준으로 사용되는 템플릿, 구성 요소 및 스크립트를 만듭니다.
 1. 웹 사이트의 루트 페이지를 만든 다음 컨텐츠 페이지를 만듭니다.
@@ -50,7 +50,7 @@ ht-degree: 3%
 
 **최종 결과 다운로드**
 
-연습을 수행하지 않고 튜토리얼을 따라 하려면 website-1.0.zip을 다운로드합니다. 이 파일은 이 자습서의 결과를 포함하는 AEM 콘텐츠 패키지입니다. Package [Manager](/help/sites-administering/package-manager.md) 를 사용하여 작성자 인스턴스에 패키지를 설치합니다.
+연습을 수행하지 않고 튜토리얼을 따라 하려면 website-1.0.zip을 다운로드합니다. 이 파일은 이 자습서의 결과를 포함하는 AEM 컨텐츠 패키지입니다. Package [Manager](/help/sites-administering/package-manager.md) 를 사용하여 작성자 인스턴스에 패키지를 설치합니다.
 
 >[!NOTE]
 >이 패키지를 설치하면 이 자습서를 사용하여 만든 제작 인스턴스의 모든 리소스를 덮어씁니다.
@@ -61,7 +61,7 @@ ht-degree: 3%
 
 ## Installing Adobe Experience Manager {#installing-adobe-experience-manager}
 
-웹 사이트 개발을 위한 AEM 인스턴스를 설치하려면 작성 및 게시 인스턴스와 함께 [배포 환경 설정 지침에](/help/sites-deploying/deploy.md#author-and-publish-installs)따르거나 [일반 설치를 수행하십시오](/help/sites-deploying/deploy.md#default-local-install). 일반 설치에는 AEM Quickstart JAR 파일을 다운로드하고, license.properties 파일을 JAR 파일과 동일한 디렉토리에 배치하고, JAR 파일을 두 번 클릭해야 합니다.
+웹 사이트 개발을 위한 AEM 인스턴스를 설치하려면 작성자 및 게시 인스턴스와 함께 [배포 환경 설정 지침에](/help/sites-deploying/deploy.md#author-and-publish-installs)따르거나 [일반 설치를 수행합니다](/help/sites-deploying/deploy.md#default-local-install). 일반 설치에는 AEM Quickstart JAR 파일을 다운로드하고, license.properties 파일을 JAR 파일과 동일한 디렉토리에 배치하고, JAR 파일을 두 번 클릭해야 합니다.
 
 AEM을 설치한 후 시작 페이지의 CRXDE Lite 링크를 클릭하여 CRXDE Lite 개발 환경에 액세스합니다.
 
@@ -69,13 +69,13 @@ AEM을 설치한 후 시작 페이지의 CRXDE Lite 링크를 클릭하여 CRXDE
 
 >[!NOTE]
 >
->기본 포트를 사용하여 로컬로 설치되는 AEM 작성 인스턴스에 대한 CRXDE Lite의 URL은 http://localhost:4502/crx/de/ [입니다](http://localhost:4502/crx/de/).
+>기본 포트를 사용하여 로컬로 설치되는 AEM 제작 인스턴스의 CRXDE Lite URL은 http://localhost:4502/crx/de/ [입니다](http://localhost:4502/crx/de/).
 
 ## CRXDE Lite에서 프로젝트 구조 설정 {#setting-up-the-project-structure-in-crxde-lite}
 
-CRXDE Lite를 사용하여 저장소에서 mywebsite 애플리케이션 구조를 생성합니다.
+CRXDE Lite을 사용하여 저장소에서 mywebsite 응용 프로그램 구조를 만듭니다.
 
-1. CRXDE Lite의 왼쪽에 있는 트리에서 **`/apps`** 폴더를 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 만들기 > 폴더 만들기를 클릭합니다]**. [폴더 **만들기** ] 대화 상자에서 폴더 이름 `mywebsite` 을 입력하고 **[!UICONTROL 확인]을 클릭합니다**.
+1. CRXDE Lite의 왼쪽에 있는 트리에서 폴더를 마우스 오른쪽 단추로 클릭하고 만들기 > 폴더 **`/apps`** 만들기를 클릭합니다 ****. [폴더 **만들기** ] 대화 상자에서 폴더 이름 `mywebsite` 을 입력하고 **[!UICONTROL 확인]을 클릭합니다**.
 1. 폴더를 마우스 오른쪽 단추로 `/apps/mywebsite` 클릭하고 **[!UICONTROL 만들기 > 폴더 만들기를 클릭합니다]**. [폴더 **[!UICONTROL 만들기]** ] 대화 상자에서 폴더 이름 `components` 을 입력하고 [ **[!UICONTROL 확인]을 클릭합니다]**.
 1. 폴더를 마우스 오른쪽 단추로 `/apps/mywebsite` 클릭하고 **[!UICONTROL 만들기 > 폴더 만들기를 클릭합니다]**. [폴더 **[!UICONTROL 만들기]** ] 대화 상자에서 폴더 이름 `templates` 을 입력하고 [ **[!UICONTROL 확인]을 클릭합니다]**.
 
@@ -123,7 +123,7 @@ CRXDE Lite를 사용하여 저장소에서 mywebsite 애플리케이션 구조�
 
 템플릿은 새 페이지의 기본 컨텐츠를 정의합니다. 복잡한 웹 사이트에서는 여러 가지 템플릿을 사용하여 사이트에서 다양한 유형의 페이지를 만들 수 있습니다. 이 연습에서는 모든 페이지가 하나의 간단한 템플릿을 기반으로 합니다.
 
-1. CRXDE Lite의 폴더 트리에서 마우스 오른쪽 버튼을 클릭하고 만들기 > 템플릿 `/apps/mywebsite/templates` 만들기를 클릭합니다 ****.
+1. CRXDE Lite의 폴더 트리에서 마우스 오른쪽 단추를 클릭하고 만들기 > 템플릿 `/apps/mywebsite/templates` 만들기를 클릭합니다 ****.
 
 1. 템플릿 만들기 대화 상자에서 다음 값을 입력한 다음 **[!UICONTROL 다음을 클릭합니다]**.
 
@@ -154,7 +154,7 @@ CRXDE Lite를 사용하여 저장소에서 mywebsite 애플리케이션 구조�
 
 컨텐츠를 정의하고 콘텐츠 페이지 템플릿을 사용하는 페이지를 렌더링하는 *구성* 요소를 만듭니다. 구성 요소의 위치는 컨텐츠 페이지 템플릿의 리소스 유형 속성 값과 일치해야 합니다.
 
-1. CRXDE Lite에서 마우스 오른쪽 버튼을 클릭하고 `/apps/mywebsite/components` 만들기 > 구성 요소를 클릭합니다 ****.
+1. CRXDE Lite에서 마우스 오른쪽 단추 `/apps/mywebsite/components` 를 클릭하고 **[!UICONTROL 만들기 > 구성 요소를 클릭합니다]**.
 1. 구성 요소 **[!UICONTROL 만들기]** 대화 상자에서 다음 속성 값을 입력합니다.
 
    * **[!UICONTROL 레이블]**: contentpage
@@ -218,7 +218,7 @@ CRXDE Lite를 사용하여 저장소에서 mywebsite 애플리케이션 구조�
 
 이 섹션에서는 모두 컨텐트 페이지 템플릿을 사용하는 다음 페이지를 만듭니다. 내 웹 사이트, 영어, 제품, 서비스 및 고객
 
-1. AEM 시작 페이지(http://localhost:4502/libs/cq/core/content/welcome.html)에서 웹 사이트[를](http://localhost:4502/libs/cq/core/content/welcome.html)클릭합니다.
+1. AEM 시작 페이지(http://localhost:4502/libs/cq/core/content/welcome.html[](http://localhost:4502/libs/cq/core/content/welcome.html))에서 웹 사이트를 클릭합니다.
 
    ![chlimage_1-109](assets/chlimage_1-109.png)
 
@@ -274,7 +274,7 @@ CRXDE Lite를 사용하여 저장소에서 mywebsite 애플리케이션 구조�
 
 ### 컨텐츠 페이지 스크립트 향상 {#enhancing-the-contentpage-script}
 
-이 섹션에서는 AEM 기반 구성 요소 스크립트를 사용하여 컨텐츠 페이지 스크립트를 향상시키고 자체 스크립트를 작성하는 방법을 설명합니다.
+이 섹션에서는 AEM foundation 구성 요소 스크립트를 사용하여 컨텐츠 페이지 스크립트를 향상시키고 자체 스크립트를 작성하는 방법을 설명합니다.
 
 제품 **[!UICONTROL 페이지는]** 다음과 같이 표시됩니다.
 
@@ -325,11 +325,11 @@ CRXDE Lite를 사용하여 저장소에서 mywebsite 애플리케이션 구조�
 
 #### 자신만의 스크립트 사용 {#using-your-own-scripts}
 
-이 섹션에서는 페이지 본문의 일부를 생성하는 여러 스크립트를 만듭니다. 그런 다음 AEM 페이지 구성 요소의 body.jsp 파일을 재정의하기 위해 pagecontent 구성 요소에서 body.jsp 파일을 만듭니다. body.jsp 파일에 페이지 본문의 다른 부분을 생성하는 스크립트를 포함합니다.
+이 섹션에서는 페이지 본문의 일부를 생성하는 여러 스크립트를 만듭니다. 그런 다음 pageContent 구성 요소에서 body.jsp 파일을 만들어 AEM Page 구성 요소의 body.jsp를 재정의합니다. body.jsp 파일에 페이지 본문의 다른 부분을 생성하는 스크립트를 포함합니다.
 
 **팁:** 구성 요소에 구성 요소의 상위 유형에서 파일과 동일한 이름 및 상대 위치를 가진 파일이 포함되어 있으면 *오버레이라고 합니다*.
 
-1. CRXDE Lite에서 다음 `left.jsp` 에서 파일을 만듭니다. `/apps/mywebsite/components/contentpage`
+1. CRXDE Lite에서 다음 `left.jsp` 아래에 파일을 만듭니다 `/apps/mywebsite/components/contentpage`.
 
    1. 노드를 마우스 오른쪽 단추로 `/apps/mywebsite/components/contentpage`클릭한 다음 **[!UICONTROL 만들기]** , 파일 **[!UICONTROL 만들기를 선택합니다]**.
    1. 창에서** 이름** `left.jsp` 을 입력하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
@@ -346,7 +346,7 @@ CRXDE Lite를 사용하여 저장소에서 mywebsite 애플리케이션 구조�
    ```
 
 1. 변경 사항을 저장합니다.
-1. CRXDE Lite에서 다음 `center.jsp` 에서 파일을 만듭니다. `/apps/mywebsite/components/contentpage`
+1. CRXDE Lite에서 다음 `center.jsp` 아래에 파일을 만듭니다 `/apps/mywebsite/components/contentpage`.
 
    1. 노드를 마우스 오른쪽 단추로 `/apps/mywebsite/components/contentpage`클릭하고 만들기 **[!UICONTROL 를]**&#x200B;선택한 다음 파일 **[!UICONTROL 만들기를 선택합니다]**.
    1. 대화 상자에서 이름 `center.jsp` 을 **[!UICONTROL 입력하고]** 확인을 **[!UICONTROL 클릭합니다]**.
@@ -363,7 +363,7 @@ CRXDE Lite를 사용하여 저장소에서 mywebsite 애플리케이션 구조�
    ```
 
 1. 변경 사항을 저장합니다.
-1. CRXDE Lite에서 다음 `right.jsp` 에서 파일을 만듭니다. `/apps/mywebsite/components/contentpage`
+1. CRXDE Lite에서 다음 `right.jsp` 아래에 파일을 만듭니다 `/apps/mywebsite/components/contentpage`.
 
    1. 노드를 마우스 오른쪽 단추로 `/apps/mywebsite/components/contentpage`클릭하고 만들기 **[!UICONTROL 를]**&#x200B;선택한 다음 파일 **[!UICONTROL 만들기를 선택합니다]**.
    1. 대화 상자에서 이름 `right.jsp` 을 **[!UICONTROL 입력하고]** 확인 **[!UICONTROL 을 클릭합니다]**.
@@ -378,7 +378,7 @@ CRXDE Lite를 사용하여 저장소에서 mywebsite 애플리케이션 구조�
    ```
 
 1. 변경 사항을 저장합니다.
-1. CRXDE Lite에서 다음 `body.jsp` 에서 파일을 만듭니다. `/apps/mywebsite/components/contentpage`
+1. CRXDE Lite에서 다음 `body.jsp` 아래에 파일을 만듭니다 `/apps/mywebsite/components/contentpage`.
 1. 파일을 편집하여 기존 컨텐츠 `body.jsp` 를 제거하고 다음 코드로 바꿉니다.
 
    ```java
@@ -415,7 +415,7 @@ CRXDE Lite를 사용하여 저장소에서 mywebsite 애플리케이션 구조�
 
 #### 위쪽 탐색 구성 요소 만들기 {#creating-the-top-navigation-component-1}
 
-1. CRXDE Lite에서 마우스 오른쪽 단추 `/apps/mywebsite/components`를 클릭하고 **[!UICONTROL 만들기]**, 구성 요소 **[!UICONTROL 만들기를 선택합니다]**.
+1. CRXDE Lite에서 마우스 오른쪽 단추 `/apps/mywebsite/components`를 클릭하고 **[!UICONTROL 만들기]**, 구성 요소 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. 구성 요소 **[!UICONTROL 만들기]** 창에서 다음을 입력합니다.
 
    * **[!UICONTROL 레이블]**: `topnav`
@@ -428,7 +428,7 @@ CRXDE Lite를 사용하여 저장소에서 mywebsite 애플리케이션 구조�
 
 하위 페이지에 대한 텍스트 링크를 생성하려면 렌더링 스크립트를 topnav에 추가합니다.
 
-1. CRXDE Lite에서 에서 파일을 `topnav.jsp` 엽니다 `/apps/mywebsite/components/topnav`.
+1. CRXDE Lite에서 파일 `topnav.jsp` 을 엽니다 `/apps/mywebsite/components/topnav`.
 1. 다음 코드를 복사하여 붙여 넣어 해당 코드를 교체합니다.
 
    ```xml
@@ -455,7 +455,7 @@ CRXDE Lite를 사용하여 저장소에서 mywebsite 애플리케이션 구조�
 
 컨텐트 페이지 구성 요소에 상위 탐색을 포함하려면
 
-1. CRXDE Lite에서 아래 `body.jsp` 를 열고 `/apps/mywebsite/components/contentpage`다음을 교체합니다.
+1. CRXDE Lite에서 아래 `body.jsp` 를 열고 `/apps/mywebsite/components/contentpage`바꿉니다.
 
    ```xml
    <div class="topnav">topnav</div>
@@ -500,7 +500,7 @@ CRXDE Lite를 사용하여 저장소에서 mywebsite 애플리케이션 구조�
 
 이 연습에서 Sling은 이러한 URL을 사용자가 만든 /apps/mywebsite/components/contentpage/navimage.png.java 스크립트에 연결합니다.
 
-1. CRXDE Lite에서 앵커 요소의 컨텐츠 `topnav.jsp` `/apps/mywebsite/components/topnav.`찾기 아래의 를 엽니다(14줄).
+1. CRXDE Lite에서 앵커 요소 `topnav.jsp` `/apps/mywebsite/components/topnav.`의 컨텐츠 찾기(14줄)에서 을 엽니다.
 
    ```xml
    <%=child.getTitle() %>
@@ -667,7 +667,7 @@ CRXDE Lite를 사용하여 저장소에서 mywebsite 애플리케이션 구조�
    * **[!UICONTROL 이름]**: product2
    * 내 **[!UICONTROL 웹 사이트 컨텐츠 페이지 템플릿 선택]**
 
-1. CRXDE Lite에서 제품 1 페이지에 대한 설명과 날짜를 설정합니다.
+1. CRXDE Lite에서 제품 1 페이지의 설명 및 날짜를 설정합니다.
 
    1. 노드를 `/content/mywebsite/en/products/product1/jcr:content` 선택합니다.
    1. [ **[!UICONTROL 속성]** ] 탭에서 다음 값을 입력합니다.
@@ -709,7 +709,7 @@ CRXDE Lite를 사용하여 저장소에서 mywebsite 애플리케이션 구조�
 
 listchildren 구성 요소를 만들려면:
 
-1. CRXDE Lite에서 마우스 오른쪽 단추 `/apps/mywebsite/components`를 클릭하고 **[!UICONTROL 만들기]**, 구성 요소 **[!UICONTROL 만들기를 선택합니다]**.
+1. CRXDE Lite에서 마우스 오른쪽 단추 `/apps/mywebsite/components`를 클릭하고 **[!UICONTROL 만들기]**, 구성 요소 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. 대화 상자에서 다음 속성 값을 입력한 다음 **[!UICONTROL 다음을 클릭합니다]**.
 
    * **[!UICONTROL 레이블]**: listchildren.
@@ -722,7 +722,7 @@ listchildren 구성 요소를 만들려면:
 
 listchildren 구성 요소에 대한 스크립트를 개발합니다.
 
-1. CRXDE Lite에서 에서 파일을 `listchildren.jsp` 엽니다 `/apps/mywebsite/components/listchildren`.
+1. CRXDE Lite에서 파일 `listchildren.jsp` 을 엽니다 `/apps/mywebsite/components/listchildren`.
 1. 기본 코드를 다음 코드로 바꿉니다.
 
    ```xml
@@ -802,7 +802,7 @@ listchildren 구성 요소 속성을 구성하는 데 사용되는 대화 상자
 
 컨텐트 페이지 구성 요소에 listchildren 구성 요소를 포함하려면 다음과 같이 하십시오.
 
-1. CRXDE Lite에서 파일을 `left.jsp` 아래 `/apps/mywebsite/components/contentpage` 에서 열고 다음 코드(4줄)를 찾습니다.
+1. CRXDE Lite에서 파일 `left.jsp` 을 `/apps/mywebsite/components/contentpage` 열고 다음 코드(4행)를 찾습니다.
 
    ```xml
    <div>newslist</div>
@@ -867,7 +867,7 @@ listchildren 구성 요소 속성을 구성하는 데 사용되는 대화 상자
 
 이 섹션에서는 홈 페이지에 대한 링크가 있는 로고 이미지를 표시하는 스크립트를 만드는 방법을 설명합니다.
 
-1. CRXDE Lite에서 에서 파일을 `logo.jsp` 엽니다 `/apps/mywebsite/components/logo`.
+1. CRXDE Lite에서 파일 `logo.jsp` 을 엽니다 `/apps/mywebsite/components/logo`.
 1. 다음 코드는 사이트 홈 페이지에 대한 링크를 만들고 로고 이미지에 참조를 추가합니다. 코드를 다음 위치에 `logo.jsp`복사:
 
    ```xml
@@ -1002,7 +1002,7 @@ public class img_GET extends AbstractImageServlet {
 
 #### Content Page 구성 요소에 로고 구성 요소 추가 {#adding-the-logo-component-to-the-contentpage-component}
 
-1. CRXDE Lite에서 `left.jsp` 아래 `/apps/mywebsite/components/contentpage file` 를 열고 다음 코드 줄을 찾습니다.
+1. CRXDE Lite에서 아래 `left.jsp` 를 열고 `/apps/mywebsite/components/contentpage file` 다음 코드 줄을 찾습니다.
 
    ```xml
    <div>logo</div>
@@ -1044,7 +1044,7 @@ public class img_GET extends AbstractImageServlet {
 
 이 섹션에서는 기본 구성 요소 중 하나인 탐색 표시(트레일) 구성 요소를 포함합니다.
 
-1. CRXDE Lite에서 찾아보기를 통해 파일 `/apps/mywebsite/components/contentpage`을 열고 `center.jsp` 교체합니다.
+1. CRXDE Lite에서 찾아보기 `/apps/mywebsite/components/contentpage`에서 파일을 열고 `center.jsp` 바꿉니다.
 
    ```java
    <div>trail</div>
@@ -1065,7 +1065,7 @@ public class img_GET extends AbstractImageServlet {
 
 이 섹션에서는 기본 구성 요소 중 하나인 제목 구성 요소를 포함합니다.
 
-1. CRXDE Lite에서 찾아보기를 통해 파일 `/apps/mywebsite/components/contentpage`을 열고 `center.jsp` 교체합니다.
+1. CRXDE Lite에서 찾아보기 `/apps/mywebsite/components/contentpage`에서 파일을 열고 `center.jsp` 바꿉니다.
 
    ```xml
    <div>title</div>
@@ -1091,7 +1091,7 @@ public class img_GET extends AbstractImageServlet {
 
 컨텐트 페이지 구성 요소에 parsys 구성 요소(기본 구성 요소 중 하나)를 추가합니다.
 
-1. CRXDE Lite에서 파일을 찾아 열고 `/apps/mywebsite/components/contentpage`다음 코드 줄 `center.jsp` 을 찾습니다.
+1. CRXDE Lite에서 파일을 `/apps/mywebsite/components/contentpage`열고 다음 코드 줄 `center.jsp` 을 찾습니다.
 
    ```xml
    <div>parsys</div>
@@ -1113,7 +1113,7 @@ public class img_GET extends AbstractImageServlet {
 
 >[!NOTE]
 >
->Adobe Experience Manager은 보다 완벽한 기능을 갖춘 이미지 구성 요소( `/libs/foundation/components/image`)를 제공합니다.
+>Adobe Experience Manager은 더 많은 기능을 갖춘 이미지 구성 요소( `/libs/foundation/components/image`)를 제공합니다.
 
 #### 이미지 구성 요소 만들기 {#creating-the-image-component-1}
 
@@ -1223,7 +1223,7 @@ public class img_GET extends AbstractImageServlet {
 
 디자인 모드와 편집 모드에서 여러 가지 옵션이 있습니다.
 
-1. CRXDE Lite에서 로 이동하여 `/apps/mywebsite/components/contentpage``body.jsp` 파일을 열고 다음 코드를 찾습니다.
+1. CRXDE Lite에서 탐색하여 `/apps/mywebsite/components/contentpage``body.jsp` 파일을 열고 다음 코드를 찾습니다.
 
    ```java
    <div class="toolbar">toolbar</div>
@@ -1265,7 +1265,7 @@ public class img_GET extends AbstractImageServlet {
 
 #### 검색 구성 요소 만들기 {#creating-the-search-component-1}
 
-1. CRXDE Lite에서 마우스 오른쪽 단추 `/apps/mywebsite/components`를 클릭하고 **[!UICONTROL 만들기]**, 구성 요소 **[!UICONTROL 만들기를 선택합니다]**.
+1. CRXDE Lite에서 마우스 오른쪽 단추 `/apps/mywebsite/components`를 클릭하고 **[!UICONTROL 만들기]**, 구성 요소 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. 대화 상자를 사용하여 구성 요소를 구성합니다.
 
    1. 첫 번째 패널에서 다음 속성 값을 지정합니다.
@@ -1450,7 +1450,7 @@ public class img_GET extends AbstractImageServlet {
 
 컨텐츠 페이지의 왼쪽 섹션에 검색 입력 상자를 포함하려면 다음과 같이 하십시오.
 
-1. CRXDE Lite에서 파일을 `left.jsp` 아래 `/apps/mywebsite/components/contentpage` 에서 열고 다음 코드(2줄)를 찾습니다.
+1. CRXDE Lite에서 파일 `left.jsp` 을 `/apps/mywebsite/components/contentpage` 열고 다음 코드(2줄)를 찾습니다.
 
    ```xml
    %><div class="left">
@@ -1510,7 +1510,7 @@ public class img_GET extends AbstractImageServlet {
 
 이 구성 요소의 경우 편집 모드와 디자인 모드 모두에서 여러 매개 변수를 설정할 수 있습니다.
 
-1. CRXDE Lite에서 이동하여 파일 `/apps/mywebsite/components/contentpage`을 열고 `right.jsp` 교체합니다.
+1. CRXDE Lite에서 탐색하여 `/apps/mywebsite/components/contentpage`파일을 열고 `right.jsp` 바꿉니다.
 
    ```java
    <div>iparsys</div>
