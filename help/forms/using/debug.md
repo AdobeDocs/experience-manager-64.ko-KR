@@ -75,7 +75,7 @@ ht-degree: 0%
 
    (com.adobe.livecycle.adobe-lc-forms-core)
 
-   * Adobe XFA Forms LC Connector
+   * Adobe XFA Forms LC 커넥터
 
    (com.adobe.livecycle.adobe-lc-forms-lc-connector)
 
@@ -117,7 +117,7 @@ ht-degree: 0%
 
 ## 문제: 양식을 제출할 수 없습니다. {#problem-unable-to-submit-the-form}
 
-1. AEM 서버에 액세스할 수 있는 권한이 있으며 서버에 연결되어 있는지 확인합니다.
+1. AEM 서버에 액세스할 수 있는 권한이 있고 서버에 연결되어 있는지 확인합니다.
 1. submitUrl 매개 변수가 올바른지 확인하십시오.
 1. 디버그 옵션을 [1-a5-b5-c5](/help/forms/using/enable-logs.md) 로 사용하여 HTML5 양식의 ****&#x200B;로그 파일에 나와 있는 클라이언트 측 로그를 활성화합니다. 양식을 렌더링하고 [전송]을 클릭합니다. 브라우저 디버그 콘솔을 열고 오류가 있는지 확인합니다.
 1. HTML5 양식의 로그 [에서 언급한 대로 서버 로그를 찾습니다](/help/forms/using/enable-logs.md). 제출하는 동안 서버 로그에 오류가 있는지 확인하십시오.
