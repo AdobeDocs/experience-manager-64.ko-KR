@@ -1,8 +1,8 @@
 ---
 title: 3D 자산 렌더링
 seo-title: 3D 자산 렌더링
-description: AEM에서 조작하고 저장한 3D 자산을 렌더링하여 웹 페이지용 2D 이미지를 만드는 방법을 알아봅니다.
-seo-description: AEM에서 조작하고 저장한 3D 자산을 렌더링하여 웹 페이지용 2D 이미지를 만드는 방법을 알아봅니다.
+description: AEM에서 조작하고 저장한 3D 자산을 렌더링하여 웹 페이지용 2D 이미지를 만드는 방법을 살펴봅니다.
+seo-description: AEM에서 조작하고 저장한 3D 자산을 렌더링하여 웹 페이지용 2D 이미지를 만드는 방법을 살펴봅니다.
 uuid: ee4d669c-72b1-4f7a-9a68-a7c6d59c7856
 contentOwner: Rick Brough
 topic-tags: 3D
@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5b044519-d034-4f05-98c5-f1b299a3ea37
 translation-type: tm+mt
 source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+workflow-type: tm+mt
+source-wordcount: '700'
+ht-degree: 72%
 
 ---
 
@@ -41,7 +44,7 @@ Rapid Refine 렌더러는 더 큰 이미지를 렌더링하는 데 일반적으�
 >
 >3D 자산은 AEM 3D 대화형 보기에 표시된 재료와 관계 없이 항상 원래 재료로 렌더링됩니다. 이 기능은 내장 Rapid Refine 렌더러와 모든 기본 렌더러 모두에 적용됩니다.
 
-**3D 자산을**&#x200B;렌더링하려면
+**3D 자산을 렌더링하려면**:
 
 1. 볼 3D 자산을 엽니다.
 
