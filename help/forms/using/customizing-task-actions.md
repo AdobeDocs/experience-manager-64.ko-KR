@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # 작업 작업 사용자 지정 {#customizing-task-actions}
 
-AEM Forms 작업 영역을 통해 사용자가 작업 작업을 사용자 정의할 수 있습니다. 작업 작업을 사용자 정의하기 전에 AEM Forms 작업 영역 사용자 지정을 위한 [일반 단계에 나열된 단계를 따라야 합니다](/help/forms/using/generic-steps-html-workspace-customization.md).
+AEM Forms 작업 영역을 사용하면 작업 작업을 사용자 정의할 수 있습니다. 작업 작업을 사용자 정의하기 전에 AEM Forms 작업 공간 사용자 지정을 위한 [일반 단계에 나와 있는 단계를 따라야 합니다](/help/forms/using/generic-steps-html-workspace-customization.md).
 
 ## 텍스트 스타일 사용자 정의 {#customizing-text-style}
 
@@ -138,7 +138,7 @@ AEM Forms 작업 영역을 통해 사용자가 작업 작업을 사용자 정의
 
 ### 작업 목록 작업 팝업 메뉴 {#task-list-task-action-nbsp-pop-up-menu}
 
-1. AEM Forms 작업 영역 작업 목록 작업 팝업 메뉴의 항목을 사용자 정의하려면 개발 패키지가 필요합니다. 개발 패키지 만들기에 대한 자세한 내용은 AEM Forms 작업 [공간 코드 작성을 참조하십시오.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
+1. AEM Forms 작업 공간 작업 목록 작업 팝업 메뉴의 항목을 사용자 정의하려면 개발 패키지가 필요합니다. 개발 패키지 만들기에 대한 자세한 내용은 AEM Forms 작업 공간 코드 [작성을 참조하십시오.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 1. /libs/ws/js/runtime/templates/task.html을 복사하여 다음 코드 조각을 `/apps/ws/js/runtime/templates/task.html`바꿉니다.
 
