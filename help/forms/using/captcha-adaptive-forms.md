@@ -1,8 +1,8 @@
 ---
 title: 적응형 양식에서 CAPTCHA 사용
 seo-title: 적응형 양식에서 CAPTCHA 사용
-description: 적응형 양식에서 AEM CAPTCHA 또는 Google reCAPTCHA 서비스를 구성하는 방법을 알아봅니다.
-seo-description: 적응형 양식에서 AEM CAPTCHA 또는 Google reCAPTCHA 서비스를 구성하는 방법을 알아봅니다.
+description: 적응형 양식으로 AEM CAPTCHA 또는 Google reCAPTCHA 서비스를 구성하는 방법을 알아봅니다.
+seo-description: 적응형 양식으로 AEM CAPTCHA 또는 Google reCAPTCHA 서비스를 구성하는 방법을 알아봅니다.
 uuid: 8bcb0dd7-b43c-4a36-8f6b-7875b68f9ba1
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -53,7 +53,7 @@ AEM Forms에서 reCAPTCHA 서비스를 구현하려면:
 
 1. reCAPTCHA에 대한 클라우드 서비스를 구성합니다.
 
-   1. AEM 작성 인스턴스에서 ![도구](assets/tools.png) > **Cloud Service으로 이동합니다**.
+   1. AEM 작성 인스턴스에서 ![도구](assets/tools.png) > **Cloud Services으로 이동합니다**.
    1. reCAPTCHA **[!UICONTROL 를 누릅니다]**. 구성 페이지가 열립니다. 이전 단계에서 만든 구성 컨테이너를 선택하고 만들기를 **[!UICONTROL 누릅니다]**.
    1. reCAPTCHA 서비스의 이름, 사이트 키 및 암호 키를 지정하고 **[!UICONTROL 만들기를]** 탭하여 클라우드 서비스 구성을 만듭니다.
    1. 구성 요소 편집 대화 상자에서 1단계에서 얻은 사이트 및 비밀 키를 지정합니다. 설정 **[!UICONTROL 저장을]** 누른 다음 **[!UICONTROL 확인을]** 눌러 구성을 완료합니다.
