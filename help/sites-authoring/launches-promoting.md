@@ -12,6 +12,9 @@ discoiquuid: 977a3dda-4292-4bd2-bfa5-af4d789d9ef9
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 92%
 
 ---
 
@@ -44,6 +47,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >* [중첩된 론치 홍보](#promoting-a-nested-launch)에서는 구조에 둘 이상의 론치가 있는 경우를 설명합니다.
 >* [론치 - 이벤트 순서](/help/sites-authoring/launches.md#launches-the-order-of-events)에서는 자동 홍보 및 게시에 대한 세부 정보를 제공합니다.
+
 >
 
 
@@ -71,6 +75,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * **수정된 페이지 홍보**
    * **현재 페이지 홍보**
    * **현재 페이지 및 하위 페이지 홍보**
+
    예를 들어, 수정된 페이지만 홍보하도록 선택하는 경우:
 
    ![chlimage_1](assets/chlimage_1.png)
@@ -117,6 +122,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
       * **수정된 페이지 홍보**
       * **현재 페이지 홍보**
       * **현재 페이지 및 하위 페이지 홍보**
+
    ![chlimage_1-4](assets/chlimage_1-4.png)
 
 1. **다음**&#x200B;을 선택합니다.
