@@ -36,16 +36,16 @@ Java API 빠른 시작(SOAP)은 사용자 관리자 API에 사용할 수 있습�
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 프로그래밍 방식으로 환경 설정 노드 관리](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api)
 
-AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM 양식이 있는 프로그래밍에서 빠른 시작은 Unix와 같은 다른 운영 체제를 사용하는 경우 문서를 기반으로 하며, Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM 폼으로 프로그래밍(Programming with Forms)에서 빠른 시작 방법은 Unix와 같은 다른 운영 체제를 사용하고 있는 경우 문서를 기준으로 하여 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 사용자 추가 {#quick-start-soap-mode-adding-users-using-the-java-api}
 
-다음 코드 예는 AEM Forms에 Wendy Blue라는 사용자를 추가합니다. (사용자 [추가를 참조하십시오](/help/forms/developing/users.md#adding-users).)
+다음 코드 예제에서는 Wendy Blue라는 사용자를 AEM Forms에 추가합니다. (사용자 [추가를 참조하십시오](/help/forms/developing/users.md#adding-users).)
 
 ```as3
  /* 
@@ -163,7 +163,7 @@ AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 사용자 삭제 {#quick-start-soap-mode-deleting-users-using-the-java-api}
 
-다음 코드 예제에서는 AEM Forms에서 Wendy Blue라는 사용자를 삭제합니다. (사용자 [삭제를 참조하십시오](/help/forms/developing/users.md#deleting-users).)
+다음 코드 예제에서는 Wendy Blue라는 사용자를 AEM Forms에서 삭제합니다. (사용자 [삭제를 참조하십시오](/help/forms/developing/users.md#deleting-users).)
 
 ```as3
  /* 
@@ -635,7 +635,7 @@ AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 사용자 추가 {#quick_start_soap_mode_adding_users_using_the_java_api-1}
 
-다음 코드 예는 AEM Forms에 Wendy Blue라는 사용자를 추가합니다. (사용자 [추가를 참조하십시오](/help/forms/developing/users.md#adding-users).)
+다음 코드 예제에서는 Wendy Blue라는 사용자를 AEM Forms에 추가합니다. (사용자 [추가를 참조하십시오](/help/forms/developing/users.md#adding-users).)
 
 ```as3
  /* 
@@ -753,7 +753,7 @@ AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 그룹 만들기 {#quick-start-soap-mode-creating-groups-using-the-java-api}
 
-다음 코드 예제에서는 AEM Forms에 AdobeGroup이라는 그룹을 만듭니다. (그룹 [만들기를 참조하십시오](/help/forms/developing/users.md#creating-groups).)
+다음 코드 예제에서는 AdobeGroup에서 AEM Forms으로 그룹을 만듭니다. (그룹 [만들기를 참조하십시오](/help/forms/developing/users.md#creating-groups).)
 
 ```as3
  /* 
