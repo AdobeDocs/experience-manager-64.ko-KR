@@ -1,8 +1,8 @@
 ---
 title: 개발(일반)
 seo-title: 개발(일반)
-description: 통합 프레임워크에는 API와 통합 레이어가 포함되어 있으므로 eCommerce 기능을 위한 AEM 구성 요소를 빌드할 수 있습니다
-seo-description: 통합 프레임워크에는 API와 통합 레이어가 포함되어 있으므로 eCommerce 기능을 위한 AEM 구성 요소를 빌드할 수 있습니다
+description: 통합 프레임워크에는 API와 통합 레이어가 포함되어 있으므로 eCommerce 기능을 위한 AEM 구성 요소를 구축할 수 있습니다
+seo-description: 통합 프레임워크에는 API와 통합 레이어가 포함되어 있으므로 eCommerce 기능을 위한 AEM 구성 요소를 구축할 수 있습니다
 uuid: 393bb28a-9744-44f4-9796-09228fcd466f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '1886'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 0%
 >
 >[API 설명서도](/help/sites-developing/ecommerce.md#api-documentation) 사용할 수 있습니다.
 
-통합 프레임워크에는 API와 통합 레이어가 포함되어 있습니다. 이렇게 하면 특정 eCommerce 엔진과는 상관없이 eCommerce 기능용 AEM 구성 요소를 빌드할 수 있습니다. 또한 내부 CRX 데이터베이스를 사용하거나 eCommerce 시스템을 연결하고 제품 데이터를 AEM에 가져올 수 있습니다.
+통합 프레임워크에는 API와 통합 레이어가 포함되어 있습니다. 이렇게 하면 특정 eCommerce 엔진과는 상관없이 eCommerce 기능을 위한 AEM 구성 요소를 만들 수 있습니다. 또한 내부 CRX 데이터베이스를 사용하거나 eCommerce 시스템을 연결하고 제품 데이터를 AEM에 가져올 수 있습니다.
 
-통합 레이어를 사용할 수 있도록 특별히 제공되는 다양한 AEM 구성 요소가 제공됩니다. 현재 다음과 같습니다.
+통합 레이어를 사용할 수 있는 다양한 기본 AEM 구성 요소가 제공됩니다. 현재 다음과 같습니다.
 
 * 제품 표시 구성 요소
 * 장바구니
@@ -35,17 +35,17 @@ ht-degree: 0%
 * 체크아웃
 * 검색
 
-AEM 검색, 타사 검색(예: Search&amp;Promote) 또는 이들의 조합을 사용할 수 있도록 해주는 통합 후크가 제공됩니다.
+AEM 검색, 타사 검색(예: Search &amp; Promote) 또는 이들의 조합을 사용할 수 있도록 해주는 통합 후크가 제공됩니다.
 
 ## 전자 상거래 엔진 선택 {#ecommerce-engine-selection}
 
-eCommerce 프레임워크를 모든 eCommerce 솔루션에서 사용할 수 있습니다. AEM 범용 엔진을 사용하는 경우에도 사용되는 엔진을 AEM에서 식별해야 합니다.
+eCommerce 프레임워크는 모든 eCommerce 솔루션에서 사용할 수 있으며, AEM 범용 엔진을 사용하는 경우에도 AEM에서 사용되는 엔진을 식별해야 합니다.
 
 * eCommerce Engine은 인터페이스를 지원하는 OSGi `CommerceService` 서비스입니다
 
    * 엔진은 `commerceProvider` 서비스 속성으로 식별할 수 있습니다.
 
-* AEM은 `Resource.adaptTo()` `CommerceService` 및 `Product`
+* AEM 지원 `Resource.adaptTo()` 은 `CommerceService` 및 `Product`
 
    * 구현은 리소스 계층 구조에서 `adaptTo` `cq:commerceProvider` 속성을 찾습니다.
 
@@ -56,7 +56,7 @@ eCommerce 프레임워크를 모든 eCommerce 솔루션에서 사용할 수 있�
 
 * 이 `cq:commerceProvider` 속성은 적절한 상거래 공장 정의를 참조하는 데에도 사용됩니다.
 
-   * 예를 들어 geometrixx 값이 있는 `cq:commerceProvider` 속성은 Geometrixx-Outdoors **(** )의`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`Day CQ Commerce Factory에 대한 OSGi 구성에 상관 관계를 설정하며 매개 변수에도 값이 `commerceProvider` 있습니다 `geometrixx`.
+   * 예를 들어, geometrixx 값이 있는 `cq:commerceProvider` 속성은 Geometrixx-Outdoors **(** )용 Day CQ Commerce Factory의 OSGi 구성에 상관 관계를 형성합니다. 여기서 매개 변수에도 값이`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`있습니다 `commerceProvider` `geometrixx`.
    * 여기에서 추가 속성을 구성할 수 있습니다(해당되는 경우 및 사용 가능).
 
 표준 AEM 설치에서는 다음과 같은 특정 구현이 필요합니다.
@@ -84,7 +84,7 @@ eCommerce 프레임워크를 모든 eCommerce 솔루션에서 사용할 수 있�
 
 >[!NOTE]
 >
->CRXDE Lite를 사용하면 AEM 일반 구현의 제품 구성 요소에서 이 문제가 어떻게 처리되는지 확인할 수 있습니다.
+>CRXDE Lite을 사용하면 AEM 일반 구현의 제품 구성 요소에서 이 문제가 어떻게 처리되는지 확인할 수 있습니다.
 >
 >`/apps/geometrixx-outdoors/components/product`
 
@@ -125,7 +125,7 @@ CommerceSession ****:
 >
 >변형 축은 반환되는 모든 것에 의해 `Product.getVariantAxes()` 결정됩니다.
 >
->* 일반 구현의 경우 AEM은 제품 데이터( `cq:productVariantAxes`)의 속성에서 이를 읽습니다.
+>* 일반 구현 AEM의 경우 제품 데이터( `cq:productVariantAxes`)의 속성에서 이를 읽습니다.
 >
 >
 제품(일반적으로)은 많은 변형 축을 가질 수 있지만, 기본적으로 제공되는 제품 구성 요소는 두 개만 처리합니다.
@@ -335,12 +335,12 @@ public class AxisFilter implements VariantFilter {
 
 * 저장 용량
 
-   * AEM 범용 케이스 카트는 ClientContext에 [저장됩니다](/help/sites-administering/client-context.md)
+   * AEM 일반 케이스 카트는 [ClientContext에 저장됩니다](/help/sites-administering/client-context.md)
 
 **개인화**
 
-* 개인화는 항상 [ClientContext를 통해 구현되어야 합니다](/help/sites-administering/client-context.md).
-* 장바구니 `/version/` 의 ClientContext는 모든 경우에 만들어집니다.
+* 개인화는 항상 [ClientContext을 통해 이루어져야 합니다](/help/sites-administering/client-context.md).
+* 모든 경우 장바구니 `/version/` 의 ClientContext이 만들어집니다.
 
    * 제품은 `CommerceSession.addCartEntry()` 방법을 사용하여 추가해야 합니다.
 
@@ -477,10 +477,10 @@ eCommerce 프로젝트에는 다음과 같은 기본 검색 구성 요소가 포
 
       * `DiscountPromotionHandler`(장바구니 전체 절대 또는 백분율 할인 적용)
       * `PerfectPartnerPromotionHandler`, 파트너 제품이 장바구니에 있는 경우 제품 절대 또는 백분율 할인 적용
-   * ClientContext는 세그먼트 `SegmentMgr` 를 해결하고 ClientContext는 프로모션을 `CartMgr` 해결합니다. 하나 이상의 해결된 세그먼트가 적용되는 각 프로모션은 실행됩니다.
+   * ClientContext은 세그먼트 `SegmentMgr` 를 해결하고 ClientContext은 프로모션을 `CartMgr` 확인합니다. 하나 이상의 해결된 세그먼트가 적용되는 각 프로모션은 실행됩니다.
 
-      * 실행된 프로모션은 장바구니를 재계산하기 위해 AJAX 호출을 통해 서버로 다시 전송됩니다.
-      * 실행된 판촉 행사(및 추가된 바우처)는 ClientContext 패널에도 표시됩니다.
+      * 실행된 판촉 행사는 장바구니를 재계산하기 위해 AJAX 호출을 통해 서버로 다시 전송됩니다.
+      * 실행된 판촉 행사(및 추가된 바우처)도 ClientContext 패널에 표시됩니다.
 
 
 
