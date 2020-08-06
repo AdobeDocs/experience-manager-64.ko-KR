@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 7b9d3b81-3bb4-4ca6-b6e1-f9adfb455855
 translation-type: tm+mt
 source-git-commit: 9cc06c16122b98146c51ac61d7fa27553a9d971e
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 56%
 
 ---
 
@@ -25,4 +28,4 @@ source-git-commit: 9cc06c16122b98146c51ac61d7fa27553a9d971e
 
 스테이지의 파일 형식은 해당 스테이지에 사용할 수 있는 렌더러를 판별합니다. For example, if Autodesk® Maya® is used for high-quality rendering, the stage must be in `.ma` or `.mb` format. 기본 Rapid Refine™ 렌더러만 사용하려는 경우에는 지원되는 스테이지 파일 형식이 허용됩니다.
 
-AEM에 업로드하기 전에 출력 이미지 유형 및 크기를 제외한 AEM 3D의 모든 렌더링 설정을 미리 구성하고 스테이지 파일에 저장해야 합니다.
+AEM 3D에 업로드하기 전에 출력 이미지 유형 및 크기를 제외한 모든 렌더링 설정을 미리 구성하고 스테이지 파일에 저장해야 합니다.
