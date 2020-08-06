@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '584'
+ht-degree: 99%
 
 ---
 
@@ -49,11 +52,11 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 * 웹 사이트 콘솔의 **상태** 열은 페이지가 언제 워크플로우에 있는지를 나타냅니다.
 
-   ![워크플로 상태-1](assets/workflowstatus-1.png)
+   ![workflstatus-1](assets/workflowstatus-1.png)
 
 * 사용자나 사용자가 속한 그룹이 워크플로우의 일부인 작업 항목을 지정받으면 이 작업 항목이 사용자의 AEM 워크플로우 받은 편지함에 표시됩니다.
 
-   ![워크플로우받은 편지함](assets/workflowinbox.png)
+   ![워크플로 받은 편지함](assets/workflowinbox.png)
 
 ### 참가자 단계 완료 {#completing-a-participant-step}
 
