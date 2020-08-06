@@ -23,7 +23,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->이 아티클은 AEM 6의 인덱스 구성에 대해 설명합니다. 쿼리 및 색인 성능 최적화에 대한 우수 사례를 보려면 쿼리 및 색인 [에 대한 우수 사례를 참조하십시오](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+>이 문서는 AEM 6의 인덱스 구성에 대해 설명합니다. 쿼리 및 색인 성능 최적화에 대한 우수 사례를 보려면 쿼리 및 색인 [에 대한 우수 사례를 참조하십시오](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
 ## 소개 {#introduction}
 
@@ -286,17 +286,17 @@ select * from [nt:base] where [alias] = '/admin'
 
 Solr 색인의 목적은 주로 전체 텍스트 검색이지만 경로, 속성 제한 및 기본 유형 제한 사항별로 검색을 인덱싱하는 데 사용할 수도 있습니다. 즉, Oak의 솔루션 색인은 모든 유형의 JCR 쿼리에 사용할 수 있습니다.
 
-AEM의 통합은 저장소 수준에서 발생하므로 Solr이 AEM과 함께 제공된 새 저장소 구현인 Oak에서 사용할 수 있는 가능한 인덱스 중 하나입니다.
+AEM의 통합은 저장소 수준에서 진행되므로 Solr은 AEM과 함께 제공된 새로운 저장소 구현인 Oak에서 사용할 수 있는 인덱스 중 하나입니다.
 
 AEM 인스턴스가 포함된 서버로 또는 원격 서버로 작동하도록 구성할 수 있습니다.
 
-### 포함된 Solr 서버로 AEM 구성 {#configuring-aem-with-an-embedded-solr-server}
+### 포함된 Solr 서버를 사용하여 AEM 구성 {#configuring-aem-with-an-embedded-solr-server}
 
 >[!CAUTION]
 >
 >프로덕션 환경에서 임베드된 Solr 서버를 사용하지 마십시오. 개발 환경에서만 사용해야 합니다.
 
-AEM은 웹 콘솔을 통해 구성할 수 있는 포함된 Solr 서버와 함께 사용할 수 있습니다. 이 경우 Solr 서버는 포함된 AEM 인스턴스와 동일한 JVM에서 실행됩니다.
+AEM은 웹 콘솔을 통해 구성할 수 있는 임베디드 Solr 서버와 함께 사용할 수 있습니다. 이 경우 Solr 서버는 포함된 AEM 인스턴스와 동일한 JVM에서 실행됩니다.
 
 포함된 Solr 서버를 다음 방법으로 구성할 수 있습니다.
 
@@ -319,9 +319,9 @@ AEM은 웹 콘솔을 통해 구성할 수 있는 포함된 Solr 서버와 함께
 
 1. 변경 사항을 저장합니다.
 
-### 단일 원격 솔루션 서버를 사용하여 AEM 구성 {#configuring-aem-with-a-single-remote-solr-server}
+### 단일 원격 Solr 서버를 사용하여 AEM 구성 {#configuring-aem-with-a-single-remote-solr-server}
 
-원격 Solr 서버 인스턴스에서 작동하도록 AEM을 구성할 수도 있습니다.
+원격 Solr 서버 인스턴스로 작업하도록 AEM을 구성할 수도 있습니다.
 
 1. 최신 버전의 Solr를 다운로드하여 추출합니다. 이 방법에 대한 자세한 내용은 [Apache Solr 설치 설명서를 참조하십시오](https://cwiki.apache.org/confluence/display/solr/Installing+Solr).
 1. 이제 두 개의 솔러 섀드를 만듭니다. 이렇게 하려면 Solr이 업로드된 폴더의 각 샤드에 대한 폴더를 만들면 됩니다.
@@ -384,7 +384,7 @@ AEM은 웹 콘솔을 통해 구성할 수 있는 포함된 Solr 서버와 함께
 
 #### 솔러에 대한 권장 구성 {#recommended-configuration-for-solr}
 
-아래는 이 문서에 설명된 세 가지 솔루션 배포 모두에서 사용할 수 있는 기본 구성의 예입니다. AEM에 이미 있는 전용 속성 색인을 수용하며 다른 응용 프로그램과 함께 사용해서는 안 됩니다.
+아래는 이 문서에 설명된 세 가지 솔루션 배포 모두에서 사용할 수 있는 기본 구성의 예입니다. AEM에 이미 있는 전용 속성 인덱스를 수용하며 다른 응용 프로그램과 함께 사용해서는 안 됩니다.
 
 제대로 사용하려면 아카이브의 컨텐츠를 Solr Home Directory에 직접 배치해야 합니다. 다중 노드 배포의 경우 각 노드의 루트 폴더 바로 아래에 있어야 합니다.
 
@@ -394,12 +394,12 @@ AEM은 웹 콘솔을 통해 구성할 수 있는 포함된 Solr 서버와 함께
 
 ### AEM 인덱싱 도구 {#aem-indexing-tools}
 
-AEM 6.1은 AEM 6.0에 있는 두 개의 인덱싱 도구도 Adobe Consulting Services Commons 도구 세트의 일부로 통합합니다.
+AEM 6.1은 또한 Adobe 컨설팅 서비스 커머스 도구 세트의 일부로 AEM 6.0에 있는 두 개의 인덱싱 도구를 통합합니다.
 
 1. **관리자가 쿼리의 실행 방법을 이해하는 데 도움이 되는 도구, 쿼리**&#x200B;설명;
 1. **Oak Index Manager**, 기존 인덱스를 유지 관리하는 웹 사용자 인터페이스입니다.
 
-이제 AEM 시작 화면에서 **도구 - 작업 - 대시보드 - 진단으로** 이동하여 연락합니다.
+이제 AEM 시작 화면에서 **도구 - 작업 - 대시보드 - 진단으로 이동하여** 연락합니다.
 
 사용 방법에 대한 자세한 내용은 작업 대시보드 [설명서를 참조하십시오](/help/sites-administering/operations-dashboard.md).
 
@@ -431,7 +431,7 @@ AEM 6.1은 AEM 6.0에 있는 두 개의 인덱싱 도구도 Adobe Consulting Ser
 * org.apache.jackrabbit.oak.query
 * com.day.cq.search
 
-com.day.cq.se **검색** 카테고리는 AEM 제공 QueryBuilder 유틸리티를 사용하는 경우에만 적용됩니다.
+com.day.cq.se **arch** 카테고리는 AEM에서 제공하는 QueryBuilder 유틸리티를 사용하는 경우에만 적용됩니다.
 
 >[!NOTE]
 >
