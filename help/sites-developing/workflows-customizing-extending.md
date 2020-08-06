@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 9d13589ea95329dc6a9d3dbf3a5a9930998597f5
 workflow-type: tm+mt
 source-wordcount: '3587'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -68,6 +68,7 @@ ht-degree: 1%
 
    * **일반**: for editing the title and description.
    * **고급**: 을 참조하십시오.
+
    ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
 
    >[!NOTE]
@@ -121,6 +122,7 @@ WorkItem에는 해당 작업 항목(예: 단계)이 실행되는 동안에만 �
 >* 단계의 편집 대화 상자에는 제목과 설명이 다음 위치에 저장됩니다. >
 >* `./jcr:title`
 >* `./jcr:description` 위치
+
 >
 >  
 이 요구 사항은 편집 대화 상자에서 구성 요소가 구현하는 공통 탭을 사용할 때 `/libs/cq/flow/components/step/step` 충족됩니다.
@@ -132,6 +134,7 @@ WorkItem에는 해당 작업 항목(예: 단계)이 실행되는 동안에만 �
 
    * 이름: `cq:editConfig`
    * 유형: `cq:EditConfig`
+
    >[!NOTE]
    >
    >cq:editConfig 노드에 대한 자세한 내용은 구성 요소 [의 편집 동작 구성을 참조하십시오](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
@@ -182,6 +185,7 @@ WorkItem에는 해당 작업 항목(예: 단계)이 실행되는 동안에만 �
 
    * 이름: `cq:editConfig`
    * 유형: `cq:EditConfig`
+
    cq:editConfig 노드에 대한 자세한 내용은 구성 요소 [의 편집 동작 구성을 참조하십시오](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
 
 1. cq:EditConfig 노드 아래에 다음 노드를 추가합니다.
@@ -203,7 +207,7 @@ WorkItem에는 해당 작업 항목(예: 단계)이 실행되는 동안에만 �
 
 1. 모델 개발자가 속성 값을 변경할 수 있는 기능을 제거하려면 구성 요소 수퍼 유형의 대화 상자를 무시합니다.
 
-### 참가자 단계에 양식 및 대화 상자 추가 {#adding-forms-and-dialogs-to-participant-steps}
+### 참가자 단계에 Forms 및 대화 상자 추가 {#adding-forms-and-dialogs-to-participant-steps}
 
 참가자 단계 구성 요소를 사용자 지정하여 양식 참가자 단계 및 [대화 상자 참가자 단계](/help/sites-developing/workflows-step-ref.md#form-participant-step) 구성 요소에 있는 기능을 [제공합니다](/help/sites-developing/workflows-step-ref.md#dialog-participant-step) .
 
@@ -216,6 +220,7 @@ WorkItem에는 해당 작업 항목(예: 단계)이 실행되는 동안에만 �
 
    * 이름: `cq:editConfig`
    * 유형: `cq:EditConfig`
+
    cq:editConfig 노드에 대한 자세한 내용은 구성 요소 [의 편집 동작 구성을 참조하십시오](/help/sites-developing/components-basics.md#edit-behavior).
 
 1. cq:EditConfig 노드 아래에 다음 노드를 추가합니다.
@@ -381,7 +386,7 @@ log.info("currentDateInMillisKey "+ graniteWorkItem.getWorkflowData().getMetaDat
 
 프로세스 단계를 OSGI 서비스 구성 요소로 정의하려면(Java 번들):
 
-1. 번들을 만들고 OSGI 컨테이너에 배포합니다. CRXDE Lite 또는 [Eclipse를 사용하여 번들을 만드는 방법에 대한 설명서를](/help/sites-developing/developing-with-crxde-lite.md) 참조하십시오 [](/help/sites-developing/howto-projects-eclipse.md).
+1. 번들을 만들고 OSGI 컨테이너에 배포합니다. CRXDE Lite [또는](/help/sites-developing/developing-with-crxde-lite.md) Eclipse를 사용하여 번들을 만드는 방법에 대한 설명서를 [참조하십시오](/help/sites-developing/howto-projects-eclipse.md).
 
    >[!NOTE]
    >
@@ -528,7 +533,7 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 
 스크립트를 사용하려면:
 
-1. 스크립트(예: CRXDE Lite 사용)를 만들고 아래 저장소에 저장합니다 `/apps/myapp/workflow/scripts`
+1. 스크립트(예: CRXDE Lite)을 만들고 아래 저장소에 저장합니다 `/apps/myapp/workflow/scripts`
 1. 프로세스 단계 편집 대화 상자에서 스크립트를 식별하는 제목을 **지정하려면** 다음 속성을 스크립트 `jcr:content` 노드에 추가합니다.
 
    | 이름 | 유형 | 값 |
@@ -645,7 +650,7 @@ function getParticipant() {
 }
 ```
 
-1. 스크립트(예: CRXDE Lite 사용)를 만들고 아래 저장소에 저장합니다 `/apps/myapp/workflow/scripts`
+1. 스크립트(예: CRXDE Lite)을 만들고 아래 저장소에 저장합니다 `/apps/myapp/workflow/scripts`
 1. 프로세스 단계 편집 대화 상자에서 스크립트를 식별하는 제목을 **지정하려면** 다음 속성을 스크립트 `jcr:content` 노드에 추가합니다.
 
    | 이름 | 유형 | 값 |
@@ -665,6 +670,7 @@ function getParticipant() {
 >
 >* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
 >* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
+
 >
 
 
@@ -847,6 +853,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
       * 프로젝트
       * WCM 워크플로우
       * 워크플로우
+
    ![wf-35](assets/wf-35.png)
 
 1. 이제 편집을 위해 워크플로우 모델을 열 수 있습니다. 단계 브라우저에서 필터링하여 내 사용자 지정 단계 **를 볼 수 있습니다**.
@@ -887,6 +894,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
       모델 맵의 단계 카드 및 **내 사용자 지정 - 단계 속성 구성 대화 상자의 제목** 필드에 **기본 제목을** 설정합니다.
 
    * 고유한 사용자 지정 속성을 정의할 수도 있습니다.
+
    ![wf-40](assets/wf-40.png)
 
 1. 노드에서 속성을 구성합니다 `cq:listeners`.
@@ -899,6 +907,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
    * `afterdelete: CQ.workflow.flow.Step.afterDelete`
    * `afteredit: CQ.workflow.flow.Step.afterEdit`
    * `afterinsert: CQ.workflow.flow.Step.afterInsert`
+
    이 구성은 편집기의 적절한 기능에 필요합니다. 대부분의 경우 이 구성은 변경할 수 없습니다.
 
    하지만 true `cq:inherit` `cq:editConfig` 로 설정하면(노드에서, 위 참조) 단계 정의에 명시적으로 포함하지 않고 이 구성을 상속할 수 있습니다. 제자리에 상속이 없는 경우 다음 속성과 값으로 이 노드를 추가해야 합니다.
@@ -1030,7 +1039,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 >
 >클래식 UI 모델 편집기 대화 상자는 여전히 표준 터치 지원 UI 편집기와 함께 작동합니다.
 >
->클래식 UI 단계 대화 상자를 표준 UI 대화 상자로 업그레이드하려는 경우 AEM에는 [대화 상자 전환](/help/sites-developing/dialog-conversion.md) 도구가 있지만 전환 후에도 일부 경우에 대해 대화 상자에서 수동으로 몇 가지 개선 사항이 있습니다.
+>클래식 UI 단계 대화 상자를 표준 UI 대화 상자로 업그레이드하려는 경우 AEM에는 [대화 상자 변환](/help/sites-developing/dialog-conversion.md) 도구가 있지만 전환 후에도 일부 경우에 대해 대화 상자에서 수동으로 몇 가지 개선 사항이 있습니다.
 >
 >* 업그레이드된 대화 상자가 비어 있는 경우 솔루션 제공 방법의 예와 유사한 기능을 가진 대화 상자 `/libs` 를 볼 수 있습니다. 예:
    >
@@ -1040,6 +1049,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 >* `/libs/dam/components`
 >* `/libs/wcm/workflow/components/autoassign`
 >* `/libs/cq/projects`
+
 >
 >  
 에서 어떤 것도 수정할 수 없으며 `/libs`간단히 예로 사용하십시오. 기존 단계를 활용하려면 해당 단계를 복사하여 여기에서 `/apps` 수정합니다.
