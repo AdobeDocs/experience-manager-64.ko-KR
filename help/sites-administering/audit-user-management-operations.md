@@ -1,8 +1,8 @@
 ---
 title: AEM에서 사용자 관리 작업을 감사하는 방법
 seo-title: AEM에서 사용자 관리 작업을 감사하는 방법
-description: AEM 파섹
-seo-description: AEM 파섹
+description: AEM에서 사용자 관리 작업을 감사하는 방법을 알아봅니다.
+seo-description: AEM에서 사용자 관리 작업을 감사하는 방법을 알아봅니다.
 uuid: 4ea704b4-9150-4b5f-b9cb-cdac95cfd70c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,37 +11,41 @@ content-type: reference
 discoiquuid: 437fa139-2dde-41a0-9649-6bb110039618
 translation-type: tm+mt
 source-git-commit: aac5026a249e1cb09fec66313cc03b58597663f0
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 1%
 
 ---
 
 
-# AEM에서 사용자 관리 작업을 감사하는 방법{#how-to-audit-user-management-operations-in-aem}
+# How to Audit User Management Operations in AEM{#how-to-audit-user-management-operations-in-aem}
 
 ## 소개 {#introduction}
 
-AEM에서는 권한 변경 사항을 기록할 수 있는 기능을 도입하여 나중에 감사할 수 있습니다.
+AEM은 권한 변경 사항을 나중에 감사할 수 있도록 기록하는 기능을 도입했습니다.
 
-향상된 기능을 통해 사용자의 권한 및 그룹 할당에 대한 감사 CRUD(만들기, 읽기, 업데이트, 삭제) 작업을 수행할 수 있습니다. 보다 구체적으로 다음을 기록합니다.
+향상된 기능을 통해 사용자의 권한 및 그룹 할당에 대한 감사 CRUD(만들기, 읽기, 업데이트, 삭제) 작업을 수행할 수 있습니다. 보다 구체적으로 다음을 기록하게 됩니다.
 
-* 새로 만드는 사용자
+* 새 사용자를 만드는 중
 * 그룹에 추가되는 사용자
-* 기존 사용자 또는 그룹의 권한 변경 사항
+* 기존 사용자 또는 그룹의 권한 변경
 
-기본적으로 항목은 `error.log` 파일에 기록됩니다. 모니터링을 보다 쉽게 하려면 별도의 로그 파일로 리디렉션하는 것이 좋습니다. 아래 단락에서 이 작업을 수행하는 방법에 대한 자세한 내용을 살펴보십시오.
+기본적으로 항목은 `error.log` 파일에 기록됩니다. 모니터링을 쉽게 하려면 별도의 로그 파일로 리디렉션하는 것이 좋습니다. 아래 단락에서 이 작업을 수행하는 방법에 대한 자세한 내용을 살펴보십시오.
 
 ## 출력을 별도의 로그 파일로 리디렉션 {#redirecting-the-output-to-a-separate-log-file}
 
-로깅 출력을 별도의 로그 파일로 리디렉션하려면 새 Apache Sling Logging **Logger 구성을 만들어야 합니다** . 아래 예에서 개별 파일의 `useraudit.log` 이름으로 사용됩니다.
+로깅 출력을 별도의 로그 파일로 리디렉션하려면 새로운 **Apache Sling Logging Logger** 구성을 만들어야 합니다. 아래 예에서 개별 파일 `useraudit.log` 의 이름으로 사용됩니다.
 
-1. 웹 콘솔로 이동하여 `https://<serveraddress>:<serverport>/system/console/configMgr`
-1. Apache Sling **로깅 로거 구성을 검색합니다**. 그런 다음 항목 오른쪽의 &quot;+&quot;를 눌러 새 공장 구성을 만듭니다.
+1. 웹 콘솔로 이동 `https://<serveraddress>:<serverport>/system/console/configMgr`
+1. Apache **Sling 로깅 로거 구성을 검색합니다**. 그런 다음 항목 오른쪽의 &quot;+&quot;를 눌러 새 공장 구성을 만듭니다.
 1. 다음 구성을 만듭니다.
 
-   * **** 로그 수준:정보
-   * **** 로그 파일:logs/useraudit.log
-   * **** 메시지 패턴:레벨 기본값
-   * **** 로거:com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
-   로거 필드에 두 로거를 모두 **입력하려면** 첫 번째 로거 이름을 입력한 다음 &quot;+&quot; 버튼을 누르고 두 번째 로거 이름을 입력하여 다른 필드를 만들어야 합니다.
+   * **로그 수준:** 정보
+   * **로그 파일:** logs/useraudit.log
+   * **메시지 패턴:** 레벨 기본값
+   * **로거:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
+
+   로거 **** 필드에 두 개의 로거를 모두 입력하려면 먼저 이름을 입력한 다음 &quot;+&quot; 버튼을 누르고 두 번째 로거 이름을 입력하여 다른 필드를 생성해야 합니다.
 
 ## 출력 예 {#example-output}
 
@@ -79,7 +83,7 @@ AEM에서는 권한 변경 사항을 기록할 수 있는 기능을 도입하여
 
 ## 클래식 UI
 
-클래식 UI에서 사용자 추가 및 삭제와 관련하여 감사 로그에 기록된 CRUD 작업에 대한 정보는 영향을 받은 사용자의 ID로 제한되며 변경 사항이 발생했습니다.
+클래식 UI에서 사용자 추가 및 삭제와 관련하여 감사 로그에 기록된 CRUD 작업에 대한 정보는 영향을 받는 사용자의 ID로 제한되며 변경 사항이 발생했습니다.
 
 예:
 
