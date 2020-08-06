@@ -13,22 +13,23 @@ ht-degree: 1%
 
 # Enabling Asset Insights through DTM {#enabling-asset-insights-through-dtm}
 
-Adobe 다이내믹 태그 관리는 디지털 마케팅 툴을 활성화하는 도구입니다. Adobe Analytics 고객은 무료로 제공됩니다.
+Adobe 다이내믹 태그 관리는 디지털 마케팅 툴을 활성화하는 도구입니다. Adobe Analytics 고객에게는 무료로 제공됩니다.
 
-추적 코드를 사용자 지정하여 타사 CMS 솔루션을 사용하여 자산 통찰력을 사용할 수 있도록 할 수 있지만, DTM을 사용하여 자산 인사이트 태그를 삽입하는 것이 좋습니다.
+추적 코드를 사용자 지정하여 타사 CMS 솔루션을 사용하여 자산 통찰력을 사용할 수 있도록 할 수 있지만 Adobe은 DTM을 사용하여 자산 인사이트 태그를 삽입하는 것이 좋습니다.
 
 다음 단계를 수행하여 DTM을 통해 자산 통찰력을 활성화합니다.
 
 1. AEM 로고를 탭/클릭하고 **[!UICONTROL 도구 > 자산 > 인사이트 구성으로 이동합니다]**.
-1. [DTM 클라우드 서비스를 사용하여 AEM 인스턴스 구성](../sites-administering/dtm.md)
+1. [DTM Cloud Service으로 AEM 인스턴스 구성](../sites-administering/dtm.md)
 
-   API 토큰은 https://dtm.adobe.com에 로그인하고 프로필 아이콘에서 [계정 설정](https://dtm.adobe.com/) 을 방문한 후 사용할 수 **** 있어야 합니다. AEM Sites와 자산 인사이트의 통합이 아직 작동 중이기 때문에 자산 인사이트 관점에서 이 단계가 필요하지 않습니다.
+   API 토큰은 https://dtm.adobe.com에 로그인하고 프로필 아이콘에서 [계정 설정](https://dtm.adobe.com/) 을 방문한 후 사용할 수 **** 있어야 합니다. 자산 인사이트와 AEM Sites의 통합이 아직 진행 중이기 때문에 자산 인사이트 관점에서 이 단계는 필요하지 않습니다.
 
 1. https://dtm.adobe.com에 [로그인한](https://dtm.adobe.com/)후 회사를 선택합니다.
 1. 기존 웹 속성 만들기/열기
 
    * 웹 **[!UICONTROL 속성]** 탭을 선택한 다음 속성 **[!UICONTROL 추가를 탭/클릭합니다]**.
    * 필드를 적절히 업데이트하고 속성 만들기를 탭/ **[!UICONTROL 클릭합니다]** ( [설명서](https://helpx.adobe.com/experience-manager/using/dtm.html)참조).
+
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
 1. 규칙 **** 탭의 탐색 창에서 **[!UICONTROL 페이지 로드 규칙]** 을 선택하고 새 규칙 **[!UICONTROL 만들기를 탭/]**&#x200B;클릭합니다.
@@ -44,10 +45,10 @@ Adobe 다이내믹 태그 관리는 디지털 마케팅 툴을 활성화하는 �
 
    >[!NOTE]
    >
-   >* `AppMeasurement.js` 가 제거되었습니다. DTM의 Adobe Analytics 도구를 통해 사용할 수 있습니다.
+   >* `AppMeasurement.js` 가 제거되었습니다. DTM의 Adobe Analytics 툴을 통해 제공될 예정입니다.
    >* 통화가 `assetAnalytics.dispatcher.init()` 제거됩니다. 이 함수는 DTM의 Adobe Analytics 도구 로드가 끝나면 호출될 예정입니다.
-   >* 자산 인사이트 페이지 추적기가 호스팅되는 위치(예: AEM, CDN 등)에 따라 스크립트 소스의 출처를 변경해야 할 수 있습니다.
-   >* AEM 호스팅 페이지 추적기의 경우 소스는 발송자 인스턴스의 호스트 이름을 사용하여 게시 인스턴스를 가리켜야 합니다.
+   >* Asset Insights 페이지 추적기가 호스팅되는 위치(예: AEM, CDN 등)에 따라 스크립트 소스의 출처를 변경해야 할 수 있습니다.
+   >* AEM에서 호스팅하는 페이지 추적기의 경우 소스는 발송자 인스턴스의 호스트 이름을 사용하여 게시 인스턴스를 가리켜야 합니다.
 
 
 
@@ -109,7 +110,7 @@ Adobe 다이내믹 태그 관리는 디지털 마케팅 툴을 활성화하는 �
 
       나머지 인수는 [인사이트 구성] 페이지(도구 >**[!UICONTROL 자산 > 인사이트 구성]**)에 구성된 것에 해당합니다.
 
-   * 사용 가능한 모든 SiteCatalyst 엔진에 대해 쿼리하여 AppMeasurement 개체 `satelliteLib` 를 검색합니다. 여러 태그가 구성된 경우 배열 선택기의 인덱스를 적절하게 변경합니다. 배열의 항목은 DTM 인터페이스에서 사용할 수 있는 SiteCatalyst 도구에 따라 정렬됩니다.
+   * 사용 가능한 모든 SiteCatalyst 엔진에 대해 쿼리하여 AppMeasurement 개체 `satelliteLib` 를 검색합니다. 여러 태그가 구성된 경우 배열 선택기의 인덱스를 적절하게 변경합니다. 배열의 항목은 DTM 인터페이스에서 사용할 수 있는 SiteCatalyst 도구에 따라 순서가 정해집니다.
 
 1. 코드 편집기 창을 저장하고 닫은 다음 도구 구성에 변경 사항을 저장합니다.
 1. 승인 **[!UICONTROL 탭에서]** 대기 중인 승인을 모두 승인합니다. DTM 태그가 웹 페이지에 삽입할 준비가 되었습니다. 웹 페이지에 DTM 태그를 삽입하는 방법에 대한 자세한 내용은 사용자 지정 페이지 템플릿에서 [DTM 통합을 참조하십시오](https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template/).
