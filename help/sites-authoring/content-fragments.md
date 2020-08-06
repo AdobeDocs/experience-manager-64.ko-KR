@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 076a3064-80c3-454b-93f9-6ae925c54328
 translation-type: tm+mt
 source-git-commit: c10c0ca79a0dd2e79c2d821f11cce3d28058aaa0
+workflow-type: tm+mt
+source-wordcount: '1171'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: c10c0ca79a0dd2e79c2d821f11cce3d28058aaa0
 
 >[!CAUTION]
 >
->일부 컨텐츠 조각 기능을 사용하려면 AEM 6. [4 서비스 팩 2(6.4.2.0) 이상의](/help/release-notes/sp-release-notes.md)애플리케이션이 필요합니다.
+>일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md)버전이 필요합니다.
 
 AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산으로 작성 및 관리](/help/assets/content-fragments.md)됩니다.
 
@@ -33,13 +36,14 @@ AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산
 >
 >* **컨텐츠 조각**&#x200B;은 편집 가능한 컨텐츠이며, 주로 텍스트나 관련 이미지입니다. 또한 디자인과 레이아웃이 없는 순수 컨텐츠입니다.
 >* **경험 조각**&#x200B;은 전체적으로 배치된 컨텐츠, 즉 웹 페이지 조각입니다.
+
 >
 >
 경험 조각은 컨텐츠 조각 형태로 컨텐츠를 포함할 수 있지만 반대로는 불가능합니다.
 
 >[!CAUTION]
 >
->This page must be read in conjunction with [Working with Content Fragments](/help/assets/content-fragments.md) (and related pages) as it introduces basic terminology and concepts, together with creating and managing fragments.
+>이 페이지는 [컨텐츠 조각에서 사용](/help/assets/content-fragments.md) 및 관련 페이지와 함께 읽어야 합니다. 기본 용어 및 개념뿐 아니라 조각 생성과 관리를 소개합니다.
 
 컨텐츠 조각을 사용하여 다음을 수행할 수 있습니다.
 
@@ -75,13 +79,14 @@ AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산
 
 1. 다음을 수행할 수 있습니다.
 
-   * Open the **[!UICONTROL Assets]** browser and filter for **[!UICONTROL Content Fragments]** (the default is Images). 그런 다음 필수 조각을 구성 요소 인스턴스에 드래그합니다.
+   * **[!UICONTROL 자산]** 브라우저를 열고 **[!UICONTROL 컨텐츠 조각]**&#x200B;을 필터링합니다(기본값은 이미지). 그런 다음 필수 조각을 구성 요소 인스턴스에 드래그합니다.
    * 컨텐츠 조각 구성 요소를 선택한 다음, 도구 모음에서 **[!UICONTROL 구성]**&#x200B;을 선택하십시오. 대화 상자에서 선택 대화 상자를 열어 필요한 **[!UICONTROL 컨텐츠 조각]**&#x200B;을 찾아 선택할 수 있습니다.
+
    >[!NOTE]
    >
    >다른 방법은 특정 컨텐츠 조각을 페이지로 직접 드래그하는 것입니다. 이 경우 관련 구성 요소(컨텐츠 조각)가 자동으로 만들어집니다.
 
-1. Initially the content from the **[!UICONTROL Main]** Element and **[!UICONTROL Master]** (variation) will be shown. 필요에 따라 [다른 요소 및/또는 변형을 선택](#selecting-the-element-or-variation)할 수 있습니다.
+1. 처음에는 **[!UICONTROL 주]** 요소 및 **[!UICONTROL 마스터]**(변형)의 컨텐츠가 표시됩니다. 필요에 따라 [다른 요소 및/또는 변형을 선택](#selecting-the-element-or-variation)할 수 있습니다.
 
    ![cfm-6420-01](assets/cfm-6420-01.png)
 
@@ -112,6 +117,7 @@ AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산
 
    * 기본 **[!UICONTROL 기본]**&#x200B;은 항상 사용할 수 있습니다.
    * 해당 템플릿을 사용하여 조각을 생성한 경우 선택이 가능합니다.
+
    >[!NOTE]
    >
    >사용할 수 있는 요소는 사용된 템플릿에 따라 다릅니다.
@@ -124,7 +130,7 @@ AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산
 * **[!UICONTROL 단락]**: 포함할 단락 범위를 지정합니다.
 
    * **[!UICONTROL 모두]**
-   * **[!UICONTROL 범위]**:예를 들어, `1`, `3-5`, `9-*`
+   * **[!UICONTROL 범위]**: 예를 들어, `1`, `3-5`, `9-*`
 
       * **[!UICONTROL 제목을 소유자의 단락으로 처리]**
 
@@ -148,7 +154,7 @@ AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산
 
 * [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser)에서 구성 요소를 추가합니다.
 * [자산 브라우저](/help/sites-authoring/author-environment-tools.md#assets-browser)에서 자산을 추가합니다.
-* Use [Associated Content](#using-associated-content) as a source for in-between content.
+* 중간 컨텐츠 소스로 [연관된 컨텐츠](#using-associated-content)를 사용합니다.
 
 >[!CAUTION]
 >
@@ -166,18 +172,19 @@ AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산
 >
 >중간 컨텐츠를 페이지의 컨텐츠 조각에 추가한 후에 기존 컨텐츠 조각(즉, 컨텐츠 조각 편집기에서)의 구조를 변경하면 잘못된/예기치 않은 결과가 나타날 수 있습니다.
 >
->이 경우 중간 컨텐츠는 그대로 유지됩니다.
+>이 경우 중간 컨텐츠가 그대로 유지됩니다. 
 >
 >* 중간 구성 요소는 조각 플로우의 구성 요소 순서 내에서 절대 위치에 있습니다. 조각 내의 단락 컨텐츠가 변경되더라도 이 위치는 변경되지 않습니다.\
-   >  중간 단락은 옆에 배치된 (조각) 단락과 문맥적 관계가 없으므로 상대적 위치가 변경된 것처럼 보일 수 있습니다.
+   >  중간 단락은 옆에 배치된(조각) 단락과 문맥적 관계가 없으므로 상대적 위치가 변경된 것처럼 보일 수 있습니다.
 >* 두 단락 구조가 충돌하지 않는 경우에는 중간 컨텐츠가 내부에 여전히 있어도 표시되지 않습니다.
+
 >
 
 
 
 ## 관련 컨텐츠 사용 {#using-associated-content}
 
-[](/help/assets/content-fragments-assoc-content.md)컨텐츠를 컨텐츠 조각과 연결[](/help/assets/content-fragments.md)한 경우 이러한 자산은 사이드 패널에서 사용할 수 있습니다(조각을 컨텐츠 페이지에 배치한 후에). 연관된 컨텐츠는 [중간 컨텐츠](#adding-in-between-content)의 특별한 컨텐츠 소스입니다.
+[관련 컨텐츠](/help/assets/content-fragments-assoc-content.md)를 [컨텐츠 조각](/help/assets/content-fragments.md)과 연결한 경우 이러한 자산은 사이드 패널에서 사용할 수 있습니다(조각을 컨텐츠 페이지에 배치한 후에). 연관된 컨텐츠는 [중간 컨텐츠](#adding-in-between-content)의 특별한 컨텐츠 소스입니다.
 
 >[!NOTE]
 >
@@ -197,7 +204,7 @@ AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산
 
 [자산(예: 이미지)이 조각 자체에 삽입된 경우](/help/assets/content-fragments-variations.md#inserting-assets-into-your-fragment), 페이지 편집기에서 이러한 자산을 편집하는 옵션은 제한됩니다.
 
-예를 들어 이미지의 경우
+예를 들어, 이미지의 경우 다음 작업을 수행할 수 있습니다.
 
 * 이미지를 자르고 회전하거나 뒤집습니다.
 * 제목 또는 대체 텍스트를 추가합니다.
