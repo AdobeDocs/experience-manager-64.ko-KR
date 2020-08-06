@@ -1,8 +1,8 @@
 ---
 title: AEM Forms 작업 영역 작업
 seo-title: AEM Forms 작업 영역 작업
-description: 프로세스 워크플로우에 대한 빠른 개요를 통해 AEM Forms 작업 영역을 시작해 보십시오.
-seo-description: 프로세스 워크플로우에 대한 빠른 개요를 통해 AEM Forms 작업 영역을 시작해 보십시오.
+description: 프로세스 워크플로우에 대한 빠른 개요를 통해 AEM Forms 작업 영역을 시작합니다.
+seo-description: 프로세스 워크플로우에 대한 빠른 개요를 통해 AEM Forms 작업 영역을 시작합니다.
 uuid: fac103bd-142b-46cc-9db7-22d1880260f8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -21,27 +21,27 @@ ht-degree: 0%
 
 ## 소개 {#introduction}
 
-AEM Forms 작업 영역은 AEM Forms의 일부입니다. 작업 영역은 PDF 양식과 더불어 HTML Forms 변환을 용이하게 합니다. 이제 모바일 인터페이스 및 웹 애플리케이션에서 비즈니스 프로세스에 관여할 수 있습니다.
+AEM Forms 작업 영역은 AEM Forms의 일부입니다. 작업 영역은 PDF forms 외에도 HTML Forms 변환을 용이하게 합니다. 이제 모바일 인터페이스 및 웹 애플리케이션에서 비즈니스 프로세스에 관여할 수 있습니다.
 
 또한 AEM Forms 작업 영역은 표준 HTML 및 JavaScript™ 개발 방법을 사용하여 사용자 정의할 수 있습니다. 구성 요소 기반의 소프트웨어로 다른 웹 애플리케이션과 손쉽게 통합할 수 있습니다.
 
-자세한 내용은 AEM [Forms 작업 영역 소개를 참조하십시오](/help/forms/using/introduction-html-workspace.md).
+자세한 내용은 AEM Forms 작업 영역 [소개를 참조하십시오](/help/forms/using/introduction-html-workspace.md).
 
 ## 친숙한 기술 {#getting-familiar}
 
-양식 애플리케이션을 만들어 비즈니스 프로세스를 자동화하는 엔드 투 엔드 프로세스에 익숙해지려면 이 연습을 따르십시오. 이 연습에 따라 워크벤치, 디자이너 및 AEM Forms 작업 영역을 사용하여 응용 프로그램을 만들고, 관리하고 테스트할 수 있습니다. 구현에 대한 자세한 내용은 첫 [번째 AEM Forms 애플리케이션 만들기를 참조하십시오](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html).
+양식 애플리케이션을 만들어 비즈니스 프로세스를 자동화하는 엔드 투 엔드 프로세스에 익숙해지려면 이 연습을 따르십시오. 이 연습에서는 워크벤치, 디자이너 및 AEM Forms 작업 영역을 사용하여 응용 프로그램을 만들고, 관리하고, 테스트할 수 있습니다. 구현에 대한 자세한 내용은 [첫 번째 AEM Forms 응용 프로그램 만들기를 참조하십시오](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html).
 
 ## 기능 개요 {#functional-overview}
 
 AEM Forms 작업 영역을 사용하여 다음 작업을 수행할 수 있습니다.
 
-**비즈니스 프로세스 시작:** AEM Forms 작업 영역은 조직에서 디자인하고 설정한 프로세스에 따라 분류합니다. 자주 사용하는 카테고리를 즐겨찾기에 추가하여 카테고리에 빠르게 액세스할 수 있습니다. 프로세스를 시작하면 일반적으로 양식을 작성하여 양식 워크플로우가 제어하는 업무 프로세스를 시작합니다. 자세한 내용은 프로세스 [시작을 참조하십시오](/help/forms/using/starting-processes.md).
+**비즈니스 프로세스 시작:** AEM Forms 작업 공간은 조직에서 디자인하고 설정한 프로세스에 카테고리를 부여합니다. 자주 사용하는 카테고리를 즐겨찾기에 추가하여 카테고리에 빠르게 액세스할 수 있습니다. 프로세스를 시작하면 일반적으로 양식을 작성하여 양식 워크플로우가 제어하는 업무 프로세스를 시작합니다. 자세한 내용은 프로세스 [시작을 참조하십시오](/help/forms/using/starting-processes.md).
 
 **작업 보기 및 실행:** 할 일 목록을 보면 본인에게 할당된 업무 프로세스 또는 소속되어 있거나 다른 사용자의 공유 작업인 그룹의 작업을 볼 수 있습니다. 필요에 따라 작업을 열고, 작업하고, 완료할 수 있습니다. 일반적으로 작업을 완료하는 데는 정보 제공, 양식 승인 또는 양식 거부가 포함됩니다. 자세한 내용은 [할 일 목록](/help/forms/using/todo-lists.md)작업을 참조하십시오.
 
-**작업 추적**: 작업을 추적하려면 AEM Forms 작업 영역의 추적 탭을 사용합니다. 시작하거나 참여한 활성 또는 완료된 프로세스를 검색할 수 있습니다. 프로세스의 일부인 작업, 할당 및 양식을 볼 수 있습니다. 이전에 시작한 프로세스의 양식 데이터를 사용하여 새 프로세스를 시작할 수도 있습니다. 자세한 내용은 [추적 프로세스를 참조하십시오](/help/forms/using/tracking-processes.md).
+**작업 추적**: 작업을 추적하려면 AEM Forms 작업 공간의 추적 탭을 사용합니다. 시작하거나 참여한 활성 또는 완료된 프로세스를 검색할 수 있습니다. 프로세스의 일부인 작업, 할당 및 양식을 볼 수 있습니다. 이전에 시작한 프로세스의 양식 데이터를 사용하여 새 프로세스를 시작할 수도 있습니다. 자세한 내용은 [추적 프로세스를 참조하십시오](/help/forms/using/tracking-processes.md).
 
-## AEM Forms 작업 영역의 새로운 기능 {#new-offering-of-aem-forms-workspace}
+## 새로운 AEM Forms 작업 영역 제공 {#new-offering-of-aem-forms-workspace}
 
 **작업의 일괄 승인 지원**:
 
@@ -51,7 +51,7 @@ AEM Forms 작업 영역을 사용하여 다음 작업을 수행할 수 있습니
 
 **지속적인 작업**
 
-또한 JEE의 AEM Forms는 기본적으로 Flex Workspace를 배포합니다. 기존의 모든 프로세스와 사용자 정의 기능이 계속해서 작동합니다.
+또한 기본적으로 Flex 작업 영역을 배포하고 있습니다. 기존의 모든 프로세스와 사용자 정의 기능이 계속해서 작동합니다.
 
 **기존 프로세스를 AEM Forms 작업 영역으로 마이그레이션:**
 
@@ -112,17 +112,17 @@ AEM Forms 작업 영역에서 기본 렌더링 및 제출 서비스는 XDP 양�
 
 ### AEM Forms 작업 영역의 제한 사항 {#limitations-of-aem-forms-workspace}
 
-AEM Forms 작업 영역에서 사용할 수 없는 Flex 작업 공간의 일부 기능은 다음과 같습니다. 메시지 및 알림, 시작 페이지, 승인 컨테이너 및 열 제목을 관리하는 옵션. 전체 목록은 AEM Forms 작업 영역에서 [사용할 수 없는 Flex 작업 공간의 기능을 참조하십시오](/help/forms/using/features-flex-workspace-available-html.md).
+AEM Forms 작업 공간에서 사용할 수 없는 Flex 작업 공간의 일부 기능은 다음과 같습니다. 메시지 및 알림, 시작 페이지, 승인 컨테이너 및 열 제목을 관리하는 옵션. 전체 목록은 AEM Forms 작업 [영역에서 사용할 수 없는 Flex 작업 공간의 기능을 참조하십시오](/help/forms/using/features-flex-workspace-available-html.md).
 
-## AEM Forms 작업 영역으로 개발 {#developing-with-aem-forms-workspace}
+## AEM Forms 작업 영역을 사용한 개발 {#developing-with-aem-forms-workspace}
 
 ### 아키텍처 {#architecture}
 
-AEM Forms 작업 영역은 CRX™에서 호스팅되는 HTML 및 JavaScript™ 기반 웹 애플리케이션입니다. 브라우저에서 작업 공간 URL을 열면 CRX™ 리소스에 액세스되고 애플리케이션이 브라우저에서 HTML 페이지로 렌더링됩니다. JavaScript 라이브러리 및 사용자 지정 JavaScript 코드는 사용자 인터페이스, 사용자 상호 작용 및 AEM Forms 서버와의 통신 등 애플리케이션의 내부 및 외부 동작을 관리합니다. 자세한 내용은 AEM Forms 작업 공간 [아키텍처를 참조하십시오](/help/forms/using/html-workspace-architecture.md).
+AEM Forms 작업 영역은 CRX™에서 호스팅되는 HTML 및 JavaScript™ 기반의 웹 애플리케이션입니다. 브라우저에서 작업 공간 URL을 열면 CRX™ 리소스에 액세스되고 애플리케이션이 브라우저에서 HTML 페이지로 렌더링됩니다. JavaScript 라이브러리 및 사용자 지정 JavaScript 코드는 사용자 인터페이스, 사용자 상호 작용 및 AEM Forms 서버와의 통신 등 애플리케이션의 내부 및 외부 동작을 관리합니다. 자세한 내용은 AEM Forms 작업 공간 [아키텍처를 참조하십시오](/help/forms/using/html-workspace-architecture.md).
 
 ### AEM Forms 작업 영역 사용자 정의 {#aem-forms-workspace-customization}
 
-AEM Forms 작업 영역은 사용자 인터페이스의 레이아웃, 모양, 기능 등을 업데이트하는 다양한 사용자 지정을 지원합니다. 사용자 지정에는 다음 중 하나 이상을 업데이트하는 작업이 포함됩니다.
+AEM Forms 작업 영역은 유저 인터페이스의 레이아웃, 모양, 기능 등을 업데이트하기 위해 다양한 사용자 지정을 지원합니다. 사용자 지정에는 다음 중 하나 이상을 업데이트하는 작업이 포함됩니다.
 
 * 사용자 인터페이스의 모양
 * 의미 체계 사용자 지정을 사용하는 기능
@@ -132,16 +132,16 @@ AEM Forms 작업 영역은 사용자 인터페이스의 레이아웃, 모양, �
 
 ### Set up the developer environment {#set-up-the-developer-environment}
 
-AEM Forms 작업 영역 결과물에는 전체 소스 코드, 타사 JavaScript 라이브러리가 포함된 SDK 보관 파일, CRX에 배포된 CRX 패키지 및 AEM Forms 작업 영역의 빌드 스크립트가 포함됩니다. 개발자 환경을 설정하여 위에 언급된 사용자 지정을 수행합니다. 자세한 내용은 AEM Forms 작업 [공간 코드 작성을 참조하십시오](introduction-customizing-html-workspace.md#building-html-workspace-code).
+AEM Forms 작업 영역 결과물에는 전체 소스 코드, 타사 JavaScript 라이브러리가 포함된 SDK 보관 파일, CRX에 배포된 CRX 패키지 및 AEM Forms 작업 영역의 빌드 스크립트가 포함됩니다. 개발자 환경을 설정하여 위에 언급된 사용자 지정을 수행합니다. 자세한 내용은 AEM Forms 작업 공간 코드 [작성을 참조하십시오](introduction-customizing-html-workspace.md#building-html-workspace-code).
 
-인터페이스 및 핵심 기능(예: 글꼴, 색상 구성표, 로고, 로그인 화면, 오류 대화 상자, 타사 애플리케이션과의 통합, 타사 애플리케이션의 구성 요소 재사용)의 주요 부분을 사용자 정의할 수 있습니다. 또한 작업 요약 페이지에 표시되는 컨텐츠를 향상시키고 작업 경로 작업에 대한 이미지를 보여주며 AEM Forms 작업 영역 응용 프로그램을 만드는 하위 수준 백본 모델 및 보기를 수정할 수도 있습니다.
+인터페이스 및 핵심 기능(예: 글꼴, 색상 구성표, 로고, 로그인 화면, 오류 대화 상자, 타사 애플리케이션과의 통합, 타사 애플리케이션의 구성 요소 재사용)의 주요 부분을 사용자 정의할 수 있습니다. 또한 작업 요약 페이지에 표시되는 컨텐츠를 향상시키고 작업 경로 작업에 대한 이미지를 보여주며 AEM Forms 작업 영역 애플리케이션을 만드는 하위 레벨 백본 모델 및 뷰를 수정할 수도 있습니다.
 
-### XDP Forms HTML 렌더링 {#html-rendering-of-xdp-forms}
+### XDP Forms의 HTML 렌더링 {#html-rendering-of-xdp-forms}
 
 기본적으로 새로운 프로세스의 경우 XDP 양식이 데스크탑에서 PDF 형식으로, 태블릿에서는 HTML 형식으로 렌더링됩니다. XDP 양식을 항상 HTML 형식으로 렌더링할 수 있습니다. 자세한 내용은 [새로운 렌더링 및 서비스 제출을 참조하십시오](/help/forms/using/new-render-submit-service.md).
 
-[모바일 양식](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html) 기능을 사용하면 [XDP](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html)양식의 HTML을 변환할 수 있습니다. 기본적으로 &#39;새 HTML 양식 렌더링&#39;은 변경할 수 있는 프로파일을 사용합니다. `default.html` XDP 양식을 HTML 형식으로 렌더링하기 전에 발생하는 사용자 지정 변경 사항을 추가할 수도 있습니다.
+[모바일 Forms](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html) 기능을 사용하면 [XDP](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html)양식의 HTML을 변환할 수 있습니다. 기본적으로 &#39;새 HTML 양식 렌더링&#39;은 변경할 수 있는 프로파일을 사용합니다. `default.html` XDP 양식을 HTML 형식으로 렌더링하기 전에 발생하는 사용자 지정 변경 사항을 추가할 수도 있습니다.
 
 ## AEM Forms 작업 영역 앱 {#aem-forms-workspace-app}
 
-모바일 장치에서 업무 처리 과정을 수행하려면 AEM Forms의 AEM Forms 작업 영역 앱 솔루션을 사용할 수 있습니다. 자세한 내용은 AEM Forms 작업 [공간 앱 개요를 참조하십시오](https://helpx.adobe.com/livecycle/help/mobile-workspace/mobile-workspace-overview.html).
+모바일 디바이스에서 비즈니스 프로세스를 작업하려면 AEM Forms의 AEM Forms 작업 영역 앱 솔루션을 사용할 수 있습니다. 자세한 내용은 [AEM Forms 작업 공간 앱 개요를 참조하십시오](https://helpx.adobe.com/livecycle/help/mobile-workspace/mobile-workspace-overview.html).
