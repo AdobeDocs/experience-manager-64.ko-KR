@@ -26,25 +26,25 @@ ht-degree: 0%
 
 대화형 통신을 만들려면 인쇄 및 웹 채널용 AEM 서버에서 사용할 수 있는 템플릿이 있어야 합니다.
 
-인쇄 채널의 템플릿은 Adobe Forms Designer에서 만들고 AEM 서버에 업로드됩니다. 그런 다음 대화형 통신을 만드는 동안 이러한 템플릿을 사용할 수 있습니다.
+인쇄 채널의 템플릿은 Adobe Forms 디자이너에서 만들고 AEM 서버에 업로드됩니다. 그런 다음 대화형 통신을 만드는 동안 이러한 템플릿을 사용할 수 있습니다.
 
-웹 채널에 대한 템플릿은 AEM에서 만듭니다. 템플릿 작성자 및 관리자는 웹 템플릿을 만들고 편집하고 활성화할 수 있습니다. 작성 및 활성화된 템플릿은 대화형 통신을 만드는 동안 사용할 수 있습니다.
+웹 채널의 템플릿은 AEM에서 만듭니다. 템플릿 작성자 및 관리자는 웹 템플릿을 만들고 편집하고 활성화할 수 있습니다. 작성 및 활성화된 템플릿은 대화형 통신을 만드는 동안 사용할 수 있습니다.
 
 이 자습서에서는 대화형 통신을 만드는 동안 사용할 수 있도록 인쇄 및 웹 채널용 템플릿을 만드는 단계를 안내합니다. 이 튜토리얼의 끝에서 다음 작업을 수행할 수 있습니다.
 
-* Adobe Forms Designer를 사용하여 인쇄 채널용 XDP 템플릿 만들기
-* AEM Forms 서버에 XDP 템플릿 업로드
+* Adobe Forms 디자이너를 사용하여 인쇄 채널용 XDP 템플릿 만들기
+* XDP 템플릿을 AEM Forms 서버에 업로드
 * 웹 채널에 대한 템플릿 만들기 및 활성화
 
 ## 인쇄 채널용 템플릿 만들기 {#create-template-for-print-channel}
 
 다음 작업을 사용하여 인터랙티브 커뮤니케이션의 인쇄 채널용 템플릿을 만들고 관리할 수 있습니다.
 
-* [Forms Designer를 사용하여 XDP 템플릿 만들기](/help/forms/using/create-templates-print-web.md#create-xdp-template-using-forms-designer)
+* [Forms 디자이너를 사용하여 XDP 템플릿 만들기](/help/forms/using/create-templates-print-web.md#create-xdp-template-using-forms-designer)
 * [AEM Forms 서버에 XDP 템플릿 업로드](/help/forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server)
 * [레이아웃 조각에 대한 XDP 템플릿 만들기](/help/forms/using/create-templates-print-web.md#create-xdp-template-for-layout-fragments)
 
-### Forms Designer를 사용하여 XDP 템플릿 만들기 {#create-xdp-template-using-forms-designer}
+### Forms 디자이너를 사용하여 XDP 템플릿 만들기 {#create-xdp-template-using-forms-designer}
 
 사용 사례 [및](/help/forms/using/create-your-first-interactive-communication.md) 구조에 [](/help/forms/using/planning-interactive-communications.md)따라 XDP 템플릿에서 다음 하위 양식을 만듭니다.
 
@@ -58,11 +58,11 @@ ht-degree: 0%
 
 ![create_print_template](assets/create_print_template.gif)
 
-이러한 하위 양식은 Forms 서버에 XDP 파일을 업로드한 후 인쇄 템플릿에서 타겟 영역으로 표시됩니다. 문서 조각, 차트, 레이아웃 조각 및 이미지와 같은 모든 개체가 인터랙티브 커뮤니케이션을 만드는 동안 대상 영역에 추가됩니다.
+이러한 하위 양식은 XDP 파일을 Forms 서버에 업로드한 후 인쇄 템플릿에서 타겟 영역으로 표시됩니다. 문서 조각, 차트, 레이아웃 조각 및 이미지와 같은 모든 개체가 인터랙티브 커뮤니케이션을 만드는 동안 대상 영역에 추가됩니다.
 
 인쇄 채널용 XDP 템플릿을 만들려면 다음 단계를 수행하십시오.
 
-1. 양식 디자이너를 열고 **파일** > 새로 **만들기** **> 빈 양식 사용, 다음** ******** 을 누르고 완료완료에서 템플릿 작성을 위해 양식을 엽니다.
+1. Forms 디자이너를 열고 **파일** > **새로 만들기** > **빈 양식** 사용 **을 선택하고 다음****** 을 탭한 다음 Finish를 탭한 다음 템플릿을 만들 양식을 엽니다.
 
    [창] 메뉴에서 **개체 라이브러리** 및 **개체** 옵션 **을** 선택해야합니다.
 
@@ -113,18 +113,18 @@ ht-degree: 0%
 
 ### AEM Forms 서버에 XDP 템플릿 업로드 {#upload-xdp-template-to-the-aem-forms-server}
 
-양식 디자이너를 사용하여 XDP 템플릿을 만든 후 AEM Forms 서버에 업로드해야 대화형 통신을 만드는 동안 템플릿을 사용할 수 있습니다.
+Forms 디자이너를 사용하여 XDP 템플릿을 만든 후, 대화형 통신을 만드는 동안 템플릿을 사용할 수 있도록 AEM Forms 서버에 업로드해야 합니다.
 
-1. [ **[!UICONTROL 양식]** ] > [ **[!UICONTROL 양식 및 문서]를 선택합니다]**.
+1. [ **[!UICONTROL Forms]** ] > [ **[!UICONTROL Forms 및 문서]를 선택합니다]**.
 1. 만들기 **> 파일** **업로드를**&#x200B;누릅니다.
 
-   XDP( **create_first_ic_print_template** 템플릿)로 이동하여 선택하고 **열기를** 탭하여 XDP 템플릿을 AEM Forms 서버로 가져옵니다.
+   XDP( **create_first_ic_print_template** 템플릿)를 탐색하여 선택하고 **열기를** 눌러 XDP 템플릿을 AEM Forms 서버로 가져옵니다.
 
 ### 레이아웃 조각에 대한 XDP 템플릿 만들기 {#create-xdp-template-for-layout-fragments}
 
-대화형 커뮤니케이션의 인쇄 채널에 대한 레이아웃 조각을 만들려면, 양식 디자이너를 사용하여 XDP를 만들고 AEM Forms 서버에 업로드합니다.
+대화형 커뮤니케이션의 인쇄 채널에 대한 레이아웃 조각을 만들려면 Forms 디자이너를 사용하여 XDP를 만들고 AEM Forms 서버에 업로드합니다.
 
-1. 양식 디자이너를 열고 **파일** > 새로 **만들기** **> 빈 양식 사용, 다음** ******** 을 누르고 완료완료에서 템플릿 작성을 위해 양식을 엽니다.
+1. Forms 디자이너를 열고 **파일** > **새로 만들기** > **빈 양식** 사용 **을 선택하고 다음****** 을 탭한 다음 Finish를 탭한 다음 템플릿을 만들 양식을 엽니다.
 
    [창] 메뉴에서 **개체 라이브러리** 및 **개체** 옵션 **을** 선택해야합니다.
 
@@ -160,7 +160,7 @@ ht-degree: 0%
    1. 다른 **이름으로** **저장 유형** 드롭다운 목록에서.xdp를 선택합니다.
    1. 저장을 **누릅니다**.
 
-   Forms Designer를 사용하여 레이아웃 조각에 대한 XDP 템플릿을 만들었다면 레이아웃 조각을 만드는 동안 템플릿을 사용할 수 있도록 AEM Forms 서버에 [업로드해야](/help/forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) 합니다.
+   Forms 디자이너를 사용하여 레이아웃 조각에 대한 XDP 템플릿을 만든 후에는 레이아웃 조각을 만드는 동안 템플릿을 사용할 수 있도록 AEM Forms 서버에 [업로드해야](/help/forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) 합니다.
 
 ## 웹 채널용 템플릿 만들기 {#create-template-for-web-channel}
 
