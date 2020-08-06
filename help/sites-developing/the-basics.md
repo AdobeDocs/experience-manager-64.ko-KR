@@ -1,8 +1,8 @@
 ---
 title: AEM 코어 개념
 seo-title: 기본 사항
-description: AEM이 구조화된 방법과 JCR, Sling, OSGi, 발송자, 워크플로우 및 MSM에 대한 이해를 포함하여 AEM을 가장 위에서 개발하는 방법에 대한 핵심 개념에 대한 개요입니다
-seo-description: AEM이 구조화된 방법과 JCR, Sling, OSGi, 발송자, 워크플로우 및 MSM에 대한 이해를 포함하여 AEM을 가장 위에서 개발하는 방법에 대한 핵심 개념에 대한 개요입니다
+description: JCR, Sling, OSGi, 디스패처, 워크플로우 및 MSM에 대한 이해를 포함하여 AEM의 구조 구성 방식과 그 위에서 개발 방법에 대한 핵심 개념을 대략적으로 설명합니다.
+seo-description: JCR, Sling, OSGi, 디스패처, 워크플로우 및 MSM에 대한 이해를 포함하여 AEM의 구조 구성 방식과 그 위에서 개발 방법에 대한 핵심 개념을 대략적으로 설명합니다.
 uuid: e49f29db-a5d6-48a0-af32-f8785156746e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 3ceb701076b18ebe36949b2842242da0a25c9afe
 workflow-type: tm+mt
 source-wordcount: '3365'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM의 핵심 개념으로 이동하기 전에 AEM Sites [개발 시작 문서의 WKND 자습서를 완료하여 AEM 개발 프로세스 및 핵심 개념 소개를](/help/sites-developing/getting-started.md) 수행하는 것이 좋습니다.
+>AEM의 핵심 개념으로 넘어가기 전에, Adobe은 AEM 개발 프로세스에 대한 개요와 핵심 개념 소개를 위해 [AEM Sites](/help/sites-developing/getting-started.md) 개발 시작에서 WKND 자습서를 완료할 것을 권장합니다.
 
-## AEM에서 개발하기 위한 전제 조건 {#prerequisites-for-developing-on-aem}
+## AEM에서 개발하기 위한 사전 요구 사항 {#prerequisites-for-developing-on-aem}
 
-AEM 상단에서 개발하는 데 다음 기술이 필요합니다.
+AEM을 기반으로 개발하는 데 다음과 같은 기술이 필요합니다.
 
 * 다음을 비롯한 웹 애플리케이션 기술에 대한 기본 지식
 
@@ -44,13 +44,13 @@ AEM 상단에서 개발하는 데 다음 기술이 필요합니다.
 
 JCR(Java Content Repository) 표준인 [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)은 컨텐츠 저장소 내의 세부적인 수준에서 컨텐츠를 양방향 액세스할 수 있는 업체에 독립적이고 구현에 독립적인 방법을 지정합니다.
 
-사양 리드는 Adobe Research(스위스) AG에서 보유합니다.
+사양 리드는 Adobe 리서치(스위스) AG에 의해 소유됩니다.
 
 JCR [API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) 패키지, javax.jcr.&amp;ast; 저장소 컨텐츠의 직접 액세스 및 조작에 사용됩니다.
 
 ## Experience Server(CRX) 및 Jackrabbit {#experience-server-crx-and-jackrabbit}
 
-Experience Server는 AEM이 구축한 경험 서비스를 제공하며, 이를 활용하여 사용자 지정 애플리케이션을 구축할 수 있으며, Jackrabbit를 기반으로 콘텐츠 저장소를 포함하고 있습니다.
+Experience Server는 AEM이 기반으로 구축된 경험 서비스를 제공하며, 이를 활용하여 사용자 정의 애플리케이션을 구축할 수 있으며 Jackrabbit를 기반으로 콘텐츠 저장소를 포함하고 있습니다.
 
 [Apache Jackrabbit](https://jackrabbit.apache.org/) 은 JCR API 2.0의 완벽한 구현을 따르는 개방형 소스입니다.
 
@@ -58,7 +58,7 @@ Experience Server는 AEM이 구축한 경험 서비스를 제공하며, 이를 �
 
 ### Sling 소개 {#introduction-to-sling}
 
-AEM은 컨텐츠 중심 [애플리케이션을](https://sling.apache.org/site/index.html)쉽게 개발할 수 있는 REST 원칙을 기반으로 하는 웹 애플리케이션 프레임워크인 Sling을 사용하여 구축되었습니다. Sling은 Apache Jackrabbit와 같은 JCR 저장소 또는 AEM의 경우 CRX 컨텐츠 저장소를 데이터 저장소로 사용합니다. Sling은 Apache Software Foundation에 기여했으며, 자세한 내용은 Apache에서 확인할 수 있습니다.
+AEM은 컨텐츠 중심 [애플리케이션을](https://sling.apache.org/site/index.html)쉽게 개발할 수 있는 REST 원칙을 기반으로 하는 웹 애플리케이션 프레임워크인 Sling을 사용하여 구축되었습니다. Sling은 Apache Jackrabbit와 같은 JCR 저장소 또는 AEM의 경우 CRX Content Repository를 데이터 저장소로 사용합니다. Sling은 Apache Software Foundation에 기여했으며, 자세한 내용은 Apache에서 확인할 수 있습니다.
 
 Sling을 사용하면 렌더링할 컨텐츠의 유형이 첫 번째 처리 고려 사항이 아닙니다. 대신 기본 고려 사항은 렌더링을 수행하기 위해 스크립트를 찾을 수 있는 컨텐츠 개체로 URL이 확인되는지 여부입니다. 이 기능은 웹 컨텐츠 작성자가 요구 사항에 맞게 손쉽게 맞춤화할 수 있는 페이지를 제작할 수 있는 탁월한 지원을 제공합니다.
 
@@ -70,7 +70,7 @@ Sling [을 사용하여 개발하는 첫 번째 단계는 Discover Sling을 15�
 
 ![chlimage_1-84](assets/chlimage_1-84.png)
 
-다음 다이어그램에서는 저장소의 노드를 생성, 수정, 삭제, 복사 및 이동하는 데 필요한 선택 사항을 제공하는 모든 POST 요청에 대한 기본 핸들러인 SlingPostServlet을 처리할 때 사용할 수 있는 숨겨진 강력한 요청 매개 변수에 대해 설명합니다.
+다음 다이어그램은 저장소에서 노드를 생성, 수정, 삭제, 복사 및 이동하는 데 필요한 끝없는 옵션을 제공하는 모든 POST 요청에 대한 기본 핸들러인 SlingPostServlet을 처리할 때 사용할 수 있는 숨겨진 강력한 요청 매개 변수에 대해 설명합니다.
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
@@ -153,13 +153,13 @@ Sling은 JCR 노드 이외의 다른 작업도 리소스이지만 고급 기능�
 * 절대
 * 상대적, 구성 매개 변수에
 
-   상대적 경로는 이식성을 증가시켜 주는 Adobe에서 권장합니다.
+   상대적인 경로는 이식성이 증가하므로 Adobe에서 권장됩니다.
 
 모든 Sling 스크립트는 `/apps` 또는 `/libs`의 하위 폴더에 저장되므로 이러한 순서대로 검색할 수 있습니다(구성 요소 및 기타 요소 [사용자 정의 참조](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 몇 가지 다른 사항은 다음과 같습니다.
 
-* 메서드(GET, POST)가 필요한 경우 HTTP 사양에 따라 대문자로 지정됩니다(예: jobs.POST.esp(아래 참조).
+* 메서드(GET, POST)이 필요한 경우 HTTP 사양에 따라 대문자로 지정됩니다(예: jobs.POST.esp(아래 참조).
 * 다양한 스크립트 엔진이 지원됩니다.
 
    * `.esp, .ecma`: ECMAScript(JavaScript) 페이지(서버측 실행)
@@ -167,7 +167,7 @@ Sling은 JCR 노드 이외의 다른 작업도 리소스이지만 고급 기능�
    * `.java`: Java 서블릿 컴파일러(서버측 실행)
    * `.jst`: JavaScript 템플릿(클라이언트측 실행)
 
-해당 AEM 인스턴스에서 지원하는 스크립트 엔진 목록은 Felix Management Console()에 나열되어 `http://<host>:<port>/system/console/slingscripting`있습니다.
+AEM의 특정 인스턴스에서 지원하는 스크립트 엔진 목록은 Felix Management Console()에 `http://<host>:<port>/system/console/slingscripting`나열되어 있습니다.
 
 또한 Apache Sling은 널리 사용되는 다른 스크립팅 엔진(예: Groovy, JRuby, Freemarker)과의 통합을 지원하고 새로운 스크립팅 엔진을 통합하는 방법을 제공합니다.
 
@@ -177,9 +177,9 @@ Sling은 JCR 노드 이외의 다른 작업도 리소스이지만 고급 기능�
 
    스크립트는 /apps/hr/jobs/jobs.esp입니다. sling:resourceType의 마지막 섹션은 파일 이름을 형성합니다.
 
-* POST 요청(GET/HEAD를 제외한 모든 요청 유형, 메서드 이름은 대문자여야 함)
+* POST 요청(GET/HEAD을 제외한 모든 요청 유형, 메서드 이름은 대문자여야 함)
 
-   POST가 스크립트 이름에 사용됩니다.
+   스크립트 이름에 POST이 사용됩니다.
 
    대본이 될 것입니다 `/apps/hr/jobs/jobs.POST.esp`.
 
@@ -279,7 +279,7 @@ Sling 내에서 스크립트를 직접 호출할 수 없습니다. 이는 REST �
 
 * 다음을 포함하여 GET 이외의 http 메서드 자동 처리
 
-   * 기본 구현으로 처리되는 POST, PUT, DELETE
+   * POST, PUT, DELETE으로 처리되며 기본 구현으로 처리됩니다.
    * sling:resourceType 위치의 `POST.jsp` 스크립트
 
 * 귀하의 코드 아키텍처는 더 이상 깨끗하거나 구조화되어야 하는 것처럼 명확하게 구성되어 있지 않습니다. 대규모 개발을 위한 가장 중요한 요소
@@ -331,7 +331,7 @@ OSGi 프레임워크는 다시 시작할 필요 없이 이러한 번들의 동�
 
 자세한 내용 [은 웹 콘솔](/help/sites-deploying/web-console.md), [OSGI 구성](/help/sites-deploying/configuring-osgi.md) 및 [OSGi 구성](/help/sites-deploying/osgi-configuration-settings.md) 설정을참조하십시오.
 
-## AEM 환경의 개발 개체 {#development-objects-in-the-aem-environment}
+## AEM 환경에서의 개발목표 {#development-objects-in-the-aem-environment}
 
 개발에 대한 관심사는 다음과 같습니다.
 
@@ -355,7 +355,7 @@ JCR 이름인 노드를 Sling 환경에서 리소스라고도 합니다.
 
 노드 개체 조작에 대한 자세한 내용은 [Javadocs를 참조하십시오](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
-**위젯** AEM에서 모든 사용자 입력이 위젯에 의해 관리됩니다. 이러한 구성 요소는 컨텐츠 일부를 편집하는 데 사용됩니다.
+**위젯** AEM에서는 모든 사용자 입력이 위젯에 의해 관리됩니다. 이러한 구성 요소는 컨텐츠 일부를 편집하는 데 사용됩니다.
 
 대화 상자는 위젯을 결합하여 만들어집니다.
 
@@ -363,7 +363,7 @@ AEM은 위젯의 ExtJS 라이브러리를 사용하여 개발되었습니다.
 
 **대화** 상자 A 대화 상자는 특별한 유형의 위젯입니다.
 
-콘텐츠를 편집하려면 애플리케이션 개발자가 정의한 대화 상자를 사용합니다. 여기에는 일련의 위젯이 결합되어 사용자에게 관련 컨텐츠를 편집하는 데 필요한 모든 필드와 작업을 제공합니다.
+AEM은 컨텐츠를 편집하려면 애플리케이션 개발자가 정의한 대화 상자를 사용합니다. 여기에는 일련의 위젯이 결합되어 사용자에게 관련 컨텐츠를 편집하는 데 필요한 모든 필드와 작업을 제공합니다.
 
 대화 상자는 메타데이터 편집과 다양한 관리 도구에서도 사용됩니다.
 
@@ -432,7 +432,7 @@ pageManager가 페이지 관리자 개체이고 myResource가 리소스 개체�
 
 * `/libs`
 
-   AEM의 핵심에 속하는 라이브러리 및 정의 의 하위 폴더는 검색 또는 복제와 같이 기본 AEM 기능을 `/libs` 나타냅니다. AEM 작동 방식에 영향을 주므로 의 컨텐츠를 수정할 `/libs` 수 없습니다. 웹 사이트 전용 기능은 다음 `/apps` 에서 개발해야 합니다(구성 요소 [및 기타 요소 사용자 지정 참조](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+   AEM의 핵심에 속하는 라이브러리 및 정의 의 하위 폴더는 검색 또는 복제 등의 기본 AEM 기능을 `/libs` 나타냅니다. AEM 작동 방식에 영향을 주므로 의 컨텐츠를 수정할 `/libs` 수 없습니다. 웹 사이트 전용 기능은 다음 `/apps` 에서 개발해야 합니다(구성 요소 [및 기타 요소 사용자 지정 참조](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 * `/tmp`
 
@@ -444,11 +444,11 @@ pageManager가 페이지 관리자 개체이고 myResource가 리소스 개체�
 
 ## 환경 {#environments}
 
-AEM을 사용하는 프로덕션 환경은 종종 두 가지 유형의 인스턴스로 구성됩니다. 작성자 및 [게시 인스턴스](/help/sites-deploying/deploy.md#author-and-publish-installs).
+AEM을 사용하면 제작 환경이 두 가지 서로 다른 인스턴스로 구성되는 경우가 많습니다. 작성자 및 [게시 인스턴스](/help/sites-deploying/deploy.md#author-and-publish-installs).
 
 ## 디스패처 {#the-dispatcher}
 
-Dispatcher는 캐싱 및/또는 로드 밸런싱 모두를 위한 Adobe의 툴입니다. 자세한 내용은 디스패처 아래 [에서 확인할 수 있습니다](https://helpx.adobe.com/kr/experience-manager/dispatcher/user-guide.html).
+Dispatcher는 캐싱 및/또는 로드 밸런싱 모두를 위한 Adobe 도구입니다. 자세한 내용은 디스패처 아래 [에서 확인할 수 있습니다](https://helpx.adobe.com/kr/experience-manager/dispatcher/user-guide.html).
 
 ## FileVault(소스 개정 시스템) {#filevault-source-revision-system}
 
@@ -458,11 +458,11 @@ FileVault는 JCR 저장소에 파일 시스템 매핑 및 버전 제어를 제�
 
 ## 워크플로우 {#workflows}
 
-컨텐츠는 다양한 참가자의 승인 및 로그오프와 같은 단계를 포함하여 조직 프로세스에 따르는 경우가 많습니다. 이러한 프로세스는 AEM 내에서 [정의 및 개발된 워크플로우로](/help/sites-developing/workflows-models.md)표현될 수 있으며, [적절한 컨텐츠 페이지](/help/sites-administering/workflows.md) 또는 [디지털 자산에](/help/assets/assets-workflow.md) 적용될 수 있습니다.
+컨텐츠는 다양한 참가자의 승인 및 로그오프와 같은 단계를 포함하여 조직 프로세스에 따르는 경우가 많습니다. 이러한 프로세스는 AEM [내에서](/help/sites-developing/workflows-models.md)정의 및 개발된 워크플로우로 표현될 수 있으며 [필요한 경우](/help/sites-administering/workflows.md) 적절한 컨텐츠 페이지 [또는](/help/assets/assets-workflow.md) 디지털 자산에적용할 수 있습니다.
 
 워크플로우 엔진은 워크플로우 구현과 컨텐츠에 대한 후속 애플리케이션을 관리하는 데 사용됩니다.
 
-## 다중 사이트 관리 {#multi-site-management}
+## Multi-Site Management {#multi-site-management}
 
 MSM(Multi Site Manager)을 사용하면 일반적인 컨텐츠를 공유하는 여러 웹 사이트를 손쉽게 관리할 수 있습니다. MSM을 사용하면 한 사이트의 컨텐츠 변경 사항이 다른 사이트에서 자동으로 복제되도록 사이트 간의 관계를 정의할 수 있습니다.
 
