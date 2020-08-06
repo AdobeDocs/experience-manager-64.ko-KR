@@ -76,7 +76,7 @@ PDF 문서를 PostScript 파일로 변환할 때 생성된 PostScript 유형을 
 
 >[!NOTE]
 >
->설정할 수 있는 런타임 값에 대한 자세한 내용은 AEM Forms API 참조 `ToPSOptionsSpec` 의 [클래스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>설정할 수 있는 런타임 값에 대한 자세한 내용은 `ToPSOptionsSpec` AEM Forms API 참조에서 [클래스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **PDF 문서를 PostScript 파일로 변환**
 
@@ -119,7 +119,7 @@ PDF 서비스 API(Java)를 사용하여 PDF 문서를 PostScript로 변환:
 1. 전환 런타임 옵션을 설정합니다.
 
    * 생성자를 호출하여 `ToPSOptionsSpec` 개체를 만듭니다.
-   * 개체에 속하는 적절한 메서드를 호출하여 런타임 옵션을 `ToPSOptionsSpec` 설정합니다. 예를 들어, 만들어진 PostScript 수준을 정의하려면 `ToPSOptionsSpec` 개체의 `setPsLevel` 메서드를 호출하고 PostScript 수준을 지정하는 `PSLevel` 열거형 값을 전달합니다. 설정할 수 있는 모든 런타임 값에 대한 자세한 내용은 AEM Forms API 참조 `ToPSOptionsSpec` 의 [클래스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * 개체에 속하는 적절한 메서드를 호출하여 런타임 옵션을 `ToPSOptionsSpec` 설정합니다. 예를 들어, 만들어진 PostScript 수준을 정의하려면 `ToPSOptionsSpec` 개체의 `setPsLevel` 메서드를 호출하고 PostScript 수준을 지정하는 `PSLevel` 열거형 값을 전달합니다. 설정할 수 있는 모든 런타임 값에 대한 자세한 내용은 `ToPSOptionsSpec` AEM Forms API 참조에서 [클래스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. PDF 문서를 PostScript 파일로 변환합니다.
 
@@ -160,7 +160,7 @@ PDF 서비스 API(웹 서비스)를 사용하여 PDF 문서를 PostScript로 변
 1. PDF 변환 클라이언트 만들기
 
    * 기본 생성자를 사용하여 `ConvertPdfServiceClient` 개체를 만듭니다.
-   * 생성자를 사용하여 `ConvertPdfServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스(예: `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.)로 전달합니다. 속성을 사용할 필요는 `lc_version` 없습니다. 하지만 지정합니다 `?blob=mtom`.
+   * 생성자를 사용하여 `ConvertPdfServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) 속성을 사용할 필요는 `lc_version` 없습니다. 하지만 지정합니다 `?blob=mtom`.
    * 필드의 값을 `System.ServiceModel.BasicHttpBinding` 가져와 개체를 `ConvertPdfServiceClient.Endpoint.Binding` 만듭니다. 반환 값을 다음으로 캐스팅합니다 `BasicHttpBinding`.
    * 개체 `System.ServiceModel.BasicHttpBinding` 필드를 (으)로 `MessageEncoding` 설정합니다 `WSMessageEncoding.Mtom`. 이 값을 사용하면 MTOM이 사용됩니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
@@ -242,7 +242,7 @@ PDF 문서를 지원되는 유형으로 변환하려면 다음 단계를 수행�
 
 **런타임 옵션 설정**
 
-이미지 형식 및 해상도 값과 같은 런타임 옵션을 설정해야 합니다. 런타임 값에 대한 자세한 내용은 AEM Forms API 참조 `ToImageOptionsSpec` 의 [클래스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+이미지 형식 및 해상도 값과 같은 런타임 옵션을 설정해야 합니다. 런타임 값에 대한 자세한 내용은 `ToImageOptionsSpec` AEM Forms API 참조 [](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)의 클래스 참조를 참조하십시오.
 
 **PDF를 이미지로 변환**
 
@@ -321,7 +321,7 @@ Convert PDF Service API(웹 서비스)를 사용하여 PDF 문서를 이미지 �
 1. 변환 PDF 클라이언트 만들기
 
    * 기본 생성자를 사용하여 `ConvertPdfServiceClient` 개체를 만듭니다.
-   * 생성자를 사용하여 `ConvertPdfServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스(예: `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.)로 전달합니다. 속성을 사용할 필요는 `lc_version` 없습니다. 하지만 지정합니다 `?blob=mtom`.
+   * 생성자를 사용하여 `ConvertPdfServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) 속성을 사용할 필요는 `lc_version` 없습니다. 하지만 지정합니다 `?blob=mtom`.
    * 필드의 값을 `System.ServiceModel.BasicHttpBinding` 가져와 개체를 `ConvertPdfServiceClient.Endpoint.Binding` 만듭니다. 반환 값을 다음으로 캐스팅합니다 `BasicHttpBinding`.
    * 개체 `System.ServiceModel.BasicHttpBinding` 필드를 (으)로 `MessageEncoding` 설정합니다 `WSMessageEncoding.Mtom`. 이 값을 사용하면 MTOM이 사용됩니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
