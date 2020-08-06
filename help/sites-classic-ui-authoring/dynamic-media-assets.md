@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 2a60cacf-0551-44d4-9965-705a715d44c5
 translation-type: tm+mt
 source-git-commit: 4ae3c1dc9af8a9d4a3cdb8a30ed8d898e1079ce6
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 100%
 
 ---
 
@@ -25,5 +28,5 @@ Dynamic Media는 확대/축소, 360도 회전, 비디오를 비롯한 대화형 
 
 >[!NOTE]
 >
->If you are using Dynamic Media, you cannot simultaneously use automatic uploads available if [integrate Dynamic Media Classic into AEM](/help/sites-administering/scene7.md). See [enabling Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media). Dynamic Media는 기본적으로 비활성화됩니다.
+>[Dynamic Media Classic을 AEM에 통합](/help/sites-administering/scene7.md)한 경우에는 Dynamic Media를 사용할 때 자동 업로드를 동시에 사용할 수 없습니다. [Dynamic Media 활성화](/help/assets/config-dynamic.md#enabling-dynamic-media)를 참조하십시오. Dynamic Media는 기본적으로 비활성화됩니다.
 
