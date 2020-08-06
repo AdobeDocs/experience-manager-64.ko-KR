@@ -12,6 +12,9 @@ discoiquuid: 48826f03-6731-49c5-a6c5-6e2fb718f912
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 86%
 
 ---
 
@@ -39,6 +42,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * **하위 페이지 제외**: 이 선택 사항을 선택하면 소스 페이지에 대한 론치만 만들고 하위 페이지에 대해서는 만들지 않습니다. 기본적으로 이 선택 사항은 선택되어 있지 않습니다.
    * ****&#x200B;동기화 유지: 이 옵션을 선택하면, 소스 페이지가 변경될 때 론치 페이지 내용이 자동으로 업데이트됩니다. 이것은 론치를 [Live Copy](/help/sites-administering/msm.md)로 만듦으로써 성취됩니다.
    * **론치 날짜**: 론치 카피가 활성화될 날짜 및 시간입니다(**프로덕션 준비** 플래그에 따라 다름) [론치 - 이벤트 순서](/help/sites-authoring/launches.md#launches-the-order-of-events)를 참조하십시오.
+
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
 1. **만들기**&#x200B;를 클릭합니다.
