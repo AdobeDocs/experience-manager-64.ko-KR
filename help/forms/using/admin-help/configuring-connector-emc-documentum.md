@@ -1,8 +1,8 @@
 ---
 title: EMC Documentum용 커넥터 구성
 seo-title: EMC Documentum용 커넥터 구성
-description: AEM Forms와 EMC Documentum 간의 통신을 지원하기 위해 Connector for EMC Documentum을 구성하는 방법을 알아봅니다.
-seo-description: AEM Forms와 EMC Documentum 간의 통신을 지원하기 위해 Connector for EMC Documentum을 구성하는 방법을 알아봅니다.
+description: AEM 양식과 EMC Documentum 간의 통신을 지원하기 위해 Connector for EMC Documentum을 구성하는 방법을 알아봅니다.
+seo-description: AEM 양식과 EMC Documentum 간의 통신을 지원하기 위해 Connector for EMC Documentum을 구성하는 방법을 알아봅니다.
 uuid: fc96900a-ec8a-4efd-ad8e-25e9967e649b
 contentOwner: admin
 content-type: reference
@@ -26,7 +26,7 @@ EMC Documentum용 Connector를 설정하는 과정에는 서버 연결 및 저�
 
 >[!NOTE]
 >
->이전 릴리스에서 자산은 ECM 저장소에 저장될 수 있습니다. 현재 릴리스에서는 자산이 AEM Forms 기본 저장소에 저장되고 저장소 공급자 서비스는 더 이상 사용되지 않습니다. ECM 저장소에서 AEM 양식 저장소로 자산의 마이그레이션은 AEM 양식으로 업그레이드를 수행할 때 수행됩니다. 자세한 내용은 애플리케이션 서버에 대한 AEM forms 업그레이드 가이드를 참조하십시오.
+>이전 릴리스에서 자산은 ECM 저장소에 저장될 수 있습니다. 현재 릴리스에서는 자산이 AEM forms 기본 저장소에 저장되고 저장소 공급자 서비스는 더 이상 사용되지 않습니다. ECM 저장소에서 AEM 양식 저장소로 에셋을 마이그레이션하는 작업은 AEM 양식으로 업그레이드를 수행할 때 수행됩니다. 자세한 내용은 응용 프로그램 서버에 대한 AEM forms 업그레이드 안내서를 참조하십시오.
 
 ## 서버 연결 구성 {#configuring-the-server-connection}
 
@@ -42,7 +42,7 @@ EMC Documentum용 Connector를 설정하는 과정에는 서버 연결 및 저�
 
 1. 관리 콘솔에서 서비스 > Connector for EMC Documentum > 구성 설정을 클릭합니다.
 1. Documentum 구성 정보 영역에 호스트 이름 또는 IP 주소와 연결 브로커의 포트 번호를 입력합니다. 포트 번호는 양의 정수여야 합니다(예: 1489).
-1. [저장]을 클릭합니다.
+1. 저장을 클릭합니다.
 
 ### 주체 자격 증명 구성 {#configure-principal-credentials}
 
@@ -56,7 +56,7 @@ EMC Documentum용 Connector를 설정하는 과정에는 서버 연결 및 저�
 1. 관리 콘솔에서 서비스 > Connector for EMC Documentum > 구성 설정을 클릭합니다.
 1. Documentum Principal Credentials Information 영역에 super-administrator 권한이 있는 사용자의 사용자 이름과 암호를 입력합니다.
 1. 로그인 중에 명시적 저장소 이름이 제공되지 않으면 자격 증명과 연결된 저장소 이름을 입력합니다.
-1. [저장]을 클릭합니다.
+1. 저장을 클릭합니다.
 
 ### 저장소 서비스 공급자 변경 {#change-the-repository-service-provider}
 
@@ -74,7 +74,7 @@ Documentum에서 사용할 저장소 서비스 공급자를 구성할 수 있습
 
 1. 관리 콘솔에서 서비스 > Connector for EMC Documentum > 구성 설정을 클릭합니다.
 1. 저장소 서비스 공급자 정보 영역에서 대체 저장소 서비스 공급자를 선택합니다.
-1. [저장]을 클릭합니다.
+1. 저장을 클릭합니다.
 
 ## 저장소 자격 증명 구성 {#configuring-repository-credentials}
 
@@ -86,7 +86,7 @@ Documentum 자격 증명 정보는 AEM 양식 시스템 컨텍스트에서 사�
 1. 추가를 클릭합니다. [Documentum 시스템 인증서 정보] 페이지가 나타납니다.
 1. 저장소의 이름을 입력합니다.
 1. 사용자 이름과 암호를 입력합니다.
-1. [저장]을 클릭합니다.
+1. 저장을 클릭합니다.
 
 EMC Documentum용 Content Repository Connector 서비스 및/또는 EMC Documentum용 Repository Service가 실행 중인 경우 데이터베이스에 저장하기 전에 지정된 저장소에 대해 자격 증명 정보가 확인됩니다. 자격 증명이 잘못되었거나 존재하는 경우 오류 메시지가 표시됩니다.
 
@@ -100,7 +100,7 @@ EMC Documentum용 Content Repository Connector 서비스 및/또는 EMC Document
 1. 관리 콘솔에서 서비스 > Connector for EMC Documentum > 구성 설정을 클릭합니다.
 1. 자격 증명을 편집할 저장소 이름을 클릭합니다.
 1. 저장소의 사용자 이름 또는 암호 또는 둘 다를 변경합니다. (저장소 이름은 읽기 전용입니다.)
-1. [저장]을 클릭합니다.
+1. 저장을 클릭합니다.
 
 EMC Documentum용 Content Repository Connector 서비스 및/또는 EMC Documentum용 Repository Service가 실행 중인 경우 데이터베이스에 저장하기 전에 지정된 저장소에 대해 자격 증명 정보가 확인됩니다. 자격 증명이 잘못되었거나 존재하는 경우 오류 메시지가 표시됩니다.
 
