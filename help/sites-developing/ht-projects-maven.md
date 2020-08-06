@@ -38,7 +38,7 @@ Maven을 기반으로 AEM 프로젝트를 빌드하면 다음과 같은 몇 가�
 
 ### 우버항아리는 무엇입니까? {#what-is-the-uberjar}
 
-&quot;UberJar&quot;는 Adobe에서 제공하는 특수 JAR(Java Archive) 파일에 지정된 비공식 이름입니다. 이 JAR 파일에는 Adobe Experience Manager에 의해 노출된 모든 공용 Java API가 포함되어 있습니다. Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava에서 제공하는 AEM의 모든 공용 API와 이미지 처리에 사용되는 2개의 라이브러리(Werner Randelshofer의 CYMK JPEG ImageIO 라이브러리 및 TwetenMonkeys 이미지 라이브러리)가 포함되어 있습니다. UberJar에는 API 인터페이스와 클래스만 포함되어 있으므로 AEM에서 OSGi 번들로 내보낸 인터페이스와 클래스도 포함할 수 있습니다. 또한 내보낸 모든 패키지에 대해 올바른 패키지 *내보내기 버전이 들어 있는 MANIFEST.MF* 파일도 포함되어 있으므로 UberJar에 대해 빌드된 프로젝트에 올바른 패키지 가져오기 범위가 있는지 확인합니다.
+&quot;UberJar&quot;는 Adobe에서 제공하는 특수 JAR(Java Archive) 파일에 지정된 비공식 이름입니다. 이 JAR 파일에는 Adobe Experience Manager에서 노출한 모든 공개 Java API가 포함되어 있습니다. Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava에서 제공하는 AEM의 모든 공용 API와 이미지 처리에 사용되는 2개의 라이브러리(Werner Randelshofer의 CYMK JPEG ImageIO 라이브러리 및 TwetenMonkeys 이미지 라이브러리)가 포함되어 있습니다. UberJar에는 API 인터페이스와 클래스만 포함되어 있으므로 AEM에서 OSGi 번들로 내보낸 인터페이스와 클래스도 포함할 수 있습니다. 또한 내보낸 모든 패키지에 대해 올바른 패키지 *내보내기 버전이 들어 있는 MANIFEST.MF* 파일도 포함되어 있으므로 UberJar에 대해 빌드된 프로젝트에 올바른 패키지 가져오기 범위가 있는지 확인합니다.
 
 ### Adobe이 우버항아를 만든 이유는? {#why-did-adobe-create-the-uberjar}
 
@@ -671,6 +671,6 @@ $ mvn -PautoInstallPackagePublish -PintegrationServer install
 
 ### AEM Communities 사용 방법 {#how-to-work-with-aem-communities}
 
-AEM Communities 기능에 대해 라이선스를 부여하면 추가 API jar가 필요합니다.
+AEM Communities 기능에 대한 라이선스를 부여하면 추가 API jar가 필요합니다.
 
 자세한 내용은 커뮤니티에 대한 [Maven 사용을 참조하십시오.](/help/communities/maven.md)
