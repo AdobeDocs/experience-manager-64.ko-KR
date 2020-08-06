@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 14754023-e7c4-4dc5-a9d8-408b81861d95
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '398'
+ht-degree: 60%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
 ![chlimage_1-189](assets/chlimage_1-189.png)
 
-**파일 종속성을**&#x200B;해결하려면 다음을 수행하십시오.
+**파일 종속성을 해결하려면 다음을 수행하십시오**.
 
 1. In the **[!UICONTROL Card View]**, hover the pointer over the **[!UICONTROL Unresolved Dependencies]** banner message on the card, then tap the exclamation point icon.
 
@@ -42,6 +45,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
       1. 누락된 경로 및 파일 이름을 확인합니다.
       1. 속성 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 닫기]**&#x200B;를 탭합니다.
+
    After the files are uploaded return to **[!UICONTROL View Properties > Dependencies]** page. 새로 업로드된 자산이 이제 참조된 자산으로 올바로 나열됩니다.
 
    * **[!UICONTROL 종속성을 무시합니다]**.
