@@ -44,7 +44,7 @@ Adobe 뷰어 [참조 안내서를 참조하십시오](https://docs.adobe.com/con
 
 ## Managing Dynamic Media viewer presets {#managing-presets}
 
-도구 > 자산 > 뷰어 사전 설정을 탭하여 AEM에서 뷰어 사전 설정을 추가, 편집, 삭제, 게시, 게시 취소 및 미리 볼 수 **[!UICONTROL 있습니다]**.
+AEM에서 **[!UICONTROL 도구 > 자산 > 뷰어 사전 설정을 눌러 뷰어 사전 설정을 추가, 편집, 삭제, 게시, 게시 취소 및 미리 볼 수 있습니다]**.
 
 ![tools-assets](assets/tools-assets.png)
 
@@ -54,7 +54,7 @@ Adobe 뷰어 [참조 안내서를 참조하십시오](https://docs.adobe.com/con
 
 ## 반응형 디자인 웹 페이지에 대한 뷰어 지원 {#viewer-support-for-responsive-designed-web-pages}
 
-웹 페이지마다 요구 사항이 다릅니다. 예를 들어 별도의 브라우저 창에서 HTML5 뷰어를 여는 링크를 제공하는 웹 페이지가 필요한 경우가 있습니다. 다른 경우 호스팅 페이지에 HTML5 뷰어를 직접 포함해야 할 수도 있습니다. 후자의 경우 웹 페이지에 정적 레이아웃이 있을 수 있습니다. 또는 다른 장치 또는 서로 다른 브라우저 창 크기에 대해 *반응형* 표시 기능을 사용할 수 있습니다. 이러한 요구 사항을 충족하기 위해 Dynamic Media과 함께 제공되는 미리 정의된 모든 HTML5 뷰어는 정적 웹 페이지와 반응형 디자인 웹 페이지를 모두 지원합니다.
+웹 페이지마다 요구 사항이 다릅니다. 예를 들어 별도의 브라우저 창에서 HTML5 뷰어를 여는 링크를 제공하는 웹 페이지가 필요한 경우가 있습니다. 다른 경우 호스팅 페이지에 HTML5 뷰어를 직접 포함해야 할 수도 있습니다. 후자의 경우 웹 페이지에 정적 레이아웃이 있을 수 있습니다. 또는 다른 장치 또는 서로 다른 브라우저 창 크기에 대해 *반응형* 표시 기능을 사용할 수 있습니다. 이러한 요구 사항을 충족하기 위해 다이내믹 미디어와 함께 제공되는 미리 정의된 모든 HTML5 뷰어는 정적 웹 페이지와 반응형 디자인 웹 페이지를 모두 지원합니다.
 
 웹 페이지에 반응형 [뷰어를](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) 임베드하는 방법에 대한 자세한 내용은 *이미지 제공 API 도움말의* 응답형 이미지 라이브러리를 참조하십시오.
 
@@ -65,7 +65,7 @@ Adobe 뷰어 [참조 안내서를 참조하십시오](https://docs.adobe.com/con
 
 ## 뷰어 사전 설정 시스템 호환성  {#viewer-preset-system-compatibility}
 
-Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다음 시스템과 완벽하게 호환됩니다.
+Dynamic Media와 함께 제공되는 모든 기본 뷰어 사전 설정은 다음 시스템과 완전히 호환됩니다.
 
 * 데스크톱
 * Apple iPhone
@@ -92,7 +92,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
 | **파노라마 이미지** | 파노라마 이미지 및 PanoramicVR 뷰어는 구형 파노라마 이미지를 렌더링하여 사용자가 360° 회의실, 속성, 위치 또는 가로에서 볼 수 있는 환경을 경험하도록 합니다. |
 |  | 업로드된 이미지가 구형 파노라인으로 자격을 부여하려면 다음 중 하나 또는 둘 다를 가져야 합니다. <ul><li>2:1 종횡비</li><li>키워드에 필요한 직사각형, 구형 및 파노라마 또는 구형 및 파노라마로 태그를 지정합니다. 태그 [사용을 참조하십시오](../sites-authoring/tags.md).</li></ul> |
 |  | 종횡비와 키워드 기준은 모두 자산 세부 사항 페이지와 &quot;파노라마 미디어&quot; WCM 구성 요소의 파노라마 에셋에 적용됩니다. |
-|  | 중요: 이 뷰어는 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다. |
+|  | 중요: 이 뷰어는 다이내믹 미디어 - Scene7 모드에서만 사용할 수 있습니다. |
 | **회전 집합** | 사용자가 개체를 돌려 서로 다른 측면과 각도를 검사할 수 있도록 한 이미지의 여러 보기를 제공합니다. |
 | **비디오** | 점진적 또는 적응형 비트 전송률 스트리밍을 사용하여 비디오를 재생합니다. 적응형 비트 전송률 스트리밍은 디바이스 및 대역폭 검색을 자동으로 수행하여 올바른 포맷의 비디오를 제공할 수 있습니다. |
 | **세로 확대/축소** | 세로 확대/축소 뷰어를 사용하면 제품 이미지 보기 환경을 최대화하여 제품을 가장 잘 표현할 수 있습니다. 색상 견본의 수직 위치는 다음과 같습니다. <ul><li>색상 견본이 접힌 색상 보다 높게 나타나는지 확인합니다. 가로 색상 견본을 사용하면 사용자의  데스크탑 화면 크기에 따라 사용자가 페이지를 스크롤할 때까지 색상 견본을 볼 수 없었습니다. 뷰어에 색상 견본을 세로로 배치하면 사용자의 화면 크기와 상관없이 견본이 표시되도록 할 수 있습니다.</li><li>기본 이미지 크기를 최대화합니다. 가로 색상 견본을 사용하는 경우 페이지의 공간을 예약하여 표시되는지 확인해야 합니다. 이 위치가 주 이미지의 크기를 줄였습니다. 하지만 세로 견본 레이아웃에서는 이 공간을 할당할 필요가 없습니다. 따라서 주 이미지 크기를 최대화할 수 있습니다.</li></ul> |
@@ -100,7 +100,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
 
 ## 최신 뷰어 사전 설정 목록 {#list-of-out-of-the-box-viewer-presets}
 
-다음 표에서는 Dynamic Media과 함께 제공되는 미리 정의된 즉시 사용 가능한 모든 뷰어 사전 설정을 식별합니다.
+다음 표에서는 Dynamic Media와 함께 제공되는 사전 정의된 기본 뷰어 사전 설정을 모두 식별합니다.
 
 라이브 [데모도 참조하십시오](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
 
@@ -110,7 +110,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
 
 >[!NOTE]
 >
->Dynamic Media의 모든 기본 뷰어 사전 설정은 이미 활성화(켜짐)되었지만 게시해야 합니다.\
+>Dynamic Media의 모든 기본 뷰어 사전 설정은 이미 활성화되어 있지만, 게시해야 합니다.\
 >See [Publishing Viewer Presets](#publishing-viewer-presets).
 >
 >만들고 추가하는 모든 새로운 뷰어 사전 설정은 활성화 *및* 게시되어야 합니다.\
@@ -160,11 +160,11 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
 
 ## 표시되는 Dynamic Media 뷰어 사전 설정 수 증가 {#increasing-the-number-of-viewer-presets-that-display}
 
-AEM은 [세부 사항 보기] > [뷰어]에서 자산을 볼 때 **[!UICONTROL 다양한 뷰어 사전 설정을 보여줍니다]**. 표시되는 뷰어 수를 늘리거나 줄일 수 있습니다.
+AEM에서는 [세부 사항 보기] > [뷰어]에서 자산을 볼 때 다양한 **[!UICONTROL 뷰어 사전 설정을 표시합니다]**. 표시되는 뷰어 수를 늘리거나 줄일 수 있습니다.
 
 **표시되는 Dynamic Media 뷰어 사전 설정 수를 늘리려면 다음을 수행하십시오**.
 
-1. CRXDE **[!UICONTROL Lite]** (http://localhost:4502/crx/de)으로[이동합니다](http://localhost:4502/crx/de).
+1. CRXDE Lite **[!UICONTROL 로]** 이동합니다([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Navigate to the viewer preset listing node at `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`
 
    ![chlimage_1-221](assets/chlimage_1-221.png)
@@ -179,9 +179,9 @@ AEM은 [세부 사항 보기] > [뷰어]에서 자산을 볼 때 **[!UICONTROL �
 
 ## 새 Dynamic Media 뷰어 사전 설정 만들기 {#creating-a-new-viewer-preset}
 
-뷰어 사전 설정을 만들면 다양한 설정을 적용하여 자산을 보고 상호 작용할 수 있습니다. 그러나 새 뷰어 사전 설정을 만들 필요는 없습니다. 원하는 경우 AEM Assets과 함께 제공되는 기본 기본 기본 기본 기본 기본 기본 뷰어 사전 설정을 사용할 수 있습니다.
+뷰어 사전 설정을 만들면 다양한 설정을 적용하여 자산을 보고 상호 작용할 수 있습니다. 그러나 새 뷰어 사전 설정을 만들 필요는 없습니다. 원하는 경우 AEM Assets에 이미 포함되어 있는 기본 기본 기본 기본 기본 기본 뷰어 사전 설정을 사용할 수 있습니다.
 
-새 뷰어 사전 설정을 만들기로 선택한 경우, 저장한 후 **뷰어 사전 설정**&#x200B;페이지에서 뷰어 상태가 자동으로 활성화(설정)됩니다 **** . 이 상태는 **[!UICONTROL Dynamic Media]** 구성 요소 및 **[!UICONTROL 대화형 미디어]** 구성 요소에서 그리고 이미지나 비디오를 미리 볼 때마다 표시되도록 합니다.
+새 뷰어 사전 설정을 만들기로 선택한 경우, 저장한 후 **뷰어 사전 설정**&#x200B;페이지에서 뷰어 상태가 자동으로 활성화(설정)됩니다 **** . 이 상태는 **[!UICONTROL 다이내믹 미디어]** 구성 요소 및 **[!UICONTROL 대화형 미디어]** 구성 요소에서 그리고 이미지나 비디오를 미리 볼 때마다 표시됨을 의미합니다.
 
 일부 뷰어 사전 설정에는 뷰어의 사용 및 전체 동작에 영향을 줄 수 있는 전용 설정이 있습니다. 만들고 있는 뷰어 사전 설정에 따라 이러한 특수 사항을 알고 싶을 수 있습니다.
 
@@ -215,7 +215,7 @@ AEM은 [세부 사항 보기] > [뷰어]에서 자산을 볼 때 **[!UICONTROL �
 
       예를 들어, 유형의 뷰어 사전 설정을 만드는 경우 각 속성의 목록 및 설명 `Mixed_Media`에 [대해서는 혼합 미디어 뷰어](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) 사용자 지정을 참조하십시오.
 
-   * 별도의 CSS 파일에서 스타일 설정을 정의한 경우 CSS 파일을 AEM Assets에 업로드할 수 있습니다. 선택한 **[!UICONTROL 유형]** 풀다운 메뉴 아래에 있는 CSS **[!UICONTROL 가져오기를 탭하여 업로드된 CSS 파일을 찾아 뷰어 사전 설정과 연결하려면]** 시각적 편집기를 위로 스크롤해야 할 수도 있습니다.
+   * 별도의 CSS 파일에서 스타일 설정을 정의한 경우 CSS 파일을 AEM Assets에 업로드할 수 있습니다. 선택한 **[!UICONTROL 유형]** 풀다운 메뉴 아래에 있는 CSS **[!UICONTROL 가져오기를 탭하여 업로드된 CSS 파일을 찾아 뷰어]** 사전 설정과 연결하려면 시각적 편집기를 위로 스크롤해야 합니다.
 
       CSS 파일을 가져올 때 시각적 편집기는 CSS가 올바른 뷰어 마커를 사용하는지 확인합니다. 예를 들어 확대/축소 뷰어를 만드는 경우 가져오는 모든 CSS 규칙은 상위 뷰어 요소에 정의된 뷰어 클래스 이름을 사용하여 정의해야 `.s7mixedmediaviewer` 합니다.
 
@@ -316,15 +316,15 @@ AEM은 [세부 사항 보기] > [뷰어]에서 자산을 볼 때 **[!UICONTROL �
 
 ## Publishing Dynamic Media viewer presets {#publishing-viewer-presets}
 
-뷰어 사전 설정 *의*&#x200B;상태를 활성화(또는 켜기)하는 것은 Dynamic Media 구성 요소, 대화형 미디어 구성 요소 및 자산을 볼 때마다 뷰어 사전 설정이 표시되도록 함을 의미합니다.
+뷰어 사전 설정 *의*&#x200B;상태를 활성화(또는 켜짐)하는 것은 Dynamic Media 구성 요소, 대화형 미디어 구성 요소에서 그리고 자산을 볼 때마다 뷰어 사전 설정이 표시된다는 것을 의미합니다.
 
-그러나 뷰어 사전 설정이 있는 자산을 제공하려면 뷰어 사전 설정도 게시해야 합니다. 자산에 대한 URL 또는 포함 코드를 얻으려면 모든 뷰어 사전 설정 *을* 활성화하고 게시해야 합니다. Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정을 활성화하고 게시해야 합니다. 만들고 추가하는 사용자 정의 뷰어 사전 설정은 자동 활성화되지만 게시되어야 합니다.
+그러나 뷰어 사전 설정이 있는 자산을 제공하려면 뷰어 사전 설정도 게시해야 합니다. 자산에 대한 URL 또는 포함 코드를 얻으려면 모든 뷰어 사전 설정 *을* 활성화하고 게시해야 합니다. Dynamic Media와 함께 제공되는 즉시 사용 가능한 모든 뷰어 사전 설정을 활성화하고 게시해야 합니다. 만들고 추가하는 사용자 정의 뷰어 사전 설정은 자동 활성화되지만 게시되어야 합니다.
 
 뷰어 [사전 설정 활성화 또는 비활성화를 참조하십시오](#activating-or-deactivating-viewer-presets).
 
 자산 미리 [보기를 참조하십시오](previewing-assets.md).
 
-**Dynamic Media 뷰어 사전 설정을 게시하려면**:
+**Dynamic Media 뷰어 사전 설정을 게시하려면 다음을 수행하십시오**.
 
 1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구 > 자산 > 뷰어 사전 설정을 누릅니다]**.
 1. 게시할 뷰어 사전 설정을 하나 이상 선택합니다.
