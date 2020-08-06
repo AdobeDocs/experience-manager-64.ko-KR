@@ -41,9 +41,9 @@ Smart Content Service를 사용하기 전에 다음을 확인하여 통합을 �
 
 A public certificate allows you to authenticate your profile on [!DNL Adobe Developer Console].
 
-1. 사용자 [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 도구]** > Cloud Service **** > **[!UICONTROL 기존 Cloud Service에]**&#x200B;액세스합니다.
+1. 사용자 [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 도구]** > Cloud Services **** > **[!UICONTROL 기존 Cloud Services에]**&#x200B;액세스합니다.
 
-1. Cloud Service 페이지에서 자산 스마트 태그 아래의 **[!UICONTROL 지금]** 구성을 **[!UICONTROL 클릭합니다]**.
+1. Cloud Services 페이지에서 자산 스마트 태그 아래의 **[!UICONTROL 지금]** 구성을 **[!UICONTROL 클릭합니다]**.
 
 1. 구성 **[!UICONTROL 만들기]** 대화 상자에서 스마트 태그 구성의 제목과 이름을 지정합니다. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
@@ -85,7 +85,7 @@ A public certificate allows you to authenticate your profile on [!DNL Adobe Deve
 
    *그림: 새 보안 인증서를 추가하려면 키 저장소에서 기존`similaritysearch`항목을 삭제합니다.*
 
-1. 도구 **[!UICONTROL > Cloud Service]** **** > **[!UICONTROL 기존 Cloud Service]**&#x200B;로이동합니다. 자산 **[!UICONTROL 스마트 태그]** > 구성 **[!UICONTROL 표시]** > 사용 가능한 구성 **[!UICONTROL 을 클릭합니다]**. 필요한 구성을 클릭합니다.
+1. 도구 **[!UICONTROL > Cloud Services]** **** > **[!UICONTROL 기존 Cloud Services]**&#x200B;로이동합니다. 자산 **[!UICONTROL 스마트 태그]** > 구성 **[!UICONTROL 표시]** > 사용 가능한 구성 **[!UICONTROL 을 클릭합니다]**. 필요한 구성을 클릭합니다.
 
 1. To download a public certificate, click **[!UICONTROL Download Public Certificate for OAuth Integration]**.
 
@@ -109,7 +109,7 @@ Smart Content Service API를 사용하려면 Adobe Console에서 통합을 만�
 
 1. **[!UICONTROL 제품 프로필 선택]** 페이지에서 **[!UICONTROL 스마트 컨텐츠 서비스]**&#x200B;를 선택합니다. **[!UICONTROL 구성된 API 저장]**&#x200B;을 클릭합니다.
 
-   페이지에 구성에 대한 자세한 정보가 표시됩니다. 스마트 태그를 구성하려면 클라우드 구성의 [!UICONTROL 자산 스마트 태깅 서비스 설정] 에 이러한 값을 복사하고 [!DNL Experience Manager] 추가하려면 이 페이지를 열어 두십시오.
+   페이지에 구성에 대한 자세한 정보가 표시됩니다. 스마트 태그를 구성하려면 클라우드 구성의 [!UICONTROL 자산 스마트 태그 지정 서비스 설정] 에서 이러한 값을 복사하고 [!DNL Experience Manager] 추가하려면 이 페이지를 열어 두십시오.
 
    ![개요 탭에서 통합에 제공된 정보를 검토할 수 있습니다.](assets/integration_details.png)
 
@@ -119,7 +119,7 @@ Smart Content Service API를 사용하려면 Adobe Console에서 통합을 만�
 
 통합을 구성하려면 Adobe 개발자 콘솔 통합에서 [!UICONTROL TECHNICAL ACCOUNT ID], [!UICONTROL ORGANIZATION ID], [!UICONTROL CLIENT SECRET]및 [!UICONTROL CLIENT ID 필드 값을 사용하십시오] . 스마트 태그 클라우드 구성을 만들면 배포에서 API 요청을 인증할 수 [!DNL Experience Manager] 있습니다.
 
-1. 에서 [!DNL Experience Manager]도구 > Cloud Service **[!UICONTROL > 기존 Cloud Service]** 으로 이동하여 [!UICONTROL Cloud Service] 콘솔을 엽니다.
+1. 에서 [!DNL Experience Manager]도구 > Cloud Service **[!UICONTROL > 기존 Cloud Services]** 으로 이동하여 [!UICONTROL Cloud Services] 콘솔을 엽니다.
 
 1. 자산 **[!UICONTROL 스마트 태그]**&#x200B;아래에서 위에서 만든 구성을 엽니다. 서비스 설정 페이지에서 편집을 **[!UICONTROL 클릭합니다]**.
 
