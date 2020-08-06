@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 04a369c5eb4c0cb87f3dae8cd4360678315ebe2a
 workflow-type: tm+mt
 source-wordcount: '527'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -66,7 +66,7 @@ AEM의 단일 페이지 애플리케이션의 경우, 앱은 라우팅을 담당
 <meta property="cq:pagemodel_router" content="disable"\>
 ```
 
-SPA의 모든 경로는 AEM에서 액세스 가능한 리소스(예: &quot;)에 해당됩니다. 경로 `/content/mysite/mypage"``PageModelManager` 가 선택되면 해당 페이지 모델을 자동으로 로드하려고 합니다. 하지만 필요한 경우 SPA는 다음 항목이 무시해야 하는 경로의 &quot;블록 목록&quot;을 정의할 수도 있습니다. `PageModelManager`
+경로가 선택되면 SPA에서 해당 페이지 모델을 자동으로 로드하려고 `/content/mysite/mypage"``PageModelManager` 하기 때문에 SPA의 모든 경로가 AEM에서 액세스 가능한 리소스(예: &quot;)에 해당됩니다. 하지만, 필요한 경우, SPA는 다음과 같이 무시해야 하는 경로의 &quot;차단 목록&quot;을 정의할 수도 있습니다. `PageModelManager`
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>
