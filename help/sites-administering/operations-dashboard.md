@@ -22,7 +22,7 @@ ht-degree: 2%
 
 ## 소개 {#introduction}
 
-AEM 6의 작업 대시보드는 시스템 운영자가 AEM 시스템 상태를 한 눈에 모니터링할 수 있도록 도와줍니다. 또한 AEM의 관련 측면에 대한 자동 생성 진단 정보를 제공하고 자체 유지 관리 자동화를 구성 및 실행하여 프로젝트 작업 및 지원 사례를 크게 줄일 수 있습니다. 작업 대시보드는 사용자 지정 상태 확인 및 유지 관리 작업으로 확장할 수 있습니다. 또한 JMX를 통해 외부 모니터링 도구에서 작업 대시보드 데이터에 액세스할 수 있습니다.
+AEM 6의 Operations Dashboard를 사용하면 시스템 운영자가 AEM 시스템 상태를 한 눈에 모니터링할 수 있습니다. 또한 AEM의 관련 측면에 대한 자동 생성 진단 정보를 제공하고 자체 유지 관리 자동화를 구성 및 실행하여 프로젝트 운영 및 지원 사례를 크게 줄일 수 있습니다. 작업 대시보드는 사용자 지정 상태 확인 및 유지 관리 작업으로 확장할 수 있습니다. 또한 JMX를 통해 외부 모니터링 도구에서 작업 대시보드 데이터에 액세스할 수 있습니다.
 
 **작업 대시보드:**
 
@@ -31,7 +31,7 @@ AEM 6의 작업 대시보드는 시스템 운영자가 AEM 시스템 상태를 �
 * 문제 찾기, 분석 및 수정 시간 단축
 * 프로젝트 운영 비용을 크게 절감할 수 있는 자체 유지 관리 자동화 기능 제공
 
-AEM 시작 화면에서 **도구** - 작업 **으로 이동하여** 액세스할 수 있습니다.
+AEM 시작 화면에서 **도구** - 작업 **으로** 이동하여 액세스할 수 있습니다.
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ AEM 시작 화면에서 **도구** - 작업 **으로 이동하여** 액세스할
 
 ### 상태 확인 유형 {#health-check-types}
 
-AEM 6에는 두 가지 유형의 상태 검사가 있습니다.
+AEM 6에는 두 가지 유형의 건강검사가 있습니다.
 
 1. 개별 상태 검사
 1. 복합 상태 검사
@@ -184,7 +184,7 @@ AEM 6에는 두 가지 유형의 상태 검사가 있습니다.
    >
    >예를 들어 개별 보안 상태 확인을 만드는 경우 &quot;**보안**&quot; 태그를 할당하기만 하면 됩니다. 이 태그는 설치되면 작업 대시보드의 보안 검사 복합 체크 아래에 자동으로 나타납니다.
 
-### AEM과 함께 제공된 상태 검사 {#health-checks-provided-with-aem}
+### AEM과 함께 제공되는 상태 검사 {#health-checks-provided-with-aem}
 
 <table> 
  <tbody> 
@@ -194,7 +194,7 @@ AEM 6에는 두 가지 유형의 상태 검사가 있습니다.
   </tr> 
   <tr> 
    <td>쿼리 성능</td> 
-   <td><p>이 상태 검사는 AEM 6.4 <strong>에서 간소화되었으며</strong>, 이제 최근에 리팩토링된 MBean <code>Oak QueryStats</code> , 보다 구체적으로 <code>SlowQueries </code>속성을 확인합니다. 통계에 슬로우 쿼리가 포함되어 있으면 상태 검사가 경고를 반환합니다. 그렇지 않으면 OK 상태가 반환됩니다.<br /> </p> <p>이 상태 확인에 대한 MBean은 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.healcheck:name=queriesStatus,type=HealthCheck입니다</a>.</p> </td> 
+   <td><p>이 상태 검사는 AEM 6.4 <strong>에서 간소화되었으며</strong>, 이제 최근에 리팩토링된 MBean <code>Oak QueryStats</code> , 더 구체적으로 <code>SlowQueries </code>속성을 확인합니다. 통계에 슬로우 쿼리가 포함되어 있으면 상태 검사가 경고를 반환합니다. 그렇지 않으면 OK 상태가 반환됩니다.<br /> </p> <p>이 상태 확인에 대한 MBean은 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.healcheck:name=queriesStatus,type=HealthCheck입니다</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>관찰 큐 길이</td> 
@@ -202,7 +202,7 @@ AEM 6에는 두 가지 유형의 상태 검사가 있습니다.
     <ul> 
      <li>값이 값 <code>queueSize</code> 을 초과하는 경우(즉, 이벤트가 <code>maxQueueSize</code> 삭제될 때) 위험 상태를 반환합니다.</li> 
      <li>값이 <code>queueSize</code> 넘었을 경우 경고 <code>maxQueueSize * WARN_THRESHOLD</code> (기본값은 0.75)를 반환합니다. </li> 
-    </ul> <p>각 큐의 최대 길이는 별도의 구성(Oak 및 AEM)에서 생성되며 이 상태 확인에서 구성할 수 없습니다. 이 상태 확인에 대한 MBean은 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healcheck:name=ObservationQueueLengthHealthCheck,type=HealthCheck입니다</a>.</p> </td> 
+    </ul> <p>각 큐의 최대 길이는 별도의 구성(Oak 및 AEM)에서 생성되며 이 상태 검사에서는 구성할 수 없습니다. 이 상태 확인에 대한 MBean은 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healcheck:name=ObservationQueueLengthHealthCheck,type=HealthCheck입니다</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>쿼리 순회 제한</td> 
@@ -233,7 +233,7 @@ AEM 6에는 두 가지 유형의 상태 검사가 있습니다.
        <li>45분 전의 경우 OK 상태를 반환합니다. </li> 
       </ul> </li> 
      <li>이러한 조건이 충족되지 않으면 확인 상태가 반환됩니다.</li> 
-    </ul> <p>중요 및 경고 상태 임계값 모두 구성할 수 있습니다. 이 상태 확인에 대한 Mbean은 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healcheck:name=asyncIndexHealthCheck,type=HealthCheck입니다</a>.</p> <p><strong>참고: </strong>이 상태 검사는 AEM 6.4에서 사용할 수 있으며 AEM 6.3.0.1로 지원됩니다.</p> </td> 
+    </ul> <p>중요 및 경고 상태 임계값 모두 구성할 수 있습니다. 이 상태 확인에 대한 Mbean은 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healcheck:name=asyncIndexHealthCheck,type=HealthCheck입니다</a>.</p> <p><strong>참고: </strong>이 상태 검사는 AEM 6.4에서 제공되며 AEM 6.3.0.1로 지원됩니다.</p> </td> 
   </tr> 
   <tr> 
    <td>큰 Lucene 색인</td> 
@@ -241,7 +241,7 @@ AEM 6에는 두 가지 유형의 상태 검사가 있습니다.
     <ul> 
      <li>10억 개 이상의 문서가 있는 인덱스가 있는 경우 경고 상태</li> 
      <li>15억 개 이상의 문서가 있는 인덱스가 있는 경우 중요한 상태</li> 
-    </ul> <p>임계값은 구성할 수 있으며 상태 확인을 위한 MBean은 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlargeIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healcheck:name=largeIndexHealthCheck,type=HealthCheck입니다.</a></p> <p><strong>참고: </strong>이 검사는 AEM 6.4에서 사용할 수 있으며 AEM 6.3.2.0으로 지원됩니다.</p> </td> 
+    </ul> <p>임계값은 구성할 수 있으며 상태 확인을 위한 MBean은 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlargeIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healcheck:name=largeIndexHealthCheck,type=HealthCheck입니다.</a></p> <p><strong>참고: </strong>이 검사는 AEM 6.4에서 제공되며 AEM 6.3.2.0으로 지원됩니다.</p> </td> 
   </tr> 
   <tr> 
    <td>시스템 유지 관리</td> 
@@ -250,7 +250,7 @@ AEM 6에는 두 가지 유형의 상태 검사가 있습니다.
      <li>각 유지 관리 작업에는 관련 상태 검사가 수반됩니다.</li> 
      <li>유지 관리 창에 작업이 추가되지 않으면 상태 검사가 중요한 것으로 반환됩니다.</li> 
      <li>감사 로그 및 워크플로우 제거 유지 관리 작업을 구성하거나 유지 관리 창에서 제거해야 합니다. 구성되지 않은 상태로 두면, 이러한 작업은 처음 시도한 실행 시 실패하므로 시스템 유지 관리 검사가 위험 상태를 반환합니다.</li> 
-     <li><strong>AEM 6.4</strong>에서는 Lucene 바이너리 유지 관리 <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">작업에 대한 확인도</a> 있습니다</li> 
+     <li><strong>AEM 6.4에서는 Lucene 바이너리</strong>유지 관리 <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">작업을 확인할 수</a> 있습니다</li> 
      <li>AEM 6.2 이하에서는 작업이 실행되지 않으므로 시스템 유지 관리 검사가 시작 후 경고 상태를 반환합니다. 6.3부터 첫 번째 유지 관리 창에 아직 도달하지 않았으면 확인 메시지가 표시됩니다.</li> 
     </ul> <p>이 상태 확인에 대한 MBean은 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsystemchecks%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck입니다</a>.</p> </td> 
   </tr> 
@@ -276,7 +276,7 @@ AEM 6에는 두 가지 유형의 상태 검사가 있습니다.
     <ul> 
      <li>75번째 백분위수 값이 임계 임계값을 초과하는 경우 임계(기본값은 500밀리초)를 반환합니다.</li> 
      <li>75번째 백분위수 값이 경고 임계값을 초과할 경우 경고(기본값은 200밀리초)를 반환합니다.</li> 
-    </ul> <p>이 상태 확인에 대한 MBean은<em> org.apache.sling.healcheck:name=requestsStatus,type=HealthCheck입니다 </em><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DrequestsStatus%2Ctype%3DHealthCheck" target="_blank"></a>.</p> </td> 
+    </ul> <p>이 상태 확인에 대한 MBean은<em> org.apache.sling.healcheck:name=requestsStatus,type=HealthCheck </em><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DrequestsStatus%2Ctype%3DHealthCheck" target="_blank">입니다</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>오류 로그</td> 
@@ -326,7 +326,7 @@ AEM 6에는 두 가지 유형의 상태 검사가 있습니다.
 
 ## Nagios를 사용한 모니터링 {#monitoring-with-nagios}
 
-상태 확인 대시보드는 Granite JMX Mbeans를 통해 Nagios와 통합할 수 있습니다. 아래 예에서는 AEM을 실행하는 서버에서 사용된 메모리를 표시하는 검사를 추가하는 방법을 보여 줍니다.
+상태 확인 대시보드는 Granite JMX Mbeans를 통해 Nagios와 통합할 수 있습니다. 아래 예제는 AEM을 실행하는 서버에서 사용된 메모리를 표시하는 검사를 추가하는 방법을 보여줍니다.
 
 1. 모니터링 서버에 Nagios를 설치하고 설치합니다.
 1. 그런 다음 NRPE(Nagios Remote Plugin Executor)를 설치합니다.
@@ -335,7 +335,7 @@ AEM 6에는 두 가지 유형의 상태 검사가 있습니다.
    >
    >시스템에 Nagios 및 NRPE를 설치하는 방법에 대한 자세한 내용은 Nagios [설명서를 참조하십시오](https://library.nagios.com/library/products/nagioscore/manuals/).
 
-1. AEM 서버에 대한 호스트 정의를 추가합니다. 구성 관리자를 사용하여 Nagios XI 웹 인터페이스를 통해 수행할 수 있습니다.
+1. AEM 서버의 호스트 정의를 추가합니다. 구성 관리자를 사용하여 Nagios XI 웹 인터페이스를 통해 수행할 수 있습니다.
 
    1. 브라우저를 열고 Nagios 서버를 가리킵니다.
    1. 상단 메뉴에서 **구성** 단추를 누릅니다.
@@ -438,7 +438,7 @@ UI의 왼쪽 위 톱니바퀴 단추에서 로거 구성을 제공하여 로깅�
 
 >[!NOTE]
 >
->**AEM 6.4**&#x200B;버전에서는 유지 관리 작업이 정보 수준에서 더 많은 정보가 풍부한 형식으로 상자에 로그아웃됩니다. 이를 통해 유지 관리 작업의 상태를 보다 정확하게 파악할 수 있습니다.
+>**AEM 6.4에서는**&#x200B;유지 관리 작업이 정보 수준에서 보다 다양한 형식의 정보 형식으로 상자에 기록됩니다. 이를 통해 유지 관리 작업의 상태를 보다 정확하게 파악할 수 있습니다.
 >
 >타사 도구(예: Splunk)를 사용하여 유지 관리 작업 활동을 모니터링하고 이에 응답하는 경우 다음 로그 문을 사용할 수 있습니다.
 
@@ -481,9 +481,9 @@ DATE+TIME [MaintanceLogger] Name=<MT_NAME>, Status=<MT_STATUS>, Time=<MT_TIME>, 
 
 ### 쿼리 설명 {#explain-query}
 
-지정된 쿼리의 경우 Oak는 **oak:index 노드 아래에 있는 저장소에 정의된 Oak 색인을 기반으로 가장 잘 실행되는 방법을** 파악하려고 합니다. 쿼리에 따라 Oak에서 다른 인덱스를 선택할 수 있습니다. Oak가 쿼리를 실행하는 방식을 이해하는 것은 쿼리를 최적화하는 첫 번째 단계입니다.
+지정된 쿼리의 경우 Oak는 **oak:index 노드 아래에 있는 저장소에 정의된 Oak 색인을 기반으로 가장 잘 실행되는 방법을** 파악하려고 합니다. 쿼리에 따라 Oak에서 다른 인덱스를 선택할 수 있습니다. Oak가 쿼리를 실행하는 방식을 이해하는 것이 쿼리를 최적화하는 첫 번째 단계입니다.
 
-설명 쿼리는 Oak가 쿼리를 실행하는 방법을 설명하는 도구입니다. AEM 시작 화면에서 **도구 - 작업 - 진단** 으로 이동한 다음 **쿼리 성능** 을 클릭하고 **쿼리 설명** 탭으로 전환하여 액세스할수 있습니다.
+설명 쿼리는 Oak가 쿼리를 실행하는 방법을 설명하는 도구입니다. AEM 시작 화면에서 **도구 - 작업 - 진단으로** 이동한 다음 **쿼리 성능** 을 클릭하고 **쿼리 설명** 탭으로전환하여 액세스할 수 있습니다.
 
 **기능**
 
@@ -538,7 +538,7 @@ UI는 화면의 왼쪽 상단에 있는 검색 상자에 필터 기준을 입력
 
 자동 유지 관리 작업 페이지는 정기적인 실행을 위해 예약된 권장 유지 관리 작업을 보고 추적할 수 있는 곳입니다. 작업은 상태 점검 시스템과 통합됩니다. 인터페이스에서 작업을 수동으로 실행할 수도 있습니다.
 
-작업 대시보드의 유지 관리 페이지로 이동하려면 AEM 시작 화면에서 **도구 - 작업 - 대시보드 - 유지** 관리로 이동하거나 다음 링크를 직접 따라야 합니다.
+Operations Dashboard의 유지 관리 페이지로 이동하려면 AEM 시작 화면에서 **도구 - 작업 - 대시보드 - 유지** 관리로 이동하거나 다음 링크를 직접 따라야 합니다.
 
 `https://serveraddress:port/libs/granite/operations/content/maintenance.html`
 
@@ -564,11 +564,11 @@ UI는 화면의 왼쪽 상단에 있는 검색 상자에 필터 기준을 입력
 
 >[!NOTE]
 >
->AEM 6.1 이후 기존 유지 관리 창은 매월 실행되도록 구성할 수도 있습니다.
+>AEM 6.1 이후 기존 유지 관리 윈도우는 매월 실행되도록 구성할 수 있습니다.
 
 ### 개정 정리 {#revision-clean-up}
 
-AEM 6.4에 대한 수정 정리 수행에 대한 자세한 내용은 이 전용 문서를 [참조하십시오](/help/sites-deploying/revision-cleanup.md).
+AEM 6.4용 수정 정리 작업에 대한 자세한 내용은 이 [전용 문서를 참조하십시오](/help/sites-deploying/revision-cleanup.md).
 
 ### Lucene 바이너리 정리 {#lucene-binaries-cleanup}
 
@@ -577,7 +577,7 @@ Lucene 이진 파일 정리 작업을 사용하여 lucene 바이너리를 제거
 유지 관리 작업은 Lucene 관련 수정 가비지를 줄이기 위해 개발되었지만 작업을 실행할 때 일반적인 효율성 증가가 있습니다.
 
 * 데이터 저장소 가비지 수집 작업의 주별 실행이 보다 빠르게 완료됩니다.
-* 전체 AEM 성능을 약간 향상시킬 수도 있습니다.
+* 또한 전체 AEM 성능을 약간 향상시킬 수 있습니다
 
 다음 위치에서 Lucene 이진 파일 정리 작업에 액세스할 수 있습니다. **AEM > 도구 > 작업 > 유지 관리 > 일별 유지 관리 창 > Lucene 이진 파일 정리**.
 
@@ -785,7 +785,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
    <td>N/A</td> 
   </tr> 
   <tr> 
-   <td>보관소</td> 
+   <td>저장소</td> 
    <td> 
     <ul> 
      <li>오크 버전</li> 
