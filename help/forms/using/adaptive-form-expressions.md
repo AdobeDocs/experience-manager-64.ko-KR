@@ -89,7 +89,7 @@ JavaScript는 적응형 양식의 표현식 언어입니다. 모든 표현식은
 
 **반환 유형**: 클릭 표현식은 값을 반환하지 않습니다. 표현식이 값을 반환하는 경우 값이 무시됩니다.
 
-**예**: 단추의 클릭 동작에 텍스트 상자 **textbox1** 을 **채우려면**&#x200B;단추 `textbox1.value="AEM Forms"` 클릭 표현식은 &quot;
+**예**: 단추의 클릭 동작에 **텍스트 상자** 를 값 **AEM Forms**&#x200B;로 채우려면 단추 클릭 표현식은 `textbox1.value="AEM Forms"` &quot;
 
 ### 초기화 스크립트 {#initialization-script}
 
@@ -166,7 +166,7 @@ mobilly_status **** 필드의 값이 변경될 때마다 표현식이 다시 트
 
 >[!NOTE]
 >
->필드의 값이 프로그래밍 방식으로 변경되면 값 커밋 스크립트의 실행을 비활성화할 수 있습니다. 이렇게 하려면 AEM Forms 6.1 `https://[server]:[port]/system/console/configMgr and change` 과의 **호환성을** 위해 **적응형 양식 버전**&#x200B;으로 이동하십시오. 이후, 값 커밋 스크립트는 사용자가 UI에서 필드 값을 변경할 때만 실행됩니다.
+>필드의 값이 프로그래밍 방식으로 변경되면 값 커밋 스크립트의 실행을 비활성화할 수 있습니다. 이렇게 하려면 `https://[server]:[port]/system/console/configMgr and change` AEM Forms 6.1 **과의 호환성을** 위한 적응형 Forms 버전으로 **이동하십시오**. 이후, 값 커밋 스크립트는 사용자가 UI에서 필드 값을 변경할 때만 실행됩니다.
 
 ### 가시성 표현식 {#visibility-expression}
 
@@ -279,11 +279,11 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 
 다음 단계를 수행하여 특정 필드 유형에 대한 사용자 지정 패턴을 만들고 동일한 유형의 다른 필드에 재사용합니다.
 
-1. 작성 인스턴스에서 CRXDE Lite로 이동합니다.
+1. 작성 인스턴스의 CRXDE Lite으로 이동합니다.
 1. 사용자 지정 패턴을 유지할 폴더를 만듭니다. /apps 디렉토리에서 sling:folder 유형의 노드를 만듭니다. 예를 들어 이름이 있는 노드를 만듭니다 `customPatterns`. 이 노드 아래에서 다른 노드 `nt:unstructed` 를 만들고 이름을 지정합니다 `textboxpatterns`. 이 노드에는 추가할 다양한 사용자 지정 패턴이 포함되어 있습니다.
 1. 생성된 노드의 속성 탭을 엽니다. 예를 들어 의 속성 탭을 엽니다 `textboxpatterns`. 이 노드에 `guideComponentType` 속성을 추가하고 해당 값을 fd/af/components/formatter/guideTextBox *로 설정합니다*.
 1. 이 속성의 값은 패턴을 정의할 필드에 따라 달라집니다. 숫자 필드의 경우 `guideComponentType` 속성 값은 *fd/af/components/formatter/guideNumericBox입니다*. Datepicker 필드의 값은 *fd/af/components/formatter/guideDatepicker입니다*.
-1. 노드에 속성을 지정하여 사용자 지정 패턴을 추가할 수 `textboxpatterns` 있습니다. 이름(예: `pattern1`)을 가진 속성을 추가하고 해당 값을 추가하려는 패턴으로 설정합니다. 예를 들어 Fax=text `pattern1` {99-999-9999999} 값이 있는 속성을 추가합니다. 이 패턴은 적응형 양식에서 사용하는 모든 텍스트 상자에 사용할 수 있습니다.
+1. 노드에 속성을 지정하여 사용자 지정 패턴을 추가할 수 `textboxpatterns` 있습니다. 이름(예: `pattern1`)을 가진 속성을 추가하고 해당 값을 추가하려는 패턴으로 설정합니다. 예를 들어 Fax=text `pattern1` {99-999-9999999} 값이 있는 속성을 추가합니다. 이 패턴은 적응형 Forms에서 사용하는 모든 텍스트 상자에 사용할 수 있습니다.
 
    ![CrxDe에서 필드에 대한 사용자 정의 패턴 만들기](assets/creating-custom-patterns.png)
    **그림:** *사용자 정의 패턴 만들기*
