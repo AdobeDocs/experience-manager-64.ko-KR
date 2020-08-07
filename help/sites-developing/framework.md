@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 4b680d17-383b-4173-a444-0b7bdb24e6c8
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 1%
@@ -233,14 +233,20 @@ AEM에 포함된 노드 유형에 대한 기본 정의는 다음과 같습니다
 
    속성에 대한 특수 값 `cq:movedTo` 은 다음과 `nirvana`같습니다. 태그가 삭제될 때 적용되지만 보관해야 하는 하위 태그가 있기 때문에 저장소에서 제거할 수 `cq:movedTo` 없습니다.
 
-   >[!NOTE]이 `cq:movedTo` 조건 중 하나가 충족되는 경우에만 속성이 이동되거나 병합된 태그에만 추가됩니다.
+   >[!NOTE]
+   >
+   >이 `cq:movedTo` 조건 중 하나가 충족되는 경우에만 속성이 이동되거나 병합된 태그에만 추가됩니다.
+   >
    >1. 태그는 컨텐츠에 사용됩니다(즉, 참조가 있음) OR
    >1. 태그에 이미 이동한 하위 항목이 있습니다.
 
 
 * `cq:backlinks` 참조를 다른 방향으로 유지합니다. 즉, 태그 B로 이동했거나 태그 B와 병합한 모든 태그의 목록을 유지합니다. 태그 B가 이동/병합/삭제되거나 태그 B가 활성화된 경우 `cq:movedTo`속성을 최신 상태로 유지하는 데 주로 필요합니다. 이 경우 모든 배경 링크 태그도 활성화해야 합니다.
 
->[!NOTE]이 `cq:backlinks` 조건 중 하나가 충족되는 경우에만 속성이 이동되거나 병합된 태그에만 추가됩니다.
+>[!NOTE]
+>
+>이 `cq:backlinks` 조건 중 하나가 충족되는 경우에만 속성이 이동되거나 병합된 태그에만 추가됩니다.
+>
 >1. 태그는 컨텐츠에 사용됩니다(즉, 참조가 있음) OR
 >1. 태그에 이미 이동한 하위 항목이 있습니다.
 
