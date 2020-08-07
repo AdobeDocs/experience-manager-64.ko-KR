@@ -34,7 +34,7 @@ AEM 5.6 Adobe에서는 작성 환경을 위한 [반응형 디자인을](/help/si
 
    * 로고 표시
    * 전역 탐색에 대한 링크를 제공합니다.
-   * 다른 일반 작업에 대한 링크를 제공합니다. 검색, 도움말, Marketing Cloud 솔루션, 알림 및 사용자 설정과 같은 기능을 사용합니다.
+   * 다른 일반 작업에 대한 링크를 제공합니다.검색, 도움말, Marketing Cloud 솔루션, 알림 및 사용자 설정과 같은 기능을 사용합니다.
 
 * 다음과 같은 항목을 표시할 수 있는 왼쪽 레일(필요한 경우 표시되고 가제할 수 있음)입니다.
 
@@ -100,7 +100,7 @@ AEM은 Granite platform을 기본으로 사용하고, Granite 플랫폼에는 Ja
 
 >[!NOTE]
 >
->[MOCK] Granite is run as an open development project within Adobe: 코드, 토론 및 문제에 대한 기여도는 전체 회사에서 이루어집니다.
+>[MOCK] Granite is run as an open development project within Adobe:코드, 토론 및 문제에 대한 기여도는 전체 회사에서 이루어집니다.
 >
 >그러나 [화강암]은 오픈 소스 프로젝트가 **아닙니다** . 이것은 몇몇 오픈 소스 프로젝트(특히 아파치 슬링, 펠릭스, 잭래빗, 루센)를 기반으로 매우 중요하지만, Adobe은 공공과 내부적 사이에 명확한 선을 긋는다.
 
@@ -128,7 +128,7 @@ AEM은 Granite platform을 기본으로 사용하고, Granite 플랫폼에는 Ja
 * 기본 표준 UI 제공
 * 확장 가능 여부
 * 모바일 디바이스와 데스크탑 디바이스 모두를 위해 설계되었습니다(모바일 퍼스트).
-* [MOCK] Can be used in any Granite-based platform/product/project; eg AEM
+* [MOCK] Can be used in any Granite-based platform/product/project;eg AEM
 
 ![chlimage_1-186](assets/chlimage_1-186.png)
 
@@ -276,7 +276,7 @@ AEM은 Granite platform을 기본으로 사용하고, Granite 플랫폼에는 Ja
 목적:
 
 * 관리 애플리케이션을 위한 통합된 모양 및 느낌
-* 관리 응용 프로그램용 RAD
+* 관리 응용 프로그램용 Rad
 
 구현:
 
@@ -406,7 +406,7 @@ CSS는 실제 모양과 느낌을 제공하는 데 사용됩니다. 실제 스�
 * jQuery 플러그인, 특정 DOM 요소에 연결
 * 속성을 사용하여 `data-*` 동작 사용자 정의
 
-예제 태그의 추출(data-amp;ast;로 지정된 옵션 참고) 속성):
+예제 태그의 추출(data-amp;ast;로 지정된 옵션 참고)속성):
 
 ```xml
 <ul data-column-width="220" data-layout="card" class="cards">
