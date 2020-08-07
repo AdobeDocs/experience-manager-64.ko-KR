@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '9242'
 ht-degree: 0%
@@ -53,7 +53,7 @@ We.Finance가 We.Finance의 목표를 어떻게 달성하는데 AEM Forms이 도
 
 ### 새라는 We.Finance로부터 뉴스레터를 받고 신용카드를 신청한다 {#sarah-receives-a-newsletter-from-we-finance-and-applies-for-a-credit-card}
 
-Sarah Rose는 기존 We.Finance 고객입니다. 그녀는 We.Finance로부터 새로운 신용카드에 대한 뉴스레터를 받는다. 그녀는 그 제안이 재미있다고 생각하고 신용카드 신청하기로 결정했다. We.Finance 포털에서 제공하는 뉴스레터에 있는 지금 적용 버튼을 클릭하면 신용 카드 신청서.
+Sarah Rose는 기존 We.Finance 고객입니다. 그녀는 We.Finance로부터 새로운 신용카드에 대한 뉴스레터를 받는다. 그녀는 그 제안이 흥미진진하고 신용카드 신청하기로 결심했다. We.Finance 포털에서 제공하는 뉴스레터에 있는 지금 적용 버튼을 클릭하면 신용 카드 신청서.
 
 ![marketing-email](assets/marketing-email.png)
 
@@ -305,7 +305,10 @@ AEM Forms 서버에서 Target을 구성하려면 AEM Forms [에서 Target 설정
 1. 이제 다음 url을 사용하여 크롬 브라우저에서 양식을 여러 번 엽니다.
 
    `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
-   >[!NOTE] 다음에 양식을 열기 전에 **브라우저의 쿠키 지속성에서** mbox라는 이름의 쿠키를 제거합니다. 양식의 경험 A와 B를 무작위로 볼 수 있습니다.
+
+   >[!NOTE]
+   >
+   >다음에 양식을 열기 전에 **브라우저의 쿠키 지속성에서** mbox라는 이름의 쿠키를 제거합니다. 양식의 경험 A와 B를 무작위로 볼 수 있습니다.
 
 1. 양식을 선택하고 **자세히**&#x200B;를 클릭한 다음 **A/B 테스트 보고서를 클릭합니다**. 테스트를 시작했기 때문에 보고서에서 많은 데이터를 찾을 수 없습니다. 이제 몇 가지 시드 데이터를 제공하여 A/B 테스트 보고서가 어떻게 표시되는지 보겠습니다.
 
@@ -552,13 +555,19 @@ AEM Forms 서버에서 Target을 구성하려면 AEM Forms [에서 Target 설정
 1. 이제 다음 url을 사용하여 크롬 브라우저에서 양식을 여러 번 엽니다.
 
    `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
-   >[!NOTE] 다음에 양식을 열기 전에 **브라우저의 쿠키 지속성에서** mbox라는 이름의 쿠키를 제거합니다. 양식의 경험 A와 B를 무작위로 볼 수 있습니다.
+
+   >[!NOTE]
+   >
+   >다음에 양식을 열기 전에 **브라우저의 쿠키 지속성에서** mbox라는 이름의 쿠키를 제거합니다. 양식의 경험 A와 B를 무작위로 볼 수 있습니다.
 
 1. 양식을 선택하고 **자세히**&#x200B;를 클릭한 다음 **A/B 테스트 보고서를 클릭합니다**. 테스트를 시작했기 때문에 보고서에서 많은 데이터를 찾을 수 없습니다. 이제 몇 가지 시드 데이터를 제공하여 A/B 테스트 보고서가 어떻게 표시되는지 보겠습니다.
 
 1. CRXDE Lite을 열고 다음 파일을 백업합니다. /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. 위에 언급된 파일의 `onReportLoadSuccess` 함수 정의를 다음 파일의 함수 정의로 바꿉니다. /apps/we-finance/demo-artifacts/targetreport.js
-   >[!NOTE] 이러한 변경 사항은 데모 용도로만 적용됩니다. 이 절차를 완료한 후 파일 내용을 복원해야 합니다.
+
+   >[!NOTE]
+   >
+   >이러한 변경 사항은 데모 용도로만 적용됩니다. 이 절차를 완료한 후 파일 내용을 복원해야 합니다.
 
 1. 생성한 보고서를 새로 고치면 다음과 같은 항목이 표시됩니다. 보고 대시보드를 검토합니다.
 
@@ -805,7 +814,7 @@ https://[publishHost]:[publishPort]/wefinance의 We.Finance 포털로 이동하�
 
 Blue Chip Growth Fund 대화형 커뮤니케이션은 상위 및 하위 패널을 사용하여 관련 정보를 다른 섹션으로 구분합니다. 상위 패널은 모든 하위 패널을 탭으로 구성합니다.
 
-상위 탭의 레이아웃은 모든 하위 패널을 탭으로 변환하기 위해 맨 위의 탭으로 설정됩니다. https:// authorHost에서 편집 모드에서 대화형 통신 패널을 검토할 수[있습니다].[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html.
+상위 탭의 레이아웃은 모든 하위 패널을 탭으로 변환하기 위해 맨 위의 탭으로 설정됩니다. https:// authorHost에서 편집 모드에서 대화형 통신 패널을 검토할 수[있습니다].[ authorPort /editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html]에서 확인하십시오.
 
 #### 직접 보기  {#see-it-yourself-16}
 
