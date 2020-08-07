@@ -3,7 +3,7 @@ title: 자산 편집기 확장
 description: 사용자 지정 구성 요소를 사용하여 자산 편집기의 기능을 확장하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 1%
@@ -47,7 +47,7 @@ AEM Assets 구성 요소는 WCM 편집 clientlib의 확장을 사용합니다. T
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-이 샘플은 이 javascript 소스를 `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`)에 로드합니다.
+이 샘플은 이 JavaScript 소스를 `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`)로 로드합니다.
 
 ### 추가 스타일 시트 {#additional-style-sheets}
 
@@ -59,9 +59,9 @@ AEM Assets 구성 요소는 WCM 편집 clientlib의 확장을 사용합니다. T
 
 ### Geometrixx 스타일 시트 {#geometrixx-style-sheet}
 
-샘플 페이지 구성 요소에서는 모든 선택기가 ( `.asseteditor` )로 `static.css` 시작되어야`/etc/designs/geometrixx/static.css`합니다. 모범 사례: 모든 `.asseteditor` 선택기를 스타일 시트로 복사하고 원하는 대로 규칙을 조정합니다.
+샘플 페이지 구성 요소에서는 모든 선택기가 ( `.asseteditor` )로 `static.css` 시작되어야`/etc/designs/geometrixx/static.css`합니다. 모범 사례:모든 `.asseteditor` 선택기를 스타일 시트로 복사하고 원하는 대로 규칙을 조정합니다.
 
-### FormChooser: 최종 로딩에 대한 조정 리소스 {#formchooser-adjustments-for-eventually-loaded-resources}
+### FormChooser:최종 로딩에 대한 조정 리소스 {#formchooser-adjustments-for-eventually-loaded-resources}
 
 자산 편집기는 양식 선택기를 사용하여 동일한 양식 페이지에서 자산의 URL에 양식 선택기 및 양식의 경로를 추가하면 리소스를 편집할 수 있습니다(이 경우 자산).
 
