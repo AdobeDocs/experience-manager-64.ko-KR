@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2293'
 ht-degree: 0%
 
 ---
@@ -82,42 +82,36 @@ cq:tags 인덱스 규칙을 추가하기 전
 
 * **쿼리 빌더 쿼리**
 
-   * 
-
-      ```
-      type=cq:Page
-       property=jcr:content/cq:tags
-       property.value=my:tag
-      ```
+   ```
+   type=cq:Page
+    property=jcr:content/cq:tags
+    property.value=my:tag
+   ```
 
 * **쿼리 계획**
 
    * `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* where [a].[jcr:content/cq:tags] = 'my:tag' */`
 
-이 쿼리는 `cqPageLucene` 인덱스로 확인되지만, 속성 인덱스 규칙이 `jcr:content` 없거나 이 제한을 평가할 `cq:tags`때 인덱스의 모든 레코드가 일치하는지 `cqPageLucene` 확인됩니다. 즉, 인덱스에 100만 개의 노드가 있으면 100만 개의 레코드가 확인되어 결과 세트를 결정합니다. `cq:Page`
+이 쿼리는 `cqPageLucene` 인덱스로 확인되지만, 속성 인덱스 규칙이 `jcr:content` 없거나 이 제한을 평가할 `cq:tags`때 인덱스의 모든 레코드가 일치하는지 `cqPageLucene` 확인합니다. 즉, 인덱스에 100만 개의 노드가 있으면 100만 개의 레코드가 확인되어 결과 세트를 결정합니다. `cq:Page`
 
 cq:tags 인덱스 규칙을 추가한 후
 
 * **cq:태그 색인 규칙**
 
-   * 
-
-      ```
-      /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
-       @name=jcr:content/cq:tags
-       @propertyIndex=true
-      ```
-
+       &quot;
+ /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags     
+ @name=jcr:content/cq:tags     
+ @propertyIndex=trueTags     
+     &quot;
+   
 * **쿼리 빌더 쿼리**
 
-   * 
-
-      ```
-      type=cq:Page
-       property=jcr:content/cq:tags
-       property.value=myTagNamespace:myTag
-      ```
-
+       &quot;
+    type=cq:Page
+     property=jcr:content/cq:tags
+     property.value=myTagNamespace:myTag
+     &quot;
+   
 * **쿼리 계획**
 
    * `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) jcr:content/cq:tags:my:tag where [a].[jcr:content/cq:tags] = 'my:tag' */`
@@ -193,21 +187,18 @@ AEM에서는 다음 쿼리 언어를 지원합니다.
 
    * **최적화되지 않은 쿼리**
 
-      * 
+      ```
+       property=jcr:content/contentType
+       property.value=article-page
+      ```
 
-         ```
-          property=jcr:content/contentType
-          property.value=article-page
-         ```
    * **최적화된 쿼리**
 
-      * 
-
-         ```
-          type=cq:Page 
-          property=jcr:content/contentType 
-          property.value=article-page
-         ```
+      ```
+       type=cq:Page 
+       property=jcr:content/contentType 
+       property.value=article-page
+      ```
    nodetype 제한이 없는 쿼리는 AEM에서 AEM의 모든 노드가 하위 유형인 `nt:base` nodetype을 가정하므로 사실상 nodetype 제한이 없습니다.
 
    이 쿼리 `type=cq:Page` 를 `cq:Page` 노드로만 제한하고 쿼리를 AEM cqPageLucene로 확인하여 결과를 AEM의 노드 하위 집합( `cq:Page` 노드만)으로 제한합니다.
@@ -216,22 +207,19 @@ AEM에서는 다음 쿼리 언어를 지원합니다.
 
    * **최적화되지 않은 쿼리**
 
-      * 
+      ```
+      type=nt:hierarchyNode
+      property=jcr:content/contentType
+      property.value=article-page
+      ```
 
-         ```
-         type=nt:hierarchyNode
-         property=jcr:content/contentType
-         property.value=article-page
-         ```
    * **최적화된 쿼리**
 
-      * 
-
-         ```
-         type=cq:Page
-         property=jcr:content/contentType
-         property.value=article-page
-         ```
+      ```
+      type=cq:Page
+      property=jcr:content/contentType
+      property.value=article-page
+      ```
    `nt:hierarchyNode` 은 상위 노드 `cq:Page`의 유형이며, 사용자 지정 응용 프로그램 `jcr:content/contentType=article-page` 을 통해 `cq:Page` 노드에만 적용된다고 가정할 경우 이 쿼리는 `cq:Page` 노드만 반환합니다 `jcr:content/contentType=article-page` 이는 다음 이유로 인해 최적의 제한 사항입니다.
 
    * 다른 노드가 상속받는 `nt:hierarchyNode` (예: `dam:Asset`)을 클릭합니다.
@@ -243,20 +231,17 @@ AEM에서는 다음 쿼리 언어를 지원합니다.
 
    * **최적화되지 않은 쿼리**
 
-      * 
+      ```
+        property=jcr:content/contentType
+        property.value=article-page
+      ```
 
-         ```
-         property=jcr:content/contentType
-         property.value=article-page
-         ```
    * **최적화된 쿼리**
 
-      * 
-
-         ```
-         property=jcr:content/sling:resourceType
-         property.value=my-site/components/structure/article-page
-         ```
+      ```
+      property=jcr:content/sling:resourceType
+      property.value=my-site/components/structure/article-page
+      ```
    속성 제한을 (사용자 지정 값) `jcr:content/contentType` 에서 잘 알려진 속성으로 변경하면 쿼리를 `sling:resourceType` 통해 모든 콘텐츠를 인덱싱하는 속성 색인 `slingResourceType` 으로 확인할 수 있습니다 `sling:resourceType`.
 
    속성 인덱스(Lucene 속성 색인과 반대)는 쿼리가 nodetype으로 구분되지 않고 단일 속성 제한이 결과 세트를 지배하는 경우에 가장 적합합니다.
@@ -265,24 +250,21 @@ AEM에서는 다음 쿼리 언어를 지원합니다.
 
    * **최적화되지 않은 쿼리**
 
-      * 
+      ```
+      type=cq:Page
+      path=/content
+      property=jcr:content/contentType
+      property.value=article-page
+      ```
 
-         ```
-         type=cq:Page
-         path=/content
-         property=jcr:content/contentType
-         property.value=article-page
-         ```
    * **최적화된 쿼리**
 
-      * 
-
-         ```
-         type=cq:Page
-         path=/content/my-site/us/en
-         property=jcr:content/contentType
-         property.value=article-page
-         ```
+      ```
+      type=cq:Page
+      path=/content/my-site/us/en
+      property=jcr:content/contentType
+      property.value=article-page
+      ```
    경로 제한을 범위 `path=/content`에서 범위 `path=/content/my-site/us/en` 로 범위를 지정하면 색인이 검사를 받아야 하는 색인 항목의 수를 줄일 수 있습니다. 쿼리가 경로를 매우 잘 제한할 수 있는 경우, `/content` 또는 `/content/dam`인덱스를 선택해야 합니다 `evaluatePathRestrictions=true`.
 
    참고: 를 사용하면 인덱스 크기가 `evaluatePathRestrictions` 증가합니다.
@@ -291,23 +273,20 @@ AEM에서는 다음 쿼리 언어를 지원합니다.
 
    * **최적화되지 않은 쿼리**
 
-      * 
+      ```
+      type=cq:Page
+      property=jcr:content/contentType
+      property.operation=like
+      property.value=%article%
+      ```
 
-         ```
-         type=cq:Page
-         property=jcr:content/contentType
-         property.operation=like
-         property.value=%article%
-         ```
    * **최적화된 쿼리**
 
-      * 
-
-         ```
-         type=cq:Page
-         fulltext=article
-         fulltext.relPath=jcr:content/contentType
-         ```
+      ```
+      type=cq:Page
+      fulltext=article
+      fulltext.relPath=jcr:content/contentType
+      ```
    텍스트가 와일드카드(&quot;%...&#39;)로 시작하는 경우 색인을 사용할 수 없으므로 LIKE 조건이 평가하기가 느립니다. jcr:contains 조건에서는 전체 텍스트 인덱스를 사용할 수 있으므로 기본 사용됩니다. 이로 인해 확인된 Lucene 속성 색인이 indexRule을 `jcr:content/contentType` 포함해야 합니다 `analayzed=true`.
 
    이와 같은 쿼리 기능을 사용하는 `fn:lowercase(..)` 것은 이보다 더 빠른 것이 아니므로 최적화하기가 어려울 수 있습니다(보다 복잡하고 까다로운 색인 분석기 구성 제외). 가능한 가장 작은 잠재적 결과 집합에서 기능을 수행해야 하는 전체 쿼리 성능을 개선하기 위해 다른 범위 지정 제한을 식별하는 것이 가장 좋습니다.
@@ -318,21 +297,18 @@ AEM에서는 다음 쿼리 언어를 지원합니다.
 
    * **최적화되지 않은 쿼리**
 
-      * 
+      ```
+      type=cq:Page
+      path=/content
+      ```
 
-         ```
-         type=cq:Page
-         path=/content
-         ```
    * **최적화된 쿼리**
 
-      * 
-
-         ```
-         type=cq:Page
-         path=/content
-         p.guessTotal=100
-         ```
+      ```
+      type=cq:Page
+      path=/content
+      p.guessTotal=100
+      ```
    쿼리 실행 속도가 빠르지만 결과 수가 큰 경우 p. `guessTotal` 는 쿼리 빌더 쿼리의 중요한 최적화 기능입니다.
 
    `p.guessTotal=100` 처음 100개의 결과만 수집하도록 Query Builder에 지시하고 하나 이상의 결과가 존재하는지 여부를 나타내는 부울 플래그를 설정합니다(이 수를 카운트하면 속도가 느려짐). 이러한 최적화는 페이지 매김 또는 결과의 하위 세트만 점진적으로 표시되는 무제한 로드 사용 사례를 능가합니다.
@@ -345,24 +321,20 @@ AEM에서는 다음 쿼리 언어를 지원합니다.
 
    * **쿼리 빌더 쿼리**
 
-      * 
+      ```
+      query type=cq:Page
+      path=/content/my-site/us/en
+      property=jcr:content/contentType
+      property.value=article-page
+      orderby=@jcr:content/publishDate
+      orderby.sort=desc
+      ```
 
-         ```
-         query type=cq:Page
-         path=/content/my-site/us/en
-         property=jcr:content/contentType
-         property.value=article-page
-         orderby=@jcr:content/publishDate
-         orderby.sort=desc
-         ```
    * **Query Builder 쿼리에서 생성된 XPath**
 
-      * 
-
-         ```
-         /jcr:root/content/my-site/us/en//element(*, cq:Page)[jcr:content/@contentType = 'article-page'] order by jcr:content/@publishDate descending
-         ```
-
+      ```
+      /jcr:root/content/my-site/us/en//element(*, cq:Page)[jcr:content/@contentType = 'article-page'] order by jcr:content/@publishDate descending
+      ```
 
 1. XPath(또는 JCR-SQL2)를 [Oak 색인 정의 생성기에](https://oakutils.appspot.com/generate/index) 제공하여 최적화된 Lucene 속성 색인 정의를 생성합니다.
 
@@ -398,21 +370,17 @@ AEM에서는 다음 쿼리 언어를 지원합니다.
 
    * **쿼리 빌더 쿼리**
 
-      * 
+      ```
+      type=myApp:Author
+      property=firstName
+      property.value=ira
+      ```
 
-         ```
-         type=myApp:Author
-         property=firstName
-         property.value=ira
-         ```
    * **Query Builder 쿼리에서 생성된 XPath**
 
-      * 
-
-         ```
-         //element(*, myApp:Page)[@firstName = 'ira']
-         ```
-
+      ```
+      //element(*, myApp:Page)[@firstName = 'ira']
+      ```
 
 1. XPath(또는 JCR-SQL2)를 [Oak 색인 정의 생성기에](https://oakutils.appspot.com/generate/index) 제공하여 최적화된 Lucene 속성 색인 정의를 생성합니다.
 
