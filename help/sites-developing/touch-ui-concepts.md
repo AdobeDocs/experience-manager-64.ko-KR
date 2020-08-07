@@ -104,7 +104,7 @@ AEM은 Granite platform을 기본으로 사용하고, Granite 플랫폼에는 Ja
 >
 >그러나 [화강암]은 오픈 소스 프로젝트가 **아닙니다** . 이것은 몇몇 오픈 소스 프로젝트(특히 아파치 슬링, 펠릭스, 잭래빗, 루센)를 기반으로 매우 중요하지만, Adobe은 공공과 내부적 사이에 명확한 선을 긋는다.
 
-## [MOCK] Granite UI {#granite-ui}
+## Granite UI {#granite-ui}
 
 [MOCK] The Granite engineering platform provides a foundation UI framework. 주요 목표는 다음과 같습니다.
 
