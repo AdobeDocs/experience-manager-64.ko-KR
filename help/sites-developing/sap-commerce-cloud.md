@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 1%
@@ -171,18 +171,16 @@ hybris는 사용자 세션을 사용하여 고객의 장바구니와 같은 정�
 
 * hybris 확장자는 지정된 간격(예: 간격을 초 단위로 지정하는 24시간마다)에 변경 내용을 AEM으로 가져오도록 구성할 수 있는 투표 가져오기(&quot;hybris&quot; scheme&quot;)를 제공합니다.
 
-   * 
-
-      ```
-      http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
-       {
-       * "jcr:mixinTypes": ["cq:PollConfig"],
-       * "enabled": true,
-       * "source": "hybris:outdoors",
-       * "jcr:primaryType": "cq:PageContent",
-       * "interval": 86400
-       }
-      ```
+   ```
+     http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
+      {
+      * "jcr:mixinTypes": ["cq:PollConfig"],
+      * "enabled": true,
+      * "source": "hybris:outdoors",
+      * "jcr:primaryType": "cq:PageContent",
+      * "interval": 86400
+      }
+   ```
 
 * AEM의 카탈로그 구성은 단계 **및** **온라인** 카탈로그 버전을 인식합니다.
 
@@ -356,7 +354,7 @@ public class AxisFilter implements VariantFilter {
 * **AEM-일반 제품 구조**
 
    * 각 변형에는 자체 리프 노드가 있어야 합니다.
-   * 제품 인터페이스는 제품 및 변형을 모두 표시하지만 관련 저장소 노드는 해당 항목과 관련이 있습니다.
+   * 제품 인터페이스는 제품 및 변형을 모두 표시하지만 관련 저장소 노드는 그에 따라 다릅니다.
    * 제품 노드는 제품 속성과 변형 축에 대해 설명합니다.
 
 #### 예 {#example-1}
@@ -664,4 +662,3 @@ public class MyImportHandler extends DefaultImportHandler {
     ...
 }
 ```
-
