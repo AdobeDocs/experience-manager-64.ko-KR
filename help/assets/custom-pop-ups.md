@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1063'
 ht-degree: 2%
 
 ---
@@ -110,7 +110,7 @@ ht-degree: 2%
    * 대화형 이미지 뷰어: [setHandlers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * 대화형 비디오 뷰어: [setHandlers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. 이제 quickViewActivate &quot;핸들러를 구성해야 합니다.
+1. 이제 핸들러를 구성해야 `quickViewActivate` 합니다.
 
    quickViewActivate 핸들러는 뷰어의 Quickviews를 제어합니다. 처리기에는 Quickview에서 사용할 변수 목록과 함수 호출이 포함되어 있습니다. 포함 코드는 Quickview에서 설정된 SKU 변수에 대한 매핑과 샘플 loadQuickView 함수 호출을 제공합니다.
 
@@ -189,7 +189,7 @@ ht-degree: 2%
    </div>
    ```
 
-1. 팝업에서 sku 값을 업데이트하는 함수 추가; 5단계에서 만든 간단한 함수를 교체하여 팝업을 표시합니다. 를 사용하여 다음을 수행할 수 있습니다.
+1. 팝업에서 sku 값을 업데이트하는 함수 추가;5단계에서 만든 간단한 함수를 교체하여 팝업을 표시합니다. 를 사용하여 다음을 수행할 수 있습니다.
 
    ```xml
    <script type="text/javascript">
