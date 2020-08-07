@@ -28,11 +28,11 @@ ht-degree: 2%
 >
 >이 하위 섹션의 목록은 완전하지는 않지만, 소개를 위한 것입니다.
 
-### AEM 내의 기능 {#features-within-aem}
+### AEM의 기능 {#features-within-aem}
 
-AEM을 구현할 때(특히 처음) AEM의 [기능 및 워크플로우를 검토하여 필요한 영역을 확인해야](https://www.adobe.com/kr/marketing/experience-manager.html) 합니다.
+AEM 구현 시(특히 처음) AEM의 [기능 및 워크플로우를 검토하여 필요한 영역을 확인해야](https://www.adobe.com/kr/marketing/experience-manager.html) 합니다.
 
-사용할 AEM의 기능과 디자인에 미치는 영향을 고려해 보십시오. 예를 들면 다음과 같습니다.
+사용 중인 AEM의 기능과 디자인에 미치는 영향을 고려해 보십시오. 예를 들면 다음과 같습니다.
 
 * [상거래](/help/sites-administering/ecommerce.md)
 * [스크린](https://docs.adobe.com/content/help/ko-KR/experience-manager-screens/user-guide/aem-screens-introduction.html)
@@ -43,7 +43,7 @@ AEM을 구현할 때(특히 처음) AEM의 [기능 및 워크플로우를 검토
 * [커뮤니티](/help/communities/deploy-communities.md)
 * [Livefyre](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
 
-또한 새로운 기능이 추가된 시기를 [확인하려면](/help/release-notes/release-notes.md)다양한 버전의 AEM에 대한 릴리스 노트를 확인하십시오.
+또한 AEM의 다양한 [버전에](/help/release-notes/release-notes.md)대한 릴리스 노트를 확인하여 새로운 기능이 추가된 시기를 확인하십시오.
 
 ### 통합 {#integrations}
 
@@ -69,7 +69,7 @@ AEM은 다른 Adobe 제품 및/또는 타사 서비스와 통합할 수 있습�
 
 >[!NOTE]
 >
->이러한 사항은 일반적이며, [우수 사례 체크리스트는](/help/managing/best-practices.md) AEM과 관련된 세부 사항을 다룹니다.
+>모범 사례 체크리스트 [는 AEM과 관련하여](/help/managing/best-practices.md) 구체적인 사항을 다룹니다.
 
 * **역할**
 
@@ -194,7 +194,7 @@ Target 지표는 프로젝트 시작 시 정의됩니다.
 
 따라서 디자인을 결정하기 *전에* 타겟 지표를 정의해야 합니다. 이를 통해 이러한 요소를 기반으로 디자인을 최적화할 수 있습니다. 프로젝트가 개발되면 기본 디자인 원칙을 변경하는 것은 어려울 것입니다.
 
-웹 사이트의 구조를 만들 때 AEM 웹 사이트에 대해 권장되는 구조를 따릅니다. 다음 문제 및/또는 원칙을 이해해야 합니다.
+웹 사이트의 구조를 만들 때는 AEM 웹 사이트에 대해 권장되는 구조를 따릅니다. 다음 문제 및/또는 원칙을 이해해야 합니다.
 
 * 웹 사이트 컨텐츠를 구성하는 방법
 * 템플릿 및 구성 요소의 작동 방식
@@ -279,7 +279,7 @@ Target 지표는 프로젝트 시작 시 정의됩니다.
 
 * 게시 시 측정(제작 환경 및/또는 CFC 오버헤드 없음)
 * 서버에서 측정됨(네트워크 오버헤드 없음)
-* 캐시되지 않음(AEM 출력 캐시 없음, Dispatcher 캐시 없음)
+* 캐시되지 않음(AEM 출력 캐시 없음, 발송자 캐시 없음)
 * 의존 관계가 많은 복잡한 항목만(HTML, JS, PDF, ...)
 * 시스템에 다른 로드 없음
 
@@ -309,7 +309,7 @@ Target 지표는 프로젝트 시작 시 정의됩니다.
 
 검색 요청에 대한 타겟을 설정하는 것은 다음에 따라 경험의 문제입니다.
 
-* AEM의 경험
+* AEM 경험
 * 다른 목표에 비해 얼마나 자주 검색되는지 평가
 * 지속성 관리자
 * 검색 색인
@@ -359,11 +359,11 @@ Target 지표는 프로젝트 시작 시 정의됩니다.
    |---|---|---|
    | 클라이언트 | 사용자 컴퓨터의 계산 성능 | 페이지 레이아웃의 복잡성. |
    | 네트워크 | 네트워크 대역폭. | 페이지의 크기(코드, 이미지 등). |
-   | Dispatcher 캐시 | 웹 서버의 서버 메모리(기본 메모리 및 하드 드라이브) | 웹 서버(기본 메모리 및 하드 드라이브). 캐시된 페이지의 수 및 크기입니다. |
+   | 디스패처 캐시 | 웹 서버의 서버 메모리(기본 메모리 및 하드 드라이브) | 웹 서버(기본 메모리 및 하드 드라이브). 캐시된 페이지의 수 및 크기입니다. |
    | 출력 캐시 | AEM 서버의 서버 메모리(기본 메모리 및 하드 드라이브). | 출력 캐시의 페이지 수 및 크기, 페이지당 종속성 수입니다. 디스패처 캐시가 이 볼륨을 낮춥니다. |
    | 웹 서버 | 웹 서버의 계산 성능 | 요청 금액. 캐싱은 이 볼륨을 낮춥니다. |
    | 템플릿 | 웹 서버의 계산 성능 | 템플릿의 복잡성 |
-   | 보관소 | 저장소의 성능입니다. | 저장소에서 로드된 페이지 수입니다. |
+   | 저장소 | 저장소의 성능입니다. | 저장소에서 로드된 페이지 수입니다. |
 
 ### 기타 지표 {#other-metrics}
 
@@ -377,7 +377,7 @@ Target 지표는 프로젝트 시작 시 정의됩니다.
 
 보안은 중요하며 끊임없이 증가하는 도전입니다. 프로젝트의 초기 단계부터 고려되고 계획되어야 ****** 합니다.
 
-보안 [체크리스트](/help/sites-administering/security-checklist.md) 세부 사항은 배포 시 AEM 설치가 안전한지 확인하는 단계입니다. 기타 보안 측면에는 [보안(개발 시)](/help/sites-developing/security.md) 및 [사용자 관리 및 보안](/help/sites-administering/security.md)기능이 포함됩니다.
+보안 [검사 목록](/help/sites-administering/security-checklist.md) 세부 사항은 배포 시 AEM 설치가 안전한지 확인하는 단계입니다. 기타 보안 측면에는 [보안(개발 시)](/help/sites-developing/security.md) 및 [사용자 관리 및 보안](/help/sites-administering/security.md)기능이 포함됩니다.
 
 ## 병렬 및 반복 작업 {#parallel-and-iterative-tasks}
 
@@ -427,7 +427,7 @@ Target 지표는 프로젝트 시작 시 정의됩니다.
       * 첫 번째 스프린트는 테스트 환경에 첫 번째 배포를 수행합니다.
       * 모든 스프린트는 실행 가능한 결과를 가지고 있다.
       * 각 스프린트는 고객 사인오프를 받습니다(정형 테스트 최소).
-   * 프로젝트 동안 사용 가능한 AEM 버전 업데이트에 대한 이벤트를 계획합니다.
+   * 프로젝트 중에 사용 가능한 AEM 버전 업데이트에 대한 이벤트 계획을 참조하십시오.
    * 인쇄 기간 동안 테스트 및 최적화를 계획할 수 있습니다.
    * 안정화 및 최적화 단계 계획
    * 추가 릴리스에 대해 계획할 항목의 로그를 만듭니다.
@@ -479,7 +479,7 @@ Target 지표는 프로젝트 시작 시 정의됩니다.
 
 >[!CAUTION]
 >
->이 수치는 초기 추정치에만 사용할 수 있다. 숙련된 AEM 개발자는 세부 분석을 수행해야 합니다.
+>이 수치는 초기 추정치에만 사용할 수 있다. 숙련된 AEM 개발자는 상세한 분석을 수행해야 합니다.
 
 | 위상 | 노력 |
 |---|---|
@@ -495,7 +495,7 @@ Target 지표는 프로젝트 시작 시 정의됩니다.
 
 ## 참조 아키텍처 {#reference-architecture}
 
-AEM 아키텍처에 대한 템플릿 솔루션을 제공하기 위해 참조 아키텍처가 제공됩니다. 참조 아키텍처는 크기 조절, 안정성 및 보안 등 기업 시스템에서 흔히 발생하는 문제를 해결합니다.
+AEM 아키텍처에 템플릿 솔루션을 제공하기 위해 참조 아키텍처가 제공됩니다. 참조 아키텍처는 크기 조절, 안정성 및 보안 등 기업 시스템에서 흔히 발생하는 문제를 해결합니다.
 
 다음 사이트 지표를 정의해야 합니다.
 
@@ -558,11 +558,11 @@ AEM 아키텍처에 대한 템플릿 솔루션을 제공하기 위해 참조 아
   </tr>
   <tr>
    <td>Eclipse</td>
-   <td><p>Eclipse는 다양한 프로젝트로 구성된 오픈 소스 IDE입니다. 이러한 플랫폼은 라이프사이클에서 소프트웨어를 구축, 배포 및 관리하기 위해 확장 가능한 프레임워크, 툴 및 런타임으로 구성된 개방형 개발 플랫폼을 구축하는 데 중점을 두고 있습니다.</p> <p>자세한 <a href="/help/sites-developing/howto-projects-eclipse.md">내용은 Eclipse를 사용하여 AEM 프로젝트</a> 개발 방법을 참조하십시오.</p> </td>
+   <td><p>Eclipse는 다양한 프로젝트로 구성된 오픈 소스 IDE입니다. 이러한 플랫폼은 라이프사이클에서 소프트웨어를 구축, 배포 및 관리하기 위해 확장 가능한 프레임워크, 툴 및 런타임으로 구성된 개방형 개발 플랫폼을 구축하는 데 중점을 두고 있습니다.</p> <p>자세한 <a href="/help/sites-developing/howto-projects-eclipse.md">내용은 Eclipse를 사용하여 AEM 프로젝트를 개발하는</a> 방법을 참조하십시오.</p> </td>
   </tr>
   <tr>
    <td>IntelliJ</td>
-   <td><p>포괄적인 기능을 제공하는 전문가(따라서 라이선스 비용 부담) IDE </p> <p>자세한 <a href="/help/sites-developing/ht-intellij.md">내용은 IntelliJ IDEA를 사용하여 AEM 프로젝트</a> 개발 방법을 참조하십시오.</p> </td>
+   <td><p>포괄적인 기능을 제공하는 전문가(따라서 라이선스 비용 부담) IDE </p> <p>자세한 <a href="/help/sites-developing/ht-intellij.md">내용은 IntelliJ IDEA를 사용하여 AEM 프로젝트를</a> 개발하는 방법을 참조하십시오.</p> </td>
   </tr>
   <tr>
    <td>마벤</td>
@@ -581,7 +581,7 @@ AEM 아키텍처에 대한 템플릿 솔루션을 제공하기 위해 참조 아
 
 ### 우수 사례 {#best-practices}
 
-Adobe는 모든 단계 및 대상에 대한 추가적인 우수 사례를 제공합니다.
+Adobe은 모든 단계 및 대상에 대한 추가적인 우수 사례를 제공합니다.
 
 * [배포](/help/sites-deploying/best-practices.md)
 * [작성](/help/sites-authoring/best-practices.md)
