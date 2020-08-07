@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ddb86546-d04b-4967-937b-50a19b0237a0
 translation-type: tm+mt
-source-git-commit: d653a5db1b12ae2d650db2894dfa602326f7a295
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 1%
@@ -178,19 +178,16 @@ JSRP에 대한 UGC의 기본 위치는 입니다 `/content/usergenerated/asi/jcr
       * `/content/community-components/en/forum/jcr:content`
    * 점수 및 배지 속성 추가
 
-      * 
+      ```
+      scoringRules = [/etc/community/scoring/rules/comments-scoring,
+      /etc/community/scoring/rules/forums-scoring]
+      ```
 
-         ```
-         scoringRules = [/etc/community/scoring/rules/comments-scoring,
-         /etc/community/scoring/rules/forums-scoring]
-         ```
+      ```
+      badgingRules =[/etc/community/badging/rules/comments-scoring,
+      /etc/community/badging/rules/forums-scoring]
+      ```
 
-      * 
-
-         ```
-         badgingRules =[/etc/community/badging/rules/comments-scoring,
-         /etc/community/badging/rules/forums-scoring]
-         ```
    * 포럼 구성 요소 노드 찾기
 
       * `/content/community-components/en/forum/jcr:content/content/forum`
@@ -200,7 +197,6 @@ JSRP에 대한 UGC의 기본 위치는 입니다 `/content/usergenerated/asi/jcr
 
       * `allowBadges = true`
    * 사용자가 로그인하고 포럼 항목을 만들며 브론즈 배지를 수여합니다
-
 
 
 
