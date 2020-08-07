@@ -112,7 +112,7 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 
 페이지를 작성할 때 사용자는 리소스(예: 페이지, 구성 요소, 자산 등)에서 자주 선택해야 합니다. 이렇게 하면 작성자가 항목을 선택해야 하는 경우와 같이 목록의 형태를 취할 수 있습니다.
 
-목록을 적절한 크기로 유지하고 사용 사례와 관련되도록 하기 위해 사용자 지정 술어의 형태로 필터를 구현할 수 있습니다. 예를 들어 [ [`pathbrowser`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html) 화강암 []](/help/sites-developing/touch-ui-concepts.md#granite-ui) 구성 요소를 사용하여 사용자가 특정 리소스의 경로를 선택할 수 있는 경우 표시된 경로를 다음과 같이 필터링할 수 있습니다.
+목록을 적절한 크기로 유지하고 사용 사례와 관련되도록 하기 위해 사용자 지정 술어의 형태로 필터를 구현할 수 있습니다. 예를 들어 [`pathbrowser`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html) 화강암 [](/help/sites-developing/touch-ui-concepts.md#granite-ui) 구성 요소를 사용하여 사용자가 특정 리소스의 경로를 선택할 수 있는 경우 표시된 경로를 다음과 같이 필터링할 수 있습니다.
 
 * 인터페이스를 구현하여 사용자 지정 설명 [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/predicate/package-summary.html) 을 구현합니다.
 * 술어의 이름을 지정하고, 술어를 사용할 때 해당 이름을 참조합니다 `pathbrowser`.
