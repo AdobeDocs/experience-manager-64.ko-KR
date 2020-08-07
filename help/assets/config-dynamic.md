@@ -8,7 +8,7 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 translation-type: tm+mt
-source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '7833'
 ht-degree: 2%
@@ -156,7 +156,7 @@ AEM에서 Dynamic Media Classic(Scene7)을 사용하려면 [특정 시나리오�
 
    s7delivery에 게시하는 경우 다음 trustStore 인수도 포함해야 합니다.
 
-   ```
+   ```shell
    -Djavax.net.ssl.trustStore=<absoluteFilePath>/customerTrustStoreFileName>
    
     -Djavax.net.ssl.trustStorePassword=<passwordForTrustStoreFile>
@@ -172,7 +172,7 @@ AEM에서 Dynamic Media Classic(Scene7)을 사용하려면 [특정 시나리오�
 
       이미지 서버 로그 파일 이름의 예: `ImageServer-57346-2019-07-25.log`
    * s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - s7access 로그는 `/is/image` 및 를 통해 Dynamic Media에 수행된 각 요청을 기록합니다 `/is/content`.
-   이러한 로그는 다이내믹 미디어가 활성화된 경우에만 사용됩니다. 전체 **다운로드 패키지** 는 **[!UICONTROL system/console/status-Bundelist]** 페이지에서 생성된 포함되지 않습니다. 다이내믹 미디어 문제가 있는 경우 고객 지원에 전화할 때 이 두 로그를 모두 문제에 추가하십시오.
+   이러한 로그는 다이내믹 미디어가 활성화된 경우에만 사용됩니다. 전체 **다운로드 패키지** 는 **[!UICONTROL system/console/status-Bundelist]** 페이지에서 생성된 포함되지 않습니다.다이내믹 미디어 문제가 있는 경우 고객 지원에 전화할 때 이 두 로그를 모두 문제에 추가하십시오.
 
 ### AEM을 다른 포트 또는 컨텍스트 경로에 설치한 경우.. {#if-you-installed-aem-to-a-different-port-or-context-path}
 
@@ -218,7 +218,7 @@ AEM [Quickstart 독립 실행형 배포에서는](/help/sites-deploying/deploy.m
 
 AEM Dynamic Media를 6.3에서 6.4로 업그레이드하는 경우, 다운타임이 0인(일명 &quot;옵트인&quot;) 배포 기능이 포함되어 있으므로 다음 curl 명령을 실행하여 모든 사전 설정과 구성을 CRXDE Lite에서 `/etc` 으로 마이그레이션해야 `/conf` 합니다.
 
-**참고**: 호환성 모드에서 AEM 인스턴스를 실행하는 경우, 호환성 패키지가 설치되어 있으므로 이러한 명령을 실행할 필요가 없습니다.
+**참고**:호환성 모드에서 AEM 인스턴스를 실행하는 경우, 호환성 패키지가 설치되어 있으므로 이러한 명령을 실행할 필요가 없습니다.
 
 사용자 정의 사전 설정 및 구성을 다음 `/etc` 으로 마이그레이션하려면 다음 Linux curl 명령을 `/conf`실행하십시오.
 
@@ -272,7 +272,7 @@ Dynamic Media 이미지 배달 서비스에 이미지를 복제하려면 작성�
 
 1. [ **[!UICONTROL 동적 미디어 복제를 위한 사용자 설정 편집]** ] 페이지에서 KeyStore 파일 **** 영역에서 개인 키 추가 영역을 확장하고 다음을 추가합니다(다음 이미지 참조).
 
-   * 새 **[!UICONTROL 별칭]** 필드에 나중에 복제 구성에서 사용할 별칭의 이름을 입력합니다. 예를 들어 **복제**.
+   * 새 **[!UICONTROL 별칭]** 필드에 나중에 복제 구성에서 사용할 별칭의 이름을 입력합니다.예를 들어 **복제**.
    * KeyStore **[!UICONTROL 파일을 누릅니다]**. Adobe에서 제공한 KeyStore 파일로 이동하여 선택한 다음 **[!UICONTROL 열기를 누릅니다]**.
    * KeyStore **[!UICONTROL 파일 암호]** 필드에 KeyStore 파일 암호를 입력합니다. 5단계에서 만든 KeyStore 암호가 _아니지만_ 프로비저닝 중에 보낸 시작 이메일에 KeyStore 파일 암호 Adobe이 제공합니다. KeyStore 파일 암호를 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
    * 개인 **[!UICONTROL 키 암호]** 필드에 개인 키 암호를 입력합니다(이전 단계에서 제공한 개인 키 암호와 동일할 수 있음). Adobe은 프로비저닝 중에 사용자에게 보낸 환영 이메일에 개인 키 암호를 제공합니다. 개인 키 암호를 받지 않은 경우 Adobe 고객 지원 센터에 문의하십시오.
@@ -292,9 +292,9 @@ Dynamic Media 이미지 배달 서비스에 이미지를 복제하려면 작성�
 1. 설정 **[!UICONTROL 탭을]** 누른 다음 다음을 입력합니다.
 
    * **[!UICONTROL 활성화됨]** - 복제 에이전트를 활성화하려면 이 확인란을 선택합니다.
-   * **[!UICONTROL 지역]** - 해당 지역으로 설정합니다. 북미, 유럽 또는 아시아
+   * **[!UICONTROL 지역]** - 해당 지역으로 설정합니다.북미, 유럽 또는 아시아
    * **[!UICONTROL 테넌트 ID]** - 이 값은 Replication Service에 게시되는 회사/테넌트의 이름입니다. 이 값은 Adobe이 프로비전 중에 사용자에게 보낸 시작 이메일에서 제공하는 테넌트 ID입니다. 수신하지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
-   * **[!UICONTROL 키 저장소 별칭]** - 이 값은 인증 설정에서 키를 생성할 때 설정된** 새 별칭** 값 [과 같습니다](#setting-up-authentication). 예를 들면 다음과 같습니다 `replication`. (인증 [설정의 7단계를 참조하십시오](#setting-up-authentication).)
+   * **[!UICONTROL 키 저장소 별칭]** - 이 값은 인증 설정에서 키를 생성할 때 설정된** 새 별칭** 값 [과 같습니다](#setting-up-authentication).예를 들면 다음과 같습니다 `replication`. (인증 [설정의 7단계를 참조하십시오](#setting-up-authentication).)
    * **[!UICONTROL 키 저장소 암호]** - 키 저장소 만들기를 탭했을 때 만들어진 키 **[!UICONTROL 스토어 암호입니다]**. Adobe에서 이 암호를 제공하지 않습니다. 인증 [설정의 5단계를 참조하십시오](#setting-up-authentication).
 
    다음 이미지는 샘플 데이터가 있는 복제 에이전트를 보여줍니다.
@@ -333,7 +333,7 @@ Replication test succeeded
 
 인증을 설정할 때 솔루션 관련 몇 가지 문제가 있습니다. 이러한 사항을 확인하기 전에 복제를 설정했는지 확인하십시오.
 
-#### 문제: HTTP 상태 코드 401(메시지 포함) - 인증 필요 {#problem-http-status-code-with-message-authorization-required}
+#### 문제:HTTP 상태 코드 401(메시지 포함) - 인증 필요 {#problem-http-status-code-with-message-authorization-required}
 
 이 문제는 `dynamic-media-replication` 사용자에 대해 KeyStore를 설정하지 못하여 발생할 수 있습니다.
 
@@ -356,9 +356,9 @@ Replication test to s7delivery:https://s7bern.macromedia.com:8580/is-publish/
  Server returned status code 401 with message: Authorization required.
 ```
 
-**솔루션**: 이 `KeyStore` 가 **[!UICONTROL 다이내믹 미디어 복제]** 사용자에게 저장되고 올바른 암호가 제공되는지 확인하십시오.
+**솔루션**:이 `KeyStore` 가 **[!UICONTROL 다이내믹 미디어 복제]** 사용자에게 저장되고 올바른 암호가 제공되는지 확인하십시오.
 
-#### 문제: 키를 해독할 수 없습니다. 데이터의 암호를 해독할 수 없습니다. {#problem-could-not-decrypt-key-could-not-decrypt-data}
+#### 문제:키를 해독할 수 없습니다. 데이터의 암호를 해독할 수 없습니다. {#problem-could-not-decrypt-key-could-not-decrypt-data}
 
 ```xml
 Replication test to s7delivery:https://<localhost>:8580/is-publish/
@@ -372,9 +372,9 @@ Replication test to s7delivery:https://<localhost>:8580/is-publish/
 17.06.2016 19:00:16 - Transfer failed for ReplicationAction{type=TEST, path[0]='/content/dam', time=1466215216662, userId='admin', revision='null'}. java.lang.SecurityException: java.security.UnrecoverableKeyException: Could not decrypt key: Could not decrypt data.
 ```
 
-**솔루션**: 암호를 확인합니다. 복제 에이전트에 저장된 암호가 키 저장소를 만드는 데 사용한 암호와 다릅니다.
+**솔루션**:암호를 확인합니다. 복제 에이전트에 저장된 암호가 키 저장소를 만드는 데 사용한 암호와 다릅니다.
 
-#### 문제: InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
+#### 문제:InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
 
 이 문제는 AEM 작성자 인스턴스의 구성 오류로 인해 발생합니다. 작성자의 Java 프로세스가 정확하지 않습니다 `javax.net.ssl.trustStore`. 복제 로그에 다음 오류가 표시됩니다.
 
@@ -392,9 +392,9 @@ java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe
         at com.scene7.is.catalog.service.publish.atomic.PublishingServiceHttp.executePost(PublishingServiceHttp.scala:195)
 ```
 
-**솔루션**: AEM 작성자의 java 프로세스에 시스템 속성 -Djavax.net.ssl.trustStore=가 **유효한** truststore로 설정되어 있는지 확인하십시오.
+**솔루션**:AEM 작성자의 java 프로세스에 시스템 속성 -Djavax.net.ssl.trustStore=가 **유효한** truststore로 설정되어 있는지 확인하십시오.
 
-#### 문제: KeyStore가 설정되지 않았거나 초기화되지 않았습니다. {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
+#### 문제:KeyStore가 설정되지 않았거나 초기화되지 않았습니다. {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
 
 이 문제는 핫픽스 또는 기능 팩이 **[!UICONTROL dynamic-media-user]** 또는 **[!UICONTROL keystore]** 노드를 덮어쓰는 경우 발생할 수 있습니다.
 
@@ -425,7 +425,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
 1. 연결 **[!UICONTROL 테스트를]** 눌러 구성이 유효한지 확인합니다.
 
-#### 문제: 게시 에이전트가 OAuth 대신 SSL을 사용하고 있습니다. {#problem-publish-agent-is-using-ssl-instead-of-oauth}
+#### 문제:게시 에이전트가 OAuth 대신 SSL을 사용하고 있습니다. {#problem-publish-agent-is-using-ssl-instead-of-oauth}
 
 이 문제는 핫픽스 또는 설정이 올바르게 설치되지 않았거나 잘못 쓴 기능 팩으로 인해 발생할 수 있습니다.
 
