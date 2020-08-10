@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: AEM 6.4 Forms 사용 안내서
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
 workflow-type: tm+mt
-source-wordcount: '3702'
+source-wordcount: '3715'
 ht-degree: 1%
 
 ---
@@ -25,19 +25,19 @@ ht-degree: 1%
    + [적응형 양식 작성 소개](using/introduction-forms-authoring.md)
    + [인터랙티브 커뮤니케이션 소개](using/interactive-communications-overview.md)
    + [양식 관리 소개](using/introduction-managing-forms.md)
-   + 자습서: 간단한 적응형 양식 만들기 {#create-first-adaptive-form}
-      + [자습서: 간단한 적응형 양식 만들기](using/create-your-first-adaptive-form.md)
-      + [자습서: 적응형 양식 만들기](using/create-adaptive-form.md)
-      + [자습서: 양식 데이터 모델 만들기](using/create-form-data-model.md)
-      + [자습서: 적응형 양식 필드에 규칙 적용 l](using/apply-rules-to-adaptive-form-fields.md)
-      + [자습서: 조정 양식 스타일 지정](using/style-your-adaptive-form.md)
-   + 자습서: 간단한 인터랙티브 커뮤니케이션 제작 {#create-first-interactive-communication}
-      + [자습서: 간단한 인터랙티브 커뮤니케이션 제작](using/create-your-first-interactive-communication.md)
-      + [자습서: 인터랙티브 커뮤니케이션 계획](using/planning-interactive-communications.md)
-      + [자습서: 양식 데이터 모델 만들기](using/create-form-data-model-tutorial.md)
-      + [자습서: 문서 조각 만들기](using/create-document-fragments.md)
-      + [자습서: 템플릿 만들기](using/create-templates-print-web.md)
-      + [자습서: 인터랙티브한 커뮤니케이션 제작](using/create-interactive-communication-tutorial.md)
+   + 자습서:간단한 적응형 양식 만들기 {#create-first-adaptive-form}
+      + [자습서:간단한 적응형 양식 만들기](using/create-your-first-adaptive-form.md)
+      + [자습서:적응형 양식 만들기](using/create-adaptive-form.md)
+      + [자습서:양식 데이터 모델 만들기](using/create-form-data-model.md)
+      + [자습서:적응형 양식 필드에 규칙 적용 l](using/apply-rules-to-adaptive-form-fields.md)
+      + [자습서:조정 양식 스타일 지정](using/style-your-adaptive-form.md)
+   + 자습서:간단한 인터랙티브 커뮤니케이션 제작 {#create-first-interactive-communication}
+      + [자습서:간단한 인터랙티브 커뮤니케이션 제작](using/create-your-first-interactive-communication.md)
+      + [자습서:인터랙티브 커뮤니케이션 계획](using/planning-interactive-communications.md)
+      + [자습서:양식 데이터 모델 만들기](using/create-form-data-model-tutorial.md)
+      + [자습서:문서 조각 만들기](using/create-document-fragments.md)
+      + [자습서:템플릿 만들기](using/create-templates-print-web.md)
+      + [자습서:인터랙티브한 커뮤니케이션 제작](using/create-interactive-communication-tutorial.md)
    + AEM Forms 참조 자료 {#aem-forms-reference-collaterals}
       + [AEM Forms 참조 사이트 설정 및 구성](using/setup-reference-sites.md)
       + [We.Finance 참조 사이트 연습](using/finance-reference-site-walkthrough.md)
@@ -81,7 +81,7 @@ ht-degree: 1%
       + [Microsoft SharePoint용 커넥터 구성](http://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
       + [Adobe LiveCycle과 AEM Forms 연결](using/aem-livecycle-connector.md)
       + [JEE 프로세스에서 AEM Forms에 양식 데이터를 제출하도록 AEM Forms 구성](using/submit-form-data-livecycle-process.md)
-      + [AEM Forms용 AEM 데스크탑 앱](/help/forms/using/aem-desktop-app-for-aem-forms.md)
+      + [AEM FORMS용 AEM 데스크탑 앱](/help/forms/using/aem-desktop-app-for-aem-forms.md)
 + 업그레이드 AEM Forms {#upgrade-aem-forms}
    + [사용 가능한 업그레이드 경로](using/upgrade.md)
    + OSGi에서 AEM Forms 업그레이드 {#aem-forms-osgi-upgrade}
@@ -312,7 +312,7 @@ ht-degree: 1%
    + [메일 관리 자산에 사용자 지정 속성 추가](using/add-custom-properties-cm-assets.md)
    + [통신 UI 사용자 정의](using/customize-create-correspondence-ui.md)
    + [텍스트 편집기 사용자 정의](using/customize-text-editor.md)
-   + [통신 관리: 문제 해결](using/cm-troubleshooting.md)
+   + [통신 관리:문제 해결](using/cm-troubleshooting.md)
    + [API를 사용하여 문자 인스턴스 액세스](using/cm-apis-to-access-letter-instances.md)
    + [사용자 정의 포털과 통신 UI 통합](using/integrating-create-correspondence-ui-with-your-portal.md)
    + [통신 관리의 사용자 지정 특수 문자](using/custom-special-characters.md)
@@ -535,11 +535,11 @@ ht-degree: 1%
       + [작업 관리자 및 제한](/help/forms/using/admin-help/manager-throttling.md)
       + [유지 관리 모드에서 AEM 양식 실행](/help/forms/using/admin-help/running-aem-forms-maintenance-mode.md)
    + AEM 양식 데이터베이스 유지 관리 {#maintain-aem-forms-database}
-      + [DB2 데이터베이스: 매주 프로세스 실행](/help/forms/using/admin-help/db2-database-running-process-weekly.md)
+      + [DB2 데이터베이스:매주 프로세스 실행](/help/forms/using/admin-help/db2-database-running-process-weekly.md)
       + [Oracle 데이터베이스 최대 열린 커서 임계값](/help/forms/using/admin-help/oracle-database-maximum-open-cursors.md)
-      + [IBM DB2 데이터베이스: 유지 관리를 위한 명령 실행](/help/forms/using/admin-help/ibm-db2-database-running-commands.md)
+      + [IBM DB2 데이터베이스:유지 관리를 위한 명령 실행](/help/forms/using/admin-help/ibm-db2-database-running-commands.md)
       + [프로세스 데이터 제거](/help/forms/using/admin-help/purging-process-data.md)
-      + [Microsoft SQL Server 데이터베이스: 구성 세부 조정](/help/forms/using/admin-help/microsoft-sql-server-database-fine.md)
+      + [Microsoft SQL Server 데이터베이스:구성 세부 조정](/help/forms/using/admin-help/microsoft-sql-server-database-fine.md)
       + [데이터베이스 성장을 최소화하기 위한 팁](/help/forms/using/admin-help/tips-minimizing-database-growth.md)
    + 응용 프로그램 서버 유지 관리 {#manage-application-server}
       + [응용 프로그램 서버 웹 사이트](/help/forms/using/admin-help/application-server-websites.md)
@@ -577,6 +577,7 @@ ht-degree: 1%
    + [AEM Forms Java API 참조](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html)
    + [AEM Forms(JEE Java API 참조)](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)
    + [HTML5 양식용 Form Bridge API](using/form-bridge-apis.md)
+   + [적응형 Forms에 대한 JavaScript 라이브러리 API 참조](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/index.html)
    + [어셈블러 서비스 및 DDC 참조](http://www.adobe.com/go/learn_aemforms_ddxRef_64)
    + [워크벤치 도움말](http://www.adobe.com/go/learn_aemforms_workbench_64)
    + JEE에서 AEM Forms을 사용한 프로그래밍 {#programming-aem-forms-jee}
