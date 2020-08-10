@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 translation-type: tm+mt
-source-git-commit: abdcde27b33f290a4288b09c39bffb0d4f1918a1
+source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Adobe Sign을 AEM Forms과 통합하려면 다음이 필요합니다.
    * widget_write
    * workflow_read
 
-   Adobe Sign 응용 프로그램에 대한 OAuth 설정을 구성하고 키를 획득하기 위한 단계별 정보는 응용 프로그램 [개발자 설명서에 대한](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobeio/adobeio-documentation/master/sign/gstarted/configure_oauth.md) Auth 설정 구성을 참조하십시오.
+   Adobe Sign 응용 프로그램에 대한 OAuth 설정을 구성하고 키를 획득하기 위한 단계별 정보는 응용 프로그램 [개발자 설명서에 대한](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) Auth 설정 구성을 참조하십시오.
 
    ![OAuth 구성](assets/oauth_config.png)
 
