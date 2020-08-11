@@ -1,5 +1,5 @@
 ---
-title: 3D 자산 작업
+title: AEM 3D 에셋 작업
 seo-title: 3D 자산 작업
 description: AEM 3D에서 3D 에셋을 사용하여 작업하는 방법 살펴보기
 seo-description: AEM 3D에서 3D 에셋을 사용하여 작업하는 방법 살펴보기
@@ -10,15 +10,19 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 32143da1-09c8-45ce-b50d-32adf6efe383
 translation-type: tm+mt
-source-git-commit: 7c850ed0d20dd2ba2626242c67ba190e371f049f
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 6%
+source-wordcount: '1192'
+ht-degree: 5%
 
 ---
 
 
-# 3D 자산 작업 {#working-with-d-assets}
+# Working with AEM 3D assets {#working-with-d-assets}
+
+>[!IMPORTANT]
+>
+>AEM 6.4의 AEM 3D는 더 이상 지원되지 않습니다. Adobe에서는 AEM의 3D 자산 기능을 Cloud Service [또는](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) [AEM 6.5.3 이상으로 사용하는 것이 좋습니다.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
 
 AEM 3D(Adobe Experience Manager 3D)를 사용하면 3D 컨텐츠를 업로드, 관리, 확인 및 렌더링할 수 있습니다. 확인 및 렌더링에 대한 지원은 개별 개체를 위해 최적화되어 있습니다.
 
@@ -57,7 +61,7 @@ AEM 3D에서 사용할 3D 모델을 만들 때는 다음 사항에 주의하십�
 
 * Autodesk FBX(Filmbox) 파일 포맷(`.fbx`)
 
-   Autodesk 3D 파일 교환 형식; 바이너리 및 ASCII 형식 모두 사용할 수 있습니다.
+   Autodesk 3D 파일 교환 형식;바이너리 및 ASCII 형식 모두 사용할 수 있습니다.
 
    타사 애플리케이션에서 FBX 파일을 만들 때 Adobe은 다음 구성 설정을 권장합니다(아래 표 참조). 이러한 설정을 사용하면 AEM에서 사용하려는 3D 파일에 대한 최상의 결과를 얻을 수 있습니다. 옵션 이름은 [Autodesk Maya FBX 내보내기 옵션] **[!UICONTROL 대화 상자에서]** 가져옵니다.
 
