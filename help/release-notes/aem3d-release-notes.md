@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: 3D
 discoiquuid: 9789d031-fb7e-415a-a9c3-8b8fde978238
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1983'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,13 @@ ht-degree: 0%
 
 # AEM 3D 릴리스 노트 {#aem-d-release-notes}
 
+>[!IMPORTANT]
+>
+>AEM 6.4의 AEM 3D 기능 팩은 더 이상 지원되지 않습니다. Adobe에서는 AEM의 3D 자산 기능을 Cloud Service [또는](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) [AEM 6.5.3 이상으로 사용하는 것이 좋습니다.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
+
 AEM-6.4-DynamicMedia-3D 버전 3.1.0(2018년 10월 10일)
 
-AEM 3D 기능 팩을 사용하면 AEM Assets의 3D 컨텐츠를 지원할 수 있습니다. 3D 자산을 업로드, 관리, 미리 보기 및 렌더링하는 기능을 제공합니다. 보기 및 렌더링 지원은 여러 개체가 있는 복잡한 장면이 아니라 개별 개체에 맞게 최적화되어 있습니다.
+AEM 3D 기능 팩을 통해 AEM Assets의 3D 컨텐츠를 지원할 수 있습니다. 3D 자산을 업로드, 관리, 미리 보기 및 렌더링하는 기능을 제공합니다. 보기 및 렌더링 지원은 여러 개체가 있는 복잡한 장면이 아니라 개별 개체에 맞게 최적화되어 있습니다.
 
 AEM 3D는 Adobe Dimension(Dn) 및 glTF 에셋 유형을 지원합니다. 이러한 자산 유형에 대한 구현은 이 설명서에 설명된 기존 3D 유형의 구현과 크게 다릅니다. Adobe Dimension 자산 [작업을 참조하십시오](/help/assets/working-dimension-assets.md).
 
@@ -47,7 +51,7 @@ AEM [3D 자산](/help/assets/install-config-3d.md) 및 [고급 구성 설정 설
 * Apple OS X El Capitan 10.6 이상
 * RedHat Enterprise Linux 7.3
 
-**AEM Assets에 지원되는 웹 브라우저**
+**AEM Assets에서 지원되는 웹 브라우저**
 
 * Google Chrome 53 이상(권장).
 * Apple Safari 9.1 이상.
@@ -58,7 +62,7 @@ AEM [3D 자산](/help/assets/install-config-3d.md) 및 [고급 구성 설정 설
 
 **하드웨어 요구 사항 및 권장 사항**
 
-* CPU - 3D 처리 및 렌더링은 컴퓨터 CPU에서 매우 어렵습니다. 따라서 최소 8개의 CPU 코어를 사용하는 최신 서버를 권장합니다.
+* CPU - 3D 처리 및 렌더링은 컴퓨터 CPU에서 매우 필요합니다. 따라서 최소 8개의 CPU 코어를 사용하는 최신 서버를 권장합니다.
 * 메모리 - 최소 32GB가 권장됩니다.
 * 대용량 저장 - 고대역폭 SSD 스토리지가 권장됩니다.
 
@@ -114,13 +118,13 @@ AEM 3D와 [Autodesk Maya](/help/assets/integrate-maya-with-3d.md) 통합 및 AEM
 ### 호환성 {#compatibility}
 
 * **Windows 서비스로 실행되는 것은 지원되지 않습니다(Windows만 해당)** - 이 작업은 실행될 수 있지만 테스트되지 않았습니다.
-* **Dynamic Media** ( `dynamicmedia-scene7` 모드) - AEM 6.4에서 릴리스된 새로운 Dynamic Media 솔루션과 AEM3D의 호환성은 아직 완전히 확인되지 않습니다. Dynamic Media과 AEM3D가 함께 배포된 경우 3D 자산 및 해당 종속성을 Dynamic Media에 할당되지 않은 AEM Assets 저장소의 영역에만 배치하는 것이 좋습니다. 이 권장 사항은 3D 단계에는 필요하지만 Dynamic Media에서 지원되지 않는 32비트 TIFF 파일에 특히 중요합니다.
+* **다이내믹 미디어** ( `dynamicmedia-scene7` 모드) - AEM 6.4에서 릴리스된 새로운 다이내믹 미디어 솔루션과 AEM3D의 호환성은 아직 완전히 확인되지 않습니다. Dynamic Media와 AEM3D가 함께 배포된 경우, 3D 자산 및 해당 종속성은 Dynamic Media에 할당되지 않은 AEM Assets 저장소의 영역에만 배치하는 것이 좋습니다. 이 권장 사항은 3D 단계에 필요하지만 Dynamic Media에서 지원되지 않는 32비트 TIFF 파일에 특히 중요합니다.
 
 ### 일반 {#general}
 
-* **종속성 해결 단축키** - 이 단축키는 3D 자산의 카드 보기에서 사용할 수 있습니다. 카드 보기의 자산 카드에 &quot;해결되지 않은 종속성&quot; 배너가 표시됩니다. 단축키는 종속성 탭 대신 **기본 속성** 탭 **을** 엽니다. 해결 방법: 종속성 탭으로 수동으로 이동합니다.
+* **종속성 해결 단축키** - 이 단축키는 3D 자산의 카드 보기에서 사용할 수 있습니다. 카드 보기의 자산 카드에 &quot;해결되지 않은 종속성&quot; 배너가 표시됩니다. 단축키는 종속성 탭 대신 **기본 속성** 탭 **을** 엽니다. 해결 방법:종속성 탭으로 수동으로 이동합니다.
 
-* **스테이지 선택기 사용 불가** - 조명을 포함하는 3D 에셋은 AEM에서 3D 단계로 자동으로 태깅합니다. 세부 사항 보기의 단계에 대해 단계 선택기를 사용할 수 없습니다. 3D 자산을 3D 개체로 표시하려면 **기본 속성으로**&#x200B;이동하고, **자산 클래스를** **3D 개체**&#x200B;로 **변경한 다음**&#x200B;저장을클릭합니다.
+* **스테이지 선택기 사용 불가** - 조명을 포함하는 3D 에셋은 AEM에서 3D 단계로 자동 태깅합니다. 세부 사항 보기의 단계에 대해 단계 선택기를 사용할 수 없습니다. 3D 자산을 3D 개체로 표시하려면 **기본 속성으로**&#x200B;이동하고, **자산 클래스를** **3D 개체**&#x200B;로 **변경한 다음**&#x200B;저장을클릭합니다.
 
 * **종속 항목 및 표현물이 포함된 3D 자산 다운로드** - **종속성** 및 **변환** 이 모두 선택된 상태에서 AEM에서 3D 자산을 다운로드할 때 다운로드에는 기본 3D 자산 변환뿐만 아니라 모든 종속 항목의 변환도 포함됩니다.
 
@@ -151,7 +155,7 @@ AEM 3D와 [Autodesk Maya](/help/assets/integrate-maya-with-3d.md) 통합 및 AEM
 * **IBL 단계의 배경 이미지** - 일부 IBL 장면의 경우 배경 이미지의 품질이 너무 밝거나 흐리게 하는 등 좋지 않을 수 있습니다. IBL 단계의 이미지 배경에 대한 시각적 품질을 최대화하려면 별도의 고해상도 8비트 JPEG 이미지를 준비하고 배경 환경 이미지로 IBL 스테이지에 **첨부할 것을 권장합니다**.
 
 * **IBL 스테이지를** 사용하여 Maya로 렌더링할 때 검정 이미지 - 스테이지에서 참조하는 원본 IBL 이미지가 다른 이름으로 대체되었기 때문에 Maya가 IBL 이미지 종속성을 찾지 못하여 이 문제가 발생할 수 있습니다. 이 문제를 방지하려면 Maya IBL 스테이지에서 참조하는 세 개 이상의 종속성 중 적어도 하나에 Maya 파일의 원본 IBL 파일 참조와 이름이 동일해야 합니다.
-* **IBL 스테이지에** 대해 역 배경 이미지 - IBL 스테이지에 대한 이미지는 Autodesk Maya와 함께 제공되는 NVIDIA mental ray 렌더러의 동작과 일치하도록 의도적으로 수평으로 전환됩니다. 해결 방법: Photoshop에서 IBL 단계에 사용되는 이미지를 업로드하기 전에 뒤집습니다.
+* **IBL 스테이지에** 대해 역 배경 이미지 - IBL 스테이지에 대한 이미지는 Autodesk Maya와 함께 제공되는 NVIDIA mental ray 렌더러의 동작과 일치하도록 의도적으로 수평으로 전환됩니다. 해결 방법:Photoshop에서 IBL 단계에 사용되는 이미지를 업로드하기 전에 뒤집습니다.
 * **IBL 단계** 밝기 - IBL 이미지의 자동 분석으로 인해 너무 어둡거나 밝은 장면이 발생할 수 있습니다. IBL 단계의 조명 밝기를 조정하려면 **기본 속성** 으로 이동하여 필요에 따라 **환경 조명** 의 **밝은** 값을조정합니다.
 
 ### AEM Sites 3D 구성 요소 {#aem-sites-d-component}
@@ -165,4 +169,4 @@ AEM 3D와 [Autodesk Maya](/help/assets/integrate-maya-with-3d.md) 통합 및 AEM
 
 * **3D 구성** - 모든 활성 게시 노드에 3D 기능 팩을 설치해야 하며 각 노드는 동일한 구성 옵션에 대해 **CRXDE Lite** 로 구성해야 합니다 `/libs/settings/dam/v3D/WebGLSites`.
 
-* **게시** 후 텍스처, 배경 또는 조명 누락 - AEM Sites의 **게시** 메커니즘은 3D 모델 및 3D 구성 요소에서 참조하는 3D 스테이지 등 페이지의 주요 종속성을 자동으로 게시합니다. 3D 단계 및 3D 모델은 일반적으로 IBL 이미지 및 텍스처 맵의 보조 에셋에 따라 달라지며, 사이트 게시 메커니즘은 자동으로 게시되지 않습니다. 해결 방법: 사이트에서 웹 페이지를 게시하기 전에 자산에서 모든 3D 자산을 게시합니다. 이렇게 하면 3D 자산에 대한 모든 종속성이 게시 노드에서 사용할 수 있습니다.
+* **게시** 후 텍스처, 배경 또는 조명 누락 - AEM Sites의 **게시** 메커니즘은 3D 모델 및 3D 구성 요소에서 참조하는 3D 스테이지 등 페이지의 주요 종속성을 자동으로 게시합니다. 3D 단계 및 3D 모델은 일반적으로 IBL 이미지 및 텍스처 맵의 보조 에셋에 따라 달라지며, 사이트 게시 메커니즘은 자동으로 게시되지 않습니다. 해결 방법:사이트에서 웹 페이지를 게시하기 전에 자산에서 모든 3D 자산을 게시합니다. 이렇게 하면 3D 자산에 대한 모든 종속성이 게시 노드에서 사용할 수 있습니다.
