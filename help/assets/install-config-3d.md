@@ -10,15 +10,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5898d084-4b45-41bc-ad2e-2fcc65b0392c
 translation-type: tm+mt
-source-git-commit: b1603091bb05493c9cfffa6067f414f73774edb2
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1634'
+source-wordcount: '1681'
 ht-degree: 1%
 
 ---
 
 
 # AEM 3D 설치 및 구성 {#installing-and-configuring-aem-d}
+
+>[!IMPORTANT]
+>
+>AEM 6.4의 AEM 3D는 더 이상 지원되지 않습니다. Adobe에서는 AEM의 3D 자산 기능을 Cloud Service [또는](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) [AEM 6.5.3 이상으로 사용하는 것이 좋습니다.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
 
 AEM 3D(버전 3.0)의 설치 및 구성에는 다음이 포함됩니다.
 
@@ -217,7 +221,7 @@ AEM에서 Adobe Dimension 3D 자산을 통합, 미리 보기 및 게시할 수 �
    1. 새 암호 값을 속성에 `encryptedPassword` 로드합니다. 모두 저장을 탭하면 이 값 **[!UICONTROL 이 자동으로 암호화됩니다]**.
    1. 모두 **[!UICONTROL 저장을]**&#x200B;누르고 페이지를 다시 로드한 다음 `encryptedPassword` 속성에 중괄호로 둘러싸인 다른 문자열이 표시되는지 확인합니다. 이 모양은 암호가 올바르게 암호화되어 있고 안전함을 나타냅니다.
 
-1. CRXDE Lite에서 다음을 수행하여 `.glb` 전환 변환의 형식을 **[!UICONTROL 지정합니다]**.
+1. CRXDE Lite에서 다음을 수행하여 전환 `.glb` 변환의 형식을 **[!UICONTROL 지정합니다]**.
 
    1. CRXDE Lite `/libs/settings/dam/v3D/services/dncr` 에서 **[!UICONTROL 탐색합니다]**.
    1. 속성을 `outputFormat` 또는 `Dn` 으로 설정합니다 `generic`.
