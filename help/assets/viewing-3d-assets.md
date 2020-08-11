@@ -10,15 +10,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 65040923-a8a8-4e27-82c0-67a04348e238
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1755'
-ht-degree: 36%
+source-wordcount: '1806'
+ht-degree: 35%
 
 ---
 
 
 # 3D 자산 보기 {#viewing-d-assets}
+
+>[!IMPORTANT]
+>
+>AEM 6.4의 AEM 3D는 더 이상 지원되지 않습니다. Adobe에서는 AEM의 3D 자산 기능을 Cloud Service [또는](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) [AEM 6.5.3 이상으로 사용하는 것이 좋습니다.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) to view 3D assets.
 
 이 문서에서는 자산 세부 사항으로 3D 자산을 보는 방법과 사이트의 3D 구성 요소에 있는 자산을 보는 방법에 대해 설명합니다.
 
@@ -180,7 +184,7 @@ AEM 3D에서 기본 단계를 사용하는 것외에도, 타사 애플리케이�
 
 1. 스크롤 휠을 사용하여 카메라를 개체와 더 가깝거나 멀어진 위치로 이동합니다. 확대/축소 기능과 비슷하며 개체에 대한 세부 사항을 확인할 수 있습니다. 또는 [확대] 또는 [ **[!UICONTROL 확대]** ] **[!UICONTROL 축소]** 단추를 클릭하여 카메라를 오브젝트에서 더 가깝게 또는 더 멀리 이동합니다.
 
-1. Alt **/Option** 키와 마우스 왼쪽 버튼을 누른 상태에서 드래그하여 카메라를 이동합니다. 확대하면서 개체의 다른 부분을 볼 수 있도록 카메라를 수평으로 이동합니다. 또는 [궤도/ **[!UICONTROL 팬 전환]** ] 단추를 클릭하여 **[!UICONTROL 이동]** 모드로 전환한 다음 왼쪽 마우스 단추를 누른 상태에서 드래그하여 카메라를 이동합니다. 궤도/ **[!UICONTROL 팬 전환]** 을 다시 클릭하여 **[!UICONTROL 궤도]** 모드로 돌아갑니다.
+1. Alt **/Option** 키와 마우스 왼쪽 버튼을 누른 상태에서 드래그하여 카메라를 이동합니다. 확대하면서 개체의 다른 부분을 볼 수 있도록 카메라를 수평으로 이동합니다. 또는 [ **[!UICONTROL 궤도/이동 전환]** ] 단추를 클릭하여 **[!UICONTROL 이동]** 모드로 전환한 다음 왼쪽 마우스 단추를 누른 상태에서 드래그하여 카메라를 패닝합니다. 궤도/ **[!UICONTROL 팬 전환]** 을 다시 클릭하여 **[!UICONTROL 궤도]** 모드로 돌아갑니다.
 1. [뷰어 **[!UICONTROL 재설정]** ]을 클릭하여 카메라를 재설정합니다. 이 작업을 수행하면 개체가 다시 전체 보기로 돌아가게 되고 활성화된 경우 자동 회전이 다시 시작됩니다.
 1. 전체 화면 **[!UICONTROL 을]** 클릭하여 전체 화면 모드로 전환합니다. 키보드의 **[!UICONTROL Escape]** 키를 사용하거나 **[!UICONTROL 전체 화면]** 을 다시 클릭하여 3D 뷰어를 페이지 포함 모드로 복원합니다.
 
