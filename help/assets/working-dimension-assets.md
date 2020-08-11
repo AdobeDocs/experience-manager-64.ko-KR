@@ -10,15 +10,19 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: 4a601c2a-4ea1-4308-8ae8-704155f63c21
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
 
 
 # Adobe Dimension 에셋 작업 {#working-with-adobe-dimension-assets}
+
+>[!IMPORTANT]
+>
+>AEM 6.4의 AEM 3D 기능 팩은 더 이상 지원되지 않습니다. Adobe에서는 AEM의 3D 자산 기능을 Cloud Service [또는](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) [AEM 6.5.3 이상으로 사용하는 것이 좋습니다.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) adobe dimension 에셋을 사용하여 작업할 때
 
 AEM 3D 기능 팩은 AEM Assets, AEM Sites 및 AEM Screens의 Adobe Dimension 에셋(`.dn` 파일)을 지원합니다.
 
@@ -33,7 +37,7 @@ Dimension 자산이 AEM에 업로드되면 파일의 사본이 Amazon AWS에서 
 * Adobe glTF 뷰어를 사용하여 AEM Assets, AEM Sites 또는 AEM Screens에서 Dimension 에셋을 볼 때 시각적 품질을 최대화하려면 Adobe 전용 익스텐션을 포함합니다. 이렇게 하면 대부분의 타사 응용 프로그램과 호환되지 않는 변환이 만들어집니다. `.glb`
 * Adobe별 익스텐션을 제외하여 타사 애플리케이션과의 `.glb` 변환과 호환됩니다. 이렇게 하면 AEM Assets, AEM Sites 또는 AEM Screens(예: IBL 조명 없음)에서 볼 때 시각적 품질을 제한하여 일반적인 타사 애플리케이션의 품질을 시뮬레이션할 수 있습니다.
 
-Dimension/glTF 파일을 Amazon AWS로 또는 AWS에서 전송하고 AWS의 임시 저장소는 완벽하게 보호됩니다. 이러한 파일은 Amazon AWS에서 최소한의 시간 동안 지속됩니다. 일반적으로 정상적인 작업 중에는 몇 분 이내입니다.
+Dimension/glTF 파일을 Amazon AWS로 또는 AWS에서 전송하고 AWS의 임시 저장소는 완벽하게 보호됩니다. 이러한 파일은 Amazon AWS에서 최소한의 시간 동안 지속됩니다.일반적으로 정상적인 작업 중에는 몇 분 이내입니다.
 
 Dimension 자산에 대한 지원을 활성화하려면 전환 서비스에 액세스하기 위해 Adobe에서 자격 증명을 구해야 합니다. See [Installing and configuring AEM 3D](install-config-3d.md).
 
