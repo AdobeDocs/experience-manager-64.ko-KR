@@ -6,7 +6,7 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 translation-type: tm+mt
-source-git-commit: 9ced187ddc9bb2d12922fcc734b20ef9767d8fbf
+source-git-commit: 38d3a204e3ef038ef4f848e12b9fc73f127ec488
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 1%
@@ -91,7 +91,7 @@ AEM Assets 구성 외에도 큰 자산을 업로드하려면 다음 구성을 �
 
    주석 마법사를 종료하려면 **[!UICONTROL 닫기를 누릅니다]**.
 
-1. 비디오의 특정 지점으로 이동하려면 텍스트 필드에서 시간(초)을 지정하고 **[!UICONTROL 이동을 클릭합니다]**. 예를 들어 비디오의 처음 10초를 건너뛰려면 텍스트 필드 `20` 에 입력합니다.
+1. 비디오의 특정 지점으로 이동하려면 텍스트 필드에서 시간(초)을 지정하고 **[!UICONTROL 이동을 클릭합니다]**. 예를 들어 비디오 처음 20초를 건너뛰려면 텍스트 필드 `20` 에 입력합니다.
 
    ![chlimage_1-205](assets/chlimage_1-205.png)
 
