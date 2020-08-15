@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: c4e18cad7bc08638af9dce6ab396554052043e16
 workflow-type: tm+mt
-source-wordcount: '2293'
+source-wordcount: '2267'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ AEM 6.3에서는 기본적으로 100,000의 트래픽에 도달하면 쿼리가 
 
 #### 개발 중 {#during-development}
 
-쿼리 **를 모두** 설명하고 쿼리 계획에 **/&amp;ast; 그들의 설명을** 건너다. 쿼리 계획 탐색 예:
+쿼리 **를 모두** 설명하고 쿼리 계획에 **/&amp;ast;그들의 설명을** 건너다. 쿼리 계획 탐색 예:
 
 * **플랜:** `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
 
@@ -92,26 +92,26 @@ cq:tags 인덱스 규칙을 추가하기 전
 
    * `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* where [a].[jcr:content/cq:tags] = 'my:tag' */`
 
-이 쿼리는 `cqPageLucene` 인덱스로 확인되지만, 속성 인덱스 규칙이 `jcr:content` 없거나 이 제한을 평가할 `cq:tags`때 인덱스의 모든 레코드가 일치하는지 `cqPageLucene` 확인합니다. 즉, 인덱스에 100만 개의 노드가 있으면 100만 개의 레코드가 확인되어 결과 세트를 결정합니다. `cq:Page`
+이 쿼리는 `cqPageLucene` 인덱스로 확인되지만, 속성 인덱스 규칙이 `jcr:content` 없거나 이 제한을 평가할 `cq:tags`때 인덱스의 모든 레코드가 일치하는지 `cqPageLucene` 확인됩니다. 즉, 인덱스에 100만 개의 노드가 있으면 100만 개의 레코드가 확인되어 결과 세트를 결정합니다. `cq:Page`
 
 cq:tags 인덱스 규칙을 추가한 후
 
 * **cq:태그 색인 규칙**
 
-       &quot;
- /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags     
- @name=jcr:content/cq:tags     
- @propertyIndex=trueTags     
-     &quot;
-   
+   ```
+   /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
+    @name=jcr:content/cq:tags
+    @propertyIndex=true
+   ```
+
 * **쿼리 빌더 쿼리**
 
-       &quot;
-    type=cq:Page
-     property=jcr:content/cq:tags
-     property.value=myTagNamespace:myTag
-     &quot;
-   
+   ```
+   type=cq:Page
+    property=jcr:content/cq:tags
+    property.value=myTagNamespace:myTag
+   ```
+
 * **쿼리 계획**
 
    * `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) jcr:content/cq:tags:my:tag where [a].[jcr:content/cq:tags] = 'my:tag' */`
@@ -146,7 +146,7 @@ oak.queryLimitInMemory에 대한 낮은 임계값 설정(예: 10000) 및 oak.que
 
 #### 배포 후 {#post-deployment-2}
 
-* 큰 노드 순회 또는 큰 더미 메모리 사용을 트리거하는 쿼리의 로그를 모니터링합니다. &quot;
+* 큰 노드 순회 또는 큰 더미 메모리 사용을 트리거하는 쿼리의 로그를 모니터링합니다.
 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
    * 탐색 노드 수를 줄이기 위해 쿼리 최적화
@@ -437,7 +437,7 @@ AEM의 유연한 컨텐츠 아키텍처로 인해 컨텐츠 구조의 통과가 
 
 * **[색인 관리자](/help/sites-administering/operations-dashboard.md#the-index-manager)**
 
-   * AEM 인스턴스에서 색인을 표시하는 AEM Operations WebUI; 타깃팅되거나 증강 가능한 색인을 손쉽게 파악할 수 있습니다.
+   * AEM 인스턴스에서 색인을 표시하는 AEM Operations WebUI;타깃팅되거나 증강 가능한 색인을 손쉽게 파악할 수 있습니다.
 
 * **[로깅](/help/sites-administering/operations-dashboard.md#log-messages)**
 
