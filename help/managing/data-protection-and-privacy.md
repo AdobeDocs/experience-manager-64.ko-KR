@@ -1,8 +1,8 @@
 ---
 title: 데이터 보호 및 데이터 개인 정보 보호 규정 - Adobe Experience Manager 준비
-seo-title: '데이터 보호 및 데이터 개인 정보 보호 규정에 대한 Adobe Experience Manager 준비 (예: GDPR, CPA 등)'
-description: '다양한 데이터 보호 및 데이터 개인 정보 보호 규정에 대한 Adobe Experience Manager 지원에 대해 자세히 알아보십시오. 여기에는 EU 개인 정보 보호 규정(GDPR), 캘리포니아 개인 정보 보호 법(California Consumer Privacy Act) 및 새로운 AEM 프로젝트 구현 시 준수 방법이 포함됩니다. '
-seo-description: '다양한 데이터 보호 및 데이터 개인 정보 보호 규정에 대한 Adobe Experience Manager 지원에 대해 자세히 알아보십시오. 여기에는 EU 개인 정보 보호 규정(GDPR), 캘리포니아 개인 정보 보호 법(California Consumer Privacy Act) 및 새로운 AEM 프로젝트 구현 시 준수 방법이 포함됩니다. '
+seo-title: '데이터 보호 및 데이터 개인 정보 보호 규정에 대한 Adobe Experience Manager 준비(예: GDPR, CPA 등)'
+description: '다양한 데이터 보호 및 데이터 개인 정보 보호 규정에 대한 Adobe Experience Manager 지원에 대해 자세히 알아보십시오.여기에는 EU 개인 정보 보호 규정(GDPR), 캘리포니아 개인 정보 보호 법(California Consumer Privacy Act) 및 새로운 AEM 프로젝트 구현 시 준수 방법이 포함됩니다. '
+seo-description: '다양한 데이터 보호 및 데이터 개인 정보 보호 규정에 대한 Adobe Experience Manager 지원에 대해 자세히 알아보십시오.여기에는 EU 개인 정보 보호 규정(GDPR), 캘리포니아 개인 정보 보호 법(California Consumer Privacy Act) 및 새로운 AEM 프로젝트 구현 시 준수 방법이 포함됩니다. '
 uuid: c443aa47-0766-4280-b0f2-b5b06534ffba
 contentOwner: aheimoz
 content-type: reference
@@ -54,7 +54,7 @@ Adobe Experience Manager 인스턴스와 이러한 인스턴스에서 실행되�
 
 이러한 규정의 주요 내용은 다음과 같습니다.
 
-1. 모든 고유 ID를 포함하도록 개인 데이터의 확장된 정의 를 사용할 수 있습니다.
+1. 모든 고유 ID를 포함하도록 개인 데이터의 확장된 정의를 사용할 수 있습니다.
 
 2. 동의 요건 강화
 
@@ -68,9 +68,9 @@ Adobe Experience Manager의 경우:
 
    * 따라서 비즈니스 엔티티 및 서비스 제공자, 데이터 컨트롤러, 데이터 프로세서 등 규정 역할을 효율적으로 관리할 수 있습니다.
 
-   * 아래 다이어그램과 같이 Adobe Experience Platform 개인 정보 보호 서비스는 AEM용 워크플로우에 포함되지 않습니다.
+   * 아래 다이어그램과 같이 Adobe Experience Platform Privacy Service은 AEM용 워크플로우의 일부가 아닙니다.
 
-* AEM에는 고객의 개인 정보 관리자 및/또는 AEM 관리자가 개인 정보 보호 규정 요청을 실행하기 위한 문서 및 절차가 포함되어 있습니다. 수동으로 또는 API를 통해 언제든지 가능합니다.
+* AEM에는 고객의 개인 정보 관리자 및/또는 AEM 관리자가 개인 정보 보호 규정 요청을 실행하기 위한 문서 및 절차가 포함되어 있습니다.수동으로 또는 API를 통해 언제든지 가능합니다.
 
 * 새 서비스 또는 UI가 추가되지 않았습니다.
 
@@ -110,7 +110,7 @@ AEM [Commerce - 데이터 보호 및 개인 정보 보호 준비를 참조하십
 
 자세한 내용은 [AEM Mobile - 데이터 보호 및 개인 정보 보호 준비를 참조하십시오](/help/mobile/aem-mobile-gdpr-compliance.md).
 
-## Adobe Target 및 Adobe Analytics과 AEM 통합 {#aem-integration-with-adobe-target-adobe-analytics}
+## ADOBE TARGET 및 Adobe Analytics과 AEM 통합 {#aem-integration-with-adobe-target-adobe-analytics}
 
 이러한 Adobe Experience Manager 통합은 데이터 보호 및 개인 정보 보호(예: GDPR 또는 CPA) 지원 서비스와 통합됩니다. Adobe Target 또는 Adobe Analytics의 개인 데이터는 통합 관련 AEM에 저장되지 않습니다.
 자세한 내용은 다음을 참조하십시오.
