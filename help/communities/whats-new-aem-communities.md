@@ -7,7 +7,7 @@ uuid: e4bf343c-59cd-48ac-bee4-85db109e4c65
 contentOwner: mgulati
 discoiquuid: 3e3c867f-afb0-4402-94f4-16e1a556ddee
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 4a1be7a5a233557dff0e7cd3796380532f23d5eb
 workflow-type: tm+mt
 source-wordcount: '1032'
 ht-degree: 0%
@@ -95,7 +95,7 @@ AEM 6.4 Communities는 커뮤니티 사이트 콘솔의 기존 커뮤니티 사�
 
 ## UGC 및 사용자 프로필 관리 {#managing-ugc-and-user-profiles}
 
-Facebook은 사용자 데이터 보호를 커뮤니티 환경의 중심에 두어 [API를 기본](user-ugc-management-service.md) 및 [샘플 서블릿으로 노출합니다](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet). 이러한 API는 사용자가 생성한 컨텐츠를 일괄 관리(일괄 삭제 및 일괄 내보내기)하고 사용자 프로필을 삭제하도록 지원하며, EU GDPR 준수 요청을 처리하는 데 도움이 됩니다.
+Facebook은 사용자 데이터 보호를 커뮤니티 환경의 중심에 두어 [API를 기본](user-ugc-management-service.md) 및 [샘플 서블릿으로 노출합니다](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). 이러한 API는 사용자가 생성한 컨텐츠를 일괄 관리(일괄 삭제 및 일괄 내보내기)하고 사용자 프로필을 삭제하도록 지원하며, EU GDPR 준수 요청을 처리하는 데 도움이 됩니다.
 
 ## 변경된 사항 {#what-s-changed}
 
