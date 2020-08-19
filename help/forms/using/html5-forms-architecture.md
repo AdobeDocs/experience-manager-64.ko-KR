@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 599f1925-a17e-4bae-93d9-b54edcee92b0
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 6f0016b6b59d27da89c41089aa4d73096846a7fb
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2038'
 ht-degree: 0%
 
 ---
@@ -24,10 +24,7 @@ ht-degree: 0%
 
 HTML5 양식 기능은 포함된 AEM 인스턴스 내에 패키지로 배포되고 RESTful [Apache Sling 아키텍처를 사용하여 HTTP/S를 넘는 REST 엔드 포인트로 대체됩니다](https://sling.apache.org/).
 
-    [ ![01-aem-forms-architecture] (assets/01-aem-forms-architecture.jpg)
-*전체 크기*&#x200B;보기](javascript:void(0).md)
-
-    [ ![02-aem-forms-architecture_large](assets/02-aem-forms-architecture_large.jpg)(javascript:void(0).md)
+![02-aem-forms-architecture_large](assets/02-aem-forms-architecture_large.jpg)
 
 ### Sling Framework 사용 {#using-sling-framework}
 
@@ -45,18 +42,18 @@ HTML5 양식은 첫 번째 요청에서 양식을 처리(변환 또는 제출)�
 
 모바일 양식은 두 가지 다른 수준의 캐시인 PreRender 캐시 및 렌더링 캐시를 유지합니다. preRender 캐시에는 해결된 템플릿의 모든 조각과 이미지가 포함되며 렌더링 캐시에는 HTML과 같은 렌더링된 컨텐츠가 포함됩니다.
 
-![HTML5 양식 워크플로우](assets/cacheworkflow.png)그림&#x200B;**:** *HTML5 양식 워크플로우*
+![HTML5 양식 워크플로우](assets/cacheworkflow.png)그림&#x200B;**:***HTML5 양식 워크플로우*
 
 HTML5 양식은 조각과 이미지에 대한 참조가 없는 템플릿을 캐시하지 않습니다. HTML5 양식에 걸리는 시간이 정상 시간 이상인 경우 서버 로그에 누락된 참조 및 경고가 있는지 확인합니다. 또한 개체의 최대 크기에 도달하지 않았는지 확인합니다.
 
 Forms OSGi 서비스는 다음 두 단계로 요청을 처리합니다.
 
-* **레이아웃 및 초기 양식 상태 생성**: Forms OSGi render 서비스는 Forms 캐시 구성 요소를 호출하여 양식이 이미 캐시되었고 무효화되지 않았는지 확인합니다. 양식이 캐시되고 유효한 경우 캐시에서 생성된 HTML을 제공합니다. 이 양식이 무효화되면 Forms OSGi 렌더링 서비스는 XML 형식으로 초기 양식 레이아웃 및 양식 상태를 생성합니다. 이 XML은 Forms OSGi 서비스에 의해 HTML 레이아웃 및 초기 JSON 양식 상태로 변환된 다음 요청에 대해 캐시됩니다.
-* **미리 채워진 Forms**: 렌더링 도중 사용자가 미리 채워진 데이터가 있는 양식을 요청하면 Forms OSGi 렌더링 서비스는 Forms 서비스 컨테이너를 호출하고 병합된 데이터가 있는 새 양식 상태를 생성합니다. 하지만 레이아웃이 위의 단계에서 이미 생성되었으므로 이 호출은 첫 번째 호출보다 빠릅니다. 이 호출은 데이터 병합만 수행하고 데이터에서 스크립트를 실행합니다.
+* **레이아웃 및 초기 양식 상태 생성**:Forms OSGi render 서비스는 Forms 캐시 구성 요소를 호출하여 양식이 이미 캐시되었고 무효화되지 않았는지 확인합니다. 양식이 캐시되고 유효한 경우 캐시에서 생성된 HTML을 제공합니다. 이 양식이 무효화되면 Forms OSGi 렌더링 서비스는 XML 형식으로 초기 양식 레이아웃 및 양식 상태를 생성합니다. 이 XML은 Forms OSGi 서비스에 의해 HTML 레이아웃 및 초기 JSON 양식 상태로 변환된 다음 요청에 대해 캐시됩니다.
+* **미리 채워진 Forms**:렌더링 도중 사용자가 미리 채워진 데이터가 있는 양식을 요청하면 Forms OSGi 렌더링 서비스는 Forms 서비스 컨테이너를 호출하고 병합된 데이터가 있는 새 양식 상태를 생성합니다. 하지만 레이아웃이 위의 단계에서 이미 생성되었으므로 이 호출은 첫 번째 호출보다 빠릅니다. 이 호출은 데이터 병합만 수행하고 데이터에서 스크립트를 실행합니다.
 
 양식에 포함된 업데이트나 양식 내에 사용된 자산이 있는 경우 양식 캐시 구성 요소는 이를 감지하고 해당 특정 양식의 캐시가 무효화됩니다. Forms OSGi 서비스가 처리를 완료하면 프로필 렌더러 jsp가 이 양식에 JavaScript 라이브러리 참조 및 스타일링을 추가하고 클라이언트에 응답을 반환합니다. Apache와 같은 일반적인 웹 서버 [는 HTML](https://httpd.apache.org/) 압축이 켜진 상태에서 여기에 사용할 수 있습니다. 웹 서버는 서버와 클라이언트 컴퓨터 간의 데이터를 스트리밍하는 데 필요한 응답 크기, 네트워크 트래픽 및 시간을 크게 줄입니다.
 
-사용자가 양식을 제출하면 브라우저는 JSON 형식의 양식 상태를 [전송 서비스 프록시로 보냅니다](/help/forms/using/service-proxy.md). 전송 서비스 프록시는 JSON 데이터를 사용하여 데이터 XML을 생성하고 해당 데이터 XML을 제출하여 종단점을 제출합니다.
+사용자가 양식을 제출하면 브라우저는 JSON 형식의 양식 상태를 [전송 서비스 프록시로 보냅니다](/help/forms/using/service-proxy.md).전송 서비스 프록시는 JSON 데이터를 사용하여 데이터 XML을 생성하고 해당 데이터 XML을 제출하여 종단점을 제출합니다.
 
 ## 구성 요소 {#components}
 
@@ -96,7 +93,7 @@ HTML5 양식에서는 캐싱을 사용하여 처리량과 응답 시간을 최�
   </tr> 
   <tr> 
    <td>공격적</td> 
-   <td>렌더링된 HTML 컨텐츠<br /> 캐시 보수적 수준에서 캐시되는 모든 객체를 캐시합니다.<br /> <strong>참고</strong>: 이 전략은 최고의 성능을 내지만 캐시된 객체를 저장하는 데 더 많은 메모리를 사용합니다.</td> 
+   <td>렌더링된 HTML 컨텐츠<br /> 캐시 보수적 수준에서 캐시되는 모든 객체를 캐시합니다.<br /> <strong>참고</strong>:이 전략은 최고의 성능을 내지만 캐시된 객체를 저장하는 데 더 많은 메모리를 사용합니다.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -123,7 +120,7 @@ HTML5 양식은 LRU 전략을 사용하여 메모리 내 캐싱을 수행합니�
 
 #### 스크립팅 엔진 {#scripting-engine}
 
-Adobe XFA 구현은 두 가지 유형의 스크립팅 언어를 지원하여 양식에서 사용자 정의 로직 실행을 가능하게 합니다. JavaScript 및 FormCalc.
+Adobe XFA 구현은 두 가지 유형의 스크립팅 언어를 지원하여 양식에서 사용자 정의 로직 실행을 가능하게 합니다.JavaScript 및 FormCalc.
 
 HTML Forms의 스크립팅 엔진은 JavaScript로 작성되어 두 언어로 XFA 스크립팅 API를 지원합니다.
 
@@ -176,8 +173,8 @@ Sling 패키지에는 프로필 및 프로필 렌더러와 관련된 내용이 �
 
 프로필 노드에는 값 xfaforms/profile **의 sling:resourceSuperType** 속성이 **있습니다**. 이 속성은 내부적으로 **/libs/xfaforms/profile** 폴더에 있는 프로필 노드의 sling 스크립트에 요청을 전달합니다. 이러한 스크립트는 HTML 양식과 필수 JS/CSS 객체를 취합하기 위한 컨테이너인 JSP 페이지입니다. 페이지에는 다음에 대한 참조가 포함되어 있습니다.
 
-* **xfaforms.I18N.&lt;locale>**: 이 라이브러리에는 지역화된 데이터가 포함되어 있습니다.
-* **xfaforms.profile**: 이 라이브러리에는 XFA 스크립팅 및 레이아웃 엔진에 대한 구현이 포함되어 있습니다.
+* **xfaforms.I18N.&lt;locale>**:이 라이브러리에는 지역화된 데이터가 포함되어 있습니다.
+* **xfaforms.profile**:이 라이브러리에는 XFA 스크립팅 및 레이아웃 엔진에 대한 구현이 포함되어 있습니다.
 
 이러한 라이브러리는 CQ 프레임워크 JavaScript 라이브러리의 자동 연결, 축소 및 압축 기능의 이점을 활용하는 CQ 클라이언트 라이브러리로 모델링됩니다.\
 CQ Client Libs에 대한 자세한 내용은 [CQ Clientlib 설명서를 참조하십시오](https://docs.adobe.com/docs/en/cq/current/developing/components/clientlibs.html).
