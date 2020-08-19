@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 discoiquuid: f564759f-fb56-4f70-a7b1-286a223755c6
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: 77cca35f74db2ced556b71c3192058b7c352ab4d
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 7%
@@ -32,7 +32,7 @@ AEM Communities은 사용자 프로필을 관리하고 UGC(사용자 생성 콘�
 >
 >AEM Communities [사이트에서](analytics.md) Adobe Analytics을 구성한 경우 캡처한 사용자 데이터가 Adobe Analytics 서버로 전송됩니다. Adobe Analytics은 사용자 데이터를 액세스, 내보내기 및 삭제하고 GDPR을 준수하는 API를 제공합니다. 자세한 내용은 액세스 [제출 및 요청 삭제를 참조하십시오](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
-이러한 API를 사용하려면 UserUgcManagement 서비스를 활성화하여 종단점을 `/services/social/ugcmanagement` 활성화해야 합니다. 이 서비스를 활성화하려면 [GitHub.com에서 사용 가능한](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet) 샘플 [서블릿을](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet)설치하십시오. 그런 다음 다음과 유사한 http 요청을 사용하여 적절한 매개 변수를 사용하여 커뮤니티 사이트의 게시 인스턴스에 대한 끝점을 히트:
+이러한 API를 사용하려면 UserUgcManagement 서비스를 활성화하여 종단점을 `/services/social/ugcmanagement` 활성화해야 합니다. 이 서비스를 활성화하려면 [GitHub.com에서 사용 가능한](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet) 샘플 [서블릿을](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet)설치하십시오. 그런 다음 다음과 유사한 http 요청을 사용하여 적절한 매개 변수를 사용하여 커뮤니티 사이트의 게시 인스턴스에 대한 끝점을 히트:
 
 `http://localhost:port/services/social/ugcmanagement?user=<authorizable ID>&operation<getUgc>`
 
@@ -44,8 +44,8 @@ AEM Communities은 사용자 프로필을 관리하고 UGC(사용자 생성 콘�
 
 `getUserUgc(ResourceResolver resourceResolver, String user, OutputStream outputStream)` 시스템에서 사용자의 모든 UGC를 내보내는 데 도움이 됩니다.
 
-* **사용자**: 사용자 인증 가능 ID.
-* **outputStream**: 결과는 사용자가 생성한 컨텐츠(json 파일)와 첨부 파일(사용자가 업로드한 이미지 또는 비디오 포함)을 포함하는 zip 파일인 출력 스트림으로 반환됩니다.
+* **사용자**:사용자 인증 가능 ID.
+* **outputStream**:결과는 사용자가 생성한 컨텐츠(json 파일)와 첨부 파일(사용자가 업로드한 이미지 또는 비디오 포함)을 포함하는 zip 파일인 출력 스트림으로 반환됩니다.
 
 예를 들어, weston.mccall@dodgit.com을 권한 가능한 ID로 사용하여 커뮤니티 사이트에 로그인하는 Weston McCall이라는 사용자의 UGC를 내보내려면 다음과 유사한 http GET 요청을 전송할 수 있습니다.
 
@@ -55,7 +55,7 @@ AEM Communities은 사용자 프로필을 관리하고 UGC(사용자 생성 콘�
 
 **deleteUserUgc(ResourceResolver resourceResolver, String user)** 는 시스템에서 사용자에 대한 모든 UGC를 삭제하는 데 도움이 됩니다.
 
-* **사용자**: 사용자 인증 가능 ID.
+* **사용자**:사용자 인증 가능 ID.
 
 예를 들어 권한 부여 ID가 weston.mccall@dodgit.com인 사용자의 UGC를 http POST 요청을 통해 삭제하려면 다음 매개 변수를 사용하십시오.
 
@@ -64,17 +64,17 @@ AEM Communities은 사용자 프로필을 관리하고 UGC(사용자 생성 콘�
 
 ### Adobe Analytics에서 UGC 삭제 {#delete-ugc-from-analytics}
 
-Adobe Analytics에서 사용자 데이터를 삭제하려면 GDPR Analytics 워크플로우를 따릅니다. as the API does not delete user data from Adobe Analytics.
+Adobe Analytics에서 사용자 데이터를 삭제하려면 GDPR Analytics 워크플로우를 따릅니다.as the API does not delete user data from Adobe Analytics.
 
 AEM Communities에서 사용하는 Adobe Analytics 변수 매핑에 대해서는 다음 이미지를 참조하십시오.
 
-![Adobe Analytics용 AEM communities 변수 매핑](assets/Analytics-Communities-Mapping.png)
+![ADOBE ANALYTICS용 AEM communities 변수 매핑](assets/Analytics-Communities-Mapping.png)
 
 ## 사용자 계정 비활성화 {#disable-a-user-account}
 
 **deleteUserAccount(ResourceResolver resourceResolver, String 사용자)** 는 사용자 계정을 비활성화하는 데 도움이 됩니다.
 
-* **사용자**: 사용자 인증 가능 ID.
+* **사용자**:사용자 인증 가능 ID.
 
 >[!NOTE]
 >
