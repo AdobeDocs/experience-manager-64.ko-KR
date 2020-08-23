@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 1%
@@ -86,7 +86,7 @@ java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
 그러면 더미 덤프 파일(**java_...hprof**) 프로세스가 기억상실될 때마다. 더미 덤프가 생성된 후에도 프로세스가 계속 실행될 수 있습니다. 일반적으로 한 더미 덤프 파일이 문제를 분석하는 데 충분합니다.
 
-### **AEM Quickstart를 두 번 클릭해도 AEM Welcome 화면이 브라우저에 표시되지 않습니다{#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}**
+### AEM Quickstart를 두 번 클릭해도 AEM Welcome 화면이 브라우저에 표시되지 않습니다 {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
 
 특정 상황에서 저장소 자체가 성공적으로 실행되더라도 AEM WCM 시작 화면이 자동으로 표시되지 않습니다. 이는 운영 체제 설정, 브라우저 구성 또는 유사한 요인에 따라 달라질 수 있습니다.
 
