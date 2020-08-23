@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 25f0e0f7-9570-4748-81cb-ccec6492c0b4
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2833'
+source-wordcount: '2831'
 ht-degree: 3%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 3%
 
 * **[!UICONTROL 시간 초과 핸들러]**
 
-   단계가 시간 초과될 때 워크플로우를 제어하는 핸들러; 예를 들면 다음과 같습니다.
+   단계가 시간 초과될 때 워크플로우를 제어하는 핸들러;예를 들면 다음과 같습니다.
 
    `Auto Advancer`
 
@@ -97,8 +97,8 @@ AND **[!UICONTROL 분할은]** 워크플로우에서 분할을 생성하며 그 
 
 * AND **[!UICONTROL 분할]** 속성을 편집합니다.
 
-   * **[!UICONTROL 분할 이름]**: 설명을 위해 이름을 지정합니다.
-   * 필요한 분기 수를 선택합니다. 2, 3, 4 또는 5
+   * **[!UICONTROL 분할 이름]**:설명을 위해 이름을 지정합니다.
+   * 필요한 분기 수를 선택합니다.2, 3, 4 또는 5
 
 * 필요에 따라 분기에 워크플로우 단계를 추가합니다.
 
@@ -108,7 +108,7 @@ AND **[!UICONTROL 분할은]** 워크플로우에서 분할을 생성하며 그 
 
 컨테이너 **** 단계에서는 하위 워크플로로 실행되는 다른 워크플로우 모델을 시작합니다.
 
-이 **[!UICONTROL 컨테이너]]**워크플로우 모델을 재사용하여 일반적인 단계 시퀀스를 구현할 수 있습니다. 예를 들어 여러 편집 워크플로우에서 번역 워크플로우 모델을 사용할 수 있습니다.
+이 **[!UICONTROL 컨테이너를]** 사용하면 워크플로우 모델을 재사용하여 일반적인 단계 시퀀스를 구현할 수 있습니다. 예를 들어 여러 편집 워크플로우에서 번역 워크플로우 모델을 사용할 수 있습니다.
 
 ![wf-28](assets/wf-28.png)
 
@@ -119,15 +119,15 @@ AND **[!UICONTROL 분할은]** 워크플로우에서 분할을 생성하며 그 
 * [**[!UICONTROL 일반]**](#step-properties-common-tab)
 * **[!UICONTROL 컨테이너]**
 
-   * **[!UICONTROL 하위 워크플로우]**: 시작할 워크플로우를 선택합니다.
+   * **[!UICONTROL 하위 워크플로우]**:시작할 워크플로우를 선택합니다.
 
 ## 이동 단계 {#goto-step}
 
 이동 단계 **[!UICONTROL 를]** 사용하면 ECMAScript의 결과에 따라 워크플로우 모델에서 다음 단계를 지정하여 실행할 수 있습니다.
 
-* `true`: 이동 **[!UICONTROL 단계가]** 완료되고 워크플로우 엔진은 지정된 단계를 실행합니다.
+* `true`:이동 **[!UICONTROL 단계가]** 완료되고 워크플로우 엔진은 지정된 단계를 실행합니다.
 
-* `false`: 이동 **[!UICONTROL 단계가]** 완료되고 일반 라우팅 로직이 실행할 다음 단계를 결정합니다.
+* `false`:이동 **[!UICONTROL 단계가]** 완료되고 일반 라우팅 로직이 실행할 다음 단계를 결정합니다.
 
 이동 단계 **[!UICONTROL 를]** 사용하면 워크플로우 모델에서 고급 라우팅 구조를 구현할 수 있습니다. 예를 들어 루프를 구현하기 위해 루프 조건을 평가하는 스크립트와 함께 **[!UICONTROL 이동 단계를]** 정의하면 워크플로우의 이전 단계를 실행할 수 있습니다.
 
@@ -138,9 +138,9 @@ AND **[!UICONTROL 분할은]** 워크플로우에서 분할을 생성하며 그 
 * [**[!UICONTROL 일반]**](#step-properties-common-tab)
 * **[!UICONTROL 프로세스]**
 
-   * **[!UICONTROL 이동 단계]**: 실행할 단계를 선택합니다.
-   * **[!UICONTROL 스크립트 경로]**: 이동 단계 실행 여부를 결정하는 ECMAScript **[!UICONTROL 의 경로입니다]**.
-   * **[!UICONTROL 스크립트]**: 이동 단계 실행 여부를 결정하는 **[!UICONTROL ECMAScript]**.
+   * **[!UICONTROL 이동할 단계]**:실행할 단계를 선택합니다.
+   * **[!UICONTROL 스크립트 경로]**:이동 단계 실행 여부를 결정하는 ECMAScript **[!UICONTROL 의 경로입니다]**.
+   * **[!UICONTROL 스크립트]**:이동 단계 실행 여부를 결정하는 **[!UICONTROL ECMAScript]**.
 
 >[!CAUTION]
 >
@@ -195,12 +195,12 @@ OR **[!UICONTROL 분할은]** 워크플로우에서 분할을 생성하며 그 �
 
    * **[!UICONTROL 일반]**
 
-      * 필요한 분기 수를 선택합니다. 2, 3, 4 또는 5
+      * 필요한 분기 수를 선택합니다.2, 3, 4 또는 5
    * **[!UICONTROL 분기:*x*>]**
 
-      * **[!UICONTROL 스크립트 경로]**: 스크립트를 포함하는 파일의 경로입니다.
-      * **[!UICONTROL 스크립트]**: 상자에 스크립트를 추가합니다.
-      * **[!UICONTROL 기본 경로]**: 여러 분기가 true로 평가되면 기본 분기 뒤에 옵니다. 분기를 기본값으로 하나만 지정할 수 있습니다.
+      * **[!UICONTROL 스크립트 경로]**:스크립트를 포함하는 파일의 경로입니다.
+      * **[!UICONTROL 스크립트]**:상자에 스크립트를 추가합니다.
+      * **[!UICONTROL 기본 경로]**:여러 분기가 true로 평가되면 기본 분기 뒤에 옵니다. 분기를 기본값으로 하나만 지정할 수 있습니다.
 
    >[!NOTE]
    >
@@ -226,9 +226,9 @@ OR **[!UICONTROL 분할은]** 워크플로우에서 분할을 생성하며 그 �
 
 ### 참가자 단계 {#participant-step}
 
-참가자 단계 **[!UICONTROL 를]** 사용하면 특정 작업에 대한 소유권을 지정할 수 있습니다. 사용자가 단계를 수동으로 확인한 경우에만 워크플로우가 계속됩니다. 다른 사람이 워크플로우에 대해 조치를 취하도록 할 때 사용됩니다. 예를 들어 검토 단계입니다.
+참가자 단계 **[!UICONTROL 를]** 사용하면 특정 작업에 대한 소유권을 지정할 수 있습니다. 사용자가 단계를 수동으로 확인한 경우에만 워크플로우가 계속됩니다. 다른 사람이 워크플로우에 대해 조치를 취하도록 할 때 사용됩니다.예를 들어 검토 단계입니다.
 
-직접 관련이 없지만 작업을 지정할 때는 사용자 인증을 고려해야 합니다. 사용자는 워크플로우 페이로드인 페이지에 액세스할 수 있어야 합니다.
+직접 관련이 없지만 작업을 지정할 때는 사용자 인증을 고려해야 합니다.사용자는 워크플로우 페이로드인 페이지에 액세스할 수 있어야 합니다.
 
 #### 참가자 단계 - 구성 {#participant-step-configuration}
 
@@ -268,14 +268,14 @@ OR **[!UICONTROL 분할은]** 워크플로우에서 분할을 생성하며 그 �
 * [**[!UICONTROL 사용자/그룹]**](#step-properties-user-group-tab)
 * **[!UICONTROL 대화 상자]**
 
-   * **[!UICONTROL 대화 상자 경로**: 생성하는 [대화 상자의 대화 상자 노드에 대한 경로입니다](#dialog-participant-step-creating-a-dialog).
+   * **[!UICONTROL 대화 상자 경로**]:생성하는 [대화 상자의 대화 상자 노드에 대한 경로입니다](#dialog-participant-step-creating-a-dialog).
 
 #### 대화 상자 참가자 단계 - 대화 상자 만들기{#dialog-participant-step-creating-a-dialog}
 
-대화 상자를 만들려면
+대화 상자를 만들려면:
 
 * 결과 데이터가 페이로드에서 [저장되는 위치를 결정합니다](#dialog-participant-step-storing-data-in-the-payload).
-* [대화 상자 정의; 여기에는 데이터를 수집(및 저장)하는 데 사용되는 필드 정의가 포함됩니다](#dialog-participant-step-dialog-definition).
+* [대화 상자 정의;여기에는 데이터를 수집(및 저장)하는 데 사용되는 필드 정의가 포함됩니다](#dialog-participant-step-dialog-definition).
 
 #### 대화 상자 참가자 단계 - 페이로드에 데이터 저장 {#dialog-participant-step-storing-data-in-the-payload}
 
@@ -386,17 +386,17 @@ OR **[!UICONTROL 분할은]** 워크플로우에서 분할을 생성하며 그 �
 * [**[!UICONTROL 일반]**](#step-properties-common-tab)
 * **[!UICONTROL 참가자 선택기]**
 
-   * **[!UICONTROL 참가자 선택기]**: 만든 [참가자 선택기의 이름입니다](#dynamic-participant-step-developing-the-participant-chooser).
-   * **[!UICONTROL 인수]**: 필요한 인수입니다.
-   * **[!UICONTROL 이메일]**: 사용자에게 이메일 알림을 전송할지 여부.
+   * **[!UICONTROL 참가자 선택기]**:만든 [참가자 선택기의 이름입니다](#dynamic-participant-step-developing-the-participant-chooser).
+   * **[!UICONTROL 인수]**:필요한 인수입니다.
+   * **[!UICONTROL 이메일]**:사용자에게 이메일 알림을 전송할지 여부.
 
 * **[!UICONTROL 대화 상자]**
 
-   * **[!UICONTROL 대화 상자 경로]**: 대화 상자 참가자 단계와 같이 [만든 대화 상자의 **대화 상자 노드**&#x200B;경로입니다](#dialog-participant-step-creating-a-dialog).
+   * **[!UICONTROL 대화 상자 경로]**:대화 상자 참가자 단계와 같이 사용자가 [생성하는 대화 **상자 노드**&#x200B;경로입니다](#dialog-participant-step-creating-a-dialog).
 
 #### 동적 참가자 단계 - 참가자 선택기 개발 {#dynamic-participant-step-developing-the-participant-chooser}
 
-참가자 선택기를 만듭니다. 따라서 선택 로직이나 기준을 사용할 수 있습니다. 예를 들어, 참가자 선택자는 가장 적은 작업 항목이 있는 사용자(그룹 내)를 선택할 수 있습니다. 워크플로우 모델에서 다양한 **동적 참가자 단계&#x200B;*구성 요소 인스턴스에 사용할 참가자 선택기를 원하는*수만큼 만들 수 있습니다.
+참가자 선택기를 만듭니다. 따라서 선택 로직이나 기준을 사용할 수 있습니다. 예를 들어, 참가자 선택자는 가장 적은 작업 항목이 있는 사용자(그룹 내)를 선택할 수 있습니다. 워크플로우 모델에서 다른 **동적 참가자 단계 구성 요소 인스턴스에 사용할 참가자 선택기를** 원하는 수만큼 만들 수 있습니다.
 
 작업 항목을 할당할 사용자를 선택하는 OSGi 서비스 또는 ECMAScript를 만듭니다.
 
@@ -431,8 +431,8 @@ OR **[!UICONTROL 분할은]** 워크플로우에서 분할을 생성하며 그 �
 
    서비스는 com.day.cq.workflow.exec. [ParticipantStepChooser 인터페이스를 구현해야](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) 합니다. 인터페이스는 다음 멤버를 정의합니다.
 
-   * `SERVICE_PROPERTY_LABEL` field: 이 필드를 사용하여 참가자 선택자의 이름을 지정합니다. 이 이름은 **[!UICONTROL 동적 참가자 단계 속성에 있는 사용 가능한 참가자 선택기 목록에]** 나타납니다.
-   * `getParticipant` method: 동적으로 해결된 주체 ID를 값으로 `String` 반환합니다.
+   * `SERVICE_PROPERTY_LABEL` field:이 필드를 사용하여 참가자 선택자의 이름을 지정합니다. 이 이름은 **[!UICONTROL 동적 참가자 단계 속성에 있는 사용 가능한 참가자 선택기 목록에]** 나타납니다.
+   * `getParticipant` method:동적으로 해결된 주체 ID를 값으로 `String` 반환합니다.
 
    >[!CAUTION]
    >
@@ -498,7 +498,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 
 ### 양식 참가자 단계 {#form-participant-step}
 
-양식 **[!UICONTROL 참가자 단계에서는]** 작업 항목을 열 때 양식을 보여 줍니다. 사용자가 양식을 채우고 제출하면 필드 데이터는 워크플로우 페이로드 노드에 저장됩니다.
+양식 **[!UICONTROL 참가자 단계에서는]** 작업 항목이 열리면 양식을 보여 줍니다. 사용자가 양식을 채우고 제출하면 필드 데이터는 워크플로우 페이로드 노드에 저장됩니다.
 
 단계를 구성하려면 작업 항목을 지정할 그룹 또는 사용자와 양식의 경로를 지정합니다.
 
@@ -514,7 +514,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 * [**[!UICONTROL 사용자/그룹]**](#step-properties-user-group-tab)
 * **[!UICONTROL 양식]**
 
-   * **[!UICONTROL 양식 경로**: 만든 [양식의 경로입니다](#form-participant-step-creating-the-form).
+   * **[!UICONTROL 양식 경로]**:만든 [양식의 경로입니다](#form-participant-step-creating-the-form).
 
 #### 양식 참가자 단계 - 양식 만들기 {#form-participant-step-creating-the-form}
 
@@ -555,7 +555,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 * [**[!UICONTROL 일반]**](#step-properties-common-tab)
 * **[!UICONTROL 인수]**
 
-   * **[!UICONTROL 참가자]**: 선택할 수 있는 사용자 목록을 지정합니다. 목록에 사용자를 추가하려면 항목 **[!UICONTROL 추가]** 를 클릭하고 사용자 노드 또는 사용자 ID의 홈 경로를 입력합니다. 사용자 순서는 작업 항목을 할당할 가능성에 영향을 주지 않습니다.
+   * **[!UICONTROL 참가자]**:선택할 수 있는 사용자 목록을 지정합니다. 목록에 사용자를 추가하려면 항목 **[!UICONTROL 추가]** 를 클릭하고 사용자 노드 또는 사용자 ID의 홈 경로를 입력합니다. 사용자 순서는 작업 항목을 할당할 가능성에 영향을 주지 않습니다.
 
 ### 워크플로우 개시자 참가자 선택기 {#workflow-initiator-participant-chooser}
 
@@ -580,12 +580,12 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 * [**[!UICONTROL 일반]**](#step-properties-common-tab)
 * **[!UICONTROL 프로세스]**
 
-   * **[!UICONTROL 프로세스]**: 실행할 프로세스 구현입니다. 드롭다운 메뉴를 사용하여 ECMAScript 또는 OSGi 서비스를 선택합니다. 에 대한 자세한 내용:
+   * **[!UICONTROL 프로세스]**:실행할 프로세스 구현입니다. 드롭다운 메뉴를 사용하여 ECMAScript 또는 OSGi 서비스를 선택합니다. 에 대한 자세한 내용:
 
       * 표준 ECMAScripts 및 OSGi 서비스는 [처리 단계에 대한 기본 제공 프로세스를 참조하십시오](/help/sites-developing/workflows-process-ref.md).
       * 프로세스 단계를 위한 ECMAScripts **[!UICONTROL 생성]** , ECMAScript [를 사용한 프로세스 단계 구현을 참조하십시오](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
       * 프로세스 단계에 대한 OSGi 서비스 **[!UICONTROL 생성]** , Java [클래스를 사용한 프로세스 단계 구현을 참조하십시오](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
-   * **[!UICONTROL 처리기 고급]**: 실행 후 워크플로우를 다음 단계로 자동 진행하려면 이 옵션을 선택합니다. 선택하지 않으면 구현 스크립트가 워크플로우 진행에 대해 처리되어야 합니다.
-   * **[!UICONTROL 인수]**: 프로세스에 전달할 인수입니다.
+   * **[!UICONTROL 처리기 고급]**:실행 후 워크플로우를 다음 단계로 자동 진행하려면 이 옵션을 선택합니다. 선택하지 않으면 구현 스크립트가 워크플로우 진행에 대해 처리되어야 합니다.
+   * **[!UICONTROL 인수]**:프로세스에 전달할 인수입니다.
 
 
