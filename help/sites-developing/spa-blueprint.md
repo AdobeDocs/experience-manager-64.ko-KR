@@ -9,9 +9,9 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 translation-type: tm+mt
-source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2128'
+source-wordcount: '2124'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 >
 >AEM의 SPA 기능은 프레임워크에 영향을 받지 않지만 현재 Reimate 및 Angular 프레임워크만 지원됩니다.
 
-작성자가 AEM 페이지 편집기를 사용하여 단일 페이지 애플리케이션 프레임워크에 의해 노출된 데이터를 편집할 수 있도록 하려면, 프로젝트는 AEM 리포지토리 내 응용 프로그램에 대해 저장된 데이터의 의미론적 구조를 나타내는 모델의 구조를 해석할 수 있어야 합니다. 이러한 목표를 달성하기 위해 프레임워크에 관계없이 다음 두 개의 라이브러리가 제공됩니다. Adobe `PageModelManager` 와 `ComponentMapping`Creative Cloud
+작성자가 AEM 페이지 편집기를 사용하여 단일 페이지 애플리케이션 프레임워크에 의해 노출된 데이터를 편집할 수 있도록 하려면, 프로젝트는 AEM 리포지토리 내 응용 프로그램에 대해 저장된 데이터의 의미론적 구조를 나타내는 모델의 구조를 해석할 수 있어야 합니다. 이러한 목표를 달성하기 위해 프레임워크에 관계없이 다음 두 개의 라이브러리가 제공됩니다.Adobe `PageModelManager` 와 `ComponentMapping`Creative Cloud
 
 ### PageModelManager {#pagemodelmanager}
 
@@ -83,13 +83,13 @@ SPA 구성 요소는 페이지 모델과 동기화되어야 하며 그에 따라
 
 페이지 모델은 Sling Model API를 기반으로 하는 JSON Model Exporter [를](https://sling.apache.org/documentation/bundles/models.html) 활용합니다. 내보낼 수 있는 슬링 모델은 기본 라이브러리가 데이터 모델을 해석할 수 있도록 다음 필드 목록을 표시합니다.
 
-* `:type`: AEM 리소스 유형(기본값 = 리소스 유형)
-* `:children`: 현재 리소스의 계층 하위 항목입니다. 하위는 현재 리소스의 내부 컨텐트에 속하지 않습니다(페이지를 나타내는 항목에서 찾을 수 있음).
-* `:hierarchyType`: 리소스의 계층적 유형입니다. 현재 페이지 유형을 `PageModelManager` 지원합니다.
+* `:type`:AEM 리소스 유형(기본값 = 리소스 유형)
+* `:children`:현재 리소스의 계층 하위 항목입니다. 하위는 현재 리소스의 내부 컨텐트에 속하지 않습니다(페이지를 나타내는 항목에서 찾을 수 있음).
+* `:hierarchyType`:리소스의 계층적 유형입니다. 현재 페이지 유형을 `PageModelManager` 지원합니다.
 
-* `:items`: 현재 리소스의 하위 콘텐츠 리소스(중첩된 구조만 컨테이너에 있음)
-* `:itemsOrder`: 하위 목록 JSON 지도 개체는 해당 필드의 순서를 보증하지 않습니다. 맵과 현재 배열을 모두 갖음으로써 API의 소비자는 두 구조를 모두 활용할 수 있습니다
-* `:path`: 항목의 컨텐츠 경로(페이지를 나타내는 항목에 있음)
+* `:items`:현재 리소스의 하위 콘텐츠 리소스(중첩된 구조만 컨테이너에 있음)
+* `:itemsOrder`:하위 목록 JSON 지도 개체는 해당 필드의 순서를 보증하지 않습니다. 맵과 현재 배열을 모두 갖음으로써 API의 소비자는 두 구조를 모두 활용할 수 있습니다
+* `:path`:항목의 컨텐츠 경로(페이지를 나타내는 항목에 있음)
 
 AEM [콘텐츠 서비스 시작도 참조하십시오.](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/content-services-tutorial-use.html)
 
@@ -110,7 +110,7 @@ npm 모듈: [@adobe/cq-responsive-editable-components](https://www.npmjs.com/pac
 
 #### 각진 {#angular}
 
-npm 모듈: 곧 제공
+npm 모듈:곧 제공
 
 ## 기본 서비스 및 구성 요소 {#main-services-and-components}
 
@@ -130,14 +130,14 @@ npm 모듈: 곧 제공
 
 다음 메타 데이터를 프로젝트의 구성 요소에서 만든 외부 HTML 요소에 추가해야 합니다. 페이지 편집기에서 해당 편집 구성을 검색할 수 있습니다.
 
-* `data-cq-data-path`: 리소스를 기준으로 하는 경로 `jcr:content`
+* `data-cq-data-path`:리소스를 기준으로 하는 경로 `jcr:content`
 
 #### 기능 선언 및 자리 표시자 편집 {#editing-capability-declaration-and-placeholder}
 
 다음 메타 데이터 및 클래스 이름은 프로젝트의 구성 요소에서 만든 외부 HTML 요소에 추가해야 합니다. 페이지 편집기에서 관련 기능을 제공할 수 있습니다.
 
-* `cq-placeholder`: 빈 구성 요소의 자리 표시자를 식별하는 클래스 이름
-* `data-emptytext`: 구성 요소 인스턴스가 비어 있을 때 오버레이에서 표시할 레이블
+* `cq-placeholder`:빈 구성 요소의 자리 표시자를 식별하는 클래스 이름
+* `data-emptytext`:구성 요소 인스턴스가 비어 있을 때 오버레이에서 표시할 레이블
 
 **빈 구성 요소에 대한 자리 표시자**
 
@@ -156,7 +156,7 @@ npm 모듈: 곧 제공
 
 ### 페이지 {#page}
 
-구성 요소 `Page` 는 구성 요소를 `Container` 확장합니다. 컨테이너는 하위 페이지를 포함한 하위 구성 요소를 포함하고 렌더링하기 위한 구성 요소입니다. 이렇게 하려면 컨테이너가 해당 모델의 `:itemsOrder`속성, `:items`및 `:children` 속성을 반복합니다. 구성 요소 `Page` 는 ComponentMapping 라이브러리의 저장소에서 자식 구성 요소를 동적으로 [가져옵니다](/help/sites-developing/spa-blueprint.md#componentmapping) . 하위 구성 요소 `Page` 를 인스턴스화할 책임이 있습니다.
+구성 요소 `Page` 는 구성 요소를 `Container` 확장합니다. 컨테이너는 하위 페이지를 포함한 하위 구성 요소를 포함하고 렌더링하기 위한 구성 요소입니다. 이렇게 하려면 컨테이너가 해당 모델의 `:itemsOrder`속성, `:items`및 `:children` 속성을 반복합니다. 구성 요소 `Page` 는 ComponentMapping 라이브러리의 저장소에서 하위 구성 [요소를 동적으로](/help/sites-developing/spa-blueprint.md#componentmapping) 가져옵니다. 하위 구성 요소 `Page` 를 인스턴스화할 책임이 있습니다.
 
 ### 응답형 격자 {#responsive-grid}
 
@@ -185,8 +185,8 @@ SPA 구성 요소는 응답형 격자와 같은 그래픽 컨테이너에 매핑
 >
 >이 예제에서 사용되는 클래스 이름은 현재 페이지 편집기에 필요합니다.
 >
->* `"new section"`: 현재 요소가 컨테이너의 자리 표시자임을 나타냅니다.
->* `"aem-Grid-newComponent"`: 레이아웃 작성을 위한 구성 요소 정규화
+>* `"new section"`:현재 요소가 컨테이너의 자리 표시자임을 나타냅니다.
+>* `"aem-Grid-newComponent"`:레이아웃 작성을 위한 구성 요소 정규화
 
 >
 
@@ -243,7 +243,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 프로젝트 구성 요소는 편집자가 이러한 데이터 속성과 상호 작용할 수 있도록 다음과 같은 데이터 속성을 최소한 생성해야 합니다.
 
-* `data-cq-data-path`: 구성 요소의 상대 경로 `PageModel` (예: `"root/responsivegrid/image"`). 이 속성은 페이지에 추가할 수 없습니다.
+* `data-cq-data-path`:구성 요소의 상대 경로 `PageModel` (예: `"root/responsivegrid/image"`). 이 속성은 페이지에 추가할 수 없습니다.
 
 요약하면 페이지 편집기로 해석하려면 프로젝트 구성 요소는 다음 계약을 존중해야 합니다.
 
@@ -278,7 +278,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 앱이 라우팅을 소유합니다. 프런트 엔드 개발자는 먼저 내비게이션 구성 요소를 구현해야 합니다(AEM 탐색 구성 요소에 매핑됨). 이 구성 요소는 컨텐츠 조각을 표시하거나 숨길 일련의 경로와 함께 사용할 URL 링크를 렌더링합니다.
 
-기본 [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) 라이브러리와 해당 `[`ModelRouter&#39;](/help/sites-developing/spa-routing.md) 모듈(기본적으로 활성화됨)은 지정된 리소스 경로와 연관된 모델에 대한 사전 반입과 액세스 권한을 제공합니다.
+기본 [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) 라이브러리와 해당 [`ModelRouter`](/help/sites-developing/spa-routing.md) 모듈(기본적으로 활성화됨)은 주어진 리소스 경로와 연관된 모델에 대한 사전 반입과 액세스 권한을 제공합니다.
 
 두 개체는 라우팅 개념과 관련되지만 [`ModelRouter`](/help/sites-developing/spa-routing.md) , PageModelManager [가 현재 응용 프로그램 상태와 동기화되는 데이터 모델을 불러와야](/help/sites-developing/spa-blueprint.md#pagemodelmanager) 합니다.
 
