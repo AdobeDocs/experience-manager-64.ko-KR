@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 translation-type: tm+mt
-source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 1%
@@ -68,7 +68,7 @@ CQ **데이 메일 서비스**&#x200B;문제를 디버깅하는 데 도움이 �
 
    `com.day.cq.wcm.notification.email.impl.EmailChannel` 유형 `sling:OsgiConfig`
 
-1. 이름이 지정된 노드]에 `String` 속성을 추가합니다 `email.from`. 값에 사용할 이메일 주소를 지정합니다.
+1. 이름이 지정된 노드에 `String` 속성을 추가합니다 `email.from`. 값에 사용할 이메일 주소를 지정합니다.
 
 1. 모두 **저장을 클릭합니다**.
 
@@ -255,7 +255,7 @@ subject=<text_1>
 >
 >템플릿 형식에 대한 자세한 내용은 Properties.load() [메서드의](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-) javadocs에서 확인할 수 있습니다.
 
-이 방법 `${payload.path.open}` 은 작업 항목의 페이로드 경로를 표시합니다. 예를 들어, 사이트의 경우, 이와 비슷할 `payload.path.open` 수 `/bin/wcmcommand?cmd=open&path=…`있습니다.; 서버 이름이 없는 경우이므로 템플릿에 이 접두사가 붙습니다 `${host.prefix}`.
+이 방법 `${payload.path.open}` 은 작업 항목의 페이로드 경로를 표시합니다. 예를 들어, 사이트의 경우, 이와 비슷할 `payload.path.open` 수 `/bin/wcmcommand?cmd=open&path=…`있습니다.;서버 이름이 없는 경우이므로 템플릿에 이 접두사가 붙습니다 `${host.prefix}`.
 
 이메일 템플릿 내에서 다음 변수를 사용할 수 있습니다.
 
@@ -285,7 +285,7 @@ subject=<text_1>
 
 * `${payload.type}`, 페이로드 유형
 * `${payload.path}`, 페이로드 경로
-* `${host.prefix}`, 호스트 접두사, 예: http://localhost:4502
+* `${host.prefix}`, 호스트 접두사, 예:http://localhost:4502
 
 ### 새 언어용 이메일 템플릿 추가 {#adding-an-email-template-for-a-new-language}
 
@@ -293,9 +293,9 @@ subject=<text_1>
 
 1. CRXDE에서 `<language-code>.txt` 아래 파일을 추가합니다.
 
-   * `/etc/notification/email/default/com.day.cq.wcm.core.page` : 페이지 알림용
-   * `/etc/notification/email/default/com.day.cq.collab.forum` : 포럼 알림용
-   * `/etc/workflow/notification/email/default` : 워크플로우 알림
+   * `/etc/notification/email/default/com.day.cq.wcm.core.page` :페이지 알림용
+   * `/etc/notification/email/default/com.day.cq.collab.forum` :포럼 알림용
+   * `/etc/workflow/notification/email/default` :워크플로우 알림
 
 1. 파일에 언어 적용
 1. 변경 사항을 저장합니다.
