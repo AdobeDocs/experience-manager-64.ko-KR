@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
-source-wordcount: '5549'
+source-wordcount: '5547'
 ht-degree: 1%
 
 ---
@@ -420,7 +420,7 @@ spin-01-01
    [ [!UICONTROL 세부 사항]] 페이지의 오른쪽 위 모서리에 설정된 대로 [양식 [!UICONTROL 보기] ]가 기본 보기입니다.
 
 1. 사전 **[!UICONTROL 설정 목록]** 패널에서 **[!UICONTROL 추가를]** 눌러 화면 오른쪽의 **[!UICONTROL 세부]** 정보패널에 있는 정의 필드를활성화합니다.
-1. [ **[!UICONTROL 세부 사항]** ] 패널의 [!UICONTROL 사전 설정 이름 필드에 사전 설정 이름을 입력합니다.
+1. 세부 **[!UICONTROL 사항]** 패널의 [!UICONTROL 사전 설정 이름] 필드에 사전 설정 이름을 입력합니다.
 1. 배치 **[!UICONTROL 세트 유형]** 드롭다운 메뉴에서 **[!UICONTROL 자산 세트를 선택합니다]**.
 1. 하위 **[!UICONTROL 유형]** 드롭다운 목록에서 **[!UICONTROL 다중 축 스핀 세트를 선택합니다]**.
 1. 자산 **[!UICONTROL 이름 지정 규칙을]**&#x200B;확장한 다음 **[!UICONTROL 파일 이름 지정]** 드롭다운 목록에서 사용자 지정을 **[!UICONTROL 누릅니다]**.
