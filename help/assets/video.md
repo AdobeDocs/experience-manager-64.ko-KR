@@ -10,9 +10,9 @@ topic-tags: Dynamic-Media
 content-type: reference
 discoiquuid: b721dc7c-b056-47f5-9489-9f4db45b68a0
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '10507'
+source-wordcount: '10502'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 이 섹션에서는 Dynamic Media에서 비디오를 사용한 작업에 대해 설명합니다.
 
-## 빠른 시작: 비디오 {#quick-start-videos}
+## 빠른 시작:비디오 {#quick-start-videos}
 
 다음 단계별 워크플로우 설명은 Dynamic Media에서 적응형 비디오 세트를 빠르게 시작하고 실행하는 데 도움이 되도록 설계되었습니다. 각 단계 후에는 주제 제목에 대한 상호 참조가 있습니다. 여기에서 자세한 내용을 찾을 수 있습니다.
 
@@ -142,7 +142,7 @@ Dynamic Media의 비디오는 데스크탑, iOS, Android, Blackberry, Windows �
 * 지원되는 다양한 비디오 포맷 및 오디오 포맷의 비디오를 업로드하고 여러 화면에서 재생할 수 있는 MP4 H.264 포맷으로 비디오를 인코딩할 수 있습니다. 사전 정의된 응용 비디오 사전 설정, 단일 비디오 인코딩 사전 설정을 사용하거나 자체 인코딩을 사용자 지정하여 비디오의 품질과 크기를 제어할 수 있습니다.
 
    * 응용 비디오 세트가 생성되면 MP4 비디오가 포함됩니다.
-   * **참고**: 응용 기본 비디오 세트에/소스 비디오가 추가되지 않습니다.
+   * **참고**:응용 기본 비디오 세트에/소스 비디오가 추가되지 않습니다.
 
 * 모든 HTML5 비디오 뷰어에서 비디오 캡션 지정
 * 비디오 에셋을 효율적으로 관리할 수 있는 완벽한 메타데이터 지원을 통해 비디오를 구성, 검색 및 검색할 수 있습니다.
@@ -166,7 +166,7 @@ Dynamic Media는 MP4 H.264 비디오용 모바일 비디오 재생을 지원합�
 
 Adobe Scene7 뷰어 [참조 안내서에서 HTML5 뷰어](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) 정보를 참조하십시오.
 
-## 모범 사례: HTML5 비디오 뷰어 사용 {#best-practice-using-the-html-video-viewer}
+## 모범 사례:HTML5 비디오 뷰어 사용 {#best-practice-using-the-html-video-viewer}
 
 Dynamic Media HTML5 비디오 뷰어 사전 설정은 강력한 비디오 플레이어입니다. 적응형 스트리밍 전달 부족, 제한된 데스크탑 브라우저 전달 범위와 같은 모바일 디바이스와 관련된 HTML5 비디오 재생과 관련된 여러 가지 일반적인 문제를 방지하는 데 이 기능을 사용할 수 있습니다.
 
@@ -210,7 +210,7 @@ HLS(HTTP Live Streaming)는 네트워크 대역폭 용량에 따라 재생을 �
   <tr> 
    <td>데스크톱</td> 
    <td>Internet Explorer 11+</td> 
-   <td>Windows 8 및 Windows 10의 경우 - HLS가 요청될 때마다 HTTPS를 강제로 사용하십시오. 알려진 제한: HLS의 HTTP는 Windows 7의 경우 이 브라우저/운영 체제 조합<br /><br /> - 점진적 다운로드에서 작동하지 않습니다. HTTP와 HTTPS 프로토콜을 선택하는 데 표준 로직을 사용합니다.</td> 
+   <td>Windows 8 및 Windows 10의 경우 - HLS가 요청될 때마다 HTTPS를 강제로 사용하십시오. 알려진 제한:HLS의 HTTP는 Windows 7의 경우 이 브라우저/운영 체제 조합<br /><br /> - 점진적 다운로드에서 작동하지 않습니다. HTTP와 HTTPS 프로토콜을 선택하는 데 표준 로직을 사용합니다.</td> 
   </tr> 
   <tr> 
    <td>데스크톱</td> 
@@ -283,8 +283,8 @@ HLS(HTTP Live Streaming)는 네트워크 대역폭 용량에 따라 재생을 �
 
 비디오 인코딩에 대한 자세한 내용은 다음을 참조하십시오.
 
-* 아티클: *스트리밍 101: 기본 사항 — 코덱스, 대역폭, 데이터 비율 및 해상도:* [www.adobe.com/go/learn_s7_streaming101_en](https://www.adobe.com/go/learn_s7_streaming101_en).
-* 비디오: *비디오 인코딩 기본 사항:* [www.adobe.com/go/learn_s7_encoding_en](https://www.adobe.com/go/learn_s7_encoding_en).
+* 아티클: *스트리밍 101:기본 사항 — 코덱스, 대역폭, 데이터 비율 및 해상도:*[www.adobe.com/go/learn_s7_streaming101_en](https://www.adobe.com/go/learn_s7_streaming101_en).
+* 비디오: *비디오 인코딩 기본 사항:*[www.adobe.com/go/learn_s7_encoding_en](https://www.adobe.com/go/learn_s7_encoding_en).
 
 ### 소스 비디오 파일 {#source-video-files}
 
@@ -339,7 +339,7 @@ HLS(HTTP Live Streaming)는 네트워크 대역폭 용량에 따라 재생을 �
 
 * **VBR(Variable Bitrate Encoding** ) - VBR 인코딩은 압축기에 필요한 데이터를 기반으로 데이터 속도를 낮추고 사용자가 설정한 상한까지 조정합니다. 즉, VBR 인코딩 프로세스 동안 미디어 파일의 비트 전송률이 미디어 파일 비트 전송률에 따라 동적으로 증가 또는 감소합니다.
 
-   VBR은 인코딩하는 데 시간이 오래 걸리지만 가장 유리한 결과를 가져옵니다. 미디어 파일의 품질이 우수합니다. VBR은 비디오 컨텐츠의 http 점진적 전달에 가장 일반적으로 사용됩니다.
+   VBR은 인코딩하는 데 시간이 오래 걸리지만 가장 유리한 결과를 가져옵니다.미디어 파일의 품질이 우수합니다. VBR은 비디오 컨텐츠의 http 점진적 전달에 가장 일반적으로 사용됩니다.
 
 **VBR과 CRB는 언제 사용해야 합니까?**
 VBR과 CBR을 선택하는 경우 미디어 파일에 VBR을 사용하는 것이 좋습니다. VBR은 경쟁 비트 전송률로 고품질의 파일을 제공합니다. VBR을 사용할 때는 2패스 인코딩을 사용하고 최대 비트 전송률을 대상 비디오 비트 전송률의 1.5배로 설정합니다.
@@ -359,7 +359,7 @@ VBR과 CBR을 선택하는 경우 미디어 파일에 VBR을 사용하는 것이
 
 **해상도는** 비디오 파일의 높이와 너비를 픽셀 단위로 설명합니다. 대부분의 소스 비디오는 고해상도(예: 1920 x 1080)에 저장됩니다. 스트리밍 목적으로 소스 비디오는 더 작은 해상도(640 x 480 이하)로 압축됩니다.
 
-해상도와 데이터 전송률은 비디오 품질을 결정하는 두 가지 통합 연결 요소입니다. 동일한 비디오 품질을 유지하려면 비디오 파일의 픽셀 수가 많을수록 해상도가 높을수록 데이터 비율이 높아야 합니다. 예를 들어 320 x 240 해상도 및 640 x 480 해상도 비디오 파일의 프레임당 픽셀 수를 고려해 보십시오.
+해상도와 데이터 전송률은 비디오 품질을 결정하는 두 가지 통합 연결 요소입니다. 동일한 비디오 품질을 유지하려면 비디오 파일의 픽셀 수가 많을수록 해상도가 높을수록 더 높은 데이터 속도가 필요합니다. 예를 들어 320 x 240 해상도 및 640 x 480 해상도 비디오 파일의 프레임당 픽셀 수를 고려해 보십시오.
 
 | 해상도 | 프레임당 픽셀 |
 |--- |--- |
@@ -388,7 +388,7 @@ VBR과 CBR을 선택하는 경우 미디어 파일에 VBR을 사용하는 것이
 
 ### Fps(초당 프레임 수) {#fps-frames-per-second}
 
-미국 및 일본에서는 대부분의 비디오가 29.97fps로 촬영됩니다. 유럽에서 대부분의 비디오는 25fps로 촬영됩니다. 영화는 24fps로 촬영됩니다.
+미국 및 일본에서는 대부분의 비디오가 29.97fps로 촬영됩니다.유럽에서 대부분의 비디오는 25fps로 촬영됩니다. 영화는 24fps로 촬영됩니다.
 
 마스터 비디오 파일의 fps 속도와 일치하는 비디오 인코딩 사전 설정을 선택합니다. 예를 들어 마스터 비디오가 25fps인 경우 25fps의 인코딩 사전 설정을 선택합니다. 기본적으로 모든 사용자 정의 인코딩은 마스터 비디오 파일의 fps를 사용합니다. 따라서 비디오 인코딩 사전 설정을 만들 때 fps 설정을 명시적으로 지정할 필요가 없습니다.
 
@@ -484,13 +484,13 @@ YouTube에 게시하려면 Google 계정이 필요합니다. GMAIL 계정이 있
 1. 대시보드 **** 페이지에서 프로젝트 **[!UICONTROL 만들기를 탭합니다]**.
 1. 새 프로젝트 **[!UICONTROL 대화]** 상자에서 프로젝트 이름을 입력합니다.
 
-   프로젝트 ID는 프로젝트 이름을 기반으로 합니다. 따라서 프로젝트 이름을 신중하게 선택합니다. 만든 후에는 변경할 수 없습니다. 또한 나중에 Adobe Experience Manager에서 YouTube를 설정할 때 동일한 프로젝트 ID를 다시 입력해야 합니다. 프로젝트의 ID를 기록할 수도 있습니다.
+   프로젝트 ID는 프로젝트 이름을 기반으로 합니다. 따라서 프로젝트 이름을 신중하게 선택합니다.만든 후에는 변경할 수 없습니다. 또한 나중에 Adobe Experience Manager에서 YouTube를 설정할 때 동일한 프로젝트 ID를 다시 입력해야 합니다. 프로젝트의 ID를 기록할 수도 있습니다.
 1. 만들기를 **[!UICONTROL 누릅니다]**.
 
 1. 프로젝트의 **[!UICONTROL 대시보드]****[!UICONTROL 에서]** 시작하기 **[!UICONTROL 카드]**&#x200B;에서 API활성화를 탭하고 키와 같은 자격 증명을 받습니다.
 1. 대시보드 **[!UICONTROL 페이지]** 상단에서 API **[!UICONTROL 활성화를 탭합니다]**.
 1. 라이브러리 **** 페이지의 YouTube API에서 **[!UICONTROL YouTube 데이터 API를 탭합니다]**.
-1. YouTube **Data API v3]** 페이지 상단에서 **[!UICONTROL 활성화를 탭하여]** 활성화합니다.
+1. YouTube **[!UICONTROL Data API v3]** 페이지 상단 근처에 있는 **[!UICONTROL 활성화를 탭하여]** 켜십시오.
 1. API를 사용하려면 자격 증명이 필요할 수 있습니다. 필요한 경우 자격 증명 **[!UICONTROL 만들기를 누릅니다]**.
 1. API를 **[!UICONTROL 어디에서 호출합니까?]** 드롭다운 목록에서 **[!UICONTROL 웹 서버(예: node.js, Tomcat)를 선택합니다]**.
 1. 액세스 **[!UICONTROL 중인 데이터는 무엇입니까?]** 사용자 **[!UICONTROL 데이터를 선택합니다]**.
@@ -502,7 +502,7 @@ YouTube에 게시하려면 Google 계정이 필요합니다. GMAIL 계정이 있
 
    예, `https://1a2b3c.mycompany.com:4321`
 
-   **참고**: 위의 경로 예는 그림 용도로만 사용할 수 있습니다.
+   **참고**:위의 경로 예는 그림 용도로만 사용할 수 있습니다.
 
 1. 공식 리디렉션 URI **** 머리글 아래의 텍스트 필드에 다음을 입력하고 경로에 사용자 자신의 도메인 및 포트 번호를 대체한 다음 Enter 키를 눌러 목록에 경로를 추가합니다.
 
@@ -510,13 +510,13 @@ YouTube에 게시하려면 Google 계정이 필요합니다. GMAIL 계정이 있
 
    예, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   **참고**: 위의 경로 예는 그림 용도로만 사용할 수 있습니다.
+   **참고**:위의 경로 예는 그림 용도로만 사용할 수 있습니다.
 
 1. 클라이언트 **[!UICONTROL ID 만들기를 누릅니다]**.
 1. 자격 증명 페이지의 **[!UICONTROL OAuth 2.0 동의 설정 화면]** 머리글 아래에서 현재 사용 중인 Gmail 주소를 선택합니다.
 1. 사용자에게 **[!UICONTROL 표시되는]** 제품 이름 머리글 아래의 텍스트 필드에 동의 화면에 표시할 항목을 입력합니다.
 
-   AEM 관리자가 YouTube에 인증할 때 동의 화면이 표시됩니다. AEM은 허가를 위해 YouTube에 연락합니다.
+   AEM 관리자가 YouTube에 인증할 때 동의 화면이 표시됩니다.AEM은 허가를 위해 YouTube에 연락합니다.
 
 1. 계속을 **[!UICONTROL 누릅니다]**.
 1. 자격 증명 **[!UICONTROL 다운로드]** 머리글 아래에서 **[!UICONTROL 다운로드를 누릅니다]**.
@@ -534,7 +534,7 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
 
 >[!CAUTION]
 >
->YouTube &amp;ast;before&amp;ast;에서 하나 이상의 채널을 이미 설정했는지 확인하십시오. AEM의 YouTube 설정 아래에 채널을 추가합니다( [아래 AEM의 YouTube 설정 참조](#setting-up-youtube-in-aem) ). 이렇게 하지 않으면 기존 채널이 없다는 경고가 표시되지 않습니다. 하지만 채널을 추가할 때도 Google 인증이 계속 수행되지만 비디오를 보낼 채널을 선택할 수 있는 옵션은 없습니다.
+>YouTube &amp;ast;before&amp;ast;에서 하나 이상의 채널을 이미 설정했는지 확인하십시오.aem의 YouTube 설정 아래에 채널을 추가합니다( [아래 AEM의 YouTube 설정 참조](#setting-up-youtube-in-aem) ). 이렇게 하지 않으면 기존 채널이 없다는 경고가 표시되지 않습니다. 하지만 채널을 추가할 때도 Google 인증이 계속 수행되지만 비디오를 보낼 채널을 선택할 수 있는 옵션은 없습니다.
 
 **YouTube 채널을 만들려면 다음을 수행하십시오**.
 
@@ -570,13 +570,13 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
 
 1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구 > 배포 > Cloud Services을 누릅니다]**.
 1. 제3자 **[!UICONTROL 서비스]** 머리글 아래의 YouTube에서 지금 **[!UICONTROL 구성을 탭합니다]**.
-1. 구성 **만들기** 대화 상자에서 각 필드에 제목(필수)과 이름(선택 사항)을 입력합니다.
+1. 구성 **[!UICONTROL 만들기]** 대화 상자에서 각 필드에 제목(필수)과 이름(선택 사항)을 입력합니다.
 1. 만들기를 **[!UICONTROL 누릅니다]**.
 1. YouTube **[!UICONTROL 계정 설정]** 대화 상자의 **[!UICONTROL 응용 프로그램 이름]** 필드에 Google 프로젝트 ID를 입력합니다.
 
    초기 Google Cloud 설정을 구성할 때 프로젝트 ID를 지정했습니다.
 
-   YouTube **[!UICONTROL 계정 설정]** 대화 상자를 열어 둡니다. 잠시 후에 다시 돌아오실 겁니다
+   YouTube **[!UICONTROL 계정 설정]** 대화 상자를 열어 둡니다.잠시 후에 다시 돌아오실 겁니다
 
 1. 일반 텍스트 편집기를 사용하여 이전에 다운로드하고 저장한 JSON 파일을 Google 클라우드 설정 구성 작업에서 엽니다.
 1. 전체 JSON 텍스트를 선택하고 복사합니다.
@@ -586,7 +586,7 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
    이제 AEM에서 YouTube 채널을 설정합니다.
 
 1. 사용 가능한 채널 **[!UICONTROL 의]**&#x200B;오른쪽에서 **[!UICONTROL +]** (더하기 기호 아이콘)를 누릅니다.
-1. [ **[!UICONTROL YouTube 채널 설정]** ] 대화 상자의 **[!UICONTROL 제목]** 필드에 YouTube 채널 **[!UICONTROL 만들기 작업에서 만든 채널&#x200B;]**의 이름을 입력합니다.
+1. [ **[!UICONTROL YouTube 채널 설정]** ] 대화 상자의 **[!UICONTROL 제목]** 필드에 YouTube 채널 **[!UICONTROL 만들기 작업에서 만든 채널]** 의 이름을 입력합니다.
 
    원할 경우 선택적으로 설명을 추가할 수 있습니다.
 
@@ -597,7 +597,7 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
    * 계정에 있는 채널 수에 따라 두 개 이상의 항목이 표시됩니다. 채널을 선택합니다. 이메일 주소를 선택하지 마십시오.
    * 다음 페이지에서 **[!UICONTROL 승인을]** 눌러 이 채널에 액세스할 수 있습니다.
 
-1. [!UICONTROL **Allow을 누릅니다**.
+1. 허용을 **[!UICONTROL 누릅니다]**.
 
    이제 게시를 위한 태그를 설정합니다.
 
@@ -656,7 +656,7 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
 1. 메타데이터 스키마 편집기 **[!UICONTROL 페이지의 오른쪽 위 모서리 근처에 있는]** 취소를 탭합니다 ****.
 1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구 > 자산 > 메타데이터 프로필을 누릅니다]**.
 
-1. 페이지의 오른쪽 위 모서리 **[!UICONTROL 메타데이터 프로필** 페이지에서 **[!UICONTROL 만들기]를 탭합니다**. [! **UICONTROL 메타데이터 프로필** 추가 대화 상자의 **[!UICONTROL 프로필 제목]** 텍스트 필드에 이름을 입력합니다 `YouTube Video`.
+1. 페이지의 오른쪽 상단 근처에 있는 **[!UICONTROL 메타데이터 프로필]** 페이지에서 만들기를 **[!UICONTROL 누릅니다]**. 메타데이터 프로필 **[!UICONTROL 추가]** 대화 상자의 **[!UICONTROL 프로필 제목]** 텍스트 필드에 이름을 입력합니다 `YouTube Video`.
 1. 메타데이터 프로필 **[!UICONTROL 편집기]** 페이지에서 **[!UICONTROL 고급]** 탭을탭합니다.
 1. 다음을 수행하여 복사한 YouTube 게시 값을 프로필에 추가합니다.
 
@@ -676,7 +676,7 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
    * 페이지 오른쪽의 설정 탭의 필드 레이블 텍스트 필드에 을 입력합니다 `YouTube Privacy`.
    * 양식 **[!UICONTROL 작성]** 탭을 누른 다음 **[!UICONTROL 단일 줄 텍스트]** 라는 구성 요소를 드래그하여 방금 만든 **[!UICONTROL YouTube 개인 정보]** 제목 아래에놓습니다.
    * 필드 **[!UICONTROL 레이블을]** 눌러 구성 요소를 선택합니다.
-   * 페이지 오른쪽의 **[!UICONTROL 설정]** 탭 아래에서 **[!UICONTROL YouTube 게시]****[!UICONTROL 값(]** 필드 레이블 **[!UICONTROL 값 및 속성]** 값에매핑)을 복사하여 양식의 해당 필드에 붙여넣습니다. [!UICONTROL Choices **값을** 기본값 **** 필드에 붙여 넣습니다.
+   * 페이지 오른쪽의 **[!UICONTROL 설정]** 탭 아래에서 **[!UICONTROL YouTube 게시]****[!UICONTROL 값(]** 필드 레이블 **[!UICONTROL 값 및 속성]** 값에매핑)을 복사하여 양식의 해당 필드에 붙여넣습니다. 선택 **[!UICONTROL 항목]** 값을 **[!UICONTROL 기본값]** 필드에 붙여넣습니다.
 
 1. Near the upper-right corner of the page, tap **[!UICONTROL Save]**.
 1. 비디오를 업로드할 폴더에 YouTube 게시 메타데이터 프로필을 적용합니다. 메타데이터 프로필과 비디오 프로필 세트가 모두 필요합니다.
@@ -695,7 +695,7 @@ AEM은 YouTube에서 컨텐츠를 게시하기 위해 YouTube에 **[!UICONTROL �
 1. AEM에서 YouTube 채널에 게시할 비디오 자산으로 이동합니다.
 1. 비디오 자산을 선택합니다.
 
-   원본 소스 비디오 또는 소스 비디오의 인코딩된 표현물과 같이 선택한 비디오 자산에 관계없이 원본 소스 비디오는 항상 업로드됩니다.
+   원본 소스 비디오 또는 소스 비디오의 인코딩된 표현물 등 선택한 비디오 자산에 관계없이 원본 소스 비디오는 항상 업로드됩니다.
 
 1. 도구 모음에서 **[!UICONTROL 속성을 누릅니다]**.
 1. 기본 **[!UICONTROL 탭]** 의 메타데이터 머리글 아래에서 **[!UICONTROL 태그]** 필드 오른쪽의 **[!UICONTROL 찾아보기를]** 누릅니다.
@@ -844,7 +844,7 @@ See [Configuring email notifications](#configuring-e-mail-notifications).
 1. AEM에서 도구 > **[!UICONTROL 워크플로우 > 모델을 선택합니다]**.
 1. YouTube에 **[!UICONTROL 게시]** 워크플로우를 선택한 다음 **[!UICONTROL 편집을 누릅니다]**.
 1. YouTube 업로드 **[!UICONTROL 워크플로우]** 단계를 마우스 오른쪽 단추로 클릭한 다음 **[!UICONTROL 편집을 누릅니다]**.
-1. 인수 **탭을&#x200B;**누릅니다.
+1. 인수 **탭을** 누릅니다.
 1. 다음 확인란을 선택하거나 취소할 수 있습니다.
 
    * **[!UICONTROL 게시 시작]**
@@ -859,7 +859,7 @@ See [Configuring email notifications](#configuring-e-mail-notifications).
 
 ## 비디오 보고서 보기 {#viewing-video-reports}
 
-비디오 보고서는 다이내믹 미디어 - 하이브리드 모드를 실행할 때 사용할 수 있습니다. 보고서는 다이내믹 미디어 - Scene7 모드를 실행할 때 사용할 수 없습니다.
+비디오 보고서는 다이내믹 미디어 - 하이브리드 모드를 실행할 때 사용할 수 있습니다.보고서는 다이내믹 미디어 - Scene7 모드를 실행할 때 사용할 수 없습니다.
 
 비디오 보고서에는 지정된 기간 동안 여러 개의 집계 지표가 표시되므로 *게시된 *개별 비디오와 집계 비디오가 예상대로 수행되고 있음을 모니터링할 수 있습니다. 다음 상위 지표 데이터는 전체 웹 사이트에서 게시된 모든 비디오에 대해 집계됩니다.
 
@@ -924,7 +924,7 @@ Scene7 HTML5 뷰어 SDK를 사용하여 만든 비디오 뷰어를 기반으로 
 
    이 `config2` 매개 변수는 HTML5 뷰어에서 추적을 활성화합니다. 또한 비디오 보고 및 고객별 Adobe Analytics 구성에 대한 구성 정보가 포함된 회사별 사전 설정이기도 합니다.
 
-   config2 매개 변수에 대한 올바른 값이 포함 코드 **[!UICONTROL 및 복사]** URL **** 함수 모두에 있습니다. 복사 **[!UICONTROL URL]** 명령의 URL에서 찾을 매개 변수는 `&config2=<value>` 입니다. 이 값은 거의 항상 `companypreset`사용되지만, 어떤 경우에는 이 값 `companypreset-1`이 될 수도 `companypreset-2`있고, 기타 등일 수도 있습니다.
+   config2 매개 변수에 대한 올바른 값이 포함 코드 **[!UICONTROL 및 복사]** URL **** 함수 모두에 있습니다. 복사 **[!UICONTROL URL]** 명령의 URL에서 찾을 매개 변수는 `&config2=<value>` 입니다. 이 값은 거의 항상 `companypreset`사용되지만, 어떤 경우에는 이 값 `companypreset-1`이 될 수도 `companypreset-2`있습니다.
 
 1. 사용자 정의 비디오 뷰어 코드에서 다음을 수행하여 뷰어 페이지에 AppMeasurementBridge .jsp를 추가합니다.
 
@@ -972,7 +972,7 @@ Scene7 HTML5 뷰어 SDK를 사용하여 만든 비디오 뷰어를 기반으로 
 
 ## 비디오에 캡션 추가 {#adding-captions-to-video}
 
-단일 비디오 또는 적응형 비디오 세트에 캡션을 추가하여 비디오의 범위를 글로벌 마켓으로 확장할 수 있습니다. 자막을 추가하면 오디오를 더빙할 필요가 없고 각 언어에 대해 오디오를 다시 녹음하기 위해 기본 스피커를 사용할 필요가 없습니다. 그 비디오는 기록된 언어로 재생된다. 외국어 자막은 다른 언어의 사람들이 오디오 부분을 계속 이해할 수 있도록 표시됩니다.
+단일 비디오 또는 적응형 비디오 세트에 캡션을 추가하여 비디오의 범위를 글로벌 마켓으로 확장할 수 있습니다. 캡션을 추가하면 오디오를 더빙할 필요가 없고 각 언어에 대해 오디오를 다시 녹음할 때 기본 스피커를 사용할 필요가 없습니다. 그 비디오는 기록된 언어로 재생된다. 외국어 자막은 다른 언어의 사람들이 오디오 부분을 계속 이해할 수 있도록 표시됩니다.
 
 자막은 또한 청각 장애자나 난청인 사람들에게 자막을 사용하여 접근성을 높일 수 있도록 해줍니다.
 
@@ -990,7 +990,7 @@ URL의 JSON 함수 사용에 대한 자세한 내용은 [Scene7 이미지 제공
 
    만드는 파일이 WebVTT(Web Video Text Tracks) 표준을 따르는지 확인합니다. 캡션 파일 이름 확장명은 .vtt입니다. WebVTT 자막 표준에 대한 자세한 내용을 살펴볼 수 있습니다.
 
-   WebVTT [를 참조하십시오. 웹 비디오 텍스트 트랙 형식](https://dev.w3.org/html5/webvtt/).
+   WebVTT [를 참조하십시오.웹 비디오 텍스트 트랙 형식](https://dev.w3.org/html5/webvtt/).
 
    Dynamic Media 외부에서 캡션/자막 파일을 작성하는 데 사용할 수 있는 무료 및 프리미엄 툴과 서비스가 있습니다. 예를 들어 스타일이 없는 간단한 비디오 캡션 파일을 만들려면 다음의 무료 온라인 캡션 제작 및 편집 도구를 사용할 수 있습니다.
 
@@ -1039,7 +1039,7 @@ URL의 JSON 함수 사용에 대한 자세한 내용은 [Scene7 이미지 제공
 
 원하는 경우 비디오 뷰어 사전 설정을 사용하는 대신 장을 사용하여 자신만의 사용자 정의 비디오 뷰어를 만들고 브랜딩할 수 있습니다. 장 탐색을 통해 자신만의 HTML5 뷰어를 만드는 방법에 대한 자세한 내용은 HTML5용 Adobe Scene7 뷰어 SDK 안내서의 클래스 및 아래 &quot;수정자를 사용하여 동작 사용자 정의&quot; 머리글을 `s7sdk.video.VideoPlayer` 참조하십시오 `s7sdk.video.VideoScrubber`. Adobe Scene7 뷰어 SDK는 [Adobe Developer Connection에서 다운로드할 수 있습니다](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
 
-캡션을 만드는 것과 동일한 방식으로 비디오의 장 목록을 만듭니다. 즉, WebVTT 파일을 만듭니다. 그러나 이 파일은 사용 중인 WebVTT 캡션 파일과는 구분되어야 합니다. 캡션과 장을 하나의 WebVTT 파일로 결합할 수는 없습니다.
+캡션을 만드는 것과 동일한 방식으로 비디오의 장 목록을 만듭니다. 즉, WebVTT 파일을 만듭니다. 그러나 이 파일은 사용 중인 WebVTT 캡션 파일과는 구분되어야 합니다.캡션과 장을 하나의 WebVTT 파일로 결합할 수는 없습니다.
 
 다음 샘플을 장 탐색을 포함한 WebVTT 파일을 만드는 데 사용하는 형식의 예로 사용할 수 있습니다.
 
@@ -1065,7 +1065,7 @@ Cost-efficient access to rapidly evolving technology.
 
 HTML5 비디오 뷰어를 사용하고 있으므로 만드는 장 파일은 WebVTT(Web Video Text Tracks) 표준을 따라야 합니다. 장 파일 이름 확장자는 .vtt입니다. WebVTT 자막 표준에 대한 자세한 내용을 살펴볼 수 있습니다.
 
-WebVTT [를 참조하십시오. 웹 비디오 텍스트 트랙 형식](https://dev.w3.org/html5/webvtt/)
+WebVTT [를 참조하십시오.웹 비디오 텍스트 트랙 형식](https://dev.w3.org/html5/webvtt/)
 
 **비디오에 장 마커를 추가하려면:**
 
@@ -1138,7 +1138,7 @@ Dynamic Media에서 자동으로 생성된 10개의 축소판 이미지 중 하�
 1. 생성된 축소판 이미지를 미리 본 다음 비디오에 추가할 이미지를 선택합니다.
 1. 변경 **[!UICONTROL 저장을 누릅니다]**.
 
-   선택한 축소판을 사용하도록 비디오의 축소판 이미지가 업데이트됩니다. 나중에 축소판 이미지를 변경하기로 결정한 경우 축소판 **[!UICONTROL 변경]** 페이지로 돌아가 새 이미지를 선택할 수 있습니다.
+   선택한 축소판을 사용하도록 비디오의 축소판 이미지가 업데이트됩니다. 나중에 축소판 이미지를 변경하기로 결정한 경우 축소판 **[!UICONTROL 변경]** 페이지로 돌아가서 새 이미지를 선택할 수 있습니다.
 
    새 기본 시간 간격을 구성했거나 기존 비디오를 바꾸기 위해 새 비디오를 업로드한 경우 Dynamic Media에서 축소판을 다시 생성하도록 해야 합니다.
 
