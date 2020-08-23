@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '739'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 3%
 
 회전판 세트를 만들고, 핫스팟과 이미지 맵을 추가하고, 대화형 비디오와 이미지를 만드는 동안 선택기에 액세스할 수 있습니다.
 
-예를 들어 이 캐러셀 배너에서는 핫스팟이나 이미지 맵을 빠른 보기 페이지에 연결하는 경우 제품 선택기를 사용합니다. 핫스팟 또는 이미지 맵을 하이퍼링크에 연결하는 경우 사이트 선택기를 사용합니다. 새 슬라이드를 만들 때 자산 선택기를 사용합니다.
+예를 들어 이 캐러셀 배너에서는 핫스팟이나 이미지 맵을 빠른 보기 페이지에 연결하는 경우 제품 선택기를 사용합니다.핫스팟 또는 이미지 맵을 하이퍼링크에 연결하는 경우 사이트 선택기를 사용합니다.새 슬라이드를 만들 때 자산 선택기를 사용합니다.
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
@@ -38,7 +38,7 @@ ht-degree: 3%
 
 1. 회전판 세트, 대화형 이미지 또는 대화형 비디오로 이동하고 **[!UICONTROL 작업]** 탭을 누릅니다(핫스팟 또는 이미지 맵을 정의한 경우에만 사용 가능).
 
-   제품 선택기가 **[!UICONTROL 작업 유형** 영역에 있습니다.
+   제품 선택기는 **[!UICONTROL 작업 유형]** 영역에 있습니다.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
