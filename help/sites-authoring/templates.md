@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 5a96c306-790a-4721-a146-86fbceb376db
 translation-type: tm+mt
-source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '4811'
 ht-degree: 97%
@@ -316,7 +316,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
 * [레이아웃](#editing-a-template-layout-template-author)
 
-   여기에서 필요한 장치 형식에 대한 템플릿 레이아웃을 미리 정의할 수 있습니다. 템플릿 작성에 대한&#x200B;**레이아웃** 모드는 **[페이지 작성에 대한 레이아웃](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**모드와 동일한 기능을 갖습니다].
+   여기에서 필요한 장치 형식에 대한 템플릿 레이아웃을 미리 정의할 수 있습니다. 템플릿 작성에 대한&#x200B;**레이아웃** 모드는 **[페이지 작성에 대한 레이아웃](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)** 모드와 동일한 기능을 갖습니다.
 
 * [페이지 정책](#editing-a-template-structure-template-author)
 
@@ -445,7 +445,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
    >[!NOTE]
    >
-   >동일한 유형의 여러 구성 요소가 초기 컨텐츠로 추가되는 경우, 동일한 정책이 모든 구성 요소에 적용됩니다. 이 경우 **[정적 템플릿에 대한 디자인 모드](/help/sites-authoring/default-components-designmode.md)**에도 동일한 제한이 적용됩니다.
+   >동일한 유형의 여러 구성 요소가 초기 컨텐츠로 추가되는 경우, 동일한 정책이 모든 구성 요소에 적용됩니다. 이 경우 **[정적 템플릿에 대한 디자인 모드](/help/sites-authoring/default-components-designmode.md)**&#x200B;에도 동일한 제한이 적용됩니다.
 
    ***속성***
 
@@ -575,7 +575,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
 >[!NOTE]
 >
->**초기 컨텐츠** 모드는 해당 템플릿으로 만든 페이지의 편집 모드로 간주할 수 있습니다. 따라서 정책은 **초기 컨텐츠** 모드에서 정의되지 않고 **[구조](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)**모드에서 정의됩니다.
+>**초기 컨텐츠** 모드는 해당 템플릿으로 만든 페이지의 편집 모드로 간주할 수 있습니다. 따라서 정책은 **초기 컨텐츠** 모드에서 정의되지 않고 **[구조](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)** 모드에서 정의됩니다.
 
 * 편집에 사용할 수 있는 잠금 해제된 구성 요소가 표시됩니다. 선택되면 파란색 테두리가 표시됩니다.
 
