@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 331f4980-5193-4546-a22e-f27e38bb8250
 translation-type: tm+mt
-source-git-commit: b1603091bb05493c9cfffa6067f414f73774edb2
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1723'
+source-wordcount: '1722'
 ht-degree: 97%
 
 ---
@@ -159,7 +159,7 @@ AEM 6.2에서 [FP-13480](https://experience.adobe.com/#/downloads/content/softwa
 
 **[!UICONTROL 폭과 높이]** - 비디오의 크기를 고정하려면 값을 픽셀 단위로 입력하십시오. 이 값을 공백으로 두면 적응형으로 설정됩니다.
 
-구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 클릭하여 다음 **[!UICONTROL 장바구니에 추가** 설정을 편집할 수 있습니다.
+구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 클릭하여 다음 **[!UICONTROL 장바구니에 추가]** 설정을 편집할 수 있습니다.
 
 **[!UICONTROL 제품 자산 표시]** - 기본적으로 이 값이 선택되어 있습니다. 제품 자산은 상거래 모듈에 정의된 제품의 이미지를 보여줍니다. 제품 자산을 표시하지 않도록 하려면 확인 표시를 지우십시오.
 
