@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '3429'
+source-wordcount: '3428'
 ht-degree: 38%
 
 ---
@@ -109,7 +109,7 @@ Adobe에서는 Dynamic Media Classic 대상 폴더 내의 자산에서만 Dynami
 
 1. In the sidekick, click the **[!UICONTROL Page]** icon, then click **[!UICONTROL Page Properties]**.
 
-1. [!UICONTROL Cloud Services > 서비스 추가 > Dynamic Media Classic(Scene7)을 클릭합니다 ****.
+1. Cloud Services **[!UICONTROL > 서비스]추가[!UICONTROL >]Dynamic Media Classic(Scene7)을 클릭합니다**.
 1. Adobe Dynamic Media Classic 드롭다운 목록에서 원하는 구성을 선택한 다음 **[!UICONTROL 확인을 클릭합니다]**.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
@@ -240,7 +240,7 @@ Dynamic Media Classic 이미지 구성 요소를 사용하면 Dynamic Media Clas
 
 **[!UICONTROL 출력 형식]** - 이미지의 출력 형식(예: jpeg)을 선택합니다. 선택한 출력 형식에 따라 추가 구성 옵션이 있을 수 있습니다. [이미지 사전 설정 관리](/help/assets/managing-image-presets.md)를 참조하십시오.
 
-**[!UICONTROL 선명하게 하기]** - 이미지를 선명하게 할 방법을 선택합니다. 선명하게 하기는 [*Adobe Dynamic Media Classic 이미지 품질 및 선명하게 하기 우수 사례에 자세히 설명되어 있습니다&#x200B;*](/help/assets/assets/s7_sharpening_images.pdf).
+**[!UICONTROL 선명하게 하기]** - 이미지를 선명하게 할 방법을 선택합니다. 선명하게 하기는 [*Adobe Dynamic Media Classic 이미지 품질 및 선명하게 하기 우수 사례에 자세히 설명되어 있습니다*](/help/assets/assets/s7_sharpening_images.pdf).
 
 **[!UICONTROL URL 수정자]** - 추가 Dynamic Media Classic 이미지 명령을 제공하여 이미지 효과를 변경할 수 있습니다. 이러한 내용은 [이미지 사전 설정 관리](/help/assets/managing-image-presets.md) 및 [명령 참조](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)에 설명되어 있습니다.
 
@@ -390,11 +390,11 @@ UI에서 검색할 때 다음 기준(터치에 적합한 UI에서 여기에 표�
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
-**[!UICONTROL 구성]** Cloud Services에 두 개 이상의 Dynamic Media Classic 구성이 정의된 [!UICONTROL 경우]여기에서 선택할 수 있습니다. 결과적으로 폴더는 선택한 구성에 따라 변경됩니다.
+**[!UICONTROL 구성]** Cloud Services에 두 개 이상의 Dynamic Media Classic 구성이 정의된 경우 [!UICONTROL 여기에서]선택할 수 있습니다. 결과적으로 폴더는 선택한 구성에 따라 변경됩니다.
 
 ![chlimage_1-96](assets/chlimage_1-96.png)
 
-**[!UICONTROL 자산 유형]** Dynamic Media Classic 브라우저 내에서 다음을 포함하도록 결과를 필터링할 수 있습니다. 이미지, 템플릿, 비디오 및 적응형 비디오 세트 자산 유형을 선택하지 않으면 기본적으로 AEM은 모든 자산 유형을 검색합니다.
+**[!UICONTROL 자산 유형]** Dynamic Media Classic 브라우저 내에서 다음을 포함하도록 결과를 필터링할 수 있습니다.이미지, 템플릿, 비디오 및 적응형 비디오 세트 자산 유형을 선택하지 않으면 기본적으로 AEM은 모든 자산 유형을 검색합니다.
 
 ![chlimage_1-97](assets/chlimage_1-97.png)
 
