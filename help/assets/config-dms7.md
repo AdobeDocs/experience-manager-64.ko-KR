@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 92017a4c2c9ab9f139440e40f368958bcc3bb2ef
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '5552'
+source-wordcount: '5549'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 [Dynamic Media는 기본적으로 비활성화됩니다. ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) 다이내믹 미디어 기능을 활용하려면 활성화해야 합니다.
 
->[메모]
+>[!NOTE]
 >
 >동적 미디어 - Scene7 모드는 AEM 작성자 인스턴스에만 사용됩니다. 따라서 AEM 게시 인스턴스가 아닌 AEM 작성자 인스턴스 `runmode=dynamicmedia_scene7`에서 구성해야 합니다.
 
@@ -50,9 +50,9 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 ## (선택 사항) Dynamic Media 사전 설정 및 구성을 6.3에서 6.4 가동 중지 시간 제로 마이그레이션 {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
-AEM Dynamic Media를 6.3에서 6.4(다운타임이 제로 배포되는 기능 포함)로 업그레이드하는 경우, 다음 curl 명령을 실행하여 모든 사전 설정과 구성을 CRXDE Lite에서 `/etc` 로 마이그레이션해야 `/conf` 합니다.
+AEM Dynamic Media를 6.3에서 6.4(다운타임이 없는 배포 기능 포함)로 업그레이드하는 경우, 다음 curl 명령을 실행하여 모든 사전 설정과 구성을 CRXDE Lite에서 `/etc` 으로 마이그레이션해야 `/conf` 합니다.
 
->[메모]
+>[!NOTE]
 >
 >호환성 모드에서 AEM 인스턴스를 실행하는 경우(즉, 패키지된 호환성 포함) 이러한 명령을 실행할 필요가 없습니다.
 
@@ -116,7 +116,7 @@ Dynamic Media Cloud Services을 구성하려면:
    * 주소를 활성화(켜기)하려면 확인란을 선택하고 AEM 작성자 인스턴스의 IP 주소(발송자 IP가 아님)를 입력합니다.
    * 저장을 **[!UICONTROL 누릅니다]**.
 
-이제 기본 구성이 완료되었습니다. 다이내믹 미디어 - Scene7 모드를 사용할 준비가 되었습니다.
+이제 기본 구성이 완료되었습니다.다이내믹 미디어 - Scene7 모드를 사용할 준비가 되었습니다.
 
 구성을 추가로 사용자 지정하려면 Dynamic Media - Scene7 모드에서 고급 설정 구성 [(선택 사항) 아래에서 원하는 작업을 완료할 수 있습니다](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
@@ -148,7 +148,7 @@ Dynamic Media Cloud Services을 구성하려면:
 
 게시 설정 설정에 따라 기본적으로 Dynamic Media에서 자산이 제공되는 방법이 결정됩니다. 설정이 지정되지 않은 경우, Dynamic Media는 제작 설정에 정의된 기본 설정에 따라 자산을 전달합니다. 예를 들어 해상도 속성이 포함되지 않은 이미지를 전달하라는 요청은 기본 개체 해상도 설정이 있는 이미지를 생성합니다.
 
-게시 설정을 구성하려면: Dynamic Media Classic에서 **[!UICONTROL 설정 > 애플리케이션 설정 > 게시 설정 > 이미지 서버를 누릅니다]**.
+게시 설정을 구성하려면:Dynamic Media Classic에서 **[!UICONTROL 설정 > 애플리케이션 설정 > 게시 설정 > 이미지 서버를 누릅니다]**.
 
 [이미지 서버] 화면은 이미지를 전달하기 위한 기본 설정을 설정합니다. 각 설정에 대한 설명은 사용자 인터페이스를 참조하십시오.
 
@@ -166,7 +166,7 @@ Dynamic Media Cloud Services을 구성하려면:
 
 **[!UICONTROL 서버]** - 계정 프로비저닝에서 Dynamic Media는 자동으로 회사에 할당된 서버를 제공합니다. 이러한 서버는 웹 사이트 및 응용 프로그램에 대한 URL 문자열을 구성하는 데 사용됩니다. 이러한 URL 호출은 계정에 따라 다릅니다. AEM 지원에 의해 명시적으로 지시된 경우를 제외하고 서버 이름을 변경하지 마십시오.
 
-**[!UICONTROL 이미지]** 덮어쓰기 - Dynamic Media에서는 두 파일의 이름이 같은 것을 허용하지 않습니다. 각 항목의 URL ID(파일 이름 - 확장명)는 고유해야 합니다. 다음 옵션은 대체 자산이 업로드되는 방식을 지정합니다. 원본을 대체할지 또는 중복되게 할지 여부. 중복 에셋의 이름이 &quot;-1&quot;으로 바뀝니다(예: chair.tif의 이름이 chair-1.tif로 변경됨). 이러한 옵션은 원본과 다른 폴더에 업로드된 에셋이나 원본 파일 이름 확장자가 다른 에셋에 영향을 줍니다(예: JPG, TIF 또는 PNG).
+**[!UICONTROL 이미지]** 덮어쓰기 - Dynamic Media에서는 두 파일의 이름이 같은 것을 허용하지 않습니다. 각 항목의 URL ID(파일 이름 - 확장명)는 고유해야 합니다. 다음 옵션은 대체 자산이 업로드되는 방식을 지정합니다.원본을 대체할지 또는 중복되게 할지 여부. 중복 에셋의 이름이 &quot;-1&quot;으로 바뀝니다(예: chair.tif의 이름이 chair-1.tif로 변경됨). 이러한 옵션은 원본과 다른 폴더에 업로드된 에셋이나 원본 파일 이름 확장자가 다른 에셋에 영향을 줍니다(예: JPG, TIF 또는 PNG).
 
 * **[!UICONTROL 현재 폴더에 덮어쓰기, 동일한 기본 이미지 이름/확장명]** - 이 옵션은 교체에 가장 강력한 규칙입니다. 교체 이미지를 원본과 동일한 폴더에 업로드하고 교체 이미지의 파일 이름 확장자는 원본과 같아야 합니다. 이러한 요구 사항이 충족되지 않으면 복제본이 생성됩니다.
 
@@ -174,7 +174,7 @@ Dynamic Media Cloud Services을 구성하려면:
 >
 >AEM과의 일관성을 유지하려면 현재 폴더 **[!UICONTROL 에서 동일한 기본 이미지 이름/확장명으로 덮어쓰기를 선택합니다]**.
 
-* **[!UICONTROL 모든 폴더에 덮어쓰기, 동일한 기본 자산 이름/확장자]** - 대체 이미지의 파일 이름 확장명이 원본 이미지와 동일해야 합니다(예: `chair.jpg` 교체 `chair.jpg` 및 `chair.tif`대체). 그러나 원본 이미지와 다른 폴더에 교체 이미지를 업로드할 수 있습니다. 업데이트된 이미지는 새 폴더에 있습니다. 원본 위치에서 파일을 더 이상 찾을 수 없습니다.
+* **[!UICONTROL 모든 폴더에 덮어쓰기, 동일한 기본 자산 이름/확장자]** - 대체 이미지의 파일 이름 확장명이 원본 이미지와 동일해야 합니다(예: `chair.jpg` 교체 `chair.jpg` 및 `chair.tif`대체). 그러나 원본 이미지와 다른 폴더에 교체 이미지를 업로드할 수 있습니다. 업데이트된 이미지는 새 폴더에 있습니다.원본 위치에서 파일을 더 이상 찾을 수 없습니다.
 * **[!UICONTROL 확장자와]** 상관없이 동일한 기본 자산 이름으로 모든 폴더에 덮어쓰기 - 이 옵션은 가장 포괄적인 대체 규칙입니다. 원본 파일과 다른 폴더에 교체 이미지를 업로드하고 파일 이름 확장자가 다른 파일을 업로드한 다음 원본 파일을 바꿀 수 있습니다. 원본 파일이 다른 폴더에 있는 경우 교체 이미지는 업로드된 새 폴더에 있습니다.
 
 **[!UICONTROL 기본 색상 프로필]** - 자세한 내용은 [색상 관리](#configuring-color-management) 구성을 참조하십시오.
@@ -220,7 +220,7 @@ Dynamic Media에서 처리해야 하는 자산 유형을 정의하고 고급 자
 * Adobe Photoshop 문서(.PSD)를 배너 템플릿 에셋으로 변환하여 개인화합니다.
 * Adobe Illustrator 파일(.AI) 또는 Adobe Photoshop Encapsulated Postscript 파일(.EPS)을 래스터화합니다.
 
->[메모]
+>[!NOTE]
 >
 >비디오 프로필 및 이미징 프로필을 사용하여 각각 비디오와 이미지 처리를 정의할 수 있습니다.
 
@@ -350,7 +350,7 @@ AEM Assets에서 지원되지 않는 형식에 대해 사용자 지정 MIME 형�
 
 Dynamic Media는 뷰어에 표시하기 위해 일괄 세트 사전 설정을 사용하여 에셋을 이미지 세트(대체 이미지, 색상 옵션, 360 회전)로 구성합니다. Dynamic Media의 자산 업로드 프로세스와 함께 일괄 세트 사전 설정이 자동으로 실행됩니다.
 
-배치 세트 사전 설정을 생성, 편집 및 관리할 수 있습니다. 두 가지 형태의 일괄 세트 사전 설정 정의가 있습니다. 하나는 설정한 기본 이름 지정 규칙과 시간에 만드는 사용자 지정 이름 지정 규칙에 대한 것입니다.
+배치 세트 사전 설정을 생성, 편집 및 관리할 수 있습니다. 두 가지 형태의 일괄 세트 사전 설정 정의가 있습니다.하나는 설정한 기본 이름 지정 규칙과 시간에 만드는 사용자 지정 이름 지정 규칙에 대한 것입니다.
 
 양식 필드 메서드를 사용하여 묶음 집합 사전 설정이나 코드 메서드를 정의할 수 있습니다. 이 방법을 사용하면 정규식을 사용할 수 있습니다. 기본 이름 지정에서와 마찬가지로 [!UICONTROL 양식 보기에서] 정의하는 동시에 코드 [!UICONTROL 보기를 선택하고] 정규 표현식을사용하여 정의를 작성할 수 있습니다. 또는 뷰를 선택 취소하여 하나 또는 다른 뷰를 독점적으로 사용할 수도 있습니다.
 
@@ -500,7 +500,7 @@ Adobe은 PDF, Postscript 및 PSD 파일에 대해 다음과 같은 &quot;조정�
 
 **[MOCK] To update the Granite Temporary Workflow queue**:
 
-1. https://&lt; [server>/system/console/configMgr](http://localhost:4502/system/console/configMgr) 로 이동하고 **[!UICONTROL 큐 검색: [MOCK] Granite Temporary Workflow Queue]**.
+1. https://&lt; [server>/system/console/configMgr](http://localhost:4502/system/console/configMgr) 로 이동하고 **[!UICONTROL 큐 검색:[MOCK] Granite Temporary Workflow Queue]**.
 
    >[!NOTE]
    >
@@ -522,7 +522,7 @@ Adobe은 PDF, Postscript 및 PSD 파일에 대해 다음과 같은 &quot;조정�
 
 **[MOCK] To update the Granite Workflow queue:**
 
-1. 대기열로 `https://<server>/system/console/configMgr` 이동 및 **[!UICONTROL 검색: [MOCK] Granite Workflow Queue]**.
+1. 대기열로 `https://<server>/system/console/configMgr` 이동 및 **[!UICONTROL 검색:[MOCK] Granite Workflow Queue]**.
 
    >[!NOTE]
    >
@@ -547,7 +547,7 @@ Scene7 업로드 연결 설정은 AEM 자산을 Dynamic Media Classic 서버에 
 1. 다음으로 이동 `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. 연결 [!UICONTROL 수] 필드 및/또는 [!UICONTROL 활성 작업 시간 초과] 필드에서 원하는 대로 숫자를 변경합니다.
 
-   연결 **[!UICONTROL 수]** 설정은 AEM에서 Dynamic Media로 업로드할 수 있는 최대 HTTP 연결 수를 제어합니다. 일반적으로 사전 정의된 10개 연결 값이면 충분합니다.
+   연결 **[!UICONTROL 수]** 설정은 AEM에서 Dynamic Media로 업로드할 수 있는 최대 HTTP 연결 수를 제어합니다.일반적으로 사전 정의된 10개 연결 값이면 충분합니다.
 
    [ **[!UICONTROL 활성 작업 시간 초과]** ] 설정은 업로드된 Dynamic Media 자산이 배달 서버에 게시되는 대기 시간을 결정합니다. 이 값은 기본적으로 2100초 또는 35분입니다.
 
