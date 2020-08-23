@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 658ff671-16b9-41bd-ba24-b77a32b3346b
 translation-type: tm+mt
-source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '848'
 ht-degree: 54%
 
 ---
@@ -31,7 +31,7 @@ AEM 3D는 대화형 보기와 내장 Adobe Rapid Refine™ 렌더러 및 타사 
 * **[!UICONTROL 비트 심도]** - 32비트(부동)
 * **[!UICONTROL 픽셀 순서]** - 인터리브(RGBRGB)
 * **[!UICONTROL 이미지 압축]** - LZW
-* **[!UICONTROL 바이트 순서** - IBM PC
+* **[!UICONTROL 바이트 순서]** - IBM PC
 
 종종 IBL 단계는 단일 HDR 이미지로 충분하지만, AEM 3D는 최대 3개의 별도 이미지를 허용하여 IBL 효과를 추가로 제어할 수 있도록 합니다.
 
