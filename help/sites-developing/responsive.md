@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '5341'
 ht-degree: 1%
@@ -28,11 +28,11 @@ ht-degree: 1%
 
 웹 페이지가 표시되는 클라이언트 뷰포트에 맞게 디자인할 수 있습니다. 반응형 디자인을 사용하면 두 방향 모두에서 여러 장치에서 동일한 페이지를 효과적으로 표시할 수 있습니다. 다음 이미지는 페이지가 뷰포트 크기 변화에 응답하는 몇 가지 방법을 보여 줍니다.
 
-* 레이아웃: 단일 열 레이아웃을 사용하여 작은 뷰포트를 표시하고 여러 열로 구성된 레이아웃을 사용하여 큰 뷰포트를 볼 수 있습니다.
-* 텍스트 크기: 더 큰 뷰포트에서 더 큰 텍스트 크기(해당하는 경우 제목 등)를 사용합니다.
-* 컨텐츠: 작은 장치에 표시할 때 가장 중요한 컨텐츠만 포함합니다.
-* 탐색: 장치별 도구는 다른 페이지에 액세스하기 위해 제공됩니다.
-* 이미지: 클라이언트 뷰포트에 적합한 이미지 변환 제공 를 참조하십시오.
+* 레이아웃:단일 열 레이아웃을 사용하여 작은 뷰포트를 표시하고 여러 열로 구성된 레이아웃을 사용하여 큰 뷰포트를 볼 수 있습니다.
+* 텍스트 크기:더 큰 뷰포트에서 더 큰 텍스트 크기(해당하는 경우 제목 등)를 사용합니다.
+* 컨텐츠:작은 장치에 표시할 때 가장 중요한 컨텐츠만 포함합니다.
+* 탐색:장치별 도구는 다른 페이지에 액세스하기 위해 제공됩니다.
+* 이미지:클라이언트 뷰포트에 적합한 이미지 변환 제공 를 참조하십시오.
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
 
@@ -50,7 +50,7 @@ ht-degree: 1%
 * [유동 격자](/help/sites-developing/responsive.md#developing-a-fluid-grid)
 * [적응형 이미지](/help/sites-developing/responsive.md#using-adaptive-images)
 
-디자인할 때 **!UICONTROL 사이드킥을 사용하여&#x200B;**다양한 화면 크기에 맞게 페이지를 미리 볼 수 있습니다.
+디자인할 때 **[!UICONTROL 사이드킥을]** 사용하여 다양한 화면 크기에 맞게 페이지를 미리 볼 수 있습니다.
 
 ## 개발 전 {#before-you-develop}
 
@@ -107,27 +107,27 @@ We.Retail 미디어 샘플에서는 이 전략을 사용하여 사이트 디자�
   <tr> 
    <td>responsive-1200px.css</td> 
    <td>가로 1200픽셀 이상의 모든 미디어에 대한 스타일</td> 
-   <td><p>@media(최소 너비: 1200px) {<br /> ...<br /> }</p> </td> 
+   <td><p>@media(최소 너비:1200px) {<br /> ...<br /> }</p> </td> 
   </tr> 
   <tr> 
    <td>responsive-980px-1199px.css</td> 
    <td>980픽셀과 1199픽셀 사이의 미디어용 스타일입니다.</td> 
-   <td><p>@media(최소 너비: 980px) 및 (최대 너비: 1199px) {<br /> ...<br /> }</p> </td> 
+   <td><p>@media(최소 너비:980px) 및 (최대 너비:1199px) {<br /> ...<br /> }</p> </td> 
   </tr> 
   <tr> 
    <td>responsive-768px-979px.css</td> 
    <td>768픽셀과 979픽셀 사이의 미디어용 스타일입니다. </td> 
-   <td><p>@media(최소 너비: 768px) 및 (최대 너비: 979px) {<br /> ...<br /> }</p> </td> 
+   <td><p>@media(최소 너비:768px) 및 (최대 너비:979px) {<br /> ...<br /> }</p> </td> 
   </tr> 
   <tr> 
    <td>responsive-767px-max.css</td> 
    <td>가로 768픽셀 미만인 모든 미디어에 대한 스타일</td> 
-   <td><p>@media(최대 너비: 767px) {<br /> ...<br /> }</p> </td> 
+   <td><p>@media(최대 너비:767px) {<br /> ...<br /> }</p> </td> 
   </tr> 
   <tr> 
    <td>responsive-480px.css</td> 
    <td>폭이 481픽셀 미만인 모든 미디어에 대한 스타일</td> 
-   <td>@media(최대 너비: 480) {<br /> ...<br /> }</td> 
+   <td>@media(최대 너비:480) {<br /> ...<br /> }</td> 
   </tr> 
  </tbody> 
 </table>
@@ -149,7 +149,7 @@ responsive-1200px.css
  responsive-480px.css
 ```
 
-**팁**: 설명 파일 이름을 사용하면 대상 뷰포트 크기를 쉽게 식별할 수 있습니다.
+**팁**:설명 파일 이름을 사용하면 대상 뷰포트 크기를 쉽게 식별할 수 있습니다.
 
 ### AEM 페이지에 미디어 쿼리 사용 {#using-media-queries-with-aem-pages}
 
@@ -207,7 +207,7 @@ When working with AEM there are several methods of managing the configuration se
 
 * 이름: `mobile.resourceTypes`
 * 유형: `String[]`
-* 값: 웹 페이지를 렌더링하는 페이지 구성 요소의 경로입니다. 예를 들어 geometrixx-media 앱은 다음 값을 사용합니다.
+* 값:웹 페이지를 렌더링하는 페이지 구성 요소의 경로입니다. 예를 들어 geometrixx-media 앱은 다음 값을 사용합니다.
 
    ```
    geometrixx-media/components/page
@@ -263,7 +263,7 @@ W3C에서 제안한 [그림 요소는](https://picture.responsiveimages.org/) �
 
 자유롭게 사용할 수 있는 picturefill.js 라이브러리는 [제안된](https://github.com/scottjehl/picturefill) `picture` 요소와 유사한 기능을 제공하며 유사한 전략을 사용합니다. pictureflow.js 라이브러리 `window.matchMedia` 는 요소 집합에 대해 정의된 미디어 쿼리를 평가하기 위해 `div` 호출합니다. 각 `div` 요소는 이미지 소스를 지정합니다. 소스는 요소의 미디어 쿼리가 반환할 때 `div` 사용됩니다 `true`.
 
-라이브러리에는 다음 예제와 유사한 HTML 코드가 필요합니다. `picturefill.js`
+라이브러리에는 다음 예와 유사한 HTML 코드가 필요합니다. `picturefill.js`
 
 ```xml
 <div data-picture>
@@ -333,10 +333,10 @@ picturefill.js 코드에서 필요로 하는 div 요소를 생성하는 구성 �
 
 이미지 렌더링을 사용자 정의하려면 기본 AEM 정적 이미지 렌더링 구현을 이해해야 합니다. AEM은 웹 페이지용 이미지를 렌더링하기 위해 함께 작동하는 이미지 구성 요소와 이미지 렌더링 서블릿을 제공합니다. 다음 이벤트 시퀀스는 이미지 구성 요소가 페이지의 단락 시스템에 포함될 때 발생합니다.
 
-1. 작성: 작성자는 이미지 구성 요소를 편집하여 HTML 페이지에 포함할 이미지 파일을 지정합니다. 파일 경로는 이미지 구성 요소 노드의 속성 값으로 저장됩니다.
-1. 페이지 요청: 페이지 구성 요소의 JSP는 HTML 코드를 생성합니다. 이미지 구성 요소의 JSP는 페이지에 img 요소를 생성하고 추가합니다.
-1. 이미지 요청: 웹 브라우저는 페이지를 로드하고 img 요소의 src 속성에 따라 이미지를 요청합니다.
-1. 이미지 렌더링: 이미지 렌더링 서블릿은 웹 브라우저에 이미지를 반환합니다.
+1. 작성:작성자는 이미지 구성 요소를 편집하여 HTML 페이지에 포함할 이미지 파일을 지정합니다. 파일 경로는 이미지 구성 요소 노드의 속성 값으로 저장됩니다.
+1. 페이지 요청:페이지 구성 요소의 JSP는 HTML 코드를 생성합니다. 이미지 구성 요소의 JSP는 페이지에 img 요소를 생성하고 추가합니다.
+1. 이미지 요청:웹 브라우저는 페이지를 로드하고 img 요소의 src 속성에 따라 이미지를 요청합니다.
+1. 이미지 렌더링:이미지 렌더링 서블릿은 웹 브라우저에 이미지를 반환합니다.
 
 ![chlimage_1-6](assets/chlimage_1-6.png)
 
@@ -386,9 +386,9 @@ AEM은 사용하거나 확장할 수 있는 다음 구현을 설치합니다.
 
 응용 이미지 구성 요소는 응용 이미지 구성 요소 서블릿에 대한 호출을 생성하여 장치 화면에 따라 크기가 조정된 이미지를 렌더링합니다. 구성 요소에는 다음 리소스가 포함되어 있습니다.
 
-* JSP: 미디어 쿼리를 응용 이미지 구성 요소 서블릿에 대한 호출과 연결하는 div 요소를 추가합니다.
-* 클라이언트 라이브러리: clientlibs 폴더는 matchMedia polyfill javascript 라이브러리 및 수정된 Picturefill javascript 라이브러리를 어셈블하는 `cq:ClientLibraryFolder` 폴더입니다.
-* 편집 대화 상자: 노드는 `cq:editConfig` CQ 기초 이미지 구성 요소를 무시하므로 드롭 대상이 기본 이미지 구성 요소가 아닌 응용 이미지 구성 요소를 만듭니다.
+* JSP:미디어 쿼리를 응용 이미지 구성 요소 서블릿에 대한 호출과 연결하는 div 요소를 추가합니다.
+* 클라이언트 라이브러리:clientlibs 폴더는 matchMedia polyfill javascript 라이브러리 및 수정된 Picturefill javascript 라이브러리를 어셈블하는 `cq:ClientLibraryFolder` 폴더입니다.
+* 편집 대화 상자:노드는 `cq:editConfig` CQ 기초 이미지 구성 요소를 무시하므로 드롭 대상이 기본 이미지 구성 요소가 아닌 응용 이미지 구성 요소를 만듭니다.
 
 #### DIV 요소 추가 {#adding-the-div-elements}
 
@@ -672,8 +672,8 @@ AEM을 사용하면 유동 격자를 효율적이고 효과적으로 구현할 �
 
 페이지 구성 요소를 사용하여 페이지의 컨텐츠 블록을 정의하는 HTML 요소를 생성합니다. 페이지가 참조하는 ClientLibraryFolder는 콘텐츠 블록의 레이아웃을 제어하는 CSS를 제공합니다.
 
-* 페이지 구성 요소: 컨텐츠 블록 행을 나타내는 div 요소를 추가합니다. 컨텐츠 블록을 나타내는 div 요소에는 작성자가 컨텐츠를 추가하는 parsys 구성 요소가 포함됩니다.
-* 클라이언트 라이브러리 폴더: div 요소에 대한 미디어 쿼리 및 스타일을 포함하는 CSS 파일을 제공합니다.
+* 페이지 구성 요소:컨텐츠 블록 행을 나타내는 div 요소를 추가합니다. 컨텐츠 블록을 나타내는 div 요소에는 작성자가 컨텐츠를 추가하는 parsys 구성 요소가 포함됩니다.
+* 클라이언트 라이브러리 폴더:div 요소에 대한 미디어 쿼리 및 스타일을 포함하는 CSS 파일을 제공합니다.
 
 예를 들어 샘플 geometrixx-media 응용 프로그램에는 media-home 구성 요소가 포함되어 있습니다. 이 페이지 구성 요소는 두 개의 스크립트를 삽입하며, 이 두 가지 `div` 요소의 클래스 요소를 생성합니다 `row-fluid`.
 
