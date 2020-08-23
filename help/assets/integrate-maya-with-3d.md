@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 3d063268-17d7-4db6-8028-682537645377
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '874'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ AEM [3D와 AutoDesk 3ds Max를 참조하십시오](integrating-aem-3d-with-autod
 
 1. Maya 실행 폴더의 경로를 Windows PATH 환경 변수에 추가합니다.
 
-   예를 들어 Windows Server 2012에서는 **[!UICONTROL 시작 > Campaign 컨트롤 패널 > 시스템 및 보안 > 시스템 > 고급 시스템 설정 > 환경 변수를 누릅니다**. 전체 경로를 `Maya2016\bin` 시스템 변수에 `Path`추가합니다.
+   예를 들어 Windows Server 2012에서는 [ **[!UICONTROL 시작]] >[!UICONTROL Campaign 컨트롤 패널]>[!UICONTROL 시스템]및 보안[!UICONTROL 시스템]> SystemAdvanced System Settings[!UICONTROL > Advanced System Settings]**> Advanced System Settings > Safety Environment Variables를 누릅니다. 전체 경로를 `Maya2016\bin` 시스템 변수에 `Path`추가합니다.
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
 
@@ -79,7 +79,7 @@ AEM [3D와 AutoDesk 3ds Max를 참조하십시오](integrating-aem-3d-with-autod
 
    기본 3D 기능의 유효성을 검사하기 위해 이전에 다운로드된 `sample-3D-content.zip` 것을 참고하십시오.
 
-1. [!UICONTROL 카드 **** 보기]로 돌아가 업로드된 자산에 표시된 메시지 배너를 관찰합니다.
+1. 카드 **[!UICONTROL 보기로]** 돌아가서 업로드된 자산에 표시된 메시지 배너를 확인합니다.
 
    Maya가 기본 형식을 (으)로 변환하는 동안 형식 변환 배너가 `.MA` 표시됩니다 `.FBX`.
 
