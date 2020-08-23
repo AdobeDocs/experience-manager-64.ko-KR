@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8d14017d-d311-45e9-8aea-4a5ca46f1a07
 translation-type: tm+mt
-source-git-commit: 263a1e514fa48f7aa7b696c801718ceff1e43ed7
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4919'
+source-wordcount: '4916'
 ht-degree: 3%
 
 ---
@@ -75,7 +75,7 @@ AEM을 설치한 후 시작 페이지의 CRXDE Lite 링크를 클릭하여 CRXDE
 
 CRXDE Lite을 사용하여 저장소에서 mywebsite 응용 프로그램 구조를 만듭니다.
 
-1. CRXDE Lite의 왼쪽에 있는 트리에서 폴더를 마우스 오른쪽 단추로 클릭하고 만들기 > 폴더 **`/apps`** 만들기를 클릭합니다 ****. [폴더 **만들기** ] 대화 상자에서 폴더 이름 `mywebsite` 을 입력하고 **[!UICONTROL 확인]을 클릭합니다**.
+1. CRXDE Lite의 왼쪽에 있는 트리에서 폴더를 마우스 오른쪽 단추로 클릭하고 만들기 > 폴더 **`/apps`** 만들기를 클릭합니다 ****. [폴더 **만들기** ] 대화 상자에서 폴더 이름 `mywebsite` 을 입력하고 [ **확인]을 클릭합니다**.
 1. 폴더를 마우스 오른쪽 단추로 `/apps/mywebsite` 클릭하고 **[!UICONTROL 만들기 > 폴더 만들기를 클릭합니다]**. [폴더 **[!UICONTROL 만들기]** ] 대화 상자에서 폴더 이름 `components` 을 입력하고 [ **[!UICONTROL 확인]을 클릭합니다]**.
 1. 폴더를 마우스 오른쪽 단추로 `/apps/mywebsite` 클릭하고 **[!UICONTROL 만들기 > 폴더 만들기를 클릭합니다]**. [폴더 **[!UICONTROL 만들기]** ] 대화 상자에서 폴더 이름 `templates` 을 입력하고 [ **[!UICONTROL 확인]을 클릭합니다]**.
 
@@ -127,10 +127,10 @@ CRXDE Lite을 사용하여 저장소에서 mywebsite 응용 프로그램 구조�
 
 1. 템플릿 만들기 대화 상자에서 다음 값을 입력한 다음 **[!UICONTROL 다음을 클릭합니다]**.
 
-   * **[!UICONTROL 레이블]**: contentpage
-   * **[!UICONTROL 제목]**: 내 웹 사이트 컨텐츠 페이지 템플릿
-   * **[!UICONTROL 설명]**: 내 웹 사이트 컨텐츠 페이지 템플릿입니다.
-   * **[!UICONTROL 리소스 유형]**: mywebsite/components/contentpage
+   * **[!UICONTROL 레이블]**:contentpage
+   * **[!UICONTROL 제목]**:내 웹 사이트 컨텐츠 페이지 템플릿
+   * **[!UICONTROL 설명]**:내 웹 사이트 컨텐츠 페이지 템플릿입니다.
+   * **[!UICONTROL 리소스 유형]**:mywebsite/components/contentpage
 
    등급 속성에 기본값을 사용합니다.
 
@@ -157,9 +157,9 @@ CRXDE Lite을 사용하여 저장소에서 mywebsite 응용 프로그램 구조�
 1. CRXDE Lite에서 마우스 오른쪽 단추 `/apps/mywebsite/components` 를 클릭하고 **[!UICONTROL 만들기 > 구성 요소를 클릭합니다]**.
 1. 구성 요소 **[!UICONTROL 만들기]** 대화 상자에서 다음 속성 값을 입력합니다.
 
-   * **[!UICONTROL 레이블]**: contentpage
-   * **[!UICONTROL 제목]**: 내 웹 사이트 컨텐츠 페이지 구성 요소
-   * **[!UICONTROL 설명]**: 내 웹 사이트 컨텐츠 페이지 구성 요소입니다.
+   * **[!UICONTROL 레이블]**:contentpage
+   * **[!UICONTROL 제목]**:내 웹 사이트 컨텐츠 페이지 구성 요소
+   * **[!UICONTROL 설명]**:내 웹 사이트 컨텐츠 페이지 구성 요소입니다.
 
    ![chlimage_1-107](assets/chlimage_1-107.png)
 
@@ -216,7 +216,7 @@ CRXDE Lite을 사용하여 저장소에서 mywebsite 응용 프로그램 구조�
 
 ### 웹 사이트 페이지 및 컨텐츠 페이지 만들기 {#creating-your-website-page-and-content-pages}
 
-이 섹션에서는 모두 컨텐트 페이지 템플릿을 사용하는 다음 페이지를 만듭니다. 내 웹 사이트, 영어, 제품, 서비스 및 고객
+이 섹션에서는 모두 컨텐트 페이지 템플릿을 사용하는 다음 페이지를 만듭니다.내 웹 사이트, 영어, 제품, 서비스 및 고객
 
 1. AEM 시작 페이지(http://localhost:4502/libs/cq/core/content/welcome.html[](http://localhost:4502/libs/cq/core/content/welcome.html))에서 웹 사이트를 클릭합니다.
 
@@ -234,26 +234,26 @@ CRXDE Lite을 사용하여 저장소에서 mywebsite 응용 프로그램 구조�
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 폴더 트리에서 `/Websites/My Website` 페이지를 선택하고 새로 **[!UICONTROL 만들기 > 새 페이지를 클릭합니다]**.
 1. 페이지 **[!UICONTROL 만들기]** 대화 상자에서 다음 속성 값을 입력한 다음 만들기를 클릭합니다.
 
-   * **[!UICONTROL 제목]**: 영어
-   * **[!UICONTROL 이름]**: en
+   * **[!UICONTROL 제목]**:영어
+   * **[!UICONTROL 이름]**:en
    * 내 **[!UICONTROL 웹 사이트 컨텐츠 페이지 템플릿 선택]**
 
 1. 폴더 트리에서 `/Websites/My Website/English` 페이지를 선택하고 새로 **[!UICONTROL 만들기 > 새 페이지를 클릭합니다]**.
 1. 페이지 **[!UICONTROL 만들기]** 대화 상자에서 다음 속성 값을 입력한 다음 **[!UICONTROL 만들기를 클릭합니다]**.
 
-   * **[!UICONTROL 제목]**: 제품
+   * **[!UICONTROL 제목]**:제품
    * 내 **[!UICONTROL 웹 사이트 컨텐츠 페이지 템플릿 선택]**
 
 1. 폴더 트리에서 `/Websites/My Website/English` 페이지를 선택하고 새로 **[!UICONTROL 만들기 > 새 페이지를 클릭합니다]**.
 1. 페이지 **[!UICONTROL 만들기]** 대화 상자에서 다음 속성 값을 입력한 다음 **[!UICONTROL 만들기를 클릭합니다]**.
 
-   * **제목**: 서비스
+   * **제목**:서비스
    * 내 **[!UICONTROL 웹 사이트 컨텐츠 페이지 템플릿 선택]**
 
 1. 폴더 트리에서 `/Websites/My Website/English` 페이지를 선택하고 새로 **[!UICONTROL 만들기 > 새 페이지를 클릭합니다]**.
 1. 페이지 **[!UICONTROL 만들기]** 대화 상자에서 다음 속성 값을 입력한 다음 **[!UICONTROL 만들기를 클릭합니다]**.
 
-   * **제목**: 고객
+   * **제목**:고객
    * 내 **[!UICONTROL 웹 사이트 컨텐츠 페이지 템플릿 선택]**
 
    구조는 다음과 같습니다.
@@ -262,9 +262,9 @@ CRXDE Lite을 사용하여 저장소에서 mywebsite 응용 프로그램 구조�
 
 1. 페이지를 mywebsite 디자인에 연결하려면 CRXDE Lite에서 노드를 `/content/mywebsite/en/jcr:content` 선택합니다. 속성 **[!UICONTROL 탭]** 에서 새 속성에 대해 다음 값을 입력한 다음 추가를 클릭합니다.
 
-   * **[!UICONTROL 이름]**: cq:designPath
-   * **[!UICONTROL 유형]**: 문자열
-   * **[!UICONTROL 값]**: /etc/designs/mywebsite
+   * **[!UICONTROL 이름]**:cq:designPath
+   * **[!UICONTROL 유형]**:문자열
+   * **[!UICONTROL 값]**:/etc/designs/mywebsite
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
@@ -291,9 +291,9 @@ CRXDE Lite을 사용하여 저장소에서 mywebsite 응용 프로그램 구조�
    1. 노드를 `/apps/mywebsite/components/contentpage` 선택합니다.
    1. 속성 탭 하단에서 다음 속성 값을 입력한 다음 추가를 클릭합니다.
 
-      * **[!UICONTROL 이름]**: sling:resourceSuperType
-      * **[!UICONTROL 유형]**: 문자열
-      * **[!UICONTROL 값]**: foundation/components/page
+      * **[!UICONTROL 이름]**:sling:resourceSuperType
+      * **[!UICONTROL 유형]**:문자열
+      * **[!UICONTROL 값]**:foundation/components/page
    1. 모두 **[!UICONTROL 저장을 클릭합니다]**.
 
 
@@ -478,7 +478,7 @@ CRXDE Lite을 사용하여 저장소에서 mywebsite 응용 프로그램 구조�
 
 1. 브라우저에서 제품 **[!UICONTROL 페이지를]** 엽니다.
 1. 사이드 킥페이지 **[!UICONTROL 탭]** 에서 **[!UICONTROL 페이지 속성을 클릭합니다]**.
-1. 대화 상자의 **[!UICONTROL 기본]** 탭 **[!UICONTROL 에서]** 더 많은 제목 및 설명 **[!UICONTROL 을 확장하고]** 자막 `what we do`속성을입력합니다. **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
+1. 대화 상자의 **[!UICONTROL 기본]** 탭 **[!UICONTROL 에서]** 추가 제목 및 설명 **[!UICONTROL 을 확장하고]** 자막 `what we do`속성을입력합니다. **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 1. 서비스 **페이지에 서비스** 에 대한 부제목을 추가하려면 이전 단계를 **[!UICONTROL 반복합니다]** .
 1. 이전 단계를 반복하여 고객 **페이지에 획득** 의 **[!UICONTROL 소제목이라고]** 합니다.
 
@@ -657,14 +657,14 @@ CRXDE Lite을 사용하여 저장소에서 mywebsite 응용 프로그램 구조�
 1. 웹 사이트 **[!UICONTROL 페이지의 폴더 트리에서]** 웹 사이트/내 웹 사이트/영어/제품 **[!UICONTROL 항목을 선택하고]** 새로 만들기 > 새 페이지 **[!UICONTROL 를 클릭합니다]**.
 1. 대화 상자에서 다음 속성 값을 입력한 다음 **[!UICONTROL 만들기를 클릭합니다]**.
 
-   * **[!UICONTROL 제목]**: 제품 1.
-   * **[!UICONTROL 이름]**: product1.
+   * **[!UICONTROL 제목]**:제품 1.
+   * **[!UICONTROL 이름]**:product1.
    * 내 **[!UICONTROL 웹 사이트 컨텐츠 페이지 템플릿 선택]**
 
 1. 다음 속성 값을 사용하여 제품 아래에 다른 페이지를 만듭니다.
 
-   * **[!UICONTROL 제목]**: 제품 2
-   * **[!UICONTROL 이름]**: product2
+   * **[!UICONTROL 제목]**:제품 2
+   * **[!UICONTROL 이름]**:product2
    * 내 **[!UICONTROL 웹 사이트 컨텐츠 페이지 템플릿 선택]**
 
 1. CRXDE Lite에서 제품 1 페이지의 설명 및 날짜를 설정합니다.
@@ -678,9 +678,9 @@ CRXDE Lite을 사용하여 저장소에서 mywebsite 응용 프로그램 구조�
    1. **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
    1. 속성 **[!UICONTROL 탭에서]** 다음 값을 사용하여 다른 속성을 만듭니다.
 
-      * **[!UICONTROL 이름]**: date
-      * **[!UICONTROL 유형]**: 문자열
-      * **[!UICONTROL 값]**: 2008년 02월 14일
+      * **[!UICONTROL 이름]**:date
+      * **[!UICONTROL 유형]**:문자열
+      * **[!UICONTROL 값]**:2008년 02월 14일
       * **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
    1. 모두 **[!UICONTROL 저장을 클릭합니다]**.
 
@@ -691,15 +691,15 @@ CRXDE Lite을 사용하여 저장소에서 mywebsite 응용 프로그램 구조�
    1. 노드를 `/content/mywebsite/en/products/product2/jcr:content` 선택합니다.
    1. [ **[!UICONTROL 속성]** ] 탭에서 다음 값을 입력합니다.
 
-      * **[!UICONTROL 이름]**: jcr:description
-      * **[!UICONTROL 유형]**: 문자열
-      * **[!UICONTROL 값]**: 제품 2!에 대한 설명입니다.
+      * **[!UICONTROL 이름]**:jcr:description
+      * **[!UICONTROL 유형]**:문자열
+      * **[!UICONTROL 값]**:제품 2!에 대한 설명입니다.
    1. **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
    1. 동일한 텍스트 상자에서 이전 값을 다음 값으로 바꿉니다.
 
-      * **[!UICONTROL 이름]**: date
-      * **[!UICONTROL 유형]**: 문자열
-      * **[!UICONTROL 값]**: 2012년 05월 11일
+      * **[!UICONTROL 이름]**:date
+      * **[!UICONTROL 유형]**:문자열
+      * **[!UICONTROL 값]**:2012년 05월 11일
       * **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
    1. 모두 **[!UICONTROL 저장을 클릭합니다]**.
 
@@ -712,9 +712,9 @@ listchildren 구성 요소를 만들려면:
 1. CRXDE Lite에서 마우스 오른쪽 단추 `/apps/mywebsite/components`를 클릭하고 **[!UICONTROL 만들기]**, 구성 요소 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. 대화 상자에서 다음 속성 값을 입력한 다음 **[!UICONTROL 다음을 클릭합니다]**.
 
-   * **[!UICONTROL 레이블]**: listchildren.
-   * **[!UICONTROL 제목]**: 내 Listchildren 구성 요소를 참조하십시오.
-   * **[!UICONTROL 설명]**: 내 목록 구성 요소입니다.
+   * **[!UICONTROL 레이블]**:listchildren.
+   * **[!UICONTROL 제목]**:내 Listchildren 구성 요소를 참조하십시오.
+   * **[!UICONTROL 설명]**:내 목록 구성 요소입니다.
 
 1. [ **[!UICONTROL 다음]** ]을 계속 **[!UICONTROL 클릭한]** 다음 **[!UICONTROL 확인을 클릭합니다]**.
 
@@ -776,15 +776,15 @@ listchildren 구성 요소 속성을 구성하는 데 사용되는 대화 상자
 
 1. Tab **1** 노드를 선택하고 **[!UICONTROL Create > Create Node]**&#x200B;를 클릭하고 다음 속성 값을 입력한 후 **[!UICONTROL 확인을 클릭합니다]**.
 
-   * **[!UICONTROL 이름]**: 항목
-   * **[!UICONTROL 유형]**: cq:WidgetCollection
+   * **[!UICONTROL 이름]**:항목
+   * **[!UICONTROL 유형]**:cq:WidgetCollection
 
    ![screen_shot_2012-03-07at51018pm](assets/screen_shot_2012-03-07at51018pm.png)
 
 1. 다음 속성 값을 사용하여 항목 노드 아래에 노드를 만듭니다.
 
-   * **[!UICONTROL 이름]**: 목록 루트
-   * **[!UICONTROL 유형]**: cq:Widget
+   * **[!UICONTROL 이름]**:목록 루트
+   * **[!UICONTROL 유형]**:cq:Widget
 
    ![screen_shot_2012-03-07at51031pm](assets/screen_shot_2012-03-07at51031pm.png)
 
@@ -1082,7 +1082,7 @@ public class img_GET extends AbstractImageServlet {
 
    ![chlimage_1-126](assets/chlimage_1-126.png)
 
->[!Note]
+>[!NOTE]
 >편집 모드에서 다른 제목과 유형/크기를 설정할 수 **[!UICONTROL 있습니다]** .
 
 ### 단락 시스템 구성 요소 포함 {#including-the-paragraph-system-component}
@@ -1124,13 +1124,13 @@ public class img_GET extends AbstractImageServlet {
 1. 구성 요소 `image` 노드를 선택하고 다음 속성 값을 변경합니다.
 
    * `jcr:title:` 내 이미지 구성 요소를 참조하십시오.
-   * `jcr:description`: 내 이미지 구성 요소입니다.
+   * `jcr:description`:내 이미지 구성 요소입니다.
 
 1. 다음 속성 값을 사용하여 `image` 노드에 속성을 추가합니다.
 
-   * **[!UICONTROL 이름]**: componentGroup
-   * **[!UICONTROL 유형]**: 문자열
-   * **[!UICONTROL 값]**: MyWebsite
+   * **[!UICONTROL 이름]**:componentGroup
+   * **[!UICONTROL 유형]**:문자열
+   * **[!UICONTROL 값]**:MyWebsite
 
 1. 노드 `image` 아래에서 노드 이름을 다음으로 `design_dialog` 변경합니다 `dialog`.
 
@@ -1174,18 +1174,18 @@ public class img_GET extends AbstractImageServlet {
 
 1. CRXDE Lite의 /apps/mywebsite/components/image 노드에서 다음과 같이 새 노드를 만듭니다.
 
-   * **[!UICONTROL 이름]**: cq:editConfig.
-   * **[!UICONTROL 유형]**: cq:EditConfig.
+   * **[!UICONTROL 이름]**:cq:editConfig.
+   * **[!UICONTROL 유형]**:cq:EditConfig.
 
 1. cq:editConfig 노드 아래에서 다음과 같이 새 노드를 만듭니다.
 
-   * **[!UICONTROL 이름]**: cq:dropTargets.
-   * **[!UICONTROL 유형]**: cq:DropTargetConfig.
+   * **[!UICONTROL 이름]**:cq:dropTargets.
+   * **[!UICONTROL 유형]**:cq:DropTargetConfig.
 
 1. cq:dropTargets 노드 아래에서 다음과 같이 새 노드를 만듭니다.
 
-   * **[!UICONTROL 이름]**: image.
-   * **[!UICONTROL 유형]**: nt:unstructured.
+   * **[!UICONTROL 이름]**:image.
+   * **[!UICONTROL 유형]**:nt:unstructured.
 
 1. CRXDE에서 속성을 다음과 같이 설정합니다.
 
@@ -1211,7 +1211,7 @@ public class img_GET extends AbstractImageServlet {
 1. 브라우저에서 **[!UICONTROL 제품]** 페이지를 다시 로드합니다.
 1. 사이드 킥에서 **[!UICONTROL 디자인 모드]** 아이콘을 클릭합니다.
 1. [ **[!UICONTROL 편집]** ] 단추를 클릭하여 단락 디자인 대화 상자를 편집합니다.
-1. 대화 상자에 허용된 구성 요소 **[!UICONTROL 목록이]** 표시됩니다. 내 **[!UICONTROL 웹 사이트로]**&#x200B;이동하여 **[!UICONTROL 내 이미지 구성 요소를]** 선택한 다음 **[!UICONTROL 확인을]**&#x200B;클릭합니다.
+1. 대화 상자에 허용된 구성 요소 **[!UICONTROL 목록이]** 표시됩니다.내 **[!UICONTROL 웹 사이트로]**&#x200B;이동하여 **[!UICONTROL 내 이미지 구성 요소를]** 선택한 다음 **[!UICONTROL 확인을]**&#x200B;클릭합니다.
 1. 편집 **[!UICONTROL 모드로 돌아갑니다]**.
 1. parsys 프레임을 두 번 클릭합니다(구성 요소나 자산을 여기로 **[!UICONTROL 드래그하십시오]**). 새 구성 요소 **[!UICONTROL 삽입]** 및 **[!UICONTROL 사이드]** 킥의 선택기는 다음과 같습니다.
 
@@ -1237,7 +1237,7 @@ public class img_GET extends AbstractImageServlet {
 
 1. AEM 웹 사이트 페이지의 폴더 트리에서 선택한 다음 `Websites/My Website/English`새로 **[!UICONTROL 만들기 > 새 페이지를 클릭합니다]**. 다음 속성 값을 지정하고 만들기를 클릭합니다.
 
-   * **[!UICONTROL 제목]**: 도구 모음
+   * **[!UICONTROL 제목]**:도구 모음
    * 내 **[!UICONTROL 웹 사이트 컨텐츠 페이지 템플릿 선택]**
 
 1. 페이지 목록에서 도구 **[!UICONTROL 모음]** 페이지를 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 속성을 클릭합니다]**. [탐색 **[!UICONTROL 에서 숨기기]**]를 선택하고 [ **[!UICONTROL 확인]을 클릭합니다]**.
@@ -1270,12 +1270,12 @@ public class img_GET extends AbstractImageServlet {
 
    1. 첫 번째 패널에서 다음 속성 값을 지정합니다.
 
-      * **[!UICONTROL 레이블]**: 검색
-      * **[!UICONTROL 제목]**: 내 검색 구성 요소
-      * **[!UICONTROL 설명]**: 내 검색 구성 요소입니다.
-      * **[!UICONTROL 그룹]**: MyWebsite
+      * **[!UICONTROL 레이블]**:검색
+      * **[!UICONTROL 제목]**:내 검색 구성 요소
+      * **[!UICONTROL 설명]**:내 검색 구성 요소입니다.
+      * **[!UICONTROL 그룹]**:MyWebsite
    1. 다음 **[!UICONTROL 을]**&#x200B;클릭한 다음 **[!UICONTROL 다음]** 을 다시 클릭합니다.
-   1. [!UICONTROL **허용된 부모** 패널]에서 **[!UICONTROL +]** 단추 `*/parsys`를 클릭하고입력합니다.
+   1. [허용되는 상위 **[!UICONTROL 항목]** ] 패널에서 **[!UICONTROL +]** 버튼을 클릭하고 `*/parsys`를입력합니다.
    1. [ **[!UICONTROL 다음]** ]을 클릭한 다음 **[!UICONTROL 확인을 클릭합니다]**.
 
 
@@ -1500,7 +1500,7 @@ public class img_GET extends AbstractImageServlet {
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
-1. 제품 **[!UICONTROL 페이지로]** 이동합니다. 입력 상자에서 고객을 검색하고 Enter 키를 **[!UICONTROL 누릅니다]**. 검색 **[!UICONTROL 페이지로 리디렉션됩니다]** . 미리 **[!UICONTROL 보기]** 모드로 전환: 출력은 다음과 유사한 형식입니다.
+1. 제품 **[!UICONTROL 페이지로]** 이동합니다. 입력 상자에서 고객을 검색하고 Enter 키를 **[!UICONTROL 누릅니다]**. 검색 **[!UICONTROL 페이지로 리디렉션됩니다]** . 미리 **[!UICONTROL 보기]** 모드로 전환:출력은 다음과 유사한 형식입니다.
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
