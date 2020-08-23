@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 translation-type: tm+mt
-source-git-commit: 5dba0e6c4ce4dbdf3254f511476a035c60a81810
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 0%
@@ -133,20 +133,20 @@ Dynamic Media는 정적 자산 전달을 지원하며, 이는 단순히 이미�
 
    `https://s7athens.macromedia.com:9090/DMGateway/`
 
-   (위 경로는 그림 용도로만 사용됩니다. 복사하는 실제 경로가 아닙니다.)
+   (위 경로는 그림 용도로만 사용됩니다.복사하는 실제 경로가 아닙니다.)
 
 1. [ **[!UICONTROL 등록 ID]]**&#x200B;아래에서 ID의 마지막 부분에 있는 고객 이름을 복사합니다.
 
    예를 들어 등록 ID가 `87654321|MyCompany`있는 경우 고객 이름이 `MyCompany`됩니다.
 
-1. 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL Cloud Services**]를 탭한 다음 AEM 아이콘을 탭하고 **[!UICONTROL 일반 > CRXDE Lite으로 이동합니다]**.
+1. 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 클라우드]서비스**&#x200B;를 탭한 다음 AEM 아이콘을 탭하고 **[!UICONTROL 일반 > CRXDE Lite으로 이동합니다]**.
 1. JCR(Java Content Repository)에서 전체 비디오 변환 경로를 복사합니다.
 
    예를 들어 비디오의 변환 경로는 다음과 유사하게 나타날 수 있습니다.
 
    `/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112f/avs/Momentum_1080-0x720-2600k.mp4`
 
-   (위 경로는 그림 용도로만 사용됩니다. 복사하는 실제 경로가 아닙니다.)
+   (위 경로는 그림 용도로만 사용됩니다.복사하는 실제 경로가 아닙니다.)
 
 1. 복사한 정보를 다음 순서로 배열하여 전체 URL 경로를 형성합니다.
 
@@ -169,7 +169,7 @@ Dynamic Media는 정적 자산 전달을 지원하며, 이는 단순히 이미�
 
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
-   (위 경로는 그림 용도로만 사용됩니다. 복사하는 실제 경로가 아닙니다.)
+   (위 경로는 그림 용도로만 사용됩니다.복사하는 실제 경로가 아닙니다.)
 
    * [ **[!UICONTROL 등록 ID]]**&#x200B;아래에서 ID의 마지막 부분에 있는 고객 이름을 복사합니다. 이 단계에서 나중에 복사된 고객 이름이 필요합니다.
 
