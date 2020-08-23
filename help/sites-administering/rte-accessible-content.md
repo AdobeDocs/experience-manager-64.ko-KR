@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: ff0f006d-461c-4cc4-b6eb-d665f3f3b498
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 0%
@@ -76,7 +76,7 @@ CRXDE Lite의 해당 하위 `rtePlugins` 분기 내에 플러그인을 구성하
 다음 방법을 통해 선택할 수 있는 새로운 의미 체계 블록 형식을 만들 수 있습니다.
 
 1. RTE에 따라 [구성 위치를 확인하고 탐색합니다](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations).
-1. [단락 선택 필드를 활성화합니다](/help/sites-administering/rich-text-editor.md). 플러그인을 [활성화함으로써](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
+1. [단락 선택 필드를 활성화합니다](/help/sites-administering/rich-text-editor.md).플러그인을 [활성화함으로써](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
 1. [단락 선택 필드에서 사용할 형식을 지정합니다](/help/sites-administering/rich-text-editor.md).
 1. 그런 다음 RTE의 선택 필드에서 컨텐츠 작성자가 단락 포맷을 사용할 수 있습니다. 액세스 가능한 항목:
 
@@ -167,9 +167,9 @@ AEM의 액세스 가능성 기능을 추가로 확장하기 위해 추가 요소
    ```
    /**
     * Adds Caption Element
-    */
-   var captionElement; 
-   if (dom.firstChild && dom.firstChild.tagName.toLowerCase() == "caption") 
+   */
+   var captionElement;
+   if (dom.firstChild && dom.firstChild.tagName.toLowerCase() == "caption")
    {
       captionElement = dom.firstChild;
    }
@@ -178,7 +178,7 @@ AEM의 액세스 가능성 기능을 추가로 확장하기 위해 추가 요소
        var captionTextNode = document.createTextNode(config.caption)
        if (captionElement)
        {
-          dom.replaceNode(captionElement.firstChild,captionTextNode); 
+          dom.replaceNode(captionElement.firstChild,captionTextNode);
        } else
        {
            captionElement = document.createElement("caption");
@@ -191,7 +191,7 @@ AEM의 액세스 가능성 기능을 추가로 확장하기 위해 추가 요소
               dom.appendChild(captionElement);
            }
        }
-   } else if (captionElement) 
+   } else if (captionElement)
    {
      dom.removeChild(captionElement);
    }
