@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 7f813b59-d904-49b6-994c-be3badf74464
 translation-type: tm+mt
-source-git-commit: 39b6af8ee815e8f6fa6e0b4a0a6dc80f29165243
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '490'
 ht-degree: 3%
 
 ---
@@ -118,7 +118,7 @@ contexthub.geolocation store 후보가 확장되었습니다 [`ContextHub.Store.
 
 장치, 창, 브라우저, 날짜 및 시간과 같은 현재 클라이언트 환경에 대한 정보를 저장합니다.
 
-### 소스 위치 {#source-location-surferinfo
+### 소스 위치 {#source-location-surferinfo}
 
 `/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 
