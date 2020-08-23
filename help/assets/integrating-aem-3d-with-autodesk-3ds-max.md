@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: 3D
 discoiquuid: 0d7fefc0-6923-4ac3-9e90-335c08fa56f0
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ AEM [3D와 AutoDesk Maya 통합도 참조하십시오](integrate-maya-with-3d.md
 
 1. 3ds Max에서 사용자 **[!UICONTROL 지정 > 플러그인 관리자를 클릭합니다]**.
 
-   해당 상태 `FBXMAX.DLU` 가 **[!UICONTROL [!UICONTROL이 로드되었는지]** 확인하고 **확인합니다**.
+   해당 상태 `FBXMAX.DLU` 를 찾아 **[!UICONTROL 로드되었는지]** **[!UICONTROL 확인합니다]**.
 
    플러그인 **[!UICONTROL 관리자]** 대화 상자와 3ds Max를 닫습니다.
 
