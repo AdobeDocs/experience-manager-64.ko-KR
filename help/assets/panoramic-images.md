@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: fc285b25-2bce-493c-87bc-5f1a8a26eb42
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 1%
@@ -60,7 +60,7 @@ Panoric Image 뷰어가 AEM 내에서 제대로 작동하려면 Panoramic Image 
    >
    >허용되는 최대 이미지 크기에 해당하는 이미지만 지원됩니다. 크기 제한을 초과하는 이미지에 대한 요청은 403 응답을 가져옵니다.
 
-1. 속성 **요청** 머리글 아래에서 다음을 수행합니다.
+1. 속성 **[요청]** 머리글 아래에서 다음을 수행합니다.
 
    * 요청 난독화 **[!UICONTROL 모드를]** 비활성화로 **[!UICONTROL 설정합니다]**.
    * 요청 **[!UICONTROL 잠금 모드를]** 비활성화로 **[!UICONTROL 설정합니다]**.
