@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 discoiquuid: b99c7b93-ba05-42ee-9ca8-0079e15d8602
 translation-type: tm+mt
-source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -38,66 +38,63 @@ AEM Sites [](/help/forms/using/embed-adaptive-form-aem-sites.md) 페이지 또�
 
 1. 웹 사이트의 웹 페이지에 다음 코드를 포함합니다.
 
-   ```
-   
-   
-<!doctype html>
-<html>
-  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>웹 페이지의 제목입니다!</title>
+   ```html
+   <!doctype html>
+   <html>
+   <head>
+    <title>This is the title of the webpage!</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  </head>
-  <body>
-  <div class="customafsection"/>
-    <p>이 섹션은 응용 양식으로 대체됩니다.</p>
-
-
-    &lt;script>
-    var options = {path:&quot;/content/forms/af/locbasic.html&quot;, dataRef:&quot;&quot;, thempath:&quot;, CSS_Selector:&quot;.customafsection&quot;};
+   </head>
+   <body>
+   <div class="customafsection"/>
+   <p>This section is replaced with the adaptive form.</p>
+   
+    <script>
+    var options = {path:"/content/forms/af/locbasic.html", dataRef:"", themepath:"", CSS_Selector:".customafsection"};
     alert(options.path);
     var loadAdaptiveForm = function(options){
     //alert(options.path);
     if(options.path) {
-    / options.path가 게시를 참조합니다. 응용 양식
-    //의 url 예: http:myserver:4503/content/forms/af/ABC, where ABC is the adaptive form
-    // Note: AEM 서버가 컨텍스트 경로에서 실행 중인 경우, 적응형 양식 URL에는 컨텍스트
-    경로 = options.path;
-    path += &quot;/jcr:content/guideContainer.html&quot;;
-    $.ajax({
-    url : path ,
-    type : &quot;GET&quot;,
-    data : {
-    // wcmmode를 비활성화하도록
-    설정합니다. &quot;disabled&quot;
-    // 데이터 참조를 설정합니다(있는 경우
-    / &quot;dataRef&quot;). options.dataRef
-    // 양식 개체에 대해 다른 테마
-    지정// &quot;themeOverride&quot; : options.themepath
-    },
-    async: false,
-    success: 함수(데이터) {
-    /// jquery가 로드되면 container
-    //의 내부 html을 설정합니다. jquery가 로드되지 않으면 문서에 제공된 API를 사용하여 내부 HTML을 설정하지만 이러한 API는 HTML의 스크립트 태그를 HTML5 spec
-    //에 따라 평가하지 않습니다. 예: document.getElementById().
-    innerHTMLif(window.$ &amp;&amp; options.CSS_Selector){
-    //jquery의 HTML API는 태그를 추출하고, DOM을 업데이트하며, 스크립트 태그에 포함된 코드를 평가합니다.
-    $(options.CSS_Selector).html(data);
-    }
-    },
-    오류: function (data) {
-    // any error handler
-    }
-    );
+        // options.path refers to the publish URL of the adaptive form
+        // For Example: http:myserver:4503/content/forms/af/ABC, where ABC is the adaptive form
+        // Note: If AEM server is running on a context path, the adaptive form URL must contain the context path 
+        var path = options.path;
+        path += "/jcr:content/guideContainer.html";
+        $.ajax({
+            url  : path ,
+            type : "GET",
+            data : {
+                // Set the wcmmode to be disabled
+                wcmmode : "disabled"
+                // Set the data reference, if any
+               // "dataRef": options.dataRef
+                // Specify a different theme for the form object
+              //  "themeOverride" : options.themepath
+            },
+            async: false,
+            success: function (data) {
+                // If jquery is loaded, set the inner html of the container
+                // If jquery is not loaded, use APIs provided by document to set the inner HTML but these APIs would not evaluate the script tag in HTML as per the HTML5 spec
+                // For example: document.getElementById().innerHTML
+                if(window.$ && options.CSS_Selector){
+                    // HTML API of jquery extracts the tags, updates the DOM, and evaluates the code embedded in the script tag.
+                    $(options.CSS_Selector).html(data);
+                }
+            },
+            error: function (data) {
+                // any error handler
+            }
+        });
     } else {
-    if (typeof(console) !== &quot;undefined&quot;) {
-    console.log(&quot;Path of Adaptive Form not specified to loadAdaptiveForm&quot;);
+        if (typeof(console) !== "undefined") {
+            console.log("Path of Adaptive Form not specified to loadAdaptiveForm");
+        }
     }
-    }
-    (options);
-    
-    &lt;/script>
-</body>
-</html>
+    }(options);
+   
+    </script>
+   </body>
+   </html>
    ```
 
 1. 포함된 코드에서:
@@ -136,7 +133,7 @@ Apache 2.4 역방향 프록시 서버를 디스패처 없이 설정하는 방법
     ProxyPassReverse /forms https://[AEM_Instance]/forms
    ```
 
-   규칙 `[AEM_Instance`에서 AEM 서버 게시 URL로 바꾸기]를 참조하십시오.
+   규칙에서 AEM 서버 게시 URL `[AEM_Instance]` 로 대체합니다.
 
 컨텍스트 경로에 AEM 서버를 마운트하지 않으면 Apache 레이어의 프록시 규칙은 다음과 같습니다.
 
