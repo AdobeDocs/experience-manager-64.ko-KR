@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf155d8c-c012-4cb4-89a6-ceead715630e
 translation-type: tm+mt
-source-git-commit: 284339ee1ce0ffae97f732b569f73c732f063273
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 73%
+source-wordcount: '705'
+ht-degree: 75%
 
 ---
 
@@ -50,8 +50,8 @@ Rapid Refine 렌더러는 더 큰 이미지를 렌더링하는 데 일반적으�
 
    [3D 자산 보기](/help/sites-classic-ui-authoring/classicui-view-3d-assets.md)를 참조하십시오.
 
-1. **Adobe Experience Manager**&#x200B;의 **[!UICONTROL 탐색]** 페이지에서 **[!UICONTROL 자산**]을 탭합니다.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View** drop-down list, tap **[!UICONTROL Card View]**.
+1. **Adobe Experience Manager**&#x200B;의 **[!UICONTROL 탐색]** 페이지에서 **[!UICONTROL 자산]**&#x200B;을 탭합니다.
+1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
 1. 렌더링할 3D 개체로 이동합니다.
 
 1. 3D 개체의 카드를 탭하여 자산 세부 사항 페이지에서 엽니다.
