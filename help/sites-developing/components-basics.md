@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4726'
+source-wordcount: '4725'
 ht-degree: 2%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 2%
 구성 요소 개발에 대한 진지한 토론이 시작되기 전에 작성자가 사용할 UI를 알아야 합니다.
 
 * **터치 활성화 UI**
-   [AEM 5.6.0에서 미리 보기 및 6.x로 확장되었던 표준 사용자 인터페이스](/help/sites-developing/touch-ui-concepts.md) . Coral UI와 [Granite UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) 의 기본 기술을 사용하여 Adobe Marketing Cloud의 통합 사용자 경험을 기반으로 [합니다](/help/sites-developing/touch-ui-concepts.md#granite-ui).
+   [AEM 5.6.0에서 미리 보기 및 6.x로 확장되었던 표준 사용자 인터페이스](/help/sites-developing/touch-ui-concepts.md) .Coral UI와 [Granite UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) 의 기본 기술을 사용하여 Adobe Marketing Cloud의 통합 사용자 경험을 기반으로 [합니다](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 
 * **CQ** 5.1에서 소개된 ExtJS 기술을 기반으로 하는 클래식 UI 사용자 인터페이스
 
@@ -73,7 +73,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe은 최신 기술을 활용하려면 터치 지원 UI를 활용하는 것이 좋습니다. [AEM Modernizion-tools&amp;(modernizion-tools.md)를 사용하면 마이그레이션을 더 쉽게 수행할 수 있습니다.
+>Adobe은 최신 기술을 활용하려면 터치 지원 UI를 활용하는 것이 좋습니다. [AEM의 현대화 툴로](modernization-tools.md) 손쉽게 마이그레이션할 수 있습니다.
 
 ### 컨텐츠 논리 및 렌더링 마크업  {#content-logic-and-rendering-markup}
 
@@ -173,7 +173,7 @@ AEM 구성 요소의 구조는 강력하고 유연하며, 주요 고려 사항�
 
    * jcr 속성:
 
-      jcr 속성 목록; 이러한 변수 중 일부는 구성 요소 노드의 기본 구조를 통해 정의되므로 선택 사항일 수 있습니다. `cq:Component`
+      jcr 속성 목록;이러한 변수 중 일부는 구성 요소 노드의 기본 구조를 통해 정의되므로 선택 사항일 수 있습니다. `cq:Component`
 
    * 리소스:
 
@@ -189,8 +189,8 @@ AEM 구성 요소의 구조는 강력하고 유연하며, 주요 고려 사항�
 
 * **중요 속성**:
 
-   * `jcr:title` - 구성 요소 제목; 예를 들어 구성 요소가 구성 요소 브라우저 또는 사이드 킥에 나열될 때 레이블로 사용됩니다.
-   * `jcr:description` - 구성 요소에 대한 설명; 구성 요소 브라우저 또는 사이드 킥에서 마우스오버 힌트로 사용할 수 있습니다.
+   * `jcr:title` - 구성 요소 제목;예를 들어 구성 요소가 구성 요소 브라우저 또는 사이드 킥에 나열될 때 레이블로 사용됩니다.
+   * `jcr:description` - 구성 요소에 대한 설명;구성 요소 브라우저 또는 사이드 킥에서 마우스오버 힌트로 사용할 수 있습니다.
    * 클래식 UI:
 
       * `icon.png` - 이 구성 요소의 아이콘.
@@ -204,7 +204,7 @@ AEM 구성 요소의 구조는 강력하고 유연하며, 주요 고려 사항�
 
    * `cq:editConfig (cq:EditConfig)` - 구성 요소의 편집 속성을 정의하고 구성 요소 브라우저 또는 사이드 킥에 구성 요소를 표시할 수 있습니다.
 
-      참고: 구성 요소에 대화 상자가 있으면 cq:editConfig가 존재하지 않더라도 구성 요소 브라우저나 사이드 킥에 자동으로 나타납니다.
+      참고:구성 요소에 대화 상자가 있으면 cq:editConfig가 존재하지 않더라도 구성 요소 브라우저나 사이드 킥에 자동으로 나타납니다.
 
    * `cq:childEditConfig (cq:EditConfig)` - 자체 UI를 정의하지 않는 하위 구성 요소에 대한 작성자 UI 측면을 제어합니다 `cq:editConfig`.
    * 터치 활성화 UI:
@@ -239,7 +239,7 @@ AEM 구성 요소의 구조는 강력하고 유연하며, 주요 고려 사항�
 
    * 20 x 20픽셀은 표준 구성 요소의 아이콘 크기입니다.
 
-      * 더 큰 아이콘은 다운사이즈됩니다(클라이언트측).
+      * 더 큰 아이콘은 축소됩니다(클라이언트측).
    * 권장되는 색상은 rgb(112, 112, 112) > #707070입니다.
    * 표준 구성 요소 아이콘의 배경은 투명합니다.
    * Only `.png` and `.svg` files are supported.
@@ -423,14 +423,14 @@ AEM 구성 요소의 구조는 강력하고 유연하며, 주요 고려 사항�
 
 특정 관심 영역의 속성은 다음과 같습니다.
 
-* `jcr:title` - 구성 요소의 제목; 구성 요소를 식별하는 데 사용할 수 있습니다. 예를 들어 구성 요소 브라우저 또는 사이드 킥의 구성 요소 목록에 나타납니다
-* `jcr:description` - 구성 요소에 대한 설명; 사이드 킥의 구성 요소 목록에 마우스 오버 힌트로 사용할 수 있습니다.
+* `jcr:title` - 구성 요소의 제목;구성 요소를 식별하는 데 사용할 수 있습니다. 예를 들어 구성 요소 브라우저 또는 사이드 킥의 구성 요소 목록에 나타납니다
+* `jcr:description` - 구성 요소에 대한 설명;사이드 킥의 구성 요소 목록에 마우스 오버 힌트로 사용할 수 있습니다.
 
-* `sling:resourceSuperType`: 구성 요소를 확장할 때의 상속 경로를 나타냅니다(정의를 재정의하여).
+* `sling:resourceSuperType`:구성 요소를 확장할 때의 상속 경로를 나타냅니다(정의를 재정의하여).
 
 특정 관심 항목의 하위 노드에는 다음이 포함됩니다.
 
-* `cq:editConfig` ( `cq:EditConfig`) - 시각적 측면을 제어합니다. 예를 들어 막대 또는 위젯의 모양을 정의하거나 사용자 정의된 컨트롤을 추가할 수 있습니다
+* `cq:editConfig` ( `cq:EditConfig`) - 시각적 측면을 제어합니다.예를 들어 막대 또는 위젯의 모양을 정의하거나 사용자 정의된 컨트롤을 추가할 수 있습니다
 
 * `cq:childEditConfig` ( `cq:EditConfig`) - 자체 정의가 없는 하위 구성 요소의 시각적 측면을 제어합니다.
 
@@ -575,13 +575,13 @@ AEM 내의 구성 요소는 다음과 같이 3개의 다른 계층을 따릅니�
 
    예를 들어 편집 막대 단추, 컨트롤 세트 레이아웃(편집 막대, 롤오버), 대화 상자 레이아웃(인라인, 부동)에 대한 구성 설정은 상위 구성 요소에서 정의되고 하위 구성 요소로 전파될 수 있습니다.
 
-   구성 설정(편집 기능과 관련) `cq:editConfig` 이 전달되고 `cq:childEditConfig` 전파됩니다.
+   구성 설정(편집 기능과 관련됨) `cq:editConfig` 이 전달되고 `cq:childEditConfig` 전파됩니다.
 
 * **계층 포함**
 
    이것은 포함의 시퀀스에 의해 런타임 시 적용됩니다.
 
-   디자이너는 이 계층 구조를 사용하여 렌더링의 다양한 디자인 측면에 대한 기본 역할을 수행합니다. 레이아웃 정보, css 정보, parsys에서 사용 가능한 구성 요소 등을 포함합니다.
+   디자이너는 이 계층 구조를 사용하여 렌더링의 다양한 디자인 측면에 대한 기본 역할을 수행합니다.레이아웃 정보, css 정보, parsys에서 사용 가능한 구성 요소 등을 포함합니다.
 
 ## 동작 편집 {#edit-behavior}
 
@@ -593,26 +593,26 @@ AEM 내의 구성 요소는 다음과 같이 3개의 다른 계층을 따릅니�
 
 * [ `cq:editConfig` node properties](#configuring-with-cq-editconfig-properties):
 
-   * `cq:actions` ( `String array`): 구성 요소에서 수행할 수 있는 작업을 정의합니다.
-   * `cq:layout` ( `String`): : 클래식 UI에서 구성 요소를 편집하는 방법을 정의합니다.
-   * `cq:dialogMode` ( `String`): 구성 요소 대화 상자가 클래식 UI에서 열리는 방식을 정의합니다.
+   * `cq:actions` ( `String array`):구성 요소에서 수행할 수 있는 작업을 정의합니다.
+   * `cq:layout` ( `String`)::클래식 UI에서 구성 요소를 편집하는 방법을 정의합니다.
+   * `cq:dialogMode` ( `String`):구성 요소 대화 상자가 클래식 UI에서 열리는 방식을 정의합니다.
 
       * 터치 지원 UI에서 대화 상자는 항상 데스크탑 모드에서 떠다니고, 모바일에서 전체 화면으로 자동으로 열립니다.
-   * `cq:emptyText` ( `String`): 시각적 컨텐츠가 없을 때 표시되는 텍스트를 정의합니다.
-   * `cq:inherit` ( `Boolean`): 누락된 값이 상속된 구성 요소에서 상속되는지 여부를 정의합니다.
-   * `dialogLayout` (문자열): 대화 상자를 여는 방법을 정의합니다.
+   * `cq:emptyText` ( `String`):시각적 컨텐츠가 없을 때 표시되는 텍스트를 정의합니다.
+   * `cq:inherit` ( `Boolean`):누락된 값이 상속된 구성 요소에서 상속되는지 여부를 정의합니다.
+   * `dialogLayout` (문자열):대화 상자를 여는 방법을 정의합니다.
 
 
 * [ `cq:editConfig` 하위 노드](#configuring-with-cq-editconfig-child-nodes):
 
-   * `cq:dropTargets` (node type `nt:unstructured`): content finder의 자산에서 드롭을 승인할 수 있는 드롭 대상 목록을 정의합니다.
+   * `cq:dropTargets` (node type `nt:unstructured`):content finder의 자산에서 드롭을 승인할 수 있는 드롭 대상 목록을 정의합니다.
 
       * 여러 드롭 대상은 클래식 UI에서만 사용할 수 있습니다.
       * 터치 지원 UI에서는 단일 드롭 대상이 허용됩니다.
-   * `cq:actionConfigs` (node type `nt:unstructured`): cq:actions 목록에 추가된 새 작업 목록을 정의합니다.
-   * `cq:formParameters` (node type `nt:unstructured`): 대화 상자 양식에 추가되는 추가 매개 변수를 정의합니다.
-   * `cq:inplaceEditing` (node type `cq:InplaceEditingConfig`): 구성 요소에 대한 즉석 편집 구성을 정의합니다.
-   * `cq:listeners` (node type `cq:EditListenersConfig`): 구성 요소에서 작업이 발생하기 전이나 후에 어떤 일이 발생하는지를 정의합니다.
+   * `cq:actionConfigs` (node type `nt:unstructured`):cq:actions 목록에 추가된 새 작업 목록을 정의합니다.
+   * `cq:formParameters` (node type `nt:unstructured`):대화 상자 양식에 추가되는 추가 매개 변수를 정의합니다.
+   * `cq:inplaceEditing` (node type `cq:InplaceEditingConfig`):구성 요소에 대한 즉석 편집 구성을 정의합니다.
+   * `cq:listeners` (node type `cq:EditListenersConfig`):구성 요소에서 작업이 발생하기 전이나 후에 어떤 일이 발생하는지를 정의합니다.
 
 
 >[!NOTE]
@@ -637,7 +637,7 @@ AEM 내의 구성 요소는 다음과 같이 3개의 다른 계층을 따릅니�
 
    `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* 의 하위 노드를 찾기 위해 `cq:editConfig`예를 들어 유형 `cq:dropTargets`의 하위 노드를 검색할 수 `cq:DropTargetConfig`있습니다. 다음 XPath 쿼리 문자열로** CRXDE Lite**에서 쿼리 도구를 사용할 수 있습니다.
+* 의 하위 노드를 찾기 위해 `cq:editConfig`예를 들어 유형 `cq:dropTargets`의 하위 노드를 검색할 수 `cq:DropTargetConfig`있습니다.다음 XPath 쿼리 문자열로** CRXDE Lite**에서 쿼리 도구를 사용할 수 있습니다.
 
    `//element(cq:dropTargets, cq:DropTargetConfig)`
 
@@ -928,9 +928,9 @@ AEM 내의 구성 요소는 다음과 같이 3개의 다른 계층을 따릅니�
    <td><code>editorType</code></td> 
    <td><p>(<code>String</code>) 편집기 유형. 사용 가능한 유형은 다음과 같습니다.</p> 
     <ul> 
-     <li>plaintext: 비 HTML 컨텐츠에 사용할 수 있습니다.<br /> </li> 
-     <li>title: 는 편집이 시작되기 전에 그래픽 제목을 일반 텍스트로 변환하는 향상된 일반 텍스트 편집기입니다. Geometrixx 제목 구성 요소에서 사용됩니다.<br /> </li> 
-     <li>텍스트: to be used for HTML content (uses the Rich Text Editor).<br /> </li> 
+     <li>plaintext:비 HTML 컨텐츠에 사용할 수 있습니다.<br /> </li> 
+     <li>title:는 편집이 시작되기 전에 그래픽 제목을 일반 텍스트로 변환하는 향상된 일반 텍스트 편집기입니다. Geometrixx 제목 구성 요소에서 사용됩니다.<br /> </li> 
+     <li>텍스트:to be used for HTML content (uses the Rich Text Editor).<br /> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -947,7 +947,7 @@ AEM 내의 구성 요소는 다음과 같이 3개의 다른 계층을 따릅니�
 
 ### cq:listeners {#cq-listeners}
 
-노드( `cq:listeners` `cq:EditListenersConfig`노드 유형)는 구성 요소에 대한 작업 전후에 발생하는 작업을 정의합니다. 다음 표에서는 가능한 속성을 정의합니다.
+노드 `cq:listeners` (노드 유형 `cq:EditListenersConfig`)는 구성 요소에 대한 작업 전후의 상황을 정의합니다. 다음 표에서는 가능한 속성을 정의합니다.
 
 <table> 
  <tbody> 
@@ -1031,7 +1031,7 @@ AEM 내의 구성 요소는 다음과 같이 3개의 다른 계층을 따릅니�
 >
 >중첩된 구성 요소의 경우 노드에 속성으로 정의된 작업에 대한 특정 제한이 `cq:listeners` 있습니다.
 
->* 중첩된 구성 요소의 경우 다음 속성의 값이 *되어야* 합니다 `REFRESH_PAGE`. >
+>* 중첩된 구성 요소의 경우 다음 속성의 값이 *되어야* 합니다 `REFRESH_PAGE`.>
 >* `aftermove`
 * `aftercopy`
 
