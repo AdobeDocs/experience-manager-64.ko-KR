@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4303'
+source-wordcount: '4300'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 인터랙티브한 이미지 배너를 만드는 [방법에 대한 10분 33초의 연습을 시청하십시오](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). 또한 인터랙티브한 이미지 배너를 미리 보고 편집 및 전달하는 방법을 살펴볼 수 있습니다.
 
-## 빠른 시작: 인터랙티브한 이미지 {#quick-start-interactive-images}
+## 빠른 시작:인터랙티브한 이미지 {#quick-start-interactive-images}
 
 다음 단계별 워크플로우 설명은 AEM Assets에서 인터랙티브한 이미지를 빠르게 시작하고 실행하는 데 도움이 되도록 설계되었습니다.
 
@@ -87,7 +87,7 @@ AEM 구현에서 eCommerce를 사용하는 경우 이 작업을 건너뛰고 다
 
 먼저 핫스팟 데이터를 입력하여 대화형 이미지를 만들 수 있도록 기존 Quickview 구현에서 사용하는 동적 변수를 식별합니다.
 
-AEM Assets의 배너 이미지에 핫스팟을 추가할 때 SKU(Stock Keeping Unit; 각 고유 제품 또는 서비스에 대한 고유 식별자) 및 각 핫스팟에 대한 선택적 추가 변수. 이러한 핫스팟 변수는 나중에 Quickview 컨텐츠와 핫스팟을 일치시키는 데 사용됩니다.
+AEM Assets의 배너 이미지에 핫스팟을 추가할 때 SKU(Stock Keeping Unit;각 고유 제품 또는 서비스에 대한 고유 식별자) 및 각 핫스팟에 대한 선택적 추가 변수. 이러한 핫스팟 변수는 나중에 Quickview 컨텐츠와 핫스팟을 일치시키는 데 사용됩니다.
 
 핫스팟 데이터와 연결할 변수의 수와 유형을 적절히 식별해야 합니다. 배너 이미지에 추가된 각 핫스팟은 기존 백엔드 시스템에서 제품을 명확하게 식별할 수 있도록 충분한 정보를 전달해야 합니다.
 
@@ -223,7 +223,7 @@ AEM Assets과 함께 제공되는 Shopperable_Banner라는 기본 기본 **[!UIC
 
    See [Uploading assets](managing-assets-touch-ui.md#uploading-assets).
 
-   이제 이미지 배너에 핫스팟을 추가할 준비가 되었습니다. 아래의 다음 작업을 참조하십시오.
+   이제 이미지 배너에 핫스팟을 추가할 준비가 되었습니다.아래의 다음 작업을 참조하십시오.
 
 ## 이미지 배너에 핫스팟 추가 {#adding-hotspots-to-an-image-banner}
 
@@ -239,7 +239,7 @@ AEM Assets과 함께 제공되는 Shopperable_Banner라는 기본 기본 **[!UIC
 
 **[!UICONTROL 페이지의 오른쪽 위 모서리 근처에 있는 실행 취소]** 및 **[!UICONTROL 재실행]** 옵션은 현재 생성/편집 세션 동안 지원됩니다.
 
-인터랙티브한 이미지 작성을 완료하면 **[!UICONTROL 미리]** 보기를 사용하여 대화형 이미지가 고객에게 어떻게 표시되는지 확인할 수 있습니다.
+인터랙티브한 이미지 작성을 마치면 **[!UICONTROL 미리]** 보기를 사용하여 대화형 이미지가 고객에게 어떻게 표시되는지 확인할 수 있습니다.
 
 자세한 내용은 [(선택 사항) 대화형 이미지 미리 보기를 참조하십시오](#optional-previewing-interactive-images).
 
@@ -247,7 +247,7 @@ AEM Assets과 함께 제공되는 Shopperable_Banner라는 기본 기본 **[!UIC
 >
 >대화형 이미지 또는 회전 배너의 이미지에 핫스팟을 추가하면 핫스팟 정보는 대화형 이미지 또는 회전 메뉴 배너의 여부와 관계없이 동일한 메타데이터 위치(이미지의 위치를 기준으로)에 저장됩니다. 이 기능은 두 뷰어 모두에서 동일한 이미지를 정의된 핫스팟 데이터와 함께 쉽게 다시 사용할 수 있음을 의미합니다.
 
->그러나 회전판 배너는 핫스팟도 포함될 수 있는 이미지에서 이미지 맵을 지원합니다. 대화형 이미지는 그렇지 않습니다. 동일한 이미지를 사용하는 대화형 이미지 또는 회전 배너를 만들려는 경우 주의하십시오. 대신 동일한 이미지의 개별 사본을 사용하여 대화형 이미지 및 회전 배너를 만들 수 있습니다.
+>그러나 회전판 배너는 핫스팟도 포함될 수 있는 이미지에서 이미지 맵을 지원합니다.대화형 이미지는 그렇지 않습니다. 동일한 이미지를 사용하는 대화형 이미지 또는 회전 배너를 만들려는 경우 주의하십시오. 대신 동일한 이미지의 개별 사본을 사용하여 대화형 이미지 및 회전 배너를 만들 수 있습니다.
 >
 >회전판 [배너를 참조하십시오](carousel-banners.md).
 
@@ -260,16 +260,15 @@ AEM Assets과 함께 제공되는 Shopperable_Banner라는 기본 기본 **[!UIC
 1. 자산 보기에서 대화형으로 만들 이미지 배너로 이동합니다.
 1. 다음 중 하나를 수행하십시오.
 
-   * 이미지를 마우스로 가리킨 다음 **[!UICONTROL Select** (확인 표시 아이콘)를 누릅니다. 도구 모음에서 **[!UICONTROL 편집을 누릅니다**.
+   * 이미지를 마우스로 가리킨 다음 **[!UICONTROL 선택]** (확인 표시 아이콘)을 누릅니다. 도구 모음에서 **[!UICONTROL 편집을 누릅니다]**.
    * 이미지를 마우스로 가리킨 다음 **[!UICONTROL 추가 작업]** (세 점 아이콘) > **[!UICONTROL 편집을 누릅니다]**.
-   * 이미지를 눌러 세부 사항 보기 **[!UICONTROL 페이지에서 엽니다]** . 도구 모음에서 **[!UICONTROL 편집을 누릅니다**.
+   * 이미지를 눌러 세부 사항 보기 **[!UICONTROL 페이지에서 엽니다]** . 도구 모음에서 **[!UICONTROL 편집을 누릅니다]**.
 
 1. 페이지의 왼쪽 위 모서리 근처에 있는 핫스팟 **[!UICONTROL 추가]** (손가락 탭 아이콘)를 눌러 **[!UICONTROL 핫스팟 관리]** 페이지를 엽니다.
 1. 페이지의 왼쪽 위 모서리 근처에 있는 핫스팟을 **[!UICONTROL 누릅니다]**.
-1. a. [핫스팟 관리] 페이지의 왼쪽 **위** 모서리 근처에 있는 **[!UICONTROL 핫스팟을 탭합니다]**.
-b. 이미지에서 핫스팟을 표시할 위치를 누릅니다. 필요한 경우 핫스팟을 드래그하여 위치를 조정합니다.
-c. a 및 b 단계를 반복하여 필요에 따라 핫스팟을 추가합니다.
-d. (선택 사항) 핫스팟을 삭제하려면 이미지에서 핫스팟을 선택한 다음 핫스팟 제목 **[!UICONTROL 아래의 삭제]** (가비지 can 아이콘)를 **[!UICONTROL 누릅니다]** .
+1. a.[핫스팟 관리] 페이지의 왼쪽 **위** 모서리 근처에 있는 **[!UICONTROL 핫스팟을 탭합니다]**.
+b.이미지에서 핫스팟을 표시할 위치를 누릅니다. 필요한 경우 핫스팟을 드래그하여 위치를 조정합니다.
+c. a 및 b 단계를 반복하여 필요에 따라 핫스팟을 추가합니다.d.(선택 사항) 핫스팟을 삭제하려면 이미지에서 핫스팟을 선택한 다음 핫스팟 제목 **[!UICONTROL 아래의 삭제]** (가비지 can 아이콘)를 **[!UICONTROL 누릅니다]** .
 
 1. [ **[!UICONTROL 이름]** ] 텍스트 필드에 핫스팟 이름을 입력합니다. 이 이름은 **[!UICONTROL 선택한 핫스팟]** 드롭다운 목록에도 나타납니다.
 1. 다음 중 하나를 수행하십시오.
@@ -279,7 +278,7 @@ d. (선택 사항) 핫스팟을 삭제하려면 이미지에서 핫스팟을 선
       * AEM Sites 또는 전자 상거래 고객인 경우 **[!UICONTROL 제품 선택]** 아이콘(확대경)을 탭하여 제품 **[!UICONTROL 선택]** 페이지를 엽니다. 사용할 제품을 누른 다음 페이지 오른쪽 **[!UICONTROL 위]** 모서리에서 선택을 탭하여 **[!UICONTROL 핫스팟 관리]** 페이지로 돌아갑니다.
       * AEM Sites 또는 전자 상거래 고객이 *아닌* 경우
 
-         * 핫스팟 [변수 식별을 참조하십시오](#optional-identifying-hotspot-variables). 이러한 변수를 정의해야 합니다.
+         * 핫스팟 [변수 식별을 참조하십시오](#optional-identifying-hotspot-variables).이러한 변수를 정의해야 합니다.
          * 그런 다음 SKU 값을 직접 입력합니다. SKU **[!UICONTROL 값]** 텍스트 필드에 제공하는 각 개별 제품 또는 서비스에 대한 고유 식별자인 제품의 SKU(Stock Keeping Unit)를 입력합니다. 입력된 SKU 값은 시스템이 탭된 핫스팟을 특정 SKU의 Quickview와 연결할 수 있도록 빠른 보기 템플릿의 변수 부분을 자동으로 채웁니다.
          * (선택 사항) Quickview 내에 제품을 추가로 식별하기 위해 사용해야 하는 다른 변수가 있으면 일반 변수 **[!UICONTROL 추가를 누릅니다]**. 텍스트 필드에 추가 변수를 지정합니다. 예를 들어, 는 추가된 변수 `category=Mens` 입니다.
    * 하이퍼링크를 **누릅니다**.
@@ -370,7 +369,7 @@ AEM Sites 고객인 경우 대화형 미디어 구성 요소를 페이지로 드
 
 >[!NOTE]
 >
->이 시점에서 데모 웹 사이트의 쇼퍼블 인터랙티브 이미지에 있는 핫스팟은 표시 용도로만 사용됩니다. 이러한 지표는 아직 기존 빠른 보기와 통합되지 않았습니다.
+>이 시점에서 데모 웹 사이트의 쇼퍼블 인터랙티브 이미지에 있는 핫스팟은 표시 용도로만 사용됩니다.이러한 지표는 아직 기존 빠른 보기와 통합되지 않았습니다.
 
 반응형 환경을 위해 쇼퍼블 방식의 인터랙티브한 이미지에 자르기를 적용하려면 경로에 인터랙티브한 이미지 구성 속성 `ZoomView.iscommand` 을 포함시킬 수 있습니다. 여기서 `ZoomView` `iscommand` 는 호출할 구성 요소이고 사용자가 적용하는 자르기 이미지 제공 명령입니다.
 
@@ -408,7 +407,7 @@ ZoomView.iscommand [구성 속성을](https://docs.adobe.com/content/help/en/dyn
 * 핫스팟 데이터를 기반으로 빠른 보기 URL을 생성합니다.
 * 백엔드에서 Quickview를 로드하고 표시하기 위해 화면에 렌더링하는 프로세스를 트리거합니다.
 
-AEM Assets이 반환하는 포함 코드에는 이미 다음 강조 표시된 코드 조각에서와 같이 주석으로 처리된 바로 사용할 수 있는 이벤트 핸들러가 있습니다.
+AEM Assets에서 반환되는 내장 코드에는 이미 다음 강조 표시된 코드 조각에서와 같이 주석으로 처리된 즉시 사용할 수 있는 이벤트 핸들러가 있습니다.
 
 ```xml
         var s7interactiveimageviewer = new s7viewers.InteractiveImage({
@@ -438,7 +437,7 @@ Quickview URL을 구성하는 프로세스는 기본적으로 앞에서 설명�
 
 핫스팟 [변수 식별을 참조하십시오](#optional-identifying-hotspot-variables).
 
-이전 Quickview URL 예제를 사용하여 다음 예에서 각 케이스에서 Quickview URL이 구성되는 방식을 확인할 수 있습니다.
+이전 Quickview URL 예제를 사용하면 다음 예에서 각 케이스에서 Quickview URL이 구성되는 방식을 확인할 수 있습니다.
 
 <table> 
  <tbody> 
