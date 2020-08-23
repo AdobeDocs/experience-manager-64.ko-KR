@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ddb86546-d04b-4967-937b-50a19b0237a0
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 1%
@@ -123,9 +123,9 @@ false인 경우, [할당]은 획득 점수에 대해 배지가 부여되었음�
 
 점수 및 배지 데이터에 액세스하기 위한 설명은 [CRXDE Lite을 사용하여 UGC에 쉽게 액세스할 수 있기 때문에 JSRP를 사용합니다](../../help/sites-developing/developing-with-crxde-lite.md).
 
-**작성자의 JSRP**: 작성 환경에서 테스트하면 작성 환경에서만 표시되는 UGC가 만들어집니다.
+**작성자의 JSRP**:작성 환경에서 테스트하면 작성 환경에서만 표시되는 UGC가 만들어집니다.
 
-**게시**&#x200B;시 JSRP: 마찬가지로 게시 환경에서 테스트하는 경우 게시 인스턴스에 대한 관리 권한이 있는 CRXDE Lite에 액세스해야 합니다. 게시 인스턴스가 [프로덕션 모드](../../help/sites-administering/production-ready.md) (nosamplecontent runmode)에서 실행 중인 경우 CRXDE Lite을 [활성화해야 합니다](../../help/sites-administering/enabling-crxde-lite.md).
+**게시**&#x200B;시 JSRP:마찬가지로 게시 환경에서 테스트하는 경우 게시 인스턴스에 대한 관리 권한이 있는 CRXDE Lite에 액세스해야 합니다. 게시 인스턴스가 [프로덕션 모드](../../help/sites-administering/production-ready.md) (nosamplecontent runmode)에서 실행 중인 경우 CRXDE Lite을 [활성화해야 합니다](../../help/sites-administering/enabling-crxde-lite.md).
 
 JSRP에 대한 UGC의 기본 위치는 입니다 `/content/usergenerated/asi/jcr/`.
 
@@ -136,7 +136,7 @@ JSRP에 대한 UGC의 기본 위치는 입니다 `/content/usergenerated/asi/jcr
 * [com.adobe.cq.sosocial.scoring.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/scoring/api/package-summary.html)
 * [com.adobe.cq.sosocial.badging.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/badging/api/package-summary.html)
 
-설치된 릴리스에 대한 최신 [Javadocs](deploy-communities.md#LatestReleases) 는 Adobe 저장소의 개발자가 사용할 수 있습니다. 커뮤니티에 대한 [Maven 사용을 참조하십시오. Javadocs](maven.md#javadocs).
+설치된 릴리스에 대한 최신 [Javadocs](deploy-communities.md#LatestReleases) 는 Adobe 저장소의 개발자가 사용할 수 있습니다. 커뮤니티에 대한 [Maven 사용을 참조하십시오.Javadocs](maven.md#javadocs).
 
 **저장소의 UGC의 위치와 형식은 경고**&#x200B;없이 변경될 수 있습니다.
 
@@ -152,10 +152,12 @@ JSRP에 대한 UGC의 기본 위치는 입니다 `/content/usergenerated/asi/jcr
       * `/content/sites/engage/en/forum/jcr:content`
    * 점수 및 배지 속성 추가
 
-      * `scoringRules = [/etc/community/scoring/rules/comments-scoring,
-/etc/community/scoring/rules/forums-scoring]`
-      * `badgingRules =[/etc/community/badging/rules/comments-scoring,
-/etc/community/badging/rules/forums-scoring]`
+      * `scoringRules = [/etc/community/scoring/rules/comments-scoring,`
+
+         `/etc/community/scoring/rules/forums-scoring]`
+      * `badgingRules =[/etc/community/badging/rules/comments-scoring,`
+
+         `/etc/community/badging/rules/forums-scoring]`
    * 포럼 구성 요소 노드 찾기
 
       * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
@@ -215,7 +217,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 >
 >이 예는 다음과 같은 우수 사례를 따르지 않습니다.
 >
->* 점수 규칙 이름은 전체적으로 고유해야 합니다. 같은 이름으로 끝나서는 안 됩니다.\
+>* 점수 규칙 이름은 전체적으로 고유해야 합니다.같은 이름으로 끝나서는 안 됩니다.\
    >  하지 *않을* 작업의 예:\
    >  /etc/community/scoring/rules/site1/forums-scoring\
    >  /etc/community/scoring/rules/site2/forums-scoring
