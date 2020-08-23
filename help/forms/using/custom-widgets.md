@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5d860f05-3257-4cf7-93dd-77d226d59b39
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 사용자 정의 위젯을 모바일 Forms에 연결할 수 있습니다. 기존 jQuery 위젯을 확장하거나 모양 프레임워크를 사용하여 사용자 정의 위젯을 개발할 수 있습니다. XFA 엔진은 다양한 위젯을 사용합니다. 자세한 내용은 적응형 및 HTML5 양식의 [모양 프레임워크를](/help/forms/using/introduction-widgets.md) 참조하십시오.
 
-![기본 및 사용자 정의 위젯의 예](assets/custom-widgets.jpg)**:** *기본 및 사용자 정의 위젯의 예*
+![기본 및 사용자 정의 위젯의 예](assets/custom-widgets.jpg)**:***기본 및 사용자 정의 위젯의 예*
 
 ## HTML5 양식과 사용자 정의 위젯 통합 {#integrating-custom-widgets-with-html-forms}
 
@@ -46,7 +46,7 @@ HTML5 양식은 새로운 위젯을 만들기 위해 확장할 수 있는 위젯
   </tr> 
   <tr> 
    <td>getEventMap</td> 
-   <td>HTML 이벤트를 XFA 이벤트로 변환하는 맵을 반환합니다. <br /> {<br /> blur: XFA_EXIT_EVENT,<br /> }<br /> 이 예에서는 흐림 효과가 HTML 이벤트이고 XFA_EXIT_EVENT가 해당 XFA 이벤트임을 보여줍니다. </td> 
+   <td>HTML 이벤트를 XFA 이벤트로 변환하는 맵을 반환합니다. <br /> {<br /> blur:XFA_EXIT_EVENT,<br /> }<br /> 이 예에서는 흐림 효과가 HTML 이벤트이고 XFA_EXIT_EVENT가 해당 XFA 이벤트임을 보여줍니다. </td> 
   </tr> 
   <tr> 
    <td>getOptionsMap</td> 
@@ -89,17 +89,19 @@ window.formBridge.registerConfig("widgetConfig",
 
 위젯 구성은 키가 해당 필드에 사용할 위젯을 나타내는 필드 및 값을 식별하는 JSON 개체(키 값 쌍의 컬렉션)로 제공됩니다. 샘플 구성은 다음과 같습니다.
 
+```
 *{*
 
-*&quot;identifier1&quot; : &quot;customwidgetname&quot;,\
-&quot;identifier2&quot; : &quot;customwidgetname2&quot;,\
-..\
+*“identifier1” : “customwidgetname”,  
+“identifier2” : “customwidgetname2”,  
+..  
 }*
+```
 
 여기서 &quot;identifier&quot;는 특정 필드, 특정 유형의 필드 집합 또는 모든 필드를 나타내는 jQuery CSS 선택기입니다. 다음은 다양한 경우에 사용되는 식별자 값을 나열합니다.
 
 | 식별자 유형 | 식별자 | 설명 |
 |---|---|---|
 | 이름 필드 이름이 있는 특정 필드 | 식별자:&quot;div.fieldname&quot; | 이름이 &#39;fieldname&#39;인 모든 필드가 위젯을 사용하여 렌더링됩니다. |
-| &#39;type&#39; 유형의 모든 필드(여기서 type은 NumericField, DateField 등)입니다.: | 식별자: &quot;div.type&quot; | Timefield 및 DateTimeField의 경우 이러한 필드는 지원되지 않으므로 textfield입니다. |
-| 모든 필드 | 식별자: &quot;div.field&quot; |  |
+| &#39;type&#39; 유형의 모든 필드(여기서 type은 NumericField, DateField 등)입니다.: | 식별자:&quot;div.type&quot; | Timefield 및 DateTimeField의 경우 이러한 필드는 지원되지 않으므로 textfield입니다. |
+| 모든 필드 | 식별자:&quot;div.field&quot; |  |
