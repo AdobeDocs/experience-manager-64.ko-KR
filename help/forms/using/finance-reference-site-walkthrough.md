@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '9242'
+source-wordcount: '9231'
 ht-degree: 0%
 
 ---
@@ -312,8 +312,8 @@ AEM Forms 서버에서 Target을 구성하려면 AEM Forms [에서 Target 설정
 
 1. 양식을 선택하고 **자세히**&#x200B;를 클릭한 다음 **A/B 테스트 보고서를 클릭합니다**. 테스트를 시작했기 때문에 보고서에서 많은 데이터를 찾을 수 없습니다. 이제 몇 가지 시드 데이터를 제공하여 A/B 테스트 보고서가 어떻게 표시되는지 보겠습니다.
 
-1. CRXDE Lite을 열고 다음 파일을 백업합니다. /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
-1. 위에 언급된 파일 `onReportLoadSuccess` 의 함수 정의를 다음 파일의 함수 정의로 바꿉니다. /apps/we-finance/demo-artifacts/targetreport.js
+1. CRXDE Lite을 열고 다음 파일을 백업합니다./libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
+1. 위에 언급된 파일 `onReportLoadSuccess` 의 함수 정의를 다음 파일의 함수 정의로 바꿉니다./apps/we-finance/demo-artifacts/targetreport.js
 
    **참고:** 이러한 변경 사항은 데모 용도로만 적용됩니다. 이 절차를 완료한 후 파일 내용을 복원해야 합니다.
 
@@ -343,9 +343,9 @@ We.Finance 홈 모기지 시나리오는 다음과 같은 측면을 포함합니
 
 새라 로즈는 집을 사고 주택 담보 대출 계획을 찾을 계획이다. 그녀는 We.Finance 고객이므로 We.Finance 포털을 방문하여 주택 담보 제공을 탐색한다. 그녀는 대출 섹션으로 가서 포털에서 대출 계산기를 찾고 있다. 그녀는 세부사항을 작성하고 모기지 계획을 반환하는 내 모기지 계산 을 클릭합니다.
 
-![loans1](assets/loans1.png) ![loans2](assets/loans2.png)**그림:** *모기지 계산기*
+![loans1](assets/loans1.png) ![loans2](assets/loans2.png)**그림:***모기지 계산기*
 
-![대출3](assets/loans3.png)**그림:** *모기지 계산기 결과*
+![대출3](assets/loans3.png)**그림:***모기지 계산기 결과*
 
 #### 작동 방식 {#how-it-works-6}
 
@@ -466,7 +466,7 @@ https://&lt;hostname ***>:&lt;*** AuthorPort ******>/content/we-finance/global/e
 
 `https://[host]:[port]/content/forms/af/we-finance/mortgage-loan-welcome-kit.html`
 
-### 새라는 계정 정보를 받습니다 {#sarah-receives-an-account-statement}
+### 사라는 계정 정보를 받습니다. {#sarah-receives-an-account-statement}
 
 사라가 대출을 받고 할부로 시작하면서, 그녀는 월 계정 내역서가 포함된 We.Finance로부터 또 다른 이메일을 받는다.
 
@@ -479,7 +479,7 @@ Sarah가 이메일에서 명세서 보기를 클릭하여 대출 계정 명세�
 
 다음 이미지는 데스크탑에서 계정 문의 다른 부분을 보여 줍니다.
 
-![대출 거래 명세서](assets/mortgage-statement.png)
+![대출 계정 명세서](assets/mortgage-statement.png)
 
 자세한 내용은 응답형 표에 나열되며 명세서 내에서 일부 또는 전체 기한을 지불하는 옵션을 제공합니다.
 
@@ -562,8 +562,8 @@ AEM Forms 서버에서 Target을 구성하려면 AEM Forms [에서 Target 설정
 
 1. 양식을 선택하고 **자세히**&#x200B;를 클릭한 다음 **A/B 테스트 보고서를 클릭합니다**. 테스트를 시작했기 때문에 보고서에서 많은 데이터를 찾을 수 없습니다. 이제 몇 가지 시드 데이터를 제공하여 A/B 테스트 보고서가 어떻게 표시되는지 보겠습니다.
 
-1. CRXDE Lite을 열고 다음 파일을 백업합니다. /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
-1. 위에 언급된 파일의 `onReportLoadSuccess` 함수 정의를 다음 파일의 함수 정의로 바꿉니다. /apps/we-finance/demo-artifacts/targetreport.js
+1. CRXDE Lite을 열고 다음 파일을 백업합니다./libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
+1. 위에 언급된 파일의 `onReportLoadSuccess` 함수 정의를 다음 파일의 함수 정의로 바꿉니다./apps/we-finance/demo-artifacts/targetreport.js
 
    >[!NOTE]
    >
@@ -590,9 +590,9 @@ Microsoft Dynamics의 홈 저당 애플리케이션 연습에서는 We.Finance �
 
 새라 로즈는 집을 사고 주택 담보 대출 계획을 찾을 계획이다. 그녀는 We.Finance 고객이므로 We.Finance 포털을 방문하여 주택 담보 제공을 탐색한다. 그녀는 대출 섹션으로 가서 포털에서 대출 계산기를 찾고 있다. 그녀는 세부사항을 작성하고 모기지 계획을 반환하는 내 모기지 계산 을 클릭합니다.
 
-![loans1](assets/loans1.png) ![loans2](assets/loans2.png)**그림:** *모기지 계산기*
+![loans1](assets/loans1.png) ![loans2](assets/loans2.png)**그림:***모기지 계산기*
 
-![대출3](assets/loans3.png)**그림:** *모기지 계산기 결과*
+![대출3](assets/loans3.png)**그림:***모기지 계산기 결과*
 
 #### 작동 방식 {#how-it-works-12}
 
@@ -644,7 +644,7 @@ Sarah가 주택 담보 대출 계산기를 통해 수집한 정보를 바탕으�
 
 ### 관리자는 Microsoft Dynamics 인스턴스에서 제출된 데이터를 봅니다 {#the-administrator-views-the-submitted-data-in-the-microsoft-dynamics-instance}
 
-We.Finance receives receives the ndgure application by Sarah on the Microsoft Dynamics instance. 관리자는 리드 열의 항목을 눌러 사라 로즈에 대해 생성된 리드 레코드로 이동합니다.
+We.Finance receives receives the ndgure application by Sarah on the Microsoft Dynamics instance. 관리자는 리드 열의 항목을 눌러 사라 로즈에 대해 만든 리드 레코드로 이동합니다.
 
 ![msdynamicsrecord](assets/msdynamicsrecord.png)
 
@@ -730,7 +730,7 @@ We.Finance receives received the home insurance application by Sarah. 일은 글
 
 ![insurance-inbox-grios](assets/insurance-inbox-grios.png)
 
-글로리아가 사라의 집 보험 신청을 승인함에 따라, 프랭크 드 코스타스의 AEM 받은 편지함에서 하나의 작업이 만들어집니다. 프랭크는 그 일을 검토한다. 그는 사라를 위한 주택보험 계약을 준비하고, 그 계약을 그녀의 신청서에 첨부하고, 그것을 사라에게 계약 서명을 위해 보냈다. 아래에 에이전트 UI에 표시된 계약은 인터랙티브 커뮤니케이션의 인쇄 버전입니다.
+글로리아가 사라의 집 보험 신청을 승인함에 따라, 프랭크 드 코스타스의 AEM 받은 편지함에서 하나의 작업이 만들어집니다. 프랭크는 그 일을 검토한다. 그는 사라를 위한 주택보험 계약을 준비하고, 그 계약을 그녀의 신청서에 첨부하고, 그것을 사라에게 계약서명에 서명을 하도록 보냈다. 아래에 에이전트 UI에 표시된 계약은 인터랙티브 커뮤니케이션의 인쇄 버전입니다.
 
 ![보험 연락처](assets/insurance-contact-letter.png)
 
@@ -814,7 +814,7 @@ https://[publishHost]:[publishPort]/wefinance의 We.Finance 포털로 이동하�
 
 Blue Chip Growth Fund 대화형 커뮤니케이션은 상위 및 하위 패널을 사용하여 관련 정보를 다른 섹션으로 구분합니다. 상위 패널은 모든 하위 패널을 탭으로 구성합니다.
 
-상위 탭의 레이아웃은 모든 하위 패널을 탭으로 변환하기 위해 맨 위의 탭으로 설정됩니다. https:// authorHost에서 편집 모드에서 대화형 통신 패널을 검토할 수[있습니다].[ authorPort /editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html]에서 확인하십시오.
+상위 탭의 레이아웃은 모든 하위 패널을 탭으로 변환하기 위해 맨 위의 탭으로 설정됩니다. https:// authorHost에서 편집 모드에서 대화형 통신 패널을 검토할 수[있습니다].[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html.
 
 #### 직접 보기  {#see-it-yourself-16}
 
@@ -828,7 +828,7 @@ Blue Chip Growth Fund의 인터랙티브한 커뮤니케이션으로 이동합�
 
 #### 작동 방식 {#how-it-works-19}
 
-블루칩 성장 기금 설립설명서는 상호 소통이다. 웹 및 PDF 채널을 통해 인터랙티브한 커뮤니케이션은 AEM Workflows와 통합되어 이메일로 PDF 버전을 전송할 수 있습니다. https:// authorHost에서 워크플로우 모델을[검토할 수 있습니다].[ authorPort /editor.html/conf/global/settings/workflow/models/wealthmanagement.html]에서 확인하십시오.
+블루칩 성장 기금 설립설명서는 상호 소통이다. 웹 및 PDF 채널을 통해 인터랙티브한 커뮤니케이션은 AEM Workflows와 통합되어 이메일로 PDF 버전을 전송할 수 있습니다. https:// authorHost에서 워크플로우 모델을[검토할 수 있습니다].[ authorPort]/editor.html/conf/global/settings/workflow/models/wealthmanagement.html.
 
 ![자산 관리](assets/wealth-management.png)
 
@@ -847,7 +847,7 @@ We.Finance 자동 보험 신청 시나리오는 다음과 같은 모습을 포�
 
 Sarah Rose는 기존 We.Finance 고객이며 자동차 보험 정책을 구매했다. 지금이 그녀의 보험 증권 갱신의 시기이다. We.Finance 보험사 Conrad Sims가 Sarah에게 그녀의 정책 갱신에 대한 메모를 보냅니다. 미리 알림 이메일에는 정책 갱신 세부 사항이 포함된 PDF와 대화형 커뮤니케이션의 웹 버전 링크가 포함되어 있습니다. 인터랙티브한 커뮤니케이션은 모바일에 최적화된 반응형 디자인을 제공합니다. 모든 디바이스에서 인터랙티브한 커뮤니케이션을 열 수 있고 인터랙티브한 커뮤니케이션은 기본 디바이스의 화면 크기에 맞게 리플로우됩니다. 이메일에 첨부된 인터랙티브 커뮤니케이션의 PDF 버전은 오프라인에서 읽는 데 유용합니다.
 
-Sarah는 이메일에 제공된 지침을 따르고 그 과정을 성공적으로 다시 알려주었다. 다음 이미지는 자동 보험 응용 프로그램 연습의 워크플로우를 표시합니다.  ![자동 보험-응용 프로그램-연습](assets/auto-insurance-application-walkthrough.png)
+Sarah는 이메일에 제공된 지침을 따르고 그 과정을 성공적으로 다시 알려주었다. 다음 이미지는 자동 보험 응용 프로그램 연습의 워크플로우를 표시합니다. ![자동 보험-응용 프로그램-연습](assets/auto-insurance-application-walkthrough.png)
 
 ### Conrad가 We.Finance로부터 보험 증권 갱신 통신을 보냅니다. {#conrad-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
@@ -871,7 +871,7 @@ We. **Finance 자동 보험 대시보드에** Conrad Simms(csimms/password)로 �
 * 표준 정책은 프리미엄 정책에 비해 비용이 적게 든다.
 * 이 고급 정책에는 도난 방지 보상이 있고 표준 정책에는 스마트 라이드 보상이 있다
 
-두 정책 모두 같은 상호 작용을 사용한다. 정책 섹션의 내용은 정책 유형 조건에 따라 변경되거나 숨겨집니다. https:// authorHost:[]authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal
+두 정책 모두 같은 상호 작용을 사용한다. 정책 섹션의 내용은 정책 유형 조건에 따라 변경되거나 숨겨집니다. 귀하는 `https://[authorHost]: [authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal`
 
 **데이터 소스로 Microsoft Dynamics 사용**
 
@@ -912,7 +912,7 @@ PDF가 첨부된 이메일을 수신해야 합니다. PDF는 자동 보험 서�
 
 https://[publishServer]:[publishPort]/content/document.html?schema=fdm&amp;documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&amp;customerId=90001
 
-자동 보험 갱신에 대한 자세한 요약을 확인하고 페이지 하단에 있는 **지금** 갱신을 클릭합니다.
+자동 보험 갱신에 대한 자세한 요약을 확인하고 페이지 하단에서 **지금** 갱신을 클릭합니다.
 
 ### Sarah가 결제 페이지를 열고 지불을 완료하고 프로세스를 완료합니다. {#sarah-opens-the-payment-page-and-makes-the-payment-and-completes-the-process}
 
