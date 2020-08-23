@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: b6e88080-6ffc-4796-98c7-d7462bca454e
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 0%
@@ -78,7 +78,7 @@ AEM Forms 작업 공간에서 이러한 뷰는 `/lc/libs/ws/libs/ws/WSNextAdapte
 
 >[!NOTE]
 >
->SwfTaskForm/HtmlTaskForm 보기 `WSNextAdapter.swf` 의 내용이나 내용을 수정하는 것은 권장되지 않습니다.
+>SwfTaskForm/HtmlTaskForm 보기 `WSNextAdapter.swf` 의 내용 또는 내용을 수정하는 것은 권장되지 않습니다.
 
 ## 타사 애플리케이션(예: 통신 관리) {#third-party-applications-for-example-correspondence-management}
 
@@ -92,7 +92,7 @@ AEM Forms 작업 공간이 귀를 기울입니다. `window.global.postMessage([M
 
 **타사 애플리케이션 커뮤니케이션을 위한 AEM Forms 작업 영역**
 
-AEM Forms 작업 공간의 직접 작업 단추가 표시되면 `window.[External-App-Name].getMessage([Action])`이 호출됩니다. 여기서 [ `Action]` ]가 `routeActionMap`읽습니다. 타사 애플리케이션은 이 인터페이스를 수신한 다음 `postMessage ()` API를 통해 AEM Forms 작업 영역에 알려야 합니다.
+AEM Forms 작업 공간의 직접 작업 단추가 표시되면 이 단추를 불러서 `window.[External-App-Name].getMessage([Action])`에서 `[Action]` 읽을 수 `routeActionMap`있습니다. 타사 애플리케이션은 이 인터페이스를 수신한 다음 `postMessage ()` API를 통해 AEM Forms 작업 영역에 알려야 합니다.
 
 예를 들어, Flex 응용 프로그램은 이 통신 `ExternalInterface.addCallback('getMessage', listener)` 을 지원하도록 정의할 수 있습니다. 타사 응용 프로그램이 자체 단추를 통해 양식 제출을 처리하려는 경우, 이 리스너를 지정해야 `hideDirectActions = true() in the runtimeMap` 합니다. 따라서 이 구문은 선택 사항입니다.
 
