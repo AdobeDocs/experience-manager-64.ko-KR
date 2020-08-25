@@ -3,9 +3,9 @@ title: 메타데이터를 편집하거나 추가하는 방법
 description: 자산 메타데이터를 편집할 수 있는 다양한 방법으로 AEM Assets의 자산 메타데이터에 대해 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: e9f50a1ddb6a162737e6e83b976f96911b3246d6
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '483'
 ht-degree: 1%
 
 ---
@@ -54,3 +54,11 @@ AEM 내에서 고유한 네임스페이스를 추가할 수 있습니다. cq, jc
 
 1. 네임스페이스를 추가하려면 아래쪽에 있는 **[!UICONTROL 새로]** 만들기를 클릭하거나 탭합니다.
 1. XML 네임스페이스 규칙에서 사용자 지정 네임스페이스를 지정합니다(URI 형식으로 ID를 지정하고 ID에 연결된 접두어를 지정합니다). [저장]을 클릭하거나 **[!UICONTROL 탭합니다]**.
+
+## 팁 및 제한 사항 {#best-practices-limitations}
+
+* Touch-UI를 통한 메타데이터 업데이트는 네임스페이스의 메타데이터 속성을 `dc` 변경합니다. HTTP API를 통해 수행된 모든 업데이트는 네임스페이스의 메타데이터 속성을 `jcr` 변경합니다. HTTP API를 사용하여 메타데이터를 업데이트하는 [방법을 참조하십시오](/help/assets/mac-api-assets.md#update-asset-metadata).
+
+>[!MORELIKETHIS]
+>
+>* [자산에서의 메타데이터 및 그 필요 정보](metadata.md)
