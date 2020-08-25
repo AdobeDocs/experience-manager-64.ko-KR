@@ -6,9 +6,9 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 translation-type: tm+mt
-source-git-commit: 38d3a204e3ef038ef4f848e12b9fc73f127ec488
+source-git-commit: 2a24d7b9232f39d47d79d995251a14beb0c0f666
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '795'
 ht-degree: 1%
 
 ---
@@ -58,10 +58,8 @@ AEM Assets 구성 외에도 큰 자산을 업로드하려면 다음 구성을 �
 
    ![chlimage_1-203](assets/chlimage_1-203.png)
 
-1. 브라우저를 새로 고칩니다. 오버레이 노드가 `/jcr_root/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` 선택되었습니다.
-1. 속성 **[!UICONTROL 탭에서]** 적절한 값을 바이트 단위로 입력하여 원하는 크기로 크기 제한을 늘립니다. 예를 들어 크기 제한을 30GB로 늘리려면 다음 값을 입력합니다.
-
-   `{sizeLimit : "32212254720"}`
+1. 브라우저를 새로 고칩니다. 오버레이 노드가 `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` 선택되었습니다.
+1. 속성 **[!UICONTROL 탭에서]** 적절한 값을 바이트 단위로 입력하여 원하는 크기로 크기 제한을 늘립니다. 예를 들어 크기 제한을 30GB로 늘리려면 `32212254720` 값을 입력합니다.
 
 1. 도구 모음에서 모두 **[!UICONTROL 저장을 누릅니다]**.
 1. AEM에서 **[!UICONTROL 도구 > 작업 > 웹 콘솔을 누릅니다]**.
