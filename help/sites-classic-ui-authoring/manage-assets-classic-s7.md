@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 191c365e924fd3974308c075369a3f9d8810e6b7
 workflow-type: tm+mt
 source-wordcount: '3428'
 ht-degree: 38%
@@ -59,7 +59,7 @@ AEM에서 비디오 구성 요소를 사용하는 방법에 대한 자세한 내
 
 1. AEM 클래식 UI에서 **[!UICONTROL 디지털 자산]**&#x200B;을 클릭하여 디지털 자산 관리자에 액세스합니다.
 
-1. Select the asset (or assets) or folder from within the target folder you want to publish to Dynamic Media Classic and right-click and select **[!UICONTROL Publish to Dynamic Media Classic]**. 또는 ** **[!UICONTROL 도구 메뉴]** 에서 Dynamic Media Classic에[!UICONTROL 게시를 선택할 수] 있습니다.
+1. Select the asset (or assets) or folder from within the target folder you want to publish to Dynamic Media Classic and right-click and select **[!UICONTROL Publish to Dynamic Media Classic]**. Alternatively, you can select **[!UICONTROL Publish to Dynamic Media Classic]** from the **[!UICONTROL Tools]** menu.
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
