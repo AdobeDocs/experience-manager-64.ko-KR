@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 translation-type: tm+mt
-source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
+source-git-commit: e9701237c8d5faf79f08f5cc3d1cd41540d06bf5
 workflow-type: tm+mt
 source-wordcount: '2507'
 ht-degree: 1%
@@ -28,18 +28,18 @@ AEM Forms 앱을 사용하면 서버를 기반으로 모바일 디바이스에�
 
 AEM Forms 앱은 iOS, Android, Windows 디바이스에서 지원됩니다. Google Play, App Store 및 Windows Store의 Windows에서 Android용 AEM Forms 앱을 설치할 수 있습니다.
 
-    [ ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
+    [![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
     
-    [ ![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
+    [![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
     
-    [ ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
+    [![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
 iOS, Android 또는 Windows 장치에 앱을 설치, 사용자 정의 및 배포하려면 AEM Forms 앱 [사용자 정의, 빌드 및 배포를 참조하십시오](#customize-build-distribute).
 
 ## 전제 조건 {#prerequisites}
 
 AEM Forms 앱에는 AEM Forms 서버가 필요합니다. 사용자는 AEM Forms에서 만든 양식을 렌더링할 수 있습니다.\
-서버, 채우기, 초안으로 저장 및 제출 이 앱은 서버에 연결하여 활성화된 양식을 해당 앱에서 가져옵니다. AEM Forms 앱은 서버와 동기화되고 앱이 로드되면 오프라인으로 작업할 수 있습니다. 앱이 오프라인 상태인 경우 데이터가 장치에 저장되고 앱이 온라인 상태일 때 데이터가 서버와 동기화됩니다.
+서버, 채우기, 초안으로 저장 및 제출 이 앱은 서버에 연결하여 활성화된 양식을 해당 앱에서 가져옵니다. AEM Forms 앱은 서버와 동기화되며 앱이 로드되면 사용자는 오프라인에서 작업할 수 있습니다. 앱이 오프라인 상태인 경우 데이터가 장치에 저장되고 앱이 온라인 상태일 때 데이터가 서버와 동기화됩니다.
 
 ### AEM Forms Workflow를 사용하는 서버 포함 AEM Forms 앱 {#aem-forms-app-with-servers-using-aem-forms-workflow}
 
@@ -125,7 +125,7 @@ AEM Forms 작업 과정이 없는 AEM Forms 서버를 사용하면 앱에서 동
 
 AEM Forms [앱에서 자동 저장 사용을 참조하십시오](/help/forms/using/autosave-data-app.md).
 
-## AEM 받은 편지함 및 AEM Forms 앱 기능 간의 차이점 {#differences-between-aem-inbox-and-aem-forms-app-features}
+## AEM 받은 편지함과 AEM Forms 앱 기능 간의 차이점 {#differences-between-aem-inbox-and-aem-forms-app-features}
 
 Forms 중심의 워크플로우를 실행하는 중요한 두 가지 방법 중 하나는 [AEM 받은 편지함](/help/forms/using/manage-applications-inbox.md) 및 AEM Forms 앱을 사용하는 것입니다. 하지만 AEM 받은 편지함과 AEM Forms 앱의 기능은 다르다. AEM 받은 편지함은 [Forms 중심 워크플로우에서만](/help/forms/using/aem-forms-workflow.md) 작동하며 AEM Forms 앱은 Forms 중심 워크플로우뿐만 아니라 프로세스 관리에서도 작동합니다. AEM 받은 편지함과 AEM Forms 앱 기능 간의 차이점에 대한 자세한 내용은 OSGi 및 AEM Forms JEE 워크플로우에서 양식 중심 AEM [워크플로우의 작업 및 기능을 참조하십시오](/help/forms/using/capabilities-osgi-jee-workflows.md).
 
@@ -167,11 +167,11 @@ AEM Forms 앱은 조직별 요구 사항에 맞게 손쉽게 변경할 수 있�
 
 다음을 위해 앱을 사용자 정의할 수 있습니다.
 
-**브랜딩**: AEM Forms 앱의 앱 아이콘, 앱 이름, 실행 이미지 및 페이지를 변경합니다. 텍스트를 변경하여 특정 지역의 앱을 지역화할 수도 있습니다. AEM Forms 앱 브랜딩에 대한 자세한 내용은 [브랜딩 사용자 지정을 참조하십시오](/help/forms/using/branding-customization.md).
+**브랜딩**:AEM Forms 앱의 앱 아이콘, 앱 이름, 실행 이미지 및 페이지를 변경합니다. 텍스트를 변경하여 특정 지역의 앱을 지역화할 수도 있습니다. AEM Forms 앱 브랜딩에 대한 자세한 내용은 [브랜딩 사용자 지정을 참조하십시오](/help/forms/using/branding-customization.md).
 
-**테마**: AEM Forms 앱 유저 인터페이스에서 색상, 글꼴 및 간격과 같은 스타일을 변경할 수 있습니다. 자세한 내용은 [테마 맞춤화를 참조하십시오](/help/forms/using/theme-customization.md).
+**테마**:AEM Forms 앱 유저 인터페이스에서 색상, 글꼴 및 간격과 같은 스타일을 변경할 수 있습니다. 자세한 내용은 [테마 맞춤화를 참조하십시오](/help/forms/using/theme-customization.md).
 
-**제스처**: AEM Forms 앱 사용자 인터페이스에서 오른쪽으로 밀거나 왼쪽으로 밀기와 같은 제스처를 변경합니다. 자세한 내용은 제스처 사용자 [지정을 참조하십시오](/help/forms/using/gesture-customization.md).
+**제스처**:AEM Forms 앱 사용자 인터페이스에서 오른쪽으로 밀거나 왼쪽으로 밀기와 같은 제스처를 변경합니다. 자세한 내용은 제스처 사용자 [지정을 참조하십시오](/help/forms/using/gesture-customization.md).
 
 맞춤화를 위한 AEM Forms 앱 프로젝트 설정에 대한 자세한 내용은 다음을 참조하십시오.
 
