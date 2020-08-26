@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
 translation-type: tm+mt
-source-git-commit: 730a874376c21d5d137223e35662b42e722049cf
+source-git-commit: 269facfb6351b0b7c73e963ac7c5dc0b57c78a3e
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Node node = resource.adaptTo(Node.class);
 
 * 구현별 개체를 가져옵니다.
 
-   예를 들어 일반 [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) 인터페이스의 JCR 기반 구현은 기본 JCR에 대한 액세스 권한을 제공합니다 [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).&#39;
+   예를 들어 일반 [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) 인터페이스의 JCR 기반 구현은 기본 JCR에 대한 액세스를 제공합니다 [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 * 내부 컨텍스트 개체를 전달해야 하는 개체의 바로 가기 만들기
 
@@ -52,7 +52,7 @@ Node node = resource.adaptTo(Node.class);
 
 * 구현에서 대상 유형을 지원하지 않음
 * 이 케이스를 처리하는 어댑터 팩터리가 활성 상태가 아닙니다(예: 서비스 참조가 없기 때문에)
-* 내부 조건이 실패했습니다.
+* 내부 조건 실패
 * 서비스를 사용할 수 없습니다.
 
 Null 케이스를 정상적으로 처리하는 것이 중요합니다. jsp 렌더링의 경우 jsp가 실패할 경우 빈 컨텐츠가 발생할 수 있습니다.
@@ -63,14 +63,14 @@ Null 케이스를 정상적으로 처리하는 것이 중요합니다. jsp 렌�
 
 이 캐싱은 모든 `AdapterFactory` 기반 사례에 대해 수행됩니다.
 
-그러나 일반 규칙이 없습니다. 개체가 새 인스턴스나 기존 인스턴스일 수 있습니다. 이는 두 가지 행동에 의존할 수 없음을 의미합니다. 따라서 특히 내부에서 이 시나리오에서 개체 `AdapterFactory`가 다시 사용된다는 것이 중요합니다.
+그러나 일반 규칙이 없습니다. 개체가 새 인스턴스나 기존 인스턴스일 수 있습니다. 이는 두 행동 중 하나에 의존할 수 없음을 의미합니다. 따라서 특히 내부에서 이 시나리오에서 개체 `AdapterFactory`가 다시 사용된다는 것이 중요합니다.
 
 ### 작동 방식 {#how-it-works}
 
 다음과 같은 다양한 방법으로 구현할 `Adaptable.adaptTo()` 수 있습니다.
 
-* 목적 자체로는; 메서드 자체를 구현하고 특정 개체에 매핑을 수행합니다.
-* 임의의 개체를 매핑할 수 [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)&#39;
+* 목적 자체로는;메서드 자체를 구현하고 특정 개체에 매핑을 수행합니다.
+* 임의의 객체를 매핑할 수 [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)&#39;
 
    개체는 여전히 `Adaptable` 인터페이스를 구현해야 하며 [`SlingAdaptable`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/adapter/SlingAdaptable.html) (이 경우 `adaptTo` 호출을 중앙 어댑터 관리자에게 전달) 확장해야 합니다.
 
@@ -84,7 +84,7 @@ Null 케이스를 정상적으로 처리하는 것이 중요합니다. jsp 렌�
 
 ### 슬링 {#sling}
 
-[**리소스는&#x200B;**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html)다음 항목에 맞게 조정됩니다.
+[**리소스는**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) 다음 항목에 맞게 조정됩니다.
 
 <table> 
  <tbody> 
@@ -114,13 +114,13 @@ Null 케이스를 정상적으로 처리하는 것이 중요합니다. jsp 렌�
   </tr> 
   <tr> 
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/PersistableValueMap.html">PersisstableValueMap</a></td> 
-   <td>JCR 노드 기반 리소스이고 해당 노드에서 속성을 수정할 수 있는 권한이 사용자에게 있는 경우<br /> 참고: 여러 지속 맵은 해당 값을 공유하지 않습니다.</td> 
+   <td>JCR 노드 기반 리소스이고 해당 노드에서 속성을 수정할 수 있는 권한이 사용자에게 있는 경우<br /> 참고:여러 지속 맵은 해당 값을 공유하지 않습니다.</td> 
   </tr> 
   <tr> 
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td> 
    <td>"파일"의 바이너리 컨텐츠를 반환합니다.<code>nt:resource</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>AuthorizableResourceProvider</code><code>org.apache.sling.jackrabbit.usermanager</code><code>/system/userManager</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>cq:Page</code><code>cq:PseudoPage</code></td></tr><tr><td></td><td><code>cq:Component</code></td></tr><tr><td></td><td><code>cq:Page</code></td></tr><tr><td></td><td><code>cq:Template</code></td></tr><tr><td></td><td><code>cq:Page</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>cq:Tag</code></td></tr><tr><td></td><td><code>cq:Preferences</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>cq:ContentSyncConfig</code></td></tr><tr><td></td><td><code>cq:ContentSyncConfig</code></td></tr></tbody></table>
 
-[**리소스 확인자&#x200B;**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceResolver.html):
+[**리소스 확인자**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceResolver.html) :
 
 <table> 
  <tbody> 
@@ -187,11 +187,11 @@ Null 케이스를 정상적으로 처리하는 것이 중요합니다. jsp 렌�
  </tbody> 
 </table>
 
-[**SlingHttpServletRequest는&#x200B;**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletRequest.html)다음 항목에 맞게 조정됩니다.
+[**SlingHttpServletRequest는**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletRequest.html) 다음 항목에 맞게 조정됩니다.
 
 타겟이 아직 없지만 Adaptable을 구현하며 사용자 지정 AdapterFactory에서 소스로 사용할 수 있습니다.
 
-[**SlingHttpServletResponse는&#x200B;**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletResponse.html)다음 항목에 적용됩니다.
+[**SlingHttpServletResponse는**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletResponse.html) 다음 항목에 적용됩니다.
 
 <table> 
  <tbody> 
@@ -204,7 +204,7 @@ Null 케이스를 정상적으로 처리하는 것이 중요합니다. jsp 렌�
 
 #### WCM {#wcm}
 
-[**페이지&#x200B;**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)적응형:
+[**페이지**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) 적응형:
 
 <table> 
  <tbody> 
@@ -227,7 +227,7 @@ Null 케이스를 정상적으로 처리하는 것이 중요합니다. jsp 렌�
  </tbody> 
 </table>
 
-[**구성 요소&#x200B;**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html)어댑터:
+[**구성 요소**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html) 어댑터:
 
 | [리소스](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | 구성 요소의 리소스입니다. |
 |---|---|
@@ -235,7 +235,7 @@ Null 케이스를 정상적으로 처리하는 것이 중요합니다. jsp 렌�
 | [노드](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | 구성 요소의 노드입니다. |
 | ... | 구성 요소의 리소스를 조정할 수 있는 모든 것 |
 
-[**템플릿&#x200B;**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html)적용 대상:
+[**템플릿**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html) 적용 대상:
 
 <table> 
  <tbody> 
@@ -260,7 +260,7 @@ Null 케이스를 정상적으로 처리하는 것이 중요합니다. jsp 렌�
 
 #### 보안 {#security}
 
-[**인증 가능&#x200B;**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Authorizable.html),[**사용자**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/User.html) 및 [**그룹&#x200B;**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Group.html)은다음 항목에맞게 적용됩니다.
+[**인증 가능**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Authorizable.html), [**사용자**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/User.html) 및 [**그룹**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Group.html) 은다음 항목에맞게 적용됩니다.
 
 | [노드](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | 사용자/그룹 홈 노드를 반환합니다. |
 |---|---|
@@ -268,7 +268,7 @@ Null 케이스를 정상적으로 처리하는 것이 중요합니다. jsp 렌�
 
 #### DAM {#dam}
 
-[**자산이&#x200B;**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Asset.html)다음 항목에 맞게 조정됩니다.
+[**자산이**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Asset.html) 다음 항목에 맞게 조정됩니다.
 
 | [리소스](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | 자산의 리소스. |
 |---|---|
@@ -277,7 +277,7 @@ Null 케이스를 정상적으로 처리하는 것이 중요합니다. jsp 렌�
 
 #### 태깅 {#tagging}
 
-[**태그&#x200B;**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/Tag.html)어댑터:
+[**태그**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/Tag.html) 어댑터:
 
 | [리소스](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | 태그의 리소스. |
 |---|---|
