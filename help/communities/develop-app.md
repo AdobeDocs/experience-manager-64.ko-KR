@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+source-git-commit: babfbd7e864eb15c0b06b114fea4cef6db2a6a07
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 3%
+source-wordcount: '611'
+ht-degree: 4%
 
 ---
 
@@ -33,9 +33,10 @@ ht-degree: 3%
 CRXDE Lite 사용:
 
 <!--Resolve steps below-->
-    * 이름: &#39;sling:resourceSuperType&#39;
-    * 유형: &#39;문자열&#39;
-    * 값: &#39;foundation/components/page&#39;
+
+* 이름: `sling:resourceSuperType`
+* 유형: `String`
+* 값: `foundation/components/page`
 
 1. 녹색 **[!UICONTROL [+추가]클릭]**
 1. 모두 **[!UICONTROL 저장을 클릭합니다.]**
