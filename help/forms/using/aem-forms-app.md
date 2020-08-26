@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 translation-type: tm+mt
-source-git-commit: e9701237c8d5faf79f08f5cc3d1cd41540d06bf5
+source-git-commit: 3bd6ed70dd86df51042bdbde3ea3a60b3a91ab51
 workflow-type: tm+mt
-source-wordcount: '2507'
+source-wordcount: '2499'
 ht-degree: 1%
 
 ---
@@ -28,11 +28,11 @@ AEM Forms 앱을 사용하면 서버를 기반으로 모바일 디바이스에�
 
 AEM Forms 앱은 iOS, Android, Windows 디바이스에서 지원됩니다. Google Play, App Store 및 Windows Store의 Windows에서 Android용 AEM Forms 앱을 설치할 수 있습니다.
 
-    [![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
-    
-    [![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
-    
-    [![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
+[![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
+
+[![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
+
+[![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
 iOS, Android 또는 Windows 장치에 앱을 설치, 사용자 정의 및 배포하려면 AEM Forms 앱 [사용자 정의, 빌드 및 배포를 참조하십시오](#customize-build-distribute).
 
