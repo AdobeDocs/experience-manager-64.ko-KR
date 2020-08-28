@@ -10,7 +10,7 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
 translation-type: tm+mt
-source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
+source-git-commit: 5ba23738118d7944026f405110e25b6a7f90866b
 workflow-type: tm+mt
 source-wordcount: '1509'
 ht-degree: 98%
@@ -228,7 +228,7 @@ ht-degree: 98%
 
 ## 조각의 메타데이터(속성) 보기 및 편집 {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
-[!UICONTROL 메타데이터](content-fragments-metadata.md) 탭을 사용하여 조각의 속성을 보고 편집할 수 있습니다.
+[[!UICONTROL 메타데이터]](content-fragments-metadata.md) 탭을 사용하여 조각의 속성을 보고 편집할 수 있습니다.
 
 ## 컨텐츠 조각에 대한 타임라인 {#timeline-for-content-fragments}
 
@@ -237,8 +237,8 @@ ht-degree: 98%
 * 버전, 댓글 및 주석에 대한 정보 보기
 * 버전에 대한 작업
 
-   * **[!UICONTROL 이 버전으로 되돌리기](#reverting-to-a-version)**(기존 조각을 선택한 후 특정 버전을 선택합니다.)
-   * **[!UICONTROL 현재 항목에 비교](#comparing-fragment-versions)**(기존 조각을 선택한 후 특정 버전을 선택합니다.)
+   * **[[!UICONTROL 이 버전으로 되돌리기]](#reverting-to-a-version)**(기존 조각을 선택한 후 특정 버전을 선택합니다.)
+   * **[[!UICONTROL 현재 항목에 비교]](#comparing-fragment-versions)**(기존 조각을 선택한 후 특정 버전을 선택합니다.)
    * **[!UICONTROL 레이블]** 및/또는 **[!UICONTROL 댓글]** 추가(기존 조각을 선택한 후 특정 버전을 선택합니다.)
    * **[!UICONTROL 다른 버전으로 저장]**(기존 조각을 선택한 후 타임라인 하단의 위쪽 화살표를 선택합니다.)
 
@@ -268,7 +268,7 @@ ht-degree: 98%
 
 ## 조각 버전 비교 {#comparing-fragment-versions}
 
-**[!UICONTROL 현재 항목에 비교]** 작업은 특정 버전을 선택한 후 [!UICONTROL 타임라인](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments)에서 사용할 수 있습니다.
+**[!UICONTROL 현재 항목에 비교]** 작업은 특정 버전을 선택한 후 [[!UICONTROL 타임라인]에서 사용할 수 있습니다.](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments)
 
 이 옵션을 선택하면 다음 항목이 열립니다.
 
@@ -298,7 +298,7 @@ ht-degree: 98%
 
 조각을 특정 버전으로 되돌릴 수 있습니다.
 
-* [!UICONTROL 타임라인](content-fragments-managing.md#timeline-for-content-fragments)에서 바로 되돌릴 수 있습니다.
+* [[!UICONTROL 타임라인]](content-fragments-managing.md#timeline-for-content-fragments)에서 바로 되돌릴 수 있습니다.
 
    필요한 버전을 선택한 후 **[!UICONTROL 이 버전으로 되돌리기]** 작업을 선택합니다.
 
