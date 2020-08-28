@@ -10,7 +10,7 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1fe58af0-3005-46fc-8717-5d32557947ed
 translation-type: tm+mt
-source-git-commit: 6f6952686446359485f180050219a12db9d3969a
+source-git-commit: 5ba23738118d7944026f405110e25b6a7f90866b
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 82%
@@ -189,7 +189,7 @@ ht-degree: 82%
 
    ![xf-authoring-04](assets/xf-authoring-04.png)
 
-1. 구성 요소 도구 모음에서 **[!UICONTROL 구성](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)**을 선택합니다.
+1. 구성 요소 도구 모음에서 **[[!UICONTROL 구성]](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)**&#x200B;을 선택합니다.
 1. **[!UICONTROL 자산]**&#x200B;을 추가하고 필요에 따라 **[!UICONTROL 속성]**&#x200B;을 정의합니다.
 1. **[!UICONTROL 완료]**(틱 아이콘)로 정의를 확인합니다.
 1. 필요에 따라 구성 요소를 더 추가합니다.
