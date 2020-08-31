@@ -5,9 +5,9 @@ audience: admin-user
 user-guide-title: AEM 6.4 관리 사용 안내서
 user-guide-description: Learn about administering AEM.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '614'
 ht-degree: 16%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 16%
 + [사용자 안내서 관리 개요](home.md)
 + 사이트 기능 {#introduction}
    + [웹 사이트 관리](msm-and-translation.md)
-   + [컨텐츠 재활용: 다중 사이트 관리자 및 Live Copy](msm.md)
+   + [컨텐츠 재활용:다중 사이트 관리자 및 Live Copy](msm.md)
    + [Live Copy 개요 콘솔](msm-livecopy-overview.md)
    + [Live Copy 동기화 구성](msm-sync.md)
    + [Live Copy 생성 및 동기화](msm-livecopy.md)
@@ -150,7 +150,6 @@ ht-degree: 16%
    + [Adobe Search &amp; Promote과 통합](search-and-promote.md)
    + [솔루션 통합](integration.md)
    + [경험 조각과 Target 통합](experience-fragments-target.md)
-   + [이메일 템플릿 우수 사례](best-practices-for-email-templates.md)
 + 우수 사례 {#bestpractices}
    + [우수 사례](administer-best-practices.md)
    + [번역 우수 사례](tc-bp.md)
