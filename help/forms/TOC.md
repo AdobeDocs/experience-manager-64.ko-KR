@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: AEM 6.4 Forms 사용 안내서
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '3715'
+source-wordcount: '3711'
 ht-degree: 1%
 
 ---
@@ -486,7 +486,7 @@ ht-degree: 1%
       + [정책 집합 만들기 및 관리](/help/forms/using/admin-help/creating-policy-sets.md)
       + [사용자로 등록](/help/forms/using/admin-help/registering-as-a-user.md)
    + Forms 구성 {#configure-forms}
-      + [양식 구성에 대한 기본 사항](/help/forms/using/admin-help/overview-7.md)
+      + [양식 구성 기본 사항](/help/forms/using/admin-help/overview-7.md)
       + [국제화 옵션 설정](/help/forms/using/admin-help/setting-internationalization-options.md)
       + [Forms에 대한 캐싱 구성](/help/forms/using/admin-help/configuring-caching-forms.md)
       + [XCI 구성 옵션 지정](/help/forms/using/admin-help/specifying-xci-configuration-options.md)
@@ -504,7 +504,6 @@ ht-degree: 1%
       + [글꼴을 사용할 수 있도록 설정](/help/forms/using/admin-help/make-fonts-available.md)
       + [포함할 글꼴 지정](/help/forms/using/admin-help/specify-fonts-embed.md)
       + [보안 설정 지정](/help/forms/using/admin-help/specify-security-settings.md)
-      + [문자 집합 변경](/help/forms/using/admin-help/change-character-set.md)
    + 양식 워크플로우 구성{#configure-forms-workflow}
       + [관리 및 프로세스 용어 정보](/help/forms/using/admin-help/administration-process-terminology.md)
       + [프로세스 관리](/help/forms/using/admin-help/processes.md)
