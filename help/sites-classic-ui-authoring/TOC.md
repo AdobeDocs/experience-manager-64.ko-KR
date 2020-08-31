@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: AEM 6.4 클래식 UI 작성 사용 안내서
 user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 95%
+source-wordcount: '298'
+ht-degree: 94%
 
 ---
 
@@ -67,10 +67,8 @@ ht-degree: 95%
    + [마케팅 캠페인 관리자 작업](classic-personalization-campaigns-mktg-manager.md)
    + [이메일 마케팅](classic-personalization-campaigns-email.md)
    + [바운스된 이메일 추적](classic-personalization-campaigns-email-tracking-bounces.md)
-   + [티저 및 전략](classic-personalization-campaigns-teasers-strategy.md)
    + [캠페인 설정](classic-personalization-campaigns-setting-up-your.md)
    + [이메일 서비스 공급자에 이메일 게시](classic-personalization-campaigns-email-newsletters.md)
-   + [마케팅 캠페인 관리자 작업](classic-personalization-campaigns-mktg-manager.md)
    + [효과적인 뉴스레터 랜딩 페이지 만들기](classic-personalization-campaigns-email-landingpage.md)
    + [구독 관리](classic-personalization-campaigns-email-subscriptions.md)
 + Adobe Campaign {#campaign}
