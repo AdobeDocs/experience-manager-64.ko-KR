@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: AEM 6.4 릴리스 노트
 user-guide-description: Learn about the latest new features in AEM 6.4 in the release notes.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 610e9a54adad3abdfecb8b2c4da67d677f75175e
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 66%
+source-wordcount: '73'
+ht-degree: 61%
 
 ---
 
@@ -22,6 +22,7 @@ ht-degree: 66%
 + [AEM Sites 릴리스 노트](sites.md)
 + [AEM Assets 릴리스 노트](assets.md)
 + [AEM Forms 릴리스 노트](forms.md)
++ [AEM Forms JEE 패치 설치 프로그램](jee-patch-installer-64.md)
 + [AEM Communities 릴리스 노트](communities-release-notes.md)
 + [AEM 3D 릴리스 노트](aem3d-release-notes.md)
 + [더 이상 사용되지 않는 및 제거된 기능](deprecated-removed-features.md)
