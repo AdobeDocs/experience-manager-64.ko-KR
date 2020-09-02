@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: AEM 6.4 배포 안내서
 user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.4, including our Adobe Managed Services cloud deployment.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: b9a270eb29e92e98a54b596ba745ef71f73a7b55
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '332'
 ht-degree: 13%
 
 ---
@@ -68,6 +68,7 @@ ht-degree: 13%
    + [Pattern Detector를 사용한 업그레이드 복잡성 평가](pattern-detector.md)
    + [AEM 6.4의 이전 버전과의 호환성](backward-compatibility.md)
    + [업그레이드 절차](upgrade-procedure.md)
+   + [오프라인 재색인화를 사용하여 업그레이드 중 다운타임 감소](upgrade-offline-reindexing.md)
    + [업그레이드 수행](in-place-upgrade.md)
    + [레이지 컨텐츠 마이그레이션](lazy-content-migration.md)
    + [CRX2Oak 마이그레이션 도구 사용](using-crx2oak.md)
@@ -83,7 +84,7 @@ ht-degree: 13%
    + [AEM 6.4의 공용 저장소 재구성](all-repository-restructuring-in-aem-6-4.md)
    + [AEM 6.4의 사이트 저장소 재구성](sites-repository-restructuring-in-aem-6-4.md)
    + [AEM 6.4의 자산 저장소 재구성](assets-repository-restructuring-in-aem-6-4.md)
-   + [AEM 6.4의 Dynamic Media Repository 구조조정](dynamicmedia-repository-restructuring-in-aem-6-4.md)
+   + [AEM 6.4의 Dynamic Media Repository 재구성](dynamicmedia-repository-restructuring-in-aem-6-4.md)
    + [AEM 6.4의 Forms 리포지토리 구조조정](forms-repository-restructuring-in-aem-6-4.md)
    + [AEM 6.4의 전자 상거래 저장소 구조 조정](ecommerce-repository-restructuring-in-aem-6-4.md)
    + [Repository Recommendations for AEM Communities 6.4](communities-repository-restructuring-in-aem-6-4.md)
