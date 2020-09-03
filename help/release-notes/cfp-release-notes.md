@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.4 누적 수정 팩 관련 릴리스 노
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f1a5f720ade66e5e8f909264563fa7ad1149b15f
+source-git-commit: 5fefc81e68e64bcaa8df1d9648c4266367a92129
 workflow-type: tm+mt
-source-wordcount: '3315'
+source-wordcount: '3331'
 ht-degree: 26%
 
 ---
@@ -158,6 +158,8 @@ Adobe Experience Manager 6.4.8.2에서는 다음 문제에 대한 수정 사항�
 **업그레이드**
 
 * 환경에서 Document Security [!DNL JBoss] 에 대해 [!DNL Experience Manager Forms] [!DNL Linux] 7.0.9로 버전을 업그레이드하면 오류가 발생합니다(CQ-4300546).
+
+보안 업데이트에 대한 자세한 내용은 [Experience Manager 보안 게시판 페이지를 참조하십시오](https://helpx.adobe.com/security/products/experience-manager.html).
 
 ## 이전 누적 수정 팩에 포함된 핫픽스 및 기능 팩 {#hotfixes-and-feature-packs-included-in-previous-cumulative-fix-packs}
 
