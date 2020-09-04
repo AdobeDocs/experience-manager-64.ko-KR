@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: c84040b0-7850-4960-b676-ffa0a74c8cb2
 translation-type: tm+mt
-source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+source-git-commit: 805e4411930749ff4b6b05ea4a8b87b4f96d72fd
 workflow-type: tm+mt
 source-wordcount: '704'
 ht-degree: 4%
@@ -45,7 +45,7 @@ ht-degree: 4%
 * **[!UICONTROL 추가]**&#x200B;를 클릭합니다
 * 모두 **[!UICONTROL 저장을 클릭합니다.]**
 
-참고: &#39;apps&#39;로 카테고리 값 미리 보기 는 &#39;소유 응용 프로그램&#39;이 /libs가 아닌 /apps 폴더에 있는 것으로 식별하기 위한 규칙입니다.  중요: 자리 표시자 `js.txt` 및 `css.txt` 파일 추가 (cq:ClientLibraryFolder가 없는 것은 아닙니다.)
+참고:&#39;apps&#39;로 카테고리 값 미리 보기 는 &#39;소유 응용 프로그램&#39;이 /libs가 아닌 /apps 폴더에 있는 것으로 식별하기 위한 규칙입니다.  중요:자리 표시자 `js.txt` 및 `css.txt` 파일 추가 (cq:ClientLibraryFolder가 없는 것은 아닙니다.)
 
 
 1. 마우스 오른쪽 단추 클릭 **`/etc/designs/an-scf-sandbox/clientlibs`**
@@ -82,7 +82,7 @@ css.txt의 컨텐츠를 다음과 같이 설정합니다.
 
 **각 페이지에 대해 다운로드한 클라이언트의 크기/속도 및 편의에 대한 고려 사항이 있기 때문에 프로덕션 사이트에서 사용하기 원하는 접근 방식이 아닐 수도 있습니다** .
 
-한 페이지에서 하나의 기능만 사용하는 경우, 해당 기능의 전체 clientlib을 페이지에 직접 포함할 수 있습니다(예: &lt;% ui:includeClientLib categories=cq.social.hbs.forum&quot; %>).
+한 페이지에서 하나의 기능을 사용하는 경우, 해당 기능의 전체 clientlib을 페이지에 직접 포함할 수 있습니다. 예를 들어, &lt;% ui:includeClientLib categories=cq.social.hbs.forum&quot; %>
 
 이 경우, Adobe는 이러한 모든 구성 요소를 포함하므로 Author clientlibs인 보다 기본적인 SCF clientlibs를 선호합니다.
 
@@ -124,7 +124,7 @@ apps.an-scf-sandbox clientlibs가 포함되면, SCF 댓글 구성 요소가 스�
 
 ![chlimage_1-225](assets/chlimage_1-225.png)
 
-include 문은 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 섹션 <html> 스크립트. 기본적으로 겹쳐질 수 있는 스크립트가 **`foundation head.jsp`** 포함됩니다. **`headlibs.jsp`**.
+include 문은 스크립트 `<head>` 섹션에 `<html>` 속합니다. 기본적으로 겹쳐질 수 있는 스크립트가 **`foundation head.jsp`** 포함됩니다. **`headlibs.jsp`**.
 
 **headlibs.jsp 복사 및 clientlibs 포함:**
 
@@ -170,7 +170,7 @@ include 문은 <head><meta http-equiv="Content-Type" content="text/html; charset
 
    * 패키지 이름: `an-scf-sandbox-minimal-pkg`
    * 버전: `0.1`
-   * 그룹: &lt;기본값으로 유지>
+   * 그룹:&lt;기본값으로 유지>
    * **[!UICONTROL 확인]**&#x200B;을 클릭합니다
 
 * **[!UICONTROL 편집]**&#x200B;을 클릭합니다
@@ -178,13 +178,13 @@ include 문은 <head><meta http-equiv="Content-Type" content="text/html; charset
    * 필터 **[!UICONTROL 탭]** 선택
 
       * 필터 **[!UICONTROL 추가를 클릭합니다.]**
-      * 루트 경로: &lt;탐색 `/apps/an-scf-sandbox`>
+      * 루트 경로:&lt;탐색 `/apps/an-scf-sandbox`>
       * 완료를 **[!UICONTROL 클릭합니다]**
       * 필터 **[!UICONTROL 추가를 클릭합니다.]**
-      * 루트 경로: &lt;탐색 `/etc/designs/an-scf-sandbox`>
+      * 루트 경로:&lt;탐색 `/etc/designs/an-scf-sandbox`>
       * 완료를 **[!UICONTROL 클릭합니다]**
       * 필터 **[!UICONTROL 추가를 클릭합니다.]**
-      * 루트 경로: &lt;탐색 `/content/an-scf-sandbox`>
+      * 루트 경로:&lt;탐색 `/content/an-scf-sandbox`>
       * 완료를 **[!UICONTROL 클릭합니다]**
    * **[!UICONTROL 저장]**&#x200B;을 클릭합니다
 
