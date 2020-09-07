@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.4 누적 수정 팩 관련 릴리스 노
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5fefc81e68e64bcaa8df1d9648c4266367a92129
+source-git-commit: d3721590e3c2dfd2b048f1b5964915a343f95f6d
 workflow-type: tm+mt
-source-wordcount: '3331'
+source-wordcount: '3364'
 ht-degree: 26%
 
 ---
@@ -171,6 +171,7 @@ AEM 누적 수정 팩 6.4.8.1은 AEM 6.4 서비스 팩 8에 따라 다릅니다.
 
 AEM 6.4.8.1의 주요 특징 중 일부는 다음과 같습니다.
 
+* CRXDE Lite에 대한 익명의 액세스는 보안을 강화하도록 허용되지 않습니다. 대신 사용자에게 로그인 화면이 표시됩니다. See [developing with CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 * Adobe Experience Manager와 패키지 공유 통합이 제거되었습니다.
 * 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.8.21으로 업데이트되었습니다.
 
@@ -180,6 +181,7 @@ Adobe Experience Manager 6.4.8.1에서는 다음 문제에 대한 수정 사항�
 
 #### 사이트 {#sites-6481}
 
+* 익명의 사용자는 CRX DE Lite 기능(NPR-33522)에 액세스할 수 있습니다.
 * LiveCopy의 로컬 구성 요소의 이름이 설계도에 있는 구성 요소의 이름과 동일하며 구성 요소가 블루프린트에서 롤아웃되는 경우, _msm_moved 용어는 로컬 구성 요소의 이름에 추가되지 않습니다(NPR-33207).
 * 원래 요청에 추가된 매개 변수는 리디렉션 URL에 포함되지 않습니다(NPR-33174).
 * Coral.Select 옵션이 emptyOption=true를 설정하거나 값이 &quot;&quot;인 기본 항목을 포함할 경우 dropdownshowide.js 파일에 오류가 발생합니다.처리할 수 없는 유형 오류:component.getValue가 함수가 아닙니다(NPR-33163).
