@@ -3,9 +3,9 @@ title: 계단식 메타데이터
 description: 이 문서에서는 자산의 CSS 메타데이터를 정의하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: 452c90bc72c8d71af4b6c4ca2243024b459f53d9
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # Cascading Metadata {#cascading-metadata}
 
 이 문서에서는 자산의 CSS 메타데이터를 정의하는 방법에 대해 설명합니다.
+
+>[!CAUTION]
+>
+>콘텐츠 조각에 대해서는 계단식 메타데이터가 지원되지 않습니다.
 
 자산의 메타데이터 정보를 캡처할 때 사용자는 사용 가능한 다양한 필드에 정보를 제공합니다. 다른 필드에서 선택한 옵션에 따라 특정 메타데이터 필드 또는 필드 값을 표시할 수 있습니다. 이러한 메타데이터 조건부 표시를 계단식 메타데이터라고 합니다. 즉, 특정 메타데이터 필드/값과 하나 이상의 필드 및/또는 해당 값 간에 종속성을 만들 수 있습니다.
 
@@ -110,8 +114,8 @@ ht-degree: 0%
 
    ![비디오 에셋용 CSS 메타데이터](assets/video_asset.png)
 
-   *그림: 비디오 에셋용 CSS 메타데이터*
+   *그림:비디오 에셋용 CSS 메타데이터*
 
    ![문서 에셋에 대한 CSS 메타데이터](assets/doc_type_fields.png)
 
-   *그림: 문서 에셋에 대한 CSS 메타데이터*
+   *그림:문서 에셋에 대한 CSS 메타데이터*
