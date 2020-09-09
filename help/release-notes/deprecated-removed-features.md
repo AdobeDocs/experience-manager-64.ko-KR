@@ -2,10 +2,10 @@
 title: 더 이상 사용되지 않는 및 제거된 기능
 description: Adobe Experience Manager 6.4의 더 이상 사용되지 않는 및 제거된 기능에 관한 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 543f66c760d7b25681a79d5df3d8ab6e8c0b2f47
+source-git-commit: 8e82c691affe3b2c4108beec394cc0ba2d607b61
 workflow-type: tm+mt
-source-wordcount: '1234'
-ht-degree: 31%
+source-wordcount: '1281'
+ht-degree: 30%
 
 ---
 
@@ -23,7 +23,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 
 ## 더 이상 사용되지 않는 기능 {#deprecated-features}
 
-아래 표에는 AEM 6.4에서 더 이상 사용되지 않는 것으로 표시된 기능 및 기능이 나와 있습니다. 일반적으로 향후 릴리스에서 제거될 예정인 기능은 먼저 더 이상 사용되지 않고 제공된 대체 제품으로 설정됩니다.
+아래 표에는 AEM 6.4에서 더 이상 사용되지 않는 것으로 표시된 기능 및 기능이 나와 있습니다. 일반적으로 향후 릴리스에서 제거될 예정인 기능은 더 이상 사용되지 않고 대신 제공된 대체 기능으로 설정됩니다.
 
 고객은 현재 배포에서 기능을 사용할지 검토하고 대체 기능을 사용할 수 있도록 구현 변경을 계획하는 것이 좋습니다.
 
@@ -40,6 +40,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | 양식 | 쿼리 및 작업 옵션에서 JSONObject를 사용하지 않습니다. 다음 API는 더 이상 사용되지 않습니다. <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | API `IValueMap` 사용 |
 | 양식 | 사용되지 않는 중앙 마이그레이션 브리지 서비스입니다. | 교체 서비스를 제공하지 않습니다. |
 | 자산 | Assets Offloading은 AEM 6.4부터 더 이상 사용되지 않습니다. |  |
+| 개발자 | 클라이언트 라이브러리 로대시/밑줄 표시 Adobe은 배포의 일부로 배송된 로대시/밑줄 클라이언트 라이브러리를 추가 유지 및 업데이트할 계획이 없습니다(빠른 시작). | Adobe은 코드에 로대시/밑줄이 필요한 고객이 프로젝트 코드 베이스에 추가하도록 권장합니다. |
 
 <!-- Original HTML table that came from helpx during migration.
 
@@ -165,7 +166,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | 양식 | JEE 32비트 설치 관리자의 AEM Forms을 사용할 수 없습니다. | Adobe이 JEE 32비트 설치 관리자의 AEM Forms 배송을 중단했습니다. 64비트 설치 프로그램을 사용하여 JEE에 AEM Forms을 계속 설치할 수 있습니다. |
 | 양식 | 문서 조각 구성 요소에서 DAM 이미지 사용에 대한 지원을 제거했습니다. | 대화형 커뮤니케이션의 인쇄 채널에서 이미지 및 차트 구성 요소를 사용할 수 있습니다. 적응형 양식의 문서 조각 구성 요소를 사용하는 경우 AEM 6.4 Forms으로 업그레이드한 후 작동이 중단됩니다. |
 | 양식 | 응용 문서 기능 제거 | 대화형 통신 기능을 사용하여 인쇄 및 웹 기반 통신을 만들 수 있습니다. 응용 문서를 사용하는 경우 기존 응용 문서를 계속 사용하려면 호환성 패키지를 설치합니다 |
-| 양식 | JEE 특정 랜딩 페이지에서 AEM Forms을 제거했습니다. | JEE 랜딩 페이지의 AEM Forms이 AEM 랜딩 페이지(/aem/start.html)으로 대체됩니다. |
+| 양식 | JEE 특정 랜딩 페이지에서 AEM Forms을 제거했습니다. | JEE 랜딩 페이지의 AEM Forms이 AEM 랜딩 페이지(/aem/start.html)으로 대체되었습니다. |
 | 양식 | 기본 Captcha 지원을 제거했습니다. | Google에서 reCAPTCHA 서비스를 사용하십시오. |
 | 양식 | AEM Designer에서 flash 필드에 대한 지원을 제거했습니다. AEM Designer에서는 양식에 사용된 Flash 필드 편집을 허용하지 않습니다. | 이전 버전에 대해 릴리스된 AEM Designer를 사용하여 이러한 양식을 편집할 수 있습니다. |
 | 커뮤니티 | Captcha 확인 지원이 제거되었습니다. | 확인을 위해 사용자 정의 captcha 통합(예: Google의 reCAPTCHA)을 사용합니다. |
