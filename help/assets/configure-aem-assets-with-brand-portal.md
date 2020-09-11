@@ -3,7 +3,7 @@ title: Brand Portal에서 AEM Assets 구성
 description: 'Brand Portal에 자산 및 컬렉션을 게시하기 위해 Brand Portal에서 AEM Assets을 구성하는 방법을 알아봅니다. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 1510b3a1b40e2e08579fc833f563fa77d6cc65cd
+source-git-commit: f9993c7a1a7be95cf4f2652f32e71f370ff3c727
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 94%
@@ -270,6 +270,7 @@ Brand Portal 클라우드 서비스 구성을 만들려면 다음 단계를 수�
    >[!NOTE]
    >
    >일부 자산의 복제가 실패할 수 있으므로 복제 에이전트를 비활성화하지 마십시오.
+   >
    >시간 초과 오류를 방지하도록 네 개의 복제 에이전트가 모두 구성되어 있는지 확인합니다. See [troubleshoot issues in parallel publishing to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
 
 Brand Portal이 AEM Assets 작성자 인스턴스로 구성되었습니다. 이제 다음을 수행할 수 있습니다.
