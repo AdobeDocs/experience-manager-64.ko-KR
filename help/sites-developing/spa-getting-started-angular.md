@@ -9,7 +9,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 50e24c2b-ad7e-4422-a850-9a0bf6bd9423
 translation-type: tm+mt
-source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 3%
@@ -62,9 +62,9 @@ AEM에서 SPA가 작동하는 방법에 대한 자세한 내용은 다음 문서
 
 ```
 "dependencies": {
-  "@adobe/cq-angular-editable-components": "~1.0.3",
-  "@adobe/cq-spa-component-mapping": "~1.0.3",
-  "@adobe/cq-spa-page-model-manager": "~1.0.4"
+  "@adobe/aem-angular-editable-components": "~1.0.3",
+  "@adobe/aem-spa-component-mapping": "~1.0.5",
+  "@adobe/aem-spa-page-model-manager": "~1.0.3"
 }
 ```
 
@@ -131,12 +131,12 @@ module.exports = {
 
 SPA의 엔트리 포인트는 중요한 컨텐츠에 초점을 맞추기 위해 여기에 간단히 표시된 `app.module.ts` 파일입니다.
 
-```
+```javascript
 // app.module.ts
 import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { SpaAngularEditableComponentsModule } from '@adobe/cq-angular-editable-components';
+import { SpaAngularEditableComponentsModule } from '@adobe/aem-angular-editable-components';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -162,11 +162,11 @@ export class AppModule {}
 
 부트스트래핑 `app.module.ts` `AppComponent`을 수행하면, 여기에서 간단한 버전으로 표시되는 앱을 초기화하여 중요한 콘텐츠에 주력할 수 있습니다.
 
-```
+```javascript
 // app.component.ts
 import { Component } from '@angular/core';
-import { ModelManager } from '@adobe/cq-spa-page-model-manager';
-import { Constants } from "@adobe/cq-angular-editable-components";
+import { ModelManager } from '@adobe/aem-spa-page-model-manager';
+import { Constants } from "@adobe/aem-angular-editable-components";
 
 @Component({
   selector: 'app-root',
@@ -194,13 +194,13 @@ export class AppComponent {
 
 ### main-content.component.ts {#main-content-component-ts}
 
-페이지를 처리하면 `app.component.ts` 여기에 나열된 간단한 버전 `main-content.component.ts` 으로 전화됩니다.
+페이지를 처리하면 `app.component.ts` 여기에 `main-content.component.ts` 나열된 간소화된 버전으로 호출됩니다.
 
-```
+```javascript
 import { Component } from '@angular/core';
 import { ModelManagerService }     from '../model-manager.service';
 import { ActivatedRoute } from '@angular/router';
-import { Constants } from "@adobe/cq-angular-editable-components";
+import { Constants } from "@adobe/aem-angular-editable-components";
 
 @Component({
   selector: 'app-main',
@@ -283,7 +283,7 @@ AEM의 SPA는 SPA 구성 요소를 AEM 구성 요소에 매핑하고 컨텐츠�
 
 ## SPA 구성 요소 간 정보 공유 {#sharing-information-between-spa-components}
 
-단일 페이지 애플리케이션 내의 구성 요소가 정보를 공유하려면 정기적으로 필요합니다. 다음과 같이 복잡성이 증가하는 여러 가지 권장 방법으로 이 작업을 수행할 수 있습니다.
+단일 페이지 애플리케이션 내의 구성 요소가 정보를 공유하려면 정기적으로 필요합니다. 다음과 같은 몇 가지 권장 방법으로 복잡도가 높아집니다.
 
 * **옵션 1:** util 클래스를 순수한 객체 지향 솔루션으로 사용하면 논리 및 브로드캐스트를 필요한 구성 요소로 중앙에서 제어할 수 있습니다.
 * **옵션 2:** NgRx와 같은 상태 라이브러리를 사용하여 구성 요소 상태를 공유합니다.
