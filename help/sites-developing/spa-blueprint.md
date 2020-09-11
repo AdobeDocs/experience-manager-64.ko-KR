@@ -9,7 +9,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '2124'
 ht-degree: 0%
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 SPA를 대신하여 실제 컨텐츠 구조를 나타내는 JSON 구조의 검색 및 관리를 추상화합니다. 또한 구성 요소를 다시 렌더링해야 하는 시기를 알려주는 SPA와 동기화해야 합니다.
 
-NPM 패키지 [@adobe/cq-spa-page-model-manager 참조](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
+NPM 패키지 [@adobe/aem-spa-page-model-manager 참조](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 
 라이브러리를 초기화할 때 라이브러리 `PageModelManager`는 먼저 매개 변수, 메타 속성 또는 현재 URL을 통해 앱의 제공된 루트 모델을 로드합니다. 라이브러리가 현재 페이지의 모델이 루트 모델의 일부가 아니라고 식별하면 해당 모델이 하위 페이지의 모델로 포함됩니다.
 
@@ -99,14 +99,14 @@ AEM [콘텐츠 서비스 시작도 참조하십시오.](https://helpx.adobe.com/
 
 Adobe은 라이브러리의 상호 운용성을 돕기 위해 프레임워크별 모듈에 다음 라이브러리를 번들로 묶도록 권장합니다. 필요한 경우 레이어는 기본 API를 캡슐화하여 프로젝트에 적용하기 전에 적용할 수 있습니다.
 
-* [@adobe/cq-spa-page-model-manager](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
-* [@adobe/cq-spa-component-mapping](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
+* [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
+* [@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 #### 구현 {#implementations}
 
 #### 반응 {#react}
 
-npm 모듈: [@adobe/cq-responsive-editable-components](https://www.npmjs.com/package/@adobe/cq-react-editable-components)
+npm 모듈: [@adobe/aem-responsive-editable-components](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 
 #### 각진 {#angular}
 
@@ -169,7 +169,7 @@ npm 모듈:곧 제공
 * `gridClassNames:` 응답형 그리드에 대한 클래스 이름을 제공했습니다.
 * `columnClassNames:` 응답형 열에 대한 클래스 이름을 제공했습니다.
 
-참고 항목: npm resource [@adobe/cq-responsive-editable-components#srccomponentsresponsiventgridjsx](https://www.npmjs.com/package/@adobe/cq-react-editable-components#srccomponentsresponsivegridjsx)
+참고 항목: npm resource [@adobe/aem-responsive-editable-components#srccomponentsresponsiventgridjsx](https://www.npmjs.com/package/@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx)
 
 #### 응답형 격자의 자리 표시자 {#placeholder-of-the-reponsive-grid}
 
