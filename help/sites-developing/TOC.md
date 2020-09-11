@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: AEM 6.4 개발 사용 안내서
 user-guide-description: This guide covers how to build out your AEM instance.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 100%
+source-wordcount: '803'
+ht-degree: 99%
 
 ---
 
@@ -114,7 +114,7 @@ ht-degree: 100%
       + [SPA 모델 라우팅](spa-routing.md)
       + [SPA 및 Adobe Experience Platform Launch 통합](spa-launch.md)
       + [SPA 및 서버측 렌더링](spa-ssr.md)
-      + [SPA Javascript API 참조](spa-reference-materials.md)
+      + [SPA 참조 자료](spa-reference-materials.md)
    + [HTTP API](/help/assets/mac-api-assets.md)
    + [컨텐츠 조각](/help/assets/content-fragments.md)
    + [경험 조각](/help/sites-authoring/experience-fragments.md)
