@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: e30606a7fdb96f332bda3c28441eed8011528c43
+source-git-commit: f824b449b85ad7900aaf73fd79614f5e6140f873
 workflow-type: tm+mt
 source-wordcount: '2203'
 ht-degree: 0%
@@ -93,7 +93,7 @@ AEM 양식 데이터베이스는 양식 객체, 서비스 구성, 프로세스 �
 
 >[!NOTE]
 >
->Adobe® LiveCycle ® 컨텐츠 서비스 ES(더 이상 사용되지 않음)는 LiveCycle과 함께 설치되는 컨텐츠 관리 시스템입니다. 이를 통해 사용자는 인간 중심 프로세스를 디자인, 관리, 모니터링 및 최적화할 수 있습니다. 콘텐츠 서비스(더 이상 사용되지 않음) 지원은 2014년 12월 31일에 종료됩니다. 제품 라이프사이클 [Adobe 문서를 참조하십시오](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). 콘텐츠 서비스 구성에 대해 알아보려면 콘텐츠 서비스 관리 [를 참조하십시오](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
+>Adobe® LiveCycle ® 컨텐츠 서비스 ES(더 이상 사용되지 않음)는 LiveCycle과 함께 설치되는 컨텐츠 관리 시스템입니다. 이를 통해 인간 중심 프로세스를 디자인, 관리, 모니터링 및 최적화할 수 있습니다. 콘텐츠 서비스(더 이상 사용되지 않음) 지원은 2014년 12월 31일에 종료됩니다. 제품 라이프사이클 [Adobe 문서를 참조하십시오](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). 콘텐츠 서비스 구성에 대해 알아보려면 콘텐츠 서비스 관리 [를 참조하십시오](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
 
 ### DB2 {#db2}
 
@@ -114,7 +114,7 @@ DB2 데이터베이스 백업 및 복구에 대한 자세한 내용은 DB2 [용 
 
 ### Oracle {#oracle}
 
-스냅샷 백업을 사용하거나 아카이브 로그 모드에서 실행되도록 Oracle 데이터베이스를 구성합니다. (Oracle [Backup 참조: 소개](https://www.databasedesign-resource.com/oracle-backup.md)) Oracle 데이터베이스 백업 및 복구에 대한 자세한 내용은 다음 사이트로 이동하십시오.
+스냅샷 백업을 사용하거나 아카이브 로그 모드에서 실행되도록 Oracle 데이터베이스를 구성합니다. (Oracle [Backup 참조:소개](https://www.databasedesign-resource.com/oracle-backup.md)) Oracle 데이터베이스 백업 및 복구에 대한 자세한 내용은 다음 사이트로 이동하십시오.
 
 [Oracle 백업 및 복구:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) 백업 및 복구의 개념과 백업, 복구 및 보고를 위해 RMAN(Recovery Manager)을 사용하는 가장 일반적인 기술에 대해 설명하고 백업 및 복구 전략을 계획하는 방법에 대한 자세한 정보를 제공합니다.
 
