@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 86a981fe-25f3-451a-b262-8c497619e0ac
 translation-type: tm+mt
-source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 8%
@@ -72,14 +72,14 @@ SPA 편집기에서 SPA의 컨텐츠를 작성할 때 날씨 구성 요소는 �
 
 We.Retail 저널 애플리케이션에서 사용자 지정된 날씨 구성 요소( `Weather.js`)의 코드 검토:
 
-* **16행**: 필요한 경우 반응형 개방형 날씨 위젯이 로드됩니다.
-* **46호선**: 이 `MapTo` 함수는 SPA 편집기에서 편집할 수 있도록 해당 AEM 구성 요소에 이 React 구성 요소를 연결합니다.
+* **16행**:필요한 경우 반응형 개방형 날씨 위젯이 로드됩니다.
+* **46호선**:이 `MapTo` 함수는 SPA 편집기에서 편집할 수 있도록 해당 AEM 구성 요소에 이 React 구성 요소를 연결합니다.
 
-* **22-29호선**: 도시 `EditConfig` 가 채워졌는지 확인하고 비어 있는 경우 값을 정의하는 것이 정의됩니다.
+* **22-29호선**:도시 `EditConfig` 가 채워졌는지 확인하고 비어 있는 경우 값을 정의하는 것이 정의됩니다.
 
-* **31-44행**: Weather 구성 요소는 `Component` 클래스를 확장하고 React Open Weather 구성 요소에 대한 NPM 사용 설명서에 정의된 대로 필요한 데이터를 제공하고 구성 요소를 렌더링합니다.
+* **31-44행**:Weather 구성 요소는 `Component` 클래스를 확장하고 React Open Weather 구성 요소에 대한 NPM 사용 설명서에 정의된 대로 필요한 데이터를 제공하고 구성 요소를 렌더링합니다.
 
-```
+```javascript
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  ~ Copyright 2018 Adobe Systems Incorporated
  ~
@@ -97,7 +97,7 @@ We.Retail 저널 애플리케이션에서 사용자 지정된 날씨 구성 요�
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 import React, {Component} from 'react';
 import ReactWeather from 'react-open-weather';
-import {MapTo} from '@adobe/cq-react-editable-components';
+import {MapTo} from '@adobe/aem-react-editable-components';
 
 require('./Weather.css');
 
