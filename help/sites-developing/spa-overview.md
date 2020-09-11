@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 897ff73f-15a5-484f-a3a2-616de8ac59dc
 translation-type: tm+mt
-source-git-commit: c842bd832a63ed9e96801c56ff35489ee6df630b
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '1703'
 ht-degree: 1%
@@ -49,7 +49,7 @@ SPA용 페이지 구성 요소는 JSP 또는 HTL 파일을 통해 하위 구성 
 
 ### 페이지 모델 관리 {#page-model-management}
 
-페이지 모델의 해상도 및 관리는 제공된 `PageModel` 라이브러리에 위임됩니다. SPA Editor에서 초기화하고 작성하려면 SPA에서 페이지 모델 라이브러리를 사용해야 합니다. 페이지 모델 라이브러리는 npm을 통해 AEM 페이지 구성 요소에 간접적으로 `cq-react-editable-components` 제공되었습니다. 페이지 모델은 AEM과 SPA 사이의 인터프리터이므로 항상 있어야 합니다. 페이지를 작성할 때 페이지 편집기와의 통신을 활성화하려면 추가 라이브러리를 추가해야 `cq.authoring.pagemodel.messaging` 합니다.
+페이지 모델의 해상도 및 관리는 제공된 `PageModel` 라이브러리에 위임됩니다. SPA Editor에서 초기화하고 작성하려면 SPA에서 페이지 모델 라이브러리를 사용해야 합니다. 페이지 모델 라이브러리는 npm을 통해 AEM 페이지 구성 요소에 간접적으로 `aem-react-editable-components` 제공되었습니다. 페이지 모델은 AEM과 SPA 사이의 인터프리터이므로 항상 있어야 합니다. 페이지를 작성할 때 페이지 편집기와의 통신을 활성화하려면 추가 라이브러리를 추가해야 `cq.authoring.pagemodel.messaging` 합니다.
 
 SPA 페이지 구성 요소가 페이지 코어 구성 요소에서 상속되는 경우 클라이언트 라이브러리 카테고리를 사용할 수 있도록 하는 두 가지 옵션이 `cq.authoring.pagemodel.messaging` 있습니다.
 
@@ -94,7 +94,7 @@ SPA Editor의 주요 요소를 염두에 두면, 다음과 같이 AEM 내에서 
 1. SPA Editor에서 렌더링된 구성 요소를 감지하여 오버레이를 생성합니다.
 1. 작성자가 오버레이를 클릭하고 구성 요소의 편집 도구 모음을 표시합니다.
 1. SPA 편집기는 서버에 대한 POST 요청과 함께 편집한 내용을 유지합니다.
-1. SPA Editor가 JSON을 SPA 편집기로 업데이트하여 DOM 이벤트가 있는 SPA로 전송합니다.
+1. SPA Editor가 JSON을 SPA Editor로 업데이트하여 DOM 이벤트가 있는 SPA로 전송합니다.
 1. SPA는 관련 구성 요소를 다시 렌더링하여 DOM을 업데이트합니다.
 
 >[!NOTE]
@@ -155,7 +155,7 @@ SPA를 편집할 때 클라이언트-서버 상호 작용에 대한 자세한 �
 
    **17a** SPA는 페이지 편집기에 컨텐츠가 준비되었음을 알립니다.
 
-   **17b** 페이지 편집기는 SPA에 구성 요소 구성을 제공합니다.
+   **17b** 페이지 편집기는 SPA에 구성 요소를 제공합니다.
 
    **17c** SPA는 업데이트된 구성 요소 구성을 제공합니다.
 
