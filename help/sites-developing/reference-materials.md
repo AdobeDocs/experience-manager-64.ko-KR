@@ -11,7 +11,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 39d1cb2e-18f5-4d08-b983-a06b1f470c51
 translation-type: tm+mt
-source-git-commit: 507559ee6cc6b201a11bbf84da515b675534f675
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 6%
@@ -39,10 +39,10 @@ AEM은 애플리케이션 개발을 위한 여러 API를 제공합니다. 다음
 
 AEM SPA(단일 페이지 애플리케이션) 편집기 SDK 프레임워크 JavaScript API 참조:
 
-* [구성 요소 매핑](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
-* [페이지 모델 관리자](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
-* [편집 가능한 구성 요소 반응](https://www.npmjs.com/package/@adobe/cq-react-editable-components)
-* [각 편집 가능한 구성 요소](https://www.npmjs.com/package/@adobe/cq-angular-editable-components)
+* [구성 요소 매핑](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
+* [페이지 모델 관리자](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
+* [편집 가능한 구성 요소 반응](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
+* [각 편집 가능한 구성 요소](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 AEM 전달 및 컨텐츠 관리 API:
 
