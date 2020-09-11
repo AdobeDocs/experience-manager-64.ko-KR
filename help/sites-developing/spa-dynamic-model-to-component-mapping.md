@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 8b4b0afc-8534-4010-8f34-cb10475a8e79
 translation-type: tm+mt
-source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 5%
@@ -35,7 +35,7 @@ ht-degree: 5%
 
 모델 구문 분석 및 모델에 대한 프런트 엔드 구성 요소 액세스에 대한 자세한 내용은 [SPA Blueprint](/help/sites-developing/spa-blueprint.md) 문서를 참조하십시오.
 
-npm 패키지를 참조하십시오. [https://www.npmjs.com/package/@adobe/cq-spa-component-mapping](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
+npm 패키지를 참조하십시오. [https://www.npmjs.com/package/@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 ## 모델 기반 단일 페이지 애플리케이션 {#model-driven-single-page-application}
 
