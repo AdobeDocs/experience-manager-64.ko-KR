@@ -3,9 +3,9 @@ title: 리치 텍스트 편집기 플러그인 구성
 description: 개별 기능을 사용하도록 AEM 리치 텍스트 편집기 플러그인을 구성하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 2236d029dc463930e6bbdc1e1aed89e761f0cd89
 workflow-type: tm+mt
-source-wordcount: '4206'
+source-wordcount: '4204'
 ht-degree: 3%
 
 ---
@@ -706,7 +706,7 @@ AEM에서 링크를 추가할 때 다음을 정의할 수 있습니다.
       * **이름** `cssExternal`
       * **유형** `String`
       * **값** CSS 클래스의 이름(이전 &#39;.&#39; 없이); for example, `cssClass` instead of `.cssClass`)
-   * 유효한 **프로토콜** 배열(https://, https:// file://, mailto: 등)
+   * 유효한 **프로토콜 배열**. 지원되는 프로토콜은 `http://`, `https://``file://`및 `mailto:`입니다.
 
       * **이름** `protocols`
       * **유형** `String[]`
