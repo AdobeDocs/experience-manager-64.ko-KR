@@ -3,10 +3,10 @@ title: Brand Portal에서 AEM Assets 구성
 description: 'Brand Portal에 자산 및 컬렉션을 게시하기 위해 Brand Portal에서 AEM Assets을 구성하는 방법을 알아봅니다. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: f9993c7a1a7be95cf4f2652f32e71f370ff3c727
+source-git-commit: 656a06ae70293a3f1ec6768fc9eea15f1329c42c
 workflow-type: tm+mt
-source-wordcount: '1678'
-ht-degree: 94%
+source-wordcount: '1692'
+ht-degree: 93%
 
 ---
 
@@ -78,6 +78,11 @@ Brand Portal에 AEM Assets을 처음 구성하는 경우 단계를 나열된 순
 1. [IMS 계정 구성 만들기](#create-ims-account-configuration)
 1. [클라우드 서비스 구성](#configure-the-cloud-service)
 1. [구성 테스트](#test-integration)
+
+>[!NOTE]
+>
+>AEM Assets 작성자 인스턴스는 하나의 브랜드 포털 테넌트로 구성됩니다.
+
 
 ### IMS 구성 만들기 {#create-ims-configuration}
 
