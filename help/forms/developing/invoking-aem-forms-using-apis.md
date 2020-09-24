@@ -7,10 +7,10 @@ uuid: d100e106-e508-4d3c-ba8c-b5fe13c9e2d6
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: development-tools
+topic-tags: development-tools, coding
 discoiquuid: 1825e12c-0306-4e0a-9643-47ce1ce82132
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # API를 사용하여 AEM Forms 호출 {#invoking-aem-forms-using-apis}
 
-Adobe Experience Manager Forms은 공유 인프라에서 작동하는 서비스로 구성되어 있는 J2EE 기반 기업 소프트웨어입니다. 서비스 작업은 일반적으로 문서를 사용하거나 생성합니다. AEM Forms을 사용하면 양식 워크플로우와 전자 양식, 문서 보안 및 문서 생성 기능을 통합적이고 일관된 서비스 세트에 통합할 수 있습니다. 이러한 서비스는 방화벽 내외부에서 액세스할 수 있습니다.
+Adobe Experience Manager Forms은 공유 인프라에서 작동하는 서비스로 구성된 J2EE 기반 기업 소프트웨어입니다. 서비스 작업은 일반적으로 문서를 사용하거나 생성합니다. AEM Forms을 사용하면 양식 워크플로우와 전자 양식, 문서 보안 및 문서 생성 기능을 통합적이고 일관된 서비스 세트에 통합할 수 있습니다. 이러한 서비스는 방화벽 내외부에서 액세스할 수 있습니다.
 
 클라이언트 응용 프로그램은 Java API, 웹 서비스, Remoting 및 REST를 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호출할 수 있습니다. 관리 콘솔을 사용하여 프로그래밍 방식으로 호출된 AEM Forms 서비스를 사용할 수 있는 끝점을 노출하도록 서비스를 구성할 수 있습니다. 기본적으로 대부분의 서비스는 Remoting, Java 및 웹 서비스 끝점을 노출하도록 미리 구성되어 있습니다.
 
