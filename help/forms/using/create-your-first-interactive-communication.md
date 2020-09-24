@@ -6,10 +6,10 @@ seo-description: 간단한 인터랙티브 커뮤니케이션 제작
 uuid: ed5003c6-ba3a-4fcb-8645-c7b607b22fb5
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: interactive-communications
+topic-tags: interactive-communications, introduction
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
 translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 0%
@@ -17,13 +17,13 @@ ht-degree: 0%
 ---
 
 
-# 자습서: 간단한 인터랙티브 커뮤니케이션 제작 {#tutorial-create-your-first-interactive-communication}
+# 자습서:간단한 인터랙티브 커뮤니케이션 제작 {#tutorial-create-your-first-interactive-communication}
 
 간단한 인터랙티브 커뮤니케이션 제작
 
 ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
 
-Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 이메일, 청구서 및 환영 키트와 같은 안전하고 개인화되고 인터랙티브한 통신의 작성, 수집 및 전달을 중앙 집중화하고 관리합니다. 인터랙티브 커뮤니케이션은 인쇄 및 웹. 인쇄 채널은 PDF와 종이 커뮤니케이션을 만드는 데 사용되는 반면 웹 채널은 온라인 경험을 전달하는 데 사용됩니다.
+Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 이메일, 청구서 및 환영 키트와 같은 안전하고 개인화되고 인터랙티브한 통신의 작성, 수집 및 전달을 중앙 집중화하고 관리합니다. 인터랙티브 커뮤니케이션은인쇄 및 웹. 인쇄 채널은 PDF와 종이 커뮤니케이션을 만드는 데 사용되는 반면 웹 채널은 온라인 경험을 전달하는 데 사용됩니다.
 
 이 자습서는 인터랙티브 커뮤니케이션을 만드는 엔드 투 엔드 프레임워크를 제공합니다. 이 자습서는 사용 사례와 여러 안내선으로 구성됩니다. 각 안내서는 인터랙티브 커뮤니케이션을 만들기 위한 구성 요소로 사용되는 기능을 만드는 데 도움이 됩니다.
 
@@ -54,7 +54,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 * MYSQL 데이터베이스 설정
 * 데이터베이스 공급자로부터 JDBC 데이터베이스 드라이버(JAR 파일)를 가져옵니다. 자습서의 예는 MySQL 데이터베이스를 기반으로 하며 Oracle의 [MySQL JDBC 데이터베이스 드라이버를 사용합니다](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
-## 1단계: 인터랙티브 커뮤니케이션 계획 {#step-plan-the-interactive-communication}
+## 1단계:인터랙티브 커뮤니케이션 계획 {#step-plan-the-interactive-communication}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
@@ -76,7 +76,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-양식 데이터 모델을 사용하면 인터랙티브 커뮤니케이션을 서로 다른 데이터 소스에 연결할 수 있습니다. 예를 들어 AEM 사용자 프로필, RESTful 웹 서비스, SOAP 기반 웹 서비스, OData 서비스 및 관계형 데이터베이스를 들 수 있습니다. 양식 데이터 모델은 연결된 데이터 소스에서 사용할 수 있는 비즈니스 엔티티 및 서비스의 통합된 데이터 표현 스키마입니다. 대화형 통신과 함께 양식 데이터 모델을 사용하여 연결된 데이터 소스에서 데이터를 검색할 수 있습니다. 양식 데이터 모델에 대한 자세한 내용은 [AEM Forms 데이터 통합을 참조하십시오](/help/forms/using/data-integration.md).
+양식 데이터 모델을 사용하면 인터랙티브 커뮤니케이션을 서로 다른 데이터 소스에 연결할 수 있습니다. 예를 들어 AEM 사용자 프로필, RESTful 웹 서비스, SOAP 기반 웹 서비스, OData 서비스 및 관계형 데이터베이스를 제공합니다. 양식 데이터 모델은 연결된 데이터 소스에서 사용할 수 있는 비즈니스 엔티티 및 서비스의 통합된 데이터 표현 스키마입니다. 대화형 통신과 함께 양식 데이터 모델을 사용하여 연결된 데이터 소스에서 데이터를 검색할 수 있습니다. 양식 데이터 모델에 대한 자세한 내용은 [AEM Forms 데이터 통합을 참조하십시오](/help/forms/using/data-integration.md).
 
 **목표:**
 
@@ -91,11 +91,11 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-form-data-model-tutorial.md)
 
-## 3단계: 문서 조각 만들기 {#step-create-document-fragments}
+## 3단계:문서 조각 만들기 {#step-create-document-fragments}
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-문서 조각은 인터랙티브 커뮤니케이션을 구성하는 데 사용되는 통신의 재사용 가능한 구성 요소입니다. 문서 조각은 다음과 같은 유형입니다. 텍스트, 목록 및 조건을 참조하십시오.
+문서 조각은 인터랙티브 커뮤니케이션을 구성하는 데 사용되는 통신의 재사용 가능한 구성 요소입니다. 문서 조각은 다음과 같은 유형입니다.텍스트, 목록 및 조건을 참조하십시오.
 
 **목표:**
 
@@ -105,11 +105,11 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-document-fragments.md)
 
-## 4단계: 템플릿 만들기 {#step-create-templates}
+## 4단계:템플릿 만들기 {#step-create-templates}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-대화형 통신을 만들려면 인쇄 및 웹 채널용 AEM 서버에서 사용할 수 있는 템플릿이 있어야 합니다.
+대화형 통신을 만들려면 AEM 서버에서 인쇄 및 웹 채널용 템플릿을 사용할 수 있어야 합니다.
 
 인쇄 채널의 템플릿은 Adobe Forms 디자이너에서 만들고 AEM 서버에 업로드됩니다. 그런 다음 대화형 통신을 만드는 동안 이러한 템플릿을 사용할 수 있습니다.
 
@@ -123,13 +123,13 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-templates-print-web.md)
 
-## 5단계: 인터랙티브한 커뮤니케이션 제작 {#step-create-an-interactive-communication}
+## 5단계:인터랙티브한 커뮤니케이션 제작 {#step-create-an-interactive-communication}
 
 ![09-style-your-adaptive-form-small](assets/09-style-your-adaptive-form-small.png)
 
 양식 데이터 모델, 문서 조각 및 웹 버전에 대한 템플릿과 같은 구성 요소를 모두 만들면 인터랙티브 커뮤니케이션 만들기를 시작할 수 있습니다.
 
-인터랙티브 커뮤니케이션은 인쇄 및 웹. 또한 인쇄 채널이 있는 대화형 통신을 마스터로 만들 수도 있습니다. 웹 채널에 대한 마스터 옵션으로 인쇄하면 웹 채널의 컨텐츠, 상속 및 데이터 바인딩이 인쇄 채널에서 파생됩니다.
+인터랙티브 커뮤니케이션은인쇄 및 웹. 또한 인쇄 채널이 있는 대화형 통신을 마스터로 만들 수도 있습니다. 웹 채널에 대한 마스터 옵션으로 인쇄하면 웹 채널의 컨텐츠, 상속 및 데이터 바인딩이 인쇄 채널에서 파생됩니다.
 
 **목표:**
 
@@ -142,7 +142,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-interactive-communication-tutorial.md)
 
-## 6단계: 인터랙티브한 커뮤니케이션 테스트 {#step-test-your-interactive-communication}
+## 6단계:인터랙티브한 커뮤니케이션 테스트 {#step-test-your-interactive-communication}
 
 ![11-test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
 
@@ -154,7 +154,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 * 테스트 케이스 만들기
 * 테스트 케이스 실행
 
-## 7단계: 인터랙티브 커뮤니케이션 게시 {#step-publish-your-interactive-communication}
+## 7단계:인터랙티브 커뮤니케이션 게시 {#step-publish-your-interactive-communication}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
