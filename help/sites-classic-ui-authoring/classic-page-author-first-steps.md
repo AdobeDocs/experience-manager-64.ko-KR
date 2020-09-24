@@ -6,11 +6,11 @@ seo-description: 이 섹션에서는 Adobe Experience Manager(AEM)에서 컨텐�
 uuid: 1343acf9-b104-40f3-a3f2-df42060cb4fd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
+topic-tags: introduction, page-authoring
 content-type: reference
-topic-tags: page-authoring
 discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
 translation-type: tm+mt
-source-git-commit: ee9b977515b6c1233ff87f011f7a8b4095450814
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 93%
@@ -24,9 +24,9 @@ ht-degree: 93%
 
 다루는 내용:
 
-* [시작하기](#getting-started): 첫 번째 페이지를 만들고 게시하는 데 필요한 기본 이벤트 순서에 대해 자세히 설명합니다.
+* [시작하기](#getting-started):첫 번째 페이지를 만들고 게시하는 데 필요한 기본 이벤트 순서에 대해 자세히 설명합니다.
 
-* [추가 작업](#further-actions): 작성 시 사용할 수 있는 다른 많은 작업을 계속 수행합니다.
+* [추가 작업](#further-actions):작성 시 사용할 수 있는 다른 많은 작업을 계속 수행합니다.
 
 ## 시작하기 {#getting-started}
 
