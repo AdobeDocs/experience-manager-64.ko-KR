@@ -7,10 +7,10 @@ uuid: 714090bd-a742-4004-a968-aebd8fd03e04
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
-topic-tags: best-practices
+topic-tags: best-practices, integration
 discoiquuid: 6c019157-cc37-4826-8d3a-dbee59ec09e0
 translation-type: tm+mt
-source-git-commit: 8e6eaa5053bb94fa33e027594bdc2e30ad16d62e
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 1%
@@ -58,7 +58,7 @@ AEM에서 사용할 수 있는 데모 캠페인은 이러한 모든 모범 사�
   </tr> 
   <tr> 
    <td><p>문자 정의를 지정하여 특수 문자를 올바르게 렌더링할 수 있습니다.</p> <p>&lt;head&gt;에 CHARSET 선언(예: iso-8859-15, UTF-8)을 추가합니다.</p> </td> 
-   <td><p>UTF-8로 설정됩니다.</p> <p>&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;</p> </td> 
+   <td><p>UTF-8로 설정됩니다.</p> <p>&lt;meta http-equiv="content-type" content="text/html;charset=UTF-8"&gt;</p> </td> 
   </tr> 
   <tr> 
    <td><p>&lt;table&gt;요소를 사용하여 모든 구조를 코딩합니다. 보다 복잡한 레이아웃의 경우 표를 중첩하여 복잡한 구조를 만들어야 합니다.</p> <p>CSS가 없어도 이메일은 잘 어울립니다.</p> </td> 
@@ -155,6 +155,6 @@ AEM에는 캠페인 뉴스레터를 만들 수 있는 다양한 템플릿과 구
 
 >[!NOTE]
 >
->이러한 구성 요소는 메일 컨텐츠에 최적화되어 있습니다. 즉, 이 문서의 모범 사례를 준수합니다. 다른 기본 구성 요소를 사용하면 일반적으로 이러한 규칙을 위반하게 됩니다.
+>이러한 구성 요소는 메일 컨텐츠에 최적화되어 있습니다.즉, 이 문서의 모범 사례를 준수합니다. 다른 기본 구성 요소를 사용하면 일반적으로 이러한 규칙을 위반하게 됩니다.
 
 이러한 구성 요소는 [Adobe Campaign 구성 요소에 자세히 설명되어 있습니다](/help/sites-authoring/adobe-campaign-components.md).
