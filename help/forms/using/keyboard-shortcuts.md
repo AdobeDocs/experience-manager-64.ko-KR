@@ -6,10 +6,10 @@ seo-description: 이 문서에서는 적응형 양식 편집기, 테마 편집�
 uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
-topic-tags: correspondence-management
+topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1172'
 ht-degree: 5%
@@ -50,8 +50,8 @@ ht-degree: 5%
 >
 >데스크톱 장치에서의 다중 선택:
 >
->* Windows: 필요한 구성 요소를 Ctrl+클릭합니다.
->* MAC OS: Command+필수 구성 요소를 클릭합니다.
+>* Windows:필요한 구성 요소를 Ctrl+클릭합니다.
+>* MAC OS:Command+필수 구성 요소를 클릭합니다.
 
 >
 
@@ -112,7 +112,7 @@ ht-degree: 5%
    <td>Command+Shift+왼쪽 화살표</td> 
   </tr>
   <tr>
-   <td><p>선택 영역을 단락의 시작 부분으로 확장</p> </td> 
+   <td><p>단락 시작 부분까지 선택 영역 확장</p> </td> 
    <td><p>Ctrl+Shift+위쪽 화살표</p> </td> 
    <td>Command+Shift+위쪽 화살표</td> 
   </tr>
@@ -198,7 +198,7 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>커서를 시작 위치로 이동</p> </td> 
-   <td><p>Ctrl+홈</p> </td> 
+   <td><p>하나씩</p> </td> 
    <td>Command+위쪽 화살표</td> 
   </tr>
   <tr>
