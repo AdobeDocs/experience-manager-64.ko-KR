@@ -7,10 +7,10 @@ uuid: b8dcb28e-4604-4da5-b8dd-4e1e2cbdda18
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
-topic-tags: Security
+topic-tags: Security, configuring
 discoiquuid: 86e8dc12-608d-4aff-ba7a-5524f6b4eb0d
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 0%
@@ -45,26 +45,26 @@ AEM 인스턴스에 대해 SSO를 구성하려면 [SSO 인증 핸들러를 구�
 
    예를 들어 NTLM 세트의 경우:
 
-   * **경로:** 필요한 경우 예를 들면 `/`
+   * **경로:** 필요한 경우예를 들면 `/`
    * **헤더 이름**: `LOGON_USER`
    * **ID 형식**: `^<DOMAIN>\\(.+)$`
 
       여기서 `<*DOMAIN*>` 는 사용자의 도메인 이름으로 대체됩니다.
    CoSign:
 
-   * **경로:** 필요한 경우 예를 들면 `/`
-   * **헤더 이름**: remote_user
+   * **경로:** 필요한 경우예를 들면 `/`
+   * **헤더 이름**:remote_user
    * **ID 형식:** AsIs
 
    SiteMinder의 경우:
 
-   * **경로:** 필요한 경우 예를 들면 `/`
+   * **경로:** 필요한 경우예를 들면 `/`
    * **헤더 이름:** SM_USER
-   * **ID 형식**: AsIs
+   * **ID 형식**:AsIs
 
 
 
-1. 단일 사인온이 필요에 따라 작동하는지 확인합니다. 권한 부여 포함.
+1. 단일 사인온이 필요에 따라 작동하는지 확인합니다.권한 부여 포함.
 
 >[!CAUTION]
 >
@@ -109,7 +109,7 @@ IIS:
 
 
 
-Felix Console의 Authenticator 옵션을 사용하면 컨텐츠 트리의 모든 섹션에 **적용되는** 인증 핸들러를 확인할 수 있습니다. 예를 들면 다음과 같습니다.
+Felix Console의 Authenticator 옵션을 사용하면 컨텐츠 트리의 모든 섹션에 **적용되는** 인증 핸들러를 확인할 수 있습니다.예를 들면 다음과 같습니다.
 
 `http://localhost:4502/system/console/slingauth`
 
