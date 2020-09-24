@@ -7,10 +7,10 @@ uuid: cbb598bb-ec8f-4985-97af-7c87f5891c66
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
-topic-tags: best-practices
+topic-tags: null
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1530'
 ht-degree: 1%
@@ -60,7 +60,7 @@ Live Copy는 [일반 페이지](/help/sites-administering/msm-livecopy.md#creati
 블루프린트 구성을 사용하면 다음과 같은 이점이 있습니다.
 
 * 작성자가 블루프린트에서 **롤아웃** 옵션을 사용할 수 있도록 허용 - 이 블루프린트에서 상속되는 Live Copy에 수정 내용을 푸시할 수 있습니다.
-* 작성자가 사이트 **만들기를 사용하도록 허용**; 따라서 사용자는 손쉽게 언어를 선택하고 live copy의 구조를 구성할 수 있습니다.
+* 작성자가 사이트 **만들기를 사용하도록 허용**;따라서 사용자는 손쉽게 언어를 선택하고 live copy의 구조를 구성할 수 있습니다.
 * 블루프린트와 관련된 Live Copy에 대한 기본 롤아웃 구성을 정의합니다.
 
 블루프린트 구성이 참조되지 않는 경우 롤아웃은 Live Copy 자체에서만 시작할 수 있으므로 기본적으로 소스에서 컨텐츠를 가져올 수 있습니다.
@@ -138,7 +138,7 @@ MSM은 다음 두 가지 방법으로 다국어 웹 사이트 제작을 지원�
 * **블루프린트의 페이지를 이동하면** 표준 롤아웃 구성을 사용하여 롤아웃 후 해당 페이지가 Live Copy로 이동되지 **않습니다** .
 
    * 이러한 비헤이비어의 원인은 페이지 이동이 암시적으로 페이지 삭제를 포함하기 때문입니다. 게시에서 페이지를 삭제하면 해당 컨텐츠가 자동으로 비활성화되므로 게시에서는 예기치 않은 동작이 발생할 수 있습니다. 링크, 책갈피 및 기타 같은 관련 항목에도 노크 효과를 적용할 수 있습니다.
-   * Live Copy 페이지의 컨텐츠 상속은 블루프린트에서 해당 소스의 새 위치를 반영하도록 업데이트됩니다.
+   * Live Copy 페이지의 컨텐츠 상속은 블루프린트에서 소스의 새 위치를 반영하도록 업데이트됩니다.
    * 페이지가 Live Copy로 이동하는 것을 완전히 실현하려면 다음 우수 사례를 고려하십시오.
 
 >[!NOTE]
@@ -171,7 +171,7 @@ MSM은 다음 두 가지 방법으로 다국어 웹 사이트 제작을 지원�
 
 MSM 롤아웃 구성은 사용자 지정이 가능합니다. 롤아웃을 자동화하면 결과가 매우 달라질 수 있습니다. 모범 사례로서, 다음 *과 같이 매우* 신중하게 계획해야 합니다.
 
-* 자동 롤아웃; 예를 들어 onModify [트리거를 사용할 경우](#onmodify),
+* 자동 롤아웃;예를 들어 onModify [트리거를 사용할 경우](#onmodify),
 * 사용자 [지정 노드 유형/속성](#node-types-properties),
 * 후속 워크플로우 시작,
 * 및/또는 롤아웃의 일부로 컨텐츠 활성화.
