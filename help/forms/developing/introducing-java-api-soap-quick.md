@@ -7,10 +7,10 @@ uuid: 480e1809-f789-4ad8-b5d5-2d97aba8411a
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: development-tools
+topic-tags: development-tools, develop
 discoiquuid: 38fd51ec-347e-4ae3-86d4-9d2429f79bdd
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 0%
@@ -65,21 +65,21 @@ JAR 파일 목록은 빠른 시작 시작 부분에 있는 주석 섹션에 있�
 
 ## 여러 서비스 빠른 시작 {#multiple-services-quick-start}
 
-대부분의 빠른 시작은 *AEM Forms과 함께 프로그래밍 *에서 작업을 수행하기 위해 특정 서비스를 불러옵니다. 그러나 일부 빠른 시작 기능은 주어진 워크플로우를 수행하기 위해 여러 개의 AEM Forms 서비스를 불러옵니다. 다음 목록은 두 개 이상의 AEM Forms 서비스를 호출하는 Java 빠른 시작을 제공합니다.
+대부분의 빠른 시작은 *AEM Forms과 함께 프로그래밍 *에서 작업을 수행하기 위해 특정 서비스를 불러옵니다. 그러나 일부 빠른 시작 기능은 지정된 워크플로우를 수행하기 위해 여러 AEM Forms 서비스를 불러옵니다. 다음 목록은 두 개 이상의 AEM Forms 서비스를 호출하는 Java 빠른 시작을 제공합니다.
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 AEM Forms 저장소에 있는 문서를 출력 서비스로](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) 전달(저장소 및 출력 서비스 호출)
+[빠른 시작(SOAP 모드):Java API를 사용하여 AEM Forms 저장소에 있는 문서를 출력 서비스로](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) 전달(저장소 및 출력 서비스 호출)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 조각을 기반으로](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api) PDF 문서 만들기(어셈블리 및 출력 서비스 호출)
+[빠른 시작(SOAP 모드):Java API를 사용하여 조각을 기반으로](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api) PDF 문서 만들기(어셈블리 및 출력 서비스 호출)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 제출된 XML 데이터를 사용하여 PDF 문서 작성](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api) (Forms, 출력 및 문서 관리 서비스 호출)
+[빠른 시작(SOAP 모드):Java API를 사용하여 제출된 XML 데이터를 사용하여 PDF 문서 작성](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api) (Forms, 출력 및 문서 관리 서비스 호출)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 Forms 서비스에 문서](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api) 전달(Forms 및 문서 관리 서비스 호출)
+[빠른 시작(SOAP 모드):Java API를 사용하여 Forms 서비스에 문서](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api) 전달(Forms 및 문서 관리 서비스 호출)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 XFA 기반 양식에 디지털](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api) 서명(Forms 및 서명 서비스 호출)
+[빠른 시작(SOAP 모드):Java API를 사용하여 XFA 기반 양식에 디지털](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api) 서명(Forms 및 서명 서비스 호출)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 역할 및 권한](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api) 관리(DirectoryManager 및 AuthorizationManager 서비스 호출)
+[빠른 시작(SOAP 모드):Java API를 사용하여 역할 및 권한](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api) 관리(DirectoryManager 및 AuthorizationManager 서비스 호출)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 문서를 출력 서비스에](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api) 전달(출력 및 문서 관리 서비스 호출)
+[빠른 시작(SOAP 모드):Java API를 사용하여 문서를 출력 서비스에](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api) 전달(출력 및 문서 관리 서비스 호출)
 
 >[!NOTE]
 >
