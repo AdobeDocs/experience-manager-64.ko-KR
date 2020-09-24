@@ -3,10 +3,10 @@ description: 'Experience League의 Dynamic Media 뉴스레터는 월간 뉴스�
 keywords: dynamic media;newsletter;product updates;tips and tricks;events;customer success;blog;blogs;images;videos;features;capabilities
 seo-description: 비디오 방법, 솔루션 개요, 이미지 사전 설정, 뷰어 사전 설정, 비디오 프로필 등과 같은 일부 주요 기능과 기능에 대한 도입 등 이 원스톱 Shop 뉴스레터에서는 지식 작성 리소스를 이용할 수 있습니다.
 seo-title: 'Adobe Dynamic Media 뉴스레터 '
-solution: Dynamic Media
+solution: Dynamic Media Classic
 title: 다이내믹 미디어 뉴스레터
 translation-type: tm+mt
-source-git-commit: 787fcf312eabcb44cfe114b5b3b80341fa295637
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Adobe Experience League의 월별 Dynamic Media 뉴스레터는 Dynamic Media �
    이 문제:
 
    * 새로운 스킬 빌더 웨비나에 참석하여 Dynamic Media Classic 전문가로 탈바꿈시킬 수 있습니다.
-   * 2020년 Adobe Summit에서 다이내믹 미디어를 어디에서 찾을 수 있는지 살펴보십시오.
+   * 2020년 Adobe Summit에서 다이내믹 미디어를 찾을 수 있습니다.
    * 다이내믹 미디어의 자르기 기능을 사용하는 방법을 살펴볼 수 있습니다.
    * 무료 감사를 활용하여 Dynamic Media Classic의 가치를 높일 수 있습니다.
    * Dynamic Media Classic의 새로운 사용자 인터페이스에 대해 알아보십시오.
@@ -87,7 +87,7 @@ Adobe Experience League의 월별 Dynamic Media 뉴스레터는 Dynamic Media �
    * 뉴스레터를 동료와 공유하여 팀의 전문 지식을 쌓으십시오.
    * 다이내믹 미디어 선임 제품 관리자인 Apoorva Gupta를 만나보십시오.
 
-* **[October 2019, Issue 10](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_10_2019_Oct.html)**
+* **[2019년 10월, 발행물 10일](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_10_2019_Oct.html)**
 
    이 문제:
 
