@@ -7,10 +7,10 @@ uuid: 89f2fd3d-63d7-4b70-b335-47314441f3ec
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: development-tools
+topic-tags: development-tools, coding
 discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
 translation-type: tm+mt
-source-git-commit: 11ce2d736f261daa789b94d23e2a5ca64192cefe
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '909'
 ht-degree: 0%
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 서비스 컨테이너는 다음 기능을 제공합니다.
 
-* 다른 방법을 사용하여 AEM Forms 서비스를 호출할 수 있습니다. 모든 메서드를 사용하여 호출할 수 있도록 끝점을 설정하여 서비스를 구성할 수 있습니다. Remoting, the Java API, web services, and REST. 자세한 내용은 프로그래밍 [방식으로 끝점 관리를 참조하십시오](/help/forms/developing/programmatically-endpoints.md#programmatically-managing-endpoints).
+* 다른 방법을 사용하여 AEM Forms 서비스를 호출할 수 있습니다. 모든 메서드를 사용하여 호출할 수 있도록 끝점을 설정하여 서비스를 구성할 수 있습니다.Remoting, the Java API, web services, and REST. 자세한 내용은 프로그래밍 [방식으로 끝점 관리를 참조하십시오](/help/forms/developing/programmatically-endpoints.md#programmatically-managing-endpoints).
 * 메시지를 호출 요청이라는 정규화된 형식으로 변환합니다. 클라이언트 응용 프로그램(또는 다른 서비스)에서 서비스 컨테이너에 있는 서비스로 호출 요청이 전송됩니다. 호출 요청에는 호출할 서비스 이름 및 작업을 수행하는 데 필요한 데이터 값과 같은 정보가 포함됩니다. 대부분의 서비스는 작업을 수행하는 문서를 필요로 합니다. 따라서 호출 요청에는 일반적으로 PDF 데이터, XDP 데이터, XML 데이터 등의 문서가 포함됩니다.
 * 호출 요청을 해당 서비스로 라우팅합니다(호출할 서비스의 이름은 호출 요청의 일부임).
 * 호출자에게 지정된 서비스 작업을 호출할 권한이 있는지 여부를 확인하는 등의 작업을 수행합니다. 호출 요청에는 올바른 AEM 양식 사용자 이름과 암호가 포함되어야 합니다.
