@@ -7,10 +7,10 @@ uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: development-tools
+topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 0%
@@ -32,7 +32,7 @@ ht-degree: 0%
 * 프로세스는 조직의 경계를 확장할 수 있습니다.
 * 프로세스를 완료하려면 외부 입력이 필요합니다. 예를 들어 사무실 밖에 있는 관리자에게 양식이 전송되는 상황을 고려해 보십시오. 이 경우 관리자가 양식을 반환하고 채울 때까지 프로세스가 완료되지 않습니다.
 
-   이러한 유형의 프로세스를 오래 지속되는 과정이라고 합니다. 시스템은 리소스 권한 부여로 상호 작용하고 작업을 추적 및 모니터링할 수 있도록 하며, 긴 기간의 프로세스는 비동기적으로 수행됩니다. 긴 기간의 프로세스가 호출되면, AEM Forms은 긴 기간의 프로세스 상태를 추적하는 레코드의 일부로서 호출 식별자 값을 생성합니다. 레코드는 AEM Forms 데이터베이스에 저장됩니다. 더 이상 필요하지 않은 긴 프로세스 레코드를 삭제할 수 있습니다.
+   이러한 유형의 프로세스를 오래 지속되는 과정이라고 합니다. 시스템은 리소스 권한 부여로 상호 작용하고 작업을 추적 및 모니터링할 수 있도록 하며, 긴 기간의 프로세스는 비동기적으로 수행됩니다. 긴 기간의 프로세스가 호출되면, AEM Forms은 긴 기간의 프로세스 상태를 추적하는 레코드의 일부로서 호출 식별자 값을 생성합니다. 기록은 AEM Forms 데이터베이스에 저장됩니다. 더 이상 필요하지 않은 긴 프로세스 레코드를 삭제할 수 있습니다.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 호출 식별자 값을 사용하여 긴 프로세스 상태를 추적할 수 있습니다. 예를 들어 프로세스 호출 식별자 값을 사용하여 실행 중인 프로세스 인스턴스 종료와 같은 프로세스 관리자 작업을 수행할 수 있습니다.
 
-**짧은 사용 프로세스 예**
+**단기 체류 프로세스 예**
 
 다음 그림은 MyApplication/EncryptDocument라는 짧은 *프로세스 예입니다*.
 
