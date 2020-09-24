@@ -5,11 +5,11 @@ description: 적응형 양식에서 XML 스키마를 양식 모델로 사용할 
 seo-description: 적응형 양식에서 XML 스키마를 양식 모델로 사용할 수 있으므로 기존 XSD 템플릿을 활용하여 적응형 양식을 만들 수 있습니다. XSD의 스키마 요소를 적응형 양식으로 드래그하여 놓을 수 있습니다.
 uuid: a5f5d423-9b83-47e8-b0fa-88210d0d18d9
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a1070d9e-fb7c-4134-b6d5-ffa2d3e9718d
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1081'
 ht-degree: 5%
