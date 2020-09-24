@@ -6,10 +6,10 @@ seo-description: AEM Inbox를 사용하면 애플리케이션을 제출하고 �
 uuid: 5173558a-542a-4130-8bb6-5ac555ecc507
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
-topic-tags: publish
+topic-tags: document_services, publish
 discoiquuid: c1515c58-7d9a-4a36-9390-f6d6b980b801
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 0%
@@ -35,7 +35,7 @@ AEM 받은 편지함의 애플리케이션을 통해 Forms 중심 워크플로�
 
 1. 의 AEM 받은 편지함으로 `https://[server]:[port]/aem/inbox`이동합니다.
 1. 받은 편지함 UI에서 **[!UICONTROL 만들기 > 응용 프로그램을 누릅니다]**. 애플리케이션 선택 페이지가 나타납니다.
-1. 애플리케이션을 선택하고 만들기를 **[!UICONTROL 클릭합니다]**. 응용 프로그램과 연결된 응용 양식이 열립니다. 양식을 채우고 [제출]을 **[!UICONTROL 누릅니다]**. 연결된 워크플로우를 실행하고 할당자의 받은 편지함에 작업을 만듭니다.
+1. 애플리케이션을 선택하고 만들기를 **[!UICONTROL 클릭합니다]**. 응용 프로그램과 연관된 응용 양식이 열립니다. 양식을 채우고 [제출]을 **[!UICONTROL 누릅니다]**. 연결된 워크플로우를 실행하고 할당자의 받은 편지함에 작업을 만듭니다.
 
 ## 작업 관리 {#manage-tasks}
 
