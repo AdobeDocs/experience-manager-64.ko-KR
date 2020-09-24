@@ -8,7 +8,7 @@ contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1763'
 ht-degree: 0%
@@ -24,8 +24,7 @@ ht-degree: 0%
 
 사용자를 만들 때 그룹에 사용자를 추가하고 그룹에 역할을 할당할 수 있습니다.
 
-1. 관리 콘솔에서 **[!UICONTROL 설정 > 사용자 관리 > 사용자 및 그룹을]**&#x200B;클릭하고 **[!UICONTROL 새 사용자를 클릭합니다]**.
-.
+1. 관리 콘솔에서 **[!UICONTROL 설정 > 사용자 관리 > 사용자 및 그룹을]**&#x200B;클릭하고 **[!UICONTROL 새 사용자를 클릭합니다]**..
 1. [ **[!UICONTROL 일반 설정]**]에서 필요에 따라 정보를 제공한 다음 [다음]을 **[!UICONTROL 클릭합니다]**. 설정에 대한 자세한 내용은 [사용자 설정을 참조하십시오](adding-configuring-users.md#user-settings).
 1. (선택 사항) 사용자를 그룹에 추가하려면 [그룹 **[!UICONTROL 찾기]**]를 클릭하고 다음 작업을 수행합니다.
 
@@ -168,7 +167,7 @@ MySQL을 사용하는 경우 사용자 ID에 확장 문자가 포함될 수 있�
 * 통신 관리 솔루션
 * AEM forms Workspace
 
-   ***참고&#x200B;**: Flex 작업 영역은 AEM 양식 릴리스에서 더 이상 사용되지 않습니다.*
+   ***참고&#x200B;**:Flex 작업 영역은 AEM 양식 릴리스에서 더 이상 사용되지 않습니다.*
 
 * 양식 관리자
 * 프로세스 보고
