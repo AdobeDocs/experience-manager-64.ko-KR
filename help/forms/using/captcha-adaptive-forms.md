@@ -6,10 +6,10 @@ seo-description: 적응형 양식으로 AEM CAPTCHA 또는 Google reCAPTCHA 서�
 uuid: 8bcb0dd7-b43c-4a36-8f6b-7875b68f9ba1
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: author
+topic-tags: author, adaptive_forms
 discoiquuid: 32369b0b-5abf-487d-ae6b-972c254eb7e2
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 0%
@@ -31,7 +31,7 @@ AEM Forms은 적응형 양식의 CAPTCHA를 지원합니다. Google의 reCAPTCHA
 
 ## Google에서 ReCAPTCHA 서비스 구성 {#google-recaptcha}
 
-양식 작성자는 Google의 reCAPTCHA 서비스를 사용하여 적응형 양식에 CAPTCHA를 구현할 수 있습니다. 사이트를 보호하는 고급 CAPTCHA 기능을 제공합니다. reCAPTCHA의 작동 방식에 대한 자세한 내용은 [Google reCAPTCHA를 참조하십시오](https://developers.google.com/recaptcha/).
+양식 작성자는 Google의 reCAPTCHA 서비스를 사용하여 적응형 양식에 CAPTCHA를 구현할 수 있습니다. 사이트를 보호하는 고급 CAPTCHA 기능을 제공합니다. reCAPTCHA 작동 방식에 대한 자세한 내용은 [Google reCAPTCHA를 참조하십시오](https://developers.google.com/recaptcha/).
 
 ![apaptrcha](assets/recaptcha.png)
 
