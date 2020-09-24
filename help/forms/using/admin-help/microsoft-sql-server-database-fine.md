@@ -1,16 +1,16 @@
 ---
-title: '"Microsoft SQL Server 데이터베이스: 구성을 세밀하게 조정"'
-seo-title: '"Microsoft SQL Server 데이터베이스: 구성을 세밀하게 조정"'
+title: '"Microsoft SQL Server 데이터베이스:구성을 세밀하게 조정"'
+seo-title: '"Microsoft SQL Server 데이터베이스:구성을 세밀하게 조정"'
 description: Microsoft SQL Server 데이터베이스 구성을 세밀하게 조정하는 방법을 알아봅니다.
 seo-description: Microsoft SQL Server 데이터베이스 구성을 세밀하게 조정하는 방법을 알아봅니다.
 uuid: 2d618aab-3c67-4edb-a28f-a20904689e6f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS, SG_AEMFORMS
 discoiquuid: 70559a94-42ea-411a-a32f-5f38bc17ff96
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Microsoft SQL Server 데이터베이스: 구성 세부 조정 {#microsoft-sql-server-database-fine-tuning-the-configuration}
+# Microsoft SQL Server 데이터베이스:구성 세부 조정 {#microsoft-sql-server-database-fine-tuning-the-configuration}
 
 Microsoft SQL Server를 사용할 때는 기본 구성 설정을 변경해야 합니다. Oracle Enterprise Manager에서 로컬 서버를 마우스 오른쪽 단추로 눌러 등록 정보 대화 상자에 액세스합니다.
 
@@ -36,6 +36,6 @@ Microsoft SQL Server를 사용할 때는 기본 구성 설정을 변경해야 �
 
 >[!NOTE]
 >
->이 설정은 시작 시 수행해야 하는 로그 파일 재생의 길이만 변경하므로 트랜잭션 비헤이비어가 손상되지 않습니다.
+>이 설정은 시작 시 수행해야 하는 로그 파일 재생의 길이만 변경되므로 트랜잭션 비헤이비어는 손상되지 않습니다.
 
 로그와 데이터 파일 모두에 대해 공간 할당 크기를 초기 데이터베이스보다 훨씬 크게 설정합니다. 데이터베이스가 1년 동안 얼마나 성장할 수 있는지 고려하십시오. 가장 좋은 방법은 로그 및 데이터 파일이 인접한 범위로 할당되므로 데이터가 디스크 전체에 걸쳐 조각화되지 않습니다.
