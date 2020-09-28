@@ -3,10 +3,10 @@ description: 'Experience League의 Dynamic Media 뉴스레터는 월간 뉴스�
 keywords: dynamic media;newsletter;product updates;tips and tricks;events;customer success;blog;blogs;images;videos;features;capabilities
 seo-description: 비디오 방법, 솔루션 개요, 이미지 사전 설정, 뷰어 사전 설정, 비디오 프로필 등과 같은 일부 주요 기능과 기능에 대한 도입 등 이 원스톱 Shop 뉴스레터에서는 지식 작성 리소스를 이용할 수 있습니다.
 seo-title: 'Adobe Dynamic Media 뉴스레터 '
-solution: Dynamic Media Classic
+solution: Dynamic Media
 title: 다이내믹 미디어 뉴스레터
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 8038ae762811bc376768be7fff143521629bc96a
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 0%
