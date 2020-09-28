@@ -1,16 +1,17 @@
 ---
-title: AEM 6.4 Assets 사용 안내서
+title: 자산 안내서
 description: 이 안내서에서는 디지털 자산 만들기, 관리, 제공 및 최적화 방법과 같은 모든 AEM Assets 작업을 다룹니다.
+user-guide-title: 자산 안내서
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: 405733b2084621773c2992121be8d540eeba39a9
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 100%
+source-wordcount: '336'
+ht-degree: 98%
 
 ---
 
 
-# AEM 6.4 Assets 사용 안내서
+# 자산 안내서
 
 이 안내서에서는 디지털 자산 만들기, 관리, 제공 및 최적화 방법과 같은 모든 AEM Assets 작업을 다룹니다.
 
