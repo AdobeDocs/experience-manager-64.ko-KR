@@ -2,19 +2,19 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Assets 사용 안내서
+user-guide-title: 자산 안내서
 breadcrumb-title: Assets Guide
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
+source-git-commit: 405733b2084621773c2992121be8d540eeba39a9
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 66%
+source-wordcount: '714'
+ht-degree: 65%
 
 ---
 
 
-# AEM 6.4 Assets 사용 안내서 {#assets}
+# 자산 안내서 {#assets}
 
 + [자산 사용 안내서](home.md)
 + [AEM 6.4 Assets 릴리스 노트](https://docs.adobe.com/content/help/ko-KR/experience-manager-64/release-notes/assets.html)
