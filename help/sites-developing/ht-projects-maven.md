@@ -10,10 +10,10 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aee5f5a7-8462-4d42-8d96-8a7eb317770e
 translation-type: tm+mt
-source-git-commit: b46164c81890a41e3811a65534c264884e8562fc
+source-git-commit: 821cbc7fc1f92f1ac2a4044798c7e008c6248b92
 workflow-type: tm+mt
-source-wordcount: '2247'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +31,7 @@ Maven을 기반으로 AEM 프로젝트를 빌드하면 다음과 같은 몇 가�
 * IDE에 관계없이 개발 환경
 * Adobe이 제공하는 마웬 원형과 유물의 활용
 * Maven 기반 개발 설정을 위한 Apache Sling 및 Apache Felix 도구 세트의 사용
-* 간편한 IDE 가져오기 예: Eclipse 및/또는 IntelliJ
+* 간편한 IDE 가져오기예: Eclipse 및/또는 IntelliJ
 * 지속적인 통합 시스템과의 간편한 통합
 
 ## Experience Manager API 종속성 {#experience-manager-api-dependencies}
@@ -60,6 +60,10 @@ Maven을 기반으로 AEM 프로젝트를 빌드하면 다음과 같은 몇 가�
 
 회사에서 이미 Sonatype Nexus, Apache Archiva 또는 JFrog Artitfactory와 같은 Maven Repository Manager를 사용하고 있는 경우 프로젝트에 적절한 구성을 추가하여 이 저장소 관리자를 참조하고 Adobe Maven 리포지토리([https://repo.adobe.com/nexus/content/groups/public/](https://repo.adobe.com/nexus/content/groups/public/))를 저장소 관리자에 추가합니다.
 
+>[!NOTE]
+>
+>AEM 6.4.8.2부터는 UberJar 및 기타 관련 아티팩트를 Adobe Public Maven 리포지토리(repo.adobe.com) 대신 [Maven Central 리포지토리에서](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/) 사용할 수 있습니다. 기본 UberJar 파일의 이름이 로 변경되었습니다 `uber-jar-<version>.jar`. 그 결과, 태그 `classifier`에 대한 값 `apis` 이 없는 `dependency` 것으로 나타났습니다.
+
 저장소 관리자를 사용하고 있지 않은 경우 *저장소* 요소를 pom.xml 파일에 추가해야 *합니다* .
 
 ```xml
@@ -67,7 +71,7 @@ Maven을 기반으로 AEM 프로젝트를 빌드하면 다음과 같은 몇 가�
     <repository>
         <id>adobe-public-releases</id>
         <name>Adobe Public Repository</name>
-        <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+        <url>https://repo.maven.apache.org/maven2/</url>
         <layout>default</layout>
     </repository>
 </repositories>
@@ -75,7 +79,7 @@ Maven을 기반으로 AEM 프로젝트를 빌드하면 다음과 같은 몇 가�
     <pluginRepository>
         <id>adobe-public-releases</id>
         <name>Adobe Public Repository</name>
-        <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+        <url>https://repo.maven.apache.org/maven2/</url>
         <layout>default</layout>
     </pluginRepository>
 </pluginRepositories>
@@ -344,7 +348,7 @@ SCR 생성과 마찬가지로, 코드가 AEM API에서 기본 클래스(추상 �
 
 * 패키지 `content-package-maven-plugin` 에 포함할 컨텐츠를 결정하기 위해
 * VLT 도구를 사용하여 고려할 경로를 결정합니다.
-* AEM Package Manager에서 패키지가 다시 빌드되는 경우, 이 설정은
+* aem Package Manager에서 패키지가 다시 빌드되는 경우, 이 설정은
 
 응용 프로그램의 요구 사항에 따라 다음과 같이 더 많은 컨텐츠를 포함하도록 이러한 경로에 추가할 수 있습니다.
 
@@ -405,7 +409,7 @@ content-package-maven-plugin을 통해 빌드했지만 파일 시스템과 저�
 </workspaceFilter>
 ```
 
-패키지에 이러한 파일을 포함하지 않도록 maven-resources-plugin을 다시 구성해야 합니다. 패키지 설치 시 filter.xml 파일은 적용되지 않지만 패키지 관리자를 사용하여 패키지를 다시 빌드할 때만 적용됩니다.
+패키지에 이러한 파일을 포함하지 않도록 maven-resources-plugin을 다시 구성해야 합니다.패키지 설치 시 filter.xml 파일은 적용되지 않지만 패키지 관리자를 사용하여 패키지를 다시 빌드할 때만 적용됩니다.
 
 콘텐트 `<resources>` 창의 섹션을 다음과 같이 변경합니다.
 
@@ -619,7 +623,7 @@ maven-eclipse.xml
 
 SCM에서 이 파일을 원하지 않을 수 있으므로 git을 사용하는 경우 해당 파일을 추가합니다. `gitignore` 파일:
 
-#### src/main/content/jcr_root/apps/myproject/install/.gitgnore {#src-main-content-jcr-root-apps-myproject-install-gitignore}
+#### src/main/content/jcr_root/apps/myproject/install/.gitignore {#src-main-content-jcr-root-apps-myproject-install-gitignore}
 
 ```shell
 *.jar
