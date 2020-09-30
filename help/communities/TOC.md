@@ -6,17 +6,17 @@ user-guide-title: AEM 6.4 Communities 사용 안내서
 breadcrumb-title: Communities Guide
 user-guide-description: Create online experiences such as forums, user groups, learning resources, and other social features.
 translation-type: tm+mt
-source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
+source-git-commit: 5542ec45e64595a8e7159d925fdcbfff468ae7ec
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 9%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # AEM 6.4 Communities 사용 안내서 {#communities}
 
-+ [커뮤니티 사용 안내서 개요](home.md)
++ [AEM Communities 개요](home.md)
 + Introduction to AEM Communities {#introduction}
    + [커뮤니티 사이트](administer-landing.md)
    + [AEM Communities 개요](overview.md)
