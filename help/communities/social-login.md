@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: 5542ec45e64595a8e7159d925fdcbfff468ae7ec
 workflow-type: tm+mt
-source-wordcount: '2834'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 0%
       * Twitter [Connect 클라우드 서비스를 만들고 게시합니다](#create-a-twitter-connect-cloud-service).
 
 
-1. [**커뮤니티 사이트에&#x200B;**소셜 로그인](#enable-social-login)기능을 활성화합니다.
+1. [**커뮤니티 사이트에** 소셜 로그인](#enable-social-login) 기능을 활성화합니다.
 
 두 가지 기본 개념이 있습니다.
 
@@ -87,7 +87,7 @@ Facebook 애플리케이션을 만들려면 https://developers.facebook.com/apps
       * 사이트 *URL에*&#x200B;대해 `  https://<server>:<port>.`
    * 표시 *이름*&#x200B;에 Facebook Connect 서비스의 제목으로 사용할 제목을 입력합니다.
    * 카테고리 *의 경우*, 페이지용 *앱 선택* 을 권장하지만, 무엇이든 될 수 있습니다.
-   * *제품 추가:  Facebook 로그인*
+   * *제품 추가: Facebook 로그인*
       * 유효한 *OAuth 리디렉션 URI에*&#x200B;대해 `  https://<server>:<port>.`
 
 >[!NOTE]
@@ -98,7 +98,7 @@ Facebook 애플리케이션을 만들려면 https://developers.facebook.com/apps
 
 ### Facebook Connect Cloud Service 만들기 {#create-a-facebook-connect-cloud-service}
 
-클라우드 서비스 구성을 만들어 인스턴스화된 [ [Adobe [OAuth 응용 프로그램 및 공급자](https://chl-author.corp.adobe.com/content/help/en/experience-manager/6-4/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) ] 인스턴스는 Facebook 응용 프로그램 및 새 사용자가 추가된 멤버 그룹을 식별합니다.
+클라우드 서비스 구성을 만들어 인스턴스화된 [ [Adobe [OAuth 응용 프로그램 및 공급자](#adobe-granite-oauth-application-and-provider) ] 인스턴스는 Facebook 응용 프로그램 및 새 사용자가 추가된 멤버 그룹을 식별합니다.
 
 1. AEM 작성자 인스턴스에서 관리자 권한으로 로그인합니다.
 1. 전역 탐색에서 **[!UICONTROL 도구 > Cloud Services > Facebook Social 로그인 구성을 선택합니다]**.
@@ -119,8 +119,8 @@ Facebook 애플리케이션을 만들려면 https://developers.facebook.com/apps
    * **[!UICONTROL 앱 ID/API 키]** (*필수****) Facebook 앱에*** 대한 앱 ID를입력합니다. 대화 상자에서 만든 [Adobe [OAuth 응용 프로그램 및 공급자](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) 인스턴스]를 식별합니다.
    * **[!UICONTROL 앱 암호]** (*필수****)*** Facebook 앱에 대한앱암호를 입력합니다.
    * **[!UICONTROL 사용자]** 만들기 이 확인란을 선택하면 Facebook 계정으로 로그인하면 AEM 사용자 항목이 만들어지고 선택한 사용자 그룹에 구성원으로 추가됩니다.  기본값이 선택됨(적극 권장)
-   * **[!UICONTROL 마스크 사용자 ID]**: 선택 해제한 상태로 둡니다.
-   * **[!UICONTROL 범위 이메일]**: 사용자의 이메일 ID를 Facebook에서 가져와야 합니다.
+   * **[!UICONTROL 마스크 사용자 ID]**:선택 해제한 상태로 둡니다.
+   * **[!UICONTROL 범위 이메일]**:사용자의 이메일 ID를 Facebook에서 가져와야 합니다.
    * **[!UICONTROL 사용자 그룹에]** 추가를 선택하여 사용자를 추가할 커뮤니티 사이트에 대해 하나 이상의 [구성원 그룹을](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) 선택합니다.
 
    >[!NOTE]
@@ -233,11 +233,11 @@ Twitter 소셜 로그인을 활성화하려면 구성된 Twitter 애플리케이
 
 Twitter 애플리케이션 관리의 권한 섹션에서 다음을 수행합니다.
 
-* **[!UICONTROL 액세스]**: 선택합니다 `Read only`.
+* **[!UICONTROL 액세스]**:선택합니다 `Read only`.
 
    * 다른 옵션은 지원되지 않습니다.
 
-* **[!UICONTROL 추가 권한]**: 원하는 경우 선택합니다 `Request email addresses from users`.
+* **[!UICONTROL 추가 권한]**:원하는 경우 선택합니다 `Request email addresses from users`.
 
    * 선택하지 않으면 AEM의 사용자 프로필에 이메일 주소가 포함되지 않습니다.
    * Twitter의 지침에 따라 수행해야 할 추가 단계가 나와 있습니다.
@@ -354,7 +354,7 @@ AEM Communities 구성은 [ [Adobe [Granite OAuth 응용 프로그램 및 Provid
 * Facebook 또는 Twitter에 아직 로그인하지 않은 경우 해당 자격 증명으로 로그인합니다
 * Facebook 또는 Twitter 앱에서 표시되는 대화 상자에 따라 권한을 부여해야 할 수 있습니다
 * 페이지 상단의 도구 모음이 성공적인 로그인을 반영하도록 업데이트됨
-* 프로필 **[!UICONTROL 선택]**: 프로필 페이지에는 사용자의 아바타 이미지, 이름 및 성이 표시됩니다. 또한 허용된 필드/매개 변수에 따라 Facebook 또는 Twitter 프로필의 정보도 표시합니다.
+* 프로필 **[!UICONTROL 선택]**:프로필 페이지에는 사용자의 아바타 이미지, 이름 및 성이 표시됩니다. 또한 허용된 필드/매개 변수에 따라 Facebook 또는 Twitter 프로필의 정보도 표시합니다.
 
 ## AEM 플랫폼 OAuth 구성 {#aem-platform-oauth-configurations}
 
@@ -443,7 +443,7 @@ Facebook 또는 Twitter 앱에 대해 생성된 인스턴스를 찾으려면 다
 
 작성자 인스턴스에서 관리자 권한으로 로그인됨:
 
-1. 전역 탐색에서: 도구, **CRX/[DE Lite를 선택합니다](../../help/sites-developing/developing-with-crxde-lite.md).**
+1. 전역 탐색에서:도구, **CRX/[DE Lite를 선택합니다](../../help/sites-developing/developing-with-crxde-lite.md).**
 1. ntBaseLucene 사본에 ntBaseLucene-oauth라는 이름의 인덱스를 만듭니다.
 
    * 노드 아래/oak:index
@@ -455,10 +455,10 @@ Facebook 또는 Twitter 앱에 대해 생성된 인스턴스를 찾으려면 다
 
 1. 노드 ntBaseLucene-oauth의 속성을 수정합니다.
 
-   * **[!UICONTROL indexPath]**: /oak:index/ntLucene-oauth
-   * **[!UICONTROL 이름]**: oauthid-123xxxx
-   * **[!UICONTROL 다시 색인]**: true
-   * **[!UICONTROL reindexCount]**: 1
+   * **[!UICONTROL indexPath]**:/oak:index/ntLucene-oauth
+   * **[!UICONTROL 이름]**:oauthid-123xxxx
+   * **[!UICONTROL 다시 색인]**:true
+   * **[!UICONTROL reindexCount]**:3
 
 1. /oak:index/ntBaseLucene-oauth/indexRules/nt:base/properties:
 
@@ -466,11 +466,11 @@ Facebook 또는 Twitter 앱에 대해 생성된 인스턴스를 찾으려면 다
    * cqTags의 이름을 oauthid-123xxxx로 변경합니다.
    * 노드 authid-123xxxx의 속성을 수정합니다.
 
-      * **[!UICONTROL 이름]**: oauthid-123xxxx
+      * **[!UICONTROL 이름]**:oauthid-123xxxx
    * 모두 **[!UICONTROL 저장을 선택합니다]**.
 
 
-**&amp;ast;** OAUTHID- **123** 의 경우, FACEBOOK ID *또는 ID 또는 TwitterID* API *와 함께Facebook Authid또는 Twitter API* ****** ****** **** [](social-login.md#adobe-granite-oauth-application-and-provider)의 키Digital App의 값인AudioAuthor IdVAFinernarV의 클라이언트 IDV 및 VVVSVVASASSSSSSSVSSSSSSSSS를SSSSSS를SSSSSSSS를와 함께S를
+**&amp;ast;** OAUTHID- **123** 의 경우, FACEBOOK ID *또는 ID 또는 TwitterID* API *(Twitter API) Digital App의 값인Digital App의ID Granite ProvidedUth 클라이언트ID를Finishlite응용 프로그램의와 함께11111122222212222233333333* 33333 ****** 33 ***33*******[](social-login.md#adobe-granite-oauth-application-and-provider)2222222333333333334를
 
 ![chlimage_1-492](assets/chlimage_1-492.png)
 
