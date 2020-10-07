@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6696c325-d188-41c8-a39f-c8ae7f339fe8
 translation-type: tm+mt
-source-git-commit: b7be355f788f07eea2d1333abb4220dd645ef53f
+source-git-commit: e7da0bb7906c3ad3d04531db0abfbc658646f6e4
 workflow-type: tm+mt
-source-wordcount: '1843'
+source-wordcount: '1835'
 ht-degree: 7%
 
 ---
@@ -58,7 +58,6 @@ ht-degree: 7%
 * [AEM 플랫폼 소개](/help/sites-deploying/platform.md)
 * [성능 지침](/help/sites-deploying/performance-guidelines.md)
 * [AEM Mobile 시작하기](/help/mobile/getting-started-aem-mobile.md)
-* [릴리즈 차량 정의 갱신](/help/sites-deploying/update-release-vehicle-definitions.md)
 * [AEM Screens 소개](https://docs.adobe.com/content/help/ko-KR/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## 기본 개념 {#basic-concepts}
@@ -69,9 +68,9 @@ Adobe Experience Manager는 웹 사이트 및 관련 서비스를 구축, 관리
 
 인프라 수준 AEM에서는 다음을 제공합니다.
 
-* **웹 응용 프로그램 서버**: AEM은 독립 실행형 모드(통합 Jetty 웹 서버 포함)로 배포하거나 타사 애플리케이션 서버(WebLogic, WebSphere 등)에서 웹 애플리케이션으로 배포할 수 있습니다.
-* **웹 응용 프로그램 프레임워크**: AEM에는 RESTful 컨텐츠 중심의 웹 애플리케이션의 작성을 간소화하는 Sling Web Application Framework가 통합되어 있습니다.
-* **컨텐츠 저장소**: AEM에는 비정형 및 반정형 데이터를 위해 특별히 고안된 계층적 데이터베이스 유형인 JCR(Java Content Repository)이 포함되어 있습니다. 저장소에는 사용자 전용 컨텐츠뿐만 아니라 애플리케이션에서 사용하는 모든 코드, 템플릿 및 내부 데이터가 저장됩니다.
+* **웹 응용 프로그램 서버**:AEM은 독립 실행형 모드(통합 Jetty 웹 서버 포함)로 배포하거나 타사 애플리케이션 서버(WebLogic, WebSphere 등)에서 웹 애플리케이션으로 배포할 수 있습니다.
+* **웹 응용 프로그램 프레임워크**:AEM에는 RESTful 컨텐츠 중심의 웹 애플리케이션의 작성을 간소화하는 Sling Web Application Framework가 통합되어 있습니다.
+* **컨텐츠 저장소**:AEM에는 비정형 및 반정형 데이터를 위해 특별히 고안된 계층적 데이터베이스 유형인 JCR(Java Content Repository)이 포함되어 있습니다. 저장소에는 사용자 전용 컨텐츠뿐만 아니라 애플리케이션에서 사용하는 모든 코드, 템플릿 및 내부 데이터가 저장됩니다.
 
 이 베이스를 기반으로 구축된 AEM은 다음과 같은 다양한 애플리케이션 수준 기능을 제공합니다.
 
@@ -91,24 +90,24 @@ AEM 서버는 **Java 기반이며** 해당 플랫폼을 지원하는 대부분�
 
 AEM 용어에서 &quot;인스턴스&quot;는 서버에서 실행되는 AEM의 사본입니다. AEM 설치에는 일반적으로 별도의 시스템에서 실행되는 두 개 이상의 인스턴스가 포함됩니다.
 
-* **작성자**: 컨텐츠를 작성, 업로드 및 편집하고 웹 사이트를 관리하는 데 사용되는 AEM 인스턴스입니다. 컨텐츠가 라이브될 준비가 되면 게시 인스턴스에 복제됩니다.
-* **게시**: 게시된 컨텐츠를 대중에게 제공하는 AEM 인스턴스입니다.
+* **작성자**:컨텐츠를 작성, 업로드 및 편집하고 웹 사이트를 관리하는 데 사용되는 AEM 인스턴스입니다. 컨텐츠가 라이브될 준비가 되면 게시 인스턴스에 복제됩니다.
+* **게시**:게시된 컨텐츠를 대중에게 제공하는 AEM 인스턴스입니다.
 
 이러한 인스턴스는 설치된 소프트웨어와 동일합니다. 구성 하나만으로 구분됩니다. 또한 대부분의 설치에서 발송자를 사용합니다.
 
-* **발송자**: 정적 웹 서버(Apache httpd, Microsoft IIS 등) AEM 디스패처 모듈을 사용한 확장. 게시 인스턴스에서 생성한 웹 페이지를 캐시하여 성능을 향상시킵니다.
+* **발송자**:정적 웹 서버(Apache httpd, Microsoft IIS 등) aem 디스패처 모듈을 사용한 확장. 게시 인스턴스에서 생성한 웹 페이지를 캐시하여 성능을 향상시킵니다.
 
 이 설정에는 많은 고급 옵션과 설명이 있지만 작성, 게시 및 발송자의 기본 패턴은 대부분의 배포의 핵심입니다. 우리는 비교적 간단한 설정에 초점을 맞추면서 시작할 것입니다. 고급 배포 옵션에 대한 논의는 다음에 나옵니다.
 
 다음 섹션에서는 시나리오 모두에 대해 설명합니다.
 
-* **온-프레미스**: 기업 환경에서 AEM 배포 및 관리
+* **온-프레미스**:기업 환경에서 AEM 배포 및 관리
 
-* **Managed Services - Adobe Experience Manager의 클라우드 관리자**: AEM 배포 및 관리
+* **Managed Services - Adobe Experience Manager의 클라우드 관리자**:AEM 배포 및 관리
 
 ### On-premise {#on-premise}
 
-회사 환경의 서버에 AEM을 설치할 수 있습니다. 일반적인 설치 인스턴스는 다음과 같습니다. 개발, 테스트 및 게시 환경. AEM 소프트웨어를 로컬에 설치하는 [방법에 대한 자세한 내용은 시작하기](/help/sites-deploying/deploy.md#getting-started) 섹션을 참조하십시오.
+회사 환경의 서버에 AEM을 설치할 수 있습니다. 일반적인 설치 인스턴스는 다음과 같습니다.개발, 테스트 및 게시 환경. AEM 소프트웨어를 로컬에 설치하는 [방법에 대한 자세한 내용은 시작하기](/help/sites-deploying/deploy.md#getting-started) 섹션을 참조하십시오.
 
 일반적인 사내 배포에 대한 자세한 내용은 권장 [배포를 참조하십시오](/help/sites-deploying/recommended-deploys.md).
 
@@ -126,15 +125,15 @@ AEM Managed Services 고객은 다음과 같은 이점을 누릴 수 있습니�
 
 **최고 보안:** 고객 애플리케이션을 방화벽 시스템 내부 또는 가상 비공개 클라우드 내에 제한된 액세스 시설에 호스팅하여 엔터프라이즈급 물리적, 네트워크 및 데이터 보안을 보장합니다. 강력한 데이터 스토리지 암호화, 안티바이러스 및 데이터 격리 기능을 갖춘 싱글 테넌트 방식의 가상 시스템이 포함되어 있습니다.
 
-**클라우드 관리자**: Adobe Experience Manager Managed Services 솔루션의 일부인 Cloud Manager는 조직에서 클라우드에서 Adobe Experience Manager을 자체 관리할 수 있는 셀프 서비스 포털입니다. IT 팀 및 구현 파트너가 성능이나 보안을 훼손하지 않고도 사용자 정의 또는 업데이트 전달 시간을 단축할 수 있는 최첨단 지속적인 통합 및 CI/CD(연속 전달) 파이프라인이 포함되어 있습니다. Cloud Manager는 Adobe Managed Service 고객에게만 제공됩니다.
+**클라우드 관리자**:Adobe Experience Manager Managed Services 솔루션의 일부인 Cloud Manager는 조직에서 클라우드에서 Adobe Experience Manager을 자체 관리할 수 있는 셀프 서비스 포털입니다. IT 팀 및 구현 파트너가 성능이나 보안을 훼손하지 않고도 사용자 정의 또는 업데이트 전달 시간을 단축할 수 있는 최첨단 지속적인 통합 및 CI/CD(연속 전달) 파이프라인이 포함되어 있습니다. Cloud Manager는 Adobe Managed Service 고객에게만 제공됩니다.
 
-Cloud Manager 및 해당 리소스에 대한 자세한 내용은 [**Cloud Manager 사용 안내서를 참조하십시오&#x200B;**](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html).
+Cloud Manager 및 해당 리소스에 대한 자세한 내용은 [**Cloud Manager 사용 안내서를 참조하십시오**](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html).
 
 ## 시작하기 {#getting-started}
 
 ### 전제 조건 {#prerequisites}
 
-프로덕션 인스턴스는 일반적으로 공식적으로 지원되는 OS를 실행하는 전용 시스템에서 실행되지만( [기술 요구](/help/sites-deploying/technical-requirements.md)사항 참조) Experience Manager 서버는 [**Java Standard Edition 8을&#x200B;**](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)지원하는 모든 시스템에서 실제로 실행됩니다.
+프로덕션 인스턴스는 일반적으로 공식적으로 지원되는 OS를 실행하는 전용 시스템에서 실행되지만( [기술 요구](/help/sites-deploying/technical-requirements.md)사항 참조) Experience Manager 서버는 [**Java Standard Edition 8을**](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)지원하는 모든 시스템에서 실제로 실행됩니다.
 
 익숙해지거나 AEM에서 개발할 목적으로 Apple OS X 또는 Microsoft Windows 또는 Linux의 데스크탑 버전을 실행하는 로컬 시스템에 설치된 인스턴스를 사용하는 것은 매우 일반적입니다.
 
@@ -142,7 +141,7 @@ Cloud Manager 및 해당 리소스에 대한 자세한 내용은 [**Cloud Manage
 
 ### 소프트웨어 다운로드 {#getting-the-software}
 
-Customers with a valid maintenance and support contract should have received a mail notification with a code and be able to download AEM from the [**Adobe Licensing Website **](https://licensing.adobe.com/). Business partners can request download access from[**spphelp@adobe.com **](mailto:spphelp@adobe.com).
+Customers with a valid maintenance and support contract should have received a mail notification with a code and be able to download AEM from the [**Adobe Licensing Website**](https://licensing.adobe.com/). Business partners can request download access from [**spphelp@adobe.com**](mailto:spphelp@adobe.com).
 
 AEM 소프트웨어 패키지는
 
@@ -192,7 +191,7 @@ AEM 소프트웨어 패키지는
 
 AEM에서 jar 파일의 압축을 풀고, 직접 설치하고, 시작하는 데 몇 분이 소요됩니다. 위의 절차는 다음과 같습니다.
 
-* AEM **작성자** 인스턴스
+* aem **작성자** 인스턴스
 * localhost에서 **실행**
 * 포트 **4502**
 
@@ -277,16 +276,16 @@ GUI에서 인스턴스를 중지하려면 데스크탑 애플리케이션 창에
 
 이 폴더에는 다음과 같은 Unix 배쉬 셸 스크립트가 포함되어 있습니다.
 
-* **`start`**: 인스턴스 시작
-* `stop`: 인스턴스를 중지합니다.
-* **`status`**: 인스턴스의 상태를 보고합니다.
-* **`quickstart`**: 필요한 경우 시작 정보를 구성하는 데 사용됩니다.
+* **`start`**:인스턴스 시작
+* `stop`:인스턴스를 중지합니다.
+* **`status`**:인스턴스의 상태를 보고합니다.
+* **`quickstart`**:필요한 경우 시작 정보를 구성하는 데 사용됩니다.
 
 Windows용 동등한 **`bat`** 파일도 있습니다. 자세한 내용은 다음을 참조하십시오.
 
 * [명령줄 시작 및 중지](/help/sites-deploying/command-line-start-and-stop.md)
 
-AEM은 웹 브라우저를 적절한 페이지(일반적으로 로그인 페이지)로 자동 리디렉션; 예를 들면 다음과 같습니다.
+AEM은 웹 브라우저를 적절한 페이지(일반적으로 로그인 페이지)로 자동 리디렉션;예를 들면 다음과 같습니다.
 
 `http://localhost:4502/`
 
@@ -320,6 +319,5 @@ AEM은 웹 브라우저를 적절한 페이지(일반적으로 로그인 페이�
 * [AEM 플랫폼 소개](/help/sites-deploying/platform.md)
 * [성능 지침](/help/sites-deploying/performance-guidelines.md)
 * [AEM Mobile 시작하기](/help/mobile/getting-started-aem-mobile.md)
-* [릴리즈 차량 정의 갱신](/help/sites-deploying/update-release-vehicle-definitions.md)
 * [AEM Screens 소개](https://docs.adobe.com/content/help/ko-KR/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
