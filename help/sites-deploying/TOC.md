@@ -6,10 +6,10 @@ user-guide-title: AEM 6.4 배포 안내서
 breadcrumb-title: Deploying Guide
 user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.4, including our Adobe Managed Services cloud deployment.
 translation-type: tm+mt
-source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
+source-git-commit: e7da0bb7906c3ad3d04531db0abfbc658646f6e4
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 13%
+source-wordcount: '328'
+ht-degree: 14%
 
 ---
 
@@ -37,7 +37,6 @@ ht-degree: 13%
    + [Oak-run.jar 인덱싱 사용 사례](oak-run-indexing-usecases.md)
    + [Oak 인덱스 문제 해결](troubleshooting-oak-indexes.md)
    + [집계된 사용 통계 수집 선택](opt-in-aggregated-usage-statistics.md)
-   + [릴리즈 차량 정의 갱신](update-release-vehicle-definitions.md)
    + [문제 해결](troubleshooting.md)
 + AEM 구성 {#configuring}
    + [기본 구성 개념](configuring.md)
