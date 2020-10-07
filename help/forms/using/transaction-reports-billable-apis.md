@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 82e72ffb-2faa-45fe-8bb2-f485d8fa043e
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: ecaeabfdd31ed35229fe7e41b5472e8582fa28db
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1877'
 ht-degree: 7%
 
 ---
@@ -32,14 +32,14 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링을 위한 여러 
 * AEM 워크플로우의 작업 단계 및 문서 서비스 단계 지정 사용
 * 적응형 양식 내에서 적응형 양식 사용
 
-대금 청구 API는 렌더링된 문서의 페이지 수, 문서 또는 양식의 길이 또는 최종 형식을 설명하지 않습니다. 트랜잭션 보고서는 트랜잭션을 세 가지 범주로 나눕니다. 처리된 문서, 렌더링된 문서 및 Forms 제출됨.
+대금 청구 API는 렌더링된 문서의 페이지 수, 문서 또는 양식의 길이 또는 최종 형식을 설명하지 않습니다. 트랜잭션 보고서는 트랜잭션을 세 가지 범주로 나눕니다.처리된 문서, 렌더링된 문서 및 Forms 제출됨.
 
 * **Forms 제출:** 데이터를 AEM Forms으로 만든 모든 유형의 양식에서 전송하고 데이터를 데이터 저장소 또는 데이터베이스에 제출하는 경우는 양식 제출으로 간주됩니다. 예를 들어, 적응형 양식 제출, HTML5 양식, PDF forms 및 양식 세트는 제출된 양식으로 간주됩니다. 양식 세트의 각 양식은 제출로 간주됩니다. 예를 들어, 양식 세트에 5개의 양식이 있는 경우, 양식 세트가 제출되면 트랜잭션 보고 서비스는 양식을 5개의 제출물로 계산합니다.
 * **렌더링된 문서:** 문서 서비스에 대해 청구 가능한 문서 서비스 API를 사용하거나 문서 간에 문서를 변환하여 템플릿과 데이터를 결합하고, 문서에 디지털 서명 또는 인증하는 방식으로 문서를 생성하거나, 문서를 문서 렌더링으로 처리합니다.
 
 >[!NOTE]
 >
->거래 보고서 UI에는 세 가지 카테고리가 표시됩니다. Forms, 문서 렌더링 및 처리. 렌더링된 문서와 처리된 문서 모두 렌더링된 문서로 간주됩니다.
+>거래 보고서 UI에는 세 가지 카테고리가 표시됩니다.Forms, 문서 렌더링 및 처리. 렌더링된 문서와 처리된 문서 모두 렌더링된 문서로 간주됩니다.
 
 ## 청구 가능한 Document Services API {#billable-document-services-apis}
 
@@ -350,7 +350,7 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링을 위한 여러 
 
 ## 청구 가능한 데이터 캡처 API {#billable-data-capture-apis}
 
-적응형 양식, HTML5 Forms 및 양식 세트의 모든 제출 이벤트는 트랜잭션으로 간주됩니다. 기본적으로 PDF 양식 제출은 거래로 간주되지 않습니다. 제공된 [거래 보고서 API를](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg) 사용하여 PDF forms 제출 사항을 트랜잭션으로 기록하십시오.
+적응형 양식, HTML5 Forms 및 양식 세트의 모든 제출 이벤트는 트랜잭션으로 간주됩니다. 기본적으로 PDF 양식 제출은 거래로 간주되지 않습니다. 제공된 [거래 보고서 API를](record-transaction-custom-implementation.md) 사용하여 PDF forms 제출 사항을 트랜잭션으로 기록하십시오.
 
 ### 적응형 양식 {#adaptive-forms}
 
