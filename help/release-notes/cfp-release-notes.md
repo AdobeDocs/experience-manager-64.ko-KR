@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.4 누적 수정 팩 관련 릴리스 노
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3b96c351b3deb72e1381e101433f4246fd26af1b
+source-git-commit: e7da0bb7906c3ad3d04531db0abfbc658646f6e4
 workflow-type: tm+mt
-source-wordcount: '3402'
+source-wordcount: '3420'
 ht-degree: 25%
 
 ---
@@ -32,7 +32,7 @@ AEM 6.4.8.2는 AEM 6.4 서비스 팩 8에 따라 제공되는 CFP(Cumulative Fix
 
 AEM 6.4.8.2에서는 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.8.22로 업데이트됩니다.
 
-For information on CFP and other types of releases, see [AEM Update Release Vehicle Definitions](../sites-deploying/update-release-vehicle-definitions.md)
+For information on CFP and other types of releases, see [AEM Update Release Vehicle Definitions](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.2에서는 다음 문제에 대한 수정 사항을 제공합니다.
 
@@ -175,7 +175,7 @@ AEM 6.4.8.1의 주요 특징 중 일부는 다음과 같습니다.
 * Adobe Experience Manager와 패키지 공유 통합이 제거되었습니다.
 * 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.8.21으로 업데이트되었습니다.
 
-For information on CFP and other types of releases, see [AEM Update Release Vehicle Definitions](../sites-deploying/update-release-vehicle-definitions.md)
+For information on CFP and other types of releases, see [AEM Update Release Vehicle Definitions](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.1에서는 다음 문제에 대한 수정 사항을 제공합니다.
 
