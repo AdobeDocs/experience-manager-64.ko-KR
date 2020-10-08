@@ -10,7 +10,7 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 4c7e33ea-f2d3-4d69-b676-aeb50c610d70
 translation-type: tm+mt
-source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 42%
@@ -54,7 +54,7 @@ AEM 내에서 선택기 `model` 및 `.json` 확장을 사용하여 배달을 수
 
 구조화된 컨텐츠 조각을 구체적으로 타깃팅하여 컨텐츠를 전달할 수도 있습니다.
 
-이 작업은 조각(를 통해)의 전체 경로를 사용하여 `jcr:content`수행됩니다. 예를 들어
+이 작업은 조각(를 통해)의 전체 경로를 사용하여 `jcr:content`수행됩니다.예를 들어
 
 `.../jcr:content/root/responsivegrid/contentfragment.model.json`
 
