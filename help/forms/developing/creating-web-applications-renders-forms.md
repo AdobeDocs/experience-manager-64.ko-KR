@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '1842'
 ht-degree: 0%
@@ -107,19 +107,19 @@ Forms 서비스를 호출할 수 있는 Java 서블릿을 포함하는 웹 응�
 
 **프로젝트에 Java 서블릿을 추가하려면:**
 
-1. 프로젝트 탐색기 창에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 `FragmentsWebApplication` 새로 만들기 **>** 기타 **를 선택합니다**.
+1. 프로젝트 탐색기 창에서 프로젝트를 마우스 오른쪽 버튼으로 클릭하고 `FragmentsWebApplication` 새로 만들기 **>** 기타 **를 선택합니다**.
 1. 웹 **폴더를** 확장하고 서블릿을 **선택한**&#x200B;다음 **을 클릭합니다**.
 1. 서블릿 만들기 대화 상자에서 서블릿 이름 `RenderFormFragment` 을 입력한 다음 **마침을 클릭합니다**.
 
 **프로젝트에 HTML 페이지를 추가하려면:**
 
-1. 프로젝트 탐색기 창에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 `FragmentsWebApplication` 새로 만들기 **>** 기타 **를 선택합니다**.
+1. 프로젝트 탐색기 창에서 프로젝트를 마우스 오른쪽 버튼으로 클릭하고 `FragmentsWebApplication` 새로 만들기 **>** 기타 **를 선택합니다**.
 1. **웹** 폴더를 확장하고 **HTML을**&#x200B;선택한 다음 **다음을**&#x200B;클릭합니다.
 1. 새 HTML 대화 상자에서 파일 이름 `index.html` 을 입력한 다음 마침을 **클릭합니다**.
 
 >[!NOTE]
 >
->Java 서블릿을 호출하는 HTML 페이지 만들기에 대한 자세한 내용은 `RenderFormFragment` 웹 페이지[만들기를 참조하십시오](/help/forms/developing/rendering-forms.md#creating-the-web-page).
+>Java 서블릿을 호출하는 HTML 페이지 만들기에 대한 자세한 내용은 웹 페이지 `RenderFormFragment` 만들기를 참조하십시오 [](/help/forms/developing/rendering-forms.md#creating-the-web-page).
 
 ### 서블릿에 대한 Java 응용 프로그램 논리 생성 {#creating-java-application-logic-for-the-servlet}
 
@@ -379,7 +379,7 @@ Forms 서비스를 호출하는 Java 서블릿을 배포하려면 웹 응용 프
 
 1. 프로젝트 **탐색기** 창에서 프로젝트를 마우스 오른쪽 버튼으로 클릭하고 내보내기 `FragmentsWebApplication` > **WAR 파일** 을 **선택합니다**.
 1. 웹 **모듈** 텍스트 상자에 Java 프로젝트 `FragmentsWebApplication` 의 이름을 입력합니다.
-1. [ **대상** ] 텍스트 상자 `FragmentsWebApplication.war`**에서 파일 이름&#x200B;**을 입력하고 WAR 파일의 위치를 지정한 다음 [마침]을 클릭합니다.
+1. [ **대상** ] 텍스트 상자 `FragmentsWebApplication.war`**에서 파일 이름**&#x200B;을 입력하고 WAR 파일의 위치를 지정한 다음 [마침]을 클릭합니다.
 
 ### J2EE 응용 프로그램 서버에 WAR 파일 배포 {#deploying-the-war-file-to-the-j2ee-application-server}
 
