@@ -10,7 +10,7 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 150b43e3-9fb3-4c1c-b1cd-ccfd162974ad
 translation-type: tm+mt
-source-git-commit: 5ea8fac7eb0d474aa27a0203ab324d6931ce5571
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '3117'
 ht-degree: 97%
@@ -254,7 +254,7 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
 
 1. 디스패처가 `/my-page.html`에서 응답을 캐시하고 응답을 사용자에게 반환합니다.
 1. 컨텐츠 작성자가 이 페이지를 변경하고 활성화합니다.
-1. 디스패처 초기화 에이전트가 `/content/my-brand/my-page`**에 대한 무효화 요청을 보냅니다.**디스패처에는 이 경로에 캐시된 페이지가 없으므로 이전 컨텐츠는 캐시된 상태로 유지되며 시기적으로 적절하지 않게 됩니다.
+1. 디스패처 초기화 에이전트가 `/content/my-brand/my-page`**에 대한 무효화 요청을 보냅니다.** 디스패처에는 이 경로에 캐시된 페이지가 없으므로 이전 컨텐츠는 캐시된 상태로 유지되며 시기적으로 적절하지 않게 됩니다.
 
 캐시 무효화를 위해 짧은 URL을 긴 URL에 매핑하는 사용자 지정 발송-초기화 규칙을 구성하는 방법이 있습니다.
 
