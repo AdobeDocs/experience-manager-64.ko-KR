@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: 5aff983a0e8ef2f3ca790a997b37276567f543fe
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '4295'
 ht-degree: 1%
@@ -25,7 +25,7 @@ AEM Forms은 다양한 문서 수준 작업을 수행하는 다양한 OSGi 서�
 
 * **바코드 Forms 서비스:** 바코드의 전자 이미지에서 데이터를 추출할 수 있습니다. 이 서비스는 하나 이상의 바코드를 입력할 수 있는 TIFF 및 PDF 파일을 받아 바코드 데이터를 추출합니다. 자세한 내용은 [바코드 Forms 서비스를 참조하십시오](/help/forms/using/using-barcoded-forms-service.md).
 
-* **문서 보증 서비스:** 문서 암호화 및 암호 해독, 추가 사용 권한으로 Adobe Reader의 기능 확장 및 문서에 디지털 서명을 추가할 수 있습니다. Doc Assurance 서비스에는 다음과 같은 세 가지 서비스가 있습니다. 서명, 암호화 및 reader 확장 자세한 내용은 [DocAssurance 서비스를 참조하십시오](/help/forms/using/overview-aem-document-services.md).
+* **문서 보증 서비스:** 문서 암호화 및 암호 해독, 추가 사용 권한으로 Adobe Reader의 기능 확장 및 문서에 디지털 서명을 추가할 수 있습니다. Doc Assurance 서비스에는 다음과 같은 세 가지 서비스가 있습니다.서명, 암호화 및 reader 확장 자세한 내용은 [DocAssurance 서비스를 참조하십시오](/help/forms/using/overview-aem-document-services.md).
 
 * **암호화 서비스:** 문서를 암호화하고 해독할 수 있습니다. 문서가 암호화되면 해당 내용이 읽을 수 없게 됩니다. 권한이 있는 사용자는 문서의 내용을 해독하여 액세스할 수 있습니다. 자세한 내용은 암호화 [서비스를 참조하십시오](/help/forms/using/overview-aem-document-services.md#encryption-service).
 
@@ -66,8 +66,8 @@ AEM Forms 문서 서비스를 설치하고 구성하기 전에 다음을 확인�
 * AEM 인스턴스의 설치 경로에 공백이 없습니다.
 * AEM 인스턴스가 실행 중입니다. AEM 용어에서 &quot;인스턴스&quot;는 작성자 또는 게시 모드에서 서버에서 실행되는 AEM의 복사본입니다. 일반적으로 AEM Forms 문서 서비스를 실행하려면 AEM 인스턴스(작성자 또는 게시)만 필요합니다.
 
-   * **작성자**: 컨텐츠를 작성, 업로드 및 편집하고 웹 사이트를 관리하는 데 사용되는 AEM 인스턴스입니다. 컨텐츠가 라이브될 준비가 되면 게시 인스턴스에 복제됩니다.
-   * **게시**: 인터넷 또는 내부 네트워크를 통해 게시된 컨텐츠를 제공하는 AEM 인스턴스입니다.
+   * **작성자**:컨텐츠를 작성, 업로드 및 편집하고 웹 사이트를 관리하는 데 사용되는 AEM 인스턴스입니다. 컨텐츠가 라이브될 준비가 되면 게시 인스턴스에 복제됩니다.
+   * **게시**:인터넷 또는 내부 네트워크를 통해 게시된 컨텐츠를 제공하는 AEM 인스턴스입니다.
 
 * 메모리 요구 사항이 충족되었습니다. AEM Forms 추가 패키지 필요:
 
@@ -76,8 +76,8 @@ AEM Forms 문서 서비스를 설치하고 구성하기 전에 다음을 확인�
 
 * Microsoft Windows 및 Linux에서 PDF 생성기를 변환하기 위해 필요한 클라이언트 소프트웨어가 설치되어 있습니다.
 
-   * **Microsoft Windows**: Microsoft [Office](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)또는 [Apache OpenOffice 설치](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
-   * **Linux**: Apache [OpenOffice 설치](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)
+   * **Microsoft Windows**:Microsoft [Office](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)또는 [Apache OpenOffice 설치](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
+   * **Linux**:Apache [OpenOffice 설치](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)
 
 >[!NOTE]
 >
@@ -334,7 +334,7 @@ PDF Generator 서비스가 이전 버전의 Microsoft Office에서 만든 파일
 ### (Windows 전용) 사용자 계정 컨트롤 비활성화(UAC) {#disable-user-account-control-uac}
 
 1. 시스템 구성 유틸리티에 액세스하려면 **[!UICONTROL 시작 > 실행으로]** 이동한 다음 **[!UICONTROL MSCONFIG를 입력합니다]**.
-1. 도구 **[!UICONTROL 탭을]** 클릭하고 아래로 스크롤한 다음 **[!UICONTROL UAC 설정 변경을 선택합니다]**. 실행 **[!UICONTROL 을]** 클릭하여 새 창에서 명령을 실행합니다.
+1. 도구 **[!UICONTROL 탭을]** 클릭하고 아래로 스크롤한 다음 UAC 설정 **[!UICONTROL 변경을 선택합니다]**. 실행 **[!UICONTROL 을]** 클릭하여 새 창에서 명령을 실행합니다.
 1. 슬라이더를 알림 안 함 수준으로 조정합니다. 완료되면 명령 창을 닫고 시스템 구성 창을 닫습니다.
 1. UAC에 대한 레지스트리 설정이 0(영)으로 설정되어 있는지 확인합니다. 다음 단계를 수행하여 확인합니다.
 
@@ -467,7 +467,7 @@ PDF Generator 서비스를 실행하려면 로컬 사용자 계정이 필요합�
   </tr> 
   <tr> 
    <td>서버 변환 시간 제한</td> 
-   <td>서버 변환 시간 초과에 정의된 시간(초) 동안 PDFG 변환이 활성 상태로 유지됩니다.</td> 
+   <td>PDFG 변환은 서버 전환 시간 초과에 정의된 시간(초) 동안 활성 상태를 유지합니다.</td> 
    <td>270 seconds<br /> </td> 
   </tr> 
   <tr> 
@@ -513,7 +513,7 @@ Microsoft Windows의 경우 PDF Generator 서비스는 Adobe Acrobat을 사용�
 
 ### (Windows 전용) HTML에서 PDF로 변환의 기본 경로 구성 {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
-PDF Generator 서비스는 HTML 파일을 PDF 문서로 변환하는 다양한 경로를 제공합니다. Webkit, Acrobat WebCapture(Windows 전용) 및 PhantomJS. PhantomJS 라우트는 동적 컨텐츠를 처리할 수 있는 기능을 갖추고 있고 32비트 라이브러리, 32비트 JDK에 대한 종속성이 없거나 추가 글꼴이 필요 없으므로 PhantomJS 라우트를 사용하는 것이 좋습니다. 또한 PhantomJS 경로에는 변환을 실행하기 위한 sudo 또는 루트 액세스가 필요하지 않습니다.
+PDF Generator 서비스는 HTML 파일을 PDF 문서로 변환하는 다양한 경로를 제공합니다.Webkit, Acrobat WebCapture(Windows 전용) 및 PhantomJS. PhantomJS 라우트는 동적 컨텐츠를 처리할 수 있는 기능을 갖추고 있고 32비트 라이브러리, 32비트 JDK에 대한 종속성이 없거나 추가 글꼴이 필요 없으므로 PhantomJS 라우트를 사용하는 것이 좋습니다. 또한 PhantomJS 경로에는 변환을 실행하기 위한 sudo 또는 루트 액세스가 필요하지 않습니다.
 
 HTML에서 PDF로 변환하는 기본 경로는 Webkit입니다. 전환 경로를 변경하려면
 
@@ -555,8 +555,7 @@ DocAssurance 서비스는 PDF 문서에 사용 권한을 적용할 수 있습니
 
    >[!NOTE]
    >
-   >* 프로덕션 환경에서 평가 자격 증명을 프로덕션 자격 증명으로 바꿉니다. 만료된 또는 평가 자격 증명을 업데이트하기 전에 이전 Reader 확장 자격 증명을 삭제해야 합니다.
-
+   >프로덕션 환경에서 평가 자격 증명을 프로덕션 자격 증명으로 바꿉니다. 만료된 또는 평가 자격 증명을 업데이트하기 전에 이전 Reader 확장 자격 증명을 삭제해야 합니다.
 
 1. 사용자 **[!UICONTROL 설정]** 편집 **[!UICONTROL 페이지에서 저장 및 닫기를]** 클릭합니다.
 
