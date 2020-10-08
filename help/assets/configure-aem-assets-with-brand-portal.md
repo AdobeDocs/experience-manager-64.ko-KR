@@ -3,7 +3,7 @@ title: Brand Portal에서 AEM Assets 구성
 description: 'Brand Portal에 자산 및 컬렉션을 게시하기 위해 Brand Portal에서 AEM Assets을 구성하는 방법을 알아봅니다. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 656a06ae70293a3f1ec6768fc9eea15f1329c42c
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '1692'
 ht-degree: 93%
@@ -21,15 +21,14 @@ AEM(Adobe Experience Manager) Assets는 Brand Portal 테넌트의 인증을 위�
 >
 >이전에는 Brand Portal이 기존 OAuth 게이트웨이를 통해 클래식 UI에 구성되었으며, 이 게이트웨이는 인증을 위해 IMS 액세스 토큰을 가져오는 데 JWT 토큰 교환을 사용합니다.
 
-
 >[!TIP]
 >
 >***기존 고객 전용***
 >
 >기존 OAuth 게이트웨이 구성을 계속 사용하는 것이 좋습니다. 기존 OAuth 게이트웨이 구성 문제가 발생하는 경우 기존 구성을 삭제하고 Adobe I/O를 통해 새 구성을 만드십시오.
 
-
 이 도움말은 다음 두 가지 사용 사례에 대해 설명합니다.
+
 * [새 구성](#configure-new-integration-64): 새 Brand Portal 사용자가 Brand Portal에서 AEM Assets 작성자 인스턴스를 구성하려는 경우 Adobe I/O에 새 구성을 만들 수 있습니다.
 * [업그레이드 구성](#upgrade-integration-64): 기존 OAuth 게이트웨이에 Brand Portal로 구성된 AEM Assets 작성자 인스턴스를 사용하는 기존 Brand Portal 사용자인 경우 기존 구성을 삭제하고 Adobe I/O에 새 구성을 만드는 것이 좋습니다.
 
@@ -46,7 +45,6 @@ Brand Portal에 AEM Assets을 구성하려면 다음이 필요합니다.
 * 최신 서비스 팩으로 실행 중인 AEM Assets 작성자 인스턴스.
 * Brand Portal 임차인 URL.
 * Brand Portal 테넌트의 IMS 조직에 대한 시스템 관리자 권한이 있는 사용자
-
 
 [AEM 6.4 다운로드 및 설치](#aemquickstart)
 
@@ -73,6 +71,7 @@ AEM을 다운로드한 후 AEM 작성자 인스턴스를 설정하는 방법은 
 ## 구성 만들기 {#configure-new-integration-64}
 
 Brand Portal에 AEM Assets을 처음 구성하는 경우 단계를 나열된 순서로 수행합니다.
+
 1. [공개 인증서 받기](#public-certificate)
 1. [Adobe I/O 통합 만들기](#createnewintegration)
 1. [IMS 계정 구성 만들기](#create-ims-account-configuration)
@@ -82,7 +81,6 @@ Brand Portal에 AEM Assets을 처음 구성하는 경우 단계를 나열된 순
 >[!NOTE]
 >
 >AEM Assets 작성자 인스턴스는 하나의 브랜드 포털 테넌트로 구성됩니다.
-
 
 ### IMS 구성 만들기 {#create-ims-configuration}
 
@@ -206,8 +204,6 @@ Adobe I/O 통합은 IMS 계정 구성을 설정하는 데 필요한 API 키, 클
 >
 >IMS 구성이 상태 검사를 통과하는지 확인합니다. 구성이 상태 검사를 통과하지 않으면 구성이 잘못된 것입니다. 이 구성을 삭제하고 유효한 새 구성을 만들어야 합니다.
 
-
-
 ### 클라우드 서비스 구성 {#configure-the-cloud-service}
 
 Brand Portal 클라우드 서비스 구성을 만들려면 다음 단계를 수행하십시오.
@@ -259,7 +255,6 @@ Brand Portal 클라우드 서비스 구성을 만들려면 다음 단계를 수�
    >[!NOTE]
    >
    >복제 에이전트가 동시에 작동하여 작업 분포를 동일하게 공유하므로 게시 속도가 원래 속도보다 4배 더 빨라집니다. 클라우드 서비스가 구성된 후에는 여러 자산의 병렬 게시를 활성화하기 위해 기본적으로 활성화된 복제 에이전트를 활성화하는 데 추가 구성이 필요하지 않습니다.
-
 
 1. AEM Assets 작성자와 Brand Portal 간의 연결을 확인하려면 **[!UICONTROL 연결 테스트]**&#x200B;를 클릭합니다.
 
@@ -361,4 +356,3 @@ Brand Portal이 AEM Assets 작성자 인스턴스로 구성되었습니다. 이�
 * [자산을 Brand Portal에 게시](brand-portal-publish-assets.md)
 * [브랜드 포털에 자산 및 폴더 게시](brand-portal-publish-folder.md)
 * [컬렉션을 Brand Portal에 게시](brand-portal-publish-collection.md)
-
