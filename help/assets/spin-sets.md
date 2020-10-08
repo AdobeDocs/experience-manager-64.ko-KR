@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: afacb3ad-e4ad-4d06-a898-f3f2da8bbb64
 translation-type: tm+mt
-source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '1838'
 ht-degree: 0%
@@ -49,7 +49,8 @@ ht-degree: 0%
    >[!NOTE]
    >
    >또한 [일괄 세트 사전 설정을 통해 자동으로 스핀 세트를 만들 수도 있습니다](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
-   *배치 세트는 IPS(Image Production System)를 통해 자산 수정의 일부로 생성되며 다이내믹 미디어 - Scene7 모드에서만 사용할 수 있습니다*.
+   >
+   >*배치 세트는 IPS(Image Production System)를 통해 자산 수정의 일부로 생성되며 다이내믹 미디어 - Scene7 모드에서만 사용할 수 있습니다*.
 
 1. 필요에 따라 [스핀 세트 뷰어 사전 설정을](managing-viewer-presets.md)설정합니다.
 
@@ -104,7 +105,8 @@ AEM Assets의 다른 자산을 [업로드하는 것처럼 스핀 세트에 대�
 >[!NOTE]
 >
 >또한 [일괄 세트 사전 설정을 통해 자동으로 스핀 세트를 만들 수도 있습니다](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
-배치 세트는 IPS(Image Production System)를 통해 자산 수정의 일부로 생성되며 다이내믹 미디어 - Scene7 모드에서만 사용할 수 있습니다.
+>
+>배치 세트는 IPS(Image Production System)를 통해 자산 수정의 일부로 생성되며 다이내믹 미디어 - Scene7 모드에서만 사용할 수 있습니다.
 >
 >다이내믹 미디어 구성 - Scene7 모드에서 &quot;이미지 세트 및 스핀 세트를 자동으로 생성하기 위한 배치 세트 사전 설정 만들기&quot; [를 참조하십시오](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
