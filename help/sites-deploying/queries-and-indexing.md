@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 translation-type: tm+mt
-source-git-commit: 4e4dfb105e12b6855ec32a72246d6b921d6d7829
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
-source-wordcount: '2882'
+source-wordcount: '2885'
 ht-degree: 1%
 
 ---
@@ -85,8 +85,8 @@ MongoDB를 사용하는 경우와 전체 텍스트 색인을 사용하는 경우
 1. 노드 이름을 **PropertyIndex**&#x200B;로 지정하고 노드 유형을 **oak:QueryIndexDefinition으로 설정합니다.**
 1. 새 노드에 대해 다음 속성을 설정합니다.
 
-   * **type:**  `property` (문자열 유형)
-   * **propertyNames:**  `jcr:uuid` (유형 이름)
+   * **type:** `property` (문자열 유형)
+   * **propertyNames:** `jcr:uuid` (유형 이름)
 
    이 특정 예제는 속성이 연결되어 있는 노드의 UUID(Universal Unique Identifier)를 노출하는 `jcr:uuid` 속성을 인덱싱합니다.
 
@@ -100,7 +100,7 @@ MongoDB를 사용하는 경우와 전체 텍스트 색인을 사용하는 경우
 
 * true로 설정된 경우 **속성** 인덱스에 고유성 제약 조건을 추가하는 **고유한** 플래그.
 
-* 선언 **NodeTypes** 속성을 사용하면 인덱스가 적용되는 특정 노드 유형을 지정할 수 있습니다.
+* 선언NodeTypes **속성을** 사용하면 인덱스가 적용되는 특정 노드 유형을 지정할 수 있습니다.
 * true로 **설정된** 경우 전체 컨텐츠 재색인 **을 트리거하는**&#x200B;다시 색인 플래그.
 
 ### 순서가 지정된 색인 {#the-ordered-index}
@@ -123,8 +123,8 @@ Apache Lucene을 기반으로 하는 전체 텍스트 인덱서는 AEM 6에서 �
 1. 노드 이름을 **LuceneIndex** 로 지정하고 노드 유형을 **oak:QueryIndexDefinition으로 설정합니다.**
 1. 노드에 다음 속성을 추가합니다.
 
-   * **type:**  `lucene` (문자열 유형)
-   * **async:**  `async` (문자열 유형)
+   * **type:** `lucene` (문자열 유형)
+   * **async:** `async` (문자열 유형)
 
 1. 변경 사항을 저장합니다.
 
@@ -173,7 +173,7 @@ select * from [nt:base] where [alias] = '/admin'
    false (of type Boolean)
    ```
 
-* **includePropertyNames:** `["alias"] (of type String)`
+* **includePropertyNames:**`[alias]` (문자열 유형)
 
 >[!NOTE]
 >
@@ -313,9 +313,9 @@ AEM은 웹 콘솔을 통해 구성할 수 있는 임베디드 Solr 서버와 함
 1. CRXDE를 열고 관리자로 로그인합니다.
 1. 다음 속성을 사용하여 **oak:QueryIndexDefinition** 유형의 **sollndex라는** 노드 **를** 추가합니다.
 
-   * **type:** `solr`(문자열 유형)
-   * **async:** `async`(문자열 유형)
-   * **reindex:** `true`(부울 유형)
+   * **type:**`solr`(문자열 유형)
+   * **async:**`async`(문자열 유형)
+   * **reindex:**`true`(부울 유형)
 
 1. 변경 사항을 저장합니다.
 
