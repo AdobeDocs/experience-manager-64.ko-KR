@@ -2,19 +2,19 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 릴리스 노트
+user-guide-title: Adobe Experience Manager 6.4 릴리스 노트
 breadcrumb-title: Release Notes
 user-guide-description: Learn about the latest new features in AEM 6.4 in the release notes.
 translation-type: tm+mt
-source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
+source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
 workflow-type: tm+mt
-source-wordcount: '73'
-ht-degree: 61%
+source-wordcount: '77'
+ht-degree: 50%
 
 ---
 
 
-# AEM 6.4 릴리스 노트 {#release-notes}
+# Adobe Experience Manager 6.4 Release Notes {#release-notes}
 
 + [AEM 6.4 개요](home.md)
 + [일반 릴리스 노트](release-notes.md)
