@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: bca4e5ef625cae978120410f0b38692363d4f5f3
+source-git-commit: 9aae7ddac586a43f57dd34fc20df686ed2f8faca
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2714'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->PDF, GIF 또는 INDD(Adobe InDesign) 파일에는 이미지 프로필을 적용할 수 없습니다.
+>이미지 프로필은 PDF, 애니메이션 GIF 또는 INDD(Adobe InDesign) 파일에는 적용되지 않습니다.
 
 ## Crop options {#crop-options}
 
