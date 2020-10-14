@@ -4,9 +4,9 @@ description: AEM Assets의 터치에 적합한 사용자 인터페이스를 사�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: c86c84efeb25673490373273a9f4720381e46454
 workflow-type: tm+mt
-source-wordcount: '10015'
+source-wordcount: '10031'
 ht-degree: 1%
 
 ---
@@ -186,7 +186,7 @@ Dynamic Media를 사용하면 FTP 서버를 통해 자산을 일괄 업로드할
 |  | 이미지 편집 옵션 | 이미지의 클리핑 마스크를 유지하고 색상 프로파일을 선택할 수 있습니다.<br> 업로드할 때 [이미지 편집 옵션 설정을 참조하십시오](#setting-image-editing-options-at-upload). |
 |  | Postscript 옵션 | PostScript ® 파일 래스터화, 파일 자르기, 투명한 배경 유지, 해상도 선택, 색상 공간 선택 등의 작업을 할 수 있습니다.<br> PostScript [및 Illustrator 업로드 옵션 설정을 참조하십시오](#setting-postscript-and-illustrator-upload-options). |
 |  | Photoshop 옵션 | Adobe® Photoshop® 파일에서 템플릿을 만들고, 레이어를 유지하고, 레이어 이름을 지정하는 방법을 지정하고, 텍스트를 추출하고, 이미지가 템플릿에 고정된 방식을 지정할 수 있습니다.<br> 템플릿은 AEM에서 지원되지 않습니다.<br> Photoshop [업로드 옵션 설정을 참조하십시오](#setting-photoshop-upload-options). |
-|  | PDF 옵션 | 파일 래스터화, 검색 단어 및 링크 추출, eCatalog 자동 생성, 해상도 설정, 색상 공간 선택 등의 작업을 수행할 수 있습니다.<br> eCatalogs는 AEM에서 지원되지 않습니다. <br> PDF [업로드 옵션 설정을 참조하십시오](#setting-pdf-upload-options). |
+|  | PDF 옵션 | 파일을 래스터화하고, 검색어와 링크를 추출하고, eCatalog를 자동 생성하고, 해상도를 설정하고, 색상 공간을 선택할 수 있습니다.<br> eCatalogs는 AEM에서 지원되지 않습니다. <br> PDF [업로드 옵션 설정을 참조하십시오](#setting-pdf-upload-options). |
 |  | Illustrator 옵션 | Adobe Illustrator® 파일을 래스터화하고 투명한 배경을 유지하며 해상도를 선택하고 색상 공간을 선택할 수 있습니다.<br> PostScript [및 Illustrator 업로드 옵션 설정을 참조하십시오](#setting-postscript-and-illustrator-upload-options). |
 |  | EVideo 옵션 | 비디오 사전 설정을 선택하여 비디오 파일을 트랜스코딩할 수 있습니다.<br> eVideo [업로드 옵션 설정을 참조하십시오](#setting-evideo-upload-options). |
 |  | 배치 집합 사전 설정 | 업로드된 파일에서 이미지 세트 또는 회전 집합을 만들려면 사용할 사전 설정에 대한 활성 열을 클릭합니다. 두 개 이상의 사전 설정을 선택할 수 있습니다. Dynamic Media Classic의 응용 프로그램 설정/배치 집합 사전 설정 페이지에서 사전 설정을 만듭니다.<br> 일괄 [세트 사전 설정 만들기에 대한 자세한 내용은 일괄 세트 사전 설정 구성을](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) 참조하십시오.<br> 업로드 시 [배치 집합 사전 설정 설정을 참조하십시오](#setting-batch-set-presets-at-upload). |
@@ -424,7 +424,7 @@ PDF 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 �
    >
    >붙여넣기 **** 아이콘은 붙여넣기 작업이 완료될 때까지 도구 모음에서 사용할 수 있습니다.
 
-### 자산 이동 또는 이름 바꾸기 {#moving-or-renaming-assets}
+## 자산 이동 및 이름 변경 {#moving-or-renaming-assets}
 
 자산(또는 폴더)을 다른 위치로 이동할 때 자산을 복사하는 동안 자산(또는 폴더)이 중복되지 않습니다. 자산(또는 폴더)은 대상 위치에 배치되고 소스 위치에서 제거됩니다. 자산을 새 위치로 이동할 때 자산의 이름을 바꿀 수도 있습니다. 게시된 자산을 다른 위치로 이동하는 경우 자산을 다시 게시할 수 있는 옵션이 있습니다. 게시된 자산에 대한 기본적으로 이동 작업은 자동으로 게시 취소됩니다. 자산을 이동할 때 작성자가 [!UICONTROL 다시 게시] 옵션을 선택하면 이동된 자산이 다시 게시됩니다.
 
@@ -434,39 +434,42 @@ PDF 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 �
 
 1. 이동할 자산의 위치로 이동합니다.
 
-1. 자산을 선택하고 도구 모음에서 **[!UICONTROL 이동]** 아이콘을 누릅니다.
+![이미 게시된 자산을 이동할 때 다시 게시할 수 있습니다](assets/republish-on-move.png)
 
-   ![move_icon](assets/move_icon.png)
+자산 또는 폴더를 이동하려면
 
-1. 자산 **[!UICONTROL 이동]** 마법사에서 다음 중 하나를 수행합니다.
+1. 이동할 자산의 위치로 이동합니다.
 
-   * 자산을 이동한 후 자산의 이름을 지정합니다. 그런 다음 **[!UICONTROL 다음]** 을 눌러 진행합니다.
-   * 취소를 **[!UICONTROL 눌러]** 프로세스를 중지합니다.
+1. 자산을 선택하고 도구 모음에서 **[!UICONTROL 이동]** 옵션을 클릭합니다.
+   ![자산 도구 모음에서 이동 옵션](assets/do-not-localize/move_icon.png)
 
+1. 자산 [!UICONTROL 이동] 마법사에서 다음 중 하나를 수행합니다.
+
+   * 자산을 이동한 후 자산의 이름을 지정합니다. 그런 다음 **[!UICONTROL 다음]** 을 클릭하여 계속 진행합니다.
+
+   * 취소를 **[!UICONTROL 클릭하여]** 프로세스를 중지합니다.
    >[!NOTE]
    >
-   >새 위치에 해당 이름의 자산이 없는 경우 자산에 대해 동일한 이름을 지정할 수 있습니다. 하지만 자산을 같은 이름의 자산이 있는 위치로 이동하는 경우 다른 이름을 사용해야 합니다. 같은 이름을 사용하면 변형된 이름이 자동으로 생성됩니다. 예를 들어 자산의 이름이 Square인 경우 시스템에서는 해당 사본에 대해 Square1이라는 이름을 생성합니다.
-
-   >[!NOTE]
-   >
-   >다음(공백으로 구분된 목록) 문자는 지원되지 않습니다.
-   >* 자산 파일 이름에  `* / : [ \ \ ] | # % { } ? &`
-   >* 에셋 폴더 이름은 포함할 수 없습니다.  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
+   >* 새 위치에 해당 이름의 자산이 없는 경우 자산에 대해 동일한 이름을 지정할 수 있습니다. 하지만 자산을 같은 이름의 자산이 있는 위치로 이동하는 경우 다른 이름을 사용해야 합니다. 같은 이름을 사용하면 변형된 이름이 자동으로 생성됩니다. 예를 들어 자산의 이름이 Square인 경우 시스템에서는 해당 사본에 대해 Square1이라는 이름을 생성합니다.
+   >* 이름을 바꿀 때는 파일 이름에 공백을 사용할 수 없습니다.
 
 
-1. 대상 **[!UICONTROL 선택]** 페이지에서 다음 중 하나를 수행합니다.
+1. [대상 **[!UICONTROL 선택]** ] 대화 상자에서 다음 중 하나를 수행합니다.
 
-   * Navigate to the new location for the assets, and then tap **[!UICONTROL Next]** to proceed.
-   * 뒤로를 **[!UICONTROL 눌러]** 이름 변경 **[!UICONTROL 페이지로]** 돌아갑니다.
+   * 자산의 새 위치로 이동한 다음 **[!UICONTROL 다음을]** 클릭하여 계속 진행합니다.
+
+   * [ **[!UICONTROL 뒤로]** ]를 클릭하여 [이름 변경] **[!UICONTROL 화면으로]** 돌아갑니다.
 
 1. 이동하는 자산에 참조 페이지, 자산 또는 컬렉션이 있으면 대상 선택 탭 옆에 참조 **[!UICONTROL 조정]** 탭이 **[!UICONTROL 나타납니다]** .
 
-   참조 **[!UICONTROL 조정 페이지에서 다음 중 하나를]** 수행합니다.
+   참조 **[!UICONTROL 조정 화면에서 다음 중 하나를]** 수행합니다.
 
-   * 새 세부 사항을 기준으로 조정할 참조를 지정한 다음 이동을 **[!UICONTROL 눌러]** 진행합니다.
-   * [ **[!UICONTROL 조정]** ] 열에서 자산에 대한 참조를 선택하거나 선택 취소합니다.
-   * 뒤로 **[!UICONTROL 를]** 눌러 **[!UICONTROL 대상]** 선택 페이지로 돌아갑니다.
-   * 취소 **[!UICONTROL 를]** 눌러 이동 작업을 중지합니다.
+   * 새 세부 사항에 따라 조정할 참조를 지정한 다음 이동을 **[!UICONTROL 클릭하여]** 진행합니다.
+
+   * 조정 **[!UICONTROL 열에서]** 자산에 대한 참조를 선택하거나 선택 취소합니다.
+   * [ **[!UICONTROL 뒤로]** ]를 클릭하여 [대상 **[!UICONTROL 선택] 화면으로]** 돌아갑니다.
+
+   * [ **[!UICONTROL 취소]** ]를 클릭하여 이동 작업을 중지합니다.
 
    참조를 업데이트하지 않으면 자산의 이전 경로를 계속 가리킵니다. 참조를 조정하면 새 자산 경로로 업데이트됩니다.
 
