@@ -3,12 +3,12 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4 작성 사용 안내서
-breadcrumb-title: Authoring Guide
-user-guide-description: Learn key concepts for creating content and authoring in AEM.
+breadcrumb-title: 작성 안내서
+user-guide-description: AEM에서의 컨텐츠 생성 및 작성에 대한 주요 개념을 알아봅니다.
 translation-type: tm+mt
 source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '278'
 ht-degree: 100%
 
 ---
