@@ -3,13 +3,13 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: admin-user
 user-guide-title: AEM 6.4 관리 사용 안내서
-breadcrumb-title: Administering Guide
-user-guide-description: Learn about administering AEM.
+breadcrumb-title: 관리 안내서
+user-guide-description: AEM 관리에 대해 알아봅니다.
 translation-type: tm+mt
 source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 16%
+source-wordcount: '620'
+ht-degree: 17%
 
 ---
 
