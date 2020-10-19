@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 83f8fc7773941a429bdf47425add64d2363e7851
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1758'
 ht-degree: 1%
 
 ---
@@ -118,10 +118,10 @@ Dynamic Media 라이선스를 통해 첫 번째 사용자 지정 도메인을 �
 
 ## 내 계정에 대해 스마트 이미징을 활성화하는 프로세스는 무엇입니까? {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
-스마트 이미징 사용을 요청해야 합니다. 자동으로 활성화되지 않습니다.
+스마트 이미징 사용을 요청해야 합니다.자동으로 활성화되지 않습니다.
 
-1. 기술 지원 요청 시작(이메일: s7support@adobe.com).
-1. 지원 요청에서 다음 정보를 제공합니다.
+1. [Admin Console을 사용하여 지원 사례를 만듭니다.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. 지원 사례에 다음 정보를 제공하십시오.
 
    1. 기본 연락처 이름, 이메일, 전화.
    1. 스마트 이미징에 사용할 수 있는 모든 도메인(예: images.company.com 또는 mycompany.scene7.com).
@@ -143,7 +143,7 @@ Dynamic Media 라이선스를 통해 첫 번째 사용자 지정 도메인을 �
 
 1. 기술 지원에서 요청을 제출한 순서에 따라 스마트 이미징 고객 대기 목록에 추가합니다.
 1. Adobe이 요청을 처리할 준비가 되면 지원 담당자가 타겟 날짜를 조정하고 설정하도록 사용자에게 연락합니다.
-1. **선택 사항**: Adobe이 새로운 기능을 프로덕션으로 푸시하기 전에 스테이징에서 스마트 이미징을 테스트할 수 있습니다.
+1. **선택 사항**:Adobe이 새로운 기능을 프로덕션으로 푸시하기 전에 스테이징에서 스마트 이미징을 테스트할 수 있습니다.
 1. 지원이 완료되면 알림 메시지가 표시됩니다.
 1. 스마트 이미징의 성능을 최대화하려면 Adobe에서 TTL(Time To Live)을 24시간 이상으로 설정하는 것이 좋습니다. TTL은 CDN이 자산을 캐시하는 기간을 정의합니다. 이 설정을 변경하려면:
 
