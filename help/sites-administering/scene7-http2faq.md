@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: afbe9f80-c2a3-4a46-b9d6-4c9406667d7f
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 2%
+source-wordcount: '761'
+ht-degree: 1%
 
 ---
 
@@ -57,9 +57,8 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 
 ## Dynamic Media Classic 계정에 대해 HTTP/2를 활성화하는 프로세스는 무엇입니까? {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
-HTTP/2로 전환하려면 Adobe 기술 지원(`s7support@adobe.com`) 요청을 시작해야 합니다. 자동으로 수행되지 않습니다.
-
-1. 지원 요청에서 다음 정보를 제공합니다.
+1. Admin Console을 [사용하여 지원 사례를](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 만들고 HTTP/2로 전환할 것을 요청해야 합니다.자동으로 수행되지 않습니다.
+1. 지원 사례에 다음 정보를 제공하십시오.
 
    * 기본 연락처 이름, 이메일 및 전화 번호
    * HTTP2로 전환할 모든 도메인. 즉, `images.company.com` 또는 `mycompany.scene7.com`
@@ -77,7 +76,7 @@ HTTP/2로 전환하려면 Adobe 기술 지원(`s7support@adobe.com`) 요청을 �
    설정 **[!UICONTROL > 응용 프로그램 설정 > 일반 설정을 클릭합니다]**. 게시된 서버 이름 **[!UICONTROL 이라는 필드를 찾습니다]**. 현재 일반 Scene7 도메인을 사용하고 있는 경우 이 전환의 일부로 사용자 정의 도메인으로 이동을 요청할 수 있습니다.
 
    1. 기술 지원에서는 요청을 제출한 순서에 따라 HTTP/2 고객 대기 목록에 추가합니다.
-   1. Adobe이 요청을 처리할 준비가 되면 지원 팀에서 사용자에게 연락하여 전환을 조정하고 대상 날짜를 설정합니다.
+   1. Adobe이 요청을 처리할 준비가 되면 지원 팀에서 전환 조정 및 대상 날짜를 설정하도록 알려줍니다.
    1. 완료 후 알림을 받게 되며 HTTP2로 성공적으로 전환했는지 확인할 수 있습니다.
 
 
@@ -98,4 +97,4 @@ HTTP/2로의 전환은 새 CDN 구성으로 이동하는 것을 포함하므로 
 
 ## URL 또는 웹 사이트가 HTTP/2로 활성화되었는지 어떻게 확인할 수 있습니까? {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
-웹 브라우저와 함께 사용하려면 외부 버전을 다운로드해야 합니다. Firefox 및 Chrome에는 **[!UICONTROL HTTP/2 및 SPDY 표시기입니다]**. 브라우저는 HTTP/2만 안전하게 지원되므로 HTTPS를 사용하여 URL을 호출하여 확인해야 합니다. HTTP/2가 지원되는 경우 파란색 Flash 기호 형태로 확장자로 표시되고 헤더 &quot;X-Firefox-Spdy&quot;가 표시됩니다. &quot;h2&quot;.
+웹 브라우저와 함께 사용하려면 외부 버전을 다운로드해야 합니다. Firefox 및 Chrome에는 **[!UICONTROL HTTP/2 및 SPDY 표시기입니다]**. 브라우저는 HTTP/2만 안전하게 지원되므로 HTTPS를 사용하여 URL을 호출하여 확인해야 합니다. HTTP/2가 지원되는 경우 파란색 Flash 기호 형태로 확장자로 표시되고 헤더 &quot;X-Firefox-Spdy&quot;가 표시됩니다.&quot;h2&quot;.
