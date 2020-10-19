@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '5477'
+source-wordcount: '5491'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ Dynamic Media Classic을 사용하려면 Dynamic Media Classic 및 AEM Assets이
 
 ## AEM/Dynamic Media Classic과 Dynamic Media 통합 {#aem-scene-integration-versus-dynamic-media}
 
-AEM 사용자는 다이내믹 미디어로 작업할 두 가지 솔루션 중에서 선택할 수 있습니다. AEM의 인스턴스를 Dynamic Media Classic과 통합하거나 AEM에 통합된 Dynamic Media 솔루션을 사용합니다.
+AEM 사용자는 다이내믹 미디어로 작업할 두 가지 솔루션 중에서 선택할 수 있습니다.AEM의 인스턴스를 Dynamic Media Classic과 통합하거나 AEM에 통합된 Dynamic Media 솔루션을 사용합니다.
 
 다음 기준을 사용하여 선택할 솔루션을 결정합니다.
 
@@ -53,7 +53,7 @@ AEM 사용자는 다이내믹 미디어로 작업할 두 가지 솔루션 중에
 이 솔루션에서 에셋을 사용하여 작업하는 경우 다음 중 하나를 수행합니다.
 
 * Dynamic Media Classic에 바로 에셋을 업로드한 다음 **Dynamic Media Classic** 컨텐츠 브라우저에서 페이지 작성 또는
-* AEM Assets에 업로드한 다음 Dynamic Media Classic에 자동 게시를 활성화합니다. 페이지 작성을 위한 **자산** 컨텐츠 브라우저를 통해 액세스
+* AEM Assets에 업로드한 다음 Dynamic Media Classic에 자동 게시를 활성화합니다.페이지 작성을 위한 **자산** 컨텐츠 브라우저를 통해 액세스
 
 이 통합에 사용하는 구성 요소는 **디자인 모드의** Dynamic Media Classic [구성 요소 영역에서 찾을 수 있습니다.](/help/sites-authoring/author-environment-tools.md#page-modes)
 
@@ -151,7 +151,7 @@ Dynamic Media와 Dynamic Media Classic을 동시에 사용하려면:
     </tr> 
     <tr> 
     <td>기존 Dynamic Media Classic 고객 및 자산의 새로운 기능</td> 
-    <td><p>AEM에 자산을 업로드하고 Dynamic Media를 사용하여 다운로드/공유를 위한 변환을 생성합니다. 전달을 위해 AEM 자산을 Dynamic Media Classic에 자동으로 게시합니다.</p> <p><strong>중요:</strong> AEM에서 생성된 중복 처리 및 변환은 Dynamic Media Classic에 동기화되지 않습니다.</p> </td> 
+    <td><p>AEM에 자산을 업로드하고 Dynamic Media를 사용하여 다운로드/공유를 위한 변환을 생성합니다. AEM 에셋을 Dynamic Media Classic에 자동으로 게시하여 전달할 수 있습니다.</p> <p><strong>중요:</strong> AEM에서 생성된 중복 처리 및 변환은 Dynamic Media Classic에 동기화되지 않습니다.</p> </td> 
     <td><p>사용</p> <p>(3단계 참조)</p> </td> 
     <td>끔</td> 
     <td>끔</td> 
@@ -160,13 +160,13 @@ Dynamic Media와 Dynamic Media Classic을 동시에 사용하려면:
     </tbody> 
     </table>
 
-1. (선택 사항) 사용 사례 표 참조) - [Dynamic Media 클라우드 구성을](/help/assets/config-dynamic.md) 설정하고 Dynamic Media 서버 [를 활성화합니다](/help/assets/config-dynamic.md).
-1. (선택 사항) 사용 사례 표 참조) - 자산에서 Dynamic Media Classic으로 자동 업로드를 사용하도록 선택한 경우 다음을 추가해야 합니다.
+1. (선택 사항)사용 사례 표 참조) - [Dynamic Media 클라우드 구성을](/help/assets/config-dynamic.md) 설정하고 Dynamic Media 서버 [를 활성화합니다](/help/assets/config-dynamic.md).
+1. (선택 사항)사용 사례 표 참조) - 자산에서 Dynamic Media Classic으로 자동 업로드를 사용하도록 선택한 경우 다음을 추가해야 합니다.
 
    1. Dynamic Media Classic에 자동 업로드를 설정합니다.
    1. Dam 자산 **업데이트** 워크플로우 *의 끝* 에 있는 모든 다이내믹 미디어 워크플로우 단계 뒤에 **Dynamic Media Classic 업로드** 단계를 추가합니다( `https://<server>:<host>/cf#/etc/workflow/models/dam/update_asset.html)`
    1. (선택 사항) https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7AssetMimeTypeServiceImpl에서 [MIME 유형별로 Dynamic Media Classic 자산 업로드를 제한합니다](http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7AssetMimeTypeServiceImpl). 이 목록에 없는 자산 MIME 형식은 Dynamic Media Classic 서버에 업로드되지 않습니다.
-   1. (선택 사항) Dynamic Media Classic 구성에서 비디오를 설정합니다. Dynamic Media 및 Dynamic Media Classic 중 하나 또는 둘 다에 대해 비디오 인코딩을 동시에 활성화할 수 있습니다. 동적 변환은 AEM 인스턴스에서 로컬로 미리 보고 재생하는 데 사용되는 반면 Dynamic Media Classic 비디오 변환은 Dynamic Media Classic 서버에 생성되고 저장됩니다. Dynamic Media 및 Dynamic Media Classic 모두에 대해 비디오 인코딩 서비스를 설정할 때 [비디오 처리 프로필을](/help/assets/video-profiles.md) Dynamic Media Classic 자산 폴더에 적용합니다.
+   1. (선택 사항) Dynamic Media Classic 구성에서 비디오를 설정합니다. Dynamic Media 및 Dynamic Media Classic 중 하나 또는 둘 다에 대해 비디오 인코딩을 동시에 활성화할 수 있습니다. 동적 변환은 AEM 인스턴스에서 로컬로 미리 보고 재생하는 데 사용되는 반면 Dynamic Media Classic 비디오 변환은 Dynamic Media Classic 서버에 생성되고 저장됩니다. Dynamic Media 및 Dynamic Media Classic 모두에 대한 비디오 인코딩 서비스를 설정할 때 [비디오 처리 프로필을](/help/assets/video-profiles.md) Dynamic Media Classic 자산 폴더에 적용합니다.
    1. (선택 사항) [Dynamic Media Classic에서 보안 미리 보기를 구성합니다](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene).
 
 #### 제한 사항 {#limitations}
@@ -217,7 +217,7 @@ Dynamic Media Classic에 자산을 업로드하도록 AEM을 구성할 수 있�
 AEM과 통합되도록 Dynamic Media Classic을 구성하려면 다음 단계를 완료해야 합니다.
 
 1. [클라우드 구성](#creating-a-cloud-configuration-for-scene) 정의 - Dynamic Media Classic 폴더와 자산 폴더 간의 매핑을 정의합니다. 단방향(AEM Assets에서 Dynamic Media Classic으로)만 동기화하려는 경우에도 이 단계를 완료해야 합니다.
-1. [Adobe CQ **의7dam Dam 수신기&#x200B;**](#enabling-the-adobe-cq-scene-dam-listener)활성화 -[!UICONTROL OSGi]콘솔에서완료
+1. [Adobe CQ **의7dam Dam 수신기**](#enabling-the-adobe-cq-scene-dam-listener) 활성화 - [!UICONTROL OSGi] 콘솔에서완료
 1. AEM 에셋을 Dynamic Media Classic에 자동으로 업로드하려면 해당 옵션을 활성화하고 DAM 에셋 업데이트 워크플로우에 Dynamic Media Classic을 추가해야 합니다. 자산을 수동으로 업로드할 수도 있습니다.
 1. 사이드 킥에 Dynamic Media Classic 구성 요소 추가 이를 통해 사용자는 AEM 페이지에서 Dynamic Media Classic 구성 요소를 사용할 수 있습니다.
 1. [AEM](#enabling-scene-for-wcm) 의 페이지에 구성 매핑 - Dynamic Media Classic에서 만든 비디오 사전 설정을 보려면 이 단계가 필요합니다. CQ 대상 폴더 외부에서 Dynamic Media Classic으로 자산을 게시해야 하는 경우에도 필요합니다.
@@ -236,7 +236,7 @@ AEM Assets 및 Dynamic Media Classic 동기화를 설정할 때는 다음을 이
 
 >[!NOTE]
 >
->AEM은 모든 메타데이터를 Dynamic Media Classic에 업로드하기 전에 XMP으로 포함하므로 메타데이터 노드의 모든 속성을 XMP으로 Dynamic Media Classic에서 사용할 수 있습니다.
+>AEM은 모든 메타데이터를 Dynamic Media Classic에 업로드하기 전에 XMP으로 내장하므로 메타데이터 노드의 모든 속성을 XMP으로 Dynamic Media Classic에서 사용할 수 있습니다.
 
 #### 알려진 제한 사항 및 디자인 관련 사항 {#known-limitations-and-design-implications}
 
@@ -303,7 +303,7 @@ AEM Assets과 Dynamic Media Classic 간의 동기화를 통해 현재 다음과 
 
 >[!NOTE]
 >
->여러 구성을 가질 수 있습니다. 하나의 클라우드 구성은 Dynamic Media Classic 회사의 한 사용자를 나타냅니다. 다른 Dynamic Media Classic 회사 또는 사용자에게 액세스하려면 여러 구성을 만들어야 합니다.
+>여러 구성을 가질 수 있습니다.하나의 클라우드 구성은 Dynamic Media Classic 회사의 한 사용자를 나타냅니다. 다른 Dynamic Media Classic 회사 또는 사용자에게 액세스하려면 여러 구성을 만들어야 합니다.
 
 Dynamic Media Classic에 자산을 게시할 수 있도록 AEM을 구성하려면:
 
@@ -323,7 +323,7 @@ Dynamic Media Classic에 자산을 게시할 수 있도록 AEM을 구성하려�
 
 1. Dynamic Media Classic 계정의 이메일 주소, 암호 및 영역을 입력하고 **[!UICONTROL Connect를 눌러 Dynamic Media Classic을 누릅니다]**. Dynamic Media Classic 서버에 연결되고 대화 상자가 더 많은 옵션으로 확장됩니다.
 
-1. 회사 **[!UICONTROL 이름]** 및 **[!UICONTROL 루트 경로]** (지정할 경로와 함께 게시된 서버 이름입니다. 게시된 서버 이름을 모를 경우 Dynamic Media Classic에서 [ **[!UICONTROL 설정] > [응용 프로그램 설정]으로 이동합니다]**.
+1. 회사 **[!UICONTROL 이름]** 및 **[!UICONTROL 루트 경로]** (지정할 경로와 함께 게시된 서버 이름입니다.게시된 서버 이름을 모를 경우 Dynamic Media Classic에서 [ **[!UICONTROL 설정] > [응용 프로그램 설정]으로 이동합니다]**.
 
    >[!NOTE]
    >
@@ -373,7 +373,7 @@ AEM 인스턴스가 Dynamic Media Classic(Scene7)을 통해 비디오 인코딩�
 
    >[!NOTE]
    >
-   >모범 사례: 대부분의 에셋은 최대 몇 분 내에 수집됩니다(예: 이미지). 그러나 특정 경우(예: 큰 비디오) 긴 처리 시간을 수용하려면 시간 초과 값이 7200초(2시간)로 증가해야 합니다. 그렇지 않으면 이 Dynamic Media Classic 업로드 작업은 JCR 메타데이터에서 **[!UICONTROL UploadFailed]** 로 표시됩니다.
+   >모범 사례:대부분의 에셋은 최대 몇 분 내에 수집됩니다(예: 이미지). 그러나 특정 경우(예: 큰 비디오) 긴 처리 시간을 수용하려면 시간 초과 값이 7200초(2시간)로 증가해야 합니다. 그렇지 않으면 이 Dynamic Media Classic 업로드 작업은 JCR 메타데이터에서 **[!UICONTROL UploadFailed]** 로 표시됩니다.
 
 1. 저장을 **[!UICONTROL 누릅니다]**.
 
@@ -406,7 +406,7 @@ AEM Assets에서 자동 로드를 구성하려면:
    >[!NOTE]
    >
    >* 에셋을 자동화 후 추가할 때 CQ 대상 폴더에 배치되지 않으면 Dynamic Media Classic에 업로드되지 않습니다.
-   >* AEM은 모든 메타데이터를 Dynamic Media Classic에 업로드하기 전에 XMP으로 포함하므로 메타데이터 노드의 모든 속성을 XMP으로 Dynamic Media Classic에서 사용할 수 있습니다.
+   >* AEM은 모든 메타데이터를 Dynamic Media Classic에 업로드하기 전에 XMP으로 내장하므로 메타데이터 노드의 모든 속성을 XMP으로 Dynamic Media Classic에서 사용할 수 있습니다.
 
 
 ### Dynamic Media Classic으로 푸시된 자산의 상태(게시/게시 취소) 구성 {#configuring-the-state-published-unpublished-of-assets-pushed-to-scene}
@@ -425,7 +425,7 @@ Dynamic Media Classic 에셋은 보안 미리 보기를 통해 계속 사용할 
 
 자산을 게시하지 않고 Dynamic Media Classic으로 푸시하려면 먼저 다음을 설정해야 합니다.
 
-1. Dynamic Media Classic 계정에 대한 보안 미리 보기를 활성화하려면 Dynamic Media Classic 고객 지원 센터(s7support@adobe.com)에 문의하십시오.
+1. [Admin Console을 사용하여 지원 사례를 만듭니다.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 지원 케이스에서 Dynamic Media Classic 계정에 대해 보안 미리 보기가 활성화되도록 요청합니다.
 1. Dynamic Media Classic 계정에 대한 보안 미리 보기를 [설정하려면 지침에 따릅니다.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
 
 Dynamic Media Classic에서 보안 테스트 설정을 만들기 위해 수행한 단계와 동일합니다.
