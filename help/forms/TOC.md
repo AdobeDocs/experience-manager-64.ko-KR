@@ -7,16 +7,16 @@ user-guide-title: Adobe Experience Manager 6.4 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성하고 관리하며 게시하고 업데이트합니다.
 translation-type: tm+mt
-source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
+source-git-commit: f2b0d37a0666f2a0be9e7034da12dddf0c56fb25
 workflow-type: tm+mt
-source-wordcount: '3722'
+source-wordcount: '3721'
 ht-degree: 2%
 
 ---
 
 # Adobe Experience Manager 6.4 Forms 안내서 {#forms}
 
-+ [AEM 6.4 Forms 사용 안내서](home.md)
++ [AEM 6.4 Forms 가이드](home.md)
 + 릴리스 노트 {#release-notes-new-features}
    + [릴리스 노트](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/forms.html)
    + [새로운 기능 요약](using/whats-new.md)
