@@ -1,7 +1,7 @@
 ---
 title: 새로운 기능 요약 | AEM 6.4 Forms
 seo-title: 새로운 기능 요약 | AEM 6.4 Forms
-description: Summary of new features and enhancements in AEM 6.4 Forms.
+description: AEM 6.4 Forms의 새로운 기능 및 개선 사항에 대한 요약
 seo-description: AEM 6.4 Forms의 새로운 기능 및 개선 사항에 대한 요약
 uuid: 152068ec-47a8-43f4-b9c8-3a17d1f085fe
 contentOwner: vishgupt
@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 436aa424-d05e-4f3d-90ac-5ff3b05ddba8
 translation-type: tm+mt
-source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+source-git-commit: f2b0d37a0666f2a0be9e7034da12dddf0c56fb25
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2016'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ AEM 6.4 Forms의 새로운 기능 및 개선 사항에 대한 요약
 
 AEM Forms에는 적응형 양식 및 인터랙티브한 커뮤니케이션을 통해 작성, 관리 및 사용자 경험을 보다 효율적으로 수행할 수 있는 몇 가지 새로운 기능과 향상된 기능이 포함되어 있습니다.
 
-새로운 기능 및 개선 사항에 대한 빠른 소개를 살펴보십시오. 자세한 내용은 설명서를 참조하십시오. 또한 AEM 6.4 Forms [릴리스 노트를 참조하십시오](/help/release-notes/forms.md). 전체 AEM 6.4 Forms 문서를 보려면 AEM [6.4 Forms 사용 안내서를 참조하십시오](/help/forms/home.md).
+새로운 기능 및 개선 사항에 대한 빠른 소개를 살펴보십시오. 자세한 내용은 설명서를 참조하십시오. 또한 AEM 6.4 Forms [릴리스 노트를 참조하십시오](/help/release-notes/forms.md). 전체 AEM 6.4 Forms 설명서를 보려면 AEM [6.4 Forms 가이드를 참조하십시오](/help/forms/home.md).
 
 ## 대화형 통신 {#interactive-communications}
 
@@ -33,7 +33,7 @@ Interactive Communications는 비즈니스 서신, 서신, 문서, 명세서, �
 
 인터랙티브 커뮤니케이션은 적응형 양식과 동일한 기본 기술, 프로세스 및 구성 요소를 사용하므로 반응형 적응형 양식과 유사한 반응형 멀티채널 커뮤니케이션을 제작할 수 있습니다.
 
-Interactive communication offers significant advantages:
+인터랙티브한 커뮤니케이션은 다음과 같은 이점을 제공합니다.
 
 * 양식 데이터 모델과 OOTB를 통합하여 백엔드 데이터베이스 및 MS Dynamics와 같은 기타 CRM 시스템에 간편하고 간소화된 액세스를 제공합니다.
 * 인쇄 및 웹 채널을 위한 통합 저작 인터페이스 제공
@@ -50,9 +50,9 @@ Interactive communication offers significant advantages:
 
 ### WYSIWYG 문서 편집기 {#wysiwyg-document-editor}
 
-The WYSIWYG drag-and-drop document editor is business friendly. The intuitive interface, drag-and-drop functionality, standard components, data models, and integrated repository for assets facilitate quick and easy authoring of interactive communication.
+WYSIWYG 드래그 앤 드롭 방식의 문서 편집기는 비즈니스에 적합합니다. 직관적인 인터페이스, 드래그 앤 드롭 기능, 표준 구성 요소, 데이터 모델 및 에셋 통합 저장소를 통해 인터랙티브한 커뮤니케이션을 빠르고 손쉽게 제작할 수 있습니다.
 
-Interactive communication을 생성하거나 기존 커뮤니케이션을 편집하려면 비즈니스 사용자는 다음 기본 구성 요소를 사용할 수 있습니다. 채널, 컨텐트, 속성, 자산, 구성 요소 및 데이터 소스.
+Interactive communication을 생성하거나 기존 커뮤니케이션을 편집하려면 비즈니스 사용자는 다음 기본 구성 요소를 사용할 수 있습니다.채널, 컨텐트, 속성, 자산, 구성 요소 및 데이터 소스.
 
 ![drag-n-drop-lf](assets/drag-n-drop-lf.png)
 
@@ -116,7 +116,7 @@ AEM Forms에는 인터랙티브 커뮤니케이션을 위한 특별 테마가 �
 
 ![](do-not-localize/data-integeration-1.png)
 
-[AEM Forms 데이터 통합](/help/forms/using/data-integration.md) 기능을 사용하면 서로 다른 데이터 소스를 구성할 수 있습니다. 데이터베이스, RESTful 또는 SOAP 기반 웹 서비스, OData 서비스 등 을 클릭하여 데이터 바인딩, 자동 채우기 및 서비스 불러오기 등에 사용할 수 있는 양식 데이터 모델을 생성합니다.
+[AEM Forms 데이터 통합](/help/forms/using/data-integration.md) 기능을 사용하면 서로 다른 데이터 소스를 구성할 수 있습니다.데이터베이스, RESTful 또는 SOAP 기반 웹 서비스, OData 서비스 등을 클릭하여 데이터 바인딩, 자동 채우기 및 서비스 불러오기 등에 사용할 수 있는 양식 데이터 모델을 생성합니다.
 
 이번 릴리스에는 데이터 통합에 대한 몇 가지 새로운 기능과 개선 사항이 있습니다.
 
