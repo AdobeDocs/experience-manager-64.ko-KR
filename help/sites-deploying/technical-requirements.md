@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 4d3c4650-3e2a-43b1-ad2d-8d0ae2254ca9
 translation-type: tm+mt
-source-git-commit: 65346b3de98ec53e97c66fdac3be43b9c71e292a
+source-git-commit: d09956e5e7fb42e9c4b145e027778f209876239a
 workflow-type: tm+mt
-source-wordcount: '3143'
+source-wordcount: '3142'
 ht-degree: 2%
 
 ---
@@ -68,11 +68,11 @@ Adobe은 이러한 구성을 권장하며 표준 소프트웨어 유지 관리 �
    <td>설명<br /> </td> 
   </tr> 
   <tr> 
-   <td><strong>A: 지원됨</strong></td> 
+   <td><strong>A:지원됨</strong></td> 
    <td>Adobe은 이 구성에 대한 모든 지원 및 유지 관리를 제공합니다. 이 구성은 Adobe의 품질 보증 프로세스로 다룹니다.</td> 
   </tr> 
   <tr> 
-   <td><strong>R: 제한된 지원</strong></td> 
+   <td><strong>R:제한된 지원</strong></td> 
    <td>고객의 성공적인 프로젝트 진행을 위해 Adobe은 특정 조건이 충족되어야 하는 제한된 지원 프로그램 내에서 모든 지원을 제공합니다. R 수준 지원은 공식적인 고객 요청과 Adobe의 확인을 필요로 합니다. 자세한 내용은 Adobe 고객 지원 센터에 문의하십시오.</td> 
   </tr> 
  </tbody> 
@@ -82,7 +82,7 @@ Adobe은 이러한 구성을 권장하며 표준 소프트웨어 유지 관리 �
 
 | 지원 수준 | 설명 |
 |---|---|
-| **Z: 지원되지 않음** | 구성이 지원되지 않습니다. Adobe은 구성이 작동되는지 여부에 대해 아무런 설명을 하지 않으며, 지원하지 않습니다. |
+| **Z:지원되지 않음** | 구성이 지원되지 않습니다. Adobe은 구성이 작동되는지 여부에 대해 아무런 설명을 하지 않으며, 지원하지 않습니다. |
 
 ## 지원되는 플랫폼 {#supported-platforms}
 
@@ -104,27 +104,27 @@ Adobe Experience Manager은 다음 버전의 Java 가상 시스템으로 작동�
   </tr> 
   <tr> 
    <td>Oracle Java SE 11 JDK [1]</td> 
-   <td>Z: 지원되지 않음 </td> 
+   <td>Z:지원되지 않음 </td> 
   </tr> 
   <tr> 
    <td>Oracle Java SE 10 JDK [1]</td> 
-   <td>Z: 지원되지 않음 </td> 
+   <td>Z:지원되지 않음 </td> 
   </tr> 
   <tr> 
    <td>Oracle Java SE 9 JDK [1]</td> 
-   <td>Z: 지원되지 않음</td> 
+   <td>Z:지원되지 않음</td> 
   </tr> 
   <tr> 
    <td><strong>Oracle Java SE 8 JDK - 64비트</strong></td> 
-   <td>A: 지원되는 [3]<br /> </td> 
+   <td>A:지원되는 [3]<br /> </td> 
   </tr> 
   <tr> 
    <td>IBM J9 VM - 빌드 2.9, JRE 1.8.0 [2]</td> 
-   <td>A: 지원됨</td> 
+   <td>A:지원됨</td> 
   </tr> 
   <tr> 
    <td>IBM J9 VM - 빌드 2.8, JRE 1.8.0 [2]</td> 
-   <td>A: 지원됨</td> 
+   <td>A:지원됨</td> 
   </tr> 
  </tbody> 
 </table>
@@ -148,82 +148,82 @@ Adobe Experience Manager 저장소를 배포하는 다양한 옵션이 있습니
   <tr> 
    <td><strong>TAR 파일이 있는 파일 시스템 [1]</strong></td> 
    <td>저장소</td> 
-   <td>A: 지원됨</td> 
+   <td>A:지원됨</td> 
   </tr> 
   <tr> 
    <td><strong>데이터 저장소 [1]이(가) 있는 파일 시스템</strong></td> 
    <td>이진 파일</td> 
-   <td>A: 지원됨</td> 
+   <td>A:지원됨</td> 
   </tr> 
   <tr> 
    <td>파일 시스템 [1]의 TAR 파일에 바이너리 저장</td> 
    <td>이진 파일</td> 
-   <td>Z: 프로덕션에서 지원되지 않음</td> 
+   <td>Z:프로덕션에서 지원되지 않음</td> 
   </tr> 
   <tr> 
    <td>Amazon S3</td> 
    <td>이진 파일</td> 
-   <td>A: 지원됨</td> 
+   <td>A:지원됨</td> 
   </tr> 
   <tr> 
    <td>Microsoft Azure Blob 저장소</td> 
    <td>이진 파일</td> 
-   <td>A: 지원됨</td> 
+   <td>A:지원됨</td> 
   </tr> 
   <tr> 
    <td>MongoDB Enterprise 3.6 [5]</td> 
    <td>저장소</td> 
-   <td>A: 지원됨</td> 
+   <td>A:지원됨</td> 
   </tr> 
   <tr> 
    <td>MongoDB Enterprise 3.4 [2, 3]</td> 
    <td>저장소</td> 
-   <td>A: 지원됨</td> 
+   <td>A:지원됨</td> 
   </tr> 
   <tr> 
    <td>MySQL 5.7</td> 
    <td>Forms 데이터베이스</td> 
-   <td>A: 지원됨</td> 
+   <td>A:지원됨</td> 
   </tr> 
   <tr> 
    <td>IBM DB2 11.1<br /> </td> 
    <td>Forms 데이터베이스</td> 
-   <td>A: 지원됨</td> 
+   <td>A:지원됨</td> 
   </tr> 
   <tr> 
    <td>IBM DB2 10.5</td> 
    <td>저장소 및 Forms 데이터베이스</td> 
-   <td>R: 제한된 지원(4)</td> 
+   <td>R:제한된 지원(4)</td> 
   </tr> 
   <tr> 
    <td>Oracle 데이터베이스 12c(12.1.x)</td> 
    <td>저장소 및 Forms 데이터베이스</td> 
-   <td>R: 제한된 지원</td> 
+   <td>R:제한된 지원</td> 
   </tr> 
   <tr> 
    <td>Microsoft SQL Server 2017</td> 
    <td>Forms 데이터베이스</td> 
-   <td>Z: 지원되지 않음(4)</td> 
+   <td>Z:지원되지 않음(4)</td> 
   </tr> 
   <tr> 
    <td>Microsoft SQL Server 2016</td> 
    <td>Forms 데이터베이스</td> 
-   <td>A: 지원됨</td> 
+   <td>A:지원됨</td> 
   </tr> 
   <tr> 
    <td>Microsoft SQL Server 2014</td> 
    <td>Forms 데이터베이스</td> 
-   <td>R: 제한된 지원(4)</td> 
+   <td>R:제한된 지원(4)</td> 
   </tr> 
   <tr> 
    <td><strong>Apache Lucene(Quickstart 내장)</strong></td> 
    <td>검색 서비스</td> 
-   <td>A: 지원됨</td> 
+   <td>A:지원됨</td> 
   </tr> 
   <tr> 
    <td>Apache Solr</td> 
    <td>검색 서비스</td> 
-   <td>A: 지원됨</td> 
+   <td>A:지원됨</td> 
   </tr> 
  </tbody> 
 </table>
@@ -268,13 +268,13 @@ Adobe Experience Manager은 독립 실행형 서버(quickstart JAR 파일)로 �
 
 | 플랫폼 | 지원 수준 |
 |---|---|
-| **Quickstart 내장된 Servlet Engine(Jetty 9.3)** | A: 지원됨 |
-| Oracle WebLogic Server 12.2(12cR2) | A: 지원됨 |
-| 웹 프로필 7.0 및 IBM JRE 1.8이 포함된 IBM WebSphere Application Server Continuous Delivery(LibertyProfile) | A: 지원됨 |
-| IBM WebSphere Application Server 9.0 | A: 지원됨 |
-| Apache Tomcat 8.5.x | A: 지원됨 |
-| JBoss 애플리케이션 서버가 있는 JBoss EAP 7.1.0 | A: 지원(1) |
-| JBoss 응용 프로그램 서버가 있는 JBoss EAP 7.0.0 | A: 지원됨 |
+| **Quickstart 내장된 Servlet Engine(Jetty 9.3)** | A:지원됨 |
+| Oracle WebLogic Server 12.2(12cR2) | A:지원됨 |
+| 웹 프로필 7.0 및 IBM JRE 1.8이 포함된 IBM WebSphere Application Server Continuous Delivery(LibertyProfile) | A:지원됨 |
+| IBM WebSphere Application Server 9.0 | A:지원됨 |
+| Apache Tomcat 8.5.x | A:지원됨 |
+| JBoss 애플리케이션 서버가 있는 JBoss EAP 7.1.0 | A:지원(1) |
+| JBoss 응용 프로그램 서버가 있는 JBoss EAP 7.0.0 | A:지원됨 |
 
 1. AEM Forms은 지원되지 않습니다.
 
@@ -290,43 +290,43 @@ Adobe Experience Manager은 다음 서버 플랫폼과 연동됩니다.
   </tr> 
   <tr> 
    <td><strong>Linux, Red Hat 배포 기반</strong></td> 
-   <td>A: 지원(1)</td> 
+   <td>A:지원(1)</td> 
   </tr> 
   <tr> 
    <td>Linux, Debian 배포 기반 우분투</td> 
-   <td>A: 지원(4)</td> 
+   <td>A:지원(4)</td> 
   </tr> 
   <tr> 
    <td>Linux, SUSE 배포 기반</td> 
-   <td>A: 지원됨</td> 
+   <td>A:지원됨</td> 
   </tr> 
   <tr> 
    <td>Microsoft Windows Server 2016</td> 
-   <td>A: 지원됨</td> 
+   <td>A:지원됨</td> 
   </tr> 
   <tr> 
    <td>Microsoft Windows Server 2012 R2</td> 
-   <td>A: 지원됨</td> 
+   <td>A:지원됨</td> 
   </tr> 
   <tr> 
    <td>Oracle Solaris 11</td> 
-   <td>A: 제한(3,5,7)<br /> R: 새로운 계약에 대한 제한된 지원</td> 
+   <td>A:제한(3,5,7)<br /> R:새로운 계약에 대한 제한된 지원</td> 
   </tr> 
   <tr> 
    <td>IBM AIX 7.2</td> 
-   <td>A: 제한(2,5,7)<br /> R: 새로운 계약에 대한 제한된 지원</td> 
+   <td>A:제한(2,5,7)<br /> R:새로운 계약에 대한 제한된 지원</td> 
   </tr> 
  </tbody> 
 </table>
 
-1. Linux 커널 2.6, 3.x 및 4.x에는 Red Hat Enterprise Linux, CentOS, Oracle Linux, Amazon Linux 등 Red Hat 배포에서 파생되는 제품이 포함되어 있습니다. AEM 양식 추가 기능은 CentOS 7 및 Red Hat Enterprise Linux 6.5 및 7에서만 지원됩니다.
-1. AEM Assets: XMP 메타데이터 [다시 쓰기 지원 섹션을 참조하십시오.](#requirements-for-aem-assets-xmp-metadata-write-back)
-1. AEM Assets: 다이내믹 미디어 이미징을 지원하지 않습니다. 다이내믹 미디어 비디오가 지원됩니다.
+1. Linux 커널 2.6, 3.x 및 4.x에는 Red Hat Enterprise Linux, CentOS, Oracle Linux, Amazon Linux 등 Red Hat 배포에서 파생되는 제품이 포함되어 있습니다. AEM Forms 추가 기능은 CentOS 7 및 Red Hat Enterprise Linux 7에서만 지원됩니다.
+1. AEM Assets:XMP 메타데이터 [다시 쓰기 지원 섹션을 참조하십시오.](#requirements-for-aem-assets-xmp-metadata-write-back)
+1. AEM Assets:다이내믹 미디어 이미징을 지원하지 않습니다. 다이내믹 미디어 비디오가 지원됩니다.
 1. AEM Forms은 Ubuntu 16.04 LTS에서만 지원됩니다.
-1. AEM Assets: Raw [파일 변환 지원 안 함](/help/assets/camera-raw.md)
-1. AEM Forms: 제작 환경을 지원하지 않음
-1. AEM Assets: 향상된 [PDF 래스터라이저 기능 지원 안 함](/help/assets/aem-pdf-rasterizer.md)
-1. AEM Forms: 지원되지 않음
+1. AEM Assets:Raw [파일 변환 지원 안 함](/help/assets/camera-raw.md)
+1. AEM Forms:제작 환경을 지원하지 않음
+1. AEM Assets:향상된 [PDF 래스터라이저 기능 지원 안 함](/help/assets/aem-pdf-rasterizer.md)
+1. AEM Forms:지원되지 않음
 
 ### 가상 및 클라우드 컴퓨팅 환경 {#virtual-cloud-computing-environments}
 
@@ -346,14 +346,14 @@ Azure 또는 AWS에 AEM을 배포하는 방법에 대한 권장 사항은 Adobe 
 
 | 플랫폼 | 지원 수준 |
 |---|---|
-| **Apache httpd 2.4.x** (아래 1,2 참조) | A: 지원됨 |
-| Microsoft IIS 10(인터넷 정보 서버) | A: 지원됨 |
-| Microsoft IIS 8.5(인터넷 정보 서버) | A: 지원됨 |
+| **Apache httpd 2.4.x** (아래 1,2 참조) | A:지원됨 |
+| Microsoft IIS 10(인터넷 정보 서버) | A:지원됨 |
+| Microsoft IIS 8.5(인터넷 정보 서버) | A:지원됨 |
 
 1. Apache httpd 소스 코드를 기반으로 구축된 웹 서버는 해당 서버가 기반으로 하는 httpd 버전과 동일한 지원 수준을 갖게 됩니다. 확실하지 않은 경우 해당 서버 제품과 관련된 지원 수준의 확인을 Adobe에 요청하십시오. 다음 경우:
 
    1. HTTP 서버는 공식 Apache 소스 배포만을 사용하여 구축되었습니다.
-   1. HTTP 서버가 실행 중인 운영 체제의 일부로 배달되었습니다. 예: IBM HTTP Server, Oracle HTTP Server
+   1. HTTP 서버가 실행 중인 운영 체제의 일부로 배달되었습니다. 예:IBM HTTP Server, Oracle HTTP Server
 
 1. Dispatcher는 Windows 운영 체제용 Apache 2.4.x에서 사용할 수 없습니다.
 
@@ -380,58 +380,58 @@ AEM 사용자 인터페이스는 더 큰 스크린(일반적으로 노트북 및
   </tr> 
   <tr> 
    <td><strong>Google Chrome(Evergreen)</strong></td> 
-   <td>A: 지원됨</td> 
-   <td>A: 지원됨</td> 
+   <td>A:지원됨</td> 
+   <td>A:지원됨</td> 
   </tr> 
   <tr> 
    <td>Microsoft Edge(Evergreen)</td> 
-   <td>A: 지원됨</td> 
-   <td>A: 지원됨</td> 
+   <td>A:지원됨</td> 
+   <td>A:지원됨</td> 
   </tr> 
   <tr> 
    <td>Microsoft Internet Explorer 11</td> 
-   <td>A: 지원됨</td> 
-   <td>A: 지원됨</td> 
+   <td>A:지원됨</td> 
+   <td>A:지원됨</td> 
   </tr> 
   <tr> 
    <td>Mozilla Firefox(Evergreen)</td> 
-   <td>A: 지원됨</td> 
-   <td>A: 지원됨</td> 
+   <td>A:지원됨</td> 
+   <td>A:지원됨</td> 
   </tr> 
   <tr> 
    <td>Mozilla Firefox 마지막 ESR [1]</td> 
-   <td>A: 지원됨</td> 
-   <td>A: 지원됨</td> 
+   <td>A:지원됨</td> 
+   <td>A:지원됨</td> 
   </tr> 
   <tr> 
    <td>macOS 기반의 Apple Safari 12.x</td> 
-   <td>A: 지원됨</td> 
-   <td>A: 지원됨</td> 
+   <td>A:지원됨</td> 
+   <td>A:지원됨</td> 
   </tr> 
   <tr> 
    <td>macOS 기반의 Apple Safari 11.x</td> 
-   <td>A: 지원됨</td> 
-   <td>A: 지원됨</td> 
+   <td>A:지원됨</td> 
+   <td>A:지원됨</td> 
   </tr> 
   <tr> 
    <td>macOS 기반의 Apple Safari 10.x</td> 
-   <td>A: 지원됨</td> 
-   <td>A: 지원됨</td> 
+   <td>A:지원됨</td> 
+   <td>A:지원됨</td> 
   </tr> 
   <tr> 
    <td>iOS 12.x의 Apple Safari</td> 
-   <td>A: 지원되는 [2]</td> 
-   <td>Z: 지원되지 않음</td> 
+   <td>A:지원되는 [2]</td> 
+   <td>Z:지원되지 않음</td> 
   </tr> 
   <tr> 
    <td>iOS 11.x의 Apple Safari</td> 
-   <td>A: 지원되는 [2]</td> 
-   <td>Z: 지원되지 않음</td> 
+   <td>A:지원되는 [2]</td> 
+   <td>Z:지원되지 않음</td> 
   </tr> 
   <tr> 
    <td>iOS 10.3의 Apple Safari</td> 
-   <td>A: 지원되는 [2]</td> 
-   <td>Z: 지원되지 않음</td> 
+   <td>A:지원되는 [2]</td> 
+   <td>Z:지원되지 않음</td> 
   </tr> 
  </tbody> 
 </table>
@@ -461,7 +461,7 @@ Windows에서 WebDav 클라이언트의 응답을 향상시키려면 [Microsoft 
 
 ## 추가 플랫폼 노트 {#additional-platform-notes}
 
-이 섹션에서는 Adobe Experience Manager 및 해당 추가 기능 실행에 대한 특수 메모와 자세한 정보를 제공합니다.
+이 섹션에서는 Adobe Experience Manager 및 Add-Ons 실행에 대한 특수 메모와 자세한 정보를 제공합니다.
 
 ### IPv4 및 IPv6 {#ipv-and-ipv}
 
@@ -494,9 +494,9 @@ AEM Dynamic Media는 기본적으로 비활성화됩니다. See [Enabling Dynami
 Dynamic Media가 활성화되면 다음과 같은 추가 시스템 요구 사항이 적용됩니다.
 >[!NOTE]
 >
->다음 시스템 요구 사항은 **_다이내믹 미디어 - 하이브리드 모드를 사용하는 경우에만_** 적용됩니다. 다이내믹 미디어 - 하이브리드 모드에는 포함된 이미지 서버가 있으며, 이는 특정 운영 체제에서만 인증됩니다.
+>다음 시스템 요구 사항은 **_다이내믹 미디어 - 하이브리드 모드를 사용하는 경우에만_** 적용됩니다.다이내믹 미디어 - 하이브리드 모드에는 포함된 이미지 서버가 있으며, 이는 특정 운영 체제에서만 인증됩니다.
 >
->동적 미디어 - Scene7 모드(즉, **dynamicmedia_scene7** 런모드)를 실행하는 다이내믹 미디어 고객의 경우 추가 시스템 요구 사항이 없습니다. AEM과 동일한 시스템 요구 사항만 해당합니다. 다이내믹 미디어 - Scene7 모드 아키텍처는 AEM에 임베드된 서비스가 아니라 클라우드 기반의 이미지 서비스를 사용합니다.
+>동적 미디어 - Scene7 모드(즉, **dynamicmedia_scene7** 런모드)를 실행하는 다이내믹 미디어 고객의 경우 추가 시스템 요구 사항이 없습니다.aem과 동일한 시스템 요구 사항만 해당합니다. 다이내믹 미디어 - Scene7 모드 아키텍처는 AEM에 임베드된 서비스가 아니라 클라우드 기반의 이미지 서비스를 사용합니다.
 
 #### 하드웨어 {#hardware}
 
