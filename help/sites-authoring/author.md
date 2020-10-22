@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 72ee013a-7a60-41ee-9421-2846e4c6bc68
 translation-type: tm+mt
-source-git-commit: 8b75cf8fd862302446fbb3d8823eec2bd708febe
+source-git-commit: b009abd8b3d55bd7dd030d7b4828aec72d9fa9ff
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '555'
 ht-degree: 99%
 
 ---
@@ -36,13 +36,9 @@ AEM에서는 두 가지 환경을 제공합니다.
 
 작성 환경에서는 두 가지 UI를 통해 AEM의 기능을 사용할 수 있도록 되어 있습니다. 게시 환경의 경우 사용자가 사용할 수 있도록 만들어진 인터페이스의 전체 모양 및 느낌을 디자인합니다.
 
->[!NOTE]
->
->AEM 및 Dispatcher는 이 AEM 설명서를 게시하는 데 사용됩니다.
-
 ## 작성 환경 {#author-environment}
 
-작성자는 **[작성 환경](/help/sites-authoring/home.md)**에서 작업합니다. 이 환경은 컨텐츠 작성에 적합한 사용하기 쉬운 인터페이스(그래픽 사용자 인터페이스(GUI 또는 UI))를 제공합니다. 완전한 보호 기능을 제공하고 작성자가 적절한 액세스 권한이 지정된 계정을 사용하여 로그인해야 하는 회사 방화벽 뒤에 일반적으로 위치합니다.
+작성자는 **[작성 환경](/help/sites-authoring/home.md)**&#x200B;에서 작업합니다. 이 환경은 컨텐츠 작성에 적합한 사용하기 쉬운 인터페이스(그래픽 사용자 인터페이스(GUI 또는 UI))를 제공합니다. 완전한 보호 기능을 제공하고 작성자가 적절한 액세스 권한이 지정된 계정을 사용하여 로그인해야 하는 회사 방화벽 뒤에 일반적으로 위치합니다.
 
 >[!NOTE]
 >
