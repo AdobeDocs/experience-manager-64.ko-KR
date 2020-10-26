@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author, adaptive_forms
 discoiquuid: 32369b0b-5abf-487d-ae6b-972c254eb7e2
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,7 @@ AEM Forms에서 reCAPTCHA 서비스를 구현하려면:
 1. 클라우드 서비스의 구성 컨테이너를 만듭니다.
 
    1. 도구 > **[!UICONTROL 일반 > 구성 브라우저로 이동합니다]**.
+      * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
    1. 클라우드 구성에 대한 글로벌 폴더를 활성화하거나 이 단계를 건너뛰어 클라우드 서비스 구성에 대한 다른 폴더를 만들고 구성하려면 다음을 수행하십시오.
 
       1. 구성 브라우저에서 **[!UICONTROL 전역]** 폴더를 선택하고 속성을 **[!UICONTROL 누릅니다]**.
