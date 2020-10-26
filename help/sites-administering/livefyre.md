@@ -10,9 +10,9 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 translation-type: tm+mt
-source-git-commit: 1b6254e98b65b64071ab4634706bd1ad3d2fd8df
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1668'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Livefyre의 업계 선도적인 큐레이션 기능을 AEM 6.4 인스턴스와 �
 
 ### AEM용 Livefyre 패키지 설치 {#install-livefyre-package-for-aem}
 
-AEM 6.4에는 미리 설치된 Livefyre 기능 패키지 1.2.6이 포함되어 있습니다. 이 패키지는 AEM Sites와의 제한된 Livefyre 통합만 포함되며 업데이트된 패키지를 설치하기 전에 제거해야 합니다. 최신 패키지를 사용하면 Sites, Assets 및 Commerce 등 AEM과 Livefyre가 완벽하게 통합됩니다.
+AEM 6.4에는 미리 설치된 Livefyre 기능 패키지 1.2.6이 포함되어 있습니다. 이 패키지는 AEM Sites와의 제한된 Livefyre 통합만 포함되며 업데이트된 패키지를 설치하기 전에 제거해야 합니다. 최신 패키지를 사용하면 Sites, Assets, Commerce 등 AEM과 Livefyre가 완벽하게 통합됩니다.
 
 >[!NOTE]
 >
@@ -49,9 +49,10 @@ AEM 6.4에는 미리 설치된 Livefyre 기능 패키지 1.2.6이 포함되어 �
 
    기능 팩에 대한 자세한 내용 및 릴리스 정보는 [기능 팩을 참조하십시오](https://helpx.adobe.com/experience-manager/6-3/release-notes/feature-packs-release-notes.html).
 
-### Livefyre를 사용하도록 AEM 구성: 구성 폴더 만들기 {#configure-aem-to-use-livefyre-create-a-configuration-folder}
+### Livefyre를 사용하도록 AEM 구성:구성 폴더 만들기 {#configure-aem-to-use-livefyre-create-a-configuration-folder}
 
 1. AEM 홈 페이지에서 왼쪽 레일에 있는 **도구** 아이콘을 클릭한 다음 **일반 > 구성 브라우저로 이동합니다**.
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 1. 만들기 **를** 클릭하여 구성 만들기 대화 상자를 엽니다.
 1. 구성에 이름을 지정하고 **클라우드 구성 확인란을** 선택합니다.
 
@@ -59,7 +60,7 @@ AEM 6.4에는 미리 설치된 Livefyre 기능 패키지 1.2.6이 포함되어 �
 
    ![livefyre-aem-create-config-folder](assets/livefyre-aem-create-config-folder.png)
 
-### Livefyre를 사용하도록 AEM 구성: Livefyre 구성 만들기 {#configure-aem-to-use-livefyre-create-a-livefyre-configuration}
+### Livefyre를 사용하도록 AEM 구성:Livefyre 구성 만들기 {#configure-aem-to-use-livefyre-create-a-livefyre-configuration}
 
 조직의 Livefyre 라이선스 자격 증명을 사용하도록 AEM을 구성하여 Livefyre와 AEM 간에 통신을 허용합니다.
 
@@ -73,6 +74,8 @@ AEM 6.4에는 미리 설치된 Livefyre 기능 패키지 1.2.6이 포함되어 �
    >폴더에 클라우드 구성이 활성화되어 있어야 Livefyre 구성을 추가할 수 있습니다. 구성 폴더는 구성 브라우저에서 만들고 관리됩니다.
    >
    >구성 이름은 만들 수 없습니다. 구성 이름은 해당 구성 요소가 있는 폴더의 경로로 참조됩니다. 폴더당 하나의 구성만 가질 수 있습니다.
+   >
+   >See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 1. 새로 만든 Livefyre 구성 카드를 선택한 다음 속성을 **클릭합니다**.
 
@@ -141,7 +144,7 @@ UGC 가져오기를 사용하여 Twitter 및 Instagram 사용자 생성 콘텐�
 
 >[!NOTE]
 >
->자산을 사용하여 UGC를 가져오기 전에 Livefyre 스튜디오에서 소셜 계정 및 권한 요청 계정을 설정해야 합니다. 설정을 [참조하십시오. 권한 요청을 참조하십시오](https://docs.adobe.com/content/help/en/livefyre/using/rights-requests/c-how-requesting-rights-works.html) .
+>자산을 사용하여 UGC를 가져오기 전에 Livefyre 스튜디오에서 소셜 계정 및 권한 요청 계정을 설정해야 합니다. 설정을 [참조하십시오.권한 요청을 참조하십시오](https://docs.adobe.com/content/help/en/livefyre/using/rights-requests/c-how-requesting-rights-works.html) .
 
 UGC를 AEM Assets으로 가져오려면 다음을 수행하십시오.
 
@@ -156,7 +159,7 @@ UGC를 AEM Assets으로 가져오려면 다음을 수행하십시오.
    * Twitter 또는 Instagram 탭을 클릭하여 Twitter 및 Instagram에서 검색 또는 필터를 사용하여 컨텐츠를 찾습니다.
 
 1. 가져올 자산을 선택합니다. 선택한 자산은 자동으로 계산되어 선택됨 **탭** 아래에 저장됩니다.
-1. **선택 사항**: 선택한 **탭을** 클릭하고 가져올 선택한 UGC 컨텐츠를 검토합니다.
+1. **선택 사항**:선택한 **탭을** 클릭하고 가져올 선택한 UGC 컨텐츠를 검토합니다.
 1. **다음**&#x200B;을 클릭합니다.
 
    ![livefyre-aem-import-ugc2](assets/livefyre-aem-import-ugc2.png)
