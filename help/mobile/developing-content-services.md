@@ -9,10 +9,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 4%
+source-wordcount: '303'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: 응답)이 필요한 프로젝트에는 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: 응답)이 필요한 프로젝트에서는 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
 
 >[!CAUTION]
 >
@@ -43,7 +43,9 @@ AEM 관리 콘텐츠와 콘텐츠를 사용하는 모바일 앱 간에 추상적
 >
 >콘텐츠 서비스를 시작하기 전에 콘텐츠 서비스 플래그를 활성화해야 합니다. 앱에서 모델을 만들고 관리하려면 구성 브라우저에서 데이터 모델을 활성화해야 합니다.
 >
->자세한 **[내용은 콘텐츠 서비스](/help/mobile/developing-content-services.md)**관리를 참조하십시오.
+>자세한 **[내용은 콘텐츠 서비스](/help/mobile/developing-content-services.md)** 관리를 참조하십시오.
+>
+>See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
