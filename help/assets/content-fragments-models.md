@@ -9,10 +9,10 @@ topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 45e67357-4524-4d25-b5f1-21182b8e803c
 translation-type: tm+mt
-source-git-commit: 8b83be510a67fadaa666f2ba96fbb3fc82b9cb3d
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '696'
-ht-degree: 92%
+source-wordcount: '704'
+ht-degree: 91%
 
 ---
 
@@ -41,6 +41,7 @@ ht-degree: 92%
 [새 컨텐츠 조각 모델을 생성](#creating-a-content-fragment-model)하려면 먼저 구성 관리자를 사용하여 컨텐츠 조각 모델을 활성화&#x200B;**해야 합니다**.
 
 1. **[!UICONTROL 도구]**, **[!UICONTROL 일반]**&#x200B;으로 이동한 후 **[!UICONTROL Configuration Browser]**&#x200B;를 엽니다.
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 1. 웹 사이트에 적합한 위치를 선택합니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 사용하여 대화 상자를 열고 여기에서
 
