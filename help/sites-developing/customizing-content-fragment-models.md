@@ -9,7 +9,7 @@ contentOwner: aheimoz
 discoiquuid: 208225ee-9052-4a45-9cfd-f8d27d4d70ed
 noindex: true
 translation-type: tm+mt
-source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 위치 {#locations}
 
-모델은 저장 및 생성되며 `/conf`컨텐트 조각 모델 속성이 활성화된 폴더 아래에 [있습니다](/help/assets/content-fragments-models.md#enable-content-fragment-models) . 이 설정은 구성 브라우저에서 액세스할 수 있는 **구성**&#x200B;속성에서도 **확인할 수 있습니다**.
+모델은 저장 및 생성되며 `/conf`컨텐트 조각 모델 속성이 활성화된 폴더 아래에 [있습니다](/help/assets/content-fragments-models.md#enable-content-fragment-models) . 이 설정은 구성 브라우저에서 액세스할 수 있는 **구성**&#x200B;속성에서도 **[확인할 수 있습니다](/help/sites-administering/configurations.md)**.
 
 1. 도구, **일반**, **구성 브라우저**&#x200B;를 통해 브라우저 **로**&#x200B;이동합니다. 예: 
 `http://localhost:4502/libs/granite/configurations/content/view.html/conf`
@@ -36,7 +36,7 @@ ht-degree: 0%
 
    예를 들어 다음과 같은 속성 `global`을 사용할 수 있습니다. `http://localhost:4502/libs/granite/configurations/content/edit.html/conf/global`
 
-모델 콘솔에서 **컨텐츠 조각 모델** 속성이 있는 모든 폴더가 나타납니다. 도구, **자산**, **컨텐츠 조각**&#x200B;모델 **을 통해 이동**; 예를 들면 다음과 같습니다 `http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf`.
+모델 콘솔에서 **컨텐츠 조각 모델** 속성이 있는 모든 폴더가 나타납니다. 도구, **자산**, **컨텐츠 조각**&#x200B;모델 **을 통해 이동**;예를 들면 다음과 같습니다 `http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf`.
 
 사용자는 [모델 생성](/help/assets/content-fragments-models.md#creating-a-content-fragment-model) 마법사(콘솔에서 **만들기** 사용)를 사용하여 컨텐츠 조각 모델 **을** 만들수 있습니다.
 
