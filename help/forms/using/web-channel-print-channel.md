@@ -8,9 +8,9 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 71bba66a-3cac-445b-9941-aa4bcf9b2160
 translation-type: tm+mt
-source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '714'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 인쇄 채널 템플릿 가져오기 및 웹 채널 템플릿 만들기 및 활성화
 
-인터랙티브 커뮤니케이션은 인쇄 및 웹 인쇄 채널은 보험료 납부에 대한 독촉장으로 인쇄된 편지와 같은 PDF 및 용지 커뮤니케이션을 만드는 데 사용되고 웹 채널은 웹 사이트에서 신용 카드 명세서와 같은 온라인 경험을 전달하는 데 사용됩니다.
+인터랙티브 커뮤니케이션은인쇄 및 웹 인쇄 채널은 보험료 납부에 대한 독촉장으로 인쇄된 편지와 같은 PDF 및 용지 커뮤니케이션을 만드는 데 사용되고 웹 채널은 웹 사이트에서 신용 카드 명세서와 같은 온라인 경험을 전달하는 데 사용됩니다.
 
 Interactive Communication authors can reuse assets such as document fragments and images to create both print and web version of Interactive Communication.
 
@@ -53,6 +53,7 @@ Interactive Communication authors can reuse assets such as document fragments an
 1. 아직 Interactive Communication 웹 템플릿이 없는 경우 템플릿 폴더를 만듭니다. 자세한 내용은 페이지 템플릿의 템플릿 폴더 [- 편집 가능을 참조하십시오](/help/sites-developing/page-templates-editable.md).
 
    1. 도구 **[!UICONTROL 도구]** -1 ![>](assets/tools-1.png) 구성 브라우저 **[!UICONTROL 를 누릅니다]**.
+      * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
    1. 구성 브라우저 페이지에서 만들기를 **[!UICONTROL 누릅니다]**.
    1. 구성 만들기 대화 상자에서 폴더의 제목을 지정하고 편집 가능한 템플릿 **[!UICONTROL 을]**&#x200B;선택한 다음 **[!UICONTROL 만들기를 누릅니다]**.
 
