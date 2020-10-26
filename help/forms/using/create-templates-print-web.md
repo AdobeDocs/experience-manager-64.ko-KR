@@ -1,5 +1,5 @@
 ---
-title: '"자습서: 템플릿 만들기"'
+title: '"자습서:템플릿 만들기"'
 seo-title: 인터랙티브한 커뮤니케이션을 위한 인쇄 및 웹 템플릿 제작
 description: 인터랙티브한 커뮤니케이션을 위한 인쇄 및 웹 템플릿 제작
 seo-description: 인터랙티브한 커뮤니케이션을 위한 인쇄 및 웹 템플릿 제작
@@ -8,15 +8,15 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
 translation-type: tm+mt
-source-git-commit: 8922b6cfecfbb592e4f073254be68b24add6c5c7
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '1824'
+source-wordcount: '1832'
 ht-degree: 0%
 
 ---
 
 
-# 자습서: 템플릿 만들기 {#tutorial-create-templates}
+# 자습서:템플릿 만들기 {#tutorial-create-templates}
 
 인터랙티브한 커뮤니케이션을 위한 인쇄 및 웹 템플릿 제작
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 이 자습서는 첫 번째 [대화형 통신](/help/forms/using/create-your-first-interactive-communication.md) 시리즈 만들기의 단계입니다. 전체 자습서 사용 사례를 이해하고, 실행하고, 시연하려면 연순의 순서로 시리즈를 따르는 것이 좋습니다.
 
-대화형 통신을 만들려면 인쇄 및 웹 채널용 AEM 서버에서 사용할 수 있는 템플릿이 있어야 합니다.
+대화형 통신을 만들려면 AEM 서버에서 인쇄 및 웹 채널용 템플릿을 사용할 수 있어야 합니다.
 
 인쇄 채널의 템플릿은 Adobe Forms 디자이너에서 만들고 AEM 서버에 업로드됩니다. 그런 다음 대화형 통신을 만드는 동안 이러한 템플릿을 사용할 수 있습니다.
 
@@ -48,13 +48,13 @@ ht-degree: 0%
 
 사용 사례 [및](/help/forms/using/create-your-first-interactive-communication.md) 구조에 [](/help/forms/using/planning-interactive-communications.md)따라 XDP 템플릿에서 다음 하위 양식을 만듭니다.
 
-* 청구 상세내역: 문서 조각 포함
-* 고객 세부 정보: 문서 조각 포함
-* 청구 요약: 문서 조각 포함
-* 요약: 문서 조각(요금 하위 폼) 및 차트(차트 하위 폼) 포함
-* 항목별 호출: 표 포함(레이아웃 조각)
-* 지금 지불: 이미지 포함
-* 부가 가치 서비스: 이미지 포함
+* 청구 상세내역:문서 조각 포함
+* 고객 세부 정보:문서 조각 포함
+* 청구 요약:문서 조각 포함
+* 요약:문서 조각(요금 하위 폼) 및 차트(차트 하위 폼) 포함
+* 항목별 호출:표 포함(레이아웃 조각)
+* 지금 지불:이미지 포함
+* 부가 가치 서비스:이미지 포함
 
 ![create_print_template](assets/create_print_template.gif)
 
@@ -178,6 +178,7 @@ Forms 디자이너를 사용하여 XDP 템플릿을 만든 후, 대화형 통신
 편집 가능한 템플릿의 폴더를 만들려면 다음 단계를 수행하십시오.
 
 1. 도구 **도구** ![](assets/tools-icon.svg) > **구성 브라우저**&#x200B;를 누릅니다.
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 1. 구성 브라우저 페이지에서 만들기를 **누릅니다**.
 1. 구성 **만들기 대화** 상자에서 **Create_First_IC_templates** 를 폴더 **의 제목으로 지정하고 편집 가능한 템플릿**&#x200B;을 선택한 다음 **만들기를**&#x200B;누릅니다.
 
@@ -189,13 +190,13 @@ Forms 디자이너를 사용하여 XDP 템플릿을 만든 후, 대화형 통신
 
 사용 [사례](/help/forms/using/create-your-first-interactive-communication.md) 및 [구조에](/help/forms/using/planning-interactive-communications.md)따라 웹 템플릿에서 다음 패널을 만듭니다.
 
-* 청구 상세내역: 문서 조각 포함
-* 고객 세부 정보: 문서 조각 포함
-* 청구 요약: 문서 조각 포함
-* 비용 요약: 문서 조각 및 차트(두 열 레이아웃) 포함
-* 항목별 호출: 표 포함
-* 지금 지불: 지금 **지불** 단추 및 이미지 포함
-* 부가 가치 서비스: 이미지와 [구독] **단추를** 포함합니다.
+* 청구 상세내역:문서 조각 포함
+* 고객 세부 정보:문서 조각 포함
+* 청구 요약:문서 조각 포함
+* 비용 요약:문서 조각 및 차트(두 열 레이아웃) 포함
+* 항목별 호출:표 포함
+* 지금 지불:지금 **지불** 단추 및 이미지 포함
+* 부가 가치 서비스:이미지와 [구독] **단추를** 포함합니다.
 
 ![create_web_template](assets/create_web_template.gif)
 
