@@ -6,9 +6,9 @@ user-guide-title: AEM 6.4 관리 사용 안내서
 breadcrumb-title: 관리 안내서
 user-guide-description: AEM 관리에 대해 알아봅니다.
 translation-type: tm+mt
-source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
+source-git-commit: dd3fdd5fd632d79262aeb2edaca0c58bf6710d18
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '625'
 ht-degree: 17%
 
 ---
@@ -35,6 +35,7 @@ ht-degree: 17%
    + [언어 복사 마법사](tc-wizard.md)
    + [향상된 번역](tc-enhancements.md)
    + [번역 우수 사례](tc-bp.md)
+   + [구성 및 구성 브라우저](configurations.md)
    + [AEM FAQ](aem-faqs.md)
 + 작업 {#operations}
    + [대시보드](dashboards.md)
