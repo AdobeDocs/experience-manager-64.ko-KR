@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: cf181663-8a4a-4efc-9f02-be1cf71c9299
 translation-type: tm+mt
-source-git-commit: 4c0c4ee86840cec0aa368b48e7f512cb86abeb02
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '3223'
+source-wordcount: '3231'
 ht-degree: 8%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->AEM 6.4.5.0 이상 버전은 [SPA Editor에서 편집 가능한 템플릿을 사용해야 합니다](/help/sites-developing/spa-overview.md).
+>SPA 편집기에서 편집 가능한 템플릿을 사용하려면 AEM 6.4.5.0 이상이 [필요합니다](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
@@ -205,7 +205,7 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
    이름: `jcr:title`
 
    * 유형: `String`
-   * 값: 템플릿 콘솔에 표시할 제목(폴더에 대해) **입니다** .
+   * 값:템플릿 콘솔에 표시할 제목(폴더에 대해) **입니다** .
 
 1. 표준 작성 권한 및 권한 *외에* (예: `content-authors`) 이제 그룹을 할당하고 작성자가 새 폴더에 템플릿을 만들 수 있도록 필요한 액세스 권한(ACL)을 정의해야 합니다.
 
@@ -222,14 +222,16 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
 1. **만들기**&#x200B;를 클릭합니다.
 1. 구성 **만들기** 대화 상자에서 다음 필드를 구성해야 합니다.
 
-   * **제목**: 구성 폴더의 제목을 제공합니다.
-   * **편집 가능한 템플릿**: 이 폴더 내에서 편집 가능한 템플릿을 허용하는 확인 표시
+   * **제목**:구성 폴더의 제목을 제공합니다.
+   * **편집 가능한 템플릿**:이 폴더 내에서 편집 가능한 템플릿을 허용하는 확인 표시
 
 1. **만들기**&#x200B;를 클릭합니다
 
 >[!NOTE]
 >
 >이 폴더 내에 템플릿을 만들려면 구성 브라우저에서 전역 폴더를 편집하고 **편집 가능한 템플릿** 옵션을 활성화할 수 있지만 이는 권장되지 않습니다.
+>
+>See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 ### ACL 및 그룹 {#acls-and-groups}
 
@@ -282,7 +284,7 @@ We.Retail 참조 구현의 [템플릿](/help/sites-developing/we-retail.md) 폴�
   <tr> 
    <td>익명 웹 사용자</td> 
    <td>read</td> 
-   <td>익명 웹 사용자는 페이지를 렌더링하는 동안 정책을 읽어야 합니다.</td> 
+   <td>페이지를 렌더링하는 동안 익명 웹 사용자가 정책을 읽어야 합니다.</td> 
   </tr> 
   <tr> 
    <td>컨텐츠 작성자</td> 
@@ -342,7 +344,7 @@ We.Retail 참조 구현의 [템플릿](/help/sites-developing/we-retail.md) 폴�
   <tr> 
    <td>익명의 웹 사용자</td> 
    <td>read</td> 
-   <td>익명 웹 사용자는 페이지를 렌더링하는 동안 정책을 읽어야 합니다.</td> 
+   <td>페이지를 렌더링하는 동안 익명 웹 사용자가 정책을 읽어야 합니다.</td> 
   </tr> 
   <tr> 
    <td>컨텐츠 작성자</td> 
@@ -579,13 +581,13 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
          `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
       * 속성을 정의합니다.
 
-         * 이름: status
-         * 유형: 문자열
+         * 이름:status
+         * 유형:문자열
          * 값: `enabled`
 
 1. **허용된 템플릿**
 
-   * [하위 분기의 적절한 페이지 또는 루트 페이지의 **페이지 속성&#x200B;**](/help/sites-authoring/templates.md#allowing-a-template-author)에서 허용된 템플릿 경로를 정의합니다.
+   * [하위 분기의 적절한 페이지 또는 루트 페이지의 **페이지 속성**](/help/sites-authoring/templates.md#allowing-a-template-author) 에서 허용된 템플릿 경로를 정의합니다.
    * 속성을 설정합니다.
 
       `cq:allowedTemplates`
@@ -605,7 +607,7 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 
    * `cq:template`
 
-      실제 템플릿에 대한 동적 참조를 제공합니다. 템플릿 변경 사항이 실제 페이지에 반영되도록 합니다.
+      실제 템플릿에 대한 동적 참조를 제공합니다.템플릿 변경 사항이 실제 페이지에 반영되도록 합니다.
 
    * `cq:templateType`
 
@@ -641,7 +643,7 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 
    * 페이지 구성 요소는 템플릿의 `structure/jcr:content` 트리를 페이지의 `jcr:content` 트리와 병합합니다.
    * 페이지 구성 요소는 작성자가 편집 가능한 것으로 표시된 템플릿 구조의 노드(및 하위)만 편집할 수 있도록 허용합니다.
-   * 페이지에서 구성 요소를 렌더링할 때 해당 구성 요소의 상대 경로는 `jcr:content` 노드에서 가져옵니다. 그러면 템플릿의 노드 아래에 있는 동일한 `policies/jcr:content` 경로가 검색됩니다.
+   * 페이지에서 구성 요소를 렌더링할 때 해당 구성 요소의 상대 경로는 `jcr:content` 노드에서 가져옵니다.그러면 템플릿의 노드 아래에 있는 동일한 `policies/jcr:content` 경로가 검색됩니다.
 
       * 이 노드의 `cq:policy` 속성은 실제 컨텐트 정책을 가리킵니다(예: 해당 구성 요소에 대한 디자인 구성 보유).
       * 따라서 동일한 컨텐츠 정책 구성을 다시 사용하는 여러 개의 템플릿이 있을 수 있습니다.
