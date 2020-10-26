@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -96,6 +96,7 @@ AEM의 모든 클라우드 서비스 구성은 AEM 저장소의 `/conf` 폴더�
 클라우드 서비스 구성을 위한 폴더를 구성하려면:
 
 1. 도구 > **[!UICONTROL 일반 > 구성 브라우저로 이동합니다]**.
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 1. 클라우드 구성에 대한 글로벌 폴더를 활성화하거나 이 단계를 건너뛰어 클라우드 서비스 구성에 대한 다른 폴더를 만들고 구성하려면 다음을 수행하십시오.
 
    1. 구성 **[!UICONTROL 브라우저에서]**&#x200B;폴더를 `global` 선택하고 속성 **[!UICONTROL 을]**&#x200B;누릅니다.
