@@ -1,12 +1,13 @@
 ---
 cloud: experience-cloud
 product: adobe experience manager
+solution: Experience Manager, Experience Manager Assets
 audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 자산을 생성, 관리, 게재 및 최적화합니다.
 translation-type: tm+mt
-source-git-commit: 405733b2084621773c2992121be8d540eeba39a9
+source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 66%
