@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
+source-git-commit: df92346ca23161b8eaff293a6b9f2c8b7c72e2ec
 workflow-type: tm+mt
-source-wordcount: '5547'
+source-wordcount: '5571'
 ht-degree: 1%
 
 ---
@@ -140,8 +140,8 @@ Dynamic Media Cloud Services을 구성하려면:
 * [이미지 서버에 대한 게시 설정](#publishing-setup-for-image-server)
 * [응용 프로그램 일반 설정 구성](#configuring-application-general-settings)
 * [색상 관리 구성](#configuring-color-management)
-* [자산 처리 구성](#configuring-asset-processing)
-* [지원되지 않는 포맷에 대한 사용자 지정 MIME 형식 추가](#adding-custom-mime-types-for-unsupported-formats)
+* [지원되는 포맷에 대한 MIME 유형 편집](#editing-mime-types-for-supported-formats)
+* [지원되지 않는 포맷에 대한 MIME 형식 추가](#adding-mime-types-for-unsupported-formats)
 * [이미지 세트 및 스핀 세트를 자동으로 생성하기 위한 일괄 세트 사전 설정 만들기](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
 #### 이미지 서버에 대한 게시 설정 {#publishing-setup-for-image-server}
@@ -212,21 +212,18 @@ Dynamic Media Cloud Services을 구성하려면:
 * RGB 출력을 반환하는 동적 변환은 `sRGB` 색상 공간에서 반환됩니다.
 * CMYK 출력을 반환하는 동적 변환은 `WebCoated` 색상 공간에 반환됩니다.
 
-#### 자산 처리 구성 {#configuring-asset-processing}
+#### 지원되는 포맷에 대한 MIME 유형 편집 {#editing-mime-types-for-supported-formats}
 
 Dynamic Media에서 처리해야 하는 자산 유형을 정의하고 고급 자산 처리 매개 변수를 사용자 정의할 수 있습니다. 예를 들어 자산 처리 매개 변수를 지정하여 다음을 수행할 수 있습니다.
 
 * Adobe PDF을 eCatalog 자산으로 변환
 * Adobe Photoshop 문서(.PSD)를 배너 템플릿 에셋으로 변환하여 개인화합니다.
 * Adobe Illustrator 파일(.AI) 또는 Adobe Photoshop Encapsulated Postscript 파일(.EPS)을 래스터화합니다.
-
->[!NOTE]
->
->비디오 프로필 및 이미징 프로필을 사용하여 각각 비디오와 이미지 처리를 정의할 수 있습니다.
+* [비디오 프로필](/help/assets/video-profiles.md) 및 [이미징](/help/assets/image-profiles.md) 프로필을 사용하여 각각 비디오와 이미지 처리를 정의할 수 있습니다.
 
 [자산 업로드](managing-assets-touch-ui.md#uploading-assets)를 참조하십시오.
 
-**자산 처리를 구성하려면**:
+**지원되는 포맷의 MIME 유형을 편집하려면**
 
 1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]** (망치) 아이콘을 누르고 **[!UICONTROL 일반 > CRXDE Lite으로 이동합니다]**.
 1. 왼쪽 레일에서 다음 항목으로 이동합니다.
@@ -252,7 +249,7 @@ Dynamic Media에서 처리해야 하는 자산 유형을 정의하고 고급 자
 
 AEM Assets에서 지원되지 않는 형식에 대해 사용자 지정 MIME 형식을 추가할 수 있습니다. CRXDE Lite에 추가하는 새 노드가 AEM에서 삭제되지 않도록 하려면 **[!UICONTROL image_]** 및 활성화된 값이 **[!UICONTROL false로 설정되기 전에 MIME 유형을 이동해야 합니다]**.
 
-**지원되지 않는 형식에 대한 사용자 지정 MIME 형식을 추가하려면 다음을 수행하십시오**.
+**지원되지 않는 형식에 대한 사용자 지정 MIME 형식을 추가하려면**
 
 1. AEM에서 **[!UICONTROL 도구 > 작업 > 웹 콘솔을 클릭합니다]**.
 
@@ -498,7 +495,7 @@ Adobe은 PDF, Postscript 및 PSD 파일에 대해 다음과 같은 &quot;조정�
 
 [DAM 자산 업데이트] 작업 과정에는 [GRANITE Transit 작업 과정 큐 **[!UICONTROL 가]** 사용됩니다. Dynamic Media에서 이미지 수집 및 처리에 사용됩니다.
 
-**[MOCK] To update the Granite Temporary Workflow queue**:
+**[MOCK] To update the Granite Temporary Workflow queue**
 
 1. https://&lt; [server>/system/console/configMgr](http://localhost:4502/system/console/configMgr) 로 이동하고 **[!UICONTROL 큐 검색:[MOCK] Granite Temporary Workflow Queue]**.
 
@@ -508,11 +505,13 @@ Adobe은 PDF, Postscript 및 PSD 파일에 대해 다음과 같은 &quot;조정�
 
 1. 최대 **[!UICONTROL 병렬 작업]** 필드에서 숫자를 원하는 값으로 변경합니다.
 
-   기본적으로 최대 병렬 작업 수는 사용 가능한 CPU 코어 수에 따라 달라집니다. 예를 들어 4코어 서버에서는 2개의 작업자 스레드를 할당합니다. (0.0과 1.0 사이의 값은 비율 기반이거나 1보다 큰 숫자는 작업자 스레드의 수를 지정합니다.)
+   최대 병렬 작업 **[!UICONTROL 을 늘려]** Dynamic Media로 대용량 파일 업로드를 적절하게 지원할 수 있습니다. 정확한 값은 하드웨어 용량에 따라 다릅니다. 초기 마이그레이션 또는 일회성 벌크 업로드와 같은 특정 시나리오에서 큰 값을 사용할 수 있습니다. 하지만 큰 값(예: 코어 수의 2배)을 사용하면 다른 동시 활동에 부정적인 영향을 줄 수 있습니다. 따라서 특정 사용 사례에 따라 값을 테스트 및 조정해야 합니다.
 
-   Adobe은 Dynamic Media Classic에 파일을 **[!UICONTROL 많이 업로드할 수 있도록 최대 병렬 작업]** 32개를 구성할 것을 권장합니다.
+<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
-   ![chlimage_1](assets/chlimage_1.jpeg)
+   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic. -->
+
+![chlimage_1](assets/chlimage_1.jpeg)
 
 1. 저장을 **[!UICONTROL 누릅니다]**.
 
