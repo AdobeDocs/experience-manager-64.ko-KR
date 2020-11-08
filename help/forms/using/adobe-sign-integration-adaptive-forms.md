@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 translation-type: tm+mt
-source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
+source-git-commit: 7ea83f879d5c3f5699d2a783686c53c5292fcf8a
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,10 @@ Adobe Sign을 AEM Forms과 통합하려면 다음이 필요합니다.
 
    >[!NOTE]
    >
-   >클라우드 서비스 구성 페이지의 URL이 **HTTPS로 시작되는지 확인하십시오**. 그렇지 않은 경우 AEM Forms 서버에 대해 [SSL을](/help/sites-administering/ssl-by-default.md) 활성화합니다.
+   >1-4단계를 수행하여 새 구성 컨테이너를 만들고 컨테이너에 Adobe Sign 구성을 만들거나 기존 `global` 폴더 **를 사용할 수 있습니다. 도구** 망치 ![>](assets/hammer.png) > **Cloud ServicesAdobe Sign** 에서 기존 폴더를 사용할 수 있습니다 ****. 새 구성 컨테이너에 구성을 만드는 경우 적응형 양식을 만들 때 **[!UICONTROL 구성 컨테이너]** 필드에 컨테이너 이름을 지정해야 합니다.
+
+   >[!NOTE]
+   클라우드 서비스 구성 페이지의 URL이 **HTTPS로 시작되는지 확인하십시오**. 그렇지 않은 경우 AEM Forms 서버에 대해 [SSL을](/help/sites-administering/ssl-by-default.md) 활성화합니다.
 
 1. 구성 페이지에서 만들기 **[!UICONTROL 를]** 눌러 AEM Forms에서 Adobe Sign 구성을 만듭니다.
 1. Adobe Sign 구성 **** 생성 **[!UICONTROL 페이지의]** 일반 **** 탭에서 구성에 **대한**&#x200B;이름을 지정하고Next을누릅니다. 원하는 경우 제목을 지정하고 원하는 대로 이동하여 구성에 대한 축소판을 선택할 수 있습니다.
