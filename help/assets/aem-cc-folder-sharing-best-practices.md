@@ -3,9 +3,9 @@ title: Creative Cloud과 AEM Assets 폴더 공유
 description: Adobe Experience Manager 자산 사용자가 Adobe Creative Cloud 사용자와 자산 폴더를 교환할 수 있도록 하는 구성 및 모범 사례
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '1057'
+source-wordcount: '1058'
 ht-degree: 1%
 
 ---
@@ -38,10 +38,10 @@ AEM-Creative Cloud 폴더 공유는 AEM Assets 및 Creative Cloud 계정 간에 
 
 통합에는 다음 요소가 포함됩니다.
 
-* **엔터프라이즈 네트워크에 배포된 AEM Assets 서버** (관리 서비스 또는 온-프레미스): 폴더 공유가 여기에서 시작됩니다.
-* **Adobe Marketing Cloud 에셋 핵심 서비스**: AEM 및 Creative Cloud 스토리지 서비스 간의 중간 역할을 합니다. 통합을 사용하는 회사의 관리자는 Marketing Cloud 조직과 AEM Assets 인스턴스 간에 신뢰 관계를 설정해야 합니다. 또한 AEM Assets 사용자가 추가 보안을 위해 폴더를 공유할 수 있도록 승인된 Creative Cloud 협력자 [목록을](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html)정의합니다.
-* **Creative Cloud 자산 웹 서비스** (저장소 및 Creative Cloud 파일 웹 UI): AEM Assets 폴더를 공유한 특정 Creative Cloud 사용자가 초대를 수락하고 해당 Creative Cloud 계정 저장소의 폴더를 볼 수 있는 곳입니다.
-* **Creative Cloud 데스크탑 애플리케이션**: (선택 사항) Creative Cloud 에셋 저장소와 동기화를 통해 크리에이티브 사용자의 데스크탑에서 공유 폴더/파일에 직접 액세스할 수 있습니다.
+* **엔터프라이즈 네트워크에 배포된 AEM Assets 서버** (관리 서비스 또는 온-프레미스):폴더 공유가 여기에서 시작됩니다.
+* **Adobe Marketing Cloud 에셋 핵심 서비스**:AEM 및 Creative Cloud 스토리지 서비스 간의 중간 역할을 합니다. 통합을 사용하는 회사의 관리자는 Marketing Cloud 조직과 AEM Assets 인스턴스 간에 신뢰 관계를 설정해야 합니다. 또한 AEM Assets 사용자가 추가 보안을 위해 폴더를 공유할 수 있도록 승인된 Creative Cloud 협력자 [목록을](https://experienceleague.adobe.com/docs/core-services/interface/assets/t-admin-add-cc-user.html?lang=en#assets)정의합니다.
+* **Creative Cloud 자산 웹 서비스** (저장소 및 Creative Cloud 파일 웹 UI):AEM Assets 폴더를 공유한 특정 Creative Cloud 사용자가 초대를 수락하고 해당 Creative Cloud 계정 저장소의 폴더를 볼 수 있는 곳입니다.
+* **Creative Cloud 데스크탑 애플리케이션**:(선택 사항) Creative Cloud 에셋 저장소와 동기화를 통해 크리에이티브 사용자의 데스크탑에서 공유 폴더/파일에 직접 액세스할 수 있습니다.
 
 ## 특성 및 제한 사항 {#characteristics-and-limitations}
 
@@ -56,7 +56,7 @@ AEM-Creative Cloud 폴더 공유는 AEM Assets 및 Creative Cloud 계정 간에 
 
 * **공간 요구 사항:** 또한 공유 폴더의 파일은 AEM에 물리적으로 저장한 다음 Creative Cloud 계정에 저장되어야 하며 Marketing Cloud Assets 핵심 서비스에 캐시된 복사본이 있어야 합니다.
 * **네트워킹 및 대역폭:** 공유 폴더의 파일과 모든 업데이트를 시스템 간에 네트워크를 통해 전송해야 합니다. 관련 파일 및 업데이트만 공유되도록 해야 합니다.
-* **폴더 유형**: 유형의 자산 폴더 `sling:OrderedFolder`는 공유할 수 없습니다. 폴더를 공유하려면 AEM Assets에서 폴더를 만들 때 [주문됨] 옵션을 선택하지 마십시오.
+* **폴더 유형**:유형의 자산 폴더 `sling:OrderedFolder`는 공유할 수 없습니다. 폴더를 공유하려면 AEM Assets에서 폴더를 만들 때 [주문됨] 옵션을 선택하지 마십시오.
 
 ## Best practices {#best-practices}
 
@@ -67,7 +67,7 @@ AEM과 Creative Cloud 폴더 공유를 활용하기 위한 모범 사례에는 �
 * **단방향 공유를 위한 개별 폴더:** AEM Assets에서 Creative Cloud 파일로 최종 자산을 공유하고, 크리에이티브한 에셋을 Creative Cloud 파일에서 AEM Assets으로 다시 공유하려면 별도의 폴더를 사용해야 합니다. 이러한 폴더에 대한 적절한 명명 규칙과 함께, AEM Assets 및 Creative Cloud 사용자 모두를 위한 이해하기 쉬운 작업 환경을 만듭니다.
 * **공유 폴더의 WIP 방지:** 진행 중인 작업에 공유 폴더를 사용할 수 없습니다. 파일을 자주 변경해야 하는 작업을 수행하려면 Creative Cloud 파일의 별도의 폴더를 사용하십시오.
 * **공유 폴더 외부에서 새 작업 시작:** 새 디자인(크리에이티브 파일)은 Creative Cloud 파일의 별도의 WIP 폴더에서 시작해야 하며, AEM Assets 사용자와 공유할 준비가 되었으면 공유 폴더로 이동하거나 저장해야 합니다.
-* **공유 구조 간소화:** 더욱 관리가 용이한 운영 체제를 원한다면 공유 구조를 단순화하는 것이 좋습니다. 모든 크리에이티브 사용자와 공유하는 대신 AEM Assets 폴더는 크리에이티브 디렉터나 팀 관리자와 같은 팀 담당자만 공유해야 합니다. 크리에이티브 팀의 관리자는 최종 자산을 받고, 작업 지정을 결정한 다음, 디자이너가 WIP 자산에 대한 자신의 Creative Cloud 계정에서 작업을 하게 합니다. Creative Cloud 공동 작업 기능을 사용하여 작업을 조정하고, AEM Assets에 공유할 준비가 된 에셋을 선택하여 크리에이티브한 공유 폴더로 가져올 수 있습니다.
+* **공유 구조 간소화:** 더욱 관리가 용이한 운영 체제를 원한다면 공유 구조를 단순화하는 것이 좋습니다. 모든 크리에이티브 사용자와 공유하는 대신 AEM Assets 폴더는 크리에이티브 디렉터나 팀 관리자와 같은 팀 담당자만 공유해야 합니다. 크리에이티브 팀의 관리자는 최종 자산을 받고, 작업 지정을 결정한 다음, 디자이너가 WIP 자산에 대한 자신의 Creative Cloud 계정에서 작업을 하도록 합니다. Creative Cloud 공동 작업 기능을 사용하여 작업을 조정하고, AEM Assets에 공유할 준비가 된 에셋을 선택하여 크리에이티브한 공유 폴더로 가져올 수 있습니다.
 
 다음 다이어그램은 AEM Assets의 기존 최종 자산을 기반으로 새 디자인을 만들기 위한 예제 구성을 보여줍니다.
 
