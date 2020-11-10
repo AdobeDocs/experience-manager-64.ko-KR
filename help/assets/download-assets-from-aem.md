@@ -3,7 +3,7 @@ title: 디지털 자산을 다운로드할 수 [!DNL Adobe Experience Manager]�
 description: 다운로드 기능을 활성화하거나 비활성화하는 방법 [!DNL Adobe Experience Manager] 을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 05ecc940180ead13676cc5bb8e2e230b1d55162b
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 3%
@@ -31,7 +31,7 @@ ht-degree: 3%
 
    ![Experience Manager 자산에서 자산을 다운로드할 때 사용 가능한 옵션](/help/assets/assets/asset_download_dialog.png)
 
-   *그림: 다운로드 대화 상자 옵션.*
+   *그림:다운로드 대화 상자 옵션.*
 
 1. 다운로드 대화 상자에서 원하는 다운로드 옵션을 선택합니다.
 
@@ -66,7 +66,7 @@ DAM에서 에셋을 다운로드할 수 있도록 하려면 에셋 공유 공유
 
 자산 다운로드 요청을 차단하도록 발송자 구성을 업데이트하여 `Asset Download Servlet` [!DNL Experience Manager] 게시 인스턴스에서 이 요청을 비활성화할 수 있습니다. OSGi 콘솔을 통해 서블릿을 수동으로 비활성화할 수도 있습니다.
 
-1. 발송자 구성을 통해 자산 다운로드 요청을 차단하려면 구성을 편집하고 `dispatcher.any` 필터 섹션 [](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)에 규칙을 추가하십시오. `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+1. 발송자 구성을 통해 자산 다운로드 요청을 차단하려면 구성을 편집하고 `dispatcher.any` 필터 섹션 [](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter)에 규칙을 추가하십시오. `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 1. 게시 인스턴스에서 OSGi 구성 요소를 비활성화하려면 의 OSGi 콘솔에 액세스합니다 `http://[aem_server]:[port]/system/console/components`. 위치를 찾아 비활성화 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` 를 클릭합니다 ****.
 
