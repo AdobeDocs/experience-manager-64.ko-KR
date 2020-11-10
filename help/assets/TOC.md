@@ -7,10 +7,10 @@ user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 자산을 생성, 관리, 게재 및 최적화합니다.
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 66%
+source-wordcount: '721'
+ht-degree: 65%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 66%
 # Assets 안내서 {#assets}
 
 + [자산 사용 안내서](home.md)
-+ [AEM 6.4 Assets 릴리스 노트](https://docs.adobe.com/content/help/ko-KR/experience-manager-64/release-notes/assets.html)
++ [AEM 6.4 Assets 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/assets.html)
 + [DAM 정보](assets.md)
 + [향상된 사용자 환경](ux-improvements.md)
 + [자산에 대한 우수 사례](best-practices-for-assets.md)
