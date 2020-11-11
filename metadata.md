@@ -1,10 +1,10 @@
 ---
 cloud: experience-cloud
 solution-title: 학습 및 지원
-solution-hub-url: https://helpx.adobe.com/kr/support/experience-manager/6-4.html
+solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-64.html
 solution-icon: assets/experience-cloud-logo-24.png
 getting-started-title: 시작하기
-getting-started-url: https://helpx.adobe.com/experience-manager/tutorials.html
+getting-started-url: https://experienceleague.corp.adobe.com/docs/experience-manager-tutorials.html
 tutorials-title: 튜토리얼
 tutorials-url: https://helpx.adobe.com/kr/experience-manager/kt/index/aem-6-4-videos.html
 mini-toc-levels: 2
@@ -13,10 +13,10 @@ solution: Experience Manager
 type: Documentation
 index: y
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 50b278705b703c190babc208567f7267796e66e4
 workflow-type: tm+mt
 source-wordcount: '156'
-ht-degree: 16%
+ht-degree: 13%
 
 ---
 
