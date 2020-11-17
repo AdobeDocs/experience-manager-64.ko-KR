@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 7599fa42-3a47-49c9-8a7f-e0b6be302ff0
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: d72f86b167e3e9003ad2cd2e7628f95502cf9a33
 workflow-type: tm+mt
-source-wordcount: '6231'
+source-wordcount: '6200'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ AEM 6에는 두 가지 유형의 건강검사가 있습니다.
 1. 개별 상태 검사
 1. 복합 상태 검사
 
-개인 **상태** 검사는 상태 카드에 해당하는 단일 상태 검사입니다. 개별 상태 검사는 규칙이나 임계값으로 구성할 수 있으며 식별된 상태 문제를 해결하기 위한 하나 이상의 힌트 및 링크를 제공할 수 있습니다. &quot;오류 로그&quot; 검사를 예로 들어보겠습니다. 인스턴스 로그에 ERROR 항목이 있으면 상태 확인의 세부 정보 페이지에서 해당 항목을 찾을 수 있습니다. 페이지 맨 위에는 진단 도구 섹션에 있는 &quot;로그 메시지&quot; 분석기에 대한 링크가 표시되어 이러한 오류를 보다 자세히 분석하고 로거를 다시 구성할 수 있습니다.
+개인 **상태** 검사는 상태 카드에 해당하는 단일 상태 검사입니다. 개별 상태 검사는 규칙이나 임계값으로 구성할 수 있으며 식별된 상태 문제를 해결하기 위한 하나 이상의 힌트 및 링크를 제공할 수 있습니다. &quot;오류 로그&quot; 검사를 예로 들어보겠습니다.인스턴스 로그에 ERROR 항목이 있으면 상태 확인의 세부 정보 페이지에서 해당 항목을 찾을 수 있습니다. 페이지 맨 위에는 진단 도구 섹션에 있는 &quot;로그 메시지&quot; 분석기에 대한 링크가 표시되어 이러한 오류를 보다 자세히 분석하고 로거를 다시 구성할 수 있습니다.
 
 복합 상태 **검사는** 여러 개별 검사의 정보를 집계하는 검사입니다.
 
@@ -76,7 +76,7 @@ AEM 6에는 두 가지 유형의 건강검사가 있습니다.
 
 ### 개별 상태 확인 만들기 {#creating-an-individual-health-check}
 
-개별 상태 확인을 만들려면 다음 두 단계를 수행합니다. Sling Health Check 구현 및 대시보드 구성 노드에서 상태 확인에 대한 항목 추가
+개별 상태 확인을 만들려면 다음 두 단계를 수행합니다.Sling Health Check 구현 및 대시보드 구성 노드에서 상태 확인에 대한 항목 추가
 
 1. Sling Health Check를 만들려면 Sling HealthCheck 인터페이스를 구현하는 OSGI 구성 요소를 만들어야 합니다. 이 구성 요소를 번들 안에 추가합니다. 구성 요소의 속성은 상태 확인을 완전히 식별합니다. 구성 요소가 설치되면 상태 확인을 위해 JMX MBean이 자동으로 생성됩니다. 자세한 내용은 [Sling Health Check Documentation](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html) 을 참조하십시오.
 
@@ -117,7 +117,7 @@ AEM 6에는 두 가지 유형의 건강검사가 있습니다.
 
    >[!NOTE]
    >
-   >위의 리소스 경로는 다음과 같이 만들어집니다. 상태 확인의 mbean 이름이 &quot;test&quot;인 경우 경로 끝에 &quot;test&quot;를 추가합니다 `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck`
+   >위의 리소스 경로는 다음과 같이 만들어집니다.상태 확인의 mbean 이름이 &quot;test&quot;인 경우 경로 끝에 &quot;test&quot;를 추가합니다 `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck`
    >
    >따라서 최종 경로는 다음과 같습니다.
    >
@@ -141,7 +141,7 @@ AEM 6에는 두 가지 유형의 건강검사가 있습니다.
 
 1. OSGI 콘솔의 웹 구성 관리자로 이동합니다. 이렇게 하려면 `https://serveraddress:port/system/console/configMgr`
 
-1. Apache Sling **Composite Health Check라는 항목을 검색합니다**. 이 구성 요소를 확인한 후 사용할 수 있는 구성은 두 가지가 있습니다. 하나는 시스템 확인이고 다른 하나는 보안 확인입니다.
+1. Apache Sling **Composite Health Check라는 항목을 검색합니다**. 이 구성 요소를 확인한 후 사용할 수 있는 구성은 두 가지가 있습니다.하나는 시스템 확인이고 다른 하나는 보안 확인입니다.
 1. 구성 오른쪽의 &quot;+&quot; 단추를 눌러 새 구성을 만듭니다. 아래와 같이 새 창이 나타납니다.
 
    ![chlimage_1-63](assets/chlimage_1-63.jpeg)
@@ -153,13 +153,13 @@ AEM 6에는 두 가지 유형의 건강검사가 있습니다.
    * **이름(hc.name):** 복합 상태 확인의 이름입니다. 의미 있는 이름을 사용하는 것이 좋습니다.
    * **태그(hc.tags):** 이 상태 확인에 대한 태그입니다. 이 복합 상태 검사가 다른 복합 상태 확인(예: 상태 확인 계층 구조)의 일부여야 하는 경우 이 합성이 관련된 태그를 추가합니다.
    * **MBean 이름(hc.mbean.name):** 이 복합 상태 확인의 JMX MBean에 제공될 Mbean의 이름입니다.
-   * **필터 태그(filter.tags):** 복합 상태 확인에 사용되는 속성입니다. 합성이 집계해야 하는 태그입니다. 복합 상태 확인은 이 합성의 필터 태그와 일치하는 태그가 있는 모든 상태 검사를 그룹 아래에 집계합니다. 예를 들어 필터 태그 **테스트** 및 **확인** 이 있는 복합 상태 확인은 **테스트** 및 확인 **태그가 있는 모든 개별 및 복합 상태 확인을 모두 집계하고, 태그 속성** ()에 CheckTags `hc.tags`및CDS 태그를집계합니다.
+   * **필터 태그(filter.tags):** 복합 상태 확인에 사용되는 속성입니다. 합성이 집계해야 하는 태그입니다. 복합 상태 확인은 이 합성의 필터 태그와 일치하는 태그가 있는 모든 상태 검사를 그룹 아래에 집계합니다. 예를 들어 필터 태그 **테스트** 및 **확인** 이 있는 복합 상태 확인은 **테스트** 및 확인 **태그가 있는 모든 개별 및 복합 상태 확인을 모두 집계하고, 태그 속성** ()에 CheckTags `hc.tags`및Check태그를통합합니다.
 
    >[!NOTE]
    >
-   >Apache Sling Composite Health Check의 새로운 각 구성에 대해 새 JMX Mbean이 생성됩니다.**
+   >Apache Sling Composite Health Check의 새로운 각 구성에 대해 새로운 JMX Mbean이 생성됩니다.**
 
-1. 마지막으로 방금 만들어진 복합 상태 확인 항목을 작업 대시보드 구성 노드에 추가해야 합니다. 이 방법은 개별 상태 확인과 동일합니다. nt:unstructured **** 유형의 노드는 아래에서 만들어야 합니다 `/apps/settings/granite/operations/hc`. 노드의 리소스 속성은 OSGI 구성에서 **hc.mean.name** 값으로 정의됩니다.
+1. 마지막으로 방금 만들어진 복합 상태 확인 항목을 작업 대시보드 구성 노드에 추가해야 합니다. 이 방법은 개별 상태 확인과 동일합니다.nt:unstructured **** 유형의 노드는 아래에서 만들어야 합니다 `/apps/settings/granite/operations/hc`. 노드의 리소스 속성은 OSGI 구성에서 **hc.mean.name** 값으로 정의됩니다.
 
    예를 들어 구성을 만들고 **hc.mbean.name** 값을 **diskusage**&#x200B;로 설정하면 구성 노드가 다음과 같이 표시됩니다.
 
@@ -251,7 +251,7 @@ AEM 6에는 두 가지 유형의 건강검사가 있습니다.
      <li>유지 관리 창에 작업이 추가되지 않으면 상태 검사가 중요한 것으로 반환됩니다.</li> 
      <li>감사 로그 및 워크플로우 제거 유지 관리 작업을 구성하거나 유지 관리 창에서 제거해야 합니다. 구성되지 않은 상태로 두면, 이러한 작업은 처음 시도한 실행 시 실패하므로 시스템 유지 관리 검사가 위험 상태를 반환합니다.</li> 
      <li><strong>AEM 6.4에서는 Lucene 바이너리</strong>유지 관리 <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">작업을 확인할 수</a> 있습니다</li> 
-     <li>AEM 6.2 이하에서는 작업이 실행되지 않으므로 시스템 유지 관리 검사가 시작 후 경고 상태를 반환합니다. 6.3부터 첫 번째 유지 관리 창에 아직 도달하지 않았으면 확인 메시지가 표시됩니다.</li> 
+     <li>aem 6.2 이하에서는 작업이 실행되지 않으므로 시스템 유지 관리 검사가 시작 후 경고 상태를 반환합니다. 6.3부터 첫 번째 유지 관리 창에 아직 도달하지 않았으면 확인 메시지가 표시됩니다.</li> 
     </ul> <p>이 상태 확인에 대한 MBean은 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsystemchecks%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck입니다</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -296,7 +296,7 @@ AEM 6에는 두 가지 유형의 건강검사가 있습니다.
   </tr> 
   <tr> 
    <td>보안 확인</td> 
-   <td><p>보안 확인은 여러 보안 관련 검사의 결과를 집계하는 종합입니다. 이러한 개별 상태 검사는 <a href="/help/sites-administering/security-checklist.md">보안 체크리스트 설명서 페이지에서 사용할 수 있는 보안 체크리스트와 다른 문제를 해결합니다.</a> 이 확인은 인스턴스가 시작될 때 보안 연기 테스트로서 유용합니다. </p> <p>이 상태 확인에 대한 MBean은 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healcheck:name=</a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">securitychecks,type=HealthCheck입니다.</a></p> </td> 
+   <td><p>보안 확인은 여러 보안 관련 검사의 결과를 집계하는 종합입니다. 이러한 개별 상태 검사는 <a href="/help/sites-administering/security-checklist.md">보안 체크리스트 설명서 페이지에서 사용할 수 있는 보안 체크리스트와 다른 문제를 해결합니다.</a> 이 확인은 인스턴스가 시작될 때 보안 연기 테스트로서 유용합니다. </p> <p>이 상태 확인에 대한 MBean은 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healcheck:name=securitychecks,type=HealthCheck입니다.</a></p> </td> 
   </tr> 
   <tr> 
    <td>활성 상태 번들</td> 
@@ -418,9 +418,9 @@ UI의 왼쪽 위 톱니바퀴 단추에서 로거 구성을 제공하여 로깅�
 예:
 
 * 모든 **오류** 메시지를 캡처할 계획인 경우 구성이 필요하지 않습니다. 모든 ERROR 메시지는 기본적으로 캡처됩니다.
-* 모든 **오류**, WARN **및** INFO **메시지를 캡처하려는 경우 로거** 이름을 다음으로 설정해야 합니다. &quot;**루트**&quot;와 로거 레벨: **정보**.
+* 모든 **오류**, WARN **및** INFO **메시지를 캡처하려는 경우 로거** 이름을 다음으로 설정해야 합니다.&quot;**루트**&quot;와 로거 레벨: **정보**.
 
-* 특정 패키지(예: com.adobe.granite)에서 오는 모든 메시지를 캡처할 계획인 경우 로거 이름은 다음과 같이 설정해야 합니다. &quot;com.adobe.granite&quot; 및 로거 레벨: **디버그** (아래 이미지에 표시된 대로 모든 **오류**, **WARN**, INFO **및 DEBUG** **** DEBUGMESSAGES)를 캡처합니다.
+* 특정 패키지(예: com.adobe.granite)에서 오는 모든 메시지를 캡처할 계획인 경우 로거 이름은 다음과 같이 설정해야 합니다.&quot;com.adobe.granite&quot; 및 로거 레벨: **디버그** (아래 이미지에 표시된 대로 모든 **오류**, **WARN**, INFO **및 DEBUG** **** DEBUGMESSAGES)를 캡처합니다.
 
 ![chlimage_1-419](assets/chlimage_1-419.png)
 
@@ -481,7 +481,7 @@ DATE+TIME [MaintanceLogger] Name=<MT_NAME>, Status=<MT_STATUS>, Time=<MT_TIME>, 
 
 ### 쿼리 설명 {#explain-query}
 
-지정된 쿼리의 경우 Oak는 **oak:index 노드 아래에 있는 저장소에 정의된 Oak 색인을 기반으로 가장 잘 실행되는 방법을** 파악하려고 합니다. 쿼리에 따라 Oak에서 다른 인덱스를 선택할 수 있습니다. Oak가 쿼리를 실행하는 방식을 이해하는 것이 쿼리를 최적화하는 첫 번째 단계입니다.
+지정된 쿼리의 경우 Oak는 **oak:index** 노드 아래에 있는 저장소에 정의된 Oak 색인을 기반으로 가장 적합한 실행 방법을 알아내려고 합니다. 쿼리에 따라 Oak에서 다른 인덱스를 선택할 수 있습니다. Oak가 쿼리를 실행하는 방식을 이해하는 것은 쿼리를 최적화하는 첫 번째 단계입니다.
 
 설명 쿼리는 Oak가 쿼리를 실행하는 방법을 설명하는 도구입니다. AEM 시작 화면에서 **도구 - 작업 - 진단으로** 이동한 다음 **쿼리 성능** 을 클릭하고 **쿼리 설명** 탭으로전환하여 액세스할 수 있습니다.
 
@@ -548,7 +548,7 @@ Operations Dashboard의 유지 관리 페이지로 이동하려면 AEM 시작 �
 
 1. 일일 유지 관리 창 메뉴 아래에 있는 **Lucene 이진 파일 정리 ** **작업입니다** .
 
-1. 주간 유지 관리 창 메뉴 아래에 있는 **Workflow 제거 ** **작업** .
+1. 주간 유지 관리 창 메뉴 아래에 있는 **워크플로우 삭제 ** **작업** .
 
 1. 주간 **유지 관리 창** 메뉴 아래에 있는 데이터 저장소 **가비지 수집** 작업
 
@@ -693,7 +693,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
 
 ![chlimage_1-426](assets/chlimage_1-426.png)
 
-이렇게 하면 /apps/granite/operations/config/maintenance/`schedule`/에 해당 리소스가 추가됩니다`taskname`. 작업이 실행 모드에 종속적인 경우 이 유지 관리 작업에 대해 활성화되어야 하는 실행 모드 값을 사용하여 해당 노드에서 속성 granite.operations.conditions.runmode를 설정해야 합니다.
+이렇게 하면 /apps/granite/operations/config/maintenance/`schedule`/에 해당 리소스가 추가됩니다`taskname`. 작업이 실행 모드에 종속되어 있는 경우 이 유지 관리 작업에 대해 활성화해야 하는 실행 모드 값을 사용하여 해당 노드에서 속성 granite.operations.conditions.runmode를 설정해야 합니다.
 
 ## 시스템 개요 {#system-overview}
 
@@ -777,7 +777,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
    <td>인스턴스</td> 
    <td> 
     <ul> 
-     <li>AEM 버전</li> 
+     <li>aem 버전</li> 
      <li>실행 모드 목록</li> 
      <li>인스턴스가 시작된 날짜</li> 
     </ul> </td> 
@@ -885,7 +885,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
      <li>페이지</li> 
      <li>자산</li> 
      <li>태그</li> 
-     <li>저작물</li> 
+     <li>작성 가능한</li> 
      <li>총 노드 수<br /> </li> 
     </ul> <p>nodeCounterMBean에서 총 노드 수를 얻는 반면 나머지 통계는 IndexInfoService에서 얻습니다.</p> </td> 
    <td>N/A</td> 
