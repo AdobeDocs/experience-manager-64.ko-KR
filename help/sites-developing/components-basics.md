@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '4725'
 ht-degree: 2%
@@ -1030,10 +1030,12 @@ AEM 내의 구성 요소는 다음과 같이 3개의 다른 계층을 따릅니�
 >[!NOTE]
 >
 >중첩된 구성 요소의 경우 노드에 속성으로 정의된 작업에 대한 특정 제한이 `cq:listeners` 있습니다.
-
->* 중첩된 구성 요소의 경우 다음 속성의 값이 *되어야* 합니다 `REFRESH_PAGE`.>
->* `aftermove`
-* `aftercopy`
+>
+>* 중첩된 구성 요소의 경우 다음 속성의 값이 *되어야* 합니다 `REFRESH_PAGE`.
+   >
+   >  
+* `aftermove`
+>  * `aftercopy`
 
 
 이벤트 핸들러는 사용자 지정 구현으로 구현할 수 있습니다. 예를 들어 (여기서 `project.customerAction` 는 정적 메서드임):
@@ -1045,7 +1047,8 @@ AEM 내의 구성 요소는 다음과 같이 3개의 다른 계층을 따릅니�
 `afterinsert="function(path, definition) { this.refreshCreated(path, definition); }"`
 
 >[!NOTE]
-클래식 UI에서 핸들러에서 사용할 수 있는 매개 변수를 보려면 `before<action>` 및 `after<action>` 위젯 설명서의 [ 및 `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) 이벤트 섹션 [ 을 `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) 참조하십시오.
+>
+>클래식 UI에서 핸들러에서 사용할 수 있는 매개 변수를 보려면 `before<action>` 및 `after<action>` 위젯 설명서의 [ 및 `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) 이벤트 섹션 [ 을 `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) 참조하십시오.
 
 구성 요소를 삭제, 편집, 삽입 또는 이동한 후 페이지가 새로 고쳐집니다.
 
