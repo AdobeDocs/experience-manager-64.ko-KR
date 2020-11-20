@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
 translation-type: tm+mt
-source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '3241'
 ht-degree: 4%
@@ -76,27 +76,27 @@ Communities Sites 콘솔에서는 다음 항목에 액세스할 수 있습니다
 
 작성 프로세스는 구성할 기능 세트가 포함된 패널로 표시된 일련의 단계입니다(하위 패널로 표시됨). 마지막 단계에서 사이트를 커밋하기 전에 **다음** 단계 또는 **이전** 단계로이동할 수 있습니다.
 
-### 1단계: 사이트 템플릿 {#step-site-template}
+### 1단계:사이트 템플릿 {#step-site-template}
 
 ![newsite템플릿](assets/newsitetemplate.png)
 
 사이트 템플릿 패널에서 제목, 설명, 사이트 루트, 기본 언어, 이름 및 사이트 템플릿이 지정됩니다.
 
-* **[!UICONTROL 커뮤니티 사이트 제목]**: 사이트의 표시 제목입니다.
+* **[!UICONTROL 커뮤니티 사이트 제목]**:사이트의 표시 제목입니다.
 
    제목은 게시된 사이트와 사이트 관리자 UI에 표시됩니다.
 
-* **[!UICONTROL 커뮤니티 사이트 설명]**: 사이트에 대한 설명입니다.
+* **[!UICONTROL 커뮤니티 사이트 설명]**:사이트에 대한 설명입니다.
 
    설명은 게시된 사이트에 표시되지 않습니다.
 
-* **[!UICONTROL 커뮤니티 사이트 루트]**: 사이트의 루트 경로입니다.
+* **[!UICONTROL 커뮤니티 사이트 루트]**:사이트의 루트 경로입니다.
 
    기본 루트는 `/content/sites`사용되지만 루트는 웹 사이트 내의 모든 위치로 이동할 수 있습니다.
 
-* **[!UICONTROL 커뮤니티 사이트 기본 언어]**: (단일 언어 이외의 언어 유지: 영어) 풀다운 메뉴를 사용하여 독일어, 이탈리아어, 프랑스어, 일본어, 스페인어, 포르투갈어(브라질), 중국어(번체) 및 중국어(간체) 등 사용 가능한 언어에서 하나 *이상의* 기본 언어를 선택합니다. 추가된 각 언어에 대해 하나의 커뮤니티 사이트가 생성되고, 다국어 사이트에 대한 컨텐츠 번역 [에 설명된 우수 사례 다음에 동일한 사이트 폴더 내에 존재합니다](../../help/sites-administering/translation.md). 각 사이트의 루트 페이지에는 선택한 언어 중 하나의 언어 코드에 의해 이름이 지정된 하위 페이지가 포함됩니다(예: &#39;en&#39;, &#39;fr&#39;, 프랑스어).
+* **[!UICONTROL 커뮤니티 사이트 기본 언어]**:(단일 언어 이외의 언어 유지:영어) 풀다운 메뉴를 사용하여 독일어, 이탈리아어, 프랑스어, 일본어, 스페인어, 포르투갈어(브라질), 중국어(번체) 및 중국어(간체) 등 사용 가능한 언어에서 하나 *이상의* 기본 언어를 선택합니다. 추가된 각 언어에 대해 하나의 커뮤니티 사이트가 생성되고, 다국어 사이트에 대한 컨텐츠 번역 [에 설명된 우수 사례 다음에 동일한 사이트 폴더 내에 존재합니다](../../help/sites-administering/translation.md). 각 사이트의 루트 페이지에는 선택한 언어 중 하나의 언어 코드에 의해 이름이 지정된 하위 페이지가 포함됩니다(예: &#39;en&#39;, &#39;fr&#39;, 프랑스어).
 
-* **[!UICONTROL 커뮤니티 사이트 이름]**: URL에 나타나는 사이트 루트 페이지의 이름
+* **[!UICONTROL 커뮤니티 사이트 이름]**:URL에 나타나는 사이트 루트 페이지의 이름
 
    * 사이트를 만든 후 쉽게 변경되지 않으므로 이름을 다시 확인하십시오
    * 기본 URL( `https://*server:port/site root/site name*)` `Community Site Name`
@@ -104,11 +104,11 @@ Communities Sites 콘솔에서는 다음 항목에 액세스할 수 있습니다
 
       *예*, `http://localhost:4502/content/sites/mysight/en.html`
 
-* **[!UICONTROL 커뮤니티 사이트 템플릿]** 메뉴: 풀다운 메뉴를 사용하여 사용 가능한 [커뮤니티 사이트 템플릿을 선택합니다](tools.md).
+* **[!UICONTROL 커뮤니티 사이트 템플릿]** 메뉴:풀다운 메뉴를 사용하여 사용 가능한 [커뮤니티 사이트 템플릿을 선택합니다](tools.md).
 
 **[!UICONTROL 다음]**&#x200B;을 선택합니다
 
-### 2단계: 디자인 {#step-design}
+### 2단계:디자인 {#step-design}
 
 디자인 패널에는 테마와 브랜딩 배너를 선택할 수 있는 2개의 하위 패널이 있습니다.
 
@@ -141,7 +141,7 @@ Communities Sites 콘솔에서는 다음 항목에 액세스할 수 있습니다
 
 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 
-### 3단계: 설정 {#step-settings}
+### 3단계:설정 {#step-settings}
 
 설정 패널에는 사이트를 만들기 위해 마지막 단계로 이동하기 전에 구성할 수 있는 기능을 제공하는 여러 하위 패널이 있습니다.
 
@@ -216,10 +216,11 @@ Communities Sites 콘솔에서는 다음 항목에 액세스할 수 있습니다
    개인 *의* 커뮤니티 사이트에 대해 선택 취소 상태를 유지합니다. 기본값은 선택 취소입니다.
 
 >[!NOTE]
-
-**[!UICONTROL 소셜 로그인 허용]**
->샘플 Facebook 및 Twitter 구성이 존재하거나 선택할 수 있지만 [제작 환경의](../../help/sites-administering/production-ready.md)경우 사용자 정의 Facebook 및 Twitter 애플리케이션을 만들어야 합니다. Facebook 및 [Twitter로 소셜 로그인을 참조하십시오](social-login.md).
 >
+>**[!UICONTROL 소셜 로그인 허용]**
+>
+>샘플 Facebook 및 Twitter 구성이 존재하거나 선택할 수 있지만 [제작 환경의](../../help/sites-administering/production-ready.md)경우 사용자 정의 Facebook 및 Twitter 애플리케이션을 만들어야 합니다. Facebook 및 [Twitter로 소셜 로그인을 참조하십시오](social-login.md).
+
 #### TAGGING {#tagging}
 
 ![chlimage_1-450](assets/chlimage_1-450.png)
@@ -228,7 +229,7 @@ Communities Sites 콘솔에서는 다음 항목에 액세스할 수 있습니다
 
 또한 커뮤니티 사이트의 태그 네임스페이스를 선택하면 카탈로그 및 리소스를 정의할 때 표시되는 선택이 제한됩니다. 중요 [정보는 태깅 지원 리소스](tag-resources.md) 를 참조하십시오.
 
-* 텍스트 검색 상자: 사이트에서 사용할 수 있는 태그를 식별하는 입력 시작
+* 텍스트 검색 상자:사이트에서 사용할 수 있는 태그를 식별하는 입력 시작
 
 #### ROLES {#roles}
 
@@ -358,7 +359,7 @@ Communities Sites 콘솔에서는 다음 항목에 액세스할 수 있습니다
 
 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 
-### 4단계: 커뮤니티 사이트 만들기 {#step-create-communities-site}
+### 4단계:커뮤니티 사이트 만들기 {#step-create-communities-site}
 
 조정이 필요한 경우 [ **뒤로** ] 단추를 사용하여 조정합니다.
 
@@ -392,7 +393,8 @@ Communities Sites 콘솔에서는 다음 항목에 액세스할 수 있습니다
 ![chlimage_1-461](assets/chlimage_1-461.png)
 
 >[!NOTE]
-AEM에 익숙하지 않은 경우 [기본 처리](../../help/sites-authoring/basic-handling.md) 및 페이지 작성에 대한 [빠른 안내서에 대한 설명서를 봅니다](../../help/sites-authoring/qg-page-authoring.md).
+>
+>AEM에 익숙하지 않은 경우 [기본 처리](../../help/sites-authoring/basic-handling.md) 및 페이지 작성에 대한 [빠른 안내서에 대한 설명서를 봅니다](../../help/sites-authoring/qg-page-authoring.md).
 
 ## 사이트 속성 수정 {#modifying-site-properties}
 
@@ -439,17 +441,22 @@ BASIC 패널에서
       사이트의 최상위 탐색 막대에 표시되는 함수 순서 수정
 
 >[!NOTE]
-맨 위에 있는 함수를 제외하고 사이트 구조에서 모든 함수의 순서를 변경할 수 있습니다. 따라서 커뮤니티 사이트의 홈 페이지는 변경할 수 없습니다.
+>
+>맨 위에 있는 함수를 제외하고 사이트 구조에서 모든 함수의 순서를 변경할 수 있습니다. 따라서 커뮤니티 사이트의 홈 페이지는 변경할 수 없습니다.
 
 >[!CAUTION]
-표시 제목은 부작용없이 변경할 수 있지만 커뮤니티 사이트에 속하는 커뮤니티 함수의 URL 이름은 편집하지 않는 것이 좋습니다.
-예를 들어, URL의 이름을 바꾸면 기존 UGC가 이동하지 않으므로 &#39;손실&#39; UGC가 영향을 받습니다.
+>
+>표시 제목은 부작용없이 변경할 수 있지만 커뮤니티 사이트에 속하는 커뮤니티 함수의 URL 이름은 편집하지 않는 것이 좋습니다.
+>
+>예를 들어, URL의 이름을 바꾸면 기존 UGC가 이동하지 않으므로 &#39;손실&#39; UGC가 영향을 받습니다.
 
 >[!CAUTION]
-그룹 함수는 사이트 구조의 *첫 번째* 함수이거나 유일한 ** 함수여야 합니다.
-페이지 함수 [](functions.md#page-function)등 다른 모든 함수를 먼저 포함하여 나열해야 합니다.
+>
+>그룹 함수는 사이트 구조의 *첫 번째* 함수이거나 유일한 ** 함수여야 합니다.
+>
+>페이지 함수 [](functions.md#page-function)등 다른 모든 함수를 먼저 포함하여 나열해야 합니다.
 
-#### 예: 커뮤니티 사이트 구조에 카탈로그 함수 추가 {#example-adding-a-catalog-function-to-a-community-site-structure}
+#### 예:커뮤니티 사이트 구조에 카탈로그 함수 추가 {#example-adding-a-catalog-function-to-a-community-site-structure}
 
 ![chlimage_1-464](assets/chlimage_1-464.png)
 
@@ -517,16 +524,18 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 
 예를 들어 이름이 &quot;시작하기 자습서&quot;라는 사이트에 대해 &quot;참여&quot;인 경우 중재자에 대한 사용자 그룹은 다음과 같습니다.
 
-* 제목: 커뮤니티 참여 중재자
-* 이름: community-*engage-uid*-moderators
+* 제목:커뮤니티 참여 중재자
+* 이름:community-*engage-uid*-moderators
 
 사이트를 만드는 동안 중재자 또는 그룹 관리자로 역할을 할당한 모든 구성원은 구성원 그룹뿐만 아니라 적절한 그룹에 할당됩니다. 이 그룹 및 구성원 할당은 새 사이트가 게시될 때 게시 시 생성됩니다.
 
 자세한 내용은 사용자 [및 사용자 그룹 관리를 참조하십시오](users.md).
 
 >[!NOTE]
-소셜 [로그인을 허용하는 경우: Facebook](#user-management) 사용, 사용자 그룹
-* community-*&lt;site-name>**&lt;uid>*-members
+>
+>소셜 [로그인을 허용하는 경우:Facebook](#user-management) 사용, 사용자 그룹
+>
+>* community-*&lt;site-name>**&lt;uid>*-members
 
 가 만들어지면, 적용된 [Facebook 클라우드](social-login.md#createafacebookcloudservice) 서비스를 구성하여 이 그룹에 사용자를 추가해야 합니다.
 
