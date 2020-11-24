@@ -4,10 +4,10 @@ description: Adobe Experience Manager 6.4 누적 수정 팩 관련 릴리스 노
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e7da0bb7906c3ad3d04531db0abfbc658646f6e4
+source-git-commit: 9b339e7a9ac3f43fd0ef2e672d6fbd640993368b
 workflow-type: tm+mt
-source-wordcount: '3420'
-ht-degree: 25%
+source-wordcount: '4042'
+ht-degree: 21%
 
 ---
 
@@ -16,15 +16,95 @@ ht-degree: 25%
 
 ## 릴리스 정보 {#release-information}
 
+<!-- TBD: Update the SD URL. -->
+
 | 제품 | **AEM(Adobe Experience Manager) 6.4** |
 |---|---|
-| 버전 | 6.4.8.2 |
+| 버전 | 6.4.8.3 |
 | 유형 | 누적 수정 팩 |
-| 날짜 | 2020년 9월 03일 |
+| 날짜 | 2020년 11월 26일 |
 | 전제 조건 | [AEM 6.4 서비스 팩 8(6.4.8.0)](sp-release-notes.md) |
-| 다운로드 URL | AEM 6.4.8.2 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-2.0.zip) |
+| 다운로드 URL | AEM 6.4.8.3 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-3.0.zip) |
 
-## AEM 6.4.8.2에 포함된 기능 {#what-s-included-in-aem}
+## AEM 6.4.8.3에 포함된 기능 {#what-s-included-in-aem}
+
+AEM Cumulative Fix Pack 6.4.8.3은 2020년 3월 AEM 6.4 서비스 팩 8(6.4.8.0)의 일반 출시 이후 여러 가지 내부 및 고객 픽스를 포함하는 중요한 업데이트입니다.
+
+AEM 6.4.8.3은 AEM 6.4 서비스 팩 8에 따라 제공되는 CFP(Cumulative Fix Pack)입니다. AEM 6.4 서비스 팩 8을 설치한 후 CFP를 설치합니다.
+
+AEM 6.4.8.3에서는 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.8.23으로 업데이트됩니다.
+
+For information on CFP and other types of releases, see [AEM Update Release Vehicle Definitions](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
+
+Adobe Experience Manager 6.4.8.3에서는 다음 문제에 대한 수정 사항을 제공합니다.
+
+### 사이트 {#sites-6483}
+
+* 컨텐츠 조각 변형의 텍스트를 업데이트할 때 마스터 컨텐츠 조각 컨텐츠가 변형 대신 업데이트됩니다(NPR-35080).
+
+* 구성 요소의 문자열 유형 레이블 속성에 대한 숫자 값을 설정하고, 구성 요소를 삭제하고, 실행 취소 옵션을 사용하여 다시 가져오면, 레이블 속성의 유형은 자동으로 String에서 Long(NPR-34738)으로 변경됩니다.
+
+* 다중 필드에 파일 업로드 구성 요소를 추가하면 이미지 경로가 다중 필드 노드(NPR-34423) 대신 구성 요소 노드에 저장됩니다.
+
+* 페이지 이동 마법사에서, 대상을 선택하지 않아도 다음 단추는 활성화된 상태로 유지됩니다(NPR-34460).
+
+* 상위 구성 요소에 `cq:isContainer` 속성이 포함된 경우 상속된 구성 요소에 속성이 자동으로 포함되지 않습니다(CQ-4308409).
+
+* 함수를 사용하여 CSS `calc()` 축소를 사용하는 경우 기호 주위의 `+` 빈 공백이 제거됩니다(NPR-34991).
+
+* AEM 인스턴스를 시작할 때 `com.adobe.granite.maintenance.impl.MaintenanceTaskManagerImpl` 및 `com.adobe.granite.maintenance.impl.TaskScheduler` 구성 요소가 `Active` 상태(NPR-34952)로 표시되지 않습니다.
+
+### [!DNL Assets] {#assets-6483}
+
+* 기존 자산의 버전을 만들 때 메타데이터 프로필이 폴더에 적용된 경우 메타데이터에 대한 사용자 업데이트가 지속되지 않습니다(NPR-34833).
+* with [!DNL Adobe Asset Link] [!DNL Adobe InDesign]와 함께 사용할 경우 검색 결과에 폴더 및 컬렉션이 포함되지 않고 자산만 포함됩니다(NPR-34700).
+* 폴더로 자산을 드래그하여 이동할 때 사용자 인터페이스에는 Lightbox에 [!UICONTROL 놓기 및 컬렉션에] 놓기 옵션도 표시됩니다 . 이동 작업이 취소되더라도 사용자 인터페이스는 이후 두 옵션(NPR-34525)을 계속 표시합니다.
+* 게시 관리 인터페이스를 열면 게시 옵션을 사용할 수 없으며 게시 취소 옵션을 선택하면 범위 페이지가 비어 있습니다(CQ-4302509).
+
+#### [!DNL Dynamic Media] {#dynamic-media}
+
+* [이미지 사전 설정] 설정에서 [JPG [!UICONTROL 색차 다운샘플링] 활성화] 옵션을 선택 해제하면 변경 내용이 [!DNL Experience Manager][!DNL Dynamic Media] (NPR-34284)과 동기화되지 않습니다.
+* 뷰어 [!UICONTROL 사전 설정 편집기에서]PanoramicImage/PanoramicImage_VR [!UICONTROL 사전 설정을 편집할 때] 구성 요소에서 `PanoramicView` `PANORAMICVIEW_AUTOROTATE` 수정자 레이블을 사용할 수 없습니다(CQ-4302043).
+* 에서 비디오 게시를 취소해도 구성된 Scene7에서 응용 비디오 세트 게시를 취소하지 [!DNL Experience Manager] 않습니다. (CQ-4304405).
+
+### 플랫폼 {#platform-6483}
+
+* 이 `emitUseStrict` 플래그가 GCC(Google Closure Compiler) 프로세서 함수에 추가됩니다 `com.adobe.granite.ui.clientlibs.impl.HtmlLibraryManagerImpl`. 이 플래그는 지침 출력을 `use strict` 억제합니다(NPR-34830).
+* 일일 또는 주간 유지 관리 작업을 시작할 때 a `NullPointerException` 가 반환됩니다(NPR-34702).
+* 이 [!DNL Apache Sling Health Check] 도구는 더 이상 사용되지 않습니다. 대신 [패턴 탐지기](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/upgrading/pattern-detector.html) 기능을 사용하여 내용 위반을 탐지합니다(NPR-33929).
+
+### 통합 {#integrations-6483}
+
+* 폴더 [!UICONTROL 에서 대상] 페이지로 이동하는 대상 [!UICONTROL 페이지에] 만들기 [!UICONTROL 단추가] 나타납니다(NPR-35152).
+
+### 사용자 인터페이스 {#ui-6483}
+
+* Omnisearch [!UICONTROL 사용자 인터페이스의] [!UICONTROL 필터] 검색 패널은검색이 실행되는 위치 외의 위치의 결과도 반환합니다(NPR-34877).
+* Omnisearch [!UICONTROL 사용자 인터페이스에서] [!UICONTROL 필터] 패널을 [!UICONTROL 닫을 때 왼쪽 레일은] 컨텐츠 [!UICONTROL 선택 항목으로 재설정되지 않으므로 필터] 패널(NPR-34483)을 다시 열 수없습니다.
+* 페이지 속성 `NullPointerException` 에 액세스할 때 a가 반환됩니다(NPR-34509).
+
+### 커뮤니티 {#communities-6483}
+
+<!-- Following fixes of 6483 are documented on Nov 11 20202 by Vishabh. 
+-->
+
+* 제품의 불공정한 용어 인스턴스는 모두 승인된 용어(NPR-34506)로 대체됩니다.
+
+### 상거래 {#commerce-6483}
+
+* 컬렉션에 15개 이상의 제품이 있는 경우 이 컬렉션은 처음 15개 제품만 표시합니다(NPR-34494).
+
+### 양식 {#forms-6483}
+
+>[!NOTE]
+>
+>[!DNL Experience Manager Forms] 는 예약된 누적 수정 팩 릴리스 날짜 이후 1주일 후에 추가 [!DNL Experience Manager] 기능 패키지를 출시합니다.
+
+보안 업데이트에 대한 자세한 내용은 [Experience Manager 보안 게시판 페이지를 참조하십시오](https://helpx.adobe.com/security/products/experience-manager.html).
+
+## 이전 누적 수정 팩에 포함된 핫픽스 및 기능 팩 {#hotfixes-and-feature-packs-included-in-previous-cumulative-fix-packs}
+
+### Adobe Experience Manager 6.4.8.2 {#experience-manager-6482}
 
 AEM Cumulative Fix Pack 6.4.8.2는 2020년 3월 AEM 6.4 서비스 팩 8(6.4.8.0)을 일반적으로 사용할 수 있었던 이후 여러 가지 내부 및 고객 픽스를 포함하는 중요한 업데이트입니다.
 
@@ -36,7 +116,7 @@ For information on CFP and other types of releases, see [AEM Update Release Vehi
 
 Adobe Experience Manager 6.4.8.2에서는 다음 문제에 대한 수정 사항을 제공합니다.
 
-### 사이트 {#sites-6482}
+#### 사이트 {#sites-6482}
 
 * 롤아웃 구성 `RolloutConfigManagerFactoryImpl` 을 로드할 수 없는 경우 누락된 구성을 로드하지 않습니다. 캐시된 구성을 반환합니다(NPR-34091).
 * 텍스트 코어 구성 요소에서 소스 HTML 편집 옵션을 사용한 후 태그의 `em` 클래스가 제거됩니다(NPR-34080).
@@ -59,7 +139,7 @@ Adobe Experience Manager 6.4.8.2에서는 다음 문제에 대한 수정 사항�
 * 템플릿 편집 페이지의 허용된 구성 요소 표시 문제(CQ-4297295).
 * Chrome 및 Firefox를 업그레이드한 후 팝업 메뉴가 예상대로 작동하지 않습니다. 페이지 속성을 로드할 때 패널에 데이터가 있으면 패널이 표시되지 않습니다(CQ-4292995).
 
-### 자산 {#assets-6482}
+#### 자산 {#assets-6482}
 
 * 업로드된 PDF 파일에 대한 텍스트 추출을 사용할 수 없으며 PDF 파일에서 일부 단어를 전체 텍스트로 검색하지 못했습니다(NPR-34165).
 
@@ -88,26 +168,26 @@ Adobe Experience Manager 6.4.8.2에서는 다음 문제에 대한 수정 사항�
 
 * PANORAMICVIEW [!UICONTROL _AUTOMOTE] 수정자 레이블이 [!UICONTROL 뷰어 사전 설정 편집기] 페이지의 [!UICONTROL 동작] 탭에서 누락되었습니다(CQ-4302043).
 
-### 플랫폼 {#platform-6482}
+#### 플랫폼 {#platform-6482}
 
 * 기본 에이전트(게시) 구성에 대한 **[!UICONTROL 연결 시간]** 제한 **[!UICONTROL 및]** 소켓 시간초과설정에 대한 기본값이 지정되지 않았습니다(NPR-33708).
 * 유지 관리 작업 스케줄러는 구성된 것보다 자주 유지 관리 작업을 시작하고 중지합니다(NPR-33520).
 * 업그레이드된 Experience Manager 인스턴스에서 진단 도구를 사용하여 로그를 다운로드할 수 없습니다(NPR-34419).
 
-### 통합 {#integrations-6482}
+#### 통합 {#integrations-6482}
 
 * 마이그레이션된 라이브러리 `library_path` 에 대한 [!DNL Adobe Launch] 라이브러리 URL을 생성할 때 의 값은 고려되지 않습니다 [!DNL Adobe Dynamic Tag Management]. 또한 마이그레이션된 라이브러리는 라이브러리와 다른 접두사를 [!DNL Adobe Launch] 사용합니다. (NPR-34238).
 * 클라우드 서비스에서 상속된 속성은 페이지 속성을 업데이트할 때 지속되지 않습니다(NPR-33865).
 
-### 사용자 인터페이스 {#ui-6482}
+#### 사용자 인터페이스 {#ui-6482}
 
 * 검색 페이지에서 선택한 자산 수의 표시가 잘못되었습니다(NPR-33540).
 
-### 커뮤니티 {#communities-6482}
+#### 커뮤니티 {#communities-6482}
 
 * 관리 콘솔을 통해 추가된 커뮤니티 그룹의 기존 사용자는 커뮤니티 그룹 콘솔의 수정 사항에 대한 사용자 목록에서 제거됩니다(NPR-34312).
 
-### 양식 {#forms-6482}
+#### 양식 {#forms-6482}
 
 >[!NOTE]
 >
@@ -160,8 +240,6 @@ Adobe Experience Manager 6.4.8.2에서는 다음 문제에 대한 수정 사항�
 * 환경에서 Document Security [!DNL JBoss] 에 대해 [!DNL Experience Manager Forms] [!DNL Linux] 7.0.9로 버전을 업그레이드하면 오류가 발생합니다(CQ-4300546).
 
 보안 업데이트에 대한 자세한 내용은 [Experience Manager 보안 게시판 페이지를 참조하십시오](https://helpx.adobe.com/security/products/experience-manager.html).
-
-## 이전 누적 수정 팩에 포함된 핫픽스 및 기능 팩 {#hotfixes-and-feature-packs-included-in-previous-cumulative-fix-packs}
 
 ### Adobe Experience Manager 6.4.8.1 {#experience-manager-6481}
 
@@ -267,7 +345,7 @@ Adobe Experience Manager 6.4.8.1에서는 다음 문제에 대한 수정 사항�
 * 문서 서비스:사용자가 텍스트 파일을 PDF로 변환하면 일본어 문자가 올바르게 렌더링되지 않습니다(NPR-33239).
 * GuideSOMProviderServlet과 함께 XSS를 저장함(NPR-32701).
 
-## 6.4.8.2 설치 {#install}
+## 6.4.8.3 설치 {#install}
 
 ### 설치 요구 사항 {#setup-requirements}
 
@@ -285,20 +363,20 @@ Adobe Experience Manager 6.4.8.1에서는 다음 문제에 대한 수정 사항�
 >
 >AEM 6.4에 기능 팩을 설치한 고객의 경우. Adobe에서 제공하는 옵션 기능 팩은 릴리스 버전 및 서비스 팩에 종속됩니다. Feature Pack이 설치되어 있는 경우 AEM 고객 지원 센터에 문의하여 AEM 6.4용 누적 수정 팩과 해당 기능 팩의 호환성을 확인하십시오.
 
-* AEM 6.4.8.2 requires AEM 6.4.8.0. Please visit [upgrade documentation](../sites-deploying/upgrade.md) for detailed instructions.
-* MongoDB 및 여러 인스턴스가 포함된 배포에서 패키지 관리자를 사용하여 작성자 인스턴스 중 하나에 AEM 6.4.8.2을 설치합니다.
+* AEM 6.4.8.3 requires AEM 6.4.8.0. Please visit [upgrade documentation](../sites-deploying/upgrade.md) for detailed instructions.
+* MongoDB 및 여러 인스턴스가 포함된 배포에서 패키지 관리자를 사용하여 작성자 인스턴스 중 하나에 AEM 6.4.8.3을 설치합니다.
 * 누적 수정 팩을 설치하기 전에 AEM 인스턴스의 스냅샷 또는 새 백업을 보유해야 합니다.
 * 설치하기 전에 인스턴스를 다시 시작합니다. 인스턴스가 업데이트 모드에 있는 경우에만 필요하지만(이전 버전에서 인스턴스가 방금 업데이트되었을 때의 경우임), 인스턴스가 더 긴 시간 동안 실행 중이면 권장됩니다.
 
 >[!NOTE]
 >
->AEM 6.4.8.2 패키지를 삭제하거나 제거하지 않는 것이 좋습니다.
+>AEM 6.4.8.3 패키지를 삭제하거나 제거하지 않는 것이 좋습니다.
 
 ### 누적 수정 팩 설치 {#install-cumulative-fix-pack}
 
 기존 AEM 6.4.8.0 인스턴스에 누적 수정 팩을 설치하려면 다음 단계를 수행하십시오.
 
-1. Software Distribution [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-2.0.zip) 링크를 클릭하여 패키지를 다운로드합니다.
+1. Software Distribution [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-3.0.zip) 링크를 클릭하여 패키지를 다운로드합니다.
 
 1. [패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
 
@@ -306,13 +384,13 @@ Adobe Experience Manager 6.4.8.1에서는 다음 문제에 대한 수정 사항�
 
 >[!NOTE]
 >
->**패키지 관리자 UI의 대화 상자가 6.4.8.2 설치 중에 종료되는 경우가 있습니다.**
+>**패키지 관리자 UI의 대화 상자가 6.4.8.3 설치 중에 종료되는 경우가 있습니다.**
 >
 >따라서 인스턴스에 액세스하기 전에 오류 로그가 안정화될 때까지 기다리는 것이 좋습니다. 설치 성공 여부를 확인하려면 업데이트 번들 제거와 관련된 특정 로그를 기다려야 합니다. 일반적으로 Safari에서 발생하지만, 브라우저에서는 간헐적으로 발생할 수 있습니다.
 
 ### 자동 설치 {#auto-installation}
 
-실행 중인 인스턴스에 AEM 6.4.8.2을 자동으로 설치하는 두 가지 방법이 있습니다.
+실행 중인 인스턴스에 AEM 6.4.8.3을 자동으로 설치하는 두 가지 방법이 있습니다.
 
 A. 서버가 실행되는 동안 패키지를 ..*/crx-quickstart/install* 폴더에 배치합니다. 패키지가 자동으로 설치됩니다.
 
@@ -320,11 +398,11 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/e
 
 >[!NOTE]
 >
->AEM 6.4.8.2은 부트스트랩 설치를 지원하지 않습니다.
+>AEM 6.4.8.3은 부트스트랩 설치를 지원하지 않습니다.
 
 ### 설치 확인 {#validate-install}
 
-1. 이제 제품 정보 페이지(*/system/console/productinfo*)에 설치된 제품 아래에 업데이트된 버전 문자열 &quot;Adobe Experience Manager, 버전 6.4.8.2&quot;가 표시됩니다.
+1. 이제 제품 정보 페이지(*/system/console/productinfo*)에 설치된 제품 아래에 업데이트된 버전 문자열 &quot;Adobe Experience Manager, 버전 6.4.8.3&quot;이 표시됩니다.
 1. 모든 OSGI 번들은 OSGi 콘솔에서 ACTIVE이거나 FRAGMENT입니다(웹 콘솔 사용: /system/console/bundles).
 1. OSGI 번들 org.apache.jackrabbit.oak-core는 버전 1.8.17 이상에 있습니다(웹 콘솔 사용: /system/console/bundles).
 
@@ -335,13 +413,17 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/e
 
 ### 다이내믹 미디어 뷰어 업데이트(5.10.1) {#update-dynamic-media-viewers}
 
-AEM 6.4.8.2에는 이미지 사전 설정 페이지에서 중복 이름을 확인할 수 있는 새로운 버전의 Dynamic Media 뷰어(5.10.1)가 포함되어 있습니다. Dynamic Media 고객은 박스 뷰어 사전 설정에서 최신 상태로 전환하려면 다음 명령을 실행해야 합니다.
+AEM 6.4.8.3에는 이미지 사전 설정 페이지에서 중복 이름을 확인할 수 있는 새로운 버전의 Dynamic Media 뷰어(5.10.1)가 포함되어 있습니다. Dynamic Media 고객은 박스 뷰어 사전 설정에서 최신 상태로 전환하려면 다음 명령을 실행해야 합니다.
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
 새 뷰어 사전 설정을 /conf 위치에 복사합니다.
 
 ### AEM Forms 추가 기능 패키지 설치 {#install-aem-forms-add-on-package}
+
+>[!NOTE]
+>
+>[!DNL Experience Manager Forms] 는 예약된 누적 수정 팩 릴리스 날짜 이후 1주일 후에 추가 [!DNL Experience Manager] 기능 패키지를 출시합니다.
 
 >[!NOTE]
 >
@@ -357,11 +439,11 @@ AEM 6.4.8.2에는 이미지 사전 설정 페이지에서 중복 이름을 확�
 >
 >JEE에서 AEM Forms를 사용하지 않는 경우 건너뜁니다. 별도의 설치 프로그램을 통해 AEM Forms JEE의 수정 사항이 전달됩니다.
 
-For information about installing the cumulative installer for AEM Forms JEE and post-deployment configuration, see [AEM Forms JEE Patch Installer 0019](jee-patch-installer-64.md).
+For information about installing the cumulative installer for AEM Forms JEE and post-deployment configuration, see [AEM Forms JEE Patch Installer](jee-patch-installer-64.md).
 
 ### Uber Jar {#uber-jar}
 
-The Uber Jar for AEM 6.4.8.2 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.2-1.0/).
+The Uber Jar for AEM 6.4.8.3 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.3/).
 
 To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](../sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
@@ -369,8 +451,7 @@ To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](
 <dependency>
       <groupId>com.adobe.aem</groupId>
       <artifactId>uber-jar</artifactId>
-      <version>6.4.8.2-1.0</version>  
-      <scope>provided</scope>
+      <version>6.4.8.3</version>  
 </dependency>
 ```
 
@@ -389,21 +470,21 @@ To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](
 
 ## 알려진 문제 {#known-issues}
 
-* Experience Manager 6.4.8.2에서 Experience Manager 6.5로 업그레이드하는 경우 일부 번들에 상태가 로 표시되지 않을 수 있습니다 `Active`. 최신 Experience Manager 6.5 서비스 팩 6를 설치하여 문제를 해결하십시오.
+* 6.4에서 [!DNL Experience Manager] 6.5로 [!DNL Experience Manager] 업그레이드하는 경우 일부 번들 상태가 로 표시되지 않을 수 있습니다 `Active`. 최신 [!DNL Experience Manager] 6.5 서비스 팩을 설치하여 문제를 해결하십시오.
 
 AEM 6.4.8.0 서비스 팩 알려진 문제에 대한 자세한 내용은 [AEM 6.4.8.0 서비스 팩 릴리스 정보를 참조하십시오](sp-release-notes.md).
 
 ## OSGi 번들 및 컨텐츠 패키지가 설치됨 {#osgi-bundles-and-content-packages-included}
 
-다음 텍스트 문서에는 AEM 6.4.8.2에 포함된 OSGi 번들 및 컨텐츠 패키지가 나와 있습니다.
+다음 텍스트 문서에는 AEM 6.4.8.3에 포함된 OSGi 번들 및 컨텐츠 패키지가 나와 있습니다.
 
-AEM 6.4.8.2에 포함된 OSGi 번들 목록
+AEM 6.4.8.3에 포함된 OSGi 번들 목록
 
-[파일 가져오기](assets/6.4.8.2_osgi_bundles.txt)
+[파일 가져오기](assets/6.4.8.3_osgi_bundles.txt)
 
-AEM 6.4.8.2에 포함된 콘텐츠 패키지 목록
+AEM 6.4.8.3에 포함된 콘텐츠 패키지 목록
 
-[파일 가져오기](assets/6.4.8.2_content_packages.txt)
+[파일 가져오기](assets/6.4.8.3_content_packages.txt)
 
 ## 유용한 리소스 {#helpful-resources}
 
