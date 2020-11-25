@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 418cc919-0ae3-4c6c-8566-7e9a206f02a8
 translation-type: tm+mt
-source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1407'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,9 @@ ht-degree: 4%
 
 AEM(Adobe Experience Manager) Communities는 성능 및 사이트 관리를 향상시키고 사이트 방문자가 중요한 커뮤니티 구성원으로 전환할 수 있도록 권장하는 On-Premise 커뮤니티 사이트를 빠르게 생성하는 기능을 제공합니다.
 
-AEM Communities 라이선스와 지원 기능 및 Adobe Analytics에 대한 추가 라이선스에 대한 자세한 내용은 계정 담당자에게 문의하십시오.
+<!--
+Contact your account representative for information regarding licensing of AEM Communities as well as additional licensing for enablement features and Adobe Analytics.
+-->
 
 ## 커뮤니티 기능 {#communities-features}
 
@@ -46,16 +48,16 @@ AEM Communities을 사용하면 블로그, Q&amp;A 및 이벤트 달력을 통�
    * 로그인
    * 번역
 * 필수 기능 제공:
-   * 반응형 디자인: Twitter [Bootstrap 테마 사용](https://getbootstrap.com)
-   * 로그인: 자가 등록, [소셜 로그인](social-login.md), 사용자 프로필
-   * 알림: 구성원은 자신에게 연관성 있는 이벤트를 봅니다.
-   * 메시지: 구성원은 커뮤니티 사이트 내에서 메시지를 보내거나 받을 수 있습니다.
-   * 검색: 커뮤니티 사이트 내에서 검색
-   * 언어 전환: 다국어 사이트의 언어 선택 [기능](../../help/sites-administering/translation.md)
-   * 관리: 커뮤니티 사이트 내에서 사용자를 중재 및 관리할 수 있는 권한이 있는 구성원 액세스
+   * 반응형 디자인:Twitter [Bootstrap 테마 사용](https://getbootstrap.com)
+   * 로그인:자가 등록, [소셜 로그인](social-login.md), 사용자 프로필
+   * 알림:구성원은 자신에게 연관성 있는 이벤트를 봅니다.
+   * 메시지:구성원은 커뮤니티 사이트 내에서 메시지를 보내거나 받을 수 있습니다.
+   * 검색:커뮤니티 사이트 내에서 검색
+   * 언어 전환:다국어 사이트의 언어 선택 [기능](../../help/sites-administering/translation.md)
+   * 관리:커뮤니티 사이트 내에서 사용자를 중재 및 관리할 수 있는 권한이 있는 구성원 액세스
 * 페이지 수준의 많은 작성 단계를 제거합니다.
-   * 브랜딩: 커뮤니티 사이트의 모든 페이지에 표시할 배너 이미지의 선택적 업로드
-   * 탐색 메뉴: 커뮤니티 사이트 템플릿에 포함된 기능에 대한 탐색 링크가 제공됩니다.
+   * 브랜딩:커뮤니티 사이트의 모든 페이지에 표시할 배너 이미지의 선택적 업로드
+   * 탐색 메뉴:커뮤니티 사이트 템플릿에 포함된 기능에 대한 탐색 링크가 제공됩니다.
 
 새로운 커뮤니티 사이트를 빠르게 만드는 데 도움이 되는 손쉬운 방법을 경험하려면 AEM Communities [시작하기를 참조하십시오](getting-started.md).
 
@@ -67,9 +69,9 @@ SRP(Storage Resource Provider)를 통해 쉽게 액세스할 수 있습니다. S
 
 커뮤니티 컨텐츠 지속성 및 권장 배포에 대한 자세한 내용은 다음을 참조하십시오.
 
-* [커뮤니티 컨텐츠 스토리지](working-with-srp.md): UGC에 사용할 수 있는 SRP 스토리지 옵션에 대해 설명합니다.
-* [권장 토폴로지](topologies.md): 사용 사례 및 SRP 선택에 따라 토폴로지 논의
-* [AEM 6.3 Communities로 업그레이드](upgrade.md): AEM 6.3으로 이동할 때 UGC에 대한 유용한 정보를 제공합니다.
+* [커뮤니티 컨텐츠 스토리지](working-with-srp.md):UGC에 사용할 수 있는 SRP 스토리지 옵션에 대해 설명합니다.
+* [권장 토폴로지](topologies.md):사용 사례 및 SRP 선택에 따라 토폴로지 논의
+* [AEM 6.3 Communities로 업그레이드](upgrade.md):aem 6.3으로 이동할 때 UGC에 대한 유용한 정보를 제공합니다.
 
 ## 커뮤니티 콘솔 {#communities-consoles}
 
