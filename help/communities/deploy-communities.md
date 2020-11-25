@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
 workflow-type: tm+mt
-source-wordcount: '2139'
+source-wordcount: '2138'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 2%
 
 ## 설치 검사 목록 {#installation-checklist}
 
-**AEM[플랫폼](../../help/sites-deploying/deploy.md#what-is-aem)**
+**AEM [플랫폼](../../help/sites-deploying/deploy.md#what-is-aem)**
 
 * 최신 [AEM 6.4 업데이트 설치](#aem-updates)
 
@@ -44,7 +44,7 @@ ht-degree: 2%
 
    (개발 시 샘플 설정이 제공됨)
 
-**커뮤니티[기능](overview.md)**
+**커뮤니티 [기능](overview.md)**
 
 * 게시 팜을 [배포하는](../../help/sites-deploying/recommended-deploys.md#tarmk-farm)경우 기본 게시자 [식별](#primary-publisher)
 
@@ -91,7 +91,7 @@ ht-degree: 2%
 
 ## Latest Releases {#latest-releases}
 
-AEM 6.4 Communities GA는 Communities 패키지와 함께 제공됩니다. AEM 6.4 [Communities](/help/release-notes/release-notes.md#experience-manager-communities)업데이트에 대한 자세한 내용은 [AEM 6.4 릴리스 노트를 참조하십시오](/help/release-notes/release-notes.md#release-information).
+AEM 6.4 Communities GA에는 커뮤니티 패키지가 포함됩니다. AEM 6.4 [Communities](/help/release-notes/release-notes.md#experience-manager-communities)업데이트에 대한 자세한 내용은 [AEM 6.4 릴리스 노트를 참조하십시오](/help/release-notes/release-notes.md#release-information).
 
 ### AEM 6.4 업데이트 {#aem-updates}
 
@@ -107,8 +107,8 @@ AEM 6.4 이상에서 AEM Communities 기능 및 핫픽스는 AEM Communities 누
 
 두 개의 커뮤니티 기능은 MySQL 데이터베이스를 사용합니다.
 
-* [ [활성화]](enablement.md): SCORM 활동 및 수강생 기록
-* DSRP의 [경우](dsrp.md): 사용자 생성 컨텐츠 저장(UGC)
+* [ [활성화]](enablement.md):SCORM 활동 및 수강생 기록
+* DSRP의 [경우](dsrp.md):사용자 생성 컨텐츠 저장(UGC)
 
 MySQL 커넥터를 별도로 구하고 설치해야 합니다.
 
@@ -125,20 +125,20 @@ MySQL 커넥터를 별도로 구하고 설치해야 합니다.
    * 예: http://localhost:4502/system/console/bundles
    * 선택 **`Install/Update`**
    * 찾아보기...를 클릭하여 다운로드한 ZIP 보관에서 추출한 번들을 선택합니다.
-   * MySQLcom *용 Oracle Corporation의 JDBC 드라이버가 활성 상태인지 확인하고 활성 상태가 아니면 시작(또는 로그 확인)* 하십시오.
+   * MySQLcom.mysql.jdbc용 *Oracle Corporation의 JDBC 드라이버가 활성 상태인지 확인하고 활성 상태가 아니면 시작(또는 로그 검사)* (해당)
 
 1. JDBC가 구성된 후 기존 배포에 설치하는 경우 웹 콘솔에서 JDBC 구성을 다시 저장하여 JDBC를 새 커넥터에 다시 바인딩합니다.
 
    * 예: http://localhost:4502/system/console/configMgr
    * 구성 `Day Commons JDBC Connections Pool` 찾기
-   * 열려면 선택하십시오
+   * 열려면 선택
    * 선택 `Save`
 
 1. 모든 작성자 및 게시 인스턴스에 대해 3단계와 4단계를 반복합니다.
 
 번들 설치에 대한 자세한 내용은 [웹 콘솔](/help/sites-deploying/web-console.md#bundles) 페이지를 참조하십시오.
 
-#### 예: 설치된 MySQL Connector 번들 {#example-installed-mysql-connector-bundle}
+#### 예:설치된 MySQL Connector 번들 {#example-installed-mysql-connector-bundle}
 
 ![chlimage_1-410](assets/chlimage_1-410.png)
 
@@ -150,9 +150,9 @@ AEM Communities SCORM 엔진은 [활성화](overview.md#enablement-community) �
 
 * **[cq -social- scorm -package, 버전 1.2.11](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-pkg)**. 이 SCORM 패키지는 모든 AEM 6.4 Communities 버전에서 지원됩니다.
 
-* **[cq -social- scorm -package, 버전 2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)**.2에는[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)엔진이 포함되어 있습니다. 이 SCORM 패키지는 AEM 6.4.2.x Communities 버전부터 지원됩니다.
+* **[cq -social- scorm -package, 버전 2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)** .2에는 [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) 엔진이 포함되어 있습니다. 이 SCORM 패키지는 AEM 6.4.2.x Communities 버전부터 지원됩니다.
 
-SCORM 엔진을 새로 설치하려면 [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) (cq -social-scorm -package, 버전 2.2.2 [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg))이 포함된 패키지를 사용해야 합니다. SCORM 2017에서 지원하는 학습 리소스를 재생할 수 있습니다.
+SCORM 엔진을 새로 설치하려면 [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) (cq -social-scorm -package, 버전 2.2 [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg).2)이 포함된 패키지를 사용해야 합니다. SCORM 2017에서 지원하는 학습 리소스를 재생할 수 있습니다.
 
 <!--This section used to be an accordion until converted to straight Markdown. When accordions are enabled, revert-->
 
@@ -162,7 +162,7 @@ SCORM 엔진을 새로 설치하려면 [SCORM 2017.1](https://rusticisoftware.co
 1. cq 인스턴스 **`/libs/social/config/scorm/database_scormengine_data.sql`** 에서 다운로드하고 mysql 서버에서 실행하여 업그레이드된 scormEngineDB 스키마를 만듭니다.
 1. 게시자 `/content/communities/scorm/RecordResults` 의 CSRF 필터에 있는 제외된 경로 속성에 `https://<hostname>;:<port>/system/console/configMgr` 추가를 참조하십시오.
 
-제작된 강좌 콘텐트에 SCORM 2017.1이 필요한 경우 기존 SCORM을 [**cq-social-scorm-package, 버전 2.2 **](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg).2[(](https://rusticisoftware.com/blog/scorm-engine-2017-released/)SCORM 2017.1을사용)로 업그레이드할 수 있습니다.
+제작된 강좌 콘텐트에 SCORM 2017.1이 필요한 경우 기존 SCORM을 [**cq-social-scorm-package, 버전 2.2**](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg) .2 [(](https://rusticisoftware.com/blog/scorm-engine-2017-released/)SCORM 2017.1을사용)로 업그레이드할 수 있습니다.
 
 >[!NOTE]
 >
@@ -231,9 +231,9 @@ AEM Communities에서는 UGC(User Generated Content)를 저장하는 데 공용 
 
 공용 스토어는 게시 환경에서 UGC를 조정 및 분석하면서 UGC를 [복제할](sync.md) 필요가 없습니다.
 
-* [커뮤니티 콘텐츠 스토어](working-with-srp.md): AEM 커뮤니티를 위한 SRP 스토리지 옵션에 대해 설명합니다.
+* [커뮤니티 콘텐츠 스토어](working-with-srp.md):aem 커뮤니티를 위한 SRP 스토리지 옵션에 대해 설명합니다.
 
-* [권장 토폴로지](topologies.md): 사용 사례 및 SRP 선택에 따라 사용할 토폴로지에 대해 설명합니다.
+* [권장 토폴로지](topologies.md):사용 사례 및 SRP 선택에 따라 사용할 토폴로지에 대해 설명합니다.
 
 ## 업그레이드 {#upgrading}
 
@@ -271,7 +271,7 @@ AEM Communities에서는 UGC(User Generated Content)를 저장하는 데 공용 
 
 주 게시자의 경우 [복제 에이전트 구성이](../../help/sites-deploying/replication.md) 게시 서버와 인증된 사용자를 올바르게 식별하는지 확인합니다. 기본 권한이 있는 사용자는 `admin,` 이미 적절한 권한(구성원)을 `Communities Administrators`갖습니다.
 
-다른 사용자가 적절한 권한을 가지려면 해당 권한을 사용자 그룹( `administrators` 사용자 그룹에도 `Communities Administrators`멤버)에 구성원으로 추가해야 합니다.
+일부 다른 사용자가 적절한 권한을 가지려면 해당 권한을 사용자 그룹( `administrators` 사용자 그룹에도 구성원)에 `Communities Administrators`추가해야 합니다.
 
 작성 환경에 전송 구성을 올바르게 구성해야 하는 복제 에이전트가 두 개 있습니다.
 
@@ -329,7 +329,7 @@ AEM Communities에서는 UGC(User Generated Content)를 저장하는 데 공용 
 
 모든 AEM 서버 인스턴스가 동일한 암호화 키를 사용해야 하는 두 가지 AEM Communities 기능이 있습니다. Analytics [및](analytics.md) ASRP입니다 [](asrp.md).
 
-AEM 6.3에서는 주요 자료가 파일 시스템에 저장되고 더 이상 저장소에 저장되지 않습니다.
+AEM 6.3의 경우 주요 자료가 파일 시스템에 저장되고 보관소에 더 이상 저장되지 않습니다.
 
 작성자에서 다른 모든 인스턴스로 주요 자료를 복사하려면 다음을 수행해야 합니다.
 
