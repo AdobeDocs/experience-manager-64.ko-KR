@@ -4,10 +4,10 @@ description: Adobe Experience Manager 6.4 누적 수정 팩 관련 릴리스 노
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f74e20c5264dc38dcbe20c8fc6b9beaaee7cc6da
+source-git-commit: e10d53a3912fb21962f1015550bd3a4a118d8834
 workflow-type: tm+mt
-source-wordcount: '4112'
-ht-degree: 21%
+source-wordcount: '4156'
+ht-degree: 22%
 
 ---
 
@@ -99,6 +99,10 @@ Adobe Experience Manager 6.4.8.3에서는 다음 문제에 대한 수정 사항�
 >[!NOTE]
 >
 >[!DNL Experience Manager Forms] 는 예약된  [!DNL Experience Manager] 누적 수정 팩 릴리스 날짜 이후 1주일 후에 추가 기능 패키지를 출시합니다.
+
+>[!NOTE]
+>
+>[!DNL Experience Manager] 누적 수정 팩에는 수정 사항이 포함되어 있지 않습니다 [!DNL Experience Manager Forms]. 이러한 수정 사항은 별도의 [!DNL Forms] 추가 기능 패키지를 사용하여 전달됩니다. 또한, JEE의 [!DNL Experience Manager Forms]에 대한 수정 사항이 포함된 누적 설치 프로그램이 릴리스됩니다. 자세한 내용은 [AEM Forms 추가 기능 패키지](#install-aem-forms-add-on-package) 및 [AEM Forms JEE 설치 프로그램](#install-aem-forms-jee-installer) 설치를 참조하십시오.
 
 **적응형 양식**
 
