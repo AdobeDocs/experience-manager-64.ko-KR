@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 workflow-type: tm+mt
 source-wordcount: '1507'
-ht-degree: 77%
+ht-degree: 79%
 
 ---
 
@@ -37,9 +37,9 @@ ht-degree: 77%
 * 아래에서 **geometrixx**&#x200B;를 클릭합니다.
 * **geometrixx** 아래에 **뉴스**&#x200B;라는 *스캐폴드 페이지*&#x200B;가 있습니다. 이 페이지를 두 번 클릭하여 엽니다.
 
-![scaffold_work](assets/howscaffolds_work.png)
+![howscaffold_work](assets/howscaffolds_work.png)
 
-The scaffold consists of a form with a field for each piece of content that will make up the page to be created and four important parameters which are accessed through the **Page Properties** of the scaffold page.
+Scaffold는 만들 페이지를 구성하는 각 콘텐츠 부분에 대한 필드가 포함된 양식과 Scaffold 페이지의 **페이지 속성**&#x200B;을 통해 액세스하는 중요한 4개의 매개 변수로 구성됩니다.
 
 ![pagprops](assets/pageprops.png)
 
@@ -49,18 +49,18 @@ The scaffold consists of a form with a field for each piece of content that will
 * **설명**: 스캐폴딩 페이지 제목 아래에 표시됩니다.
 * **타겟 템플릿**: 새 페이지를 만들 때 스캐폴드에서 사용할 템플릿입니다. 이 예제에서는 *Geometrrixx 컨텐츠 페이지* 템플릿입니다.
 
-* **타겟 경로**: 바로 아래에 새 페이지를 만들 상위 페이지의 경로입니다. In this example the path is */content/geometrixx/en/news*.
+* **타겟 경로**: 바로 아래에 새 페이지를 만들 상위 페이지의 경로입니다. 이 예에서 경로는 */content/geometrixx/en/news*&#x200B;입니다.
 
-스캐폴드의 본문은 양식입니다. 스캐폴드를 사용하여 페이지를 만들려면 양식을 입력한 후 아래쪽에 있는 *만들기*&#x200B;를 클릭합니다. In the **News** example above the form has the following fields:
+스캐폴드의 본문은 양식입니다. 스캐폴드를 사용하여 페이지를 만들려면 양식을 입력한 후 아래쪽에 있는 *만들기*&#x200B;를 클릭합니다. 양식 위의 **뉴스** 예제에는 다음과 같은 필드가 있습니다.
 
 * **제목**: 만들 페이지의 이름입니다. 이 필드는 모든 스캐폴드에 항상 있습니다.
 * **텍스트**: 이 필드는 결과 페이지의 텍스트 구성 요소에 해당합니다.
-* **이미지**: 이 필드는 결과 페이지의 이미지 구성 요소에 해당합니다.
+* **이미지**:이 필드는 결과 페이지의 이미지 구성 요소에 해당합니다.
 * **이미지/고급**: **제목**: 이미지의 제목입니다.
 
 * **이미지/고급**: **대체 텍스트**: 이미지의 대체 텍스트입니다.
 
-* **이미지/고급**: **설명**: 이미지의 설명입니다.
+* **이미지/고급**: **설명**:이미지의 설명입니다.
 
 * **이미지/고급**: **크기**: 이미지의 크기입니다.
 
@@ -68,11 +68,11 @@ The scaffold consists of a form with a field for each piece of content that will
 
 ## 스캐폴드 만들기 {#creating-a-scaffold}
 
-To create a new scaffold go to the **Tools** console, then **Default Page Scaffolding** and create a new page. A single page template type will be available, the *Scaffolding Template.*
+새 스캐폴드를 만들려면 **도구** 콘솔로 이동한 다음 **기본 페이지 스캐폴딩**&#x200B;을(를) 클릭하고 새 페이지를 만듭니다. 단일 페이지 템플릿 유형을 사용할 수 있습니다. *Scaffolding 템플릿.*
 
-*새 페이지의&#x200B;**페이지 속성**으로 이동하여 위에 설명된 대로 텍스트*,*설명*,*제목 설명*, Target *및**Target Pathnective를 설정합니다.*
+*새 페이지의&#x200B;**페이지**속성으로 이동하고 위에 설명된 대로*&#x200B;제목 텍스트&#x200B;*,*&#x200B;설명&#x200B;*,* ** *TargetTemplateTemplate및 Target 경로를 설정합니다.*
 
-*다음으로는 이 Scaffold가 만드는 페이지의 구조를 정의해야 합니다. 이렇게 하려면 Scaffold 페이지의 디자인 모드로 이동합니다. **대화 상자 편집기**&#x200B;에서 Scaffold를 편집할 수 있는 링크가 나타납니다.
+*다음으로는 이 Scaffold가 만드는 페이지의 구조를 정의해야 합니다. 이렇게 하려면 Scaffold 페이지에서 디자인 모드로 이동합니다. **대화 상자 편집기**&#x200B;에서 Scaffold를 편집할 수 있는 링크가 나타납니다.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 
@@ -86,11 +86,11 @@ To create a new scaffold go to the **Tools** console, then **Default Page Scaffo
 
 대화 상자 편집기에서 **뉴스** 스캐폴드 대화 상자 예제를 살펴보면 이러한 원리를 이해하는 데 도움이 됩니다. 스캐폴드 페이지에서 디자인 모드로 전환하고 대화 상자 편집기 링크를 클릭합니다.
 
-Now, click on the dialog field **Dialog > Tab Panel > Text > Text**, like this:
+이제 다음과 같이 대화 상자 필드 **대화 상자 > 탭 패널 > 텍스트 > 텍스트**&#x200B;를 클릭합니다.
 
 ![textedit](assets/textedit.png)
 
-이 필드의 속성 목록이 다음과 같이 대화 상자 편집기 오른쪽에 나타납니다.
+다음과 같이 대화 상자 편집기 오른쪽에 이 필드의 속성 목록이 나타납니다.
 
 ![list_of_properties](assets/list_of_properties.png)
 
@@ -107,7 +107,7 @@ Now, click on the dialog field **Dialog > Tab Panel > Text > Text**, like this:
 
 일반적인 구성 요소 대화 상자에서는 대화 상자가 이미 특정 구성 요소에 바인딩되어 있으므로 이러한 정보를 지정할 필요가 없습니다.
 
-이러한 두 가지 정보를 지정하려면 숨김 필드를 사용합니다. Click on the first hidden field **Dialog > Tab Panel > Text > Hidden**, like this:
+이러한 두 가지 정보를 지정하려면 숨김 필드를 사용합니다. 다음과 같이 첫 번째 숨김 필드 **대화 상자 > 탭 패널 > 텍스트 > 숨김**&#x200B;을 클릭합니다.
 
 ![숨김](assets/hidden.png)
 
@@ -119,17 +119,17 @@ Now, click on the dialog field **Dialog > Tab Panel > Text > Text**, like this:
 
 `./jcr:content/par/text/textIsRich`
 
-This is a boolean property used to interpret the text string stored at `./jcr:content/par/text/text.`
+이 속성은 `./jcr:content/par/text/text.`에 저장된 텍스트 문자열을 해석하는 데 사용되는 부울 속성입니다.
 
-Because we know that the text should be interpreted as a rich text we specify the `value` property of this field as `true`.
+텍스트를 리치 텍스트로 해석해야 하므로 이 필드의 `value` 속성을 `true`로 지정합니다.
 
 >[!CAUTION]
 >
->The dialog editor allows the user to change the values of *existing* properties in the dialog definition. 새 속성을 추가하려면 [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)를 사용해야 합니다. 예를 들어 대화 상자 편집기로 대화 상자 정의에 새 숨김 필드를 추가하면 필드에 *값* 속성(이름이 &quot;값&quot;인 속성)이 없습니다. 해당 숨김 필드에 기본 *값* 속성을 설정해야 하는 경우에는 CRX 도구 중 하나를 사용하여 이 속성을 직접 추가해야 합니다. 대화 상자 편집기에서는 값을 추가할 수 없습니다. 그러나 속성이 추가된 후에는 대화 상자 편집기로 값을 편집할 수 있습니다.
+>대화 상자 편집기에서 대화 상자 정의에 있는 *기존* 속성의 값을 변경할 수 있습니다. 새 속성을 추가하려면 [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)를 사용해야 합니다. 예를 들어 대화 상자 편집기로 대화 상자 정의에 새 숨김 필드를 추가하면 필드에 *값* 속성(이름이 &quot;값&quot;인 속성)이 없습니다. 해당 숨김 필드에 기본 *값* 속성을 설정해야 하는 경우에는 CRX 도구 중 하나를 사용하여 이 속성을 직접 추가해야 합니다. 대화 상자 편집기에서는 값을 추가할 수 없습니다. 그러나 속성이 추가된 후에는 대화 상자 편집기로 값을 편집할 수 있습니다.
 
 두 번째 숨김 필드를 보려면 다음과 같이 클릭합니다.
 
-![hidden2](assets/hidden2.png)
+![숨겨진2](assets/hidden2.png)
 
 이 숨김 필드의 속성은 다음과 같습니다.
 
@@ -143,7 +143,7 @@ Because we know that the text should be interpreted as a rich text we specify th
 
 `foundation/components/textimage`
 
-``이 값은 이 단락의 텍스트 내용을 렌더링하는 데 사용할 구성 요소가 *텍스트 이미지* 구성 요소임을 나타냅니다. Using with the `isRichText` boolean specified in the other hidden field, the component can render the actual text string stored at `./jcr:content/par/text/text` in the desired way.
+``이 값은 이 단락의 텍스트 내용을 렌더링하는 데 사용할 구성 요소가 *텍스트 이미지* 구성 요소임을 나타냅니다. 다른 숨김 필드에 지정된 `isRichText` 부울 값과 함께 구성 요소를 사용하면 `./jcr:content/par/text/text`에 저장된 실제 텍스트 문자열을 원하는 방식으로 렌더링할 수 있습니다.
 
 ## MSM 상속이 있는 스캐폴딩 {#scaffolding-with-msm-inheritance}
 
@@ -154,7 +154,7 @@ Because we know that the text should be interpreted as a rich text we specify th
 * 잠금 기호(텍스트 및 제목과 같은 대부분의 구성 요소)
 * **상속을 취소하려면 클릭하십시오.** 텍스트가 표시되는 마스크(이미지 구성 요소)
 
-상속이 취소될 때까지 구성 요소를 편집할 수 없음을 보여 줍니다.
+상속이 취소되기 전에는 구성 요소를 편집할 수 없음을 나타냅니다.
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
@@ -173,5 +173,5 @@ Because we know that the text should be interpreted as a rich text we specify th
 
 >[!NOTE]
 >
->If the inheritance is canceled at the page level (from the Livecopy tab of Page Properties) then all components will be editable in **Scaffolding** mode (they will be shown in unlocked state).
+>페이지 수준(페이지 속성의 Livecopy 탭)에서 상속이 취소되면 모든 구성 요소는 **Scaffolding** 모드에서 편집할 수 있습니다(잠금 해제 상태로 표시됨).
 
