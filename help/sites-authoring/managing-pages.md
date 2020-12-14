@@ -111,7 +111,7 @@ ht-degree: 98%
 >
 >일부 브라우저(예: 이전 버전의 IE)는 특정 길이까지만 URL을 허용하므로 기술적인 이유로 페이지 이름을 짧게 유지하는 경우도 있습니다.
 
-When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.
+새 페이지를 만들 때 AEM은 AEM 및 JCR에서 지정한 규칙](/help/sites-developing/naming-conventions.md)에 따라 페이지 이름을 확인합니다.[
 
 허용되는 최소 문자는 다음과 같습니다.
 
@@ -134,7 +134,7 @@ When creating a new page, AEM will [validate the page name according to the conv
 | 제목 | 파생되는 이름 |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&amp;ast;jcs+ | sc---c-.html |
+| SC%&amp;&amp;ast;jc+ | sc---c-.html |
 
 #### 이름 {#name}
 
