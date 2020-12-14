@@ -22,7 +22,7 @@ ht-degree: 95%
 
 AEM에서는 **레이아웃 컨테이너** 구성 요소를 사용하여 사용자 페이지에 대한 응답형 레이아웃을 보유할 수 있습니다.
 
-이 레이아웃은 응답형 격자 내에 구성 요소를 배치할 수 있도록 해주는 단락 시스템을 제공합니다. 이 격자를 사용하면 장치/창 크기 및 형식에 따라 레이아웃을 다시 정렬할 수 있습니다. 구성 요소는 [**레이아웃&#x200B;**모드](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)와 함께 사용됩니다. 이 모드에서는 장치에 종속적인 응답형 레이아웃을 만들고 편집할 수 있습니다.
+이 레이아웃은 응답형 격자 내에 구성 요소를 배치할 수 있도록 해주는 단락 시스템을 제공합니다. 이 격자를 사용하면 장치/창 크기 및 형식에 따라 레이아웃을 다시 정렬할 수 있습니다. 구성 요소는 [**레이아웃** 모드](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)와 함께 사용됩니다. 이 모드에서는 장치에 종속적인 응답형 레이아웃을 만들고 편집할 수 있습니다.
 
 레이아웃 컨테이너:
 
@@ -41,15 +41,16 @@ AEM에서는 **레이아웃 컨테이너** 구성 요소를 사용하여 사용�
 
 AEM에서는 메커니즘을 조합하여 페이지에 대한 응답형 레이아웃을 실현합니다.
 
-* [**레이아웃 컨테이너&#x200B;**](#adding-a-layout-container-and-its-content-edit-mode)구성 요소
+* [**레이아웃 컨테이너**](#adding-a-layout-container-and-its-content-edit-mode) 구성 요소
 
    이 구성 요소는 [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser)에서 사용할 수 있으며, 응답형 그리드 내에 구성 요소를 추가 및 배치할 수 있도록 해주는 그리드 단락 시스템을 제공합니다. 또한 페이지에서 기본 단락 시스템으로 설정할 수도 있습니다.
 
-* [**레이아웃 모드&#x200B;**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
+* [**레이아웃 모드**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
    레이아웃 컨테이너를 페이지에 배치하면 **레이아웃** 모드를 사용하여 컨텐츠를 응답형 그리드 내에 배치할 수 있습니다.
 
-* [**에뮬레이터&#x200B;**](#selecting-a-device-to-emulate)에뮬레이터를 사용하면 구성 요소의 크기를 대화 방식으로 변경하여 장치/창 크기에 따라 레이아웃을 다시 정렬하는 응답형 웹 사이트를 만들고 편집할 수 있습니다. 사용자는 컨텐츠가 에뮬레이터를 사용하여 어떻게 렌더링될지 알 수 있습니다.
+* [**에뮬레이터**](#selecting-a-device-to-emulate) 
+에뮬레이터를 사용하면 구성 요소의 크기를 대화 방식으로 변경하여 장치/창 크기에 따라 레이아웃을 다시 정렬하는 응답형 웹 사이트를 만들고 편집할 수 있습니다. 사용자는 컨텐츠가 에뮬레이터를 사용하여 어떻게 렌더링될지 알 수 있습니다.
 
 이러한 응답형 격자 메커니즘을 사용하여 다음을 수행할 수 있습니다.
 
@@ -67,7 +68,7 @@ AEM에서는 메커니즘을 조합하여 페이지에 대한 응답형 레이�
 
 >[!NOTE]
 >
->위의 메커니즘은 템플릿에 대한 구성으로 사용할 수 있게 됩니다. See [Configuring Responsive Layout](/help/sites-administering/configuring-responsive-layout.md) for further information.
+>위의 메커니즘은 템플릿에 대한 구성으로 사용할 수 있게 됩니다. 자세한 내용은 [응답형 레이아웃 구성](/help/sites-administering/configuring-responsive-layout.md)을 참조하십시오.
 
 ## 레이아웃 정의, 장치 애뮬레이션 및 중단점 {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -153,7 +154,7 @@ AEM을 사용하면 장치의 너비에 따라 레이아웃을 정의할 수 있
 
 >[!NOTE]
 >
->아직 사용할 수 없는 경우 **레이아웃 컨테이너**&#x200B;를 명시적으로 [단락 시스템/페이지에 대해 활성화](/help/sites-administering/configuring-responsive-layout.md)해야 합니다(예: [**디자인&#x200B;**모드 사용](/help/sites-authoring/default-components-designmode.md)).
+>아직 사용할 수 없는 경우 **레이아웃 컨테이너**&#x200B;를 명시적으로 [단락 시스템/페이지에 대해 활성화](/help/sites-administering/configuring-responsive-layout.md)해야 합니다(예: [**디자인** 모드 사용](/help/sites-authoring/default-components-designmode.md)).
 
 1. **레이아웃 컨테이너**&#x200B;를 [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser)에서 표준 구성 요소로 사용할 수 있습니다. 여기서 레이아웃 컨테이너를 페이지 상의 필요한 위치로 끌어오면 **구성 요소를 여기로 드래그하십시오.** 자리 표시자가 표시됩니다.
 1. 그런 다음 구성 요소를 레이아웃 컨테이너에 추가할 수 있습니다. 이러한 구성 요소는 실제 컨텐츠를 담게 됩니다.
@@ -228,11 +229,11 @@ AEM을 사용하면 장치의 너비에 따라 레이아웃을 정의할 수 있
 
    * **새 라인으로 이동**
 
-      격자 내에서 사용 가능한 공간에 따라 구성 요소가 새 라인으로 이동됩니다.
+      구성 요소는 격자 내에서 사용할 수 있는 공간에 따라 새 라인으로 이동됩니다.
 
    * **구성 요소 숨기기**
 
-      구성 요소는 보이지 않게 됩니다(레이아웃 컨테이너의 도구 모음에서 복원 가능).
+      구성 요소는 표시되지 않게 됩니다(레이아웃 컨테이너의 도구 모음에서 복원 가능).
    ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
 * **레이아웃** 모드에서 **구성 요소를 여기로 드래그하십시오.**&#x200B;를 탭/클릭하여 전체 구성 요소를 선택할 수 있습니다. 그러면 이 모드에 대한 도구 모음이 표시됩니다.
@@ -263,8 +264,9 @@ AEM을 사용하면 장치의 너비에 따라 레이아웃을 정의할 수 있
    >
    >위의 예에서 이동 및 숨기기 동작은 레이아웃 컨테이너가 상위 레이아웃 컨테이너 내에서 중첩되기 때문에 가능한 것입니다.
 
-   * **구성 요소**&#x200B;의 숨김 취소상위 구성 요소를 선택하여 
-**숨겨진 구성 요소** 표시 옵션 이 예시에는 두 개의 구성 요소가 숨겨져 있습니다.
+   * **구성**
+요소 숨김 취소상위 구성 요소를 선택하여 
+**숨겨진 구성 요소** 표시 옵션을 표시합니다. 이 예시에는 두 개의 구성 요소가 숨겨져 있습니다.
    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
    **숨겨진 구성 요소 표시** 옵션을 선택하면 원래 위치에서 현재 숨겨진 구성 요소가 파란색으로 표시됩니다.
