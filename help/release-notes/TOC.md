@@ -14,7 +14,7 @@ ht-degree: 45%
 ---
 
 
-# Adobe Experience Manager 6.4 Release Notes {#release-notes}
+# Adobe Experience Manager 6.4 릴리스 노트 {#release-notes}
 
 + [AEM 6.4 개요](home.md)
 + [일반 릴리스 노트](release-notes.md)
@@ -32,4 +32,4 @@ ht-degree: 45%
 + [Touch UI 기능 상태](touch-ui-features-status.md)
 + [CRX2OAK 마이그레이션 도구](crx2oak.md)
 + [스마트 콘텐츠 서비스 릴리스 노트](smart-content-service-release-notes.md)
-+ [Livefyre 기능 팩 2.0.6 릴리스 노트](livefyre-feature-pack-206.md)
++ [Livefyre 기능 팩 2.0.6 릴리스 정보](livefyre-feature-pack-206.md)
