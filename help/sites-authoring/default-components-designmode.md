@@ -34,9 +34,9 @@ AEM 인스턴스가 바로 설치되면 구성 요소 브라우저에서 즉시 
 
 >[!NOTE]
 >
->Design mode is only available for design configurations stored as content under ( `/etc`).
+>디자인 모드는 ( `/etc`) 아래의 컨텐츠로 저장된 디자인 구성에만 사용할 수 있습니다.
 >
->Starting in AEM 6.4, it is recommended to store designs as configuration data under `/apps` to support continuous deployment scenarios. Designs stored under `/apps` are not editable at runtime and the Design mode will not be available to non-admin users for such templates.
+>AEM 6.4부터 지속적인 배포 시나리오를 지원하기 위해 디자인을 `/apps` 아래에 구성 데이터로 저장하는 것이 좋습니다. `/apps`에 저장된 디자인은 런타임 시 편집할 수 없으며 이러한 템플릿에 대해 관리자가 아닌 사용자는 디자인 모드를 사용할 수 없습니다.
 
 이 과정에서는 페이지의 단락 시스템에서 허용되는 구성 요소를 추가 또는 제거하게 됩니다. 단락 시스템(`parsys`)은 다른 모든 단락 구성 요소를 포함하는 복합 구성 요소입니다. 단락 시스템에는 다른 단락 구성 요소도 모두 포함되어 있으므로 작성자가 여러 유형의 구성 요소를 페이지에 추가할 수 있습니다. 각 단락 유형은 구성 요소로 표현됩니다. 
 
@@ -69,7 +69,7 @@ AEM 인스턴스가 바로 설치되면 구성 요소 브라우저에서 즉시 
 
    ![screen_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
 
-1. Click or tap the **Parent** icon.
+1. **상위** 아이콘을 클릭하거나 탭합니다.
 
    ![](do-not-localize/screen_shot_2018-03-22at103204.png)
 
@@ -92,7 +92,7 @@ AEM 인스턴스가 바로 설치되면 구성 요소 브라우저에서 즉시 
 
    **허용된 구성 요소**
 
-   On the **Allowed Components** tab, you define which components are available for the parsys.
+   **허용된 구성 요소** 탭에서 parsys에 사용할 수 있는 구성 요소를 정의합니다.
 
    * 구성 요소는 확장 및 축소할 수 있는 구성 요소 그룹별로 그룹화됩니다.
    * 그룹 이름을 체크 표시하여 전체 그룹을 선택할 수 있으며, 체크 표시를 해제하여 전체 그룹을 선택 취소할 수 있습니다.
@@ -110,7 +110,7 @@ AEM 인스턴스가 바로 설치되면 구성 요소 브라우저에서 즉시 
 
    **설정** 탭에서 각 구성 요소의 앵커 그리기, 각 컨테이너의 셀 채우기 정의 등과 같은 추가 옵션을 정의할 수 있습니다.
 
-1. Select **Done** to save your configuration.
+1. **완료**&#x200B;를 선택하여 구성을 저장합니다.
 
 ## 구성 요소 디자인 구성 {#configuring-the-design-of-a-component}
 
@@ -154,7 +154,7 @@ AEM 인스턴스가 바로 설치되면 구성 요소 브라우저에서 즉시 
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-   다중 항목 대화 상자 목록에서 항목을 제거하려면** 삭제 **아이콘을 사용합니다.
+   다중 항목 대화 상자 목록에서 항목을 제거하려면 ** 삭제 ** 아이콘을 사용합니다.
 
    ![](do-not-localize/screen_shot_2018-03-22at103809.png)
 
