@@ -28,7 +28,7 @@ ht-degree: 71%
    ![](do-not-localize/chlimage_1-11.png)
 
 1. **새로 만들기...**&#x200B;를 클릭합니다.
-1. You can specify the **Title**, **Name** and type of experience to be created; in this case, Test&amp;Target Offer.
+1. **제목**, **이름** 및 만들 경험 유형을 지정할 수 있습니다.이 경우 Test&amp;Target 오퍼을 참조하십시오.
 
    ![chlimage_1-139](assets/chlimage_1-139.png)
 
@@ -40,4 +40,4 @@ ht-degree: 71%
 
 ## Adobe Target과 통합 {#integrating-with-adobe-target}
 
-See [Integrate with Adobe](/help/sites-administering/target.md) [Target](/help/sites-administering/target.md) for full details.
+자세한 내용은 [Adobe](/help/sites-administering/target.md) [Target](/help/sites-administering/target.md)과 통합을 참조하십시오.
