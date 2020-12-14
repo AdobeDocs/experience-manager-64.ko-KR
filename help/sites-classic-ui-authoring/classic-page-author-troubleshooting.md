@@ -71,7 +71,7 @@ ht-degree: 95%
 
 * **문제:**
 
-   * When using the **Find &amp; Replace** option it can happen that not all instances of the `find` term are replaced on a page.
+   * **찾기 및 바꾸기** 옵션을 사용할 때 페이지에서 `find` 용어의 일부 인스턴스가 바뀌지 않을 수 있습니다.
 
 * **이유**:
 
