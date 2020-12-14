@@ -22,7 +22,7 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md)버전이 필요합니다.
+>일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md)의 응용 프로그램이 필요합니다.
 
 [작성](content-fragments-variations.md#authoring-your-content) 시 컨텐츠 조각 편집기에서는 *Markdown* 구문을 사용하므로 컨텐츠를 쉽게 작성할 수 있습니다.
 
