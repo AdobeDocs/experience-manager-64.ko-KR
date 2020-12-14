@@ -1,8 +1,8 @@
 ---
 title: SEO 및 URL 관리 우수 사례
 seo-title: SEO 및 URL 관리 우수 사례
-description: AEM 구현에서 SEO 모범 사례 및 권장 사항에 대해 알아봅니다.
-seo-description: AEM 구현에서 SEO 모범 사례 및 권장 사항에 대해 알아봅니다.
+description: AEM 구현에서 이러한 사항을 구현하기 위한 SEO 모범 사례 및 권장 사항에 대해 알아봅니다.
+seo-description: AEM 구현에서 이러한 사항을 구현하기 위한 SEO 모범 사례 및 권장 사항에 대해 알아봅니다.
 uuid: 7fffbe30-7cf8-44ce-b275-e128732577dd
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
@@ -20,9 +20,9 @@ ht-degree: 97%
 
 # SEO 및 URL 관리 우수 사례{#seo-and-url-management-best-practices}
 
-SEO(검색 엔진 최적화)는 많은 마케터의 주요 관심사가 되었습니다. 그 결과 SEO의 우려는 많은 AEM 프로젝트에서 다뤄져야 한다.
+SEO(검색 엔진 최적화)는 많은 마케터의 주요 관심사가 되었습니다. 따라서 SEO 문제는 많은 AEM 프로젝트에서 해결해야 합니다.
 
-This document first describes some [SEO best practices](#seo-best-practices) and recommendations for achieving these on an AEM implementation. 그런 다음 첫 번째 섹션에서 제기한 보다 [복잡한 구현 절차](#aem-configurations) 중 일부를 자세히 살펴봅니다.
+이 문서에서는 먼저 AEM 구현에서 이를 잘 수행하기 위한 [SEO 우수 사례](#seo-best-practices) 및 권장 사항에 대해 설명합니다. 그런 다음 첫 번째 섹션에서 제기한 보다 [복잡한 구현 절차](#aem-configurations) 중 일부를 자세히 살펴봅니다.
 
 ## SEO 우수 사례 {#seo-best-practices}
 
@@ -218,7 +218,7 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
 
 >[!NOTE]
 >
-> The `sling:alias` property can be set using the [Alias property when editing Page Properties](/help/sites-authoring/editing-page-properties.md#advanced)
+> 페이지 속성](/help/sites-authoring/editing-page-properties.md#advanced)을 편집할 때 [Alias 속성을 사용하여 `sling:alias` 속성을 설정할 수 있습니다.
 
 #### /etc/map {#etc-map}
 
@@ -264,7 +264,7 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
 
    웹 콘솔(예: localhost:4502/system/console/configMgr)을 사용하여 Sling Resource Resolver를 구성할 수 있습니다.
 
-   * **Apache Sling Resource Resolver Factory**
+   * **Apache Sling 리소스 확인자 팩토리**
 
       `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
    URL을 정규식으로 단축하는 데 필요한 매핑을 빌드한 후 빌드에 포함된 OsgiConfignode인 `config.publish`에서 이러한 구성을 정의하는 것이 좋습니다.
