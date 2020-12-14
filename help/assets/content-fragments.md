@@ -22,7 +22,7 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md)버전이 필요합니다.
+>일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md)의 응용 프로그램이 필요합니다.
 
 AEM(Adobe Experience Manager) 컨텐츠 조각을 사용하면 [페이지에 영향을 받지 않는 컨텐츠를 게시](/help/sites-authoring/content-fragments.md), 디자인, 제작 및 조정할 수 있습니다. 이를 통해 여러 위치/여러 채널에서 사용할 수 있는 컨텐츠를 준비할 수 있습니다.
 
@@ -84,7 +84,7 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 
 >[!NOTE]
 >
->**컨텐츠 조각** 및 **[경험 조각](/help/sites-authoring/experience-fragments.md)**은 AEM 내의 다양한 기능입니다.
+>**컨텐츠 조각** 및 **[경험 조각](/help/sites-authoring/experience-fragments.md)**&#x200B;은 AEM 내의 다양한 기능입니다.
 >
 >* **컨텐츠 조각**&#x200B;은 편집 가능한 컨텐츠이며, 주로 텍스트나 관련 이미지입니다. 또한 디자인과 레이아웃이 없는 순수 컨텐츠입니다.
 >* **경험 조각**&#x200B;은 전체적으로 배치된 컨텐츠, 즉 웹 페이지 조각입니다.
@@ -109,14 +109,14 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 
 컨텐츠 조각은 다음 중 하나일 수 있습니다.
 
-* 간단한 조각
+* 단순 조각
 
    * 미리 정의된 구조가 없습니다. 이 조각은 텍스트 및 이미지만 포함합니다. 
    * 단순 조각 템플릿을 기반으로 합니다.
 
 * 구조화된 컨텐츠가 포함된 조각
 
-   * These are based on a [Content Fragment Model](content-fragments-models.md), which predefines a structure for the resulting fragment.
+   * 이러한 모델은 결과 조각의 구조를 미리 정의하는 [컨텐츠 조각 모델](content-fragments-models.md)을 기반으로 합니다.
    * JSON 익스포터를 사용하여 Content Services를 구현하는 데에도 사용할 수 있습니다.
 
 ## 컨텐츠 유형 {#content-type}
@@ -244,7 +244,7 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 
       * 모든 컨텐츠 조각에는 하나의 마스터 인스턴스가 있습니다.
       * 마스터는 삭제할 수 없습니다.
-   * 마스터는 **[변형](content-fragments-variations.md)**아래의 조각 편집기에서 액세스할 수 있습니다.
+   * 마스터는 **[변형](content-fragments-variations.md)** 아래의 조각 편집기에서 액세스할 수 있습니다.
    * 마스터는 그러한 변형이 아니라 모든 변형의 기초입니다.
 
 
