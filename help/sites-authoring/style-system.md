@@ -74,7 +74,7 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 1. [템플릿 작성자](#as-a-template-author) 섹션에 설명된 대로 컨텐츠 작성자가 사용할 수 있도록 하려는 CSS 클래스를 구성합니다.
 1. 그러면 컨텐츠 작성자는 [컨텐츠 작성자](#as-a-content-author) 섹션에 설명된 대로 스타일을 사용할 수 있습니다.
 
-### 컨텐츠 작성자 {#as-a-content-author}
+### 컨텐츠 작성자  {#as-a-content-author}
 
 1. WKND 프로젝트를 설치한 후 `http://<host>:<port>/sites.html/content/wknd/language-masters/en`에서 WKND의 영어 마스터 홈 페이지로 이동하여 페이지를 편집합니다.
 1. 페이지 아래쪽에서 **제목** 구성 요소 선택
@@ -89,7 +89,7 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
    >
    >이 예에서 **색상** 스타일(**검은색**, **흰색** 및 **회색**)은 상호 배타적이지만 **스타일** 옵션(**밑줄**, **오른쪽 정렬** 및 **미니 공간**)은 조합할 수 있습니다. 이 내용은 ](#as-a-template-author)템플릿 작성자로서 템플릿에 구성[할 수 있습니다.
 
-### 템플릿 작성자 {#as-a-template-author}
+### 템플릿 작성자  {#as-a-template-author}
 
 1. WKND의 영어 마스터 홈 페이지인 `http://<host>:<port>/sites.html/content/wknd/language-masters/en`를 편집하는 동안, **페이지 정보 -> 템플릿 편집**&#x200B;에서 페이지의 템플릿을 편집합니다.
 
@@ -157,6 +157,7 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 >1. HTL이 모든 것에 우선합니다. `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. 그런 다음 여러 활성 스타일 중에서 구성 요소의 정책에 구성된 스타일 목록의 첫 번째 스타일이 적용됩니다.
 >1. 마지막으로 구성 요소의 `cq:htmlTag`/ `cq:tagName`은 폴백 값으로 간주됩니다.
+
 >
 
 
