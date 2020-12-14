@@ -36,8 +36,8 @@ ht-degree: 91%
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
 1. **주석**&#x200B;을 입력합니다(선택 사항).
-1. To set a label to the version (optional), click the **More >>** button and set the **Label** to name the version. If the label is not set, the version is an automatically incremented number.
-1. Click **Create Version**. 페이지에 다음과 같은 회색 메시지가 표시됩니다.
+1. 버전에 레이블을 설정하려면(선택 사항) **자세히 >>** 단추를 클릭하고 **레이블**&#x200B;을 설정하여 버전 이름을 지정합니다.레이블을 설정하지 않으면 버전은 자동으로 증가하는 번호가 됩니다.
+1. **버전 만들기**&#x200B;를 클릭합니다. 페이지에 다음과 같은 회색 메시지가 표시됩니다.
 
    Version 1.2 created for: Shirts.
 
@@ -45,7 +45,7 @@ ht-degree: 91%
 >
 >페이지가 활성화되면 버전이 자동으로 만들어집니다.
 
-## 사이드 킥에서 페이지 버전 복원 {#restoring-a-page-version-from-sidekick}
+## 사이드 킥에서 페이지 버전 복원  {#restoring-a-page-version-from-sidekick}
 
 페이지를 이전 버전으로 복원하는 방법은 다음과 같습니다.
 
@@ -65,13 +65,13 @@ ht-degree: 91%
 
    ![screen_shot_2012-02-08at41326pm](assets/screen_shot_2012-02-08at41326pm.png)
 
-1. 버전 복원 선택*..** 현재 폴더에 있는 문서의 버전을 나열합니다. 페이지가 삭제되더라도 마지막 버전이 나열됩니다.
+1. 버전 복원 선택**...** 현재 폴더에 있는 문서의 버전을 나열합니다.페이지가 삭제되어도 마지막 버전이 나열됩니다.
 
    ![screen_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
 
 1. 복원할 버전을 선택하고 **복원**&#x200B;을 클릭합니다. 선택한 버전 또는 트리가 복원됩니다.
 
-### 콘솔에서 트리 복원 {#restoring-a-tree-from-the-console}
+### 콘솔에서 트리 복원  {#restoring-a-tree-from-the-console}
 
 이 방법으로 페이지 버전을 복원할 수 있습니다. 이 방법은 이전에 삭제한 페이지를 복원하는 데에도 사용할 수 있습니다.
 
@@ -88,7 +88,7 @@ ht-degree: 91%
 페이지의 현재 버전을 이전 버전과 비교하는 방법은 다음과 같습니다.
 
 1. 브라우저에서 이전 버전과 비교할 페이지를 엽니다.
-1. In the Sidekick, select the **Versioning** tab, then the **Restore Versio** n sub tab.
+1. 사이드 킥에서 **버전 매기기** 탭을 선택하고 **버전 복원** n 하위 탭을 선택합니다.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
@@ -103,7 +103,7 @@ ht-degree: 91%
 
 1. 사이드 킥에서 **버전 복원** 하위 탭을 선택하고 **&lt;&lt;뒤로** 단추를 클릭하여 현재 버전을 표시합니다.
 
-## 타임워프 {#timewarp}
+## 타임워프  {#timewarp}
 
 타임워프는 과거의 특정 시점에 ***게시된*** 페이지의 상태를 시뮬레이션하도록 디자인된 기능입니다.
 
@@ -120,7 +120,7 @@ ht-degree: 91%
 >
 >보관소에서 버전이 제거되면 Timewarp는 올바른 보기를 표시할 수 없습니다. 또한 웹 사이트를 렌더링하기 위한 요소(예: 코드, css, 이미지 등)가 변경된 경우 저장소에서는 해당 항목의 버전이 관리되지 않으므로 보기가 원래와 달라집니다.
 
-### Timewarp 달력 사용 {#using-the-timewarp-calendar}
+### Timewarp 달력 사용  {#using-the-timewarp-calendar}
 
 Timewarp는 사이드킥에서 사용할 수 있습니다.
 
@@ -194,4 +194,4 @@ Timewarp는 사이드킥에서 사용할 수 있습니다.
 
 >[!CAUTION]
 >
->타임워프는 컨텐츠 이해 및 작성을 지원하는 툴로 고안되었습니다. 감사 로그나 법적 목적이 아닙니다.
+>타임워프는 컨텐츠 작성자에게 컨텐츠를 이해하고 제작하는 데 도움이 되는 툴로 설계되었습니다. 감사 로그나 법적 목적이 아닙니다.
