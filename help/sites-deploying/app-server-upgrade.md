@@ -1,8 +1,8 @@
 ---
 title: 응용 프로그램 서버 설치 업그레이드 단계
 seo-title: 응용 프로그램 서버 설치 업그레이드 단계
-description: 애플리케이션 서버를 통해 배포된 AEM 인스턴스를 업그레이드하는 방법을 알아봅니다.
-seo-description: 애플리케이션 서버를 통해 배포된 AEM 인스턴스를 업그레이드하는 방법을 알아봅니다.
+description: 응용 프로그램 서버를 통해 배포되는 AEM 인스턴스를 업그레이드하는 방법을 알아봅니다.
+seo-description: 응용 프로그램 서버를 통해 배포되는 AEM 인스턴스를 업그레이드하는 방법을 알아봅니다.
 uuid: df3fa715-af4b-4c81-b2c5-130fbc82f395
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -20,23 +20,23 @@ ht-degree: 0%
 
 # 응용 프로그램 서버 설치 업그레이드 단계{#upgrade-steps-for-application-server-installations}
 
-이 섹션에서는 Application Server 설치에 대한 AEM을 업데이트하려면 따라야 하는 절차에 대해 설명합니다.
+이 섹션에서는 Application Server 설치에 대한 AEM을 업데이트하려면 다음 절차를 수행해야 하는 절차를 설명합니다.
 
-이 절차의 모든 예제는 JBoss를 응용 프로그램 서버로 사용하며, AEM의 작업 버전이 이미 배포되었다는 것을 의미합니다. 이 절차는 **AEM 버전 5.6에서 6.3으로 수행된 문서 업그레이드를 위한 것입니다**.
+이 절차의 모든 예제는 JBoss를 응용 프로그램 서버로 사용하며 AEM 작업 버전이 이미 배포되어 있음을 의미합니다. 이 절차는 **AEM 버전 5.6에서 6.3**&#x200B;으로 수행된 문서 업그레이드를 위한 것입니다.
 
-1. 먼저 JBoss를 시작합니다. 대부분의 경우 터미널에서 이 명령을 실행하여 시작 `standalone.sh` 스크립트를 실행하여 이를 수행할 수 있습니다.
+1. 먼저 JBoss를 시작합니다. 대부분의 경우 터미널에서 이 명령을 실행하여 `standalone.sh` 시작 스크립트를 실행하여 이를 수행할 수 있습니다.
 
    ```shell
    jboss-install-folder/bin/standalone.sh
    ```
 
-1. AEM 5.6이 이미 배포된 경우 다음을 실행하여 번들이 올바르게 작동하는지 확인합니다.
+1. AEM 5.6이 이미 배포된 경우 번들이 다음을 실행하여 올바르게 작동하는지 확인합니다.
 
    ```shell
    wget https://<serveraddress:port>/cq/system/console/bundles
    ```
 
-1. 다음, AEM 5.6 배포 취소:
+1. 다음으로 AEM 5.6의 배포 취소:
 
    ```shell
    rm jboss-install-folder/standalone/deployments/cq.war
@@ -52,12 +52,12 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >이 예에서 oak-repository는 새로 변환된 저장소가 상주할 임시 디렉토리입니다. 이 단계를 수행하기 전에 최신 crx2oak.jar 버전이 있는지 확인하십시오.
+   >이 예에서 oak-repository는 새로 변환된 저장소가 상주할 임시 디렉토리입니다. 이 단계를 수행하기 전에 최신 crx2oak.jar 버전이 있는지 확인합니다.
 
 1. 다음을 수행하여 sling.properties 파일에서 필요한 속성을 삭제합니다.
 
-   1. 다음 위치에 있는 파일을 엽니다. `crx-quickstart/launchpad/sling.properties`
-   1. 단계 텍스트 다음 속성을 제거하고 파일을 저장합니다.
+   1. `crx-quickstart/launchpad/sling.properties`에 있는 파일을 엽니다.
+   1. 단계 텍스트다음 속성을 제거하고 파일을 저장합니다.
 
       1. `sling.installer.dir`
       1. `felix.cm.dir`
@@ -68,27 +68,27 @@ ht-degree: 0%
       1. `jre-*`
       1. `sling.run.mode.install.options`
 
-1. 더 이상 필요하지 않은 파일 및 폴더를 제거합니다. 구체적으로 제거해야 하는 항목은 다음과 같습니다.
+1. 더 이상 필요하지 않은 파일 및 폴더를 제거합니다. 특별히 제거해야 할 항목은 다음과 같습니다.
 
-   * 시작 **패드/시작 폴더**. 터미널에서 다음 명령을 실행하여 삭제할 수 있습니다. `rm -rf crx-quickstart/launchpad/startup`
-   * base.jar **파일**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
-   * BootstrapCommandFile_timestamp.txt **파일**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
+   * **launchpad/startup 폴더**. 터미널에서 다음 명령을 실행하여 삭제할 수 있습니다.`rm -rf crx-quickstart/launchpad/startup`
+   * **base.jar 파일**:`find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
+   * **BootstrapCommandFile_timestamp.txt 파일**:`rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
-1. 새로 마이그레이션된 세그먼트스토어를 올바른 위치에 복사합니다.
+1. 새로 마이그레이션된 세그먼트 저장소를 올바른 위치에 복사합니다.
 
    ```shell
    mv crx-quickstart/oak-repository/segmentstore crx-quickstart/repository/segmentstore
    ```
 
-1. 데이터 저장소를 복사합니다.
+1. 데이터 저장소도 복사합니다.
 
    ```shell
    mv crx-quickstart/repository/repository/datastore crx-quickstart/repository/datastore
    ```
 
-1. 그런 다음 업그레이드된 새 인스턴스와 함께 사용할 OSGi 구성이 들어 있는 폴더를 만들어야 합니다. 보다 구체적으로 말하자면 install이라는 폴더를 crx-quickstart **아래에 만들어야 합니다**.
+1. 다음으로 업그레이드된 새 인스턴스와 함께 사용할 OSGi 구성이 들어 있는 폴더를 만들어야 합니다. 특히 install이라는 폴더를 **crx-quickstart** 아래에 만들어야 합니다.
 
-1. 이제 AEM 6.3과 함께 사용할 노드 스토어와 데이터 저장소를 만듭니다. crx-quickstart\install ****&#x200B;아래에 다음 이름으로 두 개의 파일을 만들어 이 작업을 수행할 수 있습니다.
+1. 이제 AEM 6.3과 함께 사용할 노드 스토어와 데이터 저장소를 만듭니다. 이 작업을 수행하려면 **crx-quickstart\install** 아래에 다음 이름의 두 파일을 만듭니다.
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
 
@@ -98,11 +98,11 @@ ht-degree: 0%
 
 1. 구성 파일을 편집하여 사용할 수 있도록 합니다. 자세한 내용:
 
-   * 다음 줄을 **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config에 추가합니다**.
+   * **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**&#x200B;에 다음 줄을 추가합니다.
 
       `customBlobStore=true`
 
-   * 그런 다음 다음 **org.apache.jackrabbit.plugins.blob.datastore.FileDataStore.config에 다음 줄을 추가합니다**.
+   * 그런 다음 **org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config**&#x200B;에 다음 줄을 추가합니다.
 
       ```
       path=./crx-quickstart/repository/datastore
@@ -115,19 +115,19 @@ ht-degree: 0%
    find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf {} \
    ```
 
-1. 이제 AEM 6.3 전쟁 파일의 실행 모드를 변경해야 합니다. 그렇게 하기 위해서, 먼저 AEM 6.3 전쟁을 수용할 임시 폴더를 만듭니다. 이 예제의 폴더 이름은 **temp입니다**. 전쟁 파일이 복사되면 임시 폴더 내에서 실행하여 콘텐트를 추출합니다.
+1. 이제 AEM 6.3 전쟁 파일의 실행 모드를 변경해야 합니다. 그렇게 하기 위해서, 먼저 AEM 6.3 전쟁을 수용할 임시 폴더를 만듭니다. 이 예에서 폴더 이름은 **temp**&#x200B;입니다. 전쟁 파일이 복사되면 임시 폴더 내에서 실행하여 콘텐트를 추출합니다.
 
    ```shell
    jar xvf aem-quickstart-6.3.0.war
    ```
 
-1. 컨텐츠가 추출되면 **WEB-INF** 폴더로 이동하여 `web.xml` 파일을 편집하여 실행 모드를 변경합니다. XML에서 설정된 위치를 찾으려면 문자열을 `sling.run.modes` 찾습니다. 코드를 찾으면 기본적으로 작성하도록 설정되어 있는 다음 코드 줄의 실행 모드를 변경합니다.
+1. 컨텐츠가 추출되면 **WEB-INF** 폴더로 이동하여 `web.xml` 파일을 편집하여 실행 모드를 변경합니다. XML에서 설정된 위치를 찾으려면 `sling.run.modes` 문자열을 찾습니다. 코드를 찾으면 기본적으로 작성자로 설정되어 있는 다음 코드 행에서 실행 모드를 변경합니다.
 
    ```shell
    <param-value >author</param-value>
    ```
 
-1. 위의 작성자 값을 변경하고 실행 모드를 다음으로 설정합니다. author,crx3,crx3tar 코드의 마지막 블록은 다음과 같습니다.
+1. 위의 작성자 값을 변경하고 실행 모드를 다음으로 설정합니다.author,crx3,crx3tar 최종 코드 블록은 다음과 같아야 합니다.
 
    ```
    <init-param>
@@ -138,7 +138,7 @@ ht-degree: 0%
    </servlet>
    ```
 
-1. 수정된 내용으로 jar를 다시 만듭니다.
+1. 수정된 내용이 포함된 jar를 다시 만듭니다.
 
    ```shell
    jar cvf aem62.war
