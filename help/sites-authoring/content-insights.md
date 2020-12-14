@@ -2,7 +2,7 @@
 title: 컨텐츠 인사이트
 seo-title: 컨텐츠 인사이트
 description: 컨텐츠 인사이트는 웹 분석 및 SEO 추천을 사용하여 페이지 성능에 대한 정보를 제공합니다.
-seo-description: 컨텐츠 인사이트 웹 분석 및 SEO 권장 사항을 사용하여 페이지 성능에 대한 정보를 제공합니다.
+seo-description: 컨텐츠 인사이트 웹 분석 및 SEO 추천을 사용하여 페이지 성능에 대한 정보를 제공합니다.
 uuid: 32f5b37c-2a82-462a-9f0a-c19bed46e198
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -51,7 +51,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->컨텐츠 인사이트 보고서를 사용하려면 관리자가 AEM을 SiteCatalyst, Target 및 BrightEdge와 통합해야 합니다. See [Integrating with SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integrating with Adobe Target](/help/sites-administering/target.md), and [Integrating with BrightEdge](/help/sites-administering/brightedge.md).
+>컨텐츠 인사이트 보고서를 사용하려면 관리자가 AEM을 SiteCatalyst, Target 및 BrightEdge와 통합해야 합니다. [SightCatalyst](/help/sites-administering/adobeanalytics.md)와 통합, [Adobe Target](/help/sites-administering/target.md)과 통합 및 [BrightEdge](/help/sites-administering/brightedge.md)와 통합을 참조하십시오.
 
 ## 보기 보고서 {#the-views-report}
 
