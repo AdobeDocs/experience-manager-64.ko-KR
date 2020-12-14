@@ -99,7 +99,7 @@ ht-degree: 96%
 
 활동을 추가하려면 다음을 수행하십시오.
 
-1. Click or tap the brand for which you are creating the activity, and then click or tap **Create** then **Create Activity**. If editing, select the activity in the Master Area screen and clicking or tapping **Edit Activity**.
+1. 활동을 만들 브랜드를 클릭하거나 탭한 다음, **만들기**, **활동 만들기**&#x200B;를 클릭하거나 탭합니다. 편집하는 경우 [영역] 화면기본에서 활동을 선택하고 **활동 편집**&#x200B;을 클릭하거나 탭합니다.
 1. 다음 정보를 제공한 후, **다음**&#x200B;을 클릭하거나 탭합니다.
 
    * 활동의 이름.
@@ -158,14 +158,14 @@ ht-degree: 96%
 
 1. 게시하려면 **게시**&#x200B;를 탭하거나 클릭하고, 게시를 취소하려면 **게시 취소**&#x200B;를 탭하거나 클릭합니다. 활동이 게시되거나 게시 취소되고, 활동 콘솔에서 활동 상태가 변합니다(새로 고침이 필요할 수 있음).
 
-## 작성 및 게시 인스턴스에서의 활동 {#activities-on-author-and-publish-instances}
+## 작성 및 게시 인스턴스에서의 활동  {#activities-on-author-and-publish-instances}
 
 Adobe Target 타깃팅 엔진을 사용하는 활동이 활성화되면 게시 인스턴스에서 두 번째 활동이 만들어집니다.
 
 * 작성 인스턴스에서의 활동은 작성 인스턴스에서의 활동을 추적하고 방문자 경험을 시뮬레이션하는 데 유용합니다. 이 활동에 대해 기록된 분석은 작성 인스턴스에서 발생하는 사항만 반영합니다.
 * 게시 인스턴스의 활동은 게시 서버의 활동을 반영하고 게시 서버의 활동에 응답합니다. 이 활동은 공개 웹 사이트에서 실행되는 활동입니다. 게시 활동만 실제 공개 사이트의 사용에 대한 추적 및 분석과 관련이 있습니다.
 
-## 성능 보기 및 우승 경험 전환(A/B 테스트) {#viewing-performance-and-converting-winning-experiences-a-b-test}
+## 성능 보기 및 우승 경험 전환(A/B 테스트)  {#viewing-performance-and-converting-winning-experiences-a-b-test}
 
 모든 Adobe Target 활동(XT 또는 A/B)의 성능을 볼 수 있습니다. A/B 테스트를 사용하는 경우에는 우승 경험을 전환할 수도 있으며, 전환된 후에는 기본 경험이 됩니다.
 
@@ -173,7 +173,7 @@ Adobe Target 타깃팅 엔진을 사용하는 활동이 활성화되면 게시 �
 
 1. **개인화**&#x200B;에서 **활동**&#x200B;을 클릭하거나 탭하여 **활동** 콘솔로 이동합니다.
 1. 활동을 보려는 브랜드를 클릭하거나 탭합니다.
-1. Select the activity and click or tap **View Properties **and click the **Reports** tab and select the activity that you want to view performance for/convert winning experiences for. 성능 데이터가 표시됩니다.
+1. 활동을 선택하고 **속성 보기 **를 클릭하거나 탭하고 **보고서** 탭을 클릭한 다음 우승 경험을 위한 성과를 보거나 변환할 활동을 선택합니다. 성능 데이터가 표시됩니다.
 
    ![chlimage_1-239](assets/chlimage_1-239.png)
 
@@ -190,7 +190,7 @@ Adobe Target 타깃팅 엔진을 사용하는 활동이 활성화되면 게시 �
 
 1. **예**&#x200B;를 클릭하거나 탭하여 우승자를 전환할 것임을 확인합니다. 우승자를 전환하면 현재 경험이 비활성화되어 우승 경험의 컨텐츠로 교체됩니다.
 
-## 활동을 Adobe Target과 동기화 {#synchronizing-activities-with-adobe-target}
+## 활동을 Adobe Target과 동기화  {#synchronizing-activities-with-adobe-target}
 
 Adobe Target 타깃팅 엔진을 사용하는 활동은 Adobe Target 캠페인과 동기화됩니다. 다음 조건이 충족되면 활동이 자동으로 Adobe Target에 동기화됩니다.
 
@@ -211,7 +211,7 @@ Adobe Target 타깃팅 엔진을 사용하는 활동은 Adobe Target 캠페인�
 
 게시 활동은 활동이 AEM 게시 인스턴스에 게시되면 동기화됩니다.
 
-## 활동 동기화 문제 해결 {#troubleshooting-activity-synchronization}
+## 활동 동기화 문제 해결  {#troubleshooting-activity-synchronization}
 
 AEM이 활동을 Adobe Target과 동기화할 때 AEM은 `thirdPartyId`라는 활동의 속성을 포함합니다. 이 속성의 값은 AEM 저장소의 활동 경로를 기반으로 합니다. Adobe Target에 있는 두 개의 캠페인이 `thirdPartyId` 속성에 대해 동일한 값을 가질 수는 없습니다. 따라서 Adobe Target의 기존 캠페인(다른 유형 AB, XT)이 `thirdPartyId`에 대해 동일한 값을 사용하는 경우에는 활동이 실패하게 됩니다.
 
