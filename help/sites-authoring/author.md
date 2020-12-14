@@ -18,7 +18,7 @@ ht-degree: 99%
 ---
 
 
-# Concept of Authoring and Publishing{#authoring}
+# 작성 및 게시 개념{#authoring}
 
 AEM에서는 두 가지 환경을 제공합니다.
 
