@@ -22,9 +22,9 @@ ht-degree: 84%
 
 >[!NOTE]
 >
->Adobe은 AEM SMTP 서비스를 통해 열리거나 바운스된 이메일의 추적을 추가로 개선할 계획이 없습니다.
+>Adobe은 AEM SMTP 서비스를 통해 열리거나 바운스된 이메일에 대한 추적을 추가로 개선할 계획이 없습니다.
 >
->Adobe Campaign과 AEM의 통합을 [활용하는 것이 좋습니다](/help/sites-administering/campaign.md).
+>권장 사항은 [Adobe Campaign 및 AEM 통합](/help/sites-administering/campaign.md)을 활용하는 것입니다.
 
 많은 사용자에게 뉴스레터를 전송할 때 일반적으로 목록에 유효하지 않은 이메일 주소가 포함되어 있습니다. 해당 주소로 뉴스레터를 보내면 바운스되어 돌아옵니다. AEM에서는 이러한 바운스를 관리하고 구성된 바운스 카운터를 초과할 경우 해당 주소로의 뉴스레터 전송을 중지할 수 있습니다. 기본적으로 바운스 비율은 3으로 설정되지만 구성 가능합니다.
 
@@ -68,7 +68,7 @@ Feed Importer를 사용하면 외부 소스의 컨텐츠를 저장소로 반복�
 
    `imap.flag.SEEN`:새 메시지/보지 않은 메시지의 경우 false로설정, 이미 읽은 메시지의 경우 true로설정
 
-   See [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) for the full list of flags.
+   전체 플래그 목록을 보려면 [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html)을 참조하십시오.
 
    **IMAP 예제:**
 
@@ -79,13 +79,13 @@ Feed Importer를 사용하면 외부 소스의 컨텐츠를 저장소로 반복�
 
 1. 구성을 저장합니다.
 
-## Newsletter 서비스 구성 요소 구성 {#configuring-the-newsletter-service-component}
+## Newsletter 서비스 구성 요소 구성  {#configuring-the-newsletter-service-component}
 
 Feed Importer를 구성한 후에 보낸 사람 주소 및 바운스 카운터를 구성해야 합니다.
 
 뉴스레터 서비스를 구성하려면:
 
-1. 의 OSGi 콘솔 `<host>:<port>/system/console/configMgr` 에서 **MCM 뉴스레터로 이동합니다**.
+1. `<host>:<port>/system/console/configMgr`의 OSGi 콘솔에서 **MCM Newsletter**&#x200B;로 이동합니다.
 
 1. 서비스를 구성을 마친 후 변경 사항을 저장합니다.
 
