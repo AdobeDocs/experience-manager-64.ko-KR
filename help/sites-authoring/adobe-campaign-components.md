@@ -76,9 +76,9 @@ Adobe Campaign과 통합하도록 구성된 뉴스레터/이메일을 열면 **A
 
 >[!NOTE]
 >
->You must enter information in the **Alt Text** field, or the image cannot be saved.
+>**대체 텍스트** 필드에 정보를 입력해야 합니다. 그렇지 않으면 이미지를 저장할 수 없습니다.
 
-After the image is uploaded (and not before) you can use [inplace editing](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) to crop/rotate the image as required:
+이미지가 업로드된 후(그 전은 아님) [즉석 편집](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)을 사용하여 필요에 따라 이미지를 자르거나 회전할 수 있습니다.
 
 ![](do-not-localize/chlimage_1-10.png)
 
@@ -161,7 +161,7 @@ After the image is uploaded (and not before) you can use [inplace editing](/help
 
 * **LinkType**
 
-   In the drop-down list, select between a **Custom URL** and an **Adaptive Document**. 이 필드는 반드시 입력해야 합니다. [사용자 지정 URL]을 선택하는 경우 링크 URL을 제공할 수 있습니다. [응용 문서]를 선택하는 경우 문서 경로를 제공할 수 있습니다.
+   드롭다운 목록에서 **사용자 지정 URL**&#x200B;과 **응용 문서** 중에서 선택합니다. 이 필드는 반드시 입력해야 합니다. [사용자 지정 URL]을 선택하는 경우 링크 URL을 제공할 수 있습니다. [응용 문서]를 선택하는 경우 문서 경로를 제공할 수 있습니다.
 
 * **추가 URL 매개 변수**
 
@@ -169,7 +169,7 @@ After the image is uploaded (and not before) you can use [inplace editing](/help
 
 >[!NOTE]
 >
->You must enter information in the **Link Type** field in the **URL Info** tab, or the component cannot save and you see the following error message:
+>**URL 정보** 탭의 **링크 유형** 필드에 정보를 입력해야 합니다. 그렇지 않으면 구성 요소를 저장할 수 없으며 다음 오류 메시지가 표시됩니다.
 >
 >`Validation failed. Verify the values of the marked fields.`
 
@@ -180,11 +180,11 @@ After the image is uploaded (and not before) you can use [inplace editing](/help
 
 ### Scene7 이미지 템플릿(캠페인) {#scene-image-template-campaign}
 
-[Scene7 이미지 템플릿은](https://help.adobe.com/ko_KR/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) 레이어로 구성된 이미지 파일로, 컨텐츠와 속성을 가변성 있게 매개 변수화할 수 있습니다. **이미지 템플릿** 구성 요소를 사용하면 뉴스레터 내에서 Scene7 템플릿을 사용하고 템플릿 매개 변수의 값을 변경할 수 있습니다. 또한 매개 변수 내에서 Adobe Campaign 메타데이터 변수를 사용하여 각 사용자가 개인화된 방식으로 이미지를 경험하도록 할 수 있습니다.
+[Scene7 이미지 ](https://help.adobe.com/ko_KR/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) 템플릿은 레이어로 구성된 이미지 파일로, 컨텐츠와 속성을 가변성 있게 매개 변수화할 수 있습니다. **이미지 템플릿** 구성 요소를 사용하면 뉴스레터 내에서 Scene7 템플릿을 사용하고 템플릿 매개 변수의 값을 변경할 수 있습니다. 또한 매개 변수 내에서 Adobe Campaign 메타데이터 변수를 사용하여 각 사용자가 개인화된 방식으로 이미지를 경험하도록 할 수 있습니다.
 
 ![chlimage_1-111](assets/chlimage_1-111.png)
 
-**편집**&#x200B;을 클릭하여 구성 요소를 구성합니다. 이 섹션에 설명된 설정을 구성할 수 있습니다. This Scene7 Image template is described in detail in [Scene7 Image Template component](/help/assets/scene7.md#image-template).
+**편집**&#x200B;을 클릭하여 구성 요소를 구성합니다. 이 섹션에 설명된 설정을 구성할 수 있습니다. 이 Scene7 이미지 템플릿은 [Scene7 이미지 템플릿 구성 요소](/help/assets/scene7.md#image-template)에 자세히 설명되어 있습니다.
 
 또한 매개 변수 패널에는 Scene7에서 템플릿에 대해 정의된 모든 템플릿 매개 변수가 표시됩니다. 이러한 각 매개 변수에 대해 값을 조정하거나, 변수를 삽입하거나, 이를 기본값으로 재설정할 수 있습니다.
 
@@ -198,7 +198,7 @@ After the image is uploaded (and not before) you can use [inplace editing](/help
 
 폴더 아이콘을 클릭하여 참조할 단락으로 이동하십시오. 완료되면 확인 표시를 클릭합니다.
 
-### 텍스트 및 이미지(캠페인) {#text-image-campaign}
+### 텍스트 및 이미지(캠페인)  {#text-image-campaign}
 
 텍스트 및 이미지(캠페인) 구성 요소는 텍스트 블록과 이미지를 추가합니다.
 
@@ -263,13 +263,13 @@ After the image is uploaded (and not before) you can use [inplace editing](/help
 
 ### 텍스트 및 개인화(캠페인) {#text-personalization-campaign}
 
-The Text &amp; Personalization (Campaign) component lets you enter a text block using a WYSIWYG editor, with functionality provided by the [Rich Text editor](/help/sites-authoring/rich-text-editor.md). 또한 이 구성 요소를 사용하면 Adobe Campaign에서 사용할 수 있는 컨텍스트 필드와 개인화 블록을 사용할 수 있습니다. [개인화 삽입](/help/sites-authoring/campaign.md#inserting-personalization)을 참조하십시오.
+텍스트 및 개인화(캠페인) 구성 요소를 사용하면 [리치 텍스트 편집기](/help/sites-authoring/rich-text-editor.md)에서 제공하는 기능과 함께 WYSIWYG 편집기를 사용하여 텍스트 블록을 입력할 수 있습니다. 또한 이 구성 요소를 사용하면 Adobe Campaign에서 사용할 수 있는 컨텍스트 필드와 개인화 블록을 사용할 수 있습니다. [개인화 삽입](/help/sites-authoring/campaign.md#inserting-personalization)을 참조하십시오.
 
-여러 가지 아이콘을 사용하여 글꼴 특성, 정렬, 링크, 목록 및 들여쓰기 등의 텍스트 서식을 지정할 수 있습니다. The functionality is basically the same in [both UIs](/help/sites-authoring/editing-content.md), although the look-and-feel is different:
+여러 가지 아이콘을 사용하여 글꼴 특성, 정렬, 링크, 목록 및 들여쓰기 등의 텍스트 서식을 지정할 수 있습니다. 모양과 느낌은 다르지만 기능은 기본적으로 [두 UI](/help/sites-authoring/editing-content.md)에서 동일합니다.
 
 ![chlimage_1-115](assets/chlimage_1-115.png)
 
-즉석 편집기에서는 텍스트를 추가하고, 양쪽 맞춤을 변경하고, 링크를 추가 또는 제거하고, 컨텍스트 필드나 개인화 블록을 추가하고, 전체 화면 모드로 전환할 수 있습니다. 텍스트/개인화 추가 작업이 완료되면 확인 표시를 선택하여 변경 사항을 저장하십시오(취소하려면 또는 x 선택). See [Inplace editing](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) for more information.
+즉석 편집기에서는 텍스트를 추가하고, 양쪽 맞춤을 변경하고, 링크를 추가 또는 제거하고, 컨텍스트 필드나 개인화 블록을 추가하고, 전체 화면 모드로 전환할 수 있습니다. 텍스트/개인화 추가 작업이 완료되면 확인 표시를 선택하여 변경 사항을 저장하십시오(취소하려면 또는 x 선택). 자세한 내용은 [즉석 편집](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)을 참조하십시오.
 
 >[!NOTE]
 >
@@ -292,7 +292,7 @@ Adobe Campaign 구성 요소를 사용하여 뉴스레터에 가입하거나, �
 
 각 구성 요소 필드는 Adobe Campaign 데이터베이스 필드에 연결할 수 있습니다. 사용 가능한 필드는 [구성 요소 및 데이터 유형](#components-and-data-type) 섹션에 설명된 대로 필드가 포함하는 데이터의 유형에 따라 달라집니다. Adobe Campaign에서 수신자 스키마를 확장하는 경우에는, 데이터 유형이 일치하는 구성 요소에서 새 필드를 사용할 수 있습니다.
 
-When you open a form that is configured to integrate with Adobe Campaign, you see the following components in the **Adobe Campaign** section:
+Adobe Campaign과 통합하도록 구성된 양식을 열면 **Adobe Campaign** 섹션에 다음 구성 요소가 표시됩니다.
 
 * 확인란(캠페인)
 * 날짜 필드(캠페인)와 날짜 필드/HTML5(캠페인)
@@ -310,7 +310,7 @@ When you open a form that is configured to integrate with Adobe Campaign, you se
 
 이 섹션에서는 각 구성 요소에 대해 자세히 설명합니다.
 
-### 구성 요소 및 데이터 유형 {#components-and-data-type}
+### 구성 요소 및 데이터 유형  {#components-and-data-type}
 
 다음 표에서는 Adobe Campaign 프로필 데이터를 표시하고 수정하는 데 사용할 수 있는 구성 요소에 대해 설명합니다. 각 구성 요소는 필드 값을 표시하고 양식이 제출되면 필드를 업데이트하도록 Adobe Campaign 프로필 필드에 매핑할 수 있습니다. 다른 구성 요소는 적절한 데이터 유형의 필드에만 대응시킬 수 있습니다.
 
@@ -333,7 +333,7 @@ When you open a form that is configured to integrate with Adobe Campaign, you se
   </tr> 
   <tr> 
    <td><p>숫자 필드(캠페인)</p> </td> 
-   <td><p>숫자(바이트, 짧은, 긴, double)</p> </td> 
+   <td><p>숫자(바이트, short, long, double)</p> </td> 
    <td><p>연령</p> </td> 
   </tr> 
   <tr> 
@@ -355,13 +355,13 @@ Adobe Campaign 구성 요소에는 모든 구성 요소(암호화된 기본 키�
 
 대부분의 구성 요소에서 다음 내용을 구성할 수 있습니다.
 
-#### 제목 및 텍스트 {#title-and-text}
+#### 제목 및 텍스트  {#title-and-text}
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
 * **제목**
 
-   요소 이름 이외의 이름을 사용하려면 여기에 입력하십시오.
+   요소 이름 이외의 이름을 사용하려면 여기에 입력합니다.
 
 * **제목 숨기기**
 
@@ -373,7 +373,7 @@ Adobe Campaign 구성 요소에는 모든 구성 요소(암호화된 기본 키�
 
 * **값만 표시**
 
-   값이 있는 경우 값만 표시됩니다.
+   값이 있을 경우 값만 표시됩니다.
 
 #### Adobe Campaign {#adobe-campaign}
 
@@ -393,11 +393,11 @@ Adobe Campaign 구성 요소에는 모든 구성 요소(암호화된 기본 키�
 
 * **필수**
 
-   이 구성 요소를 필수 구성 요소로 만들려면 이 확인란을 선택하십시오. 즉, 사용자가 값을 입력해야 합니다.
+   이 구성 요소를 필수 구성 요소로 만들려면 이 확인란을 선택합니다.즉, 사용자가 값을 입력해야 합니다.
 
 * **필수 메시지**
 
-   필수 필드라는 메시지를 추가할 수도 있습니다.
+   필수 필드임을 알리는 메시지를 추가할 수도 있습니다.
 
 ![chlimage_1-120](assets/chlimage_1-120.png)
 
@@ -423,15 +423,16 @@ Adobe Campaign 구성 요소에는 모든 구성 요소(암호화된 기본 키�
 
 [대부분의 Adobe Campaign 구성 요소에 공통인 설정](#settings-common-to-most-components) 외에 다음 내용을 구성할 수 있습니다.
 
-* **제한 - 제한** 드롭다운
+* **제한 -** 제한 드롭다운
 
-   You can select - **None** or **Date**- to add the constraint of a date or no constraint. 날짜를 선택하는 경우, 사용자가 필드에 입력하는 응답의 형식은 날짜 형식이어야 합니다.
+   **없음** 또는 **날짜**-를 선택하여 날짜 제한을 추가하거나 제한을 추가하지 않을 수 있습니다. 날짜를 선택하는 경우, 사용자가 필드에 입력하는 응답의 형식은 날짜 형식이어야 합니다.
 
 * **제한 메시지**
 
-   또한 응답의 형식을 제대로 지정하는 방법을 알 수 있도록 제한 메시지를 추가할 수도 있습니다.
-* **스타일링 - 너비**&#x200B;를 클릭하거나 탭하여 필드 너비를 조정합니다. 
-**+** 및 **아이콘** 또는 숫자 입력
+   또한 응답의 형식을 적절하게 지정하는 방법을 알 수 있도록 제한 메시지를 추가할 수 있습니다.
+* **스타일링 -**
+너비필드의 너비를 조정하려면 
+**+** 및  **아이콘을 선택하거나 숫자를** 입력합니다.
 
 다음 예는 날짜 필드(캠페인) 구성 요소가 조정된 너비로 표시되는 것을 보여줍니다.
 
@@ -484,15 +485,16 @@ Adobe Campaign 프로필 데이터를 표시 및 수정하는 각 양식은 암�
 
 [대부분의 Adobe Campaign 구성 요소에 공통인 설정](#settings-common-to-most-components) 외에 다음 내용을 구성할 수 있습니다.
 
-* **제한 - 제한** 드롭다운
+* **제한 -** 제한 드롭다운
 
-   You can select - **None** or **Numeric** - to add the constraint of either a number or no constraint. 숫자를 선택하는 경우, 사용자가 필드에 입력하는 응답의 형식은 숫자여야 합니다.
+   - **없음** 또는 **Numeric**&#x200B;을 선택하여 숫자 제한을 추가하거나 제한을 추가하지 않을 수 있습니다. 숫자를 선택하는 경우, 사용자가 필드에 입력하는 응답의 형식은 숫자여야 합니다.
 
 * **제한 메시지**
 
-   또한 응답의 형식을 제대로 지정하는 방법을 알 수 있도록 제한 메시지를 추가할 수도 있습니다.
-* **스타일링 - 너비**&#x200B;를 클릭하거나 탭하여 필드 너비를 조정합니다. 
-**+** 및 **아이콘** 또는 숫자 입력
+   또한 응답의 형식을 적절하게 지정하는 방법을 알 수 있도록 제한 메시지를 추가할 수 있습니다.
+* **스타일링 -**
+너비필드의 너비를 조정하려면 
+**+** 및  **아이콘을 선택하거나 숫자를** 입력합니다.
 
 다음 예는 숫자 필드(캠페인) 구성 요소가 구성된 너비로 표시되는 것을 보여줍니다.
 
@@ -514,7 +516,7 @@ Adobe Campaign 프로필 데이터를 표시 및 수정하는 각 양식은 암�
 
 Adobe Campaign 프로필과 연결된 가입을 수정하려면 **가입 확인 목록(캠페인)** 구성 요소를 사용하십시오.
 
-이 구성 요소를 양식에 추가하면 모든 사용 가능한 가입이 확인란으로 표시되고 사용자가 원하는 가입을 선택할 수 있습니다. When users submit the form, this component subscribes the user to or unsubscribes the user from the selected services depending on the form action type (**Adobe Campaign: Subscribe to Services** or **Adobe Campaign: Unsubscribe from Services**).
+이 구성 요소를 양식에 추가하면 모든 사용 가능한 가입이 확인란으로 표시되고 사용자가 원하는 가입을 선택할 수 있습니다. 사용자가 양식을 제출하면 이 구성 요소는 양식 작업 유형(**Adobe Campaign:서비스** 또는 **Adobe Campaign 가입:서비스 구독 취소**).
 
 >[!NOTE]
 >
@@ -532,17 +534,17 @@ Adobe Campaign 프로필과 연결된 가입을 수정하려면 **가입 확인 
 
 [대부분의 Adobe Campaign 구성 요소에 공통인 설정](#settings-common-to-most-components) 외에 다음 내용을 구성할 수 있습니다.
 
-* **제한 - 제한** 드롭다운
+* **제한 -** 제한 드롭다운
 
-   You can select - **None, Email,** or **Name (no umlauts)**- to add the constraint of either an email address, name, or no constraint. 이메일을 선택하는 경우, 사용자가 필드에 입력하는 응답의 형식은 이메일 주소여야 합니다. 이름을 선택하는 경우 이름이어야 합니다(모음 기호는 허용되지 않음).
+   **없음, 이메일,** 또는 **이름(모음 기호 없음)**-을 선택하여 이메일 주소, 이름 또는 제한 조건 없이 제한을 추가할 수 있습니다. 이메일을 선택하는 경우, 사용자가 필드에 입력하는 응답의 형식은 이메일 주소여야 합니다. 이름을 선택하는 경우 이름이어야 합니다(모음 기호는 허용되지 않음).
 
 * **제한 메시지**
 
-   또한 응답의 형식을 제대로 지정하는 방법을 알 수 있도록 제한 메시지를 추가할 수도 있습니다.
+   또한 응답의 형식을 적절하게 지정하는 방법을 알 수 있도록 제한 메시지를 추가할 수 있습니다.
 
 * **스타일 - 너비**
 
-   Adjust the width of the field by clicking or tapping the **+** and **-** icons or entering a number.
+   **+** 및 **-** 아이콘을 클릭하거나 탭하거나 숫자를 입력하여 필드의 너비를 조정합니다.
 
 다음 예는 텍스트 필드(캠페인) 구성 요소가 표시되는 것을 보여줍니다.
 
