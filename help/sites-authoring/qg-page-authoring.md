@@ -189,7 +189,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
    >
    >컨텐츠에서 링크를 사용하여 탐색하려면 [미리 보기 모드](/help/sites-authoring/editing-content.md#preview-mode)를 사용해야 합니다.
 
-## 페이지 속성 편집 {#editing-the-page-properties}
+## 페이지 속성 편집  {#editing-the-page-properties}
 
 [페이지 속성을 편집](/help/sites-authoring/editing-page-properties.md)하는 방법에는 두 가지(기본) 방법이 있습니다.
 
@@ -241,7 +241,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    자세한 내용은 [페이지 게시](/help/sites-authoring/publishing-pages.md#unpublishing-pages)를 참조하십시오.
 
-## 페이지 이동, 복사 및 붙여넣기 또는 삭제 {#move-copy-and-paste-or-delete-your-page}
+## 페이지 이동, 복사 및 붙여넣기 또는 삭제  {#move-copy-and-paste-or-delete-your-page}
 
 1. 이동, 복사 및 붙여넣기 또는 삭제할 [페이지로 이동](#finding-your-page)하십시오.
 1. 다음 중 하나를 사용하여 필요에 따라 [복사] (및 [붙여넣기]), [이동] 또는 [삭제] 아이콘을 선택합니다.
@@ -288,9 +288,9 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 1. 필요한 참조 유형을 탭하거나 클릭하여 자세한 내용을 표시하고 (해당되는 경우) 추가 작업을 수행합니다.
 
-## 페이지 버전 생성 {#creating-a-version-of-your-page}
+## 페이지 버전 생성  {#creating-a-version-of-your-page}
 
-1. 타임라인 레인을 열려면 **[페이지를 선택](/help/sites-authoring/basic-handling.md#timeline)**하기 전이나 후에 도구 모음 아이콘을 사용하여[타임라인](#selecting-your-page-for-further-action)을 선택합니다.
+1. 타임라인 레인을 열려면 **[페이지를 선택](/help/sites-authoring/basic-handling.md#timeline)**&#x200B;하기 전이나 후에 도구 모음 아이콘을 사용하여 [타임라인](#selecting-your-page-for-further-action)을 선택합니다.
 
    ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
@@ -304,7 +304,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 페이지 버전을 복원 및/또는 비교할 때 동일한 기본 메커니즘이 사용됩니다.
 
-1. **[페이지를 선택](/help/sites-authoring/basic-handling.md#timeline)**하기 전이나 후에 도구 모음 아이콘을 사용하여[타임라인](#selecting-your-page-for-further-action)을 선택합니다.
+1. **[페이지를 선택](/help/sites-authoring/basic-handling.md#timeline)**&#x200B;하기 전이나 후에 도구 모음 아이콘을 사용하여 [타임라인](#selecting-your-page-for-further-action)을 선택합니다.
 
    ![screen_shot_2018-03-21at161355-1](assets/screen_shot_2018-03-21at161355-1.png)
 
