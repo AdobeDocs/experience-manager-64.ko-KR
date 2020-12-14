@@ -26,12 +26,12 @@ ht-degree: 74%
 
 >[!NOTE]
 >
->The theory behind launches is described in detail under [Launches](/help/sites-authoring/launches.md) in the standard authoring documentation.
+>론치의 이면에 있는 이론은 표준 작성 문서의 [론치](/help/sites-authoring/launches.md)에서 자세히 설명합니다.
 >
->Information specific to using launches in the classic UI can be found in the following documentation together with [Creating Launches](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Editing Launches](/help/sites-classic-ui-authoring/classic-launches-editing.md), and [Promoting Launches](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
+>클래식 UI에서 론치를 사용하는 것과 관련된 정보는 [론치 만들기](/help/sites-classic-ui-authoring/classic-launches-creating.md), [론치 편집](/help/sites-classic-ui-authoring/classic-launches-editing.md) 및 [론치 홍보](/help/sites-classic-ui-authoring/classic-launches-promoting.md)와 함께 다음 설명서에서 확인할 수 있습니다.
 
 >[!CAUTION]
 >
 >클래식 UI에서는 하나의 론치에 대해 여러 소스 분기가 사용될 수 없습니다.
 
-The Launches console can be directly accessed with [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)
+론치 콘솔은 [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)로 직접 액세스할 수 있습니다.
