@@ -22,7 +22,7 @@ ht-degree: 94%
 
 >[!CAUTION]
 >
->일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md)버전이 필요합니다.
+>일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md)의 응용 프로그램이 필요합니다.
 
 연관된 컨텐츠는 조각이 컨텐츠 페이지에 추가될 때 자산(즉, 이미지)을 조각과 함께 필요에 따라 사용할 수 있도록 연결을 제공합니다. 이렇게 하면 [페이지에서 컨텐츠 조각을 사용할 때 액세스할 수 있는 다양한 자산을 제공](/help/sites-authoring/content-fragments.md#using-associated-content)하는 동시에 적절한 자산을 검색하는 데 필요한 시간을 줄일 수 있으므로 유연성을 높일 수 있습니다.
 
