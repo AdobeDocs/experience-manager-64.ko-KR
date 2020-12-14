@@ -41,7 +41,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->AEM 6.4.5.0 이상 버전은 [SPA Editor에서 편집 가능한 템플릿을 사용해야 합니다](/help/sites-developing/spa-overview.md).
+>AEM 6.4.5.0 이상이 [SPA 편집기](/help/sites-developing/spa-overview.md)에서 편집 가능한 템플릿을 사용해야 합니다.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->Pages and templates created with the **Templates Console** are not meant to be used with the classic UI and such use is not supported.
+>**템플릿 콘솔**&#x200B;으로 만든 페이지 및 템플릿은 클래식 UI에 사용할 수 없으며, 이러한 사용은 지원되지 않습니다.
 
 ## 시작하기 전에 {#before-you-start}
 
@@ -112,11 +112,11 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
    * 이 템플릿은 [개발자가 제공하므로](/help/sites-developing/page-templates-static.md) 작성자가 만들거나 편집할 수 없습니다.
    * 새 페이지를 만들기 위해 복사되지만, 그 이후에 동적 연결은 존재하지 않습니다(단, 템플릿 이름이 참고용으로 등록됨).
    * 디자인 속성을 유지하려면 [디자인 모드](/help/sites-authoring/default-components-designmode.md)를 사용합니다.
-   * Because editing static templates is the exclusive task of a developer, please see the developer document [Page Templates - Static](/help/sites-developing/page-templates-static.md) for more information.
+   * 정적 템플릿을 편집하는 것은 개발자의 유일한 작업이므로 자세한 내용은 개발자 문서 [페이지 템플릿 - 정적](/help/sites-developing/page-templates-static.md)을 참조하십시오.
 
 정의에 따라, 템플릿 콘솔 및 템플릿 편집기는 편집 가능 템플릿의 작성 및 편집만 허용합니다. 따라서 이 문서는 편집 가능 템플릿에만 중점을 둡니다.
 
-### 템플릿을 사용하여 페이지 만들기 {#using-a-template-to-create-a-page}
+### 템플릿을 사용하여 페이지 만들기  {#using-a-template-to-create-a-page}
 
 템플릿을 사용하여 [새 페이지를 만들 경우](/help/sites-authoring/managing-pages.md#creating-a-new-page) 정적 및 편집 가능 템플릿 간에 차이점은 없으며 구분하는 표시도 없습니다. 페이지 작성자를 위해 프로세스는 투명하게 진행됩니다.
 
@@ -157,7 +157,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
 ### 새 템플릿 만들기 - 템플릿 작성자 {#creating-a-new-template-template-author}
 
-1. Open the **Templates Console** (via **Tools** -> **General**) then navigate to the required folder.
+1. **템플릿 콘솔**(**도구** -> **일반**&#x200B;을 통해)을 열고 필요한 폴더로 이동합니다.
 
    >[!NOTE]
    >
@@ -184,7 +184,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
    >
    >새 템플릿이 작성되면 콘솔에서 **초안**&#x200B;으로 표시되어 페이지 작성자가 아직 사용할 수 없음을 나타냅니다.
 
-### 템플릿 속성 정의 - 템플릿 작성자 {#defining-template-properties-template-author}
+### 템플릿 속성 정의 - 템플릿 작성자  {#defining-template-properties-template-author}
 
 템플릿에는 다음 속성을 지정할 수 있습니다.
 
@@ -229,7 +229,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
 1. 썸네일이 만족스러우면 **저장 및 닫기**&#x200B;를 클릭하거나 탭합니다.
 
-### 템플릿 활성화 및 허용 - 템플릿 작성자 {#enabling-and-allowing-a-template-template-author}
+### 템플릿 활성화 및 허용 - 템플릿 작성자  {#enabling-and-allowing-a-template-template-author}
 
 페이지를 작성할 때 템플릿을 사용하려면 다음을 수행해야 합니다.
 
@@ -272,7 +272,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
    >
    >**허용된 템플릿** 목록을 비워 두면 값/목록을 찾을 때까지 상위 트리까지 검색됩니다.
    >
-   >See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.
+   >[템플릿 가용성](/help/sites-developing/templates.md#template-availability)을 참조하십시오. 허용되는 템플릿에 대한 원칙은 동일하게 유지됩니다.
 
 1. **저장**&#x200B;을 클릭하여 페이지 속성에 대한 변경 사항을 저장합니다.
 
@@ -290,7 +290,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
 1. 도구 모음에서 **게시**&#x200B;를 선택하여 작업을 완료합니다.
 
-## 템플릿 편집 - 템플릿 작성자 {#editing-templates-template-authors}
+## 템플릿 편집 - 템플릿 작성자  {#editing-templates-template-authors}
 
 템플릿을 만들거나 편집할 때 다양한 측면을 정의할 수 있습니다. 템플릿 편집 작업은 페이지 작성과 유사합니다.
 
@@ -466,7 +466,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
    구성을 제거하려면 구성 오른쪽에 있는 **삭제** 단추를 클릭하거나 탭합니다.
 
-   구성을 제거하려면** 삭제** 단추를 클릭하거나 탭합니다.
+   구성을 제거하려면** 삭제** 버튼을 클릭하거나 탭합니다.
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
@@ -561,7 +561,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
    ![chlimage_1-378](assets/chlimage_1-378.png)
 
-* ****&#x200B;기존 페이지에 대한 관계
+* **기존 페이지에 대한 관계**
 
    템플릿을 기준으로 페이지를 작성한 후 구조가 업데이트된 경우 이러한 페이지는 템플릿의 변경 사항을 반영합니다. 확인 대화 상자와 함께 이 사실을 알려주는 경고가 도구 모음에 표시됩니다.
 
@@ -609,11 +609,11 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
 ### 템플릿 편집 - 페이지 디자인 - 템플릿 작성자/개발자 {#editing-a-template-page-design-template-author-developer}
 
-The page design including required client-side libraries and page policies are maintained under the **Page Design** option of the **Page Information** menu.
+필수 클라이언트측 라이브러리 및 페이지 정책을 포함하는 페이지 디자인은 **페이지 정보** 메뉴의 **페이지 디자인** 옵션 아래에서 유지됩니다.
 
 **페이지 디자인** 대화 상자에 액세스하려면:
 
-1. From the **Template Editor**, select **Page Information** from the toolbar, then **Page Design** to open the dialog.
+1. **템플릿 편집기**&#x200B;의 도구 모음에서 **페이지 정보**&#x200B;를 선택한 다음 **페이지 디자인**&#x200B;을 선택하여 대화 상자를 엽니다.
 1. **페이지 디자인** 대화 상자가 열리고 두 개의 섹션으로 나뉩니다.
 
    * 왼쪽 절반 섹션에서는 [페이지 정책](/help/sites-authoring/templates.md#page-policies)을 정의합니다.
