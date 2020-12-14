@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 70%
+ht-degree: 71%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 70%
 
 * [작성](/help/sites-authoring/author.md)([페이지 작성](/help/sites-authoring/author-environment-tools.md), [자산 관리](/help/assets/home.md), [커뮤니티](/help/communities/author-communities.md) 포함)
 
-* [웹 사이트에서 컨텐츠를 생성하고 유지 관리할 때 필요한 작업 관리](/help/sites-administering/home.md)
+* 웹 사이트에서 컨텐츠를 생성하고 유지 관리할 때 필요한 작업 [관리](/help/sites-administering/home.md)
 
 이를 달성하기 위해 두 가지 그래픽 사용자 인터페이스가 제공되며, 이 인터페이스는 최신 브라우저를 통해 액세스할 수 있습니다.
 
@@ -55,7 +55,7 @@ ht-degree: 70%
 
 ## UI 전환
 
-Although the touch-enabled UI is now the standard UI and [feature parity](../release-notes/touch-ui-features-status.md) has been nearly reached with the administration and editing of sites, there may be times when the user wishes to switch to the [classic UI](/help/sites-classic-ui-authoring/classicui.md). 이를 위해 몇 가지 옵션을 제공합니다.
+터치 지원 UI가 이제 표준 UI이고 [기능 패리티](../release-notes/touch-ui-features-status.md)에 사이트의 관리 및 편집이 거의 도달했지만 사용자가 [클래식 UI](/help/sites-classic-ui-authoring/classicui.md)로 전환하려고 할 때가 있을 수 있습니다. 이를 위해 몇 가지 옵션을 제공합니다.
 
 >[!NOTE]
 >
@@ -63,11 +63,11 @@ Although the touch-enabled UI is now the standard UI and [feature parity](../rel
 
 어느 UI를 사용해야 하는지를 결정할 수 있는 다양한 위치가 있습니다.
 
-* [인스턴스용](#configuring-the-default-ui-for-your-instance) 기본 UI 구성 - 사용자가 이 설정을 무시할 수 있고 계정 또는 현재 세션에 대해 다른 UI를 선택할 수 있지만 사용자 로그인 시 기본 UI가 표시되도록 설정됩니다.
+* [인스턴스용 기본 UI 구성](#configuring-the-default-ui-for-your-instance)  - 사용자가 이 UI를 무시하고 계정 또는 현재 세션에 대해 다른 UI를 선택할 수 있지만 사용자 로그인 시 기본 UI가 표시되도록 설정됩니다.
 
-* [계정에](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account) 대한 클래식 UI 작성 설정 - 이 설정을 사용하면 페이지 편집 시 UI가 기본적으로 사용되도록 설정됩니다. 사용자는 이 설정을 무시할 수 있으며 계정 또는 현재 세션에 대해 다른 UI를 선택할 수 있습니다.
+* [계정에 대한 클래식 UI 작성 설정](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account)  - 사용자가 페이지를 편집할 때 UI가 기본적으로 사용되도록 설정되지만, 이 설정을 무시할 수 있으며 계정 또는 현재 세션에 대해 다른 UI를 선택할 수 있습니다.
 
-* [현재 세션에 대한 클래식 UI로 전환](#switching-to-classic-ui-for-the-current-session) - 현재 세션에 대한 클래식 UI로 전환합니다.
+* [현재 세션에 대한 클래식 UI로 전환](#switching-to-classic-ui-for-the-current-session)  - 현재 세션에 대한 클래식 UI로 전환합니다.
 
 * 페이지 작성의 경우 [UI와 관련하여 특정 항목이 무시됩니다.](#ui-overrides-for-the-editor).
 
@@ -75,13 +75,13 @@ Although the touch-enabled UI is now the standard UI and [feature parity](../rel
 >
 >클래식 UI로 전환에 대한 여러 옵션은 즉시 사용할 수 없습니다. 인스턴스에 대해 특별히 구성되어 있어야 합니다.
 >
->See [Enabling Access to Classic UI](/help/sites-administering/enable-classic-ui.md) for more information.
+>자세한 내용은 [클래식 UI에 대한 액세스 활성화](/help/sites-administering/enable-classic-ui.md)를 참조하십시오.
 
 >[!NOTE]
 >
 >이전 버전에서 업그레이드된 인스턴스는 페이지 작성을 위해 클래식 UI를 유지합니다.
 >
->After upgrade, page authoring will not be automatically switched to the touch-enabled UI, but you can configure this using the [OSGi configuration](/help/sites-deploying/configuring-osgi.md) of the **WCM Authoring UI Mode Service** ( `AuthoringUIMode` service). [편집기에 대해 UI 무시](#ui-overrides-for-the-editor)를 참조하십시오.
+>업그레이드 후 페이지 작성이 터치 지원 UI로 자동 전환되지 않지만, **WCM 작성 UI 모드 서비스**( `AuthoringUIMode` 서비스)의 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을 사용하여 구성할 수 있습니다. [편집기에 대해 UI 무시](#ui-overrides-for-the-editor)를 참조하십시오.
 
 ## 인스턴스용 기본 UI 구성 {#configuring-the-default-ui-for-your-instance}
 
@@ -106,7 +106,7 @@ Although the touch-enabled UI is now the standard UI and [feature parity](../rel
    >클래식 UI로 전환에 대한 이 옵션은 즉시 사용할 수 없습니다. 인스턴스에 대해 특별히 구성되어 있어야 합니다.
    >
    >
-   >See [Enabling Access to Classic UI](/help/sites-administering/enable-classic-ui.md) for more information.
+   >자세한 내용은 [클래식 UI에 대한 액세스 활성화](/help/sites-administering/enable-classic-ui.md)를 참조하십시오.
 
    활성화한 경우, 적용 가능한 콘솔에 마우스 커서를 가져다 댈 때마다 아이콘(모니터 기호)이 표시되며, 이 아이콘을 탭/클릭하는 경우 클래식 UI에서 해당 위치가 열립니다.
 
@@ -116,7 +116,7 @@ Although the touch-enabled UI is now the standard UI and [feature parity](../rel
 
 * **URL**
 
-   The classic UI can be accessed using the URL for the welcome screen at `welcome.html`. For example:
+   클래식 UI는 `welcome.html`의 시작 화면에 대한 URL을 사용하여 액세스할 수 있습니다.예:
 
    `http://localhost:4502/welcome.html`
 
@@ -133,7 +133,7 @@ Although the touch-enabled UI is now the standard UI and [feature parity](../rel
 >
 >클래식 UI로 전환에 대한 이 옵션은 즉시 사용할 수 없습니다. 인스턴스에 대해 특별히 구성되어 있어야 합니다.
 >
->See [Enabling Access to Classic UI](/help/sites-administering/enable-classic-ui.md) for more information.
+>자세한 내용은 [클래식 UI에 대한 액세스 활성화](/help/sites-administering/enable-classic-ui.md)를 참조하십시오.
 
 활성화된 경우 **페이지 정보** 대화 상자에서 **클래식 UI로 열기**&#x200B;를 사용할 수 있습니다.
 
@@ -145,17 +145,17 @@ Although the touch-enabled UI is now the standard UI and [feature parity](../rel
 
 * 페이지 작성 시:
 
-   * Use of the classic editor is forced when accessing the page using `cf#` in the URL. 예:
+   * URL에서 `cf#`을 사용하여 페이지에 액세스할 때는 클래식 편집기를 사용할 수 밖에 없습니다. 예:
 
       `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-   * Use of the touch-enabled editor is forced when using `/editor.html` in the URL or when using a touch device. 예:
+   * URL에서 `/editor.html`을 사용하거나 터치 장치를 사용할 때는 터치 지원 편집기를 사용할 수 밖에 없습니다. 예:
 
       `http://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * 이러한 강제성은 모두 일시적이며 브라우저 세션에 대해서만 유효합니다.
 
-   * A cookie set will be set dependent on whether touch-enabled ( `editor.html`) or classic ( `cf#`) is used.
+   * 설정된 쿠키는 터치 활성화( `editor.html`) 또는 클래식( `cf#`) 사용 여부에 따라 다르게 설정됩니다.
 
 * `siteadmin`을 통해 페이지를 열 때에는 다음 항목이 있는지 확인하게 됩니다.
 
