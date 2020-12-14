@@ -20,15 +20,15 @@ ht-degree: 3%
 
 # 샘플 ContextHub 저장소 후보{#sample-contexthub-store-candidates}
 
-ContextHub에서는 솔루션에서 사용할 수 있는 몇 가지 샘플 스토어 지원자를 제공합니다. 각 샘플에 대해 다음 정보가 제공됩니다.
+ContextHub는 솔루션에서 사용할 수 있는 몇 가지 샘플 스토어 지원자를 제공합니다. 각 샘플에 대해 다음 정보가 제공됩니다.
 
 * 학습 목적으로 소스 코드를 열 수 있는 위치.
 * 스토어 지원자로부터 만든 스토어를 구성하는 방법입니다.
-* 사용자가 액세스할 수 있도록 저장소 데이터를 구성하는 방법입니다.
+* 저장소 데이터에 액세스할 수 있도록 데이터를 구성하는 방법입니다.
 
 >[!WARNING]
 >
->샘플 스토어 지원자는 프로젝트에 대한 고유한 전용 구성을 구축하는 데 도움이 되는 참조 구성으로 제공되며 이와 같이 직접 사용해서는 안 됩니다.
+>샘플 스토어 지원자는 프로젝트에 대한 고유한 전용 구성을 구축하는 데 도움이 되는 참조 구성으로 제공되며 이와 같이 직접 사용해서는 안됩니다.
 
 ## aem.segmentation 샘플 스토어 후보 {#aem-segmentation-sample-store-candidate}
 
@@ -40,7 +40,7 @@ ContextHub에서는 솔루션에서 사용할 수 있는 몇 가지 샘플 스�
 
 ### 기본 구현 {#base-implementation-segmentation}
 
-aem.segmentation store 후보자가 확장합니다 [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+aem.segmentation store 후보자가 [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore)을(를) 확장합니다.
 
 ### 구성 {#configuration-segmentation}
 
@@ -56,7 +56,7 @@ aem.segmentation 저장소를 만들 때 자세한 구성을 제공할 필요가
 }
 ```
 
-## contexthub.geolocation 샘플 스토어 후보 {#contexthub-geolocation-sample-store-candidate}
+## contexthub.geolocation 샘플 저장소 후보 {#contexthub-geolocation-sample-store-candidate}
 
 contexthub.geolocation 샘플 저장소 지원자는 Google Maps를 사용하여 클라이언트 위치에 대한 정보를 얻고 저장합니다.
 
@@ -66,7 +66,7 @@ contexthub.geolocation 샘플 저장소 지원자는 Google Maps를 사용하여
 
 ### 기본 구현 {#base-implementation-geolocation}
 
-contexthub.geolocation store 후보가 확장되었습니다 [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+contexthub.geolocation 저장소 후보가 [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore)을(를) 확장합니다.
 
 ### 구성 {#configuration-geolocation}
 
@@ -101,7 +101,7 @@ contexthub.geolocation store 후보가 확장되었습니다 [`ContextHub.Store.
 
 ### 데이터 항목 {#data-items-geolocation}
 
-스토어는 다음 예와 유사한 데이터 트리를 사용합니다.
+저장소는 다음 예와 유사한 데이터 트리를 사용합니다.
 
 ```xml
 {
@@ -112,7 +112,7 @@ contexthub.geolocation store 후보가 확장되었습니다 [`ContextHub.Store.
 
 >[!NOTE]
 >
->Chrome 50.x에서 도입된 보안 정책은 모든 지리적 위치 관련 호출이 보안 연결을 통해 이루어지도록 해야 합니다. 따라서 AEM이 https를 통해 실행되는 경우 AEM은 지리적 위치 API 호출에 https 사용을 강제 적용합니다. 그렇지 않은 경우 http는 동일한 원본 정책을 준수하기 위해 사용됩니다. Chrome [의 변경 사항에 대한 자세한 내용은 이 Google 블로그 게시물을](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) 참조하십시오.
+>Chrome 50.x에 도입된 보안 정책에서는 모든 지리적 위치 관련 호출이 보안 연결을 통해 이루어지도록 해야 합니다. 따라서 AEM이 https를 통해 실행 중인 경우 AEM은 지리적 위치 API 호출에 https 사용을 강제 적용합니다. 그렇지 않은 경우 http는 동일한 원본 정책을 준수하기 위해 사용됩니다. 크롬의 변경 사항에 대한 자세한 내용은 [이 Google 블로그 게시물](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only)을 참조하십시오.
 
 ## contexthub.surferinfo 샘플 스토어 후보 {#contexthub-surferinfo-sample-store-candidate}
 
@@ -124,15 +124,15 @@ contexthub.geolocation store 후보가 확장되었습니다 [`ContextHub.Store.
 
 ### 기본 구현 {#base-implementation-surferinfo}
 
-contexthub.datetime 저장소 후보가 확장됩니다 [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
+contexthub.datetime 저장소 후보가 [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore)을(를) 확장합니다.
 
 ### 구성 {#configuration-surferinfo}
 
-기본 구성은 `ContextHub.Store.PersistedStore`
+기본 구성은 `ContextHub.Store.PersistedStore`에서 상속됩니다.
 
 ### 데이터 항목 {#data-items-surferinfo}
 
-이 스토어 지원자를 사용하는 스토어에는 다음 예와 유사한 데이터 트리가 있습니다.
+이 스토어 후보자를 사용하는 스토어에는 다음 예와 유사한 데이터 트리가 있습니다.
 
 ```xml
 {
@@ -181,9 +181,9 @@ contexthub.datetime 저장소 후보가 확장됩니다 [`ContextHub.Store.Persi
 }
 ```
 
-## granite.에뮬레이터 샘플 스토어 후보 {#granite-emulators-sample-store-candidate}
+## granite.에뮬레이터 샘플 저장소 후보 {#granite-emulators-sample-store-candidate}
 
-granite.에뮬레이터 샘플 저장소 지원자는 클라이언트 장치에 대한 정보를 저장합니다.
+granite.에뮬레이터 샘플 저장소 후보자는 클라이언트 장치에 대한 정보를 저장합니다.
 
 ### 소스 위치 {#source-location-emulators}
 
@@ -191,11 +191,11 @@ granite.에뮬레이터 샘플 저장소 지원자는 클라이언트 장치에 
 
 ### 기본 구현 {#base-implementation-emulators}
 
-contexthub.geolocation store 후보가 확장되었습니다 [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
+contexthub.geolocation 저장소 후보가 [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore)을(를) 확장합니다.
 
 ### 구성 {#configuration-emulators}
 
-기본 구성에는 서로 다른 장치에 대한 정보를 `defaultEmulators` 포함하는 이름이 지정된 배열이 포함됩니다. 스토어를 만들 때 다음 예제에 표시된 형식을 사용하여 필요에 따라 세부 구성 속성에 다른 장치 프로파일을 제공하십시오.
+기본 구성에는 다른 장치에 대한 정보를 포함하는 `defaultEmulators` 배열이 포함됩니다. 스토어를 만들 때 다음 예제에 나와 있는 형식을 사용하여 필요에 따라 [세부 구성] 속성에 다른 장치 프로파일을 제공합니다.
 
 ```xml
 {
@@ -314,7 +314,7 @@ contexthub.geolocation store 후보가 확장되었습니다 [`ContextHub.Store.
 }
 ```
 
-## granite.profile Sample Store Candier {#granite-profile-sample-store-candidate}
+## granite.profile Sample Store 후보 {#granite-profile-sample-store-candidate}
 
 현재 사용자에 대한 정보를 저장합니다.
 
@@ -324,7 +324,7 @@ contexthub.geolocation store 후보가 확장되었습니다 [`ContextHub.Store.
 
 ### 기본 구현 {#base-implementation-profile}
 
-contexthub.datetime 저장소 후보가 확장됩니다 [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+contexthub.datetime 저장소 후보가 [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore)을(를) 확장합니다.
 
 ### 구성 {#configuration-profile}
 
@@ -343,7 +343,7 @@ contexthub.datetime 저장소 후보가 확장됩니다 [`ContextHub.Store.Persi
 
 ### 데이터 항목 {#data-items-profile}
 
-이 스토어 지원자를 사용하는 스토어에는 다음 예와 유사한 데이터 트리가 있습니다.
+이 스토어 후보자를 사용하는 스토어에는 다음 예와 유사한 데이터 트리가 있습니다.
 
 ```xml
 {
