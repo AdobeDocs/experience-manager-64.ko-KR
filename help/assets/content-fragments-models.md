@@ -21,7 +21,7 @@ ht-degree: 91%
 
 >[!CAUTION]
 >
->일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](../release-notes/sp-release-notes.md)버전이 필요합니다.
+>일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](../release-notes/sp-release-notes.md)의 응용 프로그램이 필요합니다.
 
 컨텐츠 조각 모델은 [컨텐츠 조각](content-fragments.md)에 대한 컨텐츠 구조를 정의합니다.
 
@@ -29,7 +29,7 @@ ht-degree: 91%
 
 >[!CAUTION]
 >
->If you do not enable **[!UICONTROL Content Fragment Models]**, the **[!UICONTROL Create]** option will not be available for creating new models.
+>**[!UICONTROL 컨텐츠 조각 모델]**&#x200B;을 활성화하지 않으면 **[!UICONTROL 만들기]** 옵션을 사용하여 새 모델을 만들 수 없습니다.
 
 컨텐츠 조각 모델을 활성화하려면 필요한 단계가 있습니다.
 
@@ -41,7 +41,7 @@ ht-degree: 91%
 [새 컨텐츠 조각 모델을 생성](#creating-a-content-fragment-model)하려면 먼저 구성 관리자를 사용하여 컨텐츠 조각 모델을 활성화&#x200B;**해야 합니다**.
 
 1. **[!UICONTROL 도구]**, **[!UICONTROL 일반]**&#x200B;으로 이동한 후 **[!UICONTROL Configuration Browser]**&#x200B;를 엽니다.
-   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
+   * 자세한 내용은 [구성 브라우저 설명서](/help/sites-administering/configurations.md)를 참조하십시오.
 1. 웹 사이트에 적합한 위치를 선택합니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 사용하여 대화 상자를 열고 여기에서
 
@@ -94,7 +94,7 @@ ht-degree: 91%
 
    >[!NOTE]
    >
-   >When a field is **Required**, the **Label** indicated in the left pane will be marked with an asterix (**&amp;ast;**).
+   >필드가 **Required**&#x200B;이면 왼쪽 창에 표시된 **레이블**&#x200B;이 asterix(**&amp;ast;**)로 표시됩니다.
 
    ![cfm-6420-12](assets/cfm-6420-12.png)
 
