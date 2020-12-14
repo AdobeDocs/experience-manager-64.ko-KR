@@ -22,7 +22,7 @@ ht-degree: 98%
 
 >[!CAUTION]
 >
->일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md)버전이 필요합니다.
+>일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md)의 응용 프로그램이 필요합니다.
 
 AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산으로 작성 및 관리](/help/assets/content-fragments.md)됩니다.
 
@@ -32,7 +32,7 @@ AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산
 
 >[!NOTE]
 >
->**컨텐츠 조각** 및 **[경험 조각](/help/sites-authoring/experience-fragments.md)**은 AEM 내의 다양한 기능입니다.
+>**컨텐츠 조각** 및 **[경험 조각](/help/sites-authoring/experience-fragments.md)**&#x200B;은 AEM 내의 다양한 기능입니다.
 >
 >* **컨텐츠 조각**&#x200B;은 편집 가능한 컨텐츠이며, 주로 텍스트나 관련 이미지입니다. 또한 디자인과 레이아웃이 없는 순수 컨텐츠입니다.
 >* **경험 조각**&#x200B;은 전체적으로 배치된 컨텐츠, 즉 웹 페이지 조각입니다.
@@ -144,7 +144,7 @@ AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산
 >
 >조각 소스를 편집하면 해당 컨텐츠 조각을 참조하는 모든 페이지에 영향을 줍니다.
 
-## 중간 컨텐츠 추가 {#adding-in-between-content}
+## 중간 컨텐츠 추가  {#adding-in-between-content}
 
 특정 컨텐츠 조각이 페이지에 추가되면 조각의 각 HTML 단락 사이(및 상단/하단)에 **[!UICONTROL 구성 요소를 여기로 드래그하십시오.]** 자리 표시자가 있습니다.
 
@@ -182,7 +182,7 @@ AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산
 
 
 
-## 관련 컨텐츠 사용 {#using-associated-content}
+## 관련 컨텐츠 사용  {#using-associated-content}
 
 [관련 컨텐츠](/help/assets/content-fragments-assoc-content.md)를 [컨텐츠 조각](/help/assets/content-fragments.md)과 연결한 경우 이러한 자산은 사이드 패널에서 사용할 수 있습니다(조각을 컨텐츠 페이지에 배치한 후에). 연관된 컨텐츠는 [중간 컨텐츠](#adding-in-between-content)의 특별한 컨텐츠 소스입니다.
 
