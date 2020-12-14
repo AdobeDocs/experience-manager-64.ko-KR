@@ -56,14 +56,14 @@ CSV 내보내기 만들기 마법사를 사용하여 다음을 선택할 수 있
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
-The create **CSV Export** option is available when browsing the **Sites** console (in List view): it is an option of the **Create** drop down menu:
+목록 보기에서 **사이트** 콘솔을 탐색할 때 **CSV 내보내기** 만들기 옵션을 사용할 수 있습니다.**만들기** 드롭다운 메뉴의 옵션입니다.
 
 ![screen_shot_2018-03-21at154719](assets/screen_shot_2018-03-21at154719.png)
 
 CSV 내보내기를 만들려면:
 
 1. **사이트** 콘솔을 열고 필요한 경우 필요한 위치로 이동합니다.
-1. From the toolbar, select **Create** then **CSV Export** to open the wizard:
+1. 도구 모음에서 **만들기**, **CSV 내보내기**&#x200B;를 차례로 선택하여 마법사를 엽니다.
 
    ![screen_shot_2018-03-21at154758](assets/screen_shot_2018-03-21at154758.png)
 
