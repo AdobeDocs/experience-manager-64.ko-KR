@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 80395c4695b326474f9ae0e73caa075a5782eaf6
 workflow-type: tm+mt
 source-wordcount: '530'
-ht-degree: 80%
+ht-degree: 84%
 
 ---
 
@@ -36,7 +36,7 @@ AEM은 타깃팅된 컨텐츠를 작성하고 개인화된 환경을 제공하�
 
 활동은 또한 페이지에서 사용하는 [타깃팅 엔진](/help/sites-authoring/personalization.md#targeting-engine)을 식별합니다.
 
-브랜드를 위한 활동을 만들고 관리하려면 [활동 콘솔](/help/sites-authoring/activitylib.md)을 사용하십시오. You can also create activities as you [author targeted content](/help/sites-authoring/content-targeting-touch.md).
+브랜드를 위한 활동을 만들고 관리하려면 [활동 콘솔](/help/sites-authoring/activitylib.md)을 사용하십시오. [타깃팅된 컨텐츠를 작성](/help/sites-authoring/content-targeting-touch.md)할 때 활동을 만들 수도 있습니다.
 
 ## 경험 {#experiences}
 
@@ -48,7 +48,7 @@ AEM은 타깃팅된 컨텐츠를 작성하고 개인화된 환경을 제공하�
 
 활동을 위한 경험을 정의합니다. [활동 콘솔](/help/sites-authoring/activitylib.md#adding-editing-an-activity-using-the-activities-console)이나 [타깃팅 모드](/help/sites-authoring/content-targeting-touch.md#adding-and-removing-experiences-using-targeting-mode)를 사용하여 활동에 경험을 추가할 수 있습니다.
 
-## 오퍼 {#offers}
+## 오퍼  {#offers}
 
 오퍼는 경험을 위한 페이지에서 위치에 나타나는 컨텐츠입니다. 서로 다른 경험에 대해 서로 다른 오퍼를 사용하여 대상을 위한 컨텐츠의 효과를 극대화하십시오.
 
@@ -56,7 +56,7 @@ AEM은 타깃팅된 컨텐츠를 작성하고 개인화된 환경을 제공하�
 
 [오퍼 콘솔](/help/sites-authoring/offerlib.md)을 사용하여 여러 경험에서 사용할 수 있는 오퍼를 만드십시오. [타깃팅된 컨텐츠를 작성](/help/sites-authoring/content-targeting-touch.md)할 때 단일 사용 오퍼를 만들거나 오퍼 라이브러리의 오퍼를 추가하십시오.
 
-## 타깃팅 엔진 {#targeting-engine}
+## 타깃팅 엔진  {#targeting-engine}
 
 타깃팅 엔진은 타깃팅된 컨텐츠에 대한 논리를 실행하는 메커니즘입니다. [활동](/help/sites-authoring/activitylib.md)은 사용 가능한 두 개의 타깃팅 엔진인 AEM과 Adobe Target 중 하나를 사용하도록 구성되어 있습니다.
 
@@ -71,4 +71,4 @@ Adobe Target 타깃팅 엔진을 사용하면 페이지 방문에서 수집된 �
 * 이 타깃팅 엔진을 사용하는 경우, Adobe Target에서 가져오는 세그먼트를 사용하여 경험의 대상을 정의합니다.
 * Adobe Target 엔진을 사용하는 활동은 [Target에 동기화](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target)됩니다.
 
-You can use this engine when you have [integrated with Adobe Target](/help/sites-administering/opt-in.md).
+[이(가) Adobe Target](/help/sites-administering/opt-in.md)에 통합된 경우 이 엔진을 사용할 수 있습니다.
