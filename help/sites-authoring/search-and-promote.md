@@ -18,7 +18,7 @@ ht-degree: 79%
 ---
 
 
-# Adding Search&amp;Promote features to your page{#adding-search-promote-features-to-your-page}
+# 페이지{#adding-search-promote-features-to-your-page}에 Search &amp; Promote 기능 추가
 
 웹 사이트에서 Search&amp;Promote 기능을 통합하려면 Search&amp;Promote 구성 요소를 사용하여 페이지에 다음 기능을 추가하십시오.
 
@@ -31,5 +31,5 @@ AEM 관리자가 활성화한 경우에만 Search&amp;Promote 기능을 사용�
 
 >[!NOTE]
 >
->페이지에 Search&amp;Promote 기능을 추가하는 방법에 대한 세부 사항은 클래식 UI 작성 설명서에서 확인할 수 있습니다. See [Adding Search &amp; Promote features to your page](/help/sites-classic-ui-authoring/classic-feature-search-promote.md) for more information.
+>페이지에 Search&amp;Promote 기능을 추가하는 방법에 대한 세부 사항은 클래식 UI 작성 설명서에서 확인할 수 있습니다. 자세한 내용은 [페이지](/help/sites-classic-ui-authoring/classic-feature-search-promote.md)에 검색 및 홍보 기능 추가를 참조하십시오.
 
