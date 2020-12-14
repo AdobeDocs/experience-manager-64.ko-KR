@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 5ba23738118d7944026f405110e25b6a7f90866b
 workflow-type: tm+mt
 source-wordcount: '1311'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 
@@ -90,7 +90,7 @@ ht-degree: 82%
    >
    >[템플릿 편집기](/help/sites-authoring/templates.md)를 사용하여 나만의 템플릿을 생성할 수 있습니다.
 
-다음 예는 에 따라 구조화된 경험 조각을 보여줍니다 `Contributors`. 사용된 구조는 다중 사이트 관리(언어 사본 포함)와 같은 다른 기능을 사용할 방법도 보여줍니다.
+다음 예는 `Contributors`에 따라 구조화된 경험 조각을 보여줍니다. 사용된 구조는 다중 사이트 관리(언어 사본 포함)와 같은 다른 기능을 사용할 방법도 보여줍니다.
 
 >[!CAUTION]
 >
@@ -108,7 +108,7 @@ ht-degree: 82%
 
 >[!NOTE]
 >
->It is also possible to configure the [Allowed Templates for your instance](#configure-allowed-templates-instance), but this method is **not** recommended as the values may be overwritten upon upgrade.
+>인스턴스](#configure-allowed-templates-instance)에 대해 [허용되는 템플릿을 구성할 수도 있지만 업그레이드 시 값을 덮어쓸 수 있으므로 이 메서드는 **not**&#x200B;권장됩니다.
 
 ### 폴더에 대해 허용되는 템플릿 구성 {#configure-allowed-templates-folder}
 
@@ -133,7 +133,7 @@ ht-degree: 82%
 
 >[!CAUTION]
 >
->It is not recommended to change the **[!UICONTROL Allowed Templates]** by this method, as the templates specified may be overwritten upon upgrade.
+>지정한 템플릿이 업그레이드 시 덮어쓰여질 수 있으므로 이 방법으로 **[!UICONTROL 허용되는 템플릿]**&#x200B;을 변경하는 것이 좋습니다.
 >
 >이 대화 상자는 정보용으만 사용하십시오.
 
@@ -157,7 +157,7 @@ ht-degree: 82%
 
    ![screen_shot_2018-04-05at92221am1](assets/screen_shot_2018-04-05at92221am1.png)
 
-1. Navigate to the required folder and select **[!UICONTROL Create]**.
+1. 필요한 폴더로 이동하고 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 
 1. **[!UICONTROL 경험 조각]**&#x200B;을 선택하여 **[!UICONTROL 경험 조각 만들기]** 마법사를 엽니다.
 
@@ -181,11 +181,11 @@ ht-degree: 82%
 
 ## 경험 조각 편집 {#editing-your-experience-fragment}
 
-[경험 조각 편집기]는 일반 페이지 편집기와 유사한 기능을 제공합니다. See [Editing Page Content](/help/sites-authoring/editing-content.md) for more information on how to use it.
+[경험 조각 편집기]는 일반 페이지 편집기와 유사한 기능을 제공합니다. 사용 방법에 대한 자세한 내용은 [페이지 컨텐츠 편집](/help/sites-authoring/editing-content.md)을 참조하십시오.
 
 다음 예제 프로시저는 제품에 대한 티저를 작성하는 방법을 보여 줍니다.
 
-1. Drag and drop a **[!UICONTROL Category Teaser]** from the [Components Browser](/help/sites-authoring/author-environment-tools.md#components-browser).
+1. [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser)에서 **[!UICONTROL 카테고리 티저]**&#x200B;를 드래그하여 놓습니다.
 
    ![xf-authoring-04](assets/xf-authoring-04.png)
 
@@ -289,15 +289,15 @@ ht-degree: 82%
 
 ## 일반 HTML 표현물 {#the-plain-html-rendition}
 
-Using the `.plain.` selector in the URL, you can access the plain HTML rendition.
+URL의 `.plain.` 선택기를 사용하여 일반 HTML 변환에 액세스할 수 있습니다.
 
-이는 브라우저에서 사용할 수 있지만 주요 목적은 URL만 사용하여 다른 응용 프로그램(예: 타사 웹 앱, 사용자 지정 모바일 구현)이 경험 조각의 컨텐츠에 직접 액세스하도록 허용하는 것입니다.
+이 기능은 브라우저에서 사용할 수 있지만, 주요 목적은 URL만 사용하여 다른 응용 프로그램(예: 제3자 웹 앱, 사용자 지정 모바일 구현)이 경험 조각의 컨텐츠에 직접 액세스하도록 허용하는 것입니다.
 
 일반 HTML 변환은 다음과 같은 경로에 프로토콜, 호스트 및 컨텍스트 경로를 추가합니다.
 
-* 의 유형: `src`, `href`또는 `action`
+* 의 유형:`src`, `href` 또는 `action`
 
-* 또는 다음으로 끝남: `-src`, 또는 `-href`
+* 다음으로 끝남:`-src` 또는 `-href`
 
 예:
 
@@ -305,7 +305,7 @@ Using the `.plain.` selector in the URL, you can access the plain HTML rendition
 
 >[!NOTE]
 >
->링크는 항상 게시 인스턴스를 참조합니다. 이러한 링크는 타사에서 소비하기 위한 것이므로 작성자가 아닌 게시 인스턴스에서 항상 호출됩니다.
+>링크는 항상 게시 인스턴스를 참조합니다. 이러한 링크는 제3자가 소비하기 위한 것이므로 작성자가 아니라 게시 인스턴스에서 항상 링크가 호출됩니다.
 
 ![xf-authoring-17](assets/xf-authoring-17.png)
 
