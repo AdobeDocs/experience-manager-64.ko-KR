@@ -32,7 +32,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
 
 ![chlimage_1-140](assets/chlimage_1-140.png)
 
-검색 패널을 사용하면 모든 웹 사이트 페이지를 검색할 수 있습니다. 여기에는 다음에 대한 필드와 위젯이 포함되어 있습니다.
+검색 패널을 사용하면 모든 웹 사이트 페이지를 검색할 수 있습니다.여기에는 다음에 대한 필드와 위젯이 포함되어 있습니다.
 
 * **전체 텍스트**: 지정된 텍스트 검색
 * **수정 이후/이전**: 특정 날짜 사이에 변경된 페이지만 검색
@@ -81,7 +81,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
    * 대/소문자를 구분하여 검색할지를 지정합니다.
    * 단어 단위로만 찾을지 아니면 부분 문자열도 찾을지를 지정합니다.
 
-   Clicking **Preview** lists where the term has been found. You can select/clear specific instances to be replaced:
+   **미리 보기**&#x200B;를 클릭하면 해당 용어가 검색된 위치가 나열됩니다.바꿀 특정 인스턴스를 선택하거나 취소할 수 있습니다.
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
@@ -94,7 +94,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
 * `jcr:text`
 * `text`
 
-The scope can be changed using the Apache Felix Web Management Console (for example, at `http://localhost:4502/system/console/configMgr`). Select `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` and configure the scope as required.
+Apache Felix 웹 관리 콘솔(예: `http://localhost:4502/system/console/configMgr`)을 사용하여 범위를 변경할 수 있습니다. `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)`을 선택하고 필요에 따라 범위를 구성합니다.
 
 >[!NOTE]
 >
