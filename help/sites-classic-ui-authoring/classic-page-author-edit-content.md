@@ -60,7 +60,7 @@ ht-degree: 99%
 
 * [페이지 속성 편집](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)
 
-* [scaffolding](/help/sites-authoring/scaffolding.md)
+* [스캐폴딩](/help/sites-authoring/scaffolding.md)
 
 * [클라이언트 컨텍스트](/help/sites-administering/client-context.md)
 
@@ -86,7 +86,7 @@ ht-degree: 99%
 
 1. 페이지에 필요한 구성 요소를 삽입합니다. 그런 다음 단락을 두 번 클릭하면 단락을 구성하고 컨텐츠를 추가할 수 있는 창이 열립니다.
 
-### 컨텐츠 파인더를 사용하여 구성 요소 삽입 {#inserting-a-component-using-the-content-finder}
+### 컨텐츠 파인더를 사용하여 구성 요소 삽입  {#inserting-a-component-using-the-content-finder}
 
 [컨텐츠 파인더](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder)에서 자산을 끌어 페이지에 새 구성 요소를 추가할 수도 있습니다. 이렇게 하면 자산이 포함된 적절한 유형의 새 구성 요소가 자동으로 만들어집니다.
 
@@ -105,7 +105,7 @@ ht-degree: 99%
 
 위의 자산 유형 중 하나를 끌어 구성 요소를 만들려면,
 
-1. 페이지가 [**편집&#x200B;**모드](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)인지 확인합니다.
+1. 페이지가 [**편집** 모드](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)인지 확인합니다.
 1. [컨텐츠 파인더](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder)를 엽니다.
 1. 필요한 자산을 필요한 위치로 끕니다. [구성 요소 자리 표시자](#componentplaceholder)는 구성 요소가 위치할 곳을 보여 줍니다.
 
@@ -113,7 +113,7 @@ ht-degree: 99%
 
 1. 필요할 경우 구성 요소를 [편집](#editmovecopypastedelete)합니다.
 
-## 구성 요소(컨텐츠 및 속성) 편집 {#editing-a-component-content-and-properties}
+## 구성 요소(컨텐츠 및 속성) 편집  {#editing-a-component-content-and-properties}
 
 기존 단락을 편집하려면 다음 중 하나를 수행합니다.
 
@@ -203,7 +203,7 @@ ht-degree: 99%
 
 [주석](/help/sites-classic-ui-authoring/classic-page-author-annotations.md)을 사용하면 다른 작성자가 컨텐츠에 대한 피드백을 제공할 수 있습니다. 검토 및 유효성 검사 목적으로 종종 사용됩니다.
 
-## 페이지 미리 보기 {#previewing-pages}
+## 페이지 미리 보기  {#previewing-pages}
 
 페이지 미리 보기에 중요한 사이드 킥의 하단 경계에는 두 가지 아이콘이 있습니다.
 
@@ -223,7 +223,7 @@ ht-degree: 99%
 
 ## 찾기 및 바꾸기 {#find-replace}
 
-동일한 구문을 대량으로 편집하는 경우 **[찾기 및 바꾸기](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)**메뉴 옵션을 사용하여 웹 사이트 섹션 내에서 문자열을 반복하여 찾거나 바꿀 수 있습니다.
+동일한 구문을 대량으로 편집하는 경우 **[찾기 및 바꾸기](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** 메뉴 옵션을 사용하여 웹 사이트 섹션 내에서 문자열을 반복하여 찾거나 바꿀 수 있습니다.
 
 ## 페이지 잠금 {#locking-a-page}
 
@@ -295,7 +295,7 @@ AEM에는 사용자가 수행한 작업 내역이 순서대로 저장됩니다. 
 * 단락 추가, 편집, 삭제 및 이동
 * 단락 내용 즉석 편집
 * 페이지 내 항목 복사, 잘라내기 및 붙여넣기
-* 페이지 간에 항목 복사, 잘라내기 및 붙여넣기
+* 페이지 간 항목 복사, 잘라내기 및 붙여넣기
 * 파일 및 이미지 추가, 삭제 및 변경
 * 주석 및 스케치 추가, 삭제 및 변경
 * 스캐폴드 변경
