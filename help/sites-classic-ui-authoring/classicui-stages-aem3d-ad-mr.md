@@ -41,18 +41,18 @@ ht-degree: 88%
 
 1. Mental Ray로 렌더링을 설정합니다.
 
-   Configure the **[!UICONTROL Render Settings]** with the following suggestions:
+   다음 제안 내용으로 **[!UICONTROL 렌더링 설정]**&#x200B;을 구성합니다.
 
-   * **[!UICONTROL 일반]** 탭
+   * **** 일반 탭
 
-      Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all [!UICONTROL Renderable Cameras].
+      모든 [!UICONTROL 렌더링 가능 카메라]에 대한 **[!UICONTROL 알파 채널(마스크)]** 확인란을 선택 취소합니다.
 
    * **[!UICONTROL Quality(품질) 탭]**
 
-      * **[!UICONTROL 전체 품질]**`- 0.5` 이하
-      * **[!UICONTROL 간접 확산(GI) 모드]** - `Final Gather`
-      * **[!UICONTROL 필터 크기]** - `2.0`, `2.0`
-   * 사용할 장면을 일반 이미지 크기로 렌더링합니다. If necessary, refine the lights, or [!UICONTROL Render settings], or do both to achieve the results you want.
+      * **[!UICONTROL 전체]** `- 0.5` 품질 저하
+      * **[!UICONTROL 간접 확산(GI) 모드]** -  `Final Gather`
+      * **[!UICONTROL 필터 크기]** -  `2.0`,  `2.0`
+   * 사용할 장면을 일반 이미지 크기로 렌더링합니다. 필요한 경우 광원 또는 [!UICONTROL 렌더링 설정]을 조정하거나 둘 다 원하는 결과를 얻도록 하십시오.
 
       이미지 기반 조명을 사용하는 Mental Ray로 렌더링하는 것은 속도가 매우 느리고 CPU를 많이 사용합니다. 따라서, 원하는 렌더링 품질을 만들 수 있는 가장 낮은 품질 설정을 구성하는 것이 좋습니다.
 
