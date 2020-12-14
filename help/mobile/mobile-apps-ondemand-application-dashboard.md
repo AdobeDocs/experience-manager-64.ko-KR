@@ -18,7 +18,7 @@ ht-degree: 4%
 ---
 
 
-# AEM Mobile 애플리케이션 대시보드 {#aem-mobile-application-dashboard}
+# AEM Mobile 응용 프로그램 대시보드 {#aem-mobile-application-dashboard}
 
 >[!NOTE]
 >
@@ -26,21 +26,21 @@ ht-degree: 4%
 
 AEM Mobile Application Dashboard 또는 Control Center에서 애플리케이션 및 모바일 앱 콘텐츠를 관리할 수 있습니다.
 
-&#39;...&#39;을 클릭하여 제어 센터의 각 타일로 드릴다운하여 세부 사항을 보거나 편집할 수 있습니다. 오른쪽 아래에 있습니다.
+제어 센터의 각 타일로 드릴다운하여 &#39;...&#39;을 클릭하여 세부 사항을 보거나 편집할 수 있습니다. 오른쪽 하단에 있습니다.
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
 >[!NOTE]
 >
->타일의 그래버 아이콘(왼쪽 상위 9개 점)을 클릭하여 타일의 순서를 재정렬할 수 있습니다. 주문 변경은 사용자별로 다르며 개별 사용자마다 다릅니다.
+>타일의 잡기 도구 아이콘(왼쪽 위 9점)을 클릭하여 타일 순서를 다시 정렬할 수 있습니다. 주문 변경은 사용자별로 다르며 개별 사용자마다 다릅니다.
 
-앱 콘텐츠를 관리하려면 개발자, 컨텐츠 작성자 및 관리자의 공동 노력이 필요합니다. 작성자는 앱 개발자가 생성한 템플릿과 구성 요소를 기반으로 페이지를 조작합니다.
+앱 컨텐츠를 관리하려면 개발자, 컨텐츠 작성자 및 관리자의 공동 노력이 필요합니다. 작성자는 앱 개발자가 생성한 템플릿과 구성 요소를 기반으로 페이지를 조작합니다.
 
 마지막으로 관리자는 업데이트된 앱 콘텐츠를 전략적으로 게시합니다.
 
 ## 앱 관리 타일 {#the-manage-app-tile}
 
-앱 **관리** 타일에는 사용 가능한 애플리케이션 정보가 표시됩니다.
+**앱 관리** 타일에는 사용 가능한 응용 프로그램 정보가 표시됩니다.
 
 * 제목
 * 설명
@@ -52,7 +52,7 @@ AEM Mobile Application Dashboard 또는 Control Center에서 애플리케이션 
 
 ## 연결 관리 타일 {#the-manage-connection-tile}
 
-연결 **관리** 타일에는 AEM Mobile On-demand Services 연결 정보가 표시됩니다.
+**연결 관리** 타일에는 AEM Mobile On-demand Services 연결 정보가 표시됩니다.
 
 * 클라우드 구성 이름
 * 프로젝트 이름 및 ID
@@ -60,78 +60,78 @@ AEM Mobile Application Dashboard 또는 Control Center에서 애플리케이션 
 
 >[!NOTE]
 >
->오른쪽 상단의 톱니바퀴 를 클릭하여 Mobile On-Demand Cloud 구성을 설정합니다.
+>오른쪽 상단의 톱니바퀴를 클릭하여 Mobile On-Demand Cloud 구성을 설정합니다.
 >
->자세한 [내용은 Mobile On-Demand Services](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) 구성을 참조하십시오.
+>자세한 내용은 [Mobile On-Demand Services 구성](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)을 참조하십시오.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
 ## 개체 관리 {#managing-entities}
 
-다음 3개의 타일은 앱의 콘텐츠 상태에 대한 개요를 제공합니다.
+다음 3개의 타일은 앱 콘텐츠 상태에 대한 개요를 제공합니다.
 
 * **배너**
 * **기사**
 * **컬렉션**
 
-오른쪽 하단에 있는 줄임표(..)를 클릭하여 각 타일을 확장하면 보다 자세한 목록 보기가 가능합니다. 이러한 목록 보기는 속성 삭제, 업로드 및 편집과 같은 일반적인 Mobile On Demand 작업에 액세스하는 대체 방법을 제공합니다.
+오른쪽 아래 모서리의 줄임표(..)를 클릭하여 보다 자세한 목록 보기를 제공하도록 각 타일을 확장할 수 있습니다. 이러한 목록 보기는 속성 삭제, 업로드 및 편집과 같은 일반적인 Mobile On Demand 작업에 액세스하는 대체 방법을 제공합니다.
 
 ### 배너 관리 타일 {#the-manage-banners-tile}
 
-배너 **관리** 타일을 사용하면 배너의 컨텐츠를 관리할 수 있습니다. 배너에 대해 다음 정보가 표시됩니다.
+**배너 관리** 타일에서 배너의 컨텐츠를 관리할 수 있습니다. 배너에 대해 다음 정보가 표시됩니다.
 
 * 이미지
-* **제목**: 배너의 이름
-* **수정됨**: AEM에서 최종 수정됨
-* **업로드됨**: AEM에서 업로드
-* **게시됨**: AEM에서 마지막으로 게시된 요청
-* **출처**: 소스(Mobile On Demand에서 AEM 로컬 또는 원격)
+* **제목**:배너의 이름
+* **수정됨**:aem에서 마지막으로 수정됨
+* **업로드됨**:aem에서 마지막 업로드
+* **게시됨**:aem에서 마지막으로 게시된 요청
+* **소스**:소스(Mobile On Demand에서 AEM 로컬 또는 원격)
 
-다음 이미지는 AEM Mobile 애플리케이션 대시보드의 **배너** 관리 타일을 보여줍니다.
+다음 이미지는 AEM Mobile Application Dashboard의 **배너 관리** 타일을 보여줍니다.
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
 >[!NOTE]
 >
->배너를 **[만들거나](/help/mobile/mobile-on-demand-managing-banners.md)**삭제하거나 업데이트하기 위한 배너 관리를 참조하십시오.
+>배너를 만들고, 삭제하거나 업데이트하려면 **[배너 관리](/help/mobile/mobile-on-demand-managing-banners.md)**&#x200B;를 참조하십시오.
 
 ### 아티클 관리 타일 {#the-manage-articles-tile}
 
-아티클 **관리** 타일에서 아티클에 대한 콘텐츠를 관리할 수 있습니다. 아티클에 대해 다음 정보가 표시됩니다.
+**아티클 관리** 타일에서 아티클의 콘텐츠를 관리할 수 있습니다. 아티클에 대해 다음 정보가 표시됩니다.
 
 * 이미지
-* **제목**: 아티클의 이름
-* **수정됨**: AEM에서 최종 수정됨
-* **업로드됨**: AEM에서 업로드
-* **게시됨**: AEM에서 마지막으로 게시된 요청
-* **출처**: 소스(Mobile On-Demand에서 AEM 로컬 또는 원격)
+* **제목**:아티클의 이름
+* **수정됨**:aem에서 마지막으로 수정됨
+* **업로드됨**:aem에서 마지막 업로드
+* **게시됨**:aem에서 마지막으로 게시된 요청
+* **소스**:소스(Mobile On-Demand에서 AEM 로컬 또는 원격)
 
-다음 이미지는 AEM Mobile 애플리케이션 대시보드의 **아티클** 관리 타일을 보여줍니다.
+다음 이미지는 AEM Mobile Application Dashboard의 **아티클 관리** 타일을 보여줍니다.
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
 >[!NOTE]
 >
->아티클을 [**만들거나&#x200B;**](/help/mobile/mobile-on-demand-managing-articles.md)삭제하거나 업데이트하기 위한 아티클 관리를 참조하십시오.
+>아티클을 만들거나, 삭제하거나, 업데이트하려면 [**아티클 관리**](/help/mobile/mobile-on-demand-managing-articles.md)&#x200B;를 참조하십시오.
 
 ### 컬렉션 관리 타일 {#the-manage-collections-tile}
 
-컬렉션 **관리** 타일에서 컬렉션의 콘텐츠를 관리할 수 있습니다. 다음 정보가 컬렉션에 표시됩니다.
+**컬렉션 관리** 타일에서 컬렉션의 콘텐츠를 관리할 수 있습니다. 컬렉션에 대해 다음 정보가 표시됩니다.
 
 * 이미지
-* **제목**: 컬렉션의 이름
-* **수정됨**: AEM에서 최종 수정됨
-* **업로드됨**: AEM에서 업로드
-* **게시됨**: AEM에서 마지막으로 게시된 요청
-* **출처**: 소스(Mobile On-Demand에서 AEM 로컬 또는 원격)
+* **제목**:컬렉션의 이름
+* **수정됨**:aem에서 마지막으로 수정됨
+* **업로드됨**:aem에서 마지막 업로드
+* **게시됨**:aem에서 마지막으로 게시된 요청
+* **소스**:소스(Mobile On-Demand에서 AEM 로컬 또는 원격)
 
-다음 이미지는 AEM Mobile 애플리케이션 대시보드의 **컬렉션** 관리 타일을 보여줍니다.
+다음 이미지는 AEM Mobile Application Dashboard의 **컬렉션 관리** 타일을 보여줍니다.
 
 ![chlimage_1-59](assets/chlimage_1-59.png)
 
 >[!NOTE]
 >
->컬렉션 **[만들기](/help/mobile/mobile-on-demand-managing-collections.md)**, 삭제 또는 업데이트를 위한 컬렉션 관리를 참조하십시오.
+>컬렉션을 만들거나, 삭제하거나, 업데이트하려면 **[컬렉션 관리](/help/mobile/mobile-on-demand-managing-collections.md)**&#x200B;를 참조하십시오.
 
 ### 다음 단계 {#the-next-steps}
 
