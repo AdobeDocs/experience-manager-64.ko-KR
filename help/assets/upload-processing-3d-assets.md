@@ -1,8 +1,8 @@
 ---
 title: AEM에서의 3D 자산 업로드 및 처리 정보
 seo-title: AEM에서의 3D 자산 업로드 및 처리 정보
-description: 3D 자산을 업로드하고 처리하기 위한 모범 사례
-seo-description: 3D 자산을 업로드하고 처리하기 위한 모범 사례
+description: 3D 자산 업로드 및 처리에 대한 우수 사례입니다.
+seo-description: 3D 자산 업로드 및 처리에 대한 우수 사례입니다.
 uuid: d8abf460-adff-4f0f-92ae-2c8651a17488
 contentOwner: Rick Brough
 topic-tags: 3D
@@ -22,13 +22,13 @@ ht-degree: 67%
 
 >[!IMPORTANT]
 >
->AEM 6.4의 AEM 3D는 더 이상 지원되지 않습니다. Adobe에서는 AEM의 3D 자산 기능을 Cloud Service [또는](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) AEM 6.5.3 이상으로 사용하는 것이 좋습니다 [](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html).
+>AEM 6.4의 AEM 3D는 더 이상 지원되지 않습니다. Adobe에서는 [AEM의 3D 자산 기능을 Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) 또는 [AEM 6.5.3 이상으로 사용하는 것이 좋습니다.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
 
 표준 업로드 또는 동기화 메커니즘을 사용하여 3D 자산과 관련 참조된 파일을 AEM Assets로 가져오십시오.
 
 [자산 업로드](managing-assets-touch-ui.md#uploading-assets)를 참조하십시오.
 
-기본 3D 모델 파일을 업로드하기 전이나 동시에 참조된 모든 파일을 업로드하는 것이 좋습니다. 그러나 요구 사항은 아닙니다.
+기본 3D 모델 파일을 업로드하려면 모든 참조된 파일을 이전 또는 동시에 업로드하는 것이 좋습니다. 그러나 요구 사항은 아닙니다.
 
 업로드가 완료되면, 자산을 보고 렌더링할 수 있도록 3D 파일이 변환되고, 추가적인 처리가 적용됩니다.
 
@@ -57,13 +57,13 @@ ht-degree: 67%
 
 3D 파일을 변환 및 처리하는 데에는 일반적으로 서버에서 상당한 CPU 및 메모리 리소스가 소비됩니다. 또한 상당한 시간이 소요됩니다. 처리 시간은 종종 모델의 크기와 서버의 기능에 따라 크게 달라집니다. 예를 들어 면이 10만 개 미만인 일반적인 작은 모델은 일반적으로 1분 미만이면 볼 수 있도록 준비가 되며, 2~3분이면 완전히 처리됩니다. 반면에 면이 백만 개 이상인 큰 모델은 완전히 처리하는 데 수십 분이 걸릴 수 있습니다.
 
-서버가 너무 많이 느려지는 방지하기 위해 전환, 처리 및 렌더링 작업은 필요에 따라 큐에 오르게 됩니다. The message &quot;Waiting for processing...&quot; is sometimes shown in the **[!UICONTROL Card View]** at the time you uploaded assets. 이 상태는 현재 자산이 처리되기 전에 다른 처리 또는 렌더링 작업이 완료되어야 함을 나타냅니다.
+서버가 너무 많이 느려지는 방지하기 위해 전환, 처리 및 렌더링 작업은 필요에 따라 큐에 오르게 됩니다. &quot;처리 대기 중...&quot; 메시지 은 자산을 업로드한 시점에 **[!UICONTROL 카드 보기]**&#x200B;에 표시되는 경우가 있습니다. 이 상태는 현재 자산이 처리되기 전에 다른 처리 또는 렌더링 작업이 완료되어야 함을 나타냅니다.
 
-처리 및 렌더링에 CPU 사용을 제한하는 메커니즘이 있습니다. CPU [제한](advanced-config-3d.md) 구성 방법에 대한 자세한 내용은 고급 구성 설정을 참조하십시오.
+통합 처리 및 렌더링에 CPU 사용을 제한하는 메커니즘이 있습니다. CPU 제한을 구성하는 방법에 대한 자세한 내용은 [고급 구성 설정](advanced-config-3d.md)을 참조하십시오.
 
 ## 업로드된 3D 파일의 처리 상태 모니터링 {#monitoring-the-processing-status-of-your-uploaded-d-files}
 
-In **[!UICONTROL Card View]** only, the processing status and progression is displayed as a progress banner on the asset&#39;s card. 업로드된 각 3D 모델은 일반적으로 다음 4-6개의 순서로 처리 단계를 수행합니다.
+**[!UICONTROL 카드 보기]**&#x200B;에서만 처리 상태 및 진행 상태가 자산의 카드에 진행 배너로 표시됩니다. 업로드된 각 3D 모델은 일반적으로 다음의 4-6개의 순서로 처리 단계를 수행합니다.
 
 <table> 
  <tbody> 
@@ -75,7 +75,7 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   <tr> 
    <td>1</td> 
    <td>처리 중</td> 
-   <td>기본적인 초기 처리 및 메타데이터 추출</td> 
+   <td>기본적인 초기 처리 및 메타데이터 추출.</td> 
   </tr> 
   <tr> 
    <td>2</td> 
@@ -90,17 +90,17 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   <tr> 
    <td>4</td> 
    <td>지면 그림자 만들기</td> 
-   <td>선택 사항입니다. 3D 개체 아래의 지표 평면에 배경 교합 그림자 효과를 생성할 수 있습니다. 이 처리 <a href="/help/assets/advanced-config-3d.md">를</a> 활성화하거나 비활성화하려면 고급 구성 설정을 참조하십시오.</td> 
+   <td>선택 사항입니다. 3D 개체 아래의 지표 평면에 주변과 교합 그림자 효과를 생성할 수 있습니다. 이 처리를 활성화하거나 비활성화하려면 <a href="/help/assets/advanced-config-3d.md">고급 구성 설정</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td>5<br /> </td> 
    <td>라이트맵 만들기</td> 
-   <td>선택 사항입니다. 대화형 미리 보기의 품질을 높이고 기본 렌더러의 렌더링을 신속하게 처리할 수 있도록 해줍니다. 이 처리 <a href="/help/assets/advanced-config-3d.md">를</a> 활성화하거나 비활성화하려면 고급 구성 설정을 참조하십시오.</td> 
+   <td>선택 사항입니다. 대화형 미리 보기의 품질을 높이고 기본 렌더러의 렌더링을 신속하게 처리할 수 있도록 해줍니다. 이 처리를 활성화하거나 비활성화하려면 <a href="/help/assets/advanced-config-3d.md">고급 구성 설정</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td>6<br /> </td> 
    <td>애니메이션 만들기</td> 
-   <td>선택 사항입니다. 카드 보기에서 시각적 썸네일로 사용되는 간단한 애니메이션을 렌더링할 수 있도록 해줍니다. 이 처리 <a href="/help/assets/advanced-config-3d.md">를</a> 활성화하거나 비활성화하려면 고급 구성 설정을 참조하십시오.</td> 
+   <td>선택 사항입니다. 카드 보기에서 시각적 썸네일로 사용되는 간단한 애니메이션을 렌더링할 수 있도록 해줍니다. 이 처리를 활성화하거나 비활성화하려면 <a href="/help/assets/advanced-config-3d.md">고급 구성 설정</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td>7<br /> </td> 
@@ -112,5 +112,5 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
 
 >[!NOTE]
 >
->You can view a 3D asset in **[!UICONTROL Detail View]** or render it after the Creating preview stage is complete. 모든 처리 단계가 완료될 때까지 기다릴 필요가 없습니다.
+>미리 보기 만들기 단계가 완료된 후 **[!UICONTROL 세부 사항 보기]**&#x200B;에서 3D 자산을 보거나 렌더링할 수 있습니다. 모든 처리 단계가 완료될 때까지 기다릴 필요가 없습니다.
 
