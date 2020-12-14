@@ -1,6 +1,6 @@
 ---
-title: 커뮤니티에 Maven 사용
-seo-title: 커뮤니티에 Maven 사용
+title: 커뮤니티에 대한 Maven 사용
+seo-title: 커뮤니티에 대한 Maven 사용
 description: AEM Communities API jar 및 AEM Uber API jar
 seo-description: AEM Communities API jar 및 AEM Uber API jar
 uuid: ea37a89a-db6c-4018-8ab9-f5717e6c0421
@@ -18,7 +18,7 @@ ht-degree: 6%
 ---
 
 
-# 커뮤니티에 Maven 사용 {#using-maven-for-communities}
+# 커뮤니티 {#using-maven-for-communities}에 대한 마비사항 사용
 
 ## 개요 {#overview}
 
@@ -28,7 +28,7 @@ AEM Communities 설명서의 이 섹션에서는 다음과 같은 항목을 다�
 
 이제 개별 아티팩트를 대체하는 두 가지 &quot;우버&quot; 아티팩트가 있습니다.
 
-* AEM [Communities API jar](#communities-api-jar-artifact)
+* AEM [커뮤니티 API jar](#communities-api-jar-artifact)
 * AEM [Uber API jar](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
 ## 커뮤니티 API Jar 아티팩트 {#communities-api-jar-artifact}
@@ -44,25 +44,25 @@ AEM Communities 설명서의 이 섹션에서는 다음과 같은 항목을 다�
 </dependency>
 ```
 
-지정한 버전이 AEM Communities용으로 설치된 커뮤니티 패키지 버전에 해당하는지 확인합니다. 설치된 버전 번호를 확인하려면:
+지정된 버전이 AEM Communities용으로 설치된 커뮤니티 패키지 버전과 일치하는지 확인합니다. 설치된 버전 번호를 확인하려면:
 
 1. 관리자 권한으로 로그인합니다.
-2. 패키지 관리자 [로 이동합니다](../../help/sites-administering/package-manager.md). 예: [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
+2. [패키지 관리자](../../help/sites-administering/package-manager.md)로 이동합니다. 예: [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
 
-3. 패키지 *cq-socialcommunities-pkg-1.x.xxx 찾기*
+3. 패키지 *cq-socialcommunities-pkg-1.x.xxx* 찾기
 4. 패키지 이름에서 버전 추출
-   * AEM 6.3의 첫 번째 버전은 버전 1.11.170입니다.
-   * 기능 팩은 버전 1.12.xxx이 됩니다.
+   * aem 6.3의 첫 번째 버전은 버전 1.11.170
+   * 기능 팩은 버전 1.12.xxx입니다.
 
 >[!NOTE]
 >
 >최신 커뮤니티 릴리스를 최신 상태로 유지하는 것이 좋습니다.
 >
->최신 릴리스 [섹션을](deploy-communities.md#latest-releases) 방문하여 최신 버전을 확인하십시오.
+>최신 버전을 확인하려면 [최신 릴리스](deploy-communities.md#latest-releases) 섹션을 참조하십시오.
 
-## MAVEN 종속성 예 {#maven-dependency-example}
+## 종속 관계 예 {#maven-dependency-example}
 
-Uber API jar 이전에 커뮤니티 API jar를 지정해야 합니다.
+커뮤니티 API jar를 Uber API jar 앞에 지정해야 합니다.
 
 ```xml
 <dependency>
