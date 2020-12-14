@@ -40,16 +40,16 @@ Live Copy는 소스 분기&#x200B;*의* 컨텐츠를 론치 분기&#x200B;*에* 
 표준 Live Copy를 편집하는 것과 동일한 방법으로 변경 작업을 수행할 수 있습니다. 예를 들면 다음과 같습니다.
 
 * 닫힌 자물쇠를 클릭하면 이 동기화가 중단되고 론치에서 컨텐츠를 새로 업데이트할 수 있습니다. 잠금 해제되면(열려 있는 자물쇠) 사용자가 수행한 변경 내용을 소스 분기 내의 동일한 위치에 수행된 변경 내용이 덮어쓰지 않습니다.
-* **특정 페이지에 대한 상속을 일시 중단** (및 **다시 시작**)합니다.
+* **특정 페이지에 대한 상속을 일시 중단** (및  **다시 시작**)합니다.
 
 자세한 내용은 [Live Copy 컨텐츠 변경](/help/sites-administering/msm-livecopy.md#changing-live-copy-content)을 참조하십시오.
 
-## 론치 페이지를 소스 페이지에 비교 {#comparing-a-launch-page-to-its-source-page}
+## 론치 페이지를 소스 페이지에 비교  {#comparing-a-launch-page-to-its-source-page}
 
 수행한 변경 작업을 추적하기 위해 **참조**&#x200B;에서 론치를 보고 론치 페이지를 소스 페이지와 비교할 수 있습니다.
 
 1. **사이트** 콘솔에서 [론치의 소스 페이지로 이동하여 선택합니다](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. **[참조](/help/sites-authoring/basic-handling.md#references)**패널을 열고&#x200B;**론치**를 선택합니다.
+1. **[참조](/help/sites-authoring/basic-handling.md#references)** 패널을 열고 **론치**&#x200B;를 선택합니다.
 1. 특정 론치를 선택한 다음, **소스와 비교**&#x200B;를 선택합니다.
 
    ![chlimage_1-96](assets/chlimage_1-96.png)
@@ -58,7 +58,7 @@ Live Copy는 소스 분기&#x200B;*의* 컨텐츠를 론치 분기&#x200B;*에* 
 
    이 기능의 사용에 대한 자세한 내용은 [페이지 비교](/help/sites-authoring/page-diff.md)를 참조하십시오.
 
-## 사용된 소스 페이지 변경 {#changing-the-source-pages-used}
+## 사용된 소스 페이지 변경  {#changing-the-source-pages-used}
 
 언제든지 론치용 소스 페이지의 범위에 페이지를 추가하거나 이 범위에서 페이지를 제거할 수 있습니다.
 
@@ -79,7 +79,7 @@ Live Copy는 소스 분기&#x200B;*의* 컨텐츠를 론치 분기&#x200B;*에* 
    >
    >페이지를 론치에 추가하려면 페이지가 일반 언어 루트 아래(즉, 단일 사이트 내)에 있어야 합니다.
 
-## 론치 구성 편집 {#editing-a-launch-configuration}
+## 론치 구성 편집  {#editing-a-launch-configuration}
 
 언제든지 론치의 속성을 편집할 수 있습니다.
 
@@ -98,7 +98,7 @@ Live Copy는 소스 분기&#x200B;*의* 컨텐츠를 론치 분기&#x200B;*에* 
 
    **론치 날짜** 및 **프로덕션 준비** 필드들의 목적과 상호 작용에 대해 알려면 [론치 - 이벤트 순서](/help/sites-authoring/launches.md#launches-the-order-of-events)를 참조하십시오.
 
-## 페이지의 론치 상태 찾기 {#discovering-the-launch-status-of-a-page}
+## 페이지의 론치 상태 찾기  {#discovering-the-launch-status-of-a-page}
 
 참조 탭에서 특정 론치를 선택하면 상태가 표시됩니다([참조(사이트 콘솔)의 론치](/help/sites-authoring/launches.md#launches-in-references-sites-console) 참조).
 
