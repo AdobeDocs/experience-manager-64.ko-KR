@@ -62,7 +62,7 @@ Analytics 보고서에 대한 다음 시간 관련 특성을 변경하십시오.
 
 1. 보고 기간의 종료 날짜를 변경하려면 음영 영역의 오른쪽에 나타나는 원을 원하는 종료 날짜로 드래그합니다.
 
-### 보고 기간의 세부기간 변경 {#changing-the-granularity-of-the-reporting-period}
+### 보고 기간의 세부기간 변경  {#changing-the-granularity-of-the-reporting-period}
 
 보고서에서 각 데이터 요소가 걸쳐 있는 시간을 변경하십시오. 예를 들어 주 세부기간을 선택하면 보기 보고서의 각 데이터 요소는 1주일 동안의 보기 횟수를 나타냅니다.
 
@@ -76,7 +76,7 @@ Analytics 보고서에 대한 다음 시간 관련 특성을 변경하십시오.
 
 1. 원하는 세부기간을 클릭하거나 탭합니다. 세부기간이 선택되면 이 세부기간을 반영하도록 보고서가 자동으로 업데이트됩니다.
 
-## SEO 추천용 작업 지정 {#assigning-tasks-for-seo-recommendations}
+## SEO 추천용 작업 지정  {#assigning-tasks-for-seo-recommendations}
 
 SEO 추천 보고서를 사용하여 검색 엔진에 대한 페이지 표시 향상을 위한 작업을 생성할 수 있습니다. 확인 표시가 없는 보고서의 각 추천에 대해 필요한 일을 수행하도록 사용자에게 지정할 작업을 생성할 수 있습니다.
 
@@ -86,7 +86,7 @@ SEO 추천의 상태는 작업이 생성되었지만 아직 완료되지 않았�
 
 ![chlimage_1-253](assets/chlimage_1-253.png)
 
-생성된 작업은 사용자의 작업 목록에 나타납니다. 작업에 대한 자세한 내용은 작업 [작업을 참조하십시오](/help/sites-authoring/task-content.md).
+생성된 작업은 사용자의 작업 목록에 나타납니다. 작업에 대한 자세한 내용은 [작업](/help/sites-authoring/task-content.md)을 참조하십시오.
 
 SEO 추천을 위한 작업을 생성하려면 다음 절차를 수행하십시오.
 
