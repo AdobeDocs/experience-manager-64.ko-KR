@@ -26,13 +26,13 @@ ht-degree: 96%
 >
 >이 섹션에서는 다양한 버전의 AEM에서 사용할 수 있고 기본 AEM 설치에서 바로 사용할 수 있는 기초 구성 요소에 대해 설명합니다. 그러나 많은 기본 구성 요소는 AEM 6.4에서 더 이상 사용되지 않습니다.
 >
->Adobe recommends leveraging the more modern and extensible [core components](https://helpx.adobe.com/experience-manager/core-components/using/authoring.html). 다음은 [We.Retail 샘플 컨텐츠](/help/sites-developing/we-retail.md)의 일부이며, 관리자가 [별도로 설치하여 개발에 사용](https://helpx.adobe.com/experience-manager/core-components/using/using.html)할 수도 있습니다.
+>Adobe은 보다 현대적이며 확장 가능한 [핵심 구성 요소](https://helpx.adobe.com/experience-manager/core-components/using/authoring.html)를 활용할 것을 권장합니다. 다음은 [We.Retail 샘플 컨텐츠](/help/sites-developing/we-retail.md)의 일부이며, 관리자가 [별도로 설치하여 개발에 사용](https://helpx.adobe.com/experience-manager/core-components/using/using.html)할 수도 있습니다.
 
 기초 구성 요소는 표준 웹 페이지의 컨텐츠를 작성할 때 사용하도록 설계되었습니다. 이러한 구성 요소는 AEM의 표준 설치 시 기본적으로 제공되는 구성 요소의 하위 집합을 형성합니다.
 
 일부는 구성 요소 브라우저를 통해 즉시 사용할 수 있으며, 다른 요소는 [디자인 모드](/help/sites-authoring/default-components-designmode.md)(페이지가 정적 템플릿을 기반으로 하는 경우) 또는 [템플릿 편집](/help/sites-authoring/templates.md)(페이지가 편집 가능한 템플릿을 기반으로 하는 경우)으로 사용할 수 있습니다.
 
-기본 구성 요소의 사용이 지원되지만 더 많은 확장성 및 유연성을 제공하는 핵심 구성 요소로 대체되었습니다.
+기본 구성 요소의 사용이 지원되지만, 더 많은 확장성 및 유연성을 제공하는 핵심 구성 요소로 대체되었습니다.
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ ht-degree: 96%
 ### 응용 이미지 {#adaptive-image}
 
 >[!CAUTION]
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe recommends leveraging the [Core Components Image Component](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html) instead.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소 이미지 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html)를 대신 활용할 것을 권장합니다.
 
 응용 이미지 기초 구성 요소는 웹 페이지가 열려 있는 창에 맞게 크기가 조정된 이미지를 생성합니다. 이 구성 요소를 사용하기 위해서는 파일 시스템 또는 DAM에서 이미지 리소스를 제공합니다. 웹 페이지가 열리면 웹 브라우저는 현재 창에 맞도록 크기가 조정된 이미지 사본을 다운로드합니다.
 
@@ -92,7 +92,7 @@ ht-degree: 96%
 
 >[!CAUTION]
 >
->&amp;ast;&amp;ast; 애니메이션이 적용된 .gif 파일은 AEM에서 응용 표현물을 지원하지 않습니다.
+>&amp;ast;&amp;ast;애니메이션이 적용된 .gif 파일은 적응형 표현물에 대해 AEM에서 지원되지 않습니다.
 
 #### 이미지 크기 및 품질 {#images-sizes-and-quality}
 
@@ -107,7 +107,7 @@ ht-degree: 96%
 | 뷰포트 너비 범위(픽셀) | 이미지 너비(픽셀) | JPEG 품질 | 타깃 장치 유형 |
 |---|---|---|---|
 | 너비 &lt;= 319 | 320 | 낮음 |  |
-| 너비 = 320 | 320 | 중간 | 휴대 전화(세로) |
+| 너비 = 320 | 320년 | 중간 | 휴대 전화(세로) |
 | 320 &lt; 너비 &lt; 481 | 480 | 중간 | 휴대 전화(가로) |
 | 480 &lt; 너비 &lt; 769 | 476 | 높음 | 태블릿(세로) |
 | 768 &lt; 너비 &lt; 1025 | 620 | 높음 | 태블릿(가로) |
@@ -173,7 +173,7 @@ ht-degree: 96%
 
 * **회전판**
 
-   회전판 작동 방식을 지정합니다.
+   여기서 Carousel의 작동 방식을 지정합니다.
 
    * 재생 속도
 
@@ -181,11 +181,11 @@ ht-degree: 96%
 
    * 전환 시간
 
-      두 슬라이드 간에 전환하는 데 걸리는 시간(밀리초)
+      두 슬라이드 간 전환을 위한 시간(밀리초)입니다.
 
    * 컨트롤 스타일
 
-      풀다운 메뉴에서 다양한 옵션을 사용할 수 있습니다. 예: 이전 / 다음 버튼, 오른쪽 위 스위치
+      풀다운 메뉴에서 다양한 옵션을 사용할 수 있습니다.예: 이전 / 다음 버튼, 오른쪽 위 스위치
 
 * **목록**
 
@@ -193,9 +193,9 @@ ht-degree: 96%
 
    * **목록 작성 방법**
 
-      페이지 목록을 만드는 방법으로는 하위 페이지, 고정 목록, 검색 또는 고급 검색(아래에 모두 설명됨)이 있습니다.
+      하위 페이지, 고정 목록, 검색 또는 고급 검색(아래에 모두 설명됨)과 같은 여러 가지 방법으로 페이지 목록을 만들 수 있습니다.
 
-      선택한 방법과 관계없이 목록에 포함된 각 페이지에는 이미지가 이미 연결되어 있어야 합니다. 회전판에 표시될 이 이미지입니다. 특정 페이지의 속성에 이미지가 없는 경우 작업을 시작하기 전에 페이지에 이미지를 연결해야 합니다. 그러지 않으면 회전판에 완전히 비어 있거나 대부분이 비어 있는 페이지가 표시됩니다. See [Editing Page Properties](/help/sites-authoring/editing-page-properties.md).
+      선택한 방법과 관계없이 목록에 포함된 각 페이지에는 이미지가 이미 연결되어 있어야 합니다. 회전판에 표시될 이 이미지입니다. 특정 페이지의 속성에 이미지가 없는 경우 작업을 시작하기 전에 페이지에 이미지를 연결해야 합니다. 그러지 않으면 회전판에 완전히 비어 있거나 대부분이 비어 있는 페이지가 표시됩니다. [페이지 속성 편집](/help/sites-authoring/editing-page-properties.md)을 참조하십시오.
 
       선택하는 항목에 따라 새 패널이 다르게 나타납니다.
 
@@ -205,7 +205,8 @@ ht-degree: 96%
 수동으로 또는 선택기를 사용하여 경로를 지정하십시오. 현재 페이지를 상위 페이지로 사용하려면 비워 두십시오.
       * **고정 목록 옵션**
 
-         * **페이지**&#x200B;페이지 목록을 선택합니다. 사용 
+         * ****
+페이지페이지 목록을 선택합니다.사용 
 `+` 항목을 더 추가하고 위쪽/아래쪽 단추를 추가하여 순서를 조정합니다.
       * **검색 옵션**
 
@@ -225,11 +226,11 @@ ht-degree: 96%
             쿼리 표현식 및 추가적인 예에 대한 전체 논의는 [QueryBuilder API](/help/sites-developing/querybuilder-api.md)를 참조하십시오.
    * **정렬 기준**
 
-      Select `jcr:title`, `jcr:created`, `cq:lastModified`, or `cq:template` from the dropdown menu.
+      드롭다운 메뉴에서 `jcr:title`, `jcr:created`, `cq:lastModified` 또는 `cq:template`을 선택합니다.
 
    * **제한**
 
-      회전판에서 사용할 최대 항목 수; 선택 사항입니다.
+      회전판에서 사용할 최대 항목 수;선택 사항입니다.
 
 
 
@@ -239,7 +240,7 @@ ht-degree: 96%
 >
 >AEM DAM에 있는 디지털 자산을 표시하는 Adobe Experience Manager용의 사용자 지정 회전판 구성 요소를 만들 수 있습니다. 자세한 내용은 [Adobe Experience Manager용 사용자 지정 회전판 구성 요소 만들기](https://helpx.adobe.com/kr/experience-manager/using/custom-carousel-components.html)를 참조하십시오.
 
-### Chart {#chart}
+### Chart  {#chart}
 
 차트 구성 요소로 막대, 라인 또는 파이 차트를 추가할 수 있습니다. 입력한 데이터를 바탕으로 AEM에서 차트를 만듭니다. 데이터 탭에 데이터를 직접 입력하거나 스프레드시트를 복사하여 붙여넣을 수 있습니다.
 
@@ -334,7 +335,7 @@ ht-degree: 96%
 ### Flash {#flash}
 
 >[!CAUTION]
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 파인더에서 Flash 자산을 드래그하거나 대화 상자를 사용할 수 있습니다.
 
@@ -404,7 +405,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 >
 >Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;을 클릭한 다음, 이미지를 다시 열어 업로드한 파일을 미리 보기에서 확인하고 수정할 수 있습니다(예: 자르기).
 >
->See the [Supported Platforms](/help/release-notes/release-notes.md#supported-platforms) section for more information about HTML5 features used by AEM.
+>AEM에서 사용하는 HTML5 기능에 대한 자세한 내용은 [지원되는 플랫폼](/help/release-notes/release-notes.md#supported-platforms) 섹션을 참조하십시오.
 
 이미지가 로드되면 다음 항목을 구성할 수 있습니다.
 
@@ -535,7 +536,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 ### 로그인 {#login}
 
 >[!CAUTION]
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 사용자 이름과 암호 필드를 제공합니다.
 
@@ -705,7 +706,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 
       나열을 시작할 경로입니다.
 
-### Slideshow {#slideshow}
+### Slideshow  {#slideshow}
 
 >[!CAUTION]
 >이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [회전 메뉴 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/carousel.html)를 대신 활용할 것을 권장합니다.
@@ -741,7 +742,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 
 >[!NOTE]
 >
->**표** 구성 요소는 **[텍스트](#text)**구성 요소처럼[리치 텍스트 편집기](/help/sites-authoring/rich-text-editor.md)를 기반으로 합니다.
+>**표** 구성 요소는 **[텍스트](#text)** 구성 요소처럼 [리치 텍스트 편집기](/help/sites-authoring/rich-text-editor.md)를 기반으로 합니다.
 >
 >표를 **텍스트** 구성 요소로도 만들 수 있지만 표에는 **표** 구성 요소를 사용하는 것이 좋습니다.
 
@@ -788,7 +789,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 
 >[!NOTE]
 >
->**텍스트** 구성 요소는 [](/help/sites-authoring/rich-text-editor.md)표&#x200B;**[구성 요소처럼 리치 텍스트 편집기](#table)**를 기반으로 합니다.
+>**텍스트** 구성 요소는 [](/help/sites-authoring/rich-text-editor.md)표&#x200B;**[구성 요소처럼 리치 텍스트 편집기](#table)**&#x200B;를 기반으로 합니다.
 >
 >표를 **텍스트** 구성 요소로도 만들 수 있지만 표에는 **표** 구성 요소를 사용하는 것이 좋습니다.
 
@@ -881,7 +882,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 
 **비디오** 구성 요소를 사용하면 사전 정의된 &quot;특별&quot; 비디오 요소를 페이지에 가져올 수 있습니다.
 
-See also [Configure the Video component](/help/sites-administering/config-video.md) for use with HTML5 elements.
+HTML5 요소와 함께 사용하기 위해 [비디오 구성 요소](/help/sites-administering/config-video.md)를 참조하십시오.
 
 페이지에서 구성 요소의 인스턴스를 배치한 후 다음 항목을 구성할 수 있습니다.
 
@@ -940,7 +941,7 @@ See also [Configure the Video component](/help/sites-administering/config-video.
 
 >[!NOTE]
 >
->AEM 양식에 대한 자세한 내용은 [AEM 양식 도움말](/help/forms/home.md)을 참조하십시오.
+>AEM Forms에 대한 자세한 내용은 [AEM Forms 도움말](/help/forms/home.md)을 참조하십시오.
 
 양식은 여러 가지 구성 요소로 이루어집니다.
 
@@ -1051,7 +1052,7 @@ See also [Configure the Video component](/help/sites-administering/config-video.
 
    * **CSS**
 
-### 양식(구성 요소) {#form-component}
+### 양식(구성 요소)  {#form-component}
 
 양식 구성 요소는 **양식 시작** 및 **양식 끝** 요소를 사용하여 양식의 시작과 끝을 정의합니다. 이러한 단락이 항상 쌍을 이루어야 양식이 올바르게 정의됩니다.
 
@@ -1061,7 +1062,7 @@ See also [Configure the Video component](/help/sites-administering/config-video.
 
 >[!NOTE]
 >
->기초 구성 요소 양식 구성 요소는 다른 기초 구성 요소 양식 구성 요소(예: 단추, 텍스트, 숨김 등)의 사용만 지원합니다. 기초 구성 요소 양식 없이 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) 양식 구성 요소를 사용할 수 없으며, 반대의 경우도 마찬가지입니다.
+>기초 구성 요소 양식 구성 요소는 다른 기초 구성 요소 양식 구성 요소(예: 단추, 텍스트, 숨김 등)의 사용만 지원합니다. 기초 구성 요소 양식 없이 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) 양식 구성 요소를 사용할 수 없으며, 반대의 경우도 마찬가지입니다.
 
 #### 양식 시작 {#start-of-form}
 
@@ -1078,7 +1079,8 @@ See also [Configure the Video component](/help/sites-administering/config-video.
 
 * **고급**
 
-   * **작업 유형**&#x200B;양식에는 작업이 필요합니다. 작업은 사용자가 제출한 데이터를 사용하여 실행되도록 트리거되는 작업을 정의합니다(HTML의 action=와 유사). 일부 사용자는 해당 
+   * **작업**
+유형양식에는 작업이 필요합니다.작업은 사용자가 제출한 데이터를 사용하여 실행되도록 트리거되는 작업을 정의합니다(HTML의 action=와 유사). 일부 사용자는 해당 
 **작업 구성**.
 
       표준 AEM 설치에는 다양한 작업 유형이 포함되어 있습니다.
@@ -1289,10 +1291,10 @@ See also [Configure the Video component](/help/sites-administering/config-video.
 
 구성 요소는 즉시 사용할 수 있도록 구성되지만 필요한 경우 구성을 변경할 수 있습니다. 예를 들어, 주소의 개별 요소에 대해 제한 사항을 추가할 수 있습니다. 필드를 비워 두면 기본 설정이 사용됩니다.
 
-### Captcha {#captcha}
+### Captcha  {#captcha}
 
 >[!CAUTION]
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을 입력하도록 요청합니다. 이 문자열은 새로 고칠 때마다 변경됩니다.
 
@@ -1300,7 +1302,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 
 이 구성 요소의 다양한 매개 변수를 구성할 수 있습니다. 예를 들어 Captcha 문자열을 잘못 입력한 경우에 표시할 메시지를 구성할 수 있습니다.
 
-### 확인란 그룹 {#checkbox-group}
+### 확인란 그룹  {#checkbox-group}
 
 확인란을 사용하여 동시에 선택 가능한 하나 이상의 확인란으로 구성된 목록을 만들 수 있습니다.
 
@@ -1317,7 +1319,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 ### 신용 카드 세부 사항 {#credit-card-details}
 
 >[!CAUTION]
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 신용 카드 세부 사항을 입력하는 데 필요한 필드를 제공할 수 있도록 해줍니다. 허용된 카드 유형과 필요한 정보(예: 보안 카드)를 지정하도록 구성할 수 있습니다.
 
@@ -1347,7 +1349,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 >
 >사용자 지정 업로드 구성 요소를 만들어 파일을 Sling 서블릿에 업로드할 수 있습니다. 자세한 내용은 [Adobe Experience Manager에 파일 업로드](https://helpx.adobe.com/kr/experience-manager/using/uploading-files-aem1.html)를 참조하십시오.
 
-### 숨김 필드 {#hidden-field}
+### 숨김 필드  {#hidden-field}
 
 이 구성 요소로 숨김 필드를 만들어 다양한 용도로 사용할 수 있습니다. 예를 들어 양식을 제출한 후 작업을 수행해야 할 때, 또는 사후 처리에서 데이터를 숨겨야 할 때가 있습니다.
 
@@ -1379,7 +1381,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 
 달력 이벤트 양식에서 이벤트의 URL/링크 필드로 가장 일반적으로 사용됩니다.
 
-### 암호 필드 {#password-field}
+### 암호 필드  {#password-field}
 
 사용자가 암호를 입력할 수 있도록 하는 데 사용됩니다.
 
