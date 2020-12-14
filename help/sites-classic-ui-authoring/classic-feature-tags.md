@@ -44,7 +44,7 @@ ht-degree: 88%
 
 작성 환경에서 작성자는 페이지 속성에 액세스하고 **태그/키워드** 필드에 하나 이상의 태그를 입력하여 태그를 적용할 수 있습니다.
 
-To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the `Tags/Keywords` field pull-down to select from the list of tags permitted for the page. Tthe **Standard Tags** tab is the default namespace, which means there is no `namespace-string:` prefixed to the taxonomy.
+[사전 정의된 태그](/help/sites-administering/tags.md)를 적용하려면 **페이지 속성** 창에서 `Tags/Keywords` 필드 풀다운을 사용하여 페이지에 대해 허용되는 태그 목록에서 선택합니다. **표준 태그** 탭은 기본 네임스페이스이므로 택소노법에 `namespace-string:` 접두사가 없습니다.
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
 
@@ -72,13 +72,13 @@ To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Pr
 
 [태그 클라우드](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#tag-cloud) 구성 요소(일반 구성 요소 그룹)는 태그 클라우드를 페이지에 추가하는 데 사용됩니다.
 
-## 태그 검색 {#searching-on-tags}
+## 태그 검색  {#searching-on-tags}
 
 작성 환경과 게시 환경 모두에서 태그를 검색할 수 있습니다.
 
-### 검색 구성 요소 사용 {#using-search-component}
+### 검색 구성 요소 사용  {#using-search-component}
 
-Adding a [Search component](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) to a page provides a search capability which includes tags and can be used in both the author and publish environments.
+페이지에 [검색 구성 요소](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search)를 추가하면 태그를 포함하는 검색 기능이 제공되며 작성 환경과 게시 환경 모두에서 사용할 수 있습니다.
 
 ![chlimage_1-3](assets/chlimage_1-3.png)
 
