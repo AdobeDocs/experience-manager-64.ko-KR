@@ -2,7 +2,7 @@
 title: 웹 페이지에 Dynamic Media 비디오 또는 이미지 뷰어 포함
 seo-title: 웹 페이지에 Dynamic Media 비디오 또는 이미지 뷰어 포함
 description: 웹 페이지에 Dynamic Media 비디오 또는 이미지를 임베드하는 방법 학습
-seo-description: 웹 페이지에 다이내믹 미디어 비디오 또는 이미지를 임베드하는 방법 학습
+seo-description: 웹 페이지에 다이내믹 미디어 비디오 또는 이미지를 포함하는 방법 학습
 uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -18,46 +18,46 @@ ht-degree: 0%
 ---
 
 
-# Embedding the Dynamic Media Video or Image viewer on a web page {#embedding-the-video-or-image-viewer-on-a-web-page}
+# 웹 페이지에 Dynamic Media 비디오 또는 이미지 뷰어 포함 {#embedding-the-video-or-image-viewer-on-a-web-page}
 
-비디오를 **[!UICONTROL 재생하거나 웹 페이지에 포함된 자산을]** 보려는 경우 포함 코드 기능을 사용합니다. 포함 코드를 클립보드에 복사하여 웹 페이지에 붙여넣을 수 있습니다. 포함 코드 대화 상자에서 코드 **[!UICONTROL 를 편집할 수]** 없습니다.
+비디오를 재생하거나 웹 페이지에 포함된 자산을 보려면 **[!UICONTROL 포함 코드]** 기능을 사용합니다. 포함 코드를 클립보드에 복사하여 웹 페이지에 붙여넣을 수 있습니다. **[!UICONTROL 포함 코드]** 대화 상자에서 코드 편집이 허용되지 않습니다.
 
-AEM을 WCM으로 사용하지 _않는_ 경우에만 URL을 포함합니다. AEM을 WCM으로 사용하는 경우 [자산을 페이지에 직접 추가합니다.](adding-dynamic-media-assets-to-pages.md)
+AEM을 WCM으로 사용하는 _이 아닌_&#x200B;인 경우에만 URL을 포함합니다. AEM을 WCM으로 사용하는 경우 [페이지에서 직접 자산을 추가합니다.](adding-dynamic-media-assets-to-pages.md)
 
-See [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
+[웹 응용 프로그램에 URL 연결을 참조하십시오.](linking-urls-to-yourwebapplication.md)
 
-See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
+[응답형 사이트에 대해 최적화된 이미지 제공을 참조하십시오.](responsive-site.md)
 
 >[!NOTE]
 >
->선택한 자산을 게시해야만 포함 코드를 복사할 수 있습니다. 또한 뷰어 사전 설정 또는 이미지 사전 설정도 게시해야 합니다.
+>선택한 자산을 게시하기 전에는 포함 코드를 복사할 수 없습니다. 또한 뷰어 사전 설정 또는 이미지 사전 설정도 게시해야 합니다.
 >
->자산 [게시를 참조하십시오](publishing-dynamicmedia-assets.md).
+>[자산 게시](publishing-dynamicmedia-assets.md)를 참조하십시오.
 >
->See [Publishing Viewer Presets](managing-viewer-presets.md#publishing-viewer-presets).
+>[게시 뷰어 사전 설정](managing-viewer-presets.md#publishing-viewer-presets)을 참조하십시오.
 >
->See [Publishing Image Presets](managing-image-presets.md#publishing-image-presets).
+>[이미지 사전 설정 게시](managing-image-presets.md#publishing-image-presets)를 참조하십시오.
 
 **웹 페이지에 Dynamic Media 비디오 또는 이미지 뷰어를 포함하려면 다음을 수행하십시오**.
 
-1. 포함 코드를 복사할 *게시된* 비디오 또는 이미지 자산으로 이동합니다.
+1. 포함 코드를 복사하려는 *게시된* 비디오 또는 이미지 자산으로 이동합니다.
 
-   포함 코드는 자산을 처음 *게시한* 후에만 *복사할 수* 있습니다. 또한 뷰어 사전 설정 또는 이미지 사전 설정도 게시해야 합니다.
+   *게시된*&#x200B;에셋을 *이후*&#x200B;만 복사할 수 있습니다. 또한 뷰어 사전 설정 또는 이미지 사전 설정도 게시해야 합니다.
 
-   자산 [게시를 참조하십시오.](publishing-dynamicmedia-assets.md)
+   [자산 게시를 참조하십시오.](publishing-dynamicmedia-assets.md)
 
-   See [Publishing Viewer Presets](managing-viewer-presets.md#publishing-viewer-presets).
+   [게시 뷰어 사전 설정](managing-viewer-presets.md#publishing-viewer-presets)을 참조하십시오.
 
-   See [Publishing Image Presets](managing-image-presets.md#publishing-image-presets).
+   [이미지 사전 설정 게시](managing-image-presets.md#publishing-image-presets)를 참조하십시오.
 
-1. 왼쪽 레일에서 드롭다운 메뉴를 선택하고 뷰어를 **[!UICONTROL 누릅니다]**.
+1. 왼쪽 레일에서 드롭다운 메뉴를 선택하고 **[!UICONTROL 뷰어]**&#x200B;를 누릅니다.
 1. 왼쪽 레일에서 뷰어 사전 설정 이름을 누릅니다. 뷰어 사전 설정이 자산에 적용됩니다.
-1. 포함을 **[!UICONTROL 누릅니다]**.
-1. 포함 코드 **** 대화 상자에서 전체 코드를 클립보드로 복사한 다음 **[!UICONTROL 닫기를 누릅니다]**.
+1. **[!UICONTROL 포함]**&#x200B;을 누릅니다.
+1. **[!UICONTROL 포함 코드]** 대화 상자에서 전체 코드를 클립보드로 복사한 다음 **[!UICONTROL 닫기]**&#x200B;를 누릅니다.
 1. 포함 코드를 웹 페이지에 붙여넣습니다.
 
-## HTTP/2를 사용하여 다이내믹 미디어 에셋 전달 {#using-http-to-deliver-your-dynamic-media-assets}
+## HTTP/2를 사용하여 Dynamic Media 에셋 {#using-http-to-deliver-your-dynamic-media-assets} 제공
 
-HTTP/2는 브라우저와 서버의 통신 방식을 향상시키는 업데이트된 새로운 웹 프로토콜입니다. 정보를 빠르게 전송할 수 있고 필요한 처리 능력을 줄일 수 있습니다. HTTP/2를 통해 다이내믹 미디어 에셋을 전달할 수 있으므로 응답 및 로드 시간이 향상됩니다.
+HTTP/2는 브라우저와 서버의 통신 방식을 향상시키는 업데이트된 새로운 웹 프로토콜입니다. 정보를 빠르게 전송할 수 있고 필요한 처리 능력을 줄일 수 있습니다. 이제 Dynamic Media 에셋 배달을 HTTP/2를 통해 더 나은 응답 및 로드 시간을 제공할 수 있습니다.
 
-Dynamic Media 계정 [으로 HTTP/2 사용을 시작하는 방법에 대한 자세한 내용은 HTTP2 컨텐츠](http2.md) 배달을 참조하십시오.
+Dynamic Media 계정으로 HTTP/2를 사용하는 시작에 대한 자세한 내용은 [HTTP2 콘텐츠 제공](http2.md)을 참조하십시오.
