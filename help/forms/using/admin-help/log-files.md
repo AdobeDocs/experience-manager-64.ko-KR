@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Log files {#log-files}
+# 로그 파일 {#log-files}
 
-런타임 또는 시작 오류와 같은 이벤트는 애플리케이션 서버 로그 파일에 기록됩니다. 응용 프로그램 서버에 배포하는 데 문제가 있는 경우 로그 파일을 사용하여 문제를 찾을 수 있습니다. 텍스트 편집기를 사용하여 로그 파일을 열 수 있습니다.
+런타임 또는 시작 오류와 같은 이벤트는 응용 프로그램 서버 로그 파일에 기록됩니다. 응용 프로그램 서버에 배포하는 데 문제가 있는 경우 로그 파일을 사용하여 문제를 찾을 수 있습니다. 텍스트 편집기를 사용하여 로그 파일을 열 수 있습니다.
 
 (JBoss) 다음 로그 파일이 `*[appserver root]*/server/*[server]*/log` 디렉토리에 있습니다.
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 * server.log.*[yyyy-mm-dd]*
 * server.log
 
-(WebLogic) 도메인 로그 파일은 *[appserverdomain]* 디렉토리에 있고 서버 로그 파일은 *[appserverdomain]/servers/[appserver name]/logs *디렉토리:
+(WebLogic) 도메인 로그 파일은 *[appserverdomain]* 디렉터리에 있으며 서버 로그 파일은 *[appserverdomain]/servers/[appserver name]/logs *directory:
 
 * access.log
 * *[appserver name]*.log
