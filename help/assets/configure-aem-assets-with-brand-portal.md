@@ -80,7 +80,7 @@ Brand Portal에 AEM Assets을 처음 구성하는 경우 단계를 나열된 순
 
 >[!NOTE]
 >
->AEM Assets 작성자 인스턴스는 하나의 브랜드 포털 테넌트로 구성됩니다.
+>AEM Assets 작성자 인스턴스는 하나의 브랜드 포털 임차인으로만 구성할 수 있습니다.
 
 ### IMS 구성 만들기 {#create-ims-configuration}
 
@@ -125,7 +125,7 @@ IMS 구성에는 두 단계가 포함됩니다.
 
    **계정** 탭에서 Adobe IMS 계정을 만듭니다. 하지만 이를 위해서는 통합에 대한 세부 사항이 필요합니다. 우선은 이 페이지를 열어 두십시오.
 
-   Open a new tab and [Create Adobe I/O integration](#createnewintegration) to get the integration details for IMS Account configurations.
+   새 탭을 열고 [Adobe I/O 통합 만들기](#createnewintegration)를 클릭하여 IMS 계정 구성에 대한 통합 세부 정보를 가져옵니다.
 
 ### Adobe I/O 통합 만들기 {#createnewintegration}
 
@@ -271,7 +271,7 @@ Brand Portal 클라우드 서비스 구성을 만들려면 다음 단계를 수�
    >
    >일부 자산의 복제가 실패할 수 있으므로 복제 에이전트를 비활성화하지 마십시오.
    >
-   >시간 초과 오류를 방지하도록 네 개의 복제 에이전트가 모두 구성되어 있는지 확인합니다. See [troubleshoot issues in parallel publishing to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
+   >시간 초과 오류를 방지하도록 4개의 복제 에이전트가 모두 구성되어 있는지 확인합니다. 브랜드 포털](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout)에 동시 게시 시 문제 해결을 참조하십시오.[
 
 Brand Portal이 AEM Assets 작성자 인스턴스로 구성되었습니다. 이제 다음을 수행할 수 있습니다.
 
