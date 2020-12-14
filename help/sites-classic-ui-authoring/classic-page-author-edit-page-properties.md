@@ -82,7 +82,7 @@ ht-degree: 96%
 
    이 페이지의 별칭 URL을 입력할 수 있습니다. 이를 통해 더 간단하고 기억에 남는 URL을 만들 수 있습니다.
 
-   For example, if the Vanity URL is set to w `elcome`to the page identified by the path / `v1.0/startpage`for the website h `ttp://example.com,` then h `ttp://example.com/welcome`would be the vanity URL of h `ttp://example.com/content/v1.0/startpage`
+   예를 들어 별칭 URL이 웹 사이트 h `ttp://example.com,`의 경로 / `v1.0/startpage`에 대해 식별되는 페이지에 `elcome`으로 설정된 경우 h `ttp://example.com/welcome`은 h `ttp://example.com/content/v1.0/startpage`의 별칭 URL이 됩니다.
 
    >[!CAUTION]
    >
@@ -172,13 +172,13 @@ ht-degree: 96%
 
    [다중 사이트 관리](/help/sites-administering/msm.md) 내에서 [블루프린트] 페이지에 대한 속성을 정의합니다. 수정 내용이 Live Copy로 전파되는 상황을 제어합니다.
 
-### Live Copy {#live-copy}
+### Live Copy  {#live-copy}
 
 * **Livecopy**
 
    [다중 사이트 관리](/help/sites-administering/msm.md) 내에서 Live Copy 페이지에 대한 속성을 정의합니다. 수정 내용이 Live Copy로 전파되는 상황을 제어합니다.
 
-### 사이트 구조 {#site-structure}
+### 사이트 구조  {#site-structure}
 
 * **등록 페이지**, **오프라인 페이지** 등과 같이 사이트 전체 기능을 제공하는 페이지에 대한 링크를 제공합니다.
 
