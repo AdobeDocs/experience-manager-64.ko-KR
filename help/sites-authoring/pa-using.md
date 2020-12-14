@@ -76,17 +76,17 @@ analytics-administrators 사용자 그룹의 구성원은 작성자가 추가 An
 
 ### 사이트에서 컨텐츠 인사이트 열기 {#opening-content-insights-from-sites}
 
-Open [Content Insight](/help/sites-authoring/content-insights.md) from the Sites console to further investigate page effectiveness.
+사이트 콘솔에서 [컨텐츠 인사이트](/help/sites-authoring/content-insights.md)를 열어 페이지 효과를 자세히 조사합니다.
 
 1. 사이트 콘솔에서 컨텐츠 인사이트를 보려는 페이지를 선택합니다.
 1. 도구 모음에서 [분석 및 권장 사항] 아이콘을 클릭합니다.
 
    ![](do-not-localize/chlimage_1-16.png)
 
-## 페이지 편집기에서 볼 수 있는 Analytics(활동 맵) {#analytics-visible-from-the-page-editor-activity-map}
+## 페이지 편집기에서 볼 수 있는 Analytics(활동 맵)  {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!CAUTION]
 >
 >Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다.
 >
->The [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/ko-KR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.
+>이제 Adobe Analytics](https://docs.adobe.com/content/help/ko-KR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)에서 제공하는 [ActivityMap 플러그인을 사용해야 합니다.
