@@ -20,5 +20,5 @@ ht-degree: 37%
 
 # Sling 커닝 페이퍼{#sling-cheatsheet}
 
-![chlimage_1-97](assets/chlimage_1-97.png)![chlimage_1-98](assets/chlimage_1-98.png)
+![chlimage_1-97](assets/chlimage_1-97.png) ![chlimage_1-98](assets/chlimage_1-98.png)
 
