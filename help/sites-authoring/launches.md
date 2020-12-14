@@ -101,7 +101,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->Creating and editing launches requires access rights to `/content/launches` - as with the default group `content-authors`.
+>론치를 만들고 편집하려면 기본 그룹 `content-authors`과 같이 `/content/launches`에 대한 액세스 권한이 필요합니다.
 >
 >문제가 발생하면 시스템 관리자에게 문의하십시오.
 
