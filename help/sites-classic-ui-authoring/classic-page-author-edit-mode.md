@@ -30,9 +30,9 @@ ht-degree: 94%
 >
 >사용자 인스턴스에 따라 사용자 요구 사항에 맞게 명시적으로 개발된 구성 요소를 사용자 지정했을 수 있습니다. 이러한 구성 요소는 여기서 설명한 구성 요소 중 일부와 이름이 같을 수도 있습니다.
 
-The components are available when [editing a page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) from the **Components** tab of the sidekick and the **Insert New Component** selector (when you double-click in the **Drag components or assets here** area).
+구성 요소는 [사이드 킥의 **구성 요소** 탭 및 **새 구성 요소 삽입** 선택기에서 페이지](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md)을 편집할 때 사용할 수 있습니다(**구성 요소 또는 자산을 여기로 드래그하십시오** 영역).
 
-You can select a component and drag it to the required location on your page and then [Edit Content and Properties](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties).
+구성 요소를 선택하고 페이지에서 필요한 위치로 드래그한 다음 [컨텐트 및 속성 편집](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties).
 
 구성 요소는 다음을 포함하여(페이지 작성용) 다양한 카테고리(구성 요소 그룹)에 따라 정렬됩니다.
 
@@ -72,7 +72,7 @@ You can select a component and drag it to the required location on your page and
 
 >[!CAUTION]
 >
->&amp;ast;&amp;ast; 애니메이션이 적용된 .gif 파일은 AEM에서 응용 표현물을 지원하지 않습니다.
+>&amp;ast;&amp;ast;애니메이션이 적용된 .gif 파일은 적응형 표현물에 대해 AEM에서 지원되지 않습니다.
 
 #### 이미지 크기 및 품질 {#images-sizes-and-quality}
 
@@ -87,7 +87,7 @@ You can select a component and drag it to the required location on your page and
 | 뷰포트 너비 범위(픽셀) | 이미지 너비(픽셀) | JPEG 품질 | 타깃 장치 유형 |
 |---|---|---|---|
 | 너비 &lt;= 319 | 320 | 낮음 |  |
-| 너비 = 320 | 320 | 중간 | 휴대폰(세로) |
+| 너비 = 320 | 320년 | 중간 | 휴대폰(세로) |
 | 320 &lt; 너비 &lt; 481 | 480 | 중간 | 휴대폰(가로) |
 | 480 &lt; 너비 &lt; 769 | 476 | 높음 | 태블릿(세로) |
 | 768 &lt; 너비 &lt; 1025 | 620 | 높음 | 태블릿(가로) |
@@ -160,19 +160,19 @@ You can select a component and drag it to the required location on your page and
       다음 슬라이드가 표시되기 전 시간(밀리초)입니다.
    * 전환 시간
 
-      두 슬라이드 간에 전환하는 데 걸리는 시간(밀리초)
+      두 슬라이드 간 전환을 위한 시간(밀리초)입니다.
    * 컨트롤 스타일
 
-      풀다운 메뉴에서 다양한 옵션을 사용할 수 있습니다. 예: 이전 / 다음 버튼, 오른쪽 위 스위치
+      풀다운 메뉴에서 다양한 옵션을 사용할 수 있습니다.예: 이전 / 다음 버튼, 오른쪽 위 스위치
 
 * **목록**
 여기서는 회전판에 페이지가 포함되는 방법을 지정합니다.
 
    * **목록 작성 방법**
 
-      페이지 목록을 만드는 방법으로는 하위 페이지, 고정 목록, 검색 또는 고급 검색(아래에 모두 설명됨)이 있습니다.
+      하위 페이지, 고정 목록, 검색 또는 고급 검색(아래에 모두 설명됨)과 같은 여러 가지 방법으로 페이지 목록을 만들 수 있습니다.
 
-      선택한 방법과 관계없이 목록에 포함된 각 페이지에는 이미지가 이미 연결되어 있어야 합니다. 회전판에 표시될 이 이미지입니다. 특정 페이지의 속성에 이미지가 없는 경우 작업을 시작하기 전에 페이지에 이미지를 연결해야 합니다. 그러지 않으면 회전판에 완전히 비어 있거나 대부분이 비어 있는 페이지가 표시됩니다. See [Editing Page Properties](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
+      선택한 방법과 관계없이 목록에 포함된 각 페이지에는 이미지가 이미 연결되어 있어야 합니다. 회전판에 표시될 이 이미지입니다. 특정 페이지의 속성에 이미지가 없는 경우 작업을 시작하기 전에 페이지에 이미지를 연결해야 합니다. 그러지 않으면 회전판에 완전히 비어 있거나 대부분이 비어 있는 페이지가 표시됩니다. [페이지 속성 편집](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)을 참조하십시오.
 
       선택하는 항목에 따라 새 패널이 다르게 나타납니다.
 
@@ -185,7 +185,7 @@ You can select a component and drag it to the required location on your page and
 
          * **페이지**
 
-            페이지 목록을 선택합니다. Use `+` to add more entries and the up/down buttons to adjust the order.
+            페이지 목록을 선택합니다. `+`을 사용하여 항목을 더 추가하고 위쪽/아래쪽 단추를 사용하여 순서를 조정합니다.
       * **검색 옵션**
 
          * **시작 위치**
@@ -203,11 +203,11 @@ You can select a component and drag it to the required location on your page and
             쿼리 표현식 및 추가적인 예에 대한 전체 논의는 [QueryBuilder API](/help/sites-developing/querybuilder-api.md)를 참조하십시오.
    * **정렬 기준**
 
-      Select `jcr:title`, `jcr:created`, `cq:lastModified`, or `cq:template` from the dropdown menu.
+      드롭다운 메뉴에서 `jcr:title`, `jcr:created`, `cq:lastModified` 또는 `cq:template`을 선택합니다.
 
    * **제한**
 
-      회전판에서 사용할 최대 항목 수; 선택 사항입니다.
+      회전판에서 사용할 최대 항목 수;선택 사항입니다.
 
 
 
@@ -217,7 +217,7 @@ You can select a component and drag it to the required location on your page and
 >
 >AEM DAM에 있는 디지털 자산을 표시하는 Adobe Experience Manager용의 사용자 지정 회전판 구성 요소를 만들 수 있습니다. 자세한 내용은 [Adobe Experience Manager용 사용자 지정 회전판 구성 요소 만들기](https://helpx.adobe.com/kr/experience-manager/using/custom-carousel-components.html)를 참조하십시오.
 
-### Chart {#chart}
+### Chart  {#chart}
 
 차트 구성 요소로 막대, 라인 또는 파이 차트를 추가할 수 있습니다. 입력한 데이터를 바탕으로 AEM에서 차트를 만듭니다. 데이터 탭에 데이터를 직접 입력하거나 스프레드시트를 복사하여 붙여넣을 수 있습니다.
 
@@ -444,15 +444,15 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
             수동으로 또는 선택기를 사용하여 경로를 지정합니다. 현재 페이지를 상위 페이지로 사용하려면 비워 두십시오.
       * **고정 목록 옵션**
 
-         * **페이지** - 페이지 목록을 선택합니다. 항목을 더 추가하려면 +를 사용하고, 순서를 조정하려면 위쪽/아래쪽 단추를 사용합니다.
+         * **페이지**  - 페이지 목록을 선택합니다.항목을 더 추가하려면 +를 사용하고, 순서를 조정하려면 위쪽/아래쪽 단추를 사용합니다.
       * **검색 옵션**
 
-         * **시작 위치** - 수동으로 또는 선택기를 사용하여 시작 경로를 입력합니다. 검색 쿼리
+         * **시작 위치**  - 수동으로 또는 선택기를 사용하여 시작 경로를 입력합니다. 검색 쿼리
 일반 텍스트 검색 쿼리를 입력할 수 있습니다.
       * **고급 검색 옵션**
 
-         * **QueryBuilder 설명 표기법** - QueryBuilder 설명 표기법을 사용하여 검색 쿼리를 입력할 수 있습니다. 예를 들어 &quot;fulltext=Marketing&quot;을 입력하면 컨텐츠에 &quot;Marketing&quot;이 포함된 모든 페이지가 회전판에 표시됩니다. 쿼리 [표현식 및](/help/sites-developing/querybuilder-api.md) 추가적인 예에 대한 전체 논의는 QueryBuilder API를 참조하십시오.
-      * **태그** - **상위 페이지**, 태그/ **키워드** 및 필요한 일치 기준을 지정합니다.
+         * **Querybuilder 설명 표기법**  - Querybuilder 설명 표기법을 사용하여 검색 쿼리를 입력할 수 있습니다.예를 들어 &quot;fulltext=Marketing&quot;을 입력하면 컨텐츠에 &quot;Marketing&quot;이 포함된 모든 페이지를 회전판에 표시할 수 있습니다.쿼리  [표현식 ](/help/sites-developing/querybuilder-api.md) 및 추가적인 예에 대한 전체 논의는 QueryBuilder API를 참조하십시오.
+      * **태그**  -  **상위 페이지**,  **태그/키워드 및 필요한** 일치 기준을 지정합니다.
    * **다음으로 표시**
 
       항목을 나열할 방법입니다. 링크, 티저 및 뉴스를 포함합니다.
@@ -675,7 +675,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 
 >[!NOTE]
 >
->**표** 구성 요소는 **[텍스트](#text)**구성 요소처럼[리치 텍스트 편집기](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)를 기반으로 합니다.
+>**표** 구성 요소는 **[텍스트](#text)** 구성 요소처럼 [리치 텍스트 편집기](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)를 기반으로 합니다.
 >
 >표를 **텍스트** 구성 요소로도 만들 수 있지만 표에는 **표** 구성 요소를 사용하는 것이 좋습니다.
 
@@ -716,7 +716,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 
 >[!NOTE]
 >
->**텍스트** 구성 요소는 [](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)표&#x200B;**[구성 요소처럼 리치 텍스트 편집기](#table)**를 기반으로 합니다.
+>**텍스트** 구성 요소는 [](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)표&#x200B;**[구성 요소처럼 리치 텍스트 편집기](#table)**&#x200B;를 기반으로 합니다.
 >
 >표를 **텍스트** 구성 요소로도 만들 수 있지만 표에는 **표** 구성 요소를 사용하는 것이 좋습니다.
 
@@ -819,7 +819,7 @@ HTML5 요소와 함께 사용하도록 [비디오 프로필 구성](/help/sites-
 * 비디오
 
    * **비디오 자산** - 비디오 자산을 업로드하거나 삭제합니다.
-   * **크기** - [크기] 옆의 상자에 비디오의 기본 크기(픽셀 단위 너비 x 높이)가 나타납니다(위 그림 참조). 비디오의 기본 크기를 변경하려는 경우 여기에 너비와 높이를 직접 입력합니다. 확인 **을** 클릭하여 대화 상자를 닫습니다.
+   * **크기**  - [크기] 옆의 상자에 비디오의 원래 크기(픽셀 단위 너비 x 높이)가 나타납니다(위 그림 참조). 비디오의 기본 크기를 변경하려는 경우 여기에 너비와 높이 크기를 직접 입력합니다.확인 **** 을 클릭하여 대화 상자를 닫습니다.
 
 >[!NOTE]
 >
@@ -865,7 +865,7 @@ HTML5 요소와 함께 사용하도록 [비디오 프로필 구성](/help/sites-
 
 >[!NOTE]
 >
->AEM 양식에 대한 자세한 내용은 [AEM 양식 도움말](/help/forms/home.md)을 참조하십시오.
+>AEM Forms에 대한 자세한 내용은 [AEM Forms 도움말](/help/forms/home.md)을 참조하십시오.
 
 양식은 여러 가지 구성 요소로 이루어집니다.
 
@@ -953,7 +953,7 @@ HTML5 요소와 함께 사용하도록 [비디오 프로필 구성](/help/sites-
       이 항목은 양식 구성 요소 유형에 따라 다르지만, 이 필드나 이 필드의 특정 부분이 필수임을 나타내는 클릭 상자를 하나 이상 제공합니다.
 
    * **필수 메시지** - 이 필드가 필수임을 사용자에게 알려주는 메시지입니다. 필수 필드는 별표로 표시되기도 합니다.
-   * **제한** - 선택 가능한 제한 사항은 양식 구성 요소 유형에 따라 다릅니다.
+   * **제한**  - 선택 가능한 제한 사항은 양식 구성 요소 유형에 따라 다릅니다.
    * **제한 메시지**
 사용자에게 필수인 항목을 알려주는 메시지입니다.
 
@@ -969,7 +969,7 @@ HTML5 요소와 함께 사용하도록 [비디오 프로필 구성](/help/sites-
 
    * **CSS**
 
-### 양식(구성 요소) {#form-component}
+### 양식(구성 요소)  {#form-component}
 
 양식 구성 요소는 **양식 시작** 및 **양식 끝** 요소를 사용하여 양식의 시작과 끝을 정의합니다. 이러한 단락이 항상 쌍을 이루어야 양식이 올바르게 정의됩니다.
 
@@ -1201,7 +1201,7 @@ HTML5 요소와 함께 사용하도록 [비디오 프로필 구성](/help/sites-
 
 구성 요소는 즉시 사용할 수 있도록 구성되지만 필요한 경우 구성을 변경할 수 있습니다. 예를 들어, 주소의 개별 요소에 대해 제한 사항을 추가할 수 있습니다. 필드를 비워 두면 기본 설정이 사용됩니다.
 
-### Captcha {#captcha}
+### Captcha  {#captcha}
 
 Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을 입력하도록 요청합니다. 이 문자열은 새로 고칠 때마다 변경됩니다.
 
@@ -1209,7 +1209,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 
 이 구성 요소의 다양한 매개 변수를 구성할 수 있습니다. 예를 들어 Captcha 문자열을 잘못 입력한 경우에 표시할 메시지를 구성할 수 있습니다.
 
-### 확인란 그룹 {#checkbox-group}
+### 확인란 그룹  {#checkbox-group}
 
 확인란을 사용하여 동시에 선택 가능한 하나 이상의 확인란으로 구성된 목록을 만들 수 있습니다.
 
@@ -1253,7 +1253,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 >
 >사용자 지정 업로드 구성 요소를 만들어 파일을 Sling 서블릿에 업로드할 수 있습니다. 자세한 내용은 [Adobe Experience Manager에 파일 업로드](https://helpx.adobe.com/kr/experience-manager/using/uploading-files-aem1.html)를 참조하십시오.
 
-### 숨김 필드 {#hidden-field}
+### 숨김 필드  {#hidden-field}
 
 이 구성 요소로 숨김 필드를 만들어 다양한 용도로 사용할 수 있습니다. 예를 들어 양식을 제출한 후 작업을 수행해야 할 때, 또는 사후 처리에서 데이터를 숨겨야 할 때가 있습니다.
 
@@ -1285,7 +1285,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 
 달력 이벤트 양식에서 이벤트의 URL/링크 필드로 가장 일반적으로 사용됩니다.
 
-### 암호 필드 {#password-field}
+### 암호 필드  {#password-field}
 
 사용자가 암호를 입력할 수 있도록 하는 데 사용됩니다.
 
