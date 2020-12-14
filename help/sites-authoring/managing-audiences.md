@@ -25,7 +25,7 @@ ht-degree: 96%
 * 대상자 추가 - Adobe Target 대상 또는 ContextHub 세그먼트 중 하나.
 * 대상자 관리.
 
-An Audiences, called *segment* in ContextHub and Client Context, is a class of visitors defined by specific criteria, which then determines who sees a targeted activity. 활동을 타깃팅할 때 타깃팅 프로세스에서 바로 대상을 선택하거나 대상 콘솔에서 새 대상을 만들 수 있습니다.
+ContextHub 및 Client Context에서 *세그먼트*&#x200B;이라고 하는 대상은 특정 기준에 의해 정의된 방문자 클래스로, 타깃팅된 활동을 보는 사람을 결정합니다. 활동을 타깃팅할 때 타깃팅 프로세스에서 바로 대상을 선택하거나 대상 콘솔에서 새 대상을 만들 수 있습니다.
 
 대상 콘솔에서 대상은 브랜드별로 구성됩니다.
 
@@ -56,7 +56,7 @@ An Audiences, called *segment* in ContextHub and Client Context, is a class of v
 
 ContextHub을 사용하여 세그먼트를 만드는 방법에 대한 자세히 알려면 ](/help/sites-administering/segmentation.md)ContextHub을 사용한 세그멘테이션 구성[ 설명서를 참조하십시오.
 
-## 대상 콘솔을 사용하여 Adobe Target 대상 만들기 {#creating-an-adobe-target-audience-using-the-audience-console}
+## 대상 콘솔을 사용하여 Adobe Target 대상 만들기  {#creating-an-adobe-target-audience-using-the-audience-console}
 
 대상 콘솔을 사용하여 AEM에서 바로 Adobe Target 대상을 만들 수 있습니다.
 
@@ -85,7 +85,7 @@ Adobe Target 대상자를 만들려면 다음을 수행하십시오.
 1. 대상에 사용할 이름을 입력하고 **저장**&#x200B;을 탭하거나 클릭합니다.
 1. **저장**&#x200B;을 탭하거나 클릭합니다. 대상이 대상 목록에 표시됩니다.
 
-### 속성 및 해당 선택 사항 {#attributes-and-their-options}
+### 속성 및 해당 선택 사항  {#attributes-and-their-options}
 
 다음 각 속성에 대해 타깃팅 규칙을 만들 수 있습니다.
 
@@ -97,7 +97,7 @@ Adobe Target 대상자를 만들려면 다음을 수행하십시오.
 | **사이트 페이지** | 특정 페이지에 있거나 특정 mbox 매개 변수를 가진 방문자를 타깃팅합니다. | Adobe Target에서 [사이트 페이지 설명서](https://docs.adobe.com/content/help/ko-KR/target/using/audiences/create-audiences/categories-audiences/site-pages.html)를 참조하십시오. |
 | **브라우저** | 페이지를 방문할 때 특정 브라우저나 특정 브라우저 선택 사항을 사용하는 사용자를 타깃팅할 수 있습니다. | Adobe Target에서 [브라우저 옵션 설명서](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/browser.html)를 참조하십시오. |
 | **방문자 프로필** | 특정 프로필 매개 변수를 충족하는 Target 방문자입니다. | Adobe Target에서 [방문자 프로필 설명서](https://docs.adobe.com/content/help/ko-KR/target/using/audiences/visitor-profiles/visitor-profile.html)를 참조하십시오. |
-| **트래픽 소스** | 사이트 방문 시 사용한 검색 엔진 또는 랜딩 페이지에 따라 방문자를 타깃팅합니다. | Adobe Target에서 [트래픽 소스 설명서](https://docs.adobe.com/content/help/ko-KR/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html)를 참조하십시오. |
+| **트래픽 소스** | 사이트 방문 시 사용한 검색 엔진 또는 랜딩 페이지에 따라 방문자를 타깃팅합니다. | Adobe Target에서 [트래픽 소스 설명서](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html)를 참조하십시오. |
 
 ## 대상자 콘솔에서 대상 수정 {#modifying-an-audience-in-the-audiences-console}
 
