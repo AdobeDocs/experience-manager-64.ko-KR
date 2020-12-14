@@ -1,7 +1,7 @@
 ---
 title: AEM 현대화 도구
 seo-title: AEM 현대화 도구
-description: AEM 현대화 도구 기존 AEM 기능을 최신 기술로 전환할 수 있습니다.
+description: AEM 현대화 도구 기존 AEM 기능을 최신 기술로 전환하는 데 도움이 됩니다.
 seo-description: AEM 현대화 툴을 사용하면 기존 AEM 기능을 최신 기술로 손쉽게 변환할 수 있습니다
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -23,7 +23,7 @@ ht-degree: 58%
 * [](/help/sites-authoring/default-components-foundation.md)기초 구성 요소를 코어 구성 요소[](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
 * [](website.md)클래식 UI를 터치 사용 UI[](touch-ui-concepts.md)
 
-이러한 도구 사용에 대한 자세한 내용은 해당 설명서를 [참조하십시오](http://opensource.adobe.com/aem-modernize-tools/).
+이러한 도구의 사용에 대한 자세한 내용은 [해당 설명서](http://opensource.adobe.com/aem-modernize-tools/)를 참조하십시오.
 
 >[!NOTE]
 >
