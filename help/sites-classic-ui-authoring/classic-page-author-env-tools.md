@@ -101,7 +101,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 
 ### 페이지 찾기 {#finding-pages}
 
-이 탭에는 모든 페이지가 표시됩니다. 편집할 페이지를 두 번 클릭하여 엽니다.
+이 탭에는 모든 페이지가 표시됩니다.편집할 페이지를 두 번 클릭하여 엽니다.
 
 ![chlimage_1-160](assets/chlimage_1-160.png)
 
@@ -140,12 +140,12 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 다음 검색 패턴에 따라 해당 이미지(및 이 패턴과 일치하는 기타 이미지)를 검색할 수 있습니다.
 
 * `name:*nmv*`
-* `name:AD*` - 대/소문자를 구분하지 *않습니다* .
+* `name:AD*` - 문자 일치는 대/소문자를  ** 구분하지 않습니다.
 * `name:ad?nm??is.*` - 쿼리에 사용할 수 있는 와일드카드의 수는 제한되어 있지 않습니다.
 
 >[!NOTE]
 >
->You can also use [SQL2](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) search.
+>[SQL2](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) 검색을 사용할 수도 있습니다.
 
 ## 참조 표시 {#showing-references}
 
@@ -157,7 +157,7 @@ AEM에서는 현재 작업 중엔 페이지에 링크된 페이지를 확인할 
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Select **Show References...** AEM opens the References window and displays which pages refer to the selected page, including their paths.
+1. **참조 표시...를 선택합니다.** AEM에서는 참조 창이 열리고 선택한 페이지를 참조하는 페이지와 해당 경로가 표시됩니다.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -178,7 +178,7 @@ AEM에서는 현재 작업 중엔 페이지에 링크된 페이지를 확인할 
 
 ## 페이지 정보 {#page-information}
 
-The Website console also [provides information about the current status of the page](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) such as publication, modification, locked, livecopy, etc.
+웹 사이트 콘솔은 페이지](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console)의 현재 상태(예: 게시, 수정, 잠김, livecopy 등)에 대한 정보도 제공합니다.[
 
 ## 페이지 모드 {#page-modes}
 
