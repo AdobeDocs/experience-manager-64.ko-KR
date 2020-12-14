@@ -41,7 +41,7 @@ AEM 3D에서 기본 단계를 사용하는 것외에도, 타사 애플리케이�
 * 맵의 수 및 크기
 * 단계의 복잡성 예: IBL 이미지의 크기
 
-또한 카메라를 대화형으로 조작할 때 워크스테이션, 노트북 또는 모바일 터치 장치와 같은 클라이언트 컴퓨터의 기능도 고려해야 합니다. 그래픽 성능이 좋은 강력한 시스템에서는 대화형 3D 보기 환경이 좀 더 원활하고 유용할 수 있습니다.
+또한 카메라를 대화형으로 조작할 때는 워크스테이션, 노트북 또는 모바일 터치 장치와 같은 클라이언트 컴퓨터의 기능도 고려해야 합니다. 그래픽 성능이 좋은 강력한 시스템에서는 대화형 3D 보기 환경이 좀 더 원활하고 유용할 수 있습니다.
 
 **3D 자산을 보려면**:
 
@@ -49,7 +49,7 @@ AEM 3D에서 기본 단계를 사용하는 것외에도, 타사 애플리케이�
 
    [AEM에서의 3D 자산 업로드 및 처리 정보](/help/sites-classic-ui-authoring/classicui-upload-proc-3d.md)를 참조하십시오.
 1. **[!UICONTROL Adobe Experience Manager]**&#x200B;의 **[!UICONTROL 탐색]** 페이지에서 **[!UICONTROL 자산]**&#x200B;을 탭합니다.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
+1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 보기]** 드롭다운 목록에서 **[!UICONTROL 카드 보기]**&#x200B;를 탭합니다.
 
 1. 보려는 3D 자산으로 이동합니다.
 1. 3D 자산의 카드를 탭하여 자산 세부 사항 페이지에서 엽니다.
@@ -69,44 +69,44 @@ AEM 3D에서 기본 단계를 사용하는 것외에도, 타사 애플리케이�
       </tr> 
       <tr> 
       <td><p>확대/축소</p> <p>또는</p> <p>Presp</p> </td> 
-      <td><p>탭하거나 클릭하여 확대/축소 모드와 원근 모드 간을 전환합니다.</p> <p>Or, press and hold down the <code>ALT/OPTION</code> key during the action to temporarily toggle to Perspective<br /> mode. 키를 떼면 확대/축소 모드로 돌아갑니다.</p> 
+      <td><p>탭하거나 클릭하여 확대/축소 모드와 원근 모드 간을 전환합니다.</p> <p>또는 작업 중에 <code>ALT/OPTION</code> 키를 길게 눌러 원근<br /> 모드로 일시적으로 전환합니다. 키를 떼면 확대/축소 모드로 돌아갑니다.</p> 
         <ul> 
-        <li><strong>확대</strong>-돌리 인/축소 비헤이비어를 사용하여 카메라를 보고 있는 자산에서<br /> 더 가깝게 또는 멀리 이동합니다. 확대/축소는 마우스의 스크롤 휠(사용 가능한 경우), 모바일 장치에서의 두 손가락 핀치 제스처 또는 Shift 키를 누른 채로 마우스 왼쪽 단추를 사용하여 위아래로 끌 때의 기본 동작입니다.</li> 
-        <li><strong>원근</strong>-보기에서 자산의 상대적 크기를 유지하면서 카메라의 초점 거리(FIELD-OF-VIEW라고도 함)를 변경합니다. 원근은 스크롤 휠(사용 가능한 경우), 모바일 장치에서의 두 손가락 핀치 제스처 또는 Shift 키를 누른 채로 마우스 왼쪽 단추를 사용하여 위아래로 끌 때의 대체 동작입니다.</li> 
+        <li><strong>확대</strong> - 보고 있는 자산에서 카메라를 더 가깝게 또는 더 멀리 이동시키는 <br /> 돌리 인/아웃 동작. 확대/축소는 마우스의 스크롤 휠(사용 가능한 경우), 모바일 장치에서의 두 손가락 핀치 제스처 또는 Shift 키를 누른 채로 마우스 왼쪽 단추를 사용하여 위아래로 끌 때의 기본 동작입니다.</li> 
+        <li><strong>원근</strong> - 보기에서 자산의 상대적 크기를 유지하면서 카메라의 초점 거리(보기 필드라고도 함)를 변경합니다. 원근은 스크롤 휠(사용 가능한 경우), 모바일 장치에서의 두 손가락 핀치 제스처 또는 Shift 키를 누른 채로 마우스 왼쪽 단추를 사용하여 위아래로 끌 때의 대체 동작입니다.</li> 
         </ul> </td> 
       </tr> 
       <tr> 
       <td><p>궤도</p> <p>또는</p> <p>팬</p> </td> 
-      <td><p>궤도 모드와 팬 모드 간을 전환하려면 탭하거나 클릭합니다.</p> <p>Or, press and hold the <code>ALT/OPTION</code> key during the action to temporarily toggle to Pan mode. 키를 떼면 궤도 모드로 돌아갑니다.</p> 
+      <td><p>궤도 및 팬 모드 간을 전환하려면 탭하거나 클릭합니다.</p> <p>동작 중에 <code>ALT/OPTION</code> 키를 길게 눌러 팬 모드로 일시적으로 전환합니다. 키를 떼면 궤도 모드로 돌아갑니다.</p> 
         <ul> 
-        <li><strong>궤도</strong>- 3D 자산의 중앙 근처에 있는 대상 점을 중심으로 하는 구에서 보기 카메라를 이동합니다. 궤도는 모바일 장치에서 왼쪽 단추 드래그 또는 단일 터치 드래그의 기본 동작입니다.</li> 
-        <li><strong>패닝</strong>- 보기 평면에서 카메라를 이동합니다. 그에 따라 대상 지점이 이동되므로, 후속 궤도 동작은 새 대상 지점에 따라 카메라를 이동합니다. 패닝은 이동은 왼쪽 단추 드래그 및 단일 터치 드래그의 대체 동작입니다.</li> 
+        <li><strong>궤도</strong> - 3D 자산의 중앙 근처에 있는 대상 점을 중심으로 하는 구에서 보기 카메라를 이동합니다. 궤도는 모바일 장치에서 왼쪽 단추 드래그 또는 단일 터치 드래그의 기본 동작입니다.</li> 
+        <li><strong>팬</strong> - 보기 평면에서 카메라를 이동합니다. 그에 따라 대상 지점이 이동되므로, 후속 궤도 동작은 새 대상 지점에 따라 카메라를 이동합니다. 패닝은 이동은 왼쪽 단추 드래그 및 단일 터치 드래그의 대체 동작입니다.</li> 
         </ul> </td> 
       </tr> 
       <tr> 
       <td><p>검사</p> <p>또는</p> <p>타겟</p> </td> 
-      <td><p>을 탭하거나 클릭하여 검사 모드와 Target 모드 간을 전환합니다.</p> 
+      <td><p>를 탭하거나 클릭하여 검사 모드와 Target 모드 간을 전환합니다.</p> 
         <ul> 
-        <li><strong>검사</strong>-탭하거나 클릭하여 Target 모드로 전환합니다.</li> 
-        <li><strong>Target</strong>-3D 자산의 아무 곳이나 탭하거나 클릭하여 자산의 해당 부분에 있는 보기를 가운데로 정렬합니다.<br /> 궤도 동작은 새 대상 포인트를 사용합니다.</li> 
+        <li><strong>검사</strong>-탭하거나 클릭하여 Target 모드로 들어갑니다.</li> 
+        <li><strong>Target</strong>-3D 자산의 아무 곳이나 탭하거나 클릭하여 자산의 해당 부분의 보기를 가운데로 정렬합니다.<br /> 궤도 동작은 새 대상 포인트를 사용합니다.</li> 
         </ul> </td> 
       </tr> 
       <tr> 
       <td>재설정</td> 
-      <td>뷰 대상 점을 모델의 중심으로 복원하려면 탭하거나 클릭합니다. Reset also moves the camera<br /> closer or further away to show the asset in its entirety and at a reasonable viewing size.</td> 
+      <td>뷰 대상 점을 모델의 중심으로 복원하려면 탭하거나 클릭합니다. 또한 재설정에서는 카메라<br />이(가) 보다 가깝거나 더 멀리 이동하여 에셋을 전체적으로 적절한 보기 크기로 표시합니다.</td> 
       </tr> 
     </tbody> 
     </table>
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Stage Selector]** icon. 3D 자산에 적용할 배경 및 조명이 있는 단계 이름을 선택하십시오.
+1. 자산 세부 사항 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 스테이지 선택기]** 아이콘을 탭합니다. 3D 자산에 적용할 배경 및 조명이 있는 단계 이름을 선택하십시오.
 
    ![](do-not-localize/chlimage_1-2.png)
 
-   단계는 3D 모델을 보는 환경 배경, 지표 평면 및 조명을 제공합니다.
+   단계는 3D 모델이 표시되는 환경 배경, 지표 평면 및 조명을 제공합니다.
 
    ](/help/sites-classic-ui-authoring/classicui-stages-aem3d.md)AEM 3D의 단계 사용 정보[를 참조하십시오.
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Camera Selector]** icon, then select a camera view that you want to apply to the 3D asset.
+1. 자산 세부 사항 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 카메라 선택기]** 아이콘을 탭한 다음, 3D 자산에 적용할 카메라 보기를 선택합니다.
 
    ![](do-not-localize/chlimage_1-3.png)
 
