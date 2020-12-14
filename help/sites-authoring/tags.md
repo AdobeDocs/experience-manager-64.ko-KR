@@ -81,13 +81,13 @@ ht-degree: 93%
 
 [태그 클라우드](/help/sites-authoring/default-components-foundation.md#tag-cloud) 구성 요소(일반 구성 요소 그룹)는 태그 클라우드를 페이지에 추가하는 데 사용됩니다.
 
-## 태그 검색 {#searching-on-tags}
+## 태그 검색  {#searching-on-tags}
 
 작성 환경과 게시 환경 모두에서 태그를 검색할 수 있습니다.
 
-### 검색 구성 요소 사용 {#using-search-component}
+### 검색 구성 요소 사용  {#using-search-component}
 
-Adding a [Search component](/help/sites-authoring/default-components-foundation.md#search) to a page provides a search capability which includes tags and can be used in both the author and publish environments.
+페이지에 [검색 구성 요소](/help/sites-authoring/default-components-foundation.md#search)를 추가하면 태그를 포함하는 검색 기능이 제공되며 작성 환경과 게시 환경 모두에서 사용할 수 있습니다.
 
 ![chlimage_1-93](assets/chlimage_1-93.png)
 
