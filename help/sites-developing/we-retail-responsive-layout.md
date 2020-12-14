@@ -20,19 +20,19 @@ ht-degree: 16%
 
 # We.Retail에서 응답형 레이아웃 시험 사용{#trying-out-responsive-layout-in-we-retail}
 
-모든 We.Retail 페이지는 레이아웃 컨테이너 구성 요소를 사용하여 응답형 디자인을 구현합니다. 레이아웃 컨테이너는 응답형 격자 내에 구성 요소를 배치할 수 있도록 해주는 단락 시스템을 제공합니다. 이 격자를 사용하면 장치/창 크기 및 형식에 따라 레이아웃을 다시 정렬할 수 있습니다. The component is used in conjunction with the **Layout** mode in the page editor, which allows you to create and edit your responsive layout dependent on device.
+모든 We.Retail 페이지는 레이아웃 컨테이너 구성 요소를 사용하여 응답형 디자인을 구현합니다. 레이아웃 컨테이너는 응답형 격자 내에 구성 요소를 배치할 수 있도록 해주는 단락 시스템을 제공합니다. 이 격자를 사용하면 장치/창 크기 및 형식에 따라 레이아웃을 다시 정렬할 수 있습니다. 구성 요소는 페이지 편집기의 **레이아웃** 모드와 함께 사용됩니다. 이 모드에서는 장치에 종속적인 응답형 레이아웃을 만들고 편집할 수 있습니다.
 
-## 시험버전 {#trying-it-out}
+## {#trying-it-out} 밖에서 시도
 
-1. 언어 마스터 분기의 경험 섹션에서 북극 검색 페이지를 편집합니다.
+1. 언어 마스터 분기의 경험 섹션에서 북극 서핑 페이지를 편집합니다.
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html
 
-1. 웹 사이트 방문자에게 렌더링되는 대로 **미리** 보기로 전환하여 페이지를 확인합니다. 노르웨이에 있는 *Aloha 주의 문서 내용으로 스크롤합니다*.
+1. **미리 보기**&#x200B;로 전환하여 웹 사이트 방문자에게 렌더링되는 대로 페이지를 확인합니다. 문서 *노르기타 노르웨이의 알로하 주령*&#x200B;의 내용으로 스크롤합니다.
 
    ![chlimage_1-178](assets/chlimage_1-178.png)
 
-1. 브라우저 창의 크기를 조정하고 레이아웃이 크기 조정에 따라 동적으로 조정되는 것을 확인할 수 있습니다.
+1. 브라우저 창의 크기를 조정할 수 있고 레이아웃이 크기 조정에 맞게 동적으로 조정될 때 확인할 수 있습니다.
 
    ![chlimage_1-179](assets/chlimage_1-179.png)
 
@@ -42,10 +42,10 @@ ht-degree: 16%
 
    ![chlimage_1-180](assets/chlimage_1-180.png)
 
-1. 구성 요소의 크기 조정 핸들을 잡고 드래그하면 크기 조정을 지원하기 위해 레이아웃 격자가 자동으로 표시됩니다.
+1. 구성 요소의 크기 조정 핸들을 클릭하고 드래그하면 크기를 조정할 수 있도록 레이아웃 격자가 자동으로 표시됩니다.
 
    ![chlimage_1-181](assets/chlimage_1-181.png)
 
 ## 추가 정보 {#further-information}
 
-자세한 내용은 작성 문서 [응답형 레이아웃](/help/sites-authoring/responsive-layout.md) 또는 관리자 문서 [의 레이아웃 컨테이너 및 레이아웃 모드](/help/sites-administering/configuring-responsive-layout.md) 구성을 참조하십시오.
+자세한 내용은 제작 문서 [응답형 레이아웃](/help/sites-authoring/responsive-layout.md) 또는 관리자 문서 [레이아웃 컨테이너 및 레이아웃 모드 구성](/help/sites-administering/configuring-responsive-layout.md)을 참조하십시오.
