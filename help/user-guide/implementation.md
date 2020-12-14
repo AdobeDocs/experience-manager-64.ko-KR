@@ -7,6 +7,9 @@ contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 translation-type: tm+mt
 source-git-commit: 7cb8fbc2577b9feafbcbddbd078ab06e1a341c73
+workflow-type: tm+mt
+source-wordcount: '119'
+ht-degree: 38%
 
 ---
 
@@ -15,20 +18,20 @@ source-git-commit: 7cb8fbc2577b9feafbcbddbd078ab06e1a341c73
 
 ## AEM 개발{#developing-on-aem}
 
-AEM 개발자이십니까? [AEM에서 개발을 시작합니다.](/help/sites-developing/home.md)
+AEM 개발자이십니까? [AEM에서 개발 시작](/help/sites-developing/home.md)
 
-## AEM용 핵심 구성 요소 {#core-components-for-aem}
+## AEM {#core-components-for-aem}용 핵심 구성 요소
 
-[확장 가능한 핵심 구성 요소를 사용하여 작성자가 컨텐츠를 쉽게 만들 수 있습니다.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+[확장 가능한 핵심 구성 요소를 사용하여 작성자가 컨텐츠를 쉽게 만들 수 있습니다.](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
 
-## AEM용 HTL(HTML 템플릿 언어) {#htl-for-aem}
+## AEM {#htl-for-aem}용 HTL(HTML 템플릿 언어)
 
-[HTML 템플릿 언어를 사용하여 AEM용으로 개발할 수 있습니다.](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+[AEM용으로 개발하려면 HTML 템플릿 언어를 사용합니다.](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html)
 
 ## AEM용 클라우드 관리자 {#cloud-manager-for-aem}
 
-[AEM에서 클라우드 관리자를 사용하는 방법을 이해합니다.](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+[AEM에서 Cloud Manager를 사용하는 방법을 이해합니다.](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 
-## Dispatcher Configuration {#dispatcher-configuration}
+## 발송자 구성 {#dispatcher-configuration}
 
-[AEM을 사용하여 디스패처 구성](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
+[AEM으로 디스패처 구성](https://docs.adobe.com/content/help/ko-KR/experience-manager-dispatcher/using/dispatcher.html)
