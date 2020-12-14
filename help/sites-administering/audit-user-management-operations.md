@@ -18,34 +18,34 @@ ht-degree: 1%
 ---
 
 
-# How to Audit User Management Operations in AEM{#how-to-audit-user-management-operations-in-aem}
+# AEM{#how-to-audit-user-management-operations-in-aem}에서 사용자 관리 작업을 감사하는 방법
 
 ## 소개 {#introduction}
 
-AEM은 권한 변경 사항을 나중에 감사할 수 있도록 기록하는 기능을 도입했습니다.
+AEM에서는 권한 변경 사항을 기록할 수 있는 기능을 도입하여 나중에 감사할 수 있습니다.
 
-향상된 기능을 통해 사용자의 권한 및 그룹 할당에 대한 감사 CRUD(만들기, 읽기, 업데이트, 삭제) 작업을 수행할 수 있습니다. 보다 구체적으로 다음을 기록하게 됩니다.
+향상된 기능을 통해 사용자의 권한 및 그룹 할당에 대한 감사 CRUD(만들기, 읽기, 업데이트, 삭제) 작업을 수행할 수 있습니다. 보다 구체적으로 말하면 다음과 같이 기록됩니다.
 
-* 새 사용자를 만드는 중
+* 새 사용자가 만들어집니다.
 * 그룹에 추가되는 사용자
-* 기존 사용자 또는 그룹의 권한 변경
+* 기존 사용자 또는 그룹의 권한 변경 사항
 
-기본적으로 항목은 `error.log` 파일에 기록됩니다. 모니터링을 쉽게 하려면 별도의 로그 파일로 리디렉션하는 것이 좋습니다. 아래 단락에서 이 작업을 수행하는 방법에 대한 자세한 내용을 살펴보십시오.
+기본적으로 항목은 `error.log` 파일에 기록됩니다. 모니터링을 쉽게 하려면 별도의 로그 파일로 리디렉션하는 것이 좋습니다. 아래 단락에 있는 이 작업을 수행하는 방법에 대한 자세한 내용을 살펴보십시오.
 
-## 출력을 별도의 로그 파일로 리디렉션 {#redirecting-the-output-to-a-separate-log-file}
+## 출력을 별도의 로그 파일 {#redirecting-the-output-to-a-separate-log-file}으로 리디렉션합니다.
 
-로깅 출력을 별도의 로그 파일로 리디렉션하려면 새로운 **Apache Sling Logging Logger** 구성을 만들어야 합니다. 아래 예에서 개별 파일 `useraudit.log` 의 이름으로 사용됩니다.
+로깅 출력을 별도의 로그 파일로 리디렉션하려면 새 **Apache Sling 로깅 로거** 구성을 만들어야 합니다. 아래 예에서 개별 파일의 이름으로 `useraudit.log`을 사용합니다.
 
-1. 웹 콘솔로 이동 `https://<serveraddress>:<serverport>/system/console/configMgr`
-1. Apache **Sling 로깅 로거 구성을 검색합니다**. 그런 다음 항목 오른쪽의 &quot;+&quot;를 눌러 새 공장 구성을 만듭니다.
+1. `https://<serveraddress>:<serverport>/system/console/configMgr`으로 이동하여 웹 콘솔로 이동
+1. **Apache Sling 로깅 로거 구성**&#x200B;을 검색합니다. 그런 다음 항목 오른쪽의 &quot;+&quot;를 눌러 새 공장 구성을 만듭니다.
 1. 다음 구성을 만듭니다.
 
    * **로그 수준:** 정보
    * **로그 파일:** logs/useraudit.log
    * **메시지 패턴:** 레벨 기본값
-   * **로거:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
+   * **Logger:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   로거 **** 필드에 두 개의 로거를 모두 입력하려면 먼저 이름을 입력한 다음 &quot;+&quot; 버튼을 누르고 두 번째 로거 이름을 입력하여 다른 필드를 생성해야 합니다.
+   두 로거를 **로거** 필드에 모두 입력하려면 첫 번째 이름을 입력한 다음 &quot;+&quot; 버튼을 누르고 두 번째 로거 이름을 입력하여 다른 필드를 만들어야 합니다.
 
 ## 출력 예 {#example-output}
 
@@ -83,7 +83,7 @@ AEM은 권한 변경 사항을 나중에 감사할 수 있도록 기록하는 �
 
 ## 클래식 UI
 
-클래식 UI에서 사용자 추가 및 삭제와 관련하여 감사 로그에 기록된 CRUD 작업에 대한 정보는 영향을 받는 사용자의 ID로 제한되며 변경 사항이 발생했습니다.
+클래식 UI에서 사용자 추가 및 삭제와 관련하여 감사 로그에 기록된 CRUD 작업에 대한 정보는 영향을 받는 사용자의 ID로 제한되며 변경된 사항이 발생한 경우에 한합니다.
 
 예:
 
