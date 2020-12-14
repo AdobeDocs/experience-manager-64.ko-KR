@@ -2,7 +2,7 @@
 title: 컨텐츠 조각 관리
 seo-title: 컨텐츠 조각 관리
 description: 컨텐츠 조각은 자산으로 저장되므로 자산 콘솔에서 주로 관리됩니다.
-seo-description: Content Fragments are stored as Assets, so are primarily managed from the Assets console.
+seo-description: 컨텐츠 조각은 자산으로 저장되므로 주로 자산 콘솔에서 관리됩니다.
 uuid: 0659cf03-b4e8-4b8b-bec7-0082f980115a
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -22,7 +22,7 @@ ht-degree: 98%
 
 >[!CAUTION]
 >
->일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md)버전이 필요합니다.
+>일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md)의 응용 프로그램이 필요합니다.
 
 컨텐츠 조각은 **[!UICONTROL 자산]**&#x200B;으로 저장되므로 **[!UICONTROL 자산]** 콘솔에서 주로 관리됩니다.
 
@@ -177,7 +177,7 @@ ht-degree: 98%
 
    >[!CAUTION]
    >
-   >To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues.
+   >컨텐츠 조각을 편집하려면 [적절한 권한](/help/sites-developing/customizing-content-fragments.md#asset-permissions)이 필요합니다. 문제가 발생하면 시스템 관리자에게 문의하십시오.
 
    >[!NOTE]
    >
