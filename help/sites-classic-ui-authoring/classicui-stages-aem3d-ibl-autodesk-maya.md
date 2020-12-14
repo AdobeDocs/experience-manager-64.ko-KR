@@ -26,11 +26,11 @@ ht-degree: 85%
 1. 이미지 기반 조명을 설정합니다.
 
    1. [Render Settings](렌더링 설정)에서 **[!UICONTROL Render Using: mental ray]**(mental ray를 사용하여 렌더링)를 선택하고 [Scene](장면) 탭을 엽니다.****
-   1. Open the **[!UICONTROL Environment]** accordion, then click **[!UICONTROL Create Image Based Lighting]**.
+   1. **[!UICONTROL 환경]** 아코디언을 연 다음 **[!UICONTROL 이미지 기반 조명 만들기]**&#x200B;를 클릭합니다.
    1. 상자의 왼쪽에 오른쪽 화살표가 있는 상자 아이콘을 클릭하여 IBL 노드 `mentalRayIblShape1`[!UICONTROL 을 선택한 다음, [Render Settings](렌더링 설정)를 종료합니다].
-   1. In the **[!UICONTROL Attribute Editor]**, select the transform node `mentalRayIbl1`, then rename the transform node to `AdobeIbl`.
+   1. **[!UICONTROL 속성 편집기]**&#x200B;에서 변환 노드 `mentalRayIbl1`을 선택한 다음 변환 노드의 이름을 `AdobeIbl`으로 바꿉니다.
 
-   1. Set the [!UICONTROL Scale] of the node to make the environment sphere significantly larger than the largest 3D object to be shown with this stage (for example, `10000,10000,10000`).
+   1. 노드의 [!UICONTROL 비율]을 설정하여 환경 구(예: `10000,10000,10000`)가 이 스테이지에 표시할 가장 큰 3D 개체보다 훨씬 크게 만듭니다.
    1. `AdobeIblShape` 노드를 선택하고 다음과 같이 구성하십시오.
 
       * **[!UICONTROL Mapping]**(매핑) - Spherical(구형)
@@ -50,17 +50,17 @@ ht-degree: 85%
 
 1. Mental Ray로 렌더링을 설정합니다.
 
-   Configure the [!UICONTROL Render Settings] with the following suggestions.
+   다음 제안 내용으로 [!UICONTROL 렌더링 설정]을 구성합니다.
 
-   * **[!UICONTROL 일반]** 탭
+   * **** 일반 탭
 
-      Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all Renderable Cameras.
+      모든 렌더링 가능 카메라에 대해 **[!UICONTROL 알파 채널(마스크)]** 확인란을 선택 취소합니다.
 
    * **[!UICONTROL Quality(품질) 탭]**
 
       * **[!UICONTROL Overall quality]**(전체 품질) - `0.5` 이하
-      * **[!UICONTROL 간접 확산(GI) 모드]** - `Final Gather`
-      * **[!UICONTROL 필터 크기]** - `2.0`, `2.0`
+      * **[!UICONTROL 간접 확산(GI) 모드]** -  `Final Gather`
+      * **[!UICONTROL 필터 크기]** -  `2.0`,  `2.0`
    * 사용할 장면을 일반 이미지 크기로 렌더링합니다. 필요할 경우 광원, Render(렌더링) 설정 또는 두 가지 모두를 미세 조정하여 원하는 결과를 얻도록 합니다.
 
       이미지 기반 조명을 사용하는 Mental Ray로 렌더링하는 것은 속도가 매우 느리고 CPU를 많이 사용합니다. 따라서, 원하는 렌더링 품질을 만들 수 있는 가장 낮은 품질 설정을 구성하는 것이 좋습니다.
