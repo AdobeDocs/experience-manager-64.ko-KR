@@ -1,8 +1,8 @@
 ---
 title: 사용자 지정 독립형 설치
 seo-title: 사용자 지정 독립형 설치
-description: '독립형 AEM 인스턴스를 설치할 때 사용할 수 있는 옵션에 대해 알아봅니다. '
-seo-description: '독립형 AEM 인스턴스를 설치할 때 사용할 수 있는 옵션에 대해 알아봅니다. '
+description: '독립 실행형 AEM 인스턴스를 설치할 때 사용할 수 있는 옵션에 대해 알아봅니다. '
+seo-description: '독립 실행형 AEM 인스턴스를 설치할 때 사용할 수 있는 옵션에 대해 알아봅니다. '
 uuid: e1cb45c4-3b2b-4951-8f67-213072e825b3
 contentOwner: Tyler Rushton
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -20,27 +20,27 @@ ht-degree: 1%
 
 # 사용자 지정 독립형 설치{#custom-standalone-install}
 
-이 섹션에서는 독립형 AEM 인스턴스를 설치할 때 사용할 수 있는 옵션에 대해 설명합니다. AEM 6 [을 새로 설치한 후 백엔드 스토리지 유형을 선택하는 방법에 대한 자세한 내용은 스토리지](/help/sites-deploying/storage-elements-in-aem-6.md) 요소를 참조할 수 있습니다.
+이 섹션에서는 독립형 AEM 인스턴스를 설치할 때 사용할 수 있는 옵션에 대해 설명합니다. AEM 6을 새로 설치한 후 백엔드 저장소 유형을 선택하는 방법에 대한 자세한 내용은 [스토리지 요소](/help/sites-deploying/storage-elements-in-aem-6.md)를 참조할 수도 있습니다.
 
-## 파일 이름을 변경하여 포트 번호 변경 {#changing-the-port-number-by-renaming-the-file}
+## {#changing-the-port-number-by-renaming-the-file} 파일의 이름을 변경하여 포트 번호 변경
 
-AEM의 기본 포트는 4502입니다. 해당 포트를 사용할 수 없거나 사용 중인 경우 Quickstart는 다음과 같이 첫 번째 사용 가능한 포트 번호를 사용하도록 자동으로 구성합니다. 4502, 8080, 8081, 8082, 8083, 8084, 8085, 888, 9362, `<random>`.
+AEM의 기본 포트는 4502입니다. 해당 포트를 사용할 수 없거나 이미 사용 중인 경우 Quickstart는 다음과 같이 첫 번째 사용 가능한 포트 번호를 사용하도록 자동으로 구성됩니다.4502, 8080, 8081, 8082, 8083, 8084, 8085, 888, 9362, `<random>`
 
-quickstart jar 파일의 이름을 변경하여 파일 이름에 포트 번호를 설정할 수도 있습니다. 예를 들어, `cq5-publish-p4503.jar` 또는 `cq5-author-p6754.jar`을 입력합니다.
+빠른 시작 jar 파일의 이름을 변경하여 파일 이름에 포트 번호를 포함하도록 포트 번호를 설정할 수도 있습니다.예: `cq5-publish-p4503.jar` 또는 `cq5-author-p6754.jar`.
 
 quickstart jar 파일의 이름을 바꿀 때 따라야 할 다양한 규칙이 있습니다.
 
-* 파일 이름을 바꿀 때는 파일 이름 `cq;` 과 같이 시작해야 합니다 `cq5-publish-p4503.jar`.
+* 파일 이름을 바꿀 때 `cq5-publish-p4503.jar`에서와 같이 `cq;`으로 시작해야 합니다.
 
-* 포트 번호 앞에 *항상* -p; as in cq5-publish-p4503.jar or cq5-author-p6754.jar.
+* *항상* 포트 번호에 -p; 접두사를 지정하는 것이 좋습니다.cq5-publish-p4503.jar 또는 cq5-author-p6754.jar의 포맷을 참조하십시오.
 
 >[!NOTE]
 >
->이는 포트 번호를 추출하는 데 사용되는 규칙을 완전히 채울 필요가 없도록 하기 위한 것입니다.
+>이는 포트 번호를 추출하는 데 사용되는 규칙을 완전히 채우는 데 대해 걱정할 필요가 없도록 하기 위한 것입니다.
 >
 >* 포트 번호는 4자리 또는 5자리여야 합니다.
 >* 이 숫자는 대시 뒤에 와야 합니다.
->* 파일 이름에 다른 자리가 있으면 포트 번호 앞에 `-p`
+>* 파일 이름에 다른 숫자가 있으면 포트 번호 앞에 `-p`가 있어야 합니다.
 >* 파일 이름 시작 부분에 있는 &quot;cq5&quot; 접두사가 무시됩니다.
 
 >
@@ -49,39 +49,39 @@ quickstart jar 파일의 이름을 바꿀 때 따라야 할 다양한 규칙이 
 
 >[!NOTE]
 >
->시작 명령의 옵션을 사용하여 포트 번호를 변경할 수도 `-port` 있습니다.
+>시작 명령에서 `-port` 옵션을 사용하여 포트 번호를 변경할 수도 있습니다.
 
 ## 실행 모드 {#run-modes}
 
-**실행 모드를** 사용하면 특정 목적을 위해 AEM 인스턴스를 조정할 수 있습니다. 예를 들어, 작성 또는 게시, 테스트, 개발, 인트라넷 등을 할 수 있습니다. 이러한 모드를 사용하면 샘플 컨텐츠 사용을 제어할 수 있습니다. 이 샘플 컨텐츠는 빠른 시작을 만들기 전에 정의되며 패키지, 구성 등을 포함할 수 있습니다. 이는 샘플 컨텐츠 없이 설치를 간소화하고자 할 때 바로 사용할 수 있는 설치 환경에 특히 유용합니다. 자세한 내용은 다음을 참조하십시오.
+**모바일** 실행: 특정 목적을 위해 AEM 인스턴스를 조정할 수 있습니다.예를 들어 작성 또는 게시, 테스트, 개발, 인트라넷 등을 할 수 있습니다. 이러한 모드를 사용하면 샘플 컨텐츠의 사용을 제어할 수 있습니다. 이 샘플 컨텐츠는 quickstart를 만들기 전에 정의되었으며 패키지, 구성 등을 포함할 수 있습니다. 이 기능은 샘플 컨텐츠 없이 설치를 계속 유지하려는 경우 바로 사용할 수 있는 설치 환경에 특히 유용합니다. 자세한 내용은 다음을 참조하십시오.
 
 * [실행 모드](/help/sites-deploying/configure-runmodes.md)
 
-## 파일 설치 공급자 추가 {#adding-a-file-install-provider}
+## 파일 설치 공급자 {#adding-a-file-install-provider} 추가
 
-기본적으로 폴더 `crx-quickstart/install` 는 파일에 대해 감시됩니다.\
-이 폴더는 존재하지 않지만 실행 시 간단히 만들 수 있습니다.
+기본적으로 `crx-quickstart/install` 폴더가 파일에 대해 감시됩니다.\
+이 폴더는 존재하지 않지만 런타임에 만들 수 있습니다.
 
 번들, 구성 또는 컨텐츠 패키지를 이 디렉토리에 넣으면 자동으로 선택되어 설치됩니다. 제거되면 제거됩니다.\
 번들, 컨텐츠 패키지 또는 구성을 저장소에 배치하는 또 다른 방법입니다.
 
-이 기능은 여러 가지 사용 사례에서 특히 유용합니다.
+이 기능은 다음과 같은 여러 사용 경우에 특히 유용합니다.
 
 * 개발 중에 파일 시스템에 내용을 삽입하는 것이 더 쉽습니다.
-* 문제가 발생하면 웹 콘솔 및 저장소에 연결할 수 없습니다. 이 코드를 사용하면 이 디렉토리에 추가 번들을 넣을 수 있고 번들을 설치해야 합니다.
-* quickstart를 시작하기 전에 폴더를 만들 수 있으며 추가 패키지를 거기에 배치할 수 있습니다. `crx-quickstart/install`
+* 문제가 발생하면 웹 콘솔 및 저장소에 연결할 수 없습니다. 이 코드를 사용하면 이 디렉토리에 추가 번들을 넣을 수 있으며 번들을 설치해야 합니다.
+* quickstart를 시작하기 전에 `crx-quickstart/install` 폴더를 만들 수 있으며 추가 패키지를 거기에 배치할 수 있습니다.
 
 >[!NOTE]
 >
->서버 시작 [에 CRX 패키지를 자동으로 설치하는 방법을 참조하십시오](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html) .
+>예제는 [서버 시작 시 CRX 패키지를 자동으로 설치하는 방법을 참조하십시오](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html).
 
-## Windows 서비스로 Adobe Experience Manager 설치 및 시작 {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
+## Adobe Experience Manager을 Windows 서비스로 설치 및 시작 {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
 
 >[!NOTE]
 >
->관리자로 로그온하는 동안 다음 절차를 수행하거나 관리자 **로 실행 컨텍스트** 메뉴 선택을 사용하여 이러한 단계를 시작/실행해야 합니다.
+>관리자로 로그온하는 동안 다음 절차를 수행하거나 **관리자로 실행** 컨텍스트 메뉴 선택을 사용하여 이러한 단계를 시작/실행해야 합니다.
 >
->관리자 권한이 있는 사용자로 로그온하는 것이 **부족합니다**. 이러한 단계를 완료할 때 관리자로 로그온하지 않으면 액세스 거부 **오류가** 발생합니다.
+>관리자 권한이 있는 사용자로 로그온하는 것은 **불충분한**&#x200B;입니다. 이러한 단계를 완료할 때 관리자로 로그온하지 않은 경우 **액세스 거부** 오류를 수신합니다.
 
 AEM을 Windows 서비스로 설치하고 시작하려면 다음을 수행합니다.
 
@@ -91,17 +91,17 @@ AEM을 Windows 서비스로 설치하고 시작하려면 다음을 수행합니�
    * prunsrv_amd64
    * prunsrv_ia64
 
-   이 명령은 32비트 Java 대신 64비트 Java로 Windows 서비스 데몬을 시작하는 적절한 스크립트를 호출합니다.
+   이 명령은 32비트 Java 대신 64비트 Java에서 Windows 서비스 데몬을 시작하는 적절한 스크립트를 호출합니다.
 
-1. 프로세스가 두 개 이상의 프로세스로 변환되지 않도록 하려면 최대 더미 크기와 PermGen JVM 매개변수를 늘립니다. 명령을 `set jvm_options` 찾아 다음과 같이 값을 설정합니다.
+1. 프로세스가 두 개 이상의 프로세스로 변환되지 않도록 하려면 최대 더미 크기 및 PermGen JVM 매개변수를 늘립니다. `set jvm_options` 명령을 찾아 다음과 같이 값을 설정합니다.
 
    `set jvm_options=-XX:MaxPermSize=256M;-Xmx1792m`
 
-1. 명령 프롬프트를 열고 현재 디렉토리를 AEM 설치의 crx-quickstart/opt/helpers 폴더로 변경하고 다음 명령을 입력하여 서비스를 생성합니다.
+1. 명령 프롬프트를 열고 현재 디렉토리를 AEM 설치의 crx-quickstart/opt/helpers 폴더로 변경한 다음 다음 다음 명령을 입력하여 서비스를 생성합니다.
 
    `instsrv.bat cq5`
 
-   서비스가 생성되었는지 확인하려면 관리 도구 제어판에서 서비스를 열거나 명령 프롬프트 `start services.msc` 를 입력합니다. cq5 서비스가 목록에 나타납니다.
+   서비스가 만들어졌는지 확인하려면 관리 도구 제어판에서 서비스를 열거나 명령 프롬프트에 `start services.msc`을 입력합니다. cq5 서비스가 목록에 나타납니다.
 
 1. 다음 중 하나를 수행하여 서비스를 시작합니다.
 
@@ -113,7 +113,7 @@ AEM을 Windows 서비스로 설치하고 시작하려면 다음을 수행합니�
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
-1. 서비스가 실행 중임을 나타냅니다. AEM 시작 및 prunsrv 실행 파일이 작업 관리자에 나타납니다. 예를 들어 웹 브라우저에서 AEM으로 이동하여 AEM `http://localhost:4502` 을 시작합니다.
+1. 서비스가 실행 중임을 나타냅니다. AEM 시작 및 prunsrv 실행 파일이 작업 관리자에 나타납니다. 웹 브라우저에서 AEM으로 이동하여(예: `http://localhost:4502`) AEM 사용을 시작합니다.
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
@@ -123,26 +123,26 @@ AEM을 Windows 서비스로 설치하고 시작하려면 다음을 수행합니�
 
 >[!NOTE]
 >
->AEM을 서비스로 설치할 때 Configuration Manager에서 로그 디렉토리의 절대 경로를 제공해야 `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` 합니다.
+>AEM을 서비스로 설치할 때 Configuration Manager의 `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm`에 로그 디렉토리의 절대 경로를 제공해야 합니다.
 
-서비스를 제거하려면 **서비스** 제어판 또는 명령줄에서 **중지** 를 `instsrv.bat -uninstall cq5`클릭하여 폴더를 탐색하고입력합니다. 서비스를 입력하면 **서비스** 제어판의 목록 또는 명령줄 목록에서 제거됩니다 `net start`.
+서비스를 제거하려면 **서비스** 제어판 또는 명령줄에서 **중지**&#x200B;를 클릭하고 `instsrv.bat -uninstall cq5`를 입력합니다. **서비스** 제어판 또는 `net start`를 입력할 때 명령줄에서 서비스가 제거됩니다.
 
-## 임시 작업 디렉토리의 위치 재정의 {#redefining-the-location-of-the-temporary-work-directory}
+## 임시 작업 디렉터리 {#redefining-the-location-of-the-temporary-work-directory} 위치를 다시 정의하는 중
 
-java 컴퓨터의 임시 폴더의 기본 위치는 입니다 `/tmp`. AEM에서는 패키지를 빌드할 때 이 폴더도 사용합니다.
+java 컴퓨터의 임시 폴더의 기본 위치는 `/tmp`입니다. AEM에서는 패키지를 빌드할 때 이 폴더도 사용합니다.
 
-임시 폴더의 위치를 변경하려면(예: 사용 가능한 공간이 더 많은 디렉토리가 필요한 경우) JVM 매개 변수를 추가하여 a `<new-tmp-path>` 를 정의합니다.
+임시 폴더의 위치(예: 사용 가능한 공간이 많은 디렉토리가 필요한 경우)를 변경하려면 JVM 매개 변수를 추가하여 `<new-tmp-path>`을 정의합니다.
 
 `-Djava.io.tmpdir="/<new-tmp-path>"`
 
 다음 중 하나를 수행합니다.
 
 * 서버 시작 명령줄
-* serverctl 또는 start 스크립트의 CQ_JVM_OPTS 환경 매개 변수
+* serverctl 또는 시작 스크립트의 CQ_JVM_OPTS 환경 매개 변수
 
-## Quickstart 파일에서 사용 가능한 추가 옵션 {#further-options-available-from-the-quickstart-file}
+## Quickstart 파일 {#further-options-available-from-the-quickstart-file}에서 사용할 수 있는 추가 옵션
 
-추가 옵션 및 이름 변경 규칙은 -help 옵션을 통해 사용 가능한 빠른 시작 도움말 파일에 설명되어 있습니다. 도움말에 액세스하려면 다음을 입력합니다.
+추가 옵션 및 이름 바꾸기 규칙은 -help 옵션을 통해 사용 가능한 빠른 시작 도움말 파일에 설명되어 있습니다. 도움말에 액세스하려면 다음을 입력합니다.
 
 * `java -jar cq5-<version>.jar -help`
 
@@ -231,9 +231,9 @@ Log files
 --------------------------------------------------------------------------------
 ```
 
-## Amazon EC2 환경에 AEM 설치 {#installing-aem-in-the-amazon-ec-environment}
+## Amazon EC2 환경 {#installing-aem-in-the-amazon-ec-environment}에 AEM 설치
 
-Amazon EC2(Elastic Compute Cloud) 인스턴스에 AEM을 설치할 때 작성자와 게시를 모두 EC2 인스턴스에 설치하는 경우 AEM의 인스턴스를 [설치하는 방법에 대한 절차에 따라 작성자 인스턴스가 올바르게 설치됩니다](/help/sites-deploying/custom-standalone-install.md). 하지만 게시 인스턴스는 작성자가 됩니다.
+Amazon EC2(Elastic Compute Cloud) 인스턴스에 AEM을 설치할 때 작성자와 게시를 모두 EC2 인스턴스에 설치하는 경우, AEM[ 인스턴스의 설치 방법에 대한 절차를 따라 작성자 인스턴스가 올바르게 설치됩니다.하지만 게시 인스턴스는 작성자가 됩니다.](/help/sites-deploying/custom-standalone-install.md)
 
 EC2 환경에 게시 인스턴스를 설치하기 전에 다음을 수행하십시오.
 
@@ -245,7 +245,7 @@ EC2 환경에 게시 인스턴스를 설치하기 전에 다음을 수행하십�
 
    >[!NOTE]
    >
-   >인스턴스를 처음 시작한 **후** 모드를 변경하는 경우 실행 모드를 변경할 수 없습니다.
+   >인스턴스를 처음 시작하는 모드 **after**&#x200B;를 변경하는 경우 실행 모드를 변경할 수 없습니다.
 
 1. 다음을 실행하여 인스턴스를 시작합니다.
 
@@ -255,9 +255,9 @@ EC2 환경에 게시 인스턴스를 설치하기 전에 다음을 수행하십�
 
    >[!CAUTION]
    >
-   >위의 명령을 실행하여 인스턴스를 압축 해제한 후 먼저 실행해야 합니다. 그렇지 않으면 quickstart.properties 채우기가 생성되지 않습니다. 이 파일을 사용하지 않으면 향후 AEM 업그레이드에 실패합니다.
+   >위의 명령을 실행하여 인스턴스를 압축 해제한 후 먼저 실행해야 합니다. 그렇지 않으면 quickstart.properties 채우기가 생성되지 않습니다. 이 파일이 없으면 향후 AEM 업그레이드에 장애가 발생합니다.
 
-1. bin **** 폴더에서 **시작** 스크립트를 열고 다음 섹션을 확인합니다.
+1. **bin** 폴더에서 **start** 스크립트를 열고 다음 섹션을 확인하십시오.
 
    ```xml
    # runmode(s)
@@ -266,7 +266,7 @@ EC2 환경에 게시 인스턴스를 설치하기 전에 다음을 수행하십�
    fi
    ```
 
-1. 실행 모드를 변경하여 파일을 **게시하고** 저장합니다.
+1. 실행 모드를 **publish**&#x200B;로 변경하고 파일을 저장합니다.
 
    ```xml
    # runmode(s)
@@ -275,11 +275,11 @@ EC2 환경에 게시 인스턴스를 설치하기 전에 다음을 수행하십�
    fi
    ```
 
-1. 인스턴스를 중지하고 **시작** 스크립트를 실행하여 다시 시작합니다.
+1. 인스턴스를 중지하고 **start** 스크립트를 실행하여 다시 시작합니다.
 
-## 설치 확인 {#verifying-the-installation}
+## 설치 확인 중 {#verifying-the-installation}
 
-다음 링크를 사용하여 설치가 작동되는지 확인할 수 있습니다(모든 예는 인스턴스가 localhost의 포트 8080에서 실행되고 있으며 CRX는 /crx 및 Launchpad 아래에 설치됨).
+다음 링크를 사용하여 설치가 작동되는지 확인할 수 있습니다(모든 예는 인스턴스가 localhost의 포트 8080에서 실행 중이며, CRX는 /crx 및 Launchpad 아래에 설치됨).
 
 * `http://localhost:8080/crx/de`
 
@@ -291,21 +291,21 @@ EC2 환경에 게시 인스턴스를 설치하기 전에 다음을 수행하십�
 
 ## 설치 후 작업 {#actions-after-installation}
 
-AEM WCM을 구성하는 방법은 여러 가지가 있지만, 특정 작업을 수행하거나 설치 후 즉시 검토해야 합니다.
+AEM WCM을 구성하는 방법은 여러 가지가 있지만 특정 작업을 수행하거나 설치 후 즉시 검토해야 합니다.
 
-* 시스템 [의](/help/sites-administering/security-checklist.md) 보안을 유지하는 데 필요한 작업은 보안 체크리스트를 참조하십시오.
-* AEM WCM과 함께 설치되는 기본 사용자 및 그룹 목록을 검토하십시오. 다른 계정에 대해 조치를 취할 것인지 확인합니다. 자세한 내용은 [보안 및 사용자 관리를](/help/sites-administering/security.md) 참조하십시오.
+* 시스템이 안전한지 확인하는 데 필요한 작업은 [보안 검사 목록](/help/sites-administering/security-checklist.md)을 참조하십시오.
+* AEM WCM과 함께 설치되는 기본 사용자 및 그룹 목록을 검토합니다. 다른 계정에 대해 조치를 취할 것인지 확인하십시오. 자세한 내용은 [보안 및 사용자 관리](/help/sites-administering/security.md)를 참조하십시오.
 
-## CRXDE Lite 및 웹 콘솔 액세스 {#accessing-crxde-lite-and-the-web-console}
+## CRXDE Lite 액세스 및 웹 콘솔 {#accessing-crxde-lite-and-the-web-console}
 
 AEM WCM이 시작되면 다음 항목에 액세스할 수도 있습니다.
 
-* [CRXDE Lite](#accessing-crxde-lite) - 저장소 액세스 및 관리에 사용
-* [웹 콘솔](#accessing-the-web-console) - OSGi 번들(OSGi 콘솔이라고도 함)을 관리하거나 구성하는 데 사용됨
+* [CRXDE Lite](#accessing-crxde-lite)  - 저장소 액세스 및 관리에 사용
+* [웹 콘솔](#accessing-the-web-console)  - OSGi 번들(OSGi 콘솔이라고도 함)을 관리하거나 구성하는 데 사용됩니다.
 
-### CRXDE Lite 액세스 {#accessing-crxde-lite}
+### CRXDE Lite {#accessing-crxde-lite} 액세스
 
-CRXDE Lite을 열려면 시작 화면에서 **CRXDE Lite** 를 선택하거나 브라우저를 사용하여
+CRXDE Lite을 열려면 시작 화면에서 **CRXDE Lite**&#x200B;을 선택하거나 브라우저를 사용하여
 
 ```
  https://<<i>host</i>>:<<i>port</i>>/crx/de/index.jsp
@@ -314,11 +314,11 @@ CRXDE Lite을 열려면 시작 화면에서 **CRXDE Lite** 를 선택하거나 �
 예:\
 `http://localhost:4502/crx/de/index.jsp` ``
 
-![instcq_crxdelite](assets/installcq_crxdelite.png)
+![installcq_crxdelite](assets/installcq_crxdelite.png)
 
-### 웹 콘솔 액세스 {#accessing-the-web-console}
+### 웹 콘솔 {#accessing-the-web-console} 액세스
 
-Adobe CQ 웹 콘솔에 액세스하려면 시작 화면에서 **OSGi 콘솔** 을 선택하거나 브라우저를 사용하여
+Adobe CQ 웹 콘솔에 액세스하려면 시작 화면에서 **OSGi 콘솔**&#x200B;을 선택하거나 브라우저를 사용하여
 
 ```
  https://<<i>host</i>>:<<i>port</i>>/system/console
@@ -331,22 +331,22 @@ Adobe CQ 웹 콘솔에 액세스하려면 시작 화면에서 **OSGi 콘솔** �
 
 ![chlimage_1-74](assets/chlimage_1-74.png)
 
-자세한 [내용은 웹 콘솔과](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 함께 OSGi 구성을 참조하십시오.
+자세한 내용은 [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)과 함께 OSGi 구성을 참조하십시오.
 
 ## 문제 해결 {#troubleshooting}
 
-설치 시 발생할 수 있는 문제 처리에 대한 자세한 내용은 다음을 참조하십시오.
+설치 중에 발생할 수 있는 문제를 처리하는 방법에 대한 자세한 내용은 다음을 참조하십시오.
 
 * [문제 해결](/help/sites-deploying/troubleshooting.md)
 
-## Uninstalling Adobe Experience Manager {#uninstalling-adobe-experience-manager}
+## Adobe Experience Manager {#uninstalling-adobe-experience-manager} 제거
 
-AEM은 단일 디렉토리에 설치되므로 제거 유틸리티를 사용할 필요가 없습니다. AEM을 제거하는 방법은 원하는 것 및 사용하는 영구 스토리지에 따라 다르지만, 전체 설치 디렉토리를 삭제하는 것만큼 간단하게 제거할 수 있습니다.
+AEM은 단일 디렉토리에 설치되므로 제거 유틸리티를 사용할 필요가 없습니다. AEM 제거 방법은 원하는 방법과 계속 사용하는 스토리지에 따라 다르지만, 전체 설치 디렉토리를 삭제하는 것만큼 간단하게 제거할 수 있습니다.
 
-영구 저장소가 설치 디렉토리에 포함되는 경우(예: 기본 TarPM 설치) 폴더를 삭제하면 데이터도 제거됩니다.
+영구 스토리지가 설치 디렉토리에 포함되는 경우(예: 기본 TarPM 설치에서) 폴더를 삭제하면 데이터도 제거됩니다.
 
 >[!NOTE]
 >
->Adobe은 AEM을 삭제하기 전에 저장소를 백업하는 것이 좋습니다. 전체 &lt;cq-installation-directory>를 삭제하면 저장소가 삭제됩니다. &lt;cq-installation-directory>/crx-quickstart/repository 폴더를 삭제하기 전에 저장소 데이터를 보관하려면 다른 폴더를 삭제해야 합니다.
+>Adobe은 AEM을 삭제하기 전에 저장소를 백업하는 것이 좋습니다. 전체 &lt;cq-installation-directory>를 삭제하면 저장소가 삭제됩니다. 다른 폴더를 삭제하기 전에 저장소 데이터를 유지하려면 &lt;cq-installation-directory>/crx-quickstart/repository 폴더를 다른 위치로 이동하거나 복사하십시오.
 
-AEM 설치 시 데이터베이스 서버와 같은 외부 저장소를 사용하는 경우 폴더를 제거해도 데이터가 자동으로 제거되지는 않지만 저장소 구성이 제거되므로 JCR 컨텐츠를 복원하는 것이 어렵습니다.
+AEM 설치 시 데이터베이스 서버와 같은 외부 저장소를 사용하는 경우 폴더를 제거해도 데이터가 자동으로 제거되지는 않지만 저장소 구성이 제거되므로 JCR 컨텐츠 복원이 어렵습니다.
