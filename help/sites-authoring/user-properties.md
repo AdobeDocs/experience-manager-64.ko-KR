@@ -22,7 +22,7 @@ ht-degree: 96%
 
 AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능을 제공합니다.
 
-Using the [User](/help/sites-authoring/user-properties.md#user-settings) option in the [header](/help/sites-authoring/basic-handling.md#the-header) and the associated [My Preferences](#my-preferences) dialog, you can modify your user options.
+[헤더](/help/sites-authoring/basic-handling.md#the-header)의 [사용자](/help/sites-authoring/user-properties.md#user-settings) 옵션과 관련 [내 환경 설정](#my-preferences) 대화 상자에서 사용자 옵션을 수정할 수 있습니다.
 
 ## 사용자 설정 {#user-settings}
 
