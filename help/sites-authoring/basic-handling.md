@@ -54,7 +54,7 @@ AEM 사용자 인터페이스는 터치가 활성화되어 있습니다. 터치 
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
 
-Click or tap **Got it!**&#x200B;를 클릭하거나 탭하여 개요 다음 페이지로 이동합니다. Click or tap **Close** or click or tap outside of the overview dialogue to close.
+**Got it!**&#x200B;를 클릭하거나 탭하여 개요 다음 페이지로 이동합니다. **닫기**&#x200B;를 클릭하거나 탭하거나 개요 대화 상자의 외부를 클릭하거나 탭하여 닫습니다.
 
 **더 이상 보지 않기** 옵션을 선택하지 않은 한 이후에 콘솔에 액세스하면 개요가 다시 시작됩니다.
 
@@ -107,7 +107,7 @@ Click or tap **Got it!**&#x200B;를 클릭하거나 탭하여 개요 다음 페�
   </tr>
   <tr>
    <td>양식</td> 
-   <td>This console allows you to create, manage, and process your <a href="/help/forms/using/introduction-aem-forms.md">forms and documents</a>&gt;.</td> 
+   <td>이 콘솔에서는 <a href="/help/forms/using/introduction-aem-forms.md">양식 및 문서</a>&gt;를 만들고, 관리하고 처리할 수 있습니다.</td> 
   </tr>
   <tr>
    <td>개인화</td> 
@@ -228,7 +228,7 @@ Click or tap **Got it!**&#x200B;를 클릭하거나 탭하여 개요 다음 페�
 
    모든 콘솔에 처음 액세스할 때 [제품 탐색 개요](/help/sites-authoring/basic-handling.md#product-navigation)와 마찬가지로 이 개요를 탐색합니다.
 
-   [**페이지 정보&#x200B;**메뉴에서**&#x200B;도움말&#x200B;**](/help/sites-authoring/author-environment-tools.md#accessing-help)을 선택하여 언제든지 이 페이지를 다시 볼 수 있습니다.
+   [**페이지 정보** 메뉴에서 **도움말**](/help/sites-authoring/author-environment-tools.md#accessing-help)&#x200B;을 선택하여 언제든지 이 페이지를 다시 볼 수 있습니다.
 
 * **도구 콘솔**
 
@@ -293,7 +293,7 @@ Click or tap **Got it!**&#x200B;를 클릭하거나 탭하여 개요 다음 페�
 >
 >기본적으로 AEM Assets은 보기의 썸네일로 UI에 있는 자산의 원본 표현물을 표시하지 않습니다. 관리자인 경우, 오버레이를 사용하여 AEM Assets을 구성한 뒤 원본 표현물을 썸네일로 표시할 수 있습니다.
 
-### 리소스 선택 {#selecting-resources}
+### 리소스 선택  {#selecting-resources}
 
 특정 리소스를 선택하는 방법은 보기 및 장치 조합에 따라 다릅니다.
 
@@ -364,7 +364,7 @@ Click or tap **Got it!**&#x200B;를 클릭하거나 탭하여 개요 다음 페�
 
 1. 리소스를 선택하면 상단 헤더에는 현재 선택한 리소스에 적용할 수 있는 작업에 대한 액세스를 제공하는 [작업 도구 모음](#actions-toolbar)이 표시됩니다.
 
-   To exit selection mode select the **X** to the top-right.
+   선택 모드를 종료하려면 오른쪽 위에 있는 **X**&#x200B;을 선택합니다.
 
 ### 열 보기 {#column-view}
 
@@ -442,7 +442,7 @@ Click or tap **Got it!**&#x200B;를 클릭하거나 탭하여 개요 다음 페�
       * 확인란을 다시 클릭하거나 탭하면 모든 항목이 선택 취소됩니다.
 
 
-* 보기 단추 아래에 있는 **보기 설정 **옵션을 사용하여 표시할 열을 선택합니다. 다음 열이 표시될 수 있습니다.
+* 보기 단추 아래에 있는 **설정 보기 ** 옵션을 사용하여 표시할 열을 선택합니다. 다음 열이 표시될 수 있습니다.
 
    * **이름** - 페이지 이름이며, 페이지 URL의 일부이고 언어와 관계없이 변경되지 않으므로 다국어 제작 환경에서 유용할 수 있습니다.
    * **수정됨** - 마지막 수정 일자 및 수정자
