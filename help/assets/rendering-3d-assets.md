@@ -1,8 +1,8 @@
 ---
 title: 3D 자산 렌더링
 seo-title: 3D 자산 렌더링
-description: AEM에서 조작하고 저장한 3D 자산을 렌더링하여 웹 페이지용 2D 이미지를 만드는 방법을 살펴봅니다.
-seo-description: AEM에서 조작하고 저장한 3D 자산을 렌더링하여 웹 페이지용 2D 이미지를 만드는 방법을 살펴봅니다.
+description: AEM에서 조작하고 저장한 3D 에셋을 렌더링하여 웹 페이지용 2D 이미지를 만드는 방법을 살펴봅니다.
+seo-description: AEM에서 조작하고 저장한 3D 에셋을 렌더링하여 웹 페이지용 2D 이미지를 만드는 방법을 살펴봅니다.
 uuid: ee4d669c-72b1-4f7a-9a68-a7c6d59c7856
 contentOwner: Rick Brough
 topic-tags: 3D
@@ -51,14 +51,14 @@ Rapid Refine 렌더러는 더 큰 이미지를 렌더링하는 데 일반적으�
    [3D 자산 보기](viewing-3d-assets.md)를 참조하십시오.
 
 1. Adobe Experience Manager의 **[!UICONTROL 탐색]** 페이지에서 **[!UICONTROL 자산]**&#x200B;을 탭합니다.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
+1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 보기]** 드롭다운 목록에서 **[!UICONTROL 카드 보기]**&#x200B;를 탭합니다.
 1. 렌더링할 3D 개체로 이동합니다.
 1. 3D 개체의 카드를 탭하여 자산 세부 사항 페이지에서 엽니다.
 1. 페이지의 왼쪽 위 모서리 근처에 있는 드롭다운 목록을 탭한 다음, **[!UICONTROL 렌더링]**&#x200B;을 선택합니다.
 
    ![chlimage_1-369](assets/chlimage_1-369.png)
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Stage Selector]** icon (spotlight), then select a stage name with the background and lighting that you want to apply to the 3D object.
+1. 자산 세부 사항 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 스테이지 선택기]** 아이콘(스포트라이트)을 탭한 다음, 3D 개체에 적용할 배경과 조명이 있는 스테이지 이름을 선택합니다.
 
    ](about-the-use-of-stages-in-aem-3d.md)AEM 3D의 단계 사용 정보[를 참조하십시오.
 
@@ -66,7 +66,7 @@ Rapid Refine 렌더러는 더 큰 이미지를 렌더링하는 데 일반적으�
 
    **[!UICONTROL 스테이지 선택기 아이콘]**
 
-1. On the **[!UICONTROL Render]** drop-down list on the left side of the asset details page, select a renderer.
+1. 자산 세부 사항 페이지의 왼쪽에 있는 **[!UICONTROL 렌더링]** 드롭다운 목록에서 렌더러를 선택합니다.
 
    기본 렌더러인 **Rapid Refine** 렌더러는 항상 사용 가능합니다. 선택한 스테이지가 기본 형식인 경우, 해당하는 타사 렌더러도 사용자가 선택하는 목록에서 사용할 수 있게 됩니다.
 
@@ -74,12 +74,12 @@ Rapid Refine 렌더러는 더 큰 이미지를 렌더링하는 데 일반적으�
 
 1. 다음을 수행합니다.
 
-   * In the **[!UICONTROL Width]** and **[!UICONTROL Height]** fields, enter the pixel width and height that you want your image rendered.
-   * In the **[!UICONTROL Image Name]** field, enter the name of the rendered image.
-   * In the **[!UICONTROL Export Path]** field, enter the path where you want the rendered image stored. Or, tap the **[!UICONTROL Browse]** icon and navigate to a location.
-   * (Optional) Select or deselect the **[!UICONTROL Overwrite existing imag]e **check box.
+   * **[!UICONTROL 너비]** 및 **[!UICONTROL 높이]** 필드에 이미지를 렌더링할 픽셀 너비와 높이를 입력합니다.
+   * **[!UICONTROL 이미지 이름]** 필드에 렌더링된 이미지의 이름을 입력합니다.
+   * **[!UICONTROL 내보내기 경로]** 필드에 렌더링된 이미지를 저장할 경로를 입력합니다. 또는 **[!UICONTROL 찾아보기]** 아이콘을 탭하고 원하는 위치로 이동합니다.
+   * (선택 사항) **[!UICONTROL 기존 이미지]e** 덮어쓰기 확인란을 선택하거나 선택 취소합니다.
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Camera Selector]** icon. 렌더링된 이미지에 적용할 카메라 보기를 선택하십시오.
+1. 자산 세부 사항 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 카메라 선택기]** 아이콘을 탭합니다. 렌더링된 이미지에 적용할 카메라 보기를 선택하십시오.
 
    왼쪽과 오른쪽 막대 또는 위쪽과 아래쪽 막대는 보기에서 렌더링될 부분에 대한 시각적 표시입니다. 선택한 스테이지에서 카메라가 제공되면 사전 정의된 카메라를 선택할 수 있습니다.
 
