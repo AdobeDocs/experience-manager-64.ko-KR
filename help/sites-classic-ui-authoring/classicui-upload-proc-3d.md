@@ -24,14 +24,14 @@ ht-degree: 80%
 
 [자산 업로드](/help/assets/managing-assets-touch-ui.md#uploading-assets)를 참조하십시오.
 
-기본 3D 모델 파일을 업로드하기 전이나 동시에 참조된 모든 파일을 업로드하는 것이 좋습니다. 그러나 요구 사항은 아닙니다.
+기본 3D 모델 파일을 업로드하려면 모든 참조된 파일을 이전 또는 동시에 업로드하는 것이 좋습니다. 그러나 요구 사항은 아닙니다.
 
 업로드가 완료되면, 자산을 보고 렌더링할 수 있도록 3D 파일이 변환되고, 추가적인 처리가 적용됩니다.
 
 ## 3D 자산 업로드에 대한 우수 사례 {#best-practices-for-uploading-d-assets}
 
 * 일반적으로 AEM Assets 폴더 계층 구조에서 3D 컨텐츠를 업로드하는 것에 대한 제한 사항은 없습니다. 그러나 AEM 3D의 자동화된 파일 종속성 해소에는 대규모 자산 저장소를 검색하는 데 걸리는 시간을 제어하는 범위 제한이 있습니다. 따라서 3D 자산 및 연결된 파일들을 업로드할 때에는 각 파일의 합리적인 범위 내(일반적인 차상위 폴더)에서 수행하는 것이 좋습니다. 파일 종속성이 해소된 후에는 구축된 관계를 잃지 않고 저장소 내 어디에서든 3D 자산과 종속 항목을 모두 자유롭게 이동할 수 있습니다.
-* *업로드하기 전에 3D 컨텐츠에 대한 일관된 폴더 구조를 결정하는 것이 좋습니다. 다음 팁은 선택할 수 있는 몇 가지 추천 접근 방식입니다.
+* *업로드하기 전에 3D 컨텐트에 대한 일관된 폴더 구조를 선택하는 것이 좋습니다. 다음 팁은 선택할 수 있는 몇 가지 추천 접근 방식입니다.
 
    * **업로드하는 각 3D 자산에 대해 별도의 폴더를 유지 관리합니다**.
 
@@ -53,11 +53,11 @@ ht-degree: 80%
 
 3D 파일을 변환 및 처리하는 데에는 일반적으로 서버에서 상당한 CPU 및 메모리 리소스가 소비됩니다. 또한 상당한 시간이 소요됩니다. 처리 시간은 종종 모델의 크기와 서버의 기능에 따라 크게 달라집니다. 예를 들어 면이 10만 개 미만인 일반적인 작은 모델은 일반적으로 1분 미만이면 볼 수 있도록 준비가 되며, 2~3분이면 완전히 처리됩니다. 반면에 면이 백만 개 이상인 큰 모델은 완전히 처리하는 데 수십 분이 걸릴 수 있습니다.
 
-서버가 너무 많이 느려지는 방지하기 위해 전환, 처리 및 렌더링 작업은 필요에 따라 큐에 오르게 됩니다. The message &quot;Waiting for processing...&quot; is sometimes shown in the **[!UICONTROL Card View]** at the time you uploaded assets. 이 상태는 현재 자산이 처리되기 전에 다른 처리 또는 렌더링 작업이 완료되어야 함을 나타냅니다.
+서버가 너무 많이 느려지는 방지하기 위해 전환, 처리 및 렌더링 작업은 필요에 따라 큐에 오르게 됩니다. &quot;처리 대기 중...&quot; 메시지 은 자산을 업로드한 시점에 **[!UICONTROL 카드 보기]**&#x200B;에 표시되는 경우가 있습니다. 이 상태는 현재 자산이 처리되기 전에 다른 처리 또는 렌더링 작업이 완료되어야 함을 나타냅니다.
 
 ## 업로드된 3D 파일의 처리 상태 모니터링 {#monitoring-the-processing-status-of-your-uploaded-d-files}
 
-In **[!UICONTROL Card View]** only, the processing status and progression is displayed as a progress banner on the asset&#39;s card. 업로드된 각 3D 모델은 일반적으로 다음 4-6개의 순서로 처리 단계를 수행합니다.
+**[!UICONTROL 카드 보기]**&#x200B;에서만 처리 상태 및 진행 상태가 자산의 카드에 진행 배너로 표시됩니다. 업로드된 각 3D 모델은 일반적으로 다음의 4-6개의 순서로 처리 단계를 수행합니다.
 
 <table> 
  <tbody> 
@@ -69,7 +69,7 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   <tr> 
    <td>1</td> 
    <td>처리 중</td> 
-   <td>기본적인 초기 처리 및 메타데이터 추출</td> 
+   <td>기본적인 초기 처리 및 메타데이터 추출.</td> 
   </tr> 
   <tr> 
    <td>2</td> 
@@ -101,5 +101,5 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
 
 >[!NOTE]
 >
->You can view a 3D asset in **[!UICONTROL Detail View]** or render it after the Creating preview stage is complete. 모든 처리 단계가 완료될 때까지 기다릴 필요가 없습니다.
+>미리 보기 만들기 단계가 완료된 후 **[!UICONTROL 세부 사항 보기]**&#x200B;에서 3D 자산을 보거나 렌더링할 수 있습니다. 모든 처리 단계가 완료될 때까지 기다릴 필요가 없습니다.
 
