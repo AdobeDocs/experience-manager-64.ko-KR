@@ -1,8 +1,8 @@
 ---
 title: 모바일 빠른 시작
 seo-title: 모바일 빠른 시작
-description: 'AEM Verify 앱에 대해 알려면 이 페이지를 따르십시오. AEM Verify 앱은 iOS 또는 Android 모바일 디바이스에서 AEM 모바일 애플리케이션을 빠르고 쉽게 실행할 수 있는 방법입니다. '
-seo-description: 'AEM Verify 앱에 대해 알려면 이 페이지를 따르십시오. AEM Verify 앱은 iOS 또는 Android 모바일 디바이스에서 AEM 모바일 애플리케이션을 빠르고 쉽게 실행할 수 있는 방법입니다. '
+description: 'AEM Verify 앱에 대해 알아보려면 이 페이지를 따르십시오. AEM Verify 앱은 iOS 또는 Android 모바일 디바이스에서 AEM 모바일 애플리케이션을 빠르고 쉽게 실행할 수 있는 방법입니다. '
+seo-description: 'AEM Verify 앱에 대해 알아보려면 이 페이지를 따르십시오. AEM Verify 앱은 iOS 또는 Android 모바일 디바이스에서 AEM 모바일 애플리케이션을 빠르고 쉽게 실행할 수 있는 방법입니다. '
 uuid: afae4b9d-f835-4d83-b758-39a0d7741510
 contentOwner: User
 content-type: reference
@@ -28,4 +28,4 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->AEM Verify App은 더 이상 사용되지 않습니다. 앱이 Apple AppStore 및 Android PlayStore에서 제거되었습니다.
+>AEM Verify 앱은 더 이상 사용되지 않습니다. 앱이 Apple AppStore 및 Android PlayStore에서 제거되었습니다.
