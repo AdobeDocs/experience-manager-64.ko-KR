@@ -10,7 +10,7 @@ topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 917b4fec-d5fe-4402-b69c-3c9645e6f934
 translation-type: tm+mt
-source-git-commit: 03d738e50be604959af93c863fbdc711ee4b083e
+source-git-commit: a1709aa10d480e7509665f3f7a791348d8323076
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 3%
@@ -28,7 +28,7 @@ ht-degree: 3%
 
 AEM 프로젝트 우수 사례 검사 목록 v2
 
-[파일 가져오기](assets/aem_project_bp_checklistv2.xlsx)
+[파일 가져오기](assets/aem_project_bp_checklistv2-64.xlsx)
 
 ## 워크시트 {#worksheets}
 
