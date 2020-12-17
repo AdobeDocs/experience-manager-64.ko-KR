@@ -10,9 +10,9 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: 5e76fe09-4d37-4c8c-8baf-97e75689bd26
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 6fc1a2502187be0fbbfbea516788e705f1a2697c
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '501'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ AEM 6.4에서는 모든 기능이 이전 버전과의 호환성을 고려하여 
 
 대부분의 경우 AEM 6.3을 실행하는 고객은 업그레이드를 수행할 때 코드나 사용자 지정을 변경할 필요가 없습니다. AEM 6.1 및 6.2 고객의 경우 6.3으로 업그레이드하는 동안 발생하는 변화와 다른 변경 사항은 없습니다.
 
-기능을 이전 버전에서 호환하지 않는 경우는 예외적으로 6.3용 호환성 패키지를 설치하여 번들과 컨텐츠를 이전 버전처럼 호환할 수 있습니다( 다운로드 위치에 대한 자세한 내용은 아래 설정 방법 참조). 이 압축 패키지는 AEM 6.3과 호환되는 응용 프로그램의 호환성을 복원합니다.
+기능을 이전 버전에서 호환하지 못하는 경우는 예외적으로 6.3용 호환성 패키지를 설치하여 번들과 컨텐츠를 이전 버전처럼 호환할 수 있습니다(다운로드 위치에 대한 자세한 내용은 아래 설정 방법 참조). 이 호환성 패키지는 AEM 6.3과 호환되는 응용 프로그램의 호환성을 복원합니다.
 
 호환성 패키지를 사용하면 호환성 모드에서 AEM을 실행하고 새로운 AEM 기능에 대해 사용자 정의 개발을 연기할 수 있습니다.
 
@@ -62,7 +62,7 @@ AEM 6.4에서는 모든 기능이 이전 버전과의 호환성을 고려하여 
 
 ## 설정 방법 {#how-to-set-up}
 
-AEM 6.3 호환성 패키지는 이 [link](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63)의 패키지 관리자를 사용하여 패키지로 설치할 수 있습니다.
+AEM 6.3 호환성 패키지는 패키지 관리자를 사용하여 패키지로 설치할 수 있습니다. 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63) 사이트에서 [AEM 6.3 호환성 패키지를 다운로드할 수 있습니다.
 
 호환성 패키지가 설치되면 아래 표시된 것처럼 OSGI 구성에서 스위치를 사용하여 라우팅을 활성화하거나 비활성화할 수 있습니다.
 
