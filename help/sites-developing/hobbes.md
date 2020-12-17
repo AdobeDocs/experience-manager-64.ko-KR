@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: components, testing
 discoiquuid: bc0130c3-826e-47dd-b18b-85e1a7bb9936
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 088961dd5457f2136a5eea6f6811455105a8dd1f
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '717'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 # UI 테스트{#testing-your-ui}
 
-AEM은 AEM UI에 대한 테스트를 자동화하기 위한 프레임워크를 제공합니다. 이 프레임워크를 사용하면 웹 브라우저에서 직접 UI 테스트를 작성하고 실행할 수 있습니다. 이 프레임워크는 테스트 생성을 위한 ajavascript API를 제공합니다.
+AEM은 AEM UI에 대한 테스트를 자동화하기 위한 프레임워크를 제공합니다. 이 프레임워크를 사용하면 웹 브라우저에서 직접 UI 테스트를 작성하고 실행할 수 있습니다. 이 프레임워크는 테스트를 만들기 위한 javascript API를 제공합니다.
 
 AEM 테스트 프레임워크는 Javascript로 작성된 테스트 라이브러리인 Hobes.js를 사용합니다. Hobes.js 프레임워크는 개발 프로세스의 일부로 AEM을 테스트하기 위해 개발되었습니다. 이 프레임워크는 이제 AEM 애플리케이션을 테스트하는 데 공개적으로 사용할 수 있습니다.
 
