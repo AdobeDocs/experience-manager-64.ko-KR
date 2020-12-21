@@ -29,7 +29,7 @@ AEM Forms 작업 영역은 양식 세트를 지원합니다. 양식을 사용하
 1. Workbench에서 업무 프로세스 워크플로우를 만듭니다. 자세한 내용은 [워크벤치 도움말](https://www.adobe.com/go/learn_aemforms_workbench_63)을 참조하십시오.
 1. 시작점의 프로세스 속성에서 프레젠테이션 및 데이터에서 **CRX 자산 사용**&#x200B;을 선택합니다.
 
-   ![3-1](assets/1-1.png)
+   ![1-1](assets/1-1.png)
 
 1. CRX 자산 경로 옆에 있는 ![찾아보기](assets/browse.png)(찾아보기)를 클릭합니다. 양식 자산 선택 대화 상자가 나타납니다.
 
