@@ -4,10 +4,10 @@ description: Adobe Experience Manager 6.4 누적 수정 팩에 대한 릴리스 
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e10d53a3912fb21962f1015550bd3a4a118d8834
+source-git-commit: 1d3476c3fdc8cf817e4784f36b4e0858fdc3b1ee
 workflow-type: tm+mt
-source-wordcount: '4156'
-ht-degree: 22%
+source-wordcount: '4217'
+ht-degree: 21%
 
 ---
 
@@ -158,6 +158,9 @@ Adobe Experience Manager 6.4.8.2은 다음 문제에 대한 수정 사항을 제
 * 페이지의 [!DNL Live Copy]을(를) 일시 중단할 수 있으며 상속은 편집기 모드에서 보듯이 끊깁니다. 그러나 페이지 속성에서 상속을 나타내는 아이콘은 상속이 존재하며 끊기지 않았음을 잘못 나타냅니다(NPR-34096).
 * 템플릿 편집 페이지에 허용된 구성 요소 표시 문제(CQ-4297295).
 * Chrome 및 Firefox를 업그레이드한 후 팝업 메뉴가 예상대로 작동하지 않습니다. 페이지 속성을 로드할 때 패널에 데이터가 있으면 패널이 표시되지 않습니다(CQ-4292995).
+* [!DNL Experience Manager Sites] 구성 요소의 다중 사이트 스크립팅 인스턴스(NPR-33926).
+* 사용자 입력은 클라이언트에 정보를 보낼 때 다양한 구성 요소에 대해 적절히 인코딩되지 않습니다(NPR-33696).
+* `childrenlist.html`으로 끝나는 URL은 404 응답 대신 HTML 페이지를 표시합니다. 이러한 URL은 사이트 간 스크립팅(NPR-33441)에 취약합니다.
 
 #### 자산 {#assets-6482}
 
@@ -234,6 +237,8 @@ Adobe Experience Manager 6.4.8.2은 다음 문제에 대한 수정 사항을 제
 * **[!UICONTROL REST 끝점에 제출]** 제출 작업이 응용 양식에 대해 작동하지 않습니다(NPR-34513).
 
 * 접근성:필수 필드에 대한 첨부를 업로드하지 않고 적응형 양식을 제출하려고 하면 초점은 자동으로 첨부 필드로 이동되지 않습니다(NPR-34511).
+
+* 사용자 입력은 클라이언트에 정보를 보낼 때 [!DNL Forms] 구성 요소에 대해 적절히 인코딩되지 않습니다(NPR-33611).
 
 **워크플로우**
 
