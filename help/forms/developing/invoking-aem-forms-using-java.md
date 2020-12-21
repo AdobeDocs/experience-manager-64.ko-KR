@@ -203,30 +203,30 @@ Java API를 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호
      <li><p>relaxngDatatype.jar</p></li>
      <li><p>xsdlib.jar</p></li>
     </ul></td>
-   <td><p>Rights Management 서비스를 호출하는 데 필요합니다.</p><p>AEM Forms이 JBoss에 배포된 경우 이러한 파일을 모두 포함합니다. </p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p><p>JBoss 특정 lib 디렉토리</p></td>
+   <td><p>Rights Management 서비스를 호출하는 데 필요합니다.</p><p>AEM Forms이 JBoss에 배포된 경우 이 파일을 모두 포함합니다. </p></td>
+   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p><p>JBoss 특정 lib 디렉토리</p></td>
   </tr>
   <tr>
    <td><p>adobe-signatures-client.jar</p></td>
    <td><p>서명 서비스를 호출하는 데 필요합니다.</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p></td>
   </tr>
   <tr>
    <td><p>adobe-taskmanager-client-sdk.jar</p></td>
-   <td><p>Task Manager 서비스를 호출하는 데 필요합니다. </p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>작업 관리자 서비스를 호출하는 데 필요합니다. </p></td>
+   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p></td>
   </tr>
   <tr>
    <td><p>adobe-truststore-client.jar</p></td>
    <td><p>Trust Store 서비스를 호출하는 데 필요합니다. </p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p></td>
   </tr>
  </tbody>
 </table>
 
 ### 연결 모드 및 J2EE 응용 프로그램 JAR 파일 {#connection-mode-and-j2ee-application-jar-files}
 
-다음 표에는 연결 모드에 종속된 JAR 파일과 AEM Forms이 배포된 J2EE 응용 프로그램 서버가 나와 있습니다.
+다음 표에는 연결 모드에 따라 결정되는 JAR 파일과 AEM Forms이 배포되는 J2EE 응용 프로그램 서버가 나열됩니다.
 
 <table>
  <thead>
@@ -242,7 +242,7 @@ Java API를 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호
     <ul>
      <li><p>activation.jar</p> </li>
      <li><p>axis.jar</p> </li>
-     <li><p>composer-codec-1.3.jar</p> </li>
+     <li><p>commons-codec-1.3.jar</p> </li>
      <li><p>commons-collections-3.1.jar</p> </li>
      <li><p>commons-discovery.jar</p> </li>
      <li><p>commons-logging.jar</p> </li>
@@ -260,18 +260,18 @@ Java API를 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호
      <li>xercesImpl.jar<br /> </li>
      <li>commons-httpclient-3.1.jar</li>
     </ul> <p> </p> </td>
-   <td><p>SOAP 모드를 사용하여 호출된 경우 이러한 JAR 파일을 포함합니다.</p> </td>
-   <td><p>&lt;&gt;install directory<em>&gt;/sdk/client-libs/thirdparty</em></p> </td>
+   <td><p>SOAP 모드를 사용하여 AEM Forms을 호출하면 이러한 JAR 파일을 포함합니다.</p> </td>
+   <td><p>&lt;&gt;설치 디렉토리<em>&gt;/sdk/client-libs/thirdparty</em></p> </td>
   </tr>
   <tr>
    <td><p> jboss-client.jar</p> </td>
-   <td><p>JBoss Application Server에 AEM Forms을 배포한 경우 이 JAR 파일을 포함합니다.</p> <p>jboss-client.jar 및 참조된 병들이 함께 있지 않으면 classloader에서 필수 클래스를 찾을 수 없습니다.</p> </td>
+   <td><p>aem forms이 JBoss Application Server에 배포되는 경우 이 JAR 파일을 포함합니다.</p> <p>jboss-client.jar 및 참조된 항어가 함께 있지 않으면 classloader에서 필수 클래스를 찾을 수 없습니다.</p> </td>
    <td><p>JBoss 클라이언트 lib 디렉토리</p> <p>클라이언트 응용 프로그램을 동일한 J2EE 응용 프로그램 서버에 배포하는 경우 이 파일을 포함할 필요가 없습니다.</p> </td>
   </tr>
   <tr>
    <td><p>wlclient.jar</p> </td>
-   <td><p>BEA WebLogic Server®에 AEM Forms이 배포되면 이 JAR 파일을 포함합니다.</p> </td>
-   <td><p>WebLogic-specific lib 디렉토리</p> <p>클라이언트 응용 프로그램을 동일한 J2EE 응용 프로그램 서버에 배포하는 경우 이 파일을 포함할 필요가 없습니다.</p> </td>
+   <td><p>aem forms이 BEA WebLogic Server®에 배포되는 경우 이 JAR 파일을 포함합니다.</p> </td>
+   <td><p>WebLogic 전용 lib 디렉토리</p> <p>클라이언트 응용 프로그램을 동일한 J2EE 응용 프로그램 서버에 배포하는 경우 이 파일을 포함할 필요가 없습니다.</p> </td>
   </tr>
   <tr>
    <td>
@@ -281,17 +281,17 @@ Java API를 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호
     </ul> </td>
    <td>
     <ul>
-     <li><p>WebSphere Application Server에 AEM Forms이 배포된 경우 이러한 JAR 파일을 포함합니다.</p> </li>
-     <li><p>(웹 서비스 호출에 com.ibm.ws.webservices.thinclient_6.1.0.jar이 필요합니다.)</p> </li>
+     <li><p>aem forms이 WebSphere 응용 프로그램 서버에 배포되는 경우 이러한 JAR 파일을 포함합니다.</p> </li>
+     <li><p>(웹 서비스 호출에는 com.ibm.ws.webservices.thinclient_6.1.0.jar가 필요합니다.)</p> </li>
     </ul> </td>
-   <td><p>WebSphere-specific lib 디렉토리(<em>[WAS_HOME]</em>/runtimes)</p> <p>클라이언트 응용 프로그램을 동일한 J2EE 응용 프로그램 서버에 배포하는 경우 이러한 파일을 포함할 필요가 없습니다.</p> </td>
+   <td><p>WebSphere 특정 lib 디렉토리(<em>[WAS_HOME]</em>/runtimes)</p> <p>클라이언트 응용 프로그램을 동일한 J2EE 응용 프로그램 서버에 배포하는 경우 이러한 파일을 포함할 필요가 없습니다.</p> </td>
   </tr>
  </tbody>
 </table>
 
 ### 시나리오 호출 {#invoking-scenarios}
 
-다음 표에서는 호출 시나리오를 지정하고 AEM Forms을 성공적으로 호출하기 위해 필요한 JAR 파일을 나열합니다.
+다음 표에서는 호출 시나리오를 지정하고 AEM Forms을 성공적으로 호출할 필수 JAR 파일을 나열합니다.
 
 <table>
  <thead>
@@ -321,7 +321,7 @@ Java API를 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Forms 서비스</p> <p>Acrobat Reader DC 확장 서비스</p> <p>서명 서비스</p> </td>
+   <td><p>Forms 서비스</p> <p>Acrobat Reader DC 익스텐션 서비스</p> <p>서명 서비스</p> </td>
    <td><p>EJB</p> </td>
    <td><p>JBoss</p> </td>
    <td>
@@ -350,7 +350,7 @@ Java API를 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호
      <li><p>wlclient.jar</p> </li>
      <li><p>activation.jar</p> </li>
      <li><p>axis.jar</p> </li>
-     <li><p>composer-codec-1.3.jar</p> </li>
+     <li><p>commons-codec-1.3.jar</p> </li>
      <li><p>commons-collections-3.1.jar</p> </li>
      <li><p>commons-discovery.jar</p> </li>
      <li><p>commons-logging.jar</p> </li>
@@ -369,7 +369,7 @@ Java API를 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Forms 서비스</p> <p>Acrobat Reader DC 확장 서비스</p> <p>서명 서비스</p> </td>
+   <td><p>Forms 서비스</p> <p>Acrobat Reader DC 익스텐션 서비스</p> <p>서명 서비스</p> </td>
    <td><p>SOAP</p> </td>
    <td><p>WebLogic</p> </td>
    <td>
@@ -379,7 +379,7 @@ Java API를 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호
      <li><p>wlclient.jar</p> </li>
      <li><p>activation.jar</p> </li>
      <li><p>axis.jar</p> </li>
-     <li><p>composer-codec-1.3.jar</p> </li>
+     <li><p>commons-codec-1.3.jar</p> </li>
      <li><p>commons-collections-3.1.jar</p> </li>
      <li><p>commons-discovery.jar</p> </li>
      <li><p>commons-logging.jar</p> </li>
@@ -406,7 +406,7 @@ Java API를 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호
 
 LiveCycle에서 AEM Forms으로 업그레이드하는 경우 Java 프로젝트의 클래스 경로에 AEM Forms JAR 파일을 포함하는 것이 좋습니다. 예를 들어 Rights Management 서비스와 같은 서비스를 사용하는 경우 클래스 경로에 AEM Forms JAR 파일을 포함하지 않으면 호환성 문제가 발생합니다.
 
-AEM Forms으로 업그레이드하는 경우 Rights Management 서비스를 호출하는 Java 응용 프로그램을 사용하려면 다음 JAR 파일의 AEM Forms 버전을 포함합니다.
+AEM Forms으로 업그레이드하는 경우 Rights Management 서비스를 호출하는 Java 애플리케이션을 사용하려면 다음 JAR 파일의 AEM Forms 버전을 포함합니다.
 
 * adobe-rightsmanagement-client.jar
 * adobe-livecycle-client.jar
@@ -418,19 +418,19 @@ AEM Forms으로 업그레이드하는 경우 Rights Management 서비스를 호�
 
 [연결 속성 설정](invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Java API를 사용하여 AEM Forms 서비스에 데이터 전달](invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)
+[Java API를 사용하여 AEM Forms 서비스로 데이터 전달](invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)
 
 [Java 클라이언트 라이브러리를 사용하여 서비스 호출](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
 
-## 연결 속성 설정 {#setting-connection-properties}
+## 연결 속성 {#setting-connection-properties} 설정
 
-Java API를 사용할 때 연결 속성을 설정하여 AEM Forms을 호출합니다. 연결 속성을 설정할 때 서비스를 원격으로 호출할지 로컬에서 호출할지를 지정하고 연결 모드 및 인증 값을 지정합니다. 서비스 보안이 활성화된 경우 인증 값이 필요합니다. 그러나 서비스 보안이 비활성화된 경우 인증 값을 지정할 필요가 없습니다.
+Java API를 사용할 때 AEM Forms을 호출하도록 연결 속성을 설정합니다. 연결 속성을 설정할 때 서비스를 원격으로 호출할지 로컬로 호출할지 여부를 지정하고 연결 모드 및 인증 값도 지정합니다. 서비스 보안이 활성화된 경우 인증 값이 필요합니다. 그러나 서비스 보안이 비활성화된 경우에는 인증 값을 지정할 필요가 없습니다.
 
-연결 모드는 SOAP 또는 EJB 모드일 수 있습니다. EJB 모드는 RMI/IOP 프로토콜을 사용하며 EJB 모드의 성능은 SOAP 모드의 성능보다 뛰어납니다. SOAP 모드는 J2EE 응용 프로그램 서버 종속성을 제거하거나 방화벽이 AEM Forms과 클라이언트 응용 프로그램 사이에 있는 경우에 사용됩니다. SOAP 모드에서는 https 프로토콜을 기본 전송으로 사용하고 방화벽 경계를 넘어 통신할 수 있습니다. J2EE 응용 프로그램 서버 종속성이나 방화벽이 모두 문제가 되는 경우 EJB 모드를 사용하는 것이 좋습니다.
+연결 모드는 SOAP 또는 EJB 모드일 수 있습니다. EJB 모드는 RMI/IIOP 프로토콜을 사용하며 EJB 모드의 성능은 SOAP 모드의 성능보다 뛰어납니다. SOAP 모드는 J2EE 응용 프로그램 서버 종속성을 제거하거나 방화벽이 AEM Forms과 클라이언트 응용 프로그램 사이에 있는 경우에 사용됩니다. SOAP 모드는 https 프로토콜을 기본 전송으로 사용하며 방화벽 경계를 넘어 통신할 수 있습니다. J2EE 응용 프로그램 서버 종속성 또는 방화벽이 모두 문제가 아니면 EJB 모드를 사용하는 것이 좋습니다.
 
 AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 설정합니다.
 
-* **DSC_DEFAULT_EJB_ENDPOINT:** EJB 연결 모드를 사용하는 경우 이 값은 AEM Forms이 배포된 J2EE 응용 프로그램 서버의 URL을 나타냅니다. AEM Forms을 원격으로 불러오려면 AEM Forms이 배포된 J2EE 응용 프로그램 서버 이름을 지정합니다. 클라이언트 응용 프로그램이 동일한 J2EE 응용 프로그램 서버에 있는 경우 `localhost`을 지정할 수 있습니다. 배포된 J2EE 응용 프로그램 서버 AEM Forms에 따라 다음 값 중 하나를 지정합니다.
+* **DSC_DEFAULT_EJB_ENDPOINT:** EJB 연결 모드를 사용하는 경우 이 값은 AEM Forms이 배포된 J2EE 응용 프로그램 서버의 URL을 나타냅니다. AEM Forms을 원격으로 불러오려면 AEM Forms이 배포된 J2EE 응용 프로그램 서버 이름을 지정합니다. 클라이언트 응용 프로그램이 동일한 J2EE 응용 프로그램 서버에 있는 경우 `localhost`을(를) 지정할 수 있습니다. J2EE 응용 프로그램 서버 AEM Forms이 배포된 항목에 따라 다음 값 중 하나를 지정합니다.
 
    * JBoss:`https://<ServerName>:8080 (default port)`
    * WebSphere:`iiop://<ServerName>:2809 (default port)`
@@ -438,23 +438,23 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
 
 * **DSC_DEFAULT_SOAP_ENDPOINT**:SOAP 연결 모드를 사용하는 경우 이 값은 호출 요청이 전송되는 끝점을 나타냅니다. AEM Forms을 원격으로 불러오려면 AEM Forms이 배포된 J2EE 응용 프로그램 서버 이름을 지정합니다. 클라이언트 응용 프로그램이 동일한 J2EE 응용 프로그램 서버에 있는 경우 `localhost`(예: `http://localhost:8080`)을 지정할 수 있습니다.
 
-   * 포트 값 `8080`은 J2EE 응용 프로그램이 JBoss인 경우 적용할 수 있습니다. J2EE 응용 프로그램 서버가 IBM® WebSphere®인 경우 포트 `9080`를 사용합니다. 마찬가지로 J2EE 응용 프로그램 서버가 WebLogic이면 포트 `7001`를 사용합니다. 이러한 값은 기본 포트 값입니다. 포트 값을 변경하는 경우 해당 포트 번호를 사용하십시오.
+   * 포트 값 `8080`은 J2EE 응용 프로그램이 JBoss인 경우 적용할 수 있습니다. J2EE 응용 프로그램 서버가 IBM® WebSphere®인 경우 `9080` 포트를 사용합니다. 마찬가지로 J2EE 응용 프로그램 서버가 WebLogic이면 `7001` 포트를 사용합니다. 이러한 값은 기본 포트 값입니다. 포트 값을 변경하는 경우 해당 포트 번호를 사용하십시오.)
 
-* **DSC_TRANSPORT_PROTOCOL**:EJB 연결 모드를 사용하는 경우 이 값 `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` 에 대해 지정합니다. SOAP 연결 모드를 사용하는 경우 `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`을 지정합니다.
-* **DSC_SERVER_TYPE**:AEM Forms이 배포된 J2EE 응용 프로그램 서버를 지정합니다. 유효한 값은 `JBoss`, `WebSphere`, `WebLogic`입니다.
+* **DSC_TRANSPORT_PROTOCOL**:EJB 연결 모드를 사용 중인 경우 이 값 `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` 에 대해 지정합니다. SOAP 연결 모드를 사용 중인 경우 `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`을 지정합니다.
+* **DSC_SERVER_TYPE**:AEM Forms이 배포되는 J2EE 응용 프로그램 서버를 지정합니다. 유효한 값은 `JBoss`, `WebSphere`, `WebLogic`입니다.
 
-   * 이 연결 속성을 `WebSphere`로 설정하면 `java.naming.factory.initial` 값이 `com.ibm.ws.naming.util.WsnInitCtxFactory`로 설정됩니다.
-   * 이 연결 속성을 `WebLogic`로 설정하면 `java.naming.factory.initial` 값이 `weblogic.jndi.WLInitialContextFactory`로 설정됩니다.
-   * 마찬가지로 이 연결 속성을 `JBoss`로 설정하면 `java.naming.factory.initial` 값이 `org.jnp.interfaces.NamingContextFactory`로 설정됩니다.
-   * 기본값을 사용하지 않으려면 `java.naming.factory.initial` 속성을 요구 사항에 맞는 값으로 설정할 수 있습니다.
+   * 이 연결 속성을 `WebSphere`으로 설정하면 `java.naming.factory.initial` 값이 `com.ibm.ws.naming.util.WsnInitCtxFactory`로 설정됩니다.
+   * 이 연결 속성을 `WebLogic`으로 설정하면 `java.naming.factory.initial` 값이 `weblogic.jndi.WLInitialContextFactory`로 설정됩니다.
+   * 마찬가지로 이 연결 속성을 `JBoss`으로 설정하면 `java.naming.factory.initial` 값이 `org.jnp.interfaces.NamingContextFactory`로 설정됩니다.
+   * 기본값을 사용하지 않으려는 경우 `java.naming.factory.initial` 속성을 요구 사항을 충족하는 값으로 설정할 수 있습니다.
 
    >[!NOTE]
    >
-   >문자열을 사용하여 `DSC_SERVER_TYPE` connection 속성을 설정하는 대신 `ServiceClientFactoryProperties` 클래스의 정적 멤버를 사용할 수 있습니다. 다음 값을 사용할 수 있습니다.`ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE` 또는 `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
+   >문자열을 사용하여 `DSC_SERVER_TYPE` 연결 속성을 설정하는 대신 `ServiceClientFactoryProperties` 클래스의 정적 멤버를 사용할 수 있습니다. 다음 값을 사용할 수 있습니다.`ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE` 또는 `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
 
 * **DSC_CREDENTIAL_USERNAME:** AEM 양식 사용자 이름을 지정합니다. 사용자가 AEM Forms 서비스를 성공적으로 호출하려면 서비스 사용자 역할이 필요합니다. 사용자는 서비스 호출 권한을 포함하는 다른 역할을 가질 수도 있습니다. 그렇지 않으면 서비스를 호출하려고 할 때 예외가 발생합니다. 서비스 보안이 비활성화된 경우 이 연결 속성을 지정할 필요가 없습니다.
 * **DSC_CREDENTIAL_PASSWORD:** 해당 암호 값을 지정합니다. 서비스 보안이 비활성화된 경우 이 연결 속성을 지정할 필요가 없습니다.
-* **DSC_REQUEST_TIMEOUT: SOAP 요청** 의 기본 요청 시간 초과 제한은 12,0000밀리초(20분)입니다. 때로는 요청을 완료하는 데 시간이 더 오래 걸릴 수 있습니다. 예를 들어 많은 레코드 집합을 검색하는 SOAP 요청에는 더 긴 시간 제한 제한이 필요할 수 있습니다. `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT`를 사용하여 SOAP 요청에 대한 요청 호출 시간 초과 제한을 늘릴 수 있습니다.
+* **DSC_REQUEST_TIMEOUT:** SOAP 요청에 대한 기본 요청 시간 초과 제한은 1200000 밀리초(20분)입니다. 때로는 요청을 완료하는 데 시간이 더 걸릴 수 있습니다. 예를 들어 대량의 레코드를 검색하는 SOAP 요청에는 더 긴 시간 제한 제한이 필요할 수 있습니다. `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT`을 사용하여 SOAP 요청에 대한 요청 호출 시간 초과 제한을 늘릴 수 있습니다.
 
    >[!NOTE]
    >
@@ -463,7 +463,7 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
 연결 속성을 설정하려면 다음 작업을 수행합니다.
 
 1. 생성자를 사용하여 `java.util.Properties` 객체를 만듭니다.
-1. `DSC_DEFAULT_EJB_ENDPOINT` connection 속성을 설정하려면 `java.util.Properties` 객체의 `setProperty` 메서드를 호출하고 다음 값을 전달합니다.
+1. `DSC_DEFAULT_EJB_ENDPOINT` 연결 속성을 설정하려면 `java.util.Properties` 객체의 `setProperty` 메서드를 호출하고 다음 값을 전달합니다.
 
    * `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT` 열거형 값
    * AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버의 URL을 지정하는 문자열 값
@@ -472,7 +472,7 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
    >
    >SOAP 연결 모드를 사용하는 경우 `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT` 열거형 값 대신 `ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT` 열거형 값을 지정합니다.
 
-1. `DSC_TRANSPORT_PROTOCOL` connection 속성을 설정하려면 `java.util.Properties` 객체의 `setProperty` 메서드를 호출하고 다음 값을 전달합니다.
+1. `DSC_TRANSPORT_PROTOCOL` 연결 속성을 설정하려면 `java.util.Properties` 객체의 `setProperty` 메서드를 호출하고 다음 값을 전달합니다.
 
    * `ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL` 열거형 값
    * `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` 열거형 값
@@ -481,16 +481,16 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
    >
    >SOAP 연결 모드를 사용하는 경우 `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` 열거형 값 대신 `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`열거형 값을 지정합니다.
 
-1. `DSC_SERVER_TYPE` connection 속성을 설정하려면 `java.util.Properties` 객체의 `setProperty` 메서드를 호출하고 다음 값을 전달합니다.
+1. `DSC_SERVER_TYPE` 연결 속성을 설정하려면 `java.util.Properties` 객체의 `setProperty` 메서드를 호출하고 다음 값을 전달합니다.
 
    * `ServiceClientFactoryProperties.DSC_SERVER_TYPE`열거형 값
    * AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버를 지정하는 문자열 값(예: AEM Forms이 JBoss에 배포된 경우 `JBoss` 지정).
 
-      1. `DSC_CREDENTIAL_USERNAME` connection 속성을 설정하려면 `java.util.Properties` 객체의 `setProperty` 메서드를 호출하고 다음 값을 전달합니다.
+      1. `DSC_CREDENTIAL_USERNAME` 연결 속성을 설정하려면 `java.util.Properties` 객체의 `setProperty` 메서드를 호출하고 다음 값을 전달합니다.
    * `ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME` 열거형 값
    * AEM Forms을 호출하는 데 필요한 사용자 이름을 지정하는 문자열 값
 
-      1. `DSC_CREDENTIAL_PASSWORD` connection 속성을 설정하려면 `java.util.Properties` 객체의 `setProperty` 메서드를 호출하고 다음 값을 전달합니다.
+      1. `DSC_CREDENTIAL_PASSWORD` 연결 속성을 설정하려면 `java.util.Properties` 객체의 `setProperty` 메서드를 호출하고 다음 값을 전달합니다.
    * `ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD` 열거형 값
    * 해당 암호 값을 지정하는 문자열 값
 
@@ -498,7 +498,7 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
 
 **JBoss에 대한 EJB 연결 모드 설정**
 
-다음 Java 코드 예제에서는 JBoss에 배치된 AEM Forms을 호출하고 EJB 연결 모드를 사용하여 연결 속성을 설정합니다.
+다음 Java 코드 예제에서는 연결 속성을 설정하여 JBoss에 배포된 AEM Forms을 호출하고 EJB 연결 모드를 사용합니다.
 
 ```java
  Properties ConnectionProps = new Properties();
@@ -510,9 +510,9 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DOCUMENT_HTTP_ENDPOINT,"https://<hostname>:8080");
 ```
 
-**WebLogic에 대한 EJB 연결 모드 설정**
+**WebLogic용 EJB 연결 모드 설정**
 
-다음 Java 코드 예제에서는 WebLogic에 배포된 AEM Forms을 호출하고 EJB 연결 모드를 사용하여 연결 속성을 설정합니다.
+다음 Java 코드 예제에서는 연결 속성을 설정하여 WebLogic에 배포된 AEM Forms을 호출하고 EJB 연결 모드를 사용합니다.
 
 ```as3
  Properties ConnectionProps = new Properties();
@@ -525,7 +525,7 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
 
 **WebSphere에 대한 EJB 연결 모드 설정**
 
-다음 Java 코드 예제에서는 WebSphere에 배포된 AEM Forms을 호출하고 EJB 연결 모드를 사용하여 연결 속성을 설정합니다.
+다음 Java 코드 예제에서는 연결 속성을 설정하여 WebSphere에 배포된 AEM Forms을 호출하고 EJB 연결 모드를 사용합니다.
 
 ```as3
  Properties ConnectionProps = new Properties();
@@ -555,7 +555,7 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
 
 **서비스 보안이 비활성화된 경우 연결 속성 설정**
 
-다음 Java 코드 예제에서는 JBoss Application Server에 배포된 AEM Forms을 호출하고 서비스 보안이 비활성화된 경우 필요한 연결 속성을 설정합니다.
+다음 Java 코드 예제에서는 JBoss Application Server에 배포된 AEM Forms을 호출하는 데 필요한 연결 속성을 설정하고 서비스 보안이 비활성화된 경우를 설정합니다.
 
 ```as3
  Properties ConnectionProps = new Properties();
@@ -566,7 +566,7 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
 
 >[!NOTE]
 >
->AEM Forms을 사용한 프로그래밍과 관련된 모든 Java Quick Start는 EJB 및 SOAP 연결 설정을 모두 표시합니다.
+>AEM Forms을 사용한 프로그래밍과 연관된 모든 Java 빠른 시작은 EJB 및 SOAP 연결 설정을 모두 보여줍니다.
 
 **사용자 지정 요청 시간 초과 제한으로 SOAP 연결 모드 설정**
 
@@ -580,20 +580,20 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
 ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, "1800000"); // Request timeout limit 30 Minutes
 ```
 
-**컨텍스트 객체를 사용하여 AEM Forms 호출**
+**Context 개체를 사용하여 AEM Forms 호출**
 
-`com.adobe.idp.Context` 객체를 사용하여 인증된 사용자와 함께 AEM Forms 서비스를 호출할 수 있습니다(인증된 사용자를 나타내는 `com.adobe.idp.Context` 객체). `com.adobe.idp.Context` 객체를 사용하는 경우 `DSC_CREDENTIAL_USERNAME` 또는 `DSC_CREDENTIAL_PASSWORD` 속성을 설정할 필요가 없습니다. `AuthenticationManagerServiceClient` 객체의 `authenticate` 메서드를 사용하여 사용자를 인증할 때 `com.adobe.idp.Context` 객체를 가져올 수 있습니다.
+`com.adobe.idp.Context` 개체를 사용하여 인증된 사용자와 AEM Forms 서비스를 호출할 수 있습니다(`com.adobe.idp.Context` 개체는 인증된 사용자를 나타냅니다.). `com.adobe.idp.Context` 개체를 사용할 때는 `DSC_CREDENTIAL_USERNAME` 또는 `DSC_CREDENTIAL_PASSWORD` 속성을 설정할 필요가 없습니다. 사용자를 인증할 때 `AuthenticationManagerServiceClient` 개체의 `authenticate` 메서드를 사용하여 `com.adobe.idp.Context` 개체를 가져올 수 있습니다.
 
-`authenticate` 메서드는 인증 결과를 포함하는 `AuthResult` 객체를 반환합니다. 생성자를 호출하여 `com.adobe.idp.Context` 객체를 만들 수 있습니다. 그런 다음 다음 다음 코드와 같이 `com.adobe.idp.Context` 객체의 `initPrincipal` 메서드를 호출하고 `AuthResult` 객체를 전달합니다.
+`authenticate` 메서드는 인증 결과를 포함하는 `AuthResult` 객체를 반환합니다. 생성자를 호출하여 `com.adobe.idp.Context` 객체를 만들 수 있습니다. 그런 다음 `com.adobe.idp.Context` 객체의 `initPrincipal` 메서드를 호출하고 다음 코드와 같이 `AuthResult` 객체를 전달합니다.
 
 ```as3
  Context myCtx = new Context();
  myCtx.initPrincipal(authResult);
 ```
 
-`DSC_CREDENTIAL_USERNAME` 또는 `DSC_CREDENTIAL_PASSWORD` 속성을 설정하는 대신 `ServiceClientFactory` 객체의 `setContext` 메서드를 호출하고 `com.adobe.idp.Context` 객체를 전달할 수 있습니다. AEM 양식 사용자를 사용하여 서비스를 호출할 때는 해당 사용자에게 AEM Forms 서비스를 호출하는 데 필요한 `Services User` 역할이 있는지 확인합니다.
+`DSC_CREDENTIAL_USERNAME` 또는 `DSC_CREDENTIAL_PASSWORD` 속성을 설정하는 대신 `ServiceClientFactory` 객체의 `setContext` 메서드를 호출하고 `com.adobe.idp.Context` 객체를 전달할 수 있습니다. AEM 양식 사용자를 사용하여 서비스를 호출할 때는 AEM Forms 서비스를 호출하는 데 필요한 `Services User` 역할이 있는지 확인합니다.
 
-다음 코드 예제에서는 `EncryptionServiceClient` 객체를 만드는 데 사용되는 연결 설정 내에서 `com.adobe.idp.Context` 객체를 사용하는 방법을 보여 줍니다.
+다음 코드 예제에서는 `EncryptionServiceClient` 개체를 만드는 데 사용되는 연결 설정 내에서 `com.adobe.idp.Context` 개체를 사용하는 방법을 보여 줍니다.
 
 ```as3
  //Authenticate a user and use the Context object within connection settings
@@ -629,16 +629,16 @@ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, 
 
 ### 시나리오 호출 {#invoking_scenarios-1}
 
-이 섹션에서는 다음 호출 시나리오에 대해 설명합니다.
+다음 호출 시나리오에 대해서는 이 섹션에서 설명합니다.
 
 * 자체 JVM(Java Virtual Machine)에서 실행되는 클라이언트 응용 프로그램은 독립 실행형 AEM Forms 인스턴스를 호출합니다.
-* 자체 JVM에서 실행되는 클라이언트 응용 프로그램은 클러스터링된 AEM Forms 인스턴스를 호출합니다.
+* 자체 JVM에서 실행 중인 클라이언트 응용 프로그램은 클러스터된 AEM Forms 인스턴스를 호출합니다.
 
 ### 독립 실행형 AEM Forms 인스턴스 {#client-application-invoking-a-stand-alone-aem-forms-instance}를 호출하는 클라이언트 응용 프로그램
 
-다음 다이어그램은 자체 JVM에서 실행되는 클라이언트 응용 프로그램과 독립 실행형 AEM Forms 인스턴스를 호출하는 방법을 보여 줍니다.
+다음 다이어그램은 자체 JVM에서 실행되고 독립 실행형 AEM Forms 인스턴스를 호출하는 클라이언트 응용 프로그램을 보여 줍니다.
 
-이 시나리오에서 클라이언트 응용 프로그램은 자체 JVM에서 실행 중이며 AEM Forms 서비스를 호출합니다.
+이 시나리오에서는 클라이언트 애플리케이션이 자체 JVM에서 실행되고 AEM Forms 서비스를 호출합니다.
 
 >[!NOTE]
 >
@@ -646,17 +646,17 @@ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, 
 
 ### 클러스터된 AEM Forms 인스턴스 {#client-application-invoking-clustered-aem-forms-instances}를 호출하는 클라이언트 응용 프로그램
 
-다음 다이어그램은 자체 JVM에서 실행되는 클라이언트 응용 프로그램과 클러스터에 있는 AEM Forms 인스턴스를 호출하는 방법을 보여 줍니다.
+다음 다이어그램은 자체 JVM에서 실행되고 클러스터에 있는 AEM Forms 인스턴스를 호출하는 클라이언트 응용 프로그램을 보여 줍니다.
 
-이 시나리오는 독립 실행형 AEM Forms 인스턴스를 호출하는 클라이언트 응용 프로그램과 비슷합니다. 그러나 공급자 URL은 다릅니다. 클라이언트 응용 프로그램이 특정 J2EE 응용 프로그램 서버에 연결하려는 경우 응용 프로그램은 특정 J2EE 응용 프로그램 서버를 참조하도록 URL을 변경해야 합니다.
+이 시나리오는 독립 실행형 AEM Forms 인스턴스를 호출하는 클라이언트 응용 프로그램과 유사합니다. 그러나 공급자 URL은 다릅니다. 클라이언트 응용 프로그램이 특정 J2EE 응용 프로그램 서버에 연결하려는 경우 응용 프로그램은 특정 J2EE 응용 프로그램 서버를 참조하도록 URL을 변경해야 합니다.
 
-응용 프로그램 서버가 중지되면 클라이언트 응용 프로그램과 AEM Forms 간의 연결이 종료되므로 특정 J2EE 응용 프로그램 서버를 참조하는 것이 좋습니다. 공급자 URL은 특정 J2EE 응용 프로그램 서버 대신 셀 수준 JNDI 관리자를 참조하는 것이 좋습니다.
+응용 프로그램 서버가 중지되면 클라이언트 응용 프로그램과 AEM Forms 간의 연결이 종료되므로 특정 J2EE 응용 프로그램 서버를 참조하는 것은 권장되지 않습니다. 공급자 URL은 특정 J2EE 응용 프로그램 서버 대신 셀 수준 JNDI 관리자를 참조하는 것이 좋습니다.
 
-SOAP 연결 모드를 사용하는 클라이언트 응용 프로그램은 클러스터에 HTTP 부하 분산 장치 포트를 사용할 수 있습니다. EJB 연결 모드를 사용하는 클라이언트 응용 프로그램은 특정 J2EE 응용 프로그램 서버의 EJB 포트에 연결할 수 있습니다. 이 작업은 클러스터 노드 간의 로드 밸런싱을 처리합니다.
+SOAP 연결 모드를 사용하는 클라이언트 응용 프로그램은 클러스터에 대해 HTTP 부하 균형 조정기 포트를 사용할 수 있습니다. EJB 연결 모드를 사용하는 클라이언트 응용 프로그램은 특정 J2EE 응용 프로그램 서버의 EJB 포트에 연결할 수 있습니다. 이 작업은 클러스터 노드 간 로드 밸런싱을 처리합니다.
 
 **WebSphere**
 
-다음 예제에서는 WebSphere에 배포된 AEM Forms에 연결하는 데 사용되는 jndi.properties 파일의 내용을 보여 줍니다.
+다음 예제는 WebSphere에 배포된 AEM Forms에 연결하는 데 사용되는 jndi.properties 파일의 컨텐츠를 보여줍니다.
 
 ```as3
  java.naming.factory.initial=com.ibm.websphere.naming.
@@ -666,7 +666,7 @@ SOAP 연결 모드를 사용하는 클라이언트 응용 프로그램은 클러
 
 **WebLogic**
 
-다음 예제에서는 WebLogic에 배포된 AEM Forms에 연결하는 데 사용되는 jndi.properties 파일의 내용을 보여 줍니다.
+다음 예제는 WebLogic에 배포된 AEM Forms에 연결하는 데 사용되는 jndi.properties 파일의 컨텐츠를 보여줍니다.
 
 ```as3
  java.naming.factory.initial=weblogic.jndi.WLInitialContextFactory
@@ -675,7 +675,7 @@ SOAP 연결 모드를 사용하는 클라이언트 응용 프로그램은 클러
 
 **JBoss**
 
-다음 예제에서는 JBoss에 배포된 AEM Forms에 연결하는 데 사용되는 jndi.properties 파일의 내용을 보여 줍니다.
+다음 예제는 JBoss에 배포된 AEM Forms에 연결하는 데 사용되는 jndi.properties 파일의 내용을 보여줍니다.
 
 ```as3
  java.naming.factory.initial= org.jnp.interfaces.NamingContextFactory
@@ -691,31 +691,31 @@ SOAP 연결 모드를 사용하는 클라이언트 응용 프로그램은 클러
 
 [AEM Forms Java 라이브러리 파일 포함](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
-[Java API를 사용하여 AEM Forms 서비스에 데이터 전달](invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)
+[Java API를 사용하여 AEM Forms 서비스로 데이터 전달](invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)
 
 [Java 클라이언트 라이브러리를 사용하여 서비스 호출](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
 
 ## Java API {#passing-data-to-aem-forms-services-using-the-java-api}를 사용하여 AEM Forms 서비스에 데이터 전달
 
-AEM Forms 서비스 작업은 일반적으로 PDF 문서를 소모하거나 생성합니다. 서비스를 호출할 때 PDF 문서(또는 XML 데이터 등의 다른 문서 유형)를 서비스에 전달해야 하는 경우가 있습니다. 마찬가지로, 서비스에서 반환되는 PDF 문서를 처리해야 하는 경우도 있습니다. AEM Forms 서비스에 데이터를 전달할 수 있는 Java 클래스는 `com.adobe.idp.Document`입니다.
+AEM Forms 서비스 작업은 일반적으로 PDF 문서를 소비하거나 생성합니다. 서비스를 호출할 때 PDF 문서(또는 XML 데이터와 같은 기타 문서 유형)를 서비스에 전달해야 하는 경우가 있습니다. 마찬가지로 서비스에서 반환되는 PDF 문서를 처리해야 하는 경우도 있습니다. AEM Forms 서비스를 통해 데이터를 주고 받을 수 있는 Java 클래스는 `com.adobe.idp.Document`입니다.
 
-AEM Forms 서비스에서는 PDF 문서를 `java.io.InputStream` 개체 또는 바이트 배열과 같은 다른 데이터 유형으로 사용할 수 없습니다. `com.adobe.idp.Document` 객체는 XML 데이터와 같은 다른 유형의 데이터를 서비스에 전달하는 데 사용할 수도 있습니다.
+AEM Forms 서비스는 PDF 문서를 `java.io.InputStream` 개체 또는 바이트 배열과 같은 다른 데이터 유형으로 허용하지 않습니다. 또한 `com.adobe.idp.Document` 객체를 사용하여 XML 데이터와 같은 다른 유형의 데이터를 서비스에 전달할 수도 있습니다.
 
-`com.adobe.idp.Document` 객체는 Java 직렬화 가능 유형이므로 RMI 호출을 통해 전달할 수 있습니다. 수신 면은 동일한 호스트, 동일한 클래스 로더), 로컬(동일한 호스트, 다른 클래스 로더) 또는 원격(다른 호스트)일 수 있습니다. 문서 내용 전달은 각 케이스에 최적화되어 있습니다. 예를 들어, 발신자와 수신자가 동일한 호스트에 있는 경우 해당 내용은 로컬 파일 시스템을 통해 전달됩니다. 경우에 따라 문서를 메모리에 전달할 수 있습니다.
+`com.adobe.idp.Document` 개체는 Java 직렬화 가능 형식이므로 RMI 호출을 통해 전달할 수 있습니다. 받는 쪽의 위치는 동일한 호스트, 동일한 클래스 로더), 로컬(동일한 호스트, 다른 클래스 로더) 또는 원격(다른 호스트)일 수 있습니다. 문서 컨텐츠 전달은 각 케이스에 맞게 최적화되어 있습니다. 예를 들어, 발신자와 수신자가 동일한 호스트에 있는 경우 해당 컨텐츠는 로컬 파일 시스템을 통해 전달됩니다. (경우에 따라 문서를 메모리에 전달할 수 있습니다.)
 
-`com.adobe.idp.Document` 객체 크기에 따라 데이터는 `com.adobe.idp.Document` 객체 내에서 전달되거나 서버의 파일 시스템에 저장됩니다. `com.adobe.idp.Document` 객체가 점유하는 모든 임시 스토리지 리소스는 `com.adobe.idp.Document` 처리 시 자동으로 제거됩니다. ([문서 개체 처리](invoking-aem-forms-using-java.md#disposing-document-objects)를 참조하십시오.)
+`com.adobe.idp.Document` 개체 크기에 따라 데이터는 `com.adobe.idp.Document` 개체 내에서 전달되거나 서버의 파일 시스템에 저장됩니다. `com.adobe.idp.Document` 객체가 차지하는 모든 임시 스토리지 리소스는 `com.adobe.idp.Document` 처리 시 자동으로 제거됩니다. ([문서 개체 처리](invoking-aem-forms-using-java.md#disposing-document-objects)를 참조하십시오.)
 
-서비스에 전달하려면 먼저 `com.adobe.idp.Document` 개체의 내용 유형을 알아야 하는 경우가 있습니다. 예를 들어, 작업에 `application/pdf`와 같은 특정 내용 유형이 필요한 경우 내용 유형을 결정하는 것이 좋습니다. ([문서의 내용 유형 확인](invoking-aem-forms-using-java.md#determining-the-content-type-of-a-document)을 참조하십시오.)
+서비스에 전달하기 전에 `com.adobe.idp.Document` 개체의 내용 유형을 알아야 하는 경우가 있습니다. 예를 들어 작업에 `application/pdf` 같은 특정 컨텐츠 유형이 필요한 경우 컨텐츠 유형을 결정하는 것이 좋습니다. (문서[의 내용 유형 결정을 참조하십시오.)](invoking-aem-forms-using-java.md#determining-the-content-type-of-a-document)
 
-`com.adobe.idp.Document` 객체는 제공된 데이터를 사용하여 내용 유형을 확인합니다. 제공된 데이터에서 내용 유형을 검색할 수 없는 경우(예: 데이터가 바이트 배열로 제공되었을 때) 내용 유형을 설정합니다. 내용 유형을 설정하려면 `com.adobe.idp.Document` 객체의 `setContentType` 메서드를 호출합니다. ([문서의 내용 유형 결정 참조](invoking-aem-forms-using-java.md#determining-the-content-type-of-a-document))
+`com.adobe.idp.Document` 개체는 제공된 데이터를 사용하여 콘텐트 유형을 확인합니다. 제공된 데이터에서 내용 유형을 검색할 수 없는 경우(예: 데이터가 바이트 배열로 제공되었을 때) 내용 유형을 설정합니다. 내용 유형을 설정하려면 `com.adobe.idp.Document` 객체의 `setContentType` 메서드를 호출합니다. ([문서 내용 유형 확인](invoking-aem-forms-using-java.md#determining-the-content-type-of-a-document) 참조)
 
-동일한 파일 시스템에 부수적 파일이 있는 경우 `com.adobe.idp.Document` 객체를 만드는 것이 더 빠릅니다. 보조 파일이 원격 파일 시스템에 있는 경우 복사 작업을 수행해야 하므로 성능에 영향을 줍니다.
+부수적 파일이 동일한 파일 시스템에 있는 경우 `com.adobe.idp.Document` 개체를 만드는 것이 더 빠릅니다. 부수적 파일이 원격 파일 시스템에 있는 경우 복사 작업을 수행해야 하므로 성능에 영향을 줍니다.
 
-응용 프로그램에는 `com.adobe.idp.Document` 및 `org.w3c.dom.Document` 데이터 유형이 모두 포함될 수 있습니다. 그러나 `org.w3c.dom.Document` 데이터 유형을 완전히 정규화해야 합니다. `org.w3c.dom.Document` 객체를 `com.adobe.idp.Document` 객체로 변환하는 방법에 대한 자세한 내용은 [빠른 시작(EJB 모드)을 참조하십시오.Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)를 사용하여 Forms을 흐름 가능한 레이아웃으로 미리 채웁니다.
+응용 프로그램에는 `com.adobe.idp.Document` 및 `org.w3c.dom.Document` 데이터 유형이 모두 포함될 수 있습니다. 그러나 `org.w3c.dom.Document` 데이터 유형의 자격을 완전히 갖추었는지 확인하십시오. `org.w3c.dom.Document` 개체를 `com.adobe.idp.Document` 개체로 변환하는 방법에 대한 자세한 내용은 [빠른 시작(EJB 모드)을 참조하십시오.Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)를 사용하여 Forms에 플로우 가능한 레이아웃을 미리 채웁니다.
 
 >[!NOTE]
 >
->`com.adobe.idp.Document` 객체를 사용하는 동안 WebLogic에서 메모리 누수를 방지하려면 2048바이트 이하의 청크로 문서 정보를 읽습니다. 예를 들어 다음 코드에서는 문서 정보를 2048바이트 단위로 읽어 옵니다.
+>`com.adobe.idp.Document` 개체를 사용하는 동안 WebLogic에서 메모리 누수를 방지하려면 2048바이트 이하의 청크(chunk)로 문서 정보를 읽으십시오. 예를 들어 다음 코드는 2048바이트 단위로 문서 정보를 읽습니다.
 
 ```as3
         // Set up the chunk size to prevent a potential memory leak
@@ -762,13 +762,13 @@ AEM Forms 서비스에서는 PDF 문서를 `java.io.InputStream` 개체 또는 �
 
 ### 문서 만들기 {#creating-documents}
 
-PDF 문서(또는 기타 문서 유형)가 입력 값으로 필요한 서비스 작업을 호출하기 전에 `com.adobe.idp.Document` 개체를 만듭니다. `com.adobe.idp.Document` 클래스는 다음과 같은 내용 유형으로 문서를 만들 수 있는 생성자를 제공합니다.
+PDF 문서(또는 다른 문서 유형)를 입력 값으로 필요로 하는 서비스 작업을 호출하기 전에 `com.adobe.idp.Document` 객체를 만듭니다. `com.adobe.idp.Document` 클래스는 다음과 같은 내용 형식에서 문서를 만들 수 있는 생성자를 제공합니다.
 
 * 바이트 배열
-* 기존 `com.adobe.idp.Document` 객체
-* `java.io.File` 객체
-* `java.io.InputStream` 객체
-* `java.net.URL` 객체
+* 기존 `com.adobe.idp.Document` 개체
+* `java.io.File` 개체
+* `java.io.InputStream` 개체
+* `java.net.URL` 개체
 
 #### 바이트 배열 {#creating-a-document-based-on-a-byte-array}을 기반으로 문서 만들기
 
@@ -780,7 +780,7 @@ PDF 문서(또는 기타 문서 유형)가 입력 값으로 필요한 서비스 
  Document myPDFDocument = new Document(myByteArray);
 ```
 
-#### 다른 문서 {#creating-a-document-based-on-another-document}를 기반으로 문서 만들기
+#### 다른 문서 {#creating-a-document-based-on-another-document} 기반 문서 만들기
 
 다음 코드 예제에서는 다른 `com.adobe.idp.Document` 객체를 기반으로 하는 `com.adobe.idp.Document` 객체를 만듭니다.
 
@@ -803,13 +803,13 @@ PDF 문서(또는 기타 문서 유형)가 입력 값으로 필요한 서비스 
 
 #### {#creating-a-document-based-on-a-file} 파일을 기반으로 문서 만들기
 
-다음 코드 예제에서는 *map.pdf*&#x200B;라는 PDF 파일을 기반으로 하는 `com.adobe.idp.Document` 개체를 만듭니다. 이 파일은 C 하드 드라이브의 루트에 있습니다. 이 생성자는 파일 이름 확장자를 사용하여 `com.adobe.idp.Document` 객체의 MIME 내용 유형을 설정하려고 합니다.
+다음 코드 예제에서는 *map.pdf*&#x200B;라는 PDF 파일을 기반으로 하는 `com.adobe.idp.Document` 개체를 만듭니다. 이 파일은 C 하드 드라이브의 루트에 있습니다. 이 생성자는 파일 이름 확장명을 사용하여 `com.adobe.idp.Document` 개체의 MIME 콘텐츠 형식을 설정하려고 합니다.
 
-`java.io.File` 객체를 받는 `com.adobe.idp.Document` 생성자도 Boolean 매개 변수를 받습니다. 이 매개 변수를 `true`로 설정하면 `com.adobe.idp.Document` 객체가 파일을 삭제합니다. 즉, 파일을 `com.adobe.idp.Document` 생성자에 전달한 후 제거할 필요가 없습니다.
+`java.io.File` 객체를 허용하는 `com.adobe.idp.Document` 생성자도 부울 매개 변수를 사용합니다. 이 매개 변수를 `true`으로 설정하면 `com.adobe.idp.Document` 객체가 파일을 삭제합니다. 이 작업은 파일을 `com.adobe.idp.Document` 생성자에 전달한 후 파일을 제거할 필요가 없음을 의미합니다.
 
-이 매개 변수를 `false`로 설정하면 이 파일의 소유권이 유지됩니다. 이 매개 변수를 `true`로 설정하는 것이 더 효율적입니다. 이유는 `com.adobe.idp.Document` 객체가 파일을 복사하지 않고 로컬 관리 영역으로 직접 이동할 수 있기 때문입니다(속도가 느림).
+이 매개 변수를 `false`으로 설정하면 이 파일의 소유권이 유지됨을 의미합니다. 이 매개 변수를 `true`으로 설정하는 것이 더 효율적입니다. 이유는 `com.adobe.idp.Document` 객체가 파일을 복사하는 대신 로컬 관리 영역으로 직접 이동할 수 있기 때문입니다(속도가 느림).
 
-**PDF 파일을 기반으로 하는 문서 개체 만들기**
+**PDF 파일을 기반으로 하는 문서 객체 만들기**
 
 ```as3
  //Create a Document object based on the map.pdf source file
@@ -831,15 +831,15 @@ PDF 문서(또는 기타 문서 유형)가 입력 값으로 필요한 서비스 
 
 #### URL {#creating-a-document-based-on-content-accessible-from-an-url}에서 액세스할 수 있는 내용을 기반으로 문서 만들기
 
-다음 Java 코드 예제에서는 *map.pdf*&#x200B;라는 PDF 파일을 기반으로 하는 `com.adobe.idp.Document` 개체를 만듭니다. 이 파일은 `localhost`에서 실행 중인 `WebApp`이라는 웹 응용 프로그램 내에 있습니다. 이 생성자는 URL 프로토콜과 함께 반환된 내용 유형을 사용하여 `com.adobe.idp.Document` 객체의 MIME 내용 유형을 설정하려고 합니다.
+다음 Java 코드 예제에서는 *map.pdf*&#x200B;라는 PDF 파일을 기반으로 하는 `com.adobe.idp.Document` 개체를 만듭니다. 이 파일은 `localhost`에서 실행 중인 `WebApp` 웹 응용 프로그램 내에 있습니다. 이 생성자는 URL 프로토콜과 함께 반환된 내용 유형을 사용하여 `com.adobe.idp.Document` 객체의 MIME 내용 유형을 설정하려고 합니다.
 
-다음 예제와 같이 `com.adobe.idp.Document` 객체에 제공된 URL은 항상 원래 `com.adobe.idp.Document` 객체가 만들어진 지점에서 읽힙니다.
+다음 예제와 같이 `com.adobe.idp.Document` 개체에 제공된 URL은 항상 원래 `com.adobe.idp.Document` 개체가 만들어진 곳에서 읽습니다.
 
 ```as3
      Document doc = new Document(new java.net.URL("file:c:/temp/input.pdf"));
 ```
 
-c:/temp/input.pdf 파일은 서버 컴퓨터가 아닌 클라이언트 컴퓨터에 있어야 합니다. 클라이언트 컴퓨터는 URL을 읽고 `com.adobe.idp.Document` 객체가 만들어진 위치입니다.
+c:/temp/input.pdf 파일은 서버 컴퓨터가 아닌 클라이언트 컴퓨터에 있어야 합니다. 클라이언트 컴퓨터는 URL을 읽는 곳이고 `com.adobe.idp.Document` 개체가 만들어진 곳입니다.
 
 **URL에서 액세스할 수 있는 내용을 기반으로 문서 만들기**
 
@@ -859,22 +859,22 @@ c:/temp/input.pdf 파일은 서버 컴퓨터가 아닌 클라이언트 컴퓨터
 
 ### 반환된 문서 처리 {#handling-returned-documents}
 
-PDF 문서(또는 XML 데이터와 같은 기타 데이터 유형)를 출력 값으로 반환하는 서비스 작업은 `com.adobe.idp.Document` 개체를 반환합니다. `com.adobe.idp.Document` 객체를 받은 후 다음 형식으로 변환할 수 있습니다.
+출력 값으로 PDF 문서(또는 XML 데이터와 같은 기타 데이터 유형)를 반환하는 서비스 작업에서는 `com.adobe.idp.Document` 객체를 반환합니다. `com.adobe.idp.Document` 개체를 받은 후 다음 형식으로 변환할 수 있습니다.
 
-* `java.io.File` 객체
-* `java.io.InputStream` 객체
+* `java.io.File` 개체
+* `java.io.InputStream` 개체
 * 바이트 배열
 
-다음 코드 행은 `com.adobe.idp.Document` 객체를 `java.io.InputStream` 객체로 변환합니다. `myPDFDocument`이 `com.adobe.idp.Document` 개체를 나타낸다고 가정합니다.
+다음 코드 행은 `com.adobe.idp.Document` 객체를 `java.io.InputStream` 객체로 변환합니다. `myPDFDocument`은 `com.adobe.idp.Document` 개체를 나타낸다고 가정합니다.
 
 ```as3
      java.io.InputStream resultStream = myDocument.getInputStream();
 ```
 
-마찬가지로 다음 작업을 수행하여 `com.adobe.idp.Document`의 내용을 로컬 파일로 복사할 수 있습니다.
+마찬가지로 다음 작업을 수행하여 `com.adobe.idp.Document`의 내용을 로컬 파일에 복사할 수 있습니다.
 
-1. `java.io.File` 객체를 만듭니다.
-1. `com.adobe.idp.Document` 객체의 `copyToFile` 메서드를 호출하고 `java.io.File` 객체를 전달합니다.
+1. `java.io.File` 개체를 만듭니다.
+1. `com.adobe.idp.Document` 개체의 `copyToFile` 메서드를 호출하고 `java.io.File` 개체를 전달합니다.
 
 다음 코드 예제에서는 `com.adobe.idp.Document` 개체의 내용을 *AnotherMap.pdf* 파일에 복사합니다.
 
@@ -891,9 +891,9 @@ PDF 문서(또는 XML 데이터와 같은 기타 데이터 유형)를 출력 값
 
 [연결 속성 설정](invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 문서 {#determining-the-content-type-of-a-document} 내용 유형 결정
+### 문서 {#determining-the-content-type-of-a-document}의 내용 유형 결정
 
-`com.adobe.idp.Document` 객체의 `getContentType` 메서드를 호출하여 `com.adobe.idp.Document` 객체의 MIME 유형을 결정합니다. 이 메서드는 `com.adobe.idp.Document` 객체의 내용 유형을 지정하는 문자열 값을 반환합니다. 다음 표에서는 AEM Forms에서 반환하는 다양한 내용 유형에 대해 설명합니다.
+`com.adobe.idp.Document` 객체의 `getContentType` 메서드를 호출하여 `com.adobe.idp.Document` 객체의 MIME 유형을 결정합니다. 이 메서드는 `com.adobe.idp.Document` 객체의 내용 유형을 지정하는 문자열 값을 반환합니다. 다음 표에서는 AEM Forms이 반환하는 다양한 컨텐츠 유형에 대해 설명합니다.
 
 <table>
  <thead>
@@ -909,7 +909,7 @@ PDF 문서(또는 XML 데이터와 같은 기타 데이터 유형)를 출력 값
   </tr>
   <tr>
    <td><p><code>application/vnd.adobe.xdp+xml</code></p></td>
-   <td><p>XDP(XML Data Packaging) - 내보낸 XML Forms 아키텍처(XFA) 양식에 사용됩니다.</p></td>
+   <td><p>내보낸 XFA(XML Forms Architecture) 양식에 사용되는 XDP(XML Data Packaging)</p></td>
   </tr>
   <tr>
    <td><p><code>text/xml</code></p></td>
@@ -917,19 +917,19 @@ PDF 문서(또는 XML 데이터와 같은 기타 데이터 유형)를 출력 값
   </tr>
   <tr>
    <td><p><code>application/vnd.fdf</code></p></td>
-   <td><p>내보낸 Acrobat 양식에 사용되는 FDF(Forms Data Format)</p></td>
+   <td><p>Acrobat 양식을 내보내는 데 사용되는 Forms FDF(Data Format)</p></td>
   </tr>
   <tr>
    <td><p><code>application/vnd.adobe.xfdf</code></p></td>
-   <td><p>내보낸 Acrobat 양식에 사용되는 XFDF(XML Forms 데이터 형식)</p></td>
+   <td><p>Acrobat 양식을 내보내는 데 사용되는 XFDF(XML Forms Data Format)</p></td>
   </tr>
   <tr>
    <td><p><code>application/rdf+xml</code></p></td>
-   <td><p>풍부한 데이터 형식 및 XML</p></td>
+   <td><p>풍부한 데이터 포맷 및 XML</p></td>
   </tr>
   <tr>
    <td><p><code>application/octet-stream</code></p></td>
-   <td><p>일반 데이터 형식</p></td>
+   <td><p>범용 데이터 형식</p></td>
   </tr>
   <tr>
    <td><p><code>NULL</code></p></td>
@@ -956,7 +956,7 @@ PDF 문서(또는 XML 데이터와 같은 기타 데이터 유형)를 출력 값
 
 ### 문서 객체 삭제 {#disposing-document-objects}
 
-더 이상 `Document` 객체가 필요하지 않은 경우 `dispose` 메서드를 호출하여 객체를 처리하는 것이 좋습니다. 각 `Document` 객체는 응용 프로그램의 호스트 플랫폼에서 파일 설명자와 최대 75MB의 RAM 공간을 사용합니다. `Document` 객체가 삭제되지 않으면 Java Garage 컬렉션 프로세스에서 해당 객체를 제거합니다. 그러나 `dispose` 메서드를 사용하여 빠르게 처리하면 `Document` 객체가 점유하는 메모리를 해제할 수 있습니다.
+더 이상 `Document` 개체가 필요하지 않은 경우 `dispose` 메서드를 호출하여 해당 객체를 처리하는 것이 좋습니다. 각 `Document` 개체는 응용 프로그램의 호스트 플랫폼에서 파일 설명자와 최대 75MB의 RAM 공간을 사용합니다. `Document` 객체가 처리되지 않으면 Java Garage 컬렉션 프로세스에서 객체를 삭제합니다. 그러나 `dispose` 메서드를 사용하여 더 빨리 처리하면 `Document` 객체에 사용된 메모리를 해제할 수 있습니다.
 
 **참고 항목**
 
@@ -968,15 +968,15 @@ PDF 문서(또는 XML 데이터와 같은 기타 데이터 유형)를 출력 값
 
 ## Java 클라이언트 라이브러리 {#invoking-a-service-using-a-java-client-library}를 사용하여 서비스 호출
 
-Java 클라이언트 라이브러리라고 하는 서비스의 강력한 유형 API를 사용하여 AEM Forms 서비스 작업을 호출할 수 있습니다. *Java 클라이언트 라이브러리*&#x200B;는 서비스 컨테이너에 배포된 서비스에 대한 액세스를 제공하는 구체적인 클래스 집합입니다. 호출 API를 사용하여 `InvocationRequest` 객체를 만드는 대신 호출할 서비스를 나타내는 Java 객체를 인스턴스화합니다. 호출 API는 Workbench에서 만든 장기 프로세스와 같은 프로세스를 호출하는 데 사용됩니다. ([인간 중심의 긴 수명 프로세스 호출](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)을 참조하십시오.)
+AEM Forms 서비스 작업은 Java 클라이언트 라이브러리라는 강력한 형식의 서비스의 API를 사용하여 호출할 수 있습니다. *Java 클라이언트 라이브러리*&#x200B;는 서비스 컨테이너에 배포된 서비스에 대한 액세스를 제공하는 구체적인 클래스 세트입니다. 호출 API를 사용하여 `InvocationRequest` 객체를 만드는 대신 호출할 서비스를 나타내는 Java 객체를 인스턴스화합니다. 호출 API는 Workbench에서 만든 장기 처리 프로세스와 같은 프로세스를 호출하는 데 사용됩니다. ([인간 중심의 긴 수명 프로세스 호출](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes) 참조)
 
-서비스 작업을 수행하려면 Java 객체에 속하는 메서드를 호출합니다. Java 클라이언트 라이브러리에는 일반적으로 서비스 작업과 일대일 매핑을 수행하는 메서드가 포함되어 있습니다. Java 클라이언트 라이브러리를 사용할 때 필요한 연결 속성을 설정합니다. ([연결 속성 설정](invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.)
+서비스 작업을 수행하려면 Java 객체에 속하는 메서드를 호출합니다. Java 클라이언트 라이브러리에는 일반적으로 서비스 작업과 일대일로 매핑되는 메서드가 포함되어 있습니다. Java 클라이언트 라이브러리를 사용할 때는 필수 연결 속성을 설정합니다. ([연결 속성 설정](invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.)
 
-연결 속성을 설정한 후 서비스를 호출할 수 있는 Java 객체를 인스턴스화하는 데 사용되는 `ServiceClientFactory` 객체를 만듭니다. Java 클라이언트 라이브러리가 있는 각 서비스에는 해당 클라이언트 객체가 있습니다. 예를 들어 Repository 서비스를 호출하려면 해당 생성자를 사용하여 `ResourceRepositoryClient` 객체를 만들고 `ServiceClientFactory` 객체를 전달합니다. `ServiceClientFactory` 객체는 AEM Forms 서비스를 호출하는 데 필요한 연결 설정을 유지해야 합니다.
+연결 속성을 설정한 후 서비스를 호출할 수 있는 Java 객체를 인스턴스화하는 데 사용되는 `ServiceClientFactory` 객체를 만듭니다. Java 클라이언트 라이브러리가 있는 각 서비스에는 해당 클라이언트 개체가 있습니다. 예를 들어 저장소 서비스를 호출하려면 해당 생성자를 사용하여 `ResourceRepositoryClient` 개체를 만들고 `ServiceClientFactory` 개체를 전달합니다. `ServiceClientFactory` 개체는 AEM Forms 서비스를 호출하는 데 필요한 연결 설정을 유지 관리하는 책임이 있습니다.
 
-일반적으로 `ServiceClientFactory`을 가져오는 것이 빠르지만 팩토리를 처음 사용할 때 일부 오버헤드가 발생합니다. 이 객체는 재사용을 위해 최적화되어 있으므로 가능하면 여러 Java 클라이언트 객체를 만들 때 동일한 `ServiceClientFactory` 객체를 사용합니다. 즉, 사용자가 만드는 각 클라이언트 라이브러리 객체에 대해 별도의 `ServiceClientFactory` 객체를 만들지 마십시오.
+일반적으로 `ServiceClientFactory`을(를) 얻는 것이 빠르지만, 팩터리를 처음 사용할 때 일부 오버헤드가 발생합니다. 이 개체는 재사용을 위해 최적화되므로, 가능한 경우 여러 Java 클라이언트 개체를 만들 때 동일한 `ServiceClientFactory` 개체를 사용합니다. 즉, 사용자가 만드는 각 클라이언트 라이브러리 개체에 대해 별도의 `ServiceClientFactory` 개체를 만들지 마십시오.
 
-`ServiceClientFactory` 객체에 영향을 주는 `com.adobe.idp.Context` 객체 내에 있는 SAML 어설션의 수명을 제어하는 사용자 관리자 설정이 있습니다. 이 설정은 Java API를 사용하여 수행한 모든 호출을 비롯하여 AEM Forms 전체의 모든 인증 컨텍스트 라이프타임을 제어합니다. 기본적으로 `ServiceCleintFactory` 개체를 사용할 수 있는 기간은 2시간입니다.
+`ServiceClientFactory` 개체에 영향을 주는 `com.adobe.idp.Context` 개체 내에 있는 SAML 어설션의 수명을 제어하는 사용자 관리자 설정이 있습니다. 이 설정은 Java API를 사용하여 수행한 모든 호출을 비롯하여 AEM Forms 전체의 모든 인증 컨텍스트 라이프타임을 제어합니다. 기본적으로 `ServiceCleintFactory` 개체를 사용할 수 있는 기간은 2시간입니다.
 
 >[!NOTE]
 >
