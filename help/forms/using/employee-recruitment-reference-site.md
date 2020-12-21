@@ -129,7 +129,7 @@ Gloria의 AEM 받은 편지함
 
 **사용 방법**
 
-Gloria가 면접 후보를 승인하면 워크플로우는 We.Finance 채용 담당자 John Doe의 AEM 받은 편지함에 작업을 만듭니다.
+Gloria가 면접을 위해 지원자를 승인하면 워크플로우는 We.Finance 채용 담당자 John Doe의 AEM 받은 편지함에 작업을 만듭니다.
 
 ### 직접 보기 {#see-it-yourself-2}
 
