@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 986d16fc-4c81-4785-b1f3-fe8bd7ff669e
 translation-type: tm+mt
-source-git-commit: ''
+source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
