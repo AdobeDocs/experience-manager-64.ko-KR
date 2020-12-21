@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: b624e255-ae71-4d9c-8554-d48f3e77b799
 translation-type: tm+mt
-source-git-commit: ''
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 0%
