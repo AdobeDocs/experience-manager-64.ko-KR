@@ -127,7 +127,7 @@ ht-degree: 36%
   <tr> 
    <td><a href="/help/sites-administering/package-manager.md">패키지</a></td> 
    <td> </td> 
-   <td>AEM WCM용으로 로드된 패키지를 표시하는 패키지 관리자의 대체 링크입니다. CRX의 패키지 관리자에 표시되는 정보와 유사합니다.</td> 
+   <td>AEM WCM용으로 로드된 패키지를 표시하는 패키지 관리자에 대한 대체 링크입니다. CRX의 패키지 관리자에 표시되는 정보와 유사합니다.</td> 
   </tr> 
   <tr> 
    <td>복제 - <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">복제 에이전트</a></td> 
