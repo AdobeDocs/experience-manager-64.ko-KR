@@ -60,7 +60,7 @@ AEM은 [SAML](http://saml.xml.org/saml-specifications) 인증 핸들러와 함�
 
 **서비스** 등급 OSGi 프레임워크 서비스 등급 값으로 이 서비스를 호출할 순서를 나타냅니다. 높은 값이 높은 우선 순위를 지정하는 정수 값입니다.
 
-**IDP 인증서** 별칭글로벌 truststore에 있는 IdP 인증서의 별칭입니다. 이 속성이 비어 있으면 인증 핸들러가 비활성화됩니다. 설정 방법은 아래의 &quot;AEM TrustStore에 IdP 인증서 추가&quot; 장을 참조하십시오.
+**IDP 인증서** 별칭글로벌 truststore의 IdP 인증서의 별칭입니다. 이 속성이 비어 있으면 인증 핸들러가 비활성화됩니다. 설정 방법은 아래의 &quot;AEM TrustStore에 IdP 인증서 추가&quot; 장을 참조하십시오.
 
 **SAML** 인증 요청을 보내야 하는 IDP의 ID 공급자 URL. 이 속성이 비어 있으면 인증 핸들러가 비활성화됩니다.
 
