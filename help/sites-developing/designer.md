@@ -1,8 +1,8 @@
 ---
 title: 디자인 및 디자이너
 seo-title: 디자인 및 디자이너
-description: 웹 사이트 및 AEM에서 디자이너를 사용하여 디자인을 만들어야 합니다
-seo-description: 웹 사이트 및 AEM에서 디자이너를 사용하여 디자인을 만들어야 합니다
+description: 웹 사이트 및 AEM에서 디자인을 만들어야 하지만 Designer를 사용하면 됩니다
+seo-description: 웹 사이트 및 AEM에서 디자인을 만들어야 하지만 Designer를 사용하면 됩니다
 uuid: b880ab49-8bea-4925-9b7b-e911ebda14ee
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
