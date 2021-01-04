@@ -1,8 +1,8 @@
 ---
 title: 프로그래밍 방식으로 PreferencesNodes 관리
 seo-title: 프로그래밍 방식으로 PreferencesNodes 관리
-description: 'null'
-seo-description: 'null'
+description: 환경 설정 관리자 서비스 API(Java)를 사용하여 환경 설정 노드를 프로그래밍 방식으로 관리합니다.
+seo-description: 환경 설정 관리자 서비스 API(Java)를 사용하여 환경 설정 노드를 프로그래밍 방식으로 관리합니다.
 uuid: f0cb117a-a6cc-4ca5-8511-b3bc9f6738e9
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 9d4dba7f-49d8-4112-bc8a-04dafc99a936
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
