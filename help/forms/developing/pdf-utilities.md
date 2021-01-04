@@ -1,8 +1,8 @@
 ---
 title: PDF 유틸리티 작업
 seo-title: PDF 유틸리티 작업
-description: 'null'
-seo-description: 'null'
+description: PDF 유틸리티 서비스를 사용하여 PDF와 XDP 파일 포맷 간을 변환하거나 PDF 문서 속성을 설정 및 검색하고 XMP 메타데이터를 조작할 수 있습니다.
+seo-description: PDF 유틸리티 서비스를 사용하여 PDF와 XDP 파일 포맷 간을 변환하거나 PDF 문서 속성을 설정 및 검색하고 XMP 메타데이터를 조작할 수 있습니다.
 uuid: a2ea2359-c547-4f1b-b6ca-f276f816e36a
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: d816bf2e-5236-4084-b7c4-c32b72cdff97
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2548'
+source-wordcount: '2592'
 ht-degree: 1%
 
 ---
