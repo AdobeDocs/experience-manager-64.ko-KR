@@ -1,8 +1,8 @@
 ---
 title: PDF 서비스 Java API QuickStart(SOAP) 생성
 seo-title: PDF 서비스 Java API QuickStart(SOAP) 생성
-description: 'null'
-seo-description: 'null'
+description: PDF 생성 서비스를 사용하여 Microsoft Word 문서를 PDF 문서로 변환하고, HTML 내용을 PDF 문서로 변환하고, Java API를 사용하여 PDF 문서를 RTF 파일로 변환할 수 있습니다.
+seo-description: PDF 생성 서비스를 사용하여 Microsoft Word 문서를 PDF 문서로 변환하고, HTML 내용을 PDF 문서로 변환하고, Java API를 사용하여 PDF 문서를 RTF 파일로 변환할 수 있습니다.
 uuid: f8c4a476-de5e-440a-b419-0bd1d7fde5ca
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: a7c0c4cf-7476-41e7-8d4e-564e6a21458d
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
