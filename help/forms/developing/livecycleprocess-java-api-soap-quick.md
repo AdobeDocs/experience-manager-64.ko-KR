@@ -1,8 +1,8 @@
 ---
 title: LiveCycleProcess Java API(SOAP)빠른 시작
 seo-title: LiveCycleProcess Java API(SOAP)빠른 시작
-description: 'null'
-seo-description: 'null'
+description: LiveCycleProcess Java API(SOAP) 빠른 시작을 사용하여 프로세스 인스턴스를 검색하고, 프로세스 인스턴스를 일시 중단하며, 일시 중단된 프로세스 인스턴스를 시작하고, 프로세스 인스턴스를 종료하며, 프로세스 데이터를 삭제하고 작업 상태를 검색할 수 있습니다.
+seo-description: LiveCycleProcess Java API(SOAP) 빠른 시작을 사용하여 프로세스 인스턴스를 검색하고, 프로세스 인스턴스를 일시 중단하며, 일시 중단된 프로세스 인스턴스를 시작하고, 프로세스 인스턴스를 종료하며, 프로세스 데이터를 삭제하고 작업 상태를 검색할 수 있습니다.
 uuid: ad14fb50-8dd5-44e0-9e48-f0f0334e04d6
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
