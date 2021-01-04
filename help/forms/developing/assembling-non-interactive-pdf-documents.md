@@ -1,8 +1,8 @@
 ---
 title: 비대화형 PDF 문서 조합
 seo-title: 비대화형 PDF 문서 조합
-description: 'null'
-seo-description: 'null'
+description: 비대화형 PDF 양식을 입력으로 사용하여 Java API 및 웹 서비스 API를 사용하여 비대화형 PDF 문서를 조합합니다.
+seo-description: 비대화형 PDF 양식을 입력으로 사용하여 Java API 및 웹 서비스 API를 사용하여 비대화형 PDF 문서를 조합합니다.
 uuid: 0c7adeb4-9a3a-4ec5-ba33-c3642928d4ea
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 8a75c201-bd88-4809-be08-69de94656489
 translation-type: tm+mt
-source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1800'
 ht-degree: 0%
 
 ---
