@@ -1,8 +1,8 @@
 ---
 title: Forms에 플로우 가능한 레이아웃 미리 채우기
 seo-title: Forms에 플로우 가능한 레이아웃 미리 채우기
-description: 'null'
-seo-description: 'null'
+description: Java API 및 웹 서비스 API를 사용하여 렌더링된 양식 내에서 사용자에게 데이터를 표시하려면 양식을 플로우 가능한 레이아웃으로 미리 채웁니다.
+seo-description: Java API 및 웹 서비스 API를 사용하여 렌더링된 양식 내에서 사용자에게 데이터를 표시하려면 양식을 플로우 가능한 레이아웃으로 미리 채웁니다.
 uuid: 93ccb496-e1c2-4b79-8e89-7a2abfce1537
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 translation-type: tm+mt
-source-git-commit: 8c151c582d4355b98445ec4bf6510d668cb0d5bd
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '3489'
+source-wordcount: '3533'
 ht-degree: 0%
 
 ---
