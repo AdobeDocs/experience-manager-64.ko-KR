@@ -1,8 +1,8 @@
 ---
 title: JavaAPI를 사용하여 AEM Forms 호출
 seo-title: JavaAPI를 사용하여 AEM Forms 호출
-description: 'null'
-seo-description: 'null'
+description: 원격 호출을 위한 RMI 전송 프로토콜용 AEM Forms Java API, 로컬 호출을 위한 VM 전송, 원격 호출을 위한 SOAP, 사용자 이름 및 암호와 같은 다른 인증, 동기 및 비동기 호출 요청 등을 사용하십시오.
+seo-description: 원격 호출을 위한 RMI 전송 프로토콜용 AEM Forms Java API, 로컬 호출을 위한 VM 전송, 원격 호출을 위한 SOAP, 사용자 이름 및 암호와 같은 다른 인증, 동기 및 비동기 호출 요청 등을 사용하십시오.
 uuid: 5e2fef2a-05f3-4283-8fd3-2d7dca411000
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '5409'
+source-wordcount: '5479'
 ht-degree: 0%
 
 ---
@@ -89,107 +89,107 @@ Java API를 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호
   <tr>
    <td><p>adobe-livecycle-client.jar</p></td>
    <td><p>Java 클라이언트 응용 프로그램의 클래스 경로에 항상 포함되어야 합니다.</p></td>
-   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-usermanager-client.jar</p></td>
    <td><p>Java 클라이언트 응용 프로그램의 클래스 경로에 항상 포함되어야 합니다.</p></td>
-   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-utilities.jar</p></td>
    <td><p>Java 클라이언트 응용 프로그램의 클래스 경로에 항상 포함되어야 합니다.</p></td>
-   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk//client-libs/&lt;app server=""&gt;</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk//client-libs/&lt;app server=""&gt;<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-applicationmanager-client-sdk.jar</p></td>
    <td><p>Application Manager 서비스를 호출하는 데 필요합니다.</p></td>
-   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-assembler-client.jar</p></td>
    <td><p>Assembler 서비스를 호출하는 데 필요합니다. </p></td>
-   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-backup-restore-client-sdk.jar</p></td>
    <td><p>백업 및 복원 서비스 API를 호출하는 데 필요합니다.</p></td>
-   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-barcodedforms-client.jar</p></td>
    <td><p>바코드 양식 서비스를 호출해야 합니다. </p></td>
-   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-convertpdf-client.jar</p></td>
    <td><p>PDF 변환 서비스를 호출하는 데 필요합니다. </p></td>
-   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-distiller-client.jar</p></td>
    <td><p>Distiller 서비스를 호출하는 데 필요합니다.</p></td>
-   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-docconverter-client.jar</p></td>
    <td><p>DocConverter 서비스를 호출하는 데 필요합니다.</p></td>
-   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-contentservices-client.jar</p></td>
    <td><p>Document Management 서비스를 호출하는 데 필요합니다.</p></td>
-   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-encryption-client.jar</p></td>
    <td><p>암호화 서비스를 호출하는 데 필요합니다.</p></td>
-   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-forms-client.jar</p></td>
    <td><p>Forms 서비스를 호출하는 데 필요합니다.</p></td>
-   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-formdataintegration-client.jar</p></td>
    <td><p>양식 데이터 통합 서비스를 호출하는 데 필요합니다.</p></td>
-   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-generatepdf-client.jar</p></td>
    <td><p>PDF 생성 서비스를 호출하는 데 필요합니다.</p></td>
-   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-generate3dpdf-client.jar</p></td>
    <td><p>3D PDF 생성 서비스를 호출하는 데 필요합니다.</p></td>
-   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-jobmanager-client-sdk.jar</p></td>
    <td><p>작업 관리자 서비스를 호출하는 데 필요합니다. </p></td>
-   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-output-client.jar</p></td>
    <td><p>출력 서비스를 호출하는 데 필요합니다.</p></td>
-   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-pdfutility-client.jar</p></td>
    <td><p>PDF 유틸리티 또는 XMP 유틸리티 서비스를 호출하는 데 필요합니다.</p></td>
-   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-reader-extensions-client.jar</p></td>
    <td><p>Acrobat Reader DC 확장 서비스를 호출하는 데 필요합니다.</p></td>
-   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-repository-client.jar</p><p>commons-codec-1.3.jar</p></td>
    <td><p>저장소 서비스를 호출하는 데 필요합니다.</p></td>
-   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs\thirdparty</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk/client-libs/common<i></i></p><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk/client-libs\thirdparty<i></i></p></td>
   </tr>
   <tr>
    <td>
@@ -204,22 +204,22 @@ Java API를 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호
      <li><p>xsdlib.jar</p></li>
     </ul></td>
    <td><p>Rights Management 서비스를 호출하는 데 필요합니다.</p><p>AEM Forms이 JBoss에 배포된 경우 이 파일을 모두 포함합니다. </p></td>
-   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p><p>JBoss 특정 lib 디렉토리</p></td>
+   <td><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk/client-libs/common<i></i></p><p>JBoss 특정 lib 디렉토리</p></td>
   </tr>
   <tr>
    <td><p>adobe-signatures-client.jar</p></td>
    <td><p>서명 서비스를 호출하는 데 필요합니다.</p></td>
-   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-taskmanager-client-sdk.jar</p></td>
    <td><p>작업 관리자 서비스를 호출하는 데 필요합니다. </p></td>
-   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-truststore-client.jar</p></td>
    <td><p>Trust Store 서비스를 호출하는 데 필요합니다. </p></td>
-   <td><p>&lt;&gt;설치 디렉토리<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;설치 디렉토리</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
  </tbody>
 </table>
@@ -261,7 +261,7 @@ Java API를 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호
      <li>commons-httpclient-3.1.jar</li>
     </ul> <p> </p> </td>
    <td><p>SOAP 모드를 사용하여 AEM Forms을 호출하면 이러한 JAR 파일을 포함합니다.</p> </td>
-   <td><p>&lt;&gt;설치 디렉토리<em>&gt;/sdk/client-libs/thirdparty</em></p> </td>
+   <td><p>&lt;&gt;설치 디렉토리</em>&gt;/sdk/client-libs/thirdparty<em></em></p> </td>
   </tr>
   <tr>
    <td><p> jboss-client.jar</p> </td>
@@ -705,7 +705,7 @@ AEM Forms 서비스는 PDF 문서를 `java.io.InputStream` 개체 또는 바이�
 
 `com.adobe.idp.Document` 개체 크기에 따라 데이터는 `com.adobe.idp.Document` 개체 내에서 전달되거나 서버의 파일 시스템에 저장됩니다. `com.adobe.idp.Document` 객체가 차지하는 모든 임시 스토리지 리소스는 `com.adobe.idp.Document` 처리 시 자동으로 제거됩니다. ([문서 개체 처리](invoking-aem-forms-using-java.md#disposing-document-objects)를 참조하십시오.)
 
-서비스에 전달하기 전에 `com.adobe.idp.Document` 개체의 내용 유형을 알아야 하는 경우가 있습니다. 예를 들어 작업에 `application/pdf` 같은 특정 컨텐츠 유형이 필요한 경우 컨텐츠 유형을 결정하는 것이 좋습니다. (문서[의 내용 유형 결정을 참조하십시오.)](invoking-aem-forms-using-java.md#determining-the-content-type-of-a-document)
+서비스에 전달하기 전에 `com.adobe.idp.Document` 개체의 내용 유형을 알아야 하는 경우가 있습니다. 예를 들어 작업에 `application/pdf` 같은 특정 컨텐츠 유형이 필요한 경우 컨텐츠 유형을 결정하는 것이 좋습니다. (문서](invoking-aem-forms-using-java.md#determining-the-content-type-of-a-document)의 내용 유형 결정을 참조하십시오.)[
 
 `com.adobe.idp.Document` 개체는 제공된 데이터를 사용하여 콘텐트 유형을 확인합니다. 제공된 데이터에서 내용 유형을 검색할 수 없는 경우(예: 데이터가 바이트 배열로 제공되었을 때) 내용 유형을 설정합니다. 내용 유형을 설정하려면 `com.adobe.idp.Document` 객체의 `setContentType` 메서드를 호출합니다. ([문서 내용 유형 확인](invoking-aem-forms-using-java.md#determining-the-content-type-of-a-document) 참조)
 
