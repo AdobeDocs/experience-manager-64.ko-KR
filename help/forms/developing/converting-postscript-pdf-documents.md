@@ -1,8 +1,8 @@
 ---
 title: Postscript를 PDF 문서로 변환
 seo-title: Postscript를 PDF 문서로 변환
-description: 'null'
-seo-description: 'null'
+description: Distiller 서비스를 사용하여 네트워크를 통해 PostScript®, EPS(Encapsulated PostScript) 및 PRN 파일을 용량이 작고 안정적이며 보다 안전한 PDF 파일로 변환할 수 있습니다. Distiller 서비스는 Java API 및 웹 서비스 API를 사용하는 송장 및 명세서 등의 대량의 인쇄 문서를 전자 문서로 변환합니다.
+seo-description: Distiller 서비스를 사용하여 네트워크를 통해 PostScript®, EPS(Encapsulated PostScript) 및 PRN 파일을 용량이 작고 안정적이며 보다 안전한 PDF 파일로 변환할 수 있습니다. Distiller 서비스는 Java API 및 웹 서비스 API를 사용하는 송장 및 명세서 등의 대량의 인쇄 문서를 전자 문서로 변환합니다.
 uuid: 2143f406-1fdd-4551-a738-1a8388f8d478
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 06ad343a-f74d-41f5-b3c8-b85bb723ceeb
 translation-type: tm+mt
-source-git-commit: 11ce2d736f261daa789b94d23e2a5ca64192cefe
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1365'
 ht-degree: 0%
 
 ---
