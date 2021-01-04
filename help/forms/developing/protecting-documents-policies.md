@@ -1,8 +1,8 @@
 ---
 title: 정책으로 문서 보호
 seo-title: 정책으로 문서 보호
-description: 'null'
-seo-description: 'null'
+description: Document Security 서비스를 사용하여 Adobe PDF 문서에 기밀 설정을 동적으로 적용하고 문서를 계속 제어할 수 있습니다. 또한 Document Security 서비스를 통해 받는 사람이 정책으로 보호된 PDF 문서를 사용하는 방법을 제어할 수 있습니다.
+seo-description: Document Security 서비스를 사용하여 Adobe PDF 문서에 기밀 설정을 동적으로 적용하고 문서를 계속 제어할 수 있습니다. 또한 Document Security 서비스를 통해 받는 사람이 정책으로 보호된 PDF 문서를 사용하는 방법을 제어할 수 있습니다.
 uuid: 6feb69ef-7b61-4d0b-8c87-d65d98bae9b5
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
 translation-type: tm+mt
-source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '15466'
+source-wordcount: '15544'
 ht-degree: 0%
 
 ---
