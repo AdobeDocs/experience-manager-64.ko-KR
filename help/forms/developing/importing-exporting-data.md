@@ -1,8 +1,8 @@
 ---
 title: 데이터 가져오기 및 내보내기
 seo-title: 데이터 가져오기 및 내보내기
-description: 'null'
-seo-description: 'null'
+description: 양식 데이터 통합 서비스를 사용하여 데이터를 PDF 양식으로 가져오고 Java API 및 웹 서비스 API를 사용하여 PDF 양식의 데이터를 내보낼 수 있습니다.
+seo-description: 양식 데이터 통합 서비스를 사용하여 데이터를 PDF 양식으로 가져오고 Java API 및 웹 서비스 API를 사용하여 PDF 양식의 데이터를 내보낼 수 있습니다.
 uuid: 94ccb6f2-6e5f-43ea-a954-9a4402871a17
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2742'
+source-wordcount: '2796'
 ht-degree: 0%
 
 ---
