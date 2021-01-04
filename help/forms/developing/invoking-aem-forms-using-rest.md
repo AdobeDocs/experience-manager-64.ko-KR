@@ -1,8 +1,8 @@
 ---
 title: REST 요청을 사용하여 AEM Forms 호출
 seo-title: REST 요청을 사용하여 AEM Forms 호출
-description: 'null'
-seo-description: 'null'
+description: REST 요청을 사용하여 Workbench에서 만든 프로세스를 호출합니다.
+seo-description: REST 요청을 사용하여 Workbench에서 만든 프로세스를 호출합니다.
 uuid: 3a19a296-f3fe-4e50-9143-b68aed37f9ef
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2492'
+source-wordcount: '2506'
 ht-degree: 0%
 
 ---
