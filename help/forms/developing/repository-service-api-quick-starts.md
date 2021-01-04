@@ -1,8 +1,8 @@
 ---
 title: 저장소 서비스 API 빠른 시작
 seo-title: 저장소 서비스 API 빠른 시작
-description: 'null'
-seo-description: 'null'
+description: AEM Forms 저장소 서비스를 사용하여 폴더를 만들고, 리소스를 작성하고, 리소스를 나열하고, 리소스를 읽고, 리소스를 업데이트하고, 리소스를 검색하고, 리소스 간 관계를 만들고, 리소스를 잠그고, 액세스 제어 목록을 관리하고, 리소스를 삭제합니다.
+seo-description: AEM Forms 저장소 서비스를 사용하여 폴더를 만들고, 리소스를 작성하고, 리소스를 나열하고, 리소스를 읽고, 리소스를 업데이트하고, 리소스를 검색하고, 리소스 간 관계를 만들고, 리소스를 잠그고, 액세스 제어 목록을 관리하고, 리소스를 삭제합니다.
 uuid: 9c307e6e-d9a4-4021-8493-9f28a745dedb
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 translation-type: tm+mt
-source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
