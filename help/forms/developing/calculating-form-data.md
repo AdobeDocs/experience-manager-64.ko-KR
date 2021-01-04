@@ -1,8 +1,8 @@
 ---
 title: 양식 데이터 계산
 seo-title: 양식 데이터 계산
-description: 'null'
-seo-description: 'null'
+description: Forms 서비스를 사용하여 사용자가 양식에 입력하는 값을 계산하고 결과를 표시합니다. Forms 서비스는 Java API 및 웹 서비스 API를 사용하여 값을 계산합니다.
+seo-description: Forms 서비스를 사용하여 사용자가 양식에 입력하는 값을 계산하고 결과를 표시합니다. Forms 서비스는 Java API 및 웹 서비스 API를 사용하여 값을 계산합니다.
 uuid: ccd85bc7-8ccc-44d9-9424-dfc1f603e688
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 translation-type: tm+mt
-source-git-commit: db6fbf28dc899c58d73334e2d5a694a228a53f80
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1827'
+source-wordcount: '1887'
 ht-degree: 0%
 
 ---
