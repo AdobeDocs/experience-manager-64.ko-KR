@@ -1,8 +1,8 @@
 ---
 title: XMP 유틸리티 서비스 Java APIQ빠른 시작(SOAP)
 seo-title: XMP 유틸리티 서비스 Java APIQ빠른 시작(SOAP)
-description: 'null'
-seo-description: 'null'
+description: XMP 유틸리티 서비스를 사용하여 XMP 메타데이터를 내보내고 가져옵니다.
+seo-description: XMP 유틸리티 서비스를 사용하여 XMP 메타데이터를 내보내고 가져옵니다.
 uuid: 5db4c623-75db-4a34-9ad2-3c917619e296
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 1b229ddf-9350-40b6-8056-dcbe0c5afd5b
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
