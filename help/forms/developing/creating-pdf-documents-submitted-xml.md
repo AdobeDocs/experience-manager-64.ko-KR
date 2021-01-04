@@ -1,8 +1,8 @@
 ---
 title: SubmittedXML 데이터를 사용하여 PDF 문서 만들기
 seo-title: SubmittedXML 데이터를 사용하여 PDF 문서 만들기
-description: 'null'
-seo-description: 'null'
+description: Forms 서비스를 사용하여 사용자가 대화형 양식에 입력한 양식 데이터를 검색합니다. 양식 데이터를 다른 AEM Forms 서비스 작업으로 전달하고 데이터를 사용하여 PDF 문서를 만듭니다.
+seo-description: Forms 서비스를 사용하여 사용자가 대화형 양식에 입력한 양식 데이터를 검색합니다. 양식 데이터를 다른 AEM Forms 서비스 작업으로 전달하고 데이터를 사용하여 PDF 문서를 만듭니다.
 uuid: 2676c614-8988-451b-ac7c-bd07731a3f5f
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 62490230-a24e-419d-95bb-c0bb04a03f96
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1347'
 ht-degree: 0%
 
 ---
