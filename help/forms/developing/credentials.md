@@ -1,8 +1,8 @@
 ---
 title: 자격 증명을 사용한 작업
 seo-title: 자격 증명을 사용한 작업
-description: 'null'
-seo-description: 'null'
+description: Trust Manager API 및 Java API를 사용하여 자격 증명을 AEM Forms으로 가져옵니다. 또한 Trust Manager API 및 Java API를 사용하여 자격 증명을 삭제하는 방법을 학습합니다.
+seo-description: Trust Manager API 및 Java API를 사용하여 자격 증명을 AEM Forms으로 가져옵니다. 또한 Trust Manager API 및 Java API를 사용하여 자격 증명을 삭제하는 방법을 학습합니다.
 uuid: b794428f-49bf-4a91-bc5f-d855881f4f38
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: bc06d9bd-af6c-47b1-b46f-aab990ef5816
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1102'
 ht-degree: 0%
 
 ---
