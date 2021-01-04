@@ -1,8 +1,8 @@
 ---
 title: 대화형 PDF forms 렌더링
 seo-title: 대화형 PDF forms 렌더링
-description: 'null'
-seo-description: 'null'
+description: Forms 서비스를 사용하여 대화형 PDF forms을 클라이언트 장치(일반적으로 웹 브라우저)로 렌더링하여 사용자의 정보를 수집합니다. Forms 서비스를 사용하여 Java API 및 웹 서비스 API를 사용하여 대화형 양식을 렌더링할 수 있습니다.
+seo-description: Forms 서비스를 사용하여 대화형 PDF forms을 클라이언트 장치(일반적으로 웹 브라우저)로 렌더링하여 사용자의 정보를 수집합니다. Forms 서비스를 사용하여 Java API 및 웹 서비스 API를 사용하여 대화형 양식을 렌더링할 수 있습니다.
 uuid: df2a4dc8-f19e-49de-850f-85a204102631
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 3cb307ec-9b7b-4f03-b860-48553ccee746
 translation-type: tm+mt
-source-git-commit: d52f9f91f70410e6b09e26967b90fd8c47c4f1d4
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2442'
+source-wordcount: '2514'
 ht-degree: 0%
 
 ---
