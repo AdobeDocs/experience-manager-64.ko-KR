@@ -1,8 +1,8 @@
 ---
 title: 백업용 AEM Forms 준비
 seo-title: 백업용 AEM Forms 준비
-description: 'null'
-seo-description: 'null'
+description: 백업 및 복원 서비스를 사용하여 Java API 및 웹 서비스 API를 사용하여 AEM Forms 서버의 백업 모드를 시작하고 나가는 방법을 알아봅니다.
+seo-description: 백업 및 복원 서비스를 사용하여 Java API 및 웹 서비스 API를 사용하여 AEM Forms 서버의 백업 모드를 시작하고 나가는 방법을 알아봅니다.
 uuid: b8ef2bed-62e2-4000-b55a-30d2fc398a5f
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2484'
+source-wordcount: '2540'
 ht-degree: 0%
 
 ---
