@@ -1,8 +1,8 @@
 ---
 title: 제출된 Forms 처리
 seo-title: 제출된 Forms 처리
-description: 'null'
-seo-description: 'null'
+description: Forms 서비스를 사용하여 제출된 데이터를 대화형 형식으로 검색합니다. 사용자는 양식 데이터를 XML, PDF 및 URL UTF-16 형식으로 제출할 수 있습니다.
+seo-description: Forms 서비스를 사용하여 제출된 데이터를 대화형 형식으로 검색합니다. 사용자는 양식 데이터를 XML, PDF 및 URL UTF-16 형식으로 제출할 수 있습니다.
 uuid: 673b28f1-f023-4da8-a6a0-c5ff921c5f5d
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 translation-type: tm+mt
-source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2867'
+source-wordcount: '2921'
 ht-degree: 0%
 
 ---
