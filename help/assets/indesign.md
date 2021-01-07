@@ -3,9 +3,9 @@ title: Adobe InDesign Server과 AEM Assets 통합
 description: AEM Assets과 InDesign Server을 통합하는 방법을 살펴보십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
+source-git-commit: 13d33d0474d2a29226747aa77bf0bc0a51142209
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1702'
 ht-degree: 1%
 
 ---
@@ -135,13 +135,13 @@ AEM Assets에는 InDesign을 위한 몇 가지 프로세스 단계가 있는 사
 
 * **스크립트 확장**:여기에서 다양한 스크립트 조합을 지정할 수 있습니다. InDesign Server에서 자체 스크립트를 실행하려면 스크립트를 `/apps/settings/dam/indesign/scripts`에 저장합니다.
 
-   Indesign 스크립트에 대한 자세한 내용은 [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)을(를) 참조하십시오.
+   InDesign 스크립트에 대한 자세한 내용은 [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)을 참조하십시오.
 
 >[!CAUTION]
 >
 >ExtendScript 라이브러리를 변경하지 마십시오. 라이브러리는 Sling과 통신하는 데 필요한 HTTP 기능을 제공합니다. 이 설정은 Adobe InDesign Server으로 전송할 라이브러리를 지정합니다.
 
-미디어 추출 워크플로우 단계에서 실행하는 `ThumbnailExport.jsx` 스크립트는 .jpg 형식의 축소판 변환을 생성합니다. 이 변환은 AEM에 필요한 정적 변환을 생성하는 [축소판 처리] 워크플로우 단계에서 사용합니다.
+미디어 추출 워크플로우 단계에서 실행하는 `ThumbnailExport.jsx` 스크립트는 JPG 형식으로 축소판 변환을 생성합니다. 이 변환은 AEM에 필요한 정적 변환을 생성하는 [축소판 처리] 워크플로우 단계에서 사용합니다.
 
 [축소판 처리] 워크플로우 단계를 구성하여 다른 크기로 정적 변환을 생성할 수 있습니다. 기본값은 AEM Assets UI에 필요하므로 제거하지 않아야 합니다. 마지막으로, 이미지 미리 보기 변환 삭제 워크플로우 단계에서는 더 이상 필요하지 않으므로 .jpg 축소판 변환이 제거됩니다.
 
@@ -185,15 +185,15 @@ AEM Assets에는 InDesign을 위한 몇 가지 프로세스 단계가 있는 사
 
 ### 일 CQ 링크 외부라이저 구성 {#configuring-day-cq-link-externalizer}
 
-InDesign 서버 및 AEM이 다른 호스트에서 실행되거나 이러한 응용 프로그램이 모두 기본 포트에서 실행되지 않으면 **Day CQ Link Externalizer**&#x200B;를 구성하여 InDesign 서버의 호스트 이름, 포트 및 컨텐트 경로를 설정합니다.
+InDesign Server과 AEM이 다른 호스트에 있거나 이러한 응용 프로그램 중 하나 또는 둘 다가 기본 포트에서 작동하지 않는 경우 **Day CQ Link Externalizer**&#x200B;를 구성하여 InDesign Server의 호스트 이름, 포트 및 컨텐트 경로를 설정합니다.
 
 1. URL `https://[AEM_server]:[port]/system/console/configMgr`에서 구성 관리자에 액세스합니다.
-1. **[!UICONTROL Day CQ Link Externalizer]** 구성을 찾아 **[!UICONTROL 편집]** 아이콘을 클릭하여 엽니다.
-1. Indesign 서버의 호스트 이름 및 컨텍스트 경로를 지정하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 일 CQ 링크 외부라이저]** 구성을 찾습니다. **[!UICONTROL 편집]**&#x200B;을 클릭하여 엽니다.
+1. 링크 외부라이저 설정을 사용하면 [!DNL Experience Manager] 배포 및 [!DNL InDesign Server]에 대한 절대 URL을 만들 수 있습니다. **[!UICONTROL 도메인]** 필드를 사용하여 호스트 이름과 [!DNL Adobe InDesign Server]의 컨텍스트 경로를 지정합니다. 화면의 지시를 따르십시오. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-   ![chlimage_1-290](assets/chlimage_1-290.png)
+   ![Link externalizer 설정](assets/link-externalizer-config.png)
 
-### InDesign Server {#enabling-parallel-job-processing-for-indesign-server-s} 병렬 작업 처리 활성화
+### InDesign Server {#enabling-parallel-job-processing-for-indesign-server}에 대한 병렬 작업 처리 활성화
 
 이제 ID에 대해 병렬 작업 처리를 활성화할 수 있습니다.
 
