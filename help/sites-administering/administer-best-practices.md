@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 24ad9e522eeaf2653e80166946636b9fc78bc401
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 25%
+source-wordcount: '543'
+ht-degree: 21%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 25%
 
 ## 자산 {#assets}
 
-Dynamic Media 기능 및 Scene 7 통합을 포함한 자산에 대한 우수 사례는 다음 주제에서 설명됩니다.
+Dynamic Media 기능 및 Dynamic Media Classic 통합을 비롯한 자산에 대한 우수 사례는 다음 항목에 설명되어 있습니다.
 
 <table> 
  <tbody>
