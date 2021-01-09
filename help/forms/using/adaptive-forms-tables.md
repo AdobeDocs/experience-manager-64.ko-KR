@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: e7d53127-3a0f-4c74-a656-25d9cf969f98
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 6c5b0abd9f19ceddd84e8615f0aedf48b1ef5868
 workflow-type: tm+mt
-source-wordcount: '2044'
+source-wordcount: '2170'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,14 @@ AEM Forms은 적응형 양식으로 표를 만들 수 있는 세로 막대의 �
 >[!NOTE]
 >
 >테이블에 원하는 수의 행을 추가할 수 있지만 추가할 수 있는 최대 열 수는 6개입니다. 또한 표에서 머리글 행을 삭제할 수 없습니다.
+
+### {#set-column-width} 표의 열 너비를 설정합니다.
+
+표의 열 너비를 설정하려면 다음 단계를 수행합니다.
+
+1. **[!UICONTROL 컨텐트]** 탭에서 **[!UICONTROL 표]** 구성 요소를 탭하고 구성(![구성](assets/configure-icon.svg)) 아이콘을 탭합니다.
+
+1. 표의 각 열에 비례하는 너비를 지정하려면 **[!UICONTROL 열 너비]** 필드에 쉼표로 구분된 값 목록을 입력합니다. 예를 들어 3개의 열이 포함된 테이블의 경우, **[!UICONTROL 열 너비]** 필드에 2,4,6을 값으로 지정하면 첫 번째 열에는 2/12가 되고, 두 번째 열에는 4/12가 되고, 세 번째 열에는 6/12가 설정됩니다. 첫 번째 열의 너비로서 2/12는 표 너비의 1/6을 나타냅니다. 마찬가지로, 4/12는 두 번째 열 너비를 표 너비의 1/3으로 설정하고 6/12는 세 번째 열 너비를 표 너비의 반으로 설정합니다.
 
 ### 테이블 설명 {#add-table-description} 추가
 
