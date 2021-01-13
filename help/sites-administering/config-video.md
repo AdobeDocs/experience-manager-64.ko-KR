@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: d2b4e6599a7b1c01dc220a03b2be9aa55e5d7458
+source-git-commit: 201ddb888e6f1797bf2b84c5719625ebf87ddc82
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '435'
 ht-degree: 6%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 6%
 [비디오 구성 요소](/help/sites-authoring/default-components-foundation.md#video)를 사용하면 사전 정의된 OOTB(즉시 사용 가능한) 비디오 요소를 페이지에 배치할 수 있습니다.
 
 변환이 올바르게 수행되려면 관리자가 [FFmpeg를 설치하고 AEM](#install-ffmpeg)을(를) 별도로 구성해야 합니다. HTML5 요소와 함께 사용하도록 [비디오 프로필을 구성](#configure-video-profiles)할 수도 있습니다.
+
+>[!CAUTION]
+>
+>이 구성 요소는 프로젝트 수준의 광범위한 사용자 정의 없이는 더 이상 즉시 사용할 수 없습니다.
 
 ## 비디오 프로필 {#configure-video-profiles} 구성
 
