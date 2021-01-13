@@ -12,10 +12,10 @@ discoiquuid: 3619ded2-a67c-4b96-b634-4c0d68f5284a
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: 201ddb888e6f1797bf2b84c5719625ebf87ddc82
 workflow-type: tm+mt
-source-wordcount: '6592'
-ht-degree: 96%
+source-wordcount: '6670'
+ht-degree: 95%
 
 ---
 
@@ -337,6 +337,10 @@ ht-degree: 96%
 >[!CAUTION]
 >이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
+>[!CAUTION]
+>
+>이 구성 요소는 프로젝트 수준의 광범위한 사용자 정의 없이는 더 이상 즉시 사용할 수 없습니다.
+
 Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 파인더에서 Flash 자산을 드래그하거나 대화 상자를 사용할 수 있습니다.
 
 * **Flash**
@@ -538,6 +542,10 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 >[!CAUTION]
 >이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
+>[!CAUTION]
+>
+>이 구성 요소는 프로젝트 수준의 광범위한 사용자 정의 없이는 더 이상 즉시 사용할 수 없습니다.
+
 사용자 이름과 암호 필드를 제공합니다.
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
@@ -573,6 +581,10 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
       사용자가 이미 로그인되어 있음을 나타내는 텍스트입니다.
 
 ### 주문 상태 {#order-status}
+
+>[!CAUTION]
+>
+>이 구성 요소는 프로젝트 수준의 광범위한 사용자 정의 없이는 더 이상 즉시 사용할 수 없습니다.
 
 * **제목**
 
@@ -710,6 +722,10 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 
 >[!CAUTION]
 >이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [회전 메뉴 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/carousel.html)를 대신 활용할 것을 권장합니다.
+
+>[!CAUTION]
+>
+>이 구성 요소는 프로젝트 수준의 광범위한 사용자 정의 없이는 더 이상 즉시 사용할 수 없습니다.
 
 이 구성 요소는 일련의 이미지를 순서대로 로드하여 페이지에 표시합니다. 이미지를 추가 또는 제거하고 각 이미지에 제목을 지정할 수 있습니다. 고급 설정에서 표시 영역의 크기를 지정할 수도 있습니다.
 
@@ -879,6 +895,10 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 ![dc_title_use](assets/dc_title_use.png)
 
 ### 비디오 {#video}
+
+>[!CAUTION]
+>
+>이 구성 요소는 프로젝트 수준의 광범위한 사용자 정의 없이는 더 이상 즉시 사용할 수 없습니다.
 
 **비디오** 구성 요소를 사용하면 사전 정의된 &quot;특별&quot; 비디오 요소를 페이지에 가져올 수 있습니다.
 
@@ -1295,6 +1315,10 @@ HTML5 요소와 함께 사용하기 위해 [비디오 구성 요소](/help/sites
 
 >[!CAUTION]
 >이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+
+>[!CAUTION]
+>
+>이 구성 요소는 프로젝트 수준의 광범위한 사용자 정의 없이는 더 이상 즉시 사용할 수 없습니다.
 
 Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을 입력하도록 요청합니다. 이 문자열은 새로 고칠 때마다 변경됩니다.
 
