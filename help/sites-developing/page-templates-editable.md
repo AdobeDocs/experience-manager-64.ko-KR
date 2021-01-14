@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: cf181663-8a4a-4efc-9f02-be1cf71c9299
 translation-type: tm+mt
-source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
+source-git-commit: 4f820cd0bf3a18b18c95e75c0f291452871175a4
 workflow-type: tm+mt
-source-wordcount: '3231'
+source-wordcount: '3298'
 ht-degree: 8%
 
 ---
@@ -84,7 +84,7 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
 
    템플릿 작성자가 구조를 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)를 참조하십시오.
 
-   구조에 대한 기술 세부 정보는 이 문서의 [구조](/help/sites-developing/page-templates-editable.md#structure)를 참조하십시오.
+   구조에 대한 기술적인 자세한 내용은 이 문서의 [구조](/help/sites-developing/page-templates-editable.md#structure)를 참조하십시오.
 
    **정책**
 
@@ -95,7 +95,7 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
 
    템플릿 작성자가 정책을 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)를 참조하십시오.
 
-   정책 기술 세부 정보는 이 문서의 [콘텐츠 정책](/help/sites-developing/page-templates-editable.md#content-policies)을 참조하십시오.
+   정책에 대한 기술적인 자세한 내용은 이 문서의 [콘텐츠 정책](/help/sites-developing/page-templates-editable.md#content-policies)을 참조하십시오.
 
    **초기 컨텐츠**
 
@@ -122,7 +122,7 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
 
    템플릿 작성자가 템플릿을 활성화하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-authoring/templates.md#enabling-and-allowing-a-template-template-author)를 참조하십시오.
 
-   템플릿 활성화에 대한 기술적인 설명은 이 문서의 [Adobe](/help/sites-developing/page-templates-editable.md#enabling-and-allowing-a-template-for-use)e용 템플릿 활성화 및 허용을 참조하십시오.
+   템플릿 활성화에 대한 자세한 내용은 이 문서의 [Adobe](/help/sites-developing/page-templates-editable.md#enabling-and-allowing-a-template-for-use)에 대한 템플릿 활성화 및 허용을 참조하십시오.
 
 1. 컨텐츠 페이지를 만드는 데 사용합니다.
 
@@ -133,6 +133,16 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
 
    편집 가능한 템플릿으로 페이지를 만드는 방법에 대한 자세한 내용은 이 문서의 [결과 컨텐트 페이지](/help/sites-developing/page-templates-editable.md#resultant-content-pages)를 참조하십시오.
 
+>[!TIP]
+>
+>국제화해야 하는 정보는 템플릿에 입력하지 마십시오. 내부화를 위해 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)의 [현지화 기능이 권장됩니다.
+
+>[!NOTE]
+>
+>템플릿은 페이지 작성 워크플로우를 간소화하기 위한 강력한 도구입니다. 그러나 너무 많은 템플릿이 작성자를 압도하고 페이지 생성을 혼동시킬 수 있습니다. 템플릿의 수를 100개 미만으로 유지하는 것이 효과적인 경험입니다.
+>
+>잠재적인 성능 영향 때문에 Adobe에서는 1,000개 이상의 템플릿을 사용하는 것이 권장되지 않습니다.
+
 >[!NOTE]
 >
 >편집기 클라이언트 라이브러리는 컨텐츠 페이지에 `cq.shared` 네임스페이스가 있다고 가정하고, 없는 경우 JavaScript 오류 `Uncaught TypeError: Cannot read property 'shared' of undefined`이(가) 발생합니다.
@@ -140,10 +150,6 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
 >모든 샘플 컨텐츠 페이지에는 `cq.shared`이(가) 포함되어 있으므로 이를 기반으로 하는 모든 컨텐츠에 자동으로 `cq.shared`이(가) 포함됩니다. 그러나 샘플 콘텐트를 기준으로 하지 않고 직접 컨텐트 페이지를 처음부터 만드는 경우에는 `cq.shared` 네임스페이스를 반드시 포함해야 합니다.
 >
 >자세한 내용은 [클라이언트측 라이브러리 사용](/help/sites-developing/clientlibs.md)을 참조하십시오.
-
->[!CAUTION]
->
->[국제화](/help/sites-developing/i18n.md)해야 하는 정보는 템플릿에 입력하지 마십시오.
 
 ## 템플릿 폴더 {#template-folders}
 
@@ -207,7 +213,7 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
    * 유형: `String`
    * 값:**템플릿** 콘솔에 표시할 제목(폴더에 대해).
 
-1. 표준 작성 권한 및 권한(예:*) 이제 그룹을 할당하고 작성자가 새 폴더에 템플릿을 만들 수 있도록 필요한 액세스 권한(ACL)을 정의해야 합니다.*`content-authors`
+1. 표준 작성 권한 및 권한(예:`content-authors`) 이제 그룹을 할당하고 작성자가 새 폴더에 템플릿을 만들 수 있도록 필요한 액세스 권한(ACL)을 정의해야 합니다.**
 
    `template-authors` 그룹은 할당해야 하는 기본 그룹입니다. 자세한 내용은 다음 섹션 [ACL 및 그룹](/help/sites-developing/page-templates-editable.md#acls-and-groups)을 참조하십시오.
 
@@ -217,7 +223,7 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
 
 1. **전역 탐색** -> **도구** > **구성 브라우저**&#x200B;로 이동합니다.
 
-   기존 폴더는 **글로벌** l 폴더를 포함하여 왼쪽에 나열됩니다.
+   기존 폴더는 **global** 폴더를 포함하여 왼쪽에 나열됩니다.
 
 1. **만들기**&#x200B;를 클릭합니다.
 1. **구성 만들기** 대화 상자에서 다음 필드를 구성해야 합니다.
