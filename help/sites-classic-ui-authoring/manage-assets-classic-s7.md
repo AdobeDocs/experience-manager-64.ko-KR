@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: 191c365e924fd3974308c075369a3f9d8810e6b7
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
 source-wordcount: '3428'
 ht-degree: 38%
@@ -240,7 +240,7 @@ Dynamic Media Classic 이미지 구성 요소를 사용하면 Dynamic Media Clas
 
 **[!UICONTROL 출력 형식]**  - 이미지의 출력 형식(예: jpeg)을 선택합니다. 선택한 출력 형식에 따라 추가 구성 옵션이 있을 수 있습니다. [이미지 사전 설정 관리](/help/assets/managing-image-presets.md)를 참조하십시오.
 
-**[!UICONTROL 선명하게 하기]**  - 이미지를 선명하게 할 방법을 선택합니다. 선명하게 하기는 [*Adobe Dynamic Media Classic 이미지 품질 및 선명하게 하기 우수 사례*](/help/assets/assets/s7_sharpening_images.pdf)&#x200B;에 자세히 설명되어 있습니다.
+**[!UICONTROL 선명하게 하기]**  - 이미지를 선명하게 할 방법을 선택합니다. 선명하게 하기는 [*Adobe Dynamic Media Classic 이미지 품질 및 선명하게 하기 우수 사례*](/help/assets/assets/sharpening_images.pdf)&#x200B;에 자세히 설명되어 있습니다.
 
 **[!UICONTROL URL 수정자]**  - 추가 Dynamic Media Classic 이미지 명령을 제공하여 이미지 효과를 변경할 수 있습니다. 이러한 내용은 [이미지 사전 설정 관리](/help/assets/managing-image-presets.md) 및 [명령 참조](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)에 설명되어 있습니다.
 
