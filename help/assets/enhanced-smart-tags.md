@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
 translation-type: tm+mt
-source-git-commit: ce50cffa1a6a27c700b38d1d17c920f1bc31e3cc
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '1577'
+source-wordcount: '1567'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Smart Content Service가 올바른 태그를 적용하려면 분류 방식을 �
 
 백그라운드에서 Smart Content Service는 Adobe Sensei의 AI 프레임워크를 사용하여 태그 구조 및 비즈니스 분류법에 대한 이미지 인식 알고리즘을 교육합니다. 그런 다음 이 컨텐츠 인텔리전스를 사용하여 다른 자산 세트에 관련 태그를 적용합니다.
 
-스마트 콘텐츠 서비스는 Adobe I/O에서 호스팅되는 클라우드 서비스입니다.AEM(Adobe Experience Manager)에서 사용하려면 시스템 관리자가 AEM 인스턴스를 Adobe IO와 통합해야 합니다.
+스마트 콘텐츠 서비스는 [!DNL Adobe I/O]에 호스팅되는 클라우드 서비스입니다. AEM(Adobe Experience Manager)에서 사용하려면 시스템 관리자가 AEM 인스턴스를 [!DNL Adobe I/O]과(와) 통합해야 합니다.
 
 요약하면 스마트 콘텐츠 서비스를 사용하는 주요 단계는 다음과 같습니다.
 
@@ -44,14 +44,14 @@ Smart Content Service가 올바른 태그를 적용하려면 분류 방식을 �
 
 ## 전제 조건 {#prerequisites}
 
-Smart Content Service를 사용하려면 먼저 다음을 통해 Adobe I/O에 통합을 만드십시오.
+스마트 콘텐츠 서비스를 사용하려면 먼저 [!DNL Adobe I/O]에 통합을 만들려면 다음을 확인하십시오.
 
 * 조직에 대한 관리자 권한이 부여된 Adobe ID 계정이 있습니다.
 * 조직에서 스마트 콘텐츠 서비스 서비스를 사용할 수 있습니다.
 
 ## 온보딩 {#onboarding}
 
-스마트 콘텐츠 서비스는 AEM의 추가 기능으로 구매할 수 있습니다. 구입하면 Adobe IO에 대한 링크가 포함된 이메일이 조직 관리자에게 전송됩니다.
+스마트 콘텐츠 서비스는 AEM의 추가 기능으로 구매할 수 있습니다. 구입하면 [!DNL Adobe I/O]에 대한 링크가 포함된 이메일이 조직의 관리자에게 전송됩니다.
 
 관리자는 링크를 따라 Smart Content Service를 AEM과 통합할 수 있습니다. 서비스를 AEM Assets과 통합하려면 [스마트 태그 구성](config-smart-tagging.md)을 참조하십시오.
 
