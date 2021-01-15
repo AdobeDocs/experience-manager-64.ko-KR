@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e401816d-eba5-4833-a3bd-e2e45bc3b19e
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '3851'
+source-wordcount: '3850'
 ht-degree: 3%
 
 ---
@@ -72,7 +72,7 @@ Adobe Illustrator의 파일 형식은 PDF의 변수입니다. AEM Assets 컨텍�
 
 하위 자산은 전체 `DAM Update Asset` 워크플로 내에서 `Create Sub Asset process` 구성 요소에 의해 만들어집니다. 워크플로우 내에서 이 프로세스 구성 요소를 보려면 **[!UICONTROL 도구 > 워크플로우 > 모델 > DAM 자산 업데이트 > 편집]**&#x200B;을 탭합니다.
 
-자세한 내용은 다중 페이지 파일[의 페이지 보기를 참조하십시오.](/help/assets/managing-linked-subassets.md#view-pages-of-a-multi-page-file)
+자세한 내용은 다중 페이지 파일](/help/assets/managing-linked-subassets.md#view-pages-of-a-multi-page-file)의 페이지 보기를 참조하십시오.[
 
 자산을 열 때 하위 자산이나 페이지를 보고 콘텐츠 메뉴를 누른 다음 **[!UICONTROL 하위 자산]** 또는 **[!UICONTROL 페이지]**&#x200B;를 선택합니다. 하위 자산은 실제 자산입니다. 즉, PDF 페이지는 `Create Sub Asset` 워크플로우 구성 요소에 의해 추출됩니다. 그런 다음 기본 자산 아래에 `page1.pdf`, `page2.pdf` 등으로 저장됩니다. 저장 후 **[!UICONTROL DAM 자산 업데이트]** 워크플로우에서 처리합니다.
 
@@ -394,7 +394,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
     </ul> 
     <div>
       선명하게 하기는 
-     <a href="https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/assets/s7_sharpening_images.pdf">이미지 선명하게 하기</a>. 
+     <a href="https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/assets/sharpening_images.pdf">이미지 선명하게 하기</a>. 
     </div> </td> 
   </tr> 
   <tr> 
@@ -437,7 +437,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
 
 >[!NOTE]
 >
->AEM[에서 일부 이미지 수정자를 사용할 수 없습니다.](#advanced-tab-options)
+>AEM](#advanced-tab-options)에서 일부 이미지 수정자를 사용할 수 없습니다.[
 
 * [op_invert](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html)  - 네거티브 이미지 효과에 대한 각 색상 구성 요소를 반전합니다.
 
