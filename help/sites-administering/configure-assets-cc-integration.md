@@ -6,9 +6,9 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: c2f190af-656e-4435-9f44-2698d41c4ad1
 translation-type: tm+mt
-source-git-commit: fb2567cdf5a0ae210270366899b49db256374f25
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1361'
 ht-degree: 0%
 
 ---
@@ -16,12 +16,12 @@ ht-degree: 0%
 
 # Experience Cloud 및 Creative Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}과(와) AEM Assets 통합 구성
 
-Adobe Experience Cloud 고객인 경우 AEM(Adobe Experience Manager) Assets 내의 자산을 Adobe Creative Cloud과 동기화하거나 그 반대로 동기화할 수 있습니다. 또한 자산을 Experience Cloud과 동기화할 수 있으며 그 반대의 경우도 마찬가지입니다. Adobe I/O을 통해 이 동기화를 설정할 수 있습니다.
+Adobe Experience Cloud 고객인 경우 AEM(Adobe Experience Manager) Assets 내의 자산을 Adobe Creative Cloud과 동기화하거나 그 반대로 동기화할 수 있습니다. 또한 자산을 Experience Cloud과 동기화할 수 있으며 그 반대의 경우도 마찬가지입니다. [!DNL Adobe I/O]을(를) 통해 이 동기화를 설정할 수 있습니다.
 
 이 통합을 설정하는 워크플로우는 다음과 같습니다.
 
-1. 공개 게이트웨이를 사용하여 Adobe I/O에서 인증을 만들고 응용 프로그램 ID를 얻습니다.
-1. 응용 프로그램 ID를 사용하여 AEM Assets 인스턴스에서 프로필을 만듭니다.
+1. 공용 게이트웨이를 사용하여 [!DNL Adobe I/O]에서 인증을 만들고 응용 프로그램 ID를 가져옵니다.
+1. 응용 프로그램 ID를 사용하여 AEM Assets 인스턴스에 프로파일을 만듭니다.
 1. 이 구성을 사용하여 AEM Assets 내의 자산을 Creative Cloud과 동기화합니다.
 
 백 엔드에서 AEM 서버는 게이트웨이로 프로파일을 인증한 다음 AEM Assets과 Experience Cloud 간에 데이터를 동기화합니다.
