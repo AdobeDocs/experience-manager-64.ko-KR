@@ -10,10 +10,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 10%
+source-wordcount: '327'
+ht-degree: 11%
 
 ---
 
@@ -55,5 +55,5 @@ ht-degree: 10%
    >
    >에셋 *및*&#x200B;이 이미지 사전 설정이 아직 게시되지 않은 경우 **[!UICONTROL URL]** 단추(또는 **[!UICONTROL URL]** 및 **[!UICONTROL RESS]** 단추(해당하는 경우)를 사용할 수 없습니다.
    >
-   >또한 이미지 사전 설정은 Dynamic Media S7 서버에 자동으로 게시됩니다.
+   >또한 이미지 사전 설정은 Dynamic Media 서버에 자동으로 게시됩니다.
 
