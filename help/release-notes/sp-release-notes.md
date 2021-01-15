@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '21621'
+source-wordcount: '21618'
 ht-degree: 26%
 
 ---
@@ -48,7 +48,7 @@ AEM 6.4.8.0은 2018년 4월 **AEM 6.4의 공식 출시 이후에 출시된 새�
 
 * 이제 SOAP 웹 서비스를 사용한 양식 데이터 모델 통합에서 요소의 선택 그룹 또는 특성을 지원합니다.
 
-* AEM Assets은 이제 Adobe I/O을 통해 브랜드 포털로 구성됩니다.
+* AEM Assets은 이제 [!DNL Adobe I/O]을 통해 브랜드 포털로 구성됩니다.
 
 * ContextHub에 번들로 포함된 jQuery 버전을 3.2.1으로 업데이트했습니다.
 
@@ -1294,7 +1294,7 @@ AEM 6.4.2.0의 주요 특징 중 몇 가지는 다음과 같습니다.
 * MongoDB Enterprise 3.6에 대한 지원을 추가했습니다.
 * 사이트 페이지 편집기는 <a href="../sites-developing/spa-walkthrough.md">AEM SPA Editor JS SDK</a>와 결합하여 [반응] 또는 [각]으로 클라이언트 측 구성 요소가 빌드되는 상황에 맞는 편집 및 컴포지션에 대한 지원을 추가합니다.
 * 컨텐츠 조각 개선 사항:텍스트 필드에 주석을 달고 버전을 나란히 비교하는 기능을 추가했습니다.
-* 사용자가 AEM 사용자 인터페이스에서 직접 Adobe Stock 에셋을 검색, 미리 보기, 저장 및 라이선스를 부여할 수 있도록 Adobe Stock[와의 통합을 추가했습니다. ](/help/assets/aem-assets-adobe-stock.md) 자세한 내용은 [AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)에서 Adobe Stock 자산 사용을 참조하십시오.
+* 사용자가 AEM 사용자 인터페이스에서 직접 Adobe Stock 에셋을 검색, 미리 보기, 저장 및 라이선스를 부여할 수 있도록 Adobe Stock](/help/assets/aem-assets-adobe-stock.md)와의 통합을 추가했습니다. [ 자세한 내용은 [AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)에서 Adobe Stock 자산 사용을 참조하십시오.
 * 자산에 동적 조건부 메타데이터에 대한 지원 및 자산 폴더에 대한 메타데이터 스키마 설정 기능이 추가되었습니다.
 * 폴더 축소판 만들기/업데이트 기능을 활성화/비활성화하기 위한 구성을 각 구성 요소에 추가했습니다.
 * 페이지 작성 시 이미지 편집기 개선 사항.
@@ -1659,7 +1659,7 @@ AEM 6.4.2.0 Forms의 주요 기능은 다음과 같습니다.
 
 **자산**
 
-* 사용자가 AEM 사용자 인터페이스에서 직접 Adobe Stock 에셋을 검색, 미리 보기, 저장 및 라이선스를 부여할 수 있도록 Adobe Stock[와의 통합을 추가했습니다. ](/help/assets/aem-assets-adobe-stock.md) 자세한 내용은 [AEM 자산과 함께 Adobe Stock 자산 사용](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)을 참조하십시오. NPR-15779: CQ-30857용 핫픽스
+* 사용자가 AEM 사용자 인터페이스에서 직접 Adobe Stock 에셋을 검색, 미리 보기, 저장 및 라이선스를 부여할 수 있도록 Adobe Stock](/help/assets/aem-assets-adobe-stock.md)와의 통합을 추가했습니다. [ 자세한 내용은 [AEM 자산과 함께 Adobe Stock 자산 사용](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)을 참조하십시오. NPR-15779: CQ-30857용 핫픽스
 * 동적 조건부 메타 스키마에 대한 지원을 추가했습니다. 자세한 내용은 [계단식 메타데이터](/help/assets/cascading-metadata.md)를 참조하십시오. NPR-25189: CQ-4237413용 핫픽스
 * 컨텐츠 조각에서 &quot;자산 다운로드&quot; 옵션을 활성화했습니다. 자세한 내용은 [자산 보고서](/help/assets/asset-reports.md)를 참조하십시오. NPR-25186: CQ-4237410용 핫픽스
 * 자산 폴더에 대한 메타데이터 스키마를 설정하는 기능입니다. 자세한 내용은 [폴더 메타데이터 스키마](/help/assets/folder-metadata-schema.md)를 참조하고 [구성 설정](#configuration-settings-required-for-npr) AEM 6.4.2.0 설치 게시물을 참조하십시오. NPR-21268: CQ-4221574용 핫픽스
