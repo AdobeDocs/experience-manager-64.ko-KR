@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: 9aae7ddac586a43f57dd34fc20df686ed2f8faca
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '2714'
+source-wordcount: '2713'
 ht-degree: 2%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 2%
   <tr> 
    <td>색상 및 이미지 견본</td> 
    <td>각 이미지에 대한 이미지 견본을 일괄 생성합니다.</td> 
-   <td><p><strong>참고</strong>:스마트 견본은 Dynamic Media Classic에서 지원되지 않습니다.</p> <p>색상 또는 텍스처를 보여주는 제품 이미지에서 고품질 색상 견본을 자동으로 찾아 생성할 수 있습니다.</p> <p>색상 및 이미지 견본을 사용하려면 자르기 옵션 드롭다운 목록에서 <strong>스마트 자르기</strong>를 선택한 다음 색상 및 이미지 견본 오른쪽에 있는 기능을 활성화(켜기)합니다. [폭] 및 [높이] 텍스트 상자에 픽셀 값을 입력합니다.</p> <p>모든 이미지 자르기는 [변환] 레일에서 사용할 수 있지만 견본은 URL 복사 기능을 통해서만 사용됩니다. 고유한 보기 구성 요소를 사용하여 사이트의 견본을 렌더링해야 합니다. 캐러셀 배너는 예외입니다. Dynamic Media은 캐러셀 배너에 사용된 견본에 대한 보기 구성 요소를 제공합니다.)</p> <p><strong>이미지 견본 사용</strong></p> <p>이미지 색상 견본의 URL은 간단합니다. 이것은 다음과 같습니다.</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>여기서 <code>:Swatch</code>은(는) 자산 요청에 추가됩니다.</p> <p><strong>색상 견본 사용</strong></p> <p>색상 견본을 사용하려면 다음을 사용하여 <code>req=userdata</code> 요청을 수행합니다.</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>예를 들어 다음은 Dynamic Media Classic(Scene7)의 견본 에셋입니다.</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>견본 에셋의 해당 <code>req=userdata</code> URL은 다음과 같습니다.</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p><code>req=userdata</code> 응답은 다음과 같습니다.</p> <p><code class="code">SmartCropDef=Swatch
+   <td><p><strong>참고</strong>:스마트 견본은 Dynamic Media Classic에서 지원되지 않습니다.</p> <p>색상 또는 텍스처를 보여주는 제품 이미지에서 고품질 색상 견본을 자동으로 찾아 생성할 수 있습니다.</p> <p>색상 및 이미지 견본을 사용하려면 자르기 옵션 드롭다운 목록에서 <strong>스마트 자르기</strong>를 선택한 다음 색상 및 이미지 견본 오른쪽에 있는 기능을 활성화(켜기)합니다. [폭] 및 [높이] 텍스트 상자에 픽셀 값을 입력합니다.</p> <p>모든 이미지 자르기는 [변환] 레일에서 사용할 수 있지만 견본은 URL 복사 기능을 통해서만 사용됩니다. 고유한 보기 구성 요소를 사용하여 사이트의 견본을 렌더링해야 합니다. 캐러셀 배너는 예외입니다. Dynamic Media은 캐러셀 배너에 사용된 견본에 대한 보기 구성 요소를 제공합니다.)</p> <p><strong>이미지 견본 사용</strong></p> <p>이미지 색상 견본의 URL은 간단합니다. 이것은 다음과 같습니다.</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>여기서 <code>:Swatch</code>은(는) 자산 요청에 추가됩니다.</p> <p><strong>색상 견본 사용</strong></p> <p>색상 견본을 사용하려면 다음을 사용하여 <code>req=userdata</code> 요청을 수행합니다.</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>예를 들어 다음은 Dynamic Media Classic의 견본 에셋입니다.</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>견본 에셋의 해당 <code>req=userdata</code> URL은 다음과 같습니다.</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p><code>req=userdata</code> 응답은 다음과 같습니다.</p> <p><code class="code">SmartCropDef=Swatch
        SmartCropHeight=200.0
        SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
        SmartCropType=Swatch
@@ -105,7 +105,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-선명하게 하기는 [이미지 선명하게 하기](/help/assets/assets/s7_sharpening_images.pdf)에 설명되어 있습니다.
+선명하게 하기는 [이미지 선명하게 하기](/help/assets/assets/sharpening_images.pdf)에 설명되어 있습니다.
 
 ## Dynamic Media 이미지 프로필 {#creating-image-profiles} 만들기
 
