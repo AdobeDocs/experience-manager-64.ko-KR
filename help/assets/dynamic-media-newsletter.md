@@ -6,7 +6,7 @@ seo-title: 'Adobe Dynamic Media 뉴스레터 '
 solution: Dynamic Media Classic
 title: Dynamic Media 뉴스레터
 translation-type: tm+mt
-source-git-commit: 6caef5222b9f2163bfe7f7ded0e989fbc402bfef
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 0%
@@ -52,9 +52,9 @@ Experience League의 월간 Dynamic Media 뉴스레터는 Dynamic Media 및 Dyna
    * 무료 Dynamic Media Classic 감사에 대한 자세한 내용을 살펴보십시오.
    * 고객 성공 서비스 부문 수석 프로그램 관리자인 John Monroe를 만나보십시오.
 
-   >[!IMPORTANT]
-   >
-   >Dynamic Media 뉴스레터를 수신하려는 사람에게만 보낼 수 있습니다. 이 문제 후에 뉴스레터를 계속 수신하려면 [여기](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0)에 등록하십시오.
+      >[!IMPORTANT]
+      >
+      >Dynamic Media 뉴스레터를 수신하려는 사람에게만 보낼 수 있습니다. 이 문제 후에 뉴스레터를 계속 수신하려면 [여기](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0)에 등록하십시오.
 
 * **[2020년 2월, 문제 2](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
@@ -109,17 +109,15 @@ Experience League의 월간 Dynamic Media 뉴스레터는 Dynamic Media 및 Dyna
    * Adobe Experience Manager Assets 선임 제품 마케팅 관리자인 Brigal Roman을 만나보십시오.
    * Experience League에서 Dynamic Media 및 Dynamic Media Classic을 빠르게 실행할 수 있습니다.
 
-
 * **[2019년 8월, 2008년](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
 
    이 문제:
 
    * Dynamic Media으로 업그레이드할 때에만 사용할 수 있는 중요한 기능을 살펴보십시오.
    * Adobe Experience Manager 에셋 및 Dynamic Media을 빠르게 익힐 수 있도록 고안된 웨비나 시리즈에 대해 살펴보십시오.
-   * Experience League 기반의 Dynamic Media을 통해 가치를 창출할 수 있는 여행
+   * Experience League에서 Dynamic Media을 통해 가치를 창출하는 여정을 시작할 수 있습니다.
    * 방문자가 리치 미디어와 어떻게 상호 작용하는지 분석할 수 있는 이번 9월 이후의 강력한 통합을 미리 보십시오.
    * Dynamic Media 기술 지원의 귀재인 PieterJan Pieper를 만나보십시오.
-
 
 * **[2019년 7월, 2017년 7월](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_07_2019_July.html)**
 
@@ -158,6 +156,7 @@ Experience League의 월간 Dynamic Media 뉴스레터는 Dynamic Media 및 Dyna
    Adobe Experience Manager Assets 및 Adobe Dynamic Media Classic에서 Dynamic Media 사용자를 위한 뉴스레터, 뉴스레터, 뉴스레터, 뉴스레터 및 리소스를 제공하는 Dynamic Media 뉴스레터를 발행합니다.
 
    이 문제:
+
    * Dynamic Media Classic 숨겨진 기능 웨비나에 등록하십시오.
    * 리치 미디어 전략을 개발할 수 있는 On-Demand 웨비나 시리즈에 대해 살펴보십시오.
    * 주요 리치 미디어 활용 사례 및 Adobe 솔루션을 살펴볼 수 있습니다.
