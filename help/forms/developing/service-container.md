@@ -1,8 +1,8 @@
 ---
 title: 서비스 컨테이너
 seo-title: 서비스 컨테이너
-description: 'null'
-seo-description: 'null'
+description: 서비스 컨테이너의 기능에 대해 자세히 알아보십시오. 또한 AEM Forms 서비스를 프로그래밍 방식으로 호출할 수 있는 다양한 방법에 대해서도 설명합니다.
+seo-description: 서비스 컨테이너의 기능에 대해 자세히 알아보십시오. 또한 AEM Forms 서비스를 프로그래밍 방식으로 호출할 수 있는 다양한 방법에 대해서도 설명합니다.
 uuid: 89f2fd3d-63d7-4b70-b335-47314441f3ec
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, coding
 discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
   </tr> 
   <tr>
    <td><p>Java API</p></td> 
-   <td><p>Java API는 AEM Forms 서비스를 호출할 수 있습니다. Java API는 클라이언트 라이브러리와 Java 호출 API로 구성됩니다. (Java API<a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api">를 사용하여 AEM Forms 호출 참조)</a></p></td> 
+   <td><p>Java API는 AEM Forms 서비스를 호출할 수 있습니다. Java API는 클라이언트 라이브러리와 Java 호출 API로 구성됩니다. (Java API</a>를 사용하여 AEM Forms 호출 참조)<a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api"></a></p></td> 
   </tr> 
   <tr>
    <td><p>웹 서비스</p></td> 
@@ -46,7 +46,7 @@ ht-degree: 0%
   </tr> 
   <tr>
    <td><p>REST 요청</p></td> 
-   <td><p>AEM Forms은 REST 요청을 지원합니다. 서비스는 HTML 페이지에서 직접 호출할 수 있습니다. (REST 요청을 사용하여 AEM Forms 호출<a href="/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests">을 참조하십시오.)</a></p></td> 
+   <td><p>AEM Forms은 REST 요청을 지원합니다. 서비스는 HTML 페이지에서 직접 호출할 수 있습니다. (REST 요청을 사용하여 AEM Forms 호출</a>을 참조하십시오.)<a href="/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests"></a></p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -64,7 +64,7 @@ ht-degree: 0%
 * 호출 요청을 적절한 서비스로 라우팅합니다(호출할 서비스 이름은 호출 요청의 일부임).
 * 호출자에게 지정된 서비스 작업을 호출할 수 있는 권한이 있는지 여부를 확인하는 등의 작업을 수행합니다. 호출 요청에는 유효한 AEM 양식 사용자 이름과 암호가 포함되어야 합니다.
 
-   서비스로 호출 요청을 보내는 방법은 다양합니다. 또한 필요한 입력 값을 서비스로 보내는 다른 방법도 있습니다. 예를 들어 Java API를 사용하여 PDF 문서가 필요한 서비스를 호출한다고 가정합니다. 해당 Java 메서드에는 PDF 문서를 허용하는 매개 변수가 포함되어 있습니다. 이 경우 매개 변수의 데이터 유형은 `com.adobe.idp.Document`입니다. (Java API[를 사용하여 AEM Forms 서비스에 데이터 전달을 참조하십시오.)](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)
+   서비스로 호출 요청을 보내는 방법은 다양합니다. 또한 필요한 입력 값을 서비스로 보내는 다른 방법도 있습니다. 예를 들어 Java API를 사용하여 PDF 문서가 필요한 서비스를 호출한다고 가정합니다. 해당 Java 메서드에는 PDF 문서를 허용하는 매개 변수가 포함되어 있습니다. 이 경우 매개 변수의 데이터 유형은 `com.adobe.idp.Document`입니다. (Java API](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)를 사용하여 AEM Forms 서비스에 데이터 전달을 참조하십시오.)[
 
    감시 폴더를 사용하여 서비스를 호출하면 구성된 감시 폴더에 파일을 배치할 때 호출 요청이 전송됩니다. 이메일을 사용하여 서비스를 호출하면 이메일 메시지가 구성된 받은 편지함에 도착할 때 호출 요청이 서비스로 전송됩니다.
 
