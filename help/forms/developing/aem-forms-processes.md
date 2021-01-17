@@ -1,8 +1,8 @@
 ---
 title: AEM Forms 프로세스 이해
 seo-title: AEM Forms 프로세스 이해
-description: 'null'
-seo-description: 'null'
+description: AEM Forms 업무 프로세스를 사용하여 작업을 자동화하는 방법을 알아봅니다. 다른 서비스처럼 호출할 수 있도록 프로세스를 활성화하여 서비스를 만듭니다. 프로세스는 짧거나 오래 사용할 수 있습니다.
+seo-description: AEM Forms 업무 프로세스를 사용하여 작업을 자동화하는 방법을 알아봅니다. 다른 서비스처럼 호출할 수 있도록 프로세스를 활성화하여 서비스를 만듭니다. 프로세스는 짧거나 오래 사용할 수 있습니다.
 uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
