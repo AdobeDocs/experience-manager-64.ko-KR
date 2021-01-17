@@ -1,8 +1,8 @@
 ---
 title: Document Security 서비스 JavaAPI 빠른 시작(SOAP)
 seo-title: Document Security 서비스 JavaAPI 빠른 시작(SOAP)
-description: 'null'
-seo-description: 'null'
+description: 'Rights management 서비스 Java API를 사용하여 정책을 만들고, 정책을 수정하고, 정책을 삭제하고, PDF 문서에 정책을 적용하고, PDF 문서에서 정책을 제거하고, 문서를 폐지하고, 폐지된 문서에 대한 액세스 권한을 복원하고, 정책으로 보호된 PDF 문서를 검사하고, 워터마크를 만들고, 워터마크를 수정하고, 이벤트를 검색하고, Word 문서에서 정책을 제거합니다. '
+seo-description: Rights management 서비스 Java API를 사용하여 정책을 만들고, 정책을 수정하고, 정책을 삭제하고, PDF 문서에 정책을 적용하고, PDF 문서에서 정책을 제거하고, 문서를 폐지하고, 폐지된 문서에 대한 액세스 권한을 복원하고, 정책으로 보호된 PDF 문서를 검사하고, 워터마크를 만들고, 워터마크를 수정하고, 이벤트를 검색하고, Word 문서에서 정책을 제거합니다.
 uuid: f3823a95-c8c2-42c8-8edc-3ab8ab4311dc
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: b89293c4-ea2e-4fa4-9e5e-ef4f548e9608
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1193'
 ht-degree: 0%
 
 ---
@@ -482,7 +482,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api}을 사용하여 PDF 문서에서 정책 제거
 
-다음 코드 예제에서는 *PolicyProtectedLoanDoc.pdf*&#x200B;라는 PDF 문서에서 정책을 제거합니다. 보안되지 않은 PDF 문서는 *unProtectedLoan.pdf*&#x200B;로 저장됩니다. (PDF 문서에서 정책 제거[를 참조하십시오.)](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents)
+다음 코드 예제에서는 *PolicyProtectedLoanDoc.pdf*&#x200B;라는 PDF 문서에서 정책을 제거합니다. 보안되지 않은 PDF 문서는 *unProtectedLoan.pdf*&#x200B;로 저장됩니다. (PDF 문서에서 정책 제거](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents)를 참조하십시오.)[
 
 ```as3
  /* 
@@ -1647,7 +1647,7 @@ public class ModifyWatermarks {
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api}을 사용하여 Word 문서에서 정책 제거
 
-다음 코드 예제에서는 *PolicyProtectedLoanDoc.doc*&#x200B;라는 Word 문서에서 정책을 제거합니다. 보안되지 않은 Word 문서는 *unProtectedLoan.doc*&#x200B;로 저장됩니다. (Word 문서[에서 정책 제거 참조)](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents)
+다음 코드 예제에서는 *PolicyProtectedLoanDoc.doc*&#x200B;라는 Word 문서에서 정책을 제거합니다. 보안되지 않은 Word 문서는 *unProtectedLoan.doc*&#x200B;로 저장됩니다. (Word 문서](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents)에서 정책 제거 참조)[
 
 ```as3
  /* 
