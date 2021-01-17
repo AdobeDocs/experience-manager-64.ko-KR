@@ -1,8 +1,8 @@
 ---
 title: 자격 증명 서비스 Java API QuickStart(SOAP)
 seo-title: 자격 증명 서비스 Java API QuickStart(SOAP)
-description: 'null'
-seo-description: 'null'
+description: 자격 증명 서비스 Java API를 사용하여 자격 증명을 가져오고 삭제합니다.
+seo-description: 자격 증명 서비스 Java API를 사용하여 자격 증명을 가져오고 삭제합니다.
 uuid: a00eabfa-3a52-41dd-bcba-c60d00394384
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: b624e255-ae71-4d9c-8554-d48f3e77b799
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-importing-credentials-using-the-java-api}을(를) 사용하여 자격 증명 가져오기
 
-다음 코드 예제에서는 *cred.p12* 파일을 기반으로 자격 증명을 가져옵니다. 자격 증명을 가져오는 데 사용되는 별칭 값은 `Secure`입니다. (Trust Manager API[를 사용하여 자격 증명 가져오기를 참조하십시오.)](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)
+다음 코드 예제에서는 *cred.p12* 파일을 기반으로 자격 증명을 가져옵니다. 자격 증명을 가져오는 데 사용되는 별칭 값은 `Secure`입니다. (Trust Manager API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)를 사용하여 자격 증명 가져오기를 참조하십시오.)[
 
 ```as3
  /* 
@@ -139,7 +139,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-deleting-credentials-using-the-java-api}을(를) 사용하여 자격 증명 삭제
 
-다음 코드 예제에서는 별칭 값 *secure*&#x200B;를 기반으로 자격 증명을 삭제합니다. (신뢰 관리자 API[를 사용하여 자격 증명 삭제를 참조하십시오.)](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api)
+다음 코드 예제에서는 별칭 값 *secure*&#x200B;를 기반으로 자격 증명을 삭제합니다. (신뢰 관리자 API](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api)를 사용하여 자격 증명 삭제를 참조하십시오.)[
 
 ```as3
  /* 
