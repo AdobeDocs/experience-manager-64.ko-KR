@@ -1,8 +1,8 @@
 ---
 title: Distiller 서비스 Java API QuickStart(SOAP)
 seo-title: Distiller 서비스 Java API QuickStart(SOAP)
-description: 'null'
-seo-description: 'null'
+description: Distiller 서비스 Java API를 사용하여 PostScript 파일을 PDF 문서로 변환할 수 있습니다.
+seo-description: Distiller 서비스 Java API를 사용하여 PostScript 파일을 PDF 문서로 변환할 수 있습니다.
 uuid: 7781f074-cea4-4109-892b-118cfad4ec36
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 59dd61d1-c6b1-4bea-b666-4aa7897384a1
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 1%
+source-wordcount: '206'
+ht-degree: 0%
 
 ---
 
