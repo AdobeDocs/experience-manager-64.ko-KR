@@ -1,8 +1,8 @@
 ---
 title: 끝점 레지스트리 Java API QuickStart(SOAP)
 seo-title: 끝점 레지스트리 Java API QuickStart(SOAP)
-description: 'null'
-seo-description: 'null'
+description: 끝점 레지스트리 Java API를 사용하여 EJB 끝점을 추가하고, SOAP 끝점을 추가하고, 감시 폴더 끝점을 추가하고, 전자 메일 끝점을 추가하고, 원격 끝점을 추가하고, TaskManager 끝점을 추가하고, 끝점을 수정하고, 끝점을 제거하고, 끝점 정보를 검색할 수 있습니다.
+seo-description: 끝점 레지스트리 Java API를 사용하여 EJB 끝점을 추가하고, SOAP 끝점을 추가하고, 감시 폴더 끝점을 추가하고, 전자 메일 끝점을 추가하고, 원격 끝점을 추가하고, TaskManager 끝점을 추가하고, 끝점을 수정하고, 끝점을 제거하고, 끝점 정보를 검색할 수 있습니다.
 uuid: 986c55d0-e199-46f8-a3cc-a6baf5cce316
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
