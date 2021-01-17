@@ -1,17 +1,17 @@
 ---
 title: 'OSGi 및 AEM Forms JEE 워크플로우에서 양식 중심의 AEM 워크플로우의 작업 및 기능 '
 seo-title: 'OSGi 및 AEM Forms JEE 워크플로우에서 양식 중심의 AEM 워크플로우의 작업 및 기능 '
-description: 'null'
-seo-description: 'null'
+description: AEM 받은 편지함 및 HTML 작업 영역에서 지원되는 동작의 차이점, OSGi 및 AEM Forms JEE Workflows에서 양식 중심의 AEM Workflows에서 지원되는 기능의 차이점, AEM 받은 편지함과 AEM Forms 앱 기능의 차이점에 대해 자세히 알아보십시오.
+seo-description: AEM 받은 편지함 및 HTML 작업 영역에서 지원되는 동작의 차이점, OSGi 및 AEM Forms JEE Workflows에서 양식 중심의 AEM Workflows에서 지원되는 기능의 차이점, AEM 받은 편지함과 AEM Forms 앱 기능의 차이점에 대해 자세히 알아보십시오.
 uuid: ce2a05fe-ba45-42ed-880e-fb1d6efc1d26
 contentOwner: khsingh
 topic-tags: publish
 discoiquuid: 4c7ba430-25b2-4ba2-a5eb-4edaed0d599a
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 20%
+source-wordcount: '931'
+ht-degree: 18%
 
 ---
 
