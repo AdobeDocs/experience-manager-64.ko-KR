@@ -1,8 +1,8 @@
 ---
 title: 어셈블러 서비스 Java API QuickStart(SOAP)
 seo-title: 어셈블러 서비스 Java API QuickStart(SOAP)
-description: 'null'
-seo-description: 'null'
+description: Assembler 서비스를 사용하여 PDF 문서를 조합하거나, PDF 문서를 분해하고, 암호화된 PDF 문서를 조합하고, Bates 번호 매기기를 사용하여 PDF 문서를 취합하고, 비대화형 PDF 문서를 조합하고, 문서가 PDF/A인지 확인하고, DCX 문서를 조합하고, 책갈피로 PDF 문서를 동적으로 만들고, PDF 포트폴리오를 구성하며, 여러 XDP 구성 조각.
+seo-description: Assembler 서비스를 사용하여 PDF 문서를 조합하거나, PDF 문서를 분해하고, 암호화된 PDF 문서를 조합하고, Bates 번호 매기기를 사용하여 PDF 문서를 취합하고, 비대화형 PDF 문서를 조합하고, 문서가 PDF/A인지 확인하고, DCX 문서를 조합하고, 책갈피로 PDF 문서를 동적으로 만들고, PDF 포트폴리오를 구성하며, 여러 XDP 구성 조각.
 uuid: 33ad5f7a-4f4c-4e72-937d-85891498a80e
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---
@@ -1017,7 +1017,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api}를 사용하여 책갈피를 사용하여 PDF 문서 취합
 
-다음 Java 코드 예제에서는 책갈피가 포함된 PDF 문서를 어셈블합니다. DCX 문서의 이름은 *bookmarkDCX.xml*&#x200B;입니다. PDF 문서에 추가할 책갈피를 설명하는 책갈피 XML 문서의 이름은 bookmarks.xml입니다. 결과 PDF 문서는 AssemblerResultBookmarks.pdf라는 PDF 파일로 저장됩니다. (책갈피[를 사용하여 PDF 문서 정리 참조)](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-documents-with-bookmarks)
+다음 Java 코드 예제에서는 책갈피가 포함된 PDF 문서를 어셈블합니다. DCX 문서의 이름은 *bookmarkDCX.xml*&#x200B;입니다. PDF 문서에 추가할 책갈피를 설명하는 책갈피 XML 문서의 이름은 bookmarks.xml입니다. 결과 PDF 문서는 AssemblerResultBookmarks.pdf라는 PDF 파일로 저장됩니다. (책갈피](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-documents-with-bookmarks)를 사용하여 PDF 문서 정리 참조)[
 
 ```as3
  /* 
