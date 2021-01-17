@@ -1,8 +1,8 @@
 ---
 title: Java API QuickStart 소개
 seo-title: Java API QuickStart 소개
-description: 'null'
-seo-description: 'null'
+description: Java API 빠른 시작 프로그램을 사용하면 AEM Forms 서비스와 상호 작용하는 프로그램을 신속하게 개발할 수 있습니다. 프로젝트에서 Java API 빠른 시작 프로그램을 시작점으로 사용하고 이를 사용자 정의할 수 있습니다.
+seo-description: Java API 빠른 시작 프로그램을 사용하면 AEM Forms 서비스와 상호 작용하는 프로그램을 신속하게 개발할 수 있습니다. 프로젝트에서 Java API 빠른 시작 프로그램을 시작점으로 사용하고 이를 사용자 정의할 수 있습니다.
 uuid: 480e1809-f789-4ad8-b5d5-2d97aba8411a
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, develop
 discoiquuid: 38fd51ec-347e-4ae3-86d4-9d2429f79bdd
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ JAR 파일 목록은 빠른 시작 시작 부분에 있는 주석 섹션에 있�
 
 ## 여러 서비스 빠른 시작 {#multiple-services-quick-start}
 
-대부분의 빠른 시작은 *AEM Forms을 사용한 프로그래밍 *에서 작업을 수행하려면 특정 서비스를 불러옵니다. 그러나 일부 빠른 시작은 지정된 워크플로우를 수행하기 위해 여러 AEM Forms 서비스를 호출합니다. 다음 목록은 둘 이상의 AEM Forms 서비스를 호출하는 Java 빠른 시작을 제공합니다.
+대부분의 빠른 시작: *AEM Forms*&#x200B;로 프로그래밍을 통해 작업을 수행하려면 특정 서비스를 호출합니다. 그러나 일부 빠른 시작은 지정된 워크플로우를 수행하기 위해 여러 AEM Forms 서비스를 호출합니다. 다음 목록은 둘 이상의 AEM Forms 서비스를 호출하는 Java 빠른 시작을 제공합니다.
 
 [빠른 시작(SOAP 모드):Java API를 사용하여 AEM Forms 저장소에 있는 문서를 출력 서비스로](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)  전달(저장소 및 출력 서비스 호출)
 
