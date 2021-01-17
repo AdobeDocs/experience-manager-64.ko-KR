@@ -1,8 +1,8 @@
 ---
 title: 백업 및 복원 서비스 APIQ빠른 시작
 seo-title: 백업 및 복원 서비스 APIQ빠른 시작
-description: 'null'
-seo-description: 'null'
+description: 백업 및 복원 서비스 API를 사용하여 Java API 빠른 시작을 사용하여 백업 모드를 시작하고 종료할 수 있습니다.
+seo-description: 백업 및 복원 서비스 API를 사용하여 Java API 빠른 시작을 사용하여 백업 모드를 시작하고 종료할 수 있습니다.
 uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}을 사용하여 백업 모드 시작
 
-다음 Java 코드 예제는 2시간 동안 고유한 레이블이 있는 백업 모드로 들어갑니다. 백업 시간이 만료되거나 백업 모드가 명시적으로 종료되면 양식 서버가 전역 문서 저장소에서 파일을 제거하도록 돌아갑니다. 양식 서버[에서 백업 모드 시작을 참조하십시오.](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server)
+다음 Java 코드 예제는 2시간 동안 고유한 레이블이 있는 백업 모드로 들어갑니다. 백업 시간이 만료되거나 백업 모드가 명시적으로 종료되면 양식 서버가 전역 문서 저장소에서 파일을 제거하도록 돌아갑니다. 양식 서버](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server)에서 백업 모드 시작을 참조하십시오.[
 
 ```as3
  /* 
@@ -150,7 +150,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}를 사용하여 백업 모드 종료
 
-다음 Java 코드 예제는 명시적으로 Forms Server를 백업 모드를 종료하고 전역 문서 저장소에서 파일을 제거하는 것으로 되돌립니다. 양식 서버[에서 백업 모드 종료를 참조하십시오.](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)
+다음 Java 코드 예제는 명시적으로 Forms Server를 백업 모드를 종료하고 전역 문서 저장소에서 파일을 제거하는 것으로 되돌립니다. 양식 서버](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)에서 백업 모드 종료를 참조하십시오.[
 
 ```as3
  /* 
