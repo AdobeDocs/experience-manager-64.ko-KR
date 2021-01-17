@@ -1,8 +1,8 @@
 ---
 title: PDF 서비스 Java API QuickStart(SOAP) 변환
 seo-title: PDF 서비스 Java API QuickStart(SOAP) 변환
-description: 'null'
-seo-description: 'null'
+description: PDF 변환 서비스 Java API를 사용하여 PDF 문서를 PostScript 및 JPEG 파일로 변환합니다.
+seo-description: PDF 변환 서비스 Java API를 사용하여 PDF 문서를 PostScript 및 JPEG 파일로 변환합니다.
 uuid: 97253ac7-f0c1-4766-a7bd-c19af52adf51
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: bdd9bb56-14f6-448b-be4a-7c11f670e901
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api}을 사용하여 PDF 문서를 PostScript로 변환
 
-다음 코드 예제에서는 *Loan.pdf*&#x200B;라는 PDF 문서를 *Loan.ps*&#x200B;라는 PostScript 문서로 변환합니다. (PDF 문서를 PostScript[로 변환을 참조하십시오.)](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript)
+다음 코드 예제에서는 *Loan.pdf*&#x200B;라는 PDF 문서를 *Loan.ps*&#x200B;라는 PostScript 문서로 변환합니다. (PDF 문서를 PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript)로 변환을 참조하십시오.)[
 
 ```as3
  /* 
