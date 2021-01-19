@@ -10,10 +10,10 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 65%
+source-wordcount: '1681'
+ht-degree: 64%
 
 ---
 
@@ -137,7 +137,7 @@ Scene7 비디오를 볼 때는 Scene7 비디오 구성 요소를 사용하도록
 | 접근 방법 | HTML5 우선 접근 방법. Flash는 HTML5 이외의 폴백에만 사용됩니다. | 대부분의 데스크톱에 포함된 Flash. HTML5는 모바일 및 태블릿에 사용됩니다. |
 | 배달 | 점진적 | 적응형 스트리밍 |
 | 추적 | 예 | 예 |
-| 확장성 | 예 | 예(Scene7 뷰어 SDK 사용) |
+| 확장성 | 예 | 예(HTML5 뷰어 SDK API 설명서](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) 사용)[ |
 | 모바일 비디오 | 예 | 예 |
 
 ### 설정  {#setting-up}
