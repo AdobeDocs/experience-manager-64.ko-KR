@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: ee143a04dcdd6eb312f8c2a95eb11d53301e8e8f
+source-git-commit: 73e67103e6bd9784bcc671ed04dcd508fa5597a0
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: '1463'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ AEM에는 이미지를 조정 및 최적화하고 결과를 렌더링하기 위�
 
 ## 이미지 선명하게 하기 {#best-practices-for-image-sharpening} 우수 사례
 
-<!-- Image sharpening is the most complex aspect of controlling images on your website, and where many mistakes are made. Take the time to learn more about how sharpening and unsharp masking works in AEM by referring to the [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf) guide that applies to AEM as well. -->
+이미지 선명하게 하기는 웹 사이트에서 이미지를 제어하는 데 가장 복잡한 측면이며 오류가 많이 발생하는 영역입니다. AEM에도 적용되는 [Adobe Dynamic Media Classic 이미지 품질 및 Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf) 안내서를 참조하여 선명하게 하기 및 언샵 마스킹 기능이 AEM에서 작동하는 방식에 대한 자세한 내용을 살펴볼 수 있습니다.
 
 [언샵 마스크가 있는 이미지 선명하게 하기를 참조하십시오](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
 
@@ -64,7 +64,7 @@ AEM을 사용하면 섭취, 전달 시 또는 두 가지 모두를 통해 이미
 
              이 매개 변수는 가장자리 픽셀로 간주되고 필터가 선명하게 하기 전에 선명하게 된 픽셀이 주위 영역과 얼마나 달라야 하는지를 결정합니다. **[!UICONTROL threshold]** 매개 변수는 피부 톤과 같이 유사한 색상이 있는 영역을 과도하게 선명하게 하지 않도록 하는 데 도움이 됩니다. 예를 들어 임계값 12는 &quot;노이즈&quot;를 추가하지 않도록 피부 톤 밝기에 약간의 변형을 무시하고 속눈썹이 스킨을 충족하는 경우와 같이 대비가 높은 영역에 가장자리 대비를 추가합니다.
          
-         <!-- For more information about how you set these three parameters, including best practices to use with the filter, see the [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf) guide (applies to Dynamic Media on AEM as well). -->
+         필터와 함께 사용하는 모범 사례를 비롯하여 이러한 3개의 매개 변수를 설정하는 방법에 대한 자세한 내용은 [Adobe Dynamic Media Classic 이미지 품질 및 선명하게 하기 우수 사례](/help/assets/assets/sharpening_images.pdf) 안내서(AEM의 Dynamic Media에도 적용)를 참조하십시오.
    * AEM에서는 네 번째 매개 변수를 제어할 수도 있습니다.단색(0,1) 이 매개 변수는 값 0을 사용하여 각 색상 구성 요소에 언샵 마스킹을 개별적으로 적용할지 또는 값 1을 사용하여 이미지 밝기/강도에 적용할지를 결정합니다.
 
 
