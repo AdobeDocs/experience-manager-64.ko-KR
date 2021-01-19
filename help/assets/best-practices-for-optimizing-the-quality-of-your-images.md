@@ -1,18 +1,14 @@
 ---
 title: 이미지 품질 최적화 우수 사례
-seo-title: 이미지 품질 최적화 우수 사례
 description: 다이내믹 미디어의 이미지 품질 최적화를 위한 모범 사례 알아보기
-seo-description: 다이내믹 미디어의 이미지 품질 최적화를 위한 모범 사례 알아보기
-uuid: b73f0918-c723-4a0d-a63f-4242223c2d47
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: ee143a04dcdd6eb312f8c2a95eb11d53301e8e8f
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1369'
 ht-degree: 1%
 
 ---
@@ -46,9 +42,7 @@ AEM에는 이미지를 조정 및 최적화하고 결과를 렌더링하기 위�
 
 ## 이미지 선명하게 하기 {#best-practices-for-image-sharpening} 우수 사례
 
-이미지 선명하게 하기는 웹 사이트에서 이미지를 제어하는 데 가장 복잡한 측면이며 오류가 많이 발생하는 영역입니다. 다음과 같은 유용한 리소스를 참고하여 AEM에서 선명하게 하기 및 언샵 마스크가 작동하는 방식을 자세히 살펴볼 수 있습니다.
-
-우수 사례 백서 [Adobe Scene7 Publishing System 및 이미지 서버에서 이미지 선명하게 하기](/help/assets/assets/sharpening_images.pdf)도 AEM에 적용됩니다.
+<!-- Image sharpening is the most complex aspect of controlling images on your website, and where many mistakes are made. Take the time to learn more about how sharpening and unsharp masking works in AEM by referring to the [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf) guide that applies to AEM as well. -->
 
 [언샵 마스크가 있는 이미지 선명하게 하기를 참조하십시오](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
 
@@ -65,17 +59,14 @@ AEM을 사용하면 섭취, 전달 시 또는 두 가지 모두를 통해 이미
       * **[!UICONTROL radius]** (0-250, 선명하게 된 개체 주위에 그려지는 &quot;선명 효과 선&quot;의 폭(픽셀 단위로 측정됨)
 
              매개 변수 반경과 액수는 서로 연동된다는 점을 염두에 두십시오. 반경을 줄이는 것은 양을 증가시켜 보상할 수 있습니다. [반경]은 값이 낮으면 가장자리 픽셀만 선명하게 하는 반면, 값이 높으면 더 넓은 범위의 픽셀이 선명하게 됩니다.
-         * **[!UICONTROL threshold]** (0-255, 효과의 민감도)
+         
+      * **[!UICONTROL threshold]** (0-255, 효과의 민감도)
 
              이 매개 변수는 가장자리 픽셀로 간주되고 필터가 선명하게 하기 전에 선명하게 된 픽셀이 주위 영역과 얼마나 달라야 하는지를 결정합니다. **[!UICONTROL threshold]** 매개 변수는 피부 톤과 같이 유사한 색상이 있는 영역을 과도하게 선명하게 하지 않도록 하는 데 도움이 됩니다. 예를 들어 임계값 12는 &quot;노이즈&quot;를 추가하지 않도록 피부 톤 밝기에 약간의 변형을 무시하고 속눈썹이 스킨을 충족하는 경우와 같이 대비가 높은 영역에 가장자리 대비를 추가합니다.
          
-         필터와 함께 사용하는 모범 사례를 비롯하여 이러한 3개의 매개 변수를 설정하는 방법에 대한 자세한 내용은 다음 리소스를 참조하십시오.
+         <!-- For more information about how you set these three parameters, including best practices to use with the filter, see the [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf) guide (applies to Dynamic Media on AEM as well). -->
+   * AEM에서는 네 번째 매개 변수를 제어할 수도 있습니다.단색(0,1) 이 매개 변수는 값 0을 사용하여 각 색상 구성 요소에 언샵 마스킹을 개별적으로 적용할지 또는 값 1을 사용하여 이미지 밝기/강도에 적용할지를 결정합니다.
 
-         이미지 선명 효과에 대한 AEM 도움말 항목입니다.
-
-         우수 사례 백서 [Adobe Scene7 Publishing System 및 이미지 서버에서 이미지 선명하게 하기](/help/assets/assets/sharpening_images.pdf)입니다.
-
-      * AEM에서는 네 번째 매개 변수를 제어할 수도 있습니다.단색(0,1) 이 매개 변수는 값 0을 사용하여 각 색상 구성 요소에 언샵 마스킹을 개별적으로 적용할지 또는 값 1을 사용하여 이미지 밝기/강도에 적용할지를 결정합니다.
 
 언샵 마스크 반경 매개 변수로 시작하는 것이 좋습니다. 시작할 수 있는 반경 설정은 다음과 같습니다.
 
