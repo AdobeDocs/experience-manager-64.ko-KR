@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: 35dea5c6f64f13ca4b64834f98037ef8bcde393e
 workflow-type: tm+mt
-source-wordcount: '2894'
+source-wordcount: '2871'
 ht-degree: 36%
 
 ---
@@ -184,7 +184,8 @@ Dynamic Media Classic **[!UICONTROL 이미지]** 구성 요소를 사용하면 D
 
 * **[!UICONTROL 출력 형식]** 이미지의 출력 형식(예: jpeg)을 선택하십시오. 선택한 출력 형식에 따라 추가 구성 옵션이 있을 수 있습니다. [이미지 사전 설정 우수 사례](/help/assets/managing-image-presets.md#image-preset-options)를 참조하십시오.
 
-* **[!UICONTROL 선명도]** 이미지를 선명하게 하려는 방법을 선택하십시오. 선명하게 하기는 [이미지 사전 설정 우수 사례](/help/assets/managing-image-presets.md#image-preset-options) 및 [선명하게 하기 우수 사례](/help/assets/assets/sharpening_images.pdf)에 자세히 설명되어 있습니다.
+<!-- * **[!UICONTROL Sharpening]**
+Select how you want to sharpen the image. Sharpening is explained in detail in [Image Preset best practices](/help/assets/managing-image-presets.md#image-preset-options) and [Sharpening best practices](/help/assets/assets/sharpening_images.pdf). -->
 
 * **[!UICONTROL URL]**
 수정자추가 Dynamic Media Classic 이미지 명령을 제공하여 이미지 효과를 변경할 수 있습니다. 이러한 내용은 [이미지 사전 설정](/help/assets/managing-image-presets.md) 및 [명령 참조](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)에 설명되어 있습니다.
