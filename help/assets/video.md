@@ -10,9 +10,9 @@ topic-tags: Dynamic-Media
 content-type: reference
 discoiquuid: b721dc7c-b056-47f5-9489-9f4db45b68a0
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
 workflow-type: tm+mt
-source-wordcount: '10502'
+source-wordcount: '10456'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 1%
 >
 >Dynamic Media에서 비디오를 사용하여 작업하기 전에 AEM 관리자가 이미 Dynamic Media Cloud Services을 사용 가능하게 만들고 구성했는지 확인하십시오.
 >
->* Dynamic Media 구성 - 하이브리드 모드에서 Dynamic Media Cloud Services 구성을 참조하십시오.[](/help/assets/config-dynamic.md)
+>* Dynamic Media 구성 - 하이브리드 모드에서 Dynamic Media Cloud Services 구성을 참조하십시오.](/help/assets/config-dynamic.md)[
 >* [Dynamic Media 구성 - Scene7 모드](config-dms7.md) 및 [Dynamic Media 문제 해결 - Scene7 모드](troubleshoot-dms7.md)를 참조하십시오.
 
 >
@@ -46,7 +46,7 @@ ht-degree: 1%
    * 마스터 비디오를 업로드할 하나 이상의 폴더에 비디오 처리 프로필을 연결합니다.
 
       * [폴더에 비디오 프로필 적용](video-profiles.md#applying-a-video-profile-to-folders).
-      * 처리 프로필 사용[에 대한 디지털 자산을 구성하기 위한 모범 사례에 대해 자세히 알아보십시오.](organize-assets.md#organize-using-folders)
+      * 처리 프로필 사용](organize-assets.md#organize-using-folders)에 대한 디지털 자산을 구성하기 위한 모범 사례에 대해 자세히 알아보십시오.[
       * [디지털 자산 구성](organize-assets.md)에 대해 자세히 알아보십시오.
    * 폴더에 마스터 비디오를 업로드합니다. 각각 최대 15GB의 비디오 파일을 업로드할 수 있습니다. 폴더에 비디오를 추가하면 폴더에 할당된 비디오 처리 프로필에 따라 인코딩됩니다.
 
@@ -414,7 +414,7 @@ VBR 대 CBR을 선택하는 경우에는 미디어 파일에 VBR을 사용하는
    <td><p>소스</p> </td> 
    <td><p>1920x1080</p> </td> 
    <td><p>1</p> </td> 
-   <td><p>1</p> </td> 
+   <td><p>3</p> </td> 
   </tr> 
   <tr> 
    <td><p>인코딩됨</p> </td> 
@@ -426,7 +426,7 @@ VBR 대 CBR을 선택하는 경우에는 미디어 파일에 VBR을 사용하는
    <td><p>인코딩됨</p> </td> 
    <td><p>640 x 360</p> </td> 
    <td><p>3</p> </td> 
-   <td><p>1</p> </td> 
+   <td><p>3</p> </td> 
   </tr> 
   <tr> 
    <td><p>인코딩됨</p> </td> 
@@ -671,7 +671,7 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
 1. 다음을 수행하여 복사한 YouTube 개인 정보 값을 프로필에 추가합니다.
 
    * 페이지 오른쪽에서 **[!UICONTROL 양식 작성]** 탭을 누릅니다.
-   * **[!UICONTROL 섹션 헤더]**&#x200B;라는 레이블이 지정된 구성 요소를 왼쪽으로 드래그한 다음 양식 영역에 놓습니다.
+   * **[!UICONTROL 섹션 헤더]**&#x200B;라는 레이블이 있는 구성 요소를 왼쪽으로 드래그한 다음 양식 영역에 놓습니다.
    * **[!UICONTROL 필드 레이블]**&#x200B;을 눌러 구성 요소를 선택합니다.
    * 페이지 오른쪽의 설정 탭의 필드 레이블 텍스트 필드에 `YouTube Privacy`을 입력합니다.
    * **[!UICONTROL 양식 작성]** 탭을 누른 다음 **[!UICONTROL 단일 행 텍스트]**&#x200B;라는 이름의 구성 요소를 드래그하여 방금 만든 **[!UICONTROL YouTube 개인 정보 보호]** 머리글 아래에 놓습니다.
@@ -901,19 +901,13 @@ YouTube에서 콘텐츠를 제거하려면 진행 상황을 모니터링하고 �
 
 1. 상위 게시된 비디오를 나열하는 표에서 비디오 이름을 눌러 비디오를 재생하고 비디오의 대상자 유지(드롭다운) 보고서를 확인합니다.
 
-### Scene7 HTML5 뷰어 SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}를 사용하여 만든 비디오 뷰어를 기반으로 비디오 보고서 보기
+### HTML5 뷰어 SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}를 사용하여 만든 비디오 뷰어를 기반으로 비디오 보고서 보기
 
-Dynamic Media에서 제공하는 기본 비디오 뷰어를 사용하거나 기본 비디오 뷰어를 기반으로 사용자 정의 뷰어 사전 설정을 만든 경우 비디오 보고서를 보는 데 추가 단계가 필요하지 않습니다. 그러나 Scene7 HTML5 뷰어 SDK를 기반으로 자체 비디오 뷰어를 만든 경우, 다음 단계를 사용하여 비디오 뷰어가 추적 이벤트를 Dynamic Media 비디오 보고서로 전송하도록 하십시오.
+Dynamic Media에서 제공하는 기본 비디오 뷰어를 사용하거나 기본 비디오 뷰어를 기반으로 사용자 정의 뷰어 사전 설정을 만든 경우 비디오 보고서를 보는 데 추가 단계가 필요하지 않습니다. 그러나 HTML5 뷰어 SDK API를 기반으로 자체 비디오 뷰어를 만든 경우, 다음 단계를 사용하여 비디오 뷰어가 추적 이벤트를 Dynamic Media 비디오 보고서로 전송하도록 하십시오.
 
-Scene7 뷰어 참조 및 Scene7 HTML5 뷰어 SDK를 사용하여 고유한 비디오 뷰어를 만듭니다.
+[Adobe Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) 및 [HTML5 뷰어 SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)를 사용하여 고유한 비디오 뷰어를 만듭니다.
 
-[Scene7 뷰어 참조 안내서](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)를 참조하십시오.
-
-Adobe Developer Connection에서 Scene7 HTML 뷰어 SDK를 다운로드합니다.
-
-[Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html)을(를) 참조하십시오.
-
-Scene7 HTML5 뷰어 SDK를 사용하여 만든 비디오 뷰어를 기반으로 비디오 보고서를 보려면:
+HTML5 뷰어 SDK API를 사용하여 만든 비디오 뷰어를 기반으로 비디오 보고서를 보려면:
 
 1. 게시된 비디오 자산으로 이동합니다.
 1. 자산 페이지의 왼쪽 위 모서리 근처에 있는 드롭다운 목록에서 **[!UICONTROL 뷰어]**&#x200B;를 선택합니다.
@@ -940,7 +934,7 @@ Scene7 HTML5 뷰어 SDK를 사용하여 만든 비디오 뷰어를 기반으로 
 
 1. 다음을 수행하여 TrackingManager 구성 요소를 만듭니다.
 
-   * `s7sdk.Utils.init();`을(를) 호출한 후 다음을 추가하여 이벤트를 추적할 TrackingManager 인스턴스를 만듭니다.
+   * `s7sdk.Util.init();`을(를) 호출한 후 다음을 추가하여 이벤트를 추적할 TrackingManager 인스턴스를 만듭니다.
 
       `var trackingManager = new s7sdk.TrackingManager();`
 
@@ -1037,7 +1031,7 @@ URL에서 JSON 함수 사용에 대한 자세한 내용은 *Scene7 Image Serving
 >
 >사용되는 비디오 플레이어는 장 마커 사용을 지원해야 합니다. Dynamic Media 비디오 플레이어는 장(chapter) 마커를 지원하지만 제3자 비디오 플레이어를 사용하는 경우에는 지원하지 않을 수 있습니다.
 
-원하는 경우 비디오 뷰어 사전 설정을 사용하는 대신 장을 사용하여 자신만의 사용자 정의 비디오 뷰어를 만들고 브랜딩할 수 있습니다. 장 탐색을 사용하여 고유한 HTML5 뷰어를 만드는 방법에 대한 자세한 내용은 HTML5용 Adobe Scene7 Viewer SDK 안내서에서 `s7sdk.video.VideoPlayer` 및 `s7sdk.video.VideoScrubber` 클래스의 &quot;수정자를 사용하여 비헤이비어 사용자 정의&quot; 머리글을 참조하십시오. Adobe Scene7 Viewer SDK는 [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html)에서 다운로드할 수 있습니다.
+원하는 경우 비디오 뷰어 사전 설정을 사용하는 대신 장을 사용하여 자신만의 사용자 정의 비디오 뷰어를 만들고 브랜딩할 수 있습니다. 장 탐색을 사용하여 자신의 HTML5 뷰어를 만드는 방법에 대한 지침은 Adobe HTML5 뷰어 SDK API에서 `s7sdk.video.VideoPlayer` 및 `s7sdk.video.VideoScrubber` 클래스의 &quot;수정자를 사용하여 비헤이비어 사용자 정의&quot; 머리글을 참조하십시오. [HTML5 뷰어 SDK API]((https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)) 설명서를 참조하십시오.
 
 캡션을 만드는 것과 동일한 방식으로 비디오의 장 목록을 만듭니다. 즉, WebVTT 파일을 만듭니다. 그러나 이 파일은 사용 중인 WebVTT 캡션 파일과는 별도로 사용해야 합니다.캡션과 장을 하나의 WebVTT 파일로 결합할 수는 없습니다.
 
