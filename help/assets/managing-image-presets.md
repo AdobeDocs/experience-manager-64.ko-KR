@@ -7,9 +7,9 @@ topic-tags: dynamic-media
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 35dea5c6f64f13ca4b64834f98037ef8bcde393e
+source-git-commit: 9e6a7f0ec6ed921df419e626a155d0895dbaefde
 workflow-type: tm+mt
-source-wordcount: '3841'
+source-wordcount: '3849'
 ht-degree: 3%
 
 ---
@@ -391,7 +391,8 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
      <li><strong>적용 대상</strong>  - 선명하게 하지 않는 값이 각 색상이나 밝기에 적용되는지 여부를 결정합니다.</li>
     </ul>
     <div>
-      선명하게 하기는 * Adobe Dynamic Media Classic 이미지 품질 및 선명하게 하기 우수 사례</a>에 설명되어 있습니다.
+      선명하게 하기는  
+     <a href="https://experienceleague.adobe.com/doc/experience-manager-64/assets/assets/sharpening_images.pdf">Adobe Dynamic Media Classic 이미지 품질 및 선명하게 하기 우수 사례</a>.
     </div> </td>
   </tr>
   <tr>
