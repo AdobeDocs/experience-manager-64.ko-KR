@@ -1,17 +1,15 @@
 ---
 title: Dynamic Media 이미지 사전 설정 관리
 description: Dynamic Media 이미지 사전 설정에 대해 이해하고 이미지 사전 설정을 생성, 수정 및 관리하는 방법에 대해 알아봅니다.
-uuid: 087e6c32-82d5-4645-8dba-0a22c62f891f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: e401816d-eba5-4833-a3bd-e2e45bc3b19e
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: 35dea5c6f64f13ca4b64834f98037ef8bcde393e
 workflow-type: tm+mt
-source-wordcount: '3850'
+source-wordcount: '3841'
 ht-degree: 3%
 
 ---
@@ -106,31 +104,31 @@ Dynamic Media을 사용하여 AI, EPS 또는 PDF 파일에 대한 동적 변환�
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>프로세스 인수</strong></td> 
-   <td><strong>기본 설정</strong></td> 
-   <td><strong>설명</strong></td> 
+   <td><strong>프로세스 인수</strong></td>
+   <td><strong>기본 설정</strong></td>
+   <td><strong>설명</strong></td>
   </tr> 
   <tr> 
-   <td>MIME 유형</td> 
-   <td><p>application/pdf</p> <p>application/postscript</p> <p>application/illustrator<br /> </p> </td> 
-   <td>PDF 또는 Illustrator 문서로 간주되는 문서 MIME 형식 목록입니다.<br /> </td> 
+   <td>MIME 유형</td>
+   <td><p>application/pdf</p> <p>application/postscript</p> <p>application/illustrator<br/> </p> </td>
+   <td>PDF 또는 Illustrator 문서로 간주되는 문서 MIME 형식 목록입니다.<br/> </td>
   </tr> 
   <tr> 
-   <td>최대 너비</td> 
-   <td>2048년</td> 
-   <td>생성된 미리 보기 변환의 최대 폭(픽셀 단위)입니다.<br /> </td> 
+   <td>최대 너비</td>
+   <td>2048년</td>
+   <td>생성된 미리 보기 변환의 최대 폭(픽셀 단위)입니다.<br/> </td>
   </tr> 
   <tr> 
-   <td>최대 높이</td> 
-   <td>2048년</td> 
-   <td>생성된 미리 보기 변환의 최대 높이(픽셀 단위)입니다.<br /> </td> 
+   <td>최대 높이</td>
+   <td>2048년</td>
+   <td>생성된 미리 보기 변환의 최대 높이(픽셀 단위)입니다.<br/> </td>
   </tr> 
   <tr> 
-   <td>해상도</td> 
-   <td>72</td> 
-   <td>첫 번째 페이지를 래스터화하는 해상도(ppi(인치당 픽셀 수).</td> 
-  </tr> 
- </tbody> 
+   <td>해상도</td>
+   <td>72</td>
+   <td>첫 번째 페이지를 래스터화하는 해상도(ppi(인치당 픽셀 수).</td>
+  </tr>
+ </tbody>
 </table>
 
 기본 프로세스 인수를 사용하여 PDF/AI 문서의 첫 번째 페이지는 72ppi로 래스터화되며 생성된 미리 보기 이미지의 크기는 2048 x 2048픽셀입니다. 일반적인 배포의 경우 해상도를 최소 150ppi 이상으로 높일 수 있습니다. 예를 들어 미국 문자 크기 문서(300ppi)의 경우 각각 2550 x 3300픽셀의 최대 너비와 높이가 필요합니다.
@@ -158,24 +156,24 @@ InDesign 파일의 경우, Adobe InDesign 서버가 AEM과 통합된 경우에�
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>스크립트 이름 확장</strong></td> 
-   <td><strong>기본값</strong></td> 
-   <td><strong>설명</strong></td> 
+   <td><strong>스크립트 이름 확장</strong></td>
+   <td><strong>기본값</strong></td>
+   <td><strong>설명</strong></td>
   </tr> 
   <tr> 
-   <td>ThumbnailExport.jsx</td> 
-   <td>예</td> 
-   <td>최적화된 300ppi <code>thumbnail.jpg</code> 변환을 생성하여 <code>Dynamic Media Process Image Assets</code> 프로세스 구성 요소에 의해 PTIFF 변환으로 변환합니다.<br /> </td> 
+   <td>ThumbnailExport.jsx</td>
+   <td>예</td>
+   <td>최적화된 300ppi <code>thumbnail.jpg</code> 변환을 생성하여 <code>Dynamic Media Process Image Assets</code> 프로세스 구성 요소에 의해 PTIFF 변환으로 변환합니다.<br/> </td>
   </tr> 
   <tr> 
    <td>JPEGPagesExport.jsx</td> 
    <td>예</td> 
-   <td>각 페이지에 대해 300ppi JPEG 하위 자산을 생성합니다. JPEG 하위 자산은 InDesign 자산 아래에 저장된 실제 자산입니다. 또한 최적화되어 <code>DAM Update Asset</code> 작업 과정에 의해 PTIFF로 전환됩니다.<br /> </td> 
+   <td>각 페이지에 대해 300ppi JPEG 하위 자산을 생성합니다. JPEG 하위 자산은 InDesign 자산 아래에 저장된 실제 자산입니다. 또한 최적화되어 <code>DAM Update Asset</code> 작업 과정에 의해 PTIFF로 전환됩니다.<br/> </td>
   </tr> 
   <tr> 
-   <td>PDFPagesExport.jsx</td> 
-   <td>아니오</td> 
-   <td>각 페이지에 대한 PDF 하위 자산을 생성합니다. PDF 하위 자산이 앞에서 설명한 대로 처리됩니다. PDF에는 단일 페이지만 포함되어 있으므로 하위 자산이 생성되지 않습니다.<br /> </td> 
+   <td>PDFPagesExport.jsx</td>
+   <td>아니오</td>
+   <td>각 페이지에 대한 PDF 하위 자산을 생성합니다. PDF 하위 자산이 앞에서 설명한 대로 처리됩니다. PDF에는 단일 페이지만 포함되어 있으므로 하위 자산이 생성되지 않습니다.<br/> </td>
   </tr> 
  </tbody> 
 </table>
@@ -297,136 +295,135 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>필드</strong></td> 
-   <td><strong>설명</strong></td> 
+   <td><strong>필드</strong></td>
+   <td><strong>설명</strong></td>
   </tr> 
   <tr> 
-   <td><strong>이름</strong></td> 
-   <td>공백 없이 수사적 이름을 입력합니다. 사용자가 이미지 사전 설정을 식별하는 데 도움이 되도록 이름에 이미지 크기 사양을 포함해야 합니다.</td> 
+   <td><strong>이름</strong></td>
+   <td>공백 없이 수사적 이름을 입력합니다. 사용자가 이미지 사전 설정을 식별하는 데 도움이 되도록 이름에 이미지 크기 사양을 포함해야 합니다.</td>
+  </tr>
+  <tr> 
+   <td><strong>폭과 높이</strong></td>
+   <td>이미지가 전달되는 크기의 픽셀을 입력합니다. 너비와 높이는 0픽셀보다 커야 합니다. 값이 0이면 사전 설정이 만들어지지 않습니다. 두 값이 모두 비어 있으면 응답형 이미지 사전 설정이 만들어집니다.</td>
   </tr> 
   <tr> 
-   <td><strong>폭과 높이</strong></td> 
-   <td>이미지가 전달되는 크기의 픽셀을 입력합니다. 너비와 높이는 0픽셀보다 커야 합니다. 값이 0이면 사전 설정이 만들어지지 않습니다. 두 값이 모두 비어 있으면 응답형 이미지 사전 설정이 만들어집니다.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>형식</strong></td> 
-   <td><p>메뉴에서 형식을 선택합니다.</p> <p><strong>JPEG</strong>을 선택하면 다음과 같은 추가 옵션이 제공됩니다.</p> 
+   <td><strong>형식</strong></td>
+   <td><p>메뉴에서 형식을 선택합니다.</p> <p><strong>JPEG</strong>을 선택하면 다음과 같은 추가 옵션이 제공됩니다.</p>
     <ul> 
      <li><strong>품질</strong>  - JPEG 압축 수준을 제어합니다. 이 설정은 파일 크기와 이미지 품질에 모두 영향을 줍니다. JPEG 품질 척도는 1-100입니다. 슬라이더를 드래그하면 비율이 표시됩니다.</li> 
-     <li><strong>JPG 색차 다운샘플링</strong>  활성화 - 눈은 고주파 광도보다 고주파 색상 정보에 덜 민감하므로 JPEG 이미지는 이미지 정보를 광도 및 색상 구성 요소로 나눕니다. JPEG 이미지가 압축되면 광도 구성 요소가 전체 해상도로 남아 있고 색상 구성 요소는 픽셀 그룹을 평균화하여 다운샘플링됩니다. 다운샘플링은 인지된 품질에 거의 영향을 주지 않으면서 데이터 볼륨을 1/2 또는 1/3만큼 감소시킵니다. 다운샘플링은 회색 음영 이미지에는 적용되지 않습니다. 이 방법은 대비가 높은 이미지(예: 텍스트가 넘치는 이미지)에 유용합니다.</li> 
+     <li><strong>JPG 색차 다운샘플링</strong>  활성화 - 눈은 고주파 광도보다 고주파 색상 정보에 덜 민감하므로 JPEG 이미지는 이미지 정보를 광도 및 색상 구성 요소로 나눕니다. JPEG 이미지가 압축되면 광도 구성 요소가 전체 해상도로 남아 있고 색상 구성 요소는 픽셀 그룹을 평균화하여 다운샘플링됩니다. 다운샘플링은 인지된 품질에 거의 영향을 주지 않으면서 데이터 볼륨을 1/2 또는 1/3만큼 감소시킵니다. 다운샘플링은 회색 음영 이미지에는 적용되지 않습니다. 이 방법은 대비가 높은 이미지(예: 텍스트가 넘치는 이미지)에 유용합니다.</li>
+    </ul>
+    <div>
+      선택
+     <strong>GIF</strong> 또는
+     <strong>알파</strong>가 있는 GIF는 다음과 같은 추가 정보를 제공합니다.
+     <strong>GIF 색상 양자화</strong> 옵션:
+    </div>
+    <ul> 
+     <li><strong>유형  </strong>-  <strong>적응형</strong> (기본값),  <strong>웹</strong> 또는  <strong>Macintosh</strong> 선택 <strong>GIF with Alpha</strong>를 선택하면 Macintosh 옵션을 사용할 수 없습니다.</li>
+     <li><strong>디더</strong>  -  <strong></strong> 디퓨저 또는  <strong>꺼짐을 선택합니다</strong>.</li>
+     <li><strong>색상 수  </strong>- 2와 256 사이의 숫자를 입력합니다.</li>
+     <li><strong>색상 목록</strong>  - 쉼표로 구분된 목록을 입력합니다. 예를 들어, 흰색, 회색 및 검정의 경우 00000,88888,ffffff를 입력합니다.</li>
     </ul> 
     <div>
-      선택 
-     <strong>GIF</strong> 또는 
-     <strong>알파</strong>가 있는 GIF는 다음과 같은 추가 정보를 제공합니다. 
-     <strong>GIF 색상 양자화</strong> 옵션: 
-    </div> 
-    <ul> 
-     <li><strong>유형  </strong>-  <strong>적응형</strong> (기본값),  <strong>웹</strong> 또는  <strong>Macintosh</strong> 선택 <strong>GIF with Alpha</strong>를 선택하면 Macintosh 옵션을 사용할 수 없습니다.</li> 
-     <li><strong>디더</strong>  -  <strong></strong> 디퓨저 또는  <strong>꺼짐을 선택합니다</strong>.</li> 
-     <li><strong>색상 수  </strong>- 2와 256 사이의 숫자를 입력합니다.</li> 
-     <li><strong>색상 목록</strong>  - 쉼표로 구분된 목록을 입력합니다. 예를 들어, 흰색, 회색 및 검정의 경우 00000,88888,ffffff를 입력합니다.</li> 
-    </ul> 
-    <div>
-      선택 
-     <strong>PDF</strong>, 
-     <strong>TIFF</strong> 또는 
-     <strong>알파</strong>가 포함된 TIFF는 다음 추가 옵션을 제공합니다. 
-    </div> 
-    <ul> 
-     <li><strong>압축</strong>  - 압축 알고리즘을 선택합니다. PDF에 대한 알고리즘 옵션은 <strong>없음</strong>, <strong>Zip</strong> 및 <strong>Jpeg</strong>;입니다.TIFF의 경우 <strong>없음</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> 및 <strong>Zip</strong>;및 알파가 있는 TIFF의 경우 <strong>없음</strong>, <strong>LZW</strong> 및 <strong>Zip</strong>입니다.</li> 
-    </ul> <p><strong>PNG</strong>, <strong>알파 포함 PNG,</strong> 또는 <strong>EPS</strong>를 선택하면 추가 옵션이 없습니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>선명하게 하기</strong></td> 
-   <td>모든 크기 조절이 수행된 후 이미지에 기본 선명하게 하기 필터를 적용하려면 <strong>단순 선명하게 하기 사용</strong> 옵션을 선택합니다.선명하게 하기를 사용하면 이미지를 다른 크기로 표시할 때 흐림 효과를 보상할 수 있습니다. </td> 
-  </tr> 
- </tbody> 
+      선택
+     <strong>PDF</strong>,
+     <strong>TIFF</strong> 또는
+     <strong>알파</strong>가 포함된 TIFF는 다음 추가 옵션을 제공합니다.
+    </div>
+    <ul>
+     <li><strong>압축</strong>  - 압축 알고리즘을 선택합니다. PDF에 대한 알고리즘 옵션은 <strong>없음</strong>, <strong>Zip</strong> 및 <strong>Jpeg</strong>;입니다.TIFF의 경우 <strong>없음</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> 및 <strong>Zip</strong>;및 알파가 있는 TIFF의 경우 <strong>없음</strong>, <strong>LZW</strong> 및 <strong>Zip</strong>입니다.</li>
+    </ul> <p><strong>PNG</strong>, <strong>알파 포함 PNG,</strong> 또는 <strong>EPS</strong>를 선택하면 추가 옵션이 없습니다.</p> </td>
+  </tr>
+  <tr>
+   <td><strong>선명하게 하기</strong></td>
+   <td>모든 크기 조절이 수행된 후 이미지에 기본 선명하게 하기 필터를 적용하려면 <strong>단순 선명하게 하기 사용</strong> 옵션을 선택합니다.선명하게 하기를 사용하면 이미지를 다른 크기로 표시할 때 흐림 효과를 보상할 수 있습니다. </td>
+  </tr>
+ </tbody>
 </table>
 
 #### 고급 탭 옵션 {#advanced-tab-options}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>필드</strong></td> 
-   <td><strong>설명</strong></td> 
-  </tr> 
-  <tr> 
-   <td><strong>색상 공간</strong></td> 
-   <td>색상 공간에 대해 <strong>RGB, CMYK,</strong> 또는 <strong>회색 음영</strong>을 선택합니다.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>색상 프로필</strong></td> 
-   <td>작업 프로필과 다른 경우 에셋을 변환할 출력 색상 공간 프로파일을 선택합니다.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>렌더링 의도</strong></td> 
-   <td>기본 렌더링 의도를 재정의할 수 있습니다. 렌더링 의도는 대상 색상 프로파일(색상 영역 외)에서 재현할 수 없는 색상에 대해 결정됩니다. 렌더링 의도가 ICC 프로파일과 호환되지 않으면 무시됩니다. 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>필드</strong></td>
+   <td><strong>설명</strong></td>
+  </tr>
+  <tr>
+   <td><strong>색상 공간</strong></td>
+   <td>색상 공간에 대해 <strong>RGB, CMYK,</strong> 또는 <strong>회색 음영</strong>을 선택합니다.</td>
+  </tr>
+  <tr>
+   <td><strong>색상 프로필</strong></td>
+   <td>작업 프로필과 다른 경우 에셋을 변환할 출력 색상 공간 프로파일을 선택합니다.</td>
+  </tr>
+  <tr>
+   <td><strong>렌더링 의도</strong></td>
+   <td>기본 렌더링 의도를 재정의할 수 있습니다. 렌더링 의도는 대상 색상 프로파일(색상 영역 외)에서 재현할 수 없는 색상에 대해 결정됩니다. 렌더링 의도가 ICC 프로파일과 호환되지 않으면 무시됩니다.
     <ul> 
-     <li>원본 이미지의 하나 이상의 색상이 대상 색상 공간의 색상 영역을 벗어날 때 한 색상 공간의 전체 색상 영역을 다른 색상 공간으로 압축하려면 <strong>가시 범위</strong>를 선택합니다.</li> 
-     <li>현재 색상 공간의 색상이 대상 색상 공간의 색상 영역을 벗어나서 다른 색상에 영향을 주지 않고 대상 색상 공간의 색상 영역 내에서 가능한 가장 가까운 색상으로 매핑하려는 경우 <strong>상대 색도계</strong>를 선택합니다. </li> 
-     <li>대상 색상 공간으로 변환할 때 원본 이미지 색상 채도를 재현하려면 <strong>채도</strong>를 선택합니다. </li> 
-     <li>이미지의 밝기를 변경하는 흰색 점 또는 검은 점을 조정하지 않고 색상을 정확하게 일치시키려면 <strong>절대 색도계</strong>를 선택합니다.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>검은 점 보상</strong></td> 
-   <td>출력 프로파일이 이 기능을 지원하는 경우 이 옵션을 선택합니다. 블랙포인트 보정이 지정된 ICC 프로파일과 호환되지 않으면 무시됩니다.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>디더링</strong></td> 
-   <td>색상 밴딩 아티팩트를 방지하거나 줄이려면 이 옵션을 선택합니다. </td> 
-  </tr> 
-  <tr> 
-   <td><strong>선명하게 하기 유형</strong></td> 
-   <td><p><strong>없음</strong>, <strong>선명 효과</strong> 또는 <strong>언샵 마스크</strong>를 선택합니다. </p> 
+     <li>원본 이미지의 하나 이상의 색상이 대상 색상 공간의 색상 영역을 벗어날 때 한 색상 공간의 전체 색상 영역을 다른 색상 공간으로 압축하려면 <strong>가시 범위</strong>를 선택합니다.</li>
+     <li>현재 색상 공간의 색상이 대상 색상 공간의 색상 영역을 벗어나서 다른 색상에 영향을 주지 않고 대상 색상 공간의 색상 영역 내에서 가능한 가장 가까운 색상으로 매핑하려는 경우 <strong>상대 색도계</strong>를 선택합니다. </li>
+     <li>대상 색상 공간으로 변환할 때 원본 이미지 색상 채도를 재현하려면 <strong>채도</strong>를 선택합니다. </li>
+     <li>이미지의 밝기를 변경하는 흰색 점 또는 검은 점을 조정하지 않고 색상을 정확하게 일치시키려면 <strong>절대 색도계</strong>를 선택합니다.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><strong>검은 점 보상</strong></td>
+   <td>출력 프로파일이 이 기능을 지원하는 경우 이 옵션을 선택합니다. 블랙포인트 보정이 지정된 ICC 프로파일과 호환되지 않으면 무시됩니다.</td>
+  </tr>
+  <tr>
+   <td><strong>디더링</strong></td>
+   <td>색상 밴딩 아티팩트를 방지하거나 줄이려면 이 옵션을 선택합니다. </td>
+  </tr>
+  <tr>
+   <td><strong>선명하게 하기 유형</strong></td>
+   <td><p><strong>없음</strong>, <strong>선명 효과</strong> 또는 <strong>언샵 마스크</strong>를 선택합니다. </p>
+    <ul>
+     <li>선명하게 하기를 비활성화하려면 <strong>없음</strong>을 선택합니다.</li>
+     <li>모든 크기 조정이 발생한 후 이미지에 기본 선명하게 하기 필터를 적용하려면 <strong>선명 효과 </strong>를 선택합니다. 선명하게 하기를 사용하면 이미지를 다른 크기로 표시할 때 흐림 효과를 보상할 수 있습니다. </li>
+     <li>최종 다운샘플링된 이미지에서 선명하게 하기 필터 효과를 미세 조정하려면 <strong> 언샵 마스크</strong>를 선택합니다. 무시되는 효과의 강도, 효과의 반경(픽셀 단위) 및 대비 임계값을 제어할 수 있습니다. 이 효과는 Photoshop의 "언샵 마스크" 필터와 동일한 옵션을 사용합니다.</li>
+    </ul> <p><strong>언샵 마스크</strong>에는 다음 옵션이 있습니다.</p>
     <ul> 
-     <li>선명하게 하기를 비활성화하려면 <strong>없음</strong>을 선택합니다.</li> 
-     <li>모든 크기 조정이 발생한 후 이미지에 기본 선명하게 하기 필터를 적용하려면 <strong>선명 효과 </strong>를 선택합니다. 선명하게 하기를 사용하면 이미지를 다른 크기로 표시할 때 흐림 효과를 보상할 수 있습니다. </li> 
-     <li>최종 다운샘플링된 이미지에서 선명하게 하기 필터 효과를 미세 조정하려면 <strong> 언샵 마스크</strong>를 선택합니다. 무시되는 효과의 강도, 효과의 반경(픽셀 단위) 및 대비 임계값을 제어할 수 있습니다. 이 효과는 Photoshop의 "언샵 마스크" 필터와 동일한 옵션을 사용합니다.</li> 
-    </ul> <p><strong>언샵 마스크</strong>에는 다음 옵션이 있습니다.</p> 
-    <ul> 
-     <li><strong>양</strong>  - 가장자리 픽셀에 적용되는 대비 양을 제어합니다. 기본 실제 숫자 값은 1.0입니다. 고해상도 이미지의 경우 최대 5.0까지 늘릴 수 있습니다. 필터 강도 측정값으로 [양]을 생각해 보십시오.</li> 
-     <li><strong>반경</strong>  - 선명하게 하기에 영향을 주는 가장자리 픽셀을 둘러싼 픽셀 수를 결정합니다. 고해상도 이미지의 경우 1부터 2까지의 실수를 입력합니다. 낮은 값은 가장자리 픽셀만 선명하게 합니다.값이 높으면 더 넓은 범위의 픽셀이 선명하게 됩니다. 올바른 값은 이미지 크기에 따라 달라집니다.</li> 
-     <li><strong>임계값</strong>  - 언샵 마스크 필터가 적용될 때 무시할 대비 범위를 결정합니다. 즉, 이 옵션은 가장자리 픽셀로 간주하여 선명하게 하기 전에 선명하게 된 픽셀이 주위 영역과 얼마나 달라야 하는지를 결정합니다. 노이즈가 발생하지 않도록 2에서 20 사이의 정수 값을 실험해 봅니다. </li> 
-     <li><strong>적용 대상</strong>  - 선명하게 하지 않는 값이 각 색상이나 밝기에 적용되는지 여부를 결정합니다.</li> 
-    </ul> 
+     <li><strong>양</strong>  - 가장자리 픽셀에 적용되는 대비 양을 제어합니다. 기본 실제 숫자 값은 1.0입니다. 고해상도 이미지의 경우 최대 5.0까지 늘릴 수 있습니다. 필터 강도 측정값으로 [양]을 생각해 보십시오.</li>
+     <li><strong>반경</strong>  - 선명하게 하기에 영향을 주는 가장자리 픽셀을 둘러싼 픽셀 수를 결정합니다. 고해상도 이미지의 경우 1부터 2까지의 실수를 입력합니다. 낮은 값은 가장자리 픽셀만 선명하게 합니다.값이 높으면 더 넓은 범위의 픽셀이 선명하게 됩니다. 올바른 값은 이미지 크기에 따라 달라집니다.</li>
+     <li><strong>임계값</strong>  - 언샵 마스크 필터가 적용될 때 무시할 대비 범위를 결정합니다. 즉, 이 옵션은 가장자리 픽셀로 간주하여 선명하게 하기 전에 선명하게 된 픽셀이 주위 영역과 얼마나 달라야 하는지를 결정합니다. 노이즈가 발생하지 않도록 2에서 20 사이의 정수 값을 실험해 봅니다. </li>
+     <li><strong>적용 대상</strong>  - 선명하게 하지 않는 값이 각 색상이나 밝기에 적용되는지 여부를 결정합니다.</li>
+    </ul>
     <div>
-      선명하게 하기는 
-     <a href="https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/assets/sharpening_images.pdf">이미지 선명하게 하기</a>. 
-    </div> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>리샘플링 모드</strong></td> 
-   <td><strong>리샘플링 모드</strong> 옵션을 선택합니다. 이러한 옵션은 이미지를 다운샘플링할 때 이미지를 선명하게 합니다. 
-    <ul> 
-     <li><strong>Bi-Linear</strong>  - 가장 빠른 리샘플링 방법입니다.일부 앨리어싱 가공물은 눈에 잘 띈다.</li> 
-     <li><strong>Bi-Cubic</strong>  - CPU 사용을 증가시키지만 앨리어싱 가공물이 적은 경우 더 선명한 이미지를 생성합니다.</li> 
-     <li><strong>Sharp2</strong>  - Bi-Cubic보다 약간 더 선명하게 결과를 생성할 수 있지만 CPU 비용이 훨씬 높습니다.</li> 
-     <li><strong>Bi-Sharp</strong> - 이미지 크기를 줄이기 위해 Photoshop 기본 리샘플러를 선택하는데, 이 <strong>는 쌍입방 </strong> 공유 영역이라고 합니다.</li> 
-     <li><strong>각 </strong> 색상 및  <strong>밝기</strong>  - 각 방법은 색상 또는 밝기를 기반으로 할 수 있습니다. 기본적으로 <strong>각 색상</strong>이 선택됩니다.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>인쇄 해상도</strong></td> 
-   <td>이 이미지 인쇄를 위한 해상도를 선택하십시오.기본값은 72픽셀입니다.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>이미지 수정자</strong></td> 
-   <td><p>UI에서 사용할 수 있는 일반적인 이미지 설정 외에도 Dynamic Media은 <strong>이미지 수정자</strong> 필드에서 지정할 수 있는 다양한 고급 이미지 수정을 지원합니다. 이러한 매개 변수는 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">이미지 서버 프로토콜 명령 참조</a>에 정의됩니다.</p> <p>중요:API에 나열된 다음 기능은 지원되지 않습니다.</p> 
-    <ul> 
-     <li>기본 템플릿 및 텍스트 렌더링 명령:<code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> 및 <code>textPs=</code></li> 
-     <li>현지화 명령:<code>locale=</code> 및 <code>req=xlate</code></li> 
-     <li><code>req=set</code> 은(는) 일반적인 사용에 사용할 수 없습니다.</li> 
-     <li><code>req=mbrset</code></li> 
-     <li><code>req=saveToFile</code></li> 
-     <li><code>req=targets</code></li> 
-     <li><code>template=</code></li> 
-     <li>비코어 Dynamic Media 서비스:SVG, 이미지 렌더링 및 Web-to-Print</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+      선명하게 하기는 * Adobe Dynamic Media Classic 이미지 품질 및 선명하게 하기 우수 사례</a>에 설명되어 있습니다.
+    </div> </td>
+  </tr>
+  <tr>
+   <td><strong>리샘플링 모드</strong></td>
+   <td><strong>리샘플링 모드</strong> 옵션을 선택합니다. 이러한 옵션은 이미지를 다운샘플링할 때 이미지를 선명하게 합니다.
+    <ul>
+     <li><strong>Bi-Linear</strong>  - 가장 빠른 리샘플링 방법입니다.일부 앨리어싱 가공물은 눈에 잘 띈다.</li>
+     <li><strong>Bi-Cubic</strong>  - CPU 사용을 증가시키지만 앨리어싱 가공물이 적은 경우 더 선명한 이미지를 생성합니다.</li>
+     <li><strong>Sharp2</strong>  - Bi-Cubic보다 약간 더 선명하게 결과를 생성할 수 있지만 CPU 비용이 훨씬 높습니다.</li>
+     <li><strong>Bi-Sharp</strong> - 이미지 크기를 줄이기 위해 Photoshop 기본 리샘플러를 선택하는데, 이 <strong>는 쌍입방 </strong> 공유 영역이라고 합니다.</li>
+     <li><strong>각 </strong> 색상 및  <strong>밝기</strong>  - 각 방법은 색상 또는 밝기를 기반으로 할 수 있습니다. 기본적으로 <strong>각 색상</strong>이 선택됩니다.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><strong>인쇄 해상도</strong></td>
+   <td>이 이미지 인쇄를 위한 해상도를 선택하십시오.기본값은 72픽셀입니다.</td>
+  </tr>
+  <tr>
+   <td><strong>이미지 수정자</strong></td>
+   <td><p>UI에서 사용할 수 있는 일반적인 이미지 설정 외에도 Dynamic Media은 <strong>이미지 수정자</strong> 필드에서 지정할 수 있는 다양한 고급 이미지 수정을 지원합니다. 이러한 매개 변수는 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">이미지 서버 프로토콜 명령 참조</a>에 정의됩니다.</p> <p>중요:API에 나열된 다음 기능은 지원되지 않습니다.</p>
+    <ul>
+     <li>기본 템플릿 및 텍스트 렌더링 명령:<code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> 및 <code>textPs=</code></li>
+     <li>현지화 명령:<code>locale=</code> 및 <code>req=xlate</code></li>
+     <li><code>req=set</code> 은(는) 일반적인 사용에 사용할 수 없습니다.</li>
+     <li><code>req=mbrset</code></li>
+     <li><code>req=saveToFile</code></li>
+     <li><code>req=targets</code></li>
+     <li><code>template=</code></li>
+     <li>비코어 Dynamic Media 서비스:SVG, 이미지 렌더링 및 Web-to-Print</li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## 이미지 수정자가 {#defining-image-preset-options-with-image-modifiers}인 이미지 사전 설정 옵션 정의
@@ -508,9 +505,6 @@ Dynamic Media - Scene7 모드를 실행 중인 경우 이미지 사전 설정이
 
 ## Dynamic Media 이미지 사전 설정 삭제 중 {#deleting-image-presets}
 
-**Dynamic Media 이미지 사전 설정을 삭제하려면 다음을 수행하십시오**.
-
 1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스합니다.
 1. **[!UICONTROL 도구]** 아이콘을 누른 다음 **[!UICONTROL 자산 > 이미지 사전 설정]**&#x200B;으로 이동합니다.
 1. 사전 설정을 선택한 다음 **[!UICONTROL 삭제]**&#x200B;를 누릅니다. Dynamic Media에서 삭제할 것임을 확인합니다. **[!UICONTROL 삭제]**&#x200B;를 누릅니다.
-
