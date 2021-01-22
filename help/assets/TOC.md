@@ -5,12 +5,12 @@ solution: Experience Manager, Experience Manager Assets
 audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
-user-guide-description: 디지털 자산을 생성, 관리, 게재 및 최적화합니다.
+user-guide-description: 디지털 자산 제작, 관리, 배달 및 최적화
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 65%
+source-wordcount: '723'
+ht-degree: 67%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 65%
    + [Dynamic Media 이미지 프로필](image-profiles.md)
    + [스마트 이미징](imaging-faq.md)
    + [비디오](s7-video.md)
-   + [Scene7 기능을 페이지에 추가](scene7.md)
+   + [페이지에 Dynamic Media Classic 기능 추가](scene7.md)
    + [컨텐츠의 HTTP2 전달](http2.md)
    + [Dynamic Media 자산 제공](delivering-dynamic-media-assets.md)
    + [Dynamic Media에서 핫링크 보호 활성화](hotlink-protection.md)
@@ -109,9 +109,9 @@ ht-degree: 65%
    + [메타데이터 프로필](metadata-profiles.md)
    + [자산의 Digital Rights Management](drm.md)
    + [자산 인사이트를 위한 데모 패키지 사용](touch-ui-using-demo-package-for-asset-insights.md)
-   + [자산 오프로딩 우수 사례](assets-offloading-best-practices.md)
+   + [Assets 오프로딩 우수 사례](assets-offloading-best-practices.md)
    + [자산 파일 형식 우수 사례](assets-file-format-best-practices.md)
-   + [자산 모니터링 우수 사례](assets-monitoring-best-practices.md)
+   + [Assets 모니터링 우수 사례](assets-monitoring-best-practices.md)
    + [Camera Raw 지원](camera-raw.md)
    + [Apache Tika를 사용하여 MIME 유형의 자산 탐지](detect-asset-mime-type-with-tika.md)
    + [이미징 코드 변환 라이브러리](imaging-transcoding-library.md)
@@ -121,7 +121,7 @@ ht-degree: 65%
    + [원본에 쓰기](watermarking.md)
    + [일괄 메타데이터 가져오기 및 내보내기](metadata-import-export.md)
    + [자산 템플릿](asset-templates.md)
-   + [AEM에서 Creative Cloud으로 폴더 공유 우수 사례](aem-cc-folder-sharing-best-practices.md)
+   + [AEM에서 Creative Cloud로의 폴더 공유 우수 사례](aem-cc-folder-sharing-best-practices.md)
    + [폴더 메타데이터 스키마](folder-metadata-schema.md)
    + [스마트 태그 관리](managing-smart-tags.md)
 + 브랜드 포털 {#brandportal}
