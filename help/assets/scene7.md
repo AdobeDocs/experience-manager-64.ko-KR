@@ -1,18 +1,14 @@
 ---
 title: 페이지에 Dynamic Media Classic 기능 추가
-seo-title: 페이지에 Dynamic Media Classic 기능 추가
-description: AEM 페이지에 Dynamic Media Classic 기능 및 구성 요소를 추가하는 방법을 알아봅니다.
-seo-description: AEM 페이지에 Dynamic Media Classic 기능 및 구성 요소를 추가하는 방법을 알아봅니다.
-uuid: aa5a4735-bfec-43b8-aec0-a0c32bff134f
+description: Dynamic Media Classic 구성 요소에 대한 자세한 내용과 AEM 페이지에 구성 요소를 추가하는 방법에 대해 알아보십시오.
 contentOwner: Alva Ware-Bevacqui
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 topic-tags: managing-assets
-discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: 28e552f065d38225226d757c0af00d86d9ed8e07
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '2894'
+source-wordcount: '2873'
 ht-degree: 36%
 
 ---
