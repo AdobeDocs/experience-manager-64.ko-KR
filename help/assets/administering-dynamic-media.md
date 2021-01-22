@@ -8,9 +8,9 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 translation-type: tm+mt
-source-git-commit: 9b6c1efe1f6281892648c7b41820856d2e3fcac1
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '274'
 ht-degree: 12%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->이 설명서는 AEM에 직접 통합된 Dynamic Media 기능에 대해 설명합니다. AEM에 통합된 Dynamic Media Classic(이전의 Scene7)을 사용하는 경우 [Dynamic Media Classic 통합 문서](/help/sites-administering/scene7.md)를 참조하십시오.
+>이 설명서는 AEM에 직접 통합된 Dynamic Media 기능에 대해 설명합니다. AEM에 통합된 Dynamic Media Classic을 사용하는 경우 [Dynamic Media Classic 통합 문서](/help/sites-administering/scene7.md)를 참조하십시오.
 >
 >Dynamic Media과 함께 Dynamic Media Classic에 통합된 AEM을 사용하고 싶은 경우 [이중 사용 시나리오](/help/sites-administering/scene7.md#dual-use-scenario)을 참조하십시오.
 
