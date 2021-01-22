@@ -1,18 +1,14 @@
 ---
 title: Dynamic Media 뷰어 사전 설정 적용
-seo-title: Dynamic Media 뷰어 사전 설정 적용
-description: Dynamic Media에서 뷰어 사전 설정을 적용하는 방법 알아보기
-seo-description: Dynamic Media에서 뷰어 사전 설정을 적용하는 방법 알아보기
-uuid: cebad000-2bda-4e62-a0d1-7155151daf6c
+description: 관리자가 만든 뷰어 사전 설정을 Dynamic Media의 자산에 적용하는 방법을 알아봅니다.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
