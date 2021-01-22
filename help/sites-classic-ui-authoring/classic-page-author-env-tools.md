@@ -10,7 +10,7 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 278195a6-3452-4966-9d56-022815cf6fb4
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 87%
@@ -61,7 +61,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 * [이미지](#finding-images)
 * [문서](#finding-documents)
 * [동영상](#finding-movies)
-* [Scene 7 미디어 브라우저](/help/sites-administering/scene7.md#scene7contentbrowser)
+* [Dynamic Media 브라우저](/help/sites-administering/scene7.md#scene7contentbrowser)
 * [페이지](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#finding-pages)
 * [단락](#referencing-paragraphs-from-other-pages)
 * [제품](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#products)
