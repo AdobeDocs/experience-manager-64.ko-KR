@@ -1,18 +1,14 @@
 ---
 title: 우수 사례
-seo-title: 우수 사례
-description: Adobe 엔지니어링 및 컨설팅 팀이 컴파일한 최상의 작업 방법을 찾아 관리자가 원활하게 작업을 시작할 수 있도록 돕습니다.
-seo-description: Adobe 엔지니어링 및 컨설팅 팀이 컴파일한 최상의 작업 방법을 찾아 관리자가 원활하게 작업을 시작할 수 있도록 돕습니다.
-uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
+description: 관리자가 쉽게 시작할 수 있도록 Adobe 엔지니어링 및 컨설팅 팀이 컴파일한 Adobe Experience Manager 모범 사례에 대해 알아보십시오.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 translation-type: tm+mt
-source-git-commit: 24ad9e522eeaf2653e80166946636b9fc78bc401
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '537'
 ht-degree: 21%
 
 ---
@@ -52,8 +48,8 @@ Dynamic Media 기능 및 Dynamic Media Classic 통합을 비롯한 자산에 대
    <td>처리 프로필의 대부분은 비디오, 메타데이터 및 이미지 처리가 항상 폴더에 적용되므로 폴더 기반입니다. 이 우수 사례 문서에서는 계층 구조가 컨텐츠의 처리 방법에 상당한 영향을 주므로 폴더 계층 구조를 정의하고 설정하는 방법에 대해 설명합니다. </td> 
   </tr>
   <tr>
-   <td>Scene7 및 AEM 통합</td> 
-   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">AEM과 Scene7 통합을 위한 모범 사례</a></td> 
+   <td>Dynamic Media Classic 및 AEM 통합</td> 
+   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Dynamic Media Classic과 AEM 통합을 위한 모범 사례</a></td> 
    <td><p>폴링 가져오기 기능을 켜는 시기, 통합을 테스트하는 방법, 컨텐츠 브라우저를 사용하는 시기 및 자산에 직접 업로드하는 시기를 설명합니다.</p> </td> 
   </tr>
   <tr>
@@ -62,8 +58,8 @@ Dynamic Media 기능 및 Dynamic Media Classic 통합을 비롯한 자산에 대
    <td><a href="/help/assets/managing-image-presets.md">이미지 사전 설정 관리</a>에 대한 설명서의 일부로서 이러한 항목에서는 이미지 사전 설정이 무엇이고 이미지 사전 설정 옵션 선택에 대한 우수 사례를 설명합니다.</td> 
   </tr>
   <tr>
-   <td>Dynamic Media과 Scene7의 직접 통합 비교</td> 
-   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Dynamic Media과 Scene7/AEM 통합</a></td> 
+   <td>Dynamic Media과 Dynamic Media Classic과의 직접 통합 비교</td> 
+   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Dynamic Media과 Dynamic Media Classic/AEM 통합</a></td> 
    <td>Dynamic Media 솔루션 사용 시기, AEM과 S7을 통합해야 하는 시기 또는 둘 다를 사용해야 하는 시기를 설명합니다.</td> 
   </tr>
  </tbody>
