@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: df92346ca23161b8eaff293a6b9f2c8b7c72e2ec
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '5571'
+source-wordcount: '5577'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 ## Dynamic Media Cloud Services 구성 {#configuring-dynamic-media-cloud-services}
 
-Dynamic Media Cloud Services을 구성하기 전에 암호를 변경합니다. Dynamic Media 자격 증명으로 프로비저닝 이메일을 받은 후 암호를 변경하려면 [Dynamic Media Classic에 로그인해야 합니다. ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 프로비저닝 이메일에 제공된 암호는 시스템에서 생성되며 임시 암호에만 사용됩니다. Dynamic Media Cloud Service이 올바른 자격 증명으로 설정되도록 암호를 업데이트해야 합니다.
+Dynamic Media Cloud Services을 구성하기 전에 암호를 변경합니다. Dynamic Media 자격 증명으로 프로비저닝 이메일을 받은 후 암호를 변경하려면 [Dynamic Media Classic 데스크톱 응용 프로그램에 로그인해야 합니다. ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) 프로비저닝 이메일에 제공된 암호는 시스템에서 생성되며 임시 암호에만 사용됩니다. Dynamic Media Cloud Service이 올바른 자격 증명으로 설정되도록 암호를 업데이트해야 합니다.
 
 >[!NOTE]
 >
