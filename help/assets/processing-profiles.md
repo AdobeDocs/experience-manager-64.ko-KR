@@ -1,18 +1,14 @@
 ---
 title: 메타데이터, 이미지 및 비디오를 처리하기 위한 프로필
-seo-title: 메타데이터, 이미지 및 비디오를 처리하기 위한 프로필
 description: 폴더에 업로드된 자산에 적용할 옵션에 대한 규칙 세트입니다. 업로드하는 비디오 자산에 적용할 메타데이터 프로필 및 비디오 인코딩 프로필을 지정합니다. 이미지 에셋의 경우 이미지 에셋에 적용할 이미징 프로필을 지정하여 이미지 에셋을 제대로 잘리게 할 수도 있습니다.
-seo-description: 폴더에 업로드된 자산에 적용할 옵션에 대한 규칙 세트입니다. 업로드하는 비디오 자산에 적용할 메타데이터 프로필 및 비디오 인코딩 프로필을 지정합니다. 이미지 에셋의 경우 이미지 에셋에 적용할 이미징 프로필을 지정하여 이미지 에셋을 제대로 잘리게 할 수도 있습니다.
-uuid: d95978b9-ffa4-4895-854f-3f7bd396e019
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: 347a90ae-a0c5-44f5-8e80-edc3edc1386f
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1378'
 ht-degree: 0%
 
 ---
@@ -54,7 +50,7 @@ AEM Assets에서 프로필 사용에 관한 중요한 개념은 폴더에 프로
 
 선택적으로 최대 1,000개의 자산까지 기본 50개의 자산에서 재처리 워크플로우의 일괄 처리 크기를 조정할 수 있습니다. _Scene7을 실행할 때:폴더에서 자산_ 워크플로우를 재처리하면 자산은 일괄적으로 그룹화된 다음 처리를 위해 Dynamic Media 서버로 전송됩니다. 처리 후 전체 배치 세트에 있는 각 자산의 메타데이터는 AEM에서 업데이트됩니다. 배치 크기가 매우 큰 경우 처리 지연이 발생할 수 있습니다. 또는 일괄 처리 크기가 너무 작으면 Dynamic Media 서버로 라운드 트립이 너무 많을 수 있습니다.
 
-재처리 작업 과정[의 일괄 처리 크기 조정을 참조하십시오.](#adjusting-load)
+재처리 작업 과정](#adjusting-load)의 일괄 처리 크기 조정을 참조하십시오.[
 
 >[!NOTE]
 >
@@ -106,7 +102,7 @@ AEM Assets에서 프로필 사용에 관한 중요한 개념은 폴더에 프로
 
    ![Scene7 일괄 업로드 구성 요소](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. **[!UICONTROL Scene7에 일괄 업로드—단계 속성]** 대화 상자에서 다음을 설정합니다.
+1. **[!UICONTROL Scene7-단계 속성]** 대화 상자에서 다음을 설정합니다.
    * **[!UICONTROL 제목]** 및 **[!UICONTROL 설명]** 텍스트 필드에 원하는 경우 작업에 대한 새 제목과 설명을 입력합니다.
    * 핸들러가 다음 단계로 이동할 경우 **[!UICONTROL 핸들러 고급]**&#x200B;을 선택합니다.
    * **[!UICONTROL 시간 초과]** 필드에 외부 프로세스 시간 초과(초)를 입력합니다.
@@ -116,7 +112,7 @@ AEM Assets에서 프로필 사용에 관한 중요한 개념은 폴더에 프로
 
    ![속성 대화 상자](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. **[!UICONTROL Scene7에 일괄 업로드 - 단계 속성]** 대화 상자의 오른쪽 위 모서리에서 **[!UICONTROL 완료]**&#x200B;를 탭합니다.
+1. **[!UICONTROL Scene7-Step 속성]** 대화 상자의 오른쪽 위 모서리에서 **[!UICONTROL 완료]**&#x200B;를 탭합니다.
 
 1. Scene7의 오른쪽 위 모서리:자산 워크플로우 모델 페이지를 재처리하려면 **[!UICONTROL 동기화]**&#x200B;를 누릅니다. **[!UICONTROL 동기화된]**&#x200B;이 표시되면 워크플로우 런타임 모델이 성공적으로 동기화되어 폴더의 자산을 다시 처리할 준비가 된 것입니다.
 
