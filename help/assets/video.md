@@ -1,18 +1,14 @@
 ---
 title: 비디오
-seo-title: 비디오
-description: Dynamic Media에서 비디오를 사용하여 작업하는 방법 학습
-seo-description: Dynamic Media에서 비디오를 사용하여 작업하는 방법 학습
-uuid: 15e89f88-2787-472d-bbb6-d370bbab9228
+description: Dynamic Media에서 비디오를 사용하여 작업하는 방법을 알아봅니다.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: Dynamic-Media
 content-type: reference
-discoiquuid: b721dc7c-b056-47f5-9489-9f4db45b68a0
 translation-type: tm+mt
-source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '10456'
+source-wordcount: '10396'
 ht-degree: 1%
 
 ---
@@ -162,9 +158,9 @@ Dynamic Media은 MP4 H.264 비디오에 대한 모바일 비디오 재생을 지
 * 브랜딩 요구 사항에 맞게 비디오 플레이어를 구성할 수 있습니다.
 * 간단한 URL 또는 포함 코드를 사용하여 웹 사이트, 모바일 사이트 또는 모바일 애플리케이션에 비디오를 통합할 수 있습니다.
 
-[동적 비디오 재생](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480)을 참조하십시오.
+<!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480). -->
 
-Adobe Scene7 뷰어 참조 안내서의 [HTML5 뷰어 정보](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html)도 참조하십시오.
+Adobe Dynamic Media 뷰어 참조 안내서의 [HTML5 뷰어 정보](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=en#viewers-for-aem-assets-only)를 참조하십시오.
 
 ## 모범 사례:HTML5 비디오 뷰어 사용 {#best-practice-using-the-html-video-viewer}
 
@@ -193,76 +189,76 @@ HLS(HTTP Live Streaming)는 네트워크 대역폭 용량에 따라 재생을 �
 
 점진적 비디오는 비디오를 다운로드하여 사용자의 데스크탑 화면 또는 모바일 디바이스에 로컬로 저장하여 전달됩니다.
 
-다음 표에서는 Scene7 Video Viewer를 사용하는 데스크톱 컴퓨터와 모바일 장치에서 비디오의 장치, 브라우저 및 재생 방법에 대해 설명합니다.
+다음 표에서는 Dynamic Media Video Viewer를 사용하는 데스크톱 컴퓨터와 모바일 장치에서 비디오의 장치, 브라우저 및 재생 방법에 대해 설명합니다.
 
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>장치</strong></td> 
-   <td><strong>브라우저</strong></td> 
-   <td><strong>비디오 재생 모드</strong></td> 
-  </tr> 
+   <td><strong>장치</strong></td>
+   <td><strong>브라우저</strong></td>
+   <td><strong>비디오 재생 모드</strong></td>
+  </tr>
   <tr> 
-   <td>데스크톱</td> 
-   <td>Internet Explorer 9 및 10</td> 
-   <td>점진적 다운로드.</td> 
-  </tr> 
+   <td>데스크톱</td>
+   <td>Internet Explorer 9 및 10</td>
+   <td>점진적 다운로드.</td>
+  </tr>
   <tr> 
-   <td>데스크톱</td> 
-   <td>Internet Explorer 11+</td> 
-   <td>Windows 8 및 Windows 10의 경우 - HLS가 요청될 때마다 HTTPS를 강제로 사용하십시오. 알려진 제한 사항:HLS의 HTTP는 이 브라우저/운영 체제 조합<br /> <br /> Windows 7의 경우 - 점진적 다운로드에서 작동하지 않습니다. HTTP와 HTTPS 프로토콜을 선택할 때 표준 로직을 사용합니다.</td> 
-  </tr> 
+   <td>데스크톱</td>
+   <td>Internet Explorer 11+</td>
+   <td>Windows 8 및 Windows 10의 경우 - HLS가 요청될 때마다 HTTPS를 강제로 사용하십시오. 알려진 제한 사항:HLS의 HTTP는 이 브라우저/운영 체제 조합<br /> <br /> Windows 7의 경우 - 점진적 다운로드에서 작동하지 않습니다. HTTP와 HTTPS 프로토콜을 선택할 때 표준 로직을 사용합니다.</td>
+  </tr>
   <tr> 
-   <td>데스크톱</td> 
-   <td>Firefox 23-44</td> 
-   <td>점진적 다운로드.</td> 
-  </tr> 
+   <td>데스크톱</td>
+   <td>Firefox 23-44</td>
+   <td>점진적 다운로드.</td>
+  </tr>
   <tr> 
-   <td>데스크톱</td> 
-   <td>Firefox 45 이상</td> 
-   <td>HLS 비디오 스트리밍.</td> 
-  </tr> 
+   <td>데스크톱</td>
+   <td>Firefox 45 이상</td>
+   <td>HLS 비디오 스트리밍.</td>
+  </tr>
   <tr> 
-   <td>데스크톱</td> 
-   <td>Chrome</td> 
-   <td>HLS 비디오 스트리밍.</td> 
-  </tr> 
+   <td>데스크톱</td>
+   <td>Chrome</td>
+   <td>HLS 비디오 스트리밍.</td>
+  </tr>
   <tr> 
-   <td>데스크톱</td> 
-   <td>Safari(Mac)</td> 
-   <td>HLS 비디오 스트리밍.</td> 
-  </tr> 
+   <td>데스크톱</td>
+   <td>Safari(Mac)</td>
+   <td>HLS 비디오 스트리밍.</td>
+  </tr>
   <tr> 
-   <td>모바일</td> 
-   <td>Chrome(Android 6 또는 이전 버전)</td> 
-   <td>점진적 다운로드.</td> 
-  </tr> 
+   <td>모바일</td>
+   <td>Chrome(Android 6 또는 이전 버전)</td>
+   <td>점진적 다운로드.</td>
+  </tr>
   <tr> 
-   <td>모바일</td> 
-   <td>Chrome(Android 7 이상)</td> 
-   <td>HLS 비디오 스트리밍.</td> 
-  </tr> 
+   <td>모바일</td>
+   <td>Chrome(Android 7 이상)</td>
+   <td>HLS 비디오 스트리밍.</td>
+  </tr>
   <tr> 
-   <td>모바일</td> 
-   <td>Android(기본 브라우저)</td> 
-   <td>점진적 다운로드.</td> 
-  </tr> 
+   <td>모바일</td>
+   <td>Android(기본 브라우저)</td>
+   <td>점진적 다운로드.</td>
+  </tr>
   <tr> 
-   <td>모바일</td> 
-   <td>Safari(iOS)</td> 
-   <td>HLS 비디오 스트리밍.</td> 
-  </tr> 
+   <td>모바일</td>
+   <td>Safari(iOS)</td>
+   <td>HLS 비디오 스트리밍.</td>
+  </tr>
   <tr> 
-   <td>모바일</td> 
-   <td>Chrome(iOS)</td> 
-   <td>HLS 비디오 스트리밍.</td> 
-  </tr> 
+   <td>모바일</td>
+   <td>Chrome(iOS)</td>
+   <td>HLS 비디오 스트리밍.</td>
+  </tr>
   <tr> 
-   <td>모바일</td> 
-   <td>Blackberry</td> 
-   <td>HLS 비디오 스트리밍.</td> 
-  </tr> 
- </tbody> 
+   <td>모바일</td>
+   <td>Blackberry</td>
+   <td>HLS 비디오 스트리밍.</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Dynamic Media 비디오 솔루션 아키텍처 {#architecture-of-dynamic-media-video-solution}
@@ -661,7 +657,7 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
 1. 다음을 수행하여 복사한 YouTube 게시 값을 프로필에 추가합니다.
 
    * 페이지 오른쪽에서 **[!UICONTROL 양식 작성]** 탭을 누릅니다.
-   * **[!UICONTROL 섹션 헤더]**&#x200B;라는 레이블이 지정된 구성 요소를 왼쪽으로 드래그한 다음 양식 영역에 놓습니다.
+   * **[!UICONTROL 섹션 헤더]**&#x200B;라는 레이블이 있는 구성 요소를 왼쪽으로 드래그한 다음 양식 영역에 놓습니다.
    * **[!UICONTROL 필드 레이블]**&#x200B;을 눌러 구성 요소를 선택합니다.
    * 페이지 오른쪽의 **[!UICONTROL 설정]** 탭의 **[!UICONTROL 필드 레이블]** 텍스트 필드에 `YouTube Publishing`를 입력합니다.
    * **[!UICONTROL 양식 작성]** 탭을 누른 다음 **[!UICONTROL 단일 행 텍스트]**&#x200B;라는 이름의 구성 요소를 드래그하여 방금 만든 **[!UICONTROL YouTube 게시]** 머리글 아래에 놓습니다.
@@ -671,7 +667,7 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
 1. 다음을 수행하여 복사한 YouTube 개인 정보 값을 프로필에 추가합니다.
 
    * 페이지 오른쪽에서 **[!UICONTROL 양식 작성]** 탭을 누릅니다.
-   * **[!UICONTROL 섹션 헤더]**&#x200B;라는 레이블이 있는 구성 요소를 왼쪽으로 드래그한 다음 양식 영역에 놓습니다.
+   * **[!UICONTROL 섹션 헤더]**&#x200B;라는 레이블이 지정된 구성 요소를 왼쪽으로 드래그한 다음 양식 영역에 놓습니다.
    * **[!UICONTROL 필드 레이블]**&#x200B;을 눌러 구성 요소를 선택합니다.
    * 페이지 오른쪽의 설정 탭의 필드 레이블 텍스트 필드에 `YouTube Privacy`을 입력합니다.
    * **[!UICONTROL 양식 작성]** 탭을 누른 다음 **[!UICONTROL 단일 행 텍스트]**&#x200B;라는 이름의 구성 요소를 드래그하여 방금 만든 **[!UICONTROL YouTube 개인 정보 보호]** 머리글 아래에 놓습니다.
@@ -901,7 +897,7 @@ YouTube에서 콘텐츠를 제거하려면 진행 상황을 모니터링하고 �
 
 1. 상위 게시된 비디오를 나열하는 표에서 비디오 이름을 눌러 비디오를 재생하고 비디오의 대상자 유지(드롭다운) 보고서를 확인합니다.
 
-### HTML5 뷰어 SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}를 사용하여 만든 비디오 뷰어를 기반으로 비디오 보고서 보기
+### Dynamic Media HTML5 뷰어 SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}를 사용하여 만든 비디오 뷰어를 기반으로 비디오 보고서 보기
 
 Dynamic Media에서 제공하는 기본 비디오 뷰어를 사용하거나 기본 비디오 뷰어를 기반으로 사용자 정의 뷰어 사전 설정을 만든 경우 비디오 보고서를 보는 데 추가 단계가 필요하지 않습니다. 그러나 HTML5 뷰어 SDK API를 기반으로 자체 비디오 뷰어를 만든 경우, 다음 단계를 사용하여 비디오 뷰어가 추적 이벤트를 Dynamic Media 비디오 보고서로 전송하도록 하십시오.
 
@@ -962,7 +958,7 @@ HTML5 뷰어 SDK API를 사용하여 만든 비디오 뷰어를 기반으로 비
       ```
    appMeasurementBridge 객체에는 내장 추적 함수가 있습니다. 그러나 여러 추적 시스템 또는 기타 기능을 지원하기 위해 자체 코드를 제공할 수 있습니다.
 
-   자세한 내용은 *Scene7 HTML5 뷰어 SDK 사용자 안내서*&#x200B;에서 [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html)에서 다운로드할 수 있는 *TrackingManager 구성 요소 사용*&#x200B;을 참조하십시오.
+<!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 ## 비디오 {#adding-captions-to-video}에 캡션 추가
 
@@ -976,7 +972,7 @@ HTML5 뷰어 SDK API를 사용하여 만든 비디오 뷰어를 기반으로 비
 
 Dynamic Media에는 캡션 파일을 JSON(JavaScript 개체 표기법) 형식으로 변환하는 기능이 있습니다. 이러한 전환은 JSON 텍스트를 숨김이지만 비디오 전체 스크립트로 웹 페이지에 포함할 수 있음을 의미합니다. 그런 다음 검색 엔진을 통해 컨텐츠를 크롤링하고 색인화하여 비디오를 보다 손쉽게 검색할 수 있게 하고 비디오 컨텐츠에 대한 추가 세부 정보를 고객에게 제공할 수 있습니다.
 
-URL에서 JSON 함수 사용에 대한 자세한 내용은 *Scene7 Image Serving API 도움말*&#x200B;의 [정적(이미지가 아님) 컨텐츠 제공](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html)을 참조하십시오.
+URL에서 JSON 함수 사용에 대한 자세한 내용은 *Dynamic Media 이미지 제공 및 렌더링 API 도움말*&#x200B;의 [정적(이미지가 아님) 컨텐츠 제공](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api)을 참조하십시오.
 
 **비디오에 캡션 또는 자막을 추가하려면 다음을 수행하십시오**.
 
@@ -1179,4 +1175,3 @@ Dynamic Media에서 자동으로 생성한 10개의 축소판 이미지 중 하�
 1. 이미지가 업로드되면 **[!UICONTROL 축소판 변경]** 페이지에서 **[!UICONTROL 변경 내용 저장]**&#x200B;을 탭합니다.
 
    사용자 정의 축소판이 비디오에 추가됩니다.
-
