@@ -1,18 +1,14 @@
 ---
 title: 비디오
-seo-title: 비디오
 description: 자산은 Scene7으로의 자동 인코딩을 위해 자산으로 직접 비디오를 업로드하고, 페이지 작성을 위해 자산에서 직접 Scene7 비디오에 액세스할 수 있는 중앙 집중식 비디오 자산 관리를 제공합니다.
-seo-description: 자산은 Scene7으로의 자동 인코딩을 위해 자산으로 직접 비디오를 업로드하고, 페이지 작성을 위해 자산에서 직접 Scene7 비디오에 액세스할 수 있는 중앙 집중식 비디오 자산 관리를 제공합니다.
-uuid: 46da7a0d-d17b-4716-a304-ce5496421b5a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 content-type: reference
-discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1707'
 ht-degree: 100%
 
 ---
