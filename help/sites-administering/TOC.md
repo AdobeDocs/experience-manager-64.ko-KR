@@ -7,10 +7,10 @@ user-guide-title: AEM 6.4 관리 사용 안내서
 breadcrumb-title: 관리 안내서
 user-guide-description: AEM 관리에 대해 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 47c0e92e7f68641209e5d2e5aefeb9dfcce64854
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 17%
+source-wordcount: '623'
+ht-degree: 20%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 17%
    + [단일 사인온](/help/sites-deploying/single-sign-on.md)
    + [AEM에서 사용자 관리 작업을 감사하는 방법](audit-user-management-operations.md)
    + [기본적으로 SSL](ssl-by-default.md)
-   + [SAML 2.0 인증 처리기](saml-2-0-authenticationhandler.md)
+   + [SAML 2.0 인증 핸들러](saml-2-0-authenticationhandler.md)
    + [AEM에서 닫힌 사용자 그룹](closed-user-groups.md)
    + [Granite Operations - 사용자 및 그룹 관리](granite-user-group-admin.md)
    + [AEM에서 CRXDE Lite 활성화](enabling-crxde-lite.md)
@@ -115,7 +115,7 @@ ht-degree: 17%
    + [제3자 서비스와 통합](third-party-services.md)
    + [Salesforce와 통합](salesforce.md)
    + [Adobe Target과 통합](target.md)
-   + [Livefyre와 통합](livefyre.md)
+   + [Livefyre와 통합하기](livefyre.md)
    + [Adobe Analytics와 통합](adobeanalytics.md)
    + [Adobe Analytics 및 Creating Frameworks에 연결](adobeanalytics-connect.md)
    + [Adobe Analytics에 대한 링크 추적 구성](adobeanalytics-link.md)
@@ -135,8 +135,8 @@ ht-degree: 17%
    + [Adobe 다이내믹 태그 관리와 통합](dtm.md)
    + [Adobe Analytics 및 Adobe Target에 선택](opt-in.md)
    + [AEM 포털 및 포틀릿](aem-as-portal.md)
-   + [Dynamic Media Classic(Scene7)과 통합](scene7.md)
-   + [AEM Livefyre 레서피](aem-livefyre-recipes.md)
+   + [Dynamic Media Classic과 통합](scene7.md)
+   + [AEM Livefyre Recipes](aem-livefyre-recipes.md)
    + [통합 문제 해결](troubleshooting-integration-issues.md)
    + [BrightEdge Content Optimizer와 통합](brightedge.md)
    + [이메일 템플릿 우수 사례](best-practices-for-email-templates.md)
