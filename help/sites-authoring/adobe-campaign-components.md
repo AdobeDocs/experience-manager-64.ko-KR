@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f328cd1e-30a3-42d2-88b7-64455ee9eb1f
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '2778'
+source-wordcount: '2779'
 ht-degree: 78%
 
 ---
@@ -24,14 +24,14 @@ Adobe Campaign과 통합하면 뉴스레터와 양식을 사용하여 작업할 
 
 ## Adobe Campaign 뉴스레터 구성 요소 {#adobe-campaign-newsletter-components}
 
-모든 Campaign 구성 요소는 [이메일 템플릿 우수 사례](/help/sites-administering/best-practices-for-email-templates.md)에 요약된 우수 사례를 따르며, Adobe 마크업 언어 [HTL](https://helpx.adobe.com/experience-manager/htl/using/overview.html)을 기반으로 합니다.
+모든 Campaign 구성 요소는 [이메일 템플릿 우수 사례](/help/sites-administering/best-practices-for-email-templates.md)에 요약된 우수 사례를 따르며, Adobe 마크업 언어 [HTL](https://helpx.adobe.com/kr/experience-manager/htl/using/overview.html)을 기반으로 합니다.
 
 Adobe Campaign과 통합하도록 구성된 뉴스레터/이메일을 열면 **Adobe Campaign 뉴스레터** 섹션에 다음 구성 요소가 표시됩니다.
 
 * 제목(캠페인)
 * 이미지(캠페인)
 * 링크(캠페인)
-* Scene7 이미지 템플릿(캠페인)
+* Dynamic Media 이미지 템플릿(캠페인)
 * 타깃팅된 참조(캠페인)
 * 텍스트 및 이미지(캠페인)
 * 텍스트 및 개인화(캠페인)
