@@ -1,13 +1,13 @@
 ---
-title: AEM 6.4 누적 수정 팩 릴리스 정보
+title: AEM 6.4 누적 수정 팩 릴리스 노트
 description: Adobe Experience Manager 6.4 누적 수정 팩에 대한 릴리스 노트입니다.
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1d3476c3fdc8cf817e4784f36b4e0858fdc3b1ee
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '4217'
-ht-degree: 21%
+source-wordcount: '4219'
+ht-degree: 24%
 
 ---
 
@@ -58,14 +58,14 @@ Adobe Experience Manager 6.4.8.3은 다음 문제에 대한 수정 사항을 제
 
 * 기존 자산의 버전을 만들 때 메타데이터 프로필이 폴더에 적용된 경우 메타데이터에 대한 사용자 업데이트가 지속되지 않습니다(NPR-34833).
 * [!DNL Adobe InDesign]과 함께 [!DNL Adobe Asset Link]을 사용하는 경우 검색 결과에 폴더 및 컬렉션이 포함되지 않고 자산만 포함됩니다(NPR-34700).
-* 폴더의 자산을 드래그하여 이동시키는 경우 사용자 인터페이스에는 Lightbox[!UICONTROL  및 ]컬렉션에 놓기 옵션도 표시됩니다[!UICONTROL . ] 이동 작업이 취소되더라도 사용자 인터페이스는 이후 두 옵션(NPR-34525)을 계속 표시합니다.
+* 폴더의 자산을 드래그하여 이동시키는 경우 사용자 인터페이스에는 Lightbox] 및 [!UICONTROL 컬렉션에 놓기 옵션도 표시됩니다]. [!UICONTROL  이동 작업이 취소되더라도 사용자 인터페이스는 이후 두 옵션(NPR-34525)을 계속 표시합니다.
 * 게시 관리 인터페이스를 열면 게시 옵션을 사용할 수 없으며 게시 취소 옵션을 선택하면 범위 페이지가 비어 있습니다(CQ-4302509).
 
 #### [!DNL Dynamic Media] {#dynamic-media}
 
 * 이미지 사전 설정 설정에서 [!DNL Experience Manager]에서 [!UICONTROL JPG 색차 다운샘플링 활성화] 옵션을 선택 해제하면 변경 내용이 [!DNL Dynamic Media](NPR-34284)과 동기화되지 않습니다.
 * [!UICONTROL 뷰어 사전 설정 편집기]에서 [!UICONTROL PanoramicImage/PanoramicImage_VR] 사전 설정을 편집할 때 `PanoramicView` 구성 요소에서 `PANORAMICVIEW_AUTOROTATE` 수정자 레이블을 사용할 수 없습니다(CQ-4302043).
-* [!DNL Experience Manager]에서 비디오를 게시 취소해도 구성된 Scene7에서 응용 비디오 세트의 게시를 취소하지 않습니다. (CQ-4304405).
+* [!DNL Experience Manager]에서 비디오를 게시 취소해도 구성된 Dynamic Media Classic의 응용 비디오 집합이 게시 취소되지 않습니다. (CQ-4304405).
 
 ### 플랫폼 {#platform-6483}
 
@@ -75,7 +75,7 @@ Adobe Experience Manager 6.4.8.3은 다음 문제에 대한 수정 사항을 제
 
 ### 통합 {#integrations-6483}
 
-* 폴더에서 ]대상자[!UICONTROL  페이지로 이동(NPR-35152)하는 동안 ]대상[!UICONTROL  페이지에 [!UICONTROL  만들기 단추가 표시됩니다.]
+* 폴더에서 [!UICONTROL 대상자] 페이지로 이동(NPR-35152)하는 동안 [!UICONTROL 대상] 페이지에 ] 만들기 단추가 표시됩니다.[!UICONTROL 
 
 ### 사용자 인터페이스 {#ui-6483}
 
@@ -187,7 +187,7 @@ Adobe Experience Manager 6.4.8.2은 다음 문제에 대한 수정 사항을 제
 
 * 이미지 프로필을 여러 종횡비(예: 11)가 있는 폴더에 추가할 때 스마트 자르기 기능이 오류로 인해 실패합니다(NPR-34083).
 
-* [!UICONTROL Adobe Experience Manager]의 이미지 사전 설정에 대한 변경 사항은 Scene7 Publishing System(NPR-34284, CQ-4299713)에 동기화되지 않습니다.
+* [!UICONTROL Adobe Experience Manager]의 이미지 사전 설정에 대한 변경 사항은 Dynamic Media Classic에 동기화되지 않습니다(NPR-34284, CQ-4299713).
 
 * [!UICONTROL 뷰어 사전 설정 편집기] 페이지(CQ-4302043)의 [!UICONTROL 비헤이비어] 탭에서 [!UICONTROL PANORAMICVIEW_AUTORATATE] 수정자 레이블이 없습니다.
 
@@ -270,7 +270,7 @@ Adobe Experience Manager 6.4.8.2은 다음 문제에 대한 수정 사항을 제
 
 AEM 누적 수정 팩 6.4.8.1은 2020년 3월 AEM 6.4 서비스 팩 8(6.4.8.0)의 공식 출시 이후 몇 가지 내부 및 고객 픽스를 포함하는 중요한 업데이트입니다.
 
-AEM 누적 수정 팩 6.4.8.1은 AEM 6.4 서비스 팩 8에 따라 다릅니다. 따라서 AEM 6.4 서비스 팩 8을 설치한 후 AEM 누적 수정 팩 6.4.8.1 패키지를 설치해야 합니다.
+AEM 누적 수정 팩 6.4.8.1는 AEM 6.4 서비스 팩 8에 종속됩니다. 따라서 AEM 6.4 서비스 팩 8을 설치한 후 AEM 누적 수정 팩 6.4.8.1 패키지를 설치해야 합니다.
 
 AEM 6.4.8.1의 주요 특징 중 몇 가지는 다음과 같습니다.
 
@@ -470,7 +470,7 @@ AEM Forms JEE용 누적 설치 프로그램 및 배포 후 구성에 대한 자�
 
 AEM 6.4.8.3용 Uber Jar는 [Maven Central 리포지토리](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.3/)에서 사용할 수 있습니다.
 
-Maven 프로젝트에서 Uber Jar를 사용하려면 [How to use Uber jar](../sites-developing/ht-projects-maven.md)을 참조하고 프로젝트 POM에 다음 종속성을 포함시킵니다.
+Maven 프로젝트에서 Uber Jar를 사용하려면 문서 [Uber jar 사용 방법](../sites-developing/ht-projects-maven.md)을 참조하여 프로젝트 POM에 다음 종속성을 포함하십시오.
 
 ```shell
 <dependency>
@@ -492,7 +492,7 @@ Maven 프로젝트에서 Uber Jar를 사용하려면 [How to use Uber jar](../si
 | 영역 | 기능 | 대체 | 버전 |
 |---|---|---|---|
 | 자산 | 하위 자산에 대한 태그 작업 관리 | 교체 없음 | AEM 6.4.2.0 |
-| Assets과 Adobe Creative Cloud 통합 | [AEM에서 Creative Cloud으로 폴더 ](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) 공유 기능은 크리에이티브 사용자가 AEM의 에셋에 액세스할 수 있도록 하기 위해 AEM 6.2에서 도입되었습니다. Creative Cloud 애플리케이션에서 새롭게 출시된 기능인 Adobe Asset Link는 Photoshop, InDesign 및 Illustrator에서 직접 AEM 자산에 액세스할 수 있는 강력한 권한과 함께 우수한 사용자 경험을 제공합니다. Adobe는 폴더 공유 기능에 대한 추가 개선을 하지 않습니다. 이 기능은 AEM에 포함되어 있지만 고객은 이 교체 기능을 사용해야 합니다. | Adobe 자산 링크 또는 데스크탑 앱. 자세한 내용은 [AEM Creative Cloud 통합](/help/assets/aem-cc-integration-best-practices.md) 문서를 참조하십시오. | AEM 6.4.4.0 |
+| Assets과 Adobe Creative Cloud 통합 | [AEM과 Creative Cloud 폴더 공유](https://docs.adobe.com/content/help/ko-KR/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html)는 Creative 사용자에게 AEM의 자산에 대한 액세스 권한을 제공하는 방법으로 AEM 6.2에 도입되었습니다. Creative Cloud 애플리케이션에서 새롭게 출시된 기능인 Adobe Asset Link는 Photoshop, InDesign 및 Illustrator에서 직접 AEM 자산에 액세스할 수 있는 강력한 권한과 함께 우수한 사용자 경험을 제공합니다. Adobe는 폴더 공유 기능에 대한 추가 개선을 하지 않습니다. 이 기능은 AEM에 포함되어 있지만 고객은 이 교체 기능을 사용해야 합니다. | Adobe 자산 링크 또는 데스크탑 앱. 자세한 내용은 [AEM Creative Cloud 통합](/help/assets/aem-cc-integration-best-practices.md) 문서를 참조하십시오. | AEM 6.4.4.0 |
 
 ## 알려진 문제 {#known-issues}
 
@@ -500,7 +500,7 @@ Maven 프로젝트에서 Uber Jar를 사용하려면 [How to use Uber jar](../si
 
 AEM 6.4.8.0 서비스 팩 알려진 문제에 대한 자세한 내용은 [AEM 6.4.8.0 서비스 팩 릴리스 노트](sp-release-notes.md)를 참조하십시오.
 
-## OSGi 번들 및 컨텐츠 패키지가 설치됨 {#osgi-bundles-and-content-packages-included}
+## OSGi 번들 및 컨텐츠 패키지가 포함됨 {#osgi-bundles-and-content-packages-included}
 
 다음 텍스트 문서에는 AEM 6.4.8.3에 포함된 OSGi 번들 및 컨텐츠 패키지가 나열되어 있습니다.
 
@@ -508,7 +508,7 @@ AEM 6.4.8.3에 포함된 OSGi 번들 목록
 
 [파일 가져오기](assets/6.4.8.3_osgi_bundles.txt)
 
-AEM 6.4.8.3에 포함된 콘텐츠 패키지 목록
+AEM 6.4.8.3에 포함된 컨텐츠 패키지 목록
 
 [파일 가져오기](assets/6.4.8.3_content_packages.txt)
 
