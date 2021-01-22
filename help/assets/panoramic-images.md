@@ -1,19 +1,15 @@
 ---
 title: 파노라마 이미지
-seo-title: 파노라마 이미지
-description: Dynamic Media에서 파노라마 이미지를 사용하여 작업하는 방법을 알아봅니다.
-seo-description: Dynamic Media에서 파노라마 이미지를 사용하여 작업하는 방법을 알아봅니다.
-uuid: dfd7a55c-7bcc-4d62-8c3a-a73726881103
+Description: Learn how to work with panoramic images in Dynamic Media.
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
-discoiquuid: fc285b25-2bce-493c-87bc-5f1a8a26eb42
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 1%
+source-wordcount: '573'
+ht-degree: 0%
 
 ---
 
@@ -46,7 +42,7 @@ ht-degree: 1%
 
 파노라마 이미지 뷰어가 AEM 내에서 제대로 작동하려면 뷰어 사전 설정이 JCR에서 업데이트되도록 Dynamic Media Classic 및 Dynamic Media Classic 관련 메타데이터와 파노라마 이미지 뷰어 사전 설정을 동기화해야 합니다. 이를 수행하려면 다음 방법으로 Dynamic Media Classic을 구성합니다.
 
-1. [각 회사 계정에 대해 Dynamic Media ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Classicics 인스턴스에 로그인합니다.
+1. [각 회사 계정에 대해 Dynamic Media Classic 데스크탑 ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) 응용 프로그램에 로그인합니다.
 
 1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 설정 > 응용 프로그램 설정 > 게시 설정 > 이미지 서버]**&#x200B;를 클릭합니다.
 1. **[!UICONTROL 이미지 서버 게시]** 페이지의 맨 위에 있는 **[!UICONTROL 게시 컨텍스트]** 드롭다운 메뉴에서 **[!UICONTROL 이미지 제공]**&#x200B;을 선택합니다.
