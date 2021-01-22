@@ -1,20 +1,20 @@
 ---
-title: 자산 크기 조정 안내서
+title: Assets 크기 조정 가이드
 description: 'AEM Assets 배포에 필요한 인프라 및 리소스를 추산하기 위한 효율적인 지표를 결정하는 우수 사례입니다. '
 uuid: f847c07d-2a38-427a-9c38-8cdca3a1210c
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
 translation-type: tm+mt
-source-git-commit: 6aec5927c00f70ce2c044ffd56cabbf68a81071a
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1858'
 ht-degree: 0%
 
 ---
 
 
-# 자산 크기 조정 안내서 {#assets-sizing-guide}
+# Assets 크기 조정 가이드 {#assets-sizing-guide}
 
 AEM(Adobe Experience Manager) 에셋 구현을 위해 환경을 크기 조정할 때 디스크, CPU, 메모리, IO 및 네트워크 처리량과 관련하여 사용할 수 있는 충분한 리소스가 있는지 확인해야 합니다. 이러한 리소스 중 상당 수의 크기를 조정하려면 시스템에 로드되는 자산 수를 이해해야 합니다. 더 나은 지표를 사용할 수 없는 경우 기존 라이브러리의 크기를 라이브러리 페이지로 나누어 에셋이 만들어지는 비율을 찾을 수 있습니다.
 
@@ -33,7 +33,7 @@ AEM(Adobe Experience Manager) 에셋 구현을 위해 환경을 크기 조정할
 1. 시스템에 로드될 자산의 크기와 수를 결정합니다.
 1. AEM에 업로드할 에셋의 대표 샘플을 가져옵니다. 예를 들어 PSD, JPG, AI 및 PDF 파일을 시스템에 로드하려는 경우 각 파일 포맷의 여러 샘플 이미지가 필요합니다. 또한 이러한 샘플은 이미지의 다양한 파일 크기와 복잡성에 대해 설명해야 합니다.
 1. 사용할 변환을 정의합니다.
-1. ImageMagick 또는 Adobe의 Creative Cloud 애플리케이션을 사용하여 AEM에서 변환을 만듭니다. 사용자가 지정하는 변환 외에도 즉시 사용 가능한 변환을 만듭니다. Scene7을 구현하는 사용자의 경우 IC 바이너리를 사용하여 AEM에 저장할 PTIFF 변환을 생성할 수 있습니다.
+1. ImageMagick 또는 Adobe의 Creative Cloud 애플리케이션을 사용하여 AEM에서 변환을 만듭니다. 사용자가 지정하는 변환 외에도 즉시 사용 가능한 변환을 만듭니다. Dynamic Media Classic을 구현하는 사용자의 경우 IC 바이너리를 사용하여 AEM에 저장될 PTIFF 변환을 생성할 수 있습니다.
 1. 하위 자산을 사용하려면 적절한 파일 유형에 맞게 하위 자산을 생성합니다. Illustrator 레이어에서 InDesign 파일 또는 PNG/PDF 파일에서 하위 자산 페이지를 생성하는 방법에 대한 온라인 설명서를 참조하십시오.
 1. 출력 이미지, 변환 및 하위 자산의 크기를 원본 이미지와 비교합니다. 시스템이 로드되면 예상되는 성장 요소를 생성할 수 있습니다. 예를 들어 1GB의 자산을 처리한 후 크기가 3GB인 표현물과 하위 자산을 생성하는 경우 표현물 증가 요소는 3입니다.
 1. 시스템에서 자산 버전을 유지 관리할 최대 시간을 결정합니다.
@@ -105,7 +105,7 @@ NodeStore 또는 DocumentStore에 대한 정확한 크기 수치는 다음과 �
 
 ## 네트워크 {#network}
 
-AEM Assets은 많은 AEM 프로젝트보다 네트워크 성능을 더 중요하게 만드는 많은 사용 사례를 보유하고 있습니다. 고객은 빠른 서버를 가질 수 있지만 네트워크 연결이 시스템의 에셋을 업로드하고 다운로드하는 사용자의 로드를 지원할 만큼 충분하지 않은 경우에는 속도가 느려지는 것으로 나타납니다. 사용자 경험, 인스턴스 크기 조정, 워크플로 평가 및 네트워크 토폴로지[에 대한 사용자의 AEM 네트워크 연결에서 경계 지점을 결정하는 좋은 방법이 있습니다.](assets-network-considerations.md)
+AEM Assets은 많은 AEM 프로젝트보다 네트워크 성능을 더 중요하게 만드는 많은 사용 사례를 보유하고 있습니다. 고객은 빠른 서버를 가질 수 있지만 네트워크 연결이 시스템의 에셋을 업로드하고 다운로드하는 사용자의 로드를 지원할 만큼 충분하지 않은 경우에는 속도가 느려지는 것으로 나타납니다. 사용자 경험, 인스턴스 크기 조정, 워크플로 평가 및 네트워크 토폴로지](assets-network-considerations.md)에 대한 사용자의 AEM 네트워크 연결에서 경계 지점을 결정하는 좋은 방법이 있습니다.[
 
 ## WebDAV {#webdav}
 
