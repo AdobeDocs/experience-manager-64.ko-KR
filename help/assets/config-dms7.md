@@ -1,18 +1,14 @@
 ---
 title: Dynamic Media 구성 - Scene7 모드
-seo-title: Dynamic Media 구성 - Scene7 모드
-description: Dynamic Media - Scene7 모드를 구성하는 방법에 대한 정보입니다.
-seo-description: Dynamic Media - Scene7 모드를 구성하는 방법에 대한 정보입니다.
-uuid: 81cc208b-e95d-4a01-9817-2b6d50cfe8b8
+description: Dynamic Media - Scene7 모드를 구성하는 방법을 알아봅니다.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 59fed31d276510c3346a46ac38f2a79c6f91d848
 workflow-type: tm+mt
-source-wordcount: '5577'
+source-wordcount: '5596'
 ht-degree: 1%
 
 ---
@@ -88,7 +84,7 @@ Dynamic Media Cloud Services을 구성하려면:
 
    >[!NOTE]
    >
-   >Dynamic Media 자격 증명으로 프로비저닝 전자 메일을 받은 후 [Dynamic Media Classic에 로그인하여 암호를 변경하십시오. ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 프로비저닝 이메일에 제공된 암호는 시스템에서 생성되며 임시 암호에만 사용됩니다. Dynamic Media 클라우드 서비스가 올바른 자격 증명으로 설정되도록 암호를 업데이트해야 합니다.
+   >Dynamic Media 자격 증명을 사용하여 프로비저닝 전자 메일을 받은 후 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을(를) 연 다음 회사 계정에 로그인하여 암호를 변경합니다. 프로비저닝 이메일에 제공된 암호는 시스템에서 생성되며 임시 암호에만 사용됩니다. Dynamic Media 클라우드 서비스가 올바른 자격 증명으로 설정되도록 암호를 업데이트해야 합니다.
 
 1. 연결이 성공하면 다음을 설정할 수도 있습니다.
 
@@ -109,7 +105,7 @@ Dynamic Media Cloud Services을 구성하려면:
 1. **[!UICONTROL 저장]**&#x200B;을 누릅니다.
 1. Dynamic Media 컨텐츠를 게시하기 전에 안전하게 미리 보려면 Dynamic Media에 연결하려면 AEM 작성자 인스턴스를 &quot;&quot;허용 목록에 추가하다해야 합니다.
 
-   * Dynamic Media Classic 계정에 로그온합니다.[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). 프로비저닝 시 Adobe에서 자격 증명 및 로그온을 제공했습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
+   * [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을(를) 열고 계정에 로그인합니다. 자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe에서 제공되었습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
    * 페이지 오른쪽 상단의 탐색 막대에서 **[!UICONTROL 설정 > 응용 프로그램 설정 > 게시 설정 > 이미지 서버]**&#x200B;를 탭합니다.
    * 이미지 서버 게시 페이지의 게시 컨텍스트 드롭다운 목록에서 **[!UICONTROL 테스트 이미지 제공]**&#x200B;을 선택합니다.
    * 클라이언트 주소 필터의 경우 **[!UICONTROL 추가]**&#x200B;를 누릅니다.
@@ -133,7 +129,7 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가로 사용자 정의
 
 실행 모드 **dynamicmedia_scene7**&#x200B;에 있는 경우 Dynamic Media Classic(Scene7) 사용자 인터페이스를 사용하여 Dynamic Media 설정을 변경합니다.
 
-위의 작업 중 일부는 여기에서 Dynamic Media Classic에 로그인해야 합니다.[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+위의 작업 중 일부는 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을(를) 연 다음 계정에 로그인해야 합니다.
 
 설정 및 구성 작업은 다음과 같습니다.
 
@@ -189,7 +185,7 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가로 사용자 정의
 
 이미지를 요청할 때 색상 보정을 사용하도록 기본 색상 속성을 구성하려면 다음을 수행하십시오.
 
-1. [프로비저닝 동안 제공된 자격 ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 증명을 사용하여 Dynamic Media Classicics에 로그인합니다. **[!UICONTROL 설정 > 응용 프로그램 설정]**&#x200B;으로 이동합니다.
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을(를) 연 다음 프로비저닝 동안 제공된 자격 증명을 사용하여 계정에 로그인합니다. **[!UICONTROL 설정 > 응용 프로그램 설정]**&#x200B;으로 이동합니다.
 1. **[!UICONTROL 제작 설정]** 영역을 확장하고 **[!UICONTROL 이미지 서버]**&#x200B;를 선택합니다. 게시 인스턴스의 기본값을 설정할 때 **[!UICONTROL 게시 컨텍스트]**&#x200B;를 **[!UICONTROL 이미지 제공]**&#x200B;으로 설정합니다.
 1. 변경해야 할 속성(예: **[!UICONTROL 색상 관리 속성]** 영역의 속성)으로 스크롤합니다.
 
@@ -319,9 +315,9 @@ AEM Assets에서 지원되지 않는 형식에 대해 사용자 지정 MIME 형�
 
 **기본 이름 지정을 구성하려면:**
 
-1. Dynamic Media Classic(Scene7) 계정에 로그온합니다.[www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을(를) 열고 계정에 로그인합니다.
 
-   프로비저닝 시 Adobe에서 자격 증명 및 로그온을 제공했습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
+   자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe에서 제공되었습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
 
 1. 페이지 위쪽 근처의 내비게이션 막대에서 **[!UICONTROL 설정 > 응용 프로그램 설정 > 배치 집합 사전 설정 > 기본 이름 지정]을 탭합니다.**
 1. 각 요소에 대한 정보를 보고 입력할 방법을 지정하려면 **[!UICONTROL 양식 보기]** 또는 **[!UICONTROL 코드 보기]**&#x200B;를 선택합니다.
@@ -353,9 +349,9 @@ Dynamic Media은 일괄 처리 집합 사전 설정을 사용하여 뷰어에 �
 
 **배치 집합 사전 설정을 만들려면:**
 
-1. Dynamic Media Classic(Scene7) 계정에 로그온합니다.[www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을(를) 열고 계정에 로그인합니다.
 
-   프로비저닝 시 Adobe에서 자격 증명 및 로그온을 제공했습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
+   자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe에서 제공되었습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
 
 1. 페이지 위쪽 근처의 내비게이션 막대에서 **[!UICONTROL 설정 > 응용 프로그램 설정 > 배치 집합 사전 설정 > 배치 집합 사전 설정]을 탭합니다.**
 
@@ -408,9 +404,9 @@ spin-01-01
 
 **2D 회전 집합의 자동 생성을 위한 일괄 세트 사전 설정을 만들려면:**
 
-1. Dynamic Media Classic(Scene7) 계정에 로그온합니다.[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을(를) 열고 계정에 로그인합니다.
 
-   프로비저닝 시 Adobe에서 자격 증명 및 로그온을 제공했습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
+   자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe에서 제공되었습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
 
 1. 페이지 상단 근처의 내비게이션 막대에서 **[!UICONTROL 설정 > 애플리케이션 설정 > 배치 집합 사전 설정 > 배치 집합 사전 설정]**&#x200B;을 탭합니다.
 
