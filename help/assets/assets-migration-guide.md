@@ -3,9 +3,9 @@ title: 자산을 Adobe Experience Manager Assets로 일괄 마이그레이션
 description: 자산을 AEM으로 가져오고, 메타데이터를 적용하고, 변환을 생성하고, 인스턴스를 게시하도록 활성화하는 방법.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 976d037d701eb7cc61a62e14e554675961d6179c
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1789'
+source-wordcount: '1791'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ https를 통해 푸시하는 접근 방식을 사용하는 두 가지 주요 단
 
 ### 변환 처리 {#process-renditions}
 
-자산을 시스템에 로드한 후 DAM 자산 업데이트 작업 과정을 통해 자산을 처리하여 메타데이터를 추출하고 변환을 생성해야 합니다. 이 단계를 수행하려면 먼저 필요에 맞게 DAM 자산 업데이트 워크플로우를 복제하고 수정해야 합니다. Scene7 PTIFF 생성 또는 InDesign 서버 통합과 같이 기본 워크플로우의 일부 단계는 필요하지 않을 수 있습니다.
+자산을 시스템에 로드한 후 DAM 자산 업데이트 작업 과정을 통해 자산을 처리하여 메타데이터를 추출하고 변환을 생성해야 합니다. 이 단계를 수행하려면 먼저 필요에 맞게 DAM 자산 업데이트 워크플로우를 복제하고 수정해야 합니다. Dynamic Media Classic PTIFF 생성 또는 InDesign 서버 통합과 같이 기본 워크플로우의 일부 단계는 필요하지 않을 수 있습니다.
 
 필요에 따라 워크플로우를 구성한 후에는 두 가지 옵션을 사용하여 워크플로우를 실행합니다.
 
