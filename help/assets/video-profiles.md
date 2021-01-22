@@ -1,18 +1,14 @@
 ---
 title: Dynamic Media 비디오 프로필
-seo-title: Dynamic Media 비디오 프로필
-description: 'Dynamic Media에는 미리 정의된 응용 비디오 인코딩 프로필이 이미 포함되어 있습니다. 이 기본 프로필의 설정은 최상의 보기 환경을 고객에게 제공하기 위해 최적화되어 있습니다. '
-seo-description: 'Dynamic Media에는 미리 정의된 응용 비디오 인코딩 프로필이 이미 포함되어 있습니다. 이 기본 프로필의 설정은 최상의 보기 환경을 고객에게 제공하기 위해 최적화되어 있습니다. '
-uuid: cfb498f8-44a0-4d94-99b0-fed7c27f575b
+description: 'Dynamic Media에는 사전 정의된 응용 비디오 인코딩 프로필이 포함되어 있습니다. 이 기본 프로필의 설정은 최상의 비디오 보기 환경을 고객에게 제공하기 위해 최적화되어 있습니다. '
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: b893f366-279a-4872-9413-77626d3387ea
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '3100'
+source-wordcount: '3068'
 ht-degree: 2%
 
 ---
@@ -114,9 +110,9 @@ Dynamic Media에는 이미 최상의 보기 경험을 위해 최적화된 MP4 H.
 * H264 프로필
 * 오디오 샘플링 속도
 
-값이 동일하지 않으면 프로파일을 그대로 계속 만들 수 있습니다. 그러나 적응형 스트리밍은 가능하지 않습니다. 대신 단일 비트 전송률 스트리밍을 경험할 수 있습니다. 프로필의 개별 인코딩 사전 설정에서 동일한 값을 사용하도록 인코딩 설정을 편집하는 것이 좋습니다. 응용 스트리밍에 대해 인코딩&#x200B;**[!UICONTROL 이 활성화되어 있으면 비디오 프로필/사전 설정 편집기가 응용 비디오 인코딩 설정의 패리티를 적용해야 합니다.]**
+값이 동일하지 않으면 프로파일을 그대로 계속 만들 수 있습니다. 그러나 적응형 스트리밍은 가능하지 않습니다. 대신 단일 비트 전송률 스트리밍을 경험할 수 있습니다. 프로필의 개별 인코딩 사전 설정에서 동일한 값을 사용하도록 인코딩 설정을 편집하는 것이 좋습니다. 응용 스트리밍에 대해 인코딩&#x200B;]**이 활성화되어 있으면 비디오 프로필/사전 설정 편집기가 응용 비디오 인코딩 설정의 패리티를 적용해야 합니다.**[!UICONTROL 
 
-점진적 스트리밍을 위한 비디오 인코딩 프로필 만들기[를 참조하십시오.](#creating-a-video-encoding-profile-for-progressive-streaming)
+점진적 스트리밍을 위한 비디오 인코딩 프로필 만들기](#creating-a-video-encoding-profile-for-progressive-streaming)를 참조하십시오.[
 
 [비디오 인코딩에 대한 우수 사례](video.md#best-practices-for-encoding-videos)도 참조하십시오.
 
@@ -166,7 +162,7 @@ Dynamic Media에는 이미 최상의 보기 경험을 위해 최적화된 MP4 H.
 * Dynamic Media-Scene7 모드:H.264(.mp4)
 * Dynamic Media-하이브리드 모드:H.264(.mp4), WebM
 
-응용 스트리밍을 위한 비디오 인코딩 프로필 만들기[를 참조하십시오.](#creating-a-video-encoding-profile-for-adaptive-streaming)
+응용 스트리밍을 위한 비디오 인코딩 프로필 만들기](#creating-a-video-encoding-profile-for-adaptive-streaming)를 참조하십시오.[
 
 [비디오 인코딩에 대한 우수 사례](video.md#best-practices-for-encoding-videos)도 참조하십시오.
 
@@ -200,7 +196,7 @@ Dynamic Media에는 이미 최상의 보기 경험을 위해 최적화된 MP4 H.
    * 5-10단계를 반복하여 추가 인코딩 사전 설정을 만듭니다.
    * 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장]**&#x200B;을 눌러 프로필을 저장합니다.
 
-## 사용자 정의 추가 비디오 인코딩 매개 변수 {#using-custom-added-video-encoding-parameters} 사용
+## 사용자가 추가한 비디오 인코딩 매개 변수 사용 {#using-custom-added-video-encoding-parameters}
 
 AEM에서 비디오 프로필을 만들거나 편집할 때 사용자 인터페이스에 없는 고급 비디오 인코딩 매개 변수를 활용하려면 기존 비디오 인코딩 프로필을 편집할 수 있습니다. 사용자 정의 프로필에는 **[!UICONTROL minBitrate]** 및 **[!UICONTROL maxBitrate]**&#x200B;와 같은 하나 이상의 고급 매개 변수를 추가합니다.
 
@@ -237,13 +233,13 @@ AEM에서 비디오 프로필을 만들거나 편집할 때 사용자 인터페�
     </tr> 
     <tr> 
     <td><code>minBitrate</code></td> 
-    <td><p>가변 비트 전송률 인코딩을 허용하는 최소 비트 전송률(Kbps/초당 킬로비트)입니다.</p> <p>이 매개 변수는 비디오 인코딩 프로필을 만들거나 편집할 때 [고급] 탭에서 [상수 비트 전송률 사용<strong>]이 선택 해제된 경우에만 적용됩니다.</strong></p> <p><a href="/help/assets/video.md#bitrate">비트 전송률</a>도 참조하십시오.</p> </td> 
+    <td><p>가변 비트 전송률 인코딩을 허용하는 최소 비트 전송률(Kbps/초당 킬로비트)입니다.</p> <p>이 매개 변수는 비디오 인코딩 프로필을 만들거나 편집할 때 [고급] 탭에서 [상수 비트 전송률 사용</strong>]이 선택 해제된 경우에만 적용됩니다.<strong></strong></p> <p><a href="/help/assets/video.md#bitrate">비트 전송률</a>도 참조하십시오.</p> </td> 
     <td><code>String</code></td> 
     <td><p>양수입니다(Kbps).</p> <p>기본값이 없습니다.</p> </td> 
     </tr> 
     <tr> 
     <td><code>maxBitrate</code></td> 
-    <td><p>가변 비트 전송률 인코딩을 허용하는 최대 비트 전송률(Kbps)입니다.</p> <p>이 매개 변수는 비디오 인코딩 프로필을 만들거나 편집할 때 [고급] 탭에서 [상수 비트 전송률 사용<strong>]이 선택 해제된 경우에만 적용됩니다.</strong></p> <p><a href="/help/assets/video.md#bitrate">비트 전송률</a>도 참조하십시오.</p> </td> 
+    <td><p>가변 비트 전송률 인코딩을 허용하는 최대 비트 전송률(Kbps)입니다.</p> <p>이 매개 변수는 비디오 인코딩 프로필을 만들거나 편집할 때 [고급] 탭에서 [상수 비트 전송률 사용</strong>]이 선택 해제된 경우에만 적용됩니다.<strong></strong></p> <p><a href="/help/assets/video.md#bitrate">비트 전송률</a>도 참조하십시오.</p> </td> 
     <td><code>String</code></td> 
     <td><p>양수입니다(Kbps).</p> <p>기본값이 없습니다. 그러나 인코딩 비트 전송률의 최대 2배까지 권장되는 값입니다.</p> </td> 
     </tr> 
