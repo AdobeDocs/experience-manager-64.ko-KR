@@ -1,18 +1,14 @@
 ---
 title: Dynamic Media 자산 게시
-seo-title: Dynamic Media 자산 게시
-description: 다이내믹 미디어 자산을 게시하는 방법
-seo-description: 다이내믹 미디어 자산을 게시하는 방법
-uuid: b1bee905-86cf-4284-8d4e-067e11557899
+description: 이러한 자산의 HTTP/2 배달을 포함하여 Dynamic Media 자산을 게시하는 방법.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 translation-type: tm+mt
-source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '409'
 ht-degree: 0%
 
 ---
@@ -34,7 +30,7 @@ ht-degree: 0%
 
 [웹 응용 프로그램에 URL 연결](linking-urls-to-yourwebapplication.md)을 참조하십시오.
 
-웹 페이지에 비디오 뷰어 포함을 참조하십시오.[](embed-code.md)
+웹 페이지에 비디오 뷰어 포함을 참조하십시오.](embed-code.md)[
 
 >[!NOTE]
 >
