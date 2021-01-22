@@ -7,10 +7,10 @@ user-guide-title: AEM 6.4 클래식 UI 작성 사용 안내서
 breadcrumb-title: 클래식 UI 작성 안내서
 user-guide-description: 이 안내서에서는 클래식 사용자 인터페이스에서 AEM의 작성 개념을 다룹니다.
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 95%
+source-wordcount: '319'
+ht-degree: 92%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 95%
    + [Dynamic Media 자산 제공](dynamic-media-assets-delivering.md)
    + [Autodesk Maya 및 Mental Ray로 표준 스테이지 설정](classicui-stages-aem3d-ad-mr.md)
    + [페이지에 Dynamic Media 자산 추가](dynamic-media-assets-adding-to-page.md)
-   + [Scene7 기능을 페이지에 추가](manage-assets-classic-s7.md)
+   + [페이지에 Dynamic Media Classic(Scene7) 기능 추가](manage-assets-classic-s7.md)
    + [Dynamic Media 작업](dynamic-media-assets.md)
    + [3D 자산 작업](classicui-3dassets.md)
    + [비디오](manage-assets-classic-s7-video.md)
