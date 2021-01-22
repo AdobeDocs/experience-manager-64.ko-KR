@@ -1,19 +1,15 @@
 ---
 title: 클라우드 서비스 구성
-seo-title: 클라우드 서비스 구성
-description: 기존 인스턴스를 확장하여 고유한 구성을 만들 수 있습니다
-seo-description: 기존 인스턴스를 확장하여 고유한 구성을 만들 수 있습니다
-uuid: 9d20c3a4-2a12-4d3c-80c3-fcac3137a675
+description: 기존 인스턴스를 확장하여 고유한 구성을 만들 수 있습니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: d25c03bf-6eaa-45f4-ab60-298865935a62
 translation-type: tm+mt
-source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 4%
+source-wordcount: '566'
+ht-degree: 3%
 
 ---
 
@@ -222,7 +218,7 @@ API에 대한 참조 설명서는 [com.day.cq.wcm.webservicessupport](https://he
 * [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [Test&amp;Target](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
 * [Search&amp;Promote](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote)
-* [Scene7](/help/sites-administering/marketing-cloud.md#integrating-with-scene)
+* [Dynamic Media](/help/sites-administering/marketing-cloud.md#integrating-with-scene)
 
 >[!NOTE]
 >
