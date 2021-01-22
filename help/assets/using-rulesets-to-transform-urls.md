@@ -1,18 +1,14 @@
 ---
 title: 규칙 세트를 사용하여 URL 변형
-seo-title: 규칙 세트를 사용하여 URL 변형
 description: 'Dynamic Media에서 규칙 세트를 배포하여 URL을 변환할 수 있습니다. 규칙 세트는 XML 데이터를 평가하고 특정 조건을 충족하는 경우 특정 작업을 수행하는 스크립팅 언어(예: JavaScript)로 작성된 지침 세트입니다. '
-seo-description: 'Dynamic Media에서 규칙 세트를 배포하여 URL을 변환할 수 있습니다. 규칙 세트는 XML 데이터를 평가하고 특정 조건을 충족하는 경우 특정 작업을 수행하는 스크립팅 언어(예: JavaScript)로 작성된 지침 세트입니다. '
-uuid: 9fed0c83-67b7-4483-a9b4-322e6a483449
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: abcff903-204b-4ab6-87d8-6f0ce63d7b41
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -25,18 +21,18 @@ Dynamic Media에서 규칙 세트를 배포하여 URL을 변환할 수 있습니
 * MIME 유형 접미사를 추가하는 중입니다. 대부분의 서비스 및 웹 사이트에는 URL에 `.jpg`을 추가하는 등 이미지 접미어가 필요합니다.
 * SEO용 URL의 폴더 경로 만들기(검색 엔진 최적화) 목적으로.
 
-   [Adobe Scene7 Publishing System이 SEO](/help/assets/assets/s7_seo.pdf)를 지원하는 방법을 참조하십시오.
+   [Adobe Dynamic Media Classic이 SEO](/help/assets/assets/s7_seo.pdf)를 지원하는 방법을 참조하십시오.
 
 * SEO(검색 엔진 최적화)를 위해 URL에 메타데이터를 추가합니다.
 
-   [Adobe Scene7 Publishing System이 SEO](/help/assets/assets/s7_seo.pdf)를 지원하는 방법을 참조하십시오.
+   [Adobe Dynamic Media Classic이 SEO](/help/assets/assets/s7_seo.pdf)를 지원하는 방법을 참조하십시오.
 
 * 다운로드를 트리거하도록 컨텐츠 처리를 설정합니다.
 * 개인화를 위해 이미지 제공 템플릿 URL을 간소화할 수 있습니다. 예를 들어 `rgb{XX,YY,ZZ}`을(를) RTF용 `\redXX\greenYY\blueZZ`으로 바꿉니다.
 
 * `$`, `{` 및 `}` 등의 인코딩할 특정 문자와 ImageServer로 디코딩할 특정 문자를 요청합니다. 예를 들어 Facebook은 특수 문자가 포함된 URL과 잘 작동하지 않습니다.
 
-   URL[에서 특수 문자 제거를 참조하십시오.](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html)
+   URL](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html)에서 특수 문자 제거를 참조하십시오.[
 
 Dynamic Media 컨텍스트에서 XML 기반 시스템을 사용하여 에셋 정보를 관리하는 웹 사이트는 XML 파일을 Dynamic Media에 업로드할 수 있습니다. 이러한 파일 중 하나를 Dynamic Media 에셋을 제공하는 사전 처리 규칙 세트 파일로 지정할 수 있습니다. 이 파일은 Dynamic Media과 통합된 시스템의 비즈니스 로직을 충족하기 위해 표준 URL 프로토콜 형식을 재구성합니다. 규칙 세트 정의 파일 경로로 사용할 XML 파일을 지정합니다.
 
@@ -53,19 +49,19 @@ Dynamic Media 컨텍스트에서 XML 기반 시스템을 사용하여 에셋 정
 또한 먼저 라이브 프로덕션 환경에 영향을 주지 않는 스테이징 환경에서 규칙 세트를 테스트해야 합니다.\
 프로덕션 환경과 스테이징 환경은 일반적으로 서로 다른 로그인을 필요로 합니다.
 
-* **NA 준비** 환경 로그인 페이지: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
-* **EMEA 스테이징** 환경 로그인 페이지: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
-* **JAPAC 스테이징** 환경 로그인 페이지: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/)
+로그인 정보](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app)에 대해서는 [Adobe Dynamic Media Classic 데스크톱 응용 프로그램을 참조하십시오.
 
-규칙 세트[에서 &#39;is&#39; 이미지 대신 &#39;asset&#39; 사용을 참조하십시오.](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html)
+<!-- * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
+* **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
+* **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
+
+규칙 세트](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html)에서 &#39;is&#39; 이미지 대신 &#39;asset&#39; 사용을 참조하십시오.[
 
 **XML 규칙 세트를 배포하려면:**
 
-1. Dynamic Media Classic 계정에 로그온합니다.
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app)에 로그인합니다.
 
-   [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
-
-   프로비저닝 시 Adobe에서 자격 증명 및 로그온을 제공했습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
+   프로비저닝 시 Adobe에서 자격 증명 및 로그인을 제공했습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
 
 1. 다음을 수행하여 규칙 세트 파일을 업로드합니다.
 
