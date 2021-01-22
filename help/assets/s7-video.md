@@ -1,31 +1,27 @@
 ---
 title: 비디오
-seo-title: 비디오
-description: Dynamic Media Classic으로 자동 인코딩할 비디오를 업로드하고 AEM Assets에서 직접 Dynamic Media Classic 비디오에 액세스할 수 있는 중앙 비디오 에셋 관리 AEM Assets에 대해 알아보십시오. Dynamic Media Classic 비디오 통합은 최적화된 비디오의 범위를 모든 화면으로 확장합니다.
-seo-description: Dynamic Media Classic으로 자동 인코딩할 비디오를 업로드하고 AEM Assets에서 직접 Dynamic Media Classic 비디오에 액세스할 수 있는 중앙 비디오 에셋 관리 AEM Assets에 대해 알아보십시오. Dynamic Media Classic 비디오 통합은 최적화된 비디오의 범위를 모든 화면으로 확장합니다.
-uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
+description: Dynamic Media Classic으로 자동 인코딩할 비디오를 업로드하고 AEM Assets에서 직접 Dynamic Media Classic 비디오에 액세스할 수 있는 중앙 비디오 에셋 관리 AEM Assets에 대해 알아보십시오. Dynamic Media Classic 비디오 통합은 자동 디바이스 및 자동 대역폭 감지 기능을 사용하여 최적화된 비디오의 범위를 모든 화면으로 확장합니다.
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: managing-assets
 content-type: reference
-discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1681'
-ht-degree: 64%
+source-wordcount: '1617'
+ht-degree: 67%
 
 ---
 
 
 # 비디오 {#video}
 
-자산은 Dynamic Media Classic(Scene7)으로 자동 인코딩하기 위해 자산에 바로 비디오를 업로드하고 페이지 작성을 위해 자산에서 직접 Dynamic Media Classic 비디오에 액세스할 수 있는 중앙 집중식 비디오 자산 관리를 제공합니다.
+자산은 Dynamic Media Classic으로 자동 인코딩을 위해 자산으로 비디오를 직접 업로드하고, 페이지 작성을 위해 자산에서 직접 Dynamic Media Classic 비디오에 액세스할 수 있는 중앙 집중식 비디오 자산 관리를 제공합니다.
 
 Dynamic Media Classic 비디오 통합은 모든 화면으로 최적화된 비디오의 범위를 확장합니다(자동 장치 및 대역폭 검색).
 
 * **[!UICONTROL Scene7 Video]** 구성 요소는 장치 및 대역폭 검색을 자동으로 수행하여 데스크톱, 태블릿 및 모바일에서 올바른 형식 및 올바른 품질의 비디오를 재생합니다.
-* 자산 - 단일 비디오 자산만이 아닌 응용 비디오 세트를 포함할 수 있습니다. 응용 비디오 세트는 여러 화면에서 비디오를 원활하게 재생하는 데 필요한 모든 비디오 표현물을 위한 컨테이너입니다. 응용 비디오 세트는 다른 비트율 및 형식(예: 400kbps, 800kbps 및 1000kbps)으로 인코딩된 동일한 비디오 버전을 그룹화합니다. 데스크톱, iOS, Android, Blackberry 및 Windows 모바일 장치를 포함하는 여러 화면에서 응용 비디오 스트리밍을 위해 S7 비디오 구성 요소와 함께 응용 비디오 세트를 사용합니다. 자세한 내용은 [응용 비디오 세트에 대한 Scene7 설명서](https://help.adobe.com/ko_KR/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html)를 참조하십시오.
+* 자산 - 단일 비디오 자산만이 아닌 응용 비디오 세트를 포함할 수 있습니다. 응용 비디오 세트는 여러 화면에서 비디오를 원활하게 재생하는 데 필요한 모든 비디오 표현물을 위한 컨테이너입니다. 응용 비디오 세트는 다른 비트율 및 형식(예: 400kbps, 800kbps 및 1000kbps)으로 인코딩된 동일한 비디오 버전을 그룹화합니다. 데스크톱, iOS, Android, Blackberry 및 Windows 모바일 장치를 포함하는 여러 화면에서 응용 비디오 스트리밍을 위해 S7 비디오 구성 요소와 함께 응용 비디오 세트를 사용합니다. <!-- See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html). -->
 
 ## FFMPEG 및 Dynamic Media Classic 정보 {#about-ffmpeg-and-scene}
 
