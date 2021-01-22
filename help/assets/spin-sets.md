@@ -1,18 +1,14 @@
 ---
 title: 스핀 세트
-seo-title: 스핀 세트
-description: 다이내믹 미디어의 스핀 세트를 사용하여 작업하는 방법 살펴보기
-seo-description: 다이내믹 미디어의 스핀 세트를 사용하여 작업하는 방법 살펴보기
-uuid: a80a0491-6500-463a-83c4-ff4b90a88182
+description: Dynamic Media에서 스핀 세트를 사용하여 작업하는 방법을 알아봅니다. 회전 집합은 개체를 돌려 모든 각도에서 검사하는 실제 동작을 시뮬레이션합니다.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: afacb3ad-e4ad-4d06-a898-f3f2da8bbb64
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1838'
+source-wordcount: '1843'
 ht-degree: 0%
 
 ---
