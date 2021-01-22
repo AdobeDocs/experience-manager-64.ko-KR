@@ -8,9 +8,9 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 translation-type: tm+mt
-source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '7833'
+source-wordcount: '7831'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ Dynamic Media 구성에 문제가 있는 경우 중요한 위치를 찾는 것�
 * `s7access.log`
 * `ImageServing.log`
 
-AEM 인스턴스[모니터링 및 유지 관리에 설명되어 있습니다.](/help/sites-deploying/monitoring-and-maintaining.md)
+AEM 인스턴스](/help/sites-deploying/monitoring-and-maintaining.md)모니터링 및 유지 관리에 설명되어 있습니다.[
 
 하이브리드 게시 및 전달은 Adobe Experience Manager에 추가되는 Dynamic Media의 핵심 기능입니다. 하이브리드 게시를 사용하면 AEM 게시 노드가 아닌 클라우드에서 이미지, 세트 및 비디오와 같은 Dynamic Media 에셋을 제공할 수 있습니다.
 
@@ -140,7 +140,7 @@ Dynamic Media의 고객인 경우 모든 Dynamic Media 컨텐츠의 전달 메�
 
 Dynamic Media을 활성화하면 UI에서 다이내믹 미디어 기능을 사용할 수 있고 업로드된 모든 이미지 자산은 다이내믹 이미지 표현물을 신속하게 전달하는 데 사용되는 `cqdam.pyramid.tiff` 변환을 받습니다. 이러한 PTIFF는 (1) 하나의 마스터 이미지만을 관리하고 추가 저장 없이 즉석에서 무한 표현물을 생성할 수 있는 기능, (2) 확대/축소, 이동, 회전 등과 같은 대화형 시각화를 사용할 수 있는 기능 등 상당한 이점을 제공합니다.
 
-AEM에서 Dynamic Media Classic(Scene7)을 사용하려면 [특정 시나리오](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media)를 사용하지 않는 한 Dynamic Media을 활성화하지 않아야 합니다. 실행 모드를 통해 다이내믹 미디어를 활성화하지 않으면 Dynamic Media이 비활성화됩니다.
+AEM에서 Dynamic Media Classic을 사용하려면 [특정 시나리오](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media)를 사용하지 않는 한 Dynamic Media을 활성화하지 않아야 합니다. Dynamic Media은 실행 모드를 통해 Dynamic Media을 활성화하지 않는 한 비활성화됩니다.
 
 다이내믹 미디어를 활성화하려면 명령줄이나 빠른 시작 파일 이름에서 다이내믹 미디어 실행 모드를 활성화해야 합니다.
 
@@ -284,7 +284,7 @@ Dynamic Media 이미지 배달 서비스에 이미지를 복제하려면 작성�
 
    다음으로 [복제 에이전트를 구성해야 합니다.](#configuring-the-replication-agent)
 
-### 복제 에이전트 {#configuring-the-replication-agent} 구성
+### 복제 에이전트 구성 {#configuring-the-replication-agent}
 
 1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구 > 배포 > 복제 > 작성자]**&#x200B;의 에이전트를 탭합니다.
 1. 작성자 페이지의 에이전트 페이지에서 **[!UICONTROL Dynamic Media 하이브리드 이미지 복제(s7delivery)]**&#x200B;를 탭합니다.
@@ -676,7 +676,7 @@ Dynamic Media이 아닌 배포에서는 AEM 작성 환경에서 모든 _자산(�
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Dynamic Media Classic(Scene7) 통합</td> 
+   <td>Dynamic Media Classic 통합</td> 
    <td><p>필터 이미지</p> <p>필터 세트</p> <p>필터 비디오</p> </td> 
    <td><p><strong>image/</strong>로 시작</p> <p><strong>application/</strong>을 포함하며 <strong>set</strong>으로 끝납니다.</p> <p><strong>video/</strong>로 시작</p> </td> 
    <td><p>Adobe Dynamic Media Cloud 복제 서비스 URL 대신 AEM 게시 서버를 가리키도록 전송 URI를 구성합니다. 이 필터를 설정하면 Dynamic Media Classic에서 AEM 게시 인스턴스 대신 자산을 제공할 수 있습니다.</p> <p>곧바로 사용할 수 있는 "필터 이미지", "필터 세트" 및 "필터 비디오"는 다음과 같습니다.</p> 
@@ -992,7 +992,7 @@ CMYK, RGB 또는 회색 출력을 사용하여 다이내믹 미디어 색상 관
 
    색상 교정 속성은 **[!UICONTROL 색상 교정 속성]** 표에 설명되어 있습니다. 색상 교정 속성에 할당할 수 있는 값은 **[!UICONTROL 색상 프로필]** 표에 있습니다.
 
-   예를 들어 **[!UICONTROL 이름]**&#x200B;에서 `iccprofilecmyk`를 추가하고 **[!UICONTROL 유형]** `String`을 선택하고 `WebCoated`값&#x200B;]**으로 &lt;a6/>을(를) 추가합니다.**[!UICONTROL  **[!UICONTROL 추가]**&#x200B;를 누른 다음 **[!UICONTROL 모두 저장]**&#x200B;을 눌러 값을 저장합니다.
+   예를 들어 **[!UICONTROL 이름]**&#x200B;에서 `iccprofilecmyk`를 추가하고 **[!UICONTROL 유형]** `String`을 선택하고 `WebCoated`값&#x200B;]**으로**[!UICONTROL &#x200B;을(를) 추가합니다. **[!UICONTROL 추가]**&#x200B;를 누른 다음 **[!UICONTROL 모두 저장]**&#x200B;을 눌러 값을 저장합니다.
 
    ![chlimage_1-515](assets/chlimage_1-515.png)
 
