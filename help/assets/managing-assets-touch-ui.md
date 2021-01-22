@@ -4,9 +4,9 @@ description: AEM Assets의 터치에 적합한 사용자 인터페이스를 사�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 59fed31d276510c3346a46ac38f2a79c6f91d848
 workflow-type: tm+mt
-source-wordcount: '10030'
+source-wordcount: '10039'
 ht-degree: 1%
 
 ---
@@ -151,8 +151,8 @@ Dynamic Media을 사용하면 FTP 서버를 통해 자산을 일괄 업로드할
 **FTP를 사용하여 자산을 업로드하려면**
 
 1. 원하는 FTP 클라이언트를 사용하여 프로비저닝 이메일에서 받은 FTP 사용자 이름과 암호를 사용하여 FTP 서버에 로그인합니다. FTP 클라이언트에서 FTP 서버에 파일 또는 폴더를 업로드합니다.
-1. [프로비저닝 이메일에서 ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 받은 자격 증명을 사용하여 Dynamic Media Classicics에 로그인합니다. 전역 탐색 막대에서 **[!UICONTROL 업로드]**&#x200B;를 탭합니다.
-
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을(를) 연 다음 프로비저닝 이메일에서 받은 자격 증명을 사용하여 계정에 로그인합니다.
+1. 전역 탐색 막대에서 **[!UICONTROL 업로드]**&#x200B;를 탭합니다.
 1. 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 업로드]** 페이지에서 **[!UICONTROL FTP]**&#x200B;를 통해 탭을 탭합니다.
 1. 페이지 왼쪽에서 파일을 업로드할 FTP 폴더를 선택합니다.페이지 오른쪽에서 대상 폴더를 선택합니다.
 1. 페이지의 오른쪽 아래 모서리 근처에 있는 **[!UICONTROL 작업 옵션]**&#x200B;을 탭한 다음 선택한 폴더의 자산을 기준으로 원하는 옵션을 설정합니다.
