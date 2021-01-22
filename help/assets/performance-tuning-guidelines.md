@@ -3,9 +3,9 @@ title: 자산 성능 조정 가이드
 description: 병목 현상을 제거하고 AEM Assets 성능을 최적화하기 위해 AEM 구성, 하드웨어, 소프트웨어 및 네트워크 구성 요소에 대한 변경 사항 등 주요 관심 영역을 중점적으로 살펴봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '3202'
+source-wordcount: '3206'
 ht-degree: 0%
 
 ---
@@ -165,7 +165,7 @@ AEM 6.2부터 AEM 6.1용 기능 팩이 포함된 경우 바이너리 없는 복�
 
 ### DAM 자산 업데이트 구성 {#dam-update-asset-configuration}
 
-DAM 자산 업데이트 워크플로우에는 Scene7 PTIFF 생성 및 InDesign Server 통합과 같은 작업에 대해 구성된 전체 단계 세트가 포함되어 있습니다. 그러나 대부분의 사용자는 이러한 단계를 여러 번 수행하지 않아도 됩니다. Adobe에서는 DAM 자산 업데이트 워크플로우 모델의 사용자 지정 복사본을 만들고 불필요한 단계를 제거하는 것이 좋습니다. 이 경우 새 모델을 가리키도록 DAM Update Asset용 릴리스를 업데이트합니다.
+DAM 자산 업데이트 워크플로우에는 Dynamic Media Classic PTIFF 생성 및 InDesign Server 통합과 같은 작업에 대해 구성된 전체 단계 세트가 포함되어 있습니다. 그러나 대부분의 사용자는 이러한 단계를 여러 번 수행하지 않아도 됩니다. Adobe에서는 DAM 자산 업데이트 워크플로우 모델의 사용자 지정 복사본을 만들고 불필요한 단계를 제거하는 것이 좋습니다. 이 경우 새 모델을 가리키도록 DAM Update Asset용 릴리스를 업데이트합니다.
 
 >[!NOTE]
 >
@@ -183,7 +183,7 @@ DAM 자산 업데이트 워크플로우에는 Scene7 PTIFF 생성 및 InDesign S
 
 많은 사이트 고객은 요청될 때 이미지 크기를 조정하고 잘라내는 이미지 서블릿을 구현하여 게시 인스턴스에 추가 로드를 적용합니다. 그러나 이러한 이미지를 캐시하는 한 이러한 문제를 완화시킬 수 있습니다.
 
-또 다른 방법은 Scene7 기술을 사용하여 이미지 조작을 전적으로 수행하는 것입니다. 또한 AEM 인프라에서 변환 생성 책임을 인계받을 뿐만 아니라 전체 게시 계층까지 포함하는 브랜드 포털을 배포할 수 있습니다.
+또 다른 방법은 Dynamic Media Classic 기술을 사용하여 이미지 조작을 전적으로 수행하는 것입니다. 또한 AEM 인프라에서 변환 생성 책임을 인계받을 뿐만 아니라 전체 게시 계층까지 포함하는 브랜드 포털을 배포할 수 있습니다.
 
 #### ImageMagick {#imagemagick}
 
