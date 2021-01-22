@@ -3,9 +3,9 @@ title: AEM Assets에서 지원되는 파일 형식
 description: AEM Assets에서 지원하는 파일 형식 및 MIME 유형 목록과 각 형식에 지원되는 기능.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2baa172088f646752e85168d432d46942ac8244e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1706'
+source-wordcount: '1708'
 ht-degree: 9%
 
 ---
@@ -81,7 +81,7 @@ Dynamic Media 기능에 지원되는 래스터 이미지 형식은 다음과 같
 
 다음 목록은 Dynamic Media에서 지원되지 *않는 래스터 이미지 파일 형식의 하위 유형에 대해 설명합니다.*
 
-Dynamic Media[에 대해 지원되지 않는 파일 형식 감지를 참조하십시오.](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html)
+Dynamic Media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html)에 대해 지원되지 않는 파일 형식 감지를 참조하십시오.[
 
 * IDAT 청크 크기가 100MB보다 큰 PNG 파일.
 * PSB 파일.
@@ -147,7 +147,7 @@ Dynamic Media 기능에 지원되는 문서 형식은 다음과 같습니다.
 | ODT |  |  |  |  |  |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | HTML |  |  |  |  |  |
-| TTF |  |  |  |  |  |
+| RTF |  |  |  |  |  |
 | TXT |  |  |  |  |  |
 | XLS |  |  |  |  |  |
 | XLSX |  |  |  |  |  |
@@ -307,6 +307,6 @@ Dynamic Media 기능에 지원되는 문서 형식은 다음과 같습니다.
 
 >[!MORELIKETHIS]
 >
->* [MIME 유형 기반 자산/Scene7 업로드 작업 매개 변수 지원을 활성화합니다](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
+>* [MIME 유형 기반 자산/Dynamic Media Classic 업로드 작업 매개 변수 지원을 활성화합니다](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
 >* [업로드 작업 매개 변수 지원을 위해 MIME 유형 기반](config-dynamic.md) 구성
 
