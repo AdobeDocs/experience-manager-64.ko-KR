@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integrations
 discoiquuid: 6301e0ef-3faa-4e6f-932d-37b049577cec
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: bd7f971cf26f60acc121d194d5251e87e0403718
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1544'
 ht-degree: 1%
 
 ---
@@ -118,7 +118,7 @@ Adobe Analytics을 사용자 정의하여 추가 매개 변수를 추가/제거�
 Cloud Service 구성은 Adobe Analytics 계정에 대한 정보입니다. 이 구성을 통해 Adobe Experience Manager(AEM)은 Adobe Analytics에 연결할 수 있습니다. 사용하는 각 Analytics 계정에 대해 별도의 구성을 만듭니다.
 
 1. AEM 작성자 인스턴스에 관리자로 로그인합니다.
-1. 왼쪽 위 모서리에서 **Adobe Experience Manager** > **도구** ![도구](assets/tools.png) **배포** > **Cloud Services**&#x200B;을 클릭합니다.
+1. 왼쪽 위 모서리에서 **Adobe Experience Manager** > **도구** ![도구](assets/tools.png) **Cloud Services** > **기존 Cloud Services**&#x200B;을 클릭합니다.
 1. **Adobe Analytics** 아이콘을 찾습니다. **구성 표시**&#x200B;를 클릭한 다음 **[+]**&#x200B;를 클릭하여 새 구성을 추가합니다.
 
    처음 사용하는 사용자의 경우 **지금 구성**&#x200B;을 클릭합니다.
