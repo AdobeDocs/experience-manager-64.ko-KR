@@ -7,10 +7,10 @@ user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 자산 제작, 관리, 배달 및 최적화
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 1c853b441845997fbb3086ca93d7020ed02d88c4
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 67%
+source-wordcount: '731'
+ht-degree: 66%
 
 ---
 
@@ -167,7 +167,7 @@ ht-degree: 67%
    + [스마트 콘텐츠 서비스 교육 지침](smart-tags-training-guidelines.md)
    + [비디오 표현물](video-renditions.md)
 + 3D 자산 {#three-d}
-   + [AEM 3D 릴리스 노트](../release-notes/aem3d-release-notes.md)
+   + [AEM 3D 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-64/assets/three-d/assets-3d.html)
    + [3D 자산 작업](assets-3d.md)
    + [AEM 3D 설치 및 구성](install-config-3d.md)
    + [고급 구성 설정](advanced-config-3d.md)
