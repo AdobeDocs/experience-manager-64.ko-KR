@@ -1,8 +1,8 @@
 ---
 title: API를 사용하여 AEM Forms 호출
 seo-title: API를 사용하여 AEM Forms 호출
-description: 'null'
-seo-description: 'null'
+description: 'Adobe Experience Manager Forms은 공유 인프라 내에서 작동하는 서비스로 구성된 J2EE 기반의 엔터프라이즈 소프트웨어입니다. 클라이언트 애플리케이션을 사용하여 Java API, 웹 서비스, Remoting 및 REST API를 사용하여 프로그래밍 방식으로 AEM Forms을 호출하는 방법에 대해 학습합니다. '
+seo-description: Adobe Experience Manager Forms은 공유 인프라 내에서 작동하는 서비스로 구성된 J2EE 기반의 엔터프라이즈 소프트웨어입니다. 클라이언트 애플리케이션을 사용하여 Java API, 웹 서비스, Remoting 및 REST API를 사용하여 프로그래밍 방식으로 AEM Forms을 호출하는 방법에 대해 학습합니다.
 uuid: d100e106-e508-4d3c-ba8c-b5fe13c9e2d6
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, coding
 discoiquuid: 1825e12c-0306-4e0a-9643-47ce1ce82132
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
