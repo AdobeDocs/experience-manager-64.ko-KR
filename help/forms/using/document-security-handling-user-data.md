@@ -1,16 +1,16 @@
 ---
 title: Document Security | 사용자 데이터 처리
 seo-title: Document Security | 사용자 데이터 처리
-description: 'null'
-seo-description: 'null'
+description: AEM Forms 문서 보안을 통해 사전 정의된 보안 설정을 작성, 저장 및 문서에 적용할 수 있습니다. 이렇게 하면 권한이 있는 사용자만 문서를 사용할 수 있습니다. 문서 보안은 데이터베이스 테이블에 데이터를 정리하고, 데이터베이스에 있는 사용자에 대해 문서 보안 데이터에 액세스하고 내보내는 방법을 알아보고, 필요한 경우 영구적으로 데이터를 삭제하는 방법을 알아봅니다.
+seo-description: AEM Forms 문서 보안을 통해 사전 정의된 보안 설정을 작성, 저장 및 문서에 적용할 수 있습니다. 이렇게 하면 권한이 있는 사용자만 문서를 사용할 수 있습니다. 문서 보안은 데이터베이스 테이블에 데이터를 정리하고, 데이터베이스에 있는 사용자에 대해 문서 보안 데이터에 액세스하고 내보내는 방법을 알아보고, 필요한 경우 영구적으로 데이터를 삭제하는 방법을 알아봅니다.
 uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
