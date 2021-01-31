@@ -1,17 +1,17 @@
 ---
 title: '"자습서:양식 데이터 모델 만들기 "'
 seo-title: 양식 데이터 모델 만들기 자습서
-description: 'null'
-seo-description: 'null'
+description: AEM Forms 데이터 통합 모듈을 사용하면 AEM 사용자 프로필, RESTful 웹 서비스, SOAP 기반 웹 서비스, OData 서비스 및 관계형 데이터베이스와 같은 다양한 백엔드 데이터 소스에서 양식 데이터 모델을 만들 수 있습니다. MySQL 데이터베이스를 데이터 소스로 구성하고, 양식 데이터 모델을 만들고, 구성하고 테스트하는 방법에 대해 알아보십시오.
+seo-description: AEM Forms 데이터 통합 모듈을 사용하면 AEM 사용자 프로필, RESTful 웹 서비스, SOAP 기반 웹 서비스, OData 서비스 및 관계형 데이터베이스와 같은 다양한 백엔드 데이터 소스에서 양식 데이터 모델을 만들 수 있습니다. MySQL 데이터베이스를 데이터 소스로 구성하고, 양식 데이터 모델을 만들고, 구성하고 테스트하는 방법에 대해 알아보십시오.
 page-status-flag: de-activated
 uuid: 81d40278-4df9-4b61-93ad-eae2fce0a35c
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 31e97723-d637-4a18-999d-36e00fbd031a
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '1444'
+source-wordcount: '1544'
 ht-degree: 1%
 
 ---
@@ -88,7 +88,7 @@ MySQL 데이터베이스를 구성하려면 다음을 수행합니다.
 
 ## 2단계:양식 데이터 모델 {#create-fdm} 만들기
 
-AEM Forms은 구성된 데이터 소스에서 양식 데이터 모델[을 만들기 위한 직관적인 사용자 인터페이스를 제공합니다. ](data-integration.md) 양식 데이터 모델에서 여러 데이터 소스를 사용할 수 있습니다. 사용 사례를 위해 구성된 MySQL 데이터 소스를 사용합니다.
+AEM Forms은 구성된 데이터 소스에서 양식 데이터 모델](data-integration.md)을 만들기 위한 직관적인 사용자 인터페이스를 제공합니다. [ 양식 데이터 모델에서 여러 데이터 소스를 사용할 수 있습니다. 사용 사례를 위해 구성된 MySQL 데이터 소스를 사용합니다.
 
 양식 데이터 모델을 만들려면 다음을 수행합니다.
 
