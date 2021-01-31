@@ -1,17 +1,17 @@
 ---
 title: 통신 관리 | 사용자 데이터 처리
 seo-title: 통신 관리 | 사용자 데이터 처리
-description: 'null'
-seo-description: 'null'
+description: AEM Forms 커뮤니케이션 관리를 사용하면 안전하고 개인화된 고객 메시지를 제작, 관리 및 간소화할 수 있습니다. AEM 리포지토리에서 초안 및 제출된 서신에 대한 데이터를 저장하고 저장된 데이터에 액세스하고 저장된 데이터를 삭제하는 방법을 알아봅니다.
+seo-description: AEM Forms 커뮤니케이션 관리를 사용하면 안전하고 개인화된 고객 메시지를 제작, 관리 및 간소화할 수 있습니다. AEM 리포지토리에서 초안 및 제출된 서신에 대한 데이터를 저장하고 저장된 데이터에 액세스하고 저장된 데이터를 삭제하는 방법을 알아봅니다.
 uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 1%
+source-wordcount: '614'
+ht-degree: 0%
 
 ---
 
