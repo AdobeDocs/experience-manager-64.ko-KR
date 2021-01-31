@@ -1,18 +1,18 @@
 ---
 title: Forms 포털 | 사용자 데이터 처리
 seo-title: Forms 포털 | 사용자 데이터 처리
-description: 'null'
-seo-description: 'null'
+description: AEM Forms 포털은 AEM Sites 페이지에서 적응형 양식, HTML5 양식 및 기타 Forms 에셋을 나열하는 데 사용할 수 있는 구성 요소를 제공합니다. Forms 포털에서 초안 및 제출된 양식에 대한 데이터를 저장하는 방법을 알아봅니다. 구성된 데이터 저장소에서 로그인 및 익명 사용자를 위해 초안 및 제출된 양식 데이터에 액세스하는 방법을 자세히 살펴보고 필요한 경우 삭제합니다.
+seo-description: AEM Forms 포털은 AEM Sites 페이지에서 적응형 양식, HTML5 양식 및 기타 Forms 에셋을 나열하는 데 사용할 수 있는 구성 요소를 제공합니다. Forms 포털에서 초안 및 제출된 양식에 대한 데이터를 저장하는 방법을 알아봅니다. 구성된 데이터 저장소에서 로그인 및 익명 사용자를 위해 초안 및 제출된 양식 데이터에 액세스하는 방법을 자세히 살펴보고 필요한 경우 삭제합니다.
 uuid: 2ac2b2a9-b603-489a-86b8-a78b697f130d
 contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 1%
+source-wordcount: '980'
+ht-degree: 0%
 
 ---
 
