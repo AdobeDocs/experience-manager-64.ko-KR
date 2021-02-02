@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '2829'
+source-wordcount: '2825'
 ht-degree: 39%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 39%
 
 웹 사이트에서 사용하는 자산에 다이내믹 미디어 기능을 추가하려면 페이지에 직접 **Dynamic Media** 또는 **대화형 미디어** 구성 요소를 추가할 수 있습니다. 이렇게 하려면 레이아웃 모드로 전환하고 다이내믹 미디어 구성 요소를 활성화합니다. 그런 다음이 구성 요소를 페이지에 추가하고 자산을 구성 요소에 추가할 수 있습니다. 다이내믹 미디어 및 대화형 미디어 구성 요소는 편리하게도 이미지를 추가할지 아니면 비디오를 추가할지를 판단하고 그에 따라 사용 가능한 선택 사항도 달라집니다.
 
-AEM을 WCM으로 사용하는 경우에는 다이내믹 미디어 자산을 페이지에 직접 추가합니다. WCM에 제3자를 사용하는 경우 [link](linking-urls-to-yourwebapplication.md) 또는 [embed](embed-code.md) 에셋을 참조하십시오. 응답형 제3자 웹 사이트는 응답형 사이트[에 최적화된 이미지 제공을 참조하십시오.](responsive-site.md)
+AEM을 WCM으로 사용하는 경우에는 다이내믹 미디어 자산을 페이지에 직접 추가합니다. WCM에 제3자를 사용하는 경우 [link](linking-urls-to-yourwebapplication.md) 또는 [embed](embed-code.md) 에셋을 참조하십시오. 응답형 제3자 웹 사이트는 응답형 사이트](responsive-site.md)에 최적화된 이미지 제공을 참조하십시오.[
 
 >[!NOTE]
 >
@@ -186,8 +186,8 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 다이내믹 비디
 
    예를 들어 뷰어 수정자를 사용하여 다음을 수행할 수 있습니다.
 
-   * 캡션 파일을 비디오 [캡션과 연결합니다.](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * 탐색 파일을 비디오 [탐색과 연결합니다.](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * 캡션 파일을 비디오 [캡션과 연결합니다.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * 탐색 파일을 비디오 [탐색과 연결합니다.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
 구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 클릭하여 다음 [!UICONTROL 고급 설정]을 편집할 수 있습니다.
 
