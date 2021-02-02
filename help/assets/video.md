@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: Dynamic-Media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '10396'
+source-wordcount: '10392'
 ht-degree: 1%
 
 ---
@@ -144,7 +144,7 @@ Dynamic Media의 비디오는 데스크탑, iOS, Android, Blackberry 및 Windows
 * 비디오 에셋을 효율적으로 관리할 수 있는 완벽한 메타데이터 지원을 통해 비디오를 구성, 검색 및 검색할 수 있습니다.
 * 응용 비디오 세트를 웹뿐만 아니라 iPhone, iPad, Android, Blackberry 및 Windows 폰을 비롯한 데스크톱 및 모바일 장치에 제공합니다.
 
-적응형 비디오 스트리밍은 다양한 iOS 플랫폼에서 지원됩니다. [Adobe 뷰어 참조 안내서](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/library/home.html)를 참조하십시오.
+적응형 비디오 스트리밍은 다양한 iOS 플랫폼에서 지원됩니다. [Adobe 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)를 참조하십시오.
 
 Dynamic Media은 MP4 H.264 비디오에 대한 모바일 비디오 재생을 지원합니다. 다음 위치에서 이 비디오 형식을 지원하는 Blackberry 장치를 찾을 수 있습니다.[Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)에서 지원되는 비디오 형식.
 
@@ -172,7 +172,7 @@ Dynamic Media HTML5 비디오 뷰어 사전 설정은 강력한 비디오 플레
 
 HTML5 및 CSS를 사용하여 재생 구성 요소를 디자인하고 내장된 재생을 제공하며 브라우저 기능에 따라 적응형 및 점진적 스트리밍을 사용하는 기능을 단일 플레이어로 통합함으로써 리치 미디어 컨텐츠의 범위를 데스크탑 및 모바일 사용자 모두로 확대하고 간소화된 비디오 경험을 제공할 수 있습니다.
 
-Adobe 뷰어 참조 안내서의 [HTML5 뷰어 정보](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html)도 참조하십시오.
+Adobe 뷰어 참조 안내서의 [HTML5 뷰어 정보](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html)도 참조하십시오.
 
 ### HTML5 비디오 뷰어 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}를 사용하여 데스크톱 컴퓨터와 모바일 장치에서 비디오 재생
 
@@ -410,7 +410,7 @@ VBR 대 CBR을 선택하는 경우에는 미디어 파일에 VBR을 사용하는
    <td><p>소스</p> </td> 
    <td><p>1920x1080</p> </td> 
    <td><p>1</p> </td> 
-   <td><p>3</p> </td> 
+   <td><p>1</p> </td> 
   </tr> 
   <tr> 
    <td><p>인코딩됨</p> </td> 
@@ -657,7 +657,7 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
 1. 다음을 수행하여 복사한 YouTube 게시 값을 프로필에 추가합니다.
 
    * 페이지 오른쪽에서 **[!UICONTROL 양식 작성]** 탭을 누릅니다.
-   * **[!UICONTROL 섹션 헤더]**&#x200B;라는 레이블이 있는 구성 요소를 왼쪽으로 드래그한 다음 양식 영역에 놓습니다.
+   * **[!UICONTROL 섹션 헤더]**&#x200B;라는 레이블이 지정된 구성 요소를 왼쪽으로 드래그한 다음 양식 영역에 놓습니다.
    * **[!UICONTROL 필드 레이블]**&#x200B;을 눌러 구성 요소를 선택합니다.
    * 페이지 오른쪽의 **[!UICONTROL 설정]** 탭의 **[!UICONTROL 필드 레이블]** 텍스트 필드에 `YouTube Publishing`를 입력합니다.
    * **[!UICONTROL 양식 작성]** 탭을 누른 다음 **[!UICONTROL 단일 행 텍스트]**&#x200B;라는 이름의 구성 요소를 드래그하여 방금 만든 **[!UICONTROL YouTube 게시]** 머리글 아래에 놓습니다.
@@ -667,7 +667,7 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
 1. 다음을 수행하여 복사한 YouTube 개인 정보 값을 프로필에 추가합니다.
 
    * 페이지 오른쪽에서 **[!UICONTROL 양식 작성]** 탭을 누릅니다.
-   * **[!UICONTROL 섹션 헤더]**&#x200B;라는 레이블이 지정된 구성 요소를 왼쪽으로 드래그한 다음 양식 영역에 놓습니다.
+   * **[!UICONTROL 섹션 헤더]**&#x200B;라는 레이블이 있는 구성 요소를 왼쪽으로 드래그한 다음 양식 영역에 놓습니다.
    * **[!UICONTROL 필드 레이블]**&#x200B;을 눌러 구성 요소를 선택합니다.
    * 페이지 오른쪽의 설정 탭의 필드 레이블 텍스트 필드에 `YouTube Privacy`을 입력합니다.
    * **[!UICONTROL 양식 작성]** 탭을 누른 다음 **[!UICONTROL 단일 행 텍스트]**&#x200B;라는 이름의 구성 요소를 드래그하여 방금 만든 **[!UICONTROL YouTube 개인 정보 보호]** 머리글 아래에 놓습니다.
