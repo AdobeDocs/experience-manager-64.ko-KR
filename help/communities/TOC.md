@@ -6,9 +6,9 @@ user-guide-title: AEM 6.4 Communities 사용 안내서
 breadcrumb-title: Communities 안내서
 user-guide-description: 포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험을 만들 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 5542ec45e64595a8e7159d925fdcbfff468ae7ec
+source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '506'
 ht-degree: 12%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 12%
    + [커뮤니티 사이트](administer-landing.md)
    + [AEM Communities 개요](overview.md)
    + [AEM 6.4 커뮤니티의 새로운 기능](whats-new-aem-communities.md)
-   + [AEM Communities 릴리스 노트](/help/release-notes/communities-release-notes.md)
+   + [AEM Communities 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/communities-release-notes.html)
    + [AEM Communities 시작하기](getting-started.md)
    + [AEM Communities for Enablement 시작하기](getting-started-enablement.md)
    + [초기 설정](setup.md)
@@ -39,7 +39,7 @@ ht-degree: 12%
    + [커뮤니티용 Dispatcher 구성](dispatcher.md)
 + 관리 {#administer}
    + [AEM Communities의 사용자 및 UGC 관리 서비스](user-ugc-management-service.md)
-   + [커뮤니티 사이트](administer-landing.md)
+   + [커뮤니티 사이트](https://experienceleague.adobe.com/docs/experience-manager-64/communities/introduction/administer-landing.html)
    + [커뮤니티 콘솔](consoles.md)
    + [커뮤니티 기능에 대한 분석 구성](analytics.md)
    + [지원 기능 구성](enablement.md)
@@ -47,7 +47,7 @@ ht-degree: 12%
    + [커뮤니티 콘텐츠 중재](moderate-ugc.md)
    + [이메일 구성](email.md)
    + [커뮤니티 알림](notifications.md)
-   + [커뮤니티 가입](subscriptions.md)
+   + [커뮤니티 구독](subscriptions.md)
    + [커뮤니티 채점 및 배지](implementing-scoring.md)
    + [사용자 및 사용자 그룹 관리](users.md)
    + [커뮤니티 그룹 콘솔](groups.md)
@@ -85,7 +85,7 @@ ht-degree: 12%
    + [소셜 구성 요소 프레임워크](scf.md)
    + [커뮤니티 구성 요소 안내서](components-guide.md)
    + [구성 요소, 기능 및 Feature Essentials](essentials.md)
-   + [튜토리얼](tutorials.md)
+   + [자습서](tutorials.md)
    + [문제 해결](troubleshooting.md)
    + [코딩 지침](code-guide.md)
    + [서버 측 사용자 정의](server-customize.md)
@@ -166,4 +166,5 @@ ht-degree: 12%
    + [활동 트렌드](trends.md)
    + [소셜 태그 클라우드 사용](tagcloud.md)
    + [투표 사용](voting.md)
-   + [샘플 페이지 만들기](create-sample-page.md)
+   + [샘플 페이지 만들기](https://experienceleague.adobe.com/docs/experience-manager-64/communities/develop/create-sample-page.html)
+
