@@ -7,9 +7,9 @@ user-guide-title: AEM 6.4 Deploying 안내서
 breadcrumb-title: Deploying 안내서
 user-guide-description: Adobe Managed Services 클라우드 배포를 포함하여 Adobe Experience Manager 6.4의 설치, 배포 및 아키텍처에 대해 자세히 알아봅니다.
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '356'
 ht-degree: 20%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 20%
    + [작업 오퍼](offloading.md)
    + [단일 사인온](single-sign-on.md)
    + [리소스 매핑](resource-mapping.md)
-   + [SSL을 통해 HTTP 활성화](/help/sites-administering/ssl-by-default.md)
+   + [SSL을 통해 HTTP 활성화](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/ssl-by-default.html)
    + [일관성 및 순회 검사](consistency-check.md)
    + [성능 지침](performance-guidelines.md)
    + [성능 최적화](configuring-performance.md)
