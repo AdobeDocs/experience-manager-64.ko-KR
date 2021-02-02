@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 translation-type: tm+mt
-source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '4300'
+source-wordcount: '4296'
 ht-degree: 0%
 
 ---
@@ -374,9 +374,9 @@ AEM Sites 고객인 경우 대화형 미디어 구성 요소를 페이지로 드
 
 반응형 환경에 대해 쇼퍼블 대화형 이미지에 자르기를 적용하려면 경로에 대화형 이미지 구성 속성 `ZoomView.iscommand`을(를) 포함할 수 있습니다. 여기서 `ZoomView`은 호출할 구성 요소이고 `iscommand`는 적용하는 자르기 이미지 제공 명령입니다.
 
-[ZoomView.iscommand](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) 구성 특성을 참조하십시오.
+[ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) 구성 특성을 참조하십시오.
 
-[자르기](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) 이미지 제공 명령을 참조하십시오.
+[자르기](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) 이미지 제공 명령을 참조하십시오.
 
 이제 대화형 이미지를 웹 사이트의 기존 Quickview와 통합할 준비가 되었습니다.
 
