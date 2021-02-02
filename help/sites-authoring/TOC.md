@@ -7,10 +7,10 @@ user-guide-title: AEM 6.4 작성 사용 안내서
 breadcrumb-title: 작성 안내서
 user-guide-description: AEM에서의 컨텐츠 생성 및 작성에 대한 주요 개념을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 100%
+source-wordcount: '292'
+ht-degree: 95%
 
 ---
 
@@ -72,9 +72,9 @@ ht-degree: 100%
    + [워크플로우 작업](workflows.md)
    + [페이지에 워크플로우 적용](workflows-applying.md)
    + [워크플로우에 참여](workflows-participating.md)
-   + [프로젝트 워크플로우 작업](projects-with-workflows.md)
+   + [프로젝트 워크플로우 작업](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/projects/projects-with-workflows.html)
 + 페이지 성능 {#page-performance}
-   + [컨텐츠 인사이트](content-insights.md)
+   + [컨텐츠 인사이트](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/content-insights.html)
    + [페이지 성능 분석](ci-analyze.md)
    + [페이지 분석 데이터 보기](pa-using.md)
    + [Search&amp;Promote 기능을 페이지에 추가](search-and-promote.md)
