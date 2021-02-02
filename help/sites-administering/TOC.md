@@ -7,10 +7,10 @@ user-guide-title: AEM 6.4 관리 사용 안내서
 breadcrumb-title: 관리 안내서
 user-guide-description: AEM 관리에 대해 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 20%
+source-wordcount: '658'
+ht-degree: 19%
 
 ---
 
@@ -81,7 +81,7 @@ ht-degree: 20%
    + [AEM의 일련화 문제 완화](mitigating-serialization-issues.md)
    + [사용자 동기화](sync.md)
    + [캡슐화된 토큰 지원](encapsulated-token.md)
-   + [단일 사인온](/help/sites-deploying/single-sign-on.md)
+   + [단일 사인온](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/single-sign-on.html)
    + [AEM에서 사용자 관리 작업을 감사하는 방법](audit-user-management-operations.md)
    + [기본적으로 SSL](ssl-by-default.md)
    + [SAML 2.0 인증 핸들러](saml-2-0-authenticationhandler.md)
@@ -155,11 +155,11 @@ ht-degree: 20%
    + [경험 조각과 Target 통합](experience-fragments-target.md)
 + 우수 사례 {#bestpractices}
    + [우수 사례](administer-best-practices.md)
-   + [번역 우수 사례](tc-bp.md)
-   + [MSM 우수 사례](msm-best-practices.md)
+   + [번역 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-64/administering/introduction/tc-bp.html)
+   + [MSM 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-64/administering/introduction/msm-best-practices.html)
    + [AEM Sites - GDPR 준비 완료](gdpr-compliance-sites.md)
-   + [AEM Foundation에 대한 GDPR 요청 처리](handling-gdpr-requests-for-aem-platform.md)
-   + [AEM Commerce - GDPR 준비](gdpr-compliance-commerce.md)
+   + [AEM Foundation에 대한 GDPR 요청 처리](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/handling-gdpr-requests-for-aem-platform.html)
+   + [AEM Commerce - GDPR 준비](https://experienceleague.adobe.com/docs/experience-manager-64/administering/ecommerce/gdpr-compliance-commerce.html)
 + 컨텐츠 관리 {#contentmanagement}
    + [패키지를 사용한 작업 방법](package-manager.md)
    + [자산 워크플로우 오프로더](workflow-offloader.md)
