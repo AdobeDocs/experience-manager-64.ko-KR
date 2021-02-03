@@ -1,18 +1,14 @@
 ---
 title: AEM 3D 릴리스 노트
-seo-title: AEM 3D 릴리스 노트
 description: Adobe Experience Manager Assets의 3D 컨텐츠와 관련된 릴리스 노트입니다.
-seo-description: Adobe Experience Manager Assets의 3D 컨텐츠와 관련된 릴리스 노트입니다.
-uuid: 6675951f-86f0-4ec5-97e4-d247f6faf913
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes, 3D
 content-type: reference
-discoiquuid: 9789d031-fb7e-415a-a9c3-8b8fde978238
 translation-type: tm+mt
-source-git-commit: 9710c9931b4f17073c712f5869a1843c1d99ee8e
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '1983'
+source-wordcount: '1966'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->AEM 6.4의 AEM 3D 기능 팩은 더 이상 지원되지 않습니다. Adobe에서는 [AEM의 3D 자산 기능을 Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) 또는 [AEM 6.5.3 이상으로 사용하는 것이 좋습니다.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
+>AEM 6.4의 AEM 3D 기능 팩은 더 이상 지원되지 않습니다. Adobe에서는 [AEM의 3D 자산 기능을 Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) 또는 [AEM 6.5.3 이상으로 사용하는 것이 좋습니다.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)
 
 AEM-6.4-DynamicMedia-3D 버전 3.1.0(2018년 10월 10일)
 
@@ -70,7 +66,7 @@ AEM 3D는 Adobe Dimension(Dn) 및 glTF 에셋 유형을 지원합니다. 이러�
 
 [3D 자산 작업](/help/assets/assets-3d.md)도 참조하십시오.
 
-## AEM 3D {#installing-and-configuring-aem-d} 설치 및 구성
+## AEM 3D 설치 및 구성{#installing-and-configuring-aem-d}
 
 [AEM 3D 설치 및 구성](/help/assets/install-config-3d.md)을 참조하십시오.
 
@@ -87,7 +83,7 @@ AEM 3D는 Adobe Dimension(Dn) 및 glTF 에셋 유형을 지원합니다. 이러�
 | FBX | Autodesk FBX(Kaydara Filmbox) | 모든 | Autodesk FBX SDK는 작성자 노드에 설치해야 합니다. |
 | MA, MB | 기본 Autodesk Maya | Windows만 해당 | Autodesk Maya는 작성자 노드에서 이러한 파일 형식을 활성화해야 합니다. [AEM 3D와 Autodesk Maya](/help/assets/integrate-maya-with-3d.md) 통합을 참조하십시오. |
 | JT | Siemens PLM Open CAD | Windows만 해당 | Autodesk Maya는 작성자 노드에서 이러한 파일 형식을 활성화해야 합니다. [AEM 3D와 Autodesk Maya](/help/assets/integrate-maya-with-3d.md) 통합을 참조하십시오. |
-| * | Autodesk Maya에서 지원하는 추가 3D 입력 형식을 사용할 수 있습니다. Maya[에서 지원하는 추가 형식 활성화를 참조하십시오.](/help/assets/integrate-maya-with-3d.md#enabling-additional-formats-supported-by-maya) | Windows만 해당 | Autodesk Maya는 작성자 노드에서 이러한 파일 형식을 활성화해야 합니다. [AEM 3D와 Autodesk Maya](/help/assets/integrate-maya-with-3d.md) 통합을 참조하십시오. |
+| * | Autodesk Maya에서 지원하는 추가 3D 입력 형식을 사용할 수 있습니다. Maya](/help/assets/integrate-maya-with-3d.md#enabling-additional-formats-supported-by-maya)에서 지원하는 추가 형식 활성화를 참조하십시오.[ | Windows만 해당 | Autodesk Maya는 작성자 노드에서 이러한 파일 형식을 활성화해야 합니다. [AEM 3D와 Autodesk Maya](/help/assets/integrate-maya-with-3d.md) 통합을 참조하십시오. |
 | MAX | 기본 Autodesk 3ds 최대 | Windows만 해당 | 이 파일 형식을 활성화하려면 작성자 노드에서 Autodesk 3ds Max가 필요합니다. [Autodesk 3ds Max](/help/assets/integrating-aem-3d-with-autodesk-3ds-max.md)와 AEM 3D 통합을 참조하십시오. |
 
 ## 향상된 기능 및 새로운 기능 {#enhancements-and-new-features}
