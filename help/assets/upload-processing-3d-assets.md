@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: a0319701-21eb-4b7f-8b2e-ac81a7a75875
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '866'
 ht-degree: 67%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 67%
 
 >[!IMPORTANT]
 >
->AEM 6.4의 AEM 3D는 더 이상 지원되지 않습니다. Adobe에서는 [AEM의 3D 자산 기능을 Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) 또는 [AEM 6.5.3 이상으로 사용하는 것이 좋습니다.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
+>AEM 6.4의 AEM 3D는 더 이상 지원되지 않습니다. Adobe에서는 [AEM의 3D 자산 기능을 Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) 또는 [AEM 6.5.3 이상으로 사용하는 것이 좋습니다.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)
 
 표준 업로드 또는 동기화 메커니즘을 사용하여 3D 자산과 관련 참조된 파일을 AEM Assets로 가져오십시오.
 
