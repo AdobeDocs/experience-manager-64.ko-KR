@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f328cd1e-30a3-42d2-88b7-64455ee9eb1f
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '2779'
-ht-degree: 78%
+source-wordcount: '2786'
+ht-degree: 76%
 
 ---
 
@@ -180,13 +180,13 @@ Adobe Campaign과 통합하도록 구성된 뉴스레터/이메일을 열면 **A
 
 ### Scene7 이미지 템플릿(캠페인) {#scene-image-template-campaign}
 
-[Scene7 이미지 ](https://help.adobe.com/ko_KR/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) 템플릿은 레이어로 구성된 이미지 파일로, 컨텐츠와 속성을 가변성 있게 매개 변수화할 수 있습니다. **이미지 템플릿** 구성 요소를 사용하면 뉴스레터 내에서 Scene7 템플릿을 사용하고 템플릿 매개 변수의 값을 변경할 수 있습니다. 또한 매개 변수 내에서 Adobe Campaign 메타데이터 변수를 사용하여 각 사용자가 개인화된 방식으로 이미지를 경험하도록 할 수 있습니다.
+[Scene7 이미지 ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html#template-basics) 템플릿은 레이어로 구성된 이미지 파일로, 컨텐츠와 속성을 가변성 있게 매개 변수화할 수 있습니다. **이미지 템플릿** 구성 요소를 사용하면 뉴스레터 내에 Dynamic Media Classic(이전 Scene7) 템플릿을 사용하고 템플릿 매개 변수의 값을 변경할 수 있습니다. 또한 매개 변수 내에서 Adobe Campaign 메타데이터 변수를 사용하여 각 사용자가 개인화된 방식으로 이미지를 경험하도록 할 수 있습니다.
 
 ![chlimage_1-111](assets/chlimage_1-111.png)
 
-**편집**&#x200B;을 클릭하여 구성 요소를 구성합니다. 이 섹션에 설명된 설정을 구성할 수 있습니다. 이 Scene7 이미지 템플릿은 [Scene7 이미지 템플릿 구성 요소](/help/assets/scene7.md#image-template)에 자세히 설명되어 있습니다.
+**편집**&#x200B;을 클릭하여 구성 요소를 구성합니다. 이 섹션에 설명된 설정을 구성할 수 있습니다. 이 Dynamic Media Classic(이전 Scene7) 이미지 템플릿은 [Scene7 이미지 템플릿 구성 요소](/help/assets/scene7.md#image-template)에 자세히 설명되어 있습니다.
 
-또한 매개 변수 패널에는 Scene7에서 템플릿에 대해 정의된 모든 템플릿 매개 변수가 표시됩니다. 이러한 각 매개 변수에 대해 값을 조정하거나, 변수를 삽입하거나, 이를 기본값으로 재설정할 수 있습니다.
+또한 매개 변수 패널에는 Dynamic Media Classic(이전 Scene7)에서 템플릿에 대해 정의된 모든 템플릿 매개 변수가 나열됩니다. 이러한 각 매개 변수에 대해 값을 조정하거나, 변수를 삽입하거나, 이를 기본값으로 재설정할 수 있습니다.
 
 ![chlimage_1-112](assets/chlimage_1-112.png)
 
