@@ -1,19 +1,15 @@
 ---
 title: 3D 자산 보기
-seo-title: 3D 자산 보기
 description: AEM의 자산 세부 사항 페이지에서 사용할 수 있는 대화형 3D 뷰어에 대해 알아보고 이 뷰어를 사용하여 3D 자산을 보는 방법을 알아봅니다.
-seo-description: AEM의 자산 세부 사항 페이지에서 사용할 수 있는 대화형 3D 뷰어에 대해 알아보고 이 뷰어를 사용하여 3D 자산을 보는 방법을 알아봅니다.
-uuid: 7d8133ac-3110-4979-8e19-e65090e791be
 contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
-discoiquuid: 65040923-a8a8-4e27-82c0-67a04348e238
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '1806'
-ht-degree: 35%
+source-wordcount: '1778'
+ht-degree: 36%
 
 ---
 
@@ -22,7 +18,7 @@ ht-degree: 35%
 
 >[!IMPORTANT]
 >
->AEM 6.4의 AEM 3D는 더 이상 지원되지 않습니다. Adobe에서는 [AEM의 3D 자산 기능을 Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) 또는 [AEM 6.5.3 이상으로 사용하는 것이 좋습니다.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) 3D 자산을 표시합니다.
+>AEM 6.4의 AEM 3D는 더 이상 지원되지 않습니다. Adobe에서는 [AEM의 3D 자산 기능을 Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) 또는 [AEM 6.5.3 이상으로 사용하는 것이 좋습니다.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic) 3D 자산을 표시합니다.
 
 이 문서에서는 자산 세부 정보에서 3D 자산을 보는 방법과 사이트의 3D 구성 요소에 있는 자산을 보는 방법에 대해 설명합니다.
 
@@ -38,7 +34,7 @@ AEM 3D에서 기본 단계를 사용하는 것외에도, 타사 애플리케이�
 
 >[!NOTE]
 >
->3D 자산을 보려면 장치 또는 데스크톱 브라우저가 WebGL을 지원해야 합니다. 또한 기본 그래픽 하드웨어에는 원하는 크기와 복잡성의 모델을 렌더링할 수 있는 충분한 기능과 메모리가 있어야 합니다. 그림자 표시와 같은 특정 미리 보기 기능은 일부 브라우저에서 사용할 수 없습니다.
+>3D 자산을 보려면 장치 또는 데스크톱 브라우저가 WebGL을 지원해야 합니다. 또한 기본 그래픽 하드웨어에는 원하는 크기와 복잡도의 모델을 렌더링할 수 있는 충분한 기능과 메모리가 있어야 합니다. 그림자 표시와 같은 특정 미리 보기 기능은 일부 브라우저에서 사용할 수 없습니다.
 
 ### 3D 자산을 볼 때의 성능 고려 사항 {#performance-considerations-when-you-view-d-assets}
 
