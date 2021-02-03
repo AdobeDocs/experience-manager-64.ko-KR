@@ -10,19 +10,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5898d084-4b45-41bc-ad2e-2fcc65b0392c
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '1681'
-ht-degree: 1%
+source-wordcount: '1679'
+ht-degree: 2%
 
 ---
 
 
-# AEM 3D {#installing-and-configuring-aem-d} 설치 및 구성
+# AEM 3D 설치 및 구성{#installing-and-configuring-aem-d}
 
 >[!IMPORTANT]
 >
->AEM 6.4의 AEM 3D는 더 이상 지원되지 않습니다. Adobe에서는 [AEM의 3D 자산 기능을 Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) 또는 [AEM 6.5.3 이상으로 사용하는 것이 좋습니다.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
+>AEM 6.4의 AEM 3D는 더 이상 지원되지 않습니다. Adobe에서는 [AEM의 3D 자산 기능을 Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) 또는 [AEM 6.5.3 이상으로 사용하는 것이 좋습니다.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)
 
 AEM 3D(버전 3.0)의 설치 및 구성에는 다음이 포함됩니다.
 
