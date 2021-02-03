@@ -1,18 +1,14 @@
 ---
 title: Adobe Dimension 에셋 작업
-seo-title: Adobe Dimension 에셋 작업
 description: AEM 3D에서 Adobe Dimension 에셋을 사용한 작업
-seo-description: AEM 3D에서 Adobe Dimension 에셋을 사용한 작업
-uuid: 476e6758-b3a1-42ba-a18d-bfc407c6a72e
 contentOwner: Rick Brough
 topic-tags: 3D
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
-discoiquuid: 4a601c2a-4ea1-4308-8ae8-704155f63c21
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->AEM 6.4의 AEM 3D 기능 팩은 더 이상 지원되지 않습니다. Adobe에서는 [AEM의 3D 자산 기능을 Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) 또는 [AEM 6.5.3 이상으로 사용하는 것이 좋습니다.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) adobe dimension 에셋을 사용하여 작업할 때
+>AEM 6.4의 AEM 3D 기능 팩은 더 이상 지원되지 않습니다. Adobe에서는 [AEM의 3D 자산 기능을 Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) 또는 [AEM 6.5.3 이상으로 사용하는 것이 좋습니다.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic) adobe dimension 에셋을 사용하여 작업할 때
 
 AEM 3D 기능 팩은 AEM Assets, AEM Sites 및 AEM Screens의 Adobe Dimension 에셋(`.dn` 파일)에 대한 지원을 제공합니다.
 
