@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '1707'
-ht-degree: 100%
+source-wordcount: '1683'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 Dynamic Media Classic 비디오 통합은 모든 화면으로 최적화된 비디오의 범위를 확장합니다(자동 장치 및 대역폭 검색).
 
 * Dynamic Media Classic(Scene7) 비디오 구성 요소는 자동으로 장치 및 대역폭 검색을 수행하여 데스크탑, 태블릿 및 모바일에서 올바른 형식 및 올바른 품질의 비디오를 재생합니다.
-* 자산 - 단일 비디오 자산만이 아닌 응용 비디오 세트를 포함할 수 있습니다. 응용 비디오 세트는 여러 화면에서 비디오를 원활하게 재생하는 데 필요한 모든 비디오 표현물을 위한 컨테이너입니다. 응용 비디오 세트는 다른 비트율 및 형식(예: 400kbps, 800kbps 및 1000kbps)으로 인코딩된 동일한 비디오 버전을 그룹화합니다. 데스크톱, iOS, Android, Blackberry 및 Windows 모바일 장치를 포함하는 여러 화면에서 응용 비디오 스트리밍을 위해 S7 비디오 구성 요소와 함께 응용 비디오 세트를 사용합니다. 자세한 내용은 [응용 비디오 세트에 대한 Scene7 설명서](https://help.adobe.com/ko_KR/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html)를 참조하십시오.
+* 자산 - 단일 비디오 자산만이 아닌 응용 비디오 세트를 포함할 수 있습니다. 응용 비디오 세트는 여러 화면에서 비디오를 원활하게 재생하는 데 필요한 모든 비디오 표현물을 위한 컨테이너입니다. 응용 비디오 세트는 다른 비트율 및 형식(예: 400kbps, 800kbps 및 1000kbps)으로 인코딩된 동일한 비디오 버전을 그룹화합니다. 데스크톱, iOS, Android, Blackberry 및 Windows 모바일 장치를 포함하는 여러 화면에서 응용 비디오 스트리밍을 위해 S7 비디오 구성 요소와 함께 응용 비디오 세트를 사용합니다. 자세한 내용은 [응용 비디오 세트에 대한 Scene7 설명서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files)를 참조하십시오.
 
 ## FFMPEG 및 Dynamic Media Classic 정보 {#about-ffmpeg-and-scene}
 
@@ -62,7 +62,7 @@ Dynamic Media Classic 비디오 구성 요소에 대해 다음 형식이 지원�
 
 자산에 대해 워크플로우 또는 버전 관리가 필요하지 않은 경우 자산을 Dynamic Media Classic으로 업로드해야 합니다. 다음은 권장되는 워크플로우입니다.
 
-1. Dynamic Media Classic에서 [Dynamic Media Classic(시스템 자동화)에 예약된 FTP 업로드 및 인코딩을 설정](https://help.adobe.com/ko_KR/scene7/using/WS70B173EC-4CAD-4b4c-BF9C-43A11F3A5950.html)합니다.
+1. Dynamic Media Classic에서 [Dynamic Media Classic(시스템 자동화)에 예약된 FTP 업로드 및 인코딩을 설정](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files)합니다.
 1. AEM에서 컨텐츠 파인더의 **[!UICONTROL Dynamic Media Classic]** 탭에서 WCM의 비디오 자산에 액세스합니다.
 1. Dynamic Media Classic 비디오 구성 요소를 사용하여 작성합니다.
 
@@ -81,7 +81,7 @@ Dynamic Media Classic 비디오 구성 요소에 대해 다음 형식이 지원�
 
    >[!NOTE]
    >
-   >비디오 사전 설정의 의미에 대한 자세한 내용은 [Dynamic Media Classic 설명서](https://help.adobe.com/ko_KR/scene7/using/WSE86ACF2B-BD50-4c48-A1D7-9CD4405B62D0.html)를 참조하십시오.
+   >비디오 사전 설정의 의미에 대한 자세한 내용은 [Dynamic Media Classic 설명서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files)를 참조하십시오.
    >
    >범용 사전 설정을 구성할 때 응용 비디오 설정을 선택하거나 **[!UICONTROL 응용 비디오 인코딩]** 옵션을 선택하는 것이 좋습니다.
 
