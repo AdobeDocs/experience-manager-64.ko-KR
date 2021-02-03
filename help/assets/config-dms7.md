@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 59fed31d276510c3346a46ac38f2a79c6f91d848
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '5596'
+source-wordcount: '5587'
 ht-degree: 1%
 
 ---
@@ -154,7 +154,7 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가로 사용자 정의
 * **[!UICONTROL 카탈로그 필드의 기본값]**  - 이 설정은 이미지의 해상도 및 기본 축소판 유형과 관련이 있습니다.
 * **[!UICONTROL 색상 관리 속성]**  - 이 설정에 따라 사용되는 ICC 색상 프로파일이 결정됩니다.
 * **[!UICONTROL 호환성 속성]**  - 이 설정을 사용하면 텍스트 레이어의 맨 앞 및 뒤에 있는 단락이 이전 버전과의 호환성을 위해 버전 3.6에서와 같이 처리됩니다.
-* **[!UICONTROL 현지화 지원]**  - 이 설정을 사용하여 여러 로케일 속성을 관리할 수 있습니다. 또한 로케일 맵 문자열을 지정할 수 있으므로 뷰어에서 다양한 도구 설명을 지원할 언어를 정의할 수 있습니다. 현지화 지원 설정에 대한 자세한 내용은 [자산 현지화 설정 시 고려 사항](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html)을 참조하십시오.
+* **[!UICONTROL 현지화 지원]**  - 이 설정을 사용하여 여러 로케일 속성을 관리할 수 있습니다. 또한 로케일 맵 문자열을 지정할 수 있으므로 뷰어에서 다양한 도구 설명을 지원할 언어를 정의할 수 있습니다. 현지화 지원 설정에 대한 자세한 내용은 현지화 지원 구현 시 [중요 고려 사항](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#image-server)을 참조하십시오.
 
 #### 응용 프로그램 일반 설정 구성 중 {#configuring-application-general-settings}
 
