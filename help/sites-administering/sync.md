@@ -10,7 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
-source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
+source-git-commit: 770e435f41102b2d795c88cbb361de510564d319
 workflow-type: tm+mt
 source-wordcount: '2502'
 ht-degree: 2%
@@ -171,7 +171,7 @@ AEM 6.1부터 사용자 동기화가 활성화되면 사용자 데이터가 팜�
    * [웹 콘솔](/help/sites-deploying/configuring-osgi.md)에 액세스
 
       * 예: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
-   * `Adobe Granite Distribution - Encrypted Password Transport Secret Provider` 찾기
+   * `com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name` 찾기
    * 편집할 기존 구성 선택(연필 아이콘)
 
       확인 `property name` : **`socialpubsync-publishUser`**
