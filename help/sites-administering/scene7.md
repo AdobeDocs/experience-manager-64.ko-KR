@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '5454'
+source-wordcount: '5440'
 ht-degree: 2%
 
 ---
@@ -422,7 +422,7 @@ Dynamic Media Classic으로 자산을 푸시할 때 즉시 자산을 게시하�
 자산을 게시하지 않고 Dynamic Media Classic으로 푸시하려면 먼저 다음을 설정해야 합니다.
 
 1. [Admin Console을 사용하여 지원 사례를 만듭니다.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 지원 사례에서 Dynamic Media Classic 계정에 대해 보안 미리 보기가 활성화되도록 요청합니다.
-1. Dynamic Media Classic 계정에 대해 [보안 미리 보기 설정 지침을 따릅니다.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
+1. Dynamic Media Classic 계정에 대해 [보안 미리 보기 설정 지침을 따릅니다.](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html#upload-publish)
 
 다음은 Dynamic Media Classic에서 보안 테스트 설정을 만들기 위해 수행하는 단계와 동일합니다.
 
@@ -452,7 +452,7 @@ Dynamic Media Classic에 푸시된 자산의 상태를 게시 취소됨으로 �
 1. AEM 아이콘을 누르고 **[!UICONTROL 배포 > Cloud Services]**&#x200B;로 이동하고 **[!UICONTROL Dynamic Media Classic]**&#x200B;을 누른 다음 Dynamic Media Classic에서 구성을 선택합니다.
 1. **[!UICONTROL 고급]** 탭을 누릅니다. **[!UICONTROL 보안 보기 활성화]** 드롭다운 메뉴에서 **[!UICONTROL AEM 게시 활성화 시]**&#x200B;를 선택하여 자산을 게시하지 않고 Dynamic Media Classic으로 푸시합니다. 기본적으로 이 값은 **[!UICONTROL 즉시]**&#x200B;로 설정되며 여기서 Dynamic Media Classic 에셋이 즉시 게시됩니다.
 
-   자산을 공개하기 전에 자산 테스트에 대한 자세한 내용은 [Dynamic Media Classic 문서](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)를 참조하십시오.
+   자산을 공개하기 전에 자산 테스트에 대한 자세한 내용은 [Dynamic Media Classic 문서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html#upload-publish)를 참조하십시오.
 
    ![chlimage_1-302](assets/chlimage_1-302.png)
 
