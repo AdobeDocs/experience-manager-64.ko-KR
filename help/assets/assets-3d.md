@@ -1,18 +1,14 @@
 ---
 title: AEM 3D 에셋 작업
-seo-title: 3D 자산 작업
 description: AEM 3D에서 3D 에셋을 사용하여 작업하는 방법 학습
-seo-description: AEM 3D에서 3D 에셋을 사용하여 작업하는 방법 학습
-uuid: a1c1bb29-9d3d-4025-8142-ed9719434bf9
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: introduction
 content-type: reference
-discoiquuid: 32143da1-09c8-45ce-b50d-32adf6efe383
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1175'
 ht-degree: 5%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 5%
 
 >[!IMPORTANT]
 >
->AEM 6.4의 AEM 3D는 더 이상 지원되지 않습니다. Adobe에서는 [AEM의 3D 자산 기능을 Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) 또는 [AEM 6.5.3 이상으로 사용하는 것이 좋습니다.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
+>AEM 6.4의 AEM 3D는 더 이상 지원되지 않습니다. Adobe에서는 [AEM의 3D 자산 기능을 Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) 또는 [AEM 6.5.3 이상으로 사용하는 것이 좋습니다.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)
 
 AEM 3D(Adobe Experience Manager 3D)를 사용하면 3D 컨텐츠를 업로드, 관리, 확인 및 렌더링할 수 있습니다. 확인 및 렌더링에 대한 지원은 개별 개체를 위해 최적화되어 있습니다.
 
