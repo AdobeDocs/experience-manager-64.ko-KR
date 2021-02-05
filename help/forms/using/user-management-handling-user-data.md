@@ -1,16 +1,16 @@
 ---
 title: Forms 사용자 관리 | 사용자 데이터 처리
 seo-title: Forms 사용자 관리 | 사용자 데이터 처리
-description: 'null'
-seo-description: 'null'
+description: 사용자 관리는 AEM Forms 사용자가 AEM Forms에 액세스할 수 있도록 생성, 관리 및 권한을 부여하는 AEM Forms JEE 구성 요소입니다. 사용자 데이터 및 데이터 저장소에 대해 자세히 알아봅니다. 사용자 데이터에 액세스하고 삭제하는 방법을 알아봅니다.
+seo-description: 사용자 관리는 AEM Forms 사용자가 AEM Forms에 액세스할 수 있도록 생성, 관리 및 권한을 부여하는 AEM Forms JEE 구성 요소입니다. 사용자 데이터 및 데이터 저장소에 대해 자세히 알아봅니다. 사용자 데이터에 액세스하고 삭제하는 방법을 알아봅니다.
 uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
