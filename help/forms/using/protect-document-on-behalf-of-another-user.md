@@ -1,15 +1,15 @@
 ---
 title: Protect 다른 사용자를 대신하여 문서 작성
 seo-title: Protect 다른 사용자를 대신하여 문서 작성
-description: 'null'
-seo-description: 'null'
+description: 문서 편집 권한을 달성하지 않고도 API를 사용하여 다른 사용자를 대신하여 문서를 보호하는 방법을 알아봅니다.
+seo-description: 문서 편집 권한을 달성하지 않고도 API를 사용하여 다른 사용자를 대신하여 문서를 보호하는 방법을 알아봅니다.
 uuid: 76f4b30b-6d0c-4cae-98b3-334efdbf27bb
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 7cb8140d-dd62-4659-8cc7-21361bd5d3f6
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
