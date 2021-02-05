@@ -1,16 +1,16 @@
 ---
 title: Adobe Sign과 통합 | 사용자 데이터 처리
 seo-title: Adobe Sign과 통합 | 사용자 데이터 처리
-description: 'null'
-seo-description: 'null'
+description: AEM Forms은 Adobe Sign과 통합하여 적응형 양식의 전자 서명 워크플로우를 통해 법률, 영업, 급여, 인사 관리 워크플로우에 대한 양식 또는 계약을 처리할 수 있습니다. 사용자 데이터, 데이터 저장소, 사용자 데이터 액세스 및 삭제에 대해 자세히 알아보십시오.
+seo-description: AEM Forms은 Adobe Sign과 통합하여 적응형 양식의 전자 서명 워크플로우를 통해 법률, 영업, 급여, 인사 관리 워크플로우에 대한 양식 또는 계약을 처리할 수 있습니다. 사용자 데이터, 데이터 저장소, 사용자 데이터 액세스 및 삭제에 대해 자세히 알아보십시오.
 uuid: cb3a455d-2e33-44c8-8f71-3a7ecd939cd8
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e9e0d8fb-955e-4021-9e9a-9c95c6ffe88d
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '409'
 ht-degree: 0%
 
 ---
