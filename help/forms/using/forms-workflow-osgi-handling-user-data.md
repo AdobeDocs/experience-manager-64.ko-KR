@@ -1,16 +1,16 @@
 ---
 title: OSGi 기반의 Forms 워크플로우 | 사용자 데이터 처리
 seo-title: OSGi 기반의 Forms 워크플로우 | 사용자 데이터 처리
-description: 'null'
-seo-description: 'null'
+description: Forms 중심의 AEM 워크플로우를 통해 실제 Forms 중심의 비즈니스 프로세스를 자동화할 수 있습니다. 사용자 데이터 및 데이터 저장소에 대해 자세히 알아봅니다. 사용자 데이터에 액세스하고 삭제하는 방법을 알아봅니다.
+seo-description: Forms 중심의 AEM 워크플로우를 통해 실제 Forms 중심의 비즈니스 프로세스를 자동화할 수 있습니다. 사용자 데이터 및 데이터 저장소에 대해 자세히 알아봅니다. 사용자 데이터에 액세스하고 삭제하는 방법을 알아봅니다.
 uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 translation-type: tm+mt
-source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1067'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Forms 중심의 AEM 워크플로우를 통해 실제 Forms 중심의 비즈니�
 * 감시 폴더 사용
 * 대화형 통신 또는 편지 제출
 
-Forms 중심의 AEM 워크플로우 및 기능에 대한 자세한 내용은 OSGi[Forms 중심의 WORKFLOW를 참조하십시오.](/help/forms/using/aem-forms-workflow.md)
+Forms 중심의 AEM 워크플로우 및 기능에 대한 자세한 내용은 OSGi](/help/forms/using/aem-forms-workflow.md)Forms 중심의 WORKFLOW를 참조하십시오.[
 
 ## 사용자 데이터 및 데이터는 {#user-data-and-data-stores} 저장
 
