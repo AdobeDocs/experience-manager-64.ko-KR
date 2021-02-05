@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 29fc297e-0a95-4d2a-bfe6-5676d53624db
 noindex: true
 translation-type: tm+mt
-source-git-commit: 7ea83f879d5c3f5699d2a783686c53c5292fcf8a
+source-git-commit: 12d64aebbe769c0b3fa7c721e7fbac547d320f67
 workflow-type: tm+mt
-source-wordcount: '3569'
+source-wordcount: '3592'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,8 @@ AEM Forms과 통합된 Adobe Sign은 다음을 지원합니다.
 * 익명 또는 로그인 사용자로 양식 서명
 * 다이내믹한 서명 프로세스(AEM Forms 워크플로우와 통합)
 * 기술 자료, 전화 및 소셜 프로필을 통한 인증
+
+적응형 양식](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)과 함께 Adobe Sign을 사용하여 더 나은 서명 환경을 만드는 모범 사례를 알아봅니다.[
 
 ## 전제 조건 {#prerequisites}
 
@@ -213,7 +215,7 @@ AEM Forms 인스턴스에 대해 여러 Adobe Sign 서비스를 구성할 수 �
 
 클라우드 기반의 디지털 서명 또는 원격 서명은 데스크탑, 모바일 및 웹에서 사용할 수 있는 차세대 디지털 서명이며, 더욱 높은 수준의 규정 준수 및 서명자 인증을 보장할 수 있습니다. 클라우드 기반의 디지털 서명을 사용하여 적응형 양식에 서명할 수 있습니다.
 
-Adobe 서명[에 대한 응용 양식 속성을 편집한 후 다음 단계를 수행하여 응용 양식에 클라우드 서명 필드를 추가합니다.](#enableadobesign)
+Adobe 서명](#enableadobesign)에 대한 응용 양식 속성을 편집한 후 다음 단계를 수행하여 응용 양식에 클라우드 서명 필드를 추가합니다.[
 
 1. 구성 요소 브라우저에서 적응형 양식으로 **Adobe Sign 블록** 구성 요소를 드래그하여 놓습니다. Adobe Sign 블록 구성 요소에는 지원되는 모든 Adobe Sign 필드가 있습니다. 기본적으로 응용 양식에 **서명** 필드를 추가합니다.
 
