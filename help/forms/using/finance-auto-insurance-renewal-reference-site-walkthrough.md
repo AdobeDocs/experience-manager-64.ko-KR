@@ -1,16 +1,16 @@
 ---
 title: We.Finance Auto Insurance Renewal 참조 사이트 연습
 seo-title: We.Finance Auto Insurance Renewal 참조 사이트 연습
-description: 'null'
-seo-description: 'null'
+description: AEM 양식 및 Microsoft Dynamics와의 통합을 활용하여 금융 서비스 회사에서 고객 경험을 개인화하는 방법을 소개하는 We.Finance 자동 보험 사용 사례에 대한 자세한 참조 사이트 연습을 참조하십시오.
+seo-description: AEM 양식 및 Microsoft Dynamics와의 통합을 활용하여 금융 서비스 회사에서 고객 경험을 개인화하는 방법을 소개하는 We.Finance 자동 보험 사용 사례에 대한 자세한 참조 사이트 연습을 참조하십시오.
 uuid: 18676ab4-9f8d-4014-b751-2a722fd152da
 contentOwner: dekalra
 topic-tags: introduction
 discoiquuid: a960d489-f5a3-436a-b028-54292648c7be
 translation-type: tm+mt
-source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ We.Finance 사이트는 AEM Forms의 인터랙티브한 커뮤니케이션 기�
 
 AEM 양식과 Microsoft Dynamics와의 통합을 활용하여 금융 서비스 회사에서 고객 경험을 개인화하는 방법을 소개하는 We.Finance 자동 보험 사용 사례에 대한 자세한 설명을 참조하십시오. 이 대화형 연습은 금융 회사에서 복잡한 디지털 거래와 고객 커뮤니케이션의 구현을 용이하게 하기 위해 고안되었습니다.
 
-**고객 여정은 사용 사례부터 시작됩니다.**
+**여정은 사용 사례부터 시작합니다.**
 
 Sarah Rose는 기존의 We.Finance 고객이며 자동차 보험 정책을 구입했다. 지금은 그녀의 보험 증권 갱신의 한 해이다. We.Finance 보험사 Gloria Rios가 Sarah에게 그녀의 정책 갱신에 대해 상기시켜준다. Sarah는 이메일에 설명된 지침을 따르고 절차를 성공적으로 마칩니다.
 
