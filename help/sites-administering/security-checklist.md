@@ -109,7 +109,7 @@ AEM `admin` 계정 외에도 OSGi 웹 콘솔 암호의 기본 암호를 변경�
 
 ### Dispatcher 보안 검사 목록 완료 {#complete-dispatcher-security-checklist}
 
-AEM Dispatcher는 인프라에서 중요한 역할을 합니다. Adobe에서는 [디스패처 보안 검사 목록](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)을 완료하는 것이 좋습니다.
+AEM Dispatcher는 인프라에서 중요한 역할을 합니다. Adobe에서는 [디스패처 보안 검사 목록](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/security-checklist.html)을 완료하는 것이 좋습니다.
 
 >[!CAUTION]
 >
