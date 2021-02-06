@@ -23,7 +23,7 @@ ht-degree: 0%
 
 AEM과 통합된 Adobe Target을 사용하면 타겟 고객에 맞게 맞춤화된 경험을 제작할 수 있습니다. Adobe Target을 사용하면 A/B 테스트를 만들고, 사용자 응답을 측정하며, 타깃팅된 사용자를 위한 맞춤형 웹 컨텐츠를 생성할 수 있습니다. Adobe Target을 AEM Forms과 통합하여 적응형 양식 및 인터랙티브한 커뮤니케이션의 이미지 구성 요소를 타깃팅할 수 있습니다.
 
-적응형 양식 및 대화형 통신과 함께 사용하도록 AEM에서 Adobe Target을 구성합니다. AEM[ 및 ](/help/sites-administering/target.md)프레임워크 추가[를 참조하십시오.](/help/sites-administering/target.md)
+적응형 양식 및 대화형 통신과 함께 사용하도록 AEM에서 Adobe Target을 구성합니다. AEM](/help/sites-administering/target.md) 및 [프레임워크 추가](/help/sites-administering/target.md)를 참조하십시오.[
 
 >[!NOTE]
 >
