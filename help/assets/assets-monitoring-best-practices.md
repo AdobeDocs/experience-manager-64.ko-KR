@@ -1,5 +1,5 @@
 ---
-title: 자산 모니터링 우수 사례
+title: Assets 모니터링 우수 사례
 description: AEM 인스턴스가 배포된 후 환경 및 성능을 모니터링하기 위한 모범 사례
 contentOwner: AG
 translation-type: tm+mt
