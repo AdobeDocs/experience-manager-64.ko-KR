@@ -20,7 +20,7 @@ ht-degree: 5%
 
 # 알려진 문제 {#known-issues}
 
-이 페이지는 2018년 4월에 릴리스된 Adobe Experience Manager 6.4의 알려진 문제 목록을 유지합니다. 알려진 문제에 대한 자세한 내용은 지원 센터[에 문의하십시오.](https://helpx.adobe.com/kr/support/experience-manager.html)
+이 페이지는 2018년 4월에 릴리스된 Adobe Experience Manager 6.4의 알려진 문제 목록을 유지합니다. 알려진 문제에 대한 자세한 내용은 지원 센터](https://helpx.adobe.com/support/experience-manager.html)에 문의하십시오.[
 
 ## 하이브리드 장치 {#hybrid-devices}
 
