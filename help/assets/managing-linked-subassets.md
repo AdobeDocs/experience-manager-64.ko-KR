@@ -52,7 +52,7 @@ InDesign 파일 내에서 AEM 에셋을 참조하려면 AEM 에셋을 InDesign �
 
 ### AEM 자산 {#create-references-by-dragging-aem-assets}을(를) 드래그하여 참조 만들기
 
-이 절차는 Adobe Illustrator[에서 AEM 자산을 참조로 추가하는 것과 유사합니다.](#refai)
+이 절차는 Adobe Illustrator](#refai)에서 AEM 자산을 참조로 추가하는 것과 유사합니다.[
 
 ### ZIP 파일 {#create-references-to-aem-assets-by-exporting-a-zip-file}을 내보내어 AEM 자산에 대한 참조를 만듭니다.
 
