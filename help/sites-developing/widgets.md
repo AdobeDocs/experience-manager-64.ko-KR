@@ -494,7 +494,7 @@ AEM과 함께 제공되는 기본 위젯은 대부분의 사용 사례를 다룹
 
 * 노드(노드 유형 = `cq:Dialog`, xtype = [`dialog`](/help/sites-developing/xtypes.md#dialog))에 의해 정의됩니다.
 
-* 패널(노드 유형 = `cq:Widget`, xtype = [`tabpanel`](/help/sites-developing/xtypes.md#tabpanel))을 포함하는 1개의 타블패널 위젯(노드 유형 = `cq:Widget`, xtype = &lt;a1/>)을 표시합니다. xtype = [`panel`](/help/sites-developing/xtypes.md#panel)
+* 패널(노드 유형 = `cq:Widget`, xtype = [`tabpanel`](/help/sites-developing/xtypes.md#tabpanel))을 포함하는 1개의 타블패널 위젯(노드 유형 = `cq:Widget`, xtype = )을 표시합니다. xtype = [`panel`](/help/sites-developing/xtypes.md#panel)
 
 * 패널에 `multifield` 위젯이 있습니다(노드 유형 = `cq:Widget`, xtype = [`multifield`](/help/sites-developing/xtypes.md#multifield)).
 
@@ -532,7 +532,7 @@ AEM과 함께 제공되는 기본 위젯은 대부분의 사용 사례를 다룹
    * `allowField` 는  [CQ.form.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.Selection) Selectionobject 유형의 &#39;select&#39; 객체입니다. optionsProvider는 대화 상자에 정의된 CustomWidget의 optionsProvider 구성으로 인스턴스화된 Selection 개체의 구성입니다
    * `otherField` 는  [CQ.Ext.form.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TextField) TextFieldobject입니다.
 
-* 형식이 있는 CustomWidget의 값을 설정하고 검색하려면 [, `getValue` 및 `getRawValue`/&lt;a3/>CQ.form.CompositeField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.CompositeField) 메서드를 재정의합니다.`setValue`
+* 형식이 있는 CustomWidget의 값을 설정하고 검색하려면 [, `getValue` 및 `getRawValue`/`setValue`CQ.form.CompositeField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.CompositeField) 메서드를 재정의합니다.
 
    `<allowField value>/<otherField value>, e.g.: 'Bla1/hello'`.
 
@@ -552,7 +552,7 @@ AEM과 함께 제공되는 기본 위젯은 대부분의 사용 사례를 다룹
 
 * 노드(노드 유형 = `cq:Dialog`, xtype = [`dialog`](/help/sites-developing/xtypes.md#dialog))에 의해 정의됩니다.
 
-* 패널(노드 유형 = `cq:Widget`, xtype = [`tabpanel`](/help/sites-developing/xtypes.md#tabpanel))을 포함하는 1개의 타블패널 위젯(노드 유형 = `cq:Widget`, xtype = &lt;a1/>)을 표시합니다. xtype = [`panel`](/help/sites-developing/xtypes.md#panel)
+* 패널(노드 유형 = `cq:Widget`, xtype = [`tabpanel`](/help/sites-developing/xtypes.md#tabpanel))을 포함하는 1개의 타블패널 위젯(노드 유형 = `cq:Widget`, xtype = )을 표시합니다. xtype = [`panel`](/help/sites-developing/xtypes.md#panel)
 
 * 패널에 사용자 정의 위젯(노드 유형 = `cq:Widget`, xtype = `ejstbrowse`)이 있습니다.
 
