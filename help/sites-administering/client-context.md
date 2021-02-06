@@ -221,7 +221,7 @@ Client Context를 사용하면 인터랙티브하게 세부 사항을 변경할 
 
 JSONP 저장소 컨텍스트 저장소 구성 요소를 사용하여 클라이언트 컨텍스트에 외부 데이터를 추가하려면 이 예를 따릅니다. 그런 다음 해당 데이터의 정보를 기반으로 세그먼트를 만듭니다. 이 예에서는 WIPmania.com에서 제공하는 JSONP 서비스를 사용합니다. 이 서비스는 웹 클라이언트의 IP 주소를 기반으로 위치 정보를 반환합니다.
 
-이 예에서는 Geometrixx Outdoors 샘플 웹 사이트를 사용하여 클라이언트 컨텍스트에 액세스하고 생성된 세그먼트를 테스트합니다. 페이지가 클라이언트 컨텍스트를 활성화한 경우 다른 웹 사이트를 사용할 수 있습니다. (페이지[에 클라이언트 컨텍스트 추가 참조)](/help/sites-developing/client-context.md#adding-client-context-to-a-page)
+이 예에서는 Geometrixx Outdoors 샘플 웹 사이트를 사용하여 클라이언트 컨텍스트에 액세스하고 생성된 세그먼트를 테스트합니다. 페이지가 클라이언트 컨텍스트를 활성화한 경우 다른 웹 사이트를 사용할 수 있습니다. (페이지](/help/sites-developing/client-context.md#adding-client-context-to-a-page)에 클라이언트 컨텍스트 추가 참조)[
 
 ### JSONP 스토어 구성 요소 {#add-the-jsonp-store-component} 추가
 
