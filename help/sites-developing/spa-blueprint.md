@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 67712638f9e35b8a6b4b3b9cdd5c507a91222dfd
 workflow-type: tm+mt
 source-wordcount: '2124'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -63,7 +63,7 @@ NPM 패키지 [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/
 
 #### 동적 모델을 구성 요소 매핑 {#dynamic-model-to-component-mapping}
 
-AEM용 Javascript SPA SDK에서 구성 요소에 대한 동적 모델이 발생하는 방법에 대한 자세한 내용은 SPA[에 대한 구성 요소 매핑에 대한 동적 모델 집필을 참조하십시오.](/help/sites-developing/spa-dynamic-model-to-component-mapping.md)
+AEM용 Javascript SPA SDK에서 구성 요소에 대한 동적 모델이 발생하는 방법에 대한 자세한 내용은 SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md)에 대한 구성 요소 매핑에 대한 동적 모델 집필을 참조하십시오.[
 
 ### 프레임워크별 레이어 {#framework-specific-layer}
 
