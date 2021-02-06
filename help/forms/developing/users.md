@@ -569,8 +569,8 @@ Directory Manager 서비스 API(Java)를 사용하여 그룹을 만듭니다.
 
 1. 프로젝트 파일 포함
 
-   * Directory Manager WSDL을 사용하는 Microsoft .NET 클라이언트 어셈블리를 만듭니다. (Base64 인코딩[을 사용하여 AEM Forms 호출 참조)](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
-   * Microsoft .NET 클라이언트 어셈블리를 참조하십시오. (Base64 인코딩[을 사용하는 .NET 클라이언트 어셈블리 만들기를 참조하십시오.)](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)
+   * Directory Manager WSDL을 사용하는 Microsoft .NET 클라이언트 어셈블리를 만듭니다. (Base64 인코딩](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)을 사용하여 AEM Forms 호출 참조)[
+   * Microsoft .NET 클라이언트 어셈블리를 참조하십시오. (Base64 인코딩](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)을 사용하는 .NET 클라이언트 어셈블리 만들기를 참조하십시오.)[
 
 1. DirectoryManagerService 클라이언트를 만듭니다.
 
@@ -744,7 +744,7 @@ Authorization Manager Service API(웹 서비스)를 사용하여 역할 및 권�
  </thead> 
  <tbody>
   <tr> 
-   <td><p>1</p></td> 
+   <td><p>3</p></td> 
    <td><p>사용자가 웹 사이트에 액세스하고 사용자 이름과 암호를 지정합니다. 이 정보는 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버에 제출됩니다.</p></td> 
   </tr> 
   <tr> 
@@ -752,7 +752,7 @@ Authorization Manager Service API(웹 서비스)를 사용하여 역할 및 권�
    <td><p>사용자 자격 증명이 인증 관리자 서비스로 인증됩니다. 사용자 자격 증명이 유효하면 워크플로우가 3단계로 진행됩니다. 그렇지 않으면 사용자가 권한이 있는 사용자가 아니라는 메시지가 사용자에게 전송됩니다.</p></td> 
   </tr> 
   <tr> 
-   <td><p>1</p></td> 
+   <td><p>3</p></td> 
    <td><p>사용자 정보와 양식 디자인이 보안 엔터프라이즈 데이터베이스에서 검색됩니다. </p></td> 
   </tr> 
   <tr> 
@@ -830,8 +830,8 @@ Authentication Manager Service API(웹 서비스)를 사용하여 사용자를 �
 
 1. 프로젝트 파일 포함
 
-   * 인증 관리자 WSDL을 사용하는 Microsoft .NET 클라이언트 어셈블리를 만듭니다. (Base64 인코딩[을 사용하여 AEM Forms 호출 참조)](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
-   * Microsoft .NET 클라이언트 어셈블리를 참조하십시오. (Base64 인코딩[을 사용하여 AEM Forms 호출의 &quot;Referencing the .NET client assembly&quot;를 참조하십시오.)](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+   * 인증 관리자 WSDL을 사용하는 Microsoft .NET 클라이언트 어셈블리를 만듭니다. (Base64 인코딩](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)을 사용하여 AEM Forms 호출 참조)[
+   * Microsoft .NET 클라이언트 어셈블리를 참조하십시오. (Base64 인코딩](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)을 사용하여 AEM Forms 호출의 &quot;Referencing the .NET client assembly&quot;를 참조하십시오.)[
 
 1. AuthenticationManagerService 클라이언트를 만듭니다.
 
@@ -870,7 +870,7 @@ Authentication Manager Service API(웹 서비스)를 사용하여 사용자를 �
  </thead> 
  <tbody>
   <tr> 
-   <td><p>1</p></td> 
+   <td><p>3</p></td> 
    <td><p>클라이언트 응용 프로그램에서 AEM Forms이 동기화 작업을 수행하도록 요청합니다.</p></td> 
   </tr> 
   <tr> 
@@ -878,7 +878,7 @@ Authentication Manager Service API(웹 서비스)를 사용하여 사용자를 �
    <td><p>AEM Forms에서 동기화 작업을 수행합니다.</p></td> 
   </tr> 
   <tr> 
-   <td><p>1</p></td> 
+   <td><p>3</p></td> 
    <td><p>사용자 정보가 업데이트됩니다.</p></td> 
   </tr> 
   <tr> 
