@@ -40,7 +40,7 @@ Carousel 배너를 통해 마케터는 인터랙티브한 회전 프로모션 �
 
 ## 회전판 배너가 만들어지는 방법 보기 {#watch-how-carousel-banners-are-created}
 
-회전판 배너가 만들어지는 방법[에 대한 10분 및 33초 연습을 보십시오. ](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) 캐러셀 배너를 미리 보고 편집 및 전달하는 방법도 알아봅니다.
+회전판 배너가 만들어지는 방법](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)에 대한 10분 및 33초 연습을 보십시오. [ 캐러셀 배너를 미리 보고 편집 및 전달하는 방법도 알아봅니다.
 
 >[!NOTE]
 >
@@ -316,7 +316,7 @@ AEM Assets에서 핫스팟 또는 이미지 맵을 배너 이미지에 추가할
 
    [자산 게시](publishing-dynamicmedia-assets.md)를 참조하십시오.
 
-   웹 사이트 랜딩 페이지에 설정된 회전판 추가[를 참조하십시오.](#adding-a-carousel-banner-to-your-website-page)
+   웹 사이트 랜딩 페이지에 설정된 회전판 추가](#adding-a-carousel-banner-to-your-website-page)를 참조하십시오.[
 
 ## 회전판 편집 세트 {#editing-carousel-sets}
 
