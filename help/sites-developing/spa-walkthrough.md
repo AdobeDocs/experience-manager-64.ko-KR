@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 workflow-type: tm+mt
 source-wordcount: '2012'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 
 # SPA 소개 및 연습{#spa-introduction-and-walkthrough}
 
-단일 페이지 애플리케이션(SPA)을 통해 웹 사이트 사용자에게 매력적인 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크을 사용하여 사이트를 구축하고자 하며, 작성자는 이러한 프레임워크를 사용하여 구축된 사이트에서 AEM의 컨텐츠를 매끄럽게 편집하고자 합니다.
+SPA(단일 페이지 애플리케이션)는 웹 사이트 사용자에게 훌륭한 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크을 사용하여 사이트를 구축하고자 하며, 작성자는 이러한 프레임워크를 사용하여 구축된 사이트에서 AEM의 컨텐츠를 매끄럽게 편집하고자 합니다.
 
 SPA Editor는 AEM 내에서 SPA을 지원하는 포괄적인 솔루션을 제공합니다. 이 문서에서는 저작에 기본 SPA 응용 프로그램을 사용하는 과정을 소개하고 기본 AEM SPA 편집기와 관련된 방법을 설명합니다.
 
@@ -92,7 +92,7 @@ SPA의 기본 아이디어는 SPA이 기본 애플리케이션의 응답성에 �
 
 >[!NOTE]
 >
->AEM에서 SPA이 작동하는 방법에 대한 기술적인 자세한 내용은 AEM에서 SPA 시작[ 문서를 참조하십시오.](/help/sites-developing/spa-getting-started-react.md)
+>AEM에서 SPA이 작동하는 방법에 대한 기술적인 자세한 내용은 AEM에서 SPA 시작](/help/sites-developing/spa-getting-started-react.md) 문서를 참조하십시오.[
 >
 >SPA 편집기의 디자인, 아키텍처 및 기술 작업 과정에 대한 자세한 내용은 [SPA 편집기 개요](/help/sites-developing/spa-overview.md) 문서를 참조하십시오.
 
