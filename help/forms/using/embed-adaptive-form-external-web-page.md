@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '1054'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -101,7 +101,7 @@ AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md) 페이지 또는 
 
    * 적응형 양식의 게시 URL 경로를 사용하여 `options.path` 변수의 값을 변경합니다. AEM 서버가 컨텍스트 경로에서 실행 중인 경우 URL에 컨텍스트 경로가 포함되어 있는지 확인합니다. 예를 들어 위의 코드 및 응용 프로그램은 동일한 aem forms 서버에 상주하므로 이 예제에서는 적응형 양식 /content/forms/af/locbasic.html의 컨텍스트 경로를 사용합니다.
    * `options.dataRef`을(를) URL로 전달할 속성으로 바꿉니다. dataref 변수를 사용하여 [적응형 양식](/help/forms/using/prepopulate-adaptive-form-fields.md)을 미리 입력할 수 있습니다.
-   * 적응형 양식에 구성된 테마가 아닌 테마 경로로 `options.themePath`을(를) 대체합니다. 또는 요청 속성을 사용하여 테마 경로를 지정할 수도 있습니다.
+   * 적응형 양식에 구성된 테마가 아닌 테마 경로로 `options.themePath`을(를) 바꿉니다. 또는 요청 속성을 사용하여 테마 경로를 지정할 수도 있습니다.
    * `CSS_Selector` 는 적응형 양식이 포함된 양식 컨테이너의 CSS 선택기입니다. 예를 들어 .customafsection css 클래스는 위의 예에서 CSS 선택기입니다.
 
 적응형 양식이 웹 페이지에 포함됩니다. 포함된 응용 양식에서 다음을 관찰합니다.
