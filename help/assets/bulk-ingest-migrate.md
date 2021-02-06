@@ -38,7 +38,7 @@ ht-degree: 4%
 
 1. AEM 인스턴스에서 **[!UICONTROL 도구 > 보안 > 사용자 > 사용자 만들기]**&#x200B;로 이동합니다. 이 서비스 사용자는 `/content/dam`에 대한 읽기/쓰기 권한이 있어야 합니다.
 1. **[!UICONTROL ID]** 및 **[!UICONTROL 암호]** 필드에 사용자 이름과 암호를 입력합니다.예: `FTP User` 이 이름은 자산을 만든 사용자로 타임라인에 표시됩니다. 에셋이 FTP에서 업로드되면 FTP 서버에 업로드되고 AEM으로 푸시될 때 만들어지는 것으로 간주됩니다.
-1. 기능 팩 18912를 다운로드하기 위해 액세스 권한을 요청하려면 Experience Manager[Adobe 엔터프라이즈 지원 센터에 문의하십시오. ](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html) 지원 팀에 문의할 때 다음 정보가 필요할 수 있습니다.
+1. 기능 팩 18912를 다운로드하기 위해 액세스 권한을 요청하려면 Experience Manager](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html)Adobe 엔터프라이즈 지원 센터에 문의하십시오. [ 지원 팀에 문의할 때 다음 정보가 필요할 수 있습니다.
 
    * 포트 번호를 포함하여 작성자 인스턴스의 서버 IP 주소입니다(기본적으로 포트 번호는 4502).
    * 이전 단계의 AEM 서비스 사용자 이름과 암호
