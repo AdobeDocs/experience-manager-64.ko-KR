@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # 프로그래밍 방식으로 AEM 문서 서비스 사용 {#using-aem-document-services-programmatically}
 
-AEM Document Services를 사용하여 Maven 프로젝트를 빌드하는 데 필요한 클라이언트 클래스는 [AEM Forms Client SDK](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) jar에서 사용할 수 있습니다. 주요 프로젝트에 대한 자세한 내용은 Maven[을 사용하여 AEM 프로젝트를 빌드하는 방법을 참조하십시오.](/help/sites-developing/ht-projects-maven.md)
+AEM Document Services를 사용하여 Maven 프로젝트를 빌드하는 데 필요한 클라이언트 클래스는 [AEM Forms Client SDK](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) jar에서 사용할 수 있습니다. 주요 프로젝트에 대한 자세한 내용은 Maven](/help/sites-developing/ht-projects-maven.md)을 사용하여 AEM 프로젝트를 빌드하는 방법을 참조하십시오.[
 
 >[!NOTE]
 >
