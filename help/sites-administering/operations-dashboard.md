@@ -702,7 +702,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
 
 >[!NOTE]
 >
->시스템 개요 대시보드에 대한 소개를 보려면 [이 비디오](https://video.tv.adobe.com/v/21340?captions=kor)를 시청하십시오.
+>시스템 개요 대시보드에 대한 소개를 보려면 [이 비디오](https://video.tv.adobe.com/v/21340)를 시청하십시오.
 
 ### {#how-to-access}에 액세스하는 방법
 
