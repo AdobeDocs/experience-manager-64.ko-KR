@@ -9,7 +9,7 @@ translation-type: tm+mt
 source-git-commit: 4c1b1210503dc535585ae8912a7b94b88d1604cf
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 28%
+ht-degree: 34%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Experience Manager(AEM)은 상업용 웹 사이트와 관련 서비스를 
 
 [AEM 소프트웨어 배포에 대한 자세한 정보입니다.](/help/sites-deploying/home.md)
 
-AEM 릴리스에 대한 자세한 내용은 [AEM Maintenance Hub](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html)을 참조하십시오.
+AEM 릴리스에 대한 자세한 내용은 [AEM Maintenance Hub](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)을 참조하십시오.
 
 ## AEM에 대한 공식적인 지원은 어떻게 받습니까? {#official-support}
 
@@ -44,9 +44,9 @@ AEM 6.4의 최신 설명서를 이용할 수 있습니다.
 * [AEM 6.5](https://helpx.adobe.com/kr/support/experience-manager/6-5.html)
 * [AEM 6.3](https://helpx.adobe.com/kr/support/experience-manager/6-3.html)
 * [AEM 6.2](https://helpx.adobe.com/kr/support/experience-manager/6-2.html)**
-* [AEM 6.1](https://docs.adobe.com/docs/ko/aem/6-1.html)**
-* [AEM 6.0](https://docs.adobe.com/docs/ko/aem/6-0.html)**
-* [AEM 5.6.1](https://helpx.adobe.com/experience-manager/aem-previous-versions.html)**
+* [AEM 6.1](https://docs.adobe.com/docs/en/aem/6-1.html)**
+* [AEM 6.0](https://docs.adobe.com/docs/en/aem/6-0.html)**
+* [AEM 5.6.1](https://helpx.adobe.com/kr/experience-manager/aem-previous-versions.html)**
 * [AEM 5.6](https://helpx.adobe.com/experience-manager/aem-previous-versions.html)**
 * [CQ 5.5](https://helpx.adobe.com/experience-manager/aem-previous-versions.html)**
 * [CQ 5.4](https://helpx.adobe.com/experience-manager/aem-previous-versions.html)**
