@@ -21,7 +21,7 @@ ht-degree: 1%
 # SPA 및 서버측 렌더링{#spa-and-server-side-rendering}
 
 >[!NOTE]
->단일 페이지 애플리케이션(SPA) 편집기 기능을 사용하려면 [AEM 6.4 서비스 팩 2](https://helpx.adobe.com/kr/experience-manager/6-4/release-notes/sp-release-notes.html) 이상이 필요합니다.
+>단일 페이지 애플리케이션(SPA) 편집기 기능을 사용하려면 [AEM 6.4 서비스 팩 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) 이상이 필요합니다.
 >
 >SPA 편집기는 SPA 프레임워크 기반의 클라이언트측 렌더링(예: 반응형 또는 각도)이 필요한 프로젝트에 권장되는 솔루션입니다.
 
@@ -50,7 +50,7 @@ SSR은 일반적으로 다음 질문 중 하나에 &quot;예&quot;가 분명한 
 
 ## Adobe I/O Runtime {#adobe-io-runtime}
 
-프로젝트에 SSR[의 구현이 필요하다고 확신하는 경우 Adobe의 권장 솔루션은 Adobe I/O Runtime을 사용하는 것입니다.](#when-to-use-ssr)
+프로젝트에 SSR](#when-to-use-ssr)의 구현이 필요하다고 확신하는 경우 Adobe의 권장 솔루션은 Adobe I/O Runtime을 사용하는 것입니다.[
 
 Adobe I/O Runtime에 대한 자세한 내용은
 
@@ -68,7 +68,7 @@ Adobe I/O Runtime에 대한 자세한 내용은
 
 ## 원격 콘텐츠 렌더러 구성 {#remote-content-renderer-configuration}
 
-AEM은 원격으로 렌더링된 컨텐츠를 검색할 수 있는 위치를 알아야 합니다. SSR[에 대해 구현하도록 선택한 모델에 관계없이 이 원격 렌더링 서비스에 액세스하는 방법을 AEM에 지정해야 합니다.](#adobe-io-runtime)
+AEM은 원격으로 렌더링된 컨텐츠를 검색할 수 있는 위치를 알아야 합니다. SSR](#adobe-io-runtime)에 대해 구현하도록 선택한 모델에 관계없이 이 원격 렌더링 서비스에 액세스하는 방법을 AEM에 지정해야 합니다.[
 
 이 작업은 **RemoteContentRenderer - Configuration Factory** OSGi 서비스를 통해 수행됩니다. `http://<host>:<port>/system/console/configMgr`의 웹 콘솔 구성 콘솔에서 &quot;RemoteContentRenderer&quot; 문자열을 검색합니다.
 
