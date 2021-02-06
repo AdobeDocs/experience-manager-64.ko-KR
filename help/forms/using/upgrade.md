@@ -1,6 +1,6 @@
 ---
-title: AEM 6.4 Forms으로 업그레이드
-seo-title: AEM 6.4 Forms으로 업그레이드
+title: AEM 6.4 Forms로 업그레이드
+seo-title: AEM 6.4 Forms로 업그레이드
 description: 'AEM 6.1 Forms, AEM 6.2 Forms 및 LiveCycle ES4 SP1에서 AEM 6.3 Forms으로 직접 업그레이드할 수 있습니다. '
 seo-description: 'AEM 6.1 Forms, AEM 6.2 Forms 및 LiveCycle ES4 SP1에서 AEM 6.3 Forms으로 직접 업그레이드할 수 있습니다. '
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: 12a4785fe83c319e3b91bbdf4ae8cb5745f4f187
 workflow-type: tm+mt
 source-wordcount: '230'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
-# AEM 6.4 Forms으로 업그레이드{#upgrade-to-aem-forms}
+# AEM 6.4 Forms로 업그레이드{#upgrade-to-aem-forms}
 
 AEM 6.4 Forms에는 양식과 통신의 제작, 관리 및 사용자 경험을 간소화하는 몇 가지 새로운 기능과 향상된 기능이 포함되어 있습니다. AEM 6.4 Forms의 새로운 기능과 개선 사항에 대해 자세히 알아보려면 [새로운 기능 요약 문서](/help/forms/using/whats-new.md)를 참조하십시오.
 
