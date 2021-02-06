@@ -73,7 +73,7 @@ Adobe Target 아래에서 **구성 표시**&#x200B;를 클릭하거나 탭합니
 
 이렇게 하려면 Adobe Target 클라우드 구성을 연결할 A4T 클라우드 구성을 지정해야 합니다.
 
-1. **AEM 로고** > **도구** > **배포** > **Cloud Services**&#x200B;을 통해 &lt;a0/>Cloud Services **으로 이동합니다.**
+1. **AEM 로고** > **도구** > **배포** > **Cloud Services**&#x200B;을 통해 **Cloud Services**&#x200B;으로 이동합니다.
 1. **Adobe Target** 섹션에서 **지금 구성**&#x200B;을 클릭합니다.
 1. Adobe Target 구성에 다시 연결합니다.
 1. **A4T Analytics Cloud 구성** 드롭다운 메뉴에서 프레임워크를 선택합니다.
@@ -118,7 +118,7 @@ Adobe Target의 세그먼트를 동기화하도록 클라우드 구성을 구성
 
 AEM에서 Target 클라우드 구성을 만들려면 다음 절차를 따르십시오.
 
-1. **AEM 로고** > **도구** > **배포** > **Cloud Services**&#x200B;을 통해 &lt;a0/>Cloud Services **으로 이동합니다.** ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. **AEM 로고** > **도구** > **배포** > **Cloud Services**&#x200B;을 통해 **Cloud Services**&#x200B;으로 이동합니다. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
    **Adobe Marketing Cloud** 개요 페이지가 열립니다.
 
