@@ -64,7 +64,7 @@ AEM을 다운로드한 후 AEM 작성자 인스턴스를 설정하는 방법은 
 
 세부 지침은 다음을 참조하십시오.
 
-* [AEM 6.4 서비스 팩 릴리스 노트](https://helpx.adobe.com/kr/experience-manager/6-4/release-notes/sp-release-notes.html)
+* [AEM 6.4 서비스 팩 릴리스 노트](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
 
 최신 AEM 패키지 또는 서비스 팩을 찾을 수 없는 경우 **지원 센터에 문의**&#x200B;하십시오.
 
