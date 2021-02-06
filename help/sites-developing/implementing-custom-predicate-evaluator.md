@@ -173,7 +173,7 @@ pom.xml
 >
 >`PredicateEvaluator`의 이름은 쿼리를 작성할 때 사용되는 조건자 이름입니다.
 
-1. 재정의:
+1. 오버라이드:
 
    ```java
    public String getXPathExpression(Predicate predicate, EvaluationContext context)
