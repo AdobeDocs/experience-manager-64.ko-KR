@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
 source-wordcount: '330'
-ht-degree: 33%
+ht-degree: 35%
 
 ---
 
@@ -39,7 +39,7 @@ Dynamic Media에는 다음의 몇 가지 선택 사항이 있습니다.
 
 * [웹 페이지에 Dynamic Media 자산 추가](adding-dynamic-media-assets-to-pages.md)
 * [웹 페이지에 비디오 또는 이미지 뷰어 포함](embed-code.md)
-* [Dynamic Media에서 핫링크 보호 활성화](https://helpx.adobe.com/experience-manager/6-4/assets/using/hotlink-protection.html)
+* [Dynamic Media에서 핫링크 보호 활성화](https://helpx.adobe.com/kr/experience-manager/6-4/assets/using/hotlink-protection.html)
 * 디지털 보이지 않는 워터마크(Digimarc)와 Dynamic Media 통합(준비 중)
 * [URL을 웹 애플리케이션에 연결](linking-urls-to-yourwebapplication.md)
 * [응답형 사이트용으로 최적화된 이미지 제공](responsive-site.md)
