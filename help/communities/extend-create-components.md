@@ -170,7 +170,7 @@ ht-degree: 4%
 
 ## SCF 모델 등록 및 보기 {#register-the-scf-model-view}
 
-SCF 구성 요소를 확장(재정의)할 때 resourceType은 다릅니다(오버레이하면 resourceType이 동일하게 유지되도록 `/apps` 앞에서 &lt;a0/>을(를) 검색하는 상대 검색 메커니즘을 사용할 수 있습니다). `/libs` 이 때문에 클라이언트 라이브러리에서 JavaScript를 작성하여 SCF JS 모델을 등록하고 사용자 지정 resourceType에 대해 확인해야 합니다.
+SCF 구성 요소를 확장(재정의)할 때 resourceType은 다릅니다(오버레이하면 resourceType이 동일하게 유지되도록 `/apps` 앞에서 `/libs`을(를) 검색하는 상대 검색 메커니즘을 사용할 수 있습니다). 이 때문에 클라이언트 라이브러리에서 JavaScript를 작성하여 SCF JS 모델을 등록하고 사용자 지정 resourceType에 대해 확인해야 합니다.
 
 다음 텍스트를 `customcommentsystem.js`의 내용으로 입력합니다.
 
