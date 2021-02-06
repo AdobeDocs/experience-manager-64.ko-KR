@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 workflow-type: tm+mt
 source-wordcount: '637'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -77,7 +77,7 @@ OSGi 구성 **ACS AEM Commons - Dispatcher Cache Control Header - Max Age**&#x20
 
 ## 발송자 필터 {#dispatcher-filters}
 
-`dispatcher.any` 파일의 /filter 섹션은 [콘텐츠에 대한 액세스 구성 - /filter](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#filter)에 설명되어 있습니다.
+`dispatcher.any` 파일의 /filter 섹션은 [콘텐츠에 대한 액세스 구성 - /filter](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html#filter)에 설명되어 있습니다.
 
 이 섹션에서는 커뮤니티 기능의 적절한 기능에 필요한 항목을 설명합니다.
 
