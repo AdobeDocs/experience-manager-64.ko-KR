@@ -38,7 +38,7 @@ AEM 양식(및 이전 버전)은 JMS 대기열을 사용하여 작업을 비동�
 1. 작업 관리자는 작업 항목을 데이터베이스 테이블에 저장하고 작업 항목에 고유 식별자를 할당합니다. 데이터베이스 레코드에는 작업 항목을 실행하는 데 필요한 모든 정보가 포함됩니다.
 1. 스레드가 무료가 되면 Work Manager 스레드가 작업 항목을 가져옵니다. 작업 항목을 가져오기 전에 스레드는 필요한 서비스가 시작되었는지, 다음 작업 항목을 가져올 충분한 더미 크기가 있는지, 작업 항목을 처리할 충분한 CPU 주기가 있는지 여부를 확인할 수 있습니다. 또한 Work Manager는 실행을 예약할 때 작업 항목의 특성(예: 우선 순위)을 평가합니다.
 
-AEM 양식 관리자는 상태 모니터를 사용하여 대기열에 있는 작업 항목 수 및 상태 등의 작업 관리자 통계를 확인할 수 있습니다. 상태 모니터를 사용하여 작업 항목을 일시 중지, 다시 시작, 다시 시도 또는 삭제할 수도 있습니다. (작업 관리자[와 관련된 통계 보기를 참조하십시오.)](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager)
+AEM 양식 관리자는 상태 모니터를 사용하여 대기열에 있는 작업 항목 수 및 상태 등의 작업 관리자 통계를 확인할 수 있습니다. 상태 모니터를 사용하여 작업 항목을 일시 중지, 다시 시작, 다시 시도 또는 삭제할 수도 있습니다. (작업 관리자](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager)와 관련된 통계 보기를 참조하십시오.)[
 
 ## 작업 관리자 조절 옵션 {#configuring-work-manager-throttling-options} 구성
 
