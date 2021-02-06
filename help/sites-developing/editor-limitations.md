@@ -1,8 +1,8 @@
 ---
 title: 편집기 제한 사항
 seo-title: 편집기 제한 사항
-description: 터치 지원 UI의 편집기는 오버레이를 사용하여 iframe에 포함된 컨텐츠와 상호 작용합니다. 이러한 상호 작용으로 편집기와 개발자를 위한 두 가지 사용 모두에서 몇 가지 제한 사항이 발생합니다.
-seo-description: 터치 지원 UI의 편집기는 오버레이를 사용하여 iframe에 포함된 컨텐츠와 상호 작용합니다. 이러한 상호 작용으로 편집기와 개발자를 위한 두 가지 사용 모두에서 몇 가지 제한 사항이 발생합니다.
+description: 터치 지원 UI의 편집기는 오버레이를 사용하여 iframe에 포함된 컨텐츠와 상호 작용합니다. 이러한 상호 작용은 편집자와 개발자의 사용에 모두 제한을 만듭니다.
+seo-description: 터치 지원 UI의 편집기는 오버레이를 사용하여 iframe에 포함된 컨텐츠와 상호 작용합니다. 이러한 상호 작용은 편집자와 개발자의 사용에 모두 제한을 만듭니다.
 uuid: ff524530-3f3a-4c5b-9f94-4aa9aeb9d461
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: 9b1b0bd53d6c9e0c2c2857ef34b3409fff8485d2
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 1%
+ht-degree: 14%
 
 ---
 
 
 # 편집기 제한 사항{#editor-limitations}
 
-터치 지원 UI의 편집기는 오버레이를 사용하여 iframe에 포함된 컨텐츠와 상호 작용합니다. 이러한 상호 작용으로 편집기와 개발자를 위한 두 가지 사용 모두에서 몇 가지 제한 사항이 발생합니다. 이 페이지에서는 이러한 제한 사항을 요약하고 가능한 경우 해결 방법 또는 해결 방법을 제공합니다.
+터치 지원 UI의 편집기는 오버레이를 사용하여 iframe에 포함된 컨텐츠와 상호 작용합니다. 이러한 상호 작용은 편집자와 개발자의 사용에 모두 제한을 만듭니다. 이 페이지에서는 이러한 제한 사항을 요약하고 가능한 경우 해결 방법 또는 해결 방법을 제공합니다.
 
 ## 기능 제한 사항 {#functional-limitations}
 
