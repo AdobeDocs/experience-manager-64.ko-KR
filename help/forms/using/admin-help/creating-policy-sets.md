@@ -87,7 +87,7 @@ ht-degree: 0%
 
 1. 저장을 클릭합니다.
 
-이제 정책 세트에 정책을 추가할 수 있습니다. (정책 만들기 및 편집[을 참조하십시오.)](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies)
+이제 정책 세트에 정책을 추가할 수 있습니다. (정책 만들기 및 편집](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies)을 참조하십시오.)[
 
 ## 정책 집합 {#edit-a-policy-set} 편집
 
