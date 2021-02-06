@@ -885,5 +885,5 @@ AEM은 제품에 표준 페이지를 사용하기 때문에 표준 검색 구성
 * 필요한 기능으로 기본 검색 구성 요소를 확장합니다.
 * `CommerceService`에서 검색 방법을 구현한 다음 검색 페이지에서 eCommerce 검색 구성 요소를 사용합니다.
 
-eCommerce 엔진을 사용하는 경우 eCommerce 검색 API를 eCommerce 엔진 솔루션에서 완전히 구현할 수 있으므로 즉시 제공되는 eCommerce 검색 구성 요소를 사용할 수 있습니다. 패싯된 검색을 사용하여 JCR 및/또는 엔진을 검색할 수 있습니다.
+eCommerce 엔진을 사용할 때 eCommerce 검색 API를 eCommerce 엔진 솔루션에서 완전히 구현할 수 있으므로 즉시 제공되는 eCommerce 검색 구성 요소를 사용할 수 있습니다. 패싯된 검색을 사용하여 JCR 및/또는 엔진을 검색할 수 있습니다.
 
