@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: 4f820cd0bf3a18b18c95e75c0f291452871175a4
 workflow-type: tm+mt
 source-wordcount: '4981'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -196,7 +196,7 @@ AEM 구성 요소의 구조는 강력하고 유연하며, 주요 고려 사항�
 
       * `icon.png` - 이 구성 요소의 아이콘.
       * `thumbnail.png` - 이 구성 요소가 단락 시스템 내에 나열되는 경우 표시되는 이미지입니다.
-   * 터치 UI
+   * Touch UI
 
       * 자세한 내용은 터치 UI](/help/sites-developing/components-basics.md#component-icon-in-touch-ui)의 [구성 요소 아이콘 섹션을 참조하십시오.
 
