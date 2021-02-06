@@ -274,7 +274,7 @@ function check(){
 
 대화 상자를 만들려면:
 
-* 결과 데이터가 페이로드[에 저장되는 위치를 결정합니다.](#dialog-participant-step-storing-data-in-the-payload)
+* 결과 데이터가 페이로드](#dialog-participant-step-storing-data-in-the-payload)에 저장되는 위치를 결정합니다.[
 * [대화 상자 정의;여기에는 데이터를 수집(및 저장)하는 데 사용되는 필드를 정의하는 것이 포함됩니다](#dialog-participant-step-dialog-definition).
 
 #### 대화 상자 참가자 단계 - 페이로드 {#dialog-participant-step-storing-data-in-the-payload}에 데이터 저장
