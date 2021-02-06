@@ -1,6 +1,6 @@
 ---
-title: SAML 2.0 인증 처리기
-seo-title: SAML 2.0 인증 처리기
+title: SAML 2.0 인증 핸들러
+seo-title: SAML 2.0 인증 핸들러
 description: AEM의 SAML 2.0 인증 핸들러에 대해 알아봅니다.
 seo-description: AEM의 SAML 2.0 인증 핸들러에 대해 알아봅니다.
 uuid: 51f97315-350a-42a4-af2c-2de87307c6ad
@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: 9f8ee3448abeb9a2f4de09b6ccc2f29b00b44fe5
 workflow-type: tm+mt
 source-wordcount: '853'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# SAML 2.0 인증 처리기{#saml-authentication-handler}
+# SAML 2.0 인증 핸들러{#saml-authentication-handler}
 
 AEM은 [SAML](http://saml.xml.org/saml-specifications) 인증 핸들러와 함께 제공됩니다. 이 핸들러는 `HTTP POST` 바인딩을 사용하여 [SAML](http://saml.xml.org/saml-specifications) 2.0 인증 요청 프로토콜(Web-SSO 프로필)에 대한 지원을 제공합니다.
 
@@ -33,7 +33,7 @@ AEM은 [SAML](http://saml.xml.org/saml-specifications) 인증 핸들러와 함�
 
 >[!NOTE]
 >
->AEM 및 SAML 통합 [ 데모를 참조하십시오.](https://helpx.adobe.com/experience-manager/kb/simple-saml-demo.html)
+>AEM 및 SAML 통합 ](https://helpx.adobe.com/experience-manager/kb/simple-saml-demo.html) 데모를 참조하십시오.[
 >
 >최종 커뮤니티 아티클을 읽으려면 다음을 클릭합니다.[Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/aem63_saml.html)와 SAML 통합
 
@@ -60,7 +60,7 @@ AEM은 [SAML](http://saml.xml.org/saml-specifications) 인증 핸들러와 함�
 
 **서비스** 등급 OSGi 프레임워크 서비스 등급 값으로 이 서비스를 호출할 순서를 나타냅니다. 높은 값이 높은 우선 순위를 지정하는 정수 값입니다.
 
-**IDP 인증서** 별칭글로벌 truststore의 IdP 인증서의 별칭입니다. 이 속성이 비어 있으면 인증 핸들러가 비활성화됩니다. 설정 방법은 아래의 &quot;AEM TrustStore에 IdP 인증서 추가&quot; 장을 참조하십시오.
+**IDP 인증서** 별칭글로벌 truststore에 있는 IdP 인증서의 별칭입니다. 이 속성이 비어 있으면 인증 핸들러가 비활성화됩니다. 설정 방법은 아래의 &quot;AEM TrustStore에 IdP 인증서 추가&quot; 장을 참조하십시오.
 
 **SAML** 인증 요청을 보내야 하는 IDP의 ID 공급자 URL. 이 속성이 비어 있으면 인증 핸들러가 비활성화됩니다.
 
