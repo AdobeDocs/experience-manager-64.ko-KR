@@ -52,7 +52,7 @@ ContextHub는 컨텍스트 데이터를 저장, 조작 및 표시하기 위한 �
 
 페이지에서 [ContextHub UI](/help/sites-authoring/ch-previewing.md)을 표시하거나 숨기도록 Adobe Granite ContextHub OSGi 서비스를 구성합니다. 이 서비스의 PID는 `com.adobe.granite.contexthub.impl.ContextHubImpl.`입니다.
 
-서비스를 구성하려면 [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)을 사용하거나 [리포지토리](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)에서 &lt;a2/>JCR 노드를 사용할 수 있습니다.
+서비스를 구성하려면 [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)을 사용하거나 [리포지토리](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)에서 JCR 노드를 사용할 수 있습니다.
 
 * **웹 콘솔:** UI를 표시하려면 [UI 표시] 속성을 선택합니다. UI를 숨기려면 UI 숨기기 속성을 지우십시오.
 * **JCR 노드:** UI를 표시하려면 부울  `com.adobe.granite.contexthub.show_ui` 속성을 로  `true`설정합니다. UI를 숨기려면 속성을 `false`으로 설정합니다.
