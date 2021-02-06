@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
 source-wordcount: '3566'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -42,7 +42,7 @@ Adobe Creative Cloud은 크리에이티브 팀에게 디지털 에셋을 만드�
 | 비즈니스 사용자는 간단하게 에셋 열기 및 사용, AEM에 대한 변경 사항 편집 및 업로드, 데스크탑 환경에서 AEM에 새 파일을 업로드할 수 있습니다. 이들은 범용 통합을 사용하여 Adobe이 아닌 에셋 유형을 비롯하여 기본 데스크탑 애플리케이션에서 에셋 유형을 엽니다. | [AEM Desktop App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Win 및 Mac 데스크탑용 AEM 데스크탑 앱 |
 | 마케터와 비즈니스 사용자는 AEM에서 Adobe Stock 에셋을 검색, 미리 보기, 라이선스 부여 및 저장 및 관리할 수 있습니다. 라이선스가 부여된 에셋과 저장된 에셋은 보다 효과적인 관리를 위해 일부 Adobe Stock 메타데이터를 제공합니다. | [Experience Manager 및 Adobe Stock 통합](aem-assets-adobe-stock.md) | AEM 웹 인터페이스 |
 
-이 문서에서는 주로 공동 작업이 필요한 첫 2가지 측면에 초점을 맞춥니다. 사용 사례로는 규모에 따라 자산의 분배 및 소싱이 간단히 언급됩니다. 이러한 필수 솔루션에 대해서는 Adobe 브랜드 포털 또는 에셋 공유 공유세를 고려하십시오. [브랜드 포털](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html)과 같은 대체 솔루션, [자산 공유 공용](https://adobe-marketing-cloud.github.io/asset-share-commons/) 구성 요소, [링크 공유](/help/assets/link-sharing.md)를 기반으로 구축할 수 있는 솔루션, [Experience Manager 자산](/help/assets/managing-assets-touch-ui.md)을(를) 사용하는 &lt;a6/>은 특정 요구 사항에 따라 검토해야 합니다.
+이 문서에서는 주로 공동 작업이 필요한 첫 2가지 측면에 초점을 맞춥니다. 사용 사례로는 규모에 따라 자산의 분배 및 소싱이 간단히 언급됩니다. 이러한 필수 솔루션에 대해서는 Adobe 브랜드 포털 또는 에셋 공유 공유세를 고려하십시오. [브랜드 포털](https://helpx.adobe.com/kr/experience-manager/brand-portal/user-guide.html)과 같은 대체 솔루션, [자산 공유 공용](https://adobe-marketing-cloud.github.io/asset-share-commons/) 구성 요소, [링크 공유](/help/assets/link-sharing.md)를 기반으로 구축할 수 있는 솔루션, [Experience Manager 자산](/help/assets/managing-assets-touch-ui.md)을(를) 사용하는 은 특정 요구 사항에 따라 검토해야 합니다.
 
 ![AEM용 Creative Cloud 연결:사용할 기능 결정](assets/creative-connections-aem.png)
 
@@ -113,7 +113,7 @@ The terms used in this document may have a different meaning in other contexts. 
 
 * [데스크톱 앱 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles)를 참조하십시오.
 * [Adobe Stock 통합](aem-assets-adobe-stock.md) 참조
-* [Adobe 자산 링크](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)를 참조하십시오.
+* [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)를 참조하십시오
 
 Experience Manager 및 Creative Cloud 통합에 대한 우수 사례에 대한 간략한 요약입니다. 이 문서의 나머지 부분을 참조하여 이러한 내용을 자세히 파악하십시오.
 
