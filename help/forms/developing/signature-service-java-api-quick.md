@@ -398,7 +398,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api}을 사용하여 PDF 문서에 디지털 서명
 
-다음 Java 코드 예제에서는 *LoanSig.pdf*&#x200B;라는 PDF 파일을 기반으로 하는 PDF 문서에 디지털 서명을 합니다. 보안 자격 증명에 대해 지정된 별칭은 안전하며 해지 확인이 수행됩니다. CRL 또는 OCSP 서버 정보가 지정되지 않았으므로 PDF 문서에 디지털 서명하는 데 사용되는 인증서에서 서버 정보를 가져옵니다. 서명된 문서는 *LoanSigned.pdf*&#x200B;라는 PDF 파일로 저장됩니다. (PDF 문서[에 디지털 서명 참조)](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)
+다음 Java 코드 예제에서는 *LoanSig.pdf*&#x200B;라는 PDF 파일을 기반으로 하는 PDF 문서에 디지털 서명을 합니다. 보안 자격 증명에 대해 지정된 별칭은 안전하며 해지 확인이 수행됩니다. CRL 또는 OCSP 서버 정보가 지정되지 않았으므로 PDF 문서에 디지털 서명하는 데 사용되는 인증서에서 서버 정보를 가져옵니다. 서명된 문서는 *LoanSigned.pdf*&#x200B;라는 PDF 파일로 저장됩니다. (PDF 문서](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)에 디지털 서명 참조)[
 
 ```as3
  /* 
