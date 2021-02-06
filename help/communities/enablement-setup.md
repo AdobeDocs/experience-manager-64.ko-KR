@@ -58,7 +58,7 @@ AEM Communities의 경우
 
 ## 지원 기능 구성 {#configure-enablement-features}
 
-이 자습서를 따르려면 MySQL 및 FFmpeg와 같은 타사 제품이 필요한 지원[을 올바르게 설치하고 구성해야 합니다.](enablement.md)
+이 자습서를 따르려면 MySQL 및 FFmpeg와 같은 타사 제품이 필요한 지원](enablement.md)을 올바르게 설치하고 구성해야 합니다.[
 
 ## Analytics 구성 {#configure-analytics}
 
