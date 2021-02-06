@@ -219,7 +219,7 @@ InDesign Server과 AEM이 다른 호스트에 있거나 이러한 응용 프로�
 
 1. 이러한 변경 내용을 저장합니다.
 1. Adobe CS6 이상 버전에 대한 다중 세션 지원을 활성화하려면 `com.day.cq.dam.ids.impl.IDSJobProcessor.name configuration` 아래의 `enable.multisession.name` 확인란을 선택합니다.
-1. IDS Worker 구성`*x*>`에 SOAP 끝점을 추가하여 &lt; [ IDS 워커 풀을 만듭니다.](#configuring-the-proxy-worker-for-indesign-server)
+1. IDS Worker 구성](#configuring-the-proxy-worker-for-indesign-server)에 SOAP 끝점을 추가하여 &lt; `*x*>` IDS 워커 풀을 만듭니다.[
 
    InDesign Server을 실행하는 컴퓨터가 여러 개인 경우 각 컴퓨터에 대해 SOAP 끝점(시스템당 프로세서 수 -1)을 추가하십시오.
 
