@@ -101,4 +101,4 @@ ht-degree: 4%
 
 기본 [사이트 템플릿 콘솔](#site-templates-console)에서 사이트 템플릿을 볼 때 편집할 기존 사이트 템플릿을 선택할 수 있습니다.
 
-이 프로세스는 사이트 템플릿[을 만드는 것과 동일한 패널을 제공합니다.](#create-site-template)
+이 프로세스는 사이트 템플릿](#create-site-template)을 만드는 것과 동일한 패널을 제공합니다.[
