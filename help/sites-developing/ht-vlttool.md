@@ -26,7 +26,7 @@ VLT(Jackrabbit FileVault) 도구는 Jackrabbit/AEM 인스턴스의 내용을 파
 
 ## 개념 및 아키텍처 {#concepts-and-architecture}
 
-파일 도구의 개념과 구조에 대한 전체 개요는 [파일 개요](https://jackrabbit.apache.org/filevault/overview.html) 및 [Vault FS](https://jackrabbit.apache.org/filevault/vaultfs.html) 공식 문서 [Apache Jackrabbit Filerault 설명서](https://jackrabbit.apache.org/filevault/index.html)의 &lt;a2/>를 참조하십시오.
+파일 도구의 개념과 구조에 대한 전체 개요는 [파일 개요](https://jackrabbit.apache.org/filevault/overview.html) 및 [Vault FS](https://jackrabbit.apache.org/filevault/vaultfs.html) 공식 문서 [Apache Jackrabbit Filerault 설명서](https://jackrabbit.apache.org/filevault/index.html)의 를 참조하십시오.
 
 ## VLT {#getting-started-with-vlt} 시작하기
 
