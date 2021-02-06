@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 workflow-type: tm+mt
 source-wordcount: '827'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
-# 워크플로 인스턴스 관리{#administering-workflow-instances}
+# 워크플로우 인스턴스 관리{#administering-workflow-instances}
 
 워크플로우 콘솔은 워크플로우 인스턴스가 예상대로 실행되는지 확인하기 위해 워크플로우 인스턴스를 관리하기 위한 여러 도구를 제공합니다.
 
