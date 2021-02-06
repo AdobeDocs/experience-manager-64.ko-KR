@@ -296,7 +296,7 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 #### CRX DE Lite 활성화 및 비활성화 {#enabling-and-disabling-crx-de-lite}
 
-자세한 내용은 AEM[에서 CRXDE Lite 활성화를 참조하십시오.](/help/sites-administering/enabling-crxde-lite.md)
+자세한 내용은 AEM](/help/sites-administering/enabling-crxde-lite.md)에서 CRXDE Lite 활성화를 참조하십시오.[
 
 ### 데이터 저장소 가비지 컬렉션 {#data-store-garbage-collection}
 
