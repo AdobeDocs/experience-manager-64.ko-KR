@@ -24,7 +24,7 @@ PDF Generator에서 지원되는 파일 유형에 대한 애플리케이션 설�
 파일 유형 설정 페이지에서 다음 작업을 수행할 수 있습니다.
 
 * [파일 유형 설정 만들기 또는 편집](#create-or-edit-file-type-settings)
-* 기본적으로 사용할 파일 유형 설정을 지정합니다(PDF Generator 구성 파일 가져오기 및 내보내기[ 참조).](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+* 기본적으로 사용할 파일 유형 설정을 지정합니다(PDF Generator 구성 파일 가져오기 및 내보내기](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md) 참조).[
 * [기본 설정 변경](/help/forms/using/admin-help/configuring-file-type-settings.md#change-the-default-settings)
 * [PDF/A 지원 사용](/help/forms/using/admin-help/enable-pdf-a-support.md)
 * [파일 유형 설정 삭제](/help/forms/using/admin-help/enable-pdf-a-support.md)
@@ -361,7 +361,7 @@ NOTE to WRITER - The above sentence is incomplete.
 * **포함된 인쇄 설정** 취소:문서에서 페이지 크기 조절 및 양면 모드와 같은 포함된 인쇄 설정을 제거합니다.
 * **책갈피 무시**:문서에서 모든 책갈피를 제거합니다.
 * **양식 필드 병합**:양식 필드의 모양을 변경하지 않고 사용할 수 없게 합니다. 양식 데이터는 페이지와 병합되어 페이지 컨텐츠가 됩니다.
-* **모든 대체 이미지** 삭제:화면에 표시할 버전을 제외한 모든 버전의 이미지를 제거합니다. 일부 PDF에는 저해상도의 화면상의 보기 및 고해상도 인쇄와 같이 다양한 용도로 동일한 이미지의 여러 버전이 포함되어 있습니다.
+* **모든 대체 이미지** 삭제:화면에 표시할 버전을 제외한 모든 버전의 이미지를 제거합니다. 일부 PDF에는 저해상도 화면상의 보기 및 고해상도 인쇄와 같이 다양한 용도로 동일한 이미지의 여러 버전이 포함되어 있습니다.
 * **문서 태그 무시**:문서에서 태그를 제거합니다. 이 경우 텍스트에 대한 액세스 가능성 및 리플로우 기능도 제거됩니다.
 * **이미지 조각 감지 및 병합**:얇은 슬라이스로 조각난 이미지나 마스크를 찾아 단일 이미지나 마스크로 분할 영역을 병합합니다.
 * **포함된 검색 색인 무시**:포함된 검색 인덱스를 제거하여 파일 크기를 줄입니다.
