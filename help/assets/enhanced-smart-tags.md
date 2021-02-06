@@ -172,7 +172,7 @@ Smart Content Service를 활성화하여 폴더 내의 자산에 주기적으로
 
    Smart Content Service에서 에셋에 태그가 제대로 지정되었는지 확인하려면 에셋 폴더로 이동하고 태그를 검토합니다. 자세한 내용은 [스마트 태그 관리](managing-smart-tags.md)를 참조하십시오.
 
-#### 타임라인 {#tagging-assets-from-the-timeline}에서 자산 태그 지정
+#### 타임라인 {#tagging-assets-from-the-timeline}에서 에셋 태그 지정
 
 1. 자산 사용자 인터페이스에서 스마트 태그를 적용할 자산 또는 특정 자산이 들어 있는 폴더를 선택합니다.
 1. 전역 탐색 아이콘을 탭/클릭하고 타임라인을 엽니다.
