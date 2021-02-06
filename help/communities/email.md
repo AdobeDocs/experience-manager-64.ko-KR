@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 workflow-type: tm+mt
 source-wordcount: '829'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 AEM Communities에서
 
 * [커뮤니티 알림](notifications.md)
-* [커뮤니티 가입](subscriptions.md)
+* [커뮤니티 구독](subscriptions.md)
 
 이메일 기능은 기본적으로 SMTP 서버 및 SMTP 사용자의 사양이 필요하므로 작동하지 않습니다.
 
