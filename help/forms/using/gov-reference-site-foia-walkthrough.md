@@ -79,7 +79,7 @@ John Jacobs는 요청을 받고 올바른 사람에게 전달한다. AEM 받은 
 
 ### 직접 보기 {#see-it-yourself-1}
 
-https://&lt;***hostname***:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html에서 AEM 받은 편지함에 액세스할 수 있습니다. John Jacobs의 사용자 이름/암호를 사용하여 AEM 받은 편지함에 로그인하고 FOIA 응용 프로그램을 참조하십시오. 양식 중심의 워크플로우 작업에 AEM 받은 편지함을 사용하는 방법에 대한 자세한 내용은 AEM 받은 편지함에서 Forms 응용 프로그램 및 작업 관리[를 참조하십시오.](/help/forms/using/manage-applications-inbox.md)
+https://&lt;***hostname***:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html에서 AEM 받은 편지함에 액세스할 수 있습니다. John Jacobs의 사용자 이름/암호를 사용하여 AEM 받은 편지함에 로그인하고 FOIA 응용 프로그램을 참조하십시오. 양식 중심의 워크플로우 작업에 AEM 받은 편지함을 사용하는 방법에 대한 자세한 내용은 AEM 받은 편지함에서 Forms 응용 프로그램 및 작업 관리](/help/forms/using/manage-applications-inbox.md)를 참조하십시오.[
 
 ![조앤 제이콥스](assets/johnjacobs.png)
 
