@@ -95,7 +95,7 @@ Adobe Sign을 AEM Forms과 통합하려면 다음이 필요합니다.
 1. **허용** 필드에서 **선택** 모든 사용자 - 익명 또는 로그인한 모든 사용자가 첨부 파일을 미리 보고 양식을 확인 및 서명할 수 있으며 **저장을 클릭합니다.** 작성자 인스턴스가 Adobe Sign을 사용하도록 구성되어 있습니다.
 1. 해당 게시 인스턴스에 대해 동일한 구성을 만들려면 [replication](/help/sites-deploying/replication.md)을 사용합니다.
 
-이제 Adobe Sign은 AEM Forms과 통합되어 적응형 양식에 사용할 수 있습니다. 응용 양식[에서 Adobe Sign 서비스를 사용하려면 응용 양식 속성에서 위에 만든 구성 컨테이너를 지정합니다.](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form)
+이제 Adobe Sign은 AEM Forms과 통합되어 적응형 양식에 사용할 수 있습니다. 응용 양식](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form)에서 Adobe Sign 서비스를 사용하려면 응용 양식 속성에서 위에 만든 구성 컨테이너를 지정합니다.[
 
 ## Adobe Sign 스케줄러를 구성하여 서명 상태 {#configure-adobe-sign-scheduler-to-sync-the-signing-status} 동기화
 
