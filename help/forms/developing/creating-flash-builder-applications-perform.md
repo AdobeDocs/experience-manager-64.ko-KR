@@ -26,7 +26,7 @@ HTTP 토큰을 사용하여 SSO(Single Sign On) 인증을 수행하는 Flash Bui
 
 >[!NOTE]
 >
->이 섹션을 읽기 전에 Remoting을 사용하여 AEM Forms 호출을 사용하는 것이 좋습니다. (AEM Forms Remoting[을(를) 사용하여 AEM Forms 호출 참조)](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
+>이 섹션을 읽기 전에 Remoting을 사용하여 AEM Forms 호출을 사용하는 것이 좋습니다. (AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)을(를) 사용하여 AEM Forms 호출 참조)[
 
 사용자가 SSO를 사용하여 인증한 후 이름이 `MyApplication/EncryptDocument`인 다음 AEM Forms 단기 프로세스가 호출됩니다. (입력 및 출력 값과 같은 이 프로세스에 대한 자세한 내용은 [Short Lived 프로세스 예](/help/forms/developing/aem-forms-processes.md)를 참조하십시오.)
 
@@ -120,7 +120,7 @@ SSO 인증을 수행하는 클라이언트 응용 프로그램을 만드는 방�
 * `views/login.mxml`:로그인 화면을 나타냅니다. 자세한 내용은 [login.mxml 파일 만들기](creating-flash-builder-applications-perform.md#creating-the-login-mxml-file)를 참조하십시오.
 * `views/logout.mxml`:로그아웃 화면을 나타냅니다. 자세한 내용은 [logout.mxml 파일 만들기](creating-flash-builder-applications-perform.md#creating-the-logout-mxml-file)를 참조하십시오.
 * `views/progress.mxml`:진행 보기를 나타냅니다. 자세한 내용은 [progress.mxml 파일 만들기](creating-flash-builder-applications-perform.md#creating-the-progress-mxml-file)를 참조하십시오.
-* `views/remoting.mxml`:원격 기능을 사용하여 MyApplication/EncryptDocument라는 AEM Forms 단기 프로세스를 호출하는 보기를 나타냅니다. (remoting.mxml 파일 만들기[를 참조하십시오.)](creating-flash-builder-applications-perform.md#creating-the-remoting-mxml-file)
+* `views/remoting.mxml`:원격 기능을 사용하여 MyApplication/EncryptDocument라는 AEM Forms 단기 프로세스를 호출하는 보기를 나타냅니다. (remoting.mxml 파일 만들기](creating-flash-builder-applications-perform.md#creating-the-remoting-mxml-file)를 참조하십시오.)[
 
 다음 그림은 클라이언트 응용 프로그램을 시각적으로 보여줍니다.
 
@@ -670,7 +670,7 @@ SSO 인증을 수행하는 클라이언트 응용 프로그램을 만드는 방�
 
 ### remoting.mxml 파일 {#creating-the-remoting-mxml-file} 만들기
 
-다음 코드는 `MyApplication/EncryptDocument` 프로세스를 호출하는 remoting.mxml 파일을 나타냅니다. 문서가 프로세스에 전달되기 때문에 AEM Forms으로 보안 문서를 전달하는 데 책임이 있는 응용 프로그램 논리가 이 파일에 있습니다. (Remoting[을(를) 사용하여 프로세스를 호출하려면 보안 문서 전달을 참조하십시오.)](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)
+다음 코드는 `MyApplication/EncryptDocument` 프로세스를 호출하는 remoting.mxml 파일을 나타냅니다. 문서가 프로세스에 전달되기 때문에 AEM Forms으로 보안 문서를 전달하는 데 책임이 있는 응용 프로그램 논리가 이 파일에 있습니다. (Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)을(를) 사용하여 프로세스를 호출하려면 보안 문서 전달을 참조하십시오.)[
 
 ```as3
  <?xml version="1.0" encoding="utf-8"?> 
