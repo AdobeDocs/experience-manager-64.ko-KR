@@ -1,6 +1,6 @@
 ---
-title: 선택한 사용자 그룹에 규칙 편집기 액세스 권한 부여
-seo-title: 선택한 사용자 그룹에 규칙 편집기 액세스 권한 부여
+title: 사용자 그룹을 선택하는 규칙 편집기 액세스 부여
+seo-title: 사용자 그룹을 선택하는 규칙 편집기 액세스 부여
 description: 사용자 그룹을 선택할 수 있도록 규칙 편집기에 제한된 액세스 권한을 부여합니다.
 seo-description: 사용자 그룹을 선택할 수 있도록 규칙 편집기에 제한된 액세스 권한을 부여합니다.
 uuid: 3d982858-b2b5-4370-a9d7-5a95842a7897
@@ -12,12 +12,12 @@ translation-type: tm+mt
 source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
 
-# 선택한 사용자 그룹 {#grant-rule-editor-access-to-select-user-groups}에 대한 규칙 편집기 액세스 권한 부여
+# 사용자 그룹을 선택하는 규칙 편집기 액세스 부여 {#grant-rule-editor-access-to-select-user-groups}
 
 ## 개요 {#overview}
 
@@ -30,7 +30,7 @@ AEM Forms에서는 역할이나 기능에 따라 사용자에 대한 규칙 편�
 1. AEM Forms에 관리자로 로그인합니다.
 1. 작성자 인스턴스에서 ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > 도구 ![망치](assets/hammer.png) > 작업 > 웹 콘솔을 클릭합니다. 웹 콘솔이 새 창에 열립니다.
 
-   ![1](assets/1.png)
+   ![3](assets/1.png)
 
 1. 웹 콘솔 창에서 **적응형 양식 구성 서비스**&#x200B;를 찾아 클릭합니다. **응용 양식 구성 서비스** 대화 상자가 나타납니다. 값을 변경하지 말고 **저장**&#x200B;을 클릭합니다.
 
