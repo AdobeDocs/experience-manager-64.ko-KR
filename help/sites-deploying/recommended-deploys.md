@@ -124,7 +124,7 @@ AEM Communities의 경우 사용자 생성 컨텐츠(UGC)는 절대로 복제되
 
 >[!NOTE]
 >
->위의 다이어그램에서, 데이터 센터 2의 AEM 서버와 데이터 센터 1의 MongoDB 기본 노드 사이의 네트워크 지연이 문서화된 요구 사항보다 높은 것으로 가정할 때 AEM Server 3 및 AEM Server 4는 비활성 상태로 표시됩니다[. ](/help/sites-deploying/aem-with-mongodb.md#checklists) 예를 들어 가용 영역을 사용하여 최대 대기 시간이 요구 사항과 호환하는 경우 Data Center 2의 AEM 서버도 활성화하여 여러 데이터 센터에 활성 상태의 AEM 클러스터를 만들 수 있습니다.
+>위의 다이어그램에서, 데이터 센터 2의 AEM 서버와 데이터 센터 1의 MongoDB 기본 노드 사이의 네트워크 지연이 문서화된 요구 사항보다 높은 것으로 가정할 때 AEM Server 3 및 AEM Server 4는 비활성 상태로 표시됩니다](/help/sites-deploying/aem-with-mongodb.md#checklists). [ 예를 들어 가용 영역을 사용하여 최대 대기 시간이 요구 사항과 호환하는 경우 Data Center 2의 AEM 서버도 활성화하여 여러 데이터 센터에 활성 상태의 AEM 클러스터를 만들 수 있습니다.
 
 >[!NOTE]
 >
@@ -197,7 +197,7 @@ AEM용 MongoMK 배포를 고려하고 있는 경우 사전 요구 사항 및 권
 
 [AEM Communities](/help/communities/overview.md)을(를) 배포하려는 사이트의 경우 게시 환경에서 커뮤니티 구성원이 게시한 UGC 처리를 위해 최적화된 배포](/help/communities/working-with-srp.md)를 선택하는 것이 좋습니다.[
 
-UGC의 일관된 보기를 얻기 위해 작성자와 다른 게시 인스턴스 사이에 UGC를 복제할 필요가 없습니다.](/help/communities/working-with-srp.md)[
+UGC의 일관된 보기를 얻기 위해 작성자와 다른 게시 인스턴스 사이에 UGC를 복제할 필요가 없습니다.[](/help/communities/working-with-srp.md)
 
 다음은 배포의 최상의 지속성 유형을 선택할 수 있도록 도움을 주는 일련의 의사 결정 매트릭스입니다.
 
