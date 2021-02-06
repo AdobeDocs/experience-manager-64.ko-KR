@@ -42,7 +42,7 @@ ht-degree: 1%
 
 다음 단계에 따라 사이트 번역 준비를 하십시오.
 
-1. 언어 마스터의 언어 루트를 만듭니다. 예를 들어 영어 Geometrixx 데모 사이트의 언어 루트는 /content/geometrixx/en입니다. 언어 루트 만들기[의 정보에 따라 언어 루트가 올바르게 구성되어 있는지 확인합니다.](/help/sites-administering/tc-prep.md#creating-a-language-root)
+1. 언어 마스터의 언어 루트를 만듭니다. 예를 들어 영어 Geometrixx 데모 사이트의 언어 루트는 /content/geometrixx/en입니다. 언어 루트 만들기](/help/sites-administering/tc-prep.md#creating-a-language-root)의 정보에 따라 언어 루트가 올바르게 구성되어 있는지 확인합니다.[
 1. 언어 마스터의 컨텐츠를 작성합니다.
 1. 사이트에 사용할 각 언어 사본의 언어 루트를 만듭니다. 예를 들어 Geometrixx 샘플 사이트의 프랑스어 언어 복사본은 /content/geometrixx/fr입니다.
 
