@@ -153,7 +153,7 @@ adobe-forms-&lt;appserver>.ear 파일을 열어 JS 및 CSS 파일을 가져올 �
 
 >[!NOTE]
 >
->사용자 정의 도구 모음을 사용하는 HTML 양식을 렌더링하기 전에 HTML 양식이 렌더링되는 방법을 알아야 합니다. (HTML[로 Forms 렌더링 참조)](/help/forms/developing/rendering-forms-html.md)
+>사용자 정의 도구 모음을 사용하는 HTML 양식을 렌더링하기 전에 HTML 양식이 렌더링되는 방법을 알아야 합니다. (HTML](/help/forms/developing/rendering-forms-html.md)로 Forms 렌더링 참조)[
 
 Forms 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
