@@ -62,7 +62,7 @@ PTIFF 변환은 Dynamic Media Hybrid 모드에서만 로컬에 만들어지고 �
 
 >[!NOTE]
 >
->64비트 Linux의 XMP 쓰기 저장(writeback) 문제는 64비트 RedHat Linux[에서 XMP 쓰기 거기를 사용하는 방법을 참조하십시오.](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)
+>64비트 Linux의 XMP 쓰기 저장(writeback) 문제는 64비트 RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)에서 XMP 쓰기 거기를 사용하는 방법을 참조하십시오.[
 >
 >지원되는 플랫폼에 대한 자세한 내용은 [XMP 메타데이터 쓰기 백 사전 요구 사항](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back)을 참조하십시오.
 
