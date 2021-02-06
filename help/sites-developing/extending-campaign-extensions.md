@@ -181,7 +181,7 @@ API는 다음과 같습니다.
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
-모두 얻기를 원하는 하위 수준 수에 따라 URL **.1.json**&#x200B;의 끝을 **.2.json**, **.3.json**&#x200B;으로 바꿀 수 있습니다. 모든 키워드 &lt;a6/>infinity **을 사용할 수 있습니다.**
+모두 얻기를 원하는 하위 수준 수에 따라 URL **.1.json**&#x200B;의 끝을 **.2.json**, **.3.json**&#x200B;으로 바꿀 수 있습니다. 모든 키워드 **infinity**&#x200B;을 사용할 수 있습니다.
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.infinity.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
