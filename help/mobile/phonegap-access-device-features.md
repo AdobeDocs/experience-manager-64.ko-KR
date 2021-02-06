@@ -30,7 +30,7 @@ ht-degree: 2%
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
-이러한 장치 API 구성 요소 각각에 대한 소스 코드는 Github[에서 사용할 수 있습니다.](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/apps/brucelefebvre/kitchen-sink/components)
+이러한 장치 API 구성 요소 각각에 대한 소스 코드는 Github](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/apps/brucelefebvre/kitchen-sink/components)에서 사용할 수 있습니다.[
 
 각 API의 사용에 대한 자세한 내용은 [Cordova 플러그인 설명서](https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html)를 참조하십시오.
 
