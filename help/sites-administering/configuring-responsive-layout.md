@@ -73,7 +73,7 @@ AEM에서는 메커니즘을 조합하여 페이지에 대한 응답형 레이�
 
 ### 페이지 구성 요소를 등록하여 에뮬레이션 {#register-your-page-components-for-emulation}
 
-에뮬레이터를 사용하여 페이지를 지원하려면 페이지 구성 요소를 등록해야 합니다. 시뮬레이션[에 대한 페이지 구성 요소 등록을 참조하십시오.](/help/sites-developing/responsive.md#registering-page-components-for-simulation)
+에뮬레이터를 사용하여 페이지를 지원하려면 페이지 구성 요소를 등록해야 합니다. 시뮬레이션](/help/sites-developing/responsive.md#registering-page-components-for-simulation)에 대한 페이지 구성 요소 등록을 참조하십시오.[
 
 ### 장치 그룹 {#specify-the-device-groups} 지정
 
