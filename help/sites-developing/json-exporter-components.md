@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -37,7 +37,7 @@ JSON 내보내기는 [Sling Models](https://sling.apache.org/documentation/bundl
 
 >[!NOTE]
 >
->Sling Models를 사용하는 예를 보려면 AEM[에서 Sling 모델 내보내기 개발 문서를 참조하십시오.](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-model-exporter-tutorial-develop.html)
+>Sling Models를 사용하는 예를 보려면 AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-model-exporter-tutorial-develop.html)에서 Sling 모델 내보내기 개발 문서를 참조하십시오.[
 
 Sling Model 구현 클래스에는 다음과 같은 주석이 포함되어야 합니다.
 
