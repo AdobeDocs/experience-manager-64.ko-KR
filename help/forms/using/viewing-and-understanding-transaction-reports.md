@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 23607a6b2e74b50befe2fa19b868a0e4d561b0d8
 workflow-type: tm+mt
 source-wordcount: '882'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 거래 보고서 설정 중 {#setting-up-transaction-reports}
 
-거래 보고서 기능은 AEM 양식 추가 기능 패키지의 일부로 사용할 수 있습니다. 모든 작성자 및 게시 인스턴스에 Add-on 패키지를 설치하는 방법에 대한 자세한 내용은 [AEM 양식 설치 및 구성](https://helpx.adobe.com/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html)을 참조하십시오. AEM 양식 Add-on 패키지가 설치되면 다음을 수행합니다.
+거래 보고서 기능은 AEM 양식 추가 기능 패키지의 일부로 사용할 수 있습니다. 모든 작성자 및 게시 인스턴스에 Add-on 패키지를 설치하는 방법에 대한 자세한 내용은 [AEM 양식 설치 및 구성](https://helpx.adobe.com/kr/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html)을 참조하십시오. AEM 양식 Add-on 패키지가 설치되면 다음을 수행합니다.
 
 * 모든 게시 인스턴스에서 역방향 복제 사용
 * 거래 보고서 활성화
