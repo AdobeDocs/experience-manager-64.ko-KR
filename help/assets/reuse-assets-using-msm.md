@@ -56,7 +56,7 @@ MSM은 소스 에셋과 Live Copy 간에 라이브 관계를 유지하여 다음
 
 * **재시작:** Live Copy가 소스에서 업데이트를 다시 받기 시작하도록 라이브 관계를 다시 시작합니다. [작업 다시 시작](#suspend-and-resume-relationship)을 참조하십시오.
 
-* **재설정:** 재설정 작업을 수행하면 로컬 변경 사항을 덮어써서 Live Copy가 소스 복제본으로 다시 설정됩니다. 또한 상속 취소가 제거되고 모든 메타데이터 필드에 대한 상속이 재설정됩니다. 나중에 로컬 수정을 수행하려면 특정 필드의 상속을 다시 취소해야 합니다. LC[에 대한 로컬 수정을 참조하십시오.](#make-local-modifications-to-live-copy)
+* **재설정:** 재설정 작업을 수행하면 로컬 변경 사항을 덮어써서 Live Copy가 소스 복제본으로 다시 설정됩니다. 또한 상속 취소가 제거되고 모든 메타데이터 필드에 대한 상속이 재설정됩니다. 나중에 로컬 수정을 수행하려면 특정 필드의 상속을 다시 취소해야 합니다. LC](#make-local-modifications-to-live-copy)에 대한 로컬 수정을 참조하십시오.[
 
 * **분리:** Live Copy 자산/폴더의 라이브 관계를 완전히 제거할 수 있습니다. 작업을 분리하면 Live Copy는 소스에서 업데이트를 받을 수 없으며 더 이상 Live Copy가 되지 않습니다. [관계 제거](#remove-live-relationship)를 참조하십시오.
 
@@ -175,7 +175,7 @@ Live Copy 에셋 또는 폴더를 선택하고 왼쪽 레일을 열고 **[!UICON
 >
 >소스 자산에서 수정한 사항은 직접 관련된 Live Copy에만 롤아웃됩니다. Live Copy가 다른 Live Copy에서 파생된 경우, 수정 사항은 파생된 Live Copy로 롤아웃되지 않습니다.
 
-또는 특정 Live Copy를 선택한 후 [!UICONTROL 참조] 레일에서 롤아웃 작업을 시작할 수 있습니다. 자세한 내용은 Live Copy[에 대한 참조 레일의 빠른 작업을 참조하십시오. ](#quick-actions-from-references-rail-for-live-copy) 이 롤아웃 방식에서는 선택한 Live Copy 및 선택적으로 해당 하위 Live Copy만 업데이트됩니다.
+또는 특정 Live Copy를 선택한 후 [!UICONTROL 참조] 레일에서 롤아웃 작업을 시작할 수 있습니다. 자세한 내용은 Live Copy](#quick-actions-from-references-rail-for-live-copy)에 대한 참조 레일의 빠른 작업을 참조하십시오. [ 이 롤아웃 방식에서는 선택한 Live Copy 및 선택적으로 해당 하위 Live Copy만 업데이트됩니다.
 
 ![소스의 수정 내용을 선택한 Live Copy에 롤아웃합니다.](assets/lc_rollout_dialog.png)
 
@@ -185,15 +185,15 @@ Live Copy 에셋 또는 폴더를 선택하고 왼쪽 레일을 열고 **[!UICON
 
 | AEM 인터페이스에서 위치 | 사용 시기 및 이유 | 사용 방법 |
 |---|---|---|
-|  참조레일 | 소스를 이미 선택한 경우 신속하게 동기화할 수 있습니다. | 소스[에 대한 참조 레일의 빠른 작업을 참조하십시오.](#quick-actions-from-references-rail-for-source) |
+|  참조레일 | 소스를 이미 선택한 경우 신속하게 동기화할 수 있습니다. | 소스](#quick-actions-from-references-rail-for-source)에 대한 참조 레일의 빠른 작업을 참조하십시오.[ |
 | [!UICONTROL 속성] 페이지의 도구 모음 | Live Copy 속성이 이미 열려 있으면 동기화를 시작합니다. | [Live Copy 동기화](#synchronize-live-copy)를 참조하십시오. |
-| [!UICONTROL Live Copy ] 개요 콘솔 | 소스 폴더를 선택하거나 [!UICONTROL Live Copy 개요] 콘솔이 이미 열려 있을 때 여러 자산을 신속하게 동기화할 수 있습니다(반드시 모든 것이 아닙니다). 한 번에 하나의 자산에 대해 동기화 작업이 시작되지만 한 번에 여러 자산에 대해 빠르게 동기화할 수 있습니다. | Live Copy 폴더[에 있는 많은 자산에 대한 작업을 참조하십시오.](#take-actions-on-many-assets-in-lcfolder) |
+| [!UICONTROL Live Copy ] 개요 콘솔 | 소스 폴더를 선택하거나 [!UICONTROL Live Copy 개요] 콘솔이 이미 열려 있을 때 여러 자산을 신속하게 동기화할 수 있습니다(반드시 모든 것이 아닙니다). 한 번에 하나의 자산에 대해 동기화 작업이 시작되지만 한 번에 여러 자산에 대해 빠르게 동기화할 수 있습니다. | Live Copy 폴더](#take-actions-on-many-assets-in-lcfolder)에 있는 많은 자산에 대한 작업을 참조하십시오.[ |
 
 ### Live Copy 동기화 {#synchronize-live-copy}
 
 동기화 작업을 시작하려면 Live Copy의 **[!UICONTROL 속성]** 페이지를 열고 **[!UICONTROL Live Copy]**&#x200B;를 클릭한 다음 도구 모음에서 원하는 작업을 클릭합니다.
 
-동기화 작업과 관련된 상태 및 정보를 알려면 폴더[의 모든 Live Copy에 대한 정보 및 상태를 참조하십시오.](#information-status-of-all-lcs-of-folder)
+동기화 작업과 관련된 상태 및 정보를 알려면 폴더](#information-status-of-all-lcs-of-folder)의 모든 Live Copy에 대한 정보 및 상태를 참조하십시오.[
 
 ![동기화 작업은 변경 내용을 소스에 가져옵니다.](assets/lc_sync.png)
 
