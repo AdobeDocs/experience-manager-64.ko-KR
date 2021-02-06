@@ -378,7 +378,7 @@ AEM 6.4로 업그레이드하는 고객을 위한 권장 사항은 [고객을 �
   <tr>
    <td>페이지 번역</td> 
    <td>제거됨</td> 
-   <td>사이트 관리자를 사용하여 번역 프로젝트<a href="/help/sites-administering/tc-manage.md">에 페이지를 추가합니다.</a><br /> </td> 
+   <td>사이트 관리자를 사용하여 번역 프로젝트</a>에 페이지를 추가합니다.<br /><a href="/help/sites-administering/tc-manage.md"> </a></td> 
   </tr>
   <tr>
    <td>타임워프(날짜/시간 선택 및 검색 사이트 선택)<br /> </td> 
