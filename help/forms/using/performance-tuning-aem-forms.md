@@ -1,6 +1,6 @@
 ---
-title: AEM Forms 서버 성능 조정
-seo-title: AEM Forms 서버 성능 조정
+title: AEM Forms 서버의 성능 조정
+seo-title: AEM Forms 서버의 성능 조정
 description: AEM Forms이 최적으로 수행하려면 캐시 설정 및 JVM 매개변수를 미세 조정할 수 있습니다. 또한 웹 서버를 사용하면 AEM Forms 배포 성능을 향상시킬 수 있습니다.
 seo-description: AEM Forms이 최적으로 수행하려면 캐시 설정 및 JVM 매개변수를 미세 조정할 수 있습니다. 또한 웹 서버를 사용하면 AEM Forms 배포 성능을 향상시킬 수 있습니다.
 uuid: 77eaeecc-ca52-4d3d-92e6-1ab4d91b9edd
@@ -12,12 +12,12 @@ translation-type: tm+mt
 source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# AEM Forms 서버 {#performance-tuning-of-aem-forms-server} 성능 조정
+# AEM Forms 서버의 성능 조정 {#performance-tuning-of-aem-forms-server}
 
 이 문서에서는 병목 현상을 줄이고 AEM Forms 배포의 성능을 최적화하기 위해 구현할 수 있는 전략과 모범 사례에 대해 설명합니다.
 
