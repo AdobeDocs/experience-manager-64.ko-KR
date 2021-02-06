@@ -1,6 +1,6 @@
 ---
-title: 커뮤니티 가입
-seo-title: 커뮤니티 가입
+title: 커뮤니티 구독
+seo-title: 커뮤니티 구독
 description: '커뮤니티 멤버는 이메일을 통해 다른 구성원과 상호 작용할 수 있습니다. '
 seo-description: '커뮤니티 멤버는 이메일을 통해 다른 구성원과 상호 작용할 수 있습니다. '
 uuid: a4b98769-c219-4e18-8e80-9a806ab979ff
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 workflow-type: tm+mt
 source-wordcount: '361'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
