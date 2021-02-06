@@ -88,7 +88,7 @@ ht-degree: 0%
 1. **날짜** 열에서 텍스트 필드를 선택하고 ![configure_icon](assets/configure_icon.png)(구성)을 누릅니다.
 1. **바인딩 유형** 드롭다운 목록에서 **데이터 모델 개체**&#x200B;를 선택하고 **호출** > **호출**&#x200B;을 선택합니다. 속성을 저장하려면 ![done_icon](assets/done_icon.png)을 두 번 누릅니다.
 
-   마찬가지로 **Time**, **Number**, &lt;a11/>, **호출 번호**, **호출 기간**, **호출 비용**&#x200B;으로 바인딩을 만드십시오. &lt;a11/> 2/>기간&#x200B;**및**&#x200B;비용&#x200B;**열 각각******
+   마찬가지로 **Time**, **Number**, **,**&#x200B;호출 번호&#x200B;**,**&#x200B;호출 기간&#x200B;**,**&#x200B;호출 비용&#x200B;**으로 바인딩을 만드십시오.** 2/>기간&#x200B;**및**&#x200B;비용&#x200B;**열 각각**
 
 1. **PayNow** 대상 영역을 누르고 **+**&#x200B;을 눌러 **이미지** 구성 요소를 추가합니다.
 1. 이미지 구성 요소를 누르고 ![configure_icon](assets/configure_icon.png) (구성)을 선택합니다. 왼쪽 창에 이미지 속성이 표시됩니다.
@@ -97,7 +97,7 @@ ht-degree: 0%
    1. **업로드**&#x200B;를 누르고 로컬 파일 시스템에 저장된 이미지를 선택한 다음 **열기**&#x200B;를 누릅니다.
    1. ![done_icon](assets/done_icon.png)을 눌러 이미지 속성을 저장합니다.
 
-1. 13단계와 14단계를 반복하여 **ValueAddedServices** 이미지를 &lt;a2/>ValueAddedServices **대상 영역에 추가합니다.**
+1. 13단계와 14단계를 반복하여 **ValueAddedServices** 이미지를 **ValueAddedServices** 대상 영역에 추가합니다.
 
 ### 웹 채널 {#create-interactive-communication-for-web-channel}에 대한 대화형 통신 만들기
 
