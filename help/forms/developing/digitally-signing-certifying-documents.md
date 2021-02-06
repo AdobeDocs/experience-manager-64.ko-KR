@@ -41,7 +41,7 @@ PDF 문서 내에 여러 서명 필드가 있는 경우 서명 필드의 전체 
 * PDF 문서에 디지털 서명 필드를 추가하거나 삭제합니다. ([서명 필드 추가](digitally-signing-certifying-documents.md#adding-signature-fields)를 참조하십시오.)
 * PDF 문서에 있는 서명 필드의 이름을 검색합니다. ([서명 필드 이름 검색](digitally-signing-certifying-documents.md#retrieving-signature-field-names)을(를) 참조하십시오.)
 * 서명 필드를 수정합니다. ([서명 필드 수정](digitally-signing-certifying-documents.md#modifying-signature-fields) 참조)
-* PDF 문서에 디지털 서명 (PDF 문서[에 디지털 서명 참조)](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)
+* PDF 문서에 디지털 서명 (PDF 문서](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)에 디지털 서명 참조)[
 * PDF 문서 인증 ([PDF 문서 인증](digitally-signing-certifying-documents.md#certifying-pdf-documents)을 참조하십시오.)
 * PDF 문서에 있는 디지털 서명을 확인할 수 있습니다. ([디지털 서명 확인](#unresolvedlink-lc-si)을 참조하십시오.)
 * PDF 문서에 있는 모든 디지털 서명의 유효성을 확인합니다. ([여러 디지털 서명 확인](#unresolvedlink-lc-si)을 참조하십시오.)
@@ -559,7 +559,7 @@ PDF 문서는 공개 키 기술을 통해 서명됩니다. 서명자에게는 �
 
 >[!NOTE]
 >
->PDF 문서에 디지털 서명을 하려면 먼저 AEM Forms에 인증서를 추가해야 합니다. 관리 콘솔을 사용하거나 Trust Manager API를 프로그래밍 방식으로 사용하여 인증서를 추가합니다. (Trust Manager API[를 사용하여 자격 증명 가져오기를 참조하십시오.)](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)
+>PDF 문서에 디지털 서명을 하려면 먼저 AEM Forms에 인증서를 추가해야 합니다. 관리 콘솔을 사용하거나 Trust Manager API를 프로그래밍 방식으로 사용하여 인증서를 추가합니다. (Trust Manager API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)를 사용하여 자격 증명 가져오기를 참조하십시오.)[
 
 프로그래밍 방식으로 PDF 문서에 디지털 서명을 할 수 있습니다. PDF 문서에 디지털 서명을 하는 경우 AEM Forms에 있는 보안 자격 증명을 참조해야 합니다. 자격 증명은 서명에 사용되는 개인 키입니다.
 
@@ -823,13 +823,13 @@ Forms 서비스에서 만든 대화형 양식에 서명할 수 있습니다. 예
 
 >[!NOTE]
 >
->대화형 양식에 디지털 서명을 하려면 먼저 AEM Forms에 인증서를 추가해야 합니다. 관리 콘솔을 사용하거나 Trust Manager API를 프로그래밍 방식으로 사용하여 인증서를 추가합니다. (Trust Manager API[를 사용하여 자격 증명 가져오기를 참조하십시오.)](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)
+>대화형 양식에 디지털 서명을 하려면 먼저 AEM Forms에 인증서를 추가해야 합니다. 관리 콘솔을 사용하거나 Trust Manager API를 프로그래밍 방식으로 사용하여 인증서를 추가합니다. (Trust Manager API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)를 사용하여 자격 증명 가져오기를 참조하십시오.)[
 
 Forms 서비스 API를 사용할 때 `GenerateServerAppearance` 런타임 옵션을 `true`으로 설정합니다. 이 런타임 옵션을 사용하면 Acrobat 또는 Adobe Reader에서 연 경우 서버에서 생성된 양식의 모양이 유효한지 확인할 수 있습니다. Forms API를 사용하여 서명할 대화형 양식을 생성할 때는 이 런타임 옵션을 설정하는 것이 좋습니다.
 
 >[!NOTE]
 >
->인터랙티브한 Forms 디지털 서명을 읽기 전에 PDF 문서 서명에 익숙한 것이 좋습니다. (PDF 문서[에 디지털 서명 참조)](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)
+>인터랙티브한 Forms 디지털 서명을 읽기 전에 PDF 문서 서명에 익숙한 것이 좋습니다. (PDF 문서](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)에 디지털 서명 참조)[
 
 ### {#summary_of_steps-4} 단계 요약
 
