@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager 6.4의 일반적인 릴리스 노트
-seo-title: 릴리스 정보
+seo-title: 릴리스 노트
 description: 'Adobe Experience Manager 6.4에서는 릴리스 정보, 새로운 기능, 설치 방법 및 세부 변경 목록을 간략하게 설명합니다. '
 seo-description: 'Adobe Experience Manager 6.4에서는 릴리스 정보, 새로운 기능, 설치 방법 및 세부 변경 목록을 간략하게 설명합니다. '
 uuid: 5a220301-2727-4078-ba19-4a2dbf9657f4
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
 source-wordcount: '2844'
-ht-degree: 29%
+ht-degree: 32%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 29%
 | 버전 | 6.4 |
 | 유형 | 주요 릴리스 |
 | 일반 공급 일자 | 2018년 4월 4일 |
-| 권장 업데이트 | [AEM 릴리스 및 업데이트](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html)를 참조하십시오. |
+| 권장 업데이트 | [AEM 릴리스 및 업데이트](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)를 참조하십시오 |
 
 ### 일반 {#trivia}
 
