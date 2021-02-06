@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '587'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
 
 # SPA에 대한 React 구성 요소 구현{#implementing-a-react-component-for-spa}
 
-단일 페이지 애플리케이션(SPA)을 통해 웹 사이트 사용자에게 매력적인 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크을 사용하여 사이트를 구축하고자 하며, 작성자는 SPA 프레임워크을 사용하여 구축된 사이트에서 AEM의 컨텐츠를 매끄럽게 편집하고자 합니다.
+SPA(단일 페이지 애플리케이션)는 웹 사이트 사용자에게 훌륭한 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크을 사용하여 사이트를 구축하고자 하며, 작성자는 SPA 프레임워크을 사용하여 구축된 사이트에서 AEM의 컨텐츠를 매끄럽게 편집하고자 합니다.
 
 SPA 저작 기능은 AEM 내에서 SPA을 지원하는 포괄적인 솔루션을 제공합니다. 이 문서에서는 AEM SPA Editor에서 작동하도록 간단하고 기존 React 구성 요소를 조정하는 방법에 대한 예제를 제공합니다.
 
@@ -132,4 +132,4 @@ MapTo('we-retail-journal/global/components/weather')(Weather, WeatherEditConfig)
 
 ## 다음 단계 {#next-step}
 
-AEM용 SPA 개발에 대한 자세한 내용은 AEM용 SPA 개발[ 문서를 참조하십시오.](/help/sites-developing/spa-architecture.md)
+AEM용 SPA 개발에 대한 자세한 내용은 AEM용 SPA 개발](/help/sites-developing/spa-architecture.md) 문서를 참조하십시오.[
