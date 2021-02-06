@@ -58,7 +58,7 @@ SPNEGO를 사용하여 SSO를 활성화할 수도 있습니다. ([SPNEGO](enabli
 
 Windows 환경에서 LDAP 서버로 Active Directory를 사용할 때 단순 및 보호된 GSSAPI 협상 메커니즘(SPNEGO)을 사용하여 SSO(Single Sign-On)를 활성화할 수 있습니다. SSO가 활성화되면 AEM 양식 사용자 로그인 페이지가 필요하지 않으며 나타나지 않습니다.
 
-HTTP 헤더를 사용하여 SSO를 활성화할 수도 있습니다. (HTTP 헤더[를 사용하여 SSO 활성화를 참조하십시오.)](enabling-single-sign-on-aem.md#enable-sso-using-http-headers)
+HTTP 헤더를 사용하여 SSO를 활성화할 수도 있습니다. (HTTP 헤더](enabling-single-sign-on-aem.md#enable-sso-using-http-headers)를 사용하여 SSO 활성화를 참조하십시오.)[
 
 >[!NOTE]
 >
