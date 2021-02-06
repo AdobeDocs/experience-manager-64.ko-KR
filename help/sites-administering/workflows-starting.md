@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 workflow-type: tm+mt
 source-wordcount: '804'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
 
-# 워크플로 시작{#starting-workflows}
+# 워크플로우 시작{#starting-workflows}
 
 워크플로우를 관리할 때 다양한 방법을 사용하여 워크플로우를 시작할 수 있습니다.
 
