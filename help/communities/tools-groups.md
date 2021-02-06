@@ -97,4 +97,4 @@ ht-degree: 2%
 
 그룹 템플릿을 편집해도 템플릿에서 이미 만든 커뮤니티 사이트에 영향을 주지 않습니다. 대신 [커뮤니티 사이트](sites-console.md#modify-structure)의 구조를 직접 편집할 수 있습니다.
 
-이 프로세스는 그룹 템플릿[을 만드는 것과 동일한 패널을 제공합니다.](#create-goup-template)
+이 프로세스는 그룹 템플릿](#create-goup-template)을 만드는 것과 동일한 패널을 제공합니다.[
