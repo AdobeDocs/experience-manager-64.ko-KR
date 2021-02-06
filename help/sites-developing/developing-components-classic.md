@@ -25,7 +25,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->구성 요소 개발의 많은 측면들은 클래식 UI와 터치 지원 UI 모두에 공통적입니다. 따라서 클래식 UI의 세부 사항을 다루는 이 페이지를 사용하기 전에 **AEM 구성 요소 - 기본 사항](/help/sites-developing/components-basics.md) 전에 [을 읽어야 합니다.**
+>구성 요소 개발의 많은 측면들은 클래식 UI와 터치 지원 UI 모두에 공통적입니다. 따라서 클래식 UI의 세부 사항을 다루는 이 페이지를 사용하기 전에 [AEM 구성 요소 - 기본 사항&#x200B;**전에 ](/help/sites-developing/components-basics.md)을 읽어야 합니다.**
 
 >[!NOTE]
 >
@@ -294,7 +294,7 @@ CQ 및 Sling 태그 라이브러리를 통해 템플릿 및 구성 요소의 JSP
 
    ![chlimage_1-60](assets/chlimage_1-60.png)
 
-1. 이미지의 편집 구성 노드(속성:`sling:resourceType`)에서 `textimage/cq:editConfig/cq:dropTargets/image/parameters/sling:resourceType``geometrixx/components/textimage.`
+1. 이미지의 편집 구성 노드(속성:`textimage/cq:editConfig/cq:dropTargets/image/parameters/sling:resourceType`)에서 `geometrixx/components/textimage.``sling:resourceType`
 
    이렇게 하면 이미지가 페이지의 구성 요소로 드롭될 때 확장 텍스트 이미지 구성 요소의 `sling:resourceType` 속성이 다음으로 설정됩니다.`geometrixx/components/textimage.`
 
