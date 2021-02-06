@@ -28,7 +28,7 @@ ht-degree: 11%
 * [AEM 구성 요소 - 기본 사항](/help/sites-developing/components-basics.md)
 * [AEM 구성 요소 개발](/help/sites-developing/developing-components.md)
 
-클래식 UI에 대한 자세한 내용은 클래식 UI[AEM 구성 요소를 참조하십시오.](/help/sites-developing/developing-components-classic.md)
+클래식 UI에 대한 자세한 내용은 클래식 UI](/help/sites-developing/developing-components-classic.md)AEM 구성 요소를 참조하십시오.[
 
 >[!NOTE]
 >
