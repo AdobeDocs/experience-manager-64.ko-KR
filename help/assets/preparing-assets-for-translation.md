@@ -37,7 +37,7 @@ Adobe Experience Manager(AEM) 자산에서 다국어 자산은 폴더에 포함�
 
 번역 자산을 준비하려면 다음 단계를 수행하십시오.
 
-1. 기본 언어의 언어 루트를 만듭니다. 예를 들어 샘플 폴더 계층 구조에 있는 영어 사본의 언어 루트는 `/content/dam/en`입니다. 언어 루트 만들기[의 정보에 따라 언어 루트가 올바르게 구성되어 있는지 확인합니다.](preparing-assets-for-translation.md#creating-a-language-root)
+1. 기본 언어의 언어 루트를 만듭니다. 예를 들어 샘플 폴더 계층 구조에 있는 영어 사본의 언어 루트는 `/content/dam/en`입니다. 언어 루트 만들기](preparing-assets-for-translation.md#creating-a-language-root)의 정보에 따라 언어 루트가 올바르게 구성되어 있는지 확인합니다.[
 
 1. 기본 언어로 에셋을 추가합니다.
 1. 언어 복사본이 필요한 각 대상 언어의 언어 루트를 만듭니다.
