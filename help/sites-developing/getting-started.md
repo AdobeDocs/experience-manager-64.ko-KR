@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 20%
+ht-degree: 23%
 
 ---
 
@@ -37,8 +37,8 @@ AEM 개발을 처음 하시나요? 모범 사례에 대한 재교육이 필요�
 이 자습서는 AEM의 많은 강력한 기능을 활용합니다. 사이트는 다음을 사용하여 구현됩니다.
 
 * [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html)
-* [Sling Models](https://sling.apache.org/documentation/bundles/models.html)
-* [터치 UI](/help/sites-developing/touch-ui-concepts.md)
+* [Sling 모델](https://sling.apache.org/documentation/bundles/models.html)
+* [Touch UI](/help/sites-developing/touch-ui-concepts.md)
 * [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
 * [편집 가능한 템플릿](/help/sites-developing/page-templates-editable.md)
 
