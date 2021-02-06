@@ -480,7 +480,7 @@ static.css 파일 및 이미지 샘플
 1. 사이드 킥의 **[!UICONTROL 페이지]** 탭에서 **[!UICONTROL 페이지 속성]**&#x200B;을 클릭합니다.
 1. 대화 상자의 **[!UICONTROL 기본]** 탭에서 **[!UICONTROL 추가 제목 및 설명]**&#x200B;을 확장하고 **[!UICONTROL 자막]** 속성에 대해 `what we do`을 입력합니다. **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 1. 이전 단계를 반복하여 서비스&#x200B;**에 대한 부제목**&#x200B;을 **[!UICONTROL 서비스]** 페이지에 추가합니다.
-1. 이전 단계를 반복하여 **Customers]** 페이지에 &lt;a1/>에 대한 트러스트를 추가합니다.**[!UICONTROL **
+1. 이전 단계를 반복하여 **Customers]** 페이지에 **에 대한 트러스트를 추가합니다.**[!UICONTROL 
 
    **팁: CRXDE Lite** 에서 /content/mywebsite/en/products/jcr:content 노드를 선택하여 자막 속성이 추가되었는지 확인합니다.
 
