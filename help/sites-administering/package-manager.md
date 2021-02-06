@@ -291,7 +291,7 @@ ht-degree: 1%
 
    **스크린샷** 영역에서 이미지 구성 요소를 두 번 클릭하고 이미지를 추가하고 **확인**&#x200B;을 클릭하여 실제 이미지를 추가합니다.
 
-1. 사이드 킥에서 **[필터 정의](#package-filters)**&#x200B;의 인스턴스를 드래그한 다음, 두 번 클릭하여 편집을 위해 엽니다.****
+1. 사이드 킥에서 **필터 정의**&#x200B;의 인스턴스를 드래그한 다음, 두 번 클릭하여 편집을 위해 엽니다.**[](#package-filters)**
 
    ![packagesfilter](assets/packagesfilter.png)
 
@@ -582,7 +582,7 @@ https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImpor
 
 패키지를 업로드한 후 콘텐트를 설치해야 합니다. 패키지 컨텐츠를 설치하고 사용하려면 두 가지 모두를 사용해야 합니다.
 
-* aem에 로드(파일 시스템[ 또는 패키지 공유에서 다운로드한 ](#uploading-packages-from-your-file-system)다운로드)[](#downloading-and-installing-packages-from-package-share)
+* aem에 로드(파일 시스템](#uploading-packages-from-your-file-system) 또는 패키지 공유에서 다운로드한 [다운로드)[](#downloading-and-installing-packages-from-package-share)
 
 * 설치됩니다
 
@@ -874,7 +874,7 @@ Adobe ID은 다음을 제공하여 만들 수 있습니다.
 
 1. **공유**&#x200B;를 클릭하여 패키지를 회사의 내부 패키지 공유에 업로드합니다.
 
-   AEM에 상태 및 패키지 업로드를 완료한 후 **x**(오른쪽 위 모서리)을 클릭하여 &lt;a2/>패키지 공유&#x200B;**창을 종료할 수 있습니다.**
+   AEM에 상태 및 패키지 업로드를 완료한 후 **x**(오른쪽 위 모서리)을 클릭하여 **패키지 공유** 창을 종료할 수 있습니다.
 
 1. 업로드가 완료되면 회사의 내부 폴더로 이동하여 방금 공유한 패키지를 볼 수 있습니다.
 
