@@ -23,8 +23,8 @@ ht-degree: 0%
 [서버 설정] 페이지에서는 양식 워크플로에 대한 다양한 설정에 액세스할 수 있습니다.
 
 * **보내는** 이메일 메시지를 활성화하는 이메일 설정과 해당 메시지에 사용되는 이메일 서버 설정이 함께 사용됩니다. ([이메일 설정 구성](configuring-server-settings.md#configuring-email-settings)을 참조하십시오.)
-* **최종** 사용자 및 그룹에 대한 전자 메일 알림으로 보낸 메시지를 사용, 사용 안 함 또는 수정하는 작업 알림 설정 (사용자 및 그룹에 대한 알림 구성[을 참조하십시오.)](configuring-server-settings.md#configuring-notifications-for-users-and-groups)
-* **관리** 작업을 위해 이메일 알림으로 보낸 메시지를 활성화, 비활성화 또는 수정하는 관리자 알림 설정 (관리자[에 대한 알림 구성을 참조하십시오.)](configuring-server-settings.md#configuring-notifications-for-administrators)
+* **최종** 사용자 및 그룹에 대한 전자 메일 알림으로 보낸 메시지를 사용, 사용 안 함 또는 수정하는 작업 알림 설정 (사용자 및 그룹에 대한 알림 구성](configuring-server-settings.md#configuring-notifications-for-users-and-groups)을 참조하십시오.)[
+* **관리** 작업을 위해 이메일 알림으로 보낸 메시지를 활성화, 비활성화 또는 수정하는 관리자 알림 설정 (관리자](configuring-server-settings.md#configuring-notifications-for-administrators)에 대한 알림 구성을 참조하십시오.)[
 
 ## 이메일 설정 구성 중 {#configuring-email-settings}
 
@@ -32,7 +32,7 @@ AEM Forms 사용자 및 관리자에게 이메일 메시지를 보내는 양식 
 
 AEM 양식과 사용자 간에 이메일 메시지를 보낼 수 있도록 하려면 [이메일 설정] 페이지에서 나가는 이메일 설정을 구성합니다. 보내는 전자 메일은 SMTP 서버를 사용해야 합니다.
 
-AEM 양식에서 사용자의 수신 이메일 메시지를 수신하고 처리하려면 전체 작업 서비스에 대한 이메일 끝점을 만듭니다. (전체 작업 서비스[에 대한 이메일 끝점 만들기를 참조하십시오.)](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)
+AEM 양식에서 사용자의 수신 이메일 메시지를 수신하고 처리하려면 전체 작업 서비스에 대한 이메일 끝점을 만듭니다. (전체 작업 서비스](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)에 대한 이메일 끝점 만들기를 참조하십시오.)[
 
 이메일 없이도 프로세스를 설계하고 구현하는 경우 [이메일 설정] 페이지에서 옵션을 구성할 필요가 없습니다.
 
@@ -129,7 +129,7 @@ AEM 양식에서 사용자의 수신 이메일 메시지를 수신하고 처리�
 
 ### 모든 이메일에 대해 DO NOT DELETE 태그 숨기기 {#hide-the-do-not-delete-tag-for-all-emails}
 
-인간 중심 프로세스로 전송되는 모든 이메일의 DELETE 추적 태그 안 함(DO NOT LIBRARY tracking 태그)으로 숨기도록 이메일을 구성할 수 있습니다. 자세한 내용은 CSS[를 사용하여 &#39;DO-NOT-DELETE&#39; 태그를 숨기는 방법을 참조하십시오.](https://blogs.adobe.com/LiveCycleHelp/2013/09/how-to-hide-the-do-not-delete-tag-with-css.html)
+인간 중심 프로세스로 전송되는 모든 이메일의 DELETE 추적 태그 안 함(DO NOT LIBRARY tracking 태그)으로 숨기도록 이메일을 구성할 수 있습니다. 자세한 내용은 CSS](https://blogs.adobe.com/LiveCycleHelp/2013/09/how-to-hide-the-do-not-delete-tag-with-css.html)를 사용하여 &#39;DO-NOT-DELETE&#39; 태그를 숨기는 방법을 참조하십시오.[
 
 ## 관리자용 알림 구성 {#configuring-notifications-for-administrators}
 
