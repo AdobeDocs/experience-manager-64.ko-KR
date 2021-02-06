@@ -1,8 +1,8 @@
 ---
-title: AEM Livefyre 레서피
+title: AEM Livefyre Recipes
 seo-title: AEM Livefyre 레서피
-description: 'Adobe Experience Manager Livefyre의 일반적인 사용 사례에 대한 단계별 지침 '
-seo-description: 'Adobe Experience Manager Livefyre의 일반적인 사용 사례에 대한 단계별 지침 '
+description: 'Adobe Experience Manager Livefyre의 공통 사용 사례에 대한 단계별 지침입니다. '
+seo-description: 'Adobe Experience Manager Livefyre의 공통 사용 사례에 대한 단계별 지침입니다. '
 uuid: 78695a63-fca6-4990-9755-0aeaae4a7f64
 contentOwner: alba
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
 workflow-type: tm+mt
 source-wordcount: '1559'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
 
-# AEM Livefyre 레서피{#aem-livefyre-recipes}
+# AEM Livefyre Recipes{#aem-livefyre-recipes}
 
-Adobe Experience Manager Livefyre의 일반적인 사용 사례에 대한 단계별 지침
+Adobe Experience Manager Livefyre의 공통 사용 사례에 대한 단계별 지침입니다.
 
 ## 즉시 사용 가능한 Livefyre AEM 구성 요소를 사용하여 UGC를 선별하고 Livefyre 미디어 장벽 {#curate-ugc-using-the-out-of-the-box-livefyre-aem-components-and-display-using-livefyre-media-wall} 을 사용하여 표시
 
