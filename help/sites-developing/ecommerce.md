@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 3cdb22af4d3b9b8450263fd843c8af13fc772bfe
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 
@@ -50,5 +50,5 @@ eCommerce API는 패키지에서 제공합니다.
 
 >[!NOTE]
 >
->eCommerce 공급자를 빌드하는 모든 단계를 자세히 설명하는 전체 문서는 [사용자 지정 Adobe Experience Manager 6.2 eCommerce 공급자 만들기](https://helpx.adobe.com/experience-manager/using/ecommerce62.html)를 참조하십시오.
+>eCommerce 공급자를 빌드하는 모든 단계를 자세히 설명하는 전체 문서는 [사용자 지정 Adobe Experience Manager 6.2 eCommerce 공급자 만들기](https://helpx.adobe.com/kr/experience-manager/using/ecommerce62.html)를 참조하십시오.
 
