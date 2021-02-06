@@ -233,7 +233,7 @@ Log files
 
 ## Amazon EC2 환경 {#installing-aem-in-the-amazon-ec-environment}에 AEM 설치
 
-Amazon EC2(Elastic Compute Cloud) 인스턴스에 AEM을 설치할 때 작성자와 게시를 모두 EC2 인스턴스에 설치하는 경우, AEM[ 인스턴스의 설치 방법에 대한 절차를 따라 작성자 인스턴스가 올바르게 설치됩니다.하지만 게시 인스턴스는 작성자가 됩니다.](/help/sites-deploying/custom-standalone-install.md)
+Amazon EC2(Elastic Compute Cloud) 인스턴스에 AEM을 설치할 때 작성자와 게시를 모두 EC2 인스턴스에 설치하는 경우, AEM](/help/sites-deploying/custom-standalone-install.md) 인스턴스의 설치 방법에 대한 절차를 따라 작성자 인스턴스가 올바르게 설치됩니다.하지만 게시 인스턴스는 작성자가 됩니다.[
 
 EC2 환경에 게시 인스턴스를 설치하기 전에 다음을 수행하십시오.
 
