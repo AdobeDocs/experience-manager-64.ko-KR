@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
 
-# 워크플로우 액세스 관리{#managing-access-to-workflows}
+# 워크플로우에 대한 액세스 관리{#managing-access-to-workflows}
 
 사용자 계정에 따라 ACL을 구성하여 워크플로우를 시작(또는 비활성화)하고 참여하도록 합니다.
 
