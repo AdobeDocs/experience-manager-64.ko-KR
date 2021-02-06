@@ -59,7 +59,7 @@ AEM 문제 해결 및 구성 문제에 대한 답변을 얻으려면 이 페이�
 ### 로그인 시도 및 ACL 또는 권한 변경과 같은 AEM 기능을 감사하는 방법은 무엇입니까?{#how-to-audit-aem-capabilities-such-as-login-attempts-and-acl-or-permission-changes}
 
 AEM에서는 문제 해결 및 감사 개선을 위해 관리 변경 사항을 기록할 수 있는 기능을 도입했습니다. 기본적으로 정보는 `error.log` 파일에 기록됩니다. 모니터링을 쉽게 하려면 별도의 로그 파일로 리디렉션하는 것이 좋습니다.\
-출력을 별도의 로그 파일로 리디렉션하려면 AEM[에서 사용자 관리 작업을 감사하는 방법을 참조하십시오.](/help/sites-administering/audit-user-management-operations.md)
+출력을 별도의 로그 파일로 리디렉션하려면 AEM](/help/sites-administering/audit-user-management-operations.md)에서 사용자 관리 작업을 감사하는 방법을 참조하십시오.[
 
 ### 기본적으로 SSL을 활성화하는 방법?{#how-to-enable-ssl-by-default}
 
