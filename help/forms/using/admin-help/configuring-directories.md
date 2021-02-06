@@ -228,7 +228,7 @@ LDAP 프로토콜은 요청 컨트롤을 사용하여 페이지에 큰 데이터
 >이 섹션에서는 Sun ONE 디렉토리 서버에 대해 VLV 컨트롤을 사용하는 방법에 대해 설명합니다. 그러나 VLV 컨트롤을 지원하는 모든 디렉토리 서버에 이 컨트롤을 사용할 수 있습니다.
 
 1. 디렉토리를 구성할 때 [사용자 설정] 페이지와 [그룹 설정] 페이지 모두에서 [VLV(가상 목록 보기) 컨트롤 활성화]를 선택합니다. 확인란을 선택할 때는 [정렬 필드] 상자에서도 정렬 이름을 지정해야 합니다. 기본값은 uid입니다. 자세한 내용은 [디렉토리 또는 사용자 정의 SPI](configuring-directories.md#adding-directories-or-custom-spis) 또는 [디렉토리 편집](configuring-directories.md#edit-a-directory)을 참조하십시오.
-1. Sun ONE 관리 콘솔 또는 명령줄 스크립트를 사용하여 사용자 및 그룹에 대한 LDAP VLV 항목을 만듭니다. 명령줄 스크립트를 사용하는 경우 샘플 사용자 및 그룹 LDIF 파일을 사용할 수 있습니다. (VLV[에 대한 Sun ONE 디렉토리 서버 구성을 참조하십시오.)](configuring-directories.md#configuring-the-sun-one-directory-server-for-vlv)
+1. Sun ONE 관리 콘솔 또는 명령줄 스크립트를 사용하여 사용자 및 그룹에 대한 LDAP VLV 항목을 만듭니다. 명령줄 스크립트를 사용하는 경우 샘플 사용자 및 그룹 LDIF 파일을 사용할 수 있습니다. (VLV](configuring-directories.md#configuring-the-sun-one-directory-server-for-vlv)에 대한 Sun ONE 디렉토리 서버 구성을 참조하십시오.)[
 1. 서버를 중지하고 필요한 인덱스를 만듭니다. 자세한 내용은 [VLV](configuring-directories.md#create-the-directory-server-index-for-vlv)에 대한 디렉터리 서버 인덱스 만들기를 참조하십시오.
 
 ### VLV {#configuring-the-sun-one-directory-server-for-vlv}에 대한 Sun ONE 디렉토리 서버 구성
