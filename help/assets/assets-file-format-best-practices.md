@@ -40,7 +40,7 @@ PDF 래스터라이저를 사용하여 생성한 축소판과 미리 보기는 �
 
 ## Adobe InDesign 서버 {#adobe-indesign-cc-server}
 
-Adobe에서는 Adobe InDesign 서버를 사용하여 IDML 및 HTML과 같은 Adobe InDesign 전용 변환을 추출하는 것이 좋습니다. 자세한 내용은 Adobe InDesign[에서 AEM 에셋을 참조로 추가를 참조하십시오.](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign)
+Adobe에서는 Adobe InDesign 서버를 사용하여 IDML 및 HTML과 같은 Adobe InDesign 전용 변환을 추출하는 것이 좋습니다. 자세한 내용은 Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign)에서 AEM 에셋을 참조로 추가를 참조하십시오.[
 
 ## Dynamic Media  {#dynamic-media}
 
