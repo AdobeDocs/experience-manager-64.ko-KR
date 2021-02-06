@@ -37,7 +37,7 @@ FormsIVS 응용 프로그램을 사용하여 샘플 CSS 파일을 검색할 수 
 
 >[!NOTE]
 >
->사용자 지정 CSS 파일을 사용하는 HTML 양식을 렌더링하기 전에 HTML 양식 렌더링에 대한 명확한 이해가 있어야 합니다. (HTML[로 Forms 렌더링 참조)](/help/forms/developing/rendering-forms-html.md)
+>사용자 지정 CSS 파일을 사용하는 HTML 양식을 렌더링하기 전에 HTML 양식 렌더링에 대한 명확한 이해가 있어야 합니다. (HTML](/help/forms/developing/rendering-forms-html.md)로 Forms 렌더링 참조)[
 
 >[!NOTE]
 >
