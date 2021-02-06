@@ -43,7 +43,7 @@ IntelliJ에서 AEM 개발을 시작하려면 다음 단계가 필요합니다.
 
 ### Maven {#set-up-your-aem-project-based-on-maven}을 기반으로 AEM 프로젝트 설정
 
-그런 다음 Apache Maven[How-To Build AEM Projects에 설명된 대로 Maven을 사용하여 프로젝트를 설정합니다.](/help/sites-developing/ht-projects-maven.md)
+그런 다음 Apache Maven](/help/sites-developing/ht-projects-maven.md)How-To Build AEM Projects에 설명된 대로 Maven을 사용하여 프로젝트를 설정합니다.[
 
 IntelliJ IDEA에서 AEM 프로젝트를 사용하여 작업을 시작하려면 [5분 후 시작하기](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)의 기본 설정이 충분합니다.
 
