@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: 15d933a2e71a44e84cdcc9ae28f60c67b43bd8f4
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
 # HTTP2 컨텐츠 배달 {#http-delivery-of-content}
 
-Adobe은 향상된 성능을 통해 HTTP/2 컨텐츠 전달을 사용할 수 있음을 발표하게 되어 매우 기쁩니다.
+Adobe에서는 전반적인 성능이 개선된 HTTP/2 컨텐츠 제공을 발표하게 되었습니다.
 
 ## HTTP/2 소개{#what-is-http}
 
