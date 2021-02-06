@@ -63,7 +63,7 @@ ht-degree: 0%
 
 [서비스 관리] 페이지에서 모든 전자 메일 끝점에 공통인 특성을 구성하고 모든 전자 메일 끝점에 대한 기본값을 제공할 수 있습니다.
 
-양식 워크플로에서 사용자의 수신 이메일 메시지를 받고 처리하려면 전체 작업 서비스에 대한 이메일 끝점을 만들어야 합니다. 이 전자 메일 끝점은 전체 작업 서비스[에 대한 전자 메일 끝점 만들기에 설명된 대로 추가 설정이 필요합니다.](configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)
+양식 워크플로에서 사용자의 수신 이메일 메시지를 받고 처리하려면 전체 작업 서비스에 대한 이메일 끝점을 만들어야 합니다. 이 전자 메일 끝점은 전체 작업 서비스](configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)에 대한 전자 메일 끝점 만들기에 설명된 대로 추가 설정이 필요합니다.[
 
 ### 전자 메일 끝점 {#change-the-default-values-for-email-endpoints}에 대한 기본값 변경
 
