@@ -96,7 +96,7 @@ Workbench는 개발자와 양식 작성자가 자동화된 비즈니스 프로�
 >이러한 모든 위치가 단일 드라이브에 있을 경우 설치 중에 1.5GB의 공간을 사용할 수 있어야 합니다. 설치가 완료되면 임시 디렉토리에 복사된 파일이 삭제됩니다.
 
 * 하드웨어 요구 사항:Intel® Pentium® 4 또는 AMD 동급 프로세서, 1GHz 프로세서.
-* Workbench와 통합된 커뮤니티 도움말 클라이언트에 필요한 최신 버전의 Adobe AIR(a0/>www.adobe.com<a href="http://www.adobe.com/">에서)를 다운로드하여 설치합니다.</a>
+* Workbench와 통합된 커뮤니티 도움말 클라이언트에 필요한 최신 버전의 Adobe AIR(a0/>www.adobe.com</a>에서)를 다운로드하여 설치합니다.<a href="http://www.adobe.com/">
 * JRE(Java™ Runtime Environment) 6.0 업데이트 22 이상이 6.0 *10*&#x200B;에 대해 새로 추가되었습니다.
 * 16비트 컬러 이상의 최소 1024 X 768픽셀 이상의 모니터 해상도를 제공합니다.
 * AEM Forms 서버에 대한 TCP/IPv4 또는 TCP/IPv6 네트워크 연결
