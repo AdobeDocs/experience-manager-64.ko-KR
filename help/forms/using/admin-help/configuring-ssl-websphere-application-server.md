@@ -26,7 +26,7 @@ ht-degree: 0%
 
 SSL을 활성화하려면 WebSphere에서 시스템을 관리할 권한이 있는 로컬 OS 사용자 레지스트리의 사용자 계정에 액세스해야 합니다.
 
-* (Windows) 관리자 그룹의 일부이며 운영 체제의 일부로 사용할 권한이 있는 새 Windows 사용자를 만듭니다. (WebSphere[용 Windows 사용자 만들기 참조)](configuring-ssl-websphere-application-server.md#create-a-windows-user-for-websphere)
+* (Windows) 관리자 그룹의 일부이며 운영 체제의 일부로 사용할 권한이 있는 새 Windows 사용자를 만듭니다. (WebSphere](configuring-ssl-websphere-application-server.md#create-a-windows-user-for-websphere)용 Windows 사용자 만들기 참조)[
 * (Linux, UNIX) 사용자는 루트 권한이 있는 루트 사용자 또는 다른 사용자가 될 수 있습니다. WebSphere에서 SSL을 활성화하면 이 사용자의 서버 ID와 암호를 사용합니다.
 
 ### WebSphere용 Linux 또는 UNIX 사용자 만들기 {#create-a-linux-or-unix-user-for-websphere}
