@@ -22,7 +22,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->이 섹션에서는 ContextHub 사용 시 세그멘테이션 구성에 대해 설명합니다. 클라이언트 컨텍스트 기능을 사용하는 경우 클라이언트 컨텍스트[에 대한 세그멘테이션 구성에 대한 관련 설명서를 참조하십시오.](/help/sites-administering/campaign-segmentation.md)
+>이 섹션에서는 ContextHub 사용 시 세그멘테이션 구성에 대해 설명합니다. 클라이언트 컨텍스트 기능을 사용하는 경우 클라이언트 컨텍스트](/help/sites-administering/campaign-segmentation.md)에 대한 세그멘테이션 구성에 대한 관련 설명서를 참조하십시오.[
 
 
 세그먼테이션은 캠페인을 만들 때 중요하게 고려해야 하는 사항입니다. 세그멘테이션의 작동 방식과 주요 용어에 대한 자세한 내용은 [대상자 관리](/help/sites-authoring/managing-audiences.md)를 참조하십시오.
