@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '387'
-ht-degree: 1%
+ht-degree: 9%
 
 ---
 
@@ -33,7 +33,7 @@ AEMFD 호환성 패키지를 사용하면 AEM Forms 6.4에서 AEM Forms 6.3 및 
 * 데이터 사전
 * 적응형 양식의 가치 하락 템플릿 및 페이지
 
-자세한 내용은 호환성 패키지[을 설치하여 AEM Forms 6.4와 호환되는 에셋을 참조하십시오.](/help/forms/using/compatibility-package.md#assetsmadecompatible)
+자세한 내용은 호환성 패키지](/help/forms/using/compatibility-package.md#assetsmadecompatible)을 설치하여 AEM Forms 6.4와 호환되는 에셋을 참조하십시오.[
 
 ## AEM Forms 6.4의 AEM Forms 6.3 및 6.2 자산에 대한 지원 추가 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
