@@ -168,7 +168,7 @@ var s=s_gi(s_account)
 다음 솔루션을 사용해 볼 수 있습니다.
 
 * DTM과 같은 라이브러리를 로드하는 고객 코드(다시 로드되는 Target 라이브러리)가 [페이지 헤드](/help/sites-developing/target.md#enabling-targeting-with-adobe-target-on-your-pages)에서 동기식으로 실행되는지 확인하십시오.
-* 사이트가 Target 라이브러리를 제공하기 위해 DTM을 사용하도록 구성된 경우, 사이트의 **Target 구성[에서 DTM** 옵션이 선택되어 있는지 확인합니다.](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/target-configuring.html)
+* 사이트가 Target 라이브러리를 제공하기 위해 DTM을 사용하도록 구성된 경우, 사이트의 [Target 구성](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/target-configuring.html)에서 DTM **옵션이 선택되어 있는지 확인합니다.**
 
 ### AT.js 1.3+ {#a-default-offer-is-always-displayed-instead-of-correct-offer-when-using-at-js} 사용 시 올바른 오퍼 대신 기본 오퍼가 항상 표시됩니다.
 
