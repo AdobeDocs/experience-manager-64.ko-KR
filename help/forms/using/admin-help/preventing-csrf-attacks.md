@@ -38,7 +38,7 @@ CSRF(교차 사이트 요청 위조)는 iFrame을 통해 악의적인 요청을 
 * aem 양식 SOAP 또는 REST 끝점에서 HTTP 요청을 하는 모든 데스크탑 클라이언트
 * 새 브라우저 창이 열리고 AEM 양식 웹 응용 프로그램 로그인 페이지에 대한 URL이 입력될 때
 
-SOAP 및 REST 끝점에 null 참조를 허용합니다. 또한 /adminui 및 /contentspace와 같은 모든 URI 로그인 페이지와 해당 매핑된 리소스에 대해 null 참조를 허용합니다. 예를 들어 /contentSpace에 대해 매핑된 서블릿은 /contentspace/faces/jsp/login.jsp이며, 이는 null 참조 예외여야 합니다. 이 예외는 웹 응용 프로그램에 대해 GET 필터링을 활성화한 경우에만 필요합니다. 응용 프로그램에서 null 참조를 허용할지 여부를 지정할 수 있습니다. AEM 양식의 강화 및 보안[에서 &quot;크로스 사이트 요청 위조 공격으로부터 보호&quot;를 참조하십시오.](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html)
+SOAP 및 REST 끝점에 null 참조를 허용합니다. 또한 /adminui 및 /contentspace와 같은 모든 URI 로그인 페이지와 해당 매핑된 리소스에 대해 null 참조를 허용합니다. 예를 들어 /contentSpace에 대해 매핑된 서블릿은 /contentspace/faces/jsp/login.jsp이며, 이는 null 참조 예외여야 합니다. 이 예외는 웹 응용 프로그램에 대해 GET 필터링을 활성화한 경우에만 필요합니다. 응용 프로그램에서 null 참조를 허용할지 여부를 지정할 수 있습니다. AEM 양식의 강화 및 보안](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html)에서 &quot;크로스 사이트 요청 위조 공격으로부터 보호&quot;를 참조하십시오.[
 
 **허용된 참조 예외:** 허용된 참조 예외: 허용된 참조 예외는 요청이 차단된 허용된 참조 목록의 하위 목록입니다. 허용된 참조 예외는 웹 응용 프로그램에 특히 적용됩니다. 허용된 참조 중 하위 세트가 특정 웹 응용 프로그램을 호출할 수 없도록 허용될 경우, 허용된 참조 예외를 통해 참조를 차단 목록에 추가하다 표시할 수 있습니다. 허용되는 참조 예외는 응용 프로그램의 web.xml 파일에 지정됩니다. (도움말 및 Tutorials 페이지에서 AEM 양식에 대한 보안 강화 및 강화의 &quot;교차 사이트 요청 위조 공격으로부터 보호&quot;를 참조하십시오.)
 
