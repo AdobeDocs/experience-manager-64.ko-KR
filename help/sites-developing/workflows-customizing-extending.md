@@ -27,7 +27,7 @@ ht-degree: 2%
 * 워크플로우 단계 구성 요소를 개발합니다.
 * 단계 기능을 OSGi 서비스 또는 ECMA 스크립트로 구현합니다.
 
-프로그램 및 스크립트[에서 사용자의 워크플로우와 상호 작용할 수도 있습니다.](/help/sites-developing/workflows-program-interaction.md)
+프로그램 및 스크립트](/help/sites-developing/workflows-program-interaction.md)에서 사용자의 워크플로우와 상호 작용할 수도 있습니다.[
 
 ## 워크플로우 단계 구성 요소 - 기본 사항 {#workflow-step-components-the-basics}
 
