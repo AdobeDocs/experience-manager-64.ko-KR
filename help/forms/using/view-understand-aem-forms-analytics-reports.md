@@ -27,7 +27,7 @@ AEM Forms의 분석 기능은 AEM Forms 추가 기능 패키지의 일부로 사
 
 추가 기능 패키지 외에도 Adobe Analytics 계정이 필요합니다. 솔루션에 대한 자세한 내용은 [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html)을 참조하십시오.
 
-AEM Forms Add-on 패키지 및 Adobe Analytics 계정이 있으면 Adobe Analytics 계정을 AEM Forms에 통합하고 분석 및 보고서 구성[에 설명된 대로 양식 또는 문서에 대한 추적을 활성화합니다.](/help/forms/using/configure-analytics-forms-documents.md)
+AEM Forms Add-on 패키지 및 Adobe Analytics 계정이 있으면 Adobe Analytics 계정을 AEM Forms에 통합하고 분석 및 보고서 구성](/help/forms/using/configure-analytics-forms-documents.md)에 설명된 대로 양식 또는 문서에 대한 추적을 활성화합니다.[
 
 ## 사용자 상호 작용 정보가 기록된 방법 {#how-user-interaction-information-is-recorded}
 
