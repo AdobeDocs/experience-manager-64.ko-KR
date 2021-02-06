@@ -1,6 +1,6 @@
 ---
-title: Livefyre와 통합
-seo-title: Livefyre와 통합
+title: Livefyre와 통합하기
+seo-title: Livefyre와 통합하기
 description: Livefyre의 업계 선도적인 큐레이션 기능을 AEM 6.4 인스턴스와 통합하여 소셜 네트워크에서 사이트에 중요한 UGC(사용자 생성 콘텐츠)를 신속하게 게시하는 방법을 살펴볼 수 있습니다.
 seo-description: AEM 6.4와 Livefyre를 통합하고 사용하는 방법을 알아봅니다.
 uuid: c355705d-6e0f-4a33-aa1f-d2d1c818aac0
@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
 source-wordcount: '1668'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
-# Livefyre{#integrating-with-livefyre}과 통합
+# Livefyre와 통합하기{#integrating-with-livefyre}
 
 Livefyre의 업계 선도적인 큐레이션 기능을 AEM 6.4 인스턴스와 통합하여 소셜 네트워크에서 사이트에 중요한 UGC(사용자 생성 콘텐츠)를 신속하게 게시하는 방법을 살펴볼 수 있습니다.
 
@@ -47,7 +47,7 @@ AEM 6.4에는 사전 설치된 Livefyre 기능 패키지 1.2.6이 포함되어 �
 
    이제 Livefyre-AEM 패키지가 설치되어 있습니다. 통합 기능을 사용하기 전에 Livefyre를 사용하도록 AEM을 구성해야 합니다.
 
-   기능 팩에 대한 자세한 내용 및 릴리스 노트는 [기능 팩](https://helpx.adobe.com/experience-manager/6-3/release-notes/feature-packs-release-notes.html)을 참조하십시오.
+   기능 팩에 대한 자세한 내용 및 릴리스 노트는 [기능 팩](https://helpx.adobe.com/kr/experience-manager/6-3/release-notes/feature-packs-release-notes.html)을 참조하십시오.
 
 ### Livefyre를 사용하도록 AEM 구성:구성 폴더 {#configure-aem-to-use-livefyre-create-a-configuration-folder} 만들기
 
