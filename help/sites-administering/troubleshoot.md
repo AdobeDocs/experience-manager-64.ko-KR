@@ -24,7 +24,7 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->AEM에서 작성 문제를 해결하는 경우 작성자에 대한 문제 해결을 참조하십시오.[](/help/sites-authoring/troubleshooting.md)
+>AEM에서 작성 문제를 해결하는 경우 작성자에 대한 문제 해결을 참조하십시오.](/help/sites-authoring/troubleshooting.md)[
 
 >[!NOTE]
 >
