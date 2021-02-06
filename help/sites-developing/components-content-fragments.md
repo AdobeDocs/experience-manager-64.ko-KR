@@ -41,7 +41,7 @@ ht-degree: 5%
 >
 >이 섹션에서는 컨텐츠 조각과 함께 사용하기 위해 제공된 원래 구성 요소에 대해 자세히 설명합니다(**일반** 그룹의 **컨텐츠 조각**).
 
-AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산으로 작성 및 관리](/help/assets/content-fragments.md)됩니다. 변형(채널별로 가능)과 함께 이 조각을 사용하여 채널 중립적인 컨텐츠를 만들 수 있습니다. [그런 다음 컨텐츠 페이지를 작성할 때 이러한 조각과 해당 변형을 사용할 수 있습니다](/help/sites-authoring/content-fragments.md). 기존 컨텐츠 조각 에셋은 자산 브라우저에서 페이지[로 드래그하여 사용할 수도 있습니다(기본 구성 요소 이미지와 같은 기타 자산 기반 구성 요소의 경우). ](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) 즉시 사용 가능한 컨텐츠 조각 구성 요소는 참조된 컨텐츠 조각의 [element](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment)만 표시합니다. 구성 요소 대화 상자를 사용하여 페이지에 표시하려는 [요소, 변형 및 조각 단락](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment)의 범위를 정의할 수 있습니다.
+AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산으로 작성 및 관리](/help/assets/content-fragments.md)됩니다. 변형(채널별로 가능)과 함께 이 조각을 사용하여 채널 중립적인 컨텐츠를 만들 수 있습니다. [그런 다음 컨텐츠 페이지를 작성할 때 이러한 조각과 해당 변형을 사용할 수 있습니다](/help/sites-authoring/content-fragments.md). 기존 컨텐츠 조각 에셋은 자산 브라우저에서 페이지](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page)로 드래그하여 사용할 수도 있습니다(기본 구성 요소 이미지와 같은 기타 자산 기반 구성 요소의 경우). [ 즉시 사용 가능한 컨텐츠 조각 구성 요소는 참조된 컨텐츠 조각의 [element](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment)만 표시합니다. 구성 요소 대화 상자를 사용하여 페이지에 표시하려는 [요소, 변형 및 조각 단락](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment)의 범위를 정의할 수 있습니다.
 
 >[!NOTE]
 >
