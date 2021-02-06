@@ -210,7 +210,7 @@ Then content-loadmore would return
 
 이 도우미는 Handlebars 도우미 &#39;i18n&#39;을 무시합니다.
 
-JavaScript 코드[에서 문자열 국제화를 참조하십시오.](../../help/sites-developing/i18n-dev.md#internationalizing-strings-in-javascript-code)
+JavaScript 코드](../../help/sites-developing/i18n-dev.md#internationalizing-strings-in-javascript-code)에서 문자열 국제화를 참조하십시오.[
 
 ### 매개 변수 {#parameters-5}
 
