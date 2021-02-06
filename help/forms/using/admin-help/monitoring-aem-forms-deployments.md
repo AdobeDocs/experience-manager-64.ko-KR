@@ -22,7 +22,7 @@ ht-degree: 0%
 
 시스템 수준과 내부 수준 모두에서 AEM 양식 배포를 모니터링할 수 있습니다. HP OpenView, IBM Tivoli, CA UniCenter와 같은 전문가 관리 도구와 *JConsole*&#x200B;이라는 타사 JMX 모니터를 사용하여 Java 활동을 특히 모니터링할 수 있습니다. 모니터링 전략을 구현하면 AEM 양식 배포의 가용성, 안정성 및 성능이 향상됩니다.
 
-AEM 양식 배포 모니터링에 대한 자세한 내용은 AEM 양식 배포 모니터링에 대한 기술 안내서[를 참조하십시오.](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf)
+AEM 양식 배포 모니터링에 대한 자세한 내용은 AEM 양식 배포 모니터링에 대한 기술 안내서](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf)를 참조하십시오.[
 
 ## MBeans {#monitoring-using-mbeans} 사용 모니터링
 
