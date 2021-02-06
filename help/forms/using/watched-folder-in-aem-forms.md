@@ -333,7 +333,7 @@ processWorkflowContext()에 대한 인수는 com.adobe.aemfd.watchfolder.workflo
 * getMetadata:메타데이터 변수 값을 반환합니다. 이 변수는 WorkflowContextService.execute() 메서드에 전달됩니다.
 * getCommittedVariables:이전 단계로 설정된 변수를 나타내는 읽기 전용 개체 맵을 반환합니다. 이전 단계에서 변수가 수정되지 않으면 감시 폴더를 구성하는 동안 지정된 기본값이 반환됩니다.
 * getCommittedResults:읽기 전용 문서 맵을 반환합니다. 맵은 이전 단계에서 생성된 출력 파일을 나타냅니다.
-* setVariable:WorkflowContextProcessor 구현에서는 변수를 사용하여 단계 사이에 흐르는 사용자 지정 동적 데이터를 나타내는 변수를 조작합니다. 변수의 이름 및 유형은 감시 폴더[를 구성하는 동안 지정한 변수의 이름과 같습니다. ](/help/forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p) 변수의 값을 변경하려면 null이 아닌 값으로 setVariable API를 호출합니다. 변수를 제거하려면 null 값으로 setVariable()을 호출합니다.
+* setVariable:WorkflowContextProcessor 구현에서는 변수를 사용하여 단계 사이에 흐르는 사용자 지정 동적 데이터를 나타내는 변수를 조작합니다. 변수의 이름 및 유형은 감시 폴더](/help/forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)를 구성하는 동안 지정한 변수의 이름과 같습니다. [ 변수의 값을 변경하려면 null이 아닌 값으로 setVariable API를 호출합니다. 변수를 제거하려면 null 값으로 setVariable()을 호출합니다.
 
 다음 ProcessorContext API도 사용할 수 있습니다.
 
