@@ -50,7 +50,7 @@ ht-degree: 0%
 
    자세한 내용은 [이벤트 감사 및 개인 정보 설정 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings)을 참조하십시오.
 
-* 문서를 보호하는 데 사용하는 정책에 감사 기능이 활성화되어 있어야 합니다. (정책 만들기 및 편집[을 참조하십시오.)](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies)
+* 문서를 보호하는 데 사용하는 정책에 감사 기능이 활성화되어 있어야 합니다. (정책 만들기 및 편집](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies)을 참조하십시오.)[
 
 ## 이벤트 {#search-for-an-event} 검색
 
