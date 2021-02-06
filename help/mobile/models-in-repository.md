@@ -65,7 +65,7 @@ Scaffolding 페이지에는 이 형식에서 만든 데이터 형식 모델을 �
 
 예를 들어 fieldResourceType을 사용자 지정 구성 요소로 변경하기 위해 문자열 데이터 유형에 대한 오버레이를 추가할 수 있습니다.
 
-Sling 리소스 병합에 대한 자세한 내용은 AEM[에서 Sling 리소스 합병 사용을 참조하십시오.](/help/sites-developing/sling-resource-merger.md)
+Sling 리소스 병합에 대한 자세한 내용은 AEM](/help/sites-developing/sling-resource-merger.md)에서 Sling 리소스 합병 사용을 참조하십시오.[
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
 
