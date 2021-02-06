@@ -24,8 +24,8 @@ ht-degree: 0%
 
 자격 증명에는 문서에 서명하거나 문서를 식별하는 데 필요한 개인 키 정보가 포함되어 있습니다. 인증서는 신뢰하도록 구성하는 공개 키 정보입니다. AEM Forms은 다음과 같은 여러 목적으로 인증서 및 자격 증명을 사용합니다.
 
-* Acrobat Reader DC 익스텐션은 자격 증명을 사용하여 PDF 문서에서 Adobe Reader 사용 권한을 활성화합니다. (PDF 문서에 사용 권한 적용[을 참조하십시오.)](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
-* 서명 서비스는 PDF 문서에 디지털 서명을 하는 등의 작업을 수행하는 동안 인증서와 자격 증명을 액세스합니다. (PDF 문서[에 디지털 서명 참조)](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)
+* Acrobat Reader DC 익스텐션은 자격 증명을 사용하여 PDF 문서에서 Adobe Reader 사용 권한을 활성화합니다. (PDF 문서에 사용 권한 적용](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)을 참조하십시오.)[
+* 서명 서비스는 PDF 문서에 디지털 서명을 하는 등의 작업을 수행하는 동안 인증서와 자격 증명을 액세스합니다. (PDF 문서](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)에 디지털 서명 참조)[
 
 Trust Manager Java API를 사용하여 프로그램 방식으로 자격 증명 서비스와 상호 작용할 수 있습니다. 다음 작업을 수행할 수 있습니다.
 
