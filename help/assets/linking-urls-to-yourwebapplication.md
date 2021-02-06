@@ -191,7 +191,7 @@ Dynamic Media은 이미지 및 비디오를 넘어 추가 자산인 정적 에�
 
 1. 이전에 복사한 모든 조각을 결합하여 다음 순서로 문자열을 생성합니다.
 
-   &lt;>>&lt;>>&lt;>>&lt;>>`video asset path``video service URL``protocol selector``customer name`
+   &lt;>>&lt;>>&lt;>>&lt;>>`video service URL``protocol selector``customer name``video asset path`
 
    예를 들어, 이러한 단계의 예에서 복사한 정보를 사용하면 다음과 같이 문자열이 표시됩니다.
 
