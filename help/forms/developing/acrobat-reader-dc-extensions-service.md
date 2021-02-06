@@ -35,7 +35,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}을 사용하여 사용 권한 적용
 
-다음 Java 코드 예는 *Loan.pdf*&#x200B;라는 PDF 문서에 사용 권한을 적용합니다. 권한이 활성화된 PDF 문서는 *LoanUsageRights.pdf*&#x200B;라는 PDF 파일로 저장됩니다. 다음 사용 권한이 이 PDF 문서에 적용됩니다.`enabledComments`, `enabledFormFillIn` 및 `enabledDigitalSignatures`. (PDF 문서에 사용 권한 적용[을 참조하십시오.)](/help/forms/developing/assigning-usage-rights.md)
+다음 Java 코드 예는 *Loan.pdf*&#x200B;라는 PDF 문서에 사용 권한을 적용합니다. 권한이 활성화된 PDF 문서는 *LoanUsageRights.pdf*&#x200B;라는 PDF 파일로 저장됩니다. 다음 사용 권한이 이 PDF 문서에 적용됩니다.`enabledComments`, `enabledFormFillIn` 및 `enabledDigitalSignatures`. (PDF 문서에 사용 권한 적용](/help/forms/developing/assigning-usage-rights.md)을 참조하십시오.)[
 
 ```as3
  /* 
@@ -147,7 +147,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}를 사용하여 PDF 문서에서 사용 권한 제거
 
-다음 Java 코드 예제는 *LoanUsageRights.pdf*&#x200B;라는 권한이 활성화된 PDF 문서에서 사용 권한을 제거합니다. (PDF 문서[에서 사용 권한 제거를 참조하십시오.)](/help/forms/developing/assigning-usage-rights.md)
+다음 Java 코드 예제는 *LoanUsageRights.pdf*&#x200B;라는 권한이 활성화된 PDF 문서에서 사용 권한을 제거합니다. (PDF 문서](/help/forms/developing/assigning-usage-rights.md)에서 사용 권한 제거를 참조하십시오.)[
 
 ```as3
  /* 
