@@ -66,7 +66,7 @@ CRX QueryBuilder REST 인터페이스는 Java API 및 REST API를 통해 에셋 
     predicateGroup.setAllRequired(true);
    ```
 
-1. 새로 만든 predicateGroup에 설명을 추가합니다. 몇 가지 유용한 설명 구문은 [JcrBoolPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrBoolPropertyPredicateEvaluator.html), [JcrPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrPropertyPredicateEvaluator.html), [RangePropertyPredictiveEator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RangePropertyPredicateEvaluator.html), [DateRangeDetemper7/> 및 [TypePredicateEager](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/TypePredicateEvaluator.html)을(를) 포함한 모든 TypePredictiveEvaluator&lt;a9/>와 같은 범주로 분류할 수 있습니다.](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RelativeDateRangePredicateEvaluator.html)
+1. 새로 만든 predicateGroup에 설명을 추가합니다. 몇 가지 유용한 설명 구문은 [JcrBoolPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrBoolPropertyPredicateEvaluator.html), [JcrPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrPropertyPredicateEvaluator.html), [RangePropertyPredictiveEator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RangePropertyPredicateEvaluator.html), [DateRangeDetemper7/> 및 [TypePredicateEager](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/TypePredicateEvaluator.html)을(를) 포함한 모든 TypePredictiveEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RelativeDateRangePredicateEvaluator.html)와 같은 범주로 분류할 수 있습니다.
 
    정적 보고서의 경우 예측자를 하드코딩하는 반면, 동적 보고서의 경우 요청에서 예측자를 가져옵니다.
 
