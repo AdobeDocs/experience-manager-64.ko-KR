@@ -294,7 +294,7 @@ Adobe Experience Manager에서 사용 가능한 xtype 목록을 참조하십시�
 
    DateTime을 사용하면 [CQ.Ext.form.DateField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.DateField) 및 [CQ.Ext.form.TimeField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TimeField)를 결합하여 날짜와 시간을 입력할 수 있습니다.
 
-* 문제가 발생합니다
+* 사용할 수 없게 됩니다
 
    [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog)
 
@@ -310,7 +310,7 @@ Adobe Experience Manager에서 사용 가능한 xtype 목록을 참조하십시�
 
    [CQ.Ext.data.DirectStore](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.DirectStore)
 
-   ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)CQ.Ext.data.Store[를 &lt;a2/>CQ.Ext.data.DirectProxy[ 및 ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.DirectProxy)CQ.Ext.data.JsonReader[와 상호 작용하여 ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonReader)CQ.Ext.Ext와 상호 작용할 수 있도록 구성된 &lt;a1/> 작은 도우미 클래스 .Direct[ 서버측 ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Direct)공급자[가 더 쉽습니다.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.direct.Provider)
+   [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)를 CQ.Ext.data.DirectProxy](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.DirectProxy) 및 [CQ.Ext.data.JsonReader](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonReader)와 상호 작용하여 [CQ.Ext.Ext와 상호 작용할 수 있도록 구성된 [ 작은 도우미 클래스 .Direct](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Direct) 서버측 [공급자](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.direct.Provider)가 더 쉽습니다.
 
 * displayfield
 
