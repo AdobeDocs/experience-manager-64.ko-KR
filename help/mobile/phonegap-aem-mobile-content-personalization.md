@@ -114,7 +114,7 @@ Mobile Dashboard로 다시 돌아오면 Cloud Services 관리 타일에 AMS 클�
 
 AEM Mobile 앱 내에서 타깃팅된 컨텐츠를 작성하는 방법은 AEM Sites 작성과 유사한 절차를 따릅니다.
 
-AEM[에서 타깃팅된 컨텐츠 작성에 대한 전체 개요는 여기를 참조하십시오.](/help/sites-authoring/personalization.md)
+AEM](/help/sites-authoring/personalization.md)에서 타깃팅된 컨텐츠 작성에 대한 전체 개요는 여기를 참조하십시오.[
 
 ## 개발자용 {#for-developers}
 
