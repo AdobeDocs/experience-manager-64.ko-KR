@@ -24,7 +24,7 @@ Adobe Analytics은 `s.pageName` 속성을 사용하여 페이지를 고유하게
 
 * Analytics 클라우드 서비스 프레임워크를 사용하여 CQ 변수를 Analytics `s.pageName` 속성에 매핑합니다. (Adobe Analytics 속성](/help/sites-administering/adobeanalytics-mapping.md)과 함께 [구성 요소 데이터 매핑을 참조하십시오.)
 
-* `s.pageName` 속성에 매핑하는 CQ 변수가 포함되도록 페이지 구성 요소를 디자인합니다. (사용자 지정 구성 요소에 대한 Adobe Analytics 추적 구현[을 참조하십시오.)](/help/sites-developing/extending-analytics-components.md)
+* `s.pageName` 속성에 매핑하는 CQ 변수가 포함되도록 페이지 구성 요소를 디자인합니다. (사용자 지정 구성 요소에 대한 Adobe Analytics 추적 구현](/help/sites-developing/extending-analytics-components.md)을 참조하십시오.)[
 
 사이트 콘솔 및 컨텐츠 인사이트에서 Analytics 보고서 데이터를 표시하려면 AEM에서는 각 페이지에 대한 `s.pageName` 속성 값을 필요로 합니다. AEM Analytics Java API는 사이트 콘솔 및 컨텐츠 인사이트에 `s.pageName` 속성 값을 제공하기 위해 구현하는 `AnalyticsPageNameProvider` 인터페이스를 정의합니다. 추적 목적으로 클라이언트에서 Javascript를 사용하여 동적으로 설정할 수 있으므로 `AnaltyicsPageNameProvider` 서비스는 보고용으로 서버의 pageName 속성을 확인합니다.
 
