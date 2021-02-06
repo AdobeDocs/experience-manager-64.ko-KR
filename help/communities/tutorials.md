@@ -1,6 +1,6 @@
 ---
-title: 튜토리얼
-seo-title: 튜토리얼
+title: 자습서
+seo-title: 자습서
 description: AEM Communities 소셜 구성 요소 프레임워크(SCF)를 학습 및 사용하는 데 도움이 되는 예입니다.
 seo-description: AEM Communities 소셜 구성 요소 프레임워크(SCF)를 학습 및 사용하는 데 도움이 되는 예입니다.
 uuid: c99a9d56-9630-4a79-bcd7-a15f01d6c13d
@@ -18,7 +18,7 @@ ht-degree: 2%
 ---
 
 
-# 튜토리얼 {#tutorials}
+# 자습서 {#tutorials}
 
 다음은 AEM 6.1 커뮤니티 [소셜 구성 요소 프레임워크(SCF)](scf.md)를 학습 및 사용하는 데 도움이 되는 예입니다.
 
