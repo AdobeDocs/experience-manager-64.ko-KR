@@ -53,7 +53,7 @@ ht-degree: 48%
 
 ## World Wide Web 컨소시엄 및 WCAG 2.0 {#world-wide-web-consortium-and-wcag}
 
-[World Wide Web Consortium(W3C)](https://www.w3.org/)은 웹 표준 개발을 위한 국제 커뮤니티입니다. 웹 디자이너와 개발자가 액세스 가능한 웹 사이트를 제작할 수 있도록 지원하기 위해 2008년 12월 [WCAG(Web Content Accessibility Guidelines) 2.0](https://www.w3.org/WAI/)을(를) 게시했습니다(1999년에 게시된 원래 버전 업데이트).[](https://www.w3.org/TR/WCAG20/)
+[World Wide Web Consortium(W3C)](https://www.w3.org/)은 웹 표준 개발을 위한 국제 커뮤니티입니다. 웹 디자이너와 개발자가 액세스 가능한 웹 사이트를 제작할 수 있도록 지원하기 위해 2008년 12월 [WCAG(Web Content Accessibility Guidelines) 2.0](https://www.w3.org/TR/WCAG20/)을(를) 게시했습니다(1999년에 게시된 원래 버전 업데이트).[](https://www.w3.org/WAI/)
 
 >[!NOTE]
 >
