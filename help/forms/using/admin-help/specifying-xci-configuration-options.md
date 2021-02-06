@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # XCI 구성 옵션 지정 {#specifying-xci-configuration-options}
 
-Forms에서는 렌더링에 사용할 사용자 정의 XCI 파일을 지정할 수 있습니다. (Forms[에 대한 위치 구성을 참조하십시오.) ](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms) 기본적으로 Forms은 다음을 포함하여 XCI 파일에 지정된 일부 옵션을 무시합니다.
+Forms에서는 렌더링에 사용할 사용자 정의 XCI 파일을 지정할 수 있습니다. (Forms](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms)에 대한 위치 구성을 참조하십시오.) [ 기본적으로 Forms은 다음을 포함하여 XCI 파일에 지정된 일부 옵션을 무시합니다.
 
 * `config/present/xdp/packets`
 * `config/present/pdf/creator`
