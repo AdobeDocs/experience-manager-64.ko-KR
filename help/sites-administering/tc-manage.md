@@ -67,7 +67,7 @@ AEM에서는 컨텐츠의 초기 번역을 위해 번역 프로젝트를 만들�
 
 선택한 페이지의 하위 페이지도 선택되도록 지정할 수 있습니다. 이 경우 하위 페이지의 복사본이 번역되도록 각 프로젝트에 추가됩니다. 하위 페이지가 다른 번역 통합 프레임워크 구성과 연결되어 있으면 AEM에서 추가 프로젝트를 만듭니다.
 
-번역 프로젝트[를 수동으로 만들 수도 있습니다.](#creating-a-translation-project-using-the-projects-console)
+번역 프로젝트](#creating-a-translation-project-using-the-projects-console)를 수동으로 만들 수도 있습니다.[
 
 **초기 번역 및 번역 업데이트**
 
@@ -126,9 +126,9 @@ AEM에서는 컨텐츠의 초기 번역을 위해 번역 프로젝트를 만들�
 
 번역 프로젝트를 만든 후 리소스 창을 사용하여 프로젝트에 페이지를 추가할 수 있습니다. 페이지를 추가하는 것은 동일한 프로젝트에서 다른 분기의 페이지를 포함할 때 유용합니다.
 
-번역 프로젝트에 페이지를 추가하면 페이지가 새 번역 작업에 포함됩니다. 기존 작업[에 페이지를 추가할 수도 있습니다.](#adding-pages-assets-to-a-translation-job)
+번역 프로젝트에 페이지를 추가하면 페이지가 새 번역 작업에 포함됩니다. 기존 작업](#adding-pages-assets-to-a-translation-job)에 페이지를 추가할 수도 있습니다.[
 
-새 프로젝트를 만들 때와 마찬가지로 페이지를 추가할 때 기존 언어 사본을 덮어쓰지 않기 위해 필요할 때 페이지 복사본이 론치에 추가됩니다. ([기존 언어 복사본에 대한 번역 프로젝트 만들기](#performing-initial-translations-and-updating-existing-translations)를 참조하십시오.)
+새 프로젝트를 만들 때와 마찬가지로 페이지를 추가할 때 기존 언어 사본을 덮어쓰지 않기 위해 필요한 경우 페이지 복사본이 론치에 추가됩니다. ([기존 언어 복사본에 대한 번역 프로젝트 만들기](#performing-initial-translations-and-updating-existing-translations)를 참조하십시오.)
 
 1. 사이트 콘솔을 사용하여 번역 프로젝트에 추가할 페이지를 선택합니다.
 
