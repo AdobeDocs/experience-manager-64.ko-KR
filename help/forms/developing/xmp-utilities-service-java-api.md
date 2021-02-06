@@ -34,7 +34,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api}를 사용하여 XMP 메타데이터 내보내기
 
-다음 코드 예제에서는 XMP 메타데이터를 검색, 검사 및 저장합니다. (PDF 문서에서 메타데이터 내보내기[를 참조하십시오.)](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents)
+다음 코드 예제에서는 XMP 메타데이터를 검색, 검사 및 저장합니다. (PDF 문서에서 메타데이터 내보내기](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents)를 참조하십시오.)[
 
 ```as3
  /* 
