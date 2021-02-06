@@ -26,7 +26,7 @@ Adobe Experience Manager(AEM)에서 태그는
 
 * 페이지에 대한 컨텐트 노드([태그 사용](/help/sites-authoring/tags.md) 참조)
 
-* 자산에 대한 메타데이터 노드(디지털 자산에 대한 메타데이터 관리[ 참조)](/help/assets/metadata.md)
+* 자산에 대한 메타데이터 노드(디지털 자산에 대한 메타데이터 관리](/help/assets/metadata.md) 참조)[
 
 페이지 및 자산 외에도 태그는 AEM Communities 기능에 사용됩니다.
 
