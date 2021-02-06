@@ -37,7 +37,7 @@ ht-degree: 0%
 
 1. (선택 사항) 다음 디렉토리 동기화 속성을 변경합니다.
 
-   **통계 로깅 동기화:** 사용자 관리에서 동기화 프로세스 동안 자세한 통계를 기록할지 여부를 지정합니다. ([ 동기화 도중 자세한 로깅 활성화 또는 비활성화 참조)](/help/forms/using/admin-help/synchronizing-directories.md#enable-or-disable-detailed-logging-during-synchronization)
+   **통계 로깅 동기화:** 사용자 관리에서 동기화 프로세스 동안 자세한 통계를 기록할지 여부를 지정합니다. (](/help/forms/using/admin-help/synchronizing-directories.md#enable-or-disable-detailed-logging-during-synchronization) 동기화 도중 자세한 로깅 활성화 또는 비활성화 참조)[
 
    **동기화자 조합 표현식: 사용자** 관리가 동기화를 재시도하는 동안 실패한 간격입니다. 자세한 내용은 [디렉터리 동기화 재시도 옵션 구성](/help/forms/using/admin-help/synchronizing-directories.md#configure-the-directory-synchronization-retry-option)을 참조하십시오.
 
