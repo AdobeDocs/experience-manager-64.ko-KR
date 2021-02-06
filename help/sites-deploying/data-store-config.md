@@ -145,7 +145,7 @@ customBlobStore=B"false"
 
 AEM은 Amazon의 Simple Storage Service(S3)에 데이터를 저장하도록 구성할 수 있습니다. 구성에 `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` PID를 사용합니다.
 
-S3 데이터 저장소 기능을 활성화하려면 S3 데이터 저장소 커넥터가 포함된 기능 팩을 다운로드하여 설치해야 합니다. [Adobe 저장소](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/)로 이동하고 1.8.x 버전의 기능 팩(예: com.adobe.granite.oak.s3connector-1.8.0.zip)에서 최신 버전을 다운로드합니다. 또한 [AEM 6.4 서비스 팩 릴리스 노트](https://helpx.adobe.com/experience-manager/6-4/release-notes/feature-packs-release-notes.html) 페이지에 나열된 최신 AEM 서비스 팩을 다운로드하고 설치해야 합니다.
+S3 데이터 저장소 기능을 활성화하려면 S3 데이터 저장소 커넥터가 포함된 기능 팩을 다운로드하여 설치해야 합니다. [Adobe 저장소](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/)로 이동하고 1.8.x 버전의 기능 팩(예: com.adobe.granite.oak.s3connector-1.8.0.zip)에서 최신 버전을 다운로드합니다. 또한 [AEM 6.4 서비스 팩 릴리스 노트](https://helpx.adobe.com/kr/experience-manager/6-4/release-notes/feature-packs-release-notes.html) 페이지에 나열된 최신 AEM 서비스 팩을 다운로드하고 설치해야 합니다.
 
 >[!NOTE]
 >
