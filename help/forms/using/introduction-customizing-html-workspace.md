@@ -36,7 +36,7 @@ AEM Forms 작업 영역은 사용자 인터페이스의 레이아웃, 모양, �
 
 AEM Forms 작업 영역의 모양, 레이아웃 및 기타 프레젠테이션 의미론를 변경할 수 있습니다. CSS, HTML 템플릿 및 JavaScript™ 파일을 사용자 정의하여 작업 영역을 변경할 수 있습니다. 모든 기본 파일은 기본 설치에서 제공됩니다.
 
-가장 일반적으로 적용할 수 있는 단계는 AEM Forms 작업 영역 사용자 정의[에 대한 일반 단계에서 다룹니다. ](/help/forms/using/generic-steps-html-workspace-customization.md) 세부 단계를 비롯한 이러한 사용자 지정 사항의 구체적인 예는 이 문서의 후반부에 있는 관련 문서를 참조하십시오.
+가장 일반적으로 적용할 수 있는 단계는 AEM Forms 작업 영역 사용자 정의](/help/forms/using/generic-steps-html-workspace-customization.md)에 대한 일반 단계에서 다룹니다. [ 세부 단계를 비롯한 이러한 사용자 지정 사항의 구체적인 예는 이 문서의 후반부에 있는 관련 문서를 참조하십시오.
 
 #### 스타일 시트 {#understanding-the-style-sheet} 이해
 
