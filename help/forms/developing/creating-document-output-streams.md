@@ -242,7 +242,7 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함되�
 
    >[!NOTE]
    >
-   >입력 PDF 문서가 인증되거나 디지털 서명을 받은 경우 `RenderOptionsSpec` 개체의 `setLinearizedPDF` 메서드를 사용하여 선형화된 PDF 옵션을 설정할 수 없습니다. (PDF 문서[에 디지털 서명 참조)](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)**
+   >입력 PDF 문서가 인증되거나 디지털 서명을 받은 경우 `RenderOptionsSpec` 개체의 `setLinearizedPDF` 메서드를 사용하여 선형화된 PDF 옵션을 설정할 수 없습니다. (PDF 문서&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*에 디지털 서명 참조)*[
 
 1. PDF 문서를 생성합니다.
 
@@ -338,7 +338,7 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함되�
 
    >[!NOTE]
    >
-   >입력 PDF 문서가 인증되거나 디지털 서명을 받은 경우 `RenderOptionsSpec` 개체의 `linearizedPDF` 구성원을 사용하여 선형화된 PDF 옵션을 설정할 수 없습니다. (PDF 문서[에 디지털 서명 참조)](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)**
+   >입력 PDF 문서가 인증되거나 디지털 서명을 받은 경우 `RenderOptionsSpec` 개체의 `linearizedPDF` 구성원을 사용하여 선형화된 PDF 옵션을 설정할 수 없습니다. (PDF 문서&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*에 디지털 서명 참조)*[
 
 1. PDF 문서를 생성합니다.
 
