@@ -12,14 +12,14 @@ translation-type: tm+mt
 source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '1065'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 
 # AEM에서 SPA 시작하기 - Angular {#getting-started-with-spas-in-aem-angular}
 
-단일 페이지 애플리케이션(SPA)을 통해 웹 사이트 사용자에게 매력적인 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크을 사용하여 사이트를 구축하고자 하며, 작성자는 SPA 프레임워크을 사용하여 구축된 사이트에서 AEM의 컨텐츠를 매끄럽게 편집하고자 합니다.
+SPA(단일 페이지 애플리케이션)는 웹 사이트 사용자에게 훌륭한 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크을 사용하여 사이트를 구축하고자 하며, 작성자는 SPA 프레임워크을 사용하여 구축된 사이트에서 AEM의 컨텐츠를 매끄럽게 편집하고자 합니다.
 
 SPA 저작 기능은 AEM 내에서 SPA을 지원하는 포괄적인 솔루션을 제공합니다. 이 문서는 Angular 프레임워크에 간소화된 SPA 애플리케이션을 제공하며 이를 통합하는 방법을 설명하여 SPA을 신속하게 사용하여 작업을 시작할 수 있습니다.
 
@@ -295,6 +295,6 @@ AEM의 기본 아이디어는 SPA 구성 요소를 AEM 구성 요소에 매핑�
 
 AEM용 SPA을 개발하기 위해 자신을 구성하는 방법에 대한 자세한 내용은 [AEM용 SPA 개발](/help/sites-developing/spa-architecture.md) 문서를 참조하십시오.
 
-동적 모델을 구성 요소로 매핑하는 방법 및 AEM에서 작동하는 방식에 대한 자세한 내용은 SPA[의 구성 요소 매핑에 대한 동적 모델 집필을 참조하십시오.](/help/sites-developing/spa-dynamic-model-to-component-mapping.md)
+동적 모델을 구성 요소로 매핑하는 방법 및 AEM에서 작동하는 방식에 대한 자세한 내용은 SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md)의 구성 요소 매핑에 대한 동적 모델 집필을 참조하십시오.[
 
 React 또는 Angular 이외의 프레임워크를 위해 AEM에서 SPA을 구현하거나 AEM용 SPA SDK의 작동 방식을 자세히 살펴보려면 [SPA Blueprint](/help/sites-developing/spa-blueprint.md) 문서를 참조하십시오.
