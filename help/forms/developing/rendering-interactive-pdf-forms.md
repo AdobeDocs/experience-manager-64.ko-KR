@@ -49,7 +49,7 @@ Forms 서비스가 대화형 양식을 사용하여 사용자로부터 정보를
   </tr> 
   <tr> 
    <td><p>2</p></td> 
-   <td><p><code>GetLoanForm</code> Java 서블릿은 Forms 서비스 클라이언트 API를 사용하여 대출 양식을 클라이언트 웹 브라우저에 렌더링합니다. (Java API<a href="#render-an-interactive-pdf-form-using-the-java-api">를 사용하여 대화형 PDF 양식 렌더링을 참조하십시오.)</a></p></td> 
+   <td><p><code>GetLoanForm</code> Java 서블릿은 Forms 서비스 클라이언트 API를 사용하여 대출 양식을 클라이언트 웹 브라우저에 렌더링합니다. (Java API</a>를 사용하여 대화형 PDF 양식 렌더링을 참조하십시오.)<a href="#render-an-interactive-pdf-form-using-the-java-api"></a></p></td> 
   </tr> 
   <tr> 
    <td><p>3</p></td> 
