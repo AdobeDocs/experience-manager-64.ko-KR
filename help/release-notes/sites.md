@@ -78,7 +78,7 @@ AEM Sites 6.4 개선 사항에 대한 자세한 정보는 다음을 참조하십
    * 핵심 구성 요소의 일부로 새 컨텐츠 조각 구성 요소. [GitHub에서 코드를 참조하십시오.](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/tree/master/extension/contentfragment/content/src/content/jcr_root/apps/core/wcm/extension/components/contentfragment/v1/contentfragment)
    * Sling Model Exporter를 통한 JSON 출력 관련 컨텐츠 서비스 지원
 
-### 경험 조각 {#experience-fragments}
+### 경험 구성요소 {#experience-fragments}
 
 * 구성 요소를 그룹화하고 변형 내에서 쉽게 참조할 수 있도록 하여 경험 조각 변형 간의 컨텐츠를 쉽게 재사용할 수 있도록 경험 조각 구성 요소를 도입했습니다.
 * 참조 레일을 통해 경험 조각을 번역 프로젝트에 추가하는 기능을 추가했습니다.
