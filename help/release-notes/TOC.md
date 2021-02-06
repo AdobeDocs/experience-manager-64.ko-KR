@@ -3,13 +3,13 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Adobe Experience Manager 6.4 릴리스 노트
-breadcrumb-title: 릴리스 정보
+breadcrumb-title: 릴리스 노트
 user-guide-description: 릴리스 정보에서 AEM 6.4의 최신 새로운 기능에 대해 알아보십시오.
 translation-type: tm+mt
 source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
 workflow-type: tm+mt
 source-wordcount: '91'
-ht-degree: 45%
+ht-degree: 50%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 45%
 + [AEM 6.4 개요](home.md)
 + [일반 릴리스 노트](release-notes.md)
 + [서비스 팩 릴리스 노트](sp-release-notes.md)
-+ [누적 수정 팩 릴리스 정보](cfp-release-notes.md)
++ [누적 수정 팩 릴리스 노트](cfp-release-notes.md)
 + [AEM Sites 릴리스 노트](sites.md)
 + [AEM Assets 릴리스 노트](assets.md)
 + [AEM Forms 릴리스 노트](forms.md)
