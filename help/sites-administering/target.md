@@ -42,7 +42,7 @@ Target과 통합하려면 다음 작업을 수행합니다.
 
 >[!NOTE]
 >
->DTM[을 사용하여 AEM과 Adobe Target 및 Adobe Analytics 통합을 참조하십시오.](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html)
+>DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html)을 사용하여 AEM과 Adobe Target 및 Adobe Analytics 통합을 참조하십시오.[
 
 >[!NOTE]
 >
