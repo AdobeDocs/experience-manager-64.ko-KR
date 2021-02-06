@@ -140,7 +140,7 @@ Assembler Service API(Java)를 사용하여 PDF 문서가 PDF/A 규격인지 확
 
 1. PDF/A 규정 준수를 결정하는 데 사용되는 PDF 문서를 참조합니다.
 
-   * 생성자를 사용하여 `java.io.FileInputStream` 개체를 만들고 PDF/A 호환성 여부를 결정하는 데 사용되는 PDF 문서의 위치를 전달하여 &lt;a0/> 개체를 만듭니다.
+   * 생성자를 사용하여 `java.io.FileInputStream` 개체를 만들고 PDF/A 호환성 여부를 결정하는 데 사용되는 PDF 문서의 위치를 전달하여  개체를 만듭니다.
    * 생성자를 사용하여 `com.adobe.idp.Document` 개체를 만들고 PDF 문서가 포함된 `java.io.FileInputStream` 개체를 전달합니다.
    * `HashMap` 생성자를 사용하여 입력 PDF 문서를 저장하는 데 사용되는 `java.util.Map` 객체를 만듭니다.
    * `put` 메서드를 호출하고 다음 인수를 전달하여 `java.util.Map` 객체에 항목을 추가합니다.
