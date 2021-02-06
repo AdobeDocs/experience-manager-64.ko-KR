@@ -141,7 +141,7 @@ Adobe Marketing Cloud의 [보고서 세트 관리자](https://docs.adobe.com/con
 
 비디오 하트비트 분석에 라이센스가 부여되면 `Marketing Cloud Org Id`이(가) 할당됩니다.
 
-비디오 보고에 대한 Analytics 보고서 세트 구성 후 비디오 하트비트 보고를 활성화하려면[:](#adobe-analytics-report-suite-for-video-reporting)
+비디오 보고에 대한 Analytics 보고서 세트 구성 후 비디오 하트비트 보고를 활성화하려면](#adobe-analytics-report-suite-for-video-reporting):[
 
 * [Analytics 클라우드 서비스](#aem-analytics-cloud-service-configuration) 만들기
 * 커뮤니티 사이트](#enable-analytics-for-a-community-site)에 대한 [분석 활성화
