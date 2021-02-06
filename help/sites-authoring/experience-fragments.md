@@ -18,7 +18,7 @@ ht-degree: 83%
 ---
 
 
-# 경험 조각{#experience-fragments}
+# 경험 구성요소{#experience-fragments}
 
 경험 조각은 페이지 내에서 참조할 수 있는 컨텐츠 및 레이아웃을 포함한 하나 이상의 구성 요소 그룹입니다. 모든 구성 요소를 포함할 수 있습니다.
 
