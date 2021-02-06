@@ -112,7 +112,7 @@ AEM 사용자를 Salesforce 리드로 내보내려면:
 
    >[!NOTE]
    >
-   >이 워크플로우를 시작하기 전에 Salesforce에 게시하기 전에 AEM의 리드 노드에 포함해야 하는 필수 필드가 있습니다. **givenName**, **familyName**, **company**&#x200B;및 **email**&#x200B;입니다. AEM 사용자와 Salesforce 리드 간 매핑 전체 목록을 보려면 AEM 사용자와 Salesforce 리드 간 구성 매핑을 참조하십시오.[](#mapping-configuration-between-aem-user-and-salesforce-lead)
+   >이 워크플로우를 시작하기 전에 Salesforce에 게시하기 전에 AEM의 리드 노드에 포함해야 하는 필수 필드가 있습니다. **givenName**, **familyName**, **company**&#x200B;및 **email**&#x200B;입니다. AEM 사용자와 Salesforce 리드 간 매핑 전체 목록을 보려면 AEM 사용자와 Salesforce 리드 간 구성 매핑을 참조하십시오.](#mapping-configuration-between-aem-user-and-salesforce-lead)[
 
 1. **확인**&#x200B;을 클릭합니다. 사용자 정보가 salesforce.com으로 내보내집니다. salesforce.com에서 확인할 수 있습니다.
 
