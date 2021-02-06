@@ -25,7 +25,7 @@ AEM Assets 관리 패널에 탭을 더 추가할 수도 있습니다.
 
 ## {#overlaying} 오버레이
 
-미리 구성된 조건자를 오버레이하려면 `facets` 노드를 `/libs/dam/content/search/searchpanel`에 복사하거나 검색 패널 구성에서 다른 `/apps/dam/content/search/searchpanel/` 속성을 지정하십시오(기본값은 `facetURL`).`/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`
+미리 구성된 조건자를 오버레이하려면 `/libs/dam/content/search/searchpanel` 노드를 `/apps/dam/content/search/searchpanel/`에 복사하거나 검색 패널 구성에서 다른 `facetURL` 속성을 지정하십시오(기본값은 `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).`facets`
 
 ![screen_shot_2012-06-05at113619am](assets/screen_shot_2012-06-05at113619am.png)
 
