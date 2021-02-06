@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 3bd6ed70dd86df51042bdbde3ea3a60b3a91ab51
 workflow-type: tm+mt
 source-wordcount: '2499'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -76,7 +76,7 @@ AEM Forms 앱에서 양식을 동기화하려면 다음을 수행하십시오.
 
 앱을 AEM Forms 서버와 동기화할 수 있으며 모바일 디바이스에서 양식을 사용하여 작업할 수 있습니다.
 
-AEM Forms Workflow Server를 사용하면 워크벤치 프로세스 및 AEM 받은 편지함 애플리케이션의 시작점과 연결할 수 있습니다. AEM 받은 편지함 응용 프로그램은 연결된 적응형 양식을 가질 수 있습니다. 시작 지점에는 적응형 양식, HTML5 양식 또는 이와 연결된 양식 세트가 있을 수 있습니다. 시작점을 작업으로 제출하거나 작업을 초안으로 저장할 수 있습니다. AEM 받은 편지함 애플리케이션과 시작 지점의 차이점에 대한 자세한 내용은 OSGi 및 AEM Forms JEE 워크플로우에서 양식 중심의 AEM 워크플로우의 작업 및 기능[을 참조하십시오.](/help/forms/using/capabilities-osgi-jee-workflows.md)
+AEM Forms Workflow Server를 사용하면 워크벤치 프로세스 및 AEM 받은 편지함 애플리케이션의 시작점과 연결할 수 있습니다. AEM 받은 편지함 응용 프로그램은 연결된 적응형 양식을 가질 수 있습니다. 시작 지점에는 적응형 양식, HTML5 양식 또는 이와 연결된 양식 세트가 있을 수 있습니다. 시작점을 작업으로 제출하거나 작업을 초안으로 저장할 수 있습니다. AEM 받은 편지함 애플리케이션과 시작 지점의 차이점에 대한 자세한 내용은 OSGi 및 AEM Forms JEE 워크플로우에서 양식 중심의 AEM 워크플로우의 작업 및 기능](/help/forms/using/capabilities-osgi-jee-workflows.md)을 참조하십시오.[
 
 AEM Forms 작업 과정 없이 AEM Forms 서버를 사용하면 앱에서 동기화할 수 있는 양식이 AEM Forms 앱에서 렌더링됩니다. Forms은 앱의 Forms 탭에서 사용할 수 있으며, 제출하거나 초안으로 저장할 수 있습니다. 응용 양식 및 모바일 양식이 앱에서 지원됩니다.
 
@@ -84,7 +84,7 @@ AEM Forms 작업 과정 없이 AEM Forms 서버를 사용하면 앱에서 동기
 
    초안으로 저장 옵션은 작업 또는 양식의 스냅숏을 채워진 데이터 및 관련 양식에 첨부된 파일과 함께 저장합니다. 초안이 모바일 장치에 저장되고 나중에 검색할 수 있도록 AEM Forms 서버와 동기화됩니다.
 
-   작업 또는 양식을 초안[으로 저장을 참조하십시오.](/help/forms/using/save-as-draft.md)
+   작업 또는 양식을 초안](/help/forms/using/save-as-draft.md)으로 저장을 참조하십시오.[
 
 1. **양식을 템플릿으로 저장**
 
@@ -123,11 +123,11 @@ AEM Forms 작업 과정 없이 AEM Forms 서버를 사용하면 앱에서 동기
 
 사용자가 AEM Forms 앱에 데이터를 입력하면 자동 저장 기능은 정기적으로 데이터를 저장합니다. AEM Forms 앱의 자동 저장 기능을 사용하면 배터리 부족 등의 조건으로 인해 앱이 닫히는 경우 데이터 손실을 방지할 수 있습니다.
 
-AEM Forms 앱[에서 자동 저장 사용을 참조하십시오.](/help/forms/using/autosave-data-app.md)
+AEM Forms 앱](/help/forms/using/autosave-data-app.md)에서 자동 저장 사용을 참조하십시오.[
 
 ## AEM 받은 편지함과 AEM Forms 앱 기능 간의 차이점 {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Forms 중심 워크플로우를 실행하는 중요한 방법 중 두 가지는 [AEM 받은 편지함](/help/forms/using/manage-applications-inbox.md) 및 AEM Forms 앱을 사용하는 것입니다. 그러나 AEM 받은 편지함과 AEM Forms 앱의 기능은 다릅니다. AEM 받은 편지함은 [Forms 중심 워크플로우](/help/forms/using/aem-forms-workflow.md)에서만 작동하지만 AEM Forms 앱은 Forms 중심 워크플로우와 프로세스 관리에서 모두 작동합니다. AEM 받은 편지함과 AEM Forms 앱 기능 간의 차이에 대한 자세한 내용은 OSGi 및 AEM Forms JEE 워크플로우에서 양식 중심의 AEM 워크플로우의 작업 및 기능을 참조하십시오[.](/help/forms/using/capabilities-osgi-jee-workflows.md)
+Forms 중심 워크플로우를 실행하는 중요한 방법 중 두 가지는 [AEM 받은 편지함](/help/forms/using/manage-applications-inbox.md) 및 AEM Forms 앱을 사용하는 것입니다. 그러나 AEM 받은 편지함과 AEM Forms 앱의 기능은 다릅니다. AEM 받은 편지함은 [Forms 중심 워크플로우](/help/forms/using/aem-forms-workflow.md)에서만 작동하지만 AEM Forms 앱은 Forms 중심 워크플로우와 프로세스 관리에서 모두 작동합니다. AEM 받은 편지함과 AEM Forms 앱 기능 간의 차이에 대한 자세한 내용은 OSGi 및 AEM Forms JEE 워크플로우에서 양식 중심의 AEM 워크플로우의 작업 및 기능을 참조하십시오](/help/forms/using/capabilities-osgi-jee-workflows.md).[
 
 ## 지원되는 양식 {#supported-forms}
 
@@ -186,8 +186,8 @@ AEM Forms 앱의 소스 코드는 소프트웨어 배포의 AEM Forms 앱 소스
 
 AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 
-1. [소프트웨어 배포](https://experience.adobe.com/downloads)를 엽니다. 소프트웨어 배포에 로그인하려면 Adobe ID이 필요합니다.
-1. 머리글 메뉴에서 사용할 수 있는 **[!UICONTROL Adobe Experience Manager]**&#x200B;을 누릅니다.
+1. [소프트웨어 배포](https://experience.adobe.com/downloads)를 엽니다. 소프트웨어 배포에 로그인하려면 Adobe ID가 필요합니다.
+1. 헤더 메뉴에 제공된 **[!UICONTROL Adobe Experience Manager]**&#x200B;를 누릅니다.
 1. **[!UICONTROL 필터]** 섹션에서 다음을 수행합니다.
    1. **[!UICONTROL 솔루션]** 드롭다운 목록에서 **[!UICONTROL Forms]**&#x200B;을 선택합니다.
    2. 패키지의 버전과 유형을 선택합니다. **[!UICONTROL 다운로드 검색]** 옵션을 사용하여 결과를 필터링할 수도 있습니다.
