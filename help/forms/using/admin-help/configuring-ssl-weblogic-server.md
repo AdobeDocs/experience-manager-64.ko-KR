@@ -180,7 +180,7 @@ keytool 명령 사용에 대한 자세한 내용은 JDK 문서에 포함된 keyt
 1. 키 저장소 목록을 드롭다운 목록으로 가져오려면 **변경**&#x200B;을 클릭하고 **사용자 지정 ID 및 사용자 지정 신뢰**&#x200B;를 선택합니다.
 1. ID 아래에서 다음 값을 지정합니다.
 
-   **사용자 지정 ID 키 저장소**: *[appserverdomain]*/adobe/*[server name]*/ads-credentials.jks. 여기서 *[appserverdomain] *은 실제 경로이며  *[서버]* 이름은 응용 프로그램 서버의 이름입니다.
+   **사용자 지정 ID 키 저장소**: *[appserverdomain]*/adobe/*[server name]*/ads-credentials.jks에서 *[appserverdomain] *은 실제 경로이며  *[서버]* 이름은 응용 프로그램 서버의 이름입니다.
 
    **사용자 지정 ID 키 저장소 유형**:JKS
 
