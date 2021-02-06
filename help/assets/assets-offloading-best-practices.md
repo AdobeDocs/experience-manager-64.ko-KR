@@ -1,5 +1,5 @@
 ---
-title: 자산 오프로딩 우수 사례
+title: Assets 오프로딩 우수 사례
 description: AEM Assets에서 자산 수집 및 복제 워크플로우를 오프로드하기 위한 권장 사용 사례 및 모범 사례
 contentOwner: AG
 translation-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# 자산 오프로딩 우수 사례 {#assets-offloading-best-practices}
+# Assets 오프로딩 우수 사례 {#assets-offloading-best-practices}
 
 >[!WARNING]
 >
@@ -117,7 +117,7 @@ TBD: Update the property in the last step when GRANITE-30586 is fixed.
 
 ### 공유 데이터 저장소 및 작성자와 작업자 사이의 이진 없는 복제 사용 {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
 
-이진 없는 복제를 사용하면 자산 오프로드를 위한 전송 오버헤드를 줄일 수 있습니다. 공유 데이터 저장소에 대해 바이너리 없는 복제를 설정하는 방법을 알아보려면 AEM[의 노드 저장소 및 데이터 저장소 구성을 참조하십시오. ](/help/sites-deploying/data-store-config.md) 이 절차는 다른 복제 에이전트가 포함된다는 점을 제외하고 자산 오프로딩과 다르지 않습니다. 바이너리 없는 복제는 전방 복제 에이전트에서만 작동하므로 모든 오프로딩 에이전트에 대해 전방 복제를 사용해야 합니다.
+이진 없는 복제를 사용하면 자산 오프로드를 위한 전송 오버헤드를 줄일 수 있습니다. 공유 데이터 저장소에 대해 바이너리 없는 복제를 설정하는 방법을 알아보려면 AEM](/help/sites-deploying/data-store-config.md)의 노드 저장소 및 데이터 저장소 구성을 참조하십시오. [ 이 절차는 다른 복제 에이전트가 포함된다는 점을 제외하고 자산 오프로딩과 다르지 않습니다. 바이너리 없는 복제는 전방 복제 에이전트에서만 작동하므로 모든 오프로딩 에이전트에 대해 전방 복제를 사용해야 합니다.
 
 ### 전송 패키지 {#turning-off-transport-packages} 해제
 
