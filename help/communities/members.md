@@ -206,4 +206,4 @@ ID의 기본값이 이메일 주소로 지정되면 이메일 주소가 변경�
 
 `admin`으로 로그인하지 않은 경우 로그인한 사용자는 `administrators` 사용자 그룹의 구성원이어야 합니다.
 
-작성자[의 복제 에이전트를 참조하십시오.](deploy-communities.md#replication-agents-on-author)
+작성자](deploy-communities.md#replication-agents-on-author)의 복제 에이전트를 참조하십시오.[
