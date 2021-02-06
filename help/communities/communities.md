@@ -81,7 +81,7 @@ AEM Communities 구성 요소, 함수 및 기능은 [커뮤니티 사이트](sit
 * [SRP 및 UGC Essentials](srp-and-ugc.md) - SRP API 유틸리티 메서드 및 예제
 * [Tag Essentials](tag.md)  - 커뮤니티 구성원이 UGC 및/또는 카탈로그화된 지원 리소스에 태그를 지정할 수 있는 기능
 
-## 튜토리얼 {#tutorials}
+## 자습서 {#tutorials}
 
 * [클라이언트측 자습서](tutorials.md#client-side-customization)
 * [서버측 자습서](tutorials.md#server-side-customization)
