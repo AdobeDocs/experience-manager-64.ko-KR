@@ -57,7 +57,7 @@ AEM 내에서 고유한 네임스페이스를 추가할 수 있습니다. cq, jc
 
 ## 팁 및 제한 사항 {#best-practices-limitations}
 
-* Touch-UI를 통한 메타데이터 업데이트는 `dc` 네임스페이스의 메타데이터 속성을 변경합니다. HTTP API를 통해 수행된 모든 업데이트는 `jcr` 네임스페이스의 메타데이터 속성을 변경합니다. HTTP API[를 사용하여 메타데이터를 업데이트하는 방법을 참조하십시오.](/help/assets/mac-api-assets.md#update-asset-metadata)
+* Touch-UI를 통한 메타데이터 업데이트는 `dc` 네임스페이스의 메타데이터 속성을 변경합니다. HTTP API를 통해 수행된 모든 업데이트는 `jcr` 네임스페이스의 메타데이터 속성을 변경합니다. HTTP API](/help/assets/mac-api-assets.md#update-asset-metadata)를 사용하여 메타데이터를 업데이트하는 방법을 참조하십시오.[
 
 >[!MORELIKETHIS]
 >
