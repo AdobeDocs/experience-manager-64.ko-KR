@@ -186,7 +186,7 @@ Acrobat Reader DC Extensions API(웹 서비스)를 사용하여 PDF 문서에 �
 1. 적용할 사용 권한을 지정합니다.
 
    * 생성자를 사용하여 사용 권한을 나타내는 `UsageRights` 개체를 만듭니다.
-   * 적용할 각 사용 권한에 대해 `true` 값을 `UsageRights` 개체에 속하는 해당 데이터 멤버에 할당합니다. 예를 들어 `enableFormFillIn` 사용 권한을 추가하려면 `true` 개체의 `enableFormFillIn` 데이터 멤버에 &lt;a1/>을(를) 할당합니다. `UsageRights` 적용할 각 사용 권한에 대해 이 단계를 반복합니다.
+   * 적용할 각 사용 권한에 대해 `true` 값을 `UsageRights` 개체에 속하는 해당 데이터 멤버에 할당합니다. 예를 들어 `enableFormFillIn` 사용 권한을 추가하려면 `true` 개체의 `enableFormFillIn` 데이터 멤버에 `UsageRights`을(를) 할당합니다. 적용할 각 사용 권한에 대해 이 단계를 반복합니다.
 
 1. PDF 문서에 사용 권한을 적용합니다.
 
