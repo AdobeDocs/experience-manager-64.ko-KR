@@ -28,8 +28,8 @@ XMP 유틸리티 서비스는 PDF 문서에서 XMP 메타데이터를 검색 및
 
 XMP 유틸리티 서비스를 사용하여 다음 작업을 수행할 수 있습니다.
 
-* 메타데이터를 PDF 문서로 가져올 수 있습니다. (PDF 문서로 메타데이터 가져오기[를 참조하십시오.)](xmp-utilities.md#importing-metadata-into-pdf-documents)
-* PDF 문서에서 메타데이터 내보내기 (PDF 문서에서 메타데이터 내보내기[를 참조하십시오.)](xmp-utilities.md#exporting-metadata-from-pdf-documents)
+* 메타데이터를 PDF 문서로 가져올 수 있습니다. (PDF 문서로 메타데이터 가져오기](xmp-utilities.md#importing-metadata-into-pdf-documents)를 참조하십시오.)[
+* PDF 문서에서 메타데이터 내보내기 (PDF 문서에서 메타데이터 내보내기](xmp-utilities.md#exporting-metadata-from-pdf-documents)를 참조하십시오.)[
 
 >[!NOTE]
 >
@@ -192,8 +192,8 @@ XMP 유틸리티 웹 서비스 API를 사용하여 프로그래밍 방식으로 
 
 1. 프로젝트 파일 포함
 
-   * XMP 유틸리티 서비스 WSDL 파일을 사용하는 Microsoft .NET 클라이언트 어셈블리를 만듭니다. (Base64 인코딩[을 사용하여 AEM Forms 호출 참조)](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
-   * Microsoft .NET 클라이언트 어셈블리를 참조하십시오. (Base64 인코딩[을 사용하는 .NET 클라이언트 어셈블리 만들기를 참조하십시오.)](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)
+   * XMP 유틸리티 서비스 WSDL 파일을 사용하는 Microsoft .NET 클라이언트 어셈블리를 만듭니다. (Base64 인코딩](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)을 사용하여 AEM Forms 호출 참조)[
+   * Microsoft .NET 클라이언트 어셈블리를 참조하십시오. (Base64 인코딩](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)을 사용하는 .NET 클라이언트 어셈블리 만들기를 참조하십시오.)[
 
 1. XMPUtenityService 클라이언트 만들기
 
