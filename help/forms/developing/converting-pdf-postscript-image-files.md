@@ -60,7 +60,7 @@ PDF 문서를 PostScript 파일로 변환하려면 다음 단계를 수행하십
 
 PDF 변환 서비스 작업을 프로그래밍 방식으로 수행하려면 먼저 PDF 변환 서비스 클라이언트를 만들어야 합니다. Java API를 사용하는 경우 `ConvertPdfServiceClient` 개체를 만듭니다. 웹 서비스 API를 사용하는 경우 `ConvertPDFServiceService` 개체를 만듭니다.
 
-이 섹션에서는 AEM Forms에 도입된 웹 서비스 기능을 사용합니다. 새 기능에 액세스하려면 `lc_version` 특성을 사용하여 프록시 개체를 구성해야 합니다. (웹 서비스를 사용하여 AEM Forms 호출[에서 &quot;웹 서비스를 사용하여 새 기능에 액세스&quot;를 참조하십시오.)](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)
+이 섹션에서는 AEM Forms에 도입된 웹 서비스 기능을 사용합니다. 새 기능에 액세스하려면 `lc_version` 특성을 사용하여 프록시 개체를 구성해야 합니다. (웹 서비스를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)에서 &quot;웹 서비스를 사용하여 새 기능에 액세스&quot;를 참조하십시오.)[
 
 **PDF 문서를 참조하여 PostScript 파일로 변환**
 
