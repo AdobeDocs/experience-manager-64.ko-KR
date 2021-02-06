@@ -168,7 +168,7 @@ OSGi 기반의 AEM Forms은 적응형 양식 기반의 워크플로우를 구축
 
 #### 직접 보기 {#see-it-yourself-2}
 
-https://&lt;*hostname*>:&lt;*PublishPort*>/content/we-finance/global/en.html에서 we.finance 사이트에 대한 AEM 받은 편지함에 액세스할 수 있습니다. 페이지에서 **[!UICONTROL 로그인]**&#x200B;을 탭하고 **[!UICONTROL 대리 로그인]** 확인란을 선택하고 `grios/password`을(를) 사용하여 AEM 받은 편지함에 로그인하고 Gloria Rios의 사용자 이름/암호로 신용 카드 응용 프로그램을 승인합니다. 양식 중심의 워크플로우 작업에 AEM 받은 편지함을 사용하는 방법에 대한 자세한 내용은 AEM 받은 편지함에서 Forms 응용 프로그램 및 작업 관리[를 참조하십시오.](/help/forms/using/manage-applications-inbox.md)
+https://&lt;*hostname*>:&lt;*PublishPort*>/content/we-finance/global/en.html에서 we.finance 사이트에 대한 AEM 받은 편지함에 액세스할 수 있습니다. 페이지에서 **[!UICONTROL 로그인]**&#x200B;을 탭하고 **[!UICONTROL 대리 로그인]** 확인란을 선택하고 `grios/password`을(를) 사용하여 AEM 받은 편지함에 로그인하고 Gloria Rios의 사용자 이름/암호로 신용 카드 응용 프로그램을 승인합니다. 양식 중심의 워크플로우 작업에 AEM 받은 편지함을 사용하는 방법에 대한 자세한 내용은 AEM 받은 편지함에서 Forms 응용 프로그램 및 작업 관리](/help/forms/using/manage-applications-inbox.md)를 참조하십시오.[
 
 ![inbox-1](assets/inbox-1.png)
 
