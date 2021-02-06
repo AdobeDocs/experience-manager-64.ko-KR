@@ -81,31 +81,31 @@ AEM의 티저는 여러 부분으로 구성됩니다.
    <td>비즈니스, 마케팅</td> 
   </tr> 
   <tr> 
-   <td>C1</td> 
+   <td>C3</td> 
    <td>T2 </td> 
    <td>S1</td> 
    <td><br /> </td> 
   </tr> 
   <tr> 
-   <td>C1 </td> 
+   <td>C3 </td> 
    <td>T3</td> 
    <td>, S3, S4</td> 
    <td><br /> </td> 
   </tr> 
   <tr> 
-   <td>C1 </td> 
+   <td>C3 </td> 
    <td>T4</td> 
    <td>, S2, S5</td> 
    <td><br /> </td> 
   </tr> 
   <tr> 
-   <td>C1 </td> 
+   <td>C3 </td> 
    <td>T5</td> 
    <td>S1, S2, S6</td> 
    <td>마케팅</td> 
   </tr> 
   <tr> 
-   <td>C1 </td> 
+   <td>C3 </td> 
    <td>T6</td> 
    <td>S6</td> 
    <td>비즈니스<br /> </td> 
@@ -140,8 +140,8 @@ AEM의 티저는 여러 부분으로 구성됩니다.
    <td>결과 클릭스트림 점수 </td> 
   </tr> 
   <tr> 
-   <td>C1</td> 
-   <td>T1</td> 
+   <td>C3</td> 
+   <td>T3</td> 
    <td>S1, S2</td> 
    <td>비즈니스, 마케팅</td> 
    <td>예</td> 
@@ -158,7 +158,7 @@ AEM의 티저는 여러 부분으로 구성됩니다.
    <td><br /> </td> 
   </tr> 
   <tr> 
-   <td>C1 </td> 
+   <td>C3 </td> 
    <td>T3</td> 
    <td>, S3, S4</td> 
    <td><br /> </td> 
@@ -167,7 +167,7 @@ AEM의 티저는 여러 부분으로 구성됩니다.
    <td><br /> </td> 
   </tr> 
   <tr> 
-   <td>C1 </td> 
+   <td>C3 </td> 
    <td>T4</td> 
    <td>, S2, S5</td> 
    <td><br /> </td> 
@@ -176,7 +176,7 @@ AEM의 티저는 여러 부분으로 구성됩니다.
    <td><br /> </td> 
   </tr> 
   <tr> 
-   <td>C1 </td> 
+   <td>C3 </td> 
    <td>T5</td> 
    <td>S1, S2, S6</td> 
    <td>마케팅</td> 
@@ -185,7 +185,7 @@ AEM의 티저는 여러 부분으로 구성됩니다.
    <td>3</td> 
   </tr> 
   <tr> 
-   <td>C1 </td> 
+   <td>C3 </td> 
    <td>T6</td> 
    <td>S6</td> 
    <td>비즈니스</td> 
