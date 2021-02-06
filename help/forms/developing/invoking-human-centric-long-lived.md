@@ -22,7 +22,7 @@ ht-degree: 0%
 
 다음과 같은 클라이언트 애플리케이션을 사용하여 Workbench에서 만든 인간 중심의 긴 수명 프로세스를 프로그래밍 방식으로 호출할 수 있습니다.
 
-* 호출 API를 사용하는 Java 웹 기반 클라이언트 응용 프로그램. (Java API[(/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)을 사용하여 AEM Forms 호출 참조)](/help/forms/developing/invoking-aem-forms-using-java.md)
+* 호출 API를 사용하는 Java 웹 기반 클라이언트 응용 프로그램. (Java API](/help/forms/developing/invoking-aem-forms-using-java.md)(/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)을 사용하여 AEM Forms 호출 참조)[
 * 웹 서비스를 사용하는 ASP.NET 응용 프로그램입니다. ([웹 서비스를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)을 참조하십시오.)
 * Remoting을 사용하는 Flex으로 구축한 클라이언트 응용 프로그램. (자세한 내용은 [AEM Forms 호출 사용(AEM 양식에서 더 이상 사용되지 않음) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)을 참조하십시오.)
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ## 인간 중심의 오랜 프로세스를 호출하는 Java 웹 애플리케이션 만들기 {#creating-a-java-web-application-that-invokes-a-human-centric-long-lived-process}
 
-Java 서블릿을 사용하여 `FirstAppSolution/PreLoanProcess` 프로세스를 호출하는 웹 기반 응용 프로그램을 만들 수 있습니다. Java 서블릿에서 이 프로세스를 호출하려면 Java 서블릿 내 호출 API를 사용하십시오. (Java API[를 사용하여 AEM Forms 호출 참조)](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
+Java 서블릿을 사용하여 `FirstAppSolution/PreLoanProcess` 프로세스를 호출하는 웹 기반 응용 프로그램을 만들 수 있습니다. Java 서블릿에서 이 프로세스를 호출하려면 Java 서블릿 내 호출 API를 사용하십시오. (Java API](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)를 사용하여 AEM Forms 호출 참조)[
 
 다음 그림은 이름, 전화(또는 이메일) 및 금액 값을 게시하는 웹 기반 클라이언트 응용 프로그램을 보여줍니다. 이러한 값은 사용자가 [응용 프로그램 제출] 단추를 클릭하면 Java 서블릿으로 전송됩니다.
 
@@ -514,7 +514,7 @@ Microsoft .NET C# ASP.NET 웹 응용 프로그램을 만듭니다. 다음 그림
 
 >[!NOTE]
 >
->`hiro-xp`을(를) AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버의 IP 주소로 바꿉니다. `lc_version` 옵션은 MTOM과 같은 AEM Forms 기능을 사용할 수 있도록 합니다. `lc_version`옵션을 지정하지 않으면 MTOM을 사용하여 AEM Forms을 호출할 수 없습니다. (MTOM[을 사용하여 AEM Forms 호출 참조)](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+>`hiro-xp`을(를) AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버의 IP 주소로 바꿉니다. `lc_version` 옵션은 MTOM과 같은 AEM Forms 기능을 사용할 수 있도록 합니다. `lc_version`옵션을 지정하지 않으면 MTOM을 사용하여 AEM Forms을 호출할 수 없습니다. (MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)을 사용하여 AEM Forms 호출 참조)[
 
 ### FirstAppSolution/PreLoanProcess {#create-an-asp-page-that-invokes-firstappsolution-preloanprocess}를 호출하는 ASP 페이지를 만듭니다.
 
