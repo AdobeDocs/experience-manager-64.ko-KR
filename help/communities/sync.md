@@ -96,7 +96,7 @@ AEM Communities의 게시 환경(구성된 권한에 따라)에서 *사이트 �
 
 1. 최신 코드가 설치되었는지 확인합니다.
 
-   * [AEM 플랫폼 업데이트](https://helpx.adobe.com/kr/experience-manager/kb/aem62-available-hotfixes.html)
+   * [AEM 플랫폼 업데이트](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
    * [AEM Communities 업데이트](deploy-communities.md#latestfeaturepack)
 
 AEM Communities에서 사용자 동기화를 사용하려면 다음 구성이 필요합니다. 이러한 구성이 정확한지 확인하여 컨텐츠 배포 실패가 발생하지 않도록 하십시오.
