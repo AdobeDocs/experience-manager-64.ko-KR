@@ -78,7 +78,7 @@ AEM이 설치되면 관리자 그룹의 구성원은 기본적으로 콘텐츠 �
 
 CQ Content Sync Manager의 요일 서비스는 콘텐츠 동기화에 대한 액세스를 제어합니다. 기본적으로 콘텐츠 동기화에서 다운로드할 수 있는 사용자 또는 그룹을 지정하도록 이 서비스를 구성합니다.
 
-웹 콘솔[을(를) 사용하여 서비스를 구성하는 경우 사용자 또는 그룹의 이름을 폴백 캐시 승인 가능 속성의 값으로 입력합니다.](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)
+웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)을(를) 사용하여 서비스를 구성하는 경우 사용자 또는 그룹의 이름을 폴백 캐시 승인 가능 속성의 값으로 입력합니다.[
 
 [리포지토리](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)에서 구성하는 경우 서비스에 대한 다음 정보를 사용하십시오.
 
