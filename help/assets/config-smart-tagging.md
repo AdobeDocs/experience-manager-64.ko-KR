@@ -25,7 +25,7 @@ ht-degree: 29%
 
 1. [구성을 테스트합니다](#validate-the-configuration).
 
-1. 원할 경우, 자산 업로드[에 자동 태그 지정을 활성화합니다.](#enable-smart-tagging-in-the-update-asset-workflow-optional)
+1. 원할 경우, 자산 업로드](#enable-smart-tagging-in-the-update-asset-workflow-optional)에 자동 태그 지정을 활성화합니다.[
 
 ## 전제 조건 {#prerequisites}
 
@@ -35,7 +35,7 @@ ht-degree: 29%
 
 * 조직에서 스마트 콘텐츠 서비스를 사용할 수 있습니다.
 
-고급 스마트 태그를 활성화하려면 위의 태그 외에 최신 [Experience Manager 서비스 팩](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html)도 설치하십시오.
+고급 스마트 태그를 활성화하려면 위의 태그 외에 최신 [Experience Manager 서비스 팩](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)도 설치하십시오.
 
 ## 공용 인증서 {#obtain-public-certificate}을(를) 얻으려면 스마트 콘텐츠 서비스 구성을 만듭니다.
 
@@ -93,7 +93,7 @@ ht-degree: 29%
 
 ## Adobe 개발자 콘솔 통합 만들기 {#create-adobe-i-o-integration}
 
-스마트 콘텐츠 서비스 API를 사용하려면 Adobe 개발자 콘솔에서 통합을 만들어 [!UICONTROL API 키](Adobe 개발자 콘솔 통합의 [!UICONTROL CLIENT ID] 필드에서 생성), [!UICONTROL TECHNICAL ACCOUNT ID], [!UICONTROL ORGANIZATION [!UICONTROL 자산 스마트 태그 지정 서비스 설정]에 대한 ID] 및 [!UICONTROL CLIENT SECRET]입니다. [!DNL Experience Manager]에 있는 클라우드 구성의 ID&lt;a11/>.
+스마트 콘텐츠 서비스 API를 사용하려면 Adobe 개발자 콘솔에서 통합을 만들어 [!UICONTROL API 키](Adobe 개발자 콘솔 통합의 [!UICONTROL CLIENT ID] 필드에서 생성), [!UICONTROL TECHNICAL ACCOUNT ID], [!UICONTROL ORGANIZATION [!UICONTROL 자산 스마트 태그 지정 서비스 설정]에 대한 ID] 및 [!UICONTROL CLIENT SECRET]입니다. [!DNL Experience Manager]에 있는 클라우드 구성의 ID.
 
 1. 브라우저에서 [https://console.adobe.io](https://console.adobe.io/)에 액세스합니다. 적절한 계정을 선택하고 관련 조직 역할이 시스템 관리자인지 확인합니다.
 
