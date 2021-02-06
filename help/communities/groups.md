@@ -37,7 +37,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->커뮤니티 그룹 콘솔[이(가) 존재하기 전에 게시 환경에서 만든 커뮤니티 그룹은 커뮤니티 그룹 콘솔에 나열되지 않으므로 콘솔을 사용하여 수정할 수 없습니다.](https://helpx.adobe.com/in/experience-manager/6-3/communities/using/version-history.html#FeaturePack1FP1)
+>커뮤니티 그룹 콘솔](https://helpx.adobe.com/in/experience-manager/6-3/communities/using/version-history.html#FeaturePack1FP1)이(가) 존재하기 전에 게시 환경에서 만든 커뮤니티 그룹은 커뮤니티 그룹 콘솔에 나열되지 않으므로 콘솔을 사용하여 수정할 수 없습니다.[
 
 >[!NOTE]
 >
