@@ -34,7 +34,7 @@ AEM Forms을 사용하면 적응형 양식을 초안으로 저장할 수 있습�
 * [Forms 포털 구성 요소 사용](/help/forms/using/enabling-forms-portal-components.md)
 * [양식 포털 페이지](/help/forms/using/creating-form-portal-page.md) 만들기
 * 양식 포털](/help/forms/using/draft-submission-component.md)에 대해 [적응형 양식 활성화
-* 사용자 지정 저장소[의 구현 세부 정보 학습](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* 사용자 지정 저장소](/help/forms/using/draft-submission-component.md#customizing-the-storage)의 구현 세부 정보 학습[
 
 ## 초안 데이터 서비스 {#draft-data-service}
 
