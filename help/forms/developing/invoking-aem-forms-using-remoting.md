@@ -96,7 +96,7 @@ Remoting을 사용하여 프로그래밍 방식으로 AEM Forms 프로세스를 
 
 ## Remoting {#handling-documents-with-remoting}을(를) 사용하여 문서 처리
 
-AEM Forms에서 사용되는 가장 중요한 비프리미티브 Java 유형 중 하나는 `com.adobe.idp.Document` 클래스입니다. AEM Forms 작업을 호출하려면 일반적으로 문서가 필요합니다. 주로 PDF 문서이지만 SWF, HTML, XML 또는 DOC 파일과 같은 다른 문서 유형을 포함할 수 있습니다. (Java API[를 사용하여 AEM Forms 서비스에 데이터 전달을 참조하십시오.)](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)
+AEM Forms에서 사용되는 가장 중요한 비프리미티브 Java 유형 중 하나는 `com.adobe.idp.Document` 클래스입니다. AEM Forms 작업을 호출하려면 일반적으로 문서가 필요합니다. 주로 PDF 문서이지만 SWF, HTML, XML 또는 DOC 파일과 같은 다른 문서 유형을 포함할 수 있습니다. (Java API](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)를 사용하여 AEM Forms 서비스에 데이터 전달을 참조하십시오.)[
 
 Flex으로 구축된 클라이언트 응용 프로그램은 문서를 직접 요청할 수 없습니다. 예를 들어 Adobe Reader을 실행하여 PDF 파일을 생성하는 URL을 요청할 수 없습니다. PDF 및 Microsoft Word 문서와 같은 문서 유형에 대한 요청은 URL인 결과를 반환합니다. URL의 컨텐츠를 표시하는 것은 클라이언트의 책임입니다. 문서 관리 서비스는 URL 및 내용 유형 정보를 생성하는 데 도움이 됩니다. XML 문서에 대한 요청은 그 결과 전체 XML 문서를 반환합니다.
 
@@ -128,7 +128,7 @@ docRef.referenceType = DocumentReference.REF_TYPE_INLINE; 
 docRef.text = "Text for my document";  // Optionally, you can override the server’s default character set  // if necessary:  // docRef.charsetName=CharacterSetName  ...
 ```
 
-* 문서가 서버에 없으면 원격 업로드 서블릿을 사용하여 문서를 AEM Forms에 업로드합니다. AEM Forms의 새로운 기능은 보안 문서를 업로드할 수 있는 기능입니다. 보안 문서를 업로드할 때* 문서 업로드 응용 프로그램 사용자 *역할이 있는 사용자를 사용해야 합니다. 이 역할이 없으면 사용자가 보안 문서를 업로드할 수 없습니다. 단일 사인온을 사용하여 보안 문서를 업로드하는 것이 좋습니다. (Remoting[을(를) 사용하여 프로세스를 호출하려면 보안 문서 전달을 참조하십시오.)](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)
+* 문서가 서버에 없으면 원격 업로드 서블릿을 사용하여 문서를 AEM Forms에 업로드합니다. AEM Forms의 새로운 기능은 보안 문서를 업로드할 수 있는 기능입니다. 보안 문서를 업로드할 때* 문서 업로드 응용 프로그램 사용자 *역할이 있는 사용자를 사용해야 합니다. 이 역할이 없으면 사용자가 보안 문서를 업로드할 수 없습니다. 단일 사인온을 사용하여 보안 문서를 업로드하는 것이 좋습니다. (Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)을(를) 사용하여 프로세스를 호출하려면 보안 문서 전달을 참조하십시오.)[
 
    >[!NOTE]
    aem forms이 안전하지 않은 문서를 업로드하도록 구성된 경우 문서 업로드 응용 프로그램 사용자 역할이 없는 사용자를 사용하여 문서를 업로드할 수 있습니다. 사용자는 문서 업로드 권한을 가질 수도 있습니다. 그러나 AEM Forms이 보안 문서만 허용하도록 구성된 경우에는 사용자에게 문서 업로드 응용 프로그램 사용자 역할 또는 문서 업로드 권한이 있는지 확인하십시오. [보안 및 비보안 문서를 수락하도록 AEM Forms 구성](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents)*을 참조하십시오.
@@ -195,7 +195,7 @@ Flex으로 빌드된 응용 프로그램에서 AEM Forms 프로세스를 호출�
 1. 반환 값을 처리합니다.
 
 >[!NOTE]
-이 섹션에서는 AEM Forms 프로세스를 호출하고 AEM Forms이 안전하지 않은 문서를 업로드하도록 구성된 경우 문서를 업로드하는 방법에 대해 설명합니다. AEM Forms 프로세스를 호출하고 보안 문서를 업로드하는 방법 및 보안 및 비보안 문서를 수락하도록 AEM Forms을 구성하는 방법에 대한 자세한 내용은 Remoting[을 사용하여 보안 문서 전달을 참조하십시오.](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)
+이 섹션에서는 AEM Forms 프로세스를 호출하고 AEM Forms이 안전하지 않은 문서를 업로드하도록 구성된 경우 문서를 업로드하는 방법에 대해 설명합니다. AEM Forms 프로세스를 호출하고 보안 문서를 업로드하는 방법 및 보안 및 비보안 문서를 수락하도록 AEM Forms을 구성하는 방법에 대한 자세한 내용은 Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)을 사용하여 보안 문서 전달을 참조하십시오.[
 
 **mx:RemoteObject 인스턴스 만들기**
 
