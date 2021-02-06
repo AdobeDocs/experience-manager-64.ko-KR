@@ -117,7 +117,7 @@ ITL 처리를 구성하려면 구성 파일을 만들고 이 파일을 실행하
 
 1. **[!UICONTROL 웹 사용 이미지]** 탭에서 **[!UICONTROL 목록 건너뛰기]**&#x200B;에서 기본 웹 변환 생성 프로세스를 건너뛸 MIME 유형을 추가합니다. 예를 들어 위의 단계에서 MIME 유형 `image/tiff`을 건너뛰었을 경우 건너뛰기 목록에 `image/tiff`을 추가합니다.
 
-1. **[!UICONTROL EPS 축소판(ImageMagick에서 제공)]** 단계를 열고 **[!UICONTROL 인수]** 탭으로 이동합니다. **[!UICONTROL MIME 유형]** 목록에서 이미징 코드 변환 라이브러리를 처리할 MIME 유형을 추가합니다. 예를 들어 위의 단계에서 MIME 유형 `image/tiff`을 건너뛰었을 경우 `image/jpeg`MIME 유형&#x200B;]**목록에 &lt;a1/>을 추가합니다.**[!UICONTROL 
+1. **[!UICONTROL EPS 축소판(ImageMagick에서 제공)]** 단계를 열고 **[!UICONTROL 인수]** 탭으로 이동합니다. **[!UICONTROL MIME 유형]** 목록에서 이미징 코드 변환 라이브러리를 처리할 MIME 유형을 추가합니다. 예를 들어 위의 단계에서 MIME 유형 `image/tiff`을 건너뛰었을 경우 `image/jpeg`MIME 유형&#x200B;]**목록에**[!UICONTROL &#x200B;을 추가합니다.
 
 1. 기본 명령이 있을 경우 기본 명령을 제거합니다.
 
