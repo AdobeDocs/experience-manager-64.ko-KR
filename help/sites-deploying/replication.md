@@ -116,7 +116,7 @@ AEM의 표준 설치에 포함된 Geometrixx 웹 사이트를 사용하여 복�
 
 * [기본 에이전트](#replication-author-to-publish)  - 작성자에서 게시로 복제하는 데 사용됩니다.
 
-* Dispatcher Flush - Dispatcher 캐시를 관리하는 데 사용됩니다. 자세한 내용은 제작 환경[ 및 ](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment)게시 인스턴스[에서 발송자 캐시를 무효화하기를 참조하십시오.](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance)
+* Dispatcher Flush - Dispatcher 캐시를 관리하는 데 사용됩니다. 자세한 내용은 제작 환경](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) 및 [게시 인스턴스](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance)에서 발송자 캐시를 무효화하기를 참조하십시오.[
 
 * [역방향 복제](#replicating-from-publish-to-author)  - 게시에서 작성자로 복제하는 데 사용됩니다. 역 복제는 포럼, 블로그 및 댓글과 같은 커뮤니티 기능에는 사용되지 않습니다. 보낼 편지함이 활성화되지 않아 실제로 비활성화됩니다. 역방향 복제를 사용하려면 사용자 지정 구성이 필요합니다.
 
