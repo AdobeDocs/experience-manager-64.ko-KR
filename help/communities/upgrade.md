@@ -93,7 +93,7 @@ AEM 6.1부터는 JSP 구성 요소가 완전히 제거되었습니다. 커뮤니
 
 [AEM Communities UGC 마이그레이션 도구](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)는 GitHub에서 사용할 수 있는 오픈 소스 마이그레이션 도구로서, AEM 소셜 커뮤니티의 이전 버전에서 UGC를 내보내고 AEM Communities 6.1 이상으로 가져오기 위해 사용자 정의할 수 있습니다.
 
-이전 버전에서 UGC를 이동하는 것 외에도 도구를 사용하여 MSRP에서 DSRP로 등 하나의 [SRP](working-with-srp.md)에서 다른 &lt;a1/>으로 UGC를 이동할 수도 있습니다.
+이전 버전에서 UGC를 이동하는 것 외에도 도구를 사용하여 MSRP에서 DSRP로 등 하나의 [SRP](working-with-srp.md)에서 다른 으로 UGC를 이동할 수도 있습니다.
 
 ## AEM 5.6.1 또는 이전 버전 {#upgrading-from-aem-or-earlier}에서 업그레이드
 
