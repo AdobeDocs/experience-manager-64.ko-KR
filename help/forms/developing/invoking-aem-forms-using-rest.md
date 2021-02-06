@@ -22,7 +22,7 @@ ht-degree: 0%
 
 REST(Representational State Transfer) 요청을 통해 호출할 수 있도록 Workbench에서 만든 프로세스를 구성할 수 있습니다. REST 요청은 HTML 페이지에서 전송됩니다. 즉, REST 요청을 사용하여 웹 페이지에서 직접 Forms 프로세스를 호출할 수 있습니다. 예를 들어 웹 페이지의 새 인스턴스를 열 수 있습니다. 그런 다음 Forms 프로세스를 호출하고 HTTP POST 요청에서 전송된 데이터로 렌더링된 PDF 문서를 로드할 수 있습니다.
 
-두 가지 유형의 HTML 클라이언트가 있습니다. 첫 번째 HTML 클라이언트는 JavaScript로 작성된 AJAX 클라이언트입니다. 두 번째 클라이언트는 전송 단추가 포함된 HTML 양식입니다. HTML 기반 클라이언트 응용 프로그램만 가능한 REST 클라이언트가 아닙니다. HTTP 요청을 지원하는 모든 클라이언트 응용 프로그램은 REST 호출을 사용하여 서비스를 호출할 수 있습니다. 예를 들어 PDF 양식의 REST 호출을 사용하여 서비스를 호출할 수 있습니다. ([Acrobat에서 MyApplication/EncryptDocument 프로세스 호출 참조)](#rest-invocation-examples)
+두 가지 유형의 HTML 클라이언트가 있습니다. 첫 번째 HTML 클라이언트는 JavaScript로 작성된 AJAX 클라이언트입니다. 두 번째 클라이언트는 전송 단추가 포함된 HTML 양식입니다. HTML 기반 클라이언트 응용 프로그램만 가능한 REST 클라이언트가 아닙니다. HTTP 요청을 지원하는 모든 클라이언트 응용 프로그램은 REST 호출을 사용하여 서비스를 호출할 수 있습니다. 예를 들어 PDF 양식의 REST 호출을 사용하여 서비스를 호출할 수 있습니다. (](#rest-invocation-examples)Acrobat에서 MyApplication/EncryptDocument 프로세스 호출 참조)[
 
 REST 요청을 사용할 때는 Forms 서비스를 직접 호출하지 않는 것이 좋습니다. 대신 Workbench에서 만든 프로세스를 호출합니다. REST 호출을 위한 프로세스를 만들 때는 프로그래밍 방식의 시작점을 사용합니다. 이 경우 REST 끝점이 자동으로 추가됩니다. 워크벤치에서 프로세스를 만드는 방법에 대한 자세한 내용은 [워크벤치 사용](https://www.adobe.com/go/learn_aemforms_workbench_63)을 참조하십시오.
 
