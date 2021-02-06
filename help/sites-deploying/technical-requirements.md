@@ -333,7 +333,7 @@ Adobe Experience Manager은 다음 서버 플랫폼과 연동됩니다.
 
 Adobe Experience Manager은 이 페이지에 나열된 기술 요구 사항을 준수하고 Adobe의 표준 지원 약관에 따라 Microsoft Azure 및 Amazon 웹 서비스(AWS)와 같은 클라우드 컴퓨팅 환경의 가상 컴퓨터에서 실행됩니다.
 
-Azure 또는 AWS에 AEM을 배포하려면 Adobe Managed Services를 사용하는 것이 좋습니다. Adobe Managed Services는 이러한 클라우드 컴퓨팅 환경에서 AEM을 배포 및 운영하는 경험과 기술을 전문가에게 제공합니다. Adobe Managed Services[에 대한 추가 설명서를 확인하십시오.](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t)
+Azure 또는 AWS에 AEM을 배포하려면 Adobe Managed Services를 사용하는 것이 좋습니다. Adobe Managed Services는 이러한 클라우드 컴퓨팅 환경에서 AEM을 배포 및 운영하는 경험과 기술을 전문가에게 제공합니다. Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t)에 대한 추가 설명서를 확인하십시오.[
 
 Azure 또는 AWS 또는 기타 클라우드 컴퓨팅 환경에 AEM을 배포하는 다른 모든 경우 Adobe의 지원이 이 페이지에 나열된 기술 사양에 따라 가상 컴퓨팅 환경에 포함됩니다. 클라우드 서비스가 이 페이지에 나열된 기술 요구 사항(예: Azure Blob 스토리지 또는 AWS S3)의 일부로 특별히 지원되지 않는 한 이러한 클라우드 환경에서 실행되는 AEM과 관련된 보고된 문제는 클라우드 컴퓨팅 환경 관련 클라우드 서비스와 독립적으로 재생산되어야 합니다.
 
@@ -634,7 +634,7 @@ XMP 쓰기가 지원되고 다음 플랫폼 및 파일 형식에 대해 활성�
 
 **운영 체제**
 
-* Linux(32비트, 64비트 시스템에서 32비트 애플리케이션 지원 필요). 32비트 클라이언트 라이브러리를 설치하는 단계는 64비트 RedHat Linux[에서 XMP 추출 및 다시 쓰기를 활성화하는 방법을 참조하십시오.](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)
+* Linux(32비트, 64비트 시스템에서 32비트 애플리케이션 지원 필요). 32비트 클라이언트 라이브러리를 설치하는 단계는 64비트 RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)에서 XMP 추출 및 다시 쓰기를 활성화하는 방법을 참조하십시오.[
 
 * Windows Server
 * Oracle Solaris
