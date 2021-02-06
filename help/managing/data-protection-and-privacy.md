@@ -121,7 +121,7 @@ AEM Foundation에 대한 [데이터 보호 및 개인 정보 보호 요청 처�
 
 ## AEM Communities {#aem-communities}
 
-AEM Communities은 데이터 주체에게 데이터 이식성, 액세스 권한 및 바로 사용 가능한 APIs[를 통해 잊어버릴 권리가 있음을 알려줍니다. ](/help/communities/user-ugc-management-service.md) 이러한 API를 사용하면 사용자 생성 컨텐츠의 벌크 삭제 및 일괄 내보내기를 수행할 수 있으며 인증 가능 ID를 통해 식별된 사용자 계정을 비활성화할 수 있습니다. 그러나 사용자 계정의 영구 삭제는 CRXDE Lite에서 사용자 노드를 삭제하여 시스템에서 손쉽게 옵트아웃할 필요가 있음을 해결합니다.
+AEM Communities은 데이터 주체에게 데이터 이식성, 액세스 권한 및 바로 사용 가능한 APIs](/help/communities/user-ugc-management-service.md)를 통해 잊어버릴 권리가 있음을 알려줍니다. [ 이러한 API를 사용하면 사용자 생성 컨텐츠의 벌크 삭제 및 일괄 내보내기를 수행할 수 있으며 인증 가능 ID를 통해 식별된 사용자 계정을 비활성화할 수 있습니다. 그러나 사용자 계정의 영구 삭제는 CRXDE Lite에서 사용자 노드를 삭제하여 시스템에서 손쉽게 옵트아웃할 필요가 있음을 해결합니다.
 
 또한, AEM Communities은 권한 있는 구성원이 사용자의 기여도와 세부 사항을 찾아서 삭제할 수 있는 벌크 중재 콘솔로 인해 개인 정보를 디자인함으로써 개인 정보를 제공합니다. 멤버 관리 콘솔에서는 기고자를 금지하는 지점으로 제한할 수 있습니다. 또한 데이터 주체가 작성된 기여도를 삭제할 수 있도록 허용합니다.
 
@@ -129,7 +129,7 @@ AEM Communities은 데이터 주체에게 데이터 이식성, 액세스 권한 
 
 AEM Forms에는 데이터를 캡처, 처리 및 저장하여 비즈니스 프로세스를 조정하고 디지털 거래를 완료하는 구성 요소 및 워크플로우가 포함되어 있습니다. 다른 구성 요소는 서로 다른 데이터 저장소를 사용하고 사용자 지정 데이터 저장소와의 통합을 허용합니다. 다음 설명서는 구성 요소의 데이터 보호 및 개인 정보 보호(예: GDPR 또는 CCPA) 워크플로우를 지원하기 위해 사용자 데이터에 액세스하고 이를 처리하기 위한 절차와 지침을 설명합니다.
 
-* [Forms 포털](/help/forms/using/forms-portal-handling-user-data.md)
+*  [Forms 포털](/help/forms/using/forms-portal-handling-user-data.md)
 * [서신 관리](/help/forms/using/correspondence-management-handling-user-data.md)
 * [Adobe Sign과 통합](/help/forms/using/integration-adobe-sign-handling-user-data.md)
 * [OSGi 기반의 Forms 워크플로우](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
