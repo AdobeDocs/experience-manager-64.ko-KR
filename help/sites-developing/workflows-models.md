@@ -208,7 +208,7 @@ ht-degree: 2%
 
 1. **[!UICONTROL 편집]**&#x200B;을 선택하고 **[!UICONTROL 워크플로우 모델 속성]**&#x200B;을 엽니다. **[!UICONTROL 기본]** 탭으로 이동합니다.
 
-1. `Workflow : DAM`태그&#x200B;]**필드에 &lt;a0/>을 추가합니다.**[!UICONTROL  확인(확인 표시)을 사용하여 선택을 확인합니다.
+1. `Workflow : DAM`태그&#x200B;]**필드에**[!UICONTROL &#x200B;을 추가합니다. 확인(확인 표시)을 사용하여 선택을 확인합니다.
 
 1. **[!UICONTROL 저장 및 닫기]**로 태그 추가를 확인합니다.
    ![모델의 페이지 속성 편집](assets/workflow_model_edit_activation1.png)
