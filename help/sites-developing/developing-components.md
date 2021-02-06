@@ -194,7 +194,7 @@ newComponent (cq:Component)
 
 >[!NOTE]
 >
->구성 요소에 터치 지원 UI에 대해 정의된 대화 상자가 없는 경우, 클래식 UI 대화 상자는 호환성 레이어 내부의 대비책으로 사용됩니다. 이러한 대화 상자를 사용자 정의하려면 클래식 UI 대화 상자를 사용자 정의해야 합니다. 클래식 UI[AEM 구성 요소를 참조하십시오.](/help/sites-developing/developing-components-classic.md)
+>구성 요소에 터치 지원 UI에 대해 정의된 대화 상자가 없는 경우, 클래식 UI 대화 상자는 호환성 레이어 내부의 대비책으로 사용됩니다. 이러한 대화 상자를 사용자 정의하려면 클래식 UI 대화 상자를 사용자 정의해야 합니다. 클래식 UI](/help/sites-developing/developing-components-classic.md)AEM 구성 요소를 참조하십시오.[
 
 ### 대화 상자 필드 사용자 지정 {#customizing-dialog-fields}
 
@@ -227,7 +227,7 @@ newComponent (cq:Component)
 
 >[!NOTE]
 >
->위젯은 해당 ExtJS 위젯과의 관계를 설정하기 위해 각각 특정 `cq:Widgets` 노드가 있는 클래식 UI와 다릅니다. `xtype` 구현 관점에서 이러한 위젯은 ExtJS 프레임워크를 통해 클라이언트측에서 렌더링되었습니다.
+>위젯은 해당 ExtJS 위젯과의 관계를 설정하기 위해 각각 특정 `xtype` 노드가 있는 클래식 UI와 다릅니다. `cq:Widgets` 구현 관점에서 이러한 위젯은 ExtJS 프레임워크를 통해 클라이언트측에서 렌더링되었습니다.
 
 리소스 유형을 만든 후에는 방금 소개한 리소스 유형을 참조하는 `sling:resourceType` 속성을 사용하여 대화 상자에 새 노드를 추가하여 필드를 인스턴스화할 수 있습니다.
 
