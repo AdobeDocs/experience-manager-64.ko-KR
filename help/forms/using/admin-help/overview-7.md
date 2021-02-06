@@ -23,7 +23,7 @@ ht-degree: 0%
 Forms 서비스를 사용하면 Designer에서 일반적으로 작성된 양식을 확인, 처리, 변환 및 제공하는 대화형 데이터 캡처 클라이언트 애플리케이션을 만들 수 있습니다. 양식 작성자는 Forms 서비스가 다양한 형식으로 렌더링하는 단일 양식 디자인을 개발합니다.
 
 * adobe reader 또는 브라우저에서 PDF로 변환
-* 표준을 준수하는 XHTML 1.0 렌더링을 비롯한 다양한 브라우저 환경에서 HTML로 사용
+* 표준을 준수하는 XHTML 1.0 렌더링을 비롯한 다양한 브라우저 환경에서 HTML로 제작
 * adobe Flash Player을 지원하는 다양한 브라우저 환경에서 양식 안내선으로 사용
 
 Forms 서비스에 대한 자세한 내용은 [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
