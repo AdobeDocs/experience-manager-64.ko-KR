@@ -13,20 +13,20 @@ translation-type: tm+mt
 source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '1215'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 
 # AEM에서 SPA 시작하기 - React {#getting-started-with-spas-in-aem-react}
 
-단일 페이지 애플리케이션(SPA)을 통해 웹 사이트 사용자에게 매력적인 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크을 사용하여 사이트를 구축하고자 하며, 작성자는 SPA 프레임워크을 사용하여 구축된 사이트에서 AEM의 컨텐츠를 매끄럽게 편집하고자 합니다.
+SPA(단일 페이지 애플리케이션)는 웹 사이트 사용자에게 훌륭한 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크을 사용하여 사이트를 구축하고자 하며, 작성자는 SPA 프레임워크을 사용하여 구축된 사이트에서 AEM의 컨텐츠를 매끄럽게 편집하고자 합니다.
 
 SPA 저작 기능은 AEM 내에서 SPA을 지원하는 포괄적인 솔루션을 제공합니다. 이 문서에서는 Responsive 프레임워크에 대한 간소화된 SPA 애플리케이션을 소개하고, 이를 통합하는 방법을 설명하며, SPA을 빠르게 시작할 수 있도록 해줍니다.
 
 >[!NOTE]
 >
->이 문서는 Response 프레임워크를 기반으로 합니다. 각도 프레임워크에 해당하는 문서는 AEM에서 SPA 시작하기 - 각도[를 참조하십시오.](/help/sites-developing/spa-getting-started-angular.md)
+>이 문서는 Response 프레임워크를 기반으로 합니다. 각도 프레임워크에 해당하는 문서는 AEM에서 SPA 시작하기 - 각도](/help/sites-developing/spa-getting-started-angular.md)를 참조하십시오.[
 
 >[!NOTE]
 >단일 페이지 애플리케이션(SPA) 편집기 기능을 사용하려면 AEM 6.4 서비스 팩 2 이상이 필요합니다.
@@ -287,6 +287,6 @@ export default MapTo('my-react-app/react/components/structure/page')(PageClass, 
 
 AEM용 SPA을 개발하기 위해 자신을 구성하는 방법에 대한 자세한 내용은 [AEM용 SPA 개발](/help/sites-developing/spa-architecture.md) 문서를 참조하십시오.
 
-동적 모델을 구성 요소로 매핑하는 방법 및 AEM에서 작동하는 방식에 대한 자세한 내용은 SPA[의 구성 요소 매핑에 대한 동적 모델 집필을 참조하십시오.](/help/sites-developing/spa-dynamic-model-to-component-mapping.md)
+동적 모델을 구성 요소로 매핑하는 방법 및 AEM에서 작동하는 방식에 대한 자세한 내용은 SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md)의 구성 요소 매핑에 대한 동적 모델 집필을 참조하십시오.[
 
 React 또는 Angular 이외의 프레임워크를 위해 AEM에서 SPA을 구현하거나 AEM용 SPA SDK의 작동 방식을 자세히 살펴보려면 [SPA Blueprint](/help/sites-developing/spa-blueprint.md) 문서를 참조하십시오.
