@@ -423,7 +423,7 @@ BrowserMap은 사용자 지정된 클라이언트 라이브러리에서 같은 �
 <cq:include script="/libs/wcm/core/browsermap/browsermap.jsp" />
 ```
 
-`JSP` 파일에 `BrowserMap` 클라이언트 라이브러리를 추가하는 것 외에도 `cq:deviceIdentificationMode` String 속성을 `client-side`에 설정한 `jcr:content` 노드를 웹 사이트의 루트 아래에 있는 &lt;a4/> 노드에 추가해야 합니다.
+`JSP` 파일에 `BrowserMap` 클라이언트 라이브러리를 추가하는 것 외에도 `cq:deviceIdentificationMode` String 속성을 `client-side`에 설정한 `jcr:content` 노드를 웹 사이트의 루트 아래에 있는  노드에 추가해야 합니다.
 
 ### BrowserMap의 기본 동작 {#overriding-browsermap-s-default-behavior} 재정의
 
