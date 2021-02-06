@@ -335,7 +335,7 @@ ht-degree: 5%
  </tbody>
 </table>
 
-### 형식 지정 {#formatting}
+### 서식 {#formatting}
 
 <table> 
  <tbody>
