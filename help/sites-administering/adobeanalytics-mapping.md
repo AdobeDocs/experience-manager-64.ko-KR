@@ -57,7 +57,7 @@ Adobe Analytics으로 전송할 데이터를 수집하는 프레임워크에 구
 
    >[!NOTE]
    >
-   >여러 Analytics 변수(예:같은 CQ 변수(예:`props`)`eVars``events``pagedata.title`
+   >여러 Analytics 변수(예:같은 CQ 변수(예:`pagedata.title`)`props``eVars``events`
 
    >[!CAUTION]
    >
