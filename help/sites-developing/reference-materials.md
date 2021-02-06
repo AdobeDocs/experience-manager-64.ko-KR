@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: de04a6c205e4379c7f8a9ab5574985259d6541c3
 workflow-type: tm+mt
 source-wordcount: '270'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -25,7 +25,7 @@ AEM은 애플리케이션 개발을 위한 여러 API를 제공합니다. 다음
 
 * [Adobe AEM 6.4.0 API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html)
 
-* [API 차이점](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/diff-previous/changes.html)
+* [API 차이](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/diff-previous/changes.html)
 
 * [Granite UI(Touch-Enabled) API 설명서](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
 
