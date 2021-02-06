@@ -23,7 +23,7 @@ ht-degree: 1%
 
 단일 행 텍스트, 여러 줄 서식 있는 텍스트, 숫자 필드, 부울 선택기, 드롭다운 메뉴 옵션, 날짜 및 시간 등을 비롯한 다양한 데이터 유형을 즉시 사용할 수 있습니다. AEM 사용자는 해당 조각의 편집 의도를 기반으로 데이터 유형을 선택할 수 있습니다. 이렇게 하면 다양한 유형의 컨텐츠와 관련 조각 작성 경험이 있는 복잡한 모델을 통해 간단한 텍스트 모델을 처리할 수 있습니다.
 
-데이터 유형은 ](#properties)저장소의 특정 위치에 있는 [노드 속성&lt;a1/>의 조합으로 정의됩니다.[. ](#locations-in-the-repository) 고유한 [데이터 유형](#creating-your-data-type) 및 [fieldProperties](#creating-your-own-fieldproperties-property)을 만들 수도 있습니다.
+데이터 유형은 [저장소의 특정 위치에 있는 ](#properties)노드 속성[의 조합으로 정의됩니다.](#locations-in-the-repository). 고유한 [데이터 유형](#creating-your-data-type) 및 [fieldProperties](#creating-your-own-fieldproperties-property)을 만들 수도 있습니다.
 
 <!-- Please uncomment when files are used>
 >[!NOTE]
@@ -91,7 +91,7 @@ ht-degree: 1%
 
 * `fieldTitle`
 
-   이 데이터 유형의 제목을 정의하는 속성입니다. 예를 들어 **구성 요소의 경우 단일 행 텍스트**, 다중 필드 구성 요소의 경우 `textfield`여러 줄 텍스트&#x200B;**입니다.**
+   이 데이터 유형의 제목을 정의하는 속성입니다. 예를 들어 `textfield` 구성 요소의 경우 단일 행 텍스트&#x200B;**, 다중 필드 구성 요소의 경우**&#x200B;여러 줄 텍스트&#x200B;**입니다.**
 
 * `valueType`
 
