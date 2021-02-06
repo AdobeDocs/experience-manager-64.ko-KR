@@ -1,6 +1,6 @@
 ---
-title: AEM 6.4 Forms으로 업그레이드
-seo-title: AEM 6.4 Forms으로 업그레이드
+title: AEM 6.4 Forms로 업그레이드
+seo-title: AEM 6.4 Forms로 업그레이드
 description: 'AEM 6.1 Forms, AEM 6.2 Forms 및 LiveCycle ES4 SP1에서 AEM 6.3 Forms으로 직접 업그레이드할 수 있습니다. '
 seo-description: 'AEM 6.1 Forms, AEM 6.2 Forms 및 LiveCycle ES4 SP1에서 AEM 6.3 Forms으로 직접 업그레이드할 수 있습니다. '
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
@@ -93,7 +93,7 @@ JEE에서 LiveCycle ES4 SP1을 AEM 6.4 Forms으로 업그레이드하면 이전 
 
    >[!NOTE]
    >
-   >AEM 6.4 Forms에서 crx-repository의 구조가 변경되었습니다. AEM 6.4 양식으로 업그레이드한 후 새로 만드는 사용자 지정을 위해 변경된 경로를 사용합니다. 변경된 경로의 전체 목록은 AEM 6.4[Forms 리포지토리 재구조화를 참조하십시오.](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)
+   >AEM 6.4 Forms에서 crx-repository의 구조가 변경되었습니다. AEM 6.4 양식으로 업그레이드한 후 새로 만드는 사용자 지정을 위해 변경된 경로를 사용합니다. 변경된 경로의 전체 목록은 AEM 6.4](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)Forms 리포지토리 재구조화를 참조하십시오.[
 
 **기존 환경과 애플리케이션 서버에 따라 다음 문서 중 하나를 선택하고 자세한 지침을 따릅니다.**
 
@@ -151,7 +151,7 @@ JEE에서 AEM 6.4 Forms으로 LiveCycle ES3를 업그레이드하는 것은 지�
 
    >[!NOTE]
    >
-   >AEM 6.4 Forms에서 crx-repository의 구조가 변경되었습니다. AEM 6.4 양식으로 업그레이드한 후 새로 만드는 사용자 지정을 위해 변경된 경로를 사용합니다. 변경된 경로의 전체 목록은 AEM 6.4[Forms 리포지토리 재구조화를 참조하십시오.](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)
+   >AEM 6.4 Forms에서 crx-repository의 구조가 변경되었습니다. AEM 6.4 양식으로 업그레이드한 후 새로 만드는 사용자 지정을 위해 변경된 경로를 사용합니다. 변경된 경로의 전체 목록은 AEM 6.4](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)Forms 리포지토리 재구조화를 참조하십시오.[
 
 **기존 환경과 애플리케이션 서버에 따라 다음 문서 중 하나를 선택하고 자세한 지침을 따릅니다.**
 
