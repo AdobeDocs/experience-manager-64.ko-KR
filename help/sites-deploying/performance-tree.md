@@ -199,7 +199,7 @@ ht-degree: 5%
      <li><a href="/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing">동시 워크플로우 처리</a></li> 
      <li><a href="/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow">특정 워크플로우에 대한 큐 구성</a></li> 
      <li><a href="/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances">워크플로우 인스턴스의 정기적인 제거</a></li> 
-     <li><a href="/help/sites-developing/workflows.md#transient-workflows">일시적인 워크플로우</a><br /> </li> 
+     <li><a href="/help/sites-developing/workflows.md#transient-workflows">임시 워크플로우</a><br /> </li> 
     </ul> <p> </p> </td> 
   </tr> 
   <tr> 
