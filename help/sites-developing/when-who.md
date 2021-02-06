@@ -27,7 +27,7 @@ ht-degree: 5%
   <tr> 
    <td>테스트 팀</td> 
    <td>책임... </td> 
-   <td>화이트보드...</td> 
+   <td>http 화이트보드...</td> 
   </tr> 
   <tr> 
    <td>개발 팀</td> 
