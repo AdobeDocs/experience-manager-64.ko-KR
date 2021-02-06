@@ -24,7 +24,7 @@ Forms 서비스가 생성하는 양식에 항상 포함되거나 포함되지 �
 
 >[!NOTE]
 >
->Forms에 대한 사용자 정의 XCI 파일을 지정한 경우 XCI 파일의 포함 글꼴 옵션이 이러한 설정을 무시합니다. (Forms[에 대한 위치 구성을 참조하십시오.)](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms)
+>Forms에 대한 사용자 정의 XCI 파일을 지정한 경우 XCI 파일의 포함 글꼴 옵션이 이러한 설정을 무시합니다. (Forms](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms)에 대한 위치 구성을 참조하십시오.)[
 
 1. 관리 콘솔에서 **[!UICONTROL 서비스 > Forms]**&#x200B;를 클릭합니다.
 1. **[!UICONTROL 글꼴 포함 설정]** 아래의 **[!UICONTROL 항상 글꼴 포함]** 상자에 양식에 포함할 글꼴 이름을 쉼표로 구분하여 입력합니다. 지정한 글꼴은 양식에서 사용되는 경우에만 생성된 양식에 포함됩니다. 서비스에 전달된 XCI 파일에서 글꼴 포함 옵션을 설정한 경우 PDF에 사용된 모든 글꼴이 항상 포함되므로 이 설정은 무시됩니다.
