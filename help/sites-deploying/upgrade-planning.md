@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 workflow-type: tm+mt
 source-wordcount: '2451'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -100,7 +100,7 @@ AEM 업그레이드를 계획 및 실행하는 데 많은 작업이 사용됩니
 
 ![screen_shot_2018-04-04at121206](assets/screen_shot_2018-04-04at121206.png)
 
-AEM 6.4의 새로운 기능은 adobe.com[의 AEM 섹션에 있습니다. ](/help/release-notes/release-notes.md) 조직에서 일반적으로 사용하는 UI 또는 제품 기능의 변경 사항을 반드시 메모해 두십시오. 새로운 기능을 살펴보면서 조직에 유용한 모든 기능을 살펴볼 수 있습니다. AEM 6.4의 변경 사항을 살펴본 후 작성자를 위한 교육 계획을 수립합니다. 여기에는 [Adobe Digital Learning Services](https://www.adobe.com/training.html)를 통해 제공되는 도움말 기능 비디오나 공식 트레이닝과 같이 무료로 제공되는 리소스를 활용할 수 있습니다.
+AEM 6.4의 새로운 기능은 adobe.com](/help/release-notes/release-notes.md)의 AEM 섹션에 있습니다. [ 조직에서 일반적으로 사용하는 UI 또는 제품 기능의 변경 사항을 반드시 메모해 두십시오. 새로운 기능을 살펴보면서 조직에 유용한 모든 기능을 살펴볼 수 있습니다. AEM 6.4의 변경 사항을 살펴본 후 작성자를 위한 교육 계획을 수립합니다. 여기에는 [Adobe Digital Learning Services](https://www.adobe.com/training.html)를 통해 제공되는 도움말 기능 비디오나 공식 트레이닝과 같이 무료로 제공되는 리소스를 활용할 수 있습니다.
 
 ### 테스트 계획 만들기 {#creating-a-test-plan}
 
@@ -122,7 +122,7 @@ AEM 6.4에 대한 기술 요구 사항을 검토하고 현재 사용 중인 하�
 
 [작업 대시보드](/help/sites-administering/operations-dashboard.md)
 
-[자산 모니터링 우수 사례](/help/assets/assets-monitoring-best-practices.md)
+[Assets 모니터링 우수 사례](/help/assets/assets-monitoring-best-practices.md)
 
 [JMX 콘솔을 사용하여 서버 리소스 모니터링](/help/sites-administering/jmx-console.md)
 
@@ -186,7 +186,7 @@ Adobe은 AEM 인스턴스를 업그레이드하는 과정을 문서화했지만 
 
 ### 개발 수행 및 QA {#performing-development-and-qa}
 
-AEM 6.4와 호환되도록 [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md)에 대한 절차를 제공했습니다. 이 반복 프로세스가 실행되므로 필요에 따라 Runbook을 변경해야 합니다. 업그레이드 후 즉시 개발이 필요 없는 대부분의 경우 사용자 정의 설정을 뒤로 호환성 상태로 유지하는 방법에 대한 자세한 내용은 AEM 6.4[의 이전 버전과의 호환성을 참조하십시오.](/help/sites-deploying/backward-compatibility.md)
+AEM 6.4와 호환되도록 [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md)에 대한 절차를 제공했습니다. 이 반복 프로세스가 실행되므로 필요에 따라 Runbook을 변경해야 합니다. 업그레이드 후 즉시 개발이 필요 없는 대부분의 경우 사용자 정의 설정을 뒤로 호환성 상태로 유지하는 방법에 대한 자세한 내용은 AEM 6.4](/help/sites-deploying/backward-compatibility.md)의 이전 버전과의 호환성을 참조하십시오.[
 
 ![screen_shot_2018-04-04at154829](assets/screen_shot_2018-04-04at154829.png)
 
