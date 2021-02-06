@@ -283,7 +283,7 @@ ht-degree: 3%
 
       * **** Namelocalhost.4503
 
-         (*이(가)*&#x200B;을(를) 사용하지 않음)`:`
+         (*이(가) `:`을(를) 사용하지 않음)*
 
       * **유형** [지정:매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
