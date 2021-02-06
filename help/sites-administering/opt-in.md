@@ -32,7 +32,7 @@ AEM에는 Adobe Analytics 및 Adobe Target와의 통합을 지원하는 옵트�
 
 * 통합을 옵트아웃합니다.
 
-   [통합](/help/sites-administering/marketing-cloud.md)을 수동으로 구성하려면 이 옵션을 고려하십시오. DTM[을 사용하여 AEM과 Adobe Target 및 Adobe Analytics 통합을 참조하십시오.](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html)
+   [통합](/help/sites-administering/marketing-cloud.md)을 수동으로 구성하려면 이 옵션을 고려하십시오. DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html)을 사용하여 AEM과 Adobe Target 및 Adobe Analytics 통합을 참조하십시오.[
 
 * 스크립트를 사용하여 설정 및 프로비전을 구성합니다.
 
@@ -47,7 +47,7 @@ AEM에는 Adobe Analytics 및 Adobe Target와의 통합을 지원하는 옵트�
 
 >[!NOTE]
 >
->선택적으로 서버 시작 시 읽는 속성 파일을 사용하여 Analytics 및 Target 계정 정보를 제공할 수 있습니다. 속성 파일[을 사용하여 계정 정보 제공을 참조하십시오.](/help/sites-administering/opt-in.md#providing-account-information-using-a-properties-file)
+>선택적으로 서버 시작 시 읽는 속성 파일을 사용하여 Analytics 및 Target 계정 정보를 제공할 수 있습니다. 속성 파일](/help/sites-administering/opt-in.md#providing-account-information-using-a-properties-file)을 사용하여 계정 정보 제공을 참조하십시오.[
 
 통합을 선택하면 AEM에서 다음 작업을 수행합니다.
 
@@ -154,7 +154,7 @@ target.password=
 
 Analytics 및 Target와의 통합을 구성하면 AEM은 필요한 클라우드 구성 및 프레임워크를 자동으로 만듭니다. 예를 들어 Analytics 클라우드 구성을 제공된 분석 계정이라고 합니다.
 
-클라우드 구성을 변경할 필요가 없습니다. 그러나 필요에 따라 프레임워크를 구성할 수 있습니다. (Adobe Analytics 속성[ 및 ](/help/sites-administering/adobeanalytics-mapping.md)Target 프레임워크 추가[를 사용하여 구성 요소 데이터 매핑을 참조하십시오.)](/help/sites-administering/target.md)
+클라우드 구성을 변경할 필요가 없습니다. 그러나 필요에 따라 프레임워크를 구성할 수 있습니다. (Adobe Analytics 속성](/help/sites-administering/adobeanalytics-mapping.md) 및 [Target 프레임워크 추가](/help/sites-administering/target.md)를 사용하여 구성 요소 데이터 매핑을 참조하십시오.)[
 
 >[!NOTE]
 >
