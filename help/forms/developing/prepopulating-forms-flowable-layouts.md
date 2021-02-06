@@ -321,7 +321,7 @@ Forms API(웹 서비스)를 사용하여 플로우 가능한 레이아웃으로 
 
 1. 프로젝트 파일 포함
 
-   * Forms 서비스 WSDL을 사용하는 Java 프록시 클래스를 만듭니다. (Apache Axis[를 사용하여 Java 프록시 클래스 만들기를 참조하십시오.)](/help/forms/developing/invoking-aem-forms-using-web.md#creating-java-proxy-classes-using-apache-axis)
+   * Forms 서비스 WSDL을 사용하는 Java 프록시 클래스를 만듭니다. (Apache Axis](/help/forms/developing/invoking-aem-forms-using-web.md#creating-java-proxy-classes-using-apache-axis)를 사용하여 Java 프록시 클래스 만들기를 참조하십시오.)[
    * 클래스 경로에 Java 프록시 클래스를 포함합니다.
 
 1. 메모리 내 XML 데이터 소스 만들기
