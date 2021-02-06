@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
 workflow-type: tm+mt
 source-wordcount: '620'
-ht-degree: 4%
+ht-degree: 8%
 
 ---
 
@@ -25,8 +25,8 @@ AEM Forms은 AEM Forms 앱의 전체 소스 코드를 제공합니다. 소스에
 
 AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 
-1. [소프트웨어 배포](https://experience.adobe.com/downloads)를 엽니다. 소프트웨어 배포에 로그인하려면 Adobe ID이 필요합니다.
-1. 머리글 메뉴에서 사용할 수 있는 **[!UICONTROL Adobe Experience Manager]**&#x200B;을 누릅니다.
+1. [소프트웨어 배포](https://experience.adobe.com/downloads)를 엽니다. 소프트웨어 배포에 로그인하려면 Adobe ID가 필요합니다.
+1. 헤더 메뉴에 제공된 **[!UICONTROL Adobe Experience Manager]**&#x200B;를 누릅니다.
 1. **[!UICONTROL 필터]** 섹션에서 다음을 수행합니다.
    1. **[!UICONTROL 솔루션]** 드롭다운 목록에서 **[!UICONTROL Forms]**&#x200B;을 선택합니다.
    2. 패키지의 버전과 유형을 선택합니다. **[!UICONTROL 다운로드 검색]** 옵션을 사용하여 결과를 필터링할 수도 있습니다.
