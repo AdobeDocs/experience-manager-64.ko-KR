@@ -114,7 +114,7 @@ AEM에서 Sling 리소스 합병을 사용하는 목표는 다음과 같습니�
 
       그런 다음 필요에 따라 `jcr:title` 속성을 업데이트합니다.
 
-* 재정의
+* 오버라이드
 
    * 텍스트 콘솔에 대한 터치 지원 대화 상자의 정의는 다음과 같이 정의됩니다.
 
@@ -215,7 +215,7 @@ AEM에서 Sling 리소스 합병을 사용하는 목표는 다음과 같습니�
    1. 속성 `sling:hideChildren`을(를) 만듭니다.
 
       * 유형: `String[]`
-      * 값:`/libs`에 정의된 자식 노드 목록(&lt;a0/>에 정의) 숨기기/무시
+      * 값:`/libs`에 정의된 자식 노드 목록(에 정의) 숨기기/무시
 
       와일드카드 정선(&amp;M);ast;모든 하위 노드를 숨기거나 무시하는 데 사용할 수 있습니다.
 
@@ -253,7 +253,7 @@ Sling 리소스 합병에는 2개의 사용자 지정 리소스 공급자(오버
 
       * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
 
-* 재정의:
+* 오버라이드:
 
    * 목적:슈퍼 유형에 따라 리소스 병합
    * 마운트 지점:`/mnt/overide`
@@ -271,7 +271,7 @@ Sling 리소스 합병에는 2개의 사용자 지정 리소스 공급자(오버
    * [콘솔 사용자 지정](/help/sites-developing/customizing-consoles-touch.md)
    * [페이지 작성 사용자 지정](/help/sites-developing/customizing-page-authoring-touch.md)
 
-* 재정의:
+* 오버라이드:
 
    * [페이지 속성 구성](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)
 
