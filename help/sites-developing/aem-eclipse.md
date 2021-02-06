@@ -73,7 +73,7 @@ AEM 개발자 도구를 사용하기 전에 다음을 수행해야 합니다.
 
 >[!NOTE]
 >
->AEM[에서 다운로드할 때 Eclipse에서 번들을 사용하여 작업하는 방법을 참조하십시오.](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407)
+>AEM](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407)에서 다운로드할 때 Eclipse에서 번들을 사용하여 작업하는 방법을 참조하십시오.[
 
 ## AEM 원근 {#the-aem-perspective}
 
