@@ -130,7 +130,7 @@ AEM의 [웹 콘솔](/help/sites-deploying/web-console.md)은 번들을 구성하
 
 웹 콘솔에는 변경 사항이 저장되었다는 내용이 표시되지는 않지만 쉽게 찾을 수 있습니다.
 
-1. 웹 콘솔[에서 초기 변경을 수행하는 방법으로 구성 파일을 만듭니다.](#osgi-configuration-with-the-web-console)
+1. 웹 콘솔](#osgi-configuration-with-the-web-console)에서 초기 변경을 수행하는 방법으로 구성 파일을 만듭니다.[
 1. CRXDE Lite 열기
 1. **도구** 메뉴에서 **쿼리 ...를 선택합니다.**.
 1. **Type** `SQL`의 쿼리를 제출하여 업데이트된 구성의 PID를 검색합니다.
