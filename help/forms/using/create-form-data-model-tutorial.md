@@ -151,7 +151,7 @@ MySQL 데이터베이스를 구성하려면 다음을 수행합니다.
 
 ## 3단계:양식 데이터 모델 {#step-create-form-data-model} 만들기
 
-AEM Forms은 구성된 데이터 소스에서 양식 데이터 모드[l을 만들기 위해 직관적인 사용자 인터페이스를 제공합니다. ](data-integration.md) 양식 데이터 모델에서 여러 데이터 소스를 사용할 수 있습니다. 이 자습서의 사용 사례는 MySQL을 데이터 소스로 사용합니다.
+AEM Forms은 구성된 데이터 소스에서 양식 데이터 모드](data-integration.md)l을 만들기 위해 직관적인 사용자 인터페이스를 제공합니다. [ 양식 데이터 모델에서 여러 데이터 소스를 사용할 수 있습니다. 이 자습서의 사용 사례는 MySQL을 데이터 소스로 사용합니다.
 
 양식 데이터 모델을 만들려면 다음을 수행합니다.
 
@@ -230,7 +230,7 @@ AEM Forms은 구성된 데이터 소스에서 양식 데이터 모드[l을 만�
 
    ![usage_charts_rule_editor](assets/usage_charges_rule_editor.png)
 
-1. 수학 표현식에서 각각 첫 번째 및 두 번째 개체로 **calcharts** 및 **confcalcharts**&#x200B;를 선택합니다. **plus**&#x200B;를 연산자로 선택합니다. 수학 표현식 내에서 **표현식 확장**&#x200B;을 눌러 **smscharts**, **internetcharts**, **roamingnational**, **roamingintenl** 및 **vas&lt;a111 /> 객체를 표현식에 추가합니다.**
+1. 수학 표현식에서 각각 첫 번째 및 두 번째 개체로 **calcharts** 및 **confcalcharts**&#x200B;를 선택합니다. **plus**&#x200B;를 연산자로 선택합니다. 수학 표현식 내에서 **표현식 확장**&#x200B;을 눌러 **smscharts**, **internetcharts**, **roamingnational**, **roamingintenl** 및 **vas** 객체를 표현식에 추가합니다.
 
    다음 이미지는 규칙 편집기의 수학 표현식을 보여 줍니다.
 
