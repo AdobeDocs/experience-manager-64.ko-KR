@@ -42,7 +42,7 @@ AEM은 워크플로우 모델을 생성하고 워크플로우 단계를 개발�
 >* 워크플로우에 참여하려면 [워크플로우 사용](/help/sites-authoring/workflows.md)을 참조하십시오.
 >* 워크플로우 및 워크플로우 인스턴스 관리는 [워크플로우 관리](/help/sites-administering/workflows.md)를 참조하십시오.
 >* 엔드 투 엔드 커뮤니티 아티클의 경우 [Adobe Experience Manager 워크플로우를 사용하여 디지털 자산 수정](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html) 참조
->* 워크플로우[에 대한 AEM 전문가에게 질문하기를 참조하십시오.](https://bit.ly/ATACE218)
+>* 워크플로우](https://bit.ly/ATACE218)에 대한 AEM 전문가에게 질문하기를 참조하십시오.[
 >* 엔드 투 엔드 커뮤니티 아티클의 경우 [사용자 정의 Adobe Experience Manager 6.3 동적 참가자 단계 만들기](https://helpx.adobe.com/experience-manager/using/dynamic-steps-aem63.html)를 참조하십시오.
 >* 정보 위치에 대한 변경 사항은 AEM 6.4](/help/sites-deploying/repository-restructuring.md) 및 [워크플로우 우수 사례 - 위치](/help/sites-developing/workflows-best-practices.md#locations)에서 [저장소 구조화를 참조하십시오.
 
@@ -58,7 +58,7 @@ AEM은 워크플로우 모델을 생성하고 워크플로우 단계를 개발�
 
 워크플로우 모델에는 버전이 지정됩니다. 워크플로우 인스턴스를 실행하면 워크플로우가 시작될 때 사용할 수 있는 대로 워크플로우의 런타임 모델을 사용(및 유지)합니다.
 
-런타임 모델은 워크플로우 모델 편집기&#x200B;**에서 [동기화**&#x200B;가 트리거될 때 생성됩니다.](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model)
+런타임 모델은 워크플로우 모델 편집기](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model)에서 **동기화**&#x200B;가 트리거될 때 생성됩니다.[
 
 발생하는 워크플로우 모델 및/또는 생성된 런타임 모델에 대한 편집 내용은 *after* 특정 인스턴스가 시작된 후에는 해당 인스턴스에 적용되지 않습니다.
 
@@ -139,7 +139,7 @@ AEM은 워크플로우 모델을 생성하고 워크플로우 단계를 개발�
 
    이전 버전의 AEM에서 만든 워크플로우 이러한 구성 요소는 업그레이드 중에 유지하거나 이전 버전에서 워크플로우 패키지로 내보낸 다음 새 버전으로 가져올 수 있습니다.
 
-### 임시 워크플로 {#transient-workflows}
+### 임시 워크플로우 {#transient-workflows}
 
 표준 워크플로우는 실행 중에 런타임(내역) 정보를 저장합니다. 또한 워크플로우 모델을 **일시적**&#x200B;으로 정의하여 이러한 내역이 지속되지 않도록 할 수도 있습니다. 정보를 지속하는 데 사용되는 시간/리소스를 저장/사용하지 않으므로 성능 조정에 사용됩니다.
 
