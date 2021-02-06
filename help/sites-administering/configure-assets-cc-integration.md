@@ -9,7 +9,7 @@ translation-type: tm+mt
 source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
 source-wordcount: '1361'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -177,5 +177,5 @@ AEM Assets-Marketing Cloud 동기화는 자산이 업로드된 곳의 사용자 
 
 >[!MORELIKETHIS]
 * [AEM 및 Creative Cloud 통합 우수 사례](../assets/aem-cc-integration-best-practices.md)
-* [AEM에서 Creative Cloud으로 폴더 공유 우수 사례](../assets/aem-cc-folder-sharing-best-practices.md)
+* [AEM에서 Creative Cloud로의 폴더 공유 우수 사례](../assets/aem-cc-folder-sharing-best-practices.md)
 
