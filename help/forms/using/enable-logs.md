@@ -93,7 +93,7 @@ ht-degree: 6%
    <td>끔<br type="_moz" /> </td> 
   </tr> 
   <tr> 
-   <td>1</td> 
+   <td>3</td> 
    <td>FATAL<br type="_moz" /> </td> 
   </tr> 
   <tr> 
@@ -101,7 +101,7 @@ ht-degree: 6%
    <td>오류<br type="_moz" /> </td> 
   </tr> 
   <tr> 
-   <td>1</td> 
+   <td>3</td> 
    <td>경고<br type="_moz" /> </td> 
   </tr> 
   <tr> 
