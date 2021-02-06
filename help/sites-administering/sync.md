@@ -76,7 +76,7 @@ AEM 6.1부터 사용자 동기화가 활성화되면 사용자 데이터가 팜�
 
 1. 최신 코드가 설치되었는지 확인합니다.
 
-* [AEM 플랫폼 업데이트](https://helpx.adobe.com/kr/experience-manager/kb/aem62-available-hotfixes.html)
+* [AEM 플랫폼 업데이트](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
 * [AEM Communities 업데이트](/help/communities/deploy-communities.md#latest-releases)
 
 ### 1. Apache Sling Distribution Agent - Sync Agent Factory {#apache-sling-distribution-agent-sync-agents-factory}
