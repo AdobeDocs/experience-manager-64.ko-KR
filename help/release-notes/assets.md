@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
 source-wordcount: '1689'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -35,7 +35,7 @@ AEM 6.4는 AEM 6.3에서 실행되는 스마트 태그 외에도 인공 지능�
 * Smart Content Service는 고객의 비즈니스 분류 방식을 학습하고 이를 사용하여 범용 태그 외에도 고객 관련 태그를 사용하여 디지털 자산에 자동으로 태그를 지정합니다. 자산 발견 기능을 크게 향상시키고 출시 시간을 단축합니다.
 * Adobe Sensei은 Smart Content Service를 강화하여 비즈니스 분류법에 대한 이미지 인식 알고리즘을 교육시킬 수 있습니다. 그런 다음 이 컨텐츠 인텔리전스를 사용하여 유사한 자산에 관련 태그를 적용합니다.
 
-AEM Assets 고급 스마트 태그를 사용하려면 AEM 6.4[의 최신 서비스 팩을 설치하십시오.](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html)
+AEM Assets 고급 스마트 태그를 사용하려면 AEM 6.4](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)의 최신 서비스 팩을 설치하십시오.[
 
 ## 고급 번역 검색(Adobe Sensei 제공) {#smart-translation-search-powered-by-adobe-sensei}
 
@@ -139,7 +139,7 @@ AEM 6.4에는 다양한 계층형 스토리지 환경 설정을 지원하고 라
 
 Dynamic Media in 6.4는 새로운 모드를 지원합니다. 마스터 자산이 AEM Assets 웹 UI로 업로드 및 관리되고 다이내믹 표현물과 기타 다이내믹 미디어 기능은 Dynamic Media cloud 배달 서비스에서 백그라운드에서 처리됩니다.
 
-이 모드에서(먼저 [AEM 6.3 기능 팩 14410 및 18912](https://helpx.adobe.com/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html) 릴리스에서 소개된), 사용자는 최신 AEM Assets 웹 UI를 사용하여 종단 간 에셋 관리 및 다이내믹 미디어 기능을 활용할 수 있으며, 배달 URL을 포함하여 이전 버전의 Dynamic Media Classic(Scene7)과 호환되는 전달 서비스를 이용할 수 있습니다. 변경되지 않습니다.
+이 모드에서(먼저 [AEM 6.3 기능 팩 14410 및 18912](https://helpx.adobe.com/kr/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html) 릴리스에서 소개된), 사용자는 최신 AEM Assets 웹 UI를 사용하여 종단 간 에셋 관리 및 다이내믹 미디어 기능을 활용할 수 있으며, 배달 URL을 포함하여 이전 버전의 Dynamic Media Classic(Scene7)과 호환되는 전달 서비스를 이용할 수 있습니다. 변경되지 않습니다.
 
 또한 AEM 6.4는 Adobe Sensei 기반의 새로운 기능, VR 및 3D와 같은 신생 미디어를 위한 향상된 기능, Dynamic Media 뷰어, 인터랙티브한 이미지 및 회전 배너에서의 경험 조각에 대한 지원을 제공합니다.
 
