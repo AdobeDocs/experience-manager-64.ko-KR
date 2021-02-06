@@ -157,7 +157,7 @@ stopwords 파일이 없으면 고급 점수 지정 엔진에서 오류가 발생
 
 ### 포함 점수 규칙 및 하위 규칙 {#included-scoring-rules-and-sub-rules}
 
-베타 릴리스에 포함된 2개의 포럼 함수[에 대한 2개의 고급 채점 규칙은 포럼과 포럼 기능의 주석 구성 요소에 각각 하나씩 있습니다.](functions.md#forum-function)
+베타 릴리스에 포함된 2개의 포럼 함수](functions.md#forum-function)에 대한 2개의 고급 채점 규칙은 포럼과 포럼 기능의 주석 구성 요소에 각각 하나씩 있습니다.[
 
 1. /etc/community/scoring/rules/adv-comments-scoring
 
