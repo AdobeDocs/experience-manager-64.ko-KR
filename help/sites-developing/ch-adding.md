@@ -178,7 +178,7 @@ ContextHub 세그먼트는 `/conf/we-retail/settings/wcm/segments` 노드 아래
 
 개발 시 유용한 세부 디버그 메시지를 기록하도록 Adobe Granite ContextHub OSGi 서비스(PID = `com.adobe.granite.contexthub.impl.ContextHubImpl`)를 구성합니다.
 
-서비스를 구성하려면 [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)을 사용하거나 [리포지토리](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)에서 &lt;a2/>JCR 노드를 사용할 수 있습니다.
+서비스를 구성하려면 [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)을 사용하거나 [리포지토리](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)에서 JCR 노드를 사용할 수 있습니다.
 
 * 웹 콘솔:디버그 메시지를 기록하려면 디버그 속성을 선택합니다.
 * JCR 노드:디버그 메시지를 기록하려면 부울 `com.adobe.granite.contexthub.debug` 속성을 `true`로 설정합니다.
