@@ -30,7 +30,7 @@ AEM Forms 작업 공간은 Flex 기반의 작업 영역을 넘어 혁신적이�
 
 ## 관리자 보기 지원 {#support-for-manager-view}
 
-이 기능을 통해 관리자는 보고서의 작업에 액세스하거나 작업을 수행할 수 있습니다. 관리자는 조직 계층에서 간접 보고서의 작업에 대해 드릴다운할 수도 있습니다. 자세한 내용은 관리자 보기[를 사용하여 조직 계층 구조에서 작업 관리를 참조하십시오.](/help/forms/using/tasks-organizational-hierarchy-using-manager.md)
+이 기능을 통해 관리자는 보고서의 작업에 액세스하거나 작업을 수행할 수 있습니다. 관리자는 조직 계층에서 간접 보고서의 작업에 대해 드릴다운할 수도 있습니다. 자세한 내용은 관리자 보기](/help/forms/using/tasks-organizational-hierarchy-using-manager.md)를 사용하여 조직 계층 구조에서 작업 관리를 참조하십시오.[
 
 ## 사용자 아바타 지원 {#support-for-user-avatars}
 
