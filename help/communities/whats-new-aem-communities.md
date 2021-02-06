@@ -63,7 +63,7 @@ AEM 6.4 Communities는 절제에 대한 몇 가지 개선 사항을 제공하므
 
 ### QnA {#new-answered-unanswered-filters-for-qna}에 대한 새 필터(답변됨/미답변)
 
-AEM 6.4는 일괄 중재 콘솔에 2개의 [새로운 필터](moderation.md#filter-rail)QnA 질문에 대해 답변됨 및 답변되지 않음&lt;a1/>을 추가합니다. 이러한 필터는 필터 레일의 상태 아래에서 사용할 수 있습니다.
+AEM 6.4는 일괄 중재 콘솔에 2개의 [새로운 필터](moderation.md#filter-rail)QnA 질문에 대해 답변됨 및 답변되지 않음을 추가합니다. 이러한 필터는 필터 레일의 상태 아래에서 사용할 수 있습니다.
 
 ![상태](assets/statuses.png)
 
@@ -71,7 +71,7 @@ AEM 6.4는 일괄 중재 콘솔에 2개의 [새로운 필터](moderation.md#filt
 
 ### 책갈피 중재 필터 {#bookmark-moderation-filters}
 
-AEM Communities은 중재 콘솔에서 사전 정의된 중재 필터[에 책갈피를 지정하는 기능을 제공합니다. ](moderation.md#filter-rail) 이러한 저장된 책갈피는 나중에 다시 방문하여 다른 사용자와 공유할 수 있습니다.
+AEM Communities은 중재 콘솔에서 사전 정의된 중재 필터](moderation.md#filter-rail)에 책갈피를 지정하는 기능을 제공합니다. [ 이러한 저장된 책갈피는 나중에 다시 방문하여 다른 사용자와 공유할 수 있습니다.
 
 사용자는 중재 콘솔의 필터 레일에서 원하는 필터를 선택하면 필터링된 UGC를 보고 브라우저에 필터를 책갈피에 추가해야 합니다. 이러한 필터는 URL 문자열 끝에 추가되므로 나중에 공유, 재사용 및 재방문할 수 있습니다.
 
