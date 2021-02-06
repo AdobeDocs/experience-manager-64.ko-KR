@@ -43,7 +43,7 @@ AEM은 PhoneGap과 통합되어 있으므로 AEM 페이지를 사용하여 앱�
 
 >[!NOTE]
 >
->모든 iOS 또는 Android 모바일 장치에서 AEM 모바일 응용 프로그램을 실행하려면 AEM Verify App[을(를) 사용하여 모바일 빠른 시작을 참조하십시오.](/help/mobile/phonegap-mobile-quickstart.md)
+>모든 iOS 또는 Android 모바일 장치에서 AEM 모바일 응용 프로그램을 실행하려면 AEM Verify App](/help/mobile/phonegap-mobile-quickstart.md)을(를) 사용하여 모바일 빠른 시작을 참조하십시오.[
 
 ## {#getting-ahead} 앞에 가져오기
 
