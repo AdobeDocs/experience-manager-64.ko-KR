@@ -229,7 +229,7 @@ Document Security API(Java)를 사용하여 정책을 만듭니다.
    * `InfomodelObjectFactory` 객체의 정적 `createPolicy` 메서드를 호출하여 `Policy` 객체를 만듭니다. 이 메서드는 `Policy` 객체를 반환합니다.
    * `Policy` 객체의 `setName` 메서드를 호출하고 정책 이름을 지정하는 문자열 값을 전달하여 정책의 이름 속성을 설정합니다.
    * `Policy` 개체의 `setDescription` 메서드를 호출하고 정책의 설명을 지정하는 문자열 값을 전달하여 정책의 설명을 설정합니다.
-   * `Policy` 개체의 `setPolicySetName` 메서드를 호출하고 정책 집합 이름을 지정하는 문자열 값을 전달하여 새 정책이 속하는 정책 집합을 설정합니다. (이 매개 변수 값에 `null`내 정책&#x200B;*정책 집합에 정책이 추가되게 하는 &lt;a0/>을 지정할 수 있습니다.)*
+   * `Policy` 개체의 `setPolicySetName` 메서드를 호출하고 정책 집합 이름을 지정하는 문자열 값을 전달하여 새 정책이 속하는 정책 집합을 설정합니다. (이 매개 변수 값에 `null`내 정책&#x200B;*정책 집합에 정책이 추가되게 하는*&#x200B;을 지정할 수 있습니다.)
    * `InfomodelObjectFactory` 개체의 정적 `createValidityPeriod` 메서드를 호출하여 정책의 유효 기간을 만듭니다. 이 메서드는 `ValidityPeriod` 객체를 반환합니다.
    * `ValidityPeriod` 개체의 `setRelativeExpirationDays` 메서드를 호출하고 일 수를 지정하는 정수 값을 전달하여 정책으로 보호된 문서에 액세스할 수 있는 일 수를 설정합니다.
    * `Policy` 개체의 `setValidityPeriod` 메서드를 호출하고 `ValidityPeriod` 개체를 전달하여 정책의 유효 기간을 설정합니다.
