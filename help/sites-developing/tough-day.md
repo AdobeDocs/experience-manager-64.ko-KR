@@ -335,7 +335,7 @@ java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest weight=5 --ad
 >
 >병렬 실행으로 인해 실제 테스트 실행 수는 `count` 매개 변수에 구성된 양이 아닙니다. 실행 중인 스레드 수에 편차가 있을 것으로 예상합니다(`concurrency parameter`에 의해 제어됨).
 
-### 연습 실행 {#dry-run}
+### 시험 실행 {#dry-run}
 
 연습 실행은 지정된 모든 입력(명령줄 매개 변수 또는 구성 파일)을 구문 분석하여 기본값으로 병합한 다음 결과를 출력합니다. 테스트를 실행하지 않습니다.
 
