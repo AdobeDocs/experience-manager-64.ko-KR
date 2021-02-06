@@ -98,7 +98,7 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 >[!CAUTION]
 >
->resourceToACLPath()가 반환하는 경로는 *UGC[ 자체에 액세스하는 데 적합하지 않습니다.](#utility-method-to-access-acls)
+>resourceToACLPath()가 반환하는 경로는 *UGC](#utility-method-to-access-acls) 자체에 액세스하는 데 적합하지 않습니다.[
 
 ## UGC 관련 저장소 위치 {#ugc-related-storage-locations}
 
