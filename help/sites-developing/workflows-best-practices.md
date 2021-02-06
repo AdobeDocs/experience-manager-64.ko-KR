@@ -30,7 +30,7 @@ ht-degree: 1%
 
 워크플로우 프로세스를 구성할 때(사용자 정의 및/또는 즉시 사용) 주의해야 할 몇 가지 사항이 있습니다.
 
-### 임시 워크플로 {#transient-workflows}
+### 임시 워크플로우 {#transient-workflows}
 
 높은 섭취 로드를 최적화하려면 [워크플로우를 일시적](/help/sites-developing/workflows.md#transient-workflows)으로 정의할 수 있습니다.
 
