@@ -51,7 +51,7 @@ ht-degree: 0%
 >
 >[양식 템플릿, 양식 데이터 모델 또는 XML 또는 JSON 데이터 불만 사항이 있는 스키마(XML 스키마, JSON 스키마, 양식 템플릿 또는 양식 데이터 모델)에 ](/help/forms/using/prepopulate-adaptive-form-fields.md), &lt;afBoundData> 및 &lt;/afUnbinedData> 태그를 포함하지 않는 스키마(XML 스키마, JSON 스키마, 양식 템플릿 또는 양식 데이터 모델)를 미리 채우기 한 경우 경계 없는 필드(경계 없는 필드는 적응형 양식의 [bindref](/help/forms/using/prepopulate-adaptive-form-fields.md) 속성이 없는 적응형 양식 필드)가 손실됩니다.
 
-적응형 양식에 대한 사용자 정의 제출 동작을 작성하여 사용 사례를 준수할 수 있습니다. 자세한 내용은 적응형 양식[에 대한 사용자 정의 제출 작업 쓰기를 참조하십시오.](/help/forms/using/custom-submit-action-form.md)
+적응형 양식에 대한 사용자 정의 제출 동작을 작성하여 사용 사례를 준수할 수 있습니다. 자세한 내용은 적응형 양식](/help/forms/using/custom-submit-action-form.md)에 대한 사용자 정의 제출 작업 쓰기를 참조하십시오.[
 
 ## REST 끝점 {#submit-to-rest-endpoint}에 제출
 
@@ -130,7 +130,7 @@ Forms 포털 및 제출 작업에 대한 자세한 내용은 [초안 및 제출 
 
 **[!UICONTROL AEM Workflow 호출]** 제출 작업은 AEM Workflow에 적응형 양식을 연결합니다. 양식이 제출되면 연관된 워크플로우는 처리 노드에서 자동으로 시작됩니다. 또한 데이터 파일, 첨부 파일 및 기록 문서(해당하는 경우)를 워크플로우의 페이로드 위치에 배치합니다.
 
-**[!UICONTROL AEM Workflow]** 제출 작업을 호출하기 전에 [AEM DS 설정](/help/forms/using/configuring-the-processing-server-url-.md)을 구성합니다. AEM 워크플로우 만들기에 대한 자세한 내용은 OSGi[의 양식 중심 워크플로우를 참조하십시오.](/help/forms/using/aem-forms-workflow.md)
+**[!UICONTROL AEM Workflow]** 제출 작업을 호출하기 전에 [AEM DS 설정](/help/forms/using/configuring-the-processing-server-url-.md)을 구성합니다. AEM 워크플로우 만들기에 대한 자세한 내용은 OSGi](/help/forms/using/aem-forms-workflow.md)의 양식 중심 워크플로우를 참조하십시오.[
 
 ## 응용 양식 {#server-side-revalidation-in-adaptive-form}의 서버측 재유효성 검사
 
@@ -168,4 +168,4 @@ Forms 포털 및 제출 작업에 대한 자세한 내용은 [초안 및 제출 
 
 AEM 보안 및 강화 지침의 일부로, 404.jsp 및 500.jsp와 같은 사용자 정의 오류 페이지를 구성합니다. 이러한 핸들러는 양식 제출 시 404 또는 500 오류가 나타날 때 호출됩니다. 이러한 오류 코드가 게시 노드에서 트리거될 때도 핸들러가 호출됩니다.
 
-자세한 내용은 오류 처리기[에 표시된 페이지 사용자 지정을 참조하십시오.](/help/sites-developing/customizing-errorhandler-pages.md)
+자세한 내용은 오류 처리기](/help/sites-developing/customizing-errorhandler-pages.md)에 표시된 페이지 사용자 지정을 참조하십시오.[
