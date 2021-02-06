@@ -134,7 +134,7 @@ MongoMK 또는 새로운 TarMK 세그먼트 형식을 사용하는 경우 개정
 
 ### {#dynamic-media-cloud-configuration}을(를) 업그레이드한 후 Dynamic Media 클라우드 구성 다시 만들기
 
-이전 버전에서 AEM 6.4로 업그레이드한 후, 이전 설정에서 Dynamic Media Cloud Configuration은 AEM 6.4 TouchUI에서 액세스할 수 없게 될 수 있습니다. 이 문제를 해결하려면 CRXDE Lite을 사용하여 이전 설정을 제거한 다음 새 Dynamic Media 클라우드 구성을 만듭니다. AEM 6.4[의 Dynamic Media 리포지토리 재구조화를 참조하십시오.](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)
+이전 버전에서 AEM 6.4로 업그레이드한 후, 이전 설정에서 Dynamic Media Cloud Configuration은 AEM 6.4 TouchUI에서 액세스할 수 없게 될 수 있습니다. 이 문제를 해결하려면 CRXDE Lite을 사용하여 이전 설정을 제거한 다음 새 Dynamic Media 클라우드 구성을 만듭니다. AEM 6.4](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)의 Dynamic Media 리포지토리 재구조화를 참조하십시오.[
 
 ### 저장소 마이그레이션 실패 {#repository-migration-failing-}
 
