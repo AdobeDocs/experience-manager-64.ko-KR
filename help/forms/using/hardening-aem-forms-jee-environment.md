@@ -323,7 +323,7 @@ WSDL(Web Service Definition Language) 생성은 개발자가 클라이언트 애
   </tr> 
   <tr> 
    <td><p>디렉토리 검색</p> </td> 
-   <td><p>다른 사람이 존재하지 않는 페이지를 요청하거나 디렉터의 이름을 요청할 때(요청 문자열은 슬래시(/)로 끝남) 응용 프로그램 서버는 해당 디렉토리의 내용을 반환하지 않아야 합니다. 이를 방지하기 위해 응용 프로그램 서버에서 디렉토리 검색을 비활성화할 수 있습니다. 관리 콘솔 응용 프로그램 및 서버에서 실행 중인 다른 응용 프로그램에 대해 이 작업을 수행해야 합니다.</p> <p>JBoss의 경우 다음 예제와 같이 web.xml 파일에서 <code>DefaultServlet</code> 속성의 목록 초기화 매개 변수의 값을 <code>false</code>으로 설정합니다.</p> <p>&lt;servlet&gt;</p> <p>&lt;servlet-name&gt;default&lt;/servlet-name&gt;</p> <p>&lt;servlet-class&gt;</p> <p>org.apache.catalina.servlets.DefaultServlet</p> <p>&lt;/servlet-class&gt;</p> <p>&lt;init-param&gt;</p> <p>&lt;param-name&gt;목록&lt;/param-name&gt;</p> <p>&lt;param-value&gt;false&lt;/param-value&gt;</p> <p>&lt;/init-param&gt;</p> <p>&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;</p> <p>&lt;/servlet&gt;</p> <p>WebSphere의 경우 ibm-web-ext.xmi 파일의 <code>directoryBrowsingEnabled</code> 속성을 <code>false</code>으로 설정합니다.</p> <p>WebLogic의 경우 다음 예제와 같이 weblogic.xml 파일의 인덱스 디렉토리 속성을 <code>false</code>으로 설정합니다.</p> <p>&lt;container-descriptor&gt;</p> <p>&lt;index-directory-enabled&gt;false</p> <p>&lt;/index-directory-enabled&gt;</p> <p>&lt;/container-descriptor&gt;</p> </td> 
+   <td><p>다른 사람이 존재하지 않는 페이지를 요청하거나 디렉터의 이름을 요청할 때(요청 문자열은 슬래시(/)로 끝남) 응용 프로그램 서버는 해당 디렉토리의 내용을 반환하지 않아야 합니다. 이를 방지하기 위해 응용 프로그램 서버에서 디렉토리 검색을 비활성화할 수 있습니다. 관리 콘솔 응용 프로그램 및 서버에서 실행 중인 다른 응용 프로그램에 대해 이 작업을 수행해야 합니다.</p> <p>JBoss의 경우 다음 예제와 같이 web.xml 파일에서 <code>DefaultServlet</code> 속성의 목록 초기화 매개 변수의 값을 <code>false</code>으로 설정합니다.</p> <p>&lt;servlet&gt;</p> <p>&lt;servlet-name&gt;default&lt;/servlet-name&gt;</p> <p>&lt;servlet-class&gt;</p> <p>org.apache.catalina.servlets.DefaultServlet</p> <p>&lt;/servlet-class&gt;</p> <p>&lt;init-param&gt;</p> <p>&lt;param-name&gt;목록&lt;/param-name&gt;</p> <p>&lt;param-value&gt;false&lt;/param-value&gt;</p> <p>&lt;/init-param&gt;</p> <p>&lt;load-on-startup&gt;3&lt;/load-on-startup&gt;</p> <p>&lt;/servlet&gt;</p> <p>WebSphere의 경우 ibm-web-ext.xmi 파일의 <code>directoryBrowsingEnabled</code> 속성을 <code>false</code>으로 설정합니다.</p> <p>WebLogic의 경우 다음 예제와 같이 weblogic.xml 파일의 인덱스 디렉토리 속성을 <code>false</code>으로 설정합니다.</p> <p>&lt;container-descriptor&gt;</p> <p>&lt;index-directory-enabled&gt;false</p> <p>&lt;/index-directory-enabled&gt;</p> <p>&lt;/container-descriptor&gt;</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -336,7 +336,7 @@ oracle에서 사용하는 데이터베이스 계정에는 CONNECT, RESOURCE 및 
 
 #### JBoss {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}에 대해 Windows에서 SQL Server에 대한 통합 보안 구성
 
-1. 다음 예제와 같이 ]JBOSS_HOME[\\standalone\configuration\lc_{datasource.xml}을 수정하여 연결 URL에 &lt;a2/>을(를) 추가합니다.`integratedSecurity=true`
+1. 다음 예제와 같이 `integratedSecurity=true`JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml}을 수정하여 연결 URL에 [을(를) 추가합니다.
 
    ```as3
     jdbc:sqlserver://<serverhost>:<port>;databaseName=<dbname>;integratedSecurity=true
