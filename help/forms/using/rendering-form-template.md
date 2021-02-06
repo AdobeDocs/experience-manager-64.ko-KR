@@ -23,7 +23,7 @@ ht-degree: 0%
 
 HTML5 양식에는 양식 템플릿의 모바일 렌더링을 활성화하기 위해 REST 끝점으로 표시되는 **Profiles**&#x200B;의 개념이 있습니다. 이러한 프로필에는 **프로필 렌더러**&#x200B;가 연결되어 있습니다. Forms OSGi 서비스를 호출하여 양식의 HTML 표현을 생성하는 JSP 페이지입니다. 프로필 노드의 JCR 경로는 렌더링 끝점의 URL을 결정합니다. &#39;기본&#39; 프로파일을 가리키는 양식의 기본 렌더링 끝점은 다음과 같습니다.
 
-https://&lt;*호스트*:&lt;*포트*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*xdp*&amp;template=&lt;*xdp*>&lt;a6/>name 형식이 포함된 폴더의 경로
+https://&lt;*호스트*:&lt;*포트*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*xdp*&amp;template=&lt;*xdp*>name 형식이 포함된 폴더의 경로
 
 예, `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 
