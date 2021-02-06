@@ -384,7 +384,7 @@ ht-degree: 4%
 
 ![siteactions-2](assets/siteactions-2.png)
 
-마우스로 사이트를 마우스로 가리키거나 사이트 카드를 만지는 경우, [작성 모드](#authoring-site-content),](#modifying-site-properties),[사이트](#publishing-the-site) 게시, [사이트](#exporting-the-site) 내보내기 및 [사이트](#deleting-the-site)삭제에 대한 사이트 속성을 &lt;a0/>편집할 수 있도록 해주는 아이콘이 표시됩니다.[
+마우스로 사이트를 마우스로 가리키거나 사이트 카드를 만지는 경우, [작성 모드](#authoring-site-content),](#modifying-site-properties),[사이트](#publishing-the-site) 게시, [사이트](#exporting-the-site) 내보내기 및 [사이트](#deleting-the-site)삭제에 대한 사이트 속성을 [편집할 수 있도록 해주는 아이콘이 표시됩니다.
 
 ## 사이트 컨텐츠 작성 {#authoring-site-content}
 
