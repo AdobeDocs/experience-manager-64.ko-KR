@@ -213,7 +213,7 @@ AEM 6.1에서는 표준 전체 텍스트 조건자가 검색 양식의 일부였
 
 **동작:** 조정할 사항이 없습니다.
 
-### 분석 설명 {#analytics-predicate}
+### 분석 조건자 {#analytics-predicate}
 
 <table> 
  <tbody>
@@ -234,7 +234,7 @@ AEM 6.1에서는 표준 전체 텍스트 조건자가 검색 양식의 일부였
 
 **작업:** 속성을  `resourceType` 조정합니다(위에 표시된 6.2 위치에 &quot;**/coral**&quot;을 추가합니다).
 
-### 범위 설명 {#range-predicate}
+### 범위 조건자 {#range-predicate}
 
 <table> 
  <tbody>
@@ -259,7 +259,7 @@ AEM 6.1에서는 표준 전체 텍스트 조건자가 검색 양식의 일부였
 >
 >참고:6.1과 반대로 범위 술어는 더 이상 검색 막대에서 태그를 렌더링하지 않습니다.
 
-### 옵션 속성 설명 {#options-property-predicate}
+### 옵션 속성 조건자 {#options-property-predicate}
 
 <table> 
  <tbody>
@@ -280,7 +280,7 @@ AEM 6.1에서는 표준 전체 텍스트 조건자가 검색 양식의 일부였
 
 **작업:** 속성을  `resourceType` 조정합니다(위에 표시된 6.2 위치에 &quot;**/coral**&quot;을 추가합니다).
 
-### 슬라이더 범위 설명 {#slider-range-predicate}
+### 슬라이더 범위 조건자 {#slider-range-predicate}
 
 <table> 
  <tbody>
@@ -301,7 +301,7 @@ AEM 6.1에서는 표준 전체 텍스트 조건자가 검색 양식의 일부였
 
 **작업:** 속성을  `resourceType` 조정합니다(위에 표시된 6.2 위치에 &quot;**/coral**&quot;을 추가합니다).
 
-### 구성 요소 설명 {#components-predicate}
+### 구성 요소 조건자 {#components-predicate}
 
 <table> 
  <tbody>
@@ -322,7 +322,7 @@ AEM 6.1에서는 표준 전체 텍스트 조건자가 검색 양식의 일부였
 
 **작업:** 속성을  `resourceType` 조정합니다(위에 표시된 6.2 위치에 &quot;**/coral**&quot;을 추가합니다).
 
-### 작성자 설명 {#author-predicate}
+### 작성자 조건자 {#author-predicate}
 
 <table> 
  <tbody>
@@ -343,7 +343,7 @@ AEM 6.1에서는 표준 전체 텍스트 조건자가 검색 양식의 일부였
 
 **작업:** 속성을  `resourceType` 조정합니다(위에 표시된 6.2 위치에 &quot;**/coral**&quot;을 추가합니다).
 
-### 템플릿 설명 {#templates-predicate}
+### 템플릿 조건자 {#templates-predicate}
 
 <table> 
  <tbody>
