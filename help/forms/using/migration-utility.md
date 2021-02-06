@@ -1,6 +1,6 @@
 ---
-title: AEM Forms 에셋 및 문서 마이그레이션
-seo-title: AEM Forms 에셋 및 문서 마이그레이션
+title: AEM Forms 자산 및 문서 마이그레이션
+seo-title: AEM Forms 자산 및 문서 마이그레이션
 description: 마이그레이션 유틸리티를 사용하면 AEM 6.3 Forms 또는 이전 버전에서 AEM 6.4 Forms으로 AEM Forms 자산 및 문서를 마이그레이션할 수 있습니다.
 seo-description: 마이그레이션 유틸리티를 사용하면 AEM 6.3 Forms 또는 이전 버전에서 AEM 6.4 Forms으로 AEM Forms 자산 및 문서를 마이그레이션할 수 있습니다.
 uuid: 593fc421-b70e-4dbe-87bc-ea49ff025368
@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1872'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
