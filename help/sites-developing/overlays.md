@@ -63,7 +63,7 @@ AEM 6.0 이후 오버레이의 구현 및 사용 방법이 변경되었습니다
 >
 >다른 영역에 대한 오버레이(클래식 UI 포함)는 해당 노드 및 전체 하위 구조를 복사한 다음 필요한 변경 작업을 수행합니다.
 
-오버레이는 콘솔[ 또는 ](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console)콘솔 구성[의 자산 브라우저에 선택 카테고리 만들기(페이지 작성 시 사용)와 같이 많은 변경 사항에 대해 권장되는 방법입니다. ](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) 필수 항목:
+오버레이는 콘솔](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) 또는 [콘솔 구성](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser)의 자산 브라우저에 선택 카테고리 만들기(페이지 작성 시 사용)와 같이 많은 변경 사항에 대해 권장되는 방법입니다. [ 필수 항목:
 
 * ***은(는) `/libs` 분기&#x200B;**에서 변경할 수 없습니다.
 이 분기는 다음을 수행할 때마다 변경될 수 있으므로 변경한 내용이 손실될 수 있습니다.*
