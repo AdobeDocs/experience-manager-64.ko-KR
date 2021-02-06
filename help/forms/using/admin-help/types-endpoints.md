@@ -38,7 +38,7 @@ ht-degree: 0%
 
 **SOAP:** AEM 양식 프로그래밍 API를 사용하여 개발된 클라이언트 응용 프로그램에서 SOAP 모드를 사용하여 서비스를 호출할 수 있습니다. 활성화된 각 서비스에 대해 SOAP 끝점이 자동으로 만들어집니다.
 
-**참고**: *Adobe Acrobat 또는 Adobe Reader에서 문서를 보는 동안 SOAP 끝점을 사용하면 문서 보안 문서에서 보안을 제거할 수 있습니다. LCRM 문서에서 SOAP 끝점을 비활성화하는 방법에 대한 자세한 내용은 문서 보안 문서에 대한 SOAP 끝점 비활성화[를 참조하십시오.](/help/forms/using/admin-help/configuring-client-server-options.md#disable-soap-endpoints-for-document-security-documents)*
+**참고**: *Adobe Acrobat 또는 Adobe Reader에서 문서를 보는 동안 SOAP 끝점을 사용하면 문서 보안 문서에서 보안을 제거할 수 있습니다. LCRM 문서에서 SOAP 끝점을 비활성화하는 방법에 대한 자세한 내용은 문서 보안 문서에 대한 SOAP 끝점 비활성화](/help/forms/using/admin-help/configuring-client-server-options.md#disable-soap-endpoints-for-document-security-documents)*&#x200B;를 참조하십시오.[
 
 **EJB:** AEM 양식 프로그래밍 API를 사용하여 개발한 클라이언트 응용 프로그램이 EJB(Enterprise JavaBeans) 모드를 사용하여 서비스를 호출할 수 있도록 합니다. 활성화된 각 서비스에 대해 EJB 끝점이 자동으로 생성됩니다.
 
