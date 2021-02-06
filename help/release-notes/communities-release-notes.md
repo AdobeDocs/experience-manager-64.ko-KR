@@ -20,7 +20,7 @@ ht-degree: 12%
 
 # AEM Communities 릴리스 노트 {#aem-communities-release-notes}
 
-이 섹션에서는 6.3 릴리스 이후 AEM Communities의 개선 사항에 대한 정보를 제공합니다. 새로운 기능에 대한 자세한 내용은 AEM 6.4 커뮤니티[의 새로운 기능을 참조하십시오.](/help/communities/whats-new-aem-communities.md)
+이 섹션에서는 6.3 릴리스 이후 AEM Communities의 개선 사항에 대한 정보를 제공합니다. 새로운 기능에 대한 자세한 내용은 AEM 6.4 커뮤니티](/help/communities/whats-new-aem-communities.md)의 새로운 기능을 참조하십시오.[
 
 최신 릴리스를 얻으려면 설명서의 [커뮤니티 배포](/help/communities/deploy-communities.md#latest-releases) 섹션을 참조하십시오.
 
