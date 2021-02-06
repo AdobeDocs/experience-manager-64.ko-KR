@@ -101,7 +101,7 @@ Forms 포털을 통해 로컬 AEM 저장소, 원격 AEM 저장소 또는 데이�
 
 Forms 포털은 로컬 및 원격 AEM Forms 게시 인스턴스의 crx 리포지토리에 데이터를 저장하는 API(기본 서비스)를 제공합니다. 기본 기능을 대체할 사용자 지정 구현으로 [초안 및 제출](/help/forms/using/configuring-draft-submission-storage.md) 아티클에 대한 저장소 서비스 구성에 설명된 기본 구현을 바꿀 수 있습니다. 사용자 지정 구현에서 컨텐츠를 안전한 위치에 저장하기 위해 필요한 방법에 대한 자세한 내용은 [초안 및 제출 데이터 서비스 사용자 지정](/help/forms/using/custom-draft-submission-data-services.md) 및 [초안 및 제출 구성 요소에 대한 사용자 지정 저장소를 참조하십시오.](/help/forms/using/adding-custom-storage-provider-forms.md)
 
-AEM Forms 설명서는 초안 및 제출 구성 요소를 데이터베이스[과(와) 통합하는 샘플을 제공합니다. ](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/integrate-draft-submission-database.html) 샘플 구현을 사용하여 사용자 지정 구현을 개발할 수 있습니다.
+AEM Forms 설명서는 초안 및 제출 구성 요소를 데이터베이스](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/integrate-draft-submission-database.html)과(와) 통합하는 샘플을 제공합니다. [ 샘플 구현을 사용하여 사용자 지정 구현을 개발할 수 있습니다.
 
 ## 관련 문서
 
