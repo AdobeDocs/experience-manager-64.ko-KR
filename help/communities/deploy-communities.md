@@ -97,7 +97,7 @@ AEM 6.4 Communities GA에는 커뮤니티 패키지가 포함됩니다. AEM 6.4 
 
 AEM 6.3부터는 AEM 누적 수정 팩 및 서비스 팩의 일부로 커뮤니티 업데이트가 제공됩니다.
 
-AEM 6.4의 최신 업데이트를 확인하려면 [Adobe Experience Manager 6.4 누적 수정 팩 및 서비스 팩](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html)을 확인하십시오.
+AEM 6.4의 최신 업데이트를 확인하려면 [Adobe Experience Manager 6.4 누적 수정 팩 및 서비스 팩](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)을 확인하십시오.
 
 ### 버전 내역 {#version-history}
 
