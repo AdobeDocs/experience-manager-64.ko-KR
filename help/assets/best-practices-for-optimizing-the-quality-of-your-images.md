@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 73e67103e6bd9784bcc671ed04dcd508fa5597a0
+source-git-commit: 42d5a1875d78fdec1be0bb22d8ec8de2e56256ec
 workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 1%
@@ -79,7 +79,7 @@ AEM을 사용하면 섭취, 전달 시 또는 두 가지 모두를 통해 이미
 
 단색 매개 변수를 0으로 설정합니다.
 
-### JPEF 압축(&amp;qlt=) {#best-practices-for-jpef-compression-qlt} 우수 사례
+### JPEG 압축(&amp;qlt=) {#best-practices-for-compression-qlt} 우수 사례
 
 * 이 매개 변수는 JPG 인코딩 품질을 제어합니다. 값이 높을수록 이미지 품질이 높지만 파일 크기가 커집니다.또는 값이 낮으면 품질이 낮지만 파일 크기가 작다는 의미입니다. 이 매개 변수의 범위는 0-100입니다.
 * 품질에 맞게 최적화하려면 매개 변수 값을 100으로 설정하지 마십시오. 90 또는 95와 100 설정의 차이는 거의 알 수 없지만 100은 이미지 파일의 크기를 불필요하게 증가시킵니다. 따라서 품질에 맞게 최적화하되 이미지 파일이 너무 커지지 않도록 하려면 `qlt=<value>`을 90 또는 95로 설정합니다.
