@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager Assets] 소개'
 description: 디지털 자산 관리란 무엇이고, 사용 사례 및  [!DNL Adobe Experience Manager Asset] 상품.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1958018f055b288db02baca55f5c2f503c377806
+source-git-commit: 02bf967a829be22ebec90d03ef1397cbe93e3d92
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '851'
 ht-degree: 35%
 
 ---
@@ -93,3 +93,8 @@ Assets managed within [!DNL Experience Manager] DAM can then be accessed via the
 ## [!DNL Experience Manager Assets] 및 [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
 차이점에 대한 자세한 내용은 [자산 및 미디어 라이브러리](medialibrary.md)를 참조하십시오.
+
+>[!MORELIKETHIS]
+>
+>* [최신 DAM으로 Experience Manager 자산 관리](https://www.youtube.com/embed/PBwQqZgC-yo)
+
