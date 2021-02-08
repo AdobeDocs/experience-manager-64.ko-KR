@@ -1,57 +1,51 @@
 ---
-title: AEM Assets 정보
-description: 디지털 에셋 관리 소개, 활용 사례 및 Adobe AEM Asset 제공 서비스에 대해 알아보십시오.
+title: ' [!DNL Adobe Experience Manager Assets] 소개'
+description: 디지털 자산 관리란 무엇이고, 사용 사례 및  [!DNL Adobe Experience Manager Asset] 상품.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 077cc39c5ed47371a4e3fae1e991209c7bfe6b80
+source-git-commit: 1958018f055b288db02baca55f5c2f503c377806
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 53%
+source-wordcount: '840'
+ht-degree: 35%
 
 ---
 
 
-# AEM Assets {#about-assets} 정보
+# [!DNL Adobe Experience Manager Assets]을(를) DAM 솔루션 {#about-assets} 소개
 
-자산은 AEM 플랫폼과 완전히 통합된 DAM(Digital Asset Management) 툴로, 기업은 디지털 자산을 공유하고 배포할 수 있습니다. 조직의 사용자는 이미지, 비디오, 문서, 오디오 클립 및 리치 미디어(예: 웹용 Flash 파일, 인쇄물 및 디지털 배포용 미디어)를 관리, 저장 및 액세스할 수 있습니다.
+[!DNL Assets] 은 플랫폼의 필수 구성 요소인 DAM(Digital Asset Management) 툴로 기업이 디지털 에셋을  [!DNL Experience Manager] 관리하고 배포할 수 있습니다. 조직 전반의 사용자는 웹, 인쇄 및 디지털 배포를 위해 이미지, 비디오, 문서, 오디오 클립, 3D 파일 및 리치 미디어와 같은 다양한 유형의 디지털 에셋을 관리, 저장 및 액세스할 수 있습니다.
 
-## DAM(Digital Asset Management)이란 무엇입니까?{#what-is-digital-asset-management}
+## 디지털 자산 관리란 무엇입니까? {#what-is-digital-asset-management}
 
-Assets는 조직의 핵심 디지털 자산의 엔터프라이즈 범위 공유 및 분배 기능을 제공합니다. 조직 전반의 사용자는 웹 인터페이스(또는 CIFS 또는 WebDAV 폴더)를 통해 이미지, 그래픽, 오디오, 비디오 및 문서와 같은 디지털 자산을 저장, 관리 및 액세스할 수 있습니다.
+[!DNL Assets] 조직의 주요 디지털 자산을 전사적 공유 및 배포할 수 있습니다. 조직 전반의 사용자는 웹 인터페이스(또는 CIFS 또는 WebDAV 폴더)를 통해 이미지, 그래픽, 오디오, 비디오 및 문서와 같은 디지털 자산을 저장, 관리 및 액세스할 수 있습니다.
 
-AEM에 완전히 통합된 AEM Assets를 사용하면 다음을 수행할 수 있습니다.
+[!DNL Assets] 의 기능을  [!DNL Experience Manager] 사용하면 다음을 수행할 수 있습니다.
 
 * 이미지, 문서, 오디오 파일 및 비디오 파일을 다양한 파일 형식으로 추가하고 공유합니다.
-* 자산을 태그, Lightbox 또는 별표(즐겨찾기)별로 그룹화하여 관리합니다. 자산에 주석을 추가합니다.
+* 자산을 태그, 라이트박스 또는 별표(즐겨찾기)별로 그룹화하여 관리합니다. 자산에 주석을 추가합니다.
 * 파일 이름, 문서의 전체 텍스트, 날짜, 문서 유형 및 태그를 검색하여 자산을 찾습니다.
 * 자산에 관한 메타데이터 정보를 추가하거나 편집합니다. 메타데이터는 해당 자산에 따라 자동으로 버전이 매겨집니다. 자산 메타데이터를 가져오거나 내보낼 수 있습니다.
 * 이미지 필터 추가 및 크기 조절과 같은 이미지 편집 기능을 수행합니다. WebDAV 또는 CIFS 폴더를 사용하여 여러 디지털 자산을 동시에 가져오고 내보냅니다.
 * 워크플로우 및 알림을 사용하여 자산 세트를 공동 처리 및 다운로드하고 자산에 대한 액세스 권한을 관리할 수 있도록 합니다.
 
-### AEM Assets은 AEM WCM 기능 {#aem-assets-fully-integrated-in-cq-wcm}과(와) 완전히 통합되었습니다.
+### [!DNL Experience Manager Assets] 는  [!DNL Experience Manager Sites] {#aem-assets-fully-integrated-in-cq-wcm}
 
-AEM Assets은 CQ WCM과 완전히 통합되어 있으며 DAM 아이콘을 사용하여 기능을 사용할 수 있습니다.
+[!DNL Assets] 완벽하게 통합되어 모든  [!DNL Sites] 사용 사례와 매끄럽게 연동됩니다. 예를 들어 웹 페이지를 작성할 때 [!DNL Sites] 작성자는 컨텐츠 파인더를 통해 디지털 자산을 찾고 사용할 수 있습니다. [!DNL Assets]의 사용자 인터페이스는 [!DNL Sites]의 사용자 인터페이스와 동일합니다. 자세한 내용은 [사이트 개요](/help/sites-authoring/qg-page-authoring.md)를 참조하십시오.
 
-<!-- TBD: Update image for branding -->
+<!-- TBD: Update image for branding 
 
-![screen_shot_2012-04-17at15946](assets/screen_shot_2012-04-17at15946pm.png) ![pmscreen_shot_2012-04-17at20100pm](assets/screen_shot_2012-04-17at20100pm.png)
+![screen_shot_2012-04-17at15946pm](assets/screen_shot_2012-04-17at15946pm.png) ![screen_shot_2012-04-17at20100pm](assets/screen_shot_2012-04-17at20100pm.png)
 
-CQ DAM 내에서 관리되는 자산은 WCM의 컨텐츠 파인더를 통해 액세스할 수 있습니다.
+Assets managed within [!DNL Experience Manager] DAM can then be accessed via the content finder of WCM:
 
-<!-- TBD: Update image for branding -->
-
-![screen_shot_2012-04-17at20214pm](assets/screen_shot_2012-04-17at20214pm.png)
-
->[!NOTE]
->
->사용자 인터페이스의 기본 탐색은 다른 AEM과 동일합니다. 자세한 내용은 [GUI 콘솔 개요](/help/sites-authoring/qg-page-authoring.md)를 참조하십시오.
+![screen_shot_2012-04-17at20214pm](assets/screen_shot_2012-04-17at20214pm.png) -->
 
 ### 디지털 자산 관리와 이미지 구성 요소 {#digital-asset-management-versus-image-component} 비교
 
-이미지를 AEM Assets에 넣을지 이미지 구성 요소를 사용할지를 결정할 때 이미지 라이프사이클을 고려하십시오.
+이미지를 DAM 저장소에 넣을지 이미지 구성 요소를 사용할지를 결정할 때 이미지 라이프사이클을 고려하십시오.
 
 * 이미지의 라이프사이클이 페이지와 동일한 경우 이미지 구성 요소를 사용합니다.
-* 이미지에 별도의 라이프사이클이 있는 경우(예: 이미지를 두 번 사용하거나 또는 WCM 외부에서 사용하는 경우) AEM Assets를 사용하십시오.
+* 이미지에 별도의 라이프 사이클이 있는 경우(예: 이미지를 두 번 사용하거나 WCM 외부에서 사용하는 경우) [!DNL Assets]을 사용합니다.
 
 ## 디지털 자산이란 무엇입니까? {#what-are-digital-assets}
 
@@ -61,41 +55,41 @@ CQ DAM 내에서 관리되는 자산은 WCM의 컨텐츠 파인더를 통해 액
 
 >[!CAUTION]
 >
->대량의 자산(특히 이미지)을 업로드 및/또는 편집하는 것은 CQ 인스턴스의 성능에 영향을 줄 수 있습니다.
+>대량의 자산(특히 이미지)을 업로드 및/또는 편집하는 것은 [!DNL Experience Manager] 배포의 성능에 영향을 줄 수 있습니다.
 
-### AEM Assets 용어 {#aem-assets-terminology}
+### [!DNL Experience Manager Assets] 용어  {#aem-assets-terminology}
 
-AEM에서 디지털 자산으로 작업할 경우 다음 용어를 이해해야 합니다.
+[!DNL Experience Manager]에서 디지털 자산으로 작업하는 경우 다음 용어를 이해해야 합니다.
 
-* **컬렉션:** 실제 위치(폴더), 공통 속성(저장된 검색 폴더) 또는 사용자 선택(라이트박스 폴더)을 기반으로 하는 자산 모음입니다.
+* **컬렉션**:실제 위치(폴더), 공통 속성(저장된 검색 폴더) 또는 사용자 선택(라이트박스 폴더)에 따라 자산 컬렉션입니다.
 
-* **메타데이터:** 자산에 메타데이터가 있습니다.작성자, 만료 날짜, DRM 정보(Digital Rights Management) 등과 같은 일반적인 정보를 제공합니다. 메타데이터에 대한 액세스를 제어할 수 있습니다. AEM Assets는 특히 다음과 같은 다양한 공통 메타데이터 스키마를 지원합니다.
+* **메타데이터** [!DNL Assets] 메타데이터 사용;작성자, 만료 날짜, DRM 정보(Digital Rights Management) 등과 같은 일반적인 정보를 제공합니다. 메타데이터에 대한 액세스를 제어할 수 있습니다. [!DNL Assets] 에서는 다음과 같은 다양한 공통 메타데이터 스키마를 기본적으로 지원합니다.
 
-   * **더블린 코어**:작성자, 설명, 날짜, 제목 등을 포함합니다.
-   * **IPTC**:이벤트, 모델, 위치 등을 포함합니다.
-   * **WCM**:페이지 속성, 시간 및 해제 시간 등을 포함합니다.
+   * 더블린 코어: 작성자, 설명, 날짜, 제목 등을 포함합니다.
+   * IPTC: 이벤트, 모델, 위치 등을 포함합니다.
+   * WCM:페이지 속성 포함, [!UICONTROL On Time] 및 [!UICONTROL Off Time] 등이 있습니다.
 
-* **태그 지정:** 자산에 태그를 지정하고 분류할 수 있습니다. 태그 사용 및 태그 관리를 참조하십시오.
+* **태그 지정**: [!DNL Assets] 태그를 지정하고 분류할 수 있습니다. [자산 구성](/help/assets/organize-assets.md)을 참조하십시오.
 
-* **표현물:** 표현물은 자산의 이진 표현입니다. 자산에는 항상 업로드한 파일의 표현인 기본 표현이 있습니다. 자산에는 사용자 지정된 작업 흐름 단계에 의해서나 자산이 업로드될 때 만들어지는 추가적인 표현들이 있습니다. 표현물들은 크기가 다르거나 해상도가 다르거나, 워터마크가 추가로 있거나 기타 특성이 변경되었을 수 있습니다.
+* **표현물**:표현물은 자산의 이진 표현입니다. [!DNL Assets] 항상 업로드된 파일의 표현인 기본 표현을 가집니다. 자산에는 사용자 지정된 작업 흐름 단계에 의해서나 자산이 업로드될 때 만들어지는 추가적인 표현들이 있습니다. 표현물들은 크기가 다르거나 해상도가 다르거나, 워터마크가 추가로 있거나 기타 특성이 변경되었을 수 있습니다.
 
-* **버전:** 버전 매기기를 통해 특정 시점의 디지털 자산 스냅샷을 만들 수 있습니다. 자산을 이전 버전으로 복원할 수 있습니다. AEM Assets](managing-assets-touch-ui.md#asset-versioning)의 [버전 매기기를 참조하십시오.
+* **버전**:버전 매기기를 통해 특정 시점의 디지털 자산 스냅샷을 만들 수 있습니다. 자산을 이전 버전으로 복원할 수 있습니다.  [!DNL Assets]](managing-assets-touch-ui.md#asset-versioning)에서 [버전 매기기를 참조하십시오.
 
-* **하위 자산:** 하위 자산은 예를 들어 Adobe Photoshop 파일의 레이어나 PDF 파일의 페이지에 있는 자산을 구성하는 자산입니다. AEM Assets에서는 하위 자산도 자산처럼 관리할 수 있습니다.
+* **하위 자산**:하위 자산은 예를 들어, 파일의 레이어나 PDF 파일의  [!DNL Adobe Photoshop] 페이지와 같이 자산을 구성하는 자산입니다. [!DNL Assets]에서는 자산처럼 하위 자산을 관리할 수 있습니다.
 
-### 자산 사용 방법 {#how-to-work-with-assets}
+### 디지털 자산으로 작업하는 방법 {#how-to-work-with-assets}
 
-자산 또는 컬렉션에서 작업을 수행합니다. 작업을 통해 자산, 컬렉션 및 표현물을 만들거나 수정할 수 있습니다. 자산에 대해 수행하는 많은 기본 작업(하위 자산 저장, 업로드, 삭제, 업데이트)은 미리 구성된 워크플로우를 트리거합니다. 이러한 워크플로우는 AEM Assets에서 자동으로 켜지고, AEM Assets 미디어 핸들러에서 자세히 설명됩니다.
+자산 또는 컬렉션에서 작업을 수행합니다. 작업을 통해 자산, 컬렉션 및 표현물을 만들거나 수정할 수 있습니다. 자산에 대해 수행하는 많은 기본 작업(하위 자산 업로드, 삭제, 업데이트, 저장) - 사전 구성된 워크플로우를 트리거합니다. 이러한 속성은 [!DNL Assets]에서 자동으로 켜져 있으며 [!DNL Assets] 미디어 핸들러에서 자세히 설명합니다.
 
-이렇게 미리 구성된 워크플로우로 수행할 수 있는 작업:
+이러한 사전 구성된 워크플로우로 수행할 수 있는 작업:
 
 * 자산을 저장소에 저장하거나 저장소에서 자산을 삭제합니다.
 * 에셋에 대한 메타데이터를 추출하고 저장합니다.개별 메타데이터 항목이 XMP으로 저장됩니다.
 * 에셋에 대한 표현물과 축소판을 생성합니다.필요한 경우 자동 크기 조정 및 자르기 작업이 가능합니다.
-* 필요한 경우 자산을 코드 변환합니다. 예를 들어, 모바일 및 웹용 비디오는 초당 24프레임으로 코드가 변환되고 초당 30프레임으로 비디오를 다운로드합니다. 모바일 및 웹용 오디오는 128kbps로 코드가 변환되고 192kbps로 오디오를 다운로드합니다.
+* 필요한 경우 자산을 코드 변환합니다. 예를 들어, 모바일 및 웹용 비디오는 초당 24프레임으로 코드가 변환되고 초당 30프레임으로 비디오를 다운로드합니다. 모바일 및 웹용 오디오는 128Kbps로 코드 변환되고 192Kbps로 오디오를 다운로드할 수 있습니다.
 
-물론 워크플로우도 수동으로 적용할 수 있습니다. 기본 워크플로우 목록을 알려면 [AEM Assets 미디어 핸들러](media-handlers.md)를 참조하십시오.
+물론 워크플로우도 수동으로 적용할 수 있습니다. 기본 워크플로우 목록을 알려면 [ Assets 미디어 핸들러](media-handlers.md)를 참조하십시오.
 
-## AEM DAM 및 AEM MediaLibrary {#cq-dam-vs-cq-medialibrary}
+## [!DNL Experience Manager Assets] 및 [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
-차이에 대한 자세한 내용은 [AEM DAM 및 AEM MediaLibrary](medialibrary.md)을 참조하십시오.
+차이점에 대한 자세한 내용은 [자산 및 미디어 라이브러리](medialibrary.md)를 참조하십시오.
