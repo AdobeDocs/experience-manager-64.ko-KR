@@ -10,10 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c491f0f3-375d-4203-bdf3-234987bbf685
 translation-type: tm+mt
-source-git-commit: 52cefb850f413570d375b1b19f983339d743b486
+source-git-commit: 38c713b2c5aa93805b10bbb60c0dbdfa24872eb1
 workflow-type: tm+mt
-source-wordcount: '2671'
-ht-degree: 79%
+source-wordcount: '2705'
+ht-degree: 78%
 
 ---
 
@@ -29,7 +29,11 @@ Live Copy가 소스 컨텐츠와 동기화되는 방법 및 시기를 제어하�
 
 이 섹션에서는 설치된 롤아웃 구성 및 롤아웃 구성에서 사용하는 동기화 작업과 필요한 경우 사용자 지정 구성을 생성하는 방법에 대한 정보를 제공합니다.
 
-### 롤아웃 트리거  {#rollout-triggers}
+>[!CAUTION]
+>
+>기본(설치된) 롤아웃 구성을 업데이트하거나 변경하는 것은 **권장되지 않음**&#x200B;입니다. 사용자 지정 라이브 작업에 대한 요구 사항이 있는 경우 사용자 지정 롤아웃 구성에 추가해야 합니다.
+
+### 롤아웃 트리거 {#rollout-triggers}
 
 각 롤아웃 구성은 롤아웃이 발생하도록 하는 롤아웃 트리거를 사용합니다. 롤아웃 구성은 다음 트리거 중 하나를 사용할 수 있습니다.
 
