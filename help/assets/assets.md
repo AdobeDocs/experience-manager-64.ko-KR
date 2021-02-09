@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager Assets] 소개'
 description: 디지털 자산 관리란 무엇이고, 사용 사례 및  [!DNL Adobe Experience Manager Asset] 상품.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 02bf967a829be22ebec90d03ef1397cbe93e3d92
+source-git-commit: 91fbe9d3368feb7ecae73c56b2484c305cfb94b8
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 35%
+source-wordcount: '854'
+ht-degree: 34%
 
 ---
 
@@ -96,5 +96,5 @@ Assets managed within [!DNL Experience Manager] DAM can then be accessed via the
 
 >[!MORELIKETHIS]
 >
->* [최신 DAM으로 Experience Manager 자산 관리](https://www.youtube.com/embed/PBwQqZgC-yo)
+>* [비디오 소개 - 최신 DAM으로 Experience Manager 에셋](https://www.youtube.com/watch?v=PBwQqZgC-yo)
 
