@@ -10,10 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: c66c28f138618d6f36c55f8b498f7d2a23732b83
 workflow-type: tm+mt
-source-wordcount: '1672'
-ht-degree: 89%
+source-wordcount: '1774'
+ht-degree: 85%
 
 ---
 
@@ -51,6 +51,15 @@ ht-degree: 89%
 * **탐색 시 숨김**
 
    결과 사이트의 페이지 탐색에 페이지가 표시되거나 숨겨지는지 여부를 나타냅니다.
+
+* **브랜딩**
+
+   각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 전반에 일관된 브랜드 아이덴티티를 적용할 수 있습니다. 이 기능을 사용하려면 [핵심 구성 요소의 릴리스 2.14.0 이상에서 페이지 구성 요소를 사용해야 합니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+
+   * **재정의**  - 이 페이지에서 브랜드 슬러그를 정의하려면 선택합니다.
+      * 값이 **Override** 값도 설정되어 있지 않으면 모든 하위 페이지에서 값이 상속됩니다.
+   * **값**  무시 - 페이지 제목에 추가할 브랜드 슬러그의 텍스트입니다.
+      * 이 값은 &quot;Cycling Tuscany&quot;와 같은 파이프 문자 뒤에 페이지 제목에 추가됩니다. | 항상 WKND 준비&quot;
 
 * **페이지 제목**
 
