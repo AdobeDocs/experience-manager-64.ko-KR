@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 161b591b-5871-4b5f-9c63-823b6e67b1fd
 translation-type: tm+mt
-source-git-commit: 11710b19c373b014862f892640d1bd4e90c6f411
+source-git-commit: ebb750f00fb1d4d6f2b19e300e5a68b6b43650d7
 workflow-type: tm+mt
-source-wordcount: '3963'
+source-wordcount: '4019'
 ht-degree: 2%
 
 ---
@@ -337,6 +337,10 @@ Live Copy를 만들 때 Live Copy 구성은 복사한 페이지의 루트 페이
 >
 >모든 연결을 제거하기 위해 블루프린트에서 [Live Copy](#detaching-a-live-copy)를 분리할 수도 있습니다. 분리 동작은 영구적이며 되돌릴 수 없습니다.
 
+>[!NOTE]
+>
+>구성 요소가 컨테이너로 표시된 경우 취소 및 일시 중단 작업은 해당 하위 구성 요소에 적용되지 않습니다. 자세한 내용은 [MSM 우수 사례](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization)를 참조하십시오.
+
 #### 페이지 속성에서 상속 일시 중단 {#suspending-inheritance-from-page-properties}
 
 페이지의 상속을 일시 중단하려면:
@@ -440,6 +444,10 @@ Live Copy 페이지가 선택되면 Live Copy 개요](/help/sites-administering/
 ### 구성 요소 {#cancelling-inheritance-for-a-component} 상속 취소
 
 구성 요소가 더 이상 소스 구성 요소와 동기화되지 않도록 구성 요소에 대한 Live Copy 상속을 취소합니다. 필요한 경우 나중에 상속을 활성화할 수 있습니다.
+
+>[!NOTE]
+>
+>구성 요소가 컨테이너로 표시된 경우 취소 및 일시 중단 작업은 해당 하위 구성 요소에 적용되지 않습니다. 자세한 내용은 [MSM 우수 사례](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization)를 참조하십시오.
 
 >[!NOTE]
 >
