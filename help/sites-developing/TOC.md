@@ -7,7 +7,7 @@ user-guide-title: AEM 6.4 개발 사용 안내서
 breadcrumb-title: Developing 안내서
 user-guide-description: 이 안내서에서는 AEM 인스턴스를 빌드하는 방법을 다룹니다.
 translation-type: tm+mt
-source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
+source-git-commit: 5a9cdf29ca7331cdae5c0905b20a76f7124f3dd4
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 91%
@@ -79,7 +79,7 @@ ht-degree: 91%
    + [AEM 구성 요소 개발](developing-components.md)
    + [AEM 구성 요소 개발 - 코드 샘플](developing-components-samples.md)
    + [컨텐츠 서비스용 JSON 익스포터](json-exporter.md)
-   + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
+   + [구성 요소에 대해 JSON 내보내기 활성화](json-exporter-components.md)
    + [이미지 편집기](image-editor.md)
    + [장식 태그](decoration-tag.md)
    + [숨기기 조건 사용](hide-conditions.md)
@@ -100,7 +100,7 @@ ht-degree: 91%
       + [양식 개발(클래식 UI)](developing-forms.md)
 + 헤드리스 환경 관리{#headless}
    + [AEM을 사용한 헤드리스 및 하이브리드](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-   + [구성 요소에 대해 JSON 내보내기 활성화](json-exporter-components.md)
+   + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
    + SPA(Single Page Applications){#spas}
       + [SPA 소개 및 연습](spa-walkthrough.md)
       + [SPA WKND 자습서](spa-wknd.md)
