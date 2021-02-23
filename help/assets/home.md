@@ -3,10 +3,10 @@ title: Assets 안내서
 description: 이 안내서에서는 디지털 자산 만들기, 관리, 제공 및 최적화 방법과 같은 모든 AEM Assets 작업을 다룹니다.
 user-guide-title: Assets 안내서
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 93%
+source-wordcount: '317'
+ht-degree: 88%
 
 ---
 
@@ -17,10 +17,9 @@ ht-degree: 93%
 
 ## 주요 AEM 문서
 
-* [AEM 시작하기](https://helpx.adobe.com/kr/experience-manager/get-started.html)
 * [AEM 6.4 릴리스 노트](/help/release-notes/home.md)
-* [최근 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html)
-* [AEM Security 검사 목록](/help/sites-administering/security-checklist.md)
+* [최근 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
+* [AEM 보안 검사 목록](/help/sites-administering/security-checklist.md)
 
 ## AEM 6.4 사용 안내서
 
@@ -41,7 +40,7 @@ ht-degree: 93%
 
 ## 주요 AEM 리소스
 
-* [AEM 자습서](https://helpx.adobe.com/kr/experience-manager/kt/index/aem-6-4-videos.html)
+* [AEM 자습서](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
 * [Dispatcher 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
