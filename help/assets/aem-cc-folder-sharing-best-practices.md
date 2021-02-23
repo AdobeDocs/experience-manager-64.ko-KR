@@ -3,10 +3,10 @@ title: Creative Cloud과 AEM Assets 폴더 공유
 description: Adobe Experience Manager Assets 사용자가 Adobe Creative Cloud 사용자와 자산 폴더를 교환할 수 있도록 하는 구성 및 모범 사례
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 1%
+source-wordcount: '1061'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->AEM-Creative Cloud 폴더 공유 기능은 더 이상 사용되지 않습니다. Adobe은 [Adobe 자산 링크](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 또는 [AEM 데스크톱 앱](https://helpx.adobe.com/kr/experience-manager/desktop-app/aem-desktop-app.html)과 같은 최신 기능을 사용하는 것이 좋습니다. [AEM 및 Creative Cloud 통합 우수 사례](/help/assets/aem-cc-integration-best-practices.md)에서 자세한 내용을 살펴보십시오.
+>AEM-Creative Cloud 폴더 공유 기능은 더 이상 사용되지 않습니다. Adobe은 [Adobe 자산 링크](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) 또는 [AEM 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)과 같은 최신 기능을 사용하는 것이 좋습니다. [AEM 및 Creative Cloud 통합 우수 사례](/help/assets/aem-cc-integration-best-practices.md)에서 자세한 내용을 살펴보십시오.
 
 AEM(Adobe Experience Manager)을 AEM Assets 사용자가 Creative Cloud 사용자와 폴더를 공유할 수 있도록 구성하여 Creative Cloud 에셋 서비스에서 공유 폴더로 사용할 수 있습니다. 이 기능은 크리에이티브 팀과 AEM Assets 사용자 간에 파일을 교환하는 데 사용할 수 있습니다. 특히 크리에이티브 사용자가 AEM Assets 인스턴스에 대한 액세스 권한이 없는 경우(엔터프라이즈 네트워크에 있지 않음).
 
