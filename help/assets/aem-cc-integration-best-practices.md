@@ -3,9 +3,9 @@ title: AEM 및 Creative Cloud 통합 우수 사례
 description: AEM 배포를 Adobe Creative Cloud과 통합하여 에셋 전송 워크플로우를 간소화하고 효율성을 극대화하는 모범 사례
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
 workflow-type: tm+mt
-source-wordcount: '3566'
+source-wordcount: '3572'
 ht-degree: 2%
 
 ---
@@ -165,7 +165,7 @@ DAM에 에셋을 저장하면 손쉽게 액세스할 수 있고 검색할 수 �
 
 일반적으로 다음 클래스 에셋은 DAM에 저장됩니다.
 
-* 특정 성숙도에 도달했고 공유할 준비가 된 것으로 간주되는 에셋
+* 특정 성숙도에 도달했고 공유할 준비가 된 것으로 간주되는 자산
 * 크리에이티브 팀이 미리 선택한 에셋
 * 특정 계약이나 계약에 따라 사용 또는 요구하는 특정 에셋 포맷(예: RAW 파일에서 변환된 JPG 파일, TIFF/PSD 원본 이미지)
 
@@ -200,9 +200,9 @@ DAM 인스턴스에 직접 액세스하지 않고도 외부 에이전시 및 프
 
 다음 전략을 사용하여 최종/승인된 자산에 대한 액세스를 제공합니다.
 
-* 많은 자산에 대한 액세스를 제공하려면:AEM 게시 인프라에서 [AEM Assets 브랜드 포털](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) 또는 고객이 구현한 [자산 공유](assets-finder-editor.md) 사용
+* 많은 자산에 대한 액세스를 제공하려면:AEM 게시 인프라에서 [AEM Assets 브랜드 포털](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=en) 또는 고객이 구현한 [자산 공유](assets-finder-editor.md) 사용
 
-* 몇 가지 자산에 대한 액세스를 제공하려면:ADOBE CREATIVE CLOUD과 AEM 폴더 공유를 AEM Assets 브랜드 포털 또는 에셋 공유 외에 사용할 수 있습니다. 이 통합에 대한 특정 제한 사항은 이 문서에 자세히 설명되어 있습니다.
+* 몇 가지 자산에 대한 액세스를 제공하려면:Adobe Creative Cloud과 AEM 폴더 공유를 AEM Assets 브랜드 포털 또는 에셋 공유 외에 사용할 수 있습니다. 이 통합에 대한 특정 제한 사항은 이 문서에 자세히 설명되어 있습니다.
 
 ### 사용 사례 {#use-cases}
 
@@ -296,7 +296,7 @@ AEM 데스크탑 앱을 사용하여 AEM Assets의 네트워크 공유에서 바
 
 >[!MORELIKETHIS]
 >
->* [Adobe 자산 링크](https://helpx.adobe.com/in/enterprise/using/adobe-asset-link.html)
+>* [Adobe 자산 링크](https://helpx.adobe.com/in/enterprise/admin-guide.html/in/enterprise/using/adobe-asset-link.ug.html)
 >* [AEM 데스크탑 앱 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/archive/best-practices-for-v1.html)
 >* [AEM Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 >* [AEM 및 Adobe Stock 통합](aem-assets-adobe-stock.md)
