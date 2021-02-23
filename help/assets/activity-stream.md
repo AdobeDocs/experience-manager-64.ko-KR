@@ -3,10 +3,10 @@ title: 타임라인의 활동 스트림
 description: '이 문서에서는 타임라인에서 자산에 대한 활동 로그를 표시하는 방법에 대해 설명합니다. '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 9%
+source-wordcount: '216'
+ht-degree: 6%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 9%
 
 타임라인에 표시할 작업 로그는 로그 파일이 저장되는 CRX의 `/var/audit/com.day.cq.dam/content/dam` 위치에서 가져옵니다.
 
-또한, 타임라인 활동은 [Adobe 자산 링크](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html) 또는 [AEM 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)을 통해 새 에셋이 업로드되거나 기존 에셋이 수정 및 AEM에 체크인될 때 기록됩니다.
+또한, 타임라인 활동은 [Adobe 자산 링크](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) 또는 [AEM 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)을 통해 새 에셋이 업로드되거나 기존 에셋이 수정 및 AEM에 체크인될 때 기록됩니다.
 
 >[!NOTE]
 >
