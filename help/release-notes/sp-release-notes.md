@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: a2808c1861b6853b5e9505ad189f296f7ebd2572
 workflow-type: tm+mt
-source-wordcount: '21617'
+source-wordcount: '21579'
 ht-degree: 29%
 
 ---
@@ -69,7 +69,7 @@ AEM 6.4.8.0은 2018년 4월 **AEM 6.4의 공식 출시 이후에 출시된 새�
 * RTE(리치 텍스트 편집기)에서 하이퍼링크를 편집하면 새로 선택한 경로가 저장되지 않습니다(NPR-31659).
 * 다중 필드 구성 요소를 삭제하고 삭제를 취소하면 구성 요소가 복원되지만 데이터는 복원되지 않습니다(NPR-31617).
 
-### 자산 {#assets}
+### 에셋 {#assets}
 
 * Dynamic Media Classic 구성을 사용하여 Experience Manager에서 자산을 한 폴더에서 다른 폴더로 이동하는 동안 이름이 없는 폴더가 Dynamic Media Classic에 생성됩니다(NPR-32440).
 
@@ -182,7 +182,7 @@ AEM 6.4.7.0의 주요 특징 중 몇 가지는 다음과 같습니다.
 * 이제 Dynamic Media의 UI에서 재처리 및 일괄 업로드를 위한 일괄 처리 크기 및 워크플로우 단계 시간 초과를 구성할 수 있습니다.
 * Scene 7 클라우드 구성에서 메모리를 IPS에 저장하도록 `pdfBrochure`이(가) false로 설정되었습니다.
 
-##### 자산 {#assets-6470}
+##### 에셋 {#assets-6470}
 
 **제품 개선 사항**
 
@@ -371,7 +371,7 @@ AEM 6.4.6.0의 주요 특징 중 몇 가지는 다음과 같습니다.
 * 기본 API의 추적 이벤트에서 동적 UI 상태 추적에 대한 지원을 추가했습니다.
 * 이미지 핵심 구성 요소에 변환 지원을 추가했습니다.
 
-**자산**
+**에셋**
 
 * 공백이 있는 폴더의 자산 공유 링크와 이름에 있는 `&` 문자가 일부 자산에 대한 빈 회색 카드를 표시합니다. NPR-29934: CQ-4270187용 핫픽스
 * AEM용 MP4 에셋을 만드는 동안 DAM 워크플로우가 종료됩니다. NPR-30031: CQ-4271352용 핫픽스
@@ -525,13 +525,13 @@ AEM 6.4.5.0의 주요 특징 중 몇 가지는 다음과 같습니다.
 * AEM 게시 인스턴스에서 기본적으로 `AssetDownloadServlet` OSGi 구성 요소를 비활성화했습니다. 자세한 내용은 [AEM](/help/assets/download-assets-from-aem.md)에서 에셋 다운로드를 참조하십시오.
 * 자산에 대한 다중 사이트 관리자 지원이 활성화되었습니다. 자세한 내용은 [자산에 MSM을 사용하여 자산 재사용](/help/assets/reuse-assets-using-msm.md)을 참조하십시오.
 
-**자산**
+**에셋**
 
 * 파일 이름에 아포스트로피가 있는 에셋은 Dynamic Media과 동기화되지 않습니다. NPR-29538: CQ-4270592용 핫픽스
 * S3 다중 부분 지원에 대한 DAM DMGateway 인터페이스가 업데이트되었습니다. NPR-29740: CQ-4226303용 핫픽스
 * Dynamic Media에서 비디오에 대한 변환을 다운로드할 때 자산 다운로드 대화 상자에 잘못된 파일 크기가 표시됩니다. NPR-29642: CQ-4246202용 핫픽스
 * CQ DAM MIME 유형 서비스가 m3u8에 대한 텍스트를 적용한 후 자산을 사용할 수 없게 됩니다. NPR-29276: CQ-4264052용 핫픽스
-* 이동/이름이 바뀐 자산이 Sling 리소스 컬렉션의 일부일 경우 자산 참조 조정이 세션을 저장하지 못합니다. NPR-29143:/CQ-4252605용 핫픽스
+* 이동/이름이 변경된 자산이 Sling 리소스 컬렉션의 일부일 경우 자산 참조 조정이 세션을 저장하지 못했습니다. NPR-29143:/CQ-4252605용 핫픽스
 * 메타데이터 값을 검색하여 자산을 추적하거나 찾을 수 없습니다. NPR-29141: CQ-4260215용 핫픽스
 * 검색 필터를 사용하여 스마트 컬렉션을 저장할 때 패널의 클릭 동작에 포커스가 유지되지 않습니다. NPR-29000: CQ-4240323용 핫픽스
 * 폴더를 이동하면 대/소문자를 혼합하거나 대문자로 만든 폴더를 만들 수 있습니다. NPR-28945: CQ-4265234용 핫픽스
@@ -560,7 +560,7 @@ AEM 6.4.5.0의 주요 특징 중 몇 가지는 다음과 같습니다.
 * MixedMediaSet을 만들거나 편집할 때 샘플 비디오가 로드되지 않습니다. CQ-4244889용 핫픽스
 * AEM 쪽에서 콘텐츠를 삭제할 수 있는 권한을 비활성화하면 사용자가 브랜드 포털에 게시할 수 없습니다. CQ-4270426용 핫픽스
 * AEM 6.4.3으로 업그레이드한 후 자산 보고서와 관련된 문제를 쿼리합니다. NPR-28588:CQ-4262022, CQ-4260697 핫픽스
-* 다운로드 기능은 익명의 사용자가 모든 자산을 다운로드할 수 있도록 하는 assetdownload 서블릿을 통해 AEM Assets를 활용합니다. NPR-27315, CQ-4254732 핫픽스
+* 다운로드 기능은 익명의 사용자가 모든 에셋을 다운로드할 수 있도록 하는 assetdownload 서블릿을 통해 AEM Assets를 활용합니다. NPR-27315, CQ-4254732 핫픽스
 
 **사이트**
 
@@ -732,13 +732,13 @@ AEM 6.4.5.0 Forms의 주요 기능은 다음과 같습니다.
 
 **기능 팩이 포함됨**
 
-**자산**
+**에셋**
 
 * 자산에 대한 다중 사이트 관리자 지원이 활성화되었습니다. 자세한 내용은 [자산에 MSM을 사용하여 자산 재사용](/help/assets/reuse-assets-using-msm.md)을 참조하십시오. NPR-26450: CQ-4259922용 핫픽스
 
-**OSGi 번들 및 컨텐츠 패키지가 포함됨**
+**OSGi 번들 및 콘텐츠 패키지가 포함됨**
 
-다음 텍스트 문서에는 CFP에 포함된 OSGi 번들 및 컨텐츠 패키지 목록이 있습니다.
+다음 텍스트 문서에는 CFP에 포함된 OSGi 번들 및 콘텐츠 패키지 목록이 있습니다.
 
 AEM 6.4.5.0에 포함된 OSGi 번들 목록
 
@@ -768,7 +768,7 @@ AEM 6.4.4.0의 주요 특징 중 몇 가지는 다음과 같습니다.
 * 컨텐츠 조각의 clientlibs에서 입력한 여러 필드의 수가 비어 있는 값을 무시하기 위한 확인을 추가했습니다.
 * Microsoft Translator 텍스트 API v3에 대한 지원을 활성화했습니다.
 
-**자산**
+**에셋**
 
 * ACP 및 Stock 통합의 마이그레이션을 AEM 6.4.4.0 NPR-27632로 전환
 * 나중에 하위 폴더가 있는 빈 자산 폴더를 게시하면 하위 폴더가 사라집니다. NPR-27558: CQ-4254701용 핫픽스
@@ -986,7 +986,7 @@ Forms Manager의 시작 검토 마법사 및 자산 이동 마법사에 handleba
 **양식 - 문서 보안**
 
 * 업데이트 정책 서비스를 사용할 때 개체 강제 실행 불가 오류가 발생합니다. NPR-28751: CQ-4252287용 핫픽스
-* 이전 버전의 commons-pkg로 서명 빌드가 실패했습니다. CQ-4265535용 핫픽스
+* 이전 버전의 commons-pkg로 인해 서명 빌드가 실패했습니다. CQ-4265535용 핫픽스
 
 **양식 - 기초 JEE**
 
@@ -1015,9 +1015,9 @@ Forms Manager의 시작 검토 마법사 및 자산 이동 마법사에 handleba
 
 * 향상된 쿼리 빌더 패싯 추출을 통해 6.4용 Oak API를 활용할 수 있습니다. NPR-26674:CQ-4230337용 FP
 
-**OSGi 번들 및 컨텐츠 패키지가 포함됨**
+**OSGi 번들 및 콘텐츠 패키지가 포함됨**
 
-다음 텍스트 문서에는 CFP에 포함된 OSGi 번들 및 컨텐츠 패키지 목록이 있습니다.
+다음 텍스트 문서에는 CFP에 포함된 OSGi 번들 및 콘텐츠 패키지 목록이 있습니다.
 
 AEM 6.4.4.0에 포함된 OSGi 번들 목록
 
@@ -1045,7 +1045,7 @@ AEM 6.4.3.0의 주요 특징 중 몇 가지는 다음과 같습니다.
 * 선택 중 자리 표시자 항목(카드 보기 및 목록 보기)의 처리가 개선되었습니다.
 * Managed Services에 대한 Adobe IMS 인증 및 Admin Console 지원을 추가했습니다.
 
-**자산**
+**에셋**
 
 * IDS Decole 옵션이 활성화된 경우 DAM 자산 업데이트 작업 과정에서 INDD 파일에서 참조를 추출하지 않습니다. NPR-26243;CQ-4250933 핫픽스
 * 자산이 자산 벌크 편집기로 게시되면 성공 메시지가 표시되지 않습니다. NPR-26252;CQ-4251688 핫픽스.
@@ -1292,7 +1292,7 @@ AEM 6.4.2.0의 주요 특징 중 몇 가지는 다음과 같습니다.
 * 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.8.7으로 업데이트되었습니다.
 * HTL(HTML) 사양 1.4 기능에 대한 지원을 추가했습니다.
 * MongoDB Enterprise 3.6에 대한 지원을 추가했습니다.
-* 사이트 페이지 편집기는 <a href="../sites-developing/spa-walkthrough.md">AEM SPA Editor JS SDK</a>와 결합하여 [반응] 또는 [각]으로 클라이언트 측 구성 요소가 빌드되는 상황에 맞는 편집 및 컴포지션에 대한 지원을 추가합니다.
+* 사이트 페이지 편집기는 <a href="../sites-developing/spa-walkthrough.md">AEM SPA Editor JS SDK</a>와 결합하여 응답형 또는 Angular으로 클라이언트 측 구성 요소를 빌드하는 상황에 맞는 편집 및 컴포지션에 대한 지원을 추가합니다.
 * 컨텐츠 조각 개선 사항:텍스트 필드에 주석을 달고 버전을 나란히 비교하는 기능을 추가했습니다.
 * 사용자가 AEM 사용자 인터페이스에서 직접 Adobe Stock 에셋을 검색, 미리 보기, 저장 및 라이선스를 부여할 수 있도록 Adobe Stock](/help/assets/aem-assets-adobe-stock.md)와의 통합을 추가했습니다. [ 자세한 내용은 [AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)에서 Adobe Stock 자산 사용을 참조하십시오.
 * 자산에 동적 조건부 메타데이터에 대한 지원 및 자산 폴더에 대한 메타데이터 스키마 설정 기능이 추가되었습니다.
@@ -1310,7 +1310,7 @@ AEM 6.4.2.0의 주요 특징 중 몇 가지는 다음과 같습니다.
 * GCC가 최신 버전으로 업데이트되었습니다.
 * SAML을 새로운 외부 IDP 동기화로 이동합니다.
 
-**자산**
+**에셋**
 
 * pptx 파일에 대한 하위 자산 생성에는 이미지와 축소판이 포함되지 않습니다. NPR-24286: CQ-4217986용 핫픽스
 * migrateAllAssets - 일괄 처리 지원을 추가하고 UUID를 이전 자산에 추가하는 AEM 메서드를 개선합니다. NPR-24861: CQ-4242863 및 CQ-4247874용 핫픽스
@@ -1634,7 +1634,7 @@ AEM 6.4.2.0 Forms의 주요 기능은 다음과 같습니다.
 * FDM은 SOAP 호출에서 매개 변수의 순서를 섞어 줍니다. NPR-25069, CQ-4247180 핫픽스
 * FDM은 SOAP 요청에 있는 개체(목록/배열)를 병합합니다. NPR-25284: CQ-4248375용 핫픽스
 
-**Forms JEE 설치 프로그램**
+**Forms JEE 설치 관리자**
 
 **PDFG 서비스**
 
@@ -1657,7 +1657,7 @@ AEM 6.4.2.0 Forms의 주요 기능은 다음과 같습니다.
 
 **기능 팩이 포함됨**
 
-**자산**
+**에셋**
 
 * 사용자가 AEM 사용자 인터페이스에서 직접 Adobe Stock 에셋을 검색, 미리 보기, 저장 및 라이선스를 부여할 수 있도록 Adobe Stock](/help/assets/aem-assets-adobe-stock.md)와의 통합을 추가했습니다. [ 자세한 내용은 [AEM 자산과 함께 Adobe Stock 자산 사용](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)을 참조하십시오. NPR-15779: CQ-30857용 핫픽스
 * 동적 조건부 메타 스키마에 대한 지원을 추가했습니다. 자세한 내용은 [계단식 메타데이터](/help/assets/cascading-metadata.md)를 참조하십시오. NPR-25189: CQ-4237413용 핫픽스
@@ -1705,7 +1705,7 @@ AEM 6.4.1.0은 AEM 6.4 GA에 설치할 수 있습니다. 서비스 팩의 주요
 * platform.clientlibs 수정 사항에 대한 사전 예방적 백포트입니다.
 * 명시적 dataType에 대한 입력이 없을 때 스크립트의 자동 실행 방지(CVE-2015-9251 해결).
 
-**자산**
+**에셋**
 
 * 자산 속성 페이지를 다시 열 때 계단식 드롭다운 값이 비어 있는 것으로 표시됩니다. NPR-23042: CQ-4238761용 핫픽스
 * mylinkshare 페이지의 공유 링크 및 페이지에 대한 링크는 관리자가 아닌 사용자 NPR-23044에서는 사용할 수 없습니다.CQ-4239004 핫픽스
@@ -1713,7 +1713,7 @@ AEM 6.4.1.0은 AEM 6.4 GA에 설치할 수 있습니다. 서비스 팩의 주요
 * 게시된 WCM 페이지에는 OOTB 뷰어에 대해 403 오류가 발생하는 핫스팟에 대한 자리 표시자 아이콘이 표시됩니다. NPR-23041: CQ-4233716용 핫픽스
 * (세부 사항 보기) 다음/뒤로 탐색 기능은 뷰어에 대한 액세스를 차단하는 동적 변환 미리 보기 영역의 DIV 오버레이를 남깁니다. NPR-23043: CQ-4238499용 핫픽스
 * CMYK 이미지 변환의 채도가 잘못되었습니다. NPR-23048: CQ-4235470용 핫픽스
-* SCENE7ListInfoProvider에 의한 XMP 메타데이터 추출을 사용하면 리소스를 많이 활용할 수 있습니다. NPR-23754
+* Scene7ListInfoProvider에 의한 XMP 메타데이터 추출을 사용하면 리소스를 많이 활용할 수 있습니다. NPR-23754
 * (dam-delivery) Http 전달자는 HTTP 프록시 설정을 준수하지 않습니다. NPR-24002: CQ-4244140용 핫픽스
 
 **사이트**
@@ -1796,7 +1796,7 @@ AEM 6.4.1.0은 AEM 6.4 GA에 설치할 수 있습니다. 서비스 팩의 주요
 
 **워크플로우**
 
-* 일별 CQ 워크플로우 이메일 알림 서비스는 WorkflowCompleted 및 WorkflowAborted 알림에 대해 Mongo 노드당 하나의 이메일을 트리거합니다. NPR-22515: CQ-4238172용 핫픽스
+* 일별 CQ 워크플로 이메일 알림 서비스는 WorkflowCompleted 및 WorkflowAborted 알림에 대해 Mongo 노드당 하나의 이메일을 트리거합니다. NPR-22515: CQ-4238172용 핫픽스
 * DAM 자산 업데이트 작업 과정을 실행하면 NullPointerException이 발생합니다. NPR-23010: Granite-21096용 핫픽스
 * 워크플로우 프로세스 단계에서는 /etc/workflow/scripts의 스크립트를 표시하지 않습니다. NPR-23263: Granite-20775용 핫픽스
 * 워크플로우 동적 참가자 단계에서는 /apps/workflow/scripts의 스크립트를 표시하지 않습니다. NPR-23464: Granite-21276용 핫픽스
@@ -1907,7 +1907,7 @@ AEM 6.4.1.0은 AEM 6.4 GA에 설치할 수 있습니다. 서비스 팩의 주요
 
 **양식**
 
-AEM Forms 수정 사항은 릴리스와 함께 제공되는 추가 기능 패키지 및 기타 패치 설치 프로그램을 통해 게재됩니다. 자세한 내용은 AEM Forms 릴리스를 참조하십시오.
+AEM Forms 수정 사항은 릴리스와 함께 제공되는 추가 기능 패키지 및 기타 패치 설치 관리자를 통해 게재됩니다. 자세한 내용은 AEM Forms 릴리스를 참조하십시오.
 
 AEM Forms의 주요 사항은 다음과 같습니다.
 
@@ -2067,7 +2067,7 @@ AEM Forms의 주요 사항은 다음과 같습니다.
 
 **기능 팩이 포함됨**
 
-**자산**
+**에셋**
 
 * 고급 스마트 태그 기능이 추가되었습니다. 자세한 내용은 [고급 스마트 태그](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/enhanced-smart-tags.html)를 참조하십시오. NPR-21951: CQ-4234883용 핫픽스
 * InDesign에서 AEM Assets 참조를 도입했습니다. 자세한 내용은 InDesign](/help/assets/managing-linked-subassets.md)의 [AEM Assets 참조를 참조하십시오. NPR-23386
@@ -2076,9 +2076,9 @@ AEM Forms의 주요 사항은 다음과 같습니다.
 
 * (페이지 작성) 이미지 편집기 개선 사항. 자세한 내용은 [이미지 편집기](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html)를 참조하십시오. NPR-24267: CQ-4245502용 핫픽스
 
-**OSGi 번들 및 컨텐츠 패키지가 포함됨**
+**OSGi 번들 및 콘텐츠 패키지가 포함됨**
 
-다음 텍스트 문서에는 CFP에 포함된 OSGi 번들 및 컨텐츠 패키지 목록이 있습니다.
+다음 텍스트 문서에는 CFP에 포함된 OSGi 번들 및 콘텐츠 패키지 목록이 있습니다.
 
 AEM 6.4.1.0에 포함된 OSGi 번들 목록
 
@@ -2181,7 +2181,7 @@ B. 패키지 관리자](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/pa
 
 >[!NOTE]
 >
->JEE에서 AEM Forms를 사용하지 않는 경우 건너뜁니다. 별도의 설치 프로그램을 통해 AEM Forms JEE의 수정 사항이 전달됩니다.
+>JEE에서 AEM Forms를 사용하지 않는 경우 건너뜁니다. 별도의 설치 관리자를 통해 AEM Forms JEE의 수정 사항이 전달됩니다.
 
 AEM Forms JEE용 누적 설치 프로그램 및 배포 후 구성에 대한 자세한 내용은 [AEM Forms JEE 패치 설치 프로그램 0015](https://helpx.adobe.com/kr/aem-forms/quick-fixes/6-4/jee-patch-0015.html)을 참조하십시오.
 
@@ -2236,15 +2236,10 @@ Maven 프로젝트에서 Uber Jar를 사용하려면 문서 [Uber jar 사용 �
 
 * 설치 중에 다음 오류 및 경고가 표시될 수 있습니다.
 
-   * 저장소 다시 시작으로 인해 다음과 같은 구성 요소 인스턴스 만들기 및 서비스 팩토리에서 null 반환 오류가 발생합니다.
-
-      * com.day.cq.cq-personalization \[com.day.cq.pepersonalization.impl.DefaultProfileProvider(938)\] 참조 프로필을 바인딩하지 못했기 때문에 구성 요소 인스턴스를 만들 수 없습니다.Manager
-      * org.apache.sling.commons.scheduler FrameworkEvent ERROR (org.osgi.framework.ServiceException: 서비스 팩토리에서 null을 반환함. (Component: com.day.cq.tagging.impl.TagGarbageCollector (1687)))
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` :레지스트리 변경 완료 대기 시간 제한.
    * `com.adobe.granite.maintenance.impl.TaskScheduler` granite/operations/maintenance에 유지 관리 창이 없습니다
    * `com.adobe.cq.com.adobe.cq.ui.commons bundle com.adobe.cq.com.adobe.cq.ui.commons:1.2.28 (204)[com.adobe.cq.ui.wcm.commons.internal.servlets.rte.RTEFilterServletFactory(573)]`:unbindAddition 메서드에서 예외가 발생했습니다(java.lang.IllegalStateException:서비스가 이미 등록되지 않았습니다.)
 이러한 오류는 AEM 인스턴스에 영향을 주지 않으므로 작업이 필요하지 않습니다.
-
 
 ### 해결된 문제 {#resolved-issues}
 
