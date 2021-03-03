@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 discoiquuid: b99c7b93-ba05-42ee-9ca8-0079e15d8602
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 6b5c051a2487ca9aa66d110e5b792a55eae8e97d
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 2%
@@ -101,7 +101,7 @@ AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md) 페이지 또는 
 
    * 적응형 양식의 게시 URL 경로를 사용하여 `options.path` 변수의 값을 변경합니다. AEM 서버가 컨텍스트 경로에서 실행 중인 경우 URL에 컨텍스트 경로가 포함되어 있는지 확인합니다. 예를 들어 위의 코드 및 응용 프로그램은 동일한 aem forms 서버에 상주하므로 이 예제에서는 적응형 양식 /content/forms/af/locbasic.html의 컨텍스트 경로를 사용합니다.
    * `options.dataRef`을(를) URL로 전달할 속성으로 바꿉니다. dataref 변수를 사용하여 [적응형 양식](/help/forms/using/prepopulate-adaptive-form-fields.md)을 미리 입력할 수 있습니다.
-   * 적응형 양식에 구성된 테마가 아닌 테마 경로로 `options.themePath`을(를) 바꿉니다. 또는 요청 속성을 사용하여 테마 경로를 지정할 수도 있습니다.
+   * 적응형 양식에 구성된 테마가 아닌 테마 경로로 `options.themePath`을(를) 대체합니다. 또는 요청 속성을 사용하여 테마 경로를 지정할 수도 있습니다.
    * `CSS_Selector` 는 적응형 양식이 포함된 양식 컨테이너의 CSS 선택기입니다. 예를 들어 .customafsection css 클래스는 위의 예에서 CSS 선택기입니다.
 
 적응형 양식이 웹 페이지에 포함됩니다. 포함된 응용 양식에서 다음을 관찰합니다.
@@ -166,6 +166,6 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 ## AEM Forms에서 크로스 도메인 사이트 {#cross-domain-sites}에 적응형 양식을 제공할 수 있도록 설정
 
-1. AEM 작성자 인스턴스에서 AEM 웹 콘솔 구성 관리자(`http://[server]:[port]/system/console/configMgr`)로 이동합니다.
+1. AEM 게시 인스턴스에서 AEM 웹 콘솔 구성 관리자(`http://[server]:[port]/system/console/configMgr`)로 이동합니다.
 1. **Apache Sling 레퍼러** 필터 구성을 찾아 엽니다.
 1. **허용된 호스트** 필드에서 웹 페이지가 있는 도메인을 지정합니다. 이를 통해 주최자가 AEM 서버에 POST 요청을 수행할 수 있습니다. 정규 표현식을 사용하여 일련의 외부 응용 프로그램 도메인을 지정할 수도 있습니다.
