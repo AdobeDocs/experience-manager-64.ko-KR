@@ -9,9 +9,9 @@ topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 66a3528a-489b-4fd0-be6c-b8c4b9b1f908
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 5734bcd7231f7ba8779acd8e0325b875e252e104
 workflow-type: tm+mt
-source-wordcount: '6348'
+source-wordcount: '6352'
 ht-degree: 0%
 
 ---
@@ -330,7 +330,7 @@ forms-power-users 그룹의 사용자는 코드 편집기에 액세스할 수 �
 AEM Forms은 마지막으로 규칙을 작성하는 데 사용한 규칙 편집기 모드를 추적합니다. 다음에 규칙 편집기를 실행하면 해당 모드로 열립니다. 하지만 기본 모드를 구성하여 지정된 모드에서 규칙 편집기를 열 수도 있습니다. 이렇게 하려면 다음을 수행하십시오.
 
 1. https://[host]:[port]/system/console/configMgr의 AEM 웹 콘솔로 이동합니다.
-1. **[!UICONTROL 적응형 양식 구성 서비스]**&#x200B;를 편집하려면 클릭합니다.
+1. **[!UICONTROL 적응형 양식 및 대화형 통신 웹 채널 구성]**&#x200B;을 편집하려면 클릭합니다.
 1. **[!UICONTROL 규칙 편집기의 기본 모드]** 드롭다운에서 **[!UICONTROL 시각적 편집기]** 또는 **[!UICONTROL 코드 편집기]**&#x200B;를 선택합니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
