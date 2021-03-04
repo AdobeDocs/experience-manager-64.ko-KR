@@ -9,9 +9,9 @@ topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6bd58e37-085e-4057-8200-1404d54f41cc
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 5734bcd7231f7ba8779acd8e0325b875e252e104
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '334'
 ht-degree: 7%
 
 ---
@@ -30,9 +30,9 @@ AEM Forms에서는 역할이나 기능에 따라 사용자에 대한 규칙 편�
 1. AEM Forms에 관리자로 로그인합니다.
 1. 작성자 인스턴스에서 ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > 도구 ![망치](assets/hammer.png) > 작업 > 웹 콘솔을 클릭합니다. 웹 콘솔이 새 창에 열립니다.
 
-   ![3](assets/1.png)
+   ![1](assets/1.png)
 
-1. 웹 콘솔 창에서 **적응형 양식 구성 서비스**&#x200B;를 찾아 클릭합니다. **응용 양식 구성 서비스** 대화 상자가 나타납니다. 값을 변경하지 말고 **저장**&#x200B;을 클릭합니다.
+1. 웹 콘솔 창에서 **[!UICONTROL 적응형 양식 및 대화형 통신 웹 채널 구성]**&#x200B;을 찾아 클릭합니다. **[!UICONTROL [적응형 양식] 및 [대화형 통신 웹 채널]** 구성] 대화 상자가 나타납니다. 값을 변경하지 말고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
    CRX-repository에 /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config 파일을 만듭니다.
 
