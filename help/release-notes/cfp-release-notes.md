@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.4 누적 수정 팩에 대한 릴리스 
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3a8fefc8a580d41d327cf7acbf8e4b0440fea604
+source-git-commit: 7c19ef4a56fbfaa2f43b71e4dc48c79f797f32a8
 workflow-type: tm+mt
-source-wordcount: '4432'
+source-wordcount: '4680'
 ht-degree: 22%
 
 ---
@@ -32,7 +32,13 @@ AEM 누적 수정 팩 6.4.8.4은 2020년 3월 AEM 6.4 서비스 팩 8(6.4.8.0)�
 
 AEM 6.4.8.4은 AEM 6.4 서비스 팩 8에 따라 달라지는 CFP(Cumulative Fix Pack)입니다. AEM 6.4 서비스 팩 8을 설치한 후 CFP를 설치합니다.
 
-AEM 6.4.8.4에서 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.8.24으로 업데이트됩니다.
+[!DNL Adobe Experience Manager] 6.4.8.4에 도입된 주요 기능 및 개선 사항은 다음과 같습니다.
+
+* PDFG 변환을 수행할 때 [!DNL Experience Manager Forms] 레지스트리 변경 내용을 활성화 또는 비활성화할 수 있습니다.
+
+* 양식 데이터 모델에서 SOAP 기반 웹 서비스에 대한 X-509 인증서 기반 인증
+
+* 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.8.24으로 업데이트되었습니다.
 
 CFP 및 기타 유형의 릴리스에 대한 자세한 내용은 [AEM Update 릴리스 차량 정의](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-release-vehicle-definitions.html?lang=en)를 참조하십시오.
 
@@ -69,6 +75,20 @@ Adobe Experience Manager 6.4.8.4은 다음 문제에 대한 수정 사항을 제
 >[!NOTE]
 >
 >[!DNL Experience Manager Forms] 는 예약된 누적 수정 팩 릴리스 날짜 이후 1주일 후에 추가  [!DNL Experience Manager] 기능 패키지를 릴리스합니다.
+
+**서신 관리**
+
+* 편지를 편집할 때 조건이 있는 모듈을 로드하는 데 시간이 더 오래 걸립니다(NPR-35326).
+
+* 문자를 편집할 때 내용 및 데이터 바인딩이 사용자 인터페이스(CQ-4312905)에 표시되지 않습니다.
+
+**문서 서비스**
+
+* [!DNL JAVA]을(를) [!DNL JDK1.8.0_261](NPR-35761, NPR-35848)로 업그레이드한 후 PDF를 구성할 수 없습니다.
+
+**Foundation JEE**
+
+* [!DNL Forms] 작업 과정에서 작업 알림을 편집할 때 저장할 수 없습니다(CQ-4315055).
 
 보안 업데이트에 대한 자세한 내용은 [Experience Manager 보안 게시판 페이지](https://helpx.adobe.com/security/products/experience-manager.html)를 참조하십시오.
 
@@ -493,6 +513,26 @@ AEM 6.4.8.4에는 이미지 사전 설정 페이지에서 중복 이름을 확�
 >[!NOTE]
 >
 >[!DNL Experience Manager Forms] 는 예약된 누적 수정 팩 릴리스 날짜 이후 1주일 후에 추가  [!DNL Experience Manager] 기능 패키지를 릴리스합니다.
+
+>[!NOTE]
+>
+>AEM Forms를 사용하지 않는 경우 건너뜁니다. AEM Forms의 수정 사항은 별도의 추가 기능 패키지를 통해 전달됩니다.
+
+1. AEM 누적 수정 팩을 설치했는지 확인합니다.
+1. 운영 체제용 [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#forms-updates)에 나열된 해당 양식 추가 기능 패키지를 다운로드합니다.
+1. [AEM 양식 추가 기능 패키지 설치](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package)에 설명된 대로 양식 추가 기능 패키지를 설치합니다.
+
+### AEM Forms JEE 설치 프로그램 {#install-aem-forms-jee-installer} 설치
+
+>[!NOTE]
+>
+>JEE에서 AEM Forms를 사용하지 않는 경우 건너뜁니다. 별도의 설치 관리자를 통해 AEM Forms JEE의 수정 사항이 전달됩니다.
+
+AEM Forms JEE용 누적 설치 프로그램 및 배포 후 구성에 대한 자세한 내용은 [AEM Forms JEE 패치 설치 프로그램](jee-patch-installer-64.md)을 참조하십시오.
+
+>[!NOTE]
+>
+>JEE에 Forms Experience Manager용 누적 설치 프로그램을 설치한 후 최신 Forms 추가 기능 패키지를 설치하고 `crx-repository\install` 폴더에서 Forms 추가 기능 패키지를 삭제하고 서버를 다시 시작합니다.
 
 ### Uber Jar {#uber-jar}
 
