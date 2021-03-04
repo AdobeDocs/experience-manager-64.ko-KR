@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 4df5ee77-5a77-4efd-b7e1-c78e650673a9
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 5734bcd7231f7ba8779acd8e0325b875e252e104
 workflow-type: tm+mt
-source-wordcount: '2090'
+source-wordcount: '2094'
 ht-degree: 0%
 
 ---
@@ -112,7 +112,7 @@ ht-degree: 0%
 양식에 전체 조각을 표시하려면 다음 단계를 수행합니다.
 
 1. https:[*host*]:[*port*]/system/console/configMgr의 AEM 웹 콘솔 구성 페이지로 이동합니다.
-1. **[!UICONTROL 적응형 양식 구성 서비스]**&#x200B;를 검색하고 클릭하여 편집 모드에서 엽니다.
+1. **[!UICONTROL 적응형 양식 및 대화형 통신 웹 채널 구성]**&#x200B;을 검색하고 클릭하여 편집 모드에서 엽니다.
 1. 자리 표시자 이미지가 아닌 전체 조각을 표시하려면 **[!UICONTROL 조각]** 대신 자리 표시자 활성화 확인란을 비활성화합니다.
 
 ### 응용 양식 {#insert-a-fragment-in-an-adaptive-form}에 조각 삽입
