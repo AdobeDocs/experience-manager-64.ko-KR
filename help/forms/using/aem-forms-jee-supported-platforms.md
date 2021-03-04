@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 translation-type: tm+mt
-source-git-commit: 53154f9ada1062dae4bdccc5eac3d3113cd730a2
+source-git-commit: 95b5e70c1b474d4d207a5a33e8d1ab8ef39685b6
 workflow-type: tm+mt
-source-wordcount: '3318'
+source-wordcount: '3316'
 ht-degree: 1%
 
 ---
@@ -637,7 +637,6 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/) 규�
 * 64비트 OS를 위한 32비트 또는 20GB의 디스크 공간 16GB
 * 그래픽 메모리 - 128MB GPU(256MB 권장)
 * 2.35GB의 하드 디스크 여유 공간
-* DVD-ROM 드라이브
 * 1024 X 768픽셀 이상의 모니터 해상도
 * 비디오 하드웨어 가속(선택 사항)
 * Acrobat Pro DC, Acrobat Standard DC 또는 Adobe Acrobat Reader DC
