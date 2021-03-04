@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 4d3c4650-3e2a-43b1-ad2d-8d0ae2254ca9
 translation-type: tm+mt
-source-git-commit: 53154f9ada1062dae4bdccc5eac3d3113cd730a2
+source-git-commit: 95b5e70c1b474d4d207a5a33e8d1ab8ef39685b6
 workflow-type: tm+mt
-source-wordcount: '3273'
+source-wordcount: '3271'
 ht-degree: 2%
 
 ---
@@ -636,7 +636,6 @@ x86
 * 64비트 OS를 위한 32비트 또는 20GB의 디스크 공간 16GB
 * 그래픽 메모리 - 128MB GPU(256MB 권장)
 * 2.35GB의 하드 디스크 여유 공간
-* DVD-ROM 드라이브
 * 1024 X 768픽셀 이상의 모니터 해상도
 * 비디오 하드웨어 가속(선택 사항)
 * Acrobat Pro DC, Acrobat Standard DC 또는 Adobe Acrobat Reader DC
