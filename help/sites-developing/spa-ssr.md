@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
 translation-type: tm+mt
-source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+source-git-commit: 226cd6688a579409371cb17f6ba31548bee312b3
 workflow-type: tm+mt
 source-wordcount: '1711'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 >[!NOTE]
 >단일 페이지 애플리케이션(SPA) 편집기 기능을 사용하려면 [AEM 6.4 서비스 팩 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) 이상이 필요합니다.
 >
->SPA 편집기는 SPA 프레임워크 기반의 클라이언트측 렌더링(예: 반응형 또는 각도)이 필요한 프로젝트에 권장되는 솔루션입니다.
+>SPA 편집기는 SPA 프레임워크 기반의 클라이언트측 렌더링(예: 반응 또는 Angular)이 필요한 프로젝트에 권장되는 솔루션입니다.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 ## SSR {#when-to-use-ssr} 사용 시기
 
-모든 프로젝트에 SSR이 필요하지 않습니다. AEM은 SPA용 JS SSR을 완벽하게 지원하지만 Adobe은 모든 프로젝트에 대해 체계적으로 구현하는 것은 권장하지 않습니다.
+모든 프로젝트에 SSR이 필요하지 않습니다. AEM은 SPA용 JS SSR을 완벽하게 지원하지만, Adobe은 모든 프로젝트에 대해 체계적으로 구현하는 것은 권장하지 않습니다.
 
 SSR을 구현하기로 결정할 때 먼저 SSR을 장기간 유지 보수하는 것을 포함하여 프로젝트에 대해 SSR을 보다 사실적으로 추가함으로써 얼마나 많은 복잡성, 노력, 비용이 추가되는지를 예상해야 합니다. SSR 아키텍처는 추가된 값이 예상 비용을 명확하게 초과하는 경우에만 선택해야 합니다.
 
@@ -60,7 +60,7 @@ Adobe I/O Runtime에 대한 자세한 내용은
 다음 섹션에서는 Adobe I/O Runtime을 사용하여 두 가지 서로 다른 모델에서 SPA용 SSR을 구현하는 방법을 자세히 설명합니다.
 
 * [AEM 기반의 커뮤니케이션 흐름](#aem-driven-communication-flow)
-* [Adobe I/O 런타임 기반의 커뮤니케이션 흐름](#adobe-io-driven-communication-flow)
+* [Adobe I/O-런타임 기반의 커뮤니케이션 흐름](#adobe-io-driven-communication-flow)
 
 >[!NOTE]
 >
@@ -114,8 +114,8 @@ SSR을 사용할 때 AEM의 [구성 요소 상호 작용 작업 과정](/help/si
 
 | 부트스트랩 | 이점 | 단점 |
 |---|---|---|
-| aem | AEM은 필요한 경우 라이브러리 삽입 작업을 관리합니다. AEM에서는 리소스 유지 관리만 가능합니다.<br> | SPA 개발자에게 생소한 일 |
-| adobe i/o runtime | SPA 개발자에게 더 친숙함 | CSS 및 JavaScript와 같은 응용 프로그램에 필요한 Clientlib 리소스는 AEM 개발자가 [`allowProxy` 속성](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet)<br>리소스를 AEM과 Adobe I/O Runtime<br>간에 동기화해야 합니다. SPA 작성을 활성화하려면 Adobe I/O Runtime용 프록시 서버가 필요할 수 있습니다 |
+| AEM | AEM은 필요한 경우 라이브러리 삽입 작업을 관리합니다. AEM에서는 리소스 유지 관리만 가능합니다.<br> | SPA 개발자에게 생소한 일 |
+| Adobe I/O Runtime | SPA 개발자에게 더 친숙함 | CSS 및 JavaScript와 같은 응용 프로그램에 필요한 Clientlib 리소스는 AEM 개발자가 [`allowProxy` 속성](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet)<br>리소스를 AEM과 Adobe I/O Runtime<br>간에 동기화해야 합니다. SPA 작성을 활성화하려면 Adobe I/O Runtime용 프록시 서버가 필요할 수 있습니다 |
 
 ## SSR {#planning-for-ssr} 계획
 
@@ -133,10 +133,10 @@ SSR을 활용하려면 코드를 AEM뿐만 아니라 서버측 렌더링을 담�
 
 AEM의 SPA용 SSR을 사용하려면 Adobe I/O Runtime이 필요합니다. 이 SSR은 앱 콘텐츠 서버 쪽의 렌더링에 대해 호출됩니다. 앱의 HTL 내에서 콘텐츠를 렌더링하기 위해 Adobe I/O Runtime의 리소스가 호출됩니다.
 
-AEM이 즉시 사용 가능한 Angular 및 React SPA 프레임워크을 지원하는 것과 마찬가지로 서버측 렌더링도 Angular 및 Reimate 앱에 대해 지원됩니다. 자세한 내용은 두 프레임워크에 대한 NPM 설명서를 참조하십시오.
+AEM이 즉시 사용 가능한 Angular 및 React SPA 프레임워크을 지원하는 것처럼 Angular 및 Response 앱에 대해 서버측 렌더링도 지원됩니다. 자세한 내용은 두 프레임워크에 대한 NPM 설명서를 참조하십시오.
 
 * 반응:[https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
-* 각도:[https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
+* Angular:[https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 
 간단한 예를 보려면 [We.Retail 저널 앱](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)을 참조하십시오. 전체 응용 프로그램 서버측을 렌더링합니다. 이는 실제 사례는 아니지만 SSR을 구현하는 데 필요한 사항을 설명합니다.
 
@@ -144,7 +144,7 @@ AEM이 즉시 사용 가능한 Angular 및 React SPA 프레임워크을 지원�
 >[We.Retail 저널 앱](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)은 데모용으로만 사용되며 권장 Adobe I/O Runtime 대신 Node.js를 간단한 예로 사용합니다. 이 예제는 프로젝트 작업에 사용해서는 안 됩니다.
 
 >[!NOTE]
->모든 AEM 프로젝트는 React 또는 Angular를 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 [AEM Project Tranype](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)을 활용해야 합니다.
+>모든 AEM 프로젝트는 React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 [AEM Project Tranype](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)을 활용해야 합니다.
 
 ## Node.js {#using-node-js} 사용
 
@@ -164,7 +164,7 @@ AEM에서 SPA과 함께 SSR을 사용하는 데 필요한 [원격 컨텐츠 렌�
 
 ### RemoteContentRenderingService {#remotecontentrenderingservice}
 
-`RemoteContentRenderingService` 는 Adobe I/O과 같이 원격 서버에서 렌더링된 내용을 검색하기 위한 OSGi 서비스입니다.원격 서버로 보낸 내용은 전달된 요청 매개 변수를 기반으로 합니다.
+`RemoteContentRenderingService` 는 Adobe I/O과 같이 원격 서버에서 렌더링된 내용을 검색하는 OSGi 서비스입니다.원격 서버로 보낸 내용은 전달된 요청 매개 변수를 기반으로 합니다.
 
 `RemoteContentRenderingService` 추가 컨텐츠 조작이 필요할 때 종속성 전환을 통해 사용자 지정 Sling 모델이나 서블릿에 삽입할 수 있습니다.
 
