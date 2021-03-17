@@ -3,9 +3,9 @@ title: 표현물로 XMP 원본에 쓰기
 description: XMP 원본에 쓰기 기능을 사용하여 에셋의 메타데이터 변경 내용을 에셋의 모든 또는 특정 표현물에 전파하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
+source-git-commit: debf372e6a0b8f00bbfce16325908a5806c062d5
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '778'
 ht-degree: 1%
 
 ---
@@ -13,11 +13,9 @@ ht-degree: 1%
 
 # 표현물로 XMP 원본에 쓰기 {#xmp-writeback-to-renditions}
 
-AEM(Adobe Experience Manager) Assets의 이 XMP 원본에 쓰기 기능은 자산 변환에 대한 자산 메타데이터 변경 내용을 복제합니다.
+[!DNL Adobe Experience Manager Assets]의 이 XMP 원본에 쓰기 기능은 원래 자산의 변환에 대한 메타데이터 변경 내용을 복제합니다. 자산 내에서 또는 자산을 업로드하는 동안 자산에 대한 메타데이터를 변경하면 변경 내용이 처음에 자산 계층의 메타데이터 노드에 저장됩니다.
 
-AEM Assets 내에서 또는 자산을 업로드하는 동안 에셋에 대한 메타데이터를 변경하면 변경 내용이 처음에 Crx-De의 에셋 노드 내에 저장됩니다.
-
-XMP 쓰기 저장(writeback) 기능은 메타데이터 변경 내용을 자산의 모든 표현물 또는 특정 표현물에 전파합니다.
+XMP 쓰기 저장(writeback) 기능을 사용하여 자산의 모든 또는 특정 표현물에 메타데이터 변경 내용을 전파할 수 있습니다. 이 기능은 `jcr` 네임스페이스를 사용하는 메타데이터 속성만 다시 기록합니다. 즉, `dc:title` 속성은 다시 기록되지만 `mytitle` 속성은 기록되지 않습니다.
 
 `Classic Leather`라는 제목의 자산의 [!UICONTROL 제목] 속성을 `Nylon`으로 수정하는 시나리오를 생각해 보십시오.
 
@@ -27,9 +25,7 @@ XMP 쓰기 저장(writeback) 기능은 메타데이터 변경 내용을 자산�
 
 ![metadata_stored](assets/metadata_stored.png)
 
-그러나 AEM Assets은 자산의 변환에 메타데이터 변경 사항을 자동으로 전파하지 않습니다.
-
-XMP 원본에 쓰기 기능을 사용하면 에셋의 모든 또는 특정 변환에 메타데이터 변경 내용을 적용할 수 있습니다. 하지만 변경 사항은 자산 계층의 메타데이터 노드 아래에 저장되지 않습니다. 대신 이 기능은 변환에 대한 바이너리 파일의 변경 사항을 포함합니다.
+그러나 [!DNL Experience Manager Assets]은(는) 에셋 변환에 메타데이터 변경 사항을 자동으로 전파하지 않습니다. XMP writeback](#enabling-xmp-writeback)을 활성화하는 방법을 참조하십시오.[
 
 ## XMP writeback 사용 {#enabling-xmp-writeback}
 
@@ -76,7 +72,7 @@ PTIFF 변환은 Dynamic Media Hybrid 모드에서만 로컬에 만들어지고 �
 
 >[!NOTE]
 >
->필터링은 자산 바이너리의 XMP 소스에서 파생되는 속성에만 작동합니다. EXIF 및 IPTC 형식 등 XMP이 아닌 소스에서 파생된 속성의 경우 필터링이 작동하지 않습니다. 예를 들어 자산 생성 날짜는 EXIF TIFF의 `CreateDate` 속성에 저장됩니다. AEM은 이 값을 `exif:DateTimeOriginal` 메타데이터 필드에 저장합니다. 소스는 XMP이 아닌 소스이므로 필터링은 이 속성에서 작동하지 않습니다.
+>필터링은 자산 바이너리의 XMP 소스에서 파생되는 속성에만 작동합니다. EXIF 및 IPTC 형식 등 XMP이 아닌 소스에서 파생된 속성의 경우 필터링이 작동하지 않습니다. 예를 들어 자산 생성 날짜는 EXIF TIFF의 `CreateDate` 속성에 저장됩니다. AEM에서는 이 값을 `exif:DateTimeOriginal` 메타데이터 필드에 저장합니다. 소스는 XMP이 아닌 소스이므로 필터링은 이 속성에서 작동하지 않습니다.
 
 1. `https://[aem_server]:[port]/system/console/configMgr`에서 구성 관리자를 엽니다.
 1. **[!UICONTROL Adobe CQ DAM XmpFilter]** 구성을 엽니다.
