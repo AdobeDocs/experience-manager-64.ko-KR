@@ -7,10 +7,11 @@ uuid: d7b0d9a5-f5f0-4c21-a6f8-622bf94f4491
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
+feature: 대화형 통신
 translation-type: tm+mt
-source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1834'
 ht-degree: 0%
 
 ---
@@ -239,9 +240,9 @@ Forms Designer를 사용하여 XDP 템플릿을 만든 후 대화형 통신을 �
    | 고객 정보 | 고객 세부 정보 | 1 |
    | 청구 요약 | 청구 요약 | 3 |
    | 요약 요금 | 비용 요약 | 2 |
-   | itemisedcalls | 항목별 호출 | 3 |
+   | itemisedcalls | 항목별 호출 | 1 |
    | paynow | 지금 지불 | 2 |
-   | vas | 부가 가치 서비스 | 3 |
+   | vas | 부가 가치 서비스 | 1 |
 
    다음 이미지는 템플릿에 모든 패널을 추가한 후 컨텐츠 트리를 보여 줍니다.
 
