@@ -7,10 +7,11 @@ uuid: e73b4b4c-6ad7-4400-b776-5892549970c3
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bcda96ff-6c7d-46c4-a9e8-7e0fb245cde9
+feature: 적응형 양식
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1233'
+source-wordcount: '1235'
 ht-degree: 3%
 
 ---
@@ -102,7 +103,7 @@ JSON 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. �
 * readOnly 속성은 적응형 양식 구성 요소의 readonly 특성을 설정합니다.
 * 필수 속성은 적응형 양식 필드를 필수로 표시하지만, 패널의 경우(유형이 개체인 경우) 최종 제출된 JSON 데이터에는 해당 객체에 해당하는 빈 값이 있는 필드가 포함됩니다.
 * pattern 속성은 응용 형식으로 유효성 검사 패턴(정규 표현식)으로 설정됩니다.
-* JSON 스키마 파일 확장명은 .schema.json에 저장되어야 합니다. 예: &lt;filename>.schema.json.
+* JSON 스키마 파일 확장명은 .schema.json에 보관되어야 합니다. 예: &lt;filename>.schema.json.
 
 ## 샘플 JSON 스키마 {#sample-json-schema}
 
@@ -315,7 +316,7 @@ JSON 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. �
 }
 ```
 
-위의 예에서는 고객 레코드를 정의합니다. 각 고객은 배송 주소와 청구 주소를 모두 갖습니다. 두 주소의 구조는 동일하며, 주소는 주소, 시/도가 있으므로 주소를 중복하지 않는 것이 좋습니다. 또한 나중에 변경할 수 있도록 필드를 추가하거나 삭제할 수 있습니다.
+위의 예에서는 고객 레코드를 정의합니다. 각 고객은 배송 주소와 청구 주소를 모두 갖습니다. 두 주소의 구조는 동일하며, 주소는 주소, 시/도가 있으므로 주소를 복제하지 않는 것이 좋습니다. 또한 나중에 변경할 수 있도록 필드를 추가하거나 삭제할 수 있습니다.
 
 ## JSON 스키마 정의 {#pre-configuring-fields-in-json-schema-definition}의 사전 구성 필드
 
