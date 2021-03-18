@@ -1,7 +1,7 @@
 ---
 title: 느린 쿼리 문제 해결
 seo-title: 느린 쿼리 문제 해결
-description: 'null'
+description: 느린 쿼리 문제 해결
 seo-description: 'null'
 uuid: ad09546a-c049-44b2-99a3-cb74ee68f040
 contentOwner: User
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 translation-type: tm+mt
-source-git-commit: c4e18cad7bc08638af9dce6ab396554052043e16
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2269'
 ht-degree: 0%
 
 ---
