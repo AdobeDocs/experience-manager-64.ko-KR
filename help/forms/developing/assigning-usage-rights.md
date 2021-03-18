@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
+role: 개발자
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3937'
+source-wordcount: '3938'
 ht-degree: 0%
 
 ---
@@ -392,7 +393,7 @@ Acrobat Reader DC 확장 서비스 작업을 프로그래밍 방식으로 수행
 * 권한이 활성화된 PDF 문서를 열 때 Adobe Reader 내에 표시되는 메시지입니다.
 * 자격 증명이 더 이상 유효하지 않은 날짜입니다.
 * 자격 증명이 유효하지 않은 날짜입니다.
-* 이 권한이 활성화된 PDF 문서에 대해 설정된 사용 권한.
+* 이 권한이 활성화된 PDF 문서에 설정된 사용 권한.
 * 자격 증명을 사용한 횟수입니다.
 
 **참고 항목**
