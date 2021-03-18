@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
+feature: 구성
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '5916'
+source-wordcount: '5917'
 ht-degree: 0%
 
 ---
@@ -74,7 +75,7 @@ AEM 6.3에서는 온라인 개정 정리라는 이 기능의 온라인 버전이
 1. 첫 번째 온라인 개정 정리 실행 후 저장소 크기가 두 배로 증가합니다. 이는 디스크에 저장된 2세대 버전이 있기 때문입니다.
 1. 온라인 개정 정리 프로세스가 이전 세대를 재해석하므로 후속 실행 중에 저장소는 새로운 세대를 생성하는 동안 일시적으로 확장되고 첫 번째 실행 이후에 있던 크기로 안정화됩니다.
 
-또한 커밋의 유형 및 수에 따라 각 생성은 이전 생성과 비교하여 크기가 달라질 수 있으므로 최종 크기는 한 실행과 다른 실행마다 다를 수 있습니다.
+또한 커밋의 유형 및 수에 따라 각 생성은 이전 세대 버전과 비교할 때 크기가 달라질 수 있으므로 최종 크기는 한 실행과 다른 실행마다 다를 수 있습니다.
 
 이러한 사실로 인해 디스크를 처음에 예상 저장소 크기보다 최소 2 또는 3배 더 크게 크기를 지정하는 것이 좋습니다.
 
@@ -91,7 +92,7 @@ AEM 6.3에서는 온라인 개정 정리라는 이 기능의 온라인 버전이
 
 아래 두 차트에서 AEM 6.3과 비교하여 평균 실행 시간 단축 및 AEM 6.4의 디스크 평균 풋프린트 수를 보여주는 내부 실험 결과를 소개합니다.
 
-![onrc-duration-6_4vs63 ](assets/onrc-duration-6_4vs63.png) ![segmentstore-6_4vs63](assets/segmentstore-6_4vs63.png)
+![onrc-duration-6_4vs63](assets/onrc-duration-6_4vs63.png) ![segmentstore-6_4vs63](assets/segmentstore-6_4vs63.png)
 
 ### 전체 및 세부 구성 요소 구성 방법 {#how-to-configure-full-and-tail-compaction}
 
@@ -614,7 +615,7 @@ java -Dupdate.limit=10000 -Dcompaction-progress-log=150000 -Dlogback.configurati
    <td><strong>개정과 페이지 버전의 차이는 무엇입니까?</strong></td> 
    <td> 
     <ul> 
-     <li><strong>Oak 개정: </strong> Oak는 노드 및 속성으로 구성된 큰 트리 계층 구조의 모든 컨텐츠를 구성합니다. 이 컨텐츠 트리의 각 스냅샷 또는 개정은 변경할 수 없으며 트리 변경 사항은 새로운 수정 시퀀스로 표시됩니다. 일반적으로 각 컨텐츠 수정은 새 개정을 트리거합니다. <a href="https://jackrabbit.apache.org/dev/ngp.html" target="_blank"> 링크</a>를 참조하십시오.</li> 
+     <li><strong>Oak 개정: </strong> Oak는 노드 및 속성으로 구성된 큰 트리 계층 구조의 모든 컨텐츠를 구성합니다. 이 컨텐츠 트리의 각 스냅샷 또는 개정은 변경할 수 없으며 트리 변경 사항은 새로운 수정 사항의 시퀀스로 표시됩니다. 일반적으로 각 컨텐츠 수정은 새 개정을 트리거합니다. <a href="https://jackrabbit.apache.org/dev/ngp.html" target="_blank"> 링크</a>를 참조하십시오.</li> 
      <li><strong>페이지 버전:</strong> 버전 매기기를 통해 특정 시점의 페이지 "스냅샷"을 만들 수 있습니다. 일반적으로 페이지가 활성화되면 새 버전이 만들어집니다. 자세한 내용은 <a href="/help/sites-authoring/working-with-page-versions.md" target="_blank">페이지 버전 작업</a>을 참조하십시오.</li> 
     </ul> </td> 
   </tr> 
