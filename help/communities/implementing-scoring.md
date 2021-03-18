@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b19b3c24-82a0-468c-a077-9f3edb96afc9
 tagskeywords: scoring, badging, badges, gamification
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2885'
+source-wordcount: '2886'
 ht-degree: 2%
 
 ---
@@ -416,7 +417,7 @@ cURL -i -X POST -H *헤더* -u *signin * -F *operation * -F *badge * *member-pro
 
 *badge* = &quot;badgeContentPath=*badge-image-file*&quot;
 
-*badge-image-file* = 보관소의 배지 이미지 파일 위치\
+*badge-image-file* = 저장소의 배지 이미지 파일 위치\
 예를 들면 다음과 같습니다.content/moderator.png
 
 *member-profile-url* = 게시에서 멤버 프로필에 대한 끝점입니다.\
