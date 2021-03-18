@@ -1,7 +1,7 @@
 ---
 title: AEM Brackets 확장
 seo-title: AEM Brackets 확장
-description: 'null'
+description: AEM Brackets 확장
 seo-description: 'null'
 uuid: 2f0dfa42-eb34-44ae-90eb-b5f321c03b79
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 translation-type: tm+mt
-source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '928'
 ht-degree: 2%
 
 ---
