@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: c8672774-6911-497d-837b-1e5953c4226a
+feature: 언어 복사
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3429'
+source-wordcount: '3431'
 ht-degree: 2%
 
 ---
@@ -54,7 +55,7 @@ AEM에서는 컨텐츠의 초기 번역을 위해 번역 프로젝트를 만들�
 
 예를 들어 /content/geometrixx/fr 언어 루트는 /content/geometrixx/en 마스터 언어의 프랑스어 번역을 위해 만들어집니다. 프랑스어 복사본에는 다른 페이지가 없습니다.
 
-* 프랑스어 언어 사본을 대상으로 하는 /content/geometrixx/en/products 페이지 및 모든 하위 페이지에 대한 번역 프로젝트가 생성됩니다. 언어 복사본에는 /content/geometrixx/fr/products 페이지가 포함되어 있지 않으므로 AEM에서는 즉시 /content/geometrixx/en/products 페이지와 모든 하위 페이지를 프랑스어 언어 사본으로 복사합니다. 사본은 번역 프로젝트에 포함되어 있습니다.
+* 프랑스어 언어 사본을 대상으로 하는 /content/geometrixx/en/products 페이지 및 모든 하위 페이지에 대한 번역 프로젝트가 생성됩니다. 언어 복사본에는 /content/geometrixx/fr/products 페이지가 포함되어 있지 않으므로 AEM에서는 즉시 /content/geometrixx/en/products 페이지와 모든 하위 페이지를 프랑스어 언어 복사본으로 복사합니다. 사본은 번역 프로젝트에 포함되어 있습니다.
 * 프랑스어 언어 사본을 대상으로 하는 /content/geometrixx/en 페이지와 모든 하위 페이지에 대한 번역 프로젝트가 생성됩니다. 언어 복사본에는 /content/geometrixx/en 페이지(언어 루트)에 해당하는 페이지가 포함되어 있으므로 AEM에서는 /content/geometrixx/en 페이지와 모든 하위 페이지를 복사하고 론치에 추가합니다. 사본은 번역 프로젝트에 포함되어 있습니다.
 
 ## 참조 패널 {#creating-translation-projects-using-the-references-panel}을 사용하여 번역 프로젝트 만들기
@@ -71,7 +72,7 @@ AEM에서는 컨텐츠의 초기 번역을 위해 번역 프로젝트를 만들�
 
 **초기 번역 및 번역 업데이트**
 
-[참조] 패널에는 기존 언어 사본을 업데이트할지 또는 첫 번째 언어 사본을 만들지 여부를 나타냅니다. 선택한 페이지에 대한 언어 복사본이 있는 경우 프로젝트 관련 명령에 액세스할 수 있도록 언어 사본 업데이트 탭이 나타납니다.
+[참조] 패널에는 기존 언어 사본을 업데이트할지 또는 첫 번째 언어 사본을 만들지 여부를 나타냅니다. 선택한 페이지에 대한 언어 복사본이 있는 경우 프로젝트 관련 명령에 액세스할 수 있는 언어 사본 업데이트 탭이 나타납니다.
 
 ![chlimage_1-239](assets/chlimage_1-239.png)
 
