@@ -7,10 +7,11 @@ uuid: 91702f41-5c19-4840-a3b5-59d69003fd67
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 39262cb1-1447-469a-9c01-886f66eeec74
+feature: 대화형 통신
 translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2029'
+source-wordcount: '2031'
 ht-degree: 0%
 
 ---
@@ -166,7 +167,7 @@ ht-degree: 0%
 
    ![select_style_ic_web](assets/select_style_ic_web.png)
 
-1. 다음 단계를 사용하여 대화형 통신에 하이퍼링크 텍스트에 스타일을 지정하여 단추로 표시합니다.
+1. 다음 단계에 따라 대화형 통신에 하이퍼링크 텍스트에 스타일을 지정하여 단추 형태로 표시합니다.
 
    1. 텍스트 구성 요소를 누르고 ![편집](assets/edit.png) (편집)을 선택합니다.
    1. **테두리** 섹션에서 **1.5px**&#x200B;을 **테두리 너비**&#x200B;로 지정하고 **단색**&#x200B;을 **테두리 스타일**&#x200B;로 선택하고 **46px**&#x200B;을 **테두리 반경**.
