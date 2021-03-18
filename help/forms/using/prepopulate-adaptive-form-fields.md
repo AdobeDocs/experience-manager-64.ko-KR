@@ -1,16 +1,17 @@
 ---
 title: 적응형 양식 필드 미리 채우기
 seo-title: 적응형 양식 필드 미리 채우기
-description: 기존 데이터를 사용하여 적응형 양식의 필드를 미리 채울 수 있습니다.
+description: 기존 데이터를 사용하여 적응형 양식의 필드를 미리 채웁니다.
 seo-description: 적응형 양식을 사용하면 소셜 프로필로 로그인하여 기본 정보를 양식에 미리 입력할 수 있습니다. 이 문서에서는 이 작업을 수행하는 방법에 대해 설명합니다.
 uuid: 05d74a59-3950-4513-bfce-6ff3d9d5318c
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 2ddb33a5-0d62-46f4-8f8c-0f0807a975cb
+feature: 적응형 양식
 translation-type: tm+mt
-source-git-commit: f234d368163f4260563d69230a2cbda37b6d315a
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2032'
+source-wordcount: '2034'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 # 응용 양식 필드 미리 채우기 {#prefill-adaptive-form-fields}
 
-기존 데이터를 사용하여 적응형 양식의 필드를 미리 채울 수 있습니다.
+기존 데이터를 사용하여 적응형 양식의 필드를 미리 채웁니다.
 
 ## 소개 {#introduction}
 
@@ -84,7 +85,7 @@ XFA 기반 적응형 양식의 자동 완성 XML 및 제출된 XML의 구조는 
 
 * **XML 구조 미리 채우기**:XFA 기반 적응형 양식의 프리플라이트 XML은 XFA 양식 템플릿의 데이터 스키마를 준수해야 합니다. 언바운드 필드를 미리 채우려면 미리 채우기 XML 구조를 `/afData/afBoundData` 태그로 둘러싸십시오.
 
-* **제출된 XML 구조**:XML의 프리플라이트 기능을 사용하지 않으면, 제출된 XML에  `afData` 래퍼 태그의 바운드 필드와 언바운드 필드 모두에 대한 데이터가 포함됩니다. XML 자동 완성 기능을 사용하는 경우 제출한 XML의 구조는 미리 채우기 XML과 동일합니다. 프리플라이트 XML이 `afData` 루트 태그로 시작하는 경우 출력 XML도 동일한 형식을 갖습니다. 프리플라이트 XML에 `afData/afBoundData`래퍼가 없고 대신 `employeeData` 같은 스키마 루트 태그에서 직접 시작하는 경우 제출된 XML도 `employeeData` 태그로 시작합니다.
+* **제출된 XML 구조**:XML의 프리플라이트 기능을 사용하지 않는 경우, 제출된 XML에는 래퍼 태그의 바운드 필드와 언바운드 필드 모두에 대한 데이터가  `afData` 포함됩니다. XML 자동 완성 기능을 사용하는 경우 제출한 XML의 구조는 미리 채우기 XML과 동일합니다. 프리플라이트 XML이 `afData` 루트 태그로 시작하는 경우 출력 XML도 동일한 형식을 갖습니다. 프리플라이트 XML에 `afData/afBoundData`래퍼가 없고 대신 `employeeData` 같은 스키마 루트 태그에서 직접 시작하는 경우 제출된 XML도 `employeeData` 태그로 시작합니다.
 
 Prefill-Submit-Data-ContentPackage.zip
 
