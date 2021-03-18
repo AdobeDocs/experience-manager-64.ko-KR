@@ -1,7 +1,7 @@
 ---
 title: 렌더링 및 전달
 seo-title: 렌더링 및 전달
-description: 'null'
+description: 렌더링 및 전달
 seo-description: 'null'
 uuid: 1253b6a5-6bf3-42b1-be3a-efa23b6ddb51
 contentOwner: User
@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 translation-type: tm+mt
-source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '577'
 ht-degree: 8%
 
 ---
