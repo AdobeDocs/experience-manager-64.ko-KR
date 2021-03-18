@@ -9,10 +9,11 @@ topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 1e533a8c-f200-40ca-b170-0e9abee8513e
 noindex: true
+feature: 적응형 양식
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2781'
+source-wordcount: '2783'
 ht-degree: 3%
 
 ---
@@ -293,7 +294,7 @@ ht-degree: 3%
    >다음과 같은 경우 XFA 양식의 응용 양식 및 스키마(데이터 스키마)를 만드는 데 사용되는 스키마가 동일한지 확인합니다.
    >
    >* 적응형 양식이 스키마 기반입니다.
-   >* 기록 문서에 **양식 서식 파일을 기록 문서** 옵션으로 사용 중입니다.
+   >* 기록 문서에 **레코드 템플릿 문서** 연결 옵션을 사용하고 있습니다.
 
 
 1. **완료를 클릭합니다.**
