@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -75,7 +76,7 @@ ht-degree: 0%
 
 ## 활성 리소스에 태그 적용 {#applying-tags-to-enablement-resources}
 
-지원 리소스와 학습 경로는 `Show in Catalog`이 선택되면 모든 카탈로그에 표시됩니다. 리소스 및 학습 경로에 태그를 추가하면 카탈로그 UI에서 필터링할 수 있을 뿐만 아니라 특정 카탈로그에 대한 사전 필터링을 수행할 수 있습니다.
+`Show in Catalog`이(가) 선택되면 활성 리소스 및 학습 경로가 모든 카탈로그에 표시됩니다. 리소스 및 학습 경로에 태그를 추가하면 카탈로그 UI에서 필터링할 수 있을 뿐만 아니라 특정 카탈로그에 대한 사전 필터링을 수행할 수 있습니다.
 
 활성 리소스 및 학습 경로를 특정 카탈로그에 제한하려면 [사전 필터](catalog-developer-essentials.md#pre-filters)를 만듭니다.
 
