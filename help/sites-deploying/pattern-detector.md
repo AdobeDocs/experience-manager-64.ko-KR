@@ -9,11 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 8cdcfd3a-7003-4cce-97f4-da7a1a887d1b
+feature: 업그레이드
 translation-type: tm+mt
-source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 2%
+source-wordcount: '523'
+ht-degree: 3%
 
 ---
 
@@ -31,7 +32,7 @@ ht-degree: 2%
 
 ## 설정 방법 {#how-to-set-up}
 
-Pattern Detector는 AEM 6.5 업그레이드를 대상으로 6.1에서 6.5까지 모든 소스 AEM 버전에서 작동하는 [하나의 패키지로 별도로 릴리스됩니다. ](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) [패키지 관리자](https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/package-manager.html)를 사용하여 설치할 수 있습니다.
+Pattern Detector는 AEM 6.5 업그레이드를 대상으로 6.1에서 6.5까지 모든 소스 AEM 버전에서 작동하는 [하나의 패키지로 별도로 릴리스됩니다. ](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) [패키지 관리자](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html)를 사용하여 설치할 수 있습니다.
 
 ## 사용 방법 {#how-to-use}
 
