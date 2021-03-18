@@ -7,10 +7,11 @@ uuid: b98e9a49-cef2-42f2-b484-8765b859895b
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c106aa41-cbc0-4daf-9ac6-6c0d23710010
+feature: 대화형 통신
 translation-type: tm+mt
-source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3152'
+source-wordcount: '3154'
 ht-degree: 2%
 
 ---
@@ -340,7 +341,7 @@ Interactive Communications는 개인화되고 인터랙티브한 커뮤니케이
 
 필요한 경우 **[!UICONTROL 상속을 되돌린 후 페이지 동기화]**&#x200B;를 선택합니다. 전체 대화형 통신을 동기화하려면 이 옵션을 선택합니다. 이 옵션을 선택하지 않으면 상속을 재활성화할 때 관련 대상 영역만 동기화됩니다.
 
-**[!UICONTROL Yes]**&#x200B;을 누릅니다.
+**[!UICONTROL 예]**&#x200B;를 누릅니다.
 
 ### 동기화 {#synchronize-1}
 
