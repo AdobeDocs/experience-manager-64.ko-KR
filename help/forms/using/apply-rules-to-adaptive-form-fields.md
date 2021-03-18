@@ -7,10 +7,11 @@ page-status-flag: de-activated
 uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
+feature: 적응형 양식
 translation-type: tm+mt
-source-git-commit: abf41bed195c7ea77202e0772e7be12501a6a5ac
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1154'
 ht-degree: 0%
 
 ---
@@ -91,7 +92,7 @@ ht-degree: 0%
 
 1. ![dropbjectstoinputfield-updatedata](assets/dropobjectstoinputfield-updatedata.png)
 
-   양식 개체 탭의 **[!UICONTROL 배송 주소, 주 및 우편 번호]** 필드를 **[!UICONTROL Drop 개체의 해당 태블릿 이름 .property(예: customerdetails .shippingAddress)로 드래그하여 놓거나**[!UICONTROL  INPUT ]**상자에 있는]** 필드를 선택하십시오. 태블릿 이름이 접두사로 추가된 모든 필드(예: 이 사용 사례의 고객 세부 사항)는 업데이트 서비스에 대한 입력 데이터로 사용됩니다. 이러한 필드에 제공된 모든 컨텐츠는 데이터 소스에서 업데이트됩니다.
+   양식 개체 탭의 **[!UICONTROL 배송 주소, 주 및 우편 번호]** 필드를 **[!UICONTROL Drop 개체의 해당 태블릿 이름 .property(예: customerdetails .shippingAddress)로 드래그하여 놓거나**[!UICONTROL  INPUT ]**상자에 있는]** 필드를 선택하십시오. 태블릿 이름이 접두사로 추가된 모든 필드(예: 이 사용 사례의 사용자 지정 세부 사항)는 업데이트 서비스에 대한 입력 데이터로 사용됩니다. 이러한 필드에 제공된 모든 컨텐츠는 데이터 소스에서 업데이트됩니다.
 
    >[!NOTE]
    >
