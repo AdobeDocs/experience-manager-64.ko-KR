@@ -1,7 +1,7 @@
 ---
 title: 워크플로우 우수 사례
 seo-title: 워크플로우 우수 사례
-description: 'null'
+description: 워크플로우 우수 사례
 seo-description: 'null'
 uuid: 79be4055-c2ef-428e-9054-103c6cfde1d2
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 translation-type: tm+mt
-source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1924'
 ht-degree: 1%
 
 ---
