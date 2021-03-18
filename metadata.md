@@ -1,29 +1,22 @@
 ---
 cloud: experience-cloud
-solution-title: 학습 및 지원
-solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-64.html
-solution-icon: assets/experience-cloud-logo-24.png
-getting-started-title: 시작하기
-getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-tutorials.html
-tutorials-title: 자습서
-tutorials-url: https://helpx.adobe.com/kr/experience-manager/kt/index/aem-6-4-videos.html
 mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-64.ko-KR
 solution: Experience Manager
-type: Documentation
+type: 설명서
 index: y
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 71%
+source-wordcount: '136'
+ht-degree: 74%
 
 ---
 
 
 # 내부 사용을 위한 메타데이터
 
-metadata.md 파일에는 보고서에서 사용 안내서 TOC.md 파일로 전달하는 보고서 수준 메타데이터가 포함되어 있습니다. 사용 안내서의 metadata.md 컨텐츠를 변경하려면 모든 TOC.md 파일을 변경해야 합니다.
+metadata.md 파일에는 보고서에서 사용 안내서 TOC.md 파일로 전달하는 보고서 수준 메타데이터가 포함되어 있습니다. 사용 안내서의 metadata.md 콘텐츠를 변경하려면 모든 TOC.md 파일을 변경해야 합니다.
 
 | 메타데이터 | 기능 |
 |--- |--- |
@@ -35,7 +28,7 @@ metadata.md 파일에는 보고서에서 사용 안내서 TOC.md 파일로 전�
 | mini-toc-levels | 오른쪽 레일에 나타나는 제목 수준 수를 결정합니다. 기본값은 2입니다. |
 | git-repo | 내부 사용을 위한 기본 보고서의 위치를 지정합니다. |
 
-TOC.md 파일
+In TOC.md file
 
 | 메타데이터 | 기능 |
 |--- |--- |
