@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: dcf83c9f-b818-44a2-9079-80a4fc357c4f
+role: 개발자
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1250'
 ht-degree: 3%
 
 ---
@@ -36,7 +37,7 @@ ht-degree: 3%
    <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#invoking_human_centric_long_lived_processes">인간 중심의 오랜 프로세스 호출</a></p></td> 
    <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#invoking-a-long-lived-process-using-remoting">AEM Forms Remoting을 사용하여(AEM 양식의 경우 더 이상 사용되지 않음) 오래 지속된 프로세스 호출</a></p></td> 
    <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#quick_start_invoking_a_long_lived_process_using_the_invocation_api">빠른 시작:호출 API를 사용하여 긴 기간 프로세스 호출</a></p></td> 
-   <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#quick_start_invoking_a_long_lived_process_using_the_web_service_api">빠른 시작:웹 서비스 API를 사용하여 긴 기간 프로세스 호출</a></p></td> 
+   <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#quick_start_invoking_a_long_lived_process_using_the_web_service_api">빠른 시작:웹 서비스 API를 사용하여 오래 지속된 프로세스 호출</a></p></td> 
   </tr> 
   <tr> 
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking_a_short_lived_process_using_the_invocation_api">호출 API를 사용하여 짧은 기간 프로세스 호출</a></p></td> 
