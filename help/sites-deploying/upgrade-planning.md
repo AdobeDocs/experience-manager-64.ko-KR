@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: upgrading
 discoiquuid: 901108a1-c0cb-4680-bc71-6266bcde2775
+feature: 업그레이드
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2451'
+source-wordcount: '2452'
 ht-degree: 1%
 
 ---
@@ -108,7 +109,7 @@ AEM 6.4의 새로운 기능은 adobe.com](/help/release-notes/release-notes.md)�
 
 ![test-plan](assets/test-plan.png)
 
-모든 애플리케이션과 사용자 지정 코드가 원하는 대로 계속 실행되도록 하려면 정확한 프로덕션 환경을 복제해야 하며, 업그레이드 후에 이 환경에 대한 테스트를 수행해야 합니다. 모든 사용자 정의 내용을 등록하고 성능, 로드 및 보안 테스트를 실행해야 합니다. 테스트 계획을 구성할 때는 일상적으로 작업하는 데 사용되는 기본 UI 및 워크플로우 외에 시스템에 수행된 모든 사용자 지정을 포함해야 합니다. 이러한 기능에는 사용자 정의 OSGI 서비스 및 서비스, Adobe Marketing Cloud 통합, AEM 커넥터를 통한 제3자와의 통합, 사용자 정의 제3자 통합, 사용자 정의 구성 요소 및 템플릿, AEM의 사용자 정의 UI 오버레이, 사용자 정의 워크플로우가 포함될 수 있습니다. AEM 6 이전 버전에서 마이그레이션하는 고객의 경우 색인이 필요할 수 있으므로 모든 사용자 지정 쿼리를 분석해야 합니다. AEM 6.x 버전을 이미 사용하고 있는 고객의 경우 업그레이드 후에도 색인이 계속 효과적으로 작동되도록 이러한 쿼리를 테스트해야 합니다.
+모든 애플리케이션과 사용자 지정 코드가 원하는 대로 계속 실행되도록 하려면 정확한 프로덕션 환경을 복제해야 하며, 업그레이드 후에 이 환경에 대한 테스트를 수행해야 합니다. 모든 사용자 정의 내용을 등록하고 성능, 로드 및 보안 테스트를 실행해야 합니다. 테스트 계획을 구성할 때는 일상적으로 작업하는 데 사용되는 기본 UI 및 워크플로우 외에 시스템에 수행된 모든 사용자 지정을 포함해야 합니다. 여기에는 사용자 정의 OSGI 서비스 및 서비스, Adobe Marketing Cloud 통합, AEM 커넥터를 통한 제3자와의 통합, 사용자 정의 제3자 통합, 사용자 정의 구성 요소 및 템플릿, AEM의 사용자 정의 UI 오버레이, 사용자 정의 워크플로우가 포함될 수 있습니다. AEM 6 이전 버전에서 마이그레이션하는 고객의 경우 색인이 필요할 수 있으므로 모든 사용자 지정 쿼리를 분석해야 합니다. AEM 6.x 버전을 이미 사용하고 있는 고객의 경우 업그레이드 후에도 색인이 계속 효과적으로 작동되도록 이러한 쿼리를 테스트해야 합니다.
 
 ### 아키텍처 및 인프라 변경 사항 결정 필요 {#determining-architectural-and-infrastructure-changes-needed}
 
@@ -116,7 +117,7 @@ AEM 6.4의 새로운 기능은 adobe.com](/help/release-notes/release-notes.md)�
 
 ![screen_shot_2018-04-04at120223](assets/screen_shot_2018-04-04at120223.png)
 
-AEM 6.4에 대한 기술 요구 사항을 검토하고 현재 사용 중인 하드웨어 및 소프트웨어가 충분한지 확인하십시오. 운영 프로세스의 잠재적 변경 사항에 대해서는 다음 문서를 참조하십시오.
+AEM 6.4에 대한 기술 요구 사항을 검토하고 현재 사용 중인 하드웨어 및 소프트웨어가 충분한지 확인하십시오. 운영 프로세스를 변경할 수 있는 방법은 다음 문서를 참조하십시오.
 
 **모니터링 및 유지 관리:**
 
