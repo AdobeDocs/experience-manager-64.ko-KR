@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d11b8fc8-5e98-4a77-a536-d445ac88e1b3
+role: 관리자
 translation-type: tm+mt
-source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1520'
 ht-degree: 1%
 
 ---
@@ -166,7 +167,7 @@ UGC가 삭제되면 저장소에서 제거되고 복구할 수 없습니다.
 
 ### 플래그 / 플래그 해제 {#flag-unflag}
 
-플래그 지정은 컨텐츠 작성자를 제외한 모든 로그인한 구성원이 게시물의 컨텐츠에 문제가 있음을 나타내는 수단입니다. 플래그가 지정되면 동일한 구성원이 컨텐츠의 플래그를 해제할 수 있는 플래그 해제 아이콘이 표시됩니다.
+플래그 지정은 컨텐츠 작성자를 제외한 모든 로그인한 구성원이 게시물의 컨텐츠에 문제가 있음을 나타내는 수단입니다. 플래그가 지정되면 동일한 멤버가 컨텐츠의 플래그를 해제할 수 있는 플래그 해제 아이콘이 표시됩니다.
 
 게시물에 플래그를 지정하면 구성원이 이유를 선택할 수 있도록 컨텍스트 내 중재를 구성할 수 있습니다. 사용자 지정 이유를 입력할 수 있는지 여부를 포함하여 선택 가능한 플래그 이유 목록을 구성할 수 있습니다. 플래그 이유는 UGC와 함께 저장되지만 이유는 특정 작업을 트리거하지 않습니다. 플래그 수만 알림을 트리거합니다. 플래그가 달린 컨텐츠는 이에 대해 중재자가 행동할 수 있도록 이와 같이 주석을 달 수 있습니다.
 
