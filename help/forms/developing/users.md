@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
+role: 개발자
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '6243'
+source-wordcount: '6244'
 ht-degree: 0%
 
 ---
@@ -606,7 +607,7 @@ AEM Forms에서 *역할*&#x200B;은 하나 이상의 시스템 수준 리소스�
 
 두 가지 유형의 역할이 있습니다.*기본 역할* 및 *사용자 지정 역할*. 기본 역할(*시스템 역할)*&#x200B;이(가) AEM Forms에 이미 있습니다. 관리자가 기본 역할을 삭제하거나 수정할 수 없으므로 변경할 수 없다고 가정합니다. 이후에 수정하거나 삭제할 수 있는 관리자가 만든 사용자 지정 역할은 변경할 수 있습니다.
 
-역할을 사용하면 권한을 손쉽게 관리할 수 있습니다. 역할에 주체가 할당되면 일련의 권한이 자동으로 해당 주체에 할당되고 주체에 대한 모든 특정 액세스 관련 결정은 할당된 권한의 전체 집합을 기반으로 합니다.
+역할을 사용하면 권한을 손쉽게 관리할 수 있습니다. 역할에 주체가 할당되면 권한 집합이 자동으로 해당 주체에 할당되고 주체에 대한 모든 특정 액세스 관련 결정은 할당된 전체 권한 집합을 기반으로 합니다.
 
 ### {#summary_of_steps-4} 단계 요약
 
@@ -752,7 +753,7 @@ Authorization Manager Service API(웹 서비스)를 사용하여 역할 및 권�
    <td><p>사용자 자격 증명이 인증 관리자 서비스로 인증됩니다. 사용자 자격 증명이 유효하면 워크플로우가 3단계로 진행됩니다. 그렇지 않으면 사용자가 권한이 있는 사용자가 아니라는 메시지가 사용자에게 전송됩니다.</p></td> 
   </tr> 
   <tr> 
-   <td><p>3</p></td> 
+   <td><p>1</p></td> 
    <td><p>사용자 정보와 양식 디자인이 보안 엔터프라이즈 데이터베이스에서 검색됩니다. </p></td> 
   </tr> 
   <tr> 
@@ -878,7 +879,7 @@ Authentication Manager Service API(웹 서비스)를 사용하여 사용자를 �
    <td><p>AEM Forms에서 동기화 작업을 수행합니다.</p></td> 
   </tr> 
   <tr> 
-   <td><p>3</p></td> 
+   <td><p>1</p></td> 
    <td><p>사용자 정보가 업데이트됩니다.</p></td> 
   </tr> 
   <tr> 
