@@ -7,16 +7,17 @@ uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
+feature: 대화형 통신
 translation-type: tm+mt
-source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1360'
 ht-degree: 0%
 
 ---
 
 
-# 에이전트 UI {#prepare-and-send-interactive-communication-using-the-agent-ui}을(를) 사용하여 대화형 통신 준비 및 보내기
+# 에이전트 UI {#prepare-and-send-interactive-communication-using-the-agent-ui}를 사용하여 대화형 통신 준비 및 보내기
 
 에이전트 UI를 사용하면 에이전트가 대화형 통신을 준비하고 게시물 프로세스로 전송할 수 있습니다. 에이전트는 허용된 대로 필요한 수정 사항을 만들고 이메일 또는 인쇄와 같은 게시 프로세스에 대화형 통신을 제출합니다.
 
