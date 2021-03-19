@@ -1,16 +1,16 @@
 ---
 title: AEM Foundation에 대한 GDPR 요청 처리
 seo-title: AEM Foundation에 대한 GDPR 요청 처리
-description: 'null'
+description: AEM Foundation에 대한 GDPR 요청 처리
 seo-description: 'null'
 uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
 contentOwner: sarchiz
 discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
 translation-type: tm+mt
-source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 8%
+source-wordcount: '443'
+ht-degree: 7%
 
 ---
 
