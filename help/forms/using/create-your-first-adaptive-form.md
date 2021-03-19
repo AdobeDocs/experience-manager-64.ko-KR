@@ -7,10 +7,11 @@ page-status-flag: de-activated
 uuid: 62f5222c-c787-46be-95fa-a701aa0e6115
 topic-tags: introduction
 discoiquuid: 4e247e70-c50a-4571-8ac1-fbbb07100262
+feature: 적응형 양식
 translation-type: tm+mt
-source-git-commit: fae6d621ad61a26db99994482c16c9d9a5f88ad9
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '969'
 ht-degree: 0%
 
 ---
