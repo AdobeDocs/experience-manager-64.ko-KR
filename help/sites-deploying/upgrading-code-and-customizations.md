@@ -10,10 +10,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: ba8efc24-a34c-477b-8c6d-6e8f893eb999
 targetaudience: target-audience upgrader
+feature: 업그레이드
 translation-type: tm+mt
-source-git-commit: 1f78ef33b33558187b0164864dc373e53d7f86ce
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2226'
+source-wordcount: '2227'
 ht-degree: 0%
 
 ---
@@ -30,7 +31,7 @@ ht-degree: 0%
 
 ## 개요 {#overview}
 
-1. **패턴**  탐지기 - 업그레이드 계획에 설명되어 있고  [이 페이지에 자세히 설명된 대로 패턴 탐지기](/help/sites-deploying/pattern-detector.md) 를 실행하여 AEM의 Target 버전에서 사용할 수 없는 API/번들뿐만 아니라 해결해야 하는 영역에 대한 자세한 내용을 포함하는 패턴 탐지 보고서를 받습니다. 패턴 감지 보고서는 코드에 비호환성 여부를 표시해야 합니다. 배포가 이미 6.4 호환 가능한 것이 없는 경우에도 6.4 기능을 활용하도록 새로운 개발을 선택할 수 있지만 호환성을 유지하기 위한 용도로만 사용할 필요는 없습니다. 보고된 호환되지 않는 문제가 있는 경우 a) 호환성 모드에서 실행하고 새로운 6.4 기능 또는 호환성을 위해 개발을 연기하거나, b) 업그레이드 후 개발을 수행하고 2단계로 이동할 수 있습니다. 자세한 내용은 AEM 6.4](/help/sites-deploying/backward-compatibility.md)의 이전 버전과의 호환성을 참조하십시오.[
+1. **패턴**  탐지기 - 업그레이드 계획에 설명되어 있고  [이 ](/help/sites-deploying/pattern-detector.md) 페이지에 자세히 설명된 대로 패턴 탐지기 보고서를 실행하여 AEM의 Target 버전에서 사용할 수 없는 API/번들뿐만 아니라 해결해야 하는 영역에 대한 자세한 내용을 포함하는 패턴 탐지 보고서를 받습니다. 패턴 감지 보고서는 코드에 비호환성 여부를 표시해야 합니다. 배포가 이미 6.4 호환 가능한 것이 없는 경우에도 6.4 기능을 활용하도록 새로운 개발을 선택할 수 있지만 호환성을 유지하기 위한 용도로만 사용할 필요는 없습니다. 보고된 호환되지 않는 문제가 있는 경우 a) 호환성 모드에서 실행하고 새로운 6.4 기능 또는 호환성을 위해 개발을 연기하거나, b) 업그레이드 후 개발을 수행하고 2단계로 이동할 수 있습니다. 자세한 내용은 AEM 6.4](/help/sites-deploying/backward-compatibility.md)의 이전 버전과의 호환성을 참조하십시오.[
 
 1. **6.4용 코드 베이스 개발**  - Target 버전에 대한 코드 베이스에 대한 전용 분기 또는 저장소를 만듭니다. 업그레이드 전 호환성 정보를 사용하여 업데이트할 코드 영역을 계획합니다.
 1. **6.4 Uber jar로 컴파일**  - 코드 기본 POM을 업데이트하여 6.4 uber jar를 가리키고 이 항목에 대해 코드를 컴파일합니다.
