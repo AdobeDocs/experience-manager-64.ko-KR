@@ -8,10 +8,11 @@ content-type: reference
 topic-tags: correspondence-management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 601108d8-f432-4a6b-9ec9-831cf054e52f
+feature: 서신 관리
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '4460'
+source-wordcount: '4462'
 ht-degree: 4%
 
 ---
@@ -451,7 +452,7 @@ ht-degree: 4%
    |---|---|
    | 텍스트 | /libs/fd/cm/content/createset/creattetext/jcr:content/body/items/form/items/textwizard/items/editproperties/items/properties/items/items/items/tab/tab1/items |
    | 목록 | /libs/fd/cm/content/createasset/createlist/jcr:content/body/items/form/items/listwizard/items/editproperties/items/properties/items/items/items/items/tab/tab1/items |
-   | 조건 | /libs/fd/cm/content/createasset/createcondition/jcr:content/body/items/form/conditionwizard/items/editproperties/items/properties/items/items/items/items/tab/tab1/items |
+   | 조건 | /libs/fd/cm/content/createset/createcondition/jcr:content/body/items/form/conditionwizard/items/editproperties/items/properties/items/items/items/tab/tab1/items |
    | 조각 | /libs/fd/cm/content/createasset/createfragment/jcr:content/body/items/form/items/fragmentwizard/items/properties/items/properties/items/items/items/items/items/items/tab2/items/tab1/items |
    | 편지 | /libs/fd/cm/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/items/letterproperties/items/letterproperties/items/letterproperties/items/items |
 
