@@ -1,7 +1,7 @@
 ---
 title: 워크플로우 단계 참조
 seo-title: 워크플로우 단계 참조
-description: 'null'
+description: 워크플로우 단계 참조
 seo-description: 'null'
 uuid: 72a64495-d1b1-49e7-8257-d6b2ed36961c
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 25f0e0f7-9570-4748-81cb-ccec6492c0b4
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2831'
+source-wordcount: '2833'
 ht-degree: 3%
 
 ---
@@ -127,7 +127,7 @@ ht-degree: 3%
 
 * `true`:이동  **[!UICONTROL 단계가]** 완료되고 워크플로우 엔진이 지정된 단계를 실행합니다.
 
-* `false`:이동  **[!UICONTROL 단계]** 완료 및 표준 라우팅 로직에 따라 실행할 다음 단계가 결정됩니다.
+* `false`:이동  **[!UICONTROL 단계]** 완료 및 일반 라우팅 로직에 따라 실행할 다음 단계가 결정됩니다.
 
 **[!UICONTROL 이동 단계]**&#x200B;를 사용하면 워크플로우 모델에서 고급 라우팅 구조를 구현할 수 있습니다. 예를 들어 루프를 구현하려면 루프 조건을 평가하는 스크립트를 사용하여 워크플로우의 이전 단계를 실행하도록 **[!UICONTROL 이동 단계]**&#x200B;를 정의할 수 있습니다.
 
@@ -445,7 +445,7 @@ function check(){
 
    >[!NOTE]
    >
-   >**[!UICONTROL 임의 참가자]** 선택 임의 사용자()를 선택하는 샘플  `com.day.cq.workflow.impl.process.RandomParticipantChooser`서비스입니다. **[!UICONTROL 무작위 참가자 선택기]** 단계 구성 요소 샘플에서는 **[!UICONTROL 동적 참가자 단계]**&#x200B;을 확장하고 이 서비스를 단계 구현으로 사용합니다.
+   >**[!UICONTROL 임의 참가자]** 선택 무작위 사용자()를 선택하는 샘플  `com.day.cq.workflow.impl.process.RandomParticipantChooser`서비스입니다. **[!UICONTROL 무작위 참가자 선택기]** 단계 구성 요소 샘플에서는 **[!UICONTROL 동적 참가자 단계]**&#x200B;을 확장하고 이 서비스를 단계 구현으로 사용합니다.
 
 #### 동적 참가자 단계 - 예제 참가자 선택기 서비스 {#dynamic-participant-step-example-participant-chooser-service}
 
@@ -580,7 +580,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 * [**[!UICONTROL 일반]**](#step-properties-common-tab)
 * **[!UICONTROL 프로세스]**
 
-   * **[!UICONTROL 프로세스]**:실행할 프로세스 구현입니다. 드롭다운 메뉴를 사용하여 ECMAScript 또는 OSGi 서비스를 선택합니다. 에 대한 자세한 내용:
+   * **[!UICONTROL 프로세스]**:실행할 프로세스 구현입니다. 드롭다운 메뉴를 사용하여 ECMAScript 또는 OSGi 서비스를 선택합니다. 다음에 대한:
 
       * 표준 ECMAScripts 및 OSGi 서비스는 [프로세스 단계에 대한 기본 제공 프로세스](/help/sites-developing/workflows-process-ref.md)를 참조하십시오.
       * **[!UICONTROL 프로세스]** 단계에 대한 ECMAScripts를 만드는 방법은 [ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript)와 함께 프로세스 단계 구현을 참조하십시오.
