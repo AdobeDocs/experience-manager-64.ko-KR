@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
+role: 관리자
 translation-type: tm+mt
-source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2840'
+source-wordcount: '2841'
 ht-degree: 0%
 
 ---
@@ -104,7 +105,7 @@ Facebook 애플리케이션을 만들려면 [https://developers.facebook.com/app
 1. 전역 탐색에서 **[!UICONTROL 도구 > Cloud Services > Facebook Social 로그인 구성]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 컨텍스트 경로]** 구성을 선택합니다.
 
-   **[!UICONTROL 컨텍스트]** 경로는 커뮤니티 사이트를 만들고 편집할 때 선택한 클라우드 구성 경로와 같아야 합니다.
+   **[!UICONTROL 컨텍스트]** 경로는 커뮤니티 사이트를 만들거나 편집할 때 선택한 클라우드 구성 경로와 같아야 합니다.
 
 1. 컨텍스트 경로가 클라우드 서비스를 만들 수 있는지 확인합니다.
 1. **[!UICONTROL 도구 > 일반 > 구성 브라우저]**&#x200B;로 이동합니다. 컨텍스트를 선택하고 속성을 편집합니다. 아직 활성화되지 않은 경우 클라우드 구성을 활성화합니다.
@@ -463,7 +464,7 @@ Facebook 또는 Twitter 앱에 대해 만든 인스턴스를 찾으려면:
    * **[!UICONTROL indexPath]**:/oak:index/ntLucene-oauth
    * **[!UICONTROL 이름]**:oauthid-123xxxx
    * **[!UICONTROL 다시 색인화]**:true
-   * **[!UICONTROL reindexCount]**:1
+   * **[!UICONTROL reindexCount]**:3
 
 1. /oak:index/ntBaseLucene-oauth/indexRules/nt:base/properties:
 
