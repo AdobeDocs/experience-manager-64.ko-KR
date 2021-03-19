@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
+role: 개발자
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '5479'
+source-wordcount: '5480'
 ht-degree: 0%
 
 ---
@@ -265,12 +266,12 @@ Java API를 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호
   </tr>
   <tr>
    <td><p> jboss-client.jar</p> </td>
-   <td><p>aem forms이 JBoss Application Server에 배포되는 경우 이 JAR 파일을 포함합니다.</p> <p>jboss-client.jar 및 참조된 항어가 함께 있지 않으면 classloader에서 필수 클래스를 찾을 수 없습니다.</p> </td>
+   <td><p>AEM Forms이 JBoss Application Server에 배포되는 경우 이 JAR 파일을 포함합니다.</p> <p>jboss-client.jar 및 참조된 항어가 함께 있지 않으면 classloader에서 필수 클래스를 찾을 수 없습니다.</p> </td>
    <td><p>JBoss 클라이언트 lib 디렉토리</p> <p>클라이언트 응용 프로그램을 동일한 J2EE 응용 프로그램 서버에 배포하는 경우 이 파일을 포함할 필요가 없습니다.</p> </td>
   </tr>
   <tr>
    <td><p>wlclient.jar</p> </td>
-   <td><p>aem forms이 BEA WebLogic Server®에 배포되는 경우 이 JAR 파일을 포함합니다.</p> </td>
+   <td><p>AEM Forms이 BEA WebLogic Server®에 배포되는 경우 이 JAR 파일을 포함합니다.</p> </td>
    <td><p>WebLogic 전용 lib 디렉토리</p> <p>클라이언트 응용 프로그램을 동일한 J2EE 응용 프로그램 서버에 배포하는 경우 이 파일을 포함할 필요가 없습니다.</p> </td>
   </tr>
   <tr>
@@ -281,7 +282,7 @@ Java API를 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호
     </ul> </td>
    <td>
     <ul>
-     <li><p>aem forms이 WebSphere 응용 프로그램 서버에 배포되는 경우 이러한 JAR 파일을 포함합니다.</p> </li>
+     <li><p>AEM Forms이 WebSphere 응용 프로그램 서버에 배포되는 경우 이러한 JAR 파일을 포함합니다.</p> </li>
      <li><p>(웹 서비스 호출에는 com.ibm.ws.webservices.thinclient_6.1.0.jar가 필요합니다.)</p> </li>
     </ul> </td>
    <td><p>WebSphere 특정 lib 디렉토리(<em>[WAS_HOME]</em>/runtimes)</p> <p>클라이언트 응용 프로그램을 동일한 J2EE 응용 프로그램 서버에 배포하는 경우 이러한 파일을 포함할 필요가 없습니다.</p> </td>
@@ -675,7 +676,7 @@ SOAP 연결 모드를 사용하는 클라이언트 응용 프로그램은 클러
 
 **JBoss**
 
-다음 예제는 JBoss에 배포된 AEM Forms에 연결하는 데 사용되는 jndi.properties 파일의 내용을 보여줍니다.
+다음 예제는 JBoss에 배포된 AEM Forms에 연결하는 데 사용되는 jndi.properties 파일의 컨텐츠를 보여줍니다.
 
 ```as3
  java.naming.factory.initial= org.jnp.interfaces.NamingContextFactory
