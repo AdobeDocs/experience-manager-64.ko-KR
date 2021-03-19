@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
+feature: 구성
 translation-type: tm+mt
-source-git-commit: 97d60c4d18b7842f9fc7c81be33ac1acfca8b24d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2803'
+source-wordcount: '2804'
 ht-degree: 1%
 
 ---
@@ -89,7 +90,7 @@ Offloading 프레임워크는 작업을 저장소의 리소스와 연결하는 �
    ![chlimage_1-111](assets/chlimage_1-111.png)
 
 1. 클러스터의 인스턴스 목록과 해당 ID, 현재 상태 및 리더 상태를 보려면 클러스터를 클릭합니다.
-1. 보다 자세한 속성을 보려면 인스턴스 ID를 클릭합니다.
+1. 자세한 속성을 보려면 인스턴스 ID를 클릭합니다.
 
 웹 콘솔을 사용하여 토폴로지 정보를 볼 수도 있습니다. 콘솔은 토폴로지 클러스터에 대한 자세한 정보를 제공합니다.
 
