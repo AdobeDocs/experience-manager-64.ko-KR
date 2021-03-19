@@ -2,11 +2,13 @@
 title: 폴더를 Brand Portal에 게시
 description: 브랜드 포털에 자산을 게시하고 게시 취소하는 방법을 알아봅니다.
 contentOwner: VG
+feature: Brand Portal
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: f09853921dec6602952f369982a1563c7e4a9727
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 38%
+source-wordcount: '425'
+ht-degree: 39%
 
 ---
 
