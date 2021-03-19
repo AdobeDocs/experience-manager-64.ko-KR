@@ -2,10 +2,12 @@
 title: 컬렉션을 Brand Portal에 게시
 description: 컬렉션을 Brand Portal에 게시하고 게시 취소하는 방법을 알아봅니다.
 contentOwner: VG
+feature: Brand Portal
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 33210032c45e38963aed429e70eec4095c5d75f1
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '342'
 ht-degree: 21%
 
 ---
