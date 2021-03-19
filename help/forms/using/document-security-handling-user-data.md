@@ -7,10 +7,11 @@ uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1055'
 ht-degree: 0%
 
 ---
@@ -162,7 +163,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
    >[!NOTE]
    >
-   >주체 ID에 대해 `Principal` 태그 내에서 전체 blob를 제거해야 합니다. 그렇지 않으면 정책 XML이 손상되거나 사용할 수 없게 될 수 있습니다.
+   >주체 ID에 대해 `Principal` 태그 내에 전체 blob를 제거해야 합니다. 그렇지 않으면 정책 XML이 손상되거나 사용할 수 없을 수 있습니다.
 
    ```xml
    <ns2:Principal PrincipalNameType="USER">
