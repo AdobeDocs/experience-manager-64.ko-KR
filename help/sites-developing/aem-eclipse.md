@@ -1,7 +1,7 @@
 ---
 title: Eclipse용 AEM 개발자 도구
 seo-title: Eclipse용 AEM 개발자 도구
-description: 'null'
+description: Eclipse용 AEM 개발자 도구
 seo-description: 'null'
 uuid: 566e49f2-6f28-4aa7-bfe0-b5f9675310bf
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
 translation-type: tm+mt
-source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '814'
 ht-degree: 4%
 
 ---
