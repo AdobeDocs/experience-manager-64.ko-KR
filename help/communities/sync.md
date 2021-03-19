@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 32b56b48-75cb-4cc9-a077-10e335f01a35
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2507'
+source-wordcount: '2508'
 ht-degree: 1%
 
 ---
@@ -34,7 +35,7 @@ AEM Communities의 게시 환경(구성된 권한에 따라)에서 *사이트 �
 
 기본적으로 게시 환경에서 만든 사용자 데이터는 작성 환경에 나타나지 않습니다.
 
-작성 환경에서 생성된 대부분의 사용자 데이터는 작성 환경에 유지되도록 되어 있으며, 인스턴스를 게시하도록 동기화되거나 복제되지 않습니다.
+작성 환경에서 만들어진 대부분의 사용자 데이터는 작성 환경에 유지되도록 되어 있으며, 인스턴스를 게시하도록 동기화되거나 복제되지 않습니다.
 
 [토폴로지](topologies.md)가 [게시 팜](../../help/sites-deploying/recommended-deploys.md#tarmk-farm)인 경우 한 게시 인스턴스에서 수행된 등록 및 수정 사항은 다른 게시 인스턴스와 동기화해야 합니다. 멤버는 로그인하여 게시 노드에서 해당 데이터를 볼 수 있어야 합니다.
 
