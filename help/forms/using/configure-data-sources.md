@@ -7,10 +7,11 @@ uuid: 292217c2-8110-4232-a78b-edea212765d2
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
+feature: 양식 데이터 모델
 translation-type: tm+mt
-source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1421'
 ht-degree: 0%
 
 ---
@@ -60,7 +61,7 @@ AEM 웹 콘솔 구성을 사용하여 관계형 데이터베이스를 구성할 
 1. **[!UICONTROL 유효성 검사 쿼리]** 필드에 SQL SELECT 쿼리를 지정하여 풀의 연결을 확인합니다. 쿼리는 하나 이상의 행을 반환해야 합니다. 데이터베이스를 기반으로 다음 중 하나를 지정합니다.
 
    * 1을 선택합니다(MySQL 및 MS SQL).
-   * 이중(Oracle) 중에서 선택 1
+   * 이중(Oracle)에서 1을 선택합니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 눌러 구성을 저장합니다.
 
