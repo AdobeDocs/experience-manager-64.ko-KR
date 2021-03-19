@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 18a320b4-dce6-4c50-8864-644b0b2d6644
+role: 개발자
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3752'
+source-wordcount: '3753'
 ht-degree: 0%
 
 ---
@@ -439,7 +440,7 @@ AEM Forms이 배포된 J2EE 응용 프로그램 서버에 WAR 파일을 배포�
 
 >[!NOTE]
 >
->aem forms이 JBoss에 배포되지 않은 경우 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버에 따라 WAR 파일을 배포해야 합니다.
+>AEM Forms이 JBoss에 배포되지 않은 경우 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버에 따라 WAR 파일을 배포해야 합니다.
 
 ### 웹 응용 프로그램 테스트 {#test-your-web-application}
 
