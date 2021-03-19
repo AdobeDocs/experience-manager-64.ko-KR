@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5cb571ae-eeb5-4943-a6b8-92e346e85be2
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 9fa89ca34843d41a5ab5711c1090fcc7a1077760
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '729'
 ht-degree: 1%
 
 ---
@@ -65,7 +66,7 @@ AEM Communities에 대한 메시징 기능은 사이트에 로그인할 때 액�
 *선택함*.
 
 * **[!UICONTROL 배달 실패 보낸 사람]**
-id배달 실패 메시지에 나타나는 보낸 사람의 이름입니다. 기본값은 
+id배달 실패 메시지에 표시되는 보낸 사람의 이름입니다. 기본값은 
 *failureNotifier*.
 
 * **[!UICONTROL 실패 메시지 템플릿]**
