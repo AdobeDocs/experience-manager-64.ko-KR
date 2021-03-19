@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
+role: 개발자
 translation-type: tm+mt
-source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -32,7 +33,7 @@ AEM Forms 서비스 세트가 하나의 문서에서 작동하는 일반적인 �
 * 프로세스는 조직의 경계를 확장할 수 있습니다.
 * 프로세스를 완료하려면 외부 입력이 필요합니다. 예를 들어 사무실 밖에 있는 관리자에게 양식이 전송되는 상황을 가정해 보십시오. 이 경우 관리자가 양식을 반환하고 채울 때까지 프로세스가 완료되지 않습니다.
 
-   이러한 유형의 프로세스를 오래 지속되는 과정이라고 합니다. 장기 처리 과정은 비동기적으로 수행되므로 시스템에서 리소스를 사용할 수 있도록 하고 작업을 추적하고 모니터링할 수 있습니다. 긴 수명 프로세스가 호출되면 AEM Forms은 장기 체류 프로세스 상태를 추적하는 레코드의 일부로서 호출 식별자 값을 만듭니다. 레코드는 AEM Forms 데이터베이스에 저장됩니다. 더 이상 필요하지 않은 긴 프로세스 레코드를 삭제할 수 있습니다.
+   이러한 유형의 프로세스를 오래 지속되는 과정이라고 합니다. 긴 기간의 프로세스는 비동기적으로 수행되므로 시스템에서 리소스를 허용하는 방식으로 인터랙션하고 작업을 추적 및 모니터링할 수 있습니다. 긴 수명 프로세스가 호출되면 AEM Forms은 장기 체류 프로세스 상태를 추적하는 레코드의 일부로서 호출 식별자 값을 만듭니다. 레코드는 AEM Forms 데이터베이스에 저장됩니다. 더 이상 필요하지 않은 긴 프로세스 레코드를 삭제할 수 있습니다.
 
 >[!NOTE]
 >
@@ -46,7 +47,7 @@ AEM Forms 서비스 세트가 하나의 문서에서 작동하는 일반적인 �
 
 >[!NOTE]
 >
->이 프로세스는 기존 AEM Forms 프로세스를 기반으로 하지 않습니다. 이 프로세스를 호출하는 방법에 대해 설명하는 코드 예제를 따라 워크벤치를 사용하여 `MyApplication/EncryptDocument` 프로세스를 만드십시오. ([Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63) 사용 참조)
+>이 프로세스는 기존 AEM Forms 프로세스를 기반으로 하지 않습니다. 이 프로세스를 호출하는 방법에 대해 설명하는 코드 예제와 함께 따라 Workbench를 사용하여 `MyApplication/EncryptDocument` 프로세스를 만드십시오. ([Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63) 사용 참조)
 
 이 단기 프로세스가 호출되면 다음 작업을 수행합니다.
 
