@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications
 discoiquuid: 16c7e698-258d-4e63-9828-f538dc7d3294
+feature: 대화형 통신
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2423'
+source-wordcount: '2425'
 ht-degree: 0%
 
 ---
@@ -210,7 +211,7 @@ Sum 함수는 동일한 데이터 속성의 여러 인스턴스에 대해 합계
 
 **** 범위다른 축에 있는 주어진 값에 대한 X 또는 Y축에 있는 값의 최대값과 최소값 간의 차이를 반환합니다.
 
-**중간값이** 다른 축에 있는 주어진 값에 대해 X축이나 Y축에서 높은 값과 낮은 값을 구분하는 값을 반환합니다.
+**중간값이** 다른 축에 있는 주어진 값에 대해 X축이나 Y축에 있는 높은 값과 낮은 값을 구분하는 값을 반환합니다.
 
 **최소값** 이 다른 축에 있는 주어진 값에 대한 X축이나 Y축에 있는 값의 최소값을 반환합니다.
 
