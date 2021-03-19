@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: e-commerce
 content-type: reference
 discoiquuid: c8ef374a-38d8-4cd4-a86e-69f0a5b4c2bc
+feature: 전자 상거래 통합 프레임워크
 translation-type: tm+mt
-source-git-commit: 89d3edbd11d6a900804908ef13cd53e086e92345
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '4532'
+source-wordcount: '4535'
 ht-degree: 2%
 
 ---
@@ -23,7 +24,7 @@ ht-degree: 2%
 통합 프레임워크는 다음과 같은 메커니즘과 구성 요소를 제공합니다.
 
 * eCommerce 엔진에 연결
-* aem으로 데이터 가져오기
+* AEM으로 데이터 가져오기
 * 데이터 표시 및 구매자의 응답 수집
 * 트랜잭션 세부 사항 반환
 * 두 시스템에서 데이터를 검색합니다.
@@ -233,7 +234,7 @@ AEM eCommerce는 eCommerce 엔진을 사용하여 구현됩니다.
 
 제품 데이터는 다음과 같습니다.
 
-* aem(일반)에서 바로 유지 관리됩니다.
+* AEM(일반)에서 바로 유지 관리됩니다.
 * 유지 관리되고 AEM에서 사용할 수 있게 되었습니다.
 
    데이터 유형에 따라 필요에 따라 [동기화된](#catalog-maintenance-data-synchronization)이거나 직접 액세스되는 경우;예를 들어 제품 가격과 같은 매우 휘발성 및 중요 데이터는 항상 최신 상태로 유지되도록 모든 페이지 요청의 ecommerce 엔진에서 검색됩니다.
@@ -509,7 +510,7 @@ JCR 노드에 많은 직접 하위 노드(예: 1000 이상)가 있는 경우 성
 
 프록시 페이지는 실제 제품 콘텐트를 포함하지 않는 2노드 구조( `cq:Page` 및 `jcr:content`)를 사용합니다. 요청 시 제품 데이터 및 템플릿 페이지를 참조하여 컨텐츠가 생성됩니다.
 
-그러나, 교역이 있다. AEM 내에서 제품 정보를 사용자 정의할 수 없으며 사이트에 대해 정의된 표준 템플릿이 사용됩니다.
+그러나, 무역거래가 있다. AEM 내에서 제품 정보를 사용자 정의할 수 없으며 사이트에 대해 정의된 표준 템플릿이 사용됩니다.
 
 >[!NOTE]
 >
@@ -885,5 +886,5 @@ AEM은 제품에 표준 페이지를 사용하기 때문에 표준 검색 구성
 * 필요한 기능으로 기본 검색 구성 요소를 확장합니다.
 * `CommerceService`에서 검색 방법을 구현한 다음 검색 페이지에서 eCommerce 검색 구성 요소를 사용합니다.
 
-eCommerce 엔진을 사용할 때 eCommerce 검색 API를 eCommerce 엔진 솔루션에서 완전히 구현할 수 있으므로 즉시 제공되는 eCommerce 검색 구성 요소를 사용할 수 있습니다. 패싯된 검색을 사용하여 JCR 및/또는 엔진을 검색할 수 있습니다.
+eCommerce 엔진을 사용하는 경우 eCommerce 검색 API를 eCommerce 엔진 솔루션에서 완전히 구현할 수 있으므로 즉시 제공되는 eCommerce 검색 구성 요소를 사용할 수 있습니다. 패싯된 검색을 사용하여 JCR 및/또는 엔진을 검색할 수 있습니다.
 
