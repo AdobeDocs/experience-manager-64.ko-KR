@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
+role: 개발자
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '4654'
+source-wordcount: '4655'
 ht-degree: 0%
 
 ---
@@ -131,7 +132,7 @@ docRef.text = "Text for my document";  // Optionally, you can override the ser
 * 문서가 서버에 없으면 원격 업로드 서블릿을 사용하여 문서를 AEM Forms에 업로드합니다. AEM Forms의 새로운 기능은 보안 문서를 업로드할 수 있는 기능입니다. 보안 문서를 업로드할 때* 문서 업로드 응용 프로그램 사용자 *역할이 있는 사용자를 사용해야 합니다. 이 역할이 없으면 사용자가 보안 문서를 업로드할 수 없습니다. 단일 사인온을 사용하여 보안 문서를 업로드하는 것이 좋습니다. (Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)을(를) 사용하여 프로세스를 호출하려면 보안 문서 전달을 참조하십시오.)[
 
    >[!NOTE]
-   aem forms이 안전하지 않은 문서를 업로드하도록 구성된 경우 문서 업로드 응용 프로그램 사용자 역할이 없는 사용자를 사용하여 문서를 업로드할 수 있습니다. 사용자는 문서 업로드 권한을 가질 수도 있습니다. 그러나 AEM Forms이 보안 문서만 허용하도록 구성된 경우에는 사용자에게 문서 업로드 응용 프로그램 사용자 역할 또는 문서 업로드 권한이 있는지 확인하십시오. [보안 및 비보안 문서를 수락하도록 AEM Forms 구성](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents)*을 참조하십시오.
+   AEM Forms이 안전하지 않은 문서를 업로드하도록 구성된 경우 문서 업로드 응용 프로그램 사용자 역할이 없는 사용자를 사용하여 문서를 업로드할 수 있습니다. 사용자는 문서 업로드 권한을 가질 수도 있습니다. 그러나 AEM Forms이 보안 문서만 허용하도록 구성된 경우에는 사용자에게 문서 업로드 응용 프로그램 사용자 역할 또는 문서 업로드 권한이 있는지 확인하십시오. [보안 및 비보안 문서를 수락하도록 AEM Forms 구성](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents)*을 참조하십시오.
 
    지정된 업로드 URL에 표준 Flash 업로드 기능을 사용합니다.`https://SERVER:PORT/remoting/lcfileupload`. 그런 다음 `Document` 유형의 입력 매개 변수가 필요할 때마다 `DocumentReference` 개체를 사용할 수 있습니다.
    ` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`Remoting 빠른 시작은 Remoting 업로드 서블릿을 사용하여 PDF 파일을 프로세스에  `MyApplication/EncryptDocument`전달합니다. (AEM 양식의 경우 더 이상 사용되지 않음) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)을 사용하여 안전하지 않은 문서를 전달하여 [짧은 기간 프로세스 호출을 참조하십시오.)
@@ -622,7 +623,7 @@ AEM Forms에서 안전하지 않은 문서를 허용하도록 구성하려면 Fl
 
 ![iu_iu_secureremotelogin](assets/iu_iu_secureremotelogin.png)
 
-aem forms이 보안 문서를 업로드하도록 허용하며 사용자에게* 문서 업로드 응용 프로그램 사용자 *역할이 없는 경우 예외가 발생합니다. 사용자에게 이 역할이 있는 경우 파일이 업로드되고 프로세스가 호출됩니다.
+AEM Forms이 보안 문서를 업로드하도록 허용하며 사용자에게* 문서 업로드 응용 프로그램 사용자 *역할이 없는 경우 예외가 발생합니다. 사용자에게 이 역할이 있는 경우 파일이 업로드되고 프로세스가 호출됩니다.
 
 ```as3
  <?xml version="1.0" encoding="utf-8"?> 
