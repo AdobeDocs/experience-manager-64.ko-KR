@@ -1,7 +1,7 @@
 ---
 title: PhoneGap
 seo-title: PhoneGap
-description: null
+description: PhoneGap
 seo-description: 'AEM에서 Adobe PhoneGap Enterprise를 위한 작성을 시작하려면 이 페이지를 따르십시오.  '
 uuid: 256a9f66-4c66-434c-be79-01be3c02d688
 contentOwner: msm-service
@@ -9,10 +9,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: d9ab4d38-1c17-477d-9341-02bda80f3c23
 translation-type: tm+mt
-source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 4%
+source-wordcount: '216'
+ht-degree: 5%
 
 ---
 
