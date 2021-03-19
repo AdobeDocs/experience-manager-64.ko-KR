@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
+feature: 구성
 translation-type: tm+mt
-source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2013'
+source-wordcount: '2014'
 ht-degree: 0%
 
 ---
@@ -334,7 +335,7 @@ AEM의 [웹 콘솔](/help/sites-deploying/web-console.md)은 번들을 구성하
 
    `/apps/{somewhere}`
 
-   * 기본적으로 `{somewhere}`은 `system/config`이므로 구성이
+   * 기본적으로 `{somewhere}`은(는) `system/config`이므로 구성은
 
       `/apps/system/config`
 
