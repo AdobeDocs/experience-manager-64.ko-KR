@@ -9,11 +9,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '830'
-ht-degree: 0%
+source-wordcount: '832'
+ht-degree: 1%
 
 ---
 
@@ -126,7 +127,7 @@ ht-degree: 0%
 
 1. 데스크톱 브라우저에서 추가 쿼리 매개 변수 **debugClientLibs=true**&#x200B;로 양식을 렌더링한 다음 개발자 도구 -> 리소스로 이동하여 I18N.css 파일을 확인합니다.
 1. 파일을 사용할 수 없는 경우 https://&lt;server>:&lt;port>/crx/de에서 CRX DE에 로그인합니다.
-1. 왼쪽의 폴더 계층 구조에서 /libs/fd/xfaforms/clientlibs/I18N으로 이동하여 다음 파일과 폴더가 있는지 확인합니다.
+1. 왼쪽의 폴더 계층 구조에서 /libs/fd/xfaforms/clientlibs/I18N으로 이동하여 다음 파일 및 폴더가 있는지 확인합니다.
 
    * Namespace.js
    * LogMessages.js
