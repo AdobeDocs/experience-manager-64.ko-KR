@@ -8,10 +8,11 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
+feature: PDF 생성기
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '6146'
+source-wordcount: '6148'
 ht-degree: 0%
 
 ---
@@ -70,7 +71,7 @@ PDF Generator에서 지원되는 파일 유형에 대한 애플리케이션 설�
 
    [Microsoft Word 설정(Windows 전용)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-word-settings-windows-only)
 
-   [Microsoft Visio 설정(Windows만 해당)](#visio)
+   [Microsoft Visio 설정(Windows 전용)](#visio)
 
    [Microsoft Publisher 설정(Windows만 해당)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-publisher-settings-windows-only)
 
@@ -230,7 +231,7 @@ XPS(XML Paper Specification)는 Windows Printing Machine에서 사용됩니다. 
 
 ## PDF 최적기 설정 {#pdf-optimizer-settings}
 
-PDF Generator를 사용하면 PDF 파일의 크기를 줄일 수 있습니다. 이러한 설정을 모두 사용할지 아니면 몇 가지 설정만을 사용할지 여부에 따라 파일을 사용하려는 방법과 파일이 반드시 갖추어야 하는 필수 속성에 따라 다릅니다. 대부분의 경우 기본 설정은 임베디드 글꼴을 제거하고 이미지를 압축하고 더 이상 필요하지 않은 파일에서 항목을 제거하여 공간을 절약하는 등 효율성을 극대화할 수 있도록 적절합니다.
+PDF Generator를 사용하면 PDF 파일의 크기를 줄일 수 있습니다. 이러한 설정을 모두 사용할지 아니면 몇 가지 설정만을 사용할지 여부에 따라 파일을 사용하려는 방법과 파일이 반드시 갖추어야 하는 필수 속성에 따라 다릅니다. 대부분의 경우 기본 설정은 임베디드 글꼴을 제거하고 이미지를 압축하고 더 이상 필요하지 않은 파일에서 항목을 제거하여 공간을 절약하는 등 작업의 효율성을 최대화하기 위해 적합합니다.
 
 >[!NOTE]
 >
@@ -587,7 +588,7 @@ Microsoft Word 스타일 이름에 쉼표(,) 또는 등호(=)가 포함되어 �
 
 **PDFMaker를 폴백 변환기로 사용해 보십시오**.이 옵션을 선택하고 OpenOffice를 사용한 변환이 실패하거나 지정된 제한 시간 내에 도달하면 PDF Generator는 PDFMaker를 사용하여 변환을 시도합니다. PDFMaker를 사용한 변환이 실패하거나 지정된 시간 제한 값에 도달하면 예외가 로그 파일에 기록됩니다.
 
-**파일 이름 확장자**:이 응용 프로그램에 사용할 수 있는 파일 형식의 파일 이름 확장자를 쉼표로 구분하여 지정합니다. 기본값은 `odt,odp,ods,odg,odf,sxw,sxi,sxd`입니다. 확장 이전 또는 확장 사이의 공백을 포함하지 마십시오.
+**파일 이름 확장자**:이 응용 프로그램에 사용할 수 있는 파일 형식의 파일 이름 확장명을 쉼표로 구분하여 지정합니다. 기본값은 `odt,odp,ods,odg,odf,sxw,sxi,sxd`입니다. 확장 이전 또는 확장 사이의 공백을 포함하지 마십시오.
 
 **범위**:모든 페이지를 변환하거나 특정 페이지 또는 페이지 범위를 지정합니다. 페이지 범위가 정의되지 않은 경우 모든 페이지가 변환됩니다. 페이지 범위를 내보내려면 3-6 형식을 사용합니다. 단일 페이지를 내보내려면 7;9;11 형식을 사용합니다. 3-6;8;10;12와 같은 형식을 사용하여 페이지 범위와 단일 페이지의 조합을 내보낼 수 있습니다.
 
