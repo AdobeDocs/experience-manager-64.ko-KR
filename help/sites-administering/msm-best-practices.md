@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
+feature: 다중 사이트 관리자
 translation-type: tm+mt
-source-git-commit: 9710c9931b4f17073c712f5869a1843c1d99ee8e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1533'
 ht-degree: 1%
 
 ---
