@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: upgrading
 discoiquuid: b1bd40f4-21c6-48f5-a41e-42daeaad3687
+feature: 업그레이드
 translation-type: tm+mt
-source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1239'
 ht-degree: 0%
 
 ---
@@ -30,7 +31,7 @@ ht-degree: 0%
 
 ## 마이그레이션 사전 요구 사항 {#migration-prerequisites}
 
-* **최소 필수 Java 버전:** 마이그레이션 도구는 Java 버전 7 이상에서만 작동합니다. AEM 6.3 이상 버전의 경우 Oracle의 JRE 8 및 IBM의 JRE 7 &amp; 8만 지원됩니다.
+* **최소 필수 Java 버전:** 마이그레이션 도구는 Java 버전 7 이상에서만 작동합니다. AEM 6.3 이상의 경우 Oracle의 JRE 8 및 IBM의 JRE 7 &amp; 8이 지원되는 유일한 버전입니다.
 
 * **업그레이드된 인스턴스: 5.6** 이  **넘는 버전**&#x200B;에서 업그레이드하는 경우 6.0 버전의 업그레이드 문서에 설명된 절차에 따라 AEM 6.0으로 직접 업그레이드를 수행했는지 확인하십시오.
 
