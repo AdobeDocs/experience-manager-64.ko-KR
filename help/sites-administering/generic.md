@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: e-commerce
 content-type: reference
 discoiquuid: ad80505f-116e-43f1-8d93-ffe6e8b1ac46
+feature: 전자 상거래 통합 프레임워크
 translation-type: tm+mt
-source-git-commit: fc2c7b62960a0a3cb45d595673b8dcfeb990d7c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3004'
+source-wordcount: '3007'
 ht-degree: 5%
 
 ---
@@ -350,15 +351,15 @@ CRXDE Lite을 사용하여 기존 단면화를 수정하거나 새 단면화를 
 Search &amp; Promote 통합을 통해 다음 작업을 수행할 수 있습니다.
 
 * 기본 저장소 구조 및 상거래 플랫폼과는 별도로 eCommerce API를 사용합니다.
-* search &amp; promote의 색인 커넥터 기능을 활용하여 제품 피드를 XML 형식으로 제공합니다.
-* search &amp; promote의 원격 제어 기능을 활용하여 제품 피드의 on-demand 또는 예약된 요청을 수행할 수 있습니다.
+* Search &amp; Promote의 색인 커넥터 기능을 활용하여 제품 피드를 XML 형식으로 제공합니다.
+* Search &amp; Promote의 원격 제어 기능을 활용하여 제품 피드의 on-demand 또는 예약된 요청을 수행할 수 있습니다.
 * 클라우드 서비스 구성으로 구성된 다양한 Search &amp; Promote 계정에 대한 피드 생성
 
 자세한 내용은 [제품 피드](/help/sites-administering/product-feed.md)를 참조하십시오.
 
 ### 제품 업데이트 {#event-handler-for-product-updates}에 대한 이벤트 핸들러
 
-제품이 추가, 수정 또는 삭제되고 제품 페이지가 추가, 수정 또는 삭제될 때 이벤트를 로깅하는 이벤트 핸들러가 있습니다. 다음과 같은 OSGi 이벤트가 있습니다.
+제품을 추가, 수정 또는 삭제할 때와 제품 페이지가 추가, 수정 또는 삭제될 때 이벤트를 로깅하는 이벤트 핸들러가 있습니다. 다음과 같은 OSGi 이벤트가 있습니다.
 
 * `com/adobe/cq/commerce/pim/PRODUCT_ADDED`
 * `com/adobe/cq/commerce/pim/PRODUCT_MODIFIED`
