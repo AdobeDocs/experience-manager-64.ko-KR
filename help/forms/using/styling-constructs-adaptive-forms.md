@@ -7,10 +7,11 @@ uuid: 45590fd5-6438-4bb3-8ef8-f0b8f9da3ae9
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: d28997b4-49d2-46da-bfa1-ed6876a65639
+feature: 적응형 양식
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2184'
+source-wordcount: '2186'
 ht-degree: 3%
 
 ---
