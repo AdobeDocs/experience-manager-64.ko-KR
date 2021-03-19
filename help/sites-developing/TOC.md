@@ -6,10 +6,13 @@ audience: end-user
 user-guide-title: AEM 6.4 개발 사용 안내서
 breadcrumb-title: Developing 안내서
 user-guide-description: 이 안내서에서는 AEM 인스턴스를 빌드하는 방법을 다룹니다.
+feature-set: Experience Manager Sites
+feature: 개발
+role: 개발자
 translation-type: tm+mt
-source-git-commit: 5a9cdf29ca7331cdae5c0905b20a76f7124f3dd4
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '887'
 ht-degree: 91%
 
 ---
