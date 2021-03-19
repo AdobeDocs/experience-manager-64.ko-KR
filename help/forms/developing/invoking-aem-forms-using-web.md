@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
+role: 개발자
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '10008'
+source-wordcount: '10009'
 ht-degree: 0%
 
 ---
@@ -1242,7 +1243,7 @@ AEM 양식 사용자의 ID는 비밀 키를 사용하여 서명된 SAML 어설�
 * AuthenticationManager API에 노출된 인증 방법을 사용하여 사용자를 인증합니다. 일반적으로 사용자 이름과 암호를 사용합니다.그러나 인증서 인증을 사용할 수도 있습니다.
 * `AuthenticationManager.getAuthResultOnBehalfOfUser` 메서드 사용. 이 방법을 사용하면 클라이언트 응용 프로그램이 AEM 양식 사용자의 `AuthResult` 객체를 가져올 수 있습니다.
 
-aem 양식 사용자는 획득한 SAML 토큰을 사용하여 인증할 수 있습니다. 이 SAML 어설션(xml 조각)은 사용자 인증을 위해 웹 서비스 호출을 사용하여 WS-Security 헤더의 일부로 전송할 수 있습니다. 일반적으로 클라이언트 응용 프로그램은 사용자를 인증했지만 사용자 자격 증명을 저장하지 않았습니다. (또는 사용자가 사용자 이름과 암호를 사용하지 않는 메커니즘을 통해 해당 클라이언트에 로그온했습니다.) 이러한 경우 클라이언트 응용 프로그램은 AEM Forms을 호출하고 특정 사용자를 가장해야 하며, 이 사용자는 AEM Forms을 호출할 수 있습니다.
+AEM 양식 사용자는 획득한 SAML 토큰을 사용하여 인증할 수 있습니다. 이 SAML 어설션(xml 조각)은 사용자 인증을 위해 웹 서비스 호출을 사용하여 WS-Security 헤더의 일부로 전송할 수 있습니다. 일반적으로 클라이언트 응용 프로그램은 사용자를 인증했지만 사용자 자격 증명을 저장하지 않았습니다. (또는 사용자가 사용자 이름과 암호를 사용하지 않는 메커니즘을 통해 해당 클라이언트에 로그온했습니다.) 이러한 경우 클라이언트 응용 프로그램은 AEM Forms을 호출하고 특정 사용자를 가장해야 하며, 이 사용자는 AEM Forms을 호출할 수 있습니다.
 
 특정 사용자를 가장하려면 웹 서비스를 사용하여 `AuthenticationManager.getAuthResultOnBehalfOfUser` 메서드를 호출합니다. 이 메서드는 해당 사용자에 대한 SAML 어설션이 포함된 `AuthResult` 인스턴스를 반환합니다.
 
