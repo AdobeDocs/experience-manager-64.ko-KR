@@ -10,10 +10,11 @@ geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
+role: 개발자
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2370'
+source-wordcount: '2371'
 ht-degree: 0%
 
 ---
@@ -42,7 +43,7 @@ fscmenu.xml 파일 외에 다음 파일도 가져와야 합니다.
 
 fscJS는 각 노드와 연관된 Java 스크립트입니다. `div#fscmenu` 노드 및 `ul#fscmenuItem` 노드에 대해 하나를 제공해야 합니다(선택 사항). JS 파일은 핵심 도구 모음 기능을 구현하며 기본 파일은 작동합니다.
 
-fscCSS는 특정 노드와 연관된 스타일 시트입니다. CSS 파일의 스타일은 도구 모음 모양을 지정합니다. *fscVCSS* 는 렌더링된 HTML 양식의 왼쪽에 표시되는 세로 도구 모음의 스타일 시트입니다. *fscIECSS는* Internet Explorer에서 렌더링되는 HTML 양식에 사용되는 스타일 시트입니다.
+fscCSS는 특정 노드와 연관된 스타일 시트입니다. CSS 파일의 스타일은 도구 모음 모양을 지정합니다. *fscVCSS* 는 렌더링된 HTML 양식의 왼쪽에 표시되는 세로 도구 모음의 스타일 시트입니다. *fsc* IECSS는 Internet Explorer에서 렌더링되는 HTML 양식에 사용되는 스타일 시트입니다.
 
 위의 모든 파일이 fscmenu.xml 파일에서 참조되는지 확인합니다. 즉, fscmenu.xml 파일에서 이러한 파일을 가리킬 URI 위치를 지정하여 Forms 서비스가 해당 파일을 찾을 수 있도록 합니다. 기본적으로 이러한 파일은 내부 키워드 `FSWebRoot` 또는 `ApplicationWebRoot`로 시작하는 URI 위치에서 사용할 수 있습니다.
 
