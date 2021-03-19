@@ -2,16 +2,18 @@
 title: Brand Portal에서 AEM Assets 구성
 description: 'Brand Portal에 자산 및 컬렉션을 게시하기 위해 Brand Portal에서 AEM Assets을 구성하는 방법을 알아봅니다. '
 contentOwner: VG
+feature: Brand Portal
+role: 관리자
 translation-type: tm+mt
-source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1650'
 ht-degree: 82%
 
 ---
 
 
-# Brand Portal에서 AEM Assets 구성 {#configure-integration-64}
+# Brand Portal로 AEM Assets 구성 {#configure-integration-64}
 
 Adobe Experience Manager(AEM) 자산은 [!DNL Adobe I/O]을 통해 브랜드 포털로 구성되며, 이 경우 브랜드 포털 임차인의 승인을 위해 IMS 토큰을 조달합니다.
 
