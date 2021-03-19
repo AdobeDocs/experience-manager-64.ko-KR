@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: e-commerce
 content-type: reference
 discoiquuid: 68799110-8183-40fe-be4f-2a7c7a7b3018
+feature: 전자 상거래 통합 프레임워크
 translation-type: tm+mt
-source-git-commit: eb1ae2b4910e7adef48865996db4837175f588d9
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '779'
 ht-degree: 3%
 
 ---
@@ -88,7 +89,7 @@ AEM eCommerce는 다음을 제공합니다.
 
 * **검색**  - 다음 중 하나를 사용합니다.
 
-   * aem 검색
+   * AEM 검색
    * e커머스 시스템 검색
    * 제3자 검색(예: Search &amp; Promote)
    * 또는 이들의 조합.
