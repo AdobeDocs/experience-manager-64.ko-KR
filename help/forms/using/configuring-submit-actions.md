@@ -7,11 +7,12 @@ uuid: aa261e65-a1ec-402b-80de-0ba8a294e315
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: fea76f90-22d5-4836-9901-a35229401eb0
+feature: 적응형 양식
 translation-type: tm+mt
-source-git-commit: 35532245929f2e404a96425e4710e911e9ce5b40
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1545'
-ht-degree: 0%
+source-wordcount: '1547'
+ht-degree: 1%
 
 ---
 
@@ -61,7 +62,7 @@ ht-degree: 0%
 
 아래 이미지에 표시된 대로, 다음 작업을 위한 **[!UICONTROL textbox]** 및 **[!UICONTROL numericbox]** 필드에서 복사한 값을 사용하여 `param1` 및 `param2`이(가) 매개 변수로 전달됩니다.
 
-**[!UICONTROL POST 요청 활성화]**&#x200B;와 요청을 게시할 URL을 제공할 수도 있습니다. 양식을 호스팅하는 AEM 서버에 데이터를 전송하려면 AEM 서버의 루트 경로에 해당하는 상대 경로를 사용합니다. 예: /content/forms/af/SampleForm.html. 데이터를 다른 서버에 제출하려면 절대 경로를 사용합니다.
+또한 **[!UICONTROL POST 요청 활성화]**&#x200B;와 요청을 게시할 URL을 제공할 수도 있습니다. 양식을 호스팅하는 AEM 서버에 데이터를 전송하려면 AEM 서버의 루트 경로에 해당하는 상대 경로를 사용합니다. 예: /content/forms/af/SampleForm.html. 데이터를 다른 서버에 제출하려면 절대 경로를 사용합니다.
 
 ![나머지 끝점 제출 작업 구성](assets/action-config.png)
 
