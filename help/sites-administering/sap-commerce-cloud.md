@@ -10,10 +10,11 @@ topic-tags: e-commerce
 content-type: reference
 discoiquuid: 9474519d-14cc-49e0-a81d-9319966fd1f6
 pagetitle: Administering hybris
+feature: 전자 상거래 통합 프레임워크
 translation-type: tm+mt
-source-git-commit: caa6c521fd6975d0b693e069a61b7a53f2ba5cd0
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1726'
+source-wordcount: '1729'
 ht-degree: 2%
 
 ---
