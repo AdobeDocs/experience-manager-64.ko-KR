@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: d816bf2e-5236-4084-b7c4-c32b72cdff97
+role: 개발자
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2593'
 ht-degree: 1%
 
 ---
@@ -144,7 +145,7 @@ XDP 문서를 PDF 문서로 변환하려면 다음 단계를 수행합니다.
 
 **PDFUftyService 클라이언트 만들기**
 
-PDF 유틸리티 작업을 프로그래밍 방식으로 수행하려면 먼저 PDFUftyService 클라이언트를 만들어야 합니다. Java API를 사용하면 `PDFUtilityServiceClient` 개체를 만들어 이 작업을 수행할 수 있습니다. 웹 서비스 API를 사용하면 `PDFUtilityServiceService` 개체를 사용하여 이 작업을 수행할 수 있습니다.
+PDF 유틸리티 작업을 프로그래밍 방식으로 수행하려면 먼저 PDFUftyService 클라이언트를 만들어야 합니다. Java API를 사용하면 `PDFUtilityServiceClient` 개체를 만들어 이러한 작업을 수행할 수 있습니다. 웹 서비스 API를 사용하면 `PDFUtilityServiceService` 개체를 사용하여 이 작업을 수행할 수 있습니다.
 
 **XDP를 PDF로 변환 작업 호출**
 
@@ -330,7 +331,7 @@ PDF 문서에 대한 저장 옵션을 설정하려면 다음 단계를 수행하
 
 **PDFUftyService 클라이언트 만들기**
 
-PDF 유틸리티 작업을 프로그래밍 방식으로 수행하려면 먼저 PDFUftyService 클라이언트를 만들어야 합니다. Java API를 사용하면 `PDFUtilityServiceClient` 개체를 만들어 이 작업을 수행할 수 있습니다. 웹 서비스 API를 사용하면 `PDFUtilityServiceService` 개체를 사용하여 완료됩니다.
+PDF 유틸리티 작업을 프로그래밍 방식으로 수행하려면 먼저 PDFUftyService 클라이언트를 만들어야 합니다. Java API를 사용하면 `PDFUtilityServiceClient` 개체를 만들어 이러한 작업을 수행할 수 있습니다. 웹 서비스 API를 사용하면 `PDFUtilityServiceService` 개체를 사용하여 완료됩니다.
 
 **저장 모드 설정**
 
