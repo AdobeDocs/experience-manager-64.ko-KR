@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 4b680d17-383b-4173-a444-0b7bdb24e6c8
+feature: 태깅
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1908'
+source-wordcount: '1909'
 ht-degree: 1%
 
 ---
@@ -174,7 +175,7 @@ cq:Tag 노드를 가리키지 않는 기존 경로 또는 경로를 참조하는
 
 애플리케이션 개발자가 컨텐트 유형에 태깅을 첨부하려면 노드의 등록([CND](https://jackrabbit.apache.org/node-type-notation.html))에 `cq:Taggable` 믹싱 또는 `cq:OwnerTaggable` 믹신이 포함되어야 합니다.
 
-`cq:Taggable`에서 상속되는 `cq:OwnerTaggable` 혼합은 컨텐츠를 소유자/작성자가 분류할 수 있음을 나타내기 위한 것입니다. AEM에서는 `cq:PageContent` 노드의 속성만 나타냅니다. 태깅 프레임워크에서는 `cq:OwnerTaggable` 믹신이 필요하지 않습니다.
+`cq:Taggable`에서 상속되는 `cq:OwnerTaggable` 혼합은 해당 컨텐츠가 소유자/작성자에 의해 분류될 수 있음을 나타내기 위한 것입니다. AEM에서는 `cq:PageContent` 노드의 속성만 나타냅니다. 태깅 프레임워크에서는 `cq:OwnerTaggable` 믹신이 필요하지 않습니다.
 
 >[!NOTE]
 >
@@ -266,7 +267,7 @@ AEM에 포함된 노드 유형에 대한 기본 정의는 다음과 같습니다
 
 ## 태그 마이그레이션 {#tags-migration}
 
-Experience Manager 6.4 이상 태그는 `/content/cq:tags` 아래에 저장되고 이전 태그는 `/etc/tags` 아래에 저장되었습니다. 그러나 Adobe Experience Manager이 이전 버전에서 업그레이드된 시나리오에서 태그는 여전히 이전 위치 `/etc/tags` 아래에 있습니다. 업그레이드된 시스템 태그는 `/content/cq:tags` 아래로 마이그레이션해야 합니다.
+Experience Manager 6.4 이상 태그는 `/content/cq:tags` 아래에 저장되고, 이전 태그는 `/etc/tags` 아래에 저장되었습니다. 그러나 Adobe Experience Manager이 이전 버전에서 업그레이드된 시나리오에서 태그는 여전히 이전 위치 `/etc/tags` 아래에 있습니다. 업그레이드된 시스템 태그는 `/content/cq:tags` 아래로 마이그레이션해야 합니다.
 
 >[!NOTE]
 >
