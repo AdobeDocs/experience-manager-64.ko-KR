@@ -7,10 +7,11 @@ uuid: d004e75d-e569-4e85-8dfa-5c411bc959af
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c142d7b3-301b-447c-a715-452c905565d1
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: 801941c060e1a912f3969bca1e89962241e7fbe0
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '822'
 ht-degree: 1%
 
 ---
@@ -114,6 +115,6 @@ Designer를 사용하면 샘플 XML 데이터를 사용하여 양식을 미리 �
 
 ## 저장소 {#html-preview-of-forms-in-forms-manager}에 있는 양식 미리 보기
 
-AEM Forms에서는 저장소에서 양식과 문서를 미리 볼 수 있습니다. 미리 보기를 사용하면 최종 사용자에게 양식이 어떻게 표시되고 작동하는지 정확하게 알 수 있습니다.
+AEM Forms에서는 저장소에서 양식과 문서를 미리 볼 수 있습니다. 미리 보기를 사용하면 최종 사용자에게 양식이 어떻게 표시되고 작동하는지 정확하게 확인할 수 있습니다.
 
 [**지원 문의**](https://www.adobe.com/account/sign-in.supportportal.html)
