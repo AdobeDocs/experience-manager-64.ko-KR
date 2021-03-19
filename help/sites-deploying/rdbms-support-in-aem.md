@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 56a984a5-4b7f-4a95-8a17-95d2d355bfed
+feature: 구성
 translation-type: tm+mt
-source-git-commit: 5513b24953438cc6c1b3f0027ff5535b4a1874d8
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -75,7 +76,7 @@ JDBC 드라이버용 OSGi 번들을 만드는 방법에 대한 자세한 내용�
       * *http://serveraddress:serverport/system/console/bundles*&#x200B;로 이동
       * **설치/업데이트**&#x200B;를 선택합니다.
       * 다운로드한 ZIP 보관에서 추출한 번들 선택을 찾습니다.
-      * **Oracle Corporation의 MySQLcom.mysql.jdbc**&#x200B;용 JDBC 드라이버가 활성 상태인지 확인하고 시작합니다.
+      * **Oracle Corporation의 MySQLcom.mysql.jdbc**&#x200B;용 JDBC 드라이버가 활성화되어 있는지 확인하고 시작합니다.
 
 1. 마지막으로 AEM을 `crx3` 및 `crx3rdb` 실행 모드로 시작합니다.
 
@@ -97,7 +98,7 @@ JDBC 드라이버용 OSGi 번들을 만드는 방법에 대한 자세한 내용�
 
    * `org.postgresql.Driver` for PostgreSQL;
    * `com.ibm.db2.jcc.DB2Driver` DB2;
-   * `oracle.jdbc.OracleDriver` oracle용
+   * `oracle.jdbc.OracleDriver` oracle의 경우
    * `com.mysql.jdbc.Driver` for MySQL and MariaDB (실험적);
    * c `om.microsoft.sqlserver.jdbc.SQLServerDriver` for Microsoft SQL Server(시험적)
 
@@ -112,7 +113,7 @@ JDBC 드라이버용 OSGi 번들을 만드는 방법에 대한 자세한 내용�
 * `jdbc:postgresql:databasename` for PostgreSQL;
 
 * `jdbc:db2://localhost:port/databasename` DB2;
-* `jdbc:oracle:thin:localhost:port:SID` oracle용
+* `jdbc:oracle:thin:localhost:port:SID` oracle의 경우
 * `jdbc:mysql://localhost:3306/databasename` for MySQL and MariaDB (실험적);
 
 * `jdbc:sqlserver://localhost:1453;databaseName=name` for Microsoft SQL Server(시험적).
