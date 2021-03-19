@@ -9,10 +9,11 @@ geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
+role: 개발자
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3533'
+source-wordcount: '3534'
 ht-degree: 0%
 
 ---
