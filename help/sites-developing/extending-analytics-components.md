@@ -1,7 +1,7 @@
 ---
 title: 구성 요소에 Adobe Analytics 추적 추가
 seo-title: 구성 요소에 Adobe Analytics 추적 추가
-description: 'null'
+description: 구성 요소에 Adobe Analytics 추적 추가
 seo-description: 'null'
 uuid: 447b140c-678c-428d-a1c9-ecbdec75cd42
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: a11c39b4-c23b-4207-8898-33aea25f2ad0
 translation-type: tm+mt
-source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1270'
 ht-degree: 2%
 
 ---
