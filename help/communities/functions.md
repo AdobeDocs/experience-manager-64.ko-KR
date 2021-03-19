@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: cc993b71-e2f2-48e7-ad4e-469cb5ce2dc1
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2542'
+source-wordcount: '2543'
 ht-degree: 3%
 
 ---
@@ -108,7 +109,7 @@ assignments 함수는 지원](overview.md#enablement-community)에 대한 [커�
 
 * [제목 및 URL 설정](#title-and-url-settings)을 참조하십시오.
 * **[!UICONTROL 권한 있는]**
-구성원 허용이 선택된 경우 이 블로그는 권한이 있는 구성원 그룹을 선택하여 아티클을 만들 수 있는 권한 있는  [구성원만 허용합니다](users.md#privileged-members-group). 이 옵션이 선택되어 있지 않으면 모든 커뮤니티 멤버가 만들 수 있습니다. 기본값은 선택되어 있지 않습니다.
+구성원 허용이 선택된 경우 이 블로그는 권한이 있는 구성원 그룹을 선택하여 아티클을 만들 수 있도록 권한이 있는  [구성원만 허용합니다](users.md#privileged-members-group). 이 옵션이 선택되어 있지 않으면 모든 커뮤니티 멤버가 만들 수 있습니다. 기본값은 선택되어 있지 않습니다.
 
 * **[!UICONTROL 파일 업로드]**
 허용이 선택된 경우 블로그에 멤버가 파일을 업로드할 수 있는 기능이 포함됩니다. 기본값은 선택되었습니다.
@@ -132,7 +133,7 @@ assignments 함수는 지원](overview.md#enablement-community)에 대한 [커�
 허용이 선택된 경우 포럼에서는 주제 응답을 주석 목록의 시작 부분에 고정시킬 수 있습니다. 기본값은 선택되었습니다.
 
 * **[!UICONTROL 권한 있는]**
-구성원 허용이 선택된 경우 이 블로그는 권한이 있는 구성원 그룹을 선택하여 아티클을 만들 수 있는 권한 있는  [구성원만 허용합니다](users.md#privileged-members-group). 이 옵션이 선택되어 있지 않으면 모든 커뮤니티 멤버가 만들 수 있습니다. 기본값은 선택되어 있지 않습니다.
+구성원 허용이 선택된 경우 이 블로그는 권한이 있는 구성원 그룹을 선택하여 아티클을 만들 수 있도록 권한이 있는  [구성원만 허용합니다](users.md#privileged-members-group). 이 옵션이 선택되어 있지 않으면 모든 커뮤니티 멤버가 만들 수 있습니다. 기본값은 선택되어 있지 않습니다.
 
 * **[!UICONTROL 파일 업로드]**
 허용이 선택된 경우 블로그에 멤버가 파일을 업로드할 수 있는 기능이 포함됩니다. 기본값은 선택되었습니다.
@@ -305,7 +306,7 @@ QnA 함수는 태그 지정, 파일 업로드, 팔로잉, 자체 편집, 투표 
 허용이 선택된 경우 QnA 포럼에 구성원이 파일을 업로드할 수 있는 기능이 포함됩니다. 기본값은 선택되었습니다.
 
 * **[!UICONTROL 스레드된 답글]**
-허용이 선택되지 않은 경우 QnA 포럼에서는 게시된 질문에 대한 댓글(답변)을 허용하지만 답변에 대한 응답은 허용되지 않습니다. 기본값은 선택되었습니다.
+허용이 선택되지 않은 경우 QnA 포럼에서는 게시된 질문에 대한 댓글(답변)을 허용하지만 응답에 대한 회신은 허용되지 않습니다. 기본값은 선택되었습니다.
 
 * **[!UICONTROL 주요 컨텐츠]**
 허용 옵션을 선택하면 아이디어를 주요 컨텐츠로 식별할 수  [있습니다](featured.md). 기본값은 선택되었습니다.
