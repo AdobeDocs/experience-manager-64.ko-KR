@@ -1,13 +1,13 @@
 ---
 title: AEM Forms JEE 패치 설치 프로그램
-description: 'null'
+description: AEM Forms JEE 패치 설치 프로그램
 uuid: e709871b-c04c-43bb-a7d0-45e89fbd3d44
 content-type: reference
 discoiquuid: 83bace08-1d4f-4192-a634-c7c4879963d8
 translation-type: tm+mt
-source-git-commit: 610e9a54adad3abdfecb8b2c4da67d677f75175e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '544'
 ht-degree: 24%
 
 ---
