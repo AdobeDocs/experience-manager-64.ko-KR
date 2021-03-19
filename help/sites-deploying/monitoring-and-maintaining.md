@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: de6ed870-0e69-4d16-99e4-037dd5acf413
+feature: 구성
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '5889'
+source-wordcount: '5890'
 ht-degree: 1%
 
 ---
@@ -851,7 +852,7 @@ Percentage of the requests served within a certain time (ms)
 
 위의 숫자는 기본 AEM 설치에 포함되어 있는 geometrixx 회사 페이지에 액세스하는 표준 MAcBook Pro 랩탑(2010년 중반)에서 가져옵니다. 페이지는 매우 간단하지만 성능에 맞게 최적화되지 않았습니다.
 
-`apachebench` 또한 모든 동시 요청에 대해 요청당 시간을 평균으로 표시합니다.자세한 내용은  `Time per request: 54.595 [ms]` (평균, 모든 동시 요청) 을 참조하십시오. 모든 효과를 보기 위해 동시성 매개 변수 `-c`(한 번에 수행할 여러 요청 수)의 값을 변경할 수 있습니다.
+`apachebench` 또한 모든 동시 요청에 대해 요청당 시간을 평균으로 표시합니다.자세한 내용은  `Time per request: 54.595 [ms]` (평균, 모든 동시 요청) 을 참조하십시오. 모든 효과를 보려면 동시 실행 매개 변수 `-c`(한 번에 수행할 여러 요청 수)의 값을 변경할 수 있습니다.
 
 ### 요청 카운터 {#request-counters}
 
@@ -1175,7 +1176,7 @@ JVM(Java Virtual Machine)은 조정(특히 Java 7 이후)과 관련하여 크게
 
 >[!NOTE]
 >
->oracle의 VM에는 다음 정보도 있습니다.
+>oracle VM의 경우 다음 정보도 있습니다.
 >
 >[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)
 
