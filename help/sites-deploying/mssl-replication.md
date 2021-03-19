@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
+feature: 구성
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1456'
+source-wordcount: '1457'
 ht-degree: 3%
 
 ---
@@ -27,7 +28,7 @@ ht-degree: 3%
 1. 작성자 및 게시 인스턴스에 대한 개인 키 및 인증서를 만들거나 가져옵니다.
 1. 작성자 및 게시 인스턴스에 키 및 인증서를 설치합니다.
 
-   * 작성자:작성자의 개인 키 및 게시 인증서.
+   * 작성자:작성자의 개인 키 및 게시 인증서입니다.
    * 게시:게시의 개인 키와 작성자의 인증서. 인증서는 복제 에이전트와 인증되는 사용자 계정과 연결됩니다.
 
 1. 게시 인스턴스에서 Jetty 기반 HTTP 서비스를 구성합니다.
