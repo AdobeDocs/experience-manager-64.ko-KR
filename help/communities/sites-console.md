@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
+role: 관리자
 translation-type: tm+mt
-source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3241'
+source-wordcount: '3242'
 ht-degree: 4%
 
 ---
@@ -522,7 +523,7 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 
 새 커뮤니티 사이트가 게시되면 다양한 관리 및 구성원 역할에 대한 적절한 권한이 설정된 새 구성원 그룹(사용자 그룹은 게시 환경에서 만들기)이 만들어집니다.
 
-구성원 그룹에 대해 만들어진 이름은 다른 커뮤니티 사이트 루트에 대해 동일한 사이트 이름을 가진 커뮤니티 사이트 및 그룹과의 충돌을 방지하기 위한 고유한 ID뿐만 아니라 [1단계](#step13asitetemplate)의 사이트에 지정된 *site-name*&#x200B;입니다.
+구성원 그룹에 대해 만들어진 이름은 다른 커뮤니티 사이트 루트에 대해 동일한 사이트 이름을 가진 커뮤니티 사이트 및 그룹과의 충돌을 방지하기 위한 고유한 ID뿐만 아니라 [1단계](#step13asitetemplate)에 지정된 사이트 이름&#x200B;*에 있습니다.*
 
 예를 들어 이름이 &quot;시작하기 자습서&quot;라는 사이트에 대해 &quot;참여&quot;인 경우 중재자에 대한 사용자 그룹은 다음과 같습니다.
 
