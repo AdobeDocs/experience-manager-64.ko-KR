@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
+role: 개발자
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '8244'
+source-wordcount: '8245'
 ht-degree: 0%
 
 ---
@@ -565,7 +566,7 @@ PDF 문서에서 인증서 기반 암호화를 제거하려면 다음 단계를 
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 웹 서비스 API {#remove-certificate-based-encryption-using-the-web-service-api}을(를) 사용하여 인증서 기반 암호화 제거
+### 웹 서비스 API {#remove-certificate-based-encryption-using-the-web-service-api}를 사용하여 인증서 기반 암호화 제거
 
 암호화 API(웹 서비스)를 사용하여 인증서 기반 암호화를 제거합니다.
 
