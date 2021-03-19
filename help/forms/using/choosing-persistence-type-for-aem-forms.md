@@ -9,11 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: a972fb35-38a7-4b83-99bd-6a6dddf8043b
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 1%
+source-wordcount: '399'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 1%
 
 지속성 유형을 현명하게 선택하십시오. 효율적이고 확장 가능한 AEM Forms 환경을 구축할 수 있습니다.
 
-지속성은 컨텐츠를 물리적 저장소에 저장하는 방법입니다. 데이터에 대한 실제 데이터 구조 및 저장 메커니즘을 정의합니다. MicroKernels는 AEM Forms에서 지속성 관리자 역할을 수행합니다. AEM Forms은 TarMK, MongoMK 및 RDBMK 유형의 지속성(MicroKernals)을 지원합니다. AEM Forms 인스턴스의 목적 및 배포 유형(단일 서버, 팜 또는 클러스터)에 따라 AEM Forms에 대한 지속성 유형을 선택할 수 있습니다.
+지속성은 컨텐츠를 물리적 스토리지에 저장하는 방법입니다. 데이터에 대한 실제 데이터 구조 및 저장 메커니즘을 정의합니다. MicroKernels는 AEM Forms에서 지속성 관리자 역할을 수행합니다. AEM Forms은 TarMK, MongoMK 및 RDBMK 유형의 지속성(MicroKernals)을 지원합니다. AEM Forms 인스턴스의 목적 및 배포 유형(단일 서버, 팜 또는 클러스터)에 따라 AEM Forms에 대한 지속성 유형을 선택할 수 있습니다.
 
 >[!NOTE]
 >
