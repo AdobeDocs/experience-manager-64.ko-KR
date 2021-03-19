@@ -9,11 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
 topic-tags: Configuration
 discoiquuid: 71412f5d-ff34-415f-baf8-d300756b93a9
+role: 관리자
 translation-type: tm+mt
-source-git-commit: f02fde7583da87d48bf72bf569762e9d604d25ce
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 1%
+source-wordcount: '273'
+ht-degree: 2%
 
 ---
 
