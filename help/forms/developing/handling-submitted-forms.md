@@ -10,10 +10,11 @@ geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
+role: 개발자
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2921'
+source-wordcount: '2922'
 ht-degree: 0%
 
 ---
@@ -69,7 +70,7 @@ Java XML 클래스 사용.
 
 >[!NOTE]
 >
->데이터를 XML 데이터로 전송하려면 양식 디자인을 Designer에서 올바르게 구성해야 합니다. 양식 디자인이 XML 데이터를 전송하도록 제대로 구성하려면 양식 디자인에 있는 [제출] 단추가 XML 데이터를 전송하도록 설정되어 있는지 확인하십시오. 제출 단추를 설정하여 XML 데이터를 제출하는 방법에 대한 자세한 내용은 [AEM Forms 디자이너](https://www.adobe.com/go/learn_aemforms_designer_63)를 참조하십시오.
+>데이터를 XML 데이터로 전송하려면 양식 디자인을 Designer에서 올바르게 구성해야 합니다. 양식 디자인이 XML 데이터를 전송하도록 제대로 구성하려면 양식 디자인에 있는 [제출] 단추가 XML 데이터를 전송하도록 설정되어 있는지 확인하십시오. 제출 단추를 설정하여 XML 데이터를 제출하는 방법에 대한 자세한 내용은 [AEM Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)을(를) 참조하십시오.
 
 ## 제출된 PDF 데이터 처리 {#handling-submitted-pdf-data}
 
