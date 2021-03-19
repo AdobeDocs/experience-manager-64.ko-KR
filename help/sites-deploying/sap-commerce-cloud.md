@@ -10,10 +10,11 @@ topic-tags: e-commerce
 content-type: reference
 discoiquuid: 44dfa10f-497e-473f-95d4-8dccae7ebf8e
 pagetitle: Deploying eCommerce with SAP Commerce Cloud
+feature: 전자 상거래 통합 프레임워크
 translation-type: tm+mt
-source-git-commit: 94dbed719c2f3360db6ba5b414230fd3f79f7955
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '734'
 ht-degree: 2%
 
 ---
@@ -97,7 +98,7 @@ eCommerce 기능을 설치하려면 다음 작업이 필요합니다.
 
    1. [Geometrixx 아웃도어 스토어를 설치합니다](#setup-the-geometrixx-outdoors-store).
 
-1. [aem](/help/sites-authoring/qg-page-authoring.md) 에서 필요한 추가 페이지를 제작합니다.
+1. [AEM](/help/sites-authoring/qg-page-authoring.md) 에서 필요한 추가 페이지를 제작합니다.
 
 >[!CAUTION]
 >
