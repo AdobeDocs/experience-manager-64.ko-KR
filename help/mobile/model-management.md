@@ -1,7 +1,7 @@
 ---
 title: 모델 개요
 seo-title: 모델 개요
-description: 'null'
+description: 모델 개요
 seo-description: 'null'
 uuid: e09dac52-9515-43f7-9d3b-6637e2283d59
 contentOwner: Jyotika Syal
@@ -9,10 +9,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: c8281f98-9811-42f7-9a31-f82dd0f09319
 translation-type: tm+mt
-source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 1%
+source-wordcount: '786'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 1%
 
 ### 모델 {#the-models}
 
-모델은 엔티티가 만들어지는 방법을 결정하는 데 사용됩니다. 엔티티에서 사용할 수 있는 항목과 AEM 컨텐츠에서 데이터가 생성되는 방법을 정의합니다. 스페이스, 폴더 및 엔티티로 작업하기 전에 모델 생성 및 관리에 익숙해야 합니다.
+모델은 엔티티가 만들어지는 방법을 결정하는 데 사용됩니다. 엔티티에서 사용할 수 있는 항목과 AEM 컨텐츠에서 데이터가 생성되는 방법을 정의합니다. 공간, 폴더 및 엔티티로 작업하기 전에 모델 생성 및 관리에 익숙해야 합니다.
 
 >[!NOTE]
 >
