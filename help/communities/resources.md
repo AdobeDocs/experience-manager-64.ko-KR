@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2979'
+source-wordcount: '2980'
 ht-degree: 5%
 
 ---
@@ -369,7 +370,7 @@ AEM Communities의 경우 리소스 콘솔은 지원 커뮤니티 사이트 구�
 
 * **[!UICONTROL 학습 경로에서 순서 적용]**
 
-   (*선택 사항*)이 켜기로 설정된 경우 학습 경로를 진행하는 데 수강생이 필요한 활성 리소스가 추가되는 순서는 순서로 표시됩니다. 기본값은 해제입니다.
+   (*선택 사항*)이 켜짐으로 설정된 경우 학습 경로를 진행하는 데 수강생이 필요한 활성 리소스가 추가되는 순서는 순서로 표시됩니다. 기본값은 해제입니다.
 
 * **[!UICONTROL 리소스]**
 
