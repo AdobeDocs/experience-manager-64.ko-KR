@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2787'
+source-wordcount: '2788'
 ht-degree: 4%
 
 ---
@@ -56,7 +57,7 @@ Adobe Analytics은 회원이 지원되는 커뮤니티 기능과 상호 작용�
 1. Adobe Analytics [보고서 세트 준비](#adobe-analytics-report-suite-for-video-reporting)
 1. AEM Analytics [클라우드 서비스](#aem-analytics-cloud-service-configuration) 및 [프레임워크](#aem-analytics-framework-configuration) 만들기
 1. [커뮤니티 ](#enable-analytics-for-a-community-site) 사이트에 대한 분석 활성화
-1. [aem ](#verify-analytics-to-aem-variable-mapping) 변수 매핑으로 Analytics 확인
+1. [AEM ](#verify-analytics-to-aem-variable-mapping) 변수 매핑으로 Analytics 확인
 1. [기본 게시자 식별](#primary-publisher)
 1. [커뮤니티 사이트 ](#publish-community-site-and-analytics-cloud-service) 게시
 1. Adobe Analytics에서 커뮤니티 사이트로 보고서 데이터](#obtaining-reports-from-analytics)의 [가져오기 구성
