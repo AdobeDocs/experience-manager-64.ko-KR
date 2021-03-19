@@ -8,10 +8,11 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 38132225-ecae-4887-8f3d-0b3845059130
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1112'
 ht-degree: 1%
 
 ---
@@ -254,4 +255,4 @@ IBM WebSphere Application Server 및 Oracle WebLogic Server는 기본적으로 �
 
 ### 신뢰 저장소 {#protecting-the-private-key-stored-in-trust-store}에 저장된 개인 키 보호
 
-Trust Store에서 가져온 개인 키 또는 자격 증명은 JEE 데이터베이스의 AEM Forms에 저장됩니다. 데이터베이스를 안전하게 보호하고 지정된 관리자에게만 액세스를 제한하는 데 적절한 사전 조치를 취하십시오.
+Trust Store에서 가져온 개인 키 또는 자격 증명은 JEE 데이터베이스의 AEM Forms에 저장됩니다. 데이터베이스를 안전하게 보호하고 지정된 관리자에게만 액세스 권한을 제한하는 데 적절한 사전 조치를 취할 수 있습니다.
