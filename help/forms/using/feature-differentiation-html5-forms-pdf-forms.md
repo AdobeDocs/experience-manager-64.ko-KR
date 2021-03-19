@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 273096d0-b0e1-4519-8af6-11b3414cc172
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '503'
 ht-degree: 2%
 
 ---
@@ -56,8 +57,8 @@ ht-degree: 2%
   </tr>
   <tr>
    <td>머리글/바닥글 </td> 
-   <td>지원됨. <br /> <br /> HTML5 모바일 양식에서는 페이지 나누기를 지원하지 않으므로 머리글과 바닥글은 한 번만 표시됩니다. 그러나 레이아웃에 설정하여 모바일 양식 미리 보기의 여러 위치에 표시할 수 있습니다.<br /> </td> 
-   <td>지원됨.</td> 
+   <td>지원됨 <br /> <br /> HTML5 모바일 양식에서는 페이지 나누기를 지원하지 않으므로 머리글과 바닥글은 한 번만 표시됩니다. 그러나 레이아웃에 설정하여 모바일 양식 미리 보기의 여러 위치에 표시할 수 있습니다.<br /> </td> 
+   <td>지원됨</td> 
   </tr>
   <tr>
    <td>사용자 정의 위젯</td> 
