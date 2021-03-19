@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: designer
 discoiquuid: abb5513f-c824-4dc2-8617-29ea47684afe
+feature: 디자이너
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -83,7 +84,7 @@ iPad의 경우 필드의 init 매개 변수에서 `geoLocManadatoryOnIpad` 매�
 
 ### {#clearing-a-signature} 서명 지우기
 
-이 기능을 사용하는 동안 사용자가 **지우개** 아이콘을 클릭하여 필드를 지우고 다시 시작할 수 있습니다. 지리적 위치 정보가 추가되면 지워집니다.
+이 기능을 사용하는 동안 사용자는 **지우개** 아이콘을 클릭하여 필드를 지우고 다시 시작할 수 있습니다. 지리적 위치 정보가 추가되면 지워집니다.
 
 ### 서명 {#saving-a-signature} 저장
 
@@ -91,7 +92,7 @@ iPad의 경우 필드의 init 매개 변수에서 `geoLocManadatoryOnIpad` 매�
 
 스크리블 필드를 탭하거나 클릭하면 대화 상자가 읽기 전용 모드로 열립니다.
 
-![1](assets/3.png)
+![3](assets/3.png)
 
 ### 펜 크기 선택 {#selecting-pen-size}
 
