@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 07fffbd5-5430-4abc-b532-0840ecc7b1b0
+role: 개발자
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '888'
 ht-degree: 0%
 
 ---
@@ -164,7 +165,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api}를 사용하여 서명 필드 이름을 검색하는 중
 
-다음 Java 코드 예제에서는 *LoanSig.pdf*&#x200B;라는 PDF 문서에 있는 서명 필드의 이름을 검색합니다. ([서명 필드 이름 검색](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names)을(를) 참조하십시오.)
+다음 Java 코드 예제에서는 *LoanSig.pdf*&#x200B;라는 PDF 문서에 있는 서명 필드의 이름을 검색합니다. ([서명 필드 이름 검색](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names) 참조)
 
 ```as3
  /* 
