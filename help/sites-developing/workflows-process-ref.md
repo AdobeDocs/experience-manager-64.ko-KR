@@ -1,7 +1,7 @@
 ---
 title: 워크플로우 프로세스 참조
 seo-title: 워크플로우 프로세스 참조
-description: 'null'
+description: 워크플로우 프로세스 참조
 seo-description: 'null'
 uuid: de367aa8-4580-4810-b665-2a7b521e36ca
 contentOwner: User
@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: dbdf981f-791b-4ff7-8ca8-039d0bdc9c92
 translation-type: tm+mt
-source-git-commit: 58686148b74e63f28800b5752db0cceafc58ccdd
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 1%
+source-wordcount: '1143'
+ht-degree: 2%
 
 ---
 
