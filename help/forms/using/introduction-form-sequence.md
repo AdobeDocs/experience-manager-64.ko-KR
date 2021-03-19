@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 4a51ebc4-e019-4fc5-93a1-d97f695126f5
+feature: 적응형 양식
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -32,7 +33,7 @@ ht-degree: 0%
    이 예에서는 다음 패널을 추가할 수 있습니다.
 
    * **채우기**:여기에는 데이터 캡처를 위한 양식 필드가 포함되어 있습니다. 여기서는 중첩된 하위 패널을 포함하여 개인, 가족, 재무 등 다양한 유형의 정보에 대한 섹션을 만들 수 있습니다.
-   * **확인**:XFA 기반  **** 응용 양식에 사용할 수 있는 Verifycomponent가 포함되어 있습니다. 확인을 위해 [채우기] 패널에서 캡처한 정보가 읽기 전용 모드로 표시됩니다.
+   * **확인**:XFA 기반 응용  **** 양식에서 사용할 수 있는 Verifycomponent 구성 요소가 포함되어 있습니다. 확인을 위해 [채우기] 패널에서 캡처한 정보가 읽기 전용 모드로 표시됩니다.
    * **전자 서명**:XFA 기반  **** 적응형 양식에서 사용할 수 있는 Signcomponent가 포함되어 있습니다. 다음과 같은 서명 서비스를 제공합니다.
 
       * Adobe Document Cloud eSign 서비스
