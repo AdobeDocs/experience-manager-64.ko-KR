@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: 5b00783e4471a6b142ab17a7bc4a647ab04aec5f
 workflow-type: tm+mt
 source-wordcount: '2844'
 ht-degree: 32%
@@ -72,7 +72,7 @@ UI의 생산성과 사용 편의성을 향상시키기 위해 UI에 다양한 �
 
 #### 컨텐츠 리포지토리 {#content-repository}
 
-* 온라인 개정 정리 기능을 통해 보다 빠르고 효율적인 완료 내부 테스트를 통해 새 테일 컴포지션이 최대 10배 더 빨라지고 AEM 6.3에 비해 IOPS가 적은 디스크 공간을 복구할 수 있습니다. 이 경우 온라인 개정 정리 실행 중에 성능에 미치는 영향이 줄어듭니다. 자세한 내용은 [설명서 페이지](/help/sites-deploying/revision-cleanup.md#full-and-tail-compaction-modes)를 참조하십시오.
+* 온라인 개정 정리 기능을 통해 보다 빠르고 효율적인 완료 내부 테스트를 통해 새 테일 컴포지션이 최대 10배 더 빨라지고 AEM 6.3에 비해 IOPS가 적은 디스크 공간을 다시 확보할 수 있습니다. 이 경우 온라인 개정 정리 실행 중에도 성능에 미치는 영향이 더 적습니다. 자세한 내용은 [설명서 페이지](/help/sites-deploying/revision-cleanup.md#full-and-tail-compaction-modes)를 참조하십시오.
 
 * MongoMK에 대한 지속적인 개정 정리가 예약된 정리 유지 관리를 대체합니다.
 * 문서 노드 수정 효율성 향상
@@ -196,7 +196,7 @@ Adobe의 Creative Cloud Asset Link를 통해 컨텐츠 제작 과정에서 크�
 
 **AEM Desktop App**
 
-AEM 데스크탑 앱이 AEM 6.4와 호환되는 버전 1.8로 업데이트되었습니다. AEM 데스크톱 앱에 대한 전체 변경 사항은 전용 [AEM 데스크톱 앱 릴리스 노트](https://docs.adobe.com/content/help/ko-KR/experience-manager-desktop-app/using/release-notes.html) 문서에 있습니다.
+AEM 데스크톱 앱이 AEM 6.4와 호환되는 버전 1.8로 업데이트되었습니다. AEM 데스크톱 앱에 대한 전체 변경 사항은 전용 [AEM 데스크톱 앱 릴리스 노트](https://docs.adobe.com/content/help/ko-KR/experience-manager-desktop-app/using/release-notes.html) 문서에 있습니다.
 
 AEM 6.3 릴리스 이후 향상된 기능에는 백그라운드에서 계층 폴더를 업로드하는 기능, 새로운 UI로 자산 백그라운드 작업을 모니터링할 수 있는 기능, 향상된 캐싱, 네트워킹 및 로그인, 전반적인 안정성 개선 등이 포함되어 있습니다. 설명서에는 [우수 사례 가이드](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)도 포함되어 있습니다.
 
@@ -307,9 +307,9 @@ Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 
    * [이탈리아어](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
    * [프랑스어](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 
-* [클래식 UI ](/help/sites-developing/dialog-conversion.md) 구성 요소를 Coral 3으로 마이그레이션하기 위한 대화 상자 변환 도구
+* [AEM 현대화 도구](/help/sites-developing/modernization-tools.md) 를 사용하여 클래식 UI 구성 요소를 Coral 3으로 마이그레이션
 
-**자산**
+**에셋**
 
 * Adobe Experience Manager 데스크톱 앱([자세히 보기](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) 및 [다운로드](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html))
 
@@ -356,7 +356,7 @@ Experience Manager 6.4에서는 중국어 인코딩 표준을 사용하도록 GB
 
 >[!NOTE]
 >
->Oracle은 Oracle Java SE 제품에 대한 &quot;장기 지원&quot;(LTS) 모델로 이동되었습니다. Java 9 및 10은 Oracle의 비LTS 릴리스입니다([Oracle Java SE 지원 로드맵](https://www.oracle.com/technetwork/java/eol-135779.html) 참조). Adobe는 프로덕션 환경에서 AEM을 실행하는 데 필요한 Java LTS 릴리스만 지원합니다. 따라서 AEM 6.4에서 사용하려면 Java 8 버전이 권장됩니다.
+>Oracle은 Oracle Java SE 제품에 대한 &quot;장기 지원&quot;(LTS) 모델로 이동되었습니다. Java 9 및 10은 Oracle에 의한 비LTS 릴리스입니다([Oracle Java SE 지원 로드맵](https://www.oracle.com/technetwork/java/eol-135779.html) 참조). Adobe는 프로덕션 환경에서 AEM을 실행하는 데 필요한 Java LTS 릴리스만 지원합니다. 따라서 AEM 6.4에서 사용하려면 Java 8 버전이 권장됩니다.
 
 ## 더 이상 사용되지 않는 및 제거된 기능 {#deprecated-and-removed-features}
 
