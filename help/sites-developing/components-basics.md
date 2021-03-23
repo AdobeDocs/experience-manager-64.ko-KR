@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 4f820cd0bf3a18b18c95e75c0f291452871175a4
+source-git-commit: 5b00783e4471a6b142ab17a7bc4a647ab04aec5f
 workflow-type: tm+mt
 source-wordcount: '4981'
 ht-degree: 2%
@@ -458,7 +458,7 @@ AEM 구성 요소의 구조는 강력하고 유연하며, 주요 고려 사항�
 >[!NOTE]
 >
 >* 호환성을 위해 터치 지원 UI에 대해 정의된 대화 상자가 없을 때 터치 지원 UI는 클래식 UI 대화 상자의 정의를 사용할 수 있습니다.
->* 클래식 UI에 대해 대화 상자만 정의된 구성 요소를 확장/변환할 수 있도록 [대화 상자 변환 도구](/help/sites-developing/dialog-conversion.md)도 제공됩니다.
+>* 클래식 UI에 대해 대화 상자만 정의된 구성 요소를 확장/변환할 수 있도록 [AEM 현대화 도구](/help/sites-developing/modernization-tools.md)도 제공됩니다.
 
 >
 
@@ -598,7 +598,7 @@ AEM 내의 구성 요소는 다음과 같이 3개의 서로 다른 계층을 따
    * `cq:layout` ( `String`)::클래식 UI에서 구성 요소를 편집하는 방법을 정의합니다.
    * `cq:dialogMode` ( `String`):구성 요소 대화 상자가 클래식 UI에서 열리는 방식을 정의합니다.
 
-      * 터치 지원 UI에서는 대화 상자가 항상 데스크탑 모드에서 떠다니고, 모바일에서 전체 화면으로 자동으로 열립니다.
+      * 터치 지원 UI에서는 대화 상자가 항상 데스크탑 모드에서 떠다니고 모바일에서 전체 화면으로 자동으로 열립니다.
    * `cq:emptyText` ( `String`):시각적 컨텐츠가 없을 때 표시되는 텍스트를 정의합니다.
    * `cq:inherit` ( `Boolean`):누락된 값이 상속된 구성 요소에서 상속되는지 여부를 정의합니다.
    * `dialogLayout` (문자열):대화 상자를 여는 방법을 정의합니다.
@@ -638,7 +638,7 @@ AEM 내의 구성 요소는 다음과 같이 3개의 서로 다른 계층을 따
 
    `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* `cq:editConfig`의 하위 노드를 찾으려면 예를 들어 `cq:dropTargets` 유형의 `cq:DropTargetConfig`;crxde lite**에서 쿼리 도구를 사용하고 다음 XPath 쿼리 문자열로 검색할 수 있습니다.
+* `cq:editConfig`의 하위 노드를 찾으려면 예를 들어 `cq:dropTargets` 유형의 `cq:DropTargetConfig`;CRXDE Lite**에서 쿼리 도구를 사용하고 다음 XPath 쿼리 문자열로 검색할 수 있습니다.
 
    `//element(cq:dropTargets, cq:DropTargetConfig)`
 
