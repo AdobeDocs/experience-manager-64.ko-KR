@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 655c576f-d6e3-40a5-ab1f-6382a0c7443c
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 translation-type: tm+mt
-source-git-commit: 6d07c570ce596871daa246a20c238432e4f8e67a
+source-git-commit: 5b00783e4471a6b142ab17a7bc4a647ab04aec5f
 workflow-type: tm+mt
 source-wordcount: '3525'
 ht-degree: 1%
@@ -49,7 +49,7 @@ AEM 구성 요소는 웹 페이지에서 사용할 수 있는 컨텐츠를 보�
 
 ## 구조 {#structure}
 
-구성 요소의 기본 구조는 [AEM 구성 요소 - 기본 사항](/help/sites-developing/components-basics.md#structure) 페이지에서 다룹니다. 이 문서는 터치 지원 UI와 클래식 UI를 모두 포함합니다. 새 구성 요소에서 클래식 설정을 사용할 필요가 없어도 기존 구성 요소에서 상속할 때 이러한 설정을 인식하도록 도울 수 있습니다.
+구성 요소의 기본 구조는 [AEM 구성 요소 - 기본 사항](/help/sites-developing/components-basics.md#structure) 페이지에서 다룹니다. 이 문서는 터치 지원 UI와 클래식 UI를 모두 포함합니다. 새 구성 요소에서 클래식 설정을 사용할 필요가 없어도 기존 구성 요소에서 상속할 때 이를 파악하는 데 도움이 됩니다.
 
 ## 기존 구성 요소 및 대화 상자 확장 {#extending-existing-components-and-dialogs}
 
@@ -287,7 +287,7 @@ newComponent (cq:Component)
 
 ExtJS가 있는 클래식 UI에서는 컨텐츠 구조에 지정된 위젯에 대한 리스너가 있는 것이 일반적이었습니다. 터치 지원 UI에서 동일하게 수행되는 것은 JS 리스너 코드(또는 모든 코드)가 더 이상 컨텐츠에 정의되지 않은 것과 다릅니다.
 
-콘텐츠 구조는 의미 구조를 설명합니다.기본 위젯의 특성을 의미해서는 안 됩니다(필수). 콘텐츠 구조에 JS 코드가 없으면 콘텐츠 구조를 변경하지 않고도 구현 세부 사항을 변경할 수 있습니다. 즉, 컨텐츠 구조를 건드리지 않고도 위젯 라이브러리를 변경할 수 있습니다.
+콘텐츠 구조는 의미 구조를 설명합니다.기본 위젯의 특성을 의미해서는 안 됩니다(필수). 컨텐츠 구조에 JS 코드가 없으면 컨텐츠 구조를 변경하지 않고도 구현 세부 정보를 변경할 수 있습니다. 즉, 컨텐츠 구조를 건드리지 않고도 위젯 라이브러리를 변경할 수 있습니다.
 
 #### 대화 상자 {#dialog-ready}의 가용성 감지
 
@@ -471,7 +471,7 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 * 대화 상자
 
    * 터치가 활성화된 UI에서 사용할 새 대화 상자를 만들어야 합니다. 하지만 호환성을 위해 터치가 활성화된 UI에 대해 정의된 대화 상자가 없을 때 클래식 UI 대화 상자의 정의를 사용할 수 있습니다.
-   * 기존 구성 요소를 확장하는 데 도움이 되도록 [대화 상자 변환 도구](/help/sites-developing/dialog-conversion.md)가 제공됩니다.
+   * 기존 구성 요소를 확장하는 데 도움이 되도록 [AEM 현대화 도구](/help/sites-developing/modernization-tools.md)가 제공됩니다.
    * [ExtJS를 Granite UI ](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) 구성 요소에 매핑하면 동일한 Granite UI 리소스 유형을 사용하는 ExtJS xtype 및 노드 유형에 대한 간편한 개요를 제공합니다.
    * 필드 사용자 지정을 참조하십시오. 자세한 내용은 [대화 상자 필드 사용자 지정](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)의 AEM Gems 세션을 참조하십시오.
    * 유형을 [Granite UI 유효성 검사](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)로 마이그레이션
@@ -483,7 +483,7 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 
 프로젝트가 터치 지원 UI로 완전히 마이그레이션되는 경우 터치 지원 UI와 관련된 개체 및 함수를 사용하려면 해당 코드를 바꿔야 합니다.
 
-그러나 마이그레이션 기간(일반적인 시나리오) 동안 프로젝트가 클래식 UI와 터치 지원 UI를 모두 충족해야 하는 경우 적절한 객체를 참조하는 별도의 코드를 구분하기 위해 스위치를 구현해야 합니다.
+하지만 마이그레이션 기간(일반적인 시나리오) 동안 프로젝트가 클래식 UI와 터치 지원 UI를 모두 충족해야 하는 경우 적절한 객체를 참조하는 별도의 코드를 구분하기 위해 스위치를 구현해야 합니다.
 
 이 스위치 메커니즘은 다음과 같이 구현할 수 있습니다.
 
