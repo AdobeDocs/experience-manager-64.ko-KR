@@ -2,7 +2,7 @@
 title: 더 이상 사용되지 않는 및 제거된 기능
 description: Adobe Experience Manager 6.4의 더 이상 사용되지 않는 및 제거된 기능에 관한 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 8e82c691affe3b2c4108beec394cc0ba2d607b61
+source-git-commit: 5b00783e4471a6b142ab17a7bc4a647ab04aec5f
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 30%
@@ -179,4 +179,4 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | 영역 | 기능 | 공지 |
 |---|---|---|
 | 브라우저 지원 | Microsoft Internet Explorer | AEM 6.4는 Microsoft Internet Explorer 11을 지원하는 마지막 릴리스입니다. |
-| Foundation | UI 프레임워크 | Adobe은 2019년 Coral UI 2 구성 요소를 더 이상 사용하지 않습니다. AEM 6.4는 AEM 6.2에서 소개된 Coral UI 3을 기반으로 합니다. Adobe은 Coral 2로 사용자 지정 UI를 구축한 고객 및 파트너에게 이 UI를 Coral 3으로 리팩토링하도록 권장합니다. Adobe은 Coral 2 대화 상자를 Coral 3 - [자세히 보기](/help/sites-developing/dialog-conversion.md)로 변환하는 도구를 제공합니다. |
+| Foundation | UI 프레임워크 | Adobe은 2019년 Coral UI 2 구성 요소를 더 이상 사용하지 않습니다. AEM 6.4는 AEM 6.2에서 소개된 Coral UI 3을 기반으로 합니다. Adobe은 Coral 2로 사용자 지정 UI를 구축한 고객 및 파트너에게 이 UI를 Coral 3으로 리팩토링하도록 권장합니다. Adobe은 Coral 2 대화 상자를 Coral 3 - [자세히 읽기로 변환하는 도구를 제공합니다.](/help/sites-developing/modernization-tools.md) |
