@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: ce24fdb79fe7636951490ea01967787fa28d712e
 workflow-type: tm+mt
-source-wordcount: '3589'
+source-wordcount: '3586'
 ht-degree: 2%
 
 ---
@@ -1039,7 +1039,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 >
 >클래식 UI 모델 편집기 대화 상자는 터치 지원 표준 UI 편집기로 계속 작동합니다.
 >
->클래식 UI 단계 대화 상자를 표준 UI 대화 상자로 업그레이드하려는 경우 AEM에는 [대화 상자 변환](/help/sites-developing/dialog-conversion.md) 도구가 있지만 변환 후에도 일부 경우 대화 상자에서 수동으로 몇 가지 향상된 기능이 있습니다.
+>클래식 UI 단계 대화 상자를 표준 UI 대화 상자로 업그레이드하려는 경우 AEM에는 [현대화 도구](/help/sites-developing/modernization-tools.md)가 있습니다. 변환 후에도 일부 경우 대화 상자에서 수동으로 몇 가지 향상된 기능이 있습니다.
 >
 >* 업그레이드된 대화 상자가 비어 있는 경우 솔루션 제공 방법의 예와 유사한 기능을 가진 `/libs`의 대화 상자를 볼 수 있습니다. 예:
    >
