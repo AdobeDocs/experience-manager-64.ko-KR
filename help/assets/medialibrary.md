@@ -1,66 +1,95 @@
 ---
-title: AEM Assets 및 AEM 미디어 라이브러리에서 사용할 수 있는 기능 비교
-description: 차이점 등 AEM Assets 및 AEM 미디어 라이브러리에 대한 FAQ입니다.
+title: 미디어 라이브러리를 사용하여 기본적인 디지털 에셋 관리
+description: '[!DNL Experience Manager Assets] 에셋 관리를 위한 미디어 라이브러리'
 contentOwner: AG
+role: 건축가, 리더
 translation-type: tm+mt
-source-git-commit: 6a1013715c538c39eaf40a22dbffc7f2df36f968
+source-git-commit: 200bb263d60ebd9f6abc79ce0c73dac95b06de53
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 1%
+source-wordcount: '467'
+ht-degree: 0%
 
 ---
 
 
-# AEM Assets와 AEM MediaLibrary {#aem-assets-vs-aem-medialibrary}
+<!--
 
-Adobe Experience Manager(AEM) 자산은 AEM 플랫폼의 필수 요소입니다. 이러한 매끄러운 통합은 AEM의 주요 장점으로 보여지며 컨텐츠 작성자에게 일관성 있는 컨텐츠 관리와 높은 생산성을 보장합니다.
+Define Media Lib
+Define req for it
+Define use cases
+Define what is not included
 
-## FAQ {#frequently-asked-questions}
+-->
 
-### AEM Assets 소개{#what-is-aem-assets}
+# 미디어 라이브러리를 사용하여 기본 에셋 관리 {#manage-assets-using-media-library}
 
-AEM Assets은 AEM Platform 기반의 애플리케이션으로, 고객은 웹 기반 저장소에서 디지털 자산(이미지, 비디오, 문서 및 오디오 클립)을 관리할 수 있습니다. AEM Assets에는 메타데이터 지원, 변환, 디지털 자산 관리 파인더 및 AEM Assets 관리 UI가 포함되어 있습니다.
+[!DNL Adobe Experience Manager] platform은 자산을 관리하는 다양한 기능을 제공합니다. 미디어 라이브러리를 통해 사용자는 적은 수의 자산을 저장소에 업로드하고 웹 페이지에서 해당 에셋을 검색 및 사용하며 자산에서 간단한 에셋 관리 작업을 수행할 수 있습니다.
 
-### AEM 미디어 라이브러리란?{#what-is-the-aem-media-library}
+미디어 라이브러리는 [!DNL Adobe Experience Manager Sites] 라이선스와 함께 무료로 제공되는 경량의 DAM(Digital Asset Management) 솔루션입니다. [!DNL Sites] 는 WCM(Web Content Management) 제품입니다. 미디어 라이브러리는 Experience Manager의 모든 기능과 연동됩니다.
 
-AEM 미디어 라이브러리는 이미지와 기타 공유 리소스가 저장되는 AEM WCM 컨텐츠 저장소의 지정된 부분입니다. 미디어 라이브러리는 AEM WCM의 디지털 자산 관리 기능을 사용합니다.
+[!DNL Adobe Experience Manager Assets] 라이선스는 별도로 구입할 수 있습니다. [!DNL Experience Manager Assets] 엔터프라이즈 사용 사례, 메타데이터, 스키마, 검색 및 사용자 인터페이스에 대한 사용자 정의 및 미디어 라이브러리에서 제공하는 기능 이외의 다양한 기능을 통해 에셋을 안전하게 처리할 수 있습니다.
 
-### AEM WCM에 속하지 않는 AEM Assets에서 얻을 수 있는 이점은 무엇입니까?{#what-do-i-get-from-aem-assets-that-is-not-part-of-aem-wcm}
+## 라이선스 요구 사항 {#avail-media-library-license}
 
-AEM Assets 고객에게만 제공되는 고유한 기능은 다음과 같습니다.
+[!DNL Sites] 라이선스를 보유한 고객은 미디어 라이브러리를 사용할 수 있습니다. 이 구성 요소는 [!DNL Experience Manager]의 모든 구성 요소에서 작동합니다.
 
-1. 제목, 태그 및 설명 이외의 메타데이터를 추출하고 편집할 수 있습니다.
-1. 시작 화면에서 `siteadmin` 옆의 두 번째 단추를 클릭하여 사용할 수 있는 AEM Assets 관리자.
-1. 디지털 자산 관리와 관련된 모든 워크플로우 단계(예: AEM 자산 통합, AEM Assets 삭제, AEM Assets 하위 자산 처리, AEM Assets 메타데이터 추출).
-1. `dam` im 패키지 공간을 포함하는 라이브러리.
+미디어 라이브러리는 사이트의 일부로 설치됩니다. 사이트 라이선스 및 설치 이외에 추가 라이선스 또는 패키지가 필요하지 않습니다.
 
-이러한 기능을 사용하려면 유효한 AEM Assets 라이선스가 필요합니다.
+## [!DNL Assets] 대 미디어 라이브러리  {#assets-and-media-library}
 
-### AEM Assets은 개별 패키지로 제공됩니까?{#is-aem-assets-available-as-a-separate-package}
+Experience Manager 자산은 엔터프라이즈급 DAM 기능을 제공합니다. 자산 기능은 하나의 패키지에서 [!DNL Experience Manager]과(와) 함께 제공됩니다. 그러나 자산 라이선스를 구매하지 않은 사용자는 고급 DAM 기능을 사용할 수 없습니다. 에셋 라이선스가 없으면 [미디어 라이브러리 기능](#use-media-library)만 사용할 수 있습니다.
 
-아니오. 모든 AEM 애플리케이션 및 Add-Ons는 설치 및 배포가 용이하도록 모든 기능이 포함된 하나의 패키지로 제공됩니다. 이는 패키지에 있는 모든 기능을 사용할 수 있는 권한이 있다는 의미는 아닙니다.
+라이선스가 부여되지 않은 [!DNL Assets] 기능의 의도하지 않은 사용을 방지하려면 [!DNL Experience Manager]에서 [!DNL Assets] 특정 워크플로우, 구성 요소, 분류 체계, 옵션 및 [!DNL Assets] 관리자를 모두 제거하십시오. 이렇게 하면 사용자가 라이선스를 부여하지 않은 [!DNL Assets] 기능을 실수로 사용하지 못하도록 합니다.
 
-#### 디지털 자산의 메타데이터를 편집하려고 합니다. AEM Assets이 필요합니까?{#i-want-to-edit-metadata-of-digital-assets-do-i-need-aem-assets}
+## 미디어 라이브러리 사용 {#use-media-library}
 
-제목, 설명 및 태그 이외의 메타데이터를 편집하려면 AEM Assets 라이선스가 있어야 합니다.
+미디어 라이브러리는 다음과 같은 사용 사례를 광범위하게 다룹니다.
 
-#### 가져올 때 이미지 크기를 자동으로 조정하려고 합니다. AEM Assets이 필요합니까?{#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
+* [!DNL Adobe Experience Manager Sites]을(를) 사용하여 만든 웹 페이지에 대한 기본 DAM 기능을 제공합니다.
+* [!DNL Adobe Experience Manager Forms]을(를) 사용하여 만든 적응형 양식 및 통신.
+* [!DNL Adobe Experience Manager Screens]을(를) 사용하여 만든 디지털 화면 경험입니다.
+* [!DNL Assets] 헤드리스 작업을 위한 HTTP REST API.
 
-아니오. 정적 이미지의 크기 조정 및 자동 워크플로우 기반 변형과 변환 관리 기능은 AEM Media Library에 포함되어 있습니다. 이러한 기능은 AEM Assets 라이선스가 필요하지 않습니다.
+<!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
-### 사용자 정의된 이미지 구성 요소를 사용하여 이미지 크기를 조정하려고 합니다. AEM Assets이 필요합니까?{#i-want-to-resize-images-using-a-customized-image-component-do-i-need-aem-assets}
+* Basic metadata properties
+* Tag management
+* Version control
+* Static renditions
+* Projects, tasks, workflow authoring
+* Activity stream (timeline)
+* Query Builder (API)
+* Marketing Cloud integration
+* User interface customization and extension
+* Comments and annotation
+-->
 
-이미지 구성 요소는 AEM WCM의 일부입니다. 이미지 구성 요소(AEM Assets에서도 사용)에서 사용 중인 그래픽 라이브러리는 AEM 플랫폼의 일부이며 AEM Assets 라이선스가 필요하지 않습니다.
+미디어 라이브러리 기능을 사용하려면 기본 [!DNL Experience Manager] 사용자 인터페이스를 사용할 수 있습니다. 미디어 라이브러리는 [!DNL Experience Manager Sites] 설치의 일부이며 별도의 인터페이스나 추가 기능이 필요하지 않습니다. 미디어 라이브러리 사용자는 기존 인터페이스를 사용하여 다음 작업을 수행할 수 있습니다.
 
-### AEM Assets 라이선스를 구매하지 않은 경우 사용자가 AEM Assets을 사용하지 못하도록 하려면 어떻게 해야 합니까?{#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
+* 폴더를 만들어 자산을 구성합니다.
+* 자산을 업로드합니다.
+* 자산을 게시합니다.
+* 에셋 편집, 이동 및 복사
+* 에셋 검색, 필터링 및 검색(유사성 검색 포함)
+* 기본적으로 자산 [!UICONTROL 속성] 페이지의 [!UICONTROL 기본] 탭에서 사용할 수 있는 스마트 태그 필드를 제외한 메타데이터 필드에 값을 추가하고 편집합니다.
+* 정적 표현물을 추가하고 삭제합니다.
+* 폴더, 자산 및 자산 표현물을 다운로드합니다.
+* 자산 버전을 만듭니다.
+* 자산에 대한 검토 작업을 만들고 수행합니다.
+* 자산에 주석 달기.
+* Content Finder를 통해 [!DNL Sites] 페이지에 자산을 추가합니다.
+* 사용 [!DNL Content Fragments].
 
-AEM에서 모든 AEM Assets 관련 워크플로우, 구성 요소, 분류 체계, 옵션 및 AEM Assets 관리자를 제거할 수 있습니다. 이렇게 하면 사용자가 라이선스를 부여하지 않은 AEM Assets 기능을 실수로 사용하지 못하도록 할 수 있습니다.
+<!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
+-->
 
-### 페이지에 이미지를 추가하고 이 이미지를 자르고 크기를 조정하려고 합니다. AEM Assets이 필요합니까?{#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
+>[!IMPORTANT]
+>
+>많은 고급 DAM 사용 사례가 [!DNL Experience Manager Assets]에 의해 이행됩니다. 미디어 라이브러리 라이선스를 사용하면 미디어 라이브러리를 사용하여 나열된 사용 사례만 충족할 수 있습니다. 사용 사례가 나열되지 않은 경우 미디어 라이브러리 라이선스에 사용하지 마십시오. 질문이 있으면 Adobe 고객 지원 센터에 문의하십시오.
 
-이러한 경우 AEM Assets을 구입할 필요가 없습니다. 스마트 이미지 구성 요소로 페이지에 직접 이미지를 업로드할 수 있으므로 웹 사이트에서 이미지를 사용할 필요가 없습니다.
+<!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 
 >[!MORELIKETHIS]
 >
->* [기능 차이점 상세 목록](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/medialibrary.html#listoffeatures)
+>* [DAM 기능 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-64/assets/home.html)
 
