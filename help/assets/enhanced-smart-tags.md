@@ -6,10 +6,12 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
+feature: 스마트 태그,검색
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1572'
 ht-degree: 1%
 
 ---
