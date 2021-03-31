@@ -2,10 +2,12 @@
 title: 자산 검색 확장
 description: AEM Assets의 검색 기능을 특별 검색을 통해 문자열별로 에셋을 검색할 수 있습니다.
 contentOwner: AG
+feature: 검색
+role: 개발자
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '832'
 ht-degree: 8%
 
 ---
