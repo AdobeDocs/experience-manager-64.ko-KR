@@ -2,10 +2,12 @@
 title: 디지털 자산에 워터마크 추가
 description: 워터마크 기능을 사용하여 자산에 디지털 워터마크를 추가하는 방법을 알아봅니다.
 contentOwner: AG
+feature: 자산 관리
+role: 비즈니스 전문가,관리자
 translation-type: tm+mt
-source-git-commit: dfd6d022ef7d21ab6fc4ed17483890eb5766af18
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
