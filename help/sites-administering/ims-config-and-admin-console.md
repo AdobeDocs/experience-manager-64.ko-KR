@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: e672f4edf87bd4d3af985e2ea598feb4e26d1553
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1769'
 ht-degree: 18%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 18%
 
 AEM 6.4.3.0에는 **AEM Managed Services** 고객을 위한 AEM 인스턴스 및 Adobe IMS(Identity Management System) 기반 인증에 대한 Admin Console 지원이 도입되었습니다.
 
-ADMIN CONSOLE에 대한 AEM 온보딩을 통해 AEM Managed Services 고객은 하나의 콘솔에서 모든 Experience Cloud 사용자를 관리할 수 있습니다. 사용자 및 그룹을 AEM 인스턴스와 연결된 제품 프로필에 할당하여 특정 인스턴스에 로그인할 수 있도록 합니다.
+Admin Console에 대한 AEM 온보딩을 통해 AEM Managed Services 고객은 하나의 콘솔에서 모든 Experience Cloud 사용자를 관리할 수 있습니다. 사용자 및 그룹을 AEM 인스턴스와 연결된 제품 프로필에 할당하여 특정 인스턴스에 로그인할 수 있도록 합니다.
 
 ## 주요 특징 {#key-highlights}
 
@@ -102,7 +102,7 @@ AEM Managed Services 고객은 이미 프로비저닝된 조직을 보유하고 
 
 기업 고객은 User Sync Tool(UST in short)을 통해 Active Directory 또는 기타 테스트된 OpenLDAP 디렉토리 서비스를 사용하여 Adobe 사용자를 만들거나 관리할 수 있습니다. 대상 사용자는 도구를 설치하고 구성할 수 있는 IT ID 관리자(Enterprise Directory 및 시스템 관리자)입니다. 오픈 소스 툴은 고객이 자신의 특정 요구 사항에 맞게 개발자가 수정할 수 있도록 사용자 정의할 수 있습니다.
 
-사용자 동기화가 실행되면 조직의 Active Directory(또는 기타 호환되는 데이터 소스)의 사용자 목록을 가져와서 Admin Console 내의 사용자 목록과 비교합니다. 그런 다음 Adobe User Management API를 호출하여 Admin Console이 조직의 디렉토리와 동기화되도록 합니다. 변경 흐름은 모두 한 방향입니다.admin console에서 편집한 내용은 디렉터리로 푸시되지 않습니다.
+사용자 동기화가 실행되면 조직의 Active Directory(또는 기타 호환되는 데이터 소스)의 사용자 목록을 가져와서 Admin Console 내의 사용자 목록과 비교합니다. 그런 다음 Adobe User Management API를 호출하여 Admin Console이 조직의 디렉토리와 동기화되도록 합니다. 변경 흐름은 모두 한 방향입니다.Admin Console에서 편집한 내용은 디렉터리로 푸시되지 않습니다.
 
 시스템 관리자는 이 도구를 사용하여 고객 디렉토리의 사용자 그룹을 제품 구성 및 Admin Console의 사용자 그룹과 매핑하고, 새 UST 버전을 사용하면 Admin Console에서 사용자 그룹을 동적으로 만들 수 있습니다.
 
@@ -206,7 +206,9 @@ IDP는 아래 예에서 Okta입니다.
 
 Admin Console의 일부 그룹에도 사용자가 할당되었습니다. ( 사용자 동기화 도구를 사용하여 LDAP에서 사용자 및 그룹을 동기화하거나 로컬로 만들 수 있습니다. 위의 Admin Console **(으)로 사용자를 온보딩 섹션**&#x200B;을 참조하십시오.)
 
-&amp;ast;사용자 그룹은 사용자가 인스턴스에 로그인할 때에만 동기화되고, 사용자와 그룹이 많은 고객의 경우, AMS에서 그룹 동기화 유틸리티를 실행하여 위에서 설명한 액세스 제어 및 권한 관리를 위해 그룹을 미리 가져올 수 있습니다.
+>[!NOTE]
+>
+>사용자 그룹은 사용자가 인스턴스에 로그인할 때에만 동기화됩니다.
 
 ![screen_shot_2018-09-17at94207pm](assets/screen_shot_2018-09-17at94207pm.png)
 
