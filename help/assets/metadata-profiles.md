@@ -2,10 +2,12 @@
 title: 메타데이터 프로필을 사용하여 폴더의 모든 자산에 기본 메타데이터를 적용할 수 있습니다.
 description: 자산에 대한 메타데이터 프로파일에 대해 알아봅니다. 메타데이터 프로필을 만들어 폴더 자산에 적용하는 방법을 알아봅니다.
 contentOwner: AG
+feature: 메타데이터
+role: 비즈니스 전문가,관리자
 translation-type: tm+mt
-source-git-commit: af1955ab1fdcf16dd9a9d3ad36336e6c1aac9312
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1232'
+source-wordcount: '1236'
 ht-degree: 3%
 
 ---
@@ -33,7 +35,7 @@ ht-degree: 3%
 
    ![chlimage_1-482](assets/chlimage_1-482.png)
 
-   **[!UICONTROL 속성]**&#x200B;에 매핑에 지정하는 값은 자산의 메타데이터 노드 아래에 속성으로 저장됩니다. 예를 들어 를 지정하는 경우 . `/jcr:content/metadata/dc:desc` aem assets은 속성에  **[!UICONTROL 매핑의]** 이름으로 자산의 메타데이터 노드 `dc:desc` 에 값을 저장합니다.
+   **[!UICONTROL 속성]**&#x200B;에 매핑에 지정하는 값은 자산의 메타데이터 노드 아래에 속성으로 저장됩니다. 예를 들어 를 지정하는 경우 . `/jcr:content/metadata/dc:desc` AEM Assets은 속성에  **[!UICONTROL 매핑의]** 이름으로 자산의 메타데이터 노드 `dc:desc` 에 값을 저장합니다.
 
    * **[!UICONTROL 기본값]**:이 속성을 사용하여 메타데이터 구성 요소의 기본값을 추가합니다. 예를 들어 &quot;My description&quot;을 지정하면 이 값이 자산의 메타데이터 노드의 속성 `dc:desc`에 할당됩니다.
 
