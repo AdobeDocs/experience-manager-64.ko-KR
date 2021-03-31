@@ -2,10 +2,12 @@
 title: AEM을 사용하여 자산을 관리하는 모범 사례
 description: AEM Assets 배포 및 자산 인제스트 및 처리 기능에 따라 로드 중인 시스템 안정성과 성능을 향상시키는 우수 사례를 식별하고 준수합니다.
 contentOwner: AG
+feature: 자산 관리
+role: 건축가,관리자
 translation-type: tm+mt
-source-git-commit: 0e0e2aa693c30c8e1ef1033b936b82d83e5b348e
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
