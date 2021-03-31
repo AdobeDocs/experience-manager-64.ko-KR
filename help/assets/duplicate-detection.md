@@ -2,10 +2,12 @@
 title: 복제 감지 활성화
 description: AEM에서 중복 에셋을 검색하는 방법을 살펴봅니다.
 contentOwner: AG
+feature: 자산 관리,자산 보고서
+role: 비즈니스 전문가,관리자
 translation-type: tm+mt
-source-git-commit: 26e860cd513d70d748f872e2ce445a042d075bc6
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
