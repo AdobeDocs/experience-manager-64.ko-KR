@@ -2,10 +2,12 @@
 title: 자산 통찰력 구성
 description: AEM Assets에서 자산 인사이트를 구성하는 방법을 알아봅니다.
 contentOwner: AG
+feature: 자산 통찰력,자산 보고서
+role: 비즈니스 전문가,관리자
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '244'
 ht-degree: 2%
 
 ---
