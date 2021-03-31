@@ -1,14 +1,16 @@
 ---
 title: 메타데이터, 이미지 및 비디오를 처리하기 위한 프로필
-description: 폴더에 업로드된 자산에 적용할 옵션에 대한 규칙 세트입니다. 업로드하는 비디오 자산에 적용할 메타데이터 프로필 및 비디오 인코딩 프로필을 지정합니다. 이미지 에셋의 경우 이미지 에셋에 적용할 이미징 프로필을 지정하여 이미지 에셋을 제대로 잘리게 할 수도 있습니다.
+description: 프로필은 폴더에 업로드된 자산에 적용할 옵션에 대한 규칙 세트입니다. 업로드하는 비디오 자산에 적용할 메타데이터 프로필 및 비디오 인코딩 프로필을 지정합니다. 이미지 에셋의 경우 이미지 에셋에 적용할 이미징 프로필을 지정하여 이미지 에셋을 제대로 잘리게 할 수도 있습니다.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
+feature: 워크플로,자산 관리,표현물
+role: 비즈니스 전문가,관리자
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1378'
+source-wordcount: '1385'
 ht-degree: 0%
 
 ---
