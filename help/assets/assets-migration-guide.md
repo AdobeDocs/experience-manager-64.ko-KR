@@ -2,10 +2,12 @@
 title: 자산을 Adobe Experience Manager Assets로 일괄 마이그레이션
 description: 자산을 AEM으로 가져오고, 메타데이터를 적용하고, 변환을 생성하고, 인스턴스를 게시하도록 활성화하는 방법.
 contentOwner: AG
+feature: 마이그레이션,표현물,자산 관리
+role: 건축가,관리자
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1791'
+source-wordcount: '1797'
 ht-degree: 0%
 
 ---
