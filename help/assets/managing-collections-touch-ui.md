@@ -3,10 +3,12 @@ title: 자산 컬렉션 관리
 description: 컬렉션 만들기, 보기, 삭제, 편집 및 다운로드 등 자산 컬렉션을 관리하는 작업에 대해 학습합니다.
 contentOwner: AG
 mini-toc-levels: 1
+feature: 컬렉션
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: dfe5d976da937162e902ba8afac862f290702f5b
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '2328'
+source-wordcount: '2331'
 ht-degree: 0%
 
 ---
