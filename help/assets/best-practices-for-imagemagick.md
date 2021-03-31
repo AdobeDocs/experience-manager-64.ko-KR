@@ -2,10 +2,12 @@
 title: AEM Assets에서 작동하도록 ImageMagick 설치 및 구성
 description: ImageMagick 소프트웨어에 대한 자세한 내용, 설치 방법, 명령줄 프로세스 단계 설정, 이미지 축소판 편집, 작성 및 생성 방법 등을 살펴볼 수 있습니다.
 contentOwner: AG
+feature: 표현물,개발자 도구
+role: 관리자
 translation-type: tm+mt
-source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '783'
 ht-degree: 2%
 
 ---
@@ -39,7 +41,7 @@ ImageMagick을 사용하여 대용량 파일을 처리하려면 일반적인 메
 
 1. AEM 서버에서 워크플로우 콘솔(`https://[aem_server]:[Port]/workflow`)로 이동하여 **[!UICONTROL DAM 자산 업데이트]** 워크플로우 모델을 엽니다.
 1. **[!UICONTROL DAM 자산 업데이트]** 워크플로 모델에서 **[!UICONTROL EPS 축소판(ImageMagick에서 제공)]** 단계를 엽니다.
-1. **[!UICONTROL 인수 탭]**&#x200B;에서 **[!UICONTROL MIME 유형]** 목록에 `image/jpeg`를 추가합니다.
+1. **[!UICONTROL 인수 탭]**&#x200B;에서 **[!UICONTROL MIME 유형]** 목록에 `image/jpeg`을 추가합니다.
 
    ![mime_types_jpeg](assets/mime_types_jpeg.png)
 
