@@ -5,10 +5,12 @@ uuid: 7ba87c1d-70cd-4b89-86f3-971b93885f1e
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 340b62f7-2405-4d2d-846d-2c444d6cc77b
+feature: 자산 관리,개발자 도구
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: b6f0dc15244f71ecdb8d937810d3c5d393a7712f
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1610'
 ht-degree: 2%
 
 ---
