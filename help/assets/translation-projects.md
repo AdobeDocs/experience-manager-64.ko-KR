@@ -2,10 +2,12 @@
 title: 번역 프로젝트 만들기
 description: AEM에서 번역 프로젝트를 만드는 방법을 알아봅니다.
 contentOwner: AG
+feature: 번역
+role: 건축가,관리자
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1934'
+source-wordcount: '1937'
 ht-degree: 6%
 
 ---
@@ -281,7 +283,7 @@ ht-degree: 6%
 
 ## 임시 언어 사본을 만드는 중 {#creating-temporary-language-copies}
 
-번역 워크플로우를 실행하여 원본 에셋의 편집된 버전으로 언어 사본을 업데이트할 때 번역된 에셋을 승인할 때까지 기존 언어 복사본이 유지됩니다. AEM Assets은 새로 번역된 에셋을 임시 위치에 저장하고 사용자가 에셋을 명시적으로 승인한 후 기존 언어 사본을 업데이트합니다. 자산을 거부하면 언어 사본은 변경되지 않습니다.
+번역 워크플로우를 실행하여 원본 자산의 편집된 버전으로 언어 사본을 업데이트할 때 번역된 자산을 승인할 때까지 기존 언어 복사본이 유지됩니다. AEM Assets은 새로 번역된 에셋을 임시 위치에 저장하고 사용자가 에셋을 명시적으로 승인한 후 기존 언어 사본을 업데이트합니다. 자산을 거부하면 언어 사본은 변경되지 않습니다.
 
 1. 이미 언어 사본을 만든 **[!UICONTROL 언어 사본]** 아래의 소스 루트 폴더를 클릭/탭한 다음 **[!UICONTROL 에셋에 표시]**&#x200B;를 클릭/탭하여 AEM Assets에서 폴더를 엽니다.
 
