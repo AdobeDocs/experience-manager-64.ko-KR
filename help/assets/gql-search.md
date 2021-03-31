@@ -2,10 +2,12 @@
 title: GQL 전체 텍스트 검색
 description: AEM Assets의 GQL 전체 텍스트 검색 기능을 살펴볼 수 있습니다. 제목, 설명 및 작성자 이름과 같은 특정 메타데이터를 기반으로 에셋을 검색할 수 있습니다.
 contentOwner: AG
+feature: 검색,메타데이터
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: adf44677a0ac833a131aad8187529b094aaca9ef
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '889'
 ht-degree: 2%
 
 ---
