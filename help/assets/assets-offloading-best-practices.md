@@ -2,10 +2,12 @@
 title: Assets 오프로딩 우수 사례
 description: AEM Assets에서 자산 수집 및 복제 워크플로우를 오프로드하기 위한 권장 사용 사례 및 모범 사례
 contentOwner: AG
+feature: 자산 관리
+role: 비즈니스 전문가,관리자
 translation-type: tm+mt
-source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1823'
 ht-degree: 0%
 
 ---
