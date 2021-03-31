@@ -2,10 +2,12 @@
 title: 자산 파일 형식 우수 사례
 description: AEM Assets의 파일 지원에 대한 모범 사례
 contentOwner: AG
+feature: 자산 관리,개발자 도구
+role: 관리자
 translation-type: tm+mt
-source-git-commit: a892ef7ab018aca715693125808d7ade540c8242
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '438'
 ht-degree: 3%
 
 ---
