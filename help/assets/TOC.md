@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Assets
 audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
-user-guide-description: 디지털 자산 제작, 관리, 배달 및 최적화
-feature-set: Experience Manager Assets
+user-guide-description: 디지털 에셋 제작, 관리, 배달 및 최적화
+feature-set: Experience Manager Assets, Experience Manager
 translation-type: tm+mt
-source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 66%
