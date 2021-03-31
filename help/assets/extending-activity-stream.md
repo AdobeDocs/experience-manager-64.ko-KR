@@ -2,11 +2,13 @@
 title: 활동 스트림과 자산 통합
 description: AEM의 기록 기능과 특정 이벤트를 기록하도록 AEM을 구성하는 방법에 대해 설명합니다.
 contentOwner: AG
+feature: 자산 관리
+role: 개발자
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 0%
+source-wordcount: '287'
+ht-degree: 1%
 
 ---
 
