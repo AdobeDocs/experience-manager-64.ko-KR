@@ -2,10 +2,12 @@
 title: 자산의 사용자 경험 개선 사항
 description: 이 문서에서는 AEM 6.4 자산의 사용자 경험 개선에 대해 설명합니다.
 contentOwner: AG
+feature: 릴리스 정보
+role: 리더, 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '651'
 ht-degree: 1%
 
 ---
