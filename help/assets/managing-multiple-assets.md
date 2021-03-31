@@ -2,11 +2,13 @@
 title: 여러 자산 및 컬렉션의 메타데이터 일괄 편집
 description: 여러 자산 및 컬렉션의 메타데이터를 동시에 편집하여 일반적인 메타데이터 변경 사항을 신속하게 전파하는 방법을 살펴봅니다.
 contentOwner: AG
+feature: 자산 관리,메타데이터,컬렉션
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 184aa0a7fcd3f89510295ddaff28624b8306b7d2
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 1%
+source-wordcount: '442'
+ht-degree: 2%
 
 ---
 
