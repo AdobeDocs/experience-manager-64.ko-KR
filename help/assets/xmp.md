@@ -2,10 +2,12 @@
 title: XMP 메타데이터
 description: 메타데이터 관리를 위해 AEM Assets에서 사용하는 XMP(Extensible Metadata Platform) 메타데이터 표준에 대해 알아봅니다. XMP은 다양한 응용 프로그램에 대한 메타데이터를 생성, 처리 및 교환하기 위한 표준 형식을 제공합니다.
 contentOwner: AG
+feature: 메타데이터
+role: 비즈니스 전문가,관리자
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '819'
 ht-degree: 0%
 
 ---
