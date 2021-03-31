@@ -3,10 +3,12 @@ title: AEM Assets을 사용하여 디지털 에셋 관리
 description: AEM Assets의 터치에 적합한 사용자 인터페이스를 사용하여 수행할 수 있는 다양한 에셋 관리 및 편집 작업에 대해 알아봅니다
 contentOwner: AG
 mini-toc-levels: 1
+feature: 자산 관리,검색,표현물,공동 작업
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 59fed31d276510c3346a46ac38f2a79c6f91d848
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '10039'
+source-wordcount: '10046'
 ht-degree: 1%
 
 ---
@@ -625,7 +627,7 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 
    ![add_user](assets/add_user.png)
 
-1. 사용자가 폴더에 액세스할 때 로그인 화면을 표시하려면 **[!UICONTROL Enable]** 옵션을 선택합니다. 그런 다음 AEM에서 로그인 페이지의 경로를 선택하고 변경 내용을 저장합니다.
+1. 사용자가 폴더에 액세스할 때 로그인 화면을 표시하려면 **[!UICONTROL 활성화]** 옵션을 선택합니다. 그런 다음 AEM에서 로그인 페이지의 경로를 선택하고 변경 내용을 저장합니다.
 
    ![login_page](assets/login_page.png)
 
@@ -738,7 +740,7 @@ TXT 파일을 편집하려면 Configuration Manager 내에서 **[!UICONTROL Day 
 
    ![타임라인](assets/timeline.png)
 
-1. 나타나는 목록에서 **[!UICONTROL 모두 표시]** 목록을 사용하여 주석, 버전, 워크플로우 및 활동에 따라 결과를 필터링합니다.
+1. 표시되는 목록에서 **[!UICONTROL 모두 표시]** 목록을 사용하여 주석, 버전, 워크플로우 및 활동에 따라 결과를 필터링합니다.
 
    ![timeline_options](assets/timeline_options.png)
 
