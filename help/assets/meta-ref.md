@@ -2,10 +2,12 @@
 title: 메타데이터 스키마 참조
 description: 'Dublin Core, IPTC 및 기타 메타데이터 스키마를 비롯한 에셋 메타데이터를 설명하는 표준 규칙에 대해 알아봅니다. '
 contentOwner: AG
+feature: 메타데이터
+role: 비즈니스 전문가,관리자
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '398'
 ht-degree: 2%
 
 ---
