@@ -2,10 +2,12 @@
 title: ' [!DNL Adobe Experience Manager]의 자산 HTTP API.'
 description: ' [!DNL Adobe Experience Manager Assets]의 HTTP API를 사용하여 디지털 에셋을 만들고, 읽고, 업데이트하고, 삭제하고, 관리할 수 있습니다.'
 contentOwner: AG
+feature: API,자산 HTTP API,개발자 도구
+role: 개발자
 translation-type: tm+mt
-source-git-commit: e9f50a1ddb6a162737e6e83b976f96911b3246d6
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1559'
 ht-degree: 1%
 
 ---
@@ -53,7 +55,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 * `parent`:상위 폴더에 연결합니다.
 * `thumbnail`:(선택 사항) 폴더 축소판 이미지에 연결합니다.
 
-### 자산 {#assets}
+### 에셋 {#assets}
 
 Experience Manager에서 자산은 다음 요소를 포함합니다.
 
