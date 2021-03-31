@@ -2,10 +2,12 @@
 title: 이미징 코드 변환 라이브러리
 description: 인코딩, 트랜스코딩, 이미지 리샘플링, 이미지 크기 조정 등 핵심 이미지 처리 기능을 수행할 수 있는 이미지 처리 솔루션인 Adobe의 이미징 트랜스코딩 라이브러리를 구성 및 사용하는 방법을 살펴봅니다.
 contentOwner: AG
+feature: 표현물,개발자 도구,자산 처리
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 65f45bdb34279f5834c0466457101ca2f309d5f1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '966'
 ht-degree: 0%
 
 ---
