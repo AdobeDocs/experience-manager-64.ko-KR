@@ -2,10 +2,12 @@
 title: ' [!DNL Adobe Experience Manager Assets]의 Digital Rights Management.'
 description: ' [!DNL Experience Manager]에서 라이선스가 부여된 자산에 대한 에셋 만료 상태 및 정보를 관리하는 방법을 알아봅니다.'
 contentOwner: AG
+feature: DRM,자산 관리
+role: 비즈니스 전문가,관리자
 translation-type: tm+mt
-source-git-commit: fe99869df5616f8f483ab8a9517e850e45c7a117
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1436'
 ht-degree: 1%
 
 ---
@@ -100,7 +102,7 @@ ht-degree: 1%
    >
    >자산 작성자(특정 자산을 [!DNL Assets]에 업로드하는 사람)만 자산이 만료될 때 이메일을 받습니다. 전체 [!DNL Experience Manager] 수준에서 이메일 알림을 구성하는 방법에 대한 자세한 내용은 [이메일 알림](/help/sites-administering/notification.md)을 구성하는 방법을 참조하십시오.
 
-1. **[!UICONTROL 사전 알림(초 단위:]**) 필드에서 만료와 관련된 알림을 받을 때 자산이 만료되기 전 시간(초)을 지정합니다. 관리자 또는 자산 작성자는 지정된 시간 후에 자산이 만료될 예정임을 알리는 메시지가 자산 만료 전에 수신됩니다.
+1. **[!UICONTROL 사전 알림(초 단위:]**) 필드에서 만료와 관련된 알림을 받으려는 자산이 만료되기 전 시간(초)을 지정합니다. 관리자 또는 자산 작성자는 지정된 시간 후에 자산이 만료될 예정임을 알리는 메시지가 자산 만료 전에 수신됩니다.
 
    자산이 만료되면 만료를 확인하는 다른 알림을 받게 됩니다. 또한 만료된 자산은 비활성화됩니다.
 
@@ -144,7 +146,7 @@ ht-degree: 1%
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
-1. 상태를 기반으로 자산을 검색하려면 **[!UICONTROL 검색]**&#x200B;을 클릭하여 Omniture 막대를 표시합니다.
+1. 상태를 기준으로 자산을 검색하려면 **[!UICONTROL 검색]**&#x200B;을 클릭하여 Omniture 막대를 표시합니다.
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
