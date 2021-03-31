@@ -2,10 +2,12 @@
 title: 복합 자산을 관리하고 하위 자산을 생성합니다.
 description: InDesign, Adobe Illustrator 및 Photoshop 파일 내에서 AEM 자산에 대한 참조를 만드는 방법을 알아봅니다. 또한 페이지 뷰어 기능을 사용하여 PDF, INDD, PPT, PPTX 및 AI 파일을 비롯한 여러 페이지로 구성된 파일의 개별 페이지를 보는 방법을 살펴봅니다.
 contentOwner: AG
+feature: 자산 관리
+role: 비즈니스 전문가,관리자
 translation-type: tm+mt
-source-git-commit: dc9ba70161f81578899416064bd03fdabe0bed5a
+source-git-commit: e46a27a1ba11b4a5973eb1ece02c8594b2ae0fc9
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1415'
 ht-degree: 0%
 
 ---
