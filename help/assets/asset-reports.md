@@ -2,10 +2,12 @@
 title: 디지털 자산의 사용 및 공유에 대한 보고서.
 description: 디지털 자산의 사용, 활동 및 공유를 이해하는 데 도움이 되는  [!DNL Adobe Experience Manager Assets] 의 자산에 대한 보고서입니다.
 contentOwner: AG
+feature: 자산 보고서,자산 관리
+role: 비즈니스 전문가,관리자
 translation-type: tm+mt
-source-git-commit: 6faa69ee1d38ad16add95263c53f18ea0a413fd2
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1068'
 ht-degree: 2%
 
 ---
@@ -130,7 +132,7 @@ ht-degree: 2%
 1. [!UICONTROL 자산 보고서] 페이지의 도구 모음에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
 1. **[!UICONTROL 보고서 만들기]** 페이지에서 만들 보고서를 선택하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
-1. 제목, 설명, 축소판, 폴더 경로 및 해당되는 날짜 범위와 같은 보고서 세부 사항을 구성합니다.
+1. 제목, 설명, 축소판, 폴더 경로 및 날짜 범위와 같은 보고서 세부 사항을 해당되는 경우 구성합니다.
 
 1. 사용자 지정 열을 표시하려면 **[!UICONTROL 사용자 지정 열]** 아래에 열 이름을 지정합니다.
 
