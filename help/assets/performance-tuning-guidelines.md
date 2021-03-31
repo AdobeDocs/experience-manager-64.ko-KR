@@ -2,10 +2,12 @@
 title: 자산 성능 조정 가이드
 description: 병목 현상을 제거하고 AEM Assets 성능을 최적화하기 위해 AEM 구성, 하드웨어, 소프트웨어 및 네트워크 구성 요소에 대한 변경 사항 등 주요 관심 영역을 중점적으로 살펴봅니다.
 contentOwner: AG
+feature: 자산 관리
+role: 건축가,관리자
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '3206'
+source-wordcount: '3210'
 ht-degree: 0%
 
 ---
@@ -50,7 +52,7 @@ Windows OS에서는 RAM 드라이브를 만들거나 SSD와 같은 고성능 스
 
 ### Java 버전 {#java-version}
 
-2015년 4월 Oracle에서 Java 7에 대한 업데이트 릴리스를 중단했기 때문에 Adobe은 Java 8에 AEM Assets을 배포할 것을 권장합니다. 일부 경우에, 그것은 향상된 성능을 보여주었다.
+2015년 4월 현재 Oracle에서 Java 7에 대한 업데이트 릴리스를 중지했으므로 Adobe은 Java 8에 AEM Assets을 배포할 것을 권장합니다. 일부 경우에, 그것은 향상된 성능을 보여주었다.
 
 ### JVM 매개 변수 {#jvm-parameters}
 
@@ -179,7 +181,7 @@ DAM 자산 업데이트 워크플로우에는 Dynamic Media Classic PTIFF 생성
 
 #### 런타임 변환 생성 {#runtime-rendition-generation}
 
-고객은 웹 사이트에 다양한 크기와 형식의 이미지를 사용하거나 비즈니스 파트너에게 배포합니다. 각 변환은 저장소에서 자산의 풋프린트에 추가되므로 Adobe은 이 기능을 신중하게 사용할 것을 권장합니다. 이미지를 처리하고 저장하는 데 필요한 리소스 양을 줄이기 위해 수집 중 변환보다는 런타임에 이러한 이미지를 생성할 수 있습니다.
+고객은 웹 사이트에 다양한 크기와 포맷의 이미지를 사용하거나 비즈니스 파트너에게 배포할 수 있습니다. 각 변환은 저장소에서 자산의 풋프린트에 추가되므로 Adobe은 이 기능을 신중하게 사용할 것을 권장합니다. 이미지를 처리하고 저장하는 데 필요한 리소스 양을 줄이기 위해 수집 중 변환보다는 런타임에 이러한 이미지를 생성할 수 있습니다.
 
 많은 사이트 고객은 요청될 때 이미지 크기를 조정하고 잘라내는 이미지 서블릿을 구현하여 게시 인스턴스에 추가 로드를 적용합니다. 그러나 이러한 이미지를 캐시하는 한 이러한 문제를 완화시킬 수 있습니다.
 
