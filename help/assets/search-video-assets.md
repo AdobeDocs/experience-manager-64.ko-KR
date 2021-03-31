@@ -2,10 +2,12 @@
 title: 비디오 자산 검색
 description: 키워드, MIME 유형, 크기 또는 최근에 수정한 타임스탬프와 같은 파일 속성을 사용하여 AEM Assets에서 파일을 신속하게 찾을 수 있습니다.
 contentOwner: AG
+feature: 비디오,검색
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '582'
 ht-degree: 3%
 
 ---
