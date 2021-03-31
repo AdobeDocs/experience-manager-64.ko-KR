@@ -2,10 +2,12 @@
 title: 자산 인사이트를 위한 데모 패키지 사용
 description: 데모 패키지를 사용하여 Adobe 자산 인사이트를 통해 웹 페이지에서 데이터를 캡처하고 인사이트를 생성할 수 있습니다.
 contentOwner: AG
+feature: 자산 통찰력,자산 보고서
+role: 비즈니스 전문가,관리자
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '172'
 ht-degree: 2%
 
 ---
