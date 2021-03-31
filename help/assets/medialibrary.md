@@ -2,11 +2,12 @@
 title: 미디어 라이브러리를 사용하여 기본적인 디지털 에셋 관리
 description: '[!DNL Experience Manager Assets] 에셋 관리를 위한 미디어 라이브러리'
 contentOwner: AG
-role: 건축가, 리더
+feature: 자산 관리
+role: 건축가,리더
 translation-type: tm+mt
-source-git-commit: 200bb263d60ebd9f6abc79ce0c73dac95b06de53
+source-git-commit: e46a27a1ba11b4a5973eb1ece02c8594b2ae0fc9
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
