@@ -2,10 +2,12 @@
 title: 검색 패싯
 description: 이 문서에서는 AEM에서 검색 패싯을 만들고, 수정하고, 사용하는 방법에 대해 설명합니다.
 contentOwner: AG
+feature: 검색
+role: 관리자,개발자
 translation-type: tm+mt
-source-git-commit: adf44677a0ac833a131aad8187529b094aaca9ef
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '2537'
+source-wordcount: '2540'
 ht-degree: 2%
 
 ---
