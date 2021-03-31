@@ -2,10 +2,12 @@
 title: IPTC 메타데이터 지원
 description: Adobe Experience Manager(AEM) Assets는 Adobe Bridge 및 기타 Creative Apps를 통해 IPTC 메타데이터, 크리에이티브 등급 및 에셋에 추가된 키워드를 지원하는 방법을 알아봅니다.
 contentOwner: AG
+feature: 메타데이터
+role: 비즈니스 전문가,관리자,리더
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
