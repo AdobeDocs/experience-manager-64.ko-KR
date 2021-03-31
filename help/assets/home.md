@@ -2,11 +2,13 @@
 title: Assets 안내서
 description: 이 안내서에서는 디지털 자산 만들기, 관리, 제공 및 최적화 방법과 같은 모든 AEM Assets 작업을 다룹니다.
 user-guide-title: Assets 안내서
+feature: 자산 관리
+role: 비즈니스 전문가,건축가,관리자
 translation-type: tm+mt
-source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 88%
+source-wordcount: '323'
+ht-degree: 86%
 
 ---
 
