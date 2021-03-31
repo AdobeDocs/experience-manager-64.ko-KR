@@ -5,10 +5,12 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: fd3eedf0-f222-45bf-aac7-90da6b7b7087
 contentOwner: AG
 discoiquuid: 3394b56a-3054-419b-9547-5740f8c35071
+feature: 스마트 태그,태그 지정,검색
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 7771cbb218d80247f65e92cbe7e8cdfd9720b75e
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -32,7 +34,7 @@ ht-degree: 0%
 
 ## 스마트 태그 {#understand-search-results-with-smart-tags}를 사용하여 AEM 검색 결과 이해
 
-기본적으로 AEM 검색은 검색어와 `AND` 절을 결합합니다. 스마트 태그를 사용해도 이 기본 동작은 변경되지 않습니다. 스마트 태그를 사용하면 적용 스마트 태그의 검색어 중 하나를 찾기 위해 추가 `OR` 절이 추가됩니다. 예를 들어 `woman running` 검색을 고려해 보십시오. 메타데이터에 `woman`만 있거나 `running` 키워드만 있는 자산은 기본적으로 검색 결과에 나타나지 않습니다. 그러나 스마트 태그를 사용하여 `woman` 또는 `running` 태그가 지정된 자산이 이러한 검색 쿼리에 나타납니다. 검색 결과는
+기본적으로 AEM 검색은 검색어와 `AND` 절을 결합합니다. 스마트 태그를 사용해도 이 기본 동작은 변경되지 않습니다. 스마트 태그를 사용하면 적용 스마트 태그의 검색어 중 하나를 찾기 위해 추가 `OR` 절이 추가됩니다. 예를 들어 `woman running`을(를) 검색하는 것이 좋습니다. 메타데이터에 `woman`만 있거나 `running` 키워드만 있는 자산은 기본적으로 검색 결과에 나타나지 않습니다. 그러나 스마트 태그를 사용하여 `woman` 또는 `running` 태그가 지정된 자산이 이러한 검색 쿼리에 나타납니다. 검색 결과는
 
 * 메타데이터에 `woman` 및 `running` 키워드를 모두 포함하는 자산입니다.
 * 두 키워드 중 하나로 태그가 지정된 스마트 자산.
