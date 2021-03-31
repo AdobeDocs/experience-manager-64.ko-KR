@@ -2,10 +2,12 @@
 title: 메타데이터를 편집하거나 추가하는 방법
 description: 에셋 메타데이터를 편집할 수 있는 다양한 방법으로 AEM Assets의 에셋 메타데이터에 대해 알아봅니다.
 contentOwner: AG
+feature: 메타데이터
+role: 비즈니스 전문가,관리자
 translation-type: tm+mt
-source-git-commit: e9f50a1ddb6a162737e6e83b976f96911b3246d6
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '487'
 ht-degree: 1%
 
 ---
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 메타데이터는 검색할 수 있는 자산에 대한 추가 정보입니다. 이미지를 업로드할 때 자동으로 압축이 해제됩니다. 기존 메타데이터를 편집하거나 기존 필드에 새 메타데이터 속성을 추가할 수 있습니다(예: 메타데이터 필드가 비어 있는 경우).
 
-회사는 제어 및 안정적인 메타데이터 어휘가 필요하기 때문에 AEM Assets은 새로운 메타데이터 속성을 임시 추가하는 것을 허용하지 않습니다. 작성자가 에셋에 대한 새 메타데이터 필드를 추가할 수는 없지만 개발자는 추가할 수 있습니다. [자산](meta-edit.md#editing-metadata-schema)에 대한 새 메타데이터 속성 만들기를 참조하십시오.
+회사는 제어 및 안정적인 메타데이터 어휘가 필요하기 때문에 AEM Assets은 새로운 메타데이터 속성을 임시 추가하는 것을 허용하지 않습니다. 작성자가 에셋에 대한 새 메타데이터 필드를 추가할 수는 없지만 개발자는 이를 수행할 수 있습니다. [자산](meta-edit.md#editing-metadata-schema)에 대한 새 메타데이터 속성 만들기를 참조하십시오.
 
 ## 자산 {#editing-metadata-for-an-asset} 메타데이터 편집
 
