@@ -2,10 +2,12 @@
 title: Camera Raw 지원
 description: Adobe Experience Manager AssetsCamera Raw에서 지원을 활성화하는 방법을 알아봅니다.
 contentOwner: AG
+feature: 개발자 도구
+role: 관리자
 translation-type: tm+mt
-source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '407'
 ht-degree: 3%
 
 ---
