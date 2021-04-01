@@ -1,5 +1,5 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4 모바일 사용 안내서
@@ -9,15 +9,15 @@ feature-set: Experience Manager Sites
 feature: 모바일
 role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
+source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
 
-# AEM 6.4 Mobile 사용 안내서 {#mobile}
+# AEM 6.4 모바일 사용 안내서 {#mobile}
 
 + [모바일 사용 안내서 개요](home.md)
 + AEM Mobile 소개 {#introduction}
