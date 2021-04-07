@@ -5,20 +5,22 @@ contentOwner: Rick Brough
 topic-tags: 3D
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
+exl-id: be8f6361-607d-4529-aef0-e8978dfd04b4
+feature: 3D 자산
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Dimension 에셋 작업 {#working-with-adobe-dimension-assets}
 
 >[!IMPORTANT]
 >
->AEM 6.4의 AEM 3D 기능 팩은 더 이상 지원되지 않습니다. Adobe에서는 [AEM의 3D 자산 기능을 Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) 또는 [AEM 6.5.3 이상으로 사용하는 것이 좋습니다.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic) adobe dimension 에셋을 사용하여 작업할 때
+>AEM 6.4의 AEM 3D 기능 팩은 더 이상 지원되지 않습니다. Adobe에서는 [AEM의 3D 자산 기능을 Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) 또는 [AEM 6.5.3 이상으로 사용하는 것이 좋습니다.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic) Adobe Dimension 에셋을 사용하여 작업할 때
 
 AEM 3D 기능 팩은 AEM Assets, AEM Sites 및 AEM Screens의 Adobe Dimension 에셋(`.dn` 파일)에 대한 지원을 제공합니다.
 
@@ -52,4 +54,3 @@ glTF 뷰어의 사용자 인터페이스는 다른 모든 3D 자산 유형에 �
 * [AEM 3D 릴리스 노트](/help/release-notes/aem3d-release-notes.md) 는 Dn 자산 및 glTF 뷰어에 적용할 수 있는 제한 사항 및 제한 사항입니다.
 * [Adobe Dimension 자산과 관련된 ](using-the-3d-sites-component.md) 구성 요소 속성에 대한 3D 사이트 구성 요소 작업
 * [AEM 3 설치 및 구성](install-config-3d.md) 클라우드 기반 전환 서비스를 구성합니다.
-
