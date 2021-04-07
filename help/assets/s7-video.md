@@ -5,14 +5,16 @@ contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: managing-assets
 content-type: reference
+exl-id: 081e7db0-95cc-4260-8f08-318cd7d9d5b4
+feature: 비디오
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 53fab119fc178e5ac88257cab1e930d4472eaa14
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1604'
 ht-degree: 34%
 
 ---
-
 
 # 비디오 {#video}
 
@@ -189,4 +191,3 @@ Scene7 클라우드 구성에서 선택한 Scene7 인코딩 사전 설정에 따
 1. 비디오 프로필을 활성화해야 합니다.
 1. 페이지에서 **[!UICONTROL 기본 비디오]** 구성 요소의 디자인을 구성합니다.
 1. 디자인 변경을 수행한 후 디자인을 활성화합니다.
-
