@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
+exl-id: 4b9fd241-82db-466e-95bd-6d212717801d
+feature: 콘텐츠 조각
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '984'
 ht-degree: 2%
 
 ---
-
 
 # 컨텐츠 조각에 대한 번역 프로젝트 만들기 {#creating-translation-projects-for-content-fragments}
 
@@ -32,7 +34,7 @@ ht-degree: 2%
 
 **언어 복사 업데이트**
 
-소스 컨텐츠 조각을 업데이트하거나 수정할 때 해당 로케일/언어 특정 컨텐츠 조각에 대해 다시 번역해야 합니다. 업데이트 언어 사본 워크플로우에서는 추가 컨텐츠 그룹을 변환할 수 있으며 특정 로케일에 대한 언어 복사본에 포함할 수 있습니다. 이 경우 번역된 컨텐츠 조각은 이전에 번역된 컨텐츠 조각을 이미 포함하는 대상 폴더에 추가됩니다.
+소스 컨텐츠 조각을 업데이트하거나 수정할 때 해당 로케일/언어 특정 컨텐츠 조각에 대한 재번역 작업이 필요합니다. 업데이트 언어 사본 워크플로우에서는 추가 컨텐츠 그룹을 변환할 수 있으며 특정 로케일에 대한 언어 복사본에 포함할 수 있습니다. 이 경우 번역된 컨텐츠 조각은 이전에 번역된 컨텐츠 조각을 이미 포함하는 대상 폴더에 추가됩니다.
 
 ## 워크플로 {#create-and-translate-workflow} 만들기 및 번역
 
@@ -163,4 +165,3 @@ AEM에서는 다양한 유형의 미디어 에셋 및 컬렉션을 포함하는 
    >[!NOTE]
    >
    >기존 프로젝트에 컨텐츠 조각을 추가하거나 업데이트 워크플로우를 수행하는 절차는 해당 자산에 대한 절차와 유사합니다. 이러한 절차에 대한 지침은 자산에 대해 설명된 절차를 참조하십시오.
-
