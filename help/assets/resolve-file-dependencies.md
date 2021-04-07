@@ -9,14 +9,16 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 05b7410b-82a1-4267-ac07-2edbc29e9ee8
+exl-id: 088d32a8-a47e-4ae6-a171-8d327d3dac64
+feature: 3D 자산
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '350'
 ht-degree: 39%
 
 ---
-
 
 # 파일 종속성 해결 {#resolving-file-dependencies}
 
@@ -58,4 +60,3 @@ ht-degree: 39%
 1. **[!UICONTROL 닫기]****[!UICONTROL 를 탭하여 [카드 보기]로 돌아갑니다]**.
 
    자산이 새로 해결된 종속성과 함께 자동으로 다시 처리됩니다.
-
