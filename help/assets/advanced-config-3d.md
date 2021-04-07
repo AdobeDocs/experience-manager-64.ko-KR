@@ -9,14 +9,16 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: e43fd002-2954-4ef1-ac2b-e8d45afa75be
+exl-id: fdc82bca-e676-4052-b3e9-a198c685df96
+feature: 3D 자산
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1385'
 ht-degree: 1%
 
 ---
-
 
 # 고급 구성 설정 {#advanced-configuration-settings}
 
@@ -149,4 +151,3 @@ AEM(**[!UICONTROL 도구 > 일반 > CRXDE Lite]**)의 **CRXDE Lite**&#x200B;에�
 | `/libs/settings/dam/v3D/WebGLSites/fadeCurtains` | **[!UICONTROL true]**&#x200B;로 설정하면 로드 및 초기화 후부분이 서서히 사라집니다. **[!UICONTROL false]**&#x200B;로 설정하면 로드 및 초기화가 완료될 때까지 커튼이 불투명하게 유지됩니다. |
 | `/libs/settings/dam/v3D/WebGLSites/showCurtains` | 3D 사이트 구성 요소의 로드 커튼을 활성화 또는 비활성화하려면 **[!UICONTROL true]** 또는 **[!UICONTROL false]**&#x200B;로 설정합니다. |
 | `/libs/settings/dam/v3D/WebGLSites/spinHeight` | 자동 회전이 활성화되고 활성화되면 3D 개체의 높이를 기준으로 카메라의 세로 위치가 자동으로 조정됩니다. 0.5로 설정하면 카메라가 개체의 높이를 1/2로 세로로 배치되고, 이로 인해 시야에서 수평선이 세로로 중앙에 배치됩니다. 값이 클수록 카메라에서 개체를 아래로 보고 렌더링된 수평선의 높이를 늘립니다. 값이 작을수록 카메라가 개체를 위로 보고 수평선을 낮춥니다. |
-
