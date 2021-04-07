@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
+exl-id: 7cd62a2f-f7c9-40b1-bcd4-5853dadabf1b
+feature: 뷰어 사전 설정
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 0%
+source-wordcount: '226'
+ht-degree: 1%
 
 ---
-
 
 # Dynamic Media 뷰어 사전 설정 적용 중 {#applying-viewer-presets}
 
