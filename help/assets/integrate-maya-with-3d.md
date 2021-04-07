@@ -9,14 +9,16 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 3d063268-17d7-4db6-8028-682537645377
+exl-id: 52ecbf81-0953-4c44-bc2c-d40e507b8d98
+feature: 3D 자산
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '876'
 ht-degree: 0%
 
 ---
-
 
 # AEM 3D와 Autodesk Maya 통합 {#integrating-aem-d-with-autodesk-maya}
 
@@ -128,4 +130,3 @@ Autodesk Maya와 통합할 때 Autodesk Maya를 설치 및 구성하고, Maya �
 다음 스크린샷에서는 COLLADA DAE를 예로 사용하여 추가된 파일 형식을 보여 줍니다.
 
 ![image2018-6-22_12-50-39](assets/image2018-6-22_12-50-39.png)
-
