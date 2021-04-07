@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
+exl-id: 3602e1b9-624d-408f-a7f6-1598b62dbd22
+feature: 비디오 프로필,비디오
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '3068'
+source-wordcount: '3071'
 ht-degree: 2%
 
 ---
-
 
 # Dynamic Media 비디오 프로필 {#video-profiles}
 
@@ -373,4 +375,3 @@ AEM에서 비디오 프로필을 만들거나 편집할 때 사용자 인터페�
 1. AEM 로고를 누르고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음 비디오 프로필을 제거할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 눌러 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 누릅니다.
 1. **[!UICONTROL 비디오 프로필]** 탭을 선택하고 드롭다운 메뉴에서 **[!UICONTROL 없음]**&#x200B;을 선택하고 **[!UICONTROL 저장 및 닫기]**&#x200B;를 누릅니다. 프로파일이 이미 할당된 폴더가 폴더 이름 바로 아래에 프로파일 이름이 표시되어 표시됩니다.
-
