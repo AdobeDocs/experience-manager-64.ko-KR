@@ -2,20 +2,21 @@
 title: 사용자, 그룹 및 액세스 권한 관리
 seo-title: 사용자, 그룹 및 액세스 권한 관리
 description: AEM의 사용자, 그룹 및 액세스 권한 관리에 대해 알아보십시오.
+feature: 보안
 seo-description: AEM의 사용자, 그룹 및 액세스 권한 관리에 대해 알아보십시오.
 uuid: 30e0d4dc-261d-4dc2-aff7-29179eca1cc2
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: cc0637ef-4a9e-454f-899d-655c9caebe2b
+exl-id: 9c14e57b-019e-45ae-9e96-40424fa609c2
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
-source-wordcount: '3137'
+source-wordcount: '3138'
 ht-degree: 0%
 
 ---
-
 
 # 사용자, 그룹 및 액세스 권한 관리{#user-group-and-access-rights-administration}
 
@@ -497,7 +498,7 @@ CRXDE Lite의 **액세스 제어** 탭을 사용하여 액세스 제어 정책�
   </tr> 
   <tr> 
    <td><code>rep:write</code></td> 
-   <td>jcr:write 및 jcr:nodeTypeManagement의 jcr:write 및 jcr:nodeTypeManagement의 jackrabbit 특정 집계 권한입니다.<br /> </td> 
+   <td>jcr:write 및 jcr:nodeTypeManagement의 jcrabbit 특정 집계 권한입니다.<br /> </td> 
   </tr> 
   <tr> 
    <td><code>jcr:all</code></td> 
@@ -541,7 +542,7 @@ CRXDE Lite의 **액세스 제어** 탭을 사용하여 액세스 제어 정책�
   </tr> 
   <tr> 
    <td><code>jcr:nodeTypeManagement</code></td> 
-   <td>혼합 노드 유형을 추가 및 제거하고 노드의 기본 노드 유형을 변경합니다. 또한 새 노드의 mixin 또는 기본 유형이 명시적으로 지정된 Node.addNode 및 XML 가져오기 메서드를 호출하는 작업도 포함됩니다.</td> 
+   <td>혼합 노드 유형을 추가 및 제거하고 노드의 기본 노드 유형을 변경합니다. 또한 새 노드의 mixin 또는 기본 유형이 명시적으로 지정된 Node.addNode 및 XML 가져오기 메서드를 호출하는 작업도 포함합니다.</td> 
   </tr> 
   <tr> 
    <td><code>jcr:readAccessControl</code></td> 
@@ -646,4 +647,3 @@ CRX는 선택 영역의 유효성을 검사합니다.주어진 주체에 대해 
 1. 선택 항목의 결과를 보려면 **테스트**&#x200B;를 클릭합니다.
 
    ![crx_accescontrol_test](assets/crx_accesscontrol_test.png)
-
