@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
+exl-id: 07a4f315-a60e-456b-b02d-035b3f6ad9ad
+feature: 이미지 사전 설정
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '329'
 ht-degree: 11%
 
 ---
-
 
 # Dynamic Media 이미지 사전 설정 적용 중 {#applying-image-presets}
 
@@ -56,4 +58,3 @@ ht-degree: 11%
    >에셋 *및*&#x200B;이 이미지 사전 설정이 아직 게시되지 않은 경우 **[!UICONTROL URL]** 단추(또는 **[!UICONTROL URL]** 및 **[!UICONTROL RESS]** 단추(해당하는 경우)를 사용할 수 없습니다.
    >
    >또한 이미지 사전 설정은 Dynamic Media 서버에 자동으로 게시됩니다.
-
