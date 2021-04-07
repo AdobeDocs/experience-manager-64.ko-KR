@@ -7,14 +7,16 @@ uuid: 5de8844f-d5d0-4fda-b59e-74682eda949f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
+exl-id: 3adae6da-e148-4670-86ae-27d83008ec66
+feature: 대화형 비디오,비디오
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '6008'
+source-wordcount: '6011'
 ht-degree: 0%
 
 ---
-
 
 # 대화형 비디오 {#interactive-videos}
 
@@ -109,7 +111,7 @@ ht-degree: 0%
 
 AEM 구현에서 eCommerce를 사용하는 경우 이 작업을 건너뛰고 다음 작업으로 진행할 수 있습니다.
 
-인터랙티브한 비디오 제작 프로세스 동안 제품 축소판을 해당 제품 Quickview에 매핑할 수 있도록 기존 Quickview 구현에서 사용하는 동적 변수를 식별하여 시작합니다.
+인터랙티브한 비디오 작성 프로세스 동안 제품 축소판을 해당 제품 Quickview에 매핑할 수 있도록 기존 Quickview 구현에서 사용하는 동적 변수를 식별함으로써 시작합니다.
 
 시간 세그먼트를 비디오에 추가하면 SKU와 세그먼트에 추가하는 각 축소판에 추가 변수를 할당합니다. 이러한 변수는 나중에 적절한 Quickview 제품을 표시하는 데 사용됩니다.
 
