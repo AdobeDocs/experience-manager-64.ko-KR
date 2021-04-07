@@ -7,14 +7,16 @@ uuid: bcd1f9ab-4201-4222-9e4a-ba82b3c7cd6c
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
+exl-id: dd43de7b-8556-4e3f-9d90-14f0f5bd13e7
+feature: 구성
+role: Administrator,Business Practitioner,Developer
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 12%
+source-wordcount: '275'
+ht-degree: 13%
 
 ---
-
 
 # Dynamic Media {#setting-up-dynamic-media} 설정
 
@@ -44,3 +46,4 @@ ht-degree: 12%
 >**업그레이드하는 경우:**
 >
 >* AEM을 실행하고 나면 업로드하는 모든 에셋은 자동으로 활성화됩니다(시스템 관리자가 명시적으로 비활성화하지 않은 경우). AEM의 업그레이드된 인스턴스이고 Dynamic Media을 처음 사용하는 경우 자산을 재처리하여 Dynamic Media을 활성화할 수 있습니다.
+
