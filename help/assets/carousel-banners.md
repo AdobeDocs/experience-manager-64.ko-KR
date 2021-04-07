@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4b532cd3-1561-4b5c-8b4b-420c278926f0
+exl-id: d2fdad3f-513b-4147-a7c6-a3c1b64dd6e3
+feature: 회전 배너
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '4787'
+source-wordcount: '4789'
 ht-degree: 0%
 
 ---
-
 
 # 회전 배너 {#carousel-banners}
 
@@ -110,7 +112,7 @@ AEM Assets에서 핫스팟 또는 이미지 맵을 배너 이미지에 추가할
 
 핫스팟 또는 이미지 맵 데이터에 사용할 변수 세트를 식별하는 다른 방법이 있습니다.
 
-시스템 빠른 보기를 식별하기 위해 필요한 최소 데이터 세트가 무엇인지 알 수 있으므로 기존 빠른 보기 구현을 담당하는 IT 전문가와 상담하는 데 충분할 수 있습니다. 그러나 대부분의 경우 프런트 엔드 코드의 기존 동작을 간단하게 분석할 수도 있습니다.
+시스템에서 빠른 보기를 식별하는 데 필요한 최소 데이터 세트가 무엇인지 알 수 있으므로 기존 빠른 보기 구현을 담당하는 IT 전문가와 상담하는 데 충분할 수 있습니다. 그러나 대부분의 경우 프런트 엔드 코드의 기존 동작을 간단하게 분석할 수도 있습니다.
 
 대부분의 빠른 보기 구현은 다음 패러다임을 사용합니다.
 
@@ -372,7 +374,7 @@ AEM Assets에서 핫스팟 또는 이미지 맵을 배너 이미지에 추가할
 1. **[!UICONTROL 편집]**&#x200B;을 누릅니다.
 1. 도구 모음 오른쪽 모서리의 뷰어 사전 설정 목록에서 회전식 배너를 미리 볼 뷰어를 선택합니다.
 
-   ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
+   ![experience_fragment-carousselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
 1. **[!UICONTROL 미리 보기]**&#x200B;를 누릅니다.
 1. 이미지의 핫스팟 또는 이미지 맵을 눌러 연결된 동작을 테스트합니다.
