@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
+exl-id: 15a5fdc9-2878-4f95-83ee-02a2899aeb43
+feature: 콘텐츠 조각
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1764'
 ht-degree: 97%
 
 ---
-
 
 # 변형 - 조각 컨텐츠 작성 {#variations-authoring-fragment-content}
 
@@ -379,4 +381,3 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
 4. **[!UICONTROL 동기화]**&#x200B;를 선택합니다. 변형이 업데이트되고 표시됩니다.
-
