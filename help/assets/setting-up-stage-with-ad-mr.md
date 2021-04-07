@@ -9,14 +9,16 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: da8fc33b-84ae-4ead-87bb-5a7870a38b1f
+exl-id: facd0411-8a3c-4b1a-af9d-0d59e0399b2c
+feature: 3D 자산
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 4b05b24a91ba9c31a19a5a96fb481d2ffc4c9bfc
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 85%
+source-wordcount: '433'
+ht-degree: 84%
 
 ---
-
 
 # Autodesk Maya 및 Mental Ray로 표준 스테이지 설정 {#setting-up-a-standard-stage-with-autodesk-maya-and-mental-ray}
 
@@ -68,4 +70,3 @@ ht-degree: 85%
 
 1. AEM에서 [자산 속성]을 엽니다. **[!UICONTROL 제목]**&#x200B;이 **[!UICONTROL 스테이지 선택기]** 드롭다운 목록에 표시될 적절한 문자열로 설정합니다. **[!UICONTROL 클래스]**&#x200B;가 **[!UICONTROL 3D 스테이지]**&#x200B;로 설정되어 있는지 확인합니다. 저장하고 종료하십시오.
 1. 3D 자산을 열고 새 스테이지를 선택한 다음, 미리 보기에 예상대로 표시되고 렌더링되는지 확인합니다.
-
