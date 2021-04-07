@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
+exl-id: 59cd9f8c-6d01-448d-bf57-bdc9fd2e381b
+feature: 자산 관리
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 15d933a2e71a44e84cdcc9ae28f60c67b43bd8f4
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '733'
 ht-degree: 3%
 
 ---
-
 
 # HTTP2 컨텐츠 배달 {#http-delivery-of-content}
 
@@ -47,7 +49,7 @@ Adobe 자체 테스트 결과:
 
 HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 
-* 리치 미디어 요청에 안전한 HTTPS를 사용하십시오.
+* 리치 미디어 요청을 위해 안전한 HTTPS를 사용합니다.
 * Dynamic Media 라이선스의 일부로 Adobe 번들 CDN(컨텐츠 전달 네트워크)을 사용합니다.
 * 전용(company-h.assetsadobe#.com) 도메인을 사용합니다.
 
@@ -83,7 +85,7 @@ HTTP/2로 전환 요청을 시작해야 합니다.자동으로 수행되지 않�
 
 >[!NOTE]
 >
->HTTP/2로 전환하는 경우 캐시를 지우므로 리드 타임이 길어질 수 있습니다. 따라서 한 번에 몇 개의 고객 전환만 처리할 수 있습니다.
+>HTTP/2로 전환하는 경우 캐시를 지우므로 리드 타임이 길어질 수 있습니다. 따라서 한 번에 몇 가지 고객 전환만 처리할 수 있습니다.
 
 ## HTTP/2로 이동하는 경우 어떤 위험이 있습니까?{#what-are-the-risks-with-moving-to-http}
 
