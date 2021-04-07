@@ -2,6 +2,7 @@
 title: AEM의 서비스 사용자
 seo-title: AEM의 서비스 사용자
 description: AEM의 서비스 사용자에 대해 알아봅니다.
+feature: 보안
 seo-description: AEM의 서비스 사용자에 대해 알아봅니다.
 uuid: 4efab5fb-ba11-4922-bd68-43ccde4eb355
 contentOwner: User
@@ -9,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 9cfe5f11-8a0e-4a27-9681-a8d50835c864
+exl-id: b6e77f61-5c7b-4e40-881c-057177e7ea6d
 translation-type: tm+mt
-source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
-source-wordcount: '1788'
+source-wordcount: '1789'
 ht-degree: 0%
 
 ---
-
 
 # AEM의 서비스 사용자{#service-users-in-aem}
 
@@ -88,7 +89,7 @@ AEM에서 관리 세션이나 리소스 확인자를 가져오는 주된 방법�
 * 사용자에게 매핑 서비스를 허용합니다.
 * 하위 서비스 사용자를 정의할 수 있습니다.
 * 중앙 구성 포인트는 다음과 같습니다.`org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl`
-* `service-id` =  `service-name` [ &quot;:&quot; subservice-name  ] 
+* `service-id` =  `service-name` [ &quot;:&quot; subservice-name  ]
 
 * `service-id` 인증을 위해 리소스 확인자 및/또는 JCR 리포지토리 사용자 ID에 매핑됩니다.
 * `service-name` 서비스를 제공하는 번들의 상징적 이름입니다.
