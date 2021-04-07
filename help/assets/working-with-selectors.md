@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
+exl-id: 6bd68afe-bd54-4482-bd6e-cb318868c8d0
+feature: 선택기
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '740'
 ht-degree: 3%
 
 ---
-
 
 # 선택기를 사용한 작업 {#working-with-selectors}
 
@@ -118,4 +120,3 @@ AEM 사이트 내에서 관리되는 웹 페이지에 핫스팟 또는 이미지
 1. 확인 표시를 눌러 자산을 선택합니다. 자산이 표시됩니다.
 
    ![chlimage_1-536](assets/chlimage_1-536.png)
-
