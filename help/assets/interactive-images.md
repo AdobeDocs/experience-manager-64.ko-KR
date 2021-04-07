@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
+exl-id: 4d3299e2-269b-4a41-a979-c884c707666d
+feature: 대화형 이미지
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '4296'
+source-wordcount: '4298'
 ht-degree: 0%
 
 ---
-
 
 # 대화형 이미지 {#interactive-images}
 
@@ -471,7 +473,7 @@ Quickview URL을 구성하는 프로세스는 기본적으로 앞에서 설명�
 
 Quickview URL을 트리거하고 Quickview 패널을 활성화하는 마지막 단계는 IT 부서의 프런트 엔드 IT 담당자의 지원이 필요합니다. 바로 사용할 수 있는 Quickview URL을 사용하여 적절한 단계에서 Quickview 구현을 정확하게 트리거하는 방법을 잘 알고 있습니다.
 
-이러한 단계가 데모 웹 사이트에 어떻게 적용되었는지 확인하여 쇼퍼블 인터랙티브한 이미지를 Quickview 코드와 완벽하게 통합할 수 있습니다. 이전에는 빠른 보기 URL의 구조가 다음과 같이 식별되었습니다.
+이러한 단계를 데모 웹 사이트에 적용하여 쇼퍼블 인터랙티브한 이미지를 Quickview 코드와 완벽하게 통합하는 방법을 확인할 수 있습니다. 이전에는 빠른 보기 URL의 구조가 다음과 같이 식별되었습니다.
 
 ```xml
 /datafeed/$categoryId$-$SKU$.json
