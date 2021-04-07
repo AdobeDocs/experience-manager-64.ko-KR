@@ -7,14 +7,16 @@ uuid: de88f68f-4697-4ff0-8008-3ae6a4684a84
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
+exl-id: 1e122f97-ac37-44f5-a1cd-bf53ffda6f5b
+feature: 구성,하이브리드 모드
+role: Administrator,Business Practitioner,Developer
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '7793'
+source-wordcount: '7796'
 ht-degree: 2%
 
 ---
-
 
 # Dynamic Media 구성 - 하이브리드 모드 {#configuring-dynamic-media-hybrid-mode}
 
@@ -172,7 +174,7 @@ AEM에서 Dynamic Media Classic을 사용하려면 [특정 시나리오](/help/s
 
       이미지 서버 로그 파일 이름의 예:`ImageServer-57346-2019-07-25.log`
    * s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - s7access 로그는 `/is/image` 및 `/is/content`을 통해 Dynamic Media에 수행된 각 요청을 기록합니다.
-   이러한 로그는 Dynamic Media이 활성화된 경우에만 사용됩니다. **[!UICONTROL system/console/status-Bundelist]** 페이지에서 생성된 **Download Full** 패키지에 포함되지 않습니다.dynamic media 문제가 있는 경우 고객 지원에 문의할 때 이 두 로그를 모두 문제에 추가하십시오.
+   이러한 로그는 Dynamic Media이 활성화된 경우에만 사용됩니다. **[!UICONTROL system/console/status-Bundelist]** 페이지에서 생성된 **Download Full** 패키지에 포함되지 않습니다.Dynamic Media 문제가 있는 경우 고객 지원에 문의할 때 이 두 로그를 모두 문제에 추가하십시오.
 
 ### 다른 포트 또는 컨텍스트 경로에 AEM을 설치한 경우.. {#if-you-installed-aem-to-a-different-port-or-context-path}
 
@@ -242,7 +244,7 @@ Dynamic Media 이미지 배달은 AEM 작성자에서 비디오 축소판을 비
 복제 에이전트를 구성한 후에는 [이(가) 성공적으로 설정되었는지 확인하고 테스트해야 합니다](#validating-the-replication-agent-for-dynamic-media). 이 섹션에서는 이러한 절차에 대해 설명합니다.
 
 >[!NOTE]
-PTIFF 만들기의 기본 메모리 제한은 모든 워크플로우에서 3GB입니다. 예를 들어 다른 워크플로우가 일시 정지되는 동안 3GB의 메모리가 필요한 하나의 이미지를 처리하거나 각각 300MB의 메모리가 필요한 10개의 이미지를 동시에 처리할 수 있습니다.
+PTIFF 만들기의 기본 메모리 제한은 모든 워크플로우에서 3GB입니다. 예를 들어 다른 워크플로가 일시 정지되는 동안 3GB의 메모리가 필요한 하나의 이미지를 처리하거나 각각 300MB의 메모리가 필요한 10개의 이미지를 동시에 처리할 수 있습니다.
 메모리 제한은 구성 가능하며 시스템 리소스 사용 가능 여부 및 처리 중인 이미지 컨텐츠 유형에 맞게 구성 가능합니다. 시스템에 매우 큰 에셋이 있고 메모리가 충분하면 이미지가 동시에 처리되도록 이 제한을 늘릴 수 있습니다.
 최대 메모리 제한을 초과하는 이미지가 거부됩니다.
 PTIFF 만들기에 대한 메모리 제한을 변경하려면 **[!UICONTROL 도구 > 작업 > 웹 콘솔 > Adobe CQ Scene7 PTiffManager]**&#x200B;로 이동하여 `maxMemory` 값을 변경합니다.
@@ -508,7 +510,7 @@ Dynamic Media Cloud Services을 설정하기 전에 게시 인스턴스를 설�
 
 Dynamic Media - 하이브리드 모드를 사용하여 여러 AEM 설치 간에 비디오 보고를 구성할 수 있습니다.
 
-**사용 시기:** Dynamic Media 구성( **[!UICONTROL Pre 6.3)]**&#x200B;을 구성할 때 비디오 보고를 포함하여 다양한 기능이 시작됩니다. 구성은 지역 Analytics 회사에 보고서 세트를 만듭니다. 여러 작성자 노드를 구성하는 경우 각각에 대해 별도의 보고서 세트를 만듭니다. 따라서 보고서 데이터가 설치 간에 일치하지 않습니다. 또한 각 작성자 노드가 동일한 하이브리드 게시 서버를 참조하는 경우 마지막 작성자 설치는 모든 비디오 보고에 대한 대상 보고서 세트를 변경합니다. 이 문제는 보고서 세트가 너무 많은 Analytics 시스템을 오버로드합니다.
+**사용 시기:**  **[!UICONTROL Dynamic Media 구성(Pre 6.3)]**&#x200B;을 구성할 때 비디오 보고를 포함하여 다양한 기능이 시작됩니다. 구성은 지역 Analytics 회사에 보고서 세트를 만듭니다. 여러 작성자 노드를 구성하는 경우 각각에 대해 별도의 보고서 세트를 만듭니다. 따라서 보고서 데이터가 설치 간에 일치하지 않습니다. 또한 각 작성자 노드가 동일한 하이브리드 게시 서버를 참조하는 경우 마지막 작성자 설치는 모든 비디오 보고에 대한 대상 보고서 세트를 변경합니다. 이 문제는 보고서 세트가 너무 많은 Analytics 시스템을 오버로드합니다.
 
 **시작하기:** 다음 3가지 작업을 완료하여 비디오 보고를 구성합니다.
 
@@ -800,7 +802,7 @@ Dynamic Media 이미지 서버 구성에는 Adobe CQ Scene7 ImageServer 번들 �
 >[!NOTE]
 Dynamic Media은 [이(가) 활성화된 후에 기본적으로 작동합니다](#enabling-dynamic-media). 그러나 특정 사양 또는 요구 사항을 충족하도록 Dynamic Media Image Server를 구성하여 설치를 세밀하게 조정할 수도 있습니다.
 
-**사전 요구 사항**: _dynamic media 이미지 서버_ 를 구성하기 전에 Windows VM에 Microsoft Visual C++ Libraries가 설치되어 있는지 확인하십시오. 라이브러리는 Dynamic Media Image Server를 실행하는 데 필요합니다. [여기에서 Microsoft Visual C++ 2010 재배포 가능 패키지(x64)를 다운로드할 수 있습니다](https://www.microsoft.com/en-us/download/details.aspx?id=14632).
+**사전 요구 사항**: _Dynamic Media 이미지 서버_ 를 구성하기 전에 Windows VM에 Microsoft Visual C++ Libraries가 설치되어 있는지 확인하십시오. 라이브러리는 Dynamic Media Image Server를 실행하는 데 필요합니다. [여기에서 Microsoft Visual C++ 2010 재배포 가능 패키지(x64)를 다운로드할 수 있습니다](https://www.microsoft.com/en-us/download/details.aspx?id=14632).
 
 **Dynamic Media 이미지 서버 설정을 구성하려면**:
 
