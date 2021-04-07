@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
+exl-id: 2e90bea1-eaac-457b-8588-b18d3a6e8d91
+feature: 자산 관리,표현물
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 42d5a1875d78fdec1be0bb22d8ec8de2e56256ec
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1466'
 ht-degree: 1%
 
 ---
-
 
 # 이미지 품질 최적화 우수 사례 {#best-practices-for-optimizing-the-quality-of-your-images}
 
