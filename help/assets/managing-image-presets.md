@@ -6,14 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
+exl-id: 3a666efe-1592-4425-82f5-c4d9343f65da
+feature: 이미지 사전 설정
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '3837'
+source-wordcount: '3839'
 ht-degree: 3%
 
 ---
-
 
 # Dynamic Media 이미지 사전 설정 관리 {#managing-image-presets}
 
@@ -402,7 +404,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
      <li><strong>Bi-Linear</strong>  - 가장 빠른 리샘플링 방법입니다.일부 앨리어싱 가공물은 눈에 잘 띈다.</li>
      <li><strong>Bi-Cubic</strong>  - CPU 사용을 증가시키지만 앨리어싱 가공물이 적은 경우 더 선명한 이미지를 생성합니다.</li>
      <li><strong>Sharp2</strong>  - Bi-Cubic보다 약간 더 선명하게 결과를 생성할 수 있지만 CPU 비용이 훨씬 높습니다.</li>
-     <li><strong>Bi-Sharp</strong> - 이미지 크기를 줄이기 위해 Photoshop 기본 리샘플러를 선택하는데, 이 <strong>는 쌍입방 </strong> 공유 영역이라고 합니다.</li>
+     <li><strong>Bi-Sharp</strong> - 이미지 크기를 줄이기 위해 Photoshop 기본 리샘플러를 선택하는데, 이를  <strong>쌍입방 </strong> 공유Adobe Photoshop라고 합니다.</li>
      <li><strong>각 </strong> 색상 및  <strong>밝기</strong>  - 각 방법은 색상 또는 밝기를 기반으로 할 수 있습니다. 기본적으로 <strong>각 색상</strong>이 선택됩니다.</li>
     </ul> </td>
   </tr>
