@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
+exl-id: a87c7562-0d61-403e-9e8e-e706cac9b7c5
+feature: 자산 관리
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '120'
 ht-degree: 13%
 
 ---
-
 
 # Dynamic Media 자산 관리 정보 {#managing-assets}
 
@@ -28,4 +30,3 @@ ht-degree: 13%
 * [Dynamic Media 자산 미리 보기](previewing-assets.md)
 * [Dynamic Media 자산 게시](publishing-dynamicmedia-assets.md)
 * [선택기를 사용한 작업](working-with-selectors.md)
-
