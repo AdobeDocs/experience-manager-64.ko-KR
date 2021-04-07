@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 topic-tags: 3D
 discoiquuid: 0d7fefc0-6923-4ac3-9e90-335c08fa56f0
+exl-id: 2edecd53-0a2d-44bb-968a-d988c780e142
+feature: 3D 자산
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
-
 
 # AEM 3D와 Autodesk 3ds 최대 {#integrating-aem-d-with-autodesk-ds-max} 통합
 
@@ -89,4 +91,3 @@ ht-degree: 0%
 1. 처리가 완료되면 **[!UICONTROL 세부 사항]** 보기에서 `logo-sphere.max`을(를) 엽니다.
 
    미리 보기 환경은 `logo_sphere.fbx`과(와) 동일합니다.
-
