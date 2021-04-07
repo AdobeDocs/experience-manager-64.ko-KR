@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: introduction
 content-type: reference
+exl-id: 3cee9b4f-c4be-4ffc-970c-5680c8ebba47
+feature: 3D 자산
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1177'
 ht-degree: 5%
 
 ---
-
 
 # AEM 3D 자산 작업 {#working-with-d-assets}
 
@@ -162,4 +164,3 @@ Y-up은 이번 릴리스에서 FBX 파일에 대해 선호하는 좌표 시스�
 ## 기본 3D 모델 파일 {#naming-materials-in-a-primary-d-model-file} 의 재료 이름 지정
 
 *surface*&#x200B;는 동일한 재질로 덮여있는 3D 모델의 서피스 영역으로 정의됩니다. 이 재료는 또한 서피스 이름을 제공합니다. 따라서 Adobe은 기본 3D 모델 파일에 포함된 재질의 이름을 그에 따라 지정할 것을 권장합니다. 예를 들어 &quot;Body&quot;, &quot;Windows&quot;, &quot;Tires&quot; 또는 &quot;Rims&quot;와 같은 특정 이름을 사용하는 것이 &quot;Red&quot;, &quot;Glass&quot;, &quot;Rubber&quot;, &quot;Aluminum&quot;과 같은 모호한 이름을 사용하는 것이 좋습니다.
-
