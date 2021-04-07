@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
+exl-id: af3f95aa-a162-4212-a20a-68b5a0e72d6d
+feature: 이미지 세트
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: '2066'
 ht-degree: 0%
 
 ---
-
 
 # 이미지 세트 {#image-sets}
 
@@ -54,7 +56,7 @@ ht-degree: 0%
 
    [일괄 세트 사전 설정](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)을 통해 자동으로 이미지 세트를 만들 수도 있습니다.
 
-   **중요** — 일괄 세트는 자산 수집에 따라 IPS(이미지 프로덕션 시스템)에 의해 생성되며 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
+   **중요**  — 일괄 세트는 자산 수집에 따라 IPS(이미지 프로덕션 시스템)에 의해 생성되며 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
 
    [업로드할 이미지 세트 자산 준비 및 파일 업로드](#uploading-assets-in-image-sets)를 참조하십시오.
 
