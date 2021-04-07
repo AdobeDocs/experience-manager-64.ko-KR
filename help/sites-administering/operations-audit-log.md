@@ -2,6 +2,7 @@
 title: AEM 6의 감사 로그 유지 관리
 seo-title: AEM 6의 감사 로그 유지 관리
 description: AEM의 감사 로그 유지 관리에 대해 알아봅니다.
+feature: 작업
 seo-description: AEM의 감사 로그 유지 관리에 대해 알아봅니다.
 uuid: 212de4df-6bf4-434c-94e1-74186d21945a
 contentOwner: User
@@ -9,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
+exl-id: bcbdab55-4871-4c7f-b82a-b7d8280e82e3
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
-
 
 # AEM 6의 감사 로그 유지 관리{#audit-log-maintenance-in-aem}
 
@@ -101,4 +102,3 @@ AEM 6.3에서는 감사 로그 삭제 작업이 완료되기 전에 예약된 �
    * **감사 로그 복제 이벤트 유형:** 삭제할 복제 감사 이벤트 유형
 
 1. **저장**&#x200B;을 클릭하여 구성을 저장합니다.
-
