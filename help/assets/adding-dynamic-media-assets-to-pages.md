@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
+exl-id: bb97b649-a50d-49c8-97aa-18c32f18d527
+feature: 구성 요소
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '2825'
+source-wordcount: '2826'
 ht-degree: 39%
 
 ---
-
 
 # 페이지에 Dynamic Media 자산 추가 {#adding-dynamic-media-assets-to-pages}
 
