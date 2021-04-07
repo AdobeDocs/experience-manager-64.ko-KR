@@ -9,14 +9,16 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: a0319701-21eb-4b7f-8b2e-ac81a7a75875
+exl-id: 4b8b0247-0978-40b5-92e2-319cfa44b34e
+feature: 3D 자산
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '868'
 ht-degree: 67%
 
 ---
-
 
 # AEM에서의 3D 자산 업로드 및 처리 정보 {#about-the-uploading-and-processing-of-d-assets-in-aem}
 
@@ -113,4 +115,3 @@ ht-degree: 67%
 >[!NOTE]
 >
 >미리 보기 만들기 단계가 완료된 후 **[!UICONTROL 세부 사항 보기]**&#x200B;에서 3D 자산을 보거나 렌더링할 수 있습니다. 모든 처리 단계가 완료될 때까지 기다릴 필요가 없습니다.
-
