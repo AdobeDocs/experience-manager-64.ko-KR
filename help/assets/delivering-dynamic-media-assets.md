@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: ec394bd3-2fa6-4f50-b974-bc10f643ecac
+exl-id: e5110a90-ddc9-4244-8466-f91adfca8469
+feature: 자산 관리
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '332'
 ht-degree: 35%
 
 ---
-
 
 # Dynamic Media 자산 제공 {#delivering-dynamic-media-assets}
 
