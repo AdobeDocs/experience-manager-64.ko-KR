@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
+exl-id: 252c1a50-17ac-4412-88d6-49bb6850658d
+feature: 미디어 세트 혼합
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1472'
 ht-degree: 1%
 
 ---
-
 
 # 혼합 미디어 세트 {#mixed-media-sets}
 
@@ -168,4 +170,3 @@ Assets](managing-assets-touch-ui.md)의 모든 자산처럼 사용자 인터페�
 >[!NOTE]
 >
 >혼합 미디어 예산을 처음 게시할 때 배달 서비스에 완전히 포함되지 않은 경우 혼합 미디어 집합을 두 번째로 게시해야 할 수 있습니다.
-
