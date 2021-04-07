@@ -2,6 +2,7 @@
 title: 사용자 관리 및 보안
 seo-title: 사용자 관리 및 보안
 description: AEM의 사용자 관리 및 보안에 대해 알아보십시오.
+feature: 보안
 seo-description: AEM의 사용자 관리 및 보안에 대해 알아보십시오.
 uuid: f14619a1-d21f-465c-b79b-c98da1f1c016
 contentOwner: msm-service
@@ -9,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: a67b9e56-944d-424d-a64a-025f369faa5b
+exl-id: 1dd54d3f-419c-4c83-8cd8-4ae0e7feead2
 translation-type: tm+mt
-source-git-commit: ae4942dce6536f670b0f3013a489671a42225bd6
+source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
-source-wordcount: '5434'
+source-wordcount: '5435'
 ht-degree: 2%
 
 ---
-
 
 # 사용자 관리 및 보안{#user-administration-and-security}
 
@@ -449,7 +450,7 @@ AEM WCM 보안에 액세스하려면 다음 중 하나를 수행합니다.
 
 새 사용자 또는 그룹을 만들려면:
 
-1. **보안** 콘솔 트리 목록에서 **편집**&#x200B;을 클릭한 다음 **사용자 만들기** 또는 **그룹 만들기** 중 하나를 클릭합니다.
+1. **보안** 콘솔 트리 목록에서 **편집**&#x200B;을 클릭한 다음 **사용자 만들기** 또는 **그룹 만들기**&#x200B;를 클릭합니다.
 
    ![cqseruiteditextmenu](assets/cqseruityeditcontextmenu.png)
 
