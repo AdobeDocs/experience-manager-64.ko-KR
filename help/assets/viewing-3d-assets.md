@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+exl-id: 71f89564-a413-49f6-8d6e-c5305bf92c75
+feature: 3D 자산
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1778'
+source-wordcount: '1780'
 ht-degree: 36%
 
 ---
-
 
 # 3D 자산 보기 {#viewing-d-assets}
 
@@ -183,4 +185,3 @@ AEM 3D에서 기본 단계를 사용하는 것외에도, 타사 애플리케이�
 1. **ALT/option** 키와 왼쪽 마우스 단추를 누른 상태에서 드래그하여 카메라를 팬합니다. 확대하면서 개체의 다른 부분을 볼 수 있도록 카메라를 왼쪽으로 이동합니다. 또는 **[!UICONTROL 궤도/이동 전환]** 단추를 클릭하여 **[!UICONTROL 팬]** 모드로 전환한 다음 왼쪽 마우스 단추를 누른 상태에서 드래그하여 카메라를 팬합니다. **[!UICONTROL 궤도/이동 전환]**&#x200B;을 다시 클릭하여 **[!UICONTROL 궤도]** 모드로 되돌립니다.
 1. **[!UICONTROL 뷰어 재설정]**&#x200B;을 클릭하여 카메라를 재설정합니다. 이 작업을 수행하면 객체가 다시 전체 보기로 돌아오고, 활성화된 경우 자동 회전을 다시 시작합니다.
 1. **[!UICONTROL 전체 화면]**&#x200B;을 클릭하여 전체 화면 모드로 전환합니다. 키보드에서 **[!UICONTROL Escape]** 키를 사용하거나 **[!UICONTROL 전체 화면]**&#x200B;을 다시 클릭하여 3D 뷰어를 페이지 포함 모드로 복원합니다.
-
