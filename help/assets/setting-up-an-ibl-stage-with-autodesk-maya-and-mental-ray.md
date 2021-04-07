@@ -9,14 +9,16 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 752e521f-198f-425a-abfa-051993f9c694
+exl-id: ecb489e2-fd6f-4163-9739-5d7ff497d305
+feature: 3D 자산
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '543'
 ht-degree: 75%
 
 ---
-
 
 # Autodesk Maya 및 Mental Ray로 IBL 스테이지 설정 {#setting-up-an-ibl-stage-with-autodesk-maya-and-mental-ray}
 
@@ -82,4 +84,3 @@ ht-degree: 75%
 1. AEM에서 [자산 속성]을 엽니다. **[!UICONTROL 제목]**&#x200B;이 **[!UICONTROL 스테이지 선택기]** 드롭다운 목록에 표시될 적절한 문자열로 설정합니다. **[!UICONTROL 클래스]**&#x200B;가 **[!UICONTROL 3D 스테이지]**&#x200B;로 설정되어 있는지 확인합니다. 저장하고 종료하십시오.
 
 1. 3D 자산을 열고 새 스테이지를 선택한 다음, 미리 보기에 예상대로 표시되고 렌더링되는지 확인합니다.
-
