@@ -9,14 +9,16 @@ topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: 22ae0d3a-083f-40e4-bf4a-7a755ae9e312
+exl-id: e2804707-7b75-4fae-937e-9e258481878f
+feature: 콘텐츠 조각
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 2d25f3154ac4a2b43aec98cf63699cabf0d113cf
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '2002'
+source-wordcount: '2004'
 ht-degree: 97%
 
 ---
-
 
 # 컨텐츠 조각을 사용한 작업 {#working-with-content-fragments}
 
@@ -306,4 +308,3 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 샘플 조각은 다음 위치에서 볼 수 있습니다.
 
 [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
-
