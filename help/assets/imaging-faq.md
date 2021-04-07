@@ -9,14 +9,16 @@ topic-tags: dynamic-media
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
+exl-id: 2f24c4bc-8071-4403-b959-00db0f08db34
+feature: 스마트 서비스
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1756'
+source-wordcount: '1758'
 ht-degree: 1%
 
 ---
-
 
 # 스마트 이미징 {#smart-imaging}
 
