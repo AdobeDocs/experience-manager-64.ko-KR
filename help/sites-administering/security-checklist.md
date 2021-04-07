@@ -2,6 +2,7 @@
 title: Security 검사 목록
 seo-title: Security 검사 목록
 description: AEM 구성 및 배포 시 다양한 보안 고려 사항에 대해 알아봅니다.
+feature: 보안
 seo-description: AEM 구성 및 배포 시 다양한 보안 고려 사항에 대해 알아봅니다.
 uuid: 8ecd0c35-249e-4f72-b7e9-97e72698b5c1
 contentOwner: msm-service
@@ -9,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: a91e1264-8441-42f8-aa83-1d9c983d214a
+exl-id: 0be6d031-f8b8-458b-a910-ff05d2b1a155
 translation-type: tm+mt
-source-git-commit: 6ac5f288de51e39bccd080123ba9e094406263f8
+source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
-source-wordcount: '2843'
+source-wordcount: '2844'
 ht-degree: 1%
 
 ---
-
 
 # Security 검사 목록{#security-checklist}
 
