@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
+exl-id: 56b070e4-b445-4488-acff-685b7ce5785f
+feature: 구성
+role: Administrator,Business Practitioner,Developer
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1050'
 ht-degree: 2%
 
 ---
-
 
 # 빠른 보기를 사용하여 사용자 지정 팝업 만들기 {#using-quickviews-to-create-custom-pop-ups}
 
@@ -269,4 +271,3 @@ mappingMap 변수를 사용하여 웹 페이지에서 SKU 값 및 Quickview에 �
    `s7interactiveimageviewer.init()`
 
    뷰어를 호스트 페이지에 포함시킨 후 뷰어 인스턴스가 생성되었고 뷰어가 호출되기 전에 `init()`을(를) 사용하여 핸들러가 로드되었는지 확인합니다.
-
