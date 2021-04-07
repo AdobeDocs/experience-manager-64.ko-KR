@@ -5,14 +5,16 @@ contentOwner: Alva Ware-Bevacqui
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 topic-tags: managing-assets
+exl-id: b11b19c1-712d-4698-aefc-930ff8cacbc1
+feature: Dynamic Media Classic
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '2826'
+source-wordcount: '2829'
 ht-degree: 35%
 
 ---
-
 
 # 페이지 {#adding-scene-features-to-your-page}에 Dynamic Media Classic 기능 추가
 
@@ -28,7 +30,7 @@ Adobe Dynamic Media Classic은 리치 미디어 에셋을 관리, 향상, 게시
 
 AEM에서 Dynamic Media Classic으로 디지털 자산을 직접 게시할 수 있으며, Dynamic Media Classic에서 AEM으로 디지털 자산을 게시할 수 있습니다.
 
-이 문서에서는 AEM에서 Dynamic Media Classic으로 또는 그 반대로 디지털 자산을 게시하는 방법에 대해 설명합니다. 뷰어도 자세히 설명되어 있습니다. Dynamic Media Classic용 AEM 구성에 대한 자세한 내용은 [Dynamic Media Classic과 AEM](/help/sites-administering/scene7.md) 통합을 참조하십시오.
+이 문서에서는 AEM에서 Dynamic Media Classic으로 디지털 자산을 게시하는 방법을 설명합니다. 뷰어도 자세히 설명되어 있습니다. Dynamic Media Classic용 AEM 구성에 대한 자세한 내용은 [Dynamic Media Classic과 AEM](/help/sites-administering/scene7.md) 통합을 참조하십시오.
 
 [이미지 맵 추가](image-maps.md)도 참조하십시오.
 
@@ -83,7 +85,7 @@ Dynamic Media Classic(Scene7) 구성 요소를 페이지에 추가하는 것은 
 
 1. AEM에서 Dynamic Media Classic(Scene7) 구성 요소를 추가할 페이지를 엽니다.
 
-1. 사용할 수 있는 Dynamic Media Classic 구성 요소가 없으면 **[!UICONTROL 디자인]** 모드를 클릭하고 파란색 테두리가 있는 구성 요소를 탭하고 **[!UICONTROL 상위]** 아이콘을 누른 다음 **[!UICONTROL 구성]** 아이콘을 누릅니다. **[!UICONTROL Parsys(디자인)]**&#x200B;에서 모든 Dynamic Media Classic 구성 요소를 선택하여 사용할 수 있게 하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
+1. 사용할 수 있는 Dynamic Media Classic 구성 요소가 없으면 **[!UICONTROL 디자인]** 모드를 클릭하고 파란색 테두리가 있는 구성 요소를 탭하고 **[!UICONTROL 부모]** 아이콘을 누른 다음 **[!UICONTROL 구성]** 아이콘을 누릅니다. **[!UICONTROL Parsys(디자인)]**&#x200B;에서 모든 Dynamic Media Classic 구성 요소를 선택하여 사용할 수 있게 하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
    ![chlimage_1-224](assets/chlimage_1-224.png)
 
@@ -153,7 +155,7 @@ HTML5 **[!UICONTROL 플라이아웃]** 구성 요소에서 자산은 분할 화�
 >
 >**[!UICONTROL 플라이아웃]** 구성 요소가 사용자 지정 크기를 사용하는 경우 해당 사용자 지정 크기가 사용되고 구성 요소의 응답형 설정이 비활성화됩니다.
 >
->**[!UICONTROL 플라이아웃]** 구성 요소가 **[!UICONTROL 디자인 보기]**&#x200B;에 설정된 대로 기본 크기를 사용하는 경우 기본 크기가 사용되고 구성 요소가 구성 요소의 응답형 설정이 활성화된 상태에서 페이지 레이아웃 크기에 맞게 확장됩니다. 그러나 구성 요소의 응답형 설정에는 제한이 있습니다. 응답형 설정이 있는 **[!UICONTROL 플라이아웃]** 구성 요소를 사용하는 경우 전체 페이지 스트레치와 함께 사용하면 안 됩니다. 그렇지 않으면 **[!UICONTROL 플라이아웃]**&#x200B;이 페이지의 오른쪽 테두리를 넘어갈 수 있습니다.
+>**[!UICONTROL 플라이아웃]** 구성 요소가 **[!UICONTROL 디자인 보기]**&#x200B;에 설정된 대로 기본 크기를 사용하는 경우 기본 크기가 사용되고 구성 요소가 응답형 구성 요소 설정이 활성화된 상태에서 페이지 레이아웃 크기에 맞게 확장됩니다. 그러나 구성 요소의 응답형 설정에는 제한이 있습니다. 응답형 설정이 있는 **[!UICONTROL 플라이아웃]** 구성 요소를 사용하는 경우 전체 페이지 스트레치와 함께 사용하면 안 됩니다. 그렇지 않으면 **[!UICONTROL 플라이아웃]**&#x200B;이 페이지의 오른쪽 테두리를 넘어갈 수 있습니다.
 
 ![chlimage_1-228](assets/chlimage_1-228.png)
 
@@ -353,4 +355,3 @@ Cloud Services에 둘 이상의 Dynamic Media Classic 구성이 정의되어 있
 상태게시 상태를 기반으로 자산을 필터링할 수 있습니다. **[!UICONTROL 게시]** 취소,  **[!UICONTROL 게시]**. **[!UICONTROL 게시 상태]**&#x200B;를 선택하지 않으면 AEM은 기본적으로 모든 게시 상태를 검색합니다.
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
-
