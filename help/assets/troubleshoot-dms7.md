@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
+exl-id: d8cc94b0-eacf-4e76-bd50-7934bbc28c92
+feature: 문제 해결
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1296'
 ht-degree: 2%
 
 ---
-
 
 # Dynamic Media 문제 해결 - Scene7 모드 {#troubleshooting-dynamic-media-scene-mode}
 
@@ -258,4 +260,3 @@ ht-degree: 2%
   </tr> 
  </tbody> 
 </table>
-
