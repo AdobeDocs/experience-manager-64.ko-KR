@@ -9,14 +9,16 @@ topic-tags: 3D
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: 9017ab55-6d4a-4306-922f-223ab1b2504b
+exl-id: bf87b470-08c8-44b4-95d9-1251586b0610
+feature: 3D 자산
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
-
 
 # 3D 사이트 구성 요소 {#working-with-the-d-sites-component} 작업
 
@@ -172,4 +174,3 @@ AEM 3D에는 웹 페이지에서 3D 모델의 대화형 보기를 구현하는 �
 >**[!UICONTROL 페이지 정보]** 메뉴의 **[!UICONTROL 페이지 게시]** 메뉴 항목을 사용하면 페이지와 모든 기본 페이지 종속성이 게시됩니다. 3D 모델 및/또는 3D 단계(예: 텍스처 맵 및 IBL 이미지)에서 참조할 수 있는 보조 종속성은 페이지를 이러한 방식으로 게시할 때 게시되지 않습니다.
 >
 >Adobe에서는 이러한 자산을 참조하는 웹 페이지를 게시하기 전에 AEM Assets에서 직접 모든 3D 자산과 해당 종속성을 게시하는 것이 좋습니다.
-
