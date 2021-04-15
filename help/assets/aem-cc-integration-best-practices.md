@@ -2,16 +2,16 @@
 title: AEM 및 Creative Cloud 통합 우수 사례
 description: AEM 배포를 Adobe Creative Cloud과 통합하여 에셋 전송 워크플로우를 간소화하고 효율성을 극대화하는 모범 사례
 contentOwner: AG
-feature: 공동 작업,Adobe 에셋 링크,Experience Manager 데스크탑 앱
-role: 비즈니스 전문가,관리자
+feature: 공동 작업,Adobe 에셋 링크,데스크탑 앱
+role: Business Practitioner,Administrator
+exl-id: cb9bea05-3359-4fb4-b935-59e522a5f387
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: 257355371068cdb47f75a0a17ea4831e10dc6a69
 workflow-type: tm+mt
-source-wordcount: '3583'
+source-wordcount: '3578'
 ht-degree: 2%
 
 ---
-
 
 # AEM 및 Creative Cloud 통합 우수 사례 {#aem-and-creative-cloud-integration-best-practices}
 
