@@ -2,8 +2,8 @@
 title: 편집할 디지털 에셋 체크 인 및 체크 아웃
 description: 편집을 위해 자산을 체크 아웃하고 변경 사항이 완료된 후 다시 체크 인하는 방법을 살펴봅니다.
 contentOwner: AG
-feature: 자산 관리
-role: 비즈니스 전문가
+feature: Asset Management
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

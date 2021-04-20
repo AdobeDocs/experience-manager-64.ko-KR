@@ -6,8 +6,8 @@ user-guide-title: AEM 6.4 모바일 사용 안내서
 breadcrumb-title: Mobile 안내서
 user-guide-description: 모바일 앱용 컨텐츠를 생성 및 관리합니다.
 feature-set: Experience Manager Sites
-feature: 모바일
-role: 비즈니스 전문가
+feature: Mobile
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

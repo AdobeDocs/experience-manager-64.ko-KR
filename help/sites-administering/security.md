@@ -2,7 +2,7 @@
 title: 사용자 관리 및 보안
 seo-title: 사용자 관리 및 보안
 description: AEM의 사용자 관리 및 보안에 대해 알아보십시오.
-feature: 보안
+feature: Security
 seo-description: AEM의 사용자 관리 및 보안에 대해 알아보십시오.
 uuid: f14619a1-d21f-465c-b79b-c98da1f1c016
 contentOwner: msm-service

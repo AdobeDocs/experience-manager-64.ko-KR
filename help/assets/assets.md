@@ -2,8 +2,8 @@
 title: ' [!DNL Adobe Experience Manager Assets] 소개'
 description: 디지털 자산 관리란 무엇이고, 사용 사례 및  [!DNL Adobe Experience Manager Asset] 상품.
 contentOwner: AG
-feature: 자산 관리
-role: 리더, 건축가, 비즈니스 전문가
+feature: Asset Management
+role: Leader,Architect,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

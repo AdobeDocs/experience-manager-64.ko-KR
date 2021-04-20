@@ -2,8 +2,8 @@
 title: 스마트 콘텐츠 서비스를 사용하여 자산 태그 지정을 구성합니다.
 description: 스마트 콘텐츠 서비스를 사용하여  [!DNL Adobe Experience Manager]에서 스마트 태그 지정 및 향상된 스마트 태그 지정 기능을 구성하는 방법을 알아봅니다.
 contentOwner: AG
-feature: 스마트 태그,태그 지정
-role: 관리자
+feature: Smart Tags,Tagging
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

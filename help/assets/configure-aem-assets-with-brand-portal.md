@@ -3,7 +3,7 @@ title: Brand Portal에서 AEM Assets 구성
 description: 'Brand Portal에 자산 및 컬렉션을 게시하기 위해 Brand Portal에서 AEM Assets을 구성하는 방법을 알아봅니다. '
 contentOwner: VG
 feature: Brand Portal
-role: 관리자
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt

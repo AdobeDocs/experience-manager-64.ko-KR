@@ -2,8 +2,8 @@
 title: 자산 선택기
 description: 자산 선택기를 사용하여 Adobe Experience Manager(AEM) 자산 내에서 자산에 대한 메타데이터를 검색, 필터링, 검색 및 페치하는 방법을 알아봅니다. 자산 선택기 인터페이스를 사용자 지정하는 방법도 알아봅니다.
 contentOwner: AG
-feature: 자산 관리,메타데이터,검색
-role: 비즈니스 전문가
+feature: Asset Management,Metadata,Search
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

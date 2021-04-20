@@ -2,7 +2,7 @@
 title: AEM에서 사용자 관리 작업을 감사하는 방법
 seo-title: AEM에서 사용자 관리 작업을 감사하는 방법
 description: AEM에서 사용자 관리 작업을 감사하는 방법을 알아봅니다.
-feature: 작업
+feature: Operations
 seo-description: AEM에서 사용자 관리 작업을 감사하는 방법을 알아봅니다.
 uuid: 4ea704b4-9150-4b5f-b9cb-cdac95cfd70c
 contentOwner: User

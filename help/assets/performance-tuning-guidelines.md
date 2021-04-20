@@ -2,8 +2,8 @@
 title: 자산 성능 조정 가이드
 description: 병목 현상을 제거하고 AEM Assets 성능을 최적화하기 위해 AEM 구성, 하드웨어, 소프트웨어 및 네트워크 구성 요소에 대한 변경 사항 등 주요 관심 영역을 중점적으로 살펴봅니다.
 contentOwner: AG
-feature: 자산 관리
-role: 건축가,관리자
+feature: Asset Management
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

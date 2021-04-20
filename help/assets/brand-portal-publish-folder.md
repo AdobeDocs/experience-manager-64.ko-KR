@@ -3,7 +3,7 @@ title: 폴더를 Brand Portal에 게시
 description: 브랜드 포털에 폴더를 게시하고 게시 취소하는 방법을 알아봅니다.
 contentOwner: VG
 feature: Brand Portal
-role: 비즈니스 전문가
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt

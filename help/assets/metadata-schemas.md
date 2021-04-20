@@ -2,8 +2,8 @@
 title: 메타데이터 스키마
 description: '메타데이터 스키마는 속성 페이지의 레이아웃과 자산에 대해 표시되는 메타데이터 속성을 정의합니다. 사용자 정의 메타데이터 스키마를 만들고, 메타데이터 스키마를 편집하고, 메타데이터 스키마를 자산에 적용하는 방법을 알아봅니다.  '
 contentOwner: AG
-feature: 메타데이터
-role: 비즈니스 전문가,관리자
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

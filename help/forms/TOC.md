@@ -8,7 +8,7 @@ user-guide-title: Adobe Experience Manager 6.4 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 feature-set: Experience Manager Forms
-role: 비즈니스 전문가
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

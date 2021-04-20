@@ -2,8 +2,8 @@
 title: AEM Assets 홈 페이지 경험
 description: 자산에 대한 최근 활동 요약 정보를 비롯한 다양한 시작 화면 경험을 위해 AEM Assets 홈 페이지를 개인화합니다.
 contentOwner: AG
-feature: 개발자 도구,자산 관리
-role: 관리자,비즈니스 전문가
+feature: Developer Tools,Asset Management
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

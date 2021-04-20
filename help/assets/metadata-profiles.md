@@ -2,8 +2,8 @@
 title: 메타데이터 프로필을 사용하여 폴더의 모든 자산에 기본 메타데이터를 적용할 수 있습니다.
 description: 자산에 대한 메타데이터 프로파일에 대해 알아봅니다. 메타데이터 프로필을 만들어 폴더 자산에 적용하는 방법을 알아봅니다.
 contentOwner: AG
-feature: 메타데이터
-role: 비즈니스 전문가,관리자
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

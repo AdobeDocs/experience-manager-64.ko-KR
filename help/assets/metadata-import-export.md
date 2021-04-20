@@ -2,8 +2,8 @@
 title: 일괄 메타데이터 가져오기 및 내보내기
 description: 이 문서에서는 메타데이터를 일괄적으로 가져오고 내보내는 방법에 대해 설명합니다.
 contentOwner: AG
-feature: 메타데이터
-role: 비즈니스 전문가,관리자
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

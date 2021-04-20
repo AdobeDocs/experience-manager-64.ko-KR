@@ -2,7 +2,7 @@
 title: AEM 6의 감사 로그 유지 관리
 seo-title: AEM 6의 감사 로그 유지 관리
 description: AEM의 감사 로그 유지 관리에 대해 알아봅니다.
-feature: 작업
+feature: Operations
 seo-description: AEM의 감사 로그 유지 관리에 대해 알아봅니다.
 uuid: 212de4df-6bf4-434c-94e1-74186d21945a
 contentOwner: User

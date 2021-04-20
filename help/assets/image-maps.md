@@ -2,8 +2,8 @@
 title: 이미지 맵 추가
 description: 하이퍼링크가 지정된 이미지 맵을 이미지 자산에 추가하는 방법을 알아봅니다.
 contentOwner: AG
-feature: 자산 관리
-role: 비즈니스 전문가, 관리자
+feature: Asset Management
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

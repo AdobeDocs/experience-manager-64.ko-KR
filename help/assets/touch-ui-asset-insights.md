@@ -2,8 +2,8 @@
 title: 에셋 인사이트 기능을 사용하여 이미지 사용 추적
 description: 자산 인사이트 기능을 사용하면 제3자 웹사이트, 마케팅 캠페인 및 Adobe의 크리에이티브 솔루션에 사용되는 이미지의 사용자 등급과 사용 통계를 추적할 수 있습니다.
 contentOwner: AG
-feature: 자산 통찰력,자산 보고서
-role: 비즈니스 전문가,관리자
+feature: Asset Insights,Asset Reports
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

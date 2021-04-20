@@ -2,8 +2,8 @@
 title: 검색 패싯
 description: 이 문서에서는 AEM에서 검색 패싯을 만들고, 수정하고, 사용하는 방법에 대해 설명합니다.
 contentOwner: AG
-feature: 검색
-role: 관리자,개발자
+feature: Search
+role: Administrator,Developer
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -2,7 +2,7 @@
 title: 사용자, 그룹 및 액세스 권한 관리
 seo-title: 사용자, 그룹 및 액세스 권한 관리
 description: AEM의 사용자, 그룹 및 액세스 권한 관리에 대해 알아보십시오.
-feature: 보안
+feature: Security
 seo-description: AEM의 사용자, 그룹 및 액세스 권한 관리에 대해 알아보십시오.
 uuid: 30e0d4dc-261d-4dc2-aff7-29179eca1cc2
 products: SG_EXPERIENCEMANAGER/6.4/SITES

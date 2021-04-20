@@ -2,8 +2,8 @@
 title: 관련 자산
 description: 특정 공통 속성을 공유하는 에셋을 연결하는 방법을 알아봅니다. 이 기능을 사용하여 자산 간의 소스/파생 관계를 만들 수도 있습니다.
 contentOwner: AG
-feature: 자산 관리,공동 작업
-role: 비즈니스 전문가
+feature: Asset Management,Collaboration
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

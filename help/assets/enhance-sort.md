@@ -2,8 +2,8 @@
 title: AEM에서 향상된 자산 정렬
 description: AEM Assets이 클라이언트측에서 일괄적으로 정렬하지 않고 한 번에 폴더 자산 또는 검색 쿼리를 정렬하기 위해 서버측 정렬을 배포하는 방법에 대해 알아봅니다.
 contentOwner: AG
-feature: 검색
-role: 비즈니스 전문가
+feature: Search
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

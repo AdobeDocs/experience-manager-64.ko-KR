@@ -2,8 +2,8 @@
 title: ' [!DNL Adobe Experience Manager]에서 비동기 작업을 구성합니다.'
 description: 리소스를 많이 사용하는 작업을 비동기적으로 완료하여 [!DNL Experience Manager Assets]에서 성능을 최적화합니다.
 contentOwner: AG
-feature: 자산 관리
-role: 비즈니스 전문가
+feature: Asset Management
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

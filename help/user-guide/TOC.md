@@ -6,8 +6,8 @@ user-guide-title: AEM 6.4 사용 안내서
 user-guide-description: AEM 6.4를 이해, 설치, 관리 및 사용하는 데 필요한 모든 리소스에 대한 개요입니다.
 contentOwner: Chris Bohnert
 feature-set: Experience Manager
-feature: 릴리스 정보
-role: 리더, 건축가, 개발자, 데이터 아키텍트, 데이터 엔지니어, 관리자, 비즈니스 관리자
+feature: Release Information
+role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

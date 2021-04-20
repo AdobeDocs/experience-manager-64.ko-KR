@@ -2,7 +2,7 @@
 title: 작업 대시보드
 seo-title: 작업 대시보드
 description: 작업 대시보드를 사용하는 방법을 알아봅니다.
-feature: 작업
+feature: Operations
 seo-description: 작업 대시보드를 사용하는 방법을 알아봅니다.
 uuid: f1a6dcdc-307b-45f4-ade5-cedc58f0c7cf
 contentOwner: Guillaume Carlino

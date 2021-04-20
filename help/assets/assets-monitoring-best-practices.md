@@ -2,8 +2,8 @@
 title: Assets 모니터링 우수 사례
 description: AEM 인스턴스가 배포된 후 환경 및 성능을 모니터링하기 위한 모범 사례
 contentOwner: AG
-feature: 자산 관리
-role: 관리자,건축가
+feature: Asset Management
+role: Administrator,Architect
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

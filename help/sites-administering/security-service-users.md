@@ -2,7 +2,7 @@
 title: AEM의 서비스 사용자
 seo-title: AEM의 서비스 사용자
 description: AEM의 서비스 사용자에 대해 알아봅니다.
-feature: 보안
+feature: Security
 seo-description: AEM의 서비스 사용자에 대해 알아봅니다.
 uuid: 4efab5fb-ba11-4922-bd68-43ccde4eb355
 contentOwner: User

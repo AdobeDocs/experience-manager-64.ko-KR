@@ -3,7 +3,7 @@ title: AEM Assets을 사용하여 디지털 에셋 관리
 description: AEM Assets의 터치에 적합한 사용자 인터페이스를 사용하여 수행할 수 있는 다양한 에셋 관리 및 편집 작업에 대해 알아봅니다
 contentOwner: AG
 mini-toc-levels: 1
-feature: 자산 관리,검색,표현물,공동 작업
+feature: Asset Management,Search,Renditions,Collaboration
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
 translation-type: tm+mt

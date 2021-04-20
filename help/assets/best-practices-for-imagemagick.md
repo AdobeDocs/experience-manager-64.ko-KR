@@ -2,8 +2,8 @@
 title: AEM Assets에서 작동하도록 ImageMagick 설치 및 구성
 description: ImageMagick 소프트웨어에 대한 자세한 내용, 설치 방법, 명령줄 프로세스 단계 설정, 이미지 축소판 편집, 작성 및 생성 방법 등을 살펴볼 수 있습니다.
 contentOwner: AG
-feature: 표현물,개발자 도구
-role: 관리자
+feature: Renditions,Developer Tools
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

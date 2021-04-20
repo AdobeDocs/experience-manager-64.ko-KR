@@ -2,7 +2,7 @@
 title: Granite Operations - 사용자 및 그룹 관리
 seo-title: Granite Operations - 사용자 및 그룹 관리
 description: Granite 사용자 및 그룹 관리에 대해 알아봅니다.
-feature: 보안
+feature: Security
 seo-description: Granite 사용자 및 그룹 관리에 대해 알아봅니다.
 uuid: 7b6b7767-712c-4cc8-8d90-36f26280d6e3
 contentOwner: Guillaume Carlino

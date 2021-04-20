@@ -2,8 +2,8 @@
 title: AEM에서 자산 검색
 description: '[필터] 패널을 사용하여 AEM에서 필요한 에셋을 찾는 방법 및 검색에 표시되는 에셋을 사용하는 방법을 알아봅니다.'
 contentOwner: AG
-feature: 검색,메타데이터
-role: 비즈니스 전문가
+feature: Search,Metadata
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: PDF 래스터라이저를 사용하여 변환 생성
 description: Adobe PDF 래스터라이저 라이브러리를 사용하여 고품질의 축소판과 변환을 생성할 수 있습니다.
 contentOwner: AG
-feature: 개발자 도구,표현물
-role: 개발자,관리자
+feature: Developer Tools,Renditions
+role: Developer,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

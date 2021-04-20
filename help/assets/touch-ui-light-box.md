@@ -2,8 +2,8 @@
 title: Lightbox
 description: AEM Assets의 Lightbox에 대해 알아봅니다.
 contentOwner: AG
-feature: 개발자 도구,표현물
-role: 비즈니스 전문가,관리자
+feature: Developer Tools,Renditions
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: Experience Cloud과 AEM Assets 통합 구성
 description: Experience Cloud과 AEM Assets 통합을 구성하는 방법을 알아봅니다.
-feature: 자산 관리
-role: 비즈니스 전문가, 건축가, 관리자
+feature: Asset Management
+role: Business Practitioner, Architect, Administrator
 translation-type: tm+mt
 source-git-commit: bf48918e9a549cb35dcbb32afa82ff1dd686402a
 workflow-type: tm+mt

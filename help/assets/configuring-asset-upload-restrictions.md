@@ -2,7 +2,7 @@
 title: 자산 업로드 제한 사항 구성
 description: AEM(Adobe Experience Manager) 자산을 구성하여 사용자가 업로드할 수 있는 자산(파일)의 유형을 제한하는 방법을 알아봅니다.
 contentOwner: AG
-feature: 업로드,자산 처리,자산 관리
+feature: Upload,Asset Ingestion,Asset Management
 role: Administrator,Architect
 exl-id: 0d817cfa-ae06-442a-ad89-5fe619bb2eff
 translation-type: tm+mt

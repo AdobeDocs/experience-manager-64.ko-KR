@@ -2,8 +2,8 @@
 title: Creative Cloud과 AEM Assets 폴더 공유
 description: Adobe Experience Manager Assets 사용자가 Adobe Creative Cloud 사용자와 자산 폴더를 교환할 수 있도록 하는 구성 및 모범 사례
 contentOwner: AG
-feature: 협업
-role: 비즈니스 전문가,관리자
+feature: Collaboration
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

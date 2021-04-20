@@ -2,8 +2,8 @@
 title: 효율적인 자산 번역 모범 사례
 description: 번역 버전을 동기화하고 번역 워크플로우를 간소화하기 위해 효율적으로 자산을 관리하는 모범 사례
 contentOwner: AG
-feature: 번역
-role: 비즈니스 전문가,관리자
+feature: Translation
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

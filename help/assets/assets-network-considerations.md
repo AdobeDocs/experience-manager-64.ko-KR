@@ -2,8 +2,8 @@
 title: Assets 네트워크 고려사항
 description: AEM Assets 배포를 디자인할 때 네트워크 고려 사항을 설명합니다.
 contentOwner: AG
-feature: 개발자 도구
-role: 건축가,관리자
+feature: Developer Tools
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

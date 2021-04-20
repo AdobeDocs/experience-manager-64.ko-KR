@@ -2,8 +2,8 @@
 title: 자산 편집기 페이지 만들기 및 구성
 description: 사용자 지정 자산 편집기 페이지를 만들고 여러 자산을 동시에 편집하는 방법을 알아봅니다.
 contentOwner: AG
-feature: 개발자 도구,자산 관리
-role: 비즈니스 전문가,관리자
+feature: Developer Tools,Asset Management
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

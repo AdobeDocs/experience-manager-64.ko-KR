@@ -2,8 +2,8 @@
 title: 비디오 표현물
 description: 비디오 표현물
 contentOwner: AG
-feature: 비디오,표현물
-role: 비즈니스 전문가
+feature: Video,Renditions
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: 자산 사용자 지정 및 확장
 description: 사용자에게 특별히 맞춤화된 인터페이스와 기능 세트를 제공하는 자산 공유 및 자산 편집기를 사용자 정의하고 확장할 수 있는 방법을 알아봅니다.
 contentOwner: AG
-feature: 개발자 도구
-role: 개발자
+feature: Developer Tools
+role: Developer
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

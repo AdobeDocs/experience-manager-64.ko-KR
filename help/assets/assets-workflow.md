@@ -2,8 +2,8 @@
 title: 자산을 처리하여 업무 처리 과정 수행, 감사, 규정 준수, 기본 안정성 유지
 description: 형식을 변환하고, 변환을 만들고, 자산을 관리하고, 자산을 확인하고, 워크플로우를 실행하는 자산 처리.
 contentOwner: AG
-feature: 워크플로,표현물
-role: 비즈니스 전문가,관리자
+feature: Workflow,Renditions
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

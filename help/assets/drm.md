@@ -2,8 +2,8 @@
 title: ' [!DNL Adobe Experience Manager Assets]의 Digital Rights Management.'
 description: ' [!DNL Experience Manager]에서 라이선스가 부여된 자산에 대한 에셋 만료 상태 및 정보를 관리하는 방법을 알아봅니다.'
 contentOwner: AG
-feature: DRM,자산 관리
-role: 비즈니스 전문가,관리자
+feature: DRM,Asset Management
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

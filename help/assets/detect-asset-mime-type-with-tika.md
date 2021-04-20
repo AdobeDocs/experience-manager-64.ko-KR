@@ -2,8 +2,8 @@
 title: Apache Tika를 사용하여 디지털 에셋의 MIME 유형 감지
 description: Apache Tika를 활성화하여 AEM Assets이 파일 확장명이 아닌 업로드 작업 중에 콘텐츠 스트림에서 MIME 유형의 자산을 검색하는 데 도움이 됩니다.
 contentOwner: AG
-feature: 메타데이터,개발자 도구,자산 관리
-role: 관리자,건축가
+feature: Metadata,Developer Tools,Asset Management
+role: Administrator,Architect
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

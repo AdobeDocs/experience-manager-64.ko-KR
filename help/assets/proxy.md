@@ -2,8 +2,8 @@
 title: 자산 프록시 개발
 description: '프록시는 프록시 작업자를 사용하여 작업을 처리하는 AEM 인스턴스입니다. AEM 프록시, 지원되는 작업, 프록시 구성 요소 및 사용자 지정 프록시 작업자 개발 방법을 구성하는 방법에 대해 알아보십시오. '
 contentOwner: AG
-feature: 자산 처리
-role: 관리자, 건축가
+feature: Asset Processing
+role: Administrator, Architect
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
