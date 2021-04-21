@@ -1,19 +1,17 @@
 ---
 title: AEM 6.4 커뮤니티의 새로운 기능
-seo-title: AEM 6.4 커뮤니티의 새로운 기능
-description: 'null'
-seo-description: 'null'
+description: AEM Communities은 파트너, 고객 및 직원 간의 공동 작업을 위한 프레임워크를 제공합니다.
 uuid: e4bf343c-59cd-48ac-bee4-85db109e4c65
 contentOwner: mgulati
 discoiquuid: 3e3c867f-afb0-4402-94f4-16e1a556ddee
+exl-id: fcdc65c9-929d-4a87-8ff7-5e3cf5711fd9
 translation-type: tm+mt
-source-git-commit: 4a1be7a5a233557dff0e7cd3796380532f23d5eb
+source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
-
 
 # AEM 6.4 커뮤니티의 새로운 기능 {#what-s-new-in-aem-communities}
 
@@ -63,7 +61,7 @@ AEM 6.4 Communities는 절제에 대한 몇 가지 개선 사항을 제공하므
 
 ### QnA {#new-answered-unanswered-filters-for-qna}에 대한 새 필터(답변됨/미답변)
 
-AEM 6.4는 일괄 중재 콘솔에 2개의 [새로운 필터](moderation.md#filter-rail)QnA 질문에 대해 답변됨 및 답변되지 않음을 추가합니다. 이러한 필터는 필터 레일의 상태 아래에서 사용할 수 있습니다.
+AEM 6.4는 일괄 중재 콘솔에 2개의 [새 필터](moderation.md#filter-rail)이(가) 추가되는데, 이 필터는 QnA 질문에 대해 답변됨 및 답변되지 않음)이 사용됩니다. 이러한 필터는 필터 레일의 상태 아래에서 사용할 수 있습니다.
 
 ![상태](assets/statuses.png)
 
@@ -73,7 +71,7 @@ AEM 6.4는 일괄 중재 콘솔에 2개의 [새로운 필터](moderation.md#filt
 
 AEM Communities은 중재 콘솔에서 사전 정의된 중재 필터](moderation.md#filter-rail)에 책갈피를 지정하는 기능을 제공합니다. [ 이러한 저장된 책갈피는 나중에 다시 방문하여 다른 사용자와 공유할 수 있습니다.
 
-사용자는 중재 콘솔의 필터 레일에서 원하는 필터를 선택하면 필터링된 UGC를 보고 브라우저에 필터를 책갈피에 추가해야 합니다. 이러한 필터는 URL 문자열 끝에 추가되므로 나중에 공유, 재사용 및 재방문할 수 있습니다.
+사용자는 중재 콘솔의 필터 레일에서 원하는 필터를 선택하면 필터링된 UGC를 보고 브라우저에 필터를 책갈피에 추가해야 합니다. 이러한 필터는 URL 문자열 끝에 추가되므로 나중에 공유, 재사용 및 다시 방문할 수 있습니다.
 
 ## 커뮤니티 사이트 관리 {#managing-community-sites}
 
