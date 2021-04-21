@@ -6,13 +6,12 @@ solution: Experience Manager, Experience Manager Forms
 audience: end-user
 user-guide-title: Adobe Experience Manager 6.4 Forms 안내서
 breadcrumb-title: Forms 안내서
-user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
-feature-set: Experience Manager Forms
+user-guide-description: 디지털 양식을 작성하고 관리하며 게시하고 업데이트합니다.
 role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
+source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
 workflow-type: tm+mt
-source-wordcount: '3732'
+source-wordcount: '3730'
 ht-degree: 3%
 
 ---
@@ -576,7 +575,7 @@ ht-degree: 3%
    + [프로세스 보고 문제 해결](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + 개발자 참조 {#developer-reference}
    + [개발자 기본 사항](https://docs.adobe.com/content/help/en/experience-manager-64/developing/home.html)
-   + [HTML Template Language](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html)
+   + [HTML Template Language](https://docs.adobe.com/content/help/ko/experience-manager-htl/using/overview.html)
    + [적응형 양식 디버깅을 위한 AEM 플러그인](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [AEM Forms Java API 참조](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html)
    + [JEE Java API 참조용 AEM Forms](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)
