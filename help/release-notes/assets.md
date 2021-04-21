@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 content-type: reference
 discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
+exl-id: 3f2cb2f9-2a4e-4c5d-b937-b693f27e11da
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '1689'
+source-wordcount: '1657'
 ht-degree: 3%
 
 ---
-
 
 # AEM Assets 릴리스 노트 {#aem-assets-release-notes}
 
@@ -35,7 +35,7 @@ AEM 6.4는 AEM 6.3에서 실행되는 스마트 태그 외에도 인공 지능�
 * Smart Content Service는 고객의 비즈니스 분류 방식을 학습하고 이를 사용하여 범용 태그 외에도 고객 관련 태그를 사용하여 디지털 자산에 자동으로 태그를 지정합니다. 자산 발견 기능을 크게 향상시키고 출시 시간을 단축합니다.
 * Adobe Sensei은 Smart Content Service를 강화하여 비즈니스 분류법에 대한 이미지 인식 알고리즘을 교육시킬 수 있습니다. 그런 다음 이 컨텐츠 인텔리전스를 사용하여 유사한 자산에 관련 태그를 적용합니다.
 
-AEM Assets 고급 스마트 태그를 사용하려면 AEM 6.4](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)의 최신 서비스 팩을 설치하십시오.[
+AEM Assets 고급 스마트 태그를 사용하려면 AEM 6.4](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html)의 최신 서비스 팩을 설치하십시오.[
 
 ## 고급 번역 검색(Adobe Sensei 제공) {#smart-translation-search-powered-by-adobe-sensei}
 
@@ -106,7 +106,7 @@ AEM 6.4는 크게 향상된 에셋 보고 기능을 제공합니다.
 
 ## AEM Desktop App {#aem-desktop-app}
 
-AEM 데스크탑 앱이 AEM 6.4와 호환되는 버전 1.8로 업데이트되었습니다. AEM 데스크톱 앱에 대한 전체 변경 사항은 전용 [AEM 데스크톱 앱 릴리스 노트](https://docs.adobe.com/content/help/ko-KR/experience-manager-desktop-app/using/release-notes.html) 문서에 있습니다.\
+AEM 데스크탑 앱이 AEM 6.4와 호환되는 버전 1.8로 업데이트되었습니다. AEM 데스크톱 앱에 대한 전체 변경 사항은 전용 [AEM 데스크톱 앱 릴리스 노트](https://docs.adobe.com/content/help/ko/experience-manager-desktop-app/using/release-notes.html) 문서에 있습니다.\
 AEM 6.3이 출시된 이후 AEM 데스크탑 앱의 주요 기능 목록은 다음과 같습니다.
 
 * 백그라운드에서 계층적 폴더를 업로드하는 기능
@@ -168,7 +168,3 @@ Dynamic Media 구성 요소와 함께 스마트 자르기 사용에 대한 자�
 * VR 뷰어는 속성, 위치 및 풍경을 위한 매력적인 경험을 제공합니다.
 * 제품 이미지에 최적화된 세로 이미지 뷰어.
 * 키보드 접근성 향상
-
-### 3D 및 Dimension CC {#d-and-integration-with-dimension-cc}와의 통합
-
-보다 매끄러운 3D 작업 과정을 위해 [Adobe Dimension CC](https://www.adobe.com/products/dimension.html)와의 통합이 도입되었습니다. 자세한 내용은 [3D 자산 작업](../assets/assets-3d.md) 설명서를 참조하십시오.
