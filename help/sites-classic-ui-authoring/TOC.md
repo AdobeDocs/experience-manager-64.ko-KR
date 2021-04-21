@@ -9,10 +9,10 @@ user-guide-description: 이 안내서에서는 클래식 사용자 인터페이�
 feature: 작성
 role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 92%
+source-wordcount: '273'
+ht-degree: 91%
 
 ---
 
@@ -82,17 +82,9 @@ ht-degree: 92%
    + [Adobe Campaign 타깃팅](classic-personalization-ac-target.md)
 + 클래식 UI에서 자산 작성 {#assets}
    + [자산 사용](classicui-assets.md)
-   + [IBL 단계 작업 정보](classicui-stages-aem3d-ibl.md)
-   + [3D 자산 렌더링](classicui-rendering-3d.md)
-   + [3D 자산 보기](classicui-view-3d-assets.md)
    + [Dynamic Media 자산 제공](dynamic-media-assets-delivering.md)
-   + [Autodesk Maya 및 Mental Ray로 표준 스테이지 설정](classicui-stages-aem3d-ad-mr.md)
    + [페이지에 Dynamic Media 자산 추가](dynamic-media-assets-adding-to-page.md)
    + [페이지에 Dynamic Media Classic(Scene7) 기능 추가](manage-assets-classic-s7.md)
    + [Dynamic Media 작업](dynamic-media-assets.md)
-   + [3D 자산 작업](classicui-3dassets.md)
    + [비디오](manage-assets-classic-s7-video.md)
    + [테스트 자산에 대한 이름 지정 규칙](asset-naming-conventions.md)
-   + [AEM에서의 3D 자산 업로드 및 처리 정보](classicui-upload-proc-3d.md)
-   + [AEM 3D의 스테이지 사용에 대하여](classicui-stages-aem3d.md)
-   + [파일 종속성 해결](classicui-upload-proc-3d-resolve-dependencies.md)
