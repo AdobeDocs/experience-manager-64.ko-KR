@@ -1,17 +1,17 @@
 ---
 title: 파노라마 이미지
-Description: Learn how to work with panoramic images in Dynamic Media.
+description: Dynamic Media에서 파노라마 이미지를 사용하여 작업하는 방법을 알아봅니다.
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 exl-id: 51150d51-865e-4b8e-9990-ca755e4c7778
-feature: Panoramic Images
+feature: 파노라마 이미지
 role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+source-git-commit: 489a4b42bdd5895186ba885b9a1dc33b49427e8d
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '585'
 ht-degree: 1%
 
 ---
