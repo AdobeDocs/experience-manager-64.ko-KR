@@ -8,10 +8,10 @@ user-guide-description: 릴리스 정보에서 AEM 6.4의 최신 새로운 기�
 feature: 릴리스 정보
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 29fe63a731d33afa0d6492e0e4ef94064097ae1a
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 51%
+source-wordcount: '89'
+ht-degree: 53%
 
 ---
 
@@ -27,7 +27,6 @@ ht-degree: 51%
 + [AEM Forms 릴리스 노트](forms.md)
 + [AEM Forms JEE 패치 설치 프로그램](jee-patch-installer-64.md)
 + [AEM Communities 릴리스 노트](communities-release-notes.md)
-+ [AEM 3D 릴리스 노트](aem3d-release-notes.md)
 + [더 이상 사용되지 않는 및 제거된 기능](deprecated-removed-features.md)
 + [알려진 문제](known-issues.md)
 + [AEM Foundation 및 저장소](wcm-platform.md)
