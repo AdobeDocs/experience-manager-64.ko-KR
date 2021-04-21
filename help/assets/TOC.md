@@ -7,10 +7,10 @@ user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 에셋 제작, 관리, 배달 및 최적화
 translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 66%
+source-wordcount: '627'
+ht-degree: 67%
 
 ---
 
@@ -166,20 +166,3 @@ ht-degree: 66%
    + [비공개 폴더 공유](private-folder.md)
    + [스마트 콘텐츠 서비스 교육 지침](smart-tags-training-guidelines.md)
    + [비디오 표현물](video-renditions.md)
-+ 3D 자산 {#three-d}
-   + [AEM 3D 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/aem3d-release-notes.html)
-   + [3D 자산 작업](assets-3d.md)
-   + [AEM 3D 설치 및 구성](install-config-3d.md)
-   + [고급 구성 설정](advanced-config-3d.md)
-   + [Adobe Dimension 에셋 작업](working-dimension-assets.md)
-   + [AEM에서의 3D 자산 업로드 및 처리 정보](upload-processing-3d-assets.md)
-   + [파일 종속성 해결](resolve-file-dependencies.md)
-   + [3D 자산 보기](viewing-3d-assets.md)
-   + [3D 자산 렌더링](rendering-3d-assets.md)
-   + [AEM 3D의 스테이지 사용에 대하여](about-the-use-of-stages-in-aem-3d.md)
-   + [Autodesk Maya 및 Mental Ray로 표준 스테이지 설정](setting-up-stage-with-ad-mr.md)
-   + [3D 사이트 구성 요소 작업](using-the-3d-sites-component.md)
-   + [Autodesk Maya와 AEM 3D 통합](integrate-maya-with-3d.md)
-   + [IBL 단계 작업 정보](working-with-ibl-stages.md)
-   + [Autodesk 3ds Max와 AEM 3D 통합](integrating-aem-3d-with-autodesk-3ds-max.md)
-   + [Autodesk Maya 및 Mental Ray로 IBL 스테이지 설정](setting-up-an-ibl-stage-with-autodesk-maya-and-mental-ray.md)
