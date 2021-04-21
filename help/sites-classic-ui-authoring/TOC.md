@@ -6,13 +6,12 @@ audience: end-user
 user-guide-title: AEM 6.4 클래식 UI 작성 사용 안내서
 breadcrumb-title: 클래식 UI 작성 안내서
 user-guide-description: 이 안내서에서는 클래식 사용자 인터페이스에서 AEM의 작성 개념을 다룹니다.
-feature-set: Experience Manager Sites
-feature: Authoring
+feature: 작성
 role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
+source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '320'
 ht-degree: 92%
 
 ---
