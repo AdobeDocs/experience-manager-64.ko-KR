@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
+exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
 translation-type: tm+mt
-source-git-commit: 5b00783e4471a6b142ab17a7bc4a647ab04aec5f
+source-git-commit: eb55489da5e390578b2ae71be424930e9bf3efd3
 workflow-type: tm+mt
-source-wordcount: '2844'
+source-wordcount: '2813'
 ht-degree: 32%
 
 ---
-
 
 # Adobe Experience Manager 6.4의 일반적인 릴리스 노트 {#general-release-notes-for-adobe-experience-manager}
 
@@ -27,7 +27,7 @@ ht-degree: 32%
 | 버전 | 6.4 |
 | 유형 | 주요 릴리스 |
 | 일반 공급 일자 | 2018년 4월 4일 |
-| 권장 업데이트 | [AEM 릴리스 및 업데이트](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)를 참조하십시오 |
+| 권장 업데이트 | [AEM 릴리스 및 업데이트](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html)를 참조하십시오 |
 
 ### 일반 {#trivia}
 
@@ -122,7 +122,7 @@ UI의 생산성과 사용 편의성을 향상시키기 위해 UI에 다양한 �
 
 **경험 조각**
 
-동일한 컨텐츠를 사용하여 조각에서 변형을 만들었지만 이제 빌딩 블록 기능 덕분에 다른 레이아웃을 사용하는 것이 더 효율적입니다. 이제 경험 조각을 Facebook 및 Pinterest로 보낼 수 있을 뿐만 아니라 Adobe Target에 오퍼로 보낼 수 있습니다.
+동일한 컨텐츠를 사용하여 조각에서 변형을 만들었지만 이제 빌딩 블록 기능 덕분에 다른 레이아웃을 사용하는 것이 더 효율적입니다. 경험 조각을 Facebook 및 Pinterest으로 보낼 수 있을 뿐만 아니라 이제 오퍼로 Adobe Target으로 보낼 수 있습니다.
 
 **컨텐츠 서비스**
 
@@ -196,7 +196,7 @@ Adobe의 Creative Cloud Asset Link를 통해 컨텐츠 제작 과정에서 크�
 
 **AEM Desktop App**
 
-AEM 데스크톱 앱이 AEM 6.4와 호환되는 버전 1.8로 업데이트되었습니다. AEM 데스크톱 앱에 대한 전체 변경 사항은 전용 [AEM 데스크톱 앱 릴리스 노트](https://docs.adobe.com/content/help/ko-KR/experience-manager-desktop-app/using/release-notes.html) 문서에 있습니다.
+AEM 데스크톱 앱이 AEM 6.4와 호환되는 버전 1.8로 업데이트되었습니다. AEM 데스크톱 앱에 대한 전체 변경 사항은 전용 [AEM 데스크톱 앱 릴리스 노트](https://docs.adobe.com/content/help/ko/experience-manager-desktop-app/using/release-notes.html) 문서에 있습니다.
 
 AEM 6.3 릴리스 이후 향상된 기능에는 백그라운드에서 계층 폴더를 업로드하는 기능, 새로운 UI로 자산 백그라운드 작업을 모니터링할 수 있는 기능, 향상된 캐싱, 네트워킹 및 로그인, 전반적인 안정성 개선 등이 포함되어 있습니다. 설명서에는 [우수 사례 가이드](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)도 포함되어 있습니다.
 
@@ -220,7 +220,7 @@ AEM 6.3 릴리스 이후 향상된 기능에는 백그라운드에서 계층 폴
 
 **Brand Portal**
 
-메타데이터, 보고, 디지털 권한, 로그인 환경 및 자산 배포를 위한 게시 성능 등 다양한 향상된 기능을 제공합니다. 새로운 개선 사항 및 기능에 대한 자세한 내용은 [AEM Assets 브랜드 포털의 새로운 기능](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/introduction/whats-new.html)을 참조하십시오.
+메타데이터, 보고, 디지털 권한, 로그인 환경 및 자산 배포를 위한 게시 성능 등 다양한 향상된 기능을 제공합니다. 새로운 개선 사항 및 기능에 대한 자세한 내용은 [AEM Assets 브랜드 포털의 새로운 기능](https://docs.adobe.com/content/help/ko/experience-manager-brand-portal/using/introduction/whats-new.html)을 참조하십시오.
 
 #### Dynamic Media Add-on {#dynamic-media-add-on}
 
@@ -247,14 +247,6 @@ Dynamic Media 구성 요소에서 스마트 자르기 작업에 대한 자세한
 파노라마 및 VR을 비롯한 새로운 뷰어를 사용하여 보다 매력적인 경험을 제공할 수 있습니다.
 
 자세한 내용은 [파노라마 이미지](/help/assets/panoramic-images.md) 설명서를 참조하십시오.
-
-**3D 자산**
-
-3D 경험 작성을 위한 Creative Cloud 응용 프로그램인 [Adobe Dimension CC](https://www.adobe.com/products/dimension.html)과의 새로운 통합.
-
-자세한 내용은 [3D 자산 작업](/help/assets/assets-3d.md) 설명서를 참조하십시오.
-
-![do-not-localize/3d](assets/do-not-localize/3d.png)
 
 ### Experience Manager Forms {#experience-manager-forms}
 
