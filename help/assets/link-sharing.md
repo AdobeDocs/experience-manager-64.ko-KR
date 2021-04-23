@@ -2,16 +2,16 @@
 title: 링크를 사용하여 에셋 공유
 description: 자산, 폴더 및 컬렉션을 URL로 공유합니다.
 contentOwner: AG
-feature: Link Sharing,Asset Management
+feature: 링크 공유,자산 관리
 role: Business Practitioner
+exl-id: bf4b0acf-4103-4da1-8666-c6d9fe80c41f
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: 340061de4dc6d99e9d960613202a869ba50ed6a5
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1024'
 ht-degree: 1%
 
 ---
-
 
 # {#asset-link-sharing} 링크를 통해 에셋 공유
 
@@ -28,26 +28,11 @@ ht-degree: 1%
 사용자와 공유할 에셋의 URL을 생성하려면 [링크 공유] 대화 상자를 사용합니다. 관리자 권한이 있거나 `/var/dam/share` 위치에서 읽기 권한이 있는 사용자는 자신과 공유된 링크를 볼 수 있습니다.
 
 1. [!DNL Assets] 사용자 인터페이스에서 링크로 공유할 자산을 선택합니다.
-1. 도구 모음에서 **[!UICONTROL 링크 공유]** ![자산 공유 아이콘](assets/assets_share.png)을 클릭합니다.
-
-   [!UICONTROL 공유]를 클릭한 후 만들 링크는 [!UICONTROL 링크 공유] 필드에 미리 표시됩니다. 링크에 대한 기본 만료 시간은 하루입니다.
+1. 도구 모음에서 **[!UICONTROL 링크 공유]** ![자산 공유 아이콘](assets/assets_share.png)을 클릭합니다. **[!UICONTROL 공유]**&#x200B;를 클릭한 후 만들 링크는 [!UICONTROL 링크 공유] 필드에 미리 표시됩니다. **[!UICONTROL 제출]**&#x200B;을 클릭해야만 링크가 아직 만들어지지 않습니다.
 
    ![링크 공유 대화 상자](assets/chlimage_1-542.png)
 
    *그림:링크로 자산을 공유하는 대화 상자.*
-
-   >[!NOTE]
-   >
-   >[!DNL Experience Manager] 작성자 배포의 링크를 외부 엔티티에 공유하려면 `GET` 요청에만 다음 URL(링크 공유에 사용되는 URL)만 표시해야 합니다. 보안상의 이유로 다른 URL을 차단합니다.
-   >
-   >* `http://[aem_server]:[port]/linkshare.html`
-   >* `http://[aem_server]:[port]/linksharepreview.html`
-   >* `http://[aem_server]:[port]/linkexpired.html`
-
-
-1. [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;에 액세스합니다.
-
-1. **[!UICONTROL 일 CQ 링크 외부라이저]** 구성을 열고 `local`, `author` 및 `publish`에 대해 언급된 값을 포함하는 **[!UICONTROL 도메인]** 필드에서 다음 속성을 수정합니다. `local` 및 `author` 속성에 대해 로컬 및 작성자 인스턴스의 URL을 각각 제공합니다. 단일 [!DNL Experience Manager] 작성자 인스턴스를 실행하는 경우 `local` 및 `author` 속성 모두 동일한 값을 갖습니다. 게시 인스턴스의 경우 [!DNL Experience Manager] 게시 인스턴스의 URL을 제공합니다.
 
 1. **[!UICONTROL 링크 공유]** 대화 상자의 전자 메일 주소 상자에 링크를 공유할 사용자의 전자 메일 ID를 입력합니다. 하나 이상의 사용자를 추가할 수 있습니다.
 
@@ -62,7 +47,7 @@ ht-degree: 1%
 1. **[!UICONTROL 제목]** 상자에 공유할 자산의 제목을 입력합니다.
 1. **[!UICONTROL 메시지]** 상자에 선택적 메시지를 입력합니다.
 
-1. **[!UICONTROL 만료]** 필드에서 링크가 작동하지 않을 만료 날짜 및 시간을 지정합니다. 기본적으로 만료 날짜는 링크를 공유하는 날짜로부터 1주일 동안 설정됩니다.
+1. **[!UICONTROL 만료]** 필드에서 링크가 작동하지 않을 만료 날짜 및 시간을 지정합니다. 링크에 대한 기본 만료 시간은 하루입니다.
 
    ![공유 링크의 만료 날짜 설정](assets/chlimage_1-544.png)
 
@@ -70,11 +55,7 @@ ht-degree: 1%
 
 1. **[!UICONTROL 공유]**&#x200B;를 클릭합니다. 링크가 이메일을 통해 사용자와 공유되고 있음을 확인하는 메시지가 나타납니다.
 
-1. 공유 자산을 보려면 사용자에게 전송된 이메일의 링크를 클릭합니다. 공유 에셋이 [!UICONTROL Adobe Marketing Cloud] 페이지에 표시됩니다.
-
-   ![Adobe Marketing Cloud에서 공유 에셋 사용 가능](assets/chlimage_1-545.png)
-
-1. 자산의 미리 보기를 생성하려면 공유 자산을 클릭합니다. 미리 보기를 닫고 **[!UICONTROL Marketing Cloud]** 페이지로 돌아가려면 도구 모음에서 **[!UICONTROL 뒤로]**&#x200B;를 클릭합니다. 폴더를 공유한 경우 **[!UICONTROL 상위 폴더]**&#x200B;를 클릭하여 상위 폴더로 돌아갑니다.
+1. 공유 자산을 보려면 사용자에게 전송된 이메일의 링크를 클릭합니다. 자산의 미리 보기를 생성하려면 공유 자산을 클릭합니다. 미리 보기를 닫으려면 **[!UICONTROL 뒤로]**&#x200B;를 클릭합니다. 폴더를 공유한 경우 **[!UICONTROL 상위 폴더]**&#x200B;를 클릭하여 상위 폴더로 돌아갑니다.
 
    ![chlimage_1-546](assets/chlimage_1-546.png)
 
@@ -103,7 +84,7 @@ ht-degree: 1%
 
    ![chlimage_1-548](assets/chlimage_1-548.png)
 
-1. **[!UICONTROL 저장]**&#x200B;을 클릭/탭합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 ## 최대 데이터 크기 {#configure-maximum-data-size} 구성
 
@@ -124,3 +105,10 @@ ht-degree: 1%
 * 공유 에셋에 대한 링크가 있는 이메일을 보낼 수 없거나 다른 사용자가 전자 메일을 받을 수 없는 경우 [!DNL Experience Manager] 관리자에게 문의하십시오. [이메일 서비스](#configure-day-cq-mail-service)가 구성되어 있는지 확인하십시오.
 * 링크 공유 기능을 사용하여 자산을 공유할 수 없는 경우 적절한 권한이 있는지 확인하십시오. [자산 공유](#share-assets)를 참조하십시오.
 * 공유 에셋이 다른 위치로 이동되면 해당 링크가 작동하지 않습니다. 링크를 다시 만들고 사용자와 다시 공유합니다.
+
+* [!DNL Experience Manager] 작성자 배포의 링크를 외부 엔티티에 공유하려면 `GET` 요청에만 링크 공유에 사용되는 다음 URL만 표시하십시오. 보안상의 이유로 다른 URL을 차단합니다.
+
+   * `http://[aem_server]:[port]/linkshare.html`
+   * `http://[aem_server]:[port]/linksharepreview.html`
+   * `http://[aem_server]:[port]/linkexpired.html`
+   [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;에 액세스합니다. **[!UICONTROL 일 CQ 링크 외부라이저]** 구성을 열고 `local`, `author` 및 `publish`에 대해 언급된 값을 포함하는 **[!UICONTROL 도메인]** 필드에서 다음 속성을 수정합니다. `local` 및 `author` 속성에 대해 로컬 및 작성자 인스턴스의 URL을 각각 제공합니다. 단일 [!DNL Experience Manager] 작성자 인스턴스를 실행하는 경우 `local` 및 `author` 속성에 동일한 값을 사용합니다. 게시 인스턴스의 경우 [!DNL Experience Manager] 게시 인스턴스의 URL을 제공합니다.
