@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: ba73e267-598d-4c70-a1a8-71bcfcfbf9e5
+exl-id: 3a052270-b3ea-4d17-915c-be2b51cdc482
 translation-type: tm+mt
-source-git-commit: 1e55d049ad77aeed2fac6275ea2744c2b6551e43
+source-git-commit: 3ee650d0810a03878b4b0a58708ea3600fa28ff2
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 0%
 
 ---
-
 
 # 폐쇄된 사용자 그룹 만들기{#creating-a-closed-user-group}
 
@@ -84,7 +84,7 @@ ht-degree: 0%
 
    >[메모!]
    >
-   > 권한 탭의 CUG는 Blueprint에서 Live Copy로 롤백할 수 없습니다. Live Copy를 구성할 때 이 사항에 대해 계획하십시오.
+   > 권한 탭의 CUG는 Blueprint에서 Live Copy로 롤아웃할 수 없습니다. Live Copy를 구성할 때 이 사항에 대해 계획하십시오.
    >
    > 자세한 내용은 [이 페이지](closed-user-groups.md#aem-livecopy)를 참조하십시오.
 
@@ -143,4 +143,3 @@ CUG에 대해 dispatcher.any 파일](https://helpx.adobe.com/experience-manager/
    ```
 
 1. [/allowAuthorized](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#caching-when-authentication-is-used)을 `0`로 설정합니다.
-
