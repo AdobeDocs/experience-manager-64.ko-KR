@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
+exl-id: 71dfaea7-2fae-4feb-bb1d-ad0da573f910
 translation-type: tm+mt
-source-git-commit: 7dc90299b7a0e5166c30702323f1678353fe39b3
+source-git-commit: 3ee650d0810a03878b4b0a58708ea3600fa28ff2
 workflow-type: tm+mt
-source-wordcount: '6889'
+source-wordcount: '6884'
 ht-degree: 0%
 
 ---
-
 
 # AEM{#closed-user-groups-in-aem}에서 닫힌 사용자 그룹
 
@@ -156,7 +156,7 @@ Apache Sling 인증 요구 사항은 페이지 또는 노드 계층 구조를 �
 
 이 문서의 대상은 내부 `LoginPathProvider` 인터페이스에 표시되는 로그인 경로의 평가입니다. AEM 6.3 이후 제공되는 구현은 다음과 같이 작동합니다.
 
-* 로그인 경로 등록은 만료된 암호 구분과 리디렉션 이유로 정기적인 로그인이 필요한 경우에 따라 다릅니다
+* 로그인 경로 등록은 만료된 암호 구분과 리디렉션 이유로 정기적인 로그인 필요 여부에 따라 다릅니다
 * 정기적으로 로그인하는 경우 다음 순서로 로그인 경로를 얻을 수 있는지 테스트합니다.
 
    * 새 `com.adobe.granite.auth.requirement.impl.RequirementService`에 의해 구현된 `LoginPathProvider`에서
@@ -771,7 +771,7 @@ LiveCopy와 함께 CUG를 구성하는 작업은 다음과 같이 추가 노드 
 
 이 두 요소는 모두 `cq:Page` 아래에 만들어집니다. 현재 디자인을 사용하는 경우 MSM은 `cq:PageContent`(`jcr:content`) 노드 아래에 있는 노드 및 속성만 처리합니다.
 
-따라서 CUG 그룹을 블루프린트에서 Live Copy로 롤백할 수 없습니다. Live Copy를 설정할 때 이에 맞게 계획하십시오.
+따라서 Blueprint에서 CUG 그룹을 Live Copy로 롤아웃할 수 없습니다. Live Copy를 구성할 때 이 사항에 대해 계획하십시오.
 
 ## 새 CUG 구현의 변경 사항 {#changes-with-the-new-cug-implementation}
 
@@ -882,4 +882,3 @@ Adobe은 새 CUG 구현으로 마이그레이션하는 도구를 제공합니다
 >[!NOTE]
 >
 >문제가 발생하는 경우 마이그레이션 도구의 출력을 얻기 위해 `com.day.cq.auth.impl.cug`에서 **DEBUG** 수준으로 특정 로거를 설정할 수 있습니다. 이 방법에 대한 자세한 내용은 [로깅](/help/sites-deploying/configure-logging.md)을 참조하십시오.
-
