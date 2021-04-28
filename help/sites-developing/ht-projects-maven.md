@@ -1,18 +1,18 @@
 ---
 title: Apache Maven을 사용하여 AEM 프로젝트를 작성하는 방법
 description: 이 문서에서는 Apache Maven을 기반으로 AEM 프로젝트를 설정하는 방법에 대해 설명합니다.
+exl-id: 6ae0e387-468b-4cea-9e3f-0816d67b7621
 translation-type: tm+mt
-source-git-commit: 5bc6f63922f7f63d60f0048b167a08e4190a8f92
+source-git-commit: 88cef11d2407d2f05027b38b4eb9fef6493ec055
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 22%
 
 ---
 
-
 # Apache Maven을 사용하여 AEM 프로젝트를 작성하는 방법 {#how-to-build-aem-projects-using-apache-maven}
 
-AEM 6.5는 온-프레미스 및 AMS 구현 모두에 대해 최신 AEM Project Lianype에서 구현되는 패키지 관리 및 프로젝트 구조에 대한 최신 모범 사례를 준수합니다.
+AEM 6.4는 온-프레미스 및 AMS 구현 모두에 대해 최신 AEM Project Lianype에서 구현되는 패키지 관리 및 프로젝트 구조에 대한 최신 모범 사례를 준수합니다.
 
 >[!TIP]
 >
