@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: 104d1c64-b9b3-40f5-8f9b-fe92d9daaa1f
+exl-id: 646146b1-55bf-4d13-ba3d-2e9bdfd8d8af
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: c408d1072722fe4419e351b4f8bf257cf2e5a8a2
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '646'
 ht-degree: 3%
 
 ---
-
 
 # 숨기기 조건 사용{#using-hide-conditions}
 
@@ -58,7 +58,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 ## 예 {#example}
 
-숨기기 조건의 예제는 AEM 및 [핵심 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)에서 찾을 수 있습니다. 예를 들어 [목록 핵심 구성 요소](https://helpx.adobe.com/experience-manager/core-components/using/list.html)를 고려하십시오.
+숨기기 조건의 예제는 AEM 및 [핵심 구성 요소](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html)에서 찾을 수 있습니다. 예를 들어 [목록 핵심 구성 요소](https://helpx.adobe.com/experience-manager/core-components/using/list.html)를 고려하십시오.
 
 [템플릿](/help/sites-authoring/templates.md) 작성자는 템플릿 편집기를 사용하여 페이지 작성자가 사용할 수 있는 목록 구성 요소의 옵션을 디자인 대화 상자에서 정의할 수 있습니다. 목록을 정적 목록으로 허용할지 여부, 하위 페이지 목록, 태그 있는 페이지 목록 등과 같은 옵션. 활성화 또는 비활성화할 수 있습니다.
 
@@ -72,16 +72,15 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
-1. 정책 노드는 `/conf/we-retail/settings/wcm/policies/weretail/components/content/lis`t 아래에 `disableChildren` 속성이 `true`로 설정된 상태로 만들어집니다.
-1. 숨기기 조건은 대화 상자 속성 노드 `/conf/we-retail/settings/wcm/policies/weretail/components/content/list`에 있는 `granite:hid`e 속성의 값으로 정의됩니다.
+1. 정책 노드는 `/conf/we-retail/settings/wcm/policies/weretail/components/content/list` 아래에 `disableChildren` 속성이 `true`로 설정된 상태로 만들어집니다.
+1. 숨기기 조건은 대화 상자 속성 노드 `/conf/we-retail/settings/wcm/policies/weretail/components/content/list`에 있는 `granite:hide` 속성의 값으로 정의됩니다.
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
 
-1. `disableChildren`의 값이 디자인 구성에서 가져오며 `${cdDesign.disableChildren}` 식이 `false`로 평가됩니다. 즉, 옵션이 구성 요소의 일부로 렌더링되지 않습니다.
+1. `disableChildren`의 값이 디자인 구성에서 가져오며 `${cqDesign.disableChildren}` 식이 `false`로 평가됩니다. 즉, 옵션이 구성 요소의 일부로 렌더링되지 않습니다.
 
    숨기기 표현식은 여기에서 GitHub](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40)에서 `granite:hide` 속성 [의 값으로 볼 수 있습니다.
 
 1. 목록 구성 요소를 사용할 때 **하위 페이지** 옵션이 더 이상 페이지 작성자에 대해 렌더링되지 않습니다.
 
    ![chlimage_1-221](assets/chlimage_1-221.png)
-
