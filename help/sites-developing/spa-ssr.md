@@ -9,19 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
+exl-id: 89e45231-885a-4d35-839b-2b50239503ad
 translation-type: tm+mt
-source-git-commit: 160cc2669ac19aacdce5e96d1ba1eb4bafcb6d58
+source-git-commit: cc31f2fa2f79154749776260f7621f6631e9db4a
 workflow-type: tm+mt
-source-wordcount: '1714'
+source-wordcount: '1781'
 ht-degree: 1%
 
 ---
 
-
 # SPA 및 서버측 렌더링{#spa-and-server-side-rendering}
 
 >[!NOTE]
->단일 페이지 애플리케이션(SPA) 편집기 기능을 사용하려면 [AEM 6.4 서비스 팩 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) 이상이 필요합니다.
+>단일 페이지 애플리케이션(SPA) 편집기 기능을 사용하려면 [AEM 6.4 서비스 팩 2](https://helpx.adobe.com/kr/experience-manager/6-4/release-notes/sp-release-notes.html) 이상이 필요합니다.
 >
 >SPA 편집기는 SPA 프레임워크 기반의 클라이언트측 렌더링(예: 반응 또는 Angular)이 필요한 프로젝트에 권장되는 솔루션입니다.
 
@@ -64,7 +64,9 @@ Adobe I/O Runtime에 대한 자세한 내용은
 
 >[!NOTE]
 >
->Adobe에서는 모든 AEM 환경(작성자, 게시, 단계 등)에 대해 별도의 Adobe I/O Runtime 인스턴스를 권장합니다.
+>Adobe에서는 환경당 별도의 Adobe I/O Runtime 작업 공간(스테이지, 제품, 테스트 등)을 권장합니다. 따라서 여러 환경에 배포된 단일 애플리케이션의 서로 다른 버전을 사용하는 일반적인 SDLC(Systems Development Life Cycle) 패턴을 사용할 수 있습니다. 자세한 내용은 프로젝트 Firefly 응용 프로그램용 [CI/CD](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md) 문서를 참조하십시오.
+>
+>인스턴스 유형별로 런타임 구현에 차이가 없는 한 인스턴스당 별도의 작업 영역이 필요하지 않습니다(작성자, 게시).
 
 ## 원격 콘텐츠 렌더러 구성 {#remote-content-renderer-configuration}
 
