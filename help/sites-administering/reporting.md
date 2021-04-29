@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: e74ffe97-5de8-4e9c-94b4-d7d63939d40c
+exl-id: daff8e4e-40c7-4762-8e4f-d85d50b86e5d
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 361964df6c25cbcfadb45dbf8fc10d5ab1258e6d
 workflow-type: tm+mt
-source-wordcount: '2793'
+source-wordcount: '2815'
 ht-degree: 4%
 
 ---
-
 
 # 보고 {#reporting}
 
@@ -30,6 +30,10 @@ ht-degree: 4%
 * [사용자 보고서](#user-report)
 * [워크플로우 상속 보고서](#workflow-instance-report)
 * [워크플로우 보고서](#workflow-report)
+
+>[!NOTE]
+>
+>이러한 보고서는 클래식 UI에서만 사용할 수 있습니다. 최신 UI에서 시스템 모니터링 및 보고를 보려면 [작업 대시보드를 참조하십시오.](/help/sites-administering/operations-dashboard.md)
 
 모든 보고서는 **도구** 콘솔에서 액세스할 수 있습니다. 왼쪽 창에서 **보고서**&#x200B;를 선택한 다음 오른쪽 창에서 필요한 보고서를 두 번 클릭하여 보고 구성할 수 있도록 엽니다.
 
