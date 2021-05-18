@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: cb041407-ec30-47f8-a01e-314c4835a5d9
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: 구성
+exl-id: 73f5c1a4-3d2d-4594-877e-93bd09a94e91
+source-git-commit: e22d12ee2096548e8303521b4c7dac79e7385f49
 workflow-type: tm+mt
-source-wordcount: '2726'
+source-wordcount: '2713'
 ht-degree: 0%
 
 ---
-
 
 # TarMK Cold Standby를 사용하여 AEM을 실행하는 방법{#how-to-run-aem-with-tarmk-cold-standby}
 
@@ -276,7 +275,7 @@ Cold Standby 서비스에 대해 다음 OSGi 설정을 사용할 수 있습니�
 
 * **허용되는 IP 범위(`primary.allowed-client-ip-ranges`):** - 기본 IP 범위에서 연결을 허용합니다.
 * **보안(`secure`):** SSL 암호화를 활성화합니다. 이 설정을 사용하려면 모든 인스턴스에서 활성화되어야 합니다.
-* **대기 읽기 제한 시간(`standby.readtimeout`):대기 인스턴스에서** 실행된 요청에 대한 시간 초과(밀리초)입니다. **권장 시간 초과 설정은 43200000. 일반적으로 시간 초과를 12시간 이상의 값으로 설정하는 것이 좋습니다.**
+* **대기 읽기 제한 시간(`standby.readtimeout`):대기 인스턴스에서** 실행된 요청에 대한 시간 초과(밀리초)입니다. 사용되는 기본값은 60000(1분)입니다.
 * **대기 자동 정리(`standby.autoclean`):** 동기화 주기에 스토어 크기가 증가하는 경우 정리 방법을 호출합니다.
 
 >[!NOTE]
@@ -400,4 +399,3 @@ Adobe은 시간이 지남에 따라 저장소가 과도하게 증가하는 것�
    >[!NOTE]
    >
    >공유 데이터 저장소를 사용하지 않는 경우, 가비지 수집은 먼저 기본 데이터 저장소에서 실행된 다음 대기 상태에서 실행해야 합니다.
-
