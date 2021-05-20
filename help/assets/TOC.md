@@ -5,12 +5,11 @@ solution: Experience Manager, Experience Manager Assets
 audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
-user-guide-description: 디지털 에셋 제작, 관리, 배달 및 최적화
-translation-type: tm+mt
-source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
+user-guide-description: 디지털 자산을 생성, 관리, 게재 및 최적화합니다.
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 67%
+source-wordcount: '625'
+ht-degree: 66%
 
 ---
 
@@ -124,19 +123,19 @@ ht-degree: 67%
    + [AEM에서 Creative Cloud로의 폴더 공유 우수 사례](aem-cc-folder-sharing-best-practices.md)
    + [폴더 메타데이터 스키마](folder-metadata-schema.md)
    + [스마트 태그 관리](managing-smart-tags.md)
-+ 브랜드 포털 {#brandportal}
++ Brand Portal {#brandportal}
    + [Brand Portal에서 AEM Assets 구성](configure-aem-assets-with-brand-portal.md)
    + [자산을 Brand Portal에 게시](brand-portal-publish-assets.md)
    + [컬렉션을 Brand Portal에 게시](brand-portal-publish-collection.md)
    + [폴더를 Brand Portal에 게시](brand-portal-publish-folder.md)
 + 콘텐츠 조각 {#fragments}
-   + [콘텐츠 조각을 사용한 작업](content-fragments.md)
-   + [콘텐츠 조각 관리](content-fragments-managing.md)
-   + [콘텐츠 조각 모델](content-fragments-models.md)
-   + [변형 - 조각 콘텐츠 작성](content-fragments-variations.md)
+   + [컨텐츠 조각을 사용한 작업](content-fragments.md)
+   + [컨텐츠 조각 관리](content-fragments-managing.md)
+   + [컨텐츠 조각 모델](content-fragments-models.md)
+   + [변형 - 조각 컨텐츠 작성](content-fragments-variations.md)
    + [콘텐츠 조각 관련 콘텐츠](content-fragments-assoc-content.md)
    + [메타데이터 - 조각 속성](content-fragments-metadata.md)
-   + [콘텐츠 조각 - 삭제 고려 사항](content-fragments-delete.md)
+   + [컨텐츠 조각 - 삭제 고려 사항](content-fragments-delete.md)
    + [컨텐츠 조각 - Markdown](content-fragments-markdown.md)
    + [컨텐츠 조각에 대한 번역 프로젝트 만들기](creating-translation-projects-for-content-fragments.md)
 + 자산 관리 {#managing}
