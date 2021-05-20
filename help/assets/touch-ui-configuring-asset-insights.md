@@ -2,20 +2,19 @@
 title: 자산 통찰력 구성
 description: AEM Assets에서 자산 인사이트를 구성하는 방법을 알아봅니다.
 contentOwner: AG
-feature: Asset Insights,Asset Reports
+feature: 자산 통찰력,자산 보고서
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: b0d62dd3-1868-4d73-95f7-3d6c3ff474d9
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '241'
 ht-degree: 2%
 
 ---
 
-
 # 자산 인사이트 구성 {#configuring-asset-insights}
 
-Adobe Experience Manager(AEM) 자산은 Adobe Analytics의 제3자 웹 사이트에서 사용하는 AEM 자산에 대한 사용 데이터를 가져옵니다. 자산 인사이트에서 이 데이터를 검색하고 인사이트를 생성하려면 먼저 Adobe Analytics과 통합할 기능을 구성합니다.
+Adobe Experience Manager(AEM) 자산은 Adobe Analytics의 제3자 웹 사이트에서 사용하는 AEM 자산에 대한 사용 데이터를 가져옵니다. 자산 인사이트에서 이 데이터를 검색하고 인사이트를 생성하려면 먼저 Adobe Analytics과 통합되도록 기능을 구성합니다.
 
 >[!NOTE]
 >
