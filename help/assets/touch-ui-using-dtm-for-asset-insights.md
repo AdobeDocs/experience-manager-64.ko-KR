@@ -2,16 +2,15 @@
 title: DTM을 통해 자산 인사이트 활성화
 description: Adobe DTM(다이내믹 태그 관리)을 사용하여 자산 통찰력을 활성화하는 방법을 알아봅니다.
 contentOwner: AG
-feature: Asset Insights,Asset Reports
+feature: 자산 통찰력,자산 보고서
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '682'
 ht-degree: 1%
 
 ---
-
 
 # DTM {#enabling-asset-insights-through-dtm}을(를) 통해 자산 인사이트 활성화
 
@@ -26,7 +25,7 @@ Adobe 다이내믹 태그 관리는 디지털 마케팅 툴을 활성화하는 �
 1. AEM 로고를 탭/클릭하고 **[!UICONTROL 도구 > 자산 > 인사이트 구성]**&#x200B;으로 이동합니다.
 1. [DTM Cloud Service을 사용하여 AEM 인스턴스 구성](../sites-administering/dtm.md)
 
-   API 토큰은 [https://dtm.adobe.com](https://dtm.adobe.com/)에 로그온하고 프로필 아이콘에서 **[!UICONTROL 계정 설정]**&#x200B;을 방문한 후 사용할 수 있어야 합니다. 자산 인사이트와 AEM Sites의 통합이 아직 제대로 진행되고 있으므로 자산 인사이트의 관점에서 이 단계는 필요하지 않습니다.
+   API 토큰은 [https://dtm.adobe.com](https://dtm.adobe.com/)에 로그온하고 프로필 아이콘에서 **[!UICONTROL 계정 설정]**&#x200B;을 방문한 후 사용할 수 있어야 합니다. 자산 인사이트와 AEM Sites의 통합은 여전히 진행 중이기 때문에 자산 인사이트의 관점에서 이 단계가 필요하지 않습니다.
 
 1. [https://dtm.adobe.com](https://dtm.adobe.com/)에 로그온하고 적절한 방법으로 회사를 선택합니다.
 1. 기존 웹 속성 만들기/열기
