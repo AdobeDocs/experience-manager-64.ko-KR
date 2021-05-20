@@ -3,11 +3,10 @@ title: AEM Assets을 사용하여 디지털 에셋 관리
 description: AEM Assets의 터치에 적합한 사용자 인터페이스를 사용하여 수행할 수 있는 다양한 에셋 관리 및 편집 작업에 대해 알아봅니다
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Search,Renditions,Collaboration
+feature: 자산 관리,검색,표현물,공동 작업
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-translation-type: tm+mt
-source-git-commit: fd79ac0694d5b7af0422c546cc4a94fdf2326d37
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '10083'
 ht-degree: 1%
@@ -368,7 +367,7 @@ PDF 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 �
 
 1. **[!UICONTROL 태그]** 필드에서 하나 이상의 태그를 선택합니다. 사용자 지정 태그를 추가하려면 상자에 태그 이름을 입력하고 **[!UICONTROL Enter]**&#x200B;를 누릅니다. 새 태그가 AEM에 저장됩니다.
 
-   YouTube를 게시하려면 태그가 필요하며 YouTube에 대한 링크가 있어야 합니다(적절한 링크를 찾을 수 있는 경우).
+   게시하려면 태그가 필요하며 YouTube에 대한 링크가 있어야 합니다(적절한 링크를 찾을 수 있는 경우).
 태그를 만들려면 CRX 저장소의 `/content/cq:tags/default`에 대한 쓰기 권한이 필요합니다.
 
 1. 자산에 등급을 지정하려면 **[!UICONTROL 고급]** 탭을 누른 다음 적절한 위치에서 별을 탭하여 원하는 등급을 지정합니다.
@@ -710,7 +709,7 @@ TXT 파일을 편집하려면 Configuration Manager 내에서 **[!UICONTROL Day 
 
    ![chlimage_1-28](assets/chlimage_1-28.png)
 
-## 타임라인 {#timeline} 사용
+## 타임라인 사용 {#timeline}
 
 **[!UICONTROL 타임라인]**&#x200B;에서는 자산, 주석, 주석, 활동 로그 및 버전에 대한 활성 워크플로우 등 선택한 항목에 대한 다양한 이벤트를 볼 수 있습니다.
 
