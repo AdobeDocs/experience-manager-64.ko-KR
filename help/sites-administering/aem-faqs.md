@@ -6,14 +6,13 @@ seo-description: 이 FAQ를 사용하여 AEM의 일반적인 워크플로우 또
 uuid: af197bcc-2c61-4c64-b781-f24d83c27c82
 contentOwner: jsyal
 discoiquuid: c66b65af-443f-4fc2-b775-9f4e3c60285a
-translation-type: tm+mt
-source-git-commit: f5b45b2c8bfcf9d82ddc08b05b5fff22937fa9fd
+exl-id: 76110cf4-0fd8-4203-b256-c0818a1b64d2
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '1545'
 ht-degree: 1%
 
 ---
-
 
 # AEM FAQ{#aem-faqs}
 
