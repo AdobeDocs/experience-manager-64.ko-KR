@@ -10,15 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: 81ceb91d-039e-45f0-9b0c-b8233901dea8
 targetaudience: target-audience upgrader
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: 업그레이드
+exl-id: 791da16c-bf2c-47a9-86a4-0a601a1b017e
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 3%
 
 ---
-
 
 # AEM 6.4로 업그레이드{#upgrading-to-aem}
 
@@ -90,4 +89,3 @@ AEM 업그레이드는 여러 단계로 여러 달에 걸쳐 진행되는 프로
 마지막으로 6.4 개발 주기 동안 지속적인 업그레이드에 도입된 기능([지속 가능한 업그레이드](/help/sites-deploying/sustainable-upgrades.md) 참조)을 사용하면 향후 업그레이드를 보다 효율적이고 매끄럽게 수행할 수 있도록 모범 사례를 준수할 수 있습니다.
 
 ![6_4_upgrade_overviewflowflowchart-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
-
