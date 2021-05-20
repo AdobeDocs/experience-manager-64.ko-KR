@@ -2,16 +2,15 @@
 title: 자산 인사이트를 위한 데모 패키지 사용
 description: 데모 패키지를 사용하여 Adobe 자산 인사이트를 통해 웹 페이지에서 데이터를 캡처하고 인사이트를 생성할 수 있습니다.
 contentOwner: AG
-feature: Asset Insights,Asset Reports
+feature: 자산 통찰력,자산 보고서
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: c6d321f5-4c48-47f2-bff1-c4da988c0e84
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '169'
 ht-degree: 2%
 
 ---
-
 
 # 자산 인사이트 {#using-demo-package-for-asset-insights}에 대한 데모 패키지 사용
 
@@ -22,11 +21,11 @@ ht-degree: 2%
 1. [자산 인사이트 구성](touch-ui-configuring-asset-insights.md)의 지침에 따라 자산 인사이트를 구성합니다.
 1. 아래에서 샘플 AEM Assets 패키지를 다운로드하고 CRXDE 패키지 관리자에서 패키지를 설치합니다.
 
-   [파일 가져오기](assets/insightsdemo.zip)
+[파일 가져오기](assets/insightsdemo.zip)
 
 1. 아래에서 샘플 웹 페이지가 포함된 ZIP 파일을 다운로드하여 로컬 파일 시스템에 추출합니다.
 
-   [파일 가져오기](assets/demosite.zip)
+[파일 가져오기](assets/demosite.zip)
 
 1. 웹 페이지를 클릭하여 웹 브라우저에서 엽니다.
 
