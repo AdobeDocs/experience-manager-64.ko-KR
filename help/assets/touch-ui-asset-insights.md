@@ -1,19 +1,18 @@
 ---
-title: 에셋 인사이트 기능을 사용하여 이미지 사용 추적
+title: 자산 인사이트 기능을 사용하여 이미지 사용 추적
 description: 자산 인사이트 기능을 사용하면 제3자 웹사이트, 마케팅 캠페인 및 Adobe의 크리에이티브 솔루션에 사용되는 이미지의 사용자 등급과 사용 통계를 추적할 수 있습니다.
 contentOwner: AG
-feature: Asset Insights,Asset Reports
+feature: 자산 통찰력,자산 보고서
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '780'
-ht-degree: 1%
+source-wordcount: '794'
+ht-degree: 0%
 
 ---
 
-
-# 자산 통찰력 {#asset-insights}
+# 자산 인사이트 {#asset-insights}
 
 자산 인사이트 기능을 사용하여 제3자 웹사이트, 마케팅 캠페인 및 Adobe의 크리에이티브 솔루션에 사용되는 자산의 사용자 등급과 사용 통계를 추적할 수 있는 방법을 알아봅니다.
 
@@ -23,7 +22,7 @@ ht-degree: 1%
 
 자산 통찰력이 웹 사이트에서 자산에 대한 사용 통계를 캡처하려면 웹 사이트 코드에 해당 자산에 대한 포함 코드를 포함해야 합니다.
 
-자산 통찰력이 자산에 대한 사용 통계를 표시하도록 하려면 먼저 [!DNL Adobe Analytics]에서 보고 데이터를 가져오기 위한 기능을 구성합니다. 자세한 내용은 [자산 인사이트 구성](touch-ui-configuring-asset-insights.md)을 참조하십시오.
+자산 통찰력이 자산에 대한 사용 통계를 표시하도록 하려면 먼저 [!DNL Adobe Analytics]에서 보고 데이터를 가져오기 위한 기능을 구성합니다. 자세한 내용은 [자산 인사이트 구성](touch-ui-configuring-asset-insights.md)을 참조하십시오. 이 기능을 사용하려면 [!DNL Adobe Analytics] 라이선스를 별도로 구입하십시오. [!DNL Managed Services]의 고객은 [!DNL Experience Manager]과(와) 함께 번들로 포함된 [!DNL Analytics] 라이센스를 받습니다. [Managed Services 제품 설명](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)을 참조하십시오.
 
 >[!NOTE]
 >
@@ -52,7 +51,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >자산 인사이트 기능은 일반적으로 정기적으로 Adobe Analytics의 솔루션 데이터를 포함하므로 솔루션 섹션에 가장 최근 데이터가 표시되지 않을 수 있습니다. 데이터가 표시되는 기간은 자산 인사이트에서 Analytics 데이터를 검색하기 위해 실행하는 가져오기 작업의 예약에 따라 다릅니다.
+   >자산 인사이트 기능은 [!DNL Adobe Analytics]의 솔루션 데이터를 주기적으로 가져옵니다. 솔루션 섹션에는 최신 데이터가 표시되지 않을 수 있습니다. 데이터가 표시되는 기간은 자산 인사이트에서 [!DNL Analytics] 데이터를 검색하기 위해 실행하는 가져오기 작업의 예약에 따라 다릅니다.
 
 1. 일정 기간 동안 자산에 대한 성능 통계를 그래픽으로 보려면 **[!UICONTROL 성과 통계]** 섹션에서 기간을 선택합니다. 클릭 및 노출 횟수를 비롯한 세부 사항은 그래프의 트렌드 라인으로 표시됩니다.
 
@@ -62,7 +61,7 @@ ht-degree: 1%
    >
    >솔루션 섹션의 데이터와 달리 성능 통계 섹션에는 최신 데이터가 표시됩니다.
 
-1. 성능 데이터를 가져오기 위해 웹 사이트에 포함하는 자산에 대한 포함 코드를 가져오려면 자산 축소판 아래의 **[!UICONTROL 포함 코드 가져오기]**&#x200B;를 탭/클릭합니다. 타사 웹 페이지에 포함 코드를 포함하는 방법에 대한 자세한 내용은 [페이지 추적기 사용 및 웹 페이지에 포함 코드 사용](touch-ui-using-page-tracker.md)을 참조하십시오.
+1. 성능 데이터를 가져오기 위해 웹 사이트에 포함하는 자산에 대한 포함 코드를 가져오려면 자산 축소판 아래의 **[!UICONTROL 포함 코드 가져오기]**&#x200B;를 클릭합니다. 타사 웹 페이지에 포함 코드를 포함하는 방법에 대한 자세한 내용은 [페이지 추적기 사용 및 웹 페이지에 포함 코드 사용](touch-ui-using-page-tracker.md)을 참조하십시오.
 
    ![chlimage_1-303](assets/chlimage_1-303.png)
 
