@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1fe58af0-3005-46fc-8717-5d32557947ed
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 8906b3ab-cb08-4b3e-8796-334e36b1e491
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 83%
 
 ---
-
 
 # 경험 구성요소{#experience-fragments}
 
@@ -84,7 +83,7 @@ ht-degree: 83%
    >
    >경험 조각의 구조를 사이트의 페이지 구조에 일치시킬 필요는 없습니다.
 
-* [폴더 수준에서 허용된 템플릿을 할당할 수 있습니다](#configure-allowed-templates-folder).
+* [폴더 수준에서 허용된 템플릿을 할당할 수 있습니다.](#configure-allowed-templates-folder)
 
    >[!NOTE]
    >
@@ -94,7 +93,7 @@ ht-degree: 83%
 
 >[!CAUTION]
 >
->다음 스크린샷은 Adobe Experience Manager을 Cloud Service으로 사용하여 WKND 사이트에서 촬영되었습니다.
+>다음 스크린샷은 Adobe Experience Manager을 Cloud Service으로 사용하여 WKND 사이트에서 찍은 것입니다.
 
 ![경험 조각용 폴더](assets/xf-folders.png)
 
@@ -108,7 +107,7 @@ ht-degree: 83%
 
 >[!NOTE]
 >
->인스턴스](#configure-allowed-templates-instance)에 대해 [허용되는 템플릿을 구성할 수도 있지만 업그레이드 시 값을 덮어쓸 수 있으므로 이 메서드는 **not**&#x200B;권장됩니다.
+>인스턴스](#configure-allowed-templates-instance)에 대해 [허용된 템플릿을 구성할 수도 있지만, 업그레이드 시 값을 덮어쓸 수 있으므로 이 방법은 **not**&#x200B;입니다.
 
 ### 폴더에 대해 허용되는 템플릿 구성 {#configure-allowed-templates-folder}
 
@@ -133,7 +132,7 @@ ht-degree: 83%
 
 >[!CAUTION]
 >
->지정한 템플릿이 업그레이드 시 덮어쓰여질 수 있으므로 이 방법으로 **[!UICONTROL 허용되는 템플릿]**&#x200B;을 변경하는 것이 좋습니다.
+>지정된 템플릿은 업그레이드 시 덮어쓸 수 있으므로 이 방법으로 **[!UICONTROL 허용된 템플릿]**&#x200B;을 변경하지 않는 것이 좋습니다.
 >
 >이 대화 상자는 정보용으만 사용하십시오.
 
@@ -185,7 +184,7 @@ ht-degree: 83%
 
 다음 예제 프로시저는 제품에 대한 티저를 작성하는 방법을 보여 줍니다.
 
-1. [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser)에서 **[!UICONTROL 카테고리 티저]**&#x200B;를 드래그하여 놓습니다.
+1. [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser)에서 **[!UICONTROL 카테고리 티저]**&#x200B;를 끌어다 놓습니다.
 
    ![xf-authoring-04](assets/xf-authoring-04.png)
 
@@ -287,17 +286,18 @@ ht-degree: 83%
 
 빌딩 블록을 구성 요소처럼, 조각의 단락 시스템으로 끌 수 있습니다.
 
-## 일반 HTML 표현물 {#the-plain-html-rendition}
+## 일반 HTML 렌디션 {#the-plain-html-rendition}
 
-URL의 `.plain.` 선택기를 사용하여 일반 HTML 변환에 액세스할 수 있습니다.
 
-이 기능은 브라우저에서 사용할 수 있지만, 주요 목적은 URL만 사용하여 다른 응용 프로그램(예: 제3자 웹 앱, 사용자 지정 모바일 구현)이 경험 조각의 컨텐츠에 직접 액세스하도록 허용하는 것입니다.
+URL에서 `.plain.` 선택기를 사용하여 일반 HTML 표현물에 액세스할 수 있습니다.
 
-일반 HTML 변환은 다음과 같은 경로에 프로토콜, 호스트 및 컨텍스트 경로를 추가합니다.
+브라우저에서 사용할 수 있지만 기본 목적은 다른 애플리케이션(예: 타사 웹 앱, 사용자 지정 모바일 구현)이 URL만 사용하여 경험 조각의 컨텐츠에 직접 액세스할 수 있도록 하는 것입니다.
 
-* 의 유형:`src`, `href` 또는 `action`
+일반 HTML 표현물은 다음과 같은 경로에 프로토콜, 호스트 및 컨텍스트 경로를 추가합니다.
 
-* 다음으로 끝남:`-src` 또는 `-href`
+* 유형:`src`, `href` 또는 `action`
+
+* 또는 다음으로 끝남:`-src` 또는 `-href`
 
 예:
 
@@ -305,7 +305,7 @@ URL의 `.plain.` 선택기를 사용하여 일반 HTML 변환에 액세스할 �
 
 >[!NOTE]
 >
->링크는 항상 게시 인스턴스를 참조합니다. 이러한 링크는 제3자가 소비하기 위한 것이므로 작성자가 아니라 게시 인스턴스에서 항상 링크가 호출됩니다.
+>링크는 항상 게시 인스턴스를 참조합니다. 타사에서 사용하기 위한 링크이므로 작성자가 아닌 게시 인스턴스에서 항상 링크가 호출됩니다.
 
 ![xf-authoring-17](assets/xf-authoring-17.png)
 
@@ -313,5 +313,4 @@ URL의 `.plain.` 선택기를 사용하여 일반 HTML 변환에 액세스할 �
 
 기본적으로 경험 조각은 HTML 형식으로 제공됩니다. 이는 AEM과 타사 채널에서 모두 동일하게 사용할 수 있습니다.
 
-Adobe Target으로 내보내기 위해 HTML이 사용됩니다. 자세한 내용은 [경험 조각과 Target 통합](/help/sites-administering/experience-fragments-target.md)을 참조하십시오.
-
+Adobe Target으로 내보내기의 경우 HTML이 사용됩니다. 자세한 내용은 [경험 조각과 Target 통합](/help/sites-administering/experience-fragments-target.md)을 참조하십시오.
