@@ -5,14 +5,13 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 content-type: reference
-translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+exl-id: 7cb3d58c-0d78-4414-9b66-0a10e52d0906
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1683'
 ht-degree: 98%
 
 ---
-
 
 # 비디오{#video}
 
@@ -179,11 +178,10 @@ Dynamic Media Classic 클라우드 구성에서 선택한 Dynamic Media Classic 
 1. 기본 비디오 구성 요소의 디자인 대화 상자를 열고 **[!UICONTROL 프로필]** 탭으로 변경합니다. 그런 다음 곧바로 사용할 수 있는 프로필을 삭제하고 새로운 Dynamic Media Classic 비디오 프로필을 추가합니다. 렌더링 시, 디자인 대화 상자의 프로필 목록 순서대로 비디오 소스 요소의 순서가 정의됩니다.
 1. HTML5를 지원하지 않는 브라우저의 경우 비디오 구성 요소를 사용하여 Flash 폴백을 구성할 수 있습니다. 비디오 구성 요소의 디자인 대화 상자를 열고 **[!UICONTROL Flash]** 탭으로 변경합니다. Flash Player 설정을 구성하고 Flash Player에 대한 폴백 프로필을 지정합니다.
 
-#### 확인 목록  {#checklist}
+#### 확인 목록 {#checklist}
 
 1. Dynamic Media Classic(Scene7) 클라우드 구성을 만듭니다. 비디오 인코딩 사전 설정이 지정되어 있고 Importer가 실행 중인지 확인합니다.
 1. 클라우드 구성에서 선택한 각 비디오 인코딩 사전 설정에 대해 Dynamic Media Classic 비디오 프로필을 만듭니다.
 1. 비디오 프로필을 활성화해야 합니다.
 1. 페이지에서 기본 비디오 구성 요소의 디자인을 구성합니다.
 1. 디자인 변경을 수행한 후 디자인을 활성화합니다.
-
