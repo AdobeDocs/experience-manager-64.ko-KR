@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: e30e5a21-ac86-4653-bd1f-7351852db3f3
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 41727155-2a67-44b6-b925-22001891a348
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2289'
 ht-degree: 98%
 
 ---
-
 
 # 캠페인 설정{#setting-up-your-campaign}
 
@@ -38,15 +37,15 @@ ht-degree: 98%
 * 뉴스레터를 만드는 경우:
 
    1. [뉴스레터 경험을 만듭니다](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletterexperience).
-   1. [뉴스레터에 컨텐츠를 추가합니다](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters).
-   1. [뉴스레터를 개인의 필요에 맞게 만듭니다](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters).
+   1. [뉴스레터에 컨텐츠를 추가합니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
+   1. [뉴스레터를 개인의 필요에 맞게 만듭니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
    1. [눈길을 끄는 뉴스레터 랜딩 페이지를 만듭니다](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
    1. 가입자나 리드에게 [뉴스레터를 보냅니다](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters).
 
 * Adobe Target(이전 Test&amp;Target) 오퍼를 생성하는 경우 다음을 수행하십시오.
 
    1. [Adobe Target 오퍼 경험을 만듭니다](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
-   1. [Adobe Target과 통합합니다](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget).
+   1. [Adobe Target과 통합합니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
 
 >[!NOTE]
 >
@@ -112,7 +111,7 @@ ht-degree: 98%
 새 경험을 만드는 절차는 경험 유형에 좌우됩니다.
 
 * [티저 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaser)
-* [뉴스레터 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletter)
+* [Newsletter 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletter)
 * [Adobe Target 오퍼 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetoffer)
 
 >[!NOTE]
@@ -132,14 +131,14 @@ ht-degree: 98%
 
 * [뉴스레터](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters):
 
-   * [뉴스레터에 컨텐츠를 추가합니다](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters).
+   * [뉴스레터에 컨텐츠를 추가합니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
    * [뉴스레터를 개인의 필요에 맞게 만듭니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
    * 가입자나 리드에게 [뉴스레터를 보냅니다](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters).
    * [눈길을 끄는 뉴스레터 랜딩 페이지를 만듭니다](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
 
 * [Adobe Target 오퍼](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#testtargetoffers):
 
-   * [Adobe Target과 통합합니다](/help/sites-administering/target.md).
+   * [Adobe Target과 통합합니다.](/help/sites-administering/target.md)
 
 ### 새로운 터치포인트 추가 {#adding-a-new-touchpoint}
 
@@ -187,7 +186,7 @@ AEM MCM에서는 리드를 직접 입력하거나 메일링 목록과 같이 쉼
 
    ![screen_shot_2012-02-21at115045am](assets/screen_shot_2012-02-21at115045am.png)
 
-1. 주소 정보를 적절히 입력합니다. **저장**&#x200B;을 클릭하여 리드를 저장합니다. 리드를 더 추가해야 하는 경우 저장 및 새로 만들기를 클릭합니다**.
+1. 주소 정보를 적절히 입력합니다. **저장**&#x200B;을 클릭하여 리드를 저장합니다. 리드를 더 추가하려면** 저장하고 새로 만들기** 클릭합니다.
 
    리드 창에 새 리드가 나타납니다. 항목을 클릭하면 입력된 모든 정보가 오른쪽 창에 표시됩니다. 리드를 만든 후 목록에 추가할 수 있습니다.
 
@@ -232,7 +231,7 @@ AEM MCM에서는 리드를 직접 입력하거나 메일링 목록과 같이 쉼
    >
    >CSV 목록의 첫 번째 행은 사전 정의된 레이블로 예제와 동일하게 작성되어야 합니다.
    >
-   >`email,givenName,familyName` - 예를  `givenname`들어 이렇게 쓰여진 경우 시스템은 이를 인식하지 못합니다.
+   >`email,givenName,familyName` - 예를  `givenname`들어 로 작성하면 시스템에서 인식하지 못합니다.
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 
@@ -256,7 +255,7 @@ AEM MCM에서는 리드를 직접 입력하거나 메일링 목록과 같이 쉼
 
    ![screen_shot_2012-02-21at123835pm](assets/screen_shot_2012-02-21at123835pm.png)
 
-1. **도구** 메뉴에서 **목록에 추가...** **목록에 추가 ** 창이 열립니다.
+1. **도구** 메뉴에서 **목록에 추가...** **목록에 추가 **창이 열립니다.
 
    ![screen_shot_2012-02-21at124019pm](assets/screen_shot_2012-02-21at124019pm.png)
 
@@ -400,4 +399,3 @@ MCM에서 기존 리드를 삭제하려면 리드 옆의 확인란을 선택하�
    ![screen_shot_2012-02-21at10828pm](assets/screen_shot_2012-02-21at10828pm.png)
 
 1. **닫기**&#x200B;를 클릭하여 MCM으로 돌아갑니다.
-
