@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: a727c57c-87a9-46c2-8d9b-1348f1ed8ac4
-translation-type: tm+mt
-source-git-commit: 1bbcf870170a5bfae68861614fe1a0a83d86ff61
+exl-id: 0182155a-0156-458c-b89b-35ab3e27819e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2307'
 ht-degree: 98%
 
 ---
-
 
 # 페이지 생성 및 구성{#creating-and-organizing-pages}
 
@@ -111,7 +110,7 @@ ht-degree: 98%
 >
 >일부 브라우저(예: 이전 버전의 IE)는 특정 길이까지만 URL을 허용하므로 기술적인 이유로 페이지 이름을 짧게 유지하는 경우도 있습니다.
 
-새 페이지를 만들 때 AEM은 AEM 및 JCR에서 지정한 규칙](/help/sites-developing/naming-conventions.md)에 따라 페이지 이름을 확인합니다.[
+새 페이지를 생성할 때 AEM은 [AEM 및 JCR에서 지정한 규칙](/help/sites-developing/naming-conventions.md)에 따라 페이지 이름을 확인합니다.
 
 허용되는 최소 문자는 다음과 같습니다.
 
@@ -134,7 +133,7 @@ ht-degree: 98%
 | 제목 | 파생되는 이름 |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&amp;ast;jc+ | sc---c-.html |
+| SC%&amp;&amp;ast;c+ | sc---c-.html |
 
 #### 이름 {#name}
 
@@ -423,4 +422,3 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
    ![chlimage_1-14](assets/chlimage_1-14.png)
 
 1. 폴더를 만들려면 **만들기**&#x200B;를 선택합니다.
-
