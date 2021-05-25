@@ -2,15 +2,14 @@
 title: AEM 6.4 관리 사용 안내서
 seo-title: AEM 6.4 관리 사용 안내서
 description: '이 안내서에서는 AEM 프로젝트를 성공적으로 관리하는 방법을 다룹니다. '
-seo-description: 'AEM 프로젝트를 성공적으로 관리하는 방법을 다룹니다. '
-translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+seo-description: AEM 프로젝트를 성공적으로 관리하는 방법을 다룹니다.
+exl-id: 4fa34d1f-c41e-4b9b-98d3-8c364a60776d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 100%
 
 ---
-
 
 # AEM 6.4 관리 사용 안내서
 
