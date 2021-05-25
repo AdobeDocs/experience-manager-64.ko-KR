@@ -3,7 +3,6 @@ title: AEM 6.4 배포 사용 안내서
 seo-title: AEM 6.4 배포 사용 안내서
 description: '이 안내서에서는 AEM 설치 및 배포와 같은 모든 AEM 배포 작업을 다룹니다. '
 seo-description: 'AEM 설치 및 배포와 같은 모든 AEM 배포 작업을 다룹니다. '
-translation-type: tm+mt
 source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '356'
