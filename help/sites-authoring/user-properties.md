@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 6afbc889-c613-40e6-8a25-1570dff32d60
-translation-type: tm+mt
-source-git-commit: cfa09d2f1a78eac609cb6df7817234559c8d26dc
+exl-id: f620e85e-8c77-41a3-a238-9b93c819909d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 96%
 
 ---
 
-
 # 계정 환경 구성{#configuring-your-account-environment}
 
 AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능을 제공합니다.
 
-[헤더](/help/sites-authoring/basic-handling.md#the-header)의 [사용자](/help/sites-authoring/user-properties.md#user-settings) 옵션과 관련 [내 환경 설정](#my-preferences) 대화 상자에서 사용자 옵션을 수정할 수 있습니다.
+[헤더](/help/sites-authoring/basic-handling.md#the-header)의 [사용자](/help/sites-authoring/user-properties.md#user-settings) 옵션과 연결된 [내 환경 설정](#my-preferences) 대화 상자를 사용하면 사용자 선택 사항을 수정할 수 있습니다.
 
 ## 사용자 설정 {#user-settings}
 
@@ -108,4 +107,3 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 * **자산 홈페이지 활성화**
 
    이 선택 사항은 시스템 관리자가 전체 조직에 대해 [자산 홈페이지] 환경을 활성화한 경우에만 사용할 수 있습니다.
-
