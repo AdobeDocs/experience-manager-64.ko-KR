@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 9554cdb3-b604-4d50-9760-89b9e7a7755f
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 97f0b0d2-7d7b-4a90-a4e5-348a306e1622
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 89%
 
 ---
-
 
 # 모바일 장치용 페이지 작성{#authoring-a-page-for-mobile-devices}
 
@@ -26,14 +25,14 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->기존 표준 사이트를 기반으로 모바일 사이트를 만들려면 표준 사이트의 Live Copy를 만드십시오. ([다른 채널에 대한 Live Copy 만들기](/help/sites-administering/msm-livecopy.md)를 참조하십시오.)
+>기존 표준 사이트를 기반으로 모바일 사이트를 만들려면 표준 사이트의 Live Copy를 만드십시오. ([다른 채널용 Live Copy 만들기](/help/sites-administering/msm-livecopy.md) 참조).
 >
->AEM 개발자는 새 장치 그룹을 만들 수 있습니다. ([장치 그룹 필터 만들기](/help/sites-developing/groupfilters.md)를 참조하십시오.)
+>AEM 개발자는 새 장치 그룹을 만들 수 있습니다. ([장치 그룹 필터 만들기](/help/sites-developing/groupfilters.md) 참조)
 
 다음 절차를 사용하여 모바일 페이지를 작성하십시오.
 
 1. 전역 탐색에서 **Sites** 콘솔을 엽니다.
-1. **We.Retail** -> **미국** -> **영어** 페이지를 엽니다.
+1. 페이지 **We.Retail** -> **미국** -> **영어**&#x200B;를 엽니다.
 
 1. **미리 보기** 모드로 전환합니다.
 1. 페이지 맨 위에서 장치 아이콘을 클릭하여 원하는 에뮬레이터로 전환합니다.
@@ -41,9 +40,8 @@ ht-degree: 89%
 
 페이지 모습은 다음과 유사합니다.
 
-![mobileipadum](assets/mobileipademu.png)
+![mobileipademu](assets/mobileipademu.png)
 
 >[!NOTE]
 >
 >모바일 장치에서 작성 인스턴스의 페이지를 요청하면 에뮬레이터가 비활성화됩니다.
-
