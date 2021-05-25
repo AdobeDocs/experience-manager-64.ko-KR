@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
-translation-type: tm+mt
-source-git-commit: cd3ba0afcce0144abbc981ec1b23005ee2ec1502
+exl-id: 04075ed1-3a52-4371-aa4e-0c3d61c878ef
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 91%
 
 ---
-
 
 # 페이지 편집 시 키보드 단축키{#keyboard-shortcuts-when-editing-pages}
 
@@ -24,7 +23,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 
 >[!NOTE]
 >
->다음 표에서 **단축키** 열의 키 조합에 대해 Ctrl 키와 Command 키가 macOS에서 모두 작동합니다.
+>다음 표에서 **단축키** 열의 키 조합의 경우, Ctrl 및 Command 키가 macOS에서 작동합니다.
 
 >[!NOTE]
 >
@@ -170,9 +169,8 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
   </tr> 
   <tr> 
    <td>편집 모드</td> 
-   <td>URL에 다음 접미어를 설정합니다.<br /> <code>?debugClientLibs=true</code><br /> 다음 접미어를 사용합니다.<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
+   <td>URL에 다음 접미사를 설정합니다.<br /> <code>?debugClientLibs=true</code><br /><br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
    <td>페이지 로드 시간 통계를 확인합니다.</td> 
   </tr> 
  </tbody> 
 </table>
-
