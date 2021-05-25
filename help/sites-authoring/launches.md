@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: a7ec190d-056e-4fc9-8f2d-f4164273674d
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: a6dca5d7-21b5-4a7f-9e83-b0f5ea77bc88
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 97%
 
 ---
-
 
 # 론치 개요{#launches}
 
@@ -101,7 +100,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->론치를 만들고 편집하려면 기본 그룹 `content-authors`과 같이 `/content/launches`에 대한 액세스 권한이 필요합니다.
+>론치를 만들고 편집하려면 기본 그룹 `content-authors`과 마찬가지로 `/content/launches`에 대한 액세스 권한이 있어야 합니다.
 >
 >문제가 발생하면 시스템 관리자에게 문의하십시오.
 
@@ -124,4 +123,3 @@ ht-degree: 97%
 1. 적절한 론치를 탭/클릭합니다. 가능한 작업 목록이 표시됩니다.
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
-
