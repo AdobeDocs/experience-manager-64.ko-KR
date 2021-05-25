@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: e75ce118-3850-4440-ad58-89569cb8c8eb
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 2d0f11ac-f24b-431e-9076-3e6099eab4ac
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1780'
 ht-degree: 99%
 
 ---
-
 
 # 페이지 컨텐츠 편집{#editing-page-content}
 
@@ -86,7 +85,7 @@ ht-degree: 99%
 
 1. 페이지에 필요한 구성 요소를 삽입합니다. 그런 다음 단락을 두 번 클릭하면 단락을 구성하고 컨텐츠를 추가할 수 있는 창이 열립니다.
 
-### 컨텐츠 파인더를 사용하여 구성 요소 삽입  {#inserting-a-component-using-the-content-finder}
+### 컨텐츠 파인더를 사용하여 구성 요소 삽입 {#inserting-a-component-using-the-content-finder}
 
 [컨텐츠 파인더](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder)에서 자산을 끌어 페이지에 새 구성 요소를 추가할 수도 있습니다. 이렇게 하면 자산이 포함된 적절한 유형의 새 구성 요소가 자동으로 만들어집니다.
 
@@ -295,7 +294,7 @@ AEM에는 사용자가 수행한 작업 내역이 순서대로 저장됩니다. 
 * 단락 추가, 편집, 삭제 및 이동
 * 단락 내용 즉석 편집
 * 페이지 내 항목 복사, 잘라내기 및 붙여넣기
-* 페이지 간 항목 복사, 잘라내기 및 붙여넣기
+* 페이지 간에 항목 복사, 잘라내기 및 붙여넣기
 * 파일 및 이미지 추가, 삭제 및 변경
 * 주석 및 스케치 추가, 삭제 및 변경
 * 스캐폴드 변경
@@ -307,4 +306,3 @@ AEM에는 사용자가 수행한 작업 내역이 순서대로 저장됩니다. 
 >[!NOTE]
 >
 >파일 및 이미지 변경을 취소하거나 재실행하려면 특수 권한이 필요합니다. 또한 파일 및 이미지 변경의 실행 취소 내역은 최소 시간 동안 유지됩니다. 이 시간이 지나면 변경을 취소하지 못할 수 있습니다. 관리자는 필요한 권한을 제공하고 기본 시간인 10시간을 변경할 수 있습니다.
-
