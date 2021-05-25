@@ -9,26 +9,25 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 071cac6d-05c5-47ab-85bc-ead6693ca1f4
-translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+exl-id: 660a7106-0c21-4073-8319-4d6d20b9bc49
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 6%
 
 ---
 
-
 # 투표 사용 {#using-voting}
 
-`Voting` 구성 요소는 커뮤니티 구성원이 QnA 구성 요소 내의 답변과 같은 특정 컨텐츠 부분을 평가할 수 있도록 하는 유용한 도구입니다. `Voting` 구성 요소를 사용하여 멤버는 위쪽 또는 아래쪽 화살표를 선택하여 의견을 표시합니다.
+`Voting` 구성 요소는 커뮤니티 구성원이 QnA 구성 요소 내의 답변과 같은 특정 컨텐츠 부분을 평가할 수 있도록 해주는 유용한 도구입니다. `Voting` 구성 요소를 사용하여 구성원이 위쪽 또는 아래쪽 화살표를 선택하여 의견을 나타냅니다.
 
 ## 페이지에 투표 추가 {#adding-voting-to-a-page}
 
-작성 모드에서 페이지에 `Voting` 구성 요소를 추가하려면 구성 요소 브라우저를 사용하여 `Communities / Voting`을(를) 찾아 페이지에 놓습니다. 예를 들어 사용자가 투표할 기능에 상대적인 위치입니다.
+작성자 모드의 페이지에 `Voting` 구성 요소를 추가하려면 구성 요소 브라우저를 사용하여 `Communities / Voting` 을 찾아 사용자가 투표할 수 있는 기능을 기준으로 하는 위치와 같이 페이지에 드래그합니다.
 
 필요한 정보를 보려면 [커뮤니티 구성 요소 기본 사항](basics.md)을 방문하십시오.
 
-[필수 클라이언트측 라이브러리](essentials-voting.md#essentials-for-client-side)가 포함될 때 `Voting` 구성 요소가 표시되는 방법입니다.
+필요한 [클라이언트 측 라이브러리](essentials-voting.md#essentials-for-client-side)가 포함되면 이 방법으로 `Voting` 구성 요소가 표시됩니다.
 
 ![chlimage_1-307](assets/chlimage_1-307.png)
 
@@ -44,11 +43,11 @@ ht-degree: 6%
 
 * **[!UICONTROL 긍정적인 응답 레이블]**
 (
-*필수*) 긍정적인 응답을 위한 내부 속성 이름입니다.
+*필수*) 양수 응답에 대한 내부 속성 이름입니다.
 
 * **[!UICONTROL 부정적인 응답 레이블]**
 (
-*필수*) 네거티브 응답에 대한 내부 속성 이름입니다.
+*필수*) 음수 응답에 대한 내부 속성 이름입니다.
 
 * **[!UICONTROL Tally 이름]**
 (
@@ -58,12 +57,12 @@ ht-degree: 6%
 
 ### 구성원 {#members}
 
-회원은 한 번만 투표할 수 있지만, 언제든지 자신의 투표권을 변경할 수 있습니다.
+회원들은 한 번만 투표할 수 있지만 언제든지 그들의 투표를 변경할 수 있습니다.
 
 ### 익명 {#anonymous}
 
-익명의 투표는 지원되지 않습니다. 사이트 방문자는 등록(회원이 되기)하고 로그인하여 한 번 투표에 참여해야 합니다.
+익명 투표는 지원되지 않습니다. 사이트 방문자는 한 번 투표에 참여하려면 등록(회원이 되기)하고 로그인해야 합니다.
 
 ## 추가 정보 {#additional-information}
 
-개발자를 위한 [투표 요점](essentials-voting.md) 페이지에서 자세한 내용을 확인할 수 있습니다.
+개발자를 위한 [Voting Essentials](essentials-voting.md) 페이지에서 자세한 내용을 확인할 수 있습니다.
