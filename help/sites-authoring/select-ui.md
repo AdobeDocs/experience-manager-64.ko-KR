@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 9cadec1b-f435-4fd8-b4bc-1a23a0cf11f3
-translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+exl-id: 415efbe0-95f5-4c9e-ac33-c4a384a8271e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 71%
 
 ---
-
 
 # UI 선택{#selecting-your-ui}
 
@@ -55,7 +54,7 @@ ht-degree: 71%
 
 ## UI 전환
 
-터치 지원 UI가 이제 표준 UI이고 [기능 패리티](../release-notes/touch-ui-features-status.md)에 사이트의 관리 및 편집이 거의 도달했지만 사용자가 [클래식 UI](/help/sites-classic-ui-authoring/classicui.md)로 전환하려고 할 때가 있을 수 있습니다. 이를 위해 몇 가지 옵션을 제공합니다.
+터치 지원 UI가 이제 표준 UI이고 [기능 패리티](../release-notes/touch-ui-features-status.md)에 거의 도달했지만 사용자가 [클래식 UI](/help/sites-classic-ui-authoring/classicui.md)로 전환하려고 할 수도 있습니다. 이를 위해 몇 가지 옵션을 제공합니다.
 
 >[!NOTE]
 >
@@ -63,9 +62,9 @@ ht-degree: 71%
 
 어느 UI를 사용해야 하는지를 결정할 수 있는 다양한 위치가 있습니다.
 
-* [인스턴스용 기본 UI 구성](#configuring-the-default-ui-for-your-instance)  - 사용자가 이 UI를 무시하고 계정 또는 현재 세션에 대해 다른 UI를 선택할 수 있지만 사용자 로그인 시 기본 UI가 표시되도록 설정됩니다.
+* [인스턴스에 대한 기본 UI 구성](#configuring-the-default-ui-for-your-instance)  - 사용자 로그인 시 기본 UI가 표시되도록 설정됩니다. 사용자는 이 설정을 무시할 수 있으며 계정 또는 현재 세션에 대해 다른 UI를 선택할 수 있습니다.
 
-* [계정에 대한 클래식 UI 작성 설정](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account)  - 사용자가 페이지를 편집할 때 UI가 기본적으로 사용되도록 설정되지만, 이 설정을 무시할 수 있으며 계정 또는 현재 세션에 대해 다른 UI를 선택할 수 있습니다.
+* [계정용 클래식 UI 작성 설정](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account)  - 사용자가 이 설정을 재정의하고 계정 또는 현재 세션에 대해 다른 UI를 선택할 수 있지만 이 설정을 사용하면 페이지를 편집할 때 기본적으로 사용할 UI가 설정됩니다.
 
 * [현재 세션에 대한 클래식 UI로 전환](#switching-to-classic-ui-for-the-current-session)  - 현재 세션에 대한 클래식 UI로 전환합니다.
 
@@ -81,7 +80,7 @@ ht-degree: 71%
 >
 >이전 버전에서 업그레이드된 인스턴스는 페이지 작성을 위해 클래식 UI를 유지합니다.
 >
->업그레이드 후 페이지 작성이 터치 지원 UI로 자동 전환되지 않지만, **WCM 작성 UI 모드 서비스**( `AuthoringUIMode` 서비스)의 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을 사용하여 구성할 수 있습니다. [편집기에 대해 UI 무시](#ui-overrides-for-the-editor)를 참조하십시오.
+>업그레이드 후에 페이지 작성이 터치 지원 UI로 자동 전환되지 않지만 **WCM 작성 UI 모드 서비스**( `AuthoringUIMode` 서비스)의 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을 사용하여 구성할 수 있습니다. [편집기에 대해 UI 무시](#ui-overrides-for-the-editor)를 참조하십시오.
 
 ## 인스턴스용 기본 UI 구성 {#configuring-the-default-ui-for-your-instance}
 
@@ -116,7 +115,7 @@ ht-degree: 71%
 
 * **URL**
 
-   클래식 UI는 `welcome.html`의 시작 화면에 대한 URL을 사용하여 액세스할 수 있습니다.예:
+   클래식 UI는 `welcome.html`에 있는 시작 화면의 URL을 사용하여 액세스할 수 있습니다.예:
 
    `http://localhost:4502/welcome.html`
 
@@ -145,11 +144,11 @@ ht-degree: 71%
 
 * 페이지 작성 시:
 
-   * URL에서 `cf#`을 사용하여 페이지에 액세스할 때는 클래식 편집기를 사용할 수 밖에 없습니다. 예:
+   * URL에 `cf#`을 사용하여 페이지에 액세스할 때에는 클래식 편집기를 사용할 수 밖에 없습니다. 예:
 
       `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-   * URL에서 `/editor.html`을 사용하거나 터치 장치를 사용할 때는 터치 지원 편집기를 사용할 수 밖에 없습니다. 예:
+   * URL에 `/editor.html` 을 사용하거나 터치 장치를 사용할 때에는 터치 지원 편집기를 사용할 수 밖에 없습니다. 예:
 
       `http://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
@@ -175,6 +174,5 @@ ht-degree: 71%
 >* 두 편집기를 동시에 열기. 예를 들어 별도의 창으로 엽니다.
 
 >
-
 
 
