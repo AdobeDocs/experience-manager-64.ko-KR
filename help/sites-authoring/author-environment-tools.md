@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 4f6a525d-d291-426f-be22-d2ef92c57156
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 5bb5f984-f741-4185-acb0-ffcf7e116875
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2142'
 ht-degree: 95%
 
 ---
-
 
 # 작성 환경 및 도구{#authoring-the-environment-and-tools}
 
@@ -73,13 +72,13 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 
    구성 요소 브라우저는 편집되는 페이지를 완전히 포함합니다.
 
-   구성 요소를 페이지에 추가하려면 필요한 구성 요소를 길게 터치하고 오른쪽으로 이동합니다. 구성 요소 브라우저가 닫히고 페이지가 다시 표시되어 구성 요소를 배치할 수 있습니다.
+   페이지에 구성 요소를 추가하려면 필요한 구성 요소를 길게 터치하고 오른쪽으로 이동합니다. 구성 요소 브라우저가 닫히고 페이지가 다시 표시되어 구성 요소를 배치할 수 있습니다.
 
    ![screen_shot_2018-03-22at141752](assets/screen_shot_2018-03-22at141752.png)
 
 * **데스크탑 장치**
 
-   구성 요소 브라우저는 창의 왼쪽에 열립니다.
+   창 왼쪽에 구성 요소 브라우저가 열립니다.
 
    구성 요소를 페이지에 추가하려면 필요한 구성 요소를 클릭하고 필요한 위치로 끕니다.
 
@@ -142,7 +141,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 * 이름
 * 경로
 * 자산 유형(예: 이미지, 원고, 문서, 비디오, 페이지, 단락, 제품)
-* 방향(세로, 가로, 정사각형) 및 스타일(색상, 단색, 회색)과 같은 자산 특성
+* 방향(세로, 가로, 정사각형) 및 스타일(컬러, 단색, 회색)과 같은 자산 특성
 
    * 특정 자산 유형에만 사용할 수 있음
 
@@ -271,9 +270,9 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 예를 들어 해당하는 경우 **페이지 정보** 옵션도 표시됩니다.
 
 * [출시 홍보](/help/sites-authoring/launches-promoting.md): 페이지가 출시되었을 경우
-* [템플릿 ](/help/sites-authoring/templates.md) 편집 페이지가  [편집 가능한 템플릿을 기반으로 하는 경우](/help/sites-authoring/templates.md#editable-and-static-templates)
+* [템플릿 ](/help/sites-authoring/templates.md) 편집: 페이지가 편집  [가능한 템플릿을 기반으로 하는 경우](/help/sites-authoring/templates.md#editable-and-static-templates)
 
-* [클래식 ](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) UI에서 열기관리자가 이  [옵션을 활성화한 경우](/help/sites-administering/enable-classic-ui-editor.md)
+* [클래식 UI로 ](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) 열기 [관리자가 이 옵션을 활성화한 경우](/help/sites-administering/enable-classic-ui-editor.md)
 
 또한 **페이지 정보**&#x200B;는 해당하는 경우 분석 및 권장 사항에 대한 액세스 권한을 제공할 수 있습니다.
 
