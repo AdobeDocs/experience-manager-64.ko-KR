@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 5a771d8c-cc56-4979-aeab-b508755a2078
-translation-type: tm+mt
-source-git-commit: 6de5e6f12f123ca2ec45358a138becc410c89e4e
+exl-id: 1b1fa592-a145-4abe-a455-df24d551b937
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 96%
 
 ---
-
 
 # 페이지 비교{#page-diff}
 
@@ -28,7 +27,7 @@ ht-degree: 96%
 
 >[!CAUTION]
 >
->AEM 6.4.3 이전 버전을 실행하는 경우 해당 기능을 사용하려면 `/content/versionhistory` 노드에 **수정/만들기/삭제** 권한이 있어야 합니다.
+>AEM 6.4.3 이전 버전을 실행 중인 경우 기능을 사용하려면 사용자에게 `/content/versionhistory` 노드에 대한 **수정/만들기/삭제** 권한이 있어야 합니다.
 >
 >이 기능에 대한 기술적인 세부 사항은 [개발 및 페이지 차이](/help/sites-developing/pagediff.md#operation-details)를 참조하십시오.
 
@@ -111,4 +110,3 @@ ht-degree: 96%
 >[!NOTE]
 >
 >페이지 차이 메커니즘 작업 및 페이지 차이에 영향을 줄 수 있는 제한 사항에 대한 자세한 내용은 이 기능의 [개발자 설명서](/help/sites-developing/pagediff.md)를 참조하십시오.
-
