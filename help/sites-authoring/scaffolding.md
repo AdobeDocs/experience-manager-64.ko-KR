@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: f5025f64-d3ce-43e8-9666-5c7c162536c7
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: 20197226-09d5-4ac6-b4cb-0793576a56cf
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 85%
 
 ---
-
 
 # 스캐폴딩{#scaffolding}
 
@@ -26,5 +25,4 @@ ht-degree: 85%
 
 >[!NOTE]
 >
->사용할 수 있는 스캐폴딩 [모드](/help/sites-authoring/author-environment-tools.md#page-modes)이 있지만 스캐폴드에서 새 페이지를 만드는 것은 물론 스캐폴드의 유지 관리 및 작성도 클래식 UI에서 수행됩니다. 자세한 내용은 클래식 UI 작성 설명서의 [스캐폴딩](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)을 참조하십시오.
-
+>사용할 수 있는 스캐폴딩 [모드](/help/sites-authoring/author-environment-tools.md#page-modes)가 있지만 스캐폴드에서 새 페이지를 작성하는 작업은 물론 스캐폴드의 유지 관리 및 작성도 클래식 UI에서 수행됩니다. 자세한 내용은 클래식 UI 작성 설명서의 [스캐폴딩](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)을 참조하십시오.
