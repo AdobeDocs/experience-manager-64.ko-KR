@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: fa331c03-5587-452d-ab96-ac2926ae0da3
-translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+exl-id: 2df7c08f-db17-4666-ba39-e81cc2e656d7
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 98%
 
 ---
-
 
 # 페이지 버전 사용{#working-with-page-versions}
 
@@ -127,7 +126,7 @@ ht-degree: 98%
 
 1. **현재와 비교**&#x200B;를 선택합니다. [페이지 차이](/help/sites-authoring/page-diff.md)가 열리고 차이점이 표시됩니다.
 
-## 타임워프  {#timewarp}
+## 타임워프 {#timewarp}
 
 타임워프는 과거의 특정 시점에 *게시된* 페이지의 상태를 시뮬레이션하도록 디자인된 기능입니다.
 
@@ -168,4 +167,4 @@ ht-degree: 98%
 
 >[!CAUTION]
 >
->타임워프는 컨텐츠 작성자에게 컨텐츠를 이해하고 제작하는 데 도움이 되는 툴로 설계되었습니다. 감사 로그나 법적 목적이 아닙니다.
+>타임워프는 작성자가 컨텐츠를 이해하고 작성하는 데 도움이 되는 도구로 설계되었습니다. 감사 로그나 법적 목적이 아닙니다.
