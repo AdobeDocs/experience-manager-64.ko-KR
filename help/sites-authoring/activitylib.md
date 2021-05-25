@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 358d32bc-be5f-4500-9637-525d35cdbeff
-translation-type: tm+mt
-source-git-commit: adbbccd09fd76418d020b9fd2b6b9c4f585b0924
+exl-id: 269eee08-5fca-4621-a56e-93db9361fa64
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2023'
 ht-degree: 96%
 
 ---
-
 
 # 활동 관리{#managing-activities}
 
@@ -99,7 +98,7 @@ ht-degree: 96%
 
 활동을 추가하려면 다음을 수행하십시오.
 
-1. 활동을 만들 브랜드를 클릭하거나 탭한 다음, **만들기**, **활동 만들기**&#x200B;를 클릭하거나 탭합니다. 편집하는 경우 [영역] 화면기본에서 활동을 선택하고 **활동 편집**&#x200B;을 클릭하거나 탭합니다.
+1. 활동을 만들 브랜드를 클릭하거나 탭한 다음, **만들기**, **활동 만들기**&#x200B;를 클릭하거나 탭합니다. 편집할 경우 기본 영역 화면에서 활동을 선택하고 **활동 편집**&#x200B;을 클릭하거나 탭합니다.
 1. 다음 정보를 제공한 후, **다음**&#x200B;을 클릭하거나 탭합니다.
 
    * 활동의 이름.
@@ -173,7 +172,7 @@ Adobe Target 타깃팅 엔진을 사용하는 활동이 활성화되면 게시 �
 
 1. **개인화**&#x200B;에서 **활동**&#x200B;을 클릭하거나 탭하여 **활동** 콘솔로 이동합니다.
 1. 활동을 보려는 브랜드를 클릭하거나 탭합니다.
-1. 활동을 선택하고 **속성 보기 **를 클릭하거나 탭하고 **보고서** 탭을 클릭한 다음 우승 경험을 위한 성과를 보거나 변환할 활동을 선택합니다. 성능 데이터가 표시됩니다.
+1. 활동을 선택하고 **속성 보기 **를 클릭하거나 탭하고 **보고서** 탭을 클릭한 다음, 성능을 확인하거나 우승 경험을 전환할 활동을 선택합니다. 성능 데이터가 표시됩니다.
 
    ![chlimage_1-239](assets/chlimage_1-239.png)
 
@@ -234,4 +233,3 @@ AEM이 활동을 Adobe Target과 동기화할 때 AEM은 `thirdPartyId`라는 �
 >동일한 캠페인 유형에서 동일한 이름을 사용하는 경우 기존 캠페인을 덮어쓰게 됩니다.
 >
 >동기화 중에 &quot;Request Failed. `thirdPartyId` already exists&quot;(요청이 실패했습니다. thirdPartyId가 이미 있습니다)라는 오류가 발생하는 경우, 캠페인 이름을 변경하고 다시 동기화하십시오.
-
