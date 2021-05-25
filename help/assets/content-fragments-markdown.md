@@ -10,9 +10,8 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 exl-id: 209f0e02-b883-4104-8358-01cab15e5db2
-feature: Content Fragments
+feature: 콘텐츠 조각
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
 source-wordcount: '554'
@@ -24,7 +23,7 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md)의 응용 프로그램이 필요합니다.
+>일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md)을 적용해야 합니다.
 
 [작성](content-fragments-variations.md#authoring-your-content) 시 컨텐츠 조각 편집기에서는 *Markdown* 구문을 사용하므로 컨텐츠를 쉽게 작성할 수 있습니다.
 
