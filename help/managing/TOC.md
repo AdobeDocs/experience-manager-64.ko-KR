@@ -7,7 +7,6 @@ breadcrumb-title: Managing 안내서
 user-guide-description: AEM 프로젝트를 관리하는 방법을 알아봅니다.
 feature: 배포
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
 workflow-type: tm+mt
 source-wordcount: '73'
@@ -26,9 +25,9 @@ ht-degree: 98%
    + [검사 목록 - 추가 참조](best-practices-further-reference.md)
 + 관리 - 추가 참조 {#managing-further-reference}
    + [하드웨어 크기 조정 지침](hardware-sizing-guidelines.md)
-   + [엔터프라이즈 개발 운영](enterprise-devops.md)
+   + [엔터프라이즈 DevOps](enterprise-devops.md)
    + [SEO 및 URL 관리 우수 사례](seo-and-url-management.md)
-+ 액세스 가능성 {#accessibility}
++ 접근성 {#accessibility}
    + [AEM 및 웹 접근성 지침](web-accessibility.md)
    + [WCAG 2.0에 대한 빠른 안내서](qg-wcag.md)
 + 데이터 보호 {#data-protection}
