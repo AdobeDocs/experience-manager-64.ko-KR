@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
-translation-type: tm+mt
-source-git-commit: c66c28f138618d6f36c55f8b498f7d2a23732b83
+exl-id: b0e579a4-f5bd-4a55-a003-0496224bc940
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 85%
 
 ---
-
 
 # 페이지 속성 편집{#editing-page-properties}
 
@@ -54,12 +53,12 @@ ht-degree: 85%
 
 * **브랜딩**
 
-   각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 전반에 일관된 브랜드 아이덴티티를 적용할 수 있습니다. 이 기능을 사용하려면 [핵심 구성 요소의 릴리스 2.14.0 이상에서 페이지 구성 요소를 사용해야 합니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+   각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 간에 일관된 브랜드 이미지를 적용합니다. 이 기능을 사용하려면 [코어 구성 요소 릴리스 2.14.0 이상의 페이지 구성 요소를 사용해야 합니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
 
-   * **재정의**  - 이 페이지에서 브랜드 슬러그를 정의하려면 선택합니다.
-      * 값이 **Override** 값도 설정되어 있지 않으면 모든 하위 페이지에서 값이 상속됩니다.
+   * **무시**  - 이 페이지에서 브랜드 슬러그를 정의하려면 을(를) 선택합니다.
+      * 이 값은 **Override** 값도 설정되지 않은 경우 하위 페이지에서도 상속됩니다.
    * **값**  무시 - 페이지 제목에 추가할 브랜드 슬러그의 텍스트입니다.
-      * 이 값은 &quot;Cycling Tuscany&quot;와 같은 파이프 문자 뒤에 페이지 제목에 추가됩니다. | 항상 WKND 준비&quot;
+      * 이 값은 &quot;Cycling Tuscany&quot;와 같은 파이프 문자 뒤에 페이지 제목에 추가됩니다 | 항상 WKND에 대비할 수 있음&quot;
 
 * **페이지 제목**
 
@@ -93,7 +92,7 @@ ht-degree: 85%
 
    이 페이지에 대한 별칭 URL을 입력할 수 있으므로 더 짧고 구체적인 URL을 사용할 수 있습니다.
 
-   예를 들어 별칭 URL이 웹 사이트 h `ttp://example.com,`의 경로 / `v1.0/startpage`에 대해 식별되는 페이지에 `elcome`으로 설정된 경우 h `ttp://example.com/welcome`은 h `ttp://example.com/content/v1.0/startpage`의 별칭 URL이 됩니다.
+   예를 들어 `ttp://example.com,` 웹 사이트에 대해 경로 / `v1.0/startpage`로 식별되는 페이지에 대한 별칭 URL을 `elcome`을 (를) 사용하여 설정하면, `ttp://example.com/welcome`이 `ttp://example.com/content/v1.0/startpage`의 별칭 URL이 됩니다.
 
    >[!CAUTION]
    >
@@ -131,7 +130,7 @@ ht-degree: 85%
    >
    >예를 들어 `/content/we-retail/spanish` 노드에 대해 `latin-lang`이라는 별칭을 정의하면, 이 페이지는 `/content/we-retail/latin-language`를 통해 액세스할 수 있습니다.
    >
-   >자세한 내용은 SEO 및 URL 관리 우수 사례](/help/managing/seo-and-url-management.md#localized-page-names)에서 현지화된 페이지 이름을 참조하십시오.[
+   >자세한 내용은 SEO 및 URL 관리 우수 사례](/help/managing/seo-and-url-management.md#localized-page-names)에서 현지화된 페이지 이름 을 참조하십시오[
 
 * **허용된 템플릿**
 
@@ -145,7 +144,7 @@ ht-degree: 85%
 
    >[!CAUTION]
    >
-   >**[권한](/help/sites-authoring/editing-page-properties.md#permissions)** 탭에서는 `granite:AuthenticationRequired` 믹싱이 있는 경우 CUG 구성을 편집할 수 있습니다. 더 이상 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성하는 경우 cq:cugEnabled 속성을 기반으로 경고 메시지가 **인증 요구 사항** 아래에 표시되고 이 옵션은 편집할 수 없으며 [권한](/help/sites-authoring/editing-page-properties.md#permissions)도 편집할 수 없습니다.
+   >**[권한](/help/sites-authoring/editing-page-properties.md#permissions)** 탭에서는 `granite:AuthenticationRequired` mixin의 유무에 따라 CUG 구성을 편집할 수 있습니다. 더 이상 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성하는 경우 cq:cugEnabled 속성을 기반으로 경고 메시지가 **인증 요구 사항** 아래에 표시되고, 옵션이나 [권한](/help/sites-authoring/editing-page-properties.md#permissions)은 편집할 수 없습니다.
    >
    >
    >이러한 경우, CUG 권한은 [클래식 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)에서 편집해야 합니다.
@@ -207,7 +206,7 @@ ht-degree: 85%
 
    >[!CAUTION]
    >
-   >**권한** 탭에서는 `granite:AuthenticationRequired` 믹싱이 있는 경우 CUG 구성을 편집할 수 있습니다. 더 이상 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성하는 경우 `cq:cugEnabled` 속성을 기반으로 경고 메시지가 표시되고 CGU 권한이나 [고급](/help/sites-authoring/editing-page-properties.md#advanced) 탭의 인증 요구 사항을 편집할 수 없습니다.
+   >**권한** 탭에서는 `granite:AuthenticationRequired` mixin의 유무에 따라 CUG 구성을 편집할 수 있습니다. 더 이상 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성하는 경우 `cq:cugEnabled` 속성을 기반으로 경고 메시지가 표시되고 CGU 권한이나 [고급](/help/sites-authoring/editing-page-properties.md#advanced) 탭의 인증 요구 사항을 편집할 수 없습니다.
    >
    >
    >이러한 경우, CUG 권한은 [클래식 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)에서 편집해야 합니다.
@@ -222,7 +221,7 @@ ht-degree: 85%
 
    [다중 사이트 관리](/help/sites-administering/msm.md) 내에서 [블루프린트] 페이지에 대한 속성을 정의합니다. 수정 내용이 Live Copy로 전파되는 상황을 제어합니다.
 
-### Live Copy  {#live-copy}
+### Live Copy {#live-copy}
 
 * **Livecopy**
 
@@ -347,4 +346,3 @@ ht-degree: 85%
 >[!NOTE]
 >
 >벌크 편집에 사용할 수 있는 필드를 지정하도록 페이지 구성 요소를 구성할 수 있습니다. 자세한 내용은 [페이지 속성의 벌크 편집을 위한 페이지 구성](/help/sites-developing/bulk-editing.md)을 참조하십시오.
-
