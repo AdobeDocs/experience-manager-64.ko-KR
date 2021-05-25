@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: e26bf608-c57c-4346-88fb-32a82cfa82d2
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: ca9c6fd1-7f2e-4c99-ba6e-0a064274ac24
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 71%
 
 ---
-
 
 # Target 오퍼{#target-offers}
 
@@ -28,7 +27,7 @@ ht-degree: 71%
    ![](do-not-localize/chlimage_1-11.png)
 
 1. **새로 만들기...**&#x200B;를 클릭합니다.
-1. **제목**, **이름** 및 만들 경험 유형을 지정할 수 있습니다.이 경우 Test&amp;Target 오퍼을 참조하십시오.
+1. **제목**, **이름** 및 만들 경험의 유형을 지정할 수 있습니다.이 경우 Test&amp;Target 오퍼.
 
    ![chlimage_1-139](assets/chlimage_1-139.png)
 
@@ -40,4 +39,4 @@ ht-degree: 71%
 
 ## Adobe Target과 통합 {#integrating-with-adobe-target}
 
-자세한 내용은 [Adobe](/help/sites-administering/target.md) [Target](/help/sites-administering/target.md)과 통합을 참조하십시오.
+자세한 내용은 [Adobe과 통합](/help/sites-administering/target.md) [Target](/help/sites-administering/target.md)을 참조하십시오.
