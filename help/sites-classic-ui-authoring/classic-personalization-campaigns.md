@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
-translation-type: tm+mt
-source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+exl-id: 2980ec6d-cdd4-4fbd-b4a4-5e45e4508903
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 94%
 
 ---
-
 
 # 캠페인 관리{#campaign-management}
 
@@ -40,12 +39,12 @@ ht-degree: 94%
 AEM에서 브랜드는 최상위 단위이며 
 **캠페인**.
 
-* **캠페인**
-캠페인은 개별 
+* ****
+캠페인 캠페인은 개별 
 **경험**.
 
-* **경험**
-핵심 컨텐츠는 방문자에게 제공되는 다양한 경험을 형성합니다. 
+* ****
+경험 집중 콘텐츠는 방문자에게 제공되는 다양한 경험을 형성합니다. 
 **터치포인트**. 다음과 같은 몇 가지 유형의 경험을 사용할 수 있습니다.
 
    * **Teaser**
@@ -96,4 +95,3 @@ AEM에서 브랜드는 최상위 단위이며
    다양한 위치(**캠페인**&#x200B;이라고 레이블된)에서 또는 예를 들어
 
    `http://localhost:4502/libs/mcm/content/admin.html`
-
