@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: a91fd37e-5975-4572-a4b3-c7e8993d5f88
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 6a7de639-9c87-4e7c-b431-e48c9cdc7982
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 70%
 
 ---
-
 
 # 계정 환경 구성{#configuring-your-account-environment}
 
@@ -24,8 +23,8 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 
 [계정 설정](#account-settings) 및 [사용자 환경 설정](#user-preferences)을 사용하여 다음 옵션 및 환경 설정을 정의할 수 있습니다:
 
-* **편집 도구 모음** 전역 편집 도구 모음 사용 여부를 선택합니다. 브라우저 창 상단에 표시되는 이 도구 모음은 
-**해당 페이지의 단락** 구성 요소 **와 함께 사용할 수 있는 복사**,  **잘라내기**,  **** 붙여넣기, 삭제 단추:
+* **편집 도구 모음** 전역 편집 도구 모음 사용 여부를 선택합니다. 브라우저 창 상단에 표시되는 이 도구 모음에서는 다음 작업을 수행할 수 있습니다 
+**해당 페이지의 단락 구성 요소에 사용할 복사**,  **잘라내기**,  **붙여넣기**,  **** 삭제 단추:
 
    * 필요 시 표시(기본값)
    * 항상 표시
@@ -48,7 +47,7 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 사용자 아이콘은 다음 옵션에 따라 다양한 액세스 권한을 제공합니다.
 
 * 로그아웃
-* [가장 대상](/help/sites-administering/security.md#impersonating-another-user)
+* [가장 대상 ](/help/sites-administering/security.md#impersonating-another-user)
 * [사용자 환경 설정](#user-preferences)
 * [알림 수신함](/help/sites-classic-ui-authoring/author-env-inbox.md)
 
@@ -63,4 +62,3 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 이 대화 상자에서는 다음 옵션을 제공합니다.
 
 ![chlimage_1-171](assets/chlimage_1-171.png)
-
