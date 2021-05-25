@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: projects
 content-type: reference
 discoiquuid: 1b79d373-73f4-4228-b309-79e74d191f3e
-translation-type: tm+mt
-source-git-commit: 3addef2141ebb831f8677d011d68faf88e648dc2
+exl-id: 6480a0ba-ff65-42af-a14f-ce9fdbb7945f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 91%
 
 ---
-
 
 # 작업{#working-with-tasks}
 
@@ -28,9 +27,9 @@ ht-degree: 91%
 
 **작업** 타일로 표시되는 프로젝트 내의 활성/완료 작업을 보고 프로젝트 진행 상태를 추적할 수 있습니다. 프로젝트 진행 상태는 다음 항목을 통해 판별할 수 있습니다.
 
-* **작업 타일:** 프로젝트의 전체 진행 상태가 프로젝트 세부 사항 페이지에서 사용할 수 있는 작업 타일에 설명되어 있습니다.
+* **작업 타일:** 프로젝트의 전체 진행 상태가 프로젝트 세부 사항 페이지에서 사용할 수 있는 작업 타일에 묘사됩니다.
 
-* **작업 목록:** 작업 타일을 클릭하면 작업 목록이 표시됩니다. 이 목록에는 프로젝트와 관련된 모든 작업에 대한 자세한 정보가 있습니다.
+* **작업 목록:**  작업 타일을 클릭하면 작업 목록이 표시됩니다. 이 목록에는 프로젝트와 관련된 모든 작업에 대한 자세한 정보가 있습니다.
 
 두 목록에는 모두 **작업** 타일에서 직접 생성하는 작업뿐만 아니라 워크플로우 작업도 표시합니다.
 
@@ -56,7 +55,7 @@ ht-degree: 91%
 
 #### 작업 세부 사항 {#task-details}
 
-특정 작업에 대한 자세한 내용을 보려면 작업 목록에서 작업을 탭/클릭하고 **작업 세부 사항 **을 엽니다.
+특정 작업에 대한 자세한 내용은 작업 목록에서 작업을 탭/클릭하고 **작업 세부 사항** 엽니다.
 
 ![chlimage_1-100](assets/chlimage_1-100.png)
 
