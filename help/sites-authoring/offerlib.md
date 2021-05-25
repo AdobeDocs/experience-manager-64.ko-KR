@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 889b5ffc-3652-47d8-b576-128f3cee513a
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 5c7c1cda-0e9c-454f-91c4-8e1f37a155c3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 99%
 
 ---
-
 
 # 오퍼 생성 및 관리{#creating-and-managing-offers}
 
@@ -37,7 +36,7 @@ ht-degree: 99%
 
    ![chlimage_1-306](assets/chlimage_1-306.png)
 
-1. **만들기**&#x200B;를 클릭하거나 누른 다음 **브랜드 만들기**&#x200B;를 클릭합니다.
+1. **만들기**, **브랜드 만들기**&#x200B;를 클릭하거나 탭합니다.
 1. 브랜드 템플릿을 선택하고 **다음**&#x200B;을 클릭하거나 탭합니다.
 1. 오퍼 콘솔과 활동 콘솔에 표시할 브랜드의 제목을 입력합니다. 원할 경우, 브랜드와 연결할 태그를 하나 이상 입력하거나 선택합니다.
 1. **만들기**&#x200B;를 클릭하거나 탭합니다.
@@ -110,4 +109,3 @@ ht-degree: 99%
 
 1. 오퍼 콘솔의 맨 위에서 확대경 아이콘을 클릭하거나 탭합니다. 기본적으로 검색은 오퍼로 제한됩니다.
 1. 오퍼를 검색할 키워드를 입력합니다. 결과에서 선택하십시오.
-
