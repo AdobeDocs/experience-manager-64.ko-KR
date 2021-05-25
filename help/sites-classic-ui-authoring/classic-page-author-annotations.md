@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
-translation-type: tm+mt
-source-git-commit: 363f084e086c2afd5585caa08d5b55c0e02bd4b2
+exl-id: 76e36d3b-4a8a-45ee-bb4e-28b150ec089c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 95%
 
 ---
-
 
 # 페이지 편집 시 주석{#annotations-when-editing-a-page}
 
@@ -39,7 +38,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->필요에 따라 주석이 추가, 업데이트 또는 삭제될 때 알림을 보내는 워크플로우를 개발할 수도 있습니다.
+>필요에 따라 주석이 추가, 업데이트 또는 삭제될 때 알림 메시지를 보내는 워크플로우를 개발할 수도 있습니다.
 
 ## 주석 {#annotations}
 
@@ -107,4 +106,3 @@ ht-degree: 95%
 
 * 단락을 이동하거나 복사하면 관련 주석 및 스케치도 이동하거나 복사되며, 단락을 기준으로 해당 위치가 그대로 유지됩니다.
 * 주석을 삭제하면 해당 주석에 첨부된 스케치도 모두 삭제됩니다.
-
