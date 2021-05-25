@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 0e842725-57be-4a16-b972-f5677eaad8cb
-translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+exl-id: dcd54a52-f610-4c68-8547-39562c062d84
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 96%
 
 ---
-
 
 # 대상자 관리{#managing-audiences}
 
@@ -25,7 +24,7 @@ ht-degree: 96%
 * 대상자 추가 - Adobe Target 대상 또는 ContextHub 세그먼트 중 하나.
 * 대상자 관리.
 
-ContextHub 및 Client Context에서 *세그먼트*&#x200B;이라고 하는 대상은 특정 기준에 의해 정의된 방문자 클래스로, 타깃팅된 활동을 보는 사람을 결정합니다. 활동을 타깃팅할 때 타깃팅 프로세스에서 바로 대상을 선택하거나 대상 콘솔에서 새 대상을 만들 수 있습니다.
+ContextHub와 Client Context에서 *세그먼트*&#x200B;라고 하는 대상은 특정 기준에 정의된 방문자 클래스로, 타깃팅된 활동을 보는 사용자를 결정합니다. 활동을 타깃팅할 때 타깃팅 프로세스에서 바로 대상을 선택하거나 대상 콘솔에서 새 대상을 만들 수 있습니다.
 
 대상 콘솔에서 대상은 브랜드별로 구성됩니다.
 
@@ -110,4 +109,3 @@ Adobe Target 대상자를 만들려면 다음을 수행하십시오.
 1. 탐색 콘솔에서 **개인화**&#x200B;를 클릭하거나 탭합니다. **대상자**&#x200B;를 클릭하거나 탭합니다.
 1. 편집하려는 ContextHub 또는 Client Context 세그먼트 옆에 있는 아이콘을 탭하거나 클릭하고 **편집**&#x200B;을 탭하거나 클릭합니다.
 1. 세그먼트 편집기에서 편집을 수행합니다. [Client Context](/help/sites-administering/campaign-segmentation.md) 또는 [ContextHub](/help/sites-administering/contexthub-config.md) 설명서를 참조하십시오.
-
