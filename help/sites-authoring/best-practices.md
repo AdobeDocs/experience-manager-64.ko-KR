@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
-translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+exl-id: 84db73b0-1bc3-4c39-9bc2-0840e24832b0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 78%
 
 ---
-
 
 # 우수 사례{#best-practices}
 
@@ -55,7 +54,7 @@ Dynamic Media 기능 및 Scene 7 통합을 포함한 자산에 대한 우수 사
   <tr>
    <td>동적 이미징</td> 
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">동적 이미징 우수 사례</a></td> 
-   <td><p>Dynamic Media 기능을 사용하거나 Dynamic Media과 통합하는 경우 최상의 결과를 위해 이미지를 선명하게 하는 방법 및 이미지 품질을 최적화하는 최상의 방법을 설명합니다.</p> </td> 
+   <td><p>Dynamic Media 기능을 사용하거나 Dynamic Media과 통합하는 경우, 최상의 결과를 위해 이미지를 선명하게 하는 방법 및 이미지 품질을 최적화하는 최상의 방법을 설명합니다.</p> </td> 
   </tr>
   <tr>
    <td>다언어 자산</td> 
