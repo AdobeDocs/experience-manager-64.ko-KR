@@ -4,22 +4,21 @@ description: 'Brand Portal에 자산 및 컬렉션을 게시하기 위해 Brand 
 contentOwner: VG
 feature: Brand Portal
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1650'
+source-wordcount: '1649'
 ht-degree: 82%
 
 ---
 
-
 # Brand Portal로 AEM Assets 구성 {#configure-integration-64}
 
-Adobe Experience Manager(AEM) 자산은 [!DNL Adobe I/O]을 통해 브랜드 포털로 구성되며, 이 경우 브랜드 포털 임차인의 승인을 위해 IMS 토큰을 조달합니다.
+AEM(Adobe Experience Manager) 자산은 Brand Portal 테넌트의 인증을 위해 IMS 토큰을 전달하는 [!DNL Adobe I/O]를 통해 Brand Portal으로 구성됩니다.
 
 >[!NOTE]
 >
->[!DNL Adobe I/O]을(를) 통해 브랜드 포털로 AEM Assets을 구성하는 것은 AEM 6.4.8.0 이상에서 지원됩니다.
+>AEM 6.4.8.0 이상에서 [!DNL Adobe I/O]을 통해 Brand Portal과 AEM Assets을 구성할 수 있습니다.
 >
 >이전에는 Brand Portal이 기존 OAuth 게이트웨이를 통해 클래식 UI에 구성되었으며, 이 게이트웨이는 인증을 위해 IMS 액세스 토큰을 가져오는 데 JWT 토큰 교환을 사용합니다.
 
@@ -27,12 +26,12 @@ Adobe Experience Manager(AEM) 자산은 [!DNL Adobe I/O]을 통해 브랜드 포
 >
 >***기존 고객 전용***
 >
->기존 OAuth 게이트웨이 구성을 계속 사용하는 것이 좋습니다. 기존 OAuth 게이트웨이 구성에 문제가 있는 경우 기존 구성을 삭제하고 [!DNL Adobe I/O]을 통해 새 구성을 만드십시오.
+>기존 OAuth 게이트웨이 구성을 계속 사용하는 것이 좋습니다. 기존 OAuth 게이트웨이 구성 문제가 발생하는 경우 기존 구성을 삭제하고 [!DNL Adobe I/O] 를 통해 새 구성을 만드십시오.
 
 이 도움말은 다음 두 가지 사용 사례에 대해 설명합니다.
 
-* [새 구성](#configure-new-integration-64):새 브랜드 포털 사용자이고 브랜드 포털로 AEM Assets 작성자 인스턴스를 구성하려면 에 새 구성을 만들 수 있습니다 [!DNL Adobe I/O].
-* [업그레이드 구성](#upgrade-integration-64):기존 OAuth 게이트웨이에 브랜드 포털로 구성된 AEM Assets 작성자 인스턴스를 사용하는 기존 브랜드 포털 사용자는 기존 구성을 삭제하고 새 구성을 만드는 것이 좋습니다 [!DNL Adobe I/O].
+* [새 구성](#configure-new-integration-64):새 Brand Portal 사용자이고 Brand Portal으로 AEM Assets 작성자 인스턴스를 구성하려는 경우 에 새 구성을 만들 수 있습니다  [!DNL Adobe I/O].
+* [구성 업그레이드](#upgrade-integration-64):기존 OAuth 게이트웨이에 Brand Portal으로 구성된 AEM Assets 작성자 인스턴스를 사용하는 기존 Brand Portal 사용자인 경우 기존 구성을 삭제하고 새 구성을 만드는 것이 좋습니다 [!DNL Adobe I/O].
 
 제공된 정보는 이 도움말을 읽는 사람이 다음 기술을 잘 알고 있다는 가정을 기반으로 합니다.
 
@@ -66,7 +65,7 @@ AEM을 다운로드한 후 AEM 작성자 인스턴스를 설정하는 방법은 
 
 세부 지침은 다음을 참조하십시오.
 
-* [AEM 6.4 서비스 팩 릴리스 노트](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
+* [AEM 6.4 서비스 팩 릴리스 노트](https://helpx.adobe.com/kr/experience-manager/6-4/release-notes/sp-release-notes.html)
 
 최신 AEM 패키지 또는 서비스 팩을 찾을 수 없는 경우 **지원 센터에 문의**&#x200B;하십시오.
 
@@ -75,14 +74,14 @@ AEM을 다운로드한 후 AEM 작성자 인스턴스를 설정하는 방법은 
 Brand Portal에 AEM Assets을 처음 구성하는 경우 단계를 나열된 순서로 수행합니다.
 
 1. [공개 인증서 받기](#public-certificate)
-1. [크리에이티브  [!DNL Adobe I/O] 통합](#createnewintegration)
+1. [ [!DNL Adobe I/O] 통합 만들기](#createnewintegration)
 1. [IMS 계정 구성 만들기](#create-ims-account-configuration)
 1. [클라우드 서비스 구성](#configure-the-cloud-service)
 1. [구성 테스트](#test-integration)
 
 >[!NOTE]
 >
->AEM Assets 작성자 인스턴스는 하나의 브랜드 포털 임차인으로만 구성할 수 있습니다.
+>AEM Assets 작성자 인스턴스는 하나의 Brand Portal 테넌트로 구성해야 합니다.
 
 ### IMS 구성 만들기 {#create-ims-configuration}
 
@@ -95,7 +94,7 @@ IMS 구성에는 두 단계가 포함됩니다.
 
 ### 공개 인증서 받기 {#public-certificate}
 
-공용 인증서를 사용하면 [!DNL Adobe I/O]에서 프로필을 인증할 수 있습니다.
+공개 인증서를 사용하면 [!DNL Adobe I/O]에서 프로필을 인증할 수 있습니다.
 
 1. AEM Assets 작성자 인스턴스에 로그인
 기본 URL: http:// localhost:4502/aem/start.html
@@ -119,7 +118,7 @@ IMS 구성에는 두 단계가 포함됩니다.
 
    ![인증서 만들기](assets/ims-config2.png)
 
-1. **[!UICONTROL 공개 키 다운로드]**&#x200B;를 클릭하고 *AEM-Adobe-IMS.crt* 인증서 파일을 컴퓨터에 저장합니다. 인증서 파일은 [create [!DNL Adobe I/O] integration](#createnewintegration)에 사용됩니다.
+1. **[!UICONTROL 공개 키 다운로드]**&#x200B;를 클릭하고 *AEM-Adobe-IMS.crt* 인증서 파일을 컴퓨터에 저장합니다. 인증서 파일은 [만들기 [!DNL Adobe I/O] 통합](#createnewintegration)에 사용됩니다.
 
    ![인증서 다운로드](assets/ims-config3.png)
 
@@ -127,13 +126,13 @@ IMS 구성에는 두 단계가 포함됩니다.
 
    **계정** 탭에서 Adobe IMS 계정을 만듭니다. 하지만 이를 위해서는 통합에 대한 세부 사항이 필요합니다. 우선은 이 페이지를 열어 두십시오.
 
-   새 탭을 열고 [통합 만들기 [!DNL Adobe I/O] 통합](#createnewintegration)를 클릭하여 IMS 계정 구성에 대한 통합 세부 정보를 가져옵니다.
+   새 탭을 열고 [Create [!DNL Adobe I/O] 통합](#createnewintegration)을(를) 열어 IMS 계정 구성에 대한 통합 세부 사항을 가져옵니다.
 
-### [!DNL Adobe I/O] 통합 {#createnewintegration} 만들기
+### [!DNL Adobe I/O] 통합 만들기 {#createnewintegration}
 
 [!DNL Adobe I/O] 통합은 IMS 계정 구성을 설정하는 데 필요한 API 키, 클라이언트 암호 및 페이로드(JWT)를 생성합니다.
 
-1. 브랜드 포털 테넌트의 IMS 조직에 대한 시스템 관리자 권한으로 [!DNL Adobe I/O] 콘솔에 로그인합니다.
+1. Brand Portal 테넌트의 IMS 조직에 대한 시스템 관리자 권한으로 [!DNL Adobe I/O] 콘솔에 로그인합니다.
 
    기본 URL: [https://console.adobe.io/](https://console.adobe.io/)
 
@@ -176,7 +175,7 @@ IMS 구성에는 두 단계가 포함됩니다.
 다음 절차를 수행했는지 확인하십시오.
 
 * [공개 인증서 받기](#public-certificate)
-* [크리에이티브  [!DNL Adobe I/O] 통합](#createnewintegration)
+* [ [!DNL Adobe I/O] 통합 만들기](#createnewintegration)
 
 **IMS 계정 구성을 만드는 절차:**
 
@@ -186,7 +185,7 @@ IMS 구성에는 두 단계가 포함됩니다.
 
    **[!UICONTROL 인증 서버]**&#x200B;에서 URL [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)을 입력하십시오.
 
-   [Create [!DNL Adobe I/O] integration](#createnewintegration)의 끝에 복사한 API 키, 클라이언트 암호 및 JWT 페이로드를 붙여넣습니다.
+   [Create [!DNL Adobe I/O] 통합](#createnewintegration)의 끝에서 복사한 API 키, 클라이언트 암호 및 JWT 페이로드를 붙여 넣습니다.
 
    **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
@@ -273,11 +272,11 @@ Brand Portal 클라우드 서비스 구성을 만들려면 다음 단계를 수�
    >
    >일부 자산의 복제가 실패할 수 있으므로 복제 에이전트를 비활성화하지 마십시오.
    >
-   >시간 초과 오류를 방지하도록 4개의 복제 에이전트가 모두 구성되어 있는지 확인합니다. 브랜드 포털](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout)에 동시 게시 시 문제 해결을 참조하십시오.[
+   >시간 초과 오류를 방지하기 위해 4개의 복제 에이전트가 모두 구성되었는지 확인합니다. Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout)에 동시 게시 시 문제 해결 [을 참조하십시오.
 
 Brand Portal이 AEM Assets 작성자 인스턴스로 구성되었습니다. 이제 다음을 수행할 수 있습니다.
 
-* [AEM Assets에서 Brand Portal에 자산 게시](../assets/brand-portal-publish-assets.md)
+* [AEM Assets의 자산을 Brand Portal에 게시](../assets/brand-portal-publish-assets.md)
 * [AEM Assets의 폴더를 Brand Portal에 게시](../assets/brand-portal-publish-folder.md)
 * [AEM Assets에서 Brand Portal에 컬렉션 게시](../assets/brand-portal-publish-collection.md)
 * Brand Portal 사용자가 AEM Assets에 자산을 제공하고 게시할 수 있도록 [자산 소싱](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)을 구성합니다.
@@ -337,7 +336,7 @@ Brand Portal이 AEM Assets 작성자 인스턴스로 구성되었습니다. 이�
    ![](assets/delete-mac-user.png)
 
 
-이제 [!DNL Adobe I/O]의 AEM 6.4 작성자 인스턴스에서 [구성](#configure-new-integration-64)을 만들 수 있습니다.
+이제 [AEM 6.4 작성자 인스턴스에서 [!DNL Adobe I/O]구성을 만들 수 있습니다.](#configure-new-integration-64)
 
 
 
@@ -353,8 +352,8 @@ Brand Portal이 AEM Assets 작성자 인스턴스로 구성되었습니다. 이�
    <li>Step text</li>
    -->
 
-복제가 성공하면 자산, 폴더 및 컬렉션을 브랜드 포털에 게시할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
+복제가 성공하면 자산, 폴더 및 컬렉션을 Brand Portal에 게시할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
 
 * [자산을 Brand Portal에 게시](brand-portal-publish-assets.md)
-* [브랜드 포털에 자산 및 폴더 게시](brand-portal-publish-folder.md)
+* [Brand Portal에 자산 및 폴더 게시](brand-portal-publish-folder.md)
 * [컬렉션을 Brand Portal에 게시](brand-portal-publish-collection.md)
