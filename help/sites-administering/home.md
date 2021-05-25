@@ -3,7 +3,6 @@ title: AEM 6.4 관리 사용 안내서
 seo-title: AEM 6.4 관리 사용 안내서
 description: AEM 관리
 seo-description: AEM 관리
-translation-type: tm+mt
 source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '329'
