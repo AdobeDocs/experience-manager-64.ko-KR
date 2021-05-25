@@ -9,9 +9,8 @@ topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 45e67357-4524-4d25-b5f1-21182b8e803c
 exl-id: 39ed07ec-54a6-4387-8435-e891726c411c
-feature: Content Fragments
+feature: 콘텐츠 조각
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
 source-wordcount: '706'
@@ -23,7 +22,7 @@ ht-degree: 91%
 
 >[!CAUTION]
 >
->일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](../release-notes/sp-release-notes.md)의 응용 프로그램이 필요합니다.
+>일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](../release-notes/sp-release-notes.md)을 적용해야 합니다.
 
 컨텐츠 조각 모델은 [컨텐츠 조각](content-fragments.md)에 대한 컨텐츠 구조를 정의합니다.
 
@@ -31,7 +30,7 @@ ht-degree: 91%
 
 >[!CAUTION]
 >
->**[!UICONTROL 컨텐츠 조각 모델]**&#x200B;을 활성화하지 않으면 **[!UICONTROL 만들기]** 옵션을 사용하여 새 모델을 만들 수 없습니다.
+>**[!UICONTROL 컨텐츠 조각 모델]**&#x200B;을 활성화하지 않으면 새 모델을 만드는 데 **[!UICONTROL 만들기]** 옵션을 사용할 수 없습니다.
 
 컨텐츠 조각 모델을 활성화하려면 필요한 단계가 있습니다.
 
@@ -96,7 +95,7 @@ ht-degree: 91%
 
    >[!NOTE]
    >
-   >필드가 **Required**&#x200B;이면 왼쪽 창에 표시된 **레이블**&#x200B;이 asterix(**&amp;ast;**)로 표시됩니다.
+   >필드가 **필수**&#x200B;이면 왼쪽 창에 표시된 **레이블**&#x200B;이 별표(**&amp;ast;**)로 표시됩니다.
 
    ![cfm-6420-12](assets/cfm-6420-12.png)
 
