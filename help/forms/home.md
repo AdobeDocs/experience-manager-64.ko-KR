@@ -1,20 +1,19 @@
 ---
 title: Adobe Experience Manager 6.4 Forms 안내서
 seo-title: AEM 6.4 Forms 안내서
-description: 이 안내서에서는 디지털 양식을 만들고, 관리하고, 게시하고, 업데이트하는 방법을 포함하여 모든 AEM Forms 작업에 대해 다룹니다.
-seo-description: 디지털 양식 작성, 관리, 게시 및 업데이트 방법을 포함하여 모든 AEM Forms 작업을 다룹니다.
-translation-type: tm+mt
-source-git-commit: f2b0d37a0666f2a0be9e7034da12dddf0c56fb25
+description: 이 안내서에서는 디지털 양식 만들기, 관리, 게시 및 업데이트 방법을 포함한 모든 AEM Forms 작업을 다룹니다.
+seo-description: 디지털 양식 만들기, 관리, 게시 및 업데이트 방법을 포함하여 모든 AEM Forms 작업을 다룹니다.
+exl-id: e25a3b24-c460-49a9-a62c-c9ed1f1128e3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 85%
 
 ---
 
-
 # Adobe Experience Manager 6.4 Forms 안내서
 
-이 안내서에서는 디지털 양식을 만들고, 관리하고, 게시하고, 업데이트하는 방법을 포함하여 모든 AEM Forms 작업에 대해 다룹니다.
+이 안내서에서는 디지털 양식 만들기, 관리, 게시 및 업데이트 방법을 포함한 모든 AEM Forms 작업을 다룹니다.
 
 ## 주요 AEM 문서
 
