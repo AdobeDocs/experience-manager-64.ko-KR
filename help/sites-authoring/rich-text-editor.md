@@ -9,18 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 29e0bdfa-1d49-47d9-a332-04da062d3d3f
-translation-type: tm+mt
-source-git-commit: f1026e4dc9e12f760509a706a92888b90c9af395
+exl-id: 26d912e1-d8ee-44fc-8c82-ccc66551ddc1
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 37%
 
 ---
 
-
 # 리치 텍스트 편집기를 사용하여 컨텐츠 {#using-the-rich-text-editor-to-author-content} 작성
 
-RTE(Rich Text Editor)는 AEM 페이지에서 텍스트를 작성할 수 있는 기본 빌딩 블록입니다. 텍스트, 텍스트 및 이미지, 표와 같은 많은 구성 요소는 RTE를 기반으로 합니다.
+리치 텍스트 편집기(RTE)는 AEM 페이지에서 텍스트를 작성하는 기본 빌딩 블록입니다. 텍스트, 텍스트 및 이미지, 테이블과 같은 많은 구성 요소는 RTE를 기반으로 합니다.
 
 >[!NOTE]
 >
@@ -28,11 +27,11 @@ RTE(Rich Text Editor)는 AEM 페이지에서 텍스트를 작성할 수 있는 �
 
 ## 즉석 편집 {#in-place-editing}
 
-한 번의 탭 또는 클릭으로 텍스트 기반 구성 요소를 선택하면 [구성 요소 도구 모음](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)이 표시됩니다.
+탭/클릭하여 텍스트 기반 구성 요소를 선택하면 [구성 요소 도구 모음](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)이 표시됩니다.
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-다시 탭/클릭하거나 처음에 구성 요소를 두 번 탭/클릭하여 선택하면 자체 도구 모음이 있는 즉석 편집이 열립니다. 여기에서 컨텐츠를 편집하고 기본적인 서식 변경을 수행할 수 있습니다.
+다시 탭/클릭하거나 처음에 구성 요소를 선택하고 느리게 두 번 탭/클릭하여 자체 도구 모음이 있는 즉석 편집 열기 여기에서 컨텐츠를 편집하고 기본적인 서식 변경을 수행할 수 있습니다.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 
@@ -54,11 +53,11 @@ RTE(Rich Text Editor)는 AEM 페이지에서 텍스트를 작성할 수 있는 �
 
 ## 전체 화면 편집 {#full-screen-editing}
 
-텍스트 기반 구성 요소의 경우, 도구 모음에서 전체 화면 모드를 선택하면 리치 텍스트 편집기가 열리고 나머지 페이지 컨텐츠가 숨겨집니다.
+텍스트 기반 구성 요소의 경우 도구 모음에서 전체 화면 모드를 선택하면 리치 텍스트 편집기가 열리고 나머지 페이지 컨텐츠는 표시되지 않습니다.
 
 ![](do-not-localize/screen_shot_2018-03-21at163236.png)
 
-전체 화면 모드는 관리자가 구성한 리치 텍스트 편집기의 모든 옵션을 표시합니다. 이러한 인스턴스는 관리자 또는 AEM 개발자가 제공하는 구성](../sites-administering/rich-text-editor.md)에 따라 AEM 인스턴스 [마다 다를 수 있습니다. 옵션이 없는 경우 관리자에게 요청하여 사용 가능하게 하십시오.
+전체 화면 모드에서는 관리자가 구성한 리치 텍스트 편집기의 모든 옵션이 표시됩니다. 이러한 인스턴스는 관리자 또는 AEM 개발자가 제공하는 구성](../sites-administering/rich-text-editor.md)에 따라 AEM 인스턴스 [에 따라 다를 수 있습니다. 옵션이 누락된 경우 관리자에게 이를 사용할 수 있도록 요청하십시오.
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
