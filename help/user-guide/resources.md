@@ -5,20 +5,19 @@ description: AEM 6.4 릴리스 노트, 인증 및 추가 리소스
 seo-description: AEM 6.4 릴리스 노트, 인증 및 추가 리소스
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
-translation-type: tm+mt
-source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
+exl-id: 77111a12-1d9d-4f2d-a2f2-6b2f66709fce
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 15%
 
 ---
 
-
 # AEM 6.4 추가 리소스 {#aem-64-additional-resources}
 
 ## AEM 6.4 릴리스 노트 {#aem-64-release-notes}
 
-[릴리스 정보에서 AEM 6.4의 최신 새로운 기능에 대해 알아보십시오.](/help/release-notes/home.md)
+[릴리스 노트에서 AEM 6.4의 최신 새로운 기능에 대해 알아보십시오.](/help/release-notes/home.md)
 
 ## AEM 6.4 자습서 비디오 {#aem-64-tutorial-videos}
 
@@ -27,7 +26,7 @@ ht-degree: 15%
 
 ## 클래스 및 인증 {#classes-and-certification}
 
-[직접 또는 가상 강의 제공을 통해 학습의 범위를 확장할 수 있습니다.](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager)
+[강의실 및 가상 수업 서비스를 통해 학습 범위를 확대합니다.](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager)
 
 ## GDPR 준비 완료 {#gdpr-readiness}
 
@@ -35,4 +34,4 @@ ht-degree: 15%
 
 ## Experience League {#experience-leauge}
 
-[Experience League에서 AEM용 학습 리소스를 봅니다.](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#dashboard)
+[Experience League에서 AEM에 대한 학습 리소스를 봅니다.](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#dashboard)
