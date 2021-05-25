@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 278195a6-3452-4966-9d56-022815cf6fb4
-translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+exl-id: f073c876-94cd-405d-885f-bfe433817ff4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 87%
 
 ---
-
 
 # 작성 - 환경 및 도구{#authoring-the-environment-and-tools}
 
@@ -140,7 +139,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 다음 검색 패턴에 따라 해당 이미지(및 이 패턴과 일치하는 기타 이미지)를 검색할 수 있습니다.
 
 * `name:*nmv*`
-* `name:AD*` - 문자 일치는 대/소문자를  ** 구분하지 않습니다.
+* `name:AD*` - 문자를 일치시키는 것은 대/ ** 소문자를 구분하지 않습니다.
 * `name:ad?nm??is.*` - 쿼리에 사용할 수 있는 와일드카드의 수는 제한되어 있지 않습니다.
 
 >[!NOTE]
@@ -157,7 +156,7 @@ AEM에서는 현재 작업 중엔 페이지에 링크된 페이지를 확인할 
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. **참조 표시...를 선택합니다.** AEM에서는 참조 창이 열리고 선택한 페이지를 참조하는 페이지와 해당 경로가 표시됩니다.
+1. **참조 표시... 를 선택합니다.** AEM에서 참조 창을 열고 경로를 포함하여 선택한 페이지를 참조하는 페이지를 표시합니다.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -178,7 +177,7 @@ AEM에서는 현재 작업 중엔 페이지에 링크된 페이지를 확인할 
 
 ## 페이지 정보 {#page-information}
 
-웹 사이트 콘솔은 페이지](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console)의 현재 상태(예: 게시, 수정, 잠김, livecopy 등)에 대한 정보도 제공합니다.[
+웹 사이트 콘솔은 게시, 수정, 잠김, livecopy 등과 같은 페이지](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console)의 현재 상태에 대한 정보도 제공합니다.[
 
 ## 페이지 모드 {#page-modes}
 
@@ -205,9 +204,9 @@ AEM에서는 현재 작업 중엔 페이지에 링크된 페이지를 확인할 
 >다른 옵션도 사용할 수 있습니다.
 >
 >* [스캐폴딩](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
->* [Client Context](/help/sites-administering/client-context.md)
->* 웹 사이트 - [웹 사이트] 콘솔을 엽니다.
->* 다시 로드 - 페이지를 새로 고칩니다.
+* [Client Context](/help/sites-administering/client-context.md)
+* 웹 사이트 - [웹 사이트] 콘솔을 엽니다.
+* 다시 로드 - 페이지를 새로 고칩니다.
 
 
 ## 키보드 단축키 {#keyboard-shortcuts}
