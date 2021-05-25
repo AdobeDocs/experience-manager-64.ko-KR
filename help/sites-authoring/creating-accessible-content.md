@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 3d4258de-c0bb-4952-b6f0-0c5f2a15e531
-translation-type: tm+mt
-source-git-commit: a8e0a48466c046bf1f96ff240995b499818ed0a2
+exl-id: f792a65d-35f5-4143-bec2-c64de3f567b4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '8940'
 ht-degree: 98%
 
 ---
-
 
 # 액세스 가능한 컨텐츠 만들기(WCAG 2.0 적합성){#creating-accessible-content-wcag-conformance}
 
@@ -142,7 +141,7 @@ AEM을 사용하려면 기본적으로 **대체 텍스트** 필드를 채워야 
    * 이미지 대신 사운드 출력 사용
    * 계정 및 스팸 필터의 제한된 사용
 
-* 배경 이미지:HTML보다는 CSS(Cascading Style Sheet)를 사용하여 만들어집니다.즉, 대체 텍스트 값을 지정할 수 없습니다.따라서 배경 이미지는 중요한 텍스트 정보를 제공하지 않아야 합니다. 그럴 경우 이 정보가 페이지의 텍스트로도 제공되어야 합니다.
+* 배경 이미지:배경 이미지는 HTML보다는 CSS(계단식 스타일 시트)를 사용하여 만들어집니다.이는 대체 텍스트 값을 지정할 수 없음을 의미합니다.따라서 배경 이미지는 중요한 텍스트 정보를 제공해서는 안 됩니다. 그럴 경우, 이 정보가 페이지의 텍스트로도 제공되어야 합니다.
 
    하지만 이미지를 표시할 수 없을 때에는 대체 배경을 표시하는 것이 중요합니다.
 
@@ -323,13 +322,13 @@ Adobe Flash와 같은 특정 미디어 형식의 컨텐츠 재생을 지원하�
 * [성공 기준 이해 1.2.5](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html)
 * [성공 기준을 충족하는 방법 1.2.5](https://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc-only)
 
-### 적응성(1.3)  {#adaptable}
+### 적응성(1.3) {#adaptable}
 
 [지침 1.3 적응성: 정보나 구조의 손상 없이 다양한 방식으로 보여줄 수 있는 컨텐츠(예: 간단한 레이아웃)를 만드십시오.](https://www.w3.org/TR/WCAG20/#content-structure-separation)
 
 이 지침에는 다음과 같은 사람을 지원하는 데 필요한 요구 사항이 포함됩니다.
 
-* 작성자가 *standard* 2차원, 다중 열, 컬러 웹 페이지 레이아웃에서 제공하는 정보에 액세스할 수 없을 수 있습니다.
+* *표준* 2차원, 다중 열, 컬러 웹 페이지 레이아웃에서 작성자가 보여주는 대로 정보에 액세스할 수 없을 수 있습니다.
 
 * 오디오만 사용할 수 있거나, 큰 텍스트나 높은 대비와 같은 대체 시각적 표시만 사용할 수 있는 사람
 
@@ -357,7 +356,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만�
 
 * **머리글 사용:**
 
-   RTE의 액세서빌러티 기능이 활성화되어 있는 한([AEM 및 액세서빌러티](#AdobeExperienceManagerandAccessibility) 참조), AEM은 3가지 수준의 페이지 머리글을 제공합니다.이러한 도구를 사용하여 컨텐츠의 섹션과 하위 섹션을 식별할 수 있습니다.머리글 1은 머리글 중 가장 높은 수준이며, 머리글 3은 가장 낮은 수준입니다.시스템 관리자는 더 많은 머리글 수준 사용을 허용하도록 시스템을 구성할 수 있습니다.
+   RTE의 액세서빌러티 기능이 활성화되어 있는 한([AEM 및 액세서빌러티](#AdobeExperienceManagerandAccessibility) 참조), AEM에서는 3가지 수준의 페이지 머리글을 제공합니다.이러한 머리글을 사용하여 컨텐츠의 섹션과 하위 섹션을 식별할 수 있습니다.머리글 1은 머리글 중 가장 높은 수준이며, 머리글 3은 가장 낮은 수준입니다.시스템 관리자는 더 많은 머리글 수준 사용을 허용하도록 시스템을 구성할 수 있습니다.
 
    다음 이미지는 여러 가지 머리글 유형의 예를 보여줍니다.
 
@@ -385,7 +384,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만�
 
       RTE에서는 **글머리 기호 목록** 아이콘을 사용하십시오.
 
-   * `<ol>` 요소는 *번호가 매겨진 목록*&#x200B;에 사용됩니다. 개별 목록 항목이 `<li>` 요소를 사용하여 식별됩니다.
+   * `<ol>` 요소는 *번호 매기기 목록*&#x200B;에 사용됩니다. 개별 목록 항목이 `<li>` 요소를 사용하여 식별됩니다.
 
       RTE에서는 **번호 목록** 아이콘을 사용하십시오.
    기존 컨텐츠를 특정 목록 유형으로 변경하려면, 적절한 텍스트를 강조 표시하고 적절한 목록 유형을 선택하십시오. 단락 텍스트가 어떻게 입력되는지를 보여주는 앞의 예에서처럼, 적절한 목록 요소가 HTML에 자동으로 추가됩니다.
@@ -506,7 +505,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만�
 * [성공 기준 이해 1.3.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html)
 * [성공 기준을 충족하는 방법 1.3.3](https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-understanding)
 
-### 구별 가능성(1.4)  {#distinguishable}
+### 구별 가능성(1.4) {#distinguishable}
 
 [지침 1.4 구별 가능성: 배경에서 전경을 구별하는 것을 포함하여 사용자가 컨텐츠를 더 쉽게 보고 들을 수 있도록 하십시오.](https://www.w3.org/TR/WCAG20/#visual-audio-contrast)
 
@@ -665,7 +664,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만�
 * [성공 기준 이해 2.2.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html)
 * [충족하는 방법 - 성공 기준 2.2.2](https://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-pause)
 
-### 발작(2.3)  {#seizures}
+### 발작(2.3) {#seizures}
 
 [지침 2.3 발작: 발작을 초래하는 것으로 알려진 방법으로 컨텐츠 디자인 안하기](https://www.w3.org/TR/WCAG20/#seizure)
 
@@ -736,7 +735,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만�
 
 * 좋은 예:
 
-   * 텍스트:<u>2010년 가을 저녁 수업</u> - 세부 정보
+   * 텍스트:<u>2010년 가을 학기 저녁 강의</u> - 세부 정보
    * 이유: 링크 요소의 텍스트와 위치를 약간 조정하여 링크 텍스트를 개선할 수 있습니다.
 
 페이지 간에 링크를 일관되게 표현해야 합니다(특히 탐색 막대의 경우). 예를 들어, 특정 페이지에 연결된 링크를 한 페이지에서 **게시물**&#x200B;이라고 이름을 지정했으면 다른 페이지에서도 이 텍스트를 사용하여 일관성을 보장해야 합니다.
@@ -917,4 +916,3 @@ AEM에서 **텍스트 필드**&#x200B;와 같은 양식 구성 요소를 페이�
 
 * [성공 기준 이해 3.3.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html)
 * [충족하는 방법 - 성공 기준 3.3.2](https://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues)
-
