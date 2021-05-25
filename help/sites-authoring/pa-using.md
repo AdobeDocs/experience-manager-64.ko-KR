@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
-translation-type: tm+mt
-source-git-commit: e99e29425578005ed9d215946d63f67e7229e8d6
+exl-id: 6509c0ce-fc3a-4248-8dc7-db10602c30d6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 93%
 
 ---
-
 
 # 페이지 분석 데이터 보기{#seeing-page-analytics-data}
 
@@ -76,7 +75,7 @@ analytics-administrators 사용자 그룹의 구성원은 작성자가 추가 An
 
 ### 사이트에서 컨텐츠 인사이트 열기 {#opening-content-insights-from-sites}
 
-사이트 콘솔에서 [컨텐츠 인사이트](/help/sites-authoring/content-insights.md)를 열어 페이지 효과를 자세히 조사합니다.
+페이지 효과를 자세히 조사하려면 사이트 콘솔에서 [컨텐츠 인사이트](/help/sites-authoring/content-insights.md)를 엽니다.
 
 1. 사이트 콘솔에서 컨텐츠 인사이트를 보려는 페이지를 선택합니다.
 1. 도구 모음에서 [분석 및 권장 사항] 아이콘을 클릭합니다.
