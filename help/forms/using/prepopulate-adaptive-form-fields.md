@@ -2,13 +2,12 @@
 title: 적응형 양식 필드 미리 채우기
 seo-title: 적응형 양식 필드 미리 채우기
 description: 기존 데이터를 사용하여 적응형 양식의 필드를 미리 채웁니다.
-seo-description: 적응형 양식을 사용하면 소셜 프로필로 로그인하여 기본 정보를 양식에 미리 입력할 수 있습니다. 이 문서에서는 이 작업을 수행하는 방법에 대해 설명합니다.
+seo-description: 적응형 양식을 사용하면 사용자가 소셜 프로필로 로그인하여 양식의 기본 정보를 미리 채울 수 있습니다. 이 문서에서는 이 작업을 수행하는 방법을 설명합니다.
 uuid: 05d74a59-3950-4513-bfce-6ff3d9d5318c
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 2ddb33a5-0d62-46f4-8f8c-0f0807a975cb
-feature: Adaptive Forms
-translation-type: tm+mt
+feature: 적응형 양식
 source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
 source-wordcount: '2034'
@@ -17,27 +16,27 @@ ht-degree: 0%
 ---
 
 
-# 응용 양식 필드 미리 채우기 {#prefill-adaptive-form-fields}
+# 적응형 양식 필드 미리 채우기 {#prefill-adaptive-form-fields}
 
 기존 데이터를 사용하여 적응형 양식의 필드를 미리 채웁니다.
 
 ## 소개 {#introduction}
 
-기존 데이터를 사용하여 적응형 양식의 필드를 미리 채울 수 있습니다. 사용자가 양식을 열면 해당 필드에 대한 값이 미리 작성됩니다. 적응형 양식의 데이터를 미리 채우려면 사용자 데이터를 적응형 양식의 데이터 구조를 미리 채우기 위한 형식으로 자동 채우기 XML/JSON으로 만듭니다.
+기존 데이터를 사용하여 적응형 양식의 필드를 미리 채울 수 있습니다. 사용자가 양식을 열면 해당 필드의 값이 미리 채워집니다. 적응형 양식의 데이터를 미리 채우려면 사용자 데이터를 적응형 양식의 미리 채우기 데이터 구조를 준수하는 형식으로 미리 채우기 XML/JSON으로 사용할 수 있도록 하십시오.
 
-## 데이터의 프리플라이트 구조 {#the-prefill-structure}
+## 미리 채우기 데이터 구조 {#the-prefill-structure}
 
-적응형 양식에는 바인딩 및 언바운드 필드가 혼합되어 있을 수 있습니다. 바인딩된 필드는 [Content Finder] 탭에서 드래그하고 필드 편집 대화 상자에 비어 있지 않은 `bindRef` 속성 값을 포함하는 필드입니다. 언바운드 필드는 사이드 킥의 구성 요소 브라우저에서 바로 드래그되며 빈 `bindRef` 값이 있습니다.
+적응형 양식에는 바운드 필드와 바인딩되지 않은 필드가 혼합되어 있을 수 있습니다. 바운드 필드는 컨텐츠 파인더 탭에서 드래그하여 필드 편집 대화 상자에 비어 있지 않은 `bindRef` 속성 값을 포함하는 필드입니다. 바인딩되지 않은 필드는 사이드킥의 구성 요소 브라우저에서 직접 드래그하여 빈 `bindRef` 값을 갖습니다.
 
-적응형 양식의 바운드 필드와 언바운드 필드를 모두 미리 채울 수 있습니다. 데이터의 프리플라이트 데이터에는 aBoundData 및 afUnBoundData 섹션이 포함되어 있으므로 적응형 양식의 바인딩 필드와 바인딩 가능한 필드를 모두 미리 채울 수 있습니다. `afBoundData` 섹션에는 바인딩된 필드 및 패널에 대한 프리플라이트 데이터가 포함되어 있습니다. 이 데이터는 연결된 양식 모델 스키마와 호환되어야 합니다.
+적응형 양식의 바운드 필드와 바인딩되지 않은 필드를 모두 미리 채울 수 있습니다. 미리 채우기 데이터에는 적응형 양식의 바운드 필드와 바인딩되지 않은 필드를 모두 미리 채우도록 afBoundData 및 afUnBoundData 섹션이 포함됩니다. `afBoundData` 섹션에는 바인딩된 필드 및 패널에 대한 미리 채우기 데이터가 포함되어 있습니다. 이 데이터는 관련 양식 모델 스키마와 호환되어야 합니다.
 
-* [XFA 양식 템플릿](/help/forms/using/prepopulate-adaptive-form-fields.md)을(를) 사용하는 적응형 양식의 경우 XFA 템플릿의 데이터 스키마에 맞는 프리플라이트 XML을 사용합니다.
-* [XML 스키마](#xml-schema-af)을 사용하는 적응형 양식의 경우 XML 스키마 구조와 호환되는 프리플라이트 XML을 사용합니다.
-* [JSON 스키마](/help/forms/using/prepopulate-adaptive-form-fields.md#json-schema-based-adaptive-forms)를 사용하는 적응형 양식의 경우 JSON 스키마를 준수하는 프리플라이트 JSON을 사용하십시오.
-* FDM 스키마를 사용하는 적응형 양식의 경우 FDM 스키마와 호환되는 프리필 JSON을 사용합니다.
-* [양식 모델](/help/forms/using/prepopulate-adaptive-form-fields.md#p-adaptive-form-with-no-form-model-p)이 없는 적응형 양식의 경우 바인딩된 데이터가 없습니다. 모든 필드는 언바운드 필드이며 언바운드 XML을 사용하여 미리 입력됩니다.
+* [XFA 양식 템플릿](/help/forms/using/prepopulate-adaptive-form-fields.md)을 사용하는 적응형 양식의 경우 XFA 템플릿의 데이터 스키마와 호환되는 미리 채우기 XML을 사용하십시오.
+* [XML 스키마](#xml-schema-af)를 사용하는 적응형 양식의 경우 XML 스키마 구조와 호환되는 미리 채우기 XML을 사용합니다.
+* [JSON 스키마](/help/forms/using/prepopulate-adaptive-form-fields.md#json-schema-based-adaptive-forms)를 사용하는 적응형 양식의 경우 JSON 스키마와 호환되는 미리 채우기 JSON을 사용하십시오.
+* FDM 스키마를 사용하는 적응형 양식의 경우 FDM 스키마와 호환되는 미리 채우기 JSON을 사용합니다.
+* 양식 모델 [이 없는 적응형 양식의 경우 바인딩된 데이터가 없습니다. ](/help/forms/using/prepopulate-adaptive-form-fields.md#p-adaptive-form-with-no-form-model-p) 모든 필드는 바인딩되지 않은 필드이며 바인딩되지 않은 XML을 사용하여 미리 채워집니다.
 
-### 샘플 XML 구조 {#sample-prefill-xml-structure}
+### 샘플 미리 채우기 XML 구조 {#sample-prefill-xml-structure}
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -61,7 +60,7 @@ ht-degree: 0%
 </afData>
 ```
 
-### 샘플 프리플라이트 JSON 구조 {#sample-prefill-json-structure}
+### 샘플 미리 채우기 JSON 구조 {#sample-prefill-json-structure}
 
 ```
 {
@@ -77,27 +76,27 @@ ht-degree: 0%
 }
 ```
 
-이름이 같은 바인딩 필드 또는 바인딩되지 않은 필드가 동일한 경우 XML 태그 또는 JSON 개체에 지정된 데이터가 모든 필드에 채워집니다. 예를 들어 양식의 필드 2개가 프리플라이트 데이터의 이름 `textbox`에 매핑됩니다. 런타임 시 첫 번째 텍스트 상자 필드에 &quot;A&quot;가 포함되어 있으면 두 번째 텍스트 상자에 &quot;A&quot;가 자동으로 채워집니다. 이 링크를 응용 양식 필드의 라이브 링크라고 합니다.
+이름이 같은 바인딩되지 않은 필드나 이름이 같은 바인딩되지 않은 필드의 경우 XML 태그 또는 JSON 개체에 지정된 데이터가 모든 필드에 입력됩니다. 예를 들어 양식에 있는 두 필드는 미리 채우기 데이터의 이름 `textbox`에 매핑됩니다. 런타임 중에 첫 번째 텍스트 상자 필드에 &quot;A&quot;가 들어 있으면 두 번째 텍스트 상자에 &quot;A&quot;가 자동으로 채워집니다. 이 링크를 적응형 양식 필드의 라이브 링크라고 합니다.
 
-## XFA 양식 템플릿 {#xfa-based-af}을(를) 사용한 적응형 양식
+## XFA 양식 템플릿을 사용하는 적응형 양식 {#xfa-based-af}
 
-XFA 기반 적응형 양식의 자동 완성 XML 및 제출된 XML의 구조는 다음과 같습니다.
+XFA 기반 적응형 양식의 미리 채우기 XML 및 제출된 XML의 구조는 다음과 같습니다.
 
-* **XML 구조 미리 채우기**:XFA 기반 적응형 양식의 프리플라이트 XML은 XFA 양식 템플릿의 데이터 스키마를 준수해야 합니다. 언바운드 필드를 미리 채우려면 미리 채우기 XML 구조를 `/afData/afBoundData` 태그로 둘러싸십시오.
+* **XML 구조 미리 채우기**:XFA 기반 적응형 양식의 미리 채우기 XML은 XFA 양식 템플릿의 데이터 스키마와 호환되어야 합니다. 바인딩되지 않은 필드를 미리 채우려면 미리 채우기 XML 구조를 `/afData/afBoundData` 태그에 래핑합니다.
 
-* **제출된 XML 구조**:XML의 프리플라이트 기능을 사용하지 않는 경우, 제출된 XML에는 래퍼 태그의 바운드 필드와 언바운드 필드 모두에 대한 데이터가  `afData` 포함됩니다. XML 자동 완성 기능을 사용하는 경우 제출한 XML의 구조는 미리 채우기 XML과 동일합니다. 프리플라이트 XML이 `afData` 루트 태그로 시작하는 경우 출력 XML도 동일한 형식을 갖습니다. 프리플라이트 XML에 `afData/afBoundData`래퍼가 없고 대신 `employeeData` 같은 스키마 루트 태그에서 직접 시작하는 경우 제출된 XML도 `employeeData` 태그로 시작합니다.
+* **제출된 XML 구조**:미리 채우기 XML을 사용하지 않는 경우, 제출된 XML에 래퍼 태그의 바인딩되지 않은 필드와 바인딩되지 않은 필드 모두에 대한 데이터가  `afData` 포함됩니다. 미리 채우기 XML을 사용하는 경우 제출된 XML의 구조는 미리 채우기 XML과 동일합니다. 미리 채우기 XML이 `afData` 루트 태그로 시작하는 경우 출력 XML도 같은 형식을 갖습니다. 미리 채우기 XML에 `afData/afBoundData`래퍼가 없고 대신 `employeeData` 같은 스키마 루트 태그에서 직접 시작하는 경우 제출된 XML도 `employeeData` 태그로 시작됩니다.
 
 Prefill-Submit-Data-ContentPackage.zip
 
-[Get ](assets/prefill-submit-data-contentpackage.zip)
-FileSample에 prefill 데이터 및 제출된 데이터 포함
+[미리 ](assets/prefill-submit-data-contentpackage.zip)
+채우기 데이터 및 제출된 데이터가 포함된 FileSample 가져오기
 
 ## XML 스키마 기반 적응형 양식  {#xml-schema-af}
 
-XML 스키마를 기반으로 하는 적응형 양식에 대해 XML을 프리필하고 제출한 XML의 구조는 다음과 같습니다.
+XML 스키마를 기반으로 적응형 양식을 위한 XML 및 제출된 XML의 구조는 다음과 같습니다.
 
-* **XML 구조** 자동 완성:프리플라이트 XML은 연결된 XML 스키마를 준수해야 합니다. 언바운드 필드를 미리 채우려면 미리 채우기 XML 구조를 /afData/afBoundData 태그로 둘러싸십시오.
-* **제출된 XML 구조**:XML의 프리플라이트 기능을 사용하지 않는 경우, 제출된 XML에는  `afData` wrapper 태그에 있는 바운드 필드와 언바운드 필드 모두에 대한 데이터가 포함됩니다. XML 자동 완성 기능을 사용하는 경우 제출한 XML의 구조는 미리 채우기 XML과 동일합니다. XML 프리플라이트 작업이 `afData` 루트 태그로 시작하는 경우 출력 XML의 형식이 동일합니다. 프리플라이트 XML에 `afData/afBoundData` 래퍼가 없고 대신 `employeeData` 같은 스키마 루트 태그에서 직접 시작하는 경우 제출된 XML도 `employeeData` 태그로 시작합니다.
+* **XML 구조 미리 채우기**:미리 채우기 XML은 연결된 XML 스키마와 호환되어야 합니다. 바인딩되지 않은 필드를 미리 채우려면 미리 채우기 XML 구조를 /afData/afBoundData 태그에 래핑합니다.
+* **제출된 XML 구조**:사전 채우기 XML이 사용되지 않는 경우, 제출된 XML에 래퍼 태그의 바인딩되지 않은 필드와 바인딩되지 않은 필드 모두에 대한 데이터가  `afData` 포함됩니다. 미리 채우기 XML을 사용하는 경우 제출된 XML의 구조는 미리 채우기 XML과 동일합니다. 미리 채우기 XML이 `afData` 루트 태그로 시작하는 경우 출력 XML의 형식이 동일합니다. 미리 채우기 XML에 `afData/afBoundData` 래퍼가 없고 대신 `employeeData` 같은 스키마 루트 태그에서 직접 시작하는 경우 제출된 XML도 `employeeData` 태그로 시작됩니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -115,7 +114,7 @@ XML 스키마를 기반으로 하는 적응형 양식에 대해 XML을 프리필
 </xs:schema>
 ```
 
-모델이 XML 스키마인 필드의 경우 아래 샘플 XML에 표시된 대로 데이터가 `afBoundData` 태그에서 프리플라이트 됩니다. 하나 이상의 언바운드 텍스트 필드를 사용하여 적응형 양식을 프리플라이트하는 데 사용할 수 있습니다.
+모델이 XML 스키마인 필드의 경우, 데이터는 아래 샘플 XML에 표시된 대로 `afBoundData` 태그에 미리 입력됩니다. 하나 이상의 바인딩되지 않은 텍스트 필드를 사용하여 적응형 양식을 미리 채우는 데 사용할 수 있습니다.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><afData>
@@ -134,9 +133,9 @@ XML 스키마를 기반으로 하는 적응형 양식에 대해 XML을 프리필
 
 >[!NOTE]
 >
->사이드 킥이나 데이터 소스 탭에서 구성 요소를 드래그하여 만든 바운드 패널(비어 있지 않은 `bindRef`이 있는 패널)에 언바운드 필드를 사용하지 않는 것이 좋습니다. 바인딩되지 않은 필드의 데이터가 손실될 수 있습니다. 또한 필드 이름은 언바운드 필드 전용으로 양식 전체에서 고유해야 합니다.
+>바인딩되지 않은 필드(사이드 킥이나 데이터 소스 탭에서 구성 요소를 드래그하여 만든 비어 있지 않은 `bindRef` 패널이 있는 패널)를 사용하지 않는 것이 좋습니다. 바인딩되지 않은 필드의 데이터가 손실될 수 있습니다. 또한 필드의 이름은 특히 바인딩되지 않은 필드에 대해 양식에서 고유한 것이 좋습니다.
 
-### afData 및 afBoundData 래퍼 {#an-example-without-afdata-and-afbounddata-wrapper} 없는 예
+### afData 및 afBoundData 래퍼 {#an-example-without-afdata-and-afbounddata-wrapper} 가 없는 예
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><config>
@@ -147,10 +146,10 @@ XML 스키마를 기반으로 하는 적응형 양식에 대해 XML을 프리필
 
 ## JSON 스키마 기반 적응형 양식 {#json-schema-based-adaptive-forms}
 
-JSON 스키마를 기반으로 하는 적응형 양식의 경우 prefill JSON 및 제출된 JSON의 구조가 아래에 설명되어 있습니다. 자세한 내용은 [JSON 스키마](/help/forms/using/adaptive-form-json-schema-form-model.md)를 사용하여 적응형 양식 만들기를 참조하십시오.
+JSON 스키마를 기반으로 하는 적응형 양식의 경우 JSON 및 제출된 JSON의 구조가 아래에 설명되어 있습니다. 자세한 내용은 [JSON 스키마를 사용하여 적응형 양식 만들기](/help/forms/using/adaptive-form-json-schema-form-model.md)를 참조하십시오.
 
-* **JSON 구조** 미리 채우기:프리플라이트 JSON은 관련 JSON 스키마를 준수해야 합니다. 필요에 따라 언바운드 필드도 미리 채우려면 /afData/afBoundData 객체에 해당 필드를 래핑할 수 있습니다.
-* **제출된 JSON 구조**:prefill JSON을 사용하지 않는 경우, 제출된 JSON은 afData 래퍼 태그의 바운드 필드와 언바운드 필드 모두에 대한 데이터를 포함합니다. 프리플라이트 JSON을 사용하는 경우 제출된 JSON의 구조는 미리 채우기 JSON과 동일합니다. 미리 채우기 JSON이 afData 루트 객체로 시작하는 경우 출력 JSON의 형식이 동일합니다. 프리플라이트 JSON에 afData/afBoundData 래퍼가 없고 대신 사용자와 같은 스키마 루트 객체에서 직접 시작하는 경우, 제출된 JSON도 사용자 객체로 시작됩니다.
+* **JSON 구조 미리 채우기**:미리 채우기 JSON은 관련 JSON 스키마와 호환되어야 합니다. 또한 바인딩되지 않은 필드도 미리 채우려면 /afData/afBoundData 개체에 래핑할 수 있습니다.
+* **제출된 JSON 구조**:사전 채우기 JSON이 사용되지 않으면, 제출된 JSON에 afData 래퍼 태그의 바인딩되지 않은 필드와 바인딩되지 않은 필드 모두에 대한 데이터가 포함됩니다. 미리 채우기 JSON을 사용하는 경우 제출된 JSON의 구조가 사전 채우기 JSON과 동일합니다. 미리 채우기 JSON이 afData 루트 개체로 시작하는 경우 출력 JSON의 형식이 동일합니다. 미리 채우기 JSON에 afData/afBoundData 래퍼가 없고 대신 사용자와 같은 스키마 루트 객체에서 직접 시작하는 경우 제출된 JSON도 사용자 개체로 시작됩니다.
 
 ```
 {
@@ -169,7 +168,7 @@ JSON 스키마를 기반으로 하는 적응형 양식의 경우 prefill JSON �
 }}}}}
 ```
 
-JSON 스키마 모델을 사용하는 필드의 경우 아래 샘플 JSON에 표시된 것처럼 데이터는 afBoundData 개체에서 프리필됩니다. 하나 이상의 언바운드 텍스트 필드를 사용하여 적응형 양식을 프리플라이트하는 데 사용할 수 있습니다. 다음은 `afData/afBoundData` 래퍼가 있는 데이터의 예입니다.
+JSON 스키마 모델을 사용하는 필드의 경우 아래 샘플 JSON에 표시된 대로 데이터가 afBoundData 개체에 미리 입력됩니다. 하나 이상의 바인딩되지 않은 텍스트 필드를 사용하여 적응형 양식을 미리 채우는 데 사용할 수 있습니다. 다음은 `afData/afBoundData` 래퍼가 있는 데이터의 예입니다.
 
 ```
 {
@@ -199,15 +198,15 @@ JSON 스키마 모델을 사용하는 필드의 경우 아래 샘플 JSON에 표
 
 >[!NOTE]
 >
->바인딩되어 있는 패널(사이드 킥이나 데이터 소스 탭에서 구성 요소를 드래그하여 만든 비어 있지 않은 bindRef가 있는 패널)의 언바운드 필드를 사용하는 것은 언바운드 필드의 데이터가 손실될 수 있으므로 **권장되지 않음**&#x200B;입니다. 특히 언바운드 필드의 경우 양식에 고유한 필드 이름이 있는 것이 좋습니다.
+>바운드 패널에서 바인딩되지 않은 필드(사이드 킥이나 데이터 소스 탭에서 구성 요소를 드래그하여 만든 비어 있지 않은 bindRef가 있는 패널)를 사용하면 바인딩되지 않은 필드의 데이터가 손실될 수 있으므로 **권장되지 않습니다.** 특히 바인딩되지 않은 필드에 대해 양식에 고유한 필드 이름이 있는 것이 좋습니다.
 
-## 양식 모델 {#adaptive-form-with-no-form-model} 없는 적응형 양식
+## 양식 모델이 없는 적응형 양식 {#adaptive-form-with-no-form-model}
 
-양식 모델이 없는 적응형 양식의 경우 모든 필드에 대한 데이터는 `<afUnboundData> tag`의 `<data>` 태그 아래에 있습니다.
+양식 모델이 없는 적응형 양식의 경우 모든 필드의 데이터가 `<afUnboundData> tag` 의 `<data>` 태그 아래에 있습니다.
 
-또한 다음 사항을 주목하십시오.
+또한 다음을 주목하십시오.
 
-다양한 필드에 대해 제출된 사용자 데이터에 대한 XML 태그는 필드 이름을 사용하여 생성됩니다. 따라서 필드 이름은 고유해야 합니다.
+다양한 필드에 대해 제출된 사용자 데이터의 XML 태그는 필드의 이름을 사용하여 생성됩니다. 따라서 필드 이름은 고유해야 합니다.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><afData>
@@ -228,49 +227,49 @@ JSON 스키마 모델을 사용하는 필드의 경우 아래 샘플 JSON에 표
 </afData>
 ```
 
-## 구성 관리자 {#configuring-prefill-service-using-configuration-manager}을(를) 사용하여 프리플라이트 서비스를 구성하는 중
+## 구성 관리자를 사용하여 미리 채우기 서비스 구성 {#configuring-prefill-service-using-configuration-manager}
 
-자동 완성 서비스를 활성화하려면 AEM 웹 콘솔 구성에서 기본 자동 완성 서비스 구성을 지정합니다. 프리플라이트 서비스를 구성하려면 다음 단계를 사용하십시오.
+미리 채우기 서비스를 활성화하려면 AEM 웹 콘솔 구성에서 기본 미리 채우기 서비스 구성을 지정합니다. 다음 단계를 사용하여 미리 채우기 서비스를 구성하십시오.
 
 >[!NOTE]
 >
->자동 완성 서비스 구성은 적응형 양식, HTML5 양식 및 HTML5 양식 세트에 적용할 수 있습니다.
+>미리 채우기 서비스 구성은 적응형 양식, HTML5 양식 및 HTML5 양식 세트에 적용할 수 있습니다.
 
-1. URL을 사용하여 **[!UICONTROL Adobe Experience Manager 웹 콘솔 구성]**&#x200B;을 엽니다.\
-   https://&lt;서버>:&lt;포트>/system/console/configMgr
-1. **[!UICONTROL 기본 자동 완성 서비스 구성]**&#x200B;을 검색하고 엽니다.
+1. 다음 URL을 사용하여 **[!UICONTROL Adobe Experience Manager Web Console 구성]**&#x200B;을 엽니다.\
+   https://&lt;server>:&lt;port>/system/console/configMgr
+1. **[!UICONTROL 기본 미리 채우기 서비스 구성]**&#x200B;을(를) 검색하고 엽니다.
 
    ![prefill_config](assets/prefill_config.png)
 
 1. **[!UICONTROL 데이터 파일 위치]**&#x200B;에 대한 데이터 위치 또는 regex(정규 표현식)를 입력합니다. 유효한 데이터 파일 위치의 예는 다음과 같습니다.
 
-   * file:///C:/Users/public/Document/Prefill/을 참조하십시오.&amp;ast;
+   * file:///C:/Users/public/Document/Prefill/amp;ast;
    * http://localhost:8000/somesamplexmlfile.xml
 
    >[!NOTE]
    >
-   >기본적으로 모든 유형의 응용 Forms(XSD, XDP, JSON, FDM, FDM 및 양식 모델 없음)에 대해 crx 파일을 통해 프리필이 허용됩니다. 프리필은 JSON 및 XML 파일에만 사용할 수 있습니다.
+   >기본적으로 모든 유형의 적응형 Forms(XSD, XDP, JSON, FDM, 양식 모델 기반)에 대한 crx 파일을 통해 미리 채우기가 허용됩니다. 미리 채우기는 JSON 및 XML 파일만 사용할 수 있습니다.
 
-1. 이제 양식에 대해 자동 완성 서비스가 구성됩니다.
+1. 이제 양식에 대해 미리 채우기 서비스가 구성되었습니다.
 
    >[!NOTE]
    >
-   >crx 프로토콜은 데이터의 프리플라이트 보안을 사용하므로 기본적으로 허용됩니다. 일반 regex를 사용하여 다른 프로토콜을 통해 프리플링하면 취약성이 발생할 수 있습니다. 구성에서 데이터를 보호하기 위한 보안 URL 구성을 지정합니다.
+   >crx 프로토콜은 사전 입력된 데이터 보안을 처리하므로 기본적으로 가 허용됩니다. 일반 regex를 사용하여 다른 프로토콜을 통해 미리 채우면 취약성이 발생할 수 있습니다. 구성에서 데이터를 보호하기 위한 보안 URL 구성을 지정합니다.
 
-## 반복 가능한 패널 {#the-curious-case-of-repeatable-panels}의 재미있는 사례
+## 반복 가능한 패널 {#the-curious-case-of-repeatable-panels} 의 기이한 사례
 
-일반적으로 바인딩(양식 스키마) 및 언바운드 필드는 동일한 적응형 양식으로 작성되지만, 바운드가 반복 가능한 경우에 몇 가지 예외가 있습니다.
+일반적으로 바인딩된(양식 스키마) 및 바인딩되지 않은 필드는 동일한 적응형 양식으로 작성되지만, 바인딩이 반복 가능한 경우 다음과 같은 몇 가지 예외가 있습니다.
 
-* 언바운드 반복 가능한 패널은 XFA 양식 템플릿, XSD, JSON 스키마 또는 FDM 스키마를 사용하는 적응형 양식에 대해 지원되지 않습니다.
-* 바인딩 해제된 필드는 반복 가능한 패널에 사용하지 마십시오.
+* XFA 양식 템플릿, XSD, JSON 스키마 또는 FDM 스키마를 사용하는 적응형 양식에 대해 언바운드 반복 가능한 패널이 지원되지 않습니다.
+* 바인딩된 반복 가능한 패널에서 바인딩되지 않은 필드를 사용하지 마십시오.
 
 >[!NOTE]
 >
->바인딩 해제된 필드의 최종 사용자가 채운 데이터와 교차하는 경우 바인딩 및 바인딩 해제된 필드를 혼합하지 마십시오. 가능한 경우 스키마 또는 XFA 양식 템플릿을 수정하고 바인딩되지 않은 필드에 대한 항목을 추가해야 데이터를 제출된 데이터의 다른 필드와 마찬가지로 사용할 수 있습니다.
+>바인딩되지 않은 필드에서 최종 사용자가 채운 데이터와 교차하는 경우 바인딩되지 않은 필드와 필드를 혼합하지 마십시오. 가능하면 스키마나 XFA 양식 템플릿을 수정하고 바인딩되지 않은 필드에 대한 항목을 추가해야 하므로 이 스키마도 바인딩되고 데이터가 제출된 데이터의 다른 필드와 마찬가지로 사용할 수 있습니다.
 
-## 사용자 데이터 자동 입력을 위한 프로토콜 {#supported-protocols-for-prefilling-user-data} 지원
+## 사용자 데이터 {#supported-protocols-for-prefilling-user-data} 미리 채우기에 지원되는 프로토콜
 
-적응형 양식은 올바른 regex로 구성된 경우 다음 프로토콜을 통해 자동 완성 데이터 형식의 사용자 데이터로 프리필할 수 있습니다.
+올바른 정규식으로 구성할 때 다음 프로토콜을 통해 미리 채우기 데이터 형식의 사용자 데이터로 적응형 양식을 미리 채울 수 있습니다.
 
 ### crx:// 프로토콜 {#the-crx-protocol}
 
@@ -278,7 +277,7 @@ JSON 스키마 모델을 사용하는 필드의 경우 아래 샘플 JSON에 표
 http://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=crx:///tmp/fd/af/myassets/sample.xml
 ```
 
-지정한 노드에는 `jcr:data`이라는 속성이 있어야 하며 데이터를 보유해야 합니다.
+지정한 노드에는 `jcr:data` 속성이 있어야 하며 데이터를 보유해야 합니다.
 
 ### file:// 프로토콜  {#the-file-protocol-nbsp}
 
@@ -300,16 +299,16 @@ http://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=http://
 http://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]
 ```
 
-* SERVICE_NAME은 OSGI 미리 채우기 서비스의 이름을 나타냅니다. [프리플라이트 서비스 만들기 및 실행](/help/forms/using/prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service)을 참조하십시오.
-* IDENTIFIER는 OSGI 프리플라이트 서비스에서 프리플라이트 데이터를 가져오는 데 필요한 메타데이터를 나타냅니다. 로그인한 사용자의 식별자는 사용할 수 있는 메타데이터의 예입니다.
+* SERVICE_NAME은 OSGI 미리 채우기 서비스의 이름을 나타냅니다. [미리 채우기 서비스 만들기 및 실행](/help/forms/using/prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service)을 참조하십시오.
+* IDENTIFIER는 미리 채우기 데이터를 가져오기 위해 OSGI 미리 채우기 서비스에 필요한 모든 메타데이터를 나타냅니다. 로그인한 사용자의 식별자는 사용할 수 있는 메타데이터의 예입니다.
 
 >[!NOTE]
 >
 >인증 매개 변수 전달은 지원되지 않습니다.
 
-### slingRequest {#setting-data-attribute-in-slingrequest}에서 데이터 특성 설정
+### slingRequest {#setting-data-attribute-in-slingrequest}에서 데이터 속성 설정
 
-`slingRequest`에서 `data` 속성을 설정할 수도 있습니다. 여기서 `data` 속성은 아래 샘플 코드와 같이 XML 또는 JSON이 포함된 문자열입니다(예: XML용).
+`slingRequest`에서 `data` 속성을 설정할 수도 있습니다. 여기서 `data` 속성은 아래 샘플 코드에 표시된 대로 XML 또는 JSON을 포함하는 문자열입니다(예: XML용).
 
 ```java
 <%
@@ -327,49 +326,49 @@ http://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=service
 %>
 ```
 
-모든 데이터가 포함된 간단한 XML 또는 JSON 문자열을 작성하고 slingRequest에서 설정할 수 있습니다. slingRequest 데이터 속성을 설정할 수 있는 페이지에 포함하려는 모든 구성 요소에 대해 렌더러 JSP에서 쉽게 수행할 수 있습니다.
+모든 데이터가 포함된 간단한 XML 또는 JSON 문자열을 작성하여 slingRequest에서 설정할 수 있습니다. 이 작업은 slingRequest 데이터 속성을 설정할 수 있는 페이지에 포함하려는 모든 구성 요소에 대해 렌더러 JSP에서 쉽게 수행할 수 있습니다.
 
-예를 들어 특정 유형의 헤더를 사용하여 페이지에 대한 특정 디자인을 원하는 경우 이를 위해 페이지 구성 요소에 포함할 수 있는 고유한 `header.jsp`을 작성하고 `data` 속성을 설정할 수 있습니다.
+예를 들어 특정 유형의 헤더가 있는 페이지에 대한 특정 디자인을 원하는 경우, 이를 위해 페이지 구성 요소에 포함할 수 있는 고유한 `header.jsp`을 작성하고 `data` 속성을 설정할 수 있습니다.
 
-다른 좋은 예는 Facebook, Twitter 또는 LinkedIn과 같은 소셜 계정을 통해 로그인 데이터를 미리 입력하려는 사용 사례입니다. 이 경우 사용자 계정에서 데이터를 가져오고 데이터 매개 변수를 설정하는 간단한 JSP를 `header.jsp`에 포함할 수 있습니다.
+다른 좋은 예는 Facebook, Twitter 또는 LinkedIn과 같은 소셜 계정을 통해 로그인 시 데이터를 미리 채우려는 사용 사례입니다. 이 경우 사용자 계정의 데이터를 가져오고 데이터 매개 변수를 설정하는 단순 JSP를 `header.jsp`에 포함할 수 있습니다.
 
-prefill-page component.zip
+prefill page component.zip
 
 [페이지 ](assets/prefill-page-component.zip)
-구성 요소의 FileSample prefill.jsp 가져오기
+구성 요소에서 FileSample prefill.jsp 가져오기
 
-## AEM Forms 사용자 정의 프리플라이트 서비스 {#aem-forms-custom-prefill-service}
+## AEM Forms 사용자 지정 미리 채우기 서비스 {#aem-forms-custom-prefill-service}
 
-사전 정의된 소스의 데이터를 지속적으로 읽는 시나리오에 사용자 정의 프리플라이트 서비스를 사용할 수 있습니다. 프리플라이트 서비스는 정의된 데이터 소스의 데이터를 읽고 자동 완성 데이터 파일의 내용으로 응용 양식 필드를 미리 채웁니다. 또한 프리플라이트 데이터를 적응형 양식과 영구적으로 연결할 수 있습니다.
+사전 정의된 소스에서 데이터를 항상 읽는 시나리오에 사용자 정의 미리 채우기 서비스를 사용할 수 있습니다. 미리 채우기 서비스는 정의된 데이터 소스에서 데이터를 읽고, 미리 채우기 데이터 파일의 컨텐츠로 적응형 양식의 필드를 미리 채웁니다. 또한 미리 작성된 데이터를 적응형 양식과 영구적으로 연결하는 데에도 도움이 됩니다.
 
-### 자동 완성 서비스 {#create-and-run-a-prefill-service} 만들기 및 실행
+### 미리 채우기 서비스 {#create-and-run-a-prefill-service} 만들기 및 실행
 
-프리플라이트 서비스는 OSGi 서비스이며 OSGi 번들을 통해 패키징됩니다. OSGi 번들을 만들고 업로드하고 AEM Forms 번들에 설치합니다. 번들 제작을 시작하기 전에 다음을 수행하십시오.
+미리 채우기 서비스는 OSGi 서비스이며 OSGi 번들을 통해 패키지화되어 있습니다. OSGi 번들을 만들고, 업로드하고, AEM Forms 번들에 설치합니다. 번들 만들기를 시작하기 전에:
 
-* [AEM Forms Client SDK 다운로드](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)
-* [상용구 패키지 다운로드](assets/prefill-sumbit-xmlsandcontentpackage.zip)
+* [AEM Forms 클라이언트 SDK 다운로드](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)
+* [표준 패키지를 다운로드합니다](assets/prefill-sumbit-xmlsandcontentpackage.zip)
 
-* 데이터(프리플라이트 데이터) 파일을 crx-repository에 배치합니다. crx-repository의 \contents 폴더에 있는 임의의 위치에 파일을 배치할 수 있습니다.
+* 데이터(미리 채우기 데이터) 파일을 crx-repository에 배치합니다. crx-repository의 \contents 폴더에 있는 위치에 파일을 배치할 수 있습니다.
 
-#### 자동 완성 서비스 {#create-a-prefill-service} 만들기
+#### 미리 채우기 서비스 {#create-a-prefill-service} 만들기
 
-상용구 패키지(샘플 프리플라이트 서비스 패키지)에는 AEM Forms 프리플라이트 서비스의 샘플 구현이 포함되어 있습니다. 코드 편집기에서 상용구 패키지를 엽니다. 예를 들어 Eclipse에서 상용구 프로젝트를 열어 편집할 수 있습니다. 코드 편집기에서 상용구 패키지를 연 후 다음 단계를 수행하여 서비스를 만듭니다.
+표준 패키지(샘플 미리 채우기 서비스 패키지)에는 AEM Forms 미리 채우기 서비스의 샘플 구현이 포함되어 있습니다. 코드 편집기에서 표준 패키지를 엽니다. 예를 들어 편집을 위해 Eclipse에서 표준 프로젝트 를 엽니다. 코드 편집기에서 표준 패키지를 연 후 다음 단계를 수행하여 서비스를 만듭니다.
 
 1. 편집할 src\main\java\com\adobe\test\Prefill.java 파일을 엽니다.
-1. 코드에서 다음 값을 설정합니다.
+1. 코드에서 값을 설정합니다.
 
    * `nodePath:` crx-repository 위치를 가리키는 노드 경로 변수에는 데이터(미리 채우기) 파일의 경로가 포함됩니다. 예: /content/prefilldata.xml
-   * `label:` label 매개 변수는 서비스의 표시 이름을 지정합니다. 예: 기본 자동 완성 서비스
+   * `label:` label 매개 변수는 서비스의 표시 이름을 지정합니다. 예를 들어, 기본 미리 채우기 서비스
 
 1. `Prefill.java` 파일을 저장하고 닫습니다.
-1. 상용구 프로젝트의 빌드 경로에 `AEM Forms Client SDK` 패키지를 추가합니다.
+1. 표준 프로젝트 빌드 경로에 `AEM Forms Client SDK` 패키지를 추가합니다.
 1. 프로젝트를 컴파일하고 번들의 .jar를 만듭니다.
 
-#### 프리플라이트 서비스 {#start-and-use-the-prefill-service} 시작 및 사용
+#### 미리 채우기 서비스를 시작 및 사용 {#start-and-use-the-prefill-service}
 
-프리플라이트 서비스를 시작하려면 JAR 파일을 AEM Forms 웹 콘솔에 업로드하고 서비스를 활성화합니다. 이제 적응형 양식 편집기에 서비스가 표시됩니다. 자동 완성 기능을 적응형 양식에 연결하려면:
+미리 채우기 서비스를 시작하려면 JAR 파일을 AEM Forms Web Console에 업로드하고 서비스를 활성화합니다. 이제 서비스가 적응형 양식 편집기에 나타납니다. 미리 채우기 서비스를 적응형 양식에 연결하려면
 
 1. Forms 편집기에서 적응형 양식을 열고 양식 컨테이너에 대한 속성 패널을 엽니다.
-1. 속성 콘솔에서 **[!UICONTROL AEM Forms 컨테이너 > 기본 > 자동 완성 서비스]**&#x200B;로 이동합니다.
-1. 기본 자동 완성 서비스를 선택하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 서비스가 양식과 연결됩니다.
+1. 속성 콘솔에서 **[!UICONTROL AEM Forms 컨테이너 > 기본 > 미리 채우기 서비스]**&#x200B;로 이동합니다.
+1. 기본 미리 채우기 서비스를 선택하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 이 서비스는 양식과 연결됩니다.
 
