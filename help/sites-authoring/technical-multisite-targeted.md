@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 7dd851ab-3fa7-426e-89cb-08b67e9b5999
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 28c45577-e5cd-4706-b5b2-227279126ad9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 90%
 
 ---
 
-
 # 타깃팅된 컨텐츠에 대한 다중 사이트 관리 구성 방식{#how-multisite-management-for-targeted-content-is-structured}
 
 다음 다이어그램은 타깃팅된 컨텐츠에 대한 다중 사이트 지원이 구조화되는 방식을 보여줍니다.
 
-영역은 **/content/campaigns/&lt;brand>** 아래에 나타나며 기본적으로 각 브랜드에는 자동으로 만들어지는 마스터 영역이 있습니다. 각 영역에는 영역만의 활동, 경험 및 오퍼 세트가 있습니다.
+영역은 **/content/campaigns/&lt;brand>** 아래에 표시되며, 기본적으로 각 브랜드에는 자동으로 만들어지는 마스터 영역이 있습니다. 각 영역에는 영역만의 활동, 경험 및 오퍼 세트가 있습니다.
 
 ![chlimage_1-268](assets/chlimage_1-268.png)
 
@@ -35,4 +34,3 @@ ht-degree: 90%
 * site1은 영역 매핑을 기반으로 brand1용의 myarea1과 brand2용의 otherarea2를 조회합니다.
 * site2는 brand1용의 영역 매핑만 정의되어 있으므로 brand1용의 myarea1과 brand2용의 마스터 영역을 조회합니다.
 * site3은 이 사이트용으로 정의된 다른 영역 매핑이 없으므로 brand1과 brand2용 마스터 영역을 조회합니다.
-
