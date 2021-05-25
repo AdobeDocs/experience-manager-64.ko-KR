@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: d4473758-674a-42d6-923a-b536f7f9c1f7
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 52eb9c2f-ce29-4622-8726-802ac40246d4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 82%
 
 ---
-
 
 # CSV로 내보내기{#export-to-csv}
 
@@ -56,17 +55,16 @@ CSV 내보내기 만들기 마법사를 사용하여 다음을 선택할 수 있
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
-목록 보기에서 **사이트** 콘솔을 탐색할 때 **CSV 내보내기** 만들기 옵션을 사용할 수 있습니다.**만들기** 드롭다운 메뉴의 옵션입니다.
+**CSV 내보내기 만들기** 옵션은 **Sites** 콘솔(목록 보기)을 탐색할 때 사용할 수 있습니다.**만들기** 드롭다운 메뉴의 옵션입니다.
 
 ![screen_shot_2018-03-21at154719](assets/screen_shot_2018-03-21at154719.png)
 
 CSV 내보내기를 만들려면:
 
 1. **사이트** 콘솔을 열고 필요한 경우 필요한 위치로 이동합니다.
-1. 도구 모음에서 **만들기**, **CSV 내보내기**&#x200B;를 차례로 선택하여 마법사를 엽니다.
+1. 도구 모음에서 **만들기** 를 선택하고 **CSV 내보내기** 를 선택하여 마법사를 엽니다.
 
    ![screen_shot_2018-03-21at154758](assets/screen_shot_2018-03-21at154758.png)
 
 1. 내보낼 필수 속성을 선택합니다.
 1. **만들기**&#x200B;를 선택합니다.
-
