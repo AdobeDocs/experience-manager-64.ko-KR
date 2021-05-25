@@ -1,39 +1,38 @@
 ---
-title: 완벽한 기능을 갖춘 웹 사이트 만들기(JSP)
-seo-title: 완벽한 기능을 갖춘 웹 사이트 만들기(JSP)
-description: 이 자습서에서는 AEM을 사용하여 완벽한 기능을 갖춘 웹 사이트를 만들 수 있습니다.
-seo-description: 이 자습서에서는 AEM을 사용하여 완벽한 기능을 갖춘 웹 사이트를 만들 수 있습니다.
+title: 모든 기능을 갖춘 웹 사이트(JSP) 만들기
+seo-title: 모든 기능을 갖춘 웹 사이트(JSP) 만들기
+description: 이 자습서에서는 AEM에서 모든 기능을 갖춘 웹 사이트를 만들 수 있습니다
+seo-description: 이 자습서에서는 AEM에서 모든 기능을 갖춘 웹 사이트를 만들 수 있습니다
 uuid: bb8d4efd-7631-4cc5-8084-b03c6aabdef3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 8d14017d-d311-45e9-8aea-4a5ca46f1a07
-translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+exl-id: 6d408fd6-9241-4069-9b04-806e30e03ff2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '4916'
 ht-degree: 3%
 
 ---
 
-
-# 완벽한 기능을 갖춘 웹 사이트(JSP){#create-a-fully-featured-website-jsp} 만들기
+# 모든 기능을 갖춘 웹 사이트(JSP){#create-a-fully-featured-website-jsp} 만들기
 
 >[!CAUTION]
 >
->이 문서에서는 JSP를 사용하여 클래식 UI를 기반으로 웹 사이트를 만드는 방법에 대해 설명합니다. Adobe은 [AEM Sites 개발 시작](/help/sites-developing/getting-started.md)에 설명된 대로 웹 사이트에 최신 AEM 기술을 활용할 것을 권장합니다.
+>이 문서에서는 JSP를 사용하고 클래식 UI를 기반으로 웹 사이트를 만드는 방법에 대해 설명합니다. Adobe은 [AEM Sites 개발 시작](/help/sites-developing/getting-started.md)문서에 자세히 설명된 대로 웹 사이트에 대한 최신 AEM 기술을 활용할 것을 권장합니다.
 
-이 자습서에서는 AEM(Adobe Experience Manager)을 사용하여 모든 기능을 갖춘 웹 사이트를 만들 수 있습니다. 웹 사이트는 일반 웹 사이트를 기반으로 하며 주로 웹 개발자를 대상으로 합니다. 모든 개발은 작성 환경 내에서 수행됩니다.
+이 자습서에서는 AEM(Adobe Experience Manager)을 사용하여 모든 기능을 갖춘 웹 사이트를 만들 수 있습니다. 웹 사이트는 일반 웹 사이트를 기반으로 하며 주로 웹 개발자를 대상으로 합니다. 모든 개발 작업은 작성 환경 내에서 수행됩니다.
 
 이 자습서에서는 다음 방법을 설명합니다.
 
 1. AEM을 설치합니다.
-1. 액세스 CRXDE Lite(개발 환경).
+1. 액세스 CRXDE Lite(개발 환경)입니다.
 1. CRXDE Lite에서 프로젝트 구조를 설정합니다.
 1. 컨텐츠 페이지를 만드는 기준으로 사용되는 템플릿, 구성 요소 및 스크립트를 만듭니다.
 1. 웹 사이트의 루트 페이지를 만든 다음 컨텐츠 페이지를 만듭니다.
-1. 페이지에 사용할 다음 구성 요소를 만듭니다.
+1. 페이지에서 사용할 다음 구성 요소를 만듭니다.
 
    * **[!UICONTROL 위쪽 탐색]**
    * **[!UICONTROL 하위 목록]**
@@ -42,7 +41,7 @@ ht-degree: 3%
    * **[!UICONTROL 텍스트 이미지]**
    * **[!UICONTROL 검색]**
 
-1. 다양한 기본 구성 요소를 포함합니다.
+1. 다양한 기초 구성 요소를 포함합니다.
 
 모든 단계를 수행하면 페이지가 다음과 같이 표시됩니다.
 
@@ -50,10 +49,10 @@ ht-degree: 3%
 
 **최종 결과 다운로드**
 
-연습을 수행하지 않고 튜토리얼을 따라 하려면 website-1.0.zip을 다운로드합니다. 이 파일은 이 자습서의 결과를 포함하는 AEM 컨텐츠 패키지입니다. 작성자 인스턴스에 패키지를 설치하려면 [패키지 관리자](/help/sites-administering/package-manager.md)를 사용합니다.
+연습을 수행하지 않고 자습서와 함께 따라 하려면 웹 사이트-1.0.zip을 다운로드하십시오. 이 파일은 이 자습서의 결과를 포함하는 AEM 컨텐츠 패키지입니다. 작성자 인스턴스에 패키지를 설치하려면 [패키지 관리자](/help/sites-administering/package-manager.md)를 사용하십시오.
 
 >[!NOTE]
->이 패키지를 설치하면 이 자습서를 사용하여 만든 제작 인스턴스의 모든 리소스를 덮어쓰게 됩니다.
+>이 패키지를 설치하면 이 자습서를 사용하여 만든 작성 인스턴스에 있는 리소스를 덮어씁니다.
 
 웹 사이트 컨텐츠 패키지
 
@@ -61,21 +60,21 @@ ht-degree: 3%
 
 ## Adobe Experience Manager {#installing-adobe-experience-manager} 설치
 
-웹 사이트 개발을 위한 AEM 인스턴스를 설치하려면 작성자 및 게시 인스턴스](/help/sites-deploying/deploy.md#author-and-publish-installs)와 함께 [배포 환경을 설정하는 지침을 따르거나 [범용 설치](/help/sites-deploying/deploy.md#default-local-install)를 수행하십시오. 일반 설치에는 AEM Quickstart JAR 파일을 다운로드하고, license.properties 파일을 JAR 파일과 동일한 디렉토리에 배치하고, JAR 파일을 두 번 클릭해야 합니다.
+웹 사이트 개발을 위한 AEM 인스턴스를 설치하려면 작성자 및 게시 인스턴스](/help/sites-deploying/deploy.md#author-and-publish-installs)를 사용하여 [배포 환경을 설정하는 지침을 따르거나 [일반 설치](/help/sites-deploying/deploy.md#default-local-install)를 수행하십시오. 일반 설치에는 AEM Quickstart JAR 파일을 다운로드하고 JAR 파일과 동일한 디렉토리에 license.properties 파일을 지정한 다음 JAR 파일을 두 번 클릭해야 합니다.
 
-AEM을 설치한 후 시작 페이지의 CRXDE Lite 링크를 클릭하여 CRXDE Lite 개발 환경에 액세스합니다.
+AEM을 설치한 후 시작 페이지에서 CRXDE Lite 링크를 클릭하여 CRXDE Lite 개발 환경에 액세스합니다.
 
 ![chlimage_1-100](assets/chlimage_1-100.png)
 
 >[!NOTE]
 >
->기본 포트를 사용하여 로컬로 설치되는 AEM 제작 인스턴스의 CRXDE Lite URL은 [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)입니다.
+>기본 포트를 사용하여 로컬에 설치된 AEM 작성 인스턴스의 CRXDE Lite URL은 [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)입니다.
 
 ## CRXDE Lite {#setting-up-the-project-structure-in-crxde-lite}에서 프로젝트 구조 설정
 
-CRXDE Lite을 사용하여 저장소에서 mywebsite 응용 프로그램 구조를 만듭니다.
+CRXDE Lite을 사용하여 저장소에서 웹 사이트 응용 프로그램 구조를 만듭니다.
 
-1. CRXDE Lite의 왼쪽에 있는 트리에서 **`/apps`** 폴더를 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 만들기 > 폴더 만들기]**&#x200B;를 클릭합니다. **폴더 만들기** 대화 상자에서 폴더 이름으로 `mywebsite`를 입력하고 **확인**&#x200B;을 클릭합니다.
+1. CRXDE Lite 왼쪽에 있는 트리에서 **`/apps`** 폴더를 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 만들기 > 폴더 만들기]**&#x200B;를 클릭합니다. **폴더 만들기** 대화 상자에서 폴더 이름으로 `mywebsite`를 입력하고 **확인**&#x200B;을 클릭합니다.
 1. `/apps/mywebsite` 폴더를 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 만들기 > 폴더 만들기]**&#x200B;를 클릭합니다. **[!UICONTROL 폴더 만들기]** 대화 상자에서 폴더 이름으로 `components`를 입력하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 1. `/apps/mywebsite` 폴더를 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 만들기 > 폴더 만들기]**&#x200B;를 클릭합니다. **[!UICONTROL 폴더 만들기]** 대화 상자에서 폴더 이름으로 `templates`를 입력하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
@@ -85,15 +84,15 @@ CRXDE Lite을 사용하여 저장소에서 mywebsite 응용 프로그램 구조�
 
 1. **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
 
-## 디자인 {#setting-up-the-design} 설정
+## 디자인 설정 {#setting-up-the-design}
 
-이 섹션에서는 디자이너 도구를 사용하여 응용 프로그램의 디자인을 만듭니다. 디자인은 웹 사이트에 대한 CSS 및 이미지 리소스를 제공합니다.
+이 섹션에서는 디자이너 도구를 사용하여 응용 프로그램의 디자인을 만듭니다. 이 디자인은 웹 사이트에 대한 CSS 및 이미지 리소스를 제공합니다.
 
 >[!NOTE]
 >
->다음 링크를 클릭하여 ``mywebsite.zip``을(를) 다운로드합니다. 아카이브는 디자인을 위한 static.css 및 이미지 파일을 포함합니다.
+>다음 링크를 클릭하여 ``mywebsite.zip`` 을 다운로드합니다. 아카이브에 디자인을 위한 static.css 및 이미지 파일이 포함되어 있습니다.
 
-static.css 파일 및 이미지 샘플
+샘플 정적.css 파일 및 이미지
 
 [파일 가져오기](assets/mywebsite.zip)
 
@@ -103,69 +102,69 @@ static.css 파일 및 이미지 샘플
 
 1. 폴더 트리에서 **[!UICONTROL 디자인]** 폴더를 선택한 다음 **[!UICONTROL 새로 만들기 > 새 페이지]**&#x200B;를 클릭합니다. 제목으로 `mywebsite`을 입력하고 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
-1. mywebsite 항목이 표에 나타나지 않으면 트리 또는 테이블을 새로 고칩니다.
+1. mywebsite 항목이 테이블에 나타나지 않으면 트리 또는 테이블을 새로 고칩니다.
 
-1. [http://localhost:4502](/help/sites-administering/webdav-access.md) 의 URL에 대한 WebDAVaccess를 사용하여 다운로드한 mywebsite.zip 파일의 샘플  `static.css` 파일 및  `images` 폴더를  `/etc/designs/mywebsite` 폴더로 복사합니다.
+1. [http://localhost:4502](/help/sites-administering/webdav-access.md) 의 URL에 대한 WebDAVaccess를 사용하여 다운로드한 mywebsite.zip 파일의 샘플  `static.css` 파일 및  `images` 폴더를  `/etc/designs/mywebsite` 폴더에 복사합니다.
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
-## 컨텐트 페이지 템플릿, 구성 요소 및 스크립트 만들기 {#creating-the-contentpage-template-component-and-script}
+## 컨텐츠 페이지 템플릿, 구성 요소 및 스크립트 만들기 {#creating-the-contentpage-template-component-and-script}
 
-이 섹션에서 다음을 만듭니다.
+이 섹션에서 다음을 생성합니다.
 
-* 예제 웹 사이트에서 컨텐츠 페이지를 만드는 데 사용할 컨텐트 페이지 템플릿
-* 컨텐츠 페이지를 렌더링하는 데 사용할 컨텐츠 페이지 구성 요소
-* 컨텐츠 페이지 스크립트
+* 예제 웹 사이트에서 컨텐츠 페이지를 만드는 데 사용할 컨텐츠 페이지 템플릿
+* 컨텐츠의 페이지를 렌더링하는 데 사용할 컨텐츠 페이지 구성 요소입니다
+* 콘텐츠 페이지 스크립트
 
-### 컨텐트 페이지 템플릿 만들기 {#creating-the-contentpage-template}
+### 컨텐츠 페이지 템플릿 만들기 {#creating-the-contentpage-template}
 
-사이트의 웹 페이지의 기초로 사용할 템플릿을 만듭니다.
+사이트의 웹 페이지를 기반으로 사용할 템플릿을 만듭니다.
 
-템플릿은 새 페이지의 기본 컨텐츠를 정의합니다. 복잡한 웹 사이트에서는 여러 템플릿을 사용하여 사이트에서 다양한 유형의 페이지를 만들 수 있습니다. 이 연습에서는 모든 페이지가 하나의 간단한 템플릿을 기반으로 합니다.
+템플릿은 새 페이지의 기본 컨텐츠를 정의합니다. 복잡한 웹 사이트에서는 사이트에서 다른 유형의 페이지를 만드는 데 여러 템플릿을 사용할 수 있습니다. 이 연습에서는 모든 페이지가 하나의 간단한 템플릿을 기반으로 합니다.
 
-1. CRXDE Lite의 폴더 트리에서 `/apps/mywebsite/templates`을 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 만들기 > 템플릿 만들기]**&#x200B;를 클릭합니다.
+1. CRXDE Lite의 폴더 트리에서 `/apps/mywebsite/templates`을 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 만들기 > 템플릿 만들기]**&#x200B;를 클릭하십시오.
 
 1. 템플릿 만들기 대화 상자에서 다음 값을 입력한 다음 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
    * **[!UICONTROL 레이블]**:contentpage
    * **[!UICONTROL 제목]**:내 웹 사이트 컨텐츠 페이지 템플릿
    * **[!UICONTROL 설명]**:내 웹 사이트 컨텐츠 페이지 템플릿입니다.
-   * **[!UICONTROL 리소스 유형]**:웹 사이트/구성 요소/컨텐트 페이지
+   * **[!UICONTROL 리소스 유형]**:웹 사이트/구성 요소/콘텐츠 페이지
 
-   등급 속성에 기본값을 사용합니다.
+   Ranking 속성에 기본값을 사용합니다.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-   리소스 유형은 페이지를 렌더링하는 구성 요소를 식별합니다. 이 경우 컨텐트 페이지 템플릿을 사용하여 만든 모든 페이지는 `mywebsite/components/contentpage` 구성 요소로 렌더링됩니다.
+   리소스 유형은 페이지를 렌더링하는 구성 요소를 식별합니다. 이 경우 컨텐트 페이지 템플릿을 사용하여 만든 모든 페이지는 `mywebsite/components/contentpage` 구성 요소에 의해 렌더링됩니다.
 
-1. 이 템플릿을 사용할 수 있는 페이지의 경로를 지정하려면 더하기 단추를 클릭하고 나타나는 텍스트 상자에 `/content(/.*)?` 을 입력합니다. 그런 다음 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+1. 이 템플릿을 사용할 수 있는 페이지의 경로를 지정하려면 더하기 단추를 클릭하고 표시되는 텍스트 상자에 `/content(/.*)?` 을 입력합니다. 그런 다음 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
-   허용되는 path 속성 값은 *정규 표현식입니다.* 표현식과 일치하는 경로가 있는 페이지는 템플릿을 사용할 수 있습니다. 이 경우 정규 표현식은 `/content` 폴더의 경로와 모든 하위 페이지의 경로와 일치합니다.
+   허용되는 경로 속성 값은 *정규 표현식입니다.* 표현식과 일치하는 경로가 있는 페이지에서는 템플릿을 사용할 수 있습니다. 이 경우 정규 표현식은 `/content` 폴더의 경로와 모든 하위 페이지와 일치합니다.
 
-   작성자가 `/content` 아래에 페이지를 만들면 사용할 수 있는 템플릿 목록에 **[!UICONTROL contentpage]** 템플릿이 표시됩니다.
+   작성자가 `/content` 아래에 페이지를 만들면 **[!UICONTROL contentpage]** 템플릿이 사용할 수 있는 템플릿 목록에 표시됩니다.
 
-1. **[!UICONTROL 허용되는 부모]** 및 **[!UICONTROL 허용되는 하위 항목]** 패널에서 **[!UICONTROL 다음]**&#x200B;을 클릭하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다. CRXDE Lite에서 **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 허용되는 부모]** 및 **[!UICONTROL 허용되는 하위]** 패널에서 **[!UICONTROL 다음]**&#x200B;을 클릭하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다. CRXDE Lite에서 **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
 
    ![chlimage_1-106](assets/chlimage_1-106.png)
 
-#### 컨텐트 페이지 구성 요소 {#creating-the-contentpage-component} 만들기
+#### 컨텐츠 페이지 구성 요소 {#creating-the-contentpage-component} 만들기
 
-컨텐츠를 정의하고 콘텐츠 페이지 템플릿을 사용하는 페이지를 렌더링하는 *구성 요소*&#x200B;를 만듭니다. 구성 요소의 위치는 컨텐츠 페이지 템플릿의 리소스 유형 속성 값과 일치해야 합니다.
+컨텐츠를 정의하고 컨텐트 페이지 템플릿을 사용하는 페이지를 렌더링하는 *구성 요소*&#x200B;를 만듭니다. 구성 요소의 위치는 contentpage 템플릿의 리소스 유형 속성 값과 일치해야 합니다.
 
-1. CRXDE Lite에서 `/apps/mywebsite/components`을 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 만들기 > 구성 요소]**&#x200B;를 클릭합니다.
+1. CRXDE Lite에서 `/apps/mywebsite/components` 을 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 만들기 > 구성 요소]** 를 클릭합니다.
 1. **[!UICONTROL 구성 요소 만들기]** 대화 상자에서 다음 속성 값을 입력합니다.
 
    * **[!UICONTROL 레이블]**:contentpage
    * **[!UICONTROL 제목]**:내 웹 사이트 컨텐츠 페이지 구성 요소
-   * **[!UICONTROL 설명]**:내 웹 사이트 컨텐츠 페이지 구성 요소입니다.
+   * **[!UICONTROL 설명]**:내 웹 사이트 컨텐츠 페이지 구성 요소입니다
 
    ![chlimage_1-107](assets/chlimage_1-107.png)
 
-   새 구성 요소의 위치는 `/apps/mywebsite/components/contentpage`입니다. 이 경로는 컨텐츠 페이지 템플릿의 리소스 유형과 일치합니다(경로의 초기 `/apps/` 부분을 제외한).
+   새 구성 요소의 위치는 `/apps/mywebsite/components/contentpage`입니다. 이 경로는 컨텐츠 페이지 템플릿의 리소스 유형(경로의 초기 `/apps/` 부분을 뺀)에 해당합니다.
 
-   이러한 통신은 템플릿을 구성 요소에 연결하며 웹 사이트의 올바른 기능에 매우 중요합니다.
+   이 서신은 템플릿을 구성 요소에 연결하며 웹 사이트의 올바른 기능에 중요합니다.
 
 1. 대화 상자의 **[!UICONTROL 허용되는 하위]** 패널이 나타날 때까지 **[!UICONTROL 다음]**&#x200B;을 클릭한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭합니다. CRXDE Lite에서 **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
 
@@ -173,11 +172,11 @@ static.css 파일 및 이미지 샘플
 
    ![chlimage_1-108](assets/chlimage_1-108.png)
 
-#### 컨텐트 페이지 구성 요소 스크립트 개발 {#developing-the-contentpage-component-script}
+#### 컨텐츠 페이지 구성 요소 스크립트 개발 {#developing-the-contentpage-component-script}
 
-페이지 컨텐츠를 정의하기 위한 코드를 contentpage.jsp 스크립트에 추가합니다.
+contentpage.jsp 스크립트에 코드를 추가하여 페이지 컨텐츠를 정의합니다.
 
-1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`의 `contentpage.jsp` 파일을 엽니다. 이 파일에는 기본적으로 다음 코드가 포함되어 있습니다.
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`에서 `contentpage.jsp` 파일을 엽니다. 파일에는 기본적으로 다음 코드가 포함되어 있습니다.
 
    ```java
    <%--
@@ -194,7 +193,7 @@ static.css 파일 및 이미지 샘플
    %>
    ```
 
-1. 다음 코드를 복사하여 기본 코드 뒤에 contentpage.jsp에 붙여 넣습니다.
+1. 다음 코드를 복사하여 기본 코드 뒤에 contentpage.jsp에 붙여넣습니다.
 
    ```java
    <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -227,7 +226,7 @@ static.css 파일 및 이미지 샘플
 
    * **[!UICONTROL 제목]**: `My Website`
    * **[!UICONTROL 이름]**: `mywebsite`
-   * **[!UICONTROL 내 웹 사이트 콘텐츠 페이지 템플릿]** 선택
+   * **[!UICONTROL 내 웹 사이트 컨텐츠 페이지 템플릿]** 선택
 
    ![chlimage_1-110](assets/chlimage_1-110.png)
 
@@ -236,31 +235,31 @@ static.css 파일 및 이미지 샘플
 
    * **[!UICONTROL 제목]**:영어
    * **[!UICONTROL 이름]**:en
-   * **[!UICONTROL 내 웹 사이트 콘텐츠 페이지 템플릿]** 선택
+   * **[!UICONTROL 내 웹 사이트 컨텐츠 페이지 템플릿]** 선택
 
 1. 폴더 트리에서 `/Websites/My Website/English` 페이지를 선택하고 **[!UICONTROL 새로 만들기 > 새 페이지]**&#x200B;를 클릭합니다.
 1. **[!UICONTROL 페이지 만들기]** 대화 상자에서 다음 속성 값을 입력한 다음 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
    * **[!UICONTROL 제목]**:제품
-   * **[!UICONTROL 내 웹 사이트 콘텐츠 페이지 템플릿]** 선택
+   * **[!UICONTROL 내 웹 사이트 컨텐츠 페이지 템플릿]** 선택
 
 1. 폴더 트리에서 `/Websites/My Website/English` 페이지를 선택하고 **[!UICONTROL 새로 만들기 > 새 페이지]**&#x200B;를 클릭합니다.
 1. **[!UICONTROL 페이지 만들기]** 대화 상자에서 다음 속성 값을 입력한 다음 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
    * **제목**:서비스
-   * **[!UICONTROL 내 웹 사이트 콘텐츠 페이지 템플릿]** 선택
+   * **[!UICONTROL 내 웹 사이트 컨텐츠 페이지 템플릿]** 선택
 
 1. 폴더 트리에서 `/Websites/My Website/English` 페이지를 선택하고 **[!UICONTROL 새로 만들기 > 새 페이지]**&#x200B;를 클릭합니다.
 1. **[!UICONTROL 페이지 만들기]** 대화 상자에서 다음 속성 값을 입력한 다음 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
    * **제목**:고객
-   * **[!UICONTROL 내 웹 사이트 콘텐츠 페이지 템플릿]** 선택
+   * **[!UICONTROL 내 웹 사이트 컨텐츠 페이지 템플릿]** 선택
 
-   구조는 다음과 같습니다.
+   구조가 다음과 같습니다.
 
    ![chlimage_1-111](assets/chlimage_1-111.png)
 
-1. 페이지를 mywebsite 디자인에 연결하려면 CRXDE Lite에서 `/content/mywebsite/en/jcr:content` 노드를 선택합니다. **[!UICONTROL 속성]** 탭에서 새 속성에 대해 다음 값을 입력한 다음 추가를 클릭합니다.
+1. 페이지를 웹 사이트 디자인에 연결하려면 CRXDE Lite에서 `/content/mywebsite/en/jcr:content` 노드를 선택합니다. **[!UICONTROL 속성]** 탭에서 새 속성에 대해 다음 값을 입력한 다음 추가를 클릭합니다.
 
    * **[!UICONTROL 이름]**:cq:designPath
    * **[!UICONTROL 유형]**:문자열
@@ -268,28 +267,28 @@ static.css 파일 및 이미지 샘플
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
-1. 새 웹 브라우저 탭 또는 창에서 [http://localhost:4502/content/mywebsite/en/products.html](http://localhost:4502/content/mywebsite/en/products.html)을(를) 열어 제품 페이지를 확인합니다.
+1. 새 웹 브라우저 탭 또는 창에서 [http://localhost:4502/content/mywebsite/en/products.html](http://localhost:4502/content/mywebsite/en/products.html)을 열어 제품 페이지를 확인합니다.
 
    ![chlimage_1-113](assets/chlimage_1-113.png)
 
-### 컨텐츠 페이지 스크립트 개선{#enhancing-the-contentpage-script}
+### 컨텐츠 페이지 스크립트 개선 {#enhancing-the-contentpage-script}
 
-이 섹션에서는 AEM 기반 구성 요소 스크립트를 사용하여 컨텐츠 페이지 스크립트를 향상시키고 자체 스크립트를 작성하는 방법을 설명합니다.
+이 섹션에서는 AEM 기초 구성 요소 스크립트를 사용하여 컨텐츠 페이지 스크립트를 강화하고 스크립트를 작성하는 방법을 설명합니다.
 
 **[!UICONTROL 제품]** 페이지는 다음과 같이 표시됩니다.
 
 ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
-#### 기본 페이지 스크립트 사용 {#using-the-foundation-page-scripts}
+#### 기초 페이지 스크립트 사용 {#using-the-foundation-page-scripts}
 
-이 연습에서는 상위 유형이 AEM 페이지 구성 요소되도록 pagecontent 구성 요소를 구성합니다. 구성 요소는 상위 유형의 기능을 상속하므로 페이지 컨텐츠는 페이지 구성 요소의 스크립트 및 속성을 상속합니다.
+이 연습에서는 상위 유형이 AEM 페이지 구성 요소되도록 Pagecontent 구성 요소를 구성합니다. 구성 요소는 상위 유형의 기능을 상속하므로 페이지 컨텐츠는 페이지 구성 요소의 스크립트와 속성을 상속합니다.
 
-예를 들어, 구성 요소 JSP 코드에서 상위 유형 구성 요소가 제공하는 스크립트를 구성 요소에 포함된 것처럼 참조할 수 있습니다.
+예를 들어, 구성 요소 JSP 코드에서는 수퍼 유형 구성 요소가 제공하는 스크립트를 구성 요소에 포함된 것처럼 참조할 수 있습니다.
 
 1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage` 노드에 속성을 추가합니다.
 
    1. `/apps/mywebsite/components/contentpage` 노드를 선택합니다.
-   1. [속성] 탭 아래쪽에 다음 속성 값을 입력한 다음 [추가]를 클릭합니다.
+   1. 속성 탭 하단에서 다음 속성 값을 입력한 다음 추가를 클릭합니다.
 
       * **[!UICONTROL 이름]**:sling:resourceSuperType
       * **[!UICONTROL 유형]**:문자열
@@ -309,12 +308,12 @@ static.css 파일 및 이미지 샘플
    </html>
    ```
 
-1. 변경 내용을 저장합니다.
-1. 브라우저에서 **[!UICONTROL 제품]** 페이지를 다시 로드합니다. 다음과 같습니다.
+1. 변경 사항을 저장합니다.
+1. 브라우저에서 **[!UICONTROL Products]** 페이지를 다시 로드합니다. 다음과 같습니다.
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)
 
-   페이지 소스를 열어 head.jsp 및 body.jsp 스크립트가 생성한 javascript 및 HTML 요소를 확인합니다. 페이지를 열 때 다음 스크립트 조각이 사이드킥을 엽니다.
+   페이지 소스를 열어 head.jsp 및 body.jsp 스크립트가 생성한 javascript 및 HTML 요소를 확인합니다. 페이지를 열 때 다음 스크립트 코드 조각은 사이드 킥을 엽니다.
 
    ```java
    CQ.WCM.launchSidekick("/content/mywebsite/en/products",
@@ -323,18 +322,18 @@ static.css 파일 및 이미지 샘플
                 }); 
    ```
 
-#### 자체 스크립트 사용 {#using-your-own-scripts}
+#### 자신만의 스크립트 사용 {#using-your-own-scripts}
 
-이 단원에서는 각 스크립트는 페이지 본문의 일부를 생성하는 스크립트를 여러 개 만듭니다. 그런 다음 AEM 페이지 구성 요소의 body.jsp를 재정의하기 위해 pagecontent 구성 요소에서 body.jsp 파일을 만듭니다. body.jsp 파일에는 페이지 본문의 다른 부분을 생성하는 스크립트가 포함됩니다.
+이 섹션에서는 각각 페이지 본문의 일부를 생성하는 여러 스크립트를 만듭니다. 그런 다음 pagecontent 구성 요소에서 body.jsp 파일을 만들어 AEM Page 구성 요소의 body.jsp를 재정의합니다. body.jsp 파일에는 페이지 본문의 다른 부분을 생성하는 스크립트가 포함됩니다.
 
-**팁: 구성 요소** 가 구성 요소의 상위 유형에 있는 파일과 동일한 이름 및 상대 위치를 가진 파일을 포함하는 경우 이를 오버레이라고  *합니다*.
+**팁:** 구성 요소에 구성 요소의 수퍼 유형에서 파일과 이름과 상대 위치가 같은 파일이 포함되어 있으면  *오버레이*&#x200B;라고 합니다.
 
 1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage` 아래에 `left.jsp` 파일을 만듭니다.
 
-   1. 노드 `/apps/mywebsite/components/contentpage`을 마우스 오른쪽 단추로 클릭한 다음 **[!UICONTROL 만들기]**&#x200B;파일 만들기&#x200B;]**를 선택합니다.**[!UICONTROL 
-   1. 윈도우에서 `left.jsp`을 ** Name**으로 입력하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
+   1. 노드 `/apps/mywebsite/components/contentpage`를 마우스 오른쪽 단추로 클릭한 다음 **[!UICONTROL 만들기]**&#x200B;를 선택하고 **[!UICONTROL 파일 만들기]**&#x200B;를 선택합니다.
+   1. 창에서 `left.jsp` 을 ** 이름**으로 입력하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
-1. 기존 내용을 제거하고 다음 코드로 바꾸려면 `left.jsp` 파일을 편집합니다.
+1. 기존 컨텐츠를 제거하고 다음 코드로 대체하려면 `left.jsp` 파일을 편집합니다.
 
    ```java
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -348,10 +347,10 @@ static.css 파일 및 이미지 샘플
 1. 변경 사항을 저장합니다.
 1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage` 아래에 `center.jsp` 파일을 만듭니다.
 
-   1. `/apps/mywebsite/components/contentpage` 노드를 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 만들기]**&#x200B;를 선택한 다음 **[!UICONTROL 파일 만들기]**&#x200B;를 선택합니다.
-   1. 대화 상자에서 `center.jsp`을 **[!UICONTROL 이름]**&#x200B;으로 입력하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
+   1. 노드 `/apps/mywebsite/components/contentpage`를 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 만들기]**&#x200B;를 선택한 다음 **[!UICONTROL 파일 만들기]**&#x200B;를 선택합니다.
+   1. 대화 상자에서 `center.jsp` 을 **[!UICONTROL 이름]**&#x200B;으로 입력하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
-1. `center.jsp` 파일을 편집하여 기존 내용을 제거하고 다음 코드로 바꿉니다.
+1. 기존 컨텐츠를 제거하고 다음 코드로 대체하려면 `center.jsp` 파일을 편집합니다.
 
    ```java
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -365,10 +364,10 @@ static.css 파일 및 이미지 샘플
 1. 변경 사항을 저장합니다.
 1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage` 아래에 `right.jsp` 파일을 만듭니다.
 
-   1. `/apps/mywebsite/components/contentpage` 노드를 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 만들기]**&#x200B;를 선택한 다음 **[!UICONTROL 파일 만들기]**&#x200B;를 선택합니다.
-   1. 대화 상자에서 `right.jsp`을 **[!UICONTROL 이름]**&#x200B;으로 입력하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
+   1. 노드 `/apps/mywebsite/components/contentpage`를 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 만들기]**&#x200B;를 선택한 다음 **[!UICONTROL 파일 만들기]**&#x200B;를 선택합니다.
+   1. 대화 상자에서 `right.jsp` 을 **[!UICONTROL 이름]**&#x200B;으로 입력하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
-1. 기존 내용을 제거하고 다음 코드로 바꾸려면 `right.jsp` 파일을 편집합니다.
+1. 기존 컨텐츠를 제거하고 다음 코드로 대체하려면 `right.jsp` 파일을 편집합니다.
 
    ```java
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -379,7 +378,7 @@ static.css 파일 및 이미지 샘플
 
 1. 변경 사항을 저장합니다.
 1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage` 아래에 `body.jsp` 파일을 만듭니다.
-1. 기존 내용을 제거하고 다음 코드로 바꾸려면 `body.jsp` 파일을 편집합니다.
+1. 기존 컨텐츠를 제거하고 다음 코드로 대체하려면 `body.jsp` 파일을 편집합니다.
 
    ```java
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -399,21 +398,21 @@ static.css 파일 및 이미지 샘플
    ```
 
 1. 변경 사항을 저장합니다.
-1. 브라우저에서 **[!UICONTROL 제품]** 페이지를 다시 로드합니다. 다음과 같습니다.
+1. 브라우저에서 **[!UICONTROL Products]** 페이지를 다시 로드합니다. 다음과 같습니다.
 
    ![chlimage_1-6](assets/chlimage_1-6.jpeg)
 
-### 위쪽 탐색 구성 요소 만들기 {#creating-the-top-navigation-component}
+### 위쪽 탐색 구성 요소 {#creating-the-top-navigation-component} 만들기
 
-이 섹션에서는 탐색을 용이하게 하기 위해 웹 사이트의 모든 최상위 수준 페이지에 대한 링크를 표시하는 구성 요소를 만듭니다. 이 구성 요소 컨텐츠는 컨텐츠 페이지 템플릿을 사용하여 만든 모든 페이지의 맨 위에 표시됩니다.
+이 섹션에서는 탐색을 쉽게 하기 위해 웹 사이트의 모든 상위 수준 페이지에 대한 링크를 표시하는 구성 요소를 만듭니다. 이 구성 요소 컨텐츠는 컨텐트 페이지 템플릿을 사용하여 만든 모든 페이지의 맨 위에 나타납니다.
 
-위쪽 탐색 구성 요소(위쪽 탐색 도구)의 첫 번째 버전에서는 탐색 항목은 텍스트 링크만 표시됩니다. 두 번째 버전에서는 이미지 탐색 링크가 포함된 최상위 탐색을 구현합니다.
+위쪽 탐색 구성 요소의 첫 번째 버전(위쪽 탐색)에서는 탐색 항목이 텍스트 링크만 됩니다. 두 번째 버전에서는 이미지 탐색 링크를 사용하여 위쪽 탐색을 구현합니다.
 
-위쪽 탐색은 다음과 같이 표시됩니다.
+위쪽 탐색은 다음과 같습니다.
 
 ![chlimage_1-114](assets/chlimage_1-114.png)
 
-#### 위쪽 탐색 구성 요소 만들기 {#creating-the-top-navigation-component-1}
+#### 위쪽 탐색 구성 요소 {#creating-the-top-navigation-component-1} 만들기
 
 1. CRXDE Lite에서 `/apps/mywebsite/components`을 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 만들기]**&#x200B;를 선택한 다음 **[!UICONTROL 구성 요소 만들기]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 구성 요소 만들기]** 창에서 다음을 입력합니다.
@@ -422,11 +421,11 @@ static.css 파일 및 이미지 샘플
    * **[!UICONTROL 제목]**: `My Top Navigation Component`
    * **[!UICONTROL 설명]**: `This is My Top Navigation Component`
 
-1. **[!UICONTROL 확인]**&#x200B;을 클릭하는 마지막 창으로 돌아올 때까지 **[!UICONTROL 다음]**&#x200B;을 클릭합니다. 변경 내용을 저장합니다.
+1. **[!UICONTROL 다음]**&#x200B;을 클릭하여 **[!UICONTROL 확인]**&#x200B;을 클릭하는 마지막 창으로 이동할 때까지 클릭합니다. 변경 사항을 저장합니다.
 
-#### 텍스트 링크가 있는 위쪽 탐색 스크립트 만들기 {#creating-the-top-navigation-script-with-textual-links}
+#### 텍스트 링크 {#creating-the-top-navigation-script-with-textual-links}로 위쪽 탐색 스크립트 만들기
 
-하위 페이지에 대한 텍스트 링크를 생성하려면 렌더링 스크립트를 최상위 탐색에 추가합니다.
+위쪽 탐색에 렌더링 스크립트를 추가하여 하위 페이지에 대한 텍스트 링크를 생성합니다.
 
 1. CRXDE Lite에서 `/apps/mywebsite/components/topnav` 아래의 `topnav.jsp` 파일을 엽니다.
 1. 다음 코드를 복사하여 붙여 넣어 해당 코드를 바꿉니다.
@@ -451,11 +450,11 @@ static.css 파일 및 이미지 샘플
    %> 
    ```
 
-#### 컨텐트 페이지 구성 요소 {#including-top-navigation-in-the-contentpage-component}에 위쪽 탐색 포함
+#### 컨텐츠 페이지 구성 요소 {#including-top-navigation-in-the-contentpage-component}에 위쪽 탐색 포함
 
-콘텐츠 페이지 구성 요소에 상위 탐색을 포함하려면:
+contentpage 구성 요소에 topnav를 포함하려면
 
-1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`에 있는 `body.jsp`을 열고 다음을 바꿉니다.
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`에서 `body.jsp` 을 열고 다음을 바꿉니다.
 
    ```xml
    <div class="topnav">topnav</div>
@@ -468,39 +467,39 @@ static.css 파일 및 이미지 샘플
    ```
 
 1. 변경 사항을 저장합니다.
-1. 브라우저에서 **[!UICONTROL 제품]** 페이지를 다시 로드합니다. 위쪽 탐색은 다음과 같이 표시됩니다.
+1. 브라우저에서 **[!UICONTROL Products]** 페이지를 다시 로드합니다. 위쪽 탐색은 다음과 같이 나타납니다.
 
    ![chlimage_1-115](assets/chlimage_1-115.png)
 
-#### 자막 {#enhancing-pages-with-subtitles}을 사용하여 페이지 향상
+#### 자막 {#enhancing-pages-with-subtitles} 을 사용하여 페이지 개선
 
-**[!UICONTROL 페이지]** 구성 요소는 페이지에 자막을 제공할 수 있는 속성을 정의합니다. 페이지 컨텐츠에 대한 정보를 제공하는 자막을 추가합니다.
+**[!UICONTROL Page]** 구성 요소는 페이지에 자막을 제공할 수 있는 속성을 정의합니다. 페이지 컨텐츠에 대한 정보를 제공하는 자막을 추가합니다.
 
 1. 브라우저에서 **[!UICONTROL 제품]** 페이지를 엽니다.
 1. 사이드 킥의 **[!UICONTROL 페이지]** 탭에서 **[!UICONTROL 페이지 속성]**&#x200B;을 클릭합니다.
-1. 대화 상자의 **[!UICONTROL 기본]** 탭에서 **[!UICONTROL 추가 제목 및 설명]**&#x200B;을 확장하고 **[!UICONTROL 자막]** 속성에 대해 `what we do`을 입력합니다. **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
+1. 대화 상자의 **[!UICONTROL 기본]** 탭에서 **[!UICONTROL 더 많은 제목 및 설명]**&#x200B;을 확장하고 **[!UICONTROL 부제목]** 속성에 대해 `what we do`을 입력합니다. **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 1. 이전 단계를 반복하여 서비스&#x200B;**에 대한 부제목**&#x200B;을 **[!UICONTROL 서비스]** 페이지에 추가합니다.
-1. 이전 단계를 반복하여 **Customers]** 페이지에 **에 대한 트러스트를 추가합니다.**[!UICONTROL 
+1. 이전 단계를 반복하여 **[!UICONTROL Customers]** 페이지에 도달하는 신뢰 **를 추가합니다.**
 
-   **팁: CRXDE Lite** 에서 /content/mywebsite/en/products/jcr:content 노드를 선택하여 자막 속성이 추가되었는지 확인합니다.
+   **팁:** CRXDE Lite에서 /content/mywebsite/en/products/jcr:content 노드를 선택하여 자막 속성이 추가되었는지 확인합니다.
 
 #### 이미지 링크 {#enhance-top-navigation-by-using-image-links}를 사용하여 위쪽 탐색 기능 향상
 
-탐색 컨트롤에 하이퍼텍스트 대신 이미지 링크를 사용하도록 topnav 구성 요소의 렌더링 스크립트를 개선합니다. 이미지에는 링크 대상의 제목과 자막이 포함됩니다.
+탐색 컨트롤에 하이퍼텍스트 대신 이미지 링크를 사용하도록 topnav 구성 요소의 렌더링 스크립트를 개선합니다. 이미지에는 링크 대상의 제목과 부제가 포함됩니다.
 
 이 연습에서는 [Sling 요청 처리](/help/sites-developing/the-basics.md#sling-request-processing)를 보여 줍니다. topnav.jsp 스크립트는 페이지 탐색 링크에 사용할 이미지를 동적으로 생성하는 스크립트를 호출하도록 수정되었습니다. 이 연습에서 Sling은 이미지 소스 파일의 URL을 구문 분석하여 이미지를 렌더링하는 데 사용할 스크립트를 결정합니다.
 
-예를 들어 제품 페이지에 대한 이미지 링크의 소스는 http://localhost:4502/content/mywebsite/en/products.navimage.png일 수 있습니다. Sling은 이 URL을 구문 분석하여 리소스를 렌더링하는 데 사용할 리소스 유형과 스크립트를 결정합니다.
+예를 들어 제품 페이지에 대한 이미지 링크의 소스는 http://localhost:4502/content/mywebsite/en/products.navimage.png일 수 있습니다. Sling은 이 URL을 구문 분석하여 리소스 유형과 리소스를 렌더링하는 데 사용할 스크립트를 결정합니다.
 
-1. Sling은 리소스의 경로를 `/content/mwebysite/en/products.png.`으로 결정합니다.
-1. Sling은 `/content/mywebsite/en/products` 노드로 이 경로와 일치합니다.
-1. Sling은 이 노드의 `sling:resourceType`을(를) `mywebsite/components/contentpage`으로 결정합니다.
+1. Sling은 리소스의 경로를 `/content/mwebysite/en/products.png.`으로 결정합니다
+1. Sling은 `/content/mywebsite/en/products` 노드를 사용하여 이 경로와 일치합니다.
+1. Sling은 이 노드의 `sling:resourceType`을 `mywebsite/components/contentpage`으로 결정합니다.
 
-1. Sling은 URL 선택기( `navimage`) 및 파일 이름 확장명( `png`)과 가장 잘 일치하는 스크립트를 이 구성 요소에서 찾습니다.
+1. Sling은 URL 선택기( `navimage`) 및 파일 이름 확장자( `png`)와 가장 일치하는 스크립트를 이 구성 요소에서 찾습니다.
 
-이 연습에서 Sling은 이러한 URL을 사용자가 만든 /apps/mywebsite/components/contentpage/navimage.png.java 스크립트와 일치시킵니다.
+이 연습에서 Sling은 이러한 URL을 사용자가 작성하는 /apps/mywebsite/components/contentpage/navimage.png.java 스크립트에 연결합니다.
 
-1. CRXDE Lite에서 `/apps/mywebsite/components/topnav.`앵커 요소의 내용 찾기(14행) 아래에 있는 `topnav.jsp`을 엽니다.
+1. CRXDE Lite에서 `/apps/mywebsite/components/topnav.`앵커 요소의 컨텐츠 찾기(14줄)에서 `topnav.jsp`를 엽니다.
 
    ```xml
    <%=child.getTitle() %>
@@ -516,12 +515,12 @@ static.css 파일 및 이미지 샘플
 1. `/apps/mywebsite/components/contentpage` 노드를 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 만들기 > 파일 만들기]**&#x200B;를 클릭합니다.
 1. **[!UICONTROL 파일 만들기]** 창의 **[!UICONTROL 이름]**&#x200B;에 `navimage.png.java`를 입력합니다.
 
-   .java 파일 이름 확장자는 Sling에 Apache Sling 스크립팅 Java 지원을 사용하여 스크립트를 컴파일하고 서블릿을 만들어야 함을 나타냅니다.
+   .java 파일 이름 확장자는 Apache Sling Scripting Java 지원을 사용하여 스크립트를 컴파일하고 서블릿을 만들어야 함을 Sling에 나타냅니다.
 
-1. 다음 코드를 `navimage.png.java.`에 복사합니다. 코드는 AbstractImageServlet 클래스를 확장합니다.
+1. 다음 코드를 `navimage.png.java.`에 복사합니다. 이 코드는 AbstractImageServlet 클래스를 확장합니다.
 
    * [](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) AbstractImageServlet은 현재 리소스의 속성을 저장하는 ImageContext 개체를 만듭니다.
-   * 리소스의 부모 페이지는 ImageContext 개체에서 추출됩니다. 그런 다음 페이지 제목과 자막을 가져옵니다.
+   * 리소스의 상위 페이지는 ImageContext 개체에서 추출됩니다. 그러면 페이지 제목과 부제목을 얻습니다.
    * [](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ImageHelper.html) ImageHelperis는 사이트 디자인의 navimage_bg.jpg 파일, 페이지 제목 및 페이지 자막에서 이미지를 생성하는 데 사용됩니다.
 
    ```java
@@ -640,34 +639,34 @@ static.css 파일 및 이미지 샘플
    ```
 
 1. 변경 사항을 저장합니다.
-1. 브라우저에서 **[!UICONTROL 제품]** 페이지를 다시 로드합니다. 이제 위쪽 탐색이 다음과 같이 표시됩니다.
+1. 브라우저에서 **[!UICONTROL Products]** 페이지를 다시 로드합니다. 이제 위쪽 탐색이 다음과 같이 나타납니다.
 
    ![screen_shot_2012-03-07at10047pm](assets/screen_shot_2012-03-07at10047pm.png)
 
-### 목록 하위 구성 요소 {#creating-the-list-children-component} 만들기
+### 목록 하위 구성 요소 만들기 {#creating-the-list-children-component}
 
-페이지 제목, 설명 및 날짜(예: 제품 페이지)를 포함하는 페이지 링크 목록을 생성하는 listchildren 구성 요소를 만듭니다. 링크는 현재 페이지의 하위 페이지 또는 구성 요소 대화 상자에 지정된 루트 페이지의 하위 페이지를 대상으로 합니다.
+제목, 설명 및 페이지 날짜(예: 제품 페이지)를 포함하는 페이지 링크 목록을 생성하는 목록 하위 구성 요소를 만듭니다. 링크는 현재 페이지의 하위 페이지나 구성 요소 대화 상자에 지정된 루트 페이지의 하위 페이지를 타겟팅합니다.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
 #### 제품 페이지 만들기 {#creating-product-pages}
 
-**[!UICONTROL 제품]** 페이지 아래에 있는 두 페이지를 만듭니다. 각 페이지에 대해 2개의 특정 제품을 설명하는 제목, 설명 및 날짜를 설정합니다.
+**[!UICONTROL Products]** 페이지 아래에 있는 두 페이지를 만듭니다. 두 가지 특정 제품을 설명하는 각 페이지에 대해 제목, 설명 및 날짜를 설정합니다.
 
 1. **[!UICONTROL 웹 사이트]** 페이지의 폴더 트리에서 **[!UICONTROL 웹 사이트/내 웹 사이트/영어/제품]** 항목을 선택하고 **[!UICONTROL 새로 만들기 > 새 페이지]**&#x200B;를 클릭합니다.
-1. 대화 상자에 다음 속성 값을 입력한 다음 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+1. 대화 상자에서 다음 속성 값을 입력한 다음 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
    * **[!UICONTROL 제목]**:제품 1.
    * **[!UICONTROL 이름]**:product1.
-   * **[!UICONTROL 내 웹 사이트 콘텐츠 페이지 템플릿]** 선택
+   * **[!UICONTROL 내 웹 사이트 컨텐츠 페이지 템플릿]** 선택
 
 1. 다음 속성 값을 사용하여 제품 아래에 다른 페이지를 만듭니다.
 
    * **[!UICONTROL 제목]**:제품 2
    * **[!UICONTROL 이름]**:product2
-   * **[!UICONTROL 내 웹 사이트 콘텐츠 페이지 템플릿]** 선택
+   * **[!UICONTROL 내 웹 사이트 컨텐츠 페이지 템플릿]** 선택
 
-1. CRXDE Lite에서 제품 1 페이지에 대한 설명 및 날짜를 설정합니다.
+1. CRXDE Lite에서 제품 1 페이지의 설명 및 날짜를 설정합니다.
 
    1. `/content/mywebsite/en/products/product1/jcr:content` 노드를 선택합니다.
    1. **[!UICONTROL 속성]** 탭에서 다음 값을 입력합니다.
@@ -678,7 +677,7 @@ static.css 파일 및 이미지 샘플
    1. **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
    1. **[!UICONTROL 속성]** 탭에서 다음 값을 사용하여 다른 속성을 만듭니다.
 
-      * **[!UICONTROL 이름]**:date
+      * **[!UICONTROL 이름]**:날짜
       * **[!UICONTROL 유형]**:문자열
       * **[!UICONTROL 값]**:02/14/2008
       * **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
@@ -693,11 +692,11 @@ static.css 파일 및 이미지 샘플
 
       * **[!UICONTROL 이름]**:jcr:description
       * **[!UICONTROL 유형]**:문자열
-      * **[!UICONTROL 값]**:제품 2에 대한 설명입니다.
+      * **[!UICONTROL 값]**:제품 2!
    1. **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
    1. 동일한 텍스트 상자에서 이전 값을 다음 값으로 바꿉니다.
 
-      * **[!UICONTROL 이름]**:date
+      * **[!UICONTROL 이름]**:날짜
       * **[!UICONTROL 유형]**:문자열
       * **[!UICONTROL 값]**:05/11/2012
       * **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
@@ -705,18 +704,18 @@ static.css 파일 및 이미지 샘플
 
 
 
-#### 목록 하위 구성 요소 {#creating-the-list-children-component-1} 만들기
+#### 목록 하위 구성 요소 만들기 {#creating-the-list-children-component-1}
 
-listchildren 구성 요소를 만들려면:
+listchildren 구성 요소를 만들려면
 
 1. CRXDE Lite에서 `/apps/mywebsite/components`을 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 만들기]**&#x200B;를 선택한 다음 **[!UICONTROL 구성 요소 만들기]**&#x200B;를 선택합니다.
-1. 대화 상자에 다음 속성 값을 입력한 다음 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+1. 대화 상자에서 다음 속성 값을 입력한 다음 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
-   * **[!UICONTROL 레이블]**:listchildren.
-   * **[!UICONTROL 제목]**:내 Listchildren 구성 요소를 참조하십시오.
+   * **[!UICONTROL 레이블]**:목록을 작성하십시오.
+   * **[!UICONTROL 제목]**:내 Listchildren 구성 요소입니다.
    * **[!UICONTROL 설명]**:My Listchildren 구성 요소입니다.
 
-1. **[!UICONTROL 허용되는 하위 항목]** 패널이 나타날 때까지 **[!UICONTROL 다음]**&#x200B;을 계속 클릭한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 허용되는 하위]** 패널이 나타날 때까지 **[!UICONTROL 다음]**&#x200B;을 계속 클릭하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
 #### 목록 하위 스크립트 만들기 {#creating-the-list-children-script}
 
@@ -758,7 +757,7 @@ listchildren 구성 요소 속성을 구성하는 데 사용되는 대화 상자
 1. listchildren 구성 요소 아래에 대화 상자 노드를 만듭니다.
 
    1. CRXDE Lite에서 `/apps/mywebsite/components/listchildren`노드를 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 만들기 > 대화 상자 만들기]**&#x200B;를 클릭합니다.
-   1. 대화 상자에서 다음 속성 값을 입력하고 [확인]을 클릭합니다.
+   1. 대화 상자에서 다음 속성 값을 입력하고 확인을 클릭합니다
 
       * **[!UICONTROL 레이블]**: `dialog`
       * **[!UICONTROL 제목]**: `Edit Component` 확인을  **[!UICONTROL 클릭합니다]**.
@@ -770,7 +769,7 @@ listchildren 구성 요소 속성을 구성하는 데 사용되는 대화 상자
    ![screen_shot_2012-03-07at50415pm](assets/screen_shot_2012-03-07at50415pm.png)
 
 1. `/apps/mywebsite/components/listchildren/dialog/items/items/tab1` 노드를 선택합니다.
-1. **[!UICONTROL 속성]** 탭에서 **[!UICONTROL title]** 속성 값을 `List Children`로 변경합니다.
+1. **[!UICONTROL 속성]** 탭에서 **[!UICONTROL title]** 속성의 값을 `List Children`로 변경합니다
 
    ![chlimage_1-117](assets/chlimage_1-117.png)
 
@@ -783,24 +782,24 @@ listchildren 구성 요소 속성을 구성하는 데 사용되는 대화 상자
 
 1. 다음 속성 값을 사용하여 항목 노드 아래에 노드를 만듭니다.
 
-   * **[!UICONTROL 이름]**:목록 루트
+   * **[!UICONTROL 이름]**:listroot
    * **[!UICONTROL 유형]**:cq:Widget
 
    ![screen_shot_2012-03-07at51031pm](assets/screen_shot_2012-03-07at51031pm.png)
 
-1. 목록 루트 노드의 속성을 추가하여 텍스트 필드로 구성합니다. 다음 표의 각 행은 속성을 나타냅니다. 완료되면 **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
+1. 목록 루트 노드에 대한 속성을 추가하여 텍스트 필드로 구성합니다. 다음 테이블의 각 행은 속성을 나타냅니다. 완료되면 **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
 
    | 이름 | 유형 | 값 |
    |---|---|---|
    | fieldLabel | 문자열 | 목록 루트의 경로 |
    | 이름 | 문자열 | ./listroot |
-   | xtype | 문자열 | textfield |
+   | xtype | 문자열 | 텍스트 필드 |
 
    ![screen_shot_2012-03-07at51433pm](assets/screen_shot_2012-03-07at51433pm.png)
 
 #### 컨텐트 페이지 구성 요소 {#including-list-children-in-the-contentpage-component}에 목록 하위 포함
 
-컨텐츠 페이지 구성 요소에 listchildren 구성 요소를 포함하려면 다음과 같이 하십시오.
+컨텐트 페이지 구성 요소에 listchildren 구성 요소를 포함하려면 다음과 같이 진행하십시오.
 
 1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage` 아래의 `left.jsp` 파일을 열고 다음 코드(4행)를 찾습니다.
 
@@ -820,27 +819,27 @@ listchildren 구성 요소 속성을 구성하는 데 사용되는 대화 상자
 
 이 구성 요소의 전체 작업을 보려면 제품 페이지를 볼 수 있습니다.
 
-* 상위 페이지(&quot;목록 루트 경로&quot;)가 정의되지 않은 경우입니다.
-* 상위 페이지(&quot;목록 루트 경로&quot;)가 정의된 경우
+* 상위 페이지(&quot;목록 루트의 경로&quot;)가 정의되지 않은 경우.
+* 상위 페이지(&quot;목록 루트의 경로&quot;)가 정의된 경우
 
-1. 브라우저에서 **[!UICONTROL 제품]** 페이지를 다시 로드합니다. listchildren 구성 요소는 다음과 같이 표시됩니다.
+1. 브라우저에서 **[!UICONTROL Products]** 페이지를 다시 로드합니다. listchildren 구성 요소는 다음과 같이 나타납니다.
 
    ![chlimage_1-118](assets/chlimage_1-118.png)
 
 1. ![chlimage_1-119](assets/chlimage_1-119.png)
 
-1. 목록 루트의 경로로 다음을 입력합니다.`/content/mywebsite/en`. **[!UICONTROL 확인]**&#x200B;을 클릭합니다. 이제 페이지의 listchildren 구성 요소는 다음과 같이 표시됩니다.
+1. 목록 루트의 경로로 다음을 입력합니다.`/content/mywebsite/en` **[!UICONTROL 확인]**&#x200B;을 클릭합니다. 이제 페이지의 listchildren 구성 요소는 다음과 같습니다.
 
    ![chlimage_1-120](assets/chlimage_1-120.png)
 
-### 로고 구성 요소 {#creating-the-logo-component} 만들기
+### 로고 구성 요소 만들기 {#creating-the-logo-component}
 
 회사 로고를 표시하고 사이트의 홈 페이지에 대한 링크를 제공하는 구성 요소를 만듭니다. 구성 요소에는 속성 값이 사이트 디자인(/etc/designs/mywebsite)에 저장되도록 디자인 모드 대화 상자가 포함되어 있습니다.
 
 * 속성 값은 디자인을 사용하는 페이지에 추가되는 구성 요소의 모든 인스턴스에 적용됩니다.
-* 속성은 디자인을 사용하는 페이지에 있는 구성 요소의 인스턴스를 사용하여 구성할 수 있습니다.
+* 속성은 디자인을 사용하는 페이지에 있는 구성 요소의 모든 인스턴스를 사용하여 구성할 수 있습니다.
 
-디자인 모드 대화 상자에는 이미지와 링크 경로를 설정하는 속성이 포함되어 있습니다. 로고 구성 요소는 웹 사이트에 있는 모든 페이지의 왼쪽 상단에 배치됩니다.
+디자인 모드 대화 상자에는 이미지와 링크 경로를 설정하기 위한 속성이 포함되어 있습니다. 로고 구성 요소는 웹 사이트에 있는 모든 페이지의 왼쪽 상단에 배치됩니다.
 
 다음과 같이 표시됩니다.
 
@@ -848,7 +847,7 @@ listchildren 구성 요소 속성을 구성하는 데 사용되는 대화 상자
 
 >[!NOTE]
 >
->Adobe Experience Manager은 보다 완벽한 기능을 갖춘 로고 구성 요소( `/libs/foundation/components/logo`)를 제공합니다.
+>Adobe Experience Manager은 더 많은 기능을 갖춘 로고 구성 요소( `/libs/foundation/components/logo`)를 제공합니다.
 
 #### 로고 구성 요소 노드 {#creating-the-logo-component-node} 만들기
 
@@ -861,14 +860,14 @@ listchildren 구성 요소 속성을 구성하는 데 사용되는 대화 상자
    * **[!UICONTROL 제목]**: `My Logo Component`.
    * **[!UICONTROL 설명]**: `This is My Logo Component`.
 
-1. 대화 상자의 최종 패널에 도달할 때까지 다음을 클릭한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
+1. 대화 상자의 최종 패널에 도달할 때까지 다음 을 클릭한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
 #### 로고 스크립트 만들기 {#creating-the-logo-script}
 
-이 섹션에서는 홈 페이지에 대한 링크가 있는 로고 이미지를 표시하는 스크립트를 만드는 방법에 대해 설명합니다.
+이 섹션에서는 홈 페이지 링크와 함께 로고 이미지를 표시하는 스크립트를 만드는 방법을 설명합니다.
 
 1. CRXDE Lite에서 `/apps/mywebsite/components/logo` 아래의 `logo.jsp` 파일을 엽니다.
-1. 다음 코드는 사이트 홈 페이지에 대한 링크를 만들고 로고 이미지에 대한 참조를 추가합니다. 코드를 `logo.jsp`에 복사합니다.
+1. 다음 코드는 사이트 홈 페이지에 대한 링크를 만들고 로고 이미지에 참조를 추가합니다. 코드를 `logo.jsp`에 복사합니다.
 
    ```xml
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -904,7 +903,7 @@ listchildren 구성 요소 속성을 구성하는 데 사용되는 대화 상자
 
 #### 로고 디자인 대화 상자 만들기 {#creating-the-logo-design-dialog}
 
-디자인 모드에서 로고 구성 요소를 구성하기 위한 대화 상자를 만듭니다. 디자인 모드 대화 상자 노드의 이름은 `design_dialog`이어야 합니다.
+디자인 모드에서 로고 구성 요소를 구성하는 대화 상자를 만듭니다. 디자인 모드 대화 상자 노드의 이름은 `design_dialog`으로 지정해야 합니다.
 
 1. 로고 구성 요소 아래에 대화 상자 노드를 만듭니다.
 
@@ -914,8 +913,8 @@ listchildren 구성 요소 속성을 구성하는 데 사용되는 대화 상자
       * **[!UICONTROL 레이블]** `design_dialog`
       * **[!UICONTROL 제목]** `Logo (Design)`
 
-1. design_dialog 분기의 tab1 노드를 마우스 오른쪽 단추로 클릭하고 삭제를 클릭합니다. **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
-1. `design_dialog/items/items`노드 아래에 `cq:Widget` 유형의 `img`이라는 새 노드를 만듭니다. 다음 속성을 추가한 다음 **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
+1. design_dialog 분기에서 tab1 노드를 마우스 오른쪽 버튼으로 클릭하고 삭제를 클릭합니다. **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
+1. `design_dialog/items/items`노드 아래에 `cq:Widget` 유형의 `img`이라는 새 노드를 만듭니다. 다음 속성을 추가하고 **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
 
    | 이름 | 유형 | 값 |
    |---|---|---|
@@ -929,9 +928,9 @@ listchildren 구성 요소 속성을 구성하는 데 사용되는 대화 상자
 
 #### 로고 렌더링 스크립트 만들기 {#creating-the-logo-render-script}
 
-로고 이미지를 검색하여 페이지에 쓰는 스크립트를 만듭니다.
+로고 이미지를 검색하고 페이지에 기록하는 스크립트를 만듭니다.
 
-1. 로고 구성 요소 노드를 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 만들기 > 파일 만들기]**&#x200B;를 클릭하여 img.GET.java라는 스크립트 파일을 만듭니다.
+1. 로고 구성 요소 노드를 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 만들기 > 파일 만들기]** 를 클릭하여 img.GET.java라는 스크립트 파일을 만듭니다.
 1. 파일을 열고 다음 코드를 파일에 복사한 다음 **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
 
 ```java
@@ -1000,22 +999,22 @@ public class img_GET extends AbstractImageServlet {
 }
 ```
 
-#### 컨텐트 페이지 구성 요소 {#adding-the-logo-component-to-the-contentpage-component}에 로고 구성 요소 추가
+#### Contentpage 구성 요소 {#adding-the-logo-component-to-the-contentpage-component}에 로고 구성 요소 추가
 
-1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage file` 아래의 `left.jsp`을 열고 다음 코드 줄을 찾습니다.
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage file` 아래에서 `left.jsp` 을 열고 다음 코드 행을 찾습니다.
 
    ```xml
    <div>logo</div>
    ```
 
-1. 이 코드를 다음 코드 행으로 바꿉니다.
+1. 해당 코드를 다음 코드 줄로 바꿉니다.
 
    ```xml
    <cq:include path="logo" resourceType="mywebsite/components/logo" />
    ```
 
 1. 변경 사항을 저장합니다.
-1. 브라우저에서 **[!UICONTROL 제품]** 페이지를 다시 로드합니다. 현재 로고는 기본 링크만 표시되지만 다음과 같이 표시됩니다.
+1. 브라우저에서 **[!UICONTROL Products]** 페이지를 다시 로드합니다. 로고는 현재 기본 링크만 표시되지만 다음과 같이 보입니다.
 
    ![chlimage_1-123](assets/chlimage_1-123.png)
 
@@ -1023,16 +1022,16 @@ public class img_GET extends AbstractImageServlet {
 
 이 섹션에서는 디자인 모드 대화 상자를 사용하여 이미지를 로고로 설정하는 방법을 설명합니다.
 
-1. 브라우저에 **[!UICONTROL 제품]** 페이지가 열려 있는 상태에서 사이드 킥의 아래쪽에 있는 **[!UICONTROL 디자인]** 단추를 클릭하여 **[!UICONTROL 디자인]** 모드로 들어갑니다.
+1. 브라우저에 **[!UICONTROL 제품]** 페이지가 열려 있는 상태에서 사이드킥의 하단에 있는 **[!UICONTROL 디자인]** 단추를 클릭하여 **[!UICONTROL 디자인]** 모드로 들어갑니다.
 
    ![](do-not-localize/chlimage_1-10.png)
 
-1. 로고 디자인 막대에서 **[!UICONTROL 편집]**&#x200B;을 클릭하여 대화 상자를 사용하여 로고 구성 요소의 설정을 편집합니다.
+1. 로고 디자인 표시줄에서 **[!UICONTROL 편집]**&#x200B;을 클릭하여 대화 상자를 사용하여 로고 구성 요소의 설정을 편집합니다.
 1. 대화 상자에서 **[!UICONTROL 이미지]** 탭의 패널을 클릭하고 `mywebsite.zip` 파일에서 추출한 `logo.png` 이미지를 찾은 다음 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
    ![chlimage_1-124](assets/chlimage_1-124.png)
 
-1. 사이드 킥의 제목 표시줄에서 삼각형을 클릭하여 **[!UICONTROL 편집]** 모드로 돌아갑니다.
+1. 사이드킥의 제목 표시줄에서 삼각형을 클릭하여 **[!UICONTROL 편집]** 모드로 돌아갑니다.
 
    ![chlimage_1-7](assets/chlimage_1-7.jpeg)
 
@@ -1042,78 +1041,78 @@ public class img_GET extends AbstractImageServlet {
 
 ### 탐색 표시 구성 요소 {#including-the-breadcrumb-component} 포함
 
-이 섹션에서는 기본 구성 요소 중 하나인 탐색 표시(내역) 구성 요소를 포함합니다.
+이 섹션에서는 기초 구성 요소 중 하나인 탐색 표시(추적) 구성 요소를 포함합니다.
 
-1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`으로 이동하여 `center.jsp` 파일을 열고 다음 파일을 바꿉니다.
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`(으)로 이동하여 `center.jsp` 파일을 열고 바꿉니다.
 
    ```java
    <div>trail</div>
    ```
 
-   with:
+   사용:
 
    ```xml
    <cq:include path="trail" resourceType="foundation/components/breadcrumb" />
    ```
 
 1. 변경 사항을 저장합니다.
-1. 브라우저에서 **[!UICONTROL 제품 1]** 페이지를 다시 로드합니다. 추적 구성 요소는 다음과 같이 표시됩니다.
+1. 브라우저에서 **[!UICONTROL Products 1]** 페이지를 다시 로드합니다. 추적 구성 요소는 다음과 같습니다.
 
    ![chlimage_1-125](assets/chlimage_1-125.png)
 
 ### 제목 구성 요소 {#including-the-title-component} 포함
 
-이 섹션에서는 기본 구성 요소 중 하나인 제목 구성 요소를 포함합니다.
+이 섹션에서는 기초 구성 요소 중 하나인 제목 구성 요소를 포함합니다.
 
-1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`으로 이동하여 `center.jsp` 파일을 열고 다음 파일을 바꿉니다.
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`(으)로 이동하여 `center.jsp` 파일을 열고 바꿉니다.
 
    ```xml
    <div>title</div>
    ```
 
-   with:
+   사용:
 
    ```xml
    <cq:include path="title" resourceType="foundation/components/title" />
    ```
 
 1. 변경 사항을 저장합니다.
-1. 브라우저에서 **[!UICONTROL 제품]** 페이지를 다시 로드합니다. 제목 구성 요소는 다음과 같이 표시됩니다.
+1. 브라우저에서 **[!UICONTROL Products]** 페이지를 다시 로드합니다. 제목 구성 요소는 다음과 같습니다.
 
    ![chlimage_1-126](assets/chlimage_1-126.png)
 
 >[!NOTE]
->**[!UICONTROL 편집]** 모드에서 다른 제목과 유형/크기를 설정할 수 있습니다.
+>**[!UICONTROL 편집]** 모드에서 다른 제목 및 유형/크기를 설정할 수 있습니다.
 
 ### 단락 시스템 구성 요소 {#including-the-paragraph-system-component} 포함
 
-단락 시스템(parsys)은 단락 목록을 관리할 때 웹 사이트의 중요한 부분입니다. 작성자가 페이지에 단락 구성 요소를 추가할 수 있으며 구조를 제공합니다.
+단락 시스템(parsys)은 단락 목록을 관리하기 때문에 웹 사이트의 중요한 부분입니다. 작성자가 페이지에 단락 구성 요소를 추가하고 구조를 제공할 수 있도록 해줍니다.
 
 컨텐트 페이지 구성 요소에 parsys 구성 요소(기본 구성 요소 중 하나)를 추가합니다.
 
-1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`으로 이동하여 `center.jsp` 파일을 열고 다음 코드 줄을 찾습니다.
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage` 로 이동하여 `center.jsp` 파일을 열고 다음 코드 행을 찾습니다.
 
    ```xml
    <div>parsys</div>
    ```
 
-1. 해당 코드 행을 다음 코드로 바꾼 다음 변경 내용을 저장합니다.
+1. 해당 코드 행을 다음 코드로 바꾼 다음 변경 사항을 저장합니다.
 
    ```xml
    <cq:include path="par" resourceType="foundation/components/parsys" />
    ```
 
-1. 브라우저에서 **[!UICONTROL 제품]** 페이지를 새로 고칩니다. 이제 parsys 구성 요소가 있으며 다음과 같이 표시됩니다.
+1. 브라우저에서 **[!UICONTROL 제품]** 페이지를 새로 고칩니다. 이제 parsys 구성 요소가 있으며, 다음과 같이 표시됩니다.
 
    ![chlimage_1-127](assets/chlimage_1-127.png)
 
 ### 이미지 구성 요소 {#creating-the-image-component} 만들기
 
-단락 시스템에 이미지를 표시하는 구성 요소를 만듭니다. 시간을 절약하기 위해 이미지 구성 요소는 일부 속성 변경 사항이 있는 로고 구성 요소의 복사본으로 만들어집니다.
+단락 시스템에 이미지를 표시하는 구성 요소를 만듭니다. 시간을 절약하기 위해 이미지 구성 요소는 일부 속성이 변경된 로고 구성 요소의 사본으로 만들어집니다.
 
 >[!NOTE]
 >
->Adobe Experience Manager은 보다 완벽한 기능을 갖춘 이미지 구성 요소( `/libs/foundation/components/image`)를 제공합니다.
+>Adobe Experience Manager은 더 많은 전체 기능을 갖춘 이미지 구성 요소( `/libs/foundation/components/image`)를 제공합니다.
 
 #### 이미지 구성 요소 {#creating-the-image-component-1} 만들기
 
@@ -1123,7 +1122,7 @@ public class img_GET extends AbstractImageServlet {
 
 1. `image` 구성 요소 노드를 선택하고 다음 속성 값을 변경합니다.
 
-   * `jcr:title:` 내 이미지 구성 요소를 참조하십시오.
+   * `jcr:title:` 내 이미지 구성 요소.
    * `jcr:description`:내 이미지 구성 요소입니다.
 
 1. 다음 속성 값을 사용하여 `image` 노드에 속성을 추가합니다.
@@ -1132,11 +1131,11 @@ public class img_GET extends AbstractImageServlet {
    * **[!UICONTROL 유형]**:문자열
    * **[!UICONTROL 값]**:MyWebsite
 
-1. `image` 노드 아래에서 `design_dialog` 노드의 이름을 `dialog`로 바꿉니다.
+1. `image` 노드 아래에 있는 `design_dialog` 노드의 이름을 `dialog`로 변경합니다.
 
-1. `logo.jsp`의 이름을 `image.jsp.`(으)로 변경합니다.
+1. `logo.jsp` 이름을 `image.jsp.` 로 변경합니다.
 
-1. img.GET.java를 열고 패키지를 `apps.mywebsite.components.image`으로 변경합니다.
+1. img.GET.java를 열고 패키지를 `apps.mywebsite.components.image`(으)로 변경합니다.
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
@@ -1145,7 +1144,7 @@ public class img_GET extends AbstractImageServlet {
 이 섹션에서는 이미지 스크립트를 만드는 방법을 설명합니다.
 
 1. 열기 `/apps/mywebsite/components/image/` `image.jsp`
-1. 기존 코드를 다음 코드로 바꾼 다음 변경 내용을 저장합니다.
+1. 기존 코드를 다음 코드로 바꾼 다음 변경 사항을 저장합니다.
 
    ```xml
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -1168,81 +1167,81 @@ public class img_GET extends AbstractImageServlet {
 
 #### 이미지 cq:editConfig 노드 {#creating-the-image-cq-editconfig-node} 만들기
 
-`cq:editConfig` 노드 유형을 사용하면 구성 요소의 속성을 편집할 때 특정 비헤이비어를 구성할 수 있습니다.
+`cq:editConfig` 노드 유형을 사용하면 속성을 편집할 때 구성 요소의 특정 동작을 구성할 수 있습니다.
 
-이 섹션에서는 cq:editConfig 노드를 사용하여 Content Finder에서 이미지 구성 요소로 자산을 드래그할 수 있도록 합니다.
+이 섹션에서는 cq:editConfig 노드를 사용하여 Content Finder에서 이미지 구성 요소로 자산을 드래그할 수 있습니다.
 
 1. CRXDE Lite의 /apps/mywebsite/components/image 노드에서 다음과 같이 새 노드를 만듭니다.
 
-   * **[!UICONTROL 이름]**:cq:editConfig.
+   * **[!UICONTROL 이름]**:cq:editConfig
    * **[!UICONTROL 유형]**:cq:EditConfig.
 
-1. cq:editConfig 노드 아래에서 다음과 같이 새 노드를 만듭니다.
+1. cq:editConfig 노드에서 다음과 같이 새 노드를 만듭니다.
 
-   * **[!UICONTROL 이름]**:cq:dropTargets를 참조하십시오.
-   * **[!UICONTROL 유형]**:cq:DropTargetConfig를 참조하십시오.
+   * **[!UICONTROL 이름]**:cq:dropTargets.
+   * **[!UICONTROL 유형]**:cq:DropTargetConfig입니다.
 
-1. cq:dropTargets 노드 아래에서 다음과 같이 새 노드를 만듭니다.
+1. cq:dropTargets 노드 아래에 다음과 같이 새 노드를 만듭니다.
 
    * **[!UICONTROL 이름]**:이미지.
-   * **[!UICONTROL 유형]**:nt:unstructured.
+   * **[!UICONTROL 유형]**:nt:구조화되지 않습니다.
 
 1. CRXDE에서 속성을 다음과 같이 설정합니다.
 
 | 이름 | 유형 | 값 |
 |---|---|---|
 | 동의 | 문자열 | image/(gif) | jpeg | png) |
-| 그룹 | 문자열 | media |
+| 그룹 | 문자열 | 미디어 |
 | propertyName | 문자열 | ./imageReference |
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
 #### 아이콘 {#adding-the-icon} 추가
 
-이 섹션에서는 사이드 킥에 표시될 때 이미지 구성 요소 옆에 표시될 아이콘을 추가합니다.
+이 섹션에서는 사이드 킥에 이미지 구성 요소가 나열되면 이미지 구성 요소 옆에 표시되는 아이콘을 추가합니다.
 
 1. CRXDE Lite에서 `/libs/foundation/components/image/icon.png` 파일을 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 복사]**&#x200B;를 선택합니다.
-1. `/apps/mywebsite/components/image` 노드를 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 붙여넣기]**&#x200B;를 클릭한 다음 **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
+1. 노드 `/apps/mywebsite/components/image`를 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 붙여넣기]**&#x200B;를 클릭한 다음 **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
 
 #### 이미지 구성 요소 {#using-the-image-component} 사용
 
 이 섹션에서는 **[!UICONTROL 제품]** 페이지를 보고 이미지 구성 요소를 단락 시스템에 추가합니다.
 
-1. 브라우저에서 **[!UICONTROL 제품]** 페이지를 다시 로드합니다.
+1. 브라우저에서 **[!UICONTROL Products]** 페이지를 다시 로드합니다.
 1. 사이드 킥에서 **[!UICONTROL 디자인 모드]** 아이콘을 클릭합니다.
 1. **[!UICONTROL 편집]** 단추를 클릭하여 단락 디자인 대화 상자를 편집합니다.
-1. 대화 상자에서 **[!UICONTROL 허용된 구성 요소]** 목록이 표시됩니다.**[!UICONTROL MyWebsite]**&#x200B;로 이동하여 **[!UICONTROL 내 이미지 구성 요소]**&#x200B;를 선택하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
+1. 대화 상자에 **[!UICONTROL 허용된 구성 요소]** 목록이 표시됩니다.**[!UICONTROL MyWebsite]**&#x200B;로 이동하여 **[!UICONTROL 내 이미지 구성 요소]**&#x200B;를 선택하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 편집 모드]**&#x200B;로 돌아갑니다.
-1. parsys 프레임을 두 번 클릭합니다(**[!UICONTROL 구성 요소나 자산을 여기로 드래그하십시오]**). **[!UICONTROL 새 구성 요소 삽입]** 및 **[!UICONTROL 사이드 킥이]** 선택기는 다음과 같습니다.
+1. parsys 프레임을 두 번 클릭합니다( **[!UICONTROL 구성 요소나 자산을 여기로 드래그하십시오.]**). **[!UICONTROL 새 구성 요소 삽입]** 및 **[!UICONTROL 사이드 킥이나]** 선택기는 다음과 같습니다.
 
    ![chlimage_1-8](assets/chlimage_1-8.jpeg)
 
 ### 도구 모음 구성 요소 {#including-the-toolbar-component} 포함
 
-이 섹션에서는 기본 구성 요소 중 하나인 도구 모음 구성 요소를 포함합니다.
+이 섹션에서는 기초 구성 요소 중 하나인 도구 모음 구성 요소를 포함합니다.
 
-디자인 모드와 편집 모드에서 여러 가지 옵션이 있습니다.
+디자인 모드와 편집 모드에 있는 여러 가지 옵션이 있습니다.
 
-1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`으로 이동하여 `body.jsp` 파일을 열고 다음 코드를 찾습니다.
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage` 로 이동하여 `body.jsp` 파일을 열고 다음 코드를 찾습니다.
 
    ```java
    <div class="toolbar">toolbar</div>
    ```
 
-1. 해당 코드를 다음 코드로 바꾼 다음 변경 내용을 저장합니다.
+1. 해당 코드를 다음 코드로 바꾸고 변경 내용을 저장합니다.
 
    ```java
    <cq:include path="toolbar" resourceType="foundation/components/toolbar"/>
    ```
 
-1. AEM 웹 사이트 페이지의 폴더 트리에서 `Websites/My Website/English`을 선택한 다음 **[!UICONTROL 새로 만들기 > 새 페이지]**&#x200B;를 클릭합니다. 다음 속성 값을 지정하고 만들기를 클릭합니다.
+1. AEM 웹 사이트 페이지의 폴더 트리에서 `Websites/My Website/English`을 선택한 다음 **[!UICONTROL 새로 만들기 > 새 페이지]**&#x200B;를 클릭합니다. 다음 속성 값을 지정하고 생성을 누릅니다.
 
    * **[!UICONTROL 제목]**:도구 모음
-   * **[!UICONTROL 내 웹 사이트 콘텐츠 페이지 템플릿]** 선택
+   * **[!UICONTROL 내 웹 사이트 컨텐츠 페이지 템플릿]** 선택
 
-1. 페이지 목록에서 **[!UICONTROL 도구 모음]** 페이지를 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 속성]**&#x200B;을 클릭합니다. **[!UICONTROL 탐색 중 숨기기]**&#x200B;를 선택하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
+1. 페이지 목록에서 **[!UICONTROL 도구 모음]** 페이지를 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 속성]**&#x200B;을 클릭합니다. **[!UICONTROL 탐색에서 숨기기]**&#x200B;를 선택하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
-   **[!UICONTROL 내비게이션에서 숨기기]** 옵션은 위쪽 탐색 및 listchildren과 같은 탐색 구성 요소에 페이지가 표시되지 않도록 합니다.
+   **[!UICONTROL 탐색 시 숨기기]** 옵션은 위쪽 탐색 및 listchildren과 같은 탐색 구성 요소에 페이지가 표시되지 않도록 합니다.
 
 1. **[!UICONTROL 도구 모음]**&#x200B;에서 다음 페이지를 만듭니다.
 
@@ -1251,15 +1250,15 @@ public class img_GET extends AbstractImageServlet {
    * 로그인
    * 검색
 
-1. 브라우저에서 **[!UICONTROL 제품]** 페이지를 다시 로드합니다. 다음과 같습니다.
+1. 브라우저에서 **[!UICONTROL Products]** 페이지를 다시 로드합니다. 다음과 같습니다.
 
    ![chlimage_1-130](assets/chlimage_1-130.png)
 
 ### 검색 구성 요소 {#creating-the-search-component} 만들기
 
-이 섹션에서는 웹 사이트에서 컨텐츠를 검색할 구성 요소를 만듭니다. 이 검색 구성 요소는 페이지의 단락 시스템(예: 전문 검색 결과 페이지)에 배치할 수 있습니다.
+이 섹션에서는 웹 사이트에서 컨텐츠를 검색하는 구성 요소를 만듭니다. 이 검색 구성 요소는 페이지의 단락 시스템(예: 전문 검색 결과 페이지)에 배치할 수 있습니다.
 
-검색 입력 상자는 **[!UICONTROL 영어]** 페이지에 다음과 같이 표시됩니다.
+검색 입력 상자는 **[!UICONTROL English]** 페이지에서 다음과 같이 표시됩니다.
 
 ![chlimage_1-131](assets/chlimage_1-131.png)
 
@@ -1268,11 +1267,11 @@ public class img_GET extends AbstractImageServlet {
 1. CRXDE Lite에서 `/apps/mywebsite/components`을 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 만들기]**&#x200B;를 선택한 다음 **[!UICONTROL 구성 요소 만들기]**&#x200B;를 선택합니다.
 1. 대화 상자를 사용하여 구성 요소를 구성합니다.
 
-   1. 첫 번째 패널에서 다음 속성 값을 지정합니다.
+   1. 첫 번째 패널 중 하나에서 다음 속성 값을 지정합니다.
 
       * **[!UICONTROL 레이블]**:검색
       * **[!UICONTROL 제목]**:내 검색 구성 요소
-      * **[!UICONTROL 설명]**:내 검색 구성 요소입니다.
+      * **[!UICONTROL 설명]**:내 검색 구성 요소입니다
       * **[!UICONTROL 그룹]**:MyWebsite
    1. **[!UICONTROL 다음]**&#x200B;을 클릭한 다음 **[!UICONTROL 다음]**&#x200B;을 다시 클릭합니다.
    1. **[!UICONTROL 허용되는 부모]** 패널에서 **[!UICONTROL +]** 단추를 클릭하고 `*/parsys`를 입력합니다.
@@ -1280,7 +1279,7 @@ public class img_GET extends AbstractImageServlet {
 
 
 1. **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
-1. 다음 노드를 복사하여 `apps/mywebsite/components/search` 노드에 붙여 넣습니다.
+1. 다음 노드를 복사하여 `apps/mywebsite/components/search` 노드에 붙여넣습니다.
 
    * `/libs/foundation/components/search/dialog`
    * `` `/libs/foundation/components/search/i18n`
@@ -1290,7 +1289,7 @@ public class img_GET extends AbstractImageServlet {
 
 #### 검색 스크립트 만들기 {#creating-the-search-script}
 
-이 섹션에서는 검색 스크립트를 만드는 방법에 대해 설명합니다.
+이 섹션에서는 검색 스크립트를 만드는 방법을 설명합니다.
 
 1. `/apps/mywebsite/components/search/search.jsp` 파일을 엽니다.
 1. 다음 코드를 `search.jsp`에 복사합니다.
@@ -1446,9 +1445,9 @@ public class img_GET extends AbstractImageServlet {
 
 1. 변경 사항을 저장합니다.
 
-#### 컨텐트 페이지 구성 요소 {#including-a-search-box-in-the-contentpage-component}에 검색 상자 포함
+#### 컨텐츠 페이지 구성 요소 {#including-a-search-box-in-the-contentpage-component}에 검색 상자 포함
 
-컨텐츠 페이지의 왼쪽 섹션에 검색 입력 상자를 포함하려면 다음과 같이 하십시오.
+컨텐트 페이지의 왼쪽 섹션에 검색 입력 상자를 포함하려면 다음과 같이 진행합니다.
 
 1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage` 아래의 `left.jsp` 파일을 열고 다음 코드(2행)를 찾습니다.
 
@@ -1456,7 +1455,7 @@ public class img_GET extends AbstractImageServlet {
    %><div class="left">
    ```
 
-1. 해당 줄 앞에 *다음 코드를 삽입합니다.*
+1. 해당 줄 앞에 *다음 코드를 삽입합니다.*:
 
    ```java
    %><%@ page import="com.day.text.Text"%><%
@@ -1464,13 +1463,13 @@ public class img_GET extends AbstractImageServlet {
    String home = Text.getAbsoluteParent(currentPage.getPath(), 2);%><%
    ```
 
-1. 다음 코드 줄을 찾습니다.
+1. 다음 코드 행을 찾습니다.
 
    ```xml
    <div>search</div>
    ```
 
-1. 해당 코드를 다음 코드로 바꾼 다음 변경 내용을 저장합니다.
+1. 해당 코드를 다음 코드로 바꾸고 변경 내용을 저장합니다.
 
    ```java
    <div class="form_1">
@@ -1483,7 +1482,7 @@ public class img_GET extends AbstractImageServlet {
    </div>
    ```
 
-1. 브라우저에서 **[!UICONTROL 제품]** 페이지를 다시 로드합니다. 검색 구성 요소는 다음과 같습니다.
+1. 브라우저에서 **[!UICONTROL Products]** 페이지를 다시 로드합니다. 검색 구성 요소는 다음과 같습니다.
 
    ![chlimage_1-132](assets/chlimage_1-132.png)
 
@@ -1494,36 +1493,35 @@ public class img_GET extends AbstractImageServlet {
 1. 브라우저에서 **검색** 페이지를 엽니다.
 1. 사이드 킥에서 **[!UICONTROL 디자인]** 모드 아이콘을 클릭합니다.
 1. 단락 블록 디자인(검색 제목 아래)에서 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
-1. 대화 상자에서 **[!UICONTROL 내 웹 사이트]** 그룹으로 스크롤하고 **[!UICONTROL 내 검색 구성 요소]**&#x200B;를 선택하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
+1. 대화 상자에서 **[!UICONTROL 내 웹 사이트]** 그룹으로 스크롤한 다음 **[!UICONTROL 내 검색 구성 요소]**&#x200B;를 선택하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 1. 사이드 킥에서 삼각형을 클릭하여 **[!UICONTROL 편집]** 모드로 돌아갑니다.
 1. 사이드 킥의 **[!UICONTROL 내 검색]** 구성 요소를 parsys 프레임으로 드래그합니다. 다음과 같습니다.
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
-1. **[!UICONTROL 제품]** 페이지로 이동합니다. 입력 상자에서 고객을 검색하고 **[!UICONTROL Enter]**&#x200B;를 누릅니다. **[!UICONTROL 검색]** 페이지로 리디렉션됩니다. **[!UICONTROL 미리 보기]** 모드로 전환:출력은 다음과 유사한 형식입니다.
+1. **[!UICONTROL 제품]** 페이지로 이동합니다. 입력 상자에서 고객을 검색하고 **[!UICONTROL Enter]**&#x200B;를 누릅니다. **[!UICONTROL 검색]** 페이지로 리디렉션됩니다. **[!UICONTROL 미리 보기]** 모드로 전환합니다.출력은 다음과 유사한 형식입니다.
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
 ### Iparsys 구성 요소 {#including-the-iparsys-component} 포함
 
-이 섹션에서는 기본 구성 요소 중 하나인 상속 단락 시스템(iparsys) 구성 요소를 포함합니다. 이 구성 요소를 사용하면 상위 페이지에서 단락 구조를 만들고 하위 페이지에서 단락을 상속하도록 할 수 있습니다.
+이 섹션에서는 기초 구성 요소 중 하나인 상속 단락 시스템(iparsys) 구성 요소를 포함합니다. 이 구성 요소를 사용하면 상위 페이지에서 단락 구조를 만들고 하위 페이지에서 단락을 상속하도록 할 수 있습니다.
 
 이 구성 요소의 경우 편집 모드와 디자인 모드 모두에서 여러 매개 변수를 설정할 수 있습니다.
 
-1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage`으로 이동하여 `right.jsp` 파일을 열고 다음을 바꿉니다.
+1. CRXDE Lite에서 `/apps/mywebsite/components/contentpage` 로 이동하여 `right.jsp` 파일을 열고 바꿉니다.
 
    ```java
    <div>iparsys</div>
    ```
 
-   with:
+   사용:
 
    ```java
    <cq:include path="rightpar" resourceType="foundation/components/iparsys" />
    ```
 
 1. 변경 사항을 저장합니다.
-1. 브라우저에서 **[!UICONTROL 제품]** 페이지를 다시 로드합니다. 전체 페이지는 다음과 같이 표시됩니다.
+1. 브라우저에서 **[!UICONTROL Products]** 페이지를 다시 로드합니다. 전체 페이지는 다음과 같습니다.
 
    ![chlimage_1-9](assets/chlimage_1-9.jpeg)
-
