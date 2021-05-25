@@ -8,7 +8,6 @@ breadcrumb-title: 클래식 UI 작성 안내서
 user-guide-description: 이 안내서에서는 클래식 사용자 인터페이스에서 AEM의 작성 개념을 다룹니다.
 feature: 작성
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
 source-wordcount: '273'
@@ -84,7 +83,7 @@ ht-degree: 91%
    + [자산 사용](classicui-assets.md)
    + [Dynamic Media 자산 제공](dynamic-media-assets-delivering.md)
    + [페이지에 Dynamic Media 자산 추가](dynamic-media-assets-adding-to-page.md)
-   + [페이지에 Dynamic Media Classic(Scene7) 기능 추가](manage-assets-classic-s7.md)
+   + [Dynamic Media Classic(Scene7) 기능을 페이지에 추가](manage-assets-classic-s7.md)
    + [Dynamic Media 작업](dynamic-media-assets.md)
    + [비디오](manage-assets-classic-s7-video.md)
    + [테스트 자산에 대한 이름 지정 규칙](asset-naming-conventions.md)
