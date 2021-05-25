@@ -8,7 +8,6 @@ breadcrumb-title: 작성 안내서
 user-guide-description: AEM에서의 컨텐츠 생성 및 작성에 대한 주요 개념을 알아봅니다.
 feature: 작성
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
 workflow-type: tm+mt
 source-wordcount: '293'
@@ -39,7 +38,7 @@ ht-degree: 95%
    + [페이지 속성 편집](editing-page-properties.md)
    + [페이지 게시](publishing-pages.md)
    + [컨텐츠 조각으로 페이지 작성](content-fragments.md)
-   + [경험 조각](experience-fragments.md)
+   + [경험 구성요소](experience-fragments.md)
    + [CSV로 내보내기](csv-export.md)
    + [구성 요소](default-components.md)
    + [모바일 장치용 페이지 작성](mobile.md)
