@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 076a3064-80c3-454b-93f9-6ae925c54328
-translation-type: tm+mt
-source-git-commit: c10c0ca79a0dd2e79c2d821f11cce3d28058aaa0
+exl-id: bbe4ae86-e9b8-4c3f-ada3-82470e371c4e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 98%
 
 ---
 
-
 # 컨텐츠 조각으로 페이지 작성{#page-authoring-with-content-fragments}
 
 >[!CAUTION]
 >
->일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md)의 응용 프로그램이 필요합니다.
+>일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md)을 적용해야 합니다.
 
 AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산으로 작성 및 관리](/help/assets/content-fragments.md)됩니다.
 
@@ -95,7 +94,7 @@ AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산
    >추가 편집 기능에 대한 자세한 정보는 다음을 참조하십시오.
    >
    >* [응답형 레이아웃](/help/sites-authoring/responsive-layout.md)
-   >* [페이지 컨텐츠 편집](/help/sites-authoring/editing-content.md)
+   * [페이지 컨텐츠 편집](/help/sites-authoring/editing-content.md)
 
 
 ## 요소 또는 변형 선택 {#selecting-the-element-or-variation}
@@ -119,8 +118,7 @@ AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산
    * 해당 템플릿을 사용하여 조각을 생성한 경우 선택이 가능합니다.
 
    >[!NOTE]
-   >
-   >사용할 수 있는 요소는 사용된 템플릿에 따라 다릅니다.
+   사용할 수 있는 요소는 사용된 템플릿에 따라 다릅니다.
 
 * **[!UICONTROL 변형]**
 
@@ -141,8 +139,7 @@ AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산
 구성 요소 도구 모음에서 **[!UICONTROL 편집]** 아이콘을 사용하여 자산을 편집할 조각 소스를 열 수 있습니다. 이 경우 [컨텐츠 조각을 편집하고 관리](/help/assets/content-fragments.md)할 수 있습니다.
 
 >[!CAUTION]
->
->조각 소스를 편집하면 해당 컨텐츠 조각을 참조하는 모든 페이지에 영향을 줍니다.
+조각 소스를 편집하면 해당 컨텐츠 조각을 참조하는 모든 페이지에 영향을 줍니다.
 
 ## 중간 컨텐츠 추가  {#adding-in-between-content}
 
@@ -157,28 +154,20 @@ AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산
 * 중간 컨텐츠 소스로 [연관된 컨텐츠](#using-associated-content)를 사용합니다.
 
 >[!CAUTION]
->
->중간 컨텐츠는 페이지 컨텐츠이며, 컨텐츠 조각에 저장되지 않습니다.
+중간 컨텐츠는 페이지 컨텐츠이며, 컨텐츠 조각에 저장되지 않습니다.
 
 ![cfm-6420-02](assets/cfm-6420-02.png)
 
 >[!NOTE]
->
->또한 조각 자체에 [시각적 자산(이미지)을 삽입](/help/assets/content-fragments-variations.md#inserting-assets-into-your-fragment)할 수도 있습니다.
->
->조각 자체에 삽입된 시각적 자산은 조각의 이전 단락에 첨부됩니다. 즉, 시각적 자산과 이전 단락 간에 중간 컨텐츠를 배치할 수 없음을 의미합니다.
+또한 조각 자체에 [시각적 자산(이미지)을 삽입](/help/assets/content-fragments-variations.md#inserting-assets-into-your-fragment)할 수도 있습니다.
+조각 자체에 삽입된 시각적 자산은 조각의 이전 단락에 첨부됩니다. 즉, 시각적 자산과 이전 단락 간에 중간 컨텐츠를 배치할 수 없음을 의미합니다.
 
 >[!CAUTION]
->
->중간 컨텐츠를 페이지의 컨텐츠 조각에 추가한 후에 기존 컨텐츠 조각(즉, 컨텐츠 조각 편집기에서)의 구조를 변경하면 잘못된/예기치 않은 결과가 나타날 수 있습니다.
->
->이 경우 중간 컨텐츠가 그대로 유지됩니다. 
->
->* 중간 구성 요소는 조각 플로우의 구성 요소 순서 내에서 절대 위치에 있습니다. 조각 내의 단락 컨텐츠가 변경되더라도 이 위치는 변경되지 않습니다.\
-   >  중간 단락은 옆에 배치된(조각) 단락과 문맥적 관계가 없으므로 상대적 위치가 변경된 것처럼 보일 수 있습니다.
->* 두 단락 구조가 충돌하지 않는 경우에는 중간 컨텐츠가 내부에 여전히 있어도 표시되지 않습니다.
-
->
+중간 컨텐츠를 페이지의 컨텐츠 조각에 추가한 후에 기존 컨텐츠 조각(즉, 컨텐츠 조각 편집기에서)의 구조를 변경하면 잘못된/예기치 않은 결과가 나타날 수 있습니다.
+이 경우 중간 컨텐츠가 그대로 유지됩니다. 
+* 중간 구성 요소는 조각 플로우의 구성 요소 순서 내에서 절대 위치에 있습니다. 조각 내의 단락 컨텐츠가 변경되더라도 이 위치는 변경되지 않습니다.\
+   중간 단락은 옆에 배치된(조각) 단락과 문맥적 관계가 없으므로 상대적 위치가 변경된 것처럼 보일 수 있습니다.
+* 두 단락 구조가 충돌하지 않는 경우에는 중간 컨텐츠가 내부에 여전히 있어도 표시되지 않습니다.
 
 
 
@@ -187,12 +176,10 @@ AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산
 [관련 컨텐츠](/help/assets/content-fragments-assoc-content.md)를 [컨텐츠 조각](/help/assets/content-fragments.md)과 연결한 경우 이러한 자산은 사이드 패널에서 사용할 수 있습니다(조각을 컨텐츠 페이지에 배치한 후에). 연관된 컨텐츠는 [중간 컨텐츠](#adding-in-between-content)의 특별한 컨텐츠 소스입니다.
 
 >[!NOTE]
->
->[시각적 자산(예: 이미지)](/help/assets/content-fragments.md#fragments-with-visual-assets)을 조각 및/또는 페이지에 추가하는 다양한 방법이 있습니다.
+[시각적 자산(예: 이미지)](/help/assets/content-fragments.md#fragments-with-visual-assets)을 조각 및/또는 페이지에 추가하는 다양한 방법이 있습니다.
 
 >[!NOTE]
->
->한 페이지에 여러 개의 컨텐츠 조각이 있는 경우 **[!UICONTROL 관련 컨텐츠]** 탭에 모든 조각에 적합한 자산이 표시됩니다.
+한 페이지에 여러 개의 컨텐츠 조각이 있는 경우 **[!UICONTROL 관련 컨텐츠]** 탭에 모든 조각에 적합한 자산이 표시됩니다.
 
 관련 컨텐츠가 있는 조각을 페이지에 추가하면 새 탭(**[!UICONTROL 관련 컨텐츠]**)이 사이드 패널에서 열립니다.
 
@@ -219,4 +206,3 @@ AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산
 
 * [자산 콘솔에서 조각을 만든](/help/assets/content-fragments-managing.md#publishing-and-referencing-a-fragment) 후에 조각을 게시할 수 있습니다.
 * *게시 취소된 조각*&#x200B;을 게시 중인 페이지에서 사용하는 경우 그때 조각이 게시될 수도 있습니다.
-
