@@ -1,6 +1,6 @@
 ---
-title: 메시징 필수
-seo-title: 메시징 필수
+title: 메시징 핵심 사항
+seo-title: 메시징 핵심 사항
 description: 메시징 구성 요소 개요
 seo-description: 메시징 구성 요소 개요
 uuid: 53711f4d-6bbc-4be9-aefe-4e75a81cd67f
@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: eb8fd2b3-0a31-425e-b0f1-38f09e1106df
-translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+exl-id: c6ad3c2b-8776-4ec4-99da-ab73ecc61153
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 2%
 
 ---
 
+# 메시징 핵심 사항 {#messaging-essentials}
 
-# 메시징 필수 {#messaging-essentials}
+이 페이지에서는 메시징 구성 요소를 사용하여 웹 사이트에 메시징 기능을 포함하는 작업에 대한 세부 사항을 설명합니다.
 
-이 페이지에서는 메시징 구성 요소를 사용하여 웹 사이트에 메시징 기능을 포함하는 작업에 대한 세부 사항을 문서화합니다.
-
-## Essentials for Client-Side {#essentials-for-client-side}
+## 클라이언트측 {#essentials-for-client-side}에 대한 필수 사항
 
 **메시지 작성**
 
@@ -46,7 +45,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td><strong>속성</strong></td> 
-   <td><a href="configure-messaging.md">메시징 구성</a> 참조</td> 
+   <td><a href="configure-messaging.md">메시징 구성</a> 을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td><strong>관리 구성</strong></td> 
@@ -55,7 +54,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-**메시지 목록** (받은 편지함, 보낸 사람 및 휴지통의 경우)
+**메시지 목록** (받은 편지함, 보낸 사람 및 휴지통)
 
 <table> 
  <tbody> 
@@ -77,7 +76,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td><strong>속성</strong></td> 
-   <td><a href="configure-messaging.md">메시징 구성</a> 참조</td> 
+   <td><a href="configure-messaging.md">메시징 구성</a>을 참조하십시오</td> 
   </tr> 
   <tr> 
    <td><strong>관리 구성</strong></td> 
@@ -88,21 +87,21 @@ ht-degree: 2%
 
 [클라이언트측 사용자 지정](client-customize.md)도 참조하십시오.
 
-## Essentials for Server-Side {#essentials-for-server-side}
+## 서버측 {#essentials-for-server-side}에 대한 필수 사항
 
 * [메시징 구성](configure-messaging.md)
 
-* [SCF 구성 요소용 메시지 클라이언트 ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) API
+* [SCF 구성 ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) 요소용 메시징 클라이언트 API
 
-* [서비스에 ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) 대한 메시지 API
+* [서비스](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) 에 대한 메시징 API
 
-* [메시지 끝점](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
+* [메시징 끝점](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 
-* [서버측 사용자 정의](server-customize.md)
+* [서버측 사용자 지정](server-customize.md)
 
 >[!CAUTION]
 >
->String 매개 변수는 다음 MessageBuilder 메서드에 대해 후행 슬래시 &quot;/&quot;를 포함하지 않아야 합니다.
+>String 매개 변수는 다음 MessageBuilder 메서드에 대해 후행 슬래시 &quot;/&quot;를 포함하지 *않아야 합니다.
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
@@ -123,32 +122,32 @@ ht-degree: 2%
 
 ### 샘플 코드:메시지 수신 알림 {#sample-code-message-received-notification}
 
-소셜 메시징 기능은 작업(예: `send`, `marking read`, `marking delete`)에 대한 이벤트를 throw합니다. 이러한 이벤트를 catch할 수 있으며 이벤트에 포함된 데이터에 대해 수행되는 작업을 수행할 수 있습니다.
+소셜 메시징 기능은 작업에 대한 이벤트를 throw합니다(예: `send`, `marking read`, `marking delete`). 이러한 이벤트를 포착하고 이벤트에 포함된 데이터에 대한 작업을 수행할 수 있습니다.
 
-다음 예제는 `message sent` 이벤트를 수신하고 `Day CQ Mail Service`을 사용하여 모든 메시지 수신자에게 이메일을 보내는 이벤트 핸들러의 예입니다.
+다음 예제는 `message sent` 이벤트를 수신하고 `Day CQ Mail Service` 이벤트를 사용하여 모든 메시지 수신자에게 이메일을 보내는 이벤트 처리기입니다.
 
-서버측 샘플 스크립트를 사용하려면 개발 환경과 OSGi 번들을 빌드하는 기능이 필요합니다.
+서버측 샘플 스크립트를 시도하려면 개발 환경과 OSGi 번들을 빌드하는 기능이 필요합니다.
 
 1. ` [CRXDE|Lite](http://localhost:4502/crx/de)`에 관리자로 로그인합니다.
-1. `/apps/engage/install`에 다음과 같은 임의 이름으로 `bundle node`을 만듭니다.
+1. `/apps/engage/install`에서 다음과 같은 임의 이름으로 `bundle node`을 만듭니다.
 
    * **[!UICONTROL 기호 이름]**:com.engage.media.social.messaging.MessagingNotification
    * **[!UICONTROL 이름]**:시작하기 자습서 메시지 알림
-   * **[!UICONTROL 설명]**:사용자에게 메시지를 받을 때 이메일 알림을 전송하는 샘플 서비스
+   * **[!UICONTROL 설명]**:사용자가 메시지를 받을 때 사용자에게 이메일 알림을 전송하는 샘플 서비스
    * **[!UICONTROL 패키지]**:  `com.engage.media.social.messaging.notification`
 
 1. 다음으로 이동 `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`
 
-   1. 자동으로 생성된 `Activator.java` 클래스 삭제
+   1. 자동으로 생성된 `Activator.java` 클래스를 삭제합니다
    1. 클래스 `MessageEventHandler.java` 만들기
-   1. 아래 코드를 `MessageEventHandler.java`에 복사/붙여넣기
+   1. 아래 코드를 `MessageEventHandler.java`에 복사하거나 붙여 넣습니다.
 
-1. **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
-1. `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd`으로 이동하여 `MessageEventHandler.java` 코드에 기록된 대로 모든 가져오기 문을 추가합니다.
+1. **[!UICONTROL 모두 저장]** 클릭
+1. `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` 로 이동하여 `MessageEventHandler.java` 코드에 기록된 대로 모든 가져오기 구문을 추가합니다.
 1. 번들 빌드
-1. `Day CQ Mail Service`OSGi 서비스가 구성되었는지 확인
-1. 한 데모 사용자로 로그인하고 다른 사용자에게 이메일 보내기
-1. 받는 사람이 새 메시지와 관련하여 이메일을 받아야 합니다.
+1. `Day CQ Mail Service`OSGi 서비스가 구성되어 있는지 확인합니다
+1. 한 데모 사용자로 로그인하여 다른 데모 사용자로 이메일 보내기
+1. 수신자는 새 메시지에 대한 이메일을 수신해야 합니다
 
 #### MessageEventHandler.java {#messageeventhandler-java}
 
@@ -241,4 +240,3 @@ public class MessagingEventHandler implements EventHandler {
     }
 }
 ```
-
