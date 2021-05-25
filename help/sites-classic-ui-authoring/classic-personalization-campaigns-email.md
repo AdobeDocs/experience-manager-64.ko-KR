@@ -9,21 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: eb72f934-4b0f-4a71-b2a2-3ddf78db8c3c
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 5e97f7bd-d668-423d-9f65-7dcc8fb1943a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1771'
 ht-degree: 94%
 
 ---
 
-
 # 이메일 마케팅{#e-mail-marketing}
 
 >[!NOTE]
 >
->Adobe은 AEM SMTP 서비스에서 보낸 열림/바운스된 이메일의 추가로 개선할 계획이 없습니다.\
->권장 사항은 [Adobe Campaign 및 AEM 통합](/help/sites-administering/campaign.md)을 활용하는 것입니다.
+>Adobe은 AEM SMTP 서비스에서 보낸 열기/바운스된 전자 메일의 추가 개선을 계획하지 않습니다.\
+>권장 사항은 [Adobe Campaign 및 해당 AEM 통합](/help/sites-administering/campaign.md)을 활용하는 것입니다.
 
 뉴스레터와 같은 이메일 마케팅은 리드에게 컨텐츠를 보내는 데 사용할 수 있으므로 모든 마케팅 캠페인에서 중요한 부분을 차지합니다. AEM에서는 기존 AEM 컨텐츠로 뉴스레터를 만들거나 뉴스레터에 사용할 새 컨텐츠를 추가할 수 있습니다.
 
@@ -70,7 +69,7 @@ ht-degree: 94%
 
    **기본 수신자 목록**&#x200B;은 뉴스레터의 터치포인트를 구성하므로 필수 필드입니다(목록에 대한 자세한 내용은 [목록 작업](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) 참조).
 
-   ![mcm_newnewsletterdialog](assets/mcm_newnewsletterdialog.png)
+   ![mcm_newsletterdialog](assets/mcm_newnewsletterdialog.png)
 
    * **보낸 사람 이름**
 
@@ -146,7 +145,7 @@ Newsletter를 개인화하고 결과를 시뮬레이션하는 방법은 다음�
 
 >[!NOTE]
 >
->뉴스레터를 보내기 전에 `http://localhost:4502/system/console/configMgr`에서 OSGi 구성의 Day CQ Link Externalizer를 확인하십시오.
+>뉴스레터를 발송하기 전에 `http://localhost:4502/system/console/configMgr`에서 Day CQ Link Externalizer에 대한 OSGi 구성을 확인하십시오.
 >
 >기본적으로 이 매개 변수의 값은 `localhost:4502`이며 인스턴스 실행을 위한 포트가 바뀌면 작업을 완료할 수 없습니다.
 
@@ -229,7 +228,7 @@ Newsletter 설정을 사용자 지정하는 방법은 다음과 같습니다.
 
 >[!NOTE]
 >
->뉴스레터를 보내기 전에 `http://localhost:4502/system/console/configMgr`에서 OSGi 구성의 Day CQ Link Externalizer를 확인하십시오.
+>뉴스레터를 발송하기 전에 `http://localhost:4502/system/console/configMgr`에서 Day CQ Link Externalizer에 대한 OSGi 구성을 확인하십시오.
 >
 >기본적으로 이 매개 변수의 값은 `localhost:4502`이며 인스턴스 실행을 위한 포트가 바뀌면 작업을 완료할 수 없습니다.
 
@@ -302,4 +301,3 @@ Newsletter에 가입하는 방법은 다음과 같습니다. Geometrixx 웹 사�
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
 1. Geometrixx 뉴스레터 **등록** 필드에 이메일 주소를 입력하고 **등록**&#x200B;을 클릭합니다. 이제 Newsletter에 가입되었습니다.
-
