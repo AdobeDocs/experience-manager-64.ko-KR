@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 977a3dda-4292-4bd2-bfa5-af4d789d9ef9
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 2a790f7d-03a1-4f60-a59e-0a5f15c44fa5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '742'
 ht-degree: 92%
 
 ---
-
 
 # 론치 홍보{#promoting-launches}
 
@@ -33,7 +32,7 @@ ht-degree: 92%
 
 >[!CAUTION]
 >
->단일 론치를 동시에 홍보할 수 없습니다. 즉, 동일한 론치에 대해 동시에 두 개의 홍보 작업을 수행하면 오류 `Launch could not be promoted`(로그의 충돌 오류와 함께)가 발생할 수 있습니다.
+>단일 론치를 동시에 홍보할 수 없습니다. 즉, 동일한 론치에 두 개의 프로모트 작업을 동시에 수행하면 오류 `Launch could not be promoted` (로그에 충돌 오류와 함께 발생될 수 있습니다.)
 
 >[!CAUTION]
 >
@@ -58,7 +57,7 @@ ht-degree: 92%
 
    * **사이트** 콘솔:
 
-      1. [참조 레일](/help/sites-authoring/author-environment-tools.md#references)을 열고 [선택 모드](/help/sites-authoring/basic-handling.md)를 사용하여 필요한 소스 페이지를 선택합니다. 또는 참조 레일을 선택하고 열면 순서는 중요하지 않습니다. 모든 참조가 표시됩니다.
+      1. [참조 레일](/help/sites-authoring/author-environment-tools.md#references)을 열고 [선택 모드](/help/sites-authoring/basic-handling.md)를 사용하여 필요한 소스 페이지를 선택합니다(또는 참조 레일을 선택하고 열면 순서는 중요하지 않음). 모든 참조가 표시됩니다.
 
       1. 특정 론치 목록을 표시하려면 **론치**(예: 론치(1))를 선택합니다.
       1. 사용 가능한 동작을 표시하려면 특정 론치를 선택합니다.
@@ -151,4 +150,3 @@ ht-degree: 92%
 예를 들어, 작성자가 론치 페이지를 승격하면 페이지 활성화 요청을 자동으로 생성할 수 있습니다. 패키지 노드가 수정될 때 작업 흐름 론쳐를 구성하여 요청 활성화 작업 흐름을 시작합니다.
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
-
