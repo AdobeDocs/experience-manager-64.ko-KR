@@ -1,40 +1,39 @@
 ---
-title: 자습서
-seo-title: 자습서
-description: AEM Communities 소셜 구성 요소 프레임워크(SCF)를 학습 및 사용하는 데 도움이 되는 예입니다.
-seo-description: AEM Communities 소셜 구성 요소 프레임워크(SCF)를 학습 및 사용하는 데 도움이 되는 예입니다.
+title: 튜토리얼
+seo-title: 튜토리얼
+description: AEM Communities SCF(소셜 구성 요소 프레임워크) 학습 및 작업에 도움이 되는 예제
+seo-description: AEM Communities SCF(소셜 구성 요소 프레임워크) 학습 및 작업에 도움이 되는 예제
 uuid: c99a9d56-9630-4a79-bcd7-a15f01d6c13d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: a420b0b1-65f4-4103-a7c9-263657c7870f
-translation-type: tm+mt
-source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+exl-id: 4e5c63af-78f1-4005-8dc1-2b30cb0b6c5a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 2%
 
 ---
 
+# 튜토리얼 {#tutorials}
 
-# 자습서 {#tutorials}
-
-다음은 AEM 6.1 커뮤니티 [소셜 구성 요소 프레임워크(SCF)](scf.md)를 학습 및 사용하는 데 도움이 되는 예입니다.
+다음은 AEM 6.1 Communities [SCF(소셜 구성 요소 프레임워크)](scf.md)를 학습하고 작업하는 데 도움이 되는 예입니다.
 
 ## 클라이언트측 사용자 지정 {#client-side-customization}
 
-[SCF 클라이언트측 사용자 정의](client-customize.md)도 참조하십시오.
+[SCF 클라이언트측 사용자 지정](client-customize.md)도 참조하십시오.
 
-* [커뮤니티 구성 요소 가이드](components-guide.md)
+* [커뮤니티 구성 요소 안내서](components-guide.md)
 
 * [오버레이 주석 구성 요소](overlay-comments.md)
 
 * [주석 구성 요소 확장](extend-comments.md)
 
-## 서버측 사용자 정의 {#server-side-customization}
+## 서버측 사용자 지정 {#server-side-customization}
 
-[SCF 서버측 사용자 정의](server-customize.md)도 참조하십시오.
+[SCF 서버측 사용자 지정](server-customize.md)도 참조하십시오.
 
 샘플 코드는 [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) 리포지토리에서 사용할 수 있습니다.
 
@@ -44,11 +43,11 @@ ht-degree: 2%
 
 * [SCF 구성 요소 샘플 확장](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension)
 
-## 사용 방법 지침 {#how-to-instructions}
+## 방법 지침 {#how-to-instructions}
 
 * [AEM Communities Todo MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
 
-   MVC로 이동 SCF+SRP 구성 요소를 처음부터 개발하는 방법을 데모합니다.
+   ToDo MVC SCF+SRP 구성 요소를 처음부터 개발하는 방법을 보여줍니다.
 
 * [AEM Communities 시작하기](getting-started.md)
 
@@ -60,11 +59,11 @@ ht-degree: 2%
 
 ## 데모 사용자 {#demo-users}
 
-Geometrixx 샘플 패키지에는 데모 사용자가 포함되어 있습니다. 방문자(로그인하지 않음) 또는 구성원(로그인됨) 간의 경험에 차이가 있을 수 있으며, Geometrixx 샘플 패키지가 설치되어 있는 경우 이러한 사용자를 사용하여 [커뮤니티 구성 요소 안내서](components-guide.md)를 탐색할 때 로그인 상태를 시뮬레이션할 수 있습니다.
+Geometrixx 샘플 패키지에는 데모 사용자가 들어 있습니다. 방문자(로그인되지 않음) 또는 구성원(로그인되지 않음)과 Geometrixx 샘플 패키지가 설치되어 있는 한, 이러한 사용자를 사용하여 [커뮤니티 구성 요소 안내서](components-guide.md)로 탐색할 때 로그인 상태를 시뮬레이션할 수 있습니다.
 
-데모 사용자의 전체 목록을 보려면 레일을 사용하여 **[!UICONTROL 도구 > 작업 > 보안 > 사용자]**&#x200B;로 이동합니다. 또는 사용자 및 그룹 관리를 위해 클래식 UI [보안 콘솔](http://localhost:4502/useradmin)을 사용합니다.
+데모 사용자의 전체 목록이 필요하면 레일을 사용하여 **[!UICONTROL 도구 > 작업 > 보안 > 사용자]**&#x200B;로 이동합니다. 또는 사용자 및 그룹 관리를 위해 클래식 UI [보안 콘솔](http://localhost:4502/useradmin)을 사용하십시오.
 
-[커뮤니티 사이트를 만든 경우 데모 사용자를 [커뮤니티 사용자 그룹](users.md)에 할당할 수 있습니다.](getting-started.md)
+[커뮤니티 사이트가 생성된 경우 데모 사용자를 [커뮤니티 사용자 그룹](users.md)에 할당할 수 있습니다.](getting-started.md)
 
 ***사용자 id* /  *암호:***
 
