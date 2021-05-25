@@ -1,29 +1,28 @@
 ---
 title: 작업 작업 사용자 지정
 seo-title: 작업 작업 사용자 지정
-description: 작업 작업의 모양을 사용자 정의하고, 작업에 이미지만 사용하고, 경로 작업에 사용되는 이미지를 사용자 정의할 수 있습니다.
-seo-description: 작업 작업의 모양을 사용자 정의하고, 작업에 이미지만 사용하고, 경로 작업에 사용되는 이미지를 사용자 정의할 수 있습니다.
+description: 작업 작업의 모양을 사용자 지정하고 작업에 이미지만 사용하고 경로 작업에 사용되는 이미지를 사용자 지정할 수 있습니다.
+seo-description: 작업 작업의 모양을 사용자 지정하고 작업에 이미지만 사용하고 경로 작업에 사용되는 이미지를 사용자 지정할 수 있습니다.
 uuid: f6aebcd5-beac-41bf-95bf-2c07d36afa8b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
-translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+exl-id: 3534864b-3d1c-42ca-96a0-5becbfbc8ce6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 1%
 
 ---
 
-
 # 작업 작업 사용자 지정 {#customizing-task-actions}
 
-AEM Forms 작업 영역을 사용하면 작업 작업을 사용자 정의할 수 있습니다. 작업 작업을 사용자 지정하기 전에 AEM Forms 작업 영역 사용자 지정](/help/forms/using/generic-steps-html-workspace-customization.md)에 대한 [일반 단계에 나열된 단계를 따라야 합니다.
+AEM Forms 작업 공간을 사용하면 사용자가 작업 작업을 사용자 지정할 수 있습니다. 작업 작업을 사용자 지정하기 전에 AEM Forms 작업 공간 사용자 지정을 위한 [일반 단계에 나열된 절차를 따라야 합니다](/help/forms/using/generic-steps-html-workspace-customization.md).
 
 ## 텍스트 스타일 사용자 지정 {#customizing-text-style}
 
-텍스트 스타일을 사용자 정의하려면 `/apps/ws/css/newStyle.css` 파일에 다음 코드 조각을 추가합니다.
+텍스트 스타일을 사용자 지정하려면 `/apps/ws/css/newStyle.css` 파일에 다음 코드 조각을 추가합니다.
 
 ```css
 /*-------- For Task Actions visible in task list task action popup ----------------------------------------------------*/
@@ -111,7 +110,7 @@ AEM Forms 작업 영역을 사용하면 작업 작업을 사용자 정의할 수
 
 ## 이미지 사용자 지정 {#customizing-images}
 
-이미지를 사용자 정의하려면 `/apps/ws/css/newStyle.css` 파일에 다음 코드 조각을 추가합니다. 다음 코드 조각은 *lock* 작업의 이미지를 사용자 정의합니다.
+이미지를 사용자 지정하려면 `/apps/ws/css/newStyle.css` 파일에 다음 코드 조각을 추가합니다. 다음 코드 조각은 *lock* 작업에 대한 이미지를 사용자 지정합니다.
 
 ```css
 #taskarea .taskActionsPopUp .lock, .task .taskActionsPopUp .lock{
@@ -121,7 +120,7 @@ AEM Forms 작업 영역을 사용하면 작업 작업을 사용자 정의할 수
 
 >[!NOTE]
 >
->별도의 스타일을 추가하여 작업 목록 및 작업 세부 사항 작업에 대해 서로 다른 해상도의 이미지나 이미지를 표시할 수 있습니다. 예를 들어 &#39;잠금&#39; 작업을 변경합니다.
+>별도의 스타일을 추가하여 작업 목록 및 작업 세부 사항 작업에 대해 서로 다른 해상도의 이미지나 이미지를 표시합니다. 예를 들어 &#39;잠금&#39; 작업을 변경하려면:
 
 ```css
 #taskarea .taskActionsPopUp .lock{
@@ -134,13 +133,13 @@ AEM Forms 작업 영역을 사용하면 작업 작업을 사용자 정의할 수
 
 ## 작업 {#showing-only-images-for-actions}에 대한 이미지만 표시
 
-동작에 대한 이미지만 표시하려면 경로 작업에 사용되는 이미지를 사용자 정의합니다. 자세한 내용은 [경로 작업 이미지](/help/forms/using/images-route-actions.md)를 참조하십시오.
+작업에 대한 이미지만 표시하려면 경로 작업에 사용되는 이미지를 사용자 지정합니다. 자세한 내용은 [경로 작업 이미지](/help/forms/using/images-route-actions.md)를 참조하십시오.
 
 ### 작업 목록 작업 팝업 메뉴 {#task-list-task-action-nbsp-pop-up-menu}
 
-1. AEM Forms 작업 영역 작업 목록 작업 팝업 메뉴의 항목을 사용자 정의하려면 개발 패키지가 필요합니다. 개발 패키지 만들기에 대한 자세한 내용은 [AEM Forms 작업 영역 코드 작성을 참조하십시오.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
+1. AEM Forms 작업 공간 작업 목록 작업 팝업 메뉴의 항목을 사용자 지정하려면 개발 패키지가 필요합니다. 개발 패키지 만들기에 대한 자세한 내용은 [AEM Forms 작업 공간 코드 작성](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code) 을 참조하십시오.
 
-1. /libs/ws/js/runtime/templates/task.html을 `/apps/ws/js/runtime/templates/task.html`에 복사하여 다음 코드 조각을 바꿉니다.
+1. /libs/ws/js/runtime/templates/task.html 을 `/apps/ws/js/runtime/templates/task.html`에 복사하여 다음 코드 조각을 바꿉니다.
 
    ```
    // Orignal code
@@ -265,10 +264,10 @@ AEM Forms 작업 영역을 사용하면 작업 작업을 사용자 정의할 수
 
 ### 작업 세부 정보 작업 팝업 메뉴 {#task-details-task-action-pop-up-menu}
 
-세부 정보 작업 팝업 메뉴를 사용자 정의하려면 다음 단계를 수행합니다.
+다음 단계를 수행하여 [세부 정보 작업] 팝업 메뉴를 사용자 정의합니다.
 
 * /libs/ws/js/runtime/templates/taskdetails.html 파일을 `/apps/ws/js/runtime/templates/` 폴더에 복사합니다.
-* 텍스트 대신 앵커 태그 내에 아이콘 태그를 캡슐화합니다. 예를 들어, 아래에 나열된 *new code *는 앵커 태그 내에 icon 태그를 캡슐화합니다.
+* 텍스트 대신 앵커 태그 내에 아이콘 태그를 캡슐화합니다. 예를 들어, 아래에 나열된 *새 코드는 앵커 태그 내의 아이콘 태그를 캡슐화합니다.
 
 ```
 // Original code
@@ -363,4 +362,4 @@ AEM Forms 작업 영역을 사용하면 작업 작업을 사용자 정의할 수
 * 다음 텍스트를 찾습니다.`text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
 * 찾은 텍스트를 다음 텍스트로 바꿉니다.`text!/lc/apps/ws/js/runtime/templates/taskdetails.html`
 
-[**지원 문의**](https://www.adobe.com/account/sign-in.supportportal.html)
+[**지원 문의**](https://www.adobe.com/kr/account/sign-in.supportportal.html)
