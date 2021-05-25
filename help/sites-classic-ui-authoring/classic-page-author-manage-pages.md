@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: c5fa7561-0e21-4e29-be8e-4a6d3b61092d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1935'
 ht-degree: 92%
 
 ---
-
 
 # 페이지 생성 및 구성{#creating-and-organizing-pages}
 
@@ -71,7 +70,7 @@ ht-degree: 92%
     /...
 ```
 
-이 구조는 웹 사이트 콘솔에서 볼 수 있으며 트리 구조](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15)를 통해 [탐색할 때 사용할 수 있습니다.
+이 구조가 표시되는 웹 사이트 콘솔에서는 [트리 구조를 탐색하는 데 사용할 수 있습니다](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -89,9 +88,9 @@ ht-degree: 92%
    * URI를 생성하는 데 사용됩니다.
    * 이 필드에 대한 사용자 입력은 선택 사항입니다. 지정하지 않을 경우 이름이 제목에서 파생됩니다.
 
-새 페이지를 만들 때 AEM은 AEM 및 JCR에서 지정한 규칙](/help/sites-developing/naming-conventions.md)에 따라 페이지 이름을 확인합니다.[
+새 페이지를 생성할 때 AEM은 [AEM 및 JCR에서 지정한 규칙](/help/sites-developing/naming-conventions.md)에 따라 페이지 이름을 확인합니다.
 
-구현 및 허용되는 문자 목록은 UI에 따라 약간 다르지만(터치 지원 UI에 대해 더 광범위함) 허용된 최소 문자 수는 다음과 같습니다.
+구현 및 허용되는 문자 목록은 UI에 따라 약간 다르지만(터치 지원 UI에 대해 더 광범위함) 허용되는 최소 문자는 다음과 같습니다.
 
 * &#39;a&#39; - &#39;z&#39;
 * &#39;A&#39; - &#39;Z&#39;
@@ -108,16 +107,16 @@ ht-degree: 92%
 | 제목 | 파생되는 이름 |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&amp;ast;jc+ | sc---c-.html |
+| SC%&amp;&amp;ast;c+ | sc---c-.html |
 
 #### 이름 {#name}
 
 새 페이지를 만들 때 페이지 **이름**[을 제공하면 AEM이 AEM 및 JCR에서 지정한 규칙에 따라 이름을 확인합니다.](/help/sites-developing/naming-conventions.md)
 
-클래식 UI에서는 **이름** 필드에 잘못된 문자&#x200B;**을 입력할 수 없습니다.**
+클래식 UI에서는 **이름** 필드에 잘못된 문자&#x200B;**를 입력할 수 없습니다.**
 
 >[!NOTE]
->터치가 활성화된 UI에서는 **이름** 필드에 잘못된 문자&#x200B;**을 제출할 수 없습니다.** AEM에서 잘못된 문자를 감지하면 필드가 강조 표시되고 제거/교체가 필요한 문자를 나타내는 설명 메시지가 표시됩니다.
+>터치 활성화 UI에서는 **이름** 필드에 잘못된 문자&#x200B;**를 제출할 수 없습니다.** AEM에서 잘못된 문자를 감지하면 필드가 강조 표시되고 제거/교체가 필요한 문자를 나타내는 설명 메시지가 표시됩니다.
 
 >[!NOTE]
 >
@@ -152,7 +151,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 제공되
 * 비디오
 * 더 많음
 
-페이지를 만들고 열면 [사이드킥의 ](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick)에서 사용할 수 있는 구성 요소](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph)를 사용하여 [컨텐츠를 추가할 수 있습니다.
+페이지를 만들고 열면 [사이드킥에서 사용할 수 있는 구성 요소](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph)를 사용하여 [컨텐츠를 추가할 수 있습니다](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
 
 ## 페이지 관리 {#managing-pages}
 
@@ -198,7 +197,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 제공되
 
    >[!NOTE]
    >
-   >기존 페이지를 편집 중일 때 페이지를 만들 수도 있습니다. **하위 페이지 만들기 **를 사용하여 사이드 킥의 **페이지** 탭에서 편집할 페이지 바로 아래에 새 페이지를 만듭니다.
+   >기존 페이지를 편집 중일 때 페이지를 만들 수도 있습니다. **하위 페이지 만들기 **를 사이드킥의 **페이지** 탭에서 사용하면 편집 중인 페이지 바로 아래에 새 페이지가 만들어집니다.
 
 ### 편집할 페이지 열기 {#opening-a-page-for-editing}
 
@@ -338,4 +337,3 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지에 대한 내부 링�
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
 1. 폴더를 만들려면 **만들기**&#x200B;를 선택합니다.
-
