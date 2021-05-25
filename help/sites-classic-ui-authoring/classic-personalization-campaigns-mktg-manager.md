@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 1445437e-7f22-49ad-9bde-f3c0ff7d5142
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 63bf891c-572a-40e0-945f-d20a0a029224
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1218'
 ht-degree: 92%
 
 ---
-
 
 # 마케팅 캠페인 관리자 작업{#working-with-the-marketing-campaign-manager}
 
@@ -49,13 +48,13 @@ MCM에서 다음에 액세스할 수 있습니다.
       특정 세그먼트를 선택하면 세그먼트 정의 페이지가 열립니다.
 
    * [보고서](/help/sites-administering/reporting.md)\
-      AEM에서는 인스턴스의 상태를 분석하고 모니터링하는 데 도움이 되는 다양한 보고서를 제공합니다. 이 MCM 창에는 보고서가 표시됩니다.
+      AEM에서는 인스턴스의 상태를 분석하고 모니터링하는 다양한 보고서를 제공합니다. 이 MCM 창에는 보고서가 표시됩니다.
 
       보고서를 선택하면 보고서 페이지가 열립니다.
 
    * [캠페인](#campaigns)
 
-      이 창에는 [newsletters](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) 및 [Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers)와 같은 캠페인 경험이 나열됩니다.
+      이 창에는 [뉴스레터](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) 및 [Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers)와 같은 캠페인 경험이 표시됩니다.
 
 * **[리드](#leads)**
 
@@ -82,7 +81,7 @@ MCM에서 다음에 액세스할 수 있습니다.
 >[!NOTE]
 >
 >Adobe는 이 기능(리드 관리)을 추가로 개선할 계획이 없습니다.\
->권장 사항은 [Adobe Campaign을 활용하고 AEM](/help/sites-administering/campaign.md)과의 통합을 활용하는 것입니다.
+>[Adobe Campaign을 활용하고 AEM](/help/sites-administering/campaign.md)에 통합하는 것이 좋습니다.
 
 AEM MCM에서는 리드를 수동으로 입력하거나 메일링 목록과 같이 쉼표로 구분된 목록을 가져와서 리드를 구성하고 추가할 수 있습니다. 리드를 생성하는 또 다른 방법은 뉴스레터 등록 또는 커뮤니티 등록입니다. 적절한 구성을 통해 이러한 등록으로부터 리드를 생성하는 워크플로우를 시작할 수 있습니다. 리드는 일반적으로 분류되어 목록에 배치되므로 이후에 목록 단위로 작업을 수행할 수 있습니다. 예를 들어 특정 목록에 사용자 지정 이메일을 보낼 수 있습니다.
 
@@ -99,7 +98,7 @@ AEM MCM에서는 리드를 수동으로 입력하거나 메일링 목록과 같�
 >[!NOTE]
 >
 >Adobe는 이 기능(목록 관리)을 추가로 개선할 계획이 없습니다.\
->권장 사항은 [Adobe Campaign을 활용하고 AEM](/help/sites-administering/campaign.md)과의 통합을 활용하는 것입니다.
+>[Adobe Campaign을 활용하고 AEM](/help/sites-administering/campaign.md)에 통합하는 것이 좋습니다.
 
 목록을 통해 리드를 여러 그룹으로 정리할 수 있습니다. 목록을 사용하여 마케팅 캠페인을 특정 사용자 그룹으로 타게팅할 수 있습니다. 예를 들어 특정 목록에 타게팅된 뉴스레터를 보낼 수 있습니다.
 
@@ -186,7 +185,7 @@ AEM MCM에서는 리드를 수동으로 입력하거나 메일링 목록과 같�
 
    여기에서 다음 작업을 수행할 수 있습니다.
 
-   * **새로 만들기...** 경험;예를 들어, Adobe Target 오퍼, 티저 및 뉴스레터를 제공합니다.
+   * **새로 만들기...** 경험;예를 들어 Adobe Target에서 오퍼, 티저 및 뉴스레터를 제공합니다.
    * 특정 티저 페이지 또는 뉴스레터의 세부 정보를 **편집**&#x200B;합니다(두 번 클릭을 사용할 수도 있음).
    * 특정 티저 페이지 또는 뉴스레터에 대한 **속성...**&#x200B;을 정의합니다.
    * 경험(Teaser 페이지 또는 Newsletter)의 모양과 분위기를 **시뮬레이션**&#x200B;합니다.
@@ -210,5 +209,4 @@ MCM에서 **캠페인**&#x200B;을 클릭합니다. 목록 보기가 활성화�
 
 MCM에서 **캠페인**&#x200B;을 클릭합니다. 목록 보기가 활성화되었는지 확인하고 필요한 캠페인 경험을 선택한 후 **분석...**&#x200B;을 선택합니다. 시간에 따른 페이지 노출 차트가 표시됩니다.
 
-![mcm_campaianalyze](assets/mcm_campaignanalyze.png)
-
+![mcm_campaignanalyze](assets/mcm_campaignanalyze.png)
