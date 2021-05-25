@@ -2,15 +2,14 @@
 title: AEM 6.4 모바일 사용 안내서
 seo-title: AEM 6.4 모바일 사용 안내서
 description: 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다.
-seo-description: 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법에 대해 설명합니다.
-translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+seo-description: 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다.
+exl-id: 89af57da-8bd6-46b7-9462-fcf51687004e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 92%
 
 ---
-
 
 # AEM 6.4 모바일 사용 안내서
 
