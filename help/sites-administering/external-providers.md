@@ -1,39 +1,38 @@
 ---
-title: 외부 공급자와 분석
-seo-title: 외부 공급자와 분석
-description: 외부 공급자와의 Analytics에 대해 알아보십시오.
-seo-description: 외부 공급자와의 Analytics에 대해 알아보십시오.
+title: 외부 공급자의 Analytics
+seo-title: 외부 공급자의 Analytics
+description: 외부 공급자의 Analytics에 대해 알아봅니다.
+seo-description: 외부 공급자의 Analytics에 대해 알아봅니다.
 uuid: bea8ec38-a190-46f9-a5fa-8d65321fdf20
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: bf8fd156-4be9-43f8-8948-cf7f91c25f1b
-translation-type: tm+mt
-source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+exl-id: 6d906c2b-c8bc-4d54-9887-8aaeb6cc83d3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 3%
 
 ---
 
+# 외부 공급자의 Analytics{#analytics-with-external-providers}
 
-# 외부 공급자를 사용한 분석{#analytics-with-external-providers}
+Analytics에서는 웹 사이트 사용 방식에 대한 중요하고도 흥미로운 정보를 제공할 수 있습니다.
 
-Analytics에서는 웹 사이트가 어떻게 사용되고 있는지에 대한 중요하고 흥미로운 정보를 제공할 수 있습니다.
-
-다음과 같이 해당 서비스와 통합하는 데 다양한 기본 구성을 사용할 수 있습니다.
+적절한 서비스와 통합할 때 다음과 같은 다양한 기본 구성을 사용할 수 있습니다.
 
 * [Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * [Adobe Target](/help/sites-administering/target.md)
 
-**범용 분석 조각**&#x200B;의 자체 인스턴스를 구성하여 새 서비스 구성을 정의할 수도 있습니다.
+또한 **일반 Analytics 코드 조각**&#x200B;의 자체 인스턴스를 구성하여 새 서비스 구성을 정의할 수도 있습니다.
 
 그런 다음 웹 페이지에 추가되는 작은 코드 조각을 통해 정보를 수집합니다. 예:
 
 >[!CAUTION]
 >
->스크립트는 `script` 태그로 둘러싸야 합니다.
+>스크립트는 `script` 태그로 묶으면 안 됩니다.
 
 ```
 var _gaq = _gaq || [];
@@ -47,7 +46,7 @@ _gaq.push(['_trackPageview']);
 })();
 ```
 
-이러한 코드 조각을 사용하면 데이터를 수집하고 보고서를 생성할 수 있습니다. 수집된 실제 데이터는 제공자와 사용된 실제 코드 조각에 따라 다릅니다. 통계에는 다음이 포함됩니다.
+이러한 코드 조각을 사용하면 데이터를 수집하고 보고서를 생성할 수 있습니다. 수집된 실제 데이터는 사용되는 공급자 및 실제 코드 조각에 따라 다릅니다. 통계 예는 다음과 같습니다.
 
 * 시간에 따른 방문자 수
 * 방문한 페이지 수
@@ -56,15 +55,15 @@ _gaq.push(['_trackPageview']);
 
 >[!CAUTION]
 >
->Geometrixx-Outdoors 데모 사이트는 해당 `js` 스크립트에서 페이지 속성에 제공된 속성이 html 소스 코드(`</html>` 종료 태그 바로 위)에 추가되도록 구성되어 있습니다.
+>Geometrixx-Outdoors 데모 사이트는 페이지 속성에 제공된 속성이 해당 `</html>` 종료 태그 바로 위에 있는 html 소스 코드에 추가되도록 구성됩니다.`js`
 >
 >
->사용자 자신의 `/apps`이(가) 기본 페이지 구성 요소( `/libs/foundation/components/page`)에서 상속되지 않은 경우 사용자(또는 개발자)는 해당 `cq/cloudserviceconfigs/components/servicescomponents` 포함 또는 유사한 메커니즘을 사용하여 해당 `js` 스크립트가 포함되어 있는지 확인해야 합니다.
+>자신의 `/apps`이 기본 페이지 구성 요소( `/libs/foundation/components/page`)에서 상속되지 않는 경우 사용자(또는 개발자)는 해당 `cq/cloudserviceconfigs/components/servicescomponents` 스크립트를 포함하거나 유사한 메커니즘을 사용하여 해당 `js` 스크립트가 포함되어 있는지 확인해야 합니다.
 >
 >
->이러한 기능이 없으면 서비스(범용, 분석, Target 등)가 작동하지 않습니다.
+>이렇게 하지 않으면 서비스(일반, Analytics, Target 등)가 작동하지 않습니다.
 
-## 범용 코드 단편 {#creating-a-new-service-with-a-generic-snippet}으로 새 서비스 만들기
+## 일반 코드 조각 {#creating-a-new-service-with-a-generic-snippet}으로 새 서비스 만들기
 
 기본 구성의 경우:
 
@@ -72,45 +71,44 @@ _gaq.push(['_trackPageview']);
 
 1. 왼쪽 창에서 **Cloud Services 구성**&#x200B;을 확장합니다.
 
-1. **범용 분석 조각**&#x200B;을 두 번 클릭하여 페이지를 엽니다.
+1. **일반 Analytics 코드 조각**&#x200B;을 두 번 클릭하여 페이지를 엽니다.
 
-   ![analytics_genericoverview](assets/analytics_genericoverview.png)
+   ![analytics_genericicoverview](assets/analytics_genericoverview.png)
 
-1. 대화 상자를 사용하여 새 구성을 추가하려면 +를 클릭하십시오.예를 들어 google analytics와 같이 최소한 이름을 지정합니다.
+1. 대화 상자를 사용하여 새 구성을 추가하려면 + 를 클릭합니다.최소한 이름(예: google analytics)을 할당합니다.
 
    ![analytics_addconfig](assets/analytics_addconfig.png)
 
-1. **만들기**&#x200B;를 클릭하면 코드 단편 대화 상자가 즉시 열립니다. 적절한 javascript 조각을 필드에 붙여 넣습니다.
+1. **만들기**&#x200B;를 클릭하면 코드 조각 대화 상자가 즉시 열립니다. 적절한 Javascript 조각을 필드에 붙여 넣습니다.
 
    ![analytics_snippet](assets/analytics_snippet.png)
 
 1. **확인**&#x200B;을 클릭하여 저장합니다.
 
-## {#using-your-new-service-on-pages} 페이지에서 새 서비스 사용
+## 페이지에서 새 서비스 사용 {#using-your-new-service-on-pages}
 
-서비스 구성을 만든 후에는 이제 이 구성을 사용하도록 필요한 페이지를 구성해야 합니다.
+서비스 구성을 만들었으면 이제 이 구성을 사용하도록 필요한 페이지를 구성해야 합니다.
 
 1. 페이지로 이동합니다.
 
-1. 사이드킥에서 **페이지 속성**&#x200B;을 열고 **Cloud Services** 탭을 엽니다.
+1. 사이드킥에서 **페이지 속성**&#x200B;을 연 다음, **Cloud Services** 탭을 엽니다.
 
-1. **서비스 추가**&#x200B;를 클릭한 다음 필요한 서비스를 선택합니다.예: **범용 분석 조각**:
+1. **서비스 추가**&#x200B;를 클릭한 다음 필요한 서비스를 선택합니다.예: **일반 Analytics 코드 조각**:
 
    ![analytics_selectservice](assets/analytics_selectservice.png)
 
 1. **확인**&#x200B;을 클릭하여 저장합니다.
 
-1. **Cloud Services** 탭으로 돌아갑니다. 이제 **범용 분석 조각**&#x200B;이(가) `Configuration reference missing` 메시지와 함께 나열됩니다. 드롭다운 목록을 사용하여 특정 서비스 인스턴스를 선택합니다.예를 들어 google-analytics는 다음과 같습니다.
+1. **Cloud Services** 탭으로 돌아갑니다. 이제 **일반 Analytics 코드 조각**&#x200B;이 `Configuration reference missing` 메시지와 함께 나열됩니다. 드롭다운 목록을 사용하여 특정 서비스 인스턴스를 선택합니다.예를 들면 google-analytics입니다.
 
-   ![analytics_select특정 서비스](assets/analytics_selectspecificservice.png)
+   ![analytics_selectspecificationservice](assets/analytics_selectspecificservice.png)
 
 1. **확인**&#x200B;을 클릭하여 저장합니다.
 
-   이제 페이지의 페이지 소스를 볼 때 조각을 볼 수 있습니다.
+   이제 페이지에 대한 페이지 소스를 볼 경우 코드 조각을 볼 수 있습니다.
 
-   적절한 기간이 지나면 수집된 통계를 볼 수 있습니다.
+   적절한 시간이 경과하면 수집된 통계를 볼 수 있습니다.
 
    >[!NOTE]
    >
    >구성이 하위 페이지가 있는 페이지에 첨부된 경우 해당 서비스도 상속됩니다.
-
