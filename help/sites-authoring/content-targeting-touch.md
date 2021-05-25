@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 0e2e95fa-9e27-4edc-b57b-82cefe8d4088
-translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+exl-id: 9b973d03-fd0a-4c22-8045-7dddc024e553
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '5374'
 ht-degree: 99%
 
 ---
-
 
 # 타깃팅 모드를 사용한 타깃팅된 컨텐츠 작성{#authoring-targeted-content-using-targeting-mode}
 
@@ -282,7 +281,7 @@ AEM의 타깃팅 모드를 사용하여 타깃팅된 컨텐츠를 작성하십�
 
 페이지에 타겟 구성 요소를 추가하는 것은 편집 모드 또는 타겟 모드에서 가능하고, 구성 요소를 타겟 구성 요소에 추가하는 것은 타겟 모드에서만 가능합니다. 타겟 구성 요소는 개인화 구성 요소 그룹에 속합니다.
 
-타깃팅된 컨텐츠를 편집하는 경우 편집하려면 **타깃팅 시작 **을 클릭하거나 탭해야 합니다.
+타깃팅된 컨텐츠를 편집하는 경우 그렇게 할 수 있으려면 먼저 **타깃팅 시작**을 클릭하거나 탭해야 합니다.
 
 1. 타겟 구성 요소를 오퍼를 표시할 페이지로 드래그합니다.
 1. 기본적으로 설정된 위치 ID는 없습니다. 위치를 설정하려면 구성 톱니바퀴를 클릭하거나 탭하십시오.
@@ -727,4 +726,3 @@ Client Context(클라이언트측)를 엔진으로 선택하는 경우:
 AEM을 Adobe Campaign과 통합하는 경우 엔진으로 **Adobe Campaign**&#x200B;을 선택합니다. 자세한 내용은 [Adobe Campaign과 AEM 통합](/help/sites-administering/campaign.md)을 참조하십시오.
 
 타깃팅에 ContextHub를 사용하는 경우에는 엔진으로 **ContextHub**&#x200B;를 선택하십시오. [ContextHub 구성](/help/sites-administering/contexthub-config.md)을 참조하십시오.
-
