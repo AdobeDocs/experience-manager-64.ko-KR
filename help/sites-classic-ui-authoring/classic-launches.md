@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 4f62078d-b5b0-4eb9-bd9b-7647a093dec2
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: e1e5dc83-2f9c-4c8d-a031-5ded3f1316a1
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 74%
 
 ---
-
 
 # 론치{#launches}
 
@@ -26,7 +25,7 @@ ht-degree: 74%
 
 >[!NOTE]
 >
->론치의 이면에 있는 이론은 표준 작성 문서의 [론치](/help/sites-authoring/launches.md)에서 자세히 설명합니다.
+>론치의 기본 이론은 표준 작성 설명서의 [론치](/help/sites-authoring/launches.md)에 자세히 설명되어 있습니다.
 >
 >클래식 UI에서 론치를 사용하는 것과 관련된 정보는 [론치 만들기](/help/sites-classic-ui-authoring/classic-launches-creating.md), [론치 편집](/help/sites-classic-ui-authoring/classic-launches-editing.md) 및 [론치 홍보](/help/sites-classic-ui-authoring/classic-launches-promoting.md)와 함께 다음 설명서에서 확인할 수 있습니다.
 
@@ -34,4 +33,4 @@ ht-degree: 74%
 >
 >클래식 UI에서는 하나의 론치에 대해 여러 소스 분기가 사용될 수 없습니다.
 
-론치 콘솔은 [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)로 직접 액세스할 수 있습니다.
+론치 콘솔은 [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)로 직접 액세스할 수 있습니다
