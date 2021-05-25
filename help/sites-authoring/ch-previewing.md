@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 24f94dd5-62a4-4ac3-9a1b-a8e189da9958
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 97%
 
 ---
-
 
 # ContextHub 데이터를 사용하여 페이지 미리 보기{#previewing-pages-using-contexthub-data}
 
@@ -70,4 +69,3 @@ UI 모듈은 도구 모음에 있는 하나 이상의 ContextHub 저장소에서
 팝업 오버레이는 클릭하거나 탭하여 전체 브라우저 창이나 화면을 덮도록 팝업 컨텐츠를 확장하는 아이콘을 포함할 수 있습니다.
 
 ![](do-not-localize/chlimage_1-18.png)
-
