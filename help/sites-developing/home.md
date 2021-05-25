@@ -3,7 +3,6 @@ title: AEM 6.4 개발 사용 안내서
 seo-title: AEM 6.4 개발 사용 안내서
 description: 이 안내서에서는 AEM 인스턴스를 빌드하는 방법을 다룹니다.
 seo-description: AEM 인스턴스를 빌드하는 방법을 다룹니다.
-translation-type: tm+mt
 source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '347'
