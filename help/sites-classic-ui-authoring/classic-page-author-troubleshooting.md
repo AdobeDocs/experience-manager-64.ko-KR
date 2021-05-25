@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
-translation-type: tm+mt
-source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+exl-id: 09409631-c579-4b1f-9193-1348896f6a09
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 95%
 
 ---
-
 
 # 작성 시의 AEM 문제 해결{#troubleshooting-aem-when-authoring}
 
@@ -71,7 +70,7 @@ ht-degree: 95%
 
 * **문제:**
 
-   * **찾기 및 바꾸기** 옵션을 사용할 때 페이지에서 `find` 용어의 일부 인스턴스가 바뀌지 않을 수 있습니다.
+   * **찾기 및 바꾸기** 옵션을 사용하는 경우 페이지에서 `find` 용어의 일부 인스턴스가 바뀌지 않을 수 있습니다.
 
 * **이유**:
 
@@ -87,4 +86,3 @@ ht-degree: 95%
    * 이 정의는 다음과 같이 **웹 콘솔**&#x200B;을 사용하여 **Day CQ WCM 찾기 바꾸기 서블릿**&#x200B;에 대한 구성으로 변경할 수 있습니다.
 
       `http://localhost:4502/system/console/configMgr`
-
