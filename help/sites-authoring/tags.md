@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: d0b0e47b-e68d-407d-9d06-deca2039dede
-translation-type: tm+mt
-source-git-commit: 8326ee711558a390f79fc185fc37bbbb3097e309
+exl-id: 846a925a-673e-4051-a673-1a9236701f0a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 93%
 
 ---
-
 
 # 태그 사용 {#using-tags}
 
@@ -90,4 +89,3 @@ ht-degree: 93%
 페이지에 [검색 구성 요소](/help/sites-authoring/default-components-foundation.md#search)를 추가하면 태그를 포함하는 검색 기능이 제공되며 작성 환경과 게시 환경 모두에서 사용할 수 있습니다.
 
 ![chlimage_1-93](assets/chlimage_1-93.png)
-
