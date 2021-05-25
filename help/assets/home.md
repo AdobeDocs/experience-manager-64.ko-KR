@@ -2,16 +2,15 @@
 title: Assets 안내서
 description: 이 안내서에서는 디지털 자산 만들기, 관리, 제공 및 최적화 방법과 같은 모든 AEM Assets 작업을 다룹니다.
 user-guide-title: Assets 안내서
-feature: Asset Management
+feature: 자산 관리
 role: Business Practitioner,Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 72b5e053-9307-4333-84e5-d4cc2b6bdecc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 86%
+source-wordcount: '319'
+ht-degree: 88%
 
 ---
-
 
 # Assets 안내서
 
@@ -43,10 +42,10 @@ ht-degree: 86%
 ## 주요 AEM 리소스
 
 * [AEM 자습서](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
-* [Dispatcher 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
-* [HTL 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
-* [코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Dispatcher 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)
+* [HTL 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR)
+* [코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ko-KR)
 * [GDPR 준비 완료](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
 * [AEM 커뮤니티 포럼](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
