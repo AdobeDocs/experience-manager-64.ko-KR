@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 5b488f41-2cc1-41f9-8c7f-da851d325949
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: 36e00fc0-310c-4dc5-b1d7-68185fa27c30
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 100%
 
 ---
-
 
 # 컨텐츠 조각으로 페이지 작성{#page-authoring-with-content-fragments}
 
@@ -30,4 +29,3 @@ AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산
 >[컨텐츠 조각 관리]의 전체 기능은 클래식 UI에서 사용할 수 없습니다. 표준 작성 문서에서 [컨텐츠 조각으로 페이지 작성](/help/sites-authoring/content-fragments.md)을 참조하십시오.
 >
 >컨텐츠 조각 구성 요소는 클래식 UI 사이드 킥에서 볼 수 있지만, 세부 기능은 사용할 수 없습니다.
-
