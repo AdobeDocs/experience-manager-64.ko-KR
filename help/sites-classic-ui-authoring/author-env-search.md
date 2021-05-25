@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: b20e0f78-9ae4-47ba-8e9a-452a0a78b663
-translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+exl-id: 9c1d8969-6aa6-41b9-a797-3e6431475fc6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 87%
 
 ---
-
 
 # 검색{#search-features}
 
@@ -32,7 +31,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
 
 ![chlimage_1-140](assets/chlimage_1-140.png)
 
-검색 패널을 사용하면 모든 웹 사이트 페이지를 검색할 수 있습니다.여기에는 다음에 대한 필드와 위젯이 포함되어 있습니다.
+검색 패널에서 모든 웹 사이트 페이지를 검색할 수 있습니다.여기에는 다음에 대한 필드와 위젯이 포함되어 있습니다.
 
 * **전체 텍스트**: 지정된 텍스트 검색
 * **수정 이후/이전**: 특정 날짜 사이에 변경된 페이지만 검색
@@ -81,7 +80,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
    * 대/소문자를 구분하여 검색할지를 지정합니다.
    * 단어 단위로만 찾을지 아니면 부분 문자열도 찾을지를 지정합니다.
 
-   **미리 보기**&#x200B;를 클릭하면 해당 용어가 검색된 위치가 나열됩니다.바꿀 특정 인스턴스를 선택하거나 취소할 수 있습니다.
+   **미리 보기**&#x200B;를 클릭하면 단어를 찾은 위치가 나열됩니다.바꿀 특정 인스턴스를 선택하거나 지울 수 있습니다.
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
@@ -94,11 +93,10 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
 * `jcr:text`
 * `text`
 
-Apache Felix 웹 관리 콘솔(예: `http://localhost:4502/system/console/configMgr`)을 사용하여 범위를 변경할 수 있습니다. `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)`을 선택하고 필요에 따라 범위를 구성합니다.
+Apache Felix 웹 관리 콘솔(예: `http://localhost:4502/system/console/configMgr`)을 사용하면 범위를 변경할 수 있습니다. `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` 을 선택하고 필요에 따라 범위를 구성합니다.
 
 >[!NOTE]
 >
 >표준 AEM 설치 환경에서 찾기 및 바꾸기는 Lucene을 사용하여 검색합니다.
 >
 >Lucene은 최대 16k 길이의 문자열 속성을 인덱싱합니다. 이 길이를 초과하는 문자열은 검색되지 않습니다.
-
