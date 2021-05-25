@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: e74ffe97-5de8-4e9c-94b4-d7d63939d40c
 exl-id: daff8e4e-40c7-4762-8e4f-d85d50b86e5d
-source-git-commit: 361964df6c25cbcfadb45dbf8fc10d5ab1258e6d
+source-git-commit: 5dd282cc91721a3d53bdf29d5fbb978a52c3704e
 workflow-type: tm+mt
-source-wordcount: '2815'
+source-wordcount: '2871'
 ht-degree: 4%
 
 ---
@@ -327,6 +327,11 @@ ht-degree: 4%
 ![](assets/reportcomponent.png) ![reportcomponentreportcompentall](assets/reportcompentall.png)
 
 ### 디스크 사용량 {#disk-usage}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_diskusage"
+>title="디스크 사용량 보고서"
+>abstract="CTT Calculator에 대한 입력으로 사용자는 &#39;http://HOST:PORT/etc/reports/diskusage.html&#39;&#39;에서 디스크 사용량 보고서를 실행하여 AEM 저장소의 크기를 예측할 수 있습니다. 다음과 같은 &#39;path&#39; 매개 변수를 사용하여 특정 저장소 경로의 크기를 예측할 수도 있습니다.&#39;http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam&#39;&#39;"
 
 디스크 사용량 보고서에는 리포지토리 내에 저장된 데이터에 대한 정보가 표시됩니다.
 
