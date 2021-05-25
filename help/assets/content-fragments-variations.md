@@ -10,9 +10,8 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
 exl-id: 15a5fdc9-2878-4f95-83ee-02a2899aeb43
-feature: Content Fragments
+feature: 콘텐츠 조각
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
 source-wordcount: '1764'
@@ -24,7 +23,7 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](../release-notes/sp-release-notes.md)의 응용 프로그램이 필요합니다.
+>일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](../release-notes/sp-release-notes.md)을 적용해야 합니다.
 
 [변형](content-fragments.md#constituent-parts-of-a-content-fragment)을 사용하면 특정 채널 및/또는 시나리오에서 사용할 마스터 컨텐츠의 사본을 만들고 편집할 수 있으므로 변형은 컨텐츠 조각의 중요한 기능입니다.
 
@@ -89,7 +88,7 @@ ht-degree: 97%
 
 전체 화면 편집기(즉, 여러 줄 텍스트)가 열려 있는 경우 다음 작업도(모든 [형식](#formats)에) 사용할 수 있습니다.
 
-* [형식](#formats)([서식 있는 텍스트](#rich-text), [일반 텍스트](#plain-text), [마크다운](#markdown))을 선택합니다.
+* [형식](#formats)([리치 텍스트](#rich-text), [일반 텍스트](#plain-text), [Markdown](#markdown))을 선택합니다
 * [텍스트 통계 표시](#viewing-key-statistics)
 * [컨텐츠 업로드](#uploading-content)
 * [마스터와 동기화](#synchronizing-with-master)(변형을 편집할 때)
