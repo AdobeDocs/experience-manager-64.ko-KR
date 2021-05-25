@@ -10,9 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: 22ae0d3a-083f-40e4-bf4a-7a755ae9e312
 exl-id: e2804707-7b75-4fae-937e-9e258481878f
-feature: Content Fragments
+feature: 콘텐츠 조각
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
 source-wordcount: '2004'
@@ -24,7 +23,7 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md)의 응용 프로그램이 필요합니다.
+>일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md)을 적용해야 합니다.
 
 AEM(Adobe Experience Manager) 컨텐츠 조각을 사용하면 [페이지에 영향을 받지 않는 컨텐츠를 게시](/help/sites-authoring/content-fragments.md), 디자인, 제작 및 조정할 수 있습니다. 이를 통해 여러 위치/여러 채널에서 사용할 수 있는 컨텐츠를 준비할 수 있습니다.
 
@@ -118,7 +117,7 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 
 * 구조화된 컨텐츠가 포함된 조각
 
-   * 이러한 모델은 결과 조각의 구조를 미리 정의하는 [컨텐츠 조각 모델](content-fragments-models.md)을 기반으로 합니다.
+   * 이러한 ID는 결과 조각의 구조를 사전 정의하는 [컨텐츠 조각 모델](content-fragments-models.md)을 기반으로 합니다.
    * JSON 익스포터를 사용하여 Content Services를 구현하는 데에도 사용할 수 있습니다.
 
 ## 컨텐츠 유형 {#content-type}
