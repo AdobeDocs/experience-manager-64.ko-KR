@@ -9,18 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 8556d20a-99bd-4942-b7b8-2db69f64e67c
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 05c52802-adfd-4b5f-a273-d6a261a00659
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 85%
 
 ---
 
-
 # 페이지에 워크플로우 적용{#applying-workflows-to-pages}
 
-작성 시 워크플로우를 호출하여 페이지에서 작업을 수행할 수 있습니다.또한 두 개 이상의 워크플로우를 적용할 수도 있습니다.
+작성 시 워크플로우를 호출하여 페이지에서 작업을 수행할 수 있습니다.두 개 이상의 워크플로우를 적용할 수도 있습니다.
 
 워크플로우를 적용할 때에는 다음 정보를 지정합니다.
 
@@ -119,7 +118,7 @@ ht-degree: 85%
 
 1. **범위** 단계에서 다음 내용을 선택할 수 있습니다.
 
-   * **컨텐츠** 추가에서  [경로 탐색](/help/sites-authoring/author-environment-tools.md#path-browser) 을 열고 추가 리소스를 선택합니다.브라우저에서는 선택을 클릭/ **** 탭하여 워크플로우 인스턴스에 컨텐츠를 추가합니다.
+   * **컨텐츠 추** 가 를 사용하여  [경로 브라우저를 열고 ](/help/sites-authoring/author-environment-tools.md#path-browser) 추가 리소스를 선택합니다.브라우저에서 선택 을 클릭/탭하여  **** 워크플로우 인스턴스에 컨텐츠를 추가합니다.
    * 추가 작업을 보기 위한 기존 리소스:
 
       * **하위 포함** - 해당 리소스의 하위 항목이 워크플로우에 포함되도록 지정합니다.
@@ -140,11 +139,10 @@ ht-degree: 85%
    >
    >리소스를 더 추가하려는 경우 **뒤로**&#x200B;를 사용하여 **속성** 단계에서 **워크플로우 패키지 유지**&#x200B;에 대한 설정을 조정할 수 있습니다.
 
-1. **만들기**&#x200B;를 사용하여 마법사를 닫고 워크플로 인스턴스를 만듭니다. 알림은 사이트 콘솔에 표시됩니다.
+1. **만들기**&#x200B;를 사용하여 마법사를 닫고 워크플로우 인스턴스를 만듭니다. 알림은 사이트 콘솔에 표시됩니다.
 
 ## 페이지 편집기에서 워크플로우 시작  {#starting-a-workflow-from-the-page-editor}
 
 페이지를 편집할 때 도구 모음에서 **페이지 정보**&#x200B;를 선택할 수 있습니다. 드롭다운 메뉴에는 **워크플로우에서 시작** 선택 사항이 있습니다. 이 선택 사항을 선택하면 필요한 경우 제목과 함께 필요한 워크플로를 지정할 수 있는 대화 상자가 열립니다.
 
 ![wf-54](assets/wf-54.png)
-
