@@ -9,24 +9,23 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 8c747892-c5ba-4288-b5e7-75fd40d92f5c
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 8421a092-6e99-4c05-9647-c0cc76667c85
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 87%
 
 ---
 
-
 # 작성 환경 사용{#working-with-the-author-environment}
 
 >[!NOTE]
 >
->다음 문서는 클래식 UI에 중점을 둡니다. 터치가 활성화된 최신 UI에서 작성하는 방법에 대한 자세한 내용은 [표준 작성 설명서](/help/assets/assets.md)를 참조하십시오.
+>다음 문서는 클래식 UI에 중점을 둡니다. 터치가 활성화된 최신 UI에서의 작성에 대한 자세한 내용은 [표준 작성 설명서](/help/assets/assets.md)를 참조하십시오.
 
 작성 환경을 통해 다음과 관련된 작업을 수행할 수 있습니다.
 
-* [작성](/help/sites-authoring/author.md) ( [페이지 ](/help/sites-authoring/qg-page-authoring.md) 작성 및 자산  [관리 포함](/help/assets/assets.md))
+* [작성](/help/sites-authoring/author.md) ( [페이지 ](/help/sites-authoring/qg-page-authoring.md) 작성 및  [자산 관리 포함](/help/assets/assets.md))
 
 * 웹 사이트에서 컨텐츠를 생성하고 유지 관리할 때 필요한 작업 [관리](/help/sites-administering/administer-best-practices.md)
 
@@ -39,7 +38,6 @@ ht-degree: 87%
    * 데스크톱 장치에서 사용하도록 설계되었습니다.
    * 더 이상 유지 관리되지 않습니다.
    * 다음 문서는 이 클래식 UI에 중점을 둡니다. 최근 터치 기반 UI에서 작성하는 방법에 대한 자세한 내용은 [표준 작성 설명서](/help/sites-authoring/author.md)를 참조하십시오.
-
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
 1. 터치 활성화 UI
@@ -47,13 +45,10 @@ ht-degree: 87%
    * 이것은 현대적인 표준 AEM UI입니다.
    * 주로 회색이며, 깔끔하고 무난한 인터페이스입니다.
    * 터치 장치와 데스크톱 장치 양쪽에서 사용하도록 설계되었습니다(터치에 적합). [리소스를 보고 선택하는 방법](/help/sites-authoring/basic-handling.md)은 조금 다르지만(탭/클릭) 모양과 느낌은 모든 장치에서 동일합니다. 
-   * 터치 기반 UI를 사용하여 작성하는 방법에 대한 자세한 내용은 [표준 작성 설명서](/help/sites-authoring/author.md)를 참조하십시오. 다음 문서는 클래식 UI에 중점을 둡니다.
+   * 터치 기반 UI를 사용하여 작성하는 방법에 대한 자세한 내용은 [표준 작성 설명서](/help/sites-authoring/author.md) 를 참조하십시오. 다음 문서는 클래식 UI에 중점을 둡니다.
 
    * 데스크톱:
-
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
    * 태블릿 장치(또는 폭이 1024픽셀 미만인 데스크톱):
-
    ![chlimage_1-7](assets/chlimage_1-7.jpeg)
-
