@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 616d42c8-2316-4c56-b89f-660903270620
-translation-type: tm+mt
-source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
+exl-id: 9abef452-b435-4419-895c-083cae6cd7d2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2764'
 ht-degree: 97%
 
 ---
-
 
 # 기본 처리 {#basic-handling}
 
@@ -54,7 +53,7 @@ AEM 사용자 인터페이스는 터치가 활성화되어 있습니다. 터치 
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
 
-**Got it!**&#x200B;를 클릭하거나 탭하여 개요 다음 페이지로 이동합니다. **닫기**&#x200B;를 클릭하거나 탭하거나 개요 대화 상자의 외부를 클릭하거나 탭하여 닫습니다.
+**알았습니다!**&#x200B;를 클릭하거나 탭하여 개요 다음 페이지로 이동합니다. **닫기** 를 클릭하거나 탭하거나 개요 대화 상자의 외부를 클릭하거나 탭하여 닫습니다.
 
 **더 이상 보지 않기** 옵션을 선택하지 않은 한 이후에 콘솔에 액세스하면 개요가 다시 시작됩니다.
 
@@ -246,7 +245,7 @@ AEM 사용자 인터페이스는 터치가 활성화되어 있습니다. 터치 
    >모든 키보드 단축키에 대한 개요는 다음 문서를 참조하십시오.
    >
    >* [페이지 편집을 위한 키보드 단축키](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-   >* [콘솔용 키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md)
+   * [콘솔용 키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md)
 
 
 ## 작업 도구 모음 {#actions-toolbar}
@@ -267,8 +266,7 @@ AEM 사용자 인터페이스는 터치가 활성화되어 있습니다. 터치 
 ![screen_shot_2018-03-23at104827](assets/screen_shot_2018-03-23at104827.png)
 
 >[!NOTE]
->
->사용할 수 있는 개별 아이콘은 적절한 콘솔/기능/시나리오와 관련하여 문서화되어 있습니다.
+사용할 수 있는 개별 아이콘은 적절한 콘솔/기능/시나리오와 관련하여 문서화되어 있습니다.
 
 ## 빠른 작업 {#quick-actions}
 
@@ -290,8 +288,7 @@ AEM 사용자 인터페이스는 터치가 활성화되어 있습니다. 터치 
 * [목록 보기](#list-view)
 
 >[!NOTE]
->
->기본적으로 AEM Assets은 보기의 썸네일로 UI에 있는 자산의 원본 표현물을 표시하지 않습니다. 관리자인 경우, 오버레이를 사용하여 AEM Assets을 구성한 뒤 원본 표현물을 썸네일로 표시할 수 있습니다.
+기본적으로 AEM Assets은 보기의 썸네일로 UI에 있는 자산의 원본 표현물을 표시하지 않습니다. 관리자인 경우, 오버레이를 사용하여 AEM Assets을 구성한 뒤 원본 표현물을 썸네일로 표시할 수 있습니다.
 
 ### 리소스 선택  {#selecting-resources}
 
@@ -364,7 +361,7 @@ AEM 사용자 인터페이스는 터치가 활성화되어 있습니다. 터치 
 
 1. 리소스를 선택하면 상단 헤더에는 현재 선택한 리소스에 적용할 수 있는 작업에 대한 액세스를 제공하는 [작업 도구 모음](#actions-toolbar)이 표시됩니다.
 
-   선택 모드를 종료하려면 오른쪽 위에 있는 **X**&#x200B;을 선택합니다.
+   선택 모드를 종료하려면 오른쪽 상단에 있는 **X**&#x200B;을 선택합니다.
 
 ### 열 보기 {#column-view}
 
@@ -442,7 +439,7 @@ AEM 사용자 인터페이스는 터치가 활성화되어 있습니다. 터치 
       * 확인란을 다시 클릭하거나 탭하면 모든 항목이 선택 취소됩니다.
 
 
-* 보기 단추 아래에 있는 **설정 보기 ** 옵션을 사용하여 표시할 열을 선택합니다. 다음 열이 표시될 수 있습니다.
+* 보기 단추 아래에 있는 **보기 설정 **옵션을 사용하여 표시할 열을 선택합니다. 다음 열이 표시될 수 있습니다.
 
    * **이름** - 페이지 이름이며, 페이지 URL의 일부이고 언어와 관계없이 변경되지 않으므로 다국어 제작 환경에서 유용할 수 있습니다.
    * **수정됨** - 마지막 수정 일자 및 수정자
@@ -459,8 +456,7 @@ AEM 사용자 인터페이스는 터치가 활성화되어 있습니다. 터치 
 * 목록에서 각 항목의 맨 오른쪽에 있는 점선 세로 막대를 사용하여 항목 순서를 변경합니다.
 
 >[!NOTE]
->
->순서 변경은 `jcr:primaryType` 값이 `sling:OrderedFolder`인 순서가 지정된 폴더 내에서만 작동합니다.
+순서 변경은 `jcr:primaryType` 값이 `sling:OrderedFolder`인 순서가 지정된 폴더 내에서만 작동합니다.
 
 ![screen_shot_2018-03-23at110113](assets/screen_shot_2018-03-23at110113.png)
 
@@ -485,8 +481,7 @@ AEM 사용자 인터페이스는 터치가 활성화되어 있습니다. 터치 
 컨텐츠만을 선택하면 레일 아이콘만 표시됩니다. 기타 옵션이 선택된 경우, 레일 아이콘 옆에 옵션 이름이 표시됩니다.
 
 >[!NOTE]
->
->[키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md)를 사용하면 레일 디스플레이 옵션 간을 빠르게 전환할 수 있습니다.
+[키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md)를 사용하면 레일 디스플레이 옵션 간을 빠르게 전환할 수 있습니다.
 
 ### 컨텐츠 트리 {#content-tree}
 
@@ -497,10 +492,8 @@ AEM 사용자 인터페이스는 터치가 활성화되어 있습니다. 터치 
 ![screen_shot_2018-03-21at100858](assets/screen_shot_2018-03-21at100858.png)
 
 >[!NOTE]
->
->계층 구조 보기에서 항목을 선택한 후에는 화살표 키를 사용하여 계층 구조를 빠르게 탐색할 수 있습니다.
->
->자세한 내용은 [키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md)를 참조하십시오.
+계층 구조 보기에서 항목을 선택한 후에는 화살표 키를 사용하여 계층 구조를 빠르게 탐색할 수 있습니다.
+자세한 내용은 [키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md)를 참조하십시오.
 
 ### 타임라인 {#timeline}
 
@@ -550,4 +543,3 @@ AEM 사용자 인터페이스는 터치가 활성화되어 있습니다. 터치 
 필터를 선택하면 해당 위치 필터가 이미 설정된 [검색](/help/sites-authoring/search.md)과 비슷한 패널이 열리므로, 보려는 컨텐츠를 추가로 필터링할 수 있습니다.
 
 ![screen_shot_2018-03-23at111509](assets/screen_shot_2018-03-23at111509.png)
-
