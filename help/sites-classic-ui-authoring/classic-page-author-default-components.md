@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
-translation-type: tm+mt
-source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+exl-id: d552cbcc-8f71-48a3-9685-eba1ab8805c3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 92%
 
 ---
-
 
 # 구성 요소{#components}
 
@@ -45,4 +44,3 @@ AEM 내의 eCommerce 기능에도 **상거래** 그룹의 다양한 구성 요�
 ## 디자인 모드를 사용하여 구성 요소 구성 {#using-design-mode-to-configure-components}
 
 작성자가 표준 설치에서 사이드 킥을 통해 액세스할 수 있는 구성 요소 외에도 다양한 기타 구성 요소를 사용할 수 있습니다. [디자인 모드](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#enable-disable-components)를 사용하여 이러한 구성 요소를 활성화/비활성화하고 특정 구성 요소의 매개 변수를 편집할 수 있습니다.
-
