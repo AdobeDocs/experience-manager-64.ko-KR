@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: adc697e1-4a1c-4985-8690-79ed77736fec
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 44cd0092-de40-4a72-a682-1e8f5906b2e5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1814'
 ht-degree: 90%
 
 ---
-
 
 # 리치 텍스트 편집기{#rich-text-editor}
 
@@ -60,7 +59,7 @@ WYSIWYG 편집 대화 상자는 광범위한 기능을 제공합니다.
 
 ## 리치 텍스트 편집기의 기능 {#features-of-the-rich-text-editor}
 
-리치 텍스트 편집기는 다양한 기능을 제공하며, 이러한 [은 개별 구성 요소의 구성](/help/sites-administering/rich-text-editor.md)에 따라 달라집니다.이 기능은 터치에 적합한 UI와 클래식 UI 모두에서 사용할 수 있습니다.
+리치 텍스트 편집기에서는 다양한 기능을 제공하며, 이 [은 개별 구성 요소의 구성](/help/sites-administering/rich-text-editor.md)에 따라 달라집니다.터치에 적합한 UI와 클래식 UI 모두에서 기능을 사용할 수 있습니다.
 
 ### 기본 문자 형식 {#basic-character-formats}
 
@@ -80,7 +79,7 @@ WYSIWYG 편집 대화 상자는 광범위한 기능을 제공합니다.
 
 ### 사전 정의된 스타일 및 형식  {#predefined-styles-and-formats}
 
-![cq55_rte_stylespard](assets/cq55_rte_stylesparagraph.png)
+![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
 
 설치 환경에 사전 정의된 스타일과 형식이 포함될 수 있습니다. **스타일** 및 **서식** 드롭다운 상자의 스타일과 서식을 선택한 텍스트에 적용할 수 있습니다.
 
@@ -191,7 +190,7 @@ AEM은 현재 구성 요소의 마지막 50개 작업 기록을 시간 순서대
 
 ![](do-not-localize/chlimage_1-13.png)
 
-### 앵커  {#anchors}
+### 앵커 {#anchors}
 
 ![](do-not-localize/cq55_rte_anchor.png)
 
@@ -239,7 +238,7 @@ AEM에서는 **찾기** 및 **바꾸기**(찾기 및 바꾸기) 기능을 모두
 
 맞춤법이 잘못된 부분은 강조 표시됩니다.
 
-![cq55_rte_spellchecker_use](assets/cq55_rte_spellchecker_use.png)
+![cq55_rte_spelchecker_use](assets/cq55_rte_spellchecker_use.png)
 
 >[!NOTE]
 >
@@ -259,11 +258,11 @@ AEM에서는 **찾기** 및 **바꾸기**(찾기 및 바꾸기) 기능을 모두
 
    >[!NOTE]
    >
-   >RTE에서는 표를 사용할 수 있지만 표를 만들 때는 **표** 구성 요소를 사용하는 것이 좋습니다.
+   >표는 RTE에서 사용할 수 있지만 표를 만들 때는 **Table** 구성 요소를 사용하는 것이 좋습니다.
 
 **텍스트** 및 **표** 구성 요소 모두 표 안에서 컨텍스트 메뉴(일반적으로 마우스 오른쪽 단추)를 클릭하여 표 기능을 사용할 수 있습니다. 예를 들면 다음과 같습니다.
 
-![cq55_rte_tabemenu](assets/cq55_rte_tablemenu.png)
+![cq55_rte_tablemenu](assets/cq55_rte_tablemenu.png)
 
 >[!NOTE]
 >
@@ -418,7 +417,7 @@ AEM에서는 **찾기** 및 **바꾸기**(찾기 및 바꾸기) 기능을 모두
 
 #### 표 제거 {#remove-table}
 
-![cq55_rte_removetable](assets/cq55_rte_removetable.png)
+![cq55_rte_removeable](assets/cq55_rte_removetable.png)
 
 **텍스트** 구성 요소 내에서 표를 제거합니다.
 
@@ -449,4 +448,3 @@ AEM에서는 **찾기** 및 **바꾸기**(찾기 및 바꾸기) 기능을 모두
 >[!CAUTION]
 >
 >소스 모드를 종료하면 AEM에서 유효성 검사를 수행합니다. 예를 들어 텍스트가 블록에 올바르게 포함/중첩되어 있는지 확인합니다. 이로 인해 편집 내용이 변경될 수도 있습니다.
-
