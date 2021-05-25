@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
-translation-type: tm+mt
-source-git-commit: 02d043aaa51389aff658c287e11fe639b74fdcd0
+exl-id: 8249fd48-38af-4bf7-8dcc-2f63db6750b6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 100%
 
 ---
-
 
 # 콘솔용 키보드 단축키{#keyboard-shortcuts-for-consoles}
 
@@ -96,4 +95,3 @@ AEM은 자주 사용하는 일부 기능(편집, 속성, 복사/붙여넣기, �
 >[!NOTE]
 >
 >열 보기 및 컨텐츠 트리에 대한 탐색 단축키는 항상 활성 상태입니다.
-
