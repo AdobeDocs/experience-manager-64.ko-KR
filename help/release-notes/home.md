@@ -3,14 +3,13 @@ title: Adobe Experience Manager 6.4 릴리스 노트
 seo-title: AEM 6.4 릴리스 노트
 description: AEM 릴리스 노트에서는 새로운 기능, 지원되는 플랫폼, 더 이상 사용되지 않거나 제거된 기능, 알려진 문제 등 AEM의 최신 릴리스에 대한 중요한 정보를 다룹니다.
 seo-description: AEM 릴리스 노트에서는 새로운 기능, 지원되는 플랫폼, 더 이상 사용되지 않거나 제거된 기능, 알려진 문제 등 AEM의 최신 릴리스에 대한 중요한 정보를 다룹니다.
-translation-type: tm+mt
-source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
+exl-id: e6ebd0ba-674e-406f-a3ac-98ac9518226e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 97%
 
 ---
-
 
 # Adobe Experience Manager 6.4 릴리스 노트
 
