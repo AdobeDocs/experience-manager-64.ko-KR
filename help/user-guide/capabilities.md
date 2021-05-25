@@ -5,14 +5,13 @@ description: AEM 6.4의 필수 기능에 대한 개요
 seo-description: AEM 6.4의 필수 기능에 대한 개요
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
-translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+exl-id: f4dea584-3cd1-4d9f-ae3c-2573726dde95
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 100%
 
 ---
-
 
 # AEM 6.4 기능 사용 안내서 {#aem-64-capabilities-user-guides}
 
