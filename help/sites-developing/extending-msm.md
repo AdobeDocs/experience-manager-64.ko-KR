@@ -32,12 +32,13 @@ ht-degree: 2%
 >이 페이지는 다음과 함께 읽어야 합니다.
 >* [컨텐츠 재사용:다중 사이트 관리자](/help/sites-administering/msm.md).
 >* AEM 6.4의 사이트 저장소 구조 변경:
-   >   * [다중 사이트 관리자 블루프린트 구성](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-blueprint-configurations)
+>   * [다중 사이트 관리자 블루프린트 구성](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-blueprint-configurations)
    * [다중 사이트 관리자 롤아웃 구성](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-rollout-configurations)
 
 
 >[!CAUTION]
-다중 사이트 관리자 및 해당 API는 웹 사이트를 작성할 때 사용되므로 작성 환경에서만 사용됩니다.
+>
+>다중 사이트 관리자 및 해당 API는 웹 사이트를 작성할 때 사용되므로 작성 환경에서만 사용됩니다.
 
 ## Java API 개요 {#overview-of-the-java-api}
 
@@ -104,7 +105,7 @@ ht-degree: 2%
    * `createAction`:의 인스턴스를  `LiveAction`만듭니다. 옵션 `Resource` 매개 변수를 사용하여 구성 정보를 제공할 수 있습니다.
    * `createsAction`:연결된 의 이름을 반환합니다  `LiveAction`.
 
-### LiveAction 구성 노드 {#accessing-the-liveaction-configuration-node} 액세스
+### LiveAction 구성 노드 액세스 {#accessing-the-liveaction-configuration-node}
 
 저장소의 `LiveAction` 구성 노드를 사용하여 `LiveAction` 인스턴스의 런타임 동작에 영향을 주는 정보를 저장합니다. 저장소의 `LiveAction` 구성을 저장하는 노드는 런타임 시 `LiveActionFactory` 개체에 사용할 수 있습니다. 따라서 필요에 따라 구성 노드에 속성을 추가하여 `LiveActionFactory` 구현에서 사용할 수 있습니다.
 
@@ -124,7 +125,7 @@ public LiveAction createAction(Resource resource) throws WCMException {
 }
 ```
 
-### Target 노드, 소스 노드 및 LiveRelationship {#accessing-target-nodes-source-nodes-and-the-liverelationship}에 액세스
+### Target 노드, 소스 노드 및 LiveRelationship에 액세스 {#accessing-target-nodes-source-nodes-and-the-liverelationship}
 
 다음 개체는 `LiveAction` 개체의 `execute` 메서드의 매개 변수로 제공됩니다.
 
@@ -146,7 +147,8 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 ```
 
 >[!NOTE]
-`Resource` 인수는 [`NonExistingResource`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html) 개체와 같이 `Node` 개체에 적응하지 않는 `null` 또는 `Resources` 개체일 수 있습니다.
+>
+>`Resource` 인수는 [`NonExistingResource`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html) 개체와 같이 `Node` 개체에 적응하지 않는 `null` 또는 `Resources` 개체일 수 있습니다.
 
 ## 새 롤아웃 구성 만들기 {#creating-a-new-rollout-configuration}
 
@@ -158,7 +160,8 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 그러면 블루프린트 또는 Live Copy 페이지에서 롤아웃 구성을 설정할 때 새 롤아웃 구성을 사용할 수 있습니다.
 
 >[!NOTE]
-역할 사용자 지정에 대한 [우수 사례](/help/sites-administering/msm-best-practices.md#customizing-rollouts)를 참조하십시오.
+>
+>역할 사용자 지정에 대한 [우수 사례](/help/sites-administering/msm-best-practices.md#customizing-rollouts)를 참조하십시오.
 
 ### 롤아웃 구성 만들기 {#create-the-rollout-configuration}
 
@@ -171,12 +174,16 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
    `/apps/msm/<your-project>/rolloutconfigs`
 
    >[!NOTE]
-다음은 프로젝트의 사용자 지정된 버전입니다.
-   `/libs/msm/wcm/rolloutconfigs`
+   >
+   >다음은 프로젝트의 사용자 지정된 버전입니다.
+   >`/libs/msm/wcm/rolloutconfigs`
+
 첫 번째 구성인 경우 만들어야 합니다.
 
    >[!NOTE]
-   /libs 경로에서 아무 것도 변경하면 안 됩니다.
+   >
+   >/libs 경로에서 아무 것도 변경하면 안 됩니다.
+
 이는 다음 번에 인스턴스를 업그레이드할 때 /libs 컨텐츠를 덮어쓰게 되기 때문입니다(핫픽스 또는 기능 팩을 적용할 때 덮어쓸 수 있음).
 구성 및 기타 변경에 대해 권장되는 방법은 다음과 같습니다.
    * /apps 아래의 필요한 항목(즉, /libs에 있는 항목)을 다시 만듭니다
@@ -364,7 +371,7 @@ Eclipse 컴파일러가 `LiveActionFactory` 코드에 사용되는 클래스를 
     </dependency>
    ```
 
-### LiveActionFactory {#implement-liveactionfactory} 구현
+### LiveActionFactory 구현 {#implement-liveactionfactory}
 
 다음 `LiveActionFactory` 클래스는 소스 및 대상 페이지에 대한 메시지를 로깅하는 `LiveAction`을 구현하고 소스 노드에서 대상 노드로 `cq:lastModifiedBy` 속성을 복사합니다. 라이브 작업의 이름은 `exampleLiveAction`입니다.
 
@@ -540,7 +547,7 @@ Eclipse 컴파일러가 `LiveActionFactory` 코드에 사용되는 클래스를 
    * **이름**:expleroloutconfig
    * **cq:trigger**:  `publish`
 
-### 예제 롤아웃 구성 {#add-the-live-action-to-the-example-rollout-configuration}에 Live Action 추가
+### 예제 롤아웃 구성에 Live Action 추가 {#add-the-live-action-to-the-example-rollout-configuration}
 
 `ExampleLiveActionFactory` 클래스를 사용하도록 이전 절차에서 만든 롤아웃 구성을 구성합니다.
 
@@ -561,7 +568,7 @@ Eclipse 컴파일러가 `LiveActionFactory` 코드에 사용되는 클래스를 
 
 1. **모두 저장**&#x200B;을 클릭합니다.
 
-### Live Copy {#create-the-live-copy} 만들기
+### Live Copy 만들기 {#create-the-live-copy}
 
 [롤아웃 구성](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) 을 사용하여 We.Retail 참조 사이트의 영어/제품 분기의 Live Copy를 만듭니다.
 
@@ -687,7 +694,9 @@ MSM은 저장된 언어 및 국가 코드 목록을 사용하여 페이지의 �
 
 
 >[!NOTE]
-cq-msm-lockable은 편집할 리소스의 첫 번째 하위 수준에 적용되며, 값이 절대 또는 상대적 값으로 정의되어 있는지 여부에 관계없이 더 깊은 상위 레벨에서 작동하지 않습니다.
+>
+>cq-msm-lockable은 편집할 리소스의 첫 번째 하위 수준에 적용되며, 값이 절대 또는 상대적 값으로 정의되어 있는지 여부에 관계없이 더 깊은 상위 레벨에서 작동하지 않습니다.
 
 >[!NOTE]
-상속을 다시 활성화하면 Live Copy 페이지 속성이 소스 속성과 자동으로 동기화되지 않습니다. 필요한 경우 수동으로 동기화를 요청할 수 있습니다.
+>
+>상속을 다시 활성화하면 Live Copy 페이지 속성이 소스 속성과 자동으로 동기화되지 않습니다. 필요한 경우 수동으로 동기화를 요청할 수 있습니다.

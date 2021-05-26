@@ -41,7 +41,6 @@ ht-degree: 85%
 >
 >* [워크플로우를 DAM 자산에 적용하는 방법](/help/assets/assets-workflow.md)
 >* [프로젝트 워크플로우 작업](/help/sites-authoring/projects-with-workflows.md).
-
 >
 
 
@@ -108,6 +107,7 @@ ht-degree: 85%
    * **패키지 제목**
 
       * 식별할 수 있도록 패키지의 제목을 지정할 수 있습니다.
+
    >[!NOTE]
    >
    >[여러 리소스 지원](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)을 위한 워크플로우를 구성하고 여러 리소스를 선택하면 **워크플로우 패키지 유지** 선택 사항을 사용할 수 있습니다.

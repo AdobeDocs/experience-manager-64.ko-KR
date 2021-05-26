@@ -29,7 +29,6 @@ ht-degree: 1%
 >
 >* Dynamic Media 구성 - 하이브리드 모드에서 Dynamic Media Cloud Services 구성 을 참조하십시오.](/help/assets/config-dynamic.md)[
 >* [Dynamic Media 구성 - Scene7 모드](config-dms7.md) 및 [Dynamic Media 문제 해결 - Scene7 모드](troubleshoot-dms7.md)를 참조하십시오.
-
 >
 
 
@@ -116,7 +115,7 @@ ht-degree: 1%
 
 
 
-## Dynamic Media {#working-with-video-in-dynamic-media}에서 비디오를 사용한 작업
+## Dynamic Media에서 비디오를 사용한 작업 {#working-with-video-in-dynamic-media}
 
 Dynamic Media의 비디오는 데스크탑, iOS, Android, Blackberry 및 Windows 모바일 장치를 포함하여 여러 화면에서 스트리밍을 위한 고품질 적응형 비디오를 쉽게 게시할 수 있도록 하는 종단 간 솔루션입니다. 응용 비디오 세트는 다른 비트율 및 형식(예: 400kbps, 800kbps 및 1000kbps)으로 인코딩된 동일한 비디오 버전을 그룹화합니다. 데스크탑 컴퓨터 또는 모바일 장치가 사용 가능한 대역폭을 감지합니다.
 
@@ -163,7 +162,7 @@ Dynamic Media은 MP4 H.264 비디오용 모바일 비디오 재생을 지원합�
 
 Adobe Dynamic Media 뷰어 참조 가이드의 [HTML5 뷰어 정보](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=en#viewers-for-aem-assets-only)도 참조하십시오.
 
-## 우수 사례:HTML5 비디오 뷰어 {#best-practice-using-the-html-video-viewer} 사용
+## 우수 사례:HTML5 비디오 뷰어 사용 {#best-practice-using-the-html-video-viewer}
 
 Dynamic Media HTML5 비디오 뷰어 사전 설정은 강력한 비디오 플레이어입니다. 이러한 매개 변수를 사용하면 HTML5 비디오 재생과 관련된 많은 일반적인 문제와 적응형 스트리밍 게재 부족 및 제한된 데스크탑 브라우저 도달과 같은 모바일 장치와 관련된 문제를 방지할 수 있습니다.
 
@@ -175,7 +174,7 @@ Dynamic Media HTML5 비디오 뷰어 사전 설정은 강력한 비디오 플레
 
 Adobe 뷰어 참조 가이드의 [HTML5 뷰어 정보](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html)도 참조하십시오.
 
-### HTML5 비디오 뷰어 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}를 사용하여 데스크탑 컴퓨터 및 모바일 장치에서 비디오를 재생합니다.
+### HTML5 비디오 뷰어를 사용하여 데스크탑 컴퓨터 및 모바일 장치에서 비디오를 재생합니다. {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 데스크탑 및 모바일 적응형 비디오 스트리밍의 경우 비트율 전환에 사용되는 비디오는 응용 비디오 세트의 모든 MP4 비디오를 기반으로 합니다.
 
@@ -295,7 +294,7 @@ Dynamic Media를 활성화하고 비디오 클라우드 서비스를 설정한 �
 | 1280 X 720 | 16:9 | 3000 - 6000kbps(비디오의 동작 양에 따라 다름) |
 | 1920 X 1080 | 16:9 | 6000 - 8000kbps(비디오의 동작 양에 따라 다름) |
 
-### 파일의 메타데이터 {#obtaining-a-file-s-metadata} 가져오기
+### 파일의 메타데이터 가져오기 {#obtaining-a-file-s-metadata}
 
 비디오 편집 도구를 사용하여 파일의 메타데이터를 보거나 메타데이터를 얻기 위해 디자인된 응용 프로그램을 사용하여 파일의 메타데이터를 가져올 수 있습니다. 다음은 타사 응용 프로그램인 MediaInfo를 사용하여 비디오 파일의 메타데이터를 가져오는 방법에 대한 지침입니다.
 
@@ -547,13 +546,13 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
 
    이제 게시할 태그를 추가합니다.
 
-### {#adding-tags-for-publishing} 게시용 태그 추가
+###  게시용 태그 추가{#adding-tags-for-publishing}
 
 비디오를 YouTube에 게시하기 위해 AEM은 태그를 하나 이상의 YouTube 채널에 연결합니다. 게시할 태그를 추가하려면 [태그 관리](/help/sites-administering/tags.md)를 참조하십시오.
 
 또는 AEM에서 기본 태그를 사용하려는 경우 이 작업을 건너뛰고 [YouTube 게시 복제 에이전트 활성화](#enabling-the-youtube-publish-replication-agent)로 이동할 수 있습니다.
 
-### YouTube 게시 복제 에이전트 {#enabling-the-youtube-publish-replication-agent} 활성화
+### YouTube 게시 복제 에이전트 활성화 {#enabling-the-youtube-publish-replication-agent}
 
 1. AEM의 왼쪽 위 모서리에서 AEM 로고를 탭한 다음 왼쪽 레일에서 작성자&#x200B;]**에서**[!UICONTROL &#x200B;도구 > 배포 > 복제 > 에이전트 를 탭합니다.
 1. 작성자&#x200B;]**의 에이전트 페이지에서**[!UICONTROL  YouTube 게시(youtube)]**를 탭합니다.**[!UICONTROL 
@@ -563,7 +562,7 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
 
    이제 AEM에서 YouTube을 설정합니다.
 
-### AEM {#setting-up-youtube-in-aem}에서 YouTube 설정
+### AEM에서 YouTube 설정 {#setting-up-youtube-in-aem}
 
 1. AEM의 왼쪽 위 모서리에서 AEM 로고를 탭한 다음 왼쪽 레일에서 **[!UICONTROL 도구 > 배포 > Cloud Services]**&#x200B;을 누릅니다.
 1. **[!UICONTROL 타사 서비스]** 제목 아래에 있는 YouTube에서 **[!UICONTROL 지금 구성]**&#x200B;을 탭합니다.
@@ -680,7 +679,7 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
 
    [메타데이터 프로필](metadata-profiles.md) 및 [비디오 프로필](video-profiles.md)을 참조하십시오.
 
-### YouTube 채널 {#publishing-videos-to-your-youtube-channel}에 비디오 게시
+### YouTube 채널에 비디오 게시 {#publishing-videos-to-your-youtube-channel}
 
 이제 이전에 비디오 자산에 추가한 태그를 연결합니다. 이 프로세스를 통해 AEM에서 YouTube 채널에 게시할 자산을 알 수 있습니다.
 
@@ -713,7 +712,7 @@ YouTube 게시(또는 게시 취소)의 진행 상황을 모니터링할 수 있
 
 **[!UICONTROL 업로드(처리 중)]**&#x200B;라는 상태 메시지가 계속 표시되면 8시간 후에 사이트에서 비디오를 제거하고 다시 업로드하십시오.
 
-### YouTube URL을 웹 응용 프로그램 {#linking-youtube-urls-to-your-web-application}에 연결
+### YouTube URL을 웹 응용 프로그램에 연결 {#linking-youtube-urls-to-your-web-application}
 
 비디오를 게시한 후 Dynamic Media에서 생성한 YouTube URL 문자열을 가져올 수 있습니다. YouTube URL을 복사하면 클립보드에 로드되므로 웹 사이트 또는 애플리케이션의 페이지에 필요에 따라 붙여넣을 수 있습니다.
 
@@ -729,7 +728,7 @@ YouTube URL은 비디오 자산을 YouTube에 게시하기 전까지 복사할 �
 1. **[!UICONTROL 고급]** 탭을 탭합니다.
 1. **[!UICONTROL YouTube Publishing]** 제목 아래에 있는 **[!UICONTROL YouTube URL]** 목록에서 URL 텍스트를 선택하고 웹 브라우저에 복사하여 자산을 미리 보거나 웹 컨텐츠 페이지에 추가합니다.
 
-### 비디오를 게시 취소하여 YouTube {#unpublishing-videos-to-remove-them-from-youtube}에서 제거합니다.
+### 비디오를 게시 취소하여 YouTube에서 제거합니다. {#unpublishing-videos-to-remove-them-from-youtube}
 
 AEM에서 비디오 자산 게시를 취소하면 비디오가 YouTube에서 제거됩니다.
 
@@ -782,7 +781,6 @@ YouTube에서 컨텐츠를 제거하려면 AEM에서는 진행 상황을 모니�
    >* Apache Sling 작업 큐 구성
    >* Adobe Granite Workflow 외부 프로세스 작업 처리기
    >* Granite 워크플로우 시간 초과 큐
-
    > 
    >이러한 구성에서 **[!UICONTROL 다시 시도]**, **[!UICONTROL 다시 시도 지연]** 및 **[!UICONTROL 시간 초과]** 속성을 조정할 수 있습니다.
 
@@ -815,7 +813,6 @@ YouTube에서 컨텐츠를 제거하려면 AEM에서는 진행 상황을 모니�
    >* Apache Sling 작업 큐 구성
    >* Adobe Granite Workflow 외부 프로세스 작업 처리기
    >* Granite 워크플로우 시간 초과 큐
-
    >
    >이러한 구성에서 **[!UICONTROL 다시 시도]**, **[!UICONTROL 다시 시도 지연]** 및 **[!UICONTROL 시간 초과]** 속성을 조정할 수 있습니다.
 
@@ -898,7 +895,7 @@ YouTube에서 컨텐츠를 제거하려면 AEM에서는 진행 상황을 모니�
 
 1. 게시된 상위 비디오를 나열하는 테이블에서 비디오 이름을 탭하여 비디오를 재생하고 비디오의 대상 유지(드롭다운) 보고서를 볼 수 있습니다.
 
-### Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk} 를 사용하여 만든 비디오 뷰어를 기반으로 비디오 보고서 보기
+### Dynamic Media HTML5 Viewer SDK 를 사용하여 만든 비디오 뷰어를 기반으로 비디오 보고서 보기 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 Dynamic Media에서 제공하는 기본 비디오 뷰어를 사용하거나 기본 비디오 뷰어를 기반으로 사용자 지정 뷰어 사전 설정을 만든 경우 비디오 보고서를 보는 데 추가 단계가 필요하지 않습니다. 그러나 HTML5 Viewer SDK API를 기반으로 자체 비디오 뷰어를 만든 경우 다음 단계를 사용하여 비디오 뷰어가 추적 이벤트를 Dynamic Media 비디오 보고서에 전송하는지 확인합니다.
 
@@ -957,6 +954,7 @@ HTML5 Viewer SDK API를 사용하여 만든 비디오 뷰어를 기반으로 비
       trackingManager.setCallback(appMeasurementBridge.track, 
        appMeasurementBridge);
       ```
+
    appMeasurementBridge 개체에는 내장된 추적 함수가 있습니다. 그러나 여러 추적 시스템 또는 기타 기능을 지원하도록 자체 코드를 제공할 수 있습니다.
 
 <!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
@@ -1034,7 +1032,7 @@ URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 *Dyna
 
 다음 샘플을 사용하여 장 탐색 기능을 사용하여 WebVTT 파일을 만들 수 있습니다.
 
-### 비디오 장 탐색 {#webvtt-file-with-video-chapter-navigation}이 있는 WebVTT 파일
+### 비디오 장 탐색이 있는 WebVTT 파일 {#webvtt-file-with-video-chapter-navigation}
 
 ```xml
 WEBVTT 
