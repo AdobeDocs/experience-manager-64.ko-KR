@@ -177,8 +177,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
    >
    >다음은 프로젝트의 사용자 지정된 버전입니다.
    >`/libs/msm/wcm/rolloutconfigs`
-
-첫 번째 구성인 경우 만들어야 합니다.
+   >첫 번째 구성인 경우 만들어야 합니다.
 
    >[!NOTE]
    >
