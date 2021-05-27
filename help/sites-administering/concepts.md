@@ -129,8 +129,8 @@ AEM eCommerce는 eCommerce 엔진을 사용하여 구현됩니다.
 >현재 데모 목적으로 사용하거나 요구 사항에 따라 사용자 지정 구현을 위한 기본 기반으로 사용됩니다.
 >JCR을 기반으로 하는 일반 개발을 사용하여 AEM 내에 구현된 AEM eCommerce는 다음과 같습니다.
 >* API의 사용을 보여주는 독립형 AEM 기본 eCommerce 예입니다. 기존 데이터 디스플레이 및 마케팅 캠페인과 함께 제품 데이터, 장바구니 및 체크아웃을 제어하는 데 사용할 수 있습니다. 이 경우 제품 데이터베이스는 AEM이 아닌 저장소에 저장됩니다(Adobe의 [JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html) 구현).\
-   표준 AEM 설치에는 [일반 eCommerce 구현](/help/sites-administering/generic.md)의 기본 사항이 포함되어 있습니다.
-
+>표준 AEM 설치에는 [일반 eCommerce 구현](/help/sites-administering/generic.md)의 기본 사항이 포함되어 있습니다.
+>
 
 
 ### 상거래 공급자 {#commerce-providers}
