@@ -59,26 +59,28 @@ ht-degree: 1%
 
       * [디지털 자산 구성](organize-assets.md)
 
-         [처리 프로필 사용을 위한 디지털 자산을 구성하는 우수 사례에 대해 자세히 알아보십시오.](organize-assets.md#organize-using-folders)
+        [처리 프로필 사용을 위한 디지털 자산을 구성하는 우수 사례에 대해 자세히 알아보십시오.](organize-assets.md#organize-using-folders)
 
       * [비디오 ](search-video-assets.md) 자산 검색  [또는 자산 검색](managing-assets-touch-ui.md#searching-assets)
+      
    * 비디오 자산 미리 보기 및 게시
 
       * 관련 축소판과 함께 비디오의 소스 비디오 및 인코딩된 표현물을 봅니다.
 
-         [비디오 ](managing-video-assets.md#uploading-and-previewing-video-assets) 미리 보기 또는  [자산 미리 보기](previewing-assets.md)
+        [비디오 ](managing-video-assets.md#uploading-and-previewing-video-assets) 미리 보기 또는  [자산 미리 보기](previewing-assets.md)
 
-         [비디오 표현물 보기](video-renditions.md)
+        [비디오 표현물 보기](video-renditions.md)
 
-[비디오 표현물 관리](managing-assets-touch-ui.md#managing-renditions)
+        [비디오 표현물 관리](managing-assets-touch-ui.md#managing-renditions)
 
       * [뷰어 사전 설정 관리](managing-viewer-presets.md)
       * [자산 게시](publishing-dynamicmedia-assets.md)
+      
    * 비디오 메타데이터 작업
 
       * 프레임 속도, 오디오 및 비디오 비트율, 코덱과 같은 인코딩된 비디오 표현물의 속성을 봅니다.
 
-         [비디오 표현물 속성 보기](video-renditions.md)
+        [비디오 표현물 속성 보기](video-renditions.md)
 
       * 제목, 설명 및 태그, 사용자 지정 메타데이터 필드와 같은 비디오의 속성을 편집합니다.
 
@@ -86,6 +88,7 @@ ht-degree: 1%
 
       * [디지털 자산에 대한 메타데이터 관리](metadata.md)
       * [메타데이터 스키마](metadata-schemas.md)
+      
    * 비디오 검토, 승인 및 주석 달기
 
       * [비디오에 ](managing-video-assets.md#annotating-video-assets) 주석 달기 또는  [자산에 주석 달기](managing-assets-touch-ui.md#annotating)
