@@ -33,7 +33,7 @@ ht-degree: 2%
 >* [컨텐츠 재사용:다중 사이트 관리자](/help/sites-administering/msm.md).
 >* AEM 6.4의 사이트 저장소 구조 변경:
 >   * [다중 사이트 관리자 블루프린트 구성](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-blueprint-configurations)
-   * [다중 사이트 관리자 롤아웃 구성](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-rollout-configurations)
+>   * [다중 사이트 관리자 롤아웃 구성](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-rollout-configurations)
 
 
 >[!CAUTION]
@@ -183,11 +183,10 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
    >[!NOTE]
    >
    >/libs 경로에서 아무 것도 변경하면 안 됩니다.
-
-이는 다음 번에 인스턴스를 업그레이드할 때 /libs 컨텐츠를 덮어쓰게 되기 때문입니다(핫픽스 또는 기능 팩을 적용할 때 덮어쓸 수 있음).
-구성 및 기타 변경에 대해 권장되는 방법은 다음과 같습니다.
-   * /apps 아래의 필요한 항목(즉, /libs에 있는 항목)을 다시 만듭니다
-   * /apps 내에서 변경
+   >이는 다음 번에 인스턴스를 업그레이드할 때 /libs 컨텐츠를 덮어쓰게 되기 때문입니다(핫픽스 또는 기능 팩을 적용할 때 덮어쓸 수 있음).
+   >구성 및 기타 변경에 대해 권장되는 방법은 다음과 같습니다.
+   >* /apps 아래의 필요한 항목(즉, /libs에 있는 항목)을 다시 만듭니다
+   >* /apps 내에서 변경
 
 
 1. 이 **다음 속성을 갖는 노드를 만듭니다.**
