@@ -56,10 +56,10 @@ AEM 6.3부터 사용 기능은 더 이상 MySQL에 보고 정보를 저장하지
 1. 관리자 권한으로 로그인
 2. [ASRP](asrp.md) 구성
 3. 기존 UGC를 표시하려면 다음 단계를 따르십시오.
-나.예를 들어 웹 콘솔을 찾습니다
+  i. 나.예를 들어 웹 콘솔을 찾습니다
    [https://&lt;host>:&lt;port>/system/console/](http://localhost:4502/system/console/configMgr)
-configMgrii. **[!UICONTROL AEM Communities 유틸리티]** 구성 찾기
-3. 구성 패널을 확장하려면 선택합니다
+  ii. configMgrii. **[!UICONTROL AEM Communities 유틸리티]** 구성 찾기
+  iii. 구성 패널을 확장하려면 선택합니다
    * *선택을 취소합니다* **`Cloud Storage`**
    * **[!UICONTROL 저장]**&#x200B;을 선택합니다
 
