@@ -8,9 +8,9 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: 구성,Scene7 모드
 role: Administrator,Business Practitioner,Developer
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: a9ae157512127f27dd54063fe4e3c61b5f83b74e
 workflow-type: tm+mt
-source-wordcount: '5593'
+source-wordcount: '5596'
 ht-degree: 1%
 
 ---
@@ -75,9 +75,9 @@ Dynamic Media Cloud Services을 구성하기 전에 암호를 변경합니다. D
 >
 >기본적으로 Cloud Services의 구성 경로는 `/content/dam`입니다. 다른 구성 경로는 Dynamic Media - Scene7 모드에서 지원하지 않습니다.
 
-Dynamic Media Cloud Services을 구성하려면:
+**Dynamic Media Cloud Services을 구성하려면:**
 
-1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스하고 도구 아이콘을 탭한 다음, **[!UICONTROL Cloud Services > Dynamic Media 구성]**&#x200B;을 누릅니다.
+1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스하고 도구 아이콘을 탭한 다음, **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media 구성]**&#x200B;을 탭합니다.
 1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 **[!UICONTROL global]**&#x200B;을 탭하고 **[!UICONTROL 만들기]**&#x200B;를 탭합니다. [!UICONTROL global] 왼쪽에 있는 폴더 아이콘을 탭하거나 선택하지 마십시오.
 1. [!UICONTROL Dynamic Media 구성 만들기] 페이지에서 제목, Dynamic Media 계정 이메일 주소 및 암호를 입력합니다. 지역을 선택합니다. 이 정보는 프로비저닝 이메일에서 Adobe이 제공합니다. 이메일을 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
 
@@ -107,7 +107,7 @@ Dynamic Media Cloud Services을 구성하려면:
 1. Dynamic Media 컨텐츠를 게시하기 전에 안전하게 미리 보려면 Dynamic Media에 연결하려면 Experience Manager 작성자 인스턴스를 &quot;&quot;허용 목록에 추가하다해야 합니다.
 
    * [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 계정에 로그인합니다. 자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe이 제공했습니다. 이 정보가 없는 경우 기술 지원 센터에 문의하십시오.
-   * 페이지 오른쪽 상단 근처에 있는 탐색 모음에서 **[!UICONTROL 설정 > Application Setup > Publish Setup > Image Server]**&#x200B;를 누릅니다.
+   * 페이지의 오른쪽 상단 근처에 있는 탐색 모음에서 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 게시 설정]** > **[!UICONTROL 이미지 서버]**&#x200B;를 누릅니다.
    * 이미지 서버 게시 페이지의 게시 컨텍스트 드롭다운 목록에서 **[!UICONTROL 테스트 이미지 제공]**&#x200B;을 선택합니다.
    * 클라이언트 주소 필터에 대해 **[!UICONTROL 추가]**&#x200B;를 누릅니다.
    * 주소를 활성화(설정)하려면 확인란을 선택합니다. Experience Manager 작성자 인스턴스(Dispatcher IP 아님)의 IP 주소를 입력합니다.
@@ -145,7 +145,7 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가 사용자 지정하
 
 게시 설정 설정은 Dynamic Media에서 기본적으로 자산이 전달되는 방법을 결정합니다. 지정된 설정이 없으면 Dynamic Media은 게시 설정에 정의된 기본 설정에 따라 자산을 전달합니다. 예를 들어, 해상도 속성을 포함하지 않는 이미지 전달에 대한 요청에서 기본 개체 해상도 설정이 있는 이미지가 생성됩니다.
 
-게시 설정을 구성하려면:Dynamic Media Classic에서 **[!UICONTROL 설정 > 애플리케이션 설정 > 게시 설정 > 이미지 서버]**&#x200B;를 누릅니다.
+게시 설정을 구성하려면:Dynamic Media Classic에서 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 게시 설정]** > **[!UICONTROL 이미지 서버]**&#x200B;를 탭합니다.
 
 이미지 서버 화면은 이미지 전달을 위한 기본 설정을 설정합니다. 각 설정에 대한 설명은 사용자 인터페이스를 참조하십시오.
 
@@ -159,7 +159,7 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가 사용자 지정하
 
 #### 응용 프로그램 일반 설정 구성 중 {#configuring-application-general-settings}
 
-[!UICONTROL Application General Settings] 페이지를 열려면 Dynamic Media Classic 전역 탐색 모음에서 **[!UICONTROL 설정 > Application Setup > General Settings]**&#x200B;를 탭합니다.
+[!UICONTROL 응용 프로그램 일반 설정] 페이지를 열려면 Dynamic Media Classic 전역 탐색 모음에서 **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**&#x200B;을 탭합니다.
 
 **[!UICONTROL 서버]**  - 계정 프로비저닝에서 Dynamic Media은 자동으로 회사에 할당된 서버를 제공합니다. 이러한 서버는 웹 사이트 및 애플리케이션에 대한 URL 문자열을 구성하는 데 사용됩니다. 이러한 URL 호출은 계정에만 적용됩니다. Experience Manager 지원에 의해 명시적으로 지시하지 않는 한 서버 이름을 변경하지 마십시오.
 
@@ -184,9 +184,9 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가 사용자 지정하
 
 Dynamic Media 색상 관리를 통해 자산의 색상을 올바르게 지정할 수 있습니다. 색상 교정을 통해 수집된 자산은 색상 공간(RGB, CMYK, 회색)과 포함된 색상 프로파일을 유지합니다. 동적 변환을 요청하면 이미지 색상이 CMYK, RGB 또는 회색 출력을 사용하여 대상 색상 공간으로 교정됩니다. [이미지 사전 설정 구성](managing-image-presets.md)을 참조하십시오.
 
-이미지를 요청할 때 색상 보정을 사용하도록 기본 색상 속성을 구성하려면 다음을 수행하십시오.
+**이미지를 요청할 때 색상 보정을 사용하도록 기본 색상 속성을 구성하려면 다음을 수행하십시오.**
 
-1. [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 프로비저닝 중에 제공된 자격 증명을 사용하여 계정에 로그인합니다. **[!UICONTROL 설정 > 응용 프로그램 설정]**&#x200B;으로 이동합니다.
+1. [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 프로비저닝 중에 제공된 자격 증명을 사용하여 계정에 로그인합니다. **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]**&#x200B;으로 이동합니다.
 1. **[!UICONTROL 게시 설정]** 영역을 확장하고 **[!UICONTROL 이미지 서버]**&#x200B;를 선택합니다. 게시 인스턴스의 기본값을 설정할 때 **[!UICONTROL 게시 컨텍스트]**&#x200B;를 **[!UICONTROL 이미지 제공]**&#x200B;으로 설정합니다.
 1. 변경해야 하는 속성으로 스크롤합니다. 예를 들어 **[!UICONTROL 색상 관리 속성]** 영역의 속성이 있습니다.
 
@@ -220,9 +220,9 @@ Dynamic Media에서 처리할 자산 유형을 정의하고 고급 자산 처리
 
 [자산 업로드](managing-assets-touch-ui.md#uploading-assets)를 참조하십시오.
 
-**지원되는 형식에 대한 MIME 유형을 편집하려면**
+**지원되는 형식에 대한 MIME 유형을 편집하려면:**
 
-1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스한 다음, **[!UICONTROL 도구]**(망치) 아이콘을 탭하고 **[!UICONTROL 일반 > CRXDE Lite]**&#x200B;로 이동합니다.
+1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스한 다음, **[!UICONTROL 도구]**(망치) 아이콘을 탭하고 **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;로 이동합니다.
 1. 왼쪽 레일에서 다음 위치로 이동합니다.
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -246,9 +246,9 @@ Dynamic Media에서 처리할 자산 유형을 정의하고 고급 자산 처리
 
 Experience Manager 자산에서 지원되지 않는 형식에 대한 사용자 지정 MIME 유형을 추가할 수 있습니다. CRXDE Lite에 추가하는 새 노드가 Experience Manager에 의해 삭제되지 않도록 하려면 **[!UICONTROL image_]** 앞에 MIME 유형을 이동하고 해당 활성화된 값이 **[!UICONTROL false]**&#x200B;로 설정됩니다.
 
-**지원되지 않는 형식에 대한 사용자 지정 MIME 유형을 추가하려면**
+**지원되지 않는 형식에 대한 사용자 지정 MIME 유형을 추가하려면 다음을 수행합니다.**
 
-1. Experience Manager에서 **[!UICONTROL 도구 > 작업 > 웹 콘솔]**&#x200B;을 클릭합니다.
+1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;을 클릭합니다.
 
    ![웹 콘솔](assets/2019-08-02_16-13-14.png)
 
@@ -276,7 +276,7 @@ Experience Manager 자산에서 지원되지 않는 형식에 대한 사용자 �
 
 1. 열려 있는 Experience Manager 콘솔이 있는 브라우저 탭으로 돌아갑니다.
 
-1. Experience Manager에서 **[!UICONTROL 도구 > 일반 > CRXDE Lite]**&#x200B;를 클릭합니다.
+1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;를 클릭합니다.
 
    ![CRXDE Lite 페이지](assets/2019-08-02_16-55-41.png)
 
@@ -320,7 +320,7 @@ Experience Manager 자산에서 지원되지 않는 형식에 대한 사용자 �
 
    자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe이 제공했습니다. 이 정보가 없는 경우 기술 지원 센터에 문의하십시오.
 
-1. 페이지 상단 근처에 있는 탐색 모음에서 **[!UICONTROL 설정 > 애플리케이션 설정 > 일괄처리 세트 사전 설정 > 기본 이름 지정].**
+1. 페이지 상단 근처에 있는 탐색 모음에서 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 배치 설정]** > **[!UICONTROL 기본 이름 지정]**&#x200B;을 누릅니다.
 1. **[!UICONTROL 양식 보기]** 또는 **[!UICONTROL 코드 보기]**&#x200B;를 선택하여 각 요소에 대한 정보를 보고 입력하는 방법을 지정합니다.
 
    **[!UICONTROL 코드 보기]** 확인란을 선택하여 양식 선택과 함께 작성되는 정규식 값을 볼 수 있습니다. 양식 보기에서 어떤 이유로든 사용자를 제한하는 경우 이름 지정 규칙의 요소를 정의하는 데 도움이 되도록 이러한 값을 입력하거나 변경할 수 있습니다. 값을 양식 보기에서 구문 분석할 수 없는 경우 양식 필드는 비활성 상태가 됩니다.
@@ -354,7 +354,7 @@ Dynamic Media은 일괄처리 집합 사전 설정을 사용하여 뷰어에 표
 
    자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe이 제공했습니다. 이 정보가 없는 경우 기술 지원 센터에 문의하십시오.
 
-1. 페이지 상단 근처에 있는 탐색 막대에서 **[!UICONTROL 설정 > 애플리케이션 설정 > 일괄처리 집합 사전 설정 > 일괄처리 집합 사전 설정].**
+1. 페이지 상단 근처에 있는 탐색 모음에서 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 배치 설정]** > **[!UICONTROL 배치 설정 사전 설정]**&#x200B;을 누릅니다.
 
    [!UICONTROL 세부 사항 페이지의 오른쪽 위 모서리에 설정된 ] 보기   양식이 기본 보기입니다.
 
@@ -363,7 +363,7 @@ Dynamic Media은 일괄처리 집합 사전 설정을 사용하여 뷰어에 표
 1. **[!UICONTROL 일괄 처리 집합 유형]** 드롭다운 메뉴에서 사전 설정 유형을 선택합니다.
 1. 다음 중 하나를 수행하십시오.
 
-   * 이전에 **[!UICONTROL 애플리케이션 설정 > 일괄처리 집합 사전 설정 > 기본 이름 지정]**&#x200B;에서 설정한 기본 이름 지정 규칙을 사용하는 경우 **[!UICONTROL 자산 이름 지정 규칙]**&#x200B;을 확장한 다음 **[!UICONTROL 파일 이름 지정]** 드롭다운 목록에서 **[!UICONTROL 기본]**&#x200B;을 탭합니다.
+   * 이전에 **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 일괄처리 집합 사전 설정]** > **[!UICONTROL 기본 이름 지정]**&#x200B;에서 설정한 기본 이름 지정 규칙을 사용하는 경우 **[!UICONTROL 자산 이름 지정 규칙]**&#x200B;을 확장한 다음 **[!UICONTROL 파일 이름 지정]** 드롭다운 목록에서 **[!UICONTROL 기본]**&#x200B;을 탭합니다.
    * 사전 설정 **[!UICONTROL 자산 이름 지정 규칙]**&#x200B;을 설정한 다음 **[!UICONTROL 파일 이름 지정]** 드롭다운 목록에서 **[!UICONTROL 사용자 지정]**&#x200B;을 탭하여 새 이름 지정 규칙을 정의합니다.
 
 1. [!UICONTROL 시퀀스 순서]에 대해 세트가 Dynamic Media에 그룹화된 후 이미지가 표시되는 순서를 정의합니다.
@@ -409,7 +409,7 @@ spin-01-01
 
    자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe이 제공했습니다. 이 정보가 없는 경우 기술 지원 센터에 문의하십시오.
 
-1. 페이지 상단 근처에 있는 탐색 모음에서 **[!UICONTROL 설정 > 애플리케이션 설정 > 일괄처리 세트 사전 설정 > 일괄처리 세트 사전 설정]**&#x200B;을 누릅니다.
+1. 페이지 상단 근처에 있는 탐색 모음에서 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 배치 설정]** > **[!UICONTROL 배치 설정 사전 설정]**&#x200B;을 누릅니다.
 
    [!UICONTROL 세부 사항 페이지의 오른쪽 위 모서리에 설정된 ] 보기   양식이 기본 보기입니다.
 
@@ -498,7 +498,7 @@ Adobe은 PDF, PostScript® 및 PSD 파일에 다음과 같은 &quot;튜닝된&qu
 
 Granite Transit 워크플로우 큐는 **[!UICONTROL DAM 자산 업데이트]** 워크플로우에 사용됩니다. Dynamic Media에서 이미지 수집 및 처리에 사용됩니다.
 
-**Granite Transient 워크플로 큐를 업데이트하려면**
+**Granite Transient 워크플로우 큐를 업데이트하려면:**
 
 1. [https://&lt;server>/system/console/configMgr](http://localhost:4502/system/console/configMgr)로 이동하여 **[!UICONTROL 큐를 검색합니다.Granite Transient 워크플로 큐]**.
 
@@ -606,14 +606,14 @@ Dynamic Media이 아닌 배포에서는 Experience Manager 작성 환경에서 �
 
 #### 복제에 대한 자산 필터 사용자 지정 {#customizing-asset-filters-for-replication}
 
-1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스하고 **[!UICONTROL 도구]** 아이콘을 탭하고 **[!UICONTROL 일반 > CRXDE Lite]**&#x200B;로 이동합니다.
+1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스하고 **[!UICONTROL 도구]** 아이콘을 탭하고 **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;로 이동합니다.
 1. 왼쪽 폴더 트리에서 `/etc/replication/agents.author/publish/jcr:content/damRenditionFilters` 로 이동하여 필터를 검토합니다.
 
    ![chlimage_1-2](assets/chlimage_1-2.png)
 
 1. 필터에 대한 MIME 유형을 정의하려면 다음과 같이 MIME 유형을 찾을 수 있습니다.
 
-   왼쪽 레일에서 **[!UICONTROL 컨텐츠 > dam > &lt;`locate_your_asset` > jcr:content > metadata]**&#x200B;를 확장한 다음 테이블에서 **[!UICONTROL dc:format]**&#x200B;을 찾습니다.
+   왼쪽 레일에서 **[!UICONTROL 컨텐츠]** > **[!UICONTROL dam]** > **[!UICONTROL &lt;`locate_your_asset`]** > **[!UICONTROL jcr:content]** > **[!UICONTROL 메타데이터]** 를 확장한 다음 오른쪽의 테이블에서 **[!UICONTROL dc:format]**&#x200B;을 찾습니다.
 
    다음 그래픽은 dc:format 자산의 경로의 예입니다.
 
