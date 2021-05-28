@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 자산 통찰력,자산 보고서
 role: Business Practitioner,Administrator
 exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
-source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
+source-git-commit: af2d14f92efb88143ccefe7fe29f83ae515e5981
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '798'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 웹 사이트에서 자산에 대한 사용 통계를 캡처하려면 Assets Insights의 경우 웹 사이트 코드에 자산의 포함 코드를 포함해야 합니다.
 
-자산 통찰력에 자산에 대한 사용 통계가 표시되도록 하려면 먼저 [!DNL Adobe Analytics]에서 보고 데이터를 가져오도록 기능을 구성하십시오. 자세한 내용은 [자산 통찰력 구성](touch-ui-configuring-asset-insights.md)을 참조하십시오. 이 기능을 사용하려면 [!DNL Adobe Analytics] 라이센스를 별도로 구입하십시오. [!DNL Managed Services] 의 고객은 [!DNL Experience Manager]와 번들로 제공되는 [!DNL Analytics] 라이센스를 받습니다. [Managed Services 제품 설명](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)을 참조하십시오.
+자산 통찰력에 자산에 대한 사용 통계가 표시되도록 하려면 먼저 [!DNL Adobe Analytics]에서 보고 데이터를 가져오도록 기능을 구성하십시오. 자세한 내용은 [자산 통찰력 구성](touch-ui-configuring-asset-insights.md)을 참조하십시오. 온-프레미스 설치에서 이 기능을 사용하려면 [!DNL Adobe Analytics] 라이센스를 별도로 구입하십시오. [!DNL Managed Services] 의 고객은 [!DNL Experience Manager]와 번들로 제공되는 [!DNL Analytics] 라이센스를 받습니다. [Managed Services 제품 설명](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)을 참조하십시오.
 
 >[!NOTE]
 >
