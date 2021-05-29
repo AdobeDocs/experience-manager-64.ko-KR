@@ -8,9 +8,9 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: 구성,Scene7 모드
 role: Administrator,Business Practitioner,Developer
-source-git-commit: f4fe70a58ded345f06f0a65809612a55e7ddfb4e
+source-git-commit: 9e9108bbfcd1c71004e494e73891d3ab0afd4d74
 workflow-type: tm+mt
-source-wordcount: '5596'
+source-wordcount: '5594'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 >[!WARNING]
 >
->Dynamic Media - Scene7 모드는 *Experience Manager 작성자 인스턴스에만 사용됩니다*. 따라서 Experience Manager 작성자 인스턴스에서 `runmode=dynamicmedia_scene7`Experience Manager 게시 인스턴스가 아닌 *을 구성해야 합니다.*
+>Dynamic Media - Scene7 모드는 *Experience Manager 작성자 인스턴스에만 사용됩니다*. 따라서 Experience Manager 작성자 인스턴스에서 `runmode=dynamicmedia_scene7`Experience Manager 게시 인스턴스가 아닌 *을 구성합니다.*
 
 Dynamic Media을 활성화하려면 터미널 창에 다음을 입력하여 명령줄에서 `dynamicmedia_scene7` 실행 모드를 사용하여 Experience Manager을 시작해야 합니다(사용된 예제 포트는 4502).
 
