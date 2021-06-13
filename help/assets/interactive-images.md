@@ -12,9 +12,9 @@ discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 exl-id: 4d3299e2-269b-4a41-a979-c884c707666d
 feature: 대화형 이미지
 role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
 workflow-type: tm+mt
-source-wordcount: '4298'
+source-wordcount: '4261'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 다음 위치로 이동하여 위의 웹 페이지에서 대화형 이미지를 참조하십시오.
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
 
 ## 대화형 이미지 배너가 만들어지는 방법을 확인하십시오 {#watch-how-interactive-image-banners-are-created}
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 일부 빠른 시작 작업 내에서 **예제** 제목을 찾습니다. 여기에 대화형 이미지가 아직 추가되지 않은 다음 웹 페이지 예제를 기반으로 하는 간단한 자습서가 포함되어 있습니다.
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
 자습서는 자신의 웹 사이트에서 대화형 이미지를 통합하는 단계를 설명하는 데 도움이 됩니다.
 
@@ -161,7 +161,7 @@ Quickview URL 및 그 결과 핫스팟 변수의 다음 예를 생각해 보십�
 
 위의 세 예에서 사용된 동일한 접근 방식을 데모 웹 페이지에 적용할 수 있습니다.
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
 데모 웹 페이지에는 각각 **[!UICONTROL 자세히]**&#x200B;라는 빠른 보기 단추가 있는 여러 개의 제품 축소판이 있습니다. 웹 브라우저의 디버깅 도구가 계속 활성화되면 각 단추를 클릭하고 기록된 Quickview URL을 기록해 둡니다. 페이지에서 사용할 수 있는 4개의 제품 빠른 보기를 모두 활성화하면 백엔드에 대해 수행된 Quickview 요청 목록이 있습니다.
 
@@ -357,7 +357,7 @@ AEM Sites 고객의 경우 대화형 미디어 구성 요소를 페이지로 드
 
 데모 웹 사이트 사용 예:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
 세 사람의 그림은 정적 `IMG` 태그입니다.
 
@@ -367,7 +367,7 @@ AEM Sites 고객의 경우 대화형 미디어 구성 요소를 페이지로 드
 
 통합은 `IMG` 태그를 제거하고 AEM Assets에서 복사된 포함 코드로 바꾸는 것만큼 간단합니다. 다음 URL에서 세 개의 원 핫스팟이 있는 페이지에서 쇼퍼블 인터랙티브 이미지를 보여 줍니다.
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html)
 
 >[!NOTE]
 >
@@ -516,7 +516,7 @@ loadQuickView(quickViewUrl);
 
 완전히 통합된 대화형 이미지를 사용하는 최종 데모 웹 사이트는 다음과 같습니다.
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html)
 
 ## 빠른 보기를 사용하여 사용자 지정 팝업 만들기 {#using-quickviews-to-create-custom-pop-ups}
 
