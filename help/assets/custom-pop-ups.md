@@ -12,14 +12,14 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 exl-id: 56b070e4-b445-4488-acff-685b7ce5785f
 feature: 구성
 role: Administrator,Business Practitioner,Developer
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
 workflow-type: tm+mt
-source-wordcount: '1050'
-ht-degree: 2%
+source-wordcount: '1047'
+ht-degree: 1%
 
 ---
 
-# 빠른 보기를 사용하여 사용자 지정 팝업 만들기 {#using-quickviews-to-create-custom-pop-ups}
+# 빠른 보기 {#using-quickviews-to-create-custom-pop-ups}를 사용하여 사용자 지정 팝업 만들기
 
 기본 Quickview는 전자 상거래 경험에서 사용되어 제품 정보와 함께 팝업이 표시되어 구매를 유도합니다. 그러나 사용자 정의 컨텐츠를 트리거하여 팝업에 표시할 수 있습니다. 사용 중인 뷰어에 따라 이 기능을 사용하면 핫스팟이나 축소판 이미지를 클릭하거나 이미지 맵에서 정보나 관련 컨텐츠를 볼 수 있습니다.
 
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 각 뷰어의 기능은 다르지만, 빠른 보기를 만드는 프로세스는 지원되는 세 뷰어 모두에서 동일합니다.
 
-**빠른 보기를 사용하여 사용자 지정 팝업을 만들려면,**
+**빠른 보기를 사용하여 사용자 지정 팝업을 만들려면 다음을 수행하십시오.**
 
 1. 업로드된 자산에 대한 빠른 보기를 만듭니다.
 
