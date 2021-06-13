@@ -10,9 +10,9 @@ discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 exl-id: 3adae6da-e148-4670-86ae-27d83008ec66
 feature: 대화형 비디오,비디오
 role: Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
 workflow-type: tm+mt
-source-wordcount: '6011'
+source-wordcount: '5975'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 * 축소판을 클릭하여 비디오를 일시 중지하고 제품의 빠른 보기를 엽니다. 예를 들어, 비디오에서 KitchenAid 축소판 이미지를 클릭하여 믹서의 360도 스핀 보기를 경험하거나 확대하면서 혼합 세부 정보를 볼 수 있습니다.
 
-<!-- There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
+<!-- There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
 ![대화형 쇼퍼블 비디오에서 만든 ](assets/chlimage_1-126.png) *프레임대화형 쇼퍼블 비디오에서 비디오 프레임을 캡처합니다.*
 
@@ -59,13 +59,13 @@ ht-degree: 0%
 
 일부 빠른 시작 작업 내에서 **예제** 제목을 찾습니다. 여기에는 *이 아직 여기에 추가된 인터랙션이 없는 이 시작 데모 웹 페이지를 기반으로 한 간단한 자습서가 포함되어 있습니다.*
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 **예제** 도움말은 웹 사이트에서 대화형 비디오를 통합하는 단계를 보여줍니다.
 
 마지막 예제 섹션에서 자습서를 완료하면 완전히 통합된 대화형 비디오가 있는 최종 데모 웹 페이지의 모습은 다음과 같습니다.
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 **대화형 비디오 워크플로우**:
 
@@ -192,7 +192,7 @@ Quickview URL 및 그 결과 축소판 변수의 다음 예를 생각해 보십�
 
 위의 접근 방식이 Example 웹 사이트에 적용되면 각각 **[!UICONTROL SEE MORE]** 단추가 있는 여러 제품 축소판이 있는 웹 페이지가 있습니다.
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 페이지에서 사용할 수 있는 모든 제품 빠른 보기를 활성화하면 백엔드에 대한 다음 Quickview 요청 목록을 가져올 수 있습니다.
 
@@ -536,7 +536,7 @@ AEM Sites 고객의 경우 대화형 미디어 구성 요소를 페이지로 드
 
 데모 웹 사이트 사용 예:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 표준 비디오 포함 코드임을 알 수 있습니다.
 
@@ -567,7 +567,7 @@ AEM Sites 고객의 경우 대화형 미디어 구성 요소를 페이지로 드
 
 통합은 비디오 포함 코드를 제거하고 AEM에서 대화형 비디오 포함 코드로 바꾸는 것만큼 간단합니다. 다음 URL에서 결과를 볼 수 있습니다. 페이지에 있는 대화형 비디오에 대한 표시이지만 아직 기존 빠른 보기에 통합되지 않았습니다.
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
 ## 대화형 비디오와 기존 Quickview {#integrating-an-interactive-video-with-an-existing-quickview} 통합
 
@@ -770,7 +770,7 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 
 완전히 통합된 대화형 비디오를 사용하는 최종 데모 웹 사이트는 다음과 같습니다.
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 ## 빠른 보기를 사용하여 사용자 지정 팝업 만들기 {#using-quickviews-to-create-custom-pop-ups}
 
