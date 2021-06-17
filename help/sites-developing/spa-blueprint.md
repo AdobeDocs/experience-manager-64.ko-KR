@@ -9,9 +9,9 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 exl-id: 73995327-d781-4501-ba14-3394dc8ea4fc
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
-source-wordcount: '2124'
+source-wordcount: '2123'
 ht-degree: 1%
 
 ---
@@ -279,7 +279,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 기본 [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) 라이브러리 및 해당 [`ModelRouter`](/help/sites-developing/spa-routing.md) 모듈(기본적으로 활성화됨)은 지정된 리소스 경로와 연결된 모델에 대한 사전 가져오기 및 액세스 권한을 제공합니다.
 
-두 엔티티는 라우팅 개념과 관련되지만 [`ModelRouter`](/help/sites-developing/spa-routing.md)은(는) [&#39;PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)가 현재 응용 프로그램 상태와 동기화된 데이터 모델과 함께 로드되어야 합니다.
+두 엔티티는 라우팅 개념과 관련되지만 [`ModelRouter`](/help/sites-developing/spa-routing.md)은(는) 현재 응용 프로그램 상태와 동기화된 데이터 모델과 함께 [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager)을 로드해야 합니다.
 
 자세한 내용은 [SPA 모델 라우팅](/help/sites-developing/spa-routing.md) 문서를 참조하십시오.
 
