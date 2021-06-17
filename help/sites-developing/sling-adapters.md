@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
 exl-id: 7780d04d-418e-494c-85c3-76bef5f35690
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 1%
@@ -69,7 +69,7 @@ null 케이스를 적절하게 처리하는 것이 중요합니다. jsp 렌더�
 `Adaptable.adaptTo()`을 구현할 수 있는 방법에는 여러 가지가 있습니다.
 
 * 개체 자체에 의해;메서드 자체를 구현하고 특정 객체에 매핑합니다.
-* 임의의 개체를 매핑할 수 있는 [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)&#39;에 의해 설정됩니다.
+* 임의의 개체를 매핑할 수 있는 [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)에 의해 결정됩니다.
 
    개체는 여전히 `Adaptable` 인터페이스를 구현해야 하며, [`SlingAdaptable`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/adapter/SlingAdaptable.html)(`adaptTo` 호출을 중앙 어댑터 관리자에 전달)를 확장해야 합니다.
 
