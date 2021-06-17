@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 자산 관리
 role: Administrator,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1766'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ AEM(Adobe Experience Manager) 자산 관점에서 모니터링에는 다음 프�
 
 * [Iotop](http://guichaz.free.fr/iotop/):Iotop은 디스크 입출력 사용을 위한 세부 대시보드입니다. 여기에는 디스크 입출력(I/O)을 사용하는 프로세스와 사용 양을 나타내는 바와 미터(M)가 표시됩니다. Iotop은 `yum install iotop` 또는 `apt-get install iotop`을 사용하여 대부분의 Linux 시스템에 설치할 수 있습니다.
 
-* [Iftop](http://www.ex-parrot.com/pdw/iftop/):Iftop은 이더넷/네트워크 사용에 대한 자세한 정보를 표시합니다. 이더넷을 사용하는 엔터티의 통신 채널 통계당 정보를 표시하는 경우 및 사용하는 대역폭의 양을 나타냅니다. Iftop은 `yum install iftop` 또는 `apt-get install iftop`을 사용하여 대부분의 Linux 시스템에 설치할 수 있습니다.
+* [Iftop](http://www.ex-parrot.com/pdw/iftop/):Iftop은 이더넷/네트워크 사용에 대한 자세한 정보를 표시합니다. 이더넷을 사용하는 엔터티의 통신 채널 통계당 정보를 표시하는 경우 및 사용하는 대역폭의 양이 표시됩니다. Iftop은 `yum install iftop` 또는 `apt-get install iftop`을 사용하여 대부분의 Linux 시스템에 설치할 수 있습니다.
 
 * Java 비행 기록(JFR):비프로덕션 환경에서 자유롭게 사용할 수 있는 Oracle의 상업적 도구입니다. 자세한 내용은 [Java Flight Recorder를 사용하여 CQ 런타임 문제를 진단하는 방법](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq)을 참조하십시오.
 * AEM error.log 파일:시스템에 기록된 오류에 대한 세부 정보를 AEM error.log 파일을 조사할 수 있습니다. 조사해야 하는 오류를 식별하려면 `tail -F quickstart/logs/error.log` 명령을 사용합니다.
@@ -139,7 +139,7 @@ JMX Mbeans에 대한 원격 액세스는 기본적으로 활성화되지 않습�
 
 * 시스템 확인
 
-   * MBean:`org.apache.sling.healthcheck:name=systemchecks,type=HealthChec`k 
+   * MBean:`org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
    * URL:*/system/console/jmx/org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck*
    * 인스턴스:작성자 1명, 모든 게시 서버
    * 경보 임계값:상태가 좋지 않으면
@@ -147,7 +147,7 @@ JMX Mbeans에 대한 원격 액세스는 기본적으로 활성화되지 않습�
 
 * 복제 큐
 
-   * MBean:`org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck `
+   * MBean:`org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
    * URL:*/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck*
    * 인스턴스:작성자 1명, 모든 게시 서버
    * 경보 임계값:상태가 좋지 않으면
@@ -155,7 +155,7 @@ JMX Mbeans에 대한 원격 액세스는 기본적으로 활성화되지 않습�
 
 * 응답 성능
 
-   * MBean:`org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck `
+   * MBean:`org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
    * URL:*/system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck*
    * 인스턴스:모든 서버
    * 경보 기간:상태가 좋지 않으면
@@ -163,7 +163,7 @@ JMX Mbeans에 대한 원격 액세스는 기본적으로 활성화되지 않습�
 
 * 쿼리 성능
 
-   * MBean:`org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck `
+   * MBean:`org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
    * URL:*/system/console/jmx/org.apache.sling.healthcheck:name= queryStatus,type=HealthCheck*
    * 인스턴스:작성자 1명, 모든 게시 서버
    * 경보 임계값:상태가 좋지 않으면
@@ -171,7 +171,7 @@ JMX Mbeans에 대한 원격 액세스는 기본적으로 활성화되지 않습�
 
 * 활성 상태 번들
 
-   * MBean:org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck 
+   * MBean:org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck
    * URL:*/system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck*
    * 인스턴스:모든 서버
    * 경보 임계값:상태가 좋지 않으면
@@ -179,7 +179,7 @@ JMX Mbeans에 대한 원격 액세스는 기본적으로 활성화되지 않습�
 
 * 오류 로그
 
-   * MBean:`org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck `
+   * MBean:`org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
    * URL:*/system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck*
    * 인스턴스:모든 서버
    * 경보 임계값:상태가 좋지 않으면
