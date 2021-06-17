@@ -11,7 +11,7 @@ topic-tags: upgrading
 discoiquuid: 899ea120-c96d-4dbf-85da-e5d25959d10a
 feature: 업그레이드
 exl-id: f146cb2f-ee77-4c99-8dff-446cdb3a7797
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
 source-wordcount: '2179'
 ht-degree: 0%
@@ -325,8 +325,10 @@ CRX3 인스턴스에서 개정 정리를 실행한 후 데이터 저장소 가�
 
 이러한 경우 다음과 같은 메시지가 표시되면서 업그레이드가 실패합니다.
 
-`ERROR [Apache Sling Repository Startup Thread] com.adobe.granite.repository.impl.SlingRepositoryManager Exception in a SlingRepositoryInitializer, SlingRepository service registration aborted
-java.lang.RuntimeException: Unable to create service user [communities-utility-reader]:java.lang.RuntimeException: Existing user communities-utility-reader is not a service user.`
+```
+ERROR [Apache Sling Repository Startup Thread] com.adobe.granite.repository.impl.SlingRepositoryManager Exception in a SlingRepositoryInitializer, SlingRepository service registration aborted
+java.lang.RuntimeException: Unable to create service user [communities-utility-reader]:java.lang.RuntimeException: Existing user communities-utility-reader is not a service user.
+```
 
 이 문제를 해결하려면 다음을 수행하십시오.
 
