@@ -12,10 +12,10 @@ discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 exl-id: 209f0e02-b883-4104-8358-01cab15e5db2
 feature: 콘텐츠 조각
 role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 97%
+source-wordcount: '556'
+ht-degree: 95%
 
 ---
 
@@ -177,7 +177,7 @@ ht-degree: 97%
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-코드 범위(code span)를 나타내려면 억음 악센트 따옴표(`)로 둘러쌉니다. 서식이 미리 지정된 코드 블록과 달리 코드 범위는 일반 단락 내의 코드를 나타냅니다.
+코드 범위를 나타내려면 백틱 따옴표(&amp;grave;)로 묶습니다. 서식이 미리 지정된 코드 블록과 달리 코드 범위는 일반 단락 내의 코드를 나타냅니다.
 
 예:
 
