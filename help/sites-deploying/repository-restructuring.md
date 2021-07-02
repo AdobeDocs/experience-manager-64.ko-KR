@@ -11,14 +11,14 @@ topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
 feature: 업그레이드
 exl-id: 6ff5a23a-c9b5-49ca-87b2-ba01eaf48a9f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
 
-# AEM 6.4에서의 저장소 구조 변경{#repository-restructuring-in-aem}
+# AEM 6.4의 저장소 구조 변경{#repository-restructuring-in-aem}
 
 ## 소개 {#introduction}
 
@@ -44,7 +44,7 @@ AEM 6.4로 업그레이드를 계획하는 동안 작업 노력을 평가하려�
 
 * [모든 AEM 솔루션에 공통으로 사용되는 저장소 구조 변경](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md)
 * [AEM Sites 저장소 구조 변경](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md)
-* [AEM Assets 저장소 구조 변경](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md)
+* [AEM Assets 저장소 구조 변경](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 * [AEM Assets Dynamic Media 저장소 구조 변경](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)
 * [AEM Forms 저장소 구조 변경](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)
 * [AEM Communities 저장소 구조 변경](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md)
