@@ -10,9 +10,9 @@ topic-tags: repo_restructuring
 discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
 feature: 업그레이드
 exl-id: 3d5bbf95-bd1e-453b-b487-517a56fe727f
-source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
+source-git-commit: 98b6a34d678827b8ced0dfc3b153a92d63c1c0de
 workflow-type: tm+mt
-source-wordcount: '1139'
+source-wordcount: '1157'
 ht-degree: 2%
 
 ---
@@ -23,19 +23,19 @@ AEM 6.4에서 상위 [저장소 구조 변경 페이지에 설명된 대로 AEM 
 
 **6.4 업그레이드**
 
-* [Misc](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Misc](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#misc)
 
 **6.5 이전 업그레이드**
 
-* [자산/수집 이벤트 이메일 알림 템플릿](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
-* [클래식 자산 공유 디자인](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
-* [자산 이메일 알림 템플릿 다운로드](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
-* [DRM 라이선스 예](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [자산/수집 이벤트 이메일 알림 템플릿](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#asset-collection-event-e-mail-notification-template)
+* [클래식 자산 공유 디자인](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#classic-asset-share-designs)
+* [자산 이메일 알림 템플릿 다운로드](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#download-asset-e-mail-notification-template)
+* [DRM 라이선스 예](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#example-drm-licenses)
 
-* [링크 공유 전자 메일 알림 템플릿](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
-* [InDesign 워크플로우 스크립트](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
-* [비디오 코드 변환 구성](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
-* [Misc](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [링크 공유 전자 메일 알림 템플릿](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#link-share-e-mail-notification-template)
+* [InDesign 워크플로우 스크립트](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#indesign-workflow-scripts)
+* [비디오 코드 변환 구성](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#video-transcoding-configurations)
+* [Misc](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#misc2)
 
 ## 6.4 업그레이드 {#with-upgrade}
 
