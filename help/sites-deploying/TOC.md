@@ -8,10 +8,10 @@ breadcrumb-title: Deploying 안내서
 user-guide-description: Adobe Managed Services 클라우드 배포를 포함하여 Adobe Experience Manager 6.4의 설치, 배포 및 아키텍처에 대해 자세히 알아봅니다.
 feature: 배포
 role: Architect
-source-git-commit: 1ecb63f849f9f6167dddd4053267ae89577659fc
+source-git-commit: 19c3ecc20d78f40a2fa49f804baf232db7483afc
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 20%
+source-wordcount: '373'
+ht-degree: 19%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 20%
    + [일관성 및 순회 검사](consistency-check.md)
    + [성능 지침](performance-guidelines.md)
    + [성능 최적화](configuring-performance.md)
-   + [Assets 성능 안내서](assets-performance-sizing.md)
+   + [Assets 성능 안내서](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html)
    + [구성 방법 문서](ht-deploy.md)
    + [Geometrixx 사이트 제거](removing-the-geometrixx-sites.md)
    + [웹 콘솔 구성](configuring-web-console.md)
@@ -85,7 +85,7 @@ ht-degree: 20%
    + [AEM 6.4의 저장소 구조 변경](repository-restructuring.md)
    + [AEM 6.4의 공통 저장소 구조 변경](all-repository-restructuring-in-aem-6-4.md)
    + [AEM 6.4의 사이트 저장소 구조 변경](sites-repository-restructuring-in-aem-6-4.md)
-   + [AEM 6.4의 Assets 저장소 구조 변경](assets-repository-restructuring-in-aem-6-4.md)
+   + [AEM 6.4의 Assets 저장소 구조 변경](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
    + [AEM 6.4에서 Dynamic Media 저장소 구조 변경](dynamicmedia-repository-restructuring-in-aem-6-4.md)
    + [AEM 6.4에서 Forms 저장소 구조 변경](forms-repository-restructuring-in-aem-6-4.md)
    + [AEM 6.4에서 전자 상거래 저장소 구조 변경](ecommerce-repository-restructuring-in-aem-6-4.md)
