@@ -10,34 +10,34 @@ topic-tags: repo_restructuring
 discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
 feature: 업그레이드
 exl-id: 3d5bbf95-bd1e-453b-b487-517a56fe727f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1139'
 ht-degree: 2%
 
 ---
 
-# AEM 6.4에서의 자산 저장소 구조 변경{#assets-repository-restructuring-in-aem}
+# AEM 6.4의 Assets 저장소 구조 변경{#assets-repository-restructuring-in-aem}
 
 AEM 6.4에서 상위 [저장소 구조 변경 페이지에 설명된 대로 AEM 6.4로 업그레이드하는 고객은 이 페이지에서 AEM Assets 솔루션에 영향을 주는 저장소 변경 사항과 관련된 작업 작업을 평가해야 합니다. ](/help/sites-deploying/repository-restructuring.md) 일부 변경 사항은 AEM 6.4 업그레이드 프로세스 중에 작업 노력이 필요한 반면, 다른 변경 사항은 6.5 업그레이드 전까지 지연될 수 있습니다.
 
 **6.4 업그레이드**
 
-* [Misc](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#misc)
+* [Misc](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
 **6.5 이전 업그레이드**
 
-* [자산/수집 이벤트 이메일 알림 템플릿](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#asset-collection-event-e-mail-notification-template)
-* [클래식 자산 공유 디자인](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#classic-asset-share-designs)
-* [자산 이메일 알림 템플릿 다운로드](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#download-asset-e-mail-notification-template)
-* [DRM 라이선스 예](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#example-drm-licenses)
+* [자산/수집 이벤트 이메일 알림 템플릿](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [클래식 자산 공유 디자인](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [자산 이메일 알림 템플릿 다운로드](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [DRM 라이선스 예](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
-* [링크 공유 전자 메일 알림 템플릿](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#link-share-e-mail-notification-template)
-* [InDesign 워크플로우 스크립트](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#indesign-workflow-scripts)
-* [비디오 코드 변환 구성](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#video-transcoding-configurations)
-* [Misc](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#misc2)
+* [링크 공유 전자 메일 알림 템플릿](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [InDesign 워크플로우 스크립트](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [비디오 코드 변환 구성](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Misc](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
-## 6.4 업그레이드 시 {#with-upgrade}
+## 6.4 업그레이드 {#with-upgrade}
 
 ### Misc {#misc}
 
@@ -64,7 +64,7 @@ AEM 6.4에서 상위 [저장소 구조 변경 페이지에 설명된 대로 AEM 
 
 ## 6.5 이전 업그레이드 {#prior-to-upgrade}
 
-### 자산/컬렉션 이벤트 이메일 알림 템플릿 {#asset-collection-event-e-mail-notification-template}
+### 자산/수집 이벤트 이메일 알림 템플릿 {#asset-collection-event-e-mail-notification-template}
 
 <table> 
  <tbody> 
@@ -160,7 +160,7 @@ AEM 6.4에서 상위 [저장소 구조 변경 페이지에 설명된 대로 AEM 
  </tbody> 
 </table>
 
-### DRM 라이센스 예 {#example-drm-licenses}
+### DRM 라이선스 예 {#example-drm-licenses}
 
 | **이전 위치** | `/etc/dam/drm/licenses/` |
 |---|---|
