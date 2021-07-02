@@ -5,14 +5,14 @@ contentOwner: AG
 feature: 자산 관리
 role: Leader,Architect,Business Practitioner
 exl-id: 9292871d-3b10-49f8-ac1a-4770b4e44048
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '863'
 ht-degree: 34%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] as a DAM 솔루션 {#about-assets} 정보
+# [!DNL Adobe Experience Manager Assets] as a DAM 솔루션 정보 {#about-assets}
 
 [!DNL Assets] 는 플랫폼의 필수적인 부분이며 기업이 디지털 자산을  [!DNL Experience Manager] 관리하고 배포할 수 있도록 해주는 DAM(디지털 자산 관리) 도구입니다. 조직 전반의 사용자는 이미지, 비디오, 문서, 오디오 클립, 3D 파일, 리치 미디어와 같은 다양한 유형의 디지털 자산을 관리, 저장 및 액세스하여 웹, 인쇄 및 디지털 배포에 사용할 수 있습니다.
 
@@ -41,7 +41,7 @@ Assets managed within [!DNL Experience Manager] DAM can then be accessed via the
 
 ![screen_shot_2012-04-17at20214pm](assets/screen_shot_2012-04-17at20214pm.png) -->
 
-### 디지털 자산 관리 및 이미지 구성 요소 {#digital-asset-management-versus-image-component}
+### 디지털 자산 관리와 이미지 구성 요소 {#digital-asset-management-versus-image-component}
 
 이미지를 DAM 저장소에 넣을지, 이미지 구성 요소를 사용할지를 결정할 때 이미지 라이프사이클을 고려하십시오.
 
@@ -52,13 +52,13 @@ Assets managed within [!DNL Experience Manager] DAM can then be accessed via the
 
 자산은 디지털 문서, 이미지, 비디오, 오디오 또는 그 일부로, 다양한 표현물과 하위 자산(예: Photoshop 파일의 레이어, PowerPoint 파일의 슬라이드, pdf의 페이지, ZIP에 있는 파일)을 가질 수 있습니다.
 
-근본적으로 자산은 이진, 메타데이터, 표현물, 하위 자산이 합쳐진 것입니다. 자세한 내용은 [DAM 성능 안내서](/help/sites-deploying/assets-performance-sizing.md)를 참조하십시오.
+근본적으로 자산은 이진, 메타데이터, 표현물, 하위 자산이 합쳐진 것입니다. 자세한 내용은 [DAM 성능 안내서](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html)를 참조하십시오.
 
 >[!CAUTION]
 >
 >대량의 자산(특히 이미지)을 업로드하거나 편집하는 것은 [!DNL Experience Manager] 배포 성능에 영향을 줄 수 있습니다.
 
-### [!DNL Experience Manager Assets] 용어  {#aem-assets-terminology}
+### [!DNL Experience Manager Assets] 용어 {#aem-assets-terminology}
 
 [!DNL Experience Manager]에서 디지털 자산으로 작업하는 경우 다음 용어를 이해해야 합니다.
 
