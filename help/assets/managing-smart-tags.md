@@ -6,9 +6,9 @@ uuid: fd3eedf0-f222-45bf-aac7-90da6b7b7087
 contentOwner: AG
 discoiquuid: 3394b56a-3054-419b-9547-5740f8c35071
 feature: 스마트 태그,태깅,검색
-role: Business Practitioner
+role: User
 exl-id: 05f43e43-ac72-4ab1-a373-687c137d2bed
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 1. **[!UICONTROL 저장]**&#x200B;을 클릭/탭한 다음, **[!UICONTROL 확인]**&#x200B;을 클릭/탭하여 성공 대화 상자를 닫습니다.
 1. 이미지의 속성 페이지로 이동합니다. 프로모션한 태그에 높은 관련성이 할당되므로 검색 결과에서 더 높게 표시됩니다.
 
-## 스마트 태그가 있는 AEM 검색 결과 이해 {#understand-search-results-with-smart-tags}
+## 스마트 태그를 사용하여 AEM 검색 결과 이해 {#understand-search-results-with-smart-tags}
 
 기본적으로 AEM 검색은 검색어와 `AND` 절을 결합합니다. 스마트 태그를 사용하면 이 기본 동작이 변경되지 않습니다. 스마트 태그를 사용하면 적용된 스마트 태그에서 검색어를 찾기 위해 추가 `OR` 절이 추가됩니다. 예를 들어 `woman running`을 검색하는 것이 좋습니다. 메타데이터에 `woman` 키워드만 있거나 `running` 키워드만 있는 자산은 기본적으로 검색 결과에 표시되지 않습니다. 그러나 스마트 태그를 사용하여 `woman` 또는 `running` 태그가 지정된 자산이 이러한 검색 쿼리에 나타납니다. 따라서 검색 결과는
 
