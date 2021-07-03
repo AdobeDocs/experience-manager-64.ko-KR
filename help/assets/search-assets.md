@@ -3,9 +3,9 @@ title: AEM에서 자산 검색
 description: 필터 패널을 사용하여 AEM에서 필요한 자산을 찾는 방법과 검색에 표시되는 자산을 사용하는 방법을 알아봅니다.
 contentOwner: AG
 feature: 검색,메타데이터
-role: Business Practitioner
+role: User
 exl-id: cc1a5946-e13d-4433-a25a-d297fd07e2e4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 3%
@@ -46,7 +46,7 @@ ht-degree: 3%
 
    ![number_of_searches](assets/number_of_searches.png)
 
-## 파일 형식 {#search-for-file-types} 검색
+## 파일 형식 검색 {#search-for-file-types}
 
 필터 패널은 검색 경험에 더 많은 세부 사항을 추가하고 검색 기능을 더 다양하게 만들 수 있도록 해줍니다. 원하는 세부 수준으로 쉽게 드릴다운할 수 있습니다.
 
@@ -62,7 +62,7 @@ ht-degree: 3%
 
 ![문서](assets/documents.png)
 
-## 파일 크기 {#search-based-on-file-size}에 따라 검색
+## 파일 크기를 기준으로 검색 {#search-based-on-file-size}
 
 **파일 크기** 조건자를 사용하여 크기를 기준으로 자산을 검색합니다. 검색 범위를 좁히려면 크기 범위의 하한과 상한을 지정할 수 있습니다. KB, MB 등의 측정 단위를 지정할 수도 있습니다.
 
@@ -78,7 +78,7 @@ ht-degree: 3%
 
 ![timestamp](assets/timestamp.png)
 
-## 상태 {#search-based-on-status}을 기준으로 검색
+## 상태 기반 검색 {#search-based-on-status}
 
 게시, 승인, 체크아웃 및 만료와 같은 다양한 유형의 상태를 기반으로 자산을 검색하려면 **상태** 조건자를 사용합니다.
 
@@ -92,7 +92,7 @@ ht-degree: 3%
 
 ![승인](assets/approval.png)
 
-## 인사이트 데이터 {#search-based-on-insights-data} 기반 검색
+## 인사이트 데이터를 기반으로 검색 {#search-based-on-insights-data}
 
 다양한 Creative 앱에서 가져온 사용 통계를 기반으로 자산을 검색하려면 **Insights** 조건자를 사용하십시오. 사용 데이터는 다음 카테고리로 그룹화됩니다.
 
