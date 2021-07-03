@@ -8,10 +8,10 @@ content-type: reference
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 exl-id: 3a666efe-1592-4425-82f5-c4d9343f65da
 feature: 이미지 사전 설정
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '3839'
+source-wordcount: '3838'
 ht-degree: 3%
 
 ---
@@ -96,7 +96,7 @@ Dynamic Media을 사용하여 AI, EPS 또는 PDF 파일에 대한 동적 렌디�
 
 왼쪽 상단에 있는 Adobe Experience Manager을 탭하고 **[!UICONTROL 도구 > 워크플로우 > 모델]**&#x200B;으로 이동합니다. **[!UICONTROL 워크플로우 모델]** 페이지에서 **[!UICONTROL DAM 자산 업데이트]**&#x200B;를 선택한 다음, 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 누릅니다. **[!UICONTROL DAM 자산 업데이트 워크플로우]** 페이지에서 **[!UICONTROL PDF/AI 이미지 미리 보기 표현물 래스터화]** 프로세스 구성 요소를 두 번 탭하여 **[!UICONTROL 단계 속성]** 대화 상자를 엽니다.
 
-### PDF/AI 이미지 미리 보기 변환 옵션 {#rasterize-pdf-ai-image-preview-rendition-options} 래스터화
+### PDF/AI 이미지 미리 보기 변환 옵션 래스터화 {#rasterize-pdf-ai-image-preview-rendition-options}
 
 ![PDF 또는 AI 워크플로우를 래스터화하는 인수](assets/rasterize_pdf_ai_image_preview.png)
 
@@ -179,7 +179,7 @@ InDesign 파일의 경우 Adobe InDesign 서버가 AEM과 통합된 경우에만
  </tbody> 
 </table>
 
-## 이미지 축소판 크기 {#configuring-image-thumbnail-size} 구성
+## 이미지 축소판 크기 구성 {#configuring-image-thumbnail-size}
 
 **[!UICONTROL DAM 자산 업데이트]** 워크플로우에서 이러한 설정을 구성하여 축소판의 크기를 구성할 수 있습니다. 워크플로우에서는 이미지 자산의 축소판 크기를 구성할 수 있는 두 가지 단계가 있습니다. 하나의 (**[!UICONTROL Dynamic Media Process Image Assets]**)는 동적 이미지 자산에 사용되고 다른(**[!UICONTROL Process Thumbnail]**)은 정적 축소판 생성을 위해 사용되거나 다른 모든 프로세스가 축소판을 생성하지 못하는 경우 *모두 동일한 설정을 가져야 합니다.*
 
@@ -213,7 +213,7 @@ InDesign 파일의 경우 Adobe InDesign 서버가 AEM과 통합된 경우에만
 
 1. **[!UICONTROL 저장]**&#x200B;을 눌러 변경 사항을 워크플로우에 저장합니다.
 
-### {#increasing-or-decreasing-the-number-of-image-presets-that-display}을 표시하는 Dynamic Media 이미지 사전 설정 수를 늘리거나 줄입니다
+### 표시되는 Dynamic Media 이미지 사전 설정 수를 늘리거나 줄입니다 {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
 만드는 이미지 사전 설정은 자산을 미리 볼 때 동적 변환으로 사용할 수 있습니다. AEM은 **[!UICONTROL 세부 사항 보기 > 표현물]**&#x200B;에서 자산을 볼 때 다양한 동적 표현물을 보여줍니다. 표시되는 표현물의 제한을 늘리거나 줄일 수 있습니다.
 
@@ -428,7 +428,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
  </tbody>
 </table>
 
-## 이미지 수정자 {#defining-image-preset-options-with-image-modifiers}을 사용하여 이미지 사전 설정 옵션 정의
+## 이미지 수정자를 사용하여 이미지 사전 설정 옵션 정의 {#defining-image-preset-options-with-image-modifiers}
 
 **[!UICONTROL 기본]** 및 **[!UICONTROL 고급]** 탭에서 사용할 수 있는 옵션 외에도 이미지 사전 설정을 정의할 때 더 많은 옵션을 제공하는 이미지 수정자를 정의할 수 있습니다. 이미지 렌더링은 Dynamic Media 이미지 렌더링 API를 사용합니다. API는 [HTTP 프로토콜 참조](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference.html)에 자세히 정의되어 있습니다.
 
