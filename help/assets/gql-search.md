@@ -3,11 +3,11 @@ title: GQL 전체 텍스트 검색
 description: AEM Assets에서 GQL 전체 텍스트 검색 기능을 살펴보십시오. 제목, 설명 및 작성자 이름과 같은 특정 메타데이터를 기반으로 자산을 검색할 수 있도록 해줍니다.
 contentOwner: AG
 feature: 검색,메타데이터
-role: Business Practitioner
+role: User
 exl-id: e819501c-4ac3-447f-944c-67adc42e8c61
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '879'
 ht-degree: 2%
 
 ---
@@ -63,10 +63,10 @@ GQL 전체 텍스트 검색 기능을 사용하면 다음 메타데이터 속성
 | [!UICONTROL 저작권 소유자] | copyrightowner:&quot;Adobe Systems&quot; |
 | [!UICONTROL 내용 작성자] | 기여자:John |
 | [!UICONTROL 사용 약관] | usagterms:&quot;CopyRights Reserved&quot; |
-| [!UICONTROL 생성됨] | 작성일:YYYY-MM-DDHH:MM:SS.000+05:30.YYYY-MM-DDHH:MM:SS.000+05:30 |
-| [!UICONTROL 만료 날짜] | expires:YYYY-MM-DDHH:MM:SS.000+05:30.YYYY-MM-DDHH:MM:SS.000+05:30 |
-| [!UICONTROL 시간] | ontime:YYYY-MM-DDHH:MM:SS.000+05:30.YYYY-MM-DDHH:MM:SS.000+05:30 |
-| [!UICONTROL 해제 시간] | offtime:YYYY-MM-DDHH:MM:SS.000+05:30.YYYY-MM-DDHH:MM:SS.000+05:30 |
+| [!UICONTROL 생성됨] | :YYYY-MM-DDTHH:MM:SS.000+05:30을 만들었습니다.YYYY-MM-DDHH:MM:SS.000+05:30 |
+| [!UICONTROL 만료 날짜] | 만료:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDHH:MM:SS.000+05:30 |
+| [!UICONTROL 시간] | ontime:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDHH:MM:SS.000+05:30 |
+| [!UICONTROL 해제 시간] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDHH:MM:SS.000+05:30 |
 | [!UICONTROL 시간 범위] (expires dateontime,offtime) | 패싯 필드:소행..상단 |
 | [!UICONTROL 경로] | /content/dam/&lt;폴더 이름> |
 | [!UICONTROL PDF 제목] | pdftitle:&quot;Adobe 문서&quot; |
@@ -120,7 +120,7 @@ title:&quot;모임&quot;;
 
 전체 텍스트 검색에서도 -,^ 등의 연산자를 지원합니다. 이러한 문자를 문자열 리터럴으로 검색하려면 검색 표현식을 큰따옴표로 묶습니다. 예를 들어, 노트북 - 미용 대신 &quot;노트북 - 뷰티&quot;를 사용합니다.
 
-## 검색 증폭 {#boosting-search}
+## 검색 활성화 {#boosting-search}
 
 특정 자산에 대한 키워드의 관련성을 개선하여 키워드를 기반으로 검색을 높일 수 있습니다. 즉, 특정 키워드를 프로모션하는 이미지가 이러한 키워드를 기반으로 검색할 때 검색 결과 맨 위에 나타납니다.
 
