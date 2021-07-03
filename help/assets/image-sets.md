@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
 exl-id: af3f95aa-a162-4212-a20a-68b5a0e72d6d
 feature: 이미지 세트
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2066'
 ht-degree: 0%
@@ -37,7 +37,7 @@ ht-degree: 0%
 >
 >Assets 사용자 인터페이스에 대한 자세한 내용은 [Touch UI를 사용하여 자산 관리](managing-assets-touch-ui.md)를 참조하십시오.
 
-## 빠른 시작:이미지 집합 {#quick-start-image-sets}
+## 빠른 시작:이미지 세트 {#quick-start-image-sets}
 
 빠르게 시작하고 실행하려면
 
@@ -94,7 +94,7 @@ ht-degree: 0%
 
 [Assets](managing-assets-touch-ui.md#uploading-assets)에 있는 다른 자산을 업로드하는 것처럼 이미지 세트에 대한 이미지를 업로드할 수 있습니다.
 
-### 업로드할 이미지 세트 자산 준비 중 {#preparing-image-set-assets-for-upload}
+### 업로드할 이미지 세트 자산 준비 {#preparing-image-set-assets-for-upload}
 
 이미지 세트를 만들기 전에 이미지가 올바른 크기와 형식인지 확인하십시오.
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 
 
-## 이미지 집합 만들기 {#creating-image-sets}
+## 이미지 세트 만들기 {#creating-image-sets}
 
 사용자 인터페이스 또는 API를 통해 이미지 세트를 만들 수 있습니다. 이 섹션에서는 사용자 인터페이스에서 이미지 세트를 만드는 방법을 설명합니다.
 
@@ -237,10 +237,10 @@ ht-degree: 0%
 
 1. 편집을 완료하면 **[!UICONTROL 저장]**&#x200B;을 누릅니다.
 
-## 이미지 집합 미리 보기 {#previewing-image-sets}
+## 이미지 세트 미리 보기 {#previewing-image-sets}
 
 [자산 미리 보기](previewing-assets.md)를 참조하십시오.
 
-## 이미지 집합 {#publishing-image-sets} 게시
+## 이미지 집합 게시 {#publishing-image-sets}
 
 [자산 게시](publishing-dynamicmedia-assets.md)를 참조하십시오.
