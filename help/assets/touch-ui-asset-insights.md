@@ -3,9 +3,9 @@ title: 자산 통찰력 기능을 사용하여 이미지 사용을 추적합니�
 description: 자산 통찰력 기능을 사용하면 타사 웹 사이트, 마케팅 캠페인 및 Adobe의 크리에이티브 솔루션에서 사용되는 이미지의 사용자 등급 및 사용 통계를 추적할 수 있습니다.
 contentOwner: AG
 feature: 자산 통찰력,자산 보고서
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
-source-git-commit: af2d14f92efb88143ccefe7fe29f83ae515e5981
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '798'
 ht-degree: 0%
@@ -28,7 +28,7 @@ ht-degree: 0%
 >
 >인사이트는 이미지에만 지원되고 제공됩니다.
 
-## 자산 {#viewing-statistics-for-an-asset} 통계 보기
+## 자산에 대한 통계 보기 {#viewing-statistics-for-an-asset}
 
 메타데이터 페이지에서 자산 통찰력 점수를 볼 수 있습니다.
 
@@ -65,7 +65,7 @@ ht-degree: 0%
 
    ![chlimage_1-303](assets/chlimage_1-303.png)
 
-## 자산 {#viewing-aggregate-statistics-for-assets}에 대한 집계 통계 보기
+## 자산에 대한 통계 집계 보기 {#viewing-aggregate-statistics-for-assets}
 
 **[!UICONTROL 인사이트 보기]**&#x200B;를 사용하여 폴더 내에서 모든 자산의 점수를 동시에 볼 수 있습니다.
 
