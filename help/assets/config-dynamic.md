@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 exl-id: 1e122f97-ac37-44f5-a1cd-bf53ffda6f5b
 feature: 구성,하이브리드 모드
-role: Administrator,Business Practitioner,Developer
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+role: Admin,User,Developer
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '7796'
 ht-degree: 2%
@@ -48,7 +48,7 @@ Dynamic Media의 고객인 경우, 하이브리드 게재를 모든 Dynamic Medi
 
 ![chlimage_1-506](assets/chlimage_1-506.png)
 
-## 이미지 {#hybrid-publishing-architecture-for-images}에 대한 하이브리드 게시 아키텍처
+## 이미지를 위한 하이브리드 게시 아키텍처 {#hybrid-publishing-architecture-for-images}
 
 ![chlimage_1-507](assets/chlimage_1-507.png)
 
@@ -131,7 +131,7 @@ Dynamic Media의 고객인 경우, 하이브리드 게재를 모든 Dynamic Medi
  </tbody> 
 </table>
 
-## Dynamic Media {#enabling-dynamic-media} 활성화
+## Dynamic Media 활성화 {#enabling-dynamic-media}
 
 [동적 ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) 미디어는 기본적으로 비활성화되어 있습니다. Dynamic Media 기능을 활용하려면 **[!UICONTROL dynamicmedia]** 실행 모드(예: **[!UICONTROL publish]** 실행 모드)를 사용하여 Dynamic Media를 활성화해야 합니다. 활성화하기 전에 [기술 요구 사항](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on)을 검토하십시오.
 
@@ -193,7 +193,7 @@ AEM QuickStart WAR 배포에서는 포트 번호 및 컨텍스트 경로를 파�
 >[!NOTE]
 [AEM Quickstart 독립형 배포](/help/sites-deploying/deploy.md)에서는 포트 번호와 컨텍스트 경로를 자동으로 구성할 수 있으므로 일반적으로 **self** 도메인을 구성할 필요가 없습니다. 그러나 모든 네트워크 인터페이스가 꺼져 있으면 **self** 도메인을 구성해야 합니다.
 
-## Dynamic Media {#disabling-dynamic-media} 비활성화
+## Dynamic Media 비활성화  {#disabling-dynamic-media}
 
 Dynamic Media는 기본적으로 활성화되지 않습니다. 그러나 이전에 dynamic media를 활성화한 경우에는 나중에 해제할 수 있습니다.
 
@@ -215,7 +215,7 @@ Dynamic Media를 활성화한 후 비활성화하려면 **[!UICONTROL -r dynamic
    Dynamic Media 실행 모드가 비활성화되면 `qdam.pyramid.tiff` 변환을 생성하는 워크플로우 단계가 자동으로 생략됩니다. 이 경우 동적 표현물 지원 및 기타 Dynamic Media 기능도 비활성화됩니다.
    AEM 서버를 구성한 후 Dynamic Media 실행 모드를 사용할 수 없게 설정하면 해당 실행 모드에서 업로드된 모든 자산이 이제 유효하지 않습니다.
 
-## (선택 사항) Dynamic Media 사전 설정 및 구성을 6.3에서 6.4 다운타임 없이 마이그레이션 {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
+## (선택 사항) Dynamic Media 사전 설정 및 구성을 6.3에서 6.4의 다운타임 없이 마이그레이션합니다 {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
 AEM Dynamic Media을 6.3에서 6.4로 업그레이드하는 경우 - 이제 가동 중지 시간(&quot;옵트인&quot;이라고도 함) 제거에 대한 기능이 포함됨) CRXDE Lite에서 모든 사전 설정 및 구성을 `/etc`에서 `/conf`(으)로 마이그레이션하려면 다음 curl 명령을 실행해야 합니다.
 
@@ -229,7 +229,7 @@ AEM Dynamic Media을 6.3에서 6.4로 업그레이드하는 경우 - 이제 가�
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
-## 이미지 복제 구성 중 {#configuring-image-replication}
+## 이미지 복제 구성 {#configuring-image-replication}
 
 Dynamic Media 이미지 제공은 AEM 작성자에서 비디오 축소판을 포함한 이미지 자산을 게시하고 해당 자산을 Adobe의 주문형 복제 서비스(복제 서비스 URL)로 복제하여 작동합니다. 그런 다음 자산은 온디맨드 이미지 전달 서비스(이미지 서비스 URL)를 통해 전달됩니다.
 
@@ -334,7 +334,7 @@ Replication test succeeded
 
 인증을 설정할 때 솔루션 사용 시 발생할 수 있는 몇 가지 문제가 있습니다. 이러한 내용을 확인하기 전에 복제를 설정했는지 확인합니다.
 
-#### 문제:HTTP 상태 코드 401(메시지 포함) - 권한 부여 필요 {#problem-http-status-code-with-message-authorization-required}
+#### 문제:메시지가 있는 HTTP 상태 코드 401 - 권한 부여 필요 {#problem-http-status-code-with-message-authorization-required}
 
 이 문제는 `dynamic-media-replication` 사용자에 대해 KeyStore를 설정하지 못해서 발생할 수 있습니다.
 
@@ -359,7 +359,7 @@ Replication test to s7delivery:https://s7bern.macromedia.com:8580/is-publish/
 
 **솔루션**:이  `KeyStore` (가)  **[!UICONTROL dynamic-media-replicationuser]** 에 저장되고 올바른 암호가 제공되는지 확인합니다.
 
-#### 문제:키 암호를 해독할 수 없습니다. {#problem-could-not-decrypt-key-could-not-decrypt-data} 데이터를 해독할 수 없습니다.
+#### 문제:키 암호를 해독할 수 없습니다. 데이터 암호를 해독할 수 없습니다. {#problem-could-not-decrypt-key-could-not-decrypt-data}
 
 ```xml
 Replication test to s7delivery:https://<localhost>:8580/is-publish/
@@ -395,7 +395,7 @@ java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe
 
 **솔루션**:AEM 작성자의 Java 프로세스에 시스템 속성  **-Djavax.net.ssl.trustStore=** 가 유효한 truststore로 설정되어 있는지 확인합니다.
 
-#### 문제:KeyStore가 설정되지 않았거나 {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized} 초기화되지 않았습니다.
+#### 문제:KeyStore가 설정되지 않았거나 초기화되지 않았습니다. {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
 
 이 문제는 핫픽스 또는 기능 팩이 **[!UICONTROL dynamic-media-user]** 또는 **[!UICONTROL keystore]** 노드를 덮어쓰는 경우에 발생할 수 있습니다.
 
@@ -426,7 +426,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
 1. **[!UICONTROL 연결 테스트]**&#x200B;를 눌러 구성이 올바른지 확인합니다.
 
-#### 문제:게시 에이전트가 OAuth {#problem-publish-agent-is-using-ssl-instead-of-oauth} 대신 SSL을 사용하고 있습니다.
+#### 문제:게시 에이전트가 OAuth 대신 SSL을 사용하고 있습니다 {#problem-publish-agent-is-using-ssl-instead-of-oauth}
 
 이 문제는 핫픽스 또는 기능 팩이 올바르게 설치되지 않거나 설정이 오버라이드된 경우에 발생할 수 있습니다.
 
@@ -518,7 +518,7 @@ Dynamic Media - 하이브리드 모드를 사용하여 AEM의 여러 설치에�
 
 1. 패키지 설치를 확인하고 디버깅합니다.
 
-### 첫 번째 작성자 노드 {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node} 구성 후 [!DNL Video Analytics] 사전 설정 패키지 생성
+### 첫 번째 작성자 노드를 구성한 후 [!DNL Video Analytics] 사전 설정 패키지 만들기 {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}
 
 이 작업을 완료하면 [!DNL Video Analytics] 사전 설정이 포함된 패키지 파일이 표시됩니다. 이러한 사전 설정에는 보고서 세트, 추적 서버, 추적 네임스페이스 및 Marketing Cloud 조직 ID가 포함되어 있습니다(사용 가능한 경우).
 
@@ -532,7 +532,7 @@ Dynamic Media - 하이브리드 모드를 사용하여 AEM의 여러 설치에�
 1. 패키지를 빌드합니다.
 1. 후속 새 작성자 노드와 공유할 수 있도록 [!DNL Video Analytics] 사전 설정 패키지를 다운로드하거나 공유합니다.
 
-### 추가 작성자 노드 {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes} 구성 전에 [!DNL Video Analytics] 사전 설정 패키지 설치
+### 추가 작성자 노드를 구성하기 전에 [!DNL Video Analytics] 사전 설정 패키지 설치 {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
 
 **[!UICONTROL Dynamic Media 구성(6.3 이전)]**&#x200B;을 구성하기 전에 이 작업 _을 완료해야 합니다._ 이렇게 하지 않으면 사용되지 않는 다른 보고서 세트가 생성됩니다. 또한 비디오 보고가 계속 제대로 작동하지만 데이터 수집은 최적화되지 않습니다.
 
@@ -608,7 +608,7 @@ Dynamic Media - 하이브리드 모드를 사용하여 AEM의 여러 설치에�
 
 AEM 6.4 이상 버전은 `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`에 이 사전 설정을 저장합니다
 
-## 카탈로그 설정 복제 중 {#replicating-catalog-settings}
+## 카탈로그 설정 복제 {#replicating-catalog-settings}
 
 JCR을 통해 설정 프로세스의 일부로 고유한 기본 카탈로그 설정을 게시해야 합니다. 카탈로그 설정을 복제하려면 다음을 수행하십시오.
 
@@ -630,7 +630,7 @@ JCR을 통해 설정 프로세스의 일부로 고유한 기본 카탈로그 설
 >[!NOTE]
 기본적으로, 시스템의 자산 세부 사항 보기에서 **[!UICONTROL 표현물]** 및 **[!UICONTROL 뷰어]**&#x200B;를 선택하면 다양한 뷰어 사전 설정이 표시됩니다. 표시되는 숫자를 늘리거나 줄일 수 있습니다. [표시](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 또는 [표시되는 뷰어 사전 설정의 수를 늘립니다](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
-## 복제용 자산 필터링 {#filtering-assets-for-replication}
+## 복제에 대한 자산 필터링 {#filtering-assets-for-replication}
 
 Dynamic Media이 아닌 배포에서는 AEM 작성 환경에서 _모든_ 자산(이미지와 비디오 모두)을 AEM 게시 노드로 복제합니다. AEM 게시 서버에서도 자산을 전달하므로 이 워크플로우가 필요합니다.
 
@@ -692,7 +692,7 @@ Dynamic Media이 아닌 배포에서는 AEM 작성 환경에서 _모든_ 자산(
 >[!NOTE]
 필터는 MIME 유형에 적용되며 경로별로 지정할 수 없습니다.
 
-### 비디오 전용 배포에 대한 자산 필터 설정 {#setting-up-asset-filters-for-video-only-deployments}
+### 비디오 전용 배포를 위한 자산 필터 설정 {#setting-up-asset-filters-for-video-only-deployments}
 
 비디오 전용에 Dynamic Media을 사용하는 경우 다음 단계에 따라 복제에 대한 자산 필터를 설정합니다.
 
@@ -967,7 +967,7 @@ CMYK, RGB 또는 회색 출력을 사용하여 Dynamic Media 색상 관리를 �
 >[!NOTE]
 표준 Adobe 색상 프로필 세트는 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445)의 [기능 팩 12445이 설치된 경우에만 사용할 수 있습니다. 모든 기능 팩과 서비스 팩은 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 사용할 수 있습니다. 기능 팩 12445에서는 Adobe 색상 프로필을 제공합니다.
 
-### 기능 팩 12445 {#installing-feature-pack} 설치
+### 기능 팩 12445 설치 {#installing-feature-pack}
 
 Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 12445을 설치해야 합니다.
 
