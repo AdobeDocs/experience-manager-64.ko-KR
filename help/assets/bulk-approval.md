@@ -3,9 +3,9 @@ title: 폴더 자산 및 컬렉션 검토
 description: 폴더 또는 컬렉션 내의 자산에 대한 검토 워크플로우를 설정하고 검토자 또는 크리에이티브 파트너와 공유하여 피드백을 받습니다.
 contentOwner: AG
 feature: 공동 작업, 컬렉션
-role: Business Practitioner
+role: User
 exl-id: 4c62e0cd-eaa5-456e-85f3-06f7a9f160f5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 4%
@@ -24,7 +24,7 @@ Adobe Experience Manager(AEM) 자산을 사용하면 폴더 또는 컬렉션 내
 
 검토자가 검토를 완료한 후(자산을 승인하거나 거부함) 검토 완료 알림을 받게 됩니다.
 
-## {#creating-a-review-task-for-folders} 폴더에 대한 검토 작업 만들기
+## 폴더에 대한 검토 작업 만들기 {#creating-a-review-task-for-folders}
 
 1. Assets 사용자 인터페이스에서 검토 작업을 만들 폴더를 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 검토 작업 만들기]** 아이콘을 탭/클릭하여 **[!UICONTROL 작업 검토]** 페이지를 엽니다. 도구 모음에 아이콘이 표시되지 않으면 **[!UICONTROL 자세히]**&#x200B;를 탭/클릭한 다음 아이콘을 선택합니다.
@@ -72,7 +72,7 @@ Adobe Experience Manager(AEM) 자산을 사용하면 폴더 또는 컬렉션 내
 
    ![review_status_listview](assets/review_status_listview.png)
 
-## {#creating-a-review-task-for-collections} 컬렉션에 대한 검토 작업 만들기
+## 컬렉션에 대한 검토 작업 만들기 {#creating-a-review-task-for-collections}
 
 1. 컬렉션 페이지에서 검토 작업을 생성할 컬렉션을 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 검토 작업 만들기]** 아이콘을 탭/클릭하여 **[!UICONTROL 작업 검토]** 페이지를 엽니다. 도구 모음에 아이콘이 표시되지 않으면 **[!UICONTROL 자세히]**&#x200B;를 탭/클릭한 다음 아이콘을 선택합니다.
