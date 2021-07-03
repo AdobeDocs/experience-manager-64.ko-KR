@@ -7,8 +7,8 @@ topic-tags: Dynamic-Media
 content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: 비디오
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '10393'
 ht-degree: 1%
@@ -29,6 +29,7 @@ ht-degree: 1%
 >
 >* Dynamic Media 구성 - 하이브리드 모드에서 Dynamic Media Cloud Services 구성 을 참조하십시오.](/help/assets/config-dynamic.md)[
 >* [Dynamic Media 구성 - Scene7 모드](config-dms7.md) 및 [Dynamic Media 문제 해결 - Scene7 모드](troubleshoot-dms7.md)를 참조하십시오.
+
 >
 
 
@@ -59,36 +60,33 @@ ht-degree: 1%
 
       * [디지털 자산 구성](organize-assets.md)
 
-        [처리 프로필 사용을 위한 디지털 자산을 구성하는 우수 사례에 대해 자세히 알아보십시오.](organize-assets.md#organize-using-folders)
+         [처리 프로필 사용을 위한 디지털 자산을 구성하는 우수 사례에 대해 자세히 알아보십시오.](organize-assets.md#organize-using-folders)
 
       * [비디오 ](search-video-assets.md) 자산 검색  [또는 자산 검색](managing-assets-touch-ui.md#searching-assets)
-      
    * 비디오 자산 미리 보기 및 게시
 
       * 관련 축소판과 함께 비디오의 소스 비디오 및 인코딩된 표현물을 봅니다.
 
-        [비디오 ](managing-video-assets.md#uploading-and-previewing-video-assets) 미리 보기 또는  [자산 미리 보기](previewing-assets.md)
+         [비디오 ](managing-video-assets.md#uploading-and-previewing-video-assets) 미리 보기 또는  [자산 미리 보기](previewing-assets.md)
 
-        [비디오 표현물 보기](video-renditions.md)
+         [비디오 표현물 보기](video-renditions.md)
 
-        [비디오 표현물 관리](managing-assets-touch-ui.md#managing-renditions)
+[비디오 표현물 관리](managing-assets-touch-ui.md#managing-renditions)
 
       * [뷰어 사전 설정 관리](managing-viewer-presets.md)
       * [자산 게시](publishing-dynamicmedia-assets.md)
-      
    * 비디오 메타데이터 작업
 
       * 프레임 속도, 오디오 및 비디오 비트율, 코덱과 같은 인코딩된 비디오 표현물의 속성을 봅니다.
 
-        [비디오 표현물 속성 보기](video-renditions.md)
+         [비디오 표현물 속성 보기](video-renditions.md)
 
       * 제목, 설명 및 태그, 사용자 지정 메타데이터 필드와 같은 비디오의 속성을 편집합니다.
 
-        [비디오 속성 편집](managing-assets-touch-ui.md#editing-properties)
+[비디오 속성 편집](managing-assets-touch-ui.md#editing-properties)
 
       * [디지털 자산에 대한 메타데이터 관리](metadata.md)
       * [메타데이터 스키마](metadata-schemas.md)
-      
    * 비디오 검토, 승인 및 주석 달기
 
       * [비디오에 ](managing-video-assets.md#annotating-video-assets) 주석 달기 또는  [자산에 주석 달기](managing-assets-touch-ui.md#annotating)
@@ -118,7 +116,7 @@ ht-degree: 1%
 
 
 
-## Dynamic Media에서 비디오를 사용한 작업 {#working-with-video-in-dynamic-media}
+## Dynamic Media에서 비디오 작업 {#working-with-video-in-dynamic-media}
 
 Dynamic Media의 비디오는 데스크탑, iOS, Android, Blackberry 및 Windows 모바일 장치를 포함하여 여러 화면에서 스트리밍을 위한 고품질 적응형 비디오를 쉽게 게시할 수 있도록 하는 종단 간 솔루션입니다. 응용 비디오 세트는 다른 비트율 및 형식(예: 400kbps, 800kbps 및 1000kbps)으로 인코딩된 동일한 비디오 버전을 그룹화합니다. 데스크탑 컴퓨터 또는 모바일 장치가 사용 가능한 대역폭을 감지합니다.
 
@@ -177,7 +175,7 @@ Dynamic Media HTML5 비디오 뷰어 사전 설정은 강력한 비디오 플레
 
 Adobe 뷰어 참조 가이드의 [HTML5 뷰어 정보](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html)도 참조하십시오.
 
-### HTML5 비디오 뷰어를 사용하여 데스크탑 컴퓨터 및 모바일 장치에서 비디오를 재생합니다. {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
+### HTML5 비디오 뷰어를 사용하여 데스크탑 컴퓨터 및 모바일 장치에서 비디오 재생 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 데스크탑 및 모바일 적응형 비디오 스트리밍의 경우 비트율 전환에 사용되는 비디오는 응용 비디오 세트의 모든 MP4 비디오를 기반으로 합니다.
 
@@ -385,7 +383,7 @@ VBR과 CBR을 선택하는 방법은 거의 항상 미디어 파일에 VBR을 �
 | 720p | 720년 | 대형 화면 |
 | 1080p | 1080년 | HD 대형 화면 |
 
-### Fps(초당 프레임) {#fps-frames-per-second}
+### Fps(초당 프레임 수) {#fps-frames-per-second}
 
 미국 및 일본에서는 대부분의 비디오가 초당 29.97프레임(fps)으로 촬영됩니다.유럽에서는 대부분의 비디오가 25fps로 촬영됩니다. 필름은 24fps로 촬영됩니다.
 
@@ -413,7 +411,7 @@ VBR과 CBR을 선택하는 방법은 거의 항상 미디어 파일에 VBR을 �
    <td><p>소스</p> </td> 
    <td><p>1920x1080</p> </td> 
    <td><p>1</p> </td> 
-   <td><p>3</p> </td> 
+   <td><p>1</p> </td> 
   </tr> 
   <tr> 
    <td><p>인코딩됨</p> </td> 
@@ -425,7 +423,7 @@ VBR과 CBR을 선택하는 방법은 거의 항상 미디어 파일에 VBR을 �
    <td><p>인코딩됨</p> </td> 
    <td><p>640 x 360</p> </td> 
    <td><p>3</p> </td> 
-   <td><p>3</p> </td> 
+   <td><p>1</p> </td> 
   </tr> 
   <tr> 
    <td><p>인코딩됨</p> </td> 
@@ -549,7 +547,7 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
 
    이제 게시할 태그를 추가합니다.
 
-###  게시용 태그 추가{#adding-tags-for-publishing}
+### 게시할 태그 추가 {#adding-tags-for-publishing}
 
 비디오를 YouTube에 게시하기 위해 AEM은 태그를 하나 이상의 YouTube 채널에 연결합니다. 게시할 태그를 추가하려면 [태그 관리](/help/sites-administering/tags.md)를 참조하십시오.
 
@@ -610,7 +608,7 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
 
    이제 비디오를 YouTube 채널에 게시합니다.
 
-### (선택 사항) 업로드한 비디오에 대한 기본 YouTube 속성 설정을 자동화합니다 {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
+### (선택 사항) 업로드된 비디오에 대한 기본 YouTube 속성 설정을 자동화합니다 {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
 
 비디오 업로드 시 YouTube 속성 설정을 자동화할 수 있습니다. AEM에서 메타데이터 처리 프로필을 만들어 이 작업을 수행합니다.
 
@@ -705,7 +703,7 @@ YouTube에서 컨텐츠를 게시하기 위해 AEM은 **[!UICONTROL YouTube에 �
 
    YouTube 채널에서 게시된 비디오를 선택적으로 확인할 수 있습니다.
 
-### (선택 사항) YouTube에서 게시된 비디오를 확인하는 중 {#optional-verifying-the-published-video-on-youtube}
+### (선택 사항) YouTube에서 게시된 비디오 확인 {#optional-verifying-the-published-video-on-youtube}
 
 YouTube 게시(또는 게시 취소)의 진행 상황을 모니터링할 수 있습니다.
 
@@ -715,7 +713,7 @@ YouTube 게시(또는 게시 취소)의 진행 상황을 모니터링할 수 있
 
 **[!UICONTROL 업로드(처리 중)]**&#x200B;라는 상태 메시지가 계속 표시되면 8시간 후에 사이트에서 비디오를 제거하고 다시 업로드하십시오.
 
-### YouTube URL을 웹 응용 프로그램에 연결 {#linking-youtube-urls-to-your-web-application}
+### YouTube URL을 웹 애플리케이션에 연결 {#linking-youtube-urls-to-your-web-application}
 
 비디오를 게시한 후 Dynamic Media에서 생성한 YouTube URL 문자열을 가져올 수 있습니다. YouTube URL을 복사하면 클립보드에 로드되므로 웹 사이트 또는 애플리케이션의 페이지에 필요에 따라 붙여넣을 수 있습니다.
 
@@ -731,7 +729,7 @@ YouTube URL은 비디오 자산을 YouTube에 게시하기 전까지 복사할 �
 1. **[!UICONTROL 고급]** 탭을 탭합니다.
 1. **[!UICONTROL YouTube Publishing]** 제목 아래에 있는 **[!UICONTROL YouTube URL]** 목록에서 URL 텍스트를 선택하고 웹 브라우저에 복사하여 자산을 미리 보거나 웹 컨텐츠 페이지에 추가합니다.
 
-### 비디오를 게시 취소하여 YouTube에서 제거합니다. {#unpublishing-videos-to-remove-them-from-youtube}
+### YouTube에서 제거할 비디오 게시 취소 {#unpublishing-videos-to-remove-them-from-youtube}
 
 AEM에서 비디오 자산 게시를 취소하면 비디오가 YouTube에서 제거됩니다.
 
@@ -749,11 +747,11 @@ YouTube에서 컨텐츠를 제거하려면 AEM에서는 진행 상황을 모니�
 1. 자산 선택 모드에서 하나 이상의 게시된 비디오 자산을 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 게시 취소 > 게시 취소]**&#x200B;를 누릅니다.
 
-## 비디오 인코딩 및 YouTube 게시 진행률 모니터링 {#monitoring-video-encoding-and-youtube-publishing-progress}
+## 비디오 인코딩 및 YouTube 게시 진행 모니터링 {#monitoring-video-encoding-and-youtube-publishing-progress}
 
 새 비디오를 비디오 인코딩이 적용된 폴더에 업로드하거나 비디오를 Youtube에 게시하면 다양한 방법으로 비디오 인코딩/youtube 게시가 진행(또는 실패)되고 있음을 모니터링할 수 있습니다. 실제 YouTube 게시 진행 상태는 로그를 통해서만 사용할 수 있지만 실패 또는 성공 여부는 다음 절차에 설명된 추가 방법으로 나열되어 있습니다. 또한 YouTube 게시 워크플로우 또는 비디오 인코딩이 완료되거나 중단되면 이메일 알림을 받을 수 있습니다.
 
-### 진행률 모니터링 {#monitoring-progress}
+### 진행 상태 모니터링 {#monitoring-progress}
 
 진행 상황을 모니터링하려면(실패한 인코딩/YouTube 게시 포함):
 
@@ -784,6 +782,7 @@ YouTube에서 컨텐츠를 제거하려면 AEM에서는 진행 상황을 모니�
    >* Apache Sling 작업 큐 구성
    >* Adobe Granite Workflow 외부 프로세스 작업 처리기
    >* Granite 워크플로우 시간 초과 큐
+
    > 
    >이러한 구성에서 **[!UICONTROL 다시 시도]**, **[!UICONTROL 다시 시도 지연]** 및 **[!UICONTROL 시간 초과]** 속성을 조정할 수 있습니다.
 
@@ -816,6 +815,7 @@ YouTube에서 컨텐츠를 제거하려면 AEM에서는 진행 상황을 모니�
    >* Apache Sling 작업 큐 구성
    >* Adobe Granite Workflow 외부 프로세스 작업 처리기
    >* Granite 워크플로우 시간 초과 큐
+
    >
    >이러한 구성에서 **[!UICONTROL 다시 시도]**, **[!UICONTROL 다시 시도 지연]** 및 **[!UICONTROL 시간 초과]** 속성을 조정할 수 있습니다.
 
@@ -898,7 +898,7 @@ YouTube에서 컨텐츠를 제거하려면 AEM에서는 진행 상황을 모니�
 
 1. 게시된 상위 비디오를 나열하는 테이블에서 비디오 이름을 탭하여 비디오를 재생하고 비디오의 대상 유지(드롭다운) 보고서를 볼 수 있습니다.
 
-### Dynamic Media HTML5 Viewer SDK 를 사용하여 만든 비디오 뷰어를 기반으로 비디오 보고서 보기 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Dynamic Media HTML5 Viewer SDK를 사용하여 만든 비디오 뷰어를 기반으로 비디오 보고서 보기 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 Dynamic Media에서 제공하는 기본 비디오 뷰어를 사용하거나 기본 비디오 뷰어를 기반으로 사용자 지정 뷰어 사전 설정을 만든 경우 비디오 보고서를 보는 데 추가 단계가 필요하지 않습니다. 그러나 HTML5 Viewer SDK API를 기반으로 자체 비디오 뷰어를 만든 경우 다음 단계를 사용하여 비디오 뷰어가 추적 이벤트를 Dynamic Media 비디오 보고서에 전송하는지 확인합니다.
 
@@ -957,7 +957,6 @@ HTML5 Viewer SDK API를 사용하여 만든 비디오 뷰어를 기반으로 비
       trackingManager.setCallback(appMeasurementBridge.track, 
        appMeasurementBridge);
       ```
-
    appMeasurementBridge 개체에는 내장된 추적 함수가 있습니다. 그러나 여러 추적 시스템 또는 기타 기능을 지원하도록 자체 코드를 제공할 수 있습니다.
 
 <!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
@@ -1035,7 +1034,7 @@ URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 *Dyna
 
 다음 샘플을 사용하여 장 탐색 기능을 사용하여 WebVTT 파일을 만들 수 있습니다.
 
-### 비디오 장 탐색이 있는 WebVTT 파일 {#webvtt-file-with-video-chapter-navigation}
+### 비디오 장 탐색 기능이 있는 WebVTT 파일 {#webvtt-file-with-video-chapter-navigation}
 
 ```xml
 WEBVTT 
