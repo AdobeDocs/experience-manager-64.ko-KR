@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
 feature: 워크플로우,자산 관리,표현물
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 78d76b4f-a46c-4ffc-b772-ed925eb8e34c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1382'
 ht-degree: 0%
@@ -37,7 +37,7 @@ AEM Assets에서 프로필 사용과 관련된 중요한 개념은 프로필에 
 >
 >동일한 프로필이 할당된 두 폴더 간에 자산을 이동하는 경우에도 마찬가지입니다.
 
-## {#reprocessing-assets} 폴더에서 자산 재처리
+## 폴더에서 자산 재처리 {#reprocessing-assets}
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ AEM Assets에서 프로필 사용과 관련된 중요한 개념은 프로필에 
 
    워크플로우를 모니터링하거나 진행 상태를 확인하려면 AEM 주 콘솔 페이지에서 **[!UICONTROL 도구 > 워크플로우]**&#x200B;를 클릭합니다. 워크플로우 인스턴스 페이지에서 워크플로우를 선택합니다. 메뉴 모음에서 **[!UICONTROL 기록 열기]**&#x200B;를 클릭합니다. 동일한 [워크플로우 인스턴스] 페이지에서 선택한 워크플로우를 종료, 일시 중단 또는 이름을 변경할 수도 있습니다.
 
-### 재처리 워크플로우의 일괄 처리 크기 조정 {#adjusting-load}
+### 재처리 워크플로우의 배치 크기 조정 {#adjusting-load}
 
 (선택 사항) 재처리 워크플로우의 기본 배치 크기는 작업당 50개의 자산입니다. 이 최적 배치 크기는 재처리가 실행되는 평균 자산 크기 및 MIME 유형의 자산에 의해 제어됩니다. 값이 높을수록 하나의 재처리 작업에 많은 파일이 있게 됩니다. 이에 따라, 처리 배너는 AEM 자산에 더 오랫동안 머무른다. 그러나 평균 파일 크기가 1MB 이하인 경우 값을 수백 개로 늘릴 것을 권장하지만 1000을 넘지 않습니다. 평균 파일 크기가 수백 MB인 경우 배치 크기를 최대 10개까지 줄이는 것이 좋습니다.
 
