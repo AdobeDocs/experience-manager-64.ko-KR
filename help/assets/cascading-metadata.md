@@ -3,9 +3,9 @@ title: 계단식 메타데이터
 description: 이 문서에서는 자산에 대한 계단식 메타데이터를 정의하는 방법을 설명합니다.
 contentOwner: AG
 feature: 메타데이터
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: ea6187e8-075d-4666-afc5-01c97deccc11
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 0%
@@ -33,7 +33,7 @@ ht-degree: 0%
 * 다른 필드에 지정된 값을 기준으로 특정 필드에 대해 표시되는 선택 사항을 변경합니다.
 * 다른 필드에 지정된 값을 기반으로 특정 필드에 기본 메타데이터 값을 설정합니다.
 
-## AEM {#configure-cascading-metadata-in-aem}에서 계단식 메타데이터 구성
+## AEM에서 계단식 메타데이터 구성 {#configure-cascading-metadata-in-aem}
 
 선택한 자산 유형에 따라 계단식 메타데이터를 표시하려는 시나리오를 생각해 보십시오. 몇 가지 예
 
