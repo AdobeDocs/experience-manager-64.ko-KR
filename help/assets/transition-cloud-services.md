@@ -3,22 +3,22 @@ title: 폴더에 번역 클라우드 서비스 적용
 description: 폴더에 번역 클라우드 서비스 적용
 contentOwner: AG
 feature: 번역
-role: Administrator
+role: Admin
 exl-id: 87883a3f-db95-41f4-b0aa-cdaeb7e6f555
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 1%
 
 ---
 
-# 폴더 {#applying-translation-cloud-services-to-folders}에 번역 클라우드 서비스 적용
+# 폴더에 번역 클라우드 서비스 적용 {#applying-translation-cloud-services-to-folders}
 
 Adobe Experience Manager(AEM)을 사용하면 원하는 번역 공급자로부터 클라우드 기반 번역 서비스를 활용하여 요구 사항에 따라 자산을 번역할 수 있습니다.
 
 번역 워크플로우 중에 활용할 수 있도록 번역 클라우드 서비스를 자산 폴더에 직접 적용할 수 있습니다.
 
-## 번역 서비스 {#applying-the-translation-services} 적용
+## 번역 서비스 적용 {#applying-the-translation-services}
 
 번역 클라우드 서비스를 자산 폴더에 직접 적용하면 번역 워크플로우를 만들거나 업데이트할 때 번역 서비스를 구성할 필요가 없습니다.
 
@@ -38,7 +38,7 @@ Adobe Experience Manager(AEM)을 사용하면 원하는 번역 공급자로부�
 
 1. 도구 모음에서 **[!UICONTROL 저장]**&#x200B;을 클릭/탭한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭하여 대화 상자를 닫습니다.번역 서비스가 폴더에 적용됩니다.
 
-## 사용자 지정 번역 커넥터 {#applying-custom-translation-connector} 적용
+## 사용자 지정 번역 커넥터 적용  {#applying-custom-translation-connector}
 
 번역 워크플로우에서 사용할 번역 서비스의 사용자 지정 커넥터를 적용하려면 해당 커넥터를 사용하십시오. 사용자 지정 커넥터를 적용하려면 먼저 패키지 관리자에서 커넥터를 설치하십시오. 그런 다음 Cloud Services 콘솔에서 커넥터를 구성합니다. 커넥터를 구성한 후에는 [번역 서비스 적용](transition-cloud-services.md#applying-the-translation-services)에 설명된 Cloud Services 탭의 커넥터 목록에서 커넥터를 사용할 수 있습니다. 사용자 지정 커넥터를 적용하고 번역 워크플로우를 실행한 후 번역 프로젝트의 **[!UICONTROL 번역 요약]** 타일에는 헤드 **[!UICONTROL 공급자]** 및 **[!UICONTROL 메서드]**&#x200B;에 커넥터 세부 정보가 표시됩니다.
 
