@@ -3,16 +3,16 @@ title: Apache Tika를 사용하여 MIME 유형의 디지털 자산을 탐지합�
 description: Apache Tika를 활성화하여 AEM Assets이 파일 확장자 대신 업로드 작업 중에 컨텐츠 스트림에서 MIME 유형의 자산을 검색할 수 있도록 지원합니다.
 contentOwner: AG
 feature: 메타데이터,개발자 도구,자산 관리
-role: Administrator,Architect
+role: Admin,Architect
 exl-id: 6c9e53e9-5e54-4816-9431-41e796340d1e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 0%
 
 ---
 
-# Apache Tika를 사용하여 MIME 유형의 디지털 자산 {#detecting-mime-type-of-assets-using-apache-tika}을 검색합니다.
+# Apache Tika를 사용하여 MIME 유형의 디지털 자산을 탐지합니다 {#detecting-mime-type-of-assets-using-apache-tika}
 
 일반적으로 Adobe Experience Manager(AEM) Assets는 파일 확장자에서 업로드하는 MIME 유형의 자산을 감지합니다. Apache Tika를 사용하여 자산을 업로드하는 경우, AEM Assets은 파일 확장자 대신 업로드 작업 중에 컨텐츠 스트림에서 MIME 유형을 감지합니다.
 
