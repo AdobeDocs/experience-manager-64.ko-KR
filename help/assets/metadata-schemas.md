@@ -3,9 +3,9 @@ title: 메타데이터 스키마
 description: '메타데이터 스키마는 속성에 대해 표시되는 속성 페이지의 레이아웃과 메타데이터 속성을 정의합니다. 사용자 지정 메타데이터 스키마를 만들고, 메타데이터 스키마를 편집하고, 자산에 메타데이터 스키마를 적용하는 방법을 알아보십시오.  '
 contentOwner: AG
 feature: 메타데이터
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 82f42bb3-2c01-407c-a41b-9abe7be4660e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2536'
 ht-degree: 4%
@@ -54,7 +54,7 @@ ht-degree: 4%
 >
 >스키마 양식의 하위 양식을 보려면 스키마 양식 이름을 클릭/탭합니다.
 
-## {#adding-a-metadata-schema-form} 메타데이터 스키마 추가
+## 메타데이터 스키마 양식 추가 {#adding-a-metadata-schema-form}
 
 1. 사용자 지정 템플릿을 목록에 추가하려면 도구 모음에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
@@ -87,7 +87,7 @@ ht-degree: 4%
 
 1. 구성 요소를 구성하려면 구성 요소를 선택하고 **[!UICONTROL 설정]** 탭에서 해당 속성을 수정합니다.
 
-### 빌드 양식 탭 {#components-within-the-build-form-tab} 내의 구성 요소
+### 양식 작성 탭 내의 구성 요소 {#components-within-the-build-form-tab}
 
 **[!UICONTROL 빌드 양식]** 탭에는 스키마 양식에 사용하는 양식 항목이 나열됩니다. **[!UICONTROL 설정]** 탭은 **[!UICONTROL 양식 작성]** 탭에서 선택하는 각 항목의 속성을 제공합니다. 다음 표에는 **[!UICONTROL 빌드 양식]** 탭에서 사용할 수 있는 양식 항목이 나열되어 있습니다.
 
@@ -108,7 +108,7 @@ ht-degree: 4%
 | [!UICONTROL 자산 등급] | 를 추가하여 자산 등급을 매기는 옵션을 표시합니다. |
 | [!UICONTROL 상황에 맞는 메타데이터] | 를 추가하여 자산의 속성 페이지에서 다른 메타데이터 탭 표시를 제어합니다. |
 
-### 메타데이터 구성 요소 {#editing-the-metadata-component} 편집
+### 메타데이터 구성 요소 편집 {#editing-the-metadata-component}
 
 양식에서 메타데이터 구성 요소의 속성을 편집하려면 구성 요소를 클릭하고 **[!UICONTROL 설정]** 탭에서 다음 속성의 하위 집합을 모두 또는 편집하십시오.
 
@@ -158,11 +158,11 @@ ht-degree: 4%
 
 ![chlimage_1-180](assets/chlimage_1-180.png)
 
-### JSON 파일 {#specifying-properties-in-json-file}에 속성을 지정합니다
+### JSON 파일에 속성 지정 {#specifying-properties-in-json-file}
 
 **[!UICONTROL 설정]** 탭에서 옵션에 대한 속성을 지정하는 대신 해당 키-값 쌍을 지정하여 JSON 파일에서 옵션을 정의할 수 있습니다. **[!UICONTROL JSON 경로]** 필드에 JSON 파일의 경로를 지정합니다.
 
-### 스키마 양식 {#adding-deleting-a-tab-in-the-schema-form}에서 탭을 추가하거나 삭제합니다
+### 스키마 양식에서 탭 추가 또는 삭제 {#adding-deleting-a-tab-in-the-schema-form}
 
 스키마 편집기를 사용하면 탭을 추가하거나 삭제할 수 있습니다. 기본 스키마 양식에는 기본적으로 **[!UICONTROL 기본]**, **[!UICONTROL 고급]**, **[!UICONTROL IPTC]** 및 **[!UICONTROL IPTC 확장]** 탭이 포함됩니다.
 
@@ -190,11 +190,11 @@ AEM을 사용하면 사용자 지정 스키마 양식만 삭제할 수 있습니
 
 AEM Assets은 즉시 사용 가능한 다양한 MIME 유형에 대한 기본 양식을 제공합니다. 그러나 다양한 MIME 유형의 자산에 사용자 지정 양식을 추가할 수 있습니다.
 
-### MIME 유형 {#adding-new-forms-for-mime-types}에 대한 새 양식 추가
+### MIME 유형에 새 양식 추가 {#adding-new-forms-for-mime-types}
 
 적절한 양식 유형으로 새 양식을 만듭니다. 예를 들어 `image/png` 하위 유형에 새 템플릿을 추가하려면 `image` 양식 아래에 양식을 만듭니다. 스키마 양식의 제목은 하위 유형 이름입니다. 이 경우 제목은 `png`입니다.
 
-### 다양한 MIME 유형 {#using-an-existing-schema-template-for-various-mime-types}에 기존 스키마 템플릿 사용
+### 다양한 MIME 유형에 기존 스키마 템플릿 사용 {#using-an-existing-schema-template-for-various-mime-types}
 
 다른 MIME 유형에 기존 템플릿을 사용할 수 있습니다. 예를 들어 MIME 유형 `image/png`의 자산에 `image/jpeg` 양식을 사용하십시오.
 
@@ -221,11 +221,11 @@ AEM Assets은 다음 MIME 유형 및 스키마 양식을 매핑합니다.
 | 비디오/wmv | video/x-ms-wmv |
 | 비디오/flv | video/x-flv |
 
-## 메타데이터 스키마 {#granting-access-to-metadata-schemas}에 대한 액세스 권한 부여
+## 메타데이터 스키마에 대한 액세스 권한 부여 {#granting-access-to-metadata-schemas}
 
 메타데이터 스키마 기능은 관리자만 사용할 수 있습니다. 그러나 관리자는 `/conf` 폴더에 **[!UICONTROL 만들기]**, **[!UICONTROL 수정]** 및 **[!UICONTROL 삭제]** 권한을 제공하여 관리자가 아닌 사용자에게 액세스 권한을 제공할 수 있습니다.
 
-## 폴더별 메타데이터 {#applying-folder-specific-metadata} 적용
+## 폴더별 메타데이터 적용 {#applying-folder-specific-metadata}
 
 AEM Assets을 사용하면 메타데이터 스키마의 변형을 정의하고 특정 폴더에 적용할 수 있습니다.
 
@@ -263,7 +263,7 @@ AEM Assets을 사용하면 메타데이터 스키마의 변형을 정의하고 �
 1. **[!UICONTROL 확인]**&#x200B;을 클릭하여 성공 메시지를 닫습니다.
 1. 수정된 메타데이터 스키마를 적용한 폴더로 이동합니다.
 
-## 필수 메타데이터 {#defining-mandatory-metadata} 정의
+## 필수 메타데이터 정의 {#defining-mandatory-metadata}
 
 폴더 수준에서 필수 필드를 정의할 수 있습니다. 이 필드는 폴더에 업로드된 자산에 적용됩니다. 이전에 정의한 필수 필드에 대해 누락된 메타데이터가 있는 자산을 업로드하면 카드 보기의 자산에 누락된 메타데이터에 대한 시각적 표시가 나타납니다.
 
