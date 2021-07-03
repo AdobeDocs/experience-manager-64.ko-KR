@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 exl-id: dd43de7b-8556-4e3f-9d90-14f0f5bd13e7
 feature: 구성
-role: Administrator,Business Practitioner,Developer
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User,Developer
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 13%
 
 ---
 
-# Dynamic Media {#setting-up-dynamic-media} 설정
+# Dynamic Media 설정 {#setting-up-dynamic-media}
 
 [Dynamic ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Media는 다양한 시각적 머천다이징 및 마케팅 자산을 웹, 모바일 및 소셜 사이트에 맞게 자동으로 크기를 조정하여 주문형으로 전달하여 자산을 관리하는 데 도움이 됩니다. 마스터 자산 세트를 사용하면 Dynamic Media는 글로벌, 확장 가능 및 성능 최적화 네트워크를 통해 실시간으로 다양한 유형의 풍부한 컨텐츠를 생성하고 전달합니다.
 
