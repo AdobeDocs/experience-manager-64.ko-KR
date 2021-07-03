@@ -3,16 +3,16 @@ title: 편집할 디지털 자산 체크인 및 체크아웃
 description: 편집할 자산을 체크 아웃하고 변경 사항이 완료된 후 다시 체크 인하는 방법을 알아봅니다.
 contentOwner: AG
 feature: 자산 관리
-role: Business Practitioner
+role: User
 exl-id: 0c79ed42-0acd-426e-8e14-412bb4117585
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 2%
 
 ---
 
-# 자산 {#check-in-and-check-out-files-in-assets}의 체크인 및 체크아웃 파일
+# Assets의 체크인 및 체크아웃 파일 {#check-in-and-check-out-files-in-assets}
 
 Adobe Experience Manager (AEM) Assets를 사용하면 편집할 자산을 체크 아웃하고 변경을 완료한 후 다시 체크 인할 수 있습니다. 자산을 체크 아웃한 후에는 자산을 편집, 주석 달기, 게시, 이동 또는 삭제할 수만 있습니다. 자산을 체크 아웃하면 자산이 잠깁니다. 다른 사용자는 자산을 다시 AEM Assets에 체크 인할 때까지 자산에서 이러한 작업을 수행할 수 없습니다. 그러나 잠긴 자산에 대한 메타데이터를 변경할 수 있습니다.
 
@@ -20,7 +20,7 @@ Adobe Experience Manager (AEM) Assets를 사용하면 편집할 자산을 체크
 
 이 기능은 여러 사용자가 여러 팀 간의 워크플로우 편집에서 공동 작업하는 작성자가 변경한 내용을 다른 사용자가 덮어쓰지 않도록 하는 데 도움이 됩니다.
 
-## 자산 체크 아웃 {#checking-out-assets}
+## 자산 체크아웃 {#checking-out-assets}
 
 1. Assets UI에서 체크 아웃할 자산을 선택합니다. 여러 자산을 선택하여 체크아웃할 수도 있습니다.
 
