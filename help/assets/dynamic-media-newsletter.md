@@ -7,8 +7,8 @@ solution: Dynamic Media Classic
 title: Dynamic Media 뉴스레터
 exl-id: aa02c811-0296-4a02-b745-e70aeb9d1e97
 feature: 공동 작업,Dynamic Media Classic
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1210'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # ![Dynamic Media 뉴스레터 로고](/help/assets/assets/dynamic-media-newsletter-logo.png)
 
-월별 Dynamic Media Newsletter by Experience League은 Dynamic Media 및 Dynamic Media Classic을 빠르게 활용하여 즉시 가치를 실현할 수 있도록 고안되었습니다.
+월별 Dynamic Media 뉴스레터는 Dynamic Media 및 Dynamic Media Classic을 빠르게 활용하여 즉시 가치를 실현할 수 있도록 고안되었습니다.
 
 이 원스톱 스토어 뉴스레터에서 방법 비디오, 솔루션 개요 및 이미지 사전 설정, 뷰어 사전 설정, 비디오 프로필 등과 같은 솔루션의 일부 주요 기능과 성능에 대한 소개와 같은 중요한 기술 구축 리소스를 살펴봅니다.
 
@@ -49,7 +49,7 @@ ht-degree: 0%
    * 이러한 어려운 시기에 리치 미디어 투자가 도움이 되는 세 가지 방법을 살펴봅니다.
    * Smart Imaging을 사용하여 페이지 로드를 줄이는 방법을 웨비나에 등록하십시오.
    * Dynamic Media Classic용 온디맨드 Skill Builder 웨비나를 시청하십시오.
-   * Online Adobe Summit 2020에서 Dynamic Media 세션을 봅니다.
+   * 온라인 Adobe Summit 2020에서 Dynamic Media 세션을 봅니다.
    * 무료 Dynamic Media Classic 감사에 대해 자세히 알아보십시오.
    * 고객 성공 서비스의 수석 프로그램 관리자 John Monroe를 만나보십시오.
 
@@ -62,7 +62,7 @@ ht-degree: 0%
    이 문제:
 
    * 새로운 Skill Builder 웨비나에 참석하여 Dynamic Media Classic 전문가로 전환하십시오.
-   * Adobe Summit 2020에서 Dynamic Media을 찾을 수 있는 위치를 확인하십시오.
+   * 2020년 Adobe Summit에서 Dynamic Media을 찾을 수 있는 위치를 확인하십시오.
    * Dynamic Media의 자르기 마법을 사용하는 방법을 알아봅니다.
    * 무료 감사를 통해 Dynamic Media Classic을 최대한 활용할 수 있습니다.
    * Dynamic Media Classic의 새 사용자 인터페이스에 대해 알아봅니다.
@@ -116,7 +116,7 @@ ht-degree: 0%
 
    * Dynamic Media으로 업그레이드할 때만 사용할 수 있는 중요한 기능을 살펴보십시오.
    * Adobe Experience Manager Assets 및 Dynamic Media을 빠르게 이용할 수 있도록 설계된 웨비나 시리즈에 대해 알아보십시오.
-   * Experience League에서 Dynamic Media의 가치를 창출하는 여정을 시작합니다.
+   * Experience League 시 Dynamic Media의 가치 창출을 여정으로 시작합니다.
    * 방문자가 리치 미디어와 상호 작용하는 방법을 분석할 수 있는 이번 9월 강력한 통합을 신속하게 엿볼 수 있습니다.
    * Dynamic Media 기술 지원 분야의 PieterJan Pieper를 만나보십시오.
 
