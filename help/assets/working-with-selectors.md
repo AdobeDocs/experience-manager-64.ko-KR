@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 exl-id: 6bd68afe-bd54-4482-bd6e-cb318868c8d0
 feature: 선택기
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 3%
@@ -33,7 +33,7 @@ ht-degree: 3%
 
 핫스팟이나 이미지 맵이 있는 위치를 수동으로 입력하지 않고 선택하면 선택기를 사용합니다. 사이트 선택기는 AEM Sites 고객인 경우에만 작동합니다. 제품 선택기도 AEM Commerce가 필요합니다.
 
-## 제품 {#selecting-products} 선택
+## 제품 선택 {#selecting-products}
 
 제품 선택기를 사용하여 핫스팟이나 이미지 맵이 제품 카탈로그의 특정 제품에 Quickview를 제공하려는 경우 제품을 선택합니다.
 
@@ -71,7 +71,7 @@ ht-degree: 3%
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## 사이트 {#selecting-sites} 선택
+## 사이트 선택 {#selecting-sites}
 
 AEM Sites 내에서 관리되는 웹 페이지에 핫스팟이나 이미지 맵을 연결하려는 경우 사이트 선택기를 사용하여 웹 페이지를 선택합니다.
 
