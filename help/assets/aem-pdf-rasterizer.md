@@ -3,9 +3,9 @@ title: PDF 래스터라이저 기능을 사용하여 표현물을 생성합니�
 description: Adobe PDF Rasterizer 라이브러리를 사용하여 고품질 축소판 및 렌디션을 생성합니다.
 contentOwner: AG
 feature: 개발자 도구,표현물
-role: Developer,Administrator
+role: Developer,Admin
 exl-id: 7d78fba9-16df-44e0-aae6-83f65e8d2bbd
-source-git-commit: 9fb023c504d8696517e7fdad61241c3d49166daa
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 0%
