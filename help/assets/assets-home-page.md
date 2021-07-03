@@ -3,16 +3,16 @@ title: AEM Assets 홈페이지 경험
 description: 자산의 최근 활동에 대한 스냅숏을 포함하여 풍부한 시작 화면 경험을 위해 AEM Assets 홈 페이지를 개인화합니다.
 contentOwner: AG
 feature: 개발자 도구,자산 관리
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: f47c6da7-aa21-4f49-9c66-2a8091e19561
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 1%
 
 ---
 
-# AEM Assets 홈 페이지 경험 {#aem-assets-home-page-experience}
+# AEM Assets 홈페이지 경험 {#aem-assets-home-page-experience}
 
 자산의 최근 활동에 대한 스냅숏을 포함하여 풍부한 시작 화면 경험을 위해 AEM Assets 홈 페이지를 개인화합니다.
 
