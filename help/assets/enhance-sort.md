@@ -3,16 +3,16 @@ title: AEM에서 자산 정렬이 개선되었습니다.
 description: AEM Assets에서 클라이언트 측의 배치로 정렬하는 대신 서버 측 정렬을 배포하여 폴더 자산 또는 검색 쿼리를 한 번에 정렬하는 방법을 알아봅니다.
 contentOwner: AG
 feature: 검색
-role: Business Practitioner
+role: User
 exl-id: aa24ca68-d94e-4bd4-a5cc-113906650a2e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 5%
 
 ---
 
-# AEM {#enhanced-sorting-of-assets-in-aem}에서 자산의 정렬이 개선되었습니다.
+# AEM에서 자산 정렬이 개선되었습니다. {#enhanced-sorting-of-assets-in-aem}
 
 AEM Assets에서 클라이언트 측의 배치로 정렬하는 대신 서버 측 정렬을 배포하여 폴더 자산 또는 검색 쿼리를 한 번에 정렬하는 방법을 알아봅니다.
 
