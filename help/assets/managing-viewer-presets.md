@@ -12,8 +12,8 @@ discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 exl-id: 53e53cb7-1854-44e9-9516-51bcc99378b4
 feature: 뷰어 사전 설정
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '4236'
 ht-degree: 1%
@@ -37,7 +37,7 @@ Dynamic Media 뷰어 사전 설정은 사용자가 컴퓨터 화면과 모바일
 >
 >사전 정의된 기본 제공 뷰어 사전 설정&#x200B;*을 편집하는 것은 지원되는 시나리오가 아닙니다.* 기본 뷰어 사전 설정을 편집하려고 하면 새 이름을 사용하여 뷰어 사전 설정을 저장하라는 메시지가 표시됩니다.
 
-## 뷰어에 대한 키보드 액세스 가능성 {#keyboard-accessibility-for-viewers}
+## 뷰어의 키보드 액세스 가능성 {#keyboard-accessibility-for-viewers}
 
 모든 기본 뷰어는 키보드 액세스 가능성을 지원합니다.
 
@@ -53,7 +53,7 @@ Dynamic Media 뷰어 사전 설정은 사용자가 컴퓨터 화면과 모바일
 >
 >기본적으로 자산의 세부 사항 보기에서 뷰어 를 선택하면 시스템에 15개의 뷰어 사전 설정이 표시됩니다. 이 제한을 늘릴 수 있습니다. [표시되는 뷰어 사전 설정 수를 늘립니다](#increasing-the-number-of-viewer-presets-that-display).
 
-## 응답형 디자인 웹 페이지에 대한 뷰어 지원 {#viewer-support-for-responsive-designed-web-pages}
+## 반응형 디자인 웹 페이지에 대한 뷰어 지원 {#viewer-support-for-responsive-designed-web-pages}
 
 웹 페이지마다 요구 사항이 다릅니다. 예를 들어, 별도의 브라우저 창에서 HTML5 뷰어를 여는 링크를 제공하는 웹 페이지를 원하는 경우가 있습니다. 다른 경우 HTML5 뷰어를 호스팅 페이지에 직접 포함해야 할 수도 있습니다. 후자의 경우 웹 페이지에 정적 레이아웃이 있을 수 있습니다. 또는 *응답형*&#x200B;일 수 있으며, 다른 장치나 다른 브라우저 창 크기에 대해 다르게 표시될 수 있습니다. 이러한 요구 사항을 수용하기 위해 Dynamic Media과 함께 제공되는 사전 정의된 모든 기본 제공 HTML5 뷰어는 정적 웹 페이지와 응답형 디자인 웹 페이지를 모두 지원합니다.
 
@@ -64,7 +64,7 @@ Dynamic Media 뷰어 사전 설정은 사용자가 컴퓨터 화면과 모바일
 >처음 사용하기 전에 모든 기본 제공 뷰어를 게시해야 합니다.\
 >[뷰어 사전 설정 게시를 참조하십시오.](#publishing-viewer-presets)
 
-## 뷰어 사전 설정 시스템 호환성 {#viewer-preset-system-compatibility}
+## 뷰어 사전 설정 시스템 호환성  {#viewer-preset-system-compatibility}
 
 Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다음 시스템과 완전히 호환됩니다.
 
@@ -99,7 +99,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
 | **세로 확대/축소** | 세로 확대/축소 뷰어를 사용하면 제품 이미지 보기 경험을 최대화하여 사용자에게 제품에 대한 최상의 표현을 제공할 수 있습니다. 색상 견본의 수직 위치는 다음과 같습니다. <ul><li>견본이 접힌 부분 위에 있는지 확인합니다. 가로 색상 견본을 사용하면 사용자의  데스크탑 화면 크기에 따라 사용자가 페이지를 스크롤할 때까지 색상 견본이 표시되지 않았습니다. 뷰어에 색상 견본을 세로로 배치하면 사용자의 화면 크기에 상관없이 표시될 수 있습니다.</li><li>기본 이미지 크기를 극대화합니다. 가로 색상 견본을 사용하면 페이지가 표시되도록 페이지의 공간을 예약해야 합니다. 이 위치 지정은 주 이미지의 크기를 줄였습니다. 그러나 세로 견본 레이아웃이 있으면 이 공간을 할당할 필요가 없습니다. 따라서 주 이미지 크기를 최대화할 수 있습니다.</li></ul> |
 | **확대/축소** | 사용자가 영역을 클릭하여 확대할 수 있습니다. 사용자는 컨트롤을 클릭하여 이미지를 확대, 축소 및 기본 크기로 재설정할 수 있습니다. |
 
-## 즉시 사용 가능한 뷰어 사전 설정 목록 {#list-of-out-of-the-box-viewer-presets}
+## 기본 뷰어 사전 설정 목록 {#list-of-out-of-the-box-viewer-presets}
 
 다음 표는 Dynamic Media과 함께 제공되는 사전 정의된 모든 기본 뷰어 사전 설정을 식별합니다.
 
@@ -159,7 +159,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
 | **밀기** | 견본 막대 스크롤 | 이미지 스크롤 | 회전 |
 | **플릭** | 견본 막대 스크롤 | 이미지 스크롤 | 회전 |
 
-## {#increasing-the-number-of-viewer-presets-that-display}을 표시하는 Dynamic Media 뷰어 사전 설정 수를 늘립니다
+## 표시되는 Dynamic Media 뷰어 사전 설정 수 증가 {#increasing-the-number-of-viewer-presets-that-display}
 
 AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;에서 자산을 볼 때 다양한 뷰어 사전 설정이 표시됩니다. 표시되는 뷰어 수를 늘리거나 줄일 수 있습니다.
 
@@ -250,7 +250,7 @@ AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;에서 자산
 
    [뷰어 사전 설정 게시](#publishing-viewer-presets)를 참조하십시오.
 
-## 대화형 뷰어 사전 설정 {#special-considerations-for-creating-an-interactive-viewer-preset} 만들기에 대한 특수 고려 사항
+## 대화형 뷰어 사전 설정을 만들기 위한 특수 고려 사항 {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **패널의 이미지 축소판 표시 모드 정보**
 
@@ -296,7 +296,7 @@ AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;에서 자산
 
    위의 표에 나오는 예를 사용하여 30초 / 3 비디오 하위 세그먼트 = 각 비디오 하위 세그먼트의 10초 표시.
 
-### 캐러셀 배너 뷰어 사전 설정 {#special-considerations-for-creating-a-carousel-banner-viewer-preset}을 만들기 위한 특별한 고려 사항
+### 캐러셀 배너 뷰어 사전 설정을 만들기 위한 특별한 고려 사항 {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
 
 회전 배너 뷰어 사전 설정을 만들 때 다음과 같이 핫스팟 스타일을 변경할 수 있습니다.
 
@@ -363,7 +363,7 @@ Dynamic Media에 만들어 추가한 뷰어 사전 설정을 삭제할 수 있�
 1. **[!UICONTROL 뷰어 사전 설정]** 페이지에서 **[!UICONTROL 사전 설정 제목]**&#x200B;을 선택한 다음 **[!UICONTROL 휴지통]** 아이콘을 탭합니다.
 1. **[!UICONTROL 삭제]**&#x200B;를 누릅니다.
 
-## 자산 {#applying-a-viewer-preset-to-an-asset}에 Dynamic Media 뷰어 사전 설정 적용
+## 자산에 Dynamic Media 뷰어 사전 설정 적용 {#applying-a-viewer-preset-to-an-asset}
 
 자산과 선택한 뷰어를 모두 이미 게시한 경우 뷰어 사전 설정을 선택하면 **[!UICONTROL URL]** 및 **[!UICONTROL 포함]** 단추가 표시됩니다.
 
