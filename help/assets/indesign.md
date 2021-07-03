@@ -3,9 +3,9 @@ title: AEM Assets과 Adobe InDesign Server 통합
 description: AEM Assets을 InDesign Server과 통합하는 방법을 알아봅니다.
 contentOwner: AG
 feature: 게시
-role: Administrator
+role: Admin
 exl-id: d80562f7-071c-460a-9c68-65f48d36fbd9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1703'
 ht-degree: 1%
@@ -76,7 +76,7 @@ InDesign Server을 AEM Assets과 통합하여 InDesign( `.indd`)로 생성된 �
    * 추출된 텍스트와 파일은 AEM Assets에 저장됩니다.
    * 모든 표현물은 AEM Assets의 자산 자체에 저장됩니다.
 
-## AEM {#integrating-the-indesign-server-with-aem}과 InDesign Server 통합
+## AEM과 InDesign Server 통합 {#integrating-the-indesign-server-with-aem}
 
 AEM Assets과 사용할 InDesign Server을 통합하려면 프록시를 구성한 후 다음을 수행해야 합니다.
 
@@ -87,7 +87,7 @@ AEM Assets과 사용할 InDesign Server을 통합하려면 프록시를 구성�
 
 1. InDesign Server](#configuring-the-proxy-worker-for-indesign-server)에 대한 [프록시 작업자를 구성합니다.
 
-### InDesign Server {#installing-the-indesign-server} 설치
+### InDesign Server 설치 {#installing-the-indesign-server}
 
 AEM에서 사용할 InDesign Server을 설치하고 시작하려면 다음을 수행하십시오.
 
@@ -166,7 +166,7 @@ AEM Assets에는 InDesign을 위한 몇 가지 프로세스 단계가 있는 미
 
 * **페이지 디자인**:결과 페이지를 생성할 때 사용할 페이지 디자인입니다.
 
-### InDesign Server {#configuring-the-proxy-worker-for-indesign-server}에 대한 프록시 작업자 구성
+### InDesign Server에 대한 프록시 작업자 구성 {#configuring-the-proxy-worker-for-indesign-server}
 
 >[!NOTE]
 >
@@ -184,7 +184,7 @@ AEM Assets에는 InDesign을 위한 몇 가지 프로세스 단계가 있는 미
 
 1. **[!UICONTROL 확인]**&#x200B;을 클릭하여 저장합니다.
 
-### 일별 CQ 링크 외부 도우미 구성 {#configuring-day-cq-link-externalizer}
+### Day CQ Link Externalizer 구성 {#configuring-day-cq-link-externalizer}
 
 InDesign Server과 AEM이 다른 호스트에 있거나 이러한 응용 프로그램 중 하나 또는 둘 다 기본 포트에서 작동하지 않는 경우 **Day CQ Link Externalizer**&#x200B;를 구성하여 InDesign Server의 호스트 이름, 포트 및 컨텐츠 경로를 설정하십시오.
 
@@ -194,7 +194,7 @@ InDesign Server과 AEM이 다른 호스트에 있거나 이러한 응용 프로�
 
    ![외부 도우미 설정 연결](assets/link-externalizer-config.png)
 
-### InDesign Server {#enabling-parallel-job-processing-for-indesign-server}에 대한 병렬 작업 처리를 사용하도록 설정하는 중
+### InDesign Server에 대한 병렬 작업 처리 활성화 {#enabling-parallel-job-processing-for-indesign-server}
 
 이제 ID에 대한 병렬 작업 처리를 활성화할 수 있습니다.
 
@@ -237,7 +237,7 @@ InDesign Server과 AEM이 다른 호스트에 있거나 이러한 응용 프로�
 <!-- TBD: Make updates to configurations for allow and block list after product updates are done. See CQ-4298427.
 -->
 
-## Adobe InDesign 서버 10.0 이상 {#enabling-support-for-indesign-server-or-higher} 지원 활성화
+## Adobe InDesign 서버 10.0 이상 지원 활성화 {#enabling-support-for-indesign-server-or-higher}
 
 InDesign 서버 10.0 이상의 경우 다음 단계를 수행하여 다중 세션 지원을 활성화합니다.
 
@@ -249,7 +249,7 @@ InDesign 서버 10.0 이상의 경우 다음 단계를 수행하여 다중 세�
 >
 >[!DNL InDesign Server] 통합을 [!DNL Assets]에 사용하려면 통합에 필요한 세션 지원 기능이 단일 코어 시스템에서 지원되지 않으므로 다중 코어 프로세서를 사용하십시오.
 
-## Experience Manager 자격 증명 {#configure-aem-credentials} 구성
+## Experience Manager 자격 증명 구성 {#configure-aem-credentials}
 
 Adobe InDesign 서버와의 통합을 중단하지 않고 AEM 인스턴스에서 InDesign 서버에 액세스하기 위한 기본 관리자 자격 증명(사용자 이름 및 암호)을 변경할 수 있습니다.
 
