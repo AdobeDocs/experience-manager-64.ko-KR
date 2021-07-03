@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: ec394bd3-2fa6-4f50-b974-bc10f643ecac
 exl-id: e5110a90-ddc9-4244-8466-f91adfca8469
 feature: 자산 관리
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 34%
@@ -48,7 +48,7 @@ Dynamic Media에는 다음의 몇 가지 선택 사항이 있습니다.
 * [CDN 캐시 콘텐츠 무효화](invalidate-cdn-cached-content.md)
 * [규칙 세트를 사용하여 URL 변환](using-rulesets-to-transform-urls.md)
 
-## Dynamic Media 자산 {#http-delivery-of-dynamic-media-assets} 의 HTTP/2 전달
+## Dynamic Media 자산의 HTTP/2 전달 {#http-delivery-of-dynamic-media-assets}
 
 이제 AEM에서는 HTTP/2를 통해 모든 Dynamic Media 컨텐츠(이미지 및 비디오)의 전달을 지원합니다. 즉, 이미지나 비디오에 대해 게시된 URL 또는 포함 코드는 호스팅된 자산을 허용하는 모든 애플리케이션과 통합할 수 있습니다. 게시된 자산은 HTTP/2 프로토콜을 통해 전달됩니다. 이 전달 방법은 브라우저 및 서버의 통신 방식을 개선하여 모든 Dynamic Media 자산의 응답 및 로드 시간을 향상시킬 수 있습니다.
 
