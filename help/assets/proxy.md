@@ -3,9 +3,9 @@ title: 자산 프록시 개발
 description: '프록시는 프록시 작업자를 사용하여 작업을 처리하는 AEM 인스턴스입니다. AEM 프록시, 지원되는 작업, 프록시 구성 요소를 구성하는 방법 및 사용자 정의 프록시 작업자를 개발하는 방법을 알아봅니다. '
 contentOwner: AG
 feature: 자산 처리
-role: Administrator, Architect
+role: Admin, Architect
 exl-id: c7511326-697e-4749-ab46-513cdbaa00d8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 0%
@@ -131,7 +131,7 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
  final String value = cloudConfig.get("someProperty", "defaultValue");
 ```
 
-### 사용자 지정된 프록시 작업자 {#developing-a-customized-proxy-worker} 개발
+### 사용자 지정된 프록시 작업자 개발 {#developing-a-customized-proxy-worker}
 
 [IDS 프록시 작업자](indesign.md)는 Indesign 자산의 처리를 아웃소싱하기 위해 이미 기본적으로 제공되는 AEM Assets 프록시 작업자의 예입니다.
 
