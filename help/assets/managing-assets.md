@@ -7,15 +7,15 @@ topic-tags: dynamic-media
 content-type: reference
 exl-id: a87c7562-0d61-403e-9e8e-e706cac9b7c5
 feature: 자산 관리
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 13%
 
 ---
 
-# Dynamic Media 자산 관리 정보 {#managing-assets}
+# Dynamic Media 자산 관리 기본 정보 {#managing-assets}
 
 Dynamic Media 자산 이미지, 비디오 및 대화형 자산을 업로드한 후 관리 - 미리 보기, 다운로드 또는 게시를 포함한 많은 작업이 필요합니다.
 
