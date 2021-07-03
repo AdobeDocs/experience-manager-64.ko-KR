@@ -7,15 +7,15 @@ content-type: reference
 topic-tags: managing-assets
 exl-id: b11b19c1-712d-4698-aefc-930ff8cacbc1
 feature: Dynamic Media Classic
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2829'
 ht-degree: 35%
 
 ---
 
-# Dynamic Media Classic 기능을 페이지에 추가 {#adding-scene-features-to-your-page}
+# 페이지에 Dynamic Media Classic 기능 추가 {#adding-scene-features-to-your-page}
 
 Adobe Dynamic Media Classic은 리치 미디어 자산을 관리, 개선, 게시 및 웹, 모바일, 이메일 및 인터넷에 연결된 디스플레이 및 프린트로 제공하기 위한 호스팅 솔루션입니다.
 
@@ -39,7 +39,7 @@ AEM에서 비디오 구성 요소를 사용하는 방법에 대한 자세한 내
 >
 >Dynamic Media Classic 자산이 제대로 표시되지 않으면 Dynamic Media가 [비활성화](config-dynamic.md#disabling-dynamic-media)인지 확인한 후 페이지를 새로 고치십시오.
 
-## 자산 {#manually-publishing-to-scene-from-assets}에서 Dynamic Media Classic에 수동으로 게시
+## 자산에서 Dynamic Media Classic에 수동으로 게시 {#manually-publishing-to-scene-from-assets}
 
 다음과 같이 Dynamic Media Classic에 디지털 자산을 게시할 수 있습니다.
 
@@ -76,7 +76,7 @@ AEM에서는 다음 Dynamic Media Classic 구성 요소를 사용할 수 있습�
 
 2017년 1월 31일부터 Adobe Dynamic Media Classic은 Flash 뷰어 플랫폼에 대한 지원을 종료했습니다.
 
-### 페이지 {#adding-a-scene-component-to-a-page}에 Dynamic Media Classic 구성 요소(Scene7) 추가
+### 페이지에 Dynamic Media Classic 구성 요소(Scene7) 추가 {#adding-a-scene-component-to-a-page}
 
 페이지에 Dynamic Media Classic(Scene7) 구성 요소를 추가하는 것은 페이지에 구성 요소를 추가하는 것과 같습니다. Dynamic Media Classic 구성 요소는 다음 섹션에서 자세히 설명합니다.
 
@@ -101,7 +101,7 @@ AEM에서는 다음 Dynamic Media Classic 구성 요소를 사용할 수 있습�
    >
    >Touch UI에서만 이미지나 비디오를 페이지에 배치한 Dynamic Media Classic 구성 요소에 끌어다 놓아야 합니다. Dynamic Media Classic 구성 요소를 선택하고 편집한 다음, 자산을 선택할 수 없습니다.
 
-### 응답형 사이트 {#adding-interactive-viewing-experiences-to-a-responsive-website}에 대화형 보기 환경 추가
+### 응답형 사이트에 대화형 보기 경험 추가 {#adding-interactive-viewing-experiences-to-a-responsive-website}
 
 자산이 응답형으로 디자인되어 자산이 표시되는 위치에 따라 조정됩니다. 응답형 디자인을 통해 여러 장치에 동일한 자산을 효과적으로 표시할 수 있습니다.
 
@@ -303,7 +303,7 @@ Dynamic Media Classic 컨텐츠 브라우저를 사용하면 AEM에서 직접 Dy
 * 응용 비디오 세트 및 템플릿의 경우 미리 보기에 대한 크기 정보가 생성되지 않습니다.
 * 응용 비디오 세트의 경우 미리 보기에 대한 해상도가 생성되지 않습니다.
 
-### 컨텐츠 브라우저 {#searching-for-scene-assets-with-the-content-browser}에서 Dynamic Media Classic 자산 검색
+### 컨텐츠 브라우저로 Dynamic Media Classic 자산 검색 {#searching-for-scene-assets-with-the-content-browser}
 
 Dynamic Media Classic 자산 검색은 검색할 때 AEM으로 직접 가져오지 않고 Dynamic Media Classic 시스템에서 자산의 원격 보기가 실제로 표시된다는 점을 제외하면 AEM Assets 검색과 유사합니다.
 
