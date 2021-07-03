@@ -3,9 +3,9 @@ title: 중복 감지 활성화
 description: AEM에서 중복 자산을 탐지할 수 있는 방법을 알아봅니다.
 contentOwner: AG
 feature: 자산 관리,자산 보고서
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 138cf649-9e21-415e-9861-b07caacc85db
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 0%
