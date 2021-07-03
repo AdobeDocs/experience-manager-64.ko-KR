@@ -3,16 +3,16 @@ title: 스마트 컨텐츠 서비스를 사용하여 자산 태그 지정을 구
 description: 스마트 컨텐츠 서비스를 사용하여 [!DNL Adobe Experience Manager]에서 스마트 태그 지정 및 향상된 스마트 태그 지정을 구성하는 방법을 알아봅니다.
 contentOwner: AG
 feature: 스마트 태그,태깅
-role: Administrator
+role: Admin
 exl-id: 11c5dd92-f824-41d2-9ab2-b32bdeae01b6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 29%
 
 ---
 
-# 스마트 컨텐츠 서비스 {#configure-asset-tagging-using-the-smart-content-service}를 사용하여 자산 태그 지정을 구성합니다
+# 스마트 컨텐츠 서비스를 사용하여 자산 태그 지정 구성 {#configure-asset-tagging-using-the-smart-content-service}
 
 [!DNL Adobe Developer Console]을 사용하여 [!DNL Adobe Experience Manager]을 스마트 컨텐츠 서비스와 통합할 수 있습니다. 이 구성을 사용하여 [!DNL Experience Manager] 내에서 스마트 컨텐츠 서비스에 액세스합니다.
 
@@ -38,7 +38,7 @@ ht-degree: 29%
 
 고급 스마트 태그를 활성화하려면 위의 항목 외에 최신 [Experience Manager 서비스 팩](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html)도 설치하십시오.
 
-## 스마트 컨텐츠 서비스 구성을 만들어 공개 인증서 {#obtain-public-certificate} 받기
+## 공개 인증서를 가져오려면 스마트 컨텐츠 서비스 구성을 만드십시오 {#obtain-public-certificate}
 
 공개 인증서를 사용하면 [!DNL Adobe Developer Console]에서 프로필을 인증할 수 있습니다.
 
@@ -149,7 +149,7 @@ ht-degree: 29%
 
    유효성 검사 결과가 동일한 대화 상자에 표시됩니다.
 
-## DAM 자산 업데이트 워크플로우에서 스마트 태그 지정을 활성화합니다(선택 사항) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
+## DAM 자산 업데이트 워크플로우에서 스마트 태그 지정 사용(선택 사항) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
 
 1. [!DNL Experience Manager]에서 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]**&#x200B;으로 이동합니다.
 
