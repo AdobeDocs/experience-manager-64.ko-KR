@@ -3,9 +3,9 @@ title: 자산 편집기 확장
 description: 사용자 지정 구성 요소를 사용하여 자산 편집기의 기능을 확장하는 방법을 알아봅니다.
 contentOwner: AG
 feature: 개발자 도구
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 1e02a2f6-8194-46b9-b418-87103c3f4a69
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 1%
@@ -62,7 +62,7 @@ AEM Assets 템플릿의 기본 clientlib 로드(코어 `init.jsp`에 있음)와 
 
 샘플 페이지 구성 요소에서는 모든 선택기가 `static.css`(`/etc/designs/geometrixx/static.css`)의 `.asseteditor`으로 시작해야 합니다. 우수 사례:모든 `.asseteditor` 선택기를 스타일 시트에 복사하고 원하는 대로 규칙을 조정합니다.
 
-### FormSelector:나중에 로드될 리소스에 대한 조정 {#formchooser-adjustments-for-eventually-loaded-resources}
+### FormSelector:최종 로드된 리소스에 대한 조정 {#formchooser-adjustments-for-eventually-loaded-resources}
 
 자산 편집기에서는 양식 선택기를 사용하여 양식 선택기와 양식의 경로를 자산 URL에 추가하면 동일한 양식 페이지에서 리소스를 편집할 수 있습니다.
 
@@ -121,7 +121,7 @@ HTML 부분에서 이전 제목 세트(자산 또는 페이지 제목)를 사용
 <title><%= title %></title>
 ```
 
-## 단순 양식 필드 구성 요소 {#creating-a-simple-form-field-component} 만들기
+## 단순 양식 필드 구성 요소 만들기 {#creating-a-simple-form-field-component}
 
 이 예에서는 로드된 자산의 메타데이터를 표시하고 표시하는 구성 요소를 만드는 방법을 설명합니다.
 
