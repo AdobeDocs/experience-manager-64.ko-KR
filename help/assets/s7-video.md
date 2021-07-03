@@ -7,8 +7,8 @@ topic-tags: managing-assets
 content-type: reference
 exl-id: 081e7db0-95cc-4260-8f08-318cd7d9d5b4
 feature: 비디오
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1604'
 ht-degree: 34%
@@ -54,7 +54,7 @@ Scene7 비디오 구성 요소에 대해 다음 형식이 지원됩니다.
 
 이러한 질문에 대한 답변이 하나 또는 둘 다 &quot;예&quot;인 경우, 비디오를 Adobe DAM에 바로 업로드하십시오. 두 질문에 대한 답변이 모두 &quot;아니요&quot;이면 비디오를 Dynamic Media Classic에 직접 업로드하십시오. 각 시나리오에 대한 워크플로우는 다음 섹션에 설명되어 있습니다.
 
-### 비디오를 DAM {#if-you-are-uploading-your-video-directly-to-adobe-dam}에 직접 업로드하는 경우
+### Adobe DAM에 직접 비디오를 업로드하는 경우 {#if-you-are-uploading-your-video-directly-to-adobe-dam}
 
 자산에 대해 워크플로우 또는 버전 관리가 필요한 경우 먼저 DAM Adobe으로 업로드하십시오. 다음은 권장되는 워크플로우입니다.
 
@@ -99,7 +99,7 @@ Scene7에서 사전 설정이 업데이트된 경우 Experience Manager에서 �
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
-## Adobe DAM {#uploading-your-master-video}에서 Scene7에 마스터 비디오를 업로드하는 중
+## Adobe DAM에서 Scene7에 마스터 비디오 업로드 {#uploading-your-master-video}
 
 1. Scene7 인코딩 프로필을 사용하여 클라우드 구성을 설정한 CQ DAM 대상 폴더로 이동합니다.
 1. **[!UICONTROL 업로드]**&#x200B;를 클릭하여 마스터 비디오를 업로드합니다. DAM 자산 업데이트 워크플로우가 완료되고 **[!UICONTROL Scene7에 게시]**&#x200B;에 확인 표시가 있으면 비디오 업로드 및 인코딩이 완료됩니다.
@@ -140,7 +140,7 @@ Scene7 비디오 구성 요소를 사용하는 것이 Scene7 비디오를 보는
 | 확장성 | 예 | 예([HTML5 뷰어 SDK API 설명서](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) 사용) |
 | 모바일 비디오 | 예 | 예 |
 
-### 설정  {#setting-up}
+### 설정 {#setting-up}
 
 #### 비디오 프로필 만들기 {#creating-video-profiles}
 
