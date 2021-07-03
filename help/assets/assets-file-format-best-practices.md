@@ -3,9 +3,9 @@ title: 자산 파일 형식 우수 사례
 description: AEM Assets의 파일 지원 우수 사례
 contentOwner: AG
 feature: 자산 관리,개발자 도구
-role: Administrator
+role: Admin
 exl-id: ff739a17-188e-4779-8820-9e4d9b7031d0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 2%
@@ -43,7 +43,7 @@ PDF Rasterizer를 사용하여 생성된 축소판 및 미리 보기는 기본 �
 
 Adobe은 Adobe InDesign 서버를 사용하여 IDML 및 HTML과 같은 Adobe InDesign 관련 렌디션을 추출할 것을 권장합니다. 자세한 내용은 Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign)에서 [AEM 자산을 참조로 추가 를 참조하십시오.
 
-## Dynamic Media  {#dynamic-media}
+## 다이내믹 미디어  {#dynamic-media}
 
 Dynamic Media은 글로벌, 확장 가능 및 성능 최적화 네트워크를 통해 실시간으로 다양한 유형의 풍부한 컨텐츠를 생성하고 전달합니다. 대화형 보기 환경을 제공하고 디지털 캠페인 관리 프로세스를 간소화합니다. Dynamic Media 활성화에 대한 자세한 내용은 [Dynamic Media 구성](config-dynamic.md)을 참조하십시오.
 
