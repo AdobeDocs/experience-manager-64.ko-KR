@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 exl-id: 3adae6da-e148-4670-86ae-27d83008ec66
 feature: 대화형 비디오,비디오
-role: Business Practitioner
-source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
+role: User
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '5975'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 [대화형 이미지](interactive-images.md)도 참조하십시오.
 
-## 대화형 비디오 실행 {#interactive-video-in-action}
+## 대화형 비디오 작동 {#interactive-video-in-action}
 
 상호 작용하며 쇼퍼블 비디오 기능을 보려면 [라이브 데모](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)를 클릭하고 페이지에서 **[!UICONTROL 쇼퍼블 미디어]** 헤딩으로 스크롤한 다음 쇼퍼블 비디오를 클릭합니다.
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 >
 >사용자가 축소판 이미지를 클릭할 때 웹 페이지를 실행하는 대화형 비디오를 만들 경우, 일부 장치는 팝업 웹 페이지가 열리지 않도록 차단합니다. 이러한 경우 장치에서 팝업 차단 설정을 변경해야 합니다. 예를 들어 Apple iPhone 6에서는 **[!UICONTROL 설정]** > **Safari** > **팝업 차단**&#x200B;을 탭한 다음, 컨트롤을 **[!UICONTROL 해제]**&#x200B;로 슬라이드합니다. 이제 대화형 비디오를 재생하고 축소판을 클릭하면 팝업을 열겠는지 묻는 메시지가 표시됩니다. 수락하면 웹 페이지가 열립니다.
 
-## 대화형 비디오를 만드는 방법 보기 {#watch-how-interactive-videos-are-created}
+## 대화형 비디오 작성 방법 보기 {#watch-how-interactive-videos-are-created}
 
 [대화형 비디오를 만드는 방법에 대한 7분 30초 연습을 시청하십시오](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) [](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA).\
 (비디오 연습은 Assets on Demand로 브랜딩되지만, 원칙 및 단계는 AEM Assets의 대화형 비디오에 계속 적용됩니다.)
@@ -262,7 +262,7 @@ Quickview URL 및 그 결과 축소판 변수의 다음 예를 생각해 보십�
 
    이제 비디오에 대화형 기능을 추가합니다.
 
-## 비디오에 대화형 기능 추가 {#adding-interactivity-to-your-video}
+## 비디오에 인터랙티브한 추가 {#adding-interactivity-to-your-video}
 
 대화형 비디오 만들기 페이지에서 즉석 시각적 편집기를 사용하여 비디오에 타임라인 세그먼트를 추가합니다.
 
@@ -507,7 +507,7 @@ Quickview URL 및 그 결과 축소판 변수의 다음 예를 생각해 보십�
 
 대화형 비디오 자산을 게시하는 방법에 대한 자세한 내용은 [자산 게시](publishing-dynamicmedia-assets.md) 를 참조하십시오.
 
-## 웹 사이트 {#integrating-an-interactive-video-with-your-website}와 대화형 비디오 통합
+## 웹 사이트와 대화형 비디오 통합 {#integrating-an-interactive-video-with-your-website}
 
 이제 비디오를 업로드하고, 여기에 타임라인 세그먼트를 추가하고, 대화형 비디오를 게시하면 기존 웹 사이트에 추가할 수 있습니다.
 
@@ -569,7 +569,7 @@ AEM Sites 고객의 경우 대화형 미디어 구성 요소를 페이지로 드
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
-## 대화형 비디오와 기존 Quickview {#integrating-an-interactive-video-with-an-existing-quickview} 통합
+## 기존 Quickview와 대화형 비디오 통합 {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
 이 작업은 독립 실행형 AEM Assets 고객인 경우에만 적용됩니다.
