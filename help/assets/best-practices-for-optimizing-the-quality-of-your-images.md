@@ -7,8 +7,8 @@ topic-tags: dynamic-media
 content-type: reference
 exl-id: 2e90bea1-eaac-457b-8588-b18d3a6e8d91
 feature: 자산 관리,표현물
-role: Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1466'
 ht-degree: 1%
@@ -32,7 +32,7 @@ AEM에는 이미지를 조정 및 최적화하고 렌더링 결과를 렌더링�
 
 이미지 형식에 대한 우수 사례로서, 가장 일반적인 설정 `&fmt=JPG`으로 시작하십시오.
 
-## 이미지 크기 {#best-practices-for-image-size}에 대한 우수 사례
+## 이미지 크기에 대한 우수 사례 {#best-practices-for-image-size}
 
 가장 일반적인 작업 중 하나가 동적으로 이미지 크기를 줄이는 것입니다. 이 작업에는 크기를 지정하고, 필요에 따라 이미지를 축소하는 데 사용할 다운샘플링 모드를 지정하는 작업이 포함됩니다.
 
@@ -41,7 +41,7 @@ AEM에는 이미지를 조정 및 최적화하고 렌더링 결과를 렌더링�
 
 이미지 크기 조정에 대한 우수 사례로 `&wid=<value>&hei=<value>&resMode=sharp2` 또는 `&hei=<value>&resMode=sharp2` 를 사용하십시오
 
-## 이미지 선명하게 하기 {#best-practices-for-image-sharpening} 우수 사례
+## 이미지 선명하게 하기 위한 우수 사례 {#best-practices-for-image-sharpening}
 
 이미지 선명하게 하기는 웹 사이트에서 이미지를 제어하는 가장 복잡한 측면이며 오류가 많은 경우입니다. AEM에도 적용되는 [Adobe Dynamic Media Classic 이미지 품질 및 선명하게 하기 우수 사례](/help/assets/assets/sharpening_images.pdf) 안내서를 참조하여 AEM에서 선명하게 하기 및 언샵 마스킹이 작동하는 방식에 대해 자세히 알아보십시오.
 
@@ -102,7 +102,7 @@ jpegSize는 메모리가 제한된 장치로 이미지를 전달할 때 일정 �
 
 JPG 이미지를 메모리가 제한된 장치에 전달하는 경우 `&jpegSize=` 을 설정하고 매개 변수 `&qlt=` 를 추가하는 것이 좋습니다.
 
-## 우수 사례 요약 {#best-practices-summary}
+## 모범 사례 요약 {#best-practices-summary}
 
 높은 이미지 품질과 작은 파일 크기를 얻으려면 다음 매개 변수의 조합으로 시작하십시오.
 
