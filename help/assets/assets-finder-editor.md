@@ -3,9 +3,9 @@ title: 자산 편집기 페이지 만들기 및 구성
 description: 사용자 지정 자산 편집기 페이지를 만들고 여러 자산을 동시에 편집하는 방법을 알아봅니다.
 contentOwner: AG
 feature: 개발자 도구,자산 관리
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 12899f61-9ceb-4bde-a501-6c50c93e3276
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3318'
 ht-degree: 6%
@@ -24,7 +24,7 @@ ht-degree: 6%
 >
 >자산 공유는 오픈 소스 참조 구현으로 사용할 수 있습니다. [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) 를 참조하십시오. 공식적으로 지원되지 않습니다.
 
-## 자산 편집기 페이지를 만들고 구성하는 이유는 무엇입니까?{#why-create-and-configure-asset-editor-pages}
+## 자산 편집기 페이지를 만들고 구성하는 이유는 무엇입니까? {#why-create-and-configure-asset-editor-pages}
 
 디지털 자산 관리는 점점 더 많은 시나리오에서 사용됩니다. 전문 사용자를 위한 Adobe Experience Manager(AEM) Assets의 강력한 사용자 인터페이스는 사진사나 분류법 등 전문 교육을 받은 소규모 사용자 그룹의 소규모 사용자 그룹에서 더 규모가 크고 다양한 사용자 그룹으로 이동할 때 너무 많은 정보를 제공하고 이해 관계자가 특정 사용자 인터페이스 또는 응용 프로그램에서 해당 사용자와 관련이 있는 디지털 자산에 액세스할 수 있도록 요청할 수 있습니다.
 
@@ -106,7 +106,7 @@ DAM 자산 공유 Geometrixx 템플릿을 사용하여 만든 기본 페이지�
 
    ![chlimage_1-387](assets/chlimage_1-387.png)
 
-#### 검색 결과가 {#determining-how-search-results-are-presented} 표시되는 방식을 결정합니다
+#### 검색 결과가 표시되는 방식을 결정합니다 {#determining-how-search-results-are-presented}
 
 사전 정의된 렌즈 목록에서 결과가 표시되는 방식을 결정합니다.
 
@@ -133,7 +133,7 @@ DAM 자산 공유 Geometrixx 템플릿을 사용하여 만든 기본 페이지�
 
 ![chlimage_1-389](assets/chlimage_1-389.png)
 
-#### 쿼리 빌더 {#customizing-the-query-builder} 사용자 지정
+#### Query Builder 사용자 지정 {#customizing-the-query-builder}
 
 쿼리 빌더를 사용하면 검색어를 입력하고 자산 공유 페이지에 대한 콘텐츠를 만들 수 있습니다. 쿼리 빌더를 편집할 때 페이지당 표시되는 검색 결과 수를 결정할 수 있으며, 자산을 두 번 클릭하면 자산 편집기가 열리고, 쿼리가 검색하는 경로와 노드 유형을 사용자 지정할 수 있습니다.
 
@@ -188,7 +188,7 @@ AEM Assets에는 자산 공유 페이지에 추가할 수 있는 여러 가지 �
 
    ![screen_shot_2012-04-23at15640pm](assets/screen_shot_2012-04-23at15640pm.png)
 
-## 자산 편집기 페이지 {#creating-and-configuring-an-asset-editor-page} 만들기 및 구성
+## 자산 편집기 페이지 만들기 및 구성 {#creating-and-configuring-an-asset-editor-page}
 
 자산 편집기를 사용자 지정하여 사용자가 디지털 자산을 보고 편집할 수 있는 방법을 결정합니다. 이렇게 하려면 새 자산 편집기 페이지를 만든 다음 해당 페이지에서 사용자가 수행할 수 있는 보기 및 작업을 사용자 지정합니다.
 
@@ -196,7 +196,7 @@ AEM Assets에는 자산 공유 페이지에 추가할 수 있는 여러 가지 �
 >
 >DAM 자산 편집기에 사용자 지정 필드를 추가하려면 새 cq:Widget 노드를 `/apps/dam/content/asseteditors.`에 추가하십시오.
 
-### 자산 편집기 페이지 {#creating-the-asset-editor-page} 만들기
+### 자산 편집기 페이지 만들기 {#creating-the-asset-editor-page}
 
 자산 편집기 페이지를 만들 때 자산 공유 페이지 바로 아래에 페이지를 만드는 것이 좋습니다.
 
@@ -216,7 +216,7 @@ Geometrixx 자산 편집기 템플릿을 사용하여 만든 기본 페이지는
 
 ![assetshare6](assets/assetshare6.bmp)
 
-#### 자산 공유 페이지 {#setting-which-asset-editor-opens-from-an-asset-share-page}에서 열리는 자산 편집기를 설정합니다.
+#### 자산 공유 페이지에서 열리는 자산 편집기를 설정합니다 {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
 사용자 지정된 자산 편집기 페이지를 만든 후에는 사용자 지정된 자산 공유에서 만든 자산을 두 번 클릭할 때 사용자 지정된 편집기 페이지에서 자산이 열리는지 확인해야 합니다.
 
@@ -260,7 +260,7 @@ Geometrixx 자산 편집기 템플릿을 사용하여 만든 기본 페이지는
 
    ![screen_shot_2012-04-23at22743pm](assets/screen_shot_2012-04-23at22743pm.png)
 
-#### 메타데이터 양식 및 텍스트 필드 - 보기 메타데이터 구성 요소 {#metadata-form-and-text-field-configuring-the-view-metadata-component} 구성
+#### 메타데이터 양식 및 텍스트 필드 - 메타데이터 보기 구성 요소 구성 {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
 메타데이터 양식은 시작 및 종료 작업을 포함하는 양식입니다. 사이에 **[!UICONTROL 텍스트]** 필드를 입력합니다. 양식 작업에 대한 자세한 내용은 [Forms](../sites-authoring/default-components.md)을 참조하십시오.
 
@@ -390,7 +390,7 @@ Geometrixx 자산 편집기 템플릿을 사용하여 만든 기본 페이지는
 
 ![chlimage_1-393](assets/chlimage_1-393.png)
 
-## 자산 편집기 페이지 {#multi-editing-assets-with-the-asset-editor-page}로 여러 자산 편집
+## 자산 편집기 페이지에서 여러 자산 편집 {#multi-editing-assets-with-the-asset-editor-page}
 
 AEM Assets을 사용하면 여러 자산을 한 번에 변경할 수 있습니다. 자산을 선택한 후 자산을 동시에 변경할 수 있습니다.
 
