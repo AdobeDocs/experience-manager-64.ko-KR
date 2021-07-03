@@ -3,9 +3,9 @@ title: 번역 프로젝트 만들기
 description: AEM에서 번역 프로젝트를 만드는 방법을 알아봅니다.
 contentOwner: AG
 feature: 번역
-role: Architect,Administrator
+role: Architect,Admin
 exl-id: 1b931fef-eed0-4758-993d-cdf8d478fb6f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1935'
 ht-degree: 6%
