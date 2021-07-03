@@ -7,8 +7,8 @@ topic-tags: administering
 content-type: reference
 exl-id: 3602e1b9-624d-408f-a7f6-1598b62dbd22
 feature: 비디오 프로필,비디오
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3071'
 ht-degree: 2%
@@ -148,7 +148,7 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
    * 5-10단계를 반복하여 추가 인코딩 사전 설정을 만듭니다. (응용 비디오 스트리밍에는 둘 이상의 비디오 사전 설정이 필요합니다.)
    * 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장]**&#x200B;을 다시 눌러 프로필을 저장합니다.
 
-## 인코딩 작업 진행률 모니터링 {#monitoring-the-progress-of-an-encoding-job}
+## 인코딩 작업 진행 상태 모니터링 {#monitoring-the-progress-of-an-encoding-job}
 
 비디오 인코딩 작업의 진행 상태를 시각적으로 모니터링할 수 있도록 처리 표시기(또는 진행률 표시줄)가 표시됩니다.
 
@@ -289,7 +289,7 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 
 1. 페이지 상단 오른쪽에서 **[!UICONTROL 저장]**&#x200B;을 탭합니다.
 
-### Dynamic Media 비디오 인코딩 프로필 {#copying-a-video-encoding-profile} 복사
+### Dynamic Media 비디오 인코딩 프로필 복사 {#copying-a-video-encoding-profile}
 
 1. AEM 로고를 탭하고 **[!UICONTROL 도구 > 자산 > 비디오 프로필]**&#x200B;로 이동합니다.
 1. **[!UICONTROL 비디오 프로필]** 페이지에서 비디오 프로필 이름 하나를 선택합니다.
@@ -304,14 +304,14 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 
 1. 페이지 상단 오른쪽에서 **[!UICONTROL 저장]**&#x200B;을 탭합니다.
 
-### Dynamic Media 비디오 인코딩 프로필 {#deleting-a-video-encoding-profile} 삭제
+### Dynamic Media 비디오 인코딩 프로필 삭제 {#deleting-a-video-encoding-profile}
 
 1. AEM 로고를 탭하고 **[!UICONTROL 도구 > 자산 > 비디오 프로필]**&#x200B;로 이동합니다.
 1. **[!UICONTROL 비디오 프로필]** 페이지에서 하나 이상의 비디오 프로필 이름을 확인합니다.
 1. 도구 모음에서 **[!UICONTROL 삭제]**&#x200B;를 누릅니다.
 1. **[!UICONTROL 확인]**&#x200B;을 누릅니다.
 
-## 폴더 {#applying-a-video-profile-to-folders}에 Dynamic Media 비디오 프로필 적용
+## 폴더에 Dynamic Media 비디오 프로필 적용 {#applying-a-video-profile-to-folders}
 
 비디오 프로필을 폴더에 할당하면 모든 하위 폴더는 상위 폴더에서 프로필을 자동으로 상속받습니다. 즉, 폴더에 하나의 비디오 프로필만 할당할 수 있습니다. 따라서 자산을 업로드, 저장, 사용 및 보관하는 의 폴더 구조를 신중하게 고려하십시오.
 
@@ -329,13 +329,13 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 
 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
-#### 프로필 사용자 인터페이스 {#applying-video-profiles-to-folders-from-profiles-user-interface}의 폴더에 Dynamic Media 비디오 프로필 적용
+#### 프로필 사용자 인터페이스의 폴더에 Dynamic Media 비디오 프로필 적용 {#applying-video-profiles-to-folders-from-profiles-user-interface}
 
 1. AEM 로고를 탭하고 **[!UICONTROL 도구 > 자산 > 비디오 프로필]**&#x200B;로 이동합니다.
 1. 폴더 또는 여러 폴더에 적용할 비디오 프로필을 선택합니다.
 1. **[!UICONTROL 폴더에 프로필 적용]**&#x200B;을 탭하고 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택하고 **[!UICONTROL 적용]**&#x200B;을 탭합니다. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
-#### 속성 {#applying-video-profiles-to-folders-from-properties}의 폴더에 Dynamic Media 비디오 프로필 적용
+#### 속성의 폴더에 Dynamic Media 비디오 프로필 적용 {#applying-video-profiles-to-folders-from-properties}
 
 1. AEM 로고를 탭하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음, 비디오 프로필을 적용할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 눌러 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 누릅니다.
@@ -355,13 +355,13 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 
 ![chlimage_1-519](assets/chlimage_1-519.png)
 
-## 폴더 {#removing-a-video-profile-from-folders}에서 Dynamic Media 비디오 프로필 제거
+## 폴더에서 Dynamic Media 비디오 프로필 제거 {#removing-a-video-profile-from-folders}
 
 폴더에서 비디오 프로필을 제거하면 모든 하위 폴더는 해당 상위 폴더에서 프로필 제거를 자동으로 상속합니다. 그러나 폴더 내에서 발생한 파일의 모든 처리가 그대로 유지됩니다.
 
 **[!UICONTROL 도구]** 메뉴 내에서 또는 폴더에 있는 경우 **[!UICONTROL 폴더 설정]**&#x200B;에서 비디오 프로필을 제거할 수 있습니다. 이 섹션에서는 두 가지 방법으로 폴더에서 비디오 프로필을 제거하는 방법을 설명합니다.
 
-### 프로필 사용자 인터페이스 {#removing-video-profiles-from-folders-via-profiles-user-interface} 를 통해 폴더에서 Dynamic Media 비디오 프로필을 제거합니다.
+### 프로필 사용자 인터페이스를 통해 폴더에서 Dynamic Media 비디오 프로필 제거 {#removing-video-profiles-from-folders-via-profiles-user-interface}
 
 1. AEM 로고를 탭하고 **[!UICONTROL 도구 > 자산 > 비디오 프로필]**&#x200B;로 이동합니다.
 1. 폴더 또는 여러 폴더에서 제거할 비디오 프로필을 선택합니다.
@@ -369,7 +369,7 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 
    이름이 더 이상 폴더 이름 아래에 표시되지 않으므로 비디오 프로필이 더 이상 폴더에 적용되지 않았는지 확인할 수 있습니다.
 
-### {#removing-video-profiles-from-folders-via-properties} 속성을 통해 폴더에서 Dynamic Media 비디오 프로필 제거
+### 속성을 통해 폴더에서 Dynamic Media 비디오 프로필 제거 {#removing-video-profiles-from-folders-via-properties}
 
 1. AEM 로고를 탭하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음, 비디오 프로필을 제거할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 눌러 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 누릅니다.
