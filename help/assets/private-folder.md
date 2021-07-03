@@ -3,9 +3,9 @@ title: 비공개 폴더 공유
 description: Adobe Experience Manager (AEM) Assets에서 비공개 폴더를 만들고 다른 사용자와 공유하고, 이들에게 다양한 권한을 할당하는 방법을 알아보십시오.
 contentOwner: AG
 feature: 협업
-role: Business Practitioner
+role: User
 exl-id: b6aa3cba-4085-47ac-a249-7461baee2a00
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 4%
