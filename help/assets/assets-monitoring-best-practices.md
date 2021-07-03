@@ -3,16 +3,16 @@ title: Assets 모니터링 우수 사례
 description: 배포된 후 AEM 인스턴스의 환경 및 성능을 모니터링하기 위한 우수 사례입니다.
 contentOwner: AG
 feature: 자산 관리
-role: Administrator,Architect
+role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '1766'
 ht-degree: 0%
 
 ---
 
-# 자산 모니터링 우수 사례 {#assets-monitoring-best-practices}
+# Assets 모니터링 우수 사례 {#assets-monitoring-best-practices}
 
 AEM(Adobe Experience Manager) 자산 관점에서 모니터링에는 다음 프로세스 및 기술에 대한 관찰과 보고가 포함되어야 합니다.
 
@@ -74,7 +74,7 @@ AEM 인스턴스의 장기 모니터링에는 실시간으로 모니터링되는
 
 각 항목을 모니터링하려면 NewRelic(TM) 및 AppDynamics(TM)와 같은 외부 도구가 필요합니다. 이러한 도구를 사용하여 시스템에 대한 경고를 정의할 수 있습니다. 예를 들어 높은 시스템 사용률, 워크플로우 백업, 상태 확인 실패 또는 웹 사이트에 대한 인증되지 않은 액세스 등이 있습니다. Adobe은 다른 도구에 비해 특정 도구를 권장하지 않습니다. 자신에게 적합한 도구를 찾고 이를 활용하여 설명된 항목을 모니터링합니다.
 
-#### 내부 응용 프로그램 모니터링 {#internal-application-monitoring}
+#### 내부 애플리케이션 모니터링 {#internal-application-monitoring}
 
 내부 애플리케이션 모니터링에는 JVM, 컨텐츠 저장소 등 AEM 스택을 구성하는 응용 프로그램 구성 요소를 모니터링하고 플랫폼에 구축된 사용자 정의 응용 프로그램 코드를 통해 모니터링합니다. 일반적으로 SolarWinds(TM), HP OpenView(TM), Hyperic(TM), Javbix(TM) 등과 같이 널리 사용되는 다양한 모니터링 솔루션에서 직접 모니터링할 수 있는 JMX Mbeans를 통해 수행됩니다. JMX에 대한 직접 연결을 지원하지 않는 시스템의 경우 셸 스크립트를 작성하여 JMX 데이터를 추출하고 해당 데이터를 기본적으로 이해하는 형식으로 이러한 시스템에 표시할 수 있습니다.
 
@@ -185,7 +185,7 @@ JMX Mbeans에 대한 원격 액세스는 기본적으로 활성화되지 않습�
    * 경보 임계값:상태가 좋지 않으면
    * 경고 정의:로그 파일에 오류가 있습니다. 문제의 원인에 대한 자세한 내용은 로그 속성을 확인하십시오.
 
-## 일반적인 문제 및 해결 방법 {#common-issues-and-resolutions}
+## 일반적인 문제 및 해결 방법  {#common-issues-and-resolutions}
 
 모니터링 프로세스에서 문제가 발생하면 AEM 인스턴스와 관련된 일반적인 문제를 해결하기 위해 수행할 수 있는 몇 가지 문제 해결 작업이 있습니다.
 
