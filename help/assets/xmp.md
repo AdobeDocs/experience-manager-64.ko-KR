@@ -3,9 +3,9 @@ title: XMP 메타데이터
 description: AEM Assets에서 메타데이터 관리를 위해 사용하는 XMP(Extensible Metadata Platform) 메타데이터 표준에 대해 알아봅니다. XMP은 다양한 애플리케이션을 위한 메타데이터 생성, 처리 및 교환을 위한 표준 형식을 제공합니다.
 contentOwner: AG
 feature: 메타데이터
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 32c4ca3d-2e9e-46a3-b4c7-70dcc50daaaa
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 0%
@@ -20,7 +20,7 @@ XMP(Extensible Metadata Platform)은 모든 메타데이터 관리를 위해 AEM
 
 [XMP 사양](https://www.adobe.com/devnet/xmp.html)은 Adobe에서 사용할 수 있습니다.
 
-## XMP이란?{#what-is-xmp}
+## XMP이란? {#what-is-xmp}
 
 AEM Assets은 기본적으로 Adobe에 의해 실행되는 확장 가능한 메타데이터 플랫폼인 XMP을 지원합니다. XMP은 표준화된 독점 메타데이터를 디지털 자산에 처리하고 저장하는 표준입니다. XMP은 여러 애플리케이션이 메타데이터로 효과적으로 작동할 수 있도록 하는 일반적인 표준으로 설계되었습니다.
 
@@ -43,7 +43,7 @@ XMP은 정의된 메타데이터 항목 세트와 함께 사용할 수 있는 [�
 
 XMP은 가장 일반적으로 직렬화되어 [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://en.wikipedia.org/wiki/Resource_Description_Framework)(RDF)의 하위 집합을 사용하여 저장됩니다. 이 하위 집합은 [XML](https://en.wikipedia.org/wiki/XML)로 표시됩니다.
 
-## XMP {#advantages-of-xmp}의 이점
+## XMP의 이점 {#advantages-of-xmp}
 
 XMP은 다른 인코딩 표준 및 스키마에 비해 다음과 같은 이점이 있습니다.
 
