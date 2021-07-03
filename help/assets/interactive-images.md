@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 exl-id: 4d3299e2-269b-4a41-a979-c884c707666d
 feature: 대화형 이미지
-role: Business Practitioner
-source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
+role: User
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '4261'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
 
-## 대화형 이미지 배너가 만들어지는 방법을 확인하십시오 {#watch-how-interactive-image-banners-are-created}
+## 대화형 이미지 배너를 만드는 방법을 확인하십시오 {#watch-how-interactive-image-banners-are-created}
 
 [대화형 이미지 배너를 만드는 방법에 대한 10분 및 33초 연습을 시청하십시오](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). 또한 대화형 이미지 배너를 미리 보고 편집하고 전달하는 방법을 알아봅니다.
 
@@ -214,7 +214,7 @@ AEM Assets과 함께 제공되는 **[!UICONTROL Shopperable_Banner]**&#x200B;라
 
    이제 이미지 배너를 업로드할 준비가 되었습니다.
 
-## 이미지 배너 업로드 중 {#uploading-an-image-banner}
+## 이미지 배너 업로드 {#uploading-an-image-banner}
 
 사용하려는 이미지를 이미 업로드한 경우 다음 단계인 [이미지 배너에 핫스팟 추가](#adding-hotspots-to-an-image-banner)로 이동하십시오.
 
@@ -337,7 +337,7 @@ d.(선택 사항) 핫스팟을 삭제하려면 이미지에서 핫스팟을 선�
 
 대화형 이미지 자산을 게시하는 방법에 대한 자세한 내용은 [자산 게시](publishing-dynamicmedia-assets.md) 를 참조하십시오.
 
-## 웹 사이트 {#integrating-an-interactive-image-with-your-website}와 대화형 이미지 통합
+## 웹 사이트와 대화형 이미지 통합 {#integrating-an-interactive-image-with-your-website}
 
 이제 배너 이미지를 업로드하고, 이미지에 핫스팟을 추가하고, 대화형 이미지를 게시하면 웹 사이트 페이지에 추가할 수 있습니다.
 
@@ -381,7 +381,7 @@ AEM Sites 고객의 경우 대화형 미디어 구성 요소를 페이지로 드
 
 이제 대화형 이미지를 웹 사이트의 기존 Quickview와 통합할 준비가 되었습니다.
 
-## 대화형 이미지를 기존 Quickview {#integrating-an-interactive-image-with-an-existing-quickview}과 통합
+## 기존 Quickview와 대화형 이미지 통합 {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
 >
