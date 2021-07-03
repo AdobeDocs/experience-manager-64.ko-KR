@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 286a4f26-c0ad-4691-80d8-d17ba1a2dfe0
 discoiquuid: 92eacea5-7511-48ce-8a72-ff4552ebb07d
 feature: 메타데이터
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 1bc72dac-41f7-4593-aaea-d48ebd94b43e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1086'
 ht-degree: 2%
@@ -24,7 +24,7 @@ Adobe Experience Manager (AEM) 자산을 사용하면 폴더 속성 페이지에
 >
 >이 기능을 사용하려면 서비스 팩 2 이상을 배포하고 AEM 6.4가 필요합니다. AEM 6.4 서비스 팩 세부 정보에 대해서는 이 [릴리스 노트](/help/release-notes/sp-release-notes.md)를 참조하십시오.
 
-## {#add-a-folder-metadata-schema-form} 폴더 메타데이터 스키마 추가
+## 폴더 메타데이터 스키마 양식 추가 {#add-a-folder-metadata-schema-form}
 
 폴더 메타데이터 스키마 Forms 편집기를 사용하여 폴더에 대한 메타데이터 스키마를 만들고 편집합니다.
 
@@ -109,13 +109,13 @@ Adobe Experience Manager (AEM) 자산을 사용하면 폴더 속성 페이지에
 
 ![delete_form](assets/delete_form.png)
 
-## 폴더 메타데이터 스키마 {#assign-a-folder-metadata-schema} 할당
+## 폴더 메타데이터 스키마 할당 {#assign-a-folder-metadata-schema}
 
 폴더 메타데이터 스키마 Forms 페이지나 폴더를 만들 때 폴더에 폴더 메타데이터 스키마를 할당할 수 있습니다.
 
 폴더에 대한 메타데이터 스키마를 구성하는 경우 스키마 양식의 경로는 아래의 폴더 노드의 `folderMetadataSchema` 속성에 저장됩니다.*/jcr:content*.
 
-### 폴더 메타데이터 스키마 페이지 {#assign-to-a-schema-from-the-folder-metadata-schema-page}에서 스키마에 할당
+### 폴더 메타데이터 스키마 페이지에서 스키마에 할당 {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
 1. AEM 로고를 탭/클릭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 폴더 메타데이터 스키마]**&#x200B;로 이동합니다.
 1. 폴더 메타데이터 스키마 Forms 페이지에서 폴더에 적용할 스키마 양식을 선택합니다.
@@ -130,7 +130,7 @@ Adobe Experience Manager (AEM) 자산을 사용하면 폴더 속성 페이지에
 
    ![folder_metadata_properties](assets/folder_metadata_properties.png)
 
-### {#assign-a-schema-when-creating-a-folder} 폴더를 만들 때 스키마 할당
+### 폴더를 만들 때 스키마 할당 {#assign-a-schema-when-creating-a-folder}
 
 폴더를 만들 때 폴더 메타데이터 스키마를 할당할 수 있습니다. 시스템에 폴더 메타데이터 스키마가 하나 이상 있으면 **[!UICONTROL 폴더 만들기]** 대화 상자에 추가 목록이 표시됩니다. 원하는 스키마를 선택할 수 있습니다. 기본적으로 선택된 스키마가 없습니다.
 
@@ -143,7 +143,7 @@ Adobe Experience Manager (AEM) 자산을 사용하면 폴더 속성 페이지에
 1. 메타데이터 스키마를 적용한 폴더의 메타데이터 속성을 엽니다.
 1. 폴더 메타데이터 필드를 보려면 **[!UICONTROL 폴더 메타데이터]** 탭을 탭/클릭합니다.
 
-## 폴더 메타데이터 스키마 {#use-the-folder-metadata-schema} 사용
+## 폴더 메타데이터 스키마 사용 {#use-the-folder-metadata-schema}
 
 폴더 메타데이터 스키마로 구성된 폴더의 속성을 엽니다. 폴더 속성 페이지에 **[!UICONTROL 폴더 메타데이터]** 탭이 표시됩니다. 폴더 메타데이터 스키마 양식을 보려면 이 탭을 선택합니다.
 
