@@ -3,16 +3,16 @@ title: AEM Assets에서 지원되는 파일 형식
 description: AEM Assets에서 지원하는 파일 형식 및 MIME 유형과 각 형식에 대해 지원되는 기능 목록입니다.
 contentOwner: AG
 feature: 자산 관리,표현물
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: ee25fe8f-36fb-42b3-9f90-0ea77bc02e2f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1651'
 ht-degree: 9%
 
 ---
 
-# AEM Assets {#assets-supported-formats}에서 지원되는 파일 형식
+# AEM Assets에서 지원되는 파일 형식 {#assets-supported-formats}
 
 AEM Assets은 다양한 파일 형식을 지원하며 각 기능은 다양한 MIME 유형에 대한 다양한 지원을 제공합니다.
 
@@ -78,7 +78,7 @@ Dynamic Media 기능에 대해 지원되는 래스터 이미지 형식은 다음
 
 * EPS 파일의 경우, PS-Adobe 버전 3.0 이상에서 메타데이터 원본에 쓰기 기능이 지원됩니다.
 
-## Dynamic Media {#unsupported-image-formats-dynamic-media}에서 지원되지 않는 래스터 이미지 형식
+## Dynamic Media에서 지원되지 않는 래스터 이미지 형식 {#unsupported-image-formats-dynamic-media}
 
 다음 목록에서는 Dynamic Media에서 지원되지 않는 *래스터 이미지 파일 형식의 하위 유형을 설명합니다.*
 
@@ -192,7 +192,7 @@ Dynamic Media 기능에 대해 지원되는 문서 형식은 다음과 같습니
 | WMV | ✓ | ✓ |  | * | * |
 | SWF | ✓ | ✓ |  |  |  |
 
-## Dynamic Media 코드 변환 {#supported-input-video-formats-for-dynamic-media-transcoding}에 대한 비디오 형식을 입력합니다.
+## Dynamic Media 코드 변환용 비디오 형식 입력 {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | 비디오 파일 확장 | 컨테이너 | 권장 비디오 코덱스 | 지원되지 않는 비디오 코덱입니다 |
 |---|---|---|---|
