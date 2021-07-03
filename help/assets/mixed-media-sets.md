@@ -7,8 +7,8 @@ topic-tags: dynamic-media
 content-type: reference
 exl-id: 252c1a50-17ac-4412-88d6-49bb6850658d
 feature: 미디어 집합 혼합
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 1%
@@ -162,7 +162,7 @@ Assets](managing-assets-touch-ui.md)의 자산처럼 사용자 인터페이스�
 
 혼합 미디어 세트를 미리 보는 방법에 대한 자세한 내용은 [자산 미리 보기](previewing-assets.md) 를 참조하십시오.
 
-## 혼합 미디어 집합 게시 중 {#publishing-mixed-media-sets}
+## 혼합 미디어 집합 게시 {#publishing-mixed-media-sets}
 
 혼합 미디어 세트를 게시하는 방법에 대한 자세한 내용은 [자산 게시](publishing-dynamicmedia-assets.md) 를 참조하십시오.
 
