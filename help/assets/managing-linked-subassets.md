@@ -3,16 +3,16 @@ title: 조합 자산을 관리하고 하위 자산을 생성합니다.
 description: InDesign, Adobe Illustrator 및 Photoshop 파일 내에서 AEM 자산에 대한 참조를 만드는 방법을 알아봅니다. 또한 페이지 뷰어 기능을 사용하여 PDF, INDD, PPT, PPTX 및 AI 파일을 포함한 여러 페이지 파일의 개별 페이지를 보는 방법을 알아봅니다.
 contentOwner: AG
 feature: 자산 관리
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 9fa44b26-76f7-48e2-a9df-4fd1c0074158
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1412'
 ht-degree: 0%
 
 ---
 
-# 하위 자산이 있는 복합 자산 관리 {#managing-compound-assets}
+# 하위 자산과 조합 자산 관리 {#managing-compound-assets}
 
 AEM(Adobe Experience Manager) 자산은 업로드된 파일에 이미 저장소에 있는 자산에 대한 참조가 포함되어 있는지 식별할 수 있습니다. 이 기능은 지원되는 파일 형식에만 사용할 수 있습니다. 업로드된 자산에 AEM 자산에 대한 참조가 있으면, 업로드된 자산과 참조된 자산 사이에 양방향 링크가 만들어집니다.
 
@@ -53,11 +53,11 @@ InDesign 파일 내에서 AEM 자산을 참조하려면 AEM 자산을 InDesign �
 
 INDD 파일이 업로드되면 리포지토리에서 `xmpMM:InstanceID` 및 `xmpMM:DocumentID` 속성을 갖는 자산을 쿼리하여 참조를 가져옵니다.
 
-### 자산 {#create-references-by-dragging-aem-assets}을(를) 끌어 참조를 만듭니다
+### 자산을 끌어 참조 만들기 {#create-references-by-dragging-aem-assets}
 
 이 절차는 [Adobe Illustrator](#refai)에서 자산을 참조로 추가합니다.
 
-### ZIP 파일 {#create-references-to-aem-assets-by-exporting-a-zip-file}을 내보내어 자산에 대한 참조를 만듭니다
+### ZIP 파일을 내보내어 자산에 대한 참조를 만듭니다 {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
 1. [워크플로우 모델 만들기](/help/sites-developing/workflows-models.md)의 단계를 수행하여 새 워크플로우를 만듭니다.
 1. Adobe InDesign](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html)의 [패키지 기능을 사용하여 문서를 내보냅니다. Adobe InDesign은 문서 및 연결된 자산을 패키지로 내보낼 수 있습니다. 이 경우 내보낸 폴더에는 InDesign 파일의 하위 자산을 포함하는 `Links` 폴더가 있습니다. `Links` 폴더가 INDD 파일과 동일한 폴더에 있습니다.
@@ -109,7 +109,7 @@ INDD 파일이 업로드되면 리포지토리에서 `xmpMM:InstanceID` 및 `xmp
 
 ![다중 페이지 자산에 대한 하위 자산 보기](assets/view_subassets_simulation.gif)
 
-## 다중 페이지 파일 {#view-pages-of-a-multi-page-file} 의 페이지 보기
+## 다중 페이지 파일의 페이지 보기 {#view-pages-of-a-multi-page-file}
 
 AEM Assets의 페이지 뷰어 기능을 사용하여 PDF, INDD, PPT, PPTX 및 AI 파일과 같은 다중 페이지 파일을 볼 수 있습니다. 다중 페이지 자산을 열고 페이지의 왼쪽 위 모서리에서 **[!UICONTROL 페이지 보기]**&#x200B;를 클릭합니다. 열리는 페이지 뷰어 에는 자산의 페이지와 각 페이지를 탐색하고 확대/축소하는 컨트롤이 표시됩니다.
 
