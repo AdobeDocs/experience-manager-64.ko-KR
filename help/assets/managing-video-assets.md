@@ -6,9 +6,9 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 feature: 자산 관리,비디오
-role: Business Practitioner
+role: User
 exl-id: eb652414-5b10-45af-a8b6-f1de649994c5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '798'
 ht-degree: 1%
@@ -37,7 +37,7 @@ AEM Assets은 확장 MP4를 사용하여 비디오 자산에 대한 미리 보�
 
    ![chlimage_1-202](assets/chlimage_1-202.png)
 
-## 2GB {#configuration-to-upload-video-assets-that-are-larger-than-gb}보다 큰 자산을 업로드하도록 구성
+## 2GB보다 큰 자산을 업로드하도록 구성 {#configuration-to-upload-video-assets-that-are-larger-than-gb}
 
 기본적으로 AEM Assets에서는 파일 크기 제한으로 인해 2GB보다 큰 자산을 업로드할 수 없습니다. 그러나 CRXDE Lite으로 이동하여 `/apps` 디렉토리 아래에 노드를 만들어 이 제한을 덮어쓸 수 있습니다. 노드에는 동일한 노드 이름, 디렉토리 구조 및 이와 비교할 수 있는 노드 속성이 있어야 합니다.
 
