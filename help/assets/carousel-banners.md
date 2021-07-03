@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: 4b532cd3-1561-4b5c-8b4b-420c278926f0
 exl-id: d2fdad3f-513b-4147-a7c6-a3c1b64dd6e3
 feature: 회전 배너
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '4789'
 ht-degree: 0%
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ![chlimage_1-440](assets/chlimage_1-440.png)
 
-## 회전 배너가 만들어지는 방법을 확인하십시오 {#watch-how-carousel-banners-are-created}
+## 회전 배너가 만들어지는 방식을 확인하십시오 {#watch-how-carousel-banners-are-created}
 
 [캐러셀 배너를 만드는 방법에 대한 10분 33초 연습을 시청하십시오](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). 캐러셀 배너를 미리 보고 편집하고 전달하는 방법도 알아봅니다.
 
@@ -177,7 +177,7 @@ AEM Assets에서 배너 이미지에 핫스팟이나 이미지 맵을 추가할 
  </tbody> 
 </table>
 
-## 이미지 배너 업로드 중 {#uploading-image-banners}
+## 이미지 배너 업로드 {#uploading-image-banners}
 
 사용하려는 이미지를 이미 업로드한 경우 다음 단계인 [회전 메뉴 집합 만들기](#creating-carousel-sets)로 이동하십시오. 회전판에 사용되는 이미지는 Dynamic Media이 활성화된 후에 업로드해야 합니다.
 
@@ -319,7 +319,7 @@ AEM Assets에서 배너 이미지에 핫스팟이나 이미지 맵을 추가할 
 
    웹 사이트 랜딩 페이지에 설정된 회전 메뉴 추가](#adding-a-carousel-banner-to-your-website-page)를 참조하십시오[
 
-## 회전 메뉴 집합 편집 {#editing-carousel-sets}
+## 회전판 세트 편집 {#editing-carousel-sets}
 
 >[!NOTE]
 >
@@ -385,7 +385,7 @@ AEM Assets에서 배너 이미지에 핫스팟이나 이미지 맵을 추가할 
 1. 페이지 왼쪽에 있는 패널의 **[!UICONTROL 뷰어]** 목록에서 사용할 회전 배너 뷰어 사전 설정의 이름을 탭합니다.
 1. 이미지의 핫스팟이나 이미지 맵을 탭하여 연결된 동작을 테스트합니다.
 
-## 회전 배너 게시 중 {#publishing-carousel-banners}
+## 회전 배너 게시 {#publishing-carousel-banners}
 
 회전판을 사용하려면 회전판을 게시해야 합니다. 회전 메뉴 세트를 게시하면 URL 및 포함 코드가 활성화됩니다. 또한 확장성과 성능을 제공하기 위해 CDN과 통합된 Dynamic Media 클라우드에 회전판을 게시합니다.
 
@@ -395,7 +395,7 @@ AEM Assets에서 배너 이미지에 핫스팟이나 이미지 맵을 추가할 
 
 회전 배너를 게시하는 방법에 대한 자세한 내용은 [Dynamic Media 자산 게시](publishing-dynamicmedia-assets.md) 를 참조하십시오.
 
-## 웹 사이트 페이지에 회전 배너를 추가하는 중 {#adding-a-carousel-banner-to-your-website-page}
+## 웹 사이트 페이지에 회전 배너 추가 {#adding-a-carousel-banner-to-your-website-page}
 
 배너 이미지를 업로드하여 캐러셀, 핫스팟 및/또는 이미지 맵을 배너에 추가하고 캐러셀 세트를 게시하면 기존 웹 사이트 페이지에 추가할 수 있습니다.
 
@@ -411,7 +411,7 @@ AEM Sites 고객인 경우, 대화형 미디어 구성 요소를 페이지로 �
 
    복사된 포함 코드는 응답형이므로 페이지의 포함 영역에 자동으로 맞게 조정됩니다.
 
-## 캐러셀 배너를 기존 빠른 보기 {#integrating-the-carousel-banner-with-an-existing-quickview}와 통합
+## 회전판 배너와 기존 빠른 보기 통합 {#integrating-the-carousel-banner-with-an-existing-quickview}
 
 이 작업은 독립 실행형 AEM Assets 고객인 경우에만 적용됩니다.
 
