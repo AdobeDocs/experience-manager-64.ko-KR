@@ -8,7 +8,7 @@ discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 feature: 자산 관리,비디오
 role: User
 exl-id: eb652414-5b10-45af-a8b6-f1de649994c5
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1795b0faed0570e8130c1ba60de07bda49db8fde
 workflow-type: tm+mt
 source-wordcount: '798'
 ht-degree: 1%
@@ -44,7 +44,7 @@ AEM Assets은 확장 MP4를 사용하여 비디오 자산에 대한 미리 보�
 AEM Assets 구성 외에 다음 구성을 변경하여 큰 자산을 업로드합니다.
 
 * 토큰 만료 시간을 늘립니다. `https://[aem_server]:[port]/system/console/configMgr`의 웹 콘솔에서 [!UICONTROL Granite CSRF 서블릿] Adobe을 참조하십시오. 자세한 내용은 [CSRF 보호](/help/sites-developing/csrf-protection.md)를 참조하십시오.
-* Dispatcher 구성에서 `receiveTimeout`을 늘립니다. 자세한 내용은 [Dispatcher 구성 Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)를 참조하십시오.
+* Dispatcher 구성에서 `receiveTimeout`을 늘립니다. 자세한 내용은 [Dispatcher 구성 Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#renders-options)를 참조하십시오.
 
 >[!NOTE]
 >
