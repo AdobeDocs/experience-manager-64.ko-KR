@@ -3,9 +3,9 @@ title: 컬렉션, 코드 조각 및 코드 조각 템플릿에 대한 다중 임
 description: 무단 액세스를 방지하기 위해 고객 조직을 기반으로 CRX 저장소의 컨텐츠를 구분합니다.
 contentOwner: AG
 feature: 컬렉션
-role: Architect,Administrator,Leader
+role: Architect,Admin,Leader
 exl-id: d00a671a-6707-4941-868d-fa13510b7b60
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 7%
