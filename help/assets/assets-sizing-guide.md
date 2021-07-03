@@ -6,9 +6,9 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
 feature: 자산 관리
-role: Architect,Administrator
+role: Architect,Admin
 exl-id: 6115e5e8-9cf5-417c-91b3-0c0c9c278b5b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1860'
 ht-degree: 0%
@@ -69,7 +69,7 @@ AEM(Adobe Experience Manager) Assets 구현을 위해 환경 크기를 조정할
 
 몇 가지 위험 때문에 모든 경우에 데이터 저장소를 공유하는 것이 권장되지 않습니다.
 
-#### 단일 실패 지점 {#single-point-of-failure}
+#### 단일 장애 지점 {#single-point-of-failure}
 
 공유 데이터 저장소가 있는 경우 인프라에서 단일 장애 지점이 발생합니다. 시스템에 하나의 작성자 및 두 개의 게시 인스턴스가 있고 각각 고유한 데이터 저장소가 있는 시나리오를 생각해 보십시오. 충돌하면 다른 두 항목은 계속 실행될 수 있습니다. 그러나 데이터 저장소가 공유되면 단일 디스크 오류로 인해 전체 인프라가 다운될 수 있습니다. 따라서 데이터 저장소를 빠르게 복원할 수 있는 공유 데이터 저장소의 백업을 유지 관리해야 합니다.
 
