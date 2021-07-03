@@ -3,9 +3,9 @@ title: 검색 패싯
 description: 이 문서에서는 AEM에서 검색 패싯을 만들고, 수정하고, 사용하는 방법에 대해 설명합니다.
 contentOwner: AG
 feature: 검색
-role: Administrator,Developer
+role: Admin,Developer
 exl-id: ef1c0b57-68cc-460e-ae45-e16b079194c2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2538'
 ht-degree: 2%
@@ -194,7 +194,7 @@ CRX 저장소의 옵션에 대한 노드 구조를 수동으로 만드는 대신
 | [!UICONTROL 만료 상태] | 검색 조건자를 사용하여 만료 상태에 따라 자산을 검색합니다 | <ul><li>레이블</li><li>속성 이름</li><li>설명</li></ul> |
 | [!UICONTROL 숨김] | 자산을 검색할 숨겨진 필드 속성을 정의하는 검색 조건입니다 | <ul><li>속성 이름</li><li>속성 값</li><li>설명</li></ul> |
 
-## 기본 검색 패싯 복원 중 {#restoring-default-search-facets}
+## 기본 검색 패싯 복원 {#restoring-default-search-facets}
 
 기본적으로 **[!UICONTROL Forms 검색]** 페이지의 **[!UICONTROL 자산 관리자 검색 레일]** 앞에 잠금 아이콘이 표시됩니다. 검색 패싯을 양식에 추가하면 기본 양식이 수정되었음을 나타내는 잠금 아이콘이 사라집니다.
 
