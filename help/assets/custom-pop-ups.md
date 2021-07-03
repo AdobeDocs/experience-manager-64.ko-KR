@@ -11,15 +11,15 @@ content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 exl-id: 56b070e4-b445-4488-acff-685b7ce5785f
 feature: 구성
-role: Administrator,Business Practitioner,Developer
-source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
+role: Admin,User,Developer
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 1%
 
 ---
 
-# 빠른 보기 {#using-quickviews-to-create-custom-pop-ups}를 사용하여 사용자 지정 팝업 만들기
+# 빠른 보기를 사용하여 사용자 지정 팝업 만들기 {#using-quickviews-to-create-custom-pop-ups}
 
 기본 Quickview는 전자 상거래 경험에서 사용되어 제품 정보와 함께 팝업이 표시되어 구매를 유도합니다. 그러나 사용자 정의 컨텐츠를 트리거하여 팝업에 표시할 수 있습니다. 사용 중인 뷰어에 따라 이 기능을 사용하면 핫스팟이나 축소판 이미지를 클릭하거나 이미지 맵에서 정보나 관련 컨텐츠를 볼 수 있습니다.
 
