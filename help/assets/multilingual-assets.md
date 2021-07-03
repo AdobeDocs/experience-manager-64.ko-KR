@@ -3,9 +3,9 @@ title: 다국어 자산
 description: 이진, 메타데이터 및 태그를 포함한 자산을 여러 언어로 번역하는 워크플로우를 자동화하는 방법을 알아봅니다.
 contentOwner: AG
 feature: 자산 관리
-role: Administrator
+role: Admin
 exl-id: 8e065137-3599-48af-a040-6923b7b5e1d9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 1%
