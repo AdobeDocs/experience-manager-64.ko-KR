@@ -3,9 +3,9 @@ title: AEM Assets에서 작동하도록 ImageMagick 설치 및 구성
 description: ImageMagick 소프트웨어, 설치 방법, 명령줄 프로세스 단계 설정, 이미지 축소판 편집, 작성 및 생성 등에 사용
 contentOwner: AG
 feature: 표현물,개발자 도구
-role: Administrator
+role: Admin
 exl-id: 9aeda88a-fd66-4fad-b496-3352a6ecab81
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 2%
@@ -24,7 +24,7 @@ ImageMagick를 사용하여 대용량 파일을 처리하려면 일반적인 메
 >
 >AMS(Adobe Managed Services)에서 AEM을 사용하는 경우 대용량 PSD 또는 PSB 파일을 많이 처리할 계획이면 Adobe 고객 지원 센터에 문의하십시오. Experience Manager은 30000 x 23000 픽셀 이상의 고해상도 PSB 파일을 처리하지 못할 수 있습니다.
 
-## ImageMagick {#installing-imagemagick} 설치
+## ImageMagick 설치 {#installing-imagemagick}
 
 다양한 운영 체제에서 여러 버전의 ImageMagic 설치 파일을 사용할 수 있습니다. 운영 체제에 적합한 버전을 사용하십시오.
 
@@ -34,7 +34,7 @@ ImageMagick를 사용하여 대용량 파일을 처리하려면 일반적인 메
 1. 경로 환경 변수를 ImageMagic 설치 디렉터리로 설정합니다.
 1. 설치가 성공했는지 확인하려면 `identify -version` 명령을 실행합니다.
 
-## 명령줄 프로세스 단계 {#set-up-the-command-line-process-step} 설정
+## 명령줄 프로세스 단계 설정 {#set-up-the-command-line-process-step}
 
 특정 사용 사례에 대해 명령줄 프로세스 단계를 설정할 수 있습니다. JPEG 이미지 파일을 AEM 서버의 `/content/dam`에 추가할 때마다 뒤집힌 이미지와 축소판(140x100, 48x48, 319x319 및 1280x1280)을 생성하려면 다음 단계를 수행하십시오.
 
