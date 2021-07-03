@@ -3,9 +3,9 @@ title: 미디어 핸들러 및 워크플로우를 사용하여 자산 처리
 description: 다양한 미디어 핸들러와 워크플로우에서 이러한 핸들러를 사용하여 자산에 대한 작업을 수행하는 방법에 대해 알아봅니다.
 contentOwner: AG
 feature: 워크플로우,표현물
-role: Business Practitioner
+role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2230'
 ht-degree: 1%
@@ -60,7 +60,7 @@ Adobe Experience Manager Assets는 자산을 처리하는 기본 워크플로우
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
-## 워크플로우에서 미디어 핸들러를 사용하여 자산 {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}에 대한 작업을 수행합니다
+## 워크플로우에서 미디어 핸들러를 사용하여 자산에 대한 작업을 수행합니다 {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
 미디어 핸들러는 워크플로우와 함께 사용되는 서비스입니다.
 
@@ -70,7 +70,7 @@ Experience Manager에는 자산을 처리하는 몇 가지 기본 워크플로�
 
 다음 예제에서는 PDF 문서를 제외한 모든 자산에 대해 하위 자산이 생성되도록 **[!UICONTROL AEM Assets 동기화]** 워크플로우를 향상시키는 방법을 보여줍니다.
 
-### 미디어 처리기 비활성화/활성화 {#disabling-enabling-a-media-handler}
+### 미디어 핸들러 비활성화/활성화 {#disabling-enabling-a-media-handler}
 
 Apache Felix 웹 관리 콘솔을 통해 미디어 핸들러를 비활성화하거나 활성화할 수 있습니다. 미디어 핸들러가 비활성화되면 해당 작업이 자산에 대해 수행되지 않습니다.
 
@@ -81,7 +81,7 @@ Apache Felix 웹 관리 콘솔을 통해 미디어 핸들러를 비활성화하�
 1. 페이지를 새로 고칩니다.미디어 핸들러 옆에 비활성화되었음을 나타내는 아이콘이 표시됩니다.
 1. 미디어 핸들러를 활성화하려면 미디어 핸들러의 이름 옆에 있는 **[!UICONTROL 활성화]**&#x200B;를 클릭하십시오.
 
-### 미디어 처리기 만들기 {#creating-a-new-media-handler}
+### 미디어 핸들러 만들기 {#creating-a-new-media-handler}
 
 새 미디어 유형을 지원하거나 자산에서 특정 작업을 실행하려면 미디어 핸들러를 만들어야 합니다. 이 섹션에서는 진행 방법을 설명합니다.
 
@@ -126,7 +126,7 @@ my.own.stuff 패키지/&amp;ast;&amp;ast;amp;ast;@scr.component inherit=&quot;tr
 * `com.day.cq.dam.core.AbstractAssetHandler` 클래스:이 클래스는 다른 모든 자산 처리기 구현의 기본 역할을 하며 일반적인 사용 기능을 제공합니다.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` 클래스:이 클래스는 다른 모든 자산 처리기 구현의 기본 역할을 하며, 일반적인 사용 기능과 하위 자산 추출에 사용되는 일반적인 기능을 제공합니다.
 
-#### 예:특정 텍스트 처리기 {#example-create-a-specific-text-handler} 만들기
+#### 예:특정 텍스트 처리기 만들기 {#example-create-a-specific-text-handler}
 
 이 섹션에서는 워터마크로 축소판을 생성하는 특정 텍스트 핸들러를 만듭니다.
 
@@ -463,7 +463,7 @@ Experience Manager을 사용하면 워크플로우 내에서 명령줄 도구를
 * 임시 디렉터리를 삭제합니다.
 * 지정된 경우 해당 변환에 따라 축소판을 만듭니다. 축소판의 수와 치수는 단계의 인수에 의해 정의됩니다.
 
-### ImageMagick {#an-example-using-imagemagick} 사용 예
+### ImageMagick 사용 예 {#an-example-using-imagemagick}
 
 다음 예제에서는 명령줄 프로세스 단계를 설정하는 방법을 보여 줍니다. MIME 유형 gif 또는 tiff가 있는 자산이 Experience Manager 서버의 `/content/dam`에 추가될 때마다 원본 이미지를 세 개의 추가 축소판(140x100, 48x48 및 10x250)과 함께 대칭 이동합니다.
 
@@ -499,7 +499,7 @@ Experience Manager을 사용하면 워크플로우 내에서 명령줄 도구를
 1. **[!UICONTROL CQ5 DAM]** 콘솔로 이동합니다(예: `http://localhost:4502/libs/wcm/core/content/damadmin.html`).
 1. 자산 `myImage.tiff`을 열고 전환된 이미지와 세 개의 축소판이 작성되었는지 확인합니다.
 
-#### CommandLineProcess 프로세스 단계 {#configuring-the-commandlineprocess-process-step} 구성
+#### CommandLineProcess 프로세스 단계 구성 {#configuring-the-commandlineprocess-process-step}
 
 이 섹션에서는 `CommandLineProcess`의 **[!UICONTROL 프로세스 인수]**&#x200B;를 설정하는 방법을 설명합니다. [!UICONTROL Process Arguments] 값을 쉼표로 구분하고 공백으로 값을 시작하지 마십시오.
 
