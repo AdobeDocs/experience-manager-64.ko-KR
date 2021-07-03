@@ -3,9 +3,9 @@ title: 관련 자산
 description: 특정 공통 속성을 공유하는 자산을 연결하는 방법을 알아봅니다. 이 기능을 사용하여 자산 간의 소스/파생 관계를 만들 수도 있습니다.
 contentOwner: AG
 feature: 자산 관리,공동 작업
-role: Business Practitioner
+role: User
 exl-id: d19544c4-c8e7-4a39-9c86-15a46dca848e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 4%
@@ -18,7 +18,7 @@ Adobe Experience Manager(AEM) 자산을 사용하면 관련 자산 기능을 사
 
 이렇게 하면 저해상도 파일(예: PDF/JPG)을 공급업체/에이전시에 공유하고 요청 시에만 고해상도 파일(예: INDD)을 사용할 수 있는 유연성이 있습니다.
 
-## 자산 관계 {#relating-assets}
+## 자산 관련 {#relating-assets}
 
 1. 자산 인터페이스에서 연결하려는 자산의 속성 페이지를 엽니다.
 
