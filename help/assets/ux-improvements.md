@@ -3,16 +3,16 @@ title: Assets의 사용자 경험 개선 사항
 description: 이 문서에서는 AEM 6.4 Assets의 사용자 경험 개선 사항에 대해 설명합니다.
 contentOwner: AG
 feature: 릴리스 정보
-role: Leader,Business Practitioner
+role: Leader,User
 exl-id: 65029113-987e-46eb-86eb-8028233031f9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 1%
 
 ---
 
-# Assets {#user-experience-enhancements-in-assets}의 사용자 경험 개선 사항
+# Assets의 사용자 경험 개선 사항 {#user-experience-enhancements-in-assets}
 
 AEM 6.4 Assets에는 원활한 사용자 경험을 제공하고 생산성을 향상시키는 몇 가지 유용성 개선 사항이 포함되어 있습니다. 시장 진출 컨텐츠를 생성/관리할 수 있는 속도 증가는 비즈니스 컨텐츠 속도를 향상시킵니다.
 
