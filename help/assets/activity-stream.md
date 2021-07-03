@@ -3,9 +3,9 @@ title: 타임라인의 활동 스트림
 description: '이 문서에서는 타임라인에 자산에 대한 활동 로그를 표시하는 방법에 대해 설명합니다. '
 contentOwner: AG
 feature: 자산 관리
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 52fa2d59-177f-49ca-a480-7213ce0ca7d7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 6%
