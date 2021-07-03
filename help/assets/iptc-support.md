@@ -3,16 +3,16 @@ title: IPTC 메타데이터 지원
 description: Adobe Experience Manager(AEM) Assets가 Adobe Bridge 및 기타 Creative 앱을 통해 자산에 추가된 IPTC 메타데이터, 크리에이티브 등급 및 키워드를 지원하는 방법을 알아봅니다.
 contentOwner: AG
 feature: 메타데이터
-role: Business Practitioner,Administrator,Leader
+role: User,Admin,Leader
 exl-id: 3e22e8e4-3675-4d6d-94f4-fc1a4d4801e8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
 
 ---
 
-# IPTC 메타데이터 {#support-for-iptc-metadata} 지원
+# IPTC 메타데이터 지원 {#support-for-iptc-metadata}
 
 Adobe Experience Manager(AEM) Assets가 Adobe Bridge 및 기타 Creative 앱을 통해 자산에 추가된 IPTC 메타데이터, 크리에이티브 등급 및 키워드를 지원하는 방법을 알아봅니다.
 
@@ -33,7 +33,7 @@ Adobe Experience Manager (AEM) Assets는 자산을 설명하는 데 일반적으
 1. 필요에 따라 ITPC 확장 메타데이터 속성을 편집합니다.
 1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 탭/클릭하여 변경 사항을 저장합니다.
 
-## 광고 등급 지원 {#creative-rating-support}
+## 크리에이티브 등급 지원 {#creative-rating-support}
 
 속성 페이지에는 개별 사용자 등급 및 전체 등급이 표시되는 것 외에도 Adobe Bridge 및 기타 Creative 앱을 통해 자산에 지정된 등급이 표시됩니다
 
