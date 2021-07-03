@@ -3,22 +3,22 @@ title: 메타데이터 편집 또는 추가 방법
 description: AEM Assets의 자산 메타데이터에 대해 알아보고 자산 메타데이터를 편집할 수 있는 다양한 방법을 알아봅니다.
 contentOwner: AG
 feature: 메타데이터
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: f0522343-f8a9-4d89-8ce8-b3357ae3fe70
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 1%
 
 ---
 
-# 메타데이터 {#how-to-edit-or-add-metadata} 을 편집하거나 추가하는 방법
+# 메타데이터 편집 또는 추가 방법 {#how-to-edit-or-add-metadata}
 
 메타데이터는 검색할 수 있는 자산에 대한 추가 정보입니다. 이미지를 업로드할 때 자동으로 추출됩니다. 기존 메타데이터를 편집하거나 기존 필드에 새 메타데이터 속성을 추가할 수 있습니다(예: 메타데이터 필드가 비어 있는 경우).
 
 회사는 제어되고 안정적인 메타데이터 어휘가 필요하므로 AEM Assets에서는 새 메타데이터 속성을 임시로 추가할 수 없습니다. 작성자가 자산에 새 메타데이터 필드를 추가할 수 없지만 개발자는 추가할 수 있습니다. [Assets](meta-edit.md#editing-metadata-schema)에 대한 새 메타데이터 속성 만들기를 참조하십시오.
 
-## 자산 {#editing-metadata-for-an-asset}에 대한 메타데이터 편집
+## 자산에 대한 메타데이터 편집 {#editing-metadata-for-an-asset}
 
 메타데이터를 편집하려면 다음을 수행하십시오.
 
@@ -46,7 +46,7 @@ XMP Write-back은 [기술 요구 사항.](/help/sites-deploying/technical-requir
 
 메타데이터 스키마를 편집하는 방법에 대한 자세한 내용은 [메타데이터 스키마 양식 편집](metadata-schemas.md#editing-metadata-schema-forms)을 참조하십시오.
 
-## AEM {#registering-a-custom-namespace-within-aem} 내에서 사용자 지정 네임스페이스 등록
+## AEM 내에서 사용자 지정 네임스페이스 등록 {#registering-a-custom-namespace-within-aem}
 
 AEM 내에 고유한 네임스페이스를 추가할 수 있습니다. cq, jcr 및 sling과 같이 사전 정의된 네임스페이스가 있는 것처럼 저장소 메타데이터 및 xml 처리를 위한 네임스페이스를 가질 수 있습니다.
 
