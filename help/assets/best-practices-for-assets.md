@@ -3,16 +3,16 @@ title: AEM을 사용하여 자산을 관리하는 우수 사례
 description: AEM Assets 배포 및 자산을 수집 및 처리하는 데 사용되는 기능에 따라 로드 중인 시스템 안정성 및 성능을 향상시키는 우수 사례를 식별하고 따릅니다.
 contentOwner: AG
 feature: 자산 관리
-role: Architect,Administrator
+role: Architect,Admin
 exl-id: e2ab924b-53cb-4011-8c0a-9e8e59dd2f16
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 0%
 
 ---
 
-# AEM Assets {#best-practices-for-assets} 우수 사례
+# AEM Assets 우수 사례 {#best-practices-for-assets}
 
 Adobe Experience Manager(AEM) Assets는 컨텐츠 속도를 높여 비즈니스 목표 달성에 기여하는 고품질의 디지털 마케팅 경험을 제공하는데 중요한 부분입니다. AEM Assets 내에서 많은 자산을 사용하여 작업하거나 비디오 및 다이내믹 미디어를 포함한 다양한 자산을 정기적으로/정기적으로 업로드하는 경우 시스템 효율성을 위해 디지털 자산 관리 경험을 최적화하는 것이 중요합니다.
 
