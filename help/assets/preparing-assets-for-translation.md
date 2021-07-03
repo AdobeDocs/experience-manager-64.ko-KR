@@ -3,16 +3,16 @@ title: 자산 번역 준비
 description: 다국어 자산을 번역할 준비를 위해 언어 루트 폴더를 만듭니다.
 contentOwner: AG
 feature: 프로젝트,번역
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: cc6c4f9e-8e22-4622-8b24-230ae258351c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 1%
 
 ---
 
-# 자산 번역 준비 중 {#preparing-assets-for-translation}
+# 자산 번역 준비 {#preparing-assets-for-translation}
 
 다국어 자산은 바이너리, 메타데이터 및 태그가 여러 언어로 있는 자산을 의미합니다. 일반적으로 자산에 대한 이진, 메타데이터 및 태그는 한 언어로 존재하며 다국어 프로젝트에서 사용할 수 있도록 다른 언어로 변환됩니다.
 
