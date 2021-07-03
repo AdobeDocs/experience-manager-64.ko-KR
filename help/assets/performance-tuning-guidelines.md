@@ -3,9 +3,9 @@ title: 자산 성능 조정 가이드
 description: 병목 현상을 제거하고 AEM Assets의 성능을 최적화하기 위해 AEM 구성, 하드웨어, 소프트웨어 및 네트워크 구성 요소의 변경 사항에 대한 주요 초점 영역입니다.
 contentOwner: AG
 feature: 자산 관리
-role: Architect,Administrator
+role: Architect,Admin
 exl-id: 6c1bff46-f9e0-4638-9374-a9e820d30534
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3208'
 ht-degree: 0%
@@ -148,7 +148,7 @@ Adobe은 많은 회사에 HTTP 트래픽을 감지하는 방화벽이 있어 이
 
    예를 들어, 워크플로 인스턴스 노드를 만드는 임시 이외의 다양한 워크플로우를 실행한 후 임시 단위로 [ACS AEM Commons Workflow Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html)를 실행할 수 있습니다. Granite Workflow 제거 스케줄러가 실행될 때까지 기다리지 않고 중복되고 완료된 워크플로우 인스턴스를 즉시 제거합니다.
 
-### 최대 병렬 작업 {#maximum-parallel-jobs}
+### 최대 병렬 작업 수 {#maximum-parallel-jobs}
 
 기본적으로 AEM은 서버의 프로세서 수와 동일한 최대 병렬 작업 수를 실행합니다. 이 설정의 문제는 로드가 많은 동안 모든 프로세서가 DAM 자산 업데이트 워크플로우에 의해 사용되고 UI 응답성이 느려지고 AEM이 서버 성능과 안정성을 보호하는 다른 프로세스를 실행하지 못하도록 한다는 것입니다. 이 값은 다음 단계를 수행하여 서버에서 사용할 수 있는 프로세서의 절반으로 설정하는 것이 좋습니다.
 
