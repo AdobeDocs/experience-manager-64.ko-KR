@@ -6,9 +6,9 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 340b62f7-2405-4d2d-846d-2c444d6cc77b
 feature: 자산 관리,개발자 도구
-role: Business Practitioner
+role: User
 exl-id: 9b4f16e6-dd91-4179-9629-576d801fcf43
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 2%
@@ -47,7 +47,7 @@ ht-degree: 2%
 
 이러한 형식의 출력을 로컬 시스템에 다운로드할 수도 있습니다.
 
-## 자료 {#creating-a-collateral} 만들기
+## 자료 만들기 {#creating-a-collateral}
 
 향후 캠페인을 위해 브로셔, 홍보물 및 광고와 같은 디지털 인쇄 가능한 자료를 만들고 전 세계 아웃렛 스토어와 공유하는 시나리오를 생각해 보십시오. 템플릿을 기반으로 자료를 만들면 채널 간에 통합된 고객 경험을 전달할 수 있습니다. 디자이너는 InDesign과 같은 크리에이티브 솔루션을 사용하여 캠페인 템플릿(단일 페이지 또는 다중 페이지)을 만들고 템플릿을 AEM Assets에 업로드할 수 있습니다. 자료를 만들려면 먼저 Experience Manager에 업로드하고 사용할 수 있는 INDD 템플릿을 하나 이상 업로드하십시오.
 
