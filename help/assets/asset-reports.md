@@ -3,9 +3,9 @@ title: 디지털 자산 사용 및 공유에 대한 보고서입니다.
 description: 디지털 자산의 사용, 활동 및 공유를 이해하는 데 도움이 되는 [!DNL Adobe Experience Manager Assets] 에 있는 자산에 대한 보고서입니다.
 contentOwner: AG
 feature: 자산 보고서,자산 관리
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 6f03ee04-d2e2-47e6-892b-50fad3043a28
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 2%
@@ -149,7 +149,7 @@ ht-degree: 2%
 
 1. 도구 모음에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 보고서 생성이 시작되었음을 알리는 메시지가 표시됩니다.
 
-## 제거 서비스 {#configure-purging-service} 구성
+## 제거 서비스 구성 {#configure-purging-service}
 
 더 이상 필요하지 않은 보고서를 제거하려면 웹 콘솔에서 DAM 보고서 삭제 서비스를 구성하여 수량 및 나이에 따라 기존 보고서를 삭제합니다.
 
