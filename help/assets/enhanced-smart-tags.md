@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
 feature: 스마트 태그,검색
-role: Business Practitioner
+role: User
 exl-id: 21a9f130-ea91-45bf-adc8-8a73a2a00c77
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1570'
 ht-degree: 1%
@@ -92,7 +92,7 @@ Smart Content Service를 주기적으로 또는 필요에 따라 교육할 수 �
 >
 >교육 워크플로우는 폴더에서만 실행됩니다.
 
-### 정기 교육 {#periodic-training}
+### 주기적 훈련 {#periodic-training}
 
 Smart Content Service를 사용하여 폴더 내의 자산 및 관련 태그에 대해 정기적으로 교육할 수 있습니다. 자산 폴더의 속성 페이지를 열고 **[!UICONTROL 세부 정보]** 탭 아래에서 **[!UICONTROL 스마트 태그 활성화]**&#x200B;를 선택하고 변경 사항을 저장합니다.
 
@@ -148,7 +148,7 @@ Smart Content Service가 폴더 내의 자산에 정기적으로 태그를 지�
 
 폴더에 대해 이 옵션을 선택하면 Smart Content Service가 폴더 내의 자산에 자동으로 태그를 지정합니다. 기본적으로 태깅 워크플로우는 매일 오전 12:00에 실행됩니다.
 
-### 요청 시 태깅 {#on-demand-tagging}
+### 주문형 태깅 {#on-demand-tagging}
 
 다음에서 태그 지정 워크플로우를 트리거하여 즉시 자산에 태그를 지정할 수 있습니다.
 
@@ -173,7 +173,7 @@ Smart Content Service가 폴더 내의 자산에 정기적으로 태그를 지�
 
    자산 폴더로 이동하고 태그를 검토하여 Smart Content Service가 자산에 태그를 제대로 지정했는지 확인합니다. 자세한 내용은 [스마트 태그 관리](managing-smart-tags.md)를 참조하십시오.
 
-#### 타임라인에서 자산 태깅 {#tagging-assets-from-the-timeline}
+#### 타임라인에서 자산에 태그 지정 {#tagging-assets-from-the-timeline}
 
 1. 자산 사용자 인터페이스에서 스마트 태그를 적용할 자산 또는 특정 자산이 들어 있는 폴더를 선택합니다.
 1. GlobalNav 아이콘을 탭/클릭하고 타임라인을 엽니다.
