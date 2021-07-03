@@ -3,9 +3,9 @@ title: Assets 네트워크 고려사항
 description: AEM Assets 배포를 디자인할 때 네트워크 고려 사항에 대해 설명합니다.
 contentOwner: AG
 feature: 개발자 도구
-role: Architect,Administrator
+role: Architect,Admin
 exl-id: f8f9d86f-a5e3-46ac-8d96-c2e44eac9c93
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 1%
@@ -41,13 +41,13 @@ AEM(Adobe Experience Manager) 자산을 이해하는 것 못지않게 네트워�
 
 오른쪽에 표시되는 컴퓨터는 1Mbps 속도로 VPN을 통해 회사 네트워크의 업스트림을 제한할 수 있습니다. 1Mbps 연결에 대한 사용자 환경은 1Gbps 연결을 통해 사용자 경험과는 크게 다릅니다. 사용자가 상호 작용하는 자산의 크기에 따라 VPN 업링크가 작업에 적합하지 않을 수 있습니다.
 
-## 회사 네트워크 토폴로지 {#topology-of-the-corporate-network}
+## 기업 네트워크의 토폴로지 {#topology-of-the-corporate-network}
 
 ![chlimage_1-354](assets/chlimage_1-354.png)
 
 다이어그램은 일반적으로 사용되는 것보다 회사 네트워크 내에서 더 높은 업링크 속도를 표시합니다. 이 파이프는 공유 리소스입니다. 공유 스위치가 50개의 클라이언트를 처리할 것으로 예상되면 선택 지점일 수 있습니다. 초기 다이어그램에서는 두 컴퓨터만 특정 연결을 공유합니다.
 
-## 회사 네트워크 및 AEM 환경에서 인터넷에 대한 업링크 {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## 기업 네트워크 및 AEM 환경에서 인터넷에 대한 상향링크 {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
@@ -77,7 +77,7 @@ AEM 인스턴스는 여러 서비스와 1Gbps 연결을 공유합니다. 네트�
 
 클라이언트 장치에서 AEM 인스턴스로 네트워크를 검토하면 가장 작은 선택 지점이 10Mbit 엔터프라이즈 방화벽 스로틀로 나타납니다. [자산 크기 조정 가이드](assets-sizing-guide.md)의 크기 조정 계산기에서 이러한 값을 사용하여 사용자 경험을 확인할 수 있습니다.
 
-## AEM 인스턴스 {#defined-workflows-of-the-aem-instance}의 정의된 워크플로우
+## AEM 인스턴스의 정의된 워크플로우 {#defined-workflows-of-the-aem-instance}
 
 네트워크 성능을 고려할 때 시스템에서 발생할 워크플로우 및 게시를 고려해야 할 수 있습니다. 또한, 사용자가 사용하고 입출력 요청을 사용하는 S3 또는 기타 NAS 스토리지는 네트워크 대역폭을 사용합니다. 따라서 완전히 최적화된 네트워크에서도 디스크 I/O에 의해 성능이 제한될 수 있습니다.
 
