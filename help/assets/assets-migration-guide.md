@@ -3,9 +3,9 @@ title: 자산을 Adobe Experience Manager Assets으로 일괄 마이그레이션
 description: 자산을 AEM으로 가져오고, 메타데이터를 적용하고, 렌디션을 생성하고, 인스턴스를 활성화하는 방법.
 contentOwner: AG
 feature: 마이그레이션,표현물,자산 관리
-role: Architect,Administrator
+role: Architect,Admin
 exl-id: 31da9f3d-460a-4b71-9ba0-7487f1b159cb
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1795'
 ht-degree: 0%
@@ -34,7 +34,7 @@ ht-degree: 0%
 >
 이 소프트웨어는 오픈 소스이며 [Apache v2 License](https://adobe-consulting-services.github.io/pages/license.html)에서 다룹니다. 질문하거나 문제를 보고하려면 ACS AEM 도구에 대한 [GitHub 문제](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) 및 [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues)를 방문하십시오.
 
-## AEM {#migrate-to-aem}으로 마이그레이션
+## AEM으로 마이그레이션 {#migrate-to-aem}
 
 자산을 AEM으로 마이그레이션하려면 몇 가지 단계가 필요하며 단계적인 프로세스로 간주해야 합니다. 마이그레이션 단계는 다음과 같습니다.
 
@@ -55,13 +55,13 @@ ht-degree: 0%
 
 이미지에 적용하는 태그 분류법이 이미 있을 수 있습니다. CSV 자산 가져오기 및 메타데이터 프로필 기능과 같은 도구를 사용하면 자산에 태그 적용을 자동화하는 데 도움이 될 수 있습니다. 그 전에 Experience Manager에서 태그를 추가합니다. [ACS AEM Tools Tag Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) 기능을 사용하면 시스템에 로드된 Microsoft Excel 스프레드시트를 사용하여 태그를 채울 수 있습니다.
 
-### 자산 처리 {#ingest-assets}
+### 자산 수집 {#ingest-assets}
 
 시스템 내로 자산을 섭취할 때 성능과 안정성은 중요한 문제입니다. Experience Manager에서 많은 데이터를 로드할 때 시스템이 제대로 작동하는지 확인하십시오. 이렇게 하면 데이터를 추가하는 데 필요한 시간이 최소화되고 시스템 오버로드가 방지됩니다. 이렇게 하면 특히 이미 운영 중인 시스템에서 시스템 충돌을 방지할 수 있습니다.
 
 자산을 시스템에 로드하는 방법에는 두 가지가 있습니다.HTTP를 사용하는 푸시 기반 접근 방식 또는 JCR API를 사용하는 가져오기 기반 접근 방식.
 
-#### HTTP {#push-through-http} 를 통해 푸시
+#### HTTP를 통해 푸시 {#push-through-http}
 
 Adobe의 Managed Services 팀은 Glutton이라는 도구를 사용하여 고객 환경에 데이터를 로드합니다. Glutton은 한 디렉토리의 모든 자산을 AEM 인스턴스의 다른 디렉토리에 로드하는 작은 Java 애플리케이션입니다. Glutton 대신 Perl 스크립트와 같은 도구를 사용하여 자산을 저장소에 게시할 수도 있습니다.
 
@@ -72,13 +72,13 @@ https를 통해 푸시하는 방법을 사용하는 두 가지 기본 다운사�
 
 자산을 수집하는 다른 방법은 로컬 파일 시스템에서 자산을 가져오는 것입니다. 그러나 외부 드라이브나 네트워크 공유를 서버에 마운트하여 풀 기반 접근 방식을 수행할 수 없다면 HTTP를 통해 자산을 게시하는 것이 가장 좋습니다.
 
-#### 로컬 파일 시스템 {#pull-from-the-local-file-system}에서 가져오기
+#### 로컬 파일 시스템에서 가져오기 {#pull-from-the-local-file-system}
 
 [ACS AEM 도구 CSV 자산 가져오기](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html)는 파일 시스템에서 자산을 가져오고 자산을 가져올 CSV 파일에서 자산 메타데이터를 가져옵니다. AEM Asset Manager API는 자산을 시스템으로 가져오고 구성된 메타데이터 속성을 적용하는 데 사용됩니다. 자산은 네트워크 파일 마운트 또는 외부 드라이브를 통해 서버에 마운트되는 것이 좋습니다.
 
 자산을 네트워크를 통해 전송하지 않으면 전반적인 성능이 크게 향상됩니다. 일반적으로 이 방법은 자산을 저장소에 로드하는 가장 효율적인 방법입니다. 또한 도구가 메타데이터 수집을 지원하므로 모든 자산 및 메타데이터를 단일 단계로 가져올 수 있습니다. 별도의 도구 사용과 같이 메타데이터를 적용하는 데에는 다른 단계가 필요하지 않습니다.
 
-### 변환 처리 {#process-renditions}
+### 표현물 처리 {#process-renditions}
 
 자산을 시스템에 로드한 후 DAM 자산 업데이트 워크플로우를 통해 자산을 처리하여 메타데이터를 추출하고 렌디션을 생성해야 합니다. 이 단계를 수행하기 전에 필요에 따라 DAM 자산 업데이트 워크플로우를 복제하고 수정해야 합니다. Dynamic Media Classic PTIFF 생성 또는 InDesign 서버 통합과 같은 기본 워크플로우의 일부 단계는 필요하지 않을 수 있습니다.
 
