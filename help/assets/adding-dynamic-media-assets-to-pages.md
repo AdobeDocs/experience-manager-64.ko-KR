@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 exl-id: bb97b649-a50d-49c8-97aa-18c32f18d527
 feature: 구성 요소
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2826'
 ht-degree: 39%
@@ -49,7 +49,7 @@ AEM을 WCM으로 사용하는 경우에는 다이내믹 미디어 자산을 페�
 1. 마우스 포인터를 구성 요소 바로 위에 놓습니다. 구성 요소를 파란색 상자로 둘러싸면 한 번 탭하여 구성 요소의 도구 모음을 표시할 수 있습니다. **[!UICONTROL 구성]** (공구모양) 아이콘을 탭합니다.
 1. [필요에 ](#dynamic-media-components) 따라 구성 요소를 편집하고 확인 표시를 클릭하여 변경 내용을 저장합니다.
 
-### Dynamic Media 구성 요소 {#enabling-dynamic-media-components} 활성화
+### Dynamic Media 구성 요소 활성화 {#enabling-dynamic-media-components}
 
 페이지에 추가할 수 있는 Dynamic Media 구성 요소가 없는 경우, 먼저 사용하려는 구성 요소를 활성화해야 할 것입니다.
 
@@ -198,7 +198,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 다이내믹 비디
 * **** 너비  ****
 높이 비디오의 크기를 고정하려면 값을 픽셀 단위로 입력하십시오. 이 값을 공백으로 두면 적응형으로 설정됩니다.
 
-#### 스마트 자르기 작업 시 {#when-working-with-smart-crop}
+#### 스마트 자르기 작업 {#when-working-with-smart-crop}
 
 Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기 이미지 자산을 추가합니다. 구성 요소를 편집할 때 페이지에서 비디오를 재생하기 위해 사전 설정된 비디오 뷰어 사전 설정을 사용하도록 선택할 수 있습니다.
 
@@ -285,7 +285,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 보려는 뷰어 사전 설정이 표시되지 않으면 게시되었는지 확인합니다. 뷰어 사전 설정을 사용하려면 먼저 게시해야 합니다. [뷰어 사전 설정 관리](managing-viewer-presets.md)를 참조하십시오. 
 
-### HTTP/2를 사용하여 Dynamic Media 자산 {#using-http-to-delivery-dynamic-media-assets} 전달
+### HTTP/2를 사용하여 Dynamic Media 자산 전달 {#using-http-to-delivery-dynamic-media-assets}
 
 HTTP/2는 브라우저 및 서버의 통신 방식을 향상시키는 업데이트된 새로운 웹 프로토콜입니다. 보다 신속하게 정보를 전송할 수 있고 필요한 처리 능력을 줄일 수 있습니다. 이제 Dynamic Media 자산의 배달이 HTTP/2를 통해 수행될 수 있으므로 로드 시간이 향상됩니다.
 
