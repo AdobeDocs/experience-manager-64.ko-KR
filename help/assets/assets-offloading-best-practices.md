@@ -3,9 +3,9 @@ title: Assets 오프로딩 우수 사례
 description: AEM Assets에서 자산 수집 및 복제 워크플로우를 오프로드하기 위한 권장 사용 사례 및 우수 사례입니다.
 contentOwner: AG
 feature: 자산 관리
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 3ecc8988-add1-47d5-80b4-984beb4d8dab
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1820'
 ht-degree: 0%
@@ -26,13 +26,13 @@ AEM(Adobe Experience Manager)에서 대용량 파일을 처리하고 워크플�
 
 AEM Assets은 오프로드를 위한 기본 자산별 워크플로우 확장을 구현합니다. 오프로딩 프레임워크에서 제공하는 일반 워크플로우 확장을 기반으로 구축되지만 구현의 추가적인 자산 관련 기능을 포함합니다. Assets 오프로딩의 목표는 업로드된 자산에서 DAM 자산 업데이트 워크플로우를 효율적으로 실행하는 것입니다. 자산 오프로딩을 사용하면 수집 워크플로우를 보다 효과적으로 제어할 수 있습니다.
 
-## AEM Assets 구성 요소 오프로딩 {#aem-assets-offloading-components}
+## AEM Assets 오프로딩 구성 요소 {#aem-assets-offloading-components}
 
 다음 다이어그램은 자산 오프로딩 프로세스의 기본 구성 요소를 나타냅니다.
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
-### DAM 자산 업데이트 오프로딩 워크플로우 {#dam-update-asset-offloading-workflow}
+### DAM 자산 업데이트 오프로드 워크플로우 {#dam-update-asset-offloading-workflow}
 
 DAM 자산 업데이트 오프로딩 워크플로우는 사용자가 자산을 업로드하는 기본(작성자) 서버에서 실행됩니다. 이 워크플로우는 일반 워크플로우 실행 프로그램에 의해 트리거됩니다. 업로드된 자산을 처리하는 대신, 이 오프로딩 워크플로우는 *com/adobe/granite/workflow/offloading* 항목을 사용하여 새 작업을 만듭니다. 오프로딩 워크플로우는 대상 워크플로우의 이름(이 경우 DAM 자산 업데이트 워크플로우)을 추가하고 자산의 작업 페이로드에 대한 경로를 추가합니다. 오프로딩 작업을 생성한 후 기본 인스턴스의 오프로딩 워크플로우는 오프로딩 작업이 실행될 때까지 기다립니다.
 
@@ -44,7 +44,7 @@ DAM 자산 업데이트 오프로딩 워크플로우는 사용자가 자산을 �
 
 오프로딩 프레임워크는 작업자 인스턴스에 할당된 작업 로드 작업 워크플로우를 식별하고 복제를 사용하여 해당 페이로드(예: 수집할 이미지)를 비롯한 작업을 작업자에게 물리적으로 전송합니다.
 
-### 작업 소비자 {#workflow-offloading-job-consumer} 를 오프로드하는 워크플로
+### 작업 소비자 오프로딩 워크플로우 {#workflow-offloading-job-consumer}
 
 작업자에 작업이 작성되면 작업 관리자는 *com/adobe/granite/workflow/offloading* 항목을 담당하는 작업 소비자를 호출합니다. 그런 다음 작업 소비자가 자산에서 DAM 자산 업데이트 워크플로우를 실행합니다.
 
@@ -52,7 +52,7 @@ DAM 자산 업데이트 오프로딩 워크플로우는 사용자가 자산을 �
 
 Sling 토폴로지는 AEM 인스턴스를 그룹화하고 기본 지속성과 관계없이 서로 인식할 수 있도록 합니다. Sling 토폴로지의 이 특성을 사용하면 비클러스터형, 클러스터형 및 혼합 시나리오에 대한 토폴로지를 만들 수 있습니다. 인스턴스는 전체 토폴로지에 속성을 표시할 수 있습니다. 프레임워크는 토폴로지(인스턴스 및 속성)의 변경 사항을 수신하기 위한 콜백을 제공합니다. Sling 토폴로지는 Sling 분산 작업의 기반을 제공합니다.
 
-### Sling에 분산된 작업 {#sling-distributed-jobs}
+### Sling 분산 작업 {#sling-distributed-jobs}
 
 Sling 분산 작업은 토폴로지 멤버인 인스턴스 집합 간에 작업 분포를 용이하게 합니다. 슬링 작업은 능력에 대한 아이디어를 기반으로 합니다. 작업은 해당 작업 항목으로 정의됩니다. 작업을 실행하려면 인스턴스가 특정 작업 항목에 대한 작업 소비자를 제공해야 합니다. 작업 항목은 배포 메커니즘의 기본 드라이버입니다.
 
@@ -87,7 +87,7 @@ Assets 오프로딩이 적절한 접근 방법이라고 결론 짓는 경우, Ad
 * TarMK 기반 Assets 오프로드는 광범위한 가로 크기 조정을 위해 설계되지 않았습니다
 * 작성자와 작업자 간의 네트워크 성능이 만족스러운지 확인합니다.
 
-### 권장되는 Assets 오프로딩 배포 {#recommended-assets-offloading-deployment}
+### 권장 자산 오프로딩 배포 {#recommended-assets-offloading-deployment}
 
 AEM 및 Oak를 사용하면 가능한 몇 가지 배포 시나리오가 있습니다. Assets 오프로딩의 경우 공유 데이터 저장소가 있는 TarMK 기반 배포를 권장합니다. 다음 다이어그램은 권장되는 배포에 대해 설명합니다.
 
@@ -103,7 +103,7 @@ Adobe은 바이너리 없는 복제를 지원하지 않으며 새 오프로딩 �
 1. `OffloadingAgentManager`(`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingAgentManager`)에 대한 구성을 엽니다.
 1. 자동 에이전트 관리를 비활성화합니다.
 
-### 전달 복제 사용 {#using-forward-replication}
+### 순방향 복제 사용 {#using-forward-replication}
 
 기본적으로 오프로딩 전송은 역복제를 사용하여 작업자에서 기본 자산으로 오프로드된 자산을 다시 가져옵니다. 역방향 복제 에이전트는 바이너리 없는 복제를 지원하지 않습니다. 오프로드를 구성하여 앞으로 복제를 사용하여 오프로드된 자산을 작업자에서 기본 자산으로 다시 푸시해야 합니다.
 
@@ -116,7 +116,7 @@ Adobe은 바이너리 없는 복제를 지원하지 않으며 새 오프로딩 �
 TBD: Update the property in the last step when GRANITE-30586 is fixed.
 -->
 
-### 공유 데이터 저장소 및 작성자와 작업자 간에 바이너리 없는 복제 사용 {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
+### 작성자와 작업자 간에 공유 데이터 저장소 및 바이너리 없는 복제 사용  {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
 
 자산 오프로딩에 대한 전송 오버헤드를 줄이려면 바이너리 없는 복제를 사용하는 것이 좋습니다. 공유 데이터 저장소에 대해 바이너리 없는 복제를 설정하는 방법은 [AEM](/help/sites-deploying/data-store-config.md)노드 저장소 및 데이터 저장소 구성 을 참조하십시오. 이 절차는 다른 복제 에이전트가 포함된다는 점을 제외하고 Assets 오프로딩에 대해 다릅니다. 바이너리 없는 복제가 순방향 복제 에이전트에서만 작동하므로 모든 오프로딩 에이전트에 대해 순방향 복제도 사용해야 합니다.
 
@@ -127,7 +127,7 @@ TBD: Update the property in the last step when GRANITE-30586 is fixed.
 1. [http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter](http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter)에서 *OffloadingDefaultTransporter* 구성 요소의 구성 요소 구성을 엽니다.
 1. *복제 패키지(default.transport.contentpackage)* 속성을 비활성화합니다.
 
-### 워크플로우 모델 {#disabling-the-transport-of-workflow-model} 전송을 사용하지 않도록 설정하는 중
+### 워크플로우 모델 전송 비활성화 {#disabling-the-transport-of-workflow-model}
 
 기본적으로 *DAM 자산 업데이트 오프로딩* 워크플로우는 작업자를 호출하는 워크플로우 모델을 작업 페이로드에 추가합니다. 이 워크플로우는 기본적으로 바로 사용 가능한 *DAM 자산 업데이트* 모델을 따르므로 이 추가 페이로드를 제거할 수 있습니다.
 
