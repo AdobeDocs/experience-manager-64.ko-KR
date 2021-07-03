@@ -3,16 +3,16 @@ title: ' [!DNL Adobe Experience Manager]에서 디지털 자산을 다운로드�
 description: ' [!DNL Adobe Experience Manager] 에서 자산을 다운로드하고 다운로드 기능을 활성화하거나 비활성화하는 방법을 알아봅니다.'
 contentOwner: AG
 feature: 자산 관리,자산 분배
-role: Business Practitioner
+role: User
 exl-id: bfe4d597-1080-4de5-a100-73a5175863d7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 3%
 
 ---
 
-# [!DNL Adobe Experience Manager] {#download-assets-from-aem}에서 자산 다운로드
+# [!DNL Adobe Experience Manager]에서 자산 다운로드 {#download-assets-from-aem}
 
 정적 및 동적 표현물을 포함한 자산을 다운로드할 수 있습니다. 또는 [!DNL Adobe Experience Manager Assets]에서 직접 자산에 대한 링크가 있는 이메일을 보낼 수 있습니다. 다운로드한 자산은 ZIP 파일에 번들로 제공됩니다. 압축 ZIP 파일의 최대 파일 크기는 내보내기 작업의 1GB입니다. 내보내기 작업당 최대 500개의 총 자산이 허용됩니다.
 
@@ -48,7 +48,7 @@ ht-degree: 3%
 
 다운로드할 폴더를 선택하면 폴더 아래에 있는 전체 자산 계층 구조가 다운로드됩니다. 개별 폴더에 다운로드한 각 자산(상위 폴더 아래에 중첩된 하위 폴더의 자산 포함)을 포함하려면 **[!UICONTROL 각 자산에 대해 별도의 폴더 만들기]**&#x200B;를 선택합니다.
 
-## 자산 다운로드 서블릿 {#enable-asset-download-servlet} 활성화
+## 자산 다운로드 서블릿 활성화 {#enable-asset-download-servlet}
 
 [!DNL Experience Manager]의 기본 서블릿을 사용하면 인증된 사용자가 서버와 네트워크에 과부하를 줄 수 있는 표시되는 자산의 ZIP 파일을 만들기 위해 임의로 큰 동시 다운로드 요청을 발행할 수 있습니다. 이 기능으로 인해 발생할 수 있는 DoS 위험을 완화하려면 게시 인스턴스에 대해 `AssetDownloadServlet` OSGi 구성 요소가 기본적으로 비활성화됩니다.
 
@@ -63,7 +63,7 @@ DAM에서 자산을 다운로드할 수 있도록 하려면 Asset Share Commons 
    asset.download.prezip.maxcontentsize=I"102400"
    ```
 
-## 자산 다운로드 서블릿 {#disable-asset-download-servlet} 비활성화
+## 자산 다운로드 서블릿 비활성화 {#disable-asset-download-servlet}
 
 Dispatcher 구성을 업데이트하여 모든 자산 다운로드 요청을 차단하여 [!DNL Experience Manager] 게시 인스턴스에서 `Asset Download Servlet`을 비활성화할 수 있습니다. OSGi 콘솔을 통해 직접 서블릿을 수동으로 비활성화할 수도 있습니다.
 
