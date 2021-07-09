@@ -8,9 +8,9 @@ breadcrumb-title: Deploying 안내서
 user-guide-description: Adobe Managed Services 클라우드 배포를 포함하여 Adobe Experience Manager 6.4의 설치, 배포 및 아키텍처에 대해 자세히 알아봅니다.
 feature: 배포
 role: Architect
-source-git-commit: 19c3ecc20d78f40a2fa49f804baf232db7483afc
+source-git-commit: 5b0eef590f9a0c709fa21b8dbcf6a2f286a20237
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '375'
 ht-degree: 19%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 19%
    + [일관성 및 순회 검사](consistency-check.md)
    + [성능 지침](performance-guidelines.md)
    + [성능 최적화](configuring-performance.md)
-   + [Assets 성능 안내서](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html)
+   + [Assets 성능 안내서](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=en)
    + [구성 방법 문서](ht-deploy.md)
    + [Geometrixx 사이트 제거](removing-the-geometrixx-sites.md)
    + [웹 콘솔 구성](configuring-web-console.md)
