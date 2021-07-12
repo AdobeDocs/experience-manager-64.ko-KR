@@ -6,8 +6,8 @@ user-guide-title: Adobe Experience Manager 6.4 릴리스 노트
 breadcrumb-title: 릴리스 노트
 user-guide-description: 릴리스 노트에서 AEM 6.4의 최신 새로운 기능에 대해 알아보십시오.
 feature: 릴리스 정보
-role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
-source-git-commit: 29fe63a731d33afa0d6492e0e4ef94064097ae1a
+role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 53%
