@@ -3,16 +3,16 @@ title: Brand Portal에서 AEM Assets 구성
 description: 'Brand Portal에 자산 및 컬렉션을 게시하기 위해 Brand Portal에서 AEM Assets을 구성하는 방법을 알아봅니다. '
 contentOwner: VG
 feature: Brand Portal
-role: Administrator
+role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1649'
 ht-degree: 82%
 
 ---
 
-# Brand Portal로 AEM Assets 구성 {#configure-integration-64}
+# Brand Portal에서 AEM Assets 구성 {#configure-integration-64}
 
 AEM(Adobe Experience Manager) 자산은 Brand Portal 테넌트의 인증을 위해 IMS 토큰을 전달하는 [!DNL Adobe I/O]를 통해 Brand Portal으로 구성됩니다.
 
@@ -30,8 +30,8 @@ AEM(Adobe Experience Manager) 자산은 Brand Portal 테넌트의 인증을 위�
 
 이 도움말은 다음 두 가지 사용 사례에 대해 설명합니다.
 
-* [새 구성](#configure-new-integration-64):새 Brand Portal 사용자이고 Brand Portal으로 AEM Assets 작성자 인스턴스를 구성하려는 경우 에 새 구성을 만들 수 있습니다  [!DNL Adobe I/O].
-* [구성 업그레이드](#upgrade-integration-64):기존 OAuth 게이트웨이에 Brand Portal으로 구성된 AEM Assets 작성자 인스턴스를 사용하는 기존 Brand Portal 사용자인 경우 기존 구성을 삭제하고 새 구성을 만드는 것이 좋습니다 [!DNL Adobe I/O].
+* [새 구성](#configure-new-integration-64): 새 Brand Portal 사용자이고 Brand Portal으로 AEM Assets 작성자 인스턴스를 구성하려는 경우 에 새 구성을 만들 수 있습니다  [!DNL Adobe I/O].
+* [구성 업그레이드](#upgrade-integration-64): 기존 OAuth 게이트웨이에 Brand Portal으로 구성된 AEM Assets 작성자 인스턴스를 사용하는 기존 Brand Portal 사용자인 경우 기존 구성을 삭제하고 새 구성을 만드는 것이 좋습니다 [!DNL Adobe I/O].
 
 제공된 정보는 이 도움말을 읽는 사람이 다음 기술을 잘 알고 있다는 가정을 기반으로 합니다.
 
