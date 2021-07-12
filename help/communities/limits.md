@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
-role: Administrator
+role: Admin
 exl-id: fc7ce4d0-2051-4a67-a0d6-baf615e09ca4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -85,4 +85,4 @@ ht-degree: 0%
 
    기본값은 메시징 수신자가 없습니다.
 
-참고:기본 구성에서는 1시간 내에 10개의 게시물이 제한됩니다.
+참고: 기본 구성에서는 1시간 내에 10개의 게시물이 제한됩니다.
