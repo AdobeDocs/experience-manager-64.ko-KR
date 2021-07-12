@@ -8,9 +8,9 @@ contentOwner: amgoyal
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: fbb9044a-a737-45f6-8062-0ef5424a92f8
-role: Administrator
+role: Admin
 exl-id: f60beaae-4082-4165-8a37-9d9c94e360b2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -46,11 +46,11 @@ ht-degree: 0%
 
 1. 각 필드에 다음 정보를 추가합니다.
 
-   **[!UICONTROL 처리 서버 URL]**:처리 서버는 Forms 또는 AEM 워크플로우를 트리거해야 하는 서버입니다. AEM 작성자 인스턴스의 URL 또는 다른 서버 URL(즉, http:// localhost:port/)과 같을 수 있습니다.
+   **[!UICONTROL 처리 서버 URL]**: 처리 서버는 Forms 또는 AEM 워크플로우를 트리거해야 하는 서버입니다. AEM 작성자 인스턴스의 URL 또는 다른 서버 URL(즉, http:// localhost:port/)과 같을 수 있습니다.
 
-   **[!UICONTROL 처리 서버 사용자 이름]**:사용 중인 서버 URL을  [기반으로 하는 워크플로우 사용자의 사용자 이름]
+   **[!UICONTROL 처리 서버 사용자 이름]**: 사용 중인 서버 URL을  [기반으로 하는 워크플로우 사용자의 사용자 이름]
 
-   **[!UICONTROL 처리 서버 암호]**:워크플로우 사용자 암호
+   **[!UICONTROL 처리 서버 암호]**: 워크플로우 사용자 암호
 
    >[!NOTE]
    >
