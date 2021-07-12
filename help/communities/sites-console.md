@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
-role: Administrator
+role: Admin
 exl-id: f1408709-5402-4f55-bd37-9943fe828af0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '3241'
 ht-degree: 4%
@@ -54,7 +54,7 @@ ht-degree: 4%
 
 작성 환경에서 커뮤니티 사이트 콘솔에 연결하려면
 
-* 전역 탐색에서:**[!UICONTROL 커뮤니티 > 사이트]**
+* 전역 탐색에서: **[!UICONTROL 커뮤니티 > 사이트]**
 
 커뮤니티 사이트 콘솔에는 기존 커뮤니티 사이트가 표시됩니다. 이 콘솔에서 커뮤니티 사이트를 생성, 편집, 관리 및 삭제할 수 있습니다.
 
@@ -62,7 +62,7 @@ ht-degree: 4%
 
 기존 커뮤니티 사이트에 액세스하려면 중첩 그룹을 작성, 수정, 게시, 내보내기 또는 추가하기 위해 사이트의 폴더 아이콘을 선택합니다.
 
-예를 들어 다음 이미지는 두 커뮤니티 사이트에 대한 폴더를 표시하는 기본 커뮤니티 사이트 콘솔을 보여줍니다.[enable](getting-started-enablement.md) 및 [engage](getting-started.md):
+예를 들어 다음 이미지는 두 커뮤니티 사이트에 대한 폴더를 표시하는 기본 커뮤니티 사이트 콘솔을 보여줍니다. [enable](getting-started-enablement.md) 및 [engage](getting-started.md):
 
 ![chlimage_1-448](assets/chlimage_1-448.png)
 
@@ -76,27 +76,27 @@ ht-degree: 4%
 
 작성 프로세스는 구성할 기능(하위 패널로 표시됨)이 포함된 패널로 표시되는 일련의 단계입니다. 마지막 단계에서 사이트를 커밋하기 전에 **다음** 단계 또는 **뒤로** 단계로 이동할 수 있습니다.
 
-### 1단계:사이트 템플릿 {#step-site-template}
+### 1단계: 사이트 템플릿 {#step-site-template}
 
 ![newssitemplate](assets/newsitetemplate.png)
 
 사이트 템플릿 패널에서 제목, 설명, 사이트 루트, 기본 언어, 이름 및 사이트 템플릿이 지정됩니다.
 
-* **[!UICONTROL 커뮤니티 사이트 제목]**:사이트의 표시 제목입니다.
+* **[!UICONTROL 커뮤니티 사이트 제목]**: 사이트의 표시 제목입니다.
 
    제목은 게시된 사이트와 사이트 관리자 UI에 표시됩니다.
 
-* **[!UICONTROL 커뮤니티 사이트 설명]**:사이트에 대한 설명입니다.
+* **[!UICONTROL 커뮤니티 사이트 설명]**: 사이트에 대한 설명입니다.
 
    게시된 사이트에 설명이 표시되지 않습니다.
 
-* **[!UICONTROL 커뮤니티 사이트 루트]**:사이트의 루트 경로입니다.
+* **[!UICONTROL 커뮤니티 사이트 루트]**: 사이트의 루트 경로입니다.
 
    기본 루트는 `/content/sites`이지만 루트가 웹 사이트 내의 임의의 위치로 이동될 수 있습니다.
 
-* **[!UICONTROL 커뮤니티 사이트 기본 언어]**:(단일 언어에 대해 그대로 유지)영어) 풀다운 메뉴를 사용하여 사용 가능한 언어(독일어, 이탈리아어, 프랑스어, 일본어, 스페인어, 포르투갈어(브라질), 중국어(번체) 및 중국어( ** 간체)에서 하나 이상의 기본 언어를 선택합니다. 추가된 각 언어에 대해 하나의 커뮤니티 사이트가 만들어지고 [다국어 사이트에 대한 콘텐츠 번역](../../help/sites-administering/translation.md)에 설명된 우수 사례 다음에 동일한 사이트 폴더 내에 있게 됩니다. 각 사이트의 루트 페이지에는 선택한 언어 중 하나의 언어 코드로 이름이 지정된 하위 페이지가 포함됩니다(예: 영어의 경우 &#39;en&#39;, 프랑스어의 경우 &#39;fr&#39;).
+* **[!UICONTROL 커뮤니티 사이트 기본 언어]**: (단일 언어에 대해 그대로 유지) 영어) 풀다운 메뉴를 사용하여 사용 가능한 언어(독일어, 이탈리아어, 프랑스어, 일본어, 스페인어, 포르투갈어(브라질), 중국어(번체) 및 중국어( ** 간체)에서 하나 이상의 기본 언어를 선택합니다. 추가된 각 언어에 대해 하나의 커뮤니티 사이트가 만들어지고 [다국어 사이트에 대한 콘텐츠 번역](../../help/sites-administering/translation.md)에 설명된 우수 사례 다음에 동일한 사이트 폴더 내에 있게 됩니다. 각 사이트의 루트 페이지에는 선택한 언어 중 하나의 언어 코드로 이름이 지정된 하위 페이지가 포함됩니다(예: 영어의 경우 &#39;en&#39;, 프랑스어의 경우 &#39;fr&#39;).
 
-* **[!UICONTROL 커뮤니티 사이트 이름]**:URL에 나타나는 사이트의 루트 페이지의 이름입니다
+* **[!UICONTROL 커뮤니티 사이트 이름]**: URL에 나타나는 사이트의 루트 페이지의 이름입니다
 
    * 사이트를 만든 후 쉽게 변경되지 않으므로 이름을 다시 확인하십시오
    * 기본 URL( `https://*server:port/site root/site name*)`이 `Community Site Name` 아래에 표시됩니다
@@ -104,11 +104,11 @@ ht-degree: 4%
 
       *예*, `http://localhost:4502/content/sites/mysight/en.html`
 
-* **[!UICONTROL 커뮤니티 사이트]** 템플릿 메뉴:풀다운 메뉴를 사용하여 사용 가능한  [커뮤니티 사이트 템플릿을 선택합니다](tools.md).
+* **[!UICONTROL 커뮤니티 사이트]** 템플릿 메뉴: 풀다운 메뉴를 사용하여 사용 가능한  [커뮤니티 사이트 템플릿을 선택합니다](tools.md).
 
 **[!UICONTROL 다음]**&#x200B;을 선택합니다
 
-### 2단계:디자인 {#step-design}
+### 2단계: 디자인 {#step-design}
 
 디자인 패널에는 테마 및 브랜딩 배너를 선택하는 2개의 하위 패널이 있습니다.
 
@@ -141,7 +141,7 @@ ht-degree: 4%
 
 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 
-### 3단계:설정 {#step-settings}
+### 3단계: 설정 {#step-settings}
 
 설정 패널에는 사이트를 만들기 위해 마지막 단계로 이동하기 전에 구성할 기능을 보여주는 여러 하위 패널이 있습니다.
 
@@ -229,7 +229,7 @@ ht-degree: 4%
 
 또한 커뮤니티 사이트에 대해 태그 네임스페이스를 선택하면 카탈로그 및 리소스를 정의할 때 표시되는 선택 사항이 제한됩니다. 중요 정보는 [태깅 지원 리소스](tag-resources.md)를 참조하십시오.
 
-* 텍스트 검색 상자:입력을 시작하여 사이트에서 사용할 수 있는 태그를 식별합니다.
+* 텍스트 검색 상자: 입력을 시작하여 사이트에서 사용할 수 있는 태그를 식별합니다.
 
 #### 역할 {#roles}
 
@@ -361,7 +361,7 @@ UGC(사용자 생성 콘텐츠)를 중재하기 위한 전역 설정은 이러�
 
 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 
-### 4단계:커뮤니티 사이트 {#step-create-communities-site} 만들기
+### 4단계: 커뮤니티 사이트 만들기 {#step-create-communities-site}
 
 조정이 필요한 경우 **뒤로** 단추를 사용하여 조정하십시오.
 
@@ -458,7 +458,7 @@ UGC(사용자 생성 콘텐츠)를 중재하기 위한 전역 설정은 이러�
 >
 >[페이지 함수](functions.md#page-function)와 같은 다른 모든 함수는 먼저 포함되고 나열되어야 합니다.
 
-#### 예:커뮤니티 사이트 구조에 카탈로그 함수 추가 {#example-adding-a-catalog-function-to-a-community-site-structure}
+#### 예: 커뮤니티 사이트 구조에 카탈로그 함수 추가 {#example-adding-a-catalog-function-to-a-community-site-structure}
 
 ![chlimage_1-464](assets/chlimage_1-464.png)
 
@@ -485,13 +485,13 @@ UGC(사용자 생성 콘텐츠)를 중재하기 위한 전역 설정은 이러�
 
 THUMBNAIL 패널을 사용하면 이미지를 업로드하여 커뮤니티 사이트 콘솔에서 사이트를 나타낼 수 있습니다.
 
-### 지원 수정 {#modify-enablement}
+### 활성화 수정 {#modify-enablement}
 
 사용 패널에서는 커뮤니티 사이트를 만드는 동안 제공된 설정에 액세스할 수 있습니다.
 
 [지원](#enablement) 설명을 참조하십시오.
 
-## 사이트 {#publishing-the-site} 게시
+## 사이트 게시 {#publishing-the-site}
 
 커뮤니티 사이트를 새로 만들거나 수정한 후 마우스를 사이트 위로 가져가면 나타나는 `Publish Site` 아이콘을 선택하여 사이트를 게시(활성화)할 수 있습니다.
 
@@ -501,18 +501,18 @@ THUMBNAIL 패널을 사용하면 이미지를 업로드하여 커뮤니티 사�
 
 ![chlimage_1-466](assets/chlimage_1-466.png)
 
-### 중첩 그룹 {#publishing-with-nested-groups} 을 사용하여 게시
+### 중첩 그룹으로 게시 {#publishing-with-nested-groups}
 
 커뮤니티 사이트를 게시한 후에는 [그룹 콘솔](groups.md)을 사용하여 만든 각 하위 커뮤니티(중첩된 그룹)를 개별적으로 게시해야 합니다.
 
-## 사이트 {#exporting-the-site} 내보내기
+## 사이트 내보내기 {#exporting-the-site}
 
 ![chlimage_1-467](assets/chlimage_1-467.png)
 
 [패키지 관리자](../../help/sites-administering/package-manager.md)에 저장되고 다운로드된 커뮤니티 사이트의 패키지를 만들려면 내보내기 아이콘을 마우스 버튼으로 사이트 위로 가져갑니다.\
 UGC는 사이트 패키지에 포함되어 있지 않습니다.
 
-## 사이트 {#deleting-the-site} 삭제
+## 사이트 삭제 {#deleting-the-site}
 
 ![deleteicon-1](assets/deleteicon-1.png)
 
@@ -526,8 +526,8 @@ UGC는 사이트 패키지에 포함되어 있지 않습니다.
 
 예를 들어 &quot;시작하기 자습서&quot;라는 이름의 사이트에 대해 &quot;참여&quot;인 경우 중재자의 사용자 그룹은 다음과 같습니다.
 
-* 제목:커뮤니티 참여 중재자
-* 이름:community-*engage-uid*-moderators
+* 제목: 커뮤니티 참여 중재자
+* 이름: community-*engage-uid*-moderators
 
 사이트를 만드는 동안 중재자 또는 그룹 관리자로 지정된 구성원은 해당 그룹에도 할당되고 구성원 그룹에도 할당됩니다. 이러한 그룹 및 구성원 할당은 새 사이트가 게시될 때 게시 시 생성됩니다.
 
@@ -535,13 +535,13 @@ UGC는 사이트 패키지에 포함되어 있지 않습니다.
 
 >[!NOTE]
 >
->[소셜 로그인을 허용하는 경우:사용자 그룹이 활성화되면 facebook](#user-management) 이 활성화됩니다
+>[소셜 로그인을 허용하는 경우: 사용자 그룹이 활성화되면 facebook](#user-management) 이 활성화됩니다
 >
 >* community-*&lt;site-name>*-*&lt;uid>*-members
 
 가(가) 만들어지면 적용된 [Facebook 클라우드 서비스](social-login.md#createafacebookcloudservice)를 구성하여 사용자를 이 그룹에 추가해야 합니다.
 
-## 인증 오류 {#configure-for-authentication-error}에 대한 구성
+## 인증 오류에 대한 구성 {#configure-for-authentication-error}
 
 기본적으로 커뮤니티 사이트는 사용자가 잘못된 자격 증명을 입력하고 로그인하지 못할 때 샘플 로그인 페이지로 리디렉션됩니다. 이 샘플 로그인은 [프로덕션 서버](../../help/sites-administering/production-ready.md)에 없습니다.
 
