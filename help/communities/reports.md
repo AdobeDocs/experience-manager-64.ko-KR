@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 0042893e-3d2c-469e-8759-404be16e7436
-role: Administrator
+role: Admin
 exl-id: 766711ea-f3d3-49ab-8346-4e4477c261bd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 7%
@@ -38,7 +38,7 @@ AEM Communities의 경우 작성 환경에서 여러 가지 방법으로 액세�
 
 ### 커뮤니티 사이트 보고서 {#reports-for-community-sites}
 
-* 전역 탐색에서:**[!UICONTROL 탐색 > 커뮤니티 > 보고서]**
+* 전역 탐색에서: **[!UICONTROL 탐색 > 커뮤니티 > 보고서]**
 * 선택
    * **[!UICONTROL 할당 보고서]**
       * 선택한 커뮤니티 사이트, 사용자 또는 그룹 및 지정에 대한 보고서를 생성합니다
@@ -50,7 +50,7 @@ AEM Communities의 경우 작성 환경에서 여러 가지 방법으로 액세�
 
 ### 지원 리소스 및 학습 경로 보고서 {#reports-for-enablement-resources-and-learning-paths}
 
-* 전역 탐색에서:**[!UICONTROL 탐색 > 커뮤니티 > 리소스]**
+* 전역 탐색에서: **[!UICONTROL 탐색 > 커뮤니티 > 리소스]**
 * 기존 지원 커뮤니티 사이트 선택
    * **[!UICONTROL 보고서]** 아이콘을 선택하여 모든 지원 리소스를 포함하는 보고서를 생성합니다
    * 지원 학습 경로 선택
@@ -138,6 +138,6 @@ Site커뮤니티 사이트 선택
 
 ## 문제 해결 {#troubleshooting}
 
-### {#no-community-sites-listed}에 나열된 커뮤니티 사이트가 없습니다.
+### 나열된 커뮤니티 사이트 없음 {#no-community-sites-listed}
 
 나열된 커뮤니티 사이트가 없는 경우, 사이트에 대해 Adobe Analytics이 활성화되었는지 확인하십시오. 발령에 대한 보고서를 선택하는 경우 지정 기능이 커뮤니티 사이트의 구조에 있는지 확인합니다.
