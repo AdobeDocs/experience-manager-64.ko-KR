@@ -7,9 +7,9 @@ uuid: ce253b5a-eeb2-47d2-a6c9-e6f59384159a
 contentOwner: khsingh
 topic-tags: installing
 discoiquuid: 1bb8360c-5543-484e-9712-590822211298
-role: Administrator
+role: Admin
 exl-id: 45b0fb99-9f7f-47e6-a4de-4db321867f8f
-source-git-commit: 4598602f75c0cd477e4d898700735c6cd5be175a
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1836'
 ht-degree: 5%
@@ -22,7 +22,7 @@ ht-degree: 5%
 
 ## 소개 {#introduction}
 
-AEM Forms은 최종 사용자의 데이터를 가져오는 양식 세트를 제공합니다.적응형 양식, HTML5 Forms 및 PDF forms. 또한 웹 페이지에 사용 가능한 모든 양식을 나열하고 양식의 사용을 분석하며 프로필을 기반으로 사용자를 타깃팅하는 도구를 제공합니다. 이러한 기능은 AEM Forms 추가 기능 패키지에 포함되어 있습니다. 추가 기능 패키지는 AEM의 작성자 또는 게시 인스턴스에 배포됩니다.
+AEM Forms은 최종 사용자의 데이터를 가져오는 양식 세트를 제공합니다. 적응형 양식, HTML5 Forms 및 PDF forms. 또한 웹 페이지에 사용 가능한 모든 양식을 나열하고 양식의 사용을 분석하며 프로필을 기반으로 사용자를 타깃팅하는 도구를 제공합니다. 이러한 기능은 AEM Forms 추가 기능 패키지에 포함되어 있습니다. 추가 기능 패키지는 AEM의 작성자 또는 게시 인스턴스에 배포됩니다.
 
 **적응형 양식:** 이러한 양식은 장치의 화면 크기에 따라 모양은 변경되며, 매력적이며, 자연에서 상호 작용합니다. 적용형 Forms은 Adobe Analytics, Adobe Sign 및 Adobe Target과 통합할 수도 있습니다. Adobe Campaign을 사용하면 인구 통계학 및 기타 기능을 기반으로 사용자에게 개인화된 양식 및 프로세스 중심의 경험을 제공할 수 있습니다. 적응형 양식을 Adobe Sign과 통합할 수도 있습니다.
 
@@ -47,8 +47,8 @@ AEM Forms 데이터 캡처 기능 설치 및 구성을 시작하기 전에 다�
 * AEM 인스턴스의 설치 경로에 공백이 들어 있지 않습니다.
 * AEM 인스턴스가 실행 중입니다. AEM 용어에서 &quot;인스턴스&quot;는 작성자 또는 게시 모드에서 서버에서 실행되는 AEM의 사본입니다. AEM Forms 데이터 캡처 기능을 실행하려면 두 개 이상의 [AEM 인스턴스(작성자 및 게시 한 개)가 필요합니다.](/help/sites-deploying/deploy.md)
 
-   * **작성자**:컨텐츠를 작성, 업로드 및 편집하고 웹 사이트를 관리하는 데 사용되는 AEM 인스턴스입니다. 컨텐츠가 라이브로 전환될 준비가 되면 게시 인스턴스에 복제됩니다.
-   * **게시**:인터넷 또는 내부 네트워크를 통해 대중에게 게시된 컨텐츠를 제공하는 AEM 인스턴스입니다.
+   * **작성자**: 컨텐츠를 작성, 업로드 및 편집하고 웹 사이트를 관리하는 데 사용되는 AEM 인스턴스입니다. 컨텐츠가 라이브로 전환될 준비가 되면 게시 인스턴스에 복제됩니다.
+   * **게시**: 인터넷 또는 내부 네트워크를 통해 대중에게 게시된 컨텐츠를 제공하는 AEM 인스턴스입니다.
 
 * 메모리 요구 사항이 충족되었습니다. AEM Forms 추가 기능 패키지에는 다음이 필요합니다.
 
@@ -56,7 +56,7 @@ AEM Forms 데이터 캡처 기능 설치 및 구성을 시작하기 전에 다�
    * UNIX 기반 설치를 위한 6GB의 임시 공간.
 
 * 작성자 및 게시 인스턴스에 대한 복제 및 역방향 복제가 설정됩니다. 자세한 내용은 [복제](/help/sites-deploying/replication.md)를 참조하십시오.
-* UNIX 기반 시스템에 대한 추가 요구 사항:UNIX 기반 운영 체제를 사용하는 경우 각 운영 체제의 설치 미디어에서 다음 패키지를 설치합니다.
+* UNIX 기반 시스템에 대한 추가 요구 사항: UNIX 기반 운영 체제를 사용하는 경우 각 운영 체제의 설치 미디어에서 다음 패키지를 설치합니다.
 
 <table> 
  <tbody> 
@@ -111,7 +111,7 @@ AEM Forms에는 몇 가지 필수 및 선택적 구성이 있습니다. 필수 �
 
 ### 필수 설치 후 구성 {#mandatory-post-installation-configurations}
 
-#### RSA 및 BouncyCastle 라이브러리 구성 {#configure-rsa-and-bouncycastle-libraries}
+#### RSA 및 BouncyCastle 라이브러리 구성  {#configure-rsa-and-bouncycastle-libraries}
 
 라이브러리를 부팅하려면 모든 작성자 및 게시 인스턴스에서 다음 단계를 수행하십시오.
 
@@ -136,7 +136,7 @@ AEM Forms에는 몇 가지 필수 및 선택적 구성이 있습니다. 필수 �
 1. 파일을 저장하고 닫고 AEM 인스턴스를 시작합니다.
 1. 모든 작성자 및 게시 인스턴스에서 1-4단계를 반복합니다.
 
-#### 직렬화 에이전트 {#configure-the-serialization-agent} 구성
+#### 직렬화 에이전트 구성 {#configure-the-serialization-agent}
 
 모든 작성자 및 게시 인스턴스에서 다음 단계를 수행하여 패키지를 페이지에 허용 목록에 추가하다 추가합니다.
 
@@ -179,9 +179,9 @@ Dispatcher가 AEM에 대해 캐싱 및 로드 밸런싱 도구를 제공합니�
    >
    >캐시를 비활성화하려면 적응형 Forms 수 필드의 값을 **0**&#x200B;로 설정하십시오. 캐시 구성을 비활성화하거나 변경하면 캐시가 재설정되고 모든 양식 및 문서가 캐시에서 제거됩니다.
 
-#### 양식 데이터 모델 {#configure-ssl-communcation-for-form-data-model}에 대한 SSL 통신 구성
+#### 양식 데이터 모델에 대한 SSL 통신 구성 {#configure-ssl-communcation-for-form-data-model}
 
-양식 데이터 모델에 대해 SSL 통신을 활성화할 수 있습니다. 양식 데이터 모델에 대해 SSL 통신을 사용하려면 AEM Forms 인스턴스를 시작하기 전에 모든 인스턴스의 Java Trust Store에 인증서를 추가하십시오. 아래 명령을 실행하여 인증서를 추가할 수 있습니다.&quot;
+양식 데이터 모델에 대해 SSL 통신을 활성화할 수 있습니다. 양식 데이터 모델에 대해 SSL 통신을 사용하려면 AEM Forms 인스턴스를 시작하기 전에 모든 인스턴스의 Java Trust Store에 인증서를 추가하십시오. 아래 명령을 실행하여 인증서를 추가할 수 있습니다. &quot;
 
 `keytool -import -alias <alias-name> -file <pathTo .cer certificate file> -keystore <<pathToJRE>\lib\security\cacerts>`
 
