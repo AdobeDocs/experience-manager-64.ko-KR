@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: e975e026-e815-4445-be3e-b1237ed3f6b2
-role: Administrator
+role: Admin
 exl-id: 4ff530ae-c676-4259-86f2-a3881843b642
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 0%
@@ -40,7 +40,7 @@ UGC용 SRP 사용에 대한 자세한 내용은 [Storage Resource Provider Overv
 >
 >배포에 기본 [JSRP](topologies.md#jsrp) 토폴로지와 같은 공용 저장소가 포함되지 않으면 UGC는 제공된 AEM 게시 또는 작성자 인스턴스에서만 표시됩니다. 토폴로지에 게시 클러스터가 포함된 경우에만 게시 인스턴스에서 UGC가 표시됩니다.
 
-## SRP 옵션 {#characteristics-of-srp-options} 특성
+## SRP 옵션 특성 {#characteristics-of-srp-options}
 
 [ASRP - Adobe 저장소 리소스 공급자](asrp.md)\
 이 옵션을 사용하면 UGC는 Adobe에서 호스팅 및 관리하는 클라우드 서비스에서 원격으로 유지됩니다. 특정 라이센스에 대한 계정을 제공하려면 추가 라이센스가 필요하며 계정 담당자와 협력해야 합니다.
@@ -99,7 +99,7 @@ UGC용 SRP 사용에 대한 자세한 내용은 [Storage Resource Provider Overv
 
 ## 추가 정보 {#additional-information}
 
-### UGC가 복제되지 않음 {#ugc-never-replicated}
+### UGC 복제 안 함 {#ugc-never-replicated}
 
 작성 환경에서 작성자는 페이지 컨텐츠를 만들고 게시 환경에 복제합니다. 페이지에 댓글, 검토, 포럼, 블로그 또는 QnA와 같은 대화형 AEM Communities 기능이 포함되어 있으면 게시 인스턴스에서 구성원(로그인한 사이트 방문자)의 상호 작용으로 인해 게시 환경에 입력한 사용자 생성 컨텐츠(UGC)가 발생합니다.
 
