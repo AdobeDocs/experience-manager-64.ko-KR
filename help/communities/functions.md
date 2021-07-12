@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: cc993b71-e2f2-48e7-ad4e-469cb5ce2dc1
-role: Administrator
+role: Admin
 exl-id: 2007336d-d75c-4e01-af81-181751c04cfe
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2542'
 ht-degree: 3%
@@ -30,15 +30,15 @@ ht-degree: 3%
 >
 >[커뮤니티 사이트](sites-console.md), [커뮤니티 사이트 템플릿](sites.md), [커뮤니티 그룹 템플릿](tools-groups.md) 및 [커뮤니티 함수](functions.md)를 만드는 콘솔은 작성 환경에서만 사용할 수 있습니다.
 
-## 커뮤니티 함수 콘솔 {#community-functions-console}
+## 커뮤니티 기능 콘솔 {#community-functions-console}
 
 작성 환경에서 커뮤니티 기능 콘솔에 도달하려면
 
-* 전역 탐색에서:**[!UICONTROL 도구 > 커뮤니티 > 커뮤니티 함수]**
+* 전역 탐색에서: **[!UICONTROL 도구 > 커뮤니티 > 커뮤니티 함수]**
 
 ![chlimage_1-379](assets/chlimage_1-379.png)
 
-## 미리 빌드된 함수 {#pre-built-functions}
+## 사전 빌드된 함수 {#pre-built-functions}
 
 다음은 AEM Communities과 함께 제공되는 기능에 대한 간략한 설명입니다. 각 함수는 [커뮤니티 사이트 템플릿](sites.md)에 쉽게 통합되는 기능에 연결된 커뮤니티 구성 요소가 포함된 하나 이상의 AEM 페이지로 구성됩니다.
 
@@ -161,7 +161,7 @@ ht-degree: 3%
    * 선택 취소하면 커뮤니티 사이트에 허용되는 네임스페이스를 하나 이상 선택할 수 있습니다.
    * 기본값이 선택되어 있습니다.
 
-### 추천 콘텐츠 함수 {#featured-content-function}
+### 주요 콘텐츠 함수 {#featured-content-function}
 
 주요 컨텐츠 함수는 [주요 컨텐츠 구성 요소](featured.md)가 구성되어 주석을 추가 및 삭제할 수 있도록 구성된 페이지입니다.
 
@@ -258,7 +258,7 @@ ht-degree: 3%
 
 리드 보드 함수는 [리드 보드 구성 요소](enabling-leaderboard.md)가 하나 있는 페이지입니다.
 
-**참고**:리드 보드 구성 요소는 커뮤니티 템플릿 ** 에서 리드 보드 기능을 포함하는 커뮤니티 사이트를 만든 후 추가 구성이 필요합니다. 커뮤니티 사이트에 대한 [점수 및 배지](implementing-scoring.md)의 구성에 따라 리더보드 구성 요소의 [규칙](enabling-leaderboard.md#rules-tab)을 지정해야 합니다.
+**참고**: 리드 보드 구성 요소는 커뮤니티 템플릿 ** 에서 리드 보드 기능을 포함하는 커뮤니티 사이트를 만든 후 추가 구성이 필요합니다. 커뮤니티 사이트에 대한 [점수 및 배지](implementing-scoring.md)의 구성에 따라 리더보드 구성 요소의 [규칙](enabling-leaderboard.md#rules-tab)을 지정해야 합니다.
 
 템플릿에 추가하면 기본 제목 및 URL 이름과 템플릿에 대한 기본 표시 설정을 지정하는 다음 대화 상자가 열립니다.
 
@@ -282,7 +282,7 @@ ht-degree: 3%
 
 ### 페이지 기능 {#page-function}
 
-페이지 함수는 커뮤니티 사이트의 기능에 연결된 빈 페이지를 커뮤니티 사이트에 추가합니다.로그인, 메뉴, 알림, 메시지, 테마 및 브랜딩. 컨텐츠는 [표준 AEM 작성 모드](../../help/sites-authoring/editing-content.md)를 사용하여 페이지에 추가할 수 있습니다.
+페이지 함수는 커뮤니티 사이트의 기능에 연결된 빈 페이지를 커뮤니티 사이트에 추가합니다. 로그인, 메뉴, 알림, 메시지, 테마 및 브랜딩. 컨텐츠는 [표준 AEM 작성 모드](../../help/sites-authoring/editing-content.md)를 사용하여 페이지에 추가할 수 있습니다.
 
 템플릿에 추가되면 유일한 구성은 [제목 및 URL 설정](#title-and-url-settings)에 대한 것입니다.
 
