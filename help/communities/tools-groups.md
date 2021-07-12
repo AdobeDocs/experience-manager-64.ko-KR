@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 9a862756-58e8-47c0-a4b4-5d4aaac021e4
-role: Administrator
+role: Admin
 exl-id: ac399a66-0f3b-4f95-969e-a4109c260d1d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 2%
@@ -36,7 +36,7 @@ Communities [기능 팩 1](deploy-communities.md#latestfeaturepack)부터는 그
 
 작성 환경에서 그룹 템플릿 콘솔에 도달하려면 다음을 수행하십시오
 
-* 전역 탐색에서:**[!UICONTROL 도구 > 커뮤니티 > 그룹 템플릿]**
+* 전역 탐색에서: **[!UICONTROL 도구 > 커뮤니티 > 그룹 템플릿]**
 
 이 콘솔에는 [커뮤니티 사이트](sites-console.md)를 만들 수 있고 새 그룹 템플릿을 만들 수 있는 템플릿이 표시됩니다.
 
@@ -91,7 +91,7 @@ Communities [기능 팩 1](deploy-communities.md#latestfeaturepack)부터는 그
 
 원하는 함수를 모두 템플릿 빌더 영역으로 끌어다 놓고 구성했으면 오른쪽 상단 모서리에서 **[!UICONTROL 저장]** 을 선택합니다.
 
-## 그룹 템플릿 편집{#edit-group-template}
+## 그룹 템플릿 편집 {#edit-group-template}
 
 기본 [그룹 템플릿 콘솔](#group-templates-console)에서 커뮤니티 그룹을 볼 때 편집할 기존 그룹 템플릿을 선택할 수 있습니다.
 
