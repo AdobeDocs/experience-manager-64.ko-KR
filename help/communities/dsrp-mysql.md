@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
-role: Administrator
+role: Admin
 exl-id: 1de1ffc6-63f8-4316-a2fa-5095d407c265
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 2%
 
 ---
 
-# DSRP {#mysql-configuration-for-dsrp}에 대한 MySQL 구성
+# DSRP용 MySQL 구성 {#mysql-configuration-for-dsrp}
 
 MySQL은 UGC(사용자 생성 컨텐츠)를 저장하는 데 사용할 수 있는 관계형 데이터베이스입니다.
 
@@ -36,7 +36,7 @@ MySQL은 UGC(사용자 생성 컨텐츠)를 저장하는 데 사용할 수 있�
    * [MySQL Workbench](https://dev.mysql.com/downloads/tools/workbench/)
 
 
-## MySQL {#installing-mysql} 설치
+## MySQL 설치 {#installing-mysql}
 
 [](https://dev.mysql.com/downloads/mysql/) MySQL은 대상 OS에 대한 지침에 따라 다운로드하여 설치해야 합니다.
 
@@ -89,12 +89,12 @@ MySQL Workbench가 처음 실행되면, 다른 용도로 이미 사용되고 있
 
    데모 목적으로 동일한 서버에 작성자 AEM 인스턴스와 MySQL을 사용하여 다음을 수행합니다.
 
-   * 연결 이름:`Communities`
-   * 연결 방법:`Standard (TCP/IP)`
-   * 호스트 이름:`127.0.0.1`
+   * 연결 이름: `Communities`
+   * 연결 방법: `Standard (TCP/IP)`
+   * 호스트 이름: `127.0.0.1`
    * 사용자 이름: `root`
    * 암호: `no password by default`
-   * 기본 스키마:`leave blank`
+   * 기본 스키마: `leave blank`
 
 1. 실행 중인 MySQL 서비스에 대한 연결을 확인하려면 `Test Connection` 을 선택합니다
 
@@ -113,7 +113,7 @@ MySQL Workbench가 처음 실행되면, 다른 용도로 이미 사용되고 있
 
 ![chlimage_1-106](assets/chlimage_1-106.png)
 
-### SQL 스크립트 {#obtain-the-sql-script} 가져오기
+### SQL 스크립트 가져오기 {#obtain-the-sql-script}
 
 SQL 스크립트는 AEM 저장소에서 가져옵니다.
 
@@ -139,7 +139,7 @@ SQL 스크립트는 AEM 저장소에서 가져옵니다.
 
 스크립트에서 데이터베이스 이름이 변경된 경우 [JDBC 구성](#configurejdbcconnections)에서도 이를 변경해야 합니다.
 
-#### 1단계:SQL 파일 {#step-open-sql-file} 열기
+#### 1단계: SQL 파일 열기 {#step-open-sql-file}
 
 MySQL Workbench에서
 
@@ -148,7 +148,7 @@ MySQL Workbench에서
 
 ![chlimage_1-108](assets/chlimage_1-108.png)
 
-#### 2단계:sql 스크립트 실행 {#step-execute-sql-script}
+#### 2단계: sql 스크립트 실행 {#step-execute-sql-script}
 
 1단계에서 연 파일의 워크벤치 창에서 `lightening (flash) icon`을 선택하여 스크립트를 실행합니다.
 
@@ -199,6 +199,6 @@ AEM과 다른 서버에서 MySQL을 실행하는 경우 JDBC 커넥터의 &#39;l
       MySQL에 대해 설정된 암호가 없는 경우 이 필드를 지웁니다.
 
       또는 MySQL 사용자 이름에 대해 구성된 암호를 입력합니다.
-   * **[!UICONTROL 데이터 소스 이름]**:MySQL 연결에  [ ](#new-connection-settings)대해 입력한 이름(예: &#39;communities&#39;)
+   * **[!UICONTROL 데이터 소스 이름]**: MySQL 연결에  [ ](#new-connection-settings)대해 입력한 이름(예: &#39;communities&#39;)
 
 * **[!UICONTROL 저장]**&#x200B;을 선택합니다
