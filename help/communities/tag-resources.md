@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
-role: Administrator
+role: Admin
 exl-id: 89ca201e-23ad-4038-8f3e-7c9cd04f52e2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 0%
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 ![chlimage_1-421](assets/chlimage_1-421.png)
 
-## 사용 리소스에 태그 적용 {#applying-tags-to-enablement-resources}
+## 지원 리소스에 태그 적용 {#applying-tags-to-enablement-resources}
 
 `Show in Catalog` 을 선택하면 지원 리소스 및 학습 경로가 모든 카탈로그에 표시됩니다. 리소스 및 학습 경로에 태그를 추가하면 카탈로그 UI에서 필터링할 뿐만 아니라 특정 카탈로그로 미리 필터링할 수 있습니다.
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 지원 리소스에 태그를 적용하는 관리자는 카탈로그와 연결된 태그 네임스페이스와 분류법을 알고 있어야 보다 세분화된 분류를 위해 하위 태그를 선택할 수 있습니다.
 
-예를 들어 `ski-catalog` 네임스페이스가 만들어 `Ski Catalog` 카탈로그에 설정된 경우 두 개의 하위 태그가 있을 수 있습니다.`lesson-1` 및 `lesson-2`.
+예를 들어 `ski-catalog` 네임스페이스가 만들어 `Ski Catalog` 카탈로그에 설정된 경우 두 개의 하위 태그가 있을 수 있습니다. `lesson-1` 및 `lesson-2`.
 
 따라서 다음 중 하나가 태그로 지정된 모든 지원 리소스
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 ![chlimage_1-422](assets/chlimage_1-422.png)
 
-## 게시 {#viewing-catalog-on-publish}에서 카탈로그 보기
+## 게시할 때 카탈로그 보기 {#viewing-catalog-on-publish}
 
 작성 환경에서 모든 것이 설정되고 게시되면 카탈로그를 사용하여 사용 리소스를 찾는 경험이 게시 환경에서 발생할 수 있습니다.
 
