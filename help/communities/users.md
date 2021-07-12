@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
-role: Administrator
+role: Admin
 exl-id: 54109f64-eb30-47cc-bf7a-756843d2da02
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2183'
 ht-degree: 1%
@@ -257,7 +257,7 @@ AEM에서는 사용자 인증뿐만 아니라 사용자 계정 생성을 위해 
 
 * `User auto membership` 값은 프로필의 `givenName`(표시 이름)가 아니라 `rep:authorizableId` 속성이어야 합니다.
 
-## AEM 인스턴스 {#synchronizing-users-among-aem-instances} 간 사용자 동기화
+## AEM 인스턴스 간 사용자 동기화 {#synchronizing-users-among-aem-instances}
 
 [게시 팜](topologies.md)을 사용할 때는 사용자를 먼저 하나의 인스턴스로 가져오고 [사용자 동기화](sync.md)를 활성화하여 사용자가 다른 게시 인스턴스에 사용자를 분배하도록 함으로써 각 게시 인스턴스에서 동일한 경로를 사용자가 갖도록 하십시오.
 
