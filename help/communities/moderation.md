@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 6c405543-e339-4916-aa0f-b61d0b798cf3
-role: Administrator
+role: Admin
 exl-id: ded38cee-fbce-46cc-974f-38d3a293a55d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1855'
 ht-degree: 4%
@@ -52,7 +52,7 @@ AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정�
 
 작성 환경에서 중재 콘솔에 도달하려면
 
-* 전역 탐색에서:**[!UICONTROL 탐색 > 커뮤니티 > 중재]**
+* 전역 탐색에서: **[!UICONTROL 탐색 > 커뮤니티 > 중재]**
 
 관리자로 로그인하거나 ` [moderator permissions](in-context.md#identifyingtrustedmembers)` 멤버로 로그인한 경우에만 조정 작업을 수행할 수 있습니다. 표시된 유일한 커뮤니티 콘텐츠는 로그인한 구성원이 중재할 수 있는 것입니다.
 
