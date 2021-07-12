@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 47201e2d-338d-40e0-af82-c681a552807b
-role: Administrator
+role: Admin
 exl-id: f6c6619e-b386-4d34-9d17-654d7c97aedd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 1%
@@ -64,7 +64,7 @@ AEM Communities에서는 로그인한 커뮤니티 구성원에게 관심 이벤
 
 * 구성원 프로필이 이미 다른 구성원이 팔로우할 수 있도록 구성되어 있습니다
 
-## 다음 {#notifications-from-following}의 알림
+## 다음에서 알림 {#notifications-from-following}
 
 ![chlimage_1-254](assets/chlimage_1-254.png)
 
@@ -108,7 +108,7 @@ AEM Communities에서는 로그인한 커뮤니티 구성원에게 관심 이벤
 
 ![chlimage_1-258](assets/chlimage_1-258.png)
 
-### 전자 메일 알림 {#email-notifications}
+### 이메일 알림 {#email-notifications}
 
 이메일 채널이 활성화되면 구성원은 웹의 컨텐츠에 대한 링크가 포함된 이메일을 수신하게 됩니다.
 
