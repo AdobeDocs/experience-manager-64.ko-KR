@@ -9,16 +9,16 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 discoiquuid: f564759f-fb56-4f70-a7b1-286a223755c6
-role: Administrator
+role: Admin
 exl-id: f4adc53d-6809-4d89-a3dd-5d783e938a63
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 7%
 
 ---
 
-# AEM Communities {#user-and-ugc-management-service-in-aem-communities}의 사용자 및 UGC 관리 서비스
+# AEM Communities의 사용자 및 UGC 관리 서비스 {#user-and-ugc-management-service-in-aem-communities}
 
 >[!IMPORTANT]
 >
@@ -40,31 +40,31 @@ AEM Communities은 사용자 프로필을 관리하고 사용자 생성 콘텐�
 
 이러한 API를 사용하면 다음 기능을 수행할 수 있습니다.
 
-## {#retrieve-the-ugc-of-a-user} 사용자의 UGC 검색
+## 사용자의 UGC 검색 {#retrieve-the-ugc-of-a-user}
 
 `getUserUgc(ResourceResolver resourceResolver, String user, OutputStream outputStream)` 은 시스템에서 사용자의 모든 UGC를 내보내는 데 도움이 됩니다.
 
-* **사용자**:사용자의 작성 가능한 ID.
-* **outputStream**:결과는 사용자가 생성한 컨텐츠(json 파일)와 첨부 파일(사용자가 업로드한 이미지 또는 비디오 포함)을 포함하는 zip 파일인 출력 스트림으로 반환됩니다.
+* **사용자**: 사용자의 작성 가능한 ID.
+* **outputStream**: 결과는 사용자가 생성한 컨텐츠(json 파일)와 첨부 파일(사용자가 업로드한 이미지 또는 비디오 포함)을 포함하는 zip 파일인 출력 스트림으로 반환됩니다.
 
 예를 들어, weston.mccall@dodgit.com을 작성 가능한 ID로 사용하여 커뮤니티 사이트에 로그인하는 Weston McCall이라는 사용자의 UGC를 내보내려면 다음과 유사한 http GET 요청을 보낼 수 있습니다.
 
 `http://localhost:port/services/social/ugcmanagement?user=weston.mccall@dodgit.com&operation=getUgc`
 
-## {#delete-the-ugc-of-a-user} 사용자의 UGC 삭제
+## 사용자의 UGC 삭제 {#delete-the-ugc-of-a-user}
 
 **deleteUserUgc(ResourceResolver resourceResolver, String 사용자)** 는 시스템에서 사용자의 모든 UGC를 삭제하는 데 도움이 됩니다.
 
-* **사용자**:사용자의 작성 가능한 ID.
+* **사용자**: 사용자의 작성 가능한 ID.
 
 예를 들어 http-POST 요청을 통해 작성 가능한 ID가 weston.mccall@dodgit.com 있는 사용자의 UGC를 삭제하려면 다음 매개 변수를 사용하십시오.
 
 * user= weston.mccall@dodgit.com
 * operation= deleteUgc
 
-### Adobe Analytics {#delete-ugc-from-analytics}에서 UGC 삭제
+### Adobe Analytics에서 UGC 삭제 {#delete-ugc-from-analytics}
 
-Adobe Analytics에서 사용자 데이터를 삭제하려면 GDPR Analytics 워크플로우를 따릅니다.api는 Adobe Analytics에서 사용자 데이터를 삭제하지 않습니다.
+Adobe Analytics에서 사용자 데이터를 삭제하려면 GDPR Analytics 워크플로우를 따릅니다. api는 Adobe Analytics에서 사용자 데이터를 삭제하지 않습니다.
 
 AEM Communities에서 사용하는 Adobe Analytics 변수 매핑에 대해서는 다음 이미지를 참조하십시오.
 
@@ -74,7 +74,7 @@ AEM Communities에서 사용하는 Adobe Analytics 변수 매핑에 대해서는
 
 **deleteUserAccount(ResourceResolver resourceResolver, String 사용자)** 는 사용자 계정을 비활성화하는 데 도움이 됩니다.
 
-* **사용자**:사용자의 작성 가능한 ID.
+* **사용자**: 사용자의 작성 가능한 ID.
 
 >[!NOTE]
 >
@@ -87,4 +87,4 @@ AEM Communities에서 사용하는 Adobe Analytics 변수 매핑에 대해서는
 
 >[!NOTE]
 >
->deleteUserAccount() API는 시스템에서 사용자 프로필만 비활성화하고 UGC를 제거합니다. 그러나 시스템에서 사용자 프로필을 삭제하려면 **CRXDE Lite**&#x200B;로 이동합니다.[https://&lt;server>/crx/de](http://localhost:4502/crx/de) 사용자 노드를 찾아 삭제합니다.
+>deleteUserAccount() API는 시스템에서 사용자 프로필만 비활성화하고 UGC를 제거합니다. 그러나 시스템에서 사용자 프로필을 삭제하려면 **CRXDE Lite**&#x200B;로 이동합니다. [https://&lt;server>/crx/de](http://localhost:4502/crx/de) 사용자 노드를 찾아 삭제합니다.
