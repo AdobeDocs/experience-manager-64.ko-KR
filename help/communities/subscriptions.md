@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
-role: Administrator
+role: Admin
 exl-id: 8a756328-0405-49b7-b94d-3dd5a87c782a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 2%
@@ -44,7 +44,7 @@ ht-degree: 2%
 
 다음 구독 *및*&#x200B;을 사용하도록 구성 요소를 구성해야 합니다. 구독을 허용하는 기능은 [블로그](blog-feature.md), [포럼](forum.md) 및 [QnA](working-with-qna.md)입니다.
 
-## 다음 {#subscriptions-from-following}의 구독
+## 구독 출처: {#subscriptions-from-following}
 
 ![chlimage_1-5](assets/chlimage_1-5.png)
 
@@ -62,7 +62,7 @@ ht-degree: 2%
 
    * 특정 항목에 대한 활동이 있으면 이메일을 보냅니다
 
-## 전자 메일로 회신 {#reply-by-email}
+## 이메일로 회신 {#reply-by-email}
 
 이메일이 [전자 메일](email.md#configure-polling-importer)에 응답하도록 구성되어 있는 경우, 가입한 구성원은 게시된 컨텐츠와 온라인 컨텐츠에 대한 링크를 포함한 이메일을 받게 됩니다.
 
