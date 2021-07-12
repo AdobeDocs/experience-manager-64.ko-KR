@@ -10,16 +10,16 @@ topic-tags: designer
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 36560809-dba9-49cf-a8ee-23c6766382ef
 noindex: true
-role: Administrator
+role: Admin
 exl-id: 9791ffd5-04c4-4eed-8e99-b390e539197d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 1%
 
 ---
 
-# 디자이너 {#installing-and-configuring-designer} 설치 및 구성
+# 디자이너 설치 및 구성 {#installing-and-configuring-designer}
 
 디자이너는 독립 실행형 설치 프로그램으로 사용할 수 있으며 WorkBench와 함께 번들로 제공됩니다. Designer용 독립형 설치 프로그램을 사용하는 경우 다음 단계를 수행합니다.
 
