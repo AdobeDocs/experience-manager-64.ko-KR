@@ -6,9 +6,9 @@ seo-description: '비즈니스 서신, 문서, 명세서, 혜택 공지, 마케�
 uuid: 847c3351-dc46-4e60-a023-0f4e9e057c7c
 topic-tags: installing
 discoiquuid: 7333641e-8c8c-4b52-a7da-a2976c88592c
-role: Administrator
+role: Admin
 exl-id: 308b106f-4c5a-49d6-a7f6-c1e8a0bf62e9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1639'
 ht-degree: 6%
@@ -56,16 +56,16 @@ OSGi에서 Forms 중심의 워크플로우를 설치 및 구성하기 전에 다
 * AEM 인스턴스의 설치 경로에 공백이 들어 있지 않습니다.
 * AEM 인스턴스가 실행 중입니다. AEM 용어에서 &quot;인스턴스&quot;는 작성자 또는 게시 모드에서 서버에서 실행되는 AEM의 사본입니다. OSGi에서 Forms 중심의 워크플로우를 실행하려면 하나 이상의 AEM 인스턴스(작성자 또는 처리)가 필요합니다.
 
-   * **작성자**:컨텐츠를 작성, 업로드 및 편집하고 웹 사이트를 관리하는 데 사용되는 AEM 인스턴스입니다. 컨텐츠가 라이브로 전환될 준비가 되면 게시 인스턴스에 복제됩니다.
+   * **작성자**: 컨텐츠를 작성, 업로드 및 편집하고 웹 사이트를 관리하는 데 사용되는 AEM 인스턴스입니다. 컨텐츠가 라이브로 전환될 준비가 되면 게시 인스턴스에 복제됩니다.
    * **처리 중:** 처리 인스턴스는  [신뢰할 수 있는 AEM ](/help/forms/using/hardening-securing-aem-forms-environment.md) Authorinstance입니다. 설치를 수행한 후 작성자 인스턴스를 설정하고 이를 취소할 수 있습니다.
-   * **게시**:인터넷 또는 내부 네트워크를 통해 대중에게 게시된 컨텐츠를 제공하는 AEM 인스턴스입니다.
+   * **게시**: 인터넷 또는 내부 네트워크를 통해 대중에게 게시된 컨텐츠를 제공하는 AEM 인스턴스입니다.
 
 * 메모리 요구 사항이 충족되었습니다. AEM Forms 추가 기능 패키지에는 다음이 필요합니다.
 
    * Microsoft Windows 기반 설치를 위한 15GB의 임시 공간.
    * UNIX 기반 설치를 위한 6GB의 임시 공간.
 
-* UNIX 기반 시스템에 대한 추가 요구 사항:UNIX 기반 운영 체제를 사용하는 경우 각 운영 체제의 설치 미디어에서 다음 패키지를 설치합니다.
+* UNIX 기반 시스템에 대한 추가 요구 사항: UNIX 기반 운영 체제를 사용하는 경우 각 운영 체제의 설치 미디어에서 다음 패키지를 설치합니다.
 
 <table> 
  <tbody>
@@ -120,7 +120,7 @@ AEM Forms에는 몇 가지 필수 및 선택적 구성이 있습니다. 필수 �
 
 ### 필수 설치 후 구성 {#mandatory-post-installation-configurations}
 
-#### RSA 및 BouncyCastle 라이브러리 구성 {#configure-rsa-and-bouncycastle-libraries}
+#### RSA 및 BouncyCastle 라이브러리 구성  {#configure-rsa-and-bouncycastle-libraries}
 
 라이브러리를 부팅하려면 모든 작성자 및 게시 인스턴스에서 다음 단계를 수행하십시오.
 
@@ -145,7 +145,7 @@ AEM Forms에는 몇 가지 필수 및 선택적 구성이 있습니다. 필수 �
 1. 파일을 저장하고 닫고 AEM 인스턴스를 시작합니다.
 1. 모든 작성자 및 게시 인스턴스에 대해 1-4단계를 반복합니다.
 
-#### 직렬화 에이전트 {#configure-the-serialization-agent} 구성
+#### 직렬화 에이전트 구성 {#configure-the-serialization-agent}
 
 모든 작성자 및 게시 인스턴스에서 다음 단계를 수행하여 패키지를 페이지에 허용 목록에 추가하다 추가합니다.
 
