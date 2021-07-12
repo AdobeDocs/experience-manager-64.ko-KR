@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
-role: Administrator
+role: Admin
 exl-id: e41eb0fa-ae88-44d5-9181-0d925b8b62c6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1702'
 ht-degree: 0%
@@ -40,7 +40,7 @@ JEE의 기존 AEM 6.2 Forms 또는 JEE의 AEM 6.3 Forms을 JEE의 AEM 6.4 Forms�
 
 AEM 6.0 Forms, AEM 6.1 Forms에서 AEM 6.4 Forms으로 직접 업그레이드할 수 없습니다. 하나 이상의 LiveCycle 또는 AEM Forms 버전으로 중간 업그레이드를 수행한 다음, AEM 6.4 Forms에서 업그레이드할 수 있습니다. 중간 버전 및 해당 업그레이드 지침 목록은 [업그레이드 경로 선택](upgrade.md)을 참조하십시오.
 
-## LiveCycle ES4 SP1 > AEM 6.4 Forms on JEE {#livecycle-es4sp1-forms-jee}
+## LiveCycle ES4 SP1 > JEE의 AEM 6.4 Forms {#livecycle-es4sp1-forms-jee}
 
 LiveCycle ES4 SP1을 JEE의 AEM 6.4 Forms으로 업그레이드하면 이전 버전에서 지원되는 애플리케이션 서버, 운영 체제 및 데이터베이스의 새로운 인스턴스(새 버전)로 자산 및 데이터를 마이그레이션해야 하므로 즉시 업그레이드할 수 있습니다.
 
@@ -104,7 +104,7 @@ LiveCycle ES4 SP1을 JEE의 AEM 6.4 Forms으로 업그레이드하면 이전 버
 
 <!--Theses sections used to be an accordion until converted to straight Markdown. When accordions are enabled, revert-->
 
-## LiveCycle ES3 > AEM 6.4 Forms on JEE {#livecycle-es3-forms-jee}
+## LiveCycle ES3 > JEE의 AEM 6.4 Forms {#livecycle-es3-forms-jee}
 
 LiveCycle ES3를 JEE의 AEM 6.4 Forms으로 업그레이드하면 이전 버전에서 지원되는 애플리케이션 서버, 운영 체제 및 데이터베이스의 새로운 인스턴스(새 버전)로 자산 및 데이터를 마이그레이션하는 작업이 포함되므로 업그레이드 시 즉시 수행됩니다.
 
