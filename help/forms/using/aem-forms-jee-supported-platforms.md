@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
-role: Administrator
+role: Admin
 exl-id: 6609c625-0591-42fd-910b-c7c65d52c5f1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '3316'
 ht-degree: 1%
@@ -47,15 +47,15 @@ Adobe은 이러한 구성을 권장하며 표준 소프트웨어 유지 관리 �
    <th>설명</th> 
   </tr> 
   <tr> 
-   <td>A:지원됨<br /> </td> 
+   <td>A: 지원됨<br /> </td> 
    <td>Adobe은 이 구성에 대한 모든 지원 및 유지 관리를 제공합니다. 이 구성은 Adobe의 품질 보증 프로세스에서 다룹니다.</td> 
   </tr> 
   <tr> 
-   <td>R:제한된 지원</td> 
+   <td>R: 제한된 지원</td> 
    <td>Adobe은 특정 사전 요구 사항을 충족한 후 이 구성에 대한 모든 지원을 제공합니다. 사전 요구 사항에 대해 알아보고 지원 요청을 제기하려면 Adobe 엔터프라이즈 지원에 문의하십시오.</td> 
   </tr> 
   <tr> 
-   <td>L:제한된 지원</td> 
+   <td>L: 제한된 지원</td> 
    <td>Adobe은 특정 사전 요구 사항을 충족한 후 이 구성에 대한 모든 지원 및 유지 관리를 제공합니다. 일부 기능은 구성에서 사용할 수 없습니다. 전제 조건에 대한 자세한 내용을 알고 지원을 요청하려면 Adobe 엔터프라이즈 지원에 문의하십시오.<br /> </td> 
   </tr> 
  </tbody> 
@@ -65,10 +65,10 @@ Adobe은 이러한 구성을 권장하며 표준 소프트웨어 유지 관리 �
 
 | 지원 수준 | 설명 |
 |---|---|
-| E:작동해야 함 | 구성이 작동될 것으로 예상되며, 반대의 보고는 없습니다. |
-| Z:지원되지 않음 | 구성이 지원되지 않습니다. Adobe은 구성 작동 여부에 대한 설명을 만들지 않으며 구성을 지원하지 않습니다. |
+| E: 작동해야 함 | 구성이 작동될 것으로 예상되며, 반대의 보고는 없습니다. |
+| Z: 지원되지 않음 | 구성이 지원되지 않습니다. Adobe은 구성 작동 여부에 대한 설명을 만들지 않으며 구성을 지원하지 않습니다. |
 
-### Java Virtual Machine(JVM) {#java-virtual-machines-jvm}
+### JVM(Java Virtual Machine) {#java-virtual-machines-jvm}
 
 Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배포에서 제공하는 Java Virtual Machine을 실행해야 합니다. Adobe Experience Manager은 다음 버전의 Java Virtual Machine을 사용하여 작동합니다.
 
@@ -81,12 +81,12 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
   </tr> 
   <tr> 
    <td><p>Oracle Java™ SE 8(64비트)</p> </td> 
-   <td><p>A:지원됨</p> </td> 
+   <td><p>A: 지원됨</p> </td> 
    <td><p>사소한 릴리스 및 업데이트</p> </td> 
   </tr> 
   <tr> 
    <td>IBM® J9 가상 컴퓨터(빌드 2.8, JRE 1.8.0)</td> 
-   <td>A:지원됨</td> 
+   <td>A: 지원됨</td> 
    <td>사소한 릴리스 및 업데이트</td> 
   </tr> 
  </tbody> 
@@ -220,7 +220,7 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
  </tbody> 
 </table>
 
-### 응용 프로그램 서버 {#application-servers}
+### 애플리케이션 서버 {#application-servers}
 
 <table> 
  <tbody> 
@@ -231,17 +231,17 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
   </tr> 
   <tr> 
    <td><p>Oracle WebLogic Server 12.2.1(12c R2) <sup>[1] [2] [4] [8]</sup></p> </td> 
-   <td><p>A:지원됨</p> </td> 
+   <td><p>A: 지원됨</p> </td> 
    <td><p>서비스 팩 및 중요 업데이트</p> </td> 
   </tr> 
   <tr> 
    <td>IBM® WebSphere® Application Server 9.0 <sup>[2] [6]</sup><br /> </td> 
-   <td>A:지원됨</td> 
+   <td>A: 지원됨</td> 
    <td>서비스 팩 및 중요 업데이트</td> 
   </tr> 
   <tr> 
    <td><p>JBoss® EAP(엔터프라이즈 응용 프로그램 플랫폼) 7.0.6 <sup>[1] [4] [5] [7] [8][11]</sup></p> </td> 
-   <td><p>A:지원됨</p> </td> 
+   <td><p>A: 지원됨</p> </td> 
    <td><p>지원되는 EAP 버전에 대한 패치 및 누적 패치<br /> </p> </td> 
   </tr> 
  </tbody> 
@@ -264,42 +264,42 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
   </tr> 
   <tr> 
    <td>Microsoft Windows Server 2016</td> 
-   <td>A:지원됨</td> 
+   <td>A: 지원됨</td> 
    <td>서비스 팩 및 중요 업데이트</td> 
   </tr> 
   <tr> 
    <td><p>Microsoft Windows Server 2012 R2 V6.3</p> </td> 
-   <td><p>A:지원됨</p> </td> 
+   <td><p>A: 지원됨</p> </td> 
    <td><p>서비스 팩 및 중요 업데이트</p> </td> 
   </tr> 
   <tr> 
    <td><p>Oracle Solaris™ 11 - V5.11<sup> [3] [10]</sup></p> </td> 
-   <td><p>L:제한적</p> </td> 
+   <td><p>L: 제한적</p> </td> 
    <td><p>업데이트 및 패치</p> </td> 
   </tr> 
   <tr> 
    <td><p>Red Hat Enterprise Linux 7(커널 3.x)</br><b>참고:</b> <a href="https://access.redhat.com/articles/4665701">Red Hat Enterprise Linux 6</a>은 유지 관리 종료 단계에 도달하고, 2020년 11월 30일에 확장 수명 주기 지원 단계로 전환합니다. Adobe은 업그레이드 및 새 설치에 Red Hat Enterprise Linux 7을 권장합니다. 기존 설치에서는 Extended Life Cycle Support 단계 동안 Red Hat Enterprise Linux 6을 사용할 수 있습니다.</p> </td> 
-   <td><p>A:지원됨</p> </td> 
+   <td><p>A: 지원됨</p> </td> 
    <td><p>사소한 릴리스, 누적 업데이트 및 중요 업데이트</p> </td> 
   </tr> 
   <tr> 
    <td><p>SUSE® Linux® Enterprise Server 12</p> </td> 
-   <td><p>A:지원됨</p> </td> 
+   <td><p>A: 지원됨</p> </td> 
    <td><p>서비스 팩, 누적 패치 및 중요 보안 업데이트</p> </td> 
   </tr> 
   <tr> 
    <td>Oracle Linux® 7 업데이트 3</td> 
-   <td>A:지원됨</td> 
+   <td>A: 지원됨</td> 
    <td>서비스 팩, 누적 패치 및 중요 보안 업데이트</td> 
   </tr> 
   <tr> 
    <td>CentOS 7<sup> [9]</sup></td> 
-   <td>A:지원됨</td> 
+   <td>A: 지원됨</td> 
    <td>서비스 팩, 누적 패치 및 중요 보안 업데이트</td> 
   </tr> 
   <tr> 
    <td>IBM AIX 7.2 [10]</td> 
-   <td>A:제한된 지원</td> 
+   <td>A: 제한된 지원</td> 
    <td>서비스 팩, 누적 패치 및 중요 보안 업데이트</td> 
   </tr> 
  </tbody> 
@@ -324,7 +324,7 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
   </tr> 
   <tr> 
    <td><p>Microsoft® Windows® 10</p> </td> 
-   <td>E:작동해야 함</td> 
+   <td>E: 작동해야 함</td> 
    <td><p>서비스 팩 및 중요 업데이트</p> </td> 
   </tr> 
  </tbody> 
@@ -366,7 +366,7 @@ JEE 서버에서 AEM Forms을 설정할 플랫폼을 선택하는 동안 다음 
 * JEE의 AEM Forms은 클러스터된 환경에서 MySQL 데이터베이스를 지원하지 않습니다.
 * 패키지 JDBC 모듈이 Weblogic에 구성되어 있으면 RDBMK가 DB2, MYSQL, MS SQL 및 Oracle 데이터베이스에서 작동하지 않습니다.
 
-### LDAP 서버(선택 사항) {#ldap-servers-optional}
+### LDAP 서버(옵션) {#ldap-servers-optional}
 
 <table> 
  <tbody> 
@@ -405,7 +405,7 @@ JEE 서버에서 AEM Forms을 설정할 플랫폼을 선택하는 동안 다음 
  </tbody> 
 </table>
 
-### 전자 메일 서버(선택 사항) {#email-servers-optional}
+### 이메일 서버(선택 사항) {#email-servers-optional}
 
 * IBM Lotus Domino 9.0
 * Microsoft Exchange 2013
@@ -442,7 +442,7 @@ JEE 서버에서 AEM Forms을 설정할 플랫폼을 선택하는 동안 다음 
  </tbody> 
 </table>
 
-### Cordova {#support-for-cordova} 지원
+### Cordova 지원 {#support-for-cordova}
 
 AEM Forms 앱은 이제 Apache Cordova를 지원합니다. 다음은 지원되는 Cordova 플랫폼별 버전입니다.
 
@@ -451,7 +451,7 @@ AEM Forms 앱은 이제 Apache Cordova를 지원합니다. 다음은 지원되�
 * Cordova Android 6.0.0
 * Cordova Windows 4.4.3
 
-### PDF Generator에 대한 소프트웨어 지원 {#software-support-for-pdf-generator}
+### PDF Generator 소프트웨어 지원 {#software-support-for-pdf-generator}
 
 <table> 
  <tbody> 
@@ -537,7 +537,7 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/) 규�
 * 서신 관리 작성 UI
 * 관리 UI(관리 콘솔 UI)
 
-## JEE의 AEM Forms 시스템 요구 사항 {#system-requirements-for-aem-forms-on-jee}
+## JEE용 AEM Forms 시스템 요구 사항 {#system-requirements-for-aem-forms-on-jee}
 
 ### 최소 하드웨어 요구 사항 {#minimum-hardware-requirements}
 
@@ -549,32 +549,32 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/) 규�
   </tr> 
   <tr> 
    <td>Microsoft Windows Server</td> 
-   <td>Intel® Xeon® E5-2680, 2.4GHz 프로세서 또는 동급<br /> VMWare ESX 5.1 이상<br /> RAM:6GB(64비트 JVM이 있는 64비트 OS)<br /> 사용 가능한 디스크 공간:15GB의 임시 공간 + JEE의 AEM Forms용 22GB<br /></td> 
+   <td>Intel® Xeon® E5-2680, 2.4GHz 프로세서 또는 동급<br /> VMWare ESX 5.1 이상<br /> RAM: 6GB(64비트 JVM이 있는 64비트 OS)<br /> 사용 가능한 디스크 공간: 15GB의 임시 공간 + JEE의 AEM Forms용 22GB<br /></td> 
   </tr> 
   <tr> 
    <td>Sun Solaris</td> 
-   <td>UltraSPARC® IIIi, 1.5GHz 프로세서<br /> Solaris 컨테이너(영역) 분할<br /> RAM:6GB(64비트 JVM이 있는 64비트 OS)<br /> 사용 가능한 디스크 공간:6GB의 임시 공간 + JEE의 AEM Forms용 22GB<br /></td> 
+   <td>UltraSPARC® IIIi, 1.5GHz 프로세서<br /> Solaris 컨테이너(영역) 분할<br /> RAM: 6GB(64비트 JVM이 있는 64비트 OS)<br /> 사용 가능한 디스크 공간: 6GB의 임시 공간 + JEE의 AEM Forms용 22GB<br /></td> 
   </tr> 
   <tr> 
    <td>IBM AIX</td> 
-   <td>P6 p시리즈 520(모델 52A) 9131-52A, 1.8GHz 프로세서<br /> LPAR 분할<br /> RAM:6GB(64비트 JVM이 있는 64비트 OS)<br /> 사용 가능한 디스크 공간:6GB의 임시 공간 + JEE의 AEM Forms용 22GB<br /></td> 
+   <td>P6 p시리즈 520(모델 52A) 9131-52A, 1.8GHz 프로세서<br /> LPAR 분할<br /> RAM: 6GB(64비트 JVM이 있는 64비트 OS)<br /> 사용 가능한 디스크 공간: 6GB의 임시 공간 + JEE의 AEM Forms용 22GB<br /></td> 
   </tr> 
   <tr> 
    <td>SUSE Linux Enterprise Server</td> 
-   <td>Intel Xeon E5-2670v2, 1vCPU, 2.5GHz 프로세서<br /> AWS m3.medium(3ECU)<br /> RAM:6GB(64비트 JVM이 있는 64비트 OS)<br /> 사용 가능한 디스크 공간:6GB의 임시 공간 + JEE의 AEM Forms용 22GB<br /></td> 
+   <td>Intel Xeon E5-2670v2, 1vCPU, 2.5GHz 프로세서<br /> AWS m3.medium(3ECU)<br /> RAM: 6GB(64비트 JVM이 있는 64비트 OS)<br /> 사용 가능한 디스크 공간: 6GB의 임시 공간 + JEE의 AEM Forms용 22GB<br /></td> 
   </tr> 
   <tr> 
    <td>Red Hat Enterprise Linux</td> 
-   <td>Intel Xeon E5-2670v2, 1vCPU, 2.5GHz 프로세서<br /> AWS m3.medium(3ECU)<br /> RAM:6GB(64비트 JVM이 있는 64비트 OS)<br /> 사용 가능한 디스크 공간:6GB의 임시 공간 + JEE의 AEM Forms용 22GB<br /><br /> </td> 
+   <td>Intel Xeon E5-2670v2, 1vCPU, 2.5GHz 프로세서<br /> AWS m3.medium(3ECU)<br /> RAM: 6GB(64비트 JVM이 있는 64비트 OS)<br /> 사용 가능한 디스크 공간: 6GB의 임시 공간 + JEE의 AEM Forms용 22GB<br /><br /> </td> 
   </tr> 
   <tr> 
    <td>소규모 운영 환경을 위한 하드웨어 요구 사항</td> 
    <td> 
     <ul> 
-     <li><strong>인텔 기반 환경</strong>:Intel® Xeon® E5-2680, 2.4GHz 이상 듀얼 코어 프로세서를 사용하면 성능이 더욱 향상됩니다</li> 
+     <li><strong>인텔 기반 환경</strong>: Intel® Xeon® E5-2680, 2.4GHz 이상 듀얼 코어 프로세서를 사용하면 성능이 더욱 향상됩니다</li> 
      <li><strong>Sun SPARC 기반 환경: </strong> UltraSPARC V 이상</li> 
      <li><strong>IBM AIX 기반 환경: </strong> Power6 이상<br /> </li> 
-     <li><strong>메모리: </strong>4GB  <br /> </li> 
+     <li><strong>메모리:  </strong>4GB  <br /> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -614,14 +614,14 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/) 규�
  </tbody> 
 </table>
 
-* 설치 디스크 공간:Workbench 전용 1.7GB, Workbench, Designer 및 Windows 임시 설치 디렉토리의 경우 샘플 어셈블리 400MB - 사용자 temp 디렉토리에 200MB, Windows 임시 디렉토리에 200MB - 단일 드라이브에 2.7GB
+* 설치 디스크 공간: Workbench 전용 1.7GB, Workbench, Designer 및 Windows 임시 설치 디렉토리의 경우 샘플 어셈블리 400MB - 사용자 temp 디렉토리에 200MB, Windows 임시 디렉토리에 200MB - 단일 드라이브에 2.7GB
 
 >[!NOTE]
 >
 >이러한 모든 위치가 단일 드라이브에 있는 경우 설치 중에 1.5GB의 공간이 있어야 합니다. 설치가 완료되면 임시 디렉토리에 복사된 파일이 삭제됩니다.
 
-* Workbench를 실행하는 메모리:2GB RAM
-* 하드웨어 요구 사항:Intel® Pentium® 4 또는 AMD 동급 프로세서, 1GHz 프로세서
+* Workbench를 실행하는 메모리: 2GB RAM
+* 하드웨어 요구 사항: Intel® Pentium® 4 또는 AMD 동급 프로세서, 1GHz 프로세서
 * 최소 1024 X 768픽셀 이상(16비트 색상 이상) 모니터 해상도
 * JEE 서버의 AEM Forms에 대한 TCP/IPv4 또는 TCP/IPv6 네트워크 연결
 
@@ -659,7 +659,7 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/) 규�
 
 >[!NOTE]
 >
->Acrobat DC 제품군에서는 기본적으로 다른 제품인 Acrobat과 Reader 모두에 대한 두 가지 트랙을 소개합니다.&quot;Classic&quot; 및 &quot;Continuous.&quot; 두 트랙에 대한 자세한 내용과 비교는 [https://www.adobe.com/go/acrobatdctracks.](https://www.adobe.com/go/acrobatdctracks)
+>Acrobat DC 제품군에서는 기본적으로 다른 제품인 Acrobat과 Reader 모두에 대한 두 가지 트랙을 소개합니다. &quot;Classic&quot; 및 &quot;Continuous.&quot; 두 트랙에 대한 자세한 내용과 비교는 [https://www.adobe.com/go/acrobatdctracks.](https://www.adobe.com/go/acrobatdctracks)
 
 ### 브라우저 {#browsers}
 
@@ -674,27 +674,27 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/) 규�
   </tr> 
   <tr> 
    <td><p>Microsoft Edge</p> </td> 
-   <td><p>A:지원됨</p> </td> 
+   <td><p>A: 지원됨</p> </td> 
    <td><p>서비스 팩 및 업데이트</p> </td> 
   </tr> 
   <tr> 
    <td><p>Mozilla Firefox 4.5.x</p> </td> 
-   <td><p>A:지원됨</p> </td> 
+   <td><p>A: 지원됨</p> </td> 
    <td><p>모든 업데이트</p> </td> 
   </tr> 
   <tr> 
    <td><p>Google Chrome 46+</p> </td> 
-   <td><p>A:지원됨</p> </td> 
+   <td><p>A: 지원됨</p> </td> 
    <td><p>모든 업데이트</p> </td> 
   </tr> 
   <tr> 
    <td>Apple Safari 11.x</td> 
-   <td>A:지원됨</td> 
+   <td>A: 지원됨</td> 
    <td>모든 업데이트</td> 
   </tr> 
   <tr> 
    <td><p>MAC OS X의 Google Chrome 및 Firefox</p> </td> 
-   <td><p>A:지원됨</p> </td> 
+   <td><p>A: 지원됨</p> </td> 
    <td><p>모든 업데이트</p> </td> 
   </tr> 
  </tbody> 
@@ -782,7 +782,7 @@ AEM Forms 앱은 다음 플랫폼에서 사용할 수 있습니다.
 
 Microsoft® Office용 문서 보안 확장 Adobe에 대한 시스템 요구 사항을 보려면 [여기](https://www.adobe.com/products/livecycle/rightsmanagement/extension/downloads.html)를 클릭하십시오.
 
-### 클라이언트 지원 예외 {#exceptions-to-client-support}
+### 클라이언트 지원에 대한 예외 {#exceptions-to-client-support}
 
 Microsoft® Windows® 2012는 Reader 및 Acrobat을 제외하고 지정된 모든 클라이언트 측 소프트웨어에 대해 지원되지 않습니다.
 
