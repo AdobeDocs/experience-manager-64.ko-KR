@@ -8,16 +8,16 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 99da0d37-726e-42b9-b98a-5dd6c2165af6
-role: Administrator
+role: Admin
 exl-id: 50bf178d-7a3c-41df-9d13-99c74d944700
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
 
 ---
 
-# AEM Forms {#getting-xdp-and-pdf-documents-in-aem-forms}에서 XDP 및 PDF 문서 가져오기
+# AEM Forms에서 XDP 및 PDF 문서 가져오기 {#getting-xdp-and-pdf-documents-in-aem-forms}
 
 ## 개요 {#overview}
 
@@ -33,7 +33,7 @@ AEM Forms에 업로드하여 로컬 파일 시스템에서 CRX 저장소로 양�
 >
 >XDP 파일을 업로드할 수 있도록 `form-power-users` 그룹의 구성원인지 확인합니다. 관리자에게 문의하여 그룹의 구성원이 되도록 하십시오.
 
-## 양식 업로드 중 {#uploading-forms}
+## 양식 업로드 {#uploading-forms}
 
 1. `https://[server]:[port]/aem/forms.html`에 액세스하여 AEM Forms 사용자 인터페이스에 로그인합니다.
 1. 양식을 업로드할 폴더 또는 양식이 포함된 폴더로 이동합니다.
@@ -71,7 +71,7 @@ AEM Forms 서버를 사용하면 JavaScript 코드를 실행할 수 있습니다
 1. 편집할 모바일 Forms 구성 을 엽니다.
 1. 보호 모드 옵션을 선택 취소하고 **저장**&#x200B;을 클릭합니다. 보호된 모드가 비활성화되어 있습니다.
 
-## 참조된 XFA 양식 {#updating-referenced-xfa-forms} 업데이트
+## 참조된 XFA 양식 업데이트 {#updating-referenced-xfa-forms}
 
 AEM Forms에서 XFA 양식 템플릿은 적응형 양식 또는 다른 XFA 양식 템플릿에서 참조할 수 있습니다. 또한 템플릿은 리소스 또는 다른 XFA 템플릿을 참조할 수 있습니다.
 
