@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 exl-id: 4b9fd241-82db-466e-95bd-6d212717801d
 feature: 콘텐츠 조각
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 2%
@@ -39,20 +39,20 @@ ht-degree: 2%
 
 작성 및 번역 워크플로우에는 다음 옵션이 포함되어 있습니다. 각 옵션과 연관된 절차 단계는 자산에 대한 해당 옵션과 연관된 절차 단계와 유사합니다.
 
-* 구조만 만들기:절차 단계는 [자산](translation-projects.md#create-structure-only)에 대해서만 구조 만들기를 참조하십시오.
-* 새 번역 프로젝트를 만듭니다.절차 단계는 [자산에 대한 새 번역 프로젝트 만들기](translation-projects.md#create-a-new-translation-project)를 참조하십시오.
-* 기존 번역 프로젝트에 추가:절차 단계는 자산](translation-projects.md#add-to-existing-translation-project)에 대한 기존 번역 프로젝트에 추가 를 참조하십시오.[
+* 구조만 만들기: 절차 단계는 [자산](translation-projects.md#create-structure-only)에 대해서만 구조 만들기를 참조하십시오.
+* 새 번역 프로젝트를 만듭니다. 절차 단계는 [자산에 대한 새 번역 프로젝트 만들기](translation-projects.md#create-a-new-translation-project)를 참조하십시오.
+* 기존 번역 프로젝트에 추가: 절차 단계는 자산](translation-projects.md#add-to-existing-translation-project)에 대한 기존 번역 프로젝트에 추가 를 참조하십시오.[
 
 ## 언어 사본 업데이트 워크플로우 {#update-language-copies-workflow}
 
 언어 사본 업데이트 워크플로우에는 다음 옵션이 포함됩니다. 각 옵션과 연관된 절차 단계는 자산에 대한 해당 옵션과 연관된 절차 단계와 유사합니다.
 
-* 새 번역 프로젝트를 만듭니다.절차 단계는 [자산](translation-projects.md#create-a-new-translation-project)에 대한 새 번역 프로젝트 만들기(업데이트 워크플로우)를 참조하십시오.
-* 기존 번역 프로젝트에 추가:절차 단계는 [자산](translation-projects.md#add-to-existing-translation-project)에 대한 기존 번역 프로젝트에 추가(업데이트 워크플로우)를 참조하십시오.
+* 새 번역 프로젝트를 만듭니다. 절차 단계는 [자산](translation-projects.md#create-a-new-translation-project)에 대한 새 번역 프로젝트 만들기(업데이트 워크플로우)를 참조하십시오.
+* 기존 번역 프로젝트에 추가: 절차 단계는 [자산](translation-projects.md#add-to-existing-translation-project)에 대한 기존 번역 프로젝트에 추가(업데이트 워크플로우)를 참조하십시오.
 
 또한, 자산에 대한 임시 복사본을 만드는 방법과 유사하게 조각에 대한 임시 언어 사본을 만들 수도 있습니다. 자세한 내용은 [자산에 대한 임시 언어 사본 만들기](translation-projects.md#creating-temporary-language-copies)를 참조하십시오.
 
-## 혼합 미디어 조각 번역 중 {#translating-mixed-media-fragments}
+## 혼합 미디어 조각 번역 {#translating-mixed-media-fragments}
 
 AEM에서 다양한 유형의 미디어 자산 및 컬렉션을 포함하는 컨텐츠 조각을 번역할 수 있습니다. 인라인 자산을 포함하는 컨텐츠 조각을 번역하는 경우, 이러한 자산의 번역된 사본은 대상 언어 루트 아래에 저장됩니다.
 
