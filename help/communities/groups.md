@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
 pagetitle: Community Groups Console
-role: Administrator
+role: Admin
 exl-id: f8f19ad6-d6cd-4abd-bc31-6baba3e0356e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1642'
 ht-degree: 2%
@@ -31,9 +31,9 @@ ht-degree: 2%
 
 커뮤니티 그룹의 몇 가지 패싯은 다음과 같습니다.
 
-* 만들기:작성자에 대해 선택적으로 게시 시 새 그룹을 만들 수 있습니다
-* 제어:그룹이 열려 있거나 비밀일 수 있음
-* 중첩:그룹에 0개 이상의 그룹이 포함될 수 있습니다
+* 만들기: 작성자에 대해 선택적으로 게시 시 새 그룹을 만들 수 있습니다
+* 제어: 그룹이 열려 있거나 비밀일 수 있음
+* 중첩: 그룹에 0개 이상의 그룹이 포함될 수 있습니다
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ ht-degree: 2%
 그룹 콘솔에 액세스하려면
 
 * 작성자에서 관리자 권한으로 로그인합니다
-* 전역 탐색에서:**[!UICONTROL 커뮤니티 > 사이트]**
+* 전역 탐색에서: **[!UICONTROL 커뮤니티 > 사이트]**
 * 기존 커뮤니티 사이트 폴더를 선택하여 엽니다
 * 폴더 내에서 커뮤니티 사이트의 인스턴스를 선택합니다
 
@@ -69,22 +69,22 @@ ht-degree: 2%
 
 * **[!UICONTROL 그룹 만들기]** 단추 선택
 
-### 1단계:커뮤니티 그룹 템플릿 {#step-community-group-template}
+### 1단계: 커뮤니티 그룹 템플릿 {#step-community-group-template}
 
 ![다중 언어 그룹](assets/multilingualgroup.png)
 
-* **[!UICONTROL 커뮤니티 그룹 제목]**:그룹의 표시 제목입니다.
+* **[!UICONTROL 커뮤니티 그룹 제목]**: 그룹의 표시 제목입니다.
 
    그룹에 대해 게시된 사이트에 제목이 나타납니다.
 
-* **[!UICONTROL 커뮤니티 그룹 설명]**:그룹에 대한 설명입니다.
-* **[!UICONTROL 커뮤니티 그룹 루트]**:그룹의 루트 경로입니다.
+* **[!UICONTROL 커뮤니티 그룹 설명]**: 그룹에 대한 설명입니다.
+* **[!UICONTROL 커뮤니티 그룹 루트]**: 그룹의 루트 경로입니다.
 
    기본 루트는 상위 사이트이지만 루트가 웹 사이트 내의 임의의 위치로 이동될 수 있습니다. 변경하지 않는 것이 좋습니다.
 
-* **[!UICONTROL 추가 사용 가능한 커뮤니티 그룹 언어]**  메뉴:풀다운 메뉴를 사용하여 사용 가능한 커뮤니티 그룹 언어를 선택합니다. 이 메뉴에는 상위 커뮤니티 사이트가 생성된 모든 언어가 표시됩니다. 사용자는 이러한 언어 중에서 선택하여 이 단일 단계에서 여러 로케일에 그룹을 만들 수 있습니다. 동일한 그룹은 각 커뮤니티 사이트의 그룹 콘솔에서 지정된 여러 언어로 생성됩니다.
+* **[!UICONTROL 추가 사용 가능한 커뮤니티 그룹 언어]**  메뉴: 풀다운 메뉴를 사용하여 사용 가능한 커뮤니티 그룹 언어를 선택합니다. 이 메뉴에는 상위 커뮤니티 사이트가 생성된 모든 언어가 표시됩니다. 사용자는 이러한 언어 중에서 선택하여 이 단일 단계에서 여러 로케일에 그룹을 만들 수 있습니다. 동일한 그룹은 각 커뮤니티 사이트의 그룹 콘솔에서 지정된 여러 언어로 생성됩니다.
 
-* **[!UICONTROL 커뮤니티 그룹 이름]**:URL에 나타나는 그룹의 루트 페이지의 이름입니다
+* **[!UICONTROL 커뮤니티 그룹 이름]**: URL에 나타나는 그룹의 루트 페이지의 이름입니다
 
    * 그룹을 만든 후 쉽게 변경되지 않으므로 이름을 다시 확인하십시오
    * 기본 URL이 `Community Group Name` 아래에 표시됩니다
@@ -92,9 +92,9 @@ ht-degree: 2%
 
       *예*, `http://localhost:4502/content/sites/mysight/en/mygroup.html`
 
-* **[!UICONTROL 커뮤니티 그룹]** 템플릿 메뉴:풀다운 메뉴를 사용하여 사용 가능한  [커뮤니티 그룹 템플릿을 선택합니다](tools.md).
+* **[!UICONTROL 커뮤니티 그룹]** 템플릿 메뉴: 풀다운 메뉴를 사용하여 사용 가능한  [커뮤니티 그룹 템플릿을 선택합니다](tools.md).
 
-### 2단계:디자인 {#step-design}
+### 2단계: 디자인 {#step-design}
 
 #### 커뮤니티 그룹 테마 {#community-group-theme}
 
@@ -125,7 +125,7 @@ ht-degree: 2%
    * 브라우저의 너비보다 작으면 이미지가 가로로 반복됩니다
    * 브라우저 너비보다 큰 경우 이미지가 잘리는 것으로 나타납니다
 
-### 3단계:설정 {#step-settings}
+### 3단계: 설정 {#step-settings}
 
 #### 중재 {#moderation}
 
@@ -166,7 +166,7 @@ ht-degree: 2%
 
 ![chlimage_1-139](assets/chlimage_1-139.png)
 
-### 4단계:그룹 {#step-create-group} 만들기
+### 4단계: 그룹 만들기 {#step-create-group}
 
 ![chlimage_1-140](assets/chlimage_1-140.png)
 
@@ -180,7 +180,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->그룹은 [1단계에서 지정한 대로 모든 언어로 생성됩니다.각 커뮤니티 사이트의 커뮤니티 그룹 콘솔에서 사용 가능한 추가 커뮤니티 그룹 언어 의 커뮤니티 그룹 템플릿](groups.md#step1communitygrouptemplate).
+>그룹은 [1단계에서 지정한 대로 모든 언어로 생성됩니다. 각 커뮤니티 사이트의 커뮤니티 그룹 콘솔에서 사용 가능한 추가 커뮤니티 그룹 언어 의 커뮤니티 그룹 템플릿](groups.md#step1communitygrouptemplate).
 
 ## 그룹 컨텐츠 작성 {#authoring-group-content}
 
@@ -242,7 +242,7 @@ ht-degree: 2%
 >
 >[페이지 함수](functions.md#page-function)와 같은 다른 모든 함수는 먼저 포함되고 나열되어야 합니다.
 
-#### 예:하위 커뮤니티(그룹) 구조에 달력 함수 추가 {#example-adding-a-calendar-function-to-a-sub-community-group-structure}
+#### 예: 하위 커뮤니티(그룹) 구조에 달력 함수 추가 {#example-adding-a-calendar-function-to-a-sub-community-group-structure}
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
 
@@ -267,7 +267,7 @@ ht-degree: 2%
 
 [THUMBNAIL](#thumbnail) 패널을 사용하면 작성 환경의 커뮤니티 사이트 그룹 콘솔뿐만 아니라 게시 환경의 사이트 방문자에 대한 커뮤니티 그룹을 나타내기 위해 이미지를 업로드할 수 있습니다.
 
-## 그룹 {#publishing-the-group} 게시
+## 그룹 게시 {#publishing-the-group}
 
 ![chlimage_1-145](assets/chlimage_1-145.png)
 
@@ -283,7 +283,7 @@ ht-degree: 2%
 >
 >커뮤니티 사이트 및 중첩 그룹은 하향식으로 게시해야 합니다.
 
-## 그룹 {#deleting-the-group} 삭제
+## 그룹 삭제 {#deleting-the-group}
 
 ![deleteicon](assets/deleteicon.png)
 
