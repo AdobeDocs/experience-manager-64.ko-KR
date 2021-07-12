@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 32b56b48-75cb-4cc9-a077-10e335f01a35
-role: Administrator
+role: Admin
 exl-id: 3a8e8fef-9aef-4b9d-8b0b-e76aa2962b61
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2507'
 ht-degree: 1%
@@ -30,7 +30,7 @@ AEM Communities의 게시 환경(구성된 권한에 따라)에서 *사이트 �
 
 사용자 데이터에 대한 자세한 내용은 [사용자 및 사용자 그룹 관리](users.md)를 참조하십시오.
 
-## 게시 팜 {#synchronizing-users-across-a-publish-farm}에서 사용자 동기화
+## 게시 팜에서 사용자 동기화 {#synchronizing-users-across-a-publish-farm}
 
 계획적으로 게시 환경에서 생성된 사용자 데이터는 작성 환경에 표시되지 않습니다.
 
@@ -46,39 +46,39 @@ AEM Communities의 게시 환경(구성된 권한에 따라)에서 *사이트 �
 
 * [사용자 동기화](../../help/sites-administering/sync.md)
 
-## 백그라운드 {#user-sync-in-the-background}에서 사용자 동기화
+## 백그라운드에서 사용자 동기화  {#user-sync-in-the-background}
 
 ![sling-dist-workflow](assets/sling-dist-workflow.png)
 
-* **VLT 패키지**:는 게시자에서 수행한 모든 변경 사항의 zip 파일입니다. 이 파일은 게시자에게 배포해야 합니다. 게시자에 대한 변경 사항은 변경 이벤트 리스너에 의해 선택된 이벤트를 생성합니다. 이렇게 하면 모든 변경 사항이 포함된 vlt 패키지가 만들어집니다.
+* **VLT 패키지**: 는 게시자에서 수행한 모든 변경 사항의 zip 파일입니다. 이 파일은 게시자에게 배포해야 합니다. 게시자에 대한 변경 사항은 변경 이벤트 리스너에 의해 선택된 이벤트를 생성합니다. 이렇게 하면 모든 변경 사항이 포함된 vlt 패키지가 만들어집니다.
 
-* **배포 패키지**:Sling에 대한 배포 정보를 포함합니다. 컨텐츠의 배포 위치와 마지막 배포 시기에 대한 정보입니다.
+* **배포 패키지**: Sling에 대한 배포 정보를 포함합니다. 컨텐츠의 배포 위치와 마지막 배포 시기에 대한 정보입니다.
 
-## .. {#what-happens-when}
+## 다음의 경우에 발생하는 작업.. {#what-happens-when}
 
 ### 커뮤니티 사이트 콘솔에서 사이트 게시 {#publish-site-from-communities-sites-console}
 
 작성자의 경우, 커뮤니티 사이트가 [커뮤니티 사이트 콘솔](sites-console.md)에서 게시되면 그 효과는 연결된 페이지를 [복제](../../help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents)하고, Sling은 해당 구성원을 포함하여 동적으로 생성된 커뮤니티 사용자 그룹을 배포합니다.
 
-### 사용자가 게시 {#user-is-created-or-edits-profile-on-publish}에 있는 프로필을 만들거나 편집합니다.
+### 사용자가 게시 시 생성 또는 편집 프로필 {#user-is-created-or-edits-profile-on-publish}
 
 디자인별로, 게시 환경에서 만든 사용자 및 프로필(예: 자가 등록, 소셜 로그인, LDAP 인증)은 작성 환경에 표시되지 않습니다.
 
 토폴로지가 [게시 팜](topologies.md)이고 사용자 동기화가 올바르게 구성된 경우 *사용자* 및 *사용자 프로필*&#x200B;이 Sling 배포를 사용하여 게시 팜 간에 동기화됩니다.
 
-### 게시 {#new-community-group-is-created-on-publish}에 새 커뮤니티 그룹이 만들어집니다.
+### 게시에서 새 커뮤니티 그룹이 생성됨 {#new-community-group-is-created-on-publish}
 
 게시 인스턴스에서 시작되었지만 새 사이트 페이지와 새 사용자 그룹을 만드는 커뮤니티 그룹 만들기가 실제로 작성자 인스턴스에서 발생합니다.
 
 프로세스의 일부로, 새 사이트 페이지가 모든 게시 인스턴스에 복제됩니다. 동적으로 생성된 커뮤니티 사용자 그룹 및 해당 멤버십은 모든 게시 인스턴스에 Sling이 배포됩니다.
 
-### 사용자 또는 사용자 그룹은 보안 콘솔 {#users-or-user-groups-are-created-using-security-console}을 사용하여 만들어집니다.
+### 사용자 또는 사용자 그룹은 보안 콘솔을 사용하여 만들어집니다 {#users-or-user-groups-are-created-using-security-console}
 
 디자인에서 게시 환경에서 만든 사용자 데이터는 작성 환경에 나타나지 않고 그 반대의 경우도 마찬가지입니다.
 
 [사용자 관리 및 보안](../../help/sites-administering/security.md) 콘솔을 사용하여 게시 환경에서 새 사용자를 추가하면 사용자 동기화는 필요한 경우 새 사용자와 해당 그룹 구성원을 다른 게시 인스턴스와 동기화합니다. 사용자 동기화는 보안 콘솔을 통해 생성된 사용자 그룹도 동기화합니다.
 
-### 사용자가 게시 {#user-posts-content-on-publish}에 컨텐츠를 게시합니다.
+### 사용자가 게시할 때 컨텐츠를 게시합니다. {#user-posts-content-on-publish}
 
 UGC(사용자 생성 컨텐츠)의 경우 게시 인스턴스에 입력된 데이터는 [구성된 SRP](srp-config.md)을 통해 액세스합니다.
 
@@ -124,7 +124,7 @@ AEM 작성자 인스턴스에서:
 1. **[!UICONTROL Apache Sling Distribution Agent - Sync Agent Factory]**&#x200B;를 찾습니다.
 
    * 편집할 기존 구성을 선택합니다(연필 아이콘).
-   * 이름 확인:**`socialpubsync`.**
+   * 이름 확인: **`socialpubsync`.**
    * **[!UICONTROL Enabled]** 확인란을 선택합니다.
    * **[!UICONTROL 여러 큐 사용]**&#x200B;을 선택합니다.
    * **[!UICONTROL 내보내기 끝점]** 및 **[!UICONTROL 가져오기 끝점]**&#x200B;을(를) 지정합니다(내보내기 및 가져오기 끝점을 더 추가할 수 있음).
@@ -177,14 +177,14 @@ AEM 게시 인스턴스에서 다음을 수행합니다.
 1. **[!UICONTROL Apache Sling Distribution Agent - Queue Agent Factory]**&#x200B;를 찾습니다.
 1. 편집할 기존 구성을 선택합니다(연필 아이콘).
 
-   이름 확인:`socialpubsync` \-reverse.
+   이름 확인: `socialpubsync` \-reverse.
 1. **[!UICONTROL Enabled]** 확인란을 선택하고 저장합니다.
 1. **[!UICONTROL 허용되는 루트]**&#x200B;에 복제할 노드 경로를 지정합니다.
 1. 각 `publish` 인스턴스에 대해 이 작업을 반복합니다.
 
    ![queue-agent-fact](assets/queue-agents-fact.png)
 
-### Adobe Granite 배포 - Diff Observer Factory {#adobe-granite-distribution-diff-observer-factory}
+### Adobe Granite Distribution - Diff Observer Factory {#adobe-granite-distribution-diff-observer-factory}
 
 이 구성은 게시자에서 그룹 구성원을 동기화합니다.\
 한 게시자에서 그룹 구성원을 변경해도 다른 게시자에 대한 구성원 자격이 업데이트되지 않는 경우 **ref:members**&#x200B;이 **looked 속성 이름**&#x200B;에 추가되었는지 확인하십시오.
@@ -202,13 +202,13 @@ AEM 게시 인스턴스에서 다음을 수행합니다.
 1. **[!UICONTROL Granite Distribution - Diff Observer Factory]**&#x200B;를 찾습니다.
 1. 편집할 기존 구성을 선택합니다(연필 아이콘).
 
-   **[!UICONTROL 에이전트 이름]**&#x200B;을 확인합니다.`socialpubsync` \-reverse&amp;ast;&amp;ast;
+   **[!UICONTROL 에이전트 이름]**&#x200B;을 확인합니다. `socialpubsync` \-reverse&amp;ast;&amp;ast;
 1. **[!UICONTROL Enabled]** 확인란을 선택합니다.
 1. **[!UICONTROL 표시된 속성 이름]**&#x200B;에서 propertyName에 **rep`:members`**&#x200B;을 `description`로 지정하고 저장.
 
    ![diff-job](assets/diff-obs.png)
 
-### Apache Sling 배포 트리거 - 예약된 트리거 팩토리 {#apache-sling-distribution-trigger-scheduled-triggers-factory}
+### Apache Sling 배포 트리거 - 예약된 트리거 공장 {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
 이 구성을 사용하면 폴링 간격(게시자에 대해 ping을 수행하고 작성자가 변경 사항을 가져오는 시점)을 구성하여 게시자 간에 변경 사항을 동기화할 수 있습니다.
 
@@ -250,7 +250,7 @@ AEM 작성자 인스턴스에서:
 1. **[!UICONTROL AEM Communities 사용자 동기화 수신기]**&#x200B;를 찾습니다.
 1. 편집할 기존 구성을 선택합니다(연필 아이콘).
 
-   이름 확인:**`socialpubsync`\-scheduled-trigger**
+   이름 확인: **`socialpubsync`\-scheduled-trigger**
 1. 다음 **`NodeTypes`** 을 설정합니다.
 
    rep:User
@@ -284,7 +284,7 @@ AEM 작성자 인스턴스에서:
 
    ![user-sync-listner](assets/user-sync-listner.png)
 
-### 고유한 Sling ID {#unique-sling-id}
+### 고유 Sling ID {#unique-sling-id}
 
 AEM 작성자 인스턴스는 Sling ID를 사용하여 데이터가 오고 있는 게시자와 패키지를 다시 보내야 하는 게시자를 식별합니다.
 
@@ -333,7 +333,7 @@ AEM 작성자 인스턴스는 Sling ID를 사용하여 데이터가 오고 있�
 각 AEM 게시 인스턴스에서 다음을 수행합니다.
 
 1. [웹 콘솔](../../help/sites-deploying/configuring-osgi.md)에 액세스합니다(예: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)).
-1. **[!UICONTROL Apache Sling Distribution Packaging - Vault Package Builder Factory Builder 이름]**&#x200B;을 찾습니다.socialpubsync-vlt
+1. **[!UICONTROL Apache Sling Distribution Packaging - Vault Package Builder Factory Builder 이름]**&#x200B;을 찾습니다. socialpubsync-vlt
 1. 편집 아이콘을 선택합니다.
 1. 다음 두 개의 패키지 필터 추가:
 
@@ -345,11 +345,11 @@ AEM 작성자 인스턴스는 Sling ID를 사용하여 데이터가 오고 있�
       `/home/users|**+**.\*/rep:policy`
    * 정책이 배포되지 않도록 하려면 을 설정합니다
 
-      Acl 처리:무시
+      Acl 처리: 무시
 
 ![vault-package-builder-factory](assets/vault-package-builder-factory.png)
 
-## AEM Communities {#troubleshoot-sling-distribution-in-aem-communities}의 Sling 배포 문제 해결
+## AEM Communities의 Sling 배포 문제 해결 {#troubleshoot-sling-distribution-in-aem-communities}
 
 Sling 배포가 실패하면 다음 디버깅 단계를 시도하십시오.
 
