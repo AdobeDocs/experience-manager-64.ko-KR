@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
-role: Administrator
+role: Admin
 exl-id: a7678273-81f6-4089-ac73-2458d940e374
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 1%
@@ -48,7 +48,7 @@ Rebekah Larsen(rebekah.larsen@trashymail.com)은 [구성원 콘솔](members.md)�
 
 커뮤니티 사용자 그룹에 대한 자세한 내용은 [사용자 및 사용자 그룹 관리](users.md)를 참조하십시오.
 
-### 포럼 게시물 {#create-the-forum-posts} 만들기
+### 포럼 게시물 만들기 {#create-the-forum-posts}
 
 * Rebekah Larsen으로 로그인(rebekah.larsen@trashymail.com)
 
@@ -94,7 +94,7 @@ Rebekah Larsen(rebekah.larsen@trashymail.com)은 [구성원 콘솔](members.md)�
 
 ![chlimage_1](assets/chlimage_1.png)
 
-### 새 멤버(#4) {#new-member}
+### 새 구성원(#4) {#new-member}
 
 작성자는 관리자로 로그인하고 [구성원 콘솔](members.md)을 사용하여 커뮤니티 참여 구성원 그룹의 새 구성원으로 Boyd Larsen(boyd.larsen@dodgit.com)을 추가한 다음 로그아웃하십시오.
 
