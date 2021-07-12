@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 38a80992-2eda-4535-89af-0de34b1a9686
-role: Administrator
+role: Admin
 exl-id: 0bfa0e65-c4cd-4c37-b42b-bff1b777a7be
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 9%
 
 ---
 
-# 호환성 패키지 {#compatibility-package} 설치
+# 호환성 패키지 설치 {#compatibility-package}
 
 AEM Forms 6.4에 호환성 패키지를 설치하면 AEM Forms 6.3의 서신 관리 자산 및 더 이상 사용되지 않는 적응형 양식 템플릿 및 페이지를 사용할 수 있습니다
 
