@@ -3,9 +3,9 @@ title: 컬렉션을 Brand Portal에 게시
 description: Brand Portal에 컬렉션을 게시하고 게시 취소하는 방법을 알아봅니다.
 contentOwner: VG
 feature: Brand Portal
-role: Business Practitioner
+role: User
 exl-id: c2c6759e-f763-405e-9e45-5a90b9d32df2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 21%
@@ -24,7 +24,7 @@ AEM Assets에서 원래 컬렉션을 차후에 수정하는 경우 컬렉션을 
 >
 >컨텐츠 조각이 포함된 컬렉션이 AEM 작성자에서 Brand Portal으로 게시되면 컨텐츠 조각을 제외한 폴더의 모든 컨텐츠가 Brand Portal 인터페이스에 복제됩니다.
 
-## 컬렉션을 Brand Portal {#publish-a-collection-to-brand-portal}에 게시
+## Brand Portal에 컬렉션 게시 {#publish-a-collection-to-brand-portal}
 
 1. AEM Assets UI에서 AEM 로고를 탭/클릭합니다. 그런 다음 **[!UICONTROL 탐색]** 페이지에서 **[!UICONTROL 자산 > 컬렉션]** 로 이동합니다.
 2. 컬렉션 콘솔에서 Brand Portal에 게시할 컬렉션을 선택합니다.
