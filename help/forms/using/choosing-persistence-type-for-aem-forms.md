@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: a972fb35-38a7-4b83-99bd-6a6dddf8043b
-role: Administrator
+role: Admin
 exl-id: ef486673-30fe-410a-83cf-c55be6064ce4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 1%
@@ -63,7 +63,7 @@ TarMK는 성능용으로 설계된 반면 MongoMK 및 RDBMK는 확장성을 위�
 
 지원되는 마이크로커널 목록은 OSGi 기술 요구 사항](/help/sites-deploying/technical-requirements.md) 의 [AEM Forms 또는 JEE 지원 플랫폼 조합](/help/forms/using/aem-forms-jee-supported-platforms.md) 문서의 [AEM Forms 를 참조하십시오.
 
-## TarMK {#choosing-mongo-or-a-relational-database-microkernel-over-tarmk}에서 Mongo 또는 관계형 데이터베이스 마이크로커널 선택
+## TarMK를 통해 Mongo 또는 관계형 데이터베이스 마이크로커널 선택 {#choosing-mongo-or-a-relational-database-microkernel-over-tarmk}
 
 확장 가능한(클러스터형) AEM Forms 환경은 2개 이상의 가로로 구성된 활성 작성자 인스턴스 세트입니다. 모든 동시 작성 활동을 지원하는 단일 서버가 더 이상 지속 가능하지 않은 경우 두 개 이상의 작성자 인스턴스를 실행하도록 선택할 수 있습니다.
 
