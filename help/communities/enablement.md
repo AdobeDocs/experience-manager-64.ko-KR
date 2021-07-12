@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 765a3d9b-4552-403e-872c-fdf684ac271d
-role: Administrator
+role: Admin
 exl-id: 01cfc774-8ae1-48c0-a7e3-5836c4b39bff
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 5%
@@ -61,7 +61,7 @@ FFmpegFFmpeg는 오디오 및 비디오를 변환 및 스트리밍하는 솔루�
 **모든 작성자/게시 인스턴스에서 다음을 수행합니다.**
 
 1. **[MySQLUse 웹](deploy-communities.md#jdbc-driver-for-mysql)**
-콘솔(번들)용 JDBC 드라이버 설치:SCORM  *패키지를 설치하기*
+콘솔(번들)용 JDBC 드라이버 설치: SCORM  *패키지를 설치하기*
 전에 http://localhost:4502/system/console/ ** bundles를 설치합니다
 
 1. **[scorm 패키지](deploy-communities.md#scorm-package)**
@@ -108,7 +108,7 @@ FFmpegFFmpeg는 오디오 및 비디오를 변환 및 스트리밍하는 솔루�
 서비스 활성화웹 콘솔 사용(configMgr): 
 *http://localhost:4502/system/console/configMgr*
 
-1. **[커뮤니티 관리자](users.md#creating-community-members)** 만들기작성 환경의 경우 클래식 UI 보안 콘솔을 사용합니다. *http://localhost:4502/*
+1. **[커뮤니티 관리자](users.md#creating-community-members)** 만들기작성 환경의 경우 클래식 UI 보안 콘솔을 사용합니다.  *http://localhost:4502/*
 useradmincreate user(s) with path = /home/users/community
 
    * 다음 그룹에 구성원을 추가합니다.
