@@ -7,8 +7,8 @@ audience: end-user
 user-guide-title: Adobe Experience Manager 6.4 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
-role: Business Practitioner
-source-git-commit: 1ecb63f849f9f6167dddd4053267ae89577659fc
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '3730'
 ht-degree: 3%
@@ -28,19 +28,19 @@ ht-degree: 3%
    + [적응형 양식 작성 소개](using/introduction-forms-authoring.md)
    + [대화형 통신 소개](using/interactive-communications-overview.md)
    + [양식 관리 소개](using/introduction-managing-forms.md)
-   + 자습서:첫 번째 적응형 양식 {#create-first-adaptive-form} 만들기
-      + [자습서:첫 번째 적응형 양식 만들기](using/create-your-first-adaptive-form.md)
-      + [자습서:적응형 양식 만들기](using/create-adaptive-form.md)
-      + [자습서:양식 데이터 모델 만들기](using/create-form-data-model.md)
-      + [자습서:적응형 양식 필드에 규칙 적용](using/apply-rules-to-adaptive-form-fields.md)
-      + [자습서:적응형 양식 스타일 지정](using/style-your-adaptive-form.md)
-   + 자습서:첫 번째 대화형 통신 만들기 {#create-first-interactive-communication}
-      + [자습서:첫 번째 대화형 통신 만들기](using/create-your-first-interactive-communication.md)
-      + [자습서:대화형 통신 계획](using/planning-interactive-communications.md)
-      + [자습서:양식 데이터 모델 만들기](using/create-form-data-model-tutorial.md)
-      + [자습서:문서 조각 만들기](using/create-document-fragments.md)
-      + [자습서:템플릿 만들기](using/create-templates-print-web.md)
-      + [자습서:대화형 통신 만들기](using/create-interactive-communication-tutorial.md)
+   + 자습서: 첫 번째 적응형 양식 {#create-first-adaptive-form} 만들기
+      + [자습서: 첫 번째 적응형 양식 만들기](using/create-your-first-adaptive-form.md)
+      + [자습서: 적응형 양식 만들기](using/create-adaptive-form.md)
+      + [자습서: 양식 데이터 모델 만들기](using/create-form-data-model.md)
+      + [자습서: 적응형 양식 필드에 규칙 적용](using/apply-rules-to-adaptive-form-fields.md)
+      + [자습서: 적응형 양식 스타일 지정](using/style-your-adaptive-form.md)
+   + 자습서: 첫 번째 대화형 통신 만들기 {#create-first-interactive-communication}
+      + [자습서: 첫 번째 대화형 통신 만들기](using/create-your-first-interactive-communication.md)
+      + [자습서: 대화형 통신 계획](using/planning-interactive-communications.md)
+      + [자습서: 양식 데이터 모델 만들기](using/create-form-data-model-tutorial.md)
+      + [자습서: 문서 조각 만들기](using/create-document-fragments.md)
+      + [자습서: 템플릿 만들기](using/create-templates-print-web.md)
+      + [자습서: 대화형 통신 만들기](using/create-interactive-communication-tutorial.md)
    + AEM Forms 참조 자료 {#aem-forms-reference-collaterals}
       + [AEM Forms 참조 사이트 설정 및 구성](using/setup-reference-sites.md)
       + [We.Finance 참조 사이트 안내](using/finance-reference-site-walkthrough.md)
@@ -315,7 +315,7 @@ ht-degree: 3%
    + [서신 관리 자산에 사용자 지정 속성 추가](using/add-custom-properties-cm-assets.md)
    + [서신 UI 사용자 지정](using/customize-create-correspondence-ui.md)
    + [텍스트 편집기 사용자 정의](using/customize-text-editor.md)
-   + [서신 관리:문제 해결](using/cm-troubleshooting.md)
+   + [서신 관리: 문제 해결](using/cm-troubleshooting.md)
    + [편지 인스턴스에 액세스할 수 있는 API](using/cm-apis-to-access-letter-instances.md)
    + [사용자 지정 포털과 서신 만들기 UI 통합](using/integrating-create-correspondence-ui-with-your-portal.md)
    + [서신 관리의 사용자 지정 특수 문자](using/custom-special-characters.md)
@@ -537,11 +537,11 @@ ht-degree: 3%
       + [작업 관리자 및 조정](/help/forms/using/admin-help/manager-throttling.md)
       + [유지 관리 모드에서 AEM Forms 실행](/help/forms/using/admin-help/running-aem-forms-maintenance-mode.md)
    + AEM Forms 데이터베이스 유지 관리 {#maintain-aem-forms-database}
-      + [DB2 데이터베이스:매주 프로세스 실행](/help/forms/using/admin-help/db2-database-running-process-weekly.md)
+      + [DB2 데이터베이스: 매주 프로세스 실행](/help/forms/using/admin-help/db2-database-running-process-weekly.md)
       + [Oracle 데이터베이스 최대 열린 커서 임계값](/help/forms/using/admin-help/oracle-database-maximum-open-cursors.md)
-      + [IBM DB2 데이터베이스:일반 유지 관리를 위한 명령 실행](/help/forms/using/admin-help/ibm-db2-database-running-commands.md)
+      + [IBM DB2 데이터베이스: 일반 유지 관리를 위한 명령 실행](/help/forms/using/admin-help/ibm-db2-database-running-commands.md)
       + [프로세스 데이터 삭제](/help/forms/using/admin-help/purging-process-data.md)
-      + [Microsoft SQL Server 데이터베이스:구성 미세 조정](/help/forms/using/admin-help/microsoft-sql-server-database-fine.md)
+      + [Microsoft SQL Server 데이터베이스: 구성 미세 조정](/help/forms/using/admin-help/microsoft-sql-server-database-fine.md)
       + [데이터베이스 증가 최소화 팁](/help/forms/using/admin-help/tips-minimizing-database-growth.md)
    + 응용 프로그램 서버 유지 관리 {#manage-application-server}
       + [애플리케이션 서버 웹 사이트](/help/forms/using/admin-help/application-server-websites.md)
