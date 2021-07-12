@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
-role: Administrator
+role: Admin
 exl-id: 5049c5df-c874-4c34-a96b-7944cd0353d5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 4%
@@ -30,7 +30,7 @@ ht-degree: 4%
 
 작성 환경에서 커뮤니티 사이트 콘솔에 도달하려면
 
-* 전역 탐색에서:**[!UICONTROL 도구 > 커뮤니티 > 사이트 템플릿]**
+* 전역 탐색에서: **[!UICONTROL 도구 > 커뮤니티 > 사이트 템플릿]**
 
 이 콘솔에는 [커뮤니티 사이트](sites-console.md)를 만들고 새 사이트 템플릿을 만들 수 있는 템플릿이 표시됩니다.
 
@@ -83,7 +83,7 @@ ht-degree: 4%
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
-### 그룹 함수 {#group-templates-for-groups-function} 그룹 템플릿
+### 그룹 기능에 대한 그룹 템플릿 {#group-templates-for-groups-function}
 
 사이트 템플릿에 그룹 함수를 포함할 때 구성에 허용되는 그룹 템플릿 선택 사항의 사양이 필요합니다. 이는 게시 환경에서 새 그룹을 만들 때 허용됩니다.
 
@@ -97,7 +97,7 @@ ht-degree: 4%
 
 ![chlimage_1-24](assets/chlimage_1-24.png)
 
-## 사이트 템플릿 편집{#edit-site-template}
+## 사이트 템플릿 편집 {#edit-site-template}
 
 주 [사이트 템플릿 콘솔](#site-templates-console)에서 사이트 템플릿을 볼 때 편집할 기존 사이트 템플릿을 선택할 수 있습니다.
 
