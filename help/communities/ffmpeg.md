@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
-role: Administrator
+role: Admin
 exl-id: 9ed54ee3-3509-4a43-a710-90f4543ccaf3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 1%
 
 ---
 
-# 커뮤니티에 대한 FFmpeg {#ffmpeg-for-communities}
+# 커뮤니티용 FFmpeg {#ffmpeg-for-communities}
 
 ## 개요 {#overview}
 
@@ -52,16 +52,16 @@ FFmpeg는 AEM *author* 인스턴스를 호스팅하는 서버에 설치해야 �
 DAM 자산 업데이트 워크플로우를 수정하려면 다음을 수행합니다. 이 예에서는 코드 변환을 끄십시오.
 
 * 관리자 권한으로 작성자 인스턴스에 로그인합니다.
-* 전역 탐색에서:**[!UICONTROL 도구 > 워크플로우 > 모델]**
+* 전역 탐색에서: **[!UICONTROL 도구 > 워크플로우 > 모델]**
 * **[!UICONTROL DAM 자산 업데이트]**&#x200B;를 찾습니다.
 * 클래식 UI에서 편집할 워크플로우를 두 번 클릭하여 엽니다
 
-   결과 위치:[http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
+   결과 위치: [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
 * **[!UICONTROL FFmpeg 코드 변환]** 단계를 두 번 클릭하여 단계 속성 대화 상자에 액세스합니다
 * **[!UICONTROL 프로세스]** 탭에서 다음을 수행합니다.
 
-   * **[!UICONTROL 배치]**:코드 변환을 비활성화하려면 모든 항목을 선택 취소합니다. 기본값:  `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
+   * **[!UICONTROL 배치]**: 코드 변환을 비활성화하려면 모든 항목을 선택 취소합니다. 기본값:  `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
 
 ![chlimage_1-372](assets/chlimage_1-372.png)
 
