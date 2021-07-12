@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
-role: Administrator
+role: Admin
 exl-id: 67d80ec9-64c9-43a5-8cb1-9da819471797
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2979'
 ht-degree: 5%
@@ -69,17 +69,17 @@ AEM Communities의 경우 리소스 콘솔은 [지원 관리자](users.md)가 �
 
 [지원 커뮤니티](overview.md#enablement-community)의 경우, 사이트를 비공개 사이트로 만든 후 관리자가 사용자를 구성원 그룹에 추가해야 합니다.
 
-## 커뮤니티 사이트의 지원 리소스 {#accessing-a-community-site-s-enablement-resources} 액세스
+## 커뮤니티 사이트의 지원 리소스 액세스 {#accessing-a-community-site-s-enablement-resources}
 
-### 커뮤니티 리소스 {#navigate-to-communities-resources} 로 이동합니다.
+### 커뮤니티 리소스로 이동 {#navigate-to-communities-resources}
 
 작성 환경에서 리소스 콘솔에 도달하려면 다음을 수행하십시오
 
-* 전역 탐색에서:**[!UICONTROL 탐색 > 커뮤니티 > 리소스]**
+* 전역 탐색에서: **[!UICONTROL 탐색 > 커뮤니티 > 리소스]**
 
 ![chlimage_1-163](assets/chlimage_1-163.png)
 
-### 커뮤니티 사이트 {#select-a-community-site} 선택
+### 커뮤니티 사이트 선택 {#select-a-community-site}
 
 커뮤니티 리소스 콘솔에는 모든 커뮤니티 사이트가 표시됩니다.
 
@@ -103,7 +103,7 @@ AEM Communities의 경우 리소스 콘솔은 [지원 관리자](users.md)가 �
 
 ![chlimage_1-167](assets/chlimage_1-167.png)
 
-## 리소스 {#create-a-resource} 만들기
+## 리소스 만들기 {#create-a-resource}
 
 ![chlimage_1-168](assets/chlimage_1-168.png)
 
@@ -130,7 +130,7 @@ AEM Communities의 경우 리소스 콘솔은 [지원 관리자](users.md)가 �
 
    (*선택 사항*) 구성원의 할당 페이지뿐만 아니라 리소스 콘솔에서 사용 리소스에 대한 카드에 표시할 이미지입니다. 서버의 로컬 파일 시스템에서 이미지가 선택됩니다. 이미지를 제공하지 않으면 업로드된 리소스에 대해 축소판이 생성됩니다.
 
-   ***참고***:권장되는 이미지 크기는 480 x 480픽셀만 아닙니다. 다양한 브라우저 크기로 카드의 응답형 설계로 인해 디스플레이 크기는 220 X 165 픽셀에서 400 x 165 픽셀로 달라집니다.
+   ***참고***: 권장되는 이미지 크기는 480 x 480픽셀만 아닙니다. 다양한 브라우저 크기로 카드의 응답형 설계로 인해 디스플레이 크기는 220 X 165 픽셀에서 400 x 165 픽셀로 달라집니다.
 
 * **[!UICONTROL 사이트 이름]**
 
@@ -224,7 +224,7 @@ AEM Communities의 경우 리소스 콘솔은 [지원 관리자](users.md)가 �
 
       교실과 같은 실제 사이트의 위치..
 
-#### 추가된 비디오 리소스 {#example-of-an-added-video-resource}의 예
+#### 추가된 비디오 리소스의 예 {#example-of-an-added-video-resource}
 
 ![chlimage_1-172](assets/chlimage_1-172.png)
 
@@ -288,7 +288,7 @@ AEM Communities의 경우 리소스 콘솔은 [지원 관리자](users.md)가 �
 
 사용 리소스를 성공적으로 만들면 새로 만든 리소스가 선택된 리소스 콘솔로 돌아갑니다. 이 콘솔에서 [리소스를 관리](#managing-a-resource)할 수 있습니다.
 
-## 학습 경로 {#create-a-learning-path} 만들기
+## 학습 경로 만들기 {#create-a-learning-path}
 
 ![chlimage_1-176](assets/chlimage_1-176.png)
 
@@ -317,7 +317,7 @@ AEM Communities의 경우 리소스 콘솔은 [지원 관리자](users.md)가 �
 
    (*선택적*) 구성원의 할당 페이지뿐만 아니라 [리소스] 콘솔에서 학습 경로의 카드에 표시할 이미지입니다. 서버의 로컬 파일 시스템에서 이미지가 선택됩니다. 이미지를 제공하지 않으면 업로드된 리소스에 대해 축소판이 생성됩니다.
 
-   ***참고***:권장되는 이미지 크기는 더 이상 480 x 480픽셀이 아닙니다. 다양한 브라우저 크기로 카드의 응답형 설계로 인해 디스플레이 크기는 220 X 165 픽셀에서 400 x 165 픽셀로 달라집니다.
+   ***참고***: 권장되는 이미지 크기는 더 이상 480 x 480픽셀이 아닙니다. 다양한 브라우저 크기로 카드의 응답형 설계로 인해 디스플레이 크기는 220 X 165 픽셀에서 400 x 165 픽셀로 달라집니다.
 
 * **[!UICONTROL 사이트 이름]**
 
@@ -377,7 +377,7 @@ AEM Communities의 경우 리소스 콘솔은 [지원 관리자](users.md)가 �
 
 >[!NOTE]
 >
->학습 경로와 동일한 수준에서 사용할 수 있는 리소스만 선택할 수 있습니다. 예를 들어, 그룹에 생성된 학습 경로의 경우 그룹 수준 리소스만 사용할 수 있습니다.커뮤니티 사이트에서 생성된 학습 경로의 경우 해당 사이트의 리소스를 학습 경로에 추가할 수 있습니다.
+>학습 경로와 동일한 수준에서 사용할 수 있는 리소스만 선택할 수 있습니다. 예를 들어, 그룹에 생성된 학습 경로의 경우 그룹 수준 리소스만 사용할 수 있습니다. 커뮤니티 사이트에서 생성된 학습 경로의 경우 해당 사이트의 리소스를 학습 경로에 추가할 수 있습니다.
 
 * **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 
@@ -551,11 +551,11 @@ Analytics 뷰어 참여 보고서에는 비디오 리소스의 경우 리소스�
 
 `Show / hide columns` 선택기를 사용하여 열을 선택하여 표의 표시를 조정할 수 있습니다.
 
-#### 보고서를 CSV {#download-report-as-csv} 로 다운로드
+#### 보고서를 CSV로 다운로드 {#download-report-as-csv}
 
 보고서 요약 테이블은 콘솔 상단에 있는 버튼을 사용하여 CSV 형식으로 다운로드할 수 있습니다.
 
-* 지원 리소스의 경우:`Download Resource Report as CSV` 단추
-* 학습 경로의 경우:`Download Learning Path Report as CSV` 단추
+* 지원 리소스의 경우: `Download Resource Report as CSV` 단추
+* 학습 경로의 경우: `Download Learning Path Report as CSV` 단추
 
 전체 보고서 요약은 표시하도록 선택한 열에 관계없이 다운로드됩니다.
