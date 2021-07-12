@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
-role: Administrator
+role: Admin
 exl-id: 183ed9c6-6a9a-4932-8405-5ae2c6fac1ec
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 11%
 
 ---
 
-# OSGi {#upgrade-to-aem-forms-osgi}의 AEM 6.4 Forms으로 업그레이드
+# OSGi에서 AEM 6.4 Forms으로 업그레이드 {#upgrade-to-aem-forms-osgi}
 
 환경에 적합한 다음 업그레이드 경로 중 하나를 사용하십시오.
 
