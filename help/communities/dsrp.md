@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
-role: Administrator
+role: Admin
 exl-id: 3dd2bdc9-0c4d-43d9-a731-ca8c27503e1c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 3%
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 # DSRP - 관계형 데이터베이스 저장소 리소스 공급자 {#dsrp-relational-database-storage-resource-provider}
 
-## DSRP {#about-dsrp} 정보
+## DSRP 정보 {#about-dsrp}
 
 AEM Communities이 관계형 데이터베이스를 공용 저장소로 사용하도록 구성된 경우 동기화 또는 복제 없이 사용자 생성 콘텐츠(UGC)를 모든 작성자 및 게시 인스턴스에서 액세스할 수 있습니다.
 
@@ -54,7 +54,7 @@ Oak 및 SRP 컬렉션이 모두 집중적으로 사용되는 경우 성능상의
 
 설치 및 구성 세부 정보는 [SRP용 솔루션 구성](solr.md)을 참조하십시오.
 
-### DSRP {#select-dsrp} 선택
+### DSRP 선택 {#select-dsrp}
 
 [스토리지 구성 콘솔](srp-config.md)에서는 사용할 SRP 구현을 식별하는 기본 스토리지 구성을 선택할 수 있습니다.
 
@@ -67,7 +67,7 @@ Oak 및 SRP 컬렉션이 모두 집중적으로 사용되는 경우 성능상의
    * **[!UICONTROL 커뮤니티]** 선택
    * **[!UICONTROL 저장소 구성]** 선택
 
-      * 예를 들어 결과 위치는 다음과 같습니다.[http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)
+      * 예를 들어 결과 위치는 다음과 같습니다. [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)
       >[!NOTE]
       >
       >이제 기본 스토리지 구성이 etc 경로(`/etc/socialconfig/srpc/defaultconfiguration`) 대신 conf 경로(`/conf/global/settings/community/srpc/defaultconfiguration`)에 저장됩니다. [마이그레이션 단계](#migration-steps-0dt)에 따라 defaultsrp가 예상대로 작동하는지 확인해야 합니다.
@@ -81,13 +81,13 @@ Oak 및 SRP 컬렉션이 모두 집중적으로 사용되는 경우 성능상의
 
       MySQL 연결에 지정된 이름은 [JDBC OSGi 구성](dsrp-mysql.md#configurejdbcconnections)에 입력한 이름과 동일해야 합니다.
 
-      *기본값*:커뮤니티
+      *기본값*: 커뮤니티
 
    * **[!UICONTROL 데이터베이스 이름]**
 
       [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script) 스크립트에서 스키마에 지정된 이름
 
-      *기본값*:커뮤니티
+      *기본값*: 커뮤니티
 
 * **SolrConfiguration**
 
@@ -99,15 +99,15 @@ Oak 및 SRP 컬렉션이 모두 집중적으로 사용되는 경우 성능상의
 
    * **[!UICONTROL Solr URL]**
 
-      *기본값*:https://127.0.0.1:8983/solr/
+      *기본값*: https://127.0.0.1:8983/solr/
 
       * **[!UICONTROL Solr 컬렉션]**
 
-         *기본값*:collection1
+         *기본값*: collection1
 
 * **[!UICONTROL 제출]**&#x200B;을 선택합니다
 
-### defaultsrp {#migration-steps-0dt}에 대해 다운타임 없이 마이그레이션 단계를 수행할 수 있습니다.
+### 기본 SRP에 대한 다운타임 없이 마이그레이션 단계 수행 {#migration-steps-0dt}
 
 다음 단계에 따라 defaultsrp 페이지 [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)가 예상대로 작동하는지 확인합니다.
 
@@ -117,7 +117,7 @@ Oak 및 SRP 컬렉션이 모두 집중적으로 사용되는 경우 성능상의
 1. 이전 단계에서 삭제된 노드(`/conf/global/settings/community/srpc/defaultconfiguration`) 대신 이전 구성 `/etc/socialconfig_old/srpc/defaultconfiguration`을 복사합니다.
 1. 이전 etc 노드 `/etc/socialconfig_old`을(를) 삭제합니다.
 
-## 구성 {#publishing-the-configuration} 게시
+## 구성 게시 {#publishing-the-configuration}
 
 DSRP는 모든 작성자 및 게시 인스턴스에서 공용 스토어로 식별되어야 합니다.
 
@@ -141,9 +141,9 @@ DSRP는 모든 작성자 및 게시 인스턴스에서 공용 스토어로 식�
 * [사용자 동기화](sync.md)
 * [사용자 및 사용자 그룹 관리](users.md)
 
-## DSRP {#reindexing-solr-for-dsrp}에 대한 색인 재지정
+## DSRP용 색인 재지정 솔루션 {#reindexing-solr-for-dsrp}
 
-DSRP Solr을 다시 색인화하려면 [MSRP](msrp.md#msrp-reindex-tool)에 대한 설명서를 따르지만 DSRP에 대해 다시 색인화할 때 대신 이 URL을 사용하십시오.**/services/social/datastore/rdb/reindex**
+DSRP Solr을 다시 색인화하려면 [MSRP](msrp.md#msrp-reindex-tool)에 대한 설명서를 따르지만 DSRP에 대해 다시 색인화할 때 대신 이 URL을 사용하십시오. **/services/social/datastore/rdb/reindex**
 
 예를 들어 DSRP를 다시 색인화하는 curl 명령은 다음과 같습니다.
 
