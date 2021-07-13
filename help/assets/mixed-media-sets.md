@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: 252c1a50-17ac-4412-88d6-49bb6850658d
-feature: 미디어 집합 혼합
+feature: 혼합 미디어 세트
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 99df7edd60fad155ae7d9c0765bc32d5c517d723
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 1%
@@ -27,7 +27,7 @@ ht-degree: 1%
 >
 >Assets 사용자 인터페이스에 대한 자세한 내용은 [Touch UI를 사용하여 자산 관리](managing-assets-touch-ui.md)를 참조하십시오.
 
-## 빠른 시작:혼합 미디어 집합 {#quick-start-mixed-media-sets}
+## 빠른 시작: 혼합 미디어 집합 {#quick-start-mixed-media-sets}
 
 혼합 미디어 세트를 사용하여 빠르게 시작하고 실행하려면 다음 단계를 수행합니다.
 
