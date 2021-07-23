@@ -8,9 +8,9 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: 비디오
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
 workflow-type: tm+mt
-source-wordcount: '10393'
+source-wordcount: '10335'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 이 섹션에서는 Dynamic Media에서 비디오 작업을 설명합니다.
 
-## 빠른 시작:비디오 {#quick-start-videos}
+## 빠른 시작: 비디오 {#quick-start-videos}
 
 다음 단계별 워크플로우 설명은 Dynamic Media의 응용 비디오 세트를 빠르게 설정 및 실행하는 데 도움이 되도록 설계되었습니다. 각 단계 후에는 자세한 정보를 찾을 수 있는 주제 제목에 대한 상호 참조가 있습니다.
 
@@ -71,7 +71,7 @@ ht-degree: 1%
 
          [비디오 표현물 보기](video-renditions.md)
 
-         [비디오 표현물 관리](managing-assets-touch-ui.md#managing-renditions)
+[비디오 표현물 관리](managing-assets-touch-ui.md#managing-renditions)
 
       * [뷰어 사전 설정 관리](managing-viewer-presets.md)
       * [자산 게시](publishing-dynamicmedia-assets.md)
@@ -83,7 +83,7 @@ ht-degree: 1%
 
       * 제목, 설명 및 태그, 사용자 지정 메타데이터 필드와 같은 비디오의 속성을 편집합니다.
 
-         [비디오 속성 편집](managing-assets-touch-ui.md#editing-properties)
+[비디오 속성 편집](managing-assets-touch-ui.md#editing-properties)
 
       * [디지털 자산에 대한 메타데이터 관리](metadata.md)
       * [메타데이터 스키마](metadata-schemas.md)
@@ -139,7 +139,7 @@ Dynamic Media의 비디오는 데스크탑, iOS, Android, Blackberry 및 Windows
 * 지원되는 다양한 비디오 형식 및 오디오 포맷의 비디오를 업로드하고 여러 화면에서 재생되도록 비디오를 MP4 H.264 형식으로 인코딩합니다. 사전 정의된 응용 비디오 사전 설정, 단일 비디오 인코딩 사전 설정을 사용하거나 자체 인코딩을 사용자 지정하여 비디오의 품질과 크기를 제어할 수 있습니다.
 
    * 응용 비디오 세트가 생성되면 MP4 비디오가 포함됩니다.
-   * **참고**:기본/소스 비디오가 응용 비디오 세트에 추가되지 않습니다.
+   * **참고**: 기본/소스 비디오가 응용 비디오 세트에 추가되지 않습니다.
 
 * 모든 HTML5 비디오 뷰어에서 비디오 캡션 기능.
 * 비디오 자산을 효율적으로 관리하기 위해 전체 메타데이터 지원을 사용하여 비디오를 구성, 탐색 및 검색할 수 있습니다.
@@ -147,9 +147,9 @@ Dynamic Media의 비디오는 데스크탑, iOS, Android, Blackberry 및 Windows
 
 응용 비디오 스트리밍은 다양한 iOS 플랫폼에서 지원됩니다. [Adobe 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)를 참조하십시오.
 
-Dynamic Media은 MP4 H.264 비디오용 모바일 비디오 재생을 지원합니다. 다음 위치에서 이 비디오 형식을 지원하는 Blackberry 장치를 찾을 수 있습니다.[Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)에서 지원되는 비디오 형식.
+Dynamic Media은 MP4 H.264 비디오용 모바일 비디오 재생을 지원합니다. 다음 위치에서 이 비디오 형식을 지원하는 Blackberry 장치를 찾을 수 있습니다. [Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)에서 지원되는 비디오 형식.
 
-다음 위치에서 이 비디오 형식을 지원하는 Windows 장치를 찾을 수 있습니다.[Windows Phone에서 지원되는 비디오 형식](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)
+다음 위치에서 이 비디오 형식을 지원하는 Windows 장치를 찾을 수 있습니다. [Windows Phone에서 지원되는 비디오 형식](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)
 
 * 다음을 포함하여 Dynamic Media 비디오 뷰어 사전 설정을 사용하여 비디오를 재생합니다.
 
@@ -163,7 +163,7 @@ Dynamic Media은 MP4 H.264 비디오용 모바일 비디오 재생을 지원합�
 
 Adobe Dynamic Media 뷰어 참조 가이드의 [HTML5 뷰어 정보](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=en#viewers-for-aem-assets-only)도 참조하십시오.
 
-## 우수 사례:HTML5 비디오 뷰어 사용 {#best-practice-using-the-html-video-viewer}
+## 우수 사례: HTML5 비디오 뷰어 사용 {#best-practice-using-the-html-video-viewer}
 
 Dynamic Media HTML5 비디오 뷰어 사전 설정은 강력한 비디오 플레이어입니다. 이러한 매개 변수를 사용하면 HTML5 비디오 재생과 관련된 많은 일반적인 문제와 적응형 스트리밍 게재 부족 및 제한된 데스크탑 브라우저 도달과 같은 모바일 장치와 관련된 문제를 방지할 수 있습니다.
 
@@ -207,7 +207,7 @@ HLS(HTTP Live Streaming)는 네트워크 대역폭 용량에 따라 재생을 �
   <tr> 
    <td>데스크톱</td>
    <td>Internet Explorer 11+</td>
-   <td>Windows 8 및 Windows 10의 경우 - HLS가 요청될 때마다 HTTPS를 강제로 사용합니다. 알려진 제한 사항:HLS의 HTTP가 이 브라우저/운영 체제 조합<br /> <br /> Windows 7의 경우 - 점진적 다운로드에서 작동하지 않습니다. HTTP 및 HTTPS 프로토콜을 선택하는 표준 로직을 사용합니다.</td>
+   <td>Windows 8 및 Windows 10의 경우 - HLS가 요청될 때마다 HTTPS를 강제로 사용합니다. 알려진 제한 사항: HLS의 HTTP가 이 브라우저/운영 체제 조합<br /> <br /> Windows 7의 경우 - 점진적 다운로드에서 작동하지 않습니다. HTTP 및 HTTPS 프로토콜을 선택하는 표준 로직을 사용합니다.</td>
   </tr>
   <tr> 
    <td>데스크톱</td>
@@ -276,12 +276,12 @@ HLS(HTTP Live Streaming)는 네트워크 대역폭 용량에 따라 재생을 �
 
 Dynamic Media를 활성화하고 비디오 클라우드 서비스를 설정한 경우 **[!UICONTROL Dynamic Media 인코딩 비디오]** 워크플로우가 비디오를 인코딩합니다. 이 워크플로우는 워크플로우 프로세스 기록 및 실패 정보를 캡처합니다. [비디오 인코딩 및 YouTube 게시 진행률 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오. Dynamic Media을 활성화하고 Video Cloud 서비스를 설정한 경우 비디오를 업로드할 때 **[!UICONTROL Dynamic Media 비디오 인코딩]** 워크플로우가 자동으로 적용됩니다. (Dynamic Media을 사용하지 않는 경우 **[!UICONTROL DAM 자산 업데이트]** 워크플로우가 적용됩니다.)
 
-다음은 소스 비디오 파일을 인코딩하기 위한 우수 사례 팁입니다.
+<!-- DEAD ARTICLE AND VIDEO LINK The following are best-practice tips for encoding source video files.
 
-비디오 인코딩에 대한 자세한 내용은 다음을 참조하십시오.
+For advice about video encoding, see the following:
 
-* 문서:*스트리밍 101:기본 사항 - Codecs, Bandwidth, Data Rate 및 Resolution:* [www.adobe.com/go/learn_s7_streaming101_en](https://www.adobe.com/go/learn_s7_streaming101_en).
-* 비디오:*비디오 인코딩 기본 사항:* [www.adobe.com/go/learn_s7_encoding_en](https://www.adobe.com/go/learn_s7_encoding_en)
+* Article: *Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution:* [www.adobe.com/go/learn_s7_streaming101_en](https://www.adobe.com/go/learn_s7_streaming101_en).
+* Video: *Video Encoding Basics:* [www.adobe.com/go/learn_s7_encoding_en](https://www.adobe.com/go/learn_s7_encoding_en). -->
 
 ### 소스 비디오 파일 {#source-video-files}
 
@@ -299,7 +299,7 @@ Dynamic Media를 활성화하고 비디오 클라우드 서비스를 설정한 �
 
 비디오 편집 도구를 사용하여 파일의 메타데이터를 보거나 메타데이터를 얻기 위해 디자인된 응용 프로그램을 사용하여 파일의 메타데이터를 가져올 수 있습니다. 다음은 타사 응용 프로그램인 MediaInfo를 사용하여 비디오 파일의 메타데이터를 가져오는 방법에 대한 지침입니다.
 
-1. 다음 웹 페이지로 이동합니다.[https://mediaarea.net/en/MediaInfo](https://mediaarea.net/en/MediaInfo)
+1. 다음 웹 페이지로 이동합니다. [https://mediaarea.net/en/MediaInfo](https://mediaarea.net/en/MediaInfo)
 1. 사용 중인 GUI 버전에 대한 설치 관리자를 선택하여 다운로드하고 설치 지침을 따르십시오.
 1. 설치 후 비디오 파일(Windows만 해당)을 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL MediaInfo]**&#x200B;를 선택하거나 **[!UICONTROL MediaInfo]**&#x200B;를 열고 비디오 파일을 응용 프로그램으로 드래그합니다. 너비, 높이, fps 등 비디오 파일과 관련된 모든 메타데이터가 표시됩니다.
 
@@ -336,7 +336,7 @@ Dynamic Media를 활성화하고 비디오 클라우드 서비스를 설정한 �
 
 * **VBR(Variable Bitrate Encoding** ) - VBR 인코딩은 압축기에 필요한 데이터를 기반으로 데이터 속도를 낮추고 설정한 상한까지 조정합니다. 즉, VBR 인코딩 프로세스 중에 미디어 파일의 비트율이 미디어 파일 비트율 요구 사항에 따라 동적으로 증가 또는 감소합니다.
 
-   VBR은 인코딩하는 데 더 오래 걸리지만 가장 유리한 결과를 생성합니다.미디어 파일의 품질이 우수합니다. VBR은 비디오 컨텐츠의 http 점진적 게재에 가장 일반적으로 사용됩니다.
+   VBR은 인코딩하는 데 더 오래 걸리지만 가장 유리한 결과를 생성합니다. 미디어 파일의 품질이 우수합니다. VBR은 비디오 컨텐츠의 http 점진적 게재에 가장 일반적으로 사용됩니다.
 
 **VBR 대 CRB는 언제 사용해야 합니까?**
 VBR과 CBR을 선택하는 방법은 거의 항상 미디어 파일에 VBR을 사용하는 것이 좋습니다. VBR은 경쟁적 비트율로 더 높은 품질의 파일을 제공합니다. VBR을 사용하는 경우 2단계 인코딩에 사용하고 최대 비트율을 대상 비디오 비트율의 1.5배로 설정하십시오.
@@ -385,7 +385,7 @@ VBR과 CBR을 선택하는 방법은 거의 항상 미디어 파일에 VBR을 �
 
 ### Fps(초당 프레임 수) {#fps-frames-per-second}
 
-미국 및 일본에서는 대부분의 비디오가 초당 29.97프레임(fps)으로 촬영됩니다.유럽에서는 대부분의 비디오가 25fps로 촬영됩니다. 필름은 24fps로 촬영됩니다.
+미국 및 일본에서는 대부분의 비디오가 초당 29.97프레임(fps)으로 촬영됩니다. 유럽에서는 대부분의 비디오가 25fps로 촬영됩니다. 필름은 24fps로 촬영됩니다.
 
 마스터 비디오 파일의 fps 속도와 일치하는 비디오 인코딩 사전 설정을 선택합니다. 예를 들어, 마스터 비디오가 25fps인 경우 25fps로 인코딩 사전 설정을 선택합니다. 기본적으로 모든 사용자 지정 인코딩은 마스터 비디오 파일의 fps를 사용합니다. 따라서 비디오 인코딩 사전 설정을 만들 때 fps 설정을 명시적으로 지정할 필요가 없습니다.
 
@@ -481,7 +481,7 @@ YouTube에 게시하려면 Google 계정이 필요합니다. GMAIL 계정이 있
 1. **[!UICONTROL 대시보드]** 페이지에서 **[!UICONTROL 프로젝트 만들기]**&#x200B;를 탭합니다.
 1. **[!UICONTROL 새 프로젝트]** 대화 상자에서 프로젝트 이름을 입력합니다.
 
-   프로젝트 ID는 프로젝트 이름을 기반으로 합니다. 따라서 프로젝트 이름을 신중하게 선택합니다.만든 후에는 변경할 수 없습니다. 또한 나중에 Adobe Experience Manager에서 YouTube을 설정할 때 동일한 프로젝트 ID를 다시 입력해야 합니다. 프로젝트의 ID를 기록할 수 있습니다.
+   프로젝트 ID는 프로젝트 이름을 기반으로 합니다. 따라서 프로젝트 이름을 신중하게 선택합니다. 만든 후에는 변경할 수 없습니다. 또한 나중에 Adobe Experience Manager에서 YouTube을 설정할 때 동일한 프로젝트 ID를 다시 입력해야 합니다. 프로젝트의 ID를 기록할 수 있습니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 누릅니다.
 
 1. 프로젝트의 **[!UICONTROL 대시보드]**&#x200B;의 **[!UICONTROL 시작하기]** 카드에서 **[!UICONTROL API 활성화 를 탭하고 키]**&#x200B;와 같은 자격 증명을 가져옵니다.
@@ -499,7 +499,7 @@ YouTube에 게시하려면 Google 계정이 필요합니다. GMAIL 계정이 있
 
    예, `https://1a2b3c.mycompany.com:4321`
 
-   **참고**:위의 경로 예제는 그림 용도로만 사용됩니다.
+   **참고**: 위의 경로 예제는 그림 용도로만 사용됩니다.
 
 1. **[!UICONTROL Authorized redirect URI]** 제목 아래의 텍스트 필드에 다음을 입력하고 경로에 고유한 도메인과 포트 번호를 바꾼 다음 Enter 키를 눌러 목록에 경로를 추가합니다.
 
@@ -507,13 +507,13 @@ YouTube에 게시하려면 Google 계정이 필요합니다. GMAIL 계정이 있
 
    예, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   **참고**:위의 경로 예제는 그림 용도로만 사용됩니다.
+   **참고**: 위의 경로 예제는 그림 용도로만 사용됩니다.
 
 1. **[!UICONTROL 클라이언트 ID 만들기]**&#x200B;를 누릅니다.
 1. 자격 증명 페이지의 **[!UICONTROL OAuth 2.0 동의 화면 설정]** 제목 아래에서 현재 사용 중인 Gmail 주소를 선택합니다.
 1. 사용자에게 표시되는 **[!UICONTROL 제품 이름]** 제목 아래의 텍스트 필드에 동의 화면에 표시할 내용을 입력합니다.
 
-   AEM 관리자가 YouTube을 인증할 때 동의 화면이 표시됩니다.AEM은 YouTube에 권한을 요청하십시오.
+   AEM 관리자가 YouTube을 인증할 때 동의 화면이 표시됩니다. AEM은 YouTube에 권한을 요청하십시오.
 
 1. **[!UICONTROL 계속]**&#x200B;을 누릅니다.
 1. **[!UICONTROL 자격 증명 다운로드]** 제목 아래에서 **[!UICONTROL 다운로드]**&#x200B;를 탭합니다.
@@ -531,7 +531,7 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
 
 >[!CAUTION]
 >
->YouTube &amp;ast;before&amp;ast;에서 이미 하나 이상의 채널을 설정했는지 확인하십시오.AEM의 YouTube 설정에서 채널을 추가합니다(아래 AEM](#setting-up-youtube-in-aem)에서 YouTube 설정 을 참조하십시오). [ 이 작업을 수행하지 않으면 기존 채널에 대한 경고가 표시되지 않습니다. 그러나 채널을 추가할 때는 Google 인증이 계속 발생하지만 비디오가 전송되는 채널을 선택할 수 있는 옵션이 없습니다.
+>YouTube &amp;ast;before&amp;ast;에서 이미 하나 이상의 채널을 설정했는지 확인하십시오. AEM의 YouTube 설정에서 채널을 추가합니다(아래 AEM](#setting-up-youtube-in-aem)에서 YouTube 설정 을 참조하십시오). [ 이 작업을 수행하지 않으면 기존 채널에 대한 경고가 표시되지 않습니다. 그러나 채널을 추가할 때는 Google 인증이 계속 발생하지만 비디오가 전송되는 채널을 선택할 수 있는 옵션이 없습니다.
 
 **YouTube 채널을 만들려면**:
 
@@ -573,7 +573,7 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
 
    처음에 Google Cloud 설정을 구성할 때 프로젝트 ID를 지정했습니다.
 
-   **[!UICONTROL YouTube 계정 설정]** 대화 상자를 열어 둡니다.곧 다시 돌아올 겁니다
+   **[!UICONTROL YouTube 계정 설정]** 대화 상자를 열어 둡니다. 곧 다시 돌아올 겁니다
 
 1. 일반 텍스트 편집기를 사용하여 Google Cloud 설정 구성 작업에서 이전에 다운로드하여 저장한 JSON 파일을 엽니다.
 1. 전체 JSON 텍스트를 선택하고 복사합니다.
@@ -856,7 +856,7 @@ YouTube에서 컨텐츠를 제거하려면 AEM에서는 진행 상황을 모니�
 
 ## 비디오 보고서 보기 {#viewing-video-reports}
 
-비디오 보고서는 Dynamic Media - 하이브리드 모드를 실행할 때 사용할 수 있습니다.Dynamic Media - Scene7 모드를 실행할 때에는 보고서를 사용할 수 없습니다.
+비디오 보고서는 Dynamic Media - 하이브리드 모드를 실행할 때 사용할 수 있습니다. Dynamic Media - Scene7 모드를 실행할 때에는 보고서를 사용할 수 없습니다.
 
 비디오 보고서에는 지정된 기간 동안 여러 개의 집계 지표가 표시되어 *게시된 *개별 및 집계 비디오가 예상대로 작동하는지 모니터링할 수 있습니다. 다음 상위 지표 데이터는 전체 웹 사이트에서 게시된 모든 비디오에 대해 집계됩니다.
 
@@ -981,7 +981,7 @@ URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 *Dyna
 
    만드는 파일이 WebVTT(Web Video Text Tracks) 표준을 따르는지 확인합니다. 캡션 파일 이름 확장명은 .vtt입니다. WebVTT 캡션 표준에 대한 자세한 정보를 확인할 수 있습니다.
 
-   [WebVTT 를 참조하십시오.웹 비디오 텍스트 트랙 형식](https://dev.w3.org/html5/webvtt/).
+   [WebVTT 를 참조하십시오. 웹 비디오 텍스트 트랙 형식](https://dev.w3.org/html5/webvtt/).
 
    Dynamic Media 외부에서 캡션/자막 파일을 작성하는 데 사용할 수 있는 무료 및 프리미엄 도구와 서비스가 모두 있습니다. 예를 들어 스타일이 없는 간단한 비디오 캡션 파일을 만들려면 다음과 같은 무료 온라인 캡션 작성 및 편집 도구를 사용할 수 있습니다.
 
@@ -1030,7 +1030,7 @@ URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 *Dyna
 
 원할 경우 비디오 뷰어 사전 설정을 사용하는 대신 장을 사용하여 자신만의 사용자 지정 비디오 뷰어를 만들고 브랜드화할 수 있습니다. 장 탐색을 사용하여 고유한 HTML5 뷰어를 만드는 방법에 대한 지침은 Adobe HTML5 뷰어 SDK API에서 `s7sdk.video.VideoPlayer` 및 `s7sdk.video.VideoScrubber` 클래스의 &quot;Customizing Behavior Using Modifiers&quot; 제목을 참조하십시오. [HTML5 뷰어 SDK API]((https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)) 설명서를 참조하십시오.
 
-캡션을 만드는 것과 거의 동일한 방식으로 비디오에 대한 장 목록을 만듭니다. 즉, WebVTT 파일을 만듭니다. 그러나 이 파일은 사용할 수도 있는 WebVTT 캡션 파일과 구분되어야 합니다.캡션과 장을 하나의 WebVTT 파일에 결합할 수 없습니다.
+캡션을 만드는 것과 거의 동일한 방식으로 비디오에 대한 장 목록을 만듭니다. 즉, WebVTT 파일을 만듭니다. 그러나 이 파일은 사용할 수도 있는 WebVTT 캡션 파일과 구분되어야 합니다. 캡션과 장을 하나의 WebVTT 파일에 결합할 수 없습니다.
 
 다음 샘플을 사용하여 장 탐색 기능을 사용하여 WebVTT 파일을 만들 수 있습니다.
 
@@ -1056,7 +1056,7 @@ Cost-efficient access to rapidly evolving technology.
 
 HTML5 비디오 뷰어를 사용하고 있으므로 만드는 장 파일이 WebVTT(Web Video Text Tracks) 표준을 따르는지 확인하십시오. 장 파일 확장명은 .vtt입니다. WebVTT 캡션 표준에 대한 자세한 정보를 확인할 수 있습니다.
 
-[WebVTT 를 참조하십시오.웹 비디오 텍스트 트랙 형식](https://dev.w3.org/html5/webvtt/)
+[WebVTT 를 참조하십시오. 웹 비디오 텍스트 트랙 형식](https://dev.w3.org/html5/webvtt/)
 
 **비디오에 장 마커를 추가하려면**
 
