@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 자산 처리
 role: Admin, Architect
 exl-id: c7511326-697e-4749-ab46-513cdbaa00d8
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 0%
@@ -22,15 +22,15 @@ Adobe Experience Manager (AEM) Assets는 프록시를 사용하여 특정 작업
 
 ## 프록시(HTTP 액세스) {#proxy-http-access}
 
-프록시는 다음에 처리 작업을 수락하도록 구성된 경우 HTTP 서블릿을 통해 사용할 수 있습니다.`/libs/dam/cloud/proxy` 이 서블릿은 게시된 매개 변수에서 sling 작업을 생성합니다. 그러면 프록시 작업 큐에 추가되고 해당 프록시 작업자에 연결됩니다.
+프록시는 다음에 처리 작업을 수락하도록 구성된 경우 HTTP 서블릿을 통해 사용할 수 있습니다. `/libs/dam/cloud/proxy` 이 서블릿은 게시된 매개 변수에서 sling 작업을 생성합니다. 그러면 프록시 작업 큐에 추가되고 해당 프록시 작업자에 연결됩니다.
 
 ### 지원되는 작업 {#supported-operations}
 
 * `job`
 
-   **요구 사항**:매개 변수는 직렬화된 값 맵으로 설정해야  `jobevent` 합니다. 작업 프로세서에 대한 `Event` 을 만드는 데 사용됩니다.
+   **요구 사항**: 매개 변수는 직렬화된 값 맵으로 설정해야  `jobevent` 합니다. 작업 프로세서에 대한 `Event` 을 만드는 데 사용됩니다.
 
-   **결과**:새 작업을 추가합니다. 성공하면 고유 작업 ID가 반환됩니다.
+   **결과**: 새 작업을 추가합니다. 성공하면 고유 작업 ID가 반환됩니다.
 
 ```shell
 curl -u admin:admin -F":operation=job" -F"someproperty=xxxxxxxxxxxx"
@@ -39,9 +39,9 @@ curl -u admin:admin -F":operation=job" -F"someproperty=xxxxxxxxxxxx"
 
 * `result`
 
-   **요구 사항**:매개 변수를 설정해야  `jobid` 합니다.
+   **요구 사항**: 매개 변수를 설정해야  `jobid` 합니다.
 
-   **결과**:작업 프로세서에서 만든 결과 노드의 JSON 표현을 반환합니다.
+   **결과**: 작업 프로세서에서 만든 결과 노드의 JSON 표현을 반환합니다.
 
 ```shell
 curl -u admin:admin -F":operation=result" -F"jobid=xxxxxxxxxxxx"
@@ -50,9 +50,9 @@ curl -u admin:admin -F":operation=result" -F"jobid=xxxxxxxxxxxx"
 
 * `resource`
 
-   **요구 사항**:매개 변수 jobid를 설정해야 합니다.
+   **요구 사항**: 매개 변수 jobid를 설정해야 합니다.
 
-   **결과**:지정된 작업과 연결된 리소스를 반환합니다.
+   **결과**: 지정된 작업과 연결된 리소스를 반환합니다.
 
 ```shell
 curl -u admin:admin -F":operation=resource" -F"jobid=xxxxxxxxxxxx"
@@ -61,9 +61,9 @@ curl -u admin:admin -F":operation=resource" -F"jobid=xxxxxxxxxxxx"
 
 * `remove`
 
-   **요구 사항**:매개 변수 jobid를 설정해야 합니다.
+   **요구 사항**: 매개 변수 jobid를 설정해야 합니다.
 
-   **결과**:찾은 경우 작업을 제거합니다.
+   **결과**: 찾은 경우 작업을 제거합니다.
 
 ```shell
 curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
@@ -108,7 +108,7 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 
 >[!NOTE]
 >
->프록시 API에 대한 참조 설명서는 [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html)에서 사용할 수 있습니다.
+>프록시 API에 대한 참조 설명서는 [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/commons/proxy/package-summary.html)에서 사용할 수 있습니다.
 
 프록시 및 프록시 작업자 구성은 모두 AEM Assets **도구** 콘솔 또는 `/etc/cloudservices/proxy`에서 액세스할 수 있는 클라우드 서비스 구성을 통해 사용할 수 있습니다. 각 프록시 작업자는 작업자별 구성 세부 정보(예: `/etc/cloudservices/proxy/workername`)에 대해 `/etc/cloudservices/proxy` 아래에 노드를 추가해야 합니다.
 
@@ -163,7 +163,7 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 
    예를 들어 ID 프록시 작업자는 `IDSJob.IDS_EXTENDSCRIPT_JOB` 을 참조하십시오.
 
-1. 외부 단계는 이벤트를 트리거한 다음 완료될 때까지 기다리는 데 사용됩니다.이 작업은 id를 폴링하여 수행됩니다. 새 기능을 구현하려면 자체 단계를 개발해야 합니다.
+1. 외부 단계는 이벤트를 트리거한 다음 완료될 때까지 기다리는 데 사용됩니다. 이 작업은 id를 폴링하여 수행됩니다. 새 기능을 구현하려면 자체 단계를 개발해야 합니다.
 
    `WorkflowExternalProcess`을 구현한 다음 JobService API 및 작업 항목을 사용하여 작업 이벤트를 준비하고 JobService(OSGi 서비스)에 전달합니다.
 
