@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 게시
 role: Admin
 exl-id: d80562f7-071c-460a-9c68-65f48d36fbd9
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
 source-wordcount: '1703'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Adobe Experience Manager (AEM) Assets는 다음을 사용합니다.
 * 특정 처리 작업의 로드를 분배하는 프록시. 프록시는 특정 작업을 수행하기 위해 프록시 작업자와 통신하는 AEM 인스턴스와 결과를 전달하는 다른 AEM 인스턴스입니다.
 * 특정 작업을 정의하고 관리하는 프록시 작업자
 
-여기에는 다양한 작업이 포함될 수 있습니다.예를 들어 Adobe InDesign Server을 사용하여 파일을 처리합니다.
+여기에는 다양한 작업이 포함될 수 있습니다. 예를 들어 Adobe InDesign Server을 사용하여 파일을 처리합니다.
 
 Adobe InDesign으로 만든 파일을 AEM Assets에 완전히 업로드하려면 프록시가 사용됩니다. 이 작업자는 프록시 작업자를 사용하여 Adobe InDesign Server과 통신합니다. 여기서 [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)를 실행하여 메타데이터를 추출하고 AEM Assets에 대한 다양한 변환을 생성합니다. 프록시 작업자는 클라우드 구성에서 InDesign Server과 AEM 인스턴스 간에 양방향 통신을 가능하게 합니다.
 
@@ -64,7 +64,7 @@ InDesign Server을 AEM Assets과 통합하여 InDesign( `.indd`)로 생성된 �
    >
    >IDML은 InDesign 파일에서 *모든*&#x200B;을 렌더링하는 XML 기반 형식입니다. [Zip](https://www.techterms.com/definition/zip) 압축을 사용하여 압축 패키지로 저장됩니다.
    >
-   >자세한 내용은 [Adobe InDesign Interchange Formats INX 및 IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8) 을 참조하십시오.
+   >자세한 내용은 [Adobe InDesign Interchange Formats INX 및 IDML](https://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8) 을 참조하십시오.
 
    >[!CAUTION]
    >
@@ -107,7 +107,7 @@ AEM에서 사용할 InDesign Server을 설치하고 시작하려면 다음을 �
 
    >[!NOTE]
    >
-   >출력 메시지를 파일에 저장하려면 리디렉션을 사용하십시오.예를 들어, Windows에서는
+   >출력 메시지를 파일에 저장하려면 리디렉션을 사용하십시오. 예를 들어, Windows에서는
    >
    >`<ids-installation-dir>/InDesignServer.com -port 8080 > ~/temp/INDD-logfile.txt 2>&1`
 
@@ -132,9 +132,9 @@ AEM Assets에는 InDesign을 위한 몇 가지 프로세스 단계가 있는 미
 
 미디어 추출 인수 및 스크립트 경로
 
-* **ExtendScript 라이브러리**:다른 스크립트에 필요한 간단한 http get/post 메서드 라이브러리입니다.
+* **ExtendScript 라이브러리**: 다른 스크립트에 필요한 간단한 http get/post 메서드 라이브러리입니다.
 
-* **스크립트 확장**:여기에서 다양한 스크립트 조합을 지정할 수 있습니다. InDesign Server에서 자체 스크립트를 실행하려면 `/apps/settings/dam/indesign/scripts`에 스크립트를 저장합니다.
+* **스크립트 확장**: 여기에서 다양한 스크립트 조합을 지정할 수 있습니다. InDesign Server에서 자체 스크립트를 실행하려면 `/apps/settings/dam/indesign/scripts`에 스크립트를 저장합니다.
 
    InDesign 스크립트에 대한 자세한 내용은 [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)을 참조하십시오.
 
@@ -154,17 +154,17 @@ AEM Assets에는 InDesign을 위한 몇 가지 프로세스 단계가 있는 미
 
 ![chlimage_1-289](assets/chlimage_1-289.png)
 
-* **페이지 추출 처리기**:드롭다운 목록에서 사용할 처리기를 선택합니다. 추출 처리기는 관련 `RenditionPicker`(`ExtractionHandler` API 참조)에 의해 선택된 특정 변환에서 작동합니다. 기본적으로 IDML 내보내기 추출 핸들러를 사용할 수 있습니다. 이 작업은 MediaExtract 단계에서 생성된 `IDML` 변환에서 작동합니다.
+* **페이지 추출 처리기**: 드롭다운 목록에서 사용할 처리기를 선택합니다. 추출 처리기는 관련 `RenditionPicker`(`ExtractionHandler` API 참조)에 의해 선택된 특정 변환에서 작동합니다. 기본적으로 IDML 내보내기 추출 핸들러를 사용할 수 있습니다. 이 작업은 MediaExtract 단계에서 생성된 `IDML` 변환에서 작동합니다.
 
-* **페이지 이름**:결과 페이지에 지정할 이름을 지정합니다. 비워 두면 이름이 &quot;page&quot;(또는 &quot;page&quot;가 이미 있는 경우 파생자)입니다.
+* **페이지 이름**: 결과 페이지에 지정할 이름을 지정합니다. 비워 두면 이름이 &quot;page&quot;(또는 &quot;page&quot;가 이미 있는 경우 파생자)입니다.
 
-* **페이지 제목**:결과 페이지에 지정할 제목을 지정합니다.
+* **페이지 제목**: 결과 페이지에 지정할 제목을 지정합니다.
 
-* **페이지 루트 경로**:결과 페이지의 루트 위치에 대한 경로입니다. 비워 두면 자산의 표현물을 포함하는 노드가 사용됩니다.
+* **페이지 루트 경로**: 결과 페이지의 루트 위치에 대한 경로입니다. 비워 두면 자산의 표현물을 포함하는 노드가 사용됩니다.
 
-* **페이지 템플릿**:결과 페이지를 생성할 때 사용할 템플릿입니다.
+* **페이지 템플릿**: 결과 페이지를 생성할 때 사용할 템플릿입니다.
 
-* **페이지 디자인**:결과 페이지를 생성할 때 사용할 페이지 디자인입니다.
+* **페이지 디자인**: 결과 페이지를 생성할 때 사용할 페이지 디자인입니다.
 
 ### InDesign Server에 대한 프록시 작업자 구성 {#configuring-the-proxy-worker-for-indesign-server}
 
@@ -180,7 +180,7 @@ AEM Assets에는 InDesign을 위한 몇 가지 프로세스 단계가 있는 미
 
    ![proxy_idsworkerconfig](assets/proxy_idsworkerconfig.png)
 
-   * **ID 풀**:InDesign Server과 통신하는 데 사용할 SOAP 끝점입니다. 필수 항목을 추가, 제거 및 주문할 수 있습니다.
+   * **ID 풀**: InDesign Server과 통신하는 데 사용할 SOAP 끝점입니다. 필수 항목을 추가, 제거 및 주문할 수 있습니다.
 
 1. **[!UICONTROL 확인]**&#x200B;을 클릭하여 저장합니다.
 
@@ -205,7 +205,7 @@ InDesign Server과 AEM이 다른 호스트에 있거나 이러한 응용 프로�
 
 병렬 ID 작업 수를 구성하려면
 
-1. Felix Console;의 **[!UICONTROL Configurations]** 탭을 엽니다.예:
+1. Felix Console;의 **[!UICONTROL Configurations]** 탭을 엽니다. 예:
 
    `http://localhost:4502/system/console/configMgr`
 
