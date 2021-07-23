@@ -5,14 +5,14 @@ contentOwner: AG
 feature: 태깅, 메타데이터
 role: Architect, Leader
 exl-id: 05bbf89a-4cf5-49bb-aea8-a585c641eda2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1398'
 ht-degree: 0%
 
 ---
 
-# 디지털 자산의 메타데이터 {#managing-metadata-for-digital-assets} 관리
+# 디지털 자산의 메타데이터 관리 {#managing-metadata-for-digital-assets}
 
 [!DNL Adobe Experience Manager Assets] 모든 자산에 대한 메타데이터를 유지합니다. 자산을 보다 쉽게 분류하고 구성할 수 있으며 특정 자산을 찾는 사람에게 도움이 됩니다. [!DNL Experience Manager Assets]에 업로드된 파일에서 메타데이터를 추출하는 기능을 통해 메타데이터 관리는 크리에이티브 워크플로우와 통합됩니다. 자산으로 메타데이터를 유지 및 관리하는 기능을 사용하면 메타데이터를 기반으로 자산을 자동으로 구성하고 처리할 수 있습니다.
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 * [메타데이터를 편집하거나 추가하는 방법](meta-edit.md).
 * [메타데이터 스키마 참조](meta-ref.md).
 
-## 메타데이터 {#why-we-need-metadata}이 필요한 이유
+## 메타데이터가 필요한 이유 {#why-we-need-metadata}
 
 메타데이터는 데이터에 대한 데이터를 의미합니다. 이러한 점에서 데이터는 디지털 자산, 즉 이미지를 나타냅니다. 메타데이터는 효율적인 자산 관리를 위해 매우 중요합니다.
 
@@ -71,10 +71,10 @@ ht-degree: 0%
 
 파일에 메타데이터를 포함하는 방법은 다양합니다. 다양한 인코딩 표준이 지원됩니다.
 
-* XMP:추출된 메타데이터를 리포지토리 내에 저장하는 데 [!DNL Assets]에서 사용됩니다.
-* ID3:오디오 및 비디오 파일에 사용할 수 있습니다.
-* 예:이미지 파일에 사용할 수 있습니다.
-* 기타/기존:[!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel] 등입니다.
+* XMP: 추출된 메타데이터를 리포지토리 내에 저장하는 데 [!DNL Assets]에서 사용됩니다.
+* ID3: 오디오 및 비디오 파일에 사용할 수 있습니다.
+* 예: 이미지 파일에 사용할 수 있습니다.
+* 기타/기존: [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel] 등입니다.
 
 ### XMP {#xmp}
 
@@ -121,7 +121,7 @@ Exif로 정의된 메타데이터 필드는 일반적으로 기술적인 부분�
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpBJ` - 기본 구직 매표.
 
-### 응용 프로그램별 메타데이터 {#application-specific-metadata}
+### 애플리케이션별 메타데이터 {#application-specific-metadata}
 
 응용 프로그램별 메타데이터는 기술 및 설명 메타데이터를 포함합니다. 이러한 메타데이터를 사용하는 경우 다른 응용 프로그램에서 메타데이터를 사용하지 못할 수 있습니다. 예를 들어 다른 이미지 렌더링 응용 프로그램에서 [!DNL Adobe Photoshop] 메타데이터에 액세스할 수 없습니다. 애플리케이션별 속성을 표준 속성으로 변경하는 워크플로우 단계를 만들 수 있습니다.
 
@@ -147,7 +147,7 @@ Exif로 정의된 메타데이터 필드는 일반적으로 기술적인 부분�
 * PUR - 프리즘 사용 권한.
 * `xmpPlus` - XMP과 PLUS 통합.
 
-### 포토그래피 특정 메타데이터 {#photography-specific-metadata}
+### 사진별 메타데이터 {#photography-specific-metadata}
 
 * Exif - GPS 위치를 포함한 카메라의 기술 정보.
 * CRS - [!DNL Camera Raw] 스키마.
@@ -157,7 +157,7 @@ Exif로 정의된 메타데이터 필드는 일반적으로 기술적인 부분�
 ### 인쇄별 메타데이터 {#print-specific-metadata}
 
 * PDF 및 PDF/X - Adobe PDF 및 타사 애플리케이션
-* PRISM - [업계 표준 메타데이터 게시 요구 사항](https://www.prismstandard.org).
+* PRISM - [업계 표준 메타데이터 게시 요구 사항](http://www.prismstandard.org/specifications/).
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - 페이징 텍스트의 XMP 메타데이터.
 
@@ -166,7 +166,7 @@ Exif로 정의된 메타데이터 필드는 일반적으로 기술적인 부분�
 * `xmpDM` - [!DNL Dynamic Media].
 * `xmpMM` - 미디어 관리.
 
-## 메타데이터 기반 워크플로우 {#metadata-driven-workflows}
+## 메타데이터 기반의 워크플로우 {#metadata-driven-workflows}
 
 메타데이터 기반의 워크플로우를 만들면 일부 프로세스를 자동화할 수 있으므로 효율성이 향상됩니다. 메타데이터 기반 워크플로우에서 워크플로우 관리 시스템은 워크플로우를 읽고 그 결과 일부 사전 정의된 작업을 수행합니다. 예를 들어 메타데이터 기반 워크플로우를 사용할 수 있는 몇 가지 방법은 다음과 같습니다.
 
