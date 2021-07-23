@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 워크플로우,표현물
 role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
-source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
+source-git-commit: e7fdddadff41f8b03dc466da531f850d45bcee9d
 workflow-type: tm+mt
-source-wordcount: '2230'
+source-wordcount: '2227'
 ht-degree: 1%
 
 ---
@@ -442,7 +442,7 @@ Maven 플러그인을 사용하여 Eclipse를 설치 및 설정하고 Maven 프�
 
 Experience Manager을 사용하면 워크플로우 내에서 명령줄 도구를 실행하여 자산(예: ImageMagick)을 변환하고 새 렌디션을 자산에 추가할 수 있습니다. Experience Manager 서버를 호스팅하는 디스크에 명령줄 도구를 설치하고 워크플로우에 프로세스 단계를 추가하고 구성합니다. 호출된 프로세스(`CommandLineProcess`)는 특정 MIME 유형에 따라 필터링하고 새 변환을 기준으로 여러 축소판을 만듭니다.
 
-다음 전환은 Experience Manager 자산 내에서 자동으로 실행 및 저장될 수 있습니다.
+다음 전환은 자동으로 실행되고 [!DNL Experience Manager Assets] 내에서 저장할 수 있습니다.
 
 * [ImageMagick](https://www.imagemagick.org/script/index.php) 및 [Ghostscript](https://www.ghostscript.com/)를 사용하여 EPS 및 AI 변환
 * [FFmpeg](https://ffmpeg.org/)를 사용하여 FLV 비디오 코드 변환
