@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 메타데이터
 role: User,Admin
 exl-id: 883bebc6-8bbc-43b1-91e5-9e2bf2470b6e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 2%
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 단순 DCMES(Dublin Core Metadata Element Set)에는 다음 표에 나열된 15개의 메타데이터 요소가 포함되어 있습니다. 각 더블린 코어 요소는 선택 사항이며 반복될 수 있습니다. 미디어 유형별 메타데이터에서처럼 더블린 코어 메타데이터 정보를 추가하거나 삭제할 수 있습니다.
 
-DCMES 외에도 Dublin Core Initiative에서 만든 다른 메타데이터 요소가 있습니다. 자세한 내용은 [Dublin Core Initiative](http://dublincore.org/)를 참조하십시오.
+DCMES 외에도 Dublin Core Initiative에서 만든 다른 메타데이터 요소가 있습니다. 자세한 내용은 [Dublin Core Initiative](https://dublincore.org/)를 참조하십시오.
 
 | 속성 | 설명 |
 |---|---|
