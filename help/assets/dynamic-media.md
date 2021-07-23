@@ -12,10 +12,10 @@ discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 exl-id: f8a3936e-82b5-46c7-9614-b97162e27d6a
 feature: 자산 관리,표현물
 role: Admin,User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 29%
+source-wordcount: '440'
+ht-degree: 30%
 
 ---
 
@@ -25,13 +25,13 @@ ht-degree: 29%
 
 Dynamic Media는 확대/축소, 360도 회전, 비디오를 비롯한 대화형 보기 환경을 제공합니다. Dynamic Media는 Adobe Experience Manager 디지털 자산 관리(Assets) 솔루션의 워크플로우를 고유하게 통합하여 디지털 캠페인 관리 프로세스를 단순화하고 간소화합니다.
 
->[!NOTE]
+<!-- DEAD ARTICLE >[!NOTE]
 >
->커뮤니티 문서는 [Adobe Experience Manager 및 Dynamic Media 작업](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html)에서 사용할 수 있습니다.
+>A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
 
 ## Dynamic Media으로 수행할 수 있는 작업 {#what-you-can-do-with-dynamic-media}
 
-Dynamic Media을 사용하면 자산을 게시하기 전에 자산을 관리할 수 있습니다. 일반적으로 자산으로 작업하는 방법은 [디지털 자산으로 작업](managing-assets-touch-ui.md)에서 자세히 다룹니다. 일반적인 주제에는 자산 업로드, 다운로드, 편집 및 게시가 포함됩니다.속성 보기 및 편집, 자산 검색.
+Dynamic Media을 사용하면 자산을 게시하기 전에 자산을 관리할 수 있습니다. 일반적으로 자산으로 작업하는 방법은 [디지털 자산으로 작업](managing-assets-touch-ui.md)에서 자세히 다룹니다. 일반적인 주제에는 자산 업로드, 다운로드, 편집 및 게시가 포함됩니다. 속성 보기 및 편집, 자산 검색.
 
 Dynamic Media 전용 기능에는 다음이 포함됩니다.
 
