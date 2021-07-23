@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 번역
 role: Architect,Admin
 exl-id: 1b931fef-eed0-4758-993d-cdf8d478fb6f
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1942'
 ht-degree: 6%
 
 ---
@@ -313,4 +313,4 @@ ht-degree: 6%
 
 1. 자산 콘솔로 이동하고 번역된 각 자산에 대한 속성 페이지를 열어 번역된 메타데이터를 확인합니다.
 
-자산에 대한 메타데이터를 효율적으로 번역하는 방법에 대한 팁은 메타데이터를 효율적으로 번역하기 위한 [5단계](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/)를 참조하십시오.
+자산에 대한 메타데이터를 효율적으로 번역하는 방법에 대한 팁은 메타데이터](https://web.archive.org/web/20181217033517/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/)을 효율적으로 변환하는 5단계 중 [5단계에 대해 보관된 이 페이지를 참조하십시오.
