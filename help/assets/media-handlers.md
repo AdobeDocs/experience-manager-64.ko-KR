@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 워크플로우,표현물
 role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
 workflow-type: tm+mt
 source-wordcount: '2230'
 ht-degree: 1%
@@ -37,7 +37,7 @@ Adobe Experience Manager Assets는 자산을 처리하는 기본 워크플로우
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>응용 프로그램/illustrator</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3처리기] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>중요</b> - MP3 파일을 업로드할 때 타사 라이브러리를 사용하여 [처리됩니다](http://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). 라이브러리는 MP3에 VBR(변수 비트율)이 있는 경우 정확하지 않은 근사 길이를 계산합니다. |
+| [!UICONTROL Mp3처리기] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>중요</b> - MP3 파일을 업로드할 때 타사 라이브러리를 사용하여 [처리됩니다](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). 라이브러리는 MP3에 VBR(변수 비트율)이 있는 경우 정확하지 않은 근사 길이를 계산합니다. |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | 이미지/그림 |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>application/photoshop </li> <li>이미지/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
@@ -64,7 +64,7 @@ Adobe Experience Manager Assets는 자산을 처리하는 기본 워크플로우
 
 미디어 핸들러는 워크플로우와 함께 사용되는 서비스입니다.
 
-Experience Manager에는 자산을 처리하는 몇 가지 기본 워크플로우가 있습니다. 이를 보려면 워크플로우 콘솔을 열고 **[!UICONTROL 모델]** 탭을 클릭합니다.Experience Manager 자산으로 시작하는 워크플로우 제목은 자산별로 다릅니다.
+Experience Manager에는 자산을 처리하는 몇 가지 기본 워크플로우가 있습니다. 이를 보려면 워크플로우 콘솔을 열고 **[!UICONTROL 모델]** 탭을 클릭합니다. Experience Manager 자산으로 시작하는 워크플로우 제목은 자산별로 다릅니다.
 
 기존 워크플로우를 확장하고 특정 요구 사항에 따라 자산을 처리할 새 워크플로우를 만들 수 있습니다.
 
@@ -78,7 +78,7 @@ Apache Felix 웹 관리 콘솔을 통해 미디어 핸들러를 비활성화하�
 
 1. 브라우저에서 `https://<host>:<port>/system/console/components`(으)로 이동합니다.
 1. 미디어 처리기의 이름 옆에 있는 **[!UICONTROL 비활성화]**&#x200B;를 클릭합니다. 예: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
-1. 페이지를 새로 고칩니다.미디어 핸들러 옆에 비활성화되었음을 나타내는 아이콘이 표시됩니다.
+1. 페이지를 새로 고칩니다. 미디어 핸들러 옆에 비활성화되었음을 나타내는 아이콘이 표시됩니다.
 1. 미디어 핸들러를 활성화하려면 미디어 핸들러의 이름 옆에 있는 **[!UICONTROL 활성화]**&#x200B;를 클릭하십시오.
 
 ### 미디어 핸들러 만들기 {#creating-a-new-media-handler}
@@ -87,15 +87,15 @@ Apache Felix 웹 관리 콘솔을 통해 미디어 핸들러를 비활성화하�
 
 #### 중요 클래스 및 인터페이스 {#important-classes-and-interfaces}
 
-구현을 시작하는 가장 좋은 방법은 대부분의 작업을 처리하고 적절한 기본 동작을 제공하는 제공된 요약 구현에서 상속하는 것입니다.`com.day.cq.dam.core.AbstractAssetHandler` 클래스
+구현을 시작하는 가장 좋은 방법은 대부분의 작업을 처리하고 적절한 기본 동작을 제공하는 제공된 요약 구현에서 상속하는 것입니다. `com.day.cq.dam.core.AbstractAssetHandler` 클래스
 
 이 클래스는 이미 추상 서비스 설명자를 제공합니다. 따라서 이 클래스에서 상속하고 maven-sling-plugin을 사용하는 경우 inherit 플래그를 `true`으로 설정해야 합니다.
 
 다음 방법을 구현합니다.
 
-* `extractMetadata()`:사용 가능한 모든 메타데이터를 추출합니다.
-* `getThumbnailImage()`:전달된 자산에서 축소판 이미지를 만듭니다.
-* `getMimeTypes()`:자산 MIME 유형을 반환합니다.
+* `extractMetadata()`: 사용 가능한 모든 메타데이터를 추출합니다.
+* `getThumbnailImage()`: 전달된 자산에서 축소판 이미지를 만듭니다.
+* `getMimeTypes()`: 자산 MIME 유형을 반환합니다.
 
 다음은 템플릿입니다.
 
@@ -103,30 +103,30 @@ Apache Felix 웹 관리 콘솔을 통해 미디어 핸들러를 비활성화하�
 
 인터페이스와 클래스는 다음과 같습니다.
 
-* `com.day.cq.dam.api.handler.AssetHandler` 인터페이스:이 인터페이스는 특정 MIME 유형에 대한 지원을 추가하는 서비스에 대해 설명합니다. 이 인터페이스를 구현하려면 MIME 유형을 추가해야 합니다. 인터페이스에는 미리 보기를 만들고 메타데이터를 추출하기 위해 특정 문서를 가져오고 내보내는 방법이 포함되어 있습니다.
-* `com.day.cq.dam.core.AbstractAssetHandler` 클래스:이 클래스는 다른 모든 자산 처리기 구현의 기본 역할을 하며 일반적인 사용 기능을 제공합니다.
+* `com.day.cq.dam.api.handler.AssetHandler` 인터페이스: 이 인터페이스는 특정 MIME 유형에 대한 지원을 추가하는 서비스에 대해 설명합니다. 이 인터페이스를 구현하려면 MIME 유형을 추가해야 합니다. 인터페이스에는 미리 보기를 만들고 메타데이터를 추출하기 위해 특정 문서를 가져오고 내보내는 방법이 포함되어 있습니다.
+* `com.day.cq.dam.core.AbstractAssetHandler` 클래스: 이 클래스는 다른 모든 자산 처리기 구현의 기본 역할을 하며 일반적인 사용 기능을 제공합니다.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` 클래스:
    * 이 클래스는 다른 모든 자산 처리기 구현의 기본 역할을 하며, 일반적인 사용 기능과 하위 자산 추출에 사용되는 일반적인 기능을 제공합니다.
-   * 구현을 시작하는 가장 좋은 방법은 대부분의 작업을 처리하고 적절한 기본 동작을 제공하는 제공된 요약 구현에서 상속하는 것입니다.com.day.cq.dam.core.AbstractAssetHandler 클래스
+   * 구현을 시작하는 가장 좋은 방법은 대부분의 작업을 처리하고 적절한 기본 동작을 제공하는 제공된 요약 구현에서 상속하는 것입니다. com.day.cq.dam.core.AbstractAssetHandler 클래스
    * 이 클래스는 이미 추상 서비스 설명자를 제공합니다. 따라서 이 클래스에서 상속하고 maven-sling-plugin을 사용하는 경우 inherit 플래그를 true로 설정해야 합니다.
 
 다음 방법을 구현해야 합니다.
 
-* `extractMetadata()`:이 메서드는 사용 가능한 모든 메타데이터를 추출합니다.
-* `getThumbnailImage()`:이 메서드는 전달된 자산에서 축소판 이미지를 만듭니다.
-* `getMimeTypes()`:이 메서드는 자산 MIME 유형을 반환합니다.
+* `extractMetadata()`: 이 메서드는 사용 가능한 모든 메타데이터를 추출합니다.
+* `getThumbnailImage()`: 이 메서드는 전달된 자산에서 축소판 이미지를 만듭니다.
+* `getMimeTypes()`: 이 메서드는 자산 MIME 유형을 반환합니다.
 
 다음은 템플릿입니다.
 
-my.own.stuff 패키지/&amp;ast;&amp;ast;amp;ast;@scr.component inherit=&quot;true&quot; &amp;ast;@scr.service &amp;ast;/ 공용 클래스 MyMediaHandler가 com.day.cq.dam.core.AbstractAssetHandler { // 관련 부품을 구현합니다. }
+my.own.stuff 패키지 /&amp;ast;&amp;ast; amp;ast; @scr.component inherit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ 공용 클래스 MyMediaHandler가 com.day.cq.dam.core.AbstractAssetHandler { // 관련 부품을 구현합니다. }
 
 인터페이스와 클래스는 다음과 같습니다.
 
-* `com.day.cq.dam.api.handler.AssetHandler` 인터페이스:이 인터페이스는 특정 MIME 유형에 대한 지원을 추가하는 서비스에 대해 설명합니다. 이 인터페이스를 구현하려면 MIME 유형을 추가해야 합니다. 인터페이스에는 미리 보기를 만들고 메타데이터를 추출하기 위해 특정 문서를 가져오고 내보내는 방법이 포함되어 있습니다.
-* `com.day.cq.dam.core.AbstractAssetHandler` 클래스:이 클래스는 다른 모든 자산 처리기 구현의 기본 역할을 하며 일반적인 사용 기능을 제공합니다.
-* `com.day.cq.dam.core.AbstractSubAssetHandler` 클래스:이 클래스는 다른 모든 자산 처리기 구현의 기본 역할을 하며, 일반적인 사용 기능과 하위 자산 추출에 사용되는 일반적인 기능을 제공합니다.
+* `com.day.cq.dam.api.handler.AssetHandler` 인터페이스: 이 인터페이스는 특정 MIME 유형에 대한 지원을 추가하는 서비스에 대해 설명합니다. 이 인터페이스를 구현하려면 MIME 유형을 추가해야 합니다. 인터페이스에는 미리 보기를 만들고 메타데이터를 추출하기 위해 특정 문서를 가져오고 내보내는 방법이 포함되어 있습니다.
+* `com.day.cq.dam.core.AbstractAssetHandler` 클래스: 이 클래스는 다른 모든 자산 처리기 구현의 기본 역할을 하며 일반적인 사용 기능을 제공합니다.
+* `com.day.cq.dam.core.AbstractSubAssetHandler` 클래스: 이 클래스는 다른 모든 자산 처리기 구현의 기본 역할을 하며, 일반적인 사용 기능과 하위 자산 추출에 사용되는 일반적인 기능을 제공합니다.
 
-#### 예:특정 텍스트 처리기 만들기 {#example-create-a-specific-text-handler}
+#### 예: 특정 텍스트 처리기 만들기 {#example-create-a-specific-text-handler}
 
 이 섹션에서는 워터마크로 축소판을 생성하는 특정 텍스트 핸들러를 만듭니다.
 
@@ -143,10 +143,10 @@ Maven 플러그인을 사용하여 Eclipse를 설치 및 설정하고 Maven 프�
    1. **[!UICONTROL 간단한 프로젝트 만들기]** 상자 및 **[!UICONTROL 기본 작업 공간 위치 사용]** 상자를 선택한 다음 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
    1. 다음 값으로 Maven 프로젝트를 정의합니다.
 
-      * 그룹 Id:com.day.cq5.myhandler
-      * 아티팩트 Id:myBundle
-      * 이름:내 Experience Manager 번들
-      * 설명:이것은 내 Experience Manager 번들입니다
+      * 그룹 Id: com.day.cq5.myhandler
+      * 아티팩트 Id: myBundle
+      * 이름: 내 Experience Manager 번들
+      * 설명: 이것은 내 Experience Manager 번들입니다
    1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
 
@@ -446,8 +446,8 @@ Experience Manager을 사용하면 워크플로우 내에서 명령줄 도구를
 
 * [ImageMagick](https://www.imagemagick.org/script/index.php) 및 [Ghostscript](https://www.ghostscript.com/)를 사용하여 EPS 및 AI 변환
 * [FFmpeg](https://ffmpeg.org/)를 사용하여 FLV 비디오 코드 변환
-* [FRAME](http://lame.sourceforge.net/)을 사용한 MP3 인코딩
-* [SOX](http://sox.sourceforge.net/)를 사용한 오디오 처리
+* [FRAME](https://lame.sourceforge.net/)을 사용한 MP3 인코딩
+* [SOX](https://sox.sourceforge.net/)를 사용한 오디오 처리
 
 >[!NOTE]
 >
@@ -507,13 +507,13 @@ Experience Manager을 사용하면 워크플로우 내에서 명령줄 도구를
 |---|---|
 | mime:&lt;mime-type> | 선택적 인수입니다. 자산에 인수 중 하나와 동일한 MIME 유형이 있는 경우 프로세스가 적용됩니다. <br>여러 MIME 유형을 정의할 수 있습니다. |
 | tn:&lt;width>:&lt;높이> | 선택적 인수입니다. 이 프로세스에서는 인수에 정의된 차원으로 축소판을 만듭니다. <br>여러 축소판을 정의할 수 있습니다. |
-| cmd:&lt;명령> | 실행할 명령을 정의합니다. 구문은 명령줄 도구에 따라 다릅니다. 하나의 명령만 정의할 수 있습니다. <br>다음 변수를 사용하여 명령을 만들 수 있습니다.<br>`${filename}`입력 파일의 이름(예: original.jpg)  <br> `${file}`:입력 파일의 전체 경로 이름(예: /tmp/cqdam0816.tmp/original.jpg)  <br> `${directory}`:입력 파일의 디렉토리(예: /tmp/cqdam0816.tmp  <br>`${basename}`:확장명이 없는 입력 파일의 이름(예: 원본  <br>`${extension}`):입력 파일의 확장(예: jpg) |
+| cmd: &lt;명령> | 실행할 명령을 정의합니다. 구문은 명령줄 도구에 따라 다릅니다. 하나의 명령만 정의할 수 있습니다. <br>다음 변수를 사용하여 명령을 만들 수 있습니다.<br>`${filename}` 입력 파일의 이름(예: original.jpg)  <br> `${file}`: 입력 파일의 전체 경로 이름(예: /tmp/cqdam0816.tmp/original.jpg)  <br> `${directory}`: 입력 파일의 디렉토리(예: /tmp/cqdam0816.tmp  <br>`${basename}`: 확장명이 없는 입력 파일의 이름(예: 원본  <br>`${extension}`): 입력 파일의 확장(예: jpg) |
 
 예를 들어 ImageMagick가 Experience Manager 서버를 호스팅하는 디스크에 설치되어 있고 **CommandLineProcess**&#x200B;를 구현으로 사용하고 다음 값을 **Process Arguments**&#x200B;로 사용하는 프로세스 단계를 만드는 경우:
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-그런 다음 워크플로우가 실행되면 이 단계는 `image/gif` 또는 `mime:image/tiff` 가 mime 유형으로 있는 자산에만 적용됩니다. 원본 이미지의 뒤집힌 이미지를 만들고 .jpg로 변환한 다음 크기가 있는 세 개의 축소판을 만듭니다.140x100, 48x48 및 10x250
+그런 다음 워크플로우가 실행되면 이 단계는 `image/gif` 또는 `mime:image/tiff` 가 mime 유형으로 있는 자산에만 적용됩니다. 원본 이미지의 뒤집힌 이미지를 만들고 .jpg로 변환한 다음 크기가 있는 세 개의 축소판을 만듭니다. 140x100, 48x48 및 10x250
 
 ImageMagick를 사용하여 세 개의 표준 축소판 그림을 만들려면 다음 [!UICONTROL 인수 처리]를 사용하십시오.
 
