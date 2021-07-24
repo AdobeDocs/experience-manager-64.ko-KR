@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 자산 관리
 role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 4048c4c76a892e3bb32dbbeef140b5dc9ebffad3
 workflow-type: tm+mt
 source-wordcount: '1766'
 ht-degree: 0%
@@ -37,7 +37,7 @@ AEM(Adobe Experience Manager) 자산 관점에서 모니터링에는 다음 프�
 * [상위](https://man7.org/linux/man-pages/man1/top.1.html): Top은 CPU, 메모리 및 IO 사용을 포함한 사용 통계를 표시하는 대시보드를 여는 Linux 명령입니다. 인스턴스에서 발생하는 상황에 대한 높은 수준의 개요를 제공합니다.
 * [상단](https://hisham.hm/htop/): 상단 은 대화형 프로세스 뷰어입니다. Top이 제공할 수 있는 기능 외에도 자세한 CPU 및 메모리 사용을 제공합니다. Top은 `yum install htop` 또는 `apt-get install htop`을 사용하여 대부분의 Linux 시스템에 설치할 수 있습니다.
 
-* [Iotop](http://guichaz.free.fr/iotop/): Iotop은 디스크 입출력 사용을 위한 세부 대시보드입니다. 여기에는 디스크 입출력(I/O)을 사용하는 프로세스와 사용 양을 나타내는 바와 미터(M)가 표시됩니다. Iotop은 `yum install iotop` 또는 `apt-get install iotop`을 사용하여 대부분의 Linux 시스템에 설치할 수 있습니다.
+* [Iotop](https://guichaz.free.fr/iotop/): Iotop은 디스크 입출력 사용을 위한 세부 대시보드입니다. 여기에는 디스크 입출력(I/O)을 사용하는 프로세스와 사용 양을 나타내는 바와 미터(M)가 표시됩니다. Iotop은 `yum install iotop` 또는 `apt-get install iotop`을 사용하여 대부분의 Linux 시스템에 설치할 수 있습니다.
 
 * [Iftop](https://www.ex-parrot.com/pdw/iftop/): Iftop은 이더넷/네트워크 사용에 대한 자세한 정보를 표시합니다. 이더넷을 사용하는 엔터티의 통신 채널 통계당 정보를 표시하는 경우 및 사용하는 대역폭의 양이 표시됩니다. Iftop은 `yum install iftop` 또는 `apt-get install iftop`을 사용하여 대부분의 Linux 시스템에 설치할 수 있습니다.
 
