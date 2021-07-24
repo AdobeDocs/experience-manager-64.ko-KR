@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 워크플로우,표현물
 role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
-source-git-commit: e7fdddadff41f8b03dc466da531f850d45bcee9d
+source-git-commit: bc27dee618ee57dc188c7f35a1af4d1dba80cf1b
 workflow-type: tm+mt
 source-wordcount: '2227'
 ht-degree: 1%
@@ -446,8 +446,8 @@ Experience Manager을 사용하면 워크플로우 내에서 명령줄 도구를
 
 * [ImageMagick](https://www.imagemagick.org/script/index.php) 및 [Ghostscript](https://www.ghostscript.com/)를 사용하여 EPS 및 AI 변환
 * [FFmpeg](https://ffmpeg.org/)를 사용하여 FLV 비디오 코드 변환
-* [FRAME](https://lame.sourceforge.net/)을 사용한 MP3 인코딩
-* [SOX](https://sox.sourceforge.net/)를 사용한 오디오 처리
+* [FRAME](https://lame.sourceforge.io)을 사용한 MP3 인코딩
+* [SOX](https://sox.sourceforge.io)를 사용한 오디오 처리
 
 >[!NOTE]
 >
