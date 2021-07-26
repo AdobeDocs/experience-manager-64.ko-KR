@@ -10,7 +10,7 @@ discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 exl-id: 1e122f97-ac37-44f5-a1cd-bf53ffda6f5b
 feature: 구성,하이브리드 모드
 role: Admin,User,Developer
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 9bd173e99c2bbedc77afb11b4c1eac423c62ef30
 workflow-type: tm+mt
 source-wordcount: '7796'
 ht-degree: 2%
@@ -171,9 +171,9 @@ dynamic media를 활성화하려면 명령줄에서 또는 빠른 시작 파일 
    >
    >* ImageServer-&lt;PortId>-&lt;yyyy>&lt;mm>&lt;dd>.log - ImageServer 로그는 내부 ImageServer 프로세스의 동작을 분석하는 데 사용되는 통계 및 분석 정보를 제공합니다.
 
-      이미지 서버 로그 파일 이름의 예:`ImageServer-57346-2019-07-25.log`
+      이미지 서버 로그 파일 이름의 예: `ImageServer-57346-2019-07-25.log`
    * s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - s7access 로그는 `/is/image` 및 `/is/content`을 통해 Dynamic Media에 대한 각 요청을 기록합니다.
-   이러한 로그는 Dynamic Media이 활성화된 경우에만 사용됩니다. **[!UICONTROL system/console/status-Bundelist]** 페이지에서 생성된 **Download Full** 패키지에 포함되지 않습니다.Dynamic Media 문제가 있는 경우 고객 지원 센터에 문의할 때 이러한 로그를 모두 문제에 추가하십시오.
+   이러한 로그는 Dynamic Media이 활성화된 경우에만 사용됩니다. **[!UICONTROL system/console/status-Bundelist]** 페이지에서 생성된 **Download Full** 패키지에 포함되지 않습니다. Dynamic Media 문제가 있는 경우 고객 지원 센터에 문의할 때 이러한 로그를 모두 문제에 추가하십시오.
 
 ### 다른 포트 또는 컨텍스트 경로에 AEM을 설치한 경우.. {#if-you-installed-aem-to-a-different-port-or-context-path}
 
@@ -219,7 +219,7 @@ Dynamic Media를 활성화한 후 비활성화하려면 **[!UICONTROL -r dynamic
 
 AEM Dynamic Media을 6.3에서 6.4로 업그레이드하는 경우 - 이제 가동 중지 시간(&quot;옵트인&quot;이라고도 함) 제거에 대한 기능이 포함됨) CRXDE Lite에서 모든 사전 설정 및 구성을 `/etc`에서 `/conf`(으)로 마이그레이션하려면 다음 curl 명령을 실행해야 합니다.
 
-**참고**:호환성 모드에서 AEM 인스턴스를 실행하는 경우 호환 패키지 가 설치되어 있습니다. 이 명령을 실행할 필요가 없습니다.
+**참고**: 호환성 모드에서 AEM 인스턴스를 실행하는 경우 호환 패키지 가 설치되어 있습니다. 이 명령을 실행할 필요가 없습니다.
 
 사용자 지정 사전 설정 및 구성을 `/etc`에서 `/conf`(으)로 마이그레이션하려면 다음 Linux curl 명령을 실행하십시오.
 
@@ -273,7 +273,7 @@ Dynamic Media 이미지 제공 서비스에 이미지를 복제하려면 작성�
 
 1. **[!UICONTROL Edit User Settings For dynamic-media-replication]** 페이지에서 **[!UICONTROL Add Private Key from KeyStore file]** 영역을 확장하고 다음을 추가합니다(다음 이미지 참조).
 
-   * **[!UICONTROL 새 별칭]** 필드에 나중에 복제 구성에서 사용할 별칭의 이름을 입력합니다.예: **replication**
+   * **[!UICONTROL 새 별칭]** 필드에 나중에 복제 구성에서 사용할 별칭의 이름을 입력합니다. 예: **replication**
    * **[!UICONTROL KeyStore 파일]**&#x200B;을 누릅니다. Adobe이 제공한 KeyStore 파일로 이동하여 선택한 다음 **[!UICONTROL 열기]**&#x200B;를 누릅니다.
    * **[!UICONTROL KeyStore 파일 암호]** 필드에 KeyStore 파일 암호를 입력합니다. 이 암호는 _5단계에서 만든 KeyStore 암호가 아니라 KeyStore 파일 암호 Adobe에서 제공하는 프로비저닝 중 받은 Welcome 전자 메일에 있습니다._ KeyStore 파일 암호를 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
    * **[!UICONTROL 개인 키 암호]** 필드에 개인 키 암호를 입력합니다(이전 단계에서 제공한 개인 키 암호와 같을 수 있음). Adobe은 프로비전 중에 사용자에게 보낸 시작 전자 메일에 있는 개인 키 암호를 제공합니다. 개인 키 암호를 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
@@ -293,9 +293,9 @@ Dynamic Media 이미지 제공 서비스에 이미지를 복제하려면 작성�
 1. **[!UICONTROL 설정]** 탭을 탭한 다음, 다음을 입력합니다.
 
    * **[!UICONTROL 활성화됨]**  - 복제 에이전트를 활성화하려면 이 확인란을 선택합니다.
-   * **[!UICONTROL 지역]**  - 해당 지역으로 설정합니다.북미, 유럽 또는 아시아
+   * **[!UICONTROL 지역]**  - 해당 지역으로 설정합니다. 북미, 유럽 또는 아시아
    * **[!UICONTROL 테넌트 ID]**  - 이 값은 복제 서비스에 게시되는 회사/테넌트의 이름입니다. 이 값은 Adobe이 프로비전 중에 사용자에게 보낸 환영 이메일에서 제공하는 테넌트 ID입니다. 수신하지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
-   * **[!UICONTROL 키 저장소 별칭]**  - 이 값은 인증 설정에서 키를 생성할 때 ** 새 별칭** 값  [세트와 동일합니다](#setting-up-authentication).예,  `replication`. ([인증 설정](#setting-up-authentication)의 7단계를 참조하십시오.)
+   * **[!UICONTROL 키 저장소 별칭]**  - 이 값은 인증 설정에서 키를 생성할 때 ** 새 별칭** 값  [세트와 동일합니다](#setting-up-authentication). 예,  `replication`. ([인증 설정](#setting-up-authentication)의 7단계를 참조하십시오.)
    * **[!UICONTROL 키 저장소 암호]**  - KeyStore  **[!UICONTROL 만들기]**&#x200B;를 탭했을 때 만든 KeyStore 암호입니다. Adobe이 이 암호를 제공하지 않습니다. [인증 설정](#setting-up-authentication)의 5단계를 참조하십시오.
 
    다음 이미지는 샘플 데이터가 있는 복제 에이전트를 보여줍니다.
@@ -334,7 +334,7 @@ Replication test succeeded
 
 인증을 설정할 때 솔루션 사용 시 발생할 수 있는 몇 가지 문제가 있습니다. 이러한 내용을 확인하기 전에 복제를 설정했는지 확인합니다.
 
-#### 문제:메시지가 있는 HTTP 상태 코드 401 - 권한 부여 필요 {#problem-http-status-code-with-message-authorization-required}
+#### 문제: 메시지가 있는 HTTP 상태 코드 401 - 권한 부여 필요 {#problem-http-status-code-with-message-authorization-required}
 
 이 문제는 `dynamic-media-replication` 사용자에 대해 KeyStore를 설정하지 못해서 발생할 수 있습니다.
 
@@ -357,9 +357,9 @@ Replication test to s7delivery:https://s7bern.macromedia.com:8580/is-publish/
  Server returned status code 401 with message: Authorization required.
 ```
 
-**솔루션**:이  `KeyStore` (가)  **[!UICONTROL dynamic-media-replicationuser]** 에 저장되고 올바른 암호가 제공되는지 확인합니다.
+**솔루션**: 이  `KeyStore` (가)  **[!UICONTROL dynamic-media-replicationuser]** 에 저장되고 올바른 암호가 제공되는지 확인합니다.
 
-#### 문제:키 암호를 해독할 수 없습니다. 데이터 암호를 해독할 수 없습니다. {#problem-could-not-decrypt-key-could-not-decrypt-data}
+#### 문제: 키 암호를 해독할 수 없습니다. 데이터 암호를 해독할 수 없습니다. {#problem-could-not-decrypt-key-could-not-decrypt-data}
 
 ```xml
 Replication test to s7delivery:https://<localhost>:8580/is-publish/
@@ -373,9 +373,9 @@ Replication test to s7delivery:https://<localhost>:8580/is-publish/
 17.06.2016 19:00:16 - Transfer failed for ReplicationAction{type=TEST, path[0]='/content/dam', time=1466215216662, userId='admin', revision='null'}. java.lang.SecurityException: java.security.UnrecoverableKeyException: Could not decrypt key: Could not decrypt data.
 ```
 
-**솔루션**:암호를 확인합니다. 복제 에이전트에 저장된 암호가 키 저장소를 만드는 데 사용된 암호와 다릅니다.
+**솔루션**: 암호를 확인합니다. 복제 에이전트에 저장된 암호가 키 저장소를 만드는 데 사용된 암호와 다릅니다.
 
-#### 문제:InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
+#### 문제: InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
 
 이 문제는 AEM 작성자 인스턴스의 구성 오류로 인해 발생합니다. 작성자의 Java 프로세스가 올바른 `javax.net.ssl.trustStore`을(를) 얻지 못했습니다. 복제 로그에 다음 오류가 표시됩니다.
 
@@ -393,9 +393,9 @@ java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe
         at com.scene7.is.catalog.service.publish.atomic.PublishingServiceHttp.executePost(PublishingServiceHttp.scala:195)
 ```
 
-**솔루션**:AEM 작성자의 Java 프로세스에 시스템 속성  **-Djavax.net.ssl.trustStore=** 가 유효한 truststore로 설정되어 있는지 확인합니다.
+**솔루션**: AEM 작성자의 Java 프로세스에 시스템 속성  **-Djavax.net.ssl.trustStore=** 가 유효한 truststore로 설정되어 있는지 확인합니다.
 
-#### 문제:KeyStore가 설정되지 않았거나 초기화되지 않았습니다. {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
+#### 문제: KeyStore가 설정되지 않았거나 초기화되지 않았습니다. {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
 
 이 문제는 핫픽스 또는 기능 팩이 **[!UICONTROL dynamic-media-user]** 또는 **[!UICONTROL keystore]** 노드를 덮어쓰는 경우에 발생할 수 있습니다.
 
@@ -426,7 +426,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
 1. **[!UICONTROL 연결 테스트]**&#x200B;를 눌러 구성이 올바른지 확인합니다.
 
-#### 문제:게시 에이전트가 OAuth 대신 SSL을 사용하고 있습니다 {#problem-publish-agent-is-using-ssl-instead-of-oauth}
+#### 문제: 게시 에이전트가 OAuth 대신 SSL을 사용하고 있습니다 {#problem-publish-agent-is-using-ssl-instead-of-oauth}
 
 이 문제는 핫픽스 또는 기능 팩이 올바르게 설치되지 않거나 설정이 오버라이드된 경우에 발생할 수 있습니다.
 
@@ -527,7 +527,7 @@ Dynamic Media - 하이브리드 모드를 사용하여 AEM의 여러 설치에�
 1. **[!UICONTROL 패키지 관리자]**&#x200B;를 사용하여 패키지를 만듭니다.
 1. 필터를 포함하도록 패키지를 편집합니다.
 
-   AEM에서:`/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
+   AEM에서: `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
 1. 패키지를 빌드합니다.
 1. 후속 새 작성자 노드와 공유할 수 있도록 [!DNL Video Analytics] 사전 설정 패키지를 다운로드하거나 공유합니다.
@@ -638,7 +638,7 @@ Dynamic Media이 아닌 배포에서는 AEM 작성 환경에서 _모든_ 자산(
 
 자산을 복제할 뿐만 아니라 다음 비자산도 복제됩니다.
 
-* Dynamic Media 전달 구성:`/conf/global/settings/dam/dm/imageserver/configuration/jcr:content/settings`
+* Dynamic Media 전달 구성: `/conf/global/settings/dam/dm/imageserver/configuration/jcr:content/settings`
 * 이미지 사전 설정: `/conf/global/settings/dam/dm/presets/macros`
 * 뷰어 사전 설정: `/conf/global/settings/dam/dm/presets/viewer`
 
@@ -801,7 +801,7 @@ Dynamic Media 이미지 서버 구성에 Adobe CQ Scene7 ImageServer 번들과 A
 >[!NOTE]
 Dynamic Media은 [이 활성화되면 즉시 사용할 수 있습니다](#enabling-dynamic-media). 그러나 특정 사양 또는 요구 사항을 충족하도록 Dynamic Media Image Server를 구성하여 설치를 세밀하게 조정할 수도 있습니다.
 
-**전제 조건**: __ Dynamic Media 이미지 서버를 구성하기 전에 Windows VM에 Microsoft Visual C++ 라이브러리 설치가 포함되어 있는지 확인하십시오. 라이브러리는 Dynamic Media 이미지 서버를 실행하는 데 필요합니다. [여기에서 Microsoft Visual C++ 2010 재배포 가능 패키지(x64)를 다운로드할 수 있습니다](https://www.microsoft.com/en-us/download/details.aspx?id=14632).
+**전제 조건**:  __ Dynamic Media 이미지 서버를 구성하기 전에 Windows VM에 Microsoft Visual C++ 라이브러리 설치가 포함되어 있는지 확인하십시오. 라이브러리는 Dynamic Media 이미지 서버를 실행하는 데 필요합니다. [여기에서 Microsoft Visual C++ 2010 재배포 가능 패키지(x64)를 다운로드할 수 있습니다](https://www.microsoft.com/en-us/download/details.aspx?id=26999).
 
 **Dynamic Media 이미지 서버 설정을 구성하려면**:
 
@@ -1059,7 +1059,7 @@ Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 12445을 설치
       <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html">icrenderintent</a></td> 
       <td>문자열</td> 
       <td>상대적</td> 
-      <td><p>렌더링 의도를 지정합니다. 허용되는 값은 다음과 같습니다.<strong>지각, 상대, 채도, 절대. </strong><i></i>Adobe은  <strong>기본적으로 상대 </strong><i></i>를 권장합니다.</p> </td> 
+      <td><p>렌더링 의도를 지정합니다. 허용되는 값은 다음과 같습니다. <strong>지각, 상대, 채도, 절대. </strong><i></i>Adobe은  <strong>기본적으로 상대 </strong><i></i>를 권장합니다.</p> </td> 
       </tr> 
     </tbody> 
     </table>
