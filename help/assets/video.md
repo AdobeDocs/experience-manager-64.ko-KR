@@ -71,7 +71,7 @@ ht-degree: 1%
 
          [비디오 표현물 보기](video-renditions.md)
 
-[비디오 표현물 관리](managing-assets-touch-ui.md#managing-renditions)
+         [비디오 표현물 관리](managing-assets-touch-ui.md#managing-renditions)
 
       * [뷰어 사전 설정 관리](managing-viewer-presets.md)
       * [자산 게시](publishing-dynamicmedia-assets.md)
@@ -83,7 +83,7 @@ ht-degree: 1%
 
       * 제목, 설명 및 태그, 사용자 지정 메타데이터 필드와 같은 비디오의 속성을 편집합니다.
 
-[비디오 속성 편집](managing-assets-touch-ui.md#editing-properties)
+         [비디오 속성 편집](managing-assets-touch-ui.md#editing-properties)
 
       * [디지털 자산에 대한 메타데이터 관리](metadata.md)
       * [메타데이터 스키마](metadata-schemas.md)
