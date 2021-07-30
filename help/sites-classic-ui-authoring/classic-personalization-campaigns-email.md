@@ -10,7 +10,7 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: eb72f934-4b0f-4a71-b2a2-3ddf78db8c3c
 exl-id: 5e97f7bd-d668-423d-9f65-7dcc8fb1943a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '1771'
 ht-degree: 94%
@@ -189,8 +189,6 @@ Newsletter 설정을 사용자 지정하는 방법은 다음과 같습니다.
 
    ![mcm_newsletter_settings](assets/mcm_newsletter_settings.png)
 
-1. 
-
    1. **보낸 사람** 이메일 주소를 입력합니다.
    1. 필요한 경우 이메일의 **제목**&#x200B;을 수정합니다.
    1. 드롭다운 목록에서 **기본 수신자 목록**&#x200B;을 선택합니다.
@@ -236,7 +234,7 @@ Newsletter 설정을 사용자 지정하는 방법은 다음과 같습니다.
 >
 >뉴스레터를 게시 인스턴스에 먼저 게시하지 않았거나 게시 인스턴스를 사용할 수 없는 경우에 이메일 공급자를 업데이트하거나, 플라이트 테스트를 수행하거나, 뉴스레터를 전송하는 경우 이러한 작업이 실패합니다. 뉴스레터를 게시하고 게시 인스턴스가 작동되어 실행 중인지 확인하십시오.
 
-### 캠페인에서 뉴스레터 보내기  {#sending-newsletters-from-a-campaign}
+### 캠페인에서 뉴스레터 보내기 {#sending-newsletters-from-a-campaign}
 
 캠페인 내에서 뉴스레터를 발송하는 방법은 다음과 같습니다.
 
@@ -262,7 +260,7 @@ Newsletter 설정을 사용자 지정하는 방법은 다음과 같습니다.
    >
    >Newsletter가 정상적으로 수신되었는지 확인할 수 있도록 수신자에 자신을 포함하십시오.
 
-### 목록에서 Newsletter 보내기  {#sending-newsletters-from-a-list}
+### 목록에서 Newsletter 보내기 {#sending-newsletters-from-a-list}
 
 목록에서 뉴스레터를 발송하는 방법은 다음과 같습니다.
 
@@ -292,7 +290,7 @@ Newsletter 설정을 사용자 지정하는 방법은 다음과 같습니다.
 
 이 섹션에서는 뉴스레터에 가입하는 방법을 설명합니다.
 
-### 뉴스레터 가입  {#subscribing-to-a-newsletter-1}
+### 뉴스레터 가입 {#subscribing-to-a-newsletter-1}
 
 Newsletter에 가입하는 방법은 다음과 같습니다. Geometrixx 웹 사이트를 예로 들겠습니다.
 
