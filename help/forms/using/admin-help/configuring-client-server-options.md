@@ -11,14 +11,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 feature: 문서 보안
 exl-id: 571c1391-dc60-4bed-b4f9-482a508e4bd4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '10283'
 ht-degree: 0%
 
 ---
 
-# 문서 보안 서버 {#configure-the-document-security-server} 구성
+# 문서 보안 서버 구성 {#configure-the-document-security-server}
 
 1. 관리 콘솔에서 서비스 > 문서 보안 > 구성 > 서버 구성을 클릭합니다.
 1. 설정을 구성하고 확인 을 클릭합니다.
@@ -57,16 +57,16 @@ IPv6를 사용하는 경우 컴퓨터 이름 또는 DNS 이름으로 기본 URL�
 
 이 옵션을 선택하면 클라이언트 응용 프로그램에서 확장 인증을 사용할 수 있습니다. 확장된 인증은 사용자 지정된 인증 프로세스 및 AEM Forms 서버에 구성된 다양한 인증 옵션을 제공합니다. 예를 들어 사용자는 이제 Acrobat 및 Reader 클라이언트에서 AEM Forms 사용자 이름/암호 대신 SAML 기반 인증을 사용할 수 있습니다. 기본적으로 랜딩 URL은 *localhost*&#x200B;을 서버 이름으로 포함합니다. 서버 이름을 정규화된 호스트 이름으로 바꿉니다. 확장 인증이 아직 활성화되지 않은 경우 랜딩 URL의 호스트 이름이 기본 URL에서 자동으로 채워집니다. [확장 인증 공급자 추가](configuring-client-server-options.md#add-the-extended-authentication-provider)를 참조하십시오.
 
-***참고&#x200B;**:Apple Mac OS X에서 Adobe Acrobat 릴리스 11.0.6 이상에서 확장 인증이 지원됩니다.*
+***참고&#x200B;**: Apple Mac OS X에서 Adobe Acrobat 릴리스 11.0.6 이상에서 확장 인증이 지원됩니다.*
 
 **확장 인증에 기본 HTML 컨트롤** 너비사용자 자격 증명을 입력할 수 있도록 Acrobat에서 열리는 확장 인증 대화 상자의 너비를 지정합니다.
 
 **확장 인증에 기본 HTML 제어** 높이사용자 자격 증명을 입력할 수 있도록 Acrobat에서 열리는 확장 인증 대화 상자의 높이를 지정합니다.
 
-***참고&#x200B;**:이 대화 상자의 너비와 높이 제한은 다음과 같습니다.*
-너비:최소값 = 400, 최대값 = 900
+***참고&#x200B;**: 이 대화 상자의 너비와 높이 제한은 다음과 같습니다.*
+너비: 최소값 = 400, 최대값 = 900
 
-높이:최소값 = 450;최대값 = 800
+높이: 최소값 = 450; 최대값 = 800
 
 **클라이언트 자격 증명 캐싱 사용:** 사용자가 자격 증명(사용자 이름 및 암호)을 캐시할 수 있도록 하려면 이 옵션을 선택합니다. 사용자의 자격 증명이 캐시되면 문서를 열 때마다 또는 Adobe Acrobat의 보안 정책 관리 페이지에서 새로 고침 단추를 클릭할 때마다 자격 증명을 입력할 필요가 없습니다. 사용자가 자격 증명을 다시 제공해야 하는 일 수를 지정할 수 있습니다. 일 수를 0으로 설정하면 자격 증명을 무한정 캐시할 수 있습니다.
 
@@ -78,15 +78,15 @@ AEM Forms 환경에는 사용자 및 그룹을 만들 수 있는 적절한 권�
 
 또한 관리자는 관리 콘솔에 액세스하려면 관리 콘솔 사용자 역할이 있어야 합니다. ([역할 만들기 및 구성](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles) 참조)
 
-### 보이는 사용자 및 그룹 구성 {#configuring-visible-users-and-groups}
+### 표시된 사용자 및 그룹 구성 {#configuring-visible-users-and-groups}
 
 정책 사용자 검색 중에 선택한 도메인의 사용자 및 그룹을 보려면 수퍼 관리자 또는 정책 세트 관리자가 각 정책 세트의 표시된 사용자 및 그룹 목록에 도메인(사용자 관리에서 생성)을 선택하고 추가해야 합니다.
 
 표시된 사용자 및 그룹 목록은 정책 세트 코디네이터에 표시되며, 정책에 추가할 사용자 또는 그룹을 선택할 때 최종 사용자가 찾을 수 있는 도메인을 제한하는 데 사용됩니다. 이 작업이 수행되지 않으면 정책 집합 코디네이터는 정책에 추가할 사용자 또는 그룹을 찾지 못합니다. 주어진 정책 세트에 대해 두 개 이상의 정책 설정 코디네이터가 있을 수 있습니다.
 
-1. 문서 보안을 사용하여 AEM Forms 환경을 설치 및 구성한 후 사용자 관리에서 적절한 도메인을 모두 설정합니다.<!-- Fix broken link (See Setting up and managing domains) -->
+1. 문서 보안을 사용하여 AEM Forms 환경을 설치 및 구성한 후 사용자 관리에서 적절한 도메인을 모두 설정합니다. <!-- Fix broken link (See Setting up and managing domains) -->
 
-   ***참고&#x200B;**:정책을 만들려면 먼저 도메인 만들기를 수행해야 합니다.*
+   ***참고&#x200B;**: 정책을 만들려면 먼저 도메인 만들기를 수행해야 합니다.*
 
 1. 관리 콘솔에서 서비스 > 문서 관리 > 정책을 클릭한 다음 정책 세트 탭을 클릭합니다.
 1. 글로벌 정책 세트를 선택한 다음 보이는 사용자 및 그룹 탭을 클릭합니다.
@@ -94,7 +94,7 @@ AEM Forms 환경에는 사용자 및 그룹을 만들 수 있는 적절한 권�
 1. 서비스 > 문서 보안 > 구성 > 내 정책 로 이동하고 표시되는 사용자 및 그룹 탭을 클릭합니다.
 1. 도메인 추가 를 클릭하고 필요에 따라 기존 도메인을 추가합니다.
 
-## 확장 인증 공급자 {#add-the-extended-authentication-provider} 추가
+## 확장 인증 공급자 추가 {#add-the-extended-authentication-provider}
 
 AEM Forms는 환경에 맞게 사용자 지정할 수 있는 샘플 구성을 제공합니다. 다음 단계를 수행합니다.
 
@@ -107,7 +107,7 @@ AEM Forms는 환경에 맞게 사용자 지정할 수 있는 샘플 구성을 �
 1. 서버 구성 페이지에서 확장 인증을 활성화합니다. [서버 구성 설정](configuring-client-server-options.md#server-configuration-settings)을 참조하십시오.
 1. 사용자 관리 구성 파일에 필요한 SSO 리디렉션 URL을 추가합니다. 확장 인증에 대해서는 [SSO 리디렉션 URL 추가](configuring-client-server-options.md#add-sso-redirect-urls-for-extended-authentication)를 참조하십시오.
 
-### 확장 인증에 대한 SSO 리디렉션 URL 추가 {#add-sso-redirect-urls-for-extended-authentication}
+### 확장 인증에 SSO 리디렉션 URL 추가 {#add-sso-redirect-urls-for-extended-authentication}
 
 확장된 인증이 활성화된 상태에서 Acrobat XI 또는 Reader XI에서 정책 보호 문서를 여는 사용자는 인증을 위한 대화 상자를 받게 됩니다. 이 대화 상자는 문서 보안 서버 설정에서 확장 인증 랜딩 URL로 지정한 HTML 페이지를 로드합니다. [서버 구성 설정](configuring-client-server-options.md#server-configuration-settings)을 참조하십시오.
 
@@ -118,7 +118,7 @@ AEM Forms는 환경에 맞게 사용자 지정할 수 있는 샘플 구성을 �
 1. 관리 콘솔에서 설정 > 사용자 관리 > 구성 > 구성 파일 가져오기 및 내보내기 를 클릭합니다.
 1. 내보내기 를 클릭하고 구성 파일을 디스크에 저장합니다.
 1. 편집기에서 파일을 열고 AllowedUrl 노드를 찾습니다.
-1. `AllowedUrls` 노드에서 다음 줄을 추가합니다.`<entry key="sso-l" value="/ssoexample/login.jsp"/> <entry key="sso-s" value="/ssoexample"/> <entry key="sso-o" value="/ssoexample/logout.jsp"/>`
+1. `AllowedUrls` 노드에서 다음 줄을 추가합니다. `<entry key="sso-l" value="/ssoexample/login.jsp"/> <entry key="sso-s" value="/ssoexample"/> <entry key="sso-o" value="/ssoexample/logout.jsp"/>`
 
    ```as3
    <entry key="sso-l" value="/ssoexample/login.jsp"/> 
@@ -126,7 +126,7 @@ AEM Forms는 환경에 맞게 사용자 지정할 수 있는 샘플 구성을 �
    <entry key="sso-o" value="/ssoexample/logout.jsp"/>
    ```
 
-1. 파일을 저장한 다음 수동 구성 페이지에서 업데이트된 파일을 가져옵니다.관리 콘솔에서 설정 > 사용자 관리 > 구성 > 구성 파일 가져오기 및 내보내기 를 클릭합니다.
+1. 파일을 저장한 다음 수동 구성 페이지에서 업데이트된 파일을 가져옵니다. 관리 콘솔에서 설정 > 사용자 관리 > 구성 > 구성 파일 가져오기 및 내보내기 를 클릭합니다.
 
 ## 오프라인 보안 구성 {#configuring-offline-security}
 
@@ -136,7 +136,7 @@ AEM Forms는 환경에 맞게 사용자 지정할 수 있는 샘플 구성을 �
 
 오프라인 액세스를 허용하는 문서는 파일을 오프라인으로 저장하는 컴퓨터의 핵심 자료를 캐싱해야 하므로 권한이 없는 사용자가 키 자료를 가져올 수 있으면 파일이 손상될 수 있습니다. 이러한 가능성을 보완하기 위해 권한이 없는 사람이 해당 키를 사용하여 문서에 액세스하지 못하도록 할 수 있는 예약 및 수동 키 롤오버 옵션이 제공됩니다.
 
-### 기본 오프라인 임대 기간 {#set-a-default-offline-lease-period} 설정
+### 기본 오프라인 임대 기간 설정 {#set-a-default-offline-lease-period}
 
 정책에 지정된 일 수 동안 정책에 의해 보호된 문서의 수신자는 문서를 오프라인으로 전환할 수 있습니다. 문서를 문서 보안과 처음 동기화한 후 오프라인 임대 기간이 만료될 때까지 수신자는 문서를 오프라인으로 사용할 수 있습니다. 임대 기간이 만료되면 수신자는 문서를 온라인으로 전환하여 문서 보안과 동기화하여 문서를 계속 사용해야 합니다.
 
@@ -164,7 +164,7 @@ AEM Forms는 환경에 맞게 사용자 지정할 수 있는 샘플 구성을 �
 
 **키 롤오버 빈도 변경**
 
-기밀성을 위해 오프라인 문서를 사용하는 경우 문서 보안에서 기본 빈도 기간이 20일인 자동 키 롤오버 옵션을 제공합니다. 롤오버 빈도를 변경할 수 있습니다.그러나 사용자가 오프라인 문서를 볼 수 없고 시스템 성능에 영향을 줄 수 있으므로 14일 이하의 값을 설정하지 마십시오.
+기밀성을 위해 오프라인 문서를 사용하는 경우 문서 보안에서 기본 빈도 기간이 20일인 자동 키 롤오버 옵션을 제공합니다. 롤오버 빈도를 변경할 수 있습니다. 그러나 사용자가 오프라인 문서를 볼 수 없고 시스템 성능에 영향을 줄 수 있으므로 14일 이하의 값을 설정하지 마십시오.
 
 1. 문서 보안 페이지에서 구성 > 키 관리를 클릭합니다.
 1. 키 롤오버 빈도 상자에 롤오버 기간(일)을 입력합니다.
@@ -182,7 +182,7 @@ AEM Forms는 환경에 맞게 사용자 지정할 수 있는 샘플 구성을 �
 
 1. 문서 보안 페이지에서 구성 > 키 관리를 클릭합니다.
 1. 지금 롤오버 키 를 클릭한 다음 확인 을 클릭합니다.
-1. 10분 정도 기다리십시오 서버 로그에 다음 로그 메시지가 나타납니다.`Done RightsManagement key rollover for`*N* `principals` 여기서 *N*&#x200B;은 문서 보안 시스템의 사용자 수입니다.
+1. 10분 정도 기다리십시오 서버 로그에 다음 로그 메시지가 나타납니다. `Done RightsManagement key rollover for`*N* `principals` 여기서 *N*&#x200B;은 문서 보안 시스템의 사용자 수입니다.
 1. 지금 롤오버 키 를 클릭한 다음 확인 을 클릭합니다.
 1. 10분 정도 기다리십시오
 
@@ -199,7 +199,7 @@ AEM Forms는 환경에 맞게 사용자 지정할 수 있는 샘플 구성을 �
 * 외부 사용자 초대 및 등록, 활성화 및 비활성화된 사용자 계정, 사용자 암호 변경 및 프로필 업데이트와 같은 사용자 이벤트
 * 버전 불일치, 사용할 수 없는 디렉토리 서버 및 인증 공급자, 서버 구성 변경 등의 AEM Forms 이벤트
 
-### 이벤트 감사 {#enable-or-disable-event-auditing} 활성화 또는 비활성화
+### 이벤트 감사 활성화 또는 비활성화 {#enable-or-disable-event-auditing}
 
 서버, 정책 보호 문서, 정책, 정책 세트 및 사용자와 관련된 이벤트 감사를 활성화하고 비활성화할 수 있습니다. 이벤트 감사를 사용할 경우 가능한 모든 이벤트를 감사하도록 선택하거나 감사할 특정 이벤트를 선택할 수 있습니다.
 
@@ -220,7 +220,7 @@ AEM Forms는 환경에 맞게 사용자 지정할 수 있는 샘플 구성을 �
 >
 >웹 페이지 작업 시 뒤로 단추, 새로 고침 단추, 뒤로 또는 앞 화살표 등의 브라우저 단추를 사용하면 원치 않는 데이터 캡처 및 데이터 표시 문제가 발생할 수 있으므로 사용하지 마십시오.
 
-### 개인 정보 알림 {#enable-or-disable-privacy-notification} 활성화 또는 비활성화
+### 개인 정보 알림 활성화 또는 비활성화 {#enable-or-disable-privacy-notification}
 
 개인 정보 알림 메시지를 활성화 및 비활성화할 수 있습니다. 개인 정보 알림을 사용하면 수신자가 정책으로 보호된 문서를 열려고 하면 메시지가 나타납니다. 이 알림은 문서 사용이 감사되고 있음을 사용자에게 알려줍니다. 사용 가능한 경우 사용자가 개인정보 보호정책 페이지를 보는 데 사용할 수 있는 URL을 지정할 수도 있습니다.
 
@@ -238,7 +238,7 @@ AEM Forms는 환경에 맞게 사용자 지정할 수 있는 샘플 구성을 �
 >
 >개인 정보 알림을 비활성화해도 문서 사용 감사를 비활성화하지 않습니다. 확장 사용 추적을 통해 지원되는 즉시 감사 작업 및 사용자 지정 작업은 사용자 동작 정보를 수집할 수 있습니다.
 
-### 사용자 지정 감사 이벤트 유형 {#import-a-custom-audit-event-type} 가져오기
+### 사용자 지정 감사 이벤트 유형 가져오기 {#import-a-custom-audit-event-type}
 
 특정 파일 유형에 관련된 이벤트와 같은 추가 이벤트 감사를 지원하는 문서 보안 사용 응용 프로그램을 사용하는 경우 Adobe 파트너가 문서 보안에 가져올 수 있는 사용자 지정 감사 이벤트를 제공할 수 있습니다. Adobe 파트너가 사용자 지정 이벤트 유형을 제공한 경우에만 이 기능을 사용하십시오.
 
@@ -247,7 +247,7 @@ AEM Forms는 환경에 맞게 사용자 지정할 수 있는 샘플 구성을 �
 1. 을 가져오면 동일한 이벤트 코드와 네임스페이스 조합이 발견되는 경우 서버에서 기존 사용자 지정 감사 이벤트 유형을 덮어씁니다.
 1. 확인을 클릭합니다.
 
-### 사용자 지정 감사 이벤트 유형 {#delete-a-custom-audit-event-type} 삭제
+### 사용자 지정 감사 이벤트 유형 삭제 {#delete-a-custom-audit-event-type}
 
 1. 관리 콘솔에서 서비스 > 문서 보안 > 구성 > 이벤트 관리 를 클릭합니다.
 1. 삭제할 사용자 지정 감사 이벤트 유형 옆의 확인란을 선택하고 삭제를 클릭합니다.
@@ -395,7 +395,7 @@ AEM Forms는 환경에 맞게 사용자 지정할 수 있는 샘플 구성을 �
 1. 관리 콘솔에서 서비스 > 문서 보안 > 구성 > 표시 옵션을 클릭합니다.
 1. 설정을 구성하고 확인 을 클릭합니다.
 
-### 설정 표시 {#display-settings}
+### 표시 설정 {#display-settings}
 
 **검색 결과를 표시할 행:**  검색을 수행할 때 페이지에 표시되는 행 수입니다.
 
@@ -435,7 +435,7 @@ AEM Forms는 환경에 맞게 사용자 지정할 수 있는 샘플 구성을 �
 
 동적 워터마크는 사용자가 Acrobat에서 문서에 직접 추가할 수 있는 워터마크와 다릅니다. 그 결과 정책에 따라 보호된 문서에 두 개의 워터마크를 포함할 수 있습니다.
 
-### 워터마크 {#considerations-when-creating-watermarks}를 만들 때의 고려 사항
+### 워터마크를 만들 때의 고려 사항 {#considerations-when-creating-watermarks}
 
 각 요소가 텍스트 또는 PDF로 지정된 여러 워터마크 요소로 동적 워터마크를 만들 수 있습니다. 워터마크에는 최대 5개의 요소를 포함할 수 있습니다.
 
@@ -458,7 +458,7 @@ AEM Forms는 환경에 맞게 사용자 지정할 수 있는 샘플 구성을 �
 * 워터마크 요소의 위치를 지정할 때는 두 요소 이상이 동일한 위치를 가지도록 하십시오. 두 개의 워터마크 요소가 중심과 같은 위치에 있으면 문서에서 겹쳐져 표시되고 워터마크에 추가된 순서로 표시됩니다.
 * 글꼴 크기 및 유형을 지정할 때 페이지 내에 텍스트 길이가 완전히 표시되는지 확인하십시오. 텍스트 컨텐츠는 새 라인으로 롤오버되므로 여백에 표시하려는 워터마크 컨텐츠가 페이지의 컨텐츠 영역과 겹칠 수 있습니다. 그러나 문서가 Acrobat 9에서 열리는 경우 단일 행을 초과하는 텍스트가 잘립니다.
 
-### 동적 워터마크 {#limitations-of-dynamic-watermarks} 제한 사항
+### 동적 워터마크 제한 사항 {#limitations-of-dynamic-watermarks}
 
 일부 클라이언트 응용 프로그램은 동적 워터마크를 지원하지 않을 수 있습니다. 적절한 Acrobat Reader DC 확장 도움말을 참조하십시오. 또한 동적 워터마크를 지원하는 Acrobat 버전에 대해 다음 사항을 기억하십시오.
 
@@ -470,7 +470,7 @@ AEM Forms는 환경에 맞게 사용자 지정할 수 있는 샘플 구성을 �
    * 페이지 범위 또는 표시 옵션과 같은 고급 옵션
    * 지정된 글꼴, 글꼴 이름 및 색상과 같은 텍스트 서식 선택 사항입니다. 그러나 이전 버전의 Acrobat 및 Reader은 기본 글꼴과 색상으로 텍스트 컨텐츠를 표시합니다.
 
-* Acrobat 9 6.0 및 이전 버전:Acrobat 9.0 및 이전 버전은 동적 워터마크의 정책 이름을 지원하지 않습니다. Acrobat 9.0에서 정책 이름 및 기타 동적 데이터가 포함된 동적 워터마크가 있는 정책 보호 문서를 열면 정책 이름 없이 워터마크가 표시됩니다. 동적 워터마크에 정책 이름만 포함되어 있으면 Acrobat에 오류 메시지가 표시됩니다
+* Acrobat 9 6.0 및 이전 버전: Acrobat 9.0 및 이전 버전은 동적 워터마크의 정책 이름을 지원하지 않습니다. Acrobat 9.0에서 정책 이름 및 기타 동적 데이터가 포함된 동적 워터마크가 있는 정책 보호 문서를 열면 정책 이름 없이 워터마크가 표시됩니다. 동적 워터마크에 정책 이름만 포함되어 있으면 Acrobat에 오류 메시지가 표시됩니다
 
 ### 동적 워터마크 템플릿 추가 {#add-a-dynamic-watermark-template}
 
@@ -484,7 +484,7 @@ AEM Forms는 환경에 맞게 사용자 지정할 수 있는 샘플 구성을 �
 1. 새로 만들기를 클릭합니다.
 1. 이름 상자에 새 워터마크의 이름을 입력합니다.
 
-   ***참고&#x200B;**:워터마크 또는 워터마크 요소의 이름이나 설명에는 일부 특수 문자를 사용할 수 없습니다. [정책 편집을 위한 고려 사항](/help/forms/using/admin-help/creating-policies.md#considerations-for-editing-policies)에 나열된 제한 사항을 참조하십시오.*
+   ***참고&#x200B;**: 워터마크 또는 워터마크 요소의 이름이나 설명에는 일부 특수 문자를 사용할 수 없습니다. [정책 편집을 위한 고려 사항](/help/forms/using/admin-help/creating-policies.md#considerations-for-editing-policies)에 나열된 제한 사항을 참조하십시오.*
 
 1. 이름 아래의 더하기 기호 옆에 있는 헤더와 같은 워터마크 요소에 의미 있는 이름을 입력하고 설명을 추가하고 더하기 기호를 확장하여 옵션을 표시합니다.
 1. 소스(Source)에서 워터마크 유형을 텍스트(Text) 또는 PDF(PDF)로 선택합니다.
@@ -493,15 +493,15 @@ AEM Forms는 환경에 맞게 사용자 지정할 수 있는 샘플 구성을 �
    * 포함할 워터마크 유형을 선택합니다. [사용자 정의 텍스트]를 선택한 경우 인접한 상자에서 워터마크에 표시할 텍스트를 입력합니다. 워터마크로 표시되는 텍스트 길이를 기억하십시오.
    * 워터마크 텍스트의 텍스트 내용에 대해 글꼴 이름, 글꼴 크기, 전경색 및 배경색과 같은 텍스트 서식 속성을 지정합니다. 전경 및 배경색을 16진수 값으로 지정합니다.
 
-      ***참고&#x200B;**:[페이지에 맞추기] 옵션을 선택하면 글꼴 크기 속성을 편집할 수 없습니다.*
+      ***참고&#x200B;**: [페이지에 맞추기] 옵션을 선택하면 글꼴 크기 속성을 편집할 수 없습니다.*
 
 1. 리치 워터마크 옵션을 위해 PDF를 선택한 경우 워터마크 PDF 선택 옆에 있는 **찾아보기**&#x200B;를 클릭하여 워터마크로 사용할 PDF 문서를 선택합니다.
 
-   ***참고&#x200B;**:암호로 보호된 PDF 문서는 사용하지 마십시오. 암호로 보호된 PDF를 워터마크 요소로 지정하면 워터마크가 적용되지 않습니다.*
+   ***참고&#x200B;**: 암호로 보호된 PDF 문서는 사용하지 마십시오. 암호로 보호된 PDF를 워터마크 요소로 지정하면 워터마크가 적용되지 않습니다.*
 
 1. 배경으로 사용 아래에서 예 또는 아니오를 선택합니다.
 
-   ***참고**:현재 워터마크는 이 설정과 관계없이 전경에 나타납니다.*
+   ***참고**: 현재 워터마크는 이 설정과 관계없이 전경에 나타납니다. *
 
 1. 문서에서 워터마크가 표시되는 위치를 제어하려면 [세로 정렬] 및 [가로 정렬] 옵션을 구성합니다.
 1. 페이지에 맞추기 를 선택하거나 % 를 선택하고 상자에 백분율을 입력합니다. 값은 분수가 아니라 정수여야 합니다. 워터마크 크기를 구성하려면 페이지의 백분율인 값을 사용하거나 페이지 크기에 맞게 워터마크를 설정할 수 있습니다.
@@ -527,7 +527,7 @@ AEM Forms는 환경에 맞게 사용자 지정할 수 있는 샘플 구성을 �
 1. 워터마크 편집 페이지에서 필요에 따라 설정을 변경합니다.
 1. 확인을 클릭합니다.
 
-### 동적 워터마크 템플릿 {#delete-a-dynamic-watermark-template} 삭제
+### 동적 워터마크 템플릿 삭제 {#delete-a-dynamic-watermark-template}
 
 동적 워터마크를 삭제하면 새 정책에 추가할 수 없습니다. 그러나 워터마크는 현재 사용하는 기존 정책에 남아 있으며, 현재 정책이 보호하는 문서는 사용자가 삭제한 워터마크가 포함된 정책을 편집할 때까지 동적 워터마크를 계속 표시합니다. 정책을 편집한 후에는 워터마크가 더 이상 적용되지 않습니다. 정책에 기존 워터마크가 삭제되고 사용자가 다른 워터마크를 선택하여 교체할 수 있음을 나타내는 메시지가 나타납니다.
 
@@ -573,7 +573,7 @@ AEM Forms는 환경에 맞게 사용자 지정할 수 있는 샘플 구성을 �
 1. (선택 사항) 기본 제공 등록에서 예를 선택하여 이 옵션을 활성화합니다. 기본 제공 등록을 활성화하지 않는 경우 사용자 등록 시스템을 직접 설정해야 합니다.
 1. 확인을 클릭합니다.
 
-### 외부 사용자 또는 그룹 {#exclude-or-include-an-external-user-or-group} 제외 또는 포함
+### 외부 사용자 또는 그룹 제외 또는 포함 {#exclude-or-include-an-external-user-or-group}
 
 특정 외부 사용자 또는 사용자 그룹에 대해 문서 보안으로 등록을 제한할 수 있습니다. 이 옵션은 예를 들어 특정 사용자 그룹에 액세스할 수 있지만 그룹의 일부인 특정 사용자는 제외하는 데 유용합니다.
 
@@ -663,9 +663,9 @@ SMTP 호스트에 필요한 경우 SMTP 서버 계정 이름 및 SMTP 서버 계
 
 **메시지:** 메시지 본문에 나타나는 텍스트로서, 수신자의 사용자 계정을 활성화해야 함을 나타내는 메시지입니다. 관리자에게 연락하여 새 암호를 받는 방법과 같은 정보를 포함할 수도 있습니다.
 
-### 암호 재설정 전자 메일 {#configure-a-password-reset-email} 구성
+### 암호 재설정 이메일 구성 {#configure-a-password-reset-email}
 
-초대받은 사용자의 암호를 재설정해야 할 경우 사용자에게 새 암호를 선택하도록 초대하는 확인 이메일이 생성됩니다. 사용자의 암호를 확인할 수 없습니다.사용자가 잊어버린 경우 재설정해야 합니다.
+초대받은 사용자의 암호를 재설정해야 할 경우 사용자에게 새 암호를 선택하도록 초대하는 확인 이메일이 생성됩니다. 사용자의 암호를 확인할 수 없습니다. 사용자가 잊어버린 경우 재설정해야 합니다.
 
 다음 설정은 [초대된 사용자 등록] 페이지의 [암호 재설정 전자 메일] 영역에 있습니다.
 
@@ -685,7 +685,7 @@ SMTP 호스트에 필요한 경우 SMTP 서버 계정 이름 및 SMTP 서버 계
 
 사용자에게 사용자 지정 정책을 만들 수 있는 권한을 부여하기 전에 개별 사용자에게 부여할 액세스 권한 또는 컨트롤의 양을 고려하십시오. 또한 사용자와 그룹이 검색에 표시되도록 할 때 얼마나 노출되는지를 고려하십시오.
 
-### {#specify-users-and-groups-who-can-create-policies} 정책을 만들 수 있는 사용자 및 그룹을 지정합니다.
+### 정책을 만들 수 있는 사용자 및 그룹을 지정합니다 {#specify-users-and-groups-who-can-create-policies}
 
 관리자는 사용자 지정 정책을 만들 수 있는 사용자와 그룹을 지정합니다. 이 권한은 사용자 및 그룹 수준에서 설정할 수 있습니다. 검색 기능은 사용자 관리 데이터베이스에서 사용자와 그룹을 검색합니다.
 
@@ -701,14 +701,14 @@ SMTP 호스트에 필요한 경우 SMTP 서버 계정 이름 및 SMTP 서버 계
 
 이제 선택한 사용자 및 그룹에 사용자 지정 정책을 만들 수 있는 권한이 있습니다.
 
-### 사용자 또는 그룹 {#remove-the-create-custom-policies-permission-from-a-user-or-group}에서 사용자 지정 정책 만들기 권한을 제거합니다
+### 사용자 또는 그룹에서 사용자 지정 정책 만들기 권한을 제거합니다 {#remove-the-create-custom-policies-permission-from-a-user-or-group}
 
 1. 문서 보안 페이지에서 구성 > 내 정책을 클릭합니다.
 1. 내 정책 페이지에서 정책 만들기 탭을 클릭합니다. 사용자 지정 정책을 만들 수 있는 권한이 있는 사용자 및 그룹이 표시됩니다.
 1. 이 권한에서 제거할 사용자 및 그룹 옆의 확인란을 선택합니다.
 1. 삭제를 클릭한 다음 확인을 클릭합니다.
 
-### 검색 {#specify-users-and-groups-that-are-visible-in-searches}에 표시되는 사용자 및 그룹을 지정합니다
+### 검색에 표시되는 사용자 및 그룹을 지정합니다 {#specify-users-and-groups-that-are-visible-in-searches}
 
 사용자가 사용자 지정 정책을 관리할 때 정책에 추가할 사용자 및 그룹을 검색할 수 있습니다. 사용자 및 그룹이 이러한 검색에 표시되는 도메인을 지정해야 합니다.
 
@@ -716,7 +716,7 @@ SMTP 호스트에 필요한 경우 SMTP 서버 계정 이름 및 SMTP 서버 계
 1. 내 정책 페이지에서 보이는 사용자 및 그룹 탭을 클릭합니다.
 1. 도메인의 사용자와 그룹을 표시하려면 도메인 추가 를 클릭하고 도메인을 선택한 다음 추가 를 클릭합니다. 도메인을 제거하려면 도메인 이름 옆에 있는 확인란을 선택하고 삭제를 클릭합니다.
 
-## 문서 보안 구성 파일 {#manually-editing-the-document-security-configuration-file} 수동으로 편집
+## 문서 보안 구성 파일을 수동으로 편집 {#manually-editing-the-document-security-configuration-file}
 
 문서 보안 데이터베이스에 저장된 구성 정보를 가져오고 내보낼 수 있습니다. 예를 들어, 스테이징에서 프로덕션 환경으로 이동할 때 구성 정보의 백업 복사본을 만들거나, 이 파일을 편집할 때만 구성할 수 있는 고급 옵션을 편집할 수 있습니다.
 
@@ -749,12 +749,7 @@ SMTP 호스트에 필요한 경우 SMTP 서버 계정 이름 및 SMTP 서버 계
 1. 찾아보기 를 클릭하여 구성 파일로 이동한 다음 가져오기를 클릭합니다. 파일 이름(File Name) 상자에 직접 경로를 입력할 수 없습니다.
 1. 확인을 클릭합니다.
 
-1. 
-1. 
-1. 
-1. 
-
-### 오프라인 동기화에 대한 시간 제한 기간 지정 {#specify-a-timeout-period-for-offline-synchronization}
+### 오프라인 동기화를 위한 시간 제한 기간을 지정합니다 {#specify-a-timeout-period-for-offline-synchronization}
 
 문서 보안을 사용하면 문서 보안 서버에 연결되어 있지 않은 보호된 문서를 열고 사용할 수 있습니다. 오프라인 사용을 위해 문서를 유효하게 유지하려면 사용자의 클라이언트 응용 프로그램이 서버와 정기적으로 동기화되어야 합니다. 사용자가 보호된 문서를 처음 열 때 주기적으로 클라이언트 동기화를 수행할 수 있도록 컴퓨터를 인증해야 하는지 여부를 묻는 메시지가 나타납니다.
 
@@ -947,15 +942,15 @@ Microsoft Office용 Acrobat Reader DC 확장은 Microsoft Office 제품 Microsof
  </node
 ```
 
-### 워터마크 구성 매개 변수 {#change-the-watermark-configuration-parameters} 변경
+### 워터마크 구성 매개 변수 변경 {#change-the-watermark-configuration-parameters}
 
 기본적으로 워터마크에는 최대 5개의 요소를 지정할 수 있습니다. 또한 워터마크로 사용할 PDF 문서의 최대 파일 크기는 100KB로 제한됩니다. config.xml 파일에서 이러한 매개 변수를 변경할 수 있습니다.
 
-***참고&#x200B;**:이러한 매개 변수는 신중하게 변경해야 합니다.*
+***참고&#x200B;**: 이러한 매개 변수는 신중하게 변경해야 합니다.*
 
 1. 문서 보안 구성 파일을 내보냅니다. ([문서 보안 구성 파일 수동 편집](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file) 참조)
 1. 편집기에서 구성 파일을 열고 `ServerSettings` 노드를 찾습니다.
-1. `ServerSettings` 노드에서 다음 항목을 추가한 다음 파일을 저장합니다.`<entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/> <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>`
+1. `ServerSettings` 노드에서 다음 항목을 추가한 다음 파일을 저장합니다. `<entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/> <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>`
 
    첫 번째 항목 *최대 파일 크기 *는 PDF 워터마크 요소에 허용되는 최대 파일 크기(KB)입니다. 기본값은 100KB입니다.
 
@@ -968,7 +963,7 @@ Microsoft Office용 Acrobat Reader DC 확장은 Microsoft Office 제품 Microsof
 
 1. 구성 파일을 가져옵니다. ([문서 보안 구성 파일 수동 편집](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file) 참조)
 
-### 외부 링크 {#disabling-external-links} 사용 안 함
+### 외부 링크 비활성화 {#disabling-external-links}
 
 많은 문서 보안 사용자가 권한 관리 사용자 인터페이스를 사용하는 동안 **www.adobe.com**&#x200B;와 같은 외부 링크에 액세스할 수 없습니다.
 
@@ -979,7 +974,7 @@ config.xml에 대한 다음 변경 사항은 권한 관리 사용자 인터페�
 
 1. 문서 보안 구성 파일을 내보냅니다. ([문서 보안 구성 파일 수동 편집](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file) 참조)
 1. 편집기에서 구성 파일을 열고 `DisplaySettings` 노드를 찾습니다.
-1. 모든 외부 링크를 비활성화하려면 `DisplaySettings` 노드에서 다음 항목을 추가한 다음 파일을 저장합니다.`<entry key="ExternalLinksAllowed" value="false"/>`
+1. 모든 외부 링크를 비활성화하려면 `DisplaySettings` 노드에서 다음 항목을 추가한 다음 파일을 저장합니다. `<entry key="ExternalLinksAllowed" value="false"/>`
 
    ```as3
    <entry key="ExternalLinksAllowed" value="false"/>
@@ -993,7 +988,7 @@ config.xml에 대한 다음 변경 사항은 초대된 사용자 등록 기능�
 
 1. 문서 보안 구성 파일을 내보냅니다. ([문서 보안 구성 파일 수동 편집](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file) 참조)
 1. 편집기에서 구성 파일을 열고 `DisplaySettings` 노드를 찾습니다.
-1. 다음 노드를 찾습니다.`<node name="ExternalUser">`
+1. 다음 노드를 찾습니다. `<node name="ExternalUser">`
 
    ```as3
    <node name="ExternalUser">
@@ -1004,12 +999,12 @@ config.xml에 대한 다음 변경 사항은 초대된 사용자 등록 기능�
 1. `config.xml`을(를) 저장합니다.
 1. 구성 파일을 가져옵니다. ([문서 보안 구성 파일 수동 편집](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file) 참조)
 
-### 문서 보안 문서 {#disable-soap-endpoints-for-document-security-documents}에 대한 SOAP 끝점을 사용하지 않도록 설정합니다.
+### 문서 보안 문서에 대한 SOAP 끝점 사용 안 함 {#disable-soap-endpoints-for-document-security-documents}
 
 문서 보안 문서에 대한 SOAP 끝점을 비활성화하도록 config.xml에 대한 다음 변경 사항이 있습니다.
 
 1. 문서 보안 구성 파일을 내보냅니다. ([문서 보안 구성 파일 수동 편집](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file) 참조)
-1. 편집기에서 구성 파일을 열고 다음 노드를 찾습니다.`<node name="DRM">`
+1. 편집기에서 구성 파일을 열고 다음 노드를 찾습니다. `<node name="DRM">`
 
    ```as3
    <node name="DRM">
