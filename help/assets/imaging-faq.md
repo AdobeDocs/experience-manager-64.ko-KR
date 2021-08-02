@@ -9,9 +9,9 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 exl-id: 2f24c4bc-8071-4403-b959-00db0f08db34
 feature: Smart Services
 role: User
-source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
+source-git-commit: e43e25fa1d0df2c2b5b72e49c5a54ca88c000ad2
 workflow-type: tm+mt
-source-wordcount: '2573'
+source-wordcount: '2547'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ CSS 픽셀 비율이라고도 하는 DPR(장치 픽셀 비율)은 장치의 실�
 
 >[!NOTE]
 >
->DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측 값을 기반으로 합니다. 이러한 값은 때때로 부정확합니다. 예를 들어 DPR=2가 있는 iPhone5 및 DPR=3이 있는 iPhone12에서는 모두 DPR=2를 표시합니다. 여전히 고해상도 장치의 경우 DPR=2를 전송하는 것이 DPR=1을 보내는 것보다 좋습니다. 준비 중:Adobe이 클라이언트측 코드에서 작동하여 최종 사용자의 DPR을 정확하게 판별하고 있습니다.
+>DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측 값을 기반으로 합니다. 이러한 값은 때때로 부정확합니다. 예를 들어 DPR=2가 있는 iPhone5 및 DPR=3이 있는 iPhone12에서는 모두 DPR=2를 표시합니다. 여전히 고해상도 장치의 경우 DPR=2를 전송하는 것이 DPR=1을 보내는 것보다 좋습니다. 준비 중: Adobe이 클라이언트측 코드에서 작동하여 최종 사용자의 DPR을 정확하게 판별하고 있습니다.
 
 ## 최신 스마트 이미징의 주요 이점은 무엇입니까? {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -181,17 +181,17 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## 내 계정에 대해 스마트 이미징을 활성화하는 프로세스는 무엇입니까? {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
-스마트 이미징 사용 요청을 시작합니다.자동으로 활성화되지 않습니다.
+스마트 이미징 사용 요청을 시작합니다. 자동으로 활성화되지 않습니다.
 
 기본적으로 Dynamic Media 회사 계정에 대해 스마트 이미징 DPR 및 네트워크 최적화가 비활성화(꺼짐)됩니다. 이러한 기본 개선 사항 중 하나 또는 둘 다 활성화(켜기)하려면 아래 설명된 지원 사례를 만드십시오.
 
-스마트 이미징 DPR 및 네트워크 최적화에 대한 릴리스 일정은 다음과 같습니다.
+<!-- NOW AVAILABLE IN ALL THREE REGIONS AS OF AUGUST 2. 2021. SEE CQDOC- 17915 The release schedule for Smart Imaging DPR and network optimization is as follows:
 
-| 지역 | Target 날짜 |
+| Region | Target date |
 |---|---|
-| 북미 | 라이브 버전 |
-| 유럽, 중동, 아프리카 | 2021년 8월 13일 |
-| 아시아-태평양 | 2021년 7월 22일 |
+| North America | Live |
+| Europe, Middle East, Africa | 13 Aug 2021 |
+| Asia-Pacific | 22 Jul 2021 | -->
 
 1. [Admin Console을 사용하여 지원 사례를 만듭니다.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
 1. 지원 사례에 다음 정보를 제공하십시오.
@@ -216,7 +216,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 1. Adobe 고객 지원 팀에서는 요청이 제출된 순서에 따라 스마트 이미징 고객 대기 목록에 추가합니다.
 1. Adobe이 요청을 처리할 준비가 되면 지원 담당자가 대상 날짜를 조정하고 설정해야 합니다.
-1. **선택** 사항:Adobe이 새 기능을 프로덕션에 푸시하기 전에 스테이징에서 스마트 이미징을 선택적으로 테스트할 수 있습니다.
+1. **선택** 사항: Adobe이 새 기능을 프로덕션에 푸시하기 전에 스테이징에서 스마트 이미징을 선택적으로 테스트할 수 있습니다.
 1. 지원이 완료되면 알림을 받습니다.
 1. 스마트 이미징의 성능 향상을 극대화하려면 Adobe에서 TTL(Time To Live)을 24시간 이상으로 설정하는 것이 좋습니다. TTL은 CDN에 의해 자산이 캐시되는 기간을 정의합니다. 이 설정을 변경하려면 다음을 수행하십시오.
 
@@ -280,4 +280,4 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 * Experience Manager 사이트 핵심 구성 요소는 기본적으로 DPR 최적화를 위해 구성됩니다. 서버측 스마트 이미징 DPR 최적화로 인해 큰 이미지가 발생하지 않도록 하기 위해 항상 `dpr=off`이 Sites 핵심 구성 요소 Dynamic Media 이미지에 추가됩니다.
 * 서버측 스마트 이미징 DPR 최적화로 인해 큰 이미지가 발생하지 않도록 DPR 최적화에 대해 Dynamic Media 기초 구성 요소가 기본적으로 구성되어 있으므로 `dpr=off`이 항상 Dynamic Media Foundation 구성 요소 이미지에 추가됩니다. 고객이 DM 기초 구성 요소에서 DPR 최적화를 선택 취소하더라도 서버측 스마트 이미징 DPR이 시작되지 않습니다. 요약하면 DM 기초 구성 요소에서 DPR 최적화는 DM 기초 구성 요소 수준 설정에만 적용됩니다.
-* 모든 뷰어 측 DPR 최적화는 서버 측 스마트 이미징 DPR 최적화와 함께 작동하며 과도한 크기의 이미지를 생성하지 않습니다. 즉, 확대/축소 지원 뷰어의 기본 보기처럼 DPR이 뷰어에 의해 처리되는 모든 위치에서 서버 측 스마트 이미징 DPR 값이 트리거되지 않습니다. 마찬가지로 색상 견본 및 축소판과 같은 뷰어 요소에 DPR 처리가 없으면 서버측 스마트 이미징 DPR 값이 트리거됩니다. —>
+* 모든 뷰어 측 DPR 최적화는 서버 측 스마트 이미징 DPR 최적화와 함께 작동하며 과도한 크기의 이미지를 생성하지 않습니다. 즉, 확대/축소 지원 뷰어의 기본 보기처럼 DPR이 뷰어에 의해 처리되는 모든 위치에서 서버 측 스마트 이미징 DPR 값이 트리거되지 않습니다. 마찬가지로 색상 견본 및 축소판과 같은 뷰어 요소에 DPR 처리가 없으면 서버측 스마트 이미징 DPR 값이 트리거됩니다.
