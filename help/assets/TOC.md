@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 자산을 생성, 관리, 게재 및 최적화합니다.
-source-git-commit: 0d660388cd0fbbf98076610d18c19f480c75ef11
+source-git-commit: d9649477328b3249dae396bbdca0f660c9c8faca
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 66%
+source-wordcount: '626'
+ht-degree: 65%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 66%
    + [이미지 맵 추가](image-maps.md)
    + [MSM을 사용하여 자산 재사용](reuse-assets-using-msm.md)
 + Dynamic Media{#dynamic}
-   + [Experience League의 Dynamic Media 뉴스레터](dynamic-media-newsletter.md)
+   + [Experience League별 Dynamic Media 뉴스레터 아카이브](dynamic-media-newsletter.md)
    + [Dynamic Media 설정](administering-dynamic-media.md)
    + [Dynamic Media 작업](dynamic-media.md)
    + [Dynamic Media 구성 - Scene7 모드](config-dms7.md)
