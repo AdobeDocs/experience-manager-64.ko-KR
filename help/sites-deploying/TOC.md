@@ -8,9 +8,9 @@ breadcrumb-title: Deploying 안내서
 user-guide-description: Adobe Managed Services 클라우드 배포를 포함하여 Adobe Experience Manager 6.4의 설치, 배포 및 아키텍처에 대해 자세히 알아봅니다.
 feature: 배포
 role: Architect
-source-git-commit: 5b0eef590f9a0c709fa21b8dbcf6a2f286a20237
+source-git-commit: 17c9f8523992b5ba87125c77d3e4f70f86f89c58
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '373'
 ht-degree: 19%
 
 ---
@@ -56,11 +56,11 @@ ht-degree: 19%
    + [작업 오프로딩](offloading.md)
    + [단일 사인온](single-sign-on.md)
    + [리소스 매핑](resource-mapping.md)
-   + [SSL을 통해 HTTP 활성화](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/ssl-by-default.html)
+   + [SSL을 통해 HTTP 활성화](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/ssl-by-default.html)
    + [일관성 및 순회 검사](consistency-check.md)
    + [성능 지침](performance-guidelines.md)
    + [성능 최적화](configuring-performance.md)
-   + [Assets 성능 안내서](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=en)
+   + [Assets 성능 안내서](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html)
    + [구성 방법 문서](ht-deploy.md)
    + [Geometrixx 사이트 제거](removing-the-geometrixx-sites.md)
    + [웹 콘솔 구성](configuring-web-console.md)
