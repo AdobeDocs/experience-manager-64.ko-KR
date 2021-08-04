@@ -8,9 +8,9 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: 비디오
 role: User
-source-git-commit: d5b4f559b20c8671bd648d240b54cb65f73fd222
+source-git-commit: 1d5f9be7aa1e45ebaf689922396832e82c63321f
 workflow-type: tm+mt
-source-wordcount: '10377'
+source-wordcount: '10387'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 1%
 
          [비디오 표현물 보기](video-renditions.md)
 
-         [비디오 표현물 관리](managing-assets-touch-ui.md#managing-renditions)
+[비디오 표현물 관리](managing-assets-touch-ui.md#managing-renditions)
 
       * [뷰어 사전 설정 관리](managing-viewer-presets.md)
       * [자산 게시](publishing-dynamicmedia-assets.md)
@@ -85,7 +85,7 @@ ht-degree: 1%
 
       * 제목, 설명 및 태그, 사용자 지정 메타데이터 필드와 같은 비디오의 속성을 편집합니다.
 
-         [비디오 속성 편집](managing-assets-touch-ui.md#editing-properties)
+[비디오 속성 편집](managing-assets-touch-ui.md#editing-properties)
 
       * [디지털 자산에 대한 메타데이터 관리](metadata.md)
       * [메타데이터 스키마](metadata-schemas.md)
@@ -1033,7 +1033,7 @@ URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 *Dyna
 >
 >사용되는 비디오 플레이어는 장 마커 사용을 지원해야 합니다. Dynamic Media 비디오 플레이어는 장 마커를 지원하지만 타사 비디오 플레이어를 사용하지 않을 수 있습니다.
 
-원할 경우 비디오 뷰어 사전 설정을 사용하는 대신 장을 사용하여 자신만의 사용자 지정 비디오 뷰어를 만들고 브랜드화할 수 있습니다. 장 탐색을 사용하여 고유한 HTML5 뷰어를 만드는 방법에 대한 지침은 Adobe HTML5 뷰어 SDK API에서 `s7sdk.video.VideoPlayer` 및 `s7sdk.video.VideoScrubber` 클래스의 &quot;Customizing Behavior Using Modifiers&quot; 제목을 참조하십시오. [HTML5 뷰어 SDK API]((https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)) 설명서를 참조하십시오.
+원할 경우 비디오 뷰어 사전 설정을 사용하는 대신 장을 사용하여 자신만의 사용자 지정 비디오 뷰어를 만들고 브랜드화할 수 있습니다. 장 탐색을 사용하여 고유한 HTML5 뷰어를 만드는 방법에 대한 지침은 Adobe HTML5 뷰어 SDK API에서 `s7sdk.video.VideoPlayer` 및 `s7sdk.video.VideoScrubber` 클래스의 &quot;Customizing Behavior Using Modifiers&quot; 제목을 참조하십시오. [HTML5 뷰어 SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) 설명서를 참조하십시오.
 
 캡션을 만드는 것과 거의 동일한 방식으로 비디오에 대한 장 목록을 만듭니다. 즉, WebVTT 파일을 만듭니다. 그러나 이 파일은 사용할 수도 있는 WebVTT 캡션 파일과 구분되어야 합니다. 캡션과 장을 하나의 WebVTT 파일에 결합할 수 없습니다.
 
