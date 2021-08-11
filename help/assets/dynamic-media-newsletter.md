@@ -1,12 +1,12 @@
 ---
+title: Dynamic Media 뉴스레터 아카이브
 description: '보관된 Dynamic Media 뉴스레터는 Experience League의 월별 뉴스레터입니다. Dynamic Media 및 Dynamic Media Classic을 빠르게 활용하여 즉시 가치를 실현할 수 있도록 고안되었습니다. 보관된 뉴스레터에는 이제 중단된 이 원스톱 스토어 뉴스레터에서 사용할 수 있었던 중요한 지식 작성 리소스가 포함되어 있습니다. 보관된 뉴스레터에는 사용 방법 비디오 및 솔루션 개요 등이 포함되어 있습니다. 이미지 사전 설정, 뷰어 사전 설정 및 비디오 프로필과 같은 주요 기능과 성능에 대한 소개가 있습니다.  '
 keywords: dynamic media;뉴스레터;제품 업데이트;팁과 트릭;이벤트;고객 성공;블로그;블로그;이미지;비디오;기능;기능
 solution: Experience Manager, Dynamic Media Classic
-title: Dynamic Media 뉴스레터 아카이브
 exl-id: aa02c811-0296-4a02-b745-e70aeb9d1e97
 feature: 공동 작업,Dynamic Media Classic
 role: Admin,User
-source-git-commit: d9649477328b3249dae396bbdca0f660c9c8faca
+source-git-commit: 77d312235854e85b2a486365092fbe8a802faccf
 workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 0%
@@ -54,10 +54,6 @@ Dynamic Media Newsletter by Experience League은 Dynamic Media 및 Dynamic Media
    * 온라인 Adobe Summit 2020에서 Dynamic Media 세션을 봅니다.
    * 무료 Dynamic Media Classic 감사에 대해 자세히 알아보십시오.
    * 고객 성공 서비스의 수석 프로그램 관리자 John Monroe를 만나보십시오.
-
-<!--     >[!IMPORTANT]
-    >
-    >We want to make sure we are only sending the Dynamic Media newsletter to those who want to receive it. To continue receiving the newsletter after this issue, please sign up for it [here](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&reserved=0). -->
 
 * **[2020년 2월, 2호](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
