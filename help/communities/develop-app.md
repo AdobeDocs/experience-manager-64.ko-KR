@@ -10,14 +10,14 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 exl-id: cd036e4a-0884-4ba0-83e9-7013583bbbae
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 4%
+source-wordcount: '573'
+ht-degree: 5%
 
 ---
 
-# 샌드박스 응용 프로그램 개발 {#develop-sandbox-application}
+# 샌드박스 애플리케이션 개발 {#develop-sandbox-application}
 
 이제 이 섹션에서는 [초기 애플리케이션](initial-app.md) 섹션에서 템플릿이 설정되고 [초기 컨텐츠](initial-content.md) 섹션에 설정된 초기 페이지가 추가되었으므로 Communities 구성 요소로 작성하는 기능을 포함하는 기초 스크립트를 사용하여 애플리케이션을 개발할 수 있습니다. 이 섹션의 끝에서 웹 사이트가 작동합니다.
 
@@ -93,7 +93,7 @@ CRXDE Lite 사용:
    1. `playpage`노드 선택
    1. 마우스 오른쪽 단추를 클릭하고 `Create > Create File...` 선택
 
-      * 이름:**body.jsp**
+      * 이름: **body.jsp**
    1. **[!UICONTROL 모두 저장]** 클릭
 
    `/apps/an-scf-sandbox/components/playpage/body.jsp` 을 열고 다음 텍스트에 붙여넣습니다.
@@ -118,7 +118,7 @@ CRXDE Lite 사용:
 
 **브라우저에서 페이지를 편집 모드로 봅니다.**
 
-* 표준 UI:[http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html](http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.md)
+* 표준 UI: `http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html`
 
 제목 **커뮤니티 재생**&#x200B;뿐만 아니라 페이지 컨텐츠 편집용 UI도 표시되어야 합니다.
 
@@ -126,7 +126,7 @@ CRXDE Lite 사용:
 
 ![chlimage_1-232](assets/chlimage_1-232.png)
 
-* 클래식 UI:[http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html](http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html)
+* 클래식 UI: `http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html`
 
 다음은 컨텐츠 파인더(cf)와 함께 재생 페이지가 클래식 UI에 표시되는 방식입니다.
 
@@ -165,7 +165,7 @@ CRXDE Lite 사용:
 
 이 간단한 예에서는 루트 페이지가 영어 페이지로 리디렉션되도록 정적으로 설정되고, 이 페이지는 나중에 재생 페이지에 대한 링크가 있는 기본 랜딩 페이지가 될 수 있습니다.
 
-브라우저 URL을 루트 페이지로 변경합니다.[http://localhost:4502/editor.html/content/an-scf-sandbox.html](https://locahost:4502/editor.html/content/an-scf-sandbox.html)
+브라우저 URL을 루트 페이지로 변경합니다. `http://localhost:4502/editor.html/content/an-scf-sandbox.html`
 
 * 페이지 정보 아이콘을 선택합니다
 * **[!UICONTROL 속성 열기]** 선택
