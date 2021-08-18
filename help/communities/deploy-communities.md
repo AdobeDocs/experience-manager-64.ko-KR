@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 exl-id: 0b7496f0-0b3c-4d12-a659-d95744157f14
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
 workflow-type: tm+mt
-source-wordcount: '2145'
+source-wordcount: '2187'
 ht-degree: 2%
 
 ---
@@ -147,21 +147,21 @@ SCORM(Shareable Content Object Reference Model)은 e-learning을 위한 표준 �
 
 AEM Communities SCORM 엔진은 [지원](overview.md#enablement-community) 기능에 필요합니다. AEM Communities 6.4 버전에서 지원되는 Scorm 패키지는 다음과 같습니다.
 
-* **[cq -social-scorm-package, 버전 1.2.11](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-pkg)**. 이 SCORM 패키지는 모든 AEM 6.4 Communities 버전에서 지원됩니다.
+* **[cq -social-scorm-package, 버전 1.2.11](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-pkg)**. 이 SCORM 패키지는 모든 AEM 6.4 Communities 버전에서 지원됩니다.
 
-* **[cq -social-scorm-package, 버전 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)** 에는  [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)  엔진이 포함되어 있습니다. 이 SCORM 패키지는 AEM 6.4.2.x Communities에서 지원됩니다.
+* **[cq -social-scorm-package, 버전 2.2.2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg)** 에는  [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)  엔진이 포함되어 있습니다. 이 SCORM 패키지는 AEM 6.4.2.x Communities에서 지원됩니다.
 
-SCORM 엔진을 새로 설치하려면 [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)([ cq -social-scorm -package, 버전 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg))이 포함된 패키지를 사용해야 합니다. 따라서 SCORM 2017에서 지원하는 학습 리소스를 재생할 수 있습니다.
+SCORM 엔진을 새로 설치하려면 [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)([ cq -social-scorm -package, 버전 2.2.2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg))이 포함된 패키지를 사용해야 합니다. 따라서 SCORM 2017에서 지원하는 학습 리소스를 재생할 수 있습니다.
 
 <!--This section used to be an accordion until converted to straight Markdown. When accordions are enabled, revert-->
 
 ### SCORM 패키지를 처음 설치하려면
 
-1. **[cq-social-scorm-package, 버전 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg).** 설치
+1. **[cq-social-scorm-package, 버전 2.2.2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg).** 설치
 1. cq 인스턴스에서 **`/libs/social/config/scorm/database_scormengine_data.sql`** 을 다운로드하여 mysql 서버에서 실행하여 업그레이드된 scormEngineDB 스키마를 만듭니다.
 1. 게시자의 `https://<hostname>;:<port>/system/console/configMgr`에서 CSRF 필터의 제외된 경로 속성에 `/content/communities/scorm/RecordResults`을 추가합니다.
 
-기존 SCORM 설치를 [**cq-social-scorm-package, 버전 2.2.2**](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)([SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) 사용)로 업그레이드할 수 있는 경우, 작성된 교육 과정 콘텐츠에 SCORM 2017.1이 필요한 경우.
+기존 SCORM 설치를 [**cq-social-scorm-package, 버전 2.2.2**](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg)([SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) 사용)로 업그레이드할 수 있는 경우, 작성된 교육 과정 콘텐츠에 SCORM 2017.1이 필요한 경우.
 
 >[!NOTE]
 >
@@ -172,7 +172,7 @@ SCORM 엔진을 새로 설치하려면 [SCORM 2017.1](https://rusticisoftware.co
 ### SCORM 엔진의 버전을 업그레이드하려면
 
 1. ScormEngineDB 스키마를 백업합니다.
-1. **[cq-social-scorm-package, 버전 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg).** 설치
+1. **[cq-social-scorm-package, 버전 2.2.2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg).** 설치
 1. `/libs/social/config/scorm/ScormEngine.zip`에서 패키지를 다운로드하고 추출합니다.
 1. 추출된 디렉토리의 **Installer** 폴더로 이동합니다.
 1. `SystemDatabaseConnectionString` 파일을 **[!UICONTROL EngineInstall.xml]**&#x200B;에서 `scorm db connection url` 로 업데이트합니다.
@@ -197,7 +197,8 @@ SRP 컬렉션(MSRP 또는 DSRP)에서 고급 다국어 검색(MLS)을 지원하�
 고급 MLS 다운로드(&#39;경로&#39;라고도 함)는 Adobe 리포지토리에서 사용할 수 있습니다.
 
 * AEM-SOLR-MLS-phasetw
-고급 MLS 패키지를 가져오려면 설명서의 배포 섹션에서 [AEM Advanced MLS](deploy-communities.md#aem-advanced-mls) 를 참조하십시오.
+
+   고급 MLS 패키지를 가져오려면 설명서의 배포 섹션에서 [AEM Advanced MLS](deploy-communities.md#aem-advanced-mls) 를 참조하십시오.
 
    * 버전 1.2.40, 2016년 4월 6일
    * AEM-SOLR-MLS-phasetwo-1.2.40.zip 다운로드
