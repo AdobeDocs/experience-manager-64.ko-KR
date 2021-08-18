@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 7d423dff-8710-4f43-ad55-8863169946e2
 exl-id: 9b4ed16f-3c7c-478a-a897-9b4be086988b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '390'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,6 @@ ht-degree: 1%
 
 * [사용 세부 ](../../help/sites-developing/clientlibs.md) 사항과 디버깅 도구를 제공하는 클라이언트측 라이브러리 사용
 * [SCF 구성 ](client-customize.md#clientlibs) 요소를 사용자 지정할 때 유용한 정보를 제공하는 SCF용 Clientlibs
-* [블로그:예를 들어 AEM 클라이언트 라이브러리 설명](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
 
 ## Clientlibs가 필요한 이유 {#why-clientlibs-are-required}
 
@@ -37,11 +36,11 @@ Clientlibs는 구성 요소의 적절한 작동(JavaScript) 및 스타일(CSS)�
 
 필요한 clientlibs가 없으면 [Communities 구성 요소를 페이지](author-communities.md)에 추가하면 Javascript 오류와 예기치 않은 모양새가 발생할 수 있습니다.
 
-### 예:Clientlibs {#example-placed-reviews-without-clientlibs} 없이 검토함
+### 예: Clientlibs 없이 평가된 항목 {#example-placed-reviews-without-clientlibs}
 
 ![chlimage_1-244](assets/chlimage_1-244.png)
 
-### 예:Clientlibs {#example-placed-reviews-with-clientlibs}과 함께 검토함
+### 예: Clientlibs를 사용하여 검토함 {#example-placed-reviews-with-clientlibs}
 
 ![chlimage_1-245](assets/chlimage_1-245.png)
 
