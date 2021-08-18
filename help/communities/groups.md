@@ -12,9 +12,9 @@ discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
 pagetitle: Community Groups Console
 role: Admin
 exl-id: f8f19ad6-d6cd-4abd-bc31-6baba3e0356e
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1638'
 ht-degree: 2%
 
 ---
@@ -90,7 +90,7 @@ ht-degree: 2%
    * 기본 URL이 `Community Group Name` 아래에 표시됩니다
    * 유효한 URL에 &quot;.html&quot;을 추가합니다
 
-      *예*, `http://localhost:4502/content/sites/mysight/en/mygroup.html`
+      *예를 들어*, `http://localhost:4502/content/sites/mysight/en/mygroup.html`
 
 * **[!UICONTROL 커뮤니티 그룹]** 템플릿 메뉴: 풀다운 메뉴를 사용하여 사용 가능한  [커뮤니티 그룹 템플릿을 선택합니다](tools.md).
 
@@ -100,7 +100,7 @@ ht-degree: 2%
 
 ![communitygrouptoc](assets/communitygrouptheme.png)
 
-이 프레임워크는 [Twitter Bootstrap](https://twitterbootstrap.org/)을 사용하여 반응형 유연한 디자인을 사이트로 가져옵니다. 미리 로드된 여러 Bootstrap 테마 중 하나를 선택하여 선택한 커뮤니티 그룹 서식 파일의 스타일을 지정하거나 Bootstrap 테마를 업로드할 수 있습니다.
+프레임워크는 `Twitter Bootstrap`을 사용하여 반응형 유연한 디자인을 사이트로 가져옵니다. 미리 로드된 여러 Bootstrap 테마 중 하나를 선택하여 선택한 커뮤니티 그룹 서식 파일의 스타일을 지정하거나 Bootstrap 테마를 업로드할 수 있습니다.
 
 이 옵션을 선택하면 테마가 불투명한 파란색 확인 표시로 오버레이됩니다.
 
