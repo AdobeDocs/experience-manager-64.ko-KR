@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 42fb3c50-8728-4897-ade9-6b839294a10e
 role: Admin
 exl-id: c9406aae-288e-4cdf-ac01-cb26b423639e
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1149'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->고급 점수 및 배지 기능을 사용하려면 [전문가 식별 패키지](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg)를 설치하십시오.
+>고급 점수 및 배지 기능을 사용하려면 [전문가 식별 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq610%2Fsocial%2Ffeaturepack%2Fcq-social-expert-identification-pkg)를 설치하십시오.
 
 ## 구성 가능한 점수 엔진 {#configurable-scoring-engine}
 
@@ -130,7 +130,7 @@ stopwords 파일이 없으면 고급 점수 엔진이 오류가 발생합니다.
 |---------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | badgingPath | String[] | (필수) 배지 이미지의 최대 배지 레벨 수입니다. 배지 이미지 경로는 먼저 가장 높은 전문가에게 부여되도록 정렬해야 합니다. 배지 수준이 나타내는 것보다 적은 배지가 있는 경우 배열의 마지막 배지가 나머지 배열에 채워집니다. 예제 항목:/etc/community/badging/images/expert-badge/jcr:content/expert.png |
 | badgingLevels | 긴 | (선택 사항) 수여할 전문 지식 수준을 지정합니다. 예를 들어 전문가 및 거의 전문가(배지 2개)가 있어야 하는 경우 값을 2로 설정해야 합니다. badgingLevel은 badgingPath 속성에 대해 나열된 전문가 관련 배지 이미지 수와 일치해야 합니다. 기본값은 1입니다. |
-| badgingType | 문자열 | (필수) 점수 엔진을 &quot;기본&quot; 또는 &quot;고급&quot;으로 식별합니다. &quot;고급&quot;으로 설정하면 기본값이 &quot;기본&quot;입니다. |
+| badgingType | String | (필수) 점수 엔진을 &quot;기본&quot; 또는 &quot;고급&quot;으로 식별합니다. &quot;고급&quot;으로 설정하면 기본값이 &quot;기본&quot;입니다. |
 | scoringRules | 문자열[] | (선택 사항) 나열된 점수 규칙으로 식별된 점수 이벤트로 배지 규칙을 제한하는 복수 값 문자열입니다. 예 입력:/etc/community/scoring/rules/adv-comments-scoringDefault는 제한이 없습니다. |
 
 ## 포함 규칙 및 배지 {#included-rules-and-badge}
