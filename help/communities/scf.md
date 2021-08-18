@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 exl-id: 9264c888-a583-40eb-9178-273146f8a12b
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1506'
 ht-degree: 0%
 
 ---
@@ -125,7 +125,7 @@ GET(읽기) 작업 외에 프레임워크는 엔드포인트 패턴을 정의하
 
 ## Handlebars JS 템플릿 언어 {#handlebars-js-templating-language}
 
-새로운 프레임워크에서 가장 주목할 만한 변경 사항 중 하나는 서버-클라이언트 렌더링을 위한 널리 사용되는 오픈 소스 기술인 `Handlebars JS` 템플릿 언어(HBS)를 사용하는 것입니다.
+새로운 프레임워크에서 더욱 주목할 만한 변경 사항 중 하나는 서버-클라이언트 렌더링을 위한 일반적인 오픈 소스 기술인 [Handlebars JS](https://handlebarsjs.com/) 템플릿 언어(HBS)를 사용하는 것입니다.
 
 HBS는 클라이언트 측 렌더링을 지원하므로 HBS 스크립트는 간단한 논리 없이 서버 및 클라이언트 모두에서 컴파일되고 오버레이 및 사용자 지정이 쉽고 클라이언트 UX와 자연스럽게 바인딩됩니다.
 
