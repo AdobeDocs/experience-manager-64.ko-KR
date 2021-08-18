@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
 role: Admin
 exl-id: f1408709-5402-4f55-bd37-9943fe828af0
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '3241'
+source-wordcount: '3237'
 ht-degree: 4%
 
 ---
@@ -102,7 +102,7 @@ ht-degree: 4%
    * 기본 URL( `https://*server:port/site root/site name*)`이 `Community Site Name` 아래에 표시됩니다
    * 올바른 URL의 경우 기본 언어 코드 + &quot;.html&quot;을 추가합니다
 
-      *예*, `http://localhost:4502/content/sites/mysight/en.html`
+      *예를 들어*, `http://localhost:4502/content/sites/mysight/en.html`
 
 * **[!UICONTROL 커뮤니티 사이트]** 템플릿 메뉴: 풀다운 메뉴를 사용하여 사용 가능한  [커뮤니티 사이트 템플릿을 선택합니다](tools.md).
 
@@ -116,7 +116,7 @@ ht-degree: 4%
 
 ![site테마-1](assets/sitetheme-1.png)
 
-이 프레임워크는 [Twitter Bootstrap](https://twitterbootstrap.org/)을 사용하여 반응형 유연한 디자인을 사이트로 가져옵니다. 미리 로드된 여러 Bootstrap 테마 중 하나를 선택하여 선택한 커뮤니티 사이트 템플릿의 스타일을 지정하거나 Bootstrap 테마를 업로드할 수 있습니다.
+프레임워크는 `Twitter Bootstrap`을 사용하여 반응형 유연한 디자인을 사이트로 가져옵니다. 미리 로드된 여러 Bootstrap 테마 중 하나를 선택하여 선택한 커뮤니티 사이트 템플릿의 스타일을 지정하거나 Bootstrap 테마를 업로드할 수 있습니다.
 
 이 옵션을 선택하면 테마가 불투명한 파란색 확인 표시로 오버레이됩니다.
 
