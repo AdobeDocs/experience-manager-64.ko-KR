@@ -1,8 +1,8 @@
 ---
 title: Adobe Experience Manager 6.4의 일반적인 릴리스 노트
-seo-title: 릴리스 노트
+seo-title: Release Notes
 description: 'Adobe Experience Manager 6.4 참고는 릴리스 정보, 새로운 기능, 설치 방법 및 상세 변경 목록을 간략하게 설명합니다. '
-seo-description: 'Adobe Experience Manager 6.4 참고는 릴리스 정보, 새로운 기능, 설치 방법 및 상세 변경 목록을 간략하게 설명합니다. '
+seo-description: Adobe Experience Manager 6.4 notes outlining the release information, what's new, how to install and detailed change lists.
 uuid: 5a220301-2727-4078-ba19-4a2dbf9657f4
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,10 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
-source-git-commit: eb55489da5e390578b2ae71be424930e9bf3efd3
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '2813'
-ht-degree: 32%
+source-wordcount: '2754'
+ht-degree: 30%
 
 ---
 
@@ -100,18 +100,18 @@ UI의 생산성과 사용 편의성을 향상시키기 위해 UI에 다양한 �
 
 ![screen_shot_2018-04-04at71143am](assets/screen_shot_2018-04-04at71143am.png)
 
-#### 이전 버전 {#upgrade-from-earlier-version}에서 업그레이드
+#### 이전 버전에서 업그레이드 {#upgrade-from-earlier-version}
 
-* [이전 버전과의 호환성](/help/sites-deploying/backward-compatibility.md):6.4의 이전 버전과 호환되는 기능에서는 대부분의 경우 사용자 지정 코드가 호환되며, 업그레이드 노력을 줄일 수 있습니다.
-* [업그레이드 복잡성 평가](/help/sites-deploying/pattern-detector.md):업그레이드하기 전에 업그레이드의 복잡성을 평가하는 새 패턴 탐지기 도구입니다.
-* [저장소 구조 변경](/help/sites-deploying/repository-restructuring.md):업그레이드를 용이하게 하고 구현 모범 사례를 홍보하기 위한 중요한 재구성(주로 /etc)
+* [이전 버전과의 호환성](/help/sites-deploying/backward-compatibility.md): 6.4의 이전 버전과 호환되는 기능에서는 대부분의 경우 사용자 지정 코드가 호환되며, 업그레이드 노력을 줄일 수 있습니다.
+* [업그레이드 복잡성 평가](/help/sites-deploying/pattern-detector.md): 업그레이드하기 전에 업그레이드의 복잡성을 평가하는 새 패턴 탐지기 도구입니다.
+* [저장소 구조 변경](/help/sites-deploying/repository-restructuring.md): 업그레이드를 용이하게 하고 구현 모범 사례를 홍보하기 위한 중요한 재구성(주로 /etc)
 * 업그레이드에 대한 자세한 내용은 [이 페이지](/help/sites-deploying/upgrade.md)를 참조하십시오.
 
 ### Experience Manager Sites {#experience-manager-sites}
 
 [AEM Sites 및 추가 기능](sites.md)의 전체 변경 목록입니다.
 
-#### Fluid Experiences {#fluid-experiences}
+#### 유연한 환경 {#fluid-experiences}
 
 컨텐츠 조각, 경험 조각 및 컨텐츠 서비스가 지원하는 2017년 초에 Fluid Experiences의 도입은 멀티채널 최초 컨텐츠 관리로 진화를 기하기 시작했습니다. AEM 6.4는 각 영역을 크게 확장합니다.
 
@@ -127,11 +127,11 @@ UI의 생산성과 사용 편의성을 향상시키기 위해 UI에 다양한 �
 
 Sling 모델 익스포터 및 핵심 구성 요소에 대한 다양한 개선 사항이 포함되며, 강력한 JSON 출력을 제공하여 단일 페이지 앱을 사용하여 모바일 앱 및 경험에 콘텐츠를 포함할 수 있습니다.
 
-#### 더 빠르게 사이트 빌드 {#gettings-sites-built-quicker}
+#### 보다 신속하게 사이트 구축 {#gettings-sites-built-quicker}
 
 AEM 6.4는 차세대 구성 요소 모델로 변환을 완료합니다. AEM 6.3에서 도입되었으며 이제 스타일 시스템으로 결합되어 있는 코어 구성 요소 개념은 새 사이트를 작성하고 기존 사이트를 확장하는 효율적인 방법을 제공합니다.
 
-새 구성 요소 모델을 가장 잘 활용하는 방법을 배우려면 권장되는 자습서입니다.[AEM Sites 시작하기 - WKND 자습서](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+새 구성 요소 모델을 가장 잘 활용하는 방법을 배우려면 권장되는 자습서입니다. [AEM Sites 시작하기 - WKND 자습서](https://docs.adobe.com/content/help/ko/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 #### 화면 추가 기능 {#screens-add-on}
 
@@ -143,7 +143,7 @@ AEM Screens은 디지털 간판 및 키오스크 네트워크를 포함한 모�
 
 AEM 6.4는 커뮤니티에 많은 새로운 기능과 개선 사항을 추가합니다. 전체 변경 목록은 [AEM Communities](communities-release-notes.md)에서 사용할 수 있습니다. 이 릴리스의 주요 기능은 다음과 같습니다.
 
-#### 중재 개선 사항 {#enhancements-to-moderation}
+#### 중재 개선 {#enhancements-to-moderation}
 
 **자동 스팸 감지**
 
@@ -175,7 +175,7 @@ AEM 6.4 Communities는 최종 사용자가 데이터를 제어할 수 있도록 
 
 이제 전역 탐색에서 탐색하는 동안 각 사이트 및 그룹에서 삭제 아이콘을 사용할 수 있습니다. 이 아이콘을 사용하면 사이트나 그룹과 연관된 모든 항목과 컨텐츠가 삭제되고 모든 사용자 연결이 제거됩니다. 이 기능에 대한 자세한 내용은 [커뮤니티 사이트 관리](/help/communities/create-site.md#main-pars-text-fe17) 및 [커뮤니티 그룹 관리](/help/communities/groups.md#main-pars-text-5e8c)를 참조하십시오.
 
-#### 지원 {#enhancements-to-enablement} 개선 사항
+#### 지원 개선 사항 {#enhancements-to-enablement}
 
 이제 그룹 내에서 할당 및 카탈로그 기능을 사용할 수 있습니다. 이를 통해 특정 타깃팅된 커뮤니티 구성원에 대해 학습 컨텐츠를 생성, 관리 및 게시할 수 있습니다. 커뮤니티 그룹 활성화에 대한 자세한 내용은 [지원 리소스 관리](/help/communities/resource.md)를 참조하십시오.
 
@@ -195,7 +195,7 @@ AEM 6.4는 향상된 새 Creative Cloud 통합, 주요 인공 지능(AI) 혁신,
 
 **AEM Desktop App**
 
-AEM 데스크탑 앱이 AEM 6.4와 호환되는 버전 1.8로 업데이트되었습니다. AEM 데스크탑 앱에 대한 전체 변경 사항 목록은 전용 [AEM 데스크탑 앱 릴리스 노트](https://docs.adobe.com/content/help/ko-KR/experience-manager-desktop-app/using/release-notes.html) 문서에 제공됩니다.
+AEM 데스크탑 앱이 AEM 6.4와 호환되는 버전 1.8로 업데이트되었습니다. AEM 데스크탑 앱에 대한 전체 변경 사항 목록은 전용 [AEM 데스크탑 앱 릴리스 노트](https://docs.adobe.com/content/help/ko/experience-manager-desktop-app/using/release-notes.html) 문서에 제공됩니다.
 
 AEM 6.3 릴리스부터 향상된 기능에는 배경에서 계층 폴더를 업로드하는 기능, 자산 백그라운드 작업을 모니터링하는 새 UI, 향상된 캐싱, 네트워킹 및 로그인, 전반적인 안정성 개선 사항이 포함됩니다. 설명서에는 [우수 사례 가이드](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)도 포함되어 있습니다.
 
@@ -219,7 +219,7 @@ AEM 6.3 릴리스부터 향상된 기능에는 배경에서 계층 폴더를 업
 
 **Brand Portal**
 
-메타데이터, 보고, 디지털 권한, 로그인 경험 및 자산 배포를 위한 게시 성능 영역의 다양한 개선 사항. 새로운 개선 사항 및 기능에 대해 알아보려면 [AEM Assets Brand Portal의 새로운 기능](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/introduction/whats-new.html)을 참조하십시오.
+메타데이터, 보고, 디지털 권한, 로그인 경험 및 자산 배포를 위한 게시 성능 영역의 다양한 개선 사항. 새로운 개선 사항 및 기능에 대해 알아보려면 [AEM Assets Brand Portal의 새로운 기능](https://docs.adobe.com/content/help/ko/experience-manager-brand-portal/using/introduction/whats-new.html)을 참조하십시오.
 
 #### Dynamic Media 추가 기능 {#dynamic-media-add-on}
 
@@ -278,11 +278,11 @@ Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 
 **Foundation**
 
 * 독립형 빠른 시작: cq-quickstart-6.4.0.jar
-* 애플리케이션 서버 빠른 시작:cq-quickstart-6.4.0.war
+* 애플리케이션 서버 빠른 시작: cq-quickstart-6.4.0.war
 * 다양한 웹 서버 및 플랫폼에 대한 4.3.1 이상 [다운로드 링크](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/release-notes.html)를 참조하십시오.
 * Eclipse IDE용 플러그인입니다. [자세한 내용을 읽고 ](/help/sites-developing/aem-eclipse.md)을 다운로드하십시오.
 
-* 대괄호 코드 편집기의 확장입니다.[자세히 읽고 ](/help/sites-developing/aem-brackets.md) 다운로드
+* 대괄호 코드 편집기의 확장입니다. [자세히 읽고 ](/help/sites-developing/aem-brackets.md) 다운로드
 * Maven/Gradle 종속성. [다운로드 링크](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/aem/uber-jar/6.1.0/)를 참조하십시오.
 
 **사이트**
@@ -312,11 +312,11 @@ Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 
 
 * AEM Forms 기능 패키지:
 
-   * [adobe-aemfd-aix-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-AIX)
-   * [adobe-aemfd-linux-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-LX)
-   * [adobe-aemfd-solaris-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-SOL)
-   * [adobe-aemfd-win-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-WIN)
-   * [adobe-aemfd-osx-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-OSX)
+   * [adobe-aemfd-aix-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+   * [adobe-aemfd-linux-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+   * [adobe-aemfd-solaris-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.htmlL)
+   * [adobe-aemfd-win-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+   * [adobe-aemfd-osx-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 
 ## 언어 {#languages}
 

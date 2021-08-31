@@ -1,24 +1,24 @@
 ---
 title: 적응형 양식에서 Adobe Sign 사용
-seo-title: 적응형 양식에서 Adobe Sign 사용
+seo-title: Using Adobe Sign in an adaptive form
 description: '적응형 양식의 전자 서명(Adobe Sign) 워크플로우를 통해 서명 워크플로우를 자동화하고 단일 및 다중 서명 프로세스를 간소화하고 모바일 장치에서 양식에 전자 서명할 수 있습니다. '
-seo-description: 적응형 양식의 전자 서명(Adobe Sign) 워크플로우를 통해 서명 워크플로우를 자동화하고 단일 및 다중 서명 프로세스를 간소화하고 모바일 장치에서 양식에 전자 서명할 수 있습니다.
+seo-description: Enable e-signature (Adobe Sign) workflows for an adaptive form to automate signing workflows, simplify single and multi-signature processes, and to electronically sign forms from mobile devices.
 uuid: 9c65dc44-c1a5-44df-8659-6efbe347575b
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 29fc297e-0a95-4d2a-bfe6-5676d53624db
 noindex: true
-feature: 응용 Forms, Adobe Sign
+feature: Adaptive Forms, Adobe Sign
 exl-id: 5922ea6e-8be9-4e65-89a6-67b6cc12c4ee
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '3596'
+source-wordcount: '3562'
 ht-degree: 0%
 
 ---
 
-# 적응형 양식 {#using-adobe-sign-in-an-adaptive-form}에서 Adobe Sign 사용
+# 적응형 양식에서 Adobe Sign 사용 {#using-adobe-sign-in-an-adaptive-form}
 
 적응형 양식의 전자 서명(Adobe Sign) 워크플로우를 통해 서명 워크플로우를 자동화하고 단일 및 다중 서명 프로세스를 간소화하고 모바일 장치에서 양식에 전자 서명할 수 있습니다.
 
@@ -49,7 +49,7 @@ AEM Forms과 Adobe Sign 통합은 다음을 지원합니다.
 * AEM Forms 클라우드 서비스가 Adobe Sign을 사용하도록 구성되어 있는지 확인합니다. 자세한 내용은 [Adobe Sign과 AEM Forms 통합](/help/forms/using/adobe-sign-integration-adaptive-forms.md)을 참조하십시오.
 * 서명자 목록을 준비하세요. 모든 서명자에 대해 이메일 주소가 최소 필요합니다.
 
-## 적응형 양식 {#configure-adobe-sign-for-an-adaptive-form}에 대한 Adobe Sign 구성
+## 적응형 양식에 대한 Adobe Sign 구성 {#configure-adobe-sign-for-an-adaptive-form}
 
 적응형 양식에 대해 Adobe Sign을 구성하려면 다음 단계를 수행하십시오.
 
@@ -69,7 +69,7 @@ AEM Forms과 Adobe Sign 통합은 다음을 지원합니다.
 
 [Adobe 서명을 위한 적응형 양식 만들기 ](/help/forms/using/working-with-adobe-sign.md#create-an-adaptive-form-for-adobe-sign) 는 기본 적응형 양식을 만드는 단계를 설명합니다. 적응형 양식을 만드는 동안 사용할 수 있는 다른 옵션에 대해서는 [적응형 양식 만들기](/help/forms/using/creating-adaptive-form.md)를 참조하십시오.
 
-#### Adobe Sign {#create-an-adaptive-form-for-adobe-sign}에 대한 적응형 양식 만들기
+#### Adobe Sign용 적응형 양식 만들기 {#create-an-adaptive-form-for-adobe-sign}
 
 다음 단계를 수행하여 Adobe Sign에 대한 적응형 양식을 만듭니다.
 
@@ -195,7 +195,7 @@ AEM Forms 인스턴스에 대해 여러 Adobe Sign 서비스를 구성할 수 �
 
    ![signer-details-1](assets/signer-details-1.png)
 
-   위의 이미지에는 두 가지 Adobe Sign 블록 예제가 있습니다.개인 정보 및 Office 세부 정보
+   위의 이미지에는 두 가지 Adobe Sign 블록 예제가 있습니다. 개인 정보 및 Office 세부 정보
 
    완료 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 아이콘을 탭합니다. 서명자가 추가되고 구성됩니다.
 
@@ -211,7 +211,7 @@ AEM Forms 인스턴스에 대해 여러 Adobe Sign 서비스를 구성할 수 �
 
 양식 서명 경험이 준비되었습니다. 양식을 미리 보고 서명 경험을 확인할 수 있습니다. 게시된 양식에서, Adobe Sign 블록 필드는 서명자가 이메일을 통해 서명하는 양식을 수신하면 표시됩니다. 이 경험을 양식 없는 서명 경험이라고도 합니다. 첫 번째 서명자에 대해 양식 서명 경험을 구성할 수도 있습니다. 자세한 단계는 [양식 서명 경험 만들기](/help/forms/using/working-with-adobe-sign.md#create-in-form-signing-experience)를 참조하십시오.
 
-## 적응형 양식 {#configure-cloud-signatures-for-an-adaptive-form}에 대한 클라우드 서명 구성
+## 적응형 양식에 대한 클라우드 서명 구성 {#configure-cloud-signatures-for-an-adaptive-form}
 
 클라우드 기반 디지털 서명 또는 원격 서명은 데스크탑, 모바일 및 웹에서 작동하는 새로운 세대의 디지털 서명으로, 서명자 인증을 위한 최고 수준의 규정 준수 및 보증을 충족합니다. 클라우드 기반 디지털 서명을 사용하여 적응형 양식에 서명할 수 있습니다.
 
@@ -237,8 +237,8 @@ Adobe 기호](#enableadobesign)에 대한 적응형 양식 속성을 편집한 �
 
    다음을 사용하여 적응형 양식에 디지털 서명을 적용합니다.
 
-   * 클라우드 서명:트러스트 서비스 공급자가 호스팅하는 [디지털 ID](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html)로 서명합니다.
-   * Adobe Acrobat 또는 Reader:Adobe Acrobat 또는 Reader으로 문서를 다운로드하여 열어 스마트 카드, USB 토큰 또는 파일 기반 디지털 ID를 사용하여 서명합니다.
+   * 클라우드 서명: 트러스트 서비스 공급자가 호스팅하는 [디지털 ID](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html)로 서명합니다.
+   * Adobe Acrobat 또는 Reader: Adobe Acrobat 또는 Reader으로 문서를 다운로드하여 열어 스마트 카드, USB 토큰 또는 파일 기반 디지털 ID를 사용하여 서명합니다.
 
    적응형 양식에 클라우드 서명 필드를 추가한 후 다음 단계를 수행하여 구성 프로세스를 완료합니다.
 
@@ -257,7 +257,7 @@ Adobe 기호](#enableadobesign)에 대한 적응형 양식 속성을 편집한 �
 
 ![양식 서명 경험](assets/in-form-signing-experience.png)
 
-### 서명 단계 구성 요소 {#add-and-configure-the-signature-step-component} 추가 및 구성
+### 서명 단계 구성 요소 추가 및 구성 {#add-and-configure-the-signature-step-component}
 
 서명 단계 구성 요소를 사용하여 채워진 양식에 전자 서명할 영역을 제공합니다. 서명 단계 구성 요소가 포함된 섹션을 렌더링하면 채워진 양식의 서명 가능한 PDF 버전이 표시됩니다. 서명 단계 구성 요소는 양식에 사용할 수 있는 전체 너비를 높입니다. 서명 단계 구성 요소가 포함된 섹션에는 다른 구성 요소가 없는 것이 좋습니다.
 
@@ -266,12 +266,12 @@ Adobe 기호](#enableadobesign)에 대한 적응형 양식 속성을 편집한 �
 1. 구성 요소 브라우저에서 **서명 단계** 구성 요소를 양식에 드래그하여 놓습니다.
 1. 새로 추가된 서명 단계 구성 요소를 선택하고 **구성** ![구성](assets/configure.png) 아이콘을 탭합니다. 속성 브라우저를 열고 서명 단계 속성을 표시합니다. 다음 속성을 구성합니다.
 
-   * **요소 이름**:구성 요소의 이름을 지정합니다.
+   * **요소 이름**: 구성 요소의 이름을 지정합니다.
    * **제목:** 구성 요소의 고유한 제목을 지정합니다.
    * **템플릿 메시지:**  서명 PDF를 로드하는 동안 표시할 메시지를 지정합니다. Adobe Sign 서비스는 서명 PDF를 준비하고 로드하는 데 시간이 오래 걸립니다.
    * **서명 서비스:**  **Adobe 사인오프를** 선택합니다.
-   * **기존 E-sign 구성 요소 사용**: [AEM Forms 작업 공간](/help/forms/using/introduction-html-workspace.md), AEM Forms 앱 또는 기본 적응형 양식에 기존 전자 서명 구성 요소가 있는 경우, 기존 전자  **서명 구성 요소 사용 옵션을** 선택합니다.
-   * **구성**:구성(Adobe Sign Cloud Service)을 선택합니다. 드롭다운 상자는 **기존 전자 서명 구성 요소 사용** 옵션이 활성화된 경우에만 사용할 수 있습니다.
+   * **기존 E-sign 구성 요소 사용**:  [AEM Forms 작업 공간](/help/forms/using/introduction-html-workspace.md), AEM Forms 앱 또는 기본 적응형 양식에 기존 전자 서명 구성 요소가 있는 경우, 기존 전자  **서명 구성 요소 사용 옵션을** 선택합니다.
+   * **구성**: 구성(Adobe Sign Cloud Service)을 선택합니다. 드롭다운 상자는 **기존 전자 서명 구성 요소 사용** 옵션이 활성화된 경우에만 사용할 수 있습니다.
 
    완료 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 아이콘을 탭하여 변경 내용을 저장합니다.
 
@@ -283,7 +283,7 @@ Adobe 기호](#enableadobesign)에 대한 적응형 양식 속성을 편집한 �
    >* Adobe Sign이 활성화된 적응형 양식은 서명 단계 구성 요소를 사용하여 섹션이나 패널에서 제출 단추 사용을 지원하지 않습니다. 수동 제출을 위한 서명 단계 이후에 요약 단계를 추가하거나 [Adobe Sign 구성 서비스](/help/forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status)를 사용하여 간격을 설정한 후 자동 제출을 트리거할 수 있습니다.
 
 
-### 감사 인사 페이지 또는 요약 단계 구성 요소 {#configure-the-thank-you-page-or-summary-step-component} 구성
+### 감사 인사 페이지 또는 요약 단계 구성 요소 구성 {#configure-the-thank-you-page-or-summary-step-component}
 
 **요약 단계** 구성 요소는 자동으로 양식을 제출하고, 사용자 지정된 요약 페이지 내에 정보를 채우고, 제출된 양식의 요약을 표시합니다. 또한 반환 맵에서 필요한 정보를 가져옵니다. 요약 단계 구성 요소는 양식에 사용할 수 있는 전체 너비를 설정합니다. 요약 단계 구성 요소가 포함된 섹션에는 다른 구성 요소가 없는 것이 좋습니다.
 
@@ -291,19 +291,19 @@ Adobe 기호](#enableadobesign)에 대한 적응형 양식 속성을 편집한 �
 
 ## FAQ {#frequently-asked-questions}
 
-**Q:적응형 양식을 다른 적응형 양식에 포함할 수 있습니다. 포함된 적응형 양식을 Adobe Sign에서 활성화할 수 있습니까?**
+**Q: 적응형 양식을 다른 적응형 양식에 포함할 수 있습니다. 포함된 적응형 양식을 Adobe Sign에서 활성화할 수 있습니까?**
 
 **Ans:** 아니요. AEM Forms은 서명을 위해 Adobe Sign이 활성화된 적응형 양식을 포함하는 적응형 양식 사용을 지원하지 않습니다.
 
-**Q:고급 템플릿을 사용하여 적응형 양식을 만들고 편집할 수 있도록 열면 &quot;전자 서명 또는 서명자가 올바르게 구성되지 않았습니다.&quot;라는 오류 메시지가 표시됩니다. 이 나타납니다. 오류 메시지를 해결하는 방법?**
+**Q: 고급 템플릿을 사용하여 적응형 양식을 만들고 편집할 수 있도록 열면 &quot;전자 서명 또는 서명자가 올바르게 구성되지 않았습니다.&quot;라는 오류 메시지가 표시됩니다. 이 나타납니다. 오류 메시지를 해결하는 방법?**
 
 **Ans:** 고급 템플릿을 사용하여 생성된 적응형 양식은 Adobe Sign을 사용하도록 구성됩니다. 오류를 해결하려면 Adobe Sign 클라우드 구성을 만들고 선택하고 적응형 양식의 Adobe Sign 서명자를 구성합니다.
 
-**Q:적응형 양식의 정적 텍스트 구성 요소에서 Adobe Sign 텍스트 태그를 사용할 수 있습니까?**
+**Q: 적응형 양식의 정적 텍스트 구성 요소에서 Adobe Sign 텍스트 태그를 사용할 수 있습니까?**
 
-**Ans:** 예. 텍스트 구성 요소에서 텍스트 태그를 사용하여 Adobe Sign 필드를  [기록 문서](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (레코드 자동 생성 옵션만 해당)가 활성화된 적응형 양식에 추가할 수 있습니다. 텍스트 태그를 만드는 절차 및 규칙에 대해 알아보려면 [Adobe Sign 설명서](https://helpx.adobe.com/sign/help/text-tags.html)를 참조하십시오. 또한 적응형 양식에는 텍스트 태그에 대한 지원이 제한됩니다. 텍스트 태그를 사용하여 Adobe Sign 블록이 지원하는 필드만 만들 수 있습니다.
+**Ans:** 예. 텍스트 구성 요소에서 텍스트 태그를 사용하여 Adobe Sign 필드를  [기록 문서](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (레코드 자동 생성 옵션만 해당)가 활성화된 적응형 양식에 추가할 수 있습니다. 텍스트 태그를 만드는 절차 및 규칙에 대해 알아보려면 [Adobe Sign 설명서](https://experienceleague.adobe.com/docs/document-cloud-learn/sign-learning-hub/admin-set-up/advanced-tasks-admins/adobe-sign-text-tagging.html)를 참조하십시오. 또한 적응형 양식에는 텍스트 태그에 대한 지원이 제한됩니다. 텍스트 태그를 사용하여 Adobe Sign 블록이 지원하는 필드만 만들 수 있습니다.
 
-**Q:AEM Forms은 Adobe Sign 블록 및 서명 단계 구성 요소를 모두 제공합니다. 적응형 양식에서 동시에 사용할 수 있습니까?**
+**Q: AEM Forms은 Adobe Sign 블록 및 서명 단계 구성 요소를 모두 제공합니다. 적응형 양식에서 동시에 사용할 수 있습니까?**
 
 **Ans:**  양식에서 두 구성 요소를 동시에 사용할 수 있습니다. 다음은 이러한 구성 요소를 사용하기 위한 몇 가지 권장 사항입니다.
 

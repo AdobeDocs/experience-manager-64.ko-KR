@@ -1,8 +1,8 @@
 ---
 title: 웹 서비스를 사용하여 AEM Forms 호출
-seo-title: 웹 서비스를 사용하여 AEM Forms 호출
+seo-title: Invoking AEM Forms using Web Services
 description: WSDL 생성을 완벽하게 지원하는 웹 서비스를 사용하여 AEM Forms 프로세스를 호출합니다.
-seo-description: WSDL 생성을 완벽하게 지원하는 웹 서비스를 사용하여 AEM Forms 프로세스를 호출합니다.
+seo-description: Invoke AEM Forms processes using web services with full support for WSDL generation.
 uuid: 66bcd010-c476-4b66-831d-a48307d8d67a
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
 exl-id: cd4b5e40-afd5-422d-ae2e-cfde0f4d6b1a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10008'
+source-wordcount: '9928'
 ht-degree: 0%
 
 ---
@@ -22,8 +22,8 @@ ht-degree: 0%
 
 서비스 컨테이너의 대부분의 AEM Forms 서비스는 WSDL(웹 서비스 정의 언어) 생성을 완벽하게 지원하므로 웹 서비스를 노출하도록 구성됩니다. 즉, AEM Forms 서비스의 기본 SOAP 스택을 사용하는 프록시 개체를 만들 수 있습니다. 따라서 AEM Forms 서비스는 다음 SOAP 메시지를 교환하고 처리할 수 있습니다.
 
-* **SOAP 요청**:작업을 요청하는 클라이언트 애플리케이션에서 Forms 서비스로 전송됩니다.
-* **SOAP 응답**:SOAP 요청이 처리된 후 Forms 서비스에서 클라이언트 애플리케이션에 전송됩니다.
+* **SOAP 요청**: 작업을 요청하는 클라이언트 애플리케이션에서 Forms 서비스로 전송됩니다.
+* **SOAP 응답**: SOAP 요청이 처리된 후 Forms 서비스에서 클라이언트 애플리케이션에 전송됩니다.
 
 웹 서비스를 사용하면 Java API를 사용하여 수행할 수 있는 것과 동일한 AEM Forms 서비스 작업을 수행할 수 있습니다. 웹 서비스를 사용하여 AEM Forms 서비스를 호출하는 경우 SOAP를 지원하는 개발 환경에서 클라이언트 응용 프로그램을 만들 수 있다는 이점이 있습니다. 클라이언트 응용 프로그램이 특정 개발 환경 또는 프로그래밍 언어에 바인딩되지 않습니다. 예를들어 Microsoft Visual Studio .NET 및 C#을 프로그래밍 언어로 사용하여 클라이언트 응용 프로그램을 만들 수 있습니다.
 
@@ -31,11 +31,11 @@ AEM Forms 서비스는 SOAP 프로토콜을 통해 노출되며 WSI Basic Profil
 
 AEM Forms은 다음과 같은 웹 서비스 표준을 지원합니다.
 
-* **인코딩**:문서 및 리터럴 인코딩(WSI Basic 프로필에 따라 선호되는 인코딩)만 지원합니다. ([Base64 인코딩을 사용하여 AEM Forms 호출](#invoking-aem-forms-using-base64-encoding)을 참조하십시오.)
-* **MTOM**:SOAP 요청으로 첨부 파일을 인코딩하는 방법을 나타냅니다. ([MTOM](#invoking-aem-forms-using-mtom)을 사용하여 AEM Forms 호출 을 참조하십시오.)
-* **SwaRef**:SOAP 요청으로 첨부 파일을 인코딩하는 또 다른 방법을 나타냅니다. ([SwaRef](#invoking-aem-forms-using-swaref)를 사용하여 AEM Forms 호출 을 참조하십시오.)
-* **첨부 파일이 있는 SOAP**:MIME 및 DIME(직접 인터넷 메시지 캡슐화)를 모두 지원합니다. 이러한 프로토콜은 SOAP를 통해 첨부 파일을 보내는 표준 방법입니다. Microsoft Visual Studio .NET 응용 프로그램은 DIME를 사용합니다. ([Base64 인코딩을 사용하여 AEM Forms 호출](#invoking-aem-forms-using-base64-encoding)을 참조하십시오.)
-* **WS-Security**:WS 보안 SOAP 헤더의 일부로 사용자 이름 및 암호를 전송하는 표준 방법인 사용자 이름 암호 토큰 프로필을 지원합니다. AEM Forms은 HTTP 기본 인증도 지원합니다. ([WS-Security 헤더를 사용하여 자격 증명 전달](https://www.adobe.com/devnet/livecycle/articles/passing_credentials.html)을 참조하십시오.)
+* **인코딩**: 문서 및 리터럴 인코딩(WSI Basic 프로필에 따라 선호되는 인코딩)만 지원합니다. ([Base64 인코딩을 사용하여 AEM Forms 호출](#invoking-aem-forms-using-base64-encoding)을 참조하십시오.)
+* **MTOM**: SOAP 요청으로 첨부 파일을 인코딩하는 방법을 나타냅니다. ([MTOM](#invoking-aem-forms-using-mtom)을 사용하여 AEM Forms 호출 을 참조하십시오.)
+* **SwaRef**: SOAP 요청으로 첨부 파일을 인코딩하는 또 다른 방법을 나타냅니다. ([SwaRef](#invoking-aem-forms-using-swaref)를 사용하여 AEM Forms 호출 을 참조하십시오.)
+* **첨부 파일이 있는 SOAP**: MIME 및 DIME(직접 인터넷 메시지 캡슐화)를 모두 지원합니다. 이러한 프로토콜은 SOAP를 통해 첨부 파일을 보내는 표준 방법입니다. Microsoft Visual Studio .NET 응용 프로그램은 DIME를 사용합니다. ([Base64 인코딩을 사용하여 AEM Forms 호출](#invoking-aem-forms-using-base64-encoding)을 참조하십시오.)
+* **WS-Security**: WS 보안 SOAP 헤더의 일부로 사용자 이름 및 암호를 전송하는 표준 방법인 사용자 이름 암호 토큰 프로필을 지원합니다. AEM Forms은 HTTP 기본 인증도 지원합니다.
 
 웹 서비스를 사용하여 AEM Forms 서비스를 호출하려면 일반적으로 서비스 WSDL을 사용하는 프록시 라이브러리를 만듭니다. *웹 서비스를 사용하여 AEM Forms 호출* 섹션에서는 JAX-WS를 사용하여 서비스를 호출하는 Java 프록시 클래스를 생성합니다. (JAX-WS](#creating-java-proxy-classes-using-jax-ws)를 사용하여 Java 프록시 클래스 만들기를 참조하십시오.)[
 
@@ -45,7 +45,7 @@ AEM Forms은 다음과 같은 웹 서비스 표준을 지원합니다.
  https://<your_serverhost>:<your_port>/soap/services/<service_name>?wsdl[&version=<version>][&async=true|false][lc_version=<lc_version>]
 ```
 
-위치:
+다음의 경우:
 
 * *your_* serverhoststore는 AEM Forms을 호스팅하는 J2EE 애플리케이션 서버의 IP 주소를 나타냅니다.
 * *your_* portretrepresents J2EE 응용 프로그램 서버가 사용하는 HTTP 포트를 나타냅니다.
@@ -214,11 +214,11 @@ AEM Forms 서비스 작업에서 입력 값으로 `BLOB` 유형이 필요한 경
 
 다음과 같이 `BLOB` 인스턴스에 속하는 필드에 값을 할당합니다.
 
-* **Base64**:데이터를 Base64 형식으로 인코딩된 텍스트로 전달하려면  `BLOB.binaryData` 필드에서 데이터를 설정하고 필드에서 MIME 형식(예:  `application/pdf`)으로 데이터 유형을  `BLOB.contentType` 설정합니다. ([Base64 인코딩을 사용하여 AEM Forms 호출](#invoking-aem-forms-using-base64-encoding)을 참조하십시오.)
-* **MTOM**:MTOM 첨부 파일에서 이진 데이터를 전달하려면 필드에 데이터를  `BLOB.MTOM` 설정합니다. 이 설정은 Java JAX-WS 프레임워크 또는 SOAP 프레임워크의 기본 API를 사용하여 데이터를 SOAP 요청에 첨부합니다. ([MTOM](#invoking-aem-forms-using-mtom)을 사용하여 AEM Forms 호출 을 참조하십시오.)
-* **SwaRef**:WS-I SwaRef 첨부 파일에서 이진 데이터를 전달하려면 필드에 데이터를  `BLOB.swaRef` 설정합니다. 이 설정은 Java JAX-WS 프레임워크를 사용하여 데이터를 SOAP 요청에 첨부합니다. ([SwaRef](#invoking-aem-forms-using-swaref)를 사용하여 AEM Forms 호출 을 참조하십시오.)
-* **MIME 또는 DIME 첨부 파일**:MIME 또는 DIME 첨부 파일에서 데이터를 전달하려면 SOAP 프레임워크의 기본 API를 사용하여 데이터를 SOAP 요청에 첨부하십시오. `BLOB.attachmentID` 필드에서 첨부 파일 식별자를 설정합니다. ([Base64 인코딩을 사용하여 AEM Forms 호출](#invoking-aem-forms-using-base64-encoding)을 참조하십시오.)
-* **원격 URL**:데이터가 웹 서버에 호스팅되고 HTTP URL을 통해 액세스할 수 있는 경우 필드에서 HTTP URL을  `BLOB.remoteURL` 설정합니다. ([HTTP](#invoking-aem-forms-using-blob-data-over-http)에서 BLOB 데이터를 사용하여 AEM Forms 호출 을 참조하십시오.)
+* **Base64**: 데이터를 Base64 형식으로 인코딩된 텍스트로 전달하려면  `BLOB.binaryData` 필드에서 데이터를 설정하고 필드에서 MIME 형식(예:  `application/pdf`)으로 데이터 유형을  `BLOB.contentType` 설정합니다. ([Base64 인코딩을 사용하여 AEM Forms 호출](#invoking-aem-forms-using-base64-encoding)을 참조하십시오.)
+* **MTOM**: MTOM 첨부 파일에서 이진 데이터를 전달하려면 필드에 데이터를  `BLOB.MTOM` 설정합니다. 이 설정은 Java JAX-WS 프레임워크 또는 SOAP 프레임워크의 기본 API를 사용하여 데이터를 SOAP 요청에 첨부합니다. ([MTOM](#invoking-aem-forms-using-mtom)을 사용하여 AEM Forms 호출 을 참조하십시오.)
+* **SwaRef**: WS-I SwaRef 첨부 파일에서 이진 데이터를 전달하려면 필드에 데이터를  `BLOB.swaRef` 설정합니다. 이 설정은 Java JAX-WS 프레임워크를 사용하여 데이터를 SOAP 요청에 첨부합니다. ([SwaRef](#invoking-aem-forms-using-swaref)를 사용하여 AEM Forms 호출 을 참조하십시오.)
+* **MIME 또는 DIME 첨부 파일**: MIME 또는 DIME 첨부 파일에서 데이터를 전달하려면 SOAP 프레임워크의 기본 API를 사용하여 데이터를 SOAP 요청에 첨부하십시오. `BLOB.attachmentID` 필드에서 첨부 파일 식별자를 설정합니다. ([Base64 인코딩을 사용하여 AEM Forms 호출](#invoking-aem-forms-using-base64-encoding)을 참조하십시오.)
+* **원격 URL**: 데이터가 웹 서버에 호스팅되고 HTTP URL을 통해 액세스할 수 있는 경우 필드에서 HTTP URL을  `BLOB.remoteURL` 설정합니다. ([HTTP](#invoking-aem-forms-using-blob-data-over-http)에서 BLOB 데이터를 사용하여 AEM Forms 호출 을 참조하십시오.)
 
 **서비스에서 반환되는 BLOB 개체의 데이터에 액세스합니다**
 
@@ -245,10 +245,10 @@ AEM Forms 서비스 작업에서 입력 값으로 `BLOB` 유형이 필요한 경
 
 다음은 전송 유형과 데이터를 가져오는 필드 간의 상관입니다.
 
-* **Base64 형식**:접미사를  `blob` 로 설정하여  `base64` 필드에 데이터를  `BLOB.binaryData` 반환합니다.
-* **MIME 또는 DIME 첨부 파일**:접미사 `blob` 를 또는으로  `DIME` 설정하여  `MIME` 데이터를 필드에 반환된 첨부 파일 식별자와 함께 해당 첨부 파일 유형으로  `BLOB.attachmentID` 반환합니다. SOAP 프레임워크의 독점 API를 사용하여 첨부 파일에서 데이터를 읽습니다.
-* **원격 URL**:애플리케이션  `blob` 서버에 데이터를  `http` 유지하고 필드에 데이터를 가리키는 URL을 반환하려면 접미사를 로  `BLOB.remoteURL` 설정하십시오.
-* **MTOM 또는 SwaRef**:접미사 `blob` 를 또는으로  `mtom` 설정하여  `swaref` 또는 필드에 반환되는 첨부 파일 식별자와 함께 데이터를 해당 첨부 파일 형식 `BLOB.MTOM` 으로  `BLOB.swaRef` 반환합니다. SOAP 프레임워크의 기본 API를 사용하여 첨부 파일에서 데이터를 읽습니다.
+* **Base64 형식**: 접미사를  `blob` 로 설정하여  `base64` 필드에 데이터를  `BLOB.binaryData` 반환합니다.
+* **MIME 또는 DIME 첨부 파일**: 접미사 `blob` 를 또는으로  `DIME` 설정하여  `MIME` 데이터를 필드에 반환된 첨부 파일 식별자와 함께 해당 첨부 파일 유형으로  `BLOB.attachmentID` 반환합니다. SOAP 프레임워크의 독점 API를 사용하여 첨부 파일에서 데이터를 읽습니다.
+* **원격 URL**: 애플리케이션  `blob` 서버에 데이터를  `http` 유지하고 필드에 데이터를 가리키는 URL을 반환하려면 접미사를 로  `BLOB.remoteURL` 설정하십시오.
+* **MTOM 또는 SwaRef**: 접미사 `blob` 를 또는으로  `mtom` 설정하여  `swaref` 또는 필드에 반환되는 첨부 파일 식별자와 함께 데이터를 해당 첨부 파일 형식 `BLOB.MTOM` 으로  `BLOB.swaRef` 반환합니다. SOAP 프레임워크의 기본 API를 사용하여 첨부 파일에서 데이터를 읽습니다.
 
 >[!NOTE]
 >
@@ -264,7 +264,7 @@ MTOM 프로토콜은 `BLOB` 개체 외에 복합 형식의 바이트 배열 매�
 
 많은 양의 이진 데이터를 반환하는 AEM Forms 서비스는 바이트 배열 형식이 아닌 Document/BLOB 유형을 사용합니다. 문서 유형은 대량의 데이터를 전송하는 데 훨씬 효율적입니다.
 
-## 웹 서비스 데이터 형식 {#web-service-data-types}
+## 웹 서비스 데이터 유형 {#web-service-data-types}
 
 다음 표에는 Java 데이터 유형이 나열되고 해당 웹 서비스 데이터 유형이 표시됩니다.
 
@@ -347,19 +347,11 @@ MTOM 프로토콜은 `BLOB` 개체 외에 복합 형식의 바이트 배열 매�
  </tbody> 
 </table>
 
-**개발자 웹 사이트 Adobe**
-
-Adobe 개발자 웹 사이트에는 웹 서비스 API를 사용하여 AEM Forms 서비스를 호출하는 방법에 대한 다음 문서가 포함되어 있습니다.
-
-[양식 렌더링 ASP.NET 응용 프로그램 만들기](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)
-
-[사용자 지정 구성 요소를 사용하여 웹 서비스 호출](https://www.adobe.com/devnet/livecycle/articles/extend_webservices.html)
-
 >[!NOTE]
 >
 >사용자 지정 구성 요소를 사용하여 웹 서비스를 호출하는 방법은 타사 웹 서비스를 호출하는 AEM Forms 구성 요소를 만드는 방법을 설명합니다.
 
-## JAX-WS {#creating-java-proxy-classes-using-jax-ws}을 사용하여 Java 프록시 클래스 만들기
+## JAX-WS를 사용하여 Java 프록시 클래스 만들기 {#creating-java-proxy-classes-using-jax-ws}
 
 JAX-WS를 사용하여 Forms 서비스 WSDL을 Java 프록시 클래스로 변환할 수 있습니다. 이러한 클래스를 사용하면 AEM Forms 서비스 작업을 호출할 수 있습니다. Apache Ant를 사용하면 AEM Forms 서비스 WSDL을 참조하여 Java 프록시 클래스를 생성하는 빌드 스크립트를 만들 수 있습니다. 다음 단계를 수행하여 JAX-WS 프록시 파일을 생성할 수 있습니다.
 
@@ -470,7 +462,7 @@ JAX-WS를 사용하여 Forms 서비스 WSDL을 Java 프록시 클래스로 변�
 
 [SwaRef를 사용하여 AEM Forms 호출](#invoking-aem-forms-using-swaref)
 
-## Apache Axis {#creating-java-proxy-classes-using-apache-axis}을 사용하여 Java 프록시 클래스 만들기
+## Apache Axis를 사용하여 Java 프록시 클래스 만들기 {#creating-java-proxy-classes-using-apache-axis}
 
 Apache Axis WSDL2Java 도구를 사용하여 Forms 서비스를 Java 프록시 클래스로 변환할 수 있습니다. 이러한 클래스를 사용하면 Forms 서비스 작업을 호출할 수 있습니다. Apache Ant를 사용하여 서비스 WSDL에서 축 라이브러리 파일을 생성할 수 있습니다. URL [https://ws.apache.org/axis/](https://ws.apache.org/axis/)에서 Apache Axis를 다운로드할 수 있습니다.
 
@@ -485,7 +477,7 @@ Apache Axis WSDL2Java 도구를 사용하여 Forms 서비스를 Java 프록시 �
    * 클래스 경로에 bin 디렉토리를 추가합니다.
    * `ANT_HOME` 환경 변수를 Ant를 설치한 디렉토리로 설정합니다.
 
-1. 클라이언트 컴퓨터에 Apache Axis 1.4를 설치합니다. [https://ws.apache.org/axis/](https://ws.apache.org/axis/.md)에서 사용 가능합니다.
+1. 클라이언트 컴퓨터에 Apache Axis 1.4를 설치합니다. [https://ws.apache.org/axis/](https://ws.apache.org/axis/)에서 사용 가능합니다.
 1. [https://ws.apache.org/axis/java/install.html](https://ws.apache.org/axis/java/install.html)의 Axis 설치 지침에 설명된 대로 웹 서비스 클라이언트에서 Axis JAR 파일을 사용하도록 클래스 경로를 설정합니다.
 1. 축의 Apache WSDL2Java 도구를 사용하여 Java 프록시 클래스를 생성합니다. 이 작업을 수행할 Ant 빌드 스크립트를 만듭니다. 다음 스크립트는 build.xml이라는 이름의 샘플 Ant 빌드 스크립트입니다.
 
@@ -589,7 +581,7 @@ Base64 인코딩을 사용하여 AEM Forms 서비스를 호출할 수 있습니�
 1. 프로세스에 전달되는 보안되지 않은 PDF 문서를 가져옵니다. 이 작업은 `SetValue` 작업을 기반으로 합니다. 이 프로세스의 입력 매개 변수는 `inDoc` 프로세스 변수입니다.`document`
 1. 암호로 PDF 문서를 암호화합니다. 이 작업은 `PasswordEncryptPDF` 작업을 기반으로 합니다. 암호로 암호화된 PDF 문서는 `outDoc` 프로세스 변수에 반환됩니다.
 
-### Base64 인코딩 {#creating-a-net-client-assembly-that-uses-base64-encoding}을 사용하는 .NET 클라이언트 어셈블리 만들기
+### Base64 인코딩을 사용하는 .NET 클라이언트 어셈블리 만들기 {#creating-a-net-client-assembly-that-uses-base64-encoding}
 
 Microsoft Visual Studio .NET 프로젝트에서 Forms 서비스를 호출하는 .NET 클라이언트 어셈블리를 만들 수 있습니다. base64 인코딩을 사용하는 .NET 클라이언트 어셈블리를 만들려면 다음 단계를 수행하십시오.
 
@@ -680,7 +672,7 @@ Java 프록시 클래스와 Base64를 사용하여 AEM Forms 서비스를 호출
 
    >[!NOTE]
    >
-   >`hiro-xp`*를 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버의 IP 주소로 바꿉니다.*
+   >`hiro-xp`*를 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버의 IP 주소로 바꿉니다. *
 
 1. JAX-WS를 사용하여 만든 Java 프록시 클래스를 JAR 파일에 패키지화합니다.
 1. Java 프록시 JAR 파일과 다음 경로에 있는 JAR 파일을 포함합니다.
@@ -722,11 +714,11 @@ Java 프록시 클래스와 Base64를 사용하여 AEM Forms 서비스를 호출
 
 **참고 항목**
 
-[빠른 시작:Java 프록시 파일 및 Base64 인코딩을 사용하여 서비스 호출](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-service-using-java-proxy-files-and-base64-encoding)
+[빠른 시작: Java 프록시 파일 및 Base64 인코딩을 사용하여 서비스 호출](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-service-using-java-proxy-files-and-base64-encoding)
 
 [Base64 인코딩을 사용하는 .NET 클라이언트 어셈블리 만들기](#creating-a-net-client-assembly-that-uses-base64-encoding)
 
-## MTOM {#invoking-aem-forms-using-mtom}을 사용하여 AEM Forms을 호출하는 중
+## MTOM을 사용하여 AEM Forms 호출 {#invoking-aem-forms-using-mtom}
 
 웹 서비스 표준 MTOM을 사용하여 AEM Forms 서비스를 호출할 수 있습니다. 이 표준은 PDF 문서와 같은 이진 데이터가 인터넷 또는 인트라넷을 통해 전송되는 방법을 정의합니다. MTOM의 기능은 `XOP:Include` 요소를 사용하는 것입니다. 이 요소는 SOAP 메시지의 이진 첨부 파일을 참조하도록 XOP(XML Binary Optimized Packaging) 사양에 정의되어 있습니다.
 
@@ -752,7 +744,7 @@ Java 프록시 클래스와 Base64를 사용하여 AEM Forms 서비스를 호출
 
 여기서는 Microsoft .NET 프로젝트 내에서 MTOM을 사용하여 AEM Forms 서비스를 호출하는 방법에 대해 설명합니다. 사용되는 .NET 프레임워크는 3.5이고 개발 환경은 Visual Studio 2008입니다. 개발 컴퓨터에 WSE(웹 서비스 개선 사항)가 설치되어 있으면 제거합니다. .NET 3.5 프레임워크는 WCF(Windows Communication Foundation)라는 SOAP 프레임워크를 지원합니다. MTOM을 사용하여 AEM Forms을 호출할 때는 WSE(WCF 아님)만 지원됩니다.
 
-### MTOM {#creating-a-net-project-that-invokes-a-service-using-mtom}을 사용하여 서비스를 호출하는 .NET 프로젝트 만들기
+### MTOM을 사용하여 서비스를 호출하는 .NET 프로젝트 만들기 {#creating-a-net-project-that-invokes-a-service-using-mtom}
 
 웹 서비스를 사용하여 AEM Forms 서비스를 호출할 수 있는 Microsoft .NET 프로젝트를 만들 수 있습니다. 먼저 Visual Studio 2008을 사용하여 Microsoft .NET 프로젝트를 만듭니다. AEM Forms 서비스를 호출하려면 프로젝트 내에서 호출할 AEM Forms 서비스에 대한 서비스 참조를 만드십시오. 서비스 참조를 만들 때 AEM Forms 서비스의 URL을 지정합니다.
 
@@ -770,7 +762,7 @@ Java 프록시 클래스와 Base64를 사용하여 AEM Forms 서비스를 호출
 
 1. Microsoft Visual Studio 2008을 사용하여 .NET 프로젝트를 만듭니다.
 1. **Project** 메뉴에서 **서비스 참조 추가**&#x200B;를 선택합니다.
-1. **주소** 대화 상자에서 AEM Forms 서비스에 WSDL을 지정합니다. 예,
+1. **주소** 대화 상자에서 AEM Forms 서비스에 WSDL을 지정합니다. 예를 들어
 
    ```as3
     http://localhost:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
@@ -794,7 +786,7 @@ Java 프록시 클래스와 Base64를 사용하여 AEM Forms 서비스를 호출
 
    >[!NOTE]
    >
-   >`hiro-xp`*를 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버의 IP 주소로 바꿉니다.*
+   >`hiro-xp`*를 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버의 IP 주소로 바꿉니다. *
 
 1. `EncryptDocumentClient.Endpoint.Binding` 데이터 멤버의 값을 가져와서 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
 1. `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 데이터 멤버를 `WSMessageEncoding.Mtom`로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
@@ -835,7 +827,7 @@ Java 프록시 클래스와 Base64를 사용하여 AEM Forms 서비스를 호출
 
 **참고 항목**
 
-[빠른 시작:.NET 프로젝트에서 MTOM을 사용하여 서비스 호출](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-service-using-mtom-in-a-net-project)
+[빠른 시작: .NET 프로젝트에서 MTOM을 사용하여 서비스 호출](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-service-using-mtom-in-a-net-project)
 
 [웹 서비스를 사용하여 여러 서비스 액세스](#accessing-multiple-services-using-web-services)
 
@@ -862,7 +854,7 @@ SwaRef를 사용하여 AEM Forms 서비스를 호출할 수 있습니다. `wsi:s
 
 아래 논의는 Java 클라이언트 애플리케이션 내에서 SwaRef를 사용하여 Forms 서비스를 호출하는 방법에 대한 것입니다. Java 응용 프로그램은 JAX-WS를 사용하여 만든 프록시 클래스를 사용합니다.
 
-### SwaRef {#invoke-a-service-using-jax-ws-library-files-that-use-swaref}를 사용하는 JAX-WS 라이브러리 파일을 사용하여 서비스 호출
+### SwaRef를 사용하는 JAX-WS 라이브러리 파일을 사용하여 서비스 호출 {#invoke-a-service-using-jax-ws-library-files-that-use-swaref}
 
 JAX-WS 및 SwaRef를 사용하여 만든 Java 프록시 파일을 사용하여 `MyApplication/EncryptDocument` 프로세스를 호출하려면 다음 단계를 수행하십시오.
 
@@ -876,7 +868,7 @@ JAX-WS 및 SwaRef를 사용하여 만든 Java 프록시 파일을 사용하여 `
 
    >[!NOTE]
    >
-   >`hiro-xp`*를 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버의 IP 주소로 바꿉니다.*
+   >`hiro-xp`*를 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버의 IP 주소로 바꿉니다. *
 
 1. JAX-WS를 사용하여 만든 Java 프록시 클래스를 JAR 파일에 패키지화합니다.
 1. Java 프록시 JAR 파일과 다음 경로에 있는 JAR 파일을 포함합니다.
@@ -924,9 +916,9 @@ JAX-WS 및 SwaRef를 사용하여 만든 Java 프록시 파일을 사용하여 `
 
 **참고 항목**
 
-[빠른 시작:Java 프로젝트에서 SwaRef를 사용하여 서비스 호출](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-service-using-swaref-in-a-java-project)
+[빠른 시작: Java 프로젝트에서 SwaRef를 사용하여 서비스 호출](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-service-using-swaref-in-a-java-project)
 
-## HTTP {#invoking-aem-forms-using-blob-data-over-http}에서 BLOB 데이터를 사용하여 AEM Forms을 호출하는 중
+## HTTP에서 BLOB 데이터를 사용하여 AEM Forms 호출 {#invoking-aem-forms-using-blob-data-over-http}
 
 웹 서비스를 사용하여 AEM Forms 서비스를 호출하고 HTTP를 통해 BLOB 데이터를 전달할 수 있습니다. base64 인코딩, DIME 또는 MIME을 사용하는 대신 HTTP를 통해 BLOB 데이터를 전달하는 대체 방법입니다. 예를들어 DIME 또는 MIME을 지원하지 않는 웹 서비스 개선 사항 3.0을 사용하는 Microsoft .NET 프로젝트에서 HTTP를 통해 데이터를 전달할 수 있습니다. HTTP에서 BLOB 데이터를 사용하는 경우 AEM Forms 서비스가 호출되기 전에 입력 데이터가 업로드됩니다.
 
@@ -945,7 +937,7 @@ JAX-WS 및 SwaRef를 사용하여 만든 Java 프록시 파일을 사용하여 `
 >
 >SOAP를 사용하여 AEM Forms 호출을 숙지하는 것이 좋습니다. ([웹 서비스를 사용하여 AEM Forms 호출](#invoking-aem-forms-using-web-services)을 참조하십시오.)
 
-### HTTP {#creating-a-net-client-assembly-that-uses-data-over-http}에서 데이터를 사용하는 .NET 클라이언트 어셈블리 만들기
+### HTTP에서 데이터를 사용하는 .NET 클라이언트 어셈블리 만들기 {#creating-a-net-client-assembly-that-uses-data-over-http}
 
 HTTP를 통해 데이터를 사용하는 클라이언트 어셈블리를 만들려면 [Base64 인코딩](#invoking-aem-forms-using-base64-encoding)을 사용하여 AEM Forms을 호출하는 프로세스에 따릅니다. 그러나 프록시 클래스의 URL을 `?blob=base64` 대신 `?blob=http`을 포함하도록 수정합니다. 이 작업을 수행하면 데이터가 HTTP를 통해 전달됩니다. 프록시 클래스에서 다음 코드 행을 찾습니다.
 
@@ -985,7 +977,7 @@ HTTP를 통해 데이터를 사용하는 .NET 클라이언트 어셈블리를 �
 1. 해당 생성자를 호출하고 `System.IO.FileStream` 개체를 전달하여 `System.IO.BinaryWriter` 개체를 만듭니다.
 1. `System.IO.BinaryWriter` 개체의 `Write` 메서드를 호출하고 바이트 배열을 전달하여 바이트 배열 내용을 PDF 파일에 씁니다.
 
-### HTTP {#invoking-a-service-using-java-proxy-classes-and-blob-data-over-http}에서 Java 프록시 클래스와 BLOB 데이터를 사용하여 서비스 호출
+### HTTP를 통해 Java 프록시 클래스와 BLOB 데이터를 사용하여 서비스 호출 {#invoking-a-service-using-java-proxy-classes-and-blob-data-over-http}
 
 HTTP를 통해 Java 프록시 클래스와 BLOB 데이터를 사용하여 AEM Forms 서비스를 호출할 수 있습니다. Java 프록시 클래스를 사용하여 `MyApplication/EncryptDocument` 서비스를 호출하려면 다음 단계를 수행하십시오.
 
@@ -999,7 +991,7 @@ HTTP를 통해 Java 프록시 클래스와 BLOB 데이터를 사용하여 AEM Fo
 
    >[!NOTE]
    >
-   >`hiro-xp`*를 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버의 IP 주소로 바꿉니다.*
+   >`hiro-xp`*를 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버의 IP 주소로 바꿉니다. *
 
 1. JAX-WS를 사용하여 만든 Java 프록시 클래스를 JAR 파일에 패키지화합니다.
 1. Java 프록시 JAR 파일과 다음 경로에 있는 JAR 파일을 포함합니다.
@@ -1039,7 +1031,7 @@ HTTP를 통해 Java 프록시 클래스와 BLOB 데이터를 사용하여 AEM Fo
 1. 생성자를 사용하여 `java.io.FileOutputStream` 개체를 만들고 `java.io.File` 개체를 전달합니다.
 1. `java.io.FileOutputStream` 개체의 `write` 메서드를 호출합니다. 암호화된 PDF 문서를 나타내는 데이터 스트림이 포함된 바이트 배열을 전달합니다.
 
-## DIME {#invoking-aem-forms-using-dime}을 사용하여 AEM Forms을 호출하는 중
+## DIME를 사용하여 AEM Forms 호출 {#invoking-aem-forms-using-dime}
 
 첨부 파일이 있는 SOAP를 사용하여 AEM Forms 서비스를 호출할 수 있습니다. AEM Forms은 MIME 및 DIME 웹 서비스 표준을 모두 지원합니다. DIME를 사용하면 첨부 파일을 인코딩하지 않고 호출 요청과 함께 PDF 문서와 같은 이진 첨부 파일을 보낼 수 있습니다. *DIME*&#x200B;을 사용하여 AEM Forms 호출 섹션에서는 DIME를 사용하여 `MyApplication/EncryptDocument`라는 이름의 AEM Forms 단기 프로세스를 호출하는 방법에 대해 설명합니다.
 
@@ -1054,7 +1046,7 @@ HTTP를 통해 Java 프록시 클래스와 BLOB 데이터를 사용하여 AEM Fo
 >
 >DIME를 사용하여 AEM Forms 서비스 작업을 호출하는 것은 더 이상 사용되지 않습니다. MTOM을 사용하는 것이 좋습니다. ([MTOM](#invoking-aem-forms-using-mtom)을 사용하여 AEM Forms 호출 을 참조하십시오.)
 
-### DIME {#creating-a-net-project-that-uses-dime}을 사용하는 .NET 프로젝트 만들기
+### DIME를 사용하는 .NET 프로젝트 만들기 {#creating-a-net-project-that-uses-dime}
 
 DIME를 사용하여 Forms 서비스를 호출할 수 있는 .NET 프로젝트를 만들려면 다음 작업을 수행하십시오.
 
@@ -1069,7 +1061,7 @@ DIME를 사용하여 Forms 서비스를 호출할 수 있는 .NET 프로젝트�
 
 >[!NOTE]
 >
->웹 서비스 개선 사항 2.0은 DIME를 지원합니다. Microsoft Visual Studio의 지원되는 버전은 웹 서비스 개선 사항 2.0에서 작업할 때 2003입니다. 웹 서비스 개선 사항 3.0에서는 DIME를 지원하지 않습니다.그러나 MTOM을 지원합니다.
+>웹 서비스 개선 사항 2.0은 DIME를 지원합니다. Microsoft Visual Studio의 지원되는 버전은 웹 서비스 개선 사항 2.0에서 작업할 때 2003입니다. 웹 서비스 개선 사항 3.0에서는 DIME를 지원하지 않습니다. 그러나 MTOM을 지원합니다.
 
 **AEM Forms 서비스에 대한 웹 참조 만들기**
 
@@ -1079,7 +1071,7 @@ DIME를 사용하여 Forms 서비스를 호출할 수 있는 .NET 프로젝트�
      http://localhost:8080/soap/services/MyApplication/EncryptDocument?WSDL
 ```
 
-웹 참조를 만든 후에는 .NET 프로젝트 내에서 사용할 수 있는 두 가지 프록시 데이터 형식을 사용할 수 있습니다.`EncryptDocumentService` 및 `EncryptDocumentServiceWse` DIME를 사용하여 `MyApplication/EncryptDocument` 프로세스를 호출하려면 `EncryptDocumentServiceWse` 유형을 사용합니다.
+웹 참조를 만든 후에는 .NET 프로젝트 내에서 사용할 수 있는 두 가지 프록시 데이터 형식을 사용할 수 있습니다. `EncryptDocumentService` 및 `EncryptDocumentServiceWse` DIME를 사용하여 `MyApplication/EncryptDocument` 프로세스를 호출하려면 `EncryptDocumentServiceWse` 유형을 사용합니다.
 
 >[!NOTE]
 >
@@ -1128,7 +1120,7 @@ DIME를 사용하여 Forms 서비스를 호출할 수 있습니다. 비보안 PD
 1. 해당 생성자를 호출하고 `System.IO.FileStream` 개체를 전달하여 `System.IO.BinaryWriter` 개체를 만듭니다.
 1. `System.IO.BinaryWriter` 개체의 `Write` 메서드를 호출하고 바이트 배열을 전달하여 바이트 배열 내용을 PDF 파일에 씁니다.
 
-### DIME {#creating-apache-axis-java-proxy-classes-that-use-dime}을 사용하는 Apache Axis Java 프록시 클래스 만들기
+### DIME를 사용하는 Apache Axis Java 프록시 클래스 만들기 {#creating-apache-axis-java-proxy-classes-that-use-dime}
 
 Apache Axis WSDL2Java 도구를 사용하여 서비스 작업을 호출할 수 있도록 서비스 WSDL을 Java 프록시 클래스로 변환할 수 있습니다. Apache Ant를 사용하면 서비스를 호출할 수 있는 AEM Forms 서비스 WSDL에서 축 라이브러리 파일을 생성할 수 있습니다. ([Apache Axis](#creating-java-proxy-classes-using-apache-axis)를 사용하여 Java 프록시 클래스 만들기 를 참조하십시오.)
 
@@ -1171,7 +1163,7 @@ Apache 축 WSDL2Java 도구는 SOAP 요청을 서비스로 보내는 데 사용�
 
 **참고 항목**
 
-[빠른 시작:Java 프로젝트에서 DIME를 사용하여 서비스 호출](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-service-using-dime-in-a-java-project)
+[빠른 시작: Java 프로젝트에서 DIME를 사용하여 서비스 호출](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-service-using-dime-in-a-java-project)
 
 ## SAML 기반 인증 사용 {#using-saml-based-authentication}
 
@@ -1239,7 +1231,7 @@ AEM Forms 사용자의 ID는 비밀 키를 사용하여 서명된 SAML 어설션
 
 클라이언트 응용 프로그램은 `AuthResult` 개체를 반환하는 AEM Forms AuthenticationManager API에서 어설션을 검색할 수 있습니다. 다음 두 방법 중 하나를 수행하여 `AuthResult` 인스턴스를 가져올 수 있습니다.
 
-* AuthenticationManager API에 의해 노출된 인증 방법을 사용하여 사용자를 인증합니다. 일반적으로 사용자 이름과 암호를 사용합니다.그러나 인증서 인증을 사용할 수도 있습니다.
+* AuthenticationManager API에 의해 노출된 인증 방법을 사용하여 사용자를 인증합니다. 일반적으로 사용자 이름과 암호를 사용합니다. 그러나 인증서 인증을 사용할 수도 있습니다.
 * `AuthenticationManager.getAuthResultOnBehalfOfUser` 메서드 사용. 이 메서드를 사용하면 클라이언트 애플리케이션에서 AEM Forms 사용자에 대한 `AuthResult` 개체를 가져올 수 있습니다.
 
 AEM forms 사용자는 획득한 SAML 토큰을 사용하여 인증할 수 있습니다. 이 SAML 어설션(xml fragment)은 사용자 인증을 위한 웹 서비스 호출을 사용하여 WS-Security 헤더의 일부로 전송할 수 있습니다. 일반적으로 클라이언트 응용 프로그램은 사용자를 인증했지만 사용자 자격 증명을 저장하지 않습니다. 또는 사용자가 사용자 이름과 암호를 사용하지 않는 메커니즘을 통해 해당 클라이언트에 로그온했습니다. 이 경우 클라이언트 애플리케이션은 AEM Forms을 호출하고 AEM Forms을 호출할 수 있는 특정 사용자를 가장해야 합니다.
@@ -1456,13 +1448,13 @@ SAML 검증을 나타내는 클래스를 생성합니다. 이 클래스에서 �
  }
 ```
 
-## 웹 서비스 {#related-considerations-when-using-web-services} 사용 시 관련 고려 사항
+## 웹 서비스를 사용할 때의 관련 고려 사항 {#related-considerations-when-using-web-services}
 
 웹 서비스를 사용하여 특정 AEM Forms 서비스 작업을 호출할 때 가끔 문제가 발생합니다. 이 토론의 목적은 이러한 문제를 식별하고 해결 방법을 제공하는 것입니다(사용 가능한 경우).
 
-### 비동기적으로 서비스 작업을 호출하는 중 {#invoking-service-operations-asynchronously}
+### 비동기적으로 서비스 작업 호출 {#invoking-service-operations-asynchronously}
 
-PDF의 `htmlToPDF` 생성 작업과 같은 AEM Forms 서비스 작업을 비동기식으로 호출하려고 하면 `SoapFaultException` 이 발생합니다. 이 문제를 해결하려면 `ExportPDF_Result` 요소와 기타 요소를 다른 클래스에 매핑하는 사용자 지정 바인딩 XML 파일을 만드십시오. 다음 XML은 사용자 지정 바인딩 파일을 나타냅니다.
+PDF 생성 `htmlToPDF` 작업과 같은 AEM Forms 서비스 작업을 비동기식으로 호출하려고 하면 `SoapFaultException` 이 발생합니다. 이 문제를 해결하려면 `ExportPDF_Result` 요소와 기타 요소를 다른 클래스에 매핑하는 사용자 지정 바인딩 XML 파일을 만드십시오. 다음 XML은 사용자 지정 바인딩 파일을 나타냅니다.
 
 ```as3
  <bindings     
@@ -1514,13 +1506,13 @@ JAX-WS를 사용하여 Java 프록시 파일을 만들 때 이 XML 파일을 사
 * 권한 관리
 * 문서 관리
 
-### J2EE 응용 프로그램 서버의 차이점 {#differences-in-j2ee-application-servers}
+### J2EE 애플리케이션 서버의 차이점 {#differences-in-j2ee-application-servers}
 
 특정 J2EE 애플리케이션 서버를 사용하여 만든 프록시 라이브러리가 다른 J2EE 애플리케이션 서버에서 호스팅되는 AEM Forms을 제대로 호출하지 않는 경우가 있습니다. WebSphere에 배포된 AEM Forms을 사용하여 생성된 프록시 라이브러리를 고려합니다. 이 프록시 라이브러리는 JBoss Application Server에 배포된 AEM Forms 서비스를 성공적으로 호출할 수 없습니다.
 
 AEM Forms이 WebSphere에 배포될 때 JBoss 애플리케이션 서버와 비교하여 `PrincipalReference` 와 같은 일부 AEM Forms 복합 데이터 유형이 다르게 정의됩니다. 다른 J2EE 응용 프로그램 서비스에서 사용하는 JDK의 차이점은 WSDL 정의에 차이가 있는 이유입니다. 따라서 동일한 J2EE 애플리케이션 서버에서 생성된 프록시 라이브러리를 사용합니다.
 
-### 웹 서비스 {#accessing-multiple-services-using-web-services}를 사용하여 여러 서비스에 액세스
+### 웹 서비스를 사용하여 여러 서비스 액세스 {#accessing-multiple-services-using-web-services}
 
 네임스페이스 충돌로 인해 여러 서비스 WSDL 간에 데이터 개체를 공유할 수 없습니다. 다른 서비스는 데이터 유형을 공유할 수 있으므로 서비스는 WSDL에서 이러한 유형의 정의를 공유합니다. 예를들어 `BLOB` 데이터 형식을 포함하는 .NET 클라이언트 어셈블리를 같은 .NET 클라이언트 프로젝트에 추가할 수 없습니다. 이 경우 컴파일 오류가 발생합니다.
 
@@ -1748,6 +1740,6 @@ AEM Forms이 WebSphere에 배포될 때 JBoss 애플리케이션 서버와 비�
  
 ```
 
-### 문자로 시작하는 서비스에서 잘못된 프록시 파일 {#services-starting-with-the-letter-i-produce-invalid-proxy-files}을 생성합니다.
+### 잘못된 프록시 파일을 생성하는 문자로 시작하는 서비스 {#services-starting-with-the-letter-i-produce-invalid-proxy-files}
 
 Microsoft .Net 3.5 및 WCF를 사용할 때 일부 AEM Forms 생성 프록시 클래스의 이름이 잘못되었습니다. 이 문제는 IBMFilenetContentRepositoryConnector, IDPSschedulerService 또는 이름이 I로 시작하는 기타 서비스에 대해 프록시 클래스를 만들 때 발생합니다. 예를 들어, IBMFileNetContentRepositoryConnector의 경우 생성된 클라이언트의 이름은 `BMFileNetContentRepositoryConnectorClient`입니다. 생성된 프록시 클래스에 없는 편지입니다.

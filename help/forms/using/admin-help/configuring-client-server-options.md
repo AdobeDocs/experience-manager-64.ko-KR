@@ -1,19 +1,19 @@
 ---
 title: 클라이언트 및 서버 옵션 구성
-seo-title: 클라이언트 및 서버 옵션 구성
+seo-title: Configuring client and server optionsn
 description: 서버 구성 설정, 문서 보안 역할 및 이벤트 감사 등의 다양한 클라이언트 및 서버 옵션을 구성하는 방법을 알아봅니다.
-seo-description: 서버 구성 설정, 문서 보안 역할 및 이벤트 감사 등의 다양한 클라이언트 및 서버 옵션을 구성하는 방법을 알아봅니다.
+seo-description: Learn how you can configure the various client and server options, such as server configuration settings, document security roles, and event auditing.
 uuid: 1f9f9886-726e-4fad-9ff8-0ff11eef653e
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
-feature: 문서 보안
+feature: Document Security
 exl-id: 571c1391-dc60-4bed-b4f9-482a508e4bd4
-source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10283'
+source-wordcount: '10250'
 ht-degree: 0%
 
 ---
@@ -554,7 +554,7 @@ AEM Forms는 환경에 맞게 사용자 지정할 수 있는 샘플 구성을 �
 
 등록 이메일에는 등록 페이지에 대한 링크 및 등록 방법에 대한 정보가 포함되어 있습니다. 초대받은 사용자가 등록하면 문서 보안은 활성화 페이지에 대한 링크가 포함된 활성화 이메일에 문제가 발생합니다. 활성화되면 계정을 비활성화하거나 삭제할 때까지 계정이 유효한 상태로 유지됩니다.
 
-기본 제공 등록을 사용하는 경우 SMTP 서버, 등록 전자 메일 세부 사항, 액세스 기능 및 암호 전자 메일 정보를 한 번만 재설정합니다. 기본 제공 등록을 활성화하기 전에 사용자 관리에서 로컬 도메인을 만든 후 조직의 적절한 사용자 및 그룹에 &quot;문서 보안 사용자 초대&quot; 역할을 할당했는지 확인합니다. ([로컬 도메인 추가](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) 및 [역할 만들기 및 구성](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)을 참조하십시오.) 기본 제공 등록을 사용하지 않는 경우에는 AEM Forms SDK를 사용하여 만든 사용자 등록 시스템이 있어야 합니다. [AEM Forms로 프로그래밍](https://www.adobe.com/go/learn-aemforms-programming-63)의 &quot;AEM Forms용 SPI 개발&quot;에 대한 도움말을 참조하십시오. 기본 제공 등록 옵션을 사용하지 않는 경우에는 활성화 전자 메일 및 클라이언트 로그인 화면에서 메시지를 구성하여 사용자에게 새 암호를 묻는 방법 또는 기타 정보를 알리는 것이 좋습니다.
+기본 제공 등록을 사용하는 경우 SMTP 서버, 등록 전자 메일 세부 사항, 액세스 기능 및 암호 전자 메일 정보를 한 번만 재설정합니다. 기본 제공 등록을 활성화하기 전에 사용자 관리에서 로컬 도메인을 만든 후 조직의 적절한 사용자 및 그룹에 &quot;문서 보안 사용자 초대&quot; 역할을 할당했는지 확인합니다. ([로컬 도메인 추가](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) 및 [역할 만들기 및 구성](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)을 참조하십시오.) 기본 제공 등록을 사용하지 않는 경우에는 AEM Forms SDK를 사용하여 만든 사용자 등록 시스템이 있어야 합니다. [AEM Forms로 프로그래밍](/help/forms/developing/introducing-java-api-soap-quick.md)의 &quot;AEM Forms용 SPI 개발&quot;에 대한 도움말을 참조하십시오. 기본 제공 등록 옵션을 사용하지 않는 경우에는 활성화 전자 메일 및 클라이언트 로그인 화면에서 메시지를 구성하여 사용자에게 새 암호를 묻는 방법 또는 기타 정보를 알리는 것이 좋습니다.
 
 **초대된 사용자 등록 활성화 및 구성**
 
@@ -851,7 +851,7 @@ Microsoft Office용 Acrobat Reader DC 확장은 Microsoft Office 제품 Microsof
     </node>
    ```
 
-   위치:
+   다음의 경우:
 
    `SDKPlatforms` 클라이언트 응용 프로그램을 호스팅하는 플랫폼을 지정합니다. 가능한 값은 다음과 같습니다.
 

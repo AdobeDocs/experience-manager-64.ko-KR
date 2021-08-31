@@ -1,17 +1,17 @@
 ---
 title: 적응형 양식 작업을 위한 우수 사례
-seo-title: 적응형 양식 작업을 위한 우수 사례
+seo-title: Best practices for working with adaptive forms
 description: AEM Forms 프로젝트 설정, 적응형 양식 개발 및 AEM Forms 시스템용 성능 최적화에 대한 우수 사례를 설명합니다.
-seo-description: AEM Forms 프로젝트 설정, 적응형 양식 개발 및 AEM Forms 시스템용 성능 최적화에 대한 우수 사례를 설명합니다.
+seo-description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
 uuid: ed95fc64-56b3-4ea1-a5ba-2e96953fca56
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
-feature: 적응형 양식
+feature: Adaptive Forms
 exl-id: 0c64940c-273d-4f23-afcb-38bf54cddd36
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '4148'
+source-wordcount: '4108'
 ht-degree: 0%
 
 ---
@@ -26,10 +26,10 @@ Adobe Experience Manager (AEM) 양식을 사용하면 복잡한 트랜잭션을 
 
 또한 일반적인 AEM 우수 사례에 대해 몇 가지 권장 읽기도 있습니다.
 
-* [우수 사례:AEM 배포 및 유지 관리](/help/sites-deploying/best-practices.md)
-* [우수 사례:컨텐츠 작성](/help/sites-authoring/best-practices.md)
-* [우수 사례:AEM 관리](/help/sites-administering/administer-best-practices.md)
-* [우수 사례:솔루션 개발](/help/sites-developing/best-practices.md)
+* [우수 사례: AEM 배포 및 유지 관리](/help/sites-deploying/best-practices.md)
+* [우수 사례: 컨텐츠 작성](/help/sites-authoring/best-practices.md)
+* [우수 사례: AEM 관리](/help/sites-administering/administer-best-practices.md)
+* [우수 사례: 솔루션 개발](/help/sites-developing/best-practices.md)
 
 ## AEM Forms 설정 및 구성 {#set-up-and-configure-aem-forms}
 
@@ -55,10 +55,10 @@ AEM 프로젝트를 설정하고 나면 적응형 양식 템플릿 및 구성 �
 * 적응형 양식 템플릿은 적응형 양식의 구조와 머리글 바닥글 정보를 정의하는 전문 AEM 페이지입니다. 템플릿에는 적응형 양식의 사전 구성된 레이아웃, 스타일 및 기본 구조가 있습니다. AEM Forms은 적응형 양식을 작성하는 데 사용할 수 있는 기본 템플릿 및 구성 요소를 제공합니다. 그러나 요구 사항에 따라 사용자 지정 템플릿 및 구성 요소를 만들 수 있습니다. 적응형 양식에 필요한 추가 템플릿 및 구성 요소에 대한 요구 사항을 수집하는 것이 좋습니다. 자세한 내용은 [적응형 양식 및 구성 요소 사용자 정의](/help/forms/using/adaptive-forms-best-practices.md#customize-components)를 참조하십시오.
 * AEM Forms에서는 다음 양식 모델을 기반으로 적응형 양식을 만들 수 있습니다. 양식 모델은 양식과 AEM 시스템 간의 데이터 교환을 위한 인터페이스 역할을 하며 적응형 양식 내/외부에서 데이터 흐름을 위한 XML 기반 구조를 제공합니다. 또한 양식 모델은 스키마 및 XFA 제한 형태로 적응형 양식에 규칙과 제한을 적용합니다.
 
-   * **없음**:이 옵션을 사용하여 만든 적응형 양식에서는 양식 모델을 사용하지 않습니다. 이러한 양식에서 생성된 데이터 XML은 필드 및 해당 값이 있는 플랫 구조를 갖습니다.
-   * **XML 또는 JSON 스키마**:XML 및 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생성하거나 사용하는 구조를 나타냅니다. 스키마를 적응형 양식에 연결하고 해당 요소를 사용하여 적응형 양식에 동적 컨텐츠를 추가할 수 있습니다. 스키마의 요소는 적응형 양식을 작성할 컨텐츠 브라우저의 데이터 모델 개체 탭에서 사용할 수 있습니다. 스키마 요소를 드래그하여 놓아 양식을 작성할 수 있습니다.
-   * **XFA 양식 템플릿**:XFA 기반 HTML5 양식에 투자를 하는 경우 이상적인 양식 모델입니다. XFA 기반 양식을 적응형 양식으로 전환하는 직접적인 방법을 제공합니다. 기존 XFA 규칙은 연결된 적응형 양식에 유지됩니다. 결과 적응형 양식은 유효성 검사, 이벤트, 속성 및 패턴과 같은 XFA 구문을 지원합니다.
-   * **양식 데이터 모델**:데이터베이스, 웹 서비스 및 AEM 사용자 프로필과 같은 백엔드 시스템을 통합하여 적응형 양식을 미리 작성하고 제출된 양식 데이터를 다시 백엔드 시스템에 기록하려는 경우 기본 양식 모델입니다. 양식 데이터 모델 편집기를 사용하면 적응형 양식을 만드는 데 사용할 수 있는 양식 데이터 모델에서 엔티티와 서비스를 정의하고 구성할 수 있습니다. 자세한 내용은 [AEM Forms 데이터 통합](/help/forms/using/data-integration.md)을 참조하십시오.
+   * **없음**: 이 옵션을 사용하여 만든 적응형 양식에서는 양식 모델을 사용하지 않습니다. 이러한 양식에서 생성된 데이터 XML은 필드 및 해당 값이 있는 플랫 구조를 갖습니다.
+   * **XML 또는 JSON 스키마**: XML 및 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생성하거나 사용하는 구조를 나타냅니다. 스키마를 적응형 양식에 연결하고 해당 요소를 사용하여 적응형 양식에 동적 컨텐츠를 추가할 수 있습니다. 스키마의 요소는 적응형 양식을 작성할 컨텐츠 브라우저의 데이터 모델 개체 탭에서 사용할 수 있습니다. 스키마 요소를 드래그하여 놓아 양식을 작성할 수 있습니다.
+   * **XFA 양식 템플릿**: XFA 기반 HTML5 양식에 투자를 하는 경우 이상적인 양식 모델입니다. XFA 기반 양식을 적응형 양식으로 전환하는 직접적인 방법을 제공합니다. 기존 XFA 규칙은 연결된 적응형 양식에 유지됩니다. 결과 적응형 양식은 유효성 검사, 이벤트, 속성 및 패턴과 같은 XFA 구문을 지원합니다.
+   * **양식 데이터 모델**: 데이터베이스, 웹 서비스 및 AEM 사용자 프로필과 같은 백엔드 시스템을 통합하여 적응형 양식을 미리 작성하고 제출된 양식 데이터를 다시 백엔드 시스템에 기록하려는 경우 기본 양식 모델입니다. 양식 데이터 모델 편집기를 사용하면 적응형 양식을 만드는 데 사용할 수 있는 양식 데이터 모델에서 엔티티와 서비스를 정의하고 구성할 수 있습니다. 자세한 내용은 [AEM Forms 데이터 통합](/help/forms/using/data-integration.md)을 참조하십시오.
 
 요구 사항에 부합할 뿐만 아니라 XFA 및 XSD 자산에 대한 기존 투자를 확장하는 데이터 모델이 있는 경우 신중하게 선택해야 합니다. 생성된 XML에 스키마에 의해 정의된 XPATH에 따라 데이터가 포함되므로 XSD 모델을 사용하여 양식 템플릿을 만드는 것이 좋습니다. 양식 데이터 모델의 기본 선택 항목으로 XSD 모델을 사용하는 것도 데이터를 처리하고 사용하는 백엔드 시스템에서 양식 디자인을 분리하고 양식 필드의 일대일 매핑으로 인해 양식 성능을 개선하기 때문에 도움이 됩니다. 또한 필드의 BindRef를 XML에 있는 해당 데이터 값의 XPATH로 만들 수 있습니다.
 
@@ -86,7 +86,7 @@ AEM 프로젝트를 설정하고 나면 적응형 양식 템플릿 및 구성 �
 
 * PII 데이터 처리에 대한 권장 사항은 [개인 식별 정보 처리](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p) 를 참조하십시오.
 
-## 적응형 양식 {#author-adaptive-forms} 작성
+## 적응형 양식 작성 {#author-adaptive-forms}
 
 ### 작성을 위해 터치에 적합한 UI 사용 {#using-touch-optimized-ui-for-authoring}
 
@@ -114,13 +114,13 @@ AEM Forms에서는 적응형 양식 구성 요소에 동적 동작을 추가하�
 * 복잡하거나 일반적으로 사용되는 규칙을 처리할 때 적응형 양식 간에 지정하고 재사용할 수 있는 별도의 클라이언트 라이브러리에서 비즈니스 논리를 함수로 쓰는 것이 좋습니다. 클라이언트 라이브러리는 자체 포함된 라이브러리여야 하며 jQuery 및 Underscore.js를 제외하고 외부 종속성이 없어야 합니다. 클라이언트 라이브러리를 사용하여 제출된 양식 데이터의 [서버측 재유효성 검사](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form)를 적용할 수도 있습니다.
 * 적응형 양식은 적응형 양식과 통신하고 작업을 수행하는 데 사용할 수 있는 API 세트를 제공합니다. 일부 주요 API는 다음과 같습니다. 자세한 내용은 응용 Forms](https://adobe.com/go/learn_aemforms_documentation_63)에 대한 [JavaScript 라이브러리 API 참조를 참조하십시오.
 
-   * `guideBridge.reset()`:양식을 재설정합니다.
-   * `guideBridge.submit()`:양식을 제출합니다.
-   * `guideBridge.setFocus(somExp, focusOption, runCompletionExp)`:포커스를 필드에 설정합니다.
-   * `guideBridge.validate(errorList, somExpression, focus)`:양식의 유효성을 검사합니다.
-   * `guideBridge.getDataXML(options)`:양식 데이터를 XML로 가져옵니다.
-   * `guideBridge.resolveNode(somExpression)`:양식 개체를 가져옵니다.
-   * `guideBridge.setProperty(somList, propertyName, valueList)`:양식 개체의 속성을 설정합니다.
+   * `guideBridge.reset()`: 양식을 재설정합니다.
+   * `guideBridge.submit()`: 양식을 제출합니다.
+   * `guideBridge.setFocus(somExp, focusOption, runCompletionExp)`: 포커스를 필드에 설정합니다.
+   * `guideBridge.validate(errorList, somExpression, focus)`: 양식의 유효성을 검사합니다.
+   * `guideBridge.getDataXML(options)`: 양식 데이터를 XML로 가져옵니다.
+   * `guideBridge.resolveNode(somExpression)`: 양식 개체를 가져옵니다.
+   * `guideBridge.setProperty(somList, propertyName, valueList)`: 양식 개체의 속성을 설정합니다.
    * 또한 다음 필드 속성을 사용할 수 있습니다.
 
       * `field.value` 필드의 값을 변경하려면 다음을 수행하십시오.
@@ -191,15 +191,15 @@ AEM Forms에서는 적응형 양식 구성 요소에 동적 동작을 추가하�
 * 제출 시 양식 서명 경험을 구성하거나 서명자를 서명 페이지로 리디렉션할 수 있습니다.
 * 필요에 따라 순차적 또는 병렬 서명 경험을 구성합니다.
 
-### 레코드 {#generating-document-of-record} 문서를 생성하는 중
+### 레코드의 문서 생성 {#generating-document-of-record}
 
 레코드 문서(DoR)는 인쇄, 서명 또는 보관할 수 있는 적응형 양식의 병합된 PDF 버전입니다.
 
 * 적응형 양식의 기반이 되는 양식 데이터 모델에 따라 다음과 같이 DoR에 대한 템플릿을 구성할 수 있습니다.
 
-   * **XFA 양식 템플릿**:연결된 XDP 파일을 DoR 템플릿으로 사용합니다.
-   * **XSD 스키마**:적응형 양식에서 사용하는 것과 동일한 XML 스키마를 사용하는 관련 XFA 템플릿을 사용합니다.
-   * **없음**:자동 생성된 DoR을 사용합니다.
+   * **XFA 양식 템플릿**: 연결된 XDP 파일을 DoR 템플릿으로 사용합니다.
+   * **XSD 스키마**: 적응형 양식에서 사용하는 것과 동일한 XML 스키마를 사용하는 관련 XFA 템플릿을 사용합니다.
+   * **없음**: 자동 생성된 DoR을 사용합니다.
 
 * 적응형 양식 편집기의 레코드 문서 탭에서 머리글, 바닥글, 이미지, 색상, 글꼴 등을 바로 구성합니다.
 * 프로그래밍 방식으로 DoR을 생성하려면 `DoRService` 를 사용하십시오.
@@ -250,16 +250,16 @@ AEM에서는 적응형 양식을 현지화하는 데 사용할 수 있는 번역
 
 * AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어(pt-BR), 중국어(zh-CN), 중국어(zh-TW) 및 한국어(ko-KR) 로케일로 적응형 양식 컨텐츠의 지역화를 지원합니다. 그러나 런타임 시 적응형 양식에 대한 새 로케일 지원을 추가할 수 있습니다. 자세한 내용은 [적응형 양식 현지화를 위한 새 로케일 지원](/help/forms/using/supporting-new-language-localization.md)을 참조하십시오.
 
-## 프로덕션 {#prepare-forms-project-for-production} 양식 프로젝트 준비
+## 프로덕션 양식 프로젝트 준비 {#prepare-forms-project-for-production}
 
-### 양식 처리 서버 {#adding-forms-processing-server} 추가
+### Forms 처리 서버 추가 {#adding-forms-processing-server}
 
 보안 영역의 방화벽 뒤에 있는 AEM Forms 서버의 추가 인스턴스를 구성할 수 있습니다. 이 인스턴스는에 사용할 수 있습니다.
 
-* **일괄 처리**:로드가 많은 배치에서 반복되거나 예약된 작업입니다. 예를 들어, 인쇄 문을 생성하고, PDF 생성기, 출력 및 어셈블러와 같은 문서 서비스를 생성합니다.
-* **PII 데이터 저장**:처리 서버에 PII 데이터를 저장합니다. PII 데이터를 저장하기 위해 이미 사용자 지정 저장소 공급자를 사용하는 경우에는 필요하지 않습니다.
+* **일괄 처리**: 로드가 많은 배치에서 반복되거나 예약된 작업입니다. 예를 들어, 인쇄 문을 생성하고, PDF 생성기, 출력 및 어셈블러와 같은 문서 서비스를 생성합니다.
+* **PII 데이터 저장**: 처리 서버에 PII 데이터를 저장합니다. PII 데이터를 저장하기 위해 이미 사용자 지정 저장소 공급자를 사용하는 경우에는 필요하지 않습니다.
 
-### 프로젝트를 다른 환경 {#moving-project-to-another-environment}으로 이동
+### 프로젝트를 다른 환경으로 이동 {#moving-project-to-another-environment}
 
 AEM 프로젝트를 한 환경에서 다른 환경으로 이동해야 하는 경우가 많습니다. 이동할 때 기억해야 할 주요 사항 중 일부는 다음과 같습니다.
 
@@ -269,11 +269,11 @@ AEM 프로젝트를 한 환경에서 다른 환경으로 이동해야 하는 경
 * (*JEE의 AEM Forms만*) Forms Workflow 서버에 LCA 및 DSC를 수동으로 배포합니다.
 * [Export-Import](/help/forms/using/import-export-forms-templates.md) 기능을 사용하여 자산을 새 환경으로 이동합니다. 복제 에이전트를 구성하고 자산을 게시할 수도 있습니다.
 
-### AEM {#configuring-aem} 구성
+### AEM 구성 {#configuring-aem}
 
 전체 성능을 개선하기 위해 AEM을 구성하는 몇 가지 우수 사례는 다음과 같습니다.
 
-* Felix 콘솔에서 JavaScript 및 CSS용 HTML 클라이언트 라이브러리 압축을 활성화합니다. [예제](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)로 설명되는 Clientlibs 를 참조하십시오.
+* Felix 콘솔에서 JavaScript 및 CSS용 HTML 클라이언트 라이브러리 압축을 활성화합니다.
 * 모든 클라이언트 라이브러리를 `/etc.clientlibs/fd` 및 AEM Dispatcher의 추가 사용자 지정 클라이언트 라이브러리를 캐시하여 게시된 양식의 응답성과 보안을 높입니다. 자세한 내용은 [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) 를 참조하십시오.
 
 * `/content/forms/af/` 및 `/content/dam/formsanddocuments/*` 경로를 캐시하지 마십시오. 적응형 양식 캐싱 구성에 대한 자세한 내용은 [적응형 양식 캐싱](/help/forms/using/configure-adaptive-forms-cache.md)을 참조하십시오.
@@ -294,9 +294,9 @@ AEM 프로젝트를 한 환경에서 다른 환경으로 이동해야 하는 경
 
 프로덕션 환경에서는 제출된 양식 데이터를 AEM 저장소에 저장하지 않는 것이 좋습니다. Forms Portal 저장, 컨텐츠 저장 및 PDF 저장 제출 작업의 기본 구현은 양식 데이터를 AEM 저장소에 저장합니다. 이러한 제출 작업은 데모 용도로만 사용됩니다. 또한 저장 및 재개 및 자동 저장 기능은 기본적으로 포털 저장소를 사용합니다. 따라서 다음 권장 사항을 고려하십시오.
 
-* **초안 데이터 저장**:적응형 양식의 초안 기능을 사용하는 경우 SPI(사용자 지정 서비스 제공 인터페이스)를 구현하여 초안 데이터를 데이터베이스와 같은 보다 안전한 저장소에 저장해야 합니다. 자세한 내용은 [초안 및 제출 구성 요소를 데이터베이스](/help/forms/using/integrate-draft-submission-database.md)와 통합하기 위한 샘플을 참조하십시오.
+* **초안 데이터 저장**: 적응형 양식의 초안 기능을 사용하는 경우 SPI(사용자 지정 서비스 제공 인터페이스)를 구현하여 초안 데이터를 데이터베이스와 같은 보다 안전한 저장소에 저장해야 합니다. 자세한 내용은 [초안 및 제출 구성 요소를 데이터베이스](/help/forms/using/integrate-draft-submission-database.md)와 통합하기 위한 샘플을 참조하십시오.
 
-* **제출 데이터 저장**:Form Portal 제출 저장소를 사용하는 경우 사용자 지정 SPI를 구현하여 제출 데이터를 데이터베이스에 저장해야 합니다. 샘플 통합에 대해서는 [초안 및 제출 구성 요소와 데이터베이스](/help/forms/using/integrate-draft-submission-database.md)를 통합하려면 샘플을 참조하십시오.
+* **제출 데이터 저장**: Form Portal 제출 저장소를 사용하는 경우 사용자 지정 SPI를 구현하여 제출 데이터를 데이터베이스에 저장해야 합니다. 샘플 통합에 대해서는 [초안 및 제출 구성 요소와 데이터베이스](/help/forms/using/integrate-draft-submission-database.md)를 통합하려면 샘플을 참조하십시오.
 
    또한 양식 데이터와 첨부 파일을 보안 저장소에 저장하는 사용자 지정 제출 작업을 작성할 수 있습니다. 자세한 내용은 [적응형 양식에 대한 사용자 지정 제출 작업 쓰기](/help/forms/using/custom-submit-action-form.md)를 참조하십시오.
 

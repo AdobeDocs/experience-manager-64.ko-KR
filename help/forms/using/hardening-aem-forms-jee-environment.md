@@ -1,8 +1,8 @@
 ---
 title: JEE 환경에서 AEM Forms 강화
-seo-title: JEE 환경에서 AEM Forms 강화
+seo-title: Hardening Your AEM Forms on JEE Environment
 description: 회사 인트라넷에서 실행 중인 JEE에서 AEM Forms의 보안을 강화하기 위해 다양한 보안 강화 설정을 알아봅니다.
-seo-description: 회사 인트라넷에서 실행 중인 JEE에서 AEM Forms의 보안을 강화하기 위해 다양한 보안 강화 설정을 알아봅니다.
+seo-description: Learn a variety of security-hardening settings to enhance the security of AEM Forms on JEE running in a corporate intranet.
 uuid: f6c63690-6376-4fe1-9df2-a14fbfd62aff
 content-type: reference
 topic-tags: Security
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 5aa02fae-b9dd-45bf-9826-16e9e5686727
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '7347'
+source-wordcount: '7304'
 ht-degree: 1%
 
 ---
@@ -632,7 +632,7 @@ JEE 웹 애플리케이션의 각 AEM Forms에 대한 다음 애플리케이션 
 
 CSRF(Cross-Site Request Forgery) 공격에서는 웹 사이트에서 사용자에 대해 가지는 트러스트를 이용하여 사용자가 허가되지 않고 의도하지 않은 명령을 전송합니다. 이 공격은 웹 페이지에 링크 또는 스크립트, 또는 이메일 메시지의 URL을 포함하여 사용자가 이미 인증된 다른 사이트에 액세스하도록 설정되어 있습니다.
 
-예를 들어, 다른 웹 사이트를 동시에 탐색하면서 Administration Console에 로그인할 수 있습니다. 웹 페이지 중 하나는 희생자 웹 사이트에서 서버측 스크립트를 타겟팅하는 `src` 특성이 있는 HTML 이미지 태그를 포함할 수 있습니다. 웹 브라우저가 제공하는 쿠키 기반 세션 인증 메커니즘을 활용함으로써, 공격 웹 사이트는 피해 서버측 스크립트에 악성 요청을 전송하여 정당한 사용자로 가장할 수 있습니다. 자세한 예는 [https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Examples](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Examples)을 참조하십시오.
+예를 들어, 다른 웹 사이트를 동시에 탐색하면서 Administration Console에 로그인할 수 있습니다. 웹 페이지 중 하나는 희생자 웹 사이트에서 서버측 스크립트를 타겟팅하는 `src` 특성이 있는 HTML 이미지 태그를 포함할 수 있습니다. 웹 브라우저가 제공하는 쿠키 기반 세션 인증 메커니즘을 활용함으로써, 공격 웹 사이트는 피해 서버측 스크립트에 악성 요청을 전송하여 정당한 사용자로 가장할 수 있습니다.
 
 CSRF에는 다음과 같은 특성이 일반적입니다.
 
@@ -674,7 +674,7 @@ JEE의 AEM Forms은 레퍼러 필터 기능을 사용하여 CSRF 공격을 차�
 
 ### 레퍼러 필터링 관리 {#managing-referer-filtering}
 
-JEE의 AEM Forms은 서버 리소스에 대한 액세스가 허용되는 레퍼러를 지정하는 레퍼러 필터를 제공합니다. 기본적으로 레퍼러 필터는 *CSRF_CHECK_GETS*&#x200B;가 true로 설정된 경우가 아니면 안전한 HTTP 메서드(예: GET)을 사용하는 요청을 필터링하지 않습니다. 허용된 레퍼러 항목의 포트 번호가 0으로 설정된 경우, JEE의 AEM Forms에서는 포트 번호에 관계없이 해당 호스트의 레퍼러가 있는 모든 요청을 허용합니다. 포트 번호를 지정하지 않으면 기본 포트 80(HTTP) 또는 포트 443(HTTPS)의 요청만 허용됩니다. 허용된 레퍼러 목록의 모든 항목이 삭제된 경우 레퍼러 필터링이 비활성화됩니다.
+JEE의 AEM Forms은 서버 리소스에 대한 액세스가 허용되는 레퍼러를 지정하는 레퍼러 필터를 제공합니다. 기본적으로 레퍼러 필터는 안전한 HTTP 메서드를 사용하는 요청을 필터링하지 않습니다. 예를 들어, GET은 *CSRF_CHECK_GETS*&#x200B;이 true로 설정된 경우가 아니면 필터링하지 않습니다. 허용된 레퍼러 항목의 포트 번호가 0으로 설정된 경우, JEE의 AEM Forms에서는 포트 번호에 관계없이 해당 호스트의 레퍼러가 있는 모든 요청을 허용합니다. 포트 번호를 지정하지 않으면 기본 포트 80(HTTP) 또는 포트 443(HTTPS)의 요청만 허용됩니다. 허용된 레퍼러 목록의 모든 항목이 삭제된 경우 레퍼러 필터링이 비활성화됩니다.
 
 문서 서비스를 처음 설치하면 허용된 레퍼러 목록이 문서 서비스가 설치된 서버의 주소로 업데이트됩니다. 서버 항목에는 서버 이름, IPv4 주소, IPv6이 활성화된 경우 IPv6 주소, 루프백 주소 및 localhost 항목이 포함됩니다. 허용된 레퍼러 목록에 추가된 이름은 호스트 운영 체제에서 반환됩니다. 예를 들어 IP 주소가 10.40.54.187인 서버에는 다음 항목이 포함됩니다. `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0` 호스트 운영 체제에서 참조하는 정규화되지 않은 이름(IPv4 주소, IPv6 주소 또는 정규화된 도메인 이름이 없는 이름)에 대해서는 허용 목록에 추가하다 업데이트되지 않습니다. 비즈니스 환경에 맞게 허용된 레퍼러 목록을 수정합니다. 기본 허용된 레퍼러 목록과 함께 프로덕션 환경에 양식 서버를 배포하지 마십시오. 허용된 레퍼러, 레퍼러 예외 또는 URI를 수정한 후 변경 사항이 적용되도록 서버를 다시 시작해야 합니다.
 
@@ -697,7 +697,7 @@ JEE의 AEM Forms에서는 허용된 레퍼러 예외 목록 및 허용된 URI �
 
 API에 대한 자세한 내용은* JEE API Reference에서 AEM Forms 를 참조하십시오.
 
-글로벌 수준의 허용된 레퍼러 예외에 대해 ***LC_GLOBAL_ALLOWED_REFERRER_EXCEPTION*** 목록을 사용하여 모든 응용 프로그램에 적용할 수 있는 예외를 정의합니다. 이 목록에는 절대 경로(예: `/index.html`) 또는 상대 경로(예: `/sample/`) 정규 표현식을 상대 URI 끝에 추가할 수도 있습니다(예: ). `/sample/(.)*`
+글로벌 수준의 허용된 레퍼러 예외에 대해 ***LC_GLOBAL_ALLOWED_REFERRER_EXCEPTION*** 목록을 사용하여 모든 응용 프로그램에 적용할 수 있는 예외를 정의합니다. 이 목록에는 절대 경로(예: `/index.html`)나 상대 경로(예: `/sample/`)가 있는 URI만 포함되어 있습니다. 상대 URI 끝에 정규 표현식을 추가할 수도 있습니다(예: `/sample/(.)*`).
 
 ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** 목록 ID는 `adobe-usermanager-client.jar`에 있는 `com.adobe.idp.um.api` 네임스페이스의 `UMConstants` 클래스에 상수로 정의됩니다. AEM Forms API를 사용하여 이 목록을 생성, 수정 또는 편집할 수 있습니다. 예를 들어, 전역 허용 레퍼러 예외 목록을 만들려면 다음을 사용합니다.
 

@@ -1,8 +1,8 @@
 ---
 title: 파일 형식 및 PDF 간 변환
-seo-title: 파일 형식 및 PDF 간 변환
+seo-title: Converting Between File Formatsand PDF
 description: PDF 생성 서비스를 사용하여 기본 파일 형식을 PDF로 변환할 수 있습니다. PDF 생성 서비스는 PDF를 다른 파일 형식으로 변환하고 PDF 문서의 크기를 최적화합니다.
-seo-description: PDF 생성 서비스를 사용하여 기본 파일 형식을 PDF로 변환할 수 있습니다. PDF 생성 서비스는 PDF를 다른 파일 형식으로 변환하고 PDF 문서의 크기를 최적화합니다.
+seo-description: Use the Generate PDF service to convert native file formats to PDF. Generate PDF service also converts PDF to other file formats and optimizes the size of PDF documents.
 uuid: f72ad603-c996-4d48-9bfc-bed7bf776af6
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 79091a75-2669-453f-9560-e58bfffa3487
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '7932'
+source-wordcount: '7872'
 ht-degree: 0%
 
 ---
@@ -52,8 +52,8 @@ PDF 생성 서비스는 기본 응용 프로그램을 사용하여 다음 파일
 
 Generate PDF 서비스는 다음과 같은 표준 기반 파일 형식을 PDF로 변환합니다.
 
-* 비디오 형식:SWF, FLV(Windows 전용)
-* 이미지 형식:JPEG, JPG, JP2, J2Ki, JPC, J2C, GIF, BMP, TIFF, TIF, PNG, JPF
+* 비디오 형식: SWF, FLV(Windows 전용)
+* 이미지 형식: JPEG, JPG, JP2, J2Ki, JPC, J2C, GIF, BMP, TIFF, TIF, PNG, JPF
 * HTML(Windows, Sun™ Solaris™ 및 Linux®)
 
 PDF 생성 서비스는 PDF를 다음 파일 형식으로 변환합니다(Windows만 해당).
@@ -140,7 +140,7 @@ PDF 서비스 클라이언트를 만든 후 `createPDF2` 메서드를 호출할 
 
 [PDF 서비스 API 빠른 시작 생성](/help/forms/developing/generate-pdf-service-java-api.md#generate-pdf-service-java-api-quick-start-soap)
 
-### Java API {#convert-word-documents-to-pdf-documents-using-the-java-api}를 사용하여 Word 문서를 PDF 문서로 변환
+### Java API를 사용하여 Word 문서를 PDF 문서로 변환 {#convert-word-documents-to-pdf-documents-using-the-java-api}
 
 PDF 생성 API(Java)를 사용하여 Microsoft Word 문서를 PDF 문서로 변환합니다.
 
@@ -189,19 +189,19 @@ PDF 생성 API(Java)를 사용하여 Microsoft Word 문서를 PDF 문서로 변�
 
 [단계 요약](converting-file-formats-pdf.md#summary-of-steps)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 Microsoft Word 문서를 PDF 문서로 변환](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 Microsoft Word 문서를 PDF 문서로 변환](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 웹 서비스 API {#convert-word-documents-to-pdf-documents-using-the-web-service-api}를 사용하여 Word 문서를 PDF 문서로 변환
+### 웹 서비스 API를 사용하여 Word 문서를 PDF 문서로 변환 {#convert-word-documents-to-pdf-documents-using-the-web-service-api}
 
 PDF 생성 API(웹 서비스)를 사용하여 Microsoft Word 문서를 PDF 문서로 변환합니다.
 
 1. 프로젝트 파일을 포함합니다.
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용해야 합니다.`http://localhost:8080/soap/services/GeneratePDFService?WSDL&lc_version=9.0.1`
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용해야 합니다. `http://localhost:8080/soap/services/GeneratePDFService?WSDL&lc_version=9.0.1`
 
    >[!NOTE]
    >
@@ -307,7 +307,7 @@ HTML 내용이 PDF 문서로 변환되면 결과를 검색하고 PDF 문서를 �
 
 [PDF 서비스 API 빠른 시작 생성](/help/forms/developing/generate-pdf-service-java-api.md#generate-pdf-service-java-api-quick-start-soap)
 
-### Java API {#convert-html-content-to-a-pdf-document-using-the-java-api}를 사용하여 HTML 컨텐츠를 PDF 문서로 변환
+### Java API를 사용하여 HTML 컨텐츠를 PDF 문서로 변환 {#convert-html-content-to-a-pdf-document-using-the-java-api}
 
 PDF 생성 API(Java)를 사용하여 HTML 문서를 PDF 문서로 변환합니다.
 
@@ -344,21 +344,21 @@ PDF 생성 API(Java)를 사용하여 HTML 문서를 PDF 문서로 변환합니�
 
 [HTML 문서를 PDF 문서로 변환](converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 HTML 컨텐츠를 PDF 문서로 변환](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 HTML 컨텐츠를 PDF 문서로 변환](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 HTML 컨텐츠를 PDF 문서로 변환](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 HTML 컨텐츠를 PDF 문서로 변환](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 웹 서비스 API {#convert-html-content-to-a-pdf-document-using-the-web-service-api}를 사용하여 HTML 컨텐츠를 PDF 문서로 변환
+### 웹 서비스 API를 사용하여 HTML 컨텐츠를 PDF 문서로 변환 {#convert-html-content-to-a-pdf-document-using-the-web-service-api}
 
 PDF 생성 API(웹 서비스)를 사용하여 HTML 컨텐츠를 PDF 문서로 변환합니다.
 
 1. 프로젝트 파일을 포함합니다.
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용해야 합니다.`http://localhost:8080/soap/services/GeneratePDFService?WSDL&lc_version=9.0.1`
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용해야 합니다. `http://localhost:8080/soap/services/GeneratePDFService?WSDL&lc_version=9.0.1`
 
    >[!NOTE]
    >
@@ -407,7 +407,7 @@ PDF 생성 API(웹 서비스)를 사용하여 HTML 컨텐츠를 PDF 문서로 �
 
 [SwaRef를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## PDF 문서를 이미지가 아닌 형식으로 변환 {#converting-pdf-documents-to-non-image-formats}
+## PDF 문서를 비이미지 형식으로 변환 {#converting-pdf-documents-to-non-image-formats}
 
 이 섹션에서는 Generate PDF Java API 및 웹 서비스 API를 사용하여 PDF 문서를 프로그래밍 방식으로 RTF 파일로 변환하는 방법에 대해 설명합니다. 이 파일은 이미지가 아닌 형식의 예입니다. 이미지 이외의 형식에는 HTML, 텍스트, DOC 및 EPS가 포함됩니다. PDF 문서를 RTF로 변환할 때 PDF 문서에 전송 단추와 같은 양식 요소가 포함되어 있지 않은지 확인하십시오. 양식 요소는 변환되지 않습니다.
 
@@ -457,7 +457,7 @@ PDF 문서를 검색하여 이미지가 아닌 형식으로 변환합니다.
 
 [PDF 서비스 API 빠른 시작 생성](/help/forms/developing/generate-pdf-service-java-api.md#generate-pdf-service-java-api-quick-start-soap)
 
-### Java API {#convert-a-pdf-document-to-a-rtf-file-using-the-java-api}를 사용하여 PDF 문서를 RTF 파일로 변환
+### Java API를 사용하여 PDF 문서를 RTF 파일로 변환 {#convert-a-pdf-document-to-a-rtf-file-using-the-java-api}
 
 PDF 생성 API(Java)를 사용하여 PDF 문서를 RTF 파일로 변환합니다.
 
@@ -497,19 +497,19 @@ PDF 생성 API(Java)를 사용하여 PDF 문서를 RTF 파일로 변환합니다
 
 [단계 요약](converting-file-formats-pdf.md#summary-of-steps)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 HTML 컨텐츠를 PDF 문서로 변환](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 HTML 컨텐츠를 PDF 문서로 변환](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 웹 서비스 API {#convert-a-pdf-document-to-a-rtf-file-using-the-web-service-api}를 사용하여 PDF 문서를 RTF 파일로 변환
+### 웹 서비스 API를 사용하여 PDF 문서를 RTF 파일로 변환 {#convert-a-pdf-document-to-a-rtf-file-using-the-web-service-api}
 
 PDF 생성 API(웹 서비스)를 사용하여 PDF 문서를 RTF 파일로 변환합니다.
 
 1. 프로젝트 파일을 포함합니다.
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용해야 합니다.`http://localhost:8080/soap/services/GeneratePDFService?WSDL&lc_version=9.0.1`
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용해야 합니다. `http://localhost:8080/soap/services/GeneratePDFService?WSDL&lc_version=9.0.1`
 
    >[!NOTE]
    >
@@ -562,7 +562,7 @@ PDF 생성 API(웹 서비스)를 사용하여 PDF 문서를 RTF 파일로 변환
 
 [SwaRef를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## 추가 기본 파일 형식 지원 추가 {#adding-support-for-additional-native-file-formats}
+## 추가 기본 파일 형식에 대한 지원 추가 {#adding-support-for-additional-native-file-formats}
 
 이 섹션에서는 기본 파일 형식에 대한 지원을 추가하는 방법을 설명합니다. PDF 생성 서비스와 이 서비스에서 기본 파일 형식을 PDF로 변환하는 데 사용하는 기본 애플리케이션 간의 상호 작용에 대한 개요를 제공합니다.
 
@@ -585,7 +585,7 @@ PDF 생성 서비스는 파일 형식과 연결된 응용 프로그램을 호출
 ** AppMonis는 사용자가 해당 애플리케이션에서 제공하는 대화 상자를 탐색하는 것과 동일한 방식으로 기본 애플리케이션과 상호 작용하는 엔터프라이즈 구성 요소입니다. AppMon에서 Microsoft Word와 같은 응용 프로그램을 지정하여 파일을 열고 인쇄하는 데 사용하는 XML 그래마에는 다음과 같은 순차적 작업이 포함됩니다.
 
 1. 파일 > 열기를 선택하여 파일 열기
-1. 열기(Open) 대화상자가 나타나는지 확인합니다.그렇지 않으면 오류를 처리합니다
+1. 열기(Open) 대화상자가 나타나는지 확인합니다. 그렇지 않으면 오류를 처리합니다
 1. 파일 이름 필드에 파일 이름을 제공한 다음 열기 단추를 클릭합니다
 1. 파일이 실제로 열리는지 확인
 1. 파일 > 인쇄를 선택하여 인쇄 대화 상자 열기
@@ -595,7 +595,7 @@ AppMon은 표준 Win32 API를 사용하여 키 스트로크 및 마우스 클릭
 
 이러한 Win32 API의 제한 사항으로 인해 AppMon은 부동 메뉴 막대(텍스트 패드 등 일부 응용 프로그램에서 제공됨)와 Win32 API를 사용하여 컨텐츠를 검색할 수 없는 특정 유형의 대화 상자 등 일부 특정 종류의 창에 이러한 UI 이벤트를 전달할 수 없습니다.
 
-부동 메뉴 모음을 시각적으로 식별하는 것이 쉽습니다.그러나 시각적인 검사만으로 특별한 유형의 대화 내용을 식별할 수는 없을 것이다. Microsoft Spy++(Microsoft Visual C++ 개발 환경의 일부) 또는 그에 상응하는 WinID([https://www.dennisbabkin.com/php/download.php?what=WinID](https://www.dennisbabkin.com/php/download.php?what=WinID)에서 무료로 다운로드할 수 있음)와 같은 타사 응용 프로그램이 대화 상자를 검토하여 AppMon이 표준 Win32 API를 사용하여 상호 작용할 수 있는지 확인해야 합니다.
+부동 메뉴 모음을 시각적으로 식별하는 것이 쉽습니다. 그러나 시각적인 검사만으로 특별한 유형의 대화 내용을 식별할 수는 없을 것이다. Microsoft Spy++(Microsoft Visual C++ 개발 환경의 일부) 또는 그에 상응하는 WinID([https://www.dennisbabkin.com/php/download.php?what=WinID](https://www.dennisbabkin.com/php/download.php?what=WinID)에서 무료로 다운로드할 수 있음)와 같은 타사 응용 프로그램이 대화 상자를 검토하여 AppMon이 표준 Win32 API를 사용하여 상호 작용할 수 있는지 확인해야 합니다.
 
 WinID가 텍스트, 하위 창, 창 클래스 ID 등의 대화 상자 내용을 추출할 수 있는 경우 AppMon도 동일한 작업을 수행할 수 있습니다.
 
@@ -633,12 +633,12 @@ WinID가 텍스트, 하위 창, 창 클래스 ID 등의 대화 상자 내용을 
   <tr> 
    <td><p>추가 애플리케이션별 대화 상자 지침 </p></td> 
    <td><p>응용 프로그램별 대화 상자 지침에 대한 무시 및 추가를 지정합니다. 섹션에는 이러한 정보의 예가 나와 있습니다. </p><p>이 정보가 포함된 파일이 적용됩니다.<i>[appname]</i> 추가<i>[locale]</i>.xml 예로는 appmon.addition.en_US.xml이 있습니다.</p></td> 
-   <td><p>이 형식의 파일은 XML 편집 응용 프로그램을 사용하여 만들고 수정할 수 있습니다. (<a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">기본 응용 프로그램에 대한 추가 대화 상자 XML 파일 만들기 또는 수정 참조</a>). </p><p><strong>중요</strong>:서버가 지원할 각 기본 애플리케이션에 대해 추가 애플리케이션별 대화 상자 지침을 만들어야 합니다. </p></td> 
+   <td><p>이 형식의 파일은 XML 편집 응용 프로그램을 사용하여 만들고 수정할 수 있습니다. (<a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">기본 응용 프로그램에 대한 추가 대화 상자 XML 파일 만들기 또는 수정 참조</a>). </p><p><strong>중요</strong>: 서버가 지원할 각 기본 애플리케이션에 대해 추가 애플리케이션별 대화 상자 지침을 만들어야 합니다. </p></td> 
   </tr> 
  </tbody> 
 </table>
 
-### 스크립트 및 대화 상자 XML 파일 {#about-the-script-and-dialog-xml-files} 정보
+### 스크립트 및 대화 상자 XML 파일 정보 {#about-the-script-and-dialog-xml-files}
 
 스크립트 XML 파일은 사용자가 응용 프로그램 대화 상자를 탐색하는 것과 동일한 방식으로 PDF 생성 서비스가 응용 프로그램 대화 상자를 탐색하도록 합니다. 또한 스크립트 XML 파일은 단추 누름, 확인란 선택 또는 선택 취소 또는 메뉴 항목 선택과 같은 작업을 수행하거나 대화 상자에 응답하도록 PDF 생성 서비스를 표시합니다.
 
@@ -692,13 +692,13 @@ WinID가 텍스트, 하위 창, 창 클래스 ID 등의 대화 상자 내용을 
 
 [PDF 생성] 서비스에서 이전에 나열된 파일에 설명되어 있지 않은 대화 상자가 나타나면 [PDF 생성] 서비스에서는 대화 상자의 캡션이 로그 파일 항목에 포함됩니다. 현재 실행 중인 작업이 결국 시간 초과됩니다. 그런 다음 로그 파일의 정보를 사용하여 기본 응용 프로그램의 추가 대화 상자 XML 파일에 새 지침을 작성할 수 있습니다.
 
-### 기본 파일 형식 {#adding-or-modifying-support-for-a-native-file-format}에 대한 지원 추가 또는 수정
+### 기본 파일 형식에 대한 지원 추가 또는 수정 {#adding-or-modifying-support-for-a-native-file-format}
 
 이 섹션에서는 다른 기본 파일 형식을 지원하거나 이미 지원되는 기본 파일 형식에 대한 지원을 수정하기 위해 수행해야 하는 작업에 대해 설명합니다.
 
 지원을 추가하거나 수정하려면 먼저 다음 작업을 완료해야 합니다.
 
-#### 창 요소 {#choosing-a-tool-for-identifying-window-elements} 식별을 위한 도구 선택
+#### 창 요소를 식별하는 도구 선택 {#choosing-a-tool-for-identifying-window-elements}
 
 대화 상자 및 스크립트 XML 파일을 사용하려면 대화 상자, 필드 또는 기타 대화 상자 구성 요소가 응답하는 창 요소(대화 상자, 필드 또는 기타 대화 상자 구성 요소)를 확인해야 합니다. 예를 들어, 스크립트가 기본 응용 프로그램의 메뉴를 호출한 후 스크립트는 해당 메뉴에서 키 입력이나 작업을 적용할 창 요소를 식별해야 합니다.
 
@@ -720,7 +720,7 @@ WinID가 텍스트, 하위 창, 창 클래스 ID 등의 대화 상자 내용을 
 
 대화 상자나 스크립트 XML 파일에서 작업할 경우에는 Microsoft Spy++ 응용 프로그램을 설치해야 합니다.
 
-#### 대화 상자 및 스크립트 파일 {#unpackaging-the-dialog-and-script-files} 패키지 해제
+#### 대화 상자 및 스크립트 파일의 패키징 해제 {#unpackaging-the-dialog-and-script-files}
 
 대화 상자 및 스크립트 파일은 appmondata.jar 파일에 있습니다. 이러한 파일을 수정하거나 새 스크립트나 대화 상자 파일을 추가하려면 먼저 이 JAR 파일의 압축을 해제해야 합니다. 예를 들어 EditPlus 응용 프로그램에 대한 지원을 추가한다고 가정합니다. appmon.editplus.script.en_US.xml 및 appmon.editplus.script.addition.en_US.xml이라는 두 개의 XML 파일을 만듭니다. 이러한 XML 스크립트는 아래에 지정된 대로 두 위치의 adobe-appmondata.jar 파일에 추가해야 합니다.
 
@@ -749,13 +749,13 @@ WinID가 텍스트, 하위 창, 창 클래스 ID 등의 대화 상자 내용을 
 1. 활성 서비스를 확장합니다. 실행 중인 경우 서비스 이름 옆에 녹색 화살표가 나타납니다. 그렇지 않으면 서비스가 중지 상태입니다.
 1. 서비스가 중지 상태인 경우 서비스 이름을 마우스 오른쪽 단추로 클릭하고 서비스 시작을 선택합니다.
 
-### 기본 응용 프로그램 {#creating-or-modifying-a-script-xml-file-for-a-native-application}에 대한 스크립트 XML 파일 만들기 또는 수정
+### 기본 응용 프로그램의 스크립트 XML 파일 만들기 또는 수정 {#creating-or-modifying-a-script-xml-file-for-a-native-application}
 
 파일을 새 기본 응용 프로그램에 직접 연결하려면 해당 응용 프로그램에 대한 스크립트 XML 파일을 만들어야 합니다. PDF 생성 서비스가 이미 지원되는 기본 애플리케이션과 상호 작용하는 방법을 수정하려면 해당 애플리케이션의 스크립트를 수정해야 합니다.
 
 이 스크립트에는 기본 애플리케이션의 창 요소를 탐색하고 해당 요소에 대한 특정 응답을 제공하는 지침이 포함되어 있습니다. 이 정보가 포함된 파일이 적용됩니다.*[appname]*.script를 참조하십시오.*[locale]*.xml 예로는 appmon.notepad.script.en_US.xml이 있습니다.
 
-#### 스크립트가 {#identifying-steps-the-script-must-execute}을 실행해야 하는 단계 식별
+#### 스크립트를 실행해야 하는 단계 식별 {#identifying-steps-the-script-must-execute}
 
 기본 응용 프로그램을 사용하여 탐색해야 하는 창 요소와 문서를 인쇄하기 위해 수행해야 하는 각 응답을 결정합니다. 응답에서 나오는 대화 상자에 주목하십시오. 단계는 다음 단계와 유사합니다.
 
@@ -765,13 +765,13 @@ WinID가 텍스트, 하위 창, 창 클래스 ID 등의 대화 상자 내용을 
 1. 프린터에 필요한 속성을 지정합니다.
 1. 인쇄 를 선택하고 다른 이름으로 저장 대화 상자가 나타날 때까지 기다립니다. [PDF 생성] 서비스에서 PDF 파일의 대상을 지정하려면 [다른 이름으로 저장] 대화 상자가 필요합니다.
 
-#### 캡션 특성 {#identifying-the-dialogs-specified-in-caption-attributes}에 지정된 대화 상자 식별
+#### 캡션 특성에 지정된 대화 상자 식별 {#identifying-the-dialogs-specified-in-caption-attributes}
 
 기본 응용 프로그램에서 창 요소 속성의 ID를 얻으려면 Microsoft Spy++를 사용합니다. 스크립트를 작성하려면 이러한 ID가 있어야 합니다.
 
 #### 캡션 특성에서 정규 표현식 사용 {#using-regular-expressions-in-caption-attributes}
 
-캡션 사양에 정규 표현식을 사용할 수 있습니다. PDF 생성 서비스는 `java.util.regex.Matcher` 클래스를 사용하여 정규 표현식을 지원합니다. 이 유틸리티는 `java.util.regex.Pattern`에 설명된 정규 표현식을 지원합니다. ([https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html](https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html)의 Java 웹 사이트로 이동합니다.)
+캡션 사양에 정규 표현식을 사용할 수 있습니다. PDF 생성 서비스는 `java.util.regex.Matcher` 클래스를 사용하여 정규 표현식을 지원합니다. 이 유틸리티는 `java.util.regex.Pattern`에 설명된 정규 표현식을 지원합니다.
 
 **메모장에서 메모장 앞에 있는 파일 이름을 포함하는 정규 표현식**
 
@@ -842,7 +842,7 @@ WinID가 텍스트, 하위 창, 창 클래스 ID 등의 대화 상자 내용을 
  </windowList>
 ```
 
-### 기본 응용 프로그램 {#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application}에 대한 추가 대화 상자 XML 파일 만들기 또는 수정
+### 기본 응용 프로그램에 대한 추가 대화 상자 XML 파일 만들기 또는 수정 {#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application}
 
 이전에 지원되지 않은 네이티브 응용 프로그램에 대한 스크립트를 생성하는 경우 해당 응용 프로그램에 대한 추가 대화 상자 XML 파일도 만들어야 합니다. AppMon에서 사용하는 모든 기본 응용 프로그램에는 추가 대화 상자 XML 파일이 하나만 있어야 합니다. 요청되지 않은 대화 상자가 없는 경우에도 추가 대화 상자 XML 파일이 필요합니다. 추가 대화 상자에는 `window` 요소가 자리 표시자일 경우에도 하나 이상의 `window` 요소가 있어야 합니다.
 
@@ -865,11 +865,11 @@ WinID가 텍스트, 하위 창, 창 클래스 ID 등의 대화 상자 내용을 
 
 `window` 요소에 하위 요소로 표시되는 `windowList` 요소를 주문해야 합니다. ( [창 및 windowList 요소 순서 지정](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements) 참조)
 
-### 일반 대화 상자 XML 파일 {#modifying-the-general-dialog-xml-file} 수정
+### 일반 대화 상자 XML 파일 수정 {#modifying-the-general-dialog-xml-file}
 
 일반 대화 상자 XML 파일을 수정하여 시스템에서 생성한 대화 상자에 응답하거나 여러 응용 프로그램에 공통되는 대화 상자에 응답할 수 있습니다.
 
-#### XML 구성 파일 {#adding-a-filetype-entry-in-the-xml-configuration-file}에 파일 유형 항목 추가
+#### XML 구성 파일에 파일 유형 항목 추가 {#adding-a-filetype-entry-in-the-xml-configuration-file}
 
 이 절차에서는 파일 유형을 기본 응용 프로그램과 연결하기 위해 PDF 서비스 생성 구성 파일을 업데이트하는 방법에 대해 설명합니다. 이 구성 파일을 업데이트하려면 관리 콘솔을 사용하여 구성 데이터를 파일로 내보내야 합니다. 구성 데이터의 기본 파일 이름은 native2pdfconfig.xml입니다.
 
@@ -908,7 +908,7 @@ WinID가 텍스트, 하위 창, 창 클래스 ID 등의 대화 상자 내용을 
      </filetype-settings>
 ```
 
-#### 기본 애플리케이션 {#creating-an-environment-variable-to-locate-the-native-application}을(를) 찾기 위한 환경 변수를 만듭니다.
+#### 기본 애플리케이션을 찾기 위한 환경 변수 만들기 {#creating-an-environment-variable-to-locate-the-native-application}
 
 기본 응용 프로그램 실행 파일의 위치를 지정하는 환경 변수를 만듭니다. 변수는 *[applicationname]*_PATH 형식을 사용해야 합니다. 여기서 *applicationname*&#x200B;은(는) XML 구성 파일 및 스크립트에서 사용되는 응용 프로그램 이름과 정확히 일치해야 하며, 경로에는 실행 파일의 경로가 큰따옴표로 포함되어 있습니다. 이러한 환경 변수의 예는 `Photoshop_PATH`입니다.
 
@@ -920,7 +920,7 @@ WinID가 텍스트, 하위 창, 창 클래스 ID 등의 대화 상자 내용을 
 1. 시스템 속성 대화 상자에서 **고급** 탭을 클릭한 다음 **환경 변수**&#x200B;를 클릭합니다.
 1. 환경 변수 대화 상자의 시스템 변수에서 **새로 만들기**&#x200B;를 클릭합니다.
 1. 새 시스템 변수 대화 상자의 **변수 이름** 상자에 *[applicationName]*_PATH 형식을 사용하는 이름을 입력합니다.
-1. **변수 값** 상자에서 응용 프로그램의 실행 파일의 전체 경로와 파일 이름을 입력한 다음 **확인**&#x200B;을 클릭합니다. 예를 들어, 다음을 입력합니다.`c:\windows\Notepad.exe`
+1. **변수 값** 상자에서 응용 프로그램의 실행 파일의 전체 경로와 파일 이름을 입력한 다음 **확인**&#x200B;을 클릭합니다. 예를 들어, 다음을 입력합니다. `c:\windows\Notepad.exe`
 1. 환경 변수 대화 상자에서 **확인**&#x200B;을 클릭합니다.
 
 **명령줄에서 시스템 변수 만들기**
@@ -931,7 +931,7 @@ WinID가 텍스트, 하위 창, 창 클래스 ID 등의 대화 상자 내용을 
             [applicationname]_PATH=[Full path name]
    ```
 
-   예를 들어, 다음을 입력합니다.`NotePad_PATH=C:\WINDOWS\NOTEPAD.EXE`
+   예를 들어, 다음을 입력합니다. `NotePad_PATH=C:\WINDOWS\NOTEPAD.EXE`
 
 1. 시스템 변수를 적용할 새 명령줄 프롬프트를 시작합니다.
 

@@ -1,17 +1,17 @@
 ---
 title: Microsoft Dynamics OData 구성
-seo-title: Microsoft Dynamics ODtata 구성
+seo-title: Microsoft Dynamics ODtata configuration
 description: 양식 데이터 모델을 통해 온라인 및 온프레미스 Microsoft Dynamics 서비스를 활용하고 통합 및 사용할 수 있습니다.
-seo-description: 양식 데이터 모델을 통해 온라인 및 온프레미스 Microsoft Dynamics 서비스를 통합 및 사용하는 방법을 알아봅니다.
+seo-description: Learn how to leverage integrate and work with online and on-premises Microsoft Dynamics services through form data model.
 uuid: c9b2764f-9127-4a99-a469-b6ebcdee8fdf
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 62f9d1de-c397-46b5-964e-19777ddd130c
-feature: 양식 데이터 모델
+feature: Form Data Model
 exl-id: 18df57b6-789a-4b61-9418-fa12294b226f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1217'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ AEM Forms 추가 기능 패키지에는 Microsoft Dynamics를 AEM Forms과 빠�
 * MS Dynamics OData Cloud Service(OData 서비스)
 * 미리 구성된 Microsoft Dynamics 및 서비스를 사용하는 양식 데이터 모델.
 
-AEM 인스턴스에 대한 실행 모드가 `samplecontent`(기본값)으로 설정된 경우에만 AEM Forms 인스턴스에서 사전 구성된 Microsoft Dynamics 및 서비스가 포함된 OData Cloud Service 및 양식 데이터 모델을 사용할 수 있습니다. AEM 인스턴스에 대한 실행 모드 구성에 대한 자세한 내용은 [실행 모드](https://helpx.adobe.com/in/experience-manager/6-4/sites-deploying/configure-runmodes.html)를 참조하십시오.
+AEM 인스턴스에 대한 실행 모드가 `samplecontent`(기본값)으로 설정된 경우에만 AEM Forms 인스턴스에서 사전 구성된 Microsoft Dynamics 및 서비스가 포함된 OData Cloud Service 및 양식 데이터 모델을 사용할 수 있습니다. AEM 인스턴스에 대한 실행 모드 구성에 대한 자세한 내용은 [실행 모드](/help/sites-deploying/configure-runmodes.md)를 참조하십시오.
 
 ## 전제 조건 {#prerequisites}
 
@@ -49,7 +49,7 @@ Microsoft Dynamics 설정 및 구성을 시작하기 전에 다음을 확인하�
 
 * [Microsoft Azure Active Directory에 Microsoft Dynamics 온라인 서비스의 응용 프로그램을 등록했습니다](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). 등록된 서비스에 대한 클라이언트 ID(애플리케이션 ID라고도 함)와 클라이언트 암호 값을 기록해 두십시오. 이 값은 Microsoft Dynamics 서비스](/help/forms/using/ms-dynamics-odata-configuration.md#configure-cloud-service-for-your-microsoft-dynamics-service)에 대해 클라우드 서비스를 구성하는 동안 사용됩니다.[
 
-## 등록된 Microsoft Dynamics 응용 프로그램에 대한 회신 URL 설정 {#set-reply-url-for-registered-microsoft-dynamics-application}
+## 등록된 Microsoft Dynamics 응용 프로그램의 회신 URL 설정 {#set-reply-url-for-registered-microsoft-dynamics-application}
 
 등록된 Microsoft Dynamics 응용 프로그램의 회신 URL을 설정하려면 다음을 수행하십시오.
 
@@ -65,7 +65,7 @@ Microsoft Dynamics 설정 및 구성을 시작하기 전에 다음을 확인하�
 
 1. 구성을 저장합니다.
 
-## IFD {#configure-microsoft-dynamics-for-ifd}에 대한 Microsoft Dynamics 구성
+## FID용 Microsoft Dynamics 구성 {#configure-microsoft-dynamics-for-ifd}
 
 Microsoft Dynamics에서는 클레임 기반 인증을 사용하여 Microsoft Dynamics CRM 서버의 데이터에 외부 사용자에게 액세스를 제공합니다. 이 기능을 사용하려면 다음을 수행하여 IFD(인터넷 연결 배포)를 위한 Microsoft Dynamics를 구성하고 클레임 설정을 구성합니다.
 
@@ -116,7 +116,7 @@ AD FS(Active Directory Federation Services) 시스템에 OAuth 클라이언트�
 
 1. Microsoft Dynamics에서는 HTTPS 프로토콜을 사용합니다. Forms 서버에서 AD FS 끝점을 호출하려면 AEM Forms을 실행하는 컴퓨터에서 `keytool` 명령을 사용하여 Microsoft Dynamics 사이트 인증서를 Java 인증서 저장소에 설치합니다.
 
-## Microsoft Dynamics 서비스 {#configure-cloud-service-for-your-microsoft-dynamics-service}에 대한 클라우드 서비스 구성
+## Microsoft Dynamics 서비스에 대한 클라우드 서비스 구성 {#configure-cloud-service-for-your-microsoft-dynamics-service}
 
 **MS Dynamics OData Cloud Service(OData 서비스)** 구성은 기본 OData 구성과 함께 제공됩니다. Microsoft Dynamics 서비스와 연결하도록 구성하려면 다음을 수행합니다.
 
@@ -138,7 +138,7 @@ AD FS(Active Directory Federation Services) 시스템에 OAuth 클라이언트�
 
 MS Dynamics OData Cloud Service(OData 서비스) 클라우드 서비스가 구성되어 Dynamics 서비스와 연결되어 있습니다.
 
-## 양식 데이터 모델 {#create-form-data-model} 만들기
+## 양식 데이터 모델 만들기 {#create-form-data-model}
 
 AEM Forms 패키지를 설치하면 양식 데이터 모델&#x200B;**Microsoft Dynamics FDM**&#x200B;이 AEM 인스턴스에 배포됩니다. 기본적으로 양식 데이터 모델은 MS Dynamics OData Cloud Service(OData 서비스)에 구성된 Microsoft Dynamics 서비스를 데이터 소스로 사용합니다.
 

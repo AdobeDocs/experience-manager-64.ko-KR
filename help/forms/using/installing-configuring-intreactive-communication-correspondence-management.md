@@ -1,17 +1,17 @@
 ---
 title: 대화형 통신 설치 및 구성
-seo-title: 대화형 통신 설치 및 구성
+seo-title: Install and configure Interactive Communications
 description: '비즈니스 서신, 문서, 명세서, 혜택 공지, 마케팅 이메일, 청구서 및 환영 키트를 만들도록 AEM Forms Interactive Communications를 설치 및 구성합니다. '
-seo-description: '비즈니스 서신, 문서, 명세서, 혜택 공지, 마케팅 이메일, 청구서 및 환영 키트를 만들도록 AEM Forms Interactive Communications를 설치 및 구성합니다. '
+seo-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
 uuid: c09b5743-3cbc-49ff-977a-b6b3eb81b160
 topic-tags: installing
 discoiquuid: 674c6b68-8a04-4cd3-a63e-9968ca686948
 role: Admin
 exl-id: c7aaa81d-d140-44d9-9144-0cbf6ec5d650
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1420'
-ht-degree: 7%
+source-wordcount: '1386'
+ht-degree: 6%
 
 ---
 
@@ -146,7 +146,7 @@ AEM Forms에는 몇 가지 필수 및 선택적 구성이 있습니다. 필수 �
 
 #### 호환성 패키지 설치 {#install-compatibility-package}
 
-대화형 커뮤니케이션은 AEM 6.4 Forms에서 고객 커뮤니케이션을 만드는 기본적이고 권장되는 방법입니다. 이전 버전에서 업그레이드하거나 마이그레이션하고 문자(서신 관리)를 계속 사용할 계획이라면 [AEMFD 호환성 패키지](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)를 설치하십시오.
+대화형 커뮤니케이션은 AEM 6.4 Forms에서 고객 커뮤니케이션을 만드는 기본적이고 권장되는 방법입니다. 이전 버전에서 업그레이드하거나 마이그레이션하고 문자(서신 관리)를 계속 사용할 계획이라면 [AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)를 설치하십시오.
 
 AEMFD 호환성 패키지를 사용하면 AEM 6.4 Forms에서 AEM 6.3 Forms 및 AEM 6.2 Forms의 다음 자산을 사용할 수 있습니다.
 
@@ -157,7 +157,7 @@ AEMFD 호환성 패키지를 사용하면 AEM 6.4 Forms에서 AEM 6.3 Forms 및 
 
 #### Dispatcher 구성 {#configure-dispatcher}
 
-Dispatcher가 AEM에 대해 캐싱 및 로드 밸런싱 도구를 제공합니다. AEM Dispatcher는 또한 AEM 서버를 공격으로부터 보호합니다. Dispatcher를 엔터프라이즈급 웹 서버와 함께 사용하여 AEM 인스턴스의 보안을 강화할 수 있습니다. [Dispatcher](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html을 참조하십시오.)를 사용하는 경우 AEM Forms에 대해 다음 구성을 수행하십시오.
+Dispatcher가 AEM에 대해 캐싱 및 로드 밸런싱 도구를 제공합니다. AEM Dispatcher는 또한 AEM 서버를 공격으로부터 보호합니다. Dispatcher를 엔터프라이즈급 웹 서버와 함께 사용하여 AEM 인스턴스의 보안을 강화할 수 있습니다. [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)를 사용하는 경우 AEM Forms에 대해 다음 구성을 수행하십시오.
 
 1. AEM Forms에 대한 액세스 구성:
 

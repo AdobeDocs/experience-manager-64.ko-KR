@@ -1,8 +1,8 @@
 ---
 title: 백업 및 복구할 파일
-seo-title: 백업 및 복구할 파일
+seo-title: Files to back up and recover
 description: 이 문서에서는 백업해야 하는 응용 프로그램 및 데이터 파일에 대해 설명합니다.
-seo-description: 이 문서에서는 백업해야 하는 응용 프로그램 및 데이터 파일에 대해 설명합니다.
+seo-description: This document describes the application and data files that must be backed up.
 uuid: ba04adb9-675a-48f2-ad52-39c1266e423b
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 exl-id: 407db3cf-8add-486b-8cf5-daeecc18bf30
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '2203'
+source-wordcount: '2142'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ GDS 위치를 기본값이 아닌 위치로 변경한 경우 다음과 같이 �
 
 원래 위치를 더 이상 사용할 수 없는 경우 복구 중에 GDS 위치를 변경할 수 있습니다. (](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery) 복구 중 GDS 위치 변경 을 참조하십시오.)[
 
-### 문서 저장 영역 {#backup-options-when-database-is-used-for-document-storage}에 데이터베이스를 사용하는 경우 백업 옵션
+### 데이터베이스를 문서 저장소에 사용할 때 백업 옵션 {#backup-options-when-database-is-used-for-document-storage}
 
 관리 콘솔을 사용하여 AEM Forms 데이터베이스에서 AEM Forms 문서 저장소를 활성화할 수 있습니다. 이 옵션은 모든 영구 문서를 데이터베이스에 보관하지만 AEM Forms는 AEM Forms의 세션 및 호출과 관련된 영구 파일 및 임시 파일과 리소스를 저장하는 데 사용되므로 파일 시스템 기반 GDS 디렉토리가 필요합니다.
 
@@ -68,7 +68,7 @@ AEM Forms를 설치하는 동안 crx-repository가 구성된 경우 AEM 저장�
 
 단순 서신 관리 솔루션 설정에는 동일한 컴퓨터 또는 다른 컴퓨터에 대한 작성자 인스턴스 및 게시 인스턴스가 포함됩니다
 
-### 양식 관리자 {#forms-manager}
+### forms manager {#forms-manager}
 
 forms manager를 사용하면 양식의 업데이트, 관리 및 폐기 프로세스를 간소화할 수 있습니다.
 
@@ -82,7 +82,7 @@ AEM Forms Workspace는 (JEE에서 AEM Forms에 대해 더 이상 사용되지 �
 
 Flash Player 및 Adobe Reader 없이 클라이언트에서 작업을 관리할 수 있습니다. PDF forms 및 Flex 양식 외에도 HTML Forms 렌디션이 용이해집니다.
 
-## AEM Forms 데이터베이스 {#aem-forms-database}
+## AEM forms 데이터베이스 {#aem-forms-database}
 
 AEM Forms 데이터베이스는 GDS 및 Content Storage Root 디렉토리(Content Services용)에 있는 파일에 대한 양식 객체, 서비스 구성, 프로세스 상태 및 데이터베이스 참조와 같은 컨텐츠를 저장합니다. 데이터베이스 백업은 서비스 중단 없이 실시간으로 수행할 수 있으며 특정 시점 또는 특정 변경 시점까지 복구할 수 있습니다. 이 섹션에서는 실시간으로 백업할 수 있도록 데이터베이스를 구성하는 방법에 대해 설명합니다.
 
@@ -92,7 +92,7 @@ AEM Forms 데이터베이스는 GDS 및 Content Storage Root 디렉토리(Conten
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES(사용 중지)는 LiveCycle과 함께 설치된 컨텐츠 관리 시스템입니다. 이를 통해 사용자가 인간 중심 프로세스를 설계, 관리, 모니터링 및 최적화할 수 있습니다. 컨텐츠 서비스(더 이상 사용되지 않음) 지원은 12/31/2014에 종료됩니다. [Adobe 제품 라이프사이클 문서](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)를 참조하십시오. 컨텐츠 서비스 구성(사용 중지)에 대한 자세한 내용은 [컨텐츠 서비스 관리](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf)를 참조하십시오.
+>Adobe® LiveCycle® Content Services ES(사용 중지)는 LiveCycle과 함께 설치된 컨텐츠 관리 시스템입니다. 이를 통해 사용자가 인간 중심 프로세스를 설계, 관리, 모니터링 및 최적화할 수 있습니다. 컨텐츠 서비스(더 이상 사용되지 않음) 지원은 12/31/2014에 종료됩니다. [Adobe 제품 라이프사이클 문서](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)를 참조하십시오.
 
 ### DB2 {#db2}
 
@@ -104,7 +104,7 @@ AEM Forms 데이터베이스는 GDS 및 Content Storage Root 디렉토리(Conten
 
 IBM에는 데이터베이스 관리자가 백업 및 복구 작업을 관리하는 데 도움이 되는 툴과 도움말 시스템이 포함되어 있습니다.
 
-* IBM DB2 Archive Log Accelerator( [IBM DB2 Archive Log Accelerator for z/OS User&#39;s Guide](https://publib.boulder.ibm.com/infocenter/dzichelp/v2r2/topic/com.ibm.db2tools.alc.doc.ug/alcugb20.pdf?noframes=true) 참조)
+* IBM DB2 Archive Log Accelerator
 * IBM DB2 데이터 아카이브 전문가([IBM DB2 Data Archive Expert User&#39;s Guide and Reference](https://publib.boulder.ibm.com/infocenter/mptoolic/v1r0/topic/com.ibm.db2tools.aeu.doc.ug/ahxugb13.pdf?noframes=true) 참조)
 
 DB2에는 데이터베이스를 Tivoli Storage Manager에 백업할 수 있는 기능이 내장되어 있습니다. Tivoli Storage Manager를 사용하여 DB2 백업을 다른 미디어 또는 로컬 하드 드라이브에 저장할 수 있습니다.
@@ -113,7 +113,7 @@ DB2 데이터베이스 백업 및 복구에 대한 자세한 내용은 [DB2](htt
 
 ### Oracle {#oracle}
 
-스냅샷 백업을 사용하거나 아카이브 로그 모드에서 실행하도록 Oracle 데이터베이스를 구성합니다. ( [Oracle 백업 참조:소개](https://www.databasedesign-resource.com/oracle-backup.md). oracle 데이터베이스 백업 및 복구에 대한 자세한 내용은 다음 사이트를 참조하십시오.
+스냅샷 백업을 사용하거나 아카이브 로그 모드에서 실행하도록 Oracle 데이터베이스를 구성합니다. ( [Oracle 백업 참조: 소개](https://www.databasedesign-resource.com/oracle-backup.md). oracle 데이터베이스 백업 및 복구에 대한 자세한 내용은 다음 사이트를 참조하십시오.
 
 [Oracle 백업 및 복구: ](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html)  백업 및 복구의 개념과 RMAN(Recovery Manager)을 사용하여 백업, 복구 및 보고를 수행하는 가장 일반적인 기술에 대해 설명하고 백업 및 복구 전략을 계획하는 방법에 대한 자세한 정보를 제공합니다.
 
@@ -155,7 +155,7 @@ log-bin=logname
 
 Content Storage Root 디렉토리에는 모든 문서, 객체 및 인덱스가 저장되는 Content Services(사용되지 않음) 저장소가 있습니다. 컨텐츠 저장소 루트 디렉토리 트리를 백업해야 합니다. 이 섹션에서는 독립 실행형 환경과 클러스터된 환경 모두에 대한 컨텐츠 저장소 루트 디렉토리의 위치를 결정하는 방법을 설명합니다.
 
-### 컨텐츠 저장소 루트 위치(독립형 환경) {#content-storage-root-location-stand-alone-environment}
+### 컨텐츠 저장 루트 위치(독립 실행형 환경) {#content-storage-root-location-stand-alone-environment}
 
 컨텐츠 서비스(사용되지 않음)가 설치되면 컨텐츠 저장소 루트 디렉토리가 생성됩니다. 컨텐츠 저장소 루트 디렉토리의 위치는 AEM Forms 설치 프로세스 중에 결정됩니다.
 

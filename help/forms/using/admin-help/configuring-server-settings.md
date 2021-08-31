@@ -1,8 +1,8 @@
 ---
 title: 서버 설정 구성
-seo-title: 서버 설정 구성
+seo-title: Configuring Server Settings
 description: '[서버 설정] 페이지에서는 전자 메일, 작업 알림 및 관리자 알림 설정에 액세스할 수 있습니다.'
-seo-description: '[서버 설정] 페이지에서는 전자 메일, 작업 알림 및 관리자 알림 설정에 액세스할 수 있습니다.'
+seo-description: The Server Settings page provides access to email, task notification and administrator notification settings.
 uuid: 73b51ac0-56e5-4748-bb33-e3986c69eb2d
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 exl-id: 7933efeb-618a-4c38-8e5e-593be8ebb00c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2625'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ AEM Forms에서 사용자로부터 들어오는 전자 메일 메시지를 받�
 >
 >잘못된 정보를 입력하면 취소 를 클릭하여 이전에 표시된 페이지로 돌아갈 수 있습니다.
 
-### AEM Forms 작업 공간 {#configuring-email-templates-to-use-html-workspace}을 사용하도록 전자 메일 템플릿 구성
+### AEM Forms Workspace를 사용하도록 이메일 템플릿 구성 {#configuring-email-templates-to-use-html-workspace}
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ AEM Forms에서 사용자로부터 들어오는 전자 메일 메시지를 받�
 
 1. 관리 콘솔에서 홈 > 서비스 > 양식 워크플로우 > 서버 설정 > 작업 알림을 클릭합니다.
 1. 작업 할당 템플릿을 엽니다.
-1. 작업 알림의 템플릿을 다음과 같이 설정합니다.`https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@`
+1. 작업 알림의 템플릿을 다음과 같이 설정합니다. `https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@`
 
    ```as3
    https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@
@@ -126,9 +126,9 @@ AEM Forms에서 사용자로부터 들어오는 전자 메일 메시지를 받�
 1. 전자 메일 인코딩 목록에서 전자 메일 메시지에 사용할 인코딩 형식을 선택합니다. 기본값은 UTF-8이며, 이 값은 일본 외부의 대부분의 사용자가 사용합니다. 일본의 사용자는 ISO2022-JP 를 선택할 수 있습니다.
 1. 저장을 클릭합니다.
 
-### 모든 전자 메일 {#hide-the-do-not-delete-tag-for-all-emails}에 대한 DO NOT DELETE 태그를 숨깁니다.
+### 모든 이메일에 대한 DO NOT DELETE 태그 숨기기 {#hide-the-do-not-delete-tag-for-all-emails}
 
-인간 중심 프로세스에서 전송되는 모든 이메일에서 DO NOT DELETE 추적 태그로 숨기도록 이메일을 구성할 수 있습니다. 자세한 내용은 [CSS](https://blogs.adobe.com/LiveCycleHelp/2013/09/how-to-hide-the-do-not-delete-tag-with-css.html)를 사용하여 &#39;DO-NOT-DELETE&#39; 태그를 숨기는 방법 을 참조하십시오
+인간 중심 프로세스에서 전송되는 모든 이메일에서 DO NOT DELETE 추적 태그로 숨기도록 이메일을 구성할 수 있습니다.
 
 ## 관리자용 알림 구성 {#configuring-notifications-for-administrators}
 
@@ -165,7 +165,7 @@ Forms 워크플로우가 관리자에게 전송되는 이메일 알림을 생성
 1. 알림 템플릿 상자에서 전자 메일 메시지 본문에 대한 텍스트를 입력합니다. 이 필드는 기본 텍스트로 미리 채워집니다. 이 필드 사용자 지정에 대한 자세한 내용은 [알림 콘텐츠 사용자 지정](configuring-server-settings.md#customizing-the-content-of-notifications)을 참조하십시오.
 1. 저장을 클릭합니다.
 
-## 알림 컨텐츠 사용자 지정 {#customizing-the-content-of-notifications}
+## 알림 콘텐츠 사용자 지정 {#customizing-the-content-of-notifications}
 
 작업 알림 및 관리자 알림 페이지에서는 알림 메시지를 사용자 정의할 수 있는 다음과 같은 몇 가지 기능을 제공합니다.
 
@@ -255,7 +255,7 @@ Forms 워크플로우가 관리자에게 전송되는 이메일 알림을 생성
 
 **notification-** hostAEM forms 애플리케이션 서버의 호스트 이름입니다.
 
-### 제목 상자 {#using-a-variable-in-the-subject-box}에서 변수 사용
+### 제목 상자에서 변수 사용 {#using-a-variable-in-the-subject-box}
 
 작업 지정 알림에 대한 제목 상자에 다음 텍스트를 입력하는 경우
 

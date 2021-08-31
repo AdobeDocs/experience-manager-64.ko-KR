@@ -1,8 +1,8 @@
 ---
 title: JavaAPI를 사용하여 AEM Forms 호출
-seo-title: JavaAPI를 사용하여 AEM Forms 호출
+seo-title: Invoking AEM Forms using the JavaAPI
 description: 원격 호출을 위한 RMI 전송 프로토콜, 로컬 호출을 위한 VM 전송, 원격 호출을 위한 SOAP, 사용자 이름 및 암호와 같은 다른 인증, 동기 및 비동기 호출 요청을 사용합니다.
-seo-description: 원격 호출을 위한 RMI 전송 프로토콜, 로컬 호출을 위한 VM 전송, 원격 호출을 위한 SOAP, 사용자 이름 및 암호와 같은 다른 인증, 동기 및 비동기 호출 요청을 사용합니다.
+seo-description: Use the AEM Forms Java API for RMI transport protocol for remote invocation, VM transport for local invocation, SOAP for remote invocation, different authentication, such as user name and password, and synchronous and asynchronous invocation requests.
 uuid: 5e2fef2a-05f3-4283-8fd3-2d7dca411000
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 role: Developer
 exl-id: 1c239c05-e221-442a-a748-0c28704ee032
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '5479'
+source-wordcount: '5385'
 ht-degree: 0%
 
 ---
 
-# Java API {#invoking-aem-forms-using-the-javaapi}를 사용하여 AEM Forms 호출
+# Java API를 사용하여 AEM Forms 호출 {#invoking-aem-forms-using-the-javaapi}
 
 AEM Forms Java API를 사용하여 AEM Forms을 호출할 수 있습니다. AEM Forms Java API를 사용할 때 호출 API 또는 Java 클라이언트 라이브러리를 사용할 수 있습니다. Java 클라이언트 라이브러리는 Rights Management 서비스와 같은 서비스에 사용할 수 있습니다. 이러한 강력한 형식의 API를 사용하면 AEM Forms을 호출하는 Java 애플리케이션을 개발할 수 있습니다.
 
@@ -34,13 +34,6 @@ Java API는 다음 기능을 지원합니다.
 * 사용자 이름 및 암호와 같은 다른 인증
 * 동기 및 비동기 호출 요청
 
-**개발자 웹 사이트 Adobe**
-
-Adobe 개발자 웹 사이트에는 Java API를 사용하여 AEM Forms 서비스 호출에 대해 설명하는 다음 문서가 포함되어 있습니다.
-
-[Java 서블릿을 사용하여 AEM Forms 프로세스 호출](https://www.adobe.com/devnet/livecycle/articles/java_servlets.html)
-
-[Java에서 AEM Forms Distiller API를 호출하는 중](https://www.adobe.com/devnet/livecycle/articles/distiller_java_03.html)
 
 **참고 항목**
 
@@ -60,7 +53,7 @@ Adobe 개발자 웹 사이트에는 Java API를 사용하여 AEM Forms 서비스
 
 [인간 중심 장기 프로세스를 호출하는 Java 웹 애플리케이션 만들기](/help/forms/developing/invoking-human-centric-long-lived.md)
 
-## AEM Forms Java 라이브러리 파일 {#including-aem-forms-java-library-files} 포함
+## AEM Forms Java 라이브러리 파일 포함 {#including-aem-forms-java-library-files}
 
 Java API를 사용하여 AEM Forms 서비스를 프로그래밍 방식으로 호출하려면 Java 프로젝트의 클래스 경로에 필수 라이브러리 파일(JAR 파일)을 포함합니다. 클라이언트 애플리케이션의 클래스 경로에 포함하는 JAR 파일은 다음과 같은 몇 가지 요소에 따라 다릅니다.
 
@@ -73,7 +66,7 @@ Java API를 사용하여 AEM Forms 서비스를 프로그래밍 방식으로 호
 
 * AEM Forms이 배포되는 J2EE 애플리케이션 서버입니다.
 
-### 서비스 특정 JAR 파일 {#service-specific-jar-files}
+### 서비스별 JAR 파일 {#service-specific-jar-files}
 
 다음 표에는 AEM Forms 서비스를 호출하는 데 필요한 JAR 파일이 나와 있습니다.
 
@@ -402,7 +395,7 @@ Java API를 사용하여 AEM Forms 서비스를 프로그래밍 방식으로 호
  </tbody>
 </table>
 
-### JAR 파일 {#upgrading-jar-files} 업그레이드
+### JAR 파일 업그레이드 {#upgrading-jar-files}
 
 LiveCycle에서 AEM Forms으로 업그레이드하는 경우 Java 프로젝트의 클래스 경로에 AEM Forms JAR 파일을 포함하는 것이 좋습니다. 예를 들어 Rights Management 서비스와 같은 서비스를 사용하는 경우 클래스 경로에 AEM Forms JAR 파일을 포함하지 않으면 호환성 문제가 발생합니다.
 
@@ -422,7 +415,7 @@ AEM Forms으로 업그레이드한다고 가정합니다. Rights Management 서�
 
 [Java 클라이언트 라이브러리를 사용하여 서비스 호출](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
 
-## 연결 속성 {#setting-connection-properties} 설정
+## 연결 속성 설정 {#setting-connection-properties}
 
 Java API를 사용할 때 AEM Forms을 호출하도록 연결 속성을 설정합니다. 연결 속성을 설정할 때 서비스를 원격으로 호출할지 로컬로 호출할지 여부를 지정하고 연결 모드 및 인증 값도 지정합니다. 서비스 보안이 활성화된 경우 인증 값이 필요합니다. 그러나 서비스 보안이 비활성화된 경우에는 인증 값을 지정할 필요가 없습니다.
 
@@ -432,16 +425,16 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
 
 * **DSC_DEFAULT_EJB_ENDPOINT:**  EJB 연결 모드를 사용하는 경우 이 값은 AEM Forms이 배포된 J2EE 응용 프로그램 서버의 URL을 나타냅니다. AEM Forms을 원격으로 호출하려면 AEM Forms이 배포되는 J2EE 애플리케이션 서버 이름을 지정합니다. 클라이언트 응용 프로그램이 동일한 J2EE 응용 프로그램 서버에 있는 경우 `localhost` 을 지정할 수 있습니다. J2EE 애플리케이션 서버 AEM Forms이 배포되는 위치에 따라 다음 값 중 하나를 지정합니다.
 
-   * JBoss:`https://<ServerName>:8080 (default port)`
-   * WebSphere:`iiop://<ServerName>:2809 (default port)`
-   * WebLogic:`t3://<ServerName>:7001 (default port)`
+   * JBoss: `https://<ServerName>:8080 (default port)`
+   * WebSphere: `iiop://<ServerName>:2809 (default port)`
+   * WebLogic: `t3://<ServerName>:7001 (default port)`
 
-* **DSC_DEFAULT_SOAP_ENDPOINT**:SOAP 연결 모드를 사용하는 경우 이 값은 호출 요청이 전송되는 종단점을 나타냅니다. AEM Forms을 원격으로 호출하려면 AEM Forms이 배포되는 J2EE 애플리케이션 서버 이름을 지정합니다. 클라이언트 응용 프로그램이 동일한 J2EE 응용 프로그램 서버에 있는 경우 `localhost`(예: `http://localhost:8080`)를 지정할 수 있습니다.
+* **DSC_DEFAULT_SOAP_ENDPOINT**: SOAP 연결 모드를 사용하는 경우 이 값은 호출 요청이 전송되는 종단점을 나타냅니다. AEM Forms을 원격으로 호출하려면 AEM Forms이 배포되는 J2EE 애플리케이션 서버 이름을 지정합니다. 클라이언트 응용 프로그램이 동일한 J2EE 응용 프로그램 서버에 있는 경우 `localhost`(예: `http://localhost:8080`)를 지정할 수 있습니다.
 
    * 포트 값 `8080`은 J2EE 응용 프로그램이 JBoss인 경우 적용할 수 있습니다. J2EE 응용 프로그램 서버가 IBM® WebSphere®인 경우 `9080` 포트를 사용합니다. 마찬가지로, J2EE 응용 프로그램 서버가 WebLogic이면 포트 `7001`를 사용하십시오. 이 값은 기본 포트 값입니다. 포트 값을 변경할 경우 해당 포트 번호를 사용합니다.)
 
-* **DSC_TRANSPORT_PROTOCOL**:EJB 연결 모드를 사용하는 경우 이 값 `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` 에 대해 지정합니다. SOAP 연결 모드를 사용하는 경우 `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL` 을 지정합니다.
-* **DSC_SERVER_TYPE**:AEM Forms이 배포되는 J2EE 애플리케이션 서버를 지정합니다. 유효한 값은 `JBoss`, `WebSphere`, `WebLogic`입니다.
+* **DSC_TRANSPORT_PROTOCOL**: EJB 연결 모드를 사용하는 경우 이 값 `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` 에 대해 지정합니다. SOAP 연결 모드를 사용하는 경우 `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL` 을 지정합니다.
+* **DSC_SERVER_TYPE**: AEM Forms이 배포되는 J2EE 애플리케이션 서버를 지정합니다. 유효한 값은 `JBoss`, `WebSphere`, `WebLogic`입니다.
 
    * 이 연결 속성을 `WebSphere`으로 설정하면 `java.naming.factory.initial` 값이 `com.ibm.ws.naming.util.WsnInitCtxFactory`로 설정됩니다.
    * 이 연결 속성을 `WebLogic`으로 설정하면 `java.naming.factory.initial` 값이 `weblogic.jndi.WLInitialContextFactory`로 설정됩니다.
@@ -450,7 +443,7 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
 
    >[!NOTE]
    >
-   >문자열을 사용하여 `DSC_SERVER_TYPE` 연결 속성을 설정하는 대신 `ServiceClientFactoryProperties` 클래스의 정적 멤버를 사용할 수 있습니다. 다음 값을 사용할 수 있습니다.`ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE` 또는 `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
+   >문자열을 사용하여 `DSC_SERVER_TYPE` 연결 속성을 설정하는 대신 `ServiceClientFactoryProperties` 클래스의 정적 멤버를 사용할 수 있습니다. 다음 값을 사용할 수 있습니다. `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE` 또는 `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
 
 * **DSC_CREDENTIAL_USERNAME:**  AEM Forms 사용자 이름을 지정합니다. 사용자가 AEM Forms 서비스를 성공적으로 호출하려면 서비스 사용자 역할이 필요합니다. 사용자는 서비스 호출 권한을 포함하는 다른 역할을 가질 수도 있습니다. 그렇지 않으면 서비스를 호출하려고 할 때 예외가 발생합니다. 서비스 보안이 비활성화된 경우에는 이 연결 속성을 지정할 필요가 없습니다.
 * **DSC_CREDENTIAL_PASSWORD:**  해당 암호 값을 지정합니다. 서비스 보안이 비활성화된 경우에는 이 연결 속성을 지정할 필요가 없습니다.
@@ -634,7 +627,7 @@ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, 
 * 자체 JVM(Java Virtual Machine)에서 실행되는 클라이언트 애플리케이션은 독립형 AEM Forms 인스턴스를 호출합니다.
 * 자체 JVM에서 실행되는 클라이언트 애플리케이션은 클러스터형 AEM Forms 인스턴스를 호출합니다.
 
-### 독립 실행형 AEM Forms 인스턴스 {#client-application-invoking-a-stand-alone-aem-forms-instance}를 호출하는 클라이언트 애플리케이션
+### 독립형 AEM Forms 인스턴스를 호출하는 클라이언트 애플리케이션 {#client-application-invoking-a-stand-alone-aem-forms-instance}
 
 다음 다이어그램은 자체 JVM에서 실행되는 클라이언트 응용 프로그램과 독립형 AEM Forms 인스턴스를 호출하는 것을 보여 줍니다.
 
@@ -644,7 +637,7 @@ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, 
 >
 >이 시나리오는 모든 빠른 시작이 기반으로 하는 호출 시나리오입니다.
 
-### 클러스터된 AEM Forms 인스턴스 {#client-application-invoking-clustered-aem-forms-instances}를 호출하는 클라이언트 애플리케이션
+### 클러스터된 AEM Forms 인스턴스를 호출하는 클라이언트 애플리케이션 {#client-application-invoking-clustered-aem-forms-instances}
 
 다음 다이어그램은 자체 JVM에서 실행되는 클라이언트 응용 프로그램과 클러스터에 있는 AEM Forms 인스턴스를 호출하는 것을 보여 줍니다.
 
@@ -695,7 +688,7 @@ SOAP 연결 모드를 사용하는 클라이언트 응용 프로그램은 클러
 
 [Java 클라이언트 라이브러리를 사용하여 서비스 호출](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
 
-## Java API {#passing-data-to-aem-forms-services-using-the-java-api}를 사용하여 AEM Forms 서비스에 데이터 전달
+## Java API를 사용하여 AEM Forms 서비스에 데이터 전달 {#passing-data-to-aem-forms-services-using-the-java-api}
 
 AEM Forms 서비스 작업은 일반적으로 PDF 문서를 사용하거나 생성합니다. 서비스를 호출할 때 PDF 문서(또는 XML 데이터 등의 기타 문서 유형)를 서비스에 전달해야 하는 경우가 있습니다. 마찬가지로 서비스에서 반환되는 PDF 문서를 처리해야 하는 경우가 있습니다. AEM Forms 서비스의 데이터를 전달 및에서 사용할 수 있는 Java 클래스는 `com.adobe.idp.Document`입니다.
 
@@ -711,7 +704,7 @@ AEM Forms 서비스에서는 PDF 문서를 `java.io.InputStream` 개체 또는 �
 
 자료 파일이 동일한 파일 시스템에 있는 경우 `com.adobe.idp.Document` 개체를 만드는 것이 더 빠릅니다. 자료 파일이 원격 파일 시스템에 있는 경우 복사 작업을 수행해야 하므로 성능에 영향을 줍니다.
 
-응용 프로그램에는 `com.adobe.idp.Document` 및 `org.w3c.dom.Document` 데이터 유형이 모두 포함될 수 있습니다. 그러나 `org.w3c.dom.Document` 데이터 형식을 완전히 정규화해야 합니다. `org.w3c.dom.Document` 개체를 `com.adobe.idp.Document` 개체로 변환하는 방법은 [빠른 시작(EJB 모드)을 참조하십시오.Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)를 사용하여 Forms을 유동성 있는 레이아웃으로 미리 채웁니다.
+응용 프로그램에는 `com.adobe.idp.Document` 및 `org.w3c.dom.Document` 데이터 유형이 모두 포함될 수 있습니다. 그러나 `org.w3c.dom.Document` 데이터 형식을 완전히 정규화해야 합니다. `org.w3c.dom.Document` 개체를 `com.adobe.idp.Document` 개체로 변환하는 방법은 [빠른 시작(EJB 모드)을 참조하십시오. Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)를 사용하여 Forms을 유동성 있는 레이아웃으로 미리 채웁니다.
 
 >[!NOTE]
 >
@@ -770,7 +763,7 @@ PDF 문서(또는 기타 문서 유형)를 입력 값으로 필요로 하는 서
 * `java.io.InputStream` 개체
 * `java.net.URL` 개체
 
-#### 바이트 배열 {#creating-a-document-based-on-a-byte-array}을 기반으로 문서 만들기
+#### 바이트 배열을 기반으로 문서 만들기 {#creating-a-document-based-on-a-byte-array}
 
 다음 코드 예제에서는 바이트 배열을 기반으로 하는 `com.adobe.idp.Document` 개체를 만듭니다.
 
@@ -780,7 +773,7 @@ PDF 문서(또는 기타 문서 유형)를 입력 값으로 필요로 하는 서
  Document myPDFDocument = new Document(myByteArray);
 ```
 
-#### 다른 문서 {#creating-a-document-based-on-another-document}을 기반으로 문서 만들기
+#### 다른 문서를 기반으로 문서 만들기 {#creating-a-document-based-on-another-document}
 
 다음 코드 예제에서는 다른 `com.adobe.idp.Document` 개체를 기반으로 하는 `com.adobe.idp.Document` 개체를 만듭니다.
 
@@ -801,7 +794,7 @@ PDF 문서(또는 기타 문서 유형)를 입력 값으로 필요로 하는 서
  Document anotherDocument = new Document(myPDFDocument);
 ```
 
-#### {#creating-a-document-based-on-a-file} 파일을 기반으로 문서 만들기
+#### 파일을 기반으로 문서 만들기 {#creating-a-document-based-on-a-file}
 
 다음 코드 예제에서는 *map.pdf*&#x200B;라는 PDF 파일을 기반으로 하는 `com.adobe.idp.Document` 개체를 만듭니다. 이 파일은 C 하드 드라이브의 루트에 있습니다. 이 생성자는 파일 이름 확장명을 사용하여 `com.adobe.idp.Document` 개체의 MIME 콘텐츠 형식을 설정하려고 합니다.
 
@@ -829,7 +822,7 @@ PDF 문서(또는 기타 문서 유형)를 입력 값으로 필요로 하는 서
  Document myPDFDocument = new Document(is);
 ```
 
-#### URL {#creating-a-document-based-on-content-accessible-from-an-url}에서 액세스할 수 있는 컨텐츠를 기반으로 문서 만들기
+#### URL에서 액세스할 수 있는 컨텐츠를 기반으로 문서 만들기 {#creating-a-document-based-on-content-accessible-from-an-url}
 
 다음 Java 코드 예제에서는 *map.pdf*&#x200B;라는 PDF 파일을 기반으로 하는 `com.adobe.idp.Document` 개체를 만듭니다. 이 파일은 `localhost`에서 실행 중인 `WebApp` 웹 응용 프로그램 내에 있습니다. 이 생성자는 URL 프로토콜과 함께 반환된 콘텐츠 유형을 사용하여 `com.adobe.idp.Document` 개체의 MIME 콘텐츠 형식을 설정하려고 합니다.
 
@@ -857,7 +850,7 @@ c:/temp/input.pdf 파일은 서버 컴퓨터가 아닌 클라이언트 컴퓨터
 
 [연결 속성 설정](invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 반환된 문서 {#handling-returned-documents} 처리
+### 반환된 문서 처리 {#handling-returned-documents}
 
 PDF 문서(또는 XML 데이터 등의 기타 데이터 유형)를 출력 값으로 반환하는 서비스 작업은 `com.adobe.idp.Document` 개체를 반환합니다. `com.adobe.idp.Document` 개체를 받은 후 다음 형식으로 변환할 수 있습니다.
 
@@ -891,7 +884,7 @@ PDF 문서(또는 XML 데이터 등의 기타 데이터 유형)를 출력 값으
 
 [연결 속성 설정](invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 문서 {#determining-the-content-type-of-a-document}의 컨텐트 유형 확인
+### 문서의 컨텐트 유형 확인 {#determining-the-content-type-of-a-document}
 
 `com.adobe.idp.Document` 개체의 `getContentType` 메서드를 호출하여 `com.adobe.idp.Document` 개체의 MIME 유형을 결정합니다. 이 메서드는 `com.adobe.idp.Document` 개체의 콘텐츠 유형을 지정하는 문자열 값을 반환합니다. 다음 표에서는 AEM Forms이 반환하는 다양한 컨텐츠 유형을 설명합니다.
 
@@ -954,7 +947,7 @@ PDF 문서(또는 XML 데이터 등의 기타 데이터 유형)를 출력 값으
 
 [연결 속성 설정](invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 문서 객체 삭제 {#disposing-document-objects}
+### 문서 객체 배치 {#disposing-document-objects}
 
 더 이상 `Document` 개체가 필요하지 않으면 해당 `dispose` 메서드를 호출하여 개체를 삭제하는 것이 좋습니다. 각 `Document` 개체는 파일 설명자와 애플리케이션의 호스트 플랫폼에서 최대 75MB의 RAM 공간을 사용합니다. `Document` 개체가 처리되지 않으면 Java Garage 수집 프로세스에서 이 개체를 삭제합니다. 그러나 `dispose` 메서드를 사용하여 더 빨리 처리하면 `Document` 개체가 차지하는 메모리를 확보할 수 있습니다.
 
@@ -966,7 +959,7 @@ PDF 문서(또는 XML 데이터 등의 기타 데이터 유형)를 출력 값으
 
 [Java 클라이언트 라이브러리를 사용하여 서비스 호출](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
 
-## Java 클라이언트 라이브러리 {#invoking-a-service-using-a-java-client-library}를 사용하여 서비스 호출
+## Java 클라이언트 라이브러리를 사용하여 서비스 호출 {#invoking-a-service-using-a-java-client-library}
 
 AEM Forms 서비스 작업은 Java 클라이언트 라이브러리라고 하는 서비스의 강력한 형식의 API를 사용하여 호출할 수 있습니다. *Java 클라이언트 라이브러리*&#x200B;는 서비스 컨테이너에 배포된 서비스에 대한 액세스를 제공하는 구체적인 클래스 세트입니다. 호출 API를 사용하여 `InvocationRequest` 개체를 만드는 대신 호출할 서비스를 나타내는 Java 개체를 인스턴스화합니다. 호출 API는 Workbench에서 만든 장기 처리 프로세스와 같은 프로세스를 호출하는 데 사용됩니다. ([인간 중심의 장기 프로세스 호출](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes) 참조)
 
@@ -1010,13 +1003,13 @@ Java 클라이언트 라이브러리를 사용하고 다음 단계를 수행하�
 
 **참고 항목**
 
-[빠른 시작(EJB 모드):Java API를 사용하여 리소스 쓰기](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
+[빠른 시작(EJB 모드): Java API를 사용하여 리소스 쓰기](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
 
 [Java API를 사용하여 AEM Forms 호출](invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
-## 호출 API {#invoking-a-short-lived-process-using-the-invocation-api}를 사용하여 단기 프로세스를 호출하는 중
+## 호출 API를 사용하여 단기 프로세스 호출 {#invoking-a-short-lived-process-using-the-invocation-api}
 
 Java 호출 API를 사용하여 단기 프로세스를 호출할 수 있습니다. 호출 API를 사용하여 단기 프로세스를 호출하는 경우 `java.util.HashMap` 개체를 사용하여 필수 매개 변수 값을 전달합니다. 각 매개 변수가 서비스에 전달되도록 하려면 `java.util.HashMap` 개체의 `put` 메서드를 호출하고 지정된 작업을 수행하기 위해 서비스에 필요한 이름-값 쌍을 지정합니다. 단기 프로세스에 속하는 매개 변수의 정확한 이름을 지정합니다.
 
@@ -1035,7 +1028,7 @@ Java 호출 API를 사용하여 단기 프로세스를 호출할 수 있습니�
 1. 프로세스에 전달되는 보안되지 않은 PDF 문서를 가져옵니다. 이 작업은 `SetValue` 작업을 기반으로 합니다. 이 프로세스의 입력 매개 변수는 `inDoc` 프로세스 변수입니다.`document`
 1. 암호로 PDF 문서를 암호화합니다. 이 작업은 `PasswordEncryptPDF` 작업을 기반으로 합니다. 암호로 암호화된 PDF 문서는 `outDoc` 프로세스 변수에 반환됩니다.
 
-### Java 호출 API {#invoke-the-myapplication-encryptdocument-short-lived-process-using-the-java-invocation-api}를 사용하여 MyApplication/EncryptDocument 단기 프로세스를 호출합니다
+### Java 호출 API를 사용하여 MyApplication/EncryptDocument 단기 프로세스를 호출합니다 {#invoke-the-myapplication-encryptdocument-short-lived-process-using-the-java-invocation-api}
 
 Java 호출 API를 사용하여 `MyApplication/EncryptDocument` 단기 프로세스를 호출합니다.
 
@@ -1078,7 +1071,7 @@ Java 호출 API를 사용하여 `MyApplication/EncryptDocument` 단기 프로세
 
 **참고 항목**
 
-[빠른 시작:호출 API를 사용하여 단기 프로세스 호출](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-using-the-invocation-api)
+[빠른 시작: 호출 API를 사용하여 단기 프로세스 호출](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-using-the-invocation-api)
 
 [인간 중심 장기 프로세스 호출](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)
 

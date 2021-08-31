@@ -1,8 +1,8 @@
 ---
 title: AEM Forms 자산 및 문서 마이그레이션
-seo-title: AEM Forms 자산 및 문서 마이그레이션
+seo-title: Migrate AEM Forms assets and documents
 description: 마이그레이션 유틸리티를 사용하면 AEM 6.3 Forms 또는 이전 버전에서 AEM 6.4 Forms으로 AEM Forms 자산 및 문서를 마이그레이션할 수 있습니다.
-seo-description: 마이그레이션 유틸리티를 사용하면 AEM 6.3 Forms 또는 이전 버전에서 AEM 6.4 Forms으로 AEM Forms 자산 및 문서를 마이그레이션할 수 있습니다.
+seo-description: The Migration utility allows you to Migrate AEM Forms assets and documents from AEM 6.3 Forms or prior versions to AEM 6.4 Forms.
 uuid: 593fc421-b70e-4dbe-87bc-ea49ff025368
 content-type: reference
 topic-tags: correspondence-management, installing
@@ -12,10 +12,10 @@ content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
 role: Admin
 exl-id: 72ead30c-648d-43ad-9826-9c8945a8860d
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1872'
-ht-degree: 4%
+source-wordcount: '1829'
+ht-degree: 2%
 
 ---
 
@@ -38,13 +38,13 @@ ht-degree: 4%
 
 **즉각적인 업그레이드 시**
 
-즉석 업그레이드를 수행한 경우 업그레이드된 인스턴스에 이미 자산 및 문서가 있습니다. 그러나 자산 및 문서를 사용하려면 [AEMFD 호환성 패키지](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)(서신 관리 호환성 패키지 포함)를 설치해야 합니다
+즉석 업그레이드를 수행한 경우 업그레이드된 인스턴스에 이미 자산 및 문서가 있습니다. 그러나 자산 및 문서를 사용하려면 [AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)(서신 관리 호환성 패키지 포함)를 설치해야 합니다
 
 그런 다음 마이그레이션 유틸리티](#runningmigrationutility)를 실행하여 [자산 및 문서를 업데이트해야 합니다.
 
 **부재 설치 시**
 
-자산 및 문서를 사용하기 전에 잘못된 설치(새로 고친)인 경우 [AEMFD 호환성 패키지](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)(서신 관리 호환성 패키지 포함)를 설치해야 합니다.
+자산 및 문서를 사용하기 전에 잘못된 설치(새로 고친)인 경우 [AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)(서신 관리 호환성 패키지 포함)를 설치해야 합니다.
 
 그런 다음 새 설정에서 자산 패키지(zip 또는 cmp)를 가져온 다음 마이그레이션 유틸리티](#runningmigrationutility)를 실행하여 [자산 및 문서를 업데이트해야 합니다. [이전 버전과의 호환성 관련](/help/sites-deploying/backward-compatibility.md) 변경 사항으로 인해 crx-repository에서 몇 개의 폴더 위치가 변경됩니다. 이전 설정에서 새 환경으로 종속성(사용자 지정 라이브러리 및 자산)을 수동으로 내보내고 가져옵니다.
 
@@ -107,15 +107,12 @@ ht-degree: 4%
    >이러한 구성 요소는 적응형 Forms 편집기의 규칙 편집기에서 열어 마이그레이션할 수 있습니다.
    >
    >* 사용자 지정 구성 요소에서 규칙 및 스크립트(6.3에서 업그레이드하는 경우 필요하지 않음)를 마이그레이션하려면 응용 Forms 사용자 지정 구성 요소 마이그레이션을 탭하고 다음 화면에서 마이그레이션 시작을 탭합니다. 다음 항목이 마이그레이션됩니다.
-      >
-      >  
-   * 규칙 편집기를 사용하여 만든 규칙 및 스크립트(6.1 FP1 이상)
+   >
+   >  * 규칙 편집기를 사용하여 만든 규칙 및 스크립트(6.1 FP1 이상)
    >  * 6.1 및 이전 버전의 UI에서 스크립트 탭을 사용하여 작성된 스크립트
    >* 템플릿을 마이그레이션하려면(6.3에서 업그레이드하는 경우 필요하지 않음) 적응형 Forms 템플릿 마이그레이션을 탭하고 다음 화면에서 마이그레이션 시작을 탭합니다. 다음 항목이 마이그레이션됩니다.
-
-      >
-      >  
-   * 이전 템플릿 - AEM 6.1 Forms 또는 이전 버전을 사용하여 /apps에서 만든 적응형 양식 템플릿입니다. 여기에는 템플릿 구성 요소에 정의된 스크립트가 포함됩니다.
+   >
+   >  * 이전 템플릿 - AEM 6.1 Forms 또는 이전 버전을 사용하여 /apps에서 만든 적응형 양식 템플릿입니다. 여기에는 템플릿 구성 요소에 정의된 스크립트가 포함됩니다.
    >  * 새 템플릿 - /conf 아래의 템플릿 편집기를 사용하여 만든 적응형 양식 템플릿입니다. 여기에는 규칙 편집기를 사용하여 만든 규칙 및 스크립트의 마이그레이션이 포함됩니다.
 
 

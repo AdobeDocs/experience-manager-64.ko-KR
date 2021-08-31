@@ -1,8 +1,8 @@
 ---
 title: 전역 설정 가져오기 및 내보내기
-seo-title: 전역 설정 가져오기 및 내보내기
+seo-title: Importing and exporting global settings
 description: Workspace에 대한 검색 템플릿 정의 및 전역 설정을 가져오고 내보낼 수 있습니다.
-seo-description: Workspace에 대한 검색 템플릿 정의 및 전역 설정을 가져오고 내보낼 수 있습니다.
+seo-description: You can import and export search template definitions and global settings for Workspace.
 uuid: 8f1f210d-e850-4b2c-bb5a-942fa8299791
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 72fe5749-2fa2-442f-b679-7889faeafcac
 exl-id: 9eabafbe-2193-4799-9bdd-c2be42ead0b9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1193'
 ht-degree: 0%
 
 ---
@@ -33,13 +33,13 @@ Workspace에 대한 검색 템플릿 정의 및 전역 설정을 가져오고 �
 >
 >전역 설정 파일에서 이벤트 속성을 변경할 경우 서버를 다시 시작해야 합니다.
 
-## 검색 템플릿 정의 {#import-a-search-template-definition} 가져오기
+## 검색 템플릿 정의 가져오기 {#import-a-search-template-definition}
 
 1. 관리 콘솔에서 서비스 > 작업 공간 > 전역 관리를 클릭합니다.
 1. 검색 템플릿 정의 가져오기 상자에서 파일 선택을 클릭하고 검색 템플릿을 선택합니다. 원래 Workspace 인스턴스에서 내보낸 검색 템플릿 정의만 가져올 수 있습니다.
 1. 가져오기를 클릭합니다. 
 
-## 검색 템플릿 정의 {#export-a-search-template-definition} 내보내기
+## 검색 템플릿 정의 내보내기 {#export-a-search-template-definition}
 
 1. 전역 관리 페이지의 검색 템플릿 정의 내보내기에서 모두 목록을 클릭합니다.
 1. 검색 템플릿 목록에서 내보낼 템플릿을 선택합니다.
@@ -62,7 +62,7 @@ Workspace에 대한 검색 템플릿 정의 및 전역 설정을 가져오고 �
 
 ## 작업 공간 전역 설정 {#workspace-global-settings}
 
-전역 설정 파일을 수정할 수 있습니다.그러나 편집할 수 있는 설정으로는 JChannelConnectionProperties, formViewOnly 및 specialRoute 설정만 있습니다.
+전역 설정 파일을 수정할 수 있습니다. 그러나 편집할 수 있는 설정으로는 JChannelConnectionProperties, formViewOnly 및 specialRoute 설정만 있습니다.
 
 >[!NOTE]
 >
@@ -98,13 +98,11 @@ Workspace 전역 설정 파일에는 다음 설정이 포함되어 있습니다.
 
 >[!NOTE]
 >
->TTL은 클러스터의 서버 간 네트워크 스위치 수보다 커야 합니다.그러나 값이 너무 높게 설정되면 멀티캐스트 패킷이 서브넷으로 이동하면서 해당 패킷이 무시됩니다.
+>TTL은 클러스터의 서버 간 네트워크 스위치 수보다 커야 합니다. 그러나 값이 너무 높게 설정되면 멀티캐스트 패킷이 서브넷으로 이동하면서 해당 패킷이 무시됩니다.
 
 이 설정의 나머지 속성은 변경할 수 없습니다.
 
 **server_remoteevents_JGroupName:**  원격 이벤트 통신에 사용되는 JGroup의 이름입니다. 이 값은 클러스터에서 충돌을 방지하기 위해 임의로 생성됩니다. 이 값은 변경할 수 없습니다.
-
-JGroup 및 Workspace에 대한 자세한 내용은 [JGroup 및 AEM Forms Workspace - Explained](https://blogs.adobe.com/livecycle/2011/03/jgroups-and-livecycle-workspace-explained.html)를 참조하십시오.
 
 ### formView 설정 {#formview-settings}
 
@@ -126,7 +124,7 @@ JGroup 및 Workspace에 대한 자세한 내용은 [JGroup 및 AEM Forms Workspa
 
 **client_pollingInterval:** 새 작업과 수정된 작업을 감지하기 위해 Flex 작업 영역에서 사용되는 폴링 간격(초)을 설정합니다(JEE의 AEM Forms에서는 사용되지 않음). 기본값은 3초입니다. AEM Forms Workspace에서는 작동하지 않습니다.
 
-**client_systemContext_name:**  AEM Forms Workspace에서 작업 첨부에 대한 추가 대상 필드(예: 사용자)에 표시할 사용자 지정 이름(예: 사용자)을 지정합니다.
+**client_systemContext_name:**  AEM Forms Workspace에서 작업 첨부에 대한 추가 기준 필드(예: 시민)에 표시할 사용자 지정 이름(예: 첨부 파일 탭)을 지정합니다.
 
 사용자 지정 이름을 정의하려면
 

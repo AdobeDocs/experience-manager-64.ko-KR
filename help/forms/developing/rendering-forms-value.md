@@ -1,8 +1,8 @@
 ---
 title: 값별 Forms 렌더링
-seo-title: 값별 Forms 렌더링
+seo-title: Rendering Forms By Value
 description: Java API 및 웹 서비스 API를 사용하여 값별로 양식을 렌더링하려면 Forms API(Java)를 사용합니다.
-seo-description: Java API 및 웹 서비스 API를 사용하여 값별로 양식을 렌더링하려면 Forms API(Java)를 사용합니다.
+seo-description: Use the Forms API (Java) to render a form by value using the Java API and Web Service API.
 uuid: b932cc54-662f-40ae-94e0-20ac82845f3b
 contentOwner: admin
 content-type: reference
@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 role: Developer
 exl-id: 50c34781-45e3-4255-a997-44f694527c92
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1821'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 Forms 서비스는 양식 디자인 내에서 연결된 컨텐츠의 위치를 확인할 수도 있습니다. 예를 들어, 양식 디자인 내에서 참조되는 연결된 이미지는 상대 URL입니다. 연결된 컨텐츠는 항상 양식 디자인 위치를 기준으로 가정됩니다. 따라서, 링크된 컨텐츠의 위치는 절대 양식 디자인 위치에 상대 경로를 적용하여 결정하는 문제입니다.
 
-양식 디자인을 참조에 의해 전달하는 대신 값을 기준으로 양식 디자인을 전달할 수 있습니다. 양식 디자인을 동적으로 만들 때 값을 기준으로 양식 디자인을 전달하는 것이 효율적입니다.즉, 클라이언트 응용 프로그램이 런타임 중에 양식 디자인을 만드는 XML을 생성하는 경우 이 경우 양식 디자인은 메모리에 저장되므로 물리적 저장소에 저장되지 않습니다. 런타임에 양식 디자인을 동적으로 만들어 값별로 전달할 때 양식을 캐시하고 Forms 서비스의 성능을 향상시킬 수 있습니다.
+양식 디자인을 참조에 의해 전달하는 대신 값을 기준으로 양식 디자인을 전달할 수 있습니다. 양식 디자인을 동적으로 만들 때 값을 기준으로 양식 디자인을 전달하는 것이 효율적입니다. 즉, 클라이언트 응용 프로그램이 런타임 중에 양식 디자인을 만드는 XML을 생성하는 경우 이 경우 양식 디자인은 메모리에 저장되므로 물리적 저장소에 저장되지 않습니다. 런타임에 양식 디자인을 동적으로 만들어 값별로 전달할 때 양식을 캐시하고 Forms 서비스의 성능을 향상시킬 수 있습니다.
 
 **값별 양식 전달 제한 사항**
 
@@ -77,7 +77,7 @@ Forms 서비스는 양식 디자인 내에서 연결된 컨텐츠의 위치를 �
 
 >[!NOTE]
 >
->양식 내에 데이터를 표시하려면 `xfa:datasets` 요소 내에 데이터를 지정해야 합니다. XFA 아키텍처에 대한 자세한 내용은 [https://partners.adobe.com/public/developer/xml/index_arch.html](https://partners.adobe.com/public/developer/xml/index_arch.html)로 이동하십시오.
+>양식 내에 데이터를 표시하려면 `xfa:datasets` 요소 내에 데이터를 지정해야 합니다. XFA 아키텍처에 대한 자세한 내용은 [https://www.pdfa.org/norm-refs/XFA-3_3.pdf](https://www.pdfa.org/norm-refs/XFA-3_3.pdf)로 이동하십시오.
 
 **클라이언트 웹 브라우저에 양식 데이터 스트림 쓰기**
 
@@ -99,7 +99,7 @@ Forms 서비스에서 양식을 값으로 렌더링하면 클라이언트 웹 �
 
 [Forms을 렌더링하는 웹 애플리케이션 만들기](/help/forms/developing/creating-web-applications-renders-forms.md)
 
-## Java API {#render-a-form-by-value-using-the-java-api}를 사용하여 값으로 양식을 렌더링합니다.
+## Java API를 사용하여 값으로 양식 렌더링 {#render-a-form-by-value-using-the-java-api}
 
 Forms API(Java)를 사용하여 값으로 양식을 렌더링합니다.
 
@@ -144,13 +144,13 @@ Forms API(Java)를 사용하여 값으로 양식을 렌더링합니다.
 
 [값별 Forms 렌더링](/help/forms/developing/rendering-forms.md)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 값별 렌더링](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 값별 렌더링](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## 웹 서비스 API {#render-a-form-by-value-using-the-web-service-api}를 사용하여 값으로 양식을 렌더링합니다.
+## 웹 서비스 API를 사용하여 값으로 양식 렌더링 {#render-a-form-by-value-using-the-web-service-api}
 
 Forms API(웹 서비스)를 사용하여 값별로 양식을 렌더링합니다.
 

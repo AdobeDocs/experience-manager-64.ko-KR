@@ -1,8 +1,8 @@
 ---
 title: HTML5 양식에 대한 화면 판독기
-seo-title: HTML5 양식에 대한 화면 판독기
+seo-title: Screen readers for HTML5 forms
 description: HTML5 양식에서 지원되는 화면 판독기를 나열합니다.
-seo-description: HTML5 양식에서 지원되는 화면 판독기를 나열합니다.
+seo-description: Lists the screen readers supported with HTML5 forms.
 uuid: 035354e2-957f-4eb6-bc16-4ca96ec7ac74
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,10 +10,10 @@ topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 feature: Mobile Forms
 exl-id: c27eb771-d390-4534-8e67-f1277550e760
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 1%
+source-wordcount: '335'
+ht-degree: 0%
 
 ---
 
@@ -23,9 +23,9 @@ HTML5 양식 구성 요소는 XFA 양식 템플릿을 HTML5 형식으로 렌더�
 
 HTML5 양식은 이러한 양식에서 HTML에 대한 일반적인 액세서빌러티 도구를 사용할 수 있도록 하는 표준 HTML 구문을 사용합니다. 액세스 가능한 양식에 대한 우수 사례에 따라 양식을 디자인하면 지원되는 모든 화면 판독기에서 작동합니다. 또한 이러한 양식은 키보드 탐색을 위해 활성화됩니다.
 
-## 액세스 가능성 표준 {#accessibility-standards}
+## 접근성 표준 {#accessibility-standards}
 
-HTML5 양식은 알려진 예외 사항에 대한 액세스 가능성을 위해 섹션 508을 준수합니다. 자세한 내용은 [HTML5 양식의 VPAT](https://www.adobe.com/mena_en/accessibility/compliance/livecycle-mobile-forms-es4-section-508-vpat.html)를 참조하십시오.
+HTML5 양식은 알려진 예외 사항에 대한 액세스 가능성을 위해 섹션 508을 준수합니다. 자세한 내용은 [HTML5 양식의 VPAT](http://wwwimages.adobe.com/content/dam/acom/en/accessibility/compliance/pdfs/livecycle-mobile-forms-es4-section-508-vpat.pdf)를 참조하십시오.
 
 ## HTML5 양식에 대해 인증된 화면 판독기 {#certified-screen-readers-for-html-forms}
 

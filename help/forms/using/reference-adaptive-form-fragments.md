@@ -1,25 +1,25 @@
 ---
 title: 적응형 양식 조각 참조
-seo-title: 적응형 양식 조각 참조
+seo-title: Reference adaptive form fragments
 description: 'AEM Forms은 양식을 빠르게 만들기 위해 자산으로 사용할 수 있는 적응형 양식 조각을 제공합니다. '
-seo-description: 'AEM Forms은 양식을 빠르게 만들기 위해 자산으로 사용할 수 있는 적응형 양식 조각을 제공합니다. '
+seo-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly.
 uuid: af3ab863-e895-4fac-84f4-0a77a66f5094
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 43dc10c2-8cfc-4ca3-8ccb-9b3f268663b7
 exl-id: cceea4d1-8fc2-4118-b22e-91f27e69c7e4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '414'
 ht-degree: 1%
 
 ---
 
-# 적응형 양식 조각 {#reference-adaptive-form-fragments} 참조
+# 적응형 양식 조각 참조 {#reference-adaptive-form-fragments}
 
 [적응형 양식 ](/help/forms/using/adaptive-form-fragments.md) 조각은 필드 그룹이나 양식을 만들 때 사용할 수 있는 필드 그룹이 포함된 패널을 나타냅니다. 양식을 쉽고 빠르게 만들 수 있습니다. 사이드바의 자산 브라우저를 사용하여 적응형 양식 조각을 양식으로 드래그 드롭할 수 있으며 양식 편집기에서 편집할 수 있습니다.
 
-적응형 양식 작성자의 경우 참조 조각이 AEM Forms 패키지 [AEM-FORMS.-6.3-REFERENCE-FRAGMENTS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS)에 제공됩니다. 여기에는 다음 조각이 포함됩니다.
+적응형 양식 작성자의 경우 참조 조각이 [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)에 제공됩니다. 여기에는 다음 조각이 포함됩니다.
 
 * 주소
 * 연락처 정보
@@ -97,7 +97,7 @@ ht-degree: 1%
 
 [확대하려면 클릭](assets/tnc-1.png)
 
-## 스크리블 {#terms-conditions-with-scribble} 사용 약관
+## 스크리블 사용 약관 {#terms-conditions-with-scribble}
 
 양식을 제출하기 전에 사용자가 수락하고 서명할 수 있는 조건을 지정합니다.
 ![스크리블 사용 약관](assets/tnc-scribble.png)

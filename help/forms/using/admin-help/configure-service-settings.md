@@ -1,8 +1,8 @@
 ---
 title: 서비스 설정 구성
-seo-title: 서비스 설정 구성
+seo-title: Configure service settings
 description: 서비스 설정을 구성하는 방법을 알아봅니다.
-seo-description: 서비스 설정을 구성하는 방법을 알아봅니다.
+seo-description: Learn how to configure service settings.
 uuid: e95425a4-62f6-473e-b21b-d081c432e02d
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: be1f8c59-b5d8-4d87-af7b-1034d73e7e83
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10710'
+source-wordcount: '10683'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Workbench에서는 런타임 시 실행되는 프로세스 인스턴스를 기�
 
 **MaxNumberOfRecordingEntries:**  각 레코드에 저장할 수 있는 최대 데이터 항목 수입니다. 데이터 항목은 프로세스의 작업에 대한 정보입니다. 작업이 시작되었는지 여부, 작업이 완료되었는지 여부, 작업으로 연결되는 경로가 완료되었는지 여부 등 각 작업 실행에 대해 여러 항목이 저장됩니다. 이 속성은 예를 들어 무한 루프가 발생할 때 많은 작업 실행을 프로세스에 포함할 수 있는 경우 유용합니다. 기본값은 50입니다.
 
-## 코딩된 양식 서비스 설정 {#barcoded-forms-service-settings}
+## 바코드 양식 서비스 설정 {#barcoded-forms-service-settings}
 
 바코드 양식 서비스 `(BarcodedFormsService)`는 스캔한 이미지에서 바코드 데이터를 추출합니다. 서비스는 바코드 양식(TIFF 또는 PDF)을 입력으로 승인하고 바코드로 인코딩된 데이터의 컴퓨터 표현을 추출합니다.
 
@@ -66,7 +66,7 @@ Workbench에서는 런타임 시 실행되는 프로세스 인스턴스를 기�
 
 **데이터 소스 이름:** 일괄 처리 작업에 대한 상태 및 내역 정보를 유지 관리하는 데 사용되는 데이터 소스의 이름입니다. 지정한 데이터 소스는 글로벌(XA) 트랜잭션을 지원해야 합니다.
 
-## 중앙 마이그레이션 Bridge 서비스(사용 중지) 설정 {#central-migration-bridge-service-settings}
+## 중앙 마이그레이션 Bridge 서비스(더 이상 사용되지 않음) 설정 {#central-migration-bridge-service-settings}
 
 중앙 마이그레이션 Bridge 서비스( `CentralMigrationBridge`)는 JFMERGE, JFTRANS 및 XMLIMPORT 명령을 포함하는 Adobe Central Pro Output Server(Central) 기능의 하위 집합을 호출합니다. 중앙 마이그레이션 Bridge 서비스 작업을 사용하면 AEM Forms에서 다음 중앙 자산을 재사용할 수 있습니다.
 
@@ -80,7 +80,7 @@ Workbench에서는 런타임 시 실행되는 프로세스 인스턴스를 기�
 
 **중앙 설치 디렉토리:** Central 5.7이 설치된 디렉토리입니다.
 
-## Content Repository Connector for EMC Documentum service settings {#content-repository-connector-for-emc-documentum-service-settings}
+## Content Repository Connector for EMC Documentum 서비스 설정 {#content-repository-connector-for-emc-documentum-service-settings}
 
 Content Repository Connector for EMC Documentum service( `EMCDocumentumContentRepositoryConnector`)를 사용하면 Documentum 저장소에 저장된 컨텐츠와 상호 작용하는 프로세스를 생성할 수 있습니다.
 
@@ -116,7 +116,7 @@ PDF 변환 서비스에 다음 설정을 사용할 수 있습니다.
 
 **트랜잭션 유형:** 트랜잭션 컨텍스트를 작업에 전파하는 방법을 지정합니다.
 
-**필수:** 트랜잭션 컨텍스트가 있는 경우 지원합니다.그렇지 않으면 새 트랜잭션 컨텍스트가 만들어집니다. 기본값이 됩니다.
+**필수:** 트랜잭션 컨텍스트가 있는 경우 지원합니다. 그렇지 않으면 새 트랜잭션 컨텍스트가 만들어집니다. 기본값이 됩니다.
 
 **새로 만들기 필요:** 항상 새 트랜잭션 컨텍스트를 만듭니다. 활성 트랜잭션 컨텍스트가 있으면 일시 중단됩니다.
 
@@ -158,7 +158,7 @@ PDF Generator 사용자 인터페이스를 통해 새로운 설정을 만들 수
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES(사용 중지)는 LiveCycle과 함께 설치된 컨텐츠 관리 시스템입니다. 이를 통해 사용자가 인간 중심 프로세스를 설계, 관리, 모니터링 및 최적화할 수 있습니다. 컨텐츠 서비스(더 이상 사용되지 않음) 지원은 12/31/2014에 종료됩니다. [Adobe 제품 라이프사이클 문서](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)를 참조하십시오. 컨텐츠 서비스 구성(사용 중지)에 대한 자세한 내용은 [컨텐츠 서비스 관리](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf)를 참조하십시오.
+>Adobe® LiveCycle® Content Services ES(사용 중지)는 LiveCycle과 함께 설치된 컨텐츠 관리 시스템입니다. 이를 통해 사용자가 인간 중심 프로세스를 설계, 관리, 모니터링 및 최적화할 수 있습니다. 컨텐츠 서비스(더 이상 사용되지 않음) 지원은 12/31/2014에 종료됩니다. [Adobe 제품 라이프사이클 문서](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)를 참조하십시오.
 
 문서 관리 서비스( `DocumentManagementService`)를 사용하면 프로세스에서 컨텐츠 서비스에서 제공하는 컨텐츠 관리 기능을 사용할 수 있습니다(더 이상 사용되지 않음). 문서 관리 작업은 컨텐츠 관리 시스템에서 공간과 컨텐츠를 유지하는 데 필요한 기본 작업을 제공합니다. 이러한 작업의 예로는 컨텐츠 복사, 삭제, 이동, 검색 및 저장, 공간 및 연결 만들기, 컨텐츠 속성 가져오기 및 설정이 있습니다.
 
@@ -168,7 +168,7 @@ PDF Generator 사용자 인터페이스를 통해 새로운 설정을 만들 수
 
 **HTTP 포트:** Content Services에 액세스하는 데 사용되는 포트입니다(더 이상 사용되지 않음). 기본값은 8080입니다.
 
-## 전자 메일 서비스 설정 {#email-service-settings}
+## 이메일 서비스 설정 {#email-service-settings}
 
 이메일은 일반적으로 컨텐츠를 배포하거나 자동화된 프로세스의 일부로 상태 정보를 제공하는 데 사용됩니다. 전자 메일 서비스( `EmailService`)를 사용하면 프로세스에서 POP3 또는 IMAP 서버에서 전자 메일 메시지를 받고 전자 메일 메시지를 SMTP 서버로 보낼 수 있습니다.
 
@@ -284,7 +284,7 @@ PDF 생성 서비스에 대해 다음 설정을 사용할 수 있습니다.
 
 첫 번째 변환 시도에 사용된 시간이 지정된 시간 제한 기간보다 짧은 경우 PDF 변환을 다시 시도합니다. 예를 들어, 시간 제한 기간이 270초이고 첫 번째 시도에서 200을 사용한 경우 PDF 생성기가 변환을 다시 시도합니다. 첫 번째 시도 자체가 270을 소비한 경우 전환을 다시 시도하지 않습니다.
 
-## ES4 유틸리티 서비스 설정 안내서 {#guides-es4-utilities-service-settings}
+## ES4 유틸리티 서비스 설정 가이드 {#guides-es4-utilities-service-settings}
 
 안내서를 만들면 안내서 정의와 같은 일부 리소스가 안내서에 포함됩니다. 리소스는 로컬로 또는 AEM Forms 서버에 저장된 애플리케이션 자산에 대한 참조로 존재할 수도 있습니다. 안내서에는 데이터가 포함되지 않으며 제출 위치 및 입력 값은 모든 외부 환경에 적합하지 않습니다.
 
@@ -465,7 +465,7 @@ Microsoft SharePoint 구성 서비스에 대해 다음 설정을 사용할 수 �
 
 **트랜잭션 유형:**  트랜잭션 컨텍스트를 작업에 전파하는 방법을 지정합니다.
 
-**필수:** 은 트랜잭션 컨텍스트가 이미 있는 경우 지원합니다.그렇지 않으면 새 트랜잭션 컨텍스트가 만들어집니다. 기본값이 됩니다.
+**필수:** 은 트랜잭션 컨텍스트가 이미 있는 경우 지원합니다. 그렇지 않으면 새 트랜잭션 컨텍스트가 만들어집니다. 기본값이 됩니다.
 
 **새로 만들기 필요:** 항상 새 트랜잭션 컨텍스트를 만듭니다. 활성 트랜잭션 컨텍스트가 있으면 일시 중단됩니다.
 
@@ -505,7 +505,7 @@ PDFG 정리 검사 초 기본값은 `43200`(12시간)입니다. 작업 만료 �
 
 **기본 로케일:** PDF 생성 서비스가 배포되는 서버의 기본 로케일(국가 + 언어)을 재정의하는 데 사용됩니다. 이 매개 변수를 지정하지 않으면 서비스가 배포된 운영 체제에서 기본 로케일이 결정됩니다. 이 매개 변수는 API에 오류 메시지가 반환되는 언어를 제어합니다.
 
-## forms 워크플로우 데이터 서비스 설정 {#forms-workflow-data-services-service-settings}
+## forms workflow Data Services 서비스 설정 {#forms-workflow-data-services-service-settings}
 
 다음 서비스는 데이터 서비스를 확장하고 Workspace에서 서버와 통신하는 데 사용하는 어셈블러를 노출합니다. Adobe 지원 센터에서 이 서비스에 대한 구성 옵션을 변경하지 마십시오. 이러한 서비스는 직접 액세스할 수 없습니다.
 
@@ -537,7 +537,7 @@ AEM Forms에 포함된 기본 리포지토리를 사용하거나 타사 저장�
 
 ## 서명 서비스 설정 {#signature-service-settings}
 
-서명 서비스( `SignatureService`)를 사용하면 조직에서 배포하고 수신하는 Adobe PDF 문서의 보안 및 개인 정보를 보호할 수 있습니다. 이 서비스는 디지털 서명 및 인증을 사용하여 문서가 변경되지 않도록 합니다. 문서를 변경하면 서명이 끊어집니다. 문서 자체에 보안 기능이 적용되므로 문서의 전체 라이프 사이클에 대해 보안 및 제어 상태가 유지됩니다.방화벽 외부에서 오프라인을 다운로드하거나 다시 조직에 제출할 때 사용합니다.
+서명 서비스( `SignatureService`)를 사용하면 조직에서 배포하고 수신하는 Adobe PDF 문서의 보안 및 개인 정보를 보호할 수 있습니다. 이 서비스는 디지털 서명 및 인증을 사용하여 문서가 변경되지 않도록 합니다. 문서를 변경하면 서명이 끊어집니다. 문서 자체에 보안 기능이 적용되므로 문서의 전체 라이프 사이클에 대해 보안 및 제어 상태가 유지됩니다. 방화벽 외부에서 오프라인을 다운로드하거나 다시 조직에 제출할 때 사용합니다.
 
 서명 서비스에 대해 다음 설정을 사용할 수 있습니다.
 
@@ -627,7 +627,7 @@ AEM Forms에 포함된 기본 리포지토리를 사용하거나 타사 저장�
 
 **TSP 응답 크기:** TSP 응답의 예상 크기(바이트)입니다. 이 값은 구성된 타임스탬프 공급자가 반환할 수 있는 타임스탬프 응답의 최대 크기를 나타내야 합니다. 확실히 확신하지 않는 한 이것을 변경하지 마십시오. 최소값은 60B이고 최대값은 10240B입니다. 기본값은 4096B입니다.
 
-**타임스탬프 서버 확장 무시**:AEM Forms 서버 **가 지정된 타임스탬프** 서버에 연결되지 않도록 하려면 [타임스탬프 서버 확장 무시] 옵션을 선택합니다. 옵션을 선택하면 AEM Forms과 타임스탬프 서버 간의 연결 시간 제한으로 인해 발생하는 프로세스 실패를 방지할 수 있습니다.
+**타임스탬프 서버 확장 무시**: AEM Forms 서버 **가 지정된 타임스탬프** 서버에 연결되지 않도록 하려면 [타임스탬프 서버 확장 무시] 옵션을 선택합니다. 옵션을 선택하면 AEM Forms과 타임스탬프 서버 간의 연결 시간 제한으로 인해 발생하는 프로세스 실패를 방지할 수 있습니다.
 
 ### 인증서 해지 목록 옵션 {#certificate-revocation-list-options}
 
@@ -671,7 +671,7 @@ AEM Forms에 포함된 기본 리포지토리를 사용하거나 타사 저장�
 
 **OCSP ISIS-MTT CertHash 확장 필요:** 인증서 공개 키 해시 확장을 OCSP 응답에 포함해야 하는지 여부를 지정합니다. 기본값은 false입니다.
 
-### {#error-handling-options-for-debugging} 디버깅을 위한 오류 처리 옵션
+### 디버깅을 위한 오류 처리 옵션 {#error-handling-options-for-debugging}
 
 **다음 API 호출에서 인증서 캐시 제거:** 다음 서명 서비스 작업이 호출될 때 인증서 캐시를 지울지 여부를 지정합니다. 작업이 호출되면 이 옵션이 false로 다시 설정됩니다. 기본값은 false입니다.
 
@@ -784,20 +784,20 @@ XSLT 변환 서비스에 다음 설정을 사용할 수 있습니다.
 
 **공장 이름:**  XSLT 변환을 수행하는 데 사용할 Java 클래스의 정규화된 이름입니다. 값을 지정하지 않으면 Forms 서버를 실행하는 Java Virtual Machine에 구성된 기본 팩토리가 사용됩니다.
 
-## 서비스 {#modifying-security-settings-for-a-service}에 대한 보안 설정 수정
+## 서비스에 대한 보안 설정 수정 {#modifying-security-settings-for-a-service}
 
 forms server를 사용하면 각 서비스에 대한 보안 설정을 구성할 수 있으므로 서비스별 수준에서 세분화된 액세스 제어를 구성할 수 있습니다.
 
 기본 보안 프로필이 설치되어 시스템 요구 사항을 충족하도록 구성할 수 있습니다. 각 보안 프로필에는 연관된 도메인이 있으며 사용자 수준 또는 그룹 수준에서 만들어집니다.
 
-### 서비스 {#modify-security-settings-for-a-service}에 대한 보안 설정 수정
+### 서비스의 보안 설정 수정 {#modify-security-settings-for-a-service}
 
 1. 관리 콘솔에서 서비스 > 애플리케이션 및 서비스 > 서비스 관리를 클릭합니다.
 1. 서비스 관리 페이지에서 구성할 서비스를 클릭합니다.
 1. 보안 탭을 클릭합니다.
 1. 인증해야 하는 발신자 목록에서 예 또는 아니오를 선택하여 자격 증명으로 서비스를 호출할 수 있는지 여부를 지정합니다.
 
-   예를 선택하면 서비스 호출자가 인증되고 해당 호출자의 사용자 주도자가 서비스를 호출할 수 있는 권한이 있어야 합니다.그렇지 않으면 호출 시도가 거부됩니다.
+   예를 선택하면 서비스 호출자가 인증되고 해당 호출자의 사용자 주도자가 서비스를 호출할 수 있는 권한이 있어야 합니다. 그렇지 않으면 호출 시도가 거부됩니다.
 
    아니오를 선택하면 서비스의 호출자가 인증되거나 인증되지 않을 수 있습니다. 인증 검사가 없으므로 서비스 호출이 항상 성공합니다.
 
@@ -837,16 +837,16 @@ forms server를 사용하면 각 서비스에 대한 보안 설정을 구성할 
 
 1. 추가를 클릭합니다.
 
-### 보안 프로필 {#remove-the-principal-from-a-security-profile}에서 주도자 제거
+### 보안 프로필에서 주도자 제거 {#remove-the-principal-from-a-security-profile}
 
 1. 서비스 관리 페이지에서 구성할 서비스를 선택합니다.
 1. **보안** 탭을 클릭하고 제거할 보안 프로필을 선택한 다음 **제거**&#x200B;를 클릭합니다.
 
-## 서비스 {#configuring-pooling-for-a-service}에 대한 풀링 구성
+## 서비스에 대한 풀링 구성 {#configuring-pooling-for-a-service}
 
 각 서비스는 풀링 기능을 활용하여 수신 호출 요청을 처리할 수 있습니다. 서비스 풀을 사용하면 서비스 인스턴스가 한 번에 하나의 스레드에 의해 호출되고 호출 요청 간에 다시 사용되므로 성능이 향상될 수 있습니다. 또한 풀링을 사용하여 최대 비동기 서비스 인스턴스 옵션을 지정할 수 있습니다. 이 옵션을 사용하면 서비스가 병렬로 처리되는 요청 수를 제한할 수 있습니다.
 
-### 풀링 {#enable-pooling} 사용
+### 풀링 활성화 {#enable-pooling}
 
 1. 관리 콘솔에서 서비스 > 애플리케이션 및 서비스 > 서비스 관리를 클릭합니다.
 1. 서비스 관리 페이지에서 구성할 서비스를 클릭합니다.
@@ -858,7 +858,7 @@ forms server를 사용하면 각 서비스에 대한 보안 설정을 구성할 
 1. 호출 대기 시간 초과 상자에 서비스가 호출 요청에 사용할 수 있을 때까지 대기할 시간(밀리초)을 입력합니다. 이 설정에 대한 값을 지정하지 않으면 기본값은 0이며, 이 경우 대기 시간이 없습니다.
 1. 저장을 클릭합니다.
 
-### 풀링 {#remove-pooling} 제거
+### 풀링 제거 {#remove-pooling}
 
 1. 관리 콘솔에서 서비스 > 애플리케이션 및 서비스 > 서비스 관리를 클릭합니다.
 1. 서비스 관리 페이지에서 구성할 서비스를 클릭합니다.

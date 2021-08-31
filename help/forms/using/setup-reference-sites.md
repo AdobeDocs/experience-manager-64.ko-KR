@@ -1,17 +1,17 @@
 ---
 title: AEM Forms 참조 사이트 설정 및 구성
-seo-title: AEM Forms 참조 사이트 설정 및 구성
+seo-title: Set up and configure AEM Forms reference sites
 description: AEM Forms 참조 사이트에서는 AEM Forms을 사용하여 조직에서 종단 간 워크플로우를 구현하는 방법을 소개합니다.
-seo-description: AEM Forms 참조 사이트에서는 AEM Forms을 사용하여 조직에서 종단 간 워크플로우를 구현하는 방법을 소개합니다.
+seo-description: AEM Forms reference sites showcase how you can use AEM Forms to implement end-to-end workflow in an organization.
 uuid: 087d58a1-d84e-49ac-a82d-4e7fc708f00f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 2feb4a9c-57ad-4c6b-a572-0047bc409bbb
 exl-id: 9c5d956c-06bc-4428-afcd-02b4f81b802f
-source-git-commit: 933084f92d116111dbfea55d52b1ad60ae691505
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '2936'
+source-wordcount: '2911'
 ht-degree: 2%
 
 ---
@@ -40,7 +40,7 @@ We.Finance 및 We.Gov 참조 사이트에서는 기존 및 잠재 고객과 교�
 
 * Adobe Sign과 통합하여 적응형 양식에 안전하게 서명하고 제출할 수 있습니다.
 
-## 참조 사이트 {#prerequisites-and-steps-to-set-up-reference-sites}를 설정하는 사전 요구 사항 및 절차
+## 참조 사이트를 설정하는 사전 요구 사항 및 단계입니다 {#prerequisites-and-steps-to-set-up-reference-sites}
 
 참조 사이트를 설정하기 전에 다음 사항이 있는지 확인하십시오.
 
@@ -135,7 +135,7 @@ We.Finance 및 We.Gov 참조 사이트에서는 기존 및 잠재 고객과 교�
  </tbody> 
 </table>
 
-## AEM Forms {#install-and-configure-aem-forms} 설치 및 구성
+## AEM Forms 설치 및 구성 {#install-and-configure-aem-forms}
 
 [OSGi](/help/forms/using/installing-configuring-aem-forms-osgi.md)에 설명된 대로 AEM Forms을 설치하고 배포합니다.
 
@@ -153,7 +153,7 @@ Adobe Sign 서버와 통신하려면 SSL 구성이 필요합니다. 자세한 �
 
 ## 일 CQ Link Externalizer 구성 구성 구성 {#externalizer}
 
-AEM에서 **Externalizer**&#x200B;는 프로그래밍 방식으로 리소스 경로(예: )를 변환할 수 있는 OSGI 서비스입니다.사전 구성된 DNS로 경로를 접두사로 사용하여 외부 및 절대 URL(예: https://www.mycompany.com/path/to/my/page)에 /path/to/my/page)을 추가할 수 있습니다. [URL 표면화](/help/sites-developing/externalizer.md)를 참조하십시오.
+AEM에서 **Externalizer**&#x200B;는 사전 구성된 DNS로 경로를 접두사로 사용하여 리소스 경로(예: /path/to/my/page)를 프로그래밍 방식으로 외부 및 절대 URL(예: https://www.mycompany.com/path/to/my/page)으로 변환할 수 있는 OSGI 서비스입니다. [URL 표면화](/help/sites-developing/externalizer.md)를 참조하십시오.
 
 >[!CAUTION]
 >
@@ -233,7 +233,7 @@ AEM Forms 참조 사이트의 경우 AEM DS 설정 서비스에서 처리 서버
 
 설치가 성공하면 We.Gov 및 We.Finance 참조 사이트 랜딩 페이지에 액세스할 수 있습니다.
 
-## (선택 사항) 샘플 데이터를 Microsoft Dynamics {#optional-import-sample-data-into-microsoft-dynamics}에 가져옵니다.
+## (선택 사항) 샘플 데이터를 Microsoft Dynamics로 가져옵니다 {#optional-import-sample-data-into-microsoft-dynamics}
 
 홈 모기지 응용 프로그램 및 자동 보험 응용 프로그램 참조 사이트는 Microsoft Dynamics의 레코드를 사용하도록 구성되어 있습니다. 참조 사이트 패키지는 참조 사이트를 실행하기 위해 Microsoft Dynamics에 가져올 수 있는 사용자 지정 엔터티 및 샘플 레코드를 설치합니다. 다음 단계를 수행하여 샘플 데이터를 마이그레이션하고 설정합니다.
 
@@ -262,7 +262,7 @@ AEM Forms 참조 사이트의 경우 AEM DS 설정 서비스에서 처리 서버
    * **[!UICONTROL Sales > We.Finance 자동 보험]**&#x200B;으로 이동하여 **[!UICONTROL 가져오기]**&#x200B;를 클릭합니다.
    * **[!UICONTROL Sales > We.Finance Home Moderation]**&#x200B;로 이동하여 **[!UICONTROL Import]**&#x200B;를 클릭합니다.
 
-## Microsoft Dynamics {#configure-oauth-cloud-service-for-microsoft-dynamics}에 대한 OAuth 클라우드 서비스 구성
+## Microsoft Dynamics용 OAuth 클라우드 서비스 구성 {#configure-oauth-cloud-service-for-microsoft-dynamics}
 
 AEM Forms과 Microsoft Dynamics 간의 통신을 사용하도록 AEM Forms에서 OAuth 클라우드 서비스를 구성합니다. AEM 작성자 및 게시 인스턴스에서 OAuth Cloud Service을 구성하려면 다음 단계를 수행합니다.
 
@@ -281,7 +281,7 @@ AEM Forms과 Microsoft Dynamics 간의 통신을 사용하도록 AEM Forms에서
 
 1. `https://[server]:[host]/system/console/configMgr`의 AEM 웹 구성 콘솔로 이동합니다.
 1. **[!UICONTROL Adobe Sign 구성 서비스]**&#x200B;를 찾아 탭하여 구성용으로 엽니다.
-1. **[!UICONTROL 상태 업데이트 스케줄러 표현식]**&#x200B;을 **0/2 &amp;ast;로 구성합니다.amp;ast;amp;ast;?**
+1. **[!UICONTROL 상태 업데이트 스케줄러 표현식]**&#x200B;을 **0/2 &amp;ast;로 구성합니다. amp;ast; amp;ast; ?**
 
    >[!NOTE]
    >
@@ -322,7 +322,7 @@ AEM Forms과 Microsoft Dynamics 간의 통신을 사용하도록 AEM Forms에서
 1. 설정을 저장합니다.
 1. (**작성자 인스턴스만**) **[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL 데이터 소스]** > **[!UICONTROL 전역]**&#x200B;로 이동합니다. **[!UICONTROL roi-rest]**&#x200B;를 선택하고 **[!UICONTROL 속성]**&#x200B;을 탭합니다. **[!UICONTROL 인증 설정]**&#x200B;을 탭하고 **[!UICONTROL 인증 유형]**&#x200B;기본 인증&#x200B;]**으로 설정합니다.**[!UICONTROL  서비스에 액세스할 사용자 이름/암호로 `admin`/ `admin`을 지정합니다. **[!UICONTROL 저장 및 닫기]**&#x200B;를 누릅니다.
 
-## Marketing Cloud {#integrate-with-marketing-cloud}과 통합
+## Marketing Cloud과 통합 {#integrate-with-marketing-cloud}
 
 AEM Forms을 Adobe Analytics 및 Adobe Target과 통합할 수 있습니다. Adobe Analytics을 사용하면 보고서를 생성하고 적응형 양식의 성능을 분석할 수 있지만 Adobe Target은 개인화된 경험을 제공하고 적응형 양식에 대해 A/B 테스트를 수행하는 데 도움이 됩니다.
 
@@ -354,7 +354,7 @@ AEM Forms과 Adobe Analytics 통합을 통해 고객이 양식 및 문서와 상
 
    참조 사이트는 신용 카드, 주택 담보 및 아동 지원 사용 사례에 대한 시드 데이터를 분석 보고에 제공합니다. 시드 데이터 구성은 [We.Finance 참조 사이트 안내](/help/forms/using/finance-reference-site-walkthrough.md) 및 [We.Gov 참조 사이트 안내](/help/forms/using/gov-reference-site-walkthrough.md)를 참조하십시오.
 
-### Target {#configure-target} 구성
+### Target 구성 {#configure-target}
 
 참조 사이트에서는 적응형 문서에 타깃팅되고 개인화된 컨텐츠를 포함할 수 있는 Adobe Target과 AEM Forms의 통합을 소개합니다. 또한 적응형 양식에 대한 A/B 테스트를 만들 수도 있습니다.
 
@@ -362,7 +362,7 @@ AEM Forms과 Adobe Analytics 통합을 통해 고객이 양식 및 문서와 상
 
 1. 서버에서 A/B 테스트를 활성화하려면 jvm 인수 `-Dabtesting.enabled=true`으로 작성자 빠른 시작을 시작합니다.
 
-   **참고**:턴키 설치에서 서비스로 시작된 JBoss에서 AEM 인스턴스가 실행 중인 경우, 파일의 다음 항목 `-Dabtesting.enabled=true` 에 매개 변수를  `jboss\bin\standalone.conf.bat` 추가합니다.
+   **참고**: 턴키 설치에서 서비스로 시작된 JBoss에서 AEM 인스턴스가 실행 중인 경우, 파일의 다음 항목 `-Dabtesting.enabled=true` 에 매개 변수를  `jboss\bin\standalone.conf.bat` 추가합니다.
 
    `set "JAVA_OPTS=%JAVA_OPTS% -Dadobeidp.serverName=server1 -Dfile.encoding=utf8 -Djava.net.preferIPv4Stack=true -Dabtesting.enabled=true"`
 
@@ -377,7 +377,7 @@ AEM Forms과 Adobe Analytics 통합을 통해 고객이 양식 및 문서와 상
 
 1. **[!UICONTROL AEM Forms Target 구성]**&#x200B;을 클릭합니다.
 1. Target 프레임워크을 선택합니다.
-1. **[!UICONTROL Target URL]** 필드에서 AEM Forms에 대한 URL을 지정합니다. 예:https://&lt;*hostname*:&lt;*port*>.
+1. **[!UICONTROL Target URL]** 필드에서 AEM Forms에 대한 URL을 지정합니다. 예: https://&lt;*hostname*:&lt;*port*>.
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 

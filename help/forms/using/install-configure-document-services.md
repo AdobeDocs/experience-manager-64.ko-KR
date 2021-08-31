@@ -1,16 +1,16 @@
 ---
 title: 문서 서비스 설치 및 구성
-seo-title: 문서 서비스 설치 및 구성
+seo-title: Installing and configuring document services
 description: AEM Forms 문서 서비스를 설치하여 PDF 문서를 작성, 조합, 배포, 아카이빙하고 디지털 서명을 추가하여 문서에 대한 액세스를 제한하고 바코드 양식을 디코딩할 수 있습니다.
-seo-description: AEM Forms 문서 서비스를 설치하여 PDF 문서를 작성, 조합, 배포, 아카이빙하고 디지털 서명을 추가하여 문서에 대한 액세스를 제한하고 바코드 양식을 디코딩할 수 있습니다.
+seo-description: Install AEM Forms document services to create, assemble, distribute, archive PDF documents, add digital signatures to limit access to documents, and decode barcoded forms.
 uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: b3eea94d-87f1-49b3-aabc-cdb32629ef20
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '4295'
+source-wordcount: '4251'
 ht-degree: 3%
 
 ---
@@ -85,7 +85,6 @@ AEM Forms 문서 서비스 설치 및 구성을 시작하기 전에 다음을 �
 >* UNIX 기반 운영 체제에서 PDF Generator는 WebKit 및 PhantomJS 변환 경로를 지원하여 HTML 파일을 PDF 문서로 변환합니다.
 
 >
-
 
 
 ### UNIX 기반 운영 체제에 대한 추가 요구 사항 {#extrarequirements}
@@ -208,7 +207,6 @@ PDF Generator 서비스를 사용하여 Microsoft Word, Microsoft Excel, Microso
 >
 
 
-
 Acrobat을 설치한 후 Microsoft Word를 엽니다. **Acrobat**&#x200B;탭에서&#x200B;**PDF 만들기**&#x200B;를 클릭하고 컴퓨터에서 사용할 수 있는 .doc 또는 .docx 파일을 PDF 문서로 변환합니다. 성공적으로 전환하면 AEM Forms에서 PDF 생성기 서비스와 함께 Acrobat을 사용할 준비가 되었습니다.
 
 ### 환경 변수 설정 {#setup-environment-variables}
@@ -260,8 +258,7 @@ Acrobat을 설치한 후 Microsoft Word를 엽니다. **Acrobat**&#x200B;탭에�
 >* UNIX 기반 플랫폼에서 OpenOffice를 사용하는 경우 다음 명령을 실행하여 경로 변수를 설정합니다.
 
 >
->  
-`export OpenOffice_PATH=/opt/openoffice.org4`
+>  `export OpenOffice_PATH=/opt/openoffice.org4`
 
 
 ### (IBM WebSphere에만 해당) IBM SSL 소켓 공급자 구성 {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
@@ -387,7 +384,6 @@ UNIX 기반 플랫폼에서 PDF Generator 서비스는 WebKit 및 PhantomJS 경�
 >
 
 
-
 ## AEM Forms 추가 기능 패키지 설치 {#install-aem-forms-add-on-package}
 
 AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니다. 이 패키지에는 AEM Forms 문서 서비스 및 기타 AEM Forms 기능이 포함되어 있습니다. 패키지를 설치하려면 다음 단계를 수행하십시오.
@@ -440,7 +436,7 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
 
 ### PDF Generator 서비스를 실행하도록 로컬 사용자 계정 구성  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
 
-PDF Generator 서비스를 실행하려면 로컬 사용자 계정이 필요합니다. 로컬 사용자를 만드는 단계는 [Windows](https://support.microsoft.com/en-us/help/13951/windows-create-user-account)에서 사용자 계정 만들기 또는 [UNIX 기반 플랫폼에서 사용자 계정 만들기](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/Step_by_Step_Guide/s1-starting-create-account.html)를 참조하십시오.
+PDF Generator 서비스를 실행하려면 로컬 사용자 계정이 필요합니다. 로컬 사용자를 만드는 단계는 [Windows](https://support.microsoft.com/en-us/help/13951/windows-create-user-account)에서 사용자 계정을 만들거나 UNIX 기반 플랫폼에서 사용자 계정을 만듭니다.
 
 1. [AEM Forms PDF 생성기 구성](http://localhost:4502/libs/fd/pdfg/config/ui.html) 페이지를 엽니다.
 
