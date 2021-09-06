@@ -1,8 +1,8 @@
 ---
 title: 컨텐츠 조각을 사용한 작업
-seo-title: 컨텐츠 조각을 사용한 작업
+seo-title: Working with Content Fragments
 description: 컨텐츠 조각을 사용하여 페이지에 구애받지 않고 컨텐츠를 디자인, 작성, 조정 및 사용할 수 있는 방법을 알아봅니다.
-seo-description: 컨텐츠 조각을 사용하여 페이지에 구애받지 않고 컨텐츠를 디자인, 작성, 조정 및 사용할 수 있는 방법을 알아봅니다.
+seo-description: Learn how Content Fragments allow you to design, create, curate and use page-independent content.
 uuid: aa5acda2-4c20-4fe7-929d-6c065b252cf2
 contentOwner: Alison Heimoz
 topic-tags: content-fragments
@@ -10,12 +10,12 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: 22ae0d3a-083f-40e4-bf4a-7a755ae9e312
 exl-id: e2804707-7b75-4fae-937e-9e258481878f
-feature: 콘텐츠 조각
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 5d523aa135e02b7d06241188c3b4a1d4502f4204
 workflow-type: tm+mt
-source-wordcount: '2004'
-ht-degree: 97%
+source-wordcount: '1984'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 97%
 >
 >일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md)을 적용해야 합니다.
 
-AEM(Adobe Experience Manager) 컨텐츠 조각을 사용하면 [페이지에 영향을 받지 않는 컨텐츠를 게시](/help/sites-authoring/content-fragments.md), 디자인, 제작 및 조정할 수 있습니다. 이를 통해 여러 위치/여러 채널에서 사용할 수 있는 컨텐츠를 준비할 수 있습니다.
+Adobe Experience Manager (AEM) 컨텐츠 조각을 사용하면 페이지에 영향을 받지 않는 컨텐츠를 게시, 디자인, 작성, 조정 및 [할 수 있습니다](/help/sites-authoring/content-fragments.md). 이를 통해 여러 위치/여러 채널에서 사용할 수 있는 컨텐츠를 준비할 수 있습니다.
 
 AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하여 컨텐츠 조각을 JSON 형식으로 게재할 수도 있습니다. 이 게재 형식을 사용하면
 
@@ -91,8 +91,7 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 >* **경험 조각**&#x200B;은 전체적으로 배치된 컨텐츠, 즉 웹 페이지 조각입니다.
 
 >
->
-경험 조각은 컨텐츠 조각 형태로 컨텐츠를 포함할 수 있지만 반대로는 불가능합니다.
+>경험 조각은 컨텐츠 조각 형태로 컨텐츠를 포함할 수 있지만 반대로는 불가능합니다.
 >
 >자세한 내용은 [AEM의 컨텐츠 조각 및 경험 조각 이해](https://helpx.adobe.com/kr/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html)를 참조하십시오.
 
