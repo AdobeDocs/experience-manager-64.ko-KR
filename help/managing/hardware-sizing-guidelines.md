@@ -1,8 +1,8 @@
 ---
 title: 하드웨어 크기 조정 지침
-seo-title: 하드웨어 크기 조정 지침
+seo-title: Hardware Sizing Guidelines
 description: 이러한 크기 조정 지침은 AEM 프로젝트를 배포하는 데 필요한 하드웨어 리소스를 대략적으로 설명합니다.
-seo-description: 이러한 크기 조정 지침은 AEM 프로젝트를 배포하는 데 필요한 하드웨어 리소스를 대략적으로 설명합니다.
+seo-description: These sizing guidelines offer an approximation of the hardware resources required to deploy an AEM project.
 uuid: 83f928e3-986b-461b-8b3e-8faacd11172e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
@@ -10,9 +10,9 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 3f4feb38-eca0-4852-88f8-9b20625e18ad
 exl-id: 34e4edd5-9e67-44ed-8c4c-bcdd3e161a35
-source-git-commit: 5b0eef590f9a0c709fa21b8dbcf6a2f286a20237
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '2852'
+source-wordcount: '2831'
 ht-degree: 1%
 
 ---
@@ -308,7 +308,7 @@ AEM 인스턴스가 최소 힙의 크기가 256M이고 최대 힙의 크기는 1
 
 >[!NOTE]
 >
->[자산 성능 안내서](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/assets-sizing-guide.html?lang=en)도 참조하십시오.
+>[자산 성능 안내서](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/assets-sizing-guide.html)도 참조하십시오.
 
 ### 다중 사이트 관리자 {#multi-site-manager}
 

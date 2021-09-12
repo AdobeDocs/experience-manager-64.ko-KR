@@ -6,11 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
-feature: 구성,Scene7 모드
+feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '5594'
+source-wordcount: '5589'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ Experience Manager Dynamic Media을 6.3에서 6.4로 업그레이드하는 경�
 
 ## Dynamic Media Cloud Services 구성 {#configuring-dynamic-media-cloud-services}
 
-Dynamic Media Cloud Services을 구성하기 전에 암호를 변경합니다. Dynamic Media 자격 증명으로 프로비저닝 이메일을 받은 후 암호를 변경하려면 [Dynamic Media Classic 데스크탑 응용 프로그램에 로그인해야 합니다. ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) 프로비저닝 전자 메일에 제공된 암호는 시스템에서 생성되며 임시 암호만 사용할 수 있습니다. Dynamic Media Cloud Service이 올바른 자격 증명으로 설정되도록 암호를 업데이트하는 것이 중요합니다.
+Dynamic Media Cloud Services을 구성하기 전에 암호를 변경합니다. Dynamic Media 자격 증명으로 프로비저닝 이메일을 받은 후 암호를 변경하려면 [Dynamic Media Classic 데스크탑 응용 프로그램에 로그인해야 합니다. ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) 프로비저닝 전자 메일에 제공된 암호는 시스템에서 생성되며 임시 암호만 사용할 수 있습니다. Dynamic Media Cloud Service이 올바른 자격 증명으로 설정되도록 암호를 업데이트하는 것이 중요합니다.
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ Dynamic Media Cloud Services을 구성하기 전에 암호를 변경합니다. D
    * 주소를 활성화(설정)하려면 확인란을 선택합니다. Experience Manager 작성자 인스턴스(Dispatcher IP 아님)의 IP 주소를 입력합니다.
    * **[!UICONTROL 저장]**&#x200B;을 누릅니다.
 
-이제 기본 구성을 완료했습니다.Dynamic Media - Scene7 모드를 사용할 준비가 되었습니다.
+이제 기본 구성을 완료했습니다. Dynamic Media - Scene7 모드를 사용할 준비가 되었습니다.
 
 구성을 추가로 사용자 지정하려면 원할 경우 Dynamic Media - Scene7 모드](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode)에서 [(선택 사항) 고급 설정 구성 아래에서 작업을 선택적으로 완료할 수 있습니다.
 
@@ -145,7 +145,7 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가 사용자 지정하
 
 게시 설정 설정은 Dynamic Media에서 기본적으로 자산이 전달되는 방법을 결정합니다. 지정된 설정이 없으면 Dynamic Media은 게시 설정에 정의된 기본 설정에 따라 자산을 전달합니다. 예를 들어, 해상도 속성을 포함하지 않는 이미지 전달에 대한 요청에서 기본 개체 해상도 설정이 있는 이미지가 생성됩니다.
 
-게시 설정을 구성하려면:Dynamic Media Classic에서 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 게시 설정]** > **[!UICONTROL 이미지 서버]**&#x200B;를 탭합니다.
+게시 설정을 구성하려면: Dynamic Media Classic에서 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 게시 설정]** > **[!UICONTROL 이미지 서버]**&#x200B;를 탭합니다.
 
 이미지 서버 화면은 이미지 전달을 위한 기본 설정을 설정합니다. 각 설정에 대한 설명은 사용자 인터페이스를 참조하십시오.
 
@@ -163,7 +163,7 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가 사용자 지정하
 
 **[!UICONTROL 서버]**  - 계정 프로비저닝에서 Dynamic Media은 자동으로 회사에 할당된 서버를 제공합니다. 이러한 서버는 웹 사이트 및 애플리케이션에 대한 URL 문자열을 구성하는 데 사용됩니다. 이러한 URL 호출은 계정에만 적용됩니다. Experience Manager 지원에 의해 명시적으로 지시하지 않는 한 서버 이름을 변경하지 마십시오.
 
-**[!UICONTROL 이미지 덮어쓰기]**  - Dynamic Media에서는 두 파일의 이름이 같을 수 없습니다. 각 항목의 URL ID(파일 이름에서 확장자를 뺀 경우)는 고유해야 합니다. 다음 옵션은 교체 자산을 업로드하는 방법을 지정합니다.원본과 중복이 되는지 여부 중복 자산은 &quot;-1&quot;로 이름이 변경됩니다(예를 들어 chair.tif는 chair-1.tif로 이름이 변경됨). 이러한 옵션은 원래 폴더와 다른 폴더에 업로드된 자산이나 원래 파일 확장명의 다른 자산(JPG, TIF 또는 PNG)에 영향을 줍니다.
+**[!UICONTROL 이미지 덮어쓰기]**  - Dynamic Media에서는 두 파일의 이름이 같을 수 없습니다. 각 항목의 URL ID(파일 이름에서 확장자를 뺀 경우)는 고유해야 합니다. 다음 옵션은 교체 자산을 업로드하는 방법을 지정합니다. 원본과 중복이 되는지 여부 중복 자산은 &quot;-1&quot;로 이름이 변경됩니다(예를 들어 chair.tif는 chair-1.tif로 이름이 변경됨). 이러한 옵션은 원래 폴더와 다른 폴더에 업로드된 자산이나 원래 파일 확장명의 다른 자산(JPG, TIF 또는 PNG)에 영향을 줍니다.
 
 * **[!UICONTROL 현재 폴더에 덮어쓰기, 동일한 기본 이미지 이름/확장]**  - 이 옵션은 교체를 위한 가장 엄격한 규칙입니다. 교체 이미지를 원본과 동일한 폴더에 업로드하고 교체 이미지의 파일 확장명이 원본과 동일해야 합니다. 이러한 요구 사항이 충족되지 않으면 복제본이 만들어집니다.
 
@@ -171,7 +171,7 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가 사용자 지정하
 >
 >Experience Manager과 일관성을 유지하려면 **[!UICONTROL 현재 폴더에 덮어쓰기, 동일한 기본 이미지 이름/확장]**&#x200B;을 선택합니다.
 
-* **[!UICONTROL 모든 폴더에 덮어쓰기, 동일한 기본 자산 이름/확장]**  - 대체 이미지의 파일 확장명이 원본 이미지와 동일해야 합니다(예: 은  `chair.jpg` 을 대신하지  `chair.jpg`   `chair.tif`않음). 그러나 대체 이미지를 원본과 다른 폴더에 업로드할 수 있습니다. 업데이트된 이미지는 새 폴더에 있습니다.파일을 원래 위치에서 더 이상 찾을 수 없습니다.
+* **[!UICONTROL 모든 폴더에 덮어쓰기, 동일한 기본 자산 이름/확장]**  - 대체 이미지의 파일 확장명이 원본 이미지와 동일해야 합니다(예: 은  `chair.jpg` 을 대신하지  `chair.jpg`   `chair.tif`않음). 그러나 대체 이미지를 원본과 다른 폴더에 업로드할 수 있습니다. 업데이트된 이미지는 새 폴더에 있습니다. 파일을 원래 위치에서 더 이상 찾을 수 없습니다.
 * **[!UICONTROL 확장자와 관계없이 동일한 기본 자산 이름을 가진 임의의 폴더에 덮어쓰기]**  - 이 옵션은 가장 포괄적인 대체 규칙입니다. 대체 이미지를 원본과 다른 폴더에 업로드하고, 다른 파일 확장자를 가진 파일을 업로드하고, 원래 파일을 바꿀 수 있습니다. 원본 파일이 다른 폴더에 있는 경우 대체 이미지는 업로드된 새 폴더에 있습니다.
 
 **[!UICONTROL 기본 색상 프로필]**  -  [자세한 내용은 ](#configuring-color-management) 색상 관리 구성을 참조하십시오.
@@ -344,7 +344,7 @@ Experience Manager 자산에서 지원되지 않는 형식에 대한 사용자 �
 
 Dynamic Media은 일괄처리 집합 사전 설정을 사용하여 뷰어에 표시할 이미지 세트(대체 이미지, 색상 옵션, 360spin)로 자산을 구성합니다. 일괄처리 집합 사전 설정은 Dynamic Media의 자산 업로드 프로세스와 함께 자동으로 실행됩니다.
 
-일괄처리 집합 사전 설정을 생성, 편집 및 관리할 수 있습니다. 배치 세트 사전 설정 정의에는 두 가지 유형이 있습니다.하나는 사용자가 설정한 기본 이름 지정 규칙에 대한 것이고 다른 하나는 사용자가 즉석에서 생성하는 사용자 지정 이름 지정 규칙에 대한 것입니다.
+일괄처리 집합 사전 설정을 생성, 편집 및 관리할 수 있습니다. 배치 세트 사전 설정 정의에는 두 가지 유형이 있습니다. 하나는 사용자가 설정한 기본 이름 지정 규칙에 대한 것이고 다른 하나는 사용자가 즉석에서 생성하는 사용자 지정 이름 지정 규칙에 대한 것입니다.
 
 양식 필드 메서드를 사용하여 묶음 세트 사전 설정을 정의하거나 정규 표현식을 사용할 수 있는 코드 메서드를 정의할 수 있습니다. 기본 이름 지정에서와 같이, [!UICONTROL 코드 보기]를 [!UICONTROL 양식 보기]에서 정의하는 동시에 선택하고 정규 표현식을 사용하여 정의를 작성할 수 있습니다. 또는 한 보기를 선택 취소하여 단독 또는 다른 보기를 사용할 수 있습니다.
 
@@ -472,9 +472,9 @@ Dynamic Media - Scene7 모드가 원활하게 실행되도록 하려면 다음 �
 
 #### 다양한 파일 형식 처리를 위해 사전 정의된 작업 매개 변수 업데이트
 
-파일을 업로드할 때 처리 속도를 높이기 위해 작업 매개 변수를 조정할 수 있습니다. 예를 들어 PSD 파일을 업로드하지만 템플릿으로 처리하지 않으려는 경우 레이어 추출을 false(off)로 설정할 수 있습니다. 이 경우 튜닝된 작업 매개 변수는 다음과 같이 나타납니다.`process=None&createTemplate=false`
+파일을 업로드할 때 처리 속도를 높이기 위해 작업 매개 변수를 조정할 수 있습니다. 예를 들어 PSD 파일을 업로드하지만 템플릿으로 처리하지 않으려는 경우 레이어 추출을 false(off)로 설정할 수 있습니다. 이 경우 튜닝된 작업 매개 변수는 다음과 같이 나타납니다. `process=None&createTemplate=false`
 
-템플릿 만들기를 설정하려면 다음 매개 변수를 사용하십시오.`process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
+템플릿 만들기를 설정하려면 다음 매개 변수를 사용하십시오. `process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
 
 <!-- REMOVED BASED ON CQDOC-17657 You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter would appear as `process=None&createTemplate=false`. -->
 
@@ -500,7 +500,7 @@ Granite Transit 워크플로우 큐는 **[!UICONTROL DAM 자산 업데이트]** 
 
 **Granite Transient 워크플로우 큐를 업데이트하려면:**
 
-1. [https://&lt;server>/system/console/configMgr](http://localhost:4502/system/console/configMgr)로 이동하여 **[!UICONTROL 큐를 검색합니다.Granite Transient 워크플로 큐]**.
+1. [https://&lt;server>/system/console/configMgr](http://localhost:4502/system/console/configMgr)로 이동하여 **[!UICONTROL 큐를 검색합니다. Granite Transient 워크플로 큐]**.
 
    >[!NOTE]
    >
@@ -524,7 +524,7 @@ Granite 워크플로우 큐는 비임시 워크플로우에 사용됩니다. Dyn
 
 **Granite Workflow 큐를 업데이트하려면:**
 
-1. `https://<server>/system/console/configMgr`으로 이동하여 **[!UICONTROL 큐를 검색합니다.Granite Workflow 큐]**.
+1. `https://<server>/system/console/configMgr`으로 이동하여 **[!UICONTROL 큐를 검색합니다. Granite Workflow 큐]**.
 
    >[!NOTE]
    >
@@ -549,7 +549,7 @@ Scene7 업로드 연결 설정은 Experience Manager 자산을 Dynamic Media Cla
 1. 다음으로 이동 `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. [!UICONTROL 연결 수] 필드 및/또는 [!UICONTROL 활성 작업 시간 초과] 필드에서 원하는 대로 숫자를 변경합니다.
 
-   **[!UICONTROL 연결 수]** 설정은 Dynamic Media 업로드를 위해 허용되는 최대 HTTP 연결 수를 제어합니다.일반적으로 10개의 연결의 사전 정의된 값으로 충분합니다.
+   **[!UICONTROL 연결 수]** 설정은 Dynamic Media 업로드를 위해 허용되는 최대 HTTP 연결 수를 제어합니다. 일반적으로 10개의 연결의 사전 정의된 값으로 충분합니다.
 
    **[!UICONTROL 활성 작업 시간 초과]** 설정은 업로드된 Dynamic Media 자산이 게재 서버에 게시될 때까지 기다리는 시간을 결정합니다. 이 값은 기본적으로 2100초 또는 35분입니다.
 

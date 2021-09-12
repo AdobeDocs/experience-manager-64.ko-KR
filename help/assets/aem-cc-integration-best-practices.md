@@ -2,12 +2,12 @@
 title: AEM 및 Creative Cloud 통합 우수 사례
 description: AEM 배포를 Adobe Creative Cloud과 통합하여 자산 전송 워크플로우를 간소화하고 최대 효율성을 달성하는 모범 사례
 contentOwner: AG
-feature: 공동 작업,Adobe 자산 링크,데스크탑 앱
+feature: Collaboration,Adobe Asset Link,Desktop App
 role: User,Admin
 exl-id: cb9bea05-3359-4fb4-b935-59e522a5f387
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '3576'
+source-wordcount: '3566'
 ht-degree: 2%
 
 ---
@@ -31,8 +31,8 @@ Adobe Creative Cloud은 크리에이티브 팀이 디지털 자산을 만드는 
 
 | 요구 사항 | 사용 사례 | 관련 서피스 |
 |---|---|---|
-| 데스크탑에서 크리에이티브 환경 간소화 | 크리에이티브 전문가를 위한 DAM(AEM Assets)에서 자산에 대한 액세스를 간소화하거나, 기본 자산 작성 애플리케이션에서 작업하는 데스크탑의 사용자를 보다 폭넓게 활용할 수 있습니다. AEM에 변경 사항을 검색, 사용(열기), 편집 및 저장하고 새 파일을 업로드하는 쉽고 간단한 방법이 필요합니다. | Win 또는 Mac 데스크탑앱 Creative Cloud |
-| Adobe Stock에서 고품질의 즉시 사용할 수 있는 자산 제공 | 마케터는 자산 소싱 및 검색을 지원하여 컨텐츠 작성 프로세스를 가속화할 수 있습니다. 크리에이티브 전문가가 크리에이티브 도구 내에서 바로 승인된 자산을 사용합니다. | AEM Assets;Adobe Stock marketplace;메타데이터 필드 |
+| 데스크탑에서 크리에이티브 환경 간소화 | 크리에이티브 전문가를 위한 DAM(AEM Assets)에서 자산에 대한 액세스를 간소화하거나, 기본 자산 작성 애플리케이션에서 작업하는 데스크탑의 사용자를 보다 폭넓게 활용할 수 있습니다. AEM에 변경 사항을 검색, 사용(열기), 편집 및 저장하고 새 파일을 업로드하는 쉽고 간단한 방법이 필요합니다. | Win 또는 Mac 데스크탑 앱 Creative Cloud |
+| Adobe Stock에서 고품질의 즉시 사용할 수 있는 자산 제공 | 마케터는 자산 소싱 및 검색을 지원하여 컨텐츠 작성 프로세스를 가속화할 수 있습니다. 크리에이티브 전문가가 크리에이티브 도구 내에서 바로 승인된 자산을 사용합니다. | AEM Assets; Adobe Stock marketplace; 메타데이터 필드 |
 | 조직별 자산 분배 및 공유 | 내부 부서/지역 분기 및 외부 파트너, 배포자 및 에이전시는 상위 조직에서 공유한 승인된 자산을 사용합니다. 조직은 더 광범위한 재사용을 위해 생성된 자산을 안전하고 원활하게 공유하려고 합니다. | Brand Portal, Asset Share Commons |
 
 ## 협업 요구 사항을 지원하기 위한 Adobe 제공 {#adobe-offerings-to-support-the-collaboration-need}
@@ -45,7 +45,7 @@ Adobe Creative Cloud은 크리에이티브 팀이 디지털 자산을 만드는 
 
 이 문서는 주로 공동 작업 요구 사항의 첫 두 가지 측면에 중점을 둡니다. 사용 사례로는 자산의 분포 및 소싱이 간략하게 언급되어 있습니다. 이러한 요구 사항을 해결하려면 Brand Portal Adobe 또는 Asset Share Commons를 고려하십시오. [Brand Portal](https://helpx.adobe.com/kr/experience-manager/brand-portal/user-guide.html) 등의 대체 솔루션, [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) 구성 요소를 기반으로 빌드할 수 있는 솔루션, [Link Share](/help/assets/link-sharing.md)와 같은 대체 솔루션은 특정 요구 사항에 따라 검토해야 합니다.[](/help/assets/managing-assets-touch-ui.md)
 
-![AEM에 대한 Creative Cloud 연결:사용할 기능 결정](assets/creative-connections-aem.png)
+![AEM에 대한 Creative Cloud 연결: 사용할 기능 결정](assets/creative-connections-aem.png)
 
 <!-- 
 ## Terms and definitions {#terms-and-definitions}
@@ -79,14 +79,14 @@ The terms used in this document may have a different meaning in other contexts. 
 
 기호의 범례:
 
-* ✔✔:기본 솔루션
-* ✔:허용 가능한 솔루션
-* ✘:사용 사례에는 를 사용하지 않아야 합니다.
+* ✔✔: 기본 솔루션
+* ✔: 허용 가능한 솔루션
+* ✘: 사용 사례에는 를 사용하지 않아야 합니다.
 
 추가 참고 사항:
 
-* (1) 자산 수가 적음:예를 들어 프로젝트 또는 캠페인과 관련된 작은 자산 세트가 있습니다
-* (2) 자산 규모 확대예를 들어, 조직의 모든 승인된 자산
+* (1) 자산 수가 적음: 예를 들어 프로젝트 또는 캠페인과 관련된 작은 자산 세트가 있습니다
+* (2) 자산 규모 확대 예를 들어, 조직의 모든 승인된 자산
 * (3) AEM 데스크탑 앱 업로드 폴더 기능 사용
 
 자산 분배 사용 사례를 지원하려면 다른 솔루션을 고려해야 합니다.
@@ -112,7 +112,7 @@ The terms used in this document may have a different meaning in other contexts. 
 
 ### AEM 및 Creative Cloud 통합을 사용할 때의 고려 사항 {#considerations-when-using-aem-and-creative-cloud-integration}
 
-* [데스크탑 앱 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles) 를 참조하십시오
+* [데스크탑 앱 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles) 를 참조하십시오
 * [Adobe Stock 통합](aem-assets-adobe-stock.md)을 참조하십시오
 * [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)를 참조하십시오
 
@@ -201,9 +201,9 @@ DAM 인스턴스에 직접 액세스할 수 없는 외부 에이전시 및 프�
 
 다음 전략을 사용하여 최종/승인된 자산에 대한 액세스 권한을 제공합니다.
 
-* 많은 자산에 대한 액세스를 제공하려면AEM 게시 인프라에서 [AEM Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=en) 또는 고객이 구현한 [자산 공유](assets-finder-editor.md)를 사용하십시오
+* 많은 자산에 대한 액세스를 제공하려면 AEM 게시 인프라에서 [AEM Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) 또는 고객이 구현한 [자산 공유](assets-finder-editor.md)를 사용하십시오
 
-* 일부 자산에 대한 액세스 권한을 제공하려면:Adobe Creative Cloud과 AEM 폴더 공유를 AEM Assets Brand Portal 또는 자산 공유 외에도 사용할 수 있습니다. 이 통합과 관련된 특정 제한 사항이 있으며 이 문서에서 자세히 다룹니다.
+* 일부 자산에 대한 액세스 권한을 제공하려면: Adobe Creative Cloud과 AEM 폴더 공유를 AEM Assets Brand Portal 또는 자산 공유 외에도 사용할 수 있습니다. 이 통합과 관련된 특정 제한 사항이 있으며 이 문서에서 자세히 다룹니다.
 
 ### 사용 사례 {#use-cases}
 
@@ -217,18 +217,18 @@ DAM 인스턴스에 직접 액세스할 수 없는 외부 에이전시 및 프�
 
 자산 라이프사이클에는 다음 단계가 포함됩니다.
 
-1. 승인된 자산을 크리에이티브 데스크탑에 공유:DAM의 최종 자산은 크리에이티브 사용자(데스크탑에서)가 사용할 수 있습니다
-1. 새 디자인 만들기(크리에이티브 디지털 자산):새 파일은 WIP(Work-in-Progress) 영역에 저장됩니다.
-1. 승인된 자산을 새 디자인에 사용(배치)합니다.크리에이티브 사용자는 Creative Cloud 앱에서 기존의 승인된 자산을 사용하여 새 자산을 생성합니다
-1. WIP 갱신을 자주 저장:크리에이티브 사용자는 빠르게 반복하여 파일을 자주 저장합니다. 이 단계에서 크리에이티브 사용자는 다른 사용자와 공동 작업할 수 있지만 자주 저장된 업데이트는 일반적으로 DAM 사용자에게 관심이 없습니다.
+1. 승인된 자산을 크리에이티브 데스크탑에 공유: DAM의 최종 자산은 크리에이티브 사용자(데스크탑에서)가 사용할 수 있습니다
+1. 새 디자인 만들기(크리에이티브 디지털 자산): 새 파일은 WIP(Work-in-Progress) 영역에 저장됩니다.
+1. 승인된 자산을 새 디자인에 사용(배치)합니다. 크리에이티브 사용자는 Creative Cloud 앱에서 기존의 승인된 자산을 사용하여 새 자산을 생성합니다
+1. WIP 갱신을 자주 저장: 크리에이티브 사용자는 빠르게 반복하여 파일을 자주 저장합니다. 이 단계에서 크리에이티브 사용자는 다른 사용자와 공동 작업할 수 있지만 자주 저장된 업데이트는 일반적으로 DAM 사용자에게 관심이 없습니다.
 1. 자산이 크리에이티브 준비 상태에 도달하고 Creative Ready 폴더에 저장됩니다
-1. 자산 업데이트 :DAM 사용자가 자산 업데이트 또는 새 파일을 사용할 수 있습니다
-1. 자산이 프로덕션에 배치됩니다.DAM 프로세스입니다. DAM 프로세스는 조직에 따라 태깅, 승인 및 액세스 제어 변경을 구성할 수 있습니다. 이 단계에서 자산은 최종적인 것으로 간주되며 DAM을 활용하는 광범위한 팀에서 사용할 수 있습니다. 크리에이티브 사용자가 다른 자산을 만드는 데 사용할 수도 있습니다.
+1. 자산 업데이트 : DAM 사용자가 자산 업데이트 또는 새 파일을 사용할 수 있습니다
+1. 자산이 프로덕션에 배치됩니다. DAM 프로세스입니다. DAM 프로세스는 조직에 따라 태깅, 승인 및 액세스 제어 변경을 구성할 수 있습니다. 이 단계에서 자산은 최종적인 것으로 간주되며 DAM을 활용하는 광범위한 팀에서 사용할 수 있습니다. 크리에이티브 사용자가 다른 자산을 만드는 데 사용할 수도 있습니다.
 
 다음은 이 프로세스를 통해 자산을 관리하는 방법에 대한 몇 가지 일반적인 권장 사항입니다.
 
-* WIP 파일에 Adobe Creative Cloud Assets 동기화된 폴더와 같은 전용 저장소 영역/시스템을 사용합니다.DAM 사용자와 관련이 없는 빈번한 업데이트는 AEM Assets 내에서 처리하지 않고 전용 시스템에서 가장 잘 처리됩니다. WIP 자산은 Adobe Creative Cloud 데스크탑 응용 프로그램을 사용하여 로컬 디스크에 동기화하거나 로컬 저장소에 저장하는 등의 작업을 수행할 수 있습니다.
-* DAM에 업로드되는 최종 자산 및 자산에 대해 별도의 폴더/공유를 사용합니다.명확하게 하자면 최종 자산에는 자체 매핑/공유 폴더(&quot;최종&quot; 위 예제)가 있어야 하며 DAM에 다시 업로드하려는 자산에는 자체(&quot;Creative Ready&quot;)가 있어야 합니다
+* WIP 파일에 Adobe Creative Cloud Assets 동기화된 폴더와 같은 전용 저장소 영역/시스템을 사용합니다. DAM 사용자와 관련이 없는 빈번한 업데이트는 AEM Assets 내에서 처리하지 않고 전용 시스템에서 가장 잘 처리됩니다. WIP 자산은 Adobe Creative Cloud 데스크탑 응용 프로그램을 사용하여 로컬 디스크에 동기화하거나 로컬 저장소에 저장하는 등의 작업을 수행할 수 있습니다.
+* DAM에 업로드되는 최종 자산 및 자산에 대해 별도의 폴더/공유를 사용합니다. 명확하게 하자면 최종 자산에는 자체 매핑/공유 폴더(&quot;최종&quot; 위 예제)가 있어야 하며 DAM에 다시 업로드하려는 자산에는 자체(&quot;Creative Ready&quot;)가 있어야 합니다
 
 #### DAM에서 관리되는 기존 자산 변경 {#changing-existing-assets-managed-in-dam}
 
@@ -251,10 +251,10 @@ And it will be updated for DA2.0 best practices after 6.5 repo is available for 
 -->
 
 * **1:** DAM에서 데스크탑으로 자산을 공유하거나 선택한 애플리케이션(예: Adobe Photoshop 등)에서 데스크탑에서 직접 엽니다. 파일을 잠그려면 체크 아웃이 권장됩니다.
-* **2:** 부 업데이트:파일을 편집하고 변경 사항을 저장합니다.
+* **2:** 부 업데이트: 파일을 편집하고 변경 사항을 저장합니다.
 * 2단계의 대체 흐름
 
-   * **A:** 주요 업데이트:파일에 정교한 변경 세트가 필요한 경우 간헐적으로 저장하고 WIP 폴더/영역에 복사해야 합니다.
+   * **A:** 주요 업데이트: 파일에 정교한 변경 세트가 필요한 경우 간헐적으로 저장하고 WIP 폴더/영역에 복사해야 합니다.
    * **B:** WIP 폴더의 파일에서 작업이 계속됩니다. 저장된 변경 사항이 DAM의 버전과 동기화되지 않습니다
    * **C:** 업데이트가 완료되면 파일이 다시 복사되거나 매핑된 폴더에 저장됩니다
 

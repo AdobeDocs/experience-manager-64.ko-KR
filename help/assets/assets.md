@@ -2,12 +2,12 @@
 title: ' [!DNL Adobe Experience Manager Assets] 소개'
 description: 디지털 자산 관리란 무엇이고, 사용 사례이며,  [!DNL Adobe Experience Manager Asset] 오퍼링을 제공하는지 알아봅니다.
 contentOwner: AG
-feature: 자산 관리
+feature: Asset Management
 role: Leader,Architect,User
 exl-id: 9292871d-3b10-49f8-ac1a-4770b4e44048
-source-git-commit: cd9ffec186c5ab4c5f0e0996043724797e0516d1
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '861'
 ht-degree: 34%
 
 ---
@@ -52,7 +52,7 @@ Assets managed within [!DNL Experience Manager] DAM can then be accessed via the
 
 자산은 디지털 문서, 이미지, 비디오, 오디오 또는 그 일부로, 다양한 표현물과 하위 자산(예: Photoshop 파일의 레이어, PowerPoint 파일의 슬라이드, pdf의 페이지, ZIP에 있는 파일)을 가질 수 있습니다.
 
-근본적으로 자산은 이진, 메타데이터, 표현물, 하위 자산이 합쳐진 것입니다. 자세한 내용은 [DAM 성능 안내서](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=en)를 참조하십시오.
+근본적으로 자산은 이진, 메타데이터, 표현물, 하위 자산이 합쳐진 것입니다. 자세한 내용은 [DAM 성능 안내서](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html)를 참조하십시오.
 
 >[!CAUTION]
 >

@@ -6,11 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: Dynamic-Media
 content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
-feature: 비디오
+feature: Video
 role: User
-source-git-commit: 1d5f9be7aa1e45ebaf689922396832e82c63321f
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '10387'
+source-wordcount: '10384'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,6 @@ ht-degree: 1%
 >* [Dynamic Media 구성 - Scene7 모드](config-dms7.md) 및 [Dynamic Media 문제 해결 - Scene7 모드](troubleshoot-dms7.md)를 참조하십시오.
 
 >
-
 
 
 1. **다음을 수행하여 Dynamic Media** 비디오를 업로드합니다.
@@ -73,7 +72,7 @@ ht-degree: 1%
 
          [비디오 표현물 보기](video-renditions.md)
 
-         [비디오 표현물 관리](managing-assets-touch-ui.md#managing-renditions)
+[비디오 표현물 관리](managing-assets-touch-ui.md#managing-renditions)
 
       * [뷰어 사전 설정 관리](managing-viewer-presets.md)
       * [자산 게시](publishing-dynamicmedia-assets.md)
@@ -85,7 +84,7 @@ ht-degree: 1%
 
       * 제목, 설명 및 태그, 사용자 지정 메타데이터 필드와 같은 비디오의 속성을 편집합니다.
 
-         [비디오 속성 편집](managing-assets-touch-ui.md#editing-properties)
+[비디오 속성 편집](managing-assets-touch-ui.md#editing-properties)
 
       * [디지털 자산에 대한 메타데이터 관리](metadata.md)
       * [메타데이터 스키마](metadata-schemas.md)
@@ -163,7 +162,7 @@ Dynamic Media은 MP4 H.264 비디오용 모바일 비디오 재생을 지원합�
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480). -->
 
-Adobe Dynamic Media 뷰어 참조 가이드의 [HTML5 뷰어 정보](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=en#viewers-for-aem-assets-only)도 참조하십시오.
+Adobe Dynamic Media 뷰어 참조 가이드의 [HTML5 뷰어 정보](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)도 참조하십시오.
 
 ## 우수 사례: HTML5 비디오 뷰어 사용 {#best-practice-using-the-html-video-viewer}
 
@@ -357,13 +356,13 @@ VBR과 CBR을 선택하는 방법은 거의 항상 미디어 파일에 VBR을 �
 | 2000년 | 일반 광대역 데스크탑 연결. 이 연결의 경우 평균 1200-1500Kbps로 800-2000Kbps 범위의 데이터 속도를 타깃팅합니다. |
 | 5000 | 일반적인 고속 광대역 연결 대부분의 소비자는 이 속도로 비디오를 전달할 수 없으므로 이 상위 범위의 인코딩을 사용하지 않는 것이 좋습니다. |
 
-### 해상도 {#resolution}
+### 해결 {#resolution}
 
 **** 해상도는 비디오 파일의 높이와 너비를 픽셀 단위로 설명합니다. 대부분의 소스 비디오는 고해상도(예: 1920 x 1080)로 저장됩니다. 스트리밍을 위해 소스 비디오는 더 작은 해상도(640 x 480 이하)로 압축됩니다.
 
 해상도 및 데이터 전송률은 비디오 품질을 결정하는 두 가지 통합 연결 요소입니다. 동일한 비디오 품질을 유지하려면 비디오 파일의 픽셀 수가 많을수록 해상도가 높을수록 데이터 속도가 빨라야 합니다. 예를 들어, 320 x 240 해상도와 640 x 480 해상도 비디오 파일에서 프레임당 픽셀 수를 고려해 보십시오.
 
-| 해상도 | 프레임당 픽셀 수 |
+| 해결 | 프레임당 픽셀 수 |
 |--- |--- |
 | 320 x 240 | 76,800 |
 | 640 x 480 | 307,200 |
@@ -379,7 +378,7 @@ VBR과 CBR을 선택하는 방법은 거의 항상 미디어 파일에 VBR을 �
 
 마스터 비디오 파일에 대한 비디오 인코딩 사전 설정을 선택(또는 생성)할 때 이 표를 사용하여 올바른 해상도를 지정합니다.
 
-| 해상도 | 높이(픽셀) | 화면 크기 |
+| 해결 | 높이(픽셀) | 화면 크기 |
 |--- |--- |--- |
 | 240p | 240년 | 작은 화면 |
 | 300p | 300 | 일반적으로 모바일 장치용 작은 화면 |

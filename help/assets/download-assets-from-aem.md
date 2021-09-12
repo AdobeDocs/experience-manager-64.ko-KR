@@ -2,12 +2,12 @@
 title: ' [!DNL Adobe Experience Manager]에서 디지털 자산을 다운로드합니다.'
 description: ' [!DNL Adobe Experience Manager] 에서 자산을 다운로드하고 다운로드 기능을 활성화하거나 비활성화하는 방법을 알아봅니다.'
 contentOwner: AG
-feature: 자산 관리,자산 분배
+feature: Asset Management,Asset Distribution
 role: User
 exl-id: bfe4d597-1080-4de5-a100-73a5175863d7
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '807'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 3%
 
    ![Experience Manager 자산에서 자산을 다운로드할 때 사용할 수 있는 옵션](/help/assets/assets/asset_download_dialog.png)
 
-   *그림:다운로드 대화 상자 옵션.*
+   *그림: 다운로드 대화 상자 옵션.*
 
 1. 다운로드 대화 상자에서 원하는 다운로드 옵션을 선택합니다.
 
@@ -54,7 +54,7 @@ ht-degree: 3%
 
 DAM에서 자산을 다운로드할 수 있도록 하려면 Asset Share Commons 또는 기타 포털과 같은 구현을 사용할 때 OSGi 구성을 통해 서블릿을 수동으로 활성화합니다. Adobe은 일상적인 다운로드 요구 사항에 영향을 주지 않고 허용된 다운로드 크기를 가능한 한 낮게 설정할 것을 권장합니다. 높은 값은 성능에 영향을 줄 수 있습니다.
 
-1. 게시 실행 모드(`config.publish`)를 대상으로 하는 이름 지정 규칙이 있는 폴더를 만듭니다.`/apps/<your-app-name>/config.publish`. 실행 모드에 대한 구성 속성을 정의하려면 [실행 모드](/help/sites-deploying/configure-runmodes.md#defining-configuration-properties-for-a-run-mode)를 참조하십시오.
+1. 게시 실행 모드(`config.publish`)를 대상으로 하는 이름 지정 규칙이 있는 폴더를 만듭니다. `/apps/<your-app-name>/config.publish`. 실행 모드에 대한 구성 속성을 정의하려면 [실행 모드](/help/sites-deploying/configure-runmodes.md#defining-configuration-properties-for-a-run-mode)를 참조하십시오.
 1. 구성 폴더에서 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` 유형의 파일을 만듭니다.`nt:file`
 1. `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` 을(를) 다음으로 채웁니다. 다운로드에 대한 최대 크기(바이트)를 `asset.download.prezip.maxcontentsize` 값으로 설정합니다. 아래 샘플은 ZIP 다운로드의 최대 크기를 100kB를 초과하지 않도록 구성합니다.
 
@@ -67,7 +67,7 @@ DAM에서 자산을 다운로드할 수 있도록 하려면 Asset Share Commons 
 
 Dispatcher 구성을 업데이트하여 모든 자산 다운로드 요청을 차단하여 [!DNL Experience Manager] 게시 인스턴스에서 `Asset Download Servlet`을 비활성화할 수 있습니다. OSGi 콘솔을 통해 직접 서블릿을 수동으로 비활성화할 수도 있습니다.
 
-1. 디스패처 구성을 통해 자산 다운로드 요청을 차단하려면 `dispatcher.any` 구성을 편집하고 [필터 섹션](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter)에 규칙을 추가하십시오. `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+1. 디스패처 구성을 통해 자산 다운로드 요청을 차단하려면 `dispatcher.any` 구성을 편집하고 [필터 섹션](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-access-to-content-filter)에 규칙을 추가하십시오. `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 1. 게시 인스턴스에서 OSGi 구성 요소를 비활성화하려면 `http://[aem_server]:[port]/system/console/components`에서 OSGi 콘솔에 액세스하십시오. `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet`을(를) 찾고 **[!UICONTROL Disable]**&#x200B;를 클릭합니다.
 
