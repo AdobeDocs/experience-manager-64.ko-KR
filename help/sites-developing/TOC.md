@@ -6,12 +6,12 @@ audience: end-user
 user-guide-title: AEM 6.4 개발 사용 안내서
 breadcrumb-title: Developing 안내서
 user-guide-description: 이 안내서에서는 AEM 인스턴스를 빌드하는 방법을 다룹니다.
-feature: 개발
+feature: Developing
 role: Developer
-source-git-commit: 1ecb63f849f9f6167dddd4053267ae89577659fc
+source-git-commit: f6024ad5d213af0e726d95a5ab83ac3a271e8c18
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 91%
+ht-degree: 90%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 91%
    + [모든 기능을 갖춘 웹 사이트 만들기(클래식 UI)](website.md)
    + [디자인과 디자이너(클래식 UI)](designer.md)
 + 플랫폼{#platform}
-   + [Sling 커닝 페이퍼](sling-cheatsheet.md)
+   + [슬링 치트시트](sling-cheatsheet.md)
    + [Sling 어댑터 사용](sling-adapters.md)
    + [태그 라이브러리](taglib.md)
    + 템플릿{#templates}
@@ -100,7 +100,7 @@ ht-degree: 91%
       + [xtype 사용(클래식 UI)](xtypes.md)
       + [양식 개발(클래식 UI)](developing-forms.md)
 + 헤드리스 환경 관리{#headless}
-   + [AEM을 사용한 헤드리스 및 하이브리드](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+   + [AEM을 사용한 헤드리스 및 하이브리드](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
    + SPA(Single Page Applications){#spas}
       + [SPA 소개 및 연습](spa-walkthrough.md)
