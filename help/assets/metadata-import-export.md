@@ -2,12 +2,12 @@
 title: 벌크 메타데이터 가져오기 및 내보내기
 description: 이 문서에서는 메타데이터를 일괄적으로 가져오고 내보내는 방법을 설명합니다.
 contentOwner: AG
-feature: 메타데이터
+feature: Metadata
 role: User,Admin
 exl-id: 956cdec4-2ba8-43c9-9122-564d764f4681
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2b3a6972d703314d56d3dc711fb6a514cb1942d5
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '640'
 ht-degree: 3%
 
 ---
@@ -36,7 +36,7 @@ AEM Assets을 사용하면 CSV 파일을 사용하여 자산 메타데이터를 
    | [!UICONTROL 배치 크기] | 메타데이터를 가져올 일괄 처리의 자산 수입니다. 기본값은 50입니다. 최대값은 100입니다. |
    | [!UICONTROL 필드 분리 기호] | 기본값은 `,` - 쉼표입니다. 다른 문자를 지정할 수 있습니다. |
    | [!UICONTROL 다중 값 구분 기호] | 메타데이터 값에 대한 구분자입니다. 기본값은 `|` - 파이프입니다. |
-   | [!UICONTROL 워크플로우 실행] | 기본적으로 False입니다. true로 설정되고 기본 시작 관리자 설정이 `DAM Metadata WriteBack Workflow`(이진 XMP 데이터에 메타데이터를 쓰는 경우)에 적용됩니다. Launch 워크플로우를 활성화하면 시스템에 성능에 영향을 줍니다. |
+   | [!UICONTROL 워크플로우 실행] | 기본적으로 False입니다. true로 설정되고 기본 설정이 `DAM Metadata WriteBack Workflow`(이진 XMP 데이터에 메타데이터를 쓰는 경우)에 적용됩니다. 워크플로우를 활성화하면 시스템에 성능에 영향을 줍니다. |
    | [!UICONTROL 자산 경로 열 이름] | 자산이 있는 CSV 파일의 열 이름을 정의합니다. |
 
 1. 도구 모음에서 **[!UICONTROL 가져오기]** 를 탭/클릭합니다. 메타데이터를 가져오면 알림 받은 편지함으로 알림이 전송됩니다. 자산 속성 페이지로 이동하고 메타데이터 값을 자산에 대해 올바르게 가져오는지 확인합니다.

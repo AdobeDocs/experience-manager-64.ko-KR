@@ -2,12 +2,12 @@
 title: DTM을 통해 자산 통찰력 활성화
 description: DTM( Adobe Dynamic Tag Management )을 사용하여 자산 통찰력을 활성화하는 방법을 알아봅니다.
 contentOwner: AG
-feature: 자산 통찰력,자산 보고서
+feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 2b3a6972d703314d56d3dc711fb6a514cb1942d5
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '679'
 ht-degree: 1%
 
 ---
@@ -18,11 +18,11 @@ Adobe Dynamic Tag Management는 디지털 마케팅 도구를 활성화하는 �
 
 >[!CAUTION]
 >
->Adobe DTM은 Adobe Experience Platform Launch을 위해 더 이상 사용되지 않으며, 곧 [의 수명이 종료됩니다](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe은 [자산 통찰력](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)에 Launch를 사용할 것을 권장합니다.
+>Adobe DTM은 [!DNL Adobe Experience Platform]이 더 이상 사용되지 않으며, 곧 [end of life](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f)에 도달합니다. Adobe은 [자산 통찰력](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)에 [!DNL Adobe Experience Platform] 을 사용할 것을 권장합니다.
 
 DTM을 통해 자산 통찰력을 활성화하려면 다음 단계를 수행하십시오.
 
-1. AEM 로고를 탭/클릭하고 **[!UICONTROL 도구 > 자산 > 통찰력 구성]**&#x200B;으로 이동합니다.
+1. AEM 로고를 탭/클릭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 통찰력 구성]**&#x200B;으로 이동합니다.
 1. [DTM Cloud Service을 사용하여 AEM 인스턴스 구성](../sites-administering/dtm.md)
 
    API 토큰은 [https://dtm.adobe.com](https://dtm.adobe.com/)에 로그인하고 프로필 아이콘에서 **[!UICONTROL 계정 설정]**&#x200B;을 방문한 후에 사용할 수 있어야 합니다. Assets Insights와 AEM Sites의 통합이 아직 작동 중이기 때문에 이 단계는 자산 통찰력 측면에서 필요하지 않습니다.
