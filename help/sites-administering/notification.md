@@ -1,8 +1,8 @@
 ---
 title: 전자 메일 알림 구성
-seo-title: 전자 메일 알림 구성
+seo-title: Configuring Email Notification
 description: AEM에서 이메일 알림을 구성하는 방법을 알아봅니다.
-seo-description: AEM에서 이메일 알림을 구성하는 방법을 알아봅니다.
+seo-description: Learn how to configure Email Notification in AEM.
 uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: ea12035c-09b6-4197-ab23-c27fe71e7432
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3a206c2fa8c18876b6e1481e2feb86857b5219c4
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1134'
 ht-degree: 1%
 
 ---
@@ -35,11 +35,11 @@ AEM에서 다음과 같은 사용자에게 이메일 알림을 보냅니다.
 
 >[!NOTE]
 >
->AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다.자세한 내용 및 권장 방법은 [OSGi](/help/sites-deploying/configuring-osgi.md) 구성 을 참조하십시오.
+>AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다. 자세한 내용 및 권장 방법은 [OSGi](/help/sites-deploying/configuring-osgi.md) 구성 을 참조하십시오.
 
-## 메일 서비스 {#configuring-the-mail-service} 구성
+## 메일 서비스 구성 {#configuring-the-mail-service}
 
-AEM에서 이메일을 보낼 수 있으려면 **일 CQ 메일 서비스**&#x200B;를 올바르게 구성해야 합니다. 웹 콘솔에서 구성을 볼 수 있습니다. AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다.자세한 내용 및 권장 방법은 [OSGi](/help/sites-deploying/configuring-osgi.md) 구성 을 참조하십시오.
+AEM에서 이메일을 보낼 수 있으려면 **일 CQ 메일 서비스**&#x200B;를 올바르게 구성해야 합니다. 웹 콘솔에서 구성을 볼 수 있습니다. AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다. 자세한 내용 및 권장 방법은 [OSGi](/help/sites-deploying/configuring-osgi.md) 구성 을 참조하십시오.
 
 다음 제한 사항이 적용됩니다.
 
@@ -56,7 +56,7 @@ AEM에서 이메일을 보낼 수 있으려면 **일 CQ 메일 서비스**&#x200
 
 ![chlimage_1-276](assets/chlimage_1-276.png)
 
-## 전자 메일 알림 채널 구성 {#configuring-the-email-notification-channel}
+## 이메일 알림 채널 구성 {#configuring-the-email-notification-channel}
 
 페이지 또는 포럼 이벤트 알림을 구독하면 보낸 메일 주소가 기본적으로 `no-reply@acme.com`(으)로 설정됩니다. 웹 콘솔에서 **알림 이메일 채널** 서비스를 구성하여 이 값을 변경할 수 있습니다.
 
@@ -82,7 +82,7 @@ AEM에서 이메일을 보낼 수 있으려면 **일 CQ 메일 서비스**&#x200
 
 1. 파일을 저장합니다.
 
-## 워크플로우 전자 메일 알림 서비스 구성 {#configuring-the-workflow-email-notification-service}
+## 워크플로우 이메일 알림 서비스 구성 {#configuring-the-workflow-email-notification-service}
 
 워크플로우 이메일 알림을 받으면 보낸 사람 이메일 주소와 호스트 URL 접두사가 모두 기본값으로 설정됩니다. 웹 콘솔에서 **일 CQ 워크플로우 이메일 알림 서비스**&#x200B;를 구성하여 이러한 값을 변경할 수 있습니다. 이 경우 리포지토리에서 변경 사항을 유지하는 것이 좋습니다.
 
@@ -94,7 +94,7 @@ AEM에서 이메일을 보낼 수 있으려면 **일 CQ 메일 서비스**&#x200
 
 페이지 알림용 이메일 템플릿은 아래에 있습니다.
 
-`/etc/notification/email/default/com.day.cq.wcm.core.page`
+`/libs/settings/notification-templates/com.day.cq.wcm.core.page`
 
 기본 영어 템플릿( `en.txt`)은 다음과 같이 정의됩니다.
 
@@ -121,7 +121,7 @@ This is an automatically generated message. Please do not reply.
 
 1. CRXDE에서 파일을 엽니다.
 
-   `/etc/notification/email/default/com.day.cq.wcm.core.page/en.txt`
+   `/libs/settings/notification-templates/com.day.cq.wcm.core.page/en.txt`
 
 1. 필요에 따라 파일을 수정합니다.
 1. 변경 사항을 저장합니다.
@@ -150,7 +150,7 @@ This is an automatically generated message. Please do not reply.
 
    PageModified => /content/geometrixx/en/products
 
-### 포럼 알림용 전자 메일 템플릿 {#email-templates-for-forum-notification}
+### 포럼 알림용 이메일 템플릿 {#email-templates-for-forum-notification}
 
 포럼 알림용 이메일 템플릿은 다음 위치에 있습니다.
 
@@ -173,7 +173,7 @@ footer=\n \
 This is an automatically generated message. Please do not reply.
 ```
 
-#### 포럼 알림에 대한 이메일 템플릿 사용자 정의 {#customizing-email-templates-for-forum-notification}
+#### 포럼 알림용 이메일 템플릿 사용자 정의 {#customizing-email-templates-for-forum-notification}
 
 포럼 알림에 대한 영어 이메일 템플릿을 사용자 지정하려면 다음을 수행하십시오.
 
@@ -205,7 +205,7 @@ This is an automatically generated message. Please do not reply.
 
 워크플로우 알림에 대한 이메일 템플릿(영어)은 다음 위치에 있습니다.
 
-`/etc/workflow/notification/email/default/en.txt`
+`/libs/settings/workflow/notification/email/default/en.txt`
 
 다음과 같이 정의됩니다.
 
@@ -234,7 +234,7 @@ This is an automatically generated message. Please do not reply.
 
 1. CRXDE에서 파일을 엽니다.
 
-   `/etc/workflow/notification/email/default/en.txt`
+   `/libs/settings/workflow/notification/email/default/en.txt`
 
 1. 필요에 따라 파일을 수정합니다.
 1. 변경 사항을 저장합니다.
@@ -254,7 +254,7 @@ subject=<text_1>
 >
 >템플릿 형식에 대한 자세한 내용은 Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-) 메서드의 [javadocs에서 찾을 수 있습니다.
 
-`${payload.path.open}` 메서드는 작업 항목의 페이로드에 대한 경로를 표시합니다. 예를 들어 Sites의 페이지에 대해 `payload.path.open`은 `/bin/wcmcommand?cmd=open&path=…`과 비슷합니다.;서버 이름이 없으므로 템플릿에서 `${host.prefix}` 접두사가 붙습니다.
+`${payload.path.open}` 메서드는 작업 항목의 페이로드에 대한 경로를 표시합니다. 예를 들어 Sites의 페이지에 대해 `payload.path.open`은 `/bin/wcmcommand?cmd=open&path=…`과 비슷합니다.; 서버 이름이 없으므로 템플릿에서 `${host.prefix}` 접두사가 붙습니다.
 
 이메일 템플릿 내에서 다음 변수를 사용할 수 있습니다.
 
@@ -284,17 +284,17 @@ subject=<text_1>
 
 * `${payload.type}`, 페이로드 유형
 * `${payload.path}`, 페이로드 경로
-* `${host.prefix}`, 호스트 접두사, 예:http://localhost:4502
+* `${host.prefix}`, 호스트 접두사, 예: http://localhost:4502
 
-### 새 언어 {#adding-an-email-template-for-a-new-language}에 대한 이메일 템플릿 추가
+### 새 언어용 이메일 템플릿 추가 {#adding-an-email-template-for-a-new-language}
 
 새 언어의 템플릿을 추가하려면 다음을 수행합니다.
 
 1. CRXDE에서 아래 `<language-code>.txt` 파일을 추가합니다.
 
-   * `/etc/notification/email/default/com.day.cq.wcm.core.page` :페이지 알림용
-   * `/etc/notification/email/default/com.day.cq.collab.forum` :포럼 알림용
-   * `/etc/workflow/notification/email/default` :워크플로우 알림용
+   * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` : 페이지 알림용
+   * `/etc/notification/email/default/com.day.cq.collab.forum` : 포럼 알림용
+   * `/libs/settings/workflow/notification/email/default` : 워크플로우 알림용
 
 1. 언어에 맞게 파일을 조정합니다.
 1. 변경 사항을 저장합니다.
