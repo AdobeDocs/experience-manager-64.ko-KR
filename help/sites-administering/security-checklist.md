@@ -1,9 +1,9 @@
 ---
 title: Security 검사 목록
-seo-title: Security 검사 목록
+seo-title: Security Checklist
 description: AEM을 구성 및 배포할 때 발생하는 다양한 보안 고려 사항에 대해 알아봅니다.
-feature: 보안
-seo-description: AEM을 구성 및 배포할 때 발생하는 다양한 보안 고려 사항에 대해 알아봅니다.
+feature: Security
+seo-description: Learn about the various security considerations when configuring and deploying AEM.
 uuid: 8ecd0c35-249e-4f72-b7e9-97e72698b5c1
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,10 +11,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: a91e1264-8441-42f8-aa83-1d9c983d214a
 exl-id: 0be6d031-f8b8-458b-a910-ff05d2b1a155
-source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
+source-git-commit: b921cf3a1739b031eea5c319953d20a024515544
 workflow-type: tm+mt
-source-wordcount: '2844'
-ht-degree: 1%
+source-wordcount: '2830'
+ht-degree: 4%
 
 ---
 
@@ -30,13 +30,13 @@ ht-degree: 1%
 >
 >개발 단계에서 적용할 수 있는 추가 [보안 고려 사항](/help/sites-developing/dev-guidelines-bestpractices.md#security-considerations)이 있습니다.
 
-## 기본 보안 측정값 {#main-security-measures}
+## 주요 보안 조치 {#main-security-measures}
 
 ### 프로덕션 준비 모드에서 AEM 실행 {#run-aem-in-production-ready-mode}
 
 자세한 내용은 [프로덕션 준비 모드에서 AEM 실행](/help/sites-administering/production-ready.md)을 참조하십시오.
 
-### 전송 계층 보안에 HTTPS 사용 {#enable-https-for-transport-layer-security}
+### 전송 계층 보안을 위해 HTTPS 활성화 {#enable-https-for-transport-layer-security}
 
 보안 인스턴스가 있으려면 작성자 및 게시 인스턴스 모두에서 HTTPS 전송 계층을 활성화해야 합니다.
 
@@ -107,7 +107,7 @@ Adobe은 정보 공개를 방지하기 위해 특히 404 및 500 HTTP 응답 코
 >
 >자세한 내용은 [사용자 지정 스크립트나 오류 핸들러](https://helpx.adobe.com/experience-manager/kb/CustomErrorHandling.html) 기술 자료 문서를 작성하는 방법 을 참조하십시오.
 
-### Dispatcher 보안 검사 목록 {#complete-dispatcher-security-checklist} 완료
+### Dispatcher 보안 검사 목록 완료 {#complete-dispatcher-security-checklist}
 
 AEM Dispatcher는 인프라의 중요한 부분입니다. Adobe은 [dispatcher 보안 검사 목록](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/security-checklist.html)을 완료하는 것이 좋습니다.
 
@@ -129,13 +129,13 @@ AEM의 표준 설치에서는 `admin`을 기본 [복제 에이전트](/help/site
 
 * **복제 사용자** 또는 **에이전트 사용자 ID**&#x200B;도 관리 사용자가 아니어야 하며, 복제되어야 하는 컨텐츠만 볼 수 있는 사용자여야 합니다. 복제 사용자는 게시자에게 전송되기 전에 작성자 시스템에서 복제될 컨텐츠를 수집하는 데 사용됩니다.
 
-### Operations Dashboard Security 상태 검사 {#check-the-operations-dashboard-security-health-checks} 확인
+### 작업 대시보드 보안 상태 확인을 선택합니다. {#check-the-operations-dashboard-security-health-checks}
 
 AEM 6에서는 시스템 운영자가 문제 해결 및 인스턴스의 상태를 모니터링하는 데 도움이 되는 새로운 작업 대시보드를 도입합니다.
 
 대시보드에는 보안 상태 점검 컬렉션도 포함되어 있습니다. 프로덕션 인스턴스로 전환하기 전에 모든 보안 상태 확인의 상태를 확인하는 것이 좋습니다. 자세한 내용은 [작업 대시보드 설명서](/help/sites-administering/operations-dashboard.md)를 참조하십시오.
 
-### 예제 컨텐츠가 {#check-if-example-content-is-present} 있는지 확인
+### 예제 컨텐츠가 있는지 확인 {#check-if-example-content-is-present}
 
 모든 예제 컨텐츠 및 사용자(예: Geometrixx 프로젝트 및 해당 구성 요소)는 공개적으로 액세스할 수 있도록 하기 전에 프로덕션 시스템에서 완전히 제거하고 삭제해야 합니다.
 
@@ -143,7 +143,7 @@ AEM 6에서는 시스템 운영자가 문제 해결 및 인스턴스의 상태�
 >
 >이 인스턴스가 [프로덕션 준비 모드](/help/sites-administering/production-ready.md)에서 실행 중인 경우 샘플 We.Retail 애플리케이션이 제거됩니다. 이유가 없는 경우 패키지 관리자로 이동한 다음 모든 We.Retail 패키지를 검색하여 제거하여 샘플 컨텐츠를 제거할 수 있습니다. 자세한 내용은 [패키지 작업 방법](package-manager.md)을 참조하십시오.
 
-### CRX 개발 번들이 {#check-if-the-crx-development-bundles-are-present} 있는지 확인합니다.
+### CRX 개발 번들이 있는지 확인합니다 {#check-if-the-crx-development-bundles-are-present}
 
 이러한 개발 OSGi 번들을 액세스 가능하게 하기 전에 작성자와 게시 생산적인 시스템 모두에서 제거해야 합니다.
 
@@ -151,13 +151,13 @@ AEM 6에서는 시스템 운영자가 문제 해결 및 인스턴스의 상태�
 * Adobe Granite CRX Explorer(com.adobe.granite.crx-explorer)
 * Adobe Granite CRXDE Lite(com.adobe.granite.crxde-lite)
 
-### Sling 개발 번들이 {#check-if-the-sling-development-bundle-is-present} 있는지 확인합니다.
+### Sling 개발 번들이 있는지 확인합니다 {#check-if-the-sling-development-bundle-is-present}
 
 [AEM Developer Tools for Eclipse](/help/sites-developing/aem-eclipse.md)에서는 Apache Sling Tools 지원 설치(org.apache.sling.tooling.support.install)를 배포합니다.
 
 이 OSGi 번들을 액세스 가능하게 하기 전에 작성자 및 게시 생산적인 시스템 모두에서 제거해야 합니다.
 
-### Protect - 사이트 간 요청 위조 방지 {#protect-against-cross-site-request-forgery}
+### Protect, 사이트 간 요청 위조 방지 {#protect-against-cross-site-request-forgery}
 
 #### CSRF 보호 프레임워크 {#the-csrf-protection-framework}
 
@@ -242,13 +242,13 @@ CRX WebDAV 및 Apache Sling에서 CSRF(교차 사이트 요청 위조) 관련 �
 
 자세한 내용은 [OSGi 구성 설정](/help/sites-deploying/osgi-configuration-settings.md)을 참조하십시오.
 
-AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다.자세한 내용 및 권장 방법은 [OSGi](/help/sites-deploying/configuring-osgi.md) 구성 을 참조하십시오.
+AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다. 자세한 내용 및 권장 방법은 [OSGi](/help/sites-deploying/configuring-osgi.md) 구성 을 참조하십시오.
 
 ## 추가 읽기 {#further-readings}
 
-### 서비스 거부(DoS) 공격 완화 {#mitigate-denial-of-service-dos-attacks}
+### DoS(서비스 거부) 공격 완화 {#mitigate-denial-of-service-dos-attacks}
 
-서비스 거부(DoS) 공격은 컴퓨터 리소스를 의도한 사용자가 사용할 수 없게 하려고 시도하는 것입니다. 이 작업은 종종 리소스를 오버로드하여 수행됩니다.예:
+서비스 거부(DoS) 공격은 의도한 사용자가 컴퓨터 리소스를 사용할 수 없게 하려고 시도하는 것입니다. 이 작업은 종종 리소스를 오버로드하여 수행됩니다. 예:
 
 * 외부 소스의 요청이 쇄도하고
 * 추가 정보 요청이 있으면 시스템이 성공적으로 전달할 수 있습니다.
@@ -263,7 +263,7 @@ AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설
    * `.../en.SelectorDosAttack.html`
    * `.../en.html/SuffixDosAttack`
 
-   유효한 모든 변형(예: `200` 응답을 반환하고 캐시되도록 구성된)은 Dispatcher에 의해 캐시되며, 결과적으로 전체 파일 시스템이 되고 추가 요청에 대한 서비스가 없습니다.
+   유효한 모든 변형(예: `200` 응답을 반환하고 캐시되도록 구성된)은 Dispatcher에 의해 캐시되므로 결국 전체 파일 시스템이 되고 추가 요청에 대한 서비스가 없습니다.
 
 이러한 공격을 방지하기 위한 구성 요소는 다양하며, 여기서는 AEM과 직접적으로 관련된 사항만 설명합니다.
 
@@ -282,7 +282,7 @@ Sling은 *컨텐츠 중심의*&#x200B;입니다. 즉, 각(HTTP) 요청이 JCR �
 
 DoS 오용을 방지하려면 다음을 수행할 수 있습니다.
 
-1. 애플리케이션 수준에서 컨트롤 통합가능한 변형 수로 인해 기본 구성이 불가능합니다.
+1. 애플리케이션 수준에서 컨트롤 통합 가능한 변형 수로 인해 기본 구성이 불가능합니다.
 
    애플리케이션에서 다음을 수행해야 합니다.
 
@@ -301,7 +301,7 @@ DoS 오용을 방지하려면 다음을 수행할 수 있습니다.
 
       **JSON 최대 결과** (  `json.maximumresults`)
 
-      [Apache Sling GET 서블릿](/help/sites-deploying/osgi-configuration-settings.md)에 대한 구성에서 다음을 수행합니다. 이 제한을 초과하면 렌더링이 축소됩니다. AEM 내의 Sling에 대한 기본값은 `200`입니다.
+      [Apache Sling GET 서블릿](/help/sites-deploying/osgi-configuration-settings.md)에 대한 구성에서 다음을 수행합니다. 이 제한을 초과하면 렌더링이 축소됩니다. AEM 내의 Sling에 대한 기본값은 `1000`입니다.
 
    * 예방 조치로 다른 기본 렌더러(HTML, 일반 텍스트, XML)를 비활성화합니다. 다시 [Apache Sling GET 서블릿](/help/sites-deploying/osgi-configuration-settings.md)을 구성하여
    >[!CAUTION]
@@ -337,7 +337,7 @@ AEM의 기본 자산 다운로드 서블릿을 사용하면 인증된 사용자�
 
 설치 프로그램에서 자산 다운로드 서버를 활성화해야 하는 경우 자세한 내용은 [이 문서](/help/assets/download-assets-from-aem.md#disable-asset-download-servlet)를 참조하십시오.
 
-### WebDAV {#disable-webdav} 사용 안 함
+### WebDAV 사용 안 함 {#disable-webdav}
 
 작성 환경과 게시 환경 모두에서 WebDAV를 사용하지 않도록 설정해야 합니다. 이 작업은 적절한 OSGi 번들을 중지하여 수행할 수 있습니다.
 
@@ -363,7 +363,7 @@ AEM의 기본 자산 다운로드 서블릿을 사용하면 인증된 사용자�
    >
    >AEM을 다시 시작할 필요가 없습니다.
 
-### 사용자 홈 경로 {#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path}에서 개인 식별 정보를 공개하지 않는지 확인합니다.
+### 사용자 홈 경로에서 개인 식별 정보를 공개하지 않는지 확인합니다. {#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path}
 
 리포지토리 사용자 홈 경로에 개인 독립적인 정보를 노출하지 않도록 함으로써 사용자를 보호하는 것이 중요합니다.
 
@@ -385,11 +385,11 @@ AEM 6.1 이후, 사용자(인증 가능)라고도 하는 ID 노드 이름이 저
 >
 >자세한 내용은 [인가 가능한 노드 이름 생성](https://jackrabbit.apache.org/oak/docs/security/user/authorizablenodename.html)의 Oak 설명서를 참조하십시오.
 
-### 클릭 추적 방지 {#prevent-clickjacking}
+### 클릭재킹 방지 {#prevent-clickjacking}
 
-클릭 추적을 방지하려면 `X-FRAME-OPTIONS` HTTP 헤더를 `SAMEORIGIN` 로 제공하도록 웹 서버를 구성하는 것이 좋습니다.
+클릭재킹을 방지하려면 `SAMEORIGIN`으로 설정된 `X-FRAME-OPTIONS` HTTP 헤더를 제공하도록 웹 서버를 구성하는 것이 좋습니다.
 
-클릭 추적에 대한 자세한 내용은 OWASP 사이트](https://www.owasp.org/index.php/Clickjacking)를 참조하십시오.[
+[클릭재킹에 대한 자세한 내용은 OWASP 사이트를 참조하십시오](https://www.owasp.org/index.php/Clickjacking).
 
 ### 필요한 경우 암호화 키를 올바르게 복제해야 합니다. {#make-sure-you-properly-replicate-encryption-keys-when-needed}
 
@@ -399,7 +399,7 @@ AEM 6.1 이후, 사용자(인증 가능)라고도 하는 ID 노드 이름이 저
 
 자세한 내용은 아래를 참조하십시오.
 
-#### AEM 6.3에 대한 키 복제 {#replicating-keys-for-aem}
+#### AEM 6.3용 키 복제 {#replicating-keys-for-aem}
 
 반면 이전 버전에서는 복제 키가 저장소에 저장되었으며 AEM 6.3부터 파일 시스템에 저장됩니다.
 
@@ -444,9 +444,9 @@ AEM 6.2 및 이전 버전에서 키는 `/etc/key` 노드 아래의 저장소에 
 1. **복제** 탭으로 이동합니다.
 1. **복제** 단추를 누릅니다.
 
-### Penetration Test {#perform-a-penetration-test} 수행
+### 침투 테스트 수행 {#perform-a-penetration-test}
 
-Adobe은 프로덕션에 앞서 AEM 인프라에 대한 침투 테스트를 수행할 것을 강력히 권장합니다.
+Adobe는 프로덕션을 시작하기 전에 AEM 인프라에 대한 침투 테스트를 수행할 것을 강력히 권장합니다.
 
 ### 개발 우수 사례 {#development-best-practices}
 
