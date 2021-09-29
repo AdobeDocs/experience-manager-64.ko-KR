@@ -1,28 +1,28 @@
 ---
 title: 자산 검색 확장
-description: AEM Assets의 검색 기능을 문자열로 기본 제공 검색 범위를 확장하여 자산을 검색합니다.
+description: ' [!DNL Experience Manager] Assets의 검색 기능을 기본 제공 검색에서 문자열 방식으로 자산을 검색할 수 있도록 확장합니다.'
 contentOwner: AG
-feature: 검색
+feature: Search
 role: Developer
 exl-id: d68c735f-2699-4923-a7e7-4d1356eae335
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '820'
 ht-degree: 8%
 
 ---
 
 # 자산 검색 확장 {#extending-assets-search}
 
-AEM(Adobe Experience Manager) 자산 검색 기능을 확장할 수 있습니다. 기본적으로 AEM Assets은 문자열로 자산을 검색합니다.
+Adobe Experience Manager Assets 검색 기능을 확장할 수 있습니다. 곧바로 사용할 수 있는 [!DNL Experience Manager] 자산은 문자열로 자산을 검색합니다.
 
-검색은 QueryBuilder 인터페이스를 통해 수행되므로 몇 가지 조건자로 검색을 사용자 지정할 수 있습니다. 다음 디렉토리에 기본 설명 세트를 오버레이할 수 있습니다.`/apps/dam/content/search/searchpanel/facets`
+검색은 QueryBuilder 인터페이스를 통해 수행되므로 몇 가지 조건자로 검색을 사용자 지정할 수 있습니다. 다음 디렉토리에 기본 설명 세트를 오버레이할 수 있습니다. `/apps/dam/content/search/searchpanel/facets`
 
-AEM Assets 관리 패널에 탭을 더 추가할 수도 있습니다.
+[!DNL Experience Manager] Assets 관리 패널에 탭을 더 추가할 수도 있습니다.
 
 >[!CAUTION]
 >
->AEM 6.4부터 클래식 UI는 더 이상 사용되지 않습니다. 자세한 내용은 [사용되지 않거나 제거된 기능](../release-notes/deprecated-removed-features.md)을 참조하십시오. 터치 지원 UI를 사용하는 것이 좋습니다. 사용자 정의에 대해서는 [검색 패싯](search-facets.md)을 참조하십시오.
+>[!DNL Experience Manager] 6.4부터는 클래식 UI가 더 이상 사용되지 않습니다. 자세한 내용은 [사용되지 않거나 제거된 기능](../release-notes/deprecated-removed-features.md)을 참조하십시오. 터치 지원 UI를 사용하는 것이 좋습니다. 사용자 정의에 대해서는 [검색 패싯](search-facets.md)을 참조하십시오.
 
 ## 오버레이 {#overlaying}
 
@@ -34,10 +34,9 @@ AEM Assets 관리 패널에 탭을 더 추가할 수도 있습니다.
 >
 >기본적으로 / `apps` 아래의 디렉토리 구조가 없으므로 만들어야 합니다. 노드 유형이 / `libs` 아래의 유형과 일치하는지 확인합니다.
 
+## 탭 추가 {#adding-tabs}
 
-## 탭 {#adding-tabs} 추가
-
-AEM Assets 관리에서 구성하여 검색 탭을 추가할 수 있습니다. 추가 탭을 만들려면 다음을 수행하십시오.
+[!DNL Experience Manager] 자산 관리에서 구성하여 검색 탭을 추가할 수 있습니다. 추가 탭을 만들려면 다음을 수행하십시오.
 
 1. 폴더 구조 `/apps/wcm/core/content/damadmin/tabs,`가 아직 없는 경우 만들고 `/libs/wcm/core/content/damadmin`에서 `tabs` 노드를 복사하여 붙여넣습니다.
 1. 원하는 대로 두 번째 탭을 만들고 구성합니다.
@@ -48,15 +47,15 @@ AEM Assets 관리에서 구성하여 검색 탭을 추가할 수 있습니다. �
 
 ## 사용자 지정 설명 만들기 {#creating-custom-predicates}
 
-AEM Assets에는 자산 공유 페이지를 사용자 지정하는 데 사용할 수 있는 사전 정의된 설명 세트가 포함되어 있습니다. 이러한 방식으로 자산 공유 사용자 지정은 [자산 공유 페이지 만들기 및 구성](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)에서 다룹니다.
+[!DNL Experience Manager] 자산에는 자산 공유 페이지를 사용자 지정하는 데 사용할 수 있는 사전 정의된 설명 세트가 포함되어 있습니다. 이러한 방식으로 자산 공유 사용자 지정은 [자산 공유 페이지 만들기 및 구성](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)에서 다룹니다.
 
-AEM 개발자는 기존 설명을 사용하는 것 외에도 [Query Builder API](/help/sites-developing/querybuilder-api.md)를 사용하여 자체 설명을 만들 수도 있습니다.
+기존 설명을 사용하는 것 외에도 [!DNL Experience Manager] 개발자는 [Query Builder API](/help/sites-developing/querybuilder-api.md)를 사용하여 자체 설명을 만들 수도 있습니다.
 
 사용자 지정 설명을 만들려면 [위젯 프레임워크](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)에 대한 기본적인 지식이 필요합니다.
 
 가장 좋은 방법은 기존 설명을 복사하고 조정하는 것입니다. 샘플 조건자는 `/libs/cq/search/components/predicates`에 있습니다.
 
-### 예:단순 속성 설명 {#example-build-a-simple-property-predicate} 작성
+### 예: 단순 속성 설명 작성 {#example-build-a-simple-property-predicate}
 
 속성 설명을 빌드하려면 다음을 수행하십시오.
 
@@ -152,7 +151,7 @@ AEM 개발자는 기존 설명을 사용하는 것 외에도 [Query Builder API]
    >
    >검색할 때 올바른 대/소문자를 포함하여 정확히 단어를 입력해야 합니다.
 
-### 예:단순 그룹 설명 {#example-build-a-simple-group-predicate} 작성
+### 예: 단순 그룹 설명 작성 {#example-build-a-simple-group-predicate}
 
 그룹 설명을 작성하려면 다음을 수행하십시오.
 
@@ -262,7 +261,7 @@ AEM 개발자는 기존 설명을 사용하는 것 외에도 [Query Builder API]
 
 | 속성 | 유형 | 설명 |
 |---|---|---|
-| predicateName | 문자열 | 조건자의 이름입니다. 기본값은 입니다.`fulltext` |
+| predicateName | String | 조건자의 이름입니다. 기본값은 입니다.`fulltext` |
 | searchCallback | 함수 | 이벤트 `keyup`에서 검색을 트리거하기 위한 콜백입니다. 기본값은 입니다.`CQ.wcm.SiteAdmin.doSearch` |
 
 ### PropertyPredicate {#propertypredicate}
@@ -304,6 +303,6 @@ AEM 개발자는 기존 설명을 사용하는 것 외에도 [Query Builder API]
 
 ## 검색 결과 사용자 지정 {#customizing-search-results}
 
-자산 공유 페이지의 검색 결과 프레젠테이션은 선택한 렌즈가 제어합니다. AEM Assets에는 자산 공유 페이지를 사용자 지정하는 데 사용할 수 있는 사전 정의된 렌즈 세트가 포함되어 있습니다. 이러한 방식으로 자산 공유 사용자 지정은 [자산 공유 페이지 만들기 및 구성](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)에서 다룹니다.
+자산 공유 페이지의 검색 결과 프레젠테이션은 선택한 렌즈가 제어합니다. [!DNL Experience Manager] 자산에는 자산 공유 페이지를 사용자 지정하는 데 사용할 수 있는 사전 정의된 렌즈 세트가 포함되어 있습니다. 이러한 방식으로 자산 공유 사용자 지정은 [자산 공유 페이지 만들기 및 구성](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)에서 다룹니다.
 
-AEM 개발자들도 기존 렌즈를 사용할 수 있을 뿐 아니라 자체 렌즈를 만들 수도 있다.
+기존 렌즈를 사용하는 것 외에도 [!DNL Experience Manager] 개발자도 자신만의 렌즈를 만들 수 있습니다.

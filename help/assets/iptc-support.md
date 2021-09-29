@@ -1,22 +1,22 @@
 ---
 title: IPTC 메타데이터 지원
-description: Adobe Experience Manager(AEM) Assets가 Adobe Bridge 및 기타 Creative 앱을 통해 자산에 추가된 IPTC 메타데이터, 크리에이티브 등급 및 키워드를 지원하는 방법을 알아봅니다.
+description: Adobe Experience Manager Assets가 Adobe Bridge 및 기타 Creative 앱을 통해 IPTC 메타데이터, 크리에이티브 등급 및 자산에 추가된 키워드를 지원하는 방법을 알아봅니다.
 contentOwner: AG
-feature: 메타데이터
+feature: Metadata
 role: User,Admin,Leader
 exl-id: 3e22e8e4-3675-4d6d-94f4-fc1a4d4801e8
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
 
 # IPTC 메타데이터 지원 {#support-for-iptc-metadata}
 
-Adobe Experience Manager(AEM) Assets가 Adobe Bridge 및 기타 Creative 앱을 통해 자산에 추가된 IPTC 메타데이터, 크리에이티브 등급 및 키워드를 지원하는 방법을 알아봅니다.
+Adobe Experience Manager Assets가 Adobe Bridge 및 기타 Creative 앱을 통해 IPTC 메타데이터, 크리에이티브 등급 및 자산에 추가된 키워드를 지원하는 방법을 알아봅니다.
 
-Adobe Experience Manager (AEM) Assets는 자산을 설명하는 데 일반적으로 사용되는 IPTC 메타데이터 표준을 지원합니다. 이러한 방식으로, AEM Assets은 사진사, 크리에이티브 에이전시, 도서관, 박물관 등을 포함한 다양한 파티들 사이에서 이미지 수락을 강화한다.
+Adobe Experience Manager Assets은 자산을 설명하는 데 일반적으로 사용되는 IPTC 메타데이터 표준을 지원합니다. 이 방법으로 [!DNL Experience Manager Assets]은 사진사, 창작사, 도서관, 박물관 등을 포함한 다양한 파티의 이미지를 더욱 잘 받아들인다.
 
 이제 자산에 대한 기본 메타데이터 스키마에는 IPTC 코어 및 IPTC 확장 메타데이터 스키마가 통합되어 사용자가 이미지에 표시된 사람, 위치 및 제품에 대한 정확하고 안정적인 데이터를 추가할 수 있는 포괄적인 메타데이터 속성을 정의합니다. 또한 이미지 만들기에 대한 날짜, 이름 및 식별자 및 권한 정보를 표현할 수 있는 유연한 방법을 지원합니다.
 

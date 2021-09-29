@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Asset Distribution
 role: User
 exl-id: bfe4d597-1080-4de5-a100-73a5175863d7
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '806'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 3%
 
 자산을 다운로드하려면 다음 단계를 수행하십시오.
 
-1. AEM의 왼쪽 위 모서리에서 AEM 로고를 탭한 다음 왼쪽 레일에서 **[!UICONTROL 탐색]**&#x200B;을 탭합니다.
+1. AEM의 왼쪽 위 모서리에서 [!DNL Experience Manager] 로고를 탭한 다음, 왼쪽 레일에서 **[!UICONTROL 탐색]**&#x200B;을 탭합니다.
 1. 탐색 페이지에서 **[!UICONTROL Assets]** > **[!UICONTROL 파일.]**&#x200B;을 탭합니다.
 1. 다운로드할 자산이 들어 있는 폴더로 이동합니다.
 1. 폴더를 선택하거나 폴더 내에서 하나 이상의 자산을 선택합니다.

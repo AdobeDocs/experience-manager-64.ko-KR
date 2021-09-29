@@ -2,12 +2,12 @@
 title: 디지털 자산에 워터마크 추가
 description: 워터마크 기능을 사용하여 자산에 디지털 워터마크를 추가하는 방법을 알아봅니다.
 contentOwner: AG
-feature: 자산 관리
+feature: Asset Management
 role: User,Admin
 exl-id: ed01143c-b516-44f8-aceb-ad2e3f0106b2
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Manager Assets] 에서는 사용자가 자산의 정품 여부 및 저작권 소유권을 확인하는 데 도움이 되는 자산에 디지털 워터마크를 추가할 수 있습니다. [!DNL Experience Manager Assets] 에서는 PNG 및 JPEG 파일에서 워터마크로 사용할 텍스트를 지원합니다.
 
-Adobe Experience Manager (AEM) Assets를 사용하면 사용자가 자산의 인증 및 저작권 소유권을 확인하는 데 도움이 되는 이미지에 디지털 워터마크를 추가할 수 있습니다. AEM Assets에서는 PNG 및 JPEG 파일에서 워터마크로 사용할 텍스트를 지원합니다.
+Adobe Experience Manager Assets를 사용하면 사용자가 자산의 정품 인증 및 저작권 소유권을 확인하는 데 도움이 되는 이미지에 디지털 워터마크를 추가할 수 있습니다. [!DNL Experience Manager] 자산은 PNG 및 JPEG 파일에서 워터마크로 사용할 텍스트를 지원합니다.
 
 자산에 워터마크를 적용하려면 [!UICONTROL DAM 자산 업데이트] 워크플로우에서 워터마크 단계를 추가하십시오.
 
@@ -37,9 +37,9 @@ Adobe Experience Manager (AEM) Assets를 사용하면 사용자가 자산의 인
    ![자산의 워터마크 추가 단계에서 인수를 제공합니다](assets/arguments_add_watermark_aem_assets.png)
 
 1. [!UICONTROL 워터마크] 단계로 **[!UICONTROL DAM 자산 업데이트]** 워크플로우를 저장합니다.
-1. AEM 사용자 인터페이스에서 샘플 자산을 업로드합니다. 워터마크는 위의 단계에서 구성한 위치에 글꼴 크기, 색상 등으로 나타납니다.
+1. [!DNL Experience Manager] 사용자 인터페이스에서 샘플 자산을 업로드합니다. 워터마크는 위의 단계에서 구성한 위치에 글꼴 크기, 색상 등으로 나타납니다.
 
-프로그래밍 방식으로 또는 동적 정보로 PDF 문서를 워터마킹하려면 [AEM Document Services](/help/forms/using/overview-aem-document-services.md) 제공을 사용해 보십시오.
+프로그래밍 방식으로 또는 동적 정보로 PDF 문서를 워터마킹하려면 [[!DNL Experience Manager] Document Services](/help/forms/using/overview-aem-document-services.md) 제공을 사용하는 것이 좋습니다.
 
 ## 팁 및 제한 사항 {#tips-limitations}
 

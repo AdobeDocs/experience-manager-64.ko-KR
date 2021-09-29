@@ -3,12 +3,12 @@ title: 자산 컬렉션 관리
 description: 컬렉션 만들기, 보기, 삭제, 편집 및 다운로드와 같은 자산 컬렉션을 관리하는 작업을 알아봅니다.
 contentOwner: AG
 mini-toc-levels: 1
-feature: 컬렉션
+feature: Collections
 role: User
 exl-id: cadfc569-5725-4012-9f73-864243ba7743
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2326'
 ht-degree: 0%
 
 ---
@@ -195,7 +195,7 @@ Smart Collection에서는 검색 기준을 사용하여 자산을 동적으로 �
 
 ## 컬렉션 검색 {#searching-collections}
 
-컬렉션 콘솔에서 컬렉션을 검색할 수 있습니다. Omnisearch 상자에서 키워드로 검색할 때 AEM Assets은 컬렉션 이름, 메타데이터 및 컬렉션에 추가된 태그를 검색합니다.
+컬렉션 콘솔에서 컬렉션을 검색할 수 있습니다. Omnisearch 상자에서 키워드를 사용하여 검색할 때 [!DNL Experience Manager] Assets는 컬렉션 이름, 메타데이터 및 컬렉션에 추가된 태그를 검색합니다.
 
 최상위 수준에서 컬렉션을 검색하는 경우 개별 컬렉션만 검색 결과에 반환됩니다. 컬렉션 내의 자산 또는 폴더는 제외됩니다. 다른 모든 경우(예: 개별 컬렉션 내 또는 폴더 계층 구조) 모든 관련 자산, 폴더 및 컬렉션이 반환됩니다.
 
@@ -203,7 +203,7 @@ Smart Collection에서는 검색 기준을 사용하여 자산을 동적으로 �
 
 컬렉션 콘솔에서 컬렉션을 탭/클릭하여 엽니다.
 
-컬렉션 내에서 AEM 자산 검색은 보고 있는 컬렉션 내의 자산(및 해당 태그 및 메타데이터)으로 제한됩니다. 폴더 내에서 검색하면 현재 폴더 내에서 일치하는 모든 자산 및 하위 폴더가 반환됩니다. 컬렉션 내에서 검색할 때 컬렉션의 직접 멤버인 일치하는 자산, 폴더 및 기타 컬렉션만 반환됩니다.
+컬렉션 내에서 검색은 보고 있는 컬렉션 내의 자산(및 해당 태그 및 메타데이터)으로 제한됩니다. 폴더 내에서 검색하면 현재 폴더 내에서 일치하는 모든 자산 및 하위 폴더가 반환됩니다. 컬렉션 내에서 검색할 때 컬렉션의 직접 멤버인 일치하는 자산, 폴더 및 기타 컬렉션만 반환됩니다.
 
 ## 컬렉션 설정 편집 {#editing-collection-settings}
 
@@ -305,5 +305,5 @@ Assets 사용자 인터페이스에서 특정 규칙, 검색 기준 또는 사�
 >[!MORELIKETHIS]
 >
 >* [Experience Manager 자산 이메일 알림 구성](/help/sites-administering/notification.md#assetsconfig)
-* [컬렉션에 대한 검토 작업 만들기](bulk-approval.md)
+>* [컬렉션에 대한 검토 작업 만들기](bulk-approval.md)
 

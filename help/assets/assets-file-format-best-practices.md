@@ -1,20 +1,20 @@
 ---
 title: 자산 파일 형식 우수 사례
-description: AEM Assets의 파일 지원 우수 사례
+description: ' [!DNL Experience Manager] Assets의 파일 지원에 대한 우수 사례입니다.'
 contentOwner: AG
-feature: 자산 관리,개발자 도구
+feature: Asset Management,Developer Tools
 role: Admin
 exl-id: ff739a17-188e-4779-8820-9e4d9b7031d0
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 2%
+source-wordcount: '424'
+ht-degree: 3%
 
 ---
 
 # 자산 파일 형식 우수 사례 {#assets-file-format-best-practices}
 
-AEM Assets은 사용자의 다양한 파일 지원 요구 사항을 충족하도록 많은 독점 및 타사 파일 형식 라이브러리를 지원합니다. 지원되는 Adobe 라이브러리에는 Adobe Camera Raw, Gibson, Adobe PDF Rasterizer 및 Adobe InDesign Server이 있습니다. 또한 AEM Assets은 ImageMagick, TweteenMonkeys 등을 포함한 타사 라이브러리를 지원합니다.
+[!DNL Experience Manager Assets] 에서는 사용자의 다양한 파일 지원 요구 사항을 충족하도록 많은 독점 및 타사 파일 형식 라이브러리를 지원합니다. 지원되는 Adobe 라이브러리에는 Adobe Camera Raw, Gibson, Adobe PDF Rasterizer 및 Adobe InDesign Server이 있습니다. 또한 [!DNL Assets]은 ImageMagick, TweteenMonkeys 등을 포함한 타사 라이브러리를 지원합니다.
 
 지원되는 파일 형식에 대해서는 [자산 지원 형식](assets-formats.md)을 참조하십시오.
 
@@ -27,7 +27,7 @@ AEM Assets은 사용자의 다양한 파일 지원 요구 사항을 충족하도
 
 Adobe Camera Raw 라이브러리는 CMYK 색상 프로파일을 입력으로 지원합니다. 그러나 RGB 색상 공간으로 출력을 생성하고 JPEG 형식으로만 출력을 지원합니다. 원본 파일 색상 공간(예: CMYK)은 축소판에 유지되지 않습니다.
 
-자세한 내용은 AEM Assets에서 [Camera Raw 지원](camera-raw.md)을 참조하십시오.
+자세한 내용은 [!DNL Assets]에서 [Camera Raw 지원](camera-raw.md)을 참조하십시오.
 
 ## Adobe PDF 래스터라이저 라이브러리 {#adobe-pdf-rasterizer-library}
 
@@ -41,9 +41,9 @@ PDF Rasterizer를 사용하여 생성된 축소판 및 미리 보기는 기본 �
 
 ## Adobe InDesign 서버 {#adobe-indesign-cc-server}
 
-Adobe은 Adobe InDesign 서버를 사용하여 IDML 및 HTML과 같은 Adobe InDesign 관련 렌디션을 추출할 것을 권장합니다. 자세한 내용은 Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign)에서 [AEM 자산을 참조로 추가 를 참조하십시오.
+Adobe은 Adobe InDesign 서버를 사용하여 IDML 및 HTML과 같은 Adobe InDesign 관련 렌디션을 추출할 것을 권장합니다. 자세한 내용은 Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign)에서 [자산을 참조로 추가 [!DNL Experience Manager] 를 참조하십시오.
 
-## 다이내믹 미디어  {#dynamic-media}
+## Dynamic Media  {#dynamic-media}
 
 Dynamic Media은 글로벌, 확장 가능 및 성능 최적화 네트워크를 통해 실시간으로 다양한 유형의 풍부한 컨텐츠를 생성하고 전달합니다. 대화형 보기 환경을 제공하고 디지털 캠페인 관리 프로세스를 간소화합니다. Dynamic Media 활성화에 대한 자세한 내용은 [Dynamic Media 구성](config-dynamic.md)을 참조하십시오.
 
@@ -58,7 +58,7 @@ Adobe은 다음 시나리오에서 ImageMagick 라이브러리를 사용하는 �
 * 투명도를 유지하려면
 * PSD 및 PSB 파일을 처리하려면
 
-AEM에서 ImageMagic 라이브러리를 설정하는 방법은 [ImageMagick](media-handlers.md#an-example-using-imagemagick) 사용을 참조하십시오. 최적의 사용을 위해 [ImageMagick](best-practices-for-imagemagick.md) 구성에 대한 우수 사례 를 참조하십시오.
+[!DNL Experience Manager]에서 ImageMagic 라이브러리를 설정하는 방법은 [ImageMagick](media-handlers.md#an-example-using-imagemagick) 사용을 참조하십시오. 최적의 사용을 위해 [ImageMagick](best-practices-for-imagemagick.md) 구성에 대한 우수 사례 를 참조하십시오.
 
 ## 이미지 코드 변환 라이브러리 {#image-transcoding-library}
 

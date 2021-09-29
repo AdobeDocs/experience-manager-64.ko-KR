@@ -1,13 +1,13 @@
 ---
 title: 메타데이터 편집 또는 추가 방법
-description: AEM Assets의 자산 메타데이터에 대해 알아보고 자산 메타데이터를 편집할 수 있는 다양한 방법을 알아봅니다.
+description: 자산 및 자산 메타데이터를 편집할 수 있는 다양한 방법에 대해 알아봅니다. [!DNL Experience Manager] 자산
 contentOwner: AG
-feature: 메타데이터
+feature: Metadata
 role: User,Admin
 exl-id: f0522343-f8a9-4d89-8ce8-b3357ae3fe70
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '479'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 메타데이터는 검색할 수 있는 자산에 대한 추가 정보입니다. 이미지를 업로드할 때 자동으로 추출됩니다. 기존 메타데이터를 편집하거나 기존 필드에 새 메타데이터 속성을 추가할 수 있습니다(예: 메타데이터 필드가 비어 있는 경우).
 
-회사는 제어되고 안정적인 메타데이터 어휘가 필요하므로 AEM Assets에서는 새 메타데이터 속성을 임시로 추가할 수 없습니다. 작성자가 자산에 새 메타데이터 필드를 추가할 수 없지만 개발자는 추가할 수 있습니다. [Assets](meta-edit.md#editing-metadata-schema)에 대한 새 메타데이터 속성 만들기를 참조하십시오.
+회사는 제어되고 안정적인 메타데이터 어휘가 필요하므로 [!DNL Experience Manager] 자산에서는 새 메타데이터 속성을 새로 추가할 수 없습니다. 작성자가 자산에 새 메타데이터 필드를 추가할 수 없지만 개발자는 추가할 수 있습니다. [Assets](meta-edit.md#editing-metadata-schema)에 대한 새 메타데이터 속성 만들기를 참조하십시오.
 
 ## 자산에 대한 메타데이터 편집 {#editing-metadata-for-an-asset}
 
@@ -28,7 +28,7 @@ ht-degree: 1%
    * 자산 축소판에서 **[!UICONTROL 속성 보기]** 빠른 작업을 선택합니다.
    * 자산 페이지에서 도구 모음에서 **[!UICONTROL 속성 보기]** 아이콘 ![정보 아이콘](assets/do-not-localize/info_icon.png)을 클릭/탭합니다.
 
-   자산 페이지에 자산의 모든 메타데이터가 표시됩니다. 이 메타데이터는 AEM Assets에 업로드(수집)될 때 자동으로 추출됩니다.
+   자산 페이지에 자산의 모든 메타데이터가 표시됩니다. 이 메타데이터는 [!DNL Experience Manager] 자산에 업로드(섭취됨)되었을 때 자동으로 추출되었습니다.
 
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
@@ -46,7 +46,7 @@ XMP Write-back은 [기술 요구 사항.](/help/sites-deploying/technical-requir
 
 메타데이터 스키마를 편집하는 방법에 대한 자세한 내용은 [메타데이터 스키마 양식 편집](metadata-schemas.md#editing-metadata-schema-forms)을 참조하십시오.
 
-## AEM 내에서 사용자 지정 네임스페이스 등록 {#registering-a-custom-namespace-within-aem}
+## [!DNL Experience Manager] 내에 사용자 지정 네임스페이스를 등록 {#registering-a-custom-namespace-within-aem}
 
 AEM 내에 고유한 네임스페이스를 추가할 수 있습니다. cq, jcr 및 sling과 같이 사전 정의된 네임스페이스가 있는 것처럼 저장소 메타데이터 및 xml 처리를 위한 네임스페이스를 가질 수 있습니다.
 

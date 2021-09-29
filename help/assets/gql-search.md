@@ -1,20 +1,20 @@
 ---
 title: GQL 전체 텍스트 검색
-description: AEM Assets에서 GQL 전체 텍스트 검색 기능을 살펴보십시오. 제목, 설명 및 작성자 이름과 같은 특정 메타데이터를 기반으로 자산을 검색할 수 있도록 해줍니다.
+description: Assets에서 GQL 전체 텍스트 검색 기능을 살펴보십시오.  [!DNL Experience Manager]  제목, 설명 및 작성자 이름과 같은 특정 메타데이터를 기반으로 자산을 검색할 수 있도록 해줍니다.
 contentOwner: AG
-feature: 검색,메타데이터
+feature: Search,Metadata
 role: User
 exl-id: e819501c-4ac3-447f-944c-67adc42e8c61
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '873'
 ht-degree: 2%
 
 ---
 
 # GQL 전체 텍스트 검색 {#gql-full-text-search}
 
-AEM Assets에서 GQL 전체 텍스트 검색 기능을 살펴보십시오. 제목, 설명 및 작성자 이름과 같은 특정 메타데이터를 기반으로 자산을 검색할 수 있도록 해줍니다.
+[!DNL Experience Manager] Assets에서 GQL 전체 텍스트 검색 기능을 살펴보십시오. 제목, 설명 및 작성자 이름과 같은 특정 메타데이터를 기반으로 자산을 검색할 수 있도록 해줍니다.
 
 GQL 전체 텍스트 검색 기능을 사용하면 제목, 설명, 작성자 등과 같은 특정 메타데이터를 기반으로 자산을 검색할 수 있습니다.
 
@@ -38,7 +38,7 @@ GQL 전체 텍스트 검색 기능을 사용하면 제목, 설명, 작성자 등
 
    ![gql_search](assets/gql_search.png)
 
-1. **[!UICONTROL Enter]** 키를 누릅니다. AEM Assets 사용자 인터페이스에는 제목이 &quot;Target&quot;과 정확히 일치하는 자산만 표시됩니다.
+1. **[!UICONTROL Enter]** 키를 누릅니다. [!DNL Assets] 사용자 인터페이스는 제목이 &quot;Target&quot;과 정확히 일치하는 자산만 표시합니다.
 
 GQL 전체 텍스트 검색 기능을 사용하여 다음을 기준으로 자산을 검색할 수 있습니다.
 
@@ -67,7 +67,7 @@ GQL 전체 텍스트 검색 기능을 사용하면 다음 메타데이터 속성
 | [!UICONTROL 만료 날짜] | 만료:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDHH:MM:SS.000+05:30 |
 | [!UICONTROL 시간] | ontime:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDHH:MM:SS.000+05:30 |
 | [!UICONTROL 해제 시간] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDHH:MM:SS.000+05:30 |
-| [!UICONTROL 시간 범위] (expires dateontime,offtime) | 패싯 필드:소행..상단 |
+| [!UICONTROL 시간 범위] (expires dateontime,offtime) | 패싯 필드: 소행..상단 |
 | [!UICONTROL 경로] | /content/dam/&lt;폴더 이름> |
 | [!UICONTROL PDF 제목] | pdftitle:&quot;Adobe 문서&quot; |
 | [!UICONTROL 제목] | 제목:&quot;교육&quot; |
@@ -79,40 +79,39 @@ GQL 전체 텍스트 검색 기능을 사용하면 다음 메타데이터 속성
 
 다음은 복잡한 쿼리에 대한 검색 형식의 예입니다.
 
-* 여러 패싯 필드가 있는 모든 자산을 표시하려면(예:title=John Doe 및 creator tool = Adobe Photoshop):
+* 여러 패싯 필드가 있는 모든 자산을 표시하려면(예: title=John Doe 및 creator tool = Adobe Photoshop):
 
-tiltle:&quot;John Doe&quot; creatortool :Adobe;amp;ast;
+tiltle:&quot;John Doe&quot; creatortool : Adobe;amp;ast;
 
-* 패싯 값이 단일 단어가 아닌 문장이 될 때 모든 자산을 표시하려면(예:title=스콧 레이놀즈)
+* 패싯 값이 단일 단어가 아닌 문장이 될 때 모든 자산을 표시하려면(예: title=스콧 레이놀즈)
 
 타이틀:&quot;스캇 레이놀즈&quot;
 
-* 단일 속성의 여러 값이 있는 자산을 표시하려면(예:title=스캇 레이놀즈 또는 존 도)
+* 단일 속성의 여러 값이 있는 자산을 표시하려면(예: title=스캇 레이놀즈 또는 존 도)
 
 제목: &quot;Scott Reynolds&quot; 또는 &quot;John Doe&quot;
 
-* 특정 문자열로 시작하는 속성 값이 있는 자산을 표시하려면(예:제목이 스콧 레이놀즈)
+* 특정 문자열로 시작하는 속성 값이 있는 자산을 표시하려면(예: 제목이 스콧 레이놀즈)
 
 title:&quot;Scott&quot;
 
-* 특정 문자열로 끝나는 속성 값이 있는 자산을 표시하려면(예:제목이 스콧 레이놀즈)
+* 특정 문자열로 끝나는 속성 값이 있는 자산을 표시하려면(예: 제목이 스콧 레이놀즈)
 
 제목: &quot;Reynolds&quot;
 
-* 특정 문자열을 포함하는 속성 값이 있는 자산을 표시하려면 다음을 수행하십시오.title = Basel 회의실)
+* 특정 문자열을 포함하는 속성 값이 있는 자산을 표시하려면 다음을 수행하십시오. title = Basel 회의실)
 
 title:&quot;모임&quot;;
 
-* 특정 문자열을 포함하고 특정 속성 값을 갖는 자산을 표시하려면(예:title=John Doe)가 있는 자산에서 문자열 Adobe 검색
+* 특정 문자열을 포함하고 특정 속성 값을 갖는 자산을 표시하려면(예: title=John Doe)가 있는 자산에서 문자열 Adobe 검색
 
-&amp;ast;Adobe&amp;ast;title:&quot;John Doe &quot;OR title:&quot;John Doe&quot; &amp;ast;Adobe&amp;ast;
+&amp;ast;Adobe&amp;ast; title:&quot;John Doe &quot;OR title:&quot;John Doe&quot; &amp;ast;Adobe&amp;ast;
 
 >[!NOTE]
 >
 >속성 경로, 제한, 크기 및 orderby는 다른 속성과 함께 OR를 사용할 수 없습니다.
 >
 >사용자가 생성한 속성의 키워드는 속성 편집기의 필드 레이블이며 공백이 제거되어 있습니다.
-
 
 >[!NOTE]
 >

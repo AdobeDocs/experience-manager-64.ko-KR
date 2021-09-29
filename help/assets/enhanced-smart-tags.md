@@ -6,12 +6,12 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
-feature: 스마트 태그,검색
+feature: Smart Tags,Search
 role: User
 exl-id: 21a9f130-ea91-45bf-adc8-8a73a2a00c77
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1514'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Smart Content Service에서 올바른 태그를 적용하려면 분류 체계를
 
 백그라운드에서 Smart Content Service는 Adobe Sensei의 AI 프레임워크를 사용하여 태그 구조 및 비즈니스 분류에 대한 이미지 인식 알고리즘을 교육합니다. 그런 다음 이 컨텐츠 인텔리전스를 사용하여 다른 자산 세트에 관련 태그를 적용하는 데 사용됩니다.
 
-스마트 컨텐츠 서비스는 [!DNL Adobe I/O]에 호스팅되는 클라우드 서비스입니다. Adobe Experience Manager(AEM)에서 사용하려면 시스템 관리자가 AEM 인스턴스를 [!DNL Adobe I/O]과 통합해야 합니다.
+스마트 컨텐츠 서비스는 [!DNL Adobe I/O]에 호스팅되는 클라우드 서비스입니다. Adobe Experience Manager에서 사용하려면 시스템 관리자가 [!DNL Experience Manager] 인스턴스를 [!DNL Adobe I/O]과(와) 통합해야 합니다.
 
 다음은 스마트 컨텐츠 서비스를 사용하는 주요 단계입니다.
 
@@ -52,15 +52,11 @@ Smart Content Service에서 올바른 태그를 적용하려면 분류 체계를
 
 ## 온보딩 {#onboarding}
 
-스마트 컨텐츠 서비스는 AEM의 추가 기능으로 구입할 수 있습니다. 구입하고 나면 [!DNL Adobe I/O] 링크가 포함된 이메일이 조직 관리자에게 전송됩니다.
+스마트 컨텐츠 서비스는 [!DNL Experience Manager] 의 추가 기능으로 구입할 수 있습니다. 구입하고 나면 [!DNL Adobe I/O] 링크가 포함된 이메일이 조직 관리자에게 전송됩니다.
 
-관리자는 링크를 따라 Smart Content Service를 AEM과 통합할 수 있습니다. 서비스를 AEM Assets과 통합하려면 [스마트 태그 구성](config-smart-tagging.md)을 참조하십시오.
+관리자는 링크를 따라 스마트 컨텐츠 서비스를 [!DNL Experience Manager] 과 통합할 수 있습니다. 서비스를 [!DNL Experience Manager] 자산과 통합하려면 [스마트 태그 구성](config-smart-tagging.md)을 참조하십시오.
 
-관리자가 서비스를 구성하고 AEM에서 사용자를 추가하면 온보딩 프로세스가 완료됩니다.
-
->[!NOTE]
->
->AEM 6.3 이전 버전을 사용 중이며 자산에 대해 자동 태그 지정 서비스가 필요한 경우 [스마트 태그](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html)를 참조하십시오. 스마트 태그는 AI 기능을 사용하지 않으며 향상된 스마트 태그 지정 기능보다 정확도가 낮습니다.
+관리자가 서비스를 구성하고 [!DNL Experience Manager]에 사용자를 추가하면 온보딩 프로세스가 완료됩니다.
 
 ## 자산 및 태그 검토 {#reviewing-assets-and-tags}
 
@@ -77,7 +73,6 @@ Smart Content Service에서 올바른 태그를 적용하려면 분류 체계를
 >1. 스마트 컨텐츠 서비스를 처음 교육할 때 두 개 이상의 개별 태그로 교육하는 것이 좋습니다.
 
 >
-
 
 
 ## 스마트 컨텐츠 서비스 교육 {#training-the-smart-content-service}
@@ -98,13 +93,13 @@ Smart Content Service를 사용하여 폴더 내의 자산 및 관련 태그에 
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-폴더에 대해 이 옵션을 선택하면 AEM에서 자동으로 교육 워크플로우를 실행하여 폴더 자산 및 해당 태그에서 스마트 컨텐츠 서비스를 교육합니다. 기본적으로 교육 워크플로우는 매주 토요일 오전 12시 30분에 실행됩니다.
+폴더에 대해 이 옵션을 선택하면 [!DNL Experience Manager]은(는) 폴더 자산 및 해당 태그에서 스마트 컨텐츠 서비스를 교육하기 위해 자동으로 교육 워크플로우를 실행합니다. 기본적으로 교육 워크플로우는 매주 토요일 오전 12시 30분에 실행됩니다.
 
 ### 주문형 교육 {#on-demand-training}
 
 워크플로우 콘솔에서 필요할 때마다 스마트 컨텐츠 서비스를 트레이닝할 수 있습니다.
 
-1. AEM 로고를 탭/클릭하고 **[!UICONTROL 도구 > 워크플로우 > 모델]**&#x200B;으로 이동합니다.
+1. [!DNL Experience Manager] 로고를 탭/클릭하고 **[!UICONTROL 도구 > 워크플로우 > 모델]**&#x200B;으로 이동합니다.
 1. **[!UICONTROL 워크플로우 모델]** 페이지에서 **[!UICONTROL 스마트 태그 교육]** 워크플로우를 선택한 다음 도구 모음에서 **[!UICONTROL 워크플로우 시작]**&#x200B;을 탭/클릭합니다.
 1. **[!UICONTROL 워크플로우 실행]** 대화 상자에서 서비스 교육을 위해 태그가 지정된 자산을 포함하는 페이로드 폴더를 찾습니다.
 1. 워크플로우의 제목을 지정하고 설명을 추가합니다. 그런 다음 **[!UICONTROL 실행]**&#x200B;을 탭/클릭합니다. 교육을 위해 자산 및 태그가 제출됩니다.
@@ -119,7 +114,7 @@ Smart Content Service를 사용하여 폴더 내의 자산 및 관련 태그에 
 
 스마트 컨텐츠 서비스가 교육 자산 세트의 태그에서 훈련되었는지 확인하려면 보고서 콘솔에서 교육 워크플로우 보고서를 검토하십시오.
 
-1. AEM 로고를 탭/클릭하고 **[!UICONTROL 도구 > 자산 > 보고서]**&#x200B;로 이동합니다.
+1. [!DNL Experience Manager] 로고를 탭/클릭하고 **[!UICONTROL 도구 > 자산 > 보고서]**&#x200B;로 이동합니다.
 1. **[!UICONTROL 자산 보고서]** 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 탭/클릭합니다.
 1. **[!UICONTROL 스마트 태그 교육]** 보고서를 선택한 다음, 도구 모음에서 **[!UICONTROL 다음]**&#x200B;을 탭/클릭합니다.
 1. 보고서의 제목과 설명을 지정합니다. **[!UICONTROL 보고서 예약]**&#x200B;에서 **[!UICONTROL 지금]** 옵션을 선택한 상태로 둡니다. 나중에 보고서를 예약하려면 **[!UICONTROL 나중에]**&#x200B;를 선택하고 날짜 및 시간을 지정합니다. 그런 다음 도구 모음에서 **[!UICONTROL 만들기]**&#x200B;를 탭/클릭합니다.
@@ -161,7 +156,7 @@ Smart Content Service가 폴더 내의 자산에 정기적으로 태그를 지�
 
 #### 워크플로우 콘솔에서 자산 태깅 {#tagging-assets-from-the-workflow-console}
 
-1. AEM 로고를 탭/클릭하고 **[!UICONTROL 도구 > 워크플로우 > 모델]**&#x200B;으로 이동합니다.
+1. [!DNL Experience Manager] 로고를 탭/클릭하고 **[!UICONTROL 도구 > 워크플로우 > 모델]**&#x200B;으로 이동합니다.
 1. **[!UICONTROL 워크플로우 모델]** 페이지에서 **[!UICONTROL DAM 스마트 태그 자산]** 워크플로우를 선택한 다음, 도구 모음에서 **[!UICONTROL 워크플로우 시작]**&#x200B;을 탭/클릭합니다.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)

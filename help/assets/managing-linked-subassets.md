@@ -1,35 +1,35 @@
 ---
 title: 조합 자산을 관리하고 하위 자산을 생성합니다.
-description: InDesign, Adobe Illustrator 및 Photoshop 파일 내에서 AEM 자산에 대한 참조를 만드는 방법을 알아봅니다. 또한 페이지 뷰어 기능을 사용하여 PDF, INDD, PPT, PPTX 및 AI 파일을 포함한 여러 페이지 파일의 개별 페이지를 보는 방법을 알아봅니다.
+description: InDesign, Adobe Illustrator 및 Photoshop 파일 내에서 [!DNL Experience Manager] 자산에 대한 참조를 만드는 방법을 알아봅니다. 또한 페이지 뷰어 기능을 사용하여 다중 페이지 파일의 개별 페이지를 보는 방법을 알아봅니다.
 contentOwner: AG
 feature: Asset Management
 role: User,Admin
 exl-id: 9fa44b26-76f7-48e2-a9df-4fd1c0074158
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '1408'
+source-wordcount: '1377'
 ht-degree: 0%
 
 ---
 
 # 하위 자산과 조합 자산 관리 {#managing-compound-assets}
 
-AEM(Adobe Experience Manager) 자산은 업로드된 파일에 이미 저장소에 있는 자산에 대한 참조가 포함되어 있는지 식별할 수 있습니다. 이 기능은 지원되는 파일 형식에만 사용할 수 있습니다. 업로드된 자산에 AEM 자산에 대한 참조가 있으면, 업로드된 자산과 참조된 자산 사이에 양방향 링크가 만들어집니다.
+Adobe Experience Manager Assets는 업로드된 파일에 이미 저장소에 있는 자산에 대한 참조가 포함되어 있는지 식별할 수 있습니다. 이 기능은 지원되는 파일 형식에만 사용할 수 있습니다. 업로드된 자산에 [!DNL Experience Manager] 자산에 대한 참조가 있으면, 업로드된 자산과 참조된 자산 사이에 양방향 링크가 만들어집니다.
 
-중복성을 제거하는 것 외에도, Adobe Creative Cloud 애플리케이션에서 AEM 자산을 참조하면 공동 작업이 개선되고 사용자의 효율성 및 생산성이 향상됩니다.
+중복성을 제거하는 것 외에도 Adobe Creative Cloud 애플리케이션에서 [!DNL Experience Manager] 자산을 참조하면 공동 작업이 개선되고 사용자의 효율성 및 생산성이 향상됩니다.
 
-AEM Assets은 **양방향 참조**&#x200B;를 지원합니다. 업로드된 파일의 자산 세부 정보 페이지에서 참조된 자산을 찾을 수 있습니다. 또한 참조된 자산의 자산 세부 사항 페이지에서 AEM 자산에 대한 참조 파일을 볼 수 있습니다.
+[!DNL Experience Manager] 자산은  **양방향 참조를 지원합니다**. 업로드된 파일의 자산 세부 정보 페이지에서 참조된 자산을 찾을 수 있습니다. 또한 참조된 자산의 자산 세부 사항 페이지에서 [!DNL Experience Manager] 자산에 대한 참조 파일을 볼 수 있습니다.
 
 참조는 참조된 자산의 경로, 문서 ID 및 인스턴스 ID를 기반으로 해결됩니다.
 
 ## Adobe Illustrator: 자산을 참조로 추가 {#refai}
 
-Adobe Illustrator 파일 내에서 기존 AEM 자산을 참조할 수 있습니다.
+Adobe Illustrator 파일 내에서 기존 [!DNL Experience Manager] 자산을 참조할 수 있습니다.
 
-1. [AEM 데스크탑 앱](https://helpx.adobe.com/kr/experience-manager/desktop-app/aem-desktop-app.html)을 사용하여 AEM Assets 리포지토리를 로컬 시스템의 드라이브로 마운트합니다. 마운트된 드라이브 내에서 참조할 자산의 위치로 이동합니다.
+1. [[!DNL Experience Manager] 데스크탑 앱](https://helpx.adobe.com/kr/experience-manager/desktop-app/aem-desktop-app.html)을 사용하여 [!DNL Experience Manager] Assets 저장소를 로컬 시스템의 드라이브로 마운트합니다. 마운트된 드라이브 내에서 참조할 자산의 위치로 이동합니다.
 1. 마운트된 드라이브에서 Illustrator 파일로 자산을 드래그합니다.
-1. Illustrator 파일을 마운트된 드라이브에 저장하거나 [업로드](managing-assets-touch-ui.md#uploading-assets)를 AEM 저장소에 저장합니다.
-1. 워크플로우가 완료되면 자산의 자산 세부 사항 페이지로 이동합니다. 기존 AEM 자산에 대한 참조는 **[!UICONTROL 참조]** 열의 **[!UICONTROL 종속성]** 아래에 나열됩니다.
+1. Illustrator 파일을 마운트된 드라이브에 저장하거나 [업로드](managing-assets-touch-ui.md#uploading-assets)를 [!DNL Experience Manager] 저장소에 저장합니다.
+1. 워크플로우가 완료되면 자산의 자산 세부 사항 페이지로 이동합니다. 기존 [!DNL Experience Manager] 자산에 대한 참조는 **[!UICONTROL 참조]** 열의 **[!UICONTROL 종속성]** 아래에 나열됩니다.
 
    ![chlimage_1-258](assets/chlimage_1-258.png)
 
@@ -43,9 +43,9 @@ Adobe Illustrator 파일 내에서 기존 AEM 자산을 참조할 수 있습니�
 
 ## Adobe InDesign: 자산을 참조로 추가 {#add-aem-assets-as-references-in-adobe-indesign}
 
-InDesign 파일 내에서 AEM 자산을 참조하려면 AEM 자산을 InDesign 파일로 드래그하거나 InDesign 파일을 ZIP 파일로 내보내십시오.
+InDesign 파일 내에서 [!DNL Experience Manager] 자산을 참조하려면 [!DNL Experience Manager] 자산을 InDesign 파일로 드래그하거나 InDesign 파일을 ZIP 파일로 내보내십시오.
 
-참조된 자산이 AEM Assets에 이미 있습니다. [InDesign 서버](indesign.md)를 구성하여 하위 자산을 추출할 수 있습니다. InDesign 파일에 포함된 자산은 하위 자산으로 추출됩니다.
+참조된 자산이 [!DNL Experience Manager] 자산에 이미 있습니다. [InDesign 서버](indesign.md)를 구성하여 하위 자산을 추출할 수 있습니다. InDesign 파일에 포함된 자산은 하위 자산으로 추출됩니다.
 
 >[!NOTE]
 >
@@ -61,19 +61,19 @@ INDD 파일이 업로드되면 리포지토리에서 `xmpMM:InstanceID` 및 `xmp
 
 1. [워크플로우 모델 만들기](/help/sites-developing/workflows-models.md)의 단계를 수행하여 새 워크플로우를 만듭니다.
 1. Adobe InDesign](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html)의 [패키지 기능을 사용하여 문서를 내보냅니다. Adobe InDesign은 문서 및 연결된 자산을 패키지로 내보낼 수 있습니다. 이 경우 내보낸 폴더에는 InDesign 파일의 하위 자산을 포함하는 `Links` 폴더가 있습니다. `Links` 폴더가 INDD 파일과 동일한 폴더에 있습니다.
-1. ZIP 파일을 만들어 AEM 리포지토리에 업로드합니다.
+1. ZIP 파일을 만들어 [!DNL Experience Manager] 저장소에 업로드합니다.
 1. 보관 해제 워크플로우를 시작합니다.
 1. 워크플로우가 완료되면 링크 폴더의 참조가 자동으로 하위 자산으로 참조됩니다. 참조된 자산 목록을 보려면 InDesign 자산의 자산 세부 사항 페이지로 이동하여 [레일](/help/sites-authoring/basic-handling.md#rail-selector)을 닫습니다.
 
 ## Adobe Photoshop: 자산을 참조로 추가 {#refps}
 
-1. WebDav 클라이언트를 사용하여 AEM Assets을 드라이브로 마운트합니다.
-1. Photoshop 파일에서 AEM 자산에 대한 참조를 만들려면 Photoshop에 연결된 기능 배치 를 사용하여 마운트된 드라이브에서 해당 자산으로 이동합니다.
+1. WebDav 클라이언트를 사용하여 [!DNL Experience Manager] Assets를 드라이브로 마운트합니다.
+1. Photoshop 파일에서 [!DNL Experience Manager] 자산에 대한 참조를 만들려면 Photoshop에 연결된 기능 배치 를 사용하여 마운트된 드라이브에서 해당 자산으로 이동합니다.
 
    ![chlimage_1-261](assets/chlimage_1-261.png)
 
-1. Photoshop 파일에 마운트된 드라이브에 저장하거나 [업로드](managing-assets-touch-ui.md#uploading-assets)를 AEM 저장소에 저장합니다.
-1. 워크플로우가 완료되면 기존 AEM 자산에 대한 참조가 자산 세부 사항 페이지에 나열됩니다.
+1. Photoshop 파일에 마운트된 드라이브 또는 [업로드](managing-assets-touch-ui.md#uploading-assets)를 [!DNL Experience Manager] 저장소에 저장합니다.
+1. 워크플로우가 완료되면 기존 [!DNL Experience Manager] 자산에 대한 참조가 자산 세부 사항 페이지에 나열됩니다.
 
    참조된 자산을 보려면 자산 세부 사항 페이지에서 [레일](/help/sites-authoring/basic-handling.md#rail-selector)을 닫습니다.
 
@@ -85,7 +85,7 @@ INDD 파일이 업로드되면 리포지토리에서 `xmpMM:InstanceID` 및 `xmp
 
 ## 하위 자산 만들기 {#generate-subassets}
 
-다중 페이지 형식(PDF 파일, AI 파일, Microsoft PowerPoint 및 Apple Keynote 파일, Adobe InDesign 파일)으로 지원되는 자산의 경우, AEM은 원본 자산의 각 개별 페이지에 해당하는 하위 자산을 생성할 수 있습니다. 이러한 하위 자산은 *상위* 자산에 연결되며 다중 페이지 보기를 용이하게 합니다. 다른 모든 목적으로 하위 자산은 AEM에서 일반적인 자산처럼 처리됩니다.
+다중 페이지 형식(PDF 파일, AI 파일, Microsoft PowerPoint 및 Apple Keynote 파일, Adobe InDesign 파일)으로 지원되는 자산의 경우, [!DNL Experience Manager]은(는) 원래 자산의 각 개별 페이지에 해당하는 하위 자산을 생성할 수 있습니다. 이러한 하위 자산은 *상위* 자산에 연결되며 다중 페이지 보기를 용이하게 합니다. 다른 모든 목적으로 하위 자산은 AEM에서 일반적인 자산처럼 처리됩니다.
 
 하위 자산 생성은 기본적으로 비활성화됩니다. 하위 자산 생성을 활성화하려면 다음 단계를 수행하십시오.
 
@@ -111,7 +111,7 @@ INDD 파일이 업로드되면 리포지토리에서 `xmpMM:InstanceID` 및 `xmp
 
 ## 다중 페이지 파일의 페이지 보기 {#view-pages-of-a-multi-page-file}
 
-AEM Assets의 페이지 뷰어 기능을 사용하여 PDF, INDD, PPT, PPTX 및 AI 파일과 같은 다중 페이지 파일을 볼 수 있습니다. 다중 페이지 자산을 열고 페이지의 왼쪽 위 모서리에서 **[!UICONTROL 페이지 보기]**&#x200B;를 클릭합니다. 열리는 페이지 뷰어 에는 자산의 페이지와 각 페이지를 탐색하고 확대/축소하는 컨트롤이 표시됩니다.
+[!DNL Experience Manager] 자산의 페이지 뷰어 기능을 사용하여 PDF, INDD, PPT, PPTX 및 AI 파일과 같은 다중 페이지 파일을 볼 수 있습니다. 다중 페이지 자산을 열고 페이지의 왼쪽 위 모서리에서 **[!UICONTROL 페이지 보기]**&#x200B;를 클릭합니다. 열리는 페이지 뷰어 에는 자산의 페이지와 각 페이지를 탐색하고 확대/축소하는 컨트롤이 표시됩니다.
 
 ![다중 페이지 자산의 페이지를 보고 확인합니다](assets/view_multipage_asset_fmr.gif)
 
@@ -119,7 +119,7 @@ InDesign의 경우 InDesign 서버를 사용하여 페이지를 추출할 수 �
 
 다음 옵션은 도구 모음, 왼쪽 레일 및 페이지 뷰어 컨트롤에서 사용할 수 있습니다.
 
-* **[!UICONTROL AEM]** 데스크탑 앱을 사용하여 특정 하위 자산을 열거나 표시하는 데스크톱 작업입니다. AEM 데스크탑 앱을 사용하는 경우 [데스크탑 작업 구성](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) 방법을 참조하십시오.
+* **[!UICONTROL 데스크톱]** 작업:  [!DNL Experience Manager] 데스크탑 앱을 사용하여 특정 하위 자산을 열거나 표시합니다. [!DNL Experience Manager] 데스크탑 앱을 사용하는 경우 [데스크톱 작업](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)을 구성하는 방법을 참조하십시오.
 
 * **** 속성 옵션을 선택하면   특정 하위 자산의 속성 페이지가 열립니다.
 

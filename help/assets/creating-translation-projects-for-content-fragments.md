@@ -1,8 +1,8 @@
 ---
 title: 컨텐츠 조각에 대한 번역 프로젝트 만들기
-seo-title: 컨텐츠 조각에 대한 번역 프로젝트 만들기
+seo-title: Creating Translation Projects for Content Fragments
 description: 컨텐츠 조각을 번역하는 방법을 알아봅니다.
-seo-description: 컨텐츠 조각을 번역하는 방법을 알아봅니다.
+seo-description: Learn how to translate content fragments.
 uuid: 23176e70-4003-453c-af25-6499a5ed3f6d
 contentOwner: heimoz
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,11 +10,11 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 exl-id: 4b9fd241-82db-466e-95bd-6d212717801d
-feature: 콘텐츠 조각
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '968'
 ht-degree: 2%
 
 ---
@@ -54,13 +54,13 @@ ht-degree: 2%
 
 ## 혼합 미디어 조각 번역 {#translating-mixed-media-fragments}
 
-AEM에서 다양한 유형의 미디어 자산 및 컬렉션을 포함하는 컨텐츠 조각을 번역할 수 있습니다. 인라인 자산을 포함하는 컨텐츠 조각을 번역하는 경우, 이러한 자산의 번역된 사본은 대상 언어 루트 아래에 저장됩니다.
+[!DNL Experience Manager] 다양한 유형의 미디어 자산 및 컬렉션을 포함하는 컨텐츠 조각을 번역할 수 있습니다. 인라인 자산을 포함하는 컨텐츠 조각을 번역하는 경우, 이러한 자산의 번역된 사본은 대상 언어 루트 아래에 저장됩니다.
 
 컨텐츠 조각에 컬렉션이 포함되어 있으면 컬렉션 내의 자산이 컨텐츠 조각과 함께 번역됩니다. 자산의 번역된 사본은 소스 언어 루트 아래의 소스 자산의 실제 위치와 일치하는 위치의 적절한 대상 언어 루트 내에 저장됩니다.
 
 혼합 미디어를 포함하는 컨텐츠 조각을 번역하려면 먼저 기본 번역 프레임워크를 편집하여 컨텐츠 조각과 연관된 인라인 자산 및 컬렉션을 번역할 수 있도록 하십시오.
 
-1. AEM 로고를 클릭/탭하고 **[!UICONTROL 도구 > 배포 > Cloud Services]**&#x200B;로 이동합니다.
+1. [!DNL Experience Manager] 로고를 클릭/탭하고 **[!UICONTROL 도구 > 배포 > Cloud Services]**&#x200B;로 이동합니다.
 1. **[!UICONTROL Adobe Marketing Cloud]**&#x200B;에서 **[!UICONTROL 번역 통합]**&#x200B;을 찾고 **[!UICONTROL 구성 표시]**&#x200B;를 클릭/탭합니다.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)

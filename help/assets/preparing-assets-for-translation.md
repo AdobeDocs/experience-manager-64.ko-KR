@@ -2,12 +2,12 @@
 title: 자산 번역 준비
 description: 다국어 자산을 번역할 준비를 위해 언어 루트 폴더를 만듭니다.
 contentOwner: AG
-feature: 프로젝트,번역
+feature: Projects,Translation
 role: User,Admin
 exl-id: cc6c4f9e-8e22-4622-8b24-230ae258351c
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '448'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 다국어 자산은 바이너리, 메타데이터 및 태그가 여러 언어로 있는 자산을 의미합니다. 일반적으로 자산에 대한 이진, 메타데이터 및 태그는 한 언어로 존재하며 다국어 프로젝트에서 사용할 수 있도록 다른 언어로 변환됩니다.
 
-Adobe Experience Manager(AEM) Assets에서 다국어 자산은 폴더에 포함되며 이 폴더에는 다른 언어로 된 자산이 포함됩니다.
+Adobe Experience Manager Assets에서 다국어 자산은 폴더에 포함되며 이 폴더는 각 폴더에 다른 언어로 된 자산을 포함합니다.
 
 각 언어 폴더를 언어 사본이라고 합니다. 언어 복사본으로 알려진 언어 복사본의 루트 폴더는 언어 복사본에서 컨텐츠의 언어를 식별합니다. 예를 들어 */content/dam/it*&#x200B;은 이탈리아어 언어 복사본에 대한 이탈리아어 루트입니다. 소스 자산의 번역을 수행할 때 올바른 언어를 지정하도록 언어 사본은 [올바르게 구성된 언어 루트](preparing-assets-for-translation.md#creating-a-language-root)를 사용해야 합니다.
 
@@ -47,7 +47,7 @@ Adobe Experience Manager(AEM) Assets에서 다국어 자산은 폴더에 포함�
 
 언어 루트를 만들려면 폴더를 만들고 ISO 언어 코드를 Name 속성 값으로 사용합니다. 언어 루트를 만든 후 언어 루트 내의 모든 수준에서 언어 사본을 만들 수 있습니다.
 
-예를 들어 샘플 계층의 이탈리아어 언어 사본의 루트 페이지에는 `it`이 Name 속성으로 있습니다. 이름 속성은 저장소의 자산 노드의 이름으로 사용되므로 자산의 경로를 결정합니다.(`https://[AEM_server]:[port]/assets.html/content/dam/it/*`)
+예를 들어 샘플 계층의 이탈리아어 언어 사본의 루트 페이지에는 `it`이 Name 속성으로 있습니다. 이름 속성은 저장소의 자산 노드의 이름으로 사용되므로 자산의 경로를 결정합니다. (`https://[AEM_server]:[port]/assets.html/content/dam/it/*`)
 
 1. Assets 콘솔에서 **[!UICONTROL 만들기]**&#x200B;를 클릭/탭하고 메뉴에서 **[!UICONTROL 폴더]**&#x200B;를 선택합니다.
 
@@ -61,7 +61,7 @@ Adobe Experience Manager(AEM) Assets에서 다국어 자산은 폴더에 포함�
 
 ## 언어 루트 보기 {#viewing-language-roots}
 
-터치에 적합한 UI는 AEM Assets 내에서 만들어진 언어 루트 목록을 표시하는 참조 패널을 제공합니다.
+터치에 적합한 UI는 [!DNL Experience Manager] 자산 내에서 생성된 언어 루트 목록을 표시하는 참조 패널을 제공합니다.
 
 1. Assets 콘솔에서 언어 사본을 만들 기본 언어를 선택합니다.
 1. GlobalNav 아이콘을 클릭하거나 탭하고 **[!UICONTROL 참조]**&#x200B;를 선택하여 참조 창을 엽니다.

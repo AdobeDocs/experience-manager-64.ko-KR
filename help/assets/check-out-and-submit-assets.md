@@ -2,19 +2,19 @@
 title: 편집할 디지털 자산 체크인 및 체크아웃
 description: 편집할 자산을 체크 아웃하고 변경 사항이 완료된 후 다시 체크 인하는 방법을 알아봅니다.
 contentOwner: AG
-feature: 자산 관리
+feature: Asset Management
 role: User
 exl-id: 0c79ed42-0acd-426e-8e14-412bb4117585
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '393'
 ht-degree: 2%
 
 ---
 
 # Assets의 체크인 및 체크아웃 파일 {#check-in-and-check-out-files-in-assets}
 
-Adobe Experience Manager (AEM) Assets를 사용하면 편집할 자산을 체크 아웃하고 변경을 완료한 후 다시 체크 인할 수 있습니다. 자산을 체크 아웃한 후에는 자산을 편집, 주석 달기, 게시, 이동 또는 삭제할 수만 있습니다. 자산을 체크 아웃하면 자산이 잠깁니다. 다른 사용자는 자산을 다시 AEM Assets에 체크 인할 때까지 자산에서 이러한 작업을 수행할 수 없습니다. 그러나 잠긴 자산에 대한 메타데이터를 변경할 수 있습니다.
+Adobe Experience Manager Assets를 사용하면 편집할 자산을 체크 아웃하고 변경을 완료한 후 다시 체크 인할 수 있습니다. 자산을 체크 아웃한 후에는 자산을 편집, 주석 달기, 게시, 이동 또는 삭제할 수만 있습니다. 자산을 체크 아웃하면 자산이 잠깁니다. 다른 사용자는 자산을 [!DNL Experience Manager] Assets에 다시 체크 인할 때까지 자산에서 이러한 작업을 수행할 수 없습니다. 그러나 잠긴 자산에 대한 메타데이터를 변경할 수 있습니다.
 
 자산을 체크 아웃하거나 체크 인할 수 있으려면 자산에 대해 쓰기 액세스 권한이 필요합니다.
 
@@ -58,13 +58,13 @@ Adobe Experience Manager (AEM) Assets를 사용하면 편집할 자산을 체크
 
    ![chlimage_1-475](assets/chlimage_1-475.png)
 
-   수정된 자산은 AEM Assets에 체크 인되며, 다른 사용자가 편집할 수 있습니다.
+   수정된 자산은 [!DNL Assets]에 체크 인되며, 다른 사용자가 편집할 수 있습니다.
 
 ## 강제 체크인 {#forced-check-in}
 
 관리자는 다른 사용자가 체크 아웃한 자산을 체크 인할 수 있습니다.
 
-1. 관리자로 AEM Assets에 로그인합니다.
+1. 관리자로 [!DNL Assets]에 로그인합니다.
 1. 자산 UI에서 다른 사용자가 체크 아웃한 자산을 한 개 이상 선택합니다.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)

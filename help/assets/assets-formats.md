@@ -1,22 +1,22 @@
 ---
-title: AEM Assets에서 지원되는 파일 형식
-description: AEM Assets에서 지원하는 파일 형식 및 MIME 유형과 각 형식에 대해 지원되는 기능 목록입니다.
+title: 'Assets에서 지원되는 파일 형식 [!DNL Experience Manager] '
+description: 자산에서 지원하는 파일 형식 및 MIME 유형과 각 형식에 대해 지원되는 기능 목록입니다.
 contentOwner: AG
-feature: 자산 관리,표현물
+feature: Asset Management,Renditions
 role: User,Admin
 exl-id: ee25fe8f-36fb-42b3-9f90-0ea77bc02e2f
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1635'
 ht-degree: 9%
 
 ---
 
-# AEM Assets에서 지원되는 파일 형식 {#assets-supported-formats}
+# [!DNL Adobe Experience Manager Assets]에서 지원되는 파일 형식 {#assets-supported-formats}
 
-AEM Assets은 다양한 파일 형식을 지원하며 각 기능은 다양한 MIME 유형에 대한 다양한 지원을 제공합니다.
+[!DNL Experience Manager Assets] 는 다양한 파일 형식을 지원하며 각 기능은 다양한 MIME 유형에 대한 다양한 지원을 제공합니다.
 
-AEM Assets을 다른 표준 준수 DAM(Digital Asset Management) 솔루션 및 데스크탑 소프트웨어와 통합하려면 Adobe의 XMP(Extensible Metadata Platform)를 사용합니다.
+[!DNL Assets]을 다른 표준 호환 DAM(디지털 자산 관리) 솔루션 및 데스크탑 소프트웨어와 통합하려면 Adobe의 XMP(Extensible Metadata Platform)를 사용하십시오.
 
 지원 수준을 이해하려면 범례를 사용합니다.
 
@@ -111,7 +111,7 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 
 ## Camera Raw {#supported-camera-raw}
 
-Adobe Camera Raw 라이브러리를 사용하면 AEM Assets에서 원시 이미지를 수집할 수 있습니다. [Camera Raw 지원](camera-raw.md)을 참조하십시오.
+Adobe Camera Raw 라이브러리를 사용하면 [!DNL Assets]이(가) 원시 이미지를 수집할 수 있습니다. [Camera Raw 지원](camera-raw.md)을 참조하십시오.
 
 ## 문서 형식 {#supported-document-formats}
 
@@ -217,7 +217,7 @@ Dynamic Media 기능에 대해 지원되는 문서 형식은 다음과 같습니
 
 지원되는 아카이브 형식 및 공통 DAM 워크플로우의 적용 사례는 다음 표에서 다룹니다.
 
-| 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | Dynamic Media 게재 |
+| 형식 | 저장 용량 | 버전 관리 | 워크플로 | 게시 | 액세스 제어 | Dynamic Media 게재 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
@@ -231,7 +231,7 @@ Dynamic Media 기능에 대해 지원되는 문서 형식은 다음과 같습니
 
 다른 몇 가지 파일 형식에 대한 일반적인 DAM 워크플로우의 적용성은 아래 표에 설명되어 있습니다.
 
-| 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | Dynamic Media 게재 |
+| 형식 | 저장 용량 | 버전 관리 | 워크플로 | 게시 | 액세스 제어 | Dynamic Media 게재 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | **#** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
@@ -244,7 +244,7 @@ Dynamic Media 기능에 대해 지원되는 문서 형식은 다음과 같습니
 
 ## 지원되는 MIME 유형 {#supported-mime-types}
 
-기본적으로 AEM은 파일 확장자를 사용하여 파일 유형을 감지합니다. AEM은 파일의 내용에서 검색할 수 있습니다. 후자의 경우, AEM 웹 콘솔에서 [!UICONTROL 일 CQ DAM MIME 유형 서비스]에서 [!UICONTROL 컨텐츠에서 MIME 감지 옵션을 선택합니다.]
+기본적으로 [!DNL Experience Manager]은 파일 확장자를 사용하여 파일 유형을 감지합니다. [!DNL Experience Manager] 은 파일의 내용에서 검색할 수 있습니다. 후자의 경우 [!DNL Experience Manager] 웹 콘솔에서 [!UICONTROL 일 CQ DAM MIME 유형 서비스]에서 [!UICONTROL 컨텐츠에서 MIME 감지 옵션을 선택합니다.]
 
 지원되는 MIME 유형 목록은 `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes` CRXDE Lite에서 사용할 수 있습니다.
 

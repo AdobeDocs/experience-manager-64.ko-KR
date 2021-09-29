@@ -2,12 +2,12 @@
 title: 표현물로 XMP 원본에 쓰기
 description: XMP 원본에 쓰기 기능이 자산의 메타데이터 변경 사항을 자산의 모든 또는 특정 표현물에 전달하는 방법을 알아봅니다.
 contentOwner: AG
-feature: 메타데이터
+feature: Metadata
 role: User,Admin
 exl-id: 456f8c91-aacf-4db5-a329-2d1650ff0f2f
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '775'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ XMP 원본에 쓰기 기능을 사용하여 메타데이터 변경 사항을 자
 
 ![메타데이터](assets/metadata.png)
 
-이 경우 AEM Assets은 자산 계층에 저장된 자산 메타데이터에 대한 **[!UICONTROL Title]** 매개 변수에 변경 사항을 저장합니다.`dc:title`
+이 경우 [!DNL Experience Manager] Assets는 자산 계층에 저장된 자산 메타데이터에 대한 **[!UICONTROL Title]** 속성에 변경 사항을 저장합니다.`dc:title`
 
 ![metadata_stored](assets/metadata_stored.png)
 
@@ -67,13 +67,13 @@ PTIFF 표현물은 Dynamic Media 하이브리드 모드에서만 로컬로 만�
 
 [!DNL Experience Manager Assets] 에서는 자산을 수집할 때 자산 바이너리에서 읽히고 JCR에 저장된 XMP 메타데이터에 대한 속성/노드의 차단 목록 및 허용 목록 필터링을 모두 지원합니다.
 
-차단 목록을 사용하여 필터링하면 제외에 지정된 속성을 제외한 모든 XMP 메타데이터 속성을 가져올 수 있습니다. 그러나 대량의 XMP 메타데이터가 있는 INDD 파일(예: 10,000개의 속성이 있는 노드 1000개)과 같은 자산 유형의 경우 필터링할 노드의 이름을 항상 미리 알려지는 것은 아닙니다. 차단 목록을 사용하여 필터링하면 많은 XMP 메타데이터가 있는 많은 자산을 가져올 수 있는 경우 AEM 인스턴스 또는 클러스터에는 안정성 문제가 발생할 수 있습니다(예: 중단된 관찰 큐).
+차단 목록을 사용하여 필터링하면 제외에 지정된 속성을 제외한 모든 XMP 메타데이터 속성을 가져올 수 있습니다. 그러나 대량의 XMP 메타데이터가 있는 INDD 파일(예: 10,000개의 속성이 있는 노드 1000개)과 같은 자산 유형의 경우 필터링할 노드의 이름을 항상 미리 알려지는 것은 아닙니다. 차단 목록을 사용하여 필터링하면 많은 XMP 메타데이터가 있는 많은 자산을 가져올 수 있는 경우, [!DNL Experience Manager] 인스턴스 또는 클러스터에는 안정성 문제가 발생할 수 있습니다(예: 중단된 관찰 큐).
 
 허용 목록을 통해 XMP 메타데이터를 필터링하면 가져올 XMP 속성을 정의할 수 있으므로 이 문제가 해결됩니다. 이렇게 하면 다른 모든 또는 알 수 없는 XMP 속성이 무시됩니다. 이전 버전과의 호환성을 위해 차단 목록을 사용하는 필터에 이러한 속성 중 일부를 추가할 수 있습니다.
 
 >[!NOTE]
 >
->필터링은 자산 바이너리의 XMP 소스에서 파생된 속성에만 작동합니다. EXIF 및 IPTC 형식과 같이 비 XMP 소스에서 파생된 속성의 경우 필터링이 작동하지 않습니다. 예를 들어, 자산 생성 날짜는 EXIF TIFF의 `CreateDate` 속성에 저장됩니다. AEM은 이 값을 `exif:DateTimeOriginal` 메타데이터 필드에 저장합니다. 소스가 XMP이 아닌 소스이므로 이 속성은 필터링이 작동하지 않습니다.
+>필터링은 자산 바이너리의 XMP 소스에서 파생된 속성에만 작동합니다. EXIF 및 IPTC 형식과 같이 비 XMP 소스에서 파생된 속성의 경우 필터링이 작동하지 않습니다. 예를 들어, 자산 생성 날짜는 EXIF TIFF의 `CreateDate` 속성에 저장됩니다. [!DNL Experience Manager] 이 값을 라는 메타데이터 필드에 저장합니다 `exif:DateTimeOriginal`. 소스가 XMP이 아닌 소스이므로 이 속성은 필터링이 작동하지 않습니다.
 
 1. `https://[aem_server]:[port]/system/console/configMgr`에서 구성 관리자를 엽니다.
 1. **[!UICONTROL Adobe CQ DAM XmpFilter]** 구성을 엽니다.

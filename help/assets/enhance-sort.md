@@ -1,28 +1,28 @@
 ---
 title: AEM에서 자산 정렬이 개선되었습니다.
-description: AEM Assets에서 클라이언트 측의 배치로 정렬하는 대신 서버 측 정렬을 배포하여 폴더 자산 또는 검색 쿼리를 한 번에 정렬하는 방법을 알아봅니다.
+description: 'Assets에서 서버 측 정렬을 배포하여 폴더 자산을 정렬하거나 클라이언트 측의 배치로 정렬하는 대신 한 번에 검색 쿼리를 배포하는 방법을 알아봅니다. [!DNL Experience Manager] '
 contentOwner: AG
-feature: 검색
+feature: Search
 role: User
 exl-id: aa24ca68-d94e-4bd4-a5cc-113906650a2e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '433'
 ht-degree: 5%
 
 ---
 
-# AEM에서 자산 정렬이 개선되었습니다. {#enhanced-sorting-of-assets-in-aem}
+# [!DNL Experience Manager]에 있는 자산의 정렬이 개선되었습니다. {#enhanced-sorting-of-assets-in-aem}
 
-AEM Assets에서 클라이언트 측의 배치로 정렬하는 대신 서버 측 정렬을 배포하여 폴더 자산 또는 검색 쿼리를 한 번에 정렬하는 방법을 알아봅니다.
+[!DNL Experience Manager] Assets에서 서버 측 정렬을 배포하여 폴더 자산을 정렬하거나 클라이언트 측에서 배치로 정렬하는 대신 한 번에 검색 쿼리를 배포하는 방법을 알아봅니다.
 
-폴더 목록 보기 및 검색 결과 페이지에서 많은 수의 자산을 효율적으로 정렬하도록 Adobe Experience Manager(AEM) Assets의 검색 기능이 향상되었습니다. 타임라인 항목을 정렬할 수도 있습니다.
+Adobe Experience Manager Assets의 검색 기능이 향상되어 폴더 목록 보기 및 검색 결과 페이지에서 많은 자산을 효율적으로 정렬할 수 있습니다. 타임라인 항목을 정렬할 수도 있습니다.
 
-AEM Assets에서는 서버측 정렬을 배포하여 폴더 또는 클라이언트 측의 배치로 정렬하는 대신 한 번에 검색 쿼리 내에서 전체 자산(몇 번 큰 자산)을 정렬합니다. 이렇게 하면 사용자 인터페이스에 프리페치된 결과를 빠르게 표시할 수 있으므로 정렬 작업이 보다 응답적이고 신속하게 수행될 수 있습니다.
+[!DNL Experience Manager] Assets는 서버측 정렬을 배포하여 클라이언트 측의 배치로 정렬하는 대신 폴더 내 또는 한 번에 검색 쿼리 내의 전체 자산(어느 정도의 크기)을 정렬합니다. 이렇게 하면 사용자 인터페이스에 프리페치된 결과를 빠르게 표시할 수 있으므로 정렬 작업이 보다 응답적이고 신속하게 수행될 수 있습니다.
 
 ## 목록 보기에서 자산 정렬 {#sorting-assets-in-list-view}
 
-AEM Assets을 사용하면 다음 필드를 기반으로 폴더 자산을 정렬할 수 있습니다.
+[!DNL Experience Manager] Assets에서는 다음 필드를 기반으로 폴더 자산을 정렬할 수 있습니다.
 
 * 로케일
 * 상태
@@ -75,7 +75,7 @@ AEM Assets을 사용하면 다음 필드를 기반으로 폴더 자산을 정렬
 
 ## 타임라인에서 자산 정렬 {#sorting-assets-in-timeline}
 
-AEM Assets을 사용하면 주석, 버전, 워크플로우 및 활동과 같은 타임라인 항목을 시간순으로 정렬할 수 있습니다.
+[!DNL Assets] 주석, 버전, 워크플로우 및 활동과 같은 타임라인 항목을 시간순으로 정렬할 수 있습니다.
 
 1. 자산 UI에서 타임라인을 표시할 자산을 선택합니다.
 1. GlobalNav 아이콘을 클릭/탭하고 **[!UICONTROL 타임라인]**&#x200B;을 선택합니다.

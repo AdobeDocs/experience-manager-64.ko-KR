@@ -1,20 +1,20 @@
 ---
 title: AEM에서 자산 검색
-description: 필터 패널을 사용하여 AEM에서 필요한 자산을 찾는 방법과 검색에 표시되는 자산을 사용하는 방법을 알아봅니다.
+description: 필터 패널을 사용하여 [!DNL Experience Manager] 에서 필요한 자산을 찾는 방법과 검색에 표시되는 자산을 사용하는 방법을 알아봅니다.
 contentOwner: AG
-feature: 검색,메타데이터
+feature: Search,Metadata
 role: User
 exl-id: cc1a5946-e13d-4433-a25a-d297fd07e2e4
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 3%
+source-wordcount: '549'
+ht-degree: 2%
 
 ---
 
-# AEM에서 자산 검색 {#search-assets-in-aem}
+# [!DNL Experience Manager]에서 자산 검색 {#search-assets-in-aem}
 
-필터 패널을 사용하여 AEM에서 필요한 자산을 찾는 방법과 검색에 표시되는 자산을 사용하는 방법을 알아봅니다.
+필터 패널을 사용하여 [!DNL Experience Manager]에서 필요한 자산을 찾는 방법과 검색에 표시되는 자산을 사용하는 방법을 알아봅니다.
 
 필터 패널을 사용하여 자산, 폴더, 태그 및 메타데이터를 검색합니다. 와일드카드 별표를 사용하여 문자열의 일부를 검색할 수 있습니다.
 

@@ -2,19 +2,19 @@
 title: 비디오 표현물
 description: 비디오 표현물
 contentOwner: AG
-feature: 비디오,표현물
+feature: Video,Renditions
 role: User
 exl-id: 9fc93034-e83a-42b5-901d-7867b4a850a8
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '220'
 ht-degree: 3%
 
 ---
 
 # 비디오 표현물 {#video-renditions}
 
-Adobe Experience Manager(AEM) Assets는 OGG, FLV 등을 포함하여 다양한 형식의 비디오 자산에 대한 비디오 표현물을 생성합니다.
+Adobe Experience Manager Assets는 OGG, FLV 등을 포함하여 다양한 형식의 비디오 자산에 대한 비디오 표현물을 생성합니다.
 
 AEM Assets은 미디어 자산에 대한 정적 및 동적 표현물(DM 인코딩 표현물)을 지원합니다.
 

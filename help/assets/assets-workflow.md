@@ -2,12 +2,12 @@
 title: 자산을 처리하여 비즈니스 프로세스를 수행하고, 감사를 수행하고, 규정을 준수하고, 기본적인 안정성을 유지합니다
 description: 자산 처리를 통해 형식을 변환하고, 표현물을 만들고, 자산을 관리하고, 자산을 확인하고, 워크플로우를 실행합니다.
 contentOwner: AG
-feature: 워크플로우,표현물
+feature: Workflow,Renditions
 role: User,Admin
 exl-id: 4fb3d12c-feac-45b9-8d09-3b6995591b3d
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1032'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
 >
 >[!UICONTROL 활성화 요청] 및 [!UICONTROL 비활성화 요청]과 같은 클래식 UI에서 사용할 수 없는 워크플로우는 [워크플로우 모델 만들기](/help/sites-developing/workflows-models.md#make-workflow-models-available-in-touchui)를 참조하십시오.
 
-## AEM 자산에 워크플로우 적용 {#apply-a-workflow-to-an-aem-asset}
+## [!DNL Experience Manager] 자산에 워크플로우 적용 {#apply-a-workflow-to-an-aem-asset}
 
 <!-- 
 TBD: Add animated GIF for these steps instead of all these screenshots.
@@ -111,7 +111,7 @@ TBD: Add animated GIF for these steps instead of all these screenshots.
 >[!MORELIKETHIS]
 >
 >* [워크플로우 적용 및 참여](/help/sites-authoring/workflows.md)
-* [워크플로우 모델 만들기 및 워크플로우 기능 확장](/help/sites-developing/workflows.md)
-* [워크플로우 실행 방법](/help/sites-administering/workflows-starting.md)
-* [워크플로우 모범 사례](/help/sites-developing/workflows-best-practices.md)
+>* [워크플로우 모델 만들기 및 워크플로우 기능 확장](/help/sites-developing/workflows.md)
+>* [워크플로우 실행 방법](/help/sites-administering/workflows-starting.md)
+>* [워크플로우 모범 사례](/help/sites-developing/workflows-best-practices.md)
 

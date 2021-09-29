@@ -5,12 +5,12 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 1c011496-be6e-470b-9da8-48db8c6d1108
 contentOwner: AG
 discoiquuid: a5aab094-8b2d-4a23-890f-be6f9e5137bd
-feature: 태깅,메타데이터,스마트 태그
+feature: Tagging,Metadata,Smart Tags
 role: User
 exl-id: 14241f8d-fd0b-4bcf-b2bb-1d0e52bf7748
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
@@ -25,19 +25,19 @@ ht-degree: 0%
 
 **수량 및 크기:** 태그당  **최소 30개의 이미지**. 더 긴 면에서 최소 500픽셀입니다.
 
-**일관성**:태그의 이미지는 시각적으로 유사해야 합니다.
+**일관성**: 태그의 이미지는 시각적으로 유사해야 합니다.
 
 예를 들어, 이러한 모든 이미지에 시각적 유사하지 않으므로 *my-party*(교육용)로 태그를 지정하는 것은 좋지 않습니다.
 
 ![교육 지침을 보여주는 실례가 되는 이미지](assets/do-not-localize/coherence.png)
 
-**적용 범위**:훈련 중에는 다양한 이미지가 있어야 합니다. 그 아이디어는 AEM이 올바른 것에 집중하도록 몇 가지 하지만 상당히 다양한 예를 제공하는 것입니다. 시각적으로 다른 이미지에 동일한 태그를 적용하는 경우 각 종류의 최소 5개의 예를 포함합니다.
+**적용 범위**: 훈련 중에는 다양한 이미지가 있어야 합니다. 그 아이디어는 [!DNL Experience Manager]이 올바른 것에 초점을 맞추도록 몇 가지 하지만 상당히 다양한 예를 제공하는 것입니다. 시각적으로 다른 이미지에 동일한 태그를 적용하는 경우 각 종류의 최소 5개의 예를 포함합니다.
 
 예를 들어, *model-down-pose* 태그의 경우, 서비스가 태깅 중에 유사한 이미지를 더 정확하게 식별하기 위해 아래 강조 표시된 이미지와 유사한 더 많은 교육 이미지를 포함합니다.
 
 ![교육 지침을 보여주는 실례가 되는 이미지](assets/do-not-localize/coverage_1.png)
 
-**방해/장애**:이 서비스는 집중을 덜 하는 이미지(잘 보이는 배경, 주제와 함께 있는 개체/사람과 같은 관련이 없는 인물)에서 더 잘 훈련한다.
+**방해/장애**: 이 서비스는 집중을 덜 하는 이미지(잘 보이는 배경, 주제와 함께 있는 개체/사람과 같은 관련이 없는 인물)에서 더 잘 훈련한다.
 
 예를 들어 *캐주얼-신발* 태그의 경우 두 번째 이미지는 올바른 훈련 후보자가 아닙니다.
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 * 이미지의 미묘한 차이를 인식하지 못합니다. 예를 들면, 슬림한 셔츠와 일반 맞춤 셔츠입니다.
 * 이미지의 작은 패턴/부분을 기반으로 태그를 식별할 수 없음 예를 들어, 티셔츠의 로고는
-* 태깅은 AEM에서 지원되는 로케일에서 지원됩니다. 언어 목록을 보려면 [Smart Content Services 릴리스 노트](/help/release-notes/smart-content-service-release-notes.md)를 참조하십시오.
+* 태깅은 [!DNL Experience Manager]에서 지원되는 로케일에서 지원됩니다. 언어 목록을 보려면 [Smart Content Services 릴리스 노트](/help/release-notes/smart-content-service-release-notes.md)를 참조하십시오.
 
 스마트 태그가 있는 자산을 검색하려면(일반 또는 고급) 자산 옴니 검색(전체 텍스트 검색)을 사용합니다. 스마트 태그에 대한 별도의 검색 설명이 없습니다.
 

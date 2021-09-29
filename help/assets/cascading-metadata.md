@@ -2,12 +2,12 @@
 title: 계단식 메타데이터
 description: 이 문서에서는 자산에 대한 계단식 메타데이터를 정의하는 방법을 설명합니다.
 contentOwner: AG
-feature: 메타데이터
+feature: Metadata
 role: User,Admin
 exl-id: ea6187e8-075d-4666-afc5-01c97deccc11
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 * 다른 필드에 지정된 값을 기준으로 특정 필드에 대해 표시되는 선택 사항을 변경합니다.
 * 다른 필드에 지정된 값을 기반으로 특정 필드에 기본 메타데이터 값을 설정합니다.
 
-## AEM에서 계단식 메타데이터 구성 {#configure-cascading-metadata-in-aem}
+## [!DNL Experience Manager]에서 계단식 메타데이터 구성 {#configure-cascading-metadata-in-aem}
 
 선택한 자산 유형에 따라 계단식 메타데이터를 표시하려는 시나리오를 생각해 보십시오. 몇 가지 예
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 선택한 자산 유형에 관계없이 저작권 정보를 필수 필드로 표시합니다.
 
-1. AEM 로고를 탭/클릭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 스키마]**&#x200B;로 이동합니다.
+1. [!DNL Experience Manager] 로고를 탭/클릭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 스키마]**&#x200B;로 이동합니다.
 1. **[!UICONTROL 스키마 Forms]** 페이지에서 스키마 양식을 선택한 다음, 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 탭/클릭하여 스키마를 편집합니다.
 
    ![select_form](assets/select_form.png)
@@ -60,7 +60,7 @@ ht-degree: 0%
 1. 키-값 쌍은 양식 사용자에게 제공되는 옵션입니다. 수동으로 또는 JSON 파일에서 키-값 쌍을 제공할 수 있습니다.
 
    * 값을 수동으로 지정하려면 **[!UICONTROL 수동으로 추가]**&#x200B;를 선택하고 **[!UICONTROL 선택 추가]**&#x200B;를 탭/클릭하고 옵션 텍스트와 값을 지정합니다. 예를 들어, 비디오, PDF, Word 및 이미지 자산 유형을 지정합니다.
-   * JSON 파일에서 값을 동적으로 가져오려면 **[!UICONTROL JSON 경로 추가]**&#x200B;를 선택하고 JSON 파일의 경로를 제공합니다. AEM은 양식이 사용자에게 표시될 때 실시간으로 키-값 쌍을 가져옵니다.
+   * JSON 파일에서 값을 동적으로 가져오려면 **[!UICONTROL JSON 경로 추가]**&#x200B;를 선택하고 JSON 파일의 경로를 제공합니다. [!DNL Experience Manager] 사용자에게 양식이 표시될 때 실시간으로 키-값 쌍을 가져옵니다.
 
    두 옵션 모두 함께 사용할 수 없습니다. JSON 파일에서 옵션을 가져오고 수동으로 편집할 수 없습니다.
 
@@ -115,8 +115,8 @@ ht-degree: 0%
 
    ![비디오 자산에 대한 계단식 메타데이터](assets/video_asset.png)
 
-   *그림:비디오 자산에 대한 계단식 메타데이터*
+   *그림: 비디오 자산에 대한 계단식 메타데이터*
 
    ![문서 자산에 대한 계단식 메타데이터](assets/doc_type_fields.png)
 
-   *그림:문서 자산에 대한 계단식 메타데이터*
+   *그림: 문서 자산에 대한 계단식 메타데이터*

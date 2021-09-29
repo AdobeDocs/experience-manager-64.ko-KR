@@ -2,12 +2,12 @@
 title: 자산 통찰력 기능을 사용하여 이미지 사용을 추적합니다
 description: 자산 통찰력 기능을 사용하면 타사 웹 사이트, 마케팅 캠페인 및 Adobe의 크리에이티브 솔루션에서 사용되는 이미지의 사용자 등급 및 사용 통계를 추적할 수 있습니다.
 contentOwner: AG
-feature: 자산 통찰력,자산 보고서
+feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '793'
 ht-degree: 0%
 
 ---
@@ -42,10 +42,10 @@ ht-degree: 0%
 
 1. **[!UICONTROL 사용 통계]** 섹션을 검토하여 자산이 속한 엔티티와 최근에 사용한 크리에이티브 솔루션을 알아봅니다. 사용량이 많을수록 사용자 간에 자산이 인기 있을 가능성이 높습니다. 사용 데이터는 다음 헤드 아래에 표시됩니다.
 
-   * **[!UICONTROL 자산]**:자산이 컬렉션 또는 복합 자산의 일부인 횟수입니다
-   * **[!UICONTROL 웹 및 모바일]**:자산이 웹 사이트 및 앱의 일부인 횟수
-   * **[!UICONTROL 소셜]**:Adobe Social 및 Adobe Campaign과 같은 솔루션에서 자산이 사용된 횟수입니다
-   * **[!UICONTROL 이메일]**:이메일 캠페인에 자산이 사용된 횟수입니다
+   * **[!UICONTROL 자산]**: 자산이 컬렉션 또는 복합 자산의 일부인 횟수입니다
+   * **[!UICONTROL 웹 및 모바일]**: 자산이 웹 사이트 및 앱의 일부인 횟수
+   * **[!UICONTROL 소셜]**: Adobe Social 및 Adobe Campaign과 같은 솔루션에서 자산이 사용된 횟수입니다
+   * **[!UICONTROL 이메일]**: 이메일 캠페인에 자산이 사용된 횟수입니다
 
    ![usage_statistics](assets/usage_statistics.png)
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 Assets Insights는 Adobe Analytics 보고서 세트의 자산에 대한 사용 데이터를 정기적으로 가져옵니다. 기본적으로 자산 인사이트는 데이터 가져오기에 대해 오전 2시에 24시간마다 백그라운드 작업을 실행합니다. 그러나 웹 콘솔에서 **[!UICONTROL Adobe CQ DAM 자산 성능 보고서 동기화 작업]** 서비스를 구성하여 빈도 및 시간을 모두 수정할 수 있습니다.
 
-1. AEM 로고를 탭하고 **[!UICONTROL 도구 > 작업 > 웹 콘솔]**&#x200B;로 이동합니다.
+1. [!DNL Experience Manager] 로고를 탭하고 **[!UICONTROL 도구 > 작업 > 웹 콘솔]**&#x200B;로 이동합니다.
 1. **[!UICONTROL Adobe CQ DAM 자산 성능 보고서 동기화 작업]** 서비스 구성을 엽니다.
 
    ![chlimage_1-304](assets/chlimage_1-304.png)

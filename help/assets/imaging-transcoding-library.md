@@ -2,12 +2,12 @@
 title: 이미징 코드 변환 라이브러리
 description: 인코딩, 코드 변환, 이미지 리샘플링, 이미지 크기 조정 등 핵심 이미지 처리 기능을 수행할 수 있는 Adobe의 이미지 처리 솔루션인 Imaging Transcoding 라이브러리를 구성하고 사용하는 방법을 알아봅니다.
 contentOwner: AG
-feature: 표현물,개발자 도구,자산 처리
+feature: Renditions,Developer Tools,Asset Processing
 role: Admin
 exl-id: 0314626d-e846-4f10-950e-6c1ceb7f4c06
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,8 @@ Adobe의 이미징 코드 변환 라이브러리는 다음과 같은 핵심 이�
 
 Imaging Transcoding Library는 다양한 파일 형식 및 프로필을 지원할 뿐만 아니라 성능, 확장성 및 품질 측면에서 다른 타사 솔루션보다 큰 이점을 제공합니다. Imaging Transcoding 라이브러리를 사용하면 다음과 같은 몇 가지 주요 이점이 있습니다.
 
-* **파일 크기 또는 해상도를 높여 크기 조정**:크기 조절은 주로 파일을 디코딩하는 동안 크기를 재조정할 수 있는 Imaging Transcoding Library의 특허 기능을 통해 수행됩니다. 이러한 기능을 통해 런타임 메모리 사용이 항상 최적의 상태로 유지되며 파일 크기 또는 해상도의 메가픽셀을 증가시키는 이차 기능이 아닙니다. 이미징 코드 변환 라이브러리는 더 크고 고해상도(더 높은 메가픽셀 포함) 파일을 처리할 수 있습니다. ImageMagick와 같은 타사 도구는 이러한 파일을 처리하는 동안 큰 파일 및 충돌을 처리할 수 없습니다.
-* **Photoshop 품질 압축 및 크기 조정 알고리즘**:다운샘플링(매끄러운, 날카롭고 자동 쌍입방) 및 압축 품질 측면에서 업계 표준과 일관성 유지 Imaging Transcoding Library는 입력 이미지의 품질 요소를 추가로 평가하며 출력 이미지에 최적의 테이블 및 품질 설정을 지능적으로 사용합니다. 이 기능은 시각적 품질을 손상시키지 않고 최적의 크기의 파일을 생성합니다.
+* **파일 크기 또는 해상도를 높여 크기 조정**: 크기 조절은 주로 파일을 디코딩하는 동안 크기를 재조정할 수 있는 Imaging Transcoding Library의 특허 기능을 통해 수행됩니다. 이러한 기능을 통해 런타임 메모리 사용이 항상 최적의 상태로 유지되며 파일 크기 또는 해상도의 메가픽셀을 증가시키는 이차 기능이 아닙니다. 이미징 코드 변환 라이브러리는 더 크고 고해상도(더 높은 메가픽셀 포함) 파일을 처리할 수 있습니다. ImageMagick와 같은 타사 도구는 이러한 파일을 처리하는 동안 큰 파일 및 충돌을 처리할 수 없습니다.
+* **Photoshop 품질 압축 및 크기 조정 알고리즘**: 다운샘플링(매끄러운, 날카롭고 자동 쌍입방) 및 압축 품질 측면에서 업계 표준과 일관성 유지 Imaging Transcoding Library는 입력 이미지의 품질 요소를 추가로 평가하며 출력 이미지에 최적의 테이블 및 품질 설정을 지능적으로 사용합니다. 이 기능은 시각적 품질을 손상시키지 않고 최적의 크기의 파일을 생성합니다.
 * **높은 처리량:**  응답 시간이 낮고 처리량이 ImageMagick보다 일관되게 높습니다. 따라서 이미징 코드 변환 라이브러리는 사용자의 대기 시간과 호스팅 비용을 줄일 수 있습니다.
 * **동시 로드로 더 크기 조정:** 이미징 코드 변환 라이브러리는 동시 로드 조건에서 최적으로 수행됩니다. 최적의 CPU 성능, 메모리 사용 및 낮은 응답 시간으로 높은 처리량을 제공하여 호스팅 비용을 절감할 수 있습니다.
 
@@ -78,7 +78,7 @@ ITL 처리를 구성하려면 구성 파일을 만들고 워크플로우를 업�
 
 라이브러리를 구성하려면 다음 단계를 사용하여 라이브러리를 나타내는 .conf 파일을 만듭니다. 관리자 또는 루트 권한이 필요합니다.
 
-1. 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg)에서 [이미징 코드 변환 라이브러리 패키지를 다운로드하고 패키지 관리자를 사용하여 설치합니다. 패키지는 AEM 6.5와 호환됩니다.
+1. 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg)에서 [이미징 코드 변환 라이브러리 패키지를 다운로드하고 패키지 관리자를 사용하여 설치합니다. 패키지는 [!DNL Experience Manager] 6.5와 호환됩니다.
 
 1. `com.day.cq.dam.cq-dam-switchengine`에 대한 번들 ID를 알아보려면 웹 콘솔에 로그인하고 **[!UICONTROL OSGi > 번들]**&#x200B;을 탭하십시오. 또는 번들 콘솔을 열려면 `https://[aem_server:[port]/system/console/bundles/` URL에 액세스합니다. `com.day.cq.dam.cq-dam-switchengine` 번들과 해당 ID를 찾습니다.
 
@@ -109,7 +109,7 @@ ITL 처리를 구성하려면 구성 파일을 만들고 워크플로우를 업�
 
 이미지를 처리하기 위해 라이브러리를 사용하도록 [!UICONTROL DAM 자산 업데이트] 워크플로우를 업데이트합니다.
 
-1. AEM 로고를 탭/클릭하고 **[!UICONTROL 도구 > 워크플로우 > 모델]**&#x200B;으로 이동합니다.
+1. [!DNL Experience Manager] 로고를 탭/클릭하고 **[!UICONTROL 도구 > 워크플로우 > 모델]**&#x200B;으로 이동합니다.
 
 1. **[!UICONTROL 워크플로우 모델]** 페이지에서 편집 모드에서 **[!UICONTROL DAM 자산 업데이트]** 워크플로우 모델을 엽니다.
 

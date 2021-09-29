@@ -1,20 +1,20 @@
 ---
 title: 비공개 폴더 공유
-description: Adobe Experience Manager (AEM) Assets에서 비공개 폴더를 만들고 다른 사용자와 공유하고, 이들에게 다양한 권한을 할당하는 방법을 알아보십시오.
+description: Adobe Experience Manager Assets에서 비공개 폴더를 만들고 다른 사용자와 공유하고, 이들에게 다양한 권한을 할당하는 방법을 알아보십시오.
 contentOwner: AG
-feature: 협업
+feature: Collaboration
 role: User
 exl-id: b6aa3cba-4085-47ac-a249-7461baee2a00
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '445'
 ht-degree: 4%
 
 ---
 
 # 비공개 폴더 공유 {#private-folder-sharing}
 
-배타적으로 사용할 수 있는 Adobe Experience Manager (AEM) Assets 사용자 인터페이스에서 비공개 폴더를 만들 수 있습니다. 이 비공개 폴더를 다른 사용자에게 공유하고 다양한 권한을 할당할 수 있습니다. 사용자가 지정하는 권한 수준에 따라 폴더에서 다양한 작업을 수행할 수 있습니다. 예를 들어 폴더 내의 자산을 보거나 자산을 편집할 수 있습니다.
+배타적으로 사용할 수 있는 Adobe Experience Manager Assets 사용자 인터페이스에서 비공개 폴더를 만들 수 있습니다. 이 비공개 폴더를 다른 사용자에게 공유하고 다양한 권한을 할당할 수 있습니다. 사용자가 지정하는 권한 수준에 따라 폴더에서 다양한 작업을 수행할 수 있습니다. 예를 들어 폴더 내의 자산을 보거나 자산을 편집할 수 있습니다.
 
 1. Assets 콘솔의 도구 모음에서 **[!UICONTROL 만들기]** 를 탭/클릭한 다음 메뉴에서 **[!UICONTROL 폴더]**&#x200B;를 선택합니다.
 
@@ -44,9 +44,9 @@ ht-degree: 4%
    >
    >폴더를 공유하는 사용자에게 편집기, 소유자 또는 뷰어와 같은 다양한 역할을 할당할 수 있습니다. 사용자에게 소유자 역할을 할당하는 경우 사용자에게 폴더에 대한 편집기 권한이 있습니다. 또한 사용자는 다른 사용자와 폴더를 공유할 수 있습니다. 편집기 역할을 할당하는 경우 사용자는 개인 폴더에서 자산을 편집할 수 있습니다. 뷰어 역할을 할당하는 경우 사용자는 비공개 폴더의 자산만 볼 수 있습니다.
 
-1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 사용자가 AEM Assets에 로그인할 때 지정하는 역할에 따라 개인 폴더에 대한 권한 세트가 할당됩니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 사용자가 [!DNL Experience Manager] 자산에 로그인할 때 지정하는 역할에 따라 개인 폴더에 대한 권한 세트가 할당됩니다.
 1. **[!UICONTROL 확인]**&#x200B;을 클릭하여 확인 메시지를 닫습니다.
-1. 폴더를 공유하는 사용자는 공유 알림을 받습니다. 알림을 보려면 사용자의 자격 증명으로 AEM Assets에 로그인합니다.
+1. 폴더를 공유하는 사용자는 공유 알림을 받습니다. 알림을 보려면 사용자 자격 증명으로 [!DNL Experience Manager] 자산에 로그인합니다.
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 

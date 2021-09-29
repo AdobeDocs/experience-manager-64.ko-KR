@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
-source-git-commit: 2b3a6972d703314d56d3dc711fb6a514cb1942d5
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '674'
 ht-degree: 1%
 
 ---
@@ -22,10 +22,10 @@ Adobe Dynamic Tag Management는 디지털 마케팅 도구를 활성화하는 �
 
 DTM을 통해 자산 통찰력을 활성화하려면 다음 단계를 수행하십시오.
 
-1. AEM 로고를 탭/클릭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 통찰력 구성]**&#x200B;으로 이동합니다.
-1. [DTM Cloud Service을 사용하여 AEM 인스턴스 구성](../sites-administering/dtm.md)
+1. [!DNL Experience Manager] 로고를 탭/클릭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 인사이트 구성]**&#x200B;으로 이동합니다.
+1. [DTM Cloud Service을 사용하여 [!DNL Experience Manager] 인스턴스 구성](../sites-administering/dtm.md)
 
-   API 토큰은 [https://dtm.adobe.com](https://dtm.adobe.com/)에 로그인하고 프로필 아이콘에서 **[!UICONTROL 계정 설정]**&#x200B;을 방문한 후에 사용할 수 있어야 합니다. Assets Insights와 AEM Sites의 통합이 아직 작동 중이기 때문에 이 단계는 자산 통찰력 측면에서 필요하지 않습니다.
+   API 토큰은 [https://dtm.adobe.com](https://dtm.adobe.com/)에 로그인하고 프로필 아이콘에서 **[!UICONTROL 계정 설정]**&#x200B;을 방문한 후에 사용할 수 있어야 합니다. Assets Insights와 [!DNL Experience Manager Sites] 의 통합이 아직 작동 중이기 때문에 이 단계는 자산 통찰력 측면에서 필요하지 않습니다.
 
 1. [https://dtm.adobe.com](https://dtm.adobe.com/)에 로그온하고 적절한 방법으로 회사를 선택합니다.
 1. 기존 웹 속성 만들기/열기
@@ -43,7 +43,7 @@ DTM을 통해 자산 통찰력을 활성화하려면 다음 단계를 수행하�
 
    ![chlimage_1-195](assets/chlimage_1-195.png)
 
-1. AEM 로고를 탭/클릭하고 **[!UICONTROL 도구 > Assets]**&#x200B;로 이동합니다.
+1. [!DNL Experience Manager] 로고를 탭/클릭하고 **[!UICONTROL 도구 > Assets]**&#x200B;로 이동합니다.
 1. **[!UICONTROL 인사이트 페이지 추적기]** 를 탭/클릭하고, 추적기 코드를 복사한 다음 6단계에서 연 스크립트 대화 상자에 붙여넣습니다. 변경 사항을 저장합니다.
 
    >[!NOTE]

@@ -1,24 +1,24 @@
 ---
 title: 자산 프록시 개발
-description: '프록시는 프록시 작업자를 사용하여 작업을 처리하는 AEM 인스턴스입니다. AEM 프록시, 지원되는 작업, 프록시 구성 요소를 구성하는 방법 및 사용자 정의 프록시 작업자를 개발하는 방법을 알아봅니다. '
+description: '프록시는 [!DNL Experience Manager] instance that uses proxy workers to process jobs. Learn how to configure an [!DNL Experience Manager] 프록시, 지원되는 작업, 프록시 구성 요소 및 사용자 지정 프록시 작업자를 개발하는 방법입니다. '
 contentOwner: AG
-feature: 자산 처리
+feature: Asset Processing
 role: Admin, Architect
 exl-id: c7511326-697e-4749-ab46-513cdbaa00d8
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
 # 자산 프록시 개발 {#assets-proxy-development}
 
-Adobe Experience Manager (AEM) Assets는 프록시를 사용하여 특정 작업에 대한 처리를 배포합니다.
+Adobe Experience Manager Assets는 프록시를 사용하여 특정 작업에 대한 처리를 배포합니다.
 
-프록시는 작업 처리 및 결과 생성을 담당하는 처리자로 프록시 작업자를 사용하는 특정(또는 경우에 따라 별개인) AEM 인스턴스입니다. 프록시 작업자는 다양한 작업에 사용될 수 있습니다. AEM Assets 프록시의 경우 AEM Assets 내에서 렌더링하기 위해 자산을 로드하는 데 사용할 수 있습니다. 예를 들어 [IDS 프록시 작업자](indesign.md)는 InDesign Server을 사용하여 AEM Assets에서 사용할 파일을 처리합니다.
+프록시는 작업을 처리하고 결과를 생성하는 처리자로 프록시 작업자를 사용하는 특정(그리고 경우에 따라 별개인) [!DNL Experience Manager] 인스턴스입니다. 프록시 작업자는 다양한 작업에 사용될 수 있습니다. [!DNL Experience Manager] 자산 프록시의 경우 이 프록시는 [!DNL Experience Manager] 자산 내에서 렌더링하기 위해 자산을 로드하는 데 사용할 수 있습니다. 예를 들어 [IDS 프록시 작업자](indesign.md)는 InDesign Server을 사용하여 [!DNL Experience Manager] 자산에 사용할 파일을 처리합니다.
 
-프록시가 별도의 AEM 인스턴스인 경우 AEM 작성 인스턴스의 로드를 줄이는 데 도움이 됩니다. 기본적으로 AEM Assets은 동일한 JVM에서 자산 처리 작업(프록시를 통해 외부화됨)을 실행하여 AEM 작성 인스턴스에서 로드를 줄입니다.
+프록시가 별도의 [!DNL Experience Manager] 인스턴스인 경우 [!DNL Experience Manager] 작성 인스턴스의 로드를 줄이는 데 도움이 됩니다. 기본적으로 [!DNL Experience Manager] Assets는 동일한 JVM에서 자산 처리 작업(프록시를 통해 외부화됨)을 실행하여 [!DNL Experience Manager] 작성 인스턴스에서 로드를 줄입니다.
 
 ## 프록시(HTTP 액세스) {#proxy-http-access}
 
@@ -110,7 +110,7 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 >
 >프록시 API에 대한 참조 설명서는 [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/commons/proxy/package-summary.html)에서 사용할 수 있습니다.
 
-프록시 및 프록시 작업자 구성은 모두 AEM Assets **도구** 콘솔 또는 `/etc/cloudservices/proxy`에서 액세스할 수 있는 클라우드 서비스 구성을 통해 사용할 수 있습니다. 각 프록시 작업자는 작업자별 구성 세부 정보(예: `/etc/cloudservices/proxy/workername`)에 대해 `/etc/cloudservices/proxy` 아래에 노드를 추가해야 합니다.
+프록시 및 프록시 작업자 구성은 모두 [!DNL Experience Manager] 자산 **도구** 콘솔 또는 `/etc/cloudservices/proxy`에서 액세스할 수 있는 클라우드 서비스 구성을 통해 사용할 수 있습니다. 각 프록시 작업자는 작업자별 구성 세부 정보(예: `/etc/cloudservices/proxy/workername`)에 대해 `/etc/cloudservices/proxy` 아래에 노드를 추가해야 합니다.
 
 >[!NOTE]
 >
@@ -133,9 +133,9 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 
 ### 사용자 지정된 프록시 작업자 개발 {#developing-a-customized-proxy-worker}
 
-[IDS 프록시 작업자](indesign.md)는 Indesign 자산의 처리를 아웃소싱하기 위해 이미 기본적으로 제공되는 AEM Assets 프록시 작업자의 예입니다.
+[IDS 프록시 작업자](indesign.md)는 Indesign 자산의 처리를 아웃소싱하기 위해 이미 기본적으로 제공되는 [!DNL Experience Manager] Assets 프록시 작업자의 예입니다.
 
-또한 고유한 AEM Assets 프록시 작업자를 개발 및 구성하여 전문 작업자를 만들고 AEM Assets 처리 작업을 발송하고 아웃소싱할 수도 있습니다.
+또한 고유한 [!DNL Experience Manager] Assets 프록시 작업자를 개발 및 구성하여 전문 작업자를 만들어 [!DNL Experience Manager] Assets 처리 작업을 발송하고 아웃소싱할 수도 있습니다.
 
 고유한 사용자 지정 프록시 작업자를 설정하려면 다음을 수행해야 합니다.
 
@@ -177,12 +177,12 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 
 >[!NOTE]
 >
->AEM Assets 프록시 프레임워크에서 기본적으로 제공하지 않는 것은 풀 메커니즘입니다.
+>[!DNL Experience Manager] Assets 프록시 프레임워크에서 기본적으로 제공하지 않는 것은 풀 메커니즘입니다.
 >
->InDesign 통합을 통해 IDSPool(indesign server) 풀에 액세스할 수 있습니다. 이 풀링은 Indesign 통합에만 해당되며 AEM Assets 프록시 프레임워크의 일부가 아닙니다.
+>InDesign 통합을 통해 IDSPool(indesign server) 풀에 액세스할 수 있습니다. 이 풀링은 [!DNL Experience Manager] Assets 프록시 프레임워크의 일부가 아니라 Indesign 통합에만 적용됩니다.
 
 >[!NOTE]
 >
 >결과 동기화:
 >
->동일한 프록시를 사용하는 인스턴스가 없는 경우 처리 결과는 프록시에 유지됩니다. 작업 생성 시 클라이언트에 제공된 것과 동일한 고유한 작업 ID를 사용하여 결과를 요청하는 것은 클라이언트(AEM 작성자)의 작업입니다. 프록시는 작업을 완료하고 결과를 요청할 준비가 된 상태로 유지합니다.
+>동일한 프록시를 사용하는 인스턴스가 없는 경우 처리 결과는 프록시에 유지됩니다. 작업 생성 시 클라이언트에 제공된 것과 동일한 고유한 작업 ID를 사용하여 결과를 요청하는 것은 클라이언트([!DNL Experience Manager] 작성자)의 작업입니다. 프록시는 작업을 완료하고 결과를 요청할 준비가 된 상태로 유지합니다.

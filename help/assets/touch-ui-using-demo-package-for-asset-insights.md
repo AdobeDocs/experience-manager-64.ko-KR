@@ -2,12 +2,12 @@
 title: Assets Insights에 데모 패키지 사용
 description: 데모 패키지를 사용하여 Adobe 자산 통찰력 을 활성화하여 웹 페이지의 데이터를 캡처하고 통찰력을 생성합니다.
 contentOwner: AG
-feature: 자산 통찰력,자산 보고서
+feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: c6d321f5-4c48-47f2-bff1-c4da988c0e84
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '162'
 ht-degree: 2%
 
 ---
@@ -16,10 +16,10 @@ ht-degree: 2%
 
 데모 패키지를 사용하여 Adobe 자산 통찰력 을 활성화하여 샘플 웹 페이지로부터 데이터를 캡처하고 통찰력을 생성할 수 있습니다.
 
-## 샘플 웹 페이지에서 AEM Assets Insights 사용  {#using-aem-assets-insights-with-sample-web-page}
+## 샘플 웹 페이지에서 [!DNL Experience Manager] 자산 통찰력 사용  {#using-aem-assets-insights-with-sample-web-page}
 
 1. [자산 통찰력 구성](touch-ui-configuring-asset-insights.md)의 지침을 사용하여 자산 통찰력을 구성합니다.
-1. 아래에서 샘플 AEM Assets 패키지를 다운로드하고 CRXDE 패키지 관리자에서 패키지를 설치합니다.
+1. 아래에서 샘플 [!DNL Experience Manager] Assets 패키지를 다운로드하고 CRXDE 패키지 관리자에서 패키지를 설치합니다.
 
 [파일 가져오기](assets/insightsdemo.zip)
 
@@ -35,4 +35,4 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >외부 웹 페이지는 AEM 자체에 있을 수 있습니다.
+   >외부 웹 페이지는 [!DNL Experience Manager] 자체 내에 있을 수 있습니다.

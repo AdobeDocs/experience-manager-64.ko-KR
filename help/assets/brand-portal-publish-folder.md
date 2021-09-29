@@ -5,24 +5,24 @@ contentOwner: VG
 feature: Brand Portal
 role: User
 exl-id: f41ab750-5780-42ae-a131-5bc748280215
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 28%
+source-wordcount: '552'
+ht-degree: 27%
 
 ---
 
 # 폴더를 Brand Portal에 게시 {#publish-folders-to-brand-portal}
 
-Adobe Experience Manager(AEM) Assets 관리자는 자산 및 폴더를 조직의 AEM Assets Brand Portal 인스턴스에 게시(또는 게시 워크플로우를 나중 날짜/시간으로 예약)할 수 있습니다. 그러나 먼저 AEM Assets을 Brand Portal과 통합해야 합니다. 자세한 내용은 [Brand Portal에서 AEM Assets 구성](configure-aem-assets-with-brand-portal.md)을 참조하십시오.
+Adobe Experience Manager Assets 관리자는 조직의 [!DNL Experience Manager Assets Brand Portal] 인스턴스에 자산 및 폴더를 게시(또는 게시 워크플로우를 나중 날짜/시간으로 예약)할 수 있습니다. 그러나 먼저 [!DNL Experience Manager Assets]을 [!DNL Brand Portal]과 통합해야 합니다. 자세한 내용은 [Brand Portal](configure-aem-assets-with-brand-portal.md)로 구성 [!DNL Experience Manager Assets] 을 참조하십시오.
 
 자산 또는 폴더를 게시하면 Brand Portal 사용자가 사용할 수 있습니다.
 
-AEM Assets에서 원래 자산이나 폴더를 이후에 수정하는 경우, 자산이나 폴더를 다시 게시하기 전까지는 변경 사항이 Brand Portal에 반영되지 않습니다. 이 기능은 진행 중인 작업 변경 사항을 Brand Portal에서 사용할 수 없도록 합니다. 관리자가 게시한 승인된 변경 사항만 Brand Portal에서 사용할 수 있습니다.
+[!DNL Assets]에서 원래 자산이나 폴더를 이후에 수정하는 경우, 자산이나 폴더를 다시 게시하기 전까지는 변경 사항이 Brand Portal에 반영되지 않습니다. 이 기능은 진행 중인 작업 변경 사항을 Brand Portal에서 사용할 수 없도록 합니다. 관리자가 게시한 승인된 변경 사항만 Brand Portal에서 사용할 수 있습니다.
 
 ## 폴더를 Brand Portal에 게시 {#publish-folders-to-brand-portal-1}
 
-1. AEM Assets 인터페이스에서 원하는 폴더를 마우스로 가리킨 다음 빠른 작업에서 **[!UICONTROL 게시]** 옵션을 선택합니다.
+1. [!DNL Assets] 인터페이스에서 원하는 폴더를 마우스로 가리킨 다음 빠른 작업에서 **[!UICONTROL 게시]** 옵션을 선택합니다.
 
    또는 원하는 폴더를 선택하고 추가 단계를 수행합니다.
 
@@ -57,11 +57,11 @@ AEM Assets에서 원래 자산이나 폴더를 이후에 수정하는 경우, �
 
 ## Brand Portal에서 폴더 게시 취소 {#unpublish-folders-from-brand-portal}
 
-AEM 작성자 인스턴스에서 게시를 취소하여 Brand Portal에 게시된 모든 자산 폴더를 제거할 수 있습니다. 원래 폴더를 게시 취소한 후에는 Brand Portal 사용자가 해당 복사본을 더 이상 사용할 수 없습니다.
+[!DNL Experience Manager] 작성자 인스턴스에서 게시를 취소하여 Brand Portal에 게시된 모든 자산 폴더를 제거할 수 있습니다. 원래 폴더를 게시 취소한 후에는 Brand Portal 사용자가 해당 복사본을 더 이상 사용할 수 없습니다.
 
 Brand Portal에서 폴더를 빠르게 게시 취소하거나 나중 날짜 및 시간 동안 예약할 수 있는 옵션이 있습니다. Brand Portal에서 자산 폴더의 게시를 취소하려면,
 
-1. AEM 작성자 인스턴스의 AEM Assets 인터페이스에서 게시를 취소하려는 폴더를 선택합니다.
+1. [!DNL Experience Manager] 작성자 인스턴스의 [!DNL Assets] 인터페이스에서 게시를 취소하려는 폴더를 선택합니다.
 
    ![publish2bp-1](assets/publish2bp-1.png)
 

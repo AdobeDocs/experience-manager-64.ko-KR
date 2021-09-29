@@ -2,12 +2,12 @@
 title: 번역 프로젝트 만들기
 description: AEM에서 번역 프로젝트를 만드는 방법을 알아봅니다.
 contentOwner: AG
-feature: 번역
+feature: Translation
 role: Architect,Admin
 exl-id: 1b931fef-eed0-4758-993d-cdf8d478fb6f
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1939'
 ht-degree: 6%
 
 ---
@@ -282,9 +282,9 @@ ht-degree: 6%
 
 ## 임시 언어 사본 만들기 {#creating-temporary-language-copies}
 
-번역 워크플로우를 실행하여 편집된 원래 자산의 버전으로 언어 사본을 업데이트하면 번역된 자산을 승인할 때까지 기존 언어 사본이 유지됩니다. AEM Assets은 새로 번역된 자산을 임시 위치에 저장하고, 명시적으로 자산을 승인한 후 기존 언어 사본을 업데이트합니다. 자산을 거부하면 언어 사본은 변경되지 않은 상태로 유지됩니다.
+번역 워크플로우를 실행하여 편집된 원래 자산의 버전으로 언어 사본을 업데이트하면 번역된 자산을 승인할 때까지 기존 언어 사본이 유지됩니다. [!DNL Experience Manager] Assets는 새로 번역된 자산을 임시 위치에 저장하고, 명시적으로 자산을 승인한 후 기존 언어 사본을 업데이트합니다. 자산을 거부하면 언어 사본은 변경되지 않은 상태로 유지됩니다.
 
-1. 이미 언어 사본을 만든 **[!UICONTROL 언어 사본]** 아래의 소스 루트 폴더를 클릭/탭한 다음, **[!UICONTROL 자산에 표시]**&#x200B;를 클릭/탭하여 AEM Assets에서 폴더를 엽니다.
+1. 언어 사본을 이미 만든 **[!UICONTROL 언어 사본]** 아래의 소스 루트 폴더를 클릭/탭한 다음, **[!UICONTROL 자산]**&#x200B;에 표시 를 클릭/탭하여 [!DNL Experience Manager] 자산에서 폴더를 엽니다.
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 

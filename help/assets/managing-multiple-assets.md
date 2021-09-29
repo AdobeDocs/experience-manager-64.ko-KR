@@ -2,12 +2,12 @@
 title: 여러 자산 및 컬렉션의 메타데이터 벌크 편집
 description: 많은 자산 및 컬렉션의 메타데이터를 동시에 편집하여 일반적인 메타데이터 변경 사항을 신속하게 전파하는 방법을 알아봅니다.
 contentOwner: AG
-feature: 자산 관리,메타데이터,컬렉션
+feature: Asset Management,Metadata,Collections
 role: User
 exl-id: 3541b50a-f226-4a6a-9c2a-03a5f47f1c23
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '433'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 여러 자산 및 컬렉션의 메타데이터를 동시에 편집하여 일반적인 메타데이터 변경 사항을 신속하게 전파하는 방법을 알아봅니다.
 
-AEM(Adobe Enterprise Manager) 자산을 사용하면 여러 자산의 메타데이터를 동시에 편집할 수 있으므로 일반적인 메타데이터 변경 사항을 자산에 일괄 전파할 수 있습니다. 여러 컬렉션의 메타데이터를 일괄적으로 편집할 수도 있습니다.
+Adobe Enterprise Manager Assets를 사용하면 여러 자산의 메타데이터를 동시에 편집할 수 있으므로 일반적인 메타데이터 변경 사항을 자산에 일괄 전파할 수 있습니다. 여러 컬렉션의 메타데이터를 일괄적으로 편집할 수도 있습니다.
 
 속성 페이지를 사용하여 여러 자산 또는 컬렉션에서 메타데이터 변경 작업을 수행합니다.
 
@@ -47,7 +47,7 @@ AEM(Adobe Enterprise Manager) 자산을 사용하면 여러 자산의 메타데�
 
 ## 벌크 메타데이터 업데이트에 대한 제한 구성 {#configure-limit-for-bulk-metadata-update}
 
-DOS와 같은 상황을 방지하기 위해 AEM에서는 Sling 요청에서 지원되는 매개 변수 수를 제한합니다. 한 번에 많은 자산의 메타데이터를 업데이트할 때 제한에 도달할 수 있으며 더 많은 자산에 대해 메타데이터가 업데이트되지 않습니다. AEM은 로그에 다음 경고를 생성합니다.
+DOS와 같은 상황을 방지하기 위해 [!DNL Experience Manager]은(는) Sling 요청에서 지원되는 매개 변수 수를 제한합니다. 한 번에 많은 자산의 메타데이터를 업데이트할 때 제한에 도달할 수 있으며 더 많은 자산에 대해 메타데이터가 업데이트되지 않습니다. [!DNL Experience Manager] 로그에 다음 경고가 생성됩니다.
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 

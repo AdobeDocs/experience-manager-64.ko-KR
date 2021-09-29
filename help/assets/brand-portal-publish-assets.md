@@ -5,26 +5,26 @@ contentOwner: VG
 feature: Brand Portal
 role: User
 exl-id: 6b78124d-4022-452f-8d0f-b667de337bf4
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 39%
+source-wordcount: '403'
+ht-degree: 30%
 
 ---
 
 # 자산을 Brand Portal에 게시 {#publish-assets-to-brand-portal}
 
-Adobe Experience Manager(AEM) Assets 관리자는 조직의 AEM Assets Brand Portal 인스턴스에 자산을 게시하거나 게시 워크플로우를 나중 날짜/시간으로 예약할 수 있습니다. 하지만 먼저 Brand Portal을 사용하여 AEM Assets을 구성해야 합니다. 자세한 내용은 [Brand Portal에서 AEM Assets 구성](configure-aem-assets-with-brand-portal.md)을 참조하십시오.
+Adobe Experience Manager Assets 관리자는 조직의 [!DNL Experience Manager Assets Brand Portal] 인스턴스에 자산을 게시하거나 게시 워크플로우를 나중 날짜/시간으로 예약할 수 있습니다. 그러나 먼저 [!DNL Assets]을 [!DNL Brand Portal]로 구성해야 합니다. 자세한 내용은 [구성 [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)을 참조하십시오. [!DNL Assets] 
 
 자산을 게시하면 Brand Portal 사용자가 사용할 수 있습니다.
 
-AEM Assets에서 원래 자산을 이후에 수정하는 경우, 자산을 다시 게시하기 전까지는 변경 사항이 Brand Portal에 반영되지 않습니다. 이 기능은 진행 중인 작업 변경 사항을 Brand Portal에서 사용할 수 없도록 합니다. 관리자가 게시한 승인된 변경 사항만 Brand Portal에서 사용할 수 있습니다.
+[!DNL Assets]에서 원래 자산을 이후에 수정하는 경우, 자산을 다시 게시하기 전까지는 변경 사항이 Brand Portal에 반영되지 않습니다. 이 기능은 진행 중인 작업 변경 사항을 Brand Portal에서 사용할 수 없도록 합니다. 관리자가 게시한 승인된 변경 사항만 Brand Portal에서 사용할 수 있습니다.
 
-복제가 성공하면 자산, 폴더 및 컬렉션을 Brand Portal에 게시할 수 있습니다. Brand Portal에 자산을 게시하려면 다음 단계를 수행합니다.
+복제가 성공하면 자산, 폴더 및 컬렉션을 [!DNL Brand Portal]에 게시할 수 있습니다. Brand Portal에 자산을 게시하려면 다음 단계를 수행합니다.
 
 >[!NOTE]
 >
->AEM 작성자가 초과 리소스를 차지하지 않도록 가급적이면 피크가 아닌 시간에, 시차 게시를 수행하는 것이 좋습니다.
+>Adobe은 특히 비스파이크 시간 동안 시차를 두고 게시하는 것이 좋습니다. 따라서 [!DNL Experience Manager] 작성자가 과도한 리소스를 사용하지 않도록 합니다.
 
 1. Assets 콘솔에서 원하는 자산을 마우스로 가리킨 다음 빠른 작업에서 **[!UICONTROL 게시]** 옵션을 선택합니다.
 

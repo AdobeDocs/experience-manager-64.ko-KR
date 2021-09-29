@@ -1,24 +1,24 @@
 ---
 title: Lightbox
-description: AEM Assets의 Lightbox에 대해 알아봅니다.
+description: Assets [!DNL Experience Manager] 의 Lightbox에 대해 알아봅니다.
 contentOwner: AG
-feature: 개발자 도구,표현물
+feature: Developer Tools,Renditions
 role: User,Admin
 exl-id: acb61924-9b71-474a-833d-e441c0b83cc7
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
 
 # Lightbox {#lightbox}
 
-AEM Assets의 Lightbox에 대해 알아봅니다.
+[!DNL Experience Manager] 자산의 Lightbox에 대해 알아봅니다.
 
 Lightbox는 자산에 쉽게 액세스할 수 있는 특별한 유형의 컬렉션입니다. Lightbox에 빠르게 액세스하여 자산을 추가하거나 삭제할 수 있습니다. 개인 이미지 갤러리 역할을 합니다.
 
-Adobe Experience Manager(AEM) Assets 사용자인 경우 애플리케이션에 처음 로그인할 때 Lightbox가 자동으로 생성됩니다. 로그인에 대해서만 사용됩니다. 다른 사용자는 Lightbox에 액세스할 수 없습니다.
+Adobe Experience Manager Assets 사용자인 경우 애플리케이션에 처음 로그인할 때 Lightbox가 자동으로 생성됩니다. 로그인에 대해서만 사용됩니다. 다른 사용자는 Lightbox에 액세스할 수 없습니다.
 
 ## Lightbox에 자산 추가 {#adding-assets-to-lightbox}
 

@@ -2,12 +2,12 @@
 title: Camera Raw 지원
 description: Adobe Experience Manager Assets에서 Camera Raw 지원을 활성화하는 방법을 알아봅니다.
 contentOwner: AG
-feature: 개발자 도구
+feature: Developer Tools
 role: Admin
 exl-id: 637c57ae-55a6-4032-9821-b55839b3e567
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '403'
 ht-degree: 3%
 
 ---
@@ -43,7 +43,7 @@ Adobe Experience Manager Assets에서 Camera Raw 지원을 활성화하려면 �
 
 1. **[!UICONTROL Camera Raw/DNG 핸들러]** 단계의 **[!UICONTROL 인수]** 탭에 다음 구성을 추가합니다.
 
-   * **[!UICONTROL Mime 유형]**: `image/dng` 및  `image/x-raw-(.*)`
+   * **[!UICONTROL Mime 유형]**:  `image/dng` 및  `image/x-raw-(.*)`
    * **[!UICONTROL Command]**:
 
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.web.1280.1280.jpeg 1280 1280`
@@ -59,15 +59,15 @@ Adobe Experience Manager Assets에서 Camera Raw 지원을 활성화하려면 �
 >
 >위의 구성이 **[!UICONTROL 샘플 DAM 자산 업데이트 및 Camera Raw 및 DNG 처리 단계]** 구성과 동일한지 확인합니다.
 
-이제 Camera Raw 파일을 AEM Assets에 가져올 수 있습니다. Camera Raw 패키지를 설치하고 필요한 워크플로우를 구성하면 측면 창 목록에 **[!UICONTROL 이미지 조정]** 옵션이 나타납니다.
+이제 카메라 원시 파일을 [!DNL Experience Manager] Assets에 가져올 수 있습니다. Camera Raw 패키지를 설치하고 필요한 워크플로우를 구성하면 측면 창 목록에 **[!UICONTROL 이미지 조정]** 옵션이 나타납니다.
 
 ![chlimage_1-337](assets/chlimage_1-337.png)
 
-*그림:사이드 창의 옵션*
+*그림: 사이드 창의 옵션*
 
 ![chlimage_1-338](assets/chlimage_1-338.png)
 
-*그림:옵션을 사용하여 이미지를 간단히 편집할 수 있습니다*
+*그림: 옵션을 사용하여 이미지를 간단히 편집할 수 있습니다*
 
 편집 내용을 Camera Raw 이미지에 저장하면 이미지에 대한 새 표현물 `AdjustedPreview.jpg`이 생성됩니다. Camera Raw을 제외한 다른 이미지 유형의 경우, 변경 사항이 모든 변환에 반영됩니다.
 

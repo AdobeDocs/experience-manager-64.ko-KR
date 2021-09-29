@@ -8,20 +8,20 @@ discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 feature: Asset Management,Video
 role: User
 exl-id: eb652414-5b10-45af-a8b6-f1de649994c5
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '787'
 ht-degree: 1%
 
 ---
 
 # 비디오 자산 관리 {#managing-video-assets}
 
-Adobe Experience Manager(AEM) Assets에서 비디오 자산을 관리하고 편집하는 방법을 알아봅니다. 또한 Dynamic Media 사용 권한이 있는 경우 [Dynamic Media 비디오 설명서](video.md)를 참조하십시오.
+Adobe Experience Manager Assets에서 비디오 자산을 관리하고 편집하는 방법을 알아봅니다. 또한 Dynamic Media 사용 권한이 있는 경우 [Dynamic Media 비디오 설명서](video.md)를 참조하십시오.
 
 ## 비디오 자산 업로드 및 미리 보기 {#uploading-and-previewing-video-assets}
 
-AEM Assets은 확장 MP4를 사용하여 비디오 자산에 대한 미리 보기를 생성합니다. 자산의 형식이 MP4가 아닌 경우, FFmpeg 팩을 설치하여 미리 보기를 생성합니다. FFmpeg는 OGG 및 MP4 유형의 비디오 표현물을 만듭니다. AEM Assets 사용자 인터페이스에서 이러한 렌디션을 미리 볼 수 있습니다.
+[!DNL Experience Manager] 자산은 확장 MP4를 사용하여 비디오 자산에 대한 미리 보기를 생성합니다. 자산의 형식이 MP4가 아닌 경우, FFmpeg 팩을 설치하여 미리 보기를 생성합니다. FFmpeg는 OGG 및 MP4 유형의 비디오 표현물을 만듭니다. [!DNL Experience Manager] Assets 사용자 인터페이스에서 이러한 표현물을 미리 볼 수 있습니다.
 
 1. 디지털 자산 폴더 또는 하위 폴더에서 디지털 자산을 추가할 위치로 이동합니다.
 1. 자산을 업로드하려면 도구 모음에서 **[!UICONTROL 만들기]**&#x200B;를 클릭하거나 탭한 다음 **[!UICONTROL 파일]**&#x200B;을 선택합니다. 또는 자산 영역에 직접 놓습니다. 업로드 작업에 대한 자세한 내용은 [자산 업로드](managing-assets-touch-ui.md#uploading-assets)를 참조하십시오.
@@ -39,16 +39,16 @@ AEM Assets은 확장 MP4를 사용하여 비디오 자산에 대한 미리 보�
 
 ## 2GB보다 큰 자산을 업로드하도록 구성 {#configuration-to-upload-video-assets-that-are-larger-than-gb}
 
-기본적으로 AEM Assets에서는 파일 크기 제한으로 인해 2GB보다 큰 자산을 업로드할 수 없습니다. 그러나 CRXDE Lite으로 이동하여 `/apps` 디렉토리 아래에 노드를 만들어 이 제한을 덮어쓸 수 있습니다. 노드에는 동일한 노드 이름, 디렉토리 구조 및 이와 비교할 수 있는 노드 속성이 있어야 합니다.
+기본적으로 [!DNL Experience Manager] Assets에서는 파일 크기 제한으로 인해 2GB보다 큰 자산을 업로드할 수 없습니다. 그러나 CRXDE Lite으로 이동하여 `/apps` 디렉토리 아래에 노드를 만들어 이 제한을 덮어쓸 수 있습니다. 노드에는 동일한 노드 이름, 디렉토리 구조 및 이와 비교할 수 있는 노드 속성이 있어야 합니다.
 
-AEM Assets 구성 외에 다음 구성을 변경하여 큰 자산을 업로드합니다.
+자산 구성 외에 다음 구성을 변경하여 큰 자산을 업로드합니다.[!DNL Experience Manager]
 
 * 토큰 만료 시간을 늘립니다. `https://[aem_server]:[port]/system/console/configMgr`의 웹 콘솔에서 [!UICONTROL Granite CSRF 서블릿] Adobe을 참조하십시오. 자세한 내용은 [CSRF 보호](/help/sites-developing/csrf-protection.md)를 참조하십시오.
 * Dispatcher 구성에서 `receiveTimeout`을 늘립니다. 자세한 내용은 [Dispatcher 구성 Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)를 참조하십시오.
 
 >[!NOTE]
 >
->AEM Classic 사용자 인터페이스에는 2GB의 파일 크기 제한이 없습니다. 또한 큰 비디오에 대한 종단 간 워크플로우는 완전히 지원되지 않습니다.
+>[!DNL Experience Manager] Classic 사용자 인터페이스에는 2GB 파일 크기 제한이 없습니다. 또한 큰 비디오에 대한 종단 간 워크플로우는 완전히 지원되지 않습니다.
 
 더 높은 파일 크기 제한을 구성하려면 `/apps` 디렉토리에서 다음 단계를 수행하십시오.
 

@@ -1,24 +1,24 @@
 ---
 title: 자산과 활동 스트림 통합
-description: AEM의 기록 기능과 특정 이벤트를 기록하도록 AEM을 구성하는 방법에 대해 설명합니다.
+description: 특정 이벤트를 기록할 [!DNL Experience Manager] and how to configure [!DNL Experience Manager] 의 기록 기능에 대해 설명합니다.
 contentOwner: AG
-feature: 자산 관리
+feature: Asset Management
 role: Developer
 exl-id: c25a4da7-1c58-41cf-9ff6-c094b50208e6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
 
 # 자산과 활동 스트림 통합 {#integrating-assets-with-activity-stream}
 
-Adobe Experience Manager (AEM) Assets 사용자는 자산 만들기, 업로드 및 삭제와 같은 많은 작업을 수행합니다. 이러한 작업을 기록할 수 있으므로 사용자가 수행한 작업 내역을 제공할 수 있습니다. 이 섹션에서는 AEM의 기록 기능과 특정 이벤트를 기록하도록 AEM을 구성하는 방법에 대해 설명합니다.
+Adobe Experience Manager Assets 사용자는 자산 만들기, 업로드 및 삭제와 같은 많은 작업을 수행합니다. 이러한 작업을 기록할 수 있으므로 사용자가 수행한 작업 내역을 제공할 수 있습니다. 이 섹션에서는 [!DNL Experience Manager] 의 기록 기능과 [!DNL Experience Manager] 을 구성하여 특정 이벤트를 기록하는 방법에 대해 설명합니다.
 
 ## 성능 고려 사항 및 기본 동작 {#performance-considerations-and-default-behavior}
 
-대량 가져오기를 수행하는 경우와 같이 이 통합은 CPU 및 디스크 공간을 많이 사용하는 것일 수 있습니다. 이러한 이유로 활동 스트림과의 AEM Assets 통합이 기본적으로 비활성화되어 있습니다.
+대량 가져오기를 수행하는 경우와 같이 이 통합은 CPU 및 디스크 공간을 많이 사용하는 것일 수 있습니다. 이러한 이유로 활동 스트림과의 [!DNL Experience Manager] 자산 통합이 기본적으로 비활성화됩니다.
 
 ## 지원되는 작업 이벤트 {#supported-action-events}
 
@@ -40,9 +40,9 @@ Adobe Experience Manager (AEM) Assets 사용자는 자산 만들기, 업로드 �
 * 하위 자산이 업데이트됨(SUBASSET_UPDATED)
 * 하위 자산이 제거됨(SUBASSET_REMOVED)
 
-## AEM Assets 이벤트 기록 구성 {#configuring-aem-assets-events-recording}
+## [!DNL Assets] 이벤트 기록 구성 {#configuring-aem-assets-events-recording}
 
-[웹 콘솔](/help/sites-deploying/configuring-osgi.md)에서는 AEM Assets 이벤트 레코더 조정에 액세스할 수 있습니다. AEM Assets 이벤트 레코더를 구성하려면 다음 단계를 수행하십시오.
+[웹 콘솔](/help/sites-deploying/configuring-osgi.md)에서는 [!DNL Assets] 이벤트 레코더 조정에 액세스할 수 있습니다. [!DNL Assets] 이벤트 레코더를 구성하려면 다음과 같이 진행하십시오.
 
 1. **[!UICONTROL 웹 콘솔]**&#x200B;로 이동합니다.
 

@@ -2,12 +2,12 @@
 title: 자산 편집기 확장
 description: 사용자 지정 구성 요소를 사용하여 자산 편집기의 기능을 확장하는 방법을 알아봅니다.
 contentOwner: AG
-feature: 개발자 도구
+feature: Developer Tools
 role: User,Admin
 exl-id: 1e02a2f6-8194-46b9-b418-87103c3f4a69
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '691'
 ht-degree: 1%
 
 ---
@@ -18,21 +18,21 @@ ht-degree: 1%
 
 사전 정의된 편집 구성 요소를 사용하는 편집기의 구성은 [자산 편집기 페이지 만들기 및 구성](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page)에서 다룹니다.
 
-기존 편집기 구성 요소를 사용하는 것 외에도 Adobe Experience Manager(AEM) 개발자도 자체 구성 요소를 만들 수 있습니다.
+기존 편집기 구성 요소를 사용하는 것 외에도 Adobe Experience Manager 개발자도 자체 구성 요소를 만들 수 있습니다.
 
 ## 자산 편집기 템플릿 만들기 {#creating-an-asset-editor-template}
 
 다음 샘플 페이지는 geometrixx에 포함되어 있습니다.
 
-* Geometrixx 샘플 페이지:`/content/geometrixx/en/press/asseteditor.html`
-* 샘플 템플릿:`/apps/geometrixx/templates/asseteditor`
-* 샘플 페이지 구성 요소:`/apps/geometrixx/components/asseteditor`
+* Geometrixx 샘플 페이지: `/content/geometrixx/en/press/asseteditor.html`
+* 샘플 템플릿: `/apps/geometrixx/templates/asseteditor`
+* 샘플 페이지 구성 요소: `/apps/geometrixx/components/asseteditor`
 
 ### Clientlib 구성 {#configuring-clientlib}
 
-AEM Assets 구성 요소는 WCM 편집 clientlib의 확장을 사용합니다. clientlibs는 일반적으로 `init.jsp`에 로드됩니다.
+[!DNL Experience Manager Assets] 구성 요소는 WCM edit clientlib의 확장을 사용합니다. clientlibs는 일반적으로 `init.jsp`에 로드됩니다.
 
-AEM Assets 템플릿의 기본 clientlib 로드(코어 `init.jsp`에 있음)와 비교하면 다음이 있어야 합니다.
+기본 clientlib 로드(코어 `init.jsp`에서)와 비교하여 [!DNL Assets] 템플릿에는 다음이 있어야 합니다.
 
 * 템플릿에는 `cq.wcm.edit` 대신 `cq.dam.edit` clientlib이 포함되어야 합니다.
 
@@ -42,7 +42,7 @@ AEM Assets 템플릿의 기본 clientlib 로드(코어 `init.jsp`에 있음)와 
 
 ### JS 작업 구성 {#configuring-js-actions}
 
-일부 AEM Assets 구성 요소에는 `component.js`에 정의된 JS 함수가 필요합니다. 이 파일을 구성 요소 디렉토리에 복사하여 연결합니다.
+[!DNL Assets] 구성 요소 중 일부는 `component.js`에 정의된 JS 함수가 필요합니다. 이 파일을 구성 요소 디렉토리에 복사하여 연결합니다.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
@@ -52,7 +52,7 @@ AEM Assets 템플릿의 기본 clientlib 로드(코어 `init.jsp`에 있음)와 
 
 ### 추가 스타일 시트 {#additional-style-sheets}
 
-일부 AEM Assets 구성 요소는 AEM 위젯 라이브러리를 사용합니다. 콘텐츠 컨텍스트에서 제대로 렌더링하려면 추가 스타일 시트를 로드해야 합니다. 태그 작업 구성 요소에 하나 더 필요합니다.
+일부 [!DNL Assets] 구성 요소는 [!DNL Experience Manager] 위젯 라이브러리를 사용합니다. 콘텐츠 컨텍스트에서 제대로 렌더링하려면 추가 스타일 시트를 로드해야 합니다. 태그 작업 구성 요소에 하나 더 필요합니다.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
@@ -60,16 +60,16 @@ AEM Assets 템플릿의 기본 clientlib 로드(코어 `init.jsp`에 있음)와 
 
 ### Geometrixx 스타일 시트 {#geometrixx-style-sheet}
 
-샘플 페이지 구성 요소에서는 모든 선택기가 `static.css`(`/etc/designs/geometrixx/static.css`)의 `.asseteditor`으로 시작해야 합니다. 우수 사례:모든 `.asseteditor` 선택기를 스타일 시트에 복사하고 원하는 대로 규칙을 조정합니다.
+샘플 페이지 구성 요소에서는 모든 선택기가 `static.css`(`/etc/designs/geometrixx/static.css`)의 `.asseteditor`으로 시작해야 합니다. 우수 사례: 모든 `.asseteditor` 선택기를 스타일 시트에 복사하고 원하는 대로 규칙을 조정합니다.
 
-### FormSelector:최종 로드된 리소스에 대한 조정 {#formchooser-adjustments-for-eventually-loaded-resources}
+### FormSelector: 최종 로드된 리소스에 대한 조정 {#formchooser-adjustments-for-eventually-loaded-resources}
 
 자산 편집기에서는 양식 선택기를 사용하여 양식 선택기와 양식의 경로를 자산 URL에 추가하면 동일한 양식 페이지에서 리소스를 편집할 수 있습니다.
 
 예:
 
-* 일반 양식 페이지:[http://localhost:4502/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
-* 양식 페이지에 로드된 자산:[http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
+* 일반 양식 페이지: [http://localhost:4502/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
+* 양식 페이지에 로드된 자산: [http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
 
 `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`)의 샘플 핸들은 다음을 수행합니다.
 

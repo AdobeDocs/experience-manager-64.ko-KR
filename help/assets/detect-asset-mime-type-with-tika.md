@@ -1,20 +1,20 @@
 ---
 title: Apache Tika를 사용하여 MIME 유형의 디지털 자산을 탐지합니다
-description: Apache Tika를 활성화하여 AEM Assets이 파일 확장자 대신 업로드 작업 중에 컨텐츠 스트림에서 MIME 유형의 자산을 검색할 수 있도록 지원합니다.
+description: Apache Tika를 활성화하여 업로드 작업 중 파일 확장자 대신 컨텐츠 스트림에서 MIME 유형의 자산을 검색할 수 있도록 합니다. [!DNL Experience Manager] Assets는 MIME 유형의 자산을 탐지합니다.
 contentOwner: AG
-feature: 메타데이터,개발자 도구,자산 관리
+feature: Metadata,Developer Tools,Asset Management
 role: Admin,Architect
 exl-id: 6c9e53e9-5e54-4816-9431-41e796340d1e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
 
 # Apache Tika를 사용하여 MIME 유형의 디지털 자산을 탐지합니다 {#detecting-mime-type-of-assets-using-apache-tika}
 
-일반적으로 Adobe Experience Manager(AEM) Assets는 파일 확장자에서 업로드하는 MIME 유형의 자산을 감지합니다. Apache Tika를 사용하여 자산을 업로드하는 경우, AEM Assets은 파일 확장자 대신 업로드 작업 중에 컨텐츠 스트림에서 MIME 유형을 감지합니다.
+일반적으로 Adobe Experience Manager Assets는 파일 확장자에서 업로드하는 MIME 유형의 자산을 감지합니다. Apache Tika를 사용하여 자산을 업로드하는 경우, [!DNL Experience Manager] Assets는 파일 확장명 대신 업로드 작업 중에 컨텐츠 스트림에서 MIME 유형을 감지합니다.
 
 이 기능은 기본적으로 비활성화됩니다. 이 기능을 사용하려면 구성 관리자에서 **일 CQ DAM Mime 유형** 서비스를 구성하십시오.
 

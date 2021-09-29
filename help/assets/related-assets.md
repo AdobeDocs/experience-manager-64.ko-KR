@@ -2,19 +2,19 @@
 title: 관련 자산
 description: 특정 공통 속성을 공유하는 자산을 연결하는 방법을 알아봅니다. 이 기능을 사용하여 자산 간의 소스/파생 관계를 만들 수도 있습니다.
 contentOwner: AG
-feature: 자산 관리,공동 작업
+feature: Asset Management,Collaboration
 role: User
 exl-id: d19544c4-c8e7-4a39-9c86-15a46dca848e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '610'
 ht-degree: 4%
 
 ---
 
 # 관련 자산 {#related-assets}
 
-Adobe Experience Manager(AEM) 자산을 사용하면 관련 자산 기능을 사용하여 조직의 요구 사항에 따라 자산을 수동으로 연결할 수 있습니다. 예를 들어 라이센스 파일을 유사한 주제에 대한 자산이나 이미지/비디오와 연결할 수 있습니다. 특정 공통 속성을 공유하는 자산을 연결할 수 있습니다. 이 기능을 사용하여 자산 간의 소스/파생 관계를 만들 수도 있습니다. 예를 들어 INDD 파일에서 생성된 PDF 파일이 있는 경우 PDF 파일을 해당 소스 INDD 파일에 연결할 수 있습니다.
+Adobe Experience Manager Assets를 사용하면 관련 자산 기능을 사용하여 조직의 요구 사항에 따라 자산을 수동으로 연결할 수 있습니다. 예를 들어 라이센스 파일을 유사한 주제에 대한 자산이나 이미지/비디오와 연결할 수 있습니다. 특정 공통 속성을 공유하는 자산을 연결할 수 있습니다. 이 기능을 사용하여 자산 간의 소스/파생 관계를 만들 수도 있습니다. 예를 들어 INDD 파일에서 생성된 PDF 파일이 있는 경우 PDF 파일을 해당 소스 INDD 파일에 연결할 수 있습니다.
 
 이렇게 하면 저해상도 파일(예: PDF/JPG)을 공급업체/에이전시에 공유하고 요청 시에만 고해상도 파일(예: INDD)을 사용할 수 있는 유연성이 있습니다.
 
@@ -65,11 +65,11 @@ Adobe Experience Manager(AEM) 자산을 사용하면 관련 자산 기능을 사
 
 ## 관련 자산 번역 {#translating-related-assets}
 
-관련 자산 기능을 사용하여 자산 간 소스/파생 관계를 만드는 것도 번역 워크플로우에서 유용합니다. 파생된 자산에서 번역 워크플로우를 실행하면 AEM Assets은 소스 파일이 참조하는 모든 자산을 자동으로 가져와서 번역을 위해 포함합니다. 이렇게 하면 소스 자산에서 참조하는 자산이 소스 및 파생된 자산과 함께 변환됩니다. 예를 들어, 영어 사본에 표시된 대로 파생된 자산 및 소스 파일이 포함된 시나리오를 생각해 보십시오.
+관련 자산 기능을 사용하여 자산 간 소스/파생 관계를 만드는 것도 번역 워크플로우에서 유용합니다. 파생된 자산에서 번역 워크플로우를 실행하면 [!DNL Experience Manager] Assets는 소스 파일이 참조하는 모든 자산을 자동으로 가져와서 번역을 위해 포함합니다. 이렇게 하면 소스 자산에서 참조하는 자산이 소스 및 파생된 자산과 함께 변환됩니다. 예를 들어, 영어 사본에 표시된 대로 파생된 자산 및 소스 파일이 포함된 시나리오를 생각해 보십시오.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-소스 파일이 다른 자산과 관련되어 있는 경우 AEM Assets은 해당 자산을 가져와서 번역을 위해 포함합니다.
+소스 파일이 다른 자산과 관련되어 있는 경우 [!DNL Experience Manager] Assets는 참조된 자산을 가져오고 이를 변환에 포함합니다.
 
 ![chlimage_1-282](assets/chlimage_1-282.png)
 

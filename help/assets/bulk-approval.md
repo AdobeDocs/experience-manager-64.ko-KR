@@ -2,12 +2,12 @@
 title: 폴더 자산 및 컬렉션 검토
 description: 폴더 또는 컬렉션 내의 자산에 대한 검토 워크플로우를 설정하고 검토자 또는 크리에이티브 파트너와 공유하여 피드백을 받습니다.
 contentOwner: AG
-feature: 공동 작업, 컬렉션
+feature: Collaboration, Collections
 role: User
 exl-id: 4c62e0cd-eaa5-456e-85f3-06f7a9f160f5
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '811'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 폴더 또는 컬렉션 내의 자산에 대한 검토 워크플로우를 설정하고 검토자 또는 크리에이티브 파트너와 공유하여 피드백을 받습니다.
 
-Adobe Experience Manager(AEM) 자산을 사용하면 폴더 또는 컬렉션 내의 자산에 대한 임시 검토 워크플로우를 설정하고 검토자 또는 크리에이티브 파트너와 공유하여 피드백을 받을 수 있습니다.
+Adobe Experience Manager Assets를 사용하면 폴더 또는 컬렉션 내의 자산에 대해 임시 검토 워크플로우를 설정하고 검토자 또는 크리에이티브 파트너와 공유하여 피드백을 받을 수 있습니다.
 
 검토 워크플로우를 프로젝트에 연결하거나 독립적인 검토 작업을 만들 수 있습니다.
 
@@ -52,7 +52,7 @@ Adobe Experience Manager(AEM) 자산을 사용하면 폴더 또는 컬렉션 내
    ![review_name](assets/review_name.png)
 
 1. **[!UICONTROL Submit]**&#x200B;을 탭/클릭한 다음 **[!UICONTROL 완료]**&#x200B;를 탭/클릭하여 확인 메시지를 닫습니다. 새 작업에 대한 알림이 승인자에게 전송됩니다.
-1. AEM Assets에 승인자로 로그인하고 자산 UI로 이동합니다. 자산을 승인하려면 **[!UICONTROL 알림]** 아이콘을 클릭/탭한 다음, 목록에서 검토 작업을 선택합니다.
+1. [!DNL Experience Manager] Assets에 승인자로 로그인하고 Assets UI로 이동합니다. 자산을 승인하려면 **[!UICONTROL 알림]** 아이콘을 클릭/탭한 다음, 목록에서 검토 작업을 선택합니다.
 
    ![알림](assets/notification.png)
 
@@ -96,7 +96,7 @@ Adobe Experience Manager(AEM) 자산을 사용하면 폴더 또는 컬렉션 내
    ![task_details-collection](assets/task_details-collection.png)
 
 1. **[!UICONTROL Submit]**&#x200B;을 탭/클릭한 다음 **[!UICONTROL 완료]**&#x200B;를 탭/클릭하여 확인 메시지를 닫습니다. 새 작업에 대한 알림이 승인자에게 전송됩니다.
-1. AEM Assets에 승인자로 로그인하고 자산 콘솔로 이동합니다. 자산을 승인하려면 **[!UICONTROL 알림]** 아이콘을 탭/클릭한 다음 목록에서 검토 작업을 선택합니다.
+1. [!DNL Experience Manager] Assets에 승인자로 로그인하고 Assets 콘솔로 이동합니다. 자산을 승인하려면 **[!UICONTROL 알림]** 아이콘을 탭/클릭한 다음 목록에서 검토 작업을 선택합니다.
 1. **[!UICONTROL 작업 검토]** 페이지에서 검토 작업의 세부 정보를 검토한 다음 **[!UICONTROL 검토]**&#x200B;를 탭/클릭합니다.
 1. 컬렉션의 모든 자산이 검토 페이지에 표시됩니다. 자산을 선택하고 **[!UICONTROL 승인/거부]** 아이콘을 탭/클릭하여 자산을 적절히 승인하거나 거부합니다.
 

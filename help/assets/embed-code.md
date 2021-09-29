@@ -1,8 +1,8 @@
 ---
 title: 웹 페이지에 Dynamic Media 비디오 또는 이미지 뷰어 포함
-seo-title: 웹 페이지에 Dynamic Media 비디오 또는 이미지 뷰어 포함
+seo-title: Embedding the Dynamic Media Video or Image viewer on a web page
 description: 웹 페이지에 Dynamic Media 비디오 또는 이미지를 포함하는 방법을 알아봅니다
-seo-description: 웹 페이지에 Dynamic Media 비디오 또는 이미지를 포함하는 방법을 알아봅니다
+seo-description: Learn how to embed Dynamic media video or images on a web page
 uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,11 +10,11 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 exl-id: bff564a8-e982-4e1a-a9b5-05e44e3e4d46
-feature: 구성 요소
+feature: Components
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 비디오를 재생하거나 웹 페이지에 포함된 자산을 보려면 **[!UICONTROL 포함 코드]** 기능을 사용하십시오. 포함 코드를 클립보드에 복사하여 웹 페이지에 붙여넣을 수 있습니다. **[!UICONTROL 포함 코드]** 대화 상자에서는 코드 편집이 허용되지 않습니다.
 
-AEM을 WCM으로 사용하지 _않고_&#x200B;인 경우에만 URL을 포함합니다. AEM을 WCM으로 사용하는 경우 [자산을 페이지에 직접 추가합니다.](adding-dynamic-media-assets-to-pages.md)
+[!DNL Experience Manager]를 WCM으로 사용하지 않고 _인 경우에만 URL을 포함합니다._ [!DNL Experience Manager] 을 WCM으로 사용하는 경우 [자산을 페이지에 직접 추가합니다.](adding-dynamic-media-assets-to-pages.md)
 
 [URL을 웹 응용 프로그램에 연결 을 참조하십시오.](linking-urls-to-yourwebapplication.md)
 

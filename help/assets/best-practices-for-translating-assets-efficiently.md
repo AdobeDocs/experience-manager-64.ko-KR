@@ -2,19 +2,19 @@
 title: 자산을 효율적으로 번역하기 위한 우수 사례
 description: 다양한 번역된 버전을 동기화하고 번역 워크플로우를 간소화하기 위해 자산을 효율적으로 관리하는 모범 사례입니다.
 contentOwner: AG
-feature: 번역
+feature: Translation
 role: User,Admin
 exl-id: 15162b80-ddef-4ec0-9db6-36695c93ebb1
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
 
 # 자산을 효율적으로 번역하는 우수 사례 {#best-practices-for-translating-assets-efficiently}
 
-Adobe Experience Manager(AEM) Assets는 디지털 자산에 대한 바이너리, 메타데이터 및 태그를 여러 로케일로 변환하고 번역된 자산을 관리하기 위해 다국어 워크플로우를 지원합니다. 자세한 내용은 [다국어 자산](multilingual-assets.md)을 참조하십시오.
+Adobe Experience Manager Assets는 디지털 자산에 대한 바이너리, 메타데이터 및 태그를 여러 로케일로 변환하고 번역된 자산을 관리하기 위해 다국어 워크플로우를 지원합니다. 자세한 내용은 [다국어 자산](multilingual-assets.md)을 참조하십시오.
 
 다양한 번역 버전이 동기화되도록 자산을 효율적으로 관리하려면 번역 워크플로우를 실행하기 전에 자산의 [언어 사본](preparing-assets-for-translation.md)을 만드십시오.
 
@@ -43,7 +43,7 @@ Adobe Experience Manager(AEM) Assets는 디지털 자산에 대한 바이너리,
 
 1. *마지막 수정 날짜 설정* 워크플로우를 활성화합니다.
 
-   *DAM 메타데이터 원본에 쓰기* 워크플로우는 자산에 대한 마지막으로 수정한 날짜를 구성합니다. 2단계에서 이 워크플로우를 비활성화하므로 AEM Assets은 더 이상 자산의 마지막 수정 날짜를 최신 상태로 유지할 수 없습니다. 따라서 *마지막 수정 날짜 설정* 워크플로우를 활성화하여 자산의 마지막 수정 날짜가 최신 상태인지 확인합니다. 마지막으로 수정한 날짜가 지난 자산은 오류를 일으킬 수 있습니다.
+   *DAM 메타데이터 원본에 쓰기* 워크플로우는 자산에 대한 마지막으로 수정한 날짜를 구성합니다. 2단계에서 이 워크플로우를 비활성화했으므로 [!DNL Experience Manager Assets]은(는) 더 이상 자산의 마지막으로 수정한 날짜를 최신 상태로 유지할 수 없습니다. 따라서 *마지막 수정 날짜 설정* 워크플로우를 활성화하여 자산의 마지막 수정 날짜가 최신 상태인지 확인하십시오. 마지막으로 수정한 날짜가 지난 자산은 오류를 일으킬 수 있습니다.
 
 1. [자산 바이너리 ](/help/sites-administering/tc-tic.md) 번역을 중지하도록 번역 통합 프레임워크를 구성합니다. 자산 탭에서 &quot;자산 번역&quot; 옵션을 선택 취소하여 자산 바이너리 번역을 중지합니다.
 1. [다국어 자산 워크플로우를 사용하여 자산 메타데이터/태그를 변환합니다](multilingual-assets.md).

@@ -2,12 +2,12 @@
 title: 메타데이터 프로필을 사용하여 폴더의 모든 자산에 기본 메타데이터를 적용합니다
 description: 자산의 메타데이터 프로필에 대해 알아봅니다. 메타데이터 프로필을 만들어 폴더 자산에 적용하는 방법을 알아봅니다.
 contentOwner: AG
-feature: 메타데이터
+feature: Metadata
 role: User,Admin
 exl-id: a7b0f1d6-7deb-4565-8c7f-27cad7cd6bf8
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '1233'
+source-wordcount: '1226'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 ## 메타데이터 프로필 추가 {#adding-a-metadata-profile}
 
-1. AEM 로고를 탭하거나 클릭하고 **[!UICONTROL 도구 > 자산 > 메타데이터 프로필]**&#x200B;으로 이동한 다음, **[!UICONTROL 만들기]**&#x200B;를 탭합니다.
+1. [!DNL Experience Manager] 로고를 탭하거나 클릭하고 **[!UICONTROL 도구 > 자산 > 메타데이터 프로필]**&#x200B;으로 이동한 다음, **[!UICONTROL 만들기]**&#x200B;를 탭합니다.
 1. 메타데이터 프로필의 제목(예: 샘플 메타데이터)을 입력하고 **[!UICONTROL 제출]**&#x200B;을 클릭합니다. 메타데이터 프로필에 대한 **[!UICONTROL 편집 양식]**&#x200B;이 표시됩니다.
 
    ![chlimage_1-480](assets/chlimage_1-480.png)
@@ -29,14 +29,14 @@ ht-degree: 3%
 
    **[!UICONTROL 설명]** 구성 요소에 대해 다음 속성을 편집합니다.
 
-   * **[!UICONTROL 필드 레이블]**:메타데이터 속성의 표시 이름입니다. 사용자 참조용입니다.
-   * **[!UICONTROL 속성에 매핑]**:이 속성의 값은 저장소에 저장되는 자산 노드에 대한 상대 경로/이름을 제공합니다. 이 값은 경로가 자산의 노드 아래에 있음을 나타내므로 항상 `./` 로 시작해야 합니다.
+   * **[!UICONTROL 필드 레이블]**: 메타데이터 속성의 표시 이름입니다. 사용자 참조용입니다.
+   * **[!UICONTROL 속성에 매핑]**: 이 속성의 값은 저장소에 저장되는 자산 노드에 대한 상대 경로/이름을 제공합니다. 이 값은 경로가 자산의 노드 아래에 있음을 나타내므로 항상 `./` 로 시작해야 합니다.
 
    ![chlimage_1-482](assets/chlimage_1-482.png)
 
-   **[!UICONTROL 속성에 매핑]**&#x200B;에 대해 지정하는 값은 자산의 메타데이터 노드 아래에 속성으로 저장됩니다. 예를 들어 를 지정하는 경우, `/jcr:content/metadata/dc:desc` AEM Assets은  **[!UICONTROL 속성에 매핑]**&#x200B;의 이름으로 자산 `dc:desc` 의 메타데이터 노드에 값을 저장합니다.
+   **[!UICONTROL 속성에 매핑]**&#x200B;에 대해 지정하는 값은 자산의 메타데이터 노드 아래에 속성으로 저장됩니다. 예를 들어 를 지정하는 경우, `/jcr:content/metadata/dc:desc` 속성에  **[!UICONTROL 매핑]**&#x200B;의 이름으로  [!DNL Experience Manager] Assets는 자산 `dc:desc` 의 메타데이터 노드에 값을 저장합니다.
 
-   * **[!UICONTROL 기본값]**:이 속성을 사용하여 메타데이터 구성 요소에 대한 기본값을 추가합니다. 예를 들어 &quot;My description&quot;을 지정하면 이 값이 자산의 메타데이터 노드에서 속성 `dc:desc`에 할당됩니다.
+   * **[!UICONTROL 기본값]**: 이 속성을 사용하여 메타데이터 구성 요소에 대한 기본값을 추가합니다. 예를 들어 &quot;My description&quot;을 지정하면 이 값이 자산의 메타데이터 노드에서 속성 `dc:desc`에 할당됩니다.
 
    ![chlimage_1-483](assets/chlimage_1-483.png)
 
@@ -102,7 +102,7 @@ ht-degree: 3%
 
 #### 프로필 사용자 인터페이스의 폴더에 메타데이터 프로필 적용 {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
-1. AEM 로고를 탭하고 **[!UICONTROL 도구 > 자산 > 메타데이터 프로필]**&#x200B;로 이동합니다.
+1. [!DNL Experience Manager] 로고를 탭하고 **[!UICONTROL 도구 > 자산 > 메타데이터 프로필]**&#x200B;으로 이동합니다.
 1. 폴더 또는 여러 폴더에 적용할 메타데이터 프로필을 선택합니다.
 
    ![chlimage_1-490](assets/chlimage_1-490.png)
@@ -122,7 +122,7 @@ ht-degree: 3%
 
 ### 메타데이터 프로필을 전체적으로 적용 {#applying-a-metadata-profile-globally}
 
-폴더에 프로필을 적용하는 것 외에도 폴더에 업로드된 모든 컨텐츠가 선택한 프로필이 적용되도록 전체적으로 프로필을 적용할 수도 있습니다. 메타데이터 프로필을 전체적으로 적용하려면 다음 단계를 수행합니다.
+폴더에 프로필을 적용하는 것 외에도 폴더에 업로드된 모든 컨텐츠가 선택한 프로필이 적용되도록 전체적으로 프로필을 적용할 수도 있습니다. [!DNL Experience Manager] 메타데이터 프로필을 전체적으로 적용하려면 다음 단계를 수행합니다.
 
 1. 다음 중 하나를 수행하십시오.
 
@@ -130,7 +130,7 @@ ht-degree: 3%
 
       ![chlimage_1-492](assets/chlimage_1-492.png)
 
-   * 다음 노드로 CRXDE Lite으로 이동합니다.`/content/dam/jcr:content` `metadataProfile:/etc/dam/metadata/dynamicmedia/<name_of_metadata_profile>` 속성을 추가하고 **[!UICONTROL 모두 저장]**&#x200B;을 탭합니다.
+   * 다음 노드로 CRXDE Lite으로 이동합니다. `/content/dam/jcr:content` `metadataProfile:/etc/dam/metadata/dynamicmedia/<name_of_metadata_profile>` 속성을 추가하고 **[!UICONTROL 모두 저장]**&#x200B;을 탭합니다.
 
       ![chlimage_1-493](assets/chlimage_1-493.png)
 
@@ -144,7 +144,7 @@ ht-degree: 3%
 
 프로필 사용자 인터페이스를 통해 폴더에서 메타데이터 프로필을 제거하려면 다음 단계를 수행합니다.
 
-1. AEM 로고를 탭하고 **[!UICONTROL 도구 > 자산 > 메타데이터 프로필]**&#x200B;로 이동합니다.
+1. [!DNL Experience Manager] 로고를 탭하고 **[!UICONTROL 도구 > 자산 > 메타데이터 프로필]**&#x200B;으로 이동합니다.
 1. 폴더 또는 여러 폴더에서 제거할 메타데이터 프로필을 선택합니다.
 1. **[!UICONTROL 폴더에서 메타데이터 프로필 제거]**&#x200B;를 탭하고 프로필을 제거하는 데 사용할 폴더 또는 여러 폴더를 선택한 다음 **[!UICONTROL 완료]**&#x200B;를 탭합니다.
 
@@ -152,7 +152,7 @@ ht-degree: 3%
 
 ### 속성을 통해 폴더에서 메타데이터 프로필 제거 {#removing-metadata-profiles-from-folders-via-properties}
 
-1. AEM 로고를 탭하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음, 메타데이터 프로필을 제거할 폴더로 이동합니다.
+1. [!DNL Experience Manager] 로고를 탭하고 **[!UICONTROL Assets]**&#x200B;로 이동한 다음, 메타데이터 프로필을 제거할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 눌러 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 누릅니다.
 1. **[!UICONTROL 메타데이터 프로필]** 탭을 선택한 다음 드롭다운 메뉴에서 **[!UICONTROL 없음]**&#x200B;을 선택합니다. **[!UICONTROL 저장]**&#x200B;을 누릅니다.
 
