@@ -1,8 +1,8 @@
 ---
 title: AEM 6.4 Communities로 업그레이드
-seo-title: AEM 6.4 Communities로 업그레이드
+seo-title: Upgrading to AEM 6.4 Communities
 description: 이전 버전에서 AEM 6.4 Communities로 업그레이드하는 방법
-seo-description: 이전 버전에서 AEM 6.4 Communities로 업그레이드하는 방법
+seo-description: How to upgrade from an earlier version to AEM 6.4 Communities
 uuid: c6c2846e-38d4-4e99-9038-bfb486afd8b9
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 7aa28e36-6b31-4447-b800-cab2dc78c93c
 exl-id: ef622ac3-d96d-48bf-bfb2-61516d9deb5c
-source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
+source-git-commit: 0f82e82cf6e09a2734893a98d67ed1a84b1fec5e
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 3%
+source-wordcount: '664'
+ht-degree: 2%
 
 ---
 
@@ -51,17 +51,17 @@ AEM 6.3부터 사용 기능은 더 이상 MySQL에 보고 정보를 저장하지
 
 따라서 ASRP에서 `AEM 6.0 compatability-mode`을 사용하여 UGC에 액세스하도록 지시하는 기능이 있습니다.
 
-모든 AEM 6.3 작성자 및 게시 인스턴스의 경우
+모든 AEM 6.3 작성자 및 게시 인스턴스의 경우:
 
-1. 관리자 권한으로 로그인
-2. [ASRP](asrp.md) 구성
-3. 기존 UGC를 표시하려면 다음 단계를 따르십시오.
-나. 예를 들어 웹 콘솔을 찾습니다
-   [https://&lt;host>:&lt;port>/system/console/](http://localhost:4502/system/console/configMgr)
-configMgrii. **[!UICONTROL AEM Communities 유틸리티]** 구성 찾기
-3. 구성 패널을 확장하려면 선택합니다
-   * *선택을 취소합니다* **`Cloud Storage`**
-   * **[!UICONTROL 저장]**&#x200B;을 선택합니다
+1. 관리자 권한으로 로그인하고 [ASRP](asrp.md)을 구성합니다.
+1. 기존 UGC를 표시하려면 다음 단계를 따르십시오.
+
+   나. 웹 콘솔을 찾습니다. 기본 URL은
+   `https://localhost:4502/system/console/configMgr`.
+
+   ii. **[!UICONTROL AEM Communities 유틸리티]** 구성을 찾은 다음 을 선택하여 구성 패널을 확장합니다.
+
+   3. **[!UICONTROL 클라우드 저장소]**&#x200B;의 선택을 취소하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 ![chlimage_1-126](assets/chlimage_1-126.png)
 
