@@ -1,19 +1,19 @@
 ---
 title: TarMK Cold Standby를 사용하여 AEM을 실행하는 방법
-seo-title: TarMK Cold Standby를 사용하여 AEM을 실행하는 방법
+seo-title: How to Run AEM with TarMK Cold Standby
 description: TarMK 콜드 대기 설정을 생성, 구성 및 유지 관리하는 방법을 알아봅니다.
-seo-description: TarMK 콜드 대기 설정을 생성, 구성 및 유지 관리하는 방법을 알아봅니다.
+seo-description: Learn how to create, configure and maintain a TarMK Cold Standby setup.
 uuid: 27fd2b64-8983-40be-910e-1776a16e127c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: cb041407-ec30-47f8-a01e-314c4835a5d9
-feature: 구성
+feature: Configuring
 exl-id: 73f5c1a4-3d2d-4594-877e-93bd09a94e91
-source-git-commit: e22d12ee2096548e8303521b4c7dac79e7385f49
+source-git-commit: 63367e85f66d7830183403af6ad32ecca9dc8396
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2727'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,16 @@ Tar 마이크로 커널의 콜드 대기 용량을 사용하면 하나 이상의
 >
 >사용 가능한 추가 배포에 대한 자세한 내용은 [권장 배포](/help/sites-deploying/recommended-deploys.md) 페이지를 참조하십시오.
 
+>[!NOTE]
+>
+>대기 인스턴스가 설정되거나 기본 노드에서 파생된 경우, 다음 두 콘솔에 액세스만 허용합니다(관리 관련 활동의 경우).
+>
+>* CRXDE Lite
+>* OSGI 웹 콘솔
+
+>
+>다른 콘솔에는 액세스할 수 없습니다.
+
 ## 작동 방법 {#how-it-works}
 
 기본 AEM 인스턴스에서 TCP 포트가 열려 들어오는 메시지를 수신하고 있습니다. 현재, 노예가 마스터에게 보낼 두 가지 유형의 메시지가 있습니다.
@@ -51,7 +61,7 @@ Tar 마이크로 커널의 콜드 대기 용량을 사용하면 하나 이상의
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
 
-## 기타 특성 {#other-characteristics}
+## 기타 특징 {#other-characteristics}
 
 ### 견고성 {#robustness}
 
@@ -73,7 +83,7 @@ Tar 마이크로 커널의 콜드 대기 용량을 사용하면 하나 이상의
 >
 >Dispatcher와 Cold Standby 설정의 일부인 서버 사이에 로드 밸런서를 추가하는 것이 좋습니다. 로드 밸런서는 일관성을 보장하고 콜드 대기 메커니즘 이외의 다른 방법으로 대기 인스턴스에 컨텐츠가 복사되지 않도록 사용자 트래픽을 **primary** 인스턴스로만 보내도록 구성해야 합니다.
 
-## AEM TarMK 콜드 대기 설정 만들기 {#creating-an-aem-tarmk-cold-standby-setup}
+## AEM TarMK 콜드 대기 설정 생성 {#creating-an-aem-tarmk-cold-standby-setup}
 
 >[!CAUTION]
 >
@@ -83,8 +93,7 @@ Tar 마이크로 커널의 콜드 대기 용량을 사용하면 하나 이상의
 >* org.apache.jackrabbit.oak에서 생성합니다.**plugins**.segment.SegmentNodeStoreService에서 org.apache.jackrabbit.oak.segment.SegmentNodeStoreService로 이동
 
 >
->
-이 변경 사항을 반영하려면 필요한 구성 조정을 해야 합니다.
+>이 변경 사항을 반영하려면 필요한 구성 조정을 해야 합니다.
 
 TarMK 콜드 대기 설정을 만들려면 먼저 기본 전체 설치 폴더의 파일 시스템 복사본을 새 위치에 수행하여 대기 인스턴스를 만들어야 합니다. 그런 다음 해당 역할( `primary` 또는 `standby`)을 지정하는 실행 모드로 각 인스턴스를 시작할 수 있습니다.
 
@@ -197,7 +206,7 @@ TarMK 콜드 대기 설정을 만들려면 먼저 기본 전체 설치 폴더의
 
 웹 콘솔을 통해 다음 방법으로 서비스를 구성할 수도 있습니다.
 
-1. 웹 콘솔로 이동:`https://serveraddress:serverport/system/console/configMgr`
+1. 웹 콘솔로 이동: `https://serveraddress:serverport/system/console/configMgr`
 1. **Apache Jackrabbit Oak Segment Tar Cold Standby Service**&#x200B;라는 서비스를 찾고 두 번 클릭하여 설정을 편집합니다.
 1. 설정을 저장하고 인스턴스를 다시 시작하여 새 설정을 적용할 수 있습니다.
 
@@ -207,8 +216,7 @@ TarMK 콜드 대기 설정을 만들려면 먼저 기본 전체 설치 폴더의
 >
 >이 작업은 *http://localhost:4502/system/console/status-slingsettings*&#x200B;로 이동하여 **&quot;Run Modes&quot;** 줄을 선택하면 수행할 수 있습니다.
 
-
-## 처음 동기화 {#first-time-synchronization}
+## 첫 번째 동기화 {#first-time-synchronization}
 
 준비가 완료되고 대기시간이 처음 시작되면, 대기 시간이 1차 인스턴스에 도달하기 때문에 인스턴스 간에 네트워크 트래픽이 폭주하게 됩니다. 로그에서 동기화 상태를 확인할 수 있습니다.
 
@@ -284,7 +292,7 @@ Cold Standby Service에 대해 다음 OSGi 설정을 사용할 수 있습니다.
 >
 >이 문제를 해결하는 가장 좋은 방법은 대기 모드에서 *sling.id* 파일을 삭제하고 인스턴스를 다시 시작하는 것입니다.
 
-## 장애 조치(failover) 프로시저 {#failover-procedures}
+## 페일오버 절차 {#failover-procedures}
 
 어떤 이유로든 기본 인스턴스가 실패하는 경우, 다음과 같이 시작 실행 모드를 변경하여 기본 역할을 수행하도록 대기 인스턴스 중 하나를 설정할 수 있습니다.
 
@@ -312,7 +320,7 @@ Cold Standby Service에 대해 다음 OSGi 설정을 사용할 수 있습니다.
 
 아래 설명된 절차에 따라 이 작업을 수행할 수 있습니다.
 
-1. JMX 콘솔로 이동하여 **org.apache.jackrabbit.oak를 사용하여 콜드 대기 인스턴스에서 동기화 프로세스를 중지합니다.상태(&quot;Standby&quot;)** bean. 이 작업을 수행하는 방법에 대한 자세한 내용은 [모니터링](#monitoring)의 섹션을 참조하십시오.
+1. JMX 콘솔로 이동하여 **org.apache.jackrabbit.oak를 사용하여 콜드 대기 인스턴스에서 동기화 프로세스를 중지합니다. 상태(&quot;Standby&quot;)** bean. 이 작업을 수행하는 방법에 대한 자세한 내용은 [모니터링](#monitoring)의 섹션을 참조하십시오.
 1. 콜드 대기 인스턴스를 중지합니다.
 1. 기본 인스턴스에 핫픽스를 설치합니다. 핫픽스 설치 방법에 대한 자세한 내용은 [패키지 작업 방법](/help/sites-administering/package-manager.md)을 참조하십시오.
 1. 설치 후 인스턴스에 문제를 테스트합니다.
@@ -332,7 +340,7 @@ Cold Standby Service에 대해 다음 OSGi 설정을 사용할 수 있습니다.
 이 노드에는 5개의 읽기 전용 속성이 있습니다.
 
 * `Running:` 동기화 프로세스가 실행 중인지 여부를 나타내는 부울 값입니다.
-* `Mode:` 클라이언트:그 다음에 인스턴스를 식별하는 데 사용되는 UUID가 옵니다. 이 UUID는 구성이 업데이트될 때마다 변경됩니다.
+* `Mode:` 클라이언트: 그 다음에 인스턴스를 식별하는 데 사용되는 UUID가 옵니다. 이 UUID는 구성이 업데이트될 때마다 변경됩니다.
 * `Status:` 현재 상태(예:  `running`  또는  `stopped`)의 텍스트 표현입니다.
 * `FailedRequests:`연속 오류 수.
 * `SecondsSinceLastSuccess:` 서버와 마지막으로 통신한 이후 경과된 시간(초)입니다. 성공적으로 통신할 수 없으면 `-1`이 표시됩니다.
@@ -373,7 +381,7 @@ Cold Standby Service에 대해 다음 OSGi 설정을 사용할 수 있습니다.
 
 Adobe은 시간에 따른 과도한 저장소 증가를 방지하기 위해 정기적으로 유지 관리를 실행하는 것을 권장합니다. 콜드 대기 저장소 유지 관리를 수동으로 수행하려면 아래 단계를 수행하십시오.
 
-1. JMX 콘솔로 이동하여 **org.apache.jackrabbit.oak를 사용하여 대기 인스턴스에서 대기 프로세스를 중지합니다.상태(&quot;Standby&quot;)** bean. 이 작업을 수행하는 방법에 대한 자세한 내용은 [모니터링](/help/sites-deploying/tarmk-cold-standby.md#monitoring)에서 위의 섹션을 참조하십시오.
+1. JMX 콘솔로 이동하여 **org.apache.jackrabbit.oak를 사용하여 대기 인스턴스에서 대기 프로세스를 중지합니다. 상태(&quot;Standby&quot;)** bean. 이 작업을 수행하는 방법에 대한 자세한 내용은 [모니터링](/help/sites-deploying/tarmk-cold-standby.md#monitoring)에서 위의 섹션을 참조하십시오.
 
 1. 기본 AEM 인스턴스를 중지합니다.
 1. 기본 인스턴스에서 oak 압축 도구를 실행합니다. 자세한 내용은 [저장소 유지 관리](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)를 참조하십시오.
