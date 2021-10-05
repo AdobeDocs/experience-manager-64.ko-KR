@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management
 role: Architect,Admin
 exl-id: e2ab924b-53cb-4011-8c0a-9e8e59dd2f16
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -37,4 +37,4 @@ Adobe Experience Manager Assets는 컨텐츠 속도를 높여 비즈니스 목�
 * [[!DNL Experience Manager] 및 Creative Cloud 통합 우수 ](aem-cc-integration-best-practices.md)
 사례 [!DNL Experience Manager] 를 사용하여 배포를 여러 가지 방법으로 Creative Cloud과 통합할 수 있습니다. 통합 및 자산 전송 워크플로우를 간소화하는 몇 가지 모범 사례를 따르면 최대 효율성을 달성할 수 있습니다. 이 안내서에는 [!DNL Experience Manager] 자산을 Adobe Creative Cloud과 통합하는 방법에 대한 우수 사례가 포함되어 있습니다.
 * (사용하지 않음) [[!DNL Experience Manager] 을(를) Creative Cloud 폴더 공유 우수 사례](aem-cc-folder-sharing-best-practices.md)
-DAM 사용자가 Creative Cloud(CC) 사용자와 폴더를 공유할 수 있도록 [!DNL Experience Manager]를 구성하여 Creative Cloud Assets 서비스에서 공유 폴더로 사용할 수 있습니다. 이 기능은 크리에이티브 팀과 DAM 사용자 간에 파일을 교환하는 데 사용할 수 있습니다. 이 안내서에서는 [!DNL Experience Manager] 을 Creative Cloud 폴더 공유 기능에 활용하는 모범 사례에 대해 설명합니다.
+DAM 사용자가 Creative Cloud 사용자와 폴더를 공유할 수 있도록 [!DNL Experience Manager]를 구성하여 Creative Cloud Assets 서비스에서 공유 폴더로 사용할 수 있습니다. 이 기능은 크리에이티브 팀과 DAM 사용자 간에 파일을 교환하는 데 사용할 수 있습니다. 이 안내서에서는 [!DNL Experience Manager] 을 Creative Cloud 폴더 공유 기능에 활용하는 모범 사례에 대해 설명합니다.

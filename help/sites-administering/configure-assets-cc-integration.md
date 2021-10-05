@@ -1,10 +1,10 @@
 ---
 title: Experience Cloud과 AEM Assets 통합 구성
 description: Experience Cloud과 AEM Assets 통합을 구성하는 방법을 알아봅니다.
-feature: 자산 관리
+feature: Asset Management
 role: User, Architect, Admin
 exl-id: f8629c30-1901-4b6e-b5a6-e46ee3c72fba
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 1%
@@ -54,7 +54,7 @@ Adobe Experience Cloud 고객의 경우 Adobe Experience Manager Assets 내의 �
 1. **[!UICONTROL 범위]** 목록에서 **[!UICONTROL dam-read]**, **[!UICONTROL dam-sync]**, **[!UICONTROL dam-write]** 및 **[!UICONTROL cc-share]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 애플리케이션이 만들어졌다는 메시지가 나타납니다.
 
-   ![AEM Assets을 Adobe CC와 통합하기 위한 애플리케이션을 성공적으로 만들 수 있다는 알림](assets/chlimage_1-289.png)
+   ![AEM Assets과 Adobe Creative Cloud을 통합하기 위한 애플리케이션을 성공적으로 만든 알림](assets/chlimage_1-289.png)
 
 1. 새 응용 프로그램에 대해 생성된 **[!UICONTROL 응용 프로그램 ID]**&#x200B;를 복사합니다.
 
@@ -74,7 +74,7 @@ Adobe Experience Cloud 고객의 경우 Adobe Experience Manager Assets 내의 �
 
 1. **[!UICONTROL 구성 만들기]** 대화 상자에서 새 구성의 제목과 이름을 지정하고 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
-   ![AEM Assets 및 CC를 통합하기 위한 새 구성의 이름 지정](assets/cloudservices_configure_mc.png)
+   ![AEM Assets 및 Creative Cloud을 통합하기 위한 새 구성의 이름 지정](assets/cloudservices_configure_mc.png)
 
 1. **[!UICONTROL 테넌트 URL]** 필드에서 AEM Assets의 URL을 지정합니다. 이전에는 URL이 `https://<tenant_id>.marketing.adobe.com`로 정의된 경우 `https://<tenant_id>.experiencecloud.adobe.com`(으)로 변경하십시오.
 
@@ -164,5 +164,5 @@ For example, if an asset is uploaded from an AEM Assets (on premises) instance, 
 >[!MORELIKETHIS]
 >
 >* [자산 및 Creative Cloud 통합 우수 사례](/help/assets/aem-cc-integration-best-practices.md)
-* [자산을 Creative Cloud 폴더로 공유 우수 사례](/help/assets/aem-cc-folder-sharing-best-practices.md)
+>* [자산을 Creative Cloud 폴더로 공유 우수 사례](/help/assets/aem-cc-folder-sharing-best-practices.md)
 

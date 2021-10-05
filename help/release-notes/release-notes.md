@@ -10,10 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
 workflow-type: tm+mt
-source-wordcount: '2754'
-ht-degree: 30%
+source-wordcount: '2751'
+ht-degree: 31%
 
 ---
 
@@ -117,7 +117,7 @@ UI의 생산성과 사용 편의성을 향상시키기 위해 UI에 다양한 �
 
 **[컨텐츠 조각](/help/assets/content-fragments.md)**
 
-6.4의 새로운 기능은 시각적 [컨텐츠 모델](/help/assets/content-fragments-models.md) 편집기와, 컨텐츠 서비스에 포함할 유연한 HTML 출력 및 JSON을 제공하기 위한 새로운 [구성 가능한 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/content-fragment-component.html)입니다.
+6.4의 새로운 기능은 시각적 [컨텐츠 모델](/help/assets/content-fragments-models.md) 편집기와, Content Services에 포함할 유연한 HTML 출력 및 JSON을 제공하는 새로운 [구성 가능한 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/content-fragment-component.html)입니다.
 
 **경험 조각**
 
@@ -131,11 +131,11 @@ Sling 모델 익스포터 및 핵심 구성 요소에 대한 다양한 개선 �
 
 AEM 6.4는 차세대 구성 요소 모델로 변환을 완료합니다. AEM 6.3에서 도입되었으며 이제 스타일 시스템으로 결합되어 있는 코어 구성 요소 개념은 새 사이트를 작성하고 기존 사이트를 확장하는 효율적인 방법을 제공합니다.
 
-새 구성 요소 모델을 가장 잘 활용하는 방법을 배우려면 권장되는 자습서입니다. [AEM Sites 시작하기 - WKND 자습서](https://docs.adobe.com/content/help/ko/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+새 구성 요소 모델을 가장 잘 활용하는 방법을 배우려면 권장되는 자습서입니다. [AEM Sites 시작하기 - WKND 자습서](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 #### 화면 추가 기능 {#screens-add-on}
 
-AEM Screens은 디지털 간판 및 키오스크 네트워크를 포함한 모든 마케팅 채널에서 일관된 메시지를 전달하는 것을 의미합니다. AEM 6.4는 Microsoft Windows 및 Google Chrome OS 하드웨어에서 Signage Player를 실행할 수 있는 지원을 추가합니다. 또한 원격 장치 관리 및 예약(채널 그룹)에 대한 개선 사항을 사용할 수 있습니다.
+AEM Screens은 디지털 간판 및 키오스크 네트워크를 포함한 모든 마케팅 채널에서 일관된 메시지를 전달하는 것을 의미합니다. AEM 6.4에는 Microsoft Windows 및 Google Chrome OS 하드웨어에서 Signage Player를 실행하는 지원이 추가되었습니다. 또한 원격 장치 관리 및 예약(채널 그룹)에 대한 개선 사항을 사용할 수 있습니다.
 
 스크린 업데이트에 대한 자세한 내용은 [AEM Screens 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-screens/user-guide/aem-screens-introduction.html)를 참조하십시오.
 
@@ -187,7 +187,7 @@ AEM 6.4는 향상된 새 Creative Cloud 통합, 주요 인공 지능(AI) 혁신,
 
 **Adobe Asset Link**
 
-기업 Creative Cloud의 Adobe 자산 링크를 사용하면 컨텐츠 작성 프로세스에서 광고 팀과 마케터 간의 협업을 간소화할 수 있습니다. Photoshop CC, Illustrator CC 및 InDesign CC를 AEM에 연결하는 기업용 Creative Cloud의 새로운 기본 기능으로, 크리에이티브를 사용하지 않고도 원하는 도구를 사용할 수 있습니다.
+기업 Creative Cloud의 Adobe 자산 링크를 사용하면 컨텐츠 작성 프로세스에서 광고 팀과 마케터 간의 협업을 간소화할 수 있습니다. Photoshop, Illustrator 및 InDesign을 AEM에 연결하는 기업용 Creative Cloud의 새로운 기본 기능으로, 크리에이티브는 선택되는 도구를 그대로 둘 수 있습니다.
 
 이 기능, 사전 요구 사항 및 액세스 방법에 대한 자세한 내용은 [자산 링크 Adobe](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html)를 참조하십시오.
 
@@ -255,7 +255,7 @@ AEM 6.4 Forms에는 여러 가지 새로운 기능과 개선 사항이 제공됩
 * 비즈니스 애플리케이션에서 대화형 커뮤니케이션 미리 채우기
 * 워크플로우 현대화 및 모바일 작업자 지원
 * 지연 로드 조각
-* LiveCycle에서 Forms 6.4로 단일 홉으로 업그레이드
+* LiveCycle에서 Experience Manager Forms 6.4로 단일 홉으로 업그레이드
 
 [AEM Forms](forms.md) 릴리스 노트 페이지에 대한 자세한 내용. 새로운 기능 및 향상된 설명서 리소스에 대한 자세한 내용은 AEM 6.4 Forms](/help/forms/using/whats-new.md)의 [새 기능 및 개선 사항 요약 을 참조하십시오.
 
@@ -304,7 +304,7 @@ Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 
 
 * Adobe Experience Manager 데스크탑 앱([자세히 보기](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) 및 [다운로드](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html))
 
-* 향상된 PDF 래스터라이저 기능 추가 패키지([자세한 내용](/help/assets/aem-pdf-rasterizer.md) 및 [다운로드](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
+* 향상된 PDF 래스터라이저([더 보기](/help/assets/aem-pdf-rasterizer.md) 및 [다운로드](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))를 추가하는 패키지
 
 * 확장된 RAW 이미지 지원 추가 패키지([자세히 보기](/help/assets/camera-raw.md))
 
