@@ -1,19 +1,19 @@
 ---
 title: 개념
-seo-title: 개념
+seo-title: Concepts
 description: AEM을 사용한 eCommerce의 일반 개념.
-seo-description: AEM을 사용한 eCommerce의 일반 개념.
+seo-description: General Concepts of eCommerce with AEM.
 uuid: 1e3f0518-7797-48a7-bac7-0dc3ddaa0385
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: e-commerce
 content-type: reference
 discoiquuid: c8ef374a-38d8-4cd4-a86e-69f0a5b4c2bc
-feature: 전자 상거래 통합 프레임워크
+feature: Commerce Integration Framework
 exl-id: 8140db99-fec6-4efd-87d9-62efd157d54a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
 workflow-type: tm+mt
-source-wordcount: '4535'
+source-wordcount: '4524'
 ht-degree: 2%
 
 ---
@@ -41,27 +41,31 @@ ht-degree: 2%
 >* [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
 >
 >* [SAP Commerce Cloud](/help/sites-administering/sap-commerce-cloud.md)
+>
+>* [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
 
-* [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
-
+>
 
 
 >[!CAUTION]
 >
 >[eCommerce 통합 프레임워크](https://www.adobe.com/solutions/web-experience-management/commerce.html)는 AEM 추가 기능입니다.
+>
 >영업 담당자는 해당 엔진에 따라 자세한 내용을 제공할 수 있습니다.
 
 >[!CAUTION]
 >
 >프레임워크는 사용자 자신의 프로젝트에 대한 기본 요구 사항을 제공합니다.
+>
 >프레임워크를 사양에 맞게 조정하려면 항상 특정 양의 개발 작업이 필요합니다.
 
 >[!CAUTION]
 >
 >표준 AEM 설치에는 일반 AEM(JCR) eCommerce 구현이 포함되어 있습니다.
+>
 >현재 데모 목적으로 사용하거나 요구 사항에 따라 사용자 지정 구현을 위한 기본 기반으로 사용됩니다.
 
-운영을 최적화하기 위해 AEM과 eCommerce 엔진은 모두 고유한 전문 분야에 주력합니다. 실시간으로 양국 간에 정보가 전달된다.예:
+운영을 최적화하기 위해 AEM과 eCommerce 엔진은 모두 고유한 전문 분야에 주력합니다. 실시간으로 양국 간에 정보가 전달된다. 예:
 
 * AEM의 기능은 다음과 같습니다.
 
@@ -126,11 +130,13 @@ AEM eCommerce는 eCommerce 엔진을 사용하여 구현됩니다.
 >[!NOTE]
 >
 >표준 AEM 설치에는 일반 AEM(JCR) eCommerce 구현이 포함되어 있습니다.
->현재 데모 목적으로 사용하거나 요구 사항에 따라 사용자 지정 구현을 위한 기본 기반으로 사용됩니다.
->JCR을 기반으로 하는 일반 개발을 사용하여 AEM 내에 구현된 AEM eCommerce는 다음과 같습니다.
->* API의 사용을 보여주는 독립형 AEM 기본 eCommerce 예입니다. 기존 데이터 디스플레이 및 마케팅 캠페인과 함께 제품 데이터, 장바구니 및 체크아웃을 제어하는 데 사용할 수 있습니다. 이 경우 제품 데이터베이스는 AEM이 아닌 저장소에 저장됩니다(Adobe의 [JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html) 구현).\
->표준 AEM 설치에는 [일반 eCommerce 구현](/help/sites-administering/generic.md)의 기본 사항이 포함되어 있습니다.
 >
+>현재 데모 목적으로 사용하거나 요구 사항에 따라 사용자 지정 구현을 위한 기본 기반으로 사용됩니다.
+>
+>JCR을 기반으로 하는 일반 개발을 사용하여 AEM 내에 구현된 AEM eCommerce는 다음과 같습니다.
+>
+>* API의 사용을 보여주는 독립형 AEM 기본 eCommerce 예입니다. 기존 데이터 디스플레이 및 마케팅 캠페인과 함께 제품 데이터, 장바구니 및 체크아웃을 제어하는 데 사용할 수 있습니다. 이 경우 제품 데이터베이스는 AEM이 아닌 저장소에 저장됩니다(Adobe의 [JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html) 구현).\
+   >  표준 AEM 설치에는 [일반 eCommerce 구현](/help/sites-administering/generic.md)의 기본 사항이 포함되어 있습니다.
 
 
 ### 상거래 공급자 {#commerce-providers}
@@ -151,7 +157,7 @@ AEM eCommerce는 eCommerce 엔진을 사용하여 구현됩니다.
 
 >[!NOTE]
 >
->geometrixx 가져오기 프로그램은 CSV 파일을 사용합니다.스키마 구현 위의 주석에는 수락된(사용자 지정 속성이 허용됨)에 대한 설명이 있습니다.
+>geometrixx 가져오기 프로그램은 CSV 파일을 사용합니다. 스키마 구현 위의 주석에는 수락된(사용자 지정 속성이 허용됨)에 대한 설명이 있습니다.
 
 [ProductServicesManager](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html)는 [ProductImporter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) 및 [CatalogBlueprintImporter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) 인터페이스의 구현 목록을 유지 관리합니다([OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings) 사용). 이러한 항목은 가져오기 마법사의 **Importer/Commerce Provider** 드롭다운 필드에 나열되어 있습니다( `commerceProvider` 속성을 이름으로 사용).
 
@@ -160,7 +166,7 @@ AEM eCommerce는 eCommerce 엔진을 사용하여 구현됩니다.
 * `/apps/commerce/gui/content/catalogs/importblueprintswizard/importers`
 * `/apps/commerce/gui/content/products/importproductswizard/importers`
 
-적절한 `importers` 폴더 아래의 폴더는 가져오기 이름;과 일치해야 합니다.예:
+적절한 `importers` 폴더 아래의 폴더는 가져오기 이름;과 일치해야 합니다. 예:
 
 * `.../importproductswizard/importers/geometrixx/.content.xml`
 
@@ -191,27 +197,27 @@ AEM eCommerce는 eCommerce 엔진을 사용하여 구현됩니다.
    * 그들의 주문을 체크아웃합니다.
    * 주문 이행 예상
 
-그러나 실제 위치는 구현에 따라 달라질 수 있습니다.예를 들어, 일반 또는 eCommerce 엔진을 사용하는 경우
+그러나 실제 위치는 구현에 따라 달라질 수 있습니다. 예를 들어, 일반 또는 eCommerce 엔진을 사용하는 경우
 
 ![chlimage_1-169](assets/chlimage_1-169.png)
 
 ## 제품 {#products}
 
-### 제품 데이터 및 마케팅 데이터 {#product-data-versus-marketing-data}
+### 제품 데이터와 마케팅 데이터 {#product-data-versus-marketing-data}
 
-#### 구조적 및 마케팅 카테고리 {#structural-versus-marketing-categories}
+#### 구조 및 마케팅 카테고리 {#structural-versus-marketing-categories}
 
 다음 두 카테고리를 구별할 수 있는 경우 의미 있는 구조(`cq:Page` 노드의 트리)로 명확한 URL을 만들 수 있으므로 클래식 AEM 컨텐츠 관리에 매우 근접할 수 있습니다.
 
 * *구조 *카테고리
 
-   *제품*&#x200B;을 정의하는 카테고리 트리예:
+   *제품*&#x200B;을 정의하는 카테고리 트리 예:
 
    `/products/mens/shoes/sneakers`
 
 * ** 마케팅 카테고리
 
-   *제품이*&#x200B;에 속할 수 있는 다른 모든 카테고리예:
+   *제품이*&#x200B;에 속할 수 있는 다른 모든 카테고리 예:
 
    `/special-offers/christmas/shoes`)
 
@@ -224,7 +230,7 @@ AEM eCommerce는 eCommerce 엔진을 사용하여 구현됩니다.
 * AEM(일반)에서 직접 유지
 * 는 eCommerce 엔진에서 유지, AEM에서 사용 가능하게 되었습니다.
 
-   데이터 유형에 따라 필요에 따라 [동기화된](#catalog-maintenance-data-synchronization)이거나 직접 액세스됩니다.예를 들어 제품 가격과 같은 휘발성 및 중요 데이터는 항상 최신 상태인지 확인하기 위해 모든 페이지 요청 시 전자 상거래 엔진에서 검색됩니다.
+   데이터 유형에 따라 필요에 따라 [동기화된](#catalog-maintenance-data-synchronization)이거나 직접 액세스됩니다. 예를 들어 제품 가격과 같은 휘발성 및 중요 데이터는 항상 최신 상태인지 확인하기 위해 모든 페이지 요청 시 전자 상거래 엔진에서 검색됩니다.
 
 어느 경우든지 제품 데이터를 AEM에 입력/가져온 경우 **Products** 콘솔에서 볼 수 있습니다. 다음은 다음과 같은 제품 표시 정보의 카드 및 목록 보기입니다.
 
@@ -296,7 +302,7 @@ AEM eCommerce는 eCommerce 엔진을 사용하여 구현됩니다.
 
 ### 카탈로그 구조 {#catalog-structure}
 
-#### 여러 언어로 된 카탈로그 {#catalogs-in-multiple-languages}
+#### 여러 언어로 카탈로그 작성 {#catalogs-in-multiple-languages}
 
 AEM은 여러 언어로 제품 콘텐츠를 지원합니다. 데이터를 요청할 때 통합 프레임워크는 현재 트리에서 언어를 검색합니다(예: `/content/geometrixx-outdoors/en_US` 아래의 페이지에 대해 `en_US`).
 
@@ -324,7 +330,7 @@ AEM은 여러 언어로 제품 콘텐츠를 지원합니다. 데이터를 요청
 * 일반 구현의 경우 [제품 편집기](/help/sites-administering/generic.md#editing-product-information)로 관리할 수 있습니다.
 * [eCommerce 엔진을 사용하는 경우 변경 사항을 동기화해야 합니다](#data-synchronization-with-an-ecommerce-engine-ongoing)
 
-#### 전자 상거래 엔진과 데이터 동기화(진행 중) {#data-synchronization-with-an-ecommerce-engine-ongoing}
+#### eCommerce 엔진과 데이터 동기화(진행 중) {#data-synchronization-with-an-ecommerce-engine-ongoing}
 
 초기 가져오기 후 제품 데이터를 변경하는 것은 필수입니다.
 
@@ -338,7 +344,7 @@ eCommerce 엔진을 사용하는 경우 제품 데이터가 여기에서 유지�
 
 * 가격 정보와 같은 휘발성이 높은 데이터는 항상 최신 상태가 되도록 각 페이지 요청에 대해 상거래 엔진에서 검색됩니다.
 
-### 카탈로그 - 성능 및 비율 {#catalogs-performance-and-scaling}
+### 카탈로그 - 성능 및 크기 조정 {#catalogs-performance-and-scaling}
 
 PIM(eCommerce Engine)에서 많은 제품(일반적으로 10만 개 이상)이 있는 큰 카탈로그를 가져오는 것은 많은 노드로 인해 시스템에 영향을 줄 수 있습니다. 제품에 연결된 자산(예: 제품 이미지)이 있는 경우 작성 인스턴스의 속도를 저하할 수도 있습니다. 이는 이러한 자산의 사후 처리가 CPU와 메모리를 많이 사용하기 때문입니다.
 
@@ -357,7 +363,7 @@ JCR 노드에 많은 직접 하위 노드(예: 1000 이상)가 있는 경우 성
 
 이러한 버킷은 카탈로그 구조에 도입된 팬텀 폴더 형태를 취하지만 공개 URL에서 잘 보이지 않도록 구성할 수 있습니다.
 
-#### 자산 사후 처리를 전용 인스턴스로 오프로드합니다. {#offload-asset-post-processing-to-a-dedicated-instance}
+#### 전용 인스턴스로 자산 사후 처리 오프로드 {#offload-asset-post-processing-to-a-dedicated-instance}
 
 이 시나리오에는 두 개의 작성자 인스턴스를 설정하는 작업이 포함됩니다.
 
@@ -402,7 +408,7 @@ JCR 노드에 많은 직접 하위 노드(예: 1000 이상)가 있는 경우 성
 
 * 컨텐츠 볼륨
 
-   * 자산
+   * 에셋
    * 현지화, I18end 제품 및 SKU
 
 * 사용자 활동:
@@ -454,7 +460,7 @@ JCR 노드에 많은 직접 하위 노드(예: 1000 이상)가 있는 경우 성
 
 카탈로그 섹션은 다음과 같은 정보를 제공합니다.
 
-* 카테고리에 대한 소개(이미지 및/또는 텍스트)이 기능은 배너 및 티저에 사용되어 특별 오퍼를 홍보할 수도 있습니다
+* 카테고리에 대한 소개(이미지 및/또는 텍스트) 이 기능은 배너 및 티저에 사용되어 특별 오퍼를 홍보할 수도 있습니다
 * 해당 카테고리의 개별 제품에 대한 링크
 * 다른 카테고리에 대한 링크
 
@@ -462,17 +468,17 @@ JCR 노드에 많은 직접 하위 노드(예: 1000 이상)가 있는 경우 성
 
 ### 제품 페이지 {#product-pages}
 
-제품 페이지에서는 개별 제품에 대한 포괄적인 정보를 제공합니다. 의 동적 업데이트도 반영됩니다.예를 들어, eCommerce 엔진에 등록된 가격 변경입니다.
+제품 페이지에서는 개별 제품에 대한 포괄적인 정보를 제공합니다. 의 동적 업데이트도 반영됩니다. 예를 들어, eCommerce 엔진에 등록된 가격 변경입니다.
 
-제품 페이지는 **Product** 구성 요소를 사용하는 AEM 페이지입니다.예를 들어 **Commerce Product** 템플릿 내에서 다음을 수행합니다.
+제품 페이지는 **Product** 구성 요소를 사용하는 AEM 페이지입니다. 예를 들어 **Commerce Product** 템플릿 내에서 다음을 수행합니다.
 
 ![ecommerce_nairobirdian-green](assets/ecommerce_nairobirunnersgreen.png)
 
 제품 구성 요소는 다음을 제공합니다.
 
-* 일반 제품 정보텍스트 및 이미지 포함.
-* 가격 책정일반적으로 페이지를 표시/새로 고칠 때마다 eCommerce 엔진에서 검색됩니다.
-* 제품 변형 정보예를 들어 색상 및 크기가 있습니다.
+* 일반 제품 정보 텍스트 및 이미지 포함.
+* 가격 책정 일반적으로 페이지를 표시/새로 고칠 때마다 eCommerce 엔진에서 검색됩니다.
+* 제품 변형 정보 예를 들어 색상 및 크기가 있습니다.
 
 이 정보를 통해 구매자는 품목을 장바구니에 추가할 때 다음 사항을 선택할 수 있습니다.
 
@@ -481,7 +487,7 @@ JCR 노드에 많은 직접 하위 노드(예: 1000 이상)가 있는 경우 성
 
 #### 제품 랜딩 페이지 {#product-landing-pages}
 
-주로 정적 정보를 제공하는 AEM 페이지입니다.예를 들어, 기본 제품 페이지에 대한 링크가 있는 소개 및 개요입니다.
+주로 정적 정보를 제공하는 AEM 페이지입니다. 예를 들어, 기본 제품 페이지에 대한 링크가 있는 소개 및 개요입니다.
 
 ### 제품 구성 요소 {#product-component}
 
@@ -502,6 +508,7 @@ JCR 노드에 많은 직접 하위 노드(예: 1000 이상)가 있는 경우 성
 >[!NOTE]
 >
 >프록시 페이지 없이 큰 카탈로그를 가져오면 문제가 발생하지 않습니다.
+>
 >한 방법론에서 다른 방법론으로 언제든지 변환할 수 있습니다. 카탈로그의 하위 섹션을 변환할 수도 있습니다.
 
 ## 프로모션 및 바우처 {#promotions-and-vouchers}
@@ -523,7 +530,7 @@ AEM에서:
 * 바우처는 웹 사이트 콘솔을 사용하여 만들거나 편집하는 페이지 기반 구성 요소입니다.
 * **바우처** 구성 요소는 다음을 제공합니다.
 
-   * 바우처 관리를 위한 렌더러여기에는 현재 장바구니에 있는 모든 바우처가 표시됩니다.
+   * 바우처 관리를 위한 렌더러 여기에는 현재 장바구니에 있는 모든 바우처가 표시됩니다.
    * 바우처를 관리(추가/제거)하기 위한 편집 대화 상자(양식)입니다.
    * 장바구니에 바우처를 추가/제거하는 데 필요한 작업.
 
@@ -562,7 +569,7 @@ AEM에서:
 AEM에서는 프로모션이 [캠페인 관리](/help/sites-authoring/personalization.md)에도 통합됩니다.
 
 * [campaign](/help/sites-authoring/personalization.md) 은 설정/해제 시간을 지정합니다
-* [](/help/sites-authoring/personalization.md) ** 캠페인 내에서는에 해당하는 대상 세그먼트에 따라 자산(teaser 페이지, 프로모션 등)을 그룹화하는 데 사용됩니다
+* [](/help/sites-authoring/personalization.md) ** 경험캠페인 내에서는에 해당하는 대상 세그먼트에 따라 자산(teaser 페이지, 프로모션 등)을 그룹화하는 데 사용됩니다
 
 프로모션은 경험이나 캠페인에서 직접 가질 수 있습니다.
 
@@ -580,7 +587,7 @@ AEM에서는 프로모션이 [캠페인 관리](/help/sites-authoring/personaliz
 
    `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
-   은 경험 외부에 있으므로 자동으로 실행되지 않습니다(예:세분화 기반). 하지만 문서 캠페인 내의 여러 경험에서 찾을 수 있는 바우처가 참조합니다. 이러한 바우처 코드를 장바구니에 입력하면 프로모션이 실행됩니다.
+   은 경험 외부에 있으므로 자동으로 실행되지 않습니다(예: 세분화 기반). 하지만 문서 캠페인 내의 여러 경험에서 찾을 수 있는 바우처가 참조합니다. 이러한 바우처 코드를 장바구니에 입력하면 프로모션이 실행됩니다.
 
 >[!NOTE]
 >
@@ -614,6 +621,7 @@ eCommerce 엔진을 사용하는 경우 AEM은 계정 ID 및 암호(선택적으
 >[!NOTE]
 >
 >eCommerce 엔진을 사용하는 경우 AEM 인스턴스에 로그인한 사용자를 위해 만든 계정이 해당 엔진과 통신하는 다른 AEM 인스턴스로 복제되는지(예: 워크플로우를 통해)확인해야 합니다.
+>
 >그렇지 않으면 이러한 다른 AEM 인스턴스는 엔진에서 동일한 사용자에 대한 계정을 만들려고 합니다. 이러한 작업은 엔진에서 `DuplicateUidException` 이(가) 생성되면 실패합니다.
 
 ### 고객 등록 {#customer-sign-up}
@@ -646,7 +654,7 @@ eCommerce 엔진의 거래 데이터는 구매자에 대한 개인 정보와 결
 
 ### 주소록 {#address-book}
 
-사이트는 선택한 주소를 저장해야 합니다.게재, 청구 및 대체 주소를 포함합니다. 기본 주소 형식을 기반으로 하여 양식을 사용하여 구현하거나 AEM에서 제공하는 주소록 구성 요소를 사용할 수 있습니다.
+사이트는 선택한 주소를 저장해야 합니다. 게재, 청구 및 대체 주소를 포함합니다. 기본 주소 형식을 기반으로 하여 양식을 사용하여 구현하거나 AEM에서 제공하는 주소록 구성 요소를 사용할 수 있습니다.
 
 이 주소록 구성 요소를 사용하면 다음 작업을 수행할 수 있습니다.
 
@@ -675,7 +683,7 @@ eCommerce 엔진의 거래 데이터는 구매자에 대한 개인 정보와 결
 
 기본값으로 사용할 주소를 선택할 수 있습니다. 이 정보는 주소가 아닌 쇼핑객의 프로필에 유지됩니다. 프로필 속성 `address.default`은(는) 값에 대해 선택한 주소의 경로로 설정됩니다.
 
-### 고객별 가격 {#customer-specific-pricing}
+### 고객별 가격 책정 {#customer-specific-pricing}
 
 eCommerce 엔진은 컨텍스트(기본적으로 구매자 정보)를 사용하여 보유한 가격을 결정한 다음 올바른 정보를 AEM에 다시 제공합니다.
 
@@ -683,7 +691,7 @@ eCommerce 엔진은 컨텍스트(기본적으로 구매자 정보)를 사용하�
 
 쇼핑할 때 구매자는 제품 페이지를 탐색하고 품목을 선택하여 장바구니에 배치합니다. 체크아웃을 진행할 때 주문을 제출할 수 있습니다.
 
-### 익명 쇼핑객 {#anonymous-shoppers}
+### 익명의 고객 {#anonymous-shoppers}
 
 익명의 고객은 다음을 수행할 수 있습니다.
 
@@ -695,7 +703,7 @@ eCommerce 엔진은 컨텍스트(기본적으로 구매자 정보)를 사용하�
 >
 >인스턴스 주소 정보의 구성이나 고객 등록에 따라 체크아웃 전에 이 필요할 수 있습니다.
 
-### 등록된 구매자 {#registered-shoppers}
+### 등록된 고객 {#registered-shoppers}
 
 등록된 고객은 다음을 수행할 수 있습니다.
 
@@ -762,7 +770,7 @@ eCommerce 엔진은 컨텍스트(기본적으로 구매자 정보)를 사용하�
 
 * **상태**
 
-   주문 현황예: 배송됨
+   주문 현황 예: 배송됨
 
 * **통화**
 
@@ -786,7 +794,7 @@ eCommerce 엔진은 컨텍스트(기본적으로 구매자 정보)를 사용하�
 
 * **합계**
 
-   주문 총액주문품, 세금 및 파쇄
+   주문 총액 주문품, 세금 및 파쇄
 
 * **청구 주소**
 
@@ -806,7 +814,7 @@ eCommerce 엔진은 컨텍스트(기본적으로 구매자 정보)를 사용하�
 
 * **배송 방법**
 
-   운송 방법예를 들면, 육지, 바다 또는 공기와 같습니다.
+   운송 방법 예를 들면, 육지, 바다 또는 공기와 같습니다.
 
 * **추적 번호**
 
@@ -850,7 +858,7 @@ AEM 내에서 주문이 유지되면 주문 콘솔에 각 주문에 대해 다�
 
 그런 다음 eCommerce는 AEM Forms의 입력을 사용하여 체크아웃 프로세스를 관리합니다.
 
-### 지급 보안 {#payment-security}
+### 결제 보안 {#payment-security}
 
 신용 카드 정보를 포함한 결제 세부 사항은 종종 전자 상거래 엔진에서 관리합니다. AEM은 이러한 트랜잭션 정보를 엔진으로 전달합니다(그런 다음 결제 처리 서비스로 전달됨).
 

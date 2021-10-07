@@ -1,8 +1,8 @@
 ---
 title: AEM에서 닫힌 사용자 그룹
-seo-title: AEM에서 닫힌 사용자 그룹
+seo-title: Closed User Groups in AEM
 description: AEM에서 폐쇄된 사용자 그룹에 대해 알아봅니다.
-seo-description: AEM에서 폐쇄된 사용자 그룹에 대해 알아봅니다.
+seo-description: Learn about Closed User Groups in AEM.
 uuid: a65ed163-fdec-45f3-adf9-984d36f4eb73
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,14 @@ topic-tags: Security
 content-type: reference
 discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
 exl-id: 71dfaea7-2fae-4feb-bb1d-ad0da573f910
-source-git-commit: 3ee650d0810a03878b4b0a58708ea3600fa28ff2
+source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
 workflow-type: tm+mt
-source-wordcount: '6884'
+source-wordcount: '6871'
 ht-degree: 0%
 
 ---
 
-# AEM{#closed-user-groups-in-aem}에서 닫힌 사용자 그룹
+# AEM에서 닫힌 사용자 그룹{#closed-user-groups-in-aem}
 
 ## 소개 {#introduction}
 
@@ -36,7 +36,7 @@ AEM 6.3 이후 기존 구현과 관련된 성능, 확장성 및 보안 문제를
 * 인증 요구 사항을 표시하기 위한 전용 노드 유형 확장
 * 인증 요구 사항과 연관된 선택적 로그인 경로입니다.
 
-### 새 사용자 지정 사용자 그룹 구현 {#the-new-custom-user-group-implementation}
+### 새로운 사용자 지정 사용자 그룹 구현 {#the-new-custom-user-group-implementation}
 
 AEM 컨텍스트에서 알려진 CUG는 다음 단계로 구성됩니다.
 
@@ -49,11 +49,11 @@ AEM 컨텍스트에서 알려진 CUG는 다음 단계로 구성됩니다.
 
 ## 개요 {#overview}
 
-### 권한 부여:읽기 액세스 제한 {#authorization-restricting-read-access}
+### 권한 부여: 읽기 액세스 제한 {#authorization-restricting-read-access}
 
 CUG의 주요 기능은 선택한 주도자를 제외한 모든 사용자에 대해 컨텐츠 저장소의 지정된 트리에 대한 읽기 액세스를 제한하는 것입니다. 새로운 구현에서는 즉시 기본 액세스 제어 컨텐츠를 조작하는 대신 CUG를 나타내는 전용 유형의 액세스 제어 정책을 정의하여 다른 접근 방식을 사용합니다.
 
-#### CUG {#access-control-policy-for-cug}에 대한 액세스 제어 정책
+#### CUG에 대한 액세스 제어 정책 {#access-control-policy-for-cug}
 
 이 새 유형의 정책은 다음과 같은 특성을 갖습니다.
 
@@ -78,12 +78,12 @@ CUG를 나타내는 데 사용되는 PrincipalSetPolicy 구현은 다음을 정�
 
 새로운 권한 부여 모델은 CUG에 대한 전용 액세스 제어 관리 외에도, 정책에 대한 권한 평가를 조건부로 가능하게 한다. 이렇게 하면 스테이징 환경에서 CUG 정책을 설정할 수 있고, 프로덕션 환경에 복제한 후 유효 권한을 평가만 할 수 있습니다.
 
-CUG 정책에 대한 권한 평가 및 기본 또는 추가 인증 모델과의 상호 작용은 Apache Jackrabbit Oak에서 여러 인증 메커니즘을 위해 설계된 패턴을 따릅니다.모든 모델이 액세스 권한을 부여하는 경우에만 주어진 권한 세트가 부여됩니다. 자세한 내용은 [이 페이지](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html)를 참조하십시오.
+CUG 정책에 대한 권한 평가 및 기본 또는 추가 인증 모델과의 상호 작용은 Apache Jackrabbit Oak에서 여러 인증 메커니즘을 위해 설계된 패턴을 따릅니다. 모든 모델이 액세스 권한을 부여하는 경우에만 주어진 권한 세트가 부여됩니다. 자세한 내용은 [이 페이지](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html)를 참조하십시오.
 
 다음 특성은 CUG 정책을 처리하고 평가하도록 설계된 인증 모델과 연관된 권한 평가에 적용됩니다.
 
 * 일반 노드 및 속성에 대한 읽기 권한만 처리하지만 액세스 제어 컨텐츠를 읽지 않습니다
-* 쓰기 권한이나 보호된 JCR 컨텐츠를 수정하는 데 필요한 권한(액세스 제어, 노드 유형 정보, 버전 관리, 잠금 또는 사용자 관리 등)은 처리하지 않습니다.이러한 권한은 CUG 정책에 영향을 받지 않으며 관련 인증 모델로 평가되지 않습니다. 이러한 권한이 부여되는지 여부는 보안 설정에 구성된 다른 모델에 따라 다릅니다.
+* 쓰기 권한이나 보호된 JCR 컨텐츠를 수정하는 데 필요한 권한(액세스 제어, 노드 유형 정보, 버전 관리, 잠금 또는 사용자 관리 등)은 처리하지 않습니다. 이러한 권한은 CUG 정책에 영향을 받지 않으며 관련 인증 모델로 평가되지 않습니다. 이러한 권한이 부여되는지 여부는 보안 설정에 구성된 다른 모델에 따라 다릅니다.
 
 권한 평가 시 단일 CUG 정책의 효과를 다음과 같이 요약할 수 있습니다.
 
@@ -109,7 +109,7 @@ CUG를 통해 제한된 읽기 액세스를 정의하는 데에는 다음 모범
 * CUG 정책에 대해 지원되는 경로를 리포지토리의 몇 개의 트리로 제한하여 최적화된 성능을 허용합니다. 예를 들어 AEM 6.3 이후 기본값으로 제공되는 /content 노드 아래의 CUG만 허용합니다.
 * CUG 정책은 소규모 주도자에 대한 읽기 액세스 권한을 부여하도록 설계되었습니다. 많은 주도자가 필요하기 때문에 컨텐츠나 애플리케이션 디자인에서 문제가 강조될 수 있으므로 다시 고려해야 합니다.
 
-### 인증:인증 요구 사항 정의 {#authentication-defining-the-auth-requirement}
+### 인증: 인증 요구 사항 정의 {#authentication-defining-the-auth-requirement}
 
 CUG 기능의 인증 관련 부분을 사용하면 인증이 필요한 트리를 표시하고 선택적으로 전용 로그인 페이지를 지정할 수 있습니다. 이전 버전에 따라 새 구현에서는 컨텐츠 리포지토리에서 인증이 필요한 트리를 표시하고, 요구 사항을 최종적으로 실행하고 로그인 리소스로 리디렉션할 책임이 있는 `Sling org.apache.sling.api.auth.Authenticator`과의 동기화를 조건부로 활성화할 수 있습니다.
 
@@ -125,7 +125,7 @@ CUG 기능의 인증 관련 부분을 사용하면 인증이 필요한 트리를
 >
 >로그인 경로 속성을 설정하는 것은 선택 사항이며 인증을 필요로 하는 트리가 기본값이나 상속된 로그인 페이지로 돌아올 수 없는 경우에만 필요합니다. 아래의 [로그인 경로 평가](/help/sites-administering/closed-user-groups.md#evaluation-of-login-path)를 참조하십시오.
 
-#### Sling Authenticator에 인증 요구 사항 및 로그인 경로 등록 {#registering-the-authentication-requirement-and-login-path-with-the-sling-authenticator}
+#### Sling 인증자에 인증 요구 사항 및 로그인 경로 등록 {#registering-the-authentication-requirement-and-login-path-with-the-sling-authenticator}
 
 이러한 유형의 인증 요구 사항은 특정 실행 모드 및 컨텐츠 리포지토리 내의 작은 트리 하위 집합으로 제한되어야 하므로 요구 사항 mixin 유형 및 로그인 경로 속성의 추적은 조건이며 지원되는 경로를 정의하는 해당 구성에 바인딩됩니다(아래 구성 옵션 참조). 따라서 이러한 지원되는 경로의 범위 내에서만 변경하면 Mixin 유형과 속성이 모두 무시됩니다. OSGi 등록에 대한 업데이트가 트리거됩니다.
 
@@ -137,7 +137,7 @@ CUG 기능의 인증 관련 부분을 사용하면 인증이 필요한 트리를
 
 Apache Sling 인증 요구 사항은 페이지 또는 노드 계층 구조를 통해 상속되어야 합니다. 상속 및 순서 및 우선 순위와 같은 인증 요구 사항에 대한 평가의 세부 사항은 구현 세부 사항으로 간주되며, 이 문서에 설명되어 있지 않습니다.
 
-#### 로그인 경로 {#evaluation-of-login-path} 평가
+#### 로그인 경로 평가 {#evaluation-of-login-path}
 
 인증 시 로그인 경로를 평가하고 해당 리소스로 리디렉션하는 것은 현재 AEM으로 구성된 Apache Sling AuthenticationHandler인 Adobe Granite 로그인 선택기 인증 핸들러( `com.day.cq.auth.impl.LoginSelectorHandler`)의 구현 세부 정보입니다.
 
@@ -175,7 +175,7 @@ Granite에서 새 인증 요구 사항 지원에 의해 구현된 `LoginPathProv
 
 인증 요구 사항을 정의할 때 다음 모범 사례를 고려해야 합니다.
 
-* 인증 요구 사항 중첩 방지:트리의 시작 부분에 단일 인증 요구 사항 마커를 배치하면 충분하며 대상 노드에 의해 정의된 전체 하위 트리에 상속됩니다. 해당 트리 내의 추가 인증 요구 사항은 중복으로 간주되어야 하며 Apache Sling 내에서 인증 요구 사항을 평가하는 동안 성능 문제가 발생할 수 있습니다. 권한 부여 및 인증 관련 CUG 영역을 분리함으로써 전체 트리에 대한 인증을 실행하면서 CUG나 다른 유형의 정책에 의한 읽기 액세스를 제한할 수 있다.
+* 인증 요구 사항 중첩 방지: 트리의 시작 부분에 단일 인증 요구 사항 마커를 배치하면 충분하며 대상 노드에 의해 정의된 전체 하위 트리에 상속됩니다. 해당 트리 내의 추가 인증 요구 사항은 중복으로 간주되어야 하며 Apache Sling 내에서 인증 요구 사항을 평가하는 동안 성능 문제가 발생할 수 있습니다. 권한 부여 및 인증 관련 CUG 영역을 분리함으로써 전체 트리에 대한 인증을 실행하면서 CUG나 다른 유형의 정책에 의한 읽기 액세스를 제한할 수 있다.
 * 중첩된 하위 트리를 다시 요구 사항에서 제외할 필요 없이 전체 트리에 대해 인증 요구 사항이 적용되도록 모델 리포지토리 컨텐츠입니다.
 * 지정하지 않고 이어서 중복 로그인 경로를 등록하지 않으려면 다음을 수행하십시오.
 
@@ -205,7 +205,7 @@ Oak 설명서에서는 새 CUG 정책이 리포지토리 컨텐츠에 어떻게 
 
 ### CUG 정책 관리 {#managing-cug-policies}
 
-CUG에 대한 읽기 액세스를 제한하는 새로운 유형의 액세스 제어 정책은 JCR 액세스 제어 관리 API를 사용하여 관리되며 [JCR 2.0 사양](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html)에 설명된 메커니즘을 따릅니다.
+CUG에 대한 읽기 액세스를 제한하는 새로운 유형의 액세스 제어 정책은 JCR 액세스 제어 관리 API를 사용하여 관리되며 [JCR 2.0 사양](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html)에 설명된 메커니즘을 따릅니다.
 
 #### 새 CUG 정책 설정 {#set-a-new-cug-policy}
 
@@ -322,9 +322,9 @@ while (isSupportedPath(path)) {
 }
 ```
 
-#### Pincipal {#managing-cug-policies-by-pincipal}별 CUG 정책 관리
+#### Pincipal별 CUG 정책 관리 {#managing-cug-policies-by-pincipal}
 
-CUG 정책이 항상 모든 주도자에 영향을 주듯이, 주도자별로 액세스 제어 정책을 편집할 수 있는 `JackrabbitAccessControlManager`에 의해 정의된 확장은 CUG 액세스 제어 관리를 통해 구현되지 않습니다.`PrincipalSetPolicy`로 나열된 항목은 읽기 액세스 권한이 부여되지만 다른 모든 주도자는 대상 노드에 의해 정의된 트리의 컨텐츠를 읽을 수 없습니다.
+CUG 정책이 항상 모든 주도자에 영향을 주듯이, 주도자별로 액세스 제어 정책을 편집할 수 있는 `JackrabbitAccessControlManager`에 의해 정의된 확장은 CUG 액세스 제어 관리를 통해 구현되지 않습니다. `PrincipalSetPolicy`로 나열된 항목은 읽기 액세스 권한이 부여되지만 다른 모든 주도자는 대상 노드에 의해 정의된 트리의 컨텐츠를 읽을 수 없습니다.
 
 해당 메서드는 항상 빈 정책 배열을 반환하지만 예외를 throw하지 않습니다.
 
@@ -349,7 +349,7 @@ targetNode.addMixin("granite:AuthenticationRequired");
 session.save();
 ```
 
-#### 로그인 경로 {#add-a-new-auth-requirement-with-login-path}에 새 인증 요구 사항 추가
+#### 로그인 경로를 사용하여 새 인증 요구 사항 추가 {#add-a-new-auth-requirement-with-login-path}
 
 로그인 경로를 포함한 새 인증 요구 사항을 만드는 절차. 대상 노드가 포함된 트리에 대해 `RequirementHandler`이 구성된 경우 로그인 경로에 대한 요구 사항 및 제외 사항이 Apache Sling Authenticator에만 등록됩니다.
 
@@ -364,7 +364,7 @@ targetNode.setProperty("granite:loginPath", loginPath);
 session.save();
 ```
 
-#### 기존 로그인 경로 {#modify-an-existing-login-path} 수정
+#### 기존 로그인 경로 수정 {#modify-an-existing-login-path}
 
 기존 로그인 경로를 변경하는 단계는 아래에 자세히 설명되어 있습니다. 대상 노드가 포함된 트리에 대해 `RequirementHandler`이(가) 구성된 경우에만 Apache Sling Authenticator에 수정 사항이 등록됩니다. 이전 로그인 경로 값이 등록에서 제거됩니다. 대상 노드와 연결된 인증 요구 사항은 이 수정 사항의 영향을 받지 않습니다.
 
@@ -380,7 +380,7 @@ if (targetNode.isNodeType("granite:AuthenticationRequired")) {
 }
 ```
 
-#### 기존 로그인 경로 {#remove-an-existing-login-path} 제거
+#### 기존 로그인 경로 제거 {#remove-an-existing-login-path}
 
 기존 로그인 경로를 제거하는 절차. 대상 노드가 포함된 트리에 대해 `RequirementHandler`이(가) 구성된 경우 Apache Sling Authenticator에서 로그인 경로 항목이 등록되지 않습니다. 대상 노드와 연결된 인증 요구 사항은 영향을 받지 않습니다.
 
@@ -432,7 +432,7 @@ Apache Sling Authenticator에 등록된 대로 모든 유효한 인증 요구 �
 
 ![chlimage_1-62](assets/chlimage_1-62.jpeg)
 
-#### 유효 로그인 경로 {#retrieve-the-effective-login-path} 검색
+#### 유효 로그인 경로 검색 {#retrieve-the-effective-login-path}
 
 현재 인증이 필요한 리소스에 익명으로 액세스할 때 적용되는 로그인 경로를 검색할 공개 API가 없습니다. 로그인 경로를 검색하는 방법에 대한 구현 세부 사항은 로그인 경로 평가 섹션을 참조하십시오.
 
@@ -486,7 +486,7 @@ while (isSupported(node)) {
 
 이전 구현과 새 구현 간의 구성 옵션에 대한 포괄적인 매핑은 CUG 매핑 설명서 를 참조하십시오.
 
-### 권한 부여:설정 및 구성 {#authorization-setup-and-configuration}
+### 권한 부여: 설정 및 구성 {#authorization-setup-and-configuration}
 
 새로운 인증 관련 부분은 AEM 기본 설치의 일부인 **Oak CUG Authorization** 번들(`org.apache.jackrabbit.oak-authorization-cug`)에 포함되어 있습니다. 번들은 읽기 액세스를 관리하는 추가 방법으로 배포되도록 하는 분리된 인증 모델을 정의합니다.
 
@@ -496,7 +496,7 @@ CUG 인증 설정은 [관련 Apache 설명서](https://jackrabbit.apache.org/oak
 
 #### 레퍼러 필터 구성 {#configuring-the-referrer-filter}
 
-또한 AEM에 액세스하는 데 사용할 수 있는 모든 호스트 이름으로 [Sling 레퍼러 필터](/help/sites-administering/security-checklist.md#the-sling-referrer-filter)를 구성해야 합니다.예를 들어, CDN, 로드 밸런서 등을 통해 수행될 수 있습니다.
+또한 AEM에 액세스하는 데 사용할 수 있는 모든 호스트 이름으로 [Sling 레퍼러 필터](/help/sites-administering/security-checklist.md#the-sling-referrer-filter)를 구성해야 합니다. 예를 들어, CDN, 로드 밸런서 등을 통해 수행될 수 있습니다.
 
 레퍼러 필터가 구성되지 않은 경우 사용자가 CUG 사이트에 로그인하려고 하면 다음과 유사한 오류가 표시됩니다.
 
@@ -577,8 +577,8 @@ CUG 인증 설정은 [관련 Apache 설명서](https://jackrabbit.apache.org/oak
 
 주요 구성 옵션은 다음과 같습니다.
 
-* `cugSupportedPaths`:CUG를 포함할 수 있는 하위 트리를 지정합니다. 기본값이 설정되지 않음
-* `cugEnabled`:현재 CUG 정책에 대한 권한 평가를 사용하도록 설정하는 구성 옵션입니다.
+* `cugSupportedPaths`: CUG를 포함할 수 있는 하위 트리를 지정합니다. 기본값이 설정되지 않음
+* `cugEnabled`: 현재 CUG 정책에 대한 권한 평가를 사용하도록 설정하는 구성 옵션입니다.
 
 CUG-authorization 모듈과 연결된 사용 가능한 구성 옵션이 나열되며, 자세한 내용은 [Apache Oak Documentation](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#configuration)에 나와 있습니다.
 
@@ -598,7 +598,7 @@ AEM 6.3에서는 CUG 정책에 영향을 받지 않으므로 기본값이 됩니
 
 또는 CugExclude 인터페이스의 사용자 지정 구현을 제공 및 배포하여 특별한 요구 사항이 있을 경우 제외된 주도자 집합을 조정할 수 있습니다. 자세한 내용 및 예제 구현은 [CUG 플러그인](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability)에 대한 설명서를 참조하십시오.
 
-### 인증:설정 및 구성 {#authentication-setup-and-configuration}
+### 인증: 설정 및 구성 {#authentication-setup-and-configuration}
 
 새로운 인증 관련 부분은 **Adobe Granite 인증 핸들러** 번들( `com.adobe.granite.auth.authhandler` 버전 5.6.48)에 포함되어 있습니다. 이 번들은 AEM 기본 설치의 일부입니다.
 
@@ -710,15 +710,15 @@ AEM의 새 설치는 기본적으로 CUG 기능의 인증 및 인증 관련 부�
 |---|---|
 | 지원되는 경로 `/content` | `granite:AuthenticationRequired` mixin 유형을 통해 저장소에 정의된 인증 요구 사항은 `Session.save()`에 `/content` 아래에 적용됩니다. Sling Authenticator가 업데이트됩니다. 지원되는 경로의 외부에 mixin 유형을 추가하는 것은 무시됩니다. |
 
-## CUG 인증 및 인증 요구 사항 사용 안 함 {#disabling-cug-authorization-and-authentication-requirement}
+## CUG 인증 및 인증 요구 사항 비활성화 {#disabling-cug-authorization-and-authentication-requirement}
 
 지정된 설치에서 CUG를 사용하지 않거나 인증 및 인증에 다른 방법을 사용하는 경우 새 구현은 모두 비활성화될 수 있습니다.
 
-### CUG 인증 사용 안 함 {#disable-cug-authorization}
+### CUG 권한 부여 사용 안 함 {#disable-cug-authorization}
 
 복합 인증 설정에서 CUG 인증 모델을 제거하는 방법에 대한 자세한 내용은 [CUG 플러그인](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability) 설명서를 참조하십시오.
 
-### 인증 요구 사항 {#disable-the-authentication-requirement} 사용 안 함
+### 인증 요구 사항 비활성화 {#disable-the-authentication-requirement}
 
 `granite.auth.authhandler` 모듈에서 제공하는 인증 요구 사항에 대한 지원을 비활성화하려면 **Granite 인증 요구 사항 Adobe 및 로그인 경로 처리기**&#x200B;와(와) 연결된 구성을 제거해도 됩니다.
 
@@ -726,7 +726,7 @@ AEM의 새 설치는 기본적으로 CUG 기능의 인증 및 인증 관련 부�
 >
 >그러나 구성을 제거해도 Mixin 유형이 등록 취소되지 않습니다. 이 유형은 적용되지 않고 노드에 계속 적용됩니다.
 
-## 다른 모듈 {#interaction-with-other-modules}과의 상호 작용
+## 다른 모듈과의 상호 작용 {#interaction-with-other-modules}
 
 ### Apache Jackrabbit API {#apache-jackrabbit-api}
 
@@ -740,7 +740,7 @@ Apache Jackrabbit FileVault의 가져오기 메커니즘은 `PrincipalSetPolicy`
 
 위의 [Apache Jackrabbit FileVault](/help/sites-administering/closed-user-groups.md#apache-jackrabbit-filevault) 섹션을 참조하십시오.
 
-### Adobe Granite 복제 {#adobe-granite-replication}
+### Granite 복제 Adobe {#adobe-granite-replication}
 
 다른 AEM 인스턴스 간에 CUG 정책을 복제할 수 있도록 복제 모듈이 약간 조정되었습니다.
 
@@ -772,11 +772,11 @@ LiveCopy와 함께 CUG를 구성하는 것은 다음과 같이 한 개의 추가
 
 따라서 CUG 그룹을 Blueprint의 Live Copy로 롤아웃할 수 없습니다. Live Copy를 구성할 때 이를 계획하십시오.
 
-## 새 CUG 구현 {#changes-with-the-new-cug-implementation}으로 변경
+## 새로운 CUG 구현을 통한 변경 사항 {#changes-with-the-new-cug-implementation}
 
 이 섹션의 목적은 CUG 기능에 대한 변경 사항에 대한 개요를 제공하고 이전 구현과 새 구현의 비교를 제공하는 것입니다. 여기에는 CUG 지원 구성 방식에 영향을 주는 변경 사항이 나열되며 저장소 컨텐츠에서 CUG를 관리하는 방법 및 방법에 대해 설명합니다.
 
-### CUG 설정 및 구성 {#diferences-in-cug-setup-and-configuration} 의 차이점
+### CUG 설정 및 구성의 차이점 {#diferences-in-cug-setup-and-configuration}
 
 사용되지 않는 OSGi 구성 요소 **Adobe CUG(Granite Closed User Group) 지원**( `com.day.cq.auth.impl.cug.CugSupportImpl`)이 이전 CUG 기능의 인증 및 인증 관련 부분을 별도로 처리할 수 있도록 새 구성 요소로 대체되었습니다.
 
@@ -784,7 +784,7 @@ LiveCopy와 함께 CUG를 구성하는 것은 다음과 같이 한 개의 추가
 
 다음 섹션에서는 이전 구현과 새 구현과 구현 및 보안 관점의 차이점을 설명합니다. 새로운 구현은 동일한 기능을 제공하는 것을 목표로 하지만 새로운 CUG를 사용할 때 알고 있어야 하는 미묘한 변경 사항이 있습니다.
 
-### 권한 부여 {#diferences-with-regards-to-authorization}에 대한 차이
+### 허가와 관련된 차이 {#diferences-with-regards-to-authorization}
 
 권한 부여 관점의 기본 차이는 아래 목록에 요약됩니다.
 
@@ -821,7 +821,7 @@ CUG 정책의 새 AEM 기본 설정 평가에서는 &#39;게시&#39; 실행 모�
 
 위에서 설명한 대로 CUG 액세스 제어 정책은 이제 항상 컨텐츠에 저장되지만, 이러한 정책의 결과로 나타나는 유효 권한에 대한 평가는 Apache Jackrabbit Oak **CUG 구성에서 시스템 콘솔에서** CUG 평가 활성화&#x200B;**가 설정되어 있는 경우에만 적용됩니다.** 기본적으로 &#39;게시&#39; 실행 모드에서만 사용할 수 있습니다.
 
-### 인증 {#differences-with-regards-to-authentication}에 대한 차이
+### 인증과 관련된 차이점 {#differences-with-regards-to-authentication}
 
 인증과 관련된 차이점은 아래에 설명되어 있습니다.
 
@@ -829,7 +829,7 @@ CUG 정책의 새 AEM 기본 설정 평가에서는 &#39;게시&#39; 실행 모�
 
 이전 구현에서는 CUG의 인증 및 인증 측면이 모두 단일 JCR 속성( `cq:cugEnabled`)에 의해 트리거되었습니다. 인증에 관한 한 Apache Sling Authenticator 구현에 저장된 인증 요구 사항 목록이 업데이트되었습니다. 새로운 구현을 통해 전용 mixin 유형( `granite:AuthenticationRequired`)으로 대상 노드를 표시하면 동일한 결과가 발생합니다.
 
-#### 로그인 경로 {#property-for-excluding-login-path} 제외 속성
+#### 로그인 경로를 제외하기 위한 속성 {#property-for-excluding-login-path}
 
 mixin 유형은 기본적으로 `cq:cugLoginPage` 속성에 해당하는 `granite:loginPath` 이라는 하나의 선택적 속성을 정의합니다. 이전 구현과 달리, 선언된 노드 유형이 언급된 mixin인 경우에만 로그인 경로 속성이 준수됩니다. mixin 유형을 설정하지 않고 해당 이름의 속성을 추가하면 아무런 영향을 받지 않으며, 새 요구 사항이나 로그인 경로에 대한 제외가 인증자에게 보고되지 않습니다.
 
@@ -859,9 +859,9 @@ AEM 6.3 이후 CUG 매핑
 
 [파일 가져오기](assets/cug-mapping.pdf)
 
-## CUG {#upgrade-cug} 업그레이드
+## CUG 업그레이드 {#upgrade-cug}
 
-### 더 이상 사용되지 않는 CUG {#existing-installations-using-the-deprecated-cug}를 사용한 기존 설치
+### 사용되지 않는 CUG를 사용한 기존 설치 {#existing-installations-using-the-deprecated-cug}
 
 이전 CUG 지원 구현은 더 이상 사용되지 않으며 이후 버전에서 제거됩니다. AEM 6.3 이전 버전에서 업그레이드할 때 새 구현으로 이동하는 것이 좋습니다.
 

@@ -1,8 +1,8 @@
 ---
 title: API 안내서
-seo-title: API 안내서
+seo-title: API Guides
 description: AEM에서 애플리케이션 개발을 위해 제공하는 API에 대한 설명서
-seo-description: AEM에서 애플리케이션 개발을 위해 제공하는 API에 대한 설명서
+seo-description: Documentation for the APIs that AEM provides for developing applications
 uuid: 4ace24c8-8bdf-4c68-b21d-ad2c03cf7362
 contentOwner: Guillaume Carlino
 topic-tags: introduction
@@ -11,10 +11,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 39d1cb2e-18f5-4d08-b983-a06b1f470c51
 exl-id: 0c80ee60-d2dd-49ad-a283-81fdb1fd201e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 7%
+source-wordcount: '258'
+ht-degree: 11%
 
 ---
 
@@ -28,7 +28,7 @@ AEM은 애플리케이션 개발을 위한 여러 API를 제공합니다. 다음
 
 * [Granite UI(터치 지원) API 설명서](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
 
-* [Coral UI 안내서](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
+* [Coral UI 안내서](https://helpx.adobe.com/kr/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
 * [위젯 API(클래식 UI) 설명서](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)
 
@@ -57,5 +57,5 @@ AEM 배달 및 콘텐츠 관리 API:
 
 * [Apache Sling 10 API](https://sling.apache.org/apidocs/sling10/)
 * [Jackrabbit Oak API](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)
-* [Java Content Repository API](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)
+* [Java Content Repository API](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)
 * [Apache Jackrabbit API](https://jackrabbit.apache.org/api)
