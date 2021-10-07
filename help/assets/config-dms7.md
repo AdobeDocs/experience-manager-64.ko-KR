@@ -8,7 +8,7 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
 workflow-type: tm+mt
 source-wordcount: '5589'
 ht-degree: 1%
@@ -69,7 +69,7 @@ Experience Manager Dynamic Media을 6.3에서 6.4로 업그레이드하는 경�
 
 ## Dynamic Media Cloud Services 구성 {#configuring-dynamic-media-cloud-services}
 
-Dynamic Media Cloud Services을 구성하기 전에 암호를 변경합니다. Dynamic Media 자격 증명으로 프로비저닝 이메일을 받은 후 암호를 변경하려면 [Dynamic Media Classic 데스크탑 응용 프로그램에 로그인해야 합니다. ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) 프로비저닝 전자 메일에 제공된 암호는 시스템에서 생성되며 임시 암호만 사용할 수 있습니다. Dynamic Media Cloud Service이 올바른 자격 증명으로 설정되도록 암호를 업데이트하는 것이 중요합니다.
+Dynamic Media Cloud Services을 구성하기 전에 암호를 변경합니다. Dynamic Media 자격 증명으로 프로비저닝 이메일을 받은 후 암호를 변경하려면 [Dynamic Media Classic 데스크탑 애플리케이션에 로그인](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app)해야 합니다. 프로비저닝 전자 메일에 제공된 암호는 시스템에서 생성되며 임시 암호만 사용할 수 있습니다. Dynamic Media Cloud Service이 올바른 자격 증명으로 설정되도록 암호를 업데이트하는 것이 중요합니다.
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ Dynamic Media Cloud Services을 구성하기 전에 암호를 변경합니다. D
 
    >[!NOTE]
    >
-   >Dynamic Media 자격 증명으로 프로비저닝 이메일을 받은 후 [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 회사 계정에 로그인하여 암호를 변경합니다. 프로비저닝 전자 메일에 제공된 암호는 시스템에서 생성되며 임시 암호만 사용할 수 있습니다. Dynamic Media Cloud Service이 올바른 자격 증명으로 설정되도록 암호를 업데이트하는 것이 중요합니다.
+   >Dynamic Media 자격 증명으로 프로비저닝 이메일을 받은 후 [Dynamic Media Classic 데스크탑 애플리케이션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 회사 계정에 로그인하여 암호를 변경합니다. 프로비저닝 전자 메일에 제공된 암호는 시스템에서 생성되며 임시 암호만 사용할 수 있습니다. Dynamic Media Cloud Service이 올바른 자격 증명으로 설정되도록 암호를 업데이트하는 것이 중요합니다.
 
 1. 연결에 성공하면 다음을 설정할 수도 있습니다.
 
@@ -163,7 +163,7 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가 사용자 지정하
 
 **[!UICONTROL 서버]**  - 계정 프로비저닝에서 Dynamic Media은 자동으로 회사에 할당된 서버를 제공합니다. 이러한 서버는 웹 사이트 및 애플리케이션에 대한 URL 문자열을 구성하는 데 사용됩니다. 이러한 URL 호출은 계정에만 적용됩니다. Experience Manager 지원에 의해 명시적으로 지시하지 않는 한 서버 이름을 변경하지 마십시오.
 
-**[!UICONTROL 이미지 덮어쓰기]**  - Dynamic Media에서는 두 파일의 이름이 같을 수 없습니다. 각 항목의 URL ID(파일 이름에서 확장자를 뺀 경우)는 고유해야 합니다. 다음 옵션은 교체 자산을 업로드하는 방법을 지정합니다. 원본과 중복이 되는지 여부 중복 자산은 &quot;-1&quot;로 이름이 변경됩니다(예를 들어 chair.tif는 chair-1.tif로 이름이 변경됨). 이러한 옵션은 원래 폴더와 다른 폴더에 업로드된 자산이나 원래 파일 확장명의 다른 자산(JPG, TIF 또는 PNG)에 영향을 줍니다.
+**[!UICONTROL 이미지 덮어쓰기]**  - Dynamic Media에서는 두 파일의 이름이 같을 수 없습니다. 각 항목의 URL ID(파일 이름에서 확장자를 뺀 경우)는 고유해야 합니다. 다음 옵션은 교체 자산을 업로드하는 방법을 지정합니다. 원본과 중복이 되는지 여부 중복 자산은 &quot;-1&quot;로 이름이 변경됩니다(예를 들어 chair.tif는 chair-1.tif로 이름이 변경됨). 이러한 옵션은 원래 폴더와 다른 폴더에 업로드된 자산이나 원래 파일 확장명(예: JPG, TIF 또는 PNG)이 다른 자산에 영향을 줍니다.
 
 * **[!UICONTROL 현재 폴더에 덮어쓰기, 동일한 기본 이미지 이름/확장]**  - 이 옵션은 교체를 위한 가장 엄격한 규칙입니다. 교체 이미지를 원본과 동일한 폴더에 업로드하고 교체 이미지의 파일 확장명이 원본과 동일해야 합니다. 이러한 요구 사항이 충족되지 않으면 복제본이 만들어집니다.
 
@@ -182,7 +182,7 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가 사용자 지정하
 
 #### 색상 관리 구성 {#configuring-color-management}
 
-Dynamic Media 색상 관리를 통해 자산의 색상을 올바르게 지정할 수 있습니다. 색상 교정을 통해 수집된 자산은 색상 공간(RGB, CMYK, 회색)과 포함된 색상 프로파일을 유지합니다. 동적 변환을 요청하면 이미지 색상이 CMYK, RGB 또는 회색 출력을 사용하여 대상 색상 공간으로 교정됩니다. [이미지 사전 설정 구성](managing-image-presets.md)을 참조하십시오.
+Dynamic Media 색상 관리를 통해 자산의 색상을 올바르게 지정할 수 있습니다. 색상 교정을 통해 수집된 자산은 색상 공간(RGB, CMYK, 회색)과 포함된 색상 프로파일을 유지합니다. 동적 변환을 요청하면 이미지 색상이 CMYK, RGB 또는 회색 출력을 사용하여 대상 색상 공간으로 수정됩니다. [이미지 사전 설정 구성](managing-image-presets.md)을 참조하십시오.
 
 **이미지를 요청할 때 색상 보정을 사용하도록 기본 색상 속성을 구성하려면 다음을 수행하십시오.**
 
@@ -194,19 +194,19 @@ Dynamic Media 색상 관리를 통해 자산의 색상을 올바르게 지정할
 
    * [!UICONTROL CMYK 기본 색상 공간]  - 기본 CMYK 색상 프로파일의 이름
    * [!UICONTROL 회색 음영 기본 색상 공간]  - 기본 회색 색상 프로필의 이름
-   * [!UICONTROL RGB 기본 색상 공간]  - 기본 RGB 색상 프로필의 이름입니다
+   * [!UICONTROL RGB 기본 색상 공간]  - 기본 RGB 색상 프로필의 이름
    * [!UICONTROL 색상 변환 렌더링 의도]  - 렌더링 의도를 지정합니다. 허용되는 값은 `perceptual`, `relative` `colometric`, `saturation` 및 `absolute colometric`입니다. Adobe은 `relative` 을 기본값으로 권장합니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 누릅니다.
 
-예를 들어 **[!UICONTROL RGB 기본 색상 공간]**&#x200B;을 `sRGB`로 설정하고 **[!UICONTROL CMYK 기본 색상 공간]**&#x200B;을 `WebCoated`로 설정할 수 있습니다.
+예를 들어 **[!UICONTROL 기본 색상 공간 RGB]**&#x200B;을 `sRGB`로 설정하고 **[!UICONTROL CMYK 기본 색상 공간]**&#x200B;을 `WebCoated`로 설정할 수 있습니다.
 
 이렇게 하면 다음 작업이 수행됩니다.
 
 * RGB 및 CMYK 이미지에 색상 교정을 활성화합니다.
 * 색상 프로필이 없는 RGB 이미지는 `sRGB` 색상 공간에 있는 것으로 간주됩니다.
 * 색상 프로파일이 없는 CMYK 이미지는 `WebCoated` 색상 공간에 있는 것으로 간주됩니다.
-* RGB 출력을 반환하는 동적 변환은 `sRGB` 색상 공간에 반환합니다.
+* RGB 출력을 반환하는 동적 표현물은 `sRGB` 색상 공간에 반환됩니다.
 * CMYK 출력을 반환하는 동적 표현물은 `WebCoated` 색상 공간에 반환됩니다.
 
 #### 지원되는 형식에 대한 MIME 유형 편집 {#editing-mime-types-for-supported-formats}
@@ -214,7 +214,7 @@ Dynamic Media 색상 관리를 통해 자산의 색상을 올바르게 지정할
 Dynamic Media에서 처리할 자산 유형을 정의하고 고급 자산 처리 매개 변수를 사용자 지정할 수 있습니다. 예를 들어 자산 처리 매개 변수를 지정하여 다음을 수행할 수 있습니다.
 
 * Adobe PDF을 eCatalog 자산으로 변환합니다.
-* 개인화를 위해 Adobe Photoshop 문서(.PSD)를 배너 템플릿 자산으로 변환합니다.
+* 개인화를 위해 Adobe Photoshop 문서(.PSD)을 배너 템플릿 자산으로 변환합니다.
 * Adobe Illustrator 파일(.AI) 또는 Adobe Photoshop Encapsulated PostScript® 파일(.EPS)을 래스터화합니다.
 * [비디오 ](/help/assets/video-profiles.md) 프로필 및  [이미징 ](/help/assets/image-profiles.md) 프로필 을 사용하여 각각 비디오 및 이미지 처리를 정의할 수 있습니다.
 
@@ -244,7 +244,7 @@ Dynamic Media에서 처리할 자산 유형을 정의하고 고급 자산 처리
 
 #### 지원되지 않는 형식에 대한 사용자 지정 MIME 유형 추가 {#adding-custom-mime-types-for-unsupported-formats}
 
-Experience Manager 자산에서 지원되지 않는 형식에 대한 사용자 지정 MIME 유형을 추가할 수 있습니다. CRXDE Lite에 추가하는 새 노드가 Experience Manager에 의해 삭제되지 않도록 하려면 **[!UICONTROL image_]** 앞에 MIME 유형을 이동하고 해당 활성화된 값이 **[!UICONTROL false]**&#x200B;로 설정됩니다.
+Experience Manager Assets에서 지원되지 않는 형식에 대한 사용자 지정 MIME 유형을 추가할 수 있습니다. CRXDE Lite에 추가하는 새 노드가 Experience Manager에 의해 삭제되지 않도록 하려면 **[!UICONTROL image_]** 앞에 MIME 유형을 이동하고 해당 활성화된 값이 **[!UICONTROL false]**&#x200B;로 설정됩니다.
 
 **지원되지 않는 형식에 대한 사용자 지정 MIME 유형을 추가하려면 다음을 수행합니다.**
 
@@ -472,13 +472,13 @@ Dynamic Media - Scene7 모드가 원활하게 실행되도록 하려면 다음 �
 
 #### 다양한 파일 형식 처리를 위해 사전 정의된 작업 매개 변수 업데이트
 
-파일을 업로드할 때 처리 속도를 높이기 위해 작업 매개 변수를 조정할 수 있습니다. 예를 들어 PSD 파일을 업로드하지만 템플릿으로 처리하지 않으려는 경우 레이어 추출을 false(off)로 설정할 수 있습니다. 이 경우 튜닝된 작업 매개 변수는 다음과 같이 나타납니다. `process=None&createTemplate=false`
+파일을 업로드할 때 처리 속도를 높이기 위해 작업 매개 변수를 조정할 수 있습니다. 예를 들어 PSD 파일을 업로드하지만 템플릿으로 처리하려는 경우가 아니라면 레이어 추출을 false(off)로 설정할 수 있습니다. 이 경우 튜닝된 작업 매개 변수는 다음과 같이 나타납니다. `process=None&createTemplate=false`
 
 템플릿 만들기를 설정하려면 다음 매개 변수를 사용하십시오. `process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
 
 <!-- REMOVED BASED ON CQDOC-17657 You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter would appear as `process=None&createTemplate=false`. -->
 
-Adobe은 PDF, PostScript® 및 PSD 파일에 다음과 같은 &quot;튜닝된&quot; 작업 매개 변수를 사용할 것을 권장합니다.
+Adobe은 PDF, PostScript® 및 PSD 파일에 다음과 같은 &quot;튜닝된&quot; 작업 매개 변수를 사용하는 것을 권장합니다.
 
 <!-- OLD PDF JOB PARAMETERS `pdfprocess=Rasterize&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` -->
 
@@ -542,7 +542,7 @@ Granite 워크플로우 큐는 비임시 워크플로우에 사용됩니다. Dyn
 
 #### Scene7 업로드 연결 업데이트 {#updating-the-scene-upload-connection}
 
-Scene7 업로드 연결 설정은 Experience Manager 자산을 Dynamic Media Classic 서버에 동기화합니다.
+Scene7 업로드 연결 설정은 Experience Manager Assets을 Dynamic Media Classic 서버에 동기화합니다.
 
 **Scene7 업로드 연결을 업데이트하려면:**
 
@@ -623,7 +623,7 @@ Dynamic Media이 아닌 배포에서는 Experience Manager 작성 환경에서 �
 
    형식에 관계없이 모든 이미지에 이 필터를 적용하려면 값을 `image/*`(으)로 설정합니다. 여기서 `*` 은 모든 형식의 모든 이미지에 적용되는 정규식입니다.
 
-   JPEG 유형의 이미지에만 필터가 적용되도록 하려면 `image/jpeg` 값을 입력하십시오.
+   JPEG 유형의 이미지에만 필터를 적용하려면 `image/jpeg` 값을 입력합니다.
 
 1. 복제에서 포함하거나 제외할 변환을 정의합니다.
 

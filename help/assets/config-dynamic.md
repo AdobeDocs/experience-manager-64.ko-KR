@@ -1,18 +1,18 @@
 ---
 title: Dynamic Media 구성 - 하이브리드 모드
-seo-title: Dynamic Media 구성 - 하이브리드 모드
+seo-title: Configuring Dynamic Media - Hybrid mode
 description: Dynamic Media - 하이브리드 모드를 구성하는 방법을 알아봅니다.
-seo-description: Dynamic Media - 하이브리드 모드를 구성하는 방법을 알아봅니다.
+seo-description: Learn how to configure Dynamic Media - Hybrid mode.
 uuid: de88f68f-4697-4ff0-8008-3ae6a4684a84
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 exl-id: 1e122f97-ac37-44f5-a1cd-bf53ffda6f5b
-feature: 구성,하이브리드 모드
+feature: Configuration,Hybrid Mode
 role: Admin,User,Developer
-source-git-commit: 9bd173e99c2bbedc77afb11b4c1eac423c62ef30
+source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
 workflow-type: tm+mt
-source-wordcount: '7796'
+source-wordcount: '7780'
 ht-degree: 2%
 
 ---
@@ -254,7 +254,7 @@ Dynamic Media 이미지 제공 서비스에 이미지를 복제하려면 작성�
 
 **인증을 설정하려면 다음을 수행하십시오**.
 
-1. 아직 이 파일이 없는 경우 고객 지원 센터에 키 저장소 파일 및 암호를 문의하십시오. 프로비저닝의 일부이며, 해당 키를 계정에 연결합니다.
+1. KeyStore 파일 및 암호가 없는 경우 고객 지원 센터에 문의하십시오. 프로비저닝의 일부이며, 해당 키를 계정에 연결합니다.
 1. AEM에서 AEM 로고를 탭하여 전역 탐색 콘솔에 액세스한 다음, **[!UICONTROL 도구 > 보안 > 사용자]**&#x200B;를 누릅니다.
 1. 사용자 관리 페이지에서 **[!UICONTROL dynamic-media-replication]** 사용자로 이동한 다음 탭하여 엽니다.
 
@@ -276,7 +276,7 @@ Dynamic Media 이미지 제공 서비스에 이미지를 복제하려면 작성�
    * **[!UICONTROL 새 별칭]** 필드에 나중에 복제 구성에서 사용할 별칭의 이름을 입력합니다. 예: **replication**
    * **[!UICONTROL KeyStore 파일]**&#x200B;을 누릅니다. Adobe이 제공한 KeyStore 파일로 이동하여 선택한 다음 **[!UICONTROL 열기]**&#x200B;를 누릅니다.
    * **[!UICONTROL KeyStore 파일 암호]** 필드에 KeyStore 파일 암호를 입력합니다. 이 암호는 _5단계에서 만든 KeyStore 암호가 아니라 KeyStore 파일 암호 Adobe에서 제공하는 프로비저닝 중 받은 Welcome 전자 메일에 있습니다._ KeyStore 파일 암호를 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
-   * **[!UICONTROL 개인 키 암호]** 필드에 개인 키 암호를 입력합니다(이전 단계에서 제공한 개인 키 암호와 같을 수 있음). Adobe은 프로비전 중에 사용자에게 보낸 시작 전자 메일에 있는 개인 키 암호를 제공합니다. 개인 키 암호를 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
+   * **[!UICONTROL 개인 키 암호]** 필드에 개인 키 암호를 입력합니다(이전 단계에서 제공한 개인 키 암호와 같을 수 있음). Adobe은 프로비전 중에 사용자에게 보낸 시작 전자 메일에 있는 개인 키 암호를 제공합니다. 개인 키 암호를 받지 않은 경우 Adobe 고객 지원 센터에 문의하십시오.
    * **[!UICONTROL 개인 키 별칭]** 필드에 개인 키 별칭을 입력합니다. 예, `companyname-alias`. Adobe은 프로비전 중에 사용자에게 전송된 시작 전자 메일에 개인 키 별칭을 제공합니다. 개인 키 별칭을 받지 않은 경우 Adobe 고객 지원 센터에 문의하십시오.
 
    ![edit_settings_fordynamic-media-replication2](assets/edit_settings_fordynamic-media-replication2.png)
@@ -680,10 +680,10 @@ Dynamic Media이 아닌 배포에서는 AEM 작성 환경에서 _모든_ 자산(
    <td>Dynamic Media Classic 통합</td> 
    <td><p>필터 이미지</p> <p>필터 세트</p> <p>필터 비디오</p> </td> 
    <td><p><strong>image/</strong>로 시작</p> <p><strong>application/</strong>을 포함하고 <strong>set</strong>로 끝납니다.</p> <p><strong>video/</strong>로 시작합니다.</p> </td> 
-   <td><p>Adobe Dynamic Media Cloud 복제 서비스 URL 대신 AEM 게시 서버를 가리키도록 전송 URI를 구성합니다. 이 필터를 설정하면 AEM 게시 인스턴스 대신 Dynamic Media Classic에서 자산을 전달할 수 있습니다.</p> <p>곧바로 사용할 수 있는 "필터 이미지", "필터 세트" 및 "필터 비디오"는 다음과 같습니다.</p> 
+   <td><p>Adobe Dynamic Media Cloud 복제 서비스 URL 대신 AEM 게시 서버를 가리키도록 전송 URI를 구성합니다. 이 필터를 설정하면 Dynamic Media Classic에서 AEM 게시 인스턴스 대신 자산을 전달할 수 있습니다.</p> <p>곧바로 사용할 수 있는 "필터 이미지", "필터 세트" 및 "필터 비디오"는 다음과 같습니다.</p> 
     <ul> 
-     <li>복제용 PTIFF 이미지, 프록시 비디오 표현물 및 메타데이터를 포함합니다. 그러나 이 변수는 AEM을 실행하는 사용자를 위한 JCR에 존재하지 않으므로 Dynamic Media Classic 통합을 사용하므로 아무 작업도 하지 않습니다.</li> 
-     <li>원본 이미지, 정적 이미지 표현물, 원본 비디오 및 정적 축소판 표현물 복제에서 제외합니다. 대신 Dynamic Media Classic에서 이미지 및 비디오 자산을 제공할 예정입니다.</li> 
+     <li>복제용 PTIFF 이미지, 프록시 비디오 표현물 및 메타데이터를 포함합니다. 하지만 AEM을 실행하는 사용자를 위한 JCR에 존재하지 않으므로 Dynamic Media Classic 통합을 사용하므로 아무런 작업도 효과적으로 수행하지 않습니다.</li> 
+     <li>원본 이미지, 정적 이미지 표현물, 원본 비디오 및 정적 축소판 표현물 복제에서 제외합니다. 대신 Dynamic Media Classic은 이미지 및 비디오 자산을 제공할 예정입니다.</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -757,7 +757,7 @@ Dynamic Media이 아닌 배포에서는 AEM 작성 환경에서 _모든_ 자산(
 
    형식에 관계없이 모든 이미지에 이 필터를 적용하려면 값을 `image/*`(으)로 설정합니다. 여기서 `*` 은 모든 형식의 모든 이미지에 적용되는 정규식입니다.
 
-   JPEG 유형의 이미지에만 필터가 적용되도록 하려면 `image/jpeg` 값을 입력하십시오.
+   JPEG 유형의 이미지에만 필터를 적용하려면 `image/jpeg` 값을 입력합니다.
 
 1. 복제에서 포함하거나 제외할 변환을 정의합니다.
 
@@ -790,7 +790,7 @@ Dynamic Media이 아닌 배포에서는 AEM 작성 환경에서 _모든_ 자산(
 
 ![chlimage_1-513](assets/chlimage_1-513.png)
 
-위의 예를 사용하여 PTIFF(피라미드형 TIFF)를 복제하려는 경우 `cqdam`로 시작하는 모든 렌디션을 포함하는 `+cqdam,*`을 입력합니다. 이 예에서 해당 표현물은 `cqdam.pyramid.tiff`입니다.
+위의 예를 사용하여 PTIFF(피라미드 TIFF)을 복제하려는 경우 `cqdam`로 시작하는 모든 렌디션을 포함하는 `+cqdam,*`을 입력합니다. 이 예에서 해당 표현물은 `cqdam.pyramid.tiff`입니다.
 
 원본만 복제하려면 `+original`을 입력합니다.
 
@@ -801,7 +801,7 @@ Dynamic Media 이미지 서버 구성에 Adobe CQ Scene7 ImageServer 번들과 A
 >[!NOTE]
 Dynamic Media은 [이 활성화되면 즉시 사용할 수 있습니다](#enabling-dynamic-media). 그러나 특정 사양 또는 요구 사항을 충족하도록 Dynamic Media Image Server를 구성하여 설치를 세밀하게 조정할 수도 있습니다.
 
-**전제 조건**:  __ Dynamic Media 이미지 서버를 구성하기 전에 Windows VM에 Microsoft Visual C++ 라이브러리 설치가 포함되어 있는지 확인하십시오. 라이브러리는 Dynamic Media 이미지 서버를 실행하는 데 필요합니다. [여기에서 Microsoft Visual C++ 2010 재배포 가능 패키지(x64)를 다운로드할 수 있습니다](https://www.microsoft.com/en-us/download/details.aspx?id=26999).
+**전제 조건**:  __ Dynamic Media 이미지 서버를 구성하기 전에 Windows VM에 Microsoft Visual C++ Libraries의 설치가 포함되어 있는지 확인하십시오. 라이브러리는 Dynamic Media 이미지 서버를 실행하는 데 필요합니다. [여기에서 Microsoft Visual C++ 2010 재배포 가능 패키지(x64)를 다운로드할 수 있습니다](https://www.microsoft.com/en-us/download/details.aspx?id=26999).
 
 **Dynamic Media 이미지 서버 설정을 구성하려면**:
 
@@ -869,13 +869,13 @@ Dynamic Media은 [이 활성화되면 즉시 사용할 수 있습니다](#enabli
    | **속성** | **기본값** | **설명** |
    |---|---|---|
    | **[!UICONTROL 캐시 사용]** | 선택됨 | 응답 캐시가 활성화되어 있는지 여부. |
-   | **[!UICONTROL 캐시 루트]** | 캐시 | 응답 캐시 폴더에 대한 하나 이상의 경로입니다. 상대 경로는 내부 s7imaging 번들 폴더에 대해 확인됩니다. |
+   | **[!UICONTROL 캐시 루트]** | cache | 응답 캐시 폴더에 대한 하나 이상의 경로입니다. 상대 경로는 내부 s7imaging 번들 폴더에 대해 확인됩니다. |
    | **[!UICONTROL 캐시 최대 크기]** | 200000000 | 응답 캐시의 최대 크기(바이트)입니다. |
    | **[!UICONTROL 캐시 최대 항목]** | 100000 | 캐시에서 허용되는 최대 항목 수입니다. |
 
 ### 기본 매니페스트 설정 {#default-manifest-settings}
 
-기본 매니페스트를 사용하면 Dynamic Media 게재 응답을 생성하는 데 사용되는 기본값을 구성할 수 있습니다. 품질(JPEG 품질, 해상도, 리샘플링 모드), 캐싱(만료)을 미세 조정할 수 있으며, 너무 큰 이미지(defaultpix, defaultthumpix, maxpix)의 렌더링을 방지할 수 있습니다.
+기본 매니페스트를 사용하면 Dynamic Media 게재 응답을 생성하는 데 사용되는 기본값을 구성할 수 있습니다. 품질(JPEG 품질, 해상도, 재샘플링 모드), 캐싱(만료)을 미세 조정하고, 너무 큰 이미지(defaultpix, defaultthumpix, maxpix)의 렌더링을 방지할 수 있습니다.
 
 기본 매니페스트 구성의 위치는 **[!UICONTROL 카탈로그 루트]** 기본값(**[!UICONTROL Adobe CQ Scene7 PlatformServer]** 번들)에서 가져옵니다. 기본적으로 이 값은 **[!UICONTROL 도구 > 일반 > CRXDE Lite]** 내의 다음 경로에 있습니다.
 
@@ -923,7 +923,7 @@ Dynamic Media은 [이 활성화되면 즉시 사용할 수 있습니다](#enabli
   <tr> 
    <td>jpegquality</td> 
    <td>80</td> 
-   <td><p>기본 JPEG 인코딩 속성입니다. JPEG 회신 이미지의 기본 속성을 지정합니다.</p> <p>쉼표로 구분된 정수 및 플래그. 첫 번째 값은 1.100 범위에 있고 품질을 정의합니다. 두 번째 값은 일반 동작의 경우 0이거나, 일반적으로 JPEG 인코딩에 사용되는 RGB 색상 샘플링 다운샘플링을 비활성화하려면 1일 수 있습니다.</p> <p>이미지 제공 API의 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html">JpegQuality</a>도 참조하십시오.</p> </td> 
+   <td><p>기본 JPEG 인코딩 속성입니다. JPEG 회신 이미지의 기본 속성을 지정합니다.</p> <p>쉼표로 구분된 정수 및 플래그. 첫 번째 값은 1.100 범위에 있고 품질을 정의합니다. 두 번째 값은 일반 동작의 경우 0이거나, 1 - 일반적으로 JPEG 인코딩에 사용되는 RGB 색상 샘플링 다운샘플링을 비활성화할 수 있습니다.</p> <p>이미지 제공 API의 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html">JpegQuality</a>도 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>maxpix</td> 
@@ -1009,7 +1009,7 @@ Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 12445을 설치
       </tr> 
       <tr> 
       <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html">iccprofilergb</a></td> 
-      <td>문자열</td> 
+      <td>String</td> 
       <td>&lt;empty&gt;</td> 
       <td>기본 RGB 색상 프로필의 이름입니다.</td> 
       </tr> 
@@ -1248,7 +1248,7 @@ Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 12445을 설치
 * RGB 및 CMYK 이미지에 색상 교정을 활성화합니다.
 * 색상 프로필이 없는 RGB 이미지는 `sRGB` 색상 공간에 있는 것으로 간주됩니다.
 * 색상 프로파일이 없는 CMYK 이미지는 `WebCoated` 색상 공간에 있는 것으로 간주됩니다.
-* RGB 출력을 반환하는 동적 변환은 `sRGB` 색상 공간에 반환합니다.
+* RGB 출력을 반환하는 동적 변환은 `sRGB` 색상 공간으로 반환됩니다.
 * CMYK 출력을 반환하는 동적 변환은 `WebCoated` 색상 공간으로 반환합니다.
 
 ## 자산 제공 {#delivering-assets}

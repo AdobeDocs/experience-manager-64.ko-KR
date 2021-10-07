@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Architect,Admin
 exl-id: 6c1bff46-f9e0-4638-9374-a9e820d30534
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '3151'
 ht-degree: 0%
@@ -112,8 +112,8 @@ Adobe은 많은 회사에 HTTP 트래픽을 감지하는 방화벽이 있어 이
 
 주로, 네트워크 최적화 전략은 사용 가능한 대역폭 및 [!DNL Experience Manager] 인스턴스의 로드에 따라 다릅니다. 방화벽 또는 프록시를 포함한 일반적인 구성 옵션은 네트워크 성능을 개선하는 데 도움이 될 수 있습니다. 다음은 기억해야 할 몇 가지 주요 사항입니다.
 
-* 인스턴스 유형(작은, 중간, 큰)에 따라 [!DNL Experience Manager] 인스턴스에 충분한 네트워크 대역폭이 있는지 확인하십시오. [!DNL Experience Manager] 이 AWS에서 호스팅되는 경우 대역폭 할당이 특히 중요합니다.
-* [!DNL Experience Manager] 인스턴스가 AWS에서 호스팅되는 경우 다양한 스케일링 정책을 통해 이점을 얻을 수 있습니다. 사용자가 높은 로드를 예상하는 경우 인스턴스의 크기를 변경합니다. 중간/낮은 로드를 위해 크기를 줄입니다.
+* 인스턴스 유형(작은, 중간, 큰)에 따라 [!DNL Experience Manager] 인스턴스에 충분한 네트워크 대역폭이 있는지 확인하십시오. [!DNL Experience Manager] 이 AWS에서 호스팅되는 경우 적절한 대역폭 할당이 특히 중요합니다.
+* [!DNL Experience Manager] 인스턴스가 AWS에서 호스팅되는 경우 다양한 확장 정책을 통해 혜택을 볼 수 있습니다. 사용자가 높은 로드를 예상하는 경우 인스턴스의 크기를 변경합니다. 중간/낮은 로드를 위해 크기를 줄입니다.
 * HTTPS: 대부분의 사용자에게는 HTTP 트래픽을 감지하는 방화벽이 있으므로 업로드 작업 중에 파일 업로드나 손상된 파일의 업로드에 부정적인 영향을 줄 수 있습니다.
 * 큰 파일 업로드: 사용자가 네트워크에 유선 연결을 했는지 확인합니다(WiFi 연결이 빠르게 채워짐).
 
@@ -184,7 +184,7 @@ DAM 자산 업데이트 워크플로우에는 Dynamic Media Classic PTIFF 생성
 
 많은 Sites 고객은 요청 시 이미지의 크기를 조정하고 자르기를 수행하는 이미지 서블릿을 구현하여 게시 인스턴스에 추가 로드를 부과합니다. 그러나 이러한 이미지를 캐시하는 한 이러한 문제를 완화할 수 있습니다.
 
-또 다른 방법은 Dynamic Media Classic 기술을 사용하여 이미지 조작을 완전히 제거하는 것입니다. 또한 [!DNL Experience Manager] 인프라에서 렌디션 생성 책임을 인계받을 뿐만 아니라 전체 게시 계층도 넘겨주는 Brand Portal을 배포할 수 있습니다.
+또 다른 방법은 Dynamic Media Classic 기술을 사용하여 이미지 조작을 전적으로 전달하는 것입니다. 또한 [!DNL Experience Manager] 인프라에서 렌디션 생성 책임을 인계받을 뿐만 아니라 전체 게시 계층도 넘겨주는 Brand Portal을 배포할 수 있습니다.
 
 #### ImageMagick {#imagemagick}
 
@@ -215,7 +215,7 @@ ImageMagick를 사용하여 렌디션을 생성하기 위해 DAM 자산 업데�
 >
 >ImageMagick `policy.xml` 및 `configure.xml` 파일은 `/etc/ImageMagick/` 대신 `/usr/lib64/ImageMagick-*/config/` 아래에 있습니다. 구성 파일 위치에 대한 자세한 내용은 [ImageMagick 설명서](https://www.imagemagick.org/script/resources.php)를 참조하십시오.
 
-AMS(Adobe Managed Services)에서 [!DNL Experience Manager] 을(를) 사용하는 경우 대용량 PSD 또는 PSB 파일을 많이 처리할 계획이면 Adobe 고객 지원 센터에 문의하십시오. Experience Manager은 30000 x 23000 픽셀 이상의 고해상도 PSB 파일을 처리하지 못할 수 있습니다.
+AMS(Adobe Managed Services)에서 [!DNL Experience Manager]을(를) 사용하는 경우, 대규모 PSD 또는 PSB 파일을 많이 처리할 계획이면 Adobe 고객 지원 센터에 문의하십시오. Experience Manager은 30000 x 23000 픽셀 이상의 고해상도 PSB 파일을 처리하지 못할 수 있습니다.
 
 <!-- 
 
@@ -365,7 +365,7 @@ LuceneIndexProvider 구성을 업데이트합니다.
 
 Lucene 텍스트 추출 비활성화:
 
-사용자가 PDF 문서에 포함된 텍스트를 검색하는 등 자산의 내용을 검색할 필요가 없는 경우, 이 기능을 비활성화하여 색인 성능을 향상시킬 수 있습니다.
+PDF 문서에 포함된 텍스트를 검색하는 등 자산의 내용을 검색할 필요가 없는 경우, 이 기능을 비활성화하여 색인 성능을 향상시킬 수 있습니다.
 
 1. [!DNL Experience Manager] 패키지 관리자 /crx/packmgr/index.jsp으로 이동합니다.
 1. 아래 패키지를 업로드하고 설치합니다
@@ -418,6 +418,6 @@ AEM에는 대형 파일과 관련된 것으로 알려진 두 가지 주요 문�
 * DAM 자산 업데이트 워크플로우에서 불필요한 단계를 제거합니다.
 * 워크플로우 및 버전 제거를 구성합니다.
 * Lucene 인덱스 구성을 최적화합니다.
-* 최신 서비스 팩 및 핫픽스로 인덱스를 최적화합니다. 사용할 수 있는 추가 인덱스 최적화에 대해서는 Adobe 고객 지원 센터에 문의하십시오.
+* 최신 서비스 팩 및 핫픽스로 인덱스를 최적화합니다. 사용 가능한 추가 인덱스 최적화에 대해서는 Adobe 고객 지원 센터에 문의하십시오.
 * `guessTotal` 을 사용하여 쿼리 성능을 최적화합니다.
 * 파일 컨텐츠에서 파일 유형을 검색하도록 [!DNL Experience Manager]을 구성하는 경우([!UICONTROL [!DNL Experience Manager] 웹 콘솔]에서 [!UICONTROL Day CQ DAM MIME 유형 서비스]를 구성), 작업이 리소스 집약적이므로 비스파이크 시간 동안 많은 파일을 대량으로 업로드하십시오.

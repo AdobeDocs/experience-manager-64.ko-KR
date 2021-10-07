@@ -5,10 +5,10 @@ contentOwner: VG
 feature: Brand Portal
 role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
+source-git-commit: 8910716cf6b5c4e872db8d965200787de7c2d121
 workflow-type: tm+mt
 source-wordcount: '1646'
-ht-degree: 82%
+ht-degree: 81%
 
 ---
 
@@ -67,14 +67,14 @@ AEM을 다운로드한 후 AEM 작성자 인스턴스를 설정하는 방법은 
 
 * [AEM 6.4 서비스 팩 릴리스 노트](https://helpx.adobe.com/kr/experience-manager/6-4/release-notes/sp-release-notes.html)
 
-최신 AEM 패키지 또는 서비스 팩을 찾을 수 없는 경우 **지원 센터에 문의**&#x200B;하십시오.
+**최신 AEM** 패키지 또는 서비스 팩을 찾을 수 없는 경우 고객 지원 센터에 문의하십시오.
 
 ## 구성 만들기 {#configure-new-integration-64}
 
 Brand Portal에 AEM Assets을 처음 구성하는 경우 단계를 나열된 순서로 수행합니다.
 
 1. [공개 인증서 받기](#public-certificate)
-1. [ [!DNL Adobe I/O] 통합 만들기](#createnewintegration)
+1. [ [!DNL Adobe I/O] Createintegration](#createnewintegration)
 1. [IMS 계정 구성 만들기](#create-ims-account-configuration)
 1. [클라우드 서비스 구성](#configure-the-cloud-service)
 1. [구성 테스트](#test-integration)

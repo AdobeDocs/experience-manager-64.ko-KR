@@ -9,7 +9,7 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 exl-id: 2f24c4bc-8071-4403-b959-00db0f08db34
 feature: Smart Services
 role: User
-source-git-commit: cab72662c62dbc6caa05265b350aed26f21e6824
+source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
 workflow-type: tm+mt
 source-wordcount: '2561'
 ht-degree: 1%
@@ -38,7 +38,7 @@ ht-degree: 1%
 | [이미지 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![그림 4](assets-dm/picture4.png) | 315.80KB | 178.19KB | 44% |
 |  |  |  |  | 평균 = 51% |
 
-위와 유사하게, Adobe은 라이브 고객 사이트에서 7009 URL을 사용하는 테스트도 실행했습니다. JPEG에 대해 평균 38%의 파일 크기 최적화를 수행할 수 있었습니다. WebP 포맷의 PNG의 경우 평균 31% 더 많은 파일 크기 최적화를 수행할 수 있었습니다. 스마트 이미징의 기능 때문에 이러한 유형의 최적화가 가능합니다.
+위와 유사하게, Adobe은 라이브 고객 사이트에서 7009 URL을 사용하는 테스트도 실행했습니다. 이들은 JPEG을 위해 평균 38%의 파일 크기 최적화를 달성할 수 있었습니다. WebP 포맷의 PNG의 경우 평균 31% 더 많은 파일 크기 최적화를 수행할 수 있었습니다. 스마트 이미징의 기능 때문에 이러한 유형의 최적화가 가능합니다.
 
 모바일 웹에서는 두 가지 요소로 인해 이러한 문제가 더 복잡해집니다.
 
@@ -83,7 +83,7 @@ CSS 픽셀 비율이라고도 하는 DPR(장치 픽셀 비율)은 장치의 실�
 
 >[!NOTE]
 >
->DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측 값을 기반으로 합니다. 이러한 값은 때때로 부정확합니다. 예를 들어 DPR=2가 있는 iPhone5 및 DPR=3이 있는 iPhone12에서는 모두 DPR=2를 표시합니다. 여전히 고해상도 장치의 경우 DPR=2를 전송하는 것이 DPR=1을 보내는 것보다 좋습니다. 준비 중: Adobe이 클라이언트측 코드에서 작동하여 최종 사용자의 DPR을 정확하게 판별하고 있습니다.
+>DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측 값을 기반으로 합니다. 이러한 값은 때때로 부정확합니다. 예를 들어 DPR=2가 있는 iPhone 5 및 DPR=3이 있는 iPhone12는 모두 DPR=2를 보여줍니다. 여전히 고해상도 장치의 경우 DPR=2를 전송하는 것이 DPR=1을 보내는 것보다 좋습니다. 준비 중: Adobe이 클라이언트측 코드에서 작동하여 최종 사용자의 DPR을 정확하게 판별하고 있습니다.
 
 ## 최신 스마트 이미징의 주요 이점은 무엇입니까? {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -101,7 +101,7 @@ CSS 픽셀 비율이라고도 하는 DPR(장치 픽셀 비율)은 장치의 실�
 
 ## 스마트 이미징과 관련된 라이센스 비용이 있습니까? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-아니오. 스마트 이미징은 Dynamic Media Classic 또는 Adobe Experience Manager - Dynamic Media(온-프레미스, AMS 및 Experience Manager as a Cloud Service)의 기존 라이센스에 포함되어 있습니다.
+아니오. 스마트 이미징은 Dynamic Media Classic 또는 Adobe Experience Manager - Dynamic Media(On-prem, AMS 및 Experience Manager의 기존 라이센스에 포함되어 있으며, as a Cloud Service.
 
 >[!NOTE]
 >
@@ -118,7 +118,7 @@ CSS 픽셀 비율이라고도 하는 DPR(장치 픽셀 비율)은 장치의 실�
    * Chrome
    * Firefox
    * Microsoft® Edge
-   * Safari(iOS, macOS, iPadOS에서), WebP를 지원하는 브라우저 및 OS 버전 제공
+   * Safari(iOS, macOS, iPadOS에서), 제공된 브라우저 및 OS 버전에서 WebP를 지원합니다
    * Android™
    * Opera
 * 기존 브라우저는 다음을 지원합니다.
@@ -168,7 +168,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## 스마트 이미징을 사용할 수 있습니까? {#am-i-eligible-to-use-smart-imaging}
 
-스마트 이미징을 사용하려면 회사의 Dynamic Media Classic 또는 Experience Manager 계정의 Dynamic Media이 다음 요구 사항을 충족해야 합니다.
+Smart Imaging을 사용하려면 회사의 Experience Manager 또는 Dynamic Media Classic 계정의 Dynamic Media이 다음 요구 사항을 충족해야 합니다.
 
 * Adobe 번들 CDN(Content Delivery Network)을 라이센스의 일부로 사용합니다.
 * 일반 도메인(예: `s7d1.scene7.com`, `s7d2.scene7.com` 또는 `s7d13.scene7.com`)이 아닌 전용 도메인(예: `images.company.com` 또는 `mycompany.scene7.com`)을 사용하십시오.
@@ -214,13 +214,13 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
       **[!UICONTROL 게시된 서버 이름]**&#x200B;이라는 레이블이 지정된 필드를 찾습니다. 현재 일반 Dynamic Media Classic 도메인을 사용 중인 경우, 이 전환의 일부로 고유한 사용자 지정 도메인으로 이동을 요청할 수 있습니다.
    1. HTTP/2에서 작업하기 위해 스마트 이미징이 필요한지 여부를 나타냅니다.
 
-1. Adobe 고객 지원 팀에서는 요청이 제출된 순서에 따라 스마트 이미징 고객 대기 목록에 추가합니다.
+1. Adobe 고객 지원 팀에서는 요청을 제출한 순서에 따라 스마트 이미징 고객 대기 목록에 추가합니다.
 1. Adobe이 요청을 처리할 준비가 되면 지원 담당자가 대상 날짜를 조정하고 설정해야 합니다.
 1. **선택** 사항: Adobe이 새 기능을 프로덕션에 푸시하기 전에 스테이징에서 스마트 이미징을 선택적으로 테스트할 수 있습니다.
 1. 지원이 완료되면 알림을 받습니다.
 1. 스마트 이미징의 성능 향상을 극대화하려면 Adobe에서 TTL(Time To Live)을 24시간 이상으로 설정하는 것이 좋습니다. TTL은 CDN에 의해 자산이 캐시되는 기간을 정의합니다. 이 설정을 변경하려면 다음을 수행하십시오.
 
-   1. Dynamic Media Classic을 사용하는 경우 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 게시 설정]** > **[!UICONTROL 이미지 서버]**&#x200B;를 클릭합니다. **[!UICONTROL 기본 클라이언트 캐시 시간을 Live]** 값으로 24 이상으로 설정합니다.
+   1. Dynamic Media Classic을 사용하는 경우 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 게시 설정]** > **[!UICONTROL 이미지 서버]**&#x200B;을 클릭합니다. **[!UICONTROL 기본 클라이언트 캐시 시간을 Live]** 값으로 24 이상으로 설정합니다.
    1. Dynamic Media을 사용하는 경우 [다음 지침](config-dynamic.md)을 따르십시오. **[!UICONTROL 만료]** 값을 24시간 이상 설정합니다.
 
 ## 언제 내 계정이 스마트 이미징으로 활성화될 수 있습니까? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
@@ -252,7 +252,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 >[!NOTE]
 >
->일부 이미지는 변환되지 않습니다. 스마트 이미징은 전환이 성능을 향상하는지 여부를 결정합니다. 예상 성능 이점이 없거나 JPEG 또는 PNG가 아닌 이미지가 변환되지 않는 경우가 있습니다.
+>일부 이미지는 변환되지 않습니다. 스마트 이미징은 전환이 성능을 향상하는지 여부를 결정합니다. 예상 성능 이점이 없거나 형식이 JPEG 또는 PNG가 아닌 경우 이미지가 변환되지 않는 경우가 있습니다.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
 
@@ -278,7 +278,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## 스마트 이미징 DPR 최적화는 Adobe Experience Manager Sites 구성 요소 및 Dynamic Media 뷰어와 어떻게 작동합니까?
 
-* Experience Manager 사이트 핵심 구성 요소는 기본적으로 DPR 최적화를 위해 구성됩니다. 서버측 스마트 이미징 DPR 최적화로 인해 큰 이미지가 발생하지 않도록 하기 위해 항상 `dpr=off`이 Sites 핵심 구성 요소 Dynamic Media 이미지에 추가됩니다.
+* Experience Manager Sites 코어 구성 요소 는 기본적으로 DPR 최적화를 위해 구성됩니다. 서버측 스마트 이미징 DPR 최적화로 인해 큰 이미지가 발생하지 않도록 하기 위해 항상 `dpr=off`이 Experience Manager Sites 핵심 구성 요소 Dynamic Media 이미지에 추가됩니다.
 * 서버측 스마트 이미징 DPR 최적화로 인해 큰 이미지가 발생하지 않도록 DPR 최적화에 대해 Dynamic Media 기초 구성 요소가 기본적으로 구성되어 있으므로 `dpr=off`이 항상 Dynamic Media Foundation 구성 요소 이미지에 추가됩니다. 고객이 DM 기초 구성 요소에서 DPR 최적화를 선택 취소하더라도 서버측 스마트 이미징 DPR이 시작되지 않습니다. 요약하면 DM 기초 구성 요소에서 DPR 최적화는 DM 기초 구성 요소 수준 설정에만 적용됩니다.
 * 모든 뷰어 측 DPR 최적화는 서버 측 스마트 이미징 DPR 최적화와 함께 작동하며 과도한 크기의 이미지를 생성하지 않습니다. 즉, 확대/축소 지원 뷰어의 기본 보기처럼 DPR이 뷰어에 의해 처리되는 모든 위치에서 서버 측 스마트 이미징 DPR 값이 트리거되지 않습니다. 마찬가지로 색상 견본 및 축소판과 같은 뷰어 요소에 DPR 처리가 없으면 서버측 스마트 이미징 DPR 값이 트리거됩니다.
 

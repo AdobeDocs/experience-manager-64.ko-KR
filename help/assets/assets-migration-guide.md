@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Migration,Renditions,Asset Management
 role: Architect,Admin
 exl-id: 31da9f3d-460a-4b71-9ba0-7487f1b159cb
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '1772'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->다음 자산 마이그레이션 도구는 Adobe Experience Manager의 일부가 아닙니다. Adobe 고객 지원 센터는 이러한 도구를 지원하지 않습니다.
+>다음 자산 마이그레이션 도구는 Adobe Experience Manager의 일부가 아닙니다. Adobe 고객 지원에서 이러한 도구를 지원하지 않습니다.
 >
 >* ACS [!DNL Experience Manager] 도구 태그 작성기
 >* ACS [!DNL Experience Manager] 도구 CSV 자산 가져오기
@@ -129,7 +129,7 @@ https를 통해 푸시하는 방법을 사용하는 두 가지 기본 다운사�
 1. 자산 마이그레이션: 한 [!DNL Experience Manager] 인스턴스에서 다른 인스턴스로 자산을 이동하는 데 권장되는 두 가지 도구가 있습니다.
 
    * **Vault Remote Copy** 또는  `vlt rcp`를 사용하면 네트워크에서 vlt를 사용할 수 있습니다. 소스 및 대상 디렉토리를 지정하고 한 인스턴스에서 모든 저장소 데이터를 다운로드하여 다른 인스턴스로 로드할 수 있습니다. Vlt rcp는 [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)에 설명되어 있습니다.
-   * **** Grabbitis는 Time Warner Cable에서 해당 구현을 위해 개발한 오픈 소스 컨텐츠 동기화  [!DNL Experience Manager] 도구입니다. vlt rcp에 비해 연속적인 데이터 스트림을 사용하므로 지연 시간이 짧고 vlt rcp보다 2~10배 빠르게 속도가 향상될 것으로 예상됩니다. 또한 Grabbit은 델타 컨텐츠 동기화만 지원하므로 초기 마이그레이션 패스가 완료된 후 변경 사항을 동기화할 수 있습니다.
+   * **** Grabbitis는 Time Warner Cable에서 자체 구현을 위해 개발한 오픈 소스 컨텐츠 동기화  [!DNL Experience Manager] 도구입니다. vlt rcp에 비해 연속적인 데이터 스트림을 사용하므로 지연 시간이 짧고 vlt rcp보다 2~10배 빠르게 속도가 향상될 것으로 예상됩니다. 또한 Grabbit은 델타 컨텐츠 동기화만 지원하므로 초기 마이그레이션 패스가 완료된 후 변경 사항을 동기화할 수 있습니다.
 
 1. 자산 활성화: AEM으로의 초기 마이그레이션에 대해 설명된 [assets](#activate-assets)활성화 지침을 따르십시오.
 

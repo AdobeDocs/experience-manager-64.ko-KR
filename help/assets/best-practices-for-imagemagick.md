@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Renditions,Developer Tools
 role: Admin
 exl-id: 9aeda88a-fd66-4fad-b496-3352a6ecab81
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # [!DNL Experience Manager Assets]에서 작동하도록 ImageMagick 설치 및 구성 {#install-and-configure-imagemagick-to-work-with-aem-assets}
 
-ImageMagick는 비트맵 이미지를 생성, 편집, 작성 또는 변환하는 소프트웨어 플러그인입니다. PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF 및 SVG를 포함하여 다양한 형식(200개 이상)으로 이미지를 읽고 쓸 수 있습니다. ImageMagick를 사용하여 이미지의 크기 조정, 대칭 이동, 미러, 회전, 왜곡, 전단 및 변환. 또한 ImageMagick를 사용하여 이미지 색상을 조정하거나 다양한 특수 효과를 적용하거나 텍스트, 선, 다각형, 타원 및 커브를 그릴 수도 있습니다.
+ImageMagick는 비트맵 이미지를 생성, 편집, 작성 또는 변환하는 소프트웨어 플러그인입니다. PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF 및 SVG을 포함하여 다양한 형식(200개 이상)으로 이미지를 읽고 쓸 수 있습니다. ImageMagick를 사용하여 이미지의 크기 조정, 대칭 이동, 미러, 회전, 왜곡, 전단 및 변환. 또한 ImageMagick를 사용하여 이미지 색상을 조정하거나 다양한 특수 효과를 적용하거나 텍스트, 선, 다각형, 타원 및 커브를 그릴 수도 있습니다.
 
 명령줄에서 Adobe Experience Manager 미디어 핸들러를 사용하여 ImageMagick를 통해 이미지를 처리합니다. ImageMagick를 사용하여 다양한 파일 형식으로 작업하려면 [자산 파일 형식 우수 사례](assets-file-format-best-practices.md)를 참조하십시오. 지원되는 모든 파일 형식에 대해 알아보려면 [자산 지원 형식](assets-formats.md)을 참조하십시오.
 
@@ -22,7 +22,7 @@ ImageMagick를 사용하여 대용량 파일을 처리하려면 일반적인 메
 
 >[!NOTE]
 >
->AMS(Adobe Managed Services)에서 [!DNL Experience Manager] 을(를) 사용하는 경우 대용량 PSD 또는 PSB 파일을 많이 처리할 계획이면 Adobe 고객 지원 센터에 문의하십시오. Experience Manager은 30000 x 23000 픽셀 이상의 고해상도 PSB 파일을 처리하지 못할 수 있습니다.
+>AMS(Adobe Managed Services)에서 [!DNL Experience Manager]을(를) 사용하는 경우, 대규모 PSD 또는 PSB 파일을 많이 처리할 계획이면 Adobe 고객 지원 센터에 문의하십시오. Experience Manager은 30000 x 23000 픽셀 이상의 고해상도 PSB 파일을 처리하지 못할 수 있습니다.
 
 ## ImageMagick 설치 {#installing-imagemagick}
 

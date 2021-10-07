@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '1745'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Adobe Experience Manager Assets 관점에서 모니터링에는 다음 프로세
 
 * [Iotop](https://guichaz.free.fr/iotop/): Iotop은 디스크 입출력 사용을 위한 세부 대시보드입니다. 여기에는 디스크 입출력(I/O)을 사용하는 프로세스와 사용 양을 나타내는 바와 미터(M)가 표시됩니다. Iotop은 `yum install iotop` 또는 `apt-get install iotop`을 사용하여 대부분의 Linux 시스템에 설치할 수 있습니다.
 
-* [Iftop](https://www.ex-parrot.com/pdw/iftop/): Iftop은 이더넷/네트워크 사용에 대한 자세한 정보를 표시합니다. 이더넷을 사용하는 엔터티의 통신 채널 통계당 정보를 표시하는 경우 및 사용하는 대역폭의 양이 표시됩니다. Iftop은 `yum install iftop` 또는 `apt-get install iftop`을 사용하여 대부분의 Linux 시스템에 설치할 수 있습니다.
+* [Iftop](https://www.ex-parrot.com/pdw/iftop/): Iftop은 이더넷/네트워크 사용에 대한 자세한 정보를 표시합니다. 이더넷을 사용하는 엔터티의 통신 채널 통계당 정보를 표시하는 경우 및 사용하는 대역폭의 양을 나타냅니다. Iftop은 `yum install iftop` 또는 `apt-get install iftop`을 사용하여 대부분의 Linux 시스템에 설치할 수 있습니다.
 
 * Java 비행 기록(JFR): 비프로덕션 환경에서 자유롭게 사용할 수 있는 Oracle의 상업적 도구입니다. 자세한 내용은 [Java Flight Recorder를 사용하여 CQ 런타임 문제를 진단하는 방법](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq)을 참조하십시오.
 * [!DNL Experience Manager] error.log 파일: 시스템에  [!DNL Experience Manager] 기록된 오류에 대한 세부 정보를 error.log 파일을 조사할 수 있습니다. 조사해야 하는 오류를 식별하려면 `tail -F quickstart/logs/error.log` 명령을 사용합니다.
@@ -195,5 +195,5 @@ Java 기반 애플리케이션 스택과 마찬가지로 [!DNL Experience Manage
 * 워크플로우 콘솔을 사용하여 워크플로우가 예상대로 작동하는지 확인합니다. 가능하면 여러 워크플로우를 하나의 워크플로우로 압축합니다.
 * 라이브 모니터링을 재방문하여 특정 리소스의 병목 현상이나 높은 소비자에 대해 살펴봅니다.
 * 클라이언트 네트워크에서 송신 지점을 조사하고 수신 지점은 디스패처를 포함하여 [!DNL Experience Manager] 인스턴스 네트워크를 가리킵니다. 주로 병목영역입니다. 자세한 내용은 [자산 네트워크 고려 사항](assets-network-considerations.md)을 참조하십시오.
-* [!DNL Experience Manager] 서버를 업로드합니다. [!DNL Experience Manager] 인스턴스 크기가 적합하지 않을 수 있습니다. Adobe 고객 지원 센터를 통해 서버의 크기가 더 작은지 확인할 수 있습니다.
+* [!DNL Experience Manager] 서버를 업로드합니다. [!DNL Experience Manager] 인스턴스 크기가 적합하지 않을 수 있습니다. Adobe 고객 지원 을 통해 서버의 크기가 더 작은지 확인할 수 있습니다.
 * 오류가 발생한 시간 이전의 항목에 대해 `access.log` 및 `error.log` 파일을 검사합니다. 사용자 지정 코드 예외 항목을 나타낼 수 있는 패턴을 찾습니다. 모니터링하는 이벤트 목록에 추가합니다.
