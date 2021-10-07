@@ -1,18 +1,18 @@
 ---
 title: AEM 6.4의 Assets 저장소 구조 변경
-seo-title: AEM 6.4의 Assets 저장소 구조 변경
+seo-title: Assets Repository Restructuring in AEM 6.4
 description: Assets용 AEM 6.4의 새 저장소 구조로 마이그레이션하기 위해 필요한 변경 작업을 수행하는 방법을 알아봅니다.
-seo-description: Assets용 AEM 6.4의 새 저장소 구조로 마이그레이션하기 위해 필요한 변경 작업을 수행하는 방법을 알아봅니다.
+seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for Assets.
 uuid: 0e3d8163-6274-4d1b-91c7-32ca927fb83c
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
-feature: 업그레이드
+feature: Upgrading
 exl-id: 3d5bbf95-bd1e-453b-b487-517a56fe727f
-source-git-commit: 98b6a34d678827b8ced0dfc3b153a92d63c1c0de
+source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1113'
 ht-degree: 2%
 
 ---
@@ -23,19 +23,19 @@ AEM 6.4에서 상위 [저장소 구조 변경 페이지에 설명된 대로 AEM 
 
 **6.4 업그레이드**
 
-* [Misc](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#misc)
+* [Misc](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html#misc)
 
 **6.5 이전 업그레이드**
 
-* [자산/수집 이벤트 이메일 알림 템플릿](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#asset-collection-event-e-mail-notification-template)
-* [클래식 자산 공유 디자인](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#classic-asset-share-designs)
-* [자산 이메일 알림 템플릿 다운로드](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#download-asset-e-mail-notification-template)
-* [DRM 라이선스 예](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#example-drm-licenses)
+* [자산/수집 이벤트 이메일 알림 템플릿](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html#asset-collection-event-e-mail-notification-template)
+* [클래식 자산 공유 디자인](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html#classic-asset-share-designs)
+* [자산 이메일 알림 템플릿 다운로드](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html#download-asset-e-mail-notification-template)
+* [DRM 라이선스 예](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html#example-drm-licenses)
 
-* [링크 공유 전자 메일 알림 템플릿](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#link-share-e-mail-notification-template)
-* [InDesign 워크플로우 스크립트](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#indesign-workflow-scripts)
-* [비디오 코드 변환 구성](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#video-transcoding-configurations)
-* [Misc](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#misc2)
+* [링크 공유 전자 메일 알림 템플릿](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html#link-share-e-mail-notification-template)
+* [InDesign 워크플로우 스크립트](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html#indesign-workflow-scripts)
+* [비디오 코드 변환 구성](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html#video-transcoding-configurations)
+* [Misc](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html#misc2)
 
 ## 6.4 업그레이드 {#with-upgrade}
 
@@ -53,7 +53,7 @@ AEM 6.4에서 상위 [저장소 구조 변경 페이지에 설명된 대로 AEM 
   </tr> 
   <tr> 
    <td><strong>구조 조정 지침</strong></td> 
-   <td><p>사용자 지정 코드가 이 위치(예: 코드가 이 경로에 명시적으로 사용됨) 업그레이드하기 전에 새 위치를 사용하도록 코드를 업데이트해야 합니다.사용 가능한 경우 JCR의 특정 경로에 대한 종속성을 줄이는 데 이상적으로 Java API를 사용합니다.</p> <p>클라이언트가 다운로드할 zip 파일을 저장할 임시 위치입니다. 클라이언트가 자산을 다운로드하도록 요청할 때 업데이트할 필요가 없습니다. 새 위치에 파일이 생성됩니다.</p> </td> 
+   <td><p>사용자 지정 코드가 이 위치(예: 코드가 이 경로에 명시적으로 사용됨) 업그레이드하기 전에 새 위치를 사용하도록 코드를 업데이트해야 합니다. 사용 가능한 경우 JCR의 특정 경로에 대한 종속성을 줄이는 데 이상적으로 Java API를 사용합니다.</p> <p>클라이언트가 다운로드할 zip 파일을 저장할 임시 위치입니다. 클라이언트가 자산을 다운로드하도록 요청할 때 업데이트할 필요가 없습니다. 새 위치에 파일이 생성됩니다.</p> </td> 
   </tr> 
   <tr> 
    <td><strong>메모</strong></td> 
@@ -84,7 +84,7 @@ AEM 6.4에서 상위 [저장소 구조 변경 페이지에 설명된 대로 AEM 
       <ol> 
        <li>대상이<strong> <code>/apps</code></strong>이므로 이 변경 사항은 SCM에서 지속되어야 합니다.</li> 
       </ol> </li> 
-     <li>폴더를 제거합니다.<strong><code>/etc/dam/notification/email/default</code></strong> 내에 있는 전자 메일 템플릿이 이동된 후.<br /> 
+     <li>폴더를 제거합니다. <strong><code>/etc/dam/notification/email/default</code></strong> 내에 있는 전자 메일 템플릿이 이동된 후.<br /> 
       <ol> 
        <li><strong> <code>/etc/notification/email/default</code></strong> 아래의 이메일 템플릿에 대한 업데이트가 없는 경우 AEM 6.4 설치의 일부로 <strong><code>/libs/settings/notification/email/default</code></strong> 아래에 원래 이메일 템플릿이 있으므로 폴더를 제거할 수 있습니다.</li> 
       </ol> </li> 
@@ -147,7 +147,7 @@ AEM 6.4에서 상위 [저장소 구조 변경 페이지에 설명된 대로 AEM 
       <ol> 
        <li>대상이<strong> <code>/apps</code></strong>이므로 이 변경 사항은 SCM에서 지속되어야 합니다.</li> 
       </ol> </li> 
-     <li>폴더를 제거합니다.<code>/etc/dam/workflow/notification/email/downloadasset </code>내에 있는 전자 메일 템플릿이 이동된 후.<br /> 
+     <li>폴더를 제거합니다. <code>/etc/dam/workflow/notification/email/downloadasset </code>내에 있는 전자 메일 템플릿이 이동된 후.<br /> 
       <ol> 
        <li><strong> <code>/etc</code></strong> 아래의 이메일 템플릿에 대한 업데이트가 없는 경우 AEM 6.4 설치의 일부로 <strong><code>/libs/settings/dam/workflownotification/email/downloadasset</code></strong> 아래에 원래 이메일 템플릿이 있으므로 폴더를 제거할 수 있습니다.</li> 
       </ol> </li> 
@@ -188,7 +188,7 @@ AEM 6.4에서 상위 [저장소 구조 변경 페이지에 설명된 대로 AEM 
       <ol> 
        <li>대상이<strong> <code>/apps</code></strong>이므로 이 변경 사항은 SCM에서 지속되어야 합니다.</li> 
       </ol> </li> 
-     <li>폴더를 제거합니다.<strong><code>/etc/dam/adhocassetshare</code></strong> 내에 있는 전자 메일 템플릿이 이동된 후.<br /> 
+     <li>폴더를 제거합니다. <strong><code>/etc/dam/adhocassetshare</code></strong> 내에 있는 전자 메일 템플릿이 이동된 후.<br /> 
       <ol> 
        <li><strong> <code>/etc</code></strong> 아래의 이메일 템플릿에 대한 업데이트가 없는 경우 AEM 6.4 설치의 일부로 <strong><code>/libs/settings/dam/adhocassetshare</code></strong> 아래에 원래 이메일 템플릿이 있으므로 폴더를 제거할 수 있습니다.</li> 
       </ol> </li> 

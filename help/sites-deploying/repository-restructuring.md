@@ -1,19 +1,19 @@
 ---
 title: AEM 6.4의 저장소 구조 변경
-seo-title: AEM 6.4의 저장소 구조 변경
+seo-title: Repository Restructuring in AEM 6.4
 description: AEM 6.4에서 저장소 구조 변경 이면의 기본 사항과 논리에 대해 알아봅니다
-seo-description: AEM 6.4에서 저장소 구조 변경 이면의 기본 사항과 논리에 대해 알아봅니다
+seo-description: Learn about the basics and reasoning behind the repository restructuring in AEM 6.4
 uuid: e9cd3e88-e352-44a8-9b97-69488d3267cb
 contentOwner: chaikels
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
-feature: 업그레이드
+feature: Upgrading
 exl-id: 6ff5a23a-c9b5-49ca-87b2-ba01eaf48a9f
-source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
+source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ AEM 6.4로 업그레이드를 계획하는 동안 작업 노력을 평가하려�
 
 * [모든 AEM 솔루션에 공통으로 사용되는 저장소 구조 변경](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md)
 * [AEM Sites 저장소 구조 변경](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md)
-* [AEM Assets 저장소 구조 변경](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [AEM Assets 저장소 구조 변경](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html)
 * [AEM Assets Dynamic Media 저장소 구조 변경](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)
 * [AEM Forms 저장소 구조 변경](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)
 * [AEM Communities 저장소 구조 변경](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md)

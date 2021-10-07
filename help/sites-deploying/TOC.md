@@ -6,11 +6,11 @@ audience: end-user
 user-guide-title: AEM 6.4 Deploying 안내서
 breadcrumb-title: Deploying 안내서
 user-guide-description: Adobe Managed Services 클라우드 배포를 포함하여 Adobe Experience Manager 6.4의 설치, 배포 및 아키텍처에 대해 자세히 알아봅니다.
-feature: 배포
+feature: Deploying
 role: Architect
-source-git-commit: 17c9f8523992b5ba87125c77d3e4f70f86f89c58
+source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '370'
 ht-degree: 19%
 
 ---
@@ -85,7 +85,7 @@ ht-degree: 19%
    + [AEM 6.4의 저장소 구조 변경](repository-restructuring.md)
    + [AEM 6.4의 공통 저장소 구조 변경](all-repository-restructuring-in-aem-6-4.md)
    + [AEM 6.4의 사이트 저장소 구조 변경](sites-repository-restructuring-in-aem-6-4.md)
-   + [AEM 6.4의 Assets 저장소 구조 변경](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+   + [AEM 6.4의 Assets 저장소 구조 변경](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html)
    + [AEM 6.4에서 Dynamic Media 저장소 구조 변경](dynamicmedia-repository-restructuring-in-aem-6-4.md)
    + [AEM 6.4에서 Forms 저장소 구조 변경](forms-repository-restructuring-in-aem-6-4.md)
    + [AEM 6.4에서 전자 상거래 저장소 구조 변경](ecommerce-repository-restructuring-in-aem-6-4.md)
