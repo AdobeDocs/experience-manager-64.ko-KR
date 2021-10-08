@@ -2,7 +2,7 @@
 title: AEM Assets 릴리스 노트
 seo-title: AEM Assets
 description: Adobe Experience Manager 6.4 Assets에 대한 릴리스 노트입니다.
-seo-description: Adobe Experience Manager 6.4 Assets에 대한 릴리스 노트입니다.
+seo-description: Release notes specific to Adobe Experience Manager 6.4 Assets.
 uuid: f5e7608d-f906-4a35-b442-899703de3587
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -12,7 +12,7 @@ discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
 exl-id: 3f2cb2f9-2a4e-4c5d-b937-b693f27e11da
 source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1647'
 ht-degree: 3%
 
 ---
@@ -60,7 +60,7 @@ AEM 6.4는 검색, 검색, 다중 페이지 자산 및 관리 도구 영역에�
 
 * 검색 쿼리를 다시 실행하지 않고 검색 항목으로 이동하고 검색 결과에서 동일한 위치로 돌아올 수 있는 새 검색 뒤로 단추.
 * 검색 결과 수를 표시하는 새 검색 결과 카운트입니다.
-* 이전 이미지, 문서, 멀티미디어 옵션과 비교하여 JPG, PNG 및 PSD와 같이 세밀하게 조정된 MIME 유형에 따라 검색 결과를 필터링할 수 있는 파일 유형 검색 필터 기능이 향상되었습니다.
+* 이전 이미지, 문서, 멀티미디어 옵션과 비교하여 JPG, PNG 및 PSD과 같이 세밀하게 제어된 MIME 유형을 기반으로 검색 결과를 필터링할 수 있도록 파일 유형 검색 필터 를 개선했습니다.
 * 이전 시간 슬라이더 기능이 아닌 정확한 타임스탬프를 사용하는 검색 필터가 개선되었습니다.
 
 다중 페이지 자산 개선 사항
@@ -94,25 +94,25 @@ AEM 6.4는 다음과 같은 중요한 자산 보고 개선 사항을 제공합�
 
 ## Brand Portal {#brand-portal}
 
-* **6.3 플랫폼 업그레이드**:Brand Portal이 AEM 6.0에서 AEM 6.3으로 업그레이드되었으며 새로운 기능과 성능이 향상되었습니다.
-* **병렬 게시**:AEM Assets과 Brand Portal(이전 1) 간에 최대 복제 작업이 발생할 수 있으므로 게시 성능이 크게 향상됩니다
-* **스키마 및 검색 패싯 게시**:메타데이터 스키마와 사용자 지정 검색 패싯을 Brand Portal에 게시하여 중복되지 않는 기능.
-* **벌크 태그 게시**:Brand Portal에 분류 체계(계층과 함께)를 게시하여 중복성을 제거하는 기능.
-* **자체 등록 또는 액세스 요청**:Brand Portal에 등록되지 않은 사용자를 위한 워크플로우입니다.
-* **인앱(화면) 유지 관리 알림**:업무 중단을 방지하기 위해 미리 알림이 표시됩니다.
-* **보고 개선 사항**:다음 세 가지 OOTB 보고서를 사용할 수 있습니다.다운로드, 게시 및 링크 공유.
-* **DRM 기반 제한**:라이선스가 있는 자산이 만료된 후 Brand Portal에서 더 이상 다운로드할 수 없습니다.
+* **6.3 플랫폼 업그레이드**: Brand Portal이 AEM 6.0에서 AEM 6.3으로 업그레이드되었으며 새로운 기능과 성능이 향상되었습니다.
+* **병렬 게시**: AEM Assets과 Brand Portal(이전 1) 간에 최대 복제 작업이 발생할 수 있으므로 게시 성능이 크게 향상됩니다
+* **스키마 및 검색 패싯 게시**: 메타데이터 스키마와 사용자 지정 검색 패싯을 Brand Portal에 게시하여 중복되지 않는 기능.
+* **벌크 태그 게시**: Brand Portal에 분류 체계(계층과 함께)를 게시하여 중복성을 제거하는 기능.
+* **자체 등록 또는 액세스 요청**: Brand Portal에 등록되지 않은 사용자를 위한 워크플로우입니다.
+* **인앱(화면) 유지 관리 알림**: 업무 중단을 방지하기 위해 미리 알림이 표시됩니다.
+* **보고 개선 사항**: 다음 세 가지 OOTB 보고서를 사용할 수 있습니다. 다운로드, 게시 및 링크 공유.
+* **DRM 기반 제한**: 라이선스가 있는 자산이 만료된 후 Brand Portal에서 더 이상 다운로드할 수 없습니다.
 
 ## AEM Desktop App {#aem-desktop-app}
 
-AEM 데스크탑 앱이 AEM 6.4와 호환되는 버전 1.8로 업데이트되었습니다. AEM 데스크탑 앱에 대한 전체 변경 사항 목록은 전용 [AEM 데스크탑 앱 릴리스 노트](https://docs.adobe.com/content/help/ko-KR/experience-manager-desktop-app/using/release-notes.html) 문서에 제공됩니다.\
+AEM 데스크탑 앱이 AEM 6.4와 호환되는 버전 1.8로 업데이트되었습니다. AEM 데스크탑 앱에 대한 전체 변경 사항 목록은 전용 [AEM 데스크탑 앱 릴리스 노트](https://docs.adobe.com/content/help/ko/experience-manager-desktop-app/using/release-notes.html) 문서에 제공됩니다.\
 다음은 AEM 6.3 이후 출시된 AEM 데스크탑 앱 주요 목록입니다.
 
 * 백그라운드에서 계층 폴더를 업로드할 수 있습니다.
 * 백그라운드에서 자산 업로드를 모니터링하는 UI입니다.
 * 캐싱 매개 변수 관리를 위한 UI를 포함한 캐싱 개선 사항.
 * AEM 인증 구성(SAML/SSO) 및 네트워크 프록시에 대한 광범위한 지원.
-* 지원 가능:사용자 인터페이스에서 로그에 쉽게 액세스할 수 있습니다.
+* 지원 가능: 사용자 인터페이스에서 로그에 쉽게 액세스할 수 있습니다.
 * 고객 문제에 대한 안정성 및 수정 사항이 개선되었습니다.
 
 설명서 및 모범 사례에 쉽게 액세스하기 위해 다음 설명서를 사용할 수 있습니다.
@@ -122,10 +122,10 @@ AEM 데스크탑 앱이 AEM 6.4와 호환되는 버전 1.8로 업데이트되었
 
 ## 계층형 스토리지 {#tiered-storage}
 
-AEM 6.4에는 다양한 계층형 스토리지 환경 설정을 지원하고 라이프사이클 규칙을 구현하는 기능 세트가 포함되어 있습니다. 스토리지 옵션은 또한 공용 클라우드(AWS 또는 Azure)를 지원합니다(제한되지 않음).
+AEM 6.4에는 다양한 계층형 스토리지 환경 설정을 지원하고 라이프사이클 규칙을 구현하는 기능 세트가 포함되어 있습니다. 저장소 옵션은 또한 공용 클라우드(AWS 또는 Azure)를 지원합니다(제한되지 않음).
 
 * 사용자가 원하는 대로 스토리지 클래스를 선택하고 나중에 변경하고 한 클래스에서 다른 클래스로 자산을 저장하는 규칙을 정의하거나 자산의 라이프사이클을 관리할 수 있습니다.
-* 사용자가 다른 AWS 또는 Azure를 선택하여 스토리지 비용을 절감할 수 있습니다.
+* 사용자가 다른 AWS 또는 Azure를 선택하여 스토리지 비용을 줄일 수 있는 기능.
 
 지원되는 플랫폼에 대한 개요는 [기술 요구 사항 설명서](../sites-deploying/technical-requirements.md)를 참조하십시오.
 
@@ -159,7 +159,7 @@ Dynamic Media 구성 요소에서 스마트 자르기를 사용하는 방법에 
 
 자세한 내용은 [스마트 이미징](../assets/imaging-faq.md) 설명서 를 참조하십시오.
 
-### 새롭게 부상하는 미디어 및 뷰어 개선 사항 {#emerging-media-amp-viewer-enhancements}
+### 새롭게 향상된 미디어 및 뷰어 {#emerging-media-amp-viewer-enhancements}
 
 * 새 뷰어가 지원되며 사용자에게 더 나은 몰입형 경험을 제공합니다.
 * 파노라마 뷰어는 사용자의 참여를 유도하고 공간 장면, 속성, 위치 및 경관을 보다 잘 경험할 수 있는 기능을 제공합니다. 자세한 내용은 [파노라마 이미지](../assets/panoramic-images.md) 설명서를 참조하십시오.
