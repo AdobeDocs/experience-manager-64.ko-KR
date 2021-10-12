@@ -1,8 +1,8 @@
 ---
 title: Dynamic Media 뷰어 사전 설정 관리
-seo-title: Dynamic Media 뷰어 사전 설정 관리
+seo-title: Managing Dynamic Media viewer presets
 description: Dynamic Media 뷰어 사전 설정을 만들고 관리하는 방법
-seo-description: Dynamic Media 뷰어 사전 설정을 만들고 관리하는 방법
+seo-description: How to create and manage Dynamic Media viewer presets
 uuid: 31ef7a4e-2053-43b5-ac6c-cdc4b30c3914
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -11,11 +11,11 @@ content-type: reference
 discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 exl-id: 53e53cb7-1854-44e9-9516-51bcc99378b4
-feature: 뷰어 사전 설정
+feature: Viewer Presets
 role: Admin,User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 877eade71c2ec57ff534ba2649275111c5326d75
 workflow-type: tm+mt
-source-wordcount: '4236'
+source-wordcount: '4220'
 ht-degree: 1%
 
 ---
@@ -24,12 +24,12 @@ ht-degree: 1%
 
 Dynamic Media 뷰어 사전 설정은 사용자가 컴퓨터 화면과 모바일 장치에서 리치 미디어 자산을 보는 방법을 결정하는 설정 모음입니다. 관리자는 뷰어 사전 설정을 만들 수 있습니다. 설정은 뷰어 구성 옵션 배열에 사용할 수 있습니다. 예를 들어 뷰어 표시 크기 또는 확대/축소 동작을 변경할 수 있습니다.
 
-고유한 HTML5 뷰어 사전 설정을 만들고 사용자 지정하는 방법에 대한 지침은 Dynamic Media Adobe *HTML5 Viewer SDK API 설명서*&#x200B;를 참조하십시오. SDK는 SDK 자체에 포함된 IS 게시 서버에서 사용할 수 있습니다. 각 라이브러리 버전에는 자체 SDK 설명서가 포함되어 있습니다.
+고유한 HTML5 뷰어 사전 설정을 만들고 사용자 지정하는 방법에 대한 지침은 Adobe Dynamic Media *HTML5 Viewer SDK API 설명서*&#x200B;를 참조하십시오. SDK는 SDK 자체에 포함된 IS 게시 서버에서 사용할 수 있습니다. 각 라이브러리 버전에는 자체 SDK 설명서가 포함되어 있습니다.
 
 경로: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
-예: 3.10 SDK:[https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
+예: 3.10 SDK: [https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
 
-또한 [Adobe Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)를 참조하십시오.
+또한 [Adobe Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html)를 참조하십시오.
 
 이 섹션에서는 뷰어 사전 설정을 만들고, 편집하고, 관리하는 방법을 설명합니다. 미리 볼 때 언제든지 자산에 뷰어 사전 설정을 적용할 수 있습니다. [뷰어 사전 설정 적용](viewer-presets.md)을 참조하십시오.
 
@@ -55,9 +55,9 @@ Dynamic Media 뷰어 사전 설정은 사용자가 컴퓨터 화면과 모바일
 
 ## 반응형 디자인 웹 페이지에 대한 뷰어 지원 {#viewer-support-for-responsive-designed-web-pages}
 
-웹 페이지마다 요구 사항이 다릅니다. 예를 들어, 별도의 브라우저 창에서 HTML5 뷰어를 여는 링크를 제공하는 웹 페이지를 원하는 경우가 있습니다. 다른 경우 HTML5 뷰어를 호스팅 페이지에 직접 포함해야 할 수도 있습니다. 후자의 경우 웹 페이지에 정적 레이아웃이 있을 수 있습니다. 또는 *응답형*&#x200B;일 수 있으며, 다른 장치나 다른 브라우저 창 크기에 대해 다르게 표시될 수 있습니다. 이러한 요구 사항을 수용하기 위해 Dynamic Media과 함께 제공되는 사전 정의된 모든 기본 제공 HTML5 뷰어는 정적 웹 페이지와 응답형 디자인 웹 페이지를 모두 지원합니다.
+웹 페이지마다 요구 사항이 다릅니다. 예를 들어, 별도의 브라우저 창에서 HTML5 뷰어를 여는 링크를 제공하는 웹 페이지를 원하는 경우가 있습니다. 다른 경우 HTML5 뷰어를 호스팅 페이지에 직접 포함해야 할 수도 있습니다. 후자의 경우 웹 페이지에 정적 레이아웃이 있을 수 있습니다. 또는 *응답형*&#x200B;일 수 있으며, 다른 장치나 다른 브라우저 창 크기에 대해 다르게 표시될 수 있습니다. 이러한 요구 사항을 수용하기 위해 Dynamic Media과 함께 제공되는 사전 정의된 모든 기본 HTML5 뷰어는 정적 웹 페이지와 응답형 디자인 웹 페이지를 모두 지원합니다.
 
-웹 페이지에 응답형 뷰어를 포함하는 방법에 대한 자세한 내용은 *이미지 제공 API 도움말*&#x200B;에서 [응답형 이미지 라이브러리](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html)를 참조하십시오.
+See [Responsive Image library](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) in the *Image Serving API Help* for more information on how to embed responsive viewers onto your web pages.
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
 |:---|:---|
 | **회전 메뉴 세트** | 핫스팟이나 이미지 맵 또는 둘 다 둘 이상의 이미지에 추가됩니다. 고객은 이미지를 왼쪽 또는 오른쪽으로 팬한 다음 이미지에 있는 핫스팟을 클릭하여 추가 세부 사항을 확인하거나 웹 사이트의 카테고리, 홈 또는 랜딩 페이지에서 직접 구매할 수 있습니다. |
 | **플라이아웃 확대/축소** | 원본 이미지 옆에 확대/축소된 영역의 두 번째 이미지를 표시합니다. 사용할 컨트롤이 없습니다. 사용자가 원하는 영역으로 선택 영역을 이동합니다. |
-|  | 이 뷰어에 대한 전체 대역폭 사용을 결정할 때 기본 이미지와 플라이아웃 이미지가 모두 뷰어에서 제공되는지 고려하십시오. 기본 이미지 크기(스테이지 너비 및 높이)와 확대/축소 인수가 플라이아웃 이미지 크기를 결정합니다. 플라이아웃 파일 크기가 너무 크지 않도록 하려면 다음 두 값의 균형을 맞춥니다.주 이미지 크기가 큰 경우 확대/축소 계수 값을 낮춥니다. (플라이아웃 폭 및 플라이아웃 높이 는 플라이아웃 창의 크기를 결정하지만 뷰어에 제공되는 플라이아웃 이미지의 크기는 결정합니다.) |
+|  | 이 뷰어에 대한 전체 대역폭 사용을 결정할 때 기본 이미지와 플라이아웃 이미지가 모두 뷰어에서 제공되는지 고려하십시오. 기본 이미지 크기(스테이지 너비 및 높이)와 확대/축소 인수가 플라이아웃 이미지 크기를 결정합니다. 플라이아웃 파일 크기가 너무 크지 않도록 하려면 다음 두 값의 균형을 맞춥니다. 주 이미지 크기가 큰 경우 확대/축소 계수 값을 낮춥니다. (플라이아웃 폭 및 플라이아웃 높이 는 플라이아웃 창의 크기를 결정하지만 뷰어에 제공되는 플라이아웃 이미지의 크기는 결정합니다.) |
 |  | 예를 들어 기본 이미지 크기가 350 x 350 픽셀이고 확대/축소 인수가 3인 경우 결과 플라이아웃 이미지는 1050 x 1050 픽셀입니다. 기본 이미지 크기가 300 x 300 픽셀이고 확대/축소 인수가 4인 경우 플라이아웃 이미지는 1200 x 1200 픽셀입니다. JPEG 품질 설정(권장 설정은 80~90 사이)에 따라 파일 크기를 크게 줄일 수 있습니다. 권장되는 확대/축소 요소는 기본 이미지의 크기에 따라 2.5~4입니다. |
 | **인라인 확대/축소** | 원래 뷰어 내에서 확대/축소된 영역의 이미지를 표시합니다. 사용할 컨트롤이 없습니다. 즉, 사용자가 보려는 영역으로 선택 영역을 이동합니다. |
 | **이미지 집합** | 이미지 세트 뷰어에서 축소판 이미지를 클릭하여 항목의 다른 보기 또는 색상 변형을 볼 수 있습니다. 또한 이 뷰어는 이미지를 자세히 검사할 수 있는 확대/축소 도구를 제공합니다. |
@@ -93,10 +93,10 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
 | **파노라마 이미지** | 파노라마 이미지 및 PanoramicVR 뷰어는 공간, 속성, 위치 또는 조경에 대한 360° 보기 환경에서 사용자를 몰입하도록 구형 파노라마 이미지를 렌더링합니다. |
 |  | 업로드된 이미지가 구형 파노라마를 사용할 수 있도록 하려면 다음 중 하나 또는 둘 다 있어야 합니다. <ul><li>2:1 종횡비입니다.</li><li>사각형, 구형 및 파노라마 또는 구형 및 파노라마와 같은 키워드로 태그가 지정됩니다. [태그 사용](../sites-authoring/tags.md)을 참조하십시오.</li></ul> |
 |  | 종횡비와 키워드 기준은 모두 자산 세부 사항 페이지와 &quot;파노라마 미디어&quot; WCM 구성 요소의 파노라마 자산에 적용됩니다. |
-|  | 중요 사항:이 뷰어는 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다. |
+|  | 중요 사항: 이 뷰어는 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다. |
 | **회전 집합** | 여러 이미지 뷰를 제공하여 개체를 돌려 다른 면과 각도를 검사할 수 있습니다. |
 | **비디오** | 점진적 또는 적응형 비트율 스트리밍을 사용하여 비디오를 재생합니다. 적응형 비트율 스트리밍은 장치 및 대역폭 검색을 자동으로 수행하여 적합한 품질의 비디오를 적합한 형식으로 제공합니다. |
-| **세로 확대/축소** | 세로 확대/축소 뷰어를 사용하면 제품 이미지 보기 경험을 최대화하여 사용자에게 제품에 대한 최상의 표현을 제공할 수 있습니다. 색상 견본의 수직 위치는 다음과 같습니다. <ul><li>견본이 접힌 부분 위에 있는지 확인합니다. 가로 색상 견본을 사용하면 사용자의  데스크탑 화면 크기에 따라 사용자가 페이지를 스크롤할 때까지 색상 견본이 표시되지 않았습니다. 뷰어에 색상 견본을 세로로 배치하면 사용자의 화면 크기에 상관없이 표시될 수 있습니다.</li><li>기본 이미지 크기를 극대화합니다. 가로 색상 견본을 사용하면 페이지가 표시되도록 페이지의 공간을 예약해야 합니다. 이 위치 지정은 주 이미지의 크기를 줄였습니다. 그러나 세로 견본 레이아웃이 있으면 이 공간을 할당할 필요가 없습니다. 따라서 주 이미지 크기를 최대화할 수 있습니다.</li></ul> |
+| **세로 확대/축소** | 세로 확대/축소 뷰어를 사용하면 제품 이미지 보기 경험을 최대화하여 사용자에게 제품에 대한 최상의 표현을 제공할 수 있습니다. 색상 견본의 수직 위치는 다음과 같습니다. <ul><li>견본이 접힌 부분 위에 있는지 확인합니다. 가로 색상 견본을 사용하면 사용자의  데스크탑 화면 크기에 따라 사용자가 페이지를 스크롤할 때까지 색상 견본이 표시되지 않았습니다. By placing the swatches vertically in the viewer, it ensures that they are visible no matter the user&#39;s screen size.</li><li>기본 이미지 크기를 극대화합니다. 가로 색상 견본을 사용하면 페이지가 표시되도록 페이지의 공간을 예약해야 합니다. 이 위치 지정은 주 이미지의 크기를 줄였습니다. 그러나 세로 견본 레이아웃이 있으면 이 공간을 할당할 필요가 없습니다. 따라서 주 이미지 크기를 최대화할 수 있습니다.</li></ul> |
 | **확대/축소** | 사용자가 영역을 클릭하여 확대할 수 있습니다. 사용자는 컨트롤을 클릭하여 이미지를 확대, 축소 및 기본 크기로 재설정할 수 있습니다. |
 
 ## 기본 뷰어 사전 설정 목록 {#list-of-out-of-the-box-viewer-presets}
@@ -107,7 +107,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
 
 뷰어를 위해 지원되는 웹 브라우저 및 운영 체제 버전에 대한 자세한 내용은 뷰어 릴리스 노트를 검토할 수 있습니다.
 
-[뷰어 참조 가이드](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)의 목차 *뷰어 릴리스 노트*&#x200B;를 참조하십시오.
+[뷰어 참조 가이드](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html)의 목차 *뷰어 릴리스 노트*&#x200B;를 참조하십시오.
 
 >[!NOTE]
 >
@@ -155,7 +155,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
 | **탭하기** | 플라이아웃 창을 표시합니다. | 사용자 인터페이스를 표시하거나 숨깁니다. | 사용자 인터페이스를 표시하거나 숨깁니다. |
 | **두 번 탭** | 적용되지 않음 | 확대 또는 재설정 | 확대 또는 재설정 |
 | **핀치 열기** | 적용되지 않음 | 확대(iOS 및 Android 3x만 해당) | 확대(iOS 및 Android 3x만 해당) |
-| **핀치 닫기** | 적용되지 않음 | 축소(iOS 및 Android 3x만 해당) | 축소(iOS 및 Android 3x만 해당) |
+| **핀치 닫기** | 적용되지 않음 | 확대(iOS 및 Android 3x만 해당) | 확대(iOS 및 Android 3x만 해당) |
 | **밀기** | 견본 막대 스크롤 | 이미지 스크롤 | 회전 |
 | **플릭** | 견본 막대 스크롤 | 이미지 스크롤 | 회전 |
 
@@ -212,15 +212,15 @@ AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;에서 자산
 
       시각적 편집기를 사용하면 특정 속성이 스타일에 어떤 영향을 주는지 확인할 수 있습니다. 속성을 설정하거나 조정하여 편집기의 왼쪽에 있는 샘플을 사용하여 뷰어에 미치는 영향을 즉시 확인할 수 있습니다.
 
-      각 뷰어 사전 설정 유형에 대한 CSS 스타일 속성은 [뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)의 &quot;사용자 지정 *&lt;viewer_name>* 뷰어&quot; 도움말 항목에 설명되어 있습니다.
+      각 뷰어 사전 설정 유형에 대한 CSS 스타일 속성은 [뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html)의 &quot;사용자 지정 *&lt;viewer_name>* 뷰어&quot; 도움말 항목에 설명되어 있습니다.
 
-      예를 들어 `Mixed_Media` 유형의 뷰어 사전 설정을 만드는 경우 각 속성의 목록 및 설명은 [혼합 미디어 뷰어 사용자 정의](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) 를 참조하십시오.
+      For example, if you are creating a viewer preset of the type `Mixed_Media`, see [Customizing Mixed Media Viewer](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) for a list and description of each property.
 
-   * 별도의 CSS 파일에서 스타일 설정을 정의한 경우 CSS 파일을 AEM Assets에 업로드할 수 있습니다. 업로드된 CSS 파일을 찾아 뷰어 사전 설정과 연결하려면 **[!UICONTROL 선택한 유형]** 풀다운 메뉴 아래에서 **[!UICONTROL CSS 가져오기]**&#x200B;를 탭합니다(시각적 편집기를 위로 스크롤하여 볼 필요가 있을 수 있음).
+   * 별도의 CSS 파일에서 스타일 설정을 정의한 경우 CSS 파일을 AEM Assets에 업로드할 수 있습니다. Tap **[!UICONTROL Import CSS]** below the **[!UICONTROL Selected Type]** pull-down menu (you may need to scroll the visual editor up to see it) to find the uploaded CSS file and associate it with the viewer preset.
 
       CSS 파일을 가져올 때 시각적 편집기는 CSS가 올바른 뷰어 마커를 사용하는지 확인합니다. 예를 들어, 확대/축소 뷰어를 만드는 경우 가져오는 모든 CSS 규칙은 상위 뷰어 요소에 정의된 해당 뷰어 클래스 이름 `.s7mixedmediaviewer` 을 사용하여 정의해야 합니다.
 
-      지정된 뷰어에 대한 CSS 마커를 적절히 정의하는 한 임의의 수제 CSS를 가져올 수 있습니다. (CSS 마커는 [뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)의 &quot;사용자 지정 *&lt;뷰어 이름>* 뷰어&quot; 도움말 항목에 설명되어 있습니다. 예를 들어 확대/축소 뷰어의 CSS 마커에 대해 읽으려면 [확대/축소 뷰어 사용자 지정](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html) 을 참조하십시오. 그러나 시각적 편집기가 일부 CSS 값을 이해하지 못할 수 있습니다. 이러한 경우 시각적 편집기는 CSS가 계속 작동할 수 있도록 오류를 무시하려고 합니다.
+      지정된 뷰어에 대한 CSS 마커를 적절히 정의하는 한 임의의 수제 CSS를 가져올 수 있습니다. (CSS 마커는 [뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html)의 &quot;사용자 지정 *&lt;뷰어 이름>* 뷰어&quot; 도움말 항목에 설명되어 있습니다. 예를 들어 확대/축소 뷰어의 CSS 마커에 대해 읽으려면 [확대/축소 뷰어 사용자 지정](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html) 을 참조하십시오. 그러나 시각적 편집기가 일부 CSS 값을 이해하지 못할 수 있습니다. 이러한 경우 시각적 편집기는 CSS가 계속 작동할 수 있도록 오류를 무시하려고 합니다.
    >[!NOTE]
    >
    >CSS를 원시 형태로 직접 편집하려면 **[!UICONTROL 선택한 유형]** 풀다운 메뉴 아래에 있는 **[!UICONTROL CSS]**&#x200B;표시/숨기기 를 누릅니다. 그러면 시각적 편집기를 위로 스크롤하여 볼 수 있습니다.
@@ -258,7 +258,7 @@ AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;에서 자산
 
 | 표시 모드 | 설명 |
 |---|---|
-| [!UICONTROL 세그먼트] |  Segmmentis는 사용자가 직접 만드는 대화형 비디오 뷰어 사전 설정 Shopperable_Video_light 및 Shopperable_Video_dark 및 모든 대화형 비디오 뷰어 사전 설정에 대한 기본 표시 모드입니다. |
+| [!UICONTROL 세그먼트] |  세그먼트즉시 사용 가능한 대화형 비디오 뷰어 사전 설정 Shopperable_Video_light 및 Shopperable_Video_dark 및 사용자가 직접 만드는 모든 대화형 비디오 뷰어 사전 설정에 대한 기본 표시 모드입니다. |
 |  | 이 모드에서는 디스플레이 패널에 표시된 점 수보다 비디오 세그먼트에 할당된 축소판 수가 적은 경우 다음 또는 이전 하위 세그먼트의 축소판 그림을 가져오면 패널의 빈 점을 채우지 않습니다. 즉, 특정 비디오 세그먼트에 지정된 색상 견본의 표시를 유지합니다. |
 | [!UICONTROL 연속] | [!UICONTROL 연속] 표시 모드에서 세그먼트의 축소판 수가 패널에 표시되는 수보다 작으면 마지막 축소판이 표시되는 경우 뷰어는 다음 세그먼트나 이전 세그먼트의 축소판 표시를 자동으로 포함합니다. |
 
@@ -286,7 +286,7 @@ AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;에서 자산
 
 * 하위 세그먼트 수 = 다음 하위 세그먼트로 반올림됩니다(브라우저 창 크기에 따라 축소판 패널에 표시되는 슬롯 수/축소판 그림 패널).
 
-   위의 표에서 예제 사용, 9개의 축소판 / 4개의 슬롯 = 2.25;뷰어 로직은 최대 3개의 하위 세그먼트를 라운드합니다.
+   Using the example in the table above, 9 thumbnails / 4 slots = 2.25; the viewer logic rounds it up to 3 sub-segments.
 
 * 축소판 수 = 다음 축소판 그림(축소판 수/비디오 하위 세그먼트 수)으로 반올림합니다.
 
@@ -313,7 +313,7 @@ AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;에서 자산
 1. AEM의 왼쪽 위 모서리에서 AEM 로고를 탭한 다음, 왼쪽 레일에서 **[!UICONTROL 도구 > 자산 > 뷰어 사전 설정]**&#x200B;을 누릅니다.
 1. **[!UICONTROL 뷰어 사전 설정]** 페이지의 **[!UICONTROL 상태]** 열 헤더에서 토글을 탭하여 뷰어 사전 설정을 활성화하거나 비활성화합니다.
 
-   활성화되는 뷰어 사전 설정은 파란색 상자 내에 토글이 오른쪽에 나타납니다.비활성화된 뷰어 사전 설정은 회색 상자 내에서 토글이 왼쪽에 표시됩니다.
+   활성화되는 뷰어 사전 설정은 파란색 상자 내에 토글이 오른쪽에 나타납니다. 비활성화된 뷰어 사전 설정은 회색 상자 내에서 토글이 왼쪽에 표시됩니다.
 
 ## Dynamic Media 뷰어 사전 설정 게시 {#publishing-viewer-presets}
 
@@ -377,10 +377,10 @@ Dynamic Media에 만들어 추가한 뷰어 사전 설정을 삭제할 수 있�
 
 1. 왼쪽 창에서 뷰어 사전 설정을 선택하여 자산에 적용합니다.
 
-   [URL을 복사하여](linking-urls-to-yourwebapplication.md)을 다른 사용자와 공유할 수 있습니다.
+   You can [copy the URL to share](linking-urls-to-yourwebapplication.md) with other users.
 
-## Dynamic Media 뷰어 사전 설정을 사용하여 자산 제공 {#delivering-assets-with-viewer-presets}
+## Delivering assets with Dynamic Media viewer presets {#delivering-assets-with-viewer-presets}
 
 뷰어 사전 설정에 대한 URL을 가져오려면 [웹 애플리케이션에 URL 연결](linking-urls-to-yourwebapplication.md)을 참조하십시오. 또한 [웹 페이지에 비디오 뷰어 포함](embed-code.md)을 참조하십시오.
 
-AEM을 WCM으로 사용하는 경우 페이지에서 바로 뷰어 사전 설정을 사용하여 자산을 추가할 수 있습니다. [페이지에 Dynamic Media 자산 추가](adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
+If you are using AEM as your WCM, you can add assets using the viewer presets directly on the page. [페이지에 Dynamic Media 자산 추가](adding-dynamic-media-assets-to-pages.md)를 참조하십시오.

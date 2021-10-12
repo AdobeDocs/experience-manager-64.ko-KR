@@ -8,7 +8,7 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: 877eade71c2ec57ff534ba2649275111c5326d75
 workflow-type: tm+mt
 source-wordcount: '10384'
 ht-degree: 1%
@@ -72,7 +72,7 @@ ht-degree: 1%
 
          [비디오 표현물 보기](video-renditions.md)
 
-         [비디오 표현물 관리](managing-assets-touch-ui.md#managing-renditions)
+[비디오 표현물 관리](managing-assets-touch-ui.md#managing-renditions)
 
       * [뷰어 사전 설정 관리](managing-viewer-presets.md)
       * [자산 게시](publishing-dynamicmedia-assets.md)
@@ -84,7 +84,7 @@ ht-degree: 1%
 
       * 제목, 설명 및 태그, 사용자 지정 메타데이터 필드와 같은 비디오의 속성을 편집합니다.
 
-         [비디오 속성 편집](managing-assets-touch-ui.md#editing-properties)
+[비디오 속성 편집](managing-assets-touch-ui.md#editing-properties)
 
       * [디지털 자산에 대한 메타데이터 관리](metadata.md)
       * [메타데이터 스키마](metadata-schemas.md)
@@ -121,7 +121,7 @@ ht-degree: 1%
 
 Dynamic Media의 비디오는 데스크탑, iOS, Android, Blackberry 및 Windows 모바일 장치를 포함하여 여러 화면에서 스트리밍을 위한 고품질 적응형 비디오를 쉽게 게시할 수 있도록 하는 종단 간 솔루션입니다. 응용 비디오 세트는 다른 비트율 및 형식(예: 400kbps, 800kbps 및 1000kbps)으로 인코딩된 동일한 비디오 버전을 그룹화합니다. 데스크탑 컴퓨터 또는 모바일 장치가 사용 가능한 대역폭을 감지합니다.
 
-예를 들어, iOS 모바일 장치에서 3G, 4G 또는 Wi-Fi와 같은 대역폭을 감지합니다. 그런 다음 응용 비디오 세트 내의 다양한 비디오 비트 전송률 중에서 올바른 인코딩된 비디오를 자동으로 선택합니다. 비디오는 데스크탑, 모바일 장치 또는 태블릿으로 스트리밍됩니다.
+예를 들어 iOS 모바일 장치에서 3G, 4G 또는 Wi-Fi와 같은 대역폭을 감지합니다. 그런 다음 응용 비디오 세트 내의 다양한 비디오 비트 전송률 중에서 올바른 인코딩된 비디오를 자동으로 선택합니다. 비디오는 데스크탑, 모바일 장치 또는 태블릿으로 스트리밍됩니다.
 
 또한 데스크탑 또는 모바일 장치에서 네트워크 조건이 변경되면 자동으로 비디오 품질이 전환됩니다. 또한 고객이 데스크탑에서 전체 화면 모드로 전환하면 응용 비디오 세트가 더 나은 해상도를 사용하여 응답하여 고객의 보기 환경을 개선할 수 있습니다. 응용 비디오 세트 사용은 고객이 여러 화면 및 장치에서 Dynamic Media 비디오를 재생할 수 있는 최상의 재생 기능을 제공합니다.
 
@@ -142,15 +142,15 @@ Dynamic Media의 비디오는 데스크탑, iOS, Android, Blackberry 및 Windows
    * 응용 비디오 세트가 생성되면 MP4 비디오가 포함됩니다.
    * **참고**: 기본/소스 비디오가 응용 비디오 세트에 추가되지 않습니다.
 
-* 모든 HTML5 비디오 뷰어에서 비디오 캡션 기능.
+* 모든 HTML 5 비디오 뷰어의 비디오 캡션.
 * 비디오 자산을 효율적으로 관리하기 위해 전체 메타데이터 지원을 사용하여 비디오를 구성, 탐색 및 검색할 수 있습니다.
-* 응용 비디오 세트를 웹뿐만 아니라 iPhone, iPad, Android, Blackberry 및 Windows 폰을 포함한 데스크톱 및 모바일 장치에 제공합니다.
+* 응용 비디오 세트를 웹뿐만 아니라 iPhone, iPad, Android, Blackberry 및 Windows 휴대폰을 포함한 데스크톱 및 모바일 장치에 제공합니다.
 
-응용 비디오 스트리밍은 다양한 iOS 플랫폼에서 지원됩니다. [Adobe 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)를 참조하십시오.
+응용 비디오 스트리밍은 다양한 iOS 플랫폼에서 지원됩니다. [Adobe 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html)를 참조하십시오.
 
 Dynamic Media은 MP4 H.264 비디오용 모바일 비디오 재생을 지원합니다. 다음 위치에서 이 비디오 형식을 지원하는 Blackberry 장치를 찾을 수 있습니다. [Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)에서 지원되는 비디오 형식.
 
-다음 위치에서 이 비디오 형식을 지원하는 Windows 장치를 찾을 수 있습니다. [Windows Phone에서 지원되는 비디오 형식](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)
+You can find Windows devices that support this video format at the following: [Supported video formats on Windows Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)
 
 * 다음을 포함하여 Dynamic Media 비디오 뷰어 사전 설정을 사용하여 비디오를 재생합니다.
 
@@ -162,21 +162,21 @@ Dynamic Media은 MP4 H.264 비디오용 모바일 비디오 재생을 지원합�
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480). -->
 
-Adobe Dynamic Media 뷰어 참조 가이드의 [HTML5 뷰어 정보](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)도 참조하십시오.
+Adobe Dynamic Media 뷰어 참조 가이드의 [HTML5 뷰어 정보](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)를 참조하십시오.
 
-## 우수 사례: HTML5 비디오 뷰어 사용 {#best-practice-using-the-html-video-viewer}
+## 우수 사례: HTML 5 비디오 뷰어 사용 {#best-practice-using-the-html-video-viewer}
 
-Dynamic Media HTML5 비디오 뷰어 사전 설정은 강력한 비디오 플레이어입니다. 이러한 매개 변수를 사용하면 HTML5 비디오 재생과 관련된 많은 일반적인 문제와 적응형 스트리밍 게재 부족 및 제한된 데스크탑 브라우저 도달과 같은 모바일 장치와 관련된 문제를 방지할 수 있습니다.
+The Dynamic Media HTML5 Video viewer presets are robust video players. HTML5 비디오 재생과 관련된 많은 일반적인 문제와 응용 스트리밍 전달 부족 및 제한된 데스크탑 브라우저 도달과 같은 모바일 장치와 관련된 문제를 방지하기 위해 이 매개 변수를 사용할 수 있습니다.
 
-플레이어의 디자인 측면에서는 표준 웹 개발 도구를 사용하여 모든 비디오 플레이어의 기능을 디자인할 수 있습니다. 예를 들어 HTML5 및 CSS를 사용하여 단추, 컨트롤 및 사용자 지정 포스터 이미지 배경을 디자인하여 고객에게 맞춤형 모양을 만들어 줄 수 있습니다.
+플레이어의 디자인 측면에서는 표준 웹 개발 도구를 사용하여 모든 비디오 플레이어의 기능을 디자인할 수 있습니다. For example, you can design the buttons, controls, and custom poster image background using HTML5 and CSS to help you reach your customers with a customized appearance.
 
-뷰어의 재생 측에서 브라우저의 비디오 기능을 자동으로 감지합니다. 그런 다음 HLS 스트리밍(응용 비디오 스트리밍)을 사용하여 비디오를 제공합니다. 또는 이러한 전달 메서드가 없으면 HTML5 점진적 이 대신 사용됩니다.
+뷰어의 재생 측에서 브라우저의 비디오 기능을 자동으로 감지합니다. 그런 다음 HLS 스트리밍(응용 비디오 스트리밍)을 사용하여 비디오를 제공합니다. Or, if those delivery methods are not present then HTML5 progressive is used instead.
 
-단일 플레이어에 HTML5 및 CSS를 사용하여 재생 구성 요소를 디자인하고 내장된 재생을 사용하고 브라우저의 기능에 따라 적응형 및 점진적 스트리밍을 사용하는 기능을 결합하면 데스크탑 및 모바일 사용자 모두에게 리치 미디어 콘텐츠의 범위를 확장하고 간소화된 비디오 경험을 제공할 수 있습니다.
+단일 플레이어에 HTML5 및 CSS를 사용하여 재생 구성 요소를 디자인하고, 포함된 재생을 사용하고, 브라우저의 기능에 따라 적응형 및 점진적 스트리밍을 사용하는 기능을 결합하면 데스크탑 및 모바일 사용자 모두에게 리치 미디어 콘텐츠의 범위를 확장하고 간소화된 비디오 경험을 제공할 수 있습니다.
 
-Adobe 뷰어 참조 가이드의 [HTML5 뷰어 정보](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html)도 참조하십시오.
+Adobe 뷰어 참조 가이드의 [HTML5 뷰어 정보](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html)를 참조하십시오.
 
-### HTML5 비디오 뷰어를 사용하여 데스크탑 컴퓨터 및 모바일 장치에서 비디오 재생 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
+### HTML 5 비디오 뷰어를 사용하여 데스크탑 컴퓨터 및 모바일 장치에서 비디오 재생 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 데스크탑 및 모바일 적응형 비디오 스트리밍의 경우 비트율 전환에 사용되는 비디오는 응용 비디오 세트의 모든 MP4 비디오를 기반으로 합니다.
 
@@ -351,7 +351,7 @@ VBR과 CBR을 선택하는 방법은 거의 항상 미디어 파일에 VBR을 �
 
 | 속도(Kbps) | 연결 유형 |
 |--- |--- |
-| 256년 | 전화 접속 연결입니다. |
+| 256년 | Dial-up connection. |
 | 800 | 일반적인 모바일 연결. 이 연결의 경우 3G 경험에 대해 400~최대 800 범위의 데이터 전송률을 타깃팅하십시오. |
 | 2000년 | 일반 광대역 데스크탑 연결. 이 연결의 경우 평균 1200-1500Kbps로 800-2000Kbps 범위의 데이터 속도를 타깃팅합니다. |
 | 5000 | 일반적인 고속 광대역 연결 대부분의 소비자는 이 속도로 비디오를 전달할 수 없으므로 이 상위 범위의 인코딩을 사용하지 않는 것이 좋습니다. |
@@ -427,7 +427,7 @@ VBR과 CBR을 선택하는 방법은 거의 항상 미디어 파일에 VBR을 �
    <td><p>인코딩됨</p> </td> 
    <td><p>640 x 360</p> </td> 
    <td><p>3</p> </td> 
-   <td><p>1</p> </td> 
+   <td><p>3</p> </td> 
   </tr> 
   <tr> 
    <td><p>인코딩됨</p> </td> 
@@ -470,7 +470,7 @@ YouTube에 게시하려면 Google 계정이 필요합니다. GMAIL 계정이 있
 
 >[!NOTE]
 >
->다음 단계는 이 작성 시 정확했습니다. 하지만 Google은 사전 통지 없이 정기적으로 웹 사이트를 업데이트합니다. 따라서 이러한 단계는 약간 다를 수 있습니다.
+>다음 단계는 이 작성 시 정확했습니다. However, Google periodically updates their websites without notice. 따라서 이러한 단계는 약간 다를 수 있습니다.
 
 **Google Cloud 설정을 구성하려면:**
 
@@ -481,7 +481,7 @@ YouTube에 게시하려면 Google 계정이 필요합니다. GMAIL 계정이 있
    이미 Google 계정이 있는 경우 다음 단계로 건너뜁니다.
 
 1. [https://cloud.google.com/](https://cloud.google.com/)로 이동합니다.
-1. Google Cloud Platform 페이지의 상단 근처에 있는 **[!UICONTROL 콘솔]**&#x200B;을 탭합니다. Google 계정 자격 증명을 사용하여 **로그인**&#x200B;이 필요할 수 있습니다.
+1. Google Cloud Platform 페이지의 상단 근처에 있는 **[!UICONTROL Console]**&#x200B;을 누릅니다. Google 계정 자격 증명을 사용하여 **로그인**&#x200B;이 필요할 수 있습니다.
 1. **[!UICONTROL 대시보드]** 페이지에서 **[!UICONTROL 프로젝트 만들기]**&#x200B;를 탭합니다.
 1. **[!UICONTROL 새 프로젝트]** 대화 상자에서 프로젝트 이름을 입력합니다.
 
@@ -592,7 +592,7 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
    원하는 경우 설명을 선택적으로 추가할 수 있습니다.
 
 1. **[!UICONTROL 확인]**&#x200B;을 누릅니다.
-1. YouTube/Google 인증이 표시됩니다. 아직 Google Cloud 계정에 로그인하지 않은 경우 이 단계를 건너뜁니다.
+1. YouTube/Google 인증이 표시됩니다. Google Cloud 계정에 아직 로그인하지 않은 경우 이 단계를 건너뜁니다.
 
    * Google 프로젝트 ID 및 위의 JSON 텍스트와 연결된 Google 사용자 이름 및 암호를 입력합니다.
    * 계정에 두 개 이상의 항목이 표시되는 채널 수에 따라 다릅니다. 채널을 선택합니다. 전자 메일 주소를 선택하지 마십시오.
@@ -904,9 +904,9 @@ YouTube에서 컨텐츠를 제거하려면 AEM에서는 진행 상황을 모니�
 
 ### Dynamic Media HTML5 Viewer SDK를 사용하여 만든 비디오 뷰어를 기반으로 비디오 보고서를 봅니다 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
-Dynamic Media에서 제공하는 기본 비디오 뷰어를 사용하거나 기본 비디오 뷰어를 기반으로 사용자 지정 뷰어 사전 설정을 만든 경우 비디오 보고서를 보는 데 추가 단계가 필요하지 않습니다. 그러나 HTML5 Viewer SDK API를 기반으로 자체 비디오 뷰어를 만든 경우 다음 단계를 사용하여 비디오 뷰어가 추적 이벤트를 Dynamic Media 비디오 보고서에 전송하는지 확인합니다.
+Dynamic Media에서 제공하는 기본 비디오 뷰어를 사용하거나 기본 비디오 뷰어를 기반으로 사용자 지정 뷰어 사전 설정을 만든 경우 비디오 보고서를 보는 데 추가 단계가 필요하지 않습니다. 그러나 HTML5 Viewer SDK API를 기반으로 자체 비디오 뷰어를 만든 경우 다음 단계를 사용하여 비디오 뷰어가 추적 이벤트를 Dynamic Media 비디오 보고서에 보내도록 합니다.
 
-[Dynamic Media Viewers 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) 및 [HTML5 Viewer SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)를 사용하여 고유한 비디오 뷰어를 만듭니다.
+[Dynamic Media Viewers 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) 및 [HTML5 Viewer SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)를 사용하여 고유한 비디오 뷰어를 만듭니다.
 
 HTML5 Viewer SDK API를 사용하여 만든 비디오 뷰어를 기반으로 비디오 보고서를 보려면 다음을 수행하십시오.
 
@@ -949,7 +949,7 @@ HTML5 Viewer SDK API를 사용하여 만든 비디오 뷰어를 기반으로 비
 
       trackingManager에 구성 요소를 첨부하기 위해 페이지에서 여러 뷰어를 추적하려면 여러 추적 관리자 구성 요소를 사용합니다.
 
-   * 다음을 추가하여 AppMeasurementBridge 개체를 만듭니다.
+   * Create the AppMeasurementBridge object by adding the following:
 
       ```
       var appMeasurementBridge = new AppMeasurementBridge(); appMeasurementBridge.setVideoPlayer(videoPlayer);
@@ -967,15 +967,15 @@ HTML5 Viewer SDK API를 사용하여 만든 비디오 뷰어를 기반으로 비
 
 ## 비디오에 캡션 추가 {#adding-captions-to-video}
 
-단일 비디오나 응용 비디오 세트에 자막을 추가하여 비디오의 범위를 글로벌 마켓플레이스로 확장할 수 있습니다. 캡션을 추가하면 오디오를 복제할 필요가 없고 다른 언어별로 오디오를 다시 녹음하기 위해 기본 스피커를 사용할 필요가 없습니다. 비디오는 녹음된 언어로 재생됩니다. 외국어 자막이 나타나므로 다른 언어를 사용하는 사람들이 오디오 부분을 계속 이해할 수 있습니다.
+단일 비디오나 응용 비디오 세트에 자막을 추가하여 비디오의 범위를 글로벌 마켓플레이스로 확장할 수 있습니다. 캡션을 추가하면 오디오를 복제할 필요가 없고 다른 언어별로 오디오를 다시 녹음하기 위해 기본 스피커를 사용할 필요가 없습니다. 비디오는 녹음된 언어로 재생됩니다. Foreign language subtitles appear so that people of different languages can still understand the audio portion.
 
 또한 캡션을 사용하면 귀가 들리지 않거나 난청인 사용자를 위해 자막을 사용하여 접근성을 향상시킬 수 있습니다.
 
 >[!NOTE]
 >
->사용하는 비디오 플레이어는 캡션 표시를 지원해야 합니다.
+>The video player that you use must support the display of captions.
 
-Dynamic Media에는 캡션 파일을 JSON(JavaScript 개체 표기법) 형식으로 변환하는 기능이 있습니다. 이 전환은 JSON 텍스트를 비디오의 숨겨진 완전한 텍스트 로 웹 페이지에 포함할 수 있음을 의미합니다. 그런 다음 검색 엔진은 컨텐츠를 크롤링하고 색인화하여 비디오를 보다 손쉽게 검색할 수 있게 만들고 고객에게 비디오 컨텐츠에 대한 추가 세부 사항을 제공할 수 있습니다.
+Dynamic Media has the capability of converting caption files to JSON (JavaScript Object Notation) format. 이 전환은 JSON 텍스트를 비디오의 숨겨진 완전한 텍스트 로 웹 페이지에 포함할 수 있음을 의미합니다. 그런 다음 검색 엔진은 컨텐츠를 크롤링하고 색인화하여 비디오를 보다 손쉽게 검색할 수 있게 만들고 고객에게 비디오 컨텐츠에 대한 추가 세부 사항을 제공할 수 있습니다.
 
 URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 *Dynamic Media 이미지 제공 및 렌더링 API 도움말*&#x200B;에서 [정적(비이미지) 콘텐츠 제공](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api)을 참조하십시오.
 
@@ -1032,7 +1032,7 @@ URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 *Dyna
 >
 >사용되는 비디오 플레이어는 장 마커 사용을 지원해야 합니다. Dynamic Media 비디오 플레이어는 장 마커를 지원하지만 타사 비디오 플레이어를 사용하지 않을 수 있습니다.
 
-원할 경우 비디오 뷰어 사전 설정을 사용하는 대신 장을 사용하여 자신만의 사용자 지정 비디오 뷰어를 만들고 브랜드화할 수 있습니다. 장 탐색을 사용하여 고유한 HTML5 뷰어를 만드는 방법에 대한 지침은 Adobe HTML5 뷰어 SDK API에서 `s7sdk.video.VideoPlayer` 및 `s7sdk.video.VideoScrubber` 클래스의 &quot;Customizing Behavior Using Modifiers&quot; 제목을 참조하십시오. [HTML5 뷰어 SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) 설명서를 참조하십시오.
+원할 경우 비디오 뷰어 사전 설정을 사용하는 대신 장을 사용하여 자신만의 사용자 지정 비디오 뷰어를 만들고 브랜드화할 수 있습니다. 장 탐색을 사용하여 고유한 HTML5 뷰어를 만드는 방법에 대한 지침은 Adobe HTML5 Viewer SDK API에서 `s7sdk.video.VideoPlayer` 및 `s7sdk.video.VideoScrubber` 클래스의 &quot;Customizing Behavior Using Modifiers&quot; 제목을 참조하십시오. [HTML5 뷰어 SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) 설명서를 참조하십시오.
 
 캡션을 만드는 것과 거의 동일한 방식으로 비디오에 대한 장 목록을 만듭니다. 즉, WebVTT 파일을 만듭니다. 그러나 이 파일은 사용할 수도 있는 WebVTT 캡션 파일과 구분되어야 합니다. 캡션과 장을 하나의 WebVTT 파일에 결합할 수 없습니다.
 
@@ -1058,7 +1058,7 @@ Cost-efficient access to rapidly evolving technology.
 
 위의 예에서 `Chapter 1`은 큐 식별자이며, 선택 사항입니다. `00:00:000 --> 01:04:364`의 큐 시간은 장의 시작 시간과 종료 시간을 `00:00:000` 형식으로 지정합니다. 마지막 세 자리 숫자는 밀리초이며, 필요한 경우 `000` 상태로 둘 수 있습니다. `The bicycle store behind it all`의 장 제목은 장 내용에 대한 실제 설명입니다. 사용자가 비디오 타임라인의 시각적 큐 포인트 위에 마우스 포인터를 놓으면 큐 식별자, 시작 큐 시간 및 장 제목이 모두 비디오 플레이어의 팝업에 나타납니다.
 
-HTML5 비디오 뷰어를 사용하고 있으므로 만드는 장 파일이 WebVTT(Web Video Text Tracks) 표준을 따르는지 확인하십시오. 장 파일 확장명은 .vtt입니다. WebVTT 캡션 표준에 대한 자세한 정보를 확인할 수 있습니다.
+HTML5 비디오 뷰어를 사용하고 있으므로 만드는 장 파일이 WebVTT(Web Video Text Tracks) 표준을 따르는지 확인합니다. 장 파일 확장명은 .vtt입니다. WebVTT 캡션 표준에 대한 자세한 정보를 확인할 수 있습니다.
 
 [WebVTT 를 참조하십시오. 웹 비디오 텍스트 트랙 형식](https://dev.w3.org/html5/webvtt/)
 
@@ -1156,7 +1156,7 @@ Dynamic Media에서 생성된 축소판을 사용하는 대신 사용자 정의 
 1. 오른쪽 아래 패널의 **[!UICONTROL 속성]** 탭에서 `thumbnailtime`를 두 번 누릅니다.
 1. [축소판 표시 시간 편집] 대화 상자에서 텍스트 필드를 사용하여 간격 값을 백분율로 입력합니다.
 
-   * 더하기 기호(+) 아이콘을 탭하여 하나 이상의 간격 값 필드를 추가합니다. 아이콘을 보려면 대화 상자 아래쪽으로 스크롤해야 할 수 있습니다.
+   * Tap the plus sign (+) icon to add one or more interval value fields. 아이콘을 보려면 대화 상자 아래쪽으로 스크롤해야 할 수 있습니다.
    * 간격 값 필드 오른쪽에 있는 빼기 기호(-) 아이콘을 탭하여 목록에서 삭제합니다.
    * 위쪽 화살표 아이콘과 아래쪽 화살표 아이콘을 탭하여 간격 값을 다시 정렬합니다.
 
@@ -1172,7 +1172,7 @@ Dynamic Media에서 생성된 축소판을 사용하는 대신 사용자 정의 
 >이 기능은 Dynamic Media - 하이브리드 모드를 실행하는 경우에만 사용할 수 있습니다.
 
 1. 비디오 축소판을 추가할 업로드된 비디오 자산으로 이동합니다.
-1. **[!UICONTROL 목록 보기]** 또는 **[!UICONTROL 카드 보기]**&#x200B;에서 자산 선택 모드에서 비디오 자산을 탭합니다.
+1. In asset selection mode either from the **[!UICONTROL List View]** or the **[!UICONTROL Card View]**, tap the video asset.
 1. 도구 모음에서 **[!UICONTROL 속성 보기]** 아이콘(&quot;i&quot;가 포함된 원)을 탭합니다.
 1. 비디오의 **[!UICONTROL 속성]** 페이지에서 **[!UICONTROL 축소판 변경]**&#x200B;을 누릅니다.
 1. **[!UICONTROL 축소판 그림 변경]** 페이지의 도구 모음에서 **[!UICONTROL 새 축소판 업로드]**&#x200B;를 누릅니다.
