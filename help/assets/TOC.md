@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 자산을 생성, 관리, 게재 및 최적화합니다.
-source-git-commit: d9649477328b3249dae396bbdca0f660c9c8faca
+source-git-commit: 18901a6b1e5035e16cb4f30a040ec8a42f704d87
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 65%
+source-wordcount: '636'
+ht-degree: 64%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 65%
    + [Dynamic Media 이미지 프로필](image-profiles.md)
    + [스마트 이미징](imaging-faq.md)
    + [비디오](s7-video.md)
-   + [Dynamic Media Classic 기능을 페이지에 추가](scene7.md)
+   + [페이지에 Dynamic Media Classic 기능 추가](scene7.md)
    + [컨텐츠의 HTTP2 전달](http2.md)
    + [Dynamic Media 자산 제공](delivering-dynamic-media-assets.md)
    + [Dynamic Media에서 핫링크 보호 활성화](hotlink-protection.md)
@@ -165,3 +165,7 @@ ht-degree: 65%
    + [비공개 폴더 공유](private-folder.md)
    + [스마트 컨텐츠 서비스 교육 지침](smart-tags-training-guidelines.md)
    + [비디오 표현물](video-renditions.md)
++ 다른 솔루션과 통합 {#integrations}
+   + [통합 [!DNL Adobe Workfront]](workfront-integrations.md)
+   + [설치 [!DNL enhanced connector] 대상 [!DNL Workfront]](workfront-connector-install.md)
+   + [구성 [!DNL enhanced connector] 대상 [!DNL Workfront]](workfront-connector-configure.md)
