@@ -5,7 +5,7 @@ contentOwner: VG
 feature: Brand Portal
 role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: 8910716cf6b5c4e872db8d965200787de7c2d121
+source-git-commit: a50cd2b50191b86ac27cc228944c6c9e917b08cb
 workflow-type: tm+mt
 source-wordcount: '1646'
 ht-degree: 81%
@@ -14,11 +14,11 @@ ht-degree: 81%
 
 # Brand Portal에서 AEM Assets 구성 {#configure-integration-64}
 
-Adobe Experience Manager Assets는 Brand Portal 테넌트의 인증을 위해 IMS 토큰을 전달하는 [!DNL Adobe I/O]를 통해 Brand Portal으로 구성됩니다.
+Adobe Experience Manager Assets는 다음을 통해 Brand Portal으로 구성됩니다 [!DNL Adobe I/O]: Brand Portal 임차인의 인증을 위해 IMS 토큰을 받습니다.
 
 >[!NOTE]
 >
->AEM 6.4.8.0 이상에서 [!DNL Adobe I/O]을 통해 Brand Portal과 AEM Assets을 구성할 수 있습니다.
+>을 통해 Brand Portal과 AEM Assets 구성 [!DNL Adobe I/O] AEM 6.4.8.0 이상에서 지원됩니다.
 >
 >이전에는 Brand Portal이 기존 OAuth 게이트웨이를 통해 클래식 UI에 구성되었으며, 이 게이트웨이는 인증을 위해 IMS 액세스 토큰을 가져오는 데 JWT 토큰 교환을 사용합니다.
 
@@ -26,12 +26,12 @@ Adobe Experience Manager Assets는 Brand Portal 테넌트의 인증을 위해 IM
 >
 >***기존 고객 전용***
 >
->기존 OAuth 게이트웨이 구성을 계속 사용하는 것이 좋습니다. 기존 OAuth 게이트웨이 구성 문제가 발생하는 경우 기존 구성을 삭제하고 [!DNL Adobe I/O] 를 통해 새 구성을 만드십시오.
+>기존 OAuth 게이트웨이 구성을 계속 사용하는 것이 좋습니다. 기존 OAuth 게이트웨이 구성 문제가 발생하는 경우 기존 구성을 삭제하고 를 통해 새 구성을 만드십시오 [!DNL Adobe I/O].
 
 이 도움말은 다음 두 가지 사용 사례에 대해 설명합니다.
 
-* [새 구성](#configure-new-integration-64): 새 Brand Portal 사용자이고 Brand Portal으로 AEM Assets 작성자 인스턴스를 구성하려는 경우 에 새 구성을 만들 수 있습니다  [!DNL Adobe I/O].
-* [구성 업그레이드](#upgrade-integration-64): 기존 OAuth 게이트웨이에 Brand Portal으로 구성된 AEM Assets 작성자 인스턴스를 사용하는 기존 Brand Portal 사용자인 경우 기존 구성을 삭제하고 새 구성을 만드는 것이 좋습니다 [!DNL Adobe I/O].
+* [새 구성](#configure-new-integration-64): 새 Brand Portal 사용자이고 Brand Portal으로 AEM Assets 작성자 인스턴스를 구성하려는 경우 [!DNL Adobe I/O].
+* [구성 업그레이드](#upgrade-integration-64): 기존 OAuth 게이트웨이에 Brand Portal으로 구성된 AEM Assets 작성자 인스턴스를 사용하는 기존 Brand Portal 사용자인 경우 기존 구성을 삭제하고 새 구성을 만드는 것이 좋습니다. [!DNL Adobe I/O].
 
 제공된 정보는 이 도움말을 읽는 사람이 다음 기술을 잘 알고 있다는 가정을 기반으로 합니다.
 
@@ -67,14 +67,14 @@ AEM을 다운로드한 후 AEM 작성자 인스턴스를 설정하는 방법은 
 
 * [AEM 6.4 서비스 팩 릴리스 노트](https://helpx.adobe.com/kr/experience-manager/6-4/release-notes/sp-release-notes.html)
 
-**최신 AEM** 패키지 또는 서비스 팩을 찾을 수 없는 경우 고객 지원 센터에 문의하십시오.
+**고객 지원에 문의** 최신 AEM 패키지 또는 서비스 팩을 찾을 수 없는 경우
 
 ## 구성 만들기 {#configure-new-integration-64}
 
 Brand Portal에 AEM Assets을 처음 구성하는 경우 단계를 나열된 순서로 수행합니다.
 
 1. [공개 인증서 받기](#public-certificate)
-1. [ [!DNL Adobe I/O] Createintegration](#createnewintegration)
+1. [만들기 [!DNL Adobe I/O] 통합](#createnewintegration)
 1. [IMS 계정 구성 만들기](#create-ims-account-configuration)
 1. [클라우드 서비스 구성](#configure-the-cloud-service)
 1. [구성 테스트](#test-integration)
@@ -94,7 +94,7 @@ IMS 구성에는 두 단계가 포함됩니다.
 
 ### 공개 인증서 받기 {#public-certificate}
 
-공개 인증서를 사용하면 [!DNL Adobe I/O]에서 프로필을 인증할 수 있습니다.
+공개 인증서를 사용하면 프로필을 인증할 수 있습니다 [!DNL Adobe I/O].
 
 1. AEM Assets 작성자 인스턴스에 로그인
 기본 URL: http:// localhost:4502/aem/start.html
@@ -118,7 +118,7 @@ IMS 구성에는 두 단계가 포함됩니다.
 
    ![인증서 만들기](assets/ims-config2.png)
 
-1. **[!UICONTROL 공개 키 다운로드]**&#x200B;를 클릭하고 *AEM-Adobe-IMS.crt* 인증서 파일을 컴퓨터에 저장합니다. 인증서 파일은 [만들기 [!DNL Adobe I/O] 통합](#createnewintegration)에 사용됩니다.
+1. **[!UICONTROL 공개 키 다운로드]**&#x200B;를 클릭하고 *AEM-Adobe-IMS.crt* 인증서 파일을 컴퓨터에 저장합니다. 인증서 파일은 [만들기 [!DNL Adobe I/O] 통합](#createnewintegration).
 
    ![인증서 다운로드](assets/ims-config3.png)
 
@@ -126,13 +126,13 @@ IMS 구성에는 두 단계가 포함됩니다.
 
    **계정** 탭에서 Adobe IMS 계정을 만듭니다. 하지만 이를 위해서는 통합에 대한 세부 사항이 필요합니다. 우선은 이 페이지를 열어 두십시오.
 
-   새 탭을 열고 [Create [!DNL Adobe I/O] 통합](#createnewintegration)을(를) 열어 IMS 계정 구성에 대한 통합 세부 사항을 가져옵니다.
+   새 탭을 열고 [만들기 [!DNL Adobe I/O] 통합](#createnewintegration) ims 계정 구성에 대한 통합 세부 사항을 가져오는 방법 을 참조하십시오.
 
-### [!DNL Adobe I/O] 통합 만들기 {#createnewintegration}
+### 만들기 [!DNL Adobe I/O] 통합 {#createnewintegration}
 
 [!DNL Adobe I/O] 통합은 IMS 계정 구성을 설정하는 데 필요한 API 키, 클라이언트 암호 및 페이로드(JWT)를 생성합니다.
 
-1. Brand Portal 테넌트의 IMS 조직에 대한 시스템 관리자 권한으로 [!DNL Adobe I/O] 콘솔에 로그인합니다.
+1. 에 로그인합니다. [!DNL Adobe I/O] Brand Portal 테넌트의 IMS 조직에 대한 시스템 관리자 권한이 있는 콘솔입니다.
 
    기본 URL: [https://console.adobe.io/](https://console.adobe.io/)
 
@@ -175,7 +175,7 @@ IMS 구성에는 두 단계가 포함됩니다.
 다음 절차를 수행했는지 확인하십시오.
 
 * [공개 인증서 받기](#public-certificate)
-* [ [!DNL Adobe I/O] 통합 만들기](#createnewintegration)
+* [만들기 [!DNL Adobe I/O] 통합](#createnewintegration)
 
 **IMS 계정 구성을 만드는 절차:**
 
@@ -185,7 +185,7 @@ IMS 구성에는 두 단계가 포함됩니다.
 
    **[!UICONTROL 인증 서버]**&#x200B;에서 URL [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)을 입력하십시오.
 
-   [Create [!DNL Adobe I/O] 통합](#createnewintegration)의 끝에서 복사한 API 키, 클라이언트 암호 및 JWT 페이로드를 붙여 넣습니다.
+   끝에 복사한 API 키, 클라이언트 암호 및 JWT 페이로드를 붙여 넣습니다. [만들기 [!DNL Adobe I/O] 통합](#createnewintegration).
 
    **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
@@ -272,7 +272,7 @@ Brand Portal 클라우드 서비스 구성을 만들려면 다음 단계를 수�
    >
    >일부 자산의 복제가 실패할 수 있으므로 복제 에이전트를 비활성화하지 마십시오.
    >
-   >시간 초과 오류를 방지하기 위해 4개의 복제 에이전트가 모두 구성되었는지 확인합니다. Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout)에 동시 게시 시 문제 해결 [을 참조하십시오.
+   >시간 초과 오류를 방지하기 위해 4개의 복제 에이전트가 모두 구성되었는지 확인합니다. 자세한 내용은 [Brand Portal에 동시 게시 문제 해결](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
 
 Brand Portal이 AEM Assets 작성자 인스턴스로 구성되었습니다. 이제 다음을 수행할 수 있습니다.
 
@@ -284,6 +284,7 @@ Brand Portal이 AEM Assets 작성자 인스턴스로 구성되었습니다. 이�
 ## 구성 업그레이드 {#upgrade-integration-64}
 
 다음 단계를 나열된 순서로 수행하여 기존 구성을 업그레이드합니다.
+
 1. [실행 중인 작업 확인](#verify-jobs)
 1. [기존 구성 삭제](#delete-existing-configuration)
 1. [구성 만들기](#configure-new-integration-64)
@@ -313,6 +314,7 @@ Brand Portal이 AEM Assets 작성자 인스턴스로 구성되었습니다. 이�
 ### 기존 구성 삭제 {#delete-existing-configuration}
 
 기존 구성을 삭제하는 동안 다음 확인 목록을 실행해야 합니다.
+
 * 4개의 복제 에이전트 모두 삭제
 * 클라우드 서비스 삭제
 * MAC 사용자 삭제
@@ -336,7 +338,7 @@ Brand Portal이 AEM Assets 작성자 인스턴스로 구성되었습니다. 이�
    ![](assets/delete-mac-user.png)
 
 
-이제 [AEM 6.4 작성자 인스턴스에서 [!DNL Adobe I/O]구성을 만들 수 있습니다.](#configure-new-integration-64)
+이제 다음을 수행할 수 있습니다 [구성 만들기](#configure-new-integration-64) AEM 6.4 작성자 인스턴스에서 [!DNL Adobe I/O].
 
 
 

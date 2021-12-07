@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 자산을 생성, 관리, 게재 및 최적화합니다.
-source-git-commit: 18901a6b1e5035e16cb4f30a040ec8a42f704d87
+source-git-commit: ac358965790694a51d866a4cdb97810b0983bbca
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '640'
 ht-degree: 64%
 
 ---
@@ -104,6 +104,7 @@ ht-degree: 64%
    + [PDF 래스터라이저 사용](aem-pdf-rasterizer.md)
    + [자산 업로드 제한 구성](configuring-asset-upload-restrictions.md)
    + [AEM 및 Creative Cloud 통합 우수 사례](aem-cc-integration-best-practices.md)
+   + [Adobe 자산 링크 구성](configure-asset-link.md)
    + [AEM Assets과 InDesign 서버 통합](indesign.md)
    + [메타데이터 프로필](metadata-profiles.md)
    + [자산의 Digital Rights Management](drm.md)
