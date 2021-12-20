@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.4 누적 수정 팩에 대한 릴리스 
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: a63e77a3-da48-4072-bc75-c4c41a2f62a3
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: 1d5d2ef3840a40df7c3b223c7b5835e41553e9f1
 workflow-type: tm+mt
-source-wordcount: '4676'
+source-wordcount: '4693'
 ht-degree: 23%
 
 ---
@@ -31,15 +31,15 @@ AEM 누적 수정 팩 6.4.8.4은 2020년 3월, AEM 6.4 서비스 팩 8(6.4.8.0)�
 
 AEM 6.4.8.4는 AEM 6.4 서비스 팩 8에 종속된 CFP(Cumulative Fix Pack)입니다. AEM 6.4 서비스 팩 8을 설치한 후 CFP를 설치합니다.
 
-[!DNL Adobe Experience Manager] 6.4.8.4에 도입된 주요 기능 및 개선 사항은 다음과 같습니다.
+에 도입된 주요 기능 및 개선 사항 [!DNL Adobe Experience Manager] 6.4.8.4는
 
-* PDFG 변환을 수행할 때 [!DNL Experience Manager Forms] 레지스트리 변경 사항을 활성화하거나 비활성화할 수 있습니다.
+* 를 활성화하거나 비활성화하는 기능 [!DNL Experience Manager Forms] pdfg 변환을 수행할 때 레지스트리가 변경됩니다.
 
 * 양식 데이터 모델에서 SOAP 기반 웹 서비스를 위한 X-509 인증서 기반 인증.
 
 * 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.8.24으로 업데이트되었습니다.
 
-CFP 및 기타 릴리스 유형에 대한 자세한 내용은 [AEM Update 릴리스 차량 정의](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-release-vehicle-definitions.html) 를 참조하십시오.
+CFP 및 기타 릴리스 유형에 대한 자세한 내용은 [AEM 업데이트 릴리스 차량 정의](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.4에서는 다음 문제에 대한 수정 사항을 제공합니다.
 
@@ -56,14 +56,14 @@ Adobe Experience Manager 6.4.8.4에서는 다음 문제에 대한 수정 사항�
 
 ### [!DNL Assets] {#assets-6484}
 
-* `IndexWriter.merge` 스마트  `OutOfMemoryError` 태깅 기능이 큰 지표  `/oak:index/lucene` 및 인덱스를 만들므로  `/oak:index/ntBaseLucene` 오류가 발생합니다(NPR-35650).
-* 사용자가 [!DNL Adobe InDesign]에서 자산을 편집한 후 자산을 체크 인할 수 없으며 권한 부족에 대한 오류가 표시됩니다(NPR-35340).
+* `IndexWriter.merge` 원인 `OutOfMemoryError` 스마트 태그 지정 기능이 큰 오류 발생 `/oak:index/lucene` 및 `/oak:index/ntBaseLucene` 인덱스(NPR-35650).
+* 사용자는 자산을 편집한 후 자산을 체크 인할 수 없습니다 [!DNL Adobe InDesign] 및 가 권한 부족에 대한 오류를 받습니다(NPR-35340).
 * 이름 지정 충돌을 해결한 후 기존 자산의 새 버전을 만들면 원래 자산의 메타데이터를 덮어씁니다(NPR-35939).
-* 자동 생성된 비공개 폴더 그룹은 폴더를 삭제할 때 또는 [!UICONTROL 개인 폴더 제한 제거] 옵션이 설정된 폴더를 업데이트할 때 유지 관리되지 않고 제거되지 않습니다(NPR-35625).
+* 폴더 삭제 또는 폴더 업데이트 시 자동 생성된 비공개 폴더 그룹은 유지되지 않고 제거되지 않습니다 [!UICONTROL 개인 폴더 제한 제거] 옵션 세트(NPR-35625).
 
 #### [!DNL Dynamic Media] {#dynamic-media}
 
-* 일시적인 ImageServer 오류로 인해 [!DNL Experience Manager]의 몇 가지 기능에 대한 403 응답이 발생합니다. (CQ-4308565)
+* 간헐적인 ImageServer 오류로 인해 [!DNL Experience Manager]. (CQ-4308565)
 
 ### 통합 {#integrations-6484}
 
@@ -73,7 +73,7 @@ Adobe Experience Manager 6.4.8.4에서는 다음 문제에 대한 수정 사항�
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] 는 예정된  [!DNL Experience Manager] 누적 수정 팩 릴리스 날짜로부터 1주일 후에 추가 기능 패키지를 출시합니다.
+>[!DNL Experience Manager Forms] 는 예약된 후 1주일 후에 추가 기능 패키지를 출시합니다 [!DNL Experience Manager] 누적 수정 팩 릴리스 날짜입니다.
 
 **서신 관리**
 
@@ -83,13 +83,17 @@ Adobe Experience Manager 6.4.8.4에서는 다음 문제에 대한 수정 사항�
 
 **문서 서비스**
 
-* [!DNL JAVA] 을 [!DNL JDK1.8.0_261](으)로 업그레이드한 후 PDF를 어셈블할 수 없습니다(NPR-35761, NPR-35848).
+* 업그레이드 후 PDF을 어셈블할 수 없습니다. [!DNL JAVA] to [!DNL JDK1.8.0_261] (NPR-35761, NPR-35848).
 
 **Foundation JEE**
 
-* [!DNL Forms] 워크플로우에서 작업 알림을 편집하면 저장할 수 없습니다(CQ-4315055).
+* 작업 알림을 편집할 때 [!DNL Forms] 워크플로우에서 저장할 수 없습니다(CQ-4315055).
 
-보안 업데이트에 대한 자세한 내용은 [Experience Manager 보안 게시판 페이지](https://helpx.adobe.com/security/products/experience-manager.html)를 참조하십시오.
+**AEMForms-6.4.0-0027에서 해결된 문제**
+
+* (JEE만 해당) Apache Log4j2에 대해 보고된 중요한 보안 취약점(CVE-2021-44228 및 CVE-2021-45046)입니다.
+
+보안 업데이트에 대한 자세한 내용은 [Experience Manager 보안 게시판 페이지](https://helpx.adobe.com/security/products/experience-manager.html).
 
 ## 이전 누적 수정 팩에 포함된 핫픽스 및 기능 팩 {#hotfixes-and-feature-packs-included-in-previous-cumulative-fix-packs}
 
@@ -101,7 +105,7 @@ AEM 6.4.8.3은 AEM 6.4 서비스 팩 8에 종속된 CFP(Cumulative Fix Pack)입�
 
 AEM 6.4.8.3에서 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.8.23으로 업데이트되었습니다.
 
-CFP 및 기타 릴리스 유형에 대한 자세한 내용은 [AEM Update 릴리스 차량 정의](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html) 를 참조하십시오.
+CFP 및 기타 릴리스 유형에 대한 자세한 내용은 [AEM 업데이트 릴리스 차량 정의](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.3은 다음 문제에 대한 수정 사항을 제공합니다.
 
@@ -115,40 +119,40 @@ Adobe Experience Manager 6.4.8.3은 다음 문제에 대한 수정 사항을 제
 
 * 대상을 선택하지 않은 경우에도 페이지 이동 마법사에서 다음 단추가 활성화된 상태로 유지됩니다(NPR-34460).
 
-* 상위 구성 요소에 `cq:isContainer` 속성이 포함되어 있으면 상속된 구성 요소에 속성이 자동으로 포함되지 않습니다(CQ-4308409).
+* 상위 구성 요소에 `cq:isContainer` 상속된 구성 요소에 속성이 자동으로 포함되지 않습니다(CQ-4308409).
 
-* `calc()` 함수를 사용하여 CSS 축소를 사용하는 경우 `+` 기호 주위의 빈 공백이 제거됩니다(NPR-34991).
+* 을 사용하여 CSS 축소를 사용하는 경우 `calc()` 함수 주위에 빈 공간이 있을 경우 `+` 기호가 제거됩니다(NPR-34991).
 
-* AEM 인스턴스를 시작하면 `com.adobe.granite.maintenance.impl.MaintenanceTaskManagerImpl` 및 `com.adobe.granite.maintenance.impl.TaskScheduler` 구성 요소가 `Active` 상태에 표시되지 않습니다(NPR-34952).
+* AEM 인스턴스를 시작하면 `com.adobe.granite.maintenance.impl.MaintenanceTaskManagerImpl` 및 `com.adobe.granite.maintenance.impl.TaskScheduler` 구성 요소는에 표시되지 않습니다 `Active` state (NPR-34952).
 
 #### [!DNL Assets] {#assets-6483}
 
 * 기존 자산의 버전을 만들 때 메타데이터 프로필이 폴더에 적용되는 경우 메타데이터에 대한 사용자 업데이트가 지속되지 않습니다(NPR-34833).
-* [!DNL Adobe InDesign]과 함께 [!DNL Adobe Asset Link]을 사용하는 경우 검색 결과에 폴더와 컬렉션이 포함되지 않고 자산만 포함됩니다(NPR-34700).
-* 폴더에서 자산을 드래그하여 이동할 때 사용자 인터페이스에는 [!UICONTROL Lightbox] 및 [!UICONTROL Drop in Collection]에도 옵션이 표시됩니다. 이동 작업이 취소되더라도 사용자 인터페이스에 나머지 두 옵션이 계속 표시됩니다(NPR-34525).
+* 사용 시 [!DNL Adobe Asset Link] with [!DNL Adobe InDesign]로 지정하는 경우 검색 결과에 폴더와 컬렉션이 포함되지 않고 자산만 포함됩니다(NPR-34700).
+* 폴더에서 자산을 드래그하여 이동할 때 사용자 인터페이스에 다음과 같은 옵션이 표시됩니다 [!UICONTROL Lightbox에 놓기] 및 [!UICONTROL 컬렉션에 놓기]. 이동 작업이 취소되더라도 사용자 인터페이스에 나머지 두 옵션이 계속 표시됩니다(NPR-34525).
 * 게시 관리 인터페이스가 열리면 게시 옵션을 사용할 수 없으며 게시 취소 옵션을 선택하면 범위 페이지가 비어 있습니다(CQ-4302509).
 
 ##### [!DNL Dynamic Media] {#dynamic-media-6483}
 
-* 이미지 사전 설정 설정에서 [!UICONTROL JPG 색차 다운샘플링 활성화] 옵션이 [!DNL Experience Manager]에서 선택 취소되면 변경 사항이 [!DNL Dynamic Media]과 동기화되지 않습니다(NPR-34284).
-* [!UICONTROL 뷰어 사전 설정 편집기]에서 [!UICONTROL PanasonicImage/PanoricImage_VR] 사전 설정을 편집할 때 `PanoramicView` 구성 요소에서 `PANORAMICVIEW_AUTOROTATE` 수정자 레이블을 사용할 수 없습니다(CQ-4302043).
-* [!DNL Experience Manager]에서 비디오를 게시 취소해도 구성된 Dynamic Media Classic에 응용 비디오 세트가 게시 취소되지 않습니다. (CQ-4304405).
+* 이미지 사전 설정 설정에서 옵션이 [!UICONTROL JPG 색차 다운샘플링 활성화] 에서 선택 취소됨 [!DNL Experience Manager]과 동기화되지 않습니다. [!DNL Dynamic Media] (NPR-34284).
+* 에서 [!UICONTROL 뷰어 사전 설정 편집기], 편집 시 [!UICONTROL PanasonicImage/PanoricImage_VR] 사전 설정, `PanoramicView` 구성 요소, `PANORAMICVIEW_AUTOROTATE` 수정자 레이블을 사용할 수 없습니다(CQ-4302043).
+* 다음에서 비디오 게시 취소 [!DNL Experience Manager] 구성된 Dynamic Media Classic에 대한 응용 비디오 세트 게시를 취소하지 않습니다. (CQ-4304405).
 
 #### 플랫폼 {#platform-6483}
 
-* `emitUseStrict` 플래그가 GCC(Google Closure Compiler) 프로세서 함수 `com.adobe.granite.ui.clientlibs.impl.HtmlLibraryManagerImpl`에 추가됩니다. 플래그는 `use strict` 명령의 출력을 억제합니다(NPR-34830).
-* 일별 또는 주별 유지 관리 작업을 시작할 때 `NullPointerException`이 반환됩니다(NPR-34702).
-* [!DNL Apache Sling Health Check] 도구는 더 이상 사용되지 않습니다. 대신 [패턴 탐지기](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/upgrading/pattern-detector.html) 를 사용하여 콘텐츠 위반을 감지하십시오(NPR-33929).
+* 다음 `emitUseStrict` 플래그는 GCC(Google Closure Compiler) 프로세서 함수에 추가됩니다 `com.adobe.granite.ui.clientlibs.impl.HtmlLibraryManagerImpl`. 플래그는 `use strict` 지침(NPR-34830).
+* A `NullPointerException` 매일 또는 주별 유지 관리 작업을 시작할 때 반환됩니다(NPR-34702).
+* 다음 [!DNL Apache Sling Health Check] 도구는 더 이상 사용되지 않습니다. 대신, [패턴 탐지기](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/upgrading/pattern-detector.html) 내용 위반을 감지하려면(NPR-33929).
 
 #### 통합 {#integrations-6483}
 
-* [!UICONTROL 만들기] 단추가 폴더에서 [!UICONTROL 대상] 페이지로 이동할 때 [!UICONTROL 대상] 페이지에 표시됩니다(NPR-35152).
+* 다음 [!UICONTROL 만들기] 버튼이 나타납니다. [!UICONTROL 대상] 폴더로 이동 시 [!UICONTROL 대상] 페이지(NPR-35152).
 
 #### 사용자 인터페이스 {#ui-6483}
 
-* [!UICONTROL Omnisearch] 사용자 인터페이스의 [!UICONTROL 필터] 검색 패널도 검색이 실행되는 위치 이외의 위치에서 결과를 반환합니다(NPR-34877).
-* [!UICONTROL Omnisearch] 사용자 인터페이스에서 [!UICONTROL 필터] 패널을 닫을 때 왼쪽 레일이 [!UICONTROL 콘텐츠] 선택 항목으로 재설정되지 않으므로 [!UICONTROL 필터] 패널을 다시 열 수 없습니다(NPR-34483).
-* 페이지 속성에 액세스할 때 `NullPointerException`이 반환됩니다(NPR-34509).
+* 다음 [!UICONTROL 필터] 검색 패널 [!UICONTROL Omnisearch] 사용자 인터페이스는 검색이 실행되는 위치가 아닌 위치의 결과를 반환합니다(NPR-34877).
+* 를 닫을 때 [!UICONTROL 필터] 패널 [!UICONTROL Omnisearch] 사용자 인터페이스, 왼쪽 레일이 로 재설정되지 않습니다. [!UICONTROL 컨텐츠] 선택 - 다시 열리지 않도록 합니다. [!UICONTROL 필터] 패널(NPR-34483).
+* A `NullPointerException` 페이지 속성에 액세스할 때 이 반환됩니다(NPR-34509).
 
 #### 커뮤니티 {#communities-6483}
 
@@ -165,15 +169,15 @@ Adobe Experience Manager 6.4.8.3은 다음 문제에 대한 수정 사항을 제
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] 는 예정된  [!DNL Experience Manager] 누적 수정 팩 릴리스 날짜로부터 1주일 후에 추가 기능 패키지를 출시합니다.
+>[!DNL Experience Manager Forms] 는 예약된 후 1주일 후에 추가 기능 패키지를 출시합니다 [!DNL Experience Manager] 누적 수정 팩 릴리스 날짜입니다.
 
 >[!NOTE]
 >
->[!DNL Experience Manager] 누적 수정 팩에는 수정 사항이 포함되어 있지 않습니다 [!DNL Experience Manager Forms]. 이러한 수정 사항은 별도의 [!DNL Forms] 추가 기능 패키지를 사용하여 전달됩니다. 또한, JEE의 [!DNL Experience Manager Forms]에 대한 수정 사항이 포함된 누적 설치 프로그램이 릴리스됩니다. 자세한 내용은 [AEM Forms 추가 기능 패키지 설치](#install-aem-forms-add-on-package) 및 [AEM Forms JEE 설치 프로그램 설치](#install-aem-forms-jee-installer) 를 참조하십시오.
+>[!DNL Experience Manager] 누적 수정 팩에는 수정 사항이 포함되어 있지 않습니다 [!DNL Experience Manager Forms]. 이러한 수정 사항은 별도의 [!DNL Forms] 추가 기능 패키지를 사용하여 전달됩니다. 또한, JEE의 [!DNL Experience Manager Forms]에 대한 수정 사항이 포함된 누적 설치 프로그램이 릴리스됩니다. 자세한 내용은 [AEM Forms 추가 기능 패키지 설치](#install-aem-forms-add-on-package) 및 [AEM Forms JEE 설치 프로그램 설치](#install-aem-forms-jee-installer).
 
 **적응형 양식**
 
-* [!DNL Experience Manager] 누적 수정 팩을 적용한 후 클래식 UI를 사용하여 적응형 양식을 편집할 수 없습니다(NPR-35127).
+* 클래식 UI를 적용한 후 적응형 양식을 편집할 수 없습니다 [!DNL Experience Manager] 누적 수정 팩(NPR-35127).
 
 * 캐시 무효화로 인해 조각을 로드하는 데 시간이 오래 걸립니다(NPR-34655).
 
@@ -185,7 +189,7 @@ Adobe Experience Manager 6.4.8.3은 다음 문제에 대한 수정 사항을 제
 
 **Foundation JEE**
 
-* [!DNL AEM Forms] 사용자를 Flash에서 HTML로 마이그레이션합니다(CQ-4304075).
+* 마이그레이션 [!DNL AEM Forms] Flash에서 HTML으로 사용자(CQ-4304075).
 
 ### Adobe Experience Manager 6.4.8.2 {#experience-manager-6482}
 
@@ -195,14 +199,14 @@ AEM 6.4.8.2는 AEM 6.4 서비스 팩 8에 종속된 CFP(Cumulative Fix Pack)입�
 
 AEM 6.4.8.2에서 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.8.22으로 업데이트되었습니다.
 
-CFP 및 기타 릴리스 유형에 대한 자세한 내용은 [AEM Update 릴리스 차량 정의](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html) 를 참조하십시오.
+CFP 및 기타 릴리스 유형에 대한 자세한 내용은 [AEM 업데이트 릴리스 차량 정의](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.2는 다음 문제에 대한 수정 사항을 제공합니다.
 
 #### 사이트 {#sites-6482}
 
-* `RolloutConfigManagerFactoryImpl`에서 롤아웃 구성을 로드할 수 없는 경우 누락된 구성을 로드하지 않습니다. 캐시된 구성을 반환합니다(NPR-34091).
-* 텍스트 코어 구성 요소에서 소스 HTML 편집 옵션을 사용한 후 `em` 태그의 클래스가 제거됩니다(NPR-34080).
+* 만약 `RolloutConfigManagerFactoryImpl` 롤아웃 구성을 로드할 수 없습니다. 누락된 구성을 로드하지 않습니다. 캐시된 구성을 반환합니다(NPR-34091).
+* 텍스트 코어 구성 요소에서 소스 HTML 편집 옵션을 사용한 후에 `em` 태그가 제거되었습니다(NPR-34080).
 * Experience Manager 6.2에서 Experience Manager 6.5로 업그레이드하는 경우 정적 템플릿의 Parsys 구성 요소가 올바르게 표시되지 않습니다. Parsys 구성 요소의 높이가 0으로 설정되고 이 구성 요소 내에 있는 구성 요소가 표시되지 않습니다(NPR-34044).
 * 템플릿 편집기 내에 허용된 구성 요소에 대한 레이블 정보가 표시되지 않습니다(NPR-33908).
 
@@ -210,20 +214,20 @@ Adobe Experience Manager 6.4.8.2는 다음 문제에 대한 수정 사항을 제
 
 * 중첩된 구성 요소의 네 번째 수준 다음에 parsys에 구성 요소를 추가하거나 편집할 수 없습니다(NPR-33873).
 * 편집 가능한 템플릿의 초기 컨텐츠가 변경된 다음 템플릿이 게시되면 페이지가 게시되지 않아도 이 템플릿으로 만든 새 페이지에 템플릿의 게시된 날짜가 표시됩니다(NPR-33822).
-* 복사에서 [!DNL Adobe Campaign]에 대한 `cq:acLinks` 및 `cq:acUUID` 속성은 복사 및 붙여넣기 작업 중에 제거됩니다(NPR-33793).
-* [!UICONTROL 라이브 사용량] 탭에는 49개의 결과만 표시됩니다. 구성 요소에 대한 일부 사용량이 표시되지 않습니다(NPR-33710).
-* 작성하는 동안 URL에 `/` 문자가 있는 웹 페이지가 응답하지 않습니다. 작성하는 동안 구성 요소를 추가하면 CPU 사용량이 증가하고 브라우저가 응답을 중지합니다(NPR-33625).
-* [!DNL RTE]의 인라인 편집 모드에서 텍스트 구성 요소에 대해 이미지를 드래그하면 작동하지 않습니다(NPR-33579).
-* 페이지 이름과 동일한 이름으로 블루프린트 페이지에서 구성 요소를 만들 수 있습니다. 롤아웃 중에 이러한 구성 요소의 이름은 접미사 `_msm_moved`로 변경됩니다. 하지만 구성 요소는 [!UICONTROL 단락 시스템] 의 끝으로 이동됩니다(NPR-33534).
-* 첫 번째 컨텐츠 루트에서 [!UICONTROL 하위 페이지 포함] 속성을 선택하지 않은 경우 Launch 프로모션이 페이지를 게시하지 않습니다(NPR-33533).
-* `PageRedirectServlets` 은 URL 조각 또는 앵커 뒤에 쿼리 문자열을 하므로 앵커를 사용하는 [!DNL Experience Manager] 페이지로 리디렉션하지 작성자 인스턴스에서 작동하지 않습니다(NPR-34287).
-* `PageRedirectServlet` 링크 오류로  `.html` 이어지는 Sling 매핑 후에 을 추가합니다(NPR-34271).
-* 페이지의 [!DNL Live Copy]을 일시 중단할 수 있으며 상속이 편집기 모드에서 보듯이 중단됩니다. 그러나 페이지 속성에서 상속을 나타내는 아이콘이 상속이 존재하며 끊기지 않음을 잘못 나타냅니다(NPR-34096).
+* 다음 `cq:acLinks` 및 `cq:acUUID` 속성 [!DNL Adobe Campaign] 복사 및 붙여넣기 작업 중에 복사본이 제거됩니다(NPR-33793).
+* 에서 [!UICONTROL 라이브 사용량] 탭하면 49개의 결과만 표시됩니다. 구성 요소에 대한 일부 사용량이 표시되지 않습니다(NPR-33710).
+* 웹 페이지 `/` 작성하는 동안 URL의 문자가 응답하지 않습니다. 작성하는 동안 구성 요소를 추가하면 CPU 사용량이 증가하고 브라우저가 응답을 중지합니다(NPR-33625).
+* 의 인라인 편집 모드에서 [!DNL RTE]텍스트 구성 요소에 대해 이미지를 드래그하면 작동하지 않습니다(NPR-33579).
+* 페이지 이름과 동일한 이름으로 블루프린트 페이지에서 구성 요소를 만들 수 있습니다. 롤아웃 중에 이러한 구성 요소의 이름은 접미사에 의해 변경됩니다 `_msm_moved`. 하지만 구성 요소는 [!UICONTROL 단락 시스템] (NPR-33534).
+* 실행 승격 시 페이지가 게시되지 않습니다 [!UICONTROL 하위 페이지 포함] 첫 번째 컨텐츠 루트에서 속성을 선택하지 않습니다(NPR-33533).
+* 리디렉션 대상 [!DNL Experience Manager] 앵커 페이지가 작성자 인스턴스에서 다음 방법으로 작동하지 않습니다. `PageRedirectServlets` 은 URL 조각 또는 앵커 뒤에 쿼리 문자열을 넣습니다(NPR-34287).
+* `PageRedirectServlet` appends `.html` sling 매핑이 링크 실패로 이어지는 경우(NPR-34271).
+* 을 일시 중단할 수 있습니다 [!DNL Live Copy] 페이지 및 상속의 수는 편집기 모드에서 보듯이 로 중단됩니다. 그러나 페이지 속성에서 상속을 나타내는 아이콘이 상속이 존재하며 끊기지 않음을 잘못 나타냅니다(NPR-34096).
 * 템플릿 편집 페이지에서 허용되는 구성 요소를 표시하는 문제(CQ-4297295).
 * Chrome 및 Firefox를 업그레이드한 후 팝업 메뉴가 예상대로 작동하지 않습니다. 페이지 속성을 로드할 때 데이터가 있으면 패널이 표시되지 않습니다(CQ-4292995).
-* [!DNL Experience Manager Sites] 구성 요소의 여러 교차 사이트 스크립팅 인스턴스(NPR-33926).
+* 의 여러 사이트 간 스크립팅 인스턴스 [!DNL Experience Manager Sites] 구성 요소(NPR-33926).
 * 클라이언트에게 정보를 전송할 때 다양한 구성 요소에 대해 사용자 입력이 적절히 인코딩되지 않습니다(NPR-33696).
-* `childrenlist.html` 로 끝나는 URL은 404 응답 대신 HTML 페이지를 표시합니다. 이러한 URL은 교차 사이트 스크립팅에 취약합니다(NPR-33441).
+* 다음으로 끝나는 URL `childrenlist.html` 404 응답 대신 HTML 페이지를 표시합니다. 이러한 URL은 교차 사이트 스크립팅에 취약합니다(NPR-33441).
 
 #### 에셋 {#assets-6482}
 
@@ -234,35 +238,35 @@ Adobe Experience Manager 6.4.8.2는 다음 문제에 대한 수정 사항을 제
 
 * 이름에 특수 문자가 있는 자산의 검색 제안에 특수 문자 앞에 백슬래시가 추가됩니다(NPR-33833).
 
-* 스마트 컬렉션으로 저장된 사용자 지정 필터는 자산에 올바르게 적용되지 않으므로 검색 결과가 정확하지 않습니다   (NPR-33725).
+* 스마트 컬렉션으로 저장된 사용자 지정 필터는 자산에 올바르게 적용되지 않으므로 검색 결과가 정확하지 않습니다(NPR-33725).
 
 * 순서가 변경된 폴더 내의 자산의 타임라인은 자산이 이동되었음을 나타냅니다(NPR-33580).
 
-* [!DNL Brand Portal]에서 자산을 벌크로 게시하지 않으면 `Request-URI Too Long` 오류가 발생합니다(NPR-34158).
+* 다음에서 자산의 일괄 게시 취소 [!DNL Brand Portal] 리드 `Request-URI Too Long` 오류(NPR-34158).
 
-* 사용자가 자산 세트를 선택한 후 [!UICONTROL 필터] 옵션을 선택한 다음(자산이 선택 취소됨) 이동할 다른 자산 세트를 선택한 경우 열 보기에서 이전에 선택한 자산도 새 위치로 이동되는 경우(NPR-34018).
+* 사용자가 선택하는 경우 열 보기에서 [!UICONTROL 필터] 자산 세트를 선택한 후(자산이 선택 취소됨) 다른 자산 세트를 선택하면 이전에 선택한 자산도 새 위치로 이동됩니다(NPR-34018).
 
 * 페이지에 맞출 자산이 많아도 목록 보기에 스크롤 막대가 표시되지 않습니다(NPR-34156).
 
-* 자산에 대한 [!UICONTROL 게시 관리] 페이지가 중단되고 그 옵션이 작동하지 않습니다(CQ-4302509).
+* 다음 [!UICONTROL 게시 관리] 자산에 대한 페이지가 손상되어 해당 옵션이 작동하지 않습니다(CQ-4302509).
 
 **Dynamic Media**
 
 * 이미지 프로필이 여러 종횡비를 갖는 폴더(예: 11)에 추가되는 경우 오류가 발생하여 스마트 자르기 기능이 실패합니다(NPR-34083).
 
-* [!UICONTROL Adobe Experience Manager]에서 이미지 사전 설정에 대한 변경 사항이 Dynamic Media Classic에 동기화되지 않습니다(NPR-34284, CQ-4299713).
+* 에서 이미지 사전 설정 변경 [!UICONTROL Adobe Experience Manager] Dynamic Media Classic에 동기화하지 마십시오(NPR-34284, CQ-4299713).
 
-* [!UICONTROL PANORAMICVIEW_AUTOROTATE] 수정자 레이블이 [!UICONTROL 뷰어 사전 설정 편집기] 페이지의 [!UICONTROL 동작] 탭에 없습니다(CQ-4302043).
+* 다음 [!UICONTROL PANORAMICVIEW_AUTOROTATE] 수정자 레이블이 [!UICONTROL 비헤이비어] 탭 [!UICONTROL 뷰어 사전 설정 편집기] 페이지(CQ-4302043).
 
 #### 플랫폼 {#platform-6482}
 
-* 기본 에이전트(게시) 구성에 대한 **[!UICONTROL 연결 시간 초과]** 및 **[!UICONTROL 소켓 시간 초과]** 설정에 대한 기본값이 지정되지 않았습니다(NPR-33708).
+* 기본값은 **[!UICONTROL 연결 시간 초과]** 및 **[!UICONTROL 소켓 시간 제한]** 기본 에이전트(게시) 구성에 대한 설정이 지정되지 않았습니다(NPR-33708).
 * 유지 관리 작업 스케줄러가 구성된 것보다 너무 자주 유지 관리 작업을 시작하고 중지합니다(NPR-33520).
 * 업그레이드된 Experience Manager 인스턴스에서 진단 도구를 사용하여 로그를 다운로드할 수 없습니다(NPR-34419).
 
 #### 통합 {#integrations-6482}
 
-* [!DNL Adobe Dynamic Tag Management]에서 마이그레이션된 라이브러리에 대한 [!DNL Adobe Launch] 라이브러리 URL을 생성할 때 `library_path` 값은 고려되지 않습니다. 또한 마이그레이션된 라이브러리는 [!DNL Adobe Launch] 라이브러리와 다른 접두사를 사용합니다. (NPR-34238).
+* 다음 값 `library_path` 는 생성 시 고려되지 않습니다 [!DNL Adobe Launch] 마이그레이션된 라이브러리의 라이브러리 URL [!DNL Adobe Dynamic Tag Management]. 또한 마이그레이션된 라이브러리에서는 [!DNL Adobe Launch] 라이브러리. (NPR-34238).
 * 클라우드 서비스에서 상속된 속성은 페이지 속성을 업데이트할 때 지속되지 않습니다(NPR-33865).
 
 #### 사용자 인터페이스 {#ui-6482}
@@ -277,7 +281,7 @@ Adobe Experience Manager 6.4.8.2는 다음 문제에 대한 수정 사항을 제
 
 >[!NOTE]
 >
->[!DNL Experience Manager] 누적 수정 팩에는 수정 사항이 포함되어 있지 않습니다 [!DNL Experience Manager Forms]. 이러한 수정 사항은 별도의 [!DNL Forms] 추가 기능 패키지를 사용하여 전달됩니다. 또한, JEE의 [!DNL Experience Manager Forms]에 대한 수정 사항이 포함된 누적 설치 프로그램이 릴리스됩니다. 자세한 내용은 [AEM Forms 추가 기능 패키지 설치](#install-aem-forms-add-on-package) 및 [AEM Forms JEE 설치 프로그램 설치](#install-aem-forms-jee-installer) 를 참조하십시오.
+>[!DNL Experience Manager] 누적 수정 팩에는 수정 사항이 포함되어 있지 않습니다 [!DNL Experience Manager Forms]. 이러한 수정 사항은 별도의 [!DNL Forms] 추가 기능 패키지를 사용하여 전달됩니다. 또한, JEE의 [!DNL Experience Manager Forms]에 대한 수정 사항이 포함된 누적 설치 프로그램이 릴리스됩니다. 자세한 내용은 [AEM Forms 추가 기능 패키지 설치](#install-aem-forms-add-on-package) 및 [AEM Forms JEE 설치 프로그램 설치](#install-aem-forms-jee-installer).
 
 **적응형 양식**
 
@@ -285,23 +289,23 @@ Adobe Experience Manager 6.4.8.2는 다음 문제에 대한 수정 사항을 제
 
 * 적응형 양식 필드에 대한 도움말 컨텐츠 설명에 단락 HTML 태그가 표시됩니다(NPR-34117).
 
-* [!DNL Experience Manager Sites] 페이지에서 Forms 컨테이너를 추가하면 페이지에 다음 오류 메시지가 표시되고 새 구성 요소를 추가할 수 없습니다(NPR-33858).
+* 에 Forms 컨테이너를 추가할 때 [!DNL Experience Manager Sites] 페이지에 다음 오류 메시지가 표시되고 새 구성 요소를 추가할 수 없습니다(NPR-33858).
 
    `DevTools failed to load SourceMap: Could not load content for <Link>. HTTP error: status code 404, net::ERR_HTTP_RESPONSE_CODE_FAILURE`
 
-* **[!UICONTROL Server]** 속성에서 재유효성 검사 속성을 선택하고 여러 첨부 파일을 업로드하면 적응형 양식이 제출되지 않습니다(NPR-33701).
+* 을(를) 선택하는 경우 **[!UICONTROL 서버에서 유효성 검사]** 속성을 만들고 여러 첨부 파일을 업로드하면 적응형 양식이 제출되지 않습니다(NPR-33701).
 
-* [!DNL Experience Manager Sites] 페이지에서 **[!UICONTROL 페이지 언어 사용]** 및 **[!UICONTROL Form에서 [!DNL Experience Manager Forms] 구성 요소에 있는 Page]** 옵션의 전체 너비를 선택하면 페이지가 번역되지 않습니다(NPR-33641).
+* 을(를) 선택하는 경우 **[!UICONTROL 페이지 언어 사용]** 및 **[!UICONTROL 양식은 페이지의 전체 너비를 포함합니다]** 옵션 [!DNL Experience Manager Forms] 구성 요소 [!DNL Experience Manager Sites] 페이지에서 페이지를 번역하지 못합니다(NPR-33641).
 
-* [!DNL Experience Manager Sites] 페이지에 포함된 Analytics 지원 적응형 양식을 제출하면 Analytics가 제대로 작동하지 않습니다(NPR-31359).
+* 에 포함된 Analytics 지원 적응형 양식을 제출할 때 [!DNL Experience Manager Sites] 페이지, analytics가 제대로 작동하지 않습니다(NPR-31359).
 
-* [!DNL Lodash] 및 [!DNL backbone] 라이브러리에 대한 종속성을 제거했습니다(NPR-33458).
+* 에 대한 종속성이 제거됨 [!DNL Lodash] 및 [!DNL backbone] 라이브러리(NPR-33458).
 
-* **[!UICONTROL REST 엔드포인트에 제출]** 제출 작업이 적응형 양식에 대해 작동하지 않습니다(NPR-34513).
+* 다음 **[!UICONTROL REST 엔드포인트에 제출]** 적응형 양식에 대해 제출 작업이 작동하지 않습니다(NPR-34513).
 
 * 액세스 가능성: 필수 필드에 대한 첨부 파일을 업로드하지 않고 적응형 양식을 제출하려고 하면 포커스가 첨부 파일 필드로 자동 이동하지 않습니다(NPR-34511).
 
-* 사용자 입력은 클라이언트에 정보를 보낼 때 [!DNL Forms] 구성 요소에 대해 적절히 인코딩되지 않습니다(NPR-33611).
+* 사용자 입력은 다음에 대해 적절히 인코딩되지 않습니다 [!DNL Forms] 구성 요소를 사용하여 정보를 클라이언트에 보냅니다(NPR-33611).
 
 **워크플로우**
 
@@ -309,25 +313,25 @@ Adobe Experience Manager 6.4.8.2는 다음 문제에 대한 수정 사항을 제
 
    `java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory`
 
-* [!DNL Experience Manager] 6.4.8.1을 설치하면 항목 [!UICONTROL 완료] 목록이 링크로 표시되지 않습니다. [!UICONTROL To Do] 항목의 텍스트에 HTML 태그가 포함됩니다(NPR-34318).
+* 설치 시 [!DNL Experience Manager] 6.4.8.1, [!UICONTROL 할 일] 항목 목록이 링크로 표시되지 않습니다. 에 대한 텍스트 [!UICONTROL 할 일] 항목에는 HTML 태그가 포함됩니다(NPR-34318).
 
 **백엔드 통합**
 
-* AWS에서 호스팅되는 [!DNL Experience Manager Forms Linux] 환경에서 양식 데이터 모델을 구성할 수 없습니다(NPR-33617).
+* 호스팅된 AWS에서 양식 데이터 모델을 구성할 수 없습니다 [!DNL Experience Manager Forms Linux] 환경(NPR-33617).
 
 **디자이너**
 
-* [!DNL Experience Manager] Forms 서버에 [!DNL Acrobat DC]이(가) 설치된 경우 [!DNL Experience Manager Designer] 버전 6.x에서는 **[!UICONTROL 양식 배포]** 옵션을 사용할 수 없습니다(NPR-34325).
+* When [!DNL Acrobat DC] 이(가) [!DNL Experience Manager] Forms 서버, **[!UICONTROL 양식 배포]** 옵션은에서 사용할 수 없습니다. [!DNL Experience Manager Designer] 버전 6.x(NPR-34325).
 
 **문서 보안**
 
-* [!DNL Experience Manager] 6.4.8.0을 설치한 후 PDF 파일에 HSM 기반 인증서로 서명 작업을 실행할 수 없습니다(NPR-34309).
+* 설치 후 PDF 파일에 HSM 기반 인증서를 사용하여 서명 작업을 실행할 수 없습니다 [!DNL Experience Manager] 6.4.8.0(NPR-34309).
 
 **업그레이드**
 
-* [!DNL Linux] 환경에서 문서 보안을 사용하여 [!DNL Experience Manager Forms]에 대해 [!DNL JBoss] 버전을 7.0.9로 업그레이드하면 오류가 발생합니다(CQ-4300546).
+* 를 업그레이드할 때 [!DNL JBoss] 버전 7.0.9로 [!DNL Experience Manager Forms] 의 문서 보안 사용 [!DNL Linux] 환경에서 오류가 발생합니다(CQ-4300546).
 
-보안 업데이트에 대한 자세한 내용은 [Experience Manager 보안 게시판 페이지](https://helpx.adobe.com/security/products/experience-manager.html)를 참조하십시오.
+보안 업데이트에 대한 자세한 내용은 [Experience Manager 보안 게시판 페이지](https://helpx.adobe.com/security/products/experience-manager.html).
 
 ### Adobe Experience Manager 6.4.8.1 {#experience-manager-6481}
 
@@ -337,11 +341,11 @@ AEM 누적 수정 팩 6.4.8.1는 AEM 6.4 서비스 팩 8에 종속됩니다. �
 
 AEM 6.4.8.1의 주요 특징 중 일부는 다음과 같습니다.
 
-* 보안을 강화하기 위해 CRXDE Lite에 대한 익명 액세스가 허용되지 않습니다. 대신 사용자에게 로그인 화면이 표시됩니다. [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)로 개발을 참조하십시오.
+* 보안을 강화하기 위해 CRXDE Lite에 대한 익명 액세스가 허용되지 않습니다. 대신 사용자에게 로그인 화면이 표시됩니다. 자세한 내용은 [CRXDE Lite 개발](/help/sites-developing/developing-with-crxde-lite.md).
 * Adobe Experience Manager와 패키지 공유 통합이 제거되었습니다.
 * 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.8.21으로 업데이트되었습니다.
 
-CFP 및 기타 릴리스 유형에 대한 자세한 내용은 [AEM Update 릴리스 차량 정의](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html) 를 참조하십시오.
+CFP 및 기타 릴리스 유형에 대한 자세한 내용은 [AEM 업데이트 릴리스 차량 정의](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.1은 다음 문제에 대한 수정 사항을 제공합니다.
 
@@ -373,7 +377,7 @@ Adobe Experience Manager 6.4.8.1은 다음 문제에 대한 수정 사항을 제
 
 * 폴더 및 자산 이름에 발생하는 GB18030 문자가 다운로드한 zip 파일에서 공백으로 변경됩니다(NPR-33150).
 
-* 이름에 점 `.` 문자가 있는 상위 폴더의 자산을 스마트 자르기하면 추가 폴더가 만들어집니다(NPR-32755).
+* 점이 있는 상위 폴더 내의 자산을 스마트 자르기하면 추가 폴더가 만들어집니다 `.` 문자를 이름에 포함합니다(NPR-32755).
 
 * 지연 로드는 트리거되지 않으며 알림 받은 편지함에서 작업을 검토하도록 선택할 때 100개 이하의 자산이 표시됩니다(NPR-32749).
 
@@ -387,7 +391,7 @@ Adobe Experience Manager 6.4.8.1은 다음 문제에 대한 수정 사항을 제
 
 * `sling:match` 맵 항목이 `/etc/maps`에 작성되지 않으면 [!DNL Sling] 필터가 호출되지 않습니다(NPR-33308).
 * 페이지 비활성화 시 모든 플러시 에이전트가 트리거됩니다(NPR-32941).
-* `ScriptProcessor` API를 사용하여 JavaScript 라이브러리를 축소하면 로그 파일에 JavaScript 코드가 엄격한 모드에 준하지 않음을 나타내는 오류 메시지가 표시됩니다. API는 엄격한 모드를 활성화하거나 비활성화하는 옵션을 제공하지 않습니다. (NPR-32746).
+* 를 사용하는 경우 `ScriptProcessor` JavaScript 라이브러리를 축소하기 위한 API인 로그 파일에 JavaScript 코드가 엄격한 모드에 준하지 않음을 나타내는 오류 메시지가 표시됩니다. API는 엄격한 모드를 활성화하거나 비활성화하는 옵션을 제공하지 않습니다. (NPR-32746).
 * SQL 쿼리가 더 오래 실행되면(예: 7시간) AEM이 응답하지 않습니다(NPR-33043).
 
 #### 사용자 인터페이스 {#ui-6481}
@@ -412,7 +416,7 @@ Adobe Experience Manager 6.4.8.1은 다음 문제에 대한 수정 사항을 제
 
 #### 워크플로 {#workflow-6481}
 
-* 일부 구성 요소는 사용자가 [!UICONTROL 대화 상자 참가자 단계]를 포함하는 워크플로우를 완료할 때 나타나는 대화 상자에 표시되지 않습니다(NPR-32989).
+* 일부 구성 요소는 사용자가 다음을 포함하는 워크플로우를 완료하면 나타나는 대화 상자에 표시되지 않습니다 [!UICONTROL 대화 상자 참가자 단계] (NPR-32989).
 
 * 왼쪽 레일의 [!UICONTROL 타임라인] 옵션을 로드하는 데 예상보다 시간이 더 걸립니다(NPR-32850).
 
@@ -420,17 +424,17 @@ Adobe Experience Manager 6.4.8.1은 다음 문제에 대한 수정 사항을 제
 
 >[!NOTE]
 >
->AEM 누적 수정 팩에는 AEM Forms 수정 사항이 포함되어 있지 않습니다. 이러한 수정 사항은 별도의 Forms 추가 기능 패키지를 사용하여 전달됩니다. 또한, JEE의 AEM Forms에 대한 수정 사항이 포함된 누적 설치 프로그램이 릴리스됩니다. 자세한 내용은 [AEM Forms 추가 기능 패키지 설치](#install-aem-forms-add-on-package) 및 [AEM Forms JEE 설치 프로그램 설치](#install-aem-forms-jee-installer) 를 참조하십시오.
+>AEM 누적 수정 팩에는 AEM Forms 수정 사항이 포함되어 있지 않습니다. 이러한 수정 사항은 별도의 Forms 추가 기능 패키지를 사용하여 전달됩니다. 또한, JEE의 AEM Forms에 대한 수정 사항이 포함된 누적 설치 프로그램이 릴리스됩니다. 자세한 내용은 [AEM Forms 추가 기능 패키지 설치](#install-aem-forms-add-on-package) 및 [AEM Forms JEE 설치 프로그램 설치](#install-aem-forms-jee-installer).
 
-* 서신 관리: 사용자가 [!DNL Word] 문서의 컨텐츠를 붙여넣으면 텍스트 문서 조각은 서식을 유지하지 않습니다(NPR-33213).
+* 서신 관리: 사용자가 [!DNL Word] 문서에서, 텍스트 문서 조각은 서식을 유지하지 않습니다(NPR-33213).
 * 적응형 양식: 적응형 양식 사전의 문자열에 새 줄이 있으면 사전에 `&#xa;` 문자가 추가됩니다(NPR-33265).
 * 적응형 양식: 사용자가 둘 이상의 첨부 파일이 있는 적응형 양식을 저장할 수 없습니다(NPR-33214).
-* 응용 Forms: 인스턴스 관리자 클래스에 대한 `AddInstance` 및 `RemoveInstance` 메서드는 [!DNL Internet Explorer 11]에서 지연 로드 조각에 대한 동적 인스턴스 수를 추가하지 않습니다(NPR-33201).
-* 응용 Forms: [!DNL Sites] 페이지에 포함된 적응형 양식에 활성화된 Analytics는 제출 및 중단 이벤트에 대한 데이터를 기록하지 않습니다(NPR-31359).
-* 응용 Forms: 사용자가 [!DNL Word] 문서의 컨텐츠를 적응형 양식에 붙여넣고 제출하면 제출된 적응형 양식에 유니코드 문자가 포함됩니다. 또한 유니코드 문자로 인해 PDF를 PDF/A로 변환할 수 없습니다(NPR-33348).
+* 응용 Forms: `AddInstance` 및 `RemoveInstance` 인스턴스 관리자 클래스의 메서드는 지연 로드 조각에 대한 동적 인스턴스 수를 추가하지 않습니다 [!DNL Internet Explorer 11] (NPR-33201).
+* 응용 Forms: Analytics는 [!DNL Sites] 페이지에서 제출 및 중단 이벤트에 대한 데이터를 기록하지 않습니다(NPR-31359).
+* 응용 Forms: 사용자가 [!DNL Word] 문서를 적응형 양식에 입력하고 제출하면 제출된 적응형 양식에 유니코드 문자가 포함됩니다. 또한 유니코드 문자로 인해 PDF/A PDF을 변환할 수 없습니다(NPR-33348).
 * 백엔드 통합: 잘못된 비활성 상태로 인해 새로 고침 토큰이 만료되므로 양식 데이터 모델 요청이 실패합니다(NPR-33168).
-* 문서 서비스: [!DNL Linux] 서버에서 [!DNL WebLogic]에 대한 깁슨 jar이 누락되어 PDF 변환 서비스가 PostScript로 변환되지 못했습니다(NPR-33515, CQ-4292239).
-* 문서 서비스: 사용자가 텍스트 파일을 PDF로 변환하면 일본어 문자가 올바르게 렌더링되지 않습니다(NPR-33239).
+* 문서 서비스: PDF 변환 서비스에서는 깁슨 항아리가 누락되어 PDF 문서를 PostScript로 변환하지 못합니다 [!DNL WebLogic] on [!DNL Linux] 서버(NPR-33515, CQ-4292239).
+* 문서 서비스: 사용자가 텍스트 파일을 PDF으로 변환하면 일본어 문자가 올바르게 렌더링되지 않습니다(NPR-33239).
 * GuideSOMProviderServlet과 함께 저장된 XSS(NPR-32701).
 
 ## 6.4.8.4 설치 {#install}
@@ -451,7 +455,7 @@ Adobe Experience Manager 6.4.8.1은 다음 문제에 대한 수정 사항을 제
 >
 >AEM 6.4에 기능 팩이 설치된 고객의 경우. Adobe에서 제공하는 선택적 기능 팩은 릴리스 버전 및 서비스 팩에 종속되어 있습니다. 기능 팩이 설치되어 있는 경우 AEM 고객 지원팀에 문의하여 해당 기능 팩과 AEM 6.4용 누적 수정 팩의 호환성을 확인하십시오.
 
-* AEM 6.4.8.4를 사용하려면 AEM 6.4.8.0이 필요합니다. 세부 지침은 [업그레이드 설명서](../sites-deploying/upgrade.md)를 참조하십시오.
+* AEM 6.4.8.4를 사용하려면 AEM 6.4.8.0이 필요합니다. [업그레이드 설명서](../sites-deploying/upgrade.md) 자세한 지침
 * MongoDB 및 여러 인스턴스가 포함된 배포에서 패키지 관리자를 사용하여 작성자 인스턴스 중 하나에 AEM 6.4.8.4을 설치합니다.
 * 누적 수정 팩을 설치하기 전에 AEM 인스턴스의 스냅샷 또는 새 백업이 있는지 확인하십시오.
 * 설치하기 전에 인스턴스를 다시 시작합니다. 이 작업은 인스턴스가 업데이트 모드 상태에서만 필요하지만 이전 버전에서 인스턴스가 방금 업데이트된 경우입니다. 일반적으로 인스턴스가 오랫동안 실행 중인 경우 권장됩니다.
@@ -482,7 +486,7 @@ Adobe Experience Manager 6.4.8.1은 다음 문제에 대한 수정 사항을 제
 
 A. 서버가 실행되는 동안 패키지를 ..*/crx-quickstart/install* 폴더에 배치합니다. 패키지가 자동으로 설치됩니다.
 
-B. 패키지 관리자에서 [HTTP API](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/package_manager.html) 를 사용하여 `cmd=install&recursive=true` 를 사용하는지 확인합니다. 이 경우 중첩된 패키지가 설치됩니다.
+B. [패키지 관리자의 HTTP API](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/package_manager.html) - `cmd=install&recursive=true` - 따라서 중첩된 패키지가 설치됩니다.
 
 >[!NOTE]
 >
@@ -494,10 +498,10 @@ B. 패키지 관리자에서 [HTTP API](https://docs.adobe.com/content/docs/en/c
 1. 모든 OSGI 번들은 OSGi 콘솔에서 ACTIVE이거나 FRAGMENT입니다(웹 콘솔 사용: /system/console/bundles).
 1. OSGI 번들 org.apache.jackrabbit.oak-core는 버전 1.8.17 이상에 있습니다(웹 콘솔 사용: /system/console/bundles).
 
-이 버전의 AEM Sites 및 Assets에서 실행할 인증된 플랫폼을 확인하려면 [기술 요구 사항](../sites-deploying/technical-requirements.md) 을 참조하십시오.
+이번 릴리스의 AEM Sites 및 Assets를 사용하여 실행할 인증된 플랫폼을 확인하려면 다음을 참조하십시오 [기술 요구 사항](../sites-deploying/technical-requirements.md).
 
 >[!NOTE]
->패키지를 성공적으로 설치하면 컨텐츠 패키지가 성공적으로 설치되었음을 나타내는 정보 메시지가 표시됩니다. (예: **&quot;Content Package AEM-6.4-Service-Pack-8이 성공적으로 설치되었습니다.&quot;**)
+>패키지를 성공적으로 설치하면 컨텐츠 패키지가 성공적으로 설치되었음을 나타내는 정보 메시지가 나타납니다(예: ). **&quot;컨텐츠 패키지 AEM-6.4-Service-Pack-8이 설치되었습니다.&quot;**
 
 ### Dynamic Media 뷰어 업데이트(5.10.1) {#update-dynamic-media-viewers}
 
@@ -511,15 +515,15 @@ AEM 6.4.8.4에는 이미지 사전 설정 페이지에서 중복 이름을 확�
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] 는 예정된  [!DNL Experience Manager] 누적 수정 팩 릴리스 날짜로부터 1주일 후에 추가 기능 패키지를 출시합니다.
+>[!DNL Experience Manager Forms] 는 예약된 후 1주일 후에 추가 기능 패키지를 출시합니다 [!DNL Experience Manager] 누적 수정 팩 릴리스 날짜입니다.
 
 >[!NOTE]
 >
 >AEM Forms를 사용하지 않는 경우 건너뜁니다. AEM Forms의 수정 사항은 별도의 추가 기능 패키지를 통해 전달됩니다.
 
 1. AEM 누적 수정 팩을 설치했는지 확인합니다.
-1. 운영 체제에 대해 [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates)에 나열된 해당 양식 추가 기능 패키지를 다운로드합니다.
-1. [AEM Forms 추가 기능 패키지 설치](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package)에 설명된 대로 양식 추가 기능 패키지를 설치합니다.
+1. 에 나열된 해당 양식 추가 기능 패키지를 다운로드합니다 [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) 사용 중인 운영 체제용.
+1. 에 설명된 대로 양식 추가 기능 패키지를 설치합니다. [AEM Forms 추가 기능 패키지 설치](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
 
 ### AEM Forms JEE 설치 프로그램 설치 {#install-aem-forms-jee-installer}
 
@@ -527,15 +531,15 @@ AEM 6.4.8.4에는 이미지 사전 설정 페이지에서 중복 이름을 확�
 >
 >JEE에서 AEM Forms를 사용하지 않는 경우 건너뜁니다. 별도의 설치 관리자를 통해 AEM Forms JEE의 수정 사항이 전달됩니다.
 
-AEM Forms JEE용 누적 설치 프로그램 설치 및 배포 후 구성에 대한 자세한 내용은 [AEM Forms JEE 패치 설치 프로그램](jee-patch-installer-64.md) 을 참조하십시오.
+AEM Forms JEE용 누적 설치 프로그램 설치 및 배포 후 구성에 대한 자세한 내용은 다음을 참조하십시오 [AEM Forms JEE 패치 설치 프로그램](jee-patch-installer-64.md).
 
 >[!NOTE]
 >
->JEE의 Forms Experience Manager용 누적 설치 프로그램을 설치한 후 최신 Forms 추가 기능 패키지를 설치하고 `crx-repository\install` 폴더에서 Forms 추가 기능 패키지를 삭제한 다음 서버를 다시 시작합니다.
+>JEE의 Experience Manager Forms용 누적 설치 프로그램을 설치한 후 최신 Forms 추가 기능 패키지를 설치하고 의 `crx-repository\install` 폴더를 만들고 서버를 다시 시작합니다.
 
 ### Uber Jar {#uber-jar}
 
-AEM 6.4.8.4용 Uber Jar는 [Maven Central 저장소](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.4/)에서 사용할 수 있습니다.
+AEM 6.4.8.4용 Uber Jar는 [Maven 중앙 저장소](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.4/).
 
 Maven 프로젝트에서 Uber Jar를 사용하려면 문서 [Uber jar 사용 방법](../sites-developing/ht-projects-maven.md)을 참조하여 프로젝트 POM에 다음 종속성을 포함하십시오.
 
@@ -550,7 +554,7 @@ Maven 프로젝트에서 Uber Jar를 사용하려면 문서 [Uber jar 사용 �
 
 >[!NOTE]
 >
->UberJar 및 기타 관련 가공물은 Public Maven 저장소(repo.adobe.com) 대신 Maven 중앙 저장소에서 사용할 수 있습니다. 기본 UberJar 파일의 이름이 `uber-jar-<version>.jar`로 변경되었습니다. 따라서 `dependency` 태그에 대해 `apis` 값이 있는 `classifier`이 없습니다.
+>UberJar 및 기타 관련 가공물은 Public Maven 저장소(repo.adobe.com) 대신 Maven 중앙 저장소에서 사용할 수 있습니다. 기본 UberJar 파일의 이름이 `uber-jar-<version>.jar`. 따라서 AWS에는 `classifier`, 사용 `apis` 값으로서, `dependency` 태그에 가깝게 포함했습니다.
 
 ## 제거된/더 이상 사용되지 않는 기능 {#removed-deprecated-features}
 
@@ -563,9 +567,9 @@ Maven 프로젝트에서 Uber Jar를 사용하려면 문서 [Uber jar 사용 �
 
 ## 알려진 문제 {#known-issues}
 
-* [!DNL Experience Manager] 6.4에서 [!DNL Experience Manager] 6.5로 업그레이드하는 경우 일부 번들이 상태를 `Active` 로 표시하지 않을 수 있습니다. 문제를 해결하려면 최신 [!DNL Experience Manager] 6.5 서비스 팩을 설치하십시오.
+* 업그레이드 대상 [!DNL Experience Manager] 6.4에서 [!DNL Experience Manager] 6.5 번들 중 일부가 상태를 `Active`. 최신 설치 [!DNL Experience Manager] 6.5 서비스 팩 을 사용하여 문제를 해결하십시오.
 
-AEM 6.4.8.0 서비스 팩의 알려진 문제에 대한 자세한 내용은 [AEM 6.4.8.0 서비스 팩 릴리스 노트](sp-release-notes.md)를 참조하십시오.
+AEM 6.4.8.0 서비스 팩의 알려진 문제에 대한 자세한 내용은 [AEM 6.4.8.0 서비스 팩 릴리스 노트](sp-release-notes.md).
 
 ## OSGi 번들 및 컨텐츠 패키지가 설치됨 {#osgi-bundles-and-content-packages-included}
 
