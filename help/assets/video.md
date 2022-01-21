@@ -1,5 +1,5 @@
 ---
-title: 다이내믹 미디어의 비디오
+title: Dynamic Media의 비디오
 description: Dynamic Media에서 비디오를 사용하여 작업하는 방법을 알아봅니다.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -8,7 +8,7 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: 18ab491812b1bcc8ceee14e311bd15c0c8dd32fa
+source-git-commit: 642ade44cac29d38533cfe724f69ba95e691a647
 workflow-type: tm+mt
 source-wordcount: '10401'
 ht-degree: 4%
@@ -748,8 +748,8 @@ YouTube에서 컨텐츠를 제거하려면 AEM에서는 **[!UICONTROL YouTube에
 
 1. AEM의 왼쪽 위 모서리에서 AEM 로고를 탭한 다음 왼쪽 레일에서 를 탭합니다 **[!UICONTROL 도구]** > **[!UICONTROL 자산]**.
 1. YouTube 채널에서 게시를 취소하려는 비디오 자산으로 이동합니다.
-1. 자산 선택 모드에서 하나 이상의 게시된 비디오 자산을 선택합니다.
-1. 도구 모음에서 **[!UICONTROL 게시 취소]** > **[!UICONTROL 게시 취소]**.
+1. In an asset selection mode, select one or more published video assets.
+1. On the toolbar, tap **[!UICONTROL Unpublish]** > **[!UICONTROL Unpublish]**.
 
 ## Monitoring video encoding and YouTube publishing progress {#monitoring-video-encoding-and-youtube-publishing-progress}
 
@@ -884,7 +884,7 @@ YouTube에서 컨텐츠를 제거하려면 AEM에서는 **[!UICONTROL YouTube에
 
 기본적으로 비디오 보고서를 처음 입력할 때 이 보고서는 현재 달 1일에 시작하여 현재 월의 날짜로 끝나는 비디오 데이터를 표시합니다. 그러나 고유한 날짜 범위를 지정하여 기본 날짜 범위를 무시할 수 있습니다. 다음에 비디오 보고서를 입력할 때 지정한 날짜 범위가 사용됩니다.
 
-비디오 보고서가 올바르게 작동하려면 Dynamic Media Cloud Services이 구성되면 보고서 세트 ID가 자동으로 생성됩니다. 동시에 보고서 세트 ID가 게시 서버로 푸시되어 자산을 미리 볼 때 URL 복사 기능에 사용할 수 있습니다. 그러나 게시 서버를 이미 설정해야 합니다. 게시 서버가 설정되지 않은 경우 여전히 게시하여 비디오 보고서를 볼 수 있지만 Dynamic Media 클라우드 구성으로 돌아가 탭해야 합니다 **확인**.
+비디오 보고서가 올바르게 작동하려면 Dynamic Media Cloud Services이 구성되면 보고서 세트 ID가 자동으로 생성됩니다. 동시에 보고서 세트 ID가 게시 서버로 푸시되어 자산을 미리 볼 때 URL 복사 기능에 사용할 수 있습니다. 그러나 게시 서버를 이미 설정해야 합니다. If the Publish server is not set up, you can still publish to see the video report, however, you will need to return to the Dynamic Media Cloud Configuration and tap **OK**.
 
 **비디오 보고서를 보려면 다음을 수행하십시오.**
 
