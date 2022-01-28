@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 자산을 생성, 관리, 게재 및 최적화합니다.
-source-git-commit: ac358965790694a51d866a4cdb97810b0983bbca
+source-git-commit: 50b657456d2a0eaaaf681d3902eba38b15d00e12
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 64%
+source-wordcount: '639'
+ht-degree: 67%
 
 ---
 
@@ -27,20 +27,20 @@ ht-degree: 64%
    + [GQL 전체 텍스트 검색](gql-search.md)
    + [다국어 자산](multilingual-assets.md)
    + [AEM Assets에서 Adobe Stock 자산 사용](aem-assets-adobe-stock.md)
-   + [폴더 자산 및 컬렉션 검토](bulk-approval.md)
+   + [폴더 에셋 및 컬렉션 검토](bulk-approval.md)
    + [타임라인의 활동 스트림](activity-stream.md)
    + [자산 처리](assets-workflow.md)
    + [이미지 맵 추가](image-maps.md)
-   + [MSM을 사용하여 자산 재사용](reuse-assets-using-msm.md)
+   + [MSM을 사용하여 에셋 재사용](reuse-assets-using-msm.md)
 + Dynamic Media{#dynamic}
-   + [Experience League별 Dynamic Media 뉴스레터 아카이브](dynamic-media-newsletter.md)
+   + [Experience League의 Dynamic Media 뉴스레터 아카이브](dynamic-media-newsletter.md)
    + [Dynamic Media 설정](administering-dynamic-media.md)
    + [Dynamic Media 작업](dynamic-media.md)
    + [Dynamic Media 구성 - Scene7 모드](config-dms7.md)
    + [Dynamic Media 구성 - 하이브리드 모드](config-dynamic.md)
    + [Dynamic Media 문제 해결 - Scene7 모드](troubleshoot-dms7.md)
-   + [Dynamic Media 자산 관리](managing-assets.md)
-   + [이미지 품질 최적화 우수 사례](best-practices-for-optimizing-the-quality-of-your-images.md)
+   + [Dynamic Media 에셋 관리](managing-assets.md)
+   + [이미지 품질 최적화 모범 사례](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Dynamic Media 뷰어 사전 설정 관리](managing-viewer-presets.md)
    + [Dynamic Media 뷰어 사전 설정 적용](viewer-presets.md)
    + [Dynamic Media 이미지 사전 설정 관리](managing-image-presets.md)
@@ -49,7 +49,6 @@ ht-degree: 64%
    + [Dynamic Media 이미지 프로필](image-profiles.md)
    + [스마트 이미징](imaging-faq.md)
    + [비디오](s7-video.md)
-   + [페이지에 Dynamic Media Classic 기능 추가](scene7.md)
    + [컨텐츠의 HTTP2 전달](http2.md)
    + [Dynamic Media 자산 제공](delivering-dynamic-media-assets.md)
    + [Dynamic Media에서 핫링크 보호 활성화](hotlink-protection.md)
@@ -65,6 +64,7 @@ ht-degree: 64%
    + [응답형 사이트용으로 최적화된 이미지 제공](responsive-site.md)
    + [Dynamic Media 자산 미리 보기](previewing-assets.md)
    + [페이지에 Dynamic Media 자산 추가](adding-dynamic-media-assets-to-pages.md)
+   + [페이지에 Dynamic Media Classic 구성 요소 추가](scene7.md)
    + [웹 페이지에 Dynamic Video 또는 Image viewer 포함](embed-code.md)
    + [URL을 웹 애플리케이션에 연결](linking-urls-to-yourwebapplication.md)
    + [규칙 세트를 사용하여 URL 변환](using-rulesets-to-transform-urls.md)
@@ -79,7 +79,7 @@ ht-degree: 64%
    + [AEM Assets에서 작동하도록 ImageMagick 설치 및 구성](best-practices-for-imagemagick.md)
    + [자산과 활동 스트림 통합](extending-activity-stream.md)
    + [자산 편집기 확장](asseteditorx.md)
-   + [자산 HTTP API](mac-api-assets.md)
+   + [Assets HTTP API](mac-api-assets.md)
    + [자산 프록시 개발](proxy.md)
 + 자산 관리 {#administer}
    + [자산 지원 형식](assets-formats.md)
@@ -87,10 +87,10 @@ ht-degree: 64%
    + [자산에 대한 메타데이터 관리](metadata.md)
    + [표현물로 XMP 원본에 쓰기](xmp-writeback.md)
    + [자산 링크 공유](link-sharing.md)
-   + [자산 보고서](asset-reports.md)
+   + [에셋 보고서](asset-reports.md)
    + [향상된 스마트 태그](enhanced-smart-tags.md)
    + [메타데이터, 이미지 및 비디오 처리 프로필](processing-profiles.md)
-   + [계단식 메타데이터](cascading-metadata.md)
+   + [연속 메타데이터](cascading-metadata.md)
    + [자산 편집기 페이지 만들기 및 구성](assets-finder-editor.md)
    + [자산 크기 조정 가이드](assets-sizing-guide.md)
    + [메타데이터 스키마 참조](meta-ref.md)
@@ -130,13 +130,13 @@ ht-degree: 64%
    + [컬렉션을 Brand Portal에 게시](brand-portal-publish-collection.md)
    + [폴더를 Brand Portal에 게시](brand-portal-publish-folder.md)
 + 콘텐츠 조각 {#fragments}
-   + [컨텐츠 조각을 사용한 작업](content-fragments.md)
-   + [컨텐츠 조각 관리](content-fragments-managing.md)
-   + [컨텐츠 조각 모델](content-fragments-models.md)
-   + [변형 - 조각 컨텐츠 작성](content-fragments-variations.md)
+   + [콘텐츠 조각을 사용하여 작업](content-fragments.md)
+   + [콘텐츠 조각 관리](content-fragments-managing.md)
+   + [콘텐츠 조각 모델](content-fragments-models.md)
+   + [변형 - 조각 콘텐츠 작성](content-fragments-variations.md)
    + [콘텐츠 조각 관련 콘텐츠](content-fragments-assoc-content.md)
    + [메타데이터 - 조각 속성](content-fragments-metadata.md)
-   + [컨텐츠 조각 - 삭제 고려 사항](content-fragments-delete.md)
+   + [콘텐츠 조각 - 삭제 고려 사항](content-fragments-delete.md)
    + [컨텐츠 조각 - Markdown](content-fragments-markdown.md)
    + [컨텐츠 조각에 대한 번역 프로젝트 만들기](creating-translation-projects-for-content-fragments.md)
 + 자산 관리 {#managing}
@@ -167,6 +167,6 @@ ht-degree: 64%
    + [스마트 컨텐츠 서비스 교육 지침](smart-tags-training-guidelines.md)
    + [비디오 표현물](video-renditions.md)
 + 다른 솔루션과 통합 {#integrations}
-   + [통합 [!DNL Adobe Workfront]](workfront-integrations.md)
-   + [설치 [!DNL enhanced connector] 대상 [!DNL Workfront]](workfront-connector-install.md)
-   + [구성 [!DNL enhanced connector] 대상 [!DNL Workfront]](workfront-connector-configure.md)
+   + [ [!DNL Adobe Workfront]와 통합](workfront-integrations.md)
+   + [ [!DNL Workfront]에 [!DNL enhanced connector] 설치](workfront-connector-install.md)
+   + [ [!DNL Workfront]용 [!DNL enhanced connector] 구성](workfront-connector-configure.md)
