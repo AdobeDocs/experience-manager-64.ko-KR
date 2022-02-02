@@ -8,7 +8,7 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: 642ade44cac29d38533cfe724f69ba95e691a647
+source-git-commit: f2b7ffa37bcb14e7be47c10ea9d3e39f89e1858d
 workflow-type: tm+mt
 source-wordcount: '10401'
 ht-degree: 4%
@@ -29,7 +29,6 @@ ht-degree: 4%
 >
 >* 자세한 내용은 [Dynamic Media 구성 - 하이브리드 모드에서 Dynamic Media Cloud Services 구성](/help/assets/config-dynamic.md)
 >* 자세한 내용은 [Dynamic Media 구성 - Scene7 모드](config-dms7.md) 및 [Dynamic Media 문제 해결 - Scene7 모드](troubleshoot-dms7.md)
-
 >
 
 
@@ -46,7 +45,7 @@ ht-degree: 4%
       * 추가 정보 [디지털 자산 구성](organize-assets.md).
    * 기본 소스 비디오를 폴더에 업로드합니다. 폴더에 비디오를 추가하면 폴더에 할당한 비디오 처리 프로필에 따라 인코딩됩니다.
 
-      * Dynamic Media은 주로 최대 30분 길이의 짧은 비디오와 50x 50보다 큰 최소 해상도를 지원합니다.
+      * Dynamic Media은 주로 최대 30분 길이의 짧은 비디오와 25x 25보다 큰 최소 해상도를 지원합니다.
       * 각각 최대 15GB의 비디오 파일을 업로드할 수 있습니다.
       * [비디오 업로드](managing-video-assets.md#uploading-and-previewing-video-assets).
       * 추가 정보 [지원되는 입력 파일 형식](assets-formats.md#supported-multimedia-formats).
@@ -288,7 +287,7 @@ For advice about video encoding, see the following:
 
 비디오 파일을 인코딩할 때 가능한 가장 높은 품질의 소스 비디오 파일을 사용하십시오. 이전에 인코딩된 비디오 파일은 이미 압축되었으므로 해당 파일을 사용하지 마십시오. 또한 인코딩을 통해 하위 품질의 비디오가 생성됩니다.
 
-* Dynamic Media은 주로 최대 30분 길이의 짧은 비디오와 50x 50보다 큰 최소 해상도를 지원합니다.
+* Dynamic Media은 주로 최대 30분 길이의 짧은 비디오와 25x 25보다 큰 최소 해상도를 지원합니다.
 * 각각 최대 15GB의 기본 소스 비디오 파일을 업로드할 수 있습니다.
 
 다음 표에서는 소스 비디오 파일을 인코딩하기 전에 사용해야 하는 권장 크기, 종횡비 및 최소 비트 전송률에 대해 설명합니다.
@@ -748,8 +747,8 @@ YouTube에서 컨텐츠를 제거하려면 AEM에서는 **[!UICONTROL YouTube에
 
 1. AEM의 왼쪽 위 모서리에서 AEM 로고를 탭한 다음 왼쪽 레일에서 를 탭합니다 **[!UICONTROL 도구]** > **[!UICONTROL 자산]**.
 1. YouTube 채널에서 게시를 취소하려는 비디오 자산으로 이동합니다.
-1. In an asset selection mode, select one or more published video assets.
-1. On the toolbar, tap **[!UICONTROL Unpublish]** > **[!UICONTROL Unpublish]**.
+1. 자산 선택 모드에서 하나 이상의 게시된 비디오 자산을 선택합니다.
+1. 도구 모음에서 **[!UICONTROL 게시 취소]** > **[!UICONTROL 게시 취소]**.
 
 ## Monitoring video encoding and YouTube publishing progress {#monitoring-video-encoding-and-youtube-publishing-progress}
 
@@ -884,7 +883,7 @@ YouTube에서 컨텐츠를 제거하려면 AEM에서는 **[!UICONTROL YouTube에
 
 기본적으로 비디오 보고서를 처음 입력할 때 이 보고서는 현재 달 1일에 시작하여 현재 월의 날짜로 끝나는 비디오 데이터를 표시합니다. 그러나 고유한 날짜 범위를 지정하여 기본 날짜 범위를 무시할 수 있습니다. 다음에 비디오 보고서를 입력할 때 지정한 날짜 범위가 사용됩니다.
 
-비디오 보고서가 올바르게 작동하려면 Dynamic Media Cloud Services이 구성되면 보고서 세트 ID가 자동으로 생성됩니다. 동시에 보고서 세트 ID가 게시 서버로 푸시되어 자산을 미리 볼 때 URL 복사 기능에 사용할 수 있습니다. 그러나 게시 서버를 이미 설정해야 합니다. If the Publish server is not set up, you can still publish to see the video report, however, you will need to return to the Dynamic Media Cloud Configuration and tap **OK**.
+비디오 보고서가 올바르게 작동하려면 Dynamic Media Cloud Services이 구성되면 보고서 세트 ID가 자동으로 생성됩니다. 동시에 보고서 세트 ID가 게시 서버로 푸시되어 자산을 미리 볼 때 URL 복사 기능에 사용할 수 있습니다. 그러나 게시 서버를 이미 설정해야 합니다. 게시 서버가 설정되지 않은 경우 여전히 게시하여 비디오 보고서를 볼 수 있지만 Dynamic Media 클라우드 구성으로 돌아가 탭해야 합니다 **확인**.
 
 **비디오 보고서를 보려면 다음을 수행하십시오.**
 
