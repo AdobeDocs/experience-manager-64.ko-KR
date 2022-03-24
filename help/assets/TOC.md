@@ -1,12 +1,12 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager 6.4, Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets, Experience Manager 6.4
 audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 자산을 생성, 관리, 게재 및 최적화합니다.
-source-git-commit: 50b657456d2a0eaaaf681d3902eba38b15d00e12
+source-git-commit: 4e3fc838d62c716ea0c46ba4c152b6686d85ffd9
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 67%
