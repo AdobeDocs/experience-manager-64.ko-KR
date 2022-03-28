@@ -1,17 +1,17 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.4
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.4 개발 사용 안내서
 breadcrumb-title: Developing 안내서
 user-guide-description: 이 안내서에서는 AEM 인스턴스를 빌드하는 방법을 다룹니다.
 feature: Developing
 role: Developer
-source-git-commit: f6024ad5d213af0e726d95a5ab83ac3a271e8c18
+source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 90%
+ht-degree: 92%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 90%
 
 + [개발 사용 안내서 개요](home.md)
 + 개발자를 위한 소개{#introduction}
-   + [AEM Sites 개발 시작 - WKND 자습서](getting-started.md)
+   + [AEM Sites 개발 시작하기 - WKND 튜토리얼](getting-started.md)
    + [AEM 코어 개념](the-basics.md)
    + [AEM 터치 지원 UI의 구조](touch-ui-structure.md)
    + [AEM 터치 지원 UI의 개념](touch-ui-concepts.md)
@@ -51,11 +51,11 @@ ht-degree: 90%
    + [새로운 Granite UI 필드 구성 요소 만들기](granite-ui-component.md)
    + QueryBuilder{#query-builder}
       + [Query Builder의 사용자 지정 설명 평가기 구현](implementing-custom-predicate-evaluator.md)
-      + [Query Builder 설명 참조](querybuilder-predicate-reference.md)
-      + [Query Builder API](querybuilder-api.md)
+      + [쿼리 빌더 술어 참조](querybuilder-predicate-reference.md)
+      + [쿼리 빌더 API](querybuilder-api.md)
    + 태깅{#tagging}
       + [태깅](tags.md)
-      + [AEM 태깅 프레임워크](framework.md)
+      + [AEM 태그 지정 프레임워크](framework.md)
       + [AEM 애플리케이션에 태깅 작성](building.md)
    + [오류 핸들러로 표시된 페이지 사용자 지정](customizing-errorhandler-pages.md)
    + [사용자 지정 노드 유형](custom-nodetypes.md)
@@ -79,11 +79,11 @@ ht-degree: 90%
    + [AEM 구성 요소 - 기본 사항](components-basics.md)
    + [AEM 구성 요소 개발](developing-components.md)
    + [AEM 구성 요소 개발 - 코드 샘플](developing-components-samples.md)
-   + [컨텐츠 서비스용 JSON 익스포터](json-exporter.md)
+   + [콘텐츠 서비스에 대한 JSON 내보내기](json-exporter.md)
    + [구성 요소에 대해 JSON 내보내기 활성화](json-exporter-components.md)
    + [이미지 편집기](image-editor.md)
    + [장식 태그](decoration-tag.md)
-   + [숨기기 조건 사용](hide-conditions.md)
+   + [조건 숨기기 사용](hide-conditions.md)
    + [여러 즉석 편집기 구성](multiple-inplace-editors.md)
    + [개발자 모드](developer-mode.md)
    + [UI 테스트](hobbes.md)
@@ -103,8 +103,8 @@ ht-degree: 90%
    + [AEM을 사용한 헤드리스 및 하이브리드](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
    + SPA(Single Page Applications){#spas}
-      + [SPA 소개 및 연습](spa-walkthrough.md)
-      + [SPA WKND 자습서](spa-wknd.md)
+      + [SPA 소개 및 워크스루](spa-walkthrough.md)
+      + [SPA WKND 튜토리얼](spa-wknd.md)
       + [AEM에서 SPA 시작하기 - React](spa-getting-started-react.md)
       + [AEM에서 SPA 시작하기 - Angular](spa-getting-started-angular.md)
       + [SPA에 대한 React 구성 요소 구현](spa-implementing-react-component.md)
@@ -113,7 +113,7 @@ ht-degree: 90%
       + [AEM용 SPA 개발](spa-architecture.md)
       + [SPA 블루프린트](spa-blueprint.md)
       + [SPA 페이지 구성 요소](spa-page-component.md)
-      + [SPA에 대한 동적 모델과 구성 요소 간 매핑](spa-dynamic-model-to-component-mapping.md)
+      + [구성 요소 매핑을 위한 동적 모델 SPA](spa-dynamic-model-to-component-mapping.md)
       + [SPA 모델 라우팅](spa-routing.md)
       + [SPA 및 Adobe Experience Platform Launch 통합](spa-launch.md)
       + [SPA 및 서버측 렌더링](spa-ssr.md)
@@ -136,7 +136,7 @@ ht-degree: 90%
    + [프록시 서버 도구 사용 방법](ht-proxy-server.md)
    + [AEM Brackets 확장](aem-brackets.md)
    + [Eclipse용 AEM 개발자 도구](aem-eclipse.md)
-   + [AEM Repo Tool](aem-repo-tool.md)
+   + [AEM 저장소 도구](aem-repo-tool.md)
 + 개인화{#personlization}
    + [ContextHub](contexthub.md)
    + [ContextHub Javascript API 참조](contexthub-api.md)
@@ -154,7 +154,7 @@ ht-degree: 90%
    + [콘솔 사용자 지정](customizing-consoles-touch.md)
    + [페이지 속성 보기 사용자 지정](page-properties-views.md)
    + [페이지 속성의 벌크 편집을 위한 페이지 구성](bulk-editing.md)
-   + [컨텐츠 조각 사용자 지정 및 확장](customizing-content-fragments.md)
+   + [콘텐츠 조각 맞춤화 및 확장](customizing-content-fragments.md)
    + 워크플로우 확장{#extending-workflows}
       + [워크플로우 개발 및 확장](workflows.md)
       + [워크플로우 모델 만들기](workflows-models.md)

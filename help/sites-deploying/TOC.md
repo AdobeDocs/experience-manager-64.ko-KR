@@ -1,17 +1,17 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.4
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.4 Deploying 안내서
 breadcrumb-title: Deploying 안내서
 user-guide-description: Adobe Managed Services 클라우드 배포를 포함하여 Adobe Experience Manager 6.4의 설치, 배포 및 아키텍처에 대해 자세히 알아봅니다.
 feature: Deploying
 role: Architect
-source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
+source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
 source-wordcount: '370'
-ht-degree: 19%
+ht-degree: 22%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 19%
    + [Oak 색인 문제 해결](troubleshooting-oak-indexes.md)
    + [집계된 사용 통계 수집 선택](opt-in-aggregated-usage-statistics.md)
    + [문제 해결](troubleshooting.md)
-+ AEM {#configuring} 구성
++ AEM 구성 {#configuring}
    + [기본 구성 개념](configuring.md)
    + [로깅](configure-logging.md)
    + [OSGi 구성](configuring-osgi.md)
@@ -81,7 +81,7 @@ ht-degree: 19%
    + [코드 및 사용자 지정 업그레이드](upgrading-code-and-customizations.md)
    + [응용 프로그램 서버 설치에 대한 업그레이드 단계](app-server-upgrade.md)
    + [업그레이드 후 제거된 오래된 번들 목록](obsolete-bundles.md)
-+ 저장소 구조 변경 {#restructuring}
++ 저장소 재구성 {#restructuring}
    + [AEM 6.4의 저장소 구조 변경](repository-restructuring.md)
    + [AEM 6.4의 공통 저장소 구조 변경](all-repository-restructuring-in-aem-6-4.md)
    + [AEM 6.4의 사이트 저장소 구조 변경](sites-repository-restructuring-in-aem-6-4.md)
