@@ -1,8 +1,8 @@
 ---
 title: 콘솔용 키보드 단축키
-seo-title: 콘솔용 키보드 단축키
+seo-title: Keyboard Shortcuts for Consoles
 description: 이러한 키보드 단축키를 사용하여 작성할 때 시간을 절약합니다.
-seo-description: 이러한 키보드 단축키를 사용하여 작성할 때 시간을 절약합니다.
+seo-description: Save time when authoring by using these keyboard shortcuts
 uuid: 3b90570f-e187-4f09-9ccf-838e5657de2f
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
 exl-id: 8249fd48-38af-4bf7-8dcc-2f63db6750b6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: beb6e3ccc5cbef044f8b91d327c0361c881ccd72
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '378'
 ht-degree: 100%
 
 ---
@@ -41,7 +41,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 | 콘솔 | `?` | 키보드 단축키 도움말 |
 |  | `/` | [검색](/help/sites-authoring/search.md) 호출 |
 |  | `Alt+`&lt;`Number`> | 보려는 [레일 선택기 옵션](/help/sites-authoring/basic-handling.md#rail-selector)을 전환합니다. |
-|  | &grave; | 레일 숨기기 |
+|  | ``` ` ``` | 레일 숨기기 |
 |  | `e` | 편집 |
 |  | `p` | 속성 |
 |  | `m` | 이동 |
