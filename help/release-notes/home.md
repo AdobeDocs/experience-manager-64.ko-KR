@@ -1,13 +1,13 @@
 ---
 title: Adobe Experience Manager 6.4 릴리스 노트
-seo-title: AEM 6.4 릴리스 노트
+seo-title: AEM 6.4 Release Notes
 description: AEM 릴리스 노트에서는 새로운 기능, 지원되는 플랫폼, 더 이상 사용되지 않거나 제거된 기능, 알려진 문제 등 AEM의 최신 릴리스에 대한 중요한 정보를 다룹니다.
-seo-description: AEM 릴리스 노트에서는 새로운 기능, 지원되는 플랫폼, 더 이상 사용되지 않거나 제거된 기능, 알려진 문제 등 AEM의 최신 릴리스에 대한 중요한 정보를 다룹니다.
+seo-description: The AEM Release Notes cover important information about the latest release of AEM, including what's new, supported platforms, deprecated and removed features, and known issues.
 exl-id: e6ebd0ba-674e-406f-a3ac-98ac9518226e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: a01f94ddcd84c4d3f7769d6a55fbfcbef131dc57
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 97%
+source-wordcount: '373'
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ AEM 릴리스 노트에서는 새로운 기능, 지원되는 플랫폼, 더 이�
 ## 주요 AEM 문서
 
 * [AEM 시작하기](https://helpx.adobe.com/kr/experience-manager/get-started.html)
-* [최근 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html)
+* [최신 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html)
 * [AEM Security 검사 목록](/help/sites-administering/security-checklist.md)
 
 ## AEM 6.4 사용 안내서
@@ -44,8 +44,8 @@ AEM 릴리스 노트에서는 새로운 기능, 지원되는 플랫폼, 더 이�
 * [Dispatcher 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html)
 * [코어 구성 요소 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [GDPR 준비 완료](/help/managing/data-protection-and-privacy.md)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=en)
+* [GDPR 준비](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM 커뮤니티 포럼](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
 

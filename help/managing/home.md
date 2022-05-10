@@ -1,13 +1,13 @@
 ---
 title: AEM 6.4 관리 사용 안내서
-seo-title: AEM 6.4 관리 사용 안내서
+seo-title: AEM 6.4 Managing User Guide
 description: '이 안내서에서는 AEM 프로젝트를 성공적으로 관리하는 방법을 다룹니다. '
-seo-description: AEM 프로젝트를 성공적으로 관리하는 방법을 다룹니다.
+seo-description: Covers how to manage an AEM project successfully
 exl-id: 4fa34d1f-c41e-4b9b-98d3-8c364a60776d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: a01f94ddcd84c4d3f7769d6a55fbfcbef131dc57
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 100%
+source-wordcount: '335'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 * [AEM 시작하기](https://helpx.adobe.com/kr/experience-manager/get-started.html)
 * [AEM 6.4 릴리스 노트](/help/release-notes/home.md)
-* [최근 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html)
+* [최신 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html)
 * [AEM Security 검사 목록](/help/sites-administering/security-checklist.md)
 
 ## AEM 6.4 사용 안내서
@@ -46,7 +46,7 @@ ht-degree: 100%
 * [Dispatcher 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html)
 * [코어 구성 요소 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [GDPR 준비 완료](/help/managing/data-protection-and-privacy.md)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=en)
+* [GDPR 준비](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM 커뮤니티 포럼](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

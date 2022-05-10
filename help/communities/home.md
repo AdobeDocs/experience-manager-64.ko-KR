@@ -1,13 +1,13 @@
 ---
 title: AEM 6.4 Communities 사용 안내서
-seo-title: AEM 6.4 Communities 사용 안내서
+seo-title: AEM 6.4 Communities User Guide
 description: 이 안내서에서는 포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험 만들기와 같은 모든 AEM Communities 작업을 다룹니다.
-seo-description: 포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험 만들기와 같은 모든 AEM Communities 작업을 다룹니다.
+seo-description: Covers all AEM Communities tasks, such as creating online experiences such as forums, user groups, learning resources, and other social features.
 exl-id: 4711564b-adcc-4835-8215-138b209d1578
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: a01f94ddcd84c4d3f7769d6a55fbfcbef131dc57
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 100%
+source-wordcount: '361'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 * [AEM 시작하기](https://helpx.adobe.com/kr/experience-manager/get-started.html)
 * [AEM 6.4 릴리스 노트](/help/release-notes/home.md)
-* [최근 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html)
+* [최신 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html)
 * [AEM Security 검사 목록](/help/sites-administering/security-checklist.md)
 
 ## AEM 6.4 사용 안내서
@@ -46,7 +46,7 @@ ht-degree: 100%
 * [Dispatcher 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html)
 * [코어 구성 요소 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [GDPR 준비 완료](/help/managing/data-protection-and-privacy.md)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=en)
+* [GDPR 준비](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM 커뮤니티 포럼](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

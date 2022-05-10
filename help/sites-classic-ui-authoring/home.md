@@ -1,15 +1,15 @@
 ---
 title: AEM 6.4 클래식 UI 작성 사용 안내서
-seo-title: AEM 6.4 클래식 UI 작성 사용 안내서
-description: '이 안내서에서는 클래식 사용자 인터페이스에서 AEM의 작성 개념을 다룹니다. '
-seo-description: '클래식 UI에서 AEM의 작성 개념을 다룹니다. '
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+seo-title: AEM 6.4 Classic UI Authoring User Guide
+description: 이 안내서에서는 클래식 사용자 인터페이스에서 AEM의 작성 개념을 다룹니다.
+seo-description: Covers the concepts of authoring in AEM in the classic UI.
+exl-id: 56522aaf-9a8d-48b8-b748-3b57d5e9c8ef
+source-git-commit: a01f94ddcd84c4d3f7769d6a55fbfcbef131dc57
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 100%
+source-wordcount: '347'
+ht-degree: 97%
 
 ---
-
 
 # AEM 6.4 클래식 UI 작성 사용 안내서
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 * [AEM 시작하기](https://helpx.adobe.com/kr/experience-manager/get-started.html)
 * [AEM 6.4 릴리스 노트](/help/release-notes/home.md)
-* [최근 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html)
+* [최신 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html)
 * [AEM Security 검사 목록](/help/sites-administering/security-checklist.md)
 
 ## AEM 6.4 사용 안내서
@@ -46,7 +46,7 @@ ht-degree: 100%
 * [Dispatcher 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html)
 * [코어 구성 요소 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [GDPR 준비 완료](/help/managing/data-protection-and-privacy.md)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=en)
+* [GDPR 준비](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM 커뮤니티 포럼](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
