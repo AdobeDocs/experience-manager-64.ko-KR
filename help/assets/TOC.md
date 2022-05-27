@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 자산을 생성, 관리, 게재 및 최적화합니다.
-source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
+source-git-commit: 675e98231e53bb9771446c33d9d8ec8968531014
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 67%
+source-wordcount: '646'
+ht-degree: 66%
 
 ---
 
@@ -48,6 +48,7 @@ ht-degree: 67%
    + [Dynamic Media 비디오 프로필](video-profiles.md)
    + [Dynamic Media 이미지 프로필](image-profiles.md)
    + [스마트 이미징](imaging-faq.md)
+   + [클라이언트 측 장치 픽셀 비율을 갖는 스마트 이미징](client-side-dpr.md)
    + [비디오](s7-video.md)
    + [컨텐츠의 HTTP2 전달](http2.md)
    + [Dynamic Media 자산 제공](delivering-dynamic-media-assets.md)
