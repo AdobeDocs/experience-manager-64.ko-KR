@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 role: Admin
 exl-id: 6609c625-0591-42fd-910b-c7c65d52c5f1
-source-git-commit: 393f665774a482e953e2594404ab22f7ce0bb259
+source-git-commit: 727dddccd7b7cdff29a00ef6f0f2e82f14e5c851
 workflow-type: tm+mt
-source-wordcount: '3315'
+source-wordcount: '3330'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,6 @@ JEE 서버의 AEM Forms은 지원되는 운영 체제, 애플리케이션 서버
 >
 >* 지원되는 서버 플랫폼에 대한 전체 예외 목록은 다음을 참조하십시오 [지원되는 서버 플랫폼에 대한 예외](#exceptions-to-supported-server-platforms).
 >* AEM Forms on JEE는 지원되는 운영 체제 및 응용 프로그램의 영어, 프랑스어, 독일어 및 일본어 버전만 지원합니다.
-
 >
 
 
@@ -95,7 +94,6 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
 >
 >* AEM Forms on JEE는 프로덕션 환경에서 64비트 JVM만 지원합니다.
 >* 프로덕션 환경의 안전과 보안을 유지하고 최신 Java 업데이트를 설치하려면 Java 공급업체에서 제공하는 보안 게시판을 추적하는 것이 좋습니다.
-
 >
 
 
@@ -197,13 +195,18 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
   </tr> 
   <tr> 
    <td>MySQL</td> 
-   <td><p>MySQL Connector/J 5.7</p> <p>mysql-connector-java-5.1.30-bin.jar(버전 5.1.30)</p> </td> 
+   <td><p>MySQL Connector/J 5.7</p> <p>mysql-connector-java-5.1.44-bin.jar(버전 5.1.44)</p> </td> 
    <td><p>JEE 설치 시 AEM Forms과 함께 제공됨</p> </td> 
   </tr> 
   <tr> 
    <td>Microsoft SQL Server<br /> </td> 
-   <td><p>Microsoft® SQL Server JDBC 드라이버 6.2.1.0<br /> </p> <p>sqljdbc6.jar</p> </td> 
+   <td><p>Microsoft® SQL Server JDBC 드라이버 6.2.1.0(사용되지 않음) <br /> </p> <p>sqljdbc6.jar</p> </td> 
    <td><p>JEE 설치 시 AEM Forms과 함께 제공됩니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>Microsoft SQL Server<br /> </td> 
+   <td><p>Microsoft® SQL Server JDBC 드라이버 6.2.2.0<br /> </p> <p>sqljdbc6.jar</p> </td> 
+   <td><p>Microsoft 웹 사이트에서 다운로드.</p> </td> 
   </tr> 
   <tr> 
    <td>Oracle</td> 
@@ -332,7 +335,6 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
 >
 >* JEE의 AEM Forms은 64비트 운영 체제만 지원합니다.
 >* Windows 10에서는 PDF 생성기 서비스가 지원되지 않습니다.
-
 >
 
 
@@ -520,7 +522,6 @@ AEM Forms 앱은 이제 Apache Cordova를 지원합니다. 다음은 지원되�
 >* HTML2PDF 서비스는 AIX에서 더 이상 사용되지 않습니다.
 >* OCR PDF, Optimize PDF 및 Export PDF 기능은 Windows에서만 지원됩니다.
 >* Acrobat 버전은 PDF 생성기 기능을 활성화하기 위해 AEM Forms과 번들로 제공됩니다. AEM Forms PDF Generator에서 사용하기 위해 번들로 제공되는 버전은 AEM Forms 라이센스 기간 동안 AEM Forms을 통해서만 프로그래밍 방식으로 액세스할 수 있습니다. 자세한 내용은 배포에 따라 AEM Forms 제품 설명([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
-
 >
 
 
@@ -738,7 +739,6 @@ AEM Forms의 다음 하위 시스템은 [508년](https://www.section508.gov/) �
 >[!NOTE]
 >
 >* Forms Portal은 iPad의 Safari에서만 지원됩니다.
-
 >
 
 
