@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 자산을 생성, 관리, 게재 및 최적화합니다.
-source-git-commit: 675e98231e53bb9771446c33d9d8ec8968531014
+source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '649'
 ht-degree: 66%
 
 ---
@@ -53,6 +53,7 @@ ht-degree: 66%
    + [컨텐츠의 HTTP2 전달](http2.md)
    + [Dynamic Media 자산 제공](delivering-dynamic-media-assets.md)
    + [Dynamic Media에서 핫링크 보호 활성화](hotlink-protection.md)
+   + [Dynamic Media 제한 사항](limitations.md)
    + [이미지 세트](image-sets.md)
    + [혼합 미디어 세트](mixed-media-sets.md)
    + [스핀 세트](spin-sets.md)
