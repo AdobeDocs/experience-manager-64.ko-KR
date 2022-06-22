@@ -2,11 +2,11 @@
 title: 을 사용하여 디지털 자산을 관리합니다 [!DNL Experience Manager] 자산
 description: 터치에 적합한 사용자 인터페이스를 사용하여 수행할 수 있는 다양한 자산 관리 및 편집 작업에 대해 알아봅니다. [!DNL Experience Manager] 자산
 contentOwner: AG
-mini-toc-levels: 1
 feature: Asset Management,Search,Renditions,Collaboration
 role: User
+mini-toc-levels: 3
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
+source-git-commit: 7c786e1326c8c65f00d799fed3207e4f0da04fa7
 workflow-type: tm+mt
 source-wordcount: '10139'
 ht-degree: 3%
