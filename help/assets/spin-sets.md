@@ -8,7 +8,7 @@ content-type: reference
 exl-id: 47cb6d40-a5c4-4f6a-9794-bd2eddfaa7d0
 feature: Spin Sets
 role: User
-source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
+source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
 workflow-type: tm+mt
 source-wordcount: '1923'
 ht-degree: 6%
@@ -31,7 +31,7 @@ ht-degree: 6%
 
 스핀 세트를 만들 때, Adobe은 다음 모범 사례를 권장하고 다음 제한을 적용합니다.
 
-| 제한 유형 | 우수 사례 | 구현된 제한 |
+| 제한 유형 | 우수 사례 | 제한 적용 |
 | --- | --- | --- |
 | 2D 세트당 최대 행/열 수 | 세트당 12-18개 이미지 | 1000 |
 
@@ -117,7 +117,7 @@ ht-degree: 6%
 
 스핀 세트를 만들 때, Adobe은 다음 모범 사례를 권장하고 다음 제한을 적용합니다.
 
-| 제한 유형 | 우수 사례 | 구현된 제한 |
+| 제한 유형 | 우수 사례 | 제한 적용 |
 | --- | --- | --- |
 | 2D 세트당 최대 행/열 수 | 세트당 12-18개 이미지 | 1000년 |
 
