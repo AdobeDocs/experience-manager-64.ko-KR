@@ -90,7 +90,7 @@ ht-degree: 4%
    + OSGi에서 AEM Forms 업그레이드 {#aem-forms-osgi-upgrade}
       + [OSGi에서 AEM 6.4 양식으로 업그레이드](using/upgrade-forms-osgi.md)
       + [호환성 패키지 설치](using/compatibility-package.md)
-      + [AEM Forms 자산 및 문서 마이그레이션](using/migration-utility.md)
+      + [AEM Forms 에셋 및 문서 마이그레이션](using/migration-utility.md)
    + JEE에서 AEM Forms 업그레이드 {#aem-forms-jee-upgrade}
       + [AEM Forms 업그레이드 준비](http://www.adobe.com/go/learn_aemforms_prepareupgrade_64)
       + [JEE의 Adobe Experience Manager Forms 업그레이드 체크리스트 및 계획](http://www.adobe.com/go/learn_aemforms_upgrade_checklist_64)
@@ -146,7 +146,7 @@ ht-degree: 4%
    + [액세스 가능한 적응형 양식 만들기](using/creating-accessible-adaptive-forms.md)
    + [반복 가능한 섹션을 사용하여 양식 만들기](using/creating-forms-repeatable-sections.md)
    + [AEM Sites 페이지에 적응형 양식 또는 대화형 커뮤니케이션 포함](using/embed-adaptive-form-aem-sites.md)
-   + [외부 웹 페이지에 적응형 양식 포함](using/embed-adaptive-form-external-web-page.md)
+   + [외부 웹 페이지에 적응형 양식 임베드](using/embed-adaptive-form-external-web-page.md)
    + [적응형 양식 구성 요소의 인라인 스타일](using/inline-style-adaptive-forms.md)
    + [여러 단계 양식 시퀀스 소개](using/introduction-form-sequence.md)
    + [적응형 양식의 레이아웃 기능](using/layout-capabilities-adaptive-forms.md)

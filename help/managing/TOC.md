@@ -5,12 +5,12 @@ audience: end-user
 user-guide-title: AEM 6.4 관리 사용 안내서
 breadcrumb-title: Managing 안내서
 user-guide-description: AEM 프로젝트를 관리하는 방법을 알아봅니다.
-feature: 배포
+feature: Deploying
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '73'
-ht-degree: 98%
+source-wordcount: '72'
+ht-degree: 100%
 
 ---
 
@@ -31,4 +31,4 @@ ht-degree: 98%
    + [AEM 및 웹 접근성 지침](web-accessibility.md)
    + [WCAG 2.0에 대한 빠른 안내서](qg-wcag.md)
 + 데이터 보호 {#data-protection}
-   + [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 AEM 준비 완료](data-protection-and-privacy.md)
+   + [데이터 보호 및 데이터 개인정보 보호 규정을 위한 AEM 준비](data-protection-and-privacy.md)
