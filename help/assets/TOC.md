@@ -8,8 +8,8 @@ breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 자산을 생성, 관리, 게재 및 최적화합니다.
 source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 66%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
