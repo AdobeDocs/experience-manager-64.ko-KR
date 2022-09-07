@@ -8,9 +8,9 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: 4fdb290ddd7493a7ddbe399ebb76189718cff989
+source-git-commit: a045c70f8cbfa03295c4fcbfbb2df1831c3f7292
 workflow-type: tm+mt
-source-wordcount: '5614'
+source-wordcount: '5619'
 ht-degree: 5%
 
 ---
@@ -93,8 +93,8 @@ Dynamic Media Cloud Services을 구성하기 전에 암호를 변경합니다. D
 
       >[!IMPORTANT]
       >
-      >Experience Manager 인스턴스에서는 Cloud Services에서 하나의 Dynamic Media 구성만 지원됩니다. 두 개 이상의 구성을 추가하지 마십시오. Experience Manager 인스턴스의 여러 Dynamic Media 구성은 _not_ Adobe이 지원하거나 권장합니다.<!-- CQDOC-19579 and CQDOC-19612 -->
-   * **[!UICONTROL 회사 루트 폴더 경로]**
+      >Experience Manager 인스턴스에서는 Cloud Services에서 하나의 Dynamic Media 구성만 지원됩니다. 두 개 이상의 구성을 추가하지 마십시오. Experience Manager 인스턴스의 여러 Dynamic Media 구성은 *not* Adobe이 지원하거나 권장합니다.<!-- CQDOC-19579 and CQDOC-19612 -->
+   * **[!UICONTROL 회사 루트 폴더 경로]** - 회사의 루트 폴더 경로입니다.
    * **[!UICONTROL 자산 게시]** - 옵션 **[!UICONTROL 즉시]** 는 자산이 업로드되면 시스템이 자산을 수집하여 URL/포함을 즉시 제공함을 의미합니다. 자산을 게시하는 데 필요한 사용자 개입이 없습니다. 옵션 **[!UICONTROL 활성화 시]** 는 URL/포함 링크가 제공되기 전에 먼저 자산을 명시적으로 게시해야 함을 의미합니다.
    * **[!UICONTROL 보안 미리 보기 서버]** - 보안 표현물 미리 보기 서버의 URL 경로를 지정할 수 있습니다. 즉, 표현물이 생성되면 Experience Manager이 원격 Dynamic Media 표현물에 안전하게 액세스하고 미리 볼 수 있습니다(바이너리가 Experience Manager 인스턴스로 다시 전송되지 않음).
 
