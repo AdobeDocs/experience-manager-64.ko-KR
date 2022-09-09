@@ -6,12 +6,12 @@ audience: end-user
 user-guide-title: AEM 6.4 클래식 UI 작성 사용 안내서
 breadcrumb-title: 클래식 UI 작성 안내서
 user-guide-description: 이 안내서에서는 클래식 사용자 인터페이스에서 AEM의 작성 개념을 다룹니다.
-feature: 작성
+feature: Authoring
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 91%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -33,36 +33,35 @@ ht-degree: 91%
    + [페이지 작성](classic-page-author.md)
    + [작성 - 환경 및 도구](classic-page-author-env-tools.md)
    + [페이지 생성 및 구성](classic-page-author-manage-pages.md)
-   + [페이지 컨텐츠 편집](classic-page-author-edit-content.md)
+   + [페이지 콘텐츠 편집](classic-page-author-edit-content.md)
    + [리치 텍스트 편집기](classic-page-author-rich-text-editor.md)
    + [페이지 게시](classic-page-author-publish-pages.md)
    + [페이지 속성 편집](classic-page-author-edit-page-properties.md)
    + [페이지 편집 시 주석](classic-page-author-annotations.md)
    + [작성 시의 AEM 문제 해결](classic-page-author-troubleshooting.md)
    + [액세스 가능한 컨텐츠 만들기(WCAG 2.0 적합성)](classic-page-author-accessible-content.md)
-   + [모바일 장치용 페이지 작성](classic-feature-mobile.md)
+   + [모바일 디바이스용 페이지 작성](classic-feature-mobile.md)
    + [페이지 작성용 구성 요소](classic-page-author-edit-mode.md)
    + [페이지 편집 시 키보드 단축키](classic-page-author-keyboard-shortcuts.md)
 + 사이트 및 페이지 기능 {#siteandpage}
    + [컨텐츠 조각으로 페이지 작성](classic-page-author-content-fragments.md)
-   + [응답형 레이아웃](classic-page-author-responsive-layout.md)
-   + [페이지 버전 사용](classic-page-author-work-with-versions.md)
+   + [반응형 레이아웃](classic-page-author-responsive-layout.md)
+   + [페이지 버전을 사용하여 작업](classic-page-author-work-with-versions.md)
    + [태그 사용](classic-feature-tags.md)
    + [스캐폴딩](classic-feature-scaffolding.md)
    + [디자인 모드에서 구성 요소 구성](classic-page-author-design-mode.md)
-   + [Search&amp;Promote 기능을 페이지에 추가](classic-feature-search-promote.md)
    + [구성 요소](classic-page-author-default-components.md)
-+ 워크플로우 {#workflows}
-   + [워크플로우에 참여](classic-workflows-participating.md)
-   + [워크플로우 작업](classic-workflows.md)
-   + [페이지에 워크플로우 적용](classic-workflows-applying.md)
-+ 론치 {#launches}
++ 워크플로 {#workflows}
+   + [워크플로에 참여](classic-workflows-participating.md)
+   + [워크플로를 사용하여 작업](classic-workflows.md)
+   + [페이지에 워크플로 적용](classic-workflows-applying.md)
++ 런치 {#launches}
    + [론치](classic-launches.md)
    + [론치 만들기](classic-launches-creating.md)
    + [론치 편집](classic-launches-editing.md)
    + [론치 홍보](classic-launches-promoting.md)
-+ 개인화 {#personalization}
-   + [세그멘테이션 이해](classic-personalization-campaigns-segmentation.md)
++ 개인 맞춤화 {#personalization}
+   + [세그먼테이션 이해](classic-personalization-campaigns-segmentation.md)
    + [캠페인 관리](classic-personalization-campaigns.md)
    + [티저 및 전략](classic-personalization-campaigns-teasers-strategy.md)
    + [랜딩 페이지](classic-personalization-campaigns-landingpage.md)
@@ -83,7 +82,7 @@ ht-degree: 91%
    + [자산 사용](classicui-assets.md)
    + [Dynamic Media 자산 제공](dynamic-media-assets-delivering.md)
    + [페이지에 Dynamic Media 자산 추가](dynamic-media-assets-adding-to-page.md)
-   + [Dynamic Media Classic(Scene7) 기능을 페이지에 추가](manage-assets-classic-s7.md)
+   + [페이지에 Dynamic Media Classic(Scene7) 기능 추가](manage-assets-classic-s7.md)
    + [Dynamic Media 작업](dynamic-media-assets.md)
    + [비디오](manage-assets-classic-s7-video.md)
    + [테스트 자산에 대한 이름 지정 규칙](asset-naming-conventions.md)

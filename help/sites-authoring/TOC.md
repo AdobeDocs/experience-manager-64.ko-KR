@@ -8,10 +8,10 @@ breadcrumb-title: 작성 안내서
 user-guide-description: AEM에서의 컨텐츠 생성 및 작성에 대한 주요 개념을 알아봅니다.
 feature: Authoring
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '285'
+ht-degree: 94%
 
 ---
 
@@ -78,11 +78,10 @@ ht-degree: 0%
    + [컨텐츠 인사이트](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/content-insights.html)
    + [페이지 성능 분석](ci-analyze.md)
    + [페이지 분석 데이터 보기](pa-using.md)
-   + [Search&amp;Promote 기능을 페이지에 추가](search-and-promote.md)
 + 개인 맞춤화 {#personalization}
    + [개인화](personalization.md)
    + [ContextHub 데이터를 사용하여 페이지 미리보기](ch-previewing.md)
-   + [타기팅 모드를 사용하여 대상 콘텐츠 작성](content-targeting-touch.md)
+   + [타겟팅 모드를 사용하여 대상 콘텐츠 작성](content-targeting-touch.md)
    + [다중 사이트에서 대상 콘텐츠를 사용하여 작업](multisite-support-targeted-content.md)
    + [대상 콘텐츠에 대한 다중 사이트 관리 구성 방식](technical-multisite-targeted.md)
    + [활동 관리](activitylib.md)

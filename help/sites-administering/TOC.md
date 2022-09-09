@@ -8,10 +8,10 @@ breadcrumb-title: 관리 안내서
 user-guide-description: AEM 관리에 대해 알아봅니다.
 feature: Administering
 role: Admin
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 7eaa338be262d953abc045ab88432507021734ca
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '641'
+ht-degree: 36%
 
 ---
 
@@ -132,7 +132,6 @@ ht-degree: 0%
    + [Adobe Campaign Standard과 통합](campaignstandard.md)
    + [Flash 뷰어 지원 중단 알림](flash-viewers-eol.md)
    + [Adobe Creative Cloud과 통합](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
-   + [제품 피드](product-feed.md)
    + [Adobe Dynamic Tag Management과 통합](dtm.md)
    + [Adobe Analytics 및 Adobe Target 선택](opt-in.md)
    + [AEM 포털 및 포틀릿](aem-as-portal.md)
@@ -150,7 +149,6 @@ ht-degree: 0%
    + [Adobe Target과 통합 수동 구성](target-configuring.md)
    + [Adobe Target과 통합하기 위한 사전 요구 사항](target-requirements.md)
    + [Adobe 분류](adobeanalytics-classifications.md)
-   + [Adobe Search &amp; Promote과 통합](search-and-promote.md)
    + [솔루션 통합](integration.md)
    + [경험 조각과 Target 통합](experience-fragments-target.md)
 + 우수 사례 {#bestpractices}
