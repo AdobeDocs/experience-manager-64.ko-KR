@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 feature: Configuring
 exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
-source-git-commit: b2888dd2d523488b416550d5826f8cf077a25e32
+source-git-commit: 5e6376f84b69022aec078d9f2f9163aaa8a0a37c
 workflow-type: tm+mt
-source-wordcount: '3483'
+source-wordcount: '3459'
 ht-degree: 0%
 
 ---
@@ -247,8 +247,6 @@ OSGi &quot;*작은 구성 요소, 재사용 가능한 공동 작업 구성 요�
 * **스크립트 사용자** - 이 선택적 속성은 스크립트를 읽는 데 사용되는 저장소 사용자 계정을 지정할 수 있습니다. 계정이 지정되지 않은 경우 `admin` 사용자는 기본적으로 사용됩니다.
 
 * **기본 확장** 기본 동작을 사용할 확장 목록입니다. 즉, 리소스 유형의 마지막 경로 세그먼트를 스크립트 이름으로 사용할 수 있습니다.
-
-**Day Commons GFX Font Helper** 그래픽을 렌더링할 때 DrawText를 사용하여 텍스트를 포함할 수 있습니다. 이를 위해 고유한 글꼴을 설치할 수도 있습니다.
 
 * 을(를) 정의합니다 **글꼴 경로** 프로젝트별 글꼴을 검색할 수 있습니다.
 
