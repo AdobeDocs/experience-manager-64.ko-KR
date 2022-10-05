@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 feature: Configuring
 exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
-source-git-commit: 5e6376f84b69022aec078d9f2f9163aaa8a0a37c
+source-git-commit: b06865e213fd20ed328104642eda812d4dfe43ed
 workflow-type: tm+mt
-source-wordcount: '3459'
+source-wordcount: '3461'
 ht-degree: 0%
 
 ---
@@ -284,7 +284,7 @@ OSGi &quot;*작은 구성 요소, 재사용 가능한 공동 작업 구성 요�
 
 >[!CAUTION]
 >
->다음 중 하나에 대한 설정을 변경하는 경우 **축소** 또는 **Gzip** 또한 `/var/clientlibs`. clientlibs의 캐싱된 버전이며 다음 요청이 있을 때 다시 빌드됩니다.
+>다음 중 하나에 대한 설정을 변경하는 경우 **축소** 또는 **Gzip** clientlibs 캐시의 내용을 삭제해야 합니다. 다음을 참조하십시오 [기술 자료 문서](https://helpx.adobe.com/ca/experience-manager/kb/How-to-force-a-recompilation-of-all-Sling-scripts-jsps-java-sightly-on-AEM-6-4.html) 자세한 내용
 
 >[!NOTE]
 >
