@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 feature: Configuring
 exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
-source-git-commit: b06865e213fd20ed328104642eda812d4dfe43ed
+source-git-commit: 904c7acc63dac5c92a5d1754380d075727e6a28a
 workflow-type: tm+mt
-source-wordcount: '3461'
+source-wordcount: '3460'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 OSGi &quot;*작은 구성 요소, 재사용 가능한 공동 작업 구성 요소에서 응용 프로그램을 구축할 수 있도록 하는 표준화된 프리미티브(primitives)를 제공합니다. 이러한 구성 요소는 응용 프로그램으로 작성하고 배포할 수 있습니다*&quot;.
 
-따라서 개별적으로 시작, 중지, 설치 및 설치가 가능하므로 번들을 쉽게 관리할 수 있습니다. 상호 종속성은 자동으로 처리됩니다. 각 OSGi 구성 요소( [OSGi 사양](https://www.osgi.org/Specifications/HomePage))은 다양한 번들 중 하나에 포함되어 있습니다. AEM을 사용하여 작업하는 경우 이러한 번들에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다. 참조 [OSGi 구성](/help/sites-deploying/configuring-osgi.md) 자세한 내용 및 권장 지침
+따라서 개별적으로 시작, 중지, 설치 및 설치가 가능하므로 번들을 쉽게 관리할 수 있습니다. 상호 종속성은 자동으로 처리됩니다. 각 OSGi 구성 요소( [OSGi 사양](https://docs.osgi.org/specification/))은 다양한 번들 중 하나에 포함되어 있습니다. AEM을 사용하여 작업하는 경우 이러한 번들에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다. 참조 [OSGi 구성](/help/sites-deploying/configuring-osgi.md) 자세한 내용 및 권장 지침
 
 다음 OSGi 구성 설정(번들에 따라 나열됨)은 프로젝트 구현과 관련되어 있습니다. 나열된 모든 설정을 조정할 필요는 없으며, AEM 작동 방식을 이해하는 데 도움이 되는 설정이 포함되어 있습니다.
 

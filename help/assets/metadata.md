@@ -1,28 +1,28 @@
 ---
-title: ' [!DNL Adobe Experience Manager]에서 디지털 자산의 메타데이터를 관리합니다.'
-description: 메타데이터 유형에 대해 알아보고 [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] 을 통해 메타데이터를 기반으로 자산을 자동으로 구성하고 처리할 수 있는 방법을 알아봅니다.
+title: 에서 디지털 자산의 메타데이터를 관리합니다 [!DNL Adobe Experience Manager].
+description: 메타데이터 유형과 방법에 대해 알아봅니다. [!DNL Adobe Experience Manager Assets] 자산을 보다 쉽게 분류하고 구성할 수 있도록 자산에 대한 메타데이터를 관리하는 데 도움이 됩니다. [!DNL Experience Manager] 를 사용하면 메타데이터를 기반으로 자산을 자동으로 구성하고 처리할 수 있습니다.
 contentOwner: AG
-feature: 태깅, 메타데이터
+feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: 05bbf89a-4cf5-49bb-aea8-a585c641eda2
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 0%
+source-wordcount: '1410'
+ht-degree: 5%
 
 ---
 
 # 디지털 자산의 메타데이터 관리 {#managing-metadata-for-digital-assets}
 
-[!DNL Adobe Experience Manager Assets] 모든 자산에 대한 메타데이터를 유지합니다. 자산을 보다 쉽게 분류하고 구성할 수 있으며 특정 자산을 찾는 사람에게 도움이 됩니다. [!DNL Experience Manager Assets]에 업로드된 파일에서 메타데이터를 추출하는 기능을 통해 메타데이터 관리는 크리에이티브 워크플로우와 통합됩니다. 자산으로 메타데이터를 유지 및 관리하는 기능을 사용하면 메타데이터를 기반으로 자산을 자동으로 구성하고 처리할 수 있습니다.
+[!DNL Adobe Experience Manager Assets] 모든 자산에 대한 메타데이터를 유지합니다. 자산을 보다 쉽게 분류하고 구성할 수 있으며 특정 자산을 찾는 사람에게 도움이 됩니다. 에 업로드된 파일에서 메타데이터를 추출하는 기능 [!DNL Experience Manager Assets], 메타데이터 관리는 크리에이티브 워크플로우와 통합됩니다. 자산으로 메타데이터를 유지 및 관리하는 기능을 사용하면 메타데이터를 기반으로 자산을 자동으로 구성하고 처리할 수 있습니다.
 
 * [XMP 메타데이터](xmp.md).
-* [메타데이터를 편집하거나 추가하는 방법](meta-edit.md).
+* [메타데이터 편집 또는 추가 방법](meta-edit.md).
 * [메타데이터 스키마 참조](meta-ref.md).
 
 ## 메타데이터가 필요한 이유 {#why-we-need-metadata}
 
-메타데이터는 데이터에 대한 데이터를 의미합니다. 이러한 점에서 데이터는 디지털 자산, 즉 이미지를 나타냅니다. 메타데이터는 효율적인 자산 관리를 위해 매우 중요합니다.
+메타데이터는 데이터에 대한 데이터를 의미합니다. 이러한 점에서 데이터는 디지털 자산, 즉 이미지를 나타냅니다. 메타데이터는 효율적인 에셋 관리에 있어 매우 중요합니다.
 
 메타데이터는 자산에 사용할 수 있는 모든 데이터의 수집이지만 해당 이미지에 반드시 포함되어 있지는 않습니다. 메타데이터의 몇 가지 예는 다음과 같습니다.
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 * 포함된 폴더의 이름입니다.
 * 관련 자산 또는 적용된 태그.
 
-위의 내용은 [!DNL Experience Manager]이 자산에 대해 관리할 수 있는 기본 메타데이터 속성으로, 사용자는 모든 자산을 볼 수 있습니다. 예를 들어, 마지막 수정 날짜별로 자산을 정렬하는 것은 최근에 추가된 자산을 검색하려고 할 때 유용합니다.
+위의 내용은 [!DNL Experience Manager] 자산을 관리할 수 있습니다. 이 경우 사용자가 모든 자산을 볼 수 있습니다. 예를 들어, 마지막 수정 날짜별로 자산을 정렬하는 것은 최근에 추가된 자산을 검색하려고 할 때 유용합니다.
 
 다음과 같이 디지털 자산에 고급 데이터를 추가할 수 있습니다.
 
@@ -42,15 +42,15 @@ ht-degree: 0%
 * 자산에 대한 설명입니다.
 * 자산에 지정된 태그.
 
-더 많은 메타데이터는 자산을 더 분류하는 데 도움이 되며, 디지털 정보의 양이 증가하면 유용합니다. 파일 이름만 기준으로 수백 개의 파일을 관리할 수 있습니다. 그러나 이 방법은 확장 가능하지 않습니다. 관련된 사람의 수와 관리되는 자산의 수가 증가하면 부족합니다.
+더 많은 메타데이터는 자산을 더 분류하는 데 도움이 되며, 디지털 정보의 양이 증가하면 유용합니다. 파일 이름만 기준으로 수백 개의 파일을 관리할 수 있습니다. 그러나 이 접근 방식은 확장할 수 없습니다. 관련된 사람의 수와 관리되는 자산의 수가 증가하면 부족합니다.
 
-메타데이터가 추가되면 자산이 만들어지므로 디지털 자산의 값이 증가합니다.
+메타데이터를 추가하면 에셋이 다음과 같이 되기 때문에 디지털 에셋의 가치가 증가합니다.
 
-* 보다 손쉽게 액세스 가능 - 시스템과 사용자가 쉽게 찾을 수 있습니다.
-* 관리가 쉬워짐 - 동일한 속성 세트를 더 쉽게 사용하여 자산을 찾고 변경 사항을 적용할 수 있습니다.
-* 완료 - 자산은 더 많은 정보와 더 많은 메타데이터를 사용하여 컨텍스트를 전달합니다.
+* 접근성 향상 - 시스템과 사용자가 쉽게 찾을 수 있습니다.
+* 관리 용이성 - 동일한 속성 세트를 가진 에셋을 더 쉽게 찾고 변경 사항을 적용할 수 있습니다.
+* 최대 효율 - 에셋은 더 많은 메타데이터로 더 많은 정보와 컨텍스트를 전달합니다.
 
-이러한 이유로 [!DNL Assets]은(는) 디지털 자산에 대한 메타데이터를 만들고, 관리하고 교환하는 올바른 방법을 제공합니다.
+이런 이유로 [!DNL Assets] 는 디지털 자산에 대한 메타데이터를 만들고, 관리하고, 교환하는 올바른 방법을 제공합니다.
 
 ## 메타데이터 유형 {#types-of-metadata}
 
@@ -71,14 +71,14 @@ ht-degree: 0%
 
 파일에 메타데이터를 포함하는 방법은 다양합니다. 다양한 인코딩 표준이 지원됩니다.
 
-* XMP: 추출된 메타데이터를 리포지토리 내에 저장하는 데 [!DNL Assets]에서 사용됩니다.
+* XMP: 사용 [!DNL Assets] 추출된 메타데이터를 리포지토리 내에 저장합니다.
 * ID3: 오디오 및 비디오 파일에 사용할 수 있습니다.
 * 예: 이미지 파일에 사용할 수 있습니다.
-* 기타/기존: [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel] 등입니다.
+* 기타/기존: 변환 전: [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel]등
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP)은 모든 메타데이터 관리에 사용되 [!DNL Experience Manager Assets] 는 개방형 표준입니다. 이 표준에서는 모든 파일 형식에 포함할 수 있는 범용 메타데이터 인코딩을 제공합니다. Adobe 및 다른 회사는 풍부한 컨텐츠 모델을 제공하므로 XMP standard를 지원합니다. XMP standard 및 [!DNL Experience Manager Assets] 사용자는 강력한 플랫폼을 기반으로 할 수 있습니다. 자세한 내용은 [XMP](https://www.adobe.com/products/xmp.html)을 참조하십시오.
+[!DNL Extensible Metadata Platform] (XMP)은 [!DNL Experience Manager Assets] 모든 메타데이터 관리에 사용됩니다. 이 표준에서는 모든 파일 형식에 포함할 수 있는 범용 메타데이터 인코딩을 제공합니다. Adobe 및 다른 회사는 풍부한 컨텐츠 모델을 제공하므로 XMP standard를 지원합니다. XMP standard 및 의 사용자 [!DNL Experience Manager Assets] 강력한 구축 플랫폼 구축 자세한 내용은 [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -94,15 +94,15 @@ ID3 태그는 MP3 파일 형식용으로 디자인되었습니다. 형식에 대
 
 ### Exif {#exif}
 
-Exif(Exif) 는 디지털 사진에 사용되는 가장 인기 있는 메타데이터 포맷입니다. JPEG, TIFF, RIFF 및 WAV와 같은 다양한 파일 형식으로 메타데이터 속성의 고정된 용어를 포함하는 방법을 제공합니다. Exif는 메타데이터를 메타데이터 이름 및 메타데이터 값의 쌍으로 저장합니다. 이러한 메타데이터 이름-값-쌍도 태그라고 하며 [!DNL Experience Manager]의 태깅과 혼동하지 않도록 합니다. 최신 디지털 카메라는 Exif 메타데이터를 만들고 최신 그래픽 소프트웨어를 지원합니다. 예를 들어 형식은 특히 이미지에 대한 메타데이터 관리를 위한 가장 낮은 공통 분모입니다.
+Exif(Exif) 는 디지털 사진에 사용되는 가장 인기 있는 메타데이터 포맷입니다. JPEG, TIFF, RIFF 및 WAV와 같은 다양한 파일 형식으로 메타데이터 속성의 고정된 용어를 포함하는 방법을 제공합니다. Exif는 메타데이터를 메타데이터 이름 및 메타데이터 값의 쌍으로 저장합니다. 이러한 메타데이터 이름-값-쌍은 태그라고도 하며 의 태깅과 혼동하지 않도록 합니다 [!DNL Experience Manager]. 최신 디지털 카메라는 Exif 메타데이터를 만들고 최신 그래픽 소프트웨어를 지원합니다. 예를 들어 형식은 특히 이미지에 대한 메타데이터 관리를 위한 가장 낮은 공통 분모입니다.
 
 Exif의 주요 제한 사항은 BMP, GIF 또는 PNG와 같이 널리 사용되는 몇 가지 이미지 파일 형식이 이를 지원하지 않는다는 것입니다.
 
-Exif로 정의된 메타데이터 필드는 일반적으로 기술적인 부분이며 수사적 메타데이터 관리에 사용할 수 없습니다. 이러한 이유로 [!DNL Experience Manager Assets]은 Exif 속성의 매핑을 [일반 메타데이터 스키마](metadata-schemas.md) 및 [XMP](xmp-writeback.md)에 제공합니다.
+Exif로 정의된 메타데이터 필드는 일반적으로 기술적인 부분이며 수사적 메타데이터 관리에 사용할 수 없습니다. 이런 이유로 [!DNL Experience Manager Assets] 은 Exif 속성을 [공통 메타데이터 스키마](metadata-schemas.md) 및 [XMP](xmp-writeback.md).
 
 ### 기타 메타데이터 {#other-metadata}
 
-파일에서 임베드할 수 있는 기타 메타데이터에는 [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel] 등이 포함됩니다.
+파일에서 임베드할 수 있는 기타 메타데이터에는 다음이 포함됩니다 [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel]등
 
 ## 메타데이터 스키마 {#metadata-schemata}
 
@@ -114,35 +114,35 @@ Exif로 정의된 메타데이터 필드는 일반적으로 기술적인 부분�
 
 ### 표준 메타데이터 {#standard-metadata}
 
-* DC - [!DNL Dublin Core]은 중요하고 널리 사용되는 메타데이터 세트입니다.
+* DC - [!DNL Dublin Core] 는 중요하며 널리 사용되는 메타데이터 세트입니다.
 * DICOM - 의료 분야의 디지털 이미징 및 커뮤니케이션.
-* `Iptc4xmpCore` 및  `iptc4xmpExt` - International Press Communications Standard에는 여러 주제에 맞는 메타데이터가 포함되어 있습니다.
+* `Iptc4xmpCore` 및 `iptc4xmpExt` - International Press Communications Standard에는 여러 제목 관련 메타데이터가 포함되어 있습니다.
 * RDF - 리소스 설명 프레임워크 - 일반 시맨틱 웹 메타데이터용.
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpBJ` - 기본 구직 매표.
 
 ### 애플리케이션별 메타데이터 {#application-specific-metadata}
 
-응용 프로그램별 메타데이터는 기술 및 설명 메타데이터를 포함합니다. 이러한 메타데이터를 사용하는 경우 다른 응용 프로그램에서 메타데이터를 사용하지 못할 수 있습니다. 예를 들어 다른 이미지 렌더링 응용 프로그램에서 [!DNL Adobe Photoshop] 메타데이터에 액세스할 수 없습니다. 애플리케이션별 속성을 표준 속성으로 변경하는 워크플로우 단계를 만들 수 있습니다.
+응용 프로그램별 메타데이터는 기술 및 설명 메타데이터를 포함합니다. 이러한 메타데이터를 사용하는 경우 다른 응용 프로그램에서 메타데이터를 사용하지 못할 수 있습니다. 예를 들어 다른 이미지 렌더링 응용 프로그램이 액세스할 수 없을 수 있습니다 [!DNL Adobe Photoshop] 메타데이터. 애플리케이션별 속성을 표준 속성으로 변경하는 워크플로우 단계를 만들 수 있습니다.
 
-* ACDSee - [!DNL ACDSee] 프로그램에서 관리하는 메타데이터입니다. [www.acdsee.com/](https://www.acdsee.com/)을 참조하십시오.
+* ACDSee - [!DNL ACDSee] 프로그램. 자세한 내용은 [www.acdsee.com/](https://www.acdsee.com/).
 * 앨범 - [!DNL Adobe Photoshop Album].
-* CQ - [!DNL Experience Manager Assets]에 의해 사용됩니다.
-* DAM - [!DNL Experience Manager Assets]에 의해 사용됩니다.
-* DEX - [Optima SC Description explorer](http://www.optimasc.com/products/dex/index.html)는 Windows 운영 체제에 대한 메타데이터 및 파일 관리를 위한 도구 모음입니다.
+* CQ - 사용 [!DNL Experience Manager Assets].
+* DAM - 사용 [!DNL Experience Manager Assets].
+* DEX - [최적 SC 설명 탐색기](http://www.optimasc.com/products/dex/index.html) 는 Windows 운영 체제에 대한 메타데이터 및 파일 관리를 위한 도구 모음입니다.
 * CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
-* MicrosoftPhoto 및 MP - Microsoft Photo.
-* PDF 및 PDF/X
+* MicrosoftPhoto 및 MP - Microsoft 사진.
+* PDF 및 PDF/X.
 * Photoshop 및 psAux - [!DNL Adobe Photoshop].
 
 ### Digital Rights Management 메타데이터 {#digital-rights-management-metadata}
 
 * 참조 - [!DNL Creative Commons].
 * [!DNL XMPRights].
-* PLUS - [사진 라이선스 범용 시스템](https://www.useplus.com).
-* PRISM - [업계 표준 메타데이터 게시 요구 사항](https://www.idealliance.org/prism-metadata).
+* 플러스 - [Picture Licensing Universal System](https://www.useplus.com).
+* 프리즘 - [업계 표준 메타데이터에 대한 게시 요구 사항](https://www.idealliance.org/prism-metadata).
 * PRL - 프리즘 권한 언어.
 * PUR - 프리즘 사용 권한.
 * `xmpPlus` - XMP과 PLUS 통합.
@@ -152,12 +152,12 @@ Exif로 정의된 메타데이터 필드는 일반적으로 기술적인 부분�
 * Exif - GPS 위치를 포함한 카메라의 기술 정보.
 * CRS - [!DNL Camera Raw] 스키마.
 * `iptc4xmpCore` 및 `iptc4xmpExt`.
-* TIFF - 이미지 메타데이터(TIFF 이미지뿐만 아니라).
+* TIFF - 이미지 메타데이터(TIFF 이미지용뿐만 아니라).
 
 ### 인쇄별 메타데이터 {#print-specific-metadata}
 
-* PDF 및 PDF/X - Adobe PDF 및 타사 애플리케이션
-* PRISM - [업계 표준 메타데이터 게시 요구 사항](http://www.prismstandard.org/specifications/).
+* PDF 및 PDF/X - Adobe PDF 및 타사 애플리케이션.
+* 프리즘 - [업계 표준 메타데이터에 대한 게시 요구 사항](https://idealliance.org/specifications/prism-metadata/).
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - 페이징 텍스트의 XMP 메타데이터.
 
@@ -172,4 +172,4 @@ Exif로 정의된 메타데이터 필드는 일반적으로 기술적인 부분�
 
 * 워크플로우는 이미지에 제목이 있는지 여부를 확인할 수 있습니다. 표시되지 않으면 시스템에서 제목을 추가하라는 메시지를 표시합니다.
 * 워크플로우는 자산에 대한 저작권 공지가 배포를 허용하는지 여부를 확인할 수 있습니다. 따라서 시스템이 자산을 한 서버나 다른 서버로 전송합니다.
-* 워크플로우는 *잘못된* 메타데이터가 있는 사전 정의된 필수 메타데이터 또는 자산이 없는 자산을 확인할 수 있습니다.
+* 워크플로우는 사전 정의된 필수 메타데이터 또는 *잘못된* 메타데이터.

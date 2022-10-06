@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 exl-id: e2295f71-ea3a-483c-9d7b-29acd151845d
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: 904c7acc63dac5c92a5d1754380d075727e6a28a
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '888'
 ht-degree: 4%
 
 ---
@@ -105,6 +105,6 @@ Adobe Experience Manager과 Adobe Campaign이 통합되는 방법에 대한 자�
 
 Adobe Experience Manager 및 Livefyre에 대해 알아봅니다.
 
-* [Livefyre 시작하기](https://answers.livefyre.com/developers/getting-started)
+* [Livefyre 시작하기](https://experienceleague.adobe.com/docs/livefyre/implementation/getting-started/c-getting-started.html)
 
-* [Livefyre 및 Adobe Experience Manager](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
+* [Livefyre 및 Adobe Experience Manager](/help/sites-administering/livefyre.md)
