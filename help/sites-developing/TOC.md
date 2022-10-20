@@ -10,8 +10,8 @@ feature: Developing
 role: Developer
 source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '886'
+ht-degree: 92%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 0%
       + [쿼리 빌더 술어 참조](querybuilder-predicate-reference.md)
       + [쿼리 빌더 API](querybuilder-api.md)
    + 태깅{#tagging}
-      + [태깅](tags.md)
+      + [태그 지정](tags.md)
       + [AEM 태그 지정 프레임워크](framework.md)
       + [AEM 애플리케이션에 태깅 작성](building.md)
    + [오류 핸들러로 표시된 페이지 사용자 지정](customizing-errorhandler-pages.md)

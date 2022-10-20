@@ -9,8 +9,8 @@ feature: Mobile
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '331'
+ht-degree: 12%
 
 ---
 
@@ -82,7 +82,7 @@ ht-degree: 0%
    + [모바일 애플리케이션에 Adobe Analytics 추가](phonegap-add-analytics-to-apps.md)
    + [모바일 앱용 페이지 템플릿](phonegap-apps-arch-page-templates.md)
    + [Adobe Target Cloud Service 구성](aem-mobile-configuring-cloud-service.md)
-   + [SPA(Single Page Applications)](phonegap-single-page-applications.md)
+   + [SPA (Single Page Applications)](phonegap-single-page-applications.md)
    + [저장소의 모델](https://experienceleague.adobe.com/docs/experience-manager-64/mobile/administering/administer-mobile-apps.html)
    + [AEM PhoneGap 시작](starting-aem-phonegap-app.md)
    + [모바일 앱 테스트](develop-mobile-apps-testing.md)
