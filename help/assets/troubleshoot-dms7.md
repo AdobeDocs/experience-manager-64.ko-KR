@@ -9,7 +9,7 @@ exl-id: d8cc94b0-eacf-4e76-bd50-7934bbc28c92
 feature: Troubleshooting
 role: Admin,User
 mini-toc-levels: 3
-source-git-commit: 39518ffbbcd1368cff02c356246dc5b430cc14d6
+source-git-commit: 48e75239b9934ebe6c3c0d4f76b7990372646f23
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 2%
@@ -45,7 +45,7 @@ ht-degree: 2%
 
 | **속성** | **예** | **설명** |
 |---|---|---|
-| `<object_node>/jcr:content/metadata/dam:scene7ID` | `a|364266` | 노드가 Dynamic Media에 연결되어 있다는 일반 표시기입니다. |
+| `<object_node>/jcr:content/metadata/dam:scene7ID` | `a\|364266` | 노드가 Dynamic Media에 연결되어 있다는 일반 표시기입니다. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **[!UICONTROL 게시 완료]** 또는 오류 텍스트 | Dynamic Media에 자산 업로드 상태. |
 | `<object_node>/jcr:content/metadata/dam:scene7File` | `myCompany/myAssetID` | Dynamic Media의 원격 자산에 대한 URL을 생성하려면 채워야 합니다. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | `success` 또는 `failed:<error text>` | 세트(스핀 세트, 이미지 세트 등), 이미지 사전 설정, 뷰어 사전 설정, 자산에 대한 이미지 맵 업데이트 또는 편집된 이미지의 동기화 상태. |
