@@ -10,10 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 exl-id: ba65e853-d69a-4341-93c3-5628c60c403b
-source-git-commit: 7f80933dfe8439bbd57ef85ece96399f7ec39f64
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 
@@ -71,7 +71,7 @@ Microsoft Edge를 브라우저로 사용하는 경우:
 * **Omnisearch:** 왼쪽 레일 조건자가 Omnisearch 서버 요청을 따르고 있습니다(GRANITE-20524)
 * **Omnisearch:** Omnisearch는 컨텍스트 경로를 지원하지 않습니다(GRANITE-16044)
 
-## 에셋 {#assets}
+## Assets {#assets}
 
 * **검색**: 검색 문자열이 공백으로 시작하는 경우 검색 결과가 반환되지 않습니다 [OAK-4786](https://issues.apache.org/jira/browse/OAK-4786)
 
@@ -133,14 +133,14 @@ Microsoft Edge를 브라우저로 사용하는 경우:
 
 (CQ-4238462)
 
-### Adobe Sign 통합
+### Acrobat Sign 통합
 
-* Adobe Sign 스케줄러가 간헐적으로 작동하지 않으므로 보류 중인 양식이 제출로 이동하지 않습니다. 문제를 해결하려면 **Apache Sling Scheduler 지원** https://에서 AEM 웹 콘솔에서 번들&#x200B;[*server*]:[*포트*]/system/console/bundles.
+* Acrobat Sign 스케줄러가 간헐적으로 작동하지 않으므로 보류 중인 양식이 제출로 이동하지 않습니다. 문제를 해결하려면 **Apache Sling Scheduler 지원** https://에서 AEM 웹 콘솔에서 번들&#x200B;[*server*]:[*포트*]/system/console/bundles.
 
 ### 적응형 Forms 작성
 
 * 적응형 양식의 차트 구성 요소는 일반적으로 사용하는 것보다 더 많은 공간을 사용합니다.
 * Forms Manager UI에서 적응형 양식, 적응형 양식 조각 또는 대화형 커뮤니케이션에 대한 속성을 저장할 때 예외가 반환됩니다.
 * 적응형 양식 텍스트 상자에 지정된 최대 문자 수가 Android 6.0 Samsung 장치에 적용되지 않습니다. (Ref# CQ-4235205)
-* Apple iOS 장치에서 표준 HTML 업로드 필드가 포함된 양식을 제출하는 경우 때로 파일의 컨텐츠가 전송되지 않고 다른 끝에는 0바이트 파일이 수신됩니다. Apple iOS 15.1에서는 문제에 대한 수정 사항을 제공합니다.
+* Apple iOS 디바이스에서 표준 HTML 업로드 필드가 포함된 양식을 제출할 경우, 때때로 파일의 콘텐츠가 전송되지 않고 반대편에서 0바이트 파일이 수신됩니다. Apple iOS 15.1은 이 문제에 대한 해결 방법을 제공합니다.
 

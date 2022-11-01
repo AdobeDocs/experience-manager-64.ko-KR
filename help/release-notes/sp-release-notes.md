@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 exl-id: d0da9390-2167-47ee-82fd-8c81d8d68a3e
-source-git-commit: 1537055fd88cbc3b01e4df7855a99f993f2052e4
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '21547'
 ht-degree: 29%
@@ -53,7 +53,7 @@ AEM 6.4.8.0은 AEM 6.4의 공식 출시 이후 릴리스된 새로운 기능, �
 
 ## 변경 사항 목록 {#list-of-changes}
 
-### 사이트 {#sites}
+### Sites {#sites}
 
 * AEM Sites 페이지의 URL에 콜론 또는 백분율 기호가 포함되어 있으면 기본 브라우저가 응답을 중단하고 CPU 사이클에 스파이크가 표시됩니다(NPR-32368, NPR-31917).
 * AEM Sites 페이지를 열어 편집하고 구성 요소를 복사하면 일부 자리 표시자에 대해 붙여넣기 작업을 사용할 수 없습니다(NPR-32328).
@@ -68,7 +68,7 @@ AEM 6.4.8.0은 AEM 6.4의 공식 출시 이후 릴리스된 새로운 기능, �
 * 리치 텍스트 편집기(RTE)에서 하이퍼링크를 편집하면 새로 선택한 경로가 저장되지 않습니다(NPR-31659).
 * 다중 필드 구성 요소를 삭제하고 삭제를 취소하면 구성 요소가 복원되지만 데이터가 복원되지 않습니다(NPR-31617).
 
-### 에셋 {#assets}
+### Assets {#assets}
 
 * Dynamic Media Classic 구성을 사용하여 Experience Manager에서 자산을 폴더 간에 이동하는 동안 이름이 없는 폴더가 Dynamic Media Classic에 생성됩니다(NPR-32440).
 
@@ -181,7 +181,7 @@ AEM 6.4.7.0의 주요 특징 중 일부는 다음과 같습니다.
 * 이제 Dynamic Media의 UI에서 재처리 및 배치 업로드에 대한 배치 크기 및 워크플로우 단계 시간 제한을 구성할 수 있습니다.
 * 다음 `pdfBrochure` IPS에 메모리를 저장하도록 Scene 7 클라우드 구성에서 false로 설정되어 있습니다.
 
-##### 에셋 {#assets-6470}
+##### 자산 {#assets-6470}
 
 **제품 개선 사항**
 
@@ -250,7 +250,7 @@ AEM 6.4.7.0의 주요 특징 중 일부는 다음과 같습니다.
 
 * PDF 파일은 색인이 되어 있지 않고 내부 콘텐츠를 검색할 수 없습니다(CQ-4278916).
 
-##### 사이트 {#sites-6470}
+##### Sites {#sites-6470}
 
 * 수정된 페이지만 홍보 를 사용하여 론치를 홍보하고 수정된 페이지가 있는 홍보 시작을 수행하면 수정된 페이지만 홍보되도록 표시됩니다. 또한 홍보할 목록이 올바르면 수정되지 않은 페이지가 목록 하단에 표시됩니다(NPR-31314).
 
@@ -370,7 +370,7 @@ AEM 6.4.6.0의 주요 특징 중 일부는 다음과 같습니다.
 * 기본 API의 추적 이벤트에서 dynamic-UI-states 추적을 지원하도록 가 추가되었습니다.
 * 이미지 코어 구성 요소에 변환 지원을 추가했습니다.
 
-**에셋**
+**Assets**
 
 * 스페이스 및 `&` 이름에 문자가 일부 자산에 대해 빈 회색 카드를 표시합니다. NPR-29934: CQ-4270187용 핫픽스
 * AEM용 MP4 자산을 만드는 동안 DAM 워크플로우가 충돌합니다. NPR-30031: CQ-4271352용 핫픽스
@@ -387,7 +387,7 @@ AEM 6.4.6.0의 주요 특징 중 일부는 다음과 같습니다.
 * 태그 관리에 회전판을 사용하는 경우 탐색 단추가 작동하지 않습니다. CQ-4275499용 핫픽스
 * 자산의 벌크 이동 기능이 끊어져 자산이 이동하지 않습니다. CQ-4272987용 핫픽스
 
-**Sites**
+**사이트**
 
 * `pageinfo.json` 요청이 너무 느려서 로드하는 데 시간이 너무 오래 걸립니다. NPR-29709: CQ-4269560용 핫픽스
 * `onTime` 또는 `offTime` AEM 서버가 다시 시작되는 경우 자산에 저장된 메타데이터 속성이 호출되지 않습니다. NPR-30413: CQ-4272784용 핫픽스
@@ -524,7 +524,7 @@ AEM 6.4.5.0의 주요 특징 중 일부는 다음과 같습니다.
 * 비활성화됨 `AssetDownloadServlet` AEM 게시 인스턴스에서 기본적으로 OSGi 구성 요소입니다. 자세한 내용은 [AEM에서 자산 다운로드](/help/assets/download-assets-from-aem.md).
 * 자산에 대한 다중 사이트 관리자 지원이 활성화되었습니다. 자세한 내용은 [자산에 MSM을 사용하여 자산 재사용](/help/assets/reuse-assets-using-msm.md)을 참조하십시오.
 
-**에셋**
+**자산**
 
 * 파일 이름에 아포스트로피가 있는 자산은 Dynamic Media과 동기화되지 않습니다. NPR-29538: CQ-4270592용 핫픽스
 * S3 다중 부분 지원에 대한 DAM DMGateway 인터페이스가 업데이트되었습니다. NPR-29740: CQ-4226303용 핫픽스
@@ -561,7 +561,7 @@ AEM 6.4.5.0의 주요 특징 중 일부는 다음과 같습니다.
 * AEM 6.4.3으로 업그레이드한 후 자산 보고서와 관련된 문제를 쿼리합니다. NPR-28588: CQ-4262022, CQ-4260697용 핫픽스
 * 다운로드 기능은 익명의 사용자가 모든 에셋을 다운로드할 수 있도록 하는 assetdownload 서블릿을 통해 AEM Assets를 활용합니다. NPR-27315, CQ-4254732용 핫픽스
 
-**Sites**
+**사이트**
 
 * JCR 규격 태그 이름은 태그 제목을 기반으로 자동으로 채워야 합니다. NPR-28990: CQ-4199411용 핫픽스
 * 상속 취소 단추는 페이지 속성에 추가된 일부 필드에 표시되지 않습니다. NPR-29079: CQ-4265686용 핫픽스
@@ -731,7 +731,7 @@ AEM 6.4.5.0 Forms의 주요 기능은 다음과 같습니다.
 
 **기능 팩 포함됨**
 
-**에셋**
+**자산**
 
 * 자산에 대한 다중 사이트 관리자 지원이 활성화되었습니다. 자세한 내용은 [자산에 MSM을 사용하여 자산 재사용](/help/assets/reuse-assets-using-msm.md)을 참조하십시오. NPR-26450: CQ-4259922용 핫픽스
 
@@ -767,7 +767,7 @@ AEM 6.4.4.0의 주요 특징 중 일부는 다음과 같습니다.
 * 컨텐츠 조각의 clientlibs에서 숫자 입력 다중 필드에 대한 빈 값을 무시하기 위한 검사를 추가했습니다.
 * Microsoft Translator 텍스트 API v3에 대한 지원을 사용하도록 설정되었습니다.
 
-**에셋**
+**자산**
 
 * ACP 및 Stock 통합을 AEM 6.4.4.0으로 마이그레이션 NPR-27632
 * 나중에 하위 폴더가 있는 빈 자산 폴더를 게시하면 하위 폴더가 사라집니다. NPR-27558: CQ-4254701용 핫픽스
@@ -785,7 +785,7 @@ AEM 6.4.4.0의 주요 특징 중 일부는 다음과 같습니다.
 * SiteCatalyst 구성에서 서비스 확인자가 닫히지 않았습니다. NPR-28015: CQ-4259397용 핫픽스
 * DAM에서 자산을 이동해도 Scene7(p2p 구성)에서 유사한 이동은 발생하지 않습니다. NPR-28313: CQ-4261091용 핫픽스
 
-**Sites**
+**사이트**
 
 * (클래식 UI) Live Copy의 일부가 롤아웃 목록에 표시됩니다. NPR-28598, NPR-28574: CQ-4263410용 핫픽스
 * cq:master가 비어 있거나 잘못된 경우 LiveRelationshipManagerImpl에서 예외가 발생합니다. NPR-28590: CQ-4263115용 핫픽스
@@ -942,7 +942,7 @@ AEM 6.4.4.0 Forms의 주요 기능은 다음과 같습니다.
 
 **Forms 추가 기능 패키지**
 
-**Adobe Sign 통합**
+**Acrobat Sign 통합**
 
 * AEM 6.4 Forms 클라이언트 SDK에 adobesign-recipient 패키지가 포함되어 있지 않습니다. NPR-27735: CQ-4259372용 핫픽스
 
@@ -1003,7 +1003,7 @@ Forms Manager의 시작 검토 마법사 및 자산 이동 마법사에서 handl
 
 **기능 팩 포함됨**
 
-**Sites**
+**사이트**
 
 * AEM 6.4의 컨텐츠 조각 버전 관리 차이점 비교 개선. NPR-26760: CQ-4248839용 FP
 * AEM 6.4의 컨텐츠 조각 변형 차이점 개선. NPR-27866: CQ-4248839용 FP
@@ -1043,7 +1043,7 @@ AEM 6.4.3.0의 주요 특징 중 일부는 다음과 같습니다.
 * 선택 중에 자리 표시자 항목(카드 보기 및 목록 보기)에 대한 처리가 개선되었습니다.
 * Managed Services에 대한 Adobe IMS 인증 및 Admin Console 지원이 추가되었습니다.
 
-**에셋**
+**자산**
 
 * ID 이중 옵션이 활성화되어 있으면 DAM 자산 업데이트 워크플로우는 INDD 파일에서 참조를 추출하지 않습니다. NPR-26243; CQ-4250933용 핫픽스
 * 자산이 자산 벌크 편집기로 게시되면 성공 메시지가 표시되지 않습니다. NPR-26252; CQ-4251688용 핫픽스.
@@ -1060,7 +1060,7 @@ AEM 6.4.3.0의 주요 특징 중 일부는 다음과 같습니다.
 * 메타데이터 편집기 페이지에 잘못된 항목 매개 변수에 대한 Null 포인터 예외가 있습니다. NPR-26169; CQ-4241368용 핫픽스.
 * 드롭다운에 선택 규칙과 필수 규칙이 적용되는 경우 메타데이터 편집기에서 필요한 규칙을 충족할 수 없습니다. NPR-27479; CQ-4251428용 핫픽스
 
-**Sites**
+**사이트**
 
 * 사용자는 컨텐츠 정책을 사용하여 인라인 전체 화면 모드에서 리치 텍스트 편집기 기능을 제어할 수 있지만 컨텐츠 정책이 있는 편집 대화 상자 리치 텍스트 편집기 기능을 제어할 수 없습니다. NPR-26750: CQ-4241130용 핫픽스
 * 전체 화면에서 부동 대화 상자로 전환하면 리치 텍스트 편집기를 사용할 수 없습니다. 부동 보기에는 두 개의 리치 텍스트 편집기가 포함되어 있습니다. NPR-25589: CQ-4206008용 핫픽스
@@ -1185,7 +1185,7 @@ AEM 6.4.3.0의 주요 특징 중 일부는 다음과 같습니다.
 * 타깃팅 엔진을 통해 생성된 AEM 경험의 수정 사항은 게시되지 않습니다. NPR-24869: CQ-4247832용 핫픽스
 * 이름에 일본어 문자가 포함된 경우 여러 활동 및 경험을 만들 수 없습니다. NPR-27271: CQ-4256857용 핫픽스
 * Launch API 엔드포인트를 업데이트합니다. NPR-26790: CQ-4254380용 핫픽스
-* (Personalization) BrandRetriever가 전체 트리를 안내합니다. NPR-27060: CQ-4255790용 핫픽스
+* (개인화) BrandRetriever가 전체 트리를 안내합니다. NPR-27060: CQ-4255790용 핫픽스
 
 **WCM - 관리 UI**
 
@@ -1307,7 +1307,7 @@ AEM 6.4.2.0의 주요 특징 중 일부는 다음과 같습니다.
 * GCC가 최신 버전으로 업데이트되었습니다.
 * 새 외부 IDP 동기화로 SAML을 이동합니다.
 
-**에셋**
+**자산**
 
 * pptx 파일에 대한 하위 자산 생성에는 이미지와 축소판이 포함되지 않습니다. NPR-24286: CQ-4217986용 핫픽스
 * migrateAllAssets - 일괄 처리 지원을 추가하고 이전 자산에 UUID를 추가하는 AEM 메서드를 개선합니다. NPR-24861: CQ-4242863 및 CQ-4247874용 핫픽스
@@ -1329,7 +1329,7 @@ AEM 6.4.2.0의 주요 특징 중 일부는 다음과 같습니다.
 * 자산 또는 폴더를 선택할 때 열 보기의 브라우저 콘솔에서 Javascript 오류가 발생합니다. NPR-25939: CQ-4250228용 핫픽스
 * (열 보기) 키 파일이 빈 흰색 항목으로 표시되어 작업을 식별할 수 없습니다. NPR-25903: CQ-4246307용 핫픽스
 
-**Sites**
+**사이트**
 
 * AEM 6.2의 datasource.jsp 쿼리는 AEM 6.4와 다릅니다. NPR-24968: CQ-4244235용 핫픽스
 * (클래식 UI) 페이지에 태그를 추가할 수 없습니다. NPR-25255, NPR-25612: CQ-4249615용 핫픽스
@@ -1573,9 +1573,9 @@ AEM 6.4.2.0 Forms의 주요 기능은 다음과 같습니다.
 * 웹 서비스 호출이 클라이언트 내에서 열린 HTML5 양식을 만들 때 오류가 발생하고 오류 메시지가 반환됩니다. NPR-26048: CQ-4244716용 핫픽스
 * AEM Forms Windows 앱 6.3에서 서비스를 호출하는 동안 문제가 발생했습니다. NPR-26468: CQ-4252341용 핫픽스
 
-**Mobile Forms**
+**모바일 Forms**
 
-* (Formset) 미리 보기를 수행할 때 SSN 및 Mobile 필드 유효성 검사 문제가 발생합니다. NPR-24458: CQ-4244983용 핫픽스
+* (Formset) 미리 보기를 수행할 때 SSN 및 모바일 필드 유효성 검사 문제가 발생합니다. NPR-24458: CQ-4244983용 핫픽스
 * HTML 미리 보기에서 다중 라인 필드의 미리 채우기와 함께 데이터가 표시되지 않습니다. NPR-24549: CQ-4244212용 핫픽스
 * 여러 줄 필드에서 스크립트가 평가되면 데이터가 손실됩니다. NPR-25333, CQ-4249610용 핫픽스
 
@@ -1654,14 +1654,14 @@ AEM 6.4.2.0 Forms의 주요 기능은 다음과 같습니다.
 
 **기능 팩 포함됨**
 
-**에셋**
+**자산**
 
 * 추가됨 [Adobe Stock과 통합](/help/assets/aem-assets-adobe-stock.md) AEM 사용자 인터페이스에서 직접 Adobe Stock 자산을 검색, 미리 보기, 저장 및 라이선스를 제공할 수 있습니다. 자세한 내용은 [AEM 자산에서 Adobe Stock 자산 사용](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html). NPR-15779: CQ-30857용 핫픽스
 * 동적 조건부 메타스키마에 대한 지원을 추가했습니다. 자세한 내용은 [계단식 메타데이터](/help/assets/cascading-metadata.md). NPR-25189: CQ-4237413용 핫픽스
 * 컨텐츠 조각에서 &quot;자산 다운로드&quot; 옵션을 활성화했습니다. 자세한 내용은 [자산 보고서](/help/assets/asset-reports.md). NPR-25186: CQ-4237410용 핫픽스
 * 자산 폴더에 대한 메타데이터 스키마를 설정할 수 있습니다. 자세한 내용은 [폴더 메타데이터 스키마](/help/assets/folder-metadata-schema.md) 그리고 [구성 설정](#configuration-settings-required-for-npr) AEM 6.4.2.0 설치 후. NPR-21268: CQ-4221574용 핫픽스
 
-**Sites**
+**사이트**
 
 * 삭제 권한 없이 컨텐츠 조각을 편집할 수 있습니다. 자세한 내용은 [컨텐츠 조각 사용자 지정 및 확장](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-delete.html). NPR-25793: CQ-4248750용 핫픽스
 * 컨텐츠 조각에 주석을 다는 기능이 추가되었습니다. 자세한 내용은 [변형 작성 조각](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-variations.html#annotating-a-content-fragment). NPR-25188: CQ-4235336용 핫픽스
@@ -1702,7 +1702,7 @@ AEM 6.4.1.0은 AEM 6.4 GA에 설치할 수 있습니다. 서비스 팩의 주요
 * platform.clientlibs 수정 사항에 대한 사전 예방적 백포트입니다.
 * 명시적 dataType에 입력이 없을 때 스크립트가 자동으로 실행되지 않도록 합니다(CVE-2015-9251 확인).
 
-**에셋**
+**자산**
 
 * 자산 속성 페이지를 다시 열면 계단식 드롭다운 값이 공백으로 표시됩니다. NPR-23042: CQ-4238761용 핫픽스
 * mylinkshare 페이지의 공유 링크 및 페이지에 대한 링크는 관리자가 아닌 사용자가 사용할 수 없습니다 NPR-23044: CQ-4239004용 핫픽스
@@ -1713,7 +1713,7 @@ AEM 6.4.1.0은 AEM 6.4 GA에 설치할 수 있습니다. 서비스 팩의 주요
 * Scene7ListInfoProvider의 XMP 메타데이터 추출은 리소스를 많이 사용합니다. NPR-23754
 * (dam-delivery) Http 전달자가 HTTP 프록시 설정을 준수하지 않습니다. NPR-24002: CQ-4244140용 핫픽스
 
-**Sites**
+**사이트**
 
 * 이동하는 동안 페이지 이름을 바꾸면 페이지 이동이 성공하지만 기능 이름 바꾸기는 작동하지 않습니다. NPR-22923: CQ-4235907용 핫픽스
 * Adobe Campaign의 Importer 페이지를 가리키는 라이브 카피 페이지를 게시할 때 오류가 발생했습니다. NPR-23053: CQ-4237164용 핫픽스
@@ -1752,12 +1752,12 @@ AEM 6.4.1.0은 AEM 6.4 GA에 설치할 수 있습니다. 서비스 팩의 주요
 * 쿼리를 장기 실행하는 동안 TargetContentImpl이 AEM을 느리게 만듭니다. NPR-22359: CQ-4236907용 핫픽스
 * Target 엔진(mbox.js, at.js)이 mangled URL을 사용하지 않고, 콜론이 포함된 URL을 사용하므로 특정 배포에서 실패할 수 있습니다. NPR-22434: CQ-4237854용 핫픽스
 * 대상 모드에서 작성자가 상속을 취소하지 않고도 블루프린트에서 상속된 구성 요소를 수정할 수 있습니다. NPR-22865: CQ-4237907용 핫픽스
-* (Personalization) 카드 보기로 전환할 때 아이콘이 변형됩니다. NPR-23373, NPR-23374: CQ-4240018, CQ-4240019용 핫픽스
-* (Personalization) 대상 콘솔에 nt:folder 유형이 표시되지 않습니다. NPR-23375: CQ-4242293용 핫픽스
+* (개인화) 카드 보기로 전환할 때 아이콘이 변형됩니다. NPR-23373, NPR-23374: CQ-4240018, CQ-4240019용 핫픽스
+* (개인화) 대상 콘솔에 nt:folder 유형이 표시되지 않습니다. NPR-23375: CQ-4242293용 핫픽스
 * 구성 요소가 게시 인스턴스에서 타기팅되면 타기팅된 구성 요소 전의 기본 경험이 깜박거리는 것처럼 표시됩니다. NPR-23415: CQ-4242038용 핫픽스
 * (Adobe IMS 콘솔) 삭제 후 AccessTokenProvider OSGi 서비스 구성이 다시 나타납니다. NPR-23520: CQ-4208250용 핫픽스
 * 구성 참조 복제가 중간 폴더 구조로 인해 실패합니다. NPR-23485: CQ-4242751용 핫픽스
-* (Personalization) clientlib이 프록시 서블릿에 의해 차단되었습니다. NPR-23521: CQ-4240995용 핫픽스
+* (개인화) 프록시 서블릿에 의해 clientlib이 차단되었습니다. NPR-23521: CQ-4240995용 핫픽스
 * (Adobe IMS 콘솔) 구성 마법사에서 등록된 클라우드 솔루션을 선택하지 않습니다. NPR-23977: CQ-4244549용 핫픽스
 * HTML 확장 없이 페이지에서 타깃팅된 컨텐츠를 로드할 때 무한 루프가 발생합니다. NPR-23522: CQ-4223600용 핫픽스
 * 상속된 동적 Tag Management 구성 참조가 있는 페이지에 대해 활성화가 실패합니다. NPR-23485: CQ-4242751용 핫픽스
@@ -1947,7 +1947,7 @@ AEM Forms의 주요 사항은 다음과 같습니다.
 * 작성자 및 게시 인스턴스에 대한 마이그레이션 로그에 오류가 있습니다. CQ-4239365용 핫픽스
 * 작성자 및 게시 인스턴스에 대한 마이그레이션 로그에 오류가 있습니다. CQ-4239635용 핫픽스
 * 응용 양식의 게시 제출 시 오류 로그에 있는 &quot;sun.util.calendar.ZoneInfo&quot; 클래스에 대해 &quot;deserialization을 사용할 수 없습니다.&quot;와 같은 deserialization 오류입니다. CQ-4240419용 핫픽스
-* 상태 필드가 Mobile 양식 변환에서 채워지지 않습니다. CQ-4240597용 핫픽스
+* 상태 필드가 모바일 양식 변환에서 채워지지 않습니다. CQ-4240597용 핫픽스
 * 패턴 방지 목록에서 템플릿에 있는 구성 요소의 참조 사용을 제거합니다. CQ-4239217용 핫픽스
 * HTML5 숫자 상자를 부동 또는 소수점으로 설정하면 서로 다른 브라우저에서 다른 유효성 검사 결과가 표시됩니다. NPR-23528: CQ-4244097용 핫픽스
 * (이미지 업로드) 이미지가 DOR 미리 보기에 표시되지 않습니다. CQ-4243178용 핫픽스
@@ -1983,10 +1983,10 @@ AEM Forms의 주요 사항은 다음과 같습니다.
 * Forms Portal 초안 및 제출 구성에 DB 구성이 지정되었음에도 불구하고 저장 및 제출된 양식에 대한 항목이 crx/de로 채워집니다. CQ-4240726용 핫픽스
 * (검색 및 목록) 고급 검색 제목 고정 값은 같음 이 아닌 포함으로 작동해야 합니다. CQ-4245499용 핫픽스
 
-**Mobile Forms**
+**모바일 Forms**
 
-* Mobile Forms에서 날짜 필드가 겹칩니다. CQ-4242256용 핫픽스
-* Mobile Forms에 대한 양식 제출은 트랜잭션 기록 서비스를 사용하여 트랜잭션으로 기록해야 합니다. CQ-4246166용 핫픽스
+* 날짜 필드가 Mobile Forms에서 겹칩니다. CQ-4242256용 핫픽스
+* 모바일 Forms에 대한 양식 제출은 트랜잭션 기록 서비스를 사용하는 트랜잭션으로 기록해야 합니다. CQ-4246166용 핫픽스
 * 양식 세트의 양식 제출은 트랜잭션 기록 서비스를 사용하여 트랜잭션으로 기록해야 합니다. CQ-4246165용 핫픽스
 
 **AEM Forms 앱**
@@ -2064,12 +2064,12 @@ AEM Forms의 주요 사항은 다음과 같습니다.
 
 **기능 팩 포함됨**
 
-**에셋**
+**자산**
 
 * 향상된 스마트 태그 기능이 추가되었습니다. 자세한 내용은 [향상된 스마트 태그](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951: CQ-4234883용 핫픽스
 * InDesign에 AEM Assets 참조가 도입되었습니다. 자세한 내용은 [InDesign의 AEM Assets 참조](/help/assets/managing-linked-subassets.md). NPR-23386
 
-**Sites**
+**사이트**
 
 * (페이지 작성) 이미지 편집기 개선 사항. 자세한 내용은 [이미지 편집기](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html). NPR-24267: CQ-4245502용 핫픽스
 
@@ -2226,7 +2226,7 @@ Maven 프로젝트에서 Uber Jar를 사용하려면 문서 [Uber jar 사용 �
 
 | 영역 | 기능 | 대체 | 버전 |
 |---|---|---|---|
-| 에셋 | 하위 자산에 대한 태그 작업 관리 | 교체 없음 | AEM 6.4.2.0 |
+| 자산 | 하위 자산에 대한 태그 작업 관리 | 교체 없음 | AEM 6.4.2.0 |
 | Assets과 Adobe Creative Cloud 통합 | [AEM과 Creative Cloud 폴더 공유](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html)는 Creative 사용자에게 AEM의 자산에 대한 액세스 권한을 제공하는 방법으로 AEM 6.2에 도입되었습니다. Creative Cloud 애플리케이션에서 새롭게 출시된 기능인 Adobe Asset Link는 Photoshop, InDesign 및 Illustrator에서 직접 AEM 자산에 액세스할 수 있는 강력한 권한과 함께 우수한 사용자 경험을 제공합니다. Adobe는 폴더 공유 기능에 대한 추가 개선을 하지 않습니다. 이 기능은 AEM에 포함되어 있지만 고객은 교체 서비스를 사용하는 것이 좋습니다. | Adobe 자산 링크 또는 데스크탑 앱. 자세한 내용은 [AEM Creative Cloud 통합](/help/assets/aem-cc-integration-best-practices.md) 문서를 참조하십시오. | AEM 6.4.4.0 |
 
 ### 알려진 문제 {#known-issues}
@@ -2262,7 +2262,7 @@ AEM 6.4.8.0에 포함된 콘텐츠 패키지 목록
 
 ### 유용한 리소스 {#helpful-resources}
 
-* [AEM 6.4 릴리스 노트](../release-notes/release-notes.md)
+* [AEM 6.4 릴리스 정보](../release-notes/release-notes.md)
 * [AEM 제품 페이지](https://www.adobe.com/kr/solutions/web-experience-management.html)
 * [AEM 6.4 설명서](https://helpx.adobe.com/kr/support/experience-manager/6-4.html)
 * [Adobe 우선 순위 제품 업데이트](https://www.adobe.com/kr/subscription/priority-product-update.html) 구독

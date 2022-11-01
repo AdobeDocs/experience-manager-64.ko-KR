@@ -8,7 +8,7 @@ user-guide-title: Adobe Experience Manager 6.4 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 role: User
-source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '3729'
 ht-degree: 4%
@@ -119,7 +119,7 @@ ht-degree: 4%
       + [Forms JEE 워크플로우](using/forms-workflow-jee-handling-user-data.md)
       + [Forms 포털](using/forms-portal-handling-user-data.md)
       + [서신 관리](using/correspondence-management-handling-user-data.md)
-      + [Adobe Sign과 통합](/help/forms/using/integration-adobe-sign-handling-user-data.md)
+      + [Acrobat Sign과 통합](/help/forms/using/integration-adobe-sign-handling-user-data.md)
       + [문서 보안](/help/forms/using/document-security-handling-user-data.md)
    + AEM Forms 환경 강화 {#hardening-aem-forms-environment}
       + [OSGi 환경에서 AEM 양식 강화 및 보안](using/hardening-securing-aem-forms-environment.md)
@@ -161,7 +161,7 @@ ht-degree: 4%
 + 적응형 Forms - 고급 작성 {#adaptive-forms-advanced-authoring}
    + [JSON 스키마를 사용하여 적응형 양식 만들기](using/adaptive-form-json-schema-form-model.md)
    + [XML 스키마를 사용하여 적응형 양식 만들기](using/adaptive-form-xml-schema-form-model.md)
-   + [적응형 양식에서 Adobe Sign 사용](using/working-with-adobe-sign.md)
+   + [적응형 양식에서 Acrobat Sign 사용](using/working-with-adobe-sign.md)
    + [테마 만들기 및 사용](using/themes.md)
    + [적응형 양식 규칙 편집기](using/rule-editor.md)
    + [적응형 양식에서 양식 데이터 모델 서비스를 호출하는 API](using/invoke-form-data-model-services.md)
@@ -181,7 +181,7 @@ ht-degree: 4%
    + [적응형 양식 테스트 자동화](using/calvin.md)
    + [적응형 양식의 스타일 지정 구문](using/styling-constructs-adaptive-forms.md)
    + [적응형 Forms과 XFA 양식 템플릿 동기화](using/synchronizing-adaptive-forms-xfa.md)
-   + [Adobe Sign과 AEM Forms 통합](using/adobe-sign-integration-adaptive-forms.md)
+   + [Acrobat Sign과 AEM Forms 통합](using/adobe-sign-integration-adaptive-forms.md)
    + [양식의 자산에 대한 검토 만들기 및 관리](using/create-reviews-forms.md)
    + [적응형 양식에 대한 표준 유효성 검사 오류 메시지](using/standard-validation-error-messages-adaptive-forms.md)
 + 대화형 통신 {#interactive-communications}

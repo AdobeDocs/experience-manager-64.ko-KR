@@ -7,7 +7,7 @@ uuid: 57c872d6-c6ca-4f78-a98c-f9487f1d673c
 contentOwner: aheimoz
 discoiquuid: f2bd4d96-55a5-4fbd-bede-1747c2ec63c8
 exl-id: f8e25989-6ed3-4b35-95e5-fbfd7c51d622
-source-git-commit: dba3b09035e6ffafd1681b370e3a10a76564bf65
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '4637'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## Forms Workflow 단계 {#forms-workflow-steps}
 
-Forms 워크플로우 단계는 AEM 워크플로우에서 AEM Forms 관련 작업을 수행합니다. 이러한 단계를 통해 OSGi에서 Forms 중심의 워크플로우를 기반으로 적응형 양식을 신속하게 작성할 수 있습니다. 이러한 워크플로우는 기본 검토 및 승인 작업 과정, 내부 및 방화벽 비즈니스 프로세스를 개발하는 데 사용할 수 있습니다. Forms Workflow 단계를 사용하여 문서 서비스를 시작하고, Adobe Sign 서명 워크플로우와 통합하고, 기타 AEM Forms 작업을 수행할 수도 있습니다. 필요한 경우 [AEM Forms 추가 기능](https://www.adobe.com/go/learn_aemforms_documentation_63) 워크플로우에서 이러한 단계를 사용하려면
+Forms 워크플로우 단계는 AEM 워크플로우에서 AEM Forms 관련 작업을 수행합니다. 이러한 단계를 통해 OSGi에서 Forms 중심의 워크플로우를 기반으로 적응형 양식을 신속하게 작성할 수 있습니다. 이러한 워크플로우는 기본 검토 및 승인 작업 과정, 내부 및 방화벽 비즈니스 프로세스를 개발하는 데 사용할 수 있습니다. Forms Workflow 단계를 사용하여 문서 서비스를 시작하고, Acrobat Sign 서명 워크플로우와 통합하고, 기타 AEM Forms 작업을 수행할 수도 있습니다. 필요한 경우 [AEM Forms 추가 기능](https://www.adobe.com/go/learn_aemforms_documentation_63) 워크플로우에서 이러한 단계를 사용하려면
 
 ## 작업 단계 할당 {#assign-task-step}
 
@@ -214,11 +214,11 @@ Forms 워크플로우 단계는 AEM 워크플로우에서 AEM Forms 관련 작�
 
 ## 문서 서명 단계 {#sign-document-step}
 
-문서 서명 단계에서는 Adobe Sign을 사용하여 문서에 서명할 수 있습니다. 문서 서명 단계에는 다음 속성이 있습니다.
+문서 서명 단계에서는 Acrobat Sign을 사용하여 문서에 서명할 수 있습니다. 문서 서명 단계에는 다음 속성이 있습니다.
 
 * **계약 이름:** 계약의 제목을 지정합니다. 계약 이름은 서명자에게 보내는 전자 메일의 제목 및 본문 텍스트의 일부가 됩니다.
 * **로케일:** 전자 메일 및 확인 옵션에 대한 언어를 지정합니다.
-* **Adobe Sign Cloud 구성**: Adobe Sign 클라우드 구성을 선택합니다. AEM Forms용 Adobe Sign을 구성하지 않은 경우 [Adobe Sign과 AEM Forms 통합](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
+* **Acrobat Sign Cloud 구성**: Acrobat Sign 클라우드 구성을 선택합니다. AEM Forms용 Acrobat Sign을 구성하지 않은 경우 [Acrobat Sign과 AEM Forms 통합](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
 * **서명할 문서:** 페이로드를 기준으로 한 위치에서 문서를 선택하거나, 페이로드를 문서로 사용하거나, 문서의 절대 경로를 지정할 수 있습니다.
 * **입력 첨부 경로:** 첨부 파일을 선택합니다. 이러한 첨부 파일은 서명 문서에 포함되어 있습니다. 첨부 파일을 페이로드에 대해 위치에 유지하거나 첨부 파일의 절대 경로를 지정할 수 있습니다.
@@ -234,8 +234,8 @@ Forms 워크플로우 단계는 AEM 워크플로우에서 AEM Forms 관련 작�
 * **서명자 선택:** 문서의 서명자를 선택하는 방법을 지정합니다. 워크플로우를 사용자나 그룹에 동적으로 할당하거나 서명자의 세부 사항을 수동으로 추가할 수 있습니다.
 * **서명자를 선택하는 스크립트 또는 서비스:** 이 옵션은 서명자 선택 필드에서 동적으로 옵션을 선택한 경우에만 사용할 수 있습니다. ECMAScript 또는 서비스를 지정하여 문서에 대한 서명자 및 확인 옵션을 선택할 수 있습니다.
 
-* **서명자 세부 정보:** 서명자 선택 필드에서 수동 옵션을 선택한 경우에만 옵션을 사용할 수 있습니다. 이메일 주소를 지정하고 선택적 확인 메커니즘을 선택합니다. 2단계 확인 메커니즘을 선택하기 전에 구성된 Adobe Sign 계정에 대해 해당 확인 옵션이 활성화되어 있는지 확인하십시오.
-* **상태 변수:** Adobe Sign이 활성화된 문서는 문서의 서명 상태를 변수에 저장합니다. 상태 변수의 이름을 지정합니다(adobeSignStatus). 인스턴스의 상태 변수는 /etc/workflow/instances/ 의 CRXDE에서 사용할 수 있습니다.&lt;server>/&lt;date-time>/&lt;instance of=&quot;&quot; workflow=&quot;&quot; model=&quot;&quot;>/workItems/&lt;node>/metaData에 변수의 상태가 포함되어 있습니다.
+* **서명자 세부 정보:** 서명자 선택 필드에서 수동 옵션을 선택한 경우에만 옵션을 사용할 수 있습니다. 이메일 주소를 지정하고 선택적 확인 메커니즘을 선택합니다. 2단계 확인 메커니즘을 선택하기 전에 구성된 Acrobat Sign 계정에 대해 해당 확인 옵션이 활성화되어 있는지 확인하십시오.
+* **상태 변수:** Acrobat Sign이 활성화된 문서는 문서의 서명 상태를 변수에 저장합니다. 상태 변수의 이름을 지정합니다(adobeSignStatus). 인스턴스의 상태 변수는 /etc/workflow/instances/ 의 CRXDE에서 사용할 수 있습니다.&lt;server>/&lt;date-time>/&lt;instance of=&quot;&quot; workflow=&quot;&quot; model=&quot;&quot;>/workItems/&lt;node>/metaData에 변수의 상태가 포함되어 있습니다.
 * **서명된 문서 경로:** 서명된 문서를 보관할 위치를 지정합니다. 페이로드 파일을 덮어쓰거나 서명된 문서를 페이로드 디렉토리 내의 위치에 배치할 수 있습니다.
 
 ## 문서 서비스 단계 {#document-services-steps}
