@@ -1,29 +1,29 @@
 ---
 title: 컨텐츠 조각 관리
-seo-title: 컨텐츠 조각 관리
+seo-title: Managing Content Fragments
 description: 컨텐츠 조각은 자산으로 저장되므로 자산 콘솔에서 주로 관리됩니다.
-seo-description: 컨텐츠 조각은 자산으로 저장되므로 자산 콘솔에서 주로 관리됩니다.
+seo-description: Content Fragments are stored as Assets, so are primarily managed from the Assets console.
 uuid: 0659cf03-b4e8-4b8b-bec7-0082f980115a
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
 exl-id: b21ba7a1-6e6f-4b95-9336-b49f7e932af5
-feature: 콘텐츠 조각
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1492'
 ht-degree: 98%
 
 ---
 
-# 컨텐츠 조각 관리 {#managing-content-fragments}
+# 콘텐츠 조각 관리 {#managing-content-fragments}
 
 >[!CAUTION]
 >
->일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md)을 적용해야 합니다.
+>일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md).
 
 컨텐츠 조각은 **[!UICONTROL 자산]**&#x200B;으로 저장되므로 **[!UICONTROL 자산]** 콘솔에서 주로 관리됩니다.
 
@@ -31,17 +31,17 @@ ht-degree: 98%
 >
 >그런 다음 컨텐츠 조각을 작성 페이지에 사용합니다. [컨텐츠 조각으로 페이지 작성](/help/sites-authoring/content-fragments.md)을 참조하십시오.
 
-## 컨텐츠 조각 만들기 {#creating-content-fragments}
+## 콘텐츠 조각 만들기 {#creating-content-fragments}
 
-### 컨텐츠 모델 만들기 {#creating-a-content-model}
+### 콘텐츠 모델 만들기 {#creating-a-content-model}
 
-구조화된 컨텐츠와 함께 컨텐츠 조각을 생성하기 전에 [컨텐츠 조각 모델](content-fragments-models.md)을 활성화하고 생성할 수 있습니다.
+구조화된 콘텐츠를 사용하여 콘텐츠 조각을 생성하기 전에 [콘텐츠 조각 모델](content-fragments-models.md)을 활성화하고 생성할 수 있습니다.
 
 >[!NOTE]
 >
 >템플릿에 대한 자세한 내용은 [컨텐츠 조각 개발](/help/sites-developing/customizing-content-fragments.md)을 참조하십시오. 템플릿은 단순 컨텐츠 조각에 사용됩니다.
 
-### 컨텐츠 조각 만들기 {#creating-a-content-fragment}
+### 콘텐츠 조각 만들기 {#creating-a-content-fragment}
 
 컨텐츠 조각을 만드는 방법은 기본적으로 단순 조각과 구조화된 조각 모두에 대해 동일합니다.
 
@@ -129,7 +129,7 @@ ht-degree: 98%
 
 >[!CAUTION]
 >
->컨텐츠 조각을 편집하려면 [적절한 권한](/help/sites-developing/customizing-content-fragments.md#asset-permissions)이 있어야 합니다. 문제가 발생하는 경우 시스템 관리자에게 문의하십시오.
+>콘텐츠 조각을 편집하려면 [적절한 권한](/help/sites-developing/customizing-content-fragments.md#asset-permissions)이 있어야 합니다. 문제가 발생하는 경우 시스템 관리자에게 문의하십시오.
 
 1. **[!UICONTROL 자산]** 콘솔을 사용하여 컨텐츠 조각의 위치로 이동합니다.
 1. 다음 방법 중 하나를 사용하여 편집할 조각을 엽니다.
@@ -144,16 +144,15 @@ ht-degree: 98%
    >[!NOTE]
    >
    >1. 이미 컨텐츠 페이지에서 조각을 참조 중이면 메시지가 표시됩니다.
-      >
-      >
-   2. 사이드 패널은 **[!UICONTROL 사이드 패널 전환]** 아이콘을 사용하여 숨기거나 표시할 수 있습니다.
+   >
+   >2. 사이드 패널은 **[!UICONTROL 사이드 패널 전환]** 아이콘을 사용하여 숨기거나 표시할 수 있습니다.
 
 
 1. 사이드 패널의 아이콘을 사용하여 세 가지 모드를 탐색합니다.
 
-   * 변형: [컨텐츠 편집](#editing-the-content-of-your-fragment) 및 [변형 관리](#creating-and-managing-variations-within-your-fragment)
+   * 변형: [콘텐츠 편집](#editing-the-content-of-your-fragment) 및 [변형 관리](#creating-and-managing-variations-within-your-fragment)
    * [주석](content-fragments-variations.md#annotating-a-content-fragment)
-   * [관련 컨텐츠](#associating-content-with-your-fragment)
+   * [관련 콘텐츠](#associating-content-with-your-fragment)
    * [메타데이터](#viewing-and-editing-the-metadata-properties-of-your-fragment)
 
    ![cfm-10](assets/cfm-10.png)
@@ -178,7 +177,7 @@ ht-degree: 98%
 
    >[!CAUTION]
    >
-   >컨텐츠 조각을 편집하려면 [적절한 권한](/help/sites-developing/customizing-content-fragments.md#asset-permissions)이 필요합니다. 문제가 발생하는 경우 시스템 관리자에게 문의하십시오.
+   >컨텐츠 조각을 편집하려면 다음을 수행해야 합니다 [적절한 권한](/help/sites-developing/customizing-content-fragments.md#asset-permissions). 문제가 발생하는 경우 시스템 관리자에게 문의하십시오.
 
    >[!NOTE]
    >
@@ -200,9 +199,9 @@ ht-degree: 98%
 1. 편집하기 위해 컨텐츠 조각을 열면 AEM에서는 *편집 세션*&#x200B;이 존재하는지 여부를 나타내는 쿠키 기반 토큰이 있는지 확인합니다.
 
    1. 토큰을 찾으면 조각은 기존 편집 세션의 일부로 간주됩니다.
-   1. 토큰을 사용할 수 *없고* 사용자가 컨텐츠 편집을 시작하는 경우에는 버전이 만들어지고 이 새 편집 세션에 대한 토큰이 클라이언트에 보내져 거기에서 쿠키에 저장됩니다.
+   1. 토큰을 사용할 수 *없고* 사용자가 콘텐츠 편집을 시작하는 경우에는 버전이 만들어지고 이 새 편집 세션에 대한 토큰이 클라이언트에 보내져 거기에서 쿠키에 저장됩니다.
 
-1. *활성* 편집 세션이 있는 동안 편집되는 컨텐츠는 600초(기본값)마다 자동으로 저장됩니다.
+1. *활성* 편집 세션이 있는 동안 편집되는 콘텐츠는 600초(기본값)마다 자동으로 저장됩니다.
 
    >[!NOTE]
    >
@@ -215,33 +214,33 @@ ht-degree: 98%
 1. 사용자가 편집을 **[!UICONTROL 취소]**&#x200B;하도록 선택하면 편집 세션이 시작될 때 만들어진 버전이 복원되고 토큰이 제거되어 편집 세션이 종료됩니다.
 1. 사용자가 편집 내용을 **[!UICONTROL 저장]**&#x200B;하도록 선택하면 업데이트된 요소/변형이 유지되고 토큰이 제거되어 편집 세션이 종료됩니다.
 
-## 조각의 컨텐츠 편집 {#editing-the-content-of-your-fragment}
+## 조각 콘텐츠 편집 {#editing-the-content-of-your-fragment}
 
-조각을 열면 [변형](content-fragments-variations.md) 탭을 사용하여 컨텐츠를 작성할 수 있습니다.
+조각을 열면 [변형](content-fragments-variations.md) 탭을 사용하여 콘텐츠를 작성할 수 있습니다.
 
 ## 조각 내 변형 생성 및 관리 {#creating-and-managing-variations-within-your-fragment}
 
-마스터 컨텐츠를 만들면 해당 컨텐츠의 [변형](content-fragments-variations.md)을 만들고 관리할 수 있습니다.
+마스터 콘텐츠를 만들면 해당 콘텐츠의 [변형](content-fragments-variations.md)을 만들고 관리할 수 있습니다.
 
-## 조각과 컨텐츠 연결 {#associating-content-with-your-fragment}
+## 조각과 콘텐츠 연결 {#associating-content-with-your-fragment}
 
-조각과 [컨텐츠를 연결](content-fragments-assoc-content.md)할 수도 있습니다. 이렇게 하면 조각이 컨텐츠 페이지에 추가될 때 자산(즉, 이미지)을 조각과 함께 필요에 따라 사용할 수 있도록 연결을 제공합니다.
+조각과 [콘텐츠를 연결](content-fragments-assoc-content.md)할 수도 있습니다. 이렇게 하면 조각이 콘텐츠 페이지에 추가될 때 에셋(즉, 이미지)을 조각과 함께 필요에 따라 사용할 수 있도록 연결을 제공합니다.
 
 ## 조각의 메타데이터(속성) 보기 및 편집 {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
 [[!UICONTROL 메타데이터]](content-fragments-metadata.md) 탭을 사용하여 조각의 속성을 보고 편집할 수 있습니다.
 
-## 컨텐츠 조각에 대한 타임라인 {#timeline-for-content-fragments}
+## 콘텐츠 조각 타임라인 {#timeline-for-content-fragments}
 
-표준 옵션뿐만 아니라 [타임라인](managing-assets-touch-ui.md#timeline)도 컨텐츠 조각과 관련된 정보와 작업을 모두 제공합니다.
+표준 옵션뿐만 아니라 [타임라인](managing-assets-touch-ui.md#timeline)도 콘텐츠 조각과 관련된 정보와 작업을 모두 제공합니다.
 
 * 버전, 댓글 및 주석에 대한 정보 보기
 * 버전에 대한 작업
 
-   * **[[!UICONTROL 이 버전으로 되돌리기]](#reverting-to-a-version)**(기존 조각을 선택한 후 특정 버전을 선택합니다.)
-   * **[[!UICONTROL 현재 항목에 비교]](#comparing-fragment-versions)**(기존 조각을 선택한 후 특정 버전을 선택합니다.)
-   * **[!UICONTROL 레이블]** 및/또는 **[!UICONTROL 댓글]** 추가(기존 조각을 선택한 후 특정 버전을 선택합니다.)
-   * **[!UICONTROL 다른 버전으로 저장]**(기존 조각을 선택한 후 타임라인 하단의 위쪽 화살표를 선택합니다.)
+   * **[[!UICONTROL 이 버전으로 되돌리기]](#reverting-to-a-version)** (기존 조각을 선택한 후 특정 버전을 선택합니다.)
+   * **[[!UICONTROL 현재 항목에 비교]](#comparing-fragment-versions)** (기존 조각을 선택한 후 특정 버전을 선택합니다.)
+   * **[!UICONTROL 레이블]** 및/또는 **[!UICONTROL 댓글]** 추가 (기존 조각을 선택한 후 특정 버전을 선택합니다.)
+   * **[!UICONTROL 다른 버전으로 저장]** (기존 조각을 선택한 후 타임라인 하단의 위쪽 화살표를 선택합니다.)
 
 * 주석에 대한 작업
 
@@ -251,13 +250,11 @@ ht-degree: 98%
 >
 >댓글은
 >
->* 모든 자산에 대한 표준 기능입니다.
+>* 모든 에셋에 대한 표준 기능입니다.
 >* 타임라인에서 만들어집니다.
->* 조각 자산과 관련되어 있습니다.
-
+>* 조각 에셋과 관련되어 있습니다.
 >
->
-주석(컨텐츠 조각)은
+>주석(콘텐츠 조각)은
 >
 >* 조각 편집기에서 입력됩니다.
 >* 조각 내의 선택된 텍스트 세그먼트에 대한 것입니다.
@@ -273,7 +270,7 @@ ht-degree: 98%
 
 이 옵션을 선택하면 다음 항목이 열립니다.
 
-* **[!UICONTROL 현재]**(최신) 버전(왼쪽)
+* **[!UICONTROL 현재]** (최신) 버전 (왼쪽)
 
 * 선택한 버전 **v&lt;*x.y*>**(오른쪽)
 
@@ -324,7 +321,7 @@ ht-degree: 98%
 
 ## 조각 삭제 {#deleting-a-fragment}
 
-조각을 삭제하려면
+조각을 삭제하려면 다음 작업을 수행합니다.
 
 1. **[!UICONTROL 자산]** 콘솔에서 컨텐츠 조각의 위치로 이동합니다.
 1. 조각을 선택합니다.

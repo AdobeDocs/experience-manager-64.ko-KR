@@ -2,20 +2,20 @@
 title: Markdown
 seo-title: Markdown
 description: 작성 시 컨텐츠 조각 편집기에서는 Markdown 구문을 사용하므로 컨텐츠를 쉽게 작성할 수 있습니다.
-seo-description: 작성 시 컨텐츠 조각 편집기에서는 Markdown 구문을 사용하므로 컨텐츠를 쉽게 작성할 수 있습니다.
+seo-description: When you are authoring, the content fragment editor uses markdown syntax to allow you to easily write content.
 uuid: 12b185a5-3d87-4d7c-8d09-8cc2726009a8
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 exl-id: 209f0e02-b883-4104-8358-01cab15e5db2
-feature: 콘텐츠 조각
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
-source-wordcount: '556'
-ht-degree: 95%
+source-wordcount: '535'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 95%
 
 >[!CAUTION]
 >
->일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md)을 적용해야 합니다.
+>일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md).
 
 [작성](content-fragments-variations.md#authoring-your-content) 시 컨텐츠 조각 편집기에서는 *Markdown* 구문을 사용하므로 컨텐츠를 쉽게 작성할 수 있습니다.
 
@@ -177,7 +177,7 @@ ht-degree: 95%
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-코드 범위를 나타내려면 백틱 따옴표(&amp;grave;)로 묶습니다. 서식이 미리 지정된 코드 블록과 달리 코드 범위는 일반 단락 내의 코드를 나타냅니다.
+코드 범위를 나타내려면 백틱 따옴표(&grave;)로 묶습니다. 서식이 미리 지정된 코드 블록과 달리 코드 범위는 일반 단락 내의 코드를 나타냅니다.
 
 예:
 

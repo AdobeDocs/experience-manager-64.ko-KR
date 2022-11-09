@@ -1,18 +1,18 @@
 ---
 title: AEM Sites - GDPR 준비 완료
-seo-title: AEM Sites - GDPR 준비 완료
+seo-title: AEM Sites - GDPR Readiness
 description: AEM Sites에 대한 GDPR 준비 완료에 대해 알아봅니다.
-seo-description: AEM Sites에 대한 GDPR 준비 완료에 대해 알아봅니다.
+seo-description: Learn about the details of GDPR Readiness for AEM Sites.
 uuid: 00d1fdce-ef9a-4902-a7a5-7225728e8ffc
-contentOwner: aheimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
 exl-id: 38bae0d7-9544-42d0-9766-45c66f254e5c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '836'
 ht-degree: 100%
 
 ---
@@ -41,7 +41,7 @@ AEM Sites는 GDPR 준수 의무와 관련하여 고객을 지원할 준비가 �
 
 사이트에서 방문자를 인증하는 데 사용되는 사용자 계정과 게시 서버의 UGC 컨텐츠는 [플랫폼 GDPR 설명서](/help/managing/data-protection-and-privacy.md)에서 다룹니다.
 
-기본적으로 AEM Sites 구성 요소는 게시 서버에서 방문자가 입력한 양식 데이터를 저장하지 않습니다. 추가적인 처리가 필요하면 데이터를 타사 시스템 또는 Adobe Campaign에 전달하는 것이 좋습니다.
+기본적으로 AEM Sites 구성 요소는 게시 서버에서 방문자가 입력한 양식 데이터를 저장하지 않습니다. 추가적인 처리가 필요하면 데이터를 서드파티 시스템 또는 Adobe Campaign에 전달하는 것이 좋습니다.
 
 ## 옵트인/옵트아웃 {#opt-in-opt-out}
 
@@ -103,7 +103,7 @@ AEM에서는 [ContextHub](/help/sites-developing/contexthub.md)와 관련하여 
    // if isOptedOut is true, ContextHub is running in opt-out mode
    ```
 
-### ContextHub의 지속성 미리 보기 {#previewing-persistence-of-contexthub}
+### ContextHub의 지속성 미리보기 {#previewing-persistence-of-contexthub}
 
 ContextHub에서 사용한 지속성을 미리 보려면 다음 작업을 수행할 수 있습니다.
 

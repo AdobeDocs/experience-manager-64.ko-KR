@@ -1,21 +1,21 @@
 ---
 title: 메타데이터 - 조각 속성
-seo-title: 메타데이터 - 조각 속성
+seo-title: Metadata - Fragment Properties
 description: 컨텐츠 조각의 메타데이터(속성)를 보고 편집할 수 있습니다.
-seo-description: 컨텐츠 조각의 메타데이터(속성)를 보고 편집할 수 있습니다.
+seo-description: You can view and edit the metadata (properties) for content fragments.
 uuid: 2744610b-215a-4ee8-893e-e167376f9df5
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: 96cf7c92-af98-417f-ab60-b368e3846ef8
 exl-id: 0123fb44-9f38-4d9e-9dce-7c9cfd4260e1
-feature: 컨텐츠 조각,메타데이터
+feature: Content Fragments,Metadata
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 87%
+source-wordcount: '112'
+ht-degree: 88%
 
 ---
 
@@ -23,13 +23,13 @@ ht-degree: 87%
 
 >[!CAUTION]
 >
->일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md)을 적용해야 합니다.
+>일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md).
 
 ## 속성/메타데이터 편집 {#editing-properties-meta-data}
 
-컨텐츠 조각에 대한 메타데이터(속성)를 보고 편집할 수 있습니다.
+콘텐츠 조각에 대한 메타데이터(속성)를 보고 편집할 수 있습니다.
 
-1. **[!UICONTROL 자산]** 콘솔에서 컨텐츠 조각의 위치로 이동합니다.
+1. **[!UICONTROL 에셋]** 콘솔에서 콘텐츠 조각의 위치로 이동합니다.
 1. 다음 중 하나를 선택합니다.
 
    * [속성 보기를 선택하여 대화 상자를 엽니다](managing-assets-touch-ui.md#editing-properties). 볼 수도 있도록 열리면 편집할 수도 있습니다.

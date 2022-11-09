@@ -1,20 +1,20 @@
 ---
 title: 컨텐츠 조각 - 삭제 고려 사항
-seo-title: 컨텐츠 조각 - 삭제 고려 사항
+seo-title: Content Fragments - Delete Considerations
 description: 컨텐츠 조각 - 삭제 고려 사항
-seo-description: 컨텐츠 조각 - 삭제 고려 사항
+seo-description: Content Fragments - Delete Considerations
 uuid: b4161a0e-7e17-4547-9bdd-cf3b1d0d7d63
-contentOwner: aheimoz
+contentOwner: AEM Docs
 topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: eaf65bdd-9091-4985-90bd-5eb2148965e3
 exl-id: 43b11355-ee21-421c-8809-cd8a0443a03a
-feature: 콘텐츠 조각
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '460'
 ht-degree: 97%
 
 ---
@@ -23,11 +23,11 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md)을 적용해야 합니다.
+>일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](/help/release-notes/sp-release-notes.md).
 
 ## 권한 - 삭제 또는 삭제 안 함 {#permissions-delete-or-not-delete}
 
-컨텐츠 삭제 기능은 강력하지만, 이러한 권한이 배포되는 방식을 제한하고 제어해야 하는 많은 업계에서는 민감할 수 있습니다.
+콘텐츠 삭제 기능은 강력하지만, 이러한 권한이 배포되는 방식을 제한하고 제어해야 하는 많은 업계에서는 민감할 수 있습니다.
 
 삭제 권한과 관련하여 컨텐츠 조각은 두 가지 수준에서 고려되어야 합니다.
 
@@ -38,9 +38,9 @@ ht-degree: 97%
 
 1. **변형이나 하위 노드와 같이 컨텐츠 조각을 구성하는 여러 하위 엔티티.**
 
-   컨텐츠 조각 편집기의 기본 작업을 수행하려면 이러한 임시 하위 요소를 삭제할 수 있어야 합니다. 예를 들어 변형을 조작할 때 또는 메타데이터를 편집하거나 관련 컨텐츠를 관리할 때도 마찬가지입니다.
+   콘텐츠 조각 편집기의 기본 작업을 수행하려면 이러한 임시 하위 요소를 삭제할 수 있어야 합니다. 예를 들어 변형을 조작할 때 또는 메타데이터를 편집하거나 관련 콘텐츠를 관리할 때도 마찬가지입니다.
 
-   * **사용 사례**: 컨텐츠 조각을 편집/업데이트해야 하지만, **전체 조각 삭제는 허용되지 않는** 사용자.
+   * **사용 사례**: 콘텐츠 조각을 편집/업데이트해야 하지만, **전체 조각 삭제는 허용되지 않는** 사용자.
    * **권한**: [편집기 기능에만 필요한 권한](content-fragments-delete.md#permissions-required-for-editor-functionality-only)을 참조하십시오.
 
 >[!NOTE]
@@ -53,7 +53,7 @@ ht-degree: 97%
 
 ## 편집기 기능에만 필요한 권한 {#permissions-required-for-editor-functionality-only}
 
-컨텐츠 조각을 편집/업데이트해야 하는데 **전체 조각 삭제가 허용되지 않는** 사용자의 경우 컨텐츠 조각 편집기의 기본 작업을 수행하려면 임시 하위 요소를 삭제할 수 있어야 하므로 특정 권한을 지정해야 합니다. 
+콘텐츠 조각을 편집/업데이트해야 하는데 **전체 조각 삭제가 허용되지 않는** 사용자의 경우 콘텐츠 조각 편집기의 기본 작업을 수행하려면 임시 하위 요소를 삭제할 수 있어야 하므로 특정 권한을 지정해야 합니다.
 
 예를 들어 변형을 조작할 때 또는 메타데이터를 편집하거나 관련 컨텐츠를 관리할 때도 마찬가지입니다.
 
@@ -63,31 +63,31 @@ ht-degree: 97%
 
 조각을 편집/업데이트하는 데 필요한 권한은 컨텐츠 조각을 포함하는 노드나 적절한 상위 노드(`/content/dam` 하의 어떤 하위 수준이든)에 적용되어야 합니다. 권한은 이러한 상위 노드에 지정되면 해당 분기 내의 모든 노드에 적용됩니다.
 
-예를 들어 다음과 같은 모든 컨텐츠 조각을 포함하는 폴더:
+예를 들어 다음과 같은 모든 콘텐츠 조각을 포함하는 폴더:
 
 * `/content/dam/contentfragments`
 
 >[!CAUTION]
 >
->모든 컨텐츠 조각이 `/content/dam`에 저장되므로 여기에 대한 권한을 설정할 수도 있습니다.
+>모든 콘텐츠 조각이 `/content/dam`에 저장되므로 여기에 대한 권한을 설정할 수도 있습니다.
 >
->하지만 이 작업을 수행하면 다른 *모든* 자산 유형에도 동일한 삭제 권한이 적용됩니다.
+>하지만 이 작업을 수행하면 다른 *모든* 에셋 유형에도 동일한 삭제 권한이 적용됩니다.
 
-특정 사용자 및/또는 그룹이 컨텐츠 조각을 편집/업데이트할 수 있도록 허용하기 위한 권한 전제 조건은 다음과 같습니다.
+특정 사용자 및/또는 그룹이 콘텐츠 조각을 편집/업데이트할 수 있도록 허용하기 위한 권한 전제 조건은 다음과 같습니다.
 
 >[!NOTE]
 >
 >이 목록에는 삭제 권한뿐만 아니라 필요한 모든 권한이 표시됩니다.
 
-* 컨텐츠 조각 노드 또는 폴더의 경우:
+* 콘텐츠 조각 노드 또는 폴더의 경우:
 
    * `jcr:addChildNodes`, `jcr:modifyProperties`
 
-* 모든 컨텐츠 조각의 `jcr:content`노드의 경우:
+* 모든 콘텐츠 조각의 `jcr:content`노드의 경우:
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` 및 `jcr:removeChildNodes`
 
-* 모든 컨텐츠 조각의 `jcr:content` 아래에 있는 모든 노드의 경우:
+* 모든 콘텐츠 조각의 `jcr:content` 아래에 있는 모든 노드의 경우:
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` 및 `jcr:removeChildNodes`, `jcr:removeNode`
 
