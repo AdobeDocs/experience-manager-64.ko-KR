@@ -10,10 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
 exl-id: 3f2cb2f9-2a4e-4c5d-b937-b693f27e11da
-source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '1647'
-ht-degree: 3%
+source-wordcount: '1641'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ AEM 6.4 Assets에서 수행한 주요 기능, 특징 및 개선 사항은 이러
 
 기업 Creative Cloud의 Adobe 자산 링크를 사용하면 컨텐츠 작성 프로세스에서 광고 팀과 마케터 간의 협업을 간소화할 수 있습니다. Enterprise용 Creative Cloud의 새로운 기본 기능으로서, 이러한 도구를 종료하지 않고 Adobe Photoshop, Adobe Illustrator 또는 Adobe InDesign에서 직접 AEM Assets에 연결할 수 있습니다.
 
-기능, 사전 요구 사항 및 액세스 방법에 대한 자세한 내용은 [자산 링크 Adobe](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 페이지를 참조하십시오.
+기능, 사전 요구 사항 및 액세스 방법에 대한 자세한 내용은 [Adobe 자산 링크](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 페이지.
 
 ## 향상된 스마트 태그(Adobe Sensei 제공) {#enhanced-smart-tags-powered-by-adobe-sensei}
 
@@ -34,7 +34,7 @@ AEM 6.4에서는 AEM 6.3에서 실행된 스마트 태그 외에도 향상된 �
 * 스마트 컨텐츠 서비스는 고객의 비즈니스 분류법을 학습하고 이를 사용하여 일반 태그 외에도 고객 관련 태그로 디지털 자산에 자동으로 태그를 지정합니다. 자산 검색 기능이 크게 개선되고 출시 시간이 단축됩니다.
 * Adobe Sensei은 비즈니스 분류에 대한 이미지 인식 알고리즘을 교육할 수 있는 Smart Content Service를 지원합니다. 그런 다음 이 컨텐츠 인텔리전스를 사용하여 유사한 자산에 관련 태그를 적용하는 데 사용됩니다.
 
-AEM Assets 향상된 스마트 태그를 사용하려면 AEM 6.4](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html)의 최신 서비스 팩 [을 설치하십시오.
+AEM Assets 향상된 스마트 태그를 사용하려면 [AEM 6.4의 최신 서비스 팩](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html).
 
 ## 스마트 번역 검색(Adobe Sensei 제공) {#smart-translation-search-powered-by-adobe-sensei}
 
@@ -74,7 +74,7 @@ AEM 6.4는 검색, 검색, 다중 페이지 자산 및 관리 도구 영역에�
 
 카탈로그
 
-* 템플릿 사용자 인터페이스에 맞게 사용자 환경이 개선되었습니다. 자세한 내용은 [카탈로그 프로듀서](../sites-administering/catalog-producer.md)를 참조하십시오.
+* 템플릿 사용자 인터페이스에 맞게 사용자 환경이 개선되었습니다. 자세한 내용은 [카탈로그 제작자](../sites-administering/catalog-producer.md).
 
 ## 메타데이터 {#metadata}
 
@@ -105,7 +105,7 @@ AEM 6.4는 다음과 같은 중요한 자산 보고 개선 사항을 제공합�
 
 ## AEM Desktop App {#aem-desktop-app}
 
-AEM 데스크탑 앱이 AEM 6.4와 호환되는 버전 1.8로 업데이트되었습니다. AEM 데스크탑 앱에 대한 전체 변경 사항 목록은 전용 [AEM 데스크탑 앱 릴리스 노트](https://docs.adobe.com/content/help/ko/experience-manager-desktop-app/using/release-notes.html) 문서에 제공됩니다.\
+AEM 데스크탑 앱은 AEM 6.4와 호환되는 버전 1.8로 업데이트됩니다. AEM 데스크탑 앱의 전체 변경 사항 목록은 전용 페이지에 제공됩니다. [AEM 데스크탑 앱 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html) 문서.\
 다음은 AEM 6.3 이후 출시된 AEM 데스크탑 앱 주요 목록입니다.
 
 * 백그라운드에서 계층 폴더를 업로드할 수 있습니다.
@@ -117,8 +117,8 @@ AEM 데스크탑 앱이 AEM 6.4와 호환되는 버전 1.8로 업데이트되었
 
 설명서 및 모범 사례에 쉽게 액세스하기 위해 다음 설명서를 사용할 수 있습니다.
 
-* [애플리케이션 작업을 수행하는 최종 사용자를 대상으로 하는 사용 안내서](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html).
-* [설치 안내서](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/install-upgrade.html) - 함께 작동하도록 AEM 및 AEM 데스크탑 앱을 설정하는 관리자를 대상으로 합니다.
+* [사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)를 사용하도록 선택할 수 있습니다.
+* [설치 안내서](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/install-upgrade.html), 관리자가 함께 작동하도록 AEM 및 AEM 데스크탑 앱을 설정하는 것이 목표입니다.
 
 ## 계층형 스토리지 {#tiered-storage}
 
@@ -127,7 +127,7 @@ AEM 6.4에는 다양한 계층형 스토리지 환경 설정을 지원하고 라
 * 사용자가 원하는 대로 스토리지 클래스를 선택하고 나중에 변경하고 한 클래스에서 다른 클래스로 자산을 저장하는 규칙을 정의하거나 자산의 라이프사이클을 관리할 수 있습니다.
 * 사용자가 다른 AWS 또는 Azure를 선택하여 스토리지 비용을 줄일 수 있는 기능.
 
-지원되는 플랫폼에 대한 개요는 [기술 요구 사항 설명서](../sites-deploying/technical-requirements.md)를 참조하십시오.
+지원되는 플랫폼에 대한 개요를 알려면 [기술 요구 사항 설명서](../sites-deploying/technical-requirements.md).
 
 ## 폐쇄된 사용자 그룹 {#closed-user-group}
 
@@ -138,7 +138,7 @@ AEM 6.4에는 다양한 계층형 스토리지 환경 설정을 지원하고 라
 
 Dynamic Media in 6.4에서는 마스터 자산이 AEM Assets 웹 UI로 업로드 및 관리되고, Dynamic Media 클라우드 제공 서비스에서 다이내믹 표현물 및 기타 다이내믹 미디어 기능이 백그라운드에서 처리되는 새 모드를 지원합니다.
 
-이 모드(먼저 [AEM 6.3 기능 팩 14410 및 18912](https://helpx.adobe.com/kr/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html) 릴리스에서 도입됨)에서는 사용자가 최신 AEM Assets 웹 UI를 사용하여 종단 간 자산 관리 및 다이내믹 미디어 기능을 활용할 수 있으며, 게재 URL은 변경되지 않고 Dynamic Media Classic(Scene7)과 이전 버전과 호환되는 게재 서비스를 계속 활용할 수 있습니다.
+이 모드(의 릴리스에서 먼저 도입됨) [AEM 6.3 기능 팩 14410 및 18912](https://helpx.adobe.com/kr/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html)). 사용자는 최신 AEM Assets 웹 UI를 사용하여 종단 간 자산 관리 및 다이내믹 미디어 기능을 활용할 수 있으며, 게재 URL을 비롯하여 Dynamic Media Classic(Scene7)과 이전 버전과 호환되는 게재 서비스를 계속 활용할 수 있습니다.
 
 또한 AEM 6.4에서는 Adobe Sensei에서 제공하는 새로운 기능, VR 및 3D와 같은 신생 미디어에 대한 개선 사항, Dynamic Media 뷰어와 대화형 이미지 및 회전 배너의 경험 조각에 대한 지원 등이 도입되었습니다.
 
@@ -147,9 +147,9 @@ Dynamic Media in 6.4에서는 마스터 자산이 AEM Assets 웹 UI로 업로드
 * 스마트 자르기는 반응형 디자인을 위한 관심 영역을 보존하기 위해 이미지의 비파괴 자르기를 자동으로 제공합니다. 잘린 제안을 미리 보고 필요한 경우 수동으로 조정할 수 있습니다.
 * 이 기능을 사용하면 제품 이미지에 대한 자동 견본 생성을 사용할 수 있습니다. 자동 견본 생성을 사용하면 제품 이미지에 색상 견본, 패턴 견본 또는 둘 다를 자동으로 추가할 수 있습니다.
 
-자세한 내용은 [이미지 프로필](../assets/image-profiles.md) 설명서를 참조하십시오.
+자세한 내용은 [이미지 프로필](../assets/image-profiles.md) 설명서 를 참조하십시오.
 
-Dynamic Media 구성 요소에서 스마트 자르기를 사용하는 방법에 대한 자세한 내용은 [페이지에 Dynamic Media 자산 추가](../assets/adding-dynamic-media-assets-to-pages.md) 설명서를 참조하십시오.
+참조 - [페이지에 Dynamic Media 자산 추가](../assets/adding-dynamic-media-assets-to-pages.md) Dynamic Media 구성 요소에서 스마트 자르기 사용에 대해 자세히 알아보십시오.
 
 ### 스마트 이미징 {#smart-imaging}
 
@@ -162,7 +162,7 @@ Dynamic Media 구성 요소에서 스마트 자르기를 사용하는 방법에 
 ### 새롭게 향상된 미디어 및 뷰어 {#emerging-media-amp-viewer-enhancements}
 
 * 새 뷰어가 지원되며 사용자에게 더 나은 몰입형 경험을 제공합니다.
-* 파노라마 뷰어는 사용자의 참여를 유도하고 공간 장면, 속성, 위치 및 경관을 보다 잘 경험할 수 있는 기능을 제공합니다. 자세한 내용은 [파노라마 이미지](../assets/panoramic-images.md) 설명서를 참조하십시오.
+* 파노라마 뷰어는 사용자의 참여를 유도하고 공간 장면, 속성, 위치 및 경관을 보다 잘 경험할 수 있는 기능을 제공합니다. 자세한 내용은 [파노라마 이미지](../assets/panoramic-images.md) 설명서 를 참조하십시오.
 
 * VR 뷰어는 속성, 위치 및 경관에 몰입형 환경을 제공합니다.
 * 제품 이미지에 최적화된 세로 이미지 뷰어.

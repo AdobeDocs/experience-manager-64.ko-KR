@@ -1,8 +1,8 @@
 ---
 title: 페이지 분석 데이터 보기
-seo-title: 페이지 분석 데이터 보기
+seo-title: Seeing Page Analytics Data
 description: 페이지 컨텐츠의 효율성을 측정하려면 페이지 분석 데이터를 사용하십시오.
-seo-description: 페이지 컨텐츠의 효율성을 측정하려면 페이지 분석 데이터를 사용하십시오.
+seo-description: Use page analytics data to gauge the effectiveness of their page content
 uuid: 8dda89be-13e3-4a13-9a44-0213ca66ed9c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
 exl-id: 6509c0ce-fc3a-4248-8dc7-db10602c30d6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '439'
 ht-degree: 93%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 93%
 
 페이지 분석 데이터는 사이트 콘솔의 [목록 보기](/help/sites-authoring/basic-handling.md#list-view)에 표시됩니다. 페이지가 목록 형식으로 표시되면 기본적으로 다음 열을 사용할 수 있습니다.
 
-* 페이지 보기 수
+* 페이지 조회수
 * 고유 방문자 수
 * 페이지 시간
 
@@ -75,17 +75,17 @@ analytics-administrators 사용자 그룹의 구성원은 작성자가 추가 An
 
 ### 사이트에서 컨텐츠 인사이트 열기 {#opening-content-insights-from-sites}
 
-페이지 효과를 자세히 조사하려면 사이트 콘솔에서 [컨텐츠 인사이트](/help/sites-authoring/content-insights.md)를 엽니다.
+열기 [컨텐츠 인사이트](/help/sites-authoring/content-insights.md) 페이지 효과를 자세히 조사하려면 사이트 콘솔에서 를 클릭하십시오.
 
 1. 사이트 콘솔에서 컨텐츠 인사이트를 보려는 페이지를 선택합니다.
 1. 도구 모음에서 [분석 및 권장 사항] 아이콘을 클릭합니다.
 
    ![](do-not-localize/chlimage_1-16.png)
 
-## 페이지 편집기에서 볼 수 있는 Analytics(활동 맵)  {#analytics-visible-from-the-page-editor-activity-map}
+## 페이지 편집기에서 볼 수 있는 Analytics(활동 맵) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!CAUTION]
 >
 >Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다.
 >
->이제 Adobe Analytics](https://docs.adobe.com/content/help/ko-KR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)에서 제공하는 [ActivityMap 플러그인을 사용해야 합니다.
+>다음 [Adobe Analytics에서 제공하는 ActivityMap 플러그인](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) 이제 를 사용해야 합니다.

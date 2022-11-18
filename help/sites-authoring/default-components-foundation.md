@@ -1,8 +1,8 @@
 ---
 title: 기초 구성 요소
-seo-title: 기초 구성 요소
+seo-title: Foundation Components
 description: 기초 구성 요소
-seo-description: 'null'
+seo-description: null
 uuid: c1eccd51-ee65-4c4d-8c27-c99b52574518
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,10 +12,10 @@ discoiquuid: 3619ded2-a67c-4b96-b634-4c0d68f5284a
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 exl-id: c85e442a-eb24-4eda-a49b-089e5988150d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '6671'
-ht-degree: 95%
+source-wordcount: '6642'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 95%
 >
 >이 섹션에서는 다양한 버전의 AEM에서 사용할 수 있고 기본 AEM 설치에서 바로 사용할 수 있는 기초 구성 요소에 대해 설명합니다. 그러나 많은 기초 구성 요소가 AEM 6.4에서 더 이상 사용되지 않습니다.
 >
->Adobe은 보다 현대적이고 확장 가능한 [코어 구성 요소](https://helpx.adobe.com/experience-manager/core-components/using/authoring.html)를 활용할 것을 권장합니다. 다음은 [We.Retail 샘플 컨텐츠](/help/sites-developing/we-retail.md)의 일부이며, 관리자가 [별도로 설치하여 개발에 사용](https://helpx.adobe.com/experience-manager/core-components/using/using.html)할 수도 있습니다.
+>Adobe은 보다 현대적이고 확장 가능한 기능을 활용할 것을 권장합니다 [핵심 구성 요소](https://helpx.adobe.com/experience-manager/core-components/using/authoring.html). 다음은 [We.Retail 샘플 컨텐츠](/help/sites-developing/we-retail.md)의 일부이며, 관리자가 [별도로 설치하여 개발에 사용](https://helpx.adobe.com/experience-manager/core-components/using/using.html)할 수도 있습니다.
 
 기초 구성 요소는 표준 웹 페이지의 컨텐츠를 작성할 때 사용하도록 설계되었습니다. 이러한 구성 요소는 AEM의 표준 설치 시 기본적으로 제공되는 구성 요소의 하위 집합을 형성합니다.
 
@@ -37,7 +37,7 @@ ht-degree: 95%
 >
 >이 섹션에서는 표준 AEM 설치 시 기본적으로 사용할 수 있는 구성 요소에 대해서만 설명합니다.
 >
->사용자 인스턴스에 따라 사용자 요구 사항에 맞게 명시적으로 개발된 구성 요소를 사용자 지정했을 수 있습니다. 이러한 구성 요소는 여기서 설명한 구성 요소 중 일부와 이름이 같을 수도 있습니다.
+>사용자 인스턴스에 따라 사용자 요구 사항에 맞게 명시적으로 개발된 구성 요소를 사용자 정의했을 수 있습니다. 이러한 구성 요소는 여기서 설명한 구성 요소 중 일부와 이름이 같을 수도 있습니다.
 
 구성 요소는 [페이지를 편집할 때](/help/sites-authoring/editing-content.md) 페이지 편집기의 측면 패널에 있는 **구성 요소** 탭에서 사용할 수 있습니다.
 
@@ -45,7 +45,7 @@ ht-degree: 95%
 
 * [속성 구성](/help/sites-authoring/editing-page-properties.md)
 * [컨텐츠 편집](/help/sites-authoring/editing-content.md)
-* [컨텐츠 편집 - 전체 화면 모드](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
+* [콘텐츠 편집 - 전체 화면 모드](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
 구성 요소는 다음을 포함한 구성 요소 그룹이라는 다양한 카테고리에 따라 정렬됩니다.
 
@@ -60,7 +60,7 @@ ht-degree: 95%
 ### 계정 항목 {#account-item}
 
 >[!CAUTION]
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 제목 및 설명을 사용하여 링크를 정의할 수 있습니다.
 
@@ -69,7 +69,7 @@ ht-degree: 95%
 ### 응용 이미지 {#adaptive-image}
 
 >[!CAUTION]
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [코어 구성 요소 이미지 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소 이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 을 가리키도록 업데이트하는 것이 좋습니다.
 
 응용 이미지 기초 구성 요소는 웹 페이지가 열려 있는 창에 맞게 크기가 조정된 이미지를 생성합니다. 이 구성 요소를 사용하기 위해서는 파일 시스템 또는 DAM에서 이미지 리소스를 제공합니다. 웹 페이지가 열리면 웹 브라우저는 현재 창에 맞도록 크기가 조정된 이미지 사본을 다운로드합니다.
 
@@ -91,7 +91,7 @@ ht-degree: 95%
 
 >[!CAUTION]
 >
->&amp;ast;&amp;ast;애니메이션된 .gif 파일은 적응형 표현물에 대해 AEM에서 지원되지 않습니다.
+>&amp;ast;&amp;ast; 애니메이션된 .gif 파일은 적응형 표현물에 대해 AEM에서 지원되지 않습니다.
 
 #### 이미지 크기 및 품질 {#images-sizes-and-quality}
 
@@ -155,7 +155,7 @@ ht-degree: 95%
 
 응용 이미지 구성 요소 사용자 지정에 대한 자세한 내용은 [응용 이미지 구성 요소의 이해](/help/sites-developing/responsive.md#using-adaptive-images)를 참조하십시오.
 
-### 회전판 {#carousel}
+### 슬라이드 {#carousel}
 
 회전판 구성 요소를 사용하면 개별 페이지에 연결된 이미지를 표시할 수 있습니다.
 
@@ -170,7 +170,7 @@ ht-degree: 95%
 
 속성은 다음 두 가지 탭에서 사용할 수 있습니다.
 
-* **회전판**
+* **슬라이드**
 
    여기서는 회전판이 작동하는 방식을 지정합니다.
 
@@ -184,7 +184,7 @@ ht-degree: 95%
 
    * 컨트롤 스타일
 
-      풀다운 메뉴에서 다양한 옵션을 사용할 수 있습니다.예를 들어, 이전 / 다음 버튼, 오른쪽 위 스위치
+      풀다운 메뉴에서 다양한 옵션을 사용할 수 있습니다. 예를 들어, 이전 / 다음 버튼, 오른쪽 위 스위치
 
 * **목록**
 
@@ -204,8 +204,8 @@ ht-degree: 95%
 수동으로 또는 선택기를 사용하여 경로를 지정하십시오. 현재 페이지를 상위 페이지로 사용하려면 비워 두십시오.
       * **고정 목록 옵션**
 
-         * ****
-페이지 목록을 선택합니다.사용 
+         * **페이지**
+페이지 목록을 선택합니다. 사용 
 `+` 항목을 더 추가하려면 위쪽/아래쪽 단추를 눌러 순서를 조정합니다.
       * **검색 옵션**
 
@@ -225,11 +225,11 @@ ht-degree: 95%
             쿼리 표현식 및 추가적인 예에 대한 전체 논의는 [QueryBuilder API](/help/sites-developing/querybuilder-api.md)를 참조하십시오.
    * **정렬 기준**
 
-      드롭다운 메뉴에서 `jcr:title`, `jcr:created`, `cq:lastModified` 또는 `cq:template`을 선택합니다.
+      선택 `jcr:title`, `jcr:created`, `cq:lastModified`, 또는 `cq:template` 드롭다운 메뉴에서 을 클릭합니다.
 
    * **제한**
 
-      회전판에서 사용할 최대 항목 수입니다.선택 사항입니다.
+      회전판에서 사용할 최대 항목 수입니다. 선택 사항입니다.
 
 
 
@@ -277,7 +277,7 @@ ht-degree: 95%
 
 ### 콘텐츠 조각 {#content-fragment}
 
-[컨텐츠 조각](/help/sites-authoring/content-fragments.md)은 페이지와 독립된 자산으로 작성 및 관리됩니다. 그런 다음 컨텐츠 페이지를 작성할 때 이러한 조각과 해당 변형을 사용할 수 있습니다.
+[컨텐츠 조각](/help/sites-authoring/content-fragments.md)은 페이지와 독립된 자산으로 작성 및 관리됩니다. 그런 다음 콘텐츠 페이지를 작성할 때 이러한 조각과 해당 변형을 사용할 수 있습니다.
 
 ### 디자인 가져오기 {#design-importer}
 
@@ -334,7 +334,7 @@ ht-degree: 95%
 ### Flash {#flash}
 
 >[!CAUTION]
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 >[!CAUTION]
 >
@@ -408,7 +408,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 >
 >Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;을 클릭한 다음, 이미지를 다시 열어 업로드한 파일을 미리 보기에서 확인하고 수정할 수 있습니다(예: 자르기).
 >
->AEM에 사용되는 HTML5 기능에 대한 자세한 내용은 [지원되는 플랫폼](/help/release-notes/release-notes.md#supported-platforms) 섹션을 참조하십시오.
+>자세한 내용은 [지원되는 플랫폼](/help/release-notes/release-notes.md#supported-platforms) AEM에서 사용하는 HTML5 기능에 대한 자세한 내용을 보려면 섹션을 참조하십시오.
 
 이미지가 로드되면 다음 항목을 구성할 수 있습니다.
 
@@ -539,7 +539,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 ### 로그인 {#login}
 
 >[!CAUTION]
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 >[!CAUTION]
 >
@@ -634,7 +634,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 ### 검색 {#search-features}
 
 >[!CAUTION]
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [빠른 검색 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/quick-search.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [빠른 검색 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/quick-search.html)를 대신 활용할 것을 권장합니다.
 
 검색 구성 요소는 페이지에 검색 기능을 추가합니다.
 
@@ -703,7 +703,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 ### Sitemap {#sitemap}
 
 >[!CAUTION]
->이 기초 구성 요소는 더 이상 사용되지 않습니다. [탐색](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/navigation.html), [언어 탐색](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/language-navigation.html) 및 [탐색 표시 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/breadcrumb.html)를 대신 활용하는 것이 좋습니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. [탐색](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html), [언어 탐색](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/language-navigation.html) 및 [탐색 표시 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/breadcrumb.html)를 대신 활용하는 것이 좋습니다.
 
 기본 설정을 사용할 경우 현재 웹 사이트의 모든 페이지(활성 링크)를 나열하는 자동 사이트 맵 목록입니다. 예를 들어 추출은 다음과 같이 표시됩니다.
 
@@ -720,7 +720,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 ### Slideshow {#slideshow}
 
 >[!CAUTION]
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [회전 메뉴 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/carousel.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [회전 메뉴 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)를 대신 활용할 것을 권장합니다.
 
 >[!CAUTION]
 >
@@ -753,7 +753,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 ### 표 {#table}
 
 >[!CAUTION]
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [텍스트 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/text.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [텍스트 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)를 대신 활용할 것을 권장합니다.
 
 >[!NOTE]
 >
@@ -901,7 +901,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 
 **비디오** 구성 요소를 사용하면 사전 정의된 &quot;특별&quot; 비디오 요소를 페이지에 가져올 수 있습니다.
 
-HTML5 요소와 함께 사용하기 위해 [비디오 구성 요소](/help/sites-administering/config-video.md)도 구성 을 참조하십시오.
+참조 - [비디오 구성 요소 구성](/help/sites-administering/config-video.md) HTML5 요소에 사용할 수 있습니다.
 
 페이지에서 구성 요소의 인스턴스를 배치한 후 다음 항목을 구성할 수 있습니다.
 
@@ -923,9 +923,7 @@ HTML5 요소와 함께 사용하기 위해 [비디오 구성 요소](/help/sites
 >* `.mp4`
 >* `Ogg`
 >* `FLV`(Flash 비디오)
-
 >
-
 
 
 ## 열 {#columns}
@@ -984,7 +982,7 @@ HTML5 요소와 함께 사용하기 위해 [비디오 구성 요소](/help/sites
 >
 >양식의 개발 및 사용자 지정에 대한 자세한 내용은 [양식 개발 페이지](/help/sites-developing/developing-forms.md)에서 확인할 수 있습니다.여기에는 작업 추가, 제한, 필드 미리 로드 및 스크립트를 사용한 수행할 서비스 호출이 포함됩니다.
 
-### (많은) 양식 구성 요소에 공통되는 설정{#settings-common-to-many-form-components}
+### (많은) 양식 구성 요소에 공통되는 설정 {#settings-common-to-many-form-components}
 
 각 양식 구성 요소가 다른 용도로 사용되더라도 비슷한 옵션 및 매개 변수로 구성되는 경우가 많습니다.
 
@@ -1071,7 +1069,7 @@ HTML5 요소와 함께 사용하기 위해 [비디오 구성 요소](/help/sites
 
    * **CSS**
 
-### 양식(구성 요소)  {#form-component}
+### 양식(구성 요소) {#form-component}
 
 양식 구성 요소는 **양식 시작** 및 **양식 끝** 요소를 사용하여 양식의 시작과 끝을 정의합니다. 이러한 단락이 항상 쌍을 이루어야 양식이 올바르게 정의됩니다.
 
@@ -1081,7 +1079,7 @@ HTML5 요소와 함께 사용하기 위해 [비디오 구성 요소](/help/sites
 
 >[!NOTE]
 >
->기초 구성 요소 양식 구성 요소는 다른 기초 구성 요소 양식 구성 요소(예: 단추, 텍스트, 숨김 등)의 사용만 지원합니다. 기초 구성 요소 양식 없이 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) 양식 구성 요소를 사용할 수 없으며, 반대의 경우도 마찬가지입니다.
+>기초 구성 요소 양식 구성 요소는 다른 기초 구성 요소 양식 구성 요소(예: 단추, 텍스트, 숨김 등)의 사용만 지원합니다. 기초 구성 요소 양식 없이 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 양식 구성 요소를 사용할 수 없으며, 반대의 경우도 마찬가지입니다.
 
 #### 양식 시작 {#start-of-form}
 
@@ -1098,8 +1096,8 @@ HTML5 요소와 함께 사용하기 위해 [비디오 구성 요소](/help/sites
 
 * **고급**
 
-   * **작업**
-유형양식에는 작업이 필요합니다.작업은 사용자가 제출한 데이터를 사용하여 실행되도록 트리거되는 작업을 정의합니다(HTML의 action=와 비슷함). 경우에 따라 해당 항목이 필요합니다 
+   * **작업 유형**
+양식에는 작업이 필요합니다. 작업은 사용자가 제출한 데이터를 사용하여 실행되도록 트리거되는 작업을 정의합니다(HTML의 action=와 비슷함). 경우에 따라 해당 항목이 필요합니다 
 **작업 구성**.
 
       표준 AEM 설치에는 다양한 작업 유형이 포함되어 있습니다.
@@ -1119,7 +1117,7 @@ HTML5 요소와 함께 사용하기 위해 [비디오 구성 요소](/help/sites
       * **프로필 업데이트**
       * **암호 재설정**
       * **암호 설정**
-      * **컨텐트 저장**
+      * **콘텐츠 저장**
 
          기본 작업 유형입니다.
 
@@ -1313,7 +1311,7 @@ HTML5 요소와 함께 사용하기 위해 [비디오 구성 요소](/help/sites
 ### Captcha {#captcha}
 
 >[!CAUTION]
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 >[!CAUTION]
 >
@@ -1325,7 +1323,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 
 이 구성 요소의 다양한 매개 변수를 구성할 수 있습니다. 예를 들어 Captcha 문자열을 잘못 입력한 경우에 표시할 메시지를 구성할 수 있습니다.
 
-### 확인란 그룹  {#checkbox-group}
+### 확인란 그룹 {#checkbox-group}
 
 확인란을 사용하여 동시에 선택 가능한 하나 이상의 확인란으로 구성된 목록을 만들 수 있습니다.
 
@@ -1342,7 +1340,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 ### 신용 카드 세부 사항 {#credit-card-details}
 
 >[!CAUTION]
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 신용 카드 세부 사항을 입력하는 데 필요한 필드를 제공할 수 있도록 해줍니다. 허용된 카드 유형과 필요한 정보(예: 보안 카드)를 지정하도록 구성할 수 있습니다.
 
@@ -1372,7 +1370,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 >
 >사용자 지정 업로드 구성 요소를 만들어 파일을 Sling 서블릿에 업로드할 수 있습니다. 자세한 내용은 [Adobe Experience Manager에 파일 업로드](https://helpx.adobe.com/kr/experience-manager/using/uploading-files-aem1.html)를 참조하십시오.
 
-### 숨김 필드  {#hidden-field}
+### 숨김 필드 {#hidden-field}
 
 이 구성 요소로 숨김 필드를 만들어 다양한 용도로 사용할 수 있습니다. 예를 들어 양식을 제출한 후 작업을 수행해야 할 때, 또는 사후 처리에서 데이터를 숨겨야 할 때가 있습니다.
 
@@ -1404,7 +1402,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 
 달력 이벤트 양식에서 이벤트의 URL/링크 필드로 가장 일반적으로 사용됩니다.
 
-### 암호 필드  {#password-field}
+### 암호 필드 {#password-field}
 
 사용자가 암호를 입력할 수 있도록 하는 데 사용됩니다.
 
@@ -1475,7 +1473,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 
 ![dc_form_text](assets/dc_form_text.png)
 
-### 워크플로우 제출 단추 {#workflow-submit-button-s}
+### 워크플로우 제출 단추  {#workflow-submit-button-s}
 
 워크플로우에서 사용할 제출 단추를 만들 수 있도록 해줍니다.
 

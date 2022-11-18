@@ -1,15 +1,15 @@
 ---
 title: AEM 현대화 도구
-seo-title: AEM 현대화 도구
+seo-title: AEM Modernization Tools
 description: AEM 현대화 도구를 사용하면 기존 AEM 기능을 최신 기술로 변환할 수 있습니다
-seo-description: AEM 현대화 도구를 사용하면 기존 AEM 기능을 최신 기술로 쉽게 변환할 수 있습니다
+seo-description: AEM Modernization Tools help you easily convert your legacy AEM features to the latest technology
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: cfa9fcd0-8d57-4352-9646-12a4fcf5f695
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 56%
+source-wordcount: '87'
+ht-degree: 83%
 
 ---
 
@@ -19,10 +19,10 @@ ht-degree: 56%
 
 * [](page-templates-static.md)정적 템플릿을 편집 가능한 템플릿[](page-templates-editable.md)
 * [](page-templates-static.md)디자인 구성을 정책[](page-templates-editable.md)
-* [](/help/sites-authoring/default-components-foundation.md)기초 구성 요소를 코어 구성 요소[](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
+* [](/help/sites-authoring/default-components-foundation.md)기초 구성 요소를 핵심 구성 요소로 변환[](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [](website.md)클래식 UI를 터치 사용 UI[](touch-ui-concepts.md)
 
-이러한 도구의 사용에 대한 자세한 내용은 설명서](http://opensource.adobe.com/aem-modernize-tools/)를 참조하십시오.[
+이 도구 사용에 대한 자세한 내용은 [도구 설명서를 참조하십시오](http://opensource.adobe.com/aem-modernize-tools/).
 
 >[!NOTE]
 >

@@ -1,14 +1,14 @@
 ---
 title: AEM 6.4 기능 사용 안내서
-seo-title: AEM 6.4 기능 사용 안내서
+seo-title: AEM 6.4 Capabilities User Guide
 description: AEM 6.4의 필수 기능에 대한 개요
-seo-description: AEM 6.4의 필수 기능에 대한 개요
+seo-description: An overview of the essential capabilities of AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: f4dea584-3cd1-4d9f-ae3c-2573726dde95
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '123'
 ht-degree: 100%
 
 ---
@@ -37,15 +37,11 @@ Adobe Managed Services 클라우드 배포를 포함하여 [Adobe Experience Man
 
 ## AEM Screens {#aem-screens}
 
-[동적 및 대화형 경험을 게시할 수 있는 디지털 서명 솔루션에 대해 알아봅니다.](https://docs.adobe.com/content/help/ko-KR/experience-manager-screens/user-guide/aem-screens-introduction.html)
+[동적 및 대화형 경험을 게시할 수 있는 디지털 서명 솔루션에 대해 알아봅니다.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## AEM Communities {#aem-communities}
 
 [포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험을 만들 수 있습니다.](/help/communities/home.md)
-
-## AEM Livefyre {#aem-livefyre}
-
-[AEM Livefyre와 사용자 생성 컨텐츠를 공유합니다.](https://docs.adobe.com/content/help/ko-KR/livefyre/using/home.html)
 
 ## AEM Mobile {#aem-mobile}
 

@@ -1,7 +1,7 @@
 ---
 title: Adobe Experience Manager 6.4의 일반적인 릴리스 노트
 seo-title: Release Notes
-description: 'Adobe Experience Manager 6.4 참고는 릴리스 정보, 새로운 기능, 설치 방법 및 상세 변경 목록을 간략하게 설명합니다. '
+description: Adobe Experience Manager 6.4 참고는 릴리스 정보, 새로운 기능, 설치 방법 및 상세 변경 목록을 간략하게 설명합니다.
 seo-description: Adobe Experience Manager 6.4 notes outlining the release information, what's new, how to install and detailed change lists.
 uuid: 5a220301-2727-4078-ba19-4a2dbf9657f4
 contentOwner: msm-service
@@ -10,10 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
-source-git-commit: 722a82c1048105c18d59dfc35815548f9b7eace4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '2751'
-ht-degree: 31%
+source-wordcount: '2729'
+ht-degree: 30%
 
 ---
 
@@ -40,7 +40,7 @@ Adobe Experience Manager 6.4는 일반적으로 2018년 4월 4일 이후에 사�
 
 ## 새로운 기능 {#what-s-new}
 
-Adobe Experience Manager 6.4는 Adobe Web Experience Manager 6.3 코드 베이스에 대한 업그레이드 릴리스입니다. 새롭고 향상된 기능, 주요 고객 수정 사항, 우선 순위가 높은 고객 개선 사항 및 제품 안정화를 위한 일반적인 버그 수정을 제공합니다. 여기에는 모든 Adobe Experience Manager 6.3 기능 팩, 핫픽스 및 서비스 팩 릴리스의 대부분을 포함합니다.
+Adobe Experience Manager 6.4는 Adobe Experience Manager 6.3 코드 베이스에 대한 업그레이드 릴리스입니다. 새롭고 향상된 기능, 주요 고객 수정 사항, 우선 순위가 높은 고객 개선 사항 및 제품 안정화를 위한 일반적인 버그 수정을 제공합니다. 여기에는 모든 Adobe Experience Manager 6.3 기능 팩, 핫픽스 및 서비스 팩 릴리스의 대부분을 포함합니다.
 
 아래 목록은 개요를 제공하며, 후속 페이지에서 전체 세부 정보를 확인할 수 있습니다.
 
@@ -117,7 +117,7 @@ UI의 생산성과 사용 편의성을 향상시키기 위해 UI에 다양한 �
 
 **[콘텐츠 조각](/help/assets/content-fragments.md)**
 
-6.4의 새로운 기능은 시각적 [콘텐츠 모델](/help/assets/content-fragments-models.md) 편집자 및 새 [구성 가능한 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/content-fragment-component.html) 컨텐츠 서비스에 포함할 유연한 HTML 출력 및 JSON을 제공하기 위한 것입니다.
+6.4의 새로운 기능은 시각적 [콘텐츠 모델](/help/assets/content-fragments-models.md) 편집자 및 새 [구성 가능한 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) 컨텐츠 서비스에 포함할 유연한 HTML 출력 및 JSON을 제공하기 위한 것입니다.
 
 **경험 조각**
 
@@ -131,13 +131,13 @@ Sling 모델 익스포터 및 핵심 구성 요소에 대한 다양한 개선 �
 
 AEM 6.4는 차세대 구성 요소 모델로 변환을 완료합니다. AEM 6.3에서 도입되었으며 이제 스타일 시스템으로 결합되어 있는 코어 구성 요소 개념은 새 사이트를 작성하고 기존 사이트를 확장하는 효율적인 방법을 제공합니다.
 
-새 구성 요소 모델을 가장 잘 활용하는 방법을 배우려면 권장되는 자습서입니다. [AEM Sites 시작하기 - WKND 자습서](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+새 구성 요소 모델을 가장 잘 활용하는 방법을 배우려면 권장되는 자습서입니다. [AEM Sites 시작하기 - WKND 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
 
 #### 화면 추가 기능 {#screens-add-on}
 
 AEM Screens은 디지털 간판 및 키오스크 네트워크를 포함한 모든 마케팅 채널에서 일관된 메시지를 전달하는 것을 의미합니다. AEM 6.4에는 Microsoft Windows 및 Google Chrome OS 하드웨어에서 Signage Player를 실행하는 지원이 추가되었습니다. 또한 원격 장치 관리 및 예약(채널 그룹)에 대한 개선 사항을 사용할 수 있습니다.
 
-스크린 업데이트에 대한 자세한 내용은 [AEM Screens 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-screens/user-guide/aem-screens-introduction.html).
+스크린 업데이트에 대한 자세한 내용은 [AEM Screens 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html).
 
 ### Experience Manager Communities {#experience-manager-communities}
 
@@ -195,9 +195,9 @@ AEM 6.4는 향상된 새 Creative Cloud 통합, 주요 인공 지능 혁신 사�
 
 **AEM Desktop App**
 
-AEM 데스크탑 앱이 AEM 6.4와 호환되는 버전 1.8로 업데이트되었습니다. AEM 데스크탑 앱에 대한 전체 변경 사항 목록은 전용 페이지에 제공됩니다 [AEM 데스크탑 앱 릴리스 노트](https://docs.adobe.com/content/help/ko/experience-manager-desktop-app/using/release-notes.html) 문서.
+AEM 데스크탑 앱이 AEM 6.4와 호환되는 버전 1.8로 업데이트되었습니다. AEM 데스크탑 앱에 대한 전체 변경 사항 목록은 전용 페이지에 제공됩니다 [AEM 데스크탑 앱 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html) 문서.
 
-AEM 6.3 릴리스부터 향상된 기능에는 배경에서 계층 폴더를 업로드하는 기능, 자산 백그라운드 작업을 모니터링하는 새 UI, 향상된 캐싱, 네트워킹 및 로그인, 전반적인 안정성 개선 사항이 포함됩니다. 설명서에는 [모범 사례 안내서](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html).
+AEM 6.3 릴리스부터 향상된 기능에는 배경에서 계층 폴더를 업로드하는 기능, 자산 백그라운드 작업을 모니터링하는 새 UI, 향상된 캐싱, 네트워킹 및 로그인, 전반적인 안정성 개선 사항이 포함됩니다. 설명서에는 [모범 사례 안내서](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html).
 
 **Adobe Sensei 서비스**
 
@@ -219,7 +219,7 @@ AEM 6.3 릴리스부터 향상된 기능에는 배경에서 계층 폴더를 업
 
 **Brand Portal**
 
-메타데이터, 보고, 디지털 권한, 로그인 경험 및 자산 배포를 위한 게시 성능 영역의 다양한 개선 사항. 새로운 개선 사항 및 기능에 대해 알아보려면 [AEM Assets Brand Portal의 새로운 기능](https://docs.adobe.com/content/help/ko/experience-manager-brand-portal/using/introduction/whats-new.html).
+메타데이터, 보고, 디지털 권한, 로그인 경험 및 자산 배포를 위한 게시 성능 영역의 다양한 개선 사항. 새로운 개선 사항 및 기능에 대해 알아보려면 [AEM Assets Brand Portal의 새로운 기능](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
 
 #### Dynamic Media 추가 기능 {#dynamic-media-add-on}
 
@@ -263,7 +263,7 @@ AEM 6.4 Forms에는 여러 가지 새로운 기능과 개선 사항이 제공됩
 
 Livefyre를 AEM 6.4 인스턴스와 통합할 수 있습니다. AEM과 Livefyre를 통합하는 방법에 대한 정보는 다음과 같습니다.
 
-* [Livefyre 통합](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html)
+* [Livefyre 통합](https://experienceleague.adobe.com/docs/experience-manager-64/administering/integration/livefyre.html)
 
 ### 고객 중심 개발 활용 {#leverage-customer-focused-development}
 
@@ -279,13 +279,13 @@ Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 
 
 * 독립형 빠른 시작: cq-quickstart-6.4.0.jar
 * 애플리케이션 서버 빠른 시작: cq-quickstart-6.4.0.war
-* 다양한 웹 서버 및 플랫폼에 대한 4.3.1 이상 자세한 내용은 [다운로드 링크](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/release-notes.html).
+* 다양한 웹 서버 및 플랫폼에 대한 4.3.1 이상 자세한 내용은 [다운로드 링크](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html).
 * Eclipse IDE용 플러그인입니다. [자세한 내용 및 다운로드](/help/sites-developing/aem-eclipse.md).
 
 * 대괄호 코드 편집기의 확장입니다. [자세한 내용 및 다운로드](/help/sites-developing/aem-brackets.md).
 * Maven/Gradle 종속성. 자세한 내용은 [다운로드 링크](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/aem/uber-jar/6.1.0/).
 
-**Sites**
+**사이트**
 
 * 쿠어 구성 요소([GitHub 프로젝트](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components))
 * We.Retail 참조 구현([자세히 보기](/help/sites-developing/we-retail.md))
@@ -300,9 +300,9 @@ Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 
 
 * [AEM 현대화 도구](/help/sites-developing/modernization-tools.md) 클래식 UI 구성 요소를 Coral 3으로 마이그레이션하려면
 
-**에셋**
+**Assets**
 
-* Adobe Experience Manager 데스크탑 앱 ([자세한 내용](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) 및 [다운로드](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html))
+* Adobe Experience Manager 데스크탑 앱 ([자세한 내용](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) 및 [다운로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html))
 
 * 향상된 PDF 래스터라이저 기능 추가 패키지([자세한 내용](/help/assets/aem-pdf-rasterizer.md) 및 [다운로드](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
 
@@ -377,4 +377,4 @@ Adobe Experience Manager 6.4의 경우 [더 이상 사용되지 않는 및 제�
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/).
 * 제품 업데이트, 패치 및 패키지를 통해 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
-* [Admin Console을 통한 고객 지원](https://adminconsole.adobe.com/). 자세한 내용은 [새로운 Adobe 고객 지원 경험](https://docs.adobe.com/content/help/ko-KR/customer-one/using/home.html).
+* [Admin Console을 통한 고객 지원](https://adminconsole.adobe.com/). 자세한 내용은 [새로운 Adobe 고객 지원 경험](https://experienceleague.adobe.com/docs/customer-one/using/home.html).

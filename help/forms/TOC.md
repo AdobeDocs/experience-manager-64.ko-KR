@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.4 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 role: User
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '3729'
+source-wordcount: '3721'
 ht-degree: 4%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 4%
 
 + [AEM 6.4 Forms 안내서](home.md)
 + 릴리스 노트 {#release-notes-new-features}
-   + [릴리스 노트](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/forms.html)
+   + [릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/forms.html)
    + [새로운 기능 요약](using/whats-new.md)
-   + [이제 사용되지 않는 기능](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html)
+   + [이제 사용되지 않는 기능](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html)
 + 시작하기 {#getting-started}
    + [AEM Forms 소개](using/introduction-aem-forms.md)
    + [적응형 양식 작성 소개](using/introduction-forms-authoring.md)
@@ -573,8 +573,8 @@ ht-degree: 4%
    + [프로세스 보고의 임시 쿼리](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
    + [프로세스 보고 문제 해결](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + 개발자 참조 {#developer-reference}
-   + [개발자 기본 사항](https://docs.adobe.com/content/help/en/experience-manager-64/developing/home.html)
-   + [HTML 템플릿 언어](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+   + [개발자 기본 사항](https://experienceleague.adobe.com/docs/experience-manager-64/developing/home.html)
+   + [HTML 템플릿 언어](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR)
    + [적응형 양식을 디버깅하는 AEM 플러그인](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [AEM Forms Java API 참조](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html)
    + [JEE Java API 참조의 AEM Forms](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)

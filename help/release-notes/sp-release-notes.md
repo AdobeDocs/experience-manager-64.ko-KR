@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 exl-id: d0da9390-2167-47ee-82fd-8c81d8d68a3e
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '21547'
-ht-degree: 29%
+source-wordcount: '21517'
+ht-degree: 28%
 
 ---
 
@@ -1291,7 +1291,7 @@ AEM 6.4.2.0의 주요 특징 중 일부는 다음과 같습니다.
 * MongoDB Enterprise 3.6에 대한 지원이 추가되었습니다.
 * 사이트 페이지 편집기는 컨텍스트 내 편집 및 컴포지션에 대한 지원을 추가하며 React 또는 Analysis Workspace와 함께 클라이언트 측 구성 요소를 빌드합니다 <a href="../sites-developing/spa-walkthrough.md">AEM SPA Editor JS SDK</a>.
 * 컨텐츠 조각 개선 사항: 텍스트 필드에 주석을 달고, 버전을 나란히 비교하는 기능을 추가했습니다.
-* 추가됨 [Adobe Stock과 통합](/help/assets/aem-assets-adobe-stock.md) AEM 사용자 인터페이스에서 직접 Adobe Stock 자산을 검색, 미리 보기, 저장 및 라이선스를 제공할 수 있습니다. 자세한 내용은 [AEM Assets에서 Adobe Stock 자산 사용](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html).
+* 추가됨 [Adobe Stock과 통합](/help/assets/aem-assets-adobe-stock.md) AEM 사용자 인터페이스에서 직접 Adobe Stock 자산을 검색, 미리 보기, 저장 및 라이선스를 제공할 수 있습니다. 자세한 내용은 [AEM Assets에서 Adobe Stock 자산 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html).
 * 자산은 동적 조건부 메타스키마 및 자산 폴더에 대한 메타데이터 스키마를 설정하는 기능에 대한 지원을 추가했습니다.
 * 폴더 축소판 생성/업데이트 기능을 활성화/비활성화하는 구성이 각 구성 요소에 추가되었습니다.
 * 페이지 작성 시 이미지 편집기 개선 사항.
@@ -1338,7 +1338,7 @@ AEM 6.4.2.0의 주요 특징 중 일부는 다음과 같습니다.
 * 설정/해제 시간은 crx/de에 저장되지만 페이지 속성 UI 콘솔에서 동일하게 가져오지 않습니다. NPR-25154: CQ-4243431용 핫픽스
 * 스타일 시스템이 대화 상자의 초기 속성 값을 중단합니다. NPR-25648: CQ-4250073용 핫픽스
 * cq:htmlTag 노드에서 cq:tagName 속성을 정의할 때 구성 요소가 JSP를 통해 포함된 경우 태그 이름이 고려되지 않습니다. NPR-24154: CQ-4244120용 핫픽스
-* 중첩된 parsys 구성 요소의 경우, 사용 가능한 여러 구성 요소에서 항상 첫 번째로 만족스러운 디자인(중첩된 경로가 가장 적게 있음)을 적용합니다. 자세한 내용은 [디자인 경로 해상도](https://docs.adobe.com/content/help/ko-KR/experience-manager-64/developing/platform/templates/page-templates-static.html)를 참조하십시오. NPR-24973: CQ-4246276용 핫픽스
+* 중첩된 parsys 구성 요소의 경우, 사용 가능한 여러 구성 요소에서 항상 첫 번째로 만족스러운 디자인(중첩된 경로가 가장 적게 있음)을 적용합니다. 자세한 내용은 [디자인 경로 해상도](https://experienceleague.adobe.com/docs/experience-manager-64/developing/platform/templates/page-templates-static.html)를 참조하십시오. NPR-24973: CQ-4246276용 핫픽스
 * 텍스트를 RTE 구성 요소에 붙여넣을 때 팝업 대화 상자가 표시되지만 제대로 렌더링되지는 않습니다. NPR-24895: CQ-4245901용 핫픽스
 * (RTE) 필수 필드 표시기에 성능 문제가 있습니다. NPR-24894: CQ-4241895용 핫픽스
 * (페이지 구성 요소) Parsys에 구성 요소를 추가하면 오른쪽으로 잘리고 장치 프레임 너비가 표시됩니다. NPR-25536: CQ-4238224용 핫픽스
@@ -1553,7 +1553,7 @@ AEM 6.4.2.0 Forms의 주요 기능은 다음과 같습니다.
 * 여러 서비스에 동일한 WSDL 파일을 사용할 수 있는 기능이 추가되었습니다.
 * Datepicker 드롭다운에서 지원되지 않는 타임스탬프 패턴을 제거했습니다.
 * OSGI에서 xfaf 및 pdf에 대한 지원이 추가되었습니다.
-* 을 사용하도록 지원이 추가되었습니다. [트랜잭션 보고서 기능](https://docs.adobe.com/content/help/en/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) at-premise 배포.
+* 을 사용하도록 지원이 추가되었습니다. [트랜잭션 보고서 기능](https://experienceleague.adobe.com/docs/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) at-premise 배포.
 * 조건 규칙 편집기에 하위 변수를 표시하지 않도록 하는 코드가 추가되었습니다.
 
 **Forms 추가 기능 패키지**
@@ -1656,17 +1656,17 @@ AEM 6.4.2.0 Forms의 주요 기능은 다음과 같습니다.
 
 **자산**
 
-* 추가됨 [Adobe Stock과 통합](/help/assets/aem-assets-adobe-stock.md) AEM 사용자 인터페이스에서 직접 Adobe Stock 자산을 검색, 미리 보기, 저장 및 라이선스를 제공할 수 있습니다. 자세한 내용은 [AEM 자산에서 Adobe Stock 자산 사용](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html). NPR-15779: CQ-30857용 핫픽스
+* 추가됨 [Adobe Stock과 통합](/help/assets/aem-assets-adobe-stock.md) AEM 사용자 인터페이스에서 직접 Adobe Stock 자산을 검색, 미리 보기, 저장 및 라이선스를 제공할 수 있습니다. 자세한 내용은 [AEM 자산에서 Adobe Stock 자산 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html). NPR-15779: CQ-30857용 핫픽스
 * 동적 조건부 메타스키마에 대한 지원을 추가했습니다. 자세한 내용은 [계단식 메타데이터](/help/assets/cascading-metadata.md). NPR-25189: CQ-4237413용 핫픽스
 * 컨텐츠 조각에서 &quot;자산 다운로드&quot; 옵션을 활성화했습니다. 자세한 내용은 [자산 보고서](/help/assets/asset-reports.md). NPR-25186: CQ-4237410용 핫픽스
 * 자산 폴더에 대한 메타데이터 스키마를 설정할 수 있습니다. 자세한 내용은 [폴더 메타데이터 스키마](/help/assets/folder-metadata-schema.md) 그리고 [구성 설정](#configuration-settings-required-for-npr) AEM 6.4.2.0 설치 후. NPR-21268: CQ-4221574용 핫픽스
 
 **사이트**
 
-* 삭제 권한 없이 컨텐츠 조각을 편집할 수 있습니다. 자세한 내용은 [컨텐츠 조각 사용자 지정 및 확장](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-delete.html). NPR-25793: CQ-4248750용 핫픽스
-* 컨텐츠 조각에 주석을 다는 기능이 추가되었습니다. 자세한 내용은 [변형 작성 조각](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-variations.html#annotating-a-content-fragment). NPR-25188: CQ-4235336용 핫픽스
-* 버전 관리: 컨텐츠 조각을 나란히 비교합니다. 자세한 내용은 [컨텐츠 조각 관리](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-managing.html#comparing-fragment-versions). NPR-25187: CQ-4237412용 핫픽스
-* AEM 6.4.2.0으로 지원되는 이미지 편집기 개선 사항. 자세한 내용은 [이미지 편집기](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html). NPR-24467
+* 삭제 권한 없이 컨텐츠 조각을 편집할 수 있습니다. 자세한 내용은 [컨텐츠 조각 사용자 지정 및 확장](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments-delete.html). NPR-25793: CQ-4248750용 핫픽스
+* 컨텐츠 조각에 주석을 다는 기능이 추가되었습니다. 자세한 내용은 [변형 작성 조각](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments-variations.html#annotating-a-content-fragment). NPR-25188: CQ-4235336용 핫픽스
+* 버전 관리: 컨텐츠 조각을 나란히 비교합니다. 자세한 내용은 [컨텐츠 조각 관리](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments-managing.html#comparing-fragment-versions). NPR-25187: CQ-4237412용 핫픽스
+* AEM 6.4.2.0으로 지원되는 이미지 편집기 개선 사항. 자세한 내용은 [이미지 편집기](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/image-editor.html). NPR-24467
 
 **OSGI 번들 및 컨텐츠 패키지가 포함됨**
 
@@ -1900,7 +1900,7 @@ AEM 6.4.1.0은 AEM 6.4 GA에 설치할 수 있습니다. 서비스 팩의 주요
 
 **DAM - 스마트 태그**
 
-* 도입됨 [향상된 스마트 태그](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951
+* 도입됨 [향상된 스마트 태그](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951
 
 **양식**
 
@@ -1908,7 +1908,7 @@ AEM Forms 수정 사항은 릴리스와 함께 제공되는 추가 기능 패키
 
 AEM Forms의 주요 사항은 다음과 같습니다.
 
-* AEM Forms의 추천 [트랜잭션 보고서 기능](https://docs.adobe.com/content/help/en/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) AEM Forms 배포에서 제출된 양식, 처리된 문서 및 렌더링된 문서와 같은 트랜잭션을 추적하고 유지합니다. 제품 사용에 대한 통찰력을 제공하고 비즈니스 사용자가 디지털 처리 볼륨을 이해하는 데 도움이 됩니다.
+* AEM Forms의 추천 [트랜잭션 보고서 기능](https://experienceleague.adobe.com/docs/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) AEM Forms 배포에서 제출된 양식, 처리된 문서 및 렌더링된 문서와 같은 트랜잭션을 추적하고 유지합니다. 제품 사용에 대한 통찰력을 제공하고 비즈니스 사용자가 디지털 처리 볼륨을 이해하는 데 도움이 됩니다.
 * XML 양식에 대한 PDF/UA 지원을 사용하도록 설정했습니다.
 * Clientlib에 대해 allowProxy = true를 추가했습니다. **aemfd.ccm.channel.contentpage**
 * 고급 제목 검색을 같음 없이 포함으로 만들도록 코드를 업데이트했습니다.
@@ -2066,12 +2066,12 @@ AEM Forms의 주요 사항은 다음과 같습니다.
 
 **자산**
 
-* 향상된 스마트 태그 기능이 추가되었습니다. 자세한 내용은 [향상된 스마트 태그](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951: CQ-4234883용 핫픽스
+* 향상된 스마트 태그 기능이 추가되었습니다. 자세한 내용은 [향상된 스마트 태그](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951: CQ-4234883용 핫픽스
 * InDesign에 AEM Assets 참조가 도입되었습니다. 자세한 내용은 [InDesign의 AEM Assets 참조](/help/assets/managing-linked-subassets.md). NPR-23386
 
 **사이트**
 
-* (페이지 작성) 이미지 편집기 개선 사항. 자세한 내용은 [이미지 편집기](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html). NPR-24267: CQ-4245502용 핫픽스
+* (페이지 작성) 이미지 편집기 개선 사항. 자세한 내용은 [이미지 편집기](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/image-editor.html). NPR-24267: CQ-4245502용 핫픽스
 
 **OSGi 번들 및 콘텐츠 패키지 포함됨**
 
@@ -2172,7 +2172,7 @@ B. [패키지 관리자의 HTTP API](/help/sites-administering/package-manager.m
 
 1. AEM 서비스 팩을 설치했는지 확인합니다.
 1. 에 나열된 해당 양식 추가 기능 패키지를 다운로드합니다 [AEM Forms 릴리스](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 사용 중인 운영 체제용.
-1. 에 설명된 대로 양식 추가 기능 패키지를 설치합니다. [AEM Forms 추가 기능 패키지 설치](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
+1. 에 설명된 대로 양식 추가 기능 패키지를 설치합니다. [AEM Forms 추가 기능 패키지 설치](https://experienceleague.adobe.com/docs/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
 
 ### AEM Forms JEE 설치 프로그램 설치 {#install-aem-forms-jee-installer}
 
@@ -2227,7 +2227,7 @@ Maven 프로젝트에서 Uber Jar를 사용하려면 문서 [Uber jar 사용 �
 | 영역 | 기능 | 대체 | 버전 |
 |---|---|---|---|
 | 자산 | 하위 자산에 대한 태그 작업 관리 | 교체 없음 | AEM 6.4.2.0 |
-| Assets과 Adobe Creative Cloud 통합 | [AEM과 Creative Cloud 폴더 공유](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html)는 Creative 사용자에게 AEM의 자산에 대한 액세스 권한을 제공하는 방법으로 AEM 6.2에 도입되었습니다. Creative Cloud 애플리케이션에서 새롭게 출시된 기능인 Adobe Asset Link는 Photoshop, InDesign 및 Illustrator에서 직접 AEM 자산에 액세스할 수 있는 강력한 권한과 함께 우수한 사용자 경험을 제공합니다. Adobe는 폴더 공유 기능에 대한 추가 개선을 하지 않습니다. 이 기능은 AEM에 포함되어 있지만 고객은 교체 서비스를 사용하는 것이 좋습니다. | Adobe 자산 링크 또는 데스크탑 앱. 자세한 내용은 [AEM Creative Cloud 통합](/help/assets/aem-cc-integration-best-practices.md) 문서를 참조하십시오. | AEM 6.4.4.0 |
+| Assets과 Adobe Creative Cloud 통합 | [AEM과 Creative Cloud 폴더 공유](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html)는 Creative 사용자에게 AEM의 자산에 대한 액세스 권한을 제공하는 방법으로 AEM 6.2에 도입되었습니다. Creative Cloud 애플리케이션에서 새롭게 출시된 기능인 Adobe Asset Link는 Photoshop, InDesign 및 Illustrator에서 직접 AEM 자산에 액세스할 수 있는 강력한 권한과 함께 우수한 사용자 경험을 제공합니다. Adobe는 폴더 공유 기능에 대한 추가 개선을 하지 않습니다. 이 기능은 AEM에 포함되어 있지만 고객은 교체 서비스를 사용하는 것이 좋습니다. | Adobe 자산 링크 또는 데스크탑 앱. 자세한 내용은 [AEM Creative Cloud 통합](/help/assets/aem-cc-integration-best-practices.md) 문서를 참조하십시오. | AEM 6.4.4.0 |
 
 ### 알려진 문제 {#known-issues}
 
@@ -2273,4 +2273,4 @@ AEM 6.4.8.0에 포함된 콘텐츠 패키지 목록
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/).
 * 제품 업데이트, 패치 및 패키지를 통해 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
-* [Admin Console을 통한 고객 지원](https://adminconsole.adobe.com/). 자세한 내용은 [새로운 Adobe 고객 지원 경험](https://docs.adobe.com/content/help/ko-KR/customer-one/using/home.html).
+* [Admin Console을 통한 고객 지원](https://adminconsole.adobe.com/). 자세한 내용은 [새로운 Adobe 고객 지원 경험](https://experienceleague.adobe.com/docs/customer-one/using/home.html).

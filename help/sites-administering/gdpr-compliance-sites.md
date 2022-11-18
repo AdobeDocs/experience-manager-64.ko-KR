@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
 exl-id: 38bae0d7-9544-42d0-9766-45c66f254e5c
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 100%
+source-wordcount: '832'
+ht-degree: 99%
 
 ---
 
@@ -51,13 +51,13 @@ AEM에는 사용자에 대한 옵트인/옵트아웃을 관리하는 데 사용�
 
 AEM Sites에는 Adobe Analytics 온디맨드 서비스 내에서 기능을 사용하는 Analytics의 Enhanced Insights와의 선택적 통합이 포함되어 있습니다.
 
-Adobe Analytics와 관련된 GDPR 데이터 주체 요청 관리에 대한 자세한 내용은 [Adobe Analytics 및 GDPR](https://docs.adobe.com/content/help/ko-KR/analytics/admin/data-governance/an-gdpr-overview.html)을 참조하십시오.
+Adobe Analytics와 관련된 GDPR 데이터 주체 요청 관리에 대한 자세한 내용은 [Adobe Analytics 및 GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html)을 참조하십시오.
 
 ## Target의 Enhanced Personalization {#enhanced-personalization-by-target}
 
 AEM Sites에는 Adobe Target 온디맨드 서비스 내에서 기능을 사용하는 Target의 Enhanced Personalization과의 선택적 통합이 포함되어 있습니다.
 
-Adobe Target과 관련된 GDPR 데이터 주체 요청 관리에 대한 자세한 내용은 [Adobe Target - 개인 정보 보호 및 일반 데이터 보호 규정](https://docs.adobe.com/content/help/ko-KR/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)을 참조하십시오.
+Adobe Target과 관련된 GDPR 데이터 주체 요청 관리에 대한 자세한 내용은 [Adobe Target - 개인 정보 보호 및 일반 데이터 보호 규정](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)을 참조하십시오.
 
 ## ContextHub {#contexthub}
 

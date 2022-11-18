@@ -4,9 +4,9 @@ seo-title: Developing AEM Components
 description: AEM 구성 요소는 웹 페이지에서 사용할 수 있는 컨텐츠를 저장, 포맷 및 렌더링하는 데 사용됩니다.
 seo-description: AEM components are used to hold, format, and render the content made available on your webpages.
 exl-id: d3c1559a-1a7a-46ed-a935-9ad226cdea33
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '3477'
+source-wordcount: '3475'
 ht-degree: 2%
 
 ---
@@ -427,7 +427,7 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 
 >[!NOTE]
 >
->이제 를 사용할 때 UI 내에서 구성 요소 인스턴스의 자동 만들기를 쉽게 구성할 수 있습니다 [핵심 구성 요소](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html) 및 편집 가능한 템플릿. 자세한 내용은 [페이지 템플릿 만들기](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) 지정된 미디어 유형과 자동으로 연결되는 구성 요소를 정의하는 방법에 대한 자세한 정보를 제공합니다.
+>이제 를 사용할 때 UI 내에서 구성 요소 인스턴스의 자동 만들기를 쉽게 구성할 수 있습니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 편집 가능한 템플릿. 자세한 내용은 [페이지 템플릿 만들기](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) 지정된 미디어 유형과 자동으로 연결되는 구성 요소를 정의하는 방법에 대한 자세한 정보를 제공합니다.
 
 ## AEM Brackets 확장 사용 {#using-the-aem-brackets-extension}
 

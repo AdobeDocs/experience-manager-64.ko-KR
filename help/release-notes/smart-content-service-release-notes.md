@@ -8,10 +8,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER
 discoiquuid: 9f88c773-ddeb-4c66-ac07-7d3aa196c51b
 exl-id: 6e7ac9d2-7181-48bb-82c4-61a90e594ff5
-source-git-commit: 354e3fcd747b7b0490599c3b84b8e58dac39ed05
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 14%
+source-wordcount: '305'
+ht-degree: 11%
 
 ---
 
@@ -46,4 +46,4 @@ Smart Content Service는 비즈니스 분류에 대한 이미지 인식 알고�
 * [제품 액세스](https://login.experiencecloud.adobe.com/exc-content/login.html)
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/).
 * 제품 업데이트, 패치 및 패키지를 통해 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
-* [Admin Console을 통한 고객 지원](https://adminconsole.adobe.com/). 자세한 내용은 [새로운 Adobe 고객 지원 경험](https://docs.adobe.com/content/help/ko-KR/customer-one/using/home.html).
+* [Admin Console을 통한 고객 지원](https://adminconsole.adobe.com/). 자세한 내용은 [새로운 Adobe 고객 지원 경험](https://experienceleague.adobe.com/docs/customer-one/using/home.html).

@@ -1,16 +1,16 @@
 ---
 title: Livefyre 기능 팩 2.0.6 릴리스 노트
-seo-title: Livefyre 기능 팩 2.0.6 릴리스 노트
+seo-title: Livefyre Feature Pack 2.0.6 Release Notes
 description: Livefyre 기능 팩 2.0.6 릴리스 노트
-seo-description: Livefyre 기능 팩 2.0.6 릴리스 노트
+seo-description: Livefyre Feature Pack 2.0.6 Release Notes
 uuid: 81ee0527-72c3-4530-80f1-c802ddbe62d0
 products: SG_EXPERIENCEMANAGER/6.4
 contentOwner: alba
 discoiquuid: d445bcfb-7712-472f-bfb4-a8811c2bc4f1
 exl-id: e09d2d59-41f0-4cf2-bcf3-ec3dbc3b8474
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '643'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 2%
 | 호환성 (*) | AEM 6.4 SP1, 6.4, 6.3GA 및 6.2 SP1 |
 | 설명 | 이 패키지를 사용하면 Livefyre의 업계 선도적인 큐레이션 기능을 AEM 인스턴스에 통합하여 소셜 네트워크에서 몇 분 안에 사이트에 중요한 UGC(사용자 생성 컨텐츠)를 게시할 수 있습니다. |
 
-## Livefyre 기능 팩 2.0.6 {#what-is-included-in-livefyre-feature-pack}에 포함된 제품
+## Livefyre 기능 팩 2.0.6에 포함된 제품 {#what-is-included-in-livefyre-feature-pack}
 
 이 패키지는 Livefyre의 업계 선도적인 큐레이션 기능을 AEM 인스턴스와 통합하므로 소셜 네트워크에서 몇 분 안에 사이트에 중요한 UGC(사용자 생성 콘텐츠)를 게시할 수 있습니다. 이 패키지에는 다음 세 가지 구성 요소가 있습니다.
 
@@ -49,20 +49,20 @@ ht-degree: 2%
 * 기존 제품 카탈로그를 Livefyre에 원활하게 통합하여 사이트에서 사용자 참여와 전환을 유도하고 쇼퍼블 UGC 경험을 제공합니다.
 * AEM Commerce 제품 카탈로그에서 항목을 편집 또는 삭제하고 Livefyre의 변경 사항을 자동으로 업데이트합니다.
 
-설치에 대한 도움말은 [Livefyre](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html)와 통합 을 참조하십시오.
+설치에 대한 자세한 내용은 [Livefyre와 통합](https://experienceleague.adobe.com/docs/experience-manager-64/administering/integration/livefyre.html).
 
 ### 추가 릴리스 정보 {#additional-release-information}
 
-instagram 비비즈니스 사용자 계정의 콘텐츠 집계에 영향을 주는 업데이트로 인해 Adobe에서는 더 이상 사용자를 대신하여 댓글을 게시하거나 작성자의 답글을 자동으로 확인할 수 없습니다. [자세한 내용을 보려면 여기를 클릭하십시오](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/).
+instagram 비비즈니스 사용자 계정의 콘텐츠 집계에 영향을 주는 업데이트로 인해 Adobe에서는 더 이상 사용자를 대신하여 댓글을 게시하거나 작성자의 답글을 자동으로 확인할 수 없습니다. [자세한 내용을 보려면 여기를 클릭하십시오.](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/).
 
 >[!NOTE]
 >
 >Livefyre 기능 팩 2.0.6은 AEM Classic UI를 지원하지 않습니다.
 
-#### 새 기능 또는 개선 사항 {#new-feature-or-improvement}
+#### 새로운 기능 또는 개선 사항 {#new-feature-or-improvement}
 
 * Livefyre에서 권한 요청 소셜 계정을 설정하기 전에 UGC를 검색하는 기능이 추가되었습니다. 권한을 요청하도록 소셜 계정을 설정하거나, 콘텐츠를 소유한 경우 권한 요청을 무시해야 합니다.
-* Instagram 및 Twitter [UGC 권한 요청 워크플로우](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html)가 최신 API를 준수하도록 업데이트되었습니다.
+* Instagram 및 Twitter [UGC 권한 요청 워크플로우](https://experienceleague.adobe.com/docs/experience-manager-64/administering/integration/livefyre.html) 최신 API를 준수하도록 가 업데이트되었습니다.
 * 이제 권한 상태 및 적절한 작업이 권한 요청 화면에 표시됩니다.
 
 #### 버그 수정 {#bug-fixes}

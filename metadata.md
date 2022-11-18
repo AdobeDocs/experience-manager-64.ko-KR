@@ -1,16 +1,15 @@
 ---
 cloud: Experience Cloud
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/experience-manager-64.ko-KR
 solution: Experience Manager
 feature-set: Experience Manager Assets,Experience Manager,Experience Manager Sites, Experience Manager Forms
 version: 6.4
 type: Documentation
 index: y
-source-git-commit: 4e3fc838d62c716ea0c46ba4c152b6686d85ffd9
+source-git-commit: 195fbaf2ba5a1150ac77fe917995e56cab032004
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 74%
+source-wordcount: '130'
+ht-degree: 91%
 
 ---
 
@@ -21,8 +20,8 @@ metadata.md 파일에는 보고서에서 사용 안내서 TOC.md 파일로 전�
 
 | 메타데이터 | 기능 |
 |--- |--- |
-| solution-title | 문서 헤더에서 링크로 사용됨. |
-| solution-hub-url | 학습 및 지원 허브 페이지를 엽니다. |
+| solution-title | 문서 헤더에서 링크로 사용됩니다. |
+| solution-hub-url | [학습 및 지원] 허브 페이지를 엽니다. |
 | solution-icon | 솔루션 제목 옆에 솔루션 아이콘을 표시합니다. 아직 구현되지 않음. |
 | getting-started-url | 시작 페이지에 연결합니다. |
 | tutorials-url | 비디오 자습서에 연결합니다. |
@@ -33,5 +32,5 @@ In TOC.md file
 
 | 메타데이터 | 기능 |
 |--- |--- |
-| user-guide-title | 문서 헤더에서 링크로 사용됨. |
-| user-guide-url | 학습 및 지원 허브 페이지를 엽니다. |
+| user-guide-title | 문서 헤더에서 링크로 사용됩니다. |
+| user-guide-url | [학습 및 지원] 허브 페이지를 엽니다. |

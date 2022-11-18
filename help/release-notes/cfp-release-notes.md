@@ -1,17 +1,17 @@
 ---
-title: AEM 6.4 누적 수정 팩 릴리스 노트
+title: AEM 6.4 누적 수정 팩 릴리스 정보
 description: Adobe Experience Manager 6.4 누적 수정 팩에 대한 릴리스 노트입니다.
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: a63e77a3-da48-4072-bc75-c4c41a2f62a3
-source-git-commit: 1d5d2ef3840a40df7c3b223c7b5835e41553e9f1
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '4693'
+source-wordcount: '4681'
 ht-degree: 23%
 
 ---
 
-# AEM 6.4 누적 수정 팩 릴리스 노트 {#aem-cumulative-fix-pack-release-notes}
+# AEM 6.4 누적 수정 팩 릴리스 정보 {#aem-cumulative-fix-pack-release-notes}
 
 ## 릴리스 정보 {#release-information}
 
@@ -43,7 +43,7 @@ CFP 및 기타 릴리스 유형에 대한 자세한 내용은 [AEM 업데이트 
 
 Adobe Experience Manager 6.4.8.4에서는 다음 문제에 대한 수정 사항을 제공합니다.
 
-### 사이트 {#sites-6484}
+### Sites {#sites-6484}
 
 * Experience Manager 서비스 팩 6.4.8.2를 설치한 후에는 컨텐츠 조각 모델을 편집할 수 없으며 다음 오류가 표시됩니다.
 
@@ -91,7 +91,7 @@ Adobe Experience Manager 6.4.8.4에서는 다음 문제에 대한 수정 사항�
 
 **AEMForms-6.4.0-0027에서 해결된 문제**
 
-* (JEE만 해당) Apache Log4j2에 대해 보고된 중요한 보안 취약점(CVE-2021-44228 및 CVE-2021-45046)입니다.
+* (JEE만 해당) Apache Log4j2에 대해 심각한 보안 취약성(CVE-2021-44228 및 CVE-2021-45046)이 보고되었습니다.
 
 보안 업데이트에 대한 자세한 내용은 [Experience Manager 보안 게시판 페이지](https://helpx.adobe.com/security/products/experience-manager.html).
 
@@ -105,11 +105,11 @@ AEM 6.4.8.3은 AEM 6.4 서비스 팩 8에 종속된 CFP(Cumulative Fix Pack)입�
 
 AEM 6.4.8.3에서 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.8.23으로 업데이트되었습니다.
 
-CFP 및 기타 릴리스 유형에 대한 자세한 내용은 [AEM 업데이트 릴리스 차량 정의](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
+CFP 및 기타 릴리스 유형에 대한 자세한 내용은 [AEM 업데이트 릴리스 차량 정의](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.3은 다음 문제에 대한 수정 사항을 제공합니다.
 
-#### 사이트 {#sites-6483}
+#### Sites {#sites-6483}
 
 * 컨텐츠 조각의 변형 텍스트를 업데이트하면 변형 대신 마스터 컨텐츠 조각의 컨텐츠가 업데이트됩니다(NPR-35080).
 
@@ -199,11 +199,11 @@ AEM 6.4.8.2는 AEM 6.4 서비스 팩 8에 종속된 CFP(Cumulative Fix Pack)입�
 
 AEM 6.4.8.2에서 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.8.22으로 업데이트되었습니다.
 
-CFP 및 기타 릴리스 유형에 대한 자세한 내용은 [AEM 업데이트 릴리스 차량 정의](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
+CFP 및 기타 릴리스 유형에 대한 자세한 내용은 [AEM 업데이트 릴리스 차량 정의](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.2는 다음 문제에 대한 수정 사항을 제공합니다.
 
-#### 사이트 {#sites-6482}
+#### Sites {#sites-6482}
 
 * 만약 `RolloutConfigManagerFactoryImpl` 롤아웃 구성을 로드할 수 없습니다. 누락된 구성을 로드하지 않습니다. 캐시된 구성을 반환합니다(NPR-34091).
 * 텍스트 코어 구성 요소에서 소스 HTML 편집 옵션을 사용한 후에 `em` 태그가 제거되었습니다(NPR-34080).
@@ -229,7 +229,7 @@ Adobe Experience Manager 6.4.8.2는 다음 문제에 대한 수정 사항을 제
 * 클라이언트에게 정보를 전송할 때 다양한 구성 요소에 대해 사용자 입력이 적절히 인코딩되지 않습니다(NPR-33696).
 * 다음으로 끝나는 URL `childrenlist.html` 404 응답 대신 HTML 페이지를 표시합니다. 이러한 URL은 교차 사이트 스크립팅에 취약합니다(NPR-33441).
 
-#### 에셋 {#assets-6482}
+#### Assets {#assets-6482}
 
 * 업로드된 PDF 파일에 대한 텍스트 추출이 작동하지 않고 PDF 파일에서 일부 단어를 전체 텍스트 검색에서 해당 PDF 파일을 가져오지 못했습니다(NPR-34165).
 
@@ -345,11 +345,11 @@ AEM 6.4.8.1의 주요 특징 중 일부는 다음과 같습니다.
 * Adobe Experience Manager와 패키지 공유 통합이 제거되었습니다.
 * 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.8.21으로 업데이트되었습니다.
 
-CFP 및 기타 릴리스 유형에 대한 자세한 내용은 [AEM 업데이트 릴리스 차량 정의](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
+CFP 및 기타 릴리스 유형에 대한 자세한 내용은 [AEM 업데이트 릴리스 차량 정의](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.1은 다음 문제에 대한 수정 사항을 제공합니다.
 
-#### 사이트 {#sites-6481}
+#### Sites {#sites-6481}
 
 * 익명의 사용자는 CRX DE Lite 기능에 액세스할 수 있습니다(NPR-33522).
 * LiveCopy의 로컬 구성 요소의 이름이 블루프린트에서 구성 요소의 이름과 동일하고 이 구성 요소가 블루프린트에서 롤아웃되면, _msm_moved 용어가 로컬 구성 요소의 이름에 추가되지 않습니다(NPR-33207).
@@ -367,7 +367,7 @@ Adobe Experience Manager 6.4.8.1은 다음 문제에 대한 수정 사항을 제
 * Salesforce 통합은 SSRF에 취약합니다(NPR-32671).
 * PreferencesServlet에 XSS가 반영되었습니다(NPR-33439).
 
-#### 에셋 {#assets-6481}
+#### 자산 {#assets-6481}
 
 * 목록 보기에서 선택 내용의 변경에 따라 자산 수가 변경되지 않습니다(NPR-33285).
 
@@ -523,7 +523,7 @@ AEM 6.4.8.4에는 이미지 사전 설정 페이지에서 중복 이름을 확�
 
 1. AEM 누적 수정 팩을 설치했는지 확인합니다.
 1. 에 나열된 해당 양식 추가 기능 패키지를 다운로드합니다 [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) 사용 중인 운영 체제용.
-1. 에 설명된 대로 양식 추가 기능 패키지를 설치합니다. [AEM Forms 추가 기능 패키지 설치](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
+1. 에 설명된 대로 양식 추가 기능 패키지를 설치합니다. [AEM Forms 추가 기능 패키지 설치](https://experienceleague.adobe.com/docs/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
 
 ### AEM Forms JEE 설치 프로그램 설치 {#install-aem-forms-jee-installer}
 
@@ -562,8 +562,8 @@ Maven 프로젝트에서 Uber Jar를 사용하려면 문서 [Uber jar 사용 �
 
 | 영역 | 기능 | 대체 | 버전 |
 |---|---|---|---|
-| 에셋 | 하위 자산에 대한 태그 작업 관리 | 교체 없음 | AEM 6.4.2.0 |
-| Assets과 Adobe Creative Cloud 통합 | [AEM과 Creative Cloud 폴더 공유](https://docs.adobe.com/content/help/ko-KR/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html)는 Creative 사용자에게 AEM의 자산에 대한 액세스 권한을 제공하는 방법으로 AEM 6.2에 도입되었습니다. Creative Cloud 애플리케이션에서 새롭게 출시된 기능인 Adobe Asset Link는 Photoshop, InDesign 및 Illustrator에서 직접 AEM 자산에 액세스할 수 있는 강력한 권한과 함께 우수한 사용자 경험을 제공합니다. Adobe는 폴더 공유 기능에 대한 추가 개선을 하지 않습니다. 이 기능은 AEM에 포함되어 있지만 고객은 교체 서비스를 사용하는 것이 좋습니다. | Adobe 자산 링크 또는 데스크탑 앱. 자세한 내용은 [AEM Creative Cloud 통합](/help/assets/aem-cc-integration-best-practices.md) 문서를 참조하십시오. | AEM 6.4.4.0 |
+| 자산 | 하위 자산에 대한 태그 작업 관리 | 교체 없음 | AEM 6.4.2.0 |
+| Assets과 Adobe Creative Cloud 통합 | [AEM과 Creative Cloud 폴더 공유](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html)는 Creative 사용자에게 AEM의 자산에 대한 액세스 권한을 제공하는 방법으로 AEM 6.2에 도입되었습니다. Creative Cloud 애플리케이션에서 새롭게 출시된 기능인 Adobe Asset Link는 Photoshop, InDesign 및 Illustrator에서 직접 AEM 자산에 액세스할 수 있는 강력한 권한과 함께 우수한 사용자 경험을 제공합니다. Adobe는 폴더 공유 기능에 대한 추가 개선을 하지 않습니다. 이 기능은 AEM에 포함되어 있지만 고객은 교체 서비스를 사용하는 것이 좋습니다. | Adobe 자산 링크 또는 데스크탑 앱. 자세한 내용은 [AEM Creative Cloud 통합](/help/assets/aem-cc-integration-best-practices.md) 문서를 참조하십시오. | AEM 6.4.4.0 |
 
 ## 알려진 문제 {#known-issues}
 
@@ -585,7 +585,7 @@ AEM 6.4.8.4에 포함된 콘텐츠 패키지 목록
 
 ## 유용한 리소스 {#helpful-resources}
 
-* [AEM 6.4 릴리스 노트](../release-notes/release-notes.md)
+* [AEM 6.4 릴리스 정보](../release-notes/release-notes.md)
 * [AEM 제품 페이지](https://www.adobe.com/kr/solutions/web-experience-management.html)
 * [AEM 6.4 설명서](https://helpx.adobe.com/kr/support/experience-manager/6-4.html)
 * [Adobe 우선 순위 제품 업데이트](https://www.adobe.com/kr/subscription/priority-product-update.html) 구독
@@ -595,4 +595,4 @@ AEM 6.4.8.4에 포함된 콘텐츠 패키지 목록
 다음 사이트는 고객만 사용할 수 있습니다. 액세스가 필요한 고객의 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-* [고객 지원 팀에 문의](https://docs.adobe.com/content/help/ko-KR/customer-one/using/home.html)
+* [고객 지원 팀에 문의](https://experienceleague.adobe.com/docs/customer-one/using/home.html)
