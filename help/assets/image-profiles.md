@@ -12,10 +12,10 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 exl-id: 895103c8-df58-40f0-85d6-e29637edce53
 feature: Image Profiles
 role: Admin,User
-source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
+source-git-commit: 0abf095e352215cf6f83a409b34975bf8c5b0239
 workflow-type: tm+mt
-source-wordcount: '2729'
-ht-degree: 12%
+source-wordcount: '2893'
+ht-degree: 11%
 
 ---
 
@@ -36,9 +36,9 @@ ht-degree: 12%
 
 이미지에서 스마트 자르기를 구현할 때 Adobe은 다음 모범 사례를 권장하고 다음 제한을 적용합니다.
 
-| 제한 유형 | 우수 사례 | 제한 적용 | 2022년 12월 31일에 제한하는 것으로 변경 |
-| --- | --- | --- | --- |
-| 이미지당 스마트 자르기 수 | 5 | 100 | 20 |
+| 제한 유형 | 우수 사례 | 제한 적용 |
+| --- | --- | --- |
+| 이미지당 스마트 자르기 수 | 5 | 100 |
 
 참조 - [Dynamic Media 제한 사항](/help/assets/limitations.md).
 
@@ -48,7 +48,21 @@ ht-degree: 12%
 
 만드는 각 스마트 자르기 생성에는 추가 처리가 필요합니다. 예를 들어 5개 이상의 스마트 자르기 종횡비를 추가하면 자산 수집률이 느려질 수 있습니다. 또한 시스템에 대한 로드가 증가할 수 있습니다. 폴더 수준에서 스마트 자르기를 적용할 수 있으므로 폴더에서 사용하는 것이 좋습니다 *전용* 필요한 위치
 
-선택할 수 있는 두 가지 이미지 자르기 옵션이 있습니다. 색상 및 이미지 색상 견본 만들기를 자동화하는 옵션도 있습니다.
+**이미지 프로필에서 스마트 자르기 정의 지침**
+스마트 자르기 사용을 제어하고 자르기의 처리 시간 및 저장을 위해 다음 지침 및 팁을 권장합니다.
+
+* 폭과 높이 값이 동일한 중복 스마트 자르기 프로필을 만들면 안 됩니다.
+* 최종 사용이 아닌 자르기 차원을 기반으로 스마트 자르기에 이름을 지정합니다. 이렇게 하면 단일 차원이 여러 페이지에서 사용되는 중복 항목을 최적화할 수 있습니다.
+* 모든 폴더 또는 모든 자산에 적용되는 일반적인 스마트 자르기 프로필 대신 특정 폴더 및 하위 폴더에 대한 페이지 기반/자산 유형 기반 이미지 프로필을 만듭니다.
+* 하위 폴더에 적용하는 이미지 프로필은 폴더에 적용되는 이미지 프로필을 무시합니다.
+* 이상적으로는 이미지당 10~15개의 스마트 자르기를 사용하여 화면 비율과 처리 시간을 최적화합니다.
+
+선택할 이미지 자르기 옵션이 두 개 있습니다. 색상 및 이미지 색상 견본 만들기를 자동화하거나 대상 해상도의 자르기 컨텐츠를 보존하도록 선택할 수도 있습니다.
+
+>[!IMPORTANT]
+>
+>・ Adobe은 생성된 농작물과 견본이 브랜드와 값에 적절하고 적절한지 확인하기 위해 모든 농작물과 견본을 검토할 것을 권장합니다.
+・ 스마트 자르기에서 CMYK 이미지 형식이 지원되지 않습니다.
 
 <table> 
  <tbody> 
@@ -86,11 +100,10 @@ ht-degree: 12%
 
 ## 언샵 마스크 {#unsharp-mask}
 
-사용 **언샵 마스크** 최종 다운샘플링된 이미지에 선명도 필터 효과를 세밀하게 조정하려면 You can control intensity of effect, radius of the effect (measured in pixels), and a threshold of contrast that will be ignored. This effect uses the same options as Adobe Photoshop’s “Unsharp Mask” filter.
+사용 **언샵 마스크** 최종 다운샘플링된 이미지에 선명도 필터 효과를 세밀하게 조정하려면 You can control intensity of effect, radius of the effect (measured in pixels), and a threshold of contrast that will be ignored. 이 효과는 Adobe Photoshop의 &quot;언샵 마스크&quot; 필터와 동일한 옵션을 사용합니다.
 
 >[!NOTE]
->
->언샵 마스크는 50% 이상 다운샘플링된 PTIFF(피라미드형 tiff) 내의 축소된 표현물에만 적용됩니다. 즉, PTIFF 내에서 가장 큰 크기의 표현물은 언샵 마스크의 영향을 받지 않지만 축소판과 같은 작은 크기의 표현물은 변경됩니다(그리고 언샵 마스크 표시).
+언샵 마스크는 50% 이상 다운샘플링된 PTIFF(피라미드형 tiff) 내의 축소된 표현물에만 적용됩니다. 즉, PTIFF 내에서 가장 큰 크기의 표현물은 언샵 마스크의 영향을 받지 않지만 축소판과 같은 작은 크기의 표현물은 변경됩니다(그리고 언샵 마스크 표시).
 
 in **언샵 마스크**&#x200B;에는 다음과 같은 필터링 옵션이 있습니다.
 
@@ -169,13 +182,13 @@ Folders that have a profile already assigned to it are indicated by the display 
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. 탭 **[!UICONTROL 폴더에 처리 프로필 적용]** 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택하고 탭/클릭합니다 **[!UICONTROL 적용]**. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+1. 탭 **[!UICONTROL 폴더에 처리 프로필 적용]** 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택하고 탭/클릭합니다 **[!UICONTROL 적용]**. Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.
 
 #### 속성의 폴더에 Dynamic Media 이미지 프로필 적용 {#applying-image-profiles-to-folders-from-properties}
 
 1. AEM 로고를 탭하고 다음 위치로 이동합니다. **[!UICONTROL 자산]**. 그런 다음 이미지 프로필을 적용할 폴더의 상위 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 눌러 선택한 다음 탭합니다 **[!UICONTROL 속성]**.
-1. Tap the **[!UICONTROL Image Profiles]** tab. From the **[!UICONTROL Profile Name]** drop-down list, select the profile, then tap **[!UICONTROL Save &amp; Close]**. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+1. Tap the **[!UICONTROL Image Profiles]** tab. From the **[!UICONTROL Profile Name]** drop-down list, select the profile, then tap **[!UICONTROL Save &amp; Close]**. Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
@@ -200,8 +213,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 ## 단일 이미지의 스마트 자르기 또는 스마트 견본 편집 {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!NOTE]
->
->스마트 자르기는 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
+스마트 자르기는 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
 
 이미지의 스마트 자르기 창을 수동으로 다시 정렬하거나 크기를 조정하여 초점을 더 세분화할 수 있습니다.
 
@@ -300,4 +312,4 @@ You can remove an image profile from a folder from within the **[!UICONTROL Tool
 1. 을(를) 선택합니다 **[!UICONTROL 이미지 프로필]** 탭.
 1. 에서 **[!UICONTROL 프로필 이름]** 드롭다운 목록에서 **[!UICONTROL 없음]**&#x200B;를 탭한 다음, **[!UICONTROL 저장 및 닫기]**.
 
-   프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+   Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.
