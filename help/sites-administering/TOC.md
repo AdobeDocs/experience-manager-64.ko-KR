@@ -122,7 +122,7 @@ ht-degree: 36%
    + [Adobe Analytics를 위한 링크 추적 구성](adobeanalytics-link.md)
    + [Adobe Analytics 속성을 사용하여 구성 요소 데이터 매핑](adobeanalytics-mapping.md)
    + [Adobe Analytics를 위한 비디오 추적 구성](adobeanalytics-video.md)
-   + [콘텐츠 FAQ의 HTTP2 전송](scene7-http2faq.md)
+   + [콘텐츠 FAQ의 HTTP2 게재](scene7-http2faq.md)
    + [Adobe Campaign 통합 문제 해결](troubleshooting-campaignintegration.md)
    + [SharePoint 커넥터 라이센스, 저작권 고지 사항 및 면책조항](sharepoint-connector-licenses.md)
    + [SharePoint 커넥터](sharepoint-connector.md)
