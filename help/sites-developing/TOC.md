@@ -8,9 +8,9 @@ breadcrumb-title: Developing 안내서
 user-guide-description: 이 안내서에서는 AEM 인스턴스를 빌드하는 방법을 다룹니다.
 feature: Developing
 role: Developer
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: dbebe8ceaa629d04cee279e21a15594c54f0ba26
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '869'
 ht-degree: 92%
 
 ---
@@ -121,7 +121,6 @@ ht-degree: 92%
    + [HTTP API](https://experienceleague.adobe.com/docs/experience-manager-64/assets/extending/mac-api-assets.html)
    + [컨텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments.html)
    + [경험 조각](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/experience-fragments.html)
-   + [AEM의 컨텐츠 조각과 컨텐츠 서비스 이해](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + 개발 도구{#devtools}
    + [개발 도구](dev-tools.md)
    + [AEM 현대화 도구](modernization-tools.md)
@@ -222,3 +221,8 @@ ht-degree: 92%
    + [웹 페이지를 위한 응답형 디자인](responsive.md)
    + [모바일 장치용 사이트 만들기](mobile.md)
    + [에뮬레이터](emulators.md)
+
+<!--
+Deleted link to broken helpx video:
+    + [Understanding Content Fragments and Content Services in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
+-->
