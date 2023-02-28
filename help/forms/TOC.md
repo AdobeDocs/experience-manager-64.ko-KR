@@ -148,7 +148,7 @@ ht-degree: 4%
    + [AEM Sites 페이지에 적응형 양식 또는 대화형 커뮤니케이션 포함](using/embed-adaptive-form-aem-sites.md)
    + [외부 웹 페이지에 적응형 양식 임베드](using/embed-adaptive-form-external-web-page.md)
    + [적응형 양식 구성 요소의 인라인 스타일](using/inline-style-adaptive-forms.md)
-   + [여러 단계 양식 시퀀스 소개](using/introduction-form-sequence.md)
+   + [다단계 양식 시퀀스 소개](using/introduction-form-sequence.md)
    + [적응형 양식의 레이아웃 기능](using/layout-capabilities-adaptive-forms.md)
    + [AEM Forms의 자리 표시자 텍스트](using/placeholder-text-in-aem-forms-.md)
    + [양식 미리 보기](using/previewing-forms.md)
