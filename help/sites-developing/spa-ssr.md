@@ -10,10 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
 exl-id: 89e45231-885a-4d35-839b-2b50239503ad
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: 199ee2b38cbffc2b97e0fd3c25d828a7e5718bf3
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 1%
+source-wordcount: '1771'
+ht-degree: 3%
 
 ---
 
@@ -63,7 +63,7 @@ Adobe I/O Runtime에 대한 자세한 내용은
 
 >[!NOTE]
 >
->Adobe은 환경(스테이지, 제품, 테스트 등)별로 별도의 Adobe I/O Runtime 작업 공간을 권장합니다. 이렇게 하면 다른 환경에 배포된 단일 애플리케이션의 다른 버전을 사용하는 일반적인 SDLC(시스템 개발 수명 주기) 패턴을 사용할 수 있습니다. 문서를 참조하십시오 [Project Firefly 애플리케이션용 CI/CD](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md) 추가 정보.
+>Adobe은 환경(스테이지, 제품, 테스트 등)별로 별도의 Adobe I/O Runtime 작업 공간을 권장합니다. 이렇게 하면 다른 환경에 배포된 단일 애플리케이션의 다른 버전을 사용하는 일반적인 SDLC(시스템 개발 수명 주기) 패턴을 사용할 수 있습니다. 문서를 참조하십시오 [Project App Builder 애플리케이션용 CI/CD](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) 추가 정보.
 >
 >인스턴스 유형별 런타임 구현에 차이가 없으면 인스턴스(작성자, 게시)당 별도의 작업 공간이 필요하지 않습니다.
 
@@ -145,7 +145,7 @@ AEM이 Angular 및 React SPA 프레임워크을 기본적으로 지원하는 것
 >다음 [We.Retail 저널 앱](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) 는 데모 용도로만 사용되며 권장되는 Adobe I/O Runtime 대신 Node.js를 간단한 예로 사용합니다. 이 예는 프로젝트 작업에 사용해서는 안 됩니다.
 
 >[!NOTE]
->모든 AEM 프로젝트는 [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html): React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용합니다.
+>AEM 프로젝트는 React 또는 Angular를 통해 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 활용해야 합니다.
 
 ## Node.js 사용 {#using-node-js}
 
@@ -190,7 +190,7 @@ public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteCont
 
 기본 처리기의 구성은 섹션에 설명된 대로 구성해야 합니다 [원격 콘텐츠 렌더러 구성](#remote-content-renderer-configuration).
 
-###  원격 콘텐츠 렌더러 사용 {#usage}
+### 원격 콘텐츠 렌더러 사용 {#usage}
 
 서블릿을 가져와서 페이지에 삽입할 수 있는 일부 컨텐츠를 반환하려면 다음을 수행하십시오.
 
