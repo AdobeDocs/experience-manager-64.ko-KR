@@ -1,8 +1,8 @@
 ---
 title: Dynamic Media 이미지 프로필
-seo-title: Dynamic Media image profiles
+seo-title: Dynamic Media Image Profiles
 description: 언샵 마스크, 스마트 자르기, 스마트 견본 또는 둘 다에 대한 설정이 포함된 이미지 프로필을 만든 다음 이미지 자산의 폴더에 프로필을 적용합니다.
-seo-description: Create image profiles that contain settings for unsharp mask, and smart crop or smart swatch, or both, then apply the profile to a folder of image assets.
+seo-description: Create Image Profiles that contain settings for unsharp mask, and smart crop or smart swatch, or both, then apply the profile to a folder of image assets.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -12,10 +12,10 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 exl-id: 895103c8-df58-40f0-85d6-e29637edce53
 feature: Image Profiles
 role: Admin,User
-source-git-commit: 0abf095e352215cf6f83a409b34975bf8c5b0239
+source-git-commit: c413f31498cdccf8ceea4afc225c570a40ba1819
 workflow-type: tm+mt
-source-wordcount: '2893'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -44,18 +44,21 @@ ht-degree: 11%
 
 <!-- CQDOC-16069 for paragraph directly below -->
 
-스마트 자르기 좌표는 종횡비에 따라 다릅니다. 즉, 이미지 프로필의 다양한 스마트 자르기 설정에 대해 이미지 프로필에 추가된 차원에 대해 종횡비가 동일하면 동일한 종횡비가 Dynamic Media로 전송됩니다. 이러한 이유로 Adobe은 동일한 자르기 영역을 사용하는 것이 좋습니다. 이렇게 하면 이미지 프로필에 사용되는 다른 차원에는 영향을 주지 않습니다.
+스마트 자르기 좌표는 종횡비에 따라 다릅니다. 즉, 이미지 프로필의 각 스마트 자르기 설정에 대해 이미지 프로필에 추가된 차원에 대해 종횡비가 동일하면 동일한 종횡비가 Dynamic Media으로 전송됩니다. 따라서 Adobe은 동일한 자르기 영역을 사용하는 것이 좋습니다. 이렇게 하면 이미지 프로필에 사용되는 다른 차원에 영향을 주지 않습니다.
 
-만드는 각 스마트 자르기 생성에는 추가 처리가 필요합니다. 예를 들어 5개 이상의 스마트 자르기 종횡비를 추가하면 자산 수집률이 느려질 수 있습니다. 또한 시스템에 대한 로드가 증가할 수 있습니다. 폴더 수준에서 스마트 자르기를 적용할 수 있으므로 폴더에서 사용하는 것이 좋습니다 *전용* 필요한 위치
+생성하는 각 스마트 자르기 생성에는 추가 처리가 필요합니다. 예를 들어 5개 이상의 스마트 자르기 종횡비를 추가하면 자산 수집률이 느려질 수 있습니다. 또한 시스템에 대한 로드가 증가할 수 있습니다. 폴더 수준에서 스마트 자르기를 적용할 수 있으므로 폴더에서 사용하는 것이 좋습니다 *전용* 필요한 위치
 
 **이미지 프로필에서 스마트 자르기 정의 지침**
 스마트 자르기 사용을 제어하고 자르기의 처리 시간 및 저장을 위해 다음 지침 및 팁을 권장합니다.
 
-* 폭과 높이 값이 동일한 중복 스마트 자르기 프로필을 만들면 안 됩니다.
-* 최종 사용이 아닌 자르기 차원을 기반으로 스마트 자르기에 이름을 지정합니다. 이렇게 하면 단일 차원이 여러 페이지에서 사용되는 중복 항목을 최적화할 수 있습니다.
+* 스마트 자르기가 적용될 이미지 자산은 최소 50 x 50픽셀 이상이어야 합니다. &lt;!— CQDOC-20087>
+* 중복 스마트 자르기 차원이 포함된 이미지 프로필은 허용되지 않습니다. &lt;!— CQDOC-20087>
+* 스마트 자르기 옵션이 설정된 중복된 이름이 있는 이미지 프로필은 허용되지 않습니다. &lt;!— CQDOC-20087>
 * 모든 폴더 또는 모든 자산에 적용되는 일반적인 스마트 자르기 프로필 대신 특정 폴더 및 하위 폴더에 대한 페이지 기반/자산 유형 기반 이미지 프로필을 만듭니다.
 * 하위 폴더에 적용하는 이미지 프로필은 폴더에 적용되는 이미지 프로필을 무시합니다.
 * 이상적으로는 이미지당 10~15개의 스마트 자르기를 사용하여 화면 비율과 처리 시간을 최적화합니다.
+<!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
+* Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages.-->
 
 선택할 이미지 자르기 옵션이 두 개 있습니다. 색상 및 이미지 색상 견본 만들기를 자동화하거나 대상 해상도의 자르기 컨텐츠를 보존하도록 선택할 수도 있습니다.
 
@@ -91,7 +94,7 @@ ht-degree: 11%
   <tr> 
    <td>색상 및 이미지 견본</td> 
    <td>각 이미지에 대한 이미지 견본을 벌크로 생성합니다.</td> 
-   <td><p><strong>참고</strong>: 스마트 견본은 Dynamic Media Classic에서 지원되지 않습니다.</p> <p>색상 또는 텍스처를 보여주는 제품 이미지에서 고품질 색상 견본을 자동으로 찾아 생성합니다.</p> <p>[색상] 및 [이미지 견본]을 사용하려면 <strong>스마트 자르기</strong> [자르기 옵션] 드롭다운 목록에서 [색상] 및 [이미지 견본] 오른쪽에 있는 기능을 활성화(켜짐)합니다. [너비] 및 [높이] 텍스트 상자에 픽셀 값을 입력합니다.</p> <p>모든 이미지 작물은 [표현물] 레일에서 사용할 수 있지만 색상 견본은 URL 복사 기능을 통해서만 사용됩니다. 사이트에서 견본을 렌더링하려면 보기 구성 요소를 직접 사용해야 합니다. 회전판 배너는 예외입니다. Dynamic Media은 회전 배너에 사용된 견본에 대한 보기 구성 요소를 제공합니다.)</p> <p><strong>이미지 색상 견본 사용</strong></p> <p>이미지 색상 견본의 URL은 간단합니다. 해당 사항:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>여기서 <code>:Swatch</code> 이 자산 요청에 추가됩니다.</p> <p><strong>색상 견본 사용</strong></p> <p>색상 견본을 사용하려면 <code>req=userdata</code> 다음과 같이 요청합니다.</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>예를 들어 다음은 Dynamic Media Classic의 견본 자산입니다.</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>견본 자산의 해당 <code>req=userdata</code> URL:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>다음 <code>req=userdata</code> 응답은 다음과 같습니다.</p> <p><code class="code">SmartCropDef=Swatch
+   <td><p><strong>참고</strong>: 스마트 견본은 Dynamic Media Classic에서 지원되지 않습니다.</p> <p>색상 또는 텍스처를 보여주는 제품 이미지에서 고품질 색상 견본을 자동으로 찾아 생성합니다.</p> <p>[색상] 및 [이미지 견본]을 사용하려면 <strong>스마트 자르기</strong> [자르기 옵션] 드롭다운 목록에서 [색상] 및 [이미지 견본] 오른쪽에 있는 기능을 활성화(켜짐)합니다. [너비] 및 [높이] 텍스트 상자에 픽셀 값을 입력합니다.</p> <p>모든 이미지 작물은 [표현물] 레일에서 사용할 수 있지만 색상 견본은 URL 복사 기능을 통해서만 사용됩니다. 사이트에서 견본을 렌더링하려면 직접 보는 구성 요소를 사용해야 합니다. 이 규칙의 예외는 회전 배너입니다. Dynamic Media은 회전 배너에 사용된 견본에 대한 보기 구성 요소를 제공합니다.)</p> <p><strong>이미지 색상 견본 사용</strong></p> <p>이미지 색상 견본의 URL은 간단합니다.</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>여기서 <code>:Swatch</code> 이 자산 요청에 추가됩니다.</p> <p><strong>색상 견본 사용</strong></p> <p>색상 견본을 사용하려면 <code>req=userdata</code> 다음과 같이 요청합니다.</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>예를 들어 다음은 Dynamic Media Classic의 견본 자산입니다.</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>견본 자산의 해당 <code>req=userdata</code> URL:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>다음 <code>req=userdata</code> 응답은 다음과 같습니다.</p> <p><code class="code">SmartCropDef=Swatch
        SmartCropHeight=200.0
        SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
        SmartCropType=Swatch
@@ -100,7 +103,7 @@ ht-degree: 11%
 
 ## 언샵 마스크 {#unsharp-mask}
 
-사용 **언샵 마스크** 최종 다운샘플링된 이미지에 선명도 필터 효과를 세밀하게 조정하려면 You can control intensity of effect, radius of the effect (measured in pixels), and a threshold of contrast that will be ignored. 이 효과는 Adobe Photoshop의 &quot;언샵 마스크&quot; 필터와 동일한 옵션을 사용합니다.
+사용 **언샵 마스크** 최종 다운샘플링된 이미지에 선명도 필터 효과를 세밀하게 조정하려면 효과의 강도, 효과의 반경(픽셀 단위 측정) 및 무시되는 조명의 임계값을 제어할 수 있습니다. 이 효과는 Adobe Photoshop의 &quot;언샵 마스크&quot; 필터와 동일한 옵션을 사용합니다.
 
 >[!NOTE]
 언샵 마스크는 50% 이상 다운샘플링된 PTIFF(피라미드형 tiff) 내의 축소된 표현물에만 적용됩니다. 즉, PTIFF 내에서 가장 큰 크기의 표현물은 언샵 마스크의 영향을 받지 않지만 축소판과 같은 작은 크기의 표현물은 변경됩니다(그리고 언샵 마스크 표시).
@@ -137,10 +140,10 @@ in **언샵 마스크**&#x200B;에는 다음과 같은 필터링 옵션이 있�
 **Dynamic Media 이미지 프로필을 만들려면**:
 
 1. AEM 로고를 탭하고 다음 위치로 이동합니다. **[!UICONTROL 도구 > 자산 > 이미지 프로필]**.
-1. 탭 **[!UICONTROL 만들기]** 새 이미지 프로필을 추가하려면
+1. 탭 **[!UICONTROL 만들기]** 이미지 프로필을 추가하려면
 1. 프로파일 이름 및 언샵 마스크, 자르기, 견본 또는 둘 다에 대한 값을 입력합니다.
 
-   목적에 맞는 프로필 이름을 사용하는 것이 도움이 될 수 있습니다. 예를 들어, 색상 견본만 생성하는 프로파일을 만들려면(예: 스마트 자르기가 비활성화(꺼져 있음), 색상 및 이미지 색상 견본이 활성화됨(켜짐) 프로파일 이름 &quot;스마트 색상 견본&quot;을 사용할 수 있습니다.
+   목적에 맞는 프로필 이름을 사용하는 것이 도움이 될 수 있습니다. 예를 들어, [스마트 자르기]가 비활성화되고 [색상] 및 [이미지 견본]이 활성화된 경우 색상 견본만 생성하는 프로파일을 만들려면 프로파일 이름 &quot;스마트 색상 견본&quot;을 사용할 수 있습니다.
 
    See also [Smart Crop and Smart Swatch Options](#crop-options) and [Unsharp Mask](#unsharp-mask).
 
@@ -159,19 +162,19 @@ in **언샵 마스크**&#x200B;에는 다음과 같은 필터링 옵션이 있�
 
 ## 폴더에 Dynamic Media 이미지 프로필 적용 {#applying-an-image-profile-to-folders}
 
-이미지 프로필을 폴더에 할당하면 모든 하위 폴더는 해당 상위 폴더에서 프로필을 자동으로 상속합니다. 즉, 폴더에 이미지 프로필을 하나만 할당할 수 있습니다. 따라서 자산을 업로드, 저장, 사용 및 보관하는 의 폴더 구조를 신중하게 고려하십시오.
+이미지 프로필을 폴더에 할당하면 모든 하위 폴더는 해당 상위 폴더에서 프로필을 자동으로 상속합니다. 이 워크플로우는 한 개의 이미지 프로필만 폴더에 할당할 수 있음을 의미합니다. 따라서 자산을 업로드, 저장, 사용 및 보관하는 의 폴더 구조를 신중하게 고려하십시오.
 
 폴더에 다른 이미지 프로필을 할당한 경우 새 프로필이 이전 프로필을 무시합니다. 이전에 기존 폴더 자산은 변경되지 않은 상태로 유지됩니다. 새 프로필은 나중에 폴더에 추가된 자산에 적용됩니다.
 
-프로필이 할당된 폴더는 카드에 표시되는 프로필의 이름으로 사용자 인터페이스에 표시됩니다.
+프로필이 할당된 폴더는 카드에 표시되는 프로필 이름으로 사용자 인터페이스에 표시됩니다.
 
-기존 이미지 프로필에 스마트 자르기를 추가할 때 [DAM 자산 업데이트 워크플로우](assets-workflow.md) 자산 저장소에서 기존 자산에 대한 자르기를 생성하려는 경우.
+기존 이미지 프로필에 스마트 자르기를 추가할 때는 [DAM 자산 업데이트 워크플로우](assets-workflow.md) 자산 저장소에서 기존 자산에 대한 자르기를 생성하려는 경우.
 
 이미지 프로필을 특정 폴더에 적용하거나 모든 자산에 전체적으로 적용할 수 있습니다.
 
 ### 특정 폴더에 Dynamic Media 이미지 프로필 적용 {#applying-image-profiles-to-specific-folders}
 
-You can apply an image profile to a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from **[!UICONTROL Properties]**. This section describes how to apply image profiles to folders both ways.
+내에서 폴더에 이미지 프로필을 적용할 수 있습니다 **[!UICONTROL 도구]** 메뉴 또는 폴더에 있는 경우 **[!UICONTROL 속성]**. 이 섹션에서는 두 가지 방법으로 폴더에 이미지 프로필을 적용하는 방법을 설명합니다.
 
 Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.
 
@@ -194,7 +197,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 ### Dynamic Media 이미지 프로필을 전체적으로 적용 {#applying-an-image-profile-globally}
 
-폴더에 프로필을 적용하는 것 외에도 폴더에 업로드된 모든 컨텐츠가 선택한 프로필이 적용되도록 전체적으로 프로필을 적용할 수도 있습니다.
+폴더에 프로필을 적용하는 것 외에도 AEM Assets에 업로드된 모든 컨텐츠가 선택한 프로필이 적용되도록 전체적으로 프로필을 적용할 수도 있습니다.
 
 **Dynamic Media 이미지 프로필을 전체적으로 적용하려면**:
 
@@ -226,9 +229,8 @@ Folders that have a profile already assigned to it are indicated by the display 
 **단일 이미지의 스마트 자르기 또는 스마트 견본을 편집하려면**:
 
 1. AEM 로고를 탭하고 다음 위치로 이동합니다. **[!UICONTROL 자산]**&#x200B;스마트 자르기 또는 스마트 견본 이미지 프로필이 적용된 폴더로 이동합니다.
-
-1. 폴더를 눌러 해당 컨텐츠를 엽니다.
-1. 조정할 스마트 자르기 또는 스마트 견본이 있는 이미지를 누릅니다.
+1. 폴더를 탭하여 컨텐츠를 엽니다.
+1. 조정할 스마트 자르기 또는 스마트 견본을 사용하여 이미지를 탭합니다.
 1. 도구 모음에서 **[!UICONTROL 스마트 자르기]**.
 
 1. 다음 중 하나를 수행합니다.
@@ -295,7 +297,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 폴더에서 이미지 프로필을 제거하면 모든 하위 폴더는 해당 상위 폴더에서 프로필 제거를 자동으로 상속합니다. 그러나 폴더 내에서 발생한 파일의 모든 처리가 그대로 유지됩니다.
 
-You can remove an image profile from a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from **[!UICONTROL Properties]**. This section describes how to remove image profiles from folders both ways.
+내의 폴더에서 이미지 프로필을 제거할 수 있습니다 **[!UICONTROL 도구]** 메뉴 또는 폴더에 있는 경우 **[!UICONTROL 속성]**. 이 섹션에서는 두 가지 방법으로 폴더에서 이미지 프로필을 제거하는 방법을 설명합니다.
 
 ### 프로필 사용자 인터페이스를 통해 폴더에서 Dynamic Media 이미지 프로필 제거 {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
