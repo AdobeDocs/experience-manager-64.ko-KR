@@ -10,8 +10,8 @@ feature: Authoring
 role: User
 source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '265'
+ht-degree: 60%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 + [클래식 UI 작성 안내서 개요](home.md)
 + 클래식 UI 작성 소개 {#introduction}
    + [작성자를 위한 첫 번째 단계](classic-page-author-first-steps.md)
-   + [클래식 UI에서 작성](classicui.md)
+   + [클래식 UI로 작성](classicui.md)
    + [작성 환경 사용](author-env.md)
    + [기본 처리](author-env-basic-handling.md)
    + [계정 환경 구성](author-env-user-props.md)
@@ -41,7 +41,7 @@ ht-degree: 0%
    + [작성 시의 AEM 문제 해결](classic-page-author-troubleshooting.md)
    + [액세스 가능한 컨텐츠 만들기(WCAG 2.0 적합성)](classic-page-author-accessible-content.md)
    + [모바일 디바이스용 페이지 작성](classic-feature-mobile.md)
-   + [페이지 작성용 구성 요소](classic-page-author-edit-mode.md)
+   + [페이지 작성을 위한 구성 요소](classic-page-author-edit-mode.md)
    + [페이지 편집 시 키보드 단축키](classic-page-author-keyboard-shortcuts.md)
 + 사이트 및 페이지 기능 {#siteandpage}
    + [컨텐츠 조각으로 페이지 작성](classic-page-author-content-fragments.md)
@@ -62,10 +62,10 @@ ht-degree: 0%
    + [론치 홍보](classic-launches-promoting.md)
 + 개인 맞춤화 {#personalization}
    + [세그먼테이션 이해](classic-personalization-campaigns-segmentation.md)
-   + [캠페인 관리](classic-personalization-campaigns.md)
+   + [Campaign Management](classic-personalization-campaigns.md)
    + [티저 및 전략](classic-personalization-campaigns-teasers-strategy.md)
    + [랜딩 페이지](classic-personalization-campaigns-landingpage.md)
-   + [Target 오퍼](classic-personalization-campaigns-target-offers.md)
+   + [오퍼 Target](classic-personalization-campaigns-target-offers.md)
    + [마케팅 캠페인 관리자 작업](classic-personalization-campaigns-mktg-manager.md)
    + [이메일 마케팅](classic-personalization-campaigns-email.md)
    + [바운스된 이메일 추적](classic-personalization-campaigns-email-tracking-bounces.md)
@@ -79,10 +79,10 @@ ht-degree: 0%
    + [Adobe Campaign 구성 요소](classic-personalization-ac-components.md)
    + [Adobe Campaign 타깃팅](classic-personalization-ac-target.md)
 + 클래식 UI에서 자산 작성 {#assets}
-   + [자산 사용](classicui-assets.md)
+   + [자산 작업](classicui-assets.md)
    + [Dynamic Media 자산 제공](dynamic-media-assets-delivering.md)
    + [페이지에 Dynamic Media 자산 추가](dynamic-media-assets-adding-to-page.md)
    + [페이지에 Dynamic Media Classic(Scene7) 기능 추가](manage-assets-classic-s7.md)
    + [Dynamic Media 작업](dynamic-media-assets.md)
    + [비디오](manage-assets-classic-s7-video.md)
-   + [테스트 자산에 대한 이름 지정 규칙](asset-naming-conventions.md)
+   + [자산 테스트에 대한 이름 지정 규칙](asset-naming-conventions.md)

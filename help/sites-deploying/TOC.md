@@ -11,7 +11,7 @@ role: Architect
 source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
 source-wordcount: '370'
-ht-degree: 22%
+ht-degree: 18%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 22%
 + AEM 배포 {#deploying}
    + [배포 및 유지 관리](deploy.md)
    + [권장 배포](recommended-deploys.md)
-   + [애플리케이션 서버 설치](application-server-install.md)
+   + [응용 프로그램 서버 설치](application-server-install.md)
    + [사용자 지정 독립형 설치](custom-standalone-install.md)
    + [명령줄 시작 및 중지](command-line-start-and-stop.md)
    + [AEM 6에서 노드 저장소 및 데이터 저장소 구성](data-store-config.md)

@@ -134,7 +134,7 @@ ht-degree: 4%
    + [양식 데이터 모델 작업](using/work-with-form-data-model.md)
    + [양식 데이터 모델 사용](using/using-form-data-model.md)
 + 적응형 Forms - 기본 작성 {#adaptive-forms-basic-authoring}
-   + [적응형 양식 작업을 위한 우수 사례](using/adaptive-forms-best-practices.md)
+   + [적응형 양식 작업에 대한 우수 사례](using/adaptive-forms-best-practices.md)
    + [적응형 양식 만들기](using/creating-adaptive-form.md)
    + [적응형 양식 조각](using/adaptive-form-fragments.md)
    + [제출 작업 구성](using/configuring-submit-actions.md)
