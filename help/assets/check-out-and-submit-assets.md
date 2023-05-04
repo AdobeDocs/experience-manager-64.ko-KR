@@ -5,16 +5,20 @@ contentOwner: AG
 feature: Asset Management
 role: User
 exl-id: 0c79ed42-0acd-426e-8e14-412bb4117585
-source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 2%
+source-wordcount: '429'
+ht-degree: 8%
 
 ---
 
 # Assets의 체크인 및 체크아웃 파일 {#check-in-and-check-out-files-in-assets}
 
-Adobe Experience Manager Assets를 사용하면 편집할 자산을 체크 아웃하고 변경을 완료한 후 다시 체크 인할 수 있습니다. 자산을 체크 아웃한 후에는 자산을 편집, 주석 달기, 게시, 이동 또는 삭제할 수만 있습니다. 자산을 체크 아웃하면 자산이 잠깁니다. 다른 사용자는 자산을 [!DNL Experience Manager] Assets에 다시 체크 인할 때까지 자산에서 이러한 작업을 수행할 수 없습니다. 그러나 잠긴 자산에 대한 메타데이터를 변경할 수 있습니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+Adobe Experience Manager Assets를 사용하면 편집할 자산을 체크 아웃하고 변경을 완료한 후 다시 체크 인할 수 있습니다. 자산을 체크 아웃한 후에는 자산을 편집, 주석 달기, 게시, 이동 또는 삭제할 수만 있습니다. 자산을 체크 아웃하면 자산이 잠깁니다. 다른 사용자는 자산을 다시 체크 인할 때까지 자산에서 이러한 작업을 수행할 수 없습니다 [!DNL Experience Manager] 자산. 그러나 잠긴 자산에 대한 메타데이터를 변경할 수 있습니다.
 
 자산을 체크 아웃하거나 체크 인할 수 있으려면 자산에 대해 쓰기 액세스 권한이 필요합니다.
 
@@ -26,11 +30,11 @@ Adobe Experience Manager Assets를 사용하면 편집할 자산을 체크 아�
 
    ![chlimage_1-468](assets/chlimage_1-468.png)
 
-1. 도구 모음에서 **[!UICONTROL 체크아웃]** 아이콘을 클릭/탭합니다.
+1. 도구 모음에서 **[!UICONTROL 체크아웃]** 아이콘.
 
    ![chlimage_1-469](assets/chlimage_1-469.png)
 
-   **[!UICONTROL Checkout]** 아이콘이 잠금이 열려 있는 **[!UICONTROL Checkin]** 아이콘으로 전환되는지 확인합니다.
+   다음을 확인합니다. **[!UICONTROL 체크아웃]** 아이콘 전환 **[!UICONTROL 체크 인]** 아이콘이 표시됩니다.
 
    ![chlimage_1-470](assets/chlimage_1-470.png)
 
@@ -42,7 +46,7 @@ Adobe Experience Manager Assets를 사용하면 편집할 자산을 체크 아�
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   그러나 **[!UICONTROL 속성 보기]** 아이콘을 클릭/탭하여 잠긴 자산에 대한 메타데이터를 편집할 수 있습니다.
+   그러나 클릭/탭할 수 있습니다 **[!UICONTROL 속성 보기]** 아이콘을 사용하여 잠긴 자산의 메타데이터를 편집합니다.
 
 1. 편집 아이콘을 클릭/탭하여 자산을 편집 모드로 엽니다.
 
@@ -54,21 +58,21 @@ Adobe Experience Manager Assets를 사용하면 편집할 자산을 체크 아�
 
    자산에 주석을 달거나 게시하도록 선택할 수도 있습니다.
 
-1. 자산 UI에서 편집된 자산을 선택하고 도구 모음에서 **[!UICONTROL Checkin]** 아이콘을 클릭/탭합니다.
+1. Select the edited asset from the Assets UI, and click/tap the **[!UICONTROL Checkin]** icon from the toolbar.
 
    ![chlimage_1-475](assets/chlimage_1-475.png)
 
-   수정된 자산은 [!DNL Assets]에 체크 인되며, 다른 사용자가 편집할 수 있습니다.
+   수정된 자산은에 체크 인됩니다. [!DNL Assets] 및 은 다른 사용자가 편집할 수 있도록 제공됩니다.
 
 ## 강제 체크인 {#forced-check-in}
 
 관리자는 다른 사용자가 체크 아웃한 자산을 체크 인할 수 있습니다.
 
-1. 관리자로 [!DNL Assets]에 로그인합니다.
-1. 자산 UI에서 다른 사용자가 체크 아웃한 자산을 한 개 이상 선택합니다.
+1. 에 로그인합니다. [!DNL Assets] 관리자로.
+1. Assets UI에서 다른 사용자가 체크 아웃한 자산을 한 개 이상 선택합니다.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
-1. 도구 모음에서 **[!UICONTROL 잠금 해제]** 아이콘을 클릭/탭합니다. 자산이 다시 체크 인되고 다른 사용자가 편집할 수 있습니다.
+1. 도구 모음에서 **[!UICONTROL 잠금 해제]** 아이콘. 자산이 다시 체크 인되고 다른 사용자가 편집할 수 있습니다.
 
    ![chlimage_1-477](assets/chlimage_1-477.png)

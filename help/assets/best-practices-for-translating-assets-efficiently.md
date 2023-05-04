@@ -5,18 +5,22 @@ contentOwner: AG
 feature: Translation
 role: User,Admin
 exl-id: 15162b80-ddef-4ec0-9db6-36695c93ebb1
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 1%
+source-wordcount: '534'
+ht-degree: 2%
 
 ---
 
 # 자산을 효율적으로 번역하는 우수 사례 {#best-practices-for-translating-assets-efficiently}
 
-Adobe Experience Manager Assets는 디지털 자산에 대한 바이너리, 메타데이터 및 태그를 여러 로케일로 변환하고 번역된 자산을 관리하기 위해 다국어 워크플로우를 지원합니다. 자세한 내용은 [다국어 자산](multilingual-assets.md)을 참조하십시오.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
-다양한 번역 버전이 동기화되도록 자산을 효율적으로 관리하려면 번역 워크플로우를 실행하기 전에 자산의 [언어 사본](preparing-assets-for-translation.md)을 만드십시오.
+Adobe Experience Manager Assets는 디지털 자산에 대한 바이너리, 메타데이터 및 태그를 여러 로케일로 변환하고 번역된 자산을 관리하기 위해 다국어 워크플로우를 지원합니다. 자세한 내용은 [다국어 자산](multilingual-assets.md).
+
+다양한 번역 버전이 동기화되도록 자산을 효율적으로 관리하려면 다음을 만드십시오 [언어 복사](preparing-assets-for-translation.md) 번역 워크플로우를 실행하기 전, 자산 수
 
 자산 또는 자산 그룹의 언어 사본은 유사한 컨텐츠 계층 구조의 언어 동기(또는 동일 언어의 자산 버전)입니다.
 
@@ -33,17 +37,17 @@ Adobe Experience Manager Assets는 디지털 자산에 대한 바이너리, 메�
    * [파일 데이터 저장소 설정](/help/sites-deploying/data-store-config.md)
    * [Amazon S3 데이터 저장소 설정](/help/sites-deploying/data-store-config.md)
 
-1. [DAM MetaData Writeback](/help/sites-administering/workflow-offloader.md#disable-offloading) 워크플로우 비활성화
+1. 비활성화 [DAM 메타데이터 원본에 쓰기](/help/sites-administering/workflow-offloader.md#disable-offloading) 워크플로우
 
-   이름에서 알 수 있듯이 *DAM 메타데이터 원본에 쓰기* 워크플로우는 메타데이터를 이진 파일에 다시 기록합니다. 메타데이터는 번역 후 변경되므로 이진 파일에 다시 쓰면 언어 복사본에 다른 바이너리가 생성됩니다.
+   이름에 나오는 대로 *DAM 메타데이터 원본에 쓰기* 워크플로우는 메타데이터를 이진 파일에 다시 씁니다. 메타데이터는 번역 후 변경되므로 이진 파일에 다시 쓰면 언어 복사본에 다른 바이너리가 생성됩니다.
 
    >[!NOTE]
    >
-   >*DAM MetaData 원본에 쓰기* 워크플로우를 비활성화하면 자산 바이너리에 대한 XMP 메타데이터 다시 쓰기가 비활성화됩니다. 따라서 향후 메타데이터 변경 사항은 더 이상 자산 내에 저장되지 않습니다. 이 워크플로우를 비활성화하기 전에 결과를 평가합니다.
+   >비활성화 *DAM 메타데이터 원본에 쓰기* 워크플로우는 자산 바이너리에 대한 XMP 메타데이터 쓰기 되돌리기 기능을 해제합니다. 따라서 향후 메타데이터 변경 사항은 더 이상 자산 내에 저장되지 않습니다. 이 워크플로우를 비활성화하기 전에 결과를 평가합니다.
 
-1. *마지막 수정 날짜 설정* 워크플로우를 활성화합니다.
+1. 를 활성화합니다 *마지막 수정 날짜 설정* 워크플로우.
 
-   *DAM 메타데이터 원본에 쓰기* 워크플로우는 자산에 대한 마지막으로 수정한 날짜를 구성합니다. 2단계에서 이 워크플로우를 비활성화했으므로 [!DNL Experience Manager Assets]은(는) 더 이상 자산의 마지막으로 수정한 날짜를 최신 상태로 유지할 수 없습니다. 따라서 *마지막 수정 날짜 설정* 워크플로우를 활성화하여 자산의 마지막 수정 날짜가 최신 상태인지 확인하십시오. 마지막으로 수정한 날짜가 지난 자산은 오류를 일으킬 수 있습니다.
+   다음 *DAM 메타데이터 원본에 쓰기* 워크플로우는 자산의 마지막 수정 날짜를 구성합니다. 2단계에서 이 워크플로우를 비활성화했으므로 [!DNL Experience Manager Assets] 는 더 이상 자산의 마지막 수정 날짜를 최신 상태로 유지할 수 없습니다. 따라서 *마지막 수정 날짜 설정* 워크플로우에서 자산의 마지막 수정 날짜가 최신 상태인지 확인합니다. 마지막으로 수정한 날짜가 지난 자산은 오류를 일으킬 수 있습니다.
 
-1. [자산 바이너리 ](/help/sites-administering/tc-tic.md) 번역을 중지하도록 번역 통합 프레임워크를 구성합니다. 자산 탭에서 &quot;자산 번역&quot; 옵션을 선택 취소하여 자산 바이너리 번역을 중지합니다.
-1. [다국어 자산 워크플로우를 사용하여 자산 메타데이터/태그를 변환합니다](multilingual-assets.md).
+1. [번역 통합 프레임워크 구성](/help/sites-administering/tc-tic.md) 자산 바이너리 번역을 중지하려면 다음을 수행하십시오. 자산 탭에서 &quot;자산 번역&quot; 옵션을 선택 취소하여 자산 바이너리 번역을 중지합니다.
+1. 를 사용하여 자산 메타데이터/태그 번역 [다국어 자산 워크플로우](multilingual-assets.md).

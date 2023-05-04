@@ -1,34 +1,38 @@
 ---
 title: XMP 메타데이터
-description: 메타데이터 관리를 위해 [!DNL Experience Manager] 자산에서 사용하는 XMP(Extensible Metadata Platform) 메타데이터 표준에 대해 알아봅니다. XMP은 다양한 애플리케이션을 위한 메타데이터 생성, 처리 및 교환을 위한 표준 형식을 제공합니다.
+description: 에서 사용하는 XMP(Extensible Metadata Platform) 메타데이터 표준에 대해 알아봅니다. [!DNL Experience Manager] 메타데이터 관리를 위한 자산. XMP은 다양한 애플리케이션을 위한 메타데이터 생성, 처리 및 교환을 위한 표준 형식을 제공합니다.
 contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 32c4ca3d-2e9e-46a3-b4c7-70dcc50daaaa
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 0%
+source-wordcount: '846'
+ht-degree: 19%
 
 ---
 
 # XMP 메타데이터 {#xmp-metadata}
 
-XMP(Extensible Metadata Platform)은 모든 메타데이터 관리를 위해 [!DNL Experience Manager] 자산에서 사용하는 메타데이터 표준입니다. XMP은 다양한 애플리케이션을 위한 메타데이터 생성, 처리 및 교환을 위한 표준 형식을 제공합니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
-모든 파일 형식에 포함할 수 있는 범용 메타데이터 인코딩을 제공하는 것 외에도 XMP은 풍부한 [컨텐츠 모델](xmp.md#xmp-core-concepts) 및 Adobe](xmp.md#advantages-of-xmp) 및 다른 회사에서 지원하는 [를 제공하므로 [!DNL Experience Manager] 자산과 함께 XMP 사용자가 구축할 수 있는 강력한 플랫폼을 제공합니다.
+XMP(Extensible Metadata Platform)은 [!DNL Experience Manager] 모든 메타데이터 관리를 위한 자산. XMP은 다양한 애플리케이션을 위한 메타데이터 생성, 처리 및 교환을 위한 표준 형식을 제공합니다.
 
-[XMP 사양](https://www.adobe.com/devnet/xmp.html)은 Adobe에서 사용할 수 있습니다.
+모든 파일 형식에 포함할 수 있는 범용 메타데이터 인코딩을 제공하는 것 외에도 XMP에서는 다양한 기능을 제공합니다 [콘텐츠 모델](xmp.md#xmp-core-concepts) 및 [Adobe 지원](xmp.md#advantages-of-xmp) 및 기타 여러 회사에서 사용할 수 있도록 [!DNL Experience Manager] 자산은 빌드할 강력한 플랫폼을 가지고 있습니다.
+
+다음 [XMP 사양](https://www.adobe.com/devnet/xmp.html) Adobe에서 사용할 수 있습니다.
 
 ## XMP이란? {#what-is-xmp}
 
-[!DNL Experience Manager] Assets는 기본적으로 Adobe이 주도하는 확장 가능한 메타데이터 플랫폼인 XMP을 지원합니다. XMP은 표준화된 독점 메타데이터를 디지털 자산에 처리하고 저장하는 표준입니다. XMP은 여러 애플리케이션이 메타데이터로 효과적으로 작동할 수 있도록 하는 일반적인 표준으로 설계되었습니다.
+[!DNL Experience Manager] Assets는 기본적으로 Adobe에 의해 실행되는 확장 가능한 메타데이터 플랫폼인 XMP을 지원합니다. XMP은 표준화된 독점 메타데이터를 디지털 자산에 처리하고 저장하는 표준입니다. XMP은 여러 애플리케이션이 메타데이터로 효과적으로 작동할 수 있도록 하는 일반적인 표준으로 설계되었습니다.
 
-예를 들어, 프로덕션 전문가가 Adobe 애플리케이션 내에서 내장된 XMP 지원을 사용하여 여러 파일 형식에 대한 정보를 전달합니다. [!DNL Experience Manager] Assets 저장소는 XMP 메타데이터를 추출하여 사용하여 컨텐츠 라이프사이클을 관리하고 자동화 워크플로우를 만드는 기능을 제공합니다.
+예를 들어, 프로덕션 전문가가 Adobe 애플리케이션 내에서 내장된 XMP 지원을 사용하여 여러 파일 형식에 대한 정보를 전달합니다. 다음 [!DNL Experience Manager] Assets 저장소는 XMP 메타데이터를 추출하여 사용하여 컨텐츠 라이프사이클을 관리하고 자동화 워크플로우를 만드는 기능을 제공합니다.
 
 XMP은 데이터 모델, 스토리지 모델 및 스키마를 제공하여 메타데이터 정의, 생성 및 처리 방법을 표준화합니다. 이러한 모든 개념은 이 섹션에서 다룹니다.
 
-EXIF, ID3 또는 Microsoft Office의 모든 레거시 메타데이터는 자동으로 XMP으로 변환되며, 제품 카탈로그와 같은 고객별 메타데이터 스키마를 지원하도록 확장할 수 있습니다.
+EXIF, ID3 또는 Microsoft Office의 모든 기존 메타데이터는 자동으로 XMP으로 변환되며, 제품 카탈로그와 같은 고객별 메타데이터 스키마를 지원하도록 확장할 수 있습니다.
 
 XMP의 메타데이터는 속성 세트로 구성됩니다. 이러한 속성은 항상\
 리소스라는 특정 엔터티 즉, 속성은 리소스에 대한 &quot;정보&quot;입니다. XMP의 경우 리소스는 항상 자산입니다.
@@ -39,9 +43,9 @@ Adobe은 Adobe Acrobat 소프트웨어 제품의 일부로 XMP 표준을 처음 
 
 ### XMP 에코시스템 {#xmp-ecosystem}
 
-XMP은 정의된 메타데이터 항목 세트와 함께 사용할 수 있는 [메타데이터](https://en.wikipedia.org/wiki/Metadata) 모델을 정의합니다. 또한 XMP은 최종 이미지에 결합하기 위해 사진 편집 단계(예: [자르기](https://en.wikipedia.org/wiki/Cropping_%28image%29) 또는 색상 조정)를 통해 촬영되거나, 스캔되거나, 텍스트로 작성된 리소스를 여러 처리 단계를 거칠 때 리소스의 내역을 기록하는 데 유용한 기본 속성을 위해 특정 [스키마](https://en.wikipedia.org/wiki/XML_schema)를 정의합니다. [](https://en.wikipedia.org/wiki/Image_scanner) XMP에서는 각 소프트웨어 프로그램 또는 장치가 디지털 리소스에 자체 정보를 추가할 수 있도록 허용하며 이를 최종 디지털 파일에 유지할 수 있습니다.
+XMP defines a [metadata](https://en.wikipedia.org/wiki/Metadata) model that can be used with any defined set of metadata items. XMP also defines particular [schemas](https://en.wikipedia.org/wiki/XML_schema) for basic properties useful for recording the history of a resource as it passes through multiple processing steps, from being photographed, [scanned](https://en.wikipedia.org/wiki/Image_scanner), or authored as text, through photo editing steps (such as [cropping](https://en.wikipedia.org/wiki/Cropping_%28image%29) or color adjustment), to assembly into a final image. XMP allows each software program or device along the way to add its own information to a digital resource, which can then be retained in the final digital file.
 
-XMP은 가장 일반적으로 직렬화되어 [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://en.wikipedia.org/wiki/Resource_Description_Framework)(RDF)의 하위 집합을 사용하여 저장됩니다. 이 하위 집합은 [XML](https://en.wikipedia.org/wiki/XML)로 표시됩니다.
+XMP is most commonly serialized and stored using a subset of the [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://en.wikipedia.org/wiki/Resource_Description_Framework) (RDF), which is in turn expressed in [XML](https://en.wikipedia.org/wiki/XML).
 
 ## XMP의 이점 {#advantages-of-xmp}
 
@@ -69,7 +73,7 @@ XMP 표준은 확장 가능하도록 설계되었으므로 사용자 지정 메�
 XMP 스키마는\
 데이터 유형 및 설명 정보입니다. XMP 스키마는 XML 네임스페이스 URI로 식별됩니다. 네임스페이스를 사용하면 이름이 같지만 의미가 다른 여러 스키마에서 속성 간에 충돌이 발생하지 않습니다.
 
-예를 들어, 독립적으로 디자인된 두 개의 스키마에서 **Creator** 속성은 자산을 만든 사람이나 자산을 만든 응용 프로그램(예: Adobe Photoshop)을 의미할 수 있습니다.
+예: **작성자** 독립적으로 디자인된 두 스키마의 속성은 자산을 만든 사람을 의미하거나 자산을 만든 응용 프로그램(예: Adobe Photoshop)을 의미할 수 있습니다.
 
 ### 속성 및 값 {#properties-and-values}
 
@@ -84,4 +88,4 @@ XMP에는 하나 이상의 스키마의 속성이 포함될 수 있습니다.
 
 ### 언어 대체 요소 {#language-alternatives}
 
-XMP에서는 텍스트 속성에 **xml:lang** 속성을 추가하여 텍스트 언어를 지정할 수 있는 기능을 제공합니다.
+XMP에서는 다음을 추가할 수 있습니다 **xml:lang** 속성을 텍스트 속성에 추가하여 텍스트의 언어를 지정합니다.

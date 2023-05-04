@@ -1,8 +1,8 @@
 ---
 title: 번역할 문자열 추출
-seo-title: 번역할 문자열 추출
+seo-title: Extracting Strings for Translating
 description: xgettext-maven-plugin을 사용하여 번역할 필요가 있는 소스 코드에서 문자열을 추출합니다
-seo-description: xgettext-maven-plugin을 사용하여 번역할 필요가 있는 소스 코드에서 문자열을 추출합니다
+seo-description: Use xgettext-maven-plugin to extract strings from your source code that need translating
 uuid: 2c586ecb-8494-4f8f-b31a-1ed73644d611
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: components
 discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
 exl-id: 50c2479b-72b6-42fa-8e48-45c8e9596161
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 3%
+source-wordcount: '512'
+ht-degree: 4%
 
 ---
 
 # 번역할 문자열 추출{#extracting-strings-for-translating}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 xgettext-maven-plugin을 사용하여 번역할 필요가 있는 소스 코드에서 문자열을 추출합니다. Maven 플러그인은 번역을 위해 보내는 XLIFF 파일에 문자열을 추출합니다. 문자열은 다음 위치에서 추출됩니다.
 
@@ -25,7 +29,7 @@ xgettext-maven-plugin을 사용하여 번역할 필요가 있는 소스 코드�
 * Javascript 소스 파일
 * SVN 리소스의 XML 표현(JCR 노드)
 
-## 문자열 추출 구성 중 {#configuring-string-extraction}
+## 문자열 추출 구성 {#configuring-string-extraction}
 
 xgettext-maven-plugin 도구가 프로젝트에 대한 문자열을 추출하는 방법을 구성합니다.
 
@@ -67,10 +71,10 @@ i18n.any 파일의 /filter 섹션은 xgettext-maven-plugin 도구가 구문 분�
 | 접두어 | 효과 |
 |---|---|
 | / | JCR 경로를 나타냅니다. 따라서 이 접두사는 jcr_root 디렉토리 아래의 파일과 일치합니다. |
-| amp;ast; | 파일 시스템의 일반 파일을 나타냅니다. |
+| &amp;ast; | 파일 시스템의 일반 파일을 나타냅니다. |
 | 없음 | 접두사가 없거나 폴더나 파일 이름으로 시작하는 패턴은 파일 시스템의 일반 파일을 나타냅니다. |
 
-패턴 내에서 사용할 경우, / 문자는 하위 디렉터리 및 &amp;ast;를 나타냅니다.문자가 모두 일치합니다. 다음 표에는 몇 가지 예제 규칙이 나와 있습니다.
+패턴 내에서 사용하는 경우 / 문자는 하위 디렉토리와 &amp;ast;를 나타냅니다. 문자가 모두 일치합니다. 다음 표에는 몇 가지 예제 규칙이 나와 있습니다.
 
 <table> 
  <tbody> 
@@ -99,7 +103,7 @@ i18n.any 파일의 /filter 섹션은 xgettext-maven-plugin 도구가 구문 분�
  </tbody> 
 </table>
 
-### 문자열 {#extracting-the-strings} 추출
+### 문자열 추출  {#extracting-the-strings}
 
 POM 없음:
 
@@ -107,7 +111,7 @@ POM 없음:
 mvn -N com.adobe.granite.maven:xgettext-maven-plugin:1.2.2:extract  -Dxgettext.verbose=true -Dxgettext.target=out -Dxgettext.rules=i18n.any -Dxgettext.root=.
 ```
 
-POM을 사용하는 경우:POM에 추가:
+POM을 사용하는 경우: POM에 추가:
 
 ```xml
 <build>
@@ -135,10 +139,10 @@ mvn xgettext:extract
 
 ### 출력 파일 {#output-files}
 
-* `raw.xliff`:추출된 문자열
-* `warn.log`:경고(있는 경우)  `CQ.I18n.getMessage()` API가 잘못 사용되는 경우 항상 수정 후 다시 실행해야 합니다.
+* `raw.xliff`: 추출된 문자열
+* `warn.log`: 경고(있을 경우) `CQ.I18n.getMessage()` API가 잘못 사용됩니다. 항상 수정 후 다시 실행해야 합니다.
 
-* `parserwarn.log`:파서 경고(있는 경우)(예: js 파서 문제)
-* `potentials.xliff`:&quot;잠재적&quot; 후보로서 추출되지 않았지만 번역이 필요한 사람이 읽을 수 있는 문자열일 수 있습니다(무시해도 되고 많은 양의 긍정 오류가 발생함).
-* `strings.xliff`:병합된 xliff 파일, ALF로 가져오기
-* `backrefs.txt`:지정된 문자열에 대한 소스 코드 위치를 빠르게 조회할 수 있도록 허용합니다
+* `parserwarn.log`: 파서 경고(있는 경우)(예: js 파서 문제)
+* `potentials.xliff`: &quot;잠재적&quot; 후보로서 추출되지 않았지만 번역이 필요한 사람이 읽을 수 있는 문자열일 수 있습니다(무시해도 되고 많은 양의 긍정 오류가 발생함).
+* `strings.xliff`: 병합된 xliff 파일, ALF로 가져오기
+* `backrefs.txt`: 지정된 문자열에 대한 소스 코드 위치를 빠르게 조회할 수 있도록 허용합니다

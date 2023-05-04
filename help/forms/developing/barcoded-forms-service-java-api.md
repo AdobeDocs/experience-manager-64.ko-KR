@@ -1,8 +1,8 @@
 ---
 title: Barcoded Forms Service Java APIQ 빠른 시작(SOAP)
-seo-title: Barcoded Forms Service Java APIQ 빠른 시작(SOAP)
+seo-title: Barcoded Forms Service Java APIQuick Start(SOAP)
 description: Java API 빠른 시작을 사용하여 바코드 양식 데이터를 디코딩하려면 Barcoded Forms 서비스를 사용하십시오.
-seo-description: Java API 빠른 시작을 사용하여 바코드 양식 데이터를 디코딩하려면 Barcoded Forms 서비스를 사용하십시오.
+seo-description: Use the Barcoded Forms service to decode barcoded form data using the Java API Quick Start.
 uuid: a6739695-ee0b-4480-8cef-0f91a72deaad
 contentOwner: admin
 content-type: reference
@@ -11,28 +11,32 @@ topic-tags: develop
 discoiquuid: 245b9cc4-5837-4a22-b5f4-a1d4c5d66918
 role: Developer
 exl-id: fbeefa4e-966d-43b5-ae59-9548fe520cc2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 0%
+source-wordcount: '261'
+ht-degree: 3%
 
 ---
 
 # Barcoded Forms Service Java API 빠른 시작(SOAP) {#barcoded-forms-service-java-apiquick-start-soap}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 Barcoded Forms 서비스에 대해 SOAP(Java API Quick Start)를 사용할 수 있습니다.
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 바코드 양식 데이터 디코딩](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 바코드 양식 데이터 디코딩](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
 AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM Forms으로 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 관련 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로, 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
+>AEM Forms으로 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 관련 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로, 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 자세한 내용은 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}를 사용하여 바코드 양식 데이터 디코딩
+## 빠른 시작(SOAP 모드): Java API를 사용하여 바코드 양식 데이터 디코딩 {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
 
-다음 Java 코드는 Loan.pdf로 저장된 PDF 양식에 있는 양식 데이터를 디코딩합니다. 디코딩된 데이터는 extractedData.xml이라는 XML 파일로 저장됩니다. 이 코드 예제에서는 `org.w3c.dom.Document` 개체를 `com.adobe.idp.Document` 개체로 변환합니다. ([바코드 양식 데이터 디코딩](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data)을 참조하십시오.)
+다음 Java 코드는 Loan.pdf로 저장된 PDF 양식에 있는 양식 데이터를 디코딩합니다. 디코딩된 데이터는 extractedData.xml이라는 XML 파일로 저장됩니다. 이 코드 예는 `org.w3c.dom.Document` 객체를 `com.adobe.idp.Document` 개체. (자세한 내용은 [바코드 양식 데이터 디코딩](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data))
 
 ```as3
  /* 
@@ -221,4 +225,4 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->동일한 응용 프로그램 논리에 `org.w3c.dom.Document` 개체 및 `com.adobe.idp.Document` 개체를 모두 사용할 때는 두 개체를 모두 정규화하는 것이 좋습니다.
+>두 가지 모두 사용 시 `org.w3c.dom.Document` 개체 및 `com.adobe.idp.Document` 동일한 응용 프로그램 논리에 있는 개체를 사용하여 두 개체를 모두 정규화하는 것이 좋습니다.

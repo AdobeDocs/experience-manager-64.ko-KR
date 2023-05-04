@@ -10,14 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 6abadd53-dab1-4e3b-84d8-10374e8a305c
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2179'
-ht-degree: 44%
+source-wordcount: '2215'
+ht-degree: 40%
 
 ---
 
 # Adobe Target과 통합 수동 구성 {#manually-configuring-the-integration-with-adobe-target}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 마법사를 사용할 때 만든 옵트인 마법사 구성을 수정하거나 마법사를 사용하지 않고 수동으로 Adobe Target과 통합할 수 있습니다.
 
@@ -204,10 +208,10 @@ Target 클라우드 구성을 구성한 다음에는 Target 프레임워크를 �
 
 >[!NOTE]
 사용 가능한 활동 유형은 다음 방법으로 결정됩니다.
-* Adobe Target에 연결하기 위해 AEM 측에 사용된 Adobe Target 임차인(clientcode)에서 **xt_only** 선택 사항이 활성화되면, AEM에서 XT 활동&#x200B;**만** 만들 수 있습니다.
-* Adobe Target 임차인(clientcode)에서 **xt_only** 선택 사항이 활성화되지 **않으면** AEM에서에서 XT 활동과 A/B 활동을 **모두** 만들 수 있습니다.
+* 만약 **xt_only** Adobe Target에 연결하기 위해 AEM 측에 사용된 Adobe Target 테넌트(clientcode)에서 옵션이 활성화되면, 만들 수 있습니다 **전용** AEM의 XT 활동.
+* 만약 **xt_only** 옵션 **not** Adobe Target 테넌트(clientcode)에서 활성화한 다음, **둘 다** AEM의 XT 및 A/B 활동.
 >
-**추가 참고:** **xt_only** 선택 사항은 특정 Target 임차인(clientcode)에 적용되는 설정이며, Adobe Target에서 직접 수정하는 것만 가능합니다. You cannot enable or disable this option in AEM.
+**추가 참고 사항:** **xt_only** 선택 사항은 특정 Target 테넌트(clientcode)에 적용되는 설정이며 Adobe Target에서 직접 수정할 수만 있습니다. You cannot enable or disable this option in AEM.
 
 ### Target 프레임워크을 사이트와 연결 {#associating-the-target-framework-with-your-site}
 

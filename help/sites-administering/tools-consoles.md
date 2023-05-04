@@ -6,16 +6,20 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 7566e1bc-8571-4b3c-b420-4324026bd4dd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 34%
+source-wordcount: '911'
+ht-degree: 20%
 
 ---
 
 # 도구 콘솔{#tools-consoles}
 
-**도구** 콘솔에서는 웹 사이트, 디지털 자산 및 콘텐츠 저장소의 다른 측면을 관리하는 데 도움이 되는 많은 전문 도구에 액세스할 수 있습니다. 현재 사용 중인 UI에 따라 **도구** 콘솔의 두 가지 방식이 있습니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+**도구** 콘솔에서는 웹 사이트, 디지털 자산 및 콘텐츠 저장소의 다른 측면을 관리하는 데 도움이 되는 많은 전문 도구에 액세스할 수 있습니다. 현재 두 가지 맛이 있습니다 **도구** 사용 중인 UI에 따라 콘솔:
 
 * [도구 - 클래식 UI](#tools-classic-ui)
 * [도구 - 터치에 적합한 UI](#tools-touch-optimized-ui)
@@ -27,7 +31,7 @@ ht-degree: 34%
   <tr> 
    <th>페이지 또는 폴더</th> 
    <th> </th> 
-   <th>목적</th> 
+   <th>용도</th> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/msm.md">MSM Control Center</a></td> 
@@ -35,14 +39,14 @@ ht-degree: 34%
    <td>여러 사이트를 관리하기 위한 중앙 집중화된 지점</td> 
   </tr> 
   <tr> 
-   <td>클라이언트 컨텍스트 구성<br /> </td> 
+   <td>Client Context 구성<br /> </td> 
    <td> </td> 
-   <td><a href="/help/sites-developing/client-context.md">Client Context</a>는 사용자 데이터의 동적으로 어셈블된 컬렉션을 나타냅니다. 기본 및 marketing cloud 구성은 여기에 있습니다.<br /> </td> 
+   <td>다음 <a href="/help/sites-developing/client-context.md">Client Context</a> 사용자 데이터의 동적으로 어셈블된 컬렉션을 나타냅니다. 기본 및 marketing cloud 구성은 여기에서 설명합니다.<br /> </td> 
   </tr> 
   <tr> 
-   <td>Cloud Services 구성<br /> </td> 
+   <td>클라우드 서비스 구성<br /> </td> 
    <td> </td> 
-   <td><a href="/help/sites-administering/marketing-cloud.md">Adobe Marketing Cloud</a>과(와) 관련된 구성을 보유합니다.</td> 
+   <td>관련 구성을 보유합니다. <a href="/help/sites-administering/marketing-cloud.md">Adobe Marketing Cloud과 통합</a>.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/ecommerce.md">상거래</a></td> 
@@ -57,7 +61,7 @@ ht-degree: 34%
   <tr> 
    <td>DAM - 상태 검사<br /> </td> 
    <td> </td> 
-   <td><code>/var/dam</code> 및 <code>/content/dam</code>을 비교하고<br />의 불일치를 확인합니다. 그러면 나열된 모든 파일/폴더를 동기화하거나 삭제할 수 있습니다. 폴더 비교를 위한 노드 유형은 웹 콘솔에서 구성할 수 있습니다.</td> 
+   <td>비교 <code>/var/dam</code> 및 <code>/content/dam</code> 및 는<br /> 일치하지 않습니다. 그러면 나열된 모든 파일/폴더를 동기화하거나 삭제할 수 있습니다. 폴더 비교를 위한 노드 유형은 웹 콘솔에서 구성할 수 있습니다.</td> 
   </tr> 
   <tr> 
    <td>DAM - Adobe Indesign<br /> </td> 
@@ -72,7 +76,7 @@ ht-degree: 34%
   <tr> 
    <td><a href="/help/sites-administering/dashboards.md">대시보드</a></td> 
    <td> </td> 
-   <td>보고 대시보드를 만들 수 있습니다.이렇게 하면 통합 데이터를 표시하는 페이지를 정의하는 사용자 지정 가능한 방법을 제공합니다.</td> 
+   <td>보고 대시보드를 만들 수 있습니다. 이렇게 하면 통합 데이터를 표시하는 페이지를 정의하는 사용자 지정 가능한 방법을 제공합니다.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-developing/designer.md">디자인</a></td> 
@@ -90,7 +94,7 @@ ht-degree: 34%
    <td>받은 양식 제출 목록을 보관합니다.</td> 
   </tr> 
   <tr> 
-   <td>가져오기 - <a href="/help/sites-administering/bulk-editor.md">벌크 편집기</a></td> 
+   <td>가져오기 - <a href="/help/sites-administering/bulk-editor.md">대량 편집기</a></td> 
    <td> </td> 
    <td>항목을 검색하고 일괄적으로 편집할 수 있습니다. 컨텐츠를 저장소로 내보내고(일괄적으로) 가져올 수도 있습니다.</td> 
   </tr>
@@ -132,7 +136,7 @@ ht-degree: 34%
   <tr> 
    <td>가져오기 - <a href="/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree">트리 활성화</a></td> 
    <td> </td> 
-   <td>웹 사이트 탭에서 개별 페이지를 활성화할 수 있습니다. 동일한 루트 페이지 아래에서 수많은 컨텐츠 페이지를 입력하거나 업데이트한 경우 전체 트리를 한 번에 활성화하면 더욱 편리할 수 있습니다. 연습 실행을 통해 활성화를 에뮬레이션하여 활성화될 페이지를 강조할 수도 있습니다.</td> 
+   <td>웹 사이트 탭에서 개별 페이지를 활성화할 수 있습니다. 동일한 루트 페이지 아래에 있는 수많은 컨텐츠 페이지를 입력하거나 업데이트한 경우 전체 트리를 한 번에 활성화하면 더욱 편리할 수 있습니다. 연습 실행을 통해 활성화를 에뮬레이션하여 활성화될 페이지를 강조 표시할 수도 있습니다.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/reporting.md">보고서</a></td> 
@@ -142,7 +146,7 @@ ht-degree: 34%
   <tr> 
    <td><a href="/help/sites-authoring/scaffolding.md">기본 페이지 스캐폴딩</a></td> 
    <td> </td> 
-   <td>스캐폴딩을 사용하면 페이지에 적용할 구조를 반영하는 필드가 포함된 양식(스캐폴드)을 만든 후 이 양식을 이용하여 해당 구조를 갖는 페이지를 손쉽게 만들 수 있습니다.</td> 
+   <td>스캐폴딩을 사용하면 페이지에 적용할 구조를 반영하는 필드가 포함된 양식(스캐폴드)을 만든 다음 이 양식을 사용하여 이 구조를 기반으로 페이지를 쉽게 만들 수 있습니다.</td> 
   </tr> 
   <tr> 
    <td>보안 - <a href="/help/sites-administering/notification.md">셀프 서비스 구성 </a> </td> 
@@ -150,14 +154,14 @@ ht-degree: 34%
    <td>계정을 만들거나 암호를 재설정할 때 사용자가 자동으로 받는 이메일을 구성하고, 재설정된 암호를 확인할 수 있습니다.</td> 
   </tr> 
   <tr> 
-   <td><a href="/help/sites-administering/campaign-segmentation.md">세그멘테이션</a></td> 
+   <td><a href="/help/sites-administering/campaign-segmentation.md">세분화</a></td> 
    <td> </td> 
-   <td>사이트 방문자가 갖는 관심사와 목표는 매우 다양합니다. 이러한 목표를 이해하고 방문자의 기대를 충족할 수 있어야 온라인 마케팅의 성공이 보장됩니다. 세그먼테이션은 방문자의 세부 사항을 분석하고 특성을 지정하여 이를 수행하는 데 도움이 됩니다.<br /> </td> 
+   <td>사이트 방문자가 사이트를 방문할 때는 서로 다른 관심사와 목표를 갖습니다. 이러한 목표를 이해하고 기대를 충족시키는 것은 온라인 마케팅의 중요한 성공 요소입니다. 세그멘테이션은 방문자의 세부 사항을 분석하고 특성을 지정하여 이를 달성하는 데 도움이 됩니다.<br /> </td> 
   </tr> 
   <tr> 
    <td><a href="/help/communities/working-with-srp.md">socialconfig</a></td> 
    <td> </td> 
-   <td>기본 SRP 구성입니다. <a href="/help/communities/srp-config.md">스토리지 구성</a> 콘솔을 참조하십시오.</td> 
+   <td>기본 SRP 구성입니다. 자세한 내용은 <a href="/help/communities/srp-config.md">스토리지 구성</a> 콘솔.</td> 
   </tr> 
   <tr> 
    <td>작업 관리</td> 
@@ -182,10 +186,10 @@ ht-degree: 34%
   <tr> 
    <td>어워치</td> 
    <td> </td> 
-   <td>사용 중단됨. <a href="/help/communities/moderate-ugc.md#watchwords">커뮤니티 콘텐츠 중재</a>를 참조하십시오</td> 
+   <td>더 이상 사용되지 않음. 자세한 내용은 <a href="/help/communities/moderate-ugc.md#watchwords">커뮤니티 콘텐츠 중재</a></td> 
   </tr> 
   <tr> 
-   <td><a href="/help/sites-administering/workflows.md">워크플로우</a></td> 
+   <td><a href="/help/sites-administering/workflows.md">워크플로</a></td> 
    <td> </td> 
    <td>워크플로우는 편집 프로세스를 지원하는 페이지 또는 디지털 자산에 대한 일련의 작업을 제어합니다.</td> 
   </tr> 
@@ -199,7 +203,7 @@ ht-degree: 34%
   <tr> 
    <th>섹션</th> 
    <th>옵션</th> 
-   <th>목적</th> 
+   <th>용도</th> 
   </tr> 
   <tr> 
    <td>작성</td> 
@@ -248,7 +252,7 @@ ht-degree: 34%
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="/help/sites-administering/workflows.md">워크플로우</a></td> 
+   <td><a href="/help/sites-administering/workflows.md">워크플로</a></td> 
    <td>워크플로우 모델링 및 관리.</td> 
   </tr> 
   <tr> 

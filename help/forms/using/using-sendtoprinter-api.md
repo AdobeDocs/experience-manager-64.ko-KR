@@ -1,22 +1,26 @@
 ---
 title: sendToPrinter API 사용
-seo-title: sendToPrinter API 사용
+seo-title: Using the sendToPrinter API
 description: sendToPrinter 서비스를 사용하여 문서를 프린터로 보냅니다.
-seo-description: sendToPrinter 서비스를 사용하여 문서를 프린터로 보냅니다.
+seo-description: Using the sendToPrinter service to send a document to printer.
 uuid: c6a3fe8d-ec19-4350-b4a6-4c3d1971b501
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: c2d564ba-fa5a-4130-b7fe-7e2c64d92170
 exl-id: 89b6c8b4-4872-4bf5-a543-f33a1660636e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 13%
+source-wordcount: '398'
+ht-degree: 15%
 
 ---
 
-# sendToPrinter API {#using-the-sendtoprinter-api} 사용
+# sendToPrinter API 사용 {#using-the-sendtoprinter-api}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ## 개요 {#overview}
 
@@ -32,9 +36,9 @@ AEM Forms에서는 SendToPrinter 서비스를 사용하여 문서를 프린터�
    * &quot;**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
    * &quot;**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
    * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
-   * **CIFS**:출력 서비스는 CIFS(Common Internet File System) 인쇄 프로토콜을 지원합니다.
+   * **CIFS**: 출력 서비스는 CIFS(Common Internet File System) 인쇄 프로토콜을 지원합니다.
 
-## SendToPrinter 서비스 {#using-sendtoprinter-service} 사용
+## SendToPrinter 서비스 사용 {#using-sendtoprinter-service}
 
 아래 표는 다음과 같습니다.
 
@@ -43,7 +47,7 @@ AEM Forms에서는 SendToPrinter 서비스를 사용하여 문서를 프린터�
 
 | 프로토콜(액세스 메커니즘) | 인쇄 서버 URI(PrinterSpec.printServer) | 프린터의 이름(PrinterSpec.printerName) | 결과 |
 |--- |--- |--- |--- |
-| SharedPrinter | 임의 | 비어 있음 | 예외:필요한 인수 sPrinterName은 비워 둘 수 없습니다. |
+| SharedPrinter | 임의 | 비어 있음 | 예외: 필요한 인수 sPrinterName은 비워 둘 수 없습니다. |
 | SharedPrinter | 임의 | 잘못됨 | 예외는 프린터를 찾을 수 없다는 것입니다. |
 | SharedPrinter | 임의 | 유효 | 인쇄 작업이 성공했습니다. |
 | LPD | 비어 있음 | 임의 | 필요한 인수 sPrintServerUri를 비워둘 수 없다는 예외가 발생했습니다. |
@@ -52,8 +56,8 @@ AEM Forms에서는 SendToPrinter 서비스를 사용하여 문서를 프린터�
 | LPD | 유효 | 잘못됨 | 프린터를 찾을 수 없다는 예외를 나타냅니다. |
 | LPD | 유효 | 유효 | 인쇄 작업에 성공했습니다. |
 | CUPS | 비어 있음 | 임의 | 필요한 인수 sPrintServerUri를 비워둘 수 없다는 예외가 발생했습니다. |
-| 컵 | 잘못됨 | 임의 | 프린터를 찾을 수 없다는 예외를 나타냅니다. |
-| 컵 | 유효 | 임의 | 인쇄 작업이 성공했습니다. |
+| CUPS | 잘못됨 | 임의 | 프린터를 찾을 수 없다는 예외를 나타냅니다. |
+| CUPS | 유효 | 임의 | 인쇄 작업이 성공했습니다. |
 | DirectIP | 비어 있음 | 임의 | 필요한 인수 sPrintServerUri를 비워둘 수 없다는 예외가 발생했습니다. |
 | DirectIP | 잘못됨 | 임의 | 프린터를 찾을 수 없다는 예외를 나타냅니다. |
 | DirectIP | 유효 | 임의 | 인쇄 작업이 성공했습니다. |
@@ -65,8 +69,8 @@ AEM Forms에서는 SendToPrinter 서비스를 사용하여 문서를 프린터�
 
 인증은 CIFS 인쇄에만 지원됩니다. 인증하려면 PrinterSpec에서 사용자 이름/암호/도메인을 입력합니다. 다음 단계를 수행하여 AEM Granite CyprtoSupport 서비스를 사용하여 암호를 암호화할 수 있습니다.
 
-1. https://&lt;server>:&lt;port>/system/console로 이동합니다.
+1. https://으로 이동합니다.&lt;server>:&lt;port>/system/console.
 
-1. **[!UICONTROL 주]** > **[!UICONTROL 암호화 지원]**&#x200B;으로 이동합니다.
+1. 이동 **[!UICONTROL 기본]** > **[!UICONTROL Crypto 지원]**.
 
-1. 일반 텍스트를 입력하고 **[!UICONTROL Protect]**&#x200B;를 클릭합니다.
+1. 일반 텍스트를 입력하고 **[!UICONTROL Protect]**.

@@ -1,8 +1,8 @@
 ---
 title: We.Retail에서 응답형 레이아웃 시험 사용
-seo-title: We.Retail에서 응답형 레이아웃 시험 사용
+seo-title: Trying out Responsive Layout in We.Retail
 description: We.Retail에서 응답형 레이아웃 시험 사용
-seo-description: 'null'
+seo-description: null
 uuid: d9613655-f54e-458f-9175-d07bb868f58b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,24 +10,28 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 2d374e88-ea09-43d5-986c-5d77b0705b93
 exl-id: ccb792f7-e837-4790-818f-e2c446328e71
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 17%
+source-wordcount: '283'
+ht-degree: 16%
 
 ---
 
 # We.Retail에서 응답형 레이아웃 시험 사용{#trying-out-responsive-layout-in-we-retail}
 
-모든 We.Retail 페이지는 레이아웃 컨테이너 구성 요소를 사용하여 응답형 디자인을 구현합니다. 레이아웃 컨테이너는 응답형 격자 내에 구성 요소를 배치할 수 있도록 해주는 단락 시스템을 제공합니다. 이 격자를 사용하면 장치/창 크기 및 형식에 따라 레이아웃을 다시 정렬할 수 있습니다. 구성 요소는 페이지 편집기의 **레이아웃** 모드와 함께 사용됩니다. 이 모드에서는 장치에 종속적인 응답형 레이아웃을 만들고 편집할 수 있습니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
-## {#trying-it-out} 시험 사용
+모든 We.Retail 페이지는 레이아웃 컨테이너 구성 요소를 사용하여 응답형 디자인을 구현합니다. 레이아웃 컨테이너는 응답형 격자 내에 구성 요소를 배치할 수 있도록 해주는 단락 시스템을 제공합니다. 이 격자를 사용하면 디바이스/창 크기 및 형식에 따라 레이아웃을 다시 정렬할 수 있습니다. 구성 요소는 과 함께 사용됩니다 **레이아웃** 모드 : 장치에 따라 응답형 레이아웃을 만들고 편집할 수 있도록 페이지 편집기에서 입니다.
+
+## 사용해 보기 {#trying-it-out}
 
 1. 언어 마스터 분기의 경험 섹션에서 북극 서핑 페이지를 편집합니다.
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html
 
-1. 페이지를 웹 사이트의 방문자에게 렌더링할 때처럼 보려면 **미리 보기**&#x200B;로 전환하십시오. 노르웨이 북부의 *Aloha 증류주* 문서의 내용으로 스크롤합니다.
+1. 다음으로 전환 **미리 보기** 페이지를 웹 사이트 방문자에게 렌더링할 때처럼 확인합니다. 문서의 컨텐츠로 스크롤합니다. *노르웨이의 알로하 주령*.
 
    ![chlimage_1-178](assets/chlimage_1-178.png)
 
@@ -47,4 +51,4 @@ ht-degree: 17%
 
 ## 추가 정보 {#further-information}
 
-자세한 내용은 작성 문서 [응답형 레이아웃](/help/sites-authoring/responsive-layout.md) 또는 관리자 문서 [레이아웃 컨테이너 및 레이아웃 모드 구성](/help/sites-administering/configuring-responsive-layout.md)을 참조하십시오.
+자세한 내용은 작성 문서를 참조하십시오 [응답형 레이아웃](/help/sites-authoring/responsive-layout.md) 또는 관리자 문서 [레이아웃 컨테이너 및 레이아웃 모드 구성](/help/sites-administering/configuring-responsive-layout.md) 자세한 기술 정보

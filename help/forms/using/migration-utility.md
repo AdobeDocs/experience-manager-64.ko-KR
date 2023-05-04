@@ -12,14 +12,18 @@ content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
 role: Admin
 exl-id: 72ead30c-648d-43ad-9826-9c8945a8860d
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1829'
-ht-degree: 2%
+source-wordcount: '1865'
+ht-degree: 1%
 
 ---
 
 # AEM Forms 에셋 및 문서 마이그레이션 {#migrate-aem-forms-assets-and-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 마이그레이션 유틸리티는 [적응형 Forms 자산](/help/forms/using/introduction-forms-authoring.md), [클라우드 구성](/help/sites-developing/extending-cloud-config.md), 및 [서신 관리 자산](/help/forms/using/cm-overview.md) 이전 버전에서 AEM 6.4 Forms에 사용된 형식으로 변환했습니다. 마이그레이션 유틸리티를 실행하면 다음 항목이 마이그레이션됩니다.
 
@@ -40,7 +44,7 @@ ht-degree: 2%
 
 즉석 업그레이드를 수행한 경우 업그레이드된 인스턴스에 이미 자산 및 문서가 있습니다. 그러나 자산 및 문서를 사용하려면 먼저 를 설치해야 합니다 [AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) (서신 관리 호환성 패키지 포함)
 
-그런 다음 다음을 수행하여 자산 및 문서를 업데이트해야 합니다. [마이그레이션 유틸리티 실행](#runningmigrationutility).
+그런 다음 다음을 기준으로 자산 및 문서를 업데이트해야 합니다 [마이그레이션 유틸리티 실행](#runningmigrationutility).
 
 **부재 설치 시**
 
@@ -173,4 +177,4 @@ ht-degree: 2%
    1. Forms 사용자 인터페이스에서 XFA를 업로드합니다.
 
 1. 마이그레이션 전에 이전 시스템에 게시된 모든 자산을 게시합니다. 마이그레이션 유틸리티는 작성자 인스턴스에서만 자산을 업데이트하고 자산을 게시해야 하는 게시 인스턴스의 자산을 업데이트합니다.
-1. AEM Forms 6.4에서는 Forms 사용자 그룹의 일부 권한이 변경되었습니다. 사용자가 스크립트가 포함된 XDP 및 적응형 Forms을 업로드하거나 코드 편집기를 사용하려면 forms-power-users 그룹에 추가해야 합니다. 마찬가지로 템플릿 작성자가 더 이상 규칙 편집기에서 코드 편집기를 사용할 수 없습니다. 사용자가 코드 편집기를 사용할 수 있도록 af-template-script-writers 그룹에 사용자를 추가합니다. 그룹에 사용자 추가에 대한 지침은 [사용자 및 사용자 그룹 관리](/help/communities/users.md).
+1. AEM Forms 6.4에서는 Forms 사용자 그룹의 일부 권한이 변경되었습니다. 사용자가 스크립트가 포함된 XDP 및 적응형 Forms을 업로드하거나 코드 편집기를 사용하려면 forms-power-users 그룹에 추가해야 합니다. 마찬가지로 템플릿 작성자가 더 이상 규칙 편집기에서 코드 편집기를 사용할 수 없습니다. 사용자가 코드 편집기를 사용할 수 있도록 af-template-script-writers 그룹에 추가합니다. 그룹에 사용자 추가에 대한 지침은 [사용자 및 사용자 그룹 관리](/help/communities/users.md).

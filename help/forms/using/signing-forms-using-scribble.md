@@ -9,14 +9,18 @@ topic-tags: author
 discoiquuid: 6a806727-28c5-430e-9a83-b43e0e9d9e1c
 feature: Adaptive Forms
 exl-id: a870c4b7-4040-4bd8-b477-286ebe6a4b01
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 0%
+source-wordcount: '534'
+ht-degree: 1%
 
 ---
 
 # 스크리블 서명을 사용하여 양식에 전자 서명 적용 {#apply-electronic-signatures-to-a-form-using-scribble-signatures}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 를 사용할 수 있습니다 **스크리블 서명** 구성 요소 및 **서명 단계** 적응형 양식에 서명을 그릴 구성 요소(스크리블) 서명 단계 구성 요소는 적응형 양식의 PDF 버전을 표시합니다. 서명 단계 구성 요소를 사용하려면 레코드 문서 옵션을 활성화하거나 양식 템플릿 기반의 적응형 양식을 사용해야 합니다.
 

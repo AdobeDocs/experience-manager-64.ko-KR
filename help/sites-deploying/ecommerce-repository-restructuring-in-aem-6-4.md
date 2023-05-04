@@ -1,27 +1,31 @@
 ---
 title: AEM 6.4에서 전자 상거래 저장소 구조 변경
-seo-title: AEM 6.4에서 전자 상거래 저장소 구조 변경
+seo-title: E-Commerce Repository Restructuring in AEM 6.4
 description: E-Commerce용 AEM 6.4의 새 저장소 구조로 마이그레이션하기 위해 필요한 변경 작업을 수행하는 방법을 알아봅니다.
-seo-description: E-Commerce용 AEM 6.4의 새 저장소 구조로 마이그레이션하기 위해 필요한 변경 작업을 수행하는 방법을 알아봅니다.
+seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for E-Commerce.
 uuid: 1fff1a4b-c8d0-4016-92fb-e2ea26e3a302
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 28c92e7d-2106-4333-afa6-c5528a00d7b4
-feature: 업그레이드
+feature: Upgrading
 exl-id: 6adcc1a4-eb0f-4410-8219-dbd7e6bbe469
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 3%
+source-wordcount: '237'
+ht-degree: 5%
 
 ---
 
 # AEM 6.4에서 전자 상거래 저장소 구조 변경{#e-commerce-repository-restructuring-in-aem}
 
-AEM 6.4에서 상위 [저장소 구조 변경 페이지에 설명된 대로 AEM 6.4로 업그레이드하는 고객은 이 페이지에서 AEM E-Commerce 솔루션에 영향을 주는 저장소 변경 사항과 관련된 작업 노력을 평가해야 합니다. ](/help/sites-deploying/repository-restructuring.md) 일부 변경 사항은 AEM 6.4 업그레이드 프로세스 중에 작업 노력이 필요한 반면, 다른 변경 사항은 6.5 업그레이드 전까지 지연될 수 있습니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
-## 6.4 업그레이드 시 {#with-upgrade}
+상위에 설명된 대로 [AEM 6.4의 저장소 구조 변경](/help/sites-deploying/repository-restructuring.md) 페이지에서 AEM 6.4로 업그레이드하는 고객은 이 페이지에서 AEM E-Commerce 솔루션에 영향을 주는 저장소 변경 사항과 관련된 작업 활동을 평가해야 합니다. 일부 변경 사항은 AEM 6.4 업그레이드 프로세스 중에 작업 노력이 필요한 반면, 다른 변경 사항은 6.5 업그레이드 전까지 지연될 수 있습니다.
+
+## 6.4 업그레이드 {#with-upgrade}
 
 ### 제품, 주문, 컬렉션, 분류, 운송 방법 및 결제 방법 데이터 {#product-order-collections-classifications-shipping-methods-and-payment-methods-data}
 
@@ -37,7 +41,7 @@ AEM 6.4에서 상위 [저장소 구조 변경 페이지에 설명된 대로 AEM 
   </tr>
   <tr>
    <td><strong>구조 조정 지침</strong></td> 
-   <td><p><a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">레이지 마이그레이션</a> 작업을 사용하여 전자 상거래 데이터를 마이그레이션할 수 있습니다.</p> <p>다음 단계를 수행합니다.</p> 
+   <td><p>을(를) 사용할 수 있습니다 <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">지연 마이그레이션</a> 전자 상거래 데이터를 마이그레이션하기 위한 작업입니다.</p> <p>다음 단계를 수행합니다.</p> 
     <ul> 
      <li>새 위치를 가리키도록 참조를 이전 위치로 조정</li> 
      <li>컨텐츠를 이전 위치에서 새 위치로 이동</li> 
@@ -53,7 +57,7 @@ AEM 6.4에서 상위 [저장소 구조 변경 페이지에 설명된 대로 AEM 
   </tr>
   <tr>
    <td><strong>메모</strong></td> 
-   <td>N/A<br /> </td> 
+   <td>해당 없음<br /> </td> 
   </tr>
  </tbody>
 </table>

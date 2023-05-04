@@ -1,20 +1,24 @@
 ---
 title: GQL 전체 텍스트 검색
-description: Assets에서 GQL 전체 텍스트 검색 기능을 살펴보십시오.  [!DNL Experience Manager]  제목, 설명 및 작성자 이름과 같은 특정 메타데이터를 기반으로 자산을 검색할 수 있도록 해줍니다.
+description: GQL 전체 텍스트 검색 기능 살펴보기 [!DNL Experience Manager] 자산. 제목, 설명 및 작성자 이름과 같은 특정 메타데이터를 기반으로 자산을 검색할 수 있도록 해줍니다.
 contentOwner: AG
 feature: Search,Metadata
 role: User
 exl-id: e819501c-4ac3-447f-944c-67adc42e8c61
-source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '909'
 ht-degree: 2%
 
 ---
 
 # GQL 전체 텍스트 검색 {#gql-full-text-search}
 
-[!DNL Experience Manager] Assets에서 GQL 전체 텍스트 검색 기능을 살펴보십시오. 제목, 설명 및 작성자 이름과 같은 특정 메타데이터를 기반으로 자산을 검색할 수 있도록 해줍니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+GQL 전체 텍스트 검색 기능 살펴보기 [!DNL Experience Manager] 자산. 제목, 설명 및 작성자 이름과 같은 특정 메타데이터를 기반으로 자산을 검색할 수 있도록 해줍니다.
 
 GQL 전체 텍스트 검색 기능을 사용하면 제목, 설명, 작성자 등과 같은 특정 메타데이터를 기반으로 자산을 검색할 수 있습니다.
 
@@ -24,12 +28,12 @@ GQL 전체 텍스트 검색 기능을 사용하면 제목, 설명, 작성자 등
 
 ## 자산 검색 {#searching-assets}
 
-1. Assets 사용자 인터페이스의 도구 모음에서 **[!UICONTROL 검색]** 아이콘을 클릭하거나 탭하여 Omnisearch 상자를 표시합니다.
+1. 자산 사용자 인터페이스의 도구 모음에서 를 클릭하거나 탭합니다 **[!UICONTROL 검색]** 아이콘을 클릭하여 Omnisearch 상자를 표시합니다.
 
    ![](assets/do-not-localize/chlimage_1.png)
 
 1. Omnisearch 상자에 커서를 두고 Enter 키를 누릅니다.
-1. GlobalNav 아이콘을 클릭하거나 탭하여 **[!UICONTROL 필터]** 패널을 표시합니다.
+1. GlobalNav 아이콘을 클릭하거나 탭하여 **[!UICONTROL 필터]** 패널.
 1. 옴니 검색 상자에서 &quot;Target&quot; 값을 지정합니다. 검색을 특정 폴더로 제한하려면 필터 패널에서 찾아보기 아이콘을 클릭하거나 탭하고 폴더를 선택합니다. 이 경우 폴더 및 하위 폴더 내에서만 일치 항목을 검색합니다.
 
    >[!NOTE]
@@ -38,7 +42,7 @@ GQL 전체 텍스트 검색 기능을 사용하면 제목, 설명, 작성자 등
 
    ![gql_search](assets/gql_search.png)
 
-1. **[!UICONTROL Enter]** 키를 누릅니다. [!DNL Assets] 사용자 인터페이스는 제목이 &quot;Target&quot;과 정확히 일치하는 자산만 표시합니다.
+1. 누르기 **[!UICONTROL Enter 키]**. 다음 [!DNL Assets] 사용자 인터페이스에는 제목이 &quot;Target&quot;과 정확히 일치하는 자산만 표시됩니다.
 
 GQL 전체 텍스트 검색 기능을 사용하여 다음을 기준으로 자산을 검색할 수 있습니다.
 
@@ -56,19 +60,19 @@ GQL 전체 텍스트 검색 기능을 사용하면 다음 메타데이터 속성
 |---|---|
 | [!UICONTROL 제목] | title:John |
 | [!UICONTROL 작성자] | 작성자:John |
-| [!UICONTROL 내용 작성자] | 기여자:John |
+| [!UICONTROL 참여자] | 기여자:John |
 | [!UICONTROL 위치] | 위치:인도 |
 | [!UICONTROL 설명] | description:&quot;샘플 이미지&quot; |
 | [!UICONTROL 작성자 도구] | createtool:&quot;Adobe Photoshop 7.0&quot; |
 | [!UICONTROL 저작권 소유자] | copyrightowner:&quot;Adobe Systems&quot; |
-| [!UICONTROL 내용 작성자] | 기여자:John |
+| [!UICONTROL 참여자] | 기여자:John |
 | [!UICONTROL 사용 약관] | usagterms:&quot;CopyRights Reserved&quot; |
-| [!UICONTROL 생성됨] | :YYYY-MM-DDTHH:MM:SS.000+05:30을 만들었습니다.YYYY-MM-DDHH:MM:SS.000+05:30 |
+| [!UICONTROL 생성됨] | 생성됨:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDHH:MM:SS.000+05:30 |
 | [!UICONTROL 만료 날짜] | 만료:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDHH:MM:SS.000+05:30 |
 | [!UICONTROL 시간] | ontime:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDHH:MM:SS.000+05:30 |
 | [!UICONTROL 해제 시간] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDHH:MM:SS.000+05:30 |
 | [!UICONTROL 시간 범위] (expires dateontime,offtime) | 패싯 필드: 소행..상단 |
-| [!UICONTROL 경로] | /content/dam/&lt;폴더 이름> |
+| [!UICONTROL 경로] | /content/dam/&lt;folder name=&quot;&quot;> |
 | [!UICONTROL PDF 제목] | pdftitle:&quot;Adobe 문서&quot; |
 | [!UICONTROL 제목] | 제목:&quot;교육&quot; |
 | [!UICONTROL 태그] | 태그:&quot;위치 및 여행&quot; |
@@ -81,7 +85,7 @@ GQL 전체 텍스트 검색 기능을 사용하면 다음 메타데이터 속성
 
 * 여러 패싯 필드가 있는 모든 자산을 표시하려면(예: title=John Doe 및 creator tool = Adobe Photoshop):
 
-tiltle:&quot;John Doe&quot; creatortool : Adobe;amp;ast;
+tiltle:&quot;John Doe&quot; creatortool : Adobe(&amp;A);
 
 * 패싯 값이 단일 단어가 아닌 문장이 될 때 모든 자산을 표시하려면(예: title=스콧 레이놀즈)
 
@@ -124,13 +128,13 @@ title:&quot;모임&quot;;
 특정 자산에 대한 키워드의 관련성을 개선하여 키워드를 기반으로 검색을 높일 수 있습니다. 즉, 특정 키워드를 프로모션하는 이미지가 이러한 키워드를 기반으로 검색할 때 검색 결과 맨 위에 나타납니다.
 
 1. 자산 UI에서 키워드를 판촉할 자산의 속성 페이지를 엽니다.
-1. **[!UICONTROL 고급]** 탭으로 전환하고 **[!UICONTROL 검색 키워드 가져오기]**&#x200B;에서 **[!UICONTROL 추가]**&#x200B;를 클릭/탭합니다.
+1. 로 전환 **[!UICONTROL 고급]** 탭/탭 **[!UICONTROL 추가]** 아래에 **[!UICONTROL 검색 키워드 승격]**.
 
    ![elevation_for_search](assets/elevate_for_search.png)
 
-1. **[!UICONTROL Search Promote]** 상자에서 이미지 검색을 강화할 키워드를 지정한 후 **[!UICONTROL 추가]**&#x200B;를 클릭/탭합니다. 필요한 경우 동일한 방법으로 여러 키워드를 지정합니다.
+1. 에서 **[!UICONTROL Search Promote]** 상자에서 이미지 검색을 강화할 키워드를 지정한 다음 클릭/탭합니다 **[!UICONTROL 추가]**. 필요한 경우 동일한 방법으로 여러 키워드를 지정합니다.
 
    ![add_search_word](assets/add_search_word.png)
 
-1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭/탭합니다.
+1. 클릭/탭 **[!UICONTROL 저장 및 닫기]**.
 1. Omnisearch 상자를 사용하여 키워드를 검색합니다. 이 키워드를 프로모션한 자산이 상위 검색 결과 중에 나타납니다.

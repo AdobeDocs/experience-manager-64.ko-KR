@@ -10,14 +10,18 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 3f4feb38-eca0-4852-88f8-9b20625e18ad
 exl-id: 34e4edd5-9e67-44ed-8c4c-bcdd3e161a35
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2831'
+source-wordcount: '2867'
 ht-degree: 1%
 
 ---
 
 # 하드웨어 크기 조정 지침 {#hardware-sizing-guidelines}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 이러한 크기 조정 지침은 AEM 프로젝트를 배포하는 데 필요한 하드웨어 리소스를 대략적으로 설명합니다. 크기 예상 은 프로젝트의 아키텍처, 솔루션의 복잡성, 예상 트래픽 및 프로젝트 요구 사항에 따라 다릅니다. 이 가이드는 특정 솔루션에 대한 하드웨어 요구 사항을 확인하거나 하드웨어 요구 사항에 대한 예상 상한값과 하한을 찾는 데 도움이 됩니다.
 
@@ -51,24 +55,24 @@ ht-degree: 1%
 
 ## 아키텍처 {#architecture}
 
-일반적인 AEM 설정은 작성자와 게시 환경으로 구성됩니다. 이러한 환경에는 기본 하드웨어 크기 및 시스템 구성에 대한 요구 사항이 다릅니다. 두 환경에 대한 자세한 고려 사항은 [작성 환경](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) 및 [게시 환경](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) 섹션에 설명되어 있습니다.
+일반적인 AEM 설정은 작성자와 게시 환경으로 구성됩니다. 이러한 환경에는 기본 하드웨어 크기 및 시스템 구성에 대한 요구 사항이 다릅니다. 두 환경에 대한 자세한 고려 사항은 [작성 환경](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) 및 [게시 환경](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) 섹션에 자세히 설명되어 있습니다.
 
 일반적인 프로젝트 설정에는 프로젝트 단계를 스테이징할 환경이 여러 개 있습니다.
 
-* **개발**
-환경새로운 기능을 개발하거나 크게 변경하려면 다음을 수행하십시오. 가장 좋은 방법은 개발자별로 개발 환경을 사용하여 작업하는 것입니다(일반적으로 개인 시스템에 로컬 설치).
+* **개발 환경**
+새로운 기능을 개발하거나 중요한 변경 작업을 수행하려면 다음을 수행하십시오. 가장 좋은 방법은 개발자별로 개발 환경을 사용하여 작업하는 것입니다(일반적으로 개인 시스템에 로컬 설치).
 
-* **테스트**
-환경 작성변경 사항을 확인합니다. 테스트 환경 수는 프로젝트 요구 사항에 따라 달라질 수 있습니다(예: QA, 통합 테스트 또는 사용자 수락 테스트를 위해 별개).
+* **작성 테스트 환경**
+변경 사항을 확인하려면 테스트 환경 수는 프로젝트 요구 사항에 따라 달라질 수 있습니다(예: QA, 통합 테스트 또는 사용자 수락 테스트를 위해 별개).
 
-* **게시 테스트**
-환경 주로 소셜 공동 작업 사용 사례 및/또는 작성자와 여러 게시 인스턴스 간의 상호 작용을 테스트하는 데 사용됩니다.
+* **테스트 환경 게시**
+주로 소셜 공동 작업 사용 사례 및/또는 작성자와 여러 게시 인스턴스 간의 상호 작용을 테스트하는 데 사용됩니다.
 
-* **작성 프로덕션**
-환경 작성자가 컨텐츠를 편집할 수 있습니다.
+* **작성 프로덕션 환경**
+작성자가 컨텐츠를 편집할 수 있습니다.
 
-* **게시 프로덕션**
-환경 게시된 컨텐츠를 제공합니다.
+* **프로덕션 환경 게시**
+게시된 컨텐츠를 제공하려면
 
 또한 AEM을 실행하는 단일 서버 시스템과 애플리케이션 서버에서 높은 스케일의 다중 서버 다중 CPU 클러스터 인스턴스 세트에 이르기까지 환경이 달라질 수 있습니다. 각 프로덕션 시스템에 별도의 컴퓨터를 사용하고 이러한 컴퓨터에서 다른 응용 프로그램을 실행하지 않는 것이 좋습니다.
 
@@ -76,7 +80,7 @@ ht-degree: 1%
 
 아래 섹션에서는 다양한 고려 사항을 고려하여 하드웨어 요구 사항을 계산하는 방법에 대한 지침을 제공합니다. 대규모 시스템의 경우 참조 구성에 대해 간단한 사내 벤치마크 테스트 세트를 수행하는 것이 좋습니다.
 
-성능 최적화는 특정 프로젝트에 대한 벤치마킹을 수행하기 전에 수행해야 하는 기본적인 작업입니다. 벤치마크 테스트를 수행하고 하드웨어 크기 조정 계산에 해당 결과를 사용하기 전에 [성능 최적화 설명서](/help/sites-deploying/configuring-performance.md)에 제공된 조언을 적용해야 합니다.
+성능 최적화는 특정 프로젝트에 대한 벤치마킹을 수행하기 전에 수행해야 하는 기본적인 작업입니다. 에 제공된 지침을 반드시 적용하십시오 [성능 최적화 설명서](/help/sites-deploying/configuring-performance.md) 벤치마크 테스트를 수행하고 하드웨어 크기 조정 계산에 결과를 사용하기 전에
 
 고급 사용 사례를 위한 하드웨어 크기 조정 요구 사항은 프로젝트에 대한 자세한 성능 평가를 기반으로 해야 합니다. 탁월한 하드웨어 리소스를 필요로 하는 고급 사용 사례의 특징에는 다음 조합이 포함됩니다.
 
@@ -113,12 +117,12 @@ AEM은 가상화 환경에서 잘 작동하지만 물리적 하드웨어와 직�
 
 #### 시스템 리소스 확장성 {#system-resources-scalability}
 
-모든 시스템이 실행 중이면 컴퓨터 성능이 향상됩니다. 관계가 기술 환경에 크게 종속되어 있으므로 추가적인 성능이 반드시 클러스터 노드 수와 선형일 필요는 없습니다. 자세한 내용은 [클러스터 설명서](/help/sites-deploying/recommended-deploys.md)를 참조하십시오.
+모든 시스템이 실행 중이면 컴퓨터 성능이 향상됩니다. 관계가 기술 환경에 크게 종속되어 있으므로 추가적인 성능이 반드시 클러스터 노드 수와 선형일 필요는 없습니다. 자세한 내용은 [클러스터 설명서](/help/sites-deploying/recommended-deploys.md) 추가 정보.
 
 필요한 클러스터 노드 수 추정은 특정 웹 프로젝트의 기본 요구 사항과 특정 사용 사례를 기반으로 합니다.
 
 * 장애 안전성의 관점에서 모든 환경에 대해 클러스터 노드가 복구되는 데 걸리는 시간에 따라 장애 발생 여부 및 장애 보상 시간을 결정해야 합니다.
-* 스케일러빌러티의 측면에서 쓰기 작업의 수는 기본적으로 가장 중요한 요소입니다. 작성자 환경의 경우 [병렬 작업 작성자](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) 및 게시 환경의 경우 [Social Collaboration](/help/managing/hardware-sizing-guidelines.md#aem-communities-sizing-considerations)를 참조하십시오. 읽기 작업을 처리하기 위해 시스템에 액세스하는 작업에 대해 로드 밸런싱을 설정할 수 있습니다. 자세한 내용은 [Dispatcher](https://helpx.adobe.com/kr/experience-manager/dispatcher/user-guide.html) 를 참조하십시오.
+* 스케일러빌러티의 측면에서 쓰기 작업의 수는 기본적으로 가장 중요한 요소입니다. 참조 [동시에 작업하는 작성자](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) 작성 환경 및 [Social Collaboration](/help/managing/hardware-sizing-guidelines.md#aem-communities-sizing-considerations) 를 사용하도록 선택할 수 있습니다. 읽기 작업을 처리하기 위해 시스템에 액세스하는 작업에 대해 로드 밸런싱을 설정할 수 있습니다. 참조 [Dispatcher](https://helpx.adobe.com/kr/experience-manager/dispatcher/user-guide.html) 자세한 내용
 
 ## 작성 환경별 계산 {#author-environment-specific-calculations}
 
@@ -126,7 +130,7 @@ AEM은 가상화 환경에서 잘 작동하지만 물리적 하드웨어와 직�
 
 * **벤치마크 테스트 1**
 
-   사용자가 300개의 기존 페이지의 기본 로드 위에 간단한 페이지 만들기 연습을 수행하는 로드 프로필의 최대 처리량을 계산하여 유사한 특성을 모두 갖습니다. 관련된 단계는 사이트에 로그인하고 SWF 및 이미지/텍스트를 사용하여 페이지를 만들고 태그 클라우드를 추가한 다음 페이지를 활성화하는 것이었습니다.
+   사용자가 300개의 기존 페이지의 기본 로드 위에 간단한 페이지 만들기 연습을 수행하는 로드 프로필의 최대 처리량을 계산하여 유사한 특성을 모두 갖습니다. 관련된 단계는 사이트에 로그인하고, SWF 및 이미지/텍스트를 사용하여 페이지를 만들고, 태그 클라우드를 추가한 다음 페이지를 활성화했습니다.
 
    * **결과**
 
@@ -186,7 +190,7 @@ AEM은 가상화 환경에서 잘 작동하지만 물리적 하드웨어와 직�
 
 이 공식은 작성자가 AEM에서 기본 작업을 수행할 때 CPU 크기 조정을 위한 일반적인 지침 역할을 합니다. 이 섹션에서는 시스템과 애플리케이션이 최적화되었다고 가정합니다. 그러나 MSM 또는 자산과 같은 고급 기능에 대해서는 수식이 true가 되지 않습니다(아래 섹션 참조).
 
-[병렬화](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) 및 [성능 최적화](/help/sites-deploying/configuring-performance.md)에 대한 추가 설명을 참조하십시오.
+다음에 대한 추가 주석을 참조하십시오. [병렬 처리](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) 및 [성능 최적화](/help/sites-deploying/configuring-performance.md).
 
 ### 하드웨어 Recommendations {#hardware-recommendations}
 
@@ -211,11 +215,11 @@ AEM 인스턴스가 최소 힙의 크기가 256M이고 최대 힙의 크기는 1
 
 | 캐시 비율 | 페이지/초(최대) | 백만 페이지/일(평균) |
 |---|---|---|
-| 100% | 1000년-2000년 | 35-70 |
-| 99% | 910년 | 32 |
-| 95% | 690년 | 25 |
-| 90% | 520년 | 18 |
-| 60% | 220년 | 8 |
+| 100% | 1000-2000 | 35-70 |
+| 99% | 910 | 32 |
+| 95% | 690 | 25 |
+| 90% | 520 | 18 |
+| 60% | 220 | 8 |
 | 0% | 100 | 3.5 |
 
 >[!CAUTION]
@@ -267,28 +271,28 @@ AEM 인스턴스가 최소 힙의 크기가 256M이고 최대 힙의 크기는 1
   </tr>
   <tr>
    <td>활성화</td>
-   <td>시간당 평균 활성화 수(작성자에서 게시 계층으로 평균 크기 페이지 및 자산 복제)를 x로 나눈 값입니다. 여기서 x는 시스템에서 처리된 다른 작업에 성능 저하 없이 시스템에서 수행한 활성화 수입니다. x = 100.<br />과 같은 비관적 초기값을 미리 정의할 수도 있습니다. </td>
+   <td>시간당 평균 활성화 수(작성자에서 게시 계층으로 평균 크기 페이지 및 자산 복제)를 x로 나눈 값입니다. 여기서 x는 시스템에서 처리된 다른 작업에 성능 저하 없이 시스템에서 수행한 활성화 수입니다. x = 100과 같은 비관적인 초기 값을 미리 정의할 수도 있습니다.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-보다 복잡한 웹 사이트가 있는 경우, AEM이 허용 가능한 시간에 요청에 응답할 수 있도록 보다 강력한 웹 서버가 필요합니다.
+보다 복잡한 웹 사이트가 있는 경우, AEM이 허용 가능한 시간에 요청에 응답할 수 있도록 더 강력한 웹 서버가 필요합니다.
 
 * 복잡성 4:
-   * 1024MB JVM RAM&amp;ast;
+   * 1024MB JVM RAM(&amp;A);
    * 저전력 CPU-중간 CPU
 
 * 4와 8 사이의 복잡성:
-   * 2048MB JVM RAM&amp;ast;
+   * 2048MB JVM RAM(&amp;A);
    * 중간 고성능 CPU
 
 * 8보다 복잡함:
-   * 4096MB JVM RAM&amp;ast;
+   * 4096MB JVM RAM(&amp;A);
    * 고성능 CPU
 
 >[!NOTE]
 >
->amp;ast; JVM에 필요한 메모리 외에 운영 체제에 충분한 RAM을 예약합니다.
+>&amp;ast; JVM에 필요한 메모리 외에 운영 체제에 충분한 RAM을 예약합니다.
 
 ## 추가 사용 사례별 계산 {#additional-use-case-specific-calculations}
 
@@ -298,7 +302,7 @@ AEM 인스턴스가 최소 힙의 크기가 256M이고 최대 힙의 크기는 1
 
 디지털 자산을 광범위하게 처리하려면 최적화된 하드웨어 리소스가 필요하며 가장 관련성이 높은 요소는 이미지 크기와 처리된 이미지의 최대 처리량입니다.
 
-16GB 이상의 힙을 할당하고 원시 이미지를 수집하기 위해 [Camera Raw 패키지](/help/assets/camera-raw.md)를 사용하도록 DAM 자산 업데이트 워크플로우를 구성합니다.
+16GB 이상의 힙을 할당하고 DAM 자산 업데이트 워크플로우를 구성하여 [Camera Raw 패키지](/help/assets/camera-raw.md) 를 참조하십시오.
 
 >[!NOTE]
 >
@@ -308,7 +312,7 @@ AEM 인스턴스가 최소 힙의 크기가 256M이고 최대 힙의 크기는 1
 
 >[!NOTE]
 >
->[자산 성능 안내서](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/assets-sizing-guide.html)도 참조하십시오.
+>다음을 참조하십시오. [Assets 성능 안내서](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/assets-sizing-guide.html).
 
 ### 다중 사이트 관리자 {#multi-site-manager}
 

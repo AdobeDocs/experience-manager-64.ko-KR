@@ -9,14 +9,18 @@ topic-tags: author
 discoiquuid: fea76f90-22d5-4836-9901-a35229401eb0
 feature: Adaptive Forms
 exl-id: 2a842bdc-6dcf-42cc-9a45-57ac15b79eb7
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 0%
+source-wordcount: '1546'
+ht-degree: 1%
 
 ---
 
 # 제출 작업 구성 {#configuring-the-submit-action}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ## 작업 제출 소개 {#introduction-to-submit-actions}
 
@@ -32,7 +36,7 @@ ht-degree: 0%
 적응형 양식에서 사용할 수 있는 기본 제출 작업은 다음과 같습니다.
 
 * REST 엔드포인트에 제출
-* 이메일 보내기
+* 이메일 전송
 * 이메일을 통해 PDF 보내기
 * Forms Workflow 호출
 * 양식 데이터 모델을 사용하여 제출
@@ -93,7 +97,7 @@ Rest 끝점 전송 작업 구성
 
 이 예제에서는 `data` 는 XML 데이터를 저장하고 `att` 첨부 파일 데이터를 저장합니다.
 
-## 이메일 보내기 {#send-email}
+## 이메일 전송 {#send-email}
 
 다음 **[!UICONTROL 이메일 보내기]** 제출 작업은 양식을 성공적으로 제출할 때 하나 이상의 수신자에게 이메일을 보냅니다. 생성된 이메일에는 양식 데이터가 사전 정의된 형식으로 포함될 수 있습니다.
 

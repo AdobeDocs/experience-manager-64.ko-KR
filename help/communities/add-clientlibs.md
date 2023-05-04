@@ -1,8 +1,8 @@
 ---
 title: Clientlibs 추가
-seo-title: Clientlibs 추가
+seo-title: Add Clientlibs
 description: ClientLibraryFolder 추가
-seo-description: ClientLibraryFolder 추가
+seo-description: Add a ClientLibraryFolder
 uuid: cdc1d258-2011-4517-9206-dd2b5d1f7e0d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,24 +10,28 @@ topic-tags: developing
 content-type: reference
 discoiquuid: c84040b0-7850-4960-b676-ffa0a74c8cb2
 exl-id: 9b8c3d1c-a9b1-4dde-9044-46c8f2b22c22
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 4%
+source-wordcount: '735'
+ht-degree: 5%
 
 ---
 
 # Clientlibs 추가 {#add-clientlibs}
 
-## ClientLibraryFolder(clientlibs) {#add-a-clientlibraryfolder-clientlibs} 추가
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
-사이트의 페이지를 렌더링하는 데 사용되는 JS 및 CSS가 포함될 `clientlibs`라는 ClientLibraryFolder를 만듭니다.
+## ClientLibraryFolder(clientlibs) 추가 {#add-a-clientlibraryfolder-clientlibs}
 
-이 클라이언트 라이브러리에 제공되는 `categories`속성 값은 컨텐츠 페이지에서 이 clientlib을 직접 포함하거나 다른 clientlibs에 포함하는 데 사용되는 식별자입니다.
+이름이 인 ClientLibraryFolder 만들기 `clientlibs`에는 사이트의 페이지를 렌더링하는 데 사용되는 JS 및 CSS가 포함됩니다.
 
-1. **[!UICONTROL CRXDE Lite]**&#x200B;을 사용하여 `/etc/designs`를 확장합니다.
+다음 `categories`이 클라이언트 라이브러리에 제공되는 속성 값은 콘텐츠 페이지에서 이 clientlib을 직접 포함하거나 다른 clientlibs에 포함하는 데 사용되는 식별자입니다.
 
-1. `an-scf-sandbox` 을 마우스 오른쪽 단추로 클릭하고 `Create Node` 를 선택합니다.
+1. 사용 **[!UICONTROL CRXDE Lite]**, 확장 `/etc/designs`
+
+1. 마우스 오른쪽 단추 클릭 `an-scf-sandbox` 을(를) 선택합니다. `Create Node`
 
    * 이름: `clientlibs`
    * 유형: `cq:ClientLibraryFolder`
@@ -36,25 +40,25 @@ ht-degree: 4%
 
 ![chlimage_1-220](assets/chlimage_1-220.png)
 
-새 `clientlibs` 노드의 **[!UICONTROL 속성]** 탭에서 **`categories`** 속성을 입력합니다.
+에서 **[!UICONTROL 속성]** 새 `clientlibs` 노드, enter 키 **`categories`** 속성:
 
-* 이름:**[!UICONTROL 카테고리]**
-* 유형:**[!UICONTROL 문자열]**
-* 값:**[!UICONTROL apps.an-scf-sandbox]**
-* **[!UICONTROL 추가]**&#x200B;를 클릭합니다
-* **[!UICONTROL 모두 저장]** 클릭
+* 이름: **[!UICONTROL 카테고리]**
+* 유형: **[!UICONTROL 문자열]**
+* 값: **[!UICONTROL apps.an-scf-sandbox]**
+* 클릭 **[!UICONTROL 추가]**
+* 클릭 **[!UICONTROL 모두 저장]**
 
-참고:&#39;apps&#39;로 카테고리 값 앞에 는 &#39;소유 응용 프로그램&#39;이 /apps 폴더에 있는 것으로 식별하기 위한 것으로서, /libs가 아닙니다.  중요 사항:자리 표시자 `js.txt` 및 `css.txt` 파일을 추가합니다. (공식적으로 cq:ClientLibraryFolder가 없는 것은 아닙니다.)
+참고: &#39;apps&#39;로 카테고리 값 앞에 는 &#39;소유 응용 프로그램&#39;이 /apps 폴더에 있는 것으로 식별하기 위한 것으로서, /libs가 아닙니다.  중요 사항: 자리 표시자 추가 `js.txt` 및 `css.txt` 파일. (공식적으로 cq:ClientLibraryFolder가 없는 것은 아닙니다.)
 
 
-1. **`/etc/designs/an-scf-sandbox/clientlibs`**&#x200B;을 마우스 오른쪽 단추로 클릭합니다.
-1. **[!UICONTROL 파일 만들기.. 를 선택합니다.]**
-1. **[!UICONTROL 이름]** 입력:`css.txt`
+1. 마우스 오른쪽 단추 클릭 **`/etc/designs/an-scf-sandbox/clientlibs`**
+1. 선택 **[!UICONTROL 파일 만들기...]**
+1. Enter 키 **[!UICONTROL 이름]**: `css.txt`
 
-1. **[!UICONTROL 파일 만들기.. 를 선택합니다.]**
-1. **[!UICONTROL 이름]** 입력:`js.txt`
+1. 선택 **[!UICONTROL 파일 만들기...]**
+1. Enter 키 **[!UICONTROL 이름]**: `js.txt`
 
-1. **[!UICONTROL 모두 저장]** 클릭
+1. 클릭 **[!UICONTROL 모두 저장]**
 
 ![chlimage_1-221](assets/chlimage_1-221.png)
 
@@ -75,11 +79,11 @@ css.txt의 컨텐츠를 다음과 같이 설정해 보십시오.
 
 `}`
 
-## SCF Clientlibs {#embed-scf-clientlibs} 포함
+## SCF Clientlibs 포함 {#embed-scf-clientlibs}
 
-`clientlibs` 노드의 **[!UICONTROL 속성]** 탭에서 다중 값 String 속성 **[!UICONTROL embed]**&#x200B;을 입력합니다. 이렇게 하면 SCF 구성 요소](client-customize.md#clientlibs-for-scf)에 필요한 [클라이언트측 라이브러리(clientlibs)가 포함됩니다. 이 자습서에서는 커뮤니티 구성 요소에 필요한 많은 clientlibs를 추가합니다.
+에서 **[!UICONTROL 속성]** 탭 `clientlibs` 노드, 다중 값 String 속성 입력 **[!UICONTROL 포함]**. 필요한 항목이 포함됩니다 [SCF 구성 요소용 클라이언트 측 라이브러리(clientlibs)](client-customize.md#clientlibs-for-scf). 이 자습서에서는 커뮤니티 구성 요소에 필요한 많은 clientlibs를 추가합니다.
 
-**** 모든 페이지에 대해 다운로드되는 clientlibs의 크기/속도에 대한 고려 사항이 있으므로 프로덕션 사이트에서 사용하려는 접근 방식이 될 수도 있고 아닐 수도 있습니다.
+**참고** 모든 페이지에 대해 다운로드한 clientlibs의 크기/속도에 대한 편의성 고려 사항이 있으므로 프로덕션 사이트에서 사용하려는 접근 방식이 될 수도 있고 아닐 수도 있습니다.
 
 한 페이지에서 하나의 기능만 사용하는 경우 &lt;% ui:includeClientLib categories=cq.social.hbs.forum&quot; %> 과 같이 해당 기능의 전체 clientlib을 페이지에 직접 포함할 수 있습니다.
 
@@ -93,7 +97,7 @@ css.txt의 컨텐츠를 다음과 같이 설정해 보십시오.
 
    *&lt;enter> 대화 상자가 표시됩니다.*
 
-   *각 항목&#x200B;**[뒤에]**를 클릭하여 다음 clientlib 카테고리를 추가합니다.*
+   *클릭&#x200B;**[+]**각 항목 다음에 다음 clientlib 카테고리를 추가합니다.*
 
    * **`cq.ckeditor`**
    * **`cq.social.author.hbs.comments`**
@@ -103,17 +107,17 @@ css.txt의 컨텐츠를 다음과 같이 설정해 보십시오.
    * **`cq.social.author.hbs.voting`**
    * **[!UICONTROL 확인]**&#x200B;을 클릭합니다
 
-* **[!UICONTROL 모두 저장]** 클릭
+* 클릭 **[!UICONTROL 모두 저장]**
 
 ![chlimage_1-222](assets/chlimage_1-222.png)
 
-다음은 이제 `/etc/designs/an-scf-sandbox/clientlibs`이 리포지토리에 표시되는 방식입니다.
+다음은 이러한 방식입니다 `/etc/designs/an-scf-sandbox/clientlibs` 이제 저장소에 표시됩니다.
 
 ![chlimage_1-223](assets/chlimage_1-223.png)
 
 ## PlayPage 템플릿에 Clientlibs 포함 {#include-clientlibs-in-playpage-template}
 
-페이지에 `apps.an-scf-sandbox` ClientLibraryFolder 카테고리를 포함하지 않으면 SCF 구성 요소가 작동하지 않거나 필요한 Javascript 및 스타일로 스타일이 지정되지 않습니다.
+다음을 포함하지 않음 `apps.an-scf-sandbox` 페이지의 ClientLibraryFolder 카테고리에는 SCF 구성 요소가 작동하지 않거나 필요한 Javascript 및 스타일로 스타일이 지정되지 않습니다.
 
 예를 들어 clientlibs를 포함하지 않으면 SCF 주석 구성 요소가 스타일이 지정되지 않은 것으로 표시됩니다.
 
@@ -123,20 +127,20 @@ apps.an-scf-sandbox clientlibs가 포함되면 SCF 주석 구성 요소가 스�
 
 ![chlimage_1-225](assets/chlimage_1-225.png)
 
-include 문은 `<html>` 스크립트의 `<head>` 섹션에 속합니다. 기본 **`foundation head.jsp`**&#x200B;에는 오버레이할 수 있는 스크립트가 포함되어 있습니다.**`headlibs.jsp`**.
+include 문은 `<head>` 섹션 `<html>` 스크립트. 기본값 **`foundation head.jsp`** 에는 오버레이할 수 있는 스크립트가 포함되어 있습니다. **`headlibs.jsp`**.
 
 **headlibs.jsp 복사 및 clientlibs 포함:**
 
-1. **[!UICONTROL CRXDE Lite]**&#x200B;을 사용하여 **`/libs/foundation/components/page/headlibs.jsp`**&#x200B;를 선택합니다
-1. 마우스 오른쪽 단추를 클릭하고 **[!UICONTROL 복사]**&#x200B;를 선택합니다(또는 도구 모음에서 복사 를 선택합니다.)
+1. 사용 **[!UICONTROL CRXDE Lite]**, 선택 **`/libs/foundation/components/page/headlibs.jsp`**
+1. 마우스 오른쪽 단추를 클릭하고 을 선택합니다 **[!UICONTROL 복사]** 또는 도구 모음에서 복사 를 선택합니다.
 1. 선택 **`/apps/an-scf-sandbox/components/playpage`**
-1. 마우스 오른쪽 단추를 클릭하고 **[!UICONTROL 붙여넣기]**(또는 도구 모음에서 붙여넣기)를 선택합니다
-1. **`headlibs.jsp`**&#x200B;을 두 번 클릭하여 엽니다.
+1. 마우스 오른쪽 단추를 클릭하고 을 선택합니다 **[!UICONTROL 붙여넣기]** (또는 도구 모음에서 붙여넣기 를 선택합니다.)
+1. 두 번 클릭 **`headlibs.jsp`** 열다
 1. 파일 끝에 다음 줄을 추가합니다
 
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
 
-1. **[!UICONTROL 모두 저장]** 클릭
+1. 클릭 **[!UICONTROL 모두 저장]**
 
 
 ```xml
@@ -155,39 +159,39 @@ include 문은 `<html>` 스크립트의 `<head>` 섹션에 속합니다. 기본 
 
 ![chlimage_1-226](assets/chlimage_1-226.png)
 
-## 지금까지 작업 내용을 저장하는 중 {#saving-your-work-so-far}
+## 지금까지 작업 저장 {#saving-your-work-so-far}
 
 이 시점에서 최소 샌드박스가 있으며 패키지로 저장할 가치가 있으므로 재생하는 동안 경험이 손상되어 다시 시작하려는 경우 서버를 끄거나 crx-quickstart/ 폴더의 이름을 바꾸거나 삭제하고 서버를 켜고 이 저장된 패키지를 업로드하고 설치할 수 있으며 이러한 가장 기본적인 단계를 반복하지 않아도 됩니다.
 
-이 패키지는 [샘플 페이지 만들기](create-sample-page.md) 자습서에 있습니다. 바로 들어가서 재생을 시작할 때까지 기다릴 수 없습니다...
+이 패키지는 [샘플 페이지 만들기](create-sample-page.md) 빨리 뛰어들어 재생을 시작하는 사용자를 위한 튜토리얼...
 
 패키지를 만들려면 다음을 수행하십시오.
 
 
-* **[!UICONTROL CRXDE Lite]**&#x200B;에서 [패키지 아이콘](http://localhost:4502/crx/packmgr/)을 클릭합니다
-* **[!UICONTROL 패키지 만들기]** 클릭
+* From **[!UICONTROL CRXDE Lite]**&#x200B;를 클릭하고 [패키지 아이콘](http://localhost:4502/crx/packmgr/)
+* 클릭 **[!UICONTROL 패키지 만들기]**
 
    * 패키지 이름: `an-scf-sandbox-minimal-pkg`
    * 버전: `0.1`
-   * 그룹:&lt;기본값으로 유지>
+   * 그룹: &lt;leave as=&quot;&quot; default=&quot;&quot;>
    * **[!UICONTROL 확인]**&#x200B;을 클릭합니다
 
-* **[!UICONTROL 편집]**&#x200B;을 클릭합니다
+* 클릭 **[!UICONTROL 편집]**
 
-   * **[!UICONTROL 필터]** 탭을 선택합니다.
+   * 선택 **[!UICONTROL 필터]** 탭
 
-      * **[!UICONTROL 필터 추가]**&#x200B;를 클릭합니다.
-      * 루트 경로:`/apps/an-scf-sandbox` 찾아보기
-      * **[!UICONTROL 완료]** 클릭
-      * **[!UICONTROL 필터 추가]**&#x200B;를 클릭합니다.
-      * 루트 경로:`/etc/designs/an-scf-sandbox` 찾아보기
-      * **[!UICONTROL 완료]** 클릭
-      * **[!UICONTROL 필터 추가]**&#x200B;를 클릭합니다.
-      * 루트 경로:`/content/an-scf-sandbox` 찾아보기
-      * **[!UICONTROL 완료]** 클릭
+      * 클릭 **[!UICONTROL 필터 추가]**
+      * 루트 경로: &lt;browse to=&quot;&quot; span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />>`/apps/an-scf-sandbox`
+      * 클릭 **[!UICONTROL 완료]**
+      * 클릭 **[!UICONTROL 필터 추가]**
+      * 루트 경로: &lt;browse to=&quot;&quot; span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />>`/etc/designs/an-scf-sandbox`
+      * 클릭 **[!UICONTROL 완료]**
+      * 클릭 **[!UICONTROL 필터 추가]**
+      * 루트 경로: &lt;browse to=&quot;&quot; span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />>`/content/an-scf-sandbox`
+      * 클릭 **[!UICONTROL 완료]**
    * **[!UICONTROL 저장]**&#x200B;을 클릭합니다
 
 
-* **[!UICONTROL Build]** 클릭
+* 클릭 **[!UICONTROL 빌드]**
 
-이제 **[!UICONTROL 다운로드]**&#x200B;를 선택하여 디스크와 **[!UICONTROL 업로드 패키지]**&#x200B;를 선택하고, **[!UICONTROL 더 보기 > 복제]**&#x200B;를 선택하여 샌드박스를 localhost 게시 인스턴스에 푸시하여 샌드박스의 영역을 확장할 수 있습니다.
+이제 다음을 선택할 수 있습니다 **[!UICONTROL 다운로드]** 디스크에 저장하고 **[!UICONTROL 패키지 업로드]** 다른 곳에서 선택할 수 있습니다. **[!UICONTROL 자세히 > 복제]** 샌드박스를 localhost 게시 인스턴스에 푸시하여 샌드박스의 영역을 확장하려면

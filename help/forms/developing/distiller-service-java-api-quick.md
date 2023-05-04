@@ -1,8 +1,8 @@
 ---
 title: Distiller 서비스 Java API QuickStart(SOAP)
-seo-title: Distiller 서비스 Java API QuickStart(SOAP)
+seo-title: Distiller Service Java API QuickStart(SOAP)
 description: Distiller 서비스 Java API를 사용하여 PostScript 파일을 PDF 문서로 변환합니다.
-seo-description: Distiller 서비스 Java API를 사용하여 PostScript 파일을 PDF 문서로 변환합니다.
+seo-description: Use the Distiller Service Java API to convert a PostScript file to a PDF document.
 uuid: 7781f074-cea4-4109-892b-118cfad4ec36
 contentOwner: admin
 content-type: reference
@@ -11,28 +11,32 @@ topic-tags: develop
 discoiquuid: 59dd61d1-c6b1-4bea-b666-4aa7897384a1
 role: Developer
 exl-id: 0d7cdb60-e892-4644-8a72-a8068ca2e224
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 0%
+source-wordcount: '221'
+ht-degree: 3%
 
 ---
 
 # Distiller 서비스 Java API 빠른 시작(SOAP) {#distiller-service-java-api-quickstart-soap}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 Distiller® 서비스에 SOAP(Java API Quick Start)를 사용할 수 있습니다.
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 PostScript 파일을 PDF 문서로 변환](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 PostScript 파일을 PDF 문서로 변환](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
 
 AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM Forms로 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 관련 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로, 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
+>AEM Forms로 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 관련 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로, 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 자세한 내용은 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api}를 사용하여 PostScript 파일을 PDF 문서로 변환
+## 빠른 시작(SOAP 모드): Java API를 사용하여 PostScript 파일을 PDF 문서로 변환 {#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api}
 
-다음 코드 예제에서는 *Loan.ps *라는 PostScript 파일을 *Loan.pdf*&#x200B;라는 PDF 파일로 변환합니다. ( [PostScript를 PDF 문서로 변환](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents) 참조).
+다음 코드 예제에서는 *Loan.ps *라는 PostScript 파일을 *Loan.pdf*. (자세한 내용은 [PostScript를 PDF 문서로 변환](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents))
 
 ```as3
  /* 

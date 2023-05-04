@@ -4,14 +4,18 @@ seo-title: Developing AEM Components - Code Samples
 description: 이 섹션에서는 AEM용 구성 요소를 직접 만드는 방법에 대한 몇 가지 예를 제공합니다.
 seo-description: This section provides some examples on how to create your own components for AEM.
 exl-id: c205046f-9e60-4010-9ae3-be7d02d45248
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 10%
+source-wordcount: '253'
+ht-degree: 11%
 
 ---
 
 # AEM 구성 요소 개발 - 코드 샘플{#developing-aem-components-code-samples}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 이 섹션에서는 AEM용 구성 요소를 직접 만드는 방법에 대한 몇 가지 예를 제공합니다.
 

@@ -6,14 +6,18 @@ seo-description: An description of the essential capabilities of AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: 5cb966c3-1e19-47c8-a691-067f6d4680c0
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 33%
+source-wordcount: '432'
+ht-degree: 12%
 
 ---
 
 # AEM 6.4 기능에 대해 알아보기 {#learn-about-aem-64-capabilities}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ## AEM Sites {#aem-sites}
 
@@ -21,30 +25,30 @@ AEM Sites은 Adobe Experience Manager 내의 컨텐츠 관리 시스템으로 �
 
 ## AEM Assets {#aem-assets}
 
-AEM Assets는 조직이 다중 임차인 플랫폼에서 디지털 자산을 쉽게 만들고, 관리하고, 제공하고, 최적화할 수 있도록 해줍니다. [AEM Assets에 대한 새로운 비디오 기능 자습서 중 일부를 살펴보십시오.](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html)
+AEM Assets을 사용하면 조직에서 다중 임차인 클라우드 플랫폼에서 디지털 자산을 쉽게 만들고, 관리하고, 제공하고, 최적화할 수 있습니다. [AEM Assets에 대한 새로운 비디오 기능 자습서 중 일부를 살펴보십시오.](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html)
 
-* [AEM Assets 사용](/help/assets/managing-assets-touch-ui.md)
+* [AEM Assets 작업](/help/assets/managing-assets-touch-ui.md)
 * [Dynamic Media 작업](/help/assets/dynamic-media.md)
 * [AEM Assets 릴리스 노트](/help/release-notes/assets.md)
 
 ## AEM Forms {#aem-forms}
 
-AEM은 백엔드 프로세스, 비즈니스 규칙 및 데이터와 통합하면서 복잡한 디지털 양식을 만들고, 게시하고, 업데이트하는 사용하기 쉬운 솔루션을 제공합니다.
+AEM은 백엔드 프로세스, 비즈니스 규칙 및 데이터와 통합하면서도 복잡한 디지털 양식을 작성, 관리, 게시 및 업데이트하는 사용하기 쉬운 솔루션을 제공합니다.
 
-AEM Forms는 해당 관리 기능, 문서 보안 및 통합된 분석과 함께 양식 작성, 관리 및 게시를 결합하여 흥미 있는 종단 간 환경을 생성합니다. [AEM Forms에 대한 새로운 비디오 기능 자습서 중 일부를 살펴보십시오.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/overview.html)
+AEM Forms은 서신 관리 기능, 문서 보안 및 통합 분석과 함께 양식 작성, 관리 및 게시를 결합하여 매력적인 종단 간 경험을 제공합니다. [AEM Forms에 대한 새로운 비디오 기능 자습서 중 일부를 살펴보십시오.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/overview.html)
 
-* [AEM Forms 시작하기](/help/forms/using/introduction-aem-forms.md)
+* [AEM Forms 시작](/help/forms/using/introduction-aem-forms.md)
 * [AEM Forms의 새로운 기능](/help/forms/using/whats-new.md)
 * [AEM Forms의 아키텍처 및 토폴로지](/help/forms/using/aem-forms-architecture-deployment.md)
-* [AEM Forms 성능 조정](/help/forms/using/performance-tuning-aem-forms.md)
+* [성능 조정 AEM Forms](/help/forms/using/performance-tuning-aem-forms.md)
 
 ## AEM Screens {#aem-screens}
 
-Screens는 포괄적인 디지털 마케팅 플랫폼과 함께 다양한 유형의 화면을 포함하는 동적 및 대화형 디지털 경험과 상호 작용을 게시할 수 있는 Adobe Experience Manager 기능입니다.  [추가 정보.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+Screens는 포괄적인 디지털 마케팅 플랫폼과 함께 다양한 유형의 화면을 포함하는 동적 및 대화형 디지털 경험과 상호 작용을 게시할 수 있는 Adobe Experience Manager 기능입니다.  [자세히 알아보기.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## AEM Communities {#aem-communities}
 
-커뮤니티는 포럼, 사용자 그룹, 학습 리소스 및 고객, 직원 및 브랜드에게 유용한 기타 소셜 기능을 포함한 온라인 커뮤니티 경험을 만드는 데 도움이 되는 Adobe Experience Manager 기능입니다. [추가 정보.](https://business.adobe.com/products/experience-manager/sites/aem-sites.html)
+커뮤니티는 포럼, 사용자 그룹, 학습 리소스 및 고객, 직원 및 브랜드에게 유용한 기타 소셜 기능을 포함한 온라인 커뮤니티 경험을 만드는 데 도움이 되는 Adobe Experience Manager 기능입니다. [자세히 알아보기.](https://business.adobe.com/products/experience-manager/sites/aem-sites.html)
 
 ## AEM Livefyre {#aem-livefyre}
 

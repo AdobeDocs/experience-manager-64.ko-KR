@@ -1,8 +1,8 @@
 ---
 title: 문제 해결
-seo-title: 문제 해결
+seo-title: Troubleshooting
 description: 알려진 문제를 포함한 커뮤니티 문제 해결
-seo-description: 알려진 문제를 포함한 커뮤니티 문제 해결
+seo-description: Troubleshooting Community including Known Issues
 uuid: 99225430-fa2a-4393-ae5a-18b19541c358
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 exl-id: 1a1de20d-53f6-4787-92e3-e12f30d925d3
-source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 1%
+source-wordcount: '403'
+ht-degree: 3%
 
 ---
 
 # 문제 해결 {#troubleshooting}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 이 섹션에는 일반적인 문제와 알려진 문제가 포함되어 있습니다.
 
@@ -54,7 +58,7 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 작성자 및 게시에서 이 오류는 다릅니다. 작성자는 자동으로 실패하고 포럼 주제가 표시되지 않습니다. 게시 시 페이지에 오류가 발생합니다.
 
-자세한 내용은 [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API를 참조하십시오.
+자세한 내용은 [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API 를 참조하십시오.
 
 ## 일반적인 문제 {#common-concerns}
 
@@ -62,9 +66,9 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 시작 중(1일 아님, 이후 모든 항목)에는 다음 경고가 로그에 표시될 수 있습니다.
 
-* 11.04.2014 08:38:07.223 **WARN** [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper &#39;i18n&#39;이 &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;으로 대체되었습니다.
+* 11.04.2014 08:38:07.223 **경고** [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper &#39;i18n&#39;이 &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;으로 대체되었습니다.
 
-이 경고는 [SCF](scf.md#handlebarsjavascripttemplatinglanguage)에 사용되는 jknack.handlebars.Handlebars와 자체 i18n 도우미 유틸리티가 함께 제공되는 것으로 무시해도 안전합니다. 시작할 때 AEM 관련 [i18n helper](handlebars-helpers.md#i-n)로 대체됩니다. 이 경고는 기존 도우미의 재정의를 확인하기 위해 타사 라이브러리에서 생성합니다.
+이 경고는 jknack.handlebars.Handlebars에서 사용하는 것처럼 안전하게 무시될 수 있습니다. [SCF](scf.md#handlebarsjavascripttemplatinglanguage)에는 자체 i18n helper 유틸리티가 포함되어 있습니다. 시작할 때 AEM별 로 대체됩니다 [i18n 도우미](handlebars-helpers.md#i-n). 이 경고는 기존 도우미의 재정의를 확인하기 위해 타사 라이브러리에서 생성합니다.
 
 ### 로그에 경고: OakResourceListener 프로세스OsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 

@@ -10,14 +10,18 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 exl-id: 25dad368-8227-424d-960b-1664d8e20a21
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 3%
+source-wordcount: '515'
+ht-degree: 5%
 
 ---
 
 # 페이지 속성 보기 사용자 지정{#customizing-views-of-page-properties}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 모든 페이지에는 [속성](/help/sites-authoring/editing-page-properties.md) 사용자가 보고 편집할 수 있습니다. 일부는 페이지를 만들 때(보기 만들기) 필요하며, 일부는 나중에 보고 편집(보기 편집)할 수 있습니다. 이러한 페이지 속성은 대화 상자에서 정의하고 사용할 수 있습니다( `cq:dialog`) 내의 아무 곳에나 삽입할 수 있습니다.
 

@@ -5,14 +5,18 @@ contentOwner: VG
 feature: Brand Portal
 role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1642'
-ht-degree: 81%
+source-wordcount: '1678'
+ht-degree: 80%
 
 ---
 
 # Brand Portal에서 AEM Assets 구성 {#configure-integration-64}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 Adobe Experience Manager Assets는 다음을 통해 Brand Portal으로 구성됩니다 [!DNL Adobe I/O]: Brand Portal 임차인의 인증을 위해 IMS 토큰을 받습니다.
 
@@ -279,7 +283,7 @@ Brand Portal이 AEM Assets 작성자 인스턴스로 구성되었습니다. 이�
 * [AEM Assets의 자산을 Brand Portal에 게시](../assets/brand-portal-publish-assets.md)
 * [AEM Assets의 폴더를 Brand Portal에 게시](../assets/brand-portal-publish-folder.md)
 * [AEM Assets에서 Brand Portal에 컬렉션 게시](../assets/brand-portal-publish-collection.md)
-* Brand Portal 사용자가 AEM Assets에 자산을 제공하고 게시할 수 있도록 [자산 소싱](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ko)을 구성합니다.
+* Brand Portal 사용자가 AEM Assets에 자산을 제공하고 게시할 수 있도록 [자산 소싱](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)을 구성합니다.
 
 ## 구성 업그레이드 {#upgrade-integration-64}
 

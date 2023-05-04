@@ -1,8 +1,8 @@
 ---
 title: 검색
-seo-title: 검색
-description: 포괄적인 검색으로 신속하게 컨텐츠 찾기
-seo-description: 포괄적인 검색으로 신속하게 컨텐츠 찾기
+seo-title: Search
+description: 포괄적인 검색으로 신속하게 콘텐츠 찾기
+seo-description: Find your content faster with comprehensive search
 uuid: 1e80cf85-653f-4dde-930a-de05415b994f
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,24 +10,28 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: cd87e1e8-5329-4e60-ac9d-2705f54d0da6
 exl-id: 9e93b28b-627d-4676-82a6-d719de4d152a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 99%
+source-wordcount: '548'
+ht-degree: 56%
 
 ---
 
 # 검색{#search-features}
 
-AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하기 위한 다양한 메커니즘을 제공합니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+AEM의 작성 환경에서는 리소스 유형에 따라 콘텐츠를 검색하기 위한 다양한 메커니즘을 제공합니다.
 
 >[!NOTE]
 >
->작성 환경 외부에서도 [Query Builder](/help/sites-developing/querybuilder-api.md) 및 [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)와 같은 다른 메커니즘을 사용하여 검색할 수도 있습니다.
+>작성 환경 외부에서 와 같은 다른 메커니즘도 검색할 수 있습니다 [Query Builder](/help/sites-developing/querybuilder-api.md) 및 [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## 검색 기본 사항 {#search-basics}
 
-검색은 맨 위 도구 모음에서 사용할 수 있습니다.
+검색은 상단 도구 모음에서 사용할 수 있습니다.
 
 ![](do-not-localize/chlimage_1-17.png)
 
@@ -41,11 +45,11 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
 >
 >검색 레일이 표시될 때마다 핫키 `/`(슬래시)를 사용하여 검색을 호출할 수 있습니다.
 
-## 검색 및 필터 {#search-and-filter}
+## 검색 및 필터링 {#search-and-filter}
 
 리소스를 검색하고 필터링하려면:
 
-1. **검색**(도구 모음에 돋보기가 표시됨)을 열고 검색어를 입력합니다. 제안 사항이 만들어지고 선택할 수 있습니다.
+1. 열기 **검색** (도구 모음에 돋보기가 표시됨)를 입력하고 검색어를 입력합니다. 제안 사항이 만들어지고 선택할 수 있습니다.
 
    ![screen_shot_2018-03-23at101404](assets/screen_shot_2018-03-23at101404.png)
 
@@ -53,7 +57,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
 
    ![screen_shot_2018-03-23at101445](assets/screen_shot_2018-03-23at101445.png)
 
-1. 필요한 경우 위치 필터를 제거(제거할 필터에서 **X** 선택)하여 모든 콘솔/리소스 유형에서 검색할 수 있습니다.
+1. 필요한 경우 위치 필터를 제거할 수 있습니다(선택 **X** 제거할 필터에서)를 사용하여 모든 콘솔/리소스 유형에서 검색합니다.
 1. 콘솔 및 관련 리소스 유형에 따라 그룹화된 결과가 표시됩니다.
 
    필수 리소스 유형(예: **모든 사이트 보기**)을 선택하여 드릴다운하거나 추가 작업을 위해 특정 리소스를 선택할 수 있습니다.
@@ -69,16 +73,16 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
    사이드 패널에서 다음을 선택할 수 있습니다.
 
    * 저장된 검색
-   * 검색 디렉토리
+   * 검색 디렉터리
    * 태그
-   * 검색 기준(예: 수정한 날짜, 게시 상태, Live Copy 상태).
+   * 검색 기준 예를 들어, 수정한 날짜, 게시 상태, Live Copy 상태 등이 있습니다.
 
    >[!NOTE]
    >
-   >검색 기준은 다음과 같이 다양할 수 있습니다.
+   >검색 기준은 다음과 같이 다를 수 있습니다.
    >
-   >* 선택한 리소스 유형에 따라(예: 자산 및 커뮤니티) 기준이 세분화됩니다.
-   >* [검색 양식](/help/sites-administering/search-forms.md)과 같은 인스턴스는 AEM 내의 위치에 맞게 사용자 지정할 수 있습니다.
+   >* 선택한 리소스 유형에 따라(예: 에셋 및 커뮤니티) 기준이 세분화됩니다.
+   >* 인스턴스를으로 사용 [Forms 검색](/help/sites-administering/search-forms.md) 사용자 지정할 수 있습니다(AEM 내의 위치에 적합).
 
 
    ![screen_shot_2018-03-23at101619](assets/screen_shot_2018-03-23at101619.png)
@@ -87,19 +91,19 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
 
    ![screen_shot_2018-03-23at101710](assets/screen_shot_2018-03-23at101710.png)
 
-1. **X**(오른쪽 상단) 표시를 사용하여 **검색**&#x200B;을 닫습니다.
+1. **X**&#x200B;를 클릭하여(오른쪽 상단) **검색**&#x200B;을 닫습니다.
 
 >[!NOTE]
 >
->검색 기준은 검색 결과에서 항목을 선택해도 유지됩니다.
+>검색 기준은 검색 결과에서 항목을 선택할 때 유지됩니다.
 >
->검색 결과 페이지에서 항목을 선택하고, 브라우저의 뒤로 단추를 사용하여 검색 페이지로 돌아가도 검색 기준은 유지됩니다.
+>검색 결과 페이지에서 항목을 선택하고, 브라우저의 뒤로 버튼을 사용하여 검색 페이지로 돌아가도 검색 기준은 유지됩니다.
 
 ## 저장된 검색 {#saved-searches}
 
-다양한 패싯별로 검색할 수 있을 뿐만 아니라 이후 단계에서 검색하여 사용할 수 있게 특정 검색 구성을 저장할 수도 있습니다.
+다양한 패싯으로 검색할 수 있을 뿐만 아니라 나중에 검색하고 사용할 수 있도록 특정 검색 구성을 저장할 수도 있습니다.
 
-1. 검색 기준을 정의하고 **저장**&#x200B;을 선택합니다.
+1. 검색 기준을 정의하고 을(를) 선택합니다 **저장**.
 
    ![screen_shot_2018-03-23at101710-1](assets/screen_shot_2018-03-23at101710-1.png)
 
@@ -111,11 +115,11 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
 
    ![screen_shot_2018-03-23at102128](assets/screen_shot_2018-03-23at102128.png)
 
-1. 저장했으면 다음을 수행할 수 있습니다.
+1. 저장했으면 다음과 같은 작업을 수행할 수 있습니다.
 
-   * **x**(저장된 검색 이름에 대해)를 사용하여 새 쿼리를 시작합니다(저장된 검색 자체는 삭제되지 않음).
-   * **저장한 검색을 편집**&#x200B;하고, 검색 조건을 변경한 다음 다시 **저장**&#x200B;합니다.
+   * 사용 **x** (저장된 검색 이름에 대해) 새 쿼리를 시작합니다(저장된 검색 자체는 삭제되지 않음).
+   * **저장된 검색 편집**, 검색 조건을 변경한 다음 **저장** 다시 한 번
 
-저장된 검색을 선택하고 검색 패널의 맨 아래에 있는 **저장된 검색 편집**&#x200B;을 클릭하여 저장된 검색을 수정할 수 있습니다.
+검색 패널 하단에서 저장된 검색을 선택한 다음 **저장된 검색 편집**&#x200B;을 클릭하여 저장된 검색을 수정할 수 있습니다.
 
 ![screen_shot_2018-03-23at102213](assets/screen_shot_2018-03-23at102213.png)

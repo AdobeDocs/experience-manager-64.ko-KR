@@ -1,18 +1,22 @@
 ---
-title: '"[!DNL Experience Manager Assets] 홈 페이지 경험"'
+title: "[!DNL Experience Manager Assets] 홈 페이지 경험"
 description: 자산 관련 최근 활동에 대한 스냅숏을 포함하여 풍부한 시작 화면 경험을 위해 자산 홈 페이지를 개인화합니다.
 contentOwner: AG
 feature: Developer Tools,Asset Management
 role: Admin,User
 exl-id: f47c6da7-aa21-4f49-9c66-2a8091e19561
-source-git-commit: d9cfb5376210234b3b05877509c273c52d9cecf3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 1%
+source-wordcount: '593'
+ht-degree: 3%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets] 홈 페이지 경험 {#aem-assets-home-page-experience}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 개인화 [!DNL Experience Manager Assets] 자산 관련 최근 활동에 대한 스냅숏을 포함하여 풍부한 시작 화면 환경을 위한 홈 페이지입니다.
 

@@ -1,24 +1,28 @@
 ---
 title: 패턴 탐지기를 사용한 업그레이드 복잡성 평가
-seo-title: 패턴 탐지기를 사용한 업그레이드 복잡성 평가
+seo-title: Assessing the Upgrade Complexity with the Pattern Detector
 description: 패턴 탐지기 를 사용하여 업그레이드의 복잡성을 평가하는 방법을 알아봅니다.
-seo-description: 패턴 탐지기 를 사용하여 업그레이드의 복잡성을 평가하는 방법을 알아봅니다.
+seo-description: Learn how to use the Pattern Detector to assess the complexity of your upgrade.
 uuid: 4fcfdb16-3183-442a-aa5b-5f9c4fb7e091
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 8cdcfd3a-7003-4cce-97f4-da7a1a887d1b
-feature: 업그레이드
+feature: Upgrading
 exl-id: 375e202c-21d4-41f1-a2d5-592ac95c8f25
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 3%
+source-wordcount: '536'
+ht-degree: 4%
 
 ---
 
-# 패턴 탐지기{#assessing-the-upgrade-complexity-with-the-pattern-detector}를 사용하여 업그레이드 복잡성 평가
+# 패턴 탐지기를 사용한 업그레이드 복잡성 평가{#assessing-the-upgrade-complexity-with-the-pattern-detector}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ## 개요 {#overview}
 
@@ -31,7 +35,7 @@ AEM 6.4로 업그레이드하는 작업에 대한 평가 역할을 할 수 있�
 
 ## 설정 방법 {#how-to-set-up}
 
-패턴 탐지기는 AEM 6.5를 대상으로 하는 6.1에서 6.5로 소스 AEM 버전에서 작동하는 [하나의 패키지](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65)로 별도로 릴리스됩니다. [패키지 관리자](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html)를 사용하여 설치할 수 있습니다.
+패턴 탐지기는 별도로 [하나의 패키지](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65)  AEM 6.1에서 6.5로 소스 AEM 버전에서 작업하는 작업 6.5 업그레이드 SDK는 [패키지 관리자](https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/package-manager.html).
 
 ## 사용 방법 {#how-to-use}
 
@@ -41,21 +45,21 @@ AEM 6.4로 업그레이드하는 작업에 대한 평가 역할을 할 수 있�
 >
 >* 검출 속도 증가
 >* 비즈니스 크리티컬 인스턴스를 지연시키지 않도록 합니다.\
-   >동시에 사용자 애플리케이션, 컨텐츠 및 구성 영역의 프로덕션 환경에 최대한 가까운 **을 스테이징 환경에서 실행하는 것이 좋습니다.**
+   >동시에 실행하는 것이 좋습니다 **스테이징 환경** 사용자 애플리케이션, 컨텐츠 및 구성 영역의 운영 환경에 최대한 근접합니다.
 
 
 몇 가지 방법을 사용하여 패턴 탐지기 출력을 확인할 수 있습니다.
 
 * **Felix Inventory 콘솔을 통해**
 
-1. 다음 위치로 이동하여 AEM 웹 콘솔로 이동합니다.https://<i></i>serveraddress:serverport/system/console/configMgr
-1. 아래 그림과 같이 **상태 - 패턴 탐지기**&#x200B;를 선택합니다.
+1. 다음 위치로 이동하여 AEM 웹 콘솔로 이동합니다. https://<i></i>serveraddress:serverport/system/console/configMgr
+1. 선택 **상태 - 패턴 탐지기** 아래 이미지에 표시된 대로,
 
    ![스크린샷-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **반응형 텍스트 기반 또는 일반 JSON 인터페이스를 통해**
 
-* **각 행에 개별 JSON 문서를 생성하는 반응형 JSON 라인 인터페이스를** 통해 .
+* **반응형 JSON 라인 인터페이스를 통해**&#x200B;에서는 각 행에 별도의 JSON 문서를 생성합니다.
 
 이 두 방법 모두 아래에 자세히 설명되어 있습니다.
 
@@ -84,7 +88,7 @@ curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-dete
 2018-02-13T14:18:32.071+01:00 [SUSPICION] The pattern=ECU/extraneous.content.usage was found by detector=ContentAccessDetector with id=a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f message="Cross-boundary overlay of internal marked path /libs/granite/operations/components/commons/commons.jsp/jcr:content referenced at /apps/granite/operations/components/commons/commons.jsp/jcr:content with properties redefined: jcr:lastModifiedBy, jcr:mimeType, jcr:data, jcr:lastModified, jcr:uuid". More info at=https://www.adobe.com/go/aem6_EC
 ```
 
-진행 상태는 `grep` 명령을 사용하여 필터링할 수 있습니다.
+진행 상태는 `grep` 명령:
 
 ```shell
 curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep PROGRESS
@@ -100,7 +104,7 @@ curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-dete
 
 ## JSON 인터페이스 처리 {#handling-the-json-interface}
 
-마찬가지로 JSON은 게시되는 즉시 [jq tool](https://stedolan.github.io/jq/)을 사용하여 처리할 수 있습니다.
+마찬가지로, JSON도 [jq 도구](https://stedolan.github.io/jq/) 게시되는 즉시
 
 ```shell
 curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == true)'
@@ -210,7 +214,7 @@ curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-dete
 
 >[!NOTE]
 >
->curl의 전체 출력을 파일에 저장한 다음 `jq` 또는 `grep` 을 통해 처리하여 정보 유형을 필터링하는 것이 좋습니다.
+>curl의 전체 출력을 파일에 저장한 다음 를 통해 처리하는 것이 좋습니다 `jq` 또는 `grep` 정보 유형을 필터링합니다.
 
 ## 검색 범위 {#scope}
 

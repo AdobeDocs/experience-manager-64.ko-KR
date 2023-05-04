@@ -1,18 +1,22 @@
 ---
 title: Assets 네트워크 고려사항
-description: '자산 배포를 디자인할 때 네트워크 고려 사항에 대해 설명합니다. [!DNL Experience Manager] '
+description: 디자인 시 네트워크 고려 사항에 대해 설명합니다. [!DNL Experience Manager] 자산 배포.
 contentOwner: AG
 feature: Developer Tools
 role: Architect,Admin
 exl-id: f8f9d86f-a5e3-46ac-8d96-c2e44eac9c93
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '1035'
 ht-degree: 1%
 
 ---
 
 # 자산 네트워크 고려사항 {#assets-network-considerations}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 Adobe Experience Manager 자산을 이해하는 것 못지않게 네트워크를 이해하는 것이 중요합니다. 네트워크는 업로드, 다운로드 및 사용자 경험에 영향을 줄 수 있습니다. 네트워크 토폴로지를 다이어그래밍하면 네트워크 성능 및 사용자 환경을 개선하기 위해 수정해야 하는 네트워크에서 초크 포인트 및 하위 최적화 영역을 식별할 수 있습니다.
 
@@ -20,10 +24,10 @@ Adobe Experience Manager 자산을 이해하는 것 못지않게 네트워크를
 
 * 클라이언트 장치(예: 컴퓨터, 모바일 및 태블릿)에서 네트워크에 연결
 * 기업 네트워크의 토폴로지
-* 회사 네트워크 및 [!DNL Experience Manager] 환경에서 인터넷에 대한 업링크
-* [!DNL Experience Manager] 환경의 토폴로지
-* [!DNL Experience Manager] 네트워크 인터페이스의 동시 소비자 정의
-* [!DNL Experience Manager] 인스턴스의 정의된 워크플로우
+* 기업 네트워크 및 [!DNL Experience Manager] 환경
+* 의 토폴로지 [!DNL Experience Manager] 환경
+* 의 동시 소비자 정의 [!DNL Experience Manager] 네트워크 인터페이스
+* 의 정의된 워크플로우 [!DNL Experience Manager] 인스턴스
 
 ## 클라이언트 장치에서 회사 네트워크에 연결 {#connectivity-from-the-client-device-to-the-corporate-network}
 
@@ -47,13 +51,13 @@ Adobe Experience Manager 자산을 이해하는 것 못지않게 네트워크를
 
 다이어그램은 일반적으로 사용되는 것보다 회사 네트워크 내에서 더 높은 업링크 속도를 표시합니다. 이 파이프는 공유 리소스입니다. 공유 스위치가 50개의 클라이언트를 처리할 것으로 예상되면 선택 지점일 수 있습니다. 초기 다이어그램에서는 두 컴퓨터만 특정 연결을 공유합니다.
 
-## 회사 네트워크 및 [!DNL Experience Manager] 환경에서 인터넷에 대한 업링크 {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## 기업 네트워크에서 인터넷에 대한 상향링크 및 [!DNL Experience Manager] 환경 {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
 최대 로드 또는 대규모 제공자 중단으로 인해 인터넷을 통한 대역폭이 손상될 수 있으므로 인터넷과 VPC 연결에서 알 수 없는 요소를 고려해야 합니다. 일반적으로 인터넷 연결이 안정적입니다. 하지만, 그것은 때때로 선택점을 도입할 수 있습니다.
 
-상기 업링크에서는 기업 네트워크에서 인터넷으로의 상향링크 시 상기 대역폭을 사용하는 다른 서비스가 있을 수 있다. [!DNL Assets]에 대해 얼마나 많은 대역폭을 할당하거나 우선 순위를 지정할 수 있는지 이해하는 것이 중요합니다. 예를 들어, 1Gbps 링크가 이미 80% 활용도에 있는 경우 [!DNL Experience Manager] 자산에 대해 대역폭의 최대 20%만 할당할 수 있습니다.
+상기 업링크에서는 기업 네트워크에서 인터넷으로의 상향링크 시 상기 대역폭을 사용하는 다른 서비스가 있을 수 있다. 대역폭 전용 또는 우선 순위가 지정될 수 있는 대역폭을 파악하는 것이 중요합니다 [!DNL Assets]. 예를 들어, 1Gbps 링크가 이미 80% 활용률에 있는 경우 최대 20%의 대역폭만 할당할 수 있습니다 [!DNL Experience Manager] 자산.
 
 엔터프라이즈 방화벽과 프록시는 다양한 방식으로 대역폭을 형성할 수도 있습니다. 이러한 유형의 장치는 서비스 품질, 사용자당 대역폭 제한 또는 호스트당 비트율 제한을 사용하여 대역폭의 우선 순위를 지정할 수 있습니다. 이러한 선택 사항은 Assets 사용자 경험에 크게 영향을 줄 수 있으므로 검토해야 할 중요한 선택 사항입니다.
 
@@ -63,21 +67,21 @@ Adobe Experience Manager 자산을 이해하는 것 못지않게 네트워크를
 
 샘플 다이어그램에서 6개의 장치가 개념 10Mbps 채널을 공유한다고 결론 내릴 수 있습니다. 활용하는 자산의 크기에 따라, 이것은 사용자 기대를 충족하기에 충분하지 않을 수 있습니다.
 
-## [!DNL Experience Manager] 환경의 토폴로지 {#topology-of-the-aem-environment}
+## 의 토폴로지 [!DNL Experience Manager] 환경 {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
-[!DNL Experience Manager] 환경의 토폴로지를 디자인하려면 시스템 구성과 사용자 환경 내에서 네트워크가 어떻게 연결되는지 자세히 알고 있어야 합니다.
+토폴로지 디자인 [!DNL Experience Manager] 환경에는 시스템 구성 및 사용자 환경 내에서 네트워크를 연결하는 방법에 대한 자세한 지식이 필요합니다.
 
 샘플 시나리오에는 5개의 서버가 있는 게시 팜, S3 이진 저장소 및 다이내믹 미디어가 포함되어 있습니다.
 
-디스패처는 외부 세계 및 [!DNL Experience Manager] 인스턴스, 두 개의 엔티티와 100Mbps 연결을 공유합니다. 업로드 및 다운로드 작업을 동시에 수행하려면 이 숫자를 2로 나누어야 합니다. 연결된 외부 저장소는 별도의 연결을 사용합니다.
+디스패처가 공유한 100Mbps는 두 개체, 외부 세계, 그리고 [!DNL Experience Manager] 인스턴스. 업로드 및 다운로드 작업을 동시에 수행하려면 이 숫자를 2로 나누어야 합니다. 연결된 외부 저장소는 별도의 연결을 사용합니다.
 
-[!DNL Experience Manager] 인스턴스는 여러 서비스와 1Gbps 연결을 공유합니다. 네트워크 토폴로지 관점에서 볼 때, 하나의 채널을 서로 다른 서비스와 공유하는 것과 같습니다.
+다음 [!DNL Experience Manager] 인스턴스 공유: 여러 서비스와 1Gbps 연결입니다. 네트워크 토폴로지 관점에서 볼 때, 하나의 채널을 서로 다른 서비스와 공유하는 것과 같습니다.
 
-클라이언트 장치에서 [!DNL Experience Manager] 인스턴스로 네트워크를 검토하면 가장 작은 선택점이 10Mbit 엔터프라이즈 방화벽 스로틀로 나타납니다. [자산 크기 조정 가이드](assets-sizing-guide.md)의 크기 조정 계산기에서 이러한 값을 사용하여 사용자 경험을 확인할 수 있습니다.
+클라이언트 장치에서 다음으로 네트워크 검토 [!DNL Experience Manager] 예를 들어 가장 작은 선택점은 10Mbit 엔터프라이즈 방화벽 스로틀입니다. 다음 값을 [Assets 크기 조정 가이드](assets-sizing-guide.md) 를 클릭하여 사용자 경험을 확인합니다.
 
-## [!DNL Experience Manager] 인스턴스의 정의된 워크플로우 {#defined-workflows-of-the-aem-instance}
+## 의 정의된 워크플로우 [!DNL Experience Manager] 인스턴스 {#defined-workflows-of-the-aem-instance}
 
 네트워크 성능을 고려할 때 시스템에서 발생할 워크플로우 및 게시를 고려해야 할 수 있습니다. 또한, 사용자가 사용하고 입출력 요청을 사용하는 S3 또는 기타 NAS 스토리지는 네트워크 대역폭을 사용합니다. 따라서 완전히 최적화된 네트워크에서도 디스크 I/O에 의해 성능이 제한될 수 있습니다.
 
@@ -93,7 +97,7 @@ Adobe Experience Manager 자산을 이해하는 것 못지않게 네트워크를
 
 * XMP 메타데이터 읽기/쓰기 저장
 * 자동 활성화 및 복제
-* 원본에 쓰기
+* 워터마크
 * 하위 자산 수집/페이지 추출
 * 워크플로우가 겹칩니다.
 

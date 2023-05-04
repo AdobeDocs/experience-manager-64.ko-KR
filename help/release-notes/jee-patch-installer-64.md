@@ -5,33 +5,37 @@ uuid: e709871b-c04c-43bb-a7d0-45e89fbd3d44
 content-type: reference
 discoiquuid: 83bace08-1d4f-4192-a634-c7c4879963d8
 exl-id: ce5300ce-03f4-4e7b-bc5b-01a9968ebe06
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 24%
+source-wordcount: '580'
+ht-degree: 23%
 
 ---
 
 # AEM Forms JEE 패치 설치 프로그램 {#aem-forms-jee-patch-installer}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
->[자세한 ](https://www.adobe.com/kr/account/sign-in.supportportal.html) 내용은 지원 센터에 문의하거나 패치를 받으십시오.
+>[지원 문의](https://www.adobe.com/kr/account/sign-in.supportportal.html) 자세한 정보나 패치 받기
 
-## 패치 설치 프로그램 {#about-the-patch-installer} 정보
+## 패치 설치 프로그램 정보 {#about-the-patch-installer}
 
-AEM 6.4 Forms JEE 패치 설치 프로그램에는 이 패치가 릴리스될 때까지 사용할 수 있는 AEM 6.4 Forms JEE의 모든 구성 요소에 대한 모든 고정 문제가 포함되어 있습니다. 해결된 문제의 전체 목록은 최신 [누적 수정 팩 릴리스 노트](cfp-release-notes.md)를 참조하십시오.
+AEM 6.4 Forms JEE 패치 설치 프로그램에는 이 패치가 릴리스될 때까지 사용할 수 있는 AEM 6.4 Forms JEE의 모든 구성 요소에 대한 모든 고정 문제가 포함되어 있습니다. 최신 항목 보기  [누적 수정 팩 릴리스 노트](cfp-release-notes.md) 를 참조하십시오.
 
-## 패치 {#prerequisites-to-installing-the-patch}을 설치하기 위한 사전 요구 사항
+## 패치 설치 사전 요구 사항 {#prerequisites-to-installing-the-patch}
 
 * AEM 6.4 Forms
 
-## 패치 {#installing-and-configuring-the-patch} 설치 및 구성
+## 패치 설치 및 구성 {#installing-and-configuring-the-patch}
 
-1. &lt;*AEM_forms_root*/deploy 폴더의 백업을 수행합니다. 빠른 수정 사항을 제거하려는 경우 필요합니다.
+1. &lt;*AEM_forms_root*>/deploy 폴더를 만듭니다. 빠른 수정 사항을 제거하려는 경우 필요합니다.
 1. 애플리케이션 서버를 중지합니다.
-1. 패치 설치 프로그램 아카이브 파일을 하드 드라이브에 추출합니다.
-1. 사용 중인 운영 체제에 따라 이름이 지정된 디렉토리에서 다음 작업을 수행합니다.
+1. 패치 설치 관리자 아카이브 파일을 하드 드라이브에 추출합니다.
+1. 사용 중인 운영 체제에 따라 이름이 지정된 디렉터리에서 다음 작업을 수행합니다.
 
    * **Windows**
 설치 프로그램을 복사한 하드 디스크의 설치 미디어 또는 폴더로 이동한 다음 
@@ -39,8 +43,8 @@ AEM 6.4 Forms JEE 패치 설치 프로그램에는 이 패치가 릴리스될 �
 
       * (Windows 32비트) `Windows\Disk1\InstData\VM`
       * (Windows 64비트) `Windows_64Bit`\ `Disk1\InstData\VM`
-   * **Linux, Solaris,**
-AIXNavigate to the 적절한 디렉토리로 이동하고 명령 프롬프트에서 다음을 입력합니다. 
+   * **Linux, Solaris, AIX**
+해당 디렉토리로 이동하고 명령 프롬프트에서 다음을 입력합니다 
 `./aem64_cfp_install.bin`.
 
       * (Linux) `Linux/Disk1/InstData/NoVM`
@@ -53,24 +57,24 @@ AIXNavigate to the 적절한 디렉토리로 이동하고 명령 프롬프트에
    설치 과정을 안내하는 설치 마법사가 시작됩니다.
 
 1. 소개 패널에서 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
-1. 설치 폴더 선택 화면에서 표시되는 기본 위치가 기존 설치에 맞는지 확인하거나 **[!UICONTROL 찾아보기]**&#x200B;를 클릭하여 AEM Forms가 설치된 대체 폴더를 선택하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+1. 설치 폴더 선택 화면에서 표시되는 기본 위치가 기존 설치에 맞는지 확인하거나 을 클릭합니다 **[!UICONTROL 찾아보기]** AEM Forms가 설치된 대체 폴더를 선택하려면 **[!UICONTROL 다음]**.
 
 1. 빠른 수정 패치 요약 정보를 읽고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 1. 사전 설치 요약 정보를 읽고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
-1. 설치가 완료되면 **[!UICONTROL 다음]**를 클릭하여 설치된 파일에 빠른 수정 업데이트를 적용합니다.
-1. [Windows] 만 다음 단계 중 하나를 수행합니다.
+1. 설치가 완료되면 **[!UICONTROL 다음]**설치된 파일에 빠른 수정 업데이트를 적용하려면 다음을 수행하십시오.
+1. [Windows 전용] 다음 단계 중 하나를 수행합니다.
 
-   * 완료 를 클릭하기 전에 구성 관리자 시작 옵션을 선택 해제합니다. `[aem-forms root]\configurationManager\bin`에 있는 `ConfigurationManager.bat` 파일을 사용하여 나중에 구성 관리자를 실행합니다. `ConfigurationManager.bat` 을 사용하면 .lax 파일에서 axis.jar 이름의 수동으로 업데이트를 방지할 수 있습니다
-   * 완료 를 클릭하기 전에 구성 관리자 시작 옵션을 선택 해제합니다. **ConfigurationManager.exe** 또는 **ConfigurationManager_IPv6.exe**&#x200B;를 사용하여 구성 관리자를 실행하기 전에 *&lt;AEMForms_Install_Dir>\configurationManager\bin* 디렉토리로 이동하여 다음 파일에서 **axis.jar**&#x200B;을 **axis-1.4.1.jar**&#x200B;로 업데이트하십시오.
+   * 완료 를 클릭하기 전에 구성 관리자 시작 옵션을 선택 해제합니다. 를 사용하여 나중에 구성 관리자를 실행합니다. `ConfigurationManager.bat` 에 있는 파일 `[aem-forms root]\configurationManager\bin`. 사용 `ConfigurationManager.bat` .lax 파일에서 axis.jar 이름의 이름을 수동으로 업데이트하지 않도록 도와줍니다
+   * 완료 를 클릭하기 전에 구성 관리자 시작 옵션을 선택 해제합니다. 구성 관리자를 실행하기 전에 **ConfigurationManager.exe** 또는 **ConfigurationManager_IPv6.exe**, 다음 위치로 이동합니다. *&lt;aemforms_install_dir>\configurationManager\bin* 디렉토리 및 업데이트 **axis.jar** to **axis-1.4.1.jar** 다음 파일에서 다음을 수행합니다.
 
       * ConfigurationManager.lax
       * ConfigurationManager_IPv6.lax
 
 1. (Unix 기반 전용) 기본적으로 구성 관리자 시작 확인란이 선택됩니다. **[!UICONTROL 완료]**&#x200B;를 클릭하여 구성 관리자를 실행합니다.
 
-   나중에 구성 관리자를 실행하려면 완료를 클릭하기 전에 구성 관리자 시작 옵션을 선택 해제합니다. `[AEM_forms_root]/configurationManager/bin` 디렉토리에서 적절한 스크립트를 사용하여 나중에 구성 관리자를 시작할 수 있습니다.
+   나중에 구성 관리자를 실행하려면 완료를 클릭하기 전에 구성 관리자 시작 옵션을 선택 해제합니다. 에서 적절한 스크립트를 사용하여 나중에 구성 관리자를 시작할 수 있습니다 `[AEM_forms_root]/configurationManager/bin` 디렉토리.
 
-1. 애플리케이션 서버에 따라 다음 문서 중 하나를 선택하고 *AEM forms 구성 및 배포* 섹션의 지침을 따릅니다.
+1. 애플리케이션 서버에 따라 다음 문서 중 하나를 선택하고 *AEM 양식 구성 및 배포* 섹션을 참조하십시오.
 
    * [JBoss용 AEM Forms 설치 및 배포](http://www.adobe.com/go/learn_aemforms_installJBoss_64_kr)
    * [WebSphere용 AEM 양식 설치 및 배포](http://www.adobe.com/go/learn_aemforms_installWebSphere_64_kr)
@@ -97,4 +101,4 @@ AIXNavigate to the 적절한 디렉토리로 이동하고 명령 프롬프트에
 * Foundation JEE
 * PDFG 서비스
 
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
+[지원 문의](https://www.adobe.com/kr/account/sign-in.supportportal.html)

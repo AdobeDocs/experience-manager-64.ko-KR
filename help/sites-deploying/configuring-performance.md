@@ -11,22 +11,26 @@ topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 feature: Configuring
 exl-id: 06b197de-f97b-451f-8037-931c8cd754b6
-source-git-commit: 608c0fbd7eb0fc06fccf8cbcaebf874bff36d5e0
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '6649'
+source-wordcount: '6685'
 ht-degree: 14%
 
 ---
 
 # 성능 최적화 {#performance-optimization}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
->성능에 대한 일반적인 지침은 [성능 지침](/help/sites-deploying/performance-guidelines.md) 페이지를 참조하십시오.
+>성능에 대한 일반적인 지침은 [성능 지침](/help/sites-deploying/performance-guidelines.md) 페이지.
 >
->성능 문제 해결 및 수정에 대한 자세한 내용은 [성능 트리](/help/sites-deploying/performance-tree.md)를 참조하십시오.
+>성능 문제 해결 및 수정에 대한 자세한 내용은 [성능 트리](/help/sites-deploying/performance-tree.md).
 >
->또한 [성능 조정 팁에 대한 기술 자료 문서를 검토할 수 있습니다.](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
+>또한 [성능 조정 팁.](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
 
 주요 문제는 웹 사이트가 방문자 요청에 응답하는 시간입니다. 이 값은 각 요청에 대해 다르지만 평균 타겟 값을 정의할 수 있습니다. 이 값이 달성 가능하고 유지 관리할 수 있는 것으로 확인되면 웹 사이트의 성능을 모니터링하고 잠재적 문제의 개발을 나타내는 데 사용할 수 있습니다.
 
@@ -42,8 +46,8 @@ ht-degree: 14%
 
 >[!NOTE]
 >
->* 성능 최적화를 구성한 후 [Tough Day](/help/sites-developing/tough-day.md)의 절차에 따라 부하가 큰 환경에서 환경을 테스트하십시오.
->* [성능 조정 팁도 참조하십시오.](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
+>* 성능 최적화를 구성한 후 의 절차를 따르십시오. [Tough Day](/help/sites-developing/tough-day.md) 과부하 상태에서 환경을 테스트하다.
+>* 참조 - [성능 조정 팁입니다.](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
 
 
 ## 성능 최적화 방법론 {#performance-optimization-methodology}
@@ -115,7 +119,7 @@ AEM 프로젝트에 대한 성능 최적화 방법론은 처음부터 성능 문
 * 게시에서 측정됨(작성 환경과 관련된 오버헤드 없음)
 * 서버에서 측정됨(네트워크 오버헤드 없음)
 * 캐시되지 않음(AEM 출력 캐시 없음, Dispatcher 캐시 없음)
-* 많은 종속성이 있는 복잡한 항목(HTML, JS, PDF, ..)에만 해당합니다.
+* 많은 종속성(HTML, JS, PDF, ...)이 있는 복잡한 항목에 대해서만
 * 시스템에 다른 로드 없음
 
 성능 문제에 자주 기여하는 몇 가지 문제가 있습니다. 이러한 중심은 다음과 같습니다.
@@ -129,7 +133,7 @@ JVM 및 OS 레벨 튜닝은 일반적으로 성능이 크게 향상되지 않으
 
 일반적인 성능 최적화 운동 중 가장 친한 친구는 다음과 같습니다.
 
-* `request.log`
+* a `request.log`
 * 구성 요소 기반 타이밍
 * 마지막으로 java 프로파일러가 아닙니다.
 
@@ -160,7 +164,7 @@ JVM 및 OS 레벨 튜닝은 일반적으로 성능이 크게 향상되지 않으
 
 성능(또는 성능 부족)은 사용자가 가장 먼저 인식하는 사항 중 하나이며, 사용자 인터페이스가 있는 모든 애플리케이션과 마찬가지로 성능이 매우 중요합니다. AEM 설치 성능을 최적화하려면 인스턴스와 해당 동작의 다양한 특성을 모니터링해야 합니다.
 
-성능 모니터링을 수행하는 방법에 대한 자세한 내용은 [성능 모니터링](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance)을 참조하십시오.
+성능 모니터링 수행 방법에 대한 자세한 내용은 [성능 모니터링](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance).
 
 성능 문제를 일으키는 문제는 그 효과를 쉽게 볼 수 있는 경우에도 추적하기가 어려운 경우가 많습니다.
 
@@ -172,9 +176,9 @@ JVM 및 OS 레벨 튜닝은 일반적으로 성능이 크게 향상되지 않으
 
 성능도 볼륨과 용량 간의 균형입니다.
 
-**** 볼륨 시스템에서 처리 및 전달되는 출력의 양입니다.
+**볼륨** 시스템에서 처리 및 전달되는 출력의 양입니다.
 
-**** 용량: 볼륨을 전달하는 시스템의 기능입니다.
+**용량** 볼륨을 전달하는 시스템의 기능입니다.
 
 이러한 내용은 웹 체인 전체에서 다양한 위치에 표시될 수 있습니다.
 
@@ -190,12 +194,12 @@ JVM 및 OS 레벨 튜닝은 일반적으로 성능이 크게 향상되지 않으
 
 성능 최적화 시 특정 규칙을 염두에 두어야 합니다.
 
-* 성능 조정 *은(는) 모든 프로젝트에 포함되어야 합니다*.
+* 성능 조정 *반드시* 모든 프로젝트의 일부가 됩니다.
 * 개발 주기 초기에 최적화하지 마십시오.
 * 가장 약한 링크만큼 성능이 좋아요
 * 용량에 대해 항상 생각해 보십시오.
 * 중요한 사항을 먼저 최적화합니다.
-* *실제* 목표 없이는 최적화하지 마십시오.
+* 최적화하지 않음 *현실성* 목표
 
 >[!NOTE]
 >
@@ -207,7 +211,7 @@ AEM(및/또는 기본 저장소)의 특정 측면을 성능 최적화를 위해 
 
 >[!NOTE]
 >
->자세한 내용은 [KB 문서](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)를 참조하십시오.
+>자세한 내용은 [KB 문서](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
 
 ### 검색 색인 지정 {#search-indexing}
 
@@ -227,21 +231,21 @@ AEM 6.0부터 Adobe Experience Manager은 Oak 기반 저장소 아키텍처를 �
 워크플로우 엔진은 작업 항목 처리를 처리하고 예약하기 위해 Apache Sling 작업 큐를 사용합니다. 워크플로우 작업 처리를 위한 Apache Sling Job Queue Configuration 서비스 팩토리에서 기본적으로 다음 작업 큐 서비스를 만들었습니다.
 
 * Granite Workflow 큐: DAM 자산을 처리하는 워크플로우 단계와 같은 대부분의 워크플로우 단계는 Granite Workflow 큐 서비스를 사용합니다.
-* Granite Workflow 외부 프로세스 작업 큐: 이 서비스는 일반적으로 외부 시스템에 연결하고 결과를 폴링하는 데 사용되는 특별한 외부 워크플로우 단계에 사용됩니다. 예를 들어 InDesign 미디어 추출 프로세스 단계는 외부 프로세스로 구현됩니다. 워크플로우 엔진은 폴링 처리를 위해 외부 큐를 사용합니다. ( [com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html) 참조).
+* Granite Workflow 외부 프로세스 작업 큐: 이 서비스는 일반적으로 외부 시스템에 연결하고 결과를 폴링하는 데 사용되는 특별한 외부 워크플로우 단계에 사용됩니다. 예를 들어 InDesign 미디어 추출 프로세스 단계는 외부 프로세스로 구현됩니다. 워크플로우 엔진은 폴링 처리를 위해 외부 큐를 사용합니다. (자세한 내용은 [com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html))
 
 동시 실행 워크플로우 프로세스의 최대 수를 제한하도록 이러한 서비스를 구성합니다.
 
-**참고:** 이러한 작업 큐를 구성하는 것은 특정 워크플로우 모델에 대한 작업 큐를 만들지 않은 경우 모든 워크플로우에 영향을 줍니다(아래 [의 특정 워크플로우 모델에 대한 큐 구성 ](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) 참조).
+**참고:** 특정 워크플로우 모델에 대한 작업 큐를 만들지 않은 경우 이러한 작업 큐를 구성하는 것은 모든 워크플로우에 영향을 줍니다(참조 [특정 워크플로우 모델에 대한 큐 구성](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) 아래에 표시됩니다.
 
 #### 저장소의 구성 {#configuration-in-the-repo}
 
-sling:OsgiConfig 노드](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)를 사용하여 서비스 [를 구성하는 경우 기존 서비스의 PID를 찾아야 합니다. 예: org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. 웹 콘솔을 사용하여 PID를 검색할 수 있습니다.
+서비스를 구성하는 경우 [sling:OsgiConfig 노드 사용](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)를 찾으려면 기존 서비스의 PID를 찾아야 합니다. 예를 들면 다음과 같습니다. org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. 웹 콘솔을 사용하여 PID를 검색할 수 있습니다.
 
-`queue.maxparallel` 속성을 구성해야 합니다.
+이름이 지정된 속성을 구성해야 합니다 `queue.maxparallel`.
 
 #### 웹 콘솔에서 구성 {#configuration-in-the-web-console}
 
-웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)을 사용하여 이러한 서비스 [를 구성하려면 Apache Sling 작업 큐 구성 서비스 팩토리 아래에서 기존 구성 항목을 찾습니다.
+이러한 서비스를 구성하려면 [웹 콘솔 사용](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)를 찾으려면 Apache Sling Job Queue Configuration 서비스 팩토리 아래에서 기존 구성 항목을 찾습니다.
 
 최대 병렬 작업이라는 속성을 구성해야 합니다.
 
@@ -272,13 +276,13 @@ sling:OsgiConfig 노드](/help/sites-deploying/configuring-osgi.md#adding-a-new-
 
 1. 이러한 각 항목에 대해 하나의 작업 대기열을 만듭니다. 작업 큐를 만들려면 Apache Sling Job Queue Factory 서비스의 출하 시 구성을 만드십시오.
 
-   팩터리 구성은 [동시 워크플로우 처리](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing)에 설명된 Granite 워크플로우 큐와 비슷하지만, 항목 속성이 워크플로우 작업의 항목과 일치한다는 점을 제외하면 유사합니다.
+   공장 구성은 Granite Workflow Queue에 설명된 것과 유사합니다. [동시 워크플로우 처리](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing)를 제외한 항목 속성은 워크플로우 작업의 항목과 일치합니다.
 
 ### AEM DAM 자산 동기화 서비스 {#cq-dam-asset-synchronization-service}
 
-`AssetSynchronizationService`은 마운트된 저장소(LiveLink, Documentum 등)의 자산을 동기화하는 데 사용됩니다. 기본적으로 300초(5분)마다 정기적으로 점검하므로 마운트된 저장소를 사용하지 않으면 이 서비스를 비활성화할 수 있습니다.
+다음 `AssetSynchronizationService` 마운트된 저장소(LiveLink, Documentum 등)의 자산을 동기화하는 데 사용됩니다. 기본적으로 300초(5분)마다 정기적으로 점검하므로 마운트된 저장소를 사용하지 않으면 이 서비스를 비활성화할 수 있습니다.
 
-이 작업은 [OSGi 서비스](/help/sites-deploying/configuring-osgi.md) **CQ DAM 자산 동기화 서비스**&#x200B;를 구성하여 **동기화 기간**( `scheduler.period`)을 (초 단위로 정의됨) 1년으로 설정합니다.
+이 작업은 [OSGi 서비스 구성](/help/sites-deploying/configuring-osgi.md) **CQ DAM 자산 동기화 서비스** 를 **동기화 기간** ( `scheduler.period`) ~ (최소) 1년(초 단위로 정의됨).
 
 ### 여러 DAM 인스턴스 {#multiple-dam-instances}
 
@@ -296,9 +300,9 @@ sling:OsgiConfig 노드](/help/sites-deploying/configuring-osgi.md#adding-a-new-
 
 게시 환경에 가장 중요한 것은 성능 입니다. 따라서 프로젝트를 구현하는 동안 게시 환경에 대해 수행할 성능 테스트를 신중하게 계획 및 분석해야 합니다.
 
-이 섹션에서는 *publish* 환경의 성능 테스트를 위해 특별히 테스트 개념을 정의하는 것과 관련된 문제에 대한 표준화된 개요를 제공하는 것을 목표로 합니다. QA 엔지니어, 프로젝트 관리자 및 시스템 관리자에게 주로 관심이 있습니다.
+이 섹션에서는 사용자의 성능 테스트를 위해 특별히 테스트 개념을 정의하는 것과 관련된 문제에 대해 표준화된 개요를 제공하는 것을 목표로 합니다 *게시* 환경. QA 엔지니어, 프로젝트 관리자 및 시스템 관리자에게 주로 관심이 있습니다.
 
-다음은 *Publish* 환경에서 AEM 애플리케이션의 성능 테스트에 대한 표준화된 접근 방식을 다룹니다. 여기에는 다음 5단계가 포함됩니다.
+다음은 AEM 응용 프로그램의 성능 테스트에 대한 표준화된 접근 방식을 *게시* 환경. 여기에는 다음 5단계가 포함됩니다.
 
 * [지식 확인](#verification-of-knowledge)
 * [범위 정의](#scope-definition)
@@ -354,7 +358,7 @@ sling:OsgiConfig 노드](/help/sites-deploying/configuring-osgi.md#adding-a-new-
 
 * 단일 구성 요소 테스트
 * 결합된 구성 요소 테스트
-* *Go* Livescenario
+* *Go Live* 시나리오
 * 오류 시나리오
 
 다음 원칙을 기반으로 합니다.
@@ -385,41 +389,41 @@ sling:OsgiConfig 노드](/help/sites-deploying/configuring-osgi.md#adding-a-new-
 
 두 경우 모두 사전 정의된 사용자 수가 시스템을 사용하는 경우 초당 예상 트랜잭션 수를 정의할 수 있습니다.
 
-| 구성 요소 | 테스트 유형 | 아니오. 사용자 수 | Tx/초(예상함) | Tx/초(테스트됨) | 설명 |
+| 구성 요소 | 테스트 유형 | 아니요. 사용자 수 | Tx/초(예상함) | Tx/초(테스트됨) | 설명 |
 |---|---|---|---|---|---|
 | 홈페이지 단일 사용자 | 평균 | 1 | 1 |  |  |
 |  | 피크 | 1 | 3 |  |  |
-| 홈 페이지 100명의 사용자 | 평균 | 100 | 1 |  |  |
-|  | 피크 | 100년 | 1 |  |
+| 홈 페이지 100명의 사용자 | 평균 | 100 | 3 |  |  |
+|  | 피크 | 100 | 3 |  |
 
 #### 결합된 구성 요소 테스트 {#combined-component-tests}
 
 구성 요소를 조합하여 테스트하면 애플리케이션 동작이 더 잘 반영됩니다. 다시 평균과 최고 상태를 테스트해야 합니다.
 
-| 시나리오 | 구성 요소 | 아니오. 사용자 수 | Tx/초(예상함) | Tx/초(테스트됨) | 설명 |
+| 시나리오 | 구성 요소 | 아니요. 사용자 수 | Tx/초(예상함) | Tx/초(테스트됨) | 설명 |
 |---|---|---|---|---|---|
 | 혼합 평균 | 홈 페이지 | 10 | 1 |  |  |
 |  | 검색 | 10 | 1 |  |  |
 |  | 뉴스 | 10 | 2 |  |  |
 |  | 이벤트 | 10 | 1 |  |  |
-|  | 활성화 | 10 | 1 |  | 작성 동작 시뮬레이션. |
-| 혼합 피크 | 홈 페이지 | 100년 | 5 |  |  |
-|  | 검색 | 50 | 5개 |  |  |
-|  | 뉴스 | 100년 | 10 |  |  |
-|  | 이벤트 | 100년 | 10 |  |  |
-|  | 활성화 | 20 | 20년 |  | 작성 동작 시뮬레이션. |
+|  | 활성화 | 10 | 3 |  | 작성 동작 시뮬레이션. |
+| 혼합 피크 | 홈 페이지 | 100 | 5 |  |  |
+|  | 검색 | 50 | 5 |  |  |
+|  | 뉴스 | 100 | 10 |  |  |
+|  | 이벤트 | 100 | 10 |  |  |
+|  | 활성화 | 20 | 20 |  | 작성 동작 시뮬레이션. |
 
 #### 라이브 테스트 진행 {#going-live-tests}
 
 웹 사이트를 방문한 후 처음 며칠간은 관심 수준이 높아질 것입니다. 이것은 테스트한 최대값보다 더 클 수 있습니다. 시스템이 이 상황을 처리할 수 있도록 Go Live 시나리오를 테스트하는 것이 좋습니다.
 
-| 시나리오 | 테스트 유형 | 아니오. 사용자 수 | Tx/초(예상함) | Tx/초(테스트됨) | 설명 |
+| 시나리오 | 테스트 유형 | 아니요. 사용자 수 | Tx/초(예상함) | Tx/초(테스트됨) | 설명 |
 |---|---|---|---|---|---|
-| Go Live peak | 홈 페이지 | 200 | 20년 |  |  |
-|  | 검색 | 100년 | 10 |  |  |
-|  | 뉴스 | 200년 | 20년 |  |  |
-|  | 이벤트 | 200년 | 20년 |  |  |
-|  | 활성화 | 20년 | 20년 |  | 작성 동작 시뮬레이션. |
+| Go Live peak | 홈 페이지 | 200 | 20 |  |  |
+|  | 검색 | 100 | 10 |  |  |
+|  | 뉴스 | 200 | 20 |  |  |
+|  | 이벤트 | 200 | 20 |  |  |
+|  | 활성화 | 20 | 20 |  | 작성 동작 시뮬레이션. |
 
 #### 오류 시나리오 테스트 {#error-scenario-tests}
 
@@ -430,10 +434,10 @@ sling:OsgiConfig 노드](/help/sites-deploying/configuring-osgi.md#adding-a-new-
 
 이 시험들을 고안할 때, 모든 시나리오가 규칙적으로 일어나는 것은 아니라는 것을 기억해야만 한다. 그러나 이들이 전체 시스템에 미치는 영향은 중요하다.
 
-| 오류 시나리오 | 오류 유형 | 아니오. 사용자 수 | Tx/초(예상함) | Tx/초(테스트됨) | 설명 |
+| 오류 시나리오 | 오류 유형 | 아니요. 사용자 수 | Tx/초(예상함) | Tx/초(테스트됨) | 설명 |
 |---|---|---|---|---|---|
-| 검색 구성 요소 오버로드 | 전역 와일드카드(별표) 검색 | 10 | 1 |  | &amp;ast;&amp;ast;&amp;ast; 검색됩니다. |
-|  | 중지 단어 | 20년 | 2개 |  | 정지 단어를 검색하는 중입니다. |
+| 검색 구성 요소 오버로드 | 전역 와일드카드(별표) 검색 | 10 | 1 |  | &amp;ast;&amp;ast;&amp;ast;만 해당 검색됩니다. |
+|  | 중지 단어 | 20 | 2 |  | 정지 단어를 검색하는 중입니다. |
 |  | 빈 문자열 | 10 | 1 |  | 빈 문자열을 검색합니다. |
 |  | 특수 문자 | 10 | 1 |  | 특수 문자를 검색하는 중입니다. |
 
@@ -441,13 +445,13 @@ sling:OsgiConfig 노드](/help/sites-deploying/configuring-osgi.md#adding-a-new-
 
 특정 문제는 시스템이 지속적으로 실행된 후에만 발생합니다. 그것은 몇 시간 혹은 심지어 며칠이다. 지구력 테스트는 필요한 기간 동안 일정한 평균 부하를 테스트하는 데 사용됩니다. 그런 다음 성능 저하를 분석할 수 있습니다.
 
-| 시나리오 | 테스트 유형 | 아니오. 사용자 수 | Tx/초(예상함) | Tx/초(테스트됨) | 설명 |
+| 시나리오 | 테스트 유형 | 아니요. 사용자 수 | Tx/초(예상함) | Tx/초(테스트됨) | 설명 |
 |---|---|---|---|---|---|
 | 지구력 테스트(72시간) | 홈 페이지 | 10 | 1 |  |  |
 |  | 검색 | 10 | 1 |  |  |
-|  | 뉴스 | 20년 | 2개 |  |  |
+|  | 뉴스 | 20 | 2 |  |  |
 |  | 이벤트 | 10 | 1 |  |  |
-|  | 활성화 | 1 | 1 |  | 작성 동작 시뮬레이션. |
+|  | 활성화 | 1 | 3 |  | 작성 동작 시뮬레이션. |
 
 ### 최적화 {#optimization}
 
@@ -462,10 +466,10 @@ sling:OsgiConfig 노드](/help/sites-deploying/configuring-osgi.md#adding-a-new-
 
 * [JMeter](https://jakarta.apache.org/jmeter/)
 * [로드 런너](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
-* [](https://www.determyne.com/) DetermineInsideApps
+* [결정](https://www.determyne.com/) InsideApps
 * [InfraRED](https://www.infraredsoftware.com/)
 * [Java 대화형 프로필](https://jiprof.sourceforge.net/)
-* 더 많음...
+* 더 많은..
 
 최적화 후 다시 테스트하여 영향을 확인해야 합니다.
 
@@ -482,7 +486,7 @@ sling:OsgiConfig 노드](/help/sites-deploying/configuring-osgi.md#adding-a-new-
 
 ## Dispatcher 사용 시 성능 최적화 {#optimizing-performance-when-using-the-dispatcher}
 
-[Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)는 Adobe의 캐싱 및/또는 로드 밸런싱 도구입니다. Dispatcher를 사용하는 경우 캐시 성능을 위해 웹 사이트를 최적화하는 것을 고려해야 합니다.
+다음 [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) Adobe의 캐싱 및/또는 로드 밸런싱 도구입니다. Dispatcher를 사용하는 경우 캐시 성능을 위해 웹 사이트를 최적화하는 것을 고려해야 합니다.
 
 >[!NOTE]
 >
@@ -498,27 +502,26 @@ Dispatcher는 웹 사이트에서 이를 활용하는 경우 성능을 최적화
 >
 >* 페이지로 저장하고 URL을 사용하여 요청할 수 있는 모든 것을 캐싱할 수 있습니다
 >* 쿠키, 세션 데이터 및 양식 데이터와 같은 다른 항목은 저장할 수 없습니다.
-
 >
 >일반적으로, 좋은 URL을 선택하고 이 추가 데이터에 의존하지 않는 것이 많은 캐싱 전략에 포함됩니다.
 >
->Dispatcher 버전 4.1.11에서는 응답 헤더를 캐싱할 수도 있습니다. [HTTP 응답 헤더 캐싱](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache) 을 참조하십시오.
+>Dispatcher 버전 4.1.11을 사용하면 응답 헤더를 캐싱할 수도 있습니다. 자세한 내용은 [HTTP 응답 헤더 캐싱](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
 
 ### 디스패처 캐시 비율 계산 {#calculating-the-dispatcher-cache-ratio}
 
 캐시 비율 수식은 시스템으로 들어오는 총 요청 수 중 캐시에서 처리한 요청의 비율을 예측합니다. 캐시 비율을 계산하려면 다음 항목이 필요합니다.
 
-* 총 요청 수입니다. 이 정보는 Apache `access.log`에서 확인할 수 있습니다. 자세한 내용은 [공식 Apache 설명서](https://httpd.apache.org/docs/2.4/logs.html#accesslog)를 참조하십시오.
+* 총 요청 수입니다. 이 정보는 Apache에서 확인할 수 있습니다 `access.log`. 자세한 내용은 [공식 Apache 설명서](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
-* 제공된 게시 인스턴스의 요청 수입니다. 이 정보는 인스턴스의 `request.log`에서 확인할 수 있습니다. 자세한 내용은 [request.log](/help/sites-deploying/monitoring-and-maintaining.md#interpreting-the-request-log) 및 [로그 파일 찾기](/help/sites-deploying/monitoring-and-maintaining.md#finding-the-log-files)를 참조하십시오.
+* 제공된 게시 인스턴스의 요청 수입니다. 이 정보는 `request.log` 섹션에 있는 마지막 항목이 될 필요가 없습니다. 자세한 내용은 [request.log 해석](/help/sites-deploying/monitoring-and-maintaining.md#interpreting-the-request-log) 및 [로그 파일 찾기](/help/sites-deploying/monitoring-and-maintaining.md#finding-the-log-files).
 
 캐시 비율을 계산하는 공식은 다음과 같습니다.
 
-* (총 요청 수 **게시에서 요청 수를 뺀**) **나누어서**&#x200B;총 요청 수로 계산합니다.
+* (총 요청 수 **빼기** 게시할 때의 요청 수) **나누기** 총 요청 수에 따라 다릅니다.
 
 예를 들어 총 요청 수가 129491이고 게시 인스턴스에서 제공하는 요청 수가 58959인 경우 캐시 비율은 다음과 같습니다. **(129491 - 58959)/129491= 54.5%**.
 
-한 대 하나의 게시자/디스패처 쌍이 없는 경우 정확한 측정을 위해 모든 디스패처 및 게시자의 요청을 함께 추가해야 합니다. [권장 배포](/help/sites-deploying/recommended-deploys.md)도 참조하십시오.
+한 대 하나의 게시자/디스패처 쌍이 없는 경우 정확한 측정을 위해 모든 디스패처 및 게시자의 요청을 함께 추가해야 합니다. 참조 - [권장 배포](/help/sites-deploying/recommended-deploys.md).
 
 >[!NOTE]
 >
@@ -551,7 +554,7 @@ www.myCompany.com/pictures/gallery.christmas.1.html
 
 >[!NOTE]
 >
->이 URL은 동일한 페이지를 호출하고 `gallery.html`과 동일한 템플릿을 호출합니다. 템플릿 정의에서 페이지를 렌더링하는 스크립트를 지정하거나 모든 페이지에 대해 동일한 스크립트를 사용할 수 있습니다.
+>이 URL은 와 동일한 페이지 및 동일한 템플릿을 호출합니다 `gallery.html`. 템플릿 정의에서 페이지를 렌더링하는 스크립트를 지정하거나 모든 페이지에 대해 동일한 스크립트를 사용할 수 있습니다.
 
 #### URL로 사용자 지정 {#customize-by-url}
 
@@ -569,7 +572,7 @@ www.myCompany.com/news/main.large.html
 >
 >대부분의 레이아웃 측면에서 스타일 시트 및/또는 클라이언트측 스크립트를 사용하는 것도 가능합니다. 일반적으로 캐싱과 매우 잘 작동합니다.
 >
->다음과 같은 URL을 사용할 수 있는 인쇄 버전에도 유용합니다.
+>이는 다음과 같은 URL을 사용할 수 있는 인쇄 버전에도 유용합니다.
 >
 >`www.myCompany.com/news/main.print.html`
 >
@@ -584,7 +587,7 @@ www.myCompany.com/news/main.large.html
 
    `<page file name>.<image file name>`
 
-예를 들어 페이지 제목을 `myPage.title.gif` 파일에 저장할 수 있습니다. 이 파일은 페이지가 업데이트되면 자동으로 삭제되므로 페이지 제목이 변경되면 캐시에 자동으로 반영됩니다.
+예를 들어 페이지의 제목을 파일에 저장할 수 있습니다 `myPage.title.gif`. 이 파일은 페이지가 업데이트되면 자동으로 삭제되므로 페이지 제목이 변경되면 캐시에 자동으로 반영됩니다.
 
 >[!NOTE]
 >
@@ -611,19 +614,19 @@ www.myCompany.com/news/main.large.html
 
 >[!TIP]
 >
->Dispatcher 캐시 구성에 대한 자세한 내용은 [AEM Dispatcher 캐시 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html) 및 [보호된 콘텐츠 캐싱 섹션을 참조하십시오.](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html#dispatcher-tips-and-tricks)
+>Dispatcher 캐시 구성에 대한 자세한 내용은 [AEM Dispatcher 캐시 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html) 그리고 [보호된 콘텐츠를 캐시합니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html#dispatcher-tips-and-tricks)
 
 각 페이지를 개인화하는 경우(예: 제목 표시줄에 사용자 이름을 넣는 경우) 성능에 영향을 줄 수 있습니다.
 
 >[!TIP]
 >
->보안 콘텐츠를 캐시하는 방법은 Dispatcher 안내서에서 [보안 콘텐츠 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html)을 참조하십시오.
+>보안 콘텐츠를 캐시하려면 다음을 참조하십시오. [보안 콘텐츠 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ko-KR) 을 참조하십시오.
 
 한 페이지에서 제한적 컨텐츠와 공개 컨텐츠를 혼합하는 것과 관련하여 Dispatcher에서 서버 측 include를 활용하는 전략이나 브라우저에서 Ajax를 통해 클라이언트 측에서 포함하는 전략을 고려해볼 수 있습니다.
 
 >[!TIP]
 >
->혼합 공개 및 제한된 컨텐츠를 처리하려면 [Sling Dynamic Include 설정을 참조하십시오.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html)
+>혼합 공개 및 제한된 컨텐츠 처리에 대해서는 [Sling Dynamic Include를 설정합니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html)
 
 #### 고정 연결 {#sticky-connections}
 
@@ -633,12 +636,12 @@ www.myCompany.com/news/main.large.html
 
 브라우저가 파일 유형을 결정할 수 있는 두 가지 방법이 있습니다.
 
-1. 확장 프로그램(예: `.html`, `.gif`, `.jpg` 등)
+1. 확장 프로그램(예: `.html`, `.gif`, `.jpg`등)
 1. 서버가 파일과 함께 보내는 MIME 형식별
 
 대부분의 파일에서 MIME 유형은 파일 확장명에 암시되어 있습니다. 즉,
 
-1. 확장 프로그램(예: `.html`, `.gif`, `.jpg` 등)
+1. 확장 프로그램(예: `.html`, `.gif`, `.jpg`등)
 1. 서버가 파일과 함께 보내는 MIME 형식별
 
 파일 이름에 확장명이 없으면 일반 텍스트로 표시됩니다.
@@ -648,7 +651,7 @@ Dispatcher 버전 4.1.11을 사용하면 응답 헤더를 캐싱할 수 있습�
 파일이 제대로 캐시되었는지 확인하려면 다음 지침을 따르십시오.
 
 * 파일의 확장명이 항상 적절한지 확인하십시오.
-* `download.jsp?file=2214` 과 같은 URL이 있는 일반 파일 서버 스크립트는 피하십시오. 파일 사양을 포함하는 URL을 사용하도록 스크립트를 다시 작성합니다. 이전 예제의 경우 이 값은 `download.2214.pdf`입니다.
+* 다음과 같은 URL이 있는 일반 파일 서버 스크립트를 사용하지 마십시오 `download.jsp?file=2214`. 파일 사양을 포함하는 URL을 사용하도록 스크립트를 다시 작성합니다. 이전 예제의 경우 다음과 같습니다. `download.2214.pdf`.
 
 ## 백업 성능 {#backup-performance}
 
@@ -675,9 +678,9 @@ AEM 구성에서는 모든 운영 체제와 AEM 소프트웨어와 함께 저장
 
 다음 표는 백업 벤치마크에서 사용되는 데이터 볼륨의 크기를 보여 줍니다. 초기 기준 컨텐츠를 먼저 설치한 다음 알려진 추가 데이터 양이 추가되어 백업된 컨텐츠의 크기를 늘립니다. 특정 증분으로 백업이 작성되어 컨텐츠가 크게 증가하며 하루 단위로 생성될 수 있습니다. 컨텐츠(페이지, 이미지, 태그)의 배포는 실제 프로덕션 자산 구성을 기반으로 대략적으로 달라집니다. 페이지, 이미지 및 태그는 최대 800개의 하위 페이지로 제한됩니다. 각 페이지에는 제목, Flash, 텍스트/이미지, 비디오, 슬라이드쇼, 양식, 테이블, 클라우드 및 회전 메뉴 구성 요소가 포함됩니다. 이미지는 37kB에서 594kB에 이르는 400개의 고유 파일 풀에서 업로드됩니다.
 
-| 컨텐트 | 노드 | 페이지 | 이미지 | 태그 |
+| 콘텐츠 | 노드 | 페이지 | 이미지 | 태그 |
 |---|---|---|---|---|
-| 기본 설치 | 69 610 | 562년 | 256년 | 237년 |
+| 기본 설치 | 69 610 | 562 | 256 | 237 |
 | 증분 백업을 위한 작은 컨텐츠 |  | +100 | +2 | +2 |
 | 전체 백업을 위한 대용량 컨텐츠 |  | +10 000 | +100 | +100 |
 
@@ -687,8 +690,8 @@ AEM 구성에서는 모든 운영 체제와 AEM 소프트웨어와 함께 저장
 
 백업 벤치마크는 다음 두 가지 주요 시나리오를 다룹니다. 시스템이 상당한 응용 프로그램을 로드하고 시스템이 유휴 상태일 때 백업을 수행합니다. 일반적으로 AEM이 유휴 상태일 때 백업을 수행해야 하지만 시스템이 로드될 때 백업을 실행해야 하는 경우가 있습니다.
 
-* **유휴** 상태 백업은 AEM에서 다른 작업 없이 수행됩니다.
-* **LoadBackups** 에서 시스템은 온라인 프로세스에서 80% 로드되는 동안 수행됩니다. 로드 영향을 보기 위해 백업 지연이 변경되었습니다.
+* **유휴 상태** 백업은 AEM에서 다른 작업 없이 수행됩니다.
+* **로드 중** 시스템이 온라인 프로세스에서 80% 로드되는 동안 백업이 수행됩니다. 로드 영향을 보기 위해 백업 지연이 변경되었습니다.
 
 결과 백업의 백업 시간과 크기는 AEM 서버 로그에서 가져옵니다. 일반적으로 AEM이 유휴 상태일 때(예: 한밤중에)로 백업을 예약하는 것이 좋습니다. 이 시나리오는 권장 접근 방식을 나타냅니다.
 
@@ -696,8 +699,8 @@ AEM 구성에서는 모든 운영 체제와 AEM 소프트웨어와 함께 저장
 
 이 응용 프로그램을 로드하지 않은 성능과 성능 간의 차이로 인해 백업 성능에 대한 로드 영향을 예측할 수 있습니다. 백업 처리량이 애플리케이션 처리량에 미치는 영향을 찾기 위해서는 시간당 트랜잭션의 시나리오 처리량과 동시 백업이 진행 중인 백업 및 다른 &quot;백업 지연&quot; 설정으로 작동하는 백업 데이터를 비교해야 합니다.
 
-* **지연** 설정여러 시나리오의 경우 10ms(기본값), 1ms 및 0ms 값을 사용하여 백업 지연 설정을 변경하여 이 설정이 백업 성능에 어떤 영향을 주는지 살펴봅니다.
-* **백업** 유형tar 명령이 직접 사용된 경우를 제외하고, 모든 백업은 zip을 만들지 않고 백업 디렉터리에 수행된 저장소의 외부 백업입니다. 증분 백업을 zip 파일로 작성할 수 없거나 이전 전체 백업이 zip 파일인 경우 백업 디렉토리 방법이 프로덕션 환경에서 가장 많이 사용됩니다.
+* **지연 설정** 몇 가지 시나리오에서는 10ms(기본값), 1ms 및 0ms 값을 사용하여 백업 지연 설정을 변경하여 이 설정이 백업 성능에 어떤 영향을 주는지 살펴봅니다.
+* **백업 유형** tar 명령이 직접 사용된 경우를 제외하고, 모든 백업은 zip을 만들지 않고 백업 디렉터리로 작성된 저장소의 외부 백업입니다. 증분 백업을 zip 파일로 작성할 수 없거나 이전 전체 백업이 zip 파일인 경우 백업 디렉토리 방법이 프로덕션 환경에서 가장 많이 사용됩니다.
 
 ### 결과 요약 {#summary-of-results}
 

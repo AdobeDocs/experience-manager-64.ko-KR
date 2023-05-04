@@ -1,24 +1,28 @@
 ---
 title: 업그레이드 후 제거된 오래된 번들 목록
-seo-title: 업그레이드 후 제거된 오래된 번들 목록
+seo-title: List of Obsolete Bundles Uninstalled After the Upgrade
 description: AEM 6.3으로 업그레이드할 때 자동으로 제거된 번들을 설명하는 목록입니다.
-seo-description: AEM 6.3으로 업그레이드할 때 자동으로 제거된 번들을 설명하는 목록입니다.
+seo-description: A list detailing the bundles that are automatically uninstalled when upgrading to AEM 6.3.
 uuid: b015e857-31c1-4982-b71c-f3201b49ec8e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 797a6f3b-d2a8-4835-81ab-a1602677417f
-feature: 업그레이드
+feature: Upgrading
 exl-id: 0f075a01-f286-4e16-9061-4e902c553eb9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 2%
+source-wordcount: '203'
+ht-degree: 3%
 
 ---
 
-# 업그레이드{#list-of-obsolete-bundles-uninstalled-after-the-upgrade} 이후에 제거된 오래된 번들 목록
+# 업그레이드 후 제거된 오래된 번들 목록{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >

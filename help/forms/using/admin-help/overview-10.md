@@ -1,8 +1,8 @@
 ---
 title: 작업 공간 개요
-seo-title: 작업 공간 개요
+seo-title: Overview of Workspace
 description: 작업 공간을 통해 사용자가 비즈니스 프로세스를 시작, 참여 및 추적할 수 있습니다. 작업 공간에 대해 자세히 알아봅니다.
-seo-description: 작업 공간을 통해 사용자가 비즈니스 프로세스를 시작, 참여 및 추적할 수 있습니다. 작업 공간에 대해 자세히 알아봅니다.
+seo-description: The workspace lets users start, participate in, and track business processes. Let us learn more about the workspace.
 uuid: 25374641-a70b-485a-8d34-5d7b156c08e8
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2d6f90bb-62f7-4805-9250-1b913fe7d2b3
 exl-id: f33f9ef9-95a7-47cb-8d13-19f24f1b463e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 0%
+source-wordcount: '162'
+ht-degree: 4%
 
 ---
 
 # 작업 공간 개요 {#overview-of-workspace}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 Workspace를 사용하면 비즈니스 프로세스를 시작, 참여 및 추적할 수 있습니다.
 

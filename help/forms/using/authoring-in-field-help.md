@@ -1,22 +1,26 @@
 ---
 title: 양식 필드에 대한 컨텍스트 내 도움말 작성
-seo-title: 양식 필드에 대한 컨텍스트 내 도움말 작성
-description: 'AEM Forms에서는 비디오를 포함한 텍스트 또는 리치 미디어로 적응형 양식 필드 및 패널에 컨텍스트 내 도움말을 추가할 수 있습니다. '
-seo-description: 'AEM Forms에서는 비디오를 포함한 텍스트 또는 리치 미디어로 적응형 양식 필드 및 패널에 컨텍스트 내 도움말을 추가할 수 있습니다. '
+seo-title: Authoring in-context help for form fields
+description: AEM Forms에서는 비디오를 포함한 텍스트 또는 리치 미디어로 적응형 양식 필드 및 패널에 컨텍스트 내 도움말을 추가할 수 있습니다.
+seo-description: AEM Forms allows you to add in-context help to adaptive form fields and panels, as text or rich media, including videos.
 uuid: 07427ddd-9d35-41f6-a807-0e418aade199
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 893a72c7-d68f-464f-9765-ec2272189e58
-feature: 적응형 양식
+feature: Adaptive Forms
 exl-id: 0c761c0c-fbe4-4129-8a90-c4ef1127a762
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 1%
+source-wordcount: '402'
+ht-degree: 3%
 
 ---
 
 # 양식 필드에 대한 컨텍스트 내 도움말 작성 {#authoring-in-context-help-for-form-fields}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ## 소개 {#introduction}
 
@@ -24,7 +28,7 @@ ht-degree: 1%
 
 이 문서에서는 양식 작성자가 적응형 Forms을 작성하는 동안 컨텍스트 내 도움말을 추가하는 방법에 대해 설명합니다.
 
-## 컨텍스트 내 도움말 {#add-in-context-help} 추가
+## 컨텍스트 내 도움말 추가 {#add-in-context-help}
 
 사이드바의 속성 탭에 있는 도움말 컨텐츠 섹션에서 다음 옵션을 사용하여 컨텍스트 내 도움말을 지정할 수 있습니다.
 
@@ -45,7 +49,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->**항상 짧은 설명 표시**&#x200B;를 선택하여 필드 아래에 도움말 텍스트를 영구적으로 표시합니다.
+>선택 **항상 짧은 설명 표시** 을 클릭하여 필드 아래에 도움말 텍스트를 영구적으로 표시합니다.
 
 ![필드 아래에 영구적인 간단한 컨텍스트 내 도움말](assets/short1.png)
 
@@ -55,7 +59,7 @@ ht-degree: 1%
 
 ![양식 필드에 대한 컨텍스트 내 도움말로 리치 미디어 추가](assets/long-descriptions.png)
 
-긴 설명을 추가하면 **?가 표시됩니다.** 아이콘 을 클릭하여 제품에서 사용할 수 있습니다. 아이콘을 클릭하면 긴 설명 섹션에 추가된 컨텐츠가 표시됩니다.
+긴 설명을 추가하면 **?** 아이콘 을 클릭하여 제품에서 사용할 수 있습니다. 아이콘을 클릭하면 긴 설명 섹션에 추가된 컨텐츠가 표시됩니다.
 
 ![리치 미디어 in-context 도움말 예](assets/photoshop.png)
 
@@ -65,6 +69,6 @@ ht-degree: 1%
 
 ![양식 패널에 대한 컨텍스트 내 도움말 추가](assets/panel-level-help.png)
 
-패널에 대한 도움말을 추가하면 **이 표시됩니까?** 아이콘 위로 이동합니다. 아이콘을 클릭하면 패널 편집 대화 상자의 도움말 컨텐츠 섹션에 추가된 컨텐츠가 표시됩니다.
+패널에 대한 도움말 추가 는 **?** 아이콘 위로 이동합니다. 아이콘을 클릭하면 패널 편집 대화 상자의 도움말 컨텐츠 섹션에 추가된 컨텐츠가 표시됩니다.
 
 ![양식 패널 수준의 컨텍스트 내 도움말 예](assets/photoshop-1.png)

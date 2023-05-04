@@ -10,14 +10,18 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 exl-id: ba65e853-d69a-4341-93c3-5628c60c403b
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 9%
+source-wordcount: '1109'
+ht-degree: 7%
 
 ---
 
 # 알려진 문제 {#known-issues}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 이 페이지에서는 2018년 4월에 릴리스된 Adobe Experience Manager 6.4의 알려진 문제 목록을 유지합니다. 알려진 문제에 대한 자세한 내용은 [연락처 지원](https://helpx.adobe.com/kr/support/experience-manager.html).
 
@@ -46,7 +50,7 @@ Microsoft Edge를 브라우저로 사용하는 경우:
 * 선택 **[!UICONTROL 항상 해제]**.
 * 브라우저를 다시 시작합니다.
 
-## 플랫폼 {#platform}
+## Platform {#platform}
 
 * **작업 대시보드:** 백업 파일에 .zip 확장명이 없으면 진행률 표시줄이 표시되지 않습니다. (GRANITE-10713)
 * **HTL:** 패키지 선언에서 후행 공백이 있는 Java Use 개체가 SightlyJavaCompilerService를 중지합니다(GRANITE-20836)

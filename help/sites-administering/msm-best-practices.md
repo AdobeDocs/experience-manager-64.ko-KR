@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
 feature: Multi Site Manager
 exl-id: f23a1c62-0191-4b5b-90be-d66d51e38f83
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1522'
+source-wordcount: '1558'
 ht-degree: 41%
 
 ---
 
 # MSM 모범 사례{#msm-best-practices}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ## 일반 {#general}
 
@@ -45,7 +49,7 @@ MSM은 콘텐츠 배포 자동화를 위한 구성 가능 프레임워크입니�
 >를 사용할 수도 있습니다 [참조 구성 요소](/help/sites-authoring/default-components-foundation.md#reference) 단일 페이지 또는 단락을 다시 사용하려면 다음을 수행하십시오. 그러나 다음 사항에 주의하십시오.
 >
 >* MSM은 보다 유연하며, 동기화 내용과 시기를 미세 제어할 수 있습니다.
->* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 이제 기초 구성 요소보다 권장 됩니다.
+>* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 이제 기초 구성 요소보다 권장 됩니다.
 >
 
 
@@ -201,7 +205,7 @@ MSM 롤아웃 구성은 맞춤화가 매우 용이합니다. 롤아웃을 자동
 
 이 페이지와 다음 페이지에서는 관련 문제를 다룹니다.
 
-* [라이브 카피 생성 및 동기화](/help/sites-administering/msm-livecopy.md)
-* [라이브 카피 개요 콘솔](/help/sites-administering/msm-livecopy-overview.md)
+* [Live Copy 생성 및 동기화](/help/sites-administering/msm-livecopy.md)
+* [Live Copy 개요 콘솔](/help/sites-administering/msm-livecopy-overview.md)
 * [라이브 카피 동기화 구성](/help/sites-administering/msm-sync.md)
 * [MSM 롤아웃 충돌](/help/sites-administering/msm-rollout-conflicts.md)

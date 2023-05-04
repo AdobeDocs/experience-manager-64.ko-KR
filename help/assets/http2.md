@@ -12,16 +12,20 @@ discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 exl-id: 59cd9f8c-6d01-448d-bf57-bdc9fd2e381b
 feature: Asset Management
 role: Admin,User
-source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 3%
+source-wordcount: '741'
+ht-degree: 4%
 
 ---
 
 # 컨텐츠의 HTTP2 전달 {#http-delivery-of-content}
 
-Adobe에서는 전반적인 성능이 개선된 HTTP/2 컨텐츠 제공을 발표하게 되었습니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+Adobe에서는 전반적인 성능이 개선된 HTTP/2 콘텐츠 제공을 발표하게 되었습니다.
 
 ## HTTP/2란? {#what-is-http}
 
@@ -60,7 +64,7 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 
 HTTP/2로 전환하는 요청을 시작해야 합니다. 자동으로 수행되지 않습니다.
 
-1. HTTP2로 전환하려면 기술 지원 요청을 시작합니다. [고객 지원 포털에 액세스](https://helpx.adobe.com/kr/experience-manager/kb/accessing-aem-support-portal.html)를 참조하십시오.
+1. HTTP2로 전환하려면 기술 지원 요청을 시작합니다. 자세한 내용은 [고객 지원 포털 액세스](https://helpx.adobe.com/kr/experience-manager/kb/accessing-aem-support-portal.html).
 
    1. 지원 요청에서 다음 정보를 제공합니다.
 

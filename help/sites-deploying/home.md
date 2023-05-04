@@ -4,14 +4,18 @@ seo-title: AEM 6.4 Deploying User Guide
 description: 이 안내서에서는 AEM 설치 및 배포와 같은 모든 AEM 배포 작업을 다룹니다.
 seo-description: Covers all AEM Deploying tasks, such as installing and deploying AEM.
 exl-id: ff85787a-1203-4620-bf14-1b09893c3be8
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 99%
+source-wordcount: '348'
+ht-degree: 89%
 
 ---
 
 # AEM 6.4 배포 사용 안내서
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 이 안내서에서는 AEM 설치 및 배포와 같은 모든 AEM 배포 작업을 다룹니다.
 

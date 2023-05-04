@@ -4,15 +4,19 @@ description: Creative Cloud 애플리케이션용 Adobe Asset Link 확장에서 
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
-source-git-commit: 227b929c7eecb4fa65f5c50fffc5d9ed802411e1
+exl-id: 6d9a954f-433d-41ec-9bb9-45e857890aba
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3135'
+source-wordcount: '3171'
 ht-degree: 1%
 
 ---
 
-
 # Adobe 자산 링크에 대한 Experience Manager Assets 구성 {#adobe-asset-link}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 [AAL(Adobe 자산 링크)](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html) 는 컨텐츠 작성 프로세스에서 광고 팀과 마케터 간의 협업을 간소화합니다. Adobe Experience Manager Assets와 Creative Cloud 데스크탑 앱 Adobe InDesign, Adobe Photoshop 및 Adobe Illustrator을 연결합니다. 광고 팀은 Adobe 자산 링크 패널을 통해 친숙한 크리에이티브 앱을 종료하지 않고도 AEM Assets에 저장된 컨텐츠에 액세스하고 수정할 수 있습니다.
 
@@ -291,12 +295,7 @@ Adobe 자산 링크를 구성하거나 사용할 때 문제가 발생하는 경�
 
 >[!MORELIKETHIS]
 >
->* [Adobe Asset Link에 대하여](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [Adobe Asset Link에 대하여](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)
 >* [Creative Cloud 데스크탑 앱에서 Asset Link 사용 및 자산 관리](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html)
->* [Adobe Experience Manager 자산 구성 as a Cloud Service](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
-
-
-
-
-
+>* [Adobe Experience Manager 자산 구성 as a Cloud Service](https://helpx.adobe.com/kr/enterprise/using/configure-aem-assets-for-asset-link.html).
 

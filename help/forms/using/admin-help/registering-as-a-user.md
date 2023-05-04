@@ -1,23 +1,27 @@
 ---
 title: 사용자로 등록
-seo-title: 사용자로 등록
+seo-title: Registering as a User
 description: 사용자의 조직 외부에 있는 경우에도 문서 보안 사용자로부터 받은 정책에 따라 보호된 문서를 사용하는 방법을 알아봅니다.
-seo-description: 사용자의 조직 외부에 있는 경우에도 문서 보안 사용자로부터 받은 정책에 따라 보호된 문서를 사용하는 방법을 알아봅니다.
+seo-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user’s organization.
 uuid: 4648b358-f545-434f-a3b2-2937e961dc64
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
-feature: 문서 보안
+feature: Document Security
 exl-id: 24641bf5-7c1c-4c92-8c11-2134039085f7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 6%
+source-wordcount: '736'
+ht-degree: 7%
 
 ---
 
 # 사용자로 등록 {#registering-as-a-user}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 사용자의 조직 외부에 있는 경우에도 문서 보안 사용자로부터 받는 정책으로 보호된 문서를 사용할 수 있습니다. 정책으로 보호된 문서를 사용하려면 문서 보안에 등록해야 합니다. 이전에 등록 요청을 받지 않은 경우 이러한 이벤트가 발생하면 문서 보안에서 등록 프로세스를 시작합니다.
 
@@ -36,7 +40,7 @@ ht-degree: 6%
 >
 >정책으로 보호된 문서를 받고 등록 전자 메일 초대를 받지 않는 경우 문서를 보낸 사람에게 자세한 내용을 문의하십시오.
 
-## 초대받은 사용자 {#register-as-an-invited-user}로 등록
+## 초대받은 사용자로 등록 {#register-as-an-invited-user}
 
 초대받은 사용자이고 문서 보안에서 전자 메일 등록 메시지를 받은 경우 메시지의 URL을 사용하여 온라인 등록 페이지를 열어 등록할 수 있습니다. 등록하면 계정 활성화에 대한 두 번째 알림을 받게 됩니다.
 
@@ -45,7 +49,7 @@ ht-degree: 6%
 1. 해당 상자에 이름, 전화 번호, 주소, 조직 및 암호를 입력한 다음 암호 확인 상자에 암호를 다시 입력합니다. 아무 8자의 조합이 암호가 될 수 있습니다.
 1. 저장을 클릭합니다. 이메일에 활성화 이메일 메시지가 표시되는지 확인하라는 감사 메시지가 나타납니다. 이제 계정을 활성화하여 등록 프로세스를 완료해야 합니다.
 
-## 초대받은 사용자 계정 {#activate-your-invited-user-account} 활성화
+## 초대된 사용자 계정 활성화 {#activate-your-invited-user-account}
 
 등록한 후 문서 보안에서 활성화 이메일을 보냅니다. 메시지의 URL을 사용하여 계정을 활성화해야 합니다. 그런 다음 문서 보안에 로그인하여 액세스 권한이 있는 정책으로 보호된 문서를 사용할 수 있습니다. 관리자가 외부 사용자에 대해 활성화하는 기능에 따라 정책을 만들고, 문서에 정책을 적용하고, 정책에 다른 외부 사용자를 추가할 수 있는 권한이 있을 수 있습니다.
 

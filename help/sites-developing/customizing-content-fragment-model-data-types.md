@@ -8,15 +8,19 @@ uuid: d8215dbf-2dbe-43cb-a5c1-dc1cb412a204
 contentOwner: AEM Docs
 discoiquuid: a8b8155c-852c-4d16-b59b-7e19527c2bd4
 noindex: true
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1625'
-ht-degree: 1%
+source-wordcount: '1661'
+ht-degree: 2%
 
 ---
 
 
 # 게시하지 않지만 컨텐츠 조각 모델에 대한 데이터 유형 사용자 지정을 DELETE 하지 않습니다{#do-not-publish-but-do-not-delete-customizing-data-types-for-content-fragment-models}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 [컨텐츠 조각](/help/assets/content-fragments.md) 다음 기준 [컨텐츠 조각 모델](/help/assets/content-fragments-models.md). 이러한 모델은 [요소](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) 다양한 데이터 유형.
 

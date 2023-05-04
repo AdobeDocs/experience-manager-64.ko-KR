@@ -1,8 +1,8 @@
 ---
 title: 테스트 - 언제 누구와 함께?
-seo-title: 테스트 - 언제 누구와 함께?
+seo-title: Testing - when and with whom?
 description: 다양한 역할이 테스트 및 프로젝트 개발 단계에 포함될 수 있습니다
-seo-description: 다양한 역할이 테스트 및 프로젝트 개발 단계에 포함될 수 있습니다
+seo-description: Various roles can be involved in testing and at various stages of project development
 uuid: 431e8f06-80eb-4fb3-a4c7-2580608b0a1c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,18 @@ topic-tags: testing
 content-type: reference
 discoiquuid: 6148f8e6-ab62-4eb8-8a2d-c431b8318000
 exl-id: cba4a814-052b-4b9f-96f2-8c80b2766ecc
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 5%
+source-wordcount: '310'
+ht-degree: 6%
 
 ---
 
 # 테스트 - 언제 누구와 함께?{#testing-when-and-with-whom}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 다양한 역할이 테스트 및 프로젝트 개발 단계에 포함될 수 있습니다.
 
@@ -44,7 +48,7 @@ ht-degree: 5%
     <ul> 
      <li><p>개발 중인 프로젝트의 경험을 고객에게 제공합니다.</p> </li> 
      <li><p>고객으로부터 조기 피드백을 제공합니다.</p> </li> 
-     <li><p>사용자는 과거 경험에 비추어 자신의 요구 사항을 종종 표현합니다.가능한 한 빨리 테스트하기 위해 고객을 참여하면 <i>실습</i> 경험에 따라 새 프로젝트의 경험이 늘어납니다.</p> </li> 
+     <li><p>사용자는 과거 경험에 비추어 자신의 요구 사항을 종종 표현합니다. 고객이 가능한 한 빨리 테스트하면 <i>직접 사용</i> 경험으로 제어됩니다.</p> </li> 
     </ul> </td> 
    <td><p>고객이 사용하는 모든 릴리스는 안정적이고 합리적인 기능이 있어야 하지만 초기 참여가 좋습니다.</p> <p>첫인상은 항상 중요하다.</p> </td> 
   </tr> 

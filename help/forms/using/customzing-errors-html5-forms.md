@@ -1,22 +1,26 @@
 ---
 title: HTML5 양식에 대한 오류 메시지 사용자 지정
-seo-title: HTML5 양식에 대한 오류 메시지 사용자 지정
+seo-title: Customizing error messages for HTML5 forms
 description: 위치 및 모양을 변경하는 방법을 비롯하여 HTML5 양식의 오류 메시지 표시를 사용자 지정하는 방법을 알아봅니다.
-seo-description: 위치 및 모양을 변경하는 방법을 비롯하여 HTML5 양식의 오류 메시지 표시를 사용자 지정하는 방법을 알아봅니다.
+seo-description: Learn how to customize the display of error messages for HTML5 forms including how to change their position and appearance.
 uuid: 6f48b64e-858f-4323-ad50-88e25f3c2e3d
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 44e49789-9075-41b3-bce8-03e8efce2d5a
 feature: Mobile Forms
 exl-id: e8a53976-e9bd-459d-92f5-88527c72428b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 0%
+source-wordcount: '551'
+ht-degree: 1%
 
 ---
 
 # HTML5 양식에 대한 오류 메시지 사용자 지정 {#customizing-error-messages-for-html-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 HTML5 양식에서 즉시 오류 메시지와 경고에는 고정된 위치와 모양(글꼴과 색상)이 있고, 선택한 필드에 대해서만 오류가 표시되고 하나의 오류만 표시됩니다.
 
@@ -36,10 +40,10 @@ HTML5 양식에서 즉시 오류 메시지와 경고에는 고정된 위치와 �
 
 ### 오류 메시지 위치 사용자 지정  {#customizing-the-position-of-error-messages-nbsp}
 
-오류 메시지의 위치를 사용자 지정하려면 각 오류 및 경고 필드에 &lt;div> 태그를 추가하고, 왼쪽 또는 오른쪽에 &lt;div> 태그를 지정한 다음, &lt;div> 태그에 css 스타일을 적용합니다. 자세한 단계는 아래 나열된 절차를 참조하십시오.
+오류 메시지의 위치를 사용자 지정하려면 &lt;div> 태그에 다음 코드를 배치하십시오 &lt;div> 태그를 왼쪽 또는 오른쪽으로 지정하고 &lt;div> 태그에 가깝게 포함했습니다. 자세한 단계는 아래 나열된 절차를 참조하십시오.
 
-1. `CustomErrorManager-1.0-SNAPSHOT`폴더로 이동하고 `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` 폴더를 엽니다.
-1. 편집할 `customErrorManager.js` 파일을 엽니다. 파일의 `markError` 함수는 다음 매개 변수를 허용합니다.
+1. 로 이동합니다 `CustomErrorManager-1.0-SNAPSHOT`폴더 및 열기 `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` 폴더를 입력합니다.
+1. 를 엽니다. `customErrorManager.js` 편집할 파일입니다. 다음 `markError` 파일의 함수는 다음 매개 변수를 허용합니다.
 
    |  |  |
    |---|---|
@@ -77,7 +81,7 @@ HTML5 양식에서 즉시 오류 메시지와 경고에는 고정된 위치와 �
    ```
 
 1. 파일을 저장하고 닫습니다.
-1. `CustomErrorManager-1.0-SNAPSHOT` 폴더로 이동하고 jcr_root 및 META-INF 폴더의 아카이브를 만듭니다. 아카이브 이름을 CustomErrorManager-1.0-SNAPSHOT.zip으로 변경합니다.
+1. 로 이동합니다 `CustomErrorManager-1.0-SNAPSHOT` 폴더를 만들고 jcr_root 및 META-INF 폴더의 아카이브를 만듭니다. 아카이브 이름을 CustomErrorManager-1.0-SNAPSHOT.zip으로 변경합니다.
 1. 패키지 관리자를 사용하여 패키지를 업로드하고 설치합니다.
 
 ## 여러 필드에 대한 오류 메시지 표시  {#display-error-messages-for-multiple-fields-nbsp}
@@ -120,9 +124,9 @@ HTML5 양식에서 즉시 오류 메시지와 경고에는 고정된 위치와 �
 
 ## 새 프로필로 양식을 렌더링합니다.  {#render-the-form-with-the-new-profile-nbsp}
 
-곧바로 사용할 수 있는 html5 양식에서는 기본 프로필을 사용합니다.https://&lt;server>/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp 위치>&amp;template=&lt;xdp 이름>
+곧바로 사용할 수 있는 html5 양식에서는 기본 프로필을 사용합니다. https://&lt;server>/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location=&quot;&quot;>&amp;template=&lt;name of=&quot;&quot; the=&quot;&quot; xdp=&quot;&quot;>
 
-사용자 지정 오류 메시지가 있는 양식을 보려면 오류 프로필로 양식을 렌더링하십시오.https://&lt;server>/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp 위치>&amp;template=&lt;xdp 이름>
+사용자 지정 오류 메시지가 있는 양식을 보려면 오류 프로필로 양식을 렌더링하십시오. https://&lt;server>/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location=&quot;&quot;>&amp;template=&lt;name of=&quot;&quot; the=&quot;&quot; xdp=&quot;&quot;>
 
 >[!NOTE]
 >

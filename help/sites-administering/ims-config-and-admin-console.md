@@ -1,8 +1,8 @@
 ---
-title: 'AEM Managed Services을 위한 IMS 인증 및 Admin Console 지원 '
-seo-title: 'AEM Managed Services을 위한 IMS 인증 및 Admin Console 지원 '
+title: AEM Managed Services을 위한 Adobe IMS 인증 및 Admin Console 지원
+seo-title: Adobe IMS Authentication and Admin Console Support for AEM Managed Services
 description: AEM에서 Admin Console을 사용하는 방법을 알아봅니다.
-seo-description: AEM에서 Admin Console을 사용하는 방법을 알아봅니다.
+seo-description: Learn how to use the Admin Console in AEM.
 uuid: 3f5b32c7-cf62-41a4-be34-3f71bbf224eb
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,18 @@ topic-tags: Security
 content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 exl-id: 38bbad03-aead-43d3-a28c-cc716955ddfb
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1769'
+source-wordcount: '1785'
 ht-degree: 18%
 
 ---
 
-# AEM Managed Services에 대한 IMS 인증 및 Admin Console 지원 {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
+# AEM Managed Services을 위한 Adobe IMS 인증 및 Admin Console 지원 {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
@@ -25,11 +29,11 @@ ht-degree: 18%
 
 ## 소개 {#introduction}
 
-AEM 6.4.3.0에서는 **AEM Managed Services** 고객을 위한 AEM 인스턴스 및 Adobe IMS(Identity Management 시스템) 기반 인증에 대한 Admin Console 지원을 도입했습니다.
+AEM 6.4.3.0에서는 AEM 인스턴스 및 Adobe IMS(Identity Management System) 기반 인증을 위한 Admin Console 지원을 도입했습니다 **AEM Managed Services** 고객.
 
 Admin Console에 대한 AEM 온보딩을 사용하면 AEM Managed Services 고객이 하나의 콘솔에서 모든 Experience Cloud 사용자를 관리할 수 있습니다. 사용자 및 그룹을 AEM 인스턴스와 연결된 제품 프로필에 지정하여 특정 인스턴스에 로그인할 수 있도록 할 수 있습니다.
 
-## 주요 특징 {#key-highlights}
+## 주요 내용 {#key-highlights}
 
 * AEM IMS 인증 지원은 사이트 방문자와 같은 고객 사이트의 외부 최종 사용자가 아니라 AEM 작성자, 관리자 또는 개발자에게만 해당됩니다
 * Admin Console은 AEM Managed Services 고객을 IMS 조직으로, 인스턴스를 제품 컨텍스트로 표시합니다. 고객 시스템 및 제품 관리자는 인스턴스에 대한 액세스를 관리할 수 있습니다
@@ -47,13 +51,13 @@ IMS 인증은 AEM과 Adobe IMS 엔드포인트 간 OAuth 프로토콜을 사용�
 
 ![image2018-9-23_23-55-8](assets/image2018-9-23_23-55-8.png)
 
-## {#how-to-set-up} 설정 방법
+## 설정 방법 {#how-to-set-up}
 
 ###  Admin Console로 조직 온보딩 {#onboarding-organizations-to-admin-console}
 
-Admin Console에 대한 고객 온보딩은 AEM 인증에 Adobe IMS를 사용하기 위한 전제 조건입니다.
+AEM 인증에 Adobe IMS를 사용하기 위한 Admin Console에 대한 고객 온보딩은 전제 조건입니다.
 
-첫 번째 단계로, 고객은 Adobe IMS에서 조직이 프로비저닝되어 있어야 합니다. Adobe Enterprise 고객은 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)에서 IMS 조직으로 표시됩니다.
+첫 번째 단계로, 고객은 Adobe IMS에서 조직이 프로비저닝되어 있어야 합니다. Adobe 엔터프라이즈 고객은 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html).
 
 AEM Managed Services 고객은 이미 조직이 프로비저닝되어 있어야 하며 IMS 프로비저닝의 일부로서, 고객 인스턴스는 사용자 권한 및 액세스를 관리하기 위해 Admin Console에서 사용할 수 있게 됩니다.
 
@@ -71,11 +75,11 @@ AEM Managed Services 고객은 이미 조직이 프로비저닝되어 있어야 
 
 >[!NOTE]
 >
->IDP 구성을 비롯한 Adobe Identity Management 기본 사항에 대한 자세한 내용은 [이 페이지를 참조하십시오.](https://helpx.adobe.com/kr/enterprise/using/set-up-identity.html)
+>IDP 구성을 포함한 Adobe Identity Management 기본 사항에 대한 자세한 내용은 문서를 참조하십시오 [이 페이지.](https://helpx.adobe.com/kr/enterprise/using/set-up-identity.html)
 >
->Enterprise 관리 및 Admin Console에 대한 자세한 내용은 문서 [이 페이지](https://helpx.adobe.com/kr/enterprise/managing/user-guide.html)를 참조하십시오.
+>Enterprise Administration 및 Admin Console에 대한 자세한 내용은 문서를 참조하십시오 [이 페이지](https://helpx.adobe.com/kr/enterprise/managing/user-guide.html).
 
-### 사용자를 Admin Console {#onboarding-users-to-the-admin-console}(으)로 온보딩
+### Admin Console에 사용자 온보딩 {#onboarding-users-to-the-admin-console}
 
 사용자를 온보딩하는 방법은 고객의 규모와 선호에 따라 세 가지가 있습니다.
 
@@ -91,7 +95,7 @@ AEM Managed Services 고객은 이미 조직이 프로비저닝되어 있어야 
 
 ![image2018-9-23_20-39-9](assets/image2018-9-23_20-39-9.png)
 
-#### Admin Console UI {#file-upload-in-the-admin-console-ui}에서 파일 업로드
+#### Admin Console UI에서 파일 업로드 {#file-upload-in-the-admin-console-ui}
 
 사용자 생성을 쉽게 처리하기 위해 사용자를 일괄 추가할 수 있도록 CSV 파일을 업로드할 수 있습니다.
 
@@ -101,7 +105,7 @@ AEM Managed Services 고객은 이미 조직이 프로비저닝되어 있어야 
 
 UST(User Sync Tool)를 사용하면 기업 고객은 Active Directory 또는 기타 테스트된 OpenLDAP 디렉토리 서비스를 사용하여 Adobe 사용자를 생성하거나 관리할 수 있습니다. 대상 사용자는 도구를 설치 및 구성할 수 있는 IT ID 관리자(Enterprise Directory 및 시스템 관리자)입니다. 오픈소스 도구는 개발자가 특정 요구 사항에 맞게 수정할 수 있도록 사용자 지정할 수 있습니다.
 
-사용자 동기화가 실행되면 이 기능은 조직의 Active Directory(또는 기타 호환되는 데이터 소스)의 사용자 목록을 가져와서 Admin Console 내의 사용자 목록과 비교합니다. 그런 다음 Adobe User Management API를 호출하여 Admin Console이 조직의 디렉토리와 동기화되도록 합니다. 변경 흐름은 완전히 일방향입니다.Admin Console에서 편집한 내용은 디렉토리에 푸시되지 않습니다.
+사용자 동기화가 실행되면 이 기능은 조직의 Active Directory(또는 기타 호환되는 데이터 소스)의 사용자 목록을 가져와서 Admin Console 내의 사용자 목록과 비교합니다. 그런 다음 Adobe User Management API를 호출하여 Admin Console이 조직의 디렉터리와 동기화되도록 합니다. 변경 흐름은 완전히 일방향입니다. Admin Console에서 편집한 내용은 디렉토리에 푸시되지 않습니다.
 
 시스템 관리자는 이 도구를 사용하여 고객 디렉토리에 있는 사용자 그룹을 제품 구성 및 Admin Console의 사용자 그룹과 매핑할 수 있으며, 새 UST 버전을 사용하면 Admin Console에서 사용자 그룹을 동적으로 만들 수도 있습니다.
 
@@ -113,7 +117,7 @@ UST(User Sync Tool)를 사용하면 기업 고객은 Active Directory 또는 기
 
 [https://github.com/adobe-apiplatform/user-sync.py/releases/latest](https://github.com/adobe-apiplatform/user-sync.py/releases/latest)
 
-시험판 버전 2.4RC1 은 동적 그룹 생성 지원과 함께 사용 가능하며 여기에서 찾을 수 있습니다.[https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)
+시험판 버전 2.4RC1 은 동적 그룹 생성 지원과 함께 사용 가능하며 여기에서 찾을 수 있습니다. [https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)
 
 이 릴리스의 주요 기능은 Admin Console에서 사용자 멤버십에 대한 새 LDAP 그룹을 동적으로 매핑하고 동적 사용자 그룹 생성을 수행하는 기능입니다.
 
@@ -123,15 +127,15 @@ UST(User Sync Tool)를 사용하면 기업 고객은 Active Directory 또는 기
 
 >[!NOTE]
 >
->사용자 동기화 도구에 대한 자세한 내용은 [설명서 페이지](https://adobe-apiplatform.github.io/user-sync.py/en/)를 참조하십시오.
+>사용자 동기화 도구에 대한 자세한 내용은 [설명서 페이지](https://adobe-apiplatform.github.io/user-sync.py/en/).
 >
 >
->사용자 동기화 도구는 [여기](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)에 설명된 절차를 사용하여 Adobe I/O 클라이언트 UMAPI로 등록해야 합니다.
+>사용자 동기화 도구는 설명된 절차를 사용하여 Adobe I/O 클라이언트 UMAPI로 등록해야 합니다 [여기](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 >
->Adobe I/O 콘솔 설명서는 [여기](https://www.adobe.io/apis/cloudplatform/console.html)에 있습니다.
+>Adobe I/O 콘솔 설명서를 찾을 수 있습니다 [여기](https://www.adobe.io/apis/cloudplatform/console.html).
 >
 >
->사용자 동기화 도구에서 사용하는 사용자 관리 API는 이 [location](https://www.adobe.io/apis/cloudplatform/umapi-new.html)에서 다룹니다.
+>사용자 동기화 도구에서 사용하는 사용자 관리 API는 여기에서 다룹니다 [위치](https://www.adobe.io/apis/cloudplatform/umapi-new.html).
 
 >[!NOTE]
 >
@@ -145,7 +149,7 @@ UST(User Sync Tool)를 사용하면 기업 고객은 Active Directory 또는 기
 
 ![screen_shot_2018-09-17at105804pm](assets/screen_shot_2018-09-17at105804pm.png)
 
-이 예에서는 조직 *AEM-MS-Onboard*&#x200B;에 단계, 제품 등과 같은 다양한 토폴로지 및 환경에 걸쳐 32개의 인스턴스가 있습니다.
+이 예에서는 조직 *AEM-MS-Onboard* 는 단계, 제품 등과 같은 다양한 토폴로지 및 환경에 걸쳐 32개의 인스턴스를 포함합니다.
 
 ![screen_shot_2018-09-17at105517pm](assets/screen_shot_2018-09-17at105517pm.png)
 
@@ -161,7 +165,7 @@ UST(User Sync Tool)를 사용하면 기업 고객은 Active Directory 또는 기
 
 ![screen_shot_2018-09-17at105623pm](assets/screen_shot_2018-09-17at105623pm.png)
 
-### AEM {#logging-into-aem}에 로그인하는 중
+### AEM에 로그인 {#logging-into-aem}
 
 #### 로컬 관리자 로그인 {#local-admin-login}
 
@@ -171,7 +175,7 @@ UST(User Sync Tool)를 사용하면 기업 고객은 Active Directory 또는 기
 
 #### IMS 기반 로그인 {#ims-based-login}
 
-다른 사용자의 경우 인스턴스에 IMS가 구성되어 있으면 IMS 기반 로그인을 사용할 수 있습니다. 사용자는 아래에 표시된 대로 먼저 **Adobe**&#x200B;로 로그인 단추를 클릭합니다.
+다른 사용자의 경우 인스턴스에 IMS가 구성되어 있으면 IMS 기반 로그인을 사용할 수 있습니다. 사용자가 먼저 **Adobe으로 로그인** 아래와 같이 버튼을 클릭합니다.
 
 ![image2018-9-18_0-10-32](assets/image2018-9-18_0-10-32.png)
 
@@ -197,13 +201,13 @@ LDAP 또는 SAML을 통해 로컬로 가져온 AEM 저장소의 기존 사용자
 
 이 유틸리티는 IMS 프로비저닝의 일부로서 AMS 팀이 실행합니다.
 
-### AEM {#managing-permissions-and-acls-in-aem}의 권한 및 ACL 관리
+### AEM의 권한 및 ACL 관리 {#managing-permissions-and-acls-in-aem}
 
 액세스 제어 및 권한은 AEM에서 계속 관리되며, 이 작업은 IMS(예: 아래 예에서 AEM-GRP-008)와 권한 및 액세스 제어가 정의된 로컬 그룹을 분리하여 수행할 수 있습니다. IMS에서 동기화된 사용자 그룹은 로컬 그룹에 할당하고 권한을 상속할 수 있습니다.
 
 아래 예에서는 동기화된 그룹을 로컬 *Dam_Users* 그룹에 추가하겠습니다.
 
-여기에서 Admin Console의 몇 개의 그룹에도 사용자가 할당되었습니다. ( 사용자 동기화 도구를 사용하여 LDAP에서 사용자 및 그룹을 동기화하거나 로컬로 만들 수 있습니다. 위의 **Admin Console에 사용자 온보딩** 섹션을 참조하십시오.)
+여기에서 Admin Console의 몇 개의 그룹에도 사용자가 할당되었습니다. ( 사용자 동기화 도구를 사용하여 LDAP에서 사용자 및 그룹을 동기화하거나 로컬로 만들 수 있습니다. 섹션을 참조하십시오 **Admin Console에 사용자 온보딩** ).
 
 >[!NOTE]
 >
@@ -223,6 +227,6 @@ IMS에서 동기화된 사용자 그룹은 AEM에서 기존 로컬 그룹(예: D
 
 ![screen_shot_2018-09-17at95804pm](assets/screen_shot_2018-09-17at95804pm.png)
 
-아래 표시된 대로, *AEM-GRP_008* 그룹은 DAM 사용자의 권한 및 권한을 상속합니다. 이는 동기화된 그룹에 대한 권한을 관리하는 효과적인 방법이며 LDAP 기반 인증 방법에서도 일반적으로 사용됩니다.
+아래와 같이 그룹 *AEM-GRP_008* 는 DAM 사용자의 권한 및 권한을 상속합니다. 이는 동기화된 그룹에 대한 권한을 관리하는 효과적인 방법이며 LDAP 기반 인증 방법에서도 일반적으로 사용됩니다.
 
 ![screen_shot_2018-09-17at110505pm](assets/screen_shot_2018-09-17at110505pm.png)

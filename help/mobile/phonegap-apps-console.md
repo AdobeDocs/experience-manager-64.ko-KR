@@ -10,18 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 7317fd2f-9756-4231-b343-ea808ea159ec
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2617'
+source-wordcount: '2653'
 ht-degree: 1%
 
 ---
 
 # 앱 콘솔을 사용한 앱 만들기 및 편집{#creating-and-editing-apps-using-the-apps-console}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
 AEM 모바일 애플리케이션 개발 프로세스는 다양한 전문 지식을 가진 사용자가 모바일 애플리케이션 개발에 기여한다고 인식합니다. 다음 프로세스 맵은 컨텐츠 작성자와 애플리케이션 개발자가 작업을 수행하는 일반적인 순서를 보여줍니다.
 
@@ -343,7 +347,7 @@ Geometrixx Outdoors 앱은 기본 PhoneGap 애플리케이션 블루프린트와
 
 애플리케이션 컨텐츠에 리치 텍스트를 추가합니다.
 
-### 저장소 위치 {#store-locations}
+### 스토어 위치 {#store-locations}
 
 저장소 위치 구성 요소는 사용자에게 다음과 같은 비즈니스 매체를 찾기 위한 도구를 제공합니다.
 

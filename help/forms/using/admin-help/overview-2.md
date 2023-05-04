@@ -10,20 +10,24 @@ geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 986d16fc-4c81-4785-b1f3-fe8bd7ff669e
 exl-id: 4817d150-9bfe-4cb9-8f06-6ff4eaaa6f55
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 0%
+source-wordcount: '375'
+ht-degree: 2%
 
 ---
 
 # 인증서 및 자격 증명 관리 기본 사항 {#basics-of-managing-certificates-and-credentials}
 
-*자격 증명*&#x200B;에는 문서에 서명하거나 식별하는 데 필요한 개인 키 정보가 포함되어 있습니다. *인증서*&#x200B;는 트러스트에 대해 구성하는 공개 키 정보입니다. AEM Forms는 여러 용도로 인증서 및 자격 증명을 사용합니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
-* Acrobat Reader DC 확장은 자격 증명을 사용하여 PDF 문서에서 Adobe Reader 사용 권한을 활성화합니다. ([Acrobat Reader DC 확장에서 사용할 자격 증명 구성](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions)을 참조하십시오.)
-* 신뢰할 수 있는 발행자의 자격 증명으로만 Acrobat에 사용할 자격 증명을 표시하도록 Rights Management을 구성할 수 있습니다. ( [Rights Management 표시 설정 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings) 참조) 인증서에 일반 이름(CN)이 있어야 합니다.
-* 서명 서비스는 인증서 및 자격 증명에 액세스합니다. 서명 서비스에 대한 자세한 내용은 [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
+A *자격 증명* 문서에 서명하거나 식별하는 데 필요한 개인 키 정보를 포함합니다. A *인증서* 는 신뢰에 대해 구성하는 공개 키 정보입니다. AEM Forms는 여러 용도로 인증서 및 자격 증명을 사용합니다.
+
+* Acrobat Reader DC 확장은 자격 증명을 사용하여 PDF 문서에서 Adobe Reader 사용 권한을 활성화합니다. (자세한 내용은 [Acrobat Reader DC 확장에서 사용할 자격 증명 구성](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions))
+* 신뢰할 수 있는 발행자의 자격 증명으로만 Acrobat에 사용할 자격 증명을 표시하도록 Rights Management을 구성할 수 있습니다. (자세한 내용은 [Rights Management 표시 설정 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings)) 인증서에 일반 이름(CN)이 있어야 합니다.
+* 서명 서비스는 인증서 및 자격 증명에 액세스합니다. 서명 서비스에 대한 자세한 내용은 [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
 
 **쌍 키 생성**
 

@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 76b63c7c-f7ea-46be-8d10-6c1a30af2e2b
 pagetitle: Components for Content Fragments
 exl-id: 516c1561-5c13-4301-8009-9b021087cec7
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '968'
 ht-degree: 6%
 
 ---
 
 # 컨텐츠 조각용 구성 요소{#components-for-content-fragments}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 >[!CAUTION]
 >
@@ -32,7 +36,7 @@ ht-degree: 6%
 
 자세한 내용은 [컨텐츠 조각 관리 API - 클라이언트측](/help/sites-developing/customizing-content-fragments.md#the-content-fragment-management-api-client-side).
 
-## 페이지 작성용 구성 요소 {#components-for-page-authoring}
+## 페이지 작성을 위한 구성 요소 {#components-for-page-authoring}
 
 >[!CAUTION]
 >

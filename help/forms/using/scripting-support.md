@@ -11,14 +11,18 @@ topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: 2194bbbb-22d9-4422-aefb-9651fd795ca3
-source-git-commit: aa70ce1b05353e0d6f234c59df673486c8fa5082
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3894'
+source-wordcount: '3930'
 ht-degree: 6%
 
 ---
 
 # HTML5 양식에 대한 스크립팅 지원 {#scripting-support-for-html-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 다음과 같습니다.
 
@@ -720,7 +724,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 다
    <td> </td> 
   </tr> 
   <tr> 
-   <td>캡션</td> 
+   <td>caption</td> 
    <td>캡션 개체는 양식 디자인 개체와 연결된 설명 레이블을 설명합니다.</td> 
    <td> </td> 
   </tr> 
@@ -735,7 +739,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 다
    <td>런타임에 값을 설정할 수 없습니다</td> 
   </tr> 
   <tr> 
-   <td>정렬 단추</td> 
+   <td>값</td> 
    <td>값 객체에는 단일 데이터 컨텐츠 단위가 포함됩니다.<br /> </td> 
    <td> </td> 
   </tr> 
@@ -908,7 +912,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 다
    <td>없음</td> 
   </tr> 
   <tr> 
-   <td>mandatory</td> 
+   <td>필수</td> 
    <td>필드에 대해 nullTest 값을 지정합니다.</td> 
    <td>없음</td> 
   </tr> 
@@ -948,7 +952,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 다
    <td>없음</td> 
   </tr> 
   <tr> 
-   <td>캡션</td> 
+   <td>caption</td> 
    <td>캡션 개체는 양식 디자인 개체와 연결된 설명 레이블을 설명합니다.<br /> </td> 
    <td>없음</td> 
   </tr> 

@@ -1,8 +1,8 @@
 ---
 title: 끝점 추가, 활성화, 수정 또는 제거
-seo-title: 끝점 추가, 활성화, 수정 또는 제거
+seo-title: Adding, enabling, modifying, or removing endpoints
 description: 끝점을 추가, 활성화, 수정 및 제거하는 방법을 알아봅니다.
-seo-description: 끝점을 추가, 활성화, 수정 및 제거하는 방법을 알아봅니다.
+seo-description: Learn how to add, enable, modify and remove endpoints.
 uuid: c53f225b-3d55-42f6-8982-0cd7dde0c4f5
 contentOwner: admin
 content-type: reference
@@ -10,18 +10,22 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7d0d4f96-fc72-4e2b-a2cc-5741b0a30f74
 exl-id: 8aed1439-aa39-4f75-909b-6a7ad7840a08
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 0%
+source-wordcount: '407'
+ht-degree: 1%
 
 ---
 
-# 끝점 {#adding-enabling-modifying-or-removing-endpoints} 추가, 활성화, 수정 또는 제거
+# 끝점 추가, 활성화, 수정 또는 제거 {#adding-enabling-modifying-or-removing-endpoints}
 
-## 서비스 {#add-an-endpoint-to-a-service}에 끝점 추가
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
-끝점은 서비스에만 추가할 수 있습니다. 끝점은 단독으로 존재할 수 없습니다.서비스와 연결되어 있어야 합니다.
+## 서비스에 끝점 추가 {#add-an-endpoint-to-a-service}
+
+끝점은 서비스에만 추가할 수 있습니다. 끝점은 단독으로 존재할 수 없습니다. 서비스와 연결되어 있어야 합니다.
 
 >[!NOTE]
 >
@@ -42,7 +46,7 @@ ht-degree: 0%
 
 1. 추가를 클릭합니다.
 
-## 끝점 {#enable-or-disable-an-endpoint} 활성화 또는 비활성화
+## 엔드포인트 활성화 또는 비활성화 {#enable-or-disable-an-endpoint}
 
 기본적으로 새 엔드포인트는 자동으로 활성화됩니다. 그러나 종단점을 비활성화한 경우 종단점이 작동하도록 설정해야 합니다.
 

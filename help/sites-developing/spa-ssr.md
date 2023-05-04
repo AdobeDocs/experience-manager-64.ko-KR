@@ -10,14 +10,18 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
 exl-id: 89e45231-885a-4d35-839b-2b50239503ad
-source-git-commit: 199ee2b38cbffc2b97e0fd3c25d828a7e5718bf3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1807'
 ht-degree: 3%
 
 ---
 
 # SPA 및 서버측 렌더링{#spa-and-server-side-rendering}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >단일 페이지 애플리케이션(SPA) 편집기 기능을 사용하려면 [AEM 6.4 서비스 팩 2](https://helpx.adobe.com/kr/experience-manager/6-4/release-notes/sp-release-notes.html) 또는 그 이상

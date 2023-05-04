@@ -1,8 +1,8 @@
 ---
 title: 컨텐츠 속성 및 노드
-seo-title: 컨텐츠 속성 및 노드
-description: '컨텐츠 속성 및 노드에 대해 알려면 이 페이지를 따르십시오.  '
-seo-description: '컨텐츠 속성 및 노드에 대해 알려면 이 페이지를 따르십시오.  '
+seo-title: Content Properties and Nodes
+description: 컨텐츠 속성 및 노드에 대해 알려면 이 페이지를 따르십시오.
+seo-description: Follow this page to learn about content properties and nodes.
 uuid: 2dad52c8-5b6c-4b90-8498-62217a9a27fc
 contentOwner: User
 content-type: reference
@@ -10,18 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: f5721ddc-df5c-496c-be61-38d1cab63ad4
 exl-id: 85a367fe-a124-42af-ae3e-fe4d10425ea1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 20%
+source-wordcount: '391'
+ht-degree: 21%
 
 ---
 
 # 컨텐츠 속성 및 노드 {#content-properties-and-nodes}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
 문서, 배너 및 컬렉션은 AEM에서 cq:Pages로 표시됩니다.
 
@@ -50,7 +54,7 @@ ht-degree: 20%
 | dps-shortAbstract | 문자열 |  |
 | dps 부서 | 문자열 |  |
 | dps 범주 | 문자열 |  |
-| dps-keywords | String[] |  |
+| dps-keywords | 문자열[] |  |
 | dps-internalKeywords | 문자열[] |  |
 | dps 중요도 | 문자열[] | {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;}의 중요도 |
 
@@ -91,7 +95,7 @@ ht-degree: 20%
 
 | 노드 이름 | 유형 | 기본값 또는 예상 값 | 설명 |
 |--- |--- |--- |--- |
-| 이미지 | jcr:primaryType=nt:un구조화되지 않은 <br> sling:resourceType=foundation/components/image |  |  |
+| 이미지 | jcr:primaryType=nt:un구조화되지 않음 <br> sling:resourceType=foundation/components/image |  |  |
 
 ### 엔티티 {#entities}
 
@@ -99,7 +103,7 @@ ht-degree: 20%
 
 | 노드 이름 | 유형 | 예상 값의 기본값 | 설명 |
 |--- |--- |--- |--- |
-| social-share-image |  | jcr:primaryType=nt:un구조화되지 않은 <br> sling:resourceType=foundation/components/image |  |
+| social-share-image |  | jcr:primaryType=nt:un구조화되지 않음 <br> sling:resourceType=foundation/components/image |  |
 
 #### 배너 {#banners-1}
 
@@ -111,4 +115,4 @@ ht-degree: 20%
 
 | 노드 이름 | 유형 | 예상 값의 기본값 | 설명 |
 |--- |--- |--- |--- |
-| 배경 이미지 | jcr:primaryType=nt:un구조화되지 않은 <br> sling:resourceType=foundation/components/image |  |  |
+| 배경 이미지 | jcr:primaryType=nt:un구조화되지 않음 <br> sling:resourceType=foundation/components/image |  |  |

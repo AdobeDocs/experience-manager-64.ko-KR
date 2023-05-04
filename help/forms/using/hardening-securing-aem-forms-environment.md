@@ -1,21 +1,25 @@
 ---
 title: OSGi 환경에서 AEM 양식 강화 및 보안
-seo-title: OSGi 환경에서 AEM 양식 강화 및 보안
+seo-title: Hardening and Securing AEM forms on OSGi environment
 description: OSGi 서버에서 AEM Forms 보안을 위한 권장 사항 및 우수 사례를 알아봅니다.
-seo-description: OSGi 서버에서 AEM Forms 보안을 위한 권장 사항 및 우수 사례를 알아봅니다.
+seo-description: Learn recommendations and best practices for securing AEM Forms on OSGi server.
 uuid: abca7e7c-38c3-44f5-8d8a-4615cfce26c6
 topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
 role: Admin
 exl-id: ba3b380a-b391-44a0-884b-e57c3cb14013
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1463'
-ht-degree: 0%
+source-wordcount: '1479'
+ht-degree: 1%
 
 ---
 
 # OSGi 환경에서 AEM 양식 강화 및 보안 {#hardening-and-securing-aem-forms-on-osgi-environment}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 OSGi 서버에서 AEM Forms 보안을 위한 권장 사항 및 우수 사례를 알아봅니다.
 
@@ -44,7 +48,7 @@ AEM Forms은 사용자 지정이 매우 편리하며 다양한 환경에서 작�
 
 #### 외부 방화벽 구성  {#configure-external-firewall}
 
-특정 AEM Forms URL이 인터넷에 액세스할 수 있도록 외부 방화벽을 구성할 수 있습니다. 적응형 양식, HTML5, 서신 관리 편지를 작성하거나 AEM Forms 서버에 로그인하려면 다음 URL에 대한 액세스 권한이 필요합니다.
+특정 AEM Forms URL이 인터넷에 액세스할 수 있도록 외부 방화벽을 구성할 수 있습니다. 적응형 양식, HTML5, 서신 관리 편지 또는 AEM Forms 서버에 로그인하려면 다음 URL에 액세스해야 합니다.
 
 <table> 
  <tbody>
@@ -145,16 +149,16 @@ AEM Forms은 사전 정의된 위치 및 임시 폴더에 데이터를 저장합
 
 게시 노드에 로컬로 저장하지 않고 처리 클러스터에 over-the-wire를 보내도록 스토리지 서비스를 구성할 수 있습니다. 처리 클러스터는 개인 방화벽 뒤에 보안 영역에 있으며 데이터는 안전하게 유지됩니다.
 
-AEM DS 설정 서비스에 대한 처리 서버의 자격 증명을 사용하여 게시 노드에서 처리 서버로 데이터를 게시합니다. 처리 서버 리포지토리에 대한 읽기-쓰기 액세스 권한이 있는 관리자가 아닌 제한된 사용자의 자격 증명을 사용하는 것이 좋습니다. 자세한 내용은 초안 및 제출 [에 대한 저장소 서비스 구성](/help/forms/using/configuring-draft-submission-storage.md)을 참조하십시오.
+AEM DS 설정 서비스에 대한 처리 서버의 자격 증명을 사용하여 게시 노드에서 처리 서버로 데이터를 게시합니다. 처리 서버 리포지토리에 대한 읽기-쓰기 액세스 권한이 있는 관리자가 아닌 제한된 사용자의 자격 증명을 사용하는 것이 좋습니다. 자세한 내용은 [초안 및 제출 스토리지 서비스 구성](/help/forms/using/configuring-draft-submission-storage.md).
 
 ### FDM(양식 데이터 모델)으로 처리된 보안 데이터 {#secure-data-handled-by-form-data-model-fdm}
 
 FDM(양식 데이터 모델)에 대한 데이터 소스를 구성하려면 필요한 최소 권한이 있는 사용자 계정을 사용합니다. 관리 계정을 사용하면 권한이 없는 사용자에게 메타데이터 및 스키마 엔티티에 대한 오픈 액세스 권한을 제공할 수 있습니다.\
 또한 데이터 통합에서는 FDM 서비스 요청을 승인하는 방법을 제공합니다. 사전 및 사후 실행 인증 메커니즘을 삽입하여 요청의 유효성을 검사할 수 있습니다. 양식을 미리 작성하고, 양식을 제출하고, 규칙을 통해 서비스를 호출하는 동안 서비스 요청이 생성됩니다.
 
-**사전 프로세스 인증:** 사전 프로세스 인증을 사용하여 요청을 실행하기 전에 요청의 신뢰성을 확인할 수 있습니다. 입력, 서비스 및 요청 세부 정보를 사용하여 요청 실행을 허용하거나 중지할 수 있습니다. 실행이 중지된 경우 데이터 통합 예외 OPERATION_ACCESS_DENIED를 반환할 수 있습니다. 클라이언트 요청을 실행하기 전에 수정할 수도 있습니다. 예를 들어, 입력을 변경하고 추가 정보를 추가할 수 있습니다.
+**사전 프로세스 인증:** 프로세스 전 인증을 사용하여 요청을 실행하기 전에 요청의 신뢰성을 확인할 수 있습니다. 입력, 서비스 및 요청 세부 정보를 사용하여 요청 실행을 허용하거나 중지할 수 있습니다. 실행이 중지된 경우 데이터 통합 예외 OPERATION_ACCESS_DENIED를 반환할 수 있습니다. 클라이언트 요청을 실행하기 전에 수정할 수도 있습니다. 예를 들어, 입력을 변경하고 추가 정보를 추가할 수 있습니다.
 
-**사후 프로세스 승인:** 결과를 요청자에게 반환하기 전에 사후 프로세스 승인 기능을 사용하여 결과를 검증하고 제어할 수 있습니다. 추가 데이터를 필터링, 정리 및 결과에 삽입할 수도 있습니다.
+**사후 프로세스 인증:** 결과를 요청자에게 반환하기 전에 사후 처리 권한 부여를 사용하여 결과를 검증하고 제어할 수 있습니다. 추가 데이터를 필터링, 정리 및 결과에 삽입할 수도 있습니다.
 
 ### 사용자 액세스 제한 {#limit-user-access}
 
@@ -198,4 +202,4 @@ FDM(양식 데이터 모델)에 대한 데이터 소스를 구성하려면 필�
 
 ### AEM 우수 사례를 사용하여 AEM Forms 환경 보호 {#use-aem-best-practices-to-secure-an-aem-forms-environment}
 
-이 문서에서는 AEM Forms 환경과 관련된 지침을 제공합니다. 배포 시 기본 AEM 설치가 안전한지 확인해야 합니다. 자세한 지침은 [AEM Security Checklist](/help/sites-administering/security-checklist.md) 설명서를 참조하십시오.
+이 문서에서는 AEM Forms 환경과 관련된 지침을 제공합니다. 배포 시 기본 AEM 설치가 안전한지 확인해야 합니다. 자세한 지침은 [AEM Security 검사 목록](/help/sites-administering/security-checklist.md) 설명서.

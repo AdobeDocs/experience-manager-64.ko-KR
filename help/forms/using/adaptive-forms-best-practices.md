@@ -1,5 +1,5 @@
 ---
-title: 적응형 양식 작업을 위한 우수 사례
+title: 적응형 양식 작업에 대한 우수 사례
 seo-title: Best practices for working with adaptive forms
 description: AEM Forms 프로젝트 설정, 적응형 양식 개발 및 AEM Forms 시스템용 성능 최적화에 대한 우수 사례를 설명합니다.
 seo-description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
@@ -9,14 +9,18 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 0c64940c-273d-4f23-afcb-38bf54cddd36
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4108'
+source-wordcount: '4144'
 ht-degree: 0%
 
 ---
 
-# 적응형 양식 작업을 위한 우수 사례 {#best-practices-for-working-with-adaptive-forms}
+# 적응형 양식 작업에 대한 우수 사례 {#best-practices-for-working-with-adaptive-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ## 개요 {#overview}
 
@@ -55,7 +59,7 @@ AEM 프로젝트를 설정하고 나면 적응형 양식 템플릿 및 구성 �
 * 적응형 양식 템플릿은 적응형 양식의 구조와 머리글 바닥글 정보를 정의하는 전문 AEM 페이지입니다. 템플릿에는 적응형 양식의 사전 구성된 레이아웃, 스타일 및 기본 구조가 있습니다. AEM Forms은 적응형 양식을 작성하는 데 사용할 수 있는 기본 템플릿 및 구성 요소를 제공합니다. 그러나 요구 사항에 따라 사용자 지정 템플릿 및 구성 요소를 만들 수 있습니다. 적응형 양식에 필요한 추가 템플릿 및 구성 요소에 대한 요구 사항을 수집하는 것이 좋습니다. 자세한 내용은 [적응형 양식 및 구성 요소 사용자 지정](/help/forms/using/adaptive-forms-best-practices.md#customize-components).
 * AEM Forms에서는 다음 양식 모델을 기반으로 적응형 양식을 만들 수 있습니다. 양식 모델은 양식과 AEM 시스템 간의 데이터 교환을 위한 인터페이스 역할을 하며 적응형 양식 내/외부에서 데이터 흐름을 위한 XML 기반 구조를 제공합니다. 또한 양식 모델은 스키마 및 XFA 제한 형태로 적응형 양식에 규칙과 제한을 적용합니다.
 
-   * **없음**: 이 옵션을 사용하여 만든 적응형 양식에서는 양식 모델을 사용하지 않습니다. 이러한 양식에서 생성된 데이터 XML은 필드 및 해당 값이 있는 플랫 구조를 갖습니다.
+   * **없음**: 이 옵션을 사용하여 만든 적응형 양식에서는 양식 모델을 사용하지 않습니다. 해당 양식에서 생성된 데이터 XML에는 필드와 해당 값이 포함된 기본 구조가 있습니다.
    * **XML 또는 JSON 스키마**: XML 및 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생성하거나 사용하는 구조를 나타냅니다. 스키마를 적응형 양식에 연결하고 해당 요소를 사용하여 적응형 양식에 동적 컨텐츠를 추가할 수 있습니다. 스키마의 요소는 적응형 양식을 작성할 컨텐츠 브라우저의 데이터 모델 개체 탭에서 사용할 수 있습니다. 스키마 요소를 드래그하여 놓아 양식을 작성할 수 있습니다.
    * **XFA 양식 템플릿**: XFA 기반 HTML5 양식에 투자를 한 경우 이상적인 양식 모델입니다. XFA 기반 양식을 적응형 양식으로 전환하는 직접적인 방법을 제공합니다. 기존 XFA 규칙은 연결된 적응형 양식에 유지됩니다. 결과 적응형 양식은 유효성 검사, 이벤트, 속성 및 패턴과 같은 XFA 구문을 지원합니다.
    * **양식 데이터 모델**: 데이터베이스, 웹 서비스 및 AEM 사용자 프로필과 같은 백엔드 시스템을 통합하여 적응형 양식을 미리 작성하고 제출된 양식 데이터를 다시 백엔드 시스템에 기록하려는 경우 기본 양식 모델입니다. 양식 데이터 모델 편집기를 사용하면 적응형 양식을 만드는 데 사용할 수 있는 양식 데이터 모델에서 엔티티와 서비스를 정의하고 구성할 수 있습니다. 자세한 내용은 [AEM Forms 데이터 통합](/help/forms/using/data-integration.md).

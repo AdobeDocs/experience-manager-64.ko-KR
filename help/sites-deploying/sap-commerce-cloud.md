@@ -2,7 +2,7 @@
 title: SAP Commerce Cloud
 seo-title: SAP Commerce Cloud
 description: SAP Commerce Cloud을 사용하여 eCommerce를 배포하는 방법을 알아봅니다.
-seo-description: SAP Commerce Cloud을 사용하여 eCommerce를 배포하는 방법을 알아봅니다.
+seo-description: Learn how to deploy eCommerce with SAP Commerce Cloud.
 uuid: a16ae42b-9c33-4da8-a130-52b72a779ec7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,22 +10,26 @@ topic-tags: e-commerce
 content-type: reference
 discoiquuid: 44dfa10f-497e-473f-95d4-8dccae7ebf8e
 pagetitle: Deploying eCommerce with SAP Commerce Cloud
-feature: 전자 상거래 통합 프레임워크
+feature: Commerce Integration Framework
 exl-id: 71d0a249-8ad1-416e-ad78-d651b413e5c3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 2%
+source-wordcount: '755'
+ht-degree: 3%
 
 ---
 
 # SAP Commerce Cloud{#sap-commerce-cloud}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
 >이 페이지에는 hybris 웹 사이트에 대한 링크가 포함되어 있습니다. 특정 페이지의 경우 로그인하려면 계정이 필요합니다.
 
-## SAP Commerce Cloud {#deploying-ecommerce-with-sap-commerce-cloud}과 함께 eCommerce 배포
+## SAP Commerce Cloud으로 eCommerce 배포 {#deploying-ecommerce-with-sap-commerce-cloud}
 
 >[!NOTE]
 >
@@ -33,32 +37,30 @@ ht-degree: 2%
 >
 >`Geometrixx Outdoors Site English (US)`
 
-필요한 eCommerce 패키지 [를 배포하면 hybris 구현(데모 카탈로그 포함)과 함께 eCommerce 기능의 참조 구현과 함께 eCommerce 프레임워크의 전체 기능이 제공됩니다](#packages-needed-for-ecommerce-with-hybris)
+배포 [필요한 eCommerce 패키지](#packages-needed-for-ecommerce-with-hybris) hybris 구현(데모 카탈로그 포함)과 함께 제공된 eCommerce 기능의 참조 구현과 함께 eCommerce 프레임워크의 전체 기능을 제공합니다
 
-Geometrixx Outdoors 사이트의 영어(미국) 분기( `/content/geometrixx-outdoors/en_US`)에서 사용할 수 있습니다.
+영어(미국) 분기( `/content/geometrixx-outdoors/en_US`)을 만들 수 있습니다.
 
-* [제품 정보](#productinformationwithcolorvariants) (해당되는 경우 색상 변형 포함)
+* [제품 정보](#productinformationwithcolorvariants) (해당되는 경우 색상 변형 사용)
 
 * [장바구니 컨텐츠 개요](#shoppingcartcontentoverview)
-* [고객 ](#customersignup) 로그인 업그레이드  [및 고객 로그인](#customersignin)
+* [고객 등록](#customersignup) 및 [고객 로그인](#customersignin)
 
 * [hybris 관리 콘솔에 액세스](#accesstothehybrismanagementconsole)
 
 ### 기술 요구 사항 - hybris 서버 {#technical-requirements-hybris-server}
 
-eCommerce Integration Framework의 hybris 확장이 [Hybris 4](/help/sites-developing/sap-commerce-cloud.md#developing-for-hybris)와의 이전 호환성을 유지하면서 Hybris 5(기본값)를 지원하도록 업데이트되었습니다.
+eCommerce Integration Framework의 hybris 확장이 Hybris 5(기본값)를 지원하도록 업데이트되었으며, [Hybris 4](/help/sites-developing/sap-commerce-cloud.md#developing-for-hybris).
 
 >[!NOTE]
 >
 >* OCC 버전 2에서 최대 hybris 6.4를 지원합니다.
->* [hybris 5 서버를 실행하려면 Java 7이 필요합니다.](https://www.hybris.com/en/architecture-technology)
->* hybris 추가 기능인 [Telco Accelerator](https://www.hybris.com/en/products/telecommunication)는 AEM 확장에서 지원되지 않습니다.
-
+>* 를 실행하려면 Java 7이 필요합니다 [hybris 5 서버.](https://www.hybris.com/en/architecture-technology)
+>* hybris 추가 기능, [Telco Accelerator](https://www.hybris.com/en/products/telecommunication)은 AEM 확장에서 지원되지 않습니다.
 >
 
 
-
-### hybris {#packages-needed-for-ecommerce-with-hybris} 가 있는 eCommerce에 필요한 패키지
+### hybris를 사용하는 eCommerce에 필요한 패키지 {#packages-needed-for-ecommerce-with-hybris}
 
 eCommerce 기능을 설치하려면 다음을 수행해야 합니다.
 
@@ -76,28 +78,28 @@ eCommerce 기능을 설치하려면 다음을 수행해야 합니다.
    * `cq-hybris-content-6.3.2`
    * hybris 특정 API 구현
    * `cq-geometrixx-hybris-content-6.3.2`
-   * hybris 사용 예시를 위한 참조 구현( `geometrixx-outdoors/en_US`)
+   * hybris 사용을 설명하는 참조 구현( `geometrixx-outdoors/en_US`)
 
-### hybris {#installation-of-ecommerce-with-hybris} 를 사용하여 eCommerce 설치
+### hybris를 사용한 eCommerce 설치 {#installation-of-ecommerce-with-hybris}
 
 완전한 구성(데모 카탈로그 사용)을 설치하려면 기본 단계는 다음과 같습니다.
 
-1. [AEM ](/help/sites-deploying/deploy.md)를 설치합니다.
+1. [AEM 설치](/help/sites-deploying/deploy.md).
 1. 모든 Geometrixx 패키지 설치
 
    1. ` [cq-geometrixx-all-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq60/product/cq-geometrixx-all-pkg)`
 
-1. [패키지 관리자](/help/sites-administering/package-manager.md)를 사용하여 데모 컨텐츠 패키지를 설치합니다.
+1. 를 사용하여 데모 컨텐츠 패키지 설치 [패키지 관리자](/help/sites-administering/package-manager.md):
 
    1. ` [cq-hybris-content-6.3.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/cq-hybris-content)`
    1. ` [cq-geometrixx-hybris-content-6.3.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/cq-geometrixx-hybris-content)`
 
-1. [hybris 서버를 다운로드하고 빌드합니다](#download-and-build-your-hybris-server).
+1. [hybris 서버 다운로드 및 빌드](#download-and-build-your-hybris-server).
 1. eCommerce 엔진에서 카탈로그를 구성합니다.
 
-   1. [Geometrixx 아웃도어 스토어를 설정합니다](#setup-the-geometrixx-outdoors-store).
+   1. [Geometrixx 아웃도어 스토어 설정](#setup-the-geometrixx-outdoors-store).
 
-1. [](/help/sites-authoring/qg-page-authoring.md) AEM에서 필요한 보조 페이지를 작성합니다.
+1. [작성자](/help/sites-authoring/qg-page-authoring.md) AEM에서 필요한 모든 보조 페이지.
 
 >[!CAUTION]
 >
@@ -105,7 +107,7 @@ eCommerce 기능을 설치하려면 다음을 수행해야 합니다.
 
 >[!NOTE]
 >
->개발자의 경우 [API 설명서](/help/sites-developing/ecommerce.md#api-documentation)를 다운로드할 수도 있습니다.
+>개발자용 [API 설명서](/help/sites-developing/ecommerce.md#api-documentation) 을 다운로드할 수도 있습니다.
 
 ### hybris 서버 다운로드 및 빌드 {#download-and-build-your-hybris-server}
 
@@ -117,15 +119,15 @@ eCommerce 기능을 설치하려면 다음을 수행해야 합니다.
 
 >[!NOTE]
 >
->이 작업을 완료하려면 시스템에 [Groovy](https://groovy-lang.org/)가 설치되어 있어야 합니다.
+>이 작업을 완료하려면 [그로비](https://groovy-lang.org/) 시스템에 설치되었습니다.
 
-1. hybris 다운로드 사이트에서 **hybris Commerce Suite** 배포를 다운로드합니다.
+1. 다운로드 **hybris Commerce Suite** hybris 다운로드 사이트에서 배포.
 
    >[!CAUTION]
    >
    >여기에 액세스하려면 계정(hybris에서)이 필요합니다.
 
-1. 배포 파일을 필요한 위치(&lt;hybris-root-directory>라고 함)에 압축을 해제합니다.
+1. 배포 파일을 필요한 위치(즉, &lt;hybris-root-directory>).
 1. 명령줄에서 다음을 실행합니다.
 
    ```shell
@@ -141,7 +143,7 @@ eCommerce 기능을 설치하려면 다음을 수행해야 합니다.
    >
    >`ant clean all`
    >
-   >필요한 경우 `Return` 키를 누릅니다.
+   >누르기 `Return` 필요한 경우.
 
 1. 다음 파일을 추출된 hybris 배포의 루트 폴더로 다운로드합니다.
 
@@ -177,19 +179,19 @@ eCommerce 기능을 설치하려면 다음을 수행해야 합니다.
    >
    >시스템에 따라 이러한 단계 중 일부를 완료하는 데 몇 분이 걸릴 수 있습니다.
 
-1. 브라우저에서 **hybris 관리 콘솔**&#x200B;으로 이동합니다.
+1. 브라우저에서 **hybris 관리 콘솔** at:
 
    [http://localhost:9002](http://localhost:9002)
 
-1. **초기화**&#x200B;를 클릭한 다음 초기화 작업을 확인합니다(기존 데이터가 삭제됨).
+1. 클릭 **초기화** 그런 다음 초기화 작업을 확인합니다(기존 데이터를 삭제함).
 
-   완료되었음을 나타내는 `FINISHED` 이 있는 진행률이 콘솔에 표시됩니다.
+   진행률이 콘솔에 표시되고 `FINISHED` 완료를 나타냅니다.
 
    >[!NOTE]
    >
    >시스템에 따라 완료하는 데 몇 분이 걸릴 수 있습니다.
 
-### Geometrixx Outdoors 저장소 {#setup-the-geometrixx-outdoors-store} 설정
+### Geometrixx Outdoors 저장소 설정 {#setup-the-geometrixx-outdoors-store}
 
 이 절차는 데모 스토어 - Geometrixx 온라인 을 업로드하고 구성합니다.
 
@@ -200,31 +202,31 @@ eCommerce 기능을 설치하려면 다음을 수행해야 합니다.
    sh hybrisserver.sh
    ```
 
-1. 브라우저에서 **hybris 관리 콘솔**&#x200B;으로 이동합니다.
+1. 브라우저에서 **hybris 관리 콘솔** at:
 
    [http://localhost:9002/hmc/hybris](http://localhost:9002/hmc/hybris)
 
-1. 사이드바 탐색에서 **시스템** 및 **도구**&#x200B;를 탐색합니다. 그런 다음 **가져오기**&#x200B;를 선택하여 **마법사를 엽니다.CSV 가져오기** 창.
-1. **구성** 탭에서 **업로드**&#x200B;다음 **파일 가져오기**:
+1. 사이드바 탐색에서 다음을 설명합니다. **시스템** 및 **도구**. 그런 다음 을(를) 선택합니다 **가져오기** 열다 **마법사: CSV 가져오기** 창을 엽니다.
+1. 에서 **구성** 탭, **업로드** 다음 **파일 가져오기**:
 
 [파일 가져오기](assets/geometrixx-outdoors-export.csv)
 
-1. **로케일 설정**&#x200B;을 다음과 같이 설정합니다.
+1. 설정 **로케일 설정** 변환:
 
    `en_US - English (United States)`
 
-1. **리소스** 탭을 엽니다.
-1. **** 다음  **Media-Zip을 업로드합니다**.
+1. 를 엽니다. **리소스** 탭.
+1. **업로드** 다음 **Media-Zip**:
 
 [파일 가져오기](assets/geometrixx-outdoors-images.zip)
 
-1. **시작**&#x200B;을 클릭하여 지정된 파일을 가져옵니다. **결과** 탭에는 로그 항목이 표시됩니다.
+1. 클릭 **시작** 지정한 파일을 가져오려면 다음을 수행하십시오. 다음 **결과** 모든 로그 항목이 탭에 표시됩니다.
 
-1. **완료**&#x200B;를 클릭하여 가져오기 창을 닫습니다.
+1. 클릭 **완료** 을 클릭하여 가져오기 창을 닫습니다.
 
-1. 사이드바에서 **시스템**, **도구**, **가져오기**&#x200B;를 선택합니다.
+1. 사이드바에서 **시스템**, 그런 다음 **도구**, 그런 다음 **가져오기**.
 
-1. **** 다음  **가져오기 파일을 업로드합니다**.
+1. **업로드** 다음 **파일 가져오기**:
 
 [파일 가져오기](assets/base-store.csv)
 
@@ -232,13 +234,13 @@ eCommerce 기능을 설치하려면 다음을 수행해야 합니다.
 
 [파일 가져오기](assets/base-store-5_7.csv)
 
-1. **로케일 설정**&#x200B;을 다음과 같이 설정합니다.
+1. 설정 **로케일 설정** 변환:
 
    `en_US - English (United States)`
 
-1. **시작**&#x200B;을 클릭하여 지정된 파일을 가져옵니다. **결과** 탭에는 로그 항목이 표시됩니다.
+1. 클릭 **시작** 지정한 파일을 가져오려면 다음을 수행하십시오. 다음 **결과** 모든 로그 항목이 탭에 표시됩니다.
 
-1. **완료**&#x200B;를 클릭하여 가져오기 창을 닫습니다.
+1. 클릭 **완료** 을 클릭하여 가져오기 창을 닫습니다.
 
 1. 이제 제품 조종실을 사용하여 가져온 카탈로그와 제품을 볼 수 있습니다.
 

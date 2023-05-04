@@ -1,8 +1,8 @@
 ---
 title: SSL 구성 개요
-seo-title: SSL 구성 개요
+seo-title: Overview of configuring SSL
 description: SSL을 구성하여 통신 보안을 강화하는 방법에 대해 배웁니다.
-seo-description: SSL을 구성하여 통신 보안을 강화하는 방법에 대해 배웁니다.
+seo-description: Learn about how to enhance security of communication by configuring SSL.
 uuid: 3e99d2bf-137b-45ba-8384-309624094623
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8e107abb-861f-4063-b600-c87e34639019
 exl-id: 5dc68401-f6bc-42cb-84db-1db805b045c5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 0%
+source-wordcount: '247'
+ht-degree: 3%
 
 ---
 
-# SSL {#overview-of-configuring-ssl} 구성 개요
+# SSL 구성 개요 {#overview-of-configuring-ssl}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 SSL(Secure Sockets Layer) 자격 증명을 만들고 응용 프로그램 서버에서 SSL을 구성하여 응용 프로그램 서버와의 통신 보안을 강화할 수 있습니다.
 
@@ -33,4 +37,4 @@ SSL(Secure Sockets Layer) 자격 증명을 만들고 응용 프로그램 서버�
 >
 >SSL 보안 인증서 및 인증서를 생성할 때 응용 프로그램 서버를 실행하는 데 사용한 것과 동일한 사용자 계정 권한을 사용합니다. 다른 사용자 권한을 사용하여 응용 프로그램 서버를 실행하는 경우 ContentRootURI가 https를 가리키면 양식이 PDFForm 표현물에 대해 올바르게 렌더링되지 않을 수 있습니다.
 
-SSL을 사용하는 LDAP 서버가 있는 경우 User Management가 작동하도록 구성합니다. ([SSL이 활성화된 LDAP 서버에 대한 사용자 관리 구성](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server)을 참조하십시오.)
+SSL을 사용하는 LDAP 서버가 있는 경우 User Management가 작동하도록 구성합니다. (자세한 내용은 [SSL 사용 LDAP 서버에 대한 사용자 관리 구성](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server))

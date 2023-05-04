@@ -9,14 +9,18 @@ topic-tags: document_services, publish
 discoiquuid: f8df5fa3-3843-4110-a46d-9a524d2657cd
 noindex: true
 exl-id: fa39a4e8-ae22-4356-8935-44fdf1f4f609
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2866'
-ht-degree: 2%
+source-wordcount: '2902'
+ht-degree: 3%
 
 ---
 
 # OSGi의 Forms 중심 워크플로우 {#forms-centric-workflow-on-osgi}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ![](do-not-localize/header.png)
 
@@ -67,7 +71,7 @@ AEM은 제공된 워크플로우 단계를 사용하여 워크플로우 모델�
 
 1. 워크플로우 모델 콘솔을 엽니다. 기본 URL은 `https://[Server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. 선택 **[!UICONTROL 만들기]**, 그런 다음 **[!UICONTROL 모델 만들기]**. 워크플로우 모델 추가 대화 상자가 나타납니다.
-1. 을(를) 입력합니다. **[!UICONTROL 제목]** 및 **[!UICONTROL 이름]** (선택 사항). 예를 들어, 담보 대출 신청입니다. **[!UICONTROL Done]**&#x200B;을 누릅니다.
+1. 을(를) 입력합니다. **[!UICONTROL 제목]** 및 **[!UICONTROL 이름]** (선택 사항). 예를 들어, 담보 대출 신청입니다. 탭 **[!UICONTROL 완료]**.
 1. 새로 만든 워크플로우 모델을 선택하고 탭합니다 **편집.** 이제 워크플로우 단계를 추가하여 비즈니스 논리를 작성할 수 있습니다. 워크플로우 모델을 처음 만들면 다음과 같은 내용이 포함됩니다.
 
    * 단계: 흐름 시작 및 흐름 종료. 이러한 단계는 워크플로우의 시작과 끝을 나타냅니다. 이러한 단계는 필수 사항이며 편집하거나 제거할 수 없습니다.

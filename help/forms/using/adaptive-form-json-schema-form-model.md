@@ -1,33 +1,37 @@
 ---
 title: JSON 스키마를 사용하여 적응형 양식 만들기
-seo-title: JSON 스키마를 사용하여 적응형 양식 만들기
-description: '적응형 양식에서 JSON 스키마를 양식 모델로 사용할 수 있으므로 기존 JSON 스키마를 활용하여 적응형 양식을 만들 수 있습니다. '
-seo-description: '적응형 양식에서 JSON 스키마를 양식 모델로 사용할 수 있으므로 기존 JSON 스키마를 활용하여 적응형 양식을 만들 수 있습니다. '
+seo-title: Creating adaptive forms using JSON Schema
+description: 적응형 양식에서 JSON 스키마를 양식 모델로 사용할 수 있으므로 기존 JSON 스키마를 활용하여 적응형 양식을 만들 수 있습니다.
+seo-description: Adaptive forms can use JSON schema as form model, allowing you to leverage existing JSON schemas to create adaptive forms.
 uuid: e73b4b4c-6ad7-4400-b776-5892549970c3
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bcda96ff-6c7d-46c4-a9e8-7e0fb245cde9
-feature: 적응형 양식
+feature: Adaptive Forms
 exl-id: 42c41625-7441-479c-bd07-7e96e867cc0a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1235'
-ht-degree: 3%
+source-wordcount: '1243'
+ht-degree: 4%
 
 ---
 
 # JSON 스키마를 사용하여 적응형 양식 만들기 {#creating-adaptive-forms-using-json-schema}
 
-## 전제 조건 {#prerequisites}
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+## 사전 요구 사항 {#prerequisites}
 
 JSON 스키마를 양식 모델로 사용하여 적응형 양식을 작성하려면 JSON 스키마에 대한 기본적인 이해가 필요합니다. 이 문서 전에 다음 내용을 읽는 것이 좋습니다.
 
 * [적응형 양식 만들기](/help/forms/using/creating-adaptive-form.md)
 * [JSON 스키마](https://json-schema.org/)
 
-## JSON 스키마를 양식 모델 {#using-a-json-schema-as-form-model} 로 사용
+## 양식 모델로 JSON 스키마 사용  {#using-a-json-schema-as-form-model}
 
-AEM Forms에서는 기존 JSON 스키마를 양식 모델로 사용하여 적응형 양식 생성을 지원합니다. 이 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생성하거나 사용하는 구조를 나타냅니다. 사용하는 JSON 스키마는 [v4 사양](https://json-schema.org/draft-04/schema)과 호환되어야 합니다.
+AEM Forms에서는 기존 JSON 스키마를 양식 모델로 사용하여 적응형 양식 생성을 지원합니다. 이 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생성하거나 사용하는 구조를 나타냅니다. 사용하는 JSON 스키마는 준수해야 합니다 [v4 사양](https://json-schema.org/draft-04/schema).
 
 JSON 스키마 사용의 주요 기능은 다음과 같습니다.
 
@@ -62,16 +66,16 @@ JSON 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. �
     </ul> </td> 
   </tr> 
   <tr> 
-   <td><p>{</p> <p>"type" :"string",</p> <p>}</p> </td> 
+   <td><p>{</p> <p>"type" : "string",</p> <p>}</p> </td> 
    <td><br /> <br /> 텍스트 필드<br /> <br /> <br /> </td> 
   </tr> 
   <tr> 
    <td>number 속성<br /> </td> 
-   <td>하위 유형이 float<br />으로 설정된 숫자 필드 </td> 
+   <td>하위 유형이 플로트로 설정된 숫자 필드<br /> </td> 
   </tr> 
   <tr> 
    <td>정수 속성<br /> </td> 
-   <td>하위 유형이 정수<br />로 설정된 숫자 필드 </td> 
+   <td>하위 유형이 정수로 설정된 숫자 필드<br /> </td> 
   </tr> 
   <tr> 
    <td>부울 속성<br /> </td> 
@@ -83,12 +87,12 @@ JSON 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. �
   </tr> 
   <tr> 
    <td>배열 속성</td> 
-   <td>최소 및 최대 값이 minItems 및 maxItems와 동일한 반복 가능한 패널. 단일 배열만 지원됩니다. 따라서 항목 제약 조건은 배열이 아닌 개체여야 합니다.<br /> </td> 
+   <td>최소 및 최대 값이 minItems 및 maxItems와 동일한 반복 가능한 패널. 단일 배열만 지원됩니다. 따라서 항목 제약 조건은 배열이 아니라 개체여야 합니다.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### 일반 스키마 속성 {#common-schema-properties}
+### 공통 스키마 속성 {#common-schema-properties}
 
 적응형 양식은 JSON 스키마에서 사용할 수 있는 정보를 사용하여 생성된 각 필드를 매핑합니다. 특히
 
@@ -102,7 +106,7 @@ JSON 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. �
 * readOnly 속성은 적응형 양식 구성 요소의 읽기 전용 특성을 설정합니다.
 * 필수 속성은 적응형 양식 필드를 필수로 표시하지만 패널(유형이 객체)의 경우 마지막으로 제출된 JSON 데이터에는 해당 객체에 해당하는 빈 값이 있는 필드가 있습니다.
 * 패턴 속성은 적응형 양식에서 유효성 검사 패턴(정규 표현식)으로 설정됩니다.
-* JSON 스키마 파일 확장자는 .schema.json으로 유지해야 합니다. 예: &lt;filename>.schema.json.
+* JSON 스키마 파일 확장자는 .schema.json으로 유지해야 합니다. 예, &lt;filename>.schema.json을 참조하십시오.
 
 ## 샘플 JSON 스키마 {#sample-json-schema}
 
@@ -317,9 +321,9 @@ JSON 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. �
 
 위의 예에서는 고객 레코드를 정의합니다. 여기서 각 고객은 배송 주소와 청구 주소를 모두 갖습니다. 두 주소의 구조는 동일합니다. 주소는 주소, 도시 및 주지가 있으므로 주소를 중복하지 않는 것이 좋습니다. 또한 나중에 변경할 수 있도록 필드를 손쉽게 추가 및 삭제할 수 있습니다.
 
-## JSON 스키마 정의 {#pre-configuring-fields-in-json-schema-definition}에 있는 필드 사전 구성
+## JSON 스키마 정의에서 필드 사전 구성 {#pre-configuring-fields-in-json-schema-definition}
 
-**aem:afProperties** 속성을 사용하여 JSON 스키마 필드를 사전 구성하여 사용자 지정 적응형 양식 구성 요소에 매핑할 수 있습니다. 예는 아래에 나와 있습니다.
+를 사용할 수 있습니다 **aem:afProperties** 사용자 지정 적응형 양식 구성 요소에 매핑하도록 JSON 스키마 필드를 사전 구성하는 속성입니다. 예는 아래에 나와 있습니다.
 
 ```
 {
@@ -339,7 +343,7 @@ JSON 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. �
 }
 ```
 
-## 적응형 양식 구성 요소 {#limit-acceptable-values-for-an-adaptive-form-component} 의 허용 가능한 값 제한
+## 적응형 양식 구성 요소의 허용 가능한 값 제한 {#limit-acceptable-values-for-an-adaptive-form-component}
 
 JSON 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 구성 요소에 허용 가능한 값을 제한할 수 있습니다.
 
@@ -347,7 +351,7 @@ JSON 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
  <tbody> 
   <tr> 
    <td><p><strong> 스키마 속성</strong></p> </td> 
-   <td><p><strong>데이터 유형</strong></p> </td> 
+   <td><p><strong>데이터 형식</strong></p> </td> 
    <td><p><strong>설명</strong></p> </td> 
    <td><p><strong>구성 요소</strong></p> </td> 
   </tr> 
@@ -359,7 +363,7 @@ JSON 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
     <ul> 
      <li>숫자 상자</li> 
      <li>숫자 스텝퍼<br /> </li> 
-     <li>날짜 선택</li> 
+     <li>날짜 선택기</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -370,7 +374,7 @@ JSON 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
     <ul> 
      <li>숫자 상자</li> 
      <li>숫자 스텝퍼</li> 
-     <li>날짜 선택</li> 
+     <li>날짜 선택기</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -381,7 +385,7 @@ JSON 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
     <ul> 
      <li>숫자 상자</li> 
      <li>숫자 스텝퍼</li> 
-     <li>날짜 선택</li> 
+     <li>날짜 선택기</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -392,7 +396,7 @@ JSON 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
     <ul> 
      <li>숫자 상자</li> 
      <li>숫자 스텝퍼</li> 
-     <li>날짜 선택</li> 
+     <li>날짜 선택기</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -437,7 +441,7 @@ JSON 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
  </tbody> 
 </table>
 
-## 지원되지 않는 구문 {#non-supported-constructs}
+## 지원되지 않는 구문  {#non-supported-constructs}
 
 적응형 양식은 다음 JSON 스키마 구문을 지원하지 않습니다.
 
@@ -446,7 +450,7 @@ JSON 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
 * 하나, 임의, 모두, 아님
 * 단일 배열만 지원됩니다. 따라서 항목 제약 조건은 개체가 되고 배열이 아니어야 합니다.
 
-## FAQ {#frequently-asked-questions}
+## 자주 묻는 질문 {#frequently-asked-questions}
 
 **반복 가능한 하위 양식(minOccourse 또는 maxOccurts 값이 1보다 큼)에 대해 하위 양식의 개별 요소(복잡한 형식에서 생성된 구조)를 드래그할 수 없는 이유는 무엇입니까?**
 

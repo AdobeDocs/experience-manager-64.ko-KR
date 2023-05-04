@@ -10,16 +10,20 @@ discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 exl-id: bb97b649-a50d-49c8-97aa-18c32f18d527
 feature: Components
 role: User
-source-git-commit: 50b657456d2a0eaaaf681d3902eba38b15d00e12
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2809'
-ht-degree: 41%
+source-wordcount: '2845'
+ht-degree: 29%
 
 ---
 
 # 페이지에 Dynamic Media 자산 추가 {#adding-dynamic-media-assets-to-pages}
 
-웹 사이트에서 사용하는 자산에 Dynamic Media 기능을 추가하기 위해 **Dynamic Media** 또는 **대화형 미디어** 구성 요소를 생성하지 않습니다. 레이아웃 모드로 전환하고 다이내믹 미디어 구성 요소를 활성화하여 이렇게 합니다. Then you can add these components to the page and add assets to the component. 다이내믹 미디어 및 대화형 미디어 구성 요소는 편리하게도 이미지를 추가할지 아니면 비디오를 추가할지를 판단하고 그에 따라 사용 가능한 선택 사항도 달라집니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+웹 사이트에서 사용하는 자산에 Dynamic Media 기능을 추가하기 위해 **Dynamic Media** 또는 **대화형 미디어** 구성 요소를 생성하지 않습니다. 레이아웃 모드로 전환하고 다이내믹 미디어 구성 요소를 활성화하여 이렇게 합니다. Then you can add these components to the page and add assets to the component. Dynamic Media 및 대화형 미디어 구성 요소는 편리하게도 이미지를 추가하는지 아니면 비디오를 추가하는지 여부와 그에 따라 사용 가능한 옵션이 달라집니다.
 
 AEM을 WCM으로 사용하는 경우에는 다이내믹 미디어 자산을 페이지에 직접 추가합니다. If you are using a third-party for your WCM, either [link](linking-urls-to-yourwebapplication.md) or [embed](embed-code.md) your assets. For a responsive third-party web site, see [delivering optimized images to a responsive site](responsive-site.md).
 
@@ -82,7 +86,7 @@ AEM을 WCM으로 사용하는 경우에는 다이내믹 미디어 자산을 페�
 
    ![chlimage_1-538](assets/chlimage_1-538.png)
 
-* 사이트 선택기에서 원하는 페이지 또는 페이지 그룹을 선택합니다. 탭 **[!UICONTROL 속성]** 을(를) 선택하고 을(를) 선택합니다. **[!UICONTROL 고급]** 탭. 현지화를 위해 원하는 언어를 선택합니다.
+* 사이트 선택기에서 원하는 페이지 또는 페이지 그룹을 선택합니다. 탭 **[!UICONTROL 속성]** 을(를) 선택하고 을(를) 선택합니다. **[!UICONTROL 고급]** 탭. Select the desired language for localization.
 
    >[!NOTE]
    >
@@ -112,9 +116,8 @@ Dynamic Media 구성 요소는 편리하게도 이미지를 추가하는지 아�
 >
 >Dynamic Media 구성 요소를 추가하고 **[!UICONTROL Dynamic Media 설정]**&#x200B;이 비어 있거나 자산을 제대로 추가할 수 없는 경우, 다음을 확인하십시오.
 >
->* [Dynamic Media를 활성화](config-dynamic.md)했습니다. Dynamic Media는 기본적으로 비활성화됩니다.
->* 이미지에 피라미드형 tiff 파일이 있습니다. 다이내믹 미디어를 활성화하기 전에 가져온 이미지에는 피라미드형 tiff 파일이 없습니다.
-
+>* 다음을 수행합니다. [Dynamic Media 활성화](config-dynamic.md). Dynamic Media는 기본적으로 비활성화됩니다.
+>* 이미지에 피라미드형 tiff 파일이 있습니다. dynamic media가 활성화되기 전에 가져온 이미지에는 피라미드형 tiff 파일이 없습니다.
 >
 
 
@@ -122,7 +125,7 @@ Dynamic Media 구성 요소는 편리하게도 이미지를 추가하는지 아�
 
 Dynamic Media 구성 요소를 사용하면 이미지 세트, 스핀 세트 및 혼합 미디어 세트를 포함한 다이내믹 이미지를 추가할 수 있습니다. 확대하거나 축소할 수 있고, 해당하는 경우 스핀 세트 내의 이미지를 회전하거나 다른 유형의 세트에서 이미지를 선택할 수 있습니다.
 
-구성 요소에서 바로 뷰어 사전 설정, 이미지 사전 설정 또는 이미지 형식을 구성할 수도 있습니다. 이미지가 응답하도록 하기 위해 중단점을 설정하거나 응답형 이미지 사전 설정을 적용할 수 있습니다.
+구성 요소에서 바로 뷰어 사전 설정, 이미지 사전 설정 또는 이미지 형식을 구성할 수도 있습니다. 이미지가 응답하도록 하려면 중단점을 설정하거나 응답형 이미지 사전 설정을 적용할 수 있습니다.
 
 다음 Dynamic Media 설정을 **[!UICONTROL 편집]** 아이콘을 클릭한 다음 **[!UICONTROL Dynamic Media 설정]**.
 
@@ -146,7 +149,7 @@ Dynamic Media 구성 요소를 사용하면 이미지 세트, 스핀 세트 및 
 이미지 세트, 스핀 세트 또는 혼합 미디어 세트를 보는 경우에는 이 선택 사항을 사용할 수 없습니다.
 
 * **[!UICONTROL 중단점]**
-응답형 사이트에서 이 자산을 사용하는 경우 이미지 중단점을 추가해야 합니다. 이미지 중단점은 쉼표(,)로 구분해야 합니다. 이 선택 사항은 이미지 사전 설정에 정의된 높이나 폭이 없는 경우에 작동합니다.
+응답형 사이트에서 이 자산을 사용하는 경우 이미지 중단점을 추가해야 합니다. 이미지 중단점은 쉼표(,)로 구분해야 합니다. 이 옵션은 이미지 사전 설정에 정의된 높이 또는 너비가 없는 경우 작동합니다.
 이미지 세트, 스핀 세트 또는 혼합 미디어 세트를 보는 경우에는 이 선택 사항을 사용할 수 없습니다.
 구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 클릭하여 다음 고급 설정을 편집할 수 있습니다.
 
@@ -207,7 +210,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 >[!NOTE]
 >
->기본적으로 Dynamic Media 이미지 구성 요소는 적응형입니다. 고정 크기로 설정하려면 [!UICONTROL 고급] 탭 **[!UICONTROL 너비]** 및 **[!UICONTROL 높이]**.
+>기본적으로 Dynamic Media 이미지 구성 요소는 적응형입니다. If you want to make it a fixed size, set it in the component in the [!UICONTROL Advanced] tab with the **[!UICONTROL Width]** and **[!UICONTROL Height]**.
 
 * **[!UICONTROL 이미지 수정자]**
 추가적인 이미지 명령을 제공하여 이미지 효과를 적용할 수 있습니다. 이러한 내용은 이미지 사전 설정 및 이미지 제공 명령 참조에 설명되어 있습니다.
@@ -233,7 +236,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 대화형 미디어 구성 요소는 핫스팟이나 이미지 맵과 같은 상호 작용이 있는 자산을 위한 것입니다. 대화형 이미지, 대화형 비디오 또는 회전 배너가 있는 경우 대화형 미디어 구성 요소를 사용하십시오.
 
-대화형 미디어 구성 요소는 편리하게도 이미지를 추가하는지 아니면 비디오를 추가하는지에 따라 사용 가능한 선택 사항이 달라집니다. 또한 뷰어는 응답형이어서 화면 크기가 스크린의 크기에 따라 자동으로 변경됩니다. 모든 뷰어는 HTML5 뷰어입니다.
+대화형 미디어 구성 요소는 편리하게도 이미지를 추가하는지 아니면 비디오를 추가하는지에 따라 사용 가능한 선택 사항이 달라집니다. 또한 뷰어는 응답형입니다. 화면 크기가 화면 크기에 따라 자동으로 변경됩니다. 모든 뷰어는 HTML5 뷰어입니다.
 
 >[!NOTE]
 >
@@ -253,16 +256,16 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 * **[!UICONTROL 너비]** 및 **[!UICONTROL 높이]**
 비디오의 크기를 고정하려면 값을 픽셀 단위로 입력하십시오. 이 값을 공백으로 두면 적응형으로 설정됩니다.
 
-구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 클릭하여 다음 **[!UICONTROL 장바구니에 추가]** 설정을 편집할 수 있습니다.
+다음을 편집할 수 있습니다 **[!UICONTROL 장바구니에 추가]** 을 클릭하여 설정 **[!UICONTROL 편집]** 참조하십시오.
 
 * **[!UICONTROL 제품 자산 표시]**
-기본적으로 이 값이 선택되어 있습니다. 제품 자산은 상거래 모듈에 정의된 제품의 이미지를 보여줍니다. 제품 자산을 표시하지 않도록 하려면 확인 표시를 지우십시오.
+기본적으로 이 값이 선택되어 있습니다. 제품 자산은 상거래 모듈에 정의된 제품의 이미지를 보여줍니다. 제품 자산을 표시하지 않으려면 확인 표시를 지우십시오.
 
 * **[!UICONTROL 제품 가격 표시]**
-기본적으로 이 값이 선택되어 있습니다. 제품 가격은 상거래 모듈에 정의된 항목 가격을 보여줍니다. 제품 가격을 표시하지 않도록 하려면 확인 표시를 지우십시오.
+기본적으로 이 값이 선택되어 있습니다. 제품 가격은 상거래 모듈에 정의된 항목의 가격을 보여줍니다. 제품 가격을 표시하지 않으려면 확인 표시를 지우십시오.
 
 * **[!UICONTROL 제품 양식 표시]**
-기본적으로 이 값은 선택되어 있지 않습니다. 제품 양식에는 크기 및 색상과 같은 모든 제품 변형이 포함됩니다. 제품 변형을 표시하지 않도록 하려면 확인 표시를 지우십시오.
+기본적으로 이 값은 선택되어 있지 않습니다. 제품 양식에는 크기 및 색상과 같은 모든 제품 변형이 포함되어 있습니다. 제품 변형을 표시하지 않도록 하려면 확인 표시를 지우십시오.
 
 ### 파노라마 미디어 구성 요소 {#panoramic-media-component}
 
@@ -280,7 +283,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 * **[!UICONTROL 뷰어 사전 설정]**
 뷰어 사전 설정 드롭다운 메뉴에서 기존 뷰어를 선택합니다.
 
-보려는 뷰어 사전 설정이 표시되지 않으면 게시되었는지 확인합니다. 뷰어 사전 설정을 사용하려면 먼저 게시해야 합니다. [뷰어 사전 설정 관리](managing-viewer-presets.md)를 참조하십시오. 
+보려는 뷰어 사전 설정이 표시되지 않으면 게시되었는지 확인합니다. 뷰어 사전 설정을 사용하려면 먼저 게시해야 합니다. 자세한 내용은 [뷰어 사전 설정 관리](managing-viewer-presets.md).
 
 ### HTTP/2를 사용하여 Dynamic Media 자산 전달 {#using-http-to-delivery-dynamic-media-assets}
 

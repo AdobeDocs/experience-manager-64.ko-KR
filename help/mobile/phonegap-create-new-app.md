@@ -10,18 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 27605eb7-59b2-42d4-8cc5-02cfa52b4491
 exl-id: 79d2dbfb-5e44-4a96-ab9b-ba5d93fc3aae
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 1%
+source-wordcount: '674'
+ht-degree: 2%
 
 ---
 
 # 만들기 마법사를 사용하여 새 AEM Mobile 앱 만들기{#creating-a-new-aem-mobile-app-using-create-wizard}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
 AEM Mobile 앱은 페이지 구조 및 속성을 정의하는 블루프린트를 기반으로 합니다. 다음 응용 프로그램 속성을 구성할 수 있습니다.
 
@@ -73,7 +77,7 @@ AEM 개발자가 사용할 수 있는 앱 템플릿을 선택합니다. 자세�
 * [앱 메타데이터 편집](/help/mobile/phonegap-editmetadata.md)
 * [앱 정의](/help/mobile/phonegap-app-definitions.md)
 * [기존 하이브리드 앱 가져오기](/help/mobile/phonegap-adding-content-to-imported-app.md)
-* [컨텐츠 서비스](/help/mobile/develop-content-as-a-service.md)
+* [Content Services](/help/mobile/develop-content-as-a-service.md)
 
 ## 추가 리소스 {#additional-resources}
 

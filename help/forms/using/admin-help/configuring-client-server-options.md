@@ -11,14 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 feature: Document Security
 exl-id: 571c1391-dc60-4bed-b4f9-482a508e4bd4
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '10250'
+source-wordcount: '10286'
 ht-degree: 0%
 
 ---
 
 # 문서 보안 서버 구성 {#configure-the-document-security-server}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 1. 관리 콘솔에서 서비스 > 문서 보안 > 구성 > 서버 구성을 클릭합니다.
 1. 설정을 구성하고 확인 을 클릭합니다.
@@ -800,7 +804,7 @@ Microsoft Office용 Acrobat, Adobe Reader 및 Acrobat Reader DC 확장 등 문�
 
 **Acrobat 및 Adobe Reader**
 
-Acrobat 또는 Adobe Reader이 문서 보안에서 서비스를 요청하면 다음 제품 정보를 제공합니다.
+Acrobat 또는 Adobe Reader이 문서 보안에서 서비스를 요청할 때 다음 제품 정보를 제공합니다.
 
 * **통합자:** Adobe Systems, Inc.
 * **통합자 버전:** 1.0

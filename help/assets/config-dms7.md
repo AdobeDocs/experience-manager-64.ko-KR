@@ -8,14 +8,18 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: a045c70f8cbfa03295c4fcbfbb2df1831c3f7292
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '5619'
+source-wordcount: '5655'
 ht-degree: 5%
 
 ---
 
 # Dynamic Media 구성 - Scene7 모드 {#configuring-dynamic-media-scene-mode}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 개발, 스테이징 및 라이브 프로덕션과 같은 다양한 환경에 대해 Adobe Experience Manager 설정을 사용하는 경우 각 환경에 대해 Dynamic Media Cloud Services을 구성해야 합니다.
 
@@ -105,7 +109,7 @@ Dynamic Media Cloud Services을 구성하기 전에 암호를 변경합니다. D
    >
    >자산이 활성화되면 모든 업데이트가 즉시 S7 Delivery에 실시간으로 게시됩니다.
 
-   ![dynamicmediaconfiguration2업데이트됨](assets/dynamicmediaconfiguration2updated.png)
+   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. 탭 **[!UICONTROL 저장]**.
 1. Dynamic Media 컨텐츠를 게시하기 전에 안전하게 미리 보려면 Dynamic Media에 연결하려면 Experience Manager 작성자 인스턴스를 &quot;&quot;허용 목록에 추가하다해야 합니다.
@@ -222,7 +226,7 @@ Dynamic Media에서 처리할 자산 유형을 정의하고 고급 자산 처리
 * Adobe Illustrator 파일(.AI) 또는 Adobe Photoshop Encapsulated PostScript® 파일(.EPS)을 래스터화합니다.
 * [비디오 프로필](/help/assets/video-profiles.md) 및 [이미징 프로필](/help/assets/image-profiles.md) 는 각각 비디오와 이미지 처리를 정의하는 데 사용할 수 있습니다.
 
-[자산 업로드](managing-assets-touch-ui.md#uploading-assets)를 참조하십시오.
+자세한 내용은 [자산 업로드](managing-assets-touch-ui.md#uploading-assets).
 
 **지원되는 형식에 대한 MIME 유형을 편집하려면:**
 

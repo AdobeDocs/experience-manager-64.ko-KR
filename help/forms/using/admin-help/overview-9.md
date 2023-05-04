@@ -1,8 +1,8 @@
 ---
 title: Forms 워크플로우 개요
-seo-title: Forms 워크플로우 개요
+seo-title: Overview of Forms workflow
 description: Forms 워크플로우를 통해 사용자는 인간 중심 프로세스를 디자인, 관리 및 최적화할 수 있습니다. 또한 Forms Workflow를 사용하여 시스템과 사용자를 연결하는 자동화된 비즈니스 프로세스 애플리케이션을 관리할 수 있습니다.
-seo-description: Forms 워크플로우를 통해 사용자는 인간 중심 프로세스를 디자인, 관리 및 최적화할 수 있습니다. 또한 Forms Workflow를 사용하여 시스템과 사용자를 연결하는 자동화된 비즈니스 프로세스 애플리케이션을 관리할 수 있습니다.
+seo-description: Forms workflow lets users design, manage, and optimize human-centric processes. Using forms workflow, users can also manage automated business-process applications that connect systems and people.
 uuid: b28ada7c-de75-416a-b2c8-f6494be5330c
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7d2a9de8-13d1-4981-9ba2-9654127556b8
 exl-id: df534e6d-ec34-4851-bbd2-5b9b06d1da10
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 2%
+source-wordcount: '290'
+ht-degree: 4%
 
 ---
 
 # Forms 워크플로우 개요 {#overview-of-forms-workflow}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 Forms 워크플로우를 통해 사용자는 인간 중심 프로세스를 디자인, 관리 및 최적화할 수 있습니다. 또한 Forms Workflow를 사용하여 시스템과 사용자를 연결하는 자동화된 비즈니스 프로세스 애플리케이션을 관리할 수 있습니다.
 

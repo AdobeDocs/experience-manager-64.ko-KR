@@ -7,10 +7,11 @@ breadcrumb-title: Mobile 안내서
 user-guide-description: 모바일 앱용 컨텐츠를 생성 및 관리합니다.
 feature: Mobile
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+hide: true
+source-git-commit: b61797a9096c0473658d6aabfb584a53e42095b7
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 12%
+ht-degree: 10%
 
 ---
 
@@ -47,7 +48,7 @@ ht-degree: 12%
    + [모바일 앱용 페이지 템플릿](apps-architecture.md)
    + [컨텐츠 속성을 사용하여 컨텐츠 내보내기](on-demand-content-properties-exporting.md)
    + [렌더링 및 전달](rendering-and-delivery.md)
-   + [컨텐츠 서비스](developing-content-services.md)
+   + [Content Services](developing-content-services.md)
    + [컨텐츠 전달](develop-content-as-a-service.md)
 + On-Demand Services 앱 관리 {#administering}
    + [AEM Mobile On-Demand](aem-mobile.md)

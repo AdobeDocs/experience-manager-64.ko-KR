@@ -12,14 +12,18 @@ discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 exl-id: 4b9fd241-82db-466e-95bd-6d212717801d
 feature: Content Fragments
 role: User
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '1004'
 ht-degree: 3%
 
 ---
 
 # 컨텐츠 조각에 대한 번역 프로젝트 만들기 {#creating-translation-projects-for-content-fragments}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 Adobe Experience Manager(AEM) Assets는 자산 외에 [콘텐츠 조각](content-fragments.md) (변형 포함) 컨텐츠 조각에서 언어 복사 워크플로우를 실행하려면 추가 최적화가 필요하지 않습니다. 각 워크플로우에서 전체 컨텐츠 조각이 번역을 위해 전송됩니다.
 

@@ -1,8 +1,8 @@
 ---
 title: 로그 작업
-seo-title: 로그 작업
+seo-title: Working with Logs
 description: 로그 작업을 통해 AEM 문제를 해결하는 방법을 알아봅니다.
-seo-description: 로그 작업을 통해 AEM 문제를 해결하는 방법을 알아봅니다.
+seo-description: Learn how to troubleshoot AEM by working with logs.
 uuid: b64e0b25-5228-4c2f-9cc1-dde524134026
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,18 @@ topic-tags: operations
 content-type: reference
 discoiquuid: b4c1cb82-865b-48dd-b5c0-946e6610ce8e
 exl-id: 201e2b57-17c0-4454-9b0e-026e2c95ac63
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 3%
+source-wordcount: '270'
+ht-degree: 6%
 
 ---
 
 # 로그 작업{#working-with-logs}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 이 섹션에는 문제 해결에 도움이 되는 로그에 대한 자세한 정보가 포함되어 있습니다.
 
@@ -27,7 +31,7 @@ CRX는 세부 로그를 기록합니다. 압축을 풀고 빠른 시작을 시�
 * crx-quickstart/server/logs
 * crx-quickstart/logs
 
-## 디버그 로그 수준 {#activating-the-debug-log-level} 활성화
+## 디버그 로그 수준 활성화 {#activating-the-debug-log-level}
 
 기본 로그 수준은 INFO, 즉 DEBUG 메시지는 기록되지 않습니다.
 
@@ -55,7 +59,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ## 문제 해결에 사용되는 세부 정보 옵션 {#verbose-option-used-for-troubleshooting}
 
-CRX를 시작할 때 다음과 같이 명령줄에 -v (세부 정보) 옵션을 추가할 수 있습니다.&quot;
+CRX를 시작할 때 다음과 같이 명령줄에 -v (세부 정보) 옵션을 추가할 수 있습니다. &quot;
 
 ` java -jar crx-<*version*>-<*edition*>.jar -v`
 

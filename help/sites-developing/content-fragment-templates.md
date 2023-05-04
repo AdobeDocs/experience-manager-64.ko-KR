@@ -1,8 +1,8 @@
 ---
 title: 컨텐츠 조각 템플릿
-seo-title: 컨텐츠 조각 템플릿
+seo-title: Content Fragment Templates
 description: 템플릿은 컨텐츠 조각을 만들 때 선택되며 기본 구조, 요소 및 변형을 새 조각에 제공합니다
-seo-description: 템플릿은 컨텐츠 조각을 만들 때 선택되며 기본 구조, 요소 및 변형을 새 조각에 제공합니다
+seo-description: Templates are selected when creating a content fragmen and provide the new fragment with the basic structure, element, and variation
 uuid: 74675e82-26b4-4105-8031-21de51131236
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,10 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 8c399a27-abdb-41fb-bd76-f30d22f1d68f
 exl-id: fdf1aba8-17fa-473a-9c32-7189d0628927
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 5%
+source-wordcount: '668'
+ht-degree: 6%
 
 ---
 
@@ -21,11 +21,15 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0)](/help/release-notes/sp-release-notes.md)를 적용해야 합니다.
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 >[!CAUTION]
 >
->[이제 컨텐츠 조각 ](/help/assets/content-fragments-models.md) 모델을 사용하여 모든 조각을 만드는 것이 좋습니다.
+>일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0)](/help/release-notes/sp-release-notes.md).
+
+>[!CAUTION]
+>
+>[컨텐츠 조각 모델](/help/assets/content-fragments-models.md) 이제 모든 조각을 만드는 데 권장됩니다.
 >
 >컨텐츠 조각 모델은 We.Retail의 모든 예에 사용됩니다.
 
@@ -45,23 +49,21 @@ ht-degree: 5%
 
    런타임 시 변경해야 하는 인스턴스 전체 고객별 템플릿의 위치입니다.
 
-우선 순위 순서는 (내림차순) `/conf`, `/apps`, `/libs`입니다.
+우선 순위 순서는 (내림차순) `/conf`, `/apps`, `/libs`.
 
 >[!CAUTION]
 >
->***은 `/libs` 경로에서 아무 것도 변경하지 않아야 합니다.***
+>사용자 ***반드시*** 에서 아무것도 변경하지 않음 `/libs` 경로.
 >
->이는 다음 번에 인스턴스를 업그레이드할 때 `/libs` 컨텐츠를 덮어쓰게 되기 때문입니다(핫픽스 또는 기능 팩을 적용할 때 덮어쓸 수 있음).
+>왜냐하면 `/libs` 는 다음에 인스턴스를 업그레이드할 때 덮어쓰여지며, 핫픽스 또는 기능 팩을 적용할 때 덮어쓸 수 있습니다.
 >
 >구성 및 기타 변경에 대해 권장되는 방법은 다음과 같습니다.
 >
->1. `/apps` 아래에 필요한 항목(즉, `/libs`에 있는 항목)을 다시 만듭니다.
-   >
-   >
-1. `/apps` 내에서 변경
+>1. 필요한 항목(즉, 가 존재함에 따라)을 다시 만듭니다 `/libs`) 아래의 `/apps`
+>
+>1. 내에서 변경 `/apps`
 
 >
-
 
 
 템플릿의 기본 구조는 다음과 같습니다.
@@ -125,12 +127,12 @@ conf
   <tr> 
    <td><code>jcr:title</code></td> 
    <td><p><code>String</code></p> <p>필수<br /> </p> </td> 
-   <td>템플릿의 제목( <strong>조각 만들기</strong> 마법사에 표시됨)입니다.</td> 
+   <td>템플릿의 제목(에 표시됨) <strong>조각 만들기</strong> 마법사).</td> 
   </tr> 
   <tr> 
    <td><code>jcr:description</code></td> 
    <td><p><code>String</code></p> <p>옵션</p> </td> 
-   <td>템플릿의 목적을 설명하는 텍스트입니다( <strong>조각 만들기</strong> 마법사에 표시됨).</td> 
+   <td>템플릿의 목적을 설명하는 텍스트입니다( <strong>조각 만들기</strong> 마법사).</td> 
   </tr> 
   <tr> 
    <td><code>initialAssociatedContent</code></td> 
@@ -140,12 +142,12 @@ conf
   <tr> 
    <td><code>precreateElements</code></td> 
    <td><p><code>Boolean</code></p> <p>필수</p> </td> 
-   <td><p><code>true</code>를 지정하는 경우 컨텐츠 조각을 만들 때 컨텐츠 조각의 요소(마스터 요소 제외)를 나타내는 하위 자산을 만들어야 합니다.<em>false</em>를 "on the fly"로 만들어야 하는 경우</p> <p><strong>참고</strong>:현재 이 매개 변수는 로 설정해야 합니다 <code>true</code>.</p> </td> 
+   <td><p><code>true</code>를 지정하는 경우 컨텐츠 조각을 만들 때 컨텐츠 조각의 요소(마스터 요소 제외)를 나타내는 하위 자산을 만들어야 합니다. <em>false</em> "즉시"로 만들어야 하는 경우.</p> <p><strong>참고</strong>: 현재 이 매개 변수는 <code>true</code>.</p> </td> 
   </tr> 
   <tr> 
    <td><code>version</code></td> 
    <td><p><code>Long</code></p> <p>필수</p> </td> 
-   <td><p>컨텐츠 구조의 버전현재 지원됨:</p> <p><strong>참고</strong>:현재 이 매개 변수는 로 설정해야 합니다 <code>2</code>.<br /> </p> </td> 
+   <td><p>컨텐츠 구조의 버전 현재 지원됨:</p> <p><strong>참고</strong>: 현재 이 매개 변수는 <code>2</code>.<br /> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -162,7 +164,7 @@ conf
   <tr> 
    <td><code>elements</code> </td> 
    <td><p><code>nt:unstructured</code></p> <p>필수</p> </td> 
-   <td><p>컨텐츠 조각 요소의 정의를 포함하는 노드입니다. 필수 항목이며 <strong>Main</strong> 요소에 대해 하나 이상의 하위 노드를 포함해야 하지만 [1..n] 하위 노드.</p> <p>템플릿을 사용하면 요소 하위 분기가 조각의 모델 하위 분기에 복사됩니다.</p> <p>첫 번째 요소(CRXDE Lite에서 표시됨)는 자동으로 <i>main</i> 요소로 간주됩니다.노드 이름은 관련이 없으며 노드 자체가 주 자산으로 표시된다는 사실 이외에 특별한 의미를 갖지 않습니다.다른 요소는 하위 자산으로 처리됩니다.</p> </td> 
+   <td><p>컨텐츠 조각 요소의 정의를 포함하는 노드입니다. 필수 항목이며, <strong>기본</strong> 요소를 포함하지만 [1..n] 하위 노드.</p> <p>템플릿을 사용하면 요소 하위 분기가 조각의 모델 하위 분기에 복사됩니다.</p> <p>첫 번째 요소(CRXDE Lite에서 표시됨)는 자동으로 <i>main</i> 요소; 노드 이름은 관련이 없으며 노드 자체가 주 자산으로 표시된다는 사실 이외에 특별한 의미를 갖지 않습니다. 다른 요소는 하위 자산으로 처리됩니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -189,12 +191,12 @@ conf
   <tr> 
    <td><code>defaultContent</code></td> 
    <td><p><code>String</code></p> <p>옵션</p> <p>기본값: ""</p> </td> 
-   <td>요소의 초기 컨텐츠;<code>precreateElements</code><i> = </i><code>true</code>인 경우에만 사용됩니다.</td> 
+   <td>요소의 초기 컨텐츠; 다음 경우에만 사용됨 <code>precreateElements</code><i> = </i><code>true</code></td> 
   </tr> 
   <tr> 
    <td><code>initialContentType</code></td> 
    <td><p><code>String</code></p> <p>옵션</p> <p>기본값: <code>text/html</code></p> </td> 
-   <td><p>요소의 초기 컨텐츠 유형;<code>precreateElements</code><i> = </i><code>true</code>; 인 경우에만 사용됩니다.현재 지원됨:</p> 
+   <td><p>요소의 초기 컨텐츠 유형; 다음 경우에만 사용됨 <code>precreateElements</code><i> = </i><code>true</code>; 현재 지원됨:</p> 
     <ul> 
      <li><code>text/html</code></li> 
      <li><code>text/plain</code></li> 
@@ -204,7 +206,7 @@ conf
   <tr> 
    <td><code>name</code></td> 
    <td><p><code>String</code></p> <p>필수</p> </td> 
-   <td>요소의 내부 이름입니다.조각 유형에 대해 고유해야 합니다.</td> 
+   <td>요소의 내부 이름입니다. 조각 유형에 대해 고유해야 합니다.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -238,18 +240,18 @@ conf
   <tr> 
    <td><code>&lt;<i>variation-name</i>&gt;</code> </td> 
    <td><p><code>nt:unstructured</code></p> <p>변형 노드가 있으면 필요합니다.</p> </td> 
-   <td><p>초기 변형을 정의합니다.<br /> 변형은 기본적으로 컨텐츠 조각의 모든 요소에 추가됩니다.</p> <p>변형은 각 요소와 동일한 초기 컨텐츠를 갖게 됩니다( <code class="code">defaultContent/
-       initialContentType</code> 참조)</p> </td> 
+   <td><p>초기 변형을 정의합니다.<br /> 변형은 기본적으로 컨텐츠 조각의 모든 요소에 추가됩니다.</p> <p>변형은 각 요소와 동일한 초기 컨텐츠를 갖게 됩니다( 참조) <code class="code">defaultContent/
+       initialContentType</code>)</p> </td> 
   </tr> 
   <tr> 
    <td><code>jcr:title</code></td> 
    <td><p><code>String</code></p> <p>필수</p> </td> 
-   <td>변형의 제목(조각 편집기의 <strong>변형</strong> 탭(왼쪽 레일)에 표시됨)입니다.</td> 
+   <td>변형의 제목(조각 편집기의 <strong>변형</strong> 탭 (왼쪽 레일).</td> 
   </tr> 
   <tr> 
    <td><code>jcr:desciption</code></td> 
    <td><p><code>String</code></p> <p>옵션</p> <p>기본값: ""</p> </td> 
-   <td>변형 <span>(조각 편집기의 <strong>변형</strong> 탭(왼쪽 레일)에 표시됨)에 대한 설명을 제공하는 텍스트입니다.</span></td> 
+   <td>변형에 대한 설명을 제공하는 텍스트입니다 <span>(조각 편집기의 <strong>변형</strong> 탭 (왼쪽 레일).</span></td> 
   </tr> 
  </tbody> 
 </table>

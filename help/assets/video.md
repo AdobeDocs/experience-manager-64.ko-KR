@@ -8,14 +8,18 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: f2b7ffa37bcb14e7be47c10ea9d3e39f89e1858d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '10401'
+source-wordcount: '10437'
 ht-degree: 4%
 
 ---
 
 # 비디오 {#video}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 이 섹션에서는 Dynamic Media에서 비디오 작업을 설명합니다.
 
@@ -200,32 +204,32 @@ HLS(HTTP Live Streaming)는 네트워크 대역폭 용량에 따라 재생을 �
    <td><strong>비디오 재생 모드</strong></td>
   </tr>
   <tr> 
-   <td>데스크톱</td>
+   <td>데스크탑</td>
    <td>Internet Explorer 9 및 10</td>
    <td>점진적 다운로드.</td>
   </tr>
   <tr> 
-   <td>데스크톱</td>
+   <td>데스크탑</td>
    <td>Internet Explorer 11+</td>
    <td>Windows 8 및 Windows 10의 경우 - HLS가 요청될 때마다 HTTPS를 강제로 사용합니다. 알려진 제한 사항: HLS의 HTTP가 이 브라우저/운영 체제 조합에서 작동하지 않습니다<br /> <br /> Windows 7 - Progressive 다운로드의 경우. HTTP 및 HTTPS 프로토콜을 선택하는 표준 로직을 사용합니다.</td>
   </tr>
   <tr> 
-   <td>데스크톱</td>
+   <td>데스크탑</td>
    <td>Firefox 23-44</td>
    <td>점진적 다운로드.</td>
   </tr>
   <tr> 
-   <td>데스크톱</td>
+   <td>데스크탑</td>
    <td>Firefox 45 이상</td>
    <td>HLS 비디오 스트리밍.</td>
   </tr>
   <tr> 
-   <td>데스크톱</td>
+   <td>데스크탑</td>
    <td>Chrome</td>
    <td>HLS 비디오 스트리밍.</td>
   </tr>
   <tr> 
-   <td>데스크톱</td>
+   <td>데스크탑</td>
    <td>Safari(Mac)</td>
    <td>HLS 비디오 스트리밍.</td>
   </tr>
@@ -350,9 +354,9 @@ VBR과 CBR을 선택하는 방법은 거의 항상 미디어 파일에 VBR을 �
 
 | 속도(Kbps) | 연결 유형 |
 |--- |--- |
-| 256년 | 전화 접속 연결입니다. |
+| 256 | 전화 접속 연결입니다. |
 | 800 | 일반적인 모바일 연결. 이 연결의 경우 3G 경험에 대해 400~최대 800 범위의 데이터 전송률을 타깃팅하십시오. |
-| 2000년 | 일반 광대역 데스크탑 연결. 이 연결의 경우 평균 1200-1500Kbps로 800-2000Kbps 범위의 데이터 속도를 타깃팅합니다. |
+| 2000 | 일반 광대역 데스크탑 연결. 이 연결의 경우 평균 1200-1500Kbps로 800-2000Kbps 범위의 데이터 속도를 타깃팅합니다. |
 | 5000 | 일반적인 고속 광대역 연결 대부분의 소비자는 이 속도로 비디오를 전달할 수 없으므로 이 상위 범위의 인코딩을 사용하지 않는 것이 좋습니다. |
 
 ### 해결 {#resolution}
@@ -379,12 +383,12 @@ VBR과 CBR을 선택하는 방법은 거의 항상 미디어 파일에 VBR을 �
 
 | 해결 | 높이(픽셀) | 화면 크기 |
 |--- |--- |--- |
-| 240p | 240년 | 작은 화면 |
+| 240p | 240 | 작은 화면 |
 | 300p | 300 | 일반적으로 모바일 장치용 작은 화면 |
 | 360p | 360 | 작은 화면 |
 | 480p | 480 | 미디어 화면 |
-| 720p | 720년 | 대형 화면 |
-| 1080p | 1080년 | HD 대형 화면 |
+| 720p | 720 | 대형 화면 |
+| 1080p | 1080 | HD 대형 화면 |
 
 ### Fps(초당 프레임 수) {#fps-frames-per-second}
 
@@ -420,7 +424,7 @@ VBR과 CBR을 선택하는 방법은 거의 항상 미디어 파일에 VBR을 �
    <td><p>인코딩됨</p> </td> 
    <td><p>960 x 540</p> </td> 
    <td><p>2</p> </td> 
-   <td><p>2개</p> </td> 
+   <td><p>2</p> </td> 
   </tr> 
   <tr> 
    <td><p>인코딩됨</p> </td> 
@@ -524,7 +528,7 @@ YouTube에 게시하려면 Google 계정이 필요합니다. GMAIL 계정이 있
 
    나중에 Adobe Experience Manager에서 YouTube을 설정할 때 이 다운로드한 json 파일이 필요합니다.
 
-1. **[!UICONTROL Done]**&#x200B;을 누릅니다.
+1. 탭 **[!UICONTROL 완료]**.
 
    이제 YouTube 채널을 만듭니다.
 
@@ -710,7 +714,7 @@ See [Monitoring video encoding and YouTube publishing progress](#monitoring-vide
 
 YouTube 게시(또는 게시 취소)의 진행 상황을 모니터링할 수 있습니다.
 
-자세한 내용은 [비디오 인코딩 및 YouTube 게시 진행 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress).
+See [Monitoring video encoding and YouTube publishing progress](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 게시 시간은 마스터 비디오의 형식, 파일 크기 및 업로드 트래픽이 포함된 여러 요인에 따라 크게 달라질 수 있습니다. 게시 프로세스는 몇 분에서 몇 시간 정도 걸릴 수 있습니다. 또한 고해상도 포맷이 훨씬 느리게 렌더링된다는 점도 유념하십시오. 예를 들어 720p와 1080p는 480p보다 훨씬 오래 걸립니다.
 
@@ -741,7 +745,7 @@ AEM에서 비디오 자산 게시를 취소하면 비디오가 YouTube에서 제
 >YouTube 내에서 직접 비디오를 제거하는 경우, AEM은 인식하지 못하며 비디오가 YouTube에 아직 게시되어 있는 것처럼 계속 동작합니다. 항상 AEM을 통해 YouTube에서 비디오 자산 게시를 취소합니다.
 
 YouTube에서 컨텐츠를 제거하려면 AEM에서는 **[!UICONTROL YouTube에서 게시 취소]** 작업 과정: 진행 상황을 모니터링하고 실패 정보를 볼 수 있습니다.
-자세한 내용은 [비디오 인코딩 및 YouTube 게시 진행 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress).
+See [Monitoring video encoding and YouTube publishing progress](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 **YouTube에서 제거할 비디오 게시를 취소하려면,**
 
@@ -820,7 +824,7 @@ YouTube에서 컨텐츠를 제거하려면 AEM에서는 **[!UICONTROL YouTube에
    >* Granite 워크플로우 시간 초과 큐
 
    >
-   >를 조정할 수 있습니다 **[!UICONTROL 다시 시도]**, **[!UICONTROL 다시 시도 지연]**, 및 **[!UICONTROL timeout]** 이러한 구성의 속성.
+   >You may adjust the **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, and **[!UICONTROL timeout]** properties in these configurations.
 
 1. 완료된 워크플로우에 대해서는 **[!UICONTROL 워크플로우 아카이브]** 사용 가능한 **[!UICONTROL 도구 > 워크플로우 > 아카이브]**. The **[!UICONTROL Workflow Archive]** lists all completed workflow activities.
 
@@ -1005,7 +1009,7 @@ Dynamic Media에는 캡션 파일을 JSON(JavaScript 개체 표기법) 형식으
 1. AEM에서 WebVTT 캡션 파일을 DAM에 업로드합니다.
 1. 로 이동합니다 *게시됨* 업로드한 캡션 파일과 연결할 비디오 자산입니다.
 
-   URL은 복사에만 사용할 수 있습니다 *after* 먼저 *게시됨* 자산.
+   Remember that URLs are only available to copy *after* you have first *published* the assets.
 
    자세한 내용은 [자산 게시.](publishing-dynamicmedia-assets.md)
 
@@ -1072,7 +1076,7 @@ HTML5 비디오 뷰어를 사용하고 있으므로 만드는 장 파일이 WebV
    일반적으로 VTT 장의 이름을 비디오 파일과 같은 이름으로 지정하고 장에 추가하려고 합니다. 이렇게 하면 기존 웹 컨텐츠 관리 시스템을 사용하여 비디오 URL의 생성을 자동화하는 데 도움이 됩니다.
 1. AEM에서 WebVTT 장 파일을 업로드합니다.
 
-   [자산 업로드](managing-assets-touch-ui.md#uploading-assets)를 참조하십시오.
+   자세한 내용은 [자산 업로드](managing-assets-touch-ui.md#uploading-assets).
 
 1. 다음 중 하나를 수행하십시오.
 
@@ -1094,7 +1098,7 @@ HTML5 비디오 뷰어를 사용하고 있으므로 만드는 장 파일이 WebV
        <td>포함된 비디오 뷰어 경험의 경우<br /> </td> 
        <td> 
        <ol> 
-       <li>로 이동합니다 <i>게시됨 </i>업로드한 장 파일과 연결할 비디오 자산입니다. URL은 복사에만 사용할 수 있습니다 <i>after</i> 먼저 <i>게시됨</i> 자산. 자세한 내용은 <a href="/help/assets/publishing-dynamicmedia-assets.md">자산 게시.</a></li> 
+       <li>로 이동합니다 <i>게시됨 </i>업로드한 장 파일과 연결할 비디오 자산입니다. Remember that URLs are only available to copy <i>after</i> you have first <i>published</i> the assets. 자세한 내용은 <a href="/help/assets/publishing-dynamicmedia-assets.md">자산 게시.</a></li> 
        <li>드롭다운 메뉴에서 <strong>뷰어</strong>.</li> 
        <li>왼쪽 레일에서 비디오 뷰어 사전 설정 이름을 탭합니다. 비디오 미리 보기가 별도의 페이지에 열립니다.</li> 
        <li>왼쪽 레일의 하단에서 을 누릅니다 <strong>포함</strong>.</li> 

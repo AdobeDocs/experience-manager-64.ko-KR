@@ -4,14 +4,18 @@ seo-title: AEM 6.4 Forms Guide
 description: 이 안내서에서는 디지털 양식 만들기, 관리, 게시 및 업데이트 방법을 포함한 모든 AEM Forms 작업을 다룹니다.
 seo-description: Covers all AEM Forms tasks, including how to create, manage, publish, and update digital forms.
 exl-id: e25a3b24-c460-49a9-a62c-c9ed1f1128e3
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 88%
+source-wordcount: '358'
+ht-degree: 80%
 
 ---
 
 # Adobe Experience Manager 6.4 Forms 안내서
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 이 안내서에서는 디지털 양식 만들기, 관리, 게시 및 업데이트 방법을 포함한 모든 AEM Forms 작업을 다룹니다.
 

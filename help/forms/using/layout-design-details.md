@@ -1,28 +1,32 @@
 ---
 title: 레이아웃 디자인
-seo-title: 레이아웃 디자인
+seo-title: Layout Design
 description: 레이아웃 디자인 세부 사항에서는 문자 또는 대화형 커뮤니케이션에 사용할 레이아웃을 만드는 방법을 설명합니다.
-seo-description: 레이아웃 디자인 세부 사항에서는 문자 또는 대화형 커뮤니케이션에 사용할 레이아웃을 만드는 방법을 설명합니다.
+seo-description: Layout Design Details explains how you can create layouts to be used for your letters or Interactive Communications.
 uuid: b21af474-07f5-4bfe-af7d-0c322e2452ae
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management, interactive-communications
 discoiquuid: 046b1bf9-1ac7-4e2e-ab37-6fe5422dfa20
-feature: 서신 관리
+feature: Correspondence Management
 exl-id: 92f90e7f-2869-4201-a927-47de1fc08f5c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1321'
 ht-degree: 0%
 
 ---
 
 # 레이아웃 디자인 {#layout-design}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 XFA 양식 템플릿 또는 XDP는 다음 템플릿을 위한 템플릿입니다.
 
 * [편지](/help/forms/using/create-letter.md)
-* [대화형 ](/help/forms/using/web-channel-print-channel.md#printchannel) 통신 [의 인쇄 채널](/help/forms/using/interactive-communications-overview.md)
+* [인쇄 채널](/help/forms/using/web-channel-print-channel.md#printchannel) 의 [대화형 통신](/help/forms/using/interactive-communications-overview.md)
 
 * 레이아웃 단편
 
@@ -32,11 +36,11 @@ XDP는 Adobe Forms 디자이너에 디자인되었습니다. 이 문서에서는
 
 레이아웃은 대화형 커뮤니케이션의 편지/인쇄 채널의 그래픽 레이아웃을 정의합니다. 레이아웃에는 &quot;주소&quot; 및 &quot;참조 번호&quot;와 같은 일반적인 양식 필드가 포함될 수 있습니다. 또한 대상 영역을 나타내는 빈 하위 양식이 포함되어 있습니다. 양식 디자이너에서 레이아웃을 만들고 응용 프로그램 전문가가 완료되면 이 레이아웃을 AEM 서버에 업로드합니다. 여기에서 서신 템플릿을 만들거나 대화형 커뮤니케이션의 인쇄 채널을 만들 때 레이아웃을 선택할 수 있습니다.
 
-![디자이너:레이아웃 만들기](assets/claimsubrogationlayout.png)
+![디자이너: 레이아웃 만들기](assets/claimsubrogationlayout.png)
 
 다음 단계에 따라 대화형 커뮤니케이션의 문자/인쇄 채널에 대한 레이아웃을 만듭니다.
 
-1. 레이아웃을 분석하고 모든 페이지에서 반복되는 컨텐츠를 결정합니다.일반적으로 페이지 머리글과 바닥글은 이 카테고리에 맞습니다. 이 컨텐츠는 레이아웃의 마스터 페이지에 배치됩니다. 나머지 컨텐츠는 레이아웃의 본문 페이지로 이동합니다. 정책 재킷에서 로고와 회사 주소를 마스터 페이지 머리글 및 바닥글에 추가할 수 있습니다. 예를 들어 취소 통지에서는 동일한 레이아웃을 사용합니다.
+1. 레이아웃을 분석하고 모든 페이지에서 반복되는 컨텐츠를 결정합니다. 일반적으로 페이지 머리글과 바닥글은 이 카테고리에 맞습니다. 이 컨텐츠는 레이아웃의 마스터 페이지에 배치됩니다. 나머지 컨텐츠는 레이아웃의 본문 페이지로 이동합니다. 정책 재킷에서 로고와 회사 주소를 마스터 페이지 머리글 및 바닥글에 추가할 수 있습니다. 예를 들어 취소 통지에서는 동일한 레이아웃을 사용합니다.
 1. 본문 페이지를 디자인할 때 페이지 컨텐츠를 섹션으로 나누십시오. 각 섹션은 레이아웃 자체에 포함된 하위 양식이나 조각 레이아웃으로 디자인됩니다. 섹션에 테이블이 포함되어 있으면 섹션을 레이아웃 조각으로 모델링합니다.
 1. 레이아웃은 다음과 같이 디자인할 수 있습니다.
 
@@ -49,22 +53,22 @@ XDP는 Adobe Forms 디자이너에 디자인되었습니다. 이 문서에서는
    1. 기본 주거 섹션의 경우 자리 표시자 대상 영역을 추가합니다. 이 자리 표시자는 편지/대화형 통신 디자인 시 기본 거주를 조각 지정합니다.
    1. 레이아웃(및 레이아웃을 사용하는 조각(있는 경우)을 AEM Forms 서버에 업로드합니다.
 
-## 스키마 {#using-schema} 사용
+## 스키마 사용 {#using-schema}
 
 레이아웃 또는 레이아웃 조각에서 스키마를 사용할 수 있지만 필수 사항은 아닙니다. 스키마를 사용하는 경우 다음을 확인하십시오.
 
 1. 편지/대화형 커뮤니케이션에서 사용되는 레이아웃 및 모든 조각 레이아웃은 편지/대화형 커뮤니케이션과 동일한 스키마를 사용합니다.
 1. 데이터로 채워야 하는 모든 필드는 스키마에 바인딩됩니다.
 
-## 조정 가능한 필드 만들기 {#creating-relatable-fields}
+## 관련성 필드 만들기 {#creating-relatable-fields}
 
-기본적으로 모든 필드는 다른 다양한 데이터 소스와 관련된 것으로 간주됩니다. 레이아웃에 데이터 소스와 관련이 없는 필드가 포함된 경우 &quot;_int&quot;(내부) 접미사를 사용하여 필드의 이름을 지정합니다.예를 들면 pageCount_int가 있습니다.
+기본적으로 모든 필드는 다른 다양한 데이터 소스와 관련된 것으로 간주됩니다. 레이아웃에 데이터 소스와 관련이 없는 필드가 포함된 경우 &quot;_int&quot;(내부) 접미사를 사용하여 필드의 이름을 지정합니다. 예를 들면 pageCount_int가 있습니다.
 
 관련 가능한 필드는 다음과 같습니다.
 
-* XFA &lt;필드> 또는 &lt;exclGroup>이어야 합니다.
+* XFA임 &lt;field> 또는 &lt;exclgroup>
 * xfa 바인딩 참조가 있습니다.
-* &lt;exclGroup>이면 하나 이상의 하위 라디오 단추 필드가 있어야 합니다.그렇지 않으면 값 유형을 확인할 수 없습니다
+* 만약 &lt;exclgroup>하나 이상의 하위 라디오 단추 필드가 있어야 합니다. 그렇지 않으면 값 유형을 확인할 수 없습니다
 
 관련 가능한 필드는 다음과 같습니다.
 
@@ -74,13 +78,13 @@ XDP는 Adobe Forms 디자이너에 디자인되었습니다. 이 문서에서는
 
 * 이름에 &quot;_int&quot; 접미사를 포함하십시오
 * 바인딩이 &quot;none&quot;으로 설정되어 있습니다.
-* &lt;exclGroup> 요소의 하위 항목임
+* 어린애 &lt;exclgroup> 요소
 
 관계식 필드가 위에서 설명한 기준을 충족하는 한 레이아웃의 임의의 위치 및 중첩 깊이에 있을 수 있습니다. 마스터 페이지 내에서 관련성 필드를 사용할 수 있습니다.
 
-필드는 대상 영역 하위 양식보다 레이아웃 구성에서 더 유연합니다.하지만 단일 값 유형에 연결됩니다. 필드를 크게 만들거나 고정 너비와 높이 등으로 설정할 수 있습니다. 해결된 모듈 또는 규칙 결과가 필드에 푸시됩니다.
+필드는 대상 영역 하위 양식보다 레이아웃 구성에서 더 유연합니다. 하지만 단일 값 유형에 연결됩니다. 필드를 크게 만들거나 고정 너비와 높이 등으로 설정할 수 있습니다. 해결된 모듈 또는 규칙 결과가 필드에 푸시됩니다.
 
-## 하위 양식 및 텍스트 필드 사용 시기 결정 {#deciding-when-to-use-subforms-and-text-nbsp-fields}
+## 하위 양식 및 텍스트 필드를 사용할 시기 결정 {#deciding-when-to-use-subforms-and-text-nbsp-fields}
 
 하향식 세로 흐름 레이아웃에서 여러 모듈 콘텐츠를 캡처하려면 하위 양식을 사용합니다(여러 단락이나 이미지). 레이아웃은 하위 양식의 내용을 수용하기 위해 높이가 높아진다는 사실을 처리해야 합니다. 하위 폼/대상에 연결된 콘텐츠 길이가 레이아웃의 하위 폼에 예약된 공간을 초과하지 않도록 확신할 수 없는 경우에는 하위 폼을 하위 폼 컨테이너 내에 하위 폼으로 만듭니다. 이 프로세스에서는 하위 양식 아래의 레이아웃 개체가 하위 폼이 커지면 아래로 이동합니다.
 
@@ -119,12 +123,12 @@ XDP는 Adobe Forms 디자이너에 디자인되었습니다. 이 문서에서는
  </tbody> 
 </table>
 
-## 반복 요소 {#setting-up-repetitive-elements} 설정
+## 반복 요소 설정 {#setting-up-repetitive-elements}
 
 편지/대화형 커뮤니케이션의 모든 페이지에 조직의 로고 및 주소와 같은 요소가 나타나면 해당 요소에 대한 양식 필드를 만들어 마스터 페이지에 배치합니다. 이러한 필드에 이름(필드 이름) 바인딩을 사용합니다.
 
-## 서버 렌더링 형식 {#specify-the-server-nbsp-render-format} 지정
+## 서버 렌더링 형식 지정 {#specify-the-server-nbsp-render-format}
 
-레이아웃의 서버 렌더링 형식을 Dynamic XML Form에 사용합니다.그렇지 않으면 이 레이아웃을 기반으로 하는 모든 문자/대화형 커뮤니케이션이 올바르게 렌더링될 수 없습니다. 기본적으로 Forms 디자이너의 서버 렌더링 형식은 동적 XML 양식으로 설정됩니다. 올바른 형식을 사용하고 있는지 확인하려면:
+레이아웃의 서버 렌더링 형식을 Dynamic XML Form에 사용합니다. 그렇지 않으면 이 레이아웃을 기반으로 하는 모든 문자/대화형 커뮤니케이션이 올바르게 렌더링될 수 없습니다. 기본적으로 Forms 디자이너의 서버 렌더링 형식은 동적 XML 양식으로 설정됩니다. 올바른 형식을 사용하고 있는지 확인하려면:
 
-* 디자이너에서 **[!UICONTROL 파일 > 양식 속성 > 기본값]**&#x200B;을 클릭하고 PDF 렌더링/형식 설정이 동적 XML 양식으로 설정되어 있는지 확인합니다.
+* 디자이너에서 **[!UICONTROL 파일 > 양식 속성 > 기본값]**&#x200B;및 PDF 렌더링/형식 설정이 동적 XML 양식으로 설정되어 있는지 확인합니다.

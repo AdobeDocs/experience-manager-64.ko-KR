@@ -1,23 +1,27 @@
 ---
 title: 참조 테마
 seo-title: Reference Themes
-description: 'AEM Forms은 소프트웨어 배포에서 가져오고 양식 스타일을 지정하는 데 사용할 수 있는 적응형 양식 테마를 제공합니다. '
+description: AEM Forms은 소프트웨어 배포에서 가져오고 양식 스타일을 지정하는 데 사용할 수 있는 적응형 양식 테마를 제공합니다.
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 uuid: a39bc3da-0bb8-4f11-b0d5-9403cfc6e384
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 78d7d4b6-95dd-429b-870b-30aba5a3fea3
 exl-id: 6a298571-d6ff-473f-af58-a45a0c7e6175
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 0%
+source-wordcount: '588'
+ht-degree: 1%
 
 ---
 
 # 참조 테마 {#reference-themes}
 
-[](/help/forms/using/themes.md) CSS에 대해 자세히 알지 못하고 양식 스타일을 지정할 수 있습니다. 기본 테마 외에[AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)를 설치하면 다음 테마를 얻을 수 있습니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+[테마](/help/forms/using/themes.md) css에 대한 자세한 지식이 없는 경우 양식의 스타일을 지정할 수 있습니다. 기본 테마 외에[AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html):
 
 * 베릴
 * 경영진
@@ -34,13 +38,13 @@ ht-degree: 0%
 
 이 패키지에 포함된 테마는 응답형이며, 이러한 테마의 스타일링은 모바일 및 데스크톱 디스플레이에 대해 정의됩니다. 다양한 장치의 최신 브라우저는 이러한 테마 중 하나로 적용된 양식을 간편하게 렌더링할 수 있습니다.
 
-패키지 설치에 대한 자세한 내용은 [패키지 작업 방법](/help/sites-administering/package-manager.md)을 참조하십시오.
+패키지 설치에 대한 자세한 내용은 [패키지 작업 방법](/help/sites-administering/package-manager.md).
 
 ## 베릴 {#beryl}
 
-Beryl 테마는 [We.Gov 적응형 양식](/help/forms/using/gov-reference-site-walkthrough.md)에 의해 사용되며 배경 이미지, 투명도 및 큰 평면 아이콘 사용을 강조합니다. 아래 스크린샷에서는 Beryl 테마가 어떻게 생겼고 양식의 스타일을 어떻게 향상시킬 수 있는지 확인할 수 있습니다.
-![테마](assets/beryl.png)
-[확대하려면 클릭하십시오](assets/beryl-1.png)
+베릴 테마는 [We.Gov 적응형 양식](/help/forms/using/gov-reference-site-walkthrough.md)을 사용하여 배경 이미지, 투명도 및 크고 플랫 아이콘 사용을 강조할 수 있습니다. 아래 스크린샷에서는 Beryl 테마가 어떻게 생겼고 양식의 스타일을 어떻게 향상시킬 수 있는지 확인할 수 있습니다.
+![베릴 테마](assets/beryl.png)
+[확대하려면 클릭](assets/beryl-1.png)
 
 ## 경영진 {#exec}
 

@@ -1,28 +1,32 @@
 ---
 title: 새로운 기능 요약 | AEM 6.4 Forms
-seo-title: 새로운 기능 요약 | AEM 6.4 Forms
+seo-title: New features summary | AEM 6.4 Forms
 description: AEM 6.4 Forms의 새로운 기능 및 개선 사항 요약
-seo-description: AEM 6.4 Forms의 새로운 기능 및 개선 사항 요약
+seo-description: Summary of new features and enhancements in AEM 6.4 Forms.
 uuid: 152068ec-47a8-43f4-b9c8-3a17d1f085fe
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 436aa424-d05e-4f3d-90ac-5ff3b05ddba8
 exl-id: 21b8ed83-9c0c-41ee-9fbb-56ccebaee132
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2016'
-ht-degree: 0%
+source-wordcount: '2038'
+ht-degree: 1%
 
 ---
 
 # 새로운 기능 요약 | AEM 6.4 Forms {#new-features-summary-aem-forms}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 AEM 6.4 Forms의 새로운 기능 및 개선 사항 요약
 
 AEM Forms에는 적응형 양식 및 대화형 커뮤니케이션으로 만들기, 관리 및 사용자 경험을 더욱 간소화하는 몇 가지 새로운 기능과 개선 사항이 포함되어 있습니다.
 
-새로운 기능 및 개선 사항에 대한 빠른 소개를 살펴보십시오. 자세한 내용을 제공하는 리소스는 설명서 를 참조하십시오. 또한 AEM 6.4 Forms [릴리스 노트](/help/release-notes/forms.md)를 참조하십시오. 전체 AEM 6.4 Forms 설명서는 [AEM 6.4 Forms 안내서](/help/forms/home.md)를 참조하십시오.
+새로운 기능 및 개선 사항에 대한 빠른 소개를 살펴보십시오. 자세한 내용을 제공하는 리소스는 설명서 를 참조하십시오. 또한 AEM 6.4 Forms 를 참조하십시오 [릴리스 노트](/help/release-notes/forms.md). 전체 AEM 6.4 Forms 설명서를 보려면 [AEM 6.4 Forms 안내서](/help/forms/home.md).
 
 ## 대화형 통신 {#interactive-communications}
 
@@ -40,28 +44,28 @@ Interactive Communications는 비즈니스 서신, 편지, 문서, 명세서, �
 
 대화형 커뮤니케이션은 고객 커뮤니케이션을 만드는 기본적이고 권장되는 방법입니다. AEM 6.3 Forms 및 AEM 6.2 Forms에서 문자를 계속 사용하려면 호환성 패키지를 설치해야 합니다.
 
-### 다중 채널 대화형 통신 작성 {#multi-channel-interactive-communication-authoring}
+### 멀티채널 인터랙티브 통신 작성 {#multi-channel-interactive-communication-authoring}
 
 대화형 커뮤니케이션을 사용하면 하나의 문서 편집기에서 인쇄 문서와 웹 문서를 모두 작성 및 편집할 수 있습니다. 동일한 문서 조각을 사용하여 두 채널의 렌디션을 작성하면 중복 작업을 제거할 수 있습니다.
 ![printweb_2](assets/printweb_2.png)
 
-자세한 내용은 [대화형 통신 개요](/help/forms/using/interactive-communications-overview.md)를 참조하십시오.
+자세한 내용은 [대화형 통신 개요](/help/forms/using/interactive-communications-overview.md).
 
 ### WYSIWYG 문서 편집기 {#wysiwyg-document-editor}
 
 WYSIWYG 드래그 앤 드롭 문서 편집기는 비즈니스 친화적입니다. 직관적인 인터페이스, 드래그 앤 드롭 기능, 표준 구성 요소, 데이터 모델 및 자산을 위한 통합 저장소를 통해 대화형 커뮤니케이션을 빠르고 쉽게 작성할 수 있습니다.
 
-대화형 커뮤니케이션을 만들거나 기존 커뮤니케이션을 편집하려면 비즈니스 사용자는 다음 기본 구성 요소를 사용할 수 있습니다.채널, 컨텐츠, 속성, 자산, 구성 요소 및 데이터 소스.
+대화형 커뮤니케이션을 만들거나 기존 커뮤니케이션을 편집하려면 비즈니스 사용자는 다음 기본 구성 요소를 사용할 수 있습니다. 채널, 컨텐츠, 속성, 자산, 구성 요소 및 데이터 소스.
 
 ![드래그 앤 드롭-lf](assets/drag-n-drop-lf.png)
 
-자세한 내용은 [대화형 통신 작성 소개](/help/forms/using/introduction-interactive-communication-authoring.md)를 참조하십시오.
+자세한 내용은 [대화형 통신 작성 소개](/help/forms/using/introduction-interactive-communication-authoring.md).
 
 ### 대화형 커뮤니케이션에서 인쇄 콘텐츠에서 웹 버전 자동 생성 {#auto-generate-web-version-from-print-content-in-interactive-communication}
 
 작성자는 인쇄 문서에서 같은 편집기에서 인쇄 문서와 웹 문서를 모두 작성, 미리 보기 및 편집할 수 있도록 웹 문서 컨텐츠를 자동으로 생성할 수 있습니다. 대화형 통신 작성자는 한 번 만들고 모든 채널에 게시할 수 있습니다. 대화형 통신 작성자는 인쇄 및 웹 채널에서 동일한 문서 조각을 사용하여 작업의 중복을 방지할 수 있습니다.
 
-자세한 내용은 [채널 및 웹 채널 인쇄](/help/forms/using/web-channel-print-channel.md)를 참조하십시오.
+자세한 내용은 [채널 및 웹 채널 인쇄](/help/forms/using/web-channel-print-channel.md).
 
 ### 테마를 사용하여 대화형 커뮤니케이션의 웹 채널 스타일 지정 {#use-themes-to-style-web-channel-of-interactive-communication}
 
@@ -69,29 +73,29 @@ WYSIWYG 드래그 앤 드롭 문서 편집기는 비즈니스 친화적입니다
 
 AEM Forms에는 대화형 커뮤니케이션에 대한 기본 테마가 포함되어 있습니다. 테마를 사용하여 대화형 커뮤니케이션이 장치에서 표시되는 방식을 사용자 지정할 수도 있습니다.
 
-자세한 내용은 AEM Forms](/help/forms/using/themes.md)의 [테마 를 참조하십시오.
+자세한 내용은 [AEM Forms의 테마](/help/forms/using/themes.md).
 
 ### 향상된 에이전트 인터페이스 {#enhanced-agent-interface}
 
 이제 에이전트 사용자 인터페이스가 대화형 커뮤니케이션의 인쇄 및 웹 미리 보기를 지원합니다. 동일한 에이전트 사용자 인터페이스에서 인쇄 채널을 편집하고 다중 채널 대화형 커뮤니케이션의 웹 채널을 미리 보도록 선택할 수 있습니다. 인쇄 채널의 필드, 변수, FDM 요소 및 문서 조각은 에이전트 사용자 인터페이스의 에이전트가 수정하도록 구성할 수 있습니다. 양식 데이터 모델 지원을 통해 미리 채워진 샘플 데이터를 사용하여 미리 보기를 생성할 수 있습니다.
 
-자세한 내용은 [에이전트 UI](/help/forms/using/prepare-send-interactive-communication.md)를 사용하여 대화형 통신 준비 및 전송을 참조하십시오.
+자세한 내용은 [에이전트 UI를 사용하여 대화형 통신 준비 및 보내기](/help/forms/using/prepare-send-interactive-communication.md).
 
-### 차트 {#present-information-in-charts}에 정보 표시
+### 차트에 정보 표시 {#present-information-in-charts}
 
-대화형 커뮤니케이션은 웹 및 인쇄 채널에서 더 많은 통신을 위해 차트를 지원합니다. 파이, 도넛, 막대 및 열과 같은 차트를 사용하면 많은 정보를 압축하고 시각적으로 표시할 수 있으므로 쉽게 해석 및 분석할 수 있습니다.
+대화형 커뮤니케이션은 웹 및 인쇄 채널에서 더 많은 통신을 위해 차트를 지원합니다. 파이, 도넛, 막대, 열과 같은 차트를 사용하면 많은 정보를 압축하고 시각적으로 표시할 수 있으므로 쉽게 해석 및 분석할 수 있습니다.
 
-![차트-2](assets/chart-2.png) ![차트](assets/chart.png)
+![차트 2](assets/chart-2.png) ![차트](assets/chart.png)
 
-자세한 내용은 [대화형 커뮤니케이션에서 차트 사용](/help/forms/using/chart-component-interactive-communications.md)을 참조하십시오.
+자세한 내용은 [대화형 커뮤니케이션에서 차트 사용](/help/forms/using/chart-component-interactive-communications.md).
 
-### Data Connectors에서 문서 미리 채우기 {#out-of-the-box-data-connectors-to-prefill-documents}
+### 즉시 사용 가능한 Data Connectors에서 문서를 미리 채울 수 있습니다 {#out-of-the-box-data-connectors-to-prefill-documents}
 
 대화형 커뮤니케이션은 비즈니스 도구와 데이터 통합을 제공하여 CRM 시스템을 비롯한 여러 비즈니스 시스템과 연결하고 데이터를 문서로 개인화합니다.
 
 ![fdm_ad](assets/fdm_ad.png)
 
-자세한 내용은 [양식 데이터 모델 사용](/help/forms/using/using-form-data-model.md)을 참조하십시오.
+자세한 내용은 [양식 데이터 모델 사용](/help/forms/using/using-form-data-model.md).
 
 ### 향상된 문서 조각 편집기 {#enhanced-document-fragment-editor}
 
@@ -115,49 +119,49 @@ AEM Forms에는 대화형 커뮤니케이션에 대한 기본 테마가 포함�
 
 ![](do-not-localize/data-integeration-1.png)
 
-[AEM Forms 데이터 ](/help/forms/using/data-integration.md) 통합을 사용하여 서로 다른 데이터 소스를 구성할 수 있습니다.데이터베이스, RESTful 또는 SOAP 기반 웹 서비스, OData 서비스 등적응형 양식 및 문서에서 데이터를 바인딩하고, 미리 채우고, 서비스를 호출하는 데 사용할 수 있는 양식 데이터 모델을 만드는 데 사용됩니다.
+[AEM Forms 데이터 통합](/help/forms/using/data-integration.md) 서로 다른 데이터 소스를 구성할 수 있습니다. 데이터베이스, RESTful 또는 SOAP 기반 웹 서비스, OData 서비스 등 적응형 양식 및 문서에서 데이터를 바인딩하고, 미리 채우고, 서비스를 호출하는 데 사용할 수 있는 양식 데이터 모델을 만드는 데 사용됩니다.
 
 이 릴리스에는 데이터 통합에서 몇 가지 새로운 기능과 개선 사항이 있습니다.
 
-### 데이터 소스 {#create-form-data-model-without-data-source} 없이 양식 데이터 모델 만들기
+### 데이터 소스 없이 양식 데이터 모델 만들기 {#create-form-data-model-without-data-source}
 
 이제 비즈니스 사용자 및 양식 작성자가 데이터 소스를 구성하지 않고 엔티티 및 속성을 포함하는 양식 데이터 모델을 만들 수 있으며 적응형 양식 및 문서를 작성하는 데 사용할 수 있습니다. 나중에 양식 데이터 모델을 데이터 소스에 바인딩할 수 있습니다. 양식 데이터 모델을 사용하여 양식 및 문서를 작성하는 데 데이터 소스에 대한 종속성을 제거합니다.
 
 마찬가지로 기존 양식 데이터 모델에서 엔티티 및 하위 속성을 만들고 나중에 데이터 소스의 해당 엔티티 및 속성에 바인딩할 수 있습니다.
 
-자세한 내용은 [양식 데이터 모델 만들기](/help/forms/using/create-form-data-models.md)를 참조하십시오.
+자세한 내용은 [양식 데이터 모델 만들기](/help/forms/using/create-form-data-models.md).
 
-### 계산된 속성 {#create-computed-properties} 만들기
+### 계산된 속성 만들기 {#create-computed-properties}
 
 Forms 작성자 및 개발자는 양식 데이터 모델에서 계산된 속성을 만들 수 있습니다. 구성된 데이터 소스에서 사용할 수 있는 데이터에 대한 규칙 또는 논리를 만들어 속성에 대한 값을 계산할 수 있습니다. 규칙은 데이터가 양식 데이터 모델로 로드되거나 표현식의 속성 값이 변경될 때 평가되는 표현식입니다. 예를 들어, [할부]라는 계산된 속성은 데이터 소스에 지정된 이자율과 사용자가 양식에 지정한 대출 금액 및 종신 기간에 따라 융자에 대해 지급할 월별 금액을 계산합니다.
 
 계산된 속성은 양식 데이터 모델에 로컬로 있고 데이터 소스에 존재하지 않습니다. 적응형 양식 및 대화형 커뮤니케이션에서 계산된 속성을 사용할 수 있습니다.
 
-자세한 내용은 [양식 데이터 모델 작업](/help/forms/using/work-with-form-data-model.md)을 참조하십시오.
+자세한 내용은 [양식 데이터 모델 작업](/help/forms/using/work-with-form-data-model.md).
 
-### 샘플 데이터가 있는 양식 및 문서 미리 보기 {#preview-forms-and-documents-with-sample-data}
+### 샘플 데이터를 사용하여 양식 및 문서 미리 보기 {#preview-forms-and-documents-with-sample-data}
 
 양식 데이터 모델을 사용하면 양식 데이터 모델에서 모든 엔티티의 속성에 대한 샘플 데이터를 생성할 수 있습니다. 생성된 데이터는 속성에 대해 구성된 데이터 유형에 해당합니다. 양식 데이터 모델과 연결된 적응형 양식 또는 문서를 미리 보면 미리 채워진 샘플 데이터와 함께 렌더링됩니다.
 
 샘플 데이터는 생성할 때마다 변경되는 무작위 값 세트입니다. 그러나 샘플 데이터를 다시 생성하더라도 유지되는 샘플 데이터를 편집하고 저장할 수 있습니다. 예를 들어, 이름(First Name) 및 성(Last Name) 속성에 대한 샘플 데이터를 편집 및 저장하고 나중에 양식 데이터 모델에서 다른 속성 또는 엔티티를 추가하고 샘플 데이터를 재생성하는 경우 이름(First Name) 및 성(Last Name) 속성에 저장된 값이 표시되고 다른 속성에 대한 값이 재생성됩니다.
 
-자세한 내용은 [양식 데이터 모델 사용](/help/forms/using/using-form-data-model.md)을 참조하십시오.
+자세한 내용은 [양식 데이터 모델 사용](/help/forms/using/using-form-data-model.md).
 
 ### 데이터 소스 정의 새로 고침 {#refresh-data-source-definitions}
 
-데이터 소스 엔티티 또는 속성의 모든 업데이트는 관련 양식 데이터 모델에 자동으로 반영되지 않습니다. 이제 양식 데이터 모델 편집기에 서버 캐시를 무효화하고 데이터 소스에서 업데이트된 스키마를 가져와 양식 데이터 모델에 즉시 반영하는 ![refresh_forms_di](assets/refresh_forms_di.png) (데이터 소스 정의 새로 고침)가 제공됩니다.
+데이터 소스 엔티티 또는 속성의 모든 업데이트는 관련 양식 데이터 모델에 자동으로 반영되지 않습니다. 이제 양식 데이터 모델 편집기의 기능이 제공됩니다 ![refresh_forms_di](assets/refresh_forms_di.png) (데이터 소스 정의 새로 고침) 서버 캐시를 무효화하고 데이터 소스에서 업데이트된 스키마를 가져와 양식 데이터 모델에 즉시 반영하도록 합니다.
 
-### 터치 사용자 인터페이스 {#configure-data-sources-using-touch-user-interface}를 사용하여 데이터 소스를 구성합니다
+### 터치 사용자 인터페이스를 사용하여 데이터 소스 구성 {#configure-data-sources-using-touch-user-interface}
 
-이 릴리스에서는 데이터 소스에 대한 클라우드 서비스 구성을 Touch 사용자 인터페이스에서 사용할 수 있습니다. 또한 클라우드 서비스를 구성할 위치가 **[!UICONTROL 도구 > Cloud Services > 데이터 소스]**&#x200B;로 변경되었습니다. [데이터 소스 구성](/help/forms/using/configure-data-sources.md)을 참조하십시오.
+이 릴리스에서는 데이터 소스에 대한 클라우드 서비스 구성을 Touch 사용자 인터페이스에서 사용할 수 있습니다. 또한 클라우드 서비스를 구성할 위치가 **[!UICONTROL 도구 > Cloud Services > 데이터 소스]**. 자세한 내용은 [데이터 소스 구성](/help/forms/using/configure-data-sources.md).
 
 ## 적응형 양식 {#adaptive-forms}
 
 ![simpliation of-authoring-forms-and-documents_hero-image_2](assets/simplification-of-authoring-forms-and-documents_hero-image_2.png)
 
-### 향상된 지연 로드 {#improve-performance-of-adaptive-forms-with-enhanced-lazy-loading} 를 통해 적응형 양식의 성능 개선
+### 향상된 지연 로딩을 통해 적응형 양식의 성능 향상 {#improve-performance-of-adaptive-forms-with-enhanced-lazy-loading}
 
-적응형 양식의 지연 로드 기능은 양식 조각이 필요할 때까지 초기화됩니다. 양식을 렌더링하는 데 필요한 시간을 최소화하여 큰 양식의 성능을 향상시킴으로써 사용자 경험이 향상됩니다.
+적응형 양식의 레이지 로드 기능은 양식 조각이 필요할 때까지 초기화됩니다. 양식을 렌더링하는 데 필요한 시간을 최소화하여 큰 양식의 성능을 향상시킴으로써 사용자 경험이 향상됩니다.
 
 이 릴리스에서는 지연 로드 기능이 다음과 같이 개선되었습니다.
 
@@ -169,7 +173,7 @@ Forms 작성자 및 개발자는 양식 데이터 모델에서 계산된 속성�
 
 ![aem forms-workflow-on-osgi-](assets/aem-forms-workflow-on-osgi-.png)
 
-Forms 중심의 AEM 워크플로우 기능을 사용하면 OSGi 스택에서 다양한 작업에 대한 워크플로우를 신속하게 만들고 배포할 수 있습니다. 더 이상 JEE 스택에서 사용할 수 있는 프로세스 관리 기능을 설치할 필요가 없으므로 배포를 단순화하고 애플리케이션 서버와 인프라 비용을 줄일 수 있습니다. 자세한 내용은 OSGi](/help/forms/using/aem-forms-workflow.md)의 [Forms 중심의 워크플로우 를 참조하십시오.
+Forms 중심의 AEM 워크플로우 기능을 사용하면 OSGi 스택에서 다양한 작업에 대한 워크플로우를 신속하게 만들고 배포할 수 있습니다. 더 이상 JEE 스택에서 사용할 수 있는 프로세스 관리 기능을 설치할 필요가 없으므로 배포를 단순화하고 애플리케이션 서버와 인프라 비용을 줄일 수 있습니다. 자세한 내용은 [OSGi의 Forms 중심 워크플로우](/help/forms/using/aem-forms-workflow.md).
 
 Forms 중심의 AEM 워크플로우의 개선 사항은 다음과 ・ 같습니다.
 
@@ -181,7 +185,7 @@ Forms 중심의 AEM 워크플로우의 개선 사항은 다음과 ・ 같습니�
 
 ![aem-forms-app](assets/aem-forms-app.png)
 
-AEM Forms 앱을 사용하면 필드 작업자가 모바일 장치를 AEM Forms 서버와 동기화하고 양식을 작업할 수 있습니다. 장치가 다시 온라인 상태일 때 장치에서 로컬로 데이터를 저장하고 데이터와 서버를 동기화하여 장치가 오프라인 상태에서도 응용 프로그램이 원활하게 작동합니다. 자세한 내용은 [AEM Forms app](/help/forms/using/aem-forms-app.md)을 참조하십시오.
+AEM Forms 앱을 사용하면 필드 작업자가 모바일 장치를 AEM Forms 서버와 동기화하고 양식을 작업할 수 있습니다. 장치가 다시 온라인 상태일 때 장치에서 로컬로 데이터를 저장하고 데이터와 서버를 동기화하여 장치가 오프라인 상태에서도 응용 프로그램이 원활하게 작동합니다. 자세한 내용은 [AEM Forms 앱](/help/forms/using/aem-forms-app.md).
 
 AEM Forms 앱의 향상된 기능은 다음과 같습니다.
 
@@ -194,7 +198,7 @@ AEM Forms 앱의 향상된 기능은 다음과 같습니다.
 
 문서 보안을 사용하면 지원되는 형식으로 저장한 정보를 안전하게 배포할 수 있습니다. 문서 보안은 인증된 사용자만 문서를 사용할 수 있도록 합니다. 다음은 문서 보안의 주요 변경 사항입니다.
 
-* 문서 보안은 AEM Forms 서버에 문서를 보내지 않고 문서를 로컬로 보호하기 위해 [PPL(Portable Protection Library)](/help/forms/using/document-security-offerings.md)을 제공합니다. 보안 자격 증명 및 정책 세부 사항만 네트워크를 통해 AEM Forms 서버로 이동합니다. AEM 6.4 Forms은 OSGi 번들 포맷으로 PPL(Portable Protection Library)을 도입했습니다. 이제 AEM Forms 서버에 PPL 라이브러리를 직접 설치하고 AEM 및 PPL의 기능을 함께 사용할 수 있습니다.
+* 문서 보안은 [PPL(Portable Protection Library)](/help/forms/using/document-security-offerings.md) AEM Forms 서버로 문서를 보내지 않고 로컬에서 문서를 보호하도록 합니다. 보안 자격 증명 및 정책 세부 사항만 네트워크를 통해 AEM Forms 서버로 이동합니다. AEM 6.4 Forms은 OSGi 번들 포맷으로 PPL(Portable Protection Library)을 도입했습니다. 이제 AEM Forms 서버에 PPL 라이브러리를 직접 설치하고 AEM 및 PPL의 기능을 함께 사용할 수 있습니다.
 * 문서 보안 C++ SDK 및 C++ PPL 라이브러리는 Microsoft Visual Studio 2013으로 컴파일할 수 있습니다. 이전에 지원되는 버전은 Microsoft Visual Studio 2010이었습니다.
 
 ## 지원되는 플랫폼 {#supported-platforms}
@@ -222,7 +226,7 @@ AEM Forms은 지원되는 운영 체제, 애플리케이션 서버, 데이터베
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>응용 프로그램 서버<br /> </td> 
+   <td>애플리케이션 서버<br /> </td> 
    <td> 
     <ul> 
      <li>Red Hat JBoss EAP 7</li> 
@@ -295,8 +299,8 @@ AEM Forms은 지원되는 운영 체제, 애플리케이션 서버, 데이터베
    <td>브라우저</td> 
    <td> 
     <ul> 
-     <li>macOS용 Apple Safari 11.x</li> 
-     <li>iOS용 Apple Safari 11.x</li> 
+     <li>macOS의 Apple Safari 11.x</li> 
+     <li>iOS의 Apple Safari 11.x</li> 
     </ul> </td> 
    <td> 
     <ul> 

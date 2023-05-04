@@ -1,22 +1,26 @@
 ---
 title: 대화형 통신 개요
-seo-title: 대화형 통신 개요
+seo-title: Interactive Communications Overview
 description: 이 문서에는 개요, 샘플 사용 사례, 작성 워크플로우, 대화형 커뮤니케이션과 편지 간 차이점이 포함되어 있습니다.
-seo-description: 대화형 통신 주요 기능, 샘플 사용 사례, 작성 워크플로우 및 대화형 커뮤니케이션과 서신 관리 간의 차이점
+seo-description: Interactive Communication key capabilities, sample use cases, creation workflow, and differences between Interactive Communication and Correspondence Management
 uuid: a06b4ac7-ca20-4d6d-b2b7-87b21e2f5cf9
 contentOwner: gtalwar
 topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 exl-id: 386fc8b2-c92d-4731-8445-1bb6af54fd98
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 5%
+source-wordcount: '542'
+ht-degree: 7%
 
 ---
 
 # 대화형 통신 개요 {#interactive-communications-overview}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 이 문서에는 개요, 샘플 사용 사례, 작성 워크플로우, 대화형 커뮤니케이션과 편지 간 차이점이 포함되어 있습니다.
 
@@ -37,21 +41,21 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공
 
 ## 샘플 사용 사례 {#sample-use-case}
 
-[신용 카드 고객용 시작 키트](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough) 샘플 사용 사례는 대화형 커뮤니케이션의 기능을 보여줍니다.
+다음 [신용 카드 고객용 시작 키트](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough) 샘플 사용 사례에서는 대화형 커뮤니케이션의 기능을 보여줍니다.
 
-## 대화형 통신 만들기 {#interactive-communication-creation}
+## 대화형 통신 제작  {#interactive-communication-creation}
 
 ![interactive_communication-01](assets/interactive_communication-01.jpg)
 
-### 워크플로우 {#workflow}
+### 워크플로 {#workflow}
 
-대화형 커뮤니케이션을 만들려면 대화형 커뮤니케이션용 [빌딩 블록](#buildingblocks)을 준비하여 다음 단계를 완료하십시오.
+대화형 커뮤니케이션을 만들려면 [빌딩 블록](#buildingblocks) 대화형 커뮤니케이션용 준비 후 다음 단계를 완료합니다.
 
-1. [대화형 통신 만들기](/help/forms/using/create-interactive-communication.md)를 선택합니다.
+1. 선택 [대화형 통신 만들기](/help/forms/using/create-interactive-communication.md).
 
-1. [양식 데이터 모델](/help/forms/using/data-integration.md), 미리 채우기 서비스 및 [인쇄 및 웹 채널 템플릿](/help/forms/using/web-channel-print-channel.md)을 지정합니다. 인쇄 채널에서 웹 채널을 생성하도록 선택할 수 있습니다.
+1. 을(를) 지정합니다. [양식 데이터 모델](/help/forms/using/data-integration.md), 미리 채우기 서비스 및 [인쇄 및 웹 채널 템플릿](/help/forms/using/web-channel-print-channel.md). 인쇄 채널에서 웹 채널을 생성하도록 선택할 수 있습니다.
 
-1. [드래그 앤 드롭 인터페이스](/help/forms/using/introduction-interactive-communication-authoring.md)를 사용하여 필요에 따라 문서 조각, 이미지, 구성 요소를 인쇄 및 대화형 커뮤니케이션의 웹 채널을 추가합니다.
+1. 사용 [끌어서 놓기 인터페이스](/help/forms/using/introduction-interactive-communication-authoring.md)필요한 경우 문서 조각, 이미지, 구성 요소를 추가하여 대화형 커뮤니케이션의 인쇄 및 웹 채널을 추가합니다.
 1. 다음과 같이 삽입된 구성 요소의 속성을 구성합니다.
 
    1. 이미지
@@ -60,7 +64,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공
    1. [문서 조각](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
 1. 인쇄 및 웹 채널을 미리 보고 필요한 경우 대화형 커뮤니케이션을 편집합니다.
-1. 에이전트는 에이전트 UI를 사용하여 [대화형 통신](/help/forms/using/prepare-send-interactive-communication.md)을 준비하여 수신자/사후 프로세스에 보냅니다.
+1. 에이전트는 에이전트 UI를 사용하여 [대화형 통신 준비](/help/forms/using/prepare-send-interactive-communication.md) 수신자/게시물 프로세스에 보내는 데 사용됩니다.
 
 ### 빌딩 블록 {#buildingblocks}
 
@@ -70,11 +74,11 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공
 * [인쇄 및 웹 채널 템플릿](/help/forms/using/web-channel-print-channel.md)
 * [문서 조각](/help/forms/using/document-fragments.md)
 * 이미지
-* [](/help/forms/using/themes.md) 웹 채널의 테마
+* [테마](/help/forms/using/themes.md) 웹 채널용
 
-## 대화형 커뮤니케이션과 서신 관리 {#interactive-communications-vs-correspondence-management}
+## 인터랙티브 통신과 서신 관리 {#interactive-communications-vs-correspondence-management}
 
-대화형 커뮤니케이션은 고객 커뮤니케이션을 만드는 기본적이고 권장되는 방법입니다. AEM 6.3 Forms 및 AEM 6.2 Forms에서 만드는 문자를 계속 사용하려면 [호환성 패키지](/help/forms/using/compatibility-package.md)를 설치해야 합니다. 다음은 Interactive Communication과 Letter의 기능을 비교한 것입니다.
+대화형 커뮤니케이션은 고객 커뮤니케이션을 만드는 기본적이고 권장되는 방법입니다. AEM 6.3 Forms 및 AEM 6.2 Forms에서 만든 문자를 계속 사용하려면 다음을 수행해야 합니다 [호환성 패키지 설치](/help/forms/using/compatibility-package.md). 다음은 Interactive Communication과 Letter의 기능을 비교한 것입니다.
 
 <table> 
  <tbody>
@@ -89,7 +93,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공
    <td>인쇄</td> 
   </tr>
   <tr>
-   <td>스키마</td> 
+   <td>Schema</td> 
    <td>양식 데이터 모델 </td> 
    <td>데이터 사전 </td> 
   </tr>

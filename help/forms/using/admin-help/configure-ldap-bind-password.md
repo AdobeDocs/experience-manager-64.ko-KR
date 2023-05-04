@@ -1,8 +1,8 @@
 ---
 title: LDAP 바인딩 암호 구성
-seo-title: LDAP 바인딩 암호 구성
-description: '구성 파일을 다른 시스템으로 가져오기 전에 암호 바인딩 필드를 구성하는 방법을 알아봅니다. '
-seo-description: '구성 파일을 다른 시스템으로 가져오기 전에 암호 바인딩 필드를 구성하는 방법을 알아봅니다. '
+seo-title: Configure the LDAP bind password
+description: 구성 파일을 다른 시스템으로 가져오기 전에 암호 바인딩 필드를 구성하는 방법을 알아봅니다.
+seo-description: Learn how to configure the bind password field before you import the configuration file into another system.
 uuid: 1ab1907c-8b55-4b6f-bd5b-49f22d78b8a8
 contentOwner: admin
 content-type: reference
@@ -10,20 +10,24 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 165b3950-b03f-4848-8361-ffb0a26d2658
 exl-id: eaa2c889-d116-4209-9063-0c0b32dd8849
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 0%
+source-wordcount: '219'
+ht-degree: 3%
 
 ---
 
-# LDAP 바인딩 암호{#configure-the-ldap-bind-password} 구성
+# LDAP 바인딩 암호 구성{#configure-the-ldap-bind-password}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 보안 위험을 방지하기 위해 내보낸 구성 파일(config.xml)의 바인딩 암호 필드가 구성되어 있지 않습니다. 구성 파일을 다른 시스템으로 가져오기 전에 이 암호를 구성해야 합니다. 이 암호는 데이터베이스에 저장된 기존 암호를 재정의합니다. null 암호는 null이 아닌 기존 암호 값을 재정의하지 않습니다.
 
 1. 관리 콘솔에서 설정 > 사용자 관리 > 구성 > 구성 파일 가져오기 및 내보내기 를 클릭합니다.
 1. 현재 구성 설정을 파일로 내보내려면 내보내기 를 클릭하고 구성 파일을 다른 위치에 저장합니다.
-1. 파일에서 `Domains` > *[도메인 이름]* > `DirectoryConfigs` > `LDAPGroupConfig` 노드를 찾습니다. 다음은 한 예입니다.
+1. 파일에서 `Domains` > *[도메인 이름]* > `DirectoryConfigs` > `LDAPGroupConfig` 노드 아래에 있어야 합니다. 다음은 한 예입니다.
 
    ```as3
     <node name="LDAPGroupConfig"> 
@@ -36,9 +40,9 @@ ht-degree: 0%
         </map>
    ```
 
-   `bindpassword` 값을 입력하고 변경 내용을 저장합니다.
+   값 입력 `bindpassword` 변경 사항을 저장합니다.
 
-1. 파일에서 `Domains` > *[도메인 이름]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` 노드를 찾습니다. 다음은 한 예입니다.
+1. 파일에서 `Domains` > *[도메인 이름]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` 노드 아래에 있어야 합니다. 다음은 한 예입니다.
 
    ```as3
     <node name="LDAPUserConfig"> 
@@ -51,7 +55,7 @@ ht-degree: 0%
         </map>
    ```
 
-   `bindpassword` 값을 입력하고 변경 내용을 저장합니다.
+   값 입력 `bindpassword` 변경 사항을 저장합니다.
 
 1. 업데이트된 파일을 가져오려면 사용자 관리에서 구성 > 구성 파일 가져오기 및 내보내기를 클릭합니다.
 1. 찾아보기 를 클릭하여 파일을 찾고 가져오기를 클릭한 다음 확인을 클릭합니다.

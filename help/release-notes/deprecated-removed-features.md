@@ -2,21 +2,25 @@
 title: 더 이상 사용되지 않는/제거된 기능
 description: Adobe Experience Manager 6.4의 더 이상 사용되지 않는 및 제거된 기능에 관한 릴리스 노트입니다.
 exl-id: 2fe0dad7-fc78-4aac-afa3-79a278008453
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1308'
-ht-degree: 30%
+source-wordcount: '1344'
+ht-degree: 19%
 
 ---
 
 # 더 이상 사용되지 않는/제거된 기능 {#deprecated-and-removed-features}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 전반적인 고객 가치를 향상하도록 오랜 시간에 걸쳐 오래된 기능을 새롭게 만들거나 더 현대적인 대안으로 교체하기 위해 제품 기능을 지속해서 평가합니다.
 
-예정된 AEM 기능의 제거/교체를 알리려면 다음 규칙이 적용됩니다.
+AEM 기능을 제거/교체하기 위해 다음 규칙이 적용됩니다.
 
 1. 사용 중지 공지가 먼저 표시됩니다. 사용 중지 중에도 기능이 계속 지원되지만 더 이상 개선되지는 않습니다.
-1. 더 이상 사용되지 않는 기능의 제거는 이르면 다음 주요 릴리스에서 실행됩니다. 실제 제거 대상일이 공지됩니다.
+1. 사용 중단되는 기능은 빠른 시일 내에 다음 주요 릴리스에서 제거됩니다. 제거할 실제 목표 날짜는 발표됩니다.
 
 이 프로세스에서 고객에게 하나 이상의 릴리스 주기를 제공하여, 실제 제거 전에 더 이상 사용되지 않는 기능의 새 버전이나 후속 버전에 대한 구현을 채택할 수 있도록 합니다.
 
@@ -28,11 +32,11 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 
 <!-- TBD: This MD table is a replacement of the HTML table below. However, it generates validation error hence commenting and replacing with inline text. Restore if required. -->
 
-| 영역 | 기능 | 대체 |
+| 영역 | 특별 포함 | 대체 |
 |---|---|---|
-| UI | Adobe는 향후 클래식 UI를 개선할 계획이 없습니다. AEM 6.4에는 클래식 UI가 포함되어 있으며 이전 릴리스에서 업그레이드하는 고객은 있는 그대로 사용할 수 있습니다. 클래식 UI가 더 이상 사용되지 않는 동안에도 계속 지원됩니다. <ul> <li>`/libs/cq/core/content/welcome.html` </li> <li> `/siteadmin` </li> <li> `/damadmin` </li> <li> `/mcmadmin` </li> <li> `/inbox` </li> <li> `/tagging` </li> <li> `/cf#` (페이지 편집기) </li><li> `/libs/launches/content/admin.html` </li> <li> `/libs/cq/workflow/content/console.html` </li> </ul> | 고객은 새 AEM UI를 사용하도록 전환하는 것이 좋습니다. |
-| 구성 요소 | Adobe은 아래에 나열된 기초 구성 요소를 추가로 개선할 계획이 없습니다. AEM 6.4에는 기초 구성 요소가 포함되어 있으며 이전 릴리스에서 업그레이드하는 고객은 있는 그대로 사용할 수 있습니다. 기초 구성 요소가 더 이상 사용되지 않는 동안에도 계속 지원됩니다. <ul> <li> foundation/components/account/accountname </li> <li> foundation/components/account/actions </li> <li> foundation/components/account/passwordreset </li> <li> foundation/components/account/requestconfirence </li> <li> foundation/components/adaptiveimage </li> <li> foundation/components/assetssharepage </li> <li> foundation/components/breadcrumb </li> <li> foundation/components/form/creditcard </li> <li> foundation/components/listchildren </li> <li> foundation/components/login </li> <li> foundation/components/logo </li> <li> foundation/components/mobilefooter </li> <li> foundation/components/mobileimage </li> <li> foundation/components/mobilelist </li> <li> foundation/components/mobilelogo </li> <li> foundation/components/mobilereference </li> <li> foundation/components/mobiletextimage </li> <li> foundation/components/mobiletopnav </li> <li> foundation/components/search </li> <li> foundation/components/sitemap </li> <li> foundation/components/table </li> <li> foundation/components/toolbar </li> <li> foundation/components/topnav </li> <li> foundation/components/userinfo </li> </ul> | 고객은 향후 프로젝트를 위해 코어 구성 요소를 사용하는 것이 좋습니다. 기존 사이트는 변경할 필요가 없습니다. |
-| 구성 요소 | Adobe은 아래에 나열된 기초 구성 요소를 추가로 개선할 계획이 없습니다. AEM 6.4에는 기초 구성 요소가 포함되어 있으며 이전 릴리스에서 업그레이드하는 고객은 있는 그대로 사용할 수 있습니다. 기초 구성 요소가 더 이상 사용되지 않는 동안에도 계속 지원됩니다. <ul><li>foundation/components/timing</li></ul> | Adobe은 교체를 제공할 계획이 없습니다. |
+| UI | Adobe은 향후 클래식 UI를 개선할 계획이 없습니다. AEM 6.4에는 클래식 UI가 포함되어 있으며 이전 릴리스에서 업그레이드하는 고객은 있는 그대로 사용할 수 있습니다. 클래식 UI는 더 이상 사용되지 않는 동안에도 계속 지원됩니다. <ul> <li>`/libs/cq/core/content/welcome.html` </li> <li> `/siteadmin` </li> <li> `/damadmin` </li> <li> `/mcmadmin` </li> <li> `/inbox` </li> <li> `/tagging` </li> <li> `/cf#` (페이지 편집기) </li><li> `/libs/launches/content/admin.html` </li> <li> `/libs/cq/workflow/content/console.html` </li> </ul> | 고객은 새 AEM UI를 사용하도록 전환하는 것이 좋습니다. |
+| 구성 요소 | Adobe은 아래에 나열된 기초 구성 요소를 추가로 개선할 계획이 없습니다. AEM 6.4에는 기초 구성 요소가 포함되어 있으며 이전 릴리스에서 업그레이드하는 고객은 있는 그대로 사용할 수 있습니다. 기초 구성 요소는 더 이상 사용되지 않는 동안에도 계속 지원됩니다. <ul> <li> foundation/components/account/accountname </li> <li> foundation/components/account/actions </li> <li> foundation/components/account/passwordreset </li> <li> foundation/components/account/requestconfirence </li> <li> foundation/components/adaptiveimage </li> <li> foundation/components/assetssharepage </li> <li> foundation/components/breadcrumb </li> <li> foundation/components/form/creditcard </li> <li> foundation/components/listchildren </li> <li> foundation/components/login </li> <li> foundation/components/logo </li> <li> foundation/components/mobilefooter </li> <li> foundation/components/mobileimage </li> <li> foundation/components/mobilelist </li> <li> foundation/components/mobilelogo </li> <li> foundation/components/mobilereference </li> <li> foundation/components/mobiletextimage </li> <li> foundation/components/mobiletopnav </li> <li> foundation/components/search </li> <li> foundation/components/sitemap </li> <li> foundation/components/table </li> <li> foundation/components/toolbar </li> <li> foundation/components/topnav </li> <li> foundation/components/userinfo </li> </ul> | 고객은 향후 프로젝트에 핵심 구성 요소를 사용하는 것이 좋습니다. 기존 사이트는 변경할 필요가 없습니다. |
+| 구성 요소 | Adobe은 아래에 나열된 기초 구성 요소를 추가로 개선할 계획이 없습니다. AEM 6.4에는 기초 구성 요소가 포함되어 있으며 이전 릴리스에서 업그레이드하는 고객은 있는 그대로 사용할 수 있습니다. 기초 구성 요소는 더 이상 사용되지 않는 동안에도 계속 지원됩니다. <ul><li>foundation/components/timing</li></ul> | Adobe은 교체를 제공할 계획이 없습니다. |
 | 포털 Director | Portal Director은 타사 서버에서 포틀릿을 통해 AEM 컨텐츠를 호스팅할 수 있는 기능 세트입니다. Adobe은 아래 나열된 위치에 따라 Portal Director 기능을 추가로 개선할 계획이 없습니다. AEM 6.4에는 Portal Director이 포함되어 있으며 이전 릴리스에서 업그레이드하는 고객은 있는 그대로 사용할 수 있습니다. Portal Direct는 더 이상 사용되지 않는 동안에도 계속 지원됩니다. <ul><li>/libs/portal/director</li></ul> | Adobe은 교체를 제공할 계획이 없습니다. |
 | 포틀릿 구성 요소 | /foundation/components/portlet 아래의 포틀릿 구성 요소는 AEM에서 JSR 포틀릿을 구성 요소로 호스팅할 수 있도록 합니다. Adobe은 포틀릿 구성 요소 기능을 추가로 개선할 계획이 없습니다. AEM 6.4에는 포틀릿 구성 요소가 포함되어 있으며 이전 릴리스에서 업그레이드하는 고객은 있는 그대로 사용할 수 있습니다. 포틀릿 구성 요소는 사용 중단되는 동안 완전히 지원됩니다. | Adobe은 교체를 제공할 계획이 없습니다. |
 | Forms | Adobe 중앙 제품이 더 이상 지원되지 않으므로 Adobe 중앙 마이그레이션 Bridge 서비스에 대한 지원이 더 이상 사용되지 않습니다. | 교체 없음 |
@@ -148,7 +152,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 
 아래 표에는 AEM 6.4에서 제거된 기능이 나와 있습니다. 이전 릴리스에는 이러한 기능이 더 이상 사용되지 않는 것으로 표시되었습니다.
 
-| 영역 | 기능 | 대체 |
+| 영역 | 특별 포함 | 대체 |
 |---|---|---|
 | [!DNL Experience Cloud]와 통합  | 자산을 와 동기화할 수 있습니다 [!DNL Experience Cloud] 를 통해 구성 사용 [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] 이전에 [!DNL Adobe Marketing Cloud]. | 질문이 있는 경우 [고객 지원 Adobe](https://experienceleague.adobe.com/?support-solution=General#support). |
 | Analytics Activity Map | AEM 내에 포함된 Activity Map 버전입니다. | Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다. 다음 [Adobe Analytics에서 제공하는 ActivityMap 플러그인](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) 이제 를 사용해야 합니다. |
@@ -158,7 +162,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | 구성 요소 | 비디오 구성 요소에서 재생 SWF 파일에 대한 지원이 제거됨(foundation/components/video) | 없음 플래시 기반 비디오 형식을 사용합니다. |
 | 구성 요소 | 제품 테이블(commerce/components/product_table) | 교체 없음 |
 | 작업 관리 | 클래식 UI 작업 관리(/libs/cq/taskmanagement/content/taskmanager.html) | 6.0 이후 더 이상 사용되지 않습니다. 워크플로우 UI와 결합된 새 작업 관리를 사용하십시오. |
-| 워크플로 | 5.6~6.2 사이에 사용된 알림 UI (/libs/cq/workflow/content/notifications.html) | 워크플로우 받은 편지함/AEM/받은 편지함 |
+| 워크플로 | 5.6-6.2 사이에 사용되는 알림 UI (/libs/cq/workflow/content/notifications.html) | 워크플로우 받은 편지함 /aem/받은 편지함 |
 | Forms | PDF 생성기를 사용하여 PDF/E-1 형식으로 Export PDF을 제거했습니다. | PDF 생성기는 PDF/A-1a/b, PDF/A-2a/b 및 PDF/A-3a/b 형식으로 PDF 내보내기를 계속 지원합니다. |
 | Forms | 문서 조각 내의 이미지에 대한 지원이 제거되었습니다. | 대화형 커뮤니케이션은 인쇄 및 웹 채널에서 직접 이미지를 사용할 수 있는 기능을 제공합니다. |
 | Forms | 즉시 업그레이드 | 즉시 업그레이드할 수 있도록 지원할 수 없습니다 |
@@ -173,9 +177,9 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 
 ## 다음 릴리스에 대한 사전 공지 {#pre-announcement-for-next-release}
 
-아래 표는 더 이상 사용되지 않지만 고객에게 영향을 줄 수 있는 향후 릴리스의 변경 사항 목록을 제공합니다. 이 항목은 목표 계획용으로 제공됩니다.
+아래 표는 더 이상 사용되지 않지만 고객에게 영향을 줄 수 있는 향후 릴리스의 변경 사항 목록을 제공합니다. 이것은 계획 목적으로 제공됩니다.
 
-| 영역 | 기능 | 공지 |
+| 영역 | 특별 포함 | 공지 |
 |---|---|---|
 | 브라우저 지원 | Microsoft Internet Explorer | AEM 6.4는 Microsoft Internet Explorer 11을 지원하는 마지막 릴리스입니다. |
 | Foundation | UI 프레임워크 | Adobe은 2019년에 Coral UI 2 구성 요소를 사용하지 않습니다. AEM 6.4는 Coral UI 3(AEM 6.2에서 도입됨)을 기반으로 합니다. Adobe은 Coral 2로 사용자 지정 UI를 구축하는 고객 및 파트너에게 Coral 3으로 리팩터링할 것을 권장합니다. Adobe은 Coral 2 대화 상자를 Coral 3으로 변환하는 도구를 제공합니다. [자세한 내용](/help/sites-developing/modernization-tools.md) |

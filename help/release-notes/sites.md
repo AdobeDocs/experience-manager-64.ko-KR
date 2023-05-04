@@ -2,7 +2,7 @@
 title: AEM Sites 릴리스 노트
 seo-title: AEM Sites
 description: Adobe Experience Manager 6.4 Sites에 관한 릴리스 노트입니다.
-seo-description: Adobe Experience Manager 6.4 Sites에 관한 릴리스 노트입니다.
+seo-description: Release notes specific to Adobe Experience Manager 6.4 Sites.
 uuid: 593928ec-5d1a-4a88-bd73-897421c5984a
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,16 +10,20 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 40225441-7cfe-4395-ac71-60504b42e764
 exl-id: 19ec5c00-eae5-4e7f-9dc5-c7a88b06fd2a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 15%
+source-wordcount: '1046'
+ht-degree: 12%
 
 ---
 
 # AEM Sites 릴리스 노트 {#aem-sites-release-notes}
 
-## 사이트 {#sites}
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+## Sites {#sites}
 
 AEM Sites 6.4 개선 사항에 대한 자세한 정보는 다음을 참조하십시오.
 
@@ -39,13 +43,13 @@ AEM Sites 6.4 개선 사항에 대한 자세한 정보는 다음을 참조하십
 
 ### 구성 요소 및 템플릿 개발 {#component-amp-template-development}
 
-* Project Archetype 13+의 경우 [Github 릴리스 노트](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/releases)를 참조하십시오.
+* Project Archetype 13+의 경우 [Github 릴리스 노트](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/releases).
 * HTL 버전 1.3.1의 경우 [Github 릴리스 노트](https://github.com/Adobe-Marketing-Cloud/htl-spec/releases/tag/1.3.1)를 참조하십시오.
 * 코어 구성 요소 2.0.4+의 경우 [Github 릴리스 노트](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases)를 참조하십시오.
 * 스타일 시스템
 
    * CSS 클래스를 구성 요소에 할당하고 페이지 편집기의 사용자가 UI를 통해 스타일 하위 세트에서 선택할 수 있도록 하는 완전히 새로운 개념을 추가했습니다
-   * 구성 요소 주위에 렌더링되는 HTML 요소 이름을 정의하는 기능이 추가되었습니다(예: ).&lt;main>, &lt;aside>
+   * 구성 요소 주위에 렌더링되는 HTML 요소 이름을 정의하는 기능이 추가되었습니다(예: ). &lt;main>, &lt;aside>
 
 * 레이아웃 컨테이너 그리드 시스템의 경우 [Github](https://github.com/Adobe-Marketing-Cloud/aem-responsivegrid)를 참조하십시오.
 * 템플릿 편집기 및 정책
@@ -57,7 +61,7 @@ AEM Sites 6.4 개선 사항에 대한 자세한 정보는 다음을 참조하십
 
 >[!CAUTION]
 >
->AEM에는 기존 사용자 정의 코드와의 최대 호환성을 제공하기 위해 jQuery 라이브러리의 버전 1.12.4가 포함됩니다. 알려진 보안 문제를 해결하기 위해 Adobe에서 수정을 완료했습니다.
+>AEM에는 기존 사용자 정의 코드와의 최대 호환성을 제공하기 위해 jQuery 라이브러리의 버전 1.12.4가 포함됩니다. 알려진 보안 문제를 해결하기 위해 Adobe이 수정했습니다.
 
 ### 컨텐츠 조각 및 편집기 {#content-fragments-amp-editor}
 
@@ -77,7 +81,7 @@ AEM Sites 6.4 개선 사항에 대한 자세한 정보는 다음을 참조하십
    * 핵심 구성 요소의 일부로서 새 컨텐츠 조각 구성 요소입니다. [GitHub에서 코드를 참조하십시오.](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/tree/master/extension/contentfragment/content/src/content/jcr_root/apps/core/wcm/extension/components/contentfragment/v1/contentfragment)
    * Sling Model Exporter를 통해 JSON 출력을 사용한 컨텐츠 서비스 지원
 
-### 경험 구성요소 {#experience-fragments}
+### 경험 조각 {#experience-fragments}
 
 * 구성 요소를 그룹화하고 변형 내에서 쉽게 참조할 수 있도록 하여 경험 조각 변형 간에 컨텐츠를 쉽게 재사용할 수 있도록 경험 조각 구성 요소가 도입되었습니다.
 * 참조 레일을 통해 번역 프로젝트에 경험 조각을 추가하는 기능을 추가했습니다
@@ -122,12 +126,12 @@ AEM Sites 6.4 개선 사항에 대한 자세한 정보는 다음을 참조하십
 
 * Adobe Target과 통합된 AEM 경험 구성요소 경험 조각을 Target에 동기화하면 Adobe Target에서 Target의 시각적 경험 작성기와 함께 사용하여 Target이 활성화된 경험에 포함할 수 있는 오퍼가 생성됩니다.
 * 이제 Adobe Target mbox.js 버전 63이 포함되어 있습니다. Adobe은 구현을 at.js로 전환할 것을 권장합니다.
-* 이제 at.js version 1.2.2이 포함됩니다. Adobe은 DTM(Dynamic Tag Management) 또는 [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) 을 사용하여 at.js를 사이트에 프로비저닝할 것을 권장합니다.
+* 이제 at.js 버전 1.2.2이 포함되어 있습니다. Adobe은 DTM(Dynamic Tag Management) 또는 [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) at.js를 사이트에 프로비저닝할 수 있도록 하려는 경우.
 
 ### AEM 및 Adobe Analytics {#aem-amp-adobe-analytics}
 
 * 이제 s_code.js H.27.5가 포함됩니다. Adobe은 구현을 AppMeasurement.js로 전환하도록 권장합니다
-* 이제 AppMeasurement.js 1.8.0이 포함됩니다. Adobe은 DTM(Dynamic Tag Management) 또는 [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) 을 사용하여 AppMeasurement.js를 사이트에 프로비저닝할 것을 권장합니다.
+* 이제 AppMeasurement.js 1.8.0이 포함됩니다. Adobe은 DTM(Dynamic Tag Management) 또는 [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) 를 사이트에 AppMeasurement.js를 프로비저닝할 수 있도록 했습니다.
 
 ## Communities 추가 기능 {#communities-add-on}
 
@@ -140,5 +144,5 @@ AEM Sites 6.4 개선 사항에 대한 자세한 정보는 다음을 참조하십
 * 이제 채널 할당에 시작 및 종료 날짜가 있습니다
 * 이제 장치 대시보드에 플레이어 셸 및 펌웨어 버전이 표시됩니다
 * 장치 대시보드 목록에는 플레이어의 연결 상태가 표시됩니다
-* AEM Screens Player에 대한 Google Chrome OS 지원이 추가되었습니다
+* AEM Screens Player에 대한 Google Chrome OS 지원이 추가되었습니다.
 * AEM Screens Player용 Microsoft Windows 10 추가

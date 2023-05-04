@@ -1,8 +1,8 @@
 ---
 title: 테스트 및 추적 도구
-seo-title: 테스트 및 추적 도구
+seo-title: Testing and Tracking Tools
 description: AEM은 구성 요소 UI를 테스트하는 프레임워크와 구성 요소를 테스트 및 디버깅하는 메커니즘을 제공합니다
-seo-description: AEM은 구성 요소 UI를 테스트하는 프레임워크와 구성 요소를 테스트 및 디버깅하는 메커니즘을 제공합니다
+seo-description: AEM provides a framework for testing component UI and a mechanism for testing and debugging components
 uuid: 29c43202-0a4e-41ba-9176-92fa77c627d5
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,21 +10,25 @@ topic-tags: testing
 content-type: reference
 discoiquuid: 0f977264-fe58-4478-bd38-aca5c75f36aa
 exl-id: 9387cdb4-f8de-4229-90d1-59218ac17561
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 4%
+source-wordcount: '327'
+ht-degree: 6%
 
 ---
 
 # 테스트 및 추적 도구{#testing-and-tracking-tools}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 ## 테스트 {#testing}
 
 AEM은 다음을 제공합니다.
 
-* [구성 요소 UI 테스트를 위한 프레임워크입니다](/help/sites-developing/hobbes.md).
-* [구성 요소를 테스트하고 디버깅하는 메커니즘입니다](/help/sites-developing/developer-mode.md).
+* [구성 요소 UI 테스트 프레임워크](/help/sites-developing/hobbes.md).
+* [구성 요소 테스트 및 디버깅 메커니즘](/help/sites-developing/developer-mode.md).
 
 다음은 두 가지 오픈 소스 테스트 도구입니다.
 
@@ -32,13 +36,13 @@ AEM은 다음을 제공합니다.
 
 Selenium은 활동당 한 명의 사용자가 있는 브라우저에서 함수 테스트에 사용됩니다. 테스트 단계(클릭)를 HTML 테이블 또는 Java 클래스로 기록합니다.
 
-자세한 내용은 [https://www.seleniumhq.org/](https://www.seleniumhq.org/)을 참조하십시오.
+자세한 내용은 [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
 
 **JMeter**
 
 JMeter는 요청을 추적하는 데 사용되며 기능, 성능 및 스트레스 테스트에 사용할 수 있습니다.
 
-자세한 내용은 [http://jakarta.apache.org/jmeter/](http://jakarta.apache.org/jmeter/)을 참조하십시오.
+자세한 내용은 [http://jakarta.apache.org/jmeter/](http://jakarta.apache.org/jmeter/).
 
 또한 테스트를 자동화하고 테스트 계획을 관리하기 위한 다양한 독점 도구가 있습니다.
 

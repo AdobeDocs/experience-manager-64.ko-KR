@@ -1,6 +1,6 @@
 ---
-title: Assets 크기 조정 가이드
-description: '자산 배포에 필요한 인프라 및 리소스를 추정하는 데 필요한 효율적인 지표를 결정하는 우수 사례입니다. [!DNL Experience Manager]  '
+title: Assets 크기 조정 안내서
+description: 배포에 필요한 인프라 및 리소스를 추정하는 효율적인 지표를 결정하는 우수 사례 [!DNL Experience Manager] 자산.
 uuid: f847c07d-2a38-427a-9c38-8cdca3a1210c
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -8,14 +8,18 @@ discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
 feature: Asset Management
 role: Architect,Admin
 exl-id: 6115e5e8-9cf5-417c-91b3-0c0c9c278b5b
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1840'
-ht-degree: 0%
+source-wordcount: '1876'
+ht-degree: 1%
 
 ---
 
-# Assets 크기 조정 가이드 {#assets-sizing-guide}
+# Assets 크기 조정 안내서 {#assets-sizing-guide}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 Adobe Experience Manager Assets 구현을 위해 환경 크기를 조정할 때 디스크, CPU, 메모리, IO 및 네트워크 처리량 측면에서 사용 가능한 리소스가 충분한지 확인하는 것이 중요합니다. 이러한 리소스 중 많은 크기를 조정하려면 시스템에 로드되는 자산 수를 이해해야 합니다. 더 나은 지표를 사용할 수 없는 경우 기존 라이브러리의 크기를 라이브러리 페이지로 나누어 자산이 만들어지는 비율을 찾을 수 있습니다.
 
@@ -23,7 +27,7 @@ Adobe Experience Manager Assets 구현을 위해 환경 크기를 조정할 때 
 
 ### DataStore {#datastore}
 
-자산 구현에 필요한 디스크 공간 크기를 조정할 때 발생하는 일반적인 오류는 시스템에 수집할 원시 이미지의 크기를 기반으로 계산되는 것입니다. 기본적으로 [!DNL Experience Manager]은 [!DNL Experience Manager] UI 요소 렌더링에 사용할 원본 이미지 외에 세 개의 렌디션을 만듭니다. 이전 구현에서 이러한 표현물은 수집된 자산의 두 배 크기를 가정하기 위해 관찰되었습니다.
+자산 구현에 필요한 디스크 공간 크기를 조정할 때 발생하는 일반적인 오류는 시스템에 수집할 원시 이미지의 크기를 기반으로 계산되는 것입니다. 기본적으로 [!DNL Experience Manager] 는 렌더링을 위해 원본 이미지 외에 세 개의 렌디션을 만듭니다. [!DNL Experience Manager] UI 요소. 이전 구현에서 이러한 표현물은 수집된 자산의 두 배 크기를 가정하기 위해 관찰되었습니다.
 
 대부분의 사용자는 기본 제공 표현물 외에 사용자 지정 표현물을 정의합니다. Assets를 사용하면 표현물 외에도 InDesign 및 Illustrator과 같은 일반적인 파일 유형에서 하위 자산을 추출할 수 있습니다.
 
@@ -34,11 +38,11 @@ Adobe Experience Manager Assets 구현을 위해 환경 크기를 조정할 때 
 1. 시스템에 로드될 자산의 크기와 수를 결정합니다.
 1. AEM에 업로드할 자산의 대표 샘플을 가져옵니다. 예를 들어 PSD, JPG, AI 및 PDF 파일을 시스템에 로드하려면 각 파일 형식의 여러 샘플 이미지가 필요합니다. 또한 이러한 샘플은 다양한 파일 크기와 이미지의 복잡도를 대표해야 합니다.
 1. 사용할 변환을 정의합니다.
-1. ImageMagick 또는 Adobe의 Creative Cloud 애플리케이션을 사용하여 [!DNL Experience Manager]에서 렌디션을 만듭니다. 사용자가 지정하는 표현물 외에, 즉시 사용 가능한 표현물을 만드십시오. Dynamic Media Classic을 구현하는 사용자의 경우 IC 바이너리를 사용하여 AEM에 저장할 PTIFF 변환을 생성할 수 있습니다.
+1. 에서 렌디션을 만듭니다. [!DNL Experience Manager] ImageMagick 또는 Adobe의 Creative Cloud 응용 프로그램 사용. 사용자가 지정하는 표현물 외에, 즉시 사용 가능한 표현물을 만드십시오. Dynamic Media Classic을 구현하는 사용자의 경우 IC 바이너리를 사용하여 AEM에 저장할 PTIFF 변환을 생성할 수 있습니다.
 1. 하위 자산을 사용하려는 경우 적절한 파일 유형에 대해 하위 자산을 생성합니다. Illustrator 레이어에서 InDesign 파일 또는 PNG/PDF 파일에서 하위 자산 페이지를 생성하는 방법에 대한 온라인 설명서를 참조하십시오.
 1. 출력 이미지, 표현물 및 하위 자산의 크기를 원본 이미지와 비교합니다. 시스템이 로드될 때 예상 성장 요소를 생성할 수 있습니다. 예를 들어, 1GB의 자산을 처리한 후 크기가 3GB인 표현물과 하위 자산을 생성하는 경우 표현물 증가 요소는 3입니다.
 1. 시스템에서 자산 버전을 유지 관리할 최대 시간을 결정합니다.
-1. 시스템에서 기존 자산을 수정하는 빈도를 결정합니다. 크리에이티브 워크플로우에서 [!DNL Experience Manager]을 공동 작업 허브로 사용하는 경우 변경 사항이 많이 발생합니다. 완료된 자산만 시스템에 업로드하면 이 수가 훨씬 줄어듭니다.
+1. 시스템에서 기존 자산을 수정하는 빈도를 결정합니다. If [!DNL Experience Manager] 는 크리에이티브 워크플로우에서 공동 작업 허브로 사용되므로 변경 사항이 많습니다. 완료된 자산만 시스템에 업로드하면 이 수가 훨씬 줄어듭니다.
 1. 매월 시스템에 로드되는 자산의 수를 결정합니다. 확실하지 않은 경우 현재 사용 가능한 자산의 수를 확인하고 가장 오래된 자산의 연도로 숫자를 나누어 대략적인 숫자를 계산합니다.
 
 1-9단계를 수행하면 다음 사항을 결정하는 데 도움이 됩니다.
@@ -51,7 +55,7 @@ Adobe Experience Manager Assets 구현을 위해 환경 크기를 조정할 때 
 * 매월 로드되는 새 자산 수
 * 공간을 할당할 수 있는 성장기
 
-네트워크 크기 조정 스프레드시트에서 이러한 숫자를 지정하여 데이터 저장소에 필요한 총 공간을 결정할 수 있습니다. 또한 자산 버전을 유지 관리하거나 [!DNL Experience Manager]에서 자산을 수정하는 것이 디스크 증가에 미치는 영향을 파악하는 데에도 유용한 도구입니다.
+네트워크 크기 조정 스프레드시트에서 이러한 숫자를 지정하여 데이터 저장소에 필요한 총 공간을 결정할 수 있습니다. 또한 자산 버전을 유지 관리하거나 자산을 수정하는 것의 영향을 결정하는 데 유용한 도구입니다 [!DNL Experience Manager] 디스크 증가 시
 
 도구에서 채워진 예제 데이터는 언급된 단계를 수행하는 것이 얼마나 중요한지 보여줍니다. 로드된 원시 이미지(1TB)를 기반으로 데이터 저장소의 크기를 지정하는 경우 저장소 크기를 15배수로 과소 평가했을 수 있습니다.
 
@@ -73,17 +77,17 @@ Adobe Experience Manager Assets 구현을 위해 환경 크기를 조정할 때 
 
 공유 데이터 저장소가 있는 경우 인프라에서 단일 장애 지점이 발생합니다. 시스템에 하나의 작성자 및 두 개의 게시 인스턴스가 있고 각각 고유한 데이터 저장소가 있는 시나리오를 생각해 보십시오. 충돌하면 다른 두 항목은 계속 실행될 수 있습니다. 그러나 데이터 저장소가 공유되면 단일 디스크 오류로 인해 전체 인프라가 다운될 수 있습니다. 따라서 데이터 저장소를 빠르게 복원할 수 있는 공유 데이터 저장소의 백업을 유지 관리해야 합니다.
 
-AWS S3 서비스를 공유 데이터 저장소에 배포하는 것이 좋습니다. 일반적인 디스크 아키텍처에 비해 장애 발생 가능성이 크게 감소하기 때문입니다.
+공유 데이터 저장소에 대해 AWS S3 서비스를 배포하는 것이 좋습니다. 일반적인 디스크 아키텍처에 비해 장애 발생 가능성이 상당히 감소하기 때문입니다.
 
 #### 복잡성 증가 {#increased-complexity}
 
 공유 데이터 저장소는 가비지 수집과 같은 작업의 복잡성도 높입니다. 일반적으로 독립형 데이터 저장소에 대한 가비지 수집은 한 번의 클릭으로 시작할 수 있습니다. 그러나 공유 데이터 저장소는 단일 노드에서 실제 수집을 실행하는 것 외에도 데이터 저장소를 사용하는 각 멤버에 대한 표시 제거 작업이 필요합니다.
 
-AWS 작업의 경우, EBS 볼륨의 RAID 어레이를 구축하지 않고 S3를 통해 단일 중앙 위치를 구현하면 시스템의 복잡성과 운영 위험을 크게 상쇄할 수 있습니다.
+AWS 작업의 경우 EBS 볼륨의 RAID 어레이를 만들지 않고 S3를 통해 단일 중앙 위치를 구현하면 시스템의 복잡성과 운영 위험을 크게 상쇄할 수 있습니다.
 
 #### 성능 문제 {#performance-concerns}
 
-공유 데이터 저장소를 사용하려면 모든 인스턴스 간에 공유되는 네트워크 마운트 드라이브에 바이너리를 저장해야 합니다. 이러한 바이너리는 네트워크를 통해 액세스되므로 시스템 성능에 부정적인 영향을 줍니다. 빠른 네트워크 연결을 사용하여 빠른 디스크 어레이에 대한 영향을 부분적으로 줄일 수 있습니다. 그러나, 이것은 비싼 제안이다. AWS 작업의 경우 모든 디스크는 원격이며 네트워크 연결이 필요합니다. 사용 후 볼륨은 인스턴스가 시작되거나 중지되면 데이터가 손실됩니다.
+공유 데이터 저장소를 사용하려면 모든 인스턴스 간에 공유되는 네트워크 마운트 드라이브에 바이너리를 저장해야 합니다. 이러한 바이너리는 네트워크를 통해 액세스되므로 시스템 성능에 부정적인 영향을 줍니다. 빠른 네트워크 연결을 사용하여 빠른 디스크 어레이에 대한 영향을 부분적으로 줄일 수 있습니다. 그러나, 이것은 비싼 제안이다. AWS 작업의 경우 모든 디스크가 원격이며 네트워크 연결이 필요합니다. 사용 후 볼륨은 인스턴스가 시작되거나 중지되면 데이터가 손실됩니다.
 
 #### 지연 {#latency}
 
@@ -106,11 +110,11 @@ NodeStore 또는 DocumentStore에 대한 정확한 크기 조정 수치를 얻�
 
 ## 네트워크 {#network}
 
-[!DNL Assets] 에는 많은 프로젝트에서 보다 네트워크 성능이 더 중요한 사용 사례가  [!DNL Experience Manager] 있습니다. 고객은 빠른 서버를 사용할 수 있지만 네트워크 연결이 시스템에서 자산을 업로드하고 다운로드하는 사용자의 로드를 지원할 만큼 크지 않다면 속도가 느려진 것으로 보입니다. 사용자 환경, 인스턴스 크기 조정, 워크플로우 평가 및 네트워크 토폴로지](assets-network-considerations.md)에 있는 [!DNL Experience Manager]에 대한 사용자의 네트워크 연결에서 초크 포인트를 결정하는 좋은 방법이 있습니다.[[!DNL Experience Manager] 
+[!DNL Assets] 에는 대부분의 Adobe에서 사용하는 것보다 네트워크 성능이 더 중요한 사용 사례가 많습니다 [!DNL Experience Manager] 프로젝트를 참조하십시오. 고객은 빠른 서버를 사용할 수 있지만 네트워크 연결이 시스템에서 자산을 업로드하고 다운로드하는 사용자의 로드를 지원할 만큼 크지 않다면 속도가 느려진 것으로 보입니다. 사용자의 네트워크 연결에서 초크 포인트를 결정할 수 있는 좋은 방법이 있습니다 [!DNL Experience Manager] at [[!DNL Experience Manager]  사용자 환경, 인스턴스 크기 조정, 워크플로우 평가 및 네트워크 토폴로지에 대한 자산 고려 사항](assets-network-considerations.md).
 
 ## WebDAV {#webdav}
 
-[!DNL Experience Manager] 데스크탑 앱을 혼합에 추가하는 경우 WebDAV 프로토콜에서 비효율성으로 인해 네트워크 문제가 더 심각해집니다.
+를 추가할 경우 [!DNL Experience Manager] WebDAV 프로토콜의 비효율성 때문에 데스크탑 앱을 혼용하면 네트워크 문제가 더욱 심각해집니다.
 
 이러한 비효율성을 보여주기 위해 Adobe은 OS X에서 WebDAV를 사용하여 시스템 성능을 테스트했습니다. 3.5MB InDesign 파일이 열리거나 편집하고 변경 사항이 저장되었습니다. 다음 관찰이 수행되었습니다.
 
@@ -122,7 +126,7 @@ NodeStore 또는 DocumentStore에 대한 정확한 크기 조정 수치를 얻�
 
 WebDAV를 통해 파일의 평균 저장 시간을 분석하는 동안 5-10Mbps 수준까지 대역폭이 증가함에 따라 성능이 크게 향상되는 것으로 나타났습니다. 따라서 Adobe은 시스템에 동시에 액세스하는 각 사용자가 업로드 속도 10Mbps와 5-10Mbps의 대역폭을 가져야 한다고 권장합니다.
 
-자세한 내용은 [문제 해결 [!DNL Experience Manager] 데스크탑 앱](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html)을 참조하십시오.
+자세한 내용은 [문제 해결 [!DNL Experience Manager] 데스크탑 앱](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html).
 
 ## 제한 사항 {#limitations}
 
@@ -130,7 +134,7 @@ WebDAV를 통해 파일의 평균 저장 시간을 분석하는 동안 5-10Mbps 
 
 파일 크기가 메모리 부족(OOM) 문제에 기여하는 유일한 요소는 아닙니다. 이미지의 차원에도 따라 다릅니다. AEM을 시작할 때 더 큰 힙을 제공하여 OOM 문제를 방지할 수 있습니다.
 
-또한 구성 관리자에서 `com.day.cq.dam.commons.handler.StandardImageHandler` 구성 요소의 임계값 크기 속성을 편집하여 0보다 큰 중간 임시 파일을 사용할 수 있습니다.
+또한, `com.day.cq.dam.commons.handler.StandardImageHandler` 구성 관리자의 구성 요소를 사용하여 0보다 큰 중간 임시 파일을 사용합니다.
 
 ## 최대 자산 수 {#maximum-number-of-assets}
 
@@ -140,10 +144,10 @@ While the limit for the number of nodes in a repository has not been determined,
 
 데이터 저장소에 있을 수 있는 파일 수로 제한되는 제한은 파일 시스템 제한 때문에 21억 개일 수 있습니다. 데이터 저장소 제한에 도달하기 훨씬 전에 많은 수의 노드로 인해 리포지토리에 문제가 발생할 수 있습니다.
 
-표현물이 잘못 생성되면 Camera Raw 라이브러리를 사용합니다. 그러나 이 경우 이미지의 가장 긴 측면이 65000 픽셀보다 크지 않아야 합니다. 또한 이미지에는 512MP(512 &amp;ast;)를 초과할 수 없습니다. 1024 &amp;ast; 1024픽셀)&#39;. *자산 크기가 중요하지 않습니다*.
+표현물이 잘못 생성되면 Camera Raw 라이브러리를 사용합니다. 그러나 이 경우 이미지의 가장 긴 측면이 65000 픽셀보다 크지 않아야 합니다. 또한 이미지에는 512MP(512 &amp;ast;)를 초과할 수 없습니다 1024년 &amp;ast; 1024픽셀)&#39;. *자산 크기가 중요하지 않음*.
 
-픽셀 크기는 처리에 영향을 주는 것과 같은 추가 요소를 포함하므로 OOTB(기본 제공)에서 특정 힙에 대해 지원되는 TIFF 파일의 크기를 정확하게 추정하는 것은 어렵습니다. [!DNL Experience Manager] [!DNL Experience Manager]은(는) 255MB OOTB의 파일을 처리할 수 있지만, 18MB의 파일 크기는 이전에 비해 비정상적으로 많은 수의 픽셀로 구성되므로 처리할 수 없습니다.
+OOTB(기본 제공)에서 지원되는 특정 힙과 함께 TIFF 파일의 크기를 정확하게 추정하는 것은 어렵습니다 [!DNL Experience Manager] 픽셀 크기 등의 추가 요소가 처리에 영향을 주기 때문입니다. 가능한 건 [!DNL Experience Manager] 255MB OOTB의 파일을 처리할 수 있지만, 파일 크기가 18MB인 것은 처리할 수 없습니다. 파일의 크기는 이전에 비해 비정상적으로 더 많은 수의 픽셀로 구성되기 때문입니다.
 
 ## 자산 크기 {#size-of-assets}
 
-기본적으로 [!DNL Experience Manager] 에서는 최대 2GB의 파일 크기의 자산을 업로드할 수 있습니다. AEM에서 매우 큰 자산을 업로드하려면 [구성 을 참조하여 매우 큰 자산을 업로드하십시오](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb).
+기본적으로 [!DNL Experience Manager] 최대 2GB의 파일 크기의 자산을 업로드할 수 있습니다. AEM에서 매우 큰 자산을 업로드하려면 다음을 참조하십시오 [매우 큰 자산을 업로드하도록 구성](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb).

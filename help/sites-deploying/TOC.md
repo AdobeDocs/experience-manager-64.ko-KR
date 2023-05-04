@@ -8,7 +8,8 @@ breadcrumb-title: 배포 안내서
 user-guide-description: Adobe Managed Services 클라우드 배포를 포함하여 Adobe Experience Manager 6.4의 설치, 배포 및 아키텍처에 대해 자세히 알아봅니다.
 feature: Deploying
 role: Architect
-source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
+hide: true
+source-git-commit: b61797a9096c0473658d6aabfb584a53e42095b7
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 18%

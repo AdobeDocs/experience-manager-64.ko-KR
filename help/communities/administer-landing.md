@@ -1,8 +1,8 @@
 ---
 title: 커뮤니티 사이트
-seo-title: 커뮤니티 사이트
+seo-title: Communities Sites
 description: AEM Communities 설명서 개요
-seo-description: AEM Communities 설명서 개요
+seo-description: Overview of the AEM Communities documentation
 uuid: 9842ce6c-1af8-4b27-b199-07410e797ab2
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
 role: Admin
 exl-id: b5d20819-3a3f-4b9e-99a3-e7ae5ae28baf
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '506'
 ht-degree: 5%
 
 ---
 
 # 커뮤니티 사이트 {#communities-sites}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 이 섹션은 AEM Communities을 관리하고 AEM Communities 기능에 익숙하다고 가정합니다.
 
@@ -36,10 +40,10 @@ ht-degree: 5%
 
 * 커뮤니티 [콘솔](consoles.md)
 
-   * [사이트](sites-console.md)
+   * [Sites](sites-console.md)
 
       * [그룹(하위 커뮤니티)](groups.md)
-   * [중재](moderation.md)
+   * [관리](moderation.md)
    * [구성원 및 그룹 관리](members.md)
    * [사용 리소스](resources.md)
    * [보고서](reports.md)
@@ -59,7 +63,7 @@ ht-degree: 5%
 
 AEM Communities의 주요 기능은 로그인한 사이트 방문자(구성원)가 사용자 생성 콘텐츠(UGC)를 생성하는 것입니다. UGC 방문 작업에 대해 자세히 알아보려면:
 
-* [일반 UGC 저장소](working-with-srp.md): UGC 공유 스토리지를 위한 SRP 선택
+* [일반 UGC 스토어](working-with-srp.md): UGC 공유 스토리지를 위한 SRP 선택
 * [UGC 중재](moderate-ugc.md): 신뢰할 수 있는 구성원은 UGC를 벌크 또는 컨텍스트 내 중재 가능
 * [UGC 태깅](tag-ugc.md): 구성원이 컨텐츠에 태그를 지정할 수 있도록 기능을 구성할 수 있습니다
 * [UGC 번역](translate-ugc.md): 모든 UGC를 번역하거나 구성원이 선택한 게시물을 번역하도록 기능을 구성할 수 있습니다
@@ -74,13 +78,13 @@ AEM Communities의 주요 기능은 로그인한 사이트 방문자(구성원)�
 * [사용자 동기화](sync.md): 여러 게시 인스턴스에 있는 멤버 및 멤버 그룹을 동기화합니다.
 * [facebook 및 Twitter을 사용하여 소셜 로그인](social-login.md): 사이트 방문자가 자신의 Facebook 또는 Twitter 자격 증명을 사용하여 커뮤니티 구성원이 될 수 있는 기능
 * [점수 및 배지](implementing-scoring.md): 회원 역할 식별을 위해 배지를 할당하고 커뮤니티 참여를 통해 배지를 획득할 수 있는 능력
-* [알림](notifications.md): 구성원이 따르는 활동에 대한 알림을 받을 수 있는 기능
+* [알림 을 참조하십시오](notifications.md): 구성원이 따르는 활동에 대한 알림을 받을 수 있는 기능
 * [구독](subscriptions.md): 구성원이 외부 이메일을 사용하여 커뮤니티와 상호 작용할 수 있는 기능
 * [메시징](messaging.md): 구성원이 내부 메시지를 사용하여 커뮤니티와 상호 작용할 수 있는 기능
 
 ### 사용 기능 {#enablement-features}
 
-* [지원 구성](enablement.md): 사용 기능을 올바르게 설정하는 데 필요한 정보
+* [활성화 구성](enablement.md): 사용 기능을 올바르게 설정하는 데 필요한 정보
 * [Analytics 구성](analytics.md): communities용 Adobe Analytics 기능을 활성화하는 데 필요한 정보
 * [태깅 지원 리소스](tag-resources.md): 활성화 카탈로그를 만드는 데 필요한 경우
 
@@ -96,12 +100,12 @@ AEM 플랫폼에 최신 Communities 릴리스를 설치하는 것이 중요합�
 
 * [최신 커뮤니티 기능 팩](deploy-communities.md#latestfeaturepack)
 
-[업그레이드](upgrade.md), [Dispatcher](dispatcher.md) 및 [복제](deploy-communities.md#replication-agents-on-author)와 같은 다른 커뮤니티 관련 정보는 배포 페이지를 참조하십시오.
+처럼 다른 Communities 관련 정보가 필요하면 배포 페이지를 참조하십시오 [업그레이드](upgrade.md), [Dispatcher](dispatcher.md) 및 [복제](deploy-communities.md#replication-agents-on-author).
 
 ## 관련 커뮤니티 설명서 {#related-communities-documentation}
 
-* 권장 배포에 대해 알아보려면 [Communities 배포](deploy-communities.md)를 방문하십시오.
+* 방문 [커뮤니티 배포](deploy-communities.md) 권장 배포에 대해 자세히 알아보십시오 .
 
-* SCF(소셜 구성 요소 프레임워크)에 대해 알아보고 커뮤니티 구성 요소 및 기능을 사용자 지정하려면 [커뮤니티 개발](communities.md)을 방문하십시오.
+* 방문 [커뮤니티 개발](communities.md) SCF(소셜 구성 요소 프레임워크) 및 커뮤니티 구성 요소 및 기능 사용자 지정에 대해 알아봅니다.
 
-* 커뮤니티 구성 요소를 사용하여 작성하고 구성하는 방법을 배우려면 [커뮤니티 구성 요소 작성](author-communities.md)을 방문하십시오.
+* 방문 [커뮤니티 구성 요소 작성](author-communities.md) 커뮤니티 구성 요소를 사용하여 작성하고 구성하는 방법을 알아봅니다.

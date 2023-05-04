@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 8556d20a-99bd-4942-b7b8-2db69f64e67c
 exl-id: 05c52802-adfd-4b5f-a273-d6a261a00659
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 100%
+source-wordcount: '683'
+ht-degree: 80%
 
 ---
 
 # 페이지에 워크플로 적용{#applying-workflows-to-pages}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 작성 시 페이지에서 수행할 워크플로를 불러올 수 있습니다. 하나 이상의 워크플로를 적용할 수도 있습니다.
 
@@ -32,28 +36,28 @@ ht-degree: 100%
 
 워크플로는 다음 위치에서 시작될 수 있습니다.
 
-* **[사이트](#starting-a-workflow-from-the-sites-console)** 콘솔.
-* 페이지 편집 시 **[페이지 정보](#starting-a-workflow-from-the-page-editor)**
+* a **[Sites](#starting-a-workflow-from-the-sites-console)** 콘솔.
+* 페이지를 편집할 때 **[페이지 정보](#starting-a-workflow-from-the-page-editor)**.
 
 >[!NOTE]
 >
->또한 Headless 개념 및 용어 소개가 포함되어 있는
+>또한 다음 문서도 참조할 수 있습니다.
 >
->* [워크플로우를 DAM 자산에 적용하는 방법](/help/assets/assets-workflow.md)
+>* [DAM 자산에 워크플로우를 적용하는 방법](/help/assets/assets-workflow.md).
 >* [프로젝트 워크플로를 사용하여 작업](/help/sites-authoring/projects-with-workflows.md)
 >
 
 
 >[!NOTE]
 >
->AEM 관리자는 [몇 가지 다른 방법](/help/sites-administering/workflows-starting.md)을 사용하여 워크플로우를 시작할 수 있습니다.
+>AEM 관리자는 [몇 가지 다른 방법을 사용하여 워크플로우 시작](/help/sites-administering/workflows-starting.md).
 
 ## 사이트 콘솔에서 워크플로 시작 {#starting-a-workflow-from-the-sites-console}
 
 다음 중 하나에서 워크플로를 시작할 수 있습니다.
 
-* [사이트] 도구 모음의 **[만들기](#starting-a-workflow-from-the-sites-toolbar)** 선택 사항
-* 사이트 콘솔의 **[타임라인](#starting-a-workflow-from-the-timeline)** 레일
+* a **[만들기](#starting-a-workflow-from-the-sites-toolbar)** 옵션 을 클릭합니다.
+* a **[타임라인](#starting-a-workflow-from-the-timeline)** 사이트 콘솔의 레일.
 
 두 경우 모두 다음 작업을 수행해야 합니다.
 
@@ -88,8 +92,8 @@ ht-degree: 100%
 
 다음 중 하나에서 **워크플로 만들기** 마법사를 여십시오.
 
-* [사이트] 도구 모음의 **[만들기](#starting-a-workflow-from-the-sites-toolbar)** 선택 사항
-* 사이트 콘솔의 **[타임라인](#starting-a-workflow-from-the-timeline)** 레일
+* a **[만들기](#starting-a-workflow-from-the-sites-toolbar)** 옵션 을 클릭합니다.
+* a **[타임라인](#starting-a-workflow-from-the-timeline)** 사이트 콘솔의 레일.
 
 세부 사항을 지정할 수 있습니다.
 
@@ -98,7 +102,7 @@ ht-degree: 100%
    * **워크플로 모델**
    * **워크플로 제목**
 
-      * 나중 단계에서 식별할 수 있도록 이 인스턴스의 제목을 지정할 수 있습니다.
+      * 이 인스턴스에 대한 제목을 지정하여 이후 단계에서 식별할 수 있습니다.
 
    워크플로 모델에 따라 다음 선택 사항도 사용할 수 있습니다. 이 선택 사항을 사용하면 워크플로가 완료된 후에도 페이로드로 만들어진 패키지를 유지할 수 있습니다.
 
@@ -137,10 +141,10 @@ ht-degree: 100%
    >
    >추가 리소스를 추가하면 **뒤로**&#x200B;를 사용하여 **속성** 단계의 **워크플로 패키지 유지** 설정을 조정할 수 있습니다.
 
-1. **만들기**&#x200B;를 사용하여 마법사를 닫고 워크플로 인스턴스를 만듭니다. 알림은 사이트 콘솔에 표시됩니다.
+1. **만들기**&#x200B;를 사용하여 마법사를 닫고 워크플로 인스턴스를 만듭니다. 알림이 사이트 콘솔에 표시됩니다.
 
 ## 페이지 편집기에서 워크플로 시작 {#starting-a-workflow-from-the-page-editor}
 
-페이지를 편집할 때 도구 모음에서 **페이지 정보**&#x200B;를 선택할 수 있습니다. 드롭다운 메뉴에는 **워크플로에서 시작** 선택 사항이 있습니다. 이 옵션을 선택하면 필요한 경우 제목과 함께 필요한 워크플로를 지정할 수 있는 대화 상자가 열립니다.
+페이지를 편집할 때 선택할 수 있습니다 **페이지 정보** 를 클릭합니다. 드롭다운 메뉴에는 **워크플로에서 시작** 선택 사항이 있습니다. 이 옵션을 선택하면 필요한 경우 제목과 함께 필요한 워크플로를 지정할 수 있는 대화 상자가 열립니다.
 
 ![wf-54](assets/wf-54.png)

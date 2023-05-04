@@ -1,8 +1,8 @@
 ---
 title: 커뮤니티 콘텐츠 중재
-seo-title: 커뮤니티 콘텐츠 중재
+seo-title: Moderating Community Content
 description: 조정 개념 및 작업
-seo-description: 조정 개념 및 작업
+seo-description: Moderation concepts and actions
 uuid: a24d09e7-3260-4eec-844e-97e6849c94d8
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: d11b8fc8-5e98-4a77-a536-d445ac88e1b3
 role: Admin
 exl-id: 9865b366-b9e5-40f3-8863-789ccfb792f5
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1519'
-ht-degree: 1%
+source-wordcount: '1548'
+ht-degree: 2%
 
 ---
 
 # 커뮤니티 콘텐츠 중재 {#moderating-community-content}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ## 개요 {#overview}
 
@@ -36,7 +40,7 @@ UGC를 중재하는 것은 긍정적인 기여도를 인식하는 동시에 음�
 
 * [벌크 중재 콘솔](moderation.md)
 
-   중재 콘솔은 관리자 및 작성자 환경의 관리자뿐만 아니라 공개 환경의 [커뮤니티 중재자](users.md)가 액세스할 수 있습니다. 이는 커뮤니티 컨텐츠가 [일반 스토어](working-with-srp.md)에 저장되어 있을 때 가능합니다.
+   관리 콘솔은 관리자 및 [커뮤니티 중재자](users.md) 작성 환경의 관리자뿐만 아니라 공개 환경에서도 사용됩니다. 이는 커뮤니티 컨텐츠가 [일반 상점](working-with-srp.md).
 
 * [컨텍스트 내 중재](in-context.md)
 
@@ -47,9 +51,9 @@ UGC를 중재하는 것은 긍정적인 기여도를 인식하는 동시에 음�
 게시된 콘텐츠(UGC)에서 수행할 수 있는 작업은 사용자 ID 및 환경에 따라 다릅니다. 아래 표는 다음 용어를 사용하여 사용자 ID에 따라 다양한 역할을 설명합니다.
 
 * `Admin`\
-   [community-administrators](users.md) 그룹의 멤버인 사용자
+   의 멤버인 사용자 [community-administrators](users.md) 그룹
 * `Moderator`
-커뮤니티 중재  [그룹의 ](users.md#publishenvironmentusersandgroups) 구성원( [중재자 권한](in-context.md#moderatorpermissions) 있음)
+의 구성원 [커뮤니티 중재자](users.md#publishenvironmentusersandgroups) 그룹(있음) [중재자 권한](in-context.md#moderatorpermissions))
 * `Creator`\
    컨텐츠를 게시한 사용자
 * `Member`\
@@ -66,7 +70,7 @@ UGC를 중재하는 것은 긍정적인 기여도를 인식하는 동시에 음�
    <td><strong>작성자</strong></td> 
    <td><strong>구성원</strong></td> 
    <td><strong>방문자</strong></td> 
-   <td><strong>Event<br /> 트리거됨</strong></td> 
+   <td><strong>이벤트<br /> 트리거됨</strong></td> 
    <td><strong>사전 중재됨</strong></td> 
   </tr>
   <tr>
@@ -144,7 +148,7 @@ UGC가 삭제되면 저장소에서 제거되고 복구되지 않을 수 있습�
 
 잘라내기 작업을 선택하면 컨텐츠가 클립보드에 복사됩니다. 여러 게시물을 그룹으로 복사하고 새 위치로 이동할 수 있습니다.
 
-![](assets/cutugc.png) ![cutugcputbackugc](assets/putbackugc.png)
+![cutugc](assets/cutugc.png) ![putbackugc](assets/putbackugc.png)
 
 다른 위치에서는 클립보드에 컨텐츠가 있으면 붙여넣을 게시물의 수를 식별하는 숫자가 있는 새 게시물 옆에 붙여넣기 단추가 표시됩니다. 붙여넣기 단추에는 붙여넣기가 아닌 클립보드를 지울 수 있는 옵션이 포함되어 있습니다.
 
@@ -166,7 +170,7 @@ UGC가 삭제되면 저장소에서 제거되고 복구되지 않을 수 있습�
 
 ### 플래그/플래그 해제 {#flag-unflag}
 
-플래그 지정은 컨텐츠 작성자를 제외하고, 게시물의 컨텐츠에 문제가 있음을 나타내기 위해 로그인한 구성원을 위한 방법입니다. 플래그가 지정되면 동일한 구성원이 컨텐츠 플래그를 해제할 수 있는 플래그 해제 아이콘이 표시됩니다.
+플래그 지정은 컨텐츠 작성자를 제외하고, 게시물의 컨텐츠에 문제가 있음을 나타내는 모든 로그인 멤버의 수단입니다. 플래그가 지정되면 동일한 구성원이 컨텐츠 플래그를 해제할 수 있는 플래그 해제 아이콘이 표시됩니다.
 
 게시물에 플래그를 지정할 때 구성원이 이유를 선택할 수 있도록 컨텍스트 내 조정을 구성할 수 있습니다. 사용자 지정 사유를 입력할 수 있는지 여부를 포함하여 선택 가능한 플래그 이유 목록을 구성할 수 있습니다. 플래그 이유는 UGC로 저장되지만, 이유는 특정 작업을 트리거하지 않습니다. 플래그 수만 알림을 트리거합니다. 플래그가 지정된 컨텐츠에 주석을 달아서 중재자가 작동할 수 있습니다.
 
@@ -180,13 +184,13 @@ UGC가 삭제되면 저장소에서 제거되고 복구되지 않을 수 있습�
 
 ### Premoderation {#premoderation}
 
-UGC가 사전 중재되면 중재 작업에 의해 승인될 때까지 게시된 사이트에 게시물이 표시되지 않습니다. [커뮤니티 사이트](sites-console.md)를 만드는 동안 ` [Content is Premoderated](sites-console.md#moderation)` 상자를 선택하면 전체 사이트에 대한 사전 조정을 사용할 수 있습니다. 구성 요소가 페이지에 배치되면 편집 대화 상자의 설정을 사용하여 조정을 지원하는 구성 요소를 사전 조정을 위해 구성할 수 있습니다.
+UGC가 사전 중재되면 중재 작업에 의해 승인될 때까지 게시된 사이트에 게시물이 표시되지 않습니다. 생성 중 [커뮤니티 사이트](sites-console.md), 상자 선택 ` [Content is Premoderated](sites-console.md#moderation)` 전체 사이트에 대해 사전 조정을 활성화합니다. 구성 요소가 페이지에 배치되면 편집 대화 상자의 설정을 사용하여 조정을 지원하는 구성 요소를 사전 조정을 위해 구성할 수 있습니다.
 
-* [](comments.md) 주석 및  [검토](reviews.md)
+* [댓글](comments.md) 및 [검토](reviews.md)
 
-   **[!UICONTROL 사용자 중재]** 탭에서 **[!UICONTROL Pre-Moderation]**&#x200B;을 선택합니다.
+   on **[!UICONTROL 사용자 중재]** 탭, 확인 **[!UICONTROL 사전 중재]**
 
-* [포럼](forum.md),  [관념화](ideation-feature.md),  [QnA](working-with-qna.md) 및  [](calendar.md) 달력  **** 설정 탭에서  **[!UICONTROL 중재됨 선택]**
+* [포럼](forum.md), [관념화](ideation-feature.md), [QnA](working-with-qna.md), 및 [달력](calendar.md) on **[!UICONTROL 설정]** 탭, 확인 **[!UICONTROL 중재됨]**
 
 ### 스팸 감지 {#spam-detection}
 
@@ -194,7 +198,7 @@ UGC가 사전 중재되면 중재 작업에 의해 승인될 때까지 게시된
 
 `/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`.
 
-그러나 기본 스팸 단어를 사용자 지정하거나 확장하려면 [오버레이](overlay-comments.md)를 통해 기본 스팸 단어의 구조에 따라 /apps 디렉토리에 단어 집합을 만듭니다.
+그러나 기본 스팸 단어를 사용자 지정하거나 확장하려면 다음을 통해 기본 스팸 단어의 구조에 따라 /apps 디렉토리에 단어 세트를 만듭니다 [오버레이](overlay-comments.md).
 
 스팸 단어가 포함된 모든 콘텐츠 유형(예: 블로그, 포럼 및 댓글)에 대해 사용자가 생성한 게시물은 게시물 위에 &quot;이 게시물이 스팸으로 분류됨&quot;이라는 텍스트가 표시됩니다.
 
@@ -204,10 +208,10 @@ UGC가 사전 중재되면 중재 작업에 의해 승인될 때까지 게시된
 
 스팸 감지 엔진을 활성화하려면 다음 단계를 수행하십시오.
 
-1. `/system/console/configMgr`(으)로 이동하여 [웹 콘솔](http://localhost:4502/system/console/configMgr)을 엽니다.
+1. 열기 [웹 콘솔](http://localhost:4502/system/console/configMgr), 다음 위치로 이동 `/system/console/configMgr`.
 
-1. **[!UICONTROL AEM Communities 자동 중재]** 구성을 찾아 편집합니다.
-1. `SpamProcess` 항목을 추가합니다.
+1. 찾기 **[!UICONTROL AEM Communities 자동 중재]** 구성 및 편집
+1. 추가 `SpamProcess` 을 입력합니다.
 
 ![spamprocess](assets/spamprocess.png)
 
@@ -217,9 +221,9 @@ UGC가 사전 중재되면 중재 작업에 의해 승인될 때까지 게시된
 
 ### 감정 {#sentiment}
 
-감성은 UGC(post)에 있는 양수 및 음수 키워드([watchwords](#configuringwatchwords))의 수를 기반으로 계산됩니다.
+감성은 양수 및 음수 키워드([어워치](#configuringwatchwords))가 게시물(UGC)에 있는 경우
 
-감정 분석에서는 사전 구성된 규칙 세트를 사용하고 UGC의 감정을 계산합니다. 기본 규칙은 `/libs/cq/workflow/components/workflow/social/sentiments/rules.`에 있습니다.
+감정 분석에서는 사전 구성된 규칙 세트를 사용하고 UGC의 감정을 계산합니다. 기본 규칙은 다음 위치에 있습니다. `/libs/cq/workflow/components/workflow/social/sentiments/rules.`
 
 규칙이 생성하는 값은 1(모두 음수, 양수 단어 없음)에서 10(모두 양수, 음수 단어 없음)입니다. 감정 값 5는 중립 정답이며 기본값입니다.
 
@@ -234,51 +238,51 @@ UGC가 사전 중재되면 중재 작업에 의해 승인될 때까지 게시된
 
 분석되면 UGC와 함께 감정이 저장됩니다.
 
-[벌크 중재 콘솔](moderation.md)에서 감정이 부정적인지, 중립적인지 또는 긍정적인지를 기준으로 UGC를 필터링하고 볼 수 있습니다.
+에서 [벌크 중재 콘솔](moderation.md)를 설정하는 경우, 감정이 부정적인지, 중립적인지 또는 긍정적인지 여부에 따라 UGC를 필터링하고 볼 수 있습니다.
 
 #### Watchwords {#watchwords}
 
-AEM communities는 [sentiment](#sentiment)를 평가하는 과정의 한 단계로 *watchword analyzer *를 제공합니다. 워치워드에서 제공되는 감정 값에 대한 기여는 게시된 컨텐츠에 사용되는 음성과 긍정적인 감시 단어 및 금지된 단어를 비교한 것입니다.
+AEM Communities는 평가 프로세스의 한 단계로 *watchword analyzer *를 제공합니다. [감정](#sentiment). 워치워드에서 제공되는 감정 값에 대한 기여는 게시된 컨텐츠에 사용되는 음성과 긍정적인 감시 단어 및 금지된 단어를 비교한 것입니다.
 
 #### 감정 및 Watchwords 구성 {#configure-sentiment-and-watchwords}
 
 긍정 및 부정적 관찰자의 목록은 감정 규칙이 될 수 있으므로 사용자 지정할 수 있습니다.
 
-워치워드의 기본 목록은 기본 목록과 유사하거나 단어 목록을 사용하여 OSGi 서비스 `sentimentprocess.name`를 구성하여 기본값을 재정의하여 응답에서 노드의 속성으로 입력할 수 있습니다.
+기본 watchwords 목록은 기본값과 비슷하거나 OSGi 서비스를 구성하여 기본값을 재정의하여 응답에서 노드의 속성으로 입력할 수 있습니다 `sentimentprocess.name`라는 단어를 사용하여 검색할 수 있습니다.
 
-**sentimentprocess.name** 도 사용자 지정 감정 규칙 집합의 위치를 참조하도록 수정할 수 있습니다.
+다음 **sentimentprocess.name** 사용자 지정 감정 규칙 세트의 위치를 참조하도록 수정할 수도 있습니다.
 
 감정 및 감시 단어를 구성하려면:
 
 * 작성자 인스턴스에서
 * 관리자로 로그인
-* [웹 콘솔](http://localhost:4502/system/console/configMgr) 열기
-* `sentimentprocess.name` 찾기
+* 열기 [웹 콘솔](http://localhost:4502/system/console/configMgr)
+* 찾기 `sentimentprocess.name`
 * 편집 모드에서 열 구성을 선택합니다
 
 ![감정 처리](assets/sentimentprocess.png)
 
-* **양수**
-감시 단어기본값을 무시하는 긍정적인 감성에 기여하는 단어를 쉼표로 구분한 목록입니다. 기본값은 빈 목록입니다.
+* **긍정적인 감시 단어**
+기본값을 무시하는 긍정적인 정서에 기여하는 단어를 쉼표로 구분한 목록입니다. 기본값은 빈 목록입니다.
 
-* **음수**
-Watchwords기본값을 무시하는 음성에 기여하는 단어를 쉼표로 구분한 목록입니다. 기본값은 빈 목록입니다.
+* **음성 감시 단어**
+기본값을 무시하는 음수 정서에 기여하는 단어의 쉼표로 구분된 목록입니다. 기본값은 빈 목록입니다.
 
-* **Watchwords 노드**
-에 대한 명시적 경로기본값이 포함된 노드의 저장소 위치입니다 
-`positive` 기본  `negative` 감시선을 지정하는 속성입니다. 기본값은 `/libs/settings/community/watchwords/default`입니다.
+* **Watchwords 노드에 대한 명시적 경로**
+기본값이 포함된 노드의 저장소 위치 
+`positive` 및 `negative` 기본 watchwords를 지정하는 속성입니다. 기본값은 입니다. `/libs/settings/community/watchwords/default`.
 
-* **감정**
-규칙양수 및 음수 시청자를 기반으로 감정을 계산하기 위한 규칙의 저장소 위치입니다. 기본값은 입니다. 
+* **감정 규칙**
+양수 및 음수 감지를 기반으로 하여 감정을 계산하기 위한 규칙의 저장소 위치입니다. 기본값은 입니다. 
 `/libs/cq/workflow/components/workflow/social/sentiments/rules` (그러나 더 이상 관련된 워크플로우가 없습니다.)
 
-다음은 `Explicit Path to Watchwords Node`이 `/libs/settings/community/watchwords/default`로 설정된 경우 기본 watchwords에 대한 사용자 지정 항목의 예입니다.
+다음은 기본 감시 단어에 대한 사용자 정의 항목의 예입니다. `Explicit Path to Watchwords Node` 가 로 설정되어 있습니다. `/libs/settings/community/watchwords/default`.
 
 ![crxde](assets/crxde.png)
 
 ### 중재자 권한 {#moderator-permissions}
 
-다음 권한은 동일한 리소스에 지정된 경우 집합적으로 **`moderator permissions`** 입니다.
+다음 권한은 동일한 리소스에 지정된 경우 집합적으로 라고 합니다 **`moderator permissions`**:
 
 * `Read`
 * **`Modify`**

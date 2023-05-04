@@ -4,14 +4,18 @@ seo-title: Developing AEM Components
 description: AEM 구성 요소는 웹 페이지에서 사용할 수 있는 컨텐츠를 저장, 포맷 및 렌더링하는 데 사용됩니다.
 seo-description: AEM components are used to hold, format, and render the content made available on your webpages.
 exl-id: d3c1559a-1a7a-46ed-a935-9ad226cdea33
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3475'
-ht-degree: 2%
+source-wordcount: '3511'
+ht-degree: 3%
 
 ---
 
 # AEM 구성 요소 개발{#developing-aem-components}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 AEM 구성 요소는 웹 페이지에서 사용할 수 있는 컨텐츠를 저장, 포맷 및 렌더링하는 데 사용됩니다.
 
@@ -135,7 +139,7 @@ WCM 모드에 민감한 렌더링을 사용하는 구성 요소의 경우 특별
 
    * 모든 클라우드 솔루션에서 일관된 UI 제공
    * [AEM 터치 지원 UI의 개념 - Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Coral UI 안내서](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
+   * [Coral UI 안내서](https://helpx.adobe.com/kr/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
 * Granite UI
 
@@ -263,7 +267,7 @@ newComponent (cq:Component)
 1. 필드를 주어진 CSS 클래스( *후크*).
 1. 클라이언트 라이브러리에서 해당 CSS 클래스 이름에 연결된 JS 리스너를 정의합니다. 이렇게 하면 사용자 지정 논리 범위가 필드에만 적용되며 동일한 유형의 다른 필드에 영향을 주지 않습니다.
 
-이를 위해서는 상호 작용할 기본 위젯 라이브러리에 대해 알고 있어야 합니다. 자세한 내용은 [Coral UI 설명서](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) 반응할 이벤트를 식별하기 위해 사용됩니다. 이는 이전에 ExtJS를 사용하여 수행해야 했던 프로세스와 매우 유사합니다. 주어진 위젯의 설명서 페이지를 찾은 다음 해당 이벤트 API의 세부 사항을 확인합니다.
+이를 위해서는 상호 작용할 기본 위젯 라이브러리에 대해 알고 있어야 합니다. 자세한 내용은 [Coral UI 설명서](https://helpx.adobe.com/kr/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) 반응할 이벤트를 식별하기 위해 사용됩니다. 이는 이전에 ExtJS를 사용하여 수행해야 했던 프로세스와 매우 유사합니다. 주어진 위젯의 설명서 페이지를 찾은 다음 해당 이벤트 API의 세부 사항을 확인합니다.
 
 예를 보려면 다음을 참조하십시오.
 
@@ -427,7 +431,7 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 
 >[!NOTE]
 >
->이제 를 사용할 때 UI 내에서 구성 요소 인스턴스의 자동 만들기를 쉽게 구성할 수 있습니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 편집 가능한 템플릿. 자세한 내용은 [페이지 템플릿 만들기](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) 지정된 미디어 유형과 자동으로 연결되는 구성 요소를 정의하는 방법에 대한 자세한 정보를 제공합니다.
+>이제 를 사용할 때 UI 내에서 구성 요소 인스턴스의 자동 만들기를 쉽게 구성할 수 있습니다 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 및 편집 가능한 템플릿. 자세한 내용은 [페이지 템플릿 만들기](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) 지정된 미디어 유형과 자동으로 연결되는 구성 요소를 정의하는 방법에 대한 자세한 정보를 제공합니다.
 
 ## AEM Brackets 확장 사용 {#using-the-aem-brackets-extension}
 

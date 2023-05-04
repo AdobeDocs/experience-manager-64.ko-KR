@@ -10,14 +10,18 @@ topic-tags: components
 content-type: reference
 discoiquuid: 0ef6a3b1-e7ce-4268-a5be-a565646ecc29
 exl-id: 6d52babc-9477-4528-9c25-35cb729f5d78
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1941'
-ht-degree: 19%
+source-wordcount: '1977'
+ht-degree: 2%
 
 ---
 
 # 양식 개발(클래식 UI){#developing-forms-classic-ui}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 양식의 기본 구조는 다음과 같습니다.
 
@@ -39,7 +43,7 @@ ht-degree: 19%
 
 >[!NOTE]
 >
->이 문서는 [기초 구성 요소](/help/sites-authoring/default-components-foundation.md) ( 클래식 UI) 아래에 그룹화됩니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [조건 숨기기](/help/sites-developing/hide-conditions.md) 터치 지원 UI에서 양식 개발을 위한 무료.
+>이 문서는 [기초 구성 요소](/help/sites-authoring/default-components-foundation.md) ( 클래식 UI) 아래에 그룹화됩니다. Adobe은 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 및 [조건 숨기기](/help/sites-developing/hide-conditions.md) 터치 지원 UI에서 양식 개발을 위한 무료.
 
 ## 양식 값 미리 로드 {#preloading-form-values}
 
@@ -47,7 +51,7 @@ ht-degree: 19%
 
 로드 경로는 사전 정의된 값을 양식의 여러 필드에 로드하는 데 사용되는 노드 속성의 경로입니다.
 
-저장소의 노드에 대한 경로를 지정하는 선택적 필드입니다. 이 노드의 속성이 필드 이름과 일치하면 양식의 해당 필드에 이러한 속성의 값이 미리 로드됩니다. 일치하는 속성이 없으면 필드에 기본값이 포함됩니다.
+저장소의 노드에 대한 경로를 지정하는 선택적 필드입니다. 이 노드에 필드 이름과 일치하는 속성이 있으면 양식의 해당 필드에 해당 속성의 값이 미리 로드됩니다. 일치하는 항목이 없으면 필드에 기본값이 포함됩니다.
 
 >[!NOTE]
 >
@@ -63,7 +67,7 @@ ht-degree: 19%
 
 ### 예 - 여러 값이 있는 드롭다운 목록 미리 로드 {#example-preloading-a-dropdown-list-with-multiple-values}
 
-선택 가능한 값 범위를 사용하여 드롭다운 목록을 구성할 수 있습니다.
+선택 가능한 값 범위로 드롭다운 목록을 구성할 수 있습니다.
 
 다음 **항목 로드 경로** 저장소의 폴더에 있는 목록에 액세스하여 필드에 미리 로드하는 데 사용할 수 있습니다.
 
@@ -73,7 +77,7 @@ ht-degree: 19%
 
 1. 새 속성 추가(예: `myList`) multivalue 문자열 유형( `String[]`)을 클릭하여 드롭다운 항목 목록을 포함합니다. JSP 스크립트 또는 셸 스크립트의 cURL과 같은 스크립트를 사용하여 컨텐츠를 가져올 수도 있습니다.
 
-1. **항목 로드 경로** 필드의 전체 경로를 사용합니다.
+1. 에서 전체 경로 사용 **항목 로드 경로** 필드:
 
    예, `/etc/designs/geometrixx/formlistvalues/myList`
 
@@ -257,28 +261,28 @@ ht-degree: 19%
 
 양식의 다른 필드 값에 따라 양식 구성 요소를 표시하거나 숨기도록 양식을 구성할 수 있습니다.
 
-양식 필드의 표시 여부를 변경하는 방법은 해당 필드가 특정한 조건에서만 필요한 경우에 유용합니다. 예를 들어 사용자 의견 양식에서 고객에게 이메일로 제품 정보를 받아 볼지를 물어본 후, 고객이 &#39;예&#39;를 선택하면 이메일 주소를 입력하는 텍스트 필드를 표시할 수 있습니다.
+양식 필드의 표시 여부를 변경하는 것은 특정 조건에서만 필드가 필요한 경우에 유용합니다. 예를 들어, 피드백 양식에서 고객에게 전자 메일로 제품 정보를 보낼 것인지 묻는 메시지가 표시됩니다. 예를 선택하면 고객이 이메일 주소를 입력할 수 있는 텍스트 필드가 나타납니다.
 
 를 사용하십시오 **표시/숨기기 규칙 편집** 대화 상자에서 양식 구성 요소를 표시하거나 숨길 조건을 지정합니다.
 
 ![showideeditor](assets/showhideeditor.png)
 
-대화 상자 위쪽의 필드를 사용하여 다음 정보를 지정합니다.
+대화 상자 상단의 필드를 사용하여 다음 정보를 지정합니다.
 
-* 지정하는 조건이 구성 요소를 숨길 조건인지 아니면 표시할 조건인지
-* 구성 요소를 표시하거나 숨기려면 조건이 하나라도 true이면 되는지 아니면 모든 조건이 true여야 하는지
+* 구성 요소를 숨기거나 표시하기 위한 조건을 지정합니다.
+* 구성 요소를 표시하거나 숨기려면 조건이 모두 true여야 하는지 아니면 모두 true여야 하는지 여부.
 
-이러한 필드 아래에 하나 이상의 조건이 표시됩니다. 조건에서는 같은 양식에 있는 다른 양식 구성 요소의 값을 특정 값과 비교합니다. 필드의 특정 값이 조건을 만족하면 해당 조건이 true로 평가됩니다. 조건에는 다음 정보가 포함됩니다.
+이러한 필드 아래에 하나 이상의 조건이 표시됩니다. 조건은 동일한 양식에 있는 다른 양식 구성 요소의 값을 값과 비교합니다. 필드의 실제 값이 조건을 만족하면 조건이 true로 평가됩니다. 조건에는 다음 정보가 포함됩니다.
 
 * 테스트 대상 양식 필드의 제목
 * 연산자
-* 필드 값과 비교할 값
+* 필드 값과 비교할 값입니다.
 
 예를 들어 제목이 있는 라디오 그룹 구성 요소 `Receive email notifications?`* 포함 `Yes` 및 `No` 라디오 단추. 제목이 인 텍스트 필드 구성 요소 `Email Address` 다음 조건을 사용하여 `Yes` 이(가) 선택되어 있습니다.
 
 ![쇼후라이제틴](assets/showhidecondition.png)
 
-Javascript에서는 조건이 요소 이름 속성의 값을 사용하여 필드를 참조합니다. 이전 예에서 라디오 그룹 구성 요소의 요소 이름 속성은 다음과 같습니다 `contact`. 다음 코드는 해당 예제와 동일한 Javascript 코드입니다.
+Javascript에서 조건은 요소 이름 속성의 값을 사용하여 필드를 참조합니다. 이전 예에서 라디오 그룹 구성 요소의 요소 이름 속성은 다음과 같습니다 `contact`. 다음 코드는 해당 예와 동일한 Javascript 코드입니다.
 
 `((contact == "Yes"))`
 
@@ -318,7 +322,7 @@ Javascript에서는 조건이 요소 이름 속성의 값을 사용하여 필드
 
 #### 끊어진 구성 요소 참조 처리 {#handling-broken-component-references}
 
-표시/숨기기 조건에서는 요소 이름 속성의 값을 사용하여 양식의 다른 구성 요소를 참조합니다. 삭제되었거나 요소 이름 속성이 변경된 구성 요소를 참조하는 조건이 하나라도 있으면 표시/숨기기 구성이 잘못되었습니다. 이러한 경우 조건을 직접 업데이트해야 하며, 그러지 않으면 양식이 로드될 때 오류가 발생합니다.
+표시/숨기기 조건은 요소 이름 속성의 값을 사용하여 양식의 다른 구성 요소를 참조합니다. 삭제되었거나 요소 이름 속성이 변경된 구성 요소를 참조하는 조건이 하나라도 있으면 표시/숨기기 구성이 잘못되었습니다. 이 경우 조건을 수동으로 업데이트해야 하며, 그렇지 않으면 양식이 로드될 때 오류가 발생합니다.
 
 표시/숨기기 구성이 잘못된 경우 구성이 JavaScript 코드로만 제공됩니다. 코드를 편집하여 문제를 수정하십시오. 코드는 원래 구성 요소를 참조하는 데 사용되었던 요소 이름 속성을 사용합니다.
 
@@ -331,4 +335,4 @@ Javascript에서는 조건이 요소 이름 속성의 값을 사용하여 필드
 * 유효성 검사 리소스 유형 정의
 * 유효성 검사용 스크립트 포함:
 
-   * JSP에서 웹 서비스를 호출하고 오류 메시지가 포함된 `com.day.cq.wcm.foundation.forms.ValidationInfo` 객체를 만듭니다. 오류가 발생하면 양식 데이터가 게시되지 않습니다.
+   * JSP에서 웹 서비스를 호출하고 `com.day.cq.wcm.foundation.forms.ValidationInfo` 오류 메시지가 포함된 객체입니다. 오류가 있으면 양식 데이터가 게시되지 않습니다.

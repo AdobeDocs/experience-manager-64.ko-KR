@@ -1,32 +1,36 @@
 ---
 title: XML 스키마를 사용하여 적응형 양식 만들기
-seo-title: XML 스키마를 사용하여 적응형 양식 만들기
+seo-title: Creating adaptive forms using XML Schema
 description: 적응형 양식은 XML 스키마를 양식 모델로 사용할 수 있으므로 기존 XSD 템플릿을 활용하여 적응형 양식을 만들 수 있습니다. XSD의 스키마 요소를 적응형 양식으로 드래그하여 놓을 수 있습니다.
-seo-description: 적응형 양식은 XML 스키마를 양식 모델로 사용할 수 있으므로 기존 XSD 템플릿을 활용하여 적응형 양식을 만들 수 있습니다. XSD의 스키마 요소를 적응형 양식으로 드래그하여 놓을 수 있습니다.
+seo-description: Adaptive forms can use XML schema as form model, allowing you to leverage existing XSD templates to create adaptive forms. You can drag-and-drop schema elements from XSD onto your adaptive form.
 uuid: a5f5d423-9b83-47e8-b0fa-88210d0d18d9
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a1070d9e-fb7c-4134-b6d5-ffa2d3e9718d
-feature: 적응형 양식
+feature: Adaptive Forms
 exl-id: 5f6d23b2-ab8b-48fd-b853-eea7d6c9d651
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1080'
 ht-degree: 6%
 
 ---
 
 # XML 스키마를 사용하여 적응형 양식 만들기 {#creating-adaptive-forms-using-xml-schema}
 
-## 전제 조건 {#prerequisites}
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+## 사전 요구 사항 {#prerequisites}
 
 XML 스키마를 양식 모델로 사용하여 적응형 양식을 작성하려면 XML 스키마를 기본 이해해야 합니다. 또한 이 문서 전에 다음 내용을 읽는 것이 좋습니다.
 
 * [적응형 양식 만들기](/help/forms/using/creating-adaptive-form.md)
 * [XML 스키마](https://www.w3.org/TR/xmlschema-2/)
 
-## XML 스키마를 양식 모델 {#using-an-xml-schema-as-form-model} 로 사용
+## XML 스키마를 양식 모델로 사용 {#using-an-xml-schema-as-form-model}
 
 AEM Forms에서는 기존 XML 스키마를 양식 모델로 사용하여 적응형 양식 만들기를 지원합니다. 이 XML 스키마는 조직의 백엔드 시스템에서 데이터를 생성하거나 사용하는 구조를 나타냅니다.
 
@@ -38,7 +42,7 @@ XML 스키마를 사용하는 주요 기능은 다음과 같습니다.
 
 XML 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. 요소에는 요소에 규칙을 추가하는 특성이 있습니다. 이러한 요소와 속성을 적응형 양식으로 드래그하면 해당 적응형 양식 구성 요소에 자동으로 매핑됩니다.
 
-적응형 양식 구성 요소와 함께 XML 요소를 매핑하는 방법은 다음과 같습니다.
+적응형 양식 구성 요소를 사용하는 XML 요소의 매핑은 다음과 같습니다.
 
 <table> 
  <tbody> 
@@ -129,7 +133,7 @@ XML 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. 요
 >
 >XML 스키마에 루트 요소가 하나만 있는지 확인합니다. 루트 요소가 두 개 이상 있는 XML 스키마가 지원되지 않습니다.
 
-## XML 스키마 {#adding-special-properties-to-fields-using-xml-schema}를 사용하여 필드에 특수 속성 추가
+## XML 스키마를 사용하여 필드에 특수 속성 추가 {#adding-special-properties-to-fields-using-xml-schema}
 
 XML 스키마 요소에 다음 속성을 추가하여 연결된 적응형 양식의 필드에 특수 속성을 추가할 수 있습니다.
 
@@ -142,7 +146,7 @@ XML 스키마 요소에 다음 속성을 추가하여 연결된 적응형 양식
   </tr> 
   <tr> 
    <td><code>use=required </code></td> 
-   <td>필수 필드(<br />)를 표시합니다. </td> 
+   <td>필수 필드를 표시합니다<br /> </td> 
    <td>특성</td> 
   </tr> 
   <tr> 
@@ -170,12 +174,10 @@ XML 스키마 요소에 다음 속성을 추가하여 연결된 적응형 양식
 >
 >* 요소 이름의 첫 번째 문자를 대문자로 바꿉니다
 >* 카멜 케이스 경계에 공백을 삽입합니다.
-
 >
->
-예를 들어 `userFirstName` 스키마 요소를 추가하는 경우 적응형 양식에서 생성된 캡션은 `User First Name`입니다.
+>예를 들어 `userFirstName` 스키마 요소, 적응형 양식에 생성된 캡션은 `User First Name`.
 
-## 적응형 양식 구성 요소 {#limit-acceptable-values-for-an-adaptive-form-component} 의 허용 가능한 값 제한
+## 적응형 양식 구성 요소의 허용 가능한 값 제한 {#limit-acceptable-values-for-an-adaptive-form-component}
 
 XML 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 구성 요소에 허용되는 값을 제한할 수 있습니다.
 
@@ -183,7 +185,7 @@ XML 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
  <tbody> 
   <tr> 
    <td><p><strong> 스키마 속성</strong></p> </td> 
-   <td><p><strong>데이터 유형</strong></p> </td> 
+   <td><p><strong>데이터 형식</strong></p> </td> 
    <td><p><strong>설명</strong></p> </td> 
    <td><p><strong>구성 요소</strong></p> </td> 
   </tr> 
@@ -205,7 +207,7 @@ XML 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
     <ul> 
      <li>숫자 상자</li> 
      <li>숫자 스텝퍼<br /> </li> 
-     <li>날짜 선택</li> 
+     <li>날짜 선택기</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -216,7 +218,7 @@ XML 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
     <ul> 
      <li>숫자 상자</li> 
      <li>숫자 스텝퍼</li> 
-     <li>날짜 선택</li> 
+     <li>날짜 선택기</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -227,7 +229,7 @@ XML 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
     <ul> 
      <li>숫자 상자</li> 
      <li>숫자 스텝퍼</li> 
-     <li>날짜 선택</li> 
+     <li>날짜 선택기</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -238,7 +240,7 @@ XML 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
     <ul> 
      <li>숫자 상자</li> 
      <li>숫자 스텝퍼</li> 
-     <li>날짜 선택</li> 
+     <li>날짜 선택기</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -289,19 +291,19 @@ XML 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
  </tbody> 
 </table>
 
-## FAQ {#frequently-asked-questions}
+## 자주 묻는 질문 {#frequently-asked-questions}
 
 **트리의 어떤 요소가 어떤 XML 요소와 연결되어 있는지 어떻게 알 수 있습니까?**
 
-Content Finder에서 요소를 두 번 클릭하면 팝업에 필드 이름과 `bindRef` 속성이 표시됩니다. 이 속성은 트리 요소를 스키마의 요소 또는 속성에 매핑합니다.
+Content Finder에서 요소를 두 번 클릭하면 팝업에 필드 이름과 속성이 표시됩니다. `bindRef`. 이 속성은 트리 요소를 스키마의 요소 또는 속성에 매핑합니다.
 
 ![XML 스키마 요소의 이진 필드](assets/dblclick.png)
 
-bindRef</code> 필드는 스키마 내의 요소 또는 속성과 트리 요소의 연결을 표시합니다.
+bindRef</code> 필드는 트리 요소와 스키마의 요소 또는 속성 간의 연결을 보여 줍니다.
 
 >[!NOTE]
 >
->속성에는 `bindRef`값에 `@` 기호가 있어 요소와 구별됩니다. 예, `/config/projectDetails/@duration`.
+>속성에는 `@` 기호 `bindRef`값과 구별할 수 있습니다. (예: `/config/projectDetails/@duration`)
 
 **반복 가능한 하위 양식(minOccourse 또는 maxOccurts 값이 1보다 큼)에 대해 하위 양식의 개별 요소(복잡한 형식에서 생성된 구조)를 드래그할 수 없는 이유는 무엇입니까?**
 
@@ -316,4 +318,4 @@ bindRef</code> 필드는 스키마 내의 요소 또는 속성과 트리 요소�
 
 **bindRef란 무엇입니까?**
 
-`bindRef`은 적응형 양식 구성 요소와 스키마 요소 또는 속성 간의 연결입니다. 이 구성 요소 또는 필드에서 캡처된 값을 출력 XML에서 사용할 수 있는 `XPath`을 지시합니다. 미리 채워진(미리 채워진) XML에서 필드 값을 미리 채울 때도 `bindRef`이 사용됩니다.
+A `bindRef` 적응형 양식 구성 요소와 스키마 요소 또는 속성 간의 연결입니다. 그것은 명령한다 `XPath` 여기서 이 구성 요소 또는 필드에서 캡처된 값을 출력 XML에서 사용할 수 있습니다. A `bindRef`미리 채워진(미리 채워진) XML에서 필드 값을 미리 채울 때도 사용됩니다.

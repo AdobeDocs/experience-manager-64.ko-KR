@@ -1,26 +1,30 @@
 ---
-title: 컨텐츠 서비스
-seo-title: 컨텐츠 서비스
-description: 컨텐츠 서비스
-seo-description: 'null'
+title: Content Services
+seo-title: Content Services
+description: Content Services
+seo-description: null
 uuid: 7bd09c91-3931-400b-bdfc-b064b9ca9668
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: e900d93e-f7cd-4a0d-a866-7fc6c7882797
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 4%
+source-wordcount: '337'
+ht-degree: 5%
 
 ---
 
+# Content Services{#content-services}
 
-# 컨텐츠 서비스{#content-services}
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
 >[!CAUTION]
 >
@@ -42,9 +46,9 @@ Content Services에서는 개발자가 해당 컨텐츠의 저장소 구조를 �
 >
 >컨텐츠 서비스를 시작하기 전에 컨텐츠 서비스 플래그를 활성화해야 합니다. 앱에서 모델을 만들고 관리하려면 구성 브라우저에서 데이터 모델을 활성화해야 합니다.
 >
->자세한 내용은 **[컨텐츠 서비스 관리](/help/mobile/developing-content-services.md)**&#x200B;를 참조하십시오.
+>자세한 내용은 **[콘텐츠 서비스 관리](/help/mobile/developing-content-services.md)** 자세한 내용
 >
->자세한 내용은 [구성 브라우저 설명서](/help/sites-administering/configurations.md)를 참조하십시오.
+>자세한 내용은 [구성 브라우저 설명서](/help/sites-administering/configurations.md) 추가 정보.
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
@@ -52,4 +56,3 @@ Content Services에서는 개발자가 해당 컨텐츠의 저장소 구조를 �
 
 * 저장소의 모델
 * 렌더링 및 전달
-

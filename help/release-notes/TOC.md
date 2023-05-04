@@ -7,10 +7,11 @@ breadcrumb-title: 릴리스 정보
 user-guide-description: 릴리스 노트에서 AEM 6.4의 최신 새로운 기능에 대해 알아보십시오.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+hide: true
+source-git-commit: b61797a9096c0473658d6aabfb584a53e42095b7
 workflow-type: tm+mt
 source-wordcount: '87'
-ht-degree: 52%
+ht-degree: 48%
 
 ---
 

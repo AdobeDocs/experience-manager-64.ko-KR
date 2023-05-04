@@ -1,22 +1,26 @@
 ---
 title: 제출 검토자와 양식 연결
-seo-title: 제출 검토자와 양식 연결
+seo-title: Associating submission reviewers with a form
 description: AEM Forms에서 제출 검토자와 양식을 연결하는 방법을 알아봅니다. 관련 검토자는 양식 포털을 통해 제출된 양식을 검토합니다.
-seo-description: AEM Forms에서 제출 검토자와 양식을 연결하는 방법을 알아봅니다. 관련 검토자는 양식 포털을 통해 제출된 양식을 검토합니다.
+seo-description: Learn how to associate submission reviewers with a form in AEM Forms. Associated reviewers review a form submitted via forms portal.
 uuid: 66834c2b-ae70-4a6e-ae8e-07d0e38de06b
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 7c39383b-b430-40a1-9bcb-f5aaccb616ad
-feature: 적응형 양식
+feature: Adaptive Forms
 exl-id: b45d844e-acf9-4da2-b54e-08c67aa183a3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 0%
+source-wordcount: '529'
+ht-degree: 1%
 
 ---
 
-# 제출 검토자를 {#associating-submission-reviewers-with-a-form} 양식과 연결
+# 제출 검토자와 양식 연결  {#associating-submission-reviewers-with-a-form}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 양식을 만들 때 양식 포털을 통해 양식 제출을 검토하고 피드백을 제공하는 사용자를 지정할 수 있습니다. 조직은 제출된 양식에 대한 피드백 및 재작업을 수집할 수 있습니다.
 
@@ -26,14 +30,14 @@ AEM Forms에서는 검토자 그룹을 양식과 연결할 수 있습니다. 양
 
 ## 전제 조건 {#prerequisite}
 
-### 메타데이터 스키마 편집기 {#enabling-submission-reviewer-groups-property-for-adaptive-forms-using-metadata-schema-editor}를 사용하여 적응형 양식에 대한 제출 검토자 그룹 속성을 활성화합니다
+### 메타데이터 스키마 편집기를 사용하여 적응형 양식의 제출 검토자 그룹 속성을 활성화합니다 {#enabling-submission-reviewer-groups-property-for-adaptive-forms-using-metadata-schema-editor}
 
 검토자 그룹을 양식에 연결하려면 적응형 양식의 메타데이터 스키마를 편집하십시오. 기본적으로 제출된 양식에 검토자 그룹을 추가할 수 없습니다.
 
 메타데이터 스키마를 편집하려면 다음을 수행합니다.
 
-1. 작성자 모드의 Experience Manager에서 **[!UICONTROL 도구 > 자산 > 메타데이터 스키마]**&#x200B;를 클릭합니다.
-1. 스키마 Forms 페이지에서 **[!UICONTROL Forms > AEM]**&#x200B;에서 작성된 Forms으로 이동합니다.
+1. 작성 모드의 Experience Manager에서 **[!UICONTROL 도구 > 자산 > 메타데이터 스키마]**.
+1. 스키마 Forms 페이지에서 다음 위치로 이동합니다. **[!UICONTROL Forms > AEM에서 작성된 Forms]**.
 
    페이지의 URL은 다음과 같습니다.
 
@@ -43,32 +47,32 @@ AEM Forms에서는 검토자 그룹을 양식과 연결할 수 있습니다. 양
     aem-authored
    ```
 
-1. **[!UICONTROL 적응형 양식]**&#x200B;을 선택하고 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
-1. 양식 편집 페이지에서 **[!UICONTROL 고급]**&#x200B;을 클릭합니다.
-1. 고급 탭에서 빌드 양식에서 사용할 수 있는 **[!UICONTROL 단일 줄 텍스트]** 구성 요소를 드래그하여 놓습니다.
+1. 선택 **[!UICONTROL 적응형 양식]** 을(를) 클릭합니다. **[!UICONTROL 편집]**.
+1. 양식 편집 페이지에서 **[!UICONTROL 고급]**.
+1. 고급 탭에서 **[!UICONTROL 단일 행 텍스트]** 구성 요소는 빌드 양식에서 사용할 수 있습니다.
 1. 추가된 텍스트 구성 요소를 선택하여 해당 설정을 확인합니다.
 
-   설정에서 속성에 매핑 필드에 `./jcr:content/metadata/form-submission-reviewer-group`을 입력합니다.
+   설정에서 을 입력합니다. `./jcr:content/metadata/form-submission-reviewer-group` 속성 매핑 필드에서 참조할 수 있습니다.
 
    적응형 양식의 고급 속성의 제출 검토자 그룹 필드는 필드 레이블에서 지정하는 이름으로 활성화됩니다.
 
-## 제출 검토자를 {#associating-submission-reviewers-with-a-form-1} 양식과 연결
+## 제출 검토자와 양식 연결 {#associating-submission-reviewers-with-a-form-1}
 
 제출 검토자를 적응형 양식과 연결하려면 검토자 그룹을 만들고 사용자를 해당 검토자에 추가합니다. 양식의 고급 속성의 양식 제출 검토자 필드 아래에 생성된 검토자 그룹을 추가합니다.\
 사용자 그룹을 사용하면 서로 다른 전송 검토자 세트를 다른 적응형 양식과 연결할 수 있습니다. 이 기능은 권한이 없는 사용자로부터 제출 검토를 차단합니다.
 
-다음 단계를 수행하기 전에 [전제 조건](/help/forms/using/adding-reviewers-form.md#prerequisite)을 참조하십시오.
+다음 단계를 수행하기 전에 [전제 조건](/help/forms/using/adding-reviewers-form.md#prerequisite).
 
-그룹을 만들고 구성원을 추가하려면 **[!UICONTROL 도구 > 작업 > 보안 > 그룹]**&#x200B;으로 이동합니다.\
-자세한 내용은 [사용자 관리 및 서비스](/help/sites-administering/security.md)를 참조하십시오.\
-기본 사용자 그룹의 구성원으로 만든 그룹을 추가해야 합니다.**forms-submission-reviewers**. 이 사용자 그룹은 AEM Forms과 함께 제공되며, 사용자가 제출 검토자로 추가되도록 합니다.
+그룹을 만들고 구성원을 추가하려면 다음 위치로 이동합니다. **[!UICONTROL 도구 > 작업 > 보안 > 그룹]**.\
+자세한 내용은 [사용자 관리 및 서비스](/help/sites-administering/security.md).\
+기본 사용자 그룹의 구성원으로 만든 그룹을 추가해야 합니다. **forms 제출 검토자**. 이 사용자 그룹은 AEM Forms과 함께 제공되며, 사용자가 제출 검토자로 추가되도록 합니다.
 
 사용자 그룹을 적응형 양식과 연결하려면
 
-1. 작성 모드에서 **[!UICONTROL Forms > Forms 및 문서]**&#x200B;로 이동합니다.
-1. **[!UICONTROL 선택]** 옵션을 사용하여 적응형 양식을 선택하고 **[!UICONTROL 속성 보기]**&#x200B;를 클릭합니다.
-1. 양식의 속성 창에서 **[!UICONTROL 편집]**&#x200B;을 클릭한 다음 **[!UICONTROL 고급]**&#x200B;을 클릭합니다.
-1. 제출 검토자 그룹 필드에 그룹을 입력하고 **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
+1. 작성 모드에서 **[!UICONTROL Forms > Forms 및 문서]**.
+1. 를 사용하십시오 **[!UICONTROL 선택]** 적응형 양식을 선택하려면 옵션을 선택하고 **[!UICONTROL 속성 보기]**.
+1. 양식의 속성 창에서 **[!UICONTROL 편집]**&#x200B;를 클릭한 다음 **[!UICONTROL 고급]**.
+1. 제출 검토자 그룹 필드에 그룹을 입력하고 **[!UICONTROL 완료]**.
 
    적응형 양식의 편집된 메타데이터 스키마에 지정한 이름과 함께 제출 검토자 그룹 필드가 나타납니다.
 

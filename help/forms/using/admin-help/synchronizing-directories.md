@@ -1,5 +1,5 @@
 ---
-title: '디렉터리 동기화 '
+title: 디렉터리 동기화
 seo-title: Synchronizing directories
 description: 수동 또는 예약된 동기화를 사용하여 사용자 관리 데이터베이스를 소스 디렉토리 서버의 변경 사항과 동기화하는 방법을 알아봅니다.
 seo-description: Learn how to synchronize the User Management database with changes to the source directory servers using manual or scheduled synchronization.
@@ -10,16 +10,20 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7ec0698a-9e6e-48d4-bba2-5a6eee313900
 exl-id: d6b2f389-bff4-481d-93bf-87f56114a91b
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '1016'
 ht-degree: 0%
 
 ---
 
 # 디렉터리 동기화 {#synchronizing-directories}
 
-도메인을 동기화하려면 수동 또는 예약된 동기화를 수행하도록 선택할 수 있습니다. *수동 동기화*&#x200B;는 선택한 도메인을 동기화합니다. *예약된 동기화*&#x200B;는 모든 도메인을 동기화합니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+도메인을 동기화하려면 수동 또는 예약된 동기화를 수행하도록 선택할 수 있습니다. A *수동 동기화* 선택한 도메인을 동기화합니다. A *예약된 동기화* 모든 도메인을 동기화합니다.
 
 디렉토리 동기화는 디렉토리 설정에 지정한 디렉토리 서버에서 사용자 관리 데이터베이스로 세부 정보를 가져오는 데 사용됩니다. 나중에 디렉토리 서버에서 변경 또는 업데이트가 발생하는 경우 수동 동기화를 수행할 수도 있습니다. 예를 들어 사용자와 그룹이 추가되거나 사용자 계정이 변경된 경우 수동 동기화를 수행할 수 있습니다.
 
@@ -35,7 +39,7 @@ User Management 데이터베이스를 소스 디렉토리 서버의 변경 또�
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES(사용 중지)는 LiveCycle과 함께 설치된 컨텐츠 관리 시스템입니다. 이를 통해 사용자가 인간 중심 프로세스를 설계, 관리, 모니터링 및 최적화할 수 있습니다. 컨텐츠 서비스(더 이상 사용되지 않음) 지원은 12/31/2014에 종료됩니다. [Adobe 제품 라이프사이클 문서](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)를 참조하십시오.
+>Adobe® LiveCycle® Content Services ES(사용 중지)는 LiveCycle과 함께 설치된 컨텐츠 관리 시스템입니다. 이를 통해 사용자가 인간 중심 프로세스를 설계, 관리, 모니터링 및 최적화할 수 있습니다. 컨텐츠 서비스(더 이상 사용되지 않음) 지원은 12/31/2014에 종료됩니다. 자세한 내용은 [제품 라이프사이클 문서 Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ## 델타 디렉터리 동기화 사용 {#enable-delta-directory-synchronization}
 
@@ -53,7 +57,7 @@ User Management 데이터베이스를 소스 디렉토리 서버의 변경 또�
 
 1. 관리 콘솔에서 설정 > 사용자 관리 > 도메인 관리 를 클릭합니다.
 1. 델타 동기화(Delta Synch)에서 확인란을 선택하고 저장(Save)을 클릭합니다.
-1. 델타 디렉토리 동기화 기능을 사용할 각 엔터프라이즈 도메인의 디렉토리 설정을 편집합니다. 사용자 설정 및 그룹 설정 페이지에서 타임스탬프 수정 설정을 찾아 `modify TimeStamp` 을 값으로 입력합니다. 엔터프라이즈 도메인 편집에 대한 자세한 내용은 [기존 도메인 편집 및 변환](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains)을 참조하십시오.
+1. 델타 디렉토리 동기화 기능을 사용할 각 엔터프라이즈 도메인의 디렉토리 설정을 편집합니다. 사용자 설정 및 그룹 설정 페이지에서 타임스탬프 수정 설정을 찾아 을 입력합니다. `modify TimeStamp` 를 값으로 채우는 방법을 설명합니다. 엔터프라이즈 도메인 편집에 대한 자세한 내용은 [기존 도메인 편집 및 변환](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
 
 ## 동기화 중 세부 로깅 활성화 또는 비활성화 {#enable-or-disable-detailed-logging-during-synchronization}
 
@@ -69,7 +73,7 @@ User Management 데이터베이스를 소스 디렉토리 서버의 변경 또�
 1. 관리 콘솔에서 설정 > 사용자 관리 > 구성 > 고급 시스템 속성 구성 을 클릭합니다.
 1. 동기화 마무리 장치 표현식에서 사용자 관리 다시 시도가 실패한 간격을 나타내는 cron 표현식을 입력합니다. cron 표현식 사용은 Quartz 오픈 소스 작업 예약 시스템 버전 1.4.0을 기반으로 합니다.
 
-   기본값은 0 0/13 &amp;ast;입니다. ? amp;ast; 즉, 13분마다 검사가 수행됩니다.
+   기본값은 0 0/13 &amp;ast;입니다. ? &amp;ast; 즉, 13분마다 검사가 수행됩니다.
 
 ## 수동으로 디렉터리 동기화 {#manually-synchronize-directories}
 

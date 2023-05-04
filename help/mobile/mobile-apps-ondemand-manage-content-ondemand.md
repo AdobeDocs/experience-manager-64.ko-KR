@@ -1,8 +1,8 @@
 ---
 title: 콘텐츠 관리
-seo-title: 콘텐츠 관리
+seo-title: Managing Content
 description: 컨텐츠 관리 작업은 애플리케이션 내에서 컨텐츠를 만들고 관리하는 데 도움이 되는 기본 구성단위입니다. 자세한 내용은 이 페이지를 참조하십시오.
-seo-description: 컨텐츠 관리 작업은 애플리케이션 내에서 컨텐츠를 만들고 관리하는 데 도움이 되는 기본 구성단위입니다. 자세한 내용은 이 페이지를 참조하십시오.
+seo-description: Content Management actions are the building blocks that help to create and manage content within an application. Follow this page to learn more.
 uuid: ab680836-133b-45b9-913c-e721b7e9fc04
 contentOwner: User
 content-type: reference
@@ -10,18 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 89fc3701-0472-4629-95d3-da577581a0f0
 exl-id: 2721826e-fbe8-461a-9d44-a26a099005b5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 1%
+source-wordcount: '315'
+ht-degree: 3%
 
 ---
 
-# 컨텐츠 관리{#managing-content}
+# 콘텐츠 관리{#managing-content}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
 컨텐츠 관리 작업은 애플리케이션 내에서 컨텐츠를 만들고 관리하는 데 도움이 되는 기본 구성단위입니다. 애플리케이션 내의 컨텐츠에 대해 다음 작업이 수행됩니다.
 
@@ -29,15 +33,15 @@ ht-degree: 1%
 
 온라인 잡지를 생각해보면 주요 컨텐츠에는 기사, 광고, 그리고 표지가 포함된다. AEM 내에서 세 가지 주요 유형의 Mobile On-Demand 컨텐츠를 만들 수 있습니다.
 
-* **문서**:정보를 전달하는 데 예술을 이용하는 텍스트
-* **배너:** 일반적으로 그래픽 홍보용 링크
-* **컬렉션:** 커버의 테마 ** 에 맞는 기사나 배너와 같은 콘텐츠로 채워진 잘 정의된 버킷을 나타냅니다
+* **문서**: 정보를 전달하는 데 예술을 이용하는 텍스트
+* **배너:** 일반적으로 그래픽으로 프로모션 링크
+* **컬렉션:** 정의된 정수를 나타냅니다. *버킷* 커버의 테마에 맞는 문서 또는 배너와 같은 내용
 
-* **공유 리소스:** 문서 간에 공통 조각을 다시 사용하거나 공유할 수 있습니다
+* **공유 리소스:** 여러 문서에 있는 공통 조각을 다시 사용하거나 공유할 수 있습니다
 
 >[!NOTE]
 >
->AEM Mobile 앱의 디자인 고려 사항에 대해 자세히 알려면 온라인 도움말에서 [AEM Mobile 앱용 디자인 고려 사항](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)을 참조하십시오.
+>AEM Mobile 앱의 디자인 고려 사항에 대한 자세한 내용은 [AEM Mobile 앱을 위한 디자인 고려 사항](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) 을 참조하십시오.
 
 ## 컨텐츠 만들기 및 관리 {#creating-and-managing-content}
 
@@ -51,7 +55,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->일반적으로 컨텐츠를 게시하기 전에 프리플라이트 를 수행해야 합니다. 자세한 내용은 [프리플라이트](/help/mobile/aem-mobile-manage-ondemand-services.md)를 사용하여 미리 보기 를 참조하십시오.
+>일반적으로 컨텐츠를 게시하기 전에 프리플라이트 를 수행해야 합니다. 자세한 내용은 [프리플라이트 사용 미리 보기](/help/mobile/aem-mobile-manage-ondemand-services.md) 자세한 내용
 
 ### 추가 리소스 {#additional-resources}
 

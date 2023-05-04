@@ -1,8 +1,8 @@
 ---
 title: SharePoint 커넥터 라이센스, 저작권 고지 사항 및 면책조항
-seo-title: SharePoint 커넥터 라이센스, 저작권 고지 사항 및 면책조항
+seo-title: SharePoint Connector Licenses, Copyright Notices, and Disclaimers
 description: SharePoint 커넥터 라이센스, 저작권 고지 사항 및 면책 사항에 대해 알아봅니다.
-seo-description: SharePoint 커넥터 라이센스, 저작권 고지 사항 및 면책 사항에 대해 알아봅니다.
+seo-description: Learn about SharePoint Connector Licenses, Copyright Notices and Disclaimers.
 uuid: fba2c8ad-c6f3-484e-87b6-ddc426f7087a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,20 +10,24 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 487fc170-3750-49a7-af59-f1cc20d5f528
 exl-id: 4cd44f33-1bf9-4ec6-868f-0db60bfc56c0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 10%
+source-wordcount: '398'
+ht-degree: 19%
 
 ---
 
 # SharePoint 커넥터 라이센스, 저작권 고지 사항 및 면책조항{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 이 섹션에는 MS SharePoint용 Day JCR Connector와 관련하여 명시적으로 기재해야 하는 모든 라이센스, 저작권 고지 및 면책 사항이 나와 있습니다.
 
 ## 커넥터 타사 라이브러리 개요 {#overview-of-connector-rd-party-libraries}
 
-다음 표에는 SharePoint Connector 핵심 라이브러리 내에서 사용되는 타사 라이브러리와 적용되는 라이센스, 저작권 고지 사항 또는 면책조항이 나와 있습니다.
+다음 표에는 SharePoint Connector 핵심 라이브러리 내에서 사용되는 타사 라이브러리와 그러한 라이브러리 적용되는 라이센스, 저작권 고지 또는 면책 사항이 나와 있습니다.
 
 | 라이브러리 | 라이센스 유형 |
 |---|---|
@@ -40,7 +44,7 @@ ht-degree: 10%
 | commons-httpclient | [Apache](#apache) |
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
-| 동시 실행 | [동시](#concurrent) (공용 도메인) |
+| 동시 실행 | [동시 실행](#concurrent) (공용 도메인) |
 | geronimo-activation_1.1_spec | [Apache](#apache) |
 | geronimo-stax-api_1.0_spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
@@ -59,7 +63,7 @@ ht-degree: 10%
 | wstx-asl | [Apache](#apache) |
 | xalan | [Apache](#apache) |
 | xbean | [Apache](#apache) |
-| xml api | [Apache](#apache) (Public Domain 및 W3C 소프트웨어 라이센스로 적용되는 부분을 포함함) |
+| xml api | [Apache](#apache) (Public Domain 및 W3C 소프트웨어 라이센스에서 적용되는 부분을 포함함) |
 | XmlSchema | [Apache](#apache) |
 
 ## CRX 타사 라이브러리 개요 {#overview-of-crx-rd-party-libraries}
@@ -166,7 +170,7 @@ ht-degree: 10%
  <tbody> 
   <tr> 
    <td>라이브러리</td> 
-   <td>라이센스</td> 
+   <td>라이선스</td> 
   </tr> 
   <tr> 
    <td>ant-1.6.jar</td> 
@@ -769,7 +773,7 @@ ht-degree: 10%
      WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
 
-## Sun Portlet {#sun-portlet}
+## Sun 포틀릿 {#sun-portlet}
 
 ```xml
      SPECIFICATION LEAD IS WILLING TO LICENSE THIS

@@ -8,14 +8,18 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: b3eea94d-87f1-49b3-aabc-cdb32629ef20
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4249'
+source-wordcount: '4285'
 ht-degree: 3%
 
 ---
 
 # 문서 서비스 설치 및 구성 {#installing-and-configuring-document-services}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 AEM Forms은 다양한 문서 수준 작업을 수행하기 위한 일련의 OSGi 서비스를 제공합니다. 예를 들어, PDF 문서를 작성, 조합, 배포 및 아카이빙하고, 문서에 대한 액세스를 제한하는 디지털 서명을 추가하고, 바코드 양식을 디코딩하는 서비스를 제공합니다. 이러한 서비스는 AEM Forms 추가 기능 패키지에 포함되어 있습니다. 이러한 서비스를 문서 서비스라고 합니다. 사용 가능한 문서 서비스 및 주요 기능 목록은 다음과 같습니다.
 
@@ -266,7 +270,7 @@ IBM SSL 소켓 공급자를 구성하려면 다음 단계를 수행하십시오.
 1. 편집할 복사된 java.security 파일을 엽니다.
 1. 기본 IBM WebSphere 공장 대신 JSSE2 팩토리를 사용하도록 기본 SSL 소켓 팩토리를 변경합니다.
 
-   **기본 컨텐트입니다:**
+   **기본 콘텐츠:**
 
    ```shell
    #ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl

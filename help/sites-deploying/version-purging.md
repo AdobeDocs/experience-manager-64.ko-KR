@@ -1,24 +1,28 @@
 ---
 title: 버전 삭제
-seo-title: 버전 삭제
+seo-title: Version Purging
 description: 이 문서에서는 버전 삭제에 사용할 수 있는 옵션에 대해 설명합니다.
-seo-description: 이 문서에서는 버전 삭제에 사용할 수 있는 옵션에 대해 설명합니다.
+seo-description: This article describes the available options for version purging.
 uuid: 6140c87e-ae1c-409d-bdbb-71b397f0b738
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 56f36dcf-8fbd-43f8-bf74-e88d5b686160
-feature: 구성
+feature: Configuring
 exl-id: 357d5f23-3e75-44e3-905f-4efe960858bf
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '752'
 ht-degree: 2%
 
 ---
 
 # 버전 삭제{#version-purging}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 표준 설치에서는 컨텐츠를 업데이트한 후 페이지를 활성화할 때 AEM에서 새 버전의 페이지 또는 노드를 만듭니다.
 
@@ -26,21 +30,21 @@ ht-degree: 2%
 >
 >컨텐츠가 변경되지 않으면 페이지가 활성화되었다는 메시지가 표시되지만 새 버전이 만들어지지 않습니다
 
-사이드 킥의 **버전 관리** 탭을 사용하여 요청 시 추가 버전을 만들 수 있습니다. 이러한 버전은 리포지토리에 저장되며, 필요한 경우 복원할 수 있습니다.
+요청 시 **버전 관리** 사이드 킥의 탭. 이러한 버전은 리포지토리에 저장되며, 필요한 경우 복원할 수 있습니다.
 
 이러한 버전은 제거되지 않으므로 저장소 크기가 시간이 지남에 따라 확장되므로 관리해야 합니다.
 
 AEM에는 리포지토리를 관리하는 데 도움이 되는 다양한 메커니즘이 포함되어 있습니다.
 
-* [버전 관리자](#version-manager)
+* a [버전 관리자](#version-manager)
 
    새 버전을 만들 때 이전 버전을 삭제하도록 구성할 수 있습니다.
 
-* [버전 삭제](/help/sites-deploying/monitoring-and-maintaining.md#version-purging) 도구
+* a [버전 삭제](/help/sites-deploying/monitoring-and-maintaining.md#version-purging) 도구
 
    저장소 모니터링 및 유지 관리의 일부로 사용됩니다.
 
-   이 매개 변수를 사용하면 다음 매개 변수에 따라 노드의 이전 버전 또는 노드 계층을 제거할 수 있습니다.
+   이 매개 변수를 사용하면 다음 매개 변수에 따라 이전 버전의 노드 또는 노드 계층을 제거할 수 있습니다.
 
    * 저장소에 유지할 최대 버전 수입니다.
 
@@ -50,7 +54,7 @@ AEM에는 리포지토리를 관리하는 데 도움이 되는 다양한 메커�
 
       버전의 페이지가 이 값을 초과하면 저장소에서 제거됩니다.
 
-* [버전 삭제 유지 관리 작업](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks) 버전 삭제 유지 관리 작업을 스케줄링하여 이전 버전을 자동으로 삭제할 수 있습니다. 따라서 버전 삭제 도구를 수동으로 사용할 필요가 최소화됩니다.
+* a [버전 제거 유지 관리 작업](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). 버전 삭제 유지 관리 작업을 스케줄링하여 이전 버전을 자동으로 삭제할 수 있습니다. 따라서 버전 삭제 도구를 수동으로 사용할 필요가 최소화됩니다.
 
 >[!CAUTION]
 >
@@ -66,7 +70,7 @@ AEM에는 리포지토리를 관리하는 데 도움이 되는 다양한 메커�
 
 다음 옵션을 사용할 수 있습니다.
 
-* `versionmanager.createVersionOnActivation` (부울, 기본값:true)
+* `versionmanager.createVersionOnActivation` (부울, 기본값: true)
 
    페이지가 활성화될 때 버전을 만들지 여부.
 
@@ -74,19 +78,19 @@ AEM에는 리포지토리를 관리하는 데 도움이 되는 다양한 메커�
 
    버전은 versionManager.ivPaths에 포함된 경로에서 활성화가 발생하는 경우에만 만들어집니다(아래 참조).
 
-* `versionmanager.ivPaths` (문자열[], 기본값:{&quot;/&quot;})
+* `versionmanager.ivPaths` (문자열)[], 기본값: {&quot;/&quot;})
 
    versionmanager.createVersionOnActivation이 true인 경우 활성화 시 암시적으로 버전이 만들어지는 경로입니다.
 
-* `versionmanager.purgingEnabled` (부울, 기본값:false)
+* `versionmanager.purgingEnabled` (부울, 기본값: false)
 
    새 버전을 만들 때 제거를 활성화할지 여부
 
-* `versionmanager.purgePaths` (문자열[], 기본값:{&quot;/content&quot;})
+* `versionmanager.purgePaths` (문자열)[], 기본값: {&quot;/content&quot;})
 
    새 버전을 만들 때 버전을 삭제할 경로입니다.
 
-* `versionmanager.maxAgeDays` (int, 기본값:30)
+* `versionmanager.maxAgeDays` (int, 기본값: 30)
 
    제거 시 이 값보다 오래된 버전이 제거됩니다. 이 값이 1보다 작으면 버전 연령을 기준으로 지우기가 수행되지 않습니다
 
@@ -104,7 +108,7 @@ AEM에는 리포지토리를 관리하는 데 도움이 되는 다양한 메커�
 
 ### 유지 옵션 결합 {#combining-retention-options}
 
-요구 사항에 따라 어떤 버전을 유지해야 하는지 정의하는 옵션( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`)을 결합할 수 있습니다.
+보존해야 하는 버전을 정의하는 옵션( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`)를 조합할 수 있습니다.
 
 예를 들어, 유지할 최대 버전 수와 유지할 가장 오래된 버전을 정의할 때
 
@@ -140,4 +144,4 @@ AEM에는 리포지토리를 관리하는 데 도움이 되는 다양한 메커�
 
 ## 버전 제거 도구 {#purge-versions-tool}
 
-[버전 삭제](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) 도구는 저장소의 노드 버전 또는 노드 계층 구조를 삭제하기 위한 것입니다. 기본 목적은 이전 버전의 노드를 제거하여 저장소 크기를 줄이는 데 도움이 됩니다.
+다음 [버전 삭제](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) 도구는 저장소의 노드 버전 또는 노드 계층 구조를 삭제하기 위한 것입니다. 기본 목적은 이전 버전의 노드를 제거하여 저장소 크기를 줄이는 데 도움이 됩니다.

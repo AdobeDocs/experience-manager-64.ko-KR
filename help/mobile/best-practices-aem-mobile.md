@@ -1,8 +1,8 @@
 ---
-title: 우수 사례
-seo-title: 우수 사례
+title: 모범 사례
+seo-title: Best Practices
 description: 모바일 앱 템플릿 및 구성 요소를 빌드하려는 sites에 대한 숙련된 AEM 개발자에게 도움이 되는 모범 사례 및 지침을 알려면 이 페이지를 따르십시오.
-seo-description: 모바일 앱 템플릿 및 구성 요소를 빌드하려는 sites에 대한 숙련된 AEM 개발자에게 도움이 되는 모범 사례 및 지침을 알려면 이 페이지를 따르십시오.
+seo-description: Follow this page to  learn best practices and guidelines that will help experienced AEM developers for sites, who want to build mobile app templates and components.
 uuid: 7733c8b1-a88c-455c-8080-f7add4205b92
 contentOwner: User
 content-type: reference
@@ -10,18 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: a0647696-72c3-409b-85ba-9275d8f99cff
 exl-id: 042974ee-2c0a-411d-accf-6a17b8e95f90
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 1%
+source-wordcount: '631'
+ht-degree: 2%
 
 ---
 
-# 우수 사례 {#best-practices}
+# 모범 사례 {#best-practices}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
 AEM Mobile On-demand Services 앱을 빌드하는 것은 Cordova(또는 PhoneGap) 셸에서 직접 실행되는 앱을 빌드하는 것과 다릅니다. 개발자는 다음 사항에 익숙해야 합니다.
 
@@ -33,14 +37,12 @@ AEM Mobile On-demand Services 앱을 빌드하는 것은 Cordova(또는 PhoneGap
 >
 >* [AEM Mobile에서 Cordova 플러그인 사용](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
 >* [AEM Mobile용 Cordova 활성화 플러그인 사용](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
-
 >
-
 
 
 * 플러그인 기능을 사용하는 템플릿은 플러그인 브리지가 없는 브라우저에서 계속 작성할 수 있도록 작성해야 합니다.
 
-   * 예를 들어 플러그인의 API에 액세스하려고 하기 전에 *deviceready* 함수를 대기해야 합니다.
+   * 예를 들어 가 *deviceready* 플러그인의 API에 액세스하기 전에 함수를 호출합니다.
 
 ## AEM 개발자를 위한 지침 {#guidelines-for-aem-developers}
 
@@ -50,8 +52,8 @@ AEM Mobile On-demand Services 앱을 빌드하는 것은 Cordova(또는 PhoneGap
 
 * 단일 모놀리식 스크립트보다 여러 구성 요소 스크립트 파일 필요
 
-   * *customerlibs.html* 및 *customfoterlibs.html*&#x200B;와 같이 많은 빈 확장 포인트가 제공되는데, 이 경우 개발자는 가능한 한 적은 코어 코드를 복제하면서도 페이지 템플릿을 변경할 수 있습니다
-   * 그런 다음 Sling의 *sling:resourceSuperType* 메커니즘을 통해 템플릿을 확장 및 사용자 지정할 수 있습니다
+   * 다음과 같이 빈 확장 포인트가 여러 개 제공됩니다 *customerlibs.html* 및 *customfoterlibs.html*- 가능한 한 적은 핵심 코드를 복제하면서 개발자가 페이지 템플릿을 변경할 수 있도록 해줍니다
+   * 그런 다음 Sling을 통해 템플릿을 확장 및 사용자 지정할 수 있습니다 *sling:resourceSuperType* 메커니즘
 
 * 템플릿 언어로서 JSP보다 Sightly/HTL을 선호함
 
@@ -65,7 +67,7 @@ AEM Mobile On-demand Services 앱을 빌드하는 것은 Cordova(또는 PhoneGap
 
 >[!NOTE]
 >
->렌더링 차단 외부 스크립트 [여기](https://developers.google.com/speed/docs/insights/BlockingJS)에 대해 자세히 알 수 있습니다.
+>렌더링 차단 외부 스크립트에 대해 자세히 알아볼 수 있습니다 [여기](https://developers.google.com/speed/docs/insights/BlockingJS).
 
 **웹용 JS 및 CSS 라이브러리보다 앱별 클라이언트측 JS 및 CSS 라이브러리 선호함**
 
@@ -74,22 +76,22 @@ AEM Mobile On-demand Services 앱을 빌드하는 것은 Cordova(또는 PhoneGap
 
 >[!NOTE]
 >
->jQuery 모바일에 대해 자세히 알아보려면 [여기](https://jquerymobile.com/browser-support/1.4/)를 클릭하십시오.
+>jQuery 모바일에 대해 자세히 알아보려면 [여기](https://jquerymobile.com/browser-support/1.4/).
 
 **전체 스택보다 마이크로 라이브러리 선호**
 
 * 컨텐츠가 장치 유리에 도달하는 데 걸리는 시간은 문서가 의존하는 모든 라이브러리에 의해 느려집니다. 모든 문서를 렌더링하는 데 새 웹 보기를 사용하는 경우 이러한 둔화는 가중되므로 각 라이브러리를 처음부터 다시 초기화해야 합니다
 * 문서가 SPA(단일 페이지 앱)로 빌드되지 않은 경우 Angular과 같은 전체 스택 라이브러리를 포함할 필요가 없습니다
-* [Fastclick](https://github.com/ftlabs/fastclick) 또는 [Velocity.js](https://velocityjs.org)와 같이 페이지에 필요한 인터랙션을 추가하려면 더 작은 단일 목적 라이브러리를 선호하십시오
+* 처럼 페이지에 필요한 상호 작용을 추가하는 데 도움이 되도록 작은 단일 목적 라이브러리를 선호합니다 [Fastclick](https://github.com/ftlabs/fastclick) 또는 [Velocity.js](https://velocityjs.org)
 
 **문서 페이로드 크기 최소화**
 
 * 합리적인 해상도로 지원할 가장 큰 뷰포트를 효과적으로 커버할 수 있는 가장 작은 자산을 사용하십시오
-* 이미지에 *ImageOptimizer* 같은 도구를 사용하여 불필요한 메타데이터를 제거합니다
+* 과 같은 도구 사용 *ImageOptimizer* 이미지에 추가 메타데이터를 제거하려면
 
-## 미리 보기 {#getting-ahead}
+## 앞으로 나아가기 {#getting-ahead}
 
 다른 두 역할과 책임에 대한 자세한 내용은 아래 리소스를 참조하십시오.
 
 * [관리자](/help/mobile/aem-mobile.md)
-* [작성](/help/mobile/aem-mobile-on-demand.md)
+* [작성자](/help/mobile/aem-mobile-on-demand.md)

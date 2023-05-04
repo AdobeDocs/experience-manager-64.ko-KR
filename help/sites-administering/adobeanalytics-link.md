@@ -10,14 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
 exl-id: d60d4fb1-7c8c-462d-a699-7aa62fa924a1
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1600'
-ht-degree: 1%
+source-wordcount: '1636'
+ht-degree: 2%
 
 ---
 
 # Adobe Analytics를 위한 링크 추적 구성{#configuring-link-tracking-for-adobe-analytics}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 사용자가 웹 사이트의 페이지에서 링크를 클릭하면 Adobe Analytics에서 관련 정보를 캡처할 수 있습니다. 예를 들어, 링크 추적을 사용하여 사용자가 사이트와 상호 작용하는 방법, 파일 다운로드를 추적하고 종료 링크를 추적하는 방법을 살펴볼 수 있습니다.
 

@@ -1,8 +1,8 @@
 ---
 title: 디자이너 설치 및 구성
-seo-title: 디자이너 설치 및 구성
-description: '디자이너는 독립형 설치 프로그램으로 사용할 수 있으며 Workbench와 함께 번들로 제공됩니다. 독립형 Designer 설치 방법을 알아봅니다.  '
-seo-description: '디자이너는 독립형 설치 프로그램으로 사용할 수 있으며 Workbench와 함께 번들로 제공됩니다. 독립형 Designer 설치 방법을 알아봅니다.  '
+seo-title: Installing and configuring Designer
+description: 디자이너는 독립형 설치 프로그램으로 사용할 수 있으며 Workbench와 함께 번들로 제공됩니다. 독립형 Designer 설치 방법을 알아봅니다.
+seo-description: Designer is available as a stand-alone installer and is also bundled with Workbench. Learn how to install stand-alone Designer.
 uuid: 46f4a640-092c-46db-a0b2-8e25501a00b9
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,14 +12,18 @@ discoiquuid: 36560809-dba9-49cf-a8ee-23c6766382ef
 noindex: true
 role: Admin
 exl-id: 9791ffd5-04c4-4eed-8e99-b390e539197d
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 1%
+source-wordcount: '178'
+ht-degree: 5%
 
 ---
 
 # 디자이너 설치 및 구성 {#installing-and-configuring-designer}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 디자이너는 독립 실행형 설치 프로그램으로 사용할 수 있으며 WorkBench와 함께 번들로 제공됩니다. Designer용 독립형 설치 프로그램을 사용하는 경우 다음 단계를 수행합니다.
 

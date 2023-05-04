@@ -4,14 +4,18 @@ seo-title: SPA Deep Dives
 description: AEM SPA Editor SDK는 일련의 AEM Gems 세션에 포함되어 있습니다. Adobe 엔지니어가 호스팅하는 이 시리즈는 Adobe 엔지니어가 호스팅한 낮은 수준에서 AEM SPA 편집기 SDK를 더 잘 이해할 수 있는 가이드 역할을 합니다.
 seo-description: The AEM SPA Editor SDK was featured in a series of AEM Gems sessions. Hosted by Adobe engineers, this series can serve as a great guide to gain a deeper understanding of the AEM SPA Editor SDK at a low level, hosted by Adobe engineers.
 exl-id: 4724e321-1c1b-4f2f-b867-5d9f7e8b2cfa
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 2%
+source-wordcount: '324'
+ht-degree: 4%
 
 ---
 
 # SPA 깊이 들어가기{#spa-deep-dives}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 AEM SPA Editor SDK는 일련의 AEM Gems 세션에 포함되어 있습니다. [Adobe Experience Manager Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) 는 Adobe 전문가가 제공하는 일련의 기술적인 분석입니다. Adobe 엔지니어가 호스팅하는 이 시리즈는 낮은 수준에서 AEM SPA 편집기 SDK를 더 깊이 있게 이해할 수 있는 유용한 안내서의 역할을 합니다.
 

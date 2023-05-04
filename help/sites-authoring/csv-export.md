@@ -1,8 +1,8 @@
 ---
 title: CSV로 내보내기
-seo-title: CSV로 내보내기
+seo-title: Export to CSV
 description: 로컬 시스템에서 페이지에 대한 정보를 CSV 파일로 내보내기
-seo-description: 로컬 시스템에서 페이지에 대한 정보를 CSV 파일로 내보내기
+seo-description: Export information about your pages to a CSV file on your local system
 uuid: aa03adac-bbfb-4566-a153-25fe6f6843dd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,19 +10,23 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: d4473758-674a-42d6-923a-b536f7f9c1f7
 exl-id: 52eb9c2f-ce29-4622-8726-802ac40246d4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 82%
+source-wordcount: '226'
+ht-degree: 60%
 
 ---
 
 # CSV로 내보내기{#export-to-csv}
 
-**CSV 내보내기 만들기**&#x200B;를 사용하여 페이지에 대한 정보를 로컬 시스템의 CSV 파일로 내보낼 수 있습니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+**CSV 내보내기 만들기** 로컬 시스템에서 페이지에 대한 정보를 CSV 파일로 내보낼 수 있습니다.
 
 * 다운로드한 파일은 `export.csv`라고 합니다.
-* 컨텐츠는 사용자가 선택한 속성에 따라 다릅니다.
+* 콘텐츠는 사용자가 선택한 속성에 따라 다릅니다.
 * 내보내기에 대한 깊이와 함께 경로를 정의할 수 있습니다.
 
 >[!NOTE]
@@ -39,8 +43,8 @@ CSV 내보내기 만들기 마법사를 사용하여 다음을 선택할 수 있
       * 게시됨
    * 분석
 
-      * 페이지 보기 수
-      * 고유 방문자 수
+      * 페이지 조회수
+      * 고유 방문자
       * 페이지 시간
 
 
@@ -55,14 +59,14 @@ CSV 내보내기 만들기 마법사를 사용하여 다음을 선택할 수 있
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
-**CSV 내보내기 만들기** 옵션은 **Sites** 콘솔(목록 보기)을 탐색할 때 사용할 수 있습니다.**만들기** 드롭다운 메뉴의 옵션입니다.
+만들기 **CSV 내보내기** 선택 사항은 **Sites** 콘솔(목록 보기): 이것은 **만들기** 드롭다운 메뉴:
 
 ![screen_shot_2018-03-21at154719](assets/screen_shot_2018-03-21at154719.png)
 
 CSV 내보내기를 만들려면:
 
 1. **사이트** 콘솔을 열고 필요한 경우 필요한 위치로 이동합니다.
-1. 도구 모음에서 **만들기** 를 선택하고 **CSV 내보내기** 를 선택하여 마법사를 엽니다.
+1. 도구 모음에서 를 선택합니다 **만들기** 그런 다음 **CSV 내보내기** 마법사를 열려면 다음을 수행하십시오.
 
    ![screen_shot_2018-03-21at154758](assets/screen_shot_2018-03-21at154758.png)
 

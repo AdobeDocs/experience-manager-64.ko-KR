@@ -1,8 +1,8 @@
 ---
 title: SPA 및 Adobe Experience Platform Launch 통합
-seo-title: SPA 및 Adobe Experience Platform Launch 통합
+seo-title: SPA and Adobe Experience Platform Launch Integration
 description: Adobe Experience Platform Launch은 SPA 내에서 Analytics, Target 및 Audience Manager을 구현하는 권장 방법입니다.
-seo-description: Adobe Experience Platform Launch은 SPA 내에서 Analytics, Target 및 Audience Manager을 구현하는 권장 방법입니다.
+seo-description: Adobe Experience Platform Launch is the recommended way to implement Analytics, Target, and Audience Manager within SPAs.
 uuid: 8535a911-2863-4e3b-a3fb-414a0e7e9a4e
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: spa
 discoiquuid: a458cc95-cd94-4f3f-9e7b-d6a5780ec4d5
 exl-id: 1af29921-7c24-49b5-9f4c-60671641d4e4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '236'
 ht-degree: 6%
 
 ---
 
 # SPA 및 Launch 통합{#spa-and-launch-integration}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 Adobe Experience Platform Launch은 SPA(단일 페이지 애플리케이션) 내에서 Analytics, Target 및 Audience Manager을 구현하는 권장 방법입니다.
 
@@ -27,9 +31,9 @@ Adobe Experience Platform Launch은 SPA(단일 페이지 애플리케이션) 내
 >
 >SPA 편집기는 SPA 프레임워크 기반 클라이언트측 렌더링(예: React 또는 Angular)이 필요한 프로젝트에 권장되는 솔루션입니다.
 
-## 자습서 {#tutorial}
+## 튜토리얼 {#tutorial}
 
-SPA을 Adobe Experience Platform Launch과 통합하는 방법을 알려면 Launch 설정을 안내하는 [이 기술 자료 문서 및 자습서](https://helpx.adobe.com/experience-manager/kt/integration/using/launch-reference-architecture-SPA-tutorial-implement.html)를 참조하여 Angular 또는 React로 빌드된 Experience Cloud을 구현하십시오.
+SPA을 Adobe Experience Platform Launch과 통합하는 방법을 알려면 다음을 참조하십시오 [이 기술 자료 문서 및 자습서](https://helpx.adobe.com/experience-manager/kt/integration/using/launch-reference-architecture-SPA-tutorial-implement.html): Launch 설정을 안내하고 Angular 또는 React로 빌드된 Experience Cloud을 구현합니다.
 
 >[!NOTE]
 >

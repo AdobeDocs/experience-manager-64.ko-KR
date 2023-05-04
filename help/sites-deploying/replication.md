@@ -1,91 +1,92 @@
 ---
 title: 복제
-seo-title: 복제
+seo-title: Replication
 description: AEM에서 복제 에이전트를 구성하고 모니터링하는 방법을 알아봅니다.
-seo-description: AEM에서 복제 에이전트를 구성하고 모니터링하는 방법을 알아봅니다.
+seo-description: Learn how to configure and monitor replication agents in AEM.
 uuid: 0e4fa6be-2e94-42c7-9cc2-516495e48deb
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 6fe1c5c5-deb7-4405-82e4-23e0f90e2bd8
-feature: 구성
+feature: Configuring
 exl-id: b4a56f59-dc5e-40c3-a024-ee9df10949d8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3589'
-ht-degree: 3%
+source-wordcount: '3613'
+ht-degree: 4%
 
 ---
 
 # 복제{#replication}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 복제 에이전트는 다음 작업에 사용되는 메커니즘으로 Adobe Experience Manager(AEM)의 중심입니다.
 
-* [작성자의 컨텐츠를 게시(활성화)](/help/sites-authoring/publishing-pages.md#publishing-pages)  환경에 게시합니다.
+* [게시(활성화)](/help/sites-authoring/publishing-pages.md#publishing-pages) 작성자에서 게시 환경에 이르는 컨텐츠.
 * Dispatcher 캐시에서 콘텐츠를 명시적으로 플러시합니다.
 * 게시 환경의 사용자 입력(예: 양식 입력)을 작성 환경(작성 환경의 제어)으로 반환합니다.
 
-요청은 처리를 위해 적절한 에이전트에 대기 중인 [입니다.](/help/sites-deploying/osgi-configuration-settings.md)
+요청은 다음과 같습니다 [큐에 대기](/help/sites-deploying/osgi-configuration-settings.md) 적절한 에이전트로 처리
 
 >[!NOTE]
 >
 >사용자 데이터(사용자, 사용자 그룹 및 사용자 프로필)는 작성자와 게시 인스턴스 간에 복제되지 않습니다.
 >
->여러 게시 인스턴스의 경우 [사용자 동기화](/help/sites-administering/sync.md)가 활성화되어 있으면 사용자 데이터가 Sling으로 배포됩니다.
+>여러 게시 인스턴스의 경우 사용자 데이터는 다음의 경우 Sling으로 배포됩니다 [사용자 동기화](/help/sites-administering/sync.md) 이 활성화되어 있습니다.
 
 ## 작성자에서 게시로 복제 {#replicating-from-author-to-publish}
 
 게시 인스턴스 또는 디스패처에 복제하는 작업은 몇 가지 단계에서 수행됩니다.
 
-* 작성자는 특정 컨텐츠가 게시(활성화)되도록 요청합니다.이 작업은 수동 요청이나 미리 구성된 자동 트리거로 시작할 수 있습니다.
-* 요청이 적절한 기본 복제 에이전트에 전달됩니다.환경에는 이러한 작업에 대해 항상 선택되는 몇 가지 기본 에이전트가 있을 수 있습니다.
+* 작성자는 특정 컨텐츠가 게시(활성화)되도록 요청합니다. 이 작업은 수동 요청이나 미리 구성된 자동 트리거로 시작할 수 있습니다.
+* 요청이 적절한 기본 복제 에이전트에 전달됩니다. 환경에는 이러한 작업에 대해 항상 선택되는 몇 가지 기본 에이전트가 있을 수 있습니다.
 * 복제 에이전트는 컨텐츠를 &quot;패키지&quot;하여 복제 큐에 배치합니다.
-* 웹 사이트 탭에서 개별 페이지에 대해 [색상 상태 표시기](/help/sites-authoring/publishing-pages.md#determining-publication-status)가 설정됩니다.
-* 컨텐츠는 큐에서 제거되고 구성된 프로토콜을 사용하여 게시 환경으로 전송됩니다.일반적으로 HTTP입니다.
-* 게시 환경의 서블릿은 요청을 받고 수신된 컨텐츠를 게시합니다.기본 서블릿은 `http://localhost:4503/bin/receive`입니다.
+* 웹 사이트 탭에서 [색상 상태 표시기](/help/sites-authoring/publishing-pages.md#determining-publication-status) 은 개별 페이지에 대해 설정됩니다.
+* 컨텐츠는 큐에서 제거되고 구성된 프로토콜을 사용하여 게시 환경으로 전송됩니다. 일반적으로 HTTP입니다.
+* 게시 환경의 서블릿은 요청을 받고 수신된 컨텐츠를 게시합니다. 기본 서블릿은 `http://localhost:4503/bin/receive`.
 
 * 여러 작성자 및 게시 환경을 구성할 수 있습니다.
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
 
-## 게시에서 작성자 {#replicating-from-publish-to-author}로 복제
+## 게시에서 작성자로 복제 {#replicating-from-publish-to-author}
 
 일부 기능을 사용하면 사용자가 게시 인스턴스에 데이터를 입력할 수 있습니다.
 
 경우에 따라 역방향 복제라고 하는 복제 유형은 이 데이터를 다른 게시 환경에 다시 배포되는 작성 환경으로 반환하기 위해 필요합니다. 보안 고려 사항으로 인해 게시 환경에서 작성 환경으로의 모든 트래픽은 엄격히 제어되어야 합니다.
 
-역방향 복제는 작성 환경을 참조하는 게시 환경의 에이전트를 사용합니다. 이 에이전트는 데이터를 보낼 상자에 배치합니다. 이 확인란은 작성 환경의 복제 리스너와 일치합니다. 청취자는 출력함을 폴링하여 입력한 데이터를 수집한 다음 필요에 따라 배포합니다. 이렇게 하면 작성 환경이 모든 트래픽을 제어할 수 있습니다.
+역방향 복제는 작성 환경을 참조하는 게시 환경의 에이전트를 사용합니다. 이 에이전트는 데이터를 보낼 편지함에 배치합니다. 이 확인란은 작성 환경의 복제 리스너와 일치합니다. 청취자는 출력함을 폴링하여 입력한 데이터를 수집한 다음 필요에 따라 배포합니다. 이렇게 하면 작성 환경이 모든 트래픽을 제어할 수 있습니다.
 
 커뮤니티 기능(예: 포럼, 블로그, 댓글 및 검토)의 경우, 게시 환경에 입력되는 UGC(사용자 생성 컨텐츠)의 양은 복제를 사용하여 AEM 인스턴스 간에 효율적으로 동기화하기가 어렵습니다.
 
-AEM [Communities](/help/communities/overview.md)은 UGC에 복제를 사용하지 않습니다. 대신 Communities에 대한 배포에는 UGC에 대한 공용 저장소가 필요합니다( [커뮤니티 컨텐츠 저장소](/help/communities/working-with-srp.md) 참조).
+AEM [커뮤니티](/help/communities/overview.md) UGC에 대한 복제를 사용하지 않습니다. 대신 Communities용 배포에 UGC용 공용 저장소가 필요합니다( 참조) [커뮤니티 컨텐츠 저장소](/help/communities/working-with-srp.md)).
 
-## 복제 - 즉시 {#replication-out-of-the-box} 사용 가능
+## 복제 - 즉시 사용 가능 {#replication-out-of-the-box}
 
 표준 AEM 설치에 포함된 Geometrixx 웹 사이트를 복제 예시에 사용할 수 있습니다.
 
-이 예를 따르고 기본 복제 에이전트를 사용하려면 [Install AEM](/help/sites-deploying/deploy.md) with:
+이 예제를 따르고 기본 복제 에이전트를 사용하려면 [AEM 설치](/help/sites-deploying/deploy.md) 사용:
 
-* 포트 `4502`의 작성 환경
-* 포트 `4503`의 게시 환경
+* 포트의 작성 환경 `4502`
+* 포트의 게시 환경 `4503`
 
 >[!NOTE]
 >
 >기본적으로 활성화됨 :
 >
->* 작성자의 에이전트 :기본 에이전트(게시)
+>* 작성자의 에이전트 : 기본 에이전트(게시)
 >
+>기본적으로 효과적으로 비활성화(AEM 6.1 기준) :
 >
-기본적으로 효과적으로 비활성화(AEM 6.1 기준) :
+>* 작성자의 에이전트 : 역방향 복제 에이전트(publish_reverse)
+>* 게시할 에이전트 : 역방향 복제(보낸 편지함)
 >
->* 작성자의 에이전트 :역방향 복제 에이전트(publish_reverse)
->* 게시할 에이전트 :역방향 복제(보낸 편지함)
-
->
->
-에이전트 또는 큐의 상태를 확인하려면 **도구** 콘솔을 사용합니다.\
->[복제 에이전트 모니터링](#monitoring-your-replication-agents)을 참조하십시오.
+>에이전트 또는 큐의 상태를 확인하려면 **도구** 콘솔.\
+>자세한 내용은 [복제 에이전트 모니터링](#monitoring-your-replication-agents).
 
 ### 복제(작성자가 게시됨) {#replication-author-to-publish}
 
@@ -94,7 +95,7 @@ AEM [Communities](/help/communities/overview.md)은 UGC에 복제를 사용하�
    `http://localhost:4502/content/geometrixx/en/support.html`
 
 1. 페이지를 편집하여 새 텍스트를 추가합니다.
-1. **페이지** 를 활성화하여 변경 사항을 게시합니다.
+1. **페이지 활성화** 변경 사항을 게시하려면 다음을 수행하십시오.
 1. 게시 환경에서 지원 페이지를 엽니다.
 
    `http://localhost:4503/content/geometrixx/en/support.html`
@@ -106,21 +107,21 @@ AEM [Communities](/help/communities/overview.md)은 UGC에 복제를 사용하�
 * **기본 에이전트(게시)**
 이 에이전트는 컨텐츠를 기본 게시 인스턴스에 복제합니다.
 
-   이(구성 및 로그)에 대한 세부 사항은 작성 환경의 도구 콘솔에서 액세스할 수 있습니다.또는:
+   이(구성 및 로그)에 대한 세부 사항은 작성 환경의 도구 콘솔에서 액세스할 수 있습니다. 또는:
 
    `http://localhost:4502/etc/replication/agents.author/publish.html`.
 
-### 복제 에이전트 - 즉시 {#replication-agents-out-of-the-box} 사용
+### 복제 에이전트 - 즉시 사용 가능 {#replication-agents-out-of-the-box}
 
 표준 AEM 설치에서는 다음 에이전트를 사용할 수 있습니다.
 
-* [기본 에이전트](#replication-author-to-publish)  - 작성자에서 게시로 복제하는 데 사용됩니다.
+* [기본 에이전트](#replication-author-to-publish) - 작성자에서 게시로 복제하는 데 사용됩니다.
 
-* 디스패처 초기화 - Dispatcher 캐시를 관리하는 데 사용됩니다. 자세한 내용은 [작성 환경에서 Dispatcher 캐시 무효화](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) 및 [게시 인스턴스에서 Dispatcher 캐시 무효화](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance)를 참조하십시오.
+* 디스패처 초기화 - Dispatcher 캐시를 관리하는 데 사용됩니다. 자세한 내용은 [작성 환경에서 Dispatcher 캐시 무효화](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) 및 [게시 인스턴스에서 Dispatcher 캐시 무효화](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) 추가 정보.
 
-* [역방향 복제](#replicating-from-publish-to-author)  - 게시에서 작성자로 복제하는 데 사용됩니다. 역방향 복제는 포럼, 블로그 및 댓글과 같은 커뮤니티 기능에 사용되지 않습니다. 보낼 편지함이 활성화되어 있지 않으므로 효과적으로 비활성화됩니다. 역방향 복제를 사용하려면 사용자 지정 구성이 필요합니다.
+* [역복제](#replicating-from-publish-to-author) - 게시에서 작성자로 복제하는 데 사용됩니다. 역방향 복제는 포럼, 블로그 및 댓글과 같은 커뮤니티 기능에 사용되지 않습니다. 보낼 편지함이 활성화되어 있지 않으므로 효과적으로 비활성화됩니다. 역방향 복제를 사용하려면 사용자 지정 구성이 필요합니다.
 
-* 정적 에이전트 - &quot;노드의 정적 표현을 파일 시스템에 저장하는 에이전트&quot;입니다. 예를 들어, 기본 설정을 사용하면 컨텐츠 페이지와 dam 자산이 `/tmp` 아래에 HTML 또는 적절한 자산 형식으로 저장됩니다. 구성에 대해서는 `Settings` 및 `Rules` 탭을 참조하십시오. 이 요청은 페이지가 애플리케이션 서버에서 직접 요청될 때 컨텐츠를 볼 수 있도록 했습니다. 이는 전문 에이전트이며, 대부분의 경우 필요하지 않습니다.
+* 정적 에이전트 - &quot;노드의 정적 표현을 파일 시스템에 저장하는 에이전트&quot;입니다. 예를 들어, 기본 설정을 사용하면 콘텐츠 페이지와 dam 자산이 아래에 저장됩니다 `/tmp`를 HTML 또는 적절한 자산 형식으로 사용하십시오. 자세한 내용은 `Settings` 및 `Rules` 탭의 구성 탭에 표시됩니다. 이 요청은 페이지가 애플리케이션 서버에서 직접 요청될 때 컨텐츠를 볼 수 있도록 했습니다. 이는 전문 에이전트이며, 대부분의 경우 필요하지 않습니다.
 
 ## 복제 에이전트 - 구성 매개 변수 {#replication-agents-configuration-parameters}
 
@@ -140,18 +141,18 @@ AEM [Communities](/help/communities/overview.md)은 UGC에 복제를 사용하�
 
    복제 에이전트가 현재 활성화되어 있는지 여부를 나타냅니다.
 
-   에이전트가 **enabled**&#x200B;이면 큐가 다음과 같이 표시됩니다.
+   에이전트가 **활성화됨** 큐가 다음과 같이 표시됩니다.
 
-   * **** 항목 처리 중 활성.
-   * **** 큐가 비어 있는 경우를 나타냅니다.
-   * **** 항목이 큐에 있지만 처리할 수 없을 때 차단합니다.예를 들어 수신 대기열이 비활성화된 경우
+   * **활성** 항목을 처리하는 경우
+   * **유휴 상태** 큐가 비어 있는 경우
+   * **차단됨** 항목이 큐에 있지만 처리할 수 없는 경우 예를 들어 수신 대기열이 비활성화된 경우
 
 * **직렬화 유형**
 
    직렬화 유형:
 
-   * **기본값**:에이전트를 자동으로 선택하려는 경우 설정합니다.
-   * **디스패처 초기화**:에이전트가 Dispatcher 캐시 플러시에 사용되도록 하는 경우 이 옵션을 선택합니다.
+   * **기본값**: 에이전트를 자동으로 선택하려는 경우 설정합니다.
+   * **디스패처 초기화**: 에이전트가 Dispatcher 캐시 플러시에 사용되도록 하는 경우 이 옵션을 선택합니다.
 
 * **다시 시도 지연**
 
@@ -166,15 +167,15 @@ AEM [Communities](/help/communities/overview.md)은 UGC에 복제를 사용하�
    * 작성 환경에서 컨텐츠를 수집 및 패키징합니다.
    * 게시 환경에 컨텐츠 만들기 및 작성
 
-   시스템 사용자 계정(관리자 사용자로 sling에 정의된 계정)을 사용하려면 이 필드를 비워 둡니다.기본적으로 `admin`)입니다.
+   시스템 사용자 계정(관리자 사용자로 sling에 정의된 계정)을 사용하려면 이 필드를 비워 둡니다. 기본적으로 다음과 같습니다 `admin`).
 
    >[!CAUTION]
    >
-   >작성 환경의 에이전트에 대해 이 계정 *은(는) 복제하려는 모든 경로에 대한 읽기 액세스 권한이 있어야 합니다.*
+   >작성 환경의 에이전트용 이 계정 *반드시* 복제할 모든 경로에 대해 읽기 액세스 권한이 있어야 합니다.
 
    >[!CAUTION]
    >
-   >게시 환경의 에이전트에 대해 이 계정 *은(는) 컨텐츠를 복제하는 데 필요한 생성/쓰기 액세스 권한이 있어야 합니다.*
+   >게시 환경의 에이전트에 대해 이 계정 *반드시* 컨텐츠를 복제하는 데 필요한 생성/쓰기 액세스 권한이 있어야 합니다.
 
    >[!NOTE]
    >
@@ -184,19 +185,19 @@ AEM [Communities](/help/communities/overview.md)은 UGC에 복제를 사용하�
 
    로그 메시지에 사용할 세부 정보 수준을 지정합니다.
 
-   * `Error`:오류만 기록됩니다.
-   * `Info`:오류, 경고 및 기타 정보 메시지가 기록됩니다.
-   * `Debug`:특히 디버그 목적으로 메시지에 높은 수준의 세부 정보가 사용됩니다
+   * `Error`: 오류만 기록됩니다.
+   * `Info`: 오류, 경고 및 기타 정보 메시지가 기록됩니다.
+   * `Debug`: 특히 디버그 목적으로 메시지에 높은 수준의 세부 정보가 사용됩니다
 
    기본값: `Info`
 
 * **역복제에 사용**
 
-   이 에이전트가 역방향 복제에 사용되는지 여부를 나타냅니다.작성자 환경에 게시 의 사용자 입력을 반환합니다.
+   이 에이전트가 역방향 복제에 사용되는지 여부를 나타냅니다. 작성자 환경에 게시 의 사용자 입력을 반환합니다.
 
 * **별칭 업데이트**
 
-   이 옵션을 선택하면 Dispatcher에 별칭 또는 별칭 경로 무효화 요청이 활성화됩니다. 또한 [디스패처 플러시 에이전트 구성](/help/sites-deploying/replication.md#configuring-a-dispatcher-flush-agent)을 참조하십시오.
+   이 옵션을 선택하면 Dispatcher에 별칭 또는 별칭 경로 무효화 요청이 활성화됩니다. 또한, [Dispatcher 플러시 에이전트 구성](/help/sites-deploying/replication.md#configuring-a-dispatcher-flush-agent).
 
 ### 전송 {#transport}
 
@@ -206,12 +207,12 @@ AEM [Communities](/help/communities/overview.md)은 UGC에 복제를 사용하�
 
    예:
 
-   * 기본 에이전트는 `http://localhost:4503/bin/receive`에 복제할 수 있습니다.
-   * 디스패처 초기화 에이전트는 `http://localhost:8000/dispatcher/invalidate.cache`에 복제할 수 있습니다.
+   * 기본 에이전트가에 복제할 수 있습니다. `http://localhost:4503/bin/receive`
+   * Dispatcher 플러시 에이전트가 `http://localhost:8000/dispatcher/invalidate.cache`
 
    여기에 지정된 프로토콜(HTTP 또는 HTTPS)이 전송 방법을 결정합니다.
 
-   Dispatcher 플러시 에이전트의 경우 경로 기반 가상 호스트 항목을 사용하여 팜을 구분하는 경우에만 URI 속성이 사용됩니다. 이 필드를 사용하여 무효화할 팜을 대상으로 합니다. 예를 들어 팜 #1에는 `www.mysite.com/path1/*`의 가상 호스트가 있고 팜 #2에는 `www.mysite.com/path2/*`의 가상 호스트가 있습니다. `/path1/invalidate.cache` URL을 사용하여 첫 번째 팜을 대상으로 하고 `/path2/invalidate.cache` 을 사용하여 두 번째 팜을 대상으로 지정할 수 있습니다.
+   Dispatcher 플러시 에이전트의 경우 경로 기반 가상 호스트 항목을 사용하여 팜을 구분하는 경우에만 URI 속성이 사용됩니다. 이 필드를 사용하여 무효화할 팜을 대상으로 합니다. 예를 들어 팜 #1에는 `www.mysite.com/path1/*`의 가상 호스트가 있고 팜 #2에는 `www.mysite.com/path2/*`의 가상 호스트가 있습니다. URL `/path1/invalidate.cache`를 사용하여 첫 번째 팜을 대상으로 지정하고 `/path2/invalidate.cache`를 사용하여 두 번째 팜을 대상으로 지정할 수 있습니다.
 
 * **사용자**
 
@@ -310,13 +311,13 @@ AEM [Communities](/help/communities/overview.md)은 UGC에 복제를 사용하�
 
    연결을 설정할 때 적용할 시간 초과(밀리초)입니다.
 
-* **소켓 시간 초과**
+* **소켓 시간 제한**
 
    연결이 설정된 후 트래픽을 대기할 때 적용할 시간 초과(밀리초)입니다.
 
 * **프로토콜 버전**
 
-   프로토콜 버전입니다.예: HTTP/1.0의 경우 `1.0`
+   프로토콜 버전입니다. 예 `1.0` HTTP/1.0용.
 
 #### 트리거 {#triggers}
 
@@ -324,7 +325,7 @@ AEM [Communities](/help/communities/overview.md)은 UGC에 복제를 사용하�
 
 * **기본값 무시**
 
-   이 옵션을 선택하면 에이전트가 기본 복제에서 제외됩니다.즉, 컨텐츠 작성자가 복제 작업을 수행하는 경우 사용되지 않습니다.
+   이 옵션을 선택하면 에이전트가 기본 복제에서 제외됩니다. 즉, 컨텐츠 작성자가 복제 작업을 수행하는 경우 사용되지 않습니다.
 
 * **수정 시**
 
@@ -352,30 +353,29 @@ AEM [Communities](/help/communities/overview.md)은 UGC에 복제를 사용하�
 
 ## 복제 에이전트 구성 {#configuring-your-replication-agents}
 
-MSSL을 사용하여 게시 인스턴스에 복제 에이전트를 연결하는 방법에 대한 내용은 [상호 SSL을 사용하여 복제](/help/sites-deploying/mssl-replication.md)를 참조하십시오.
+MSSL을 사용하여 게시 인스턴스에 복제 에이전트를 연결하는 방법에 대한 자세한 내용은 [상호 SSL을 사용하여 복제](/help/sites-deploying/mssl-replication.md).
 
-### 작성자 환경에서 복제 에이전트 구성 {#configuring-your-replication-agents-from-the-author-environment}
+### 작성 환경에서 복제 에이전트 구성 {#configuring-your-replication-agents-from-the-author-environment}
 
-작성 환경의 도구 탭에서 작성 환경(**작성자**&#x200B;의 에이전트) 또는 게시 환경(**게시의 에이전트**)에 있는 복제 에이전트를 구성할 수 있습니다. 다음 절차는 작성 환경에 대한 에이전트의 구성을 설명하지만 둘 다에 사용할 수 있습니다.
+작성 환경의 도구 탭에서 작성 환경(**작성자의 에이전트**) 또는 게시 환경(**게시할 에이전트**). 다음 절차는 작성 환경에 대한 에이전트의 구성을 설명하지만 둘 다에 사용할 수 있습니다.
 
 >[!NOTE]
 >
->디스패처가 작성자 또는 게시 인스턴스에 대한 HTTP 요청을 처리할 때 복제 에이전트의 HTTP 요청에 PATH 헤더가 포함되어야 합니다. 다음 절차 외에 클라이언트 헤더의 디스패처 목록에 PATH 헤더를 추가해야 합니다. ( [/clientheaders(Client Headers)](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders) 참조. [](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)
+>디스패처가 작성자 또는 게시 인스턴스에 대한 HTTP 요청을 처리할 때 복제 에이전트의 HTTP 요청에 PATH 헤더가 포함되어야 합니다. 다음 절차 외에 클라이언트 헤더의 디스패처 목록에 PATH 헤더를 추가해야 합니다. (자세한 내용은 [/clientheaders(클라이언트 헤더)](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders). [](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)
 
-
-1. AEM에서 **도구** 탭에 액세스합니다.
-1. **복제**(왼쪽 창에서 폴더를 엽니다.)를 클릭합니다.
-1. 작성자&#x200B;**의**&#x200B;에이전트(왼쪽 또는 오른쪽 창)를 두 번 클릭합니다.
+1. 액세스 권한 **도구** 탭에서 사용할 수 있습니다.
+1. 클릭 **복제** (폴더를 열려면 왼쪽 창)
+1. 두 번 클릭 **작성자의 에이전트** (왼쪽 또는 오른쪽 창)
 1. 해당 에이전트에 대한 자세한 정보를 표시하려면 해당 에이전트 이름(링크임)을 클릭합니다.
-1. **편집**&#x200B;을 클릭하여 구성 대화 상자를 엽니다.
+1. 클릭 **편집** 구성 대화 상자를 열려면 다음을 수행하십시오.
 
    ![chlimage_1-145](assets/chlimage_1-145.png)
 
-1. 제공된 값이면 기본 설치에 충분해야 합니다. 변경한 경우 **확인**&#x200B;을 클릭하여 저장합니다([복제 에이전트 - 구성 매개 변수](#replication-agents-configuration-parameters) 참조). 개별 매개 변수에 대한 자세한 내용은
+1. 제공된 값이면 기본 설치에 충분해야 합니다. 변경할 경우 **확인** 파일을 저장합니다( [복제 에이전트 - 구성 매개 변수](#replication-agents-configuration-parameters) 개별 매개 변수에 대한 자세한 정보 참조).
 
 >[!NOTE]
 >
->AEM의 표준 설치에서는 기본 복제 에이전트 내의 전송 자격 증명을 위한 사용자로 `admin`을 지정합니다.
+>AEM의 표준 설치는 `admin` 기본 복제 에이전트 내에서 전송 자격 증명을 위한 사용자입니다.
 >
 >필요한 경로를 복제하려면 권한이 있는 사이트 특정 복제 사용자 계정으로 변경해야 합니다.
 
@@ -383,26 +383,26 @@ MSSL을 사용하여 게시 인스턴스에 복제 에이전트를 연결하는 
 
 역방향 복제는 게시 인스턴스에서 생성된 사용자 컨텐츠를 다시 작성자 인스턴스로 가져오는 데 사용됩니다. 일반적으로 설문 조사 및 등록 양식 등의 기능에 사용됩니다.
 
-보안상의 이유로 대부분의 네트워크 토폴로지는 &quot;Demilitarized Zone&quot;(인터넷 등의 신뢰할 수 없는 네트워크에 외부 서비스를 노출하는 하위 네트워크)에서 *연결을 허용하지 않습니다.*
+보안상의 이유로 대부분의 네트워크 토폴로지는 연결을 허용하지 않습니다 *변환 전:* &quot;Demilitarized Zone&quot;(외부 서비스를 인터넷 등의 신뢰할 수 없는 네트워크에 노출하는 하위 네트워크)
 
 게시 환경이 일반적으로 DMZ에 있으므로 컨텐츠를 다시 작성 환경으로 가져오려면 작성자 인스턴스에서 연결을 시작해야 합니다. 이 작업은 다음으로 수행됩니다.
 
-* 컨텐츠가 배치되는 게시 환경의 *보낼 편지함*&#x200B;입니다.
+* an *outbox* 를 입력합니다.
 * 새 컨텐츠에 대한 옵트박스를 주기적으로 폴링하는 작성 환경의 에이전트(게시).
 
 >[!NOTE]
 >
->AEM [Communities](/help/communities/overview.md)의 경우 게시 인스턴스에서 사용자가 생성한 컨텐츠에 복제가 사용되지 않습니다. [커뮤니티 컨텐츠 저장소](/help/communities/working-with-srp.md)를 참조하십시오.
+>AEM용 [커뮤니티](/help/communities/overview.md)인 경우 게시 인스턴스에서 사용자가 생성한 컨텐츠에 복제가 사용되지 않습니다. 자세한 내용은 [커뮤니티 컨텐츠 저장소](/help/communities/working-with-srp.md).
 
 이를 위해서는 다음을 수행해야 합니다.
 
-**작성 환경의 역방향 복제 에이전트** 이 구성 요소는 게시 환경의 보낸 편지함에서 정보를 수집하는 활성 구성 요소 역할을 합니다.
+**작성자 환경의 역방향 복제 에이전트** 게시 환경의 보낼 편지함에서 정보를 수집하기 위한 활성 구성 요소 역할을 합니다.
 
 역방향 복제를 사용하려면 이 에이전트가 활성화되어 있는지 확인하십시오.
 
 ![chlimage_1-146](assets/chlimage_1-146.png)
 
-**게시 환경(보낸 편지함)의 역방향 복제 에이전트**  &quot;보낸 편지함&quot;으로 기능하는 수동 요소입니다. 사용자 입력은 작성 환경에서 에이전트가 수집하는 위치에 배치됩니다.
+**게시 환경의 역방향 복제 에이전트(보낸 편지함)** 이것은 &quot;보낼 편지함&quot;으로 기능하는 수동 요소입니다. 사용자 입력은 작성 환경에서 에이전트가 수집하는 위치에 배치됩니다.
 
 ![chlimage_1-9](assets/chlimage_1-9.jpeg)
 
@@ -412,29 +412,29 @@ MSSL을 사용하여 게시 인스턴스에 복제 에이전트를 연결하는 
 >
 >컨텐츠만 복제됩니다. 사용자 데이터는 복제되지 않습니다(사용자, 사용자 그룹 및 사용자 프로필).
 >
->여러 게시 인스턴스 간에 사용자 데이터를 동기화하려면 [사용자 동기화](/help/sites-administering/sync.md)를 활성화하십시오.
+>여러 게시 인스턴스 간에 사용자 데이터를 동기화하려면 다음을 활성화합니다 [사용자 동기화](/help/sites-administering/sync.md).
 
 설치 시 로컬 호스트의 포트 4503에서 실행되는 게시 인스턴스에 컨텐츠를 복제하도록 기본 에이전트가 이미 구성되어 있습니다.
 
 추가 게시 인스턴스에 대한 컨텐츠 복제를 구성하려면 새 복제 에이전트를 만들고 구성해야 합니다.
 
-1. AEM에서 **도구** 탭을 엽니다.
-1. 왼쪽 패널에서 **복제**&#x200B;를 선택한 다음 작성자&#x200B;**의 에이전트를 선택합니다.**
-1. **새로 만들기... 를 선택합니다.**.
-1. **제목** 및 **이름**&#x200B;을 설정한 다음 **복제 에이전트**&#x200B;를 선택합니다.
-1. **만들기**&#x200B;를 클릭하여 새 에이전트를 만듭니다.
+1. 를 엽니다. **도구** 탭에서 사용할 수 있습니다.
+1. 선택 **복제**, 그런 다음 **작성자의 에이전트** 왼쪽 패널에 표시됩니다.
+1. 선택 **새로 만들기...**.
+1. 설정 **제목** 및 **이름**&#x200B;를 선택하고 을 선택합니다. **복제 에이전트**.
+1. 클릭 **만들기** 새 에이전트를 만들려면
 1. 새 에이전트 항목을 두 번 클릭하여 구성 패널을 엽니다.
-1. **편집** 을 클릭합니다. - **에이전트 설정** 대화 상자가 열립니다. **직렬화 유형**&#x200B;이 이미 기본값으로 정의되어 있습니다. 그래도 되어야 합니다.
+1. 클릭 **편집** - **에이전트 설정** 대화 상자가 열립니다. **직렬화 유형** 가 이미 기본값으로 정의되어 있지만, 그대로 있어야 합니다.
 
-   * **설정** 탭에서 다음을 수행합니다.
+   * 에서 **설정** 탭:
 
-      * **활성화됨**.
-      * **설명**&#x200B;을 입력합니다.
-      * **다시 시도 지연**&#x200B;을 `60000`로 설정합니다.
-      * **직렬화 유형**&#x200B;을 `Default`(으)로 둡니다.
-   * **Transport** 탭에서 다음을 수행합니다.
+      * 활성화 **활성화됨**.
+      * 을(를) 입력합니다. **설명**.
+      * 설정 **다시 시도 지연** to `60000`.
+      * 을(를) 종료하십시오. **직렬화 유형** 로서의 `Default`.
+   * 에서 **전송** 탭:
 
-      * 새 게시 인스턴스에 필요한 URI를 입력합니다.예
+      * 새 게시 인스턴스에 필요한 URI를 입력합니다. 예
 
          `http://localhost:4504/bin/receive`.
 
@@ -442,85 +442,84 @@ MSSL을 사용하여 게시 인스턴스에 복제 에이전트를 연결하는 
       * 필요에 따라 다른 매개 변수를 구성할 수 있습니다.
 
 
-1. **확인**&#x200B;을 클릭하여 설정을 저장합니다.
+1. 클릭 **확인** 설정을 저장하려면 을 클릭합니다.
 
 그런 다음 작성 환경에서 페이지를 업데이트한 다음 게시하여 작업을 테스트할 수 있습니다.
 
 위와 같이 구성된 모든 게시 인스턴스에 업데이트가 표시됩니다.
 
-문제가 발생하면 작성자 인스턴스에서 로그를 확인할 수 있습니다. 필요한 세부 정보 수준에 따라 **에이전트 설정** 대화 상자를 사용하여 **로그 수준**&#x200B;을 `Debug`로 설정할 수도 있습니다.
+문제가 발생하면 작성자 인스턴스에서 로그를 확인할 수 있습니다. 필요한 세부 정보 수준에 따라 **로그 수준** to `Debug` 사용 **에이전트 설정** 대화 상자를 엽니다 .
 
 >[!NOTE]
 >
->개별 게시 환경에 복제할 다른 컨텐츠를 선택하려면 [에이전트 사용자 ID](#settings)를 사용하는 것과 함께 결합할 수 있습니다. 각 게시 환경의 경우:
+>이 기능은 [에이전트 사용자 Id](#settings) 개별 게시 환경에 복제할 다른 컨텐츠를 선택하려면 각 게시 환경의 경우:
 >
 >1. 해당 게시 환경에 복제할 복제 에이전트를 구성합니다.
->1. 사용자 계정 구성특정 게시 환경에 복제될 컨텐츠를 읽는 데 필요한 액세스 권한을 사용하여 컨텐츠를 작성합니다.
->1. 사용자 계정을 복제 에이전트의 **에이전트 사용자 ID**&#x200B;로 할당합니다.
+>1. 사용자 계정 구성 특정 게시 환경에 복제될 컨텐츠를 읽는 데 필요한 액세스 권한을 사용하여 컨텐츠를 작성합니다.
+>1. 사용자 계정을 **에이전트 사용자 Id** 복제 에이전트에 대해 사용됩니다.
 
 >
-
 
 
 ### Dispatcher 플러시 에이전트 구성 {#configuring-a-dispatcher-flush-agent}
 
 기본 에이전트는 설치에 포함됩니다. 그러나 새 에이전트를 정의하는 경우에도 특정 구성이 계속 필요하며 또한 동일한 결과를 제공합니다.
 
-1. AEM에서 **도구** 탭을 엽니다.
-1. **배포**&#x200B;를 클릭합니다.
-1. **복제**&#x200B;를 선택한 다음 게시&#x200B;**의**&#x200B;에이전트를 선택합니다.
-1. **Dispatcher Flush** 항목을 두 번 클릭하여 개요를 엽니다.
-1. **편집** 을 클릭합니다. **에이전트 설정** 대화 상자가 열립니다.
+1. 를 엽니다. **도구** 탭에서 사용할 수 있습니다.
+1. 클릭 **배포**.
+1. 선택 **복제** 그리고 **게시할 에이전트**.
+1. 을(를) 두 번 클릭합니다. **디스패처 초기화** 항목을 사용하여 개요를 엽니다.
+1. 클릭 **편집** - **에이전트 설정** 대화 상자가 열립니다.
 
-   * **설정** 탭에서 다음을 수행합니다.
+   * 에서 **설정** 탭:
 
-      * **활성화됨**.
-      * **설명**&#x200B;을 입력합니다.
-      * **직렬화 유형** 을 `Dispatcher Flush`(으)로 두거나 새 에이전트를 만드는 것처럼 설정합니다.
-      * (선택 사항) Dispatcher에 별칭 또는 별칭 경로 무효화 요청을 활성화하려면 **별칭 업데이트**&#x200B;를 선택합니다.
-   * **Transport** 탭에서 다음을 수행합니다.
+      * 활성화 **활성화됨**.
+      * 을(를) 입력합니다. **설명**.
+      * 을(를) 종료하십시오. **직렬화 유형** 로서의 `Dispatcher Flush`또는 새 에이전트를 만드는 것처럼 설정합니다.
+      * (선택 사항) **별칭 업데이트** Dispatcher에 별칭 또는 별칭 경로 무효화 요청을 활성화하려면 .
+   * 에서 **전송** 탭:
 
-      * 새 게시 인스턴스에 필요한 URI를 입력합니다.예
+      * 새 게시 인스턴스에 필요한 URI를 입력합니다. 예
 
          `http://localhost:80/dispatcher/invalidate.cache`.
 
       * 복제에 사용되는 사이트별 사용자 계정을 입력합니다.
       * 필요에 따라 다른 매개 변수를 구성할 수 있습니다.
 
-   Dispatcher 플러시 에이전트의 경우 경로 기반 가상 호스트 항목을 사용하여 팜을 구분하는 경우에만 URI 속성이 사용됩니다. 이 필드를 사용하여 무효화할 팜을 대상으로 합니다. 예를 들어 팜 #1에는 `www.mysite.com/path1/*`의 가상 호스트가 있고 팜 #2에는 `www.mysite.com/path2/*`의 가상 호스트가 있습니다. `/path1/invalidate.cache` URL을 사용하여 첫 번째 팜을 대상으로 하고 `/path2/invalidate.cache` 을 사용하여 두 번째 팜을 대상으로 지정할 수 있습니다.
+   Dispatcher 플러시 에이전트의 경우 경로 기반 가상 호스트 항목을 사용하여 팜을 구분하는 경우에만 URI 속성이 사용됩니다. 이 필드를 사용하여 무효화할 팜을 대상으로 합니다. 예를 들어 팜 #1에는 `www.mysite.com/path1/*`의 가상 호스트가 있고 팜 #2에는 `www.mysite.com/path2/*`의 가상 호스트가 있습니다. URL `/path1/invalidate.cache`를 사용하여 첫 번째 팜을 대상으로 지정하고 `/path2/invalidate.cache`를 사용하여 두 번째 팜을 대상으로 지정할 수 있습니다.
 
    >[!NOTE]
    >
-   >권장 기본 컨텍스트 이외의 컨텍스트에서 AEM을 설치한 경우 **확장** 탭에서 [HTTP 헤더](#extended)를 구성해야 합니다.
+   >권장 기본 컨텍스트 이외의 컨텍스트에서 AEM을 설치한 경우 [HTTP 헤더](#extended) 에서 **확장** 탭.
 
-1. **확인**&#x200B;을 클릭하여 변경 사항을 저장합니다.
-1. **도구** 탭으로 돌아가서 **Dispatcher Flush** 에이전트(**게시**&#x200B;의 에이전트)를 활성화&#x200B;**할 수 있습니다.**
+1. 클릭 **확인** 변경 사항을 저장하려면 을 클릭합니다.
+1. 로 돌아갑니다. **도구** 탭, 여기에서 **활성화** a **디스패처 초기화** 에이전트 (**게시할 에이전트**).
 
-**Dispatcher 플러시** 복제 에이전트가 작성자에서 활성 상태가 아닙니다. 동일한 URI를 사용하여 게시 환경에서 동일한 페이지에 액세스할 수 있습니다.예: `http://localhost:4503/etc/replication/agents.publish/flush.html`
+다음 **디스패처 초기화** 작성자에서 복제 에이전트가 활성 상태가 아닙니다. 동일한 URI를 사용하여 게시 환경에서 동일한 페이지에 액세스할 수 있습니다. 예 `http://localhost:4503/etc/replication/agents.publish/flush.html`.
 
-### 복제 에이전트 액세스 제어 {#controlling-access-to-replication-agents}
+### 복제 에이전트에 대한 액세스 제어 {#controlling-access-to-replication-agents}
 
-복제 에이전트를 구성하는 데 사용되는 페이지에 대한 액세스는 `etc/replication` 노드의 사용자 및/또는 그룹 페이지 권한을 사용하여 제어할 수 있습니다.
+복제 에이전트를 구성하는 데 사용되는 페이지에 대한 액세스는 `etc/replication` 노드 아래에 있어야 합니다.
 
 >[!NOTE]
 >
 >이러한 권한을 설정해도 컨텐츠를 복제하는 사용자(예: 웹 사이트 콘솔 또는 사이드 킥의 사용자)에는 영향을 주지 않습니다. 복제 프레임워크는 페이지를 복제할 때 현재 사용자의 &quot;사용자 세션&quot;을 사용하여 복제 에이전트에 액세스하지 않습니다.
 
-### CRXDE Lite {#configuring-your-replication-agents-from-crxde-lite}에서 복제 에이전트 구성
+### CRXDE Lite에서 복제 에이전트 구성 {#configuring-your-replication-agents-from-crxde-lite}
 
 >[메모!]
 >
->복제 에이전트 만들기는 `/etc/replication` 저장소 위치에서만 지원됩니다. 연결된 ACL을 제대로 처리하려면 이 작업이 필요합니다. 트리의 다른 위치에 복제 에이전트를 만들면 권한 없는 액세스가 발생할 수 있습니다.
+>복제 에이전트 만들기는 `/etc/replication` 저장소 위치. 연결된 ACL을 제대로 처리하려면 이 작업이 필요합니다. 트리의 다른 위치에 복제 에이전트를 만들면 권한 없는 액세스가 발생할 수 있습니다.
 
 CRXDE Lite을 사용하여 복제 에이전트의 다양한 매개 변수를 구성할 수 있습니다.
 
-`/etc/replication`으로 이동하면 다음 세 개의 노드가 표시됩니다.
+로 이동하는 경우 `/etc/replication` 다음 세 개의 노드가 표시됩니다.
 
 * `agents.author`
 * `agents.publish`
 * `treeactivation`
 
-두 `agents` 는 해당 환경에 대한 구성 정보를 보유하며, 해당 환경이 실행 중인 경우에만 활성화됩니다. 예를 들어 `agents.publish`은 게시 환경에서만 사용됩니다. 다음 스크린샷은 AEM WCM에 포함된 작성 환경의 게시 에이전트를 보여줍니다.
+둘 `agents` 해당 환경에 대한 구성 정보를 보유하며 해당 환경이 실행 중인 경우에만 활성화됩니다. 예, `agents.publish` 게시 환경에서만 사용됩니다. 다음 스크린샷은 AEM WCM에 포함된 작성 환경의 게시 에이전트를 보여줍니다.
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -528,9 +527,9 @@ CRXDE Lite을 사용하여 복제 에이전트의 다양한 매개 변수를 구
 
 복제 에이전트를 모니터하려면
 
-1. AEM에서 **도구** 탭에 액세스합니다.
-1. **복제**&#x200B;를 클릭합니다.
-1. 해당 환경(왼쪽 또는 오른쪽 창)의 에이전트에 대한 링크를 두 번 클릭합니다.예: **작성자**&#x200B;의 에이전트.
+1. 액세스 권한 **도구** 탭에서 사용할 수 있습니다.
+1. 클릭 **복제**.
+1. 해당 환경(왼쪽 또는 오른쪽 창)의 에이전트에 대한 링크를 두 번 클릭합니다. 예 **작성자의 에이전트**.
 
    결과 창에는 대상 및 상태를 포함하여 작성 환경에 대한 모든 복제 에이전트에 대한 개요가 표시됩니다.
 
@@ -538,16 +537,16 @@ CRXDE Lite을 사용하여 복제 에이전트의 다양한 매개 변수를 구
 
    ![chlimage_1-10](assets/chlimage_1-10.jpeg)
 
-   여기에서 다음을 수행할 수 있습니다.
+   여기에서 다음과 같은 작업을 수행할 수 있습니다.
 
    * 에이전트가 활성화되어 있는지 확인합니다.
    * 복제 타겟을 확인합니다.
    * 복제 큐가 현재 활성 상태인지(활성화됨)를 확인하십시오.
    * 큐에 항목이 있는지 확인합니다.
-   * **** 대기열 항목  **** 표시를 갱신하려면 새로 고침 또는 지우기이렇게 하면 항목이 큐에 들어가 나가는 것을 볼 수 있습니다.
-   * **복제 에이전트** 의 작업 로그에 액세스하려면 로그를 봅니다.
-   * **대상** 인스턴스에 대한 연결을 테스트합니다.
-   * **필요한** 경우 큐 항목을 강제로 다시 시도합니다.
+   * **새로 고침** 또는 **지우기** 대기열 항목 표시를 갱신하려면 이렇게 하면 항목이 큐에 들어가 나가는 것을 볼 수 있습니다.
+   * **로그 보기** 복제 에이전트의 모든 작업 로그에 액세스합니다.
+   * **연결 테스트** 대상 인스턴스에 매핑해야 합니다.
+   * **강제 다시 시도** 필요한 경우 대기열 항목에 추가합니다.
 
    >[!CAUTION]
    >
@@ -570,15 +569,15 @@ CRXDE Lite을 사용하여 복제 에이전트의 다양한 매개 변수를 구
 ### 일괄 복제 구성 {#configuring-batch-replication}
 
 1. 다음으로 이동:`http://serveraddress:serverport/siteadmin`
-1. 화면 상단에 있는 **[!UICONTROL 도구]** 아이콘을 누릅니다
-1. 왼쪽 탐색 레일에서 **[!UICONTROL 복제 - 작성자]**&#x200B;의 에이전트로 이동하고 **[!UICONTROL 기본 에이전트]**&#x200B;를 두 번 클릭합니다.
-   * `http://serveraddress:serverport/etc/replication/agents.author/publish.html`(으)로 바로 이동하여 기본 게시 복제 에이전트에 연결할 수도 있습니다
-1. 복제 큐 위에 있는 **[!UICONTROL 편집]** 단추를 누릅니다.
-1. 다음 창에서 **[!UICONTROL 일괄 처리]** 탭으로 이동합니다.
+1. 누르기 **[!UICONTROL 도구]** 화면 상단의 아이콘
+1. 왼쪽 탐색 레일에서 로 이동합니다. **[!UICONTROL 복제 - 작성자의 에이전트]** 두 번 클릭 **[!UICONTROL 기본 에이전트]**.
+   * 로 바로 이동하여 기본 게시 복제 에이전트에 연결할 수도 있습니다 `http://serveraddress:serverport/etc/replication/agents.author/publish.html`
+1. 누르기 **[!UICONTROL 편집]** 복제 큐 위의 단추.
+1. 다음 창에서 **[!UICONTROL 일괄 처리]** 탭:
    ![batchreplication](assets/batchreplication.png)
 1. 에이전트를 구성합니다.
 
-### 매개 변수 {#parameters}
+### 매개변수 {#parameters}
 
 * `[!UICONTROL Enable Batch Mode]` - 배치 복제 모드를 활성화하거나 비활성화합니다.
 * `[!UICONTROL Max Wait Time]` - 일괄 처리 요청이 시작될 때까지 최대 대기 시간(초)입니다. 기본값은 2초입니다.
@@ -586,7 +585,7 @@ CRXDE Lite을 사용하여 복제 에이전트의 다양한 매개 변수를 구
 
 ## 추가 리소스 {#additional-resources}
 
-문제 해결에 대한 자세한 내용은 [복제 문제 해결](/help/sites-deploying/troubleshoot-rep.md) 페이지를 참조하십시오.
+문제 해결에 대한 자세한 내용은 [복제 문제 해결](/help/sites-deploying/troubleshoot-rep.md) 페이지.
 
 자세한 내용은 Adobe에 복제와 관련된 일련의 기술 자료 문서가 있습니다.
 

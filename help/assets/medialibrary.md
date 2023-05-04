@@ -1,14 +1,14 @@
 ---
 title: 기본 디지털 자산 관리에 Media Library 사용
-description: '"[!DNL Experience Manager Assets] 및 Media Library for asset management를 참조하십시오."'
+description: "[!DNL Experience Manager Assets] 및 Media Library for asset management를 참조하십시오."
 contentOwner: AG
 feature: Asset Management
 role: Architect,Leader
 exl-id: f0afdae4-5777-464c-9203-e9d19c6d62f6
-source-git-commit: d9cfb5376210234b3b05877509c273c52d9cecf3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 0%
+source-wordcount: '572'
+ht-degree: 1%
 
 ---
 
@@ -22,6 +22,10 @@ Define what is not included
 -->
 
 # 기본 자산 관리에 Media Library 사용 {#manage-assets-using-media-library}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 [!DNL Adobe Experience Manager] platform은 자산을 관리하는 다양한 기능을 제공합니다. Media Library을 사용하면 적은 수의 자산을 리포지토리에 업로드하고, 웹 페이지에서 해당 자산을 검색 및 사용하고, 자산에서 간단한 자산 관리 작업을 수행할 수 있습니다.
 
@@ -58,7 +62,7 @@ Media Library은 다음과 같은 사용 사례를 광범위하게 다룹니다.
 Media Library 기능을 사용하려면 기본값을 사용할 수 있습니다 [!DNL Experience Manager] 사용자 인터페이스. Media Library이 [!DNL Experience Manager Sites] 별도의 인터페이스나 추가 기능을 설치할 필요가 없습니다. 기존 인터페이스를 사용하는 Media Library 사용자는 다음 작업을 수행할 수 있습니다.
 
 * 자산을 구성할 폴더를 만듭니다.
-* 자산을 업로드합니다.
+* 에셋 업로드.
 * 자산을 게시합니다.
 * 자산 편집, 이동 및 복사.
 * 자산을 탐색, 필터링 및 검색(유사성 검색 포함).
@@ -70,7 +74,7 @@ Media Library 기능을 사용하려면 기본값을 사용할 수 있습니다 
 * 자산에 주석 달기.
 * 에 자산 추가 [!DNL Sites] Content Finder를 통해 페이지를 표시합니다.
 * 사용 [!DNL Content Fragments].
-* 에 HTTP REST 및 GraphQL API 사용 [!DNL Content Fragments] 및 참조된 미디어 자산을 사이트 라이센스에서 확인합니다.
+* 용 HTTP REST 및 GraphQL API 사용 [!DNL Content Fragments] 및 참조된 미디어 자산을 사이트 라이센스에서 확인합니다.
 * Marketing Cloud 통합.
 * 자산 관리 사용자 인터페이스를 사용자 지정하고 확장합니다.
 * Query Builder(API)에 액세스하여 검색 기능을 확장합니다.

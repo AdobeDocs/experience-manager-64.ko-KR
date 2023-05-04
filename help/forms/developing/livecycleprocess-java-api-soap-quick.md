@@ -1,8 +1,8 @@
 ---
 title: LiveCycle Process Java API(SOAP)빠른 시작
-seo-title: LiveCycle Process Java API(SOAP)빠른 시작
+seo-title: LiveCycleProcess Java API(SOAP)Quick Start
 description: LiveCycleProcess Java API(SOAP) 빠른 시작을 사용하여 프로세스 인스턴스 검색, 프로세스 인스턴스 일시 중단, 일시 중단된 프로세스 인스턴스 시작, 프로세스 인스턴스 종료, 프로세스 데이터 삭제 및 작업 상태를 검색할 수 있습니다.
-seo-description: LiveCycleProcess Java API(SOAP) 빠른 시작을 사용하여 프로세스 인스턴스 검색, 프로세스 인스턴스 일시 중단, 일시 중단된 프로세스 인스턴스 시작, 프로세스 인스턴스 종료, 프로세스 데이터 삭제 및 작업 상태를 검색할 수 있습니다.
+seo-description: Use the LiveCycleProcess Java API (SOAP) Quick Start to search for process instances, suspend process instances, start suspended process instances, terminate process instances, purge process data, and retrieve the status of a job.
 uuid: ad14fb50-8dd5-44e0-9e48-f0f0334e04d6
 contentOwner: admin
 content-type: reference
@@ -11,38 +11,42 @@ topic-tags: develop
 discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
 role: Developer
 exl-id: ee8f5f16-218a-41eb-be42-fda4537b2b4e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 0%
+source-wordcount: '464'
+ht-degree: 1%
 
 ---
 
-# LiveCycleProcess Java API(SOAP) 빠른 시작 {#livecycleprocess-java-api-soap-quick-start}
+# LiveCycle Process Java API(SOAP) 빠른 시작 {#livecycleprocess-java-api-soap-quick-start}
 
-프로세스에 Java API(SOAP) 빠른 시작 을 사용할 수 있습니다. *프로세스 인스턴스*&#x200B;는 호출 API와 같은 호출 메서드나 Workspace 내에서 시작된 특정 프로세스의 발생 항목입니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 프로세스 인스턴스 검색](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
+프로세스에 Java API(SOAP) 빠른 시작 을 사용할 수 있습니다. A *프로세스 인스턴스* 는 호출 API와 같은 호출 메서드나 작업 공간 내에서 시작된 특정 프로세스의 발생 항목입니다.
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 프로세스 인스턴스 일시 중단](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-suspending-process-instances-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 프로세스 인스턴스 검색](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 일시 중지된 프로세스 인스턴스 시작](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 프로세스 인스턴스 일시 중단](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-suspending-process-instances-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 프로세스 인스턴스 종료](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-terminating-process-instances-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 일시 중지된 프로세스 인스턴스 시작](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 프로세스 데이터 삭제](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-purging-process-data-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 프로세스 인스턴스 종료](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-terminating-process-instances-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 작업 상태 검색](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 프로세스 데이터 삭제](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-purging-process-data-using-the-java-api)
+
+[빠른 시작(SOAP 모드): Java API를 사용하여 작업 상태 검색](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
 
 AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM Forms으로 프로그래밍에 있는 빠른 시작은 Unix와 같은 다른 운영 체제를 사용하는 경우 Forms을 기반으로 하며 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로, 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. ([연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties) 참조)
+>AEM Forms으로 프로그래밍에 있는 빠른 시작은 Unix와 같은 다른 운영 체제를 사용하는 경우 Forms을 기반으로 하며 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로, 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. (자세한 내용은 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties))
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}를 사용하여 프로세스 인스턴스 검색
+## 빠른 시작(SOAP 모드): Java API를 사용하여 프로세스 인스턴스 검색 {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
-다음 Java 코드 예제에서는 *ModernizeLoan - Prebuted* 프로세스를 기반으로 하는 프로세스 인스턴스를 검색합니다.
+다음 Java 코드 예는 를 기반으로 하는 프로세스 인스턴스를 검색합니다. *모기지 대출 - 사전 작성* 프로세스.
 
 ```as3
  /* 
@@ -158,7 +162,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-suspending-process-instances-using-the-java-api}를 사용하여 프로세스 인스턴스 일시 중단
+## 빠른 시작(SOAP 모드): Java API를 사용하여 프로세스 인스턴스 일시 중단 {#quick-start-soap-mode-suspending-process-instances-using-the-java-api}
 
 다음 Java 코드 예는 프로세스 인스턴스를 일시 중지합니다. 프로세스 인스턴스를 일시 중단하려면 Invocation API를 사용하여 장기 프로세스를 호출할 때 가져올 수 있는 프로세스 호출 식별자가 필요합니다.
 
@@ -250,7 +254,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api}를 사용하여 일시 중단된 프로세스 인스턴스 시작
+## 빠른 시작(SOAP 모드): Java API를 사용하여 일시 중지된 프로세스 인스턴스 시작 {#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api}
 
 다음 Java 코드 예제에서는 일시 중단된 프로세스 인스턴스를 시작합니다.
 
@@ -338,7 +342,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}를 사용하여 프로세스 인스턴스 종료
+## 빠른 시작(SOAP 모드): Java API를 사용하여 프로세스 인스턴스 종료 {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}
 
 다음 Java 코드 예는 식별자 값이 756c22860a242fb101ec7a5bc0977fd6인 프로세스 인스턴스를 종료합니다.
 
@@ -429,9 +433,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-purging-process-data-using-the-java-api}를 사용하여 프로세스 데이터 삭제
+## 빠른 시작(SOAP 모드): Java API를 사용하여 프로세스 데이터 삭제 {#quick-start-soap-mode-purging-process-data-using-the-java-api}
 
-다음 Java 코드는 *SecureDocument*&#x200B;라는 프로세스에서 데이터를 삭제합니다. *inValue*&#x200B;라는 프로세스 변수가 200보다 큰 프로세스 인스턴스의 데이터를 제거하도록 지정하는 필터가 사용됩니다.
+다음 Java 코드는 이름이 지정된 프로세스에서 데이터를 삭제합니다 *SecureDocument*. 이름이 지정된 프로세스 변수에 대한 데이터 삭제를 지정하는 필터가 사용됩니다 *inValue* 가 200보다 큼.
 
 ```as3
  /* 
@@ -536,7 +540,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}를 사용하여 작업 상태 검색
+## 빠른 시작(SOAP 모드): Java API를 사용하여 작업 상태 검색 {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
 
 다음 코드 예제에서는 10개의 AEM Forms 작업 상태를 검색합니다.
 

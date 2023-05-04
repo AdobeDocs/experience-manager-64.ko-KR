@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: ad80505f-116e-43f1-8d93-ffe6e8b1ac46
 feature: Commerce Integration Framework
 exl-id: 614815ef-6fe3-4b06-9c56-bc9fee127825
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2912'
-ht-degree: 5%
+source-wordcount: '2948'
+ht-degree: 3%
 
 ---
 
 # 일반 eCommerce 관리{#administering-generic-ecommerce}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 AEM 일반 솔루션은 외부 전자 상거래 엔진을 사용하는 것과 대조적으로 저장소 내에 있는 상거래 정보를 관리하는 방법을 제공합니다. 여기에는 다음이 포함됩니다.
 
@@ -175,7 +179,7 @@ AEM 일반 솔루션은 외부 전자 상거래 엔진을 사용하는 것과 �
 #### 제품 정보 편집 - 터치에 적합한 UI {#editing-product-information-touch-optimized-ui}
 
 1. 사용 **제품** 콘솔(를 통해) **상거래**) 제품 정보로 이동합니다.
-1. 다음 중 하나 사용:
+1. 다음 중 하나를 사용합니다.
 
    * [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
@@ -334,7 +338,7 @@ CRXDE Lite을 사용하여 기존 패싯을 수정하거나 새 패싯을 추가
 >AEM에서는 제품 데이터에서 직접 게시가 지원됩니다.
 
 1. 사용 **제품** 콘솔(를 통해) **상거래**) 제품 정보로 이동합니다.
-1. 다음 중 하나 사용:
+1. 다음 중 하나를 사용합니다.
 
    * [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
@@ -457,9 +461,9 @@ OSGI 이벤트( `/system/console/events`) 내의 예를 들면 다음과 같습�
 
 카탈로그를 생성하려면
 
-1. [사이트] 콘솔을 엽니다(예: [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)).
+1. 사이트 콘솔을 엽니다(예: [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)).
 1. 새 페이지를 만들 위치로 이동합니다.
-1. 옵션 목록을 열려면 **만들기** 아이콘을 사용합니다.
+1. 옵션 목록을 열려면 **만들기** 아이콘:
 
    ![](do-not-localize/chlimage_1-23.png)
 
@@ -520,7 +524,7 @@ OSGI 이벤트( `/system/console/events`) 내의 예를 들면 다음과 같습�
 
 1. 로 이동합니다 **카탈로그** 콘솔, **상거래**.
 1. 롤아웃할 카탈로그로 이동합니다.
-1. 다음 중 하나 사용:
+1. 다음 중 하나를 사용합니다.
 
    * [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
@@ -598,7 +602,7 @@ OSGI 이벤트( `/system/console/events`) 내의 예를 들면 다음과 같습�
 
    을(를) 지정합니다. **프로모션 유형**, **할인 유형**, **할인 값** 및 기타 모든 필드를 필요에 따라 구성합니다.
 
-1. **확인**&#x200B;을 클릭하여 저장합니다.
+1. 클릭 **확인** 저장
 
 1. 이제 프로모션을 활성화할 수 있으므로, 구매자가 게시 인스턴스에서 판촉을 볼 수 있습니다.
 
@@ -614,7 +618,7 @@ OSGI 이벤트( `/system/console/events`) 내의 예를 들면 다음과 같습�
 1. **만들기**&#x200B;를 클릭합니다. 새 바우처 페이지가 오른쪽 창에 표시됩니다.
 
 1. 두 번 클릭하여 새 바우처 페이지를 열고 을 클릭합니다 **편집** 필요에 따라 정보를 구성합니다.
-1. **확인**&#x200B;을 클릭하여 저장합니다.
+1. 클릭 **확인** 저장
 
 1. 이제 바우처를 활성화할 수 있으므로 쇼핑객이 게시 인스턴스의 장바구니에서 사용할 수 있습니다.
 
@@ -676,7 +680,7 @@ OSGI 이벤트( `/system/console/events`) 내의 예를 들면 다음과 같습�
 #### 주문 정보 편집 - 터치에 적합한 UI {#editing-order-information-touch-optimized-ui}
 
 1. 사용 **주문** 콘솔이 순서대로 이동합니다.
-1. 다음 중 하나 사용:
+1. 다음 중 하나를 사용합니다.
 
    * [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)

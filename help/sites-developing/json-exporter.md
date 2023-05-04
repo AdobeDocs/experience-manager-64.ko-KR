@@ -10,14 +10,18 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 4c7e33ea-f2d3-4d69-b676-aeb50c610d70
 exl-id: ead4306a-6337-4dae-8839-14fada0ae0e5
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 35%
+source-wordcount: '477'
+ht-degree: 34%
 
 ---
 
 # 콘텐츠 서비스에 대한 JSON 내보내기{#json-exporter-for-content-services}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 AEM Content Services는 웹 페이지에 초점을 두지 않고 AEM에서 콘텐츠 설명 및 게재를 일반화하기 위해 디자인되었습니다.
 
@@ -79,11 +83,11 @@ AEM 내에서 선택기를 사용하여 게재를 수행합니다 `model` 및 `.
 
 ### 추가 정보 {#further-information}
 
-또한 Headless 개념 및 용어 소개가 포함되어 있는
+또한 다음 문서도 참조할 수 있습니다.
 
 * Assets HTTP API
 
-   * [자산 HTTP API](/help/assets/mac-api-assets.md)
+   * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
 * Sling 모델:
 
@@ -103,4 +107,4 @@ AEM 내에서 선택기를 사용하여 게재를 수행합니다 `model` 및 `.
 * [컨텐츠 조각으로 작성](/help/sites-authoring/content-fragments.md)
 * [구성 요소에 대해 JSON 내보내기 활성화](/help/sites-developing/json-exporter-components.md)
 
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 그리고 [컨텐츠 조각 구성 요소](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 그리고 [컨텐츠 조각 구성 요소](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)

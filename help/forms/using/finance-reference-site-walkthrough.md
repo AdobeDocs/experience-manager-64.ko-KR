@@ -9,16 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 exl-id: 17e8c644-ee17-496c-a781-a295a4796cb9
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '9201'
+source-wordcount: '9237'
 ht-degree: 0%
 
 ---
 
 # We.Finance 참조 사이트 안내 {#we-finance-reference-site-walkthrough}
 
-## 전제 조건 {#pre-requisites}
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+## 사전 요구 사항 {#pre-requisites}
 
 에 설명된 대로 참조 사이트를 설정합니다. [AEM Forms 참조 사이트 설정 및 구성](/help/forms/using/setup-reference-sites.md).
 
@@ -163,7 +167,7 @@ OSGi의 AEM Forms에서는 적응형 양식 기반 워크플로우를 구축할 
 
 다음 이미지는 신용 카드 애플리케이션을 처리하고 애플리케이션의 PDF 출력을 생성하는 AEM 워크플로우를 나타냅니다.
 
-![workflow](assets/workflow.png)
+![워크플로우](assets/workflow.png)
 
 #### 직접 보세요 {#see-it-yourself-2}
 
@@ -753,7 +757,7 @@ Frank는 가정 보험 계약 작성을 위해 서신 관리를 이용한다. �
 
 #### 직접 보세요 {#see-it-yourself-13}
 
-다음을 수행합니다.
+다음 작업을 수행합니다.
 
 1. AEM 받은 편지함으로 이동, `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html`로 로그인하고 `grios/grios` 글로리아 페르소나에 대한 사용자 이름 패스워드로 사라의 주택 보험 신청을 승인하다.
 
@@ -795,7 +799,7 @@ We.Finance 자산 관리 시나리오는 다음과 같은 모습입니다.
 
 사라 로즈는 뮤추얼 펀드에 투자할 계획이다. 그녀는 기존 We.Finance 고객이며 따라서 We.Finance 포털을 방문하여 사용 가능한 뮤추얼 펀드를 탐색합니다. 그녀는 부 관리 부서로 가서 금융 블루 칩 성장 펀드 페이지를 엽니다. 이 페이지에는 현재 및 과거 가격, 월별 실적, 섹터별 분산, 비용, 수수료, 세금 및 기금에 대한 자세한 정보가 포함된 설명서를 찾을 수 있는 링크가 포함되어 있습니다.
 
-![슬라이드1](assets/slide1.png)
+![slide1](assets/slide1.png)
 
 #### 작동 방법 {#how-it-works-17}
 

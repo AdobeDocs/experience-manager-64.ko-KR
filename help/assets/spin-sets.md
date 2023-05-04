@@ -8,14 +8,18 @@ content-type: reference
 exl-id: 47cb6d40-a5c4-4f6a-9794-bd2eddfaa7d0
 feature: Spin Sets
 role: User
-source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1923'
-ht-degree: 6%
+source-wordcount: '1959'
+ht-degree: 7%
 
 ---
 
 # 스핀 세트 {#spin-sets}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 스핀 세트는 개체를 돌려 검사하는 실제 동작을 시뮬레이션합니다. 스핀 세트를 사용하면 모든 각도에서 주요 시각적 세부 사항을 획득하여 항목을 볼 수 있습니다.
 
@@ -109,7 +113,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->스핀 세트를 자동으로 생성할 수도 있습니다 [일괄처리 집합 사전 설정](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+>You can also create spin sets automatically through [batch set presets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 >
 >배치 세트는 IPS(이미지 프로덕션 시스템)에 의해 자산 수집의 일부로 만들어지며 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
 >
@@ -119,7 +123,7 @@ ht-degree: 6%
 
 | 제한 유형 | 우수 사례 | 제한 적용 |
 | --- | --- | --- |
-| 2D 세트당 최대 행/열 수 | 세트당 12-18개 이미지 | 1000년 |
+| 2D 세트당 최대 행/열 수 | 세트당 12-18개 이미지 | 1000 |
 
 참조 - [Dynamic Media 제한 사항](/help/assets/limitations.md).
 

@@ -1,22 +1,26 @@
 ---
 title: 적응형 양식 키워드
-seo-title: 적응형 양식 키워드
+seo-title: Adaptive forms keywords
 description: 적응형 양식에서는 이러한 예약된 단어를 식별자로 사용할 수 없습니다.
-seo-description: 적응형 양식에서는 이러한 예약된 단어를 식별자로 사용할 수 없습니다.
+seo-description: You cannnot use these reserved words as identifiers in your adaptive forms.
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
-feature: 적응형 양식
+feature: Adaptive Forms
 exl-id: 45578c86-6ec8-4f9c-92d9-e2f28f989fd3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 5%
+source-wordcount: '244'
+ht-degree: 7%
 
 ---
 
 # 적응형 양식 키워드 {#adaptive-forms-keywords}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 적응형 양식 키워드는 적응형 양식에 특별한 의미가 있는 사전 정의된 예약된 식별자입니다. 적응형 양식에서는 이러한 키워드를 식별자로 사용할 수 없습니다. 다음 표에는 적응형 양식에 대해 예약된 식별자인 모든 키워드가 나열되어 있습니다.
 
@@ -78,7 +82,7 @@ ht-degree: 5%
    <td><p>하위</p> </td> 
   </tr>
   <tr>
-   <td><p>정렬 단추</p> </td> 
+   <td><p>값</p> </td> 
    <td><p>autoSaveInfo</p> </td> 
    <td><p>setAttribute</p> </td> 
   </tr>
@@ -103,7 +107,7 @@ ht-degree: 5%
    <td><p>이름</p> </td> 
   </tr>
   <tr>
-   <td><p>mandatory</p> </td> 
+   <td><p>필수</p> </td> 
    <td><p>패널</p> </td> 
    <td><p>templateId</p> </td> 
   </tr>
@@ -128,9 +132,9 @@ ht-degree: 5%
    <td><p>viewVisited</p> </td> 
   </tr>
   <tr>
-   <td><p>너비</p> </td> 
+   <td><p>폭</p> </td> 
    <td><p>buttonText</p> </td> 
-   <td><p>색인</p> </td> 
+   <td><p>index</p> </td> 
   </tr>
   <tr>
    <td><p>높이</p> </td> 
@@ -240,4 +244,4 @@ ht-degree: 5%
  </tbody>
 </table>
 
-위에 나열된 키워드 외에도 [적응형 양식 JavaScript API](https://adobe.com/go/learn_aemforms_javascript_api_63)와 유사한 이름을 사용하지 마십시오.
+위에 나열된 키워드 외에도 다음과 유사한 이름을 사용하지 마십시오 [적응형 양식 JavaScript API](https://adobe.com/go/learn_aemforms_javascript_api_63).

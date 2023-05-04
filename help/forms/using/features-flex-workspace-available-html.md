@@ -1,8 +1,8 @@
 ---
 title: AEM Forms 작업 영역에서 Flex 작업 영역의 기능을 사용할 수 없습니다
-seo-title: AEM Forms 작업 영역에서 Flex 작업 영역의 기능을 사용할 수 없습니다
+seo-title: Features of Flex workspace not available in AEM Forms workspace
 description: AEM Forms 작업 공간은 Flex 기반 작업 공간을 넘어 혁신적입니다. 기능 및 기능의 차이점을 참조하십시오.
-seo-description: AEM Forms 작업 공간은 Flex 기반 작업 공간을 넘어 혁신적입니다. 기능 및 기능의 차이점을 참조하십시오.
+seo-description: AEM Forms workspace innovates beyond Flex-based Workspace. Read about the differences in features and capabilities.
 uuid: 128729b3-2367-42e8-8159-a080595e8455
 contentOwner: robhagat
 content-type: reference
@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ef5c957a-9d5a-42be-ad85-bdca876f56bc
 exl-id: d3125110-1098-413b-ba09-50c182797d27
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 0%
+source-wordcount: '254'
+ht-degree: 3%
 
 ---
 
-# AEM Forms 작업 공간 {#features-of-flex-workspace-not-available-in-aem-forms-workspace}에서 Flex 작업 공간의 기능을 사용할 수 없습니다.
+# AEM Forms 작업 영역에서 Flex 작업 영역의 기능을 사용할 수 없습니다 {#features-of-flex-workspace-not-available-in-aem-forms-workspace}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 AEM Forms 작업 공간은 완전히 새로운 작업 공간입니다. 다음은 AEM Forms 작업 공간에서 사용할 수 없는 Flex 기반 작업 공간의 몇 가지 기능입니다.
 

@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 exl-id: dfc6a660-e6b3-4395-a555-f4cf8f3fed91
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1224'
 ht-degree: 6%
 
 ---
 
 # 성능 트리{#performance-tree}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ## 범위 {#scope}
 
@@ -254,12 +258,12 @@ ht-degree: 6%
   <tr> 
    <td><strong>34단계</strong></td> 
    <td>Dispatcher 버전 업그레이드</td> 
-   <td><p>이 위치에서 최신 Dispatcher 버전을 다운로드할 수 있습니다.</p> <p><a href="https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html">링크를 따르십시오.</a></p> </td> 
+   <td><p>이 위치에서 최신 Dispatcher 버전을 다운로드할 수 있습니다.</p> <p><a href="https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html">팔로우 링크</a></p> </td> 
   </tr> 
   <tr> 
    <td><strong>35단계</strong></td> 
    <td>Dispatcher 구성</td> 
-   <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html">Dispatcher 구성</a><br /> </td> 
+   <td><a href="https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html">Dispatcher 구성</a><br /> </td> 
   </tr> 
   <tr> 
    <td><strong>36단계</strong></td> 

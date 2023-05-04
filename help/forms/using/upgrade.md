@@ -1,8 +1,8 @@
 ---
 title: AEM 6.4 Forms로 업그레이드
-seo-title: AEM 6.4 Forms로 업그레이드
-description: 'AEM 6.1 Forms, AEM 6.2 Forms 및 LiveCycle ES4 SP1에서 AEM 6.3 Forms으로 직접 업그레이드할 수 있습니다. '
-seo-description: 'AEM 6.1 Forms, AEM 6.2 Forms 및 LiveCycle ES4 SP1에서 AEM 6.3 Forms으로 직접 업그레이드할 수 있습니다. '
+seo-title: Upgrade to AEM 6.4 Forms
+description: AEM 6.1 Forms, AEM 6.2 Forms 및 LiveCycle ES4 SP1에서 AEM 6.3 Forms으로 직접 업그레이드할 수 있습니다.
+seo-description: You can perform a direct upgrade from AEM 6.1 Forms, AEM 6.2 Forms, and LiveCycle ES4 SP1 to AEM 6.3 Forms.
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -11,16 +11,20 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 role: Admin
 exl-id: c613b54b-8768-46ef-a6f5-15bcc1642a75
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 5%
+source-wordcount: '244'
+ht-degree: 6%
 
 ---
 
 # AEM 6.4 Forms로 업그레이드{#upgrade-to-aem-forms}
 
-AEM 6.4 Forms에는 양식 및 서신에서 생성, 관리 및 사용자 경험을 간소화하는 몇 가지 새로운 기능과 개선 사항이 포함되어 있습니다. AEM 6.4 Forms의 모든 새로운 기능과 개선 사항에 대해 알아보려면 [새로운 기능 요약 문서](/help/forms/using/whats-new.md)를 참조하십시오.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+AEM 6.4 Forms에는 양식 및 서신에서 생성, 관리 및 사용자 경험을 간소화하는 몇 가지 새로운 기능과 개선 사항이 포함되어 있습니다. AEM 6.4 Forms의 새로운 기능과 개선 사항에 대해 알아보려면 [새로운 기능 요약 문서](/help/forms/using/whats-new.md).
 
 기존 LiveCycle 또는 AEM Forms 설치를 업그레이드하여 기존 데이터, 프로세스 및 자산을 그대로 유지하면서 AEM 6.4 Forms에서 제공하는 새로운 기능 및 개선 사항을 얻을 수 있습니다. 업그레이드 시 프로세스의 메타데이터 및 상태도 유지됩니다. 업그레이드를 시작할 업그레이드 경로를 선택할 수 있습니다.
 

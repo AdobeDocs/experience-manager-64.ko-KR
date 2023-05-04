@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 2dec23f7-6cca-4cc9-a78a-acd23ae7da5f
 exl-id: e03beca1-1a95-42c7-b20b-4a2d9eab4df9
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 6%
+source-wordcount: '847'
+ht-degree: 7%
 
 ---
 
 # Xcode 프로젝트를 설정하고 iOS 앱을 빌드합니다. {#set-up-the-xcode-project-and-build-the-ios-app}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 AEM Forms은 AEM Forms 앱의 전체 소스 코드를 제공합니다. 소스에는 사용자 지정 AEM Forms 앱을 빌드할 모든 구성 요소가 포함되어 있습니다. 소스 코드 아카이브, `adobe-lc-mobileworkspace-src-<version>.zip` 는 `adobe-aemfd-forms-app-src-pkg-<version>.zip` 소프트웨어 배포 패키지
 
@@ -45,7 +49,7 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
  <tbody> 
   <tr> 
    <th><p>디렉토리</p> </th> 
-   <th><p>컨텐트</p> </th> 
+   <th><p>콘텐츠</p> </th> 
   </tr> 
   <tr> 
    <td><p><code>CordovaLib</code></p> </td> 

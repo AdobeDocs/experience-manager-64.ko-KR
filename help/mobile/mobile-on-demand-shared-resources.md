@@ -1,8 +1,8 @@
 ---
 title: 공유 리소스 업로드
-seo-title: 공유 리소스 업로드
+seo-title: Uploading Shared Resources
 description: 컨텐츠 관리 작업은 애플리케이션 내에서 컨텐츠를 만들고 관리하는 데 도움이 되는 기본 구성단위입니다. 공유 리소스 업로드에 대한 자세한 내용을 보려면 이 페이지를 따르십시오.
-seo-description: 컨텐츠 관리 작업은 애플리케이션 내에서 컨텐츠를 만들고 관리하는 데 도움이 되는 기본 구성단위입니다. 공유 리소스 업로드에 대한 자세한 내용을 보려면 이 페이지를 따르십시오.
+seo-description: Content Management actions are the building blocks that help to create and manage content within an application. Follow this page to learn about uploading shared resources.
 uuid: f3595299-1279-4b94-9a49-9d1893250549
 contentOwner: User
 content-type: reference
@@ -10,43 +10,47 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 958461b0-4cbb-452b-88ea-9b98ada14750
 exl-id: 94ac30a5-6ac8-4bbf-8ea6-e10bc7db4f31
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 1%
+source-wordcount: '322'
+ht-degree: 3%
 
 ---
 
-# 공유 리소스 업로드 중 {#uploading-shared-resources}
+# 공유 리소스 업로드 {#uploading-shared-resources}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
 컨텐츠 관리 작업은 애플리케이션 내에서 컨텐츠를 만들고 관리하는 데 도움이 되는 기본 구성단위입니다. 애플리케이션 내의 컨텐츠에 대해 다음 작업이 수행됩니다.
 
 >[!NOTE]
 >
->AEM Mobile 앱의 디자인 고려 사항에 대해 자세히 알려면 온라인 도움말에서 [AEM Mobile 앱용 디자인 고려 사항](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)을 참조하십시오.
+>AEM Mobile 앱의 디자인 고려 사항에 대한 자세한 내용은 [AEM Mobile 앱을 위한 디자인 고려 사항](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) 을 참조하십시오.
 
 >[!CAUTION]
 >
 >먼저 Mobile On-Demand 연결을 연결해야 합니다.
 
-## 공유 리소스 업로드 중 {#uploading-shared-resources-1}
+## 공유 리소스 업로드 {#uploading-shared-resources-1}
 
 일반적으로 문서와 같은 컨텐츠는 모든 작성자 및 심지어 앱에서 동일한 모양과 느낌을 가져야 합니다. 따라서 모든 사용자가 스크립트, css 및 글꼴을 사용할 수 있도록 하는 것이 중요합니다. 이 작업은 이러한 공유 리소스를 Mobile On-Demand로 전송하여 필요에 따라 사용할 수 있습니다.
 
-앱을 구성하고 클라우드 구성에 연결하면 공유 리소스를 업로드할 수 있습니다. 앱을 클라우드 구성에 연결하는 자세한 단계를 보려면 여기](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md)를 클릭하십시오.[
+앱을 구성하고 클라우드 구성에 연결하면 공유 리소스를 업로드할 수 있습니다. 앱을 클라우드 구성에 연결하는 자세한 단계를 보려면 [여기](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md).
 
 >[!NOTE]
 >
->공유 리소스는 ContentSync를 사용하여 모든 다른 리소스를 수집합니다. 자세한 내용은 [Mobile with ContentSync](/help/mobile/mobile-ondemand-contentsync.md) 를 참조하십시오.
+>공유 리소스는 ContentSync를 사용하여 모든 다른 리소스를 수집합니다. 자세한 내용은 [ContentSync를 통한 모바일](/help/mobile/mobile-ondemand-contentsync.md) 자세한 내용
 
 문서에 대한 공유 리소스를 업로드하려면 다음 단계를 따르십시오.
 
-1. **문서 관리** 타일에서 문서를 선택합니다.
-1. **공유 리소스 업로드**&#x200B;를 클릭하여 공유 HTML 리소스를 업로드합니다.
+1. 문서 선택 위치 **문서 관리** 타일.
+1. 클릭 **공유 리소스 업로드** 공유 HTML 리소스를 업로드하려면 다음을 수행하십시오.
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 

@@ -1,31 +1,35 @@
 ---
 title: 적응형 양식 구성 요소의 인라인 스타일
-seo-title: 적응형 양식 구성 요소에 대한 인라인 CSS 속성
+seo-title: Inline CSS properties for adaptive form components
 description: 적응형 양식에 사용자 지정 스타일을 적용할 수 있지만 적응형 양식의 개별 구성 요소에 인라인 CSS 속성을 적용할 수도 있습니다.
-seo-description: 적응형 양식에 사용자 지정 스타일을 적용할 수 있지만 적응형 양식의 개별 구성 요소에 인라인 CSS 속성을 적용할 수도 있습니다.
+seo-description: While you can apply custom styles on an adaptive form, you can also apply inline CSS properties on individual components of an adaptive form.
 uuid: ab948f02-3b41-4304-955b-6dd51d27088e
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 91a41bc1-3fa3-4467-b3f8-5570ba7757c0
-feature: 적응형 양식
+feature: Adaptive Forms
 exl-id: 8e7ba9d2-207f-419b-bcd5-74ba9b14ab92
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 3%
+source-wordcount: '562'
+ht-degree: 4%
 
 ---
 
 # 적응형 양식 구성 요소의 인라인 스타일 {#inline-styling-of-adaptive-form-components}
 
-[테마 편집기](/help/forms/using/themes.md)를 사용하여 스타일을 지정하여 적응형 양식의 전체 모양과 스타일을 정의할 수 있습니다. 또한 개별 적응형 양식 구성 요소에 인라인 CSS 스타일을 적용하고 변경 사항을 즉시 미리 볼 수 있습니다. 인라인 스타일은 테마에 제공된 스타일을 재정의합니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
-## 인라인 CSS 속성 {#apply-inline-css-properties} 적용
+스타일을 사용하여 지정하여 적응형 양식의 전체 모양과 스타일을 정의할 수 있습니다 [테마 편집기](/help/forms/using/themes.md). 또한 개별 적응형 양식 구성 요소에 인라인 CSS 스타일을 적용하고 변경 사항을 즉시 미리 볼 수 있습니다. 인라인 스타일은 테마에 제공된 스타일을 재정의합니다.
+
+## 인라인 CSS 속성 적용 {#apply-inline-css-properties}
 
 구성 요소에 인라인 스타일을 추가하려면 다음을 수행하십시오.
 
-1. 양식 편집기에서 양식을 열고 모드를 스타일 지정 모드로 변경합니다. 모드를 스타일 지정 모드로 변경하려면 페이지 도구 모음에서 ![canvas-drop-down](assets/canvas-drop-down.png) > **스타일**&#x200B;을 누릅니다.
-1. 페이지에서 구성 요소를 선택하고 편집 단추 ![edit-button](assets/edit-button.png)을 누릅니다. 사이드바에서 열리는 스타일 지정 속성입니다.
+1. 양식 편집기에서 양식을 열고 모드를 스타일 지정 모드로 변경합니다. 모드를 스타일 지정 모드로 변경하려면 페이지 도구 모음에서 를 누릅니다 ![캔버스 드롭다운](assets/canvas-drop-down.png) > **스타일**.
+1. 페이지에서 구성 요소를 선택하고 편집 단추를 누릅니다 ![편집 단추](assets/edit-button.png). 사이드바에서 열리는 스타일 지정 속성입니다.
 
    사이드바의 양식 계층 트리에서 구성 요소를 선택할 수도 있습니다. 양식 계층 트리는 사이드바의 양식 개체로 사용할 수 있습니다.
 
@@ -43,9 +47,9 @@ ht-degree: 3%
    * 고급(구성 요소에 대한 사용자 지정 CSS를 작성할 수 있음)
 
 1. 마찬가지로 위젯, 캡션 및 도움말과 같은 구성 요소의 다른 부분에 스타일을 적용할 수 있습니다.
-1. **완료**&#x200B;를 눌러 변경 사항을 확인하거나 **취소**&#x200B;를 눌러 변경 내용을 취소합니다.
+1. 탭 **완료** 변경 사항을 확인하려면 **취소** 변경 사항을 취소하려면
 
-## 예:필드 구성 요소 {#example-inline-styles-for-a-field-component} 의 인라인 스타일
+## 예: 필드 구성 요소의 인라인 스타일 {#example-inline-styles-for-a-field-component}
 
 다음 이미지는 인라인 스타일이 적용되기 전후의 텍스트 필드를 나타냅니다.
 
@@ -73,7 +77,7 @@ ht-degree: 3%
    <td><p>텍스트 상자</p> </td> 
    <td><p>background-color</p> </td> 
    <td><p>#6495ED</p> </td> 
-   <td><p>배경색을 CornflowerBlue(#6495ED)으로 변경합니다</p> <p>참고:값 필드에 색상 이름 또는 16진수 코드를 지정할 수 있습니다.</p> </td> 
+   <td><p>배경색을 CornflowerBlue(#6495ED)으로 변경합니다</p> <p>참고: 값 필드에 색상 이름 또는 16진수 코드를 지정할 수 있습니다.</p> </td> 
   </tr> 
   <tr> 
    <td><p>레이블</p> </td> 
@@ -96,8 +100,8 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-![인라인 스타일 적용 후 텍스트 상자 ](assets/applied-style.png)
-**스타일 적용 그림:** *인라인 스타일 속성을 적용한 후 텍스트 상자 구성 요소*
+![인라인 스타일이 적용된 후 텍스트 상자 스타일](assets/applied-style.png)
+**그림:** *인라인 스타일 속성을 적용한 후 텍스트 상자 구성 요소*
 
 위의 단계에 따라 패널, 제출 단추 및 라디오 단추와 같은 기타 구성 요소를 선택하고 스타일을 지정할 수 있습니다.
 

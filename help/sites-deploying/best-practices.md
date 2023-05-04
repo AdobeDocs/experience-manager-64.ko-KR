@@ -1,8 +1,8 @@
 ---
 title: 배포 우수 사례
-seo-title: 배포 우수 사례
+seo-title: Deploying Best Practices
 description: 배포 및 유지 관리 우수 사례
-seo-description: 배포 및 유지 관리 우수 사례
+seo-description: Deploying and maintaining best practices.
 uuid: 4546ed2c-43d5-40f3-874f-567b324e78c2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,16 +10,20 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 4b5c0677-c630-4fae-867e-4f4583ac8507
 exl-id: 0c8fefb5-6fa0-4fab-a890-9f5ae7508459
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 15%
+source-wordcount: '466'
+ht-degree: 10%
 
 ---
 
 # 배포 우수 사례{#deploying-best-practices}
 
-배포 우수 사례에서는 가능한 가장 효율적이고 효과적인 방법으로 AEM을 배포하거나 유지 관리하는 방법을 설명합니다. 계속 증가하고 있는 주제 목록에는 AEM의 다양한 영역이 포함되어 있습니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+배포 우수 사례에서는 가능한 가장 효율적이고 효과적인 방법으로 AEM을 배포하거나 유지 관리하는 방법을 설명합니다. 이러한 증가하고 있는 주제 목록에는 AEM의 다양한 영역이 포함되어 있습니다.
 
 다음 영역에는 우수 사례 및 권장 사항 배포 및 유지 관리에 사용할 수 있는 설명서가 있습니다.
 
@@ -34,11 +38,11 @@ ht-degree: 15%
 * [개발 우수 사례](/help/sites-developing/best-practices.md)
 * [작성 우수 사례](/help/sites-authoring/best-practices.md)
 
-관련된 구체적인 문서에 대한 설명과 링크는 다음 표에 나와 있습니다.
+특정 문서는 다음에 나오는 표에 설명되고 연결됩니다.
 
 ## OAK {#oak}
 
-[](/help/sites-deploying/platform.md) Oak는 AEM의 기반이 되는 확장 가능하고 성능 계층적 컨텐츠 리포지토리입니다.
+[Oak](/help/sites-deploying/platform.md) 는 AEM의 기반이 되는 확장 가능하고 성능 계층 컨텐츠 저장소입니다.
 
 <table> 
  <tbody>
@@ -74,9 +78,9 @@ ht-degree: 15%
 
 AEM Communities은 온-프레미스 커뮤니티의 생성 및 관리를 단순화합니다. AEM Communities에 대한 모범 사례는 다음과 같습니다.
 
-[커뮤니티 콘텐츠 저장소](/help/communities/working-with-srp.md)  - 사용자 생성 콘텐츠(UGC)에 대한 새로운 공유 저장소 기능과 기본  [토폴로지 선택에 대한 고려 사항에 대해 ](/help/communities/topologies.md)설명합니다.
+[커뮤니티 콘텐츠 저장소](/help/communities/working-with-srp.md) - 사용자가 생성한 컨텐츠(UGC)를 위한 새로운 공유 스토리지 기능 및 기본 스토리지 선택을 위한 고려 사항에 대해 설명합니다. [토폴로지](/help/communities/topologies.md).
 
-[커뮤니티에 대한 권장 배포](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities)  - 커뮤니티에 대한 권장 배포에 대해 설명합니다. |
+[커뮤니티에 대한 권장 배포](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Communities에 대한 권장 배포에 대해 설명합니다. |
 
 ## UI {#ui}
 
@@ -84,7 +88,7 @@ AEM Communities은 온-프레미스 커뮤니티의 생성 및 관리를 단순�
 
 [고객을 위한 사용자 인터페이스 Recommendations](/help/sites-deploying/ui-recommendations.md)
 
-AEM에는 현재 두 개의 UI가 있습니다.클래식 및 터치에 적합한 UI를 동일한 릴리스에서 사용할 수 있습니다. 따라서 고객은 프로젝트 구현 중에 사용할 항목을 결정해야 합니다. 이 문서는 올바른 선택을 찾는 데 도움이 되기 위한 것입니다.
+AEM에는 현재 두 개의 UI가 있습니다. 클래식 및 터치에 적합한 UI를 동일한 릴리스에서 사용할 수 있습니다. 따라서 고객은 프로젝트 구현 중에 사용할 항목을 결정해야 합니다. 이 문서는 올바른 선택을 찾는 데 도움이 되기 위한 것입니다.
 
 ## 공연 {#performance}
 
@@ -95,12 +99,12 @@ AEM에는 현재 두 개의 UI가 있습니다.클래식 및 터치에 적합한
   <tr>
    <td>품질 보증 우수 사례</td> 
    <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">품질 보증 우수 사례</a></td> 
-   <td><em>publish</em> 환경의 성능 테스트를 위해 특별히 테스트 개념 정의와 관련된 문제에 대한 표준화된 개요입니다. QA 엔지니어, 프로젝트 관리자 및 시스템 관리자에게 주로 관심이 있습니다.</td> 
+   <td>Analytics에서 성능 테스트를 위해 특별히 테스트 개념을 정의하는 것과 관련된 문제에 대한 표준화된 개요입니다. <em>게시</em> 환경. QA 엔지니어, 프로젝트 관리자 및 시스템 관리자에게 주로 관심이 있습니다.</td> 
   </tr>
   <tr>
    <td>CDN에 Dispatcher 사용</td> 
    <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">CDN에 Dispatcher 사용</a></td> 
-   <td>Akamai Edge Delivery 또는 Amazon Cloud Front와 같은 CDN(콘텐츠 전달 네트워크)은 최종 사용자에게 가까운 위치에서 콘텐츠를 제공합니다.</td> 
+   <td>Akamai Edge Delivery 또는 Amazon Cloud Front와 같은 CDN(콘텐츠 게재 네트워크)은 최종 사용자에게 가까운 위치에서 콘텐츠를 제공합니다.</td> 
   </tr>
   <tr>
    <td>성능 최적화</td> 

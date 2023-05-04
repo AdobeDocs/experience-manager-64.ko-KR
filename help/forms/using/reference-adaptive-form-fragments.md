@@ -1,25 +1,29 @@
 ---
 title: 적응형 양식 조각 참조
 seo-title: Reference adaptive form fragments
-description: 'AEM Forms은 양식을 빠르게 만들기 위해 자산으로 사용할 수 있는 적응형 양식 조각을 제공합니다. '
+description: AEM Forms은 양식을 빠르게 만들기 위해 자산으로 사용할 수 있는 적응형 양식 조각을 제공합니다.
 seo-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly.
 uuid: af3ab863-e895-4fac-84f4-0a77a66f5094
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 43dc10c2-8cfc-4ca3-8ccb-9b3f268663b7
 exl-id: cceea4d1-8fc2-4118-b22e-91f27e69c7e4
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 1%
+source-wordcount: '450'
+ht-degree: 2%
 
 ---
 
 # 적응형 양식 조각 참조 {#reference-adaptive-form-fragments}
 
-[적응형 양식 ](/help/forms/using/adaptive-form-fragments.md) 조각은 필드 그룹이나 양식을 만들 때 사용할 수 있는 필드 그룹이 포함된 패널을 나타냅니다. 양식을 쉽고 빠르게 만들 수 있습니다. 사이드바의 자산 브라우저를 사용하여 적응형 양식 조각을 양식으로 드래그 드롭할 수 있으며 양식 편집기에서 편집할 수 있습니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
-적응형 양식 작성자의 경우 참조 조각이 [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)에 제공됩니다. 여기에는 다음 조각이 포함됩니다.
+[적응형 양식 조각](/help/forms/using/adaptive-form-fragments.md) 는 필드 그룹이나 양식을 만들 때 사용할 수 있는 필드 그룹이 들어 있는 패널입니다. 양식을 쉽고 빠르게 만들 수 있습니다. 사이드바의 자산 브라우저를 사용하여 적응형 양식 조각을 양식으로 드래그 드롭할 수 있으며 양식 편집기에서 편집할 수 있습니다.
+
+적응형 양식 작성자의 경우 참조 조각은 [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). 여기에는 다음 조각이 포함됩니다.
 
 * 주소
 * 연락처 정보
@@ -32,7 +36,7 @@ ht-degree: 1%
 * 약관
 * 스크리블 사용 약관
 
-패키지를 설치하면 참조 조각이 포함된 참조 조각 폴더가 Forms 및 문서 아래에 생성됩니다. 패키지 설치에 대해서는 [패키지 작업 방법](/help/sites-administering/package-manager.md)을 참조하십시오.
+패키지를 설치하면 참조 조각이 포함된 참조 조각 폴더가 Forms 및 문서 아래에 생성됩니다. 패키지 설치에 대한 내용은 [패키지 작업 방법](/help/sites-administering/package-manager.md).
 
 ![나열된 모든 조각](assets/ootb-frags.png)
 

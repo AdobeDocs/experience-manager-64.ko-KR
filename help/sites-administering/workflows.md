@@ -1,8 +1,8 @@
 ---
-title: 워크플로우 관리
-seo-title: 워크플로우 관리
+title: 워크플로 관리
+seo-title: Administering Workflows
 description: AEM에서 워크플로우를 관리하는 방법을 알아봅니다.
-seo-description: AEM에서 워크플로우를 관리하는 방법을 알아봅니다.
+seo-description: Learn how to administer workflows in AEM.
 uuid: d000a13c-97cb-4b1b-809e-6c3eb0d675e8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,45 +10,47 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
 exl-id: e57b7a69-6e25-4066-ad7a-917969cebbe8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 2%
+source-wordcount: '800'
+ht-degree: 3%
 
 ---
 
-# 워크플로우 관리{#administering-workflows}
+# 워크플로 관리{#administering-workflows}
 
-워크플로우를 통해 Adobe Experience Manager(AEM) 활동을 자동화할 수 있습니다. 워크플로우:
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+워크플로우를 통해 Adobe Experience Manager(AEM) 활동을 자동화할 수 있습니다. 워크플로:
 
 * 특정 순서로 실행되는 일련의 단계로 구성됩니다.
 
-   * 각 단계에서는 개별 활동을 수행합니다.사용자 입력 대기, 페이지 활성화 또는 이메일 메시지 보내기 등의 작업을 수행할 수 있습니다.
+   * 각 단계에서는 개별 활동을 수행합니다. 사용자 입력 대기, 페이지 활성화 또는 이메일 메시지 보내기 등의 작업을 수행할 수 있습니다.
 
 * 저장소, 사용자 계정 및 AEM 서비스의 자산과 상호 작용할 수 있습니다.
 * AEM의 모든 측면을 포함하는 복잡한 활동을 조정할 수 있습니다.
 
 조직에서 설정한 비즈니스 프로세스는 워크플로우로 표시될 수 있습니다. 예를 들어, 웹 사이트 컨텐츠를 게시하는 프로세스에는 일반적으로 다양한 관련자의 승인 및 로그오프와 같은 단계가 포함됩니다. 이러한 프로세스는 AEM 워크플로우로 구현하고 콘텐츠 페이지 및 자산에 적용할 수 있습니다.
 
-* [워크플로우 시작](/help/sites-administering/workflows-starting.md)
-* [워크플로우 인스턴스 관리](/help/sites-administering/workflows-administering.md)
-* [워크플로우에 대한 액세스 관리](/help/sites-administering/workflows-managing.md)
+* [워크플로 시작](/help/sites-administering/workflows-starting.md)
+* [워크플로 인스턴스 관리](/help/sites-administering/workflows-administering.md)
+* [워크플로에 대한 액세스 관리](/help/sites-administering/workflows-managing.md)
 
 >[!NOTE]
 >
 >자세한 내용은 다음을 참조하십시오.
 >
->* 워크플로우에 적용 및 참여:[워크플로우 작업](/help/sites-authoring/workflows.md)
->* 워크플로우 모델 만들기 및 워크플로우 기능 확장:[워크플로우 개발 및 확장](/help/sites-developing/workflows.md)
->* 중요한 서버 리소스를 사용하는 워크플로우의 성능 개선:[동시 워크플로 처리](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing)
-
+>* 워크플로우에 적용 및 참여: [워크플로우 작업](/help/sites-authoring/workflows.md).
+>* 워크플로우 모델 만들기 및 워크플로우 기능 확장: [워크플로우 개발 및 확장](/help/sites-developing/workflows.md).
+>* 중요한 서버 리소스를 사용하는 워크플로우의 성능 개선: [동시 워크플로우 처리](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
 >
-
 
 
 ## 워크플로우 모델 및 인스턴스 {#workflow-models-and-instances}
 
-[AEM](/help/sites-developing/workflows.md#model) 의 워크플로우 모델은 비즈니스 프로세스를 나타내고 구현합니다.
+[워크플로우 모델](/help/sites-developing/workflows.md#model) AEM에서 는 비즈니스 프로세스를 표시하고 구현하는 것입니다.
 
 * 일반적으로 페이지나 자산에서 움직여서 특정 결과를 얻습니다.
 * 이러한 페이지 및/또는 자산을 워크플로우 페이로드라고 합니다.
@@ -59,7 +61,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->수행되는 단계는 인스턴스가 생성되는 시점에 워크플로우 모델 *에 의해 정의된 단계입니다.* 자세한 내용은 [워크플로우 개발](/help/sites-developing/workflows.md#model)을 참조하십시오.
+>수행되는 단계는 워크플로우 모델에 정의된 단계입니다 *인스턴스가 생성될 때*. 자세한 내용은 [워크플로우 개발](/help/sites-developing/workflows.md#model) 자세한 내용
 
 워크플로우 인스턴스는 다음 라이프사이클을 통해 진행됩니다.
 
@@ -93,19 +95,19 @@ ht-degree: 2%
 
 워크플로우에는 다음 상태 중 하나가 있을 수 있습니다.
 
-* **실행** 중:워크플로우 인스턴스가 실행 중입니다.
-* **완료됨**:워크플로 인스턴스가 종료되었습니다.
+* **실행 중**: 워크플로우 인스턴스가 실행 중입니다.
+* **완료됨**: 워크플로 인스턴스가 종료되었습니다.
 
-* **일시 중단**:워크플로 인스턴스가 일시 중지되었습니다.
-* **중단됨**:워크플로 인스턴스가 종료되었습니다.
-* **부실**:워크플로 인스턴스의 진행에서는 백그라운드 작업이 실행되어야 하지만 시스템에서 작업을 찾을 수 없습니다. 이 문제는 워크플로우를 실행할 때 오류가 발생할 수 있습니다.
+* **일시 중단됨**: 워크플로 인스턴스가 일시 중지되었습니다.
+* **중단됨**: 워크플로 인스턴스가 종료되었습니다.
+* **부실**: 워크플로 인스턴스의 진행에서는 백그라운드 작업이 실행되어야 하지만 시스템에서 작업을 찾을 수 없습니다. 이 문제는 워크플로우를 실행할 때 오류가 발생할 수 있습니다.
 
 >[!NOTE]
 >
->프로세스 단계를 실행하면 오류가 발생하면 관리자의 받은 편지함에 단계가 나타나고 워크플로우 상태는 **RUNNING**&#x200B;입니다.
+>프로세스 단계를 실행하면 오류가 발생하면 관리자의 받은 편지함에 단계가 나타나고 워크플로우 상태는 다음과 같습니다 **실행 중**.
 
 현재 상태에 따라 워크플로우 인스턴스의 일반 진행에 개입해야 하는 경우 워크플로우 인스턴스 실행 작업을 수행할 수 있습니다.
 
-* **일시 중단**:워크플로우의 실행을 일시적으로 중지합니다. 일시 중단은 예를 들어 유지 관리를 위해 워크플로우를 진행하지 않으려는 특별한 경우에 유용합니다. 일시 중단하면 워크플로우 상태가 일시 중단됨으로 변경됩니다.
-* **다시 시작**:동일한 구성을 사용하여 일시 중지된 실행 시점에 일시 중지된 워크플로우를 다시 시작합니다.
-* **종료**:워크플로우 실행을 종료하고 상태를 ABORTED로  **변경합니다**. 중단된 워크플로 인스턴스를 다시 시작할 수 없습니다.
+* **일시 중단**: 워크플로우의 실행을 일시적으로 중지합니다. 일시 중단은 예를 들어 유지 관리를 위해 워크플로우를 진행하지 않으려는 특별한 경우에 유용합니다. 일시 중단하면 워크플로우 상태가 일시 중단됨으로 변경됩니다.
+* **다시 시작**: 동일한 구성을 사용하여 일시 중지된 실행 시점에 일시 중지된 워크플로우를 다시 시작합니다.
+* **종료**: 워크플로우 실행을 종료하고 상태를 로 변경합니다. **중단됨**. 중단된 워크플로 인스턴스를 다시 시작할 수 없습니다.

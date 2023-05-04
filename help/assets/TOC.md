@@ -6,10 +6,11 @@ audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 자산을 생성, 관리, 게재 및 최적화합니다.
-source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
+hide: true
+source-git-commit: b61797a9096c0473658d6aabfb584a53e42095b7
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 67%
+ht-degree: 64%
 
 ---
 
@@ -102,7 +103,7 @@ ht-degree: 67%
    + [자산 마이그레이션 안내서](assets-migration-guide.md)
    + [XMP 메타데이터](xmp.md)
    + [자산 네트워크 고려사항](assets-network-considerations.md)
-   + [AEM Assets와 AEM MediaLibrary](medialibrary.md)
+   + [AEM Assets과 AEM MediaLibrary 비교](medialibrary.md)
    + [PDF 래스터라이저 사용](aem-pdf-rasterizer.md)
    + [자산 업로드 제한 구성](configuring-asset-upload-restrictions.md)
    + [AEM 및 Creative Cloud 통합 우수 사례](aem-cc-integration-best-practices.md)
@@ -120,7 +121,7 @@ ht-degree: 67%
    + [IPTC 메타데이터 지원](iptc-support.md)
    + [메타데이터 스키마](metadata-schemas.md)
    + [컬렉션, 코드 조각 및 코드 조각 템플릿에 대한 다중 임차인](multi-tenancy.md)
-   + [원본에 쓰기](watermarking.md)
+   + [워터마크](watermarking.md)
    + [벌크 메타데이터 가져오기 및 내보내기](metadata-import-export.md)
    + [자산 템플릿](asset-templates.md)
    + [AEM에서 Creative Cloud로의 폴더 공유 우수 사례](aem-cc-folder-sharing-best-practices.md)
@@ -142,7 +143,7 @@ ht-degree: 67%
    + [컨텐츠 조각 - Markdown](content-fragments-markdown.md)
    + [컨텐츠 조각에 대한 번역 프로젝트 만들기](creating-translation-projects-for-content-fragments.md)
 + 자산 관리 {#managing}
-   + [터치에 적합한 UI로 자산 관리](managing-assets-touch-ui.md)
+   + [터치에 적합한 UI를 사용하여 자산 관리](managing-assets-touch-ui.md)
    + [여러 자산 및 컬렉션 관리](managing-multiple-assets.md)
    + [자산 선택기](asset-selector.md)
    + [컬렉션 관리](managing-collections-touch-ui.md)

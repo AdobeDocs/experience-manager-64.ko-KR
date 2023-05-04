@@ -1,8 +1,8 @@
 ---
 title: 시작 콘솔 사용자 지정(클래식 UI)
-seo-title: 시작 콘솔 사용자 지정(클래식 UI)
+seo-title: Customizing the Welcome Console (Classic UI)
 description: 시작 콘솔에서는 AEM 내의 다양한 콘솔 및 기능에 대한 링크 목록을 제공합니다
-seo-description: 시작 콘솔에서는 AEM 내의 다양한 콘솔 및 기능에 대한 링크 목록을 제공합니다
+seo-description: The Welcome console provides a list of links to the various consoles and functionality within AEM
 uuid: 4ef20cef-2d7a-417d-b36b-ed4fa56cd511
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 2e408acb-3802-4837-8619-688cfc3abfa7
 exl-id: 11b791f6-b14f-4f50-a64a-27a9501adeb7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 13%
+source-wordcount: '500'
+ht-degree: 11%
 
 ---
 
@@ -21,9 +21,13 @@ ht-degree: 13%
 
 >[!CAUTION]
 >
->이 페이지에서는 기존 UI에 대해 다룹니다.
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+>[!CAUTION]
 >
->표준 터치 지원 UI에 대한 자세한 내용은 [콘솔 사용자 지정](/help/sites-developing/customizing-consoles-touch.md)을 참조하십시오.
+>이 페이지에서는 클래식 UI를 다룹니다.
+>
+>자세한 내용은 [콘솔 사용자 지정](/help/sites-developing/customizing-consoles-touch.md) 표준 터치 지원 UI에 대한 자세한 내용은.
 
 시작 콘솔에서는 AEM 내의 다양한 콘솔 및 기능에 대한 링크 목록을 제공합니다.
 
@@ -31,8 +35,8 @@ ht-degree: 13%
 
 표시되는 링크를 구성할 수 있습니다. 특정 사용자 및/또는 그룹에 대해 정의할 수 있습니다. 수행할 작업은 대상 유형(해당 작업이 있는 콘솔의 섹션과 상관 관계가 있음)에 따라 달라집니다.
 
-* [기본 콘솔](#links-in-main-console-left-pane)  - 기본 콘솔의 링크(왼쪽 창)
-* [리소스, 설명서 및 참조, 기능](#links-in-sidebar-right-pane)  - 사이드바의 링크(오른쪽 창)
+* [기본 콘솔](#links-in-main-console-left-pane) - 기본 콘솔의 링크(왼쪽 창)
+* [리소스, 설명서 및 참조, 기능](#links-in-sidebar-right-pane) - 사이드바의 링크(오른쪽 창)
 
 ## 기본 콘솔의 링크(왼쪽 창) {#links-in-main-console-left-pane}
 
@@ -46,7 +50,7 @@ ht-degree: 13%
 
 * **웹 사이트:** `/libs/wcm/core/content/siteadmin`
 
-* **디지털 에셋:** `/libs/wcm/core/content/damadmin`
+* **디지털 자산:** `/libs/wcm/core/content/damadmin`
 
 * **커뮤니티:** `/libs/collab/core/content/admin`
 
@@ -62,17 +66,17 @@ ht-degree: 13%
 
 예:
 
-* **도구**&#x200B;에 대한 액세스를 제한하려면
+* 에 대한 액세스를 제한하려면 **도구**&#x200B;에서 읽기 액세스 권한을 제거합니다.
 
    `/libs/wcm/core/content/misc`
 
-원하는 권한을 설정하는 방법에 대한 자세한 내용은 [보안 섹션](/help/sites-administering/security.md)을 참조하십시오.
+자세한 내용은 [보안 섹션](/help/sites-administering/security.md) 를 참조하십시오.
 
 ### 사이드바의 링크(오른쪽 창) {#links-in-sidebar-right-pane}
 
 ![cq_welcomeescreensidebar](assets/cq_welcomescreensidebar.png)
 
-이러한 링크는 다음 경로 아래의 노드에 대한 읽기 액세스 권한(*및*&#x200B;이 있는지 여부에 따라 다릅니다.
+이러한 링크는 *및* 다음 경로 아래의 노드에 대한 읽기 액세스 권한:
 
 `/libs/cq/core/content/welcome`
 
@@ -89,7 +93,7 @@ ht-degree: 13%
    <td><code>/libs/cq/core/content/welcome/resources/cloudservices</code></td> 
   </tr> 
   <tr> 
-   <td> 워크플로우</td> 
+   <td> 워크플로</td> 
    <td><code>/libs/cq/core/content/welcome/resources/workflows</code></td> 
   </tr> 
   <tr> 
@@ -177,38 +181,36 @@ ht-degree: 13%
 
 예:
 
-* **Reports**&#x200B;에 대한 링크를 제거하려면
+* 링크를 제거하려면 **보고서**&#x200B;에서 읽기 액세스 권한을 제거합니다.
 
    `/libs/cq/core/content/welcome/resources/reports`
 
-* **패키지**&#x200B;에 대한 링크를 제거하려면
+* 링크를 제거하려면 **패키지**&#x200B;에서 읽기 액세스 권한을 제거합니다.
 
    `/libs/cq/core/content/welcome/features/packages`
 
-원하는 권한을 설정하는 방법에 대한 자세한 내용은 [보안 섹션](/help/sites-administering/security.md)을 참조하십시오.
+자세한 내용은 [보안 섹션](/help/sites-administering/security.md) 를 참조하십시오.
 
 ### 링크 선택 메커니즘 {#link-selection-mechanism}
 
-`/libs/cq/core/components/welcome/welcome.jsp`에서는 속성이 있는 노드에서 쿼리를 실행하는 [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html)로 구성됩니다.
+in `/libs/cq/core/components/welcome/welcome.jsp` 사용 [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html): 속성이 있는 노드에 대해 쿼리를 실행합니다.
 
-* `jcr:mixinTypes` 값 사용:  `cq:Console`
+* `jcr:mixinTypes` 값 사용: `cq:Console`
 
 >[!NOTE]
 >
 >다음 쿼리를 실행하여 기존 목록을 확인합니다.
 >
 >* `select * from cq:Console`
-
 >
 
 
-
-사용자 또는 그룹에 mixin `cq:Console`이 있는 노드에 대한 읽기 권한이 없는 경우, 해당 노드는 `ConsoleUtil` 검색으로 검색되지 않으므로 콘솔에 나열되지 않습니다.
+사용자 또는 그룹에 mixin이 있는 노드에 대한 읽기 권한이 없는 경우 `cq:Console`로 설정되면 해당 노드는 `ConsoleUtil` 검색하므로 콘솔에 나열되지 않습니다.
 
 ### 사용자 지정 항목 추가 {#adding-a-custom-item}
 
-[링크 선택 메커니즘](#link-selection-mechanism)을 사용하여 자신의 사용자 지정 항목을 링크 목록에 추가할 수 있습니다.
+다음 [링크 선택 메커니즘](#link-selection-mechanism) 링크 목록에 사용자 지정 항목을 추가하는 데 사용할 수 있습니다.
 
-위젯 또는 리소스에 `cq:Console` mixin을 추가하여 사용자 지정 항목을 목록에 추가합니다. 이 작업은 속성을 정의하여 수행됩니다.
+을(를) 추가하여 목록에 사용자 지정 항목을 추가합니다. `cq:Console` 위젯 또는 리소스에 혼합합니다. 이 작업은 속성을 정의하여 수행됩니다.
 
-* `jcr:mixinTypes` 값 사용:  `cq:Console`
+* `jcr:mixinTypes` 값 사용: `cq:Console`

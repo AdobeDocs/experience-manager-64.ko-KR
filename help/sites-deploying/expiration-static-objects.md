@@ -1,24 +1,28 @@
 ---
 title: 정적 개체 만료
-seo-title: 정적 개체 만료
+seo-title: Expiration of Static Objects
 description: 정적 개체가 적절한 기간 동안 만료되지 않도록 AEM을 구성하는 방법을 알아봅니다.
-seo-description: 정적 개체가 적절한 기간 동안 만료되지 않도록 AEM을 구성하는 방법을 알아봅니다.
+seo-description: Learn how to configure AEM so that static objects do not expire (for a reasonable period of time).
 uuid: ee019a3d-4133-4d40-98ec-e0914b751fb3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 73f37b3c-5dbe-4132-bb60-daa8de871884
-feature: 구성
+feature: Configuring
 exl-id: 3551d25c-c852-4f59-84fe-5e62f57ae63f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 0%
+source-wordcount: '450'
+ht-degree: 1%
 
 ---
 
 # 정적 개체 만료{#expiration-of-static-objects}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 정적 개체(예: 아이콘)는 변경되지 않습니다. 따라서 시스템이 적절한 시간 동안 만료되지 않고 불필요한 트래픽을 줄이도록 구성해야 합니다.
 
@@ -27,7 +31,7 @@ ht-degree: 0%
 * 서버 인프라의 요청을 오프로드합니다.
 * 브라우저가 브라우저 캐시에서 개체를 캐시할 때 페이지 로드 성능을 향상시킵니다.
 
-만료는 HTTP 표준에서 파일의 &quot;만료&quot;에 대해 지정합니다(예를 들어, [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; Hypertext Transfer Protocol — HTTP 1.1&quot; 장 14.21을 참조하십시오). 이 표준은 헤더를 사용하여 클라이언트가 오래된 것으로 간주될 때까지 개체를 캐시할 수 있습니다.이러한 객체는 원래 서버에 상태 검사를 수행하지 않고 지정된 시간 동안 캐시됩니다.
+만료는 HTTP 표준에서 파일의 &quot;만료&quot;에 대해 지정합니다(예: [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; 하이퍼텍스트 전송 프로토콜 — HTTP 1.1&quot;). 이 표준은 헤더를 사용하여 클라이언트가 오래된 것으로 간주될 때까지 개체를 캐시할 수 있습니다. 이러한 객체는 원래 서버에 상태 검사를 수행하지 않고 지정된 시간 동안 캐시됩니다.
 
 >[!NOTE]
 >
@@ -39,7 +43,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->객체가 최신 상태로 간주되는 기간을 정의할 때는 주의해야 합니다. 지정된 기간이 만료될 때까지 *확인이 없으므로 클라이언트가 캐시에서 이전 콘텐츠를 제공할 수 있습니다.*
+>객체가 최신 상태로 간주되는 기간을 정의할 때는 주의해야 합니다. 있는 그대로 *지정된 기간이 만료될 때까지 확인 안 함*&#x200B;로 설정되면 클라이언트가 캐시에서 이전 컨텐츠를 제공할 수 있습니다.
 
 1. **작성자 인스턴스의 경우:**
 
@@ -75,7 +79,7 @@ ht-degree: 0%
    </Location>
    ```
 
-   이렇게 하면 중간 캐시(예: 브라우저 캐시)가 클라이언트 캐시에서 최대 하루 동안 CSS, Javascript, PNG 및 GIF 파일을 저장할 수 있습니다. 이 예에서는 `/content` 및 `/etc/designs` 아래의 모든 항목에 대한 전역 설정을 설명하지만, 보다 세부적인 설정을 만들어야 합니다.
+   이렇게 하면 중간 캐시(예: 브라우저 캐시)가 클라이언트 캐시에서 최대 하루 동안 CSS, Javascript, PNG 및 GIF 파일을 저장할 수 있습니다. 이 예제에서는 아래 모든 항목에 대한 전역 설정을 보여 줍니다 `/content` 및 `/etc/designs`를 더 세분화해야 합니다.
 
    사이트 업데이트 빈도에 따라 HTML 페이지 캐싱을 고려할 수도 있습니다. 합리적인 기간은 1시간입니다.
 
@@ -85,4 +89,4 @@ ht-degree: 0%
    </Location>
    ```
 
-정적 개체를 구성한 후 해당 개체를 포함하는 페이지를 선택하는 동안 `request.log`을 검색하여 정적 개체에 대해 아무런(불필요한) 요청이 수행되지 않는지 확인합니다.
+정적 개체를 구성한 후 `request.log`를 채울 때 이러한 개체를 포함하는 페이지를 선택하는 동안 정적 개체에 대해 요청이 수행되지 않는지 확인합니다.

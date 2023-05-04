@@ -1,8 +1,8 @@
 ---
 title: 게시 취소 컨텐츠
-seo-title: 게시 취소 컨텐츠
+seo-title: Publish UnPublish Content
 description: 문서, 배너 및 컬렉션의 콘텐츠 관리 작업에 익숙하다면 이 페이지에 따라 콘텐츠를 게시하는 방법에 대해 알아보십시오. 컨텐츠 게시를 취소할 수도 있습니다.
-seo-description: 문서, 배너 및 컬렉션의 콘텐츠 관리 작업에 익숙하다면 이 페이지에 따라 콘텐츠를 게시하는 방법에 대해 알아보십시오. 컨텐츠 게시를 취소할 수도 있습니다.
+seo-description: Once you are familiar with content management actions on articles, banners, and collections, follow this page to learn about how you can publish your content. Also you can unpublish your content.
 uuid: 75179aa8-022c-4876-9664-6dd2b826174c
 contentOwner: User
 content-type: reference
@@ -10,26 +10,30 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 8c88a2ff-766f-481b-b6dc-0b3e2eed8596
 exl-id: e9da73d6-7140-4fd6-b69c-2e76024d65e5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 1%
+source-wordcount: '304'
+ht-degree: 4%
 
 ---
 
-# 컨텐츠 게시 취소{#publish-unpublish-content}
+# 게시 취소 컨텐츠{#publish-unpublish-content}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
 문서, 배너 및 컬렉션의 콘텐츠 관리 작업에 익숙해지면 콘텐츠를 게시할 수 있습니다. 컨텐츠 게시를 취소할 수도 있습니다.
 
 >[!NOTE]
 >
->AEM Mobile 앱의 디자인 고려 사항에 대해 자세히 알려면 온라인 도움말에서 [AEM Mobile 앱용 디자인 고려 사항](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)을 참조하십시오.
+>AEM Mobile 앱의 디자인 고려 사항에 대한 자세한 내용은 [AEM Mobile 앱을 위한 디자인 고려 사항](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) 을 참조하십시오.
 
-## 컨텐츠 {#publishing-unpublishing-the-content} 게시/게시 취소
+## 컨텐츠 게시/게시 취소 {#publishing-unpublishing-the-content}
 
 이 기능은 &quot;AEM 게시&quot;와 다릅니다. 컨텐츠를 공개적으로 볼 수 있도록 AEM 게시 서버 인스턴스에 푸시하지 않습니다. 여기에서는 선택한 컨텐츠를 라이브 Mobile On-Demand 앱 내에서 공개해야 한다고 Mobile On-Demand에 알립니다.
 

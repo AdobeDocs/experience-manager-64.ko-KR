@@ -1,8 +1,8 @@
 ---
 title: 달력 기능
-seo-title: 달력 기능
+seo-title: Calendar Feature
 description: 달력 형식으로 커뮤니티 이벤트 정보를 제공합니다
-seo-description: 달력 형식으로 커뮤니티 이벤트 정보를 제공합니다
+seo-description: Provides community event information in a calendar format
 uuid: 6f1f327f-bf4b-4357-b8fd-4bec74016921
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,53 +10,57 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 8b8e74c5-8b65-4117-9ef0-da9d9e47191f
 exl-id: f95d1471-82a1-4c37-ac5b-0eb861c823a1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1196'
 ht-degree: 6%
 
 ---
 
 # 달력 기능 {#calendar-feature}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 ## 소개 {#introduction}
 
-달력 기능은 모든 사이트 방문자에게 또는 로그인한 사이트 방문자(커뮤니티 구성원)에게 달력 형식의 커뮤니티 이벤트 정보를 제공하는 반면, 승인된 구성원만 이벤트를 추가할 수 있습니다.
+달력 기능은 모든 사이트 방문자에게 또는 로그인한 사이트 방문자(커뮤니티 구성원)에게 달력 형식으로 커뮤니티 이벤트 정보를 제공하는 반면, 승인된 구성원만 이벤트를 추가할 수 있습니다.
 
 설명서의 이 섹션에서는 다음 사항에 대해 설명합니다.
 
 * AEM 사이트에 달력 기능 추가
-* `Calendar`구성 요소에 대한 구성 설정
+* 에 대한 구성 설정 `Calendar`구성 요소
 
 ## 페이지에 달력 추가 {#adding-a-calendar-to-a-page}
 
-작성자 모드의 페이지에 `Calendar` 구성 요소를 추가하려면 구성 요소 브라우저를 사용하여 을 찾습니다
+을(를) 추가하려면 `Calendar` 구성 요소를 페이지에 작성자 모드에서 사용하려면 구성 요소 브라우저를 사용하여 를 찾습니다
 
 * `Communities / Calendar`
 
 사용자가 검토할 기능을 기준으로 하는 위치와 같이 페이지에 드래그합니다.
 
-필요한 정보를 보려면 [커뮤니티 구성 요소 기본 사항](basics.md)을 방문하십시오.
+필요한 정보를 보려면 [커뮤니티 구성 요소 기본 사항](basics.md).
 
-필요한 [클라이언트 측 라이브러리](calendar-basics-for-developers.md#essentials-for-client-side)가 포함되면 이 방법으로 `Calendar` 구성 요소가 표시됩니다.
+이 [필수 클라이언트 측 라이브러리](calendar-basics-for-developers.md#essentials-for-client-side) 포함된 경우, 다음과 같이 하십시오 `Calendar` 구성 요소가 나타납니다.
 
 ![chlimage_1-112](assets/chlimage_1-112.png)
 
-### 달력 구성 {#configuring-calendar}
+### 일정 구성 {#configuring-calendar}
 
-액세스할 배치된 `Calendar` 구성 요소를 선택하고 편집 대화 상자를 여는 `Configure` 아이콘을 선택합니다.
+배치된 항목을 선택합니다 `Calendar`액세스하여 선택할 구성 요소 `Configure` 아이콘 편집 대화 상자를 엽니다.
 
 ![chlimage_1-113](assets/chlimage_1-113.png) ![chlimage_1-114](assets/chlimage_1-114.png)
 
 #### 설정 탭 {#settings-tab}
 
-**[!UICONTROL 설정]** 탭에서 태그를 달력 항목에 적용할 수 있도록 허용할지 여부를 지정합니다.
+아래에 **[!UICONTROL 설정]** 탭에서 태그를 달력 항목에 적용할 수 있도록 허용할지 여부를 지정합니다.
 
 * **[!UICONTROL 페이지당 이벤트 수]**
 
    페이지당 표시되는 이벤트 수를 정의합니다. 기본값은 10입니다.
 
-* **[!UICONTROL 조정됨]**
+* **[!UICONTROL 중재됨]**
 
    이 확인란을 선택하면 달력 이벤트 및 댓글이 게시 사이트에 표시되기 전에 게시 승인을 받아야 합니다. 기본값은 선택 취소되어 있습니다.
 
@@ -70,7 +74,7 @@ ht-degree: 6%
 
 * **[!UICONTROL 태깅 허용]**
 
-   이 확인란을 선택하면 구성원이 게시한 이벤트에 태그 레이블을 추가할 수 있습니다( **태그 필드** 탭 참조). 기본값이 선택되어 있습니다.
+   이 옵션을 선택하면 구성원이 게시한 이벤트에 태그 레이블을 추가할 수 있습니다( 참조). **태그 필드** 탭). 기본값이 선택되어 있습니다.
 
 * **[!UICONTROL 파일 업로드 허용]**
 
@@ -82,11 +86,11 @@ ht-degree: 6%
 
 * **[!UICONTROL 최대 파일 크기]**
 
-   `Allow File Uploads`이(가) 선택된 경우에만 관련됩니다. 이 필드는 업로드된 파일의 크기(바이트)를 제한합니다. 기본값은 104857600(10Mb)입니다.
+   관련성이 있는 경우에만 `Allow File Uploads` 이(가) 선택되어 있습니다. 이 필드는 업로드된 파일의 크기(바이트)를 제한합니다. 기본값은 104857600(10Mb)입니다.
 
 * **[!UICONTROL 허용되는 파일 유형]**
 
-   `Allow File Uploads`이(가) 선택된 경우에만 관련됩니다. 점이 구분되어 있는 쉼표로 구분된 파일 확장자 목록입니다. 예:.jpg, .jpeg, .png, .doc, .docx, .pdf 파일 유형을 지정하면, 지정되지 않은 파일 유형은 업로드할 수 없습니다. 기본값은 지정되지 않아서 모든 파일 유형이 허용됩니다.
+   관련성이 있는 경우에만 `Allow File Uploads` 이(가) 선택되어 있습니다. 점이 구분되어 있는 쉼표로 구분된 파일 확장자 목록입니다. 예: .jpg, .jpeg, .png, .doc, .docx, .pdf 파일 유형을 지정하면, 지정되지 않은 파일 유형은 업로드할 수 없습니다. 기본값은 지정되지 않아서 모든 파일 유형이 허용됩니다.
 
 * **[!UICONTROL 이미지 첨부 파일 최대 크기]**
 
@@ -94,7 +98,7 @@ ht-degree: 6%
 
 * **[!UICONTROL 허용되는 표지 이미지 유형]**
 
-   쉼표로 구분된 이미지 파일 확장자로 &quot;dot&quot; 구분 기호가 있습니다. 기본값은 `.jpg,.jpeg,.png,.gif,.bmp`입니다.
+   쉼표로 구분된 이미지 파일 확장자로 &quot;dot&quot; 구분 기호가 있습니다. 기본값은 입니다. `.jpg,.jpeg,.png,.gif,.bmp`.
 
 * **[!UICONTROL 스레드된 회신 허용]**
 
@@ -118,9 +122,9 @@ ht-degree: 6%
 
 * **[!UICONTROL 특별 포함된 컨텐츠 허용]**
 
-   이 확인란을 선택하면 아이디어를 [중요 콘텐츠](featured.md)로 식별할 수 있습니다. 기본값은 선택 취소되어 있습니다.
+   이 옵션을 선택하면 [주요 콘텐츠](featured.md). 기본값은 선택 취소되어 있습니다.
 
-**[!UICONTROL 사용자 중재]** 탭에서 게시된 항목 및 답글(사용자가 생성한 컨텐츠)을 관리하는 방법을 지정합니다. 자세한 내용은 [사용자 생성 콘텐츠 중재](moderate-ugc.md)를 참조하십시오.
+아래에 **[!UICONTROL 사용자 중재]** 탭에서 게시된 항목 및 답글(사용자가 생성한 컨텐츠)을 관리하는 방법을 지정합니다. 자세한 내용은 [사용자가 생성한 컨텐츠 중재](moderate-ugc.md).
 
 #### 사용자 중재 탭 {#user-moderation-tab}
 
@@ -154,23 +158,23 @@ ht-degree: 6%
 
 #### 태그 필드 탭 {#tag-field-tab}
 
-**[!UICONTROL 태그 필드]** 탭 아래에서 **[!UICONTROL 설정]** 탭에서 허용되는 경우 적용할 수 있는 태그는 선택한 네임스페이스에 따라 제한됩니다.
+아래에 **[!UICONTROL 태그 필드]** 탭, **[!UICONTROL 설정]** 탭은 선택한 네임스페이스에 따라 제한됩니다.
 
 * **[!UICONTROL 허용되는 네임스페이스]**
 
-   **[!UICONTROL 설정]** 탭 아래에서 `Allow Tagging`이(가) 선택된 경우에 관련됩니다. 적용할 수 있는 태그는 선택한 네임스페이스 카테고리 내의 태그로 제한됩니다. 네임스페이스 목록에는 &quot;표준 태그&quot;(기본 네임스페이스)와 &quot;모든 태그 포함&quot;이 포함되어 있습니다. 기본값이 선택되어 있지 않으므로 모든 네임스페이스가 허용됩니다.
+   관련 있는 경우 `Allow Tagging` 이(가) **[!UICONTROL 설정]** 탭. 적용할 수 있는 태그는 선택한 네임스페이스 카테고리 내의 태그로 제한됩니다. 네임스페이스 목록에는 &quot;표준 태그&quot;(기본 네임스페이스)와 &quot;모든 태그 포함&quot;이 포함되어 있습니다. 기본값이 선택되어 있지 않으므로 모든 네임스페이스가 허용됩니다.
 
 * **[!UICONTROL 제안 한도]**
 
-   포럼에 게시하기 위해 회원에게 제안으로 표시할 태그의 수를 입력합니다. 기본값은 `-1`(제한 없음)입니다.
+   포럼에 게시하기 위해 회원에게 제안으로 표시할 태그의 수를 입력합니다. 기본값은 입니다. `-1` 제한 없음.
 
 >[!NOTE]
 >
->새 태그 네임스페이스(분류)를 추가하는 방법에 대해 알아보려면 [태그 관리](../../help/sites-administering/tags.md)를 방문하십시오.
+>방문 [태그 관리](../../help/sites-administering/tags.md) 새 태그 네임스페이스(분류)를 추가하는 방법을 알아보십시오.
 
 #### 번역 탭 {#translation-tab}
 
-**[!UICONTROL 번역]** 탭 아래에서 커뮤니티 사이트에 대해 번역이 활성화되면 특정 게시물 대신 전체 스레드(이벤트 및 댓글)를 번역하도록 번역을 설정할 수 있습니다.
+아래에 **[!UICONTROL 번역]** 탭, 커뮤니티 사이트에 대해 번역이 활성화되면 특정 게시물 대신 전체 스레드(이벤트 및 댓글)를 번역하도록 번역을 설정할 수 있습니다.
 
 * **[!UICONTROL 모두 번역]**
 
@@ -186,13 +190,13 @@ ht-degree: 6%
 
 ### 중재자 및 관리자 {#moderators-and-administrators}
 
-로그인한 사용자에게 중재자 또는 관리자 권한이 있는 경우 이벤트에 게시된 모든 달력 이벤트 및 댓글에 대해 [중재 작업](moderate-ugc.md)(구성 요소의 구성에서 허용하는 경우)을 수행할 수 있습니다.
+로그인한 사용자에게 중재자 또는 관리자 권한이 있는 경우 다음을 수행할 수 있습니다 [조정 작업](moderate-ugc.md) 이벤트에 게시된 모든 달력 이벤트 및 댓글에 대해 ( 구성 요소의 구성에서 허용하는 경우).
 
 ![chlimage_1-115](assets/chlimage_1-115.png)
 
 ### 구성원 {#members}
 
-로그인한 사용자가 커뮤니티 멤버이거나 [권한이 있는 멤버](users.md#privileged-members-group)(구성에 따라 다름)인 경우 `New Event` 를 선택하여 새 달력 이벤트를 만들고 게시할 수 있습니다.
+로그인한 사용자가 커뮤니티 멤버이거나 [권한 있는 멤버](users.md#privileged-members-group) (구성에 따라) `New Event` 새 달력 이벤트를 만들고 게시하려면 다음을 수행하십시오.
 
 특히,
 
@@ -212,10 +216,10 @@ ht-degree: 6%
 
 ## 추가 정보 {#additional-information}
 
-개발자를 위한 [달력 Essentials](calendar-basics-for-developers.md) 페이지에서 자세한 내용을 찾을 수 있습니다.
+자세한 내용은 [달력 핵심 사항](calendar-basics-for-developers.md) 개발자를 위한 페이지입니다.
 
-달력 이벤트 및 댓글의 조정을 보려면 [사용자 생성 콘텐츠 중재](moderate-ugc.md)를 참조하십시오.
+달력 이벤트 및 댓글의 조정에 대해서는 [사용자가 생성한 컨텐츠 중재](moderate-ugc.md).
 
-달력 이벤트 및 댓글에 태깅하려면 [사용자 생성 컨텐츠 태깅](tag-ugc.md)을 참조하십시오.
+달력 이벤트 및 댓글에 태깅하려면 다음을 참조하십시오. [사용자 생성 컨텐츠에 태깅](tag-ugc.md).
 
-달력 이벤트 및 주석 번역을 보려면 [사용자 생성 컨텐츠 번역](translate-ugc.md)을 참조하십시오.
+달력 이벤트 및 주석 번역에 대해서는 [사용자가 생성한 컨텐츠 번역](translate-ugc.md).

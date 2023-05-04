@@ -1,8 +1,8 @@
 ---
 title: 양식 및 관련 리소스 삭제
-seo-title: 양식 및 관련 리소스 삭제
+seo-title: Deleting forms and related resources
 description: AEM Forms에서 양식 또는 자산을 삭제하는 방법, 참조 및 참조 자산 및 XFA 양식에 미치는 영향
-seo-description: AEM Forms에서 양식 또는 자산을 삭제하는 방법, 참조 및 참조 자산 및 XFA 양식에 미치는 영향
+seo-description: How to delete a form or an asset in AEM Forms and the impact on referenced and referring assets and XFA forms.
 uuid: df522b87-59d8-4678-922d-c9aab82b1381
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,14 +10,18 @@ topic-tags: forms-manager
 discoiquuid: c8519eec-f841-4867-baa9-a9e03042755e
 role: Admin
 exl-id: 94a66d83-b359-4be6-b668-4b4ba024b1e7
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 0%
+source-wordcount: '407'
+ht-degree: 1%
 
 ---
 
 # 양식 및 관련 리소스 삭제 {#deleting-forms-and-related-resources}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 양식과 자산을 삭제하여 저장소에서 이러한 자산을 제거할 수 있습니다. 삭제 작업은 모든 자산 유형 및 폴더에서 작동합니다.
 
@@ -25,8 +29,8 @@ ht-degree: 0%
 
 ## 양식을 삭제하는 방법 {#how-to-delete-a-form}
 
-1. `https://[hostname]:[portport]/aem/forms.html.`에 액세스하여 AEM Forms 사용자 인터페이스에 로그인
-1. 로 이동하고 삭제할 양식을 선택합니다. 도구 모음에서 ![aem6forms_delete2](assets/aem6forms_delete2.png) 삭제 를 클릭하고 삭제 작업을 확인합니다.
+1. 에 액세스하여 AEM Forms 사용자 인터페이스에 로그인 `https://[hostname]:[portport]/aem/forms.html.`
+1. 로 이동하고 삭제할 양식을 선택합니다. 삭제 를 클릭합니다 ![aem6forms_delete2](assets/aem6forms_delete2.png) 도구 모음에서 삭제 작업을 확인합니다.
 
    >[!NOTE]
    >
@@ -40,12 +44,12 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >선택한 자산이 폴더이고 해당 계층의 그러한 자산이 포함되어 있는 경우 다른 자산을 개별적으로 삭제하거나 전체 폴더를 삭제합니다.
+   >선택한 자산이 폴더이고 해당 계층의 그러한 자산이 포함되어 있는 경우 개별적으로 다른 자산을 삭제하거나 전체 폴더를 삭제합니다.
 
 ## 참조된 XFA 양식 삭제에 따른 영향 {#impact-of-deleting-a-referenced-xfa-form}
 
 AEM Forms에서 XFA 양식 템플릿은 적응형 양식 또는 다른 XFA 양식 템플릿에서 참조할 수 있습니다. 또한 템플릿은 리소스 또는 다른 XFA 템플릿을 참조할 수 있습니다.
 
-적응형 양식을 손상시킬 수 있으므로 적응형 양식에서 참조되는 XFA 양식을 삭제하는 것이 좋습니다. 적응형 양식이 XFA 양식을 참조할 때 해당 필드가 바인딩됩니다. XFA 삭제 후에는 적응형 양식이 해당 필드를 XFA 필드와 동기화할 수 없으며 이러한 필드에 대한 오류 메시지를 표시합니다. 참조된 XFA 삭제의 영향 및 잘못된 AF에 대한 자세한 내용은 [참조된 XFA 양식 업데이트](/help/forms/using/get-xdp-pdf-documents-aem.md#p-updating-referenced-xfa-forms-p)를 참조하십시오.
+적응형 양식을 손상시킬 수 있으므로 적응형 양식에서 참조되는 XFA 양식을 삭제하는 것이 좋습니다. 적응형 양식이 XFA 양식을 참조할 때 해당 필드가 바인딩됩니다. XFA 삭제 후에는 적응형 양식이 해당 필드를 XFA 필드와 동기화할 수 없으며 이러한 필드에 대한 오류 메시지를 표시합니다. 참조된 XFA 삭제의 영향 및 더러운 AF에 대한 자세한 내용은 다음을 참조하십시오 [참조된 XFA 양식 업데이트](/help/forms/using/get-xdp-pdf-documents-aem.md#p-updating-referenced-xfa-forms-p).
 
 이러한 XFA 양식을 삭제하려면 적응형 양식을 업데이트하고 XFA 필드로 바인딩을 제거합니다.

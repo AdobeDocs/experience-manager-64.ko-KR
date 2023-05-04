@@ -10,14 +10,18 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c21debc3-ecf4-4aa9-ab5a-18ddd5cf2fff
 exl-id: 96e75d9c-f091-4ca1-afd3-6309a08de525
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2664'
+source-wordcount: '2700'
 ht-degree: 32%
 
 ---
 
 # 콘텐츠 재사용: 다중 사이트 관리자 및 라이브 카피{#reusing-content-multi-site-manager-and-live-copy}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 MSM(Multi Site Manager)을 사용하면 여러 위치에서 동일한 사이트 콘텐츠를 사용할 수 있습니다. 이를 위해 MSM은 라이브 카피 기능을 사용합니다:
 
@@ -33,8 +37,8 @@ MSM(Multi Site Manager)을 사용하면 여러 위치에서 동일한 사이트 
 
 이 페이지와 다음 페이지에서는 관련 문제를 다룹니다.
 
-* [라이브 카피 생성 및 동기화](/help/sites-administering/msm-livecopy.md)
-* [라이브 카피 개요 콘솔](/help/sites-administering/msm-livecopy-overview.md)
+* [Live Copy 생성 및 동기화](/help/sites-administering/msm-livecopy.md)
+* [Live Copy 개요 콘솔](/help/sites-administering/msm-livecopy-overview.md)
 * [라이브 카피 동기화 구성](/help/sites-administering/msm-sync.md)
 * [MSM 롤아웃 충돌](/help/sites-administering/msm-rollout-conflicts.md)
 * [MSM 모범 사례](/help/sites-administering/msm-best-practices.md)
@@ -124,33 +128,33 @@ MSM 및 Live Copy에 대한 사용 사례가 많습니다. 일부 시나리오�
 
 MSM은 적절한 콘솔에서 다양한 옵션을 사용하여 UI에서 직접 액세스할 수 있습니다. 소개를 제공하려면 기본 위치가 다음과 같습니다.
 
-* **사이트 생성**(**사이트**)
+* **사이트 생성** (**Sites**)
 
    * MSM은 일반적인 컨텐츠를 공유하는 여러 웹 사이트를 관리하는 데 도움이 됩니다. 예를 들어, 웹 사이트는 국제 대상을 위해 제공되므로 대부분의 컨텐츠는 각 개별 국가에 해당하는 컨텐츠의 하위 집합과 함께 모든 국가에서 일반적입니다. MSM을 통해 다음을 수행할 수 있습니다 [소스 사이트를 기반으로 하나 이상의 사이트를 자동으로 업데이트하는 live copy 만들기](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). 또한 이를 통해 일반적인 기본 구조를 적용하고, 여러 사이트에서 일반적인 콘텐츠를 사용하고, 공통적인 모양과 느낌을 유지하고, 사이트 간에 실제로 차이가 있는 콘텐츠를 관리하는 데 노력을 기울일 수 있습니다.
    * 소스를 지정하기 위해 사전 정의된 블루프린트 구성이 필요합니다.
    * (사전 정의된) 소스의 Live Copy를 만듭니다.
    * 사용자에게 **롤아웃** 버튼이 제공됩니다.
 
-* **라이브 카피 만들기**(**Sites**)
+* **라이브 카피 만들기** (**Sites**)
 
    * MSM을 통해 다음을 수행할 수 있습니다 [웹 사이트의 개별 페이지 또는 하위 분기의 임시(일회성) 라이브 카피를 만듭니다](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page); 예를 들어 하위 분기를 복제하여 제품의 신규/업데이트된 버전에 대한 정보를 제공합니다.
    * 임시 Live Copy를 만듭니다(블루프린트 구성이 필요 없음).
    * 모든 페이지/분기의 Live Copy를 만드는 데 (즉시) 사용할 수 있습니다.
    * **동기화**&#x200B;가 필요합니다(**롤아웃** 버튼은 제공되지 않음).
 
-* **속성 보기**(**사이트**)
+* **속성 보기** (**Sites**)
 
    * 적절한 경우 이 옵션은 다음과 같은 작업을 수행하는 데 도움이 됩니다 [live copy 모니터링](/help/sites-administering/msm-livecopy.md#monitoring-your-live-copy) 관련 정보 제공 **Live Copy** y 또는 **블루프린트**.
 
-* **참조**(**사이트**)
+* **참조** (**Sites**)
 
    * [참조](/help/sites-authoring/basic-handling.md#references) 레일은 적절한 작업에 대한 액세스 권한과 함께 **라이브 카피**&#x200B;에 대한 정보를 제공합니다.
 
-* **라이브 카피 개요**(**사이트**)
+* **라이브 카피 개요** (**Sites**)
 
    * 이 콘솔에서는 다음을 수행할 수 있습니다 [블루프린트 및 Live Copy 보기 및 관리](/help/sites-administering/msm-livecopy-overview.md).
 
-* **블루프린트**(**도구** - **사이트**)
+* **블루프린트** (**도구** - **Sites**)
 
    * 이 콘솔에서는 다음을 수행할 수 있습니다 [블루프린트 구성 만들기 및 관리](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration).
 
@@ -175,7 +179,7 @@ MSM은 적절한 콘솔에서 다양한 옵션을 사용하여 UI에서 직접 �
    <td>블루프린트 및/또는 블루프린트 페이지의 동의어.</td> 
   </tr> 
   <tr> 
-   <td><strong>라이브 카피</strong></td> 
+   <td><strong>Live Copy</strong></td> 
    <td>롤아웃 구성에서 정의된 동기화 작업에 의해 관리되는 (소스의) 사본. </td> 
    <td> </td> 
   </tr> 

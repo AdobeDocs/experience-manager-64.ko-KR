@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 42bf42cb-0c6c-4390-8170-2c540c4d3ed3
 exl-id: 1e5172d9-47a3-4d73-b749-166e201f4eef
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 0%
+source-wordcount: '813'
+ht-degree: 1%
 
 ---
 
 # 고객을 위한 사용자 인터페이스 Recommendations{#user-interface-recommendations-for-customers}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 Adobe Experience Manager 6.4에는 통합 Experience Cloud UI와 클래식 UI의 두 가지 UI가 포함되어 있습니다.
 
@@ -61,7 +65,7 @@ Adobe은 AEM 6.4부터 클래식 UI를 추가로 개선할 계획이 없습니�
  <tbody> 
   <tr> 
    <th>내 프로젝트...</th> 
-   <th>추천</th> 
+   <th>권장 사항</th> 
   </tr> 
   <tr> 
    <td>이제 Adobe Experience Manager을 사용하기 시작합니다.</td> 

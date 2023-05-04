@@ -2,7 +2,7 @@
 title: AEM Mobile On-Demand
 seo-title: AEM Mobile On-Demand
 description: AEM Mobile On-Demand Services 앱 관리를 시작하려면 이 페이지를 따르십시오. 온디맨드 서비스를 위한 AEM 관리자의 역할과 책임에 대한 개요를 제공합니다.
-seo-description: AEM Mobile On-Demand Services 앱 관리를 시작하려면 이 페이지를 따르십시오. 온디맨드 서비스를 위한 AEM 관리자의 역할과 책임에 대한 개요를 제공합니다.
+seo-description: Follow this page to get started with administering AEM mobile On-Demand services app. It provides an overview of the roles and responsibilities of an AEM administrator for On-Demand services.
 uuid: fd99c032-287a-489b-9690-b18980c55c29
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
@@ -10,22 +10,26 @@ content-type: reference
 topic-tags: administering-on-demand-services-app
 discoiquuid: 5e1e6a51-67e1-42e3-bcb0-e16bc92c9cb3
 exl-id: cb0898f5-900d-4562-a976-49beff8addd5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 2%
+source-wordcount: '330'
+ht-degree: 4%
 
 ---
 
-# AEM Mobile 온디맨드 {#aem-mobile-on-demand}
+# AEM Mobile On-Demand {#aem-mobile-on-demand}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
->AEM을 컨텐츠 관리 소스로 사용하지 않는 경우 [AEM Mobile On-demand Services 도움말](https://helpx.adobe.com/digital-publishing-solution/topics.html)을 참조하십시오.
+>AEM을 컨텐츠 관리 소스로 사용하지 않는 경우 [AEM Mobile On-demand Services 도움말](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 ## AEM 관리자 {#aem-administrator}
 
@@ -33,17 +37,17 @@ ht-degree: 2%
 >
 >**전제 조건:**
 >
->AEM Mobile On-demand Services에 대한 환경 설정을 시작하기 전에 [AEM Mobile Application Dashboard 또는 Control Center](/help/mobile/mobile-apps-ondemand-application-dashboard.md)를 참조하십시오.
+>AEM Mobile On-demand Services에 대한 환경 설정을 시작하기 전에 다음을 참조하십시오 [AEM Mobile Application Dashboard 또는 Control Center](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-***AEM 관리자***&#x200B;는 만들기 마법사를 사용하여 새 앱을 만들거나 기존 애플리케이션을 가져와서 새 애플리케이션을 AEM Mobile 카탈로그에 추가할 책임이 있습니다. AEM Mobile의 *만들기 마법사*&#x200B;를 사용하여 새 앱을 만드는 AEM 관리자는 일반적으로 기본 제공 참조 샘플 또는 *AEM 개발자가 만든 사용자 지정 앱 템플릿 중 하나를 선택합니다.*
+An ***AEM 관리자*** 는 만들기 마법사를 사용하여 새 앱을 만들거나 기존 애플리케이션을 가져와서 AEM Mobile 카탈로그에 새 애플리케이션을 추가해야 합니다. AEM Mobile을 사용하여 새 앱을 만드는 AEM 관리자 *생성 마법사* 일반적으로 기본 제공 참조 샘플 또는 (대부분의 경우)에서 만든 사용자 지정 앱 템플릿 중 원하는 앱 템플릿 하나를 선택합니다 *AEM 개발자.*
 
 >[!NOTE]
 >
->AEM 그룹 및 권한 설정에 대한 자세한 내용을 보려면 온라인 도움말에서 [사용자 역할 만들기 및 액세스 권한 부여](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html)를 클릭하십시오.
+>AEM 그룹 및 권한 설정에 대한 자세한 내용을 보려면 [사용자 역할 생성 및 액세스 권한 부여](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) 을 참조하십시오.
 
 AEM 관리자는 AEM Mobile On-demand Services을 사용하여 앱을 만들 때 다음 작업을 수행합니다.
 
-* [AEM Mobile](/help/mobile/aem-mobile-setup.md) 설정, 이
+* [AEM Mobile 설정](/help/mobile/aem-mobile-setup.md), 지원
 
    * AEM Mobile 프로비저닝
    * AEM Mobile용 프로젝트 만들기

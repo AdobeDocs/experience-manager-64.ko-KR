@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: platform
 discoiquuid: d8ee3b57-633a-425e-bf36-646f0e0bad52
 exl-id: 3faf9d09-8899-4916-b768-8ff39900b959
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1862'
-ht-degree: 0%
+source-wordcount: '1898'
+ht-degree: 1%
 
 ---
 
 # 개발(일반){#developing-generic}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
@@ -49,7 +53,7 @@ eCommerce 프레임워크는 모든 eCommerce 솔루션에서 사용할 수 있�
    * 다음 `adaptTo` 구현에서 `cq:commerceProvider` 리소스 계층 구조의 속성:
 
       * 찾을 경우 이 값은 상거래 서비스 조회를 필터링하는 데 사용됩니다.
-      * 찾을 수 없으면 가장 높은 등급의 상거래 서비스가 사용됩니다.
+      * 찾을 수 없으면 최상위의 상거래 서비스가 사용됩니다.
    * A `cq:Commerce` mixin이 사용되므로 `cq:commerceProvider` 강력한 형식의 리소스에 추가할 수 있습니다.
 
 
@@ -328,9 +332,9 @@ public class AxisFilter implements VariantFilter {
       * `String CommerceSession.getProductPrice(Product product)`
 
 
-**저장 용량**
+**스토리지**
 
-* 저장 용량
+* 스토리지
 
    * AEM 일반 케이스 카트에서 의 [ClientContext](/help/sites-administering/client-context.md)
 

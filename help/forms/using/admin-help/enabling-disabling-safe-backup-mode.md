@@ -1,8 +1,8 @@
 ---
 title: 안전한 백업 모드 활성화 및 비활성화
-seo-title: 안전한 백업 모드 활성화 및 비활성화
+seo-title: Enabling and disabling safe backup mode
 description: '[백업 설정] 페이지에서 데이터베이스 및 GDS(Global Document Storage) 디렉토리를 안정적으로 백업할 수 있도록 안전한 백업 모드로 AEM Forms를 작동할 수 있습니다. 안전한 백업 모드를 활성화하고 사용하지 않도록 설정하는 방법을 알아봅니다.'
-seo-description: '[백업 설정] 페이지에서 데이터베이스 및 GDS(Global Document Storage) 디렉토리를 안정적으로 백업할 수 있도록 안전한 백업 모드로 AEM Forms를 작동할 수 있습니다. 안전한 백업 모드를 활성화하고 사용하지 않도록 설정하는 방법을 알아봅니다.'
+seo-description: On the Backup Settings page, you can operate AEM forms in safe backup mode so that you can reliably back up your database and Global Document Storage (GDS) (GDS) directory. Learn how to enable and disable safe backup mode.
 uuid: 2fdeaeaf-e969-40a4-8aee-1f2b627d3942
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9fda71e4-78a1-4581-9d02-bf06a75c3bcb
 exl-id: 309a8cef-e84d-485b-9a7c-786a93e83c85
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 0%
+source-wordcount: '232'
+ht-degree: 3%
 
 ---
 
-# 안전 백업 모드 {#enabling-and-disabling-safe-backup-mode} 활성화 및 비활성화
+# 안전한 백업 모드 활성화 및 비활성화 {#enabling-and-disabling-safe-backup-mode}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 [백업 설정] 페이지에서 데이터베이스 및 GDS(Global Document Storage) 디렉토리를 안정적으로 백업할 수 있도록 안전한 백업 모드로 AEM Forms를 작동할 수 있습니다.
 
@@ -25,7 +29,7 @@ AEM Forms는 안전한 백업 모드이지만 GDS 디렉터리에서 파일을 �
 
 >[!NOTE]
 >
->이 옵션을 설정하면 시스템이 백업되지 않습니다.시스템을 백업하도록 준비합니다.
+>이 옵션을 설정하면 시스템이 백업되지 않습니다. 시스템을 백업하도록 준비합니다.
 
 ## 안전한 백업 모드 사용 {#enable-safe-backup-mode}
 
@@ -36,7 +40,7 @@ AEM Forms는 안전한 백업 모드이지만 GDS 디렉터리에서 파일을 �
 >
 >시스템이 안전 백업 모드로 이미 실행 중인 경우 확인을 클릭하면 새 예약이 생성되지 않습니다.
 
-## 안전 백업 모드 비활성화 {#disable-safe-backup-mode}
+## 안전 백업 모드 사용 안 함 {#disable-safe-backup-mode}
 
 1. 관리 콘솔에서 설정 > 핵심 시스템 설정 > 백업 설정을 클릭합니다.
 1. [백업 설정] 페이지에서 [안전한 백업 모드로 작업]을 선택 취소하고 [확인]을 클릭합니다.

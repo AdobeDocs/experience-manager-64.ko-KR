@@ -10,18 +10,22 @@ topic-tags: publish
 discoiquuid: 7387dfe8-0029-4ad0-b319-fc519928318b
 feature: Forms Portal
 exl-id: 4d66ab64-a132-4f2a-89ca-3fbd8dc56ce2
-source-git-commit: 977ada5fefe476c7cd2fe1470eb024a517a681d2
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1646'
-ht-degree: 1%
+source-wordcount: '1682'
+ht-degree: 2%
 
 ---
 
 # 양식 포털 페이지 만들기 {#creating-a-forms-portal-page}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 Forms 포털 구성 요소는 웹 개발자에게 Adobe Experience Manager(AEM)을 사용하여 작성된 웹 사이트에서 양식 포털을 만들고 사용자 지정하는 구성 요소를 제공합니다. Forms 포털에 대한 간단한 개요를 알려면 [포털에서 양식 게시 소개](/help/forms/using/introduction-publishing-forms.md).
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 Forms 포털 구성 요소는 기본적으로 사용할 수 없습니다. 다음에 설명된 대로 다음 forms portal 구성 요소 카테고리가 활성화되어 있는지 확인합니다. [Forms 포털 구성 요소 활성화](/help/forms/using/enabling-forms-portal-components.md).
 
@@ -161,7 +165,7 @@ AEM 사이트 페이지에서 활성화되면 이러한 구성 요소 카테고�
 ![날짜, 전체 텍스트, 속성 및 태그 설명이 있는 검색 패널](assets/search-with-predicates.png)
 **그림:** *날짜, 전체 텍스트, 속성 및 태그 설명이 있는 검색 패널*
 
-#### 날짜 설명 {#date-predicate}
+#### 날짜 조건자 {#date-predicate}
 
 날짜 설명 구성 요소를 추가하면 지정된 기간 동안 수정된 나열된 양식을 검색할 수 있습니다.
 
@@ -178,7 +182,7 @@ AEM 사이트 페이지에서 활성화되면 이러한 구성 요소 카테고�
 
 1. 탭 **[!UICONTROL 확인]**.
 
-#### 전체 텍스트 설명 {#full-text-predicate}
+#### 전체 텍스트 조건자 {#full-text-predicate}
 
 전체 텍스트 설명 구성 요소는 이름 및 설명과 같은 양식 데이터에 대한 전체 텍스트 검색을 구현합니다. 사용자는 텍스트 문자열을 검색하여 이름이나 설명에 텍스트가 포함된 양식을 반환할 수 있습니다.
 
@@ -205,7 +209,7 @@ AEM 사이트 페이지에서 활성화되면 이러한 구성 요소 카테고�
 
 1. 탭 **[!UICONTROL 확인]**.
 
-#### 태그 설명 {#tags-predicate}
+#### 태그 조건자 {#tags-predicate}
 
 태그 설명 구성 요소는 Forms Manager에 정의된 태그를 기반으로 양식 검색을 구현합니다.
 

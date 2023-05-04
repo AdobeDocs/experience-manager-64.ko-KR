@@ -10,14 +10,18 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 0aefe8c0-662e-4177-a369-feab174fa510
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 11%
+source-wordcount: '450'
+ht-degree: 10%
 
 ---
 
 # 페이지 속성의 벌크 편집을 위한 페이지 구성 {#configuring-your-page-for-bulk-editing-of-page-properties}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 [페이지 속성의 벌크 편집](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) 여러 페이지의 속성을 한 번에 편집할 수 있습니다.
 
@@ -40,7 +44,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->벌크 편집은 자산에 대해서도 사용할 수 있습니다. 비슷하지만 몇 가지 차이점이 있습니다. 자세한 내용은 [다중 자산의 속성 편집](/help/assets/managing-multiple-assets.md)을 참조하십시오. 을 사용하여 자산에 대한 벌크 메타데이터 편집기에서 필드를 사용자 지정할 수 있습니다. [스키마 편집기](/help/assets/metadata-schemas.md).
+>벌크 편집은 자산에 대해서도 사용할 수 있습니다. 비슷하지만 몇 가지 차이점이 있습니다. 자세한 내용은 [여러 자산의 속성 편집](/help/assets/managing-multiple-assets.md) 자세한 내용 을 사용하여 자산에 대한 벌크 메타데이터 편집기에서 필드를 사용자 지정할 수 있습니다. [스키마 편집기](/help/assets/metadata-schemas.md).
 
 ## 필드 활성화 {#enabling-a-field}
 
@@ -65,7 +69,7 @@ ht-degree: 11%
 
    >[!NOTE]
    >
-   >이 예에서는 인스턴스에 코어 구성 요소가 설치되어 있다고 가정합니다. 이 경우 인스턴스가 We.Retail 샘플 컨텐츠로 실행 중입니다. 자세한 내용은 [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 추가 정보.
+   >이 예에서는 인스턴스에 코어 구성 요소가 설치되어 있다고 가정합니다. 이 경우 인스턴스가 We.Retail 샘플 컨텐츠로 실행 중입니다. 자세한 내용은 [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 추가 정보.
 
 1. 내에서 필요한 필드로 이동합니다 `cq:dialog` 정의.
 1. 필드 노드에서 다음 속성을 정의합니다.

@@ -1,22 +1,26 @@
 ---
 title: 추적 테이블 사용자 지정
-seo-title: 추적 테이블 사용자 지정
+seo-title: Customize tracking tables
 description: AEM Forms 작업 공간의 추적 탭에 표시되는 작업 테이블에서 사용자 프로세스 세부 사항 표시를 사용자 지정하는 방법
-seo-description: AEM Forms 작업 공간의 추적 탭에 표시되는 작업 테이블에서 사용자 프로세스 세부 사항 표시를 사용자 지정하는 방법
+seo-description: How-to customize the display of the details of user processes in the task table displayed in the tracking tab of AEM Forms workspace.
 uuid: 13d6ebf2-99d5-434f-85f9-b0cba5f5751a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 exl-id: 5f925f47-3123-4a27-aea1-0a1c1fba7bb6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 2%
+source-wordcount: '366'
+ht-degree: 4%
 
 ---
 
 # 추적 테이블 사용자 지정{#customize-tracking-tables}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 AEM Forms 작업 공간의 추적 탭은 로그인한 사용자가 관련된 프로세스 인스턴스의 세부 사항을 표시하는 데 사용됩니다. 추적 테이블을 보려면 왼쪽 창에서 프로세스 이름을 선택하여 가운데 창에서 인스턴스 목록을 확인합니다. 오른쪽 창에서 이 인스턴스에 의해 생성된 작업 테이블을 보려면 프로세스 인스턴스를 선택합니다. 기본적으로 테이블 열에는 다음과 같은 작업 속성이 표시됩니다(작업 모델의 해당 속성은 괄호 안에 지정됨).
 
@@ -24,8 +28,8 @@ AEM Forms 작업 공간의 추적 탭은 로그인한 사용자가 관련된 프
 * 이름 ( `stepName`)
 * 지침 ( `instructions`)
 * 선택된 동작 ( `selectedRoute`)
-* 생성 시간( `createTime`)
-* 완료 시간( `completeTime`)
+* 생성 시간 ( `createTime`)
+* 완료 시간 ( `completeTime`)
 * 소유자 ( `currentAssignment.queueOwner`)
 
 작업 테이블에 표시할 수 있는 작업 모델의 나머지 속성은 다음과 같습니다.
@@ -115,7 +119,7 @@ AEM Forms 작업 공간의 추적 탭은 로그인한 사용자가 관련된 프
  </tbody> 
 </table>
 
-작업 테이블의 다음 사용자 지정의 경우 소스 코드에서 의미 변경 작업을 수행해야 합니다. 작업 공간 SDK를 사용하여 의미 체계를 변경하고 변경된 소스에서 축소된 패키지를 빌드할 수 있는 방법은 [AEM Forms 작업 공간 사용자 지정 소개](/help/forms/using/introduction-customizing-html-workspace.md)를 참조하십시오.
+작업 테이블의 다음 사용자 지정의 경우 소스 코드에서 의미 변경 작업을 수행해야 합니다. 자세한 내용은 [AEM Forms 작업 공간 사용자 지정 소개](/help/forms/using/introduction-customizing-html-workspace.md) workspace SDK를 사용하여 의미론적 변화를 만들고 변경된 소스에서 축소된 패키지를 빌드하는 방법에 대한 정보입니다.
 
 ## 테이블 열 및 그 순서 변경 {#changing-table-columns-and-their-order}
 
@@ -157,7 +161,7 @@ AEM Forms 작업 공간의 추적 탭은 로그인한 사용자가 관련된 프
 
 열 머리글을 누를 때 작업 목록 테이블을 정렬하려면
 
-1. `js/runtime/views/processinstancehistory.js` 파일에서 `.fixedTaskTableHeader th`에 대한 클릭 처리기를 등록합니다.
+1. 에 대한 클릭 처리기 등록 `.fixedTaskTableHeader th` 파일에서 `js/runtime/views/processinstancehistory.js`.
 
    ```as3
    events: {
@@ -167,7 +171,7 @@ AEM Forms 작업 공간의 추적 탭은 로그인한 사용자가 관련된 프
    }
    ```
 
-   처리기에서 `js/runtime/util/history.js`의 `onTaskTableHeaderClick` 함수를 호출합니다.
+   처리기에서 `onTaskTableHeaderClick` 함수 `js/runtime/util/history.js`.
 
    ```as3
    onTaskTableHeaderClick: function (event) {
@@ -175,7 +179,7 @@ AEM Forms 작업 공간의 추적 탭은 로그인한 사용자가 관련된 프
    }
    ```
 
-1. `js/runtime/util/history.js`에 `TaskTableHeaderClick` 메서드를 노출합니다.
+1. Adobe Analytics의 `TaskTableHeaderClick` 메서드 `js/runtime/util/history.js`.
 
    이 메서드는 클릭 이벤트에서 작업 속성을 찾아 해당 속성의 작업 목록을 정렬하고 정렬된 작업 목록을 사용하여 작업 테이블을 렌더링합니다.
 

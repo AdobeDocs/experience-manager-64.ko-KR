@@ -1,24 +1,28 @@
 ---
-title: '동적으로 드롭다운 목록 채우기 '
-seo-title: '동적으로 드롭다운 목록 채우기 '
+title: 동적으로 드롭다운 목록 채우기
+seo-title: Dynamically populating drop-down lists
 description: 일부 논리를 기반으로 드롭다운 목록을 동적으로 채우는 절차
-seo-description: 일부 논리를 기반으로 드롭다운 목록을 동적으로 채우는 절차
+seo-description: Procedure to dynamically populate drop-down lists based on some logic
 uuid: b58a184f-6c96-47ff-8a2e-829c93b63324
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 49453dda-7b05-4470-866e-1946bff70f27
 exl-id: 3a32f578-23b1-4c76-bd85-dd3d812c6c28
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 0%
+source-wordcount: '368'
+ht-degree: 2%
 
 ---
 
-# 동적으로 드롭다운 목록 채우기 {#dynamically-populating-drop-down-lists}
+# 동적으로 드롭다운 목록 채우기  {#dynamically-populating-drop-down-lists}
 
-## 전제 조건 {#prerequisites}
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+## 사전 요구 사항 {#prerequisites}
 
 * [OSGI 번들 만들기](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
 * [AEM 구성 요소 개발](/help/sites-developing/components.md)
@@ -27,7 +31,7 @@ ht-degree: 0%
 
 ## 드롭다운 목록을 동적으로 채우는 절차 {#procedure-to-dynamically-populate-drop-down-lists}
 
-**국가** 드롭다운 목록에서 선택한 값을 기반으로 **상태** 드롭다운 목록을 채울 시나리오를 생각해 보십시오. **국가** 드롭다운 목록에서 호주를 선택하면 **주** 드롭다운 목록에 호주 내의 상태가 표시됩니다. 다음 절차에서는 이 작업을 수행하는 방법을 설명합니다.
+을 채울 시나리오를 생각해 보십시오 **주/도** 드롭다운 목록에서 선택한 값을 기반으로 합니다 **국가** 드롭다운 목록. 에서 호주를 선택하는 경우 **국가** 드롭다운 목록, **주/도** 드롭다운 목록에는 호주 내의 상태가 표시됩니다. 다음 절차에서는 이 작업을 수행하는 방법을 설명합니다.
 
 1. 다음 모듈로 프로젝트를 만듭니다.
 
@@ -145,7 +149,7 @@ ht-degree: 0%
    }
    ```
 
-1. 앱의 특정 폴더 계층 구조에 드롭다운 노드를 만듭니다(예를 들어 /apps/myfolder/demo 아래에 노드를 만듭니다). 노드의 `sling:resourceType` 매개 변수가 서블릿이 가리키는 값과 동일한지 확인합니다(/apps/populatedropdown).
+1. 앱의 특정 폴더 계층 구조에 드롭다운 노드를 만듭니다(예를 들어 /apps/myfolder/demo 아래에 노드를 만듭니다). 다음을 확인합니다. `sling:resourceType` 노드에 대한 매개 변수는 서블릿이 가리키는(/apps/populatedropdown) 과 동일합니다.
 
    ![드롭다운 노드 만들기](assets/dropdown-node.png)
 
@@ -154,7 +158,7 @@ ht-degree: 0%
 
    국가 목록에 표시할 국가 이름을 추가합니다. 상태 목록에서 국가 목록의 국가 이름을 기반으로 스크립트를 추가하여 채웁니다.
 
-   ![국가 ](assets/country-dropdown.png) ![이름 추가주 이름을 ](assets/state-dropdown.png) ![채울 스크립트 추가국가 및 상태 드롭다운 목록을 수집하십시오](assets/2dropdowns.png)
+   ![국가 이름 추가](assets/country-dropdown.png) ![상태 이름을 채우는 스크립트 추가](assets/state-dropdown.png) ![수집할 국가 및 상태 드롭다운 목록](assets/2dropdowns.png)
 
    ```
    JSON.parse(

@@ -7,7 +7,8 @@ breadcrumb-title: Communities 안내서
 user-guide-description: 포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험을 만들 수 있습니다.
 feature: Communities
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+hide: true
+source-git-commit: b61797a9096c0473658d6aabfb584a53e42095b7
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 10%
@@ -16,6 +17,7 @@ ht-degree: 10%
 
 
 # AEM 6.4 Communities 사용 안내서 {#communities}
+
 
 + [AEM Communities 개요](home.md)
 + AEM Communities 소개 {#introduction}

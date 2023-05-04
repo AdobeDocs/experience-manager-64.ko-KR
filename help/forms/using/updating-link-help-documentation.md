@@ -1,8 +1,8 @@
 ---
 title: 설명서에 대한 링크 업데이트
-seo-title: 설명서에 대한 링크 업데이트
+seo-title: Updating the link to the documentation
 description: AEM Forms 작업 공간에서 Workspace 도움말 링크의 대상을 업데이트하여 사용자 지정 설명서 링크를 가리키는 방법
-seo-description: AEM Forms 작업 공간에서 Workspace 도움말 링크의 대상을 업데이트하여 사용자 지정 설명서 링크를 가리키는 방법
+seo-description: How-to update the destination of Workspace Help link in AEM Forms workspace to point to your custom documentation link.
 uuid: 64056d10-1451-44ed-8f25-81a21037dc75
 contentOwner: robhagat
 content-type: reference
@@ -10,25 +10,29 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 788c427f-190f-4580-9efd-6a4c4a008837
 exl-id: 68fe3f97-ded8-4223-b4b9-02704077e37e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 2%
+source-wordcount: '177'
+ht-degree: 7%
 
 ---
 
-# 설명서 {#updating-the-link-to-the-documentation}에 대한 링크 업데이트
+# 설명서에 대한 링크 업데이트 {#updating-the-link-to-the-documentation}
 
-**도움말 > 작업 공간 도움말**&#x200B;을 선택하여 AEM Forms 작업 공간의 기본 도움말 콘텐츠에 액세스할 수 있습니다. Adobe 웹 사이트의 온라인 설명서를 가리킵니다. 그러나 다른 URL을 가리키도록 업데이트할 수 있습니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+AEM Forms 작업 공간의 기본 도움말 콘텐츠에 액세스하려면 **도움말 > 작업 공간 도움말**. Adobe 웹 사이트의 온라인 설명서를 가리킵니다. 그러나 다른 URL을 가리키도록 업데이트할 수 있습니다.
 
 기본 도움말 URL을 변경할 수 있는 다음 사용 사례를 고려하십시오.
 
 * 원하는 언어로 현지화된 도움말 제공
 * 사용자 지정된 작업 공간에 대한 사용자 지정 도움말 컨텐츠를 제공하는 경우.
 
-온라인 설명서의 URL을 업데이트하려면 [사용자 지정](/help/forms/using/generic-steps-html-workspace-customization.md)의 일반 단계 를 선택하고 다음 단계를 따르십시오.
+온라인 설명서의 URL을 업데이트하려면 [사용자 지정의 일반 단계](/help/forms/using/generic-steps-html-workspace-customization.md) 그리고 다음 단계를 수행합니다.
 
-1. `/libs/ws/js/runtime/templates`에서 `/apps/ws/js/runtime/templates`로 `userinfo.html` 파일을 복사합니다.
+1. 를 복사합니다. `userinfo.html` 파일 위치 `/libs/ws/js/runtime/templates` to `/apps/ws/js/runtime/templates`.
 1. 변경:
 
    ```
@@ -47,7 +51,7 @@ ht-degree: 2%
      </li>
    ```
 
-1. 다음을 수행합니다.
+1. 다음 작업을 수행합니다.
 
    1. /apps/ws/js/registry.js 을 열어 편집합니다.
-   1. `text!/lc/libs/ws/js/runtime/templates/userinfo.html` 을 `text!/lc/apps/ws/js/runtime/templates/userinfo.html` 로 검색하고 바꿉니다.
+   1. 검색 및 바꾸기 `text!/lc/libs/ws/js/runtime/templates/userinfo.html` with `text!/lc/apps/ws/js/runtime/templates/userinfo.html`.

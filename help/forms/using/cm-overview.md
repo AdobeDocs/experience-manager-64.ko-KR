@@ -1,31 +1,35 @@
 ---
 title: 서신 관리 개요
-seo-title: 서신 관리
+seo-title: Correspondence Management
 description: 이 항목에서는 서신 관리에 대한 개요를 제공합니다.
-seo-description: 이 항목에서는 서신 관리에 대한 개요를 제공합니다.
+seo-description: This topic gives you an overview of Correspondence Management.
 uuid: fa230c7e-fef1-4996-bdda-1637b36dac68
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 1291b395-a981-4ef9-b4f0-c0d3026c5f19
-feature: 서신 관리
+feature: Correspondence Management
 exl-id: 3cda92c9-5f3e-4704-a52b-55eda3b3fd2a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 2%
+source-wordcount: '253'
+ht-degree: 3%
 
 ---
 
 # 서신 관리 개요 {#correspondence-management-overview}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 ## 소개 {#introduction}
 
-서신 관리는 안전하고 개인화된 인터랙티브한 통신의 작성, 수집 및 전달을 중앙 집중화하고 관리합니다. 이를 통해 작성에서 보관에 이르는 간소화된 프로세스를 통해 사전 승인된 컨텐츠와 사용자 정의 작성 컨텐츠에서 서신을 신속하게 취합할 수 있습니다. 따라서 고객은 적절한 시간에 적절한 방식으로 적절한 커뮤니케이션을 받을 수 있습니다.적시에 정확하고 편리하며 안전하며 적합하다. 기업은 고객 상호 작용의 가치를 극대화하고 비용 및 위험을 최소화하여 업무 편의성, 속도 및 생산성을 높일 수 있는 프로세스를 제공합니다.
+서신 관리는 안전하고 개인화된 인터랙티브한 통신의 작성, 수집 및 전달을 중앙 집중화하고 관리합니다. 이를 통해 작성에서 보관에 이르는 간소화된 프로세스를 통해 사전 승인된 컨텐츠와 사용자 정의 작성 컨텐츠에서 서신을 신속하게 취합할 수 있습니다. 따라서 고객은 적절한 시간에 적절한 방식으로 적절한 커뮤니케이션을 받을 수 있습니다. 적시에 정확하고 편리하며 안전하며 적합하다. 기업은 고객 상호 작용의 가치를 극대화하고 비용 및 위험을 최소화하여 업무 편의성, 속도 및 생산성을 높일 수 있는 프로세스를 제공합니다.
 
 ## 이점 {#benefits}
 
-### 효율적이고 생산적인 {#efficient-and-productive}
+### 효율적이고 생산성 {#efficient-and-productive}
 
 프로세스를 간소화하여 다음과 같은 작업을 수행할 수 있습니다.
 

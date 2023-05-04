@@ -12,14 +12,18 @@ discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 exl-id: 209f0e02-b883-4104-8358-01cab15e5db2
 feature: Content Fragments
 role: User
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 97%
+source-wordcount: '571'
+ht-degree: 92%
 
 ---
 
 # Markdown {#markdown}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 >[!CAUTION]
 >
@@ -104,14 +108,14 @@ ht-degree: 97%
 구문은
 
 * 느낌표(!)를 포함합니다.;
-* 뒤에 이미지의 대체 특성 텍스트를 포함하는 대괄호 세트가 옵니다.
-* 뒤에 이미지의 URL 또는 경로를 포함하는 괄호 세트와, 큰따옴표나 작은따옴표로 묶인 선택적 제목 특성이 있습니다.
+* 뒤에 이미지의 대체 속성 텍스트를 포함하는 대괄호 세트가 옵니다.
+* 뒤에 이미지의 URL 또는 경로를 포함하는 괄호 세트와, 큰따옴표나 작은따옴표로 묶인 선택적 제목 속성이 있습니다.
 
 참조 스타일 이미지에는 다음 구문이 있습니다.
 
     `![Alt text][id]`
 
-여기서 &quot;id&quot;는 정의된 이미지 참조의 이름입니다. 이미지 참조는 링크 참조와 동일한 구문을 사용하여 정의됩니다.
+여기서 “id”는 정의된 이미지 참조의 이름입니다. 이미지 참조는 링크 참조와 동일한 구문을 사용하여 정의됩니다.
 
     `[id]: url/to/image "Optional title attribute"`
 

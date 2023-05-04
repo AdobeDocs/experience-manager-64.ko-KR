@@ -9,14 +9,18 @@ topic-tags: installing
 discoiquuid: 1bb8360c-5543-484e-9712-590822211298
 role: Admin
 exl-id: 45b0fb99-9f7f-47e6-a4de-4db321867f8f
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 8%
+source-wordcount: '1833'
+ht-degree: 9%
 
 ---
 
 # 데이터 캡처 기능 설치 및 구성 {#install-and-configure-data-capture-capabilities}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 적응형 양식, PDF forms 및 HTML5 Forms을 설치 및 구성합니다. 적응형 양식에 대해 Adobe Analytics 및 Adobe Target을 구성하여 양식 사용을 분석하고 프로필을 기반으로 사용자를 타깃팅할 수 있습니다.
 
@@ -157,7 +161,7 @@ Dispatcher가 AEM에 대해 캐싱 및 로드 밸런싱 도구를 제공합니�
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   파일을 저장하고 닫습니다. 필터에 대한 자세한 내용은 [Dispatcher 설명서](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html).
+   파일을 저장하고 닫습니다. 필터에 대한 자세한 내용은 [Dispatcher 설명서](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html).
 
 1. 레퍼러 필터 서비스를 구성합니다.
 
@@ -167,7 +171,7 @@ Dispatcher가 AEM에 대해 캐싱 및 로드 밸런싱 도구를 제공합니�
 
 캐싱은 데이터 액세스 시간을 단축하고, 지연을 줄이고, 입출력(I/O) 속도를 향상시키는 메커니즘입니다. 적응형 양식 캐시는 사전 채워진 데이터를 저장하지 않고 적응형 양식의 HTML 콘텐츠과 JSON 구조만 저장합니다. 적응형 양식을 렌더링하는 데 필요한 시간을 줄이는 데 도움이 됩니다.
 
-* 적응형 양식 캐시를 사용하는 경우 [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) 를 눌러 적응형 양식의 클라이언트 라이브러리(CSS 및 JavaScript)를 캐시합니다.
+* 적응형 양식 캐시를 사용하는 경우 [AEM Dispatcher](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html) 를 눌러 적응형 양식의 클라이언트 라이브러리(CSS 및 JavaScript)를 캐시합니다.
 * 사용자 지정 구성 요소를 개발하는 동안 개발에 사용되는 서버에서 적응형 양식 캐시를 사용하지 않도록 설정하십시오.
 
 적응형 양식 캐시를 구성하려면 다음 단계를 수행하십시오.
@@ -195,7 +199,7 @@ AEM Forms과 함께 Acrobat Sign을 사용하려면, [Acrobat Sign과 AEM Forms 
 
 #### Adobe Analytics 구성 {#configure-adobe-analytics}
 
-AEM Forms은 게시된 양식 및 문서에 대한 성능 지표를 캡처하고 추적할 수 있도록 Adobe Analytics과 통합됩니다. 이러한 지표를 분석하기 위한 목적은 양식이나 문서를 보다 유용하게 사용할 수 있도록 하는 데 필요한 변경 사항에 대한 데이터를 기반으로 현명한 결정을 내리는 것입니다.
+AEM Forms은 게시된 양식 및 문서에 대한 성능 지표를 캡처하고 추적할 수 있도록 Adobe Analytics과 통합됩니다. 이러한 지표를 분석하는 목적은 양식이나 문서를 보다 유용하게 만드는 데 필요한 변경 사항에 대한 데이터를 기반으로 정보에 입각한 결정을 내리는 것입니다.
 
 AEM Forms에서 Adobe Analytics을 사용하려면 다음을 참조하십시오 [분석 및 보고서 구성](/help/forms/using/configure-analytics-forms-documents.md).
 

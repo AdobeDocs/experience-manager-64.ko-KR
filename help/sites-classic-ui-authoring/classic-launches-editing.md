@@ -1,8 +1,8 @@
 ---
 title: 론치 편집
-seo-title: 론치 편집
-description: 페이지(또는 페이지 세트)에 대한 론치가 만들어지면 페이지의 론치 카피에서 컨텐츠를 편집할 수 있습니다.
-seo-description: 페이지(또는 페이지 세트)에 대한 론치가 만들어지면 페이지의 론치 카피에서 컨텐츠를 편집할 수 있습니다.
+seo-title: Editing Launches
+description: 페이지(또는 페이지 세트)에 대한 론치가 만들어지면 페이지의 론치 카피에서 콘텐츠를 편집할 수 있습니다.
+seo-description: When a launch has been created for a page (or set of pages) you can edit the content in the launch copy of the page(s).
 uuid: 3a310eeb-553d-4d2b-98b5-c5bc523b2aca
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,59 +11,63 @@ topic-tags: site-features
 discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 98bccd13-431a-4cba-bb93-75cdcc98830a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 100%
+source-wordcount: '327'
+ht-degree: 21%
 
 ---
 
 # 론치 편집{#editing-launches}
 
-## 론치 편집 페이지 {#editing-launch-pages}
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
-페이지(또는 페이지 세트)에 대한 론치가 만들어지면 페이지의 론치 카피에서 컨텐츠를 편집할 수 있습니다.
+## 론치 페이지 편집 {#editing-launch-pages}
+
+페이지(또는 페이지 세트)에 대한 론치가 만들어지면 페이지의 론치 카피에서 콘텐츠를 편집할 수 있습니다.
 
 1. 편집할 페이지를 엽니다.
-1. 사이드 킥에서 **버전 관리** 탭을 선택한 다음, **론치** 그룹을 확장합니다. 현재 편집하고 있는 론치의 제목에서는 굵은 글꼴을 사용합니다.
+1. 사이드 킥에서 **버전 관리** 탭을 클릭한 다음 **론치** 그룹에 속해 있어야 합니다. 현재 편집 중인 론치의 제목에서는 굵은 글꼴을 사용합니다.
 
    ![chlimage_1-13](assets/chlimage_1-13.jpeg)
 
-1. 작업할 론치를 선택한 다음 **전환**&#x200B;을 클릭합니다.
+1. 작업할 론치를 선택한 다음 를 클릭합니다 **스위치**.
 1. 편집을 시작합니다.
 
    >[!NOTE]
    >
-   >사이드 킥의 **페이지** 탭을 사용하여 다른 작업 중에서 **하위 페이지 만들기**&#x200B;와 같은 작업을 수행할 수 있습니다.
+   >를 사용할 수 있습니다 **페이지** 사이드 킥의 탭으로서, **하위 페이지 만들기**, 다른 것들 중에서.
 
-## 론치 구성 편집 {#editing-a-launch-configuration}
+## Launch 구성 편집 {#editing-a-launch-configuration}
 
 론치를 만든 후 론치 이름과 론치 날짜를 변경할 수 있습니다. 이미지를 지정하여 론치와 연결할 수도 있습니다.
 
-1. 론치 관리 페이지([http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html))를 엽니다.
+1. 론치 관리 페이지([http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)).
 
-1. 필요한 론치를 선택하고 **편집**&#x200B;을 클릭하여 대화 상자를 엽니다.
+1. 필요한 론치를 선택하고 을(를) 클릭합니다 **편집** 대화 상자를 열려면 다음을 수행하십시오.
 
-   * **일반** 탭에서 다음 내용을 편집할 수 있습니다.
+   * 에서 **일반** 탭에서 다음을 편집할 수 있습니다.
 
       * **제목**
-      * **활성 날짜**: 론치 날짜와 같습니다.
+      * **라이브 날짜**: 이것은 론치 날짜와 같습니다
       * **프로덕션 준비**
 
-      이 필드들의 목적과 상호 작용에 대해 알려면 [론치 - 이벤트 순서](/help/sites-authoring/launches.md#launches-the-order-of-events)를 참조하십시오.
+      자세한 내용은 [론치 - 이벤트 순서](/help/sites-authoring/launches.md#launches-the-order-of-events) 를 참조하십시오.
 
-   * **이미지** 탭에서 이미지 파일을 업로드할 수 있습니다.
+   * 에서 **이미지** 탭에서 이미지 파일을 업로드할 수 있습니다.
 
 
 1. **저장**&#x200B;을 클릭합니다.
 
-## 페이지의 론치 상태 찾기 {#discovering-the-launch-status-of-a-page}
+## 페이지의 론치 상태 살펴보기 {#discovering-the-launch-status-of-a-page}
 
-페이지의 론치를 편집할 때 론치에 대한 정보는 사이드 킥의 **버전 관리** 탭 하단에 표시됩니다.
+페이지 론치를 편집할 때 론치에 대한 정보가 페이지의 하단에 표시됩니다 **버전 관리** 사이드 킥의 탭:
 
-* 론치 이름입니다.
-* 마지막 변경 사항 이후의 시간입니다.
+* 론치의 이름입니다.
+* 마지막 변경 이후 시간입니다.
 * 마지막 변경 작업을 수행한 사용자입니다.
-* **프로덕션 준비** 플래그의 상태(주황색=설정되지 않음, 녹색=설정됨).
+* 의 상태 **프로덕션 준비** 플래그(주황색=설정되지 않음) 녹색=set).
 
 ![chlimage_1-186](assets/chlimage_1-186.png)

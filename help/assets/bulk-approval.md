@@ -1,18 +1,22 @@
 ---
-title: 폴더 자산 및 컬렉션 검토
+title: 폴더 에셋 및 컬렉션 검토
 description: 폴더 또는 컬렉션 내의 자산에 대한 검토 워크플로우를 설정하고 검토자 또는 크리에이티브 파트너와 공유하여 피드백을 받습니다.
 contentOwner: AG
 feature: Collaboration, Collections
 role: User
 exl-id: 4c62e0cd-eaa5-456e-85f3-06f7a9f160f5
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 4%
+source-wordcount: '847'
+ht-degree: 23%
 
 ---
 
-# 폴더 자산 및 컬렉션 검토 {#review-folder-assets-and-collections}
+# 폴더 에셋 및 컬렉션 검토 {#review-folder-assets-and-collections}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 폴더 또는 컬렉션 내의 자산에 대한 검토 워크플로우를 설정하고 검토자 또는 크리에이티브 파트너와 공유하여 피드백을 받습니다.
 
@@ -27,7 +31,7 @@ Adobe Experience Manager Assets를 사용하면 폴더 또는 컬렉션 내의 �
 ## 폴더에 대한 검토 작업 만들기 {#creating-a-review-task-for-folders}
 
 1. Assets 사용자 인터페이스에서 검토 작업을 만들 폴더를 선택합니다.
-1. 도구 모음에서 **[!UICONTROL 검토 작업 만들기]** 아이콘을 탭/클릭하여 **[!UICONTROL 작업 검토]** 페이지를 엽니다. 도구 모음에 아이콘이 표시되지 않으면 **[!UICONTROL 자세히]**&#x200B;를 탭/클릭한 다음 아이콘을 선택합니다.
+1. From the toolbar, tap/click the **[!UICONTROL Create Review Task]** icon to open the **[!UICONTROL Review Task]** page. If you cannot see the icon in the toolbar, tap/click **[!UICONTROL More]** and then select the icon.
 
    ![chlimage_1-403](assets/chlimage_1-403.png)
 
@@ -35,13 +39,13 @@ Adobe Experience Manager Assets를 사용하면 폴더 또는 컬렉션 내의 �
 
    >[!NOTE]
    >
-   >편집자 수준 권한(또는 이상)이 있는 프로젝트만 **[!UICONTROL 프로젝트]** 목록에 표시됩니다.
+   >편집자 수준 권한(또는 이상)이 있는 프로젝트만 **[!UICONTROL 프로젝트]** 목록.
 
-1. 검토 작업의 이름을 입력하고 **[!UICONTROL 지정 대상]** 목록에서 승인자를 선택합니다.
+1. 검토 작업의 이름을 입력하고, **[!UICONTROL 할당 대상]** 목록.
 
    >[!NOTE]
    >
-   >선택한 프로젝트의 멤버/그룹은 **[!UICONTROL 할당 대상]** 목록에서 승인자로 사용할 수 있습니다.
+   >선택한 프로젝트의 멤버/그룹은 **[!UICONTROL 할당 대상]** 목록.
 
 1. 검토 작업의 설명, 작업 우선순위 및 기한을 입력합니다.
 
@@ -51,17 +55,17 @@ Adobe Experience Manager Assets를 사용하면 폴더 또는 컬렉션 내의 �
 
    ![review_name](assets/review_name.png)
 
-1. **[!UICONTROL Submit]**&#x200B;을 탭/클릭한 다음 **[!UICONTROL 완료]**&#x200B;를 탭/클릭하여 확인 메시지를 닫습니다. 새 작업에 대한 알림이 승인자에게 전송됩니다.
-1. [!DNL Experience Manager] Assets에 승인자로 로그인하고 Assets UI로 이동합니다. 자산을 승인하려면 **[!UICONTROL 알림]** 아이콘을 클릭/탭한 다음, 목록에서 검토 작업을 선택합니다.
+1. Tap/click **[!UICONTROL Submit]**, and then tap/click **[!UICONTROL Done]** to close the confirmation message. A notification for the new task is sent to the approver.
+1. 에 로그인합니다. [!DNL Experience Manager] 자산을 승인자로 이동하고 자산 UI로 이동합니다. 자산을 승인하려면 **[!UICONTROL 알림 을 참조하십시오]** 아이콘을 클릭한 다음 목록에서 검토 작업을 선택합니다.
 
    ![알림](assets/notification.png)
 
-1. **[!UICONTROL 작업 검토]** 페이지에서 검토 작업의 세부 정보를 검토한 다음 **[!UICONTROL 검토]**&#x200B;를 탭/클릭합니다.
-1. **[!UICONTROL 작업 검토]** 페이지에서 자산을 선택하고 **[!UICONTROL 승인/거부]** 아이콘을 탭/클릭하여 승인하거나 거부합니다.
+1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then tap/click **[!UICONTROL Review]**.
+1. In the **[!UICONTROL Review Task]** page, select assets, and tap/click the **[!UICONTROL Approve/Reject]** icon to approve or reject, as appropriate.
 
    ![review_task](assets/review_task.png)
 
-1. 도구 모음에서 **[!UICONTROL 완료]** 아이콘을 탭/클릭합니다. 대화 상자에서 설명을 입력하고 **[!UICONTROL 완료]**&#x200B;를 탭/클릭하여 확인합니다.
+1. 을 탭/클릭합니다. **[!UICONTROL 완료]** 아이콘 을 클릭하여 제품에서 사용할 수 있습니다. 대화 상자에서 댓글을 입력하고 탭/클릭합니다  **[!UICONTROL 완료]** 확인합니다.
 1. 자산 UI로 이동하고 폴더를 엽니다. 자산에 대한 승인 상태 아이콘은 카드 및 목록 보기 모두에 표시됩니다.
 
    **카드 보기**
@@ -75,7 +79,7 @@ Adobe Experience Manager Assets를 사용하면 폴더 또는 컬렉션 내의 �
 ## 컬렉션에 대한 검토 작업 만들기 {#creating-a-review-task-for-collections}
 
 1. 컬렉션 페이지에서 검토 작업을 생성할 컬렉션을 선택합니다.
-1. 도구 모음에서 **[!UICONTROL 검토 작업 만들기]** 아이콘을 탭/클릭하여 **[!UICONTROL 작업 검토]** 페이지를 엽니다. 도구 모음에 아이콘이 표시되지 않으면 **[!UICONTROL 자세히]**&#x200B;를 탭/클릭한 다음 아이콘을 선택합니다.
+1. From the toolbar, tap/click the **[!UICONTROL Create Review Task]** icon to open the **[!UICONTROL Review Task]** page. If you cannot see the icon in the toolbar, tap/click **[!UICONTROL More]** and then select the icon.
 
    ![chlimage_1-405](assets/chlimage_1-405.png)
 
@@ -83,26 +87,26 @@ Adobe Experience Manager Assets를 사용하면 폴더 또는 컬렉션 내의 �
 
    >[!NOTE]
    >
-   >편집자 수준 권한(또는 이상)이 있는 프로젝트만 **[!UICONTROL 프로젝트]** 목록에 표시됩니다.
+   >편집자 수준 권한(또는 이상)이 있는 프로젝트만 **[!UICONTROL 프로젝트]** 목록.
 
-1. 검토 작업의 이름을 입력하고 **[!UICONTROL 지정 대상]** 목록에서 승인자를 선택합니다.
+1. 검토 작업의 이름을 입력하고, **[!UICONTROL 할당 대상]** 목록.
 
    >[!NOTE]
    >
-   >선택한 프로젝트의 멤버/그룹은 **[!UICONTROL 할당 대상]** 목록에서 승인자로 사용할 수 있습니다.
+   >선택한 프로젝트의 멤버/그룹은 **[!UICONTROL 할당 대상]** 목록.
 
 1. 검토 작업의 설명, 작업 우선순위 및 기한을 입력합니다.
 
    ![task_details-collection](assets/task_details-collection.png)
 
-1. **[!UICONTROL Submit]**&#x200B;을 탭/클릭한 다음 **[!UICONTROL 완료]**&#x200B;를 탭/클릭하여 확인 메시지를 닫습니다. 새 작업에 대한 알림이 승인자에게 전송됩니다.
-1. [!DNL Experience Manager] Assets에 승인자로 로그인하고 Assets 콘솔로 이동합니다. 자산을 승인하려면 **[!UICONTROL 알림]** 아이콘을 탭/클릭한 다음 목록에서 검토 작업을 선택합니다.
-1. **[!UICONTROL 작업 검토]** 페이지에서 검토 작업의 세부 정보를 검토한 다음 **[!UICONTROL 검토]**&#x200B;를 탭/클릭합니다.
-1. 컬렉션의 모든 자산이 검토 페이지에 표시됩니다. 자산을 선택하고 **[!UICONTROL 승인/거부]** 아이콘을 탭/클릭하여 자산을 적절히 승인하거나 거부합니다.
+1. Tap/click **[!UICONTROL Submit]**, and then tap/click **[!UICONTROL Done]** to close the confirmation message. A notification for the new task is sent to the approver.
+1. 에 로그인합니다. [!DNL Experience Manager] 자산을 승인자로 이동하고 자산 콘솔로 이동합니다. 자산을 승인하려면 **[!UICONTROL 알림 을 참조하십시오]** 아이콘을 클릭한 다음 목록에서 검토 작업을 선택합니다.
+1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then tap/click **[!UICONTROL Review]**.
+1. 컬렉션의 모든 자산이 검토 페이지에 표시됩니다. 자산을 선택하고 **[!UICONTROL 승인/거부]** 아이콘을 사용하여 자산을 승인하거나 거부할 수 있습니다.
 
    ![review_task_collection](assets/review_task_collection.png)
 
-1. 도구 모음에서 **[!UICONTROL 완료]** 아이콘을 탭/클릭합니다. 대화 상자에서 설명을 입력하고 **[!UICONTROL 완료]**&#x200B;를 탭/클릭하여 확인합니다.
+1. 을 탭/클릭합니다. **[!UICONTROL 완료]** 아이콘 을 클릭하여 제품에서 사용할 수 있습니다. 대화 상자에서 댓글을 입력하고 탭/클릭합니다 **[!UICONTROL 완료]** 확인합니다.
 1. 컬렉션 콘솔로 이동하고 컬렉션을 엽니다. 자산에 대한 승인 상태 아이콘은 카드 및 목록 보기 모두에 표시됩니다.
 
    **카드 보기**

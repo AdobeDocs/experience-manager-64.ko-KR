@@ -4,14 +4,18 @@ seo-title: Security
 description: 개발 단계 중 응용 프로그램 보안 시작
 seo-description: Application Security starts during the development phase
 exl-id: 22c48f8c-38df-4c9b-88cf-67f6ae46e7e1
-source-git-commit: 70d86d2a8c9654a52a2d2c4a000cc101c54a4552
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 0%
+source-wordcount: '462'
+ht-degree: 2%
 
 ---
 
 # 보안{#security}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 개발 단계 동안 응용 프로그램 보안이 시작됩니다. Adobe은 다음 보안 모범 사례를 적용할 것을 권장합니다.
 

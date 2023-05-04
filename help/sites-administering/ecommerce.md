@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 68799110-8183-40fe-be4f-2a7c7a7b3018
 feature: Commerce Integration Framework
 exl-id: 3c046e16-5f54-4a16-aa5b-256b679808fa
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 3%
+source-wordcount: '792'
+ht-degree: 4%
 
 ---
 
 # eCommerce{#ecommerce}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 * [개념](/help/sites-administering/concepts.md)
 * [관리(일반)](/help/sites-administering/generic.md)
@@ -35,7 +39,7 @@ Adobe은 두 가지 버전의 Commerce Integration Framework를 제공합니다.
 | 프런트엔드 | AEM 서버측 렌더링 페이지 | 혼합 페이지 애플리케이션(하이브리드 렌더링) |
 | 제품 카탈로그 | - AEM에서 제품 가져오기, 편집기, 캐싱 <br>- AEM 또는 프록시 페이지를 사용하는 일반 카탈로그 | - 제품 가져오기 없음 <br>- 일반 템플릿 <br>- 커넥터를 통한 온디맨드 데이터 |
 | 확장성 | - 최대 수백만 개의 제품을 지원할 수 있습니다(사용 사례에 따라 다름). <br> - Dispatcher에서 캐싱 | - 볼륨 제한 없음 <br>- Dispatcher 또는 CDN에 캐싱 |
-| 표준화된 데이터 모델 | 아니요 | 예, Magento GraphQL 스키마 |
+| 표준화된 데이터 모델 | 아니요 | 예, GraphQL 스키마 Magento |
 | 사용 가능 | 예:<br> - SAP Commerce Cloud(AEM 6.4 및 Hybris 5(기본값)를 지원하도록 업데이트되고 Hybris 4와의 호환성을 유지합니다. <br>- Salesforce Commerce Cloud(AEM 6.4를 지원하도록 커넥터가 열려 있음) | GitHub를 통해 오픈 소스를 통해 지원. <br> Magento Commerce(Magento 2.3.2(기본값)를 지원하고 Magento 2.3.1과 호환됩니다.) |
 | 사용 시기 | 제한된 사용 사례: 작은 정적 카탈로그를 가져와야 하는 시나리오의 경우 | 대부분의 사용 사례에서 선호하는 솔루션 |
 
@@ -133,7 +137,7 @@ AEM eCommerce는 다음을 제공합니다.
 * 프레임워크는 확장 가능합니다.
 * 프레임워크는 즉시 사용 가능한 사이트를 제공하지 않습니다. 프레임워크를 사양에 맞게 조정하려면 항상 특정 양의 개발 작업이 필요합니다.
 
-### 왜? {#why}
+### 왜일까요? {#why}
 
 * 사용자 지정된 eCommerce 사이트를 빠르게 구현하는 데 필요한 기본 메커니즘을 제공합니다.
 * Tp는 실제 eCommerce 사이트를 개발하는 데 필요한 유연성을 제공합니다.

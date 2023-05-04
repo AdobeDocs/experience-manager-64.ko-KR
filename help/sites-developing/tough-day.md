@@ -10,14 +10,18 @@ topic-tags: testing
 content-type: reference
 discoiquuid: f48fa5ba-749b-4d3d-a4dd-c802006c8f07
 exl-id: 80442184-212a-424d-b320-5b301a54f974
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1931'
 ht-degree: 2%
 
 ---
 
 # Tough Day{#tough-day}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ## Tough Day 2 {#what-is-tough-day}
 
@@ -53,7 +57,7 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 >
 >Tough Day 2 는 정리 단계를 포함하지 않습니다. 따라서 주 프로덕션 인스턴스가 아닌 복제된 스테이징 인스턴스에서 Tough Day 2를 실행하는 것이 좋습니다. 스테이징 인스턴스는 테스트 후에 삭제해야 합니다.
 
-### 도움 받기 {#getting-help}
+### 도움말 가져오기 {#getting-help}
 
 Tough Day 2는 명령줄에서 액세스할 수 있는 다양한 도움말 옵션을 제공합니다. 예:
 
@@ -128,9 +132,9 @@ java -jar toughday2.jar --host=host --protocol=https --port=4502 --duration=30m 
 | `--installsamplecontent=<Val>` | 기본 Tough Day 2 컨텐츠 패키지를 설치하거나 건너뜁니다. | true | true 또는 false |
 | `--protocol=<Val>` | 호스트에 사용되는 프로토콜입니다. | http | http 또는 https |
 | `--host=<Val>` | 타깃팅할 호스트 이름 또는 IP입니다. |  |  |
-| `--port=<Val>` | 호스트의 포트입니다. | 4502년 |  |
+| `--port=<Val>` | 호스트의 포트입니다. | 4502 |  |
 | `--user=<Val>` | 인스턴스에 대한 사용자 이름입니다. | admin |  |
-| `--password=<Val>` | 지정된 사용자의 암호입니다. | 관리 |  |
+| `--password=<Val>` | 지정된 사용자의 암호입니다. | admin |  |
 | `--duration=<Val>` | 테스트 기간입니다. ()으로 표시할 수 있습니다.**s**)초, (**m**)은&#x200B;**h**)과 (**d**)에 사용할 수 있습니다. | 1d |  |
 | `--timeout=<Val>` | 테스트가 중단되고 실패로 표시되기 전에 실행되는 기간입니다. 초 단위로 표시됩니다. | 180 |  |
 | `--suite=<Val>` | 이 값은 사전 정의된 테스트 세트의 하나 또는 목록(쉼표로 구분)일 수 있습니다. | 인성 |  |

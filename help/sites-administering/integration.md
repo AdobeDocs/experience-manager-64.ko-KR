@@ -1,8 +1,8 @@
 ---
 title: 솔루션 통합
-seo-title: 솔루션 통합
+seo-title: Solutions Integration
 description: AEM의 솔루션 통합에 대해 자세히 알아보십시오.
-seo-description: AEM의 솔루션 통합에 대해 자세히 알아보십시오.
+seo-description: Learn more about Solutions Integration in AEM.
 uuid: 3bf56b1b-284d-4f14-8974-0a595ece5028
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: b5ff918d-08ab-4307-a807-693468fc083b
 exl-id: 1ee7ccbd-8654-4d03-8a67-2c41863ae951
-source-git-commit: af7bced72b8043d4460b575dc62c64f188575452
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '121'
-ht-degree: 4%
+source-wordcount: '148'
+ht-degree: 27%
 
 ---
 
 # 솔루션 통합{#solutions-integration}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 * [Adobe Marketing Cloud과 통합](/help/sites-administering/marketing-cloud.md)
 * [타사 서비스와 통합](/help/sites-administering/third-party-services.md)
@@ -31,8 +35,7 @@ AEM을 다른 Adobe 또는 타사 서비스와 통합하는 방법에 대해 다
 >
 >통합과 함께 사용자 지정 프록시 구성을 사용하는 경우 AEM의 일부 기능에서 3.x API를 사용하고 4.x API를 사용하는 것과 같은 HTTP 클라이언트 프록시 구성을 구성해야 합니다.
 >
->* 3.x는 [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
->* 4.x는 [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>* 3.x은(는) [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)로 구성됩니다.
+>* 4.x은(는) [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)로 구성됩니다.
 >
-
 

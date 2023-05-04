@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 role: Developer
 exl-id: 85c77bd4-e424-491f-8db2-73240732a6e4
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 0%
+source-wordcount: '505'
+ht-degree: 1%
 
 ---
 
 # 구성 요소 및 서비스 Java API 빠른 시작(SOAP) {#components-and-services-java-apiquick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 구성 요소 및 서비스에 대해 SOAP(Java API Quick Start)를 사용할 수 있습니다.
 
@@ -42,15 +46,15 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->AEM 양식을 사용한 프로그래밍에 있는 빠른 시작은 JBoss 및 Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 Unix와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로, 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
+>AEM 양식을 사용한 프로그래밍에 있는 빠른 시작은 JBoss 및 Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 Unix와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로, 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 자세한 내용은 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
->사용자 지정 구성 요소가 있고 SOAP 또는 EJB 프로토콜을 사용하여 동일한 로컬 서버에서 DSC를 호출하는 경우 업그레이드 후 해당 호출이 중지되는 경우, in-VM([DSC_IN_VM_PASSTHTHROUGH_STRATEGY](https://www.adobe.io/experience-manager/reference-materials/6-4/forms/programlc/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html)) 호출 전략을 사용하십시오. 기본 ServiceClientFactory와 함께 VM 내 DSC 호출 메서드를 사용하고 SOAP 또는 EJB 프로토콜을 사용하여 ServiceClientFactory를 구성하지 마십시오.
+>사용자 지정 구성 요소가 있고 SOAP 또는 EJB 프로토콜을 사용하여 동일한 로컬 서버에서 DSC를 호출하는 경우 업그레이드 후 해당 호출이 작동하지 않는 경우, VM([DSC_IN_VM_PASSTHTHROUGH_STRATEGY](https://www.adobe.io/experience-manager/reference-materials/6-4/forms/programlc/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html)) 호출 전략을 참조하십시오. 기본 ServiceClientFactory와 함께 VM 내 DSC 호출 메서드를 사용하고 SOAP 또는 EJB 프로토콜을 사용하여 ServiceClientFactory를 구성하지 마십시오.
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 구성 요소 배포 {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
-다음 Java 예에서는 *adobe-emailSample-dsc.jar*&#x200B;라는 JAR 파일을 기반으로 하는 구성 요소를 배포합니다.
+다음 Java 예에서는 라는 JAR 파일을 기반으로 하는 구성 요소를 배포합니다 *adobe-emailSample-dsc.jar*.
 
 ```as3
  /* 
@@ -152,7 +156,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 서비스의 실행 컨텍스트 설정 {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}
 
-다음 Java 코드 예제에서는 Run-As Invoker 실행 컨텍스트를 *EncryptDocument* 예제 서비스로 설정합니다.
+다음 Java 코드 예제에서는 Run-As Invoker 실행 컨텍스트를 라는 예제 서비스로 설정합니다. *EncryptDocument*.
 
 ```as3
  /* 
@@ -357,7 +361,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 서비스 시작 {#quick-start-soap-mode-starting-a-service-using-the-java-api}
 
-다음 Java 코드 예제에서는 *SendEmailService*&#x200B;라는 서비스를 시작합니다.
+다음 Java 코드 예는 라는 서비스를 시작합니다 *SendEmailService*.
 
 ```as3
  package com.adobe.sample.servicemanager; 

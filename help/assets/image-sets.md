@@ -12,14 +12,18 @@ discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
 exl-id: af3f95aa-a162-4212-a20a-68b5a0e72d6d
 feature: Image Sets
 role: User
-source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2146'
-ht-degree: 11%
+source-wordcount: '2182'
+ht-degree: 12%
 
 ---
 
 # 이미지 세트 {#image-sets}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 이미지 세트는 사용자에게 축소판 이미지를 클릭하여 항목의 다른 보기를 볼 수 있는 통합된 보기 환경을 제공합니다. 이미지 세트를 사용하면 항목의 대체 보기를 표시할 수 있으며 뷰어는 이미지를 자세히 검사할 수 있는 확대/축소 도구를 제공합니다.
 
@@ -99,7 +103,7 @@ ht-degree: 11%
 
 ## 이미지 세트에서 자산 업로드 {#uploading-assets-in-image-sets}
 
-이미지 세트에 대한 이미지를 업로드하여 시작합니다. 사용자가 이미지 세트 뷰어에서 이미지를 확대/축소할 수 있으므로, 이미지를 선택할 때 확대/축소를 고려하십시오. 가장 큰 차원에서 이미지가 2000픽셀 이상인지 확인합니다. 이미지 세트는 많은 이미지 파일 형식을 지원하지만 무손실 TIFF, PNG 및 EPS 이미지를 사용하는 것이 좋습니다.
+이미지 세트에 대한 이미지를 업로드하여 시작합니다. 사용자가 이미지 세트 뷰어에서 이미지를 확대/축소할 수 있으므로, 이미지를 선택할 때 확대/축소를 고려하십시오. Make sure that the images are least 2000 pixels in the largest dimension. 이미지 세트는 많은 이미지 파일 형식을 지원하지만 무손실 TIFF, PNG 및 EPS 이미지를 사용하는 것이 좋습니다.
 
 이미지 세트에 대한 이미지를 업로드하는 것처럼 할 수 있습니다 [자산에서 다른 자산 업로드](managing-assets-touch-ui.md#uploading-assets).
 
@@ -142,8 +146,8 @@ ht-degree: 11%
 
 | 제한 유형 | 우수 사례 | 제한 적용 |
 | --- | --- | --- |
-| 세트당 중복 자산 수 | 중복 없음 | 20년 |
-| 설정당 최대 이미지 수 | 세트당 5-10개 이미지 | 1000년 |
+| 세트당 중복 자산 수 | 중복 없음 | 20 |
+| 설정당 최대 이미지 수 | 세트당 5-10개 이미지 | 1000 |
 
 참조 - [Dynamic Media 제한 사항](/help/assets/limitations.md).
 

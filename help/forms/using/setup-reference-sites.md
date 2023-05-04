@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 2feb4a9c-57ad-4c6b-a572-0047bc409bbb
 exl-id: 9c5d956c-06bc-4428-afcd-02b4f81b802f
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2911'
-ht-degree: 2%
+source-wordcount: '2947'
+ht-degree: 3%
 
 ---
 
 # AEM Forms 참조 사이트 설정 및 구성 {#set-up-and-configure-aem-forms-reference-sites}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 AEM Forms은 AEM Forms이 금융 서비스 업계 및 정부 기관에서 복잡한 트랜잭션을 언제 어디서나 간편하고 매력적인 디지털 경험으로 변환하는 데 어떻게 도움이 되는지를 보여 주는 참조 사이트 구현을 제공합니다.
 
@@ -69,22 +73,22 @@ We.Finance 및 We.Gov 참조 사이트에서는 기존 및 잠재 고객과 교�
   </tr> 
   <tr> 
    <td><a href="#installaemforms">AEM Forms 설치 및 구성</a></td> 
-   <td>작성자 및 게시</td> 
+   <td>작성 및 게시</td> 
    <td>AEM Forms 작성자 및 게시 인스턴스를 설치하고 구성합니다.</td> 
   </tr> 
   <tr> 
    <td><a href="#ssl">SSL 구성</a></td> 
-   <td>작성자 및 게시<br /> </td> 
+   <td>작성 및 게시<br /> </td> 
    <td>Acrobat Sign과의 보안 통신을 위해 SSL을 통해 HTTP를 활성화합니다.</td> 
   </tr> 
   <tr> 
    <td><p><a href="#externalizer">일 CQ Link Externalizer 구성 구성 구성</a></p> </td> 
-   <td>작성자 및 게시<br /> </td> 
+   <td>작성 및 게시<br /> </td> 
    <td><p>참조 사이트 사용 사례에서는 다양한 트랜잭션에 대한 이메일을 제공합니다. 이 설정은 이메일을 통한 뉴스레터 게재에 필요합니다. URL 및 이미지가 게시 인스턴스를 가리키도록 합니다. </p> </td> 
   </tr> 
   <tr> 
    <td><a href="#cqmail">일 CQ 메일 서비스 구성</a></td> 
-   <td>작성자 및 게시</td> 
+   <td>작성 및 게시</td> 
    <td>이메일 통신에 필요합니다.</td> 
   </tr> 
   <tr> 
@@ -104,22 +108,22 @@ We.Finance 및 We.Gov 참조 사이트에서는 기존 및 잠재 고객과 교�
   </tr> 
   <tr> 
    <td><a href="/help/forms/using/setup-reference-sites.md#optional-import-sample-data-into-microsoft-dynamics">Microsoft Dynamics로 샘플 데이터 가져오기</a></td> 
-   <td>작성자 및 게시</td> 
+   <td>작성 및 게시</td> 
    <td>신용 카드 신청, 주택 담보 대출 신청 및 주택 보험 신청 연습에 대한 샘플 데이터 가져오기</td> 
   </tr> 
   <tr> 
    <td><a href="/help/forms/using/setup-reference-sites.md#configure-oauth-cloud-service-for-microsoft-dynamics">Microsoft Dynamics용 OAuth 클라우드 서비스 구성</a></td> 
-   <td>작성자 및 게시</td> 
+   <td>작성 및 게시</td> 
    <td>AEM Forms과 Microsoft Dynamics 간의 통신을 사용하도록 AEM Forms에서 OAuth 클라우드 서비스를 구성합니다. </td> 
   </tr> 
   <tr> 
    <td><a href="#scheduler">Acrobat Sign 스케줄러 구성</a></td> 
-   <td>작성자 및 게시<br /> </td> 
+   <td>작성 및 게시<br /> </td> 
    <td>2분마다 상태를 확인하도록 스케줄러 구성을 변경합니다.</td> 
   </tr> 
   <tr> 
    <td><a href="#sign-service">참조 사이트 Acrobat Sign Cloud Service 구성</a></td> 
-   <td>작성자 및 게시<br /> </td> 
+   <td>작성 및 게시<br /> </td> 
    <td>참조 사이트 패키지와 함께 제공되는 구성이며 유효한 자격 증명으로 재구성해야 합니다.</td> 
   </tr> 
   <tr> 
@@ -129,7 +133,7 @@ We.Finance 및 We.Gov 참조 사이트에서는 기존 및 잠재 고객과 교�
   </tr> 
   <tr> 
    <td><a href="#fdm">양식 데이터 모델의 Rest 서비스 Swagger 파일 수정</a></td> 
-   <td>작성자 및 게시<br /> </td> 
+   <td>작성 및 게시<br /> </td> 
    <td>환경에 대한 서비스를 수정합니다.</td> 
   </tr> 
  </tbody> 

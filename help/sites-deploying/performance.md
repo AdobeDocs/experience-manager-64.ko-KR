@@ -1,8 +1,8 @@
 ---
 title: 성능 및 확장성
-seo-title: 성능 및 확장성
-description: '이 백서에서는 성능 지표 및 재해 복구 기능과 함께 AEM에 확장성을 구축하는 방법을 설명합니다.  '
-seo-description: '이 백서에서는 성능 지표 및 재해 복구 기능과 함께 AEM에 확장성을 구축하는 방법을 설명합니다.  '
+seo-title: Performance & Scalability
+description: 이 백서에서는 성능 지표 및 재해 복구 기능과 함께 AEM에 확장성을 구축하는 방법을 설명합니다.
+seo-description: This white paper discusses the ways scalability has been built into AEM along with performance indicators and disaster recovery features.
 uuid: 709ed651-534d-4b80-8f9b-ac99669f6f61
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,16 +10,20 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: c64fa860-92ef-4b47-a779-1e7d8ac56e16
 exl-id: e2015e30-9f42-431b-a384-e25047e4e83c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 2%
+source-wordcount: '108'
+ht-degree: 9%
 
 ---
 
 # 성능 및 확장성{#performance-scalability}
 
-## 백서:AEM 확장성, 성능 및 재해 복구 {#white-paper-aem-scalability-performance-and-disaster-recovery}
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+## 백서: AEM 확장성, 성능 및 재해 복구 {#white-paper-aem-scalability-performance-and-disaster-recovery}
 
 이 백서에서는 뛰어난 성능 지표와 뛰어난 재해 복구 기능과 함께 Adobe Experience Manager에 확장성이 구현된 방법에 대해 설명합니다.
 

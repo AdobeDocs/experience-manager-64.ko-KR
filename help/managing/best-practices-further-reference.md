@@ -10,14 +10,18 @@ topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 exl-id: d561bb0a-352f-4be2-95ed-32dd1e2b4019
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3741'
+source-wordcount: '3777'
 ht-degree: 2%
 
 ---
 
 # 검사 목록 - 추가 참조{#the-checklist-further-reference}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 이 페이지에서는 가 포함하는 문서 및 원칙을 상세하게 설명하고 보완할 수 있습니다 [프로젝트 관리 - 우수 사례 검사 목록](/help/managing/best-practices.md).
 
@@ -34,8 +38,8 @@ AEM을 구현할 때(특히 처음으로) [AEM 기능 및 워크플로우](https
 사용할 AEM의 기능과 디자인에 미치는 영향을 고려해 보십시오. 예:
 
 * [상거래](/help/sites-administering/ecommerce.md)
-* [스크린](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
-* [에셋](/help/assets/assets.md)
+* [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Assets](/help/assets/assets.md)
 * [태그](/help/sites-administering/tags.md)
 * [다중 사이트 관리 및 번역](/help/sites-administering/msm-and-translation.md)
 * [Forms](/help/forms/home.md)
@@ -138,7 +142,7 @@ AEM은 다른 Adobe 제품 및/또는 타사 서비스와 통합할 수 있습�
 
 이러한 지표는 다음과 같습니다.
 
-* 비즈니스:
+* 상업:
 
    * 주요 비즈니스 목표를 측정하는 데 사용됩니다.
    * 비즈니스/시나리오에 적합한 KPI를 정의, 측정 방법, 사용 방법 및 누구에 따라 정확하게 선택하는 것이 중요합니다.
@@ -455,7 +459,7 @@ Target 지표는 프로젝트를 시작할 때 다음과 같이 정의됩니다.
 
 
 
-* **컨텐트**
+* **콘텐츠**
 
    * 기본 아키텍처:
       * 컨텐츠 계층 구조를 제어합니다.

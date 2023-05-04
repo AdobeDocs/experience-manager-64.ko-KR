@@ -1,8 +1,8 @@
 ---
 title: 자격 증명 사용 정보 검토
-seo-title: 자격 증명 사용 정보 검토
+seo-title: Review credential use information
 description: 자격 증명 사용 정보를 검토하는 방법을 알아봅니다.
-seo-description: 자격 증명 사용 정보를 검토하는 방법을 알아봅니다.
+seo-description: Learn how to review credential use information.
 uuid: 02af75f9-c235-470d-a98b-a2102aa31381
 contentOwner: admin
 content-type: reference
@@ -10,26 +10,30 @@ geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: cdf61cff-768b-49f7-9926-400bc96b0708
 exl-id: abd62cca-edf0-4b44-94c3-7af3116b0c54
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 0%
+source-wordcount: '216'
+ht-degree: 3%
 
 ---
 
 # 자격 증명 사용 정보 검토 {#review-credential-use-information}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 자격 증명에는 Acrobat Reader DC 확장 최종 사용자 웹 애플리케이션을 통해 액세스할 수 있는 용도를 설명하는 정보가 포함되어 있습니다. 이 정보를 사용하여 설치된 자격 증명 유형(평가 또는 프로덕션)과 해당 유효 날짜를 결정할 수 있습니다.
 
 1. 웹 브라우저를 열고 다음 URL을 입력합니다.
 
-   http://localhost:*[port]*/ReaderExtensions(여기서 *[port]*&#x200B;는 애플리케이션 서버의 포트 번호입니다.)
+   http://localhost:*[포트]*/ReaderExtensions(여기서) *[포트]* 은 애플리케이션 서버의 포트 번호입니다.)
 
 1. 기본 사용자 이름과 암호를 사용하여 로그인합니다.
 
-   사용자 이름:관리자
+   사용자 이름: 관리자
 
-   암호:암호
+   암호: 암호
 
    >[!NOTE]
    >

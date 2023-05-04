@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 exl-id: fa5b9b61-7dba-42e0-8fbd-4a96617569d8
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2310'
+source-wordcount: '2346'
 ht-degree: 1%
 
 ---
 
 # SAP Commerce Cloud를 사용하여 개발{#developing-with-sap-commerce-cloud}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
@@ -419,9 +423,9 @@ public class AxisFilter implements VariantFilter {
       * `String CommerceSession.getProductPrice(Product product)`
 
 
-**저장 용량**
+**스토리지**
 
-* 저장 용량
+* 스토리지
 
    * hybris의 경우, hybris 서버가 장바구니를 소유합니다.
    * AEM 일반 케이스 카트에서 의 [ClientContext](/help/sites-administering/client-context.md).

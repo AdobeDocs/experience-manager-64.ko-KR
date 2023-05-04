@@ -1,31 +1,35 @@
 ---
 title: 작업에 대한 탭 사용자 정의
-seo-title: 작업에 대한 탭 사용자 정의
+seo-title: Customizing tabs for a task
 description: AEM Forms 작업 영역에서 작업 탭 이름을 사용자 지정하는 방법
-seo-description: AEM Forms 작업 영역에서 작업 탭 이름을 사용자 지정하는 방법
+seo-description: How-to customize the names of the tabs for your tasks, in LiveCycle AEM Forms workspace.
 uuid: 77eabb63-f8ea-4ec0-8a41-b51c65cdecc0
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ac0a281f-f589-4a70-9bc7-1a23e054b02f
 exl-id: 42671435-e0f0-41db-af83-182b01742954
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '121'
-ht-degree: 0%
+source-wordcount: '137'
+ht-degree: 5%
 
 ---
 
-# 작업 {#customizing-tabs-for-a-task} 탭 사용자 지정
+# 작업에 대한 탭 사용자 정의 {#customizing-tabs-for-a-task}
 
-`Start Process` Uber 보기의 `Start Process` 구성 요소와 `ToDo` Uber 보기의 `Task Details` 구성 요소에 대한 탭 이름을 사용자 지정할 수 있습니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
-1. AEM Forms 작업 공간 사용자 지정에 대한 [일반 절차](/help/forms/using/generic-steps-html-workspace-customization.md)를 따르십시오.
-1. `translation.json` 파일에서 `tabname`의 값을 변경합니다.
+에 대한 탭 이름을 사용자 지정할 수 있습니다 `Start Process` 의 구성 요소 `Start Process` Uber 보기 및 `Task Details` 의 구성 요소 `ToDo` Uber 보기.
 
-   예를 들어, 영어의 `/apps/ws/locales/en-US/translation.json`을 다음과 같이 변경하십시오.
+1. 다음을 수행합니다 [AEM Forms 작업 공간 사용자 지정을 위한 일반 단계](/help/forms/using/generic-steps-html-workspace-customization.md).
+1. 값 변경 `tabname`에서 `translation.json` 파일.
 
-   * 시작 프로세스에서 시작된 작업의 경우 `"startprocess" : {}` 블록에서 다음 코드 조각을 사용하십시오.
+   예를 들어, `/apps/ws/locales/en-US/translation.json` 를 사용하여 다음을 수행할 수 있습니다.
+
+   * 시작 프로세스에서 시작된 작업의 경우, `"startprocess" : {}` 차단.
 
    ```
    "tabname" : {
@@ -36,7 +40,7 @@ ht-degree: 0%
            }
    ```
 
-   * To-do 작업의 경우 `"todo" : {}` 블록의 다음 코드 조각을 사용하십시오.
+   * To-do의 작업에 대해서는 `"todo" : {}` 차단.
 
    ```
    "tabname" : {

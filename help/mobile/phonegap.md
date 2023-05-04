@@ -2,25 +2,29 @@
 title: PhoneGap
 seo-title: PhoneGap
 description: PhoneGap
-seo-description: 'AEM에서 Adobe PhoneGap Enterprise용 작성을 시작하려면 이 페이지를 따르십시오.  '
+seo-description: Follow this page to get started with authoring for Adobe PhoneGap Enterprise in AEM.
 uuid: 256a9f66-4c66-434c-be79-01be3c02d688
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: d9ab4d38-1c17-477d-9341-02bda80f3c23
 exl-id: 33eeb203-1e4b-4112-ab08-f13b9e0b82bb
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 5%
+source-wordcount: '237'
+ht-degree: 7%
 
 ---
 
 # PhoneGap{#phonegap}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
 Adobe Experience Manager (AEM) Mobile은 전체 AEM 플랫폼을 구성하는 한 기둥에 지나지 않습니다.
 
@@ -28,11 +32,11 @@ Adobe Experience Manager (AEM) Mobile은 전체 AEM 플랫폼을 구성하는 �
 
 * **관리자**
 * **개발자**
-* **작성**
+* **작성자**
 
 ## PhoneGap 응용 프로그램 작성 {#authoring-phonegap-applications}
 
-***AEM Author*(또는 *Marketter*)**는 기본 제공 템플릿 및 구성 요소를 사용하여 페이지를 추가 및 편집하고, 구성 요소를 드래그 앤 드롭하고, 이미지, 비디오 및 텍스트 조각(컨텐츠 조각)을 포함하여 DAM에서 모든 유형의 미디어를 추가할 수 있습니다.
+An ***AEM 작성자* 또는 *마케터*)**기본 제공 템플릿 및 구성 요소를 사용하여 페이지를 추가 및 편집하고, 구성 요소를 드래그 앤 드롭하고, 이미지, 비디오 및 텍스트 조각(컨텐츠 조각)을 포함하여 DAM에서 모든 유형의 미디어를 추가할 수 있습니다.
 
 시작하려면 다음 리소스를 참조하십시오.
 
@@ -44,7 +48,7 @@ Adobe Experience Manager (AEM) Mobile은 전체 AEM 플랫폼을 구성하는 �
 * [만들기 마법사를 사용하여 새 AEM Mobile 앱 만들기](/help/mobile/phonegap-create-new-app.md)
 * [기존 하이브리드 앱 가져오기](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
-**컨텐츠 서비스**&#x200B;에 대해 알아보려면 [컨텐츠 서비스 개요](/help/mobile/develop-content-as-a-service.md)를 참조하십시오.
+알아보기 **컨텐츠 서비스**&#x200B;를 참조하십시오. [컨텐츠 서비스 개요](/help/mobile/develop-content-as-a-service.md) 시작하기
 
 ## 추가 리소스 {#additional-resources}
 

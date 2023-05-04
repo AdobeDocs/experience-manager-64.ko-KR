@@ -1,5 +1,5 @@
 ---
-title: 라이브 카피 생성 및 동기화
+title: Live Copy 생성 및 동기화
 seo-title: Creating and Synchronizing Live Copies
 description: Live Copy를 만들고 동기화하는 방법을 알아봅니다.
 seo-description: Learn how to create and synchronize Live Copies.
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 161b591b-5871-4b5f-9c63-823b6e67b1fd
 feature: Multi Site Manager
 exl-id: 13d044bd-fa61-4e24-ac1d-69a6f10847a4
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4006'
+source-wordcount: '4042'
 ht-degree: 44%
 
 ---
 
-# 라이브 카피 생성 및 동기화{#creating-and-synchronizing-live-copies}
+# Live Copy 생성 및 동기화{#creating-and-synchronizing-live-copies}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 페이지나 블루프린트 구성에서 Live Copy를 만든 다음 상속 및 동기화를 관리할 수 있습니다.
 
@@ -570,7 +574,7 @@ Live Copy 페이지를 다음으로 재설정:
 
 1. 두 페이지(Live Copy 및 블루프린트)가 나란히 열립니다.
 
-   이 기능의 사용에 대한 자세한 내용은 [페이지 비교](/help/sites-authoring/page-diff.md)를 참조하십시오.
+   이 기능 사용에 대한 자세한 내용은 [페이지 비교](/help/sites-authoring/page-diff.md).
 
 ## 라이브 카피 분리 {#detaching-a-live-copy}
 

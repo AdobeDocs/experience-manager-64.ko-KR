@@ -1,8 +1,8 @@
 ---
 title: 구성 요소 테스트로드
-seo-title: 구성 요소 테스트로드
+seo-title: Component Sideloading
 description: 커뮤니티 구성 요소 테스트로드는 웹 페이지가 사이트 방문자가 선택한 내용에 따라 표시되는 내용을 동적으로 변경하는 간단한 단일 페이지 앱으로 디자인될 때 유용합니다
-seo-description: 커뮤니티 구성 요소 테스트로드는 웹 페이지가 사이트 방문자가 선택한 내용에 따라 표시되는 내용을 동적으로 변경하는 간단한 단일 페이지 앱으로 디자인될 때 유용합니다
+seo-description: Communities component sideloading is useful when a web page is designed as a simple, single page app that dynamically alters what is displayed depending on what is selected by the site visitor
 uuid: 8c9a5fde-26a3-4610-bc14-f8b665059015
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a9cb5294-e5ab-445b-b7c2-ffeecda91c50
 exl-id: 12fdc503-29b6-4970-a883-c22162f7a9eb
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 0%
+source-wordcount: '441'
+ht-degree: 2%
 
 ---
 
 # 구성 요소 테스트로드 {#component-sideloading}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ## 개요 {#overview}
 
@@ -33,7 +37,7 @@ SCF 구성 요소를 동적으로 추가하는 단계는 다음과 같습니다.
 
 1. [DOM에 구성 요소 추가](#dynamically-add-component-to-dom)
 
-1. [다음 두 ](#sideload-by-invoking-scf) 가지 방법 중 하나를 사용하여 구성 요소를 테스트하십시오.
+1. [구성 요소를 테스트하여 로드합니다](#sideload-by-invoking-scf) 다음 두 방법 중 하나를 사용합니다.
 
 * [동적 포함](#dynamic-inclusion)
    * 동적으로 추가된 모든 구성 요소를 부트스트랩
@@ -42,9 +46,9 @@ SCF 구성 요소를 동적으로 추가하는 단계는 다음과 같습니다.
 
 >[!NOTE]
 >
->기존 리소스가 아닌 [의 사이드로드는 지원되지 않습니다.](scf.md#add-or-include-a-communities-component)
+>테스트용 로드 [비기존 리소스](scf.md#add-or-include-a-communities-component) 은 지원되지 않습니다.
 
-## DOM {#dynamically-add-component-to-dom}에 동적으로 구성 요소 추가
+## 동적으로 DOM에 구성 요소 추가 {#dynamically-add-component-to-dom}
 
 구성 요소가 동적으로 포함되거나 동적으로 로드되는지 여부에 관계없이 먼저 DOM에 추가해야 합니다.
 
@@ -52,11 +56,11 @@ SCF 구성 요소를 추가할 때 사용하는 가장 일반적인 태그는 DI
 
 어떤 태그를 사용하든, 적어도 이러한 두 속성을 포함함으로써 요소는 일반적인 SCF 루트 요소 패턴을 준수해야 합니다.
 
-* **data-component-**
-id 추가된 구성 요소의 유효한 경로입니다
+* **data-component-id**
+추가된 구성 요소의 유효 경로
 
-* **data-scf-**
-component구성 요소의 resourceType입니다
+* **data-scf-component**
+구성 요소의 resourceType
 
 다음은 추가된 댓글 구성 요소의 한 예입니다.
 
@@ -69,7 +73,7 @@ component구성 요소의 resourceType입니다
 </div>
 ```
 
-## SCF {#sideload-by-invoking-scf}를 호출하여 테스트용 로드
+## SCF를 호출하여 테스트용 로드 {#sideload-by-invoking-scf}
 
 ### 동적 포함 {#dynamic-inclusion}
 
@@ -79,12 +83,12 @@ component구성 요소의 resourceType입니다
 
 $(document).trigger(SCF.events.BOOTSTRAP_REQUEST);
 
-### 동적 로드 중 {#dynamic-loading}
+### 동적 로드 {#dynamic-loading}
 
 동적 로드는 SCF 구성 요소 로드를 제어할 수 있도록 합니다.
 
 DOM에 있는 모든 SCF 구성 요소를 부트스트랩하는 대신 이 JavaScript 메서드를 사용하여 로드할 특정 SCF 구성 요소를 지정할 수 있습니다.
 
-SCF.addComponent(document.getElementById(*someId*));
+SCF.addComponent(document.getElementById()*someId*));
 
-여기서 *someId*&#x200B;는 **data-component-id** 특성의 값입니다.
+위치 *someId* 는 의 값입니다 **data-component-id** 속성을 사용합니다.

@@ -1,32 +1,36 @@
 ---
 title: 비디오 자산 검색
-description: 키워드, Mime 유형, 크기 또는 최근에 수정한 타임스탬프와 같은 파일 속성을 사용하여 [!DNL Experience Manager] Assets에서 파일을 빠르게 찾습니다.
+description: '키워드, 파일 속성(예: Mime 유형, 크기 또는 최근에 수정한 타임스탬프)을 사용하여 파일에서 파일을 빠르게 찾을 수 있습니다 [!DNL Experience Manager] 자산.'
 contentOwner: AG
 feature: Video,Search
 role: User
 exl-id: d5f0beb2-e59f-47cd-8e83-698d8a1dcec3
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 3%
+source-wordcount: '613'
+ht-degree: 4%
 
 ---
 
 # 비디오 자산 검색 {#searching-video-assets}
 
-수백 개의 비디오를 검색할 수 있는 시간을 절약하고, 키워드, 파일 유형과 같은 파일 속성 또는 최근에 수정된 타임스탬프를 사용하여 파일을 신속하게 찾을 수 있습니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
-찾고 있는 파일이 표시되지 않으면 검색 결과 하단에 있는 옵션 중 하나를 클릭하여 전체 검색 범위를 변경할 수 있습니다. 예를 들어 문서 라이브러리에서 파일을 검색하지만 찾을 수 없는 경우 라이브러리 를 클릭하여 검색을 나머지 라이브러리로 확장할 수 있습니다. 자세한 내용은 [파일 또는 폴더 찾기](https://windows.microsoft.com/en-us/windows7/find-a-file-or-folder)를 참조하십시오.
+수백 개의 비디오를 검색할 수 있는 시간을 절약하려면 키워드, 파일 유형과 같은 파일 속성 또는 최근에 수정된 타임스탬프를 사용하여 파일을 신속하게 찾을 수 있습니다.
+
+찾고 있는 파일이 표시되지 않으면 검색 결과 하단에 있는 옵션 중 하나를 클릭하여 전체 검색 범위를 변경할 수 있습니다. 예를 들어 문서 라이브러리에서 파일을 검색하지만 찾을 수 없는 경우 라이브러리 를 클릭하여 검색을 나머지 라이브러리로 확장할 수 있습니다. 자세한 내용은 [파일 또는 폴더 찾기](https://windows.microsoft.com/en-us/windows7/find-a-file-or-folder).
 
 다음 속성 중 하나 이상을 기반으로 디지털 자산을 검색할 수 있습니다.
 
 | 검색 필드 | 속성 값 검색 |
 |---|---|
-| MIME 유형 | [!UICONTROL 이미지],  [!UICONTROL 문서],  [!UICONTROL 멀티미디어],  [!UICONTROL 아카이브] 또는 기타. |
+| MIME 유형 | [!UICONTROL 이미지], [!UICONTROL 문서], [!UICONTROL 멀티미디어], [!UICONTROL 아카이브]또는 기타. |
 | [!UICONTROL 마지막 수정 날짜] | 시간, 일, 주, 월 또는 년입니다. |
 | [!UICONTROL 파일 크기] | 작은, 중간 또는 큰. |
-| [!UICONTROL 게시 상태] | 게시됨 또는 게시 취소됨. |
-|  ApprovalStatus | 승인됨 또는 거부됨. |
+| [!UICONTROL 게시] 상태 | 게시됨 또는 게시 취소됨. |
+| [!UICONTROL 승인] 상태 | 승인됨 또는 거부됨. |
 | [!UICONTROL 방향] | 가로, 세로 또는 정사각형입니다. |
 | [!UICONTROL 스타일] | 색상 또는 흑백 |
 | 비디오 높이 | 최소값과 최대값으로 지정됩니다.값은 비디오 표현물의 메타데이터만 저장합니다. |
@@ -37,7 +41,7 @@ ht-degree: 3%
 | 오디오 코덱 | Libvorbis, Lower Mp3, AAC Encoding.Value는 비디오 표현물의 메타데이터만 저장합니다. |
 | 오디오 비트율 | 최소값과 최대값으로 지정됩니다.값은 비디오 표현물의 메타데이터만 저장합니다. |
 
-1. **[!UICONTROL Experience Manager]** 페이지의 왼쪽 레일에서 **[!UICONTROL 자산]**&#x200B;을 탭합니다.
+1. 설정 **[!UICONTROL Experience Manager]** 페이지의 왼쪽 레일에서 를 탭합니다. **[!UICONTROL 자산]**.
 
    왼쪽 레일이 표시되지 않으면 레일 전환 아이콘을 탭합니다(아이콘의 행은 짙은 회색 또는 파란색으로 표시됨).
 
@@ -59,4 +63,4 @@ ht-degree: 3%
 
       키워드를 입력하고 Enter 키를 누르지 않고 비디오나 오디오 속성 목록을 확장한 다음 원하는 값을 설정합니다.
 
-1. (선택 사항) 페이지 하단에서 **[!UICONTROL 스마트 컬렉션 저장]**&#x200B;을 탭하고 검색 이름을 입력합니다. 저장된 검색을 Adobe Experience Manager 계정의 다른 사용자가 사용할 수 있도록 하려면 **[!UICONTROL 공용]**&#x200B;을 선택합니다. 계정에 로그인한 경우에만 검색을 사용할 수 있도록 하려면 선택을 취소합니다. **[!UICONTROL 저장]**&#x200B;을 누릅니다.
+1. (선택 사항) 페이지 하단 근처에 있는 **[!UICONTROL 스마트 컬렉션 저장]**&#x200B;을 입력합니다. 검색 이름을 입력합니다. 확인 **[!UICONTROL 공용]** 저장된 검색을 Adobe Experience Manager 계정의 다른 사용자가 사용할 수 있도록 하려는 경우. 계정에 로그인한 경우에만 검색을 사용할 수 있도록 하려면 선택을 취소합니다. 탭 **[!UICONTROL 저장]**.

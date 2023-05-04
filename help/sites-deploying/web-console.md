@@ -1,26 +1,30 @@
 ---
 title: 웹 콘솔
-seo-title: 웹 콘솔
+seo-title: Web Console
 description: AEM 웹 콘솔을 사용하는 방법을 알아봅니다.
-seo-description: AEM 웹 콘솔을 사용하는 방법을 알아봅니다.
+seo-description: Learn how to use the AEM web console.
 uuid: 7856b2b3-4216-421d-a315-cd9a55936362
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
-feature: 구성
+feature: Configuring
 exl-id: a8a3267d-2af5-4cca-b76d-66de62d93f69
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '754'
 ht-degree: 4%
 
 ---
 
 # 웹 콘솔{#web-console}
 
-AEM의 웹 콘솔은 [Apache Felix 웹 관리 콘솔](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html)을 기반으로 합니다. Apache Felix는 OSGi 프레임워크 및 표준 서비스가 포함된 OSGi R4 서비스 플랫폼을 구현하기 위한 커뮤니티 활동입니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+AEM의 웹 콘솔은 [Apache Felix 웹 관리 콘솔](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix는 OSGi 프레임워크 및 표준 서비스가 포함된 OSGi R4 서비스 플랫폼을 구현하기 위한 커뮤니티 활동입니다.
 
 >[!NOTE]
 >
@@ -30,31 +34,31 @@ AEM의 웹 콘솔은 [Apache Felix 웹 관리 콘솔](https://felix.apache.org/d
 
 웹 콘솔에는 다음과 같은 OSGi 번들을 유지 관리하기 위한 다양한 탭이 있습니다.
 
-* [구성](#configuration):OSGi 번들을 구성하는 데 사용되며, 따라서 AEM 시스템 매개 변수를 구성하는 기본 메커니즘입니다
-* [번들](#bundles):번들 설치에 사용됨
-* [구성 요소](#components):AEM에 필요한 구성 요소의 상태를 제어하는 데 사용됩니다.
+* [구성](#configuration): OSGi 번들을 구성하는 데 사용되며, 따라서 AEM 시스템 매개 변수를 구성하는 기본 메커니즘입니다
+* [번들](#bundles): 번들 설치에 사용됨
+* [구성 요소](#components): AEM에 필요한 구성 요소의 상태를 제어하는 데 사용됩니다.
 
 변경된 내용은 실행 중인 시스템에 즉시 적용됩니다. 다시 시작할 필요가 없습니다.
 
-`../system/console`;에서 콘솔에 액세스할 수 있습니다.예:
+콘솔에서 액세스할 수 있습니다 `../system/console`; 예:
 
 `http://localhost:4502/system/console/components`
 
 ## 구성 {#configuration}
 
-**구성** 탭은 OSGi 번들을 구성하는 데 사용되므로 AEM 시스템 매개 변수를 구성하는 기본 메커니즘입니다.
+다음 **구성** 탭은 OSGi 번들을 구성하는 데 사용되며, 따라서 AEM 시스템 매개 변수를 구성하는 기본 메커니즘입니다.
 
 >[!NOTE]
 >
->자세한 내용은 [웹 콘솔을 사용한 OSGi 구성](/help/sites-deploying/configuring-osgi.md)을 참조하십시오.
+>자세한 내용은 [웹 콘솔을 사용한 OSGi 구성](/help/sites-deploying/configuring-osgi.md) 자세한 내용
 
-다음 중 한 방법으로 **구성** 탭에 액세스할 수 있습니다.
+다음 **구성** 탭은 다음 중 한 방법으로 액세스할 수 있습니다.
 
 * 드롭다운 메뉴:
 
    **OSGi >**
 
-* URL;예:
+* URL; 예:
 
    `http://localhost:4502/system/console/configMgr`
 
@@ -64,14 +68,14 @@ AEM의 웹 콘솔은 [Apache Felix 웹 관리 콘솔](https://felix.apache.org/d
 
 이 화면의 드롭다운 목록에서 사용할 수 있는 구성 유형은 다음 두 가지가 있습니다.
 
-* ****
-구성기존 구성을 업데이트할 수 있습니다. 여기에는 PID(영구 ID)가 있으며 다음 중 하나일 수 있습니다.
+* **구성**
+기존 구성을 업데이트할 수 있습니다. 여기에는 PID(영구 ID)가 있으며 다음 중 하나일 수 있습니다.
 
-   * AEM에 대한 표준 및 필수 사항입니다.이러한 값은 삭제된 경우 기본 설정으로 반환됩니다.
-   * 공장 구성에서 생성된 인스턴스이러한 인스턴스는 사용자가 만들고, 삭제하면 인스턴스가 제거됩니다.
+   * AEM에 대한 표준 및 필수 사항입니다. 이러한 값은 삭제된 경우 기본 설정으로 반환됩니다.
+   * 공장 구성에서 생성된 인스턴스 이러한 인스턴스는 사용자가 만들고, 삭제하면 인스턴스가 제거됩니다.
 
-* **팩터리**
-구성필요한 기능 개체의 인스턴스를 만들 수 있습니다.
+* **출하 시 구성**
+필요한 기능 개체의 인스턴스를 만들 수 있습니다.
 
    영구 ID를 할당받은 다음 구성 드롭다운 목록에 나열됩니다.
 
@@ -105,13 +109,13 @@ AEM의 웹 콘솔은 [Apache Felix 웹 관리 콘솔](https://felix.apache.org/d
 
 ## 번들 {#bundles}
 
-**번들** 탭은 AEM에 필요한 OSGi 번들을 설치하는 메커니즘입니다. 탭은 다음 방법 중 하나로 액세스할 수 있습니다.
+다음 **번들** 탭은 AEM에 필요한 OSGi 번들을 설치하는 메커니즘입니다. 탭은 다음 방법 중 하나로 액세스할 수 있습니다.
 
 * 드롭다운 메뉴:
 
    **OSGi >**
 
-* URL;예:
+* URL; 예:
 
    `http://localhost:4502/system/console/bundles`
 
@@ -123,7 +127,7 @@ AEM의 웹 콘솔은 [Apache Felix 웹 관리 콘솔](https://felix.apache.org/d
 
 * **설치 또는 업데이트**
 
-   **찾아보기**&#x200B;에서 번들이 포함된 파일을 찾고 **시작**&#x200B;즉시 및 **시작 수준**&#x200B;을 지정해야 하는지 여부를 지정할 수 있습니다.
+   다음을 수행할 수 있습니다 **찾아보기** 번들이 포함된 파일을 찾고 이 파일을 사용할지 여부를 지정합니다 **시작** 즉시 **시작 수준**.
 
 * **다시 로드**
 
@@ -149,21 +153,21 @@ AEM의 웹 콘솔은 [Apache Felix 웹 관리 콘솔](https://felix.apache.org/d
 
 * **상태 보기**
 
-   목록에는 번들의 현재 상태가 지정됩니다.자세한 내용을 보려면 특정 번들의 이름을 클릭하십시오.
+   목록에는 번들의 현재 상태가 지정됩니다. 자세한 내용을 보려면 특정 번들의 이름을 클릭하십시오.
 
 >[!NOTE]
 >
->**업데이트** 후에는 **패키지 새로 고침**&#x200B;을 수행하는 것이 좋습니다.
+>후 **업데이트** 다음을 수행하는 것이 좋습니다 **패키지 새로 고침**.
 
 ## 구성 요소 {#components}
 
-**구성 요소** 탭에서는 다양한 구성 요소를 활성화 및/또는 비활성화할 수 있습니다. 다음 중 한 방법으로 액세스할 수 있습니다.
+다음 **구성 요소** 탭에서는 다양한 구성 요소를 활성화 및/또는 비활성화할 수 있습니다. 다음 중 한 방법으로 액세스할 수 있습니다.
 
 * 드롭다운 메뉴:
 
    **기본 >**
 
-* URL;예:
+* URL; 예:
 
    `http://localhost:4502/system/console/components`
 

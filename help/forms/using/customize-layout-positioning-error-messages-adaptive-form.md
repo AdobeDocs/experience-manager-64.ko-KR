@@ -1,22 +1,26 @@
 ---
 title: 적응형 양식의 레이아웃 및 오류 메시지 위치 지정
-seo-title: 적응형 양식의 레이아웃 및 오류 메시지 위치 지정
-description: '응용 프로그램의 레이아웃 및 오류 메시지 위치를 사용자 지정할 수 있습니다. '
-seo-description: '응용 프로그램의 레이아웃 및 오류 메시지 위치를 사용자 지정할 수 있습니다. '
+seo-title: Customize layout and positioning of error messages of an adaptive form
+description: 응용 프로그램의 레이아웃 및 오류 메시지 위치를 사용자 지정할 수 있습니다.
+seo-description: You can customize layout and positioning of the error messages of an adaptive for.
 uuid: 18b6d770-8b68-4aa0-b866-6325a6ceabcf
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: e1431ad9-3bae-4ac3-97e2-96dcbfce1f71
 exl-id: a57bd3c4-2d50-4089-8279-1e403e9469bf
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 1%
+source-wordcount: '560'
+ht-degree: 2%
 
 ---
 
-# 적응형 양식 {#customize-layout-and-positioning-of-error-messages-of-an-adaptive-form} 의 레이아웃 및 오류 메시지 위치를 사용자 지정합니다.
+# 적응형 양식의 레이아웃 및 오류 메시지 위치 지정 {#customize-layout-and-positioning-of-error-messages-of-an-adaptive-form}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 적응형 양식의 오류 메시지의 레이아웃 및 위치를 사용자 지정할 수 있습니다. 다음 사용자 지정을 수행할 수 있습니다.
 
@@ -29,27 +33,27 @@ ht-degree: 1%
 
 단일 필드 또는 모든 필드의 레이아웃을 사용자 지정하여 캡션 및 오류 메시지의 위치를 변경할 수 있습니다. 다음 단계를 수행하여 사용자 지정 레이아웃을 필드에 적용합니다.
 
-### 단일 필드 {#customize-layout-of-a-single-field} 레이아웃 사용자 지정
+### 단일 필드의 레이아웃 사용자 지정 {#customize-layout-of-a-single-field}
 
 사용자 지정 레이아웃을 단일 필드에 적용하려면 다음 단계를 수행하십시오.
 
-1. **스타일** 모드로 양식을 엽니다. 스타일 모드에서 양식을 열려면 페이지 도구 모음에서 ![canvas-drop-down](assets/canvas-drop-down.png) > **스타일**&#x200B;을 누릅니다.
-1. 사이드바의 **양식 객체**&#x200B;에서 필드를 선택하고 편집 단추 ![편집-단추](assets/edit-button.png)를 누릅니다.
+1. 양식을 엽니다. **스타일** 모드. 스타일 모드에서 양식을 열려면 페이지 도구 모음에서 탭 ![캔버스 드롭다운](assets/canvas-drop-down.png) > **스타일**.
+1. 사이드바에서 **양식 개체**, 필드를 선택하고 편집 단추를 누릅니다 ![편집 단추](assets/edit-button.png).
 1. 사용자 지정할 필드의 상태를 선택하고 해당 상태에 대한 스타일을 지정합니다.
 
    ![필드의 인라인 스타일 지정](assets/edit-error-state.png)
 
-### {#customize-layout-of-all-the-fields-of-a-form} 양식의 모든 필드의 레이아웃을 사용자 지정합니다.
+### 양식의 모든 필드 레이아웃 사용자 지정 {#customize-layout-of-all-the-fields-of-a-form}
 
-이제 AEM Forms을 사용하여 테마를 만들어 양식에 적용할 수 있습니다. 테마 편집기를 사용하면 양식 구성 요소의 스타일을 한 위치에 지정할 수 있습니다. 테마를 만들 때 구성 요소 수준에서 스타일을 지정합니다. 주제에 대한 자세한 내용은 [AEM Forms의 테마](/help/forms/using/themes.md)를 참조하십시오.
+이제 AEM Forms을 사용하여 테마를 만들어 양식에 적용할 수 있습니다. 테마 편집기를 사용하면 양식 구성 요소의 스타일을 한 위치에 지정할 수 있습니다. 테마를 만들 때 구성 요소 수준에서 스타일을 지정합니다. 테마에 대한 자세한 내용은 [AEM Forms의 테마](/help/forms/using/themes.md).
 
 테마 편집기를 사용하여 양식의 모든 필드 레이아웃을 사용자 지정하는 테마를 만듭니다. 테마를 만든 후 다음 단계를 수행하여 양식에 적용합니다.
 
 1. 편집 모드에서 양식을 엽니다.
-1. 편집 모드에서 구성 요소를 선택한 다음 ![필드 수준](assets/field-level.png) > **적응형 양식 컨테이너**&#x200B;를 탭한 다음 ![cmppr](assets/cmppr.png)를 탭합니다.
+1. 편집 모드에서 구성 요소를 선택한 다음 ![필드 수준](assets/field-level.png) > **적응형 양식 컨테이너**&#x200B;를 누른 다음 탭합니다. ![cmppr](assets/cmppr.png).
 1. 사이드바의 적응형 양식 테마 아래에서 테마 편집기를 사용하여 만든 테마를 선택합니다.
 
-## 사용자 지정 필드 레이아웃 {#create-a-custom-field-layout} 만들기
+## 사용자 지정 필드 레이아웃 만들기 {#create-a-custom-field-layout}
 
 1. CRXDE Lite를 엽니다. 기본 URL은 `https://[Server]:[Port]/crx/de`.
 1. /libs/fd/af/layouts/field 노드(예: defaultFieldLayout)에서 /apps 노드(예: /apps/af-field-layout)로 필드 레이아웃을 복사합니다.
@@ -81,7 +85,7 @@ ht-degree: 1%
    ```
 
 1. 모양과 동작을 향상하려면 레이아웃 파일에서 만든 클라이언트 라이브러리를 포함합니다(errorOnRight.jsp).
-1. 필드의 편집 대화 상자를 열고 **스타일링** 탭을 선택합니다. **필드 레이아웃 구성** 드롭다운 상자에서 새로 만든 레이아웃을 선택하고 **확인**&#x200B;을 클릭합니다.
+1. 필드의 편집 대화 상자를 열고 을(를) 선택합니다. **스타일링** 탭. 에서 **필드 레이아웃 구성** 드롭다운 상자에서 새로 만든 레이아웃을 선택하고 **확인**.
 
 ErrorOnRight.zip 패키지에는 필드의 오른쪽에 오류 메시지를 표시하는 코드가 들어 있습니다.
 

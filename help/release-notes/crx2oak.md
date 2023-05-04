@@ -1,8 +1,8 @@
 ---
 title: CRX2OAK 마이그레이션 도구
-seo-title: CRX2OAK 마이그레이션 도구
+seo-title: CRX2OAK Migration Tool
 description: Adobe Experience Manager 6.4 CRX2OAK 마이그레이션 도구에 대한 릴리스 노트입니다.
-seo-description: Adobe Experience Manager 6.4 CRX2OAK 마이그레이션 도구에 대한 릴리스 노트입니다.
+seo-description: Release notes specific to the Adobe Experience Manager 6.4 CRX2OAK Migration tool.
 uuid: 1b582faf-2dc6-41a2-9419-7e82347f9d6c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,14 +10,18 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: cfdaceac-a5b3-4070-ad4c-f1457b1e2e4b
 exl-id: 441c8ba0-f8b2-4c2c-b7be-cfdad9e1e498
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 0%
+source-wordcount: '288'
+ht-degree: 2%
 
 ---
 
 # CRX2OAK 마이그레이션 도구 {#crx-oak-migration-tool}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ## 변경 사항 및 수정 사항 목록 {#list-of-changes-and-fixes}
 
@@ -48,8 +52,8 @@ ht-degree: 0%
 
 * Oak 버전을 1.4.1로 업그레이드
 * OAK-3846 / GRANITE-10748 SNS 노드가 nodetype 제약 조건을 위반하면 이름 바꾸기
-* OAK-3910 / GRANITE-10730 버전 기록 없이 `mix:versionable`에서 상속되는 노드 마이그레이션
-* OAK-4128 / GRANITE-11757 `RepositorySidegrade`이 루트 노드 속성을 복사하지 않습니다
+* OAK-3910 / GRANITE-10730 `mix:versionable` 버전 기록 제외
+* OAK-4128 / GRANITE-11757 `RepositorySidegrade` 루트 노드 속성을 복사하지 않습니다.
 
 ### 버전 1.3.4(2016년 1월) {#version-january}
 

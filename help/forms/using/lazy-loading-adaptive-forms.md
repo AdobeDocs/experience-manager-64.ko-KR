@@ -1,22 +1,26 @@
 ---
-title: 지연 로딩으로 대용량 양식의 성능 향상
-seo-title: 지연 로딩으로 대용량 양식의 성능 향상
+title: 소극적 로드 옵션이 있는 대용량 양식의 성능 향상
+seo-title: Improve performance of large forms with lazy loading
 description: 지연 로드는 양식 조각이 표시될 때까지 초기화를 지연하고 양식 조각을 로드하여 크고 복잡한 적응형 양식의 성능을 크게 향상시킵니다.
-seo-description: 지연 로드는 양식 조각이 표시될 때까지 초기화를 지연하고 양식 조각을 로드하여 크고 복잡한 적응형 양식의 성능을 크게 향상시킵니다.
+seo-description: Lazy loading significantly improves the performance of large and complex adaptive forms by deferring initialization and loading of form fragments until they are visible.
 uuid: 3ead2b82-f895-4a7b-9683-495fcd94fade
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: d570ead9-8f9c-4668-8b23-e8984d9b25e9
-feature: 적응형 양식
+feature: Adaptive Forms
 exl-id: 92d88888-343c-4edb-9b11-8e876539573a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 0%
+source-wordcount: '1000'
+ht-degree: 2%
 
 ---
 
-# 지연 로드 {#improve-performance-of-large-forms-with-lazy-loading} 로 큰 양식의 성능 개선
+# 소극적 로드 옵션이 있는 대용량 양식의 성능 향상 {#improve-performance-of-large-forms-with-lazy-loading}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ## 지연 로드 소개 {#introduction-to-lazy-loading}
 
@@ -24,22 +28,22 @@ ht-degree: 0%
 
 지연 로드를 구성하기 전에 먼저 요구 사항 및 준비 단계를 이해하겠습니다.
 
-## 지연 로드 구성 준비 중 {#preparing-to-configure-lazy-loading}
+## 지연 로드 구성 준비 {#preparing-to-configure-lazy-loading}
 
 적응형 양식에 조각의 레이지 로드를 구성하려면 먼저 조각을 만들고 스크립트를 통해 사용되거나 다른 조각에서 참조되는 값을 식별하며 규칙을 정의하여 느리게 로드된 조각에서 필드를 표시할 수 있습니다.
 
-* **조각 식별 및**
-만들기 레이지 로드를 위한 적응형 양식 조각만 구성할 수 있습니다. 조각은 적응형 양식 외부에 있고 양식에서 재사용할 수 있는 독립형 세그먼트입니다. 따라서 지연 로드를 구현하는 첫 번째 단계는 양식의 논리 섹션을 식별하고 조각으로 변환하는 것입니다. 조각을 처음부터 만들거나 기존 양식 패널을 조각으로 저장할 수 있습니다.
+* **조각 식별 및 만들기**
+지연 로드를 위한 적응형 양식 조각만 구성할 수 있습니다. 조각은 적응형 양식 외부에 있고 양식에서 재사용할 수 있는 독립형 세그먼트입니다. 따라서 지연 로드를 구현하는 첫 번째 단계는 양식의 논리 섹션을 식별하고 조각으로 변환하는 것입니다. 조각을 처음부터 만들거나 기존 양식 패널을 조각으로 저장할 수 있습니다.
 
-   조각 만들기에 대한 자세한 내용은 [적응형 양식 조각](/help/forms/using/adaptive-form-fragments.md)을 참조하십시오.
+   조각 만들기에 대한 자세한 내용은 다음을 참조하십시오 [적응형 양식 조각](/help/forms/using/adaptive-form-fragments.md).
 
-* **전역 값 식별 및**
-표시Forms 기반 트랜잭션에는 동적 요소가 포함되어 있어 사용자의 관련 데이터를 캡처하고 처리하여 양식 채우기 환경을 단순화합니다. 예를 들어, 양식에는 값이 다른 조각에서 필드 B의 유효성을 결정하는 조각 X의 필드 A가 있습니다. 이 경우 조각 X가 지연 로딩으로 표시된 경우 조각 X가 로드되지 않은 경우에도 필드 B의 유효성을 확인하기 위해 필드 A 값을 사용할 수 있어야 합니다. 이를 위해 필드 A를 글로벌 로 표시하여 조각 X가 로드되지 않은 경우 필드 B의 유효성을 확인할 수 있습니다.
+* **글로벌 값 식별 및 표시**
+Forms 기반 트랜잭션에는 동적 요소가 포함되어 있어 사용자로부터 관련 데이터를 캡처하고 처리하여 양식 채우기 환경을 단순화합니다. 예를 들어, 양식에는 값이 다른 조각에서 필드 B의 유효성을 결정하는 조각 X의 필드 A가 있습니다. 이 경우 조각 X가 지연 로딩으로 표시된 경우 조각 X가 로드되지 않은 경우에도 필드 B의 유효성을 확인하기 위해 필드 A 값을 사용할 수 있어야 합니다. 이를 위해 필드 A를 글로벌 로 표시하여 조각 X가 로드되지 않은 경우 필드 B의 유효성을 확인할 수 있습니다.
 
-   필드 값을 전체적으로 만드는 방법에 대한 자세한 내용은 [지연 로드 구성](/help/forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p)을 참조하십시오.
+   필드 값을 전체적으로 만드는 방법에 대한 자세한 내용은 [지연 로드 구성](/help/forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
 
-* **필드의 가시성을 제어하는**
-쓰기 규칙양식에는 모든 사용자와 모든 조건에 적용할 수 없는 일부 필드와 섹션이 포함됩니다. Forms 작성자 및 개발자는 가시성 또는 표시 숨기기 규칙을 사용하여 사용자 입력을 기반으로 가시성을 제어합니다. 예를 들어, Office 주소 필드는 양식의 고용 상태 필드에서 실직자를 선택하는 사용자에게 표시되지 않습니다. 규칙 작성에 대한 자세한 내용은 [규칙 편집기 사용](/help/forms/using/rule-editor.md)을 참조하십시오.
+* **규칙을 작성하여 필드 표시 제어**
+Forms에는 모든 사용자와 모든 조건에 적용할 수 없는 일부 필드 및 섹션이 포함되어 있습니다. Forms 작성자 및 개발자는 가시성 또는 표시 숨기기 규칙을 사용하여 사용자 입력을 기반으로 가시성을 제어합니다. 예를 들어, Office 주소 필드는 양식의 고용 상태 필드에서 실직자를 선택하는 사용자에게 표시되지 않습니다. 규칙 작성에 대한 자세한 내용은 [규칙 편집기 사용](/help/forms/using/rule-editor.md).
 
    지연 로드된 조각에서 가시성 규칙을 활용하여 조건부 필드가 필요한 경우에만 표시되도록 할 수 있습니다. 또한 조건 필드를 전체적으로 선택하여 lazyly loaded 조각의 가시성 표현식에서 해당 필드를 참조합니다.
 
@@ -48,23 +52,23 @@ ht-degree: 0%
 적응형 양식 조각에서 레이지 로드를 활성화하려면 다음 단계를 수행하십시오.
 
 1. 지연 로드를 위해 활성화할 조각이 포함된 작성 모드에서 적응형 양식을 엽니다.
-1. 적응형 양식 조각을 선택하고 ![cmppr](assets/cmppr.png)을 누릅니다.
-1. 사이드바에서 **[!UICONTROL 조각 로드(lazyly]**)를 활성화하고 **완료**&#x200B;를 탭합니다.
+1. 적응형 양식 조각을 선택하고 탭합니다 ![cmppr](assets/cmppr.png).
+1. 사이드바에서 **[!UICONTROL 로드 조각 지연]** 탭 **완료**.
 
    ![적응형 양식 조각에 대해 지연 로드를 활성화합니다](assets/lazy-loading-fragment.png)
 
    이제 지연 로드를 위해 조각이 활성화됩니다.
 
-적재된 조각의 객체 값을 전역 값으로 표시할 수 있으므로 포함 조각이 로드되지 않은 경우 스크립트에서 사용할 수 있습니다. 다음을 수행합니다.
+적재된 조각의 객체 값을 전역 값으로 표시할 수 있으므로 포함 조각이 로드되지 않은 경우 스크립트에서 사용할 수 있습니다. 다음 작업을 수행합니다.
 
 1. 작성 모드에서 적응형 양식 조각을 엽니다.
-1. 값을 전역 값으로 표시할 필드를 탭한 다음 ![](assets/cmppr.png)을 누릅니다.
-1. 사이드바에서 지연 로드 중 **[!UICONTROL 값 사용]**을 활성화합니다.
+1. 값을 전역 값으로 표시할 필드를 탭한 다음, ![](assets/cmppr.png).
+1. 사이드바에서 **[!UICONTROL 지연 로드 중 값 사용]**.
    ![사이드바의 레이지 로드 필드](assets/enable-lazy-loading.png)
 
    이 값은 이제 전역 값으로 표시되며, 포함 조각을 언로드한 경우에도 스크립트에서 사용할 수 있습니다.
 
-## 지연 로드 {#considerations-and-best-practices-for-configuring-lazy-loading} 구성을 위한 고려 사항 및 우수 사례
+## 지연 로드 구성을 위한 고려 사항 및 우수 사례 {#considerations-and-best-practices-for-configuring-lazy-loading}
 
 지연 로드를 사용하여 작업할 때 기억해야 할 몇 가지 제한 사항, 권장 사항 및 중요 사항은 다음과 같습니다.
 
@@ -85,4 +89,4 @@ ht-degree: 0%
 * 조각 간에 전체적으로 표시된 필드에 관계없이 레이지 패널 내의 필드의 참조 값을 전달하지 마십시오.
 * 다음 클릭 표현식을 사용하여 패널에 표시되는 모든 것을 재설정하려면 패널 재설정 기능을 사용하십시오.
 
-   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;:&quot;navigablePanel&quot;}).resetData()
+   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;}).resetData()

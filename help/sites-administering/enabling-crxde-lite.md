@@ -1,8 +1,8 @@
 ---
 title: AEM에서 CRXDE Lite 활성화
-seo-title: AEM에서 CRXDE Lite 활성화
+seo-title: Enabling CRXDE Lite in AEM
 description: AEM에서 CRXDE Lite을 활성화하는 방법을 알아봅니다.
-seo-description: AEM에서 CRXDE Lite을 활성화하는 방법을 알아봅니다.
+seo-description: Learn how to enable CRXDE Lite in AEM.
 uuid: d7a3db67-6384-463b-9aa9-f08ecc6c99c6
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,20 +10,24 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 72df3ece-badf-466b-8f9a-0ec985d87741
 exl-id: 3d8dc987-2ff9-4f71-bc07-48018caa3af4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 1%
+source-wordcount: '248'
+ht-degree: 4%
 
 ---
 
-# AEM{#enabling-crxde-lite-in-aem}에서 CRXDE Lite 활성화
+# AEM에서 CRXDE Lite 활성화{#enabling-crxde-lite-in-aem}
 
-AEM 설치가 가능한 한 안전한지 확인하려면 프로덕션 환경에서 [WebDAV](/help/sites-administering/security-checklist.md#disable-webdav)를 비활성화하는 것이 좋습니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
-그러나 CRXDE Lite은 `org.apache.sling.jcr.davex` 번들이 제대로 작동하기 위해 종속되어 있으므로 WebDAV를 비활성화하면 CRXDE Lite도 효과적으로 비활성화됩니다.
+AEM 설치가 가능한 한 안전한지 확인하기 위해 보안 체크리스트가 권장합니다 [WebDAV 비활성화](/help/sites-administering/security-checklist.md#disable-webdav) 프로덕션 환경에서 활성화되어야 합니다.
 
-이 경우 `https://serveraddress:4502/crx/de/index.jsp` 검색 시 빈 루트 노드가 표시되고 CRXDE Lite 리소스에 대한 모든 HTTP 요청이 실패합니다.
+그러나 CRXDE Lite은 `org.apache.sling.jcr.davex` 번들이 제대로 작동하기 때문에 WebDAV를 비활성화하면 CRXDE Lite이 효과적으로 비활성화될 수 있습니다.
+
+이런 경우 다음 위치로 이동합니다. `https://serveraddress:4502/crx/de/index.jsp` 은 빈 루트 노드를 표시하며 CRXDE Lite 리소스에 대한 모든 HTTP 요청이 실패합니다.
 
 ```xml
 404 Resource at '/crx/server/crx.default/jcr:root/.1.json' not found: No resource found
@@ -33,7 +37,7 @@ AEM 설치가 가능한 한 안전한지 확인하려면 프로덕션 환경에�
 
 비활성화된 경우 아래 절차에 따라 CRXDE Lite을 설정할 수 있습니다.
 
-1. `http://localhost:4502/system/console/components`의 OSGi 구성 요소 콘솔로 이동합니다.
+1. 의 OSGi 구성 요소 콘솔로 이동합니다. `http://localhost:4502/system/console/components`
 1. 다음 구성 요소를 검색합니다.
 
    * `org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`
@@ -45,7 +49,7 @@ AEM 설치가 가능한 한 안전한지 확인하려면 프로덕션 환경에�
 1. 다음 구성을 만듭니다.
 
    * **루트 경로:** `/crx/server`
-   * **절대 URI 사용** 아래에 있는 상자를 확인 표시합니다.
+   * 아래의 상자에 확인 표시 **절대 URI 사용**.
 
 1. CRXDE Lite 사용을 마치면 WebDAV를 다시 비활성화해야 합니다.
 

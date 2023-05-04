@@ -4,14 +4,18 @@ seo-title: Developing AEM Components (Classic UI)
 description: 클래식 UI에서는 ExtJS를 사용하여 구성 요소의 모양과 느낌을 제공하는 위젯을 만듭니다. HTL은 AEM에 권장되는 스크립팅 언어가 아닙니다.
 seo-description: The classic UI uses ExtJS to create widgets that provide the look-and-feel of the components. HTL is not the recommended scripting language for AEM.
 exl-id: 725e4f82-7019-4365-9c01-b5d95ea2a8fa
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2391'
+source-wordcount: '2427'
 ht-degree: 1%
 
 ---
 
 # AEM 구성 요소 개발(클래식 UI){#developing-aem-components-classic-ui}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 클래식 UI에서는 ExtJS를 사용하여 구성 요소의 모양과 느낌을 제공하는 위젯을 만듭니다. 이러한 위젯의 특성으로 인해 구성 요소가 클래식 UI와 상호 작용하는 방법에는 몇 가지 차이점이 있습니다 [터치 지원 UI](/help/sites-developing/developing-components.md).
 
@@ -88,13 +92,13 @@ AEM WCM의 컨텐츠에 액세스하는 방법에는 세 가지가 있습니다.
 
    다음 `currentPage` 개체는 페이지의 인스턴스입니다. [AEM API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.mhtml)). 페이지 클래스는 컨텐츠에 액세스하는 몇 가지 방법을 제공합니다.
 
-   예제: `String pageTitle = currentPage.getTitle();`
+   예: `String pageTitle = currentPage.getTitle();`
 
 * Via `currentNode` 에 도입된 객체 `global.jsp`:
 
    다음 `currentNode` 개체는 노드의 인스턴스입니다. [JCR API](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html)). 노드의 속성은 `getProperty()` 메서드를 사용합니다.
 
-   예제: `String pageTitle = currentNode.getProperty("jcr:title");`
+   예: `String pageTitle = currentNode.getProperty("jcr:title");`
 
 ## JSP 태그 라이브러리 {#jsp-tag-libraries}
 
@@ -214,7 +218,7 @@ CQ 및 Sling 태그 라이브러리에서는 템플릿 및 구성 요소의 JSP 
 
    이제 디자인 모드에서 단락 시스템을 편집할 수 있습니다.
 
-1. 편집을 클릭합니다. 
+1. 편집을 클릭합니다.
 
    단락 시스템에 속하는 구성 요소 목록이 표시됩니다. 새 구성 요소도 나열됩니다.
 

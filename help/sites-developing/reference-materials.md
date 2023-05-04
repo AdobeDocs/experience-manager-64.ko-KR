@@ -11,14 +11,18 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 39d1cb2e-18f5-4d08-b983-a06b1f470c51
 exl-id: 0c80ee60-d2dd-49ad-a283-81fdb1fd201e
-source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '294'
 ht-degree: 11%
 
 ---
 
 # API 안내서{#api-guides}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 AEM은 애플리케이션 개발을 위한 여러 API를 제공합니다. 다음 목록은 AEM에서 지원하는 API에 대한 설명서를 제공합니다.
 
@@ -49,7 +53,7 @@ AEM 배달 및 콘텐츠 관리 API:
 
    * [JSON 내보내기](/help/sites-developing/json-exporter.md)
    * [구성 요소에 대해 JSON 내보내기 활성화](/help/sites-developing/json-exporter-components.md)
-   * 자세한 내용은 개발 사용 안내서](https://helpx.adobe.com/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js)의 [구성 요소 섹션을 참조하십시오
+   * 자세한 내용은 [개발 사용 안내서의 구성 요소 섹션](https://helpx.adobe.com/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js) 자세한 정보
 
 * [AEM Assets HTTP API](/help/assets/mac-api-assets.md)
 

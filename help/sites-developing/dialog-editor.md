@@ -1,8 +1,8 @@
 ---
 title: 대화 상자 편집기
-seo-title: 대화 상자 편집기
+seo-title: Dialog Editor
 description: 대화 상자 편집기는 대화 상자 및 스캐폴드를 쉽게 만들고 편집할 수 있는 그래픽 인터페이스를 제공합니다
-seo-description: 대화 상자 편집기는 대화 상자 및 스캐폴드를 쉽게 만들고 편집할 수 있는 그래픽 인터페이스를 제공합니다
+seo-description: The dialog editor provides a graphical interface for easily creating and editing dialog boxes and scaffolds
 uuid: 64d3fb12-8638-441b-8595-c590d48f3072
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,22 +10,26 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: b7ac457d-3689-4f5d-9ceb-ff6a9944e7eb
 exl-id: ee57a0c5-261e-4ffd-92ca-4804a9e1d132
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 2%
+source-wordcount: '529'
+ht-degree: 3%
 
 ---
 
 # 대화 상자 편집기{#dialog-editor}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 대화 상자 편집기는 대화 상자 및 스캐폴드를 쉽게 만들고 편집할 수 있는 그래픽 인터페이스를 제공합니다.
 
-작동 방식을 보려면 CRXDE Lite으로 이동하고 탐색기 트리를 `/libs/foundation/components/chart`로 열고 `dialog` 노드를 두 번 클릭합니다.
+작동 방식을 보려면 CRXDE Lite으로 이동하고 탐색기 트리를 열어 `/libs/foundation/components/chart` 노드를 두 번 클릭합니다. `dialog`:
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
 
-대화 상자 노드는 **대화 상자 편집기**&#x200B;에서 열립니다.
+대화 상자 노드는 **대화 상자 편집기**:
 
 ![screen_shot_2012-02-01at25033pm](assets/screen_shot_2012-02-01at25033pm.png)
 
@@ -33,16 +37,16 @@ ht-degree: 2%
 
 대화 상자 편집기 인터페이스는 다음 네 개의 창으로 구성됩니다.
 
-* 왼쪽 상단 모서리의 **팔레트** 이 창에는 탭 패널, 텍스트 필드, 선택 목록 및 단추 등의 대화 상자를 작성하는 데 사용할 수 있는 위젯이 있습니다. 원하는 구분선 막대를 클릭하여 팔레트 내에서 다른 카테고리를 확장할 수 있습니다.
-* 왼쪽 아래 모서리에 있는 **구조** 창. 이 창에는 대화 상자 정의를 구성하는 노드의 계층 구조가 표시됩니다. CRXDE Lite 또는 CRX Content Explorer에서 대화 상자 노드를 확장하여 동일한 구조를 볼 수 있습니다.
-* 창 중앙에 있는 **render** 창. 이 창에는 구조 창에 정의된 대화 상자 정의가 실제 대화 상자로 렌더링되는 방식이 표시됩니다.
-* **속성** 창. 이 창에는 구조 창에서 현재 강조 표시된 노드의 속성이 표시됩니다.
+* 다음 **팔레트**&#x200B;왼쪽 상단 모서리에서 을(를) 클릭합니다. 이 창에는 탭 패널, 텍스트 필드, 선택 목록 및 단추 등의 대화 상자를 작성하는 데 사용할 수 있는 위젯이 있습니다. 원하는 구분선 막대를 클릭하여 팔레트 내에서 다른 카테고리를 확장할 수 있습니다.
+* 다음 **구조** 왼쪽 아래 모서리에 있는 창. 이 창에는 대화 상자 정의를 구성하는 노드의 계층 구조가 표시됩니다. CRXDE Lite 또는 CRX Content Explorer에서 대화 상자 노드를 확장하여 동일한 구조를 볼 수 있습니다.
+* 다음 **렌더링** 창 중앙에 있는 창 이 창에는 구조 창에 정의된 대화 상자 정의가 실제 대화 상자로 렌더링되는 방식이 표시됩니다.
+* 다음 **속성** 창 이 창에는 구조 창에서 현재 강조 표시된 노드의 속성이 표시됩니다.
 
 ### 대화 상자 편집기 사용 {#using-the-dialog-editor}
 
 대화 상자를 만들려면 사용자가 팔레트에서 구조 창으로 요소를 드래그하여 대화 상자 정의 계층 구조 내의 위치로 놓습니다.
 
-원하는 구조가 완료되면 사용자는 렌더링 창의 맨 위에서 **저장**&#x200B;을 클릭합니다.
+원하는 구조가 완료되면 사용자가 를 클릭합니다 **저장**&#x200B;렌더링 창의 맨 위에서 을 클릭합니다.
 
 >[!CAUTION]
 >
@@ -50,14 +54,14 @@ ht-degree: 2%
 
 ### 새 대화 상자 만들기 {#creating-a-new-dialog}
 
-새 대화 상자를 만들려면 필요한 구성 요소를 선택해야 합니다. **만들기...**, **대화 상자 만들기...**.
+새 대화 상자를 만들려면 필요한 구성 요소를 선택해야 합니다. **만들기...** 그리고 **대화 상자 만들기..**.
 
-필요한 세부 정보를 입력한 다음 **모두 저장** 을 클릭합니다. 이제 대화 상자를 두 번 클릭하여 편집기로 열 수 있습니다.
+필요한 세부 정보를 입력한 다음 **모두 저장** - 이제 대화 상자를 두 번 클릭하여 편집기로 열 수 있습니다.
 
-### 스캐폴드에 대한 대화 상자 편집기 사용 {#using-the-dialog-editor-for-scaffolds}
+### Scaffold용 대화 상자 편집기 사용 {#using-the-dialog-editor-for-scaffolds}
 
 Scaffold는 한 단계에서 작성하고 제출할 수 있는 양식이 포함된 특수 페이지입니다. 입력한 컨텐츠를 사용하여 페이지를 빠르게 만들 수 있습니다.
 
 스캐폴드를 구성하는 양식은 다른 양식의 스캐폴딩 페이지에 표시되지만 일반 대화 상자처럼 대화 상자 정의에 의해 정의됩니다. 대화 상자 정의를 사용하여 스캐폴드를 정의하므로 대화 상자 편집기를 사용하여 스캐폴드를 디자인할 수 있습니다. 이러한 방식으로 대화 상자 편집기를 사용할 경우에도 렌더링 창에 스캐폴드가 아닌 대화 상자 형식의 대화 상자 정의가 계속 표시됩니다.
 
-대화 상자 편집기를 사용하여 스캐폴드를 만드는 방법에 대한 자세한 내용은 [스캐폴딩](/help/sites-authoring/scaffolding.md) 을 참조하십시오.
+자세한 내용은 [스캐폴딩](/help/sites-authoring/scaffolding.md) 대화 상자 편집기를 사용하여 스캐폴드를 만드는 방법에 대한 자세한 내용을 참조하십시오.

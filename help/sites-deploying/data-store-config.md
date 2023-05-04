@@ -12,14 +12,18 @@ discoiquuid: d4636434-98a6-4cf7-bb92-4338da17c893
 legacypath: /deploy/platform/data-store-config
 feature: Configuring
 exl-id: 89b8e8a7-103b-472e-8c29-3b6e5b7273b1
-source-git-commit: 28bfeff17c8f753f4f0d3f23a0e3843f159060cc
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3406'
+source-wordcount: '3442'
 ht-degree: 1%
 
 ---
 
 # AEM 6에서 노드 저장소 및 데이터 저장소 구성{#configuring-node-stores-and-data-stores-in-aem}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ## 소개 {#introduction}
 
@@ -88,7 +92,7 @@ customBlobStore=B"true"
 
 문서 노드 저장소는 AEM MongoMK 구현의 기반입니다. 이 템플릿은 를 사용합니다 `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService` **PID**. 다음 구성 옵션을 사용할 수 있습니다.
 
-* `mongouri`: 다음 [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) Mongo 데이터베이스에 연결하는 데 필요합니다. 기본값은 입니다.`mongodb://localhost:27017`
+* `mongouri`: 다음 [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) Mongo 데이터베이스에 연결하는 데 필요합니다. 기본값은 입니다. `mongodb://localhost:27017`
 
 * `db`: Mongo 데이터베이스의 이름입니다. 기본값은 입니다. **Oak** . 그러나 새 AEM 6 설치에서는 **aem-author** 를 기본 데이터베이스 이름으로 사용합니다.
 
@@ -418,7 +422,7 @@ java -jar aem6.4.jar -r crx3tar-nofds
 
 위의 설정 외에 다음 설정도 구성할 수 있습니다.
 
-* 경로: 데이터 저장소의 경로입니다. 기본값은 입니다.`<aem-install>/repository/datastore.`
+* 경로: 데이터 저장소의 경로입니다. 기본값은 입니다. `<aem-install>/repository/datastore.`
 * 레코드 길이: 데이터 저장소에 저장해야 하는 개체의 최소 크기입니다. 기본값은 16KB입니다.
 * maxCachedBinarySize: 이 크기보다 작거나 같은 바이너리는 메모리 캐시에 저장됩니다. 크기는 바이트 단위입니다. 기본값은 17408(17KB)입니다.
 * cacheSize: 캐시의 크기입니다. 값이 바이트 단위로 지정됩니다. 기본값은 64GB입니다.

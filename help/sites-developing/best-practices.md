@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 exl-id: a2a299b5-a15a-47d9-a9d8-83f45917d080
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 22%
+source-wordcount: '498'
+ht-degree: 15%
 
 ---
 
 # 모범 사례{#best-practices}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ## 개발자를 위한 우수 사례 - 시작하기 {#best-practices-for-developers-getting-started}
 
@@ -42,7 +46,7 @@ AEM 개발 프로젝트를 시작하기 전에 먼저 다음 우수 사례를 �
 * [커뮤니티](/help/sites-developing/best-practices.md#communities)
 * [도구/HTL](/help/sites-developing/best-practices.md#tooling-htl)
 
-관련된 구체적인 문서에 대한 설명과 링크는 다음 표에 나와 있습니다.
+특정 문서는 다음에 나오는 표에 설명되고 연결됩니다.
 
 관리, 배포, 유지 관리 또는 작성에 대한 우수 사례는 다음 중 하나를 참조하십시오.
 
@@ -52,7 +56,7 @@ AEM 개발 프로젝트를 시작하기 전에 먼저 다음 우수 사례를 �
 
 ## Sites {#sites}
 
-웹 사이트 컨텐츠 관리 및 작성에는 다음과 같은 몇 가지 우수 사례가 요약되어 있습니다.
+웹 사이트 컨텐츠 관리 및 작성에는 다음과 같이 요약된 몇 가지 우수 사례가 있습니다.
 
 <table> 
  <tbody>

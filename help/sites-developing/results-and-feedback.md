@@ -1,8 +1,8 @@
 ---
 title: 결과 추적 및 피드백 제공
-seo-title: 결과 추적 및 피드백 제공
+seo-title: Tracking results and providing feedback
 description: 테스트 사례 및 결과 테스트 계획을 정의하는 방법 및 위치는 사용자의 재량에 따라 다릅니다
-seo-description: 테스트 사례 및 결과 테스트 계획을 정의하는 방법 및 위치는 사용자의 재량에 따라 다릅니다
+seo-description: How and where you define the test cases, and the resulting test plan, is at your own discretion
 uuid: b4b811d4-4ca0-4477-a866-b262f9a698f4
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,16 +10,20 @@ topic-tags: testing
 content-type: reference
 discoiquuid: 2fff5f64-d330-4b32-a861-1f5315363b69
 exl-id: 976f00d0-0b7a-4d5e-bfbc-44c2504ca2f6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 8%
+source-wordcount: '195'
+ht-degree: 9%
 
 ---
 
 # 결과 추적 및 피드백 제공{#tracking-results-and-providing-feedback}
 
-테스트 사례 및 결과 테스트 계획을 정의하는 방법 및 위치는 사용자의 재량에 따라 다릅니다.사용할 수 있는 도구가 많습니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+테스트 사례 및 결과 테스트 계획을 정의하는 방법 및 위치는 사용자의 재량에 따라 다릅니다. 사용할 수 있는 도구가 많습니다.
 
 그러나 선택한 방법 또는 도구에 관계없이 정보가 저장됩니다.
 

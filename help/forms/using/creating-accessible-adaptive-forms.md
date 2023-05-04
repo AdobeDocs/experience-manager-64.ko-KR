@@ -1,22 +1,26 @@
 ---
 title: 액세스 가능한 적응형 양식 만들기
-seo-title: 액세스 가능한 적응형 양식 만들기
+seo-title: Creating accessible adaptive forms
 description: AEM Forms은 액세스 가능한 적응형 양식을 만들고 액세스 가능성 표준을 준수하는 데 도움이 되는 도구 및 도구를 제공합니다.
-seo-description: AEM Forms은 액세스 가능한 적응형 양식을 만들고 액세스 가능성 표준을 준수하는 데 도움이 되는 도구 및 도구를 제공합니다.
+seo-description: AEM Forms provides you tools and to create accessible adaptive forms and helps comply with accessibility standards.
 uuid: eceb3282-0b90-4e0a-8b89-137d27029747
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 96d9ad52-074b-4084-b818-abce79282776
-feature: 적응형 양식
+feature: Adaptive Forms
 exl-id: adad26fa-b27a-4bd7-806c-4ddfbaae7a37
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 0%
+source-wordcount: '939'
+ht-degree: 1%
 
 ---
 
 # 액세스 가능한 적응형 양식 만들기 {#creating-accessible-adaptive-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ## 소개 {#introduction}
 
@@ -31,7 +35,7 @@ ht-degree: 0%
 * 충분한 색상 대비 제공
 * 양식 컨트롤에 키보드 액세스 가능 여부 확인
 
-## 양식 컨트롤 {#provide-proper-labels-for-form-controls}에 적절한 레이블을 제공합니다.
+## 양식 컨트롤에 적절한 레이블 제공 {#provide-proper-labels-for-form-controls}
 
 구성 요소의 레이블이나 제목은 양식 구성 요소가 나타내는 것을 식별합니다. 예를 들어 &quot;이름&quot; 텍스트는 사용자에게 텍스트 필드에 이름을 입력해야 한다고 알려줍니다. 화면 판독기에서 액세스할 수 있도록 레이블은 양식 구성 요소와 프로그래밍 방식으로 연결됩니다. 또는 양식 컨트롤은 추가 액세스 가능성 정보로 구성됩니다.
 
@@ -39,22 +43,22 @@ ht-degree: 0%
 
 액세스 가능성 옵션을 사용하려면 다음 단계를 수행합니다.
 
-1. 구성 요소를 선택하고 ![cmppr](assets/cmppr.png)을 누릅니다.
-1. 사이드바에서 **액세서빌러티** 를 클릭하여 원하는 액세서빌러티 옵션을 선택합니다.
+1. 구성 요소를 선택하고 탭합니다 ![cmppr](assets/cmppr.png).
+1. 클릭 **접근성** 사이드바에서 원하는 액세스 가능성 옵션을 선택합니다.
 
-### 양식 구성 요소 {#accessibility-options-in-form-components}의 액세스 가능성 옵션
+### 양식 구성 요소의 액세스 가능성 옵션 {#accessibility-options-in-form-components}
 
 ![양식 구성 요소의 액세스 가능성 옵션](assets/accessibility-options.png)
 
-**사용자** 지정 TextForm 작성자는 액세스 가능성 옵션 사용자 지정 텍스트 필드에 콘텐츠를 제공합니다. 화면 판독기와 같은 보조 기술은 이 사용자 지정 텍스트를 사용합니다. 대부분의 시나리오에서 제목 설정을 사용하는 것이 가장 좋습니다. 제목 또는 간단한 설명을 사용할 수 없는 경우에만 사용자 지정 화면 Reader 텍스트 만들기를 고려해 보십시오.
+**사용자 정의 텍스트** 양식 작성자는 액세스 가능성 옵션 사용자 지정 텍스트 필드에 컨텐츠를 제공합니다. 화면 판독기와 같은 보조 기술은 이 사용자 지정 텍스트를 사용합니다. 대부분의 시나리오에서 제목 설정을 사용하는 것이 가장 좋습니다. 제목 또는 간단한 설명을 사용할 수 없는 경우에만 사용자 지정 화면 Reader 텍스트 만들기를 고려해 보십시오.
 
-**짧은** 설명대부분의 구성 요소의 경우 사용자가 구성 요소 위에 포인터를 놓으면 런타임에 짧은 설명이 나타납니다. 도움말 콘텐츠 선택 사항에서 간단한 설명 필드에서 이 옵션을 설정할 수 있습니다.
+**간단한 설명** 대부분의 구성 요소의 경우 사용자가 구성 요소 위에 포인터를 놓으면 런타임에 짧은 설명이 나타납니다. 도움말 콘텐츠 선택 사항에서 간단한 설명 필드에서 이 옵션을 설정할 수 있습니다.
 
-**** 제목AEM Forms에서 양식 필드와 관련된 시각적 레이블을 화면 판독기 텍스트로 사용할 수 있도록 하려면 이 옵션을 사용합니다.
+**제목** 이 옵션을 사용하면 AEM Forms에서 양식 필드와 연결된 시각적 레이블을 화면 판독기 텍스트로 사용할 수 있습니다.
 
-**** 이름바인딩 탭의 이름 필드에 값을 지정할 수 있습니다. 이름에는 공백을 포함할 수 없습니다.
+**이름** 바인딩 탭의 이름 필드에 값을 지정할 수 있습니다. 이름에는 공백을 포함할 수 없습니다.
 
-**** 없음없음을 선택하면 양식 개체에 게시된 양식의 이름이 없습니다. None은 양식 컨트롤에 권장되는 설정이 아닙니다.
+**없음** 없음을 선택하면 양식 개체에 게시된 양식의 이름이 없습니다. None은 양식 컨트롤에 권장되는 설정이 아닙니다.
 
 >[!NOTE]
 >
@@ -64,17 +68,17 @@ ht-degree: 0%
 >
 >XFA 기반 적응형 양식의 경우 액세스 가능성 옵션은 XDP에 설정된 액세스 가능성 옵션에서 상속됩니다. XDP의 도구 팁은 짧은 설명에 매핑되고 캡션은 제목에 매핑됩니다. 다른 옵션은 그대로 작동합니다.
 
-## {#provide-text-equivalents-for-images} 이미지에 상응하는 텍스트를 제공합니다.
+## 이미지에 상응하는 텍스트를 제공합니다 {#provide-text-equivalents-for-images}
 
 이미지는 일부 사용자의 이해도를 개선하는 데 도움이 될 수 있습니다. 그러나 화면 판독기를 사용하는 사용자의 경우 이미지가 양식의 액세스 가능성을 낮춰줍니다. 이미지를 사용하도록 선택하는 경우 모든 이미지에 대한 텍스트 설명을 제공합니다.
 
 텍스트가 개체와 해당 목적을 양식에 설명하도록 하십시오. 화면 판독기는 이미지가 발생하면 이 대체 텍스트를 읽습니다. 이미지에는 항상 대체 텍스트가 지정되어 있어야 합니다.
 
-이미지 구성 요소를 선택하고 ![cmppr](assets/cmppr.png)을 누릅니다. 사이드바의 속성 아래에서 이미지에 대한 대체 텍스트를 지정합니다.
+이미지 구성 요소를 선택하고 탭합니다 ![cmppr](assets/cmppr.png). 사이드바의 속성 아래에서 이미지에 대한 대체 텍스트를 지정합니다.
 
 ![이미지에 대한 대체 텍스트](assets/image-properties.png)
 
-## 충분한 색상 대비 {#provide-sufficient-color-contrast} 제공
+## 충분한 색상 대비 제공 {#provide-sufficient-color-contrast}
 
 접근성 설계에는 색상 사용에 대한 추가 지침을 고려해야 합니다. 양식 작성자는 다양한 양식 구성 요소를 강조 표시하여 양식의 모양을 향상시키는 데 색상을 사용할 수 있습니다. 하지만, 색의 부적절한 사용은 다양한 능력을 가진 사람들이 읽는 것을 어렵거나 불가능하게 만들 수 있습니다.
 
@@ -82,9 +86,9 @@ ht-degree: 0%
 
 기본 글꼴과 배경색(흰색 배경의 검정 색상)을 사용하는 것이 좋습니다. 기본 색상을 변경할 경우 밝은 배경색의 어두운 전경색을 선택하거나 그 반대로 선택합니다.
 
-적응형 양식의 색상 대비 및 테마 변경에 대한 자세한 내용은 [적응형 양식의 사용자 지정 테마 만들기](/help/forms/using/creating-custom-adaptive-form-themes.md) 를 참조하십시오.
+자세한 내용은 [적응형 양식을 위한 사용자 지정 테마 만들기](/help/forms/using/creating-custom-adaptive-form-themes.md)를 참조하십시오.
 
-## 양식 컨트롤이 키보드 액세스 가능 {#ensure-that-form-controls-are-keyboard-accessible} 인지 확인합니다.
+## 양식 컨트롤에 키보드 액세스 가능 여부 확인 {#ensure-that-form-controls-are-keyboard-accessible}
 
 액세스 가능한 양식은 키보드나 그에 상응하는 입력 장치만 사용하여 완전히 채울 수 있습니다. 이동성이 저하되거나 시각 장애가 있는 사용자는 키보드를 사용할 수 밖에 없고 마우스를 사용할 수 있는 많은 사용자가 키보드 입력을 선호할 수 있습니다. 다양한 입력 방법을 허용하여 액세스 가능한 양식을 만들 뿐만 아니라 모든 사용자의 환경 설정에 더 적합한 양식을 만들 수도 있습니다.
 

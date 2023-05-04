@@ -1,8 +1,8 @@
 ---
 title: 테스트 계획 컴파일
-seo-title: 테스트 계획 컴파일
+seo-title: Compiling your Test Plan
 description: 개별 시험 사례가 테스트 계획에 통합됩니다
-seo-description: 개별 시험 사례가 테스트 계획에 통합됩니다
+seo-description: The individual test cases are amalgamated into your Test Plan
 uuid: 99822b02-7b75-422d-ae21-16c4af742567
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,18 @@ topic-tags: testing
 content-type: reference
 discoiquuid: 3a8302e8-bc61-402c-a9f2-5db3dfa6dd6d
 exl-id: 913e1fee-b071-4152-94c3-dd7b8900e5ed
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 5%
+source-wordcount: '229'
+ht-degree: 6%
 
 ---
 
 # 테스트 계획 컴파일{#compiling-your-test-plan}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 그 후 개별 테스트 사례가 테스트 계획에 통합될 것이며, 다음과 같이 정의할 것입니다.
 

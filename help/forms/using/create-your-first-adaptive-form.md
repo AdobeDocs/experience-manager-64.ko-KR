@@ -1,28 +1,32 @@
 ---
 title: 첫 번째 적응형 양식 만들기
-seo-title: 첫 번째 적응형 양식 만들기
-description: '비즈니스 클래스, 대화형 및 반응형 양식을 만드는 방법을 알아봅니다. '
-seo-description: '비즈니스 클래스, 대화형 및 반응형 양식을 만드는 방법을 알아봅니다. '
+seo-title: Create your first adaptive form
+description: 비즈니스 클래스, 대화형 및 반응형 양식을 만드는 방법을 알아봅니다.
+seo-description: Learn to create business class, interactive, and responsive forms.
 page-status-flag: de-activated
 uuid: 62f5222c-c787-46be-95fa-a701aa0e6115
 topic-tags: introduction
 discoiquuid: 4e247e70-c50a-4571-8ac1-fbbb07100262
-feature: 적응형 양식
+feature: Adaptive Forms
 exl-id: f634a73a-e720-4a38-a459-6ddbe4fdc565
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 0%
+source-wordcount: '986'
+ht-degree: 1%
 
 ---
 
-# 첫 번째 적응형 양식 {#do-not-publish-create-your-first-adaptive-form} 만들기
+# 첫 번째 적응형 양식 만들기 {#do-not-publish-create-your-first-adaptive-form}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
 
 ## 소개 {#introduction}
 
-등록을 단순화하고 참여를 늘리고 전환 시간을 줄일 수 있는 모바일 친화성 **양식 경험**&#x200B;을 찾고 계십니까? **적응형 양식**&#x200B;이 가장 적합합니다. 적응형 양식은 모바일, 자동화 및 분석에 적합한 양식 경험을 제공합니다. 실제로 반응하고 상호 작용하는 양식을 쉽게 작성하고, 자동화된 프로세스를 사용하여 관리 및 반복 작업을 줄이고, 데이터 분석을 사용하여 고객이 보유한 경험을 개선하거나 개인화할 수 있습니다.
+모바일 친화적 제품을 찾고 계십니까 **양식 경험** 등록을 단순화하고 참여를 늘리고 전환 시간을 줄일 수 있습니다. **적응형 양식** 딱 맞네요. 적응형 양식은 모바일, 자동화 및 분석에 적합한 양식 경험을 제공합니다. 실제로 반응하고 상호 작용하는 양식을 쉽게 작성하고, 자동화된 프로세스를 사용하여 관리 및 반복 작업을 줄이고, 데이터 분석을 사용하여 고객이 보유한 경험을 개선하거나 개인화할 수 있습니다.
 
 이 자습서에서는 적응형 양식을 만드는 종단 간 프레임워크를 제공합니다. 이 자습서는 사용 사례와 여러 안내서로 구성되어 있습니다. 각 안내서는 이 자습서에서 만든 적응형 양식에 새 기능을 학습하고 추가하는 데 도움이 됩니다. 모든 안내서 뒤에 작업 적응형 양식이 있습니다. 적응형 양식 만들기 안내서를 사용할 수 있습니다. 후속 가이드가 곧 제공될 예정입니다. 이 자습서를 마치면 다음을 수행할 수 있습니다.
 
@@ -42,18 +46,18 @@ ht-degree: 0%
 ### 전제 조건 {#prerequisite}
 
 * AEM 작성자 인스턴스를 설정합니다.
-* 작성자 인스턴스에 [AEM Forms 추가 기능](/help/forms/using/installing-configuring-aem-forms-osgi.md)을 설치합니다.
-* 데이터베이스 공급자에서 JDBC 데이터베이스 드라이버(JAR 파일)를 가져옵니다. 자습서의 예는 MySQL 데이터베이스를 기반으로 하며 Oracle의 [MySQL JDBC 데이터베이스 드라이버](https://dev.mysql.com/downloads/connector/j/5.1.html)를 사용합니다.
+* 설치 [AEM Forms 추가 기능](/help/forms/using/installing-configuring-aem-forms-osgi.md) 작성자 인스턴스에서 사용됩니다.
+* 데이터베이스 공급자에서 JDBC 데이터베이스 드라이버(JAR 파일)를 가져옵니다. 이 자습서의 예제는 MySQL 데이터베이스를 기반으로 하며 Oracle을 사용합니다 [MySQL JDBC 데이터베이스 드라이버](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
 * 아래 필드가 표시된 고객 데이터가 포함된 데이터베이스를 설정합니다. 적응형 양식을 만드는 데에는 데이터베이스가 필요하지 않습니다. 이 자습서에서는 데이터베이스를 사용하여 AEM Forms의 양식 데이터 모델 및 지속성 기능을 표시합니다.
 
 ![adaptiveformdata](assets/adaptiveformdata.png)
 
-## 1단계:적응형 양식 {#step-create-an-adaptive-form} 만들기
+## 1단계: 적응형 양식 만들기 {#step-create-an-adaptive-form}
 
 ![03-create-adaptive-form-main-image_small_new](assets/03-create-adaptive-form-main-image_small_new.png)
 
-적응형 양식은 자연에서 새로운 세대, 매력적인 반응형, 동적 및 적응형입니다. 적응형 양식을 사용하여 개인화된 및 타깃팅된 경험을 제공할 수 있습니다. AEM Forms은 적응형 양식을 만들기 위해 드래그 앤 드롭 WYSIWYG 편집기를 제공합니다. 적응형 양식에 대한 자세한 내용은 [적응형 양식 작성 소개](/help/forms/using/introduction-forms-authoring.md)를 참조하십시오.
+적응형 양식은 자연에서 새로운 세대, 매력적인 반응형, 동적 및 적응형입니다. 적응형 양식을 사용하여 개인화된 및 타깃팅된 경험을 제공할 수 있습니다. AEM Forms은 적응형 양식을 만들기 위해 드래그 앤 드롭 WYSIWYG 편집기를 제공합니다. 적응형 양식에 대한 자세한 내용은 [적응형 양식 작성 소개](/help/forms/using/introduction-forms-authoring.md).
 
 목표:
 
@@ -64,7 +68,7 @@ ht-degree: 0%
 
 [ ](create-adaptive-form.md)
 
-## 2단계:양식 데이터 모델 만들기 {#step-create-form-data-model}
+## 2단계: 양식 데이터 모델 만들기 {#step-create-form-data-model}
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
@@ -80,7 +84,7 @@ ht-degree: 0%
 
 [ ](create-form-data-model.md)
 
-## 3단계:적응형 양식 필드에 규칙 적용 {#step-apply-rules-to-adaptive-form-fields}
+## 3단계: 적응형 양식 필드에 규칙 적용 {#step-apply-rules-to-adaptive-form-fields}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
@@ -91,11 +95,11 @@ ht-degree: 0%
 * 적응형 양식 필드에 규칙 만들기 및 적용
 * 규칙을 사용하여 데이터 모델 서비스를 트리거하여 데이터를 데이터베이스로 업데이트
 
-## 4단계:적응형 양식 {#step-style-your-adaptive-form} 스타일 지정
+## 4단계: 적응형 양식 스타일 지정 {#step-style-your-adaptive-form}
 
 ![09-style-your-adaptive-form_small](assets/09-Style-your-adaptive-form_small.png)
 
-적응형 양식은 테마 및 [편집기](/help/forms/using/themes.md)를 제공하여 적응형 양식의 테마를 만듭니다. 테마 에는 구성 요소 및 패널에 대한 스타일 지정 세부 사항이 포함되어 있으며 다른 양식에서 테마를 다시 사용할 수 있습니다. 스타일은 배경색, 상태 색상, 투명도, 정렬 및 크기와 같은 속성을 포함합니다. 양식에 테마를 적용하면 지정된 스타일이 양식의 해당 구성 요소에 반영됩니다. 적용형 양식은 양식에 대한 인라인 스타일링을 지원합니다.
+적응형 양식은 테마 및 [편집기](/help/forms/using/themes.md) 적응형 양식의 테마를 만들기 위해 다음을 수행하십시오. 테마 에는 구성 요소 및 패널에 대한 스타일 지정 세부 사항이 포함되어 있으며 다른 양식에서 테마를 다시 사용할 수 있습니다. 스타일은 배경색, 상태 색상, 투명도, 정렬 및 크기와 같은 속성을 포함합니다. 양식에 테마를 적용하면 지정된 스타일이 양식의 해당 구성 요소에 반영됩니다. 적용형 양식은 양식에 대한 인라인 스타일링을 지원합니다.
 
 목표:
 
@@ -105,7 +109,7 @@ ht-degree: 0%
 
 [ ](style-your-adaptive-form.md)
 
-## 5단계:적응형 양식 {#step-test-your-adaptive-form} 테스트
+## 5단계: 적응형 양식 테스트 {#step-test-your-adaptive-form}
 
 ![11 test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
 
@@ -116,13 +120,13 @@ ht-degree: 0%
 * Calvin SDK 설치
 * 변경 주소 양식에 대한 테스트 세트 및 테스트 사례 만들기
 
-SDK에 대해 알아보려면 [AEM 적응형 양식에 자동화된 테스트 사용](/help/forms/using/calvin.md)을 참조하십시오.
+SDK에 대해 알아보려면 [AEM 적응형 양식에 자동화된 테스트 사용](/help/forms/using/calvin.md).
 
-## 6단계:적응형 양식 {#step-publish-your-adaptive-form} 게시
+## 6단계: 적응형 양식 게시 {#step-publish-your-adaptive-form}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
-적응형 양식을 독립형 양식(단일 페이지 애플리케이션)으로 게시하거나, AEM [사이트 페이지](/help/forms/using/embed-adaptive-form-aem-sites.md)에 포함하거나, [Forms 포털](/help/forms/using/introduction-publishing-forms.md)을 사용하여 AEM 사이트의 목록으로 게시할 수 있습니다.
+적응형 양식을 독립형 양식(단일 페이지 애플리케이션)으로 게시하고 AEM에 포함할 수 있습니다 [사이트 페이지](/help/forms/using/embed-adaptive-form-aem-sites.md)또는 를 사용하여 AEM 사이트에 나열 [Forms 포털](/help/forms/using/introduction-publishing-forms.md).
 
 목표:
 

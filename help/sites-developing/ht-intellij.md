@@ -1,8 +1,8 @@
 ---
 title: IntelliJ IDEA를 사용하여 AEM 프로젝트를 개발하는 방법
-seo-title: IntelliJ IDEA를 사용하여 AEM 프로젝트를 개발하는 방법
+seo-title: How to Develop AEM Projects using IntelliJ IDEA
 description: IntelliJ IDEA를 사용하여 AEM 프로젝트 개발
-seo-description: IntelliJ IDEA를 사용하여 AEM 프로젝트 개발
+seo-description: Using IntelliJ IDEA to develop AEM projects
 uuid: 382b5008-2aed-4e08-95be-03c48f2b549e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,18 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
 exl-id: 274b3a33-3267-41ee-bdcd-351787152570
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '678'
 ht-degree: 4%
 
 ---
 
 # IntelliJ IDEA를 사용하여 AEM 프로젝트를 개발하는 방법{#how-to-develop-aem-projects-using-intellij-idea}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ## 개요 {#overview}
 
@@ -34,33 +38,33 @@ IntelliJ에서 AEM 개발을 시작하려면 다음 단계가 필요합니다.
 >
 >이 안내서는 IntelliJ IDEA Ultimate Edition 12.1.4 및 AEM 5.6.1을 기반으로 합니다.
 
-### IntelliJ IDEA {#install-intellij-idea} 설치
+### IntelliJ IDEA 설치 {#install-intellij-idea}
 
-JetBrain](https://www.jetbrains.com/idea/download/index.html)의 다운로드 페이지에서 IntelliJ IDEA를 다운로드합니다.[
+IntelliJ IDEA 다운로드 위치 [JetBrowens의 다운로드 페이지](https://www.jetbrains.com/idea/download/index.html).
 
 그런 다음 해당 페이지의 설치 지침을 따릅니다.
 
-### Maven {#set-up-your-aem-project-based-on-maven}을 기반으로 AEM 프로젝트 설정
+### Maven을 기반으로 AEM 프로젝트 설정 {#set-up-your-aem-project-based-on-maven}
 
-그런 다음 Apache Maven](/help/sites-developing/ht-projects-maven.md)을 사용하여 AEM 프로젝트를 작성하는 방법[에 설명된 대로 Maven을 사용하여 프로젝트를 설정하십시오.
+다음으로, 다음에 설명된 대로 Maven을 사용하여 프로젝트를 설정합니다. [Apache Maven을 사용하여 AEM 프로젝트를 작성하는 방법](/help/sites-developing/ht-projects-maven.md).
 
-IntelliJ IDEA에서 AEM 프로젝트 작업을 시작하려면 [5분 후에 시작하기](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)의 기본 설정이 충분합니다.
+IntelliJ IDEA에서 AEM 프로젝트 작업을 시작하려면 [5분 후에 시작하기](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) 이면 충분합니다.
 
-### IntelliJ IDEA {#prepare-jsp-support-for-intellij-idea}에 대한 JSP 지원 준비
+### IntelliJ IDEA에 대한 JSP 지원 준비 {#prepare-jsp-support-for-intellij-idea}
 
 IntelliJ IDEA는 JSP 작업(예:
 
 * 태그 라이브러리 자동 완성
-* `<cq:defineObjects />` 및 `<sling:defineObjects />`에 의해 정의된 개체 인식
+* 에 의해 정의된 객체 인식 `<cq:defineObjects />` 및 `<sling:defineObjects />`
 
-이를 수행하려면 [Apache Maven](/help/sites-developing/ht-projects-maven.md)을 사용하여 AEM 프로젝트를 작성하는 방법[JSP에서 작업하는 방법](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps)의 지침을 따르십시오.
+이를 수행하려면 다음 지침을 따르십시오 [JSP 사용 방법](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) in [Apache Maven을 사용하여 AEM 프로젝트를 작성하는 방법](/help/sites-developing/ht-projects-maven.md).
 
 ### Maven 프로젝트 가져오기 {#import-the-maven-project}
 
-1. IntelliJ IDEA에서 **가져오기** 대화 상자를 엽니다.
+1. 를 엽니다. **가져오기** IntelliJ IDEA에서 대화 상자 사용
 
-   * 아직 열려 있는 프로젝트가 없는 경우 시작 화면에서 **프로젝트 가져오기** 선택
-   * 기본 메뉴에서 **파일 -> 프로젝트 가져오기** 선택
+   * 선택 **프로젝트 가져오기** 아직 열려 있는 프로젝트가 없는 경우 시작 화면에서
+   * 선택 **파일 -> 프로젝트 가져오기** 주 메뉴에서
 
 1. 가져오기 대화 상자에서 프로젝트의 POM 파일을 선택합니다.
 
@@ -70,12 +74,12 @@ IntelliJ IDEA는 JSP 작업(예:
 
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
-1. **다음** 및 **완료**&#x200B;를 클릭하여 다음 대화 상자를 계속 진행합니다.
+1. 다음 대화 상자를 클릭하여 계속 진행합니다 **다음** 및 **완료**.
 1. 이제 IntelliJ IDEA를 사용하여 AEM 개발을 사용하도록 설정되었습니다
 
    ![chlimage_1-47](assets/chlimage_1-47.png)
 
-### IntelliJ IDEA {#debugging-jsps-with-intellij-idea}로 JSP 디버깅
+### IntelliJ IDEA를 사용하여 JSP 디버깅 {#debugging-jsps-with-intellij-idea}
 
 IntelliJ IDEA를 사용하여 JSP를 디버깅하는 데 다음 단계가 필요합니다
 
@@ -84,39 +88,39 @@ IntelliJ IDEA를 사용하여 JSP를 디버깅하는 데 다음 단계가 필요
 * 디버그 프로필 구성
 * 디버그 모드에 대한 AEM 구성
 
-#### 프로젝트 {#set-up-a-web-facet-in-the-project}에서 웹 패싯 설정
+#### 프로젝트에서 웹 패싯 설정 {#set-up-a-web-facet-in-the-project}
 
-IntelliJ IDEA는 디버깅할 JSP를 찾을 위치를 이해해야 합니다. IDEA가 `content-package-maven-plugin` 설정을 해석할 수 없으므로 수동으로 구성해야 합니다.
+IntelliJ IDEA는 디버깅할 JSP를 찾을 위치를 이해해야 합니다. IDEA는 다음을 해석하지 못합니다 `content-package-maven-plugin` 설정, 수동으로 구성해야 합니다.
 
-1. **파일 -> 프로젝트 구조**&#x200B;로 이동합니다.
-1. **Content** 모듈을 선택합니다
-1. 모듈 목록 위에 있는 **+** 를 클릭하고 **웹**&#x200B;을 선택합니다.
-1. 웹 리소스 디렉터리로 아래 스크린샷에 표시된 대로 프로젝트의 `content/src/main/content/jcr_root subdirectory`을 선택합니다.
+1. 이동 **파일 -> 프로젝트 구조**
+1. 을(를) 선택합니다 **컨텐츠** 모듈
+1. 클릭 **+** 모듈 목록 위에 있고 을 선택합니다. **웹**
+1. 웹 리소스 디렉토리로 `content/src/main/content/jcr_root subdirectory` 아래의 스크린샷에 표시된 것처럼 프로젝트에 대한 목록을 표시합니다.
 
 ![chlimage_1-48](assets/chlimage_1-48.png)
 
-#### JSR45 지원 플러그인 {#install-the-jsr-support-plugin} 설치
+#### JSR45 지원 플러그인 설치 {#install-the-jsr-support-plugin}
 
-1. IntelliJ IDEA 설정의 **Plugins** 창으로 이동합니다
-1. **JSR45 통합** 플러그인으로 이동하고 그 옆에 있는 확인란을 선택합니다
-1. **적용** 클릭
+1. 로 이동합니다. **Plugins** IntelliJ IDEA 설정의 창
+1. 로 이동합니다 **JSR45 통합** 플러그인을 선택하고 옆에 있는 확인란을 선택합니다
+1. 클릭 **적용**
 1. 요청 시 IntelliJ IDEA를 다시 시작합니다.
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
 #### 디버그 프로필 구성 {#configure-a-debug-profile}
 
-1. **실행 -> 구성 편집**&#x200B;으로 이동합니다.
-1. **+**&#x200B;를 누르고 **JSR45 Remote**&#x200B;를 선택합니다.
-1. 구성 대화 상자에서 **응용 프로그램 서버** 옆에 있는 **구성**&#x200B;을 선택하고 일반 서버를 구성합니다
+1. 이동 **실행 -> 구성 편집**
+1. 히트 **+** 을(를) 선택합니다. **JSR45 원격**
+1. 구성 대화 상자에서 **구성** 다음 **응용 프로그램 서버** 일반 서버 및 구성
 1. 디버깅을 시작할 때 브라우저를 열려면 시작 페이지를 적절한 URL로 설정합니다
-1. vlt autosync를 사용하는 경우 시작 전 **작업을 모두 제거하거나, 그렇지 않은 경우 적절한 Maven 작업을 구성하십시오**
-1. **시작/연결** 창에서 필요한 경우 포트를 조정합니다
+1. 모두 제거 **실행 전** vlt autosync를 사용하는 경우 작업을 수행하고,
+1. 설정 **시작/연결** 창, 필요한 경우 포트 조정
 1. IntelliJ IDEA에서 제안하는 명령줄 인수를 복사합니다.
 
 ![chlimage_1-50](assets/chlimage_1-50.png) ![chlimage_1-51](assets/chlimage_1-51.png)
 
-#### 디버그 모드 {#configure-aem-for-debug-mode}에 대해 AEM 구성
+#### 디버그 모드에 대한 AEM 구성 {#configure-aem-for-debug-mode}
 
 IntelliJ IDEA에서 제안하는 JVM 옵션을 사용하여 AEM을 시작하는 것이 필요한 마지막 단계입니다.
 
@@ -124,12 +128,20 @@ IntelliJ IDEA에서 제안하는 JVM 옵션을 사용하여 AEM을 시작하는 
 
 `java -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,suspend=n,server=y -Xmx1024m -XX:MaxPermSize=256M -jar cq-quickstart-5.6.1.jar`
 
-아래 표시된 대로 `crx-quickstart/bin/start`에서 이러한 옵션을 시작 스크립트에 추가할 수도 있습니다.
+또한 다음 옵션을 시작 스크립트에 추가할 수도 있습니다. `crx-quickstart/bin/start` 아래와 같이 표시됩니다.
 
 ```shell
 # ...
 
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
+
 # default JVM options
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 if [ -z "$CQ_JVM_OPTS" ]; then
  CQ_JVM_OPTS='-server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true'
 fi
@@ -137,18 +149,22 @@ fi
 CQ_JVM_OPTS="$CQ_JVM_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,suspend=n,server=y"
 
 # ...
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 ```
 
 #### 디버깅 시작 {#start-debugging}
 
 이제 AEM에서 JSP를 디버깅하도록 설정되어 있습니다.
 
-1. **실행 -> 디버그 -> 디버그 프로필을 선택합니다.**
+1. 선택 **실행 -> 디버그 -> 디버그 프로필**
 1. 구성 요소 코드에서 중단점 설정
 1. 브라우저에서 페이지에 액세스
 
 ![chlimage_1-52](assets/chlimage_1-52.png)
 
-### IntelliJ IDEA {#debugging-bundles-with-intellij-idea}를 사용하여 번들 디버깅
+### IntelliJ IDEA를 사용하여 번들 디버깅 {#debugging-bundles-with-intellij-idea}
 
-번들의 코드는 표준 일반 원격 디버그 연결을 사용하여 디버깅할 수 있습니다. 원격 디버깅](https://www.jetbrains.com/idea/webhelp/run-debug-configuration-remote.html)에서 [Jetbrain 설명서를 따를 수 있습니다.
+번들의 코드는 표준 일반 원격 디버그 연결을 사용하여 디버깅할 수 있습니다. 다음을 수행할 수 있습니다 [원격 디버깅에 대한 Jetbrain 설명서](https://www.jetbrains.com/idea/webhelp/run-debug-configuration-remote.html).

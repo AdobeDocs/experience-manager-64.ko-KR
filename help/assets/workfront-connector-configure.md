@@ -4,14 +4,18 @@ description: 구성 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: dcf90a29-59a9-40d1-b8ee-56d327072b3e
-source-git-commit: 6f9a682f441c1087558f86da65e092e549f75a17
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 0%
+source-wordcount: '1750'
+ht-degree: 1%
 
 ---
 
 # 구성 [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 에 관리자 액세스 권한이 있는 사용자 [!DNL Adobe Experience Manager] 설치 후 고급 커넥터를 구성합니다. 설치 지침은 [커넥터 설치](/help/assets/workfront-integrations.md).
 
@@ -82,7 +86,7 @@ Workfront 프로젝트와 AEM 폴더 간의 메타데이터 매핑은 AEM 폴더
 
 ![메타데이터 매핑 구성](/help/assets/assets/wf-metadata-mapping-config2.png)
 
-### 자산 메타데이터 매핑 구성 {#asset-metadata-mapping}
+### 에셋 메타데이터 매핑 구성 {#asset-metadata-mapping}
 
 Adobe Workfront 문서와 자산 간의 메타데이터 매핑은 AEM 메타데이터 스키마 내에 정의됩니다. AEM에서 평소대로 메타데이터 스키마를 생성 및 구성해야 합니다. Workfront 도구는 각 메타데이터 스키마 양식 필드의 설정 구성 탭에 구성 옵션을 추가합니다. 이러한 옵션을 사용하면 각 AEM 속성을 매핑해야 하는 Workfront 필드를 지정할 수 있습니다.
 

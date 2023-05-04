@@ -1,8 +1,8 @@
 ---
 title: 시스템 정보 보기
-seo-title: 시스템 정보 보기
+seo-title: View system information
 description: AEM Forms를 실행 중인 서버에 대한 리소스 모니터링 차트와 정보를 보는 방법을 알아봅니다.
-seo-description: AEM Forms를 실행 중인 서버에 대한 리소스 모니터링 차트와 정보를 보는 방법을 알아봅니다.
+seo-description: Learn how you can view resource monitoring charts and information about the server that is running AEM forms.
 uuid: 983c1cc7-a8b3-48b2-a4c8-7b28a2e32537
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d51460d9-c96c-4661-b93e-e015427878ab
 exl-id: e4542335-fcee-4506-965a-5bfe79f4b29a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 0%
+source-wordcount: '576'
+ht-degree: 1%
 
 ---
 
 # 시스템 정보 보기 {#view-system-information}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 시스템 탭에는 AEM Forms를 실행 중인 서버에 대한 리소스 모니터링 차트와 정보가 표시됩니다. 이 정보에 액세스하려면 관리 콘솔에서 페이지의 오른쪽 상단에 있는 상태 모니터 를 클릭하십시오. 클러스터된 환경에서 AEM Forms를 실행하는 경우 표시되는 정보는 서버 목록에서 선택한 노드에 대한 것입니다.
 
@@ -37,66 +41,66 @@ ht-degree: 0%
 
 시스템 탭의 왼쪽 창에는 서버 또는 노드에 대한 다음 정보가 표시됩니다.
 
-**가상 시스템:** 서버의 JVM(Java Virtual Machine) 버전입니다.
+**가상 컴퓨터:** 서버의 JVM(Java Virtual Machine) 버전입니다.
 
-**Virtual Machine Vendor:** JVM의 제조업체입니다.
+**가상 컴퓨터 공급업체:** JVM 제조업체
 
 **가상 컴퓨터 버전:** JVM 버전 번호
 
-**컴퓨터 이름:**  AEM Forms가 설치된 서버의 호스트 이름입니다.
+**컴퓨터 이름:** AEM Forms가 설치된 서버의 호스트 이름입니다.
 
-**작동 시간:**  서버가 실행되는 시간(시간 및 분)입니다.
+**시간:** 서버가 실행된 시간(시간 및 분)입니다.
 
-**Just-In-Time 컴파일러:**  사용 중인 컴파일러의 이름입니다.
+**Just-In-Time 컴파일러:** 사용 중인 컴파일러의 이름입니다.
 
-**컴파일 시간:**  컴파일에서 보낸 시간입니다.
+**컴파일 시간:** 컴파일에서 보낸 시간입니다.
 
-**라이브 스레드 수:**  AEM Forms 시스템에 현재 있는 총 스레드 수입니다.
+**라이브 스레드 수:** 현재 AEM Forms 시스템에 있는 총 스레드 수입니다.
 
-**스레드 최대 수:**  시스템에 기록된 최대 라이브 스레드 수입니다.
+**최대 스레드 수:** 시스템에 기록된 최대 라이브 스레드 수입니다.
 
 **로드된 클래스 수:** JVM에 로드된 클래스 수입니다.
 
 **언로드된 클래스 수:** JVM에서 언로드된 클래스 수입니다.
 
-**최소 heap:**  사용된 최소 힙입니다.
+**최소 heap:** 사용된 최소 힙입니다.
 
-**최대 heap:**  사용된 최대 힙입니다.
+**최대 heap:** 사용된 최대 힙입니다.
 
-**운영 체제 이름:**  AEM Forms 서버에서 실행 중인 운영 체제의 이름입니다.
+**운영 체제 이름:** AEM Forms 서버에서 실행 중인 운영 체제의 이름입니다.
 
-**운영 체제 버전:**  AEM Forms 서버에서 실행 중인 운영 체제의 버전 번호입니다.
+**운영 체제 버전:** AEM Forms 서버에서 실행 중인 운영 체제의 버전 번호입니다.
 
-**운영 체제 아키텍처:**  JVM이 실행 중인 운영 체제 아키텍처입니다.
+**운영 체제 검색:** JVM이 실행 중인 운영 체제 아키텍처입니다.
 
-**프로세서 수:**  시스템의 프로세서 수입니다.
+**프로세서 수:** 시스템의 프로세서 수입니다.
 
-**가상 컴퓨터 인수:**  JVM에서 사용하는 인수입니다.
+**가상 컴퓨터 인수:** JVM에서 사용하는 인수입니다.
 
 **클래스 경로:** JVM에서 사용하는 클래스 경로입니다.
 
 **라이브러리 경로:** JVM에서 사용하는 라이브러리 경로입니다.
 
-**부트 클래스 경로:** JVM에서 사용하는 부트 클래스 경로입니다.
+**부팅 클래스 경로:** JVM에서 사용하는 부트 클래스 경로입니다.
 
-**애플리케이션 서버 유형:** AEM Forms를 실행하는 데 사용되는 애플리케이션 서버의 유형입니다.
+**응용 프로그램 서버 유형:** AEM Forms를 실행하는 데 사용되는 응용 프로그램 서버 유형입니다.
 
-**Application Server 버전:**  AEM Forms를 실행하는 데 사용되는 애플리케이션 서버의 버전 번호입니다.
+**애플리케이션 서버 버전:** AEM Forms를 실행하는 데 사용되는 애플리케이션 서버의 버전 번호입니다.
 
-**Application Server Vendor:**  AEM Forms를 실행하는 데 사용되는 애플리케이션 서버의 제조업체입니다.
+**애플리케이션 서버 공급업체:** AEM Forms를 실행하는 데 사용되는 응용 프로그램 서버의 제조업체입니다.
 
 **설치 날짜:** AEM Forms가 설치된 날짜(yyyy-mm-dd 형식)입니다.
 
-**AEM Forms 버전:**  설치된 AEM Forms 버전입니다.
+**AEM Forms 버전:** 설치된 AEM 양식 버전입니다.
 
-**패치 버전:** AEM Forms 패치 번호.
+**패치 버전:** AEM forms 패치 번호.
 
 **데이터베이스 이름:** AEM Forms에서 사용하는 데이터베이스 유형입니다.
 
-**데이터베이스 버전:**  AEM Forms에서 사용하는 데이터베이스의 버전 번호입니다.
+**데이터베이스 버전:** AEM Forms에서 사용하는 데이터베이스의 버전 번호입니다.
 
-**데이터베이스 드라이브 이름:**  JVM이 데이터베이스에 연결하는 데 사용하는 드라이버의 이름입니다.
+**데이터베이스 드라이브 이름:** JVM이 데이터베이스에 연결하는 데 사용하는 드라이버의 이름입니다.
 
 **데이터베이스 드라이버 버전:** JVM이 데이터베이스에 연결하는 데 사용하는 드라이버 버전입니다.
 
-**저장** 단추를 사용하면 이 시스템 정보를 속성 파일에 저장할 수 있습니다.
+다음 **저장** 버튼을 사용하면 이 시스템 정보를 속성 파일에 저장할 수 있습니다.

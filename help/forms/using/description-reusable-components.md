@@ -1,8 +1,8 @@
 ---
 title: 재사용 가능한 구성 요소에 대한 설명
-seo-title: 재사용 가능한 구성 요소에 대한 설명
+seo-title: Description of reusable components
 description: 웹 애플리케이션에서 AEM Forms 작업 공간 구성 요소를 통합하는 데 도움이 되는 파일 이름 및 종속성이 있는 재사용 가능한 구성 요소의 전체 목록입니다.
-seo-description: 웹 애플리케이션에서 AEM Forms 작업 공간 구성 요소를 통합하는 데 도움이 되는 파일 이름 및 종속성이 있는 재사용 가능한 구성 요소의 전체 목록입니다.
+seo-description: A complete list of reusable components with filenames and dependencies, to help you integrate AEM Forms workspace component in your web applications.
 uuid: 8e6accc7-0935-4d7b-b838-d23676df5cda
 contentOwner: robhagat
 content-type: reference
@@ -10,16 +10,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: d3facd17-ceb0-4799-8cd9-ff9e81e09793
 exl-id: 2790a2d3-444a-4c13-99b0-ea31923fc547
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1257'
-ht-degree: 9%
+source-wordcount: '1267'
+ht-degree: 10%
 
 ---
 
-# 재사용 가능한 구성 요소 {#description-of-reusable-components} 설명
+# 재사용 가능한 구성 요소에 대한 설명 {#description-of-reusable-components}
 
-AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/folder-structure.md)로 구성된 [재사용 가능한](/help/forms/using/integrating-html-ws-components-web.md) 구성 요소로 구성됩니다. 각 구성 요소에는 폴더 구조에 지정된 위치에 모델, 보기 및 템플릿 파일이 있으며, 다른 구성 요소 파일에 대한 JavaScript™ 종속성, 구성 요소에서 수신한 이벤트 및 AEM Forms 작업 영역에서 이러한 이벤트를 트리거하는 JavaScript 개체가 있습니다. 구성 파일 이름 및 종속성이 있는 재사용 가능한 구성 요소의 전체 목록이 여기에 제공됩니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+AEM Forms 작업 공간은 [재사용 가능](/help/forms/using/integrating-html-ws-components-web.md) 특정 구성 요소로 구성된 구성 요소 [폴더 구조](/help/forms/using/folder-structure.md) CRX™. 각 구성 요소에는 폴더 구조에 지정된 위치에 모델, 보기 및 템플릿 파일이 있으며, 다른 구성 요소 파일에 대한 JavaScript™ 종속성, 구성 요소에서 수신한 이벤트 및 AEM Forms 작업 영역에서 이러한 이벤트를 트리거하는 JavaScript 개체가 있습니다. 구성 파일 이름 및 종속성이 있는 재사용 가능한 구성 요소의 전체 목록이 여기에 제공됩니다.
 
 ## 작업 목록 {#tasklist}
 
@@ -171,11 +175,11 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
    <td><p>JS 종속성</p> </td> 
    <td> 
     <ul> 
-     <li><p>필드:큐:{ name, qid, isDefault, type}</p> </li> 
-     <li><p>필드:쿼리:string</p> </li> 
-     <li><p>필드:parentView:필터 목록 보기</p> </li> 
-     <li><p>필드:parentModel:작업 목록 모델</p> </li> 
-     <li><p>필드:유틸리티</p> </li> 
+     <li><p>필드: 큐: { name, qid, isDefault, type}</p> </li> 
+     <li><p>필드: 쿼리: string</p> </li> 
+     <li><p>필드: parentView: 필터 목록 보기</p> </li> 
+     <li><p>필드: parentModel: 작업 목록 모델</p> </li> 
+     <li><p>필드: 유틸리티</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -246,12 +250,12 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
    <td><p>JS 종속성</p> </td> 
    <td> 
     <ul> 
-     <li><p>확장 :필터 보기</p> </li> 
-     <li><p>필드 :queue :{ name, qid, isDefault, type }</p> </li> 
-     <li><p>필드 :쿼리 :string</p> </li> 
-     <li><p>필드 :parentView :필터 목록 보기</p> </li> 
-     <li><p>필드 :parentModel :작업 목록 모델</p> </li> 
-     <li><p>필드 :유틸리티</p> </li> 
+     <li><p>확장 : 필터 보기</p> </li> 
+     <li><p>필드 : queue :{ name, qid, isDefault, type }</p> </li> 
+     <li><p>필드 : 쿼리 : string</p> </li> 
+     <li><p>필드 : parentView : 필터 목록 보기</p> </li> 
+     <li><p>필드 : parentModel : 작업 목록 모델</p> </li> 
+     <li><p>필드 : 유틸리티</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -341,7 +345,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
   </tr> 
   <tr> 
    <td><p>구성 요소 필요</p></td> 
-   <td><p>카테고리</p></td> 
+   <td><p>범주</p></td> 
   </tr> 
   <tr> 
    <td><p>JS 종속성</p></td> 
@@ -366,7 +370,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
 >
 >이 구성 요소는 StartPointList, StartPoint 및 Task와 같은 일부 다른 구성 요소의 모델 클래스를 사용합니다. 이 종속성 외에 CategoryList를 독립적으로 사용할 수 있습니다.
 
-## 카테고리 {#category}
+## 범주 {#category}
 
 <table> 
  <tbody> 

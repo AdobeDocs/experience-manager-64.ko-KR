@@ -1,19 +1,23 @@
 ---
-title: 콘텐츠의 HTTP2 전달 FAQ
+title: 콘텐츠 FAQ의 HTTP2 게재
 description: HTTP2 콘텐츠 전달에 대해 알아봅니다.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 2da4c0b3-119e-436e-9f03-f794283e9a37
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 1%
+source-wordcount: '820'
+ht-degree: 3%
 
 ---
 
-# 콘텐츠의 HTTP2 전달 FAQ{#http-delivery-of-content-faq}
+# 콘텐츠 FAQ의 HTTP2 게재{#http-delivery-of-content-faq}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 Adobe은 컨텐츠의 HTTP/2 게재 가용성을 발표하게 되어 매우 기쁘게 생각합니다. HTTP/2를 사용하는 경우 전반적인 성능이 증가하는 것을 볼 수 있습니다.
 
@@ -44,26 +48,26 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 
 * 리치 미디어 요청에 보안 HTTPS를 사용합니다.
 * Dynamic Media Classic 라이센스의 일부로 Adobe 번들 CDN(컨텐츠 전달 네트워크)을 사용합니다.
-* 일반 Dynamic Media Classic 도메인(즉, `s7d1.scene7.com`, `s7d2.scene7.com` 또는 `s7d13.scene7.com`)이 아닌 전용 도메인(즉, `images.company.com` 또는 `mycompany.scene7.com`)을 사용합니다.
+* 전용 도메인 사용(즉, `images.company.com` 또는 `mycompany.scene7.com`), 일반 Dynamic Media Classic 도메인이 아닌, `s7d1.scene7.com`, `s7d2.scene7.com`, 또는 `s7d13.scene7.com`).
 
-   도메인을 찾으려면 [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app)을 사용하여 계정에 로그인하십시오. 그런 다음 **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 누릅니다. **게시된 서버 이름**&#x200B;이라는 레이블이 지정된 필드를 찾습니다. 현재 일반 Dynamic Media 도메인을 사용 중인 경우, 이 전환의 일부로 고유한 사용자 지정 도메인으로 이동을 요청할 수 있습니다.
+   도메인을 찾으려면 [Dynamic Media Classic 데스크탑 애플리케이션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app). 그런 다음 **[!UICONTROL 설정 > 애플리케이션 설정 > 일반 설정]**. 레이블이 지정된 필드를 찾습니다 **게시된 서버 이름**. 현재 일반 Dynamic Media 도메인을 사용 중인 경우, 이 전환의 일부로 고유한 사용자 지정 도메인으로 이동을 요청할 수 있습니다.
 
 ## Dynamic Media Classic 계정에 대해 HTTP/2를 활성화하는 프로세스는 무엇입니까? {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
-1. [Admin Console을 사용하여 지원 사례](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)를 만들고 HTTP/2로 전환할 요청을 해야 합니다. 자동으로 수행되지 않습니다.
+1. 다음을 수행해야 합니다. [Admin Console을 사용하여 지원 사례 만들기](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 및 HTTP/2로 전환할 것을 요청합니다. 자동으로 수행되지 않습니다.
 1. 지원 사례에 다음 정보를 제공하십시오.
 
    * 기본 연락처 이름, 전자 메일 및 전화 번호입니다.
-   * HTTP2로 전환할 모든 도메인. 즉, `images.company.com` 또는 `mycompany.scene7.com` 입니다.
+   * HTTP2로 전환할 모든 도메인. 그건, `images.company.com` 또는 `mycompany.scene7.com`.
 
-      도메인을 찾으려면 [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app)을 사용하여 계정에 로그인하십시오. 그런 다음 **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 누릅니다. **[!UICONTROL 게시된 서버 이름.]** 필드를 찾습니다.
-   **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 클릭합니다. **[!UICONTROL 게시된 서버 이름]**&#x200B;이라는 레이블이 지정된 필드를 찾습니다.
+      도메인을 찾으려면 [Dynamic Media Classic 데스크탑 애플리케이션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app). 그런 다음 **[!UICONTROL 설정 > 애플리케이션 설정 > 일반 설정]**. 레이블이 지정된 필드를 찾습니다 **[!UICONTROL 게시된 서버 이름입니다.]**
+   Click **[!UICONTROL Setup > Application Setup > General Settings]**. 레이블이 지정된 필드를 찾습니다 **[!UICONTROL 게시된 서버 이름]**.
 
    * 리치 미디어 요청에 보안 HTTPS를 사용하는지 확인합니다.
    * Adobe을 통해 CDN을 사용하고 있으며 직접 관계로 관리되지 않는지 확인합니다.
-   * 전용 도메인을 사용하고 있는지 확인합니다. 즉, `images.company.com` 또는 `mycompany.scene7.com` 입니다. `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com` 등의 일반 Dynamic Media 도메인이 아닙니다.
+   * 전용 도메인을 사용하고 있는지 확인합니다. 그건, `images.company.com` 또는 `mycompany.scene7.com`과 같은 일반 Dynamic Media 도메인이 아님 `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-      도메인을 찾으려면 [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app)을 사용하여 계정에 로그인하십시오. 그런 다음 **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 누릅니다. **[!UICONTROL 게시된 서버 이름이라는 필드를 찾습니다.]** 현재 일반 Dynamic Media 도메인을 사용 중인 경우, 이 전환의 일부로 고유한 사용자 지정 도메인으로 이동을 요청할 수 있습니다.
+      도메인을 찾으려면 [Dynamic Media Classic 데스크탑 애플리케이션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app). 그런 다음 **[!UICONTROL 설정 > 애플리케이션 설정 > 일반 설정]**. 레이블이 지정된 필드를 찾습니다 **[!UICONTROL 게시된 서버 이름입니다.]** 현재 일반 Dynamic Media 도메인을 사용 중인 경우, 이 전환의 일부로 고유한 사용자 지정 도메인으로 이동을 요청할 수 있습니다.
    1. 기술 지원에서는 요청을 제출한 순서에 따라 HTTP/2 고객 대기 목록에 추가합니다.
    1. Adobe이 요청을 처리할 준비가 되면 고객 지원에서 전환을 조정하고 대상 날짜를 설정하도록 알려줍니다.
    1. 완료 후 알림을 받게 되며 HTTP2로 성공적으로 전환되었는지 확인할 수 있습니다.
@@ -86,4 +90,4 @@ HTTP/2로 전환하면 새 CDN 구성으로 이동해야 하므로 CDN에서 캐
 
 ## URL 또는 웹 사이트가 HTTP/2로 활성화되었는지 어떻게 확인할 수 있습니까? {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
-웹 브라우저에서 사용하려면 확장을 다운로드해야 합니다. Firefox 및 Chrome의 경우 **[!UICONTROL HTTP/2 및 SPDY Indicator]**&#x200B;라는 확장이 있습니다. 브라우저는 HTTP/2만 안전하게 지원하므로 확인하려면 HTTPS를 사용하여 URL을 호출해야 합니다. HTTP/2가 지원되는 경우 확장이 파란색 Flash 기호 형태로 표시되고 헤더 &quot;X-Firefox-Spdy&quot; 가 표시됩니다. &quot;h2&quot;.
+웹 브라우저에서 사용하려면 확장을 다운로드해야 합니다. Firefox 및 Chrome의 경우 **[!UICONTROL HTTP/2 및 SPDY 표시기]**. 브라우저는 HTTP/2만 안전하게 지원하므로 확인하려면 HTTPS를 사용하여 URL을 호출해야 합니다. HTTP/2가 지원되는 경우 확장이 파란색 Flash 기호 형태로 표시되고 헤더 &quot;X-Firefox-Spdy&quot; 가 표시됩니다. &quot;h2&quot;.

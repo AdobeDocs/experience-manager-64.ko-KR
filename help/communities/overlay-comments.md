@@ -1,8 +1,8 @@
 ---
 title: 오버레이 주석 구성 요소
-seo-title: 오버레이 주석 구성 요소
+seo-title: Overlay Comments Component
 description: 오버레이 주석 구성 요소 개요
-seo-description: 오버레이 주석 구성 요소 개요
+seo-description: Overlay Comments component overview
 uuid: 634240e2-99bb-4107-89f5-c66d53e2515d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,16 +10,20 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 4849da13-518c-40c8-b80e-1b2264d7f8f5
 exl-id: 31528814-02bc-4978-87fa-5c8074b454ed
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 0%
+source-wordcount: '197'
+ht-degree: 4%
 
 ---
 
 # 오버레이 주석 구성 요소 {#overlay-comments-component}
 
-기본 구성 요소를 오버레이하는 의도는 구성 요소에 대한 모든 상대 참조에 대해 구성 요소의 모양 또는 동작을 전역 변경하는 것입니다. [](client-customize.md#overlays) /libs 폴더에서 검색하기 전에 sling의 특성을 사용하여 /apps 폴더로 확인합니다. 따라서 구성 요소의 경로는 /apps 폴더에 있지 않고 /libs 폴더에 있다는 점을 제외하고 기본 구성 요소의 경로와 동일합니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+의 의도 [오버레이](client-customize.md#overlays) 기본 컴포넌트는 컴포넌트에 대한 모든 상대 참조에 대해 전체적으로 컴포넌트의 모양이나 동작을 변경하는 것입니다. /libs 폴더에서 검색하기 전에 sling의 특성을 사용하여 /apps 폴더로 확인합니다. 따라서 구성 요소의 경로는 /apps 폴더에 있지 않고 /libs 폴더에 있다는 점을 제외하고 기본 구성 요소의 경로와 동일합니다.
 
 ## 예 {#example}
 

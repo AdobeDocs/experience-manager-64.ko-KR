@@ -4,20 +4,24 @@ description: Adobe Experience Manager 6.4 누적 수정 팩에 대한 릴리스 
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: a63e77a3-da48-4072-bc75-c4c41a2f62a3
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4681'
-ht-degree: 23%
+source-wordcount: '4717'
+ht-degree: 20%
 
 ---
 
 # AEM 6.4 누적 수정 팩 릴리스 정보 {#aem-cumulative-fix-pack-release-notes}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 ## 릴리스 정보 {#release-information}
 
 <!-- TBD: Update the SD URL. -->
 
-| 제품 | **AEM(Adobe Experience Manager) 6.4** |
+| 제품 | **Adobe Experience Manager (AEM) 6.4** |
 |---|---|
 | 버전 | 6.4.8.4 |
 | 유형 | 누적 수정 팩 |
@@ -25,7 +29,7 @@ ht-degree: 23%
 | 전제 조건 | [AEM 6.4 서비스 팩 8(6.4.8.0)](sp-release-notes.md) |
 | 다운로드 URL | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-4.0.zip) |
 
-## AEM 6.4.8.4에 포함된 기능 {#what-s-included-in-aem}
+## AEM 6.4.8.4에 포함된 제품 {#what-s-included-in-aem}
 
 AEM 누적 수정 팩 6.4.8.4은 2020년 3월, AEM 6.4 서비스 팩 8(6.4.8.0)의 일반 출시 이후 다수의 내부 및 고객 수정 사항을 포함한 중요한 업데이트입니다.
 
@@ -138,7 +142,7 @@ Adobe Experience Manager 6.4.8.3은 다음 문제에 대한 수정 사항을 제
 * 에서 [!UICONTROL 뷰어 사전 설정 편집기], 편집 시 [!UICONTROL PanasonicImage/PanoricImage_VR] 사전 설정, `PanoramicView` 구성 요소, `PANORAMICVIEW_AUTOROTATE` 수정자 레이블을 사용할 수 없습니다(CQ-4302043).
 * 다음에서 비디오 게시 취소 [!DNL Experience Manager] 구성된 Dynamic Media Classic에 대한 응용 비디오 세트 게시를 취소하지 않습니다. (CQ-4304405).
 
-#### 플랫폼 {#platform-6483}
+#### Platform {#platform-6483}
 
 * 다음 `emitUseStrict` 플래그는 GCC(Google Closure Compiler) 프로세서 함수에 추가됩니다 `com.adobe.granite.ui.clientlibs.impl.HtmlLibraryManagerImpl`. 플래그는 `use strict` 지침(NPR-34830).
 * A `NullPointerException` 매일 또는 주별 유지 관리 작업을 시작할 때 반환됩니다(NPR-34702).
@@ -258,7 +262,7 @@ Adobe Experience Manager 6.4.8.2는 다음 문제에 대한 수정 사항을 제
 
 * 다음 [!UICONTROL PANORAMICVIEW_AUTOROTATE] 수정자 레이블이 [!UICONTROL 비헤이비어] 탭 [!UICONTROL 뷰어 사전 설정 편집기] 페이지(CQ-4302043).
 
-#### 플랫폼 {#platform-6482}
+#### Platform {#platform-6482}
 
 * 기본값은 **[!UICONTROL 연결 시간 초과]** 및 **[!UICONTROL 소켓 시간 제한]** 기본 에이전트(게시) 구성에 대한 설정이 지정되지 않았습니다(NPR-33708).
 * 유지 관리 작업 스케줄러가 구성된 것보다 너무 자주 유지 관리 작업을 시작하고 중지합니다(NPR-33520).
@@ -367,7 +371,7 @@ Adobe Experience Manager 6.4.8.1은 다음 문제에 대한 수정 사항을 제
 * Salesforce 통합은 SSRF에 취약합니다(NPR-32671).
 * PreferencesServlet에 XSS가 반영되었습니다(NPR-33439).
 
-#### 자산 {#assets-6481}
+#### Assets {#assets-6481}
 
 * 목록 보기에서 선택 내용의 변경에 따라 자산 수가 변경되지 않습니다(NPR-33285).
 
@@ -387,7 +391,7 @@ Adobe Experience Manager 6.4.8.1은 다음 문제에 대한 수정 사항을 제
 
 * Experience Manager의 SSRF 취약성(NPR-33437).
 
-#### 플랫폼 {#platform-6481}
+#### Platform {#platform-6481}
 
 * `sling:match` 맵 항목이 `/etc/maps`에 작성되지 않으면 [!DNL Sling] 필터가 호출되지 않습니다(NPR-33308).
 * 페이지 비활성화 시 모든 플러시 에이전트가 트리거됩니다(NPR-32941).
@@ -484,7 +488,7 @@ Adobe Experience Manager 6.4.8.1은 다음 문제에 대한 수정 사항을 제
 
 실행 중인 인스턴스에 AEM 6.4.8.4을 자동으로 설치하는 두 가지 방법이 있습니다.
 
-A. 서버가 실행되는 동안 패키지를 ..*/crx-quickstart/install* 폴더에 배치합니다. 패키지가 자동으로 설치됩니다.
+A. 서버가 실행되는 동안 패키지를 ..*/crx-quickstart/install* 폴더가 실행되고 있는 동안 폴더를 지정합니다. 패키지가 자동으로 설치됩니다.
 
 B. [패키지 관리자의 HTTP API](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/package_manager.html) - `cmd=install&recursive=true` - 따라서 중첩된 패키지가 설치됩니다.
 
@@ -494,7 +498,7 @@ B. [패키지 관리자의 HTTP API](https://docs.adobe.com/content/docs/en/crx/
 
 ### 설치 확인 {#validate-install}
 
-1. 이제 [제품 정보] 페이지(*/system/console/productinfo*)의 [설치된 제품] 아래에 업데이트된 버전 문자열 &quot;Adobe Experience Manager, 버전 6.4.8.4&quot;이 표시됩니다.
+1. 제품 정보 페이지(*/system/console/productinfo*)의 설치된 제품 아래에 업데이트된 버전 문자열 &quot;Adobe Experience Manager, 버전 6.4.8.4&quot;가 표시됩니다.
 1. 모든 OSGI 번들은 OSGi 콘솔에서 ACTIVE이거나 FRAGMENT입니다(웹 콘솔 사용: /system/console/bundles).
 1. OSGI 번들 org.apache.jackrabbit.oak-core는 버전 1.8.17 이상에 있습니다(웹 콘솔 사용: /system/console/bundles).
 
@@ -560,10 +564,10 @@ Maven 프로젝트에서 Uber Jar를 사용하려면 문서 [Uber jar 사용 �
 
 이 섹션에는 AEM 6.4에서 제거되었거나 이제 사용되지 않는 기능이 나와 있습니다.
 
-| 영역 | 기능 | 대체 | 버전 |
+| 영역 | 특별 포함 | 대체 | 버전 |
 |---|---|---|---|
-| 자산 | 하위 자산에 대한 태그 작업 관리 | 교체 없음 | AEM 6.4.2.0 |
-| Assets과 Adobe Creative Cloud 통합 | [AEM과 Creative Cloud 폴더 공유](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html)는 Creative 사용자에게 AEM의 자산에 대한 액세스 권한을 제공하는 방법으로 AEM 6.2에 도입되었습니다. Creative Cloud 애플리케이션에서 새롭게 출시된 기능인 Adobe Asset Link는 Photoshop, InDesign 및 Illustrator에서 직접 AEM 자산에 액세스할 수 있는 강력한 권한과 함께 우수한 사용자 경험을 제공합니다. Adobe는 폴더 공유 기능에 대한 추가 개선을 하지 않습니다. 이 기능은 AEM에 포함되어 있지만 고객은 교체 서비스를 사용하는 것이 좋습니다. | Adobe 자산 링크 또는 데스크탑 앱. 자세한 내용은 [AEM Creative Cloud 통합](/help/assets/aem-cc-integration-best-practices.md) 문서를 참조하십시오. | AEM 6.4.4.0 |
+| Assets | 하위 자산에 대한 태그 작업 관리 | 교체 없음 | AEM 6.4.2.0 |
+| 자산 및 Adobe Creative Cloud 통합 | [AEM과 Creative Cloud 폴더 공유](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html)는 Creative 사용자에게 AEM의 자산에 대한 액세스 권한을 제공하는 방법으로 AEM 6.2에 도입되었습니다. Creative Cloud 애플리케이션에서 새롭게 출시된 기능인 Adobe Asset Link는 Photoshop, InDesign 및 Illustrator에서 직접 AEM 자산에 액세스할 수 있는 강력한 권한과 함께 우수한 사용자 경험을 제공합니다. Adobe은 폴더 공유 기능을 추가로 개선하지 않습니다. 이 기능은 AEM에 포함되어 있지만 고객은 교체 서비스를 사용하는 것이 좋습니다. | Adobe 자산 링크 또는 데스크탑 앱. 자세한 내용은 [AEM Creative Cloud 통합](/help/assets/aem-cc-integration-best-practices.md) 문서. | AEM 6.4.4.0 |
 
 ## 알려진 문제 {#known-issues}
 
@@ -571,7 +575,7 @@ Maven 프로젝트에서 Uber Jar를 사용하려면 문서 [Uber jar 사용 �
 
 AEM 6.4.8.0 서비스 팩의 알려진 문제에 대한 자세한 내용은 [AEM 6.4.8.0 서비스 팩 릴리스 노트](sp-release-notes.md).
 
-## OSGi 번들 및 컨텐츠 패키지가 설치됨 {#osgi-bundles-and-content-packages-included}
+## OSGi 번들 및 컨텐츠 패키지가 포함됨 {#osgi-bundles-and-content-packages-included}
 
 다음 텍스트 문서에는 AEM 6.4.8.4에 포함된 OSGi 번들 및 컨텐츠 패키지 목록이 나와 있습니다.
 
@@ -592,7 +596,7 @@ AEM 6.4.8.4에 포함된 콘텐츠 패키지 목록
 
 ## 제한된 사이트 {#restricted-sites-new}
 
-다음 사이트는 고객만 사용할 수 있습니다. 액세스가 필요한 고객의 경우 Adobe 계정 관리자에게 문의하십시오.
+이러한 사이트는 고객만 사용할 수 있습니다. 액세스가 필요한 고객인 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-* [고객 지원 팀에 문의](https://experienceleague.adobe.com/docs/customer-one/using/home.html)
+* [고객 지원에 문의](https://experienceleague.adobe.com/docs/customer-one/using/home.html)

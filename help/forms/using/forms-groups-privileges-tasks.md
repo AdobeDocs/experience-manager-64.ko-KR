@@ -1,8 +1,8 @@
 ---
 title: OSGi 그룹 및 권한의 AEM Forms
-seo-title: OSGi 그룹 및 권한의 AEM Forms
+seo-title: AEM Forms on OSGi Groups and Privileges
 description: OSGi에서 AEM Forms을 관리할 그룹에 사용자 할당
-seo-description: OSGi에서 AEM Forms을 관리할 그룹에 사용자 할당
+seo-description: Assign users to the groups to manage AEM Forms on OSGi
 uuid: 9ebb3a4e-4c0e-4105-921f-58077fc45281
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,20 +11,24 @@ topic-tags: Configuration
 discoiquuid: 71412f5d-ff34-415f-baf8-d300756b93a9
 role: Admin
 exl-id: a79e863e-c316-422e-a565-b0ffdeffcc00
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 1%
+source-wordcount: '290'
+ht-degree: 4%
 
 ---
 
 # OSGi 그룹 및 권한의 AEM Forms {#aem-forms-on-osgi-groups-and-privileges}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 OSGi에서 AEM Forms을 관리할 그룹에 사용자 할당
 
-[그룹](/help/sites-administering/user-group-ac-admin.md#group-administration)을 만들고, 정책 및 [사용자](/help/sites-administering/user-group-ac-admin.md#user-administration)를 AEM의 그룹에 할당할 수 있습니다. 이러한 정책은 그룹에 속하는 사용자의 권한을 제어합니다.
+다음을 수행할 수 있습니다 [그룹 만들기](/help/sites-administering/user-group-ac-admin.md#group-administration) 정책 및 할당 [사용자](/help/sites-administering/user-group-ac-admin.md#user-administration) 추가 콘텐츠는 AEM의 그룹에 속해 있어야 합니다. 이러한 정책은 그룹에 속하는 사용자의 권한을 제어합니다.
 
-[AEM Forms 추가 기능 패키지](/help/forms/using/installing-configuring-aem-forms-osgi.md)를 설치하면 forms-user 및 forms-power-user와 같이 이 문서에 언급된 그룹을 자동으로 할당에 사용할 수 있습니다. 다음 표에는 그룹 할당을 기반으로 사용자가 OSGi에서 AEM Forms에 대해 수행할 수 있는 작업이 나열되어 있습니다.
+설치한 후 [AEM Forms 추가 기능 패키지](/help/forms/using/installing-configuring-aem-forms-osgi.md)에서는 forms-user 및 forms-power-user와 같이 이 문서에 언급된 그룹을 자동으로 할당에 사용할 수 있습니다. 다음 표에는 그룹 할당을 기반으로 사용자가 OSGi에서 AEM Forms에 대해 수행할 수 있는 작업이 나열되어 있습니다.
 
 <table> 
  <tbody>

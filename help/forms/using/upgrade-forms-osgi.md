@@ -11,20 +11,24 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 role: Admin
 exl-id: 183ed9c6-6a9a-4932-8405-5ae2c6fac1ec
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '861'
 ht-degree: 11%
 
 ---
 
 # OSGi에서 AEM 6.4 Forms으로 업그레이드 {#upgrade-to-aem-forms-osgi}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 환경에 적합한 다음 업그레이드 경로 중 하나를 사용하십시오.
 
 ## AEM 6.2 Forms 또는 AEM 6.3 Forms > AEM 6.4 Forms {#upgrade-aem-forms-62-63-to-64}
 
-AEM 6.2 Forms 또는 AEM 6.3 Forms에서 AEM 6.4 Forms으로 직접 업그레이드할 수 있습니다. 다음을 수행합니다.
+AEM 6.2 Forms 또는 AEM 6.3 Forms에서 AEM 6.4 Forms으로 직접 업그레이드할 수 있습니다. 다음 작업을 수행합니다.
 
 1. 기존 AEM 인스턴스를 AEM 6.4로 업그레이드하십시오. 단계는 아래에 나와 있습니다.
 

@@ -1,8 +1,8 @@
 ---
 title: AEM 앱 구성
-seo-title: AEM 앱 구성
+seo-title: Configuring for AEM Apps
 description: AEM 앱을 구성하는 방법을 알아봅니다.
-seo-description: AEM 앱을 구성하는 방법을 알아봅니다.
+seo-description: Learn how to configure AEM Apps.
 uuid: ab9acd93-da7f-4bb7-8d26-224044899068
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,18 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 34f24837-f5e2-41f0-a359-fdb695e1b8f2
 exl-id: 593a588c-02f1-4b48-ac57-9348d6652bcc
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 0%
+source-wordcount: '177'
+ht-degree: 5%
 
 ---
 
 # AEM 앱 구성{#configuring-for-aem-apps}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 Adobe Experience Manager 앱에서는 OTA(Air)를 통해 애플리케이션의 콘텐츠를 업데이트하는 기능을 제공합니다. 업데이트된 컨텐츠는 게시 인스턴스에 저장됩니다. 장치의 앱이 게시 인스턴스에 연결할 수 있도록 하고 업데이트를 확인하려면 빈 레퍼러 헤더를 허용하도록 게시 인스턴스를 구성해야 합니다.
 
@@ -25,13 +29,13 @@ Adobe Experience Manager 앱에서는 OTA(Air)를 통해 애플리케이션의 �
 
 레퍼러 필터 서비스를 구성하려면:
 
-* 다음 위치에서 Apache Felix 콘솔(**구성**)을 엽니다.
+* Apache Felix 콘솔을 엽니다(**구성**):
 * https://&lt;server>:&lt;port_number>/system/console/configMgr
 * 관리자로 로그인합니다.
-* **구성** 메뉴에서 다음을 선택합니다.*Apache Sling 레퍼러 필터*
+* 에서 **구성** 메뉴에서 다음을 선택합니다. *Apache Sling 레퍼러 필터*
 * 빈/누락된 레퍼러 헤더를 허용하려면 빈 허용 필드를 선택합니다.
-* **저장**&#x200B;을 클릭하여 변경 내용을 저장합니다.
+* 클릭 **저장** 변경 사항을 저장하려면 을 클릭합니다.
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
-자세한 내용은 [OSGI 구성 설정](/help/sites-deploying/osgi-configuration-settings.md) 및 [보안 검사 목록 - 사이트 간 요청 위조 문제](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery)를 참조하십시오.
+자세한 내용은 [OSGI 구성 설정](/help/sites-deploying/osgi-configuration-settings.md) 및 [보안 검사 목록 - 사이트 간 요청 위조 문제](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) 자세한 내용

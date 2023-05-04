@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 discoiquuid: fabc981e-0c9e-4157-b0a1-0c13717fb6cd
 exl-id: a797ec42-e6bf-457e-91d7-0430b4671a68
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 8%
+source-wordcount: '626'
+ht-degree: 9%
 
 ---
 
 # Android Studio 프로젝트를 설정하고 Android 앱을 빌드합니다. {#set-up-the-android-studio-project-and-build-the-android-app}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 이 문서는 AEM Forms 앱 6.3.1.1 이상 버전을 빌드하기 위한 것입니다. AEM Forms App 6.3의 소스 코드에서 앱을 빌드하려면 다음을 참조하십시오 [Eclipse 프로젝트를 설정하고 Android™ 앱을 빌드합니다.](/help/forms/using/setup-eclipse-project-build-installer.md).
 

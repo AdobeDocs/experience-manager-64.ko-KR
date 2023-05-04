@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
 role: Admin
 exl-id: cb2f61df-73bb-47f7-86ce-feda4772c8d0
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2764'
-ht-degree: 4%
+source-wordcount: '2800'
+ht-degree: 5%
 
 ---
 
 # 커뮤니티 기능에 대한 Analytics 구성 {#analytics-configuration-for-communities-features}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ## 개요 {#overview}
 
@@ -339,8 +343,20 @@ Analytics 추적 및 가져오기가 커뮤니티 사이트에 대해 제대로 
 
 ```xml
 # present in default sitepage.hbs
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 # only one scf-js-site-title class should be included
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 # this example sets it to be hidden as it serves no visual purpose
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 <div
     class="navbar-brand scf-js-site-title"
     href="{{siteUrl}}.html"
@@ -392,12 +408,12 @@ evar1에서 evar11까지 및 event1에서 event7까지 변수 중 하나를 매�
 |------------------------|------------------------|-----------|--------------|------------|-----------|---------|----------|--------------|---------|----------|
 |  | **eVar1** | **eVar2** | **eVar3** | **eVar4** | **eVar5** | **eVar6** | **eVar7** | **eVar8** | **eVar9** | **eVar10** |
 | event1리소스 재생 | (a) | - | - | - | - | - | - | - | 자. | - |
-| event2SCFVview | 가. | (b) | 다. | (d) | (e) | 바. | 사. | (h) | 자. | 차. |
-| event3SCFCreate(Post) | - | 나. | 다. | 라. | 마. | 바. | 사. | 아. | 자. | 차. |
-| event4SCFFollow | - | 나. | 다. | 라. | 마. | 바. | 사. | 아. | 자. | 차. |
-| event5SCFVoteUp | - | 나. | 다. | 라. | 마. | 바. | 사. | 아. | 자. | 차. |
-| event6SCFVoteDown | - | 나. | 다. | 라. | 마. | 바. | 사. | 아. | 자. | 차. |
-| event7SCFRate | - | 나. | 다. | 라. | 마. | 바. | 사. | 아. | 자. | 차. |
+| event2SCFView | (a) | (b) | (c) | (d) | 마. | 바. | 사. | (h) | 자. | 차. |
+| event3SCFCreate(Post) | - | (b) | (c) | (d) | 마. | 바. | 사. | (h) | 자. | 차. |
+| event4SCFFollow | - | (b) | (c) | (d) | 마. | 바. | 사. | (h) | 자. | 차. |
+| event5SCFVoteUp | - | (b) | (c) | (d) | 마. | 바. | 사. | (h) | 자. | 차. |
+| event6SCFVoteDown | - | (b) | (c) | (d) | 마. | 바. | 사. | (h) | 자. | 차. |
+| event7SCFRate | - | (b) | (c) | (d) | 마. | 바. | 사. | (h) | 자. | 차. |
 
 **eVar 값의 예:**
 

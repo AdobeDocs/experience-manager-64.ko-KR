@@ -10,14 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: e7672b23-a4af-49bb-bba7-0565d3bda802
 exl-id: 24dd0d05-6327-47e2-a3d1-6ed40af06783
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1753'
+source-wordcount: '1789'
 ht-degree: 2%
 
 ---
 
 # Adobe Analytics를 위한 비디오 추적 구성{#configuring-video-tracking-for-adobe-analytics}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 비디오 이벤트를 추적하는 데 사용할 수 있는 방법에는 몇 가지가 있으며, 그 중 2가지는 이전 버전의 Adobe Analytics에 대한 레거시 옵션입니다. 이러한 기존 옵션은 다음과 같습니다. 이전 이정표 및 이전 초.
 
@@ -320,7 +324,7 @@ eventdata.events.milestoneXX
 
    **샘플 호출** 제공된 예제를 사용하여 Adobe Analytics에 제출하는 방법은 DigitalPulse Debugger를 사용하여 볼 때 다음과 같습니다.
 
-   ![이정표1](assets/lmilestones1.png)
+   ![lmilestones1](assets/lmilestones1.png)
 
    *다음&#x200B;**pev3**호출에서 전송된 변수에는 다음 정보가 포함됩니다.*
 

@@ -1,8 +1,8 @@
 ---
 title: 프로그래밍 방식으로 PreferencesNodes 관리
-seo-title: 프로그래밍 방식으로 PreferencesNodes 관리
+seo-title: Programmatically managing the PreferencesNodes
 description: 환경 설정 관리자 서비스 API(Java)를 사용하여 환경 설정 노드를 프로그래밍 방식으로 관리합니다.
-seo-description: 환경 설정 관리자 서비스 API(Java)를 사용하여 환경 설정 노드를 프로그래밍 방식으로 관리합니다.
+seo-description: Use the Preferences Manager Service API (Java) to programmatically manage the Preferences Nodes.
 uuid: f0cb117a-a6cc-4ca5-8511-b3bc9f6738e9
 contentOwner: admin
 content-type: reference
@@ -11,18 +11,22 @@ topic-tags: operations
 discoiquuid: 9d4dba7f-49d8-4112-bc8a-04dafc99a936
 role: Developer
 exl-id: d580b32c-a344-4a8c-bd61-0949da76d981
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 0%
+source-wordcount: '267'
+ht-degree: 2%
 
 ---
 
-# 환경 설정 노드 {#programmatically-managing-the-preferencesnodes} 를 프로그래밍 방식으로 관리
+# 환경 설정 노드를 프로그래밍 방식으로 관리 {#programmatically-managing-the-preferencesnodes}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 이 항목에서는 환경 설정 관리자 서비스 API(Java)를 사용하여 환경 설정 노드를 프로그래밍 방식으로 관리하는 방법을 설명합니다.
 
-관리자 UI에서 구성 설정을 수동으로 변경할 수 있습니다. 옵션을 변경하려면 `Home>Settings>User Management> Configuration>Manual Configuration`(으)로 이동합니다. 변경한 후 `config.xml`을(를) 가져오면 `/Adobe/Adobe Experience Manager Forms/Config/UM persist` 노드에서 수행한 변경 사항을 제외한 모든 변경 사항이 손실됩니다. 사용자 관리 가져오기 및 내보내기의 미리 보기는 다른 구성 요소에 대한 구성 설정 변경을 지원하지 않습니다. 이제 이러한 변경은 `PreferencesManagerServiceClient` API를 사용하여 수행할 수 있습니다.
+관리자 UI에서 구성 설정을 수동으로 변경할 수 있습니다. 옵션을 변경하려면 다음 위치로 이동합니다 `Home>Settings>User Management> Configuration>Manual Configuration`. 가져오기 `config.xml` 변경한 후에는 노드에서 수행한 변경 사항을 제외한 모든 변경 사항이 표시됩니다 `/Adobe/Adobe Experience Manager Forms/Config/UM persist` 분실되었습니다. 사용자 관리 가져오기 및 내보내기의 미리 보기는 다른 구성 요소에 대한 구성 설정 변경을 지원하지 않습니다. 이제 이러한 변경 사항은 `PreferencesManagerServiceClient` API.
 
 **단계 요약**&#x200B;환경 설정 노드를 프로그래밍 방식으로 관리하려면 다음 단계를 수행하십시오.
 

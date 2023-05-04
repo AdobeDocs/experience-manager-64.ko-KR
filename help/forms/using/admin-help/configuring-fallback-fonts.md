@@ -1,24 +1,28 @@
 ---
 title: 대체 글꼴 구성
-seo-title: 대체 글꼴 구성
+seo-title: Configuring fallback fonts
 description: 대체 글꼴을 구성하는 방법을 알아봅니다.
-seo-description: 대체 글꼴을 구성하는 방법을 알아봅니다.
+seo-description: Learn how to configure fallback fonts.
 uuid: 2745541c-8c6d-4bb4-aa14-ec19afd6bc35
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d997a268-a40a-462d-badd-94f0731f7ba4
-feature: PDF 생성기
+feature: PDF Generator
 exl-id: 6942b6fc-8d04-429f-8433-1ab74c68fcc1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 0%
+source-wordcount: '290'
+ht-degree: 2%
 
 ---
 
 # 대체 글꼴 구성 {#configuring-fallback-fonts}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 서버에서 기본 글꼴을 사용할 수 없는 경우 기본 AEM Forms 글꼴을 대체(또는 대체)로 매핑하도록 FontManagerResources.properties 파일을 수동으로 구성할 수 있습니다. 이 속성 파일은 adobe-fontmanager.jar 파일에 있습니다.
 
@@ -26,12 +30,12 @@ ht-degree: 0%
 >
 >대체 글꼴 구성은 어셈블러 서비스에도 적용됩니다.
 
-1. *[aem-forms root]*/configurationManager/export 디렉토리의 adobe-livecycle-*[appserver]*.ear 파일로 이동하여 백업 복사본을 만들고 원본을 패키지 취소합니다.
+1. adobe-livecycle-*[appserver]*.ear 파일의 *[aem forms 루트]*/configurationManager/export 디렉토리를 만들고 백업 복사본을 만들고 원본 패키지를 해제합니다.
 1. adobe-fontmanager.jar 파일을 찾아 압축을 해제합니다.
 1. FontManagerResources.properties 파일을 찾아 텍스트 편집기에서 엽니다.
 1. 필요에 따라 일반 및 대체 글꼴 위치 및 이름을 수정하고 파일을 저장합니다.
 
-   FontManagerResources.properties 파일의 글꼴 항목은 *[aem-forms root]*/fonts 디렉토리에 상대적입니다. 기본 AEM Forms 글꼴이 아닌 글꼴을 지정하는 경우 해당 글꼴을 이 디렉토리 구조 내에 설치해야 합니다(기존 디렉토리 내에서 또는 새로 만든 글꼴).
+   FontManagerResources.properties 파일의 글꼴 항목은 *[aem forms 루트]*/fonts 디렉토리. 기본 AEM Forms 글꼴이 아닌 글꼴을 지정하는 경우 해당 글꼴을 이 디렉토리 구조 내에 설치해야 합니다(기존 디렉토리 내에서 또는 새로 만든 글꼴).
 
    >[!NOTE]
    >
@@ -42,8 +46,8 @@ ht-degree: 0%
    * 대체 테이블에서 설정된 순서대로 검색된 일반 글꼴
 
 1. adobe-fontmanager.jar 파일을 다시 패키징합니다.
-1. adobe-livecycle-*[appserver]*.ear 파일을 다시 패키징한 다음 수동으로 또는 Configuration Manager를 실행하여 재배포합니다.
+1. adobe-livecycle 패키지 다시 설정&#x200B;*[appserver]*.ear 파일을 수동으로 또는 Configuration Manager를 실행하여 재배포합니다.
 
 >[!NOTE]
 >
->Configuration Manager를 사용하여 adobe-livecycle-[appserver].ear 파일을 다시 패키지하지 마십시오. 이 파일은 수정 사항을 AEM Forms 기본값으로 덮어쓰게 됩니다.
+>구성 관리자를 사용하여 adobe-livecycle-을 다시 패키징하지 마십시오.[appserver].ear 파일은 수정 사항을 AEM forms 기본값으로 덮어쓰게 됩니다.

@@ -8,14 +8,18 @@ contentOwner: khsingh
 topic-tags: publish
 discoiquuid: 4c7ba430-25b2-4ba2-a5eb-4edaed0d599a
 exl-id: 6172d936-9348-4f3f-a437-6465dd156f3b
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '914'
 ht-degree: 20%
 
 ---
 
 # OSGi 및 AEM Forms JEE 워크플로우에서 양식 중심의 AEM 워크플로우의 작업 및 기능  {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ## AEM 받은 편지함 및 HTML 작업 공간 {#aem-inbox-and-html-workspace}
 
@@ -24,7 +28,7 @@ AEM 받은 편지함은 OSGi에서 Forms 중심의 AEM 워크플로우를 실행
 <table> 
  <tbody>
   <tr>
-   <td>액션</td> 
+   <td>작업</td> 
    <td>AEM 받은 편지함</td> 
    <td>HTML 작업 공간</td> 
   </tr>
@@ -120,12 +124,12 @@ OSGi 및 AEM Forms JEE 워크플로우의 양식 중심의 AEM 워크플로우(J
   <tr>
    <td>낙서 서명</td> 
    <td>지원됨</td> 
-   <td>지원됨<br /> </td> 
+   <td>지원됨<br />을 따르지 않는 경우입니다 </td> 
   </tr>
   <tr>
    <td>사용자 지정 이메일 템플릿</td> 
    <td>지원됨</td> 
-   <td>지원됨<br /> </td> 
+   <td>지원됨<br />을 따르지 않는 경우입니다 </td> 
   </tr>
   <tr>
    <td>작업 우선 순위 정의</td> 
@@ -338,7 +342,7 @@ Forms 중심의 워크플로우를 시작하는 두 가지 두드러진 방법 �
 <table> 
  <tbody>
   <tr>
-   <td><p><strong>액션</strong></p> </td> 
+   <td><p><strong>작업</strong></p> </td> 
    <td><p><strong>AEM 받은 편지함</strong></p> </td> 
    <td><p><strong>AEM Forms 앱</strong></p> </td> 
   </tr>

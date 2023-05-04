@@ -1,22 +1,26 @@
 ---
 title: 적응형 양식의 표
-seo-title: 적응형 양식의 표
-description: 'AEM Forms의 표 구성 요소를 사용하면 모바일 레이아웃에 응답하는 적응형 양식으로 표를 만들 수 있고 XDP 표 구성 요소를 사용할 수도 있습니다. '
-seo-description: 'AEM Forms의 표 구성 요소를 사용하면 모바일 레이아웃에 응답하는 적응형 양식으로 표를 만들 수 있고 XDP 표 구성 요소를 사용할 수도 있습니다. '
+seo-title: Tables in adaptive forms
+description: AEM Forms의 표 구성 요소를 사용하면 모바일 레이아웃에 응답하는 적응형 양식으로 표를 만들 수 있고 XDP 표 구성 요소를 사용할 수도 있습니다.
+seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
 uuid: 604cd51f-2a47-4410-b414-9cb13fe63713
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: e7d53127-3a0f-4c74-a656-25d9cf969f98
-feature: 적응형 양식
+feature: Adaptive Forms
 exl-id: 3269aab9-ac39-4adc-9a6b-9fe9f4276b29
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2172'
+source-wordcount: '2176'
 ht-degree: 0%
 
 ---
 
 # 적응형 양식의 표 {#tables-in-adaptive-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 표를 사용하는 것은 복잡한 데이터를 효과적으로 단순화하고 체계적으로 제공하는 방법입니다. 사용자가 정보를 쉽게 식별하고 행과 열을 순서대로 배열하여 입력을 제공하는 데 도움이 됩니다. 금융 서비스 및 정부 조직의 대부분의 양식에서는 숫자를 지정하고 계산을 수행하기 위해 큰 데이터 테이블이 필요합니다.
 
@@ -32,7 +36,7 @@ AEM Forms은 사이드바의 구성 요소 브라우저에서 적응형 양식�
 * XSD 복합 형식 요소를 사용하여 행 또는 셀 추가 지원
 * XML 파일에서 데이터 병합
 
-## 테이블 {#create-a-table} 만들기
+## 표 만들기 {#create-a-table}
 
 테이블을 만들려면 적응형 양식의 사이드 킥에 있는 구성 요소 브라우저에서 표 구성 요소를 드래그하여 놓습니다. 기본적으로 표에는 머리글 행을 포함하여 두 개의 열과 세 개의 행이 포함되어 있습니다.
 
@@ -40,7 +44,7 @@ AEM Forms은 사이드바의 구성 요소 브라우저에서 적응형 양식�
 
 ### 헤더 및 본문 셀 정보 {#about-header-and-body-cells}
 
-헤더 셀은 텍스트 필드입니다. 헤더의 레이블을 변경하려면 헤더 셀을 마우스 오른쪽 단추로 클릭하고 **편집**&#x200B;을 클릭하십시오. 편집 대화 상자에서 **값** 필드에서 레이블을 업데이트하고 **확인**&#x200B;을 클릭합니다.
+헤더 셀은 텍스트 필드입니다. 헤더의 레이블을 변경하려면 헤더 셀을 마우스 오른쪽 단추로 클릭하고 를 클릭합니다. **편집**. 편집 대화 상자에서 **값** 필드를 입력하고 **확인**.
 
 본문 셀은 기본적으로 텍스트 상자입니다. 본문 셀을 숫자 상자, 날짜 선택기 또는 드롭다운 목록과 같이 사이드 킥에서 사용할 수 있는 다른 적응형 양식 구성 요소로 바꿀 수 있습니다.
 
@@ -48,7 +52,7 @@ AEM Forms은 사이드바의 구성 요소 브라우저에서 적응형 양식�
 
 ![row-cell-types](assets/row-cell-types.png)
 
-병합할 셀을 선택하고 마우스 오른쪽 단추를 클릭한 다음 **병합**&#x200B;을 선택하여 둘 이상의 본문 셀을 병합할 수 있습니다. 또한 병합된 셀을 마우스 오른쪽 단추로 클릭하고 **셀 분할**&#x200B;을 선택하여 분할할 수 있습니다.
+병합할 셀을 선택하고 마우스 오른쪽 단추를 클릭한 다음 을 선택하여 둘 이상의 본문 셀을 병합할 수 있습니다 **병합**. 병합된 셀을 마우스 오른쪽 단추로 클릭하고 선택하여 분할할 수도 있습니다 **셀 분할**.
 
 ### 행 및 열 추가, 삭제, 이동 {#add-delete-move-rows-and-columns}
 
@@ -68,29 +72,29 @@ AEM Forms은 사이드바의 구성 요소 브라우저에서 적응형 양식�
 >
 >테이블에 행 수를 추가할 수 있지만 추가할 수 있는 최대 열 수는 6개입니다. 또한 테이블에서 머리글 행을 삭제할 수 없습니다.
 
-### 표 {#set-column-width}에 대한 열 너비 설정
+### 표의 열 너비 설정 {#set-column-width}
 
 다음 단계를 실행하여 테이블의 열 너비를 설정합니다.
 
-1. **[!UICONTROL Content]** 탭에서 **[!UICONTROL 표]** 구성 요소를 탭하고 구성(![구성](assets/configure-icon.svg))아이콘을 탭합니다.
+1. 에서 **[!UICONTROL 컨텐츠]** 탭에서 **[!UICONTROL 표]** 구성 요소를 선택하고 구성 (![구성](assets/configure-icon.svg)) 아이콘을 클릭합니다.
 
-1. **[!UICONTROL 열 너비]** 필드에 쉼표로 구분된 값 목록을 입력하여 테이블에 있는 각 열의 비례값을 지정합니다. 예를 들어, 3개의 열이 포함된 테이블의 경우, **[!UICONTROL 열 너비]** 필드의 값으로 2,4,6을 지정하면 첫 번째 열에 2/12, 두 번째 열에 4/12, 세 번째 열에 6/12 열 너비가 설정됩니다. 첫 번째 열의 너비는 표 너비의 1/6을 나타내므로 2/12. 마찬가지로 4/12 두 번째 열 너비를 표 너비의 1/3으로 설정하고 세 번째 열 너비를 표 너비의 반으로 6/12.
+1. 에서 쉼표로 구분된 값 목록을 입력합니다 **[!UICONTROL 열 너비]** 필드에 추가하여 표에 있는 각 열의 비율을 지정합니다. 예를 들어, 3개의 열이 포함된 테이블의 경우 **[!UICONTROL 열 너비]** 필드의 경우 첫 번째 열에 2/12, 두 번째 열에 4/12, 세 번째 열에 6/12 열 너비가 설정됩니다. 첫 번째 열의 너비는 표 너비의 1/6을 나타내므로 2/12. 마찬가지로 4/12 두 번째 열 너비를 표 너비의 1/3으로 설정하고 세 번째 열 너비를 표 너비의 반으로 6/12.
 
 ### 테이블 설명 추가 {#add-table-description}
 
 표의 설명을 추가하여 화면 판독기에서 해석하고 읽을 수 있도록 정보를 구성하는 방법을 설명할 수 있습니다. 설명을 추가하려면:
 
-1. 테이블을 선택하고 ![cmppr](assets/cmppr.png)을 탭하여 사이드바에서 해당 속성을 확인합니다.
+1. 표를 선택하고 탭합니다 ![cmppr](assets/cmppr.png) 를 클릭하여 사이드바에서 해당 속성을 확인합니다.
 1. 액세스 가능성 탭에서 요약을 지정합니다.
-1. **완료**&#x200B;를 클릭합니다.
+1. 클릭 **완료**.
 
 ## 표 스타일 구성 {#configure}
 
 페이지 도구 모음에서 스타일 모드를 사용하여 표의 스타일을 정의할 수 있습니다. 스타일 모드로 전환하고 테이블 스타일을 편집하려면 다음 단계를 수행하십시오
 
-1. 페이지 도구 모음의 미리 보기 전에 ![캔버스-드롭다운](assets/canvas-drop-down.png) > **스타일**&#x200B;을 탭합니다.
+1. 페이지 도구 모음의 미리 보기 전에 ![캔버스 드롭다운](assets/canvas-drop-down.png) > **스타일**.
 
-1. 사이드바에서 테이블을 선택하고 편집 단추 ![편집 단추](assets/edit-button.png)를 누릅니다.
+1. 사이드바에서 표를 선택하고 편집 단추를 누릅니다 ![편집 단추](assets/edit-button.png).
 
    사이드바에서 스타일 지정 속성을 볼 수 있습니다.
 
@@ -98,17 +102,17 @@ AEM Forms은 사이드바의 구성 요소 브라우저에서 적응형 양식�
 
 >[!NOTE]
 >
->LESS 변수의 값을 변경하여 머리글 및 본문 행의 색상 테마를 변경할 수 있습니다. 자세한 내용은 AEM Forms](/help/forms/using/themes.md)의 [테마 를 참조하십시오.
+>LESS 변수의 값을 변경하여 머리글 및 본문 행의 색상 테마를 변경할 수 있습니다. 자세한 내용은 [AEM Forms의 테마](/help/forms/using/themes.md).
 
-## 동적으로 {#add-or-delete-a-row-dynamically} 행 추가 또는 삭제
+## 동적으로 행 추가 또는 삭제 {#add-or-delete-a-row-dynamically}
 
 표는 런타임 시 행을 동적으로 추가하거나 삭제할 수 있도록 즉시 지원합니다.
 
-1. 표 행을 선택하고 ![cmppr](assets/cmppr.png)을 누릅니다.
+1. 표 행을 선택하고 탭합니다 ![cmppr](assets/cmppr.png).
 1. 반복 설정 탭에서 최소 및 최대 개수를 지정하여 테이블의 행 수를 제한합니다.
-1. **완료**&#x200B;를 클릭합니다.
+1. 클릭 **완료**.
 
-런타임 시 행을 추가하거나 삭제할 수 있는 **`+`** 및 *`-`* 단추가 표시됩니다.
+런타임 시 **`+`** 및 *`-`* 행을 추가하거나 삭제할 단추
 
 ![add-delete-rows-dynamically](assets/add-delete-rows-dynamically.png)
 
@@ -122,21 +126,21 @@ AEM Forms은 사이드바의 구성 요소 브라우저에서 적응형 양식�
 
 테이블과 행은 표현식에서 반환된 값을 기반으로 가시성을 제어하는 가시성 표현식만 지원하는 반면 셀에서는 다음 표현식을 지원합니다.
 
-* **초기화 스크립트:** 필드의 초기화 시 작업을 수행하려면 다음을 수행합니다.
-* **값 커밋 스크립트:**  필드의 값이 변경된 후에 양식의 구성 요소를 변경하려면 다음을 수행하십시오.
+* **초기화 스크립트:** 필드의 초기화에 대한 작업을 수행합니다.
+* **값 커밋 스크립트:** 필드의 값이 변경된 후에 양식의 구성 요소를 변경하려면 다음을 수행하십시오.
 
 >[!NOTE]
 >
 >XFA 변경/종료 스크립트도 동일한 필드에 적용되는 경우 XFA 변경/종료 스크립트는 값 커밋 스크립트 전에 실행됩니다.
 
-* **표현식 계산**:를 눌러 필드의 값을 자동으로 계산합니다.
-* **유효성 검사 표현식**:필드의 유효성을 검사하려면
-* **액세스 표현식**:필드를 활성화/비활성화합니다.
-* **가시성 표현식**:필드 및 패널의 가시성을 제어하기 위해
+* **표현식 계산**: 를 눌러 필드의 값을 자동으로 계산합니다.
+* **유효성 검사 표현식**: 필드의 유효성을 검사하려면
+* **표현식 액세스**: 필드를 활성화/비활성화합니다.
+* **가시성 표현식**: 필드 및 패널의 가시성을 제어하기 위해
 
 테이블 또는 행의 가시성 표현식은 해당 편집 구성 요소 대화 상자의 패널 속성 탭에서 정의할 수 있습니다. 셀의 표현식은 해당 편집 구성 요소 대화 상자의 스크립트 탭에서 정의할 수 있습니다.
 
-적응형 양식 클래스, 이벤트, 개체 및 공개 API의 전체 목록에 대해서는 [적응형 양식에 대한 JavaScript 라이브러리 API 참조](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html)를 참조하십시오.
+적응형 양식 클래스, 이벤트, 개체 및 공용 API의 전체 목록은 다음을 참조하십시오 [적응형 양식에 대한 JavaScript 라이브러리 API 참조](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html).
 
 ## 모바일 레이아웃 {#mobile-layouts}
 
@@ -144,15 +148,15 @@ AEM Forms은 사이드바의 구성 요소 브라우저에서 적응형 양식�
 
 테이블에 대한 구성 요소 편집 대화 상자의 스타일 지정 탭에서 표에 대한 모바일 레이아웃을 구성할 수 있습니다.
 
-### 왼쪽 {#headers-on-left} 헤더
+### 왼쪽의 머리글 {#headers-on-left}
 
 왼쪽 레이아웃의 헤더 에서는 테이블의 헤더가 왼쪽에 배치되고 헤더에 대해 하나의 셀만 표시됩니다. 이 레이아웃의 각 행은 개별 섹션으로 표시됩니다. 다음 이미지는 데스크탑의 표를 모바일 장치의 테이블과 비교합니다.
 
-![](assets/desktopview.png)
-**desktopView그림:** *왼쪽 레이아웃에 머리글이 있는 테이블의 데스크탑 보기*
+![데스크탑 뷰](assets/desktopview.png)
+**그림:** *왼쪽 레이아웃에 머리글이 있는 테이블의 데스크탑 보기*
 
-![](assets/headersontheleft.png)
-**headersonceleftFigure:** *왼쪽 레이아웃에 머리글이 있는 테이블의 모바일 보기*
+![헤더슨텔레프트](assets/headersontheleft.png)
+**그림:** *왼쪽 레이아웃에 헤더가 있는 테이블의 모바일 보기*
 
 ### 축소 가능한 열 레이아웃 {#collapsible-columns-layout}
 
@@ -164,11 +168,11 @@ AEM Forms은 사이드바의 구성 요소 브라우저에서 적응형 양식�
 
 다음 이미지는 축소된 열과 확장된 열이 있는 장치에서 표가 표시되는 방식을 비교합니다.
 
-![축소된 ](assets/collapsed-column.png)
-**columnFigure:** *모바일 장치에 두 개의 열만 표시되는 테이블의 축소된 열*
+![축소 열](assets/collapsed-column.png)
+**그림:** *모바일 장치에 두 개의 열만 표시되는 테이블의 축소된 열*
 
-![collapsible_](assets/collapsible_column.png)
-**columnFigure:** *모바일 장치에서 테이블의 확장된 열*
+![축소 가능_열](assets/collapsible_column.png)
+**그림:** *모바일 장치에서 테이블의 확장된 열*
 
 ## 테이블의 데이터 병합 {#merge-data-in-a-table}
 
@@ -180,11 +184,11 @@ XML 파일의 데이터로 채울 다음 은행 거래 요약 테이블을 예�
 
 이 예제에서 요소 이름 속성은 다음과 같습니다.
 
-* 행은 **Row1**&#x200B;입니다.
-* 트랜잭션 날짜의 본문 셀은 **tableItem1**&#x200B;입니다.
-* Description 아래의 본문 셀은 **tableItem2**&#x200B;입니다.
-* 트랜잭션 유형의 본문 셀은 **type**&#x200B;입니다.
-* USD의 금액 아래의 본문 셀은 **tableItem3**&#x200B;입니다.
+* 행은 다음과 같습니다. **행1**
+* 트랜잭션 날짜의 본문 셀은 다음과 같습니다. **tableItem1**
+* 설명 아래의 본문 셀은 다음과 같습니다. **tableItem2**
+* 트랜잭션 유형 아래의 본문 셀은 다음과 같습니다. **유형**
+* USD의 금액 아래의 본문 셀은 다음과 같습니다 **tableItem3**
 
 다음 형식의 데이터를 포함하는 XML 파일입니다.
 
@@ -244,15 +248,15 @@ XML 파일의 데이터로 채울 다음 은행 거래 요약 테이블을 예�
 </afData>
 ```
 
-샘플 XML에서 행의 데이터는 테이블의 행에 대한 요소 이름인 `<Row1>` 태그로 정의됩니다. `<Row1>` 태그 내에서 각 셀의 데이터는 `<tableItem1>`, `<tableItem2>`, `<tableItem3>` 및 `<type>` 등의 요소 이름에 대한 태그 내에 정의됩니다.
+샘플 XML에서 행의 데이터는 `<Row1>` 태그 - 테이블의 행에 대한 요소 이름입니다. 내 `<Row1>` 태그로, 각 셀의 데이터는 요소 이름에 대한 태그 내에 정의됩니다(예: ). `<tableItem1>`, `<tableItem2>`, `<tableItem3>`, 및 `<type>`.
 
-런타임 시 이 데이터를 테이블과 병합하려면 테이블이 포함된 적응형 양식을 wcmmode가 비활성화된 절대 XML 위치로 가리켜야 합니다. 예를 들어 적응형 양식이 *http://localhost:4502/myForms/bankTransaction.html*&#x200B;에 있고 데이터 XML 파일이 *C:/myTransactions/bankSummary.xml*&#x200B;에 저장되어 있으면 다음 URL에서 데이터가 있는 테이블을 볼 수 있습니다.
+런타임 시 이 데이터를 테이블과 병합하려면 테이블이 포함된 적응형 양식을 wcmmode가 비활성화된 절대 XML 위치로 가리켜야 합니다. 예를 들어 적응형 양식이 *http://localhost:4502/myForms/bankTransaction.html* 데이터 XML 파일은 *C:/myTransactions/bankSummary.xml*, 다음 URL에서 데이터가 있는 테이블을 볼 수 있습니다.
 
 *http://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
 ![데이터 병합 테이블](assets/data-merged-table.png)
 
-## XDP 구성 요소 및 XSD 복합 형식 {#use-xdp-components-and-xsd-complex-types} 사용
+## XDP 구성 요소 및 XSD 복합 형식 사용 {#use-xdp-components-and-xsd-complex-types}
 
 XFA 양식 템플릿을 기반으로 적응형 양식을 만든 경우 AEM 컨텐츠 파인더의 데이터 모델 탭에서 XFA 요소를 사용할 수 있습니다. 테이블을 포함한 이러한 XFA 요소를 적응형 양식에 드래그하여 놓을 수 있습니다.
 

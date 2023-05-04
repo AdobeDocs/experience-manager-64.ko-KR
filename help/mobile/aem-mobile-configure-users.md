@@ -1,8 +1,8 @@
 ---
 title: 사용자 및 사용자 그룹 구성
-seo-title: 사용자 및 사용자 그룹 구성
+seo-title: Configure Your Users and User Groups
 description: 이 페이지에 따라 사용자 역할 및 모바일 온디맨드 서비스 앱의 작성 및 관리를 지원하도록 사용자 및 그룹을 구성하는 방법을 이해합니다.
-seo-description: 이 페이지에 따라 사용자 역할 및 모바일 온디맨드 서비스 앱의 작성 및 관리를 지원하도록 사용자 및 그룹을 구성하는 방법을 이해합니다.
+seo-description: Follow this page to understand the user roles and how to configure your users and groups to support the authoring and mangement of your mobile On-Demand services app.
 uuid: 461e1725-41dd-4883-92b9-a7e175660401
 contentOwner: User
 content-type: reference
@@ -10,18 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: administering-on-demand-services-app
 discoiquuid: c3c73e67-7f85-4308-b4cd-1b42d4f3f2d9
 exl-id: 690ae90f-ecd9-4115-9882-ce88ae38df5b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 1%
+source-wordcount: '551'
+ht-degree: 2%
 
 ---
 
 # 사용자 및 사용자 그룹 구성 {#configure-your-users-and-user-groups}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
 이 장에서는 사용자 역할 및 모바일 앱의 작성 및 관리를 지원하도록 사용자 및 그룹을 구성하는 방법에 대해 설명합니다.
 
@@ -35,17 +39,17 @@ ht-degree: 1%
 
 1. &#39;app-authors&#39;라는 새 사용자 그룹을 만듭니다.
 
-   사용자 Admin Console으로 이동합니다.[http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
+   사용자 Admin Console으로 이동합니다. [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
    사용자 그룹 콘솔 내에서 &#39;+&#39; 버튼을 선택하여 그룹을 만듭니다.
 
    이 그룹의 ID를 &#39;app-authors&#39;로 설정하여 AEM 내의 모바일 애플리케이션 작성과 관련된 특정 유형의 작성자 사용자 그룹임을 나타냅니다.
 
-1. 그룹에 구성원 추가:작성자
+1. 그룹에 구성원 추가: 작성자
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. 앱 작성자 사용자 그룹을 만들었으므로 이제 [사용자 관리 콘솔](http://localhost:4502/libs/granite/security/content/useradmin.md)을 통해 개별 팀 구성원을 이 새 그룹에 추가할 수 있습니다.
+1. 앱 작성자 사용자 그룹을 만들었으므로 이제 [사용자 관리 콘솔](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
@@ -58,9 +62,9 @@ ht-degree: 1%
    * /etc/designs
    * /etc/cloudservices/dps2015
 
-### AEM Mobile 애플리케이션 관리자 그룹(app-admins 그룹) {#aem-mobile-application-administrators-group-app-admins-group}
+### AEM Mobile 애플리케이션 관리자 그룹(앱 관리자 그룹) {#aem-mobile-application-administrators-group-app-admins-group}
 
-app-admins 그룹의 구성원은 app-authors **AND**&#x200B;에 포함된 동일한 권한을 가진 애플리케이션 컨텐츠를 작성할 수 있으며, 또한 다음 작업도 수행할 수 있습니다.
+앱 관리자 그룹의 구성원은 앱 작성자에 포함된 동일한 권한으로 애플리케이션 컨텐츠를 작성할 수 있습니다 **및** 또한 다음을 수행할 책임이 있습니다.
 
 * 응용 프로그램 ContentSync OTA 업데이트 준비, 게시 및 지우기
 
@@ -70,7 +74,7 @@ app-admins 그룹의 구성원은 app-authors **AND**&#x200B;에 포함된 동�
 >
 >일부 옵션은 앱 관리자가 사용할 수 있는 앱 작성자가 사용할 수 없습니다.
 
-### 그룹 구성 - app-admins {#group-configuration-app-admins}
+### 그룹 구성 - 앱 관리자 {#group-configuration-app-admins}
 
 1. 앱 관리자라는 새 그룹을 만듭니다.
 1. 새 앱 관리자 그룹에 다음 그룹을 추가합니다.
@@ -84,7 +88,7 @@ app-admins 그룹의 구성원은 app-authors **AND**&#x200B;에 포함된 동�
    >
    >워크플로 사용자는 PhoneGap Build 서비스를 사용하여 원격 빌드에 필요합니다.
 
-1. [권한 콘솔](http://localhost:4502/useradmin)로 이동하고 cloudservices 관리에 권한을 추가합니다
+1. 로 이동합니다 [권한 콘솔](http://localhost:4502/useradmin) cloudservices에 대한 권한을 추가합니다
 
    * /etc/cloudservices/mobilesservices에서 (읽기, 수정, 만들기, 삭제, 복제)
 

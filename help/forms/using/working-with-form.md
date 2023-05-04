@@ -1,22 +1,26 @@
 ---
 title: 양식 작업
-seo-title: 양식 작업
+seo-title: Working with a Form
 description: AEM Forms 앱의 작업 또는 시작점과 연관된 양식을 보고 업데이트합니다
-seo-description: AEM Forms 앱의 작업 또는 시작점과 연관된 양식을 보고 업데이트합니다
+seo-description: View and update the form associated with a task or Startpoint in the AEM Forms app
 uuid: 7481ca5c-a2c0-4697-9008-1e51bce2012e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 exl-id: ae565dbd-2631-4364-89f7-675700b43320
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 0%
+source-wordcount: '385'
+ht-degree: 2%
 
 ---
 
-# {#working-with-a-form} 양식 작업
+# 양식 작업 {#working-with-a-form}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 양식 앱에서 동기화를 위해 양식이 활성화된 경우 양식이 다운로드되며 직접 작업할 수 있습니다.
 
@@ -24,12 +28,12 @@ ht-degree: 0%
 
 AEM Forms 앱에서 양식을 동기화하려면 다음을 수행하십시오.
 
-1. 작성자 인스턴스에서 양식을 선택하고 **속성 보기**&#x200B;를 클릭합니다.
+1. 작성자 인스턴스에서 양식을 선택하고 **속성 보기**.
 
 1. 속성 페이지에서 **고급.**
-1. 고급 아래에서 옵션을 활성화합니다.**AEM Forms 앱과 동기화**, **저장**&#x200B;을 탭합니다.
+1. 고급 아래에서 옵션을 활성화합니다. **AEM Forms 앱과 동기화**, 탭 **저장**.
 
-여러 양식을 동기화하려면 작성자 인스턴스에서 Forms Manager에서 여러 양식을 선택하고 **AEM Forms 앱과 동기화**&#x200B;를 누릅니다. 양식이 게시되면 AEM Forms 앱은 게시 서버에 연결하고 양식을 가져올 수 있습니다.
+여러 양식을 동기화하려면 작성자 인스턴스에서 Forms Manager에서 여러 양식을 선택하고 **AEM Forms 앱과 동기화**. 양식이 게시되면 AEM Forms 앱은 게시 서버에 연결하고 양식을 가져올 수 있습니다.
 
 >[!NOTE]
 >
@@ -37,10 +41,8 @@ AEM Forms 앱에서 양식을 동기화하려면 다음을 수행하십시오.
 >
 >* 적응형 양식(지연 로드 없음)
 >* 모바일 양식
-
 >
->
-AEM Forms OSGi 서버와 동기화된 AEM Forms 앱에서 가져온 적응형 양식에서는 양식 수준 첨부 파일이 지원되지 않습니다. 작성자가 양식을 작성할 때 필드 수준의 첨부 파일을 활성화한 경우 사용자는 필드에 파일을 첨부할 수 있습니다.
+>AEM Forms OSGi 서버와 동기화된 AEM Forms 앱에서 가져온 적응형 양식에서는 양식 수준 첨부 파일이 지원되지 않습니다. 작성자가 양식을 작성할 때 필드 수준의 첨부 파일을 활성화한 경우 사용자는 필드에 파일을 첨부할 수 있습니다.
 
 **양식을 열고 업데이트하려면**
 

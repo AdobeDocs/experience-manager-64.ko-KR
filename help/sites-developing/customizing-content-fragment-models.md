@@ -8,15 +8,19 @@ uuid: 5bcfb5d8-37d4-4a0e-882d-bc8a1bac6ba7
 contentOwner: AEM Docs
 discoiquuid: 208225ee-9052-4a45-9cfd-f8d27d4d70ed
 noindex: true
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 0%
+source-wordcount: '622'
+ht-degree: 1%
 
 ---
 
 
 # 컨텐츠 조각 모델을 게시하지 않지만 DELETE 사용자 지정 컨텐츠 조각 모델을 게시하지 않습니다{#do-not-publish-but-do-not-delete-customizing-content-fragment-models}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 컨텐츠 조각 모델 편집기는 컨텐츠를 기반으로 하는 마법사입니다 `Formbuilder`에서 상속됨:
 
@@ -83,12 +87,12 @@ ht-degree: 0%
 
 다음 **컨텐츠 조각 모델 편집기** 에는 두 가지 부분이 있습니다.
 
-* 항목을 놓을 수 있는 왼쪽의 미리 보기 또는 보기 패널입니다. 이 기능은
+* 항목을 놓을 수 있는 왼쪽의 미리 보기 또는 보기 패널입니다. 이를 통해 다음이 가능합니다.
 
    * 의 미리 보기를 표시합니다 **데이터 유형** 이 인스턴스화됩니다.
    * 모델 편집기 내에서 순서 지정을 허용합니다.
 
-* 다음 **데이터 유형**/**속성** 탭의 오른쪽 패널에 표시됩니다. 이 기능은
+* 다음 **데이터 유형**/**속성** 탭의 오른쪽 패널에 표시됩니다. 이를 통해 다음이 가능합니다.
 
    * 드래그하여 인스턴스화할 수 있는 데이터 유형 목록을 표시합니다.
    * 기본 모델 편집기의 경우 목록이 다음 위치에 있습니다.

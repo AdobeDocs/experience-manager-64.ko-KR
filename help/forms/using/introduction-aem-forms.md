@@ -1,37 +1,41 @@
 ---
 title: AEM Forms 소개
-seo-title: AEM Forms 소개
+seo-title: Introduction to AEM Forms
 description: 비즈니스 사용자는 Adobe Experience Manager Forms을 사용하여 매력적인 반응형 및 적응형 양식을 웹 및 모바일 사이트에 통합하여 디지털 등록 프로세스를 단순화하고 고객 전환율을 높일 수 있습니다.
-seo-description: 비즈니스 사용자는 Adobe Experience Manager Forms을 사용하여 매력적인 반응형 및 적응형 양식을 웹 및 모바일 사이트에 통합하여 디지털 등록 프로세스를 단순화하고 고객 전환율을 높일 수 있습니다.
+seo-description: With Adobe Experience Manager Forms, business users can integrate engaging, responsive, and adaptive forms into web and mobile sites, simplifying the digital enrollment process and increasing customer conversion rates.
 uuid: 9e9a164a-4a74-4096-98b8-800ea610edd8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: a976a854-4bf2-49f8-871e-28bc597ac496
-feature: 적응형 양식
+feature: Adaptive Forms
 exl-id: 0a79111d-e42f-4eb6-8bc4-ab97424e7f90
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '945'
-ht-degree: 3%
+source-wordcount: '946'
+ht-degree: 10%
 
 ---
 
 # AEM Forms 소개 {#introduction-to-aem-forms}
 
-AEM Forms의 최신 기능 및 개선 사항에 대한 자세한 내용은 [AEM Forms의 새로운 기능](/help/forms/using/whats-new.md)을 참조하십시오.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+AEM Forms의 최신 기능 및 개선 사항에 대한 자세한 내용은 [AEM Forms의 새로운 기능](/help/forms/using/whats-new.md).
 
 ## AEM Forms 정보 {#about-aem-forms}
 
 Adobe Experience Manager(AEM)은 백엔드 프로세스, 비즈니스 규칙 및 데이터와 통합하면서도 복잡한 디지털 양식을 작성, 관리, 게시 및 업데이트하는 사용하기 쉬운 솔루션을 제공합니다.
 
-AEM Forms는 해당 관리 기능, 문서 보안 및 통합된 분석과 함께 양식 작성, 관리 및 게시를 결합하여 흥미 있는 종단 간 환경을 생성합니다. 웹 및 모바일 채널에서 작동하도록 설계된 AEM Forms을 비즈니스 프로세스에 효율적으로 통합하여 종이 프로세스와 오류를 줄이고 효율성을 높일 수 있습니다.
+AEM Forms은 서신 관리 기능, 문서 보안 및 통합 분석과 함께 양식 작성, 관리 및 게시를 결합하여 매력적인 종단 간 경험을 제공합니다. 웹 및 모바일 채널에서 작동하도록 설계된 AEM Forms을 비즈니스 프로세스에 효율적으로 통합하여 종이 프로세스와 오류를 줄이고 효율성을 높일 수 있습니다.
 
 AEM Forms은 XFA 양식 및 Adobe LiveCycle 솔루션에 대한 기존 투자를 활용하고 확장합니다.
 
-대기업은 양식을 한 번 만든 후 컨텐츠 관리 시스템에 복사하여 재사용하는 경우가 많습니다. 대용량 데이터 베이스를 최신 상태로 유지하고 이를 검색할 수 있게 만드는 것은 상당한 어려움이 될 수 있습니다. AEM은 고객이 웹 및 모바일 채널 모두에서 필요한 양식을 찾고 액세스할 수 있도록 사용자 지정 가능한 Forms 포털을 제공합니다.
+대기업에서는 양식을 한 번 만든 다음 콘텐츠 관리 시스템에 복사하여 재사용하는 경우가 많습니다. 대용량 데이터 베이스를 최신 상태로 유지하고 이를 검색할 수 있게 만드는 것은 상당한 어려움이 될 수 있습니다. AEM은 고객이 웹 및 모바일 채널 모두에서 필요한 양식을 찾고 액세스할 수 있도록 사용자 정의 가능한 양식 포털을 제공합니다.
 
-AEM Forms은 적응형 양식뿐만 아니라 XFA 양식, PDF forms 및 관련 자산을 관리할 수 있는 양식 관리 도구를 제공합니다. 자세한 내용은 [양식 관리 소개](/help/forms/using/introduction-managing-forms.md)를 참조하십시오.
+AEM Forms은 적응형 양식뿐만 아니라 XFA 양식, PDF forms 및 관련 자산을 관리할 수 있는 양식 관리 도구를 제공합니다. 자세한 내용은 [양식 관리 소개](/help/forms/using/introduction-managing-forms.md).
 
 ![](do-not-localize/4th-draft.gif)
 
@@ -39,7 +43,7 @@ AEM Forms은 적응형 양식뿐만 아니라 XFA 양식, PDF forms 및 관련 �
 
 요약하면 AEM Forms은 다음과 같은 강력한 양식 관리 기능을 제공하여 수동 프로세스를 줄이고 고객 만족도를 높입니다.
 
-* PDF, HTML5 및 적응형 양식을 비롯한 다이내믹 양식을 디자인하고 배포할 수 있는 중앙 집중식 Forms 포털
+* PDF, HTML 5 및 적응형 양식을 포함한 다이내믹 양식을 디자인하고 배포할 수 있는 중앙 집중식 Forms 포털
 * 비즈니스 사용자가 손쉽게 양식을 가져오기, 관리, 미리 보기 및 게시할 수 있도록 하기 위한 사용하기 쉬운 그래픽 사용자 인터페이스
 * 키워드, 태그 및 메타데이터를 사용하는 강력한 검색 기능을 사용하는 응답형 양식 디렉토리
 * 웹 및 모바일 채널에서 양식을 적절하게 렌더링하기 위해 사용자의 장치 및 위치에 대한 동적 감지
@@ -51,7 +55,7 @@ AEM Forms은 적응형 양식뿐만 아니라 XFA 양식, PDF forms 및 관련 �
 
 AEM Forms을 사용하면 다음과 같은 새 양식과 기존 양식을 확장하여 만들 수 있습니다.
 
-* 픽셀-퍼펙트, 페이지 매김된 HTML 및 거의 종이와 유사한 PDF forms
+* 거의 종이와 유사한 픽셀 퍼펙트, 페이지 매김된 HTML 및 PDF forms
 * 사용자의 장치 및 브라우저에 대해 자동으로 렌더링되는 적응형 양식입니다.
 
 **PDF forms**
@@ -99,13 +103,13 @@ AEM Forms은 디지털 비즈니스 프로세스를 모바일 디바이스로 �
 
 ![](do-not-localize/3rd-draft.gif)
 
-## 개인화된 통신 {#personalized-communication}
+## 개인화된 커뮤니케이션 {#personalized-communication}
 
-효율적인 셀프 서비스 디지털 경험의 중요한 구성 요소는 사용자가 어디에서나 모든 장치에서 액세스할 수 있는 개인화된 정보를 적시에 전달하는 것입니다. 개인화되고 시기 적절한 커뮤니케이션으로 전환율과 사용자 만족도를 향상시킬 수 있습니다.
+효율적인 셀프서비스 디지털 경험의 중요한 구성 요소는 사용자가 어디서나 모든 디바이스에서 액세스할 수 있는 시기적절한 맞춤형 정보를 전달하는 것입니다. 시기적절한 맞춤형 커뮤니케이션은 전환율과 사용자 만족도를 모두 향상시킬 수 있습니다.
 
 비즈니스 사용자는 AEM Forms을 사용하여 문서 템플릿을 사용자 지정하고, 백엔드 프로세스의 정보를 포함시키고, 대화형 구성 요소를 포함함으로써 개인화된 매력적인 사용자 경험을 만들 수 있습니다. 직관적인 사용자 인터페이스는 기술 전문가가 아닌 사용자가 문의에 따라 커뮤니케이션을 생성하거나 사용자가 생성한 응답을 시작할 시기를 결정하는 비즈니스 규칙을 개발하는 데 도움이 됩니다.
 
-영수증, 시작 키트 및 명세서 등의 개인화된 문서는 여러 채널에서 쉽게 전달할 수 있습니다. 조직은 개인화된 웹 포털로 트래픽을 유도하여 추가 서비스를 등록 또는 구매할 수 있습니다.
+영수증, 시작 키트 및 명세서 등의 개인화된 문서는 여러 채널에서 쉽게 전달할 수 있습니다. 조직은 맞춤형 웹 포털로 트래픽을 유도하여 추가 서비스의 등록 또는 구매를 이끌어 낼 수 있습니다.
 
 **주요 기능**
 

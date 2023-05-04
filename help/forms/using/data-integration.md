@@ -1,23 +1,27 @@
 ---
 title: AEM Forms 데이터 통합
-seo-title: AEM Forms 데이터 통합
+seo-title: AEM Forms Data Integration
 description: 데이터 통합을 사용하면 AEM Forms을 서로 다른 데이터 소스와 통합하고 양식 데이터 모델을 만들어 적응형 양식 및 대화형 커뮤니케이션을 만들고 사용할 수 있습니다.
-seo-description: 데이터 통합을 사용하면 AEM Forms을 서로 다른 데이터 소스와 통합하고 양식 데이터 모델을 만들어 적응형 양식 및 대화형 커뮤니케이션을 만들고 사용할 수 있습니다.
+seo-description: Data Integration lets you integrate AEM Forms with disparate data sources and create form data model to create and work with adaptive forms and interactive communications.
 uuid: 58f65ae0-cf54-4249-92c7-64b557e30491
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: b6786321-6e8e-40e2-809b-d117991246c4
-feature: 양식 데이터 모델
+feature: Form Data Model
 exl-id: 8cbd3fb0-3c87-433e-bfd7-0f93216a5de7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 0%
+source-wordcount: '595'
+ht-degree: 1%
 
 ---
 
 # AEM Forms 데이터 통합 소개 {#aem-forms-data-integration}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 데이터 통합을 사용하면 AEM Forms을 서로 다른 데이터 소스와 통합하고 양식 데이터 모델을 만들어 적응형 양식 및 대화형 커뮤니케이션을 만들고 사용할 수 있습니다.
 
@@ -47,7 +51,7 @@ AEM Forms 데이터 통합을 사용하면 서로 다른 데이터 소스를 구
 * 적응형 양식 규칙을 사용하여 데이터 소스 서비스/작업 호출
 * 제출된 적응형 양식 데이터를 데이터 소스에 쓰기
 
-## 데이터 통합 {#get-started-with-data-integration} 시작
+## 데이터 통합 시작 {#get-started-with-data-integration}
 
 데이터 통합을 구현하는 첫 번째 단계는 적응형 양식 및 대화형 커뮤니케이션 사용 사례에서 활용할 정보를 저장하는 데이터 소스를 식별하고 구성하는 것입니다. 그런 다음 하나 이상의 데이터 소스에서 데이터 모델 개체, 속성 및 서비스를 사용하는 양식 데이터 모델을 만듭니다. 적응형 양식 필드 또는 대화형 커뮤니케이션의 자리 표시자가 각 데이터 소스 속성에 바인딩되는 양식 데이터 모델을 기반으로 적응형 양식 및 대화형 커뮤니케이션을 만들 수 있습니다.
 

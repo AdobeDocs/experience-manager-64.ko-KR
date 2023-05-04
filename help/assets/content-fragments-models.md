@@ -1,28 +1,32 @@
 ---
 title: 컨텐츠 조각 모델
-seo-title: 컨텐츠 조각 모델
+seo-title: Content Fragment Models
 description: 컨텐츠 조각 모델은 구조화된 컨텐츠와 함께 컨텐츠 조각을 생성하는 데 사용됩니다.
-seo-description: 컨텐츠 조각 모델은 구조화된 컨텐츠와 함께 컨텐츠 조각을 생성하는 데 사용됩니다.
+seo-description: Content Fragment Models are used to create content fragments with structured content.
 uuid: 59176a32-1255-4a46-ad00-344bde843ea6
 content-type: reference
 topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 45e67357-4524-4d25-b5f1-21182b8e803c
 exl-id: 39ed07ec-54a6-4387-8435-e891726c411c
-feature: 콘텐츠 조각
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 91%
+source-wordcount: '725'
+ht-degree: 87%
 
 ---
 
-# 컨텐츠 조각 모델 {#content-fragment-models}
+# 콘텐츠 조각 모델 {#content-fragment-models}
 
 >[!CAUTION]
 >
->일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](../release-notes/sp-release-notes.md)을 적용해야 합니다.
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+>[!CAUTION]
+>
+>일부 컨텐츠 조각 기능을 사용하려면 [AEM 6.4 서비스 팩 2(6.4.2.0) 이상](../release-notes/sp-release-notes.md).
 
 컨텐츠 조각 모델은 [컨텐츠 조각](content-fragments.md)에 대한 컨텐츠 구조를 정의합니다.
 
@@ -30,7 +34,7 @@ ht-degree: 91%
 
 >[!CAUTION]
 >
->**[!UICONTROL 컨텐츠 조각 모델]**&#x200B;을 활성화하지 않으면 새 모델을 만드는 데 **[!UICONTROL 만들기]** 옵션을 사용할 수 없습니다.
+>활성화하지 않은 경우 **[!UICONTROL 컨텐츠 조각 모델]**, **[!UICONTROL 만들기]** 새 모델을 만드는 데에는 옵션을 사용할 수 없습니다.
 
 컨텐츠 조각 모델을 활성화하려면 필요한 단계가 있습니다.
 
@@ -42,7 +46,7 @@ ht-degree: 91%
 [새 컨텐츠 조각 모델을 생성](#creating-a-content-fragment-model)하려면 먼저 구성 관리자를 사용하여 컨텐츠 조각 모델을 활성화&#x200B;**해야 합니다**.
 
 1. **[!UICONTROL 도구]**, **[!UICONTROL 일반]**&#x200B;으로 이동한 후 **[!UICONTROL Configuration Browser]**&#x200B;를 엽니다.
-   * 자세한 내용은 [구성 브라우저 설명서](/help/sites-administering/configurations.md)를 참조하십시오.
+   * 자세한 내용은 [구성 브라우저 설명서](/help/sites-administering/configurations.md) 추가 정보.
 1. 웹 사이트에 적합한 위치를 선택합니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 사용하여 대화 상자를 열고 여기에서
 
@@ -53,13 +57,13 @@ ht-degree: 91%
 
 1. **[!UICONTROL 만들기]**&#x200B;를 선택하여 정의를 저장합니다.
 
-### 자산 폴더에 구성 적용 {#apply-the-configuration-to-your-assets-folder}
+### 에셋 폴더에 구성 적용 {#apply-the-configuration-to-your-assets-folder}
 
 컨텐츠 조각 모델에 대해 구성 **[!UICONTROL 전역]** 이 활성화되면 사용자가 만드는 모든 모델을 자산 폴더에서 사용할 수 있습니다.
 
 비교 가능한 자산 폴더와 함께 다른 구성(즉, 전역 제외)을 사용하려면 연결을 정의해야 합니다. 이 작업은 적절한 폴더의 **[!UICONTROL 폴더 속성]**&#x200B;에서 **[!UICONTROL 클라우드 서비스]** 탭에 있는 **[!UICONTROL 구성]**&#x200B;을 사용하여 수행됩니다.
 
-## 컨텐츠 조각 모델 만들기 {#creating-a-content-fragment-model}
+## 콘텐츠 조각 모델 만들기 {#creating-a-content-fragment-model}
 
 1. **[!UICONTROL 도구]**, **[!UICONTROL 자산]**&#x200B;으로 이동한 후 **[!UICONTROL 컨텐츠 조각 모델]**&#x200B;을 엽니다.
 1. [구성](#enable-content-fragment-models)에 적절한 폴더로 이동합니다.
@@ -67,7 +71,7 @@ ht-degree: 91%
 
    >[!CAUTION]
    >
-   >[컨텐츠 조각 모델 사용이 활성화되지 않은](#enable-content-fragment-models) 경우 **만들기** 옵션을 사용할 수 없습니다.
+   >[콘텐츠 조각 모델 사용이 활성화되지 않은](#enable-content-fragment-models) 경우 **만들기** 옵션을 사용할 수 없습니다.
 
 1. **[!UICONTROL 모델 제목]**&#x200B;을 지정합니다. 필요한 경우 **[!UICONTROL 설명]**&#x200B;을 추가할 수도 있습니다.
 
@@ -75,7 +79,7 @@ ht-degree: 91%
 
 1. **[!UICONTROL 만들기]**&#x200B;를 사용하여 빈 모델을 저장합니다. 작업의 성공을 나타내는 메시지가 표시되면 **[!UICONTROL 열기]**&#x200B;를 선택하여 모델을 즉시 편집하거나 **[!UICONTROL 완료]**&#x200B;를 선택하여 콘솔로 돌아갈 수 있습니다.
 
-## 컨텐츠 조각 모델 정의 {#defining-your-content-fragment-model}
+## 콘텐츠 조각 모델 정의 {#defining-your-content-fragment-model}
 
 컨텐츠 조각 모델은 결과 컨텐츠 조각의 구조를 효과적으로 정의합니다. 모델 편집기를 사용하여 필수 필드를 추가하고 구성할 수 있습니다.
 
@@ -95,7 +99,7 @@ ht-degree: 91%
 
    >[!NOTE]
    >
-   >필드가 **필수**&#x200B;이면 왼쪽 창에 표시된 **레이블**&#x200B;이 별표(**&amp;ast;**)로 표시됩니다.
+   >필드가 **필수 여부**, **레이블** 왼쪽 창에 표시된 항목은 별표(**&amp;ast;**).
 
    ![cfm-6420-12](assets/cfm-6420-12.png)
 
@@ -119,11 +123,11 @@ ht-degree: 91%
 
    ![cfm-6420-14](assets/cfm-6420-14.png)
 
-## 컨텐츠 조각 모델 삭제 {#deleting-a-content-fragment-model}
+## 콘텐츠 조각 모델 삭제 {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
 >
->컨텐츠 조각 모델을 삭제하면 종속된 조각이 영향을 받을 수 있습니다.
+>콘텐츠 조각 모델을 삭제하면 종속된 조각이 영향을 받을 수 있습니다.
 
 컨텐츠 조각 모델을 삭제하려면
 
@@ -136,9 +140,9 @@ ht-degree: 91%
    >
    >참조되는 모델의 경우 경고가 표시됩니다. 적절하게 조치하십시오.
 
-## 컨텐츠 조각 모델 게시 {#publishing-a-content-fragment-model}
+## 콘텐츠 조각 모델 게시 {#publishing-a-content-fragment-model}
 
-컨텐츠 조각 모델은 종속된 컨텐츠 조각이 게시될 때/게시되기 전에 게시해야 합니다.
+콘텐츠 조각 모델은 종속된 콘텐츠 조각이 게시될 때/게시되기 전에 게시해야 합니다.
 
 컨텐츠 조각 모델을 게시하려면
 

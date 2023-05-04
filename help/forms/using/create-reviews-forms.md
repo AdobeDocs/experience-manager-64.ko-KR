@@ -1,23 +1,27 @@
 ---
 title: 양식의 자산에 대한 검토 만들기 및 관리
-seo-title: 양식의 자산에 대한 검토 만들기 및 관리
-description: '검토는 한 명 이상의 검토자가 양식에서 사용할 수 있는 자산에 대해 주석을 달 수 있는 메커니즘입니다. '
-seo-description: '검토는 한 명 이상의 검토자가 양식에서 사용할 수 있는 자산에 대해 주석을 달 수 있는 메커니즘입니다. '
+seo-title: Creating and managing reviews for assets in forms
+description: 검토는 한 명 이상의 검토자가 양식에서 사용할 수 있는 자산에 대해 주석을 달 수 있는 메커니즘입니다.
+seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 uuid: 6b1aa54f-d03c-483a-a398-6522b285194c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 43fd720f-2a5a-47fb-b9d9-d19f866cd0a0
-feature: 적응형 양식
+feature: Adaptive Forms
 exl-id: ff113288-a69a-4083-82a6-4c65c5062411
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '695'
 ht-degree: 1%
 
 ---
 
-# {#creating-and-managing-reviews-for-assets-in-forms} 양식의 자산에 대한 검토 만들기 및 관리
+# 양식의 자산에 대한 검토 만들기 및 관리 {#creating-and-managing-reviews-for-assets-in-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ## 리뷰 {#review}
 
@@ -26,13 +30,13 @@ ht-degree: 1%
 ## 검토 설정 {#setting-up-a-review}
 
 1. Forms 탭으로 이동하여 양식을 선택합니다.
-1. 자산에 진행 중인 검토가 없는 경우 작업 표시줄에 검토 시작 ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) 아이콘이 표시됩니다. 검토 시작 ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) 아이콘을 클릭합니다.
+1. 자산에 진행 중인 검토가 없으면 검토 시작 ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) 아이콘이 작업 표시줄에 나타납니다. 검토 시작 ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) 아이콘.
 1. 다음 정보를 입력합니다.
 
-   * 검토 이름:필수는 영숫자, 하이픈 또는 밑줄을 포함할 수 있습니다.
-   * 설명 검토:선택 사항, 검토를 위한 목적/컨텐츠에 대한 설명.
-   * 검토 기한:검토 종료 일자(선택 사항) 마감일이 지나면 작업이 &#39;기한 초과&#39;로 표시됩니다.
-   * 검토자:최소값은 필수입니다. 콤보 상자를 사용하여 검토자를 추가합니다. 이름을 입력하면 일치하는 모든 이름이 나열됩니다.이름을 선택하고 추가를 클릭합니다.
+   * 검토 이름: 필수는 영숫자, 하이픈 또는 밑줄을 포함할 수 있습니다.
+   * 설명 검토: 선택 사항, 검토를 위한 목적/컨텐츠에 대한 설명.
+   * 검토 기한: 검토 종료 일자(선택 사항) 마감일이 지나면 작업이 &#39;기한 초과&#39;로 표시됩니다.
+   * 검토자: 최소값은 필수입니다. 콤보 상자를 사용하여 검토자를 추가합니다. 이름을 입력하면 일치하는 모든 이름이 나열됩니다. 이름을 선택하고 추가를 클릭합니다.
 
 1. 나머지 세부 사항을 모두 입력한 다음 시작을 클릭합니다.
 
@@ -56,18 +60,18 @@ ht-degree: 1%
 
 1. Forms 탭으로 이동하여 양식을 선택합니다.
 
-1. 자산에 검토 진행 중이며 사용자가 검토 개시자인 경우 작업 표시줄에 검토 관리 ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) 아이콘이 표시됩니다. 검토 개시자만 검토를 관리(업데이트/종료)할 수 있습니다.
+1. 자산에 검토 진행 중이며 사용자가 검토 개시자인 경우 검토 관리 ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) 작업 표시줄에 아이콘이 나타납니다. 검토 개시자만 검토를 관리(업데이트/종료)할 수 있습니다.
 
-   검토 관리 ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)아이콘을 클릭합니다.
+   검토 관리 를 클릭합니다 ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)아이콘.
 
    개시자가 아닌 사용자의 경우 검토 관리 아이콘이 비활성화됩니다.
 
 1. 정보를 표시하는 화면이 표시됩니다.
 
-   * **검토 이름**:편집할 수 없습니다.
-   * **검토 설명**:편집할 수 있습니다.
-   * **검토 기한**:편집할 수 있습니다. 마감일을 현재 날짜 및 시간 이외의 날짜 및 시간으로 수정할 수 있습니다.
-   * **검토자**:편집할 수 있습니다. 검토자를 추가하거나 제거할 수 있습니다. 작업 기한이 지난 경우 현재 날짜 이상으로 기한을 연장한 후에만 검토자를 추가할 수 있습니다.
+   * **검토 이름**: 편집할 수 없습니다.
+   * **검토 설명**: 편집할 수 있습니다.
+   * **검토 기한**: 편집할 수 있습니다. 마감일을 현재 날짜 및 시간 이외의 날짜 및 시간으로 수정할 수 있습니다.
+   * **검토자**: 편집할 수 있습니다. 검토자를 추가하거나 제거할 수 있습니다. 작업 기한이 지난 경우 현재 날짜 이상으로 기한을 연장한 후에만 검토자를 추가할 수 있습니다.
 
 1. 필요한 필드를 편집한 다음 업데이트를 클릭합니다.
 
@@ -101,6 +105,6 @@ ht-degree: 1%
 
 1. 검토를 마치면:
 
-   1. **검토자**:각 검토자에 대해 검토와 관련된 불완전한 작업이 종료됩니다. 검토자의 알림 섹션에 더 이상 작업이 &#39;보류 중&#39;으로 표시되지 않습니다.
-   1. **개시자**:검토 개시자에 지정된 작업이 완료된 것으로 표시됩니다. 검토 개시자의 알림 섹션에서 작업이 제거됩니다.
-   1. **모두**:리뷰가 이전 검토 섹션에 나타납니다. 추가 주석을 추가할 수 없습니다.
+   1. **검토자**: 각 검토자에 대해 검토와 관련된 불완전한 작업이 종료됩니다. 검토자의 알림 섹션에 더 이상 작업이 &#39;보류 중&#39;으로 표시되지 않습니다.
+   1. **개시자**: 검토 개시자에 지정된 작업이 완료된 것으로 표시됩니다. 검토 개시자의 알림 섹션에서 작업이 제거됩니다.
+   1. **모두**: 리뷰가 이전 검토 섹션에 나타납니다. 추가 주석을 추가할 수 없습니다.

@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: grdp, introduction
 discoiquuid: 93e71efe-c1c6-4d83-9b57-6c70f7bc0b80
 exl-id: 46ad04b1-a660-4cdd-8649-5cdb00dbcae3
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 58%
+source-wordcount: '959'
+ht-degree: 57%
 
 ---
 
 # 데이터 보호 및 데이터 개인 정보 보호 규정에 대한 Adobe Experience Manager 준비 완료 {#aem-readiness-for-data-protection-and-data-privacy-regulations}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 >[!WARNING]
 >
@@ -37,7 +41,7 @@ Adobe는 고객 개인정보 보호 관리자 또는 AEM 관리자가 데이터 
 >
 >다른 Adobe 온디맨드 서비스의 데이터 및 관련 개인정보 보호 요청은 해당 서비스에 대한 조치가 필요합니다.
 >
->자세한 내용은 [Adobe의 개인정보 보호 센터](https://www.adobe.com/privacy.html)를 참조하십시오.
+>자세한 내용은 [Adobe의 개인정보 보호 센터](https://www.adobe.com/kr/privacy.html)를 참조하십시오.
 
 ## 소개 {#introduction}
 

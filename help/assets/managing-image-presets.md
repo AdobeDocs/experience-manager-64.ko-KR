@@ -9,14 +9,18 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 exl-id: 3a666efe-1592-4425-82f5-c4d9343f65da
 feature: Image Presets
 role: Admin,User
-source-git-commit: 78e187855845046071bc7f22cd7d491d48568336
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3835'
+source-wordcount: '3871'
 ht-degree: 9%
 
 ---
 
 # Dynamic Media 이미지 사전 설정 관리 {#managing-image-presets}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 이미지 사전 설정을 사용하면 AEM Assets에서 동적으로 생성된 다른 크기, 다른 형식 또는 다른 이미지 속성을 사용하여 이미지를 동적으로 전달할 수 있습니다. 각 이미지 사전 설정은 이미지 표시를 위한 크기 및 형식 지정 명령의 사전 정의된 컬렉션을 나타냅니다. 이미지 사전 설정을 만들 때 이미지 제공 크기를 선택합니다. 또한, 이미지를 볼 수 있도록 전달할 때 이미지의 모양을 최적화하도록 서식 명령을 선택할 수도 있습니다.
 
@@ -116,12 +120,12 @@ Dynamic Media을 사용하여 AI, EPS 또는 PDF 파일에 대한 동적 렌디�
   </tr> 
   <tr> 
    <td>최대 너비</td>
-   <td>2048년</td>
+   <td>2048</td>
    <td>생성된 미리 보기 표현물의 최대 너비(픽셀 단위)입니다.<br/> </td>
   </tr> 
   <tr> 
    <td>최대 높이</td>
-   <td>2048년</td>
+   <td>2048</td>
    <td>생성된 미리 보기 표현물의 최대 높이(픽셀 단위)입니다.<br/> </td>
   </tr> 
   <tr> 

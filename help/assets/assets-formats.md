@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: ee25fe8f-36fb-42b3-9f90-0ea77bc02e2f
-source-git-commit: cc47644419f7b7f4f1f00bb848050aa4a98efa09
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1645'
-ht-degree: 10%
+source-wordcount: '1681'
+ht-degree: 11%
 
 ---
 
 # 에서 지원되는 파일 형식 [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 [!DNL Experience Manager Assets] 는 다양한 파일 형식을 지원하며 각 기능은 다양한 MIME 유형에 대한 다양한 지원을 제공합니다.
 
@@ -30,7 +34,7 @@ ht-degree: 10%
 
 자산 관리 기능에 대해 지원되는 래스터 이미지 형식은 다음과 같습니다.
 
-| 형식 | 저장 용량 | 메타데이터 관리 | 메타데이터 추출 | 축소판 생성 | 대화형 편집 | 메타데이터 원본에 쓰기 | 인사이트 |
+| 형식 | 스토리지 | 메타데이터 관리 | 메타데이터 추출 | 축소판 생성 | 대화형 편집 | 메타데이터 원본에 쓰기 | 인사이트 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
@@ -117,7 +121,7 @@ Adobe Camera Raw 라이브러리는 [!DNL Assets] 원시 이미지를 수집할 
 
 자산 관리 기능에 대해 지원되는 문서 형식은 다음과 같습니다.
 
-| 형식 | 저장 용량 | 메타데이터<br> 관리 | 전체 텍스트<br> 추출 | 메타데이터<br> 추출 | 축소판<br> 세대 | 하위 자산<br> 추출 | 메타데이터<br> 원본에 쓰기 |
+| 형식 | 스토리지 | 메타데이터<br> 관리 | 전체 텍스트<br> 추출 | 메타데이터<br> 추출 | 축소판<br> 세대 | 하위 자산<br> 추출 | 메타데이터<br> 원본에 쓰기 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |
 | DOC | ✓ | ✓ | ✓ | ✓ |  |  |  |
@@ -143,7 +147,7 @@ Dynamic Media 기능에 대해 지원되는 문서 형식은 다음과 같습니
 | 형식 | 업로드<br> (입력 형식) | 만들기<br> 이미지<br> 사전 설정<br> (출력 형식) | 미리 보기<br> 동적<br> 렌디션 | 배달<br> 동적<br> 렌디션 | 다운로드<br> 동적<br> 렌디션 |
 |---|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ |  |  |  |  |
-| 문서 |  |  |  |  |  |
+| DOC |  |  |  |  |  |
 | DOCX |  |  |  |  |  |
 | ODT |  |  |  |  |  |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) (아래 참고 참조) | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -175,18 +179,18 @@ Dynamic Media 기능에 대해 지원되는 문서 형식은 다음과 같습니
 
 ## 멀티미디어 형식 {#supported-multimedia-formats}
 
-| 형식 | 저장 용량 | 메타데이터 관리 | 메타데이터 추출 | 축소판 생성 | FFMPEG 코드 변환 |
+| 형식 | 스토리지 | 메타데이터 관리 | 메타데이터 추출 | 축소판 생성 | FFMPEG 코드 변환 |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ |  | - | &#42; |
-| MIDI | ✓ | ✓ |  | - | &#42; |
-| 3GP | ✓ | ✓ |  | - | &#42; |
-| MP3 | ✓ | ✓ | ✓ | - | &#42; |
-| MPG | ✓ | ✓ |  | - | &#42; |
-| OGA | ✓ | ✓ |  | - | &#42; |
-| OGG | ✓ | ✓ |  | - | &#42; |
-| RA | ✓ | ✓ |  | - | &#42; |
-| WAV | ✓ | ✓ |  | - | &#42; |
-| WMA | ✓ | ✓ |  | - | &#42; |
+| AAC | ✓ | ✓ |  | − | &#42; |
+| MIDI | ✓ | ✓ |  | − | &#42; |
+| 3GP | ✓ | ✓ |  | − | &#42; |
+| MP3 | ✓ | ✓ | ✓ | − | &#42; |
+| MPG | ✓ | ✓ |  | − | &#42; |
+| OGA | ✓ | ✓ |  | − | &#42; |
+| OGG | ✓ | ✓ |  | − | &#42; |
+| RA | ✓ | ✓ |  | − | &#42; |
+| WAV | ✓ | ✓ |  | − | &#42; |
+| WMA | ✓ | ✓ |  | − | &#42; |
 | DVI | ✓ | ✓ |  | &#42; | &#42; |
 | FLV | ✓ | ✓ |  | &#42; | &#42; |
 | M4V | ✓ | ✓ |  | &#42; | &#42; |
@@ -221,7 +225,7 @@ Dynamic Media 기능에 대해 지원되는 문서 형식은 다음과 같습니
 
 지원되는 아카이브 형식 및 공통 DAM 워크플로우의 적용 사례는 다음 표에서 다룹니다.
 
-| 형식 | 저장 용량 | 버전 관리 | 워크플로 | 게시 | 액세스 제어 | Dynamic Media 게재 |
+| 형식 | 스토리지 | 버전 관리 | 워크플로 | 게시 | 액세스 제어 | Dynamic Media 게재 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
@@ -235,7 +239,7 @@ Dynamic Media 기능에 대해 지원되는 문서 형식은 다음과 같습니
 
 다른 몇 가지 파일 형식에 대한 일반적인 DAM 워크플로우의 적용성은 아래 표에 설명되어 있습니다.
 
-| 형식 | 저장 용량 | 버전 관리 | 워크플로 | 게시 | 액세스 제어 | Dynamic Media 게재 |
+| 형식 | 스토리지 | 버전 관리 | 워크플로 | 게시 | 액세스 제어 | Dynamic Media 게재 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | **#** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
@@ -264,7 +268,7 @@ Dynamic Media 기능에 대해 지원되는 문서 형식은 다음과 같습니
 | AVI | video/x-msvideo |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | BMP | image/bmp |  |  |
 | CSS | 텍스트/css |  |  |
-| 문서 | application/msword |  |  |
+| DOC | application/msword |  |  |
 | EPS | <ul><li>application/postscript</li><li>애플리케이션/eps</li><li>application/x-eps</li><li>이미지/eps</li><li>이미지/x-eps</li> |  |  |
 | F4V | video/x-f4v |  | ExcludeMasterVideoFromAVS |
 | FLA | application/x-shockwave-flash |  |  |
@@ -275,7 +279,7 @@ Dynamic Media 기능에 대해 지원되는 문서 형식은 다음과 같습니
 | ICM | application/vnd.iccprofile |  |  |
 | INDD | application/x-indesign |  |  |
 | JPEG | image/jpeg |  |  |
-| JPG | 이미지/jpeg |  |  |
+| JPG | image/jpeg |  |  |
 | M2V | video/mpeg |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | M4V | video/x-m4v |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | 이동 | video/quicktime |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |

@@ -1,32 +1,36 @@
 ---
 title: 클래식 UI를 사용하여 언어 루트 만들기
-seo-title: 클래식 UI를 사용하여 언어 루트 만들기
+seo-title: Creating a Language Root Using the Classic UI
 description: 클래식 UI를 사용하여 언어 루트를 만드는 방법을 알아봅니다.
-seo-description: 클래식 UI를 사용하여 언어 루트를 만드는 방법을 알아봅니다.
+seo-description: Learn how to create a language root using the Classic UI.
 uuid: d44a51a0-1507-4838-851c-cacff48ad825
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 237b8cc6-158e-4c51-970d-4c9cc74f6496
-feature: 언어 복사
+feature: Language Copy
 exl-id: 316903a8-22cf-45e6-a9f3-ac1d75beddec
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '352'
 ht-degree: 3%
 
 ---
 
 # 클래식 UI를 사용하여 언어 루트 만들기{#creating-a-language-root-using-the-classic-ui}
 
-다음 절차에서는 클래식 UI를 사용하여 사이트의 언어 루트를 만듭니다. 자세한 내용은 [언어 루트 만들기](/help/sites-administering/tc-prep.md#creating-a-language-root)를 참조하십시오.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+다음 절차에서는 클래식 UI를 사용하여 사이트의 언어 루트를 만듭니다. 자세한 내용은 [언어 루트 만들기](/help/sites-administering/tc-prep.md#creating-a-language-root).
 
 1. 웹 사이트 콘솔의 웹 사이트 트리에서 사이트의 루트 페이지를 선택합니다. ([http://localhost:4502/siteadmin#](http://localhost:4502/siteadmin#))
 1. 사이트의 언어 버전을 나타내는 새 하위 페이지를 추가합니다.
 
    1. 새로 만들기 > 새 페이지 를 클릭합니다.
-   1. 대화 상자에서 제목 및 이름을 지정합니다. 이름은 `<language-code>` 또는 `<language-code>_<country-code>` 형식이어야 합니다(예: en, en_US, en_us, en_GB, en_gb).
+   1. 대화 상자에서 제목 및 이름을 지정합니다. 이름은 `<language-code>` 또는 `<language-code>_<country-code>`예: en, en_US, en_us, en_GB, en_gb
 
       * 지원되는 언어 코드는 ISO-639-1에 따라 소문자, 두 문자 코드입니다
       * 지원되는 국가 코드는 ISO 3166에 따라 소문자 또는 대문자 2자로 된 코드입니다

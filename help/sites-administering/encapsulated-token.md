@@ -1,8 +1,8 @@
 ---
 title: 캡슐화된 토큰 지원
-seo-title: 캡슐화된 토큰 지원
+seo-title: Encapsulated Token Support
 description: AEM에서 캡슐화된 토큰 지원에 대해 알아봅니다.
-seo-description: AEM에서 캡슐화된 토큰 지원에 대해 알아봅니다.
+seo-description: Learn about the Encapsulated Token support in AEM.
 uuid: a7c6f269-bb5a-49ba-abef-ea029202ab6d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,18 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 exl-id: 2339657a-20ac-42af-96fb-aebafd5044c7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 0%
+source-wordcount: '869'
+ht-degree: 1%
 
 ---
 
 # 캡슐화된 토큰 지원{#encapsulated-token-support}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ## 소개 {#introduction}
 
@@ -35,7 +39,7 @@ ht-degree: 0%
 
 게시 인스턴스를 사용할 수 없게 되면 해당 인스턴스에서 인증된 모든 사용자는 세션을 잃게 됩니다. 인증 쿠키의 유효성을 검사하려면 리포지토리 액세스 권한이 필요하기 때문입니다.
 
-## 캡슐화된 토큰 {#stateless-authentication-with-the-encapsulated-token}을 사용하는 상태 비저장 인증
+## 캡슐화된 토큰을 사용한 상태 비저장 인증 {#stateless-authentication-with-the-encapsulated-token}
 
 수평 확장성을 위한 솔루션은 AEM에서 새로운 캡슐화된 토큰 지원을 사용하여 상태를 저장하지 않는 인증입니다.
 
@@ -51,37 +55,35 @@ ht-degree: 0%
 >
 >예를 들어, 캡슐화된 토큰이 작동하는 방식으로 인해 새 사용자가 게시 인스턴스 번호 1에 만들어지는 경우 게시 번호 2에서 성공적으로 인증됩니다. 사용자가 두 번째 게시 인스턴스에 없는 경우 요청이 계속 성공하지 못합니다.
 
-
 ## 캡슐화된 토큰 구성 {#configuring-the-encapsulated-token}
 
 >[!NOTE]
 >사용자를 동기화하고 토큰 인증을 사용하는 모든 인증 핸들러(SAML 및 OAuth 등)는 다음과 같은 경우에만 캡슐화된 토큰과 작동합니다.
 >
 >* 고정 세션이 활성화되거나
-   >
-   >
-* 동기화가 시작될 때 사용자가 AEM에 이미 만들어져 있습니다. 즉, 동기화 프로세스 중에 핸들러 **create** 사용자가 있는 경우에는 캡슐화된 토큰이 지원되지 않습니다.
+>
+>* 동기화가 시작될 때 사용자가 AEM에 이미 만들어져 있습니다. 즉, 핸들러가 있는 상황에서는 캡슐화된 토큰이 지원되지 않습니다 **만들기** 동기화 프로세스 중에 사용자가 사용됩니다.
 
 
 캡슐화된 토큰을 구성할 때 고려해야 할 몇 가지 사항이 있습니다.
 
-1. 암호화 관련 때문에 모든 인스턴스는 동일한 HMAC 키를 가져야 합니다. AEM 6.3 이후 주요 자료는 더 이상 저장소에 저장되지 않고 실제 파일 시스템에 저장됩니다. 이러한 점을 염두에 두고 키를 복제하는 가장 좋은 방법은 키를 복제할 소스 인스턴스의 파일 시스템에서 타겟 인스턴스의 SIS(Server Control Center Server Node Server) 로 키를 복사하는 것입니다. 아래의 &quot;HMAC 키 복제&quot;에서 자세한 내용을 참조하십시오.
+1. 암호화 관련 때문에 모든 인스턴스는 동일한 HMAC 키를 가져야 합니다. AEM 6.3 이후 주요 자료는 더 이상 저장소에 저장되지 않고 실제 파일 시스템에 저장됩니다. 이러한 점을 염두에 두고 키를 복제하는 가장 좋은 방법은 키를 복제할 소스 인스턴스의 파일 시스템에서 타겟 인스턴스의 SIS(Server Control Center Server Node Server Server Load Manager) 로 키를 복사하는 것입니다. 아래의 &quot;HMAC 키 복제&quot;에서 자세한 내용을 참조하십시오.
 1. 캡슐화된 토큰을 활성화해야 합니다. 이 작업은 웹 콘솔을 통해 수행할 수 있습니다.
 
-### HMAC 키 {#replicating-the-hmac-key} 복제
+### HMAC 키 복제 {#replicating-the-hmac-key}
 
-HMAC 키는 저장소에 `/etc/key` 의 이진 속성으로 있습니다. 옆에 있는 **view** 링크를 눌러 별도로 다운로드할 수 있습니다.
+HMAC 키는 `/etc/key` 로그인합니다. 을 눌러 별도로 다운로드할 수 있습니다 **보기** 옆에 링크:
 
 ![chlimage_1-35](assets/chlimage_1-35.png)
 
 인스턴스 간에 키를 복제하려면 다음을 수행해야 합니다.
 
 1. 복사할 주요 자료가 포함된 AEM 인스턴스(일반적으로 작성자 인스턴스)에 액세스합니다.
-1. 로컬 파일 시스템에서 `com.adobe.granite.crypto.file` 번들을 찾습니다. 예를 들어, 이 경로 아래에서:
+1. 을(를) 찾습니다 `com.adobe.granite.crypto.file` 로컬 파일 시스템에 번들로 구성합니다. 예를 들어, 이 경로 아래에서:
 
    * &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21
 
-   각 폴더 내의 `bundle.info` 파일은 번들 이름을 식별합니다.
+   다음 `bundle.info` 각 폴더 내의 파일은 번들 이름을 식별합니다.
 
 1. 데이터 폴더로 이동합니다. 예:
 
@@ -93,14 +95,14 @@ HMAC 키는 저장소에 `/etc/key` 의 이진 속성으로 있습니다. 옆에
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. 이전에 복사한 두 파일을 붙여넣습니다.
-1. [대상 인스턴스가 ](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) 이미 실행 중인 경우 Crypto 번들을 새로 고칩니다.
+1. [암호화 번들 새로 고침](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) target 인스턴스가 이미 실행 중인 경우.
 
 1. 키를 복제할 모든 인스턴스에 대해 위의 단계를 반복합니다.
 
-#### 캡슐화된 토큰 {#enabling-the-encapsulated-token} 사용
+#### 캡슐화된 토큰 활성화 {#enabling-the-encapsulated-token}
 
 HMAC 키가 복제되면 웹 콘솔을 통해 캡슐화된 토큰을 활성화할 수 있습니다.
 
-1. 브라우저를 `https://serveraddress:port/system/console/configMgr`으로 보냅니다.
-1. **일 CRX 토큰 인증 핸들러**&#x200B;라는 항목을 찾아서 클릭합니다.
-1. 다음 창에서 **캡슐화된 토큰 지원 활성화** 상자를 열고 **Save** 키를 누릅니다.
+1. 브라우저를 `https://serveraddress:port/system/console/configMgr`
+1. 라는 항목을 찾습니다. **일 CRX 토큰 인증 핸들러** 클릭하여 선택합니다.
+1. 다음 창에서 **캡슐화된 토큰 지원 사용** 상자 및 누르기 **저장**.

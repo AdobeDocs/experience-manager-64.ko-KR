@@ -8,14 +8,18 @@ content-type: reference
 feature: Workflow,Asset Management,Renditions
 role: User,Admin
 exl-id: 78d76b4f-a46c-4ffc-b772-ed925eb8e34c
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 0%
+source-wordcount: '1410'
+ht-degree: 3%
 
 ---
 
 # 메타데이터, 이미지 및 비디오 처리를 위한 프로필 정보 {#profiles-for-processing-metadata-images-and-videos}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 프로필은 폴더에 업로드되는 자산에 적용할 옵션에 대한 레서피입니다. 예를 들어 업로드하는 비디오 자산에 적용할 메타데이터 프로필 및 비디오 인코딩 프로필을 지정할 수 있습니다. 또는 이미지 자산에 적용할 이미징 프로필로 제대로 잘립니다.
 
@@ -29,7 +33,7 @@ ht-degree: 0%
 
 메타데이터, 이미지 또는 비디오 프로필을 만든 후 새로 업로드한 자산의 대상으로 사용하는 하나 이상의 폴더에 할당합니다.
 
-[!DNL Experience Manager] Assets에서 프로필 사용과 관련된 중요한 개념은 프로필에 할당된 것입니다. 프로필 내에는 비디오 프로필 또는 이미지 프로필과 함께 메타데이터 프로필 형식의 설정이 있습니다. 이러한 설정은 폴더의 컨텐츠를 하위 폴더와 함께 처리합니다. 따라서 파일 및 폴더의 이름 지정 방법, 하위 폴더 정렬 방법 및 이러한 폴더 내의 파일을 처리하는 방법은 프로필에서 해당 자산을 처리하는 방법에 큰 영향을 줍니다. 일관된 적절한 파일 및 폴더 이름 지정 전략을 좋은 메타데이터 방식과 함께 사용하면 디지털 자산 수집을 최대한 활용하고 올바른 프로필에 의해 올바른 파일이 처리되도록 할 수 있습니다. 예를 들어 [폴더를 사용하여 자산 구성](organize-assets.md#organize-using-folders)을 참조하십시오.
+에서 프로필 사용과 관련된 중요한 개념 [!DNL Experience Manager] 자산은 폴더에 할당되어 있습니다. 프로필 내에는 비디오 프로필 또는 이미지 프로필과 함께 메타데이터 프로필 형식의 설정이 있습니다. 이러한 설정은 폴더의 컨텐츠를 하위 폴더와 함께 처리합니다. 따라서 파일 및 폴더의 이름 지정 방법, 하위 폴더 정렬 방법 및 이러한 폴더 내의 파일을 처리하는 방법은 프로필에서 해당 자산을 처리하는 방법에 큰 영향을 줍니다. 일관된 적절한 파일 및 폴더 이름 지정 전략을 좋은 메타데이터 방식과 함께 사용하면 디지털 자산 수집을 최대한 활용하고 올바른 프로필에 의해 올바른 파일이 처리되도록 할 수 있습니다. 예를 보려면 [폴더를 사용하여 자산 구성](organize-assets.md#organize-using-folders).
 
 >[!NOTE]
 >
@@ -41,17 +45,17 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->*Dynamic Media - Scene7 모드*&#x200B;에만 [!DNL Experience Manager] 6.4.7.0 이상에만 적용됩니다.
+>적용 대상 *Dynamic Media - Scene7 모드* 에만 [!DNL Experience Manager] 6.4.7.0 이상
 
 나중에 변경한 기존 처리 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다.
 
-예를 들어 이미지 프로필을 만들어 폴더에 할당했다고 가정합니다. 폴더에 업로드한 모든 이미지 자산에는 자동으로 이미지 프로필이 자산에 적용되었습니다. 하지만 나중에 프로필에 새로운 스마트 자르기 비율을 추가하기로 합니다. 이제 자산을 선택하고 다시 폴더에 업로드하는 대신 *Scene7을 실행하기만 하면 됩니다. 자산* 워크플로우를 다시 처리합니다.
+예를 들어 이미지 프로필을 만들어 폴더에 할당했다고 가정합니다. 폴더에 업로드한 모든 이미지 자산에는 자동으로 이미지 프로필이 자산에 적용되었습니다. 하지만 나중에 프로필에 새로운 스마트 자르기 비율을 추가하기로 합니다. 이제 자산을 선택하고 다시 폴더에 업로드하지 않고, *Scene7: 자산 재처리* 워크플로우.
 
 처음으로 처리가 실패한 자산에서 재처리 워크플로우를 실행할 수 있습니다. 따라서 처리 프로필을 편집하지 않았거나 처리 프로필을 적용하지 않았더라도 언제든지 자산 폴더에서 재처리 워크플로우를 실행할 수 있습니다.
 
-선택적으로 재처리 워크플로우의 배치 크기를 최대 1000개의 자산인 기본값 50개에서 조정할 수 있습니다. _Scene7을 실행하는 경우: 폴더에서 자산_ 워크플로우를 재처리하는 경우 자산은 일괄로 그룹화된 다음 처리를 위해 Dynamic Media 서버로 전송됩니다. 처리 후, 전체 배치 세트에 있는 각 자산의 메타데이터가 AEM에서 업데이트됩니다. 일괄 처리 크기가 매우 큰 경우 처리가 지연될 수 있습니다. 또는 일괄 처리 크기가 너무 작으면 Dynamic Media 서버로 라운드 트립이 너무 많이 발생할 수 있습니다.
+선택적으로 재처리 워크플로우의 배치 크기를 최대 1000개의 자산인 기본값 50개에서 조정할 수 있습니다. 를 실행할 때 _Scene7: 자산 재처리_ 폴더의 워크플로우에서 자산은 일괄적으로 그룹화된 다음 처리를 위해 Dynamic Media 서버로 전송됩니다. 처리 후, 전체 배치 세트에 있는 각 자산의 메타데이터가 AEM에서 업데이트됩니다. 일괄 처리 크기가 매우 큰 경우 처리가 지연될 수 있습니다. 또는 일괄 처리 크기가 너무 작으면 Dynamic Media 서버로 라운드 트립이 너무 많이 발생할 수 있습니다.
 
-[재처리 워크플로우의 일괄 처리 크기 조정](#adjusting-load)을 참조하십시오.
+자세한 내용은 [재처리 워크플로우의 배치 크기 조정](#adjusting-load).
 
 >[!NOTE]
 >
@@ -59,9 +63,9 @@ ht-degree: 0%
 
 <!-- Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media’s Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. -->
 
-**폴더에서 자산을 재처리하려면 다음을 수행하십시오**.
+**폴더에서 자산을 재처리하려면**:
 
-1. AEM의 자산 페이지에서 처리 프로필이 할당된 자산의 폴더로 이동하고 **Scene7을 적용할 자산의 폴더로 이동합니다. 자산 재처리** 워크플로우,
+1. AEM의 Assets 페이지에서 처리 프로필이 지정된 자산 폴더와 적용할 **Scene7: 자산 재처리** 워크플로우,
 
    처리 프로필이 이미 할당된 폴더는 카드 보기에서 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
@@ -71,51 +75,51 @@ ht-degree: 0%
    * 기본 선택한 폴더에 자산이 있는 하위 폴더가 하나 이상 있는 경우 워크플로우는 폴더 계층 구조의 모든 자산을 다시 처리합니다.
    * 자산이 1000개 이상인 폴더 계층 구조에서 이 워크플로우를 실행하지 않는 것이 좋습니다.
 
-1. 페이지의 왼쪽 위 모서리 근처에 있는 드롭다운 목록에서 **[!UICONTROL 타임라인]**&#x200B;을 클릭합니다.
-1. 페이지의 왼쪽 아래 모서리 근처에 있는 댓글 필드 오른쪽에 있는 캐럿 아이콘( **^** )을 클릭합니다.
+1. Near the upper-left corner of the page, from the drop-down list, click **[!UICONTROL Timeline]**.
+1. 페이지의 왼쪽 아래 모서리 근처에 있는 댓글 필드 오른쪽에 있는 캐럿 아이콘( )을 클릭합니다 **^** ).
 
    ![자산 워크플로우 재처리 1](/help/assets/assets/reprocess-assets1.png)
 
-1. **[!UICONTROL 워크플로우 시작]**&#x200B;을 클릭합니다.
-1. **[!UICONTROL 워크플로우 시작]** 드롭다운 목록에서 **[!UICONTROL Scene7을 선택합니다. 자산]**&#x200B;을 재처리합니다.
-1. (선택 사항) **워크플로우 제목 입력** 텍스트 필드에 워크플로우의 이름을 입력합니다. 필요한 경우 이름을 사용하여 워크플로우 인스턴스를 참조할 수 있습니다.
+1. 클릭 **[!UICONTROL 워크플로우 시작]**.
+1. 에서 **[!UICONTROL 워크플로우 시작]** 드롭다운 목록에서 **[!UICONTROL Scene7: 자산 재처리]**.
+1. (선택 사항)에서 **워크플로우의 제목 입력** 텍스트 필드에서 워크플로우의 이름을 입력합니다. 필요한 경우 이름을 사용하여 워크플로우 인스턴스를 참조할 수 있습니다.
 
    ![자산 재처리 2](/help/assets/assets/reprocess-assets2.png)
 
-1. **[!UICONTROL 시작]**&#x200B;을 클릭한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
+1. 클릭 **[!UICONTROL 시작]**&#x200B;를 클릭한 다음 **[!UICONTROL 확인]**.
 
-   워크플로우를 모니터링하거나 진행 상태를 확인하려면 [!DNL Experience Manager] 기본 콘솔 페이지에서 **[!UICONTROL 도구 > 워크플로우]**&#x200B;를 클릭합니다. 워크플로우 인스턴스 페이지에서 워크플로우를 선택합니다. 메뉴 모음에서 **[!UICONTROL 기록 열기]**&#x200B;를 클릭합니다. 동일한 [워크플로우 인스턴스] 페이지에서 선택한 워크플로우를 종료, 일시 중단 또는 이름을 변경할 수도 있습니다.
+   워크플로우를 모니터링하거나 진행 상황을 확인하려면 [!DNL Experience Manager] 기본 콘솔 페이지에서 **[!UICONTROL 도구 > 워크플로우]**. 워크플로우 인스턴스 페이지에서 워크플로우를 선택합니다. 메뉴 모음에서 **[!UICONTROL 기록 열기]**. 동일한 [워크플로우 인스턴스] 페이지에서 선택한 워크플로우를 종료, 일시 중단 또는 이름을 변경할 수도 있습니다.
 
 ### 재처리 워크플로우의 배치 크기 조정 {#adjusting-load}
 
-(선택 사항) 재처리 워크플로우의 기본 배치 크기는 작업당 50개의 자산입니다. 이 최적 배치 크기는 재처리가 실행되는 평균 자산 크기 및 MIME 유형의 자산에 의해 제어됩니다. 값이 높을수록 하나의 재처리 작업에 많은 파일이 있게 됩니다. 따라서, 처리 배너는 더 오랫동안 [!DNL Experience Manager] 자산에 머물러 있다. 그러나 평균 파일 크기가 1MB 이하인 경우 값을 수백 개로 늘릴 것을 권장하지만 1000을 넘지 않습니다. 평균 파일 크기가 수백 MB인 경우 배치 크기를 최대 10개까지 줄이는 것이 좋습니다.
+(선택 사항) 재처리 워크플로우의 기본 배치 크기는 작업당 50개의 자산입니다. 이 최적 배치 크기는 재처리가 실행되는 평균 자산 크기 및 MIME 유형의 자산에 의해 제어됩니다. 값이 높을수록 하나의 재처리 작업에 많은 파일이 있게 됩니다. 따라서, 처리 배너가 켜져 있다 [!DNL Experience Manager] 자산을 더 오랫동안 사용할 수 있도록 해줍니다. 그러나 평균 파일 크기가 1MB 이하인 경우 값을 수백 개로 늘릴 것을 권장하지만 1000을 넘지 않습니다. 평균 파일 크기가 수백 MB인 경우 배치 크기를 최대 10개까지 줄이는 것이 좋습니다.
 
 **재처리 워크플로우의 배치 크기를 선택적으로 조정하려면**
 
-1. Experience Manager에서 **[!UICONTROL Adobe Experience Manager]**&#x200B;을 탭하여 전역 탐색 콘솔에 액세스한 다음, **[!UICONTROL 도구]**(망치) 아이콘 > **[!UICONTROL 워크플로우 > 모델]**&#x200B;을 탭합니다.
-1. 워크플로우 모델 페이지의 카드 보기 또는 목록 보기에서 **[!UICONTROL Scene7을 선택합니다. 자산]**&#x200B;을 재처리합니다.
+1. In Experience Manager, tap **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then tap the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow > Models]**.
+1. 워크플로우 모델 페이지의 카드 보기 또는 목록 보기에서 을 선택합니다 **[!UICONTROL Scene7: 자산 재처리]**.
 
    ![Scene7이 있는 워크플로우 모델 페이지: 카드 보기에서 선택한 자산 워크플로우 재처리](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 클릭합니다. 새 브라우저 탭에서 Scene7을 엽니다. 자산 워크플로우 모델 페이지를 재처리합니다.
-1. Scene7에서: 오른쪽 위 모서리 근처에 있는 자산 워크플로우 페이지를 다시 처리하려면 **[!UICONTROL 편집]**&#x200B;을 탭하여 워크플로우를 &quot;잠금 해제&quot;합니다.
-1. 워크플로우에서 Scene7 일괄 업로드 구성 요소를 선택하여 도구 모음을 열고 도구 모음에서 **[!UICONTROL 구성]**&#x200B;을 누릅니다.
+1. 도구 모음에서 **[!UICONTROL 편집]**. 새 브라우저 탭에서 Scene7을 엽니다. 자산 워크플로우 모델 페이지를 재처리합니다.
+1. Scene7에서: 오른쪽 상단 근처에 있는 자산 워크플로우 페이지를 다시 처리하려면 **[!UICONTROL 편집]** 워크플로우 &quot;잠금 해제&quot;하기.
+1. 워크플로우에서 Scene7 일괄 업로드 구성 요소를 선택하여 도구 모음을 열고 을 누릅니다 **[!UICONTROL 구성]** 클릭합니다.
 
    ![Scene7 배치 업로드 구성 요소](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. **[!UICONTROL Scene7-Step 속성에 일괄 업로드]** 대화 상자에서 다음을 설정합니다.
-   * **[!UICONTROL 제목]** 및 **[!UICONTROL 설명]** 텍스트 필드에 원하는 경우 작업에 대한 새 제목과 설명을 입력합니다.
-   * 핸들러가 다음 단계로 이동할 경우 **[!UICONTROL 핸들러 Advance]**&#x200B;를 선택합니다.
-   * **[!UICONTROL 시간 초과]** 필드에 외부 프로세스 시간 초과(초)를 입력합니다.
-   * **[!UICONTROL 기간]** 필드에 외부 프로세스 완료를 테스트할 폴링 간격(초)을 입력합니다.
-   * **[!UICONTROL 일괄 처리 필드]**&#x200B;에 Dynamic Media 서버 일괄 처리 업로드 작업에서 처리할 최대 자산 수(50-1000)를 입력합니다.
-   * 시간 초과에 도달했을 때 진행하려면 **[!UICONTROL 시간 초과 시작]**&#x200B;을 선택합니다. 시간 초과에 도달하면 받은 편지함으로 계속 진행하려면 선택 취소합니다.
+1. 설정 **[!UICONTROL Scene7-Step 속성에 일괄 업로드]** 대화 상자에서 다음을 설정합니다.
+   * 에서 **[!UICONTROL 제목]** 및 **[!UICONTROL 설명]** 텍스트 필드에 작업의 새 제목과 설명을 입력합니다(원하는 경우).
+   * 선택 **[!UICONTROL 핸들러 고급]** 처리기가 다음 단계로 이동하는 경우
+   * 에서 **[!UICONTROL 시간 초과]** 필드에서 외부 프로세스 시간 초과(초)를 입력합니다.
+   * 에서 **[!UICONTROL 기간]** 필드에 외부 프로세스 완료를 테스트할 폴링 간격(초)을 입력합니다.
+   * 에서 **[!UICONTROL 배치 필드]**&#x200B;를 Dynamic Media 서버 일괄 처리 업로드 작업에서 처리할 최대 자산 수(50~1000)를 입력합니다.
+   * 선택 **[!UICONTROL 시간 제한 시 고급]** 시간 초과에 도달했을 때 진행하려는 경우 시간 초과에 도달하면 받은 편지함으로 계속 진행하려면 선택 취소합니다.
 
    ![속성 대화 상자](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. **[!UICONTROL Scene7-Step 속성에 일괄 업로드]** 대화 상자의 오른쪽 맨 위에 있는 **[!UICONTROL 완료]**&#x200B;를 탭합니다.
+1. 의 오른쪽 위 모서리에서 **[!UICONTROL Scene7-Step 속성에 일괄 업로드]** 대화 상자, 탭 **[!UICONTROL 완료]**.
 
-1. Scene7의 오른쪽 위 모서리: 자산 워크플로우 모델 페이지를 다시 처리하고 **[!UICONTROL 동기화]**&#x200B;를 누릅니다. **[!UICONTROL 동기화된]**&#x200B;가 표시되면 워크플로우 런타임 모델이 성공적으로 동기화되어 폴더의 자산을 재처리할 수 있습니다.
+1. Scene7의 오른쪽 위 모서리: 자산 워크플로우 모델 페이지를 재처리하고 탭합니다. **[!UICONTROL 동기화]**. 다음에 **[!UICONTROL 동기화됨]**&#x200B;를 설정하는 경우 워크플로우 런타임 모델이 성공적으로 동기화되고 폴더의 자산을 재처리할 준비가 되었습니다.
 
    ![워크플로우 모델 동기화](/help/assets/assets-dm/reprocess-assets1.png)
 

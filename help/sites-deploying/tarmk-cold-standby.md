@@ -11,14 +11,18 @@ topic-tags: deploying
 discoiquuid: cb041407-ec30-47f8-a01e-314c4835a5d9
 feature: Configuring
 exl-id: 73f5c1a4-3d2d-4594-877e-93bd09a94e91
-source-git-commit: ce025f42bcd7105b83aa6a931e091aa21269a6f3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2724'
+source-wordcount: '2760'
 ht-degree: 0%
 
 ---
 
 # TarMK Cold Standby를 사용하여 AEM을 실행하는 방법{#how-to-run-aem-with-tarmk-cold-standby}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ## 소개 {#introduction}
 
@@ -89,7 +93,6 @@ Tar 마이크로 커널의 콜드 대기 용량을 사용하면 하나 이상의
 >
 >* org.apache.jackrabbit.oak에서 생성합니다.**plugins**.segment.standby.store.StandbyStoreService to org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService
 >* org.apache.jackrabbit.oak에서 생성합니다.**plugins**.segment.SegmentNodeStoreService to org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
-
 >
 >이 변경 사항을 반영하려면 필요한 구성 조정을 해야 합니다.
 

@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 feature: Configuring
 exl-id: 977d07d2-36cf-4799-bcfe-991cf89a612a
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1970'
-ht-degree: 0%
+source-wordcount: '2006'
+ht-degree: 1%
 
 ---
 
 # OSGi 구성{#configuring-osgi}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 [OSGi](https://www.osgi.org/) 는 AEM(Adobe Experience Manager)의 기술 스택에서 기본적인 요소입니다. AEM의 복합 번들과 해당 구성을 제어하는 데 사용됩니다.
 
@@ -194,7 +198,7 @@ OSGi &quot;*작은 구성 요소, 재사용 가능한 공동 작업 구성 요�
    * `config` - 모든 실행 모드
    * `config.author` - 작성 환경용
    * `config.publish` - 게시 환경의 경우
-   * `config.<run-mode>` - 적절하
+   * `config.<run-mode>` - 적절히
 
 1. 다음 **구성** 또는 **출하 시 구성** 는 필수입니다.
 1. 구성할 개별 매개 변수 다시 생성해야 하는 기존 매개 변수 정의를 모두 포함합니다.

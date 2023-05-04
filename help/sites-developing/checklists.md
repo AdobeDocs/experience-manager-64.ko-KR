@@ -1,8 +1,8 @@
 ---
 title: 확인 목록
-seo-title: 확인 목록
+seo-title: Checklists
 description: 다음 체크리스트는 몇 가지 주요 테스트 문제를 설명합니다
-seo-description: 다음 체크리스트는 몇 가지 주요 테스트 문제를 설명합니다
+seo-description: The following checklist highlights some of the main testing issues
 uuid: 0456c98c-779f-415d-9641-b17ac141698b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,18 @@ topic-tags: testing
 content-type: reference
 discoiquuid: 8f94c22d-5f08-4a8b-8bb5-5ec757c44bc8
 exl-id: addb71f8-d042-4b14-8775-f15ab9fa5b6b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 4%
+source-wordcount: '193'
+ht-degree: 7%
 
 ---
 
 # 확인 목록{#checklists}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 다음 체크리스트는 몇 가지 주요 문제를 중점적으로 설명합니다. 자세한 내용은 테스트와 관련된 다른 섹션을 참조하십시오.
 
@@ -36,4 +40,4 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->전체 프로젝트와 관련된 추가 확인 목록이 필요하면 [프로젝트 관리 - 우수 사례 검사 목록](/help/managing/best-practices.md)을 볼 수도 있습니다.
+>또한 [프로젝트 관리 - 우수 사례 검사 목록](/help/managing/best-practices.md) 전체 프로젝트와 관련된 추가 확인 목록입니다.

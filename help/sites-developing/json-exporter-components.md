@@ -10,14 +10,18 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
 exl-id: ce9a1c1f-a37b-4765-b87e-5b2359312cfe
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 8%
+source-wordcount: '572'
+ht-degree: 9%
 
 ---
 
 # 구성 요소에 대해 JSON 내보내기 활성화{#enabling-json-export-for-a-component}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 구성 요소를 모델러 프레임워크를 기반으로 해당 컨텐츠의 JSON 내보내기를 생성하도록 조정할 수 있습니다.
 
@@ -78,7 +82,7 @@ JSON Exporter 프레임워크에서 고려하려면 모델 인터페이스가 �
 
 ## 예 {#example}
 
-핵심 구성 요소는 릴리스 이후 JSON 내보내기를 지원했습니다 [핵심 구성 요소의 1.1.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 를 참조로 사용할 수 있습니다.
+핵심 구성 요소는 릴리스 이후 JSON 내보내기를 지원했습니다 [핵심 구성 요소의 1.1.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 및 를 참조로 사용할 수 있습니다.
 
 예를 들어 이미지 코어 구성 요소의 Sling 모델 구현과 주석으로 구성된 인터페이스를 참조하십시오.
 
@@ -98,4 +102,4 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 * [콘텐츠 조각 모델](/help/assets/content-fragments-models.md)
 * [컨텐츠 조각으로 작성](/help/sites-authoring/content-fragments.md)
 * [콘텐츠 서비스에 대한 JSON 내보내기](/help/sites-developing/json-exporter.md)
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 그리고 [컨텐츠 조각 구성 요소](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 그리고 [컨텐츠 조각 구성 요소](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)

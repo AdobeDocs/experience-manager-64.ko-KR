@@ -1,20 +1,24 @@
 ---
 title: AEM에서 자산 정렬이 개선되었습니다.
-description: 'Assets에서 서버 측 정렬을 배포하여 폴더 자산을 정렬하거나 클라이언트 측의 배치로 정렬하는 대신 한 번에 검색 쿼리를 배포하는 방법을 알아봅니다. [!DNL Experience Manager] '
+description: 방법 알아보기 [!DNL Experience Manager] Assets는 클라이언트 측에서 배치로 정렬하는 대신 서버 측 정렬을 배포하여 폴더 자산 또는 검색 쿼리를 한 번에 정렬합니다.
 contentOwner: AG
 feature: Search
 role: User
 exl-id: aa24ca68-d94e-4bd4-a5cc-113906650a2e
-source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 5%
+source-wordcount: '469'
+ht-degree: 6%
 
 ---
 
-# [!DNL Experience Manager]에 있는 자산의 정렬이 개선되었습니다. {#enhanced-sorting-of-assets-in-aem}
+# 의 자산 정렬이 개선되었습니다. [!DNL Experience Manager] {#enhanced-sorting-of-assets-in-aem}
 
-[!DNL Experience Manager] Assets에서 서버 측 정렬을 배포하여 폴더 자산을 정렬하거나 클라이언트 측에서 배치로 정렬하는 대신 한 번에 검색 쿼리를 배포하는 방법을 알아봅니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+방법 알아보기 [!DNL Experience Manager] Assets는 클라이언트 측에서 배치로 정렬하는 대신 서버 측 정렬을 배포하여 폴더 자산 또는 검색 쿼리를 한 번에 정렬합니다.
 
 Adobe Experience Manager Assets의 검색 기능이 향상되어 폴더 목록 보기 및 검색 결과 페이지에서 많은 자산을 효율적으로 정렬할 수 있습니다. 타임라인 항목을 정렬할 수도 있습니다.
 
@@ -31,7 +35,7 @@ Adobe Experience Manager Assets의 검색 기능이 향상되어 폴더 목록 �
 * 등급
 * 수정한 날짜
 * 게시된 날짜
-* 사용량
+* 사용
 * 클릭 수
 * 노출 횟수
 * 체크아웃함
@@ -51,7 +55,7 @@ Adobe Experience Manager Assets의 검색 기능이 향상되어 폴더 목록 �
 
 >[!NOTE]
 >
->`Name` 또는 `Title`열의 값을 정렬하려면 `/libs/dam/gui/content/commons/availablecolumns`를 오버레이하고 `sortable` 값을 `True`로 변경하십시오.
+>에서 값을 정렬하려면 `Name` 또는 `Title`열, 오버레이 `/libs/dam/gui/content/commons/availablecolumns` 값을 변경하고 `sortable` to `True`.
 
 ## 검색 결과의 자산 정렬 {#sorting-assets-in-search-results}
 
@@ -78,14 +82,14 @@ Adobe Experience Manager Assets의 검색 기능이 향상되어 폴더 목록 �
 [!DNL Assets] 주석, 버전, 워크플로우 및 활동과 같은 타임라인 항목을 시간순으로 정렬할 수 있습니다.
 
 1. 자산 UI에서 타임라인을 표시할 자산을 선택합니다.
-1. GlobalNav 아이콘을 클릭/탭하고 **[!UICONTROL 타임라인]**&#x200B;을 선택합니다.
+1. GlobalNav 아이콘을 클릭/탭하고 선택합니다 **[!UICONTROL 타임라인]**.
 
    ![chlimage_1-399](assets/chlimage_1-399.png)
 
-1. 타임라인의 목록에서 항목을 선택합니다. 예를 들어 **[!UICONTROL 주석]**&#x200B;을 선택하여 자산과 연결된 주석 목록을 표시합니다.
+1. 타임라인의 목록에서 항목을 선택합니다. 예를 들어, **[!UICONTROL 댓글]** 자산과 연관된 주석 목록을 표시합니다.
 
    ![chlimage_1-400](assets/chlimage_1-400.png)
 
-1. **[!UICONTROL Date]** 레이블 옆에 있는 **[!UICONTROL 정렬]** 아이콘을 클릭/탭합니다. 선택한 항목에 따라 주석이 자산에 추가되는 시간 기준/시간 기준 순서대로 나열됩니다.
+1. 클릭/탭하기 **[!UICONTROL 정렬]** 아이콘 옆의 아이콘 **[!UICONTROL 날짜]** 레이블. 선택한 항목에 따라 주석이 자산에 추가되는 시간 기준/시간 기준 순서대로 나열됩니다.
 
    ![chlimage_1-401](assets/chlimage_1-401.png)

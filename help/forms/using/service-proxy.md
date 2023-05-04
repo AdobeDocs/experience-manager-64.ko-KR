@@ -1,8 +1,8 @@
 ---
 title: HTML5 양식 서비스 프록시
-seo-title: HTML5 양식 서비스 프록시
-description: HTML5 양식 서비스 프록시는 제출 서비스에 대한 프록시를 등록하는 구성입니다. 서비스 프록시를 구성하려면 요청 매개 변수 submissionServiceProxy를 통해 제출 서비스의 URL을 지정합니다.
-seo-description: HTML5 양식 서비스 프록시는 제출 서비스에 대한 프록시를 등록하는 구성입니다. 서비스 프록시를 구성하려면 요청 매개 변수 submissionServiceProxy를 통해 제출 서비스의 URL을 지정합니다.
+seo-title: HTML5 forms service proxy
+description: HTML5 forms 서비스 프록시는 제출 서비스에 대한 프록시를 등록하는 구성입니다. 서비스 프록시를 구성하려면 요청 매개 변수 submissionServiceProxy를 통해 제출 서비스의 URL을 지정합니다.
+seo-description: HTML5 forms Service Proxy is a configuration to register a proxy for the submission service. To configure Service Proxy, specify the URL of submission service through request parameter submissionServiceProxy.
 uuid: 03ee7dea-d23e-4600-8b0a-698f4530b889
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,38 +10,42 @@ topic-tags: hTML5_forms
 discoiquuid: 2791c9a1-38a2-4154-8bea-2f7c564b46c8
 feature: Mobile Forms
 exl-id: 42da25de-7ad0-4e9a-8139-149954f9bd8e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 1%
+source-wordcount: '733'
+ht-degree: 2%
 
 ---
 
 # HTML5 양식 서비스 프록시 {#html-forms-service-proxy}
 
-HTML5 양식 서비스 프록시는 제출 서비스에 대한 프록시를 등록하는 구성입니다. 서비스 프록시를 구성하려면 요청 매개 변수 *submissionServiceProxy*&#x200B;를 통해 제출 서비스의 URL을 지정합니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+HTML5 forms 서비스 프록시는 제출 서비스에 대한 프록시를 등록하는 구성입니다. 서비스 프록시를 구성하려면 요청 매개 변수를 통해 제출 서비스의 URL을 지정합니다 *submissionServiceProxy*.
 
 ## 서비스 프록시의 이점 {#benefits-of-service-proxy-br}
 
 서비스 프록시는 다음을 제거합니다.
 
-* HTML5 양식 워크플로우를 사용하려면 HTML5 양식 사용자에 대해 제출 서비스 &quot;/content/exforms/submission/default&quot;를 열어야 합니다. 의도하지 않은 더 넓은 대상에 AEM 서버를 노출합니다.
+* HTML5 forms 워크플로우에서는 HTML5 forms 사용자에 대해 제출 서비스 &quot;/content/exforms/submission/default&quot;를 열어야 합니다. 의도하지 않은 더 넓은 대상에 AEM 서버를 노출합니다.
 * 서비스 URL은 양식의 런타임 모델에 포함됩니다. 서비스 URL 경로를 변경할 수 없습니다.
 * 제출은 2단계 프로세스입니다. 양식 데이터를 제출하려면 서버에 두 개 이상의 여정이 필요합니다. 따라서 서버의 로드를 증가시킵니다.
-* HTML5 양식은 PDF 요청 대신 POST 요청에 데이터를 전송합니다. PDF 및 HTML5 양식을 모두 포함하는 워크플로우의 경우 제출을 처리하는 두 가지 방법이 필요합니다.
+* HTML5 양식은 PDF 요청 대신 POST 요청에 데이터를 전송합니다. PDF 및 HTML5 양식을 모두 포함하는 워크플로우의 경우 제출을 처리하는 두 가지 다른 방법이 필요합니다.
 
 ## 토폴로지 {#topologies-br}
 
 HTML5 양식은 다음 토폴로지를 사용하여 AEM 서버에 연결할 수 있습니다.
 
-* AEM Server 또는 HTML5 양식이 POST을 통해 서버에 데이터를 보내는 토폴로지.
+* AEM Server 또는 HTML5 Forms가 POST을 통해 서버에 데이터를 보내는 토폴로지.
 * 프록시 서버가 POST 데이터를 서버에 보내는 토폴로지
 
 ![HTML5 양식 서비스 프록시 토폴로지](assets/topology.png)
 
 HTML5 양식 서비스 프록시 토폴로지
 
-HTML5 양식은 AEM 서버에 연결하여 서버측 스크립트, 웹 서비스 및 제출을 실행합니다. HTML5 양식의 XFA 런타임에서는 AEM 서버에 연결하기 위해 &quot;/bin/xfaforms/submitaction&quot; 종단점에 있는 Ajax 호출을 다양한 매개 변수로 사용합니다. HTML5 양식은 AEM 서버를 연결하여 다음 작업을 수행합니다.
+HTML5 양식은 AEM 서버에 연결하여 서버측 스크립트, 웹 서비스 및 제출을 실행합니다. HTML5 Forms의 XFA 런타임에서는 AEM 서버에 연결하기 위해 &quot;/bin/xfaforms/submitaction&quot; 종단점에 있는 Ajax 호출을 다양한 매개 변수로 사용합니다. HTML5 forms는 AEM 서버를 연결하여 다음 작업을 수행합니다.
 
 ### 서버측 스크립트 및 웹 서비스 실행 {#execute-server-sided-scripts-and-web-services}
 
@@ -50,7 +54,7 @@ HTML5 양식은 AEM 서버에 연결하여 서버측 스크립트, 웹 서비스
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong>매개 변수</strong></p> </td> 
+   <td><p><strong>매개변수</strong></p> </td> 
    <td><p><strong>설명</strong></p> </td> 
   </tr> 
   <tr> 
@@ -90,12 +94,12 @@ HTML5 양식은 AEM 서버에 연결하여 서버측 스크립트, 웹 서비스
 
 ### 데이터 제출 {#submit-data}
 
-제출 단추를 클릭하면 HTML5 양식이 서버에 데이터를 보냅니다. 다음 표에는 HTML5 양식이 서버에 보내는 모든 매개 변수가 나와 있습니다.
+제출 단추를 클릭하면 HTML5 forms가 서버에 데이터를 보냅니다. 다음 표에는 HTML5 Forms가 서버에 보내는 모든 매개 변수가 나와 있습니다.
 
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong>매개 변수</strong></p> </td> 
+   <td><p><strong>매개변수</strong></p> </td> 
    <td><p><strong>설명</strong></p> </td> 
   </tr> 
   <tr> 
@@ -125,13 +129,13 @@ HTML5 양식은 AEM 서버에 연결하여 서버측 스크립트, 웹 서비스
  </tbody> 
 </table>
 
-### 제출 프록시는 어떻게 작동합니까?{#how-nbsp-the-nbsp-submit-proxy-works}
+### 제출 프록시는 어떻게 작동합니까? {#how-nbsp-the-nbsp-submit-proxy-works}
 
 제출 서비스 프록시는 제출 URL이 요청 매개 변수에 없는 경우 전달 역할을 합니다. 통과되는 역할을 합니다. /bin/xfaforms/submitaction 종료 지점에 요청을 보내고 XFA 런타임으로 응답을 전송합니다.
 
 제출 서비스 프록시는 제출 URL이 요청 매개 변수에 있는 경우 토폴로지를 선택합니다.
 
 * AEM 서버가 데이터를 게시하면 프록시 서비스는 패스스루 역할을 합니다. /bin/xfaforms/submitaction 종료 지점에 요청을 보내고 XFA 런타임으로 응답을 전송합니다.
-* 프록시가 데이터를 게시하면 프록시 서비스는 submitUrl을 제외한 모든 매개 변수를 */bin/xfaforms/submitaction* end point에 전달하고 응답 스트림의 xml 바이트를 수신합니다. 그런 다음 프록시 서비스는 처리를 위해 데이터 xml 바이트를 submitUrl에 게시합니다.
+* 프록시가 데이터를 게시하면 프록시 서비스는 submitUrl을 제외한 모든 매개 변수를 */bin/xfaforms/submitaction* 종료 지점 및 응답 스트림에서 xml 바이트를 받습니다. 그런 다음 프록시 서비스는 처리를 위해 데이터 xml 바이트를 submitUrl에 게시합니다.
 
-* 서버에 데이터(POST 요청)를 보내기 전에 HTML5 양식이 서버의 연결 및 가용성을 확인합니다. 연결 및 가용성을 확인하기 위해 HTML Forms는 빈 헤드 요청을 서버에 보냅니다. 서버를 사용할 수 있는 경우 HTML5 양식은 서버에 데이터(POST 요청)를 보냅니다. 서버를 사용할 수 없는 경우 오류 메시지 *서버에 연결할 수 없는 경우*&#x200B;이 표시됩니다. 사전 감지 기능을 사용하면 사용자가 양식을 다시 채우는 번거로움을 방지할 수 있습니다. 프록시 서블릿은 헤드 요청을 처리하며 예외를 throw하지 않습니다.
+* 서버에 데이터(POST 요청)를 보내기 전에 HTML5 양식에서 서버의 연결 및 가용성을 확인합니다. 연결 및 가용성을 확인하려면 HTML 양식에서 빈 헤드 요청을 서버로 전송합니다. 서버를 사용할 수 있는 경우 HTML5 양식은 서버에 데이터(POST 요청)를 보냅니다. 서버를 사용할 수 없으면 오류 메시지가 표시됩니다. *서버에 연결할 수 없습니다.* 이 표시됩니다. 사전 감지 기능을 사용하면 사용자가 양식을 다시 채우는 번거로움을 방지할 수 있습니다. 프록시 서블릿은 헤드 요청을 처리하며 예외를 throw하지 않습니다.

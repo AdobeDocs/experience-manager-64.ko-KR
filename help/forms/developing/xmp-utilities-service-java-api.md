@@ -1,8 +1,8 @@
 ---
 title: XMP 유틸리티 서비스 Java APIQ 빠른 시작(SOAP)
-seo-title: XMP 유틸리티 서비스 Java APIQ 빠른 시작(SOAP)
+seo-title: XMP Utilities Service Java APIQuick Start(SOAP)
 description: XMP 유틸리티 서비스를 사용하여 XMP 메타데이터를 내보내고 가져옵니다.
-seo-description: XMP 유틸리티 서비스를 사용하여 XMP 메타데이터를 내보내고 가져옵니다.
+seo-description: Use the XMP Utilities service to export and import XMP metadata.
 uuid: 5db4c623-75db-4a34-9ad2-3c917619e296
 contentOwner: admin
 content-type: reference
@@ -11,30 +11,34 @@ topic-tags: develop
 discoiquuid: 1b229ddf-9350-40b6-8056-dcbe0c5afd5b
 role: Developer
 exl-id: fdbf9942-7e4d-4b76-971f-d26d89c4c4cf
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 0%
+source-wordcount: '269'
+ht-degree: 2%
 
 ---
 
 # XMP 유틸리티 서비스 Java API 빠른 시작(SOAP) {#xmp-utilities-service-java-apiquick-start-soap}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 XMP 유틸리티 서비스에 다음 빠른 시작을 사용할 수 있습니다.
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 XMP 메타데이터 내보내기](xmp-utilities-service-java-api.md#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 XMP 메타데이터 내보내기](xmp-utilities-service-java-api.md#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 XMP 메타데이터 가져오기](xmp-utilities-service-java-api.md#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 XMP 메타데이터 가져오기](xmp-utilities-service-java-api.md#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api)
 
 AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM Forms로 프로그래밍에 있는 빠른 시작은 UNIX와 같은 다른 운영 체제를 사용하는 경우 Forms 서버를 기반으로 하며 Windows 관련 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로, 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
+>AEM Forms로 프로그래밍에 있는 빠른 시작은 UNIX와 같은 다른 운영 체제를 사용하는 경우 Forms 서버를 기반으로 하며 Windows 관련 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로, 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 자세한 내용은 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api}를 사용하여 XMP 메타데이터 내보내기
+## 빠른 시작(SOAP 모드): Java API를 사용하여 XMP 메타데이터 내보내기 {#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api}
 
-다음 코드 예제에서는 XMP 메타데이터를 검색, 검사 및 저장합니다. ([PDF 문서에서 메타데이터 내보내기](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents) 참조).
+다음 코드 예제에서는 XMP 메타데이터를 검색, 검사 및 저장합니다. (자세한 내용은 [PDF 문서에서 메타데이터 내보내기](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents))
 
 ```as3
  /* 
@@ -137,9 +141,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api}를 사용하여 XMP 메타데이터 가져오기
+## 빠른 시작(SOAP 모드): Java API를 사용하여 XMP 메타데이터 가져오기 {#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api}
 
-다음 코드 예제에서는 XMP 메타데이터를 가져오고 새 PDF 파일을 디스크에 저장합니다. PDF 문서는 Loan.pdf라는 PDF 파일을 기반으로 합니다. PDF 문서로 가져올 메타데이터가 포함된 XML 문서는 *LoanMetaData.xml*&#x200B;이라는 XML 파일을 기반으로 합니다. 이 XML 파일에 대한 자세한 내용은 [메타데이터를 PDF 문서로 가져오기](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents)를 참조하십시오.
+다음 코드 예제에서는 XMP 메타데이터를 가져와 새 PDF 파일을 디스크에 저장합니다. PDF 문서는 Loan.pdf라는 PDF 파일을 기반으로 합니다. PDF 문서로 가져올 메타데이터가 포함된 XML 문서는 이름이 인 XML 파일을 기반으로 합니다 *LoanMetaData.xml*. 이 XML 파일에 대한 자세한 내용은 [PDF 문서로 메타데이터 가져오기](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents).
 
 ```as3
  /* 

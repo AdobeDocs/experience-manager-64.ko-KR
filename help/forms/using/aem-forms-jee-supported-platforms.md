@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 role: Admin
 exl-id: 6609c625-0591-42fd-910b-c7c65d52c5f1
-source-git-commit: 727dddccd7b7cdff29a00ef6f0f2e82f14e5c851
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3330'
+source-wordcount: '3366'
 ht-degree: 1%
 
 ---
 
 # JEE에서 AEM Forms에 대해 지원되는 플랫폼 {#supported-platforms-for-aem-forms-on-jee}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ## 지원되는 플랫폼 {#supported-platforms}
 
@@ -73,7 +77,7 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
 <table> 
  <tbody> 
   <tr> 
-   <th><p><strong>플랫폼</strong></p> </th> 
+   <th><p><strong>Platform</strong></p> </th> 
    <th><p><strong>지원 수준</strong></p> </th> 
    <th><p><strong>지원되는 패치 정의</strong></p> </th> 
   </tr> 
@@ -104,7 +108,7 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong>플랫폼</strong></p> </td> 
+   <td><p><strong>Platform</strong></p> </td> 
    <td><p><strong> 설명</strong></p> </td> 
    <td><p><strong>지원 수준</strong></p> </td> 
   </tr> 
@@ -152,7 +156,7 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong>플랫폼</strong></p> </td> 
+   <td><p><strong>Platform</strong></p> </td> 
    <td><p><strong> 설명</strong></p> </td> 
    <td><p><strong>지원 수준 AEM 6.4</strong></p> </td> 
    <td><p><strong>JEE에서 지원 수준 AEM Forms 6.4</strong></p> </td> 
@@ -190,7 +194,7 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
  <tbody> 
   <tr> 
    <th>데이터베이스 </th> 
-   <th><p><strong>플랫폼</strong></p> </th> 
+   <th><p><strong>Platform</strong></p> </th> 
    <th><p><strong>지원되는 패치 정의</strong></p> </th> 
   </tr> 
   <tr> 
@@ -226,7 +230,7 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong> 플랫폼</strong></p> </td> 
+   <td><p><strong> Platform</strong></p> </td> 
    <td><p><strong>지원 수준</strong></p> </td> 
    <td><p><strong>지원되는 패치 정의</strong></p> </td> 
   </tr> 
@@ -259,7 +263,7 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
 <table> 
  <tbody> 
   <tr> 
-   <th><p><strong> 플랫폼</strong></p> </th> 
+   <th><p><strong> Platform</strong></p> </th> 
    <th><p><strong>지원 수준</strong></p> </th> 
    <th><p><strong>지원되는 패치 정의</strong></p> </th> 
   </tr> 
@@ -541,7 +545,7 @@ AEM Forms의 다음 하위 시스템은 [508년](https://www.section508.gov/) �
 <table> 
  <tbody> 
   <tr> 
-   <td>플랫폼</td> 
+   <td>Platform</td> 
    <td>최소 하드웨어 요구 사항</td> 
   </tr> 
   <tr> 
@@ -593,7 +597,7 @@ AEM Forms의 다음 하위 시스템은 [508년](https://www.section508.gov/) �
 <table> 
  <tbody> 
   <tr> 
-   <th><p><strong>플랫폼</strong></p> </th> 
+   <th><p><strong>Platform</strong></p> </th> 
    <th><p><strong>지원되는 패치 정의</strong></p> </th> 
   </tr> 
   <tr> 
@@ -748,7 +752,7 @@ AEM Forms의 다음 하위 시스템은 [508년](https://www.section508.gov/) �
 
 AEM Forms 앱은 다음 플랫폼에서 사용할 수 있습니다.
 
-| **플랫폼** | **지원되는 장치** |
+| **Platform** | **지원되는 장치** |
 |---|---|
 | Apple iOS | iOS 15.1 이상을 실행하는 Apple iPhone, iPad, iPad Air 및 iPad mini. |
 | Google Android | Android 4.4(Andoird Kit Kat) 이상 *[API 레벨 19 이상]*. AEM Forms 앱은 7, 10인치 삼성 갤럭시탭, 7인치 Google 넥서스, 인기 스마트폰으로 인증됐다. |

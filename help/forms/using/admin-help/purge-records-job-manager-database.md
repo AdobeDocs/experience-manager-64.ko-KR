@@ -1,8 +1,8 @@
 ---
 title: 작업 관리자 데이터베이스에서 레코드 제거
-seo-title: 작업 관리자 데이터베이스에서 레코드 제거
+seo-title: Purge records from the Job Manager database
 description: 프로세스 데이터가 크면 AEM Forms 성능이 저하될 수 있습니다. 레코드가 더 이상 필요하지 않은 경우 프로세스 데이터를 삭제하는 것이 좋습니다.
-seo-description: 프로세스 데이터가 크면 AEM Forms 성능이 저하될 수 있습니다. 레코드가 더 이상 필요하지 않은 경우 프로세스 데이터를 삭제하는 것이 좋습니다.
+seo-description: Large process data can result in lower AEM forms performance. It is good practice to purge process data when records are no longer necessary.
 uuid: cf214498-36e9-4dcc-b4d4-e7c46f80dbab
 contentOwner: admin
 content-type: reference
@@ -10,18 +10,22 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 69a406f2-4fa8-40bb-b671-7b0f5b6a2c4c
 exl-id: be2e2a4b-5aac-4612-81b6-b4bbb3036d77
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 0%
+source-wordcount: '504'
+ht-degree: 1%
 
 ---
 
-# 작업 관리자 데이터베이스 {#purge-records-from-the-job-manager-database}에서 레코드를 제거합니다.
+# 작업 관리자 데이터베이스에서 레코드 제거 {#purge-records-from-the-job-manager-database}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 장기간 프로세스가 호출될 때 생성되는 프로세스 데이터는 너무 커져서 AEM Forms 성능이 저하되고 불필요한 디스크 공간이 사용될 수 있습니다. 레코드가 더 이상 필요하지 않은 경우 프로세스 데이터를 삭제하는 것이 좋습니다.
 
-관리 콘솔을 사용하여 오래된 레코드를 한 번 지우거나 일반 자동 삭제를 스케줄링할 수 있습니다. 오래된 레코드를 삭제하는 다른 방법은 [프로세스 데이터 제거](/help/forms/using/admin-help/purging-process-data.md#purging-process-data)에서 설명합니다.
+관리 콘솔을 사용하여 오래된 레코드를 한 번 지우거나 일반 자동 삭제를 스케줄링할 수 있습니다. 사용되지 않는 레코드를 삭제하는 다른 방법은 [프로세스 데이터 삭제](/help/forms/using/admin-help/purging-process-data.md#purging-process-data).
 
 **작업 제거 스케줄러 페이지에 액세스**
 
@@ -54,7 +58,7 @@ ht-degree: 0%
 **자동 제거 일정 구성**
 
 1. 반복 간격 을 선택하고 제거 사이의 일 또는 주 수를 지정합니다.
-1. 완료된 레코드 삭제 필터 영역에서 레코드가 사용되지 않고 삭제할 준비가 된 것으로 간주되는 이후의 일 또는 주 수를 지정합니다. 값을 `0`(으)로 설정할 수 없습니다.
+1. 완료된 레코드 삭제 필터 영역에서 레코드가 사용되지 않고 삭제할 준비가 된 것으로 간주되는 이후의 일 또는 주 수를 지정합니다. 값을 로 설정할 수 없습니다 `0`.
 
    >[!NOTE]
    >

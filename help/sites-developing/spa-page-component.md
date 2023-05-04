@@ -10,14 +10,18 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 5d607b9f-584b-4ffc-ab0b-d0318dc69dec
 exl-id: 04520447-6ea8-4190-8dc3-46bb23f74c0c
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 3%
+source-wordcount: '778'
+ht-degree: 10%
 
 ---
 
 # SPA 페이지 구성 요소{#spa-page-component}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 SPA에서 페이지 구성 요소는 하위 구성 요소의 HTML 요소를 제공하지 않고 대신 SPA 프레임워크에 전달합니다. 이 문서에서는 이 방법이 SPA의 페이지 구성 요소를 고유하게 만드는 방법을 설명합니다.
 
@@ -42,9 +46,9 @@ SPA용 페이지 구성 요소에서는 JSP 또는 HTL 파일 및 리소스 개�
 
 포함 제한 사항 을 잊지 마십시오 `cq.authoring.pagemodel.messaging` 카테고리를 사용하여 페이지 편집기 컨텍스트로 붙여넣을 수 있습니다.
 
-## 통신 데이터 유형 {#communication-data-type}
+## 커뮤니케이션 데이터 유형 {#communication-data-type}
 
-통신 데이터 유형은 다음을 사용하여 AEM 페이지 구성 요소 내에 HTML 요소를 설정합니다. `data-cq-datatype` 속성을 사용합니다. 통신 데이터 유형이 JSON으로 설정되면 GET 요청이 구성 요소의 Sling 모델 종단점에 도달합니다. 페이지 편집기에서 업데이트가 발생하면 업데이트된 구성 요소의 JSON 표현이 페이지 모델 라이브러리로 전송됩니다. 그러면 페이지 모델 라이브러리에서는 업데이트 SPA에 대해 경고합니다.
+통신 데이터 유형은 다음을 사용하여 AEM 페이지 구성 요소 내에 HTML 요소를 설정합니다. `data-cq-datatype` 속성을 사용합니다. 통신 데이터 유형이 JSON으로 설정되면 GET 요청이 구성 요소의 Sling 모델 종단점에 도달합니다. 업데이트가 페이지 편집기에서 발생하면 업데이트된 구성 요소의 JSON 표현식이 페이지 모델 라이브러리에 전송됩니다. 그러면 페이지 모델 라이브러리에서는 업데이트 SPA에 대해 경고합니다.
 
 **SPA 페이지 구성 요소 -`body.html`**
 

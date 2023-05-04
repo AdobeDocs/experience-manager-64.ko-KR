@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 619de2e4-d7bd-4ca6-9763-1efa8b2dec05
 exl-id: ba604611-03cb-4f97-8ff6-1a559b52263b
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2848'
-ht-degree: 1%
+source-wordcount: '2884'
+ht-degree: 2%
 
 ---
 
 # 클라이언트측 라이브러리 사용{#using-client-side-libraries}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 최신 웹 사이트는 복잡한 JavaScript 및 CSS 코드로 구동되는 클라이언트측 처리에 주로 의존합니다. 이 코드의 제공을 구성하고 최적화하는 것은 복잡한 문제가 될 수 있습니다.
 
@@ -339,7 +343,7 @@ AEM은 플러그형 전처리기 및 [유이 압축기](https://github.com/yui/y
 >
 >축소된 라이브러리를 클라이언트 라이브러리에 배치하지 마십시오. 대신 원시 라이브러리를 제공하고 축소가 필요한 경우 전처리자의 옵션을 사용합니다.
 
-### 사용량 {#usage}
+### 사용 {#usage}
 
 클라이언트 라이브러리 또는 시스템 전체에 대해 전처리기 구성을 구성할 수 있습니다.
 

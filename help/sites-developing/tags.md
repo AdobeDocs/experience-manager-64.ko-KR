@@ -1,32 +1,36 @@
 ---
-title: 태깅
-seo-title: 태깅
+title: 태그 지정
+seo-title: Tagging
 description: 태깅을 사용하면 컨텐츠를 분류하고 구성할 수 있습니다
-seo-description: 태깅을 사용하면 컨텐츠를 분류하고 구성할 수 있습니다
+seo-description: Tagging allows content to be categorized and organized
 uuid: fbbce525-ebc4-484b-bec9-2d68314cf15a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 2d0835e0-5602-49a9-b9ad-636ce5a8ad2a
-feature: 태깅
+feature: Tagging
 exl-id: 634fecc8-5132-4e8f-a2dd-7e8c9b74c79b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 21%
+source-wordcount: '136'
+ht-degree: 22%
 
 ---
 
-# 태깅{#tagging}
+# 태그 지정{#tagging}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 태깅을 사용하면 컨텐츠를 분류하고 구성할 수 있습니다. 태그는 네임스페이스 및 분류법으로 분류할 수 있습니다.
 
 * 태그 작성 및 관리 방법과 컨텐츠 태그가 적용되는 항목에 대한 내용은 [태그 관리](/help/sites-administering/tags.md)를 참조하십시오.
-* 컨텐츠 태깅에 대한 자세한 내용은 [태그 사용](/help/sites-authoring/tags.md)을 참조하십시오.
+* 자세한 내용은 [태그 사용](/help/sites-authoring/tags.md) 컨텐츠 태깅에 대한 정보입니다.
 
 개발자는 다음 정보를 사용할 수 있습니다.
 
-* [AEM 태깅 프레임워크](/help/sites-developing/framework.md)  - 태깅에 사용되는 노드 및 속성에 대한 설명입니다
+* [AEM 태깅 프레임워크](/help/sites-developing/framework.md) - 태깅에 사용되는 노드 및 속성에 대한 설명입니다
 
-* [AEM 애플리케이션에 태깅 작성](/help/sites-developing/building.md)  - 클라이언트측 및 서버측 코드에서 태깅 프레임워크와 작동하는 API에 대한 설명입니다
+* [AEM 애플리케이션에 태깅 작성](/help/sites-developing/building.md) - 클라이언트측 및 서버측 코드에서 태깅 프레임워크와 작동하는 API에 대한 설명입니다

@@ -1,28 +1,32 @@
 ---
 title: 메타데이터 스키마 참조
-description: 'Dublin Core, IPTC 및 기타 메타데이터 스키마를 포함하여 자산 메타데이터를 설명하는 표준 규칙에 대해 알아봅니다. '
+description: Dublin Core, IPTC 및 기타 메타데이터 스키마를 포함하여 자산 메타데이터를 설명하는 표준 규칙에 대해 알아봅니다.
 contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 883bebc6-8bbc-43b1-91e5-9e2bf2470b6e
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 2%
+source-wordcount: '428'
+ht-degree: 3%
 
 ---
 
 # 메타데이터 스키마 참조 {#metadata-schemata-reference}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 다음 참조에는 특정 메타데이터 스키마(알파벳 순서로)에 대한 정보와 속성 및 해당 정의 목록이 포함되어 있습니다.
 
 ## 더블린 코어 {#dublin-core}
 
-더블린 코어 메타데이터는 자산을 쉽게 찾을 수 있도록 자산을 설명하는 표준화된 규칙 세트를 제공합니다. [!DNL Experience Manager] 자산에서 Dublin Core는 비디오, 사운드, 이미지 및 문서를 포함한 디지털 자산을 설명합니다.
+더블린 코어 메타데이터는 자산을 쉽게 찾을 수 있도록 자산을 설명하는 표준화된 규칙 세트를 제공합니다. in [!DNL Experience Manager] 자산에서 Dublin Core는 비디오, 사운드, 이미지 및 문서를 포함한 디지털 자산에 대해 설명합니다.
 
 단순 DCMES(Dublin Core Metadata Element Set)에는 다음 표에 나열된 15개의 메타데이터 요소가 포함되어 있습니다. 각 더블린 코어 요소는 선택 사항이며 반복될 수 있습니다. 미디어 유형별 메타데이터에서처럼 더블린 코어 메타데이터 정보를 추가하거나 삭제할 수 있습니다.
 
-DCMES 외에도 Dublin Core Initiative에서 만든 다른 메타데이터 요소가 있습니다. 자세한 내용은 [Dublin Core Initiative](https://dublincore.org/)를 참조하십시오.
+DCMES 외에도 Dublin Core Initiative에서 만든 다른 메타데이터 요소가 있습니다. 자세한 내용은 [더블린 코어 이니셔티브](https://dublincore.org/) 추가 정보.
 
 | 속성 | 설명 |
 |---|---|

@@ -1,8 +1,8 @@
 ---
 title: JEE에서 AEM Forms에 대한 일반 보안 고려 사항
-seo-title: JEE에서 AEM Forms에 대한 일반 보안 고려 사항
+seo-title: General Security Considerations for AEM Forms on JEE
 description: JEE 환경에서 AEM Forms 강화 준비 방법을 알아봅니다.
-seo-description: JEE 환경에서 AEM Forms 강화 준비 방법을 알아봅니다.
+seo-description: Learn how to prepare for hardening your AEM Forms on JEE environment.
 uuid: c5f6ffc7-b987-4541-ab60-e97b4ff5b2a4
 content-type: reference
 topic-tags: Security
@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 38132225-ecae-4887-8f3d-0b3845059130
 role: Admin
 exl-id: cde40670-ce9d-4b96-92d3-9e56cb15bdce
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1127'
 ht-degree: 1%
 
 ---
 
 # JEE에서 AEM Forms에 대한 일반 보안 고려 사항 {#general-security-considerations-for-aem-forms-on-jee}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 JEE 환경에서 AEM Forms 강화 준비 방법을 알아봅니다.
 
@@ -103,7 +107,7 @@ JEE에서 AEM Forms이 지원하는 애플리케이션 서버에 대한 보안 �
  <tbody>
   <tr> 
    <td><p>Oracle WebLogic®</p> </td> 
-   <td><p><a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>에서 WebLogic Security 이해 를 검색하십시오.</p> </td> 
+   <td><p>에서 WebLogic Security 이해 검색 <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td> 
   </tr> 
   <tr> 
    <td><p>IBM WebSphere®</p> </td> 
@@ -149,12 +153,12 @@ JEE에서 AEM Forms이 지원하는 데이터베이스에 대한 보안 정보�
   </tr> 
   <tr> 
    <td><p>Oracle® 12c</p> </td> 
-   <td><p><a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle 12g 설명서에서 보안 장</a>을 참조하십시오</p> </td> 
+   <td><p>의 보안 장을 참조하십시오. <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle 12g 설명서</a></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-이 표에서는 JEE에서 AEM Forms 구성 프로세스 중에 열어야 하는 기본 포트를 설명합니다. https를 통해 연결하는 경우 포트 정보와 IP 주소를 적절하게 조정합니다. 포트 구성에 대한 자세한 내용은 애플리케이션 서버의 *AEM Forms 설치 및 배포* 문서를 참조하십시오.
+이 표에서는 JEE에서 AEM Forms 구성 프로세스 중에 열어야 하는 기본 포트를 설명합니다. https를 통해 연결하는 경우 포트 정보와 IP 주소를 적절하게 조정합니다. 포트 구성에 대한 자세한 내용은 *JEE에 AEM Forms 설치 및 배포* 애플리케이션 서버에 대한 문서입니다.
 
 <table> 
  <thead> 
@@ -166,11 +170,11 @@ JEE에서 AEM Forms이 지원하는 데이터베이스에 대한 보안 정보�
  <tbody>
   <tr> 
    <td><p>JBoss</p> </td> 
-   <td><p>8080년</p> </td> 
+   <td><p>8080</p> </td> 
   </tr> 
   <tr> 
    <td><p>WebLogic</p> </td> 
-   <td><p>7001년</p> </td> 
+   <td><p>7001</p> </td> 
   </tr> 
   <tr> 
    <td><p>WebLogic 관리 서버</p> </td> 
@@ -178,23 +182,23 @@ JEE에서 AEM Forms이 지원하는 데이터베이스에 대한 보안 정보�
   </tr> 
   <tr> 
    <td><p>WebSphere</p> </td> 
-   <td><p>9060에서 전역 보안이 활성화되어 있으면 기본 SSL 포트 값은 9043입니다.</p> <p>9080년</p> </td> 
+   <td><p>9060에서 전역 보안이 활성화되어 있으면 기본 SSL 포트 값은 9043입니다.</p> <p>9080</p> </td> 
   </tr> 
   <tr> 
    <td><p>BAM 서버</p> </td> 
-   <td><p>7001년</p> </td> 
+   <td><p>7001</p> </td> 
   </tr> 
   <tr> 
    <td><p>SOAP</p> </td> 
-   <td><p>888년</p> </td> 
+   <td><p>8880</p> </td> 
   </tr> 
   <tr> 
    <td><p>MySQL</p> </td> 
-   <td><p>3306년</p> </td> 
+   <td><p>3306</p> </td> 
   </tr> 
   <tr> 
    <td><p>Oracle</p> </td> 
-   <td><p>1521년</p> </td> 
+   <td><p>1521</p> </td> 
   </tr> 
   <tr> 
    <td><p>DB2</p> </td> 
@@ -202,7 +206,7 @@ JEE에서 AEM Forms이 지원하는 데이터베이스에 대한 보안 정보�
   </tr> 
   <tr> 
    <td><p>SQL Server</p> </td> 
-   <td><p>1433년</p> </td> 
+   <td><p>1433</p> </td> 
   </tr> 
   <tr> 
    <td><p>LDAP</p> </td> 
@@ -221,9 +225,9 @@ JBoss Application Server는 기본 HTTP 포트로 8080을 사용합니다. 또�
 
    클러스터 설치: [JBoss 루트]/domain/configuration/domain.xml
 
-1. **&lt;socket-binding>** 태그의 **port** 속성 값을 사용자 지정 포트 번호로 변경합니다. 예를 들어, 다음은 포트 8090을 사용합니다.
+1. 값 변경 **포트** 의 속성 **&lt;socket-binding>** 태그로 지정합니다. 예를 들어, 다음은 포트 8090을 사용합니다.
 
-   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot; />
+   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
 
 1. 파일을 저장하고 닫습니다.
 1. JBoss 애플리케이션 서버를 다시 시작합니다.
@@ -244,13 +248,13 @@ AEM Forms on JEE는 JEE 데이터베이스의 AEM Forms을 사용하여 정책 �
 
 JEE에서 AEM Forms을 실행하는 데 사용되는 애플리케이션 서버에는 애플리케이션 서버에 구성된 데이터 소스를 통해 데이터베이스에 액세스할 수 있는 자체 구성이 필요합니다. 응용 프로그램 서버가 해당 데이터 소스 구성 파일의 일반 텍스트로 데이터베이스 암호를 표시하지 않는지 확인합니다.
 
-lc_[database].xml 파일에는 명확한 텍스트 형식의 암호를 포함할 수 없습니다. 애플리케이션 서버의 이러한 암호를 암호화하는 방법은 애플리케이션 서버 공급업체에 문의하십시오.
+lc_[데이터베이스].xml 파일에는 암호를 일반 텍스트 형식으로 포함할 수 없습니다. 애플리케이션 서버의 이러한 암호를 암호화하는 방법은 애플리케이션 서버 공급업체에 문의하십시오.
 
 >[!NOTE]
 >
 >JEE JBoss 턴키 설치 프로그램의 AEM Forms은 데이터베이스 암호를 암호화합니다.
 
-IBM WebSphere Application Server 및 Oracle WebLogic Server는 기본적으로 데이터 소스 암호를 암호화할 수 있습니다. 그러나 애플리케이션 서버 설명서에서 이 문제가 발생하는지 확인합니다.
+IBM WebSphere Application Server 및 WebLogic Server는 기본적으로 데이터 소스 암호를 암호화할 수 있습니다. 그러나 애플리케이션 서버 설명서에서 이 문제가 발생하는지 확인합니다.
 
 ### Trust Store에 저장된 개인 키 보호 {#protecting-the-private-key-stored-in-trust-store}
 

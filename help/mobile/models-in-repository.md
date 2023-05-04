@@ -1,45 +1,49 @@
 ---
 title: 저장소의 모델
-seo-title: 저장소의 모델
-description: 'null'
-seo-description: 'null'
+seo-title: Models in Repository
+description: null
+seo-description: null
 uuid: 54f81180-4178-4e33-a6f0-e9e6ea50798e
 contentOwner: User
 content-type: reference
 discoiquuid: ae1a72f4-d8c1-4c75-ba2c-7322f3743b17
 noindex: true
 redirecttarget: /content/help/en/experience-manager/6-4/mobile/using/administer-mobile-apps
-source-git-commit: 5fe3d533e51a0536064b22e9549578bb5ba754a4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1332'
-ht-degree: 1%
+source-wordcount: '1364'
+ht-degree: 2%
 
 ---
 
 
 # 저장소의 모델{#models-in-repository}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
 모델에는 궁극적으로 컨텐츠 서비스에서 렌더링할 속성을 정의하는 데이터 유형 세트가 포함되어 있습니다. 또한 모델은 데이터 무결성을 적용하기 위해 다른 모델 간의 관계를 정의합니다.
 
 개발자는 리포지토리의 모델 구조를 잘 알고 있어야 합니다. 앱 요구 사항에 따라 고유한 모델 및 엔티티를 만들 수 있습니다.
 
-## 모델 유형 만들기 {#creating-model-types}
+## 모델 유형 생성 {#creating-model-types}
 
-*/libs/settings/mobileapps/model-types* 아래에 두 가지 시스템 제공 모델 유형이 있습니다. 시스템 모델 유형을 재정의하려면 재정의가 수행되도록 하는 구성 노드 아래에 *mobileapps/model-types* 노드를 만들어야 합니다.
+아래에 두 가지 시스템 제공 모델 유형이 있습니다 */libs/settings/mobileapps/model-types*. 시스템 모델 유형을 재정의하려면 *mobileapps/model-types* 무시를 수행할 구성 노드 아래에 노드를 만들어야 합니다.
 
-예를 들어, */conf/myconf1* 및 */conf/myconf2*&#x200B;에 구성을 만들고 *conf1*&#x200B;에서만 시스템 모델 유형을 재정의하려면 *conf1* 설정 아래에 *mobileapps/model-types* 노드를 만듭니다.
+예를 들어, */conf/myconf1* 및 */conf/myconf2* 에서 시스템 모델 유형을 재정의하려는 경우 *conf1* 오직, *mobileapps/model-types* 노드 아래의 설정 *conf1*.
 
-모델에 데이터 유형을 추가할 수 있도록 하려면 모델 유형에 &#39;cq:Page&#39; 유형의 &#39;scaffolding&#39;이라는 하위 노드와 *wcm/scaffolding/components/scaffolding*&#x200B;의 리소스 유형이 있어야 합니다.
+모델에 데이터 유형을 추가할 수 있도록 하려면 모델 유형에 &#39;cq:Page&#39; 유형의 &#39;scaffolding&#39;이라는 하위 노드와 *wcm/scaffolding/components/scaffolding*.
 
-스캐폴딩 페이지에는 이 유형에서 만든 데이터 형식 모델을 사용할 수 있음을 나타내는 *dataTypesConfig* 속성도 포함되어야 합니다.
+스캐폴딩 페이지에는 *dataTypesConfig* 이 형식에서 만든 데이터 형식 모델을 나타내는 PageContent 노드의 속성을 사용할 수 있습니다.
 
 >[!NOTE]
 >
->**Scaffolding**&#x200B;은 모델을 기반으로 엔티티가 편집할 수 있는 데이터 유형을 정의하는 페이지입니다. 각 데이터 유형은 UI에 필드가 표시되는 방식과 데이터 값이 유지되는 방식을 정의하도록 구성할 수도 있습니다.
+>A **스캐폴딩** 는 모델을 기반으로 엔티티가 편집할 수 있는 데이터 유형을 정의하는 페이지입니다. 각 데이터 유형은 UI에 필드가 표시되는 방식과 데이터 값이 지속되는 방식을 정의하도록 구성할 수도 있습니다.
 
 ### 데이터 유형 구성 {#data-types-config}
 
@@ -49,7 +53,7 @@ ht-degree: 1%
 |---|---|
 | fieldIcon | 데이터 유형을 나타내는 CoralUI 아이콘 클래스 |
 | fieldPropResourceType | 데이터 유형을 구성하기 위한 모든 속성을 렌더링하는 구성 요소 |
-| fieldProperties | fieldPropResourceType이 *mobileapps/caas/gui/components/models/editor/datatypes/field*&#x200B;일 때 사용되는 속성 구성 요소의 다중 값 목록입니다 |
+| fieldProperties | fieldPropResourceType이 *mobileapps/caas/gui/components/models/editor/datatypes/field* |
 | fieldResourceType | resourceType데이터 형식(즉, 엔티티 편집기에서 속성을 렌더링할 구성 요소)에 대해 지속된 노드의 유형입니다 |
 | fieldViewResourceType | 모델 편집기 보기에서 데이터 유형을 렌더링하는 데 사용할 구성 요소입니다(이 속성을 생략하면 fieldResourceType이 사용됩니다.) |
 | fieldTitle | 모델 편집기에 표시할 데이터 유형의 이름입니다. |
@@ -60,11 +64,11 @@ ht-degree: 1%
 
 &#39;dataTypesConfig&#39; 속성은 Sling 리소스 병합을 지원합니다. 즉, 시스템 모델 유형(또는 사용자 지정 모델 유형)에서 사용되는 데이터 유형은 오버레이 노드를 사용하여 사용자 지정할 수 있습니다.
 
-*/libs/settings/mobileapps/mobileapps/mobiledapps/formbuilderconfig/datatypes*&#x200B;의 오버레이를 만든 다음 원하는 대로 사용자 지정해야 합니다.
+의 오버레이 */libs/settings/mobileapps/mobiledapps/mobilederconfig/datatypes* 을(를) 만들고 원하는 대로 사용자 지정해야 합니다.
 
 예를 들어 fieldResourceType을 사용자 지정 구성 요소로 변경하기 위해 String 데이터 유형에 대한 오버레이를 추가할 수 있습니다.
 
-Sling 리소스 병합에 대한 자세한 내용은 [AEM](/help/sites-developing/sling-resource-merger.md)에서 Sling 리소스 합병 사용 을 참조하십시오.
+Sling 리소스 병합에 대한 자세한 내용은 다음을 참조하십시오. [AEM에서 Sling Resource Merger 사용](/help/sites-developing/sling-resource-merger.md).
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
 
@@ -74,7 +78,7 @@ Sling 리소스 병합에 대한 자세한 내용은 [AEM](/help/sites-developin
 
 사용자 지정 데이터 유형의 예로 &#39;/libs/mobileapps/caas/components/form/contentreference&#39;를 참조하십시오.
 
-모든 기본 데이터 형식은 기존 Granite 양식 구성 요소를 사용합니다. 다음을 참조하십시오.[https://docs.adobe.com/docs/en/aem/6-3/develop/ref/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/index.html](https://docs.adobe.com/docs/en/aem/6-3/develop/ref/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/index.html)
+모든 기본 데이터 형식은 기존 Granite 양식 구성 요소를 사용합니다. 다음을 참조하십시오. [https://docs.adobe.com/docs/en/aem/6-3/develop/ref/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/index.html](https://docs.adobe.com/docs/en/aem/6-3/develop/ref/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/index.html)
 
 그런 다음 모델 편집기에서 사용할 데이터 유형 구성에 모든 사용자 지정 데이터 유형을 추가할 수 있습니다.
 
@@ -84,9 +88,9 @@ Sling 리소스 병합에 대한 자세한 내용은 [AEM](/help/sites-developin
 
 모델을 만드는 작업은 현재 구성을 기반으로 허용되는 모델 유형을 선택한 다음 제목과 설명을 제공하는 것으로 구성됩니다.
 
-대시보드에서 모델을 만들고 관리하는 방법에 대한 자세한 내용은 모바일 앱용 작성 섹션에서 [모델 만들기](/help/mobile/administer-mobile-apps.md)를 참조하십시오.
+대시보드에서 모델을 만들고 관리하는 방법에 대한 자세한 내용은 [모델 생성](/help/mobile/administer-mobile-apps.md) 를 클릭합니다.
 
-### 모델 {#properties-of-a-model} 속성
+### 모델의 속성 {#properties-of-a-model}
 
 다음 표에서는 모델에 대해 정의된 속성을 보여 줍니다.
 
@@ -101,9 +105,9 @@ Sling 리소스 병합에 대한 자세한 내용은 [AEM](/help/sites-developin
 
 >[!NOTE]
 >
->*허용되는 하위* 및 *허용되는 부모* 속성은 페이지 템플릿과 동일한 규칙을 따릅니다. 자세한 내용은 [페이지 템플릿](/help/sites-developing/page-templates-static.md)을 참조하십시오.
+>다음 *허용 가능한 어린이* 및 *허용 가능한 부모* 속성은 페이지 템플릿과 동일한 규칙을 따릅니다. 자세한 내용은 [페이지 템플릿](/help/sites-developing/page-templates-static.md).
 >
->*모델 유형* 속성을 참조하면서 모든 모델은 *mobileapps/caas/components/data/entity*&#x200B;의 슈퍼 유형이 있어야 하지만 컨텐츠 전달을 사용자 지정할 수 있는 하위 유형이 있을 수 있습니다. 모든 모델 유형이 고유한지 확인하면 컨텐츠 서비스 클라이언트가 데이터의 개체를 구분하는 데 도움이 될 수 있습니다.
+>에 대한 참조 *모델 유형* 속성, 모든 모델에는 *mobileapps/caas/components/data/entity* 그러나 컨텐츠 전달을 사용자 지정할 수 있는 하위 유형이 있을 수 있습니다. 모든 모델 유형이 고유한지 확인하면 컨텐츠 서비스 클라이언트가 데이터의 개체를 구분하는 데 도움이 될 수 있습니다.
 
 ### 모델 편집 {#editing-a-model}
 
@@ -113,26 +117,26 @@ Sling 리소스 병합에 대한 자세한 내용은 [AEM](/help/sites-developin
 
 >[!NOTE]
 >
->모든 모델은 템플릿이므로 모든 AEM 템플릿 규칙을 따릅니다. 이렇게 하면 *allowedParent*&#x200B;및 *allowedChildren* 속성과 같은 속성을 사용할 수 있습니다. 모델을 기반으로 새 엔티티를 생성할 때 효과적입니다. 템플릿 규칙을 사용하면 엔티티가 계층 구조에 따라 특정 모델만 기반으로 할 수 있습니다.
+>모든 모델은 템플릿이므로 모든 AEM 템플릿 규칙을 따릅니다. 이렇게 하면 다음과 같은 속성을 사용할 수 있습니다. *allowedParent*&#x200B;및 *allowedChildren* 속성을 사용합니다. 모델을 기반으로 새 엔티티를 생성할 때 효과적입니다. 템플릿 규칙을 사용하면 엔티티가 계층 구조에 따라 특정 모델만 기반으로 할 수 있습니다.
 >
->대시보드에서 모델을 편집하는 방법에 대한 자세한 내용은 모바일 앱용 작성 섹션에서 [모델 만들기](/help/mobile/administer-mobile-apps.md)를 참조하십시오.
+>대시보드에서 모델 편집에 대한 자세한 내용은 [모델 생성](/help/mobile/administer-mobile-apps.md) 를 클릭합니다.
 
 ### 시스템 모델 {#system-models}
 
 간단한 컨텐츠 재사용을 위해 사전 정의된 시스템 모델의 두 유형이 제공됩니다. 이러한 모델은 편집할 수 없습니다.
 
-**페이지** 모델페이지 모델은 콘텐츠 서비스별로 전달하기 위해 사이트에서 기존 콘텐츠를 다시 사용하는 빠른 방법을 제공합니다.
+**페이지 모델** 페이지 모델은 콘텐츠 서비스별로 게재하기 위해 사이트의 기존 콘텐츠를 다시 사용하는 빠른 방법을 제공합니다.
 
-페이지 모델을 기반으로 하는 엔티티의 resourceType은 다음과 같습니다.mobileapps/caas/components/data/pages
+페이지 모델을 기반으로 하는 엔티티의 resourceType은 다음과 같습니다. mobileapps/caas/components/data/pages
 
-경로:사이트 페이지의 경로입니다. 이 경로 및 그 하위 경로의 콘텐츠는 콘텐츠 서비스 핸들러에 의해 렌더링됩니다.
+경로: 사이트 페이지의 경로입니다. 이 경로 및 그 하위 경로의 콘텐츠는 콘텐츠 서비스 핸들러에 의해 렌더링됩니다.
 
-**자산** 모델Assets 모델은 콘텐츠 서비스에서 전달하는 데 자산의 기존 콘텐츠를 다시 사용하는 빠른 방법을 제공합니다.
+**자산 모델** 자산 모델은 콘텐츠 서비스에서 전달하는 데 자산의 기존 콘텐츠를 다시 사용하는 빠른 방법을 제공합니다.
 
-페이지 모델을 기반으로 하는 엔티티의 resourceType은 다음과 같습니다.*mobileapps/caas/components/data/assets*
+페이지 모델을 기반으로 하는 엔티티의 resourceType은 다음과 같습니다. *mobileapps/caas/components/data/assets.*
 
-자산 목록:자산의 경로 목록입니다. 각 자산은 resourceType *wcm/foundation/components/image*&#x200B;의 하위 엔티티 노드로 추가됩니다.
+자산 목록: 자산의 경로 목록입니다. 각 자산이 resourceType이 있는 하위 엔티티 노드로 추가됩니다. *wcm/foundation/components/image*.
 
 >[!NOTE]
 >
->대시보드에서 모델을 만드는 데 이러한 템플릿을 사용하는 방법에 대한 자세한 내용은 모바일 앱용 작성 섹션에서 [모델 만들기](/help/mobile/administer-mobile-apps.md) 를 참조하십시오.
+>대시보드에서 모델을 만드는 데 이러한 템플릿을 사용하는 방법에 대한 자세한 내용은 [모델 생성](/help/mobile/administer-mobile-apps.md) 를 클릭합니다.

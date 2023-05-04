@@ -5,18 +5,22 @@ contentOwner: AG
 feature: Developer Tools
 role: Developer
 exl-id: 0291690b-874a-483d-901f-f02cb6d8ab28
-source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 0%
+source-wordcount: '293'
+ht-degree: 2%
 
 ---
 
 # 자산 사용자 지정 및 확장 {#customizing-and-extending-assets}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 자산 편집기는 Adobe Enterprise Manager 웹 사이트의 사용자가 저장소에서 디지털 자산을 찾고 보고 조작하는 데 사용할 수 있는 기본 액세스 지점입니다.
 
-[!DNL Experience Manager] 개발자는 다양한 방법으로 자산 편집기를 사용자 지정하고 확장할 수 있으며, 특히 맞춤형 인터페이스와 기능 세트를 사용하여 사용자를 표시할 수 있습니다.
+로서의 [!DNL Experience Manager] 개발자는 다양한 방법으로 자산 편집기를 사용자 지정하고 확장할 수 있으며, 특히 맞춤형 인터페이스와 기능 세트를 사용하여 사용자를 표시할 수 있습니다.
 
 이 기능의 다음 측면을 사용자 정의하거나 개선할 수 있습니다.
 
@@ -33,10 +37,10 @@ ht-degree: 0%
 
 * 로고: 인터페이스에 고유한 조직의 로고를 추가할 수 있습니다.
 * 색상 및 글꼴: 인터페이스에 사용된 색상과 글꼴을 변경할 수 있습니다.
-* HTML 코드: 보다 완벽한 사용자 지정을 위해 인터페이스를 정의하는 기본 HTML 코드를 변경할 수 있습니다.
+* HTML 코드: 보다 철저한 사용자 지정을 위해 인터페이스를 정의하는 기본 HTML 코드를 변경할 수 있습니다.
 
 ## 표현물 사용자 지정 {#customizing-renditions}
 
-[!DNL Experience Manager Assets] 용어에서 표현물은 자산이 표시되는 양식입니다. 일반적으로 특정 자산에는 여러 표현물이 있을 수 있습니다. 예를 들어, 전체 색상 이미지에는 원래 크기의 렌디션이 하나 있고, 크기가 축소된 표현물과 크기가 조절된 표현물과 회색 음영으로 변환된 표현물이 있을 수 있습니다.
+in [!DNL Experience Manager Assets] 용어 표현물은 자산이 표시되는 양식입니다. 일반적으로 특정 자산에는 여러 표현물이 있을 수 있습니다. 예를 들어, 전체 색상 이미지에는 원래 크기의 렌디션이 하나 있고, 크기가 축소된 표현물과 크기가 조절된 표현물과 회색 음영으로 변환된 표현물이 있을 수 있습니다.
 
 특정 자산에서 사용할 수 있는 표현물은 사용자 지정할 수 있으며 새 표현물을 만들 수 있습니다.

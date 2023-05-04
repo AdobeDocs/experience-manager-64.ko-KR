@@ -1,8 +1,8 @@
 ---
 title: AEM Mobile 애플리케이션 대시보드
-seo-title: AEM Mobile 애플리케이션 대시보드
+seo-title: AEM Mobile Application Dashboard
 description: AEM Mobile Application Dashboard 또는 Control Center에서 애플리케이션 및 모바일 앱 컨텐츠를 관리할 수 있습니다. 자세한 내용은 이 페이지를 참조하십시오.
-seo-description: AEM Mobile Application Dashboard 또는 Control Center에서 애플리케이션 및 모바일 앱 컨텐츠를 관리할 수 있습니다. 자세한 내용은 이 페이지를 참조하십시오.
+seo-description: You can manage your application and mobile app content from AEM Mobile Application Dashboard or the Control Center. Follow this page to learn more.
 uuid: 0d182989-eb83-4207-a8e0-050edbf98ff9
 contentOwner: User
 content-type: reference
@@ -10,18 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 42a38399-f5a7-4d2f-aa6a-d409a7ec60f7
 exl-id: 538d6c02-acee-4774-ab3f-1cf152bb42da
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 4%
+source-wordcount: '633'
+ht-degree: 5%
 
 ---
 
 # AEM Mobile 애플리케이션 대시보드 {#aem-mobile-application-dashboard}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [자세히 알아보기](/help/sites-developing/spa-overview.md).
 
 AEM Mobile Application Dashboard 또는 Control Center에서 애플리케이션 및 모바일 앱 컨텐츠를 관리할 수 있습니다.
 
@@ -37,9 +41,9 @@ Control Center의 각 타일로 드릴다운하여 &#39;...&#39;를 클릭하여
 
 마지막으로 관리자는 업데이트된 앱 콘텐츠를 전략적으로 게시합니다.
 
-## 앱 타일 관리 {#the-manage-app-tile}
+## 앱 관리 타일 {#the-manage-app-tile}
 
-**앱 관리** 타일에는 사용 가능한 애플리케이션 정보가 표시됩니다.
+다음 **앱 관리** 타일에는 사용 가능한 애플리케이션 정보가 표시됩니다.
 
 * 제목
 * 설명
@@ -51,7 +55,7 @@ Control Center의 각 타일로 드릴다운하여 &#39;...&#39;를 클릭하여
 
 ## 연결 관리 타일 {#the-manage-connection-tile}
 
-**연결 관리** 타일에는 AEM Mobile On-demand Services 연결 정보가 표시됩니다.
+다음 **연결 관리** 타일에는 AEM Mobile On-demand Services 연결 정보가 표시됩니다.
 
 * 클라우드 구성 이름
 * 프로젝트 이름 및 ID
@@ -61,7 +65,7 @@ Control Center의 각 타일로 드릴다운하여 &#39;...&#39;를 클릭하여
 >
 >오른쪽 상단에 있는 톱니바퀴를 클릭하여 Mobile On-Demand Cloud 구성을 설정합니다.
 >
->자세한 내용은 [Mobile On-Demand Services 구성](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)을 참조하십시오.
+>자세한 내용은 [Mobile On-Demand Services 구성](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) 자세한 내용
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -77,60 +81,60 @@ Control Center의 각 타일로 드릴다운하여 &#39;...&#39;를 클릭하여
 
 ### 배너 관리 타일 {#the-manage-banners-tile}
 
-**배너 관리** 타일을 사용하면 배너의 콘텐츠를 관리할 수 있습니다. 배너에 대해 다음 정보가 표시됩니다.
+다음 **배너 관리** 타일에서는 배너의 콘텐츠를 관리할 수 있습니다. 배너에 대해 다음 정보가 표시됩니다.
 
 * 이미지
-* **제목**:배너 이름
-* **수정됨**:AEM에서 마지막으로 수정됨
-* **업로드됨**:AEM에서 업로드됨
-* **게시됨**:AEM에서 마지막으로 게시된 요청
-* **소스**:소스(Mobile On Demand에서 로컬 또는 원격 AEM)
+* **제목**: 배너 이름
+* **수정됨**: AEM에서 마지막으로 수정됨
+* **업로드됨**: AEM에서 업로드됨
+* **게시됨**: AEM에서 마지막으로 게시된 요청
+* **소스**: 소스(Mobile On Demand에서 로컬 또는 원격 AEM)
 
-다음 이미지는 AEM Mobile Application Dashboard의 **배너 관리** 타일을 보여줍니다.
+다음 이미지는 **배너 관리** AEM Mobile 애플리케이션 대시보드의 타일:
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
 >[!NOTE]
 >
->배너를 만들거나, 삭제하거나, 업데이트하려면 **[배너 관리](/help/mobile/mobile-on-demand-managing-banners.md)**&#x200B;를 참조하십시오.
+>자세한 내용은 **[배너 관리](/help/mobile/mobile-on-demand-managing-banners.md)** 배너 만들기, 삭제 또는 업데이트.
 
 ### 문서 관리 타일 {#the-manage-articles-tile}
 
-**문서 관리** 타일을 사용하면 문서에 대한 컨텐츠를 관리할 수 있습니다. 문서에 대해 다음 정보가 표시됩니다.
+다음 **문서 관리** 타일에서는 문서에 대한 컨텐츠를 관리할 수 있습니다. 문서에 대해 다음 정보가 표시됩니다.
 
 * 이미지
-* **제목**:문서의 이름
-* **수정됨**:AEM에서 마지막으로 수정됨
-* **업로드됨**:AEM에서 업로드됨
-* **게시됨**:AEM에서 마지막으로 게시된 요청
-* **소스**:소스(Mobile On-Demand에서 로컬 또는 원격 AEM)
+* **제목**: 문서의 이름
+* **수정됨**: AEM에서 마지막으로 수정됨
+* **업로드됨**: AEM에서 업로드됨
+* **게시됨**: AEM에서 마지막으로 게시된 요청
+* **소스**: 소스(Mobile On-Demand에서 로컬 또는 원격 AEM)
 
-다음 이미지는 AEM Mobile Application Dashboard의 **문서 관리** 타일을 보여줍니다.
+다음 이미지는 **문서 관리** AEM Mobile 애플리케이션 대시보드의 타일:
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
 >[!NOTE]
 >
->문서를 만들거나, 삭제하거나, 업데이트하려면 [**문서 관리**](/help/mobile/mobile-on-demand-managing-articles.md)&#x200B;를 참조하십시오.
+>자세한 내용은 [**문서 관리**](/help/mobile/mobile-on-demand-managing-articles.md) 문서 작성, 삭제 또는 업데이트
 
 ### 컬렉션 관리 타일 {#the-manage-collections-tile}
 
-**컬렉션 관리** 타일을 사용하면 컬렉션의 컨텐츠를 관리할 수 있습니다. 컬렉션에 대해 다음 정보가 표시됩니다.
+다음 **컬렉션 관리** 타일에서는 컬렉션에 대한 콘텐츠를 관리할 수 있습니다. 컬렉션에 대해 다음 정보가 표시됩니다.
 
 * 이미지
-* **제목**:컬렉션 이름
-* **수정됨**:AEM에서 마지막으로 수정됨
-* **업로드됨**:AEM에서 업로드됨
-* **게시됨**:AEM에서 마지막으로 게시된 요청
-* **소스**:소스(Mobile On-Demand에서 로컬 또는 원격 AEM)
+* **제목**: 컬렉션 이름
+* **수정됨**: AEM에서 마지막으로 수정됨
+* **업로드됨**: AEM에서 업로드됨
+* **게시됨**: AEM에서 마지막으로 게시된 요청
+* **소스**: 소스(Mobile On-Demand에서 로컬 또는 원격 AEM)
 
-다음 이미지는 AEM Mobile Application Dashboard의 **컬렉션 관리** 타일을 보여줍니다.
+다음 이미지는 **컬렉션 관리** AEM Mobile 애플리케이션 대시보드의 타일:
 
 ![chlimage_1-59](assets/chlimage_1-59.png)
 
 >[!NOTE]
 >
->컬렉션을 만들거나, 삭제하거나, 업데이트하려면 **[컬렉션 관리](/help/mobile/mobile-on-demand-managing-collections.md)**&#x200B;를 참조하십시오.
+>자세한 내용은 **[컬렉션 관리](/help/mobile/mobile-on-demand-managing-collections.md)** 컬렉션 만들기, 삭제 또는 업데이트용.
 
 ### 다음 단계 {#the-next-steps}
 

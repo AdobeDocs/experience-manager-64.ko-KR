@@ -10,14 +10,18 @@ discoiquuid: e9e0d8fb-955e-4021-9e9a-9c95c6ffe88d
 feature: Acrobat Sign
 role: Admin
 exl-id: c2061de7-8627-4595-b96c-aa2d6abffddd
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 0%
+source-wordcount: '399'
+ht-degree: 2%
 
 ---
 
 # Acrobat Sign과 통합 | 사용자 데이터 처리 {#integration-with-adobe-sign-handling-user-data}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 AEM Forms은 Acrobat Sign과 통합되어 있으므로 적응형 양식의 전자 서명 워크플로우를 통해 법률, 판매, 급여, 인사 관리 워크플로우에 대한 양식 또는 계약을 처리할 수 있습니다. 단일 및 다중 사용자 서명, 순차적 및 동시 서명 워크플로우, 익명 또는 로그인 사용자로 양식에 서명 및 사용자를 인증할 수 있는 다양한 방법을 허용합니다.
 

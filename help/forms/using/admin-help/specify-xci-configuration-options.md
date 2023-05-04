@@ -1,8 +1,8 @@
 ---
 title: XCI 구성 옵션 지정
-seo-title: XCI 구성 옵션 지정
+seo-title: Specify XCI configuration options
 description: XCI 구성 옵션을 지정하는 방법을 알아봅니다.
-seo-description: XCI 구성 옵션을 지정하는 방법을 알아봅니다.
+seo-description: Learn how to specify XCI configuration options.
 uuid: cf9e544d-63cd-4fad-8f89-bdb46eeef409
 contentOwner: admin
 content-type: reference
@@ -10,16 +10,20 @@ geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f38ebd69-8d1c-49b6-824f-4bf0ec8a8953
 exl-id: 5156bb1c-8ad6-498c-aaf7-6474ffa8c83c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 1%
+source-wordcount: '165'
+ht-degree: 6%
 
 ---
 
-# XCI 구성 옵션 {#specify-xci-configuration-options} 지정
+# XCI 구성 옵션 지정 {#specify-xci-configuration-options}
 
-출력을 사용하면 렌더링에 사용하는 사용자 지정 XCI 파일을 지정할 수 있습니다. ([출력](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output)에 대한 파일 위치 지정 을 참조하십시오.) 기본적으로 출력 은 다음을 포함하여 XCI 파일에 지정된 옵션 중 일부를 무시합니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+출력을 사용하면 렌더링에 사용하는 사용자 지정 XCI 파일을 지정할 수 있습니다. (자세한 내용은 [출력에 대한 파일 위치 지정](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output)) 기본적으로 출력 은 다음을 포함하여 XCI 파일에 지정된 옵션 중 일부를 무시합니다.
 
 * `config/present/xdp/packets`
 * `config/present/pdf/creator`

@@ -1,8 +1,8 @@
 ---
 title: Touch UI 기능 상태
-seo-title: Touch UI 기능 상태
+seo-title: Touch UI Feature Status
 description: Adobe Experience Manager 6.3 Touch UI에 대한 릴리스 노트입니다.
-seo-description: Adobe Experience Manager 6.3 Touch UI에 대한 릴리스 노트입니다.
+seo-description: Release notes specific to Adobe Experience Manager 6.3 Touch UI.
 uuid: dc335334-6c50-4cee-8a2e-183958742686
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,9 +10,9 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 482b5eb0-1b15-4f10-a9d8-3b72dd74acf8
 exl-id: e1422581-143b-4fce-976e-e5aa3360e2d0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1096'
 ht-degree: 15%
 
 ---
@@ -21,7 +21,11 @@ ht-degree: 15%
 
 >[!CAUTION]
 >
->AEM 버전 6.4에서는 [클래식 UI가 더 이상 사용되지 않습니다](/help/release-notes/deprecated-removed-features.md). Adobe은 클래식 UI를 추가로 개선할 계획이 없으며 터치 지원 UI에서 사용할 수 있는 강력한 새 기능을 활용할 것을 권장합니다.
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+>[!CAUTION]
+>
+>AEM 버전 6.4를 사용하는 경우, [클래식 UI는 더 이상 사용되지 않습니다](/help/release-notes/deprecated-removed-features.md). Adobe은 클래식 UI를 추가로 개선할 계획이 없으며 터치 지원 UI에서 사용할 수 있는 강력한 새 기능을 활용할 것을 권장합니다.
 
 버전 6.0부터 AEM에서는 Adobe Marketing Cloud 및 전체 Adobe 사용자 인터페이스 지침에 따라 &quot;터치 지원 UI&quot;라고도 하는 새 사용자 인터페이스를 도입했습니다. 거의 기능 부분에 도달하여 &quot;클래식 UI&quot;라고 하는 레거시 데스크탑 기반 인터페이스를 사용하는 AEM의 표준 UI가 되었습니다.
 
@@ -29,7 +33,7 @@ ht-degree: 15%
 
 다음 목록은 AEM 6.4에 구현된 기능의 현재 상태를 보여줍니다.
 
-AEM 6.4로 업그레이드하는 고객을 위한 권장 사항은 [고객용 사용자 인터페이스 Recommendations](/help/sites-deploying/ui-recommendations.md)를 참조하십시오.
+AEM 6.4로 업그레이드하는 고객을 위한 권장 사항은 [고객을 위한 사용자 인터페이스 Recommendations](/help/sites-deploying/ui-recommendations.md) 자세한 내용
 
 >[!NOTE]
 >
@@ -43,30 +47,30 @@ AEM 6.4로 업그레이드하는 고객을 위한 권장 사항은 [고객용 �
 
 ## 범례 {#legend}
 
-* **완료**:이 기능은 터치 지원 UI에서 모두 사용할 수 있습니다
-* **대부분**:이 기능은 대부분 터치 지원 UI에서 사용할 수 있습니다.
-* **없음**:터치 지원 UI에 이 기능이 없으면 클래식 UI를 사용하여 이 작업을 수행해야 합니다.
-* **대체됨**:이 기능은 다르게 작동하는 새 구현으로 대체되었습니다.
-* **제거됨**:이 기능은 터치 지원 UI에 더 이상 존재하지 않으며 대체되지 않습니다.
+* **완료**: 이 기능은 터치 지원 UI에서 모두 사용할 수 있습니다
+* **대부분**: 이 기능은 대부분 터치 지원 UI에서 사용할 수 있습니다.
+* **누락**: 터치 지원 UI에 이 기능이 없으면 클래식 UI를 사용하여 이 작업을 수행해야 합니다.
+* **대체됨**: 이 기능은 다르게 작동하는 새 구현으로 대체되었습니다.
+* **제거됨**: 이 기능은 터치 지원 UI에 더 이상 존재하지 않으며 대체되지 않습니다.
 
-## 기능 상태:사이트 관리자 {#feature-status-sites-admin}
+## 기능 상태: Sites 관리 {#feature-status-sites-admin}
 
-클래식 UI 사이트 관리자( `/siteadmin`)가 가지고 있는 기능 목록과 터치 지원 UI의 상태( `/sites.html`)입니다.
+클래식 UI 사이트 관리자( `/siteadmin`)에 및 가 터치 지원 UI에 있는 상태를 갖습니다( `/sites.html`).
 
 <table> 
  <tbody>
   <tr>
-   <td><strong>기능<br /> </strong></td> 
+   <td><strong>특별 포함<br /> </strong></td> 
    <td><strong>상태<br /> </strong></td> 
-   <td><strong>주석</strong></td> 
+   <td><strong>설명</strong></td> 
   </tr>
   <tr>
    <td>사이트 계층 탐색</td> 
    <td>완료<br /> </td> 
-   <td>AEM 6.4에서는 <a href="/help/sites-authoring/basic-handling.md#content-tree">컨텐츠 트리 보기</a>를 도입했습니다.</td> 
+   <td>AEM 6.4 도입 <a href="/help/sites-authoring/basic-handling.md#content-tree">컨텐츠 트리 보기</a>.</td> 
   </tr>
   <tr>
-   <td>워크플로우 시작</td> 
+   <td>워크플로 시작</td> 
    <td>완료<br /> </td> 
    <td> </td> 
   </tr>
@@ -86,7 +90,7 @@ AEM 6.4로 업그레이드하는 고객을 위한 권장 사항은 [고객용 �
    <td> </td> 
   </tr>
   <tr>
-   <td>새 Live Copy <br /> 만들기 </td> 
+   <td>새 Live Copy 만들기 <br /> </td> 
    <td>완료<br /> </td> 
    <td> </td> 
   </tr>
@@ -202,7 +206,7 @@ AEM 6.4로 업그레이드하는 고객을 위한 권장 사항은 [고객용 �
   </tr>
   <tr>
    <td>찾기 및 바꾸기</td> 
-   <td>누락된 항목<br /> </td> 
+   <td>누락<br /> </td> 
    <td>클래식 UI를 사용합니다.</td> 
   </tr>
   <tr>
@@ -218,16 +222,16 @@ AEM 6.4로 업그레이드하는 고객을 위한 권장 사항은 [고객용 �
  </tbody>
 </table>
 
-## 기능 상태:페이지 편집기 {#feature-status-page-editor}
+## 기능 상태: 페이지 편집기 {#feature-status-page-editor}
 
-클래식 UI 페이지 편집기( `/cf#`)가 가지고 있는 기능 목록과 터치 지원( `/editor.html`)의 상태입니다.
+클래식 UI 페이지 편집기( `/cf#`)에 과 의 상태가 터치 활성화( )에 있습니다 `/editor.html`).
 
 <table> 
  <tbody>
   <tr>
-   <td><strong>기능</strong></td> 
+   <td><strong>특별 포함</strong></td> 
    <td><strong>상태</strong></td> 
-   <td><strong>주석</strong></td> 
+   <td><strong>설명</strong></td> 
   </tr>
   <tr>
    <td>웹 페이지 편집</td> 
@@ -240,7 +244,7 @@ AEM 6.4로 업그레이드하는 고객을 위한 권장 사항은 [고객용 �
    <td> </td> 
   </tr>
   <tr>
-   <td>디자인 가져오기<br />를 통해 가져온 컨텐츠 편집 </td> 
+   <td>디자인 가져오기를 통해 가져온 콘텐츠 편집<br /> </td> 
    <td>완료</td> 
    <td> </td> 
   </tr>
@@ -270,7 +274,7 @@ AEM 6.4로 업그레이드하는 고객을 위한 권장 사항은 [고객용 �
    <td> </td> 
   </tr>
   <tr>
-   <td>코드:편집 및 미리 보기</td> 
+   <td>코드: 편집 및 미리 보기</td> 
    <td>완료</td> 
    <td> </td> 
   </tr>
@@ -280,17 +284,17 @@ AEM 6.4로 업그레이드하는 고객을 위한 권장 사항은 [고객용 �
    <td> </td> 
   </tr>
   <tr>
-   <td>모드:디자인 편집</td> 
+   <td>모드: 디자인 편집</td> 
    <td>완료</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>모드:스캐폴딩</td> 
+   <td>모드: 스캐폴딩</td> 
    <td>완료</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>모드:Live Copy 상태<br /> </td> 
+   <td>모드: Live Copy 상태<br /> </td> 
    <td>완료</td> 
    <td> </td> 
   </tr>
@@ -337,47 +341,47 @@ AEM 6.4로 업그레이드하는 고객을 위한 권장 사항은 [고객용 �
   <tr>
    <td>페이지 복사</td> 
    <td>제거됨<br /> </td> 
-   <td>사이트 관리자를 사용하여 <a href="/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page">페이지 복사</a>.<br /> </td> 
+   <td>사이트 관리자를 사용하여 다음 작업 <a href="/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page">페이지 복사</a>.<br /> </td> 
   </tr>
   <tr>
    <td>페이지 이동</td> 
    <td>제거됨</td> 
-   <td>사이트 관리자를 사용하여 <a href="/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page">페이지 이동</a>.<br /> </td> 
+   <td>사이트 관리자를 사용하여 다음 작업 <a href="/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page">페이지 이동</a>.<br /> </td> 
   </tr>
   <tr>
    <td>페이지 삭제</td> 
    <td>제거됨</td> 
-   <td>사이트 관리자를 사용하여 <a href="/help/sites-authoring/managing-pages.md#deleting-a-page">페이지 삭제</a>.<br /> </td> 
+   <td>사이트 관리자를 사용하여 다음 작업 <a href="/help/sites-authoring/managing-pages.md#deleting-a-page">페이지 삭제</a>.<br /> </td> 
   </tr>
   <tr>
    <td>참조 표시</td> 
    <td>제거됨</td> 
-   <td>사이트 관리자를 사용하여 <a href="/help/sites-authoring/author-environment-tools.md#references">자세한 참조 목록</a>.<br /> </td> 
+   <td>사이트 관리자를 사용하여 다음 작업 <a href="/help/sites-authoring/author-environment-tools.md#references">자세한 참조 목록 참조</a>.<br /> </td> 
   </tr>
   <tr>
    <td>감사 로그</td> 
    <td>제거됨</td> 
-   <td>사이트 관리자 및 <a href="/help/sites-authoring/author-environment-tools.md#events-timeline">활동 레일</a>.<br /> 열기 </td> 
+   <td>사이트 관리자 사용 및 <a href="/help/sites-authoring/author-environment-tools.md#events-timeline">활동 레일 열기</a>.<br /> </td> 
   </tr>
   <tr>
    <td>버전 만들기</td> 
    <td>제거됨</td> 
-   <td>사이트 관리자를 사용하여 <a href="/help/sites-authoring/working-with-page-versions.md#creating-a-new-version">새 버전</a>을 만듭니다.<br /> </td> 
+   <td>사이트 관리자를 사용하여 다음 작업 <a href="/help/sites-authoring/working-with-page-versions.md#creating-a-new-version">새 버전 만들기</a>.<br /> </td> 
   </tr>
   <tr>
    <td>버전 복원</td> 
    <td>제거됨</td> 
-   <td>사이트 관리자를 사용하여 <a href="/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version">버전</a>을 복원합니다.</td> 
+   <td>사이트 관리자를 사용하여 다음 작업 <a href="/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version">버전 복원</a>.</td> 
   </tr>
   <tr>
    <td>스위치 실행</td> 
    <td>제거됨</td> 
-   <td>시작</a>.<br /> 간을 전환하려면 사이트 관리자를 사용하십시오.<a href="/help/sites-authoring/launches-promoting.md"> </a></td> 
+   <td>사이트 관리자를 사용하여 다음 작업 <a href="/help/sites-authoring/launches-promoting.md">실행 간 전환</a>.<br /> </td> 
   </tr>
   <tr>
    <td>페이지 번역</td> 
    <td>제거됨</td> 
-   <td>사이트 관리자를 사용하여 <a href="/help/sites-administering/tc-manage.md">페이지를 번역 프로젝트에 추가</a>.<br /> </td> 
+   <td>사이트 관리자를 사용하여 다음 작업 <a href="/help/sites-administering/tc-manage.md">번역 프로젝트에 페이지 추가</a>.<br /> </td> 
   </tr>
   <tr>
    <td>타임워프(날짜/시간 선택 및 표시된 사이트 찾아보기)<br /> </td> 
@@ -392,7 +396,7 @@ AEM 6.4로 업그레이드하는 고객을 위한 권장 사항은 [고객용 �
   <tr>
    <td>Client Context UI<br /> </td> 
    <td>대체됨</td> 
-   <td>앞으로 <a href="/help/sites-authoring/ch-previewing.md">ContextHub</a> UI를 사용하십시오.</td> 
+   <td>를 사용하십시오 <a href="/help/sites-authoring/ch-previewing.md">ContextHub</a> UI가 앞으로 나아갑니다.</td> 
   </tr>
   <tr>
    <td>다양한 미디어 유형에 대한 컨텐츠 파인더<br /> </td> 
@@ -415,7 +419,7 @@ AEM 6.4로 업그레이드하는 고객을 위한 권장 사항은 [고객용 �
    <td> </td> 
   </tr>
   <tr>
-   <td>실행 취소/다시 실행</td> 
+   <td>실행 취소 / 다시 실행</td> 
    <td>완료</td> 
    <td> </td> 
   </tr>
@@ -425,23 +429,23 @@ AEM 6.4로 업그레이드하는 고객을 위한 권장 사항은 [고객용 �
    <td> </td> 
   </tr>
   <tr>
-   <td>구성 요소 자동 생성<br />을 사용하여 컨텐츠를 parsys 자리 표시자로 직접 드래그하여 놓습니다 </td> 
+   <td>구성 요소 자동 만들기를 사용하여 컨텐츠를 parsys 자리 표시자로 직접 드래그하여 놓습니다<br /> </td> 
    <td>완료</td> 
    <td> </td> 
   </tr>
  </tbody>
 </table>
 
-## 기능 상태:텍스트, 테이블 및 이미지 편집기 {#feature-status-text-table-and-image-editors}
+## 기능 상태: 텍스트, 표 및 이미지 편집기 {#feature-status-text-table-and-image-editors}
 
 클래식 UI 텍스트, 표 및 이미지 편집기의 기능 목록과 터치 지원 UI의 상태입니다.
 
 <table> 
  <tbody>
   <tr>
-   <td><strong>기능</strong></td> 
+   <td><strong>특별 포함</strong></td> 
    <td><strong>상태 </strong></td> 
-   <td><strong>주석<br /> </strong></td> 
+   <td><strong>설명<br /> </strong></td> 
   </tr>
   <tr>
    <td>리치 텍스트 편집기</td> 
@@ -451,7 +455,7 @@ AEM 6.4로 업그레이드하는 고객을 위한 권장 사항은 [고객용 �
   <tr>
    <td>RTE 플러그인 활성화/비활성화</td> 
    <td>완료<br /> </td> 
-   <td><a href="/help/sites-authoring/templates.md">템플릿 편집기</a>를 사용하여 수행할 수 있습니다.</td> 
+   <td>를 사용하여 수행할 수 있습니다. <a href="/help/sites-authoring/templates.md">템플릿 편집기</a>.</td> 
   </tr>
   <tr>
    <td>일반 텍스트에 RTE 사용</td> 
@@ -459,82 +463,82 @@ AEM 6.4로 업그레이드하는 고객을 위한 권장 사항은 [고객용 �
    <td> </td> 
   </tr>
   <tr>
-   <td>RTE 플러그인:링크 및 앵커</td> 
+   <td>RTE 플러그인: 링크 및 앵커</td> 
    <td>완료</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>RTE 플러그인:문자 맵</td> 
+   <td>RTE 플러그인: 문자 맵</td> 
    <td>완료</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>RTE 플러그인:복사/붙여넣기</td> 
+   <td>RTE 플러그인: 복사/붙여넣기</td> 
    <td>완료</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>RTE 플러그인:Microsoft Word<br />에서 붙여넣기 </td> 
+   <td>RTE 플러그인: Microsoft Word에서 붙여넣기<br /> </td> 
    <td>완료</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>RTE 플러그인:찾기 및 바꾸기</td> 
+   <td>RTE 플러그인: 찾기 및 바꾸기</td> 
    <td>완료</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>RTE 플러그인:텍스트 형식(굵게, ...)</td> 
+   <td>RTE 플러그인: 텍스트 형식(굵게, ...)</td> 
    <td>완료<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>RTE 플러그인:아래 및 위 첨자</td> 
+   <td>RTE 플러그인: 아래 및 위 첨자</td> 
    <td>완료</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>RTE 플러그인:양쪽 맞춤</td> 
+   <td>RTE 플러그인: 양쪽 맞춤</td> 
    <td>완료<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>RTE 플러그인:목록(글머리 기호/숫자)</td> 
+   <td>RTE 플러그인: 목록(글머리 기호/숫자)</td> 
    <td>완료</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>RTE 플러그인:단락 서식</td> 
+   <td>RTE 플러그인: 단락 서식</td> 
    <td>완료<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>RTE 플러그인:텍스트 스타일</td> 
+   <td>RTE 플러그인: 텍스트 스타일</td> 
    <td>완료</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>RTE 플러그인:소스 편집기(HTML 편집)<br /> </td> 
+   <td>RTE 플러그인: 소스 편집기(편집 HTML)<br /> </td> 
    <td>완료<br /> </td> 
    <td>대화 상자 및 전체 화면에서만 사용할 수 있습니다.<br /> </td> 
   </tr>
   <tr>
-   <td>RTE 플러그인:맞춤법 검사기</td> 
+   <td>RTE 플러그인: 맞춤법 검사기</td> 
    <td>완료</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>RTE 플러그인:테이블(포함된 테이블 편집기)</td> 
+   <td>RTE 플러그인: 테이블(포함된 테이블 편집기)</td> 
    <td>완료</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>RTE 플러그인:실행 취소/다시 실행<br /> </td> 
+   <td>RTE 플러그인: 실행 취소/다시 실행<br /> </td> 
    <td>완료</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>RTE 플러그인:인라인 이미지 허용</td> 
+   <td>RTE 플러그인: 인라인 이미지 허용</td> 
    <td>완료</td> 
    <td> </td> 
   </tr>
@@ -544,7 +548,7 @@ AEM 6.4로 업그레이드하는 고객을 위한 권장 사항은 [고객용 �
    <td>내부, 대화 상자 및 전체 화면에서 사용할 수 있습니다.<br /> </td> 
   </tr>
   <tr>
-   <td>이미지를 테이블 셀<br />에 끌어다 놓기 </td> 
+   <td>이미지를 테이블 셀로 드래그하여 놓기<br /> </td> 
    <td>완료</td> 
    <td>인라인 사용 가능</td> 
   </tr>
@@ -556,69 +560,69 @@ AEM 6.4로 업그레이드하는 고객을 위한 권장 사항은 [고객용 �
   <tr>
    <td>IPE 플러그인 활성화/비활성화</td> 
    <td>완료</td> 
-   <td>이제 <a href="/help/sites-authoring/templates.md">템플릿 편집기</a>에 UI가 있습니다.</td> 
+   <td>이제 의 UI가 있습니다 <a href="/help/sites-authoring/templates.md">템플릿 편집기</a>.</td> 
   </tr>
   <tr>
-   <td>IPE 플러그인:자르기</td> 
+   <td>IPE 플러그인: 자르기</td> 
    <td>완료</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>IPE 플러그인:뒤집기</td> 
+   <td>IPE 플러그인: 뒤집기</td> 
    <td>완료<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>IPE 플러그인:실행 취소/다시 실행</td> 
+   <td>IPE 플러그인: 실행 취소/다시 실행</td> 
    <td>완료<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>IPE 플러그인:이미지 맵</td> 
+   <td>IPE 플러그인: 이미지 맵</td> 
    <td>완료</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>IPE 플러그인:회전</td> 
+   <td>IPE 플러그인: 회전</td> 
    <td>완료</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>IPE 플러그인:확대/축소</td> 
+   <td>IPE 플러그인: 확대/축소</td> 
    <td>완료<br /> </td> 
    <td> </td> 
   </tr>
  </tbody>
 </table>
 
-## 기능 상태:도구 {#feature-status-tools}
+## 기능 상태: 도구 {#feature-status-tools}
 
 클래식 UI에 있는 다양한 도구 목록과 터치 지원 UI의 상태입니다.
 
 <table> 
  <tbody>
   <tr>
-   <td><strong>기능<br /> </strong></td> 
+   <td><strong>특별 포함<br /> </strong></td> 
    <td><strong>상태<br /> </strong></td> 
-   <td><strong>주석</strong></td> 
+   <td><strong>설명</strong></td> 
   </tr>
   <tr>
    <td>작업 관리</td> 
    <td>대체됨</td> 
-   <td>6.0에는 <a href="/help/sites-authoring/projects.md">프로젝트 및 작업</a>.이 도입되었습니다.<br /> </td> 
+   <td>6.0 도입 <a href="/help/sites-authoring/projects.md">프로젝트 및 작업</a>.<br /> </td> 
   </tr>
   <tr>
-   <td>워크플로 받은 편지함<br /> </td> 
+   <td>워크플로우 받은 편지함<br /> </td> 
    <td>완료</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>페이지 템플릿 구성에 대한 워크플로우(<code>/etc/workflow/wcm/templates.html</code>)</td> 
-   <td>누락된 항목<br /> </td> 
+   <td>페이지 템플릿 구성에 대한 워크플로우 (<code>/etc/workflow/wcm/templates.html</code>)</td> 
+   <td>누락<br /> </td> 
    <td>클래식 UI를 사용합니다.</td> 
   </tr>
   <tr>
-   <td>관리 UI<br /> 태깅 </td> 
+   <td>관리 UI 태깅<br /> </td> 
    <td>완료</td> 
    <td> </td> 
   </tr>
@@ -640,21 +644,21 @@ AEM 6.4로 업그레이드하는 고객을 위한 권장 사항은 [고객용 �
   <tr>
    <td>사용자, 그룹 및 권한 UI<br /> </td> 
    <td>대부분 완료<br /> </td> 
-   <td>고급 권한 편집의 경우 클래식 UI를 사용하십시오.<br /> </td> 
+   <td>고급 권한 편집의 경우 클래식 UI를 사용합니다.<br /> </td> 
   </tr>
   <tr>
-   <td>버전 제거(<code>/etc/versioning/purge.html</code>)</td> 
+   <td>버전 삭제(<code>/etc/versioning/purge.html</code>)</td> 
    <td>누락</td> 
    <td>클래식 UI를 사용합니다.</td> 
   </tr>
   <tr>
    <td>외부 링크 확인 (<code>/etc/linkchecker.html</code>)</td> 
    <td>누락</td> 
-   <td>클래식 UI 사용.<br /> </td> 
+   <td>클래식 UI를 사용합니다.<br /> </td> 
   </tr>
   <tr>
    <td>벌크 편집기(<code>/etc/importers/bulkeditor.html</code>)</td> 
-   <td>누락된 항목<br /> </td> 
+   <td>누락<br /> </td> 
    <td>클래식 UI를 사용합니다.</td> 
   </tr>
  </tbody>

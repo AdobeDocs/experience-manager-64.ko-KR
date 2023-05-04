@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
 exl-id: 66c19394-9d2f-4bdd-9c17-f0ec8090f0b4
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 12%
+source-wordcount: '785'
+ht-degree: 10%
 
 ---
 
 # We.Retail 참조 구현{#we-retail-reference-implementation}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 ## 소개 {#introduction}
 
@@ -31,7 +35,7 @@ We.Retail에서는 HTL, 응답형 레이아웃, 편집 가능한 템플릿, 핵�
 
 We.Retail은 AEM 표준 참조 구현으로서 AEM의 가장 강력한 기능 중 일부를 소개합니다.
 
-| **기능** | **설명** | **관심 있어?** |
+| **특별 포함** | **설명** | **관심 있어?** |
 |---|---|---|
 | [세계화된 사이트 구조](/help/sites-administering/tc-bp.md) | We.Retail에는 국가별 사이트에 라이브로 복사된 언어 마스터가 포함되어 있습니다. | [해 봐!](/help/sites-developing/we-retail-globalized-site-structure.md) |
 | [응답형 레이아웃](/help/sites-authoring/responsive-layout.md) | 모든 페이지에는 화면 및 장치 크기에 맞게 동적으로 조정되는 응답형 레이아웃이 포함되어 있습니다. | [해 봐!](/help/sites-developing/we-retail-responsive-layout.md) |
@@ -39,9 +43,9 @@ We.Retail은 AEM 표준 참조 구현으로서 AEM의 가장 강력한 기능 �
 | [HTML 템플릿 언어](https://helpx.adobe.com/experience-manager/htl/user-guide.html) | 모든 구성 요소는 HTL을 기반으로 합니다 |  |
 | [eCommerce 기능](/help/sites-developing/ecommerce.md) | 제품 카탈로그 기능 |  |
 | [커뮤니티 사이트](/help/communities/overview.md) | 방문자가 커뮤니티 토론, 블로그 읽기 등에 참여할 수 있도록 허용 |  |
-| [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) | 모든 구성 요소는 새로운 핵심 구성 요소를 기반으로 하며 보다 편리하게 사용할 수 있으며 사용자가 즉시 구성할 수 있습니다 | [해 봐!](/help/sites-developing/we-retail-core-components.md) |
+| [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) | 모든 구성 요소는 새로운 핵심 구성 요소를 기반으로 하며 보다 편리하게 사용할 수 있으며 사용자가 즉시 구성할 수 있습니다 | [해 봐!](/help/sites-developing/we-retail-core-components.md) |
 | [콘텐츠 조각](/help/assets/content-fragments.md) | We.Retail 경험 섹션에서는 컨텐츠 조각을 통해 컨텐츠를 재사용하는 기능을 보여줍니다. | [한번 해봐!](/help/sites-developing/we-retail-content-fragments.md) |
-| [경험 조각](/help/sites-authoring/experience-fragments.md) | 경험 조각은 페이지 내에서 참조할 수 있는 컨텐츠 및 레이아웃을 포함한 하나 이상의 구성 요소 그룹입니다. | [한번 해봐!](/help/sites-developing/we-retail-experience-fragments.md) |
+| [경험 조각](/help/sites-authoring/experience-fragments.md) | 경험 조각 은 페이지 내에서 참조할 수 있는 컨텐츠 및 레이아웃을 포함한 하나 이상의 구성 요소 그룹입니다. | [한번 해봐!](/help/sites-developing/we-retail-experience-fragments.md) |
 
 ## 시작하기 {#getting-started}
 
@@ -79,7 +83,7 @@ We.Retail은 기술적으로 더 강력하며 최신 AEM 기술을 활용하여 
 * **사용 가능** 는 기능의 예가 샘플 컨텐츠에 있음을 의미합니다.
 * **사용할 수 없음** 은 기능의 예를 샘플 컨텐츠에서 사용할 수 없지만 기능 자체가 아니라는 것을 의미합니다.
 
-| **기능** | **We.Retail** | **Geometrixx** |
+| **특별 포함** | **We.Retail** | **Geometrixx** |
 |---|---|---|
 | 세계화된 사이트 구조 | 언어 마스터가 국가별 사이트에 라이브로 복사됩니다. | 사용할 수 없음 |
 | 콘텐츠 조각 | 사용 가능 | 사용할 수 없음 |

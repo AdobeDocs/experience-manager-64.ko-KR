@@ -1,18 +1,22 @@
 ---
 title: Assets의 사용자 경험 개선 사항
-description: 이 문서에서는  [!DNL Experience Manager] 6.4 Assets의 사용자 경험 개선 사항에 대해 설명합니다.
+description: 이 문서에서는 [!DNL Experience Manager] 6.4 자산
 contentOwner: AG
 feature: Release Information
 role: Leader,User
 exl-id: 65029113-987e-46eb-86eb-8028233031f9
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 1%
+source-wordcount: '677'
+ht-degree: 2%
 
 ---
 
 # Assets의 사용자 경험 개선 사항 {#user-experience-enhancements-in-assets}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 [!DNL Experience Manager] 6.4 Assets에는 원활한 사용자 경험을 제공하고 생산성을 향상시키는 몇 가지 유용성 개선 사항이 포함되어 있습니다. 시장 진출 컨텐츠를 생성/관리할 수 있는 속도 증가는 비즈니스 컨텐츠 속도를 향상시킵니다.
 
@@ -22,7 +26,7 @@ ht-degree: 1%
 
 ## 지연 로드 {#lazy-loading}
 
-[!DNL Experience Manager] 6.4 Assets에서 자산을 탐색/검색하면 한 번에 최대 200개의 자산이 표시됩니다. 결과를 더 빨리 스크롤할 수 있으므로 긴 결과 목록을 탐색할 때 특히 유용합니다. 한 번에 많은 자산이 로드되므로 탐색 경험이 원활합니다.
+에서 자산을 탐색/검색할 때 [!DNL Experience Manager] 6.4 자산, 한 번에 최대 200개의 자산이 표시됩니다. 결과를 더 빨리 스크롤할 수 있으므로 긴 결과 목록을 탐색할 때 특히 유용합니다. 한 번에 많은 자산이 로드되므로 탐색 경험이 원활합니다.
 
 자산을 탭/클릭하여 세부 사항 페이지를 검토하는 경우, 도구 모음에서 뒤로 단추를 탭/클릭하여 결과 페이지로 돌아갈 수 있습니다.
 
@@ -32,11 +36,11 @@ ht-degree: 1%
 
 카드 보기에서 축소판의 크기를 조정하려면 다음 단계를 수행합니다.
 
-1. 도구 모음에서 레이아웃 아이콘을 탭/클릭한 다음 **[!UICONTROL 설정 보기]** 옵션을 선택합니다.
+1. 도구 모음에서 레이아웃 아이콘을 탭/클릭한 다음 **[!UICONTROL 설정 보기]** 선택 사항입니다.
 
    ![view_settings](assets/view_settings.png)
 
-1. **[!UICONTROL 설정 보기]** 대화 상자에서 원하는 축소판 크기를 선택한 다음 **[!UICONTROL 업데이트]**&#x200B;를 탭/클릭합니다.
+1. 에서 **[!UICONTROL 설정 보기]** 대화 상자에서 원하는 축소판 크기를 선택한 다음 탭/클릭합니다 **[!UICONTROL 업데이트]**.
 
    ![view_settings_dialog](assets/view_settings_dialog.png)
 
@@ -54,13 +58,13 @@ ht-degree: 1%
 
 ![list_view](assets/list_view.png)
 
-표시할 세부 사항의 양을 구성하도록 선택할 수 있습니다. 레이아웃 아이콘을 탭/클릭하고 **[!UICONTROL 보기 설정]** 옵션을 선택한 다음 **[!UICONTROL 보기 설정]** 대화 상자에 표시할 열을 지정합니다.
+표시할 세부 사항의 양을 구성하도록 선택할 수 있습니다. 레이아웃 아이콘을 탭/클릭하고 **[!UICONTROL 설정 보기]** 옵션을 선택하고 **[!UICONTROL 설정 보기]** 대화 상자.
 
 ![view_settings_dialoglistview](assets/view_settings_dialoglistview.png)
 
 ## 열 보기 개선 사항 {#column-view-improvements}
 
-이제 카드 및 목록 보기 외에도 열 보기에서 자산의 세부 사항 페이지로 이동할 수 있습니다. 열 보기에서 자산을 선택한 다음 자산 스냅샷 아래에 있는 **[!UICONTROL 더 자세히]**&#x200B;를 탭/클릭합니다.
+이제 카드 및 목록 보기 외에도 열 보기에서 자산의 세부 사항 페이지로 이동할 수 있습니다. 열 보기에서 자산을 선택한 다음 탭/클릭합니다 **[!UICONTROL 더 자세히]** 자산 스냅샷 아래에 표시됩니다.
 
 ![more_details](assets/more_details.png)
 
@@ -68,7 +72,7 @@ ht-degree: 1%
 
 [!DNL Experience Manager] 6.4 자산에는 자산 계층 구조를 편리하게 탐색하고 원하는 자산 또는 폴더로 이동할 수 있는 트리 보기가 포함되어 있습니다.
 
-트리 보기를 열려면 `Assets UI`에서 GlobalNav 아이콘을 탭/클릭하고 메뉴에서 **[!UICONTROL 컨텐츠 트리]**&#x200B;를 선택합니다.
+트리 보기를 열려면 `Assets UI`, 을(를) 선택하고 **[!UICONTROL 컨텐츠 트리]** 메뉴 아래의 제품에서 사용할 수 있습니다.
 
 ![content_tree](assets/content_tree.png)
 
@@ -88,7 +92,7 @@ ht-degree: 1%
 |---|---|
 | [!UICONTROL 카드 보기] | 자산 타일을 탭/클릭합니다. |
 | [!UICONTROL 목록 보기] | 목록의 자산에 대한 행 항목을 탭/클릭합니다. |
-| [!UICONTROL 열 보기] | 자산 스냅샷에서 **[!UICONTROL 더 자세히]** 단추를 탭/클릭합니다. |
+| [!UICONTROL 열 보기] | 을 탭/클릭합니다. **[!UICONTROL 더 자세히]** 자산 스냅샷의 버튼. |
 
 이전/다음 단추를 사용하여 자산 간을 앞뒤로 이동합니다.
 

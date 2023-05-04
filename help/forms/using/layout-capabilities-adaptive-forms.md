@@ -1,22 +1,26 @@
 ---
 title: 적응형 양식의 레이아웃 기능
-seo-title: 적응형 양식의 레이아웃 기능
+seo-title: Layout capabilities of adaptive forms
 description: 다양한 장치에서 적응형 양식의 레이아웃 및 모양은 레이아웃 설정에 의해 제어됩니다. 다양한 레이아웃과 이를 적용하는 방법을 이해합니다.
-seo-description: 다양한 장치에서 적응형 양식의 레이아웃 및 모양은 레이아웃 설정에 의해 제어됩니다. 다양한 레이아웃과 이를 적용하는 방법을 이해합니다.
+seo-description: Layout and appearances of adaptive forms on various devices are governed by the layout settings. Understand the various layouts and how to apply them.
 uuid: 7df2d234-e2e3-432a-9720-e73296424302
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 10bf1d44-9660-44d9-b2c3-dd9a252efc3a
-feature: 적응형 양식
+feature: Adaptive Forms
 exl-id: 887e88c6-4c2b-4ef3-b268-8956fdb4535f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1179'
 ht-degree: 0%
 
 ---
 
 # 적응형 양식의 레이아웃 기능 {#layout-capabilities-of-adaptive-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 Adobe Experience Manager (AEM)을 사용하면 최종 사용자에게 동적 경험을 제공하는 사용하기 쉬운 적응형 양식을 만들 수 있습니다. 양식 레이아웃은 항목 또는 구성 요소가 적응형 양식에 표시되는 방식을 제어합니다.
 
@@ -32,11 +36,11 @@ Adobe Experience Manager (AEM)을 사용하면 최종 사용자에게 동적 경
 
 적응형 양식은 다음과 같은 유형의 레이아웃을 제공합니다.
 
-**패널** 레이아웃패널 내의 항목이나 구성 요소가 장치에 표시되는 방식을 제어합니다.
+**패널 레이아웃** 패널 내의 항목 또는 구성 요소가 장치에 표시되는 방식을 제어합니다.
 
-**모바일** 레이아웃모바일 장치에서 양식의 탐색을 제어합니다. 장치 너비가 768픽셀 이상인 경우 레이아웃은 모바일 레이아웃으로 간주하여 모바일 장치에 맞게 최적화됩니다.
+**모바일 레이아웃** 모바일 장치에서 양식의 탐색을 제어합니다. 장치 너비가 768픽셀 이상인 경우 레이아웃은 모바일 레이아웃으로 간주하여 모바일 장치에 맞게 최적화됩니다.
 
-**도구** 모음 레이아웃폼의 도구 모음이나 패널 도구 모음에서 작업 단추 배치를 제어합니다.
+**도구 모음 레이아웃** 양식의 도구 모음이나 패널 도구 모음에서 작업 단추 배치를 제어합니다.
 
 이러한 모든 패널 레이아웃은 다음 위치에 정의됩니다.
 
@@ -52,16 +56,16 @@ Adobe Experience Manager (AEM)을 사용하면 최종 사용자에게 동적 경
 
 양식 작성자는 루트 패널을 포함하여 적응형 양식의 각 패널에 레이아웃을 연결할 수 있습니다.
 
-패널 레이아웃은 `/libs/fd/af/layouts/panel` 위치에서 사용할 수 있습니다.
+패널 레이아웃은 `/libs/fd/af/layouts/panel` 위치.
 
-![적응형 양식의 루트 패널에 대한 패널 ](assets/layouts.png)
-**레이아웃 목록그림:** *적응형 양식의 패널 레이아웃 목록*
+![적응형 양식의 루트 패널에 대한 패널 레이아웃 목록](assets/layouts.png)
+**그림:** *적응형 양식의 패널 레이아웃 목록*
 
 ### 응답형 - 탐색 없이 한 페이지의 모든 항목 {#responsive-everything-on-one-page-without-navigation-br}
 
 이 패널 레이아웃을 사용하여 특수 탐색을 수행할 필요 없이 장치의 화면 크기에 맞게 조정되는 응답형 레이아웃을 만들 수 있습니다.
 
-이 레이아웃을 사용하여 여러 **[!UICONTROL 패널 적응형 양식]** 구성 요소를 패널 내에 나란히 배치할 수 있습니다.
+이 레이아웃을 사용하여 여러 개의 **[!UICONTROL 패널 적응형 양식]** 구성 요소를 패널 내에서 나란히 사용할 수 있습니다.
 
 ![작은 화면에 표시된 대로 반응형 레이아웃을 사용하는 양식](assets/responsive_layout_seen_on_small_screen.png)
 
@@ -69,13 +73,13 @@ Adobe Experience Manager (AEM)을 사용하면 최종 사용자에게 동적 경
 
 ![큰 화면에 표시된 대로 반응형 레이아웃을 사용하는 양식](assets/responsive_layout_seen_on_large_screen.png)
 
-**그림:** *대형 화면에 표시된 대로 반응형 레이아웃을 사용하는 양식*
+**그림:** *큰 화면에 표시된 대로 반응형 레이아웃을 사용하는 양식*
 
-### 마법사 - 한 번에 1단계를 표시하는 여러 단계 양식 {#wizard-a-multi-step-form-showing-one-step-at-a-time}
+### 마법사 - 한 번에 한 단계를 표시하는 여러 단계 양식 {#wizard-a-multi-step-form-showing-one-step-at-a-time}
 
 이 패널 레이아웃을 사용하여 양식 내에서 안내식 탐색을 제공할 수 있습니다. 예를 들어, 사용자를 단계별로 안내하는 동안 양식에서 필수 정보를 캡처하려면 이 레이아웃을 사용합니다.
 
-`Panel adaptive form` 구성 요소를 사용하여 패널 내에서 단계별 탐색 기능을 제공합니다. 이 레이아웃을 사용하는 경우 사용자는 현재 단계가 완료된 후에만 다음 단계로 이동합니다
+를 사용하십시오 `Panel adaptive form` 구성 요소를 사용하여 패널 내에서 단계별 탐색 기능을 제공할 수 있습니다. 이 레이아웃을 사용하는 경우 사용자는 현재 단계가 완료된 후에만 다음 단계로 이동합니다
 
 ```
 window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpression)
@@ -89,9 +93,9 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 **그림:** *마법사를 사용한 양식*
 
-### 아코디언 디자인을 위한 레이아웃 {#layout-for-accordion-design}
+### 아코디언 디자인용 레이아웃 {#layout-for-accordion-design}
 
-이 레이아웃을 사용하여 `Panel adaptive form` 구성 요소를 아코디언 스타일 탐색이 있는 패널에 배치할 수 있습니다. 이 레이아웃을 사용하여 반복 가능한 패널을 만들 수도 있습니다. 반복 가능한 패널을 사용하면 필요에 따라 패널을 동적으로 추가하거나 제거할 수 있습니다. 패널이 반복되는 최소 및 최대 횟수를 정의할 수 있습니다. 또한, 패널 항목에 제공된 정보에 따라 패널의 제목을 동적으로 결정할 수 있다.
+이 레이아웃을 사용하여 `Panel adaptive form` 아코디언 스타일 탐색이 있는 패널의 구성 요소. 이 레이아웃을 사용하여 반복 가능한 패널을 만들 수도 있습니다. 반복 가능한 패널을 사용하면 필요에 따라 패널을 동적으로 추가하거나 제거할 수 있습니다. 패널이 반복되는 최소 및 최대 횟수를 정의할 수 있습니다. 또한, 패널 항목에 제공된 정보에 따라 패널의 제목을 동적으로 결정할 수 있다.
 
 요약 표현식을 사용하여 최소화된 패널의 제목에 최종 사용자가 제공한 값을 표시할 수 있습니다.
 
@@ -99,37 +103,37 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 **그림:** *아코디언 레이아웃을 사용하여 만든 반복 가능한 패널*
 
-### 탭 레이아웃 - 왼쪽 {#tabbed-layout-tabs-appear-on-the-left}에 탭이 나타납니다.
+### 탭 레이아웃 - 왼쪽에 탭이 나타납니다 {#tabbed-layout-tabs-appear-on-the-left}
 
-이 레이아웃을 사용하여 탭 탐색 기능이 있는 패널에 `Panel adaptive form` 구성 요소를 배치할 수 있습니다. 패널 콘텐츠의 왼쪽에 탭이 있습니다.
+이 레이아웃을 사용하여 `Panel adaptive form` 탭 탐색 기능이 있는 패널의 구성 요소. 패널 콘텐츠의 왼쪽에 탭이 있습니다.
 
 ![탭 레이아웃에서 탭이 왼쪽에 나타납니다](assets/tabbed_layout_left.png)
 
 **그림:** *패널 왼쪽에 표시되는 탭*
 
-### 탭 레이아웃 - 위쪽 {#tabbed-layout-tabs-appear-on-the-top}에 탭이 나타납니다.
+### 탭 레이아웃 - 탭이 맨 위에 나타납니다 {#tabbed-layout-tabs-appear-on-the-top}
 
-이 레이아웃을 사용하면 탭 탐색 기능이 있는 패널에 `Panel adaptive form` 구성 요소를 배치할 수 있습니다. 탭이 패널 콘텐츠 위에 있습니다.
+이 레이아웃을 사용하여 `Panel adaptive form` 탭 탐색 기능이 있는 패널의 구성 요소. 탭이 패널 콘텐츠 위에 있습니다.
 
 ![맨 위에 탭이 있는 적응형 양식의 탭 레이아웃](assets/tabbed_layout_top.png)
 
-**그림:** *패널 상단에 나타나는 탭*
+**그림:** *패널 상단에 표시되는 탭*
 
 ## 모바일 레이아웃 {#mobile-layouts}
 
 모바일 레이아웃을 사용하면 상대적으로 작은 화면을 사용하는 모바일 장치에서 사용자에게 친숙한 탐색을 수행할 수 있습니다. 모바일 레이아웃은 양식 탐색에 탭 또는 마법사 스타일을 사용합니다. 모바일 레이아웃을 적용하면 전체 양식에 대해 단일 레이아웃이 제공됩니다.
 
-이 레이아웃은 탐색 막대와 탐색 메뉴를 사용하여 탐색을 제어합니다. 탐색 모음에는 **&lt;** 및 **** 아이콘이 표시되어 **next** 및 **이전** 탐색 단계를 나타냅니다.
+이 레이아웃은 탐색 막대와 탐색 메뉴를 사용하여 탐색을 제어합니다. 탐색 막대가 표시됩니다 **&lt;** 및 **>** 아이콘 표시 **다음** 및 **이전** 양식의 탐색 단계입니다.
 
-모바일 레이아웃은 `/libs/fd/af/layouts/mobile/` 위치에서 사용할 수 있습니다. 기본적으로 다음 모바일 레이아웃은 적응형 양식으로 사용할 수 있습니다.
+모바일 레이아웃은 다음 위치에서 사용할 수 있습니다. `/libs/fd/af/layouts/mobile/` 위치. 기본적으로 다음 모바일 레이아웃은 적응형 양식으로 사용할 수 있습니다.
 
 ![적응형 양식의 모바일 레이아웃 목록](assets/mobile-navigation.png)
 
 **그림:** *적응형 양식의 모바일 레이아웃 목록*
 
-모바일 레이아웃을 사용할 때 양식 메뉴에서 ![aem6forms_form_menu](assets/aem6forms_form_menu.png) 아이콘을 탭하여 다양한 양식 패널에 액세스할 수 있습니다.
+모바일 레이아웃을 사용할 때 양식 메뉴를 사용하여 다양한 양식 패널에 액세스할 수 있도록 하려면 를 탭하여 ![aem6forms_form_menu](assets/aem6forms_form_menu.png) 아이콘.
 
-### 양식 헤더 {#layout-with-panel-titles-in-the-form-header}에 패널 제목이 있는 레이아웃
+### 양식 헤더에 패널 제목이 있는 레이아웃 {#layout-with-panel-titles-in-the-form-header}
 
 이 레이아웃은 이름에서 알 수 있듯이 탐색 메뉴 및 탐색 막대와 함께 패널 제목을 표시합니다. 이 레이아웃은 탐색을 위한 다음 및 이전 아이콘도 제공합니다.
 
@@ -137,7 +141,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 **그림:** *양식 헤더에 패널 제목이 있는 모바일 레이아웃*
 
-### 양식 헤더 {#layout-without-panel-titles-in-the-form-header}에 패널 제목이 없는 레이아웃
+### 양식 헤더에 패널 제목이 없는 레이아웃 {#layout-without-panel-titles-in-the-form-header}
 
 이름에서 알 수 있듯이 이 레이아웃은 패널 제목이 없는 탐색 메뉴 및 탐색 막대만 표시합니다. 이 레이아웃은 탐색을 위한 다음 및 이전 아이콘도 제공합니다.
 
@@ -153,9 +157,9 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 **그림:** *적응형 양식의 도구 모음 레이아웃 목록*
 
-도구 모음 레이아웃은 `/libs/fd/af/layouts/toolbar` 위치에서 사용할 수 있습니다. 적응형 양식은 기본적으로 다음과 같은 도구 모음 레이아웃을 제공합니다.
+도구 모음 레이아웃은 `/libs/fd/af/layouts/toolbar` 위치. 적응형 양식은 기본적으로 다음과 같은 도구 모음 레이아웃을 제공합니다.
 
-### 도구 모음 {#default-layout-for-toolbar}에 대한 기본 레이아웃
+### 도구 모음의 기본 레이아웃 {#default-layout-for-toolbar}
 
 이 레이아웃은 적응형 양식에 작업 버튼을 추가할 때 기본 레이아웃으로 선택됩니다. 이 레이아웃을 선택하면 데스크탑 및 모바일 장치 모두에 대해 동일한 레이아웃이 표시됩니다.
 
@@ -163,9 +167,9 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![도구 모음에 대한 기본 보기](assets/toolbar_layout_default.png)
 
-**그림:** *도구 모음의 기본 보기*
+**그림:** *도구 모음에 대한 기본 보기*
 
-### 모바일 고정 레이아웃 도구 모음 {#mobile-fixed-layout-for-toolbar}
+### 모바일: 도구 모음에 대한 고정 레이아웃 {#mobile-fixed-layout-for-toolbar}
 
 데스크탑 및 모바일 장치에 대한 대체 레이아웃을 제공하려면 이 레이아웃을 선택하십시오.
 
@@ -175,4 +179,4 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![모바일: 도구 모음에 대한 고정 레이아웃](assets/toolbar_layout_mobile_fixed.png)
 
-**그림:** *도구 모음에 대한 모바일 고정 레이아웃*
+**그림:** *모바일: 도구 모음에 대한 고정 레이아웃*

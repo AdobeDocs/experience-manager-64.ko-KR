@@ -1,25 +1,29 @@
 ---
 title: AEM 6.4에서 Forms 저장소 구조 변경
-seo-title: AEM 6.4에서 Forms 저장소 구조 변경
+seo-title: Forms Repository Restructuring in AEM 6.4
 description: AEM 6.4 for Forms의 새 저장소 구조로 마이그레이션하기 위해 필요한 변경 작업을 수행하는 방법을 알아봅니다.
-seo-description: AEM 6.4 for Forms의 새 저장소 구조로 마이그레이션하기 위해 필요한 변경 작업을 수행하는 방법을 알아봅니다.
+seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for Forms.
 uuid: e60830d4-23ca-4be9-941a-ee4abe4786a6
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 1ce9a622-5968-407f-a74b-d325a2bff669
-feature: 업그레이드
+feature: Upgrading
 exl-id: a2d6524e-3f5b-4d1e-af64-61ff95889657
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 7%
+source-wordcount: '565'
+ht-degree: 8%
 
 ---
 
 # AEM 6.4에서 Forms 저장소 구조 변경{#forms-repository-restructuring-in-aem}
 
-AEM 6.4에서 상위 [저장소 구조 변경 페이지에 설명된 대로 AEM 6.4로 업그레이드하는 고객은 이 페이지에서 AEM Forms 솔루션에 영향을 주는 저장소 변경 사항과 관련된 작업 작업을 평가해야 합니다. ](/help/sites-deploying/repository-restructuring.md) 일부 변경 사항은 AEM 6.4 업그레이드 프로세스 중에 작업 노력이 필요한 반면, 다른 변경 사항은 6.5 업그레이드 전까지 지연될 수 있습니다.
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
+상위에 설명된 대로 [AEM 6.4의 저장소 구조 변경](/help/sites-deploying/repository-restructuring.md) 페이지에서 AEM 6.4로 업그레이드하는 고객은 이 페이지에서 AEM Forms 솔루션에 영향을 주는 저장소 변경 사항과 관련된 작업 작업을 평가해야 합니다. 일부 변경 사항은 AEM 6.4 업그레이드 프로세스 중에 작업 노력이 필요한 반면, 다른 변경 사항은 6.5 업그레이드 전까지 지연될 수 있습니다.
 
 **6.4 업그레이드**
 
@@ -32,7 +36,7 @@ AEM 6.4에서 상위 [저장소 구조 변경 페이지에 설명된 대로 AEM 
 * [Typekit Cloud Service 구성](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#typekit-cloud-service-configurations)
 * [Misc](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#misc)
 
-## 6.4 업그레이드 시 {#with-upgrade}
+## 6.4 업그레이드 {#with-upgrade}
 
 ### Misc {#misc}
 
@@ -52,43 +56,43 @@ AEM 6.4에서 상위 [저장소 구조 변경 페이지에 설명된 대로 AEM 
 |---|---|
 | **새 위치** | `/libs/fd/af/authoring/clientlibs` |
 | **구조 조정 지침** | 절대 경로에서 참조할 수 있는 클라이언트 라이브러리의 리소스는 새 자산에서 최신 경로를 사용해야 합니다. |
-| **메모** | 해당 없음 |
+| **메모** | N/A |
 
 | **이전 위치** | `/etc/clientlibs/fd/xfaforms` |
 |---|---|
 | **새 위치** | `/libs/fd/xfaforms/clientlibs/` |
 | **구조 조정 지침** | 절대 경로에서 참조할 수 있는 클라이언트 라이브러리의 리소스는 새 자산에서 최신 경로를 사용해야 합니다. |
-| **메모** | 해당 없음 |
+| **메모** | N/A |
 
 | **이전 위치** | `/etc/clientlibs/fd/af` |
 |---|---|
 | **새 위치** | `/libs/fd/af/runtime/clientlibs` |
 | **구조 조정 지침** | 절대 경로에서 참조할 수 있는 클라이언트 라이브러리의 리소스는 새 자산에서 최신 경로를 사용해야 합니다. |
-| **메모** | 해당 없음 |
+| **메모** | N/A |
 
 | **이전 위치** | `/etc/clientlibs/fd/af` |
 |---|---|
 | **새 위치** | `/libs/fd/af/runtime/clientlibs` |
 | **구조 조정 지침** | 절대 경로에서 참조할 수 있는 클라이언트 라이브러리의 리소스는 새 자산에서 최신 경로를 사용해야 합니다. |
-| **메모** | 해당 없음 |
+| **메모** | N/A |
 
 | **이전 위치** | `/etc/clientlibs/fd/expeditor` |
 |---|---|
 | **새 위치** | `/libs/fd/expeditor/clientlibs` |
 | **구조 조정 지침** | 절대 경로에서 참조할 수 있는 클라이언트 라이브러리의 리소스는 새 자산에서 최신 경로를 사용해야 합니다. |
-| **메모** | 해당 없음 |
+| **메모** | N/A |
 
 | **이전 위치** | `/etc/clientlibs/fd/fmaddon` |
 |---|---|
 | **새 위치** | `/libs/fd/fmaddon` |
 | **구조 조정 지침** | 이러한 clientlibs 변경은 권장되거나 지원되지 않습니다. 이러한 clientlibs를 수정한 경우 AEM에서 제공한 코드를 사용하도록 롤백해야 합니다. |
-| **메모** | 해당 없음 |
+| **메모** | N/A |
 
 | **이전 위치** | `/etc/aep` |
 |---|---|
 | **새 위치** | `/var/fd/content/annotations` |
 | **구조 조정 지침** | 이러한 clientlibs 변경은 권장되거나 지원되지 않습니다. 이러한 clientlibs를 수정한 경우 AEM에서 제공한 코드를 사용하도록 롤백해야 합니다. |
-| **메모** | 해당 없음 |
+| **메모** | N/A |
 
 ## 6.5 이전 업그레이드 {#prior-to-upgrade}
 
@@ -97,35 +101,35 @@ AEM 6.4에서 상위 [저장소 구조 변경 페이지에 설명된 대로 AEM 
 | **이전 위치** | `/etc/cloudservices/echosign` |
 |---|---|
 | **새 위치** | `/conf/<tenant>/settings/cloudconfigs/echosign` |
-| **구조 조정 지침** | Forms 마이그레이션 UI에서 트리거될 [레이지 컨텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md) 유틸리티입니다. |
-| **메모** | 해당 없음 |
+| **구조 조정 지침** | 다음 [레이지 컨텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md) Forms 마이그레이션 UI에서 트리거되는 유틸리티입니다. |
+| **메모** | N/A |
 
 ### Recaptcha Cloud Service 구성 {#recaptcha-cloud-service-configurations}
 
 | **이전 위치** | `/etc/cloudservices/recaptcha` |
 |---|---|
 | **새 위치** | `/conf/<tenant>/settings/cloudconfigs/recaptcha` |
-| **구조 조정 지침** | Forms 마이그레이션 UI에서 트리거될 [레이지 컨텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md) 유틸리티입니다. |
-| **메모** | 해당 없음 |
+| **구조 조정 지침** | 다음 [레이지 컨텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md) Forms 마이그레이션 UI에서 트리거되는 유틸리티입니다. |
+| **메모** | N/A |
 
 ### Typekit Cloud Service 구성 {#typekit-cloud-service-configurations}
 
 | **이전 위치** | `/etc/cloudservices/typekit` |
 |---|---|
 | **새 위치** | `/conf/<tenant>/settings/cloudconfigs/typekit` |
-| **구조 조정 지침** | Forms 마이그레이션 UI에서 트리거될 [레이지 컨텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md) 유틸리티입니다. |
-| **메모** | 해당 없음 |
+| **구조 조정 지침** | 다음 [레이지 컨텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md) Forms 마이그레이션 UI에서 트리거되는 유틸리티입니다. |
+| **메모** | N/A |
 
-### 기타 {#misc-1}
+### Misc {#misc-1}
 
 | **이전 위치** | `/etc/cloudservices/fdm` |
 |---|---|
 | **새 위치** | `/conf/<tenant>/settings/cloudconfigs/fdm` |
-| **구조 조정 지침** | Forms 마이그레이션 UI에서 트리거될 [레이지 컨텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md) 유틸리티입니다. |
-| **메모** | 해당 없음 |
+| **구조 조정 지침** | 다음 [레이지 컨텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md) Forms 마이그레이션 UI에서 트리거되는 유틸리티입니다. |
+| **메모** | N/A |
 
 | **이전 위치** | `/etc/designs/fd/fp` |
 |---|---|
 | **새 위치** | `/libs/fd/fp` |
-| **구조 조정 지침** | /etc 템플릿에 대한 모든 참조는 나중에 `/libs` 상대 템플릿을 가리키도록 업데이트해야 합니다. |
-| **메모** | 해당 없음 |
+| **구조 조정 지침** | /etc 템플릿에 대한 모든 참조는 해당 템플릿을 가리키도록 업데이트해야 합니다 `/libs` 상대 팀 |
+| **메모** | N/A |

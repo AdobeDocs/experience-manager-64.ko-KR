@@ -1,22 +1,26 @@
 ---
 title: 프로세스 인스턴스 목록 사용자 정의
-seo-title: 프로세스 인스턴스 목록 사용자 정의
+seo-title: Customizing the listing of process instances
 description: AEM Forms 작업 공간의 프로세스 인스턴스에 표시되는 속성을 사용자 지정하는 방법
-seo-description: AEM Forms 작업 공간의 프로세스 인스턴스에 표시되는 속성을 사용자 지정하는 방법
+seo-description: How-to customize the properties displayed in process instance in AEM Forms workspace.
 uuid: 3b55d9b9-7f73-46dd-9eb6-42be218440a1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
 exl-id: e7b8206c-bac2-48a6-b353-d06bc73b29f9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 3%
+source-wordcount: '320'
+ht-degree: 5%
 
 ---
 
 # 프로세스 인스턴스 목록 사용자 정의 {#customizing-the-listing-of-process-instances}
+
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
 
 프로세스 인스턴스 목록이 AEM Forms 작업 공간의 추적 탭에 표시됩니다.
 
@@ -50,7 +54,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td>processInstanceStatus</td> 
-   <td>0 = Initiated<br /> 1 = Running<br /> 2 = Complete<br /> 3 = Complementation<br /> 4 = Terminating<br /> 5 = Terminating<br /> 6 = Suspended<br /> 7 = Suspending<br /> 8 = Unsuspending</td> 
+   <td>0 = 시작됨<br /> 1 = 실행 중<br /> 2 = 완료<br /> 3 = 완료<br /> 4 = 종료됨<br /> 5 = 종료 중<br /> 6 = 일시 중단됨<br /> 7 = 일시 중단<br /> 8 = 일시 중단 해제</td> 
   </tr> 
   <tr> 
    <td>processName</td> 
@@ -62,29 +66,29 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td>processVariables</td> 
-   <td>프로세스 변수의 개체 배열입니다. 각 프로세스 변수 개체에는 <strong>name</strong>(프로세스 변수의 이름), <strong>값</strong>(프로세스 변수 값) 및<strong> type</strong>(프로세스 변수 유형)이 포함되어 있습니다.</td> 
+   <td>프로세스 변수의 개체 배열입니다. 각 프로세스 변수 개체에는 다음이 포함됩니다 <strong>이름</strong> (프로세스 변수의 이름), <strong>value</strong> (프로세스 변수 값) 및<strong> 유형</strong> (프로세스 변수 유형)</td> 
   </tr> 
  </tbody> 
 </table>
 
 **예:**
 
-프로세스 인스턴스 카드에 프로세스 인스턴스의 `description` 속성을 표시하려면 다음 단계를 수행하십시오.
+를 표시하려면 `description` 프로세스 인스턴스 카드에서 프로세스 인스턴스의 등록 정보를 수행하려면 다음 단계를 수행하십시오.
 
-1. AEM Forms 작업 공간 사용자 지정에 대한 [일반 절차](/help/forms/using/generic-steps-html-workspace-customization.md)를 따르십시오.
-1. 다음을 수행합니다.
+1. 다음을 수행합니다 [AEM Forms 작업 공간 사용자 지정을 위한 일반 단계](/help/forms/using/generic-steps-html-workspace-customization.md).
+1. 다음 작업을 수행합니다.
 
-   1. /libs/ws/js/runtime/templates/processinstance.html 가 없는 경우 이 파일을 /apps/ws/js/runtime/templates/에 복사합니다. **모두 저장**&#x200B;을 클릭합니다.
+   1. /libs/ws/js/runtime/templates/processinstance.html 가 없는 경우 이 파일을 /apps/ws/js/runtime/templates/에 복사합니다. 클릭 **모두 저장**.
    1. class = &#39;processDescription&#39;인 프로세스 설명 div를 추가합니다. inprocessinstance.html
 
    ```
    <div class="processDescription" title="<%= description%>"><%= description%></div>
    ```
 
-1. 다음을 수행합니다.
+1. 다음 작업을 수행합니다.
 
    1. /apps/ws/js/registry.js 을 열어 편집합니다.
-   1. `text!/lc/libs/ws/js/runtime/templates/processinstance.html`을 `text!/lc/`**apps**/ws/js/runtime/templates/processinstance.html으로 검색하고 바꿉니다.
+   1. 검색 및 바꾸기 `text!/lc/libs/ws/js/runtime/templates/processinstance.html`with `text!/lc/`**앱**/ws/js/runtime/templates/processinstance.html
 
 1. 위의 변경 사항에서는 다음과 같은 방법으로 스타일 시트 /apps/ws/css/newStyle.css에 항목을 추가하여 CSS 파일을 업데이트해야 할 수 있습니다.
 

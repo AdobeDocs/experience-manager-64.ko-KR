@@ -1,8 +1,8 @@
 ---
 title: 커뮤니티 구성 요소
-seo-title: 커뮤니티 구성 요소
-description: 'AEM 사이트에 커뮤니티 기능 추가 '
-seo-description: 'AEM 사이트에 커뮤니티 기능 추가 '
+seo-title: Communities Components
+description: AEM 사이트에 커뮤니티 기능 추가
+seo-description: Adding community features to any AEM site
 uuid: 676abcda-3021-498d-a6eb-b60004315349
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,18 +10,22 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dc149196-fa56-494e-975c-b11ca1ef193b
 exl-id: 7118dbca-e9b4-4b69-b4c3-34bb52008168
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 44%
+source-wordcount: '322'
+ht-degree: 27%
 
 ---
 
 # 커뮤니티 구성 요소 {#communities-components}
 
+>[!CAUTION]
+>
+>AEM 6.4가 확장 지원이 종료되었으며 이 설명서는 더 이상 업데이트되지 않습니다. 자세한 내용은 [기술 지원 기간](https://helpx.adobe.com/kr/support/programs/eol-matrix.html). 지원되는 버전 찾기 [여기](https://experienceleague.adobe.com/docs/).
+
 ## 소개 {#introduction}
 
-AEM Communities 라이센스가 있으면 커뮤니티 사이트를 만들 수 있을 뿐 아니라 표준 AEM 작성 도구를 사용하여 모든 AEM 사이트에 커뮤니티 기능을 추가할 수도 있습니다.
+AEM Communities 라이센스가 있으면 커뮤니티 사이트를 만들 수 있을 뿐만 아니라 표준 AEM 작성 도구를 사용하여 모든 AEM 사이트에 커뮤니티 기능을 추가할 수도 있습니다.
 
 커뮤니티 사이트 생성에 대한 자세한 내용은 다음을 참조하십시오.
 
@@ -31,19 +35,19 @@ AEM Communities 라이센스가 있으면 커뮤니티 사이트를 만들 수 �
 
 >[!NOTE]
 >
->작성 환경에 익숙하지 않은 경우 [기본 처리](../../help/sites-authoring/basic-handling.md)에 대한 설명서를 보고, 페이지 작성에 대한 [빠른 안내서를 확인하십시오](../../help/sites-authoring/qg-page-authoring.md).
+>작성 환경을 잘 모를 경우 다음 문서를 참조하십시오. [기본 처리](../../help/sites-authoring/basic-handling.md) 그리고 [페이지 작성에 대한 빠른 안내](../../help/sites-authoring/qg-page-authoring.md).
 
 ## 사용 가능한 커뮤니티 구성 요소 {#available-communities-components}
 
 다음 표에는 구성 요소 브라우저(사이드 킥에서 활성화될 때 작성자가 볼 수 있는 커뮤니티 구성 요소가 나열되어 있습니다.
 
-대화형 [커뮤니티 구성 요소 안내서](components-guide.md)도 참조하십시오.
+대화형 [커뮤니티 구성 요소 안내서](components-guide.md).
 
 >[!NOTE]
 >
->커뮤니티 구성 요소를 사용하여 작성하는 데 필요한 정보가 포함되어 있으므로 [커뮤니티 구성 요소 기본 사항](basics.md) 을 읽으십시오.
+>읽기 [커뮤니티 구성 요소 기본 사항](basics.md) 커뮤니티 구성 요소로 작성하는 데 필요한 정보가 포함되어 있으므로
 
-| **구성 요소 제목** | **기능** |
+| **구성 요소 제목** | **특별 포함** |
 |---|---|
 | 활동 스트림 | [활동 스트림](activities.md) |
 | 블로그 | [블로그](blog-feature.md) |
@@ -69,8 +73,8 @@ AEM Communities 라이센스가 있으면 커뮤니티 사이트를 만들 수 �
 | 빠른 검색 | [검색](search.md) |
 | 등급 | [등급](rating.md) |
 | 관련 질문 | [질문과 대답](working-with-qna.md) |
-| 검토 | [검토](reviews.md) |
-| 검토 요약(표시) | [검토](reviews.md) |
+| 리뷰 | [리뷰](reviews.md) |
+| 리뷰 요약(표시) | [리뷰](reviews.md) |
 | 검색 | [검색](search.md) |
 | 검색 결과 | [검색](search.md) |
 | 소셜 태그 클라우드 | [소셜 태그 클라우드](tagcloud.md) |
@@ -82,8 +86,8 @@ AEM Communities 라이센스가 있으면 커뮤니티 사이트를 만들 수 �
 
 ## 관련 커뮤니티 설명서 {#related-communities-documentation}
 
-* 권장 배포에 대해 알아보려면 [Communities 배포](deploy-communities.md)를 방문하십시오.
+* 방문 [커뮤니티 배포](deploy-communities.md) 권장 배포에 대해 자세히 알아보십시오 .
 
-* 커뮤니티 사이트 만들기, 커뮤니티 사이트 템플릿 구성, 커뮤니티 콘텐츠 중재, 구성원 관리 및 메시징 구성에 대해 알려면 [커뮤니티 사이트 관리](administer-landing.md)를 방문하십시오.
+* 방문 [커뮤니티 사이트 관리](administer-landing.md) 커뮤니티 사이트 만들기, 커뮤니티 사이트 템플릿 구성, 커뮤니티 콘텐츠 중재, 구성원 관리 및 메시징 구성에 대해 알아보려면.
 
-* SCF(소셜 구성 요소 프레임워크)에 대해 알아보고 커뮤니티 구성 요소 및 기능을 사용자 지정하려면 [커뮤니티 개발](communities.md)을 방문하십시오.
+* 방문 [커뮤니티 개발](communities.md) SCF(소셜 구성 요소 프레임워크) 및 커뮤니티 구성 요소 및 기능 사용자 지정에 대해 알아봅니다.
